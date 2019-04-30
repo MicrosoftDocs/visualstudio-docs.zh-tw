@@ -11,11 +11,11 @@ dev_langs:
 ms.workload:
 - multiple
 ms.openlocfilehash: c20d3efb9ea84a7e8bb22288303313ef44b2b795
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60040673"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62806559"
 ---
 # <a name="ca3003-review-code-for-file-path-injection-vulnerabilities"></a>CA3003：檢閱程式碼是否有檔案路徑插入式攻擊弱點
 

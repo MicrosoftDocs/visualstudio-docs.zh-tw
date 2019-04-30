@@ -11,12 +11,12 @@ ms.assetid: f4ad4dd3-b39e-42df-ad89-d403cdf24a2b
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 702cac3c224b958a4de37b03814ecea7390ae217
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 0b37d93adbd2accb7a12fb176ab15aafc6914190
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58942825"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441516"
 ---
 # <a name="configuration-options-overview"></a>組態選項概觀
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -38,7 +38,7 @@ ms.locfileid: "58942825"
 |MyConfig|N/A|\<MyConfig Win64 設定 >|  
   
 > [!NOTE]
->  您無法建立排除 「 Win32 」 平台，除非您的目標專案不支援 Win32"MyConfig 」 的方案組態。  
+> 您無法建立排除 「 Win32 」 平台，除非您的目標專案不支援 Win32"MyConfig 」 的方案組態。  
   
  變更解決方案的作用中設定該方案中選取專案會建置、 執行、 偵錯或部署的組態的設定。 例如，如果您從版本變更現用方案組態設為偵錯時，該方案中的所有專案會自動都建置專案的方案的偵錯組態所示的組態。 專案的設定通常也是具名的偵錯除非使用者已手動變更環境的 Configuration Manager 中的流程範本。  
   

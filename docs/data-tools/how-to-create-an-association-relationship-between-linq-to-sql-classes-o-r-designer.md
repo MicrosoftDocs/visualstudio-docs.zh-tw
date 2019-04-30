@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 9d7bf1be05ebabcaac319cce591cf82cd2ab5f5d
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 6b6f0b1f3afec1231778a54c82422d6761995eb1
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60112282"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63402785"
 ---
 # <a name="how-to-create-an-association-between-linq-to-sql-classes-or-designer"></a>HOW TO：建立 LINQ to SQL 類別 （O/R 設計工具） 之間的關聯
 [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] 中實體類別 (Class) 之間的關聯，與資料庫中資料表之間的關聯性 (Relationship) 類似。 您可以使用 [關聯編輯器] 對話方塊建立實體類別之間的關聯。
@@ -21,7 +21,7 @@ ms.locfileid: "60112282"
 使用 [關聯編輯器] 對話方塊建立關聯時，必須選取父類別和子類別。 父類別是包含主索引鍵的實體類別，而子類別是包含外部索引鍵的實體類別。 比方說，如果已建立實體類別對應至`Northwind Customers`並`Orders`資料表`Customer`類別會是父類別和`Order`類別會是子類別。
 
 > [!NOTE]
->  當您將資料表從**伺服器總管**或是**資料庫總管**拖曳至**物件關聯式設計工具**(**O/R 設計工具**)，關聯會自動建立根據資料庫中的現有外部索引鍵關聯性。
+> 當您將資料表從**伺服器總管**或是**資料庫總管**拖曳至**物件關聯式設計工具**(**O/R 設計工具**)，關聯會自動建立根據資料庫中的現有外部索引鍵關聯性。
 
 ## <a name="association-properties"></a>關聯屬性
 建立關聯之後，當您在 [O/R 設計工具] 中選取該關聯時，[屬性] 視窗中會出現一些可設定的屬性。 (關聯就是相關類別之間的線條)。下表提供關聯屬性的說明。

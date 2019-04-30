@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: b1006fdb766c4c375c93a97f17cccd4e95568677
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55937247"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62998967"
 ---
 # <a name="properties-of-geometry-shapes"></a>幾何圖案的屬性
 您可以使用幾何圖案，來指定網域類別的執行個體在網域指定語言中的顯示方式。 如需詳細資訊，請參閱 <<c0> [ 如何定義特定領域語言](../modeling/how-to-define-a-domain-specific-language.md)。 如需如何使用這些屬性的詳細資訊，請參閱[自訂及擴充特定領域語言](../modeling/customizing-and-extending-a-domain-specific-language.md)。
@@ -41,7 +41,7 @@ ms.locfileid: "55937247"
 |基底幾何圖形|此圖形的基底類別。|(無)|
 |名稱|此圖形的名稱。|目前的名稱|
 |命名空間|此圖形附屬於命名空間。|目前的命名空間|
-|工具提示類型|（固定、 變數或 none） 」 來定義 「 工具提示的方式。 如果固定，則值`Fixed Tooltip Text`屬性做為工具提示; 若變數，然後工具提示中定義的自訂程式碼。|無|
+|工具提示類型|（固定、 變數或 none） 」 來定義 「 工具提示的方式。 如果固定，則值`Fixed Tooltip Text`屬性做為工具提示; 若變數，然後工具提示中定義的自訂程式碼。|None|
 |注意|這個項目相關聯的非正式附註。|\<無>|
 |初始的高度|此圖形，以英吋的初始高度。|1|
 |初始寬度|此圖形，以英吋的初始寬度。|1.5|
@@ -53,4 +53,4 @@ ms.locfileid: "55937247"
 
 ## <a name="see-also"></a>另請參閱
 
-- [特定領域語言工具字彙](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)
+- [Domain-Specific Language Tools Glossary](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa) (特定領域語言工具字彙表)

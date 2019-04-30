@@ -19,11 +19,11 @@ manager: wpickett
 ms.workload:
 - cplusplus
 ms.openlocfilehash: 11eb9701c900284ee8021f908263bc5f27ab8206
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55917325"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62815815"
 ---
 # <a name="how-to-set-code-analysis-properties-for-cc-projects"></a>HOW TO：為 C/C++ 專案設定程式碼分析屬性
 您可以設定程式碼分析工具用來分析專案的每個組態中的程式碼的規則。 此外，您可以將程式碼分析，以隱藏來自產生並由第三方工具加入至專案的程式碼的警告。
@@ -35,7 +35,7 @@ ms.locfileid: "55917325"
  **組態**清單並**平台**清單可讓您將不同的程式碼分析設定套用至不同的專案組態與平台的組合。 例如，您可以將程式碼分析，以將一組規則套用至您的專案進行偵錯組建和一組不同的發行組建。
 
 ## <a name="enabling-code-analysis"></a>啟用程式碼分析
- 您可以決定是否要選取以啟用您專案的程式碼分析**啟用程式碼分析的 C/c + + 建置**。 結合**組態** 清單中，您可以比方說，決定停用偵錯組建，並啟用發行的程式碼分析。
+ 您可以決定是否要選取以啟用您專案的程式碼分析**啟用程式碼分析適用於 C /C++上建置**。 結合**組態** 清單中，您可以比方說，決定停用偵錯組建，並啟用發行的程式碼分析。
 
  如果您的專案包含 managed 程式碼，您可以決定是否要啟用或停用選取的程式碼分析**建置時啟用程式碼分析**。
 

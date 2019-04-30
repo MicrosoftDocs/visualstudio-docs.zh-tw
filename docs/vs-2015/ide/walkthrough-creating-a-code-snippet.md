@@ -16,12 +16,12 @@ caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ee4e0c6fd686398ae89b5c079d6efc1297a19f5d
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: b23640abec76f04199abe6e64888c641940e7a3f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60109800"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63388336"
 ---
 # <a name="walkthrough-creating-a-code-snippet"></a>逐步解說：建立程式碼片段
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ ms.locfileid: "60109800"
 只需要幾個步驟就能建立程式碼片段。 您只需要建立 XML 檔案、填入適當的項目，並在其中新增您的程式碼。 您也可以將參考和取代參數新增至程式碼。 您可以使用 [程式碼片段管理員] ([工具]/[程式碼片段管理員]) 上的 [匯入] 按鈕，將程式碼片段新增至 Visual Studio 安裝。  
   
 > [!TIP]
->  如需如何更輕鬆地撰寫程式碼片段，在 CodePlex 網站搜尋社群工具這類[程式碼片段編輯器](http://go.microsoft.com/fwlink/?LinkId=251033)。  
+> 如需如何更輕鬆地撰寫程式碼片段，在 CodePlex 網站搜尋社群工具這類[程式碼片段編輯器](http://go.microsoft.com/fwlink/?LinkId=251033)。  
   
 ## <a name="snippet-template"></a>程式碼片段範本  
  以下是基本程式碼片段範本：  

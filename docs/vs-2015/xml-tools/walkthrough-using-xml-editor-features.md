@@ -9,12 +9,12 @@ caps.latest.revision: 4
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 27e9d1ce86064c23e3a293382ff7f83389d693f1
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 55e7cdc06b1876fe40310f5af44152a70e4a4375
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60109038"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438874"
 ---
 # <a name="walkthrough-using-xml-editor-features"></a>逐步解說：使用 XML 編輯器功能
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -22,7 +22,7 @@ ms.locfileid: "60109038"
 此逐步教學中的步驟顯示如何建立新的 XML 文件。 逐步教學還會使用 XML 編輯器的部分功能，使其在 XML 撰寫上具有價值。  
   
 > [!NOTE]
->  開始逐步教學之前，請先將 hireDate.xsd 檔 (本主題下方所包含的檔案) 儲存到本機電腦上。  
+> 開始逐步教學之前，請先將 hireDate.xsd 檔 (本主題下方所包含的檔案) 儲存到本機電腦上。  
   
 ### <a name="to-create-a-new-xml-file-and-associate-it-with-an-xml-schema"></a>建立新的 XML 檔案，並將其與 XML 結構描述相關聯  
   

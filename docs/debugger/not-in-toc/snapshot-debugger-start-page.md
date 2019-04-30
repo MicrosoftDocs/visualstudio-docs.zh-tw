@@ -9,11 +9,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: cf2aba33089623dc98a90c23166291bb2d6e7123
-ms.sourcegitcommit: cdcbf254db737d42275e95de4ffc4f8c14e87e00
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57428644"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62905240"
 ---
 # <a name="getting-started-with-the-snapshot-debugger"></a>快照集偵錯工具使用者入門
 
@@ -33,7 +33,7 @@ Visual Studio 快照集偵錯工具現在會連接到您的服務，您可以開
 
     紫色六邊形會出現在您按一下左側的位置。
 
-2. 按一下 **開始收集**開啟貼齊點。
+2. 按一下 [開始收集] 以開啟快照點。
 
 ### <a name="open-a-snapshot"></a>開啟快照集
 
@@ -47,7 +47,7 @@ Visual Studio 快照集偵錯工具現在會連接到您的服務，您可以開
 
 從這個檢視中，您可以將滑鼠移至變數，以檢視資料提示方塊中，使用的區域變數、 監看式和呼叫堆疊視窗，並同時評估運算式。
 
-在網站本身是仍然即時和終端使用者不會受到影響。 根據預設，只有一個快照會擷取每個貼齊點。 也就是在擷取快照集之後，請貼齊點會關閉。 如果您想要擷取的貼齊點在另一個快照集，您可以開啟貼齊點上一步，即可**更新集合**。
+網站本身是仍然是即時的且使用者不會受到影響。 根據預設，只有一個快照會擷取每個貼齊點。 也就是在擷取快照集之後，請貼齊點會關閉。 如果想要在快照點擷取另一個快照集，可以按一下 [更新集合] 以重新開啟快照點。
 
 ### <a name="set-a-logpoint"></a>設定記錄點
 
@@ -57,7 +57,7 @@ Visual Studio 快照集偵錯工具現在會連接到您的服務，您可以開
 
     ![貼齊點條件](../media/snapshot-startpage-logpoint.png)
 
-3. 在 **訊息**欄位中，輸入您想要記錄的記錄訊息。 您也可以將它們放在大括號內，來評估您的記錄檔訊息中的變數。
+3. 在 **訊息**欄位中，輸入您想要記錄的記錄訊息。 也可以在記錄訊息中變數的前後加上大括號，以評估它們。
 
     如果您選擇**傳送到輸出視窗**，訊息會出現在 [診斷工具] 視窗，當叫用的記錄點時。
 

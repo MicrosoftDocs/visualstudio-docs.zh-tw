@@ -18,11 +18,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: bc42a92e1d7dcc73bb6bc0433da4e6a31d7fefb2
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60081956"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62966753"
 ---
 # <a name="how-to-create-an-event-receiver"></a>HOW TO：建立事件接收器
   藉由建立*事件接收器*，您可以回應使用者互動 SharePoint 項目，例如清單或清單項目時。 例如，當使用者將行事曆變更或刪除連絡人清單中的名稱，會觸發事件接收器中的程式碼。 遵循本主題，您可以了解如何將事件接收器加入至清單執行個體。

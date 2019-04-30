@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: d2c17d20b54ea16f0a6764277855ca240aeb7224
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60061202"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62433171"
 ---
 # <a name="sccqueryinfo-function"></a>SccQueryInfo 函式
 此函式會取得一組選取的檔案，在 原始檔控制下的狀態資訊。

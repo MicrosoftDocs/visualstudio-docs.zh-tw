@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 49e4618e2262575ffaa642d55ae140529f86942b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: c8f746c3ee084613a10b89bd492a6174ffb49012
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60038466"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63421293"
 ---
 # <a name="overview-of-the-programming-model-of-sharepoint-tools-extensions"></a>概觀的程式設計模型的 SharePoint 工具擴充功能
   在 Visual Studio 中建立 SharePoint 工具的延伸模組時，您會從實作 SharePoint 工具公開的一或多個擴充性介面開始。 在大部分情況下，您也會使用 SharePoint 工具所提供的其他類型，在您的延伸模組中實作功能。 在某些情況下，您也可以使用 Visual Studio 和 SharePoint 所提供的其他物件模型中的類型。 您必須了解每個這些物件模型的用途，而且知道如何與其他用來建立 SharePoint 工具擴充功能。
@@ -50,7 +50,7 @@ ms.locfileid: "60038466"
 - *Visual Studio 自動化和整合物件模型*。 使用這些物件模型來存取已超出 SharePoint 工具物件模型範圍的 Visual Studio 功能。
 
     > [!NOTE]
-    >  藉由使用 SharePoint 專案服務，您可以將 SharePoint 工具物件模型中的某些物件轉換成 Visual Studio 自動化物件和整合物件模型中的物件，反之亦然。 如需詳細資訊，請參閱 < [SharePoint 專案系統類型與其他 Visual Studio 專案類型之間轉換](../sharepoint/converting-between-sharepoint-project-system-types-and-other-visual-studio-project-types.md)。
+    > 藉由使用 SharePoint 專案服務，您可以將 SharePoint 工具物件模型中的某些物件轉換成 Visual Studio 自動化物件和整合物件模型中的物件，反之亦然。 如需詳細資訊，請參閱 < [SharePoint 專案系統類型與其他 Visual Studio 專案類型之間轉換](../sharepoint/converting-between-sharepoint-project-system-types-and-other-visual-studio-project-types.md)。
 
 - *SharePoint 伺服器和用戶端物件模型*。 使用這些物件模型來修改 SharePoint 網站，或從 SharePoint 工具擴充功能的內容擷取 SharePoint 網站的資料。
 

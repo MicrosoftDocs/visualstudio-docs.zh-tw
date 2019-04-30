@@ -9,12 +9,12 @@ caps.latest.revision: 134
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: aa18bed0ff4dfa24de114f0b15c109dfba777c56
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: b090833d766e36ba597bb32e8a6c793d674add88
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60055232"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63383953"
 ---
 # <a name="find-code-changes-and-other-history-with-codelens"></a>尋找 CodeLens 的程式碼變更和其他記錄
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -22,7 +22,7 @@ ms.locfileid: "60055232"
 當您了解程式碼發生什麼事時，也能保持專注在工作上，且無須離開編輯器。 尋找程式碼參考、程式碼的變更、已連結的 Bug、工作項目、程式碼檢閱和單元測試。  
   
 > [!NOTE]
->  CodeLens 僅適用於 Visual Studio Enterprise 與 Visual Studio Professional 版。 其不適用於 Visual Studio Community 版。  
+> CodeLens 僅適用於 Visual Studio Enterprise 與 Visual Studio Professional 版。 其不適用於 Visual Studio Community 版。  
   
  請參閱在解決方案中的何處使用程式碼的各個部分，及使用方式：  
   

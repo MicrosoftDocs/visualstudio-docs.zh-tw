@@ -9,11 +9,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 6345fa74d78ab50229cb692ece58723fea38124a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60054894"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62553649"
 ---
 # <a name="visual-studio-user-experience-guidelines"></a>Visual Studio 使用者體驗方針
 如果您設計適用於 Visual Studio 的新功能，請遵循 Visual Studio 使用者經驗指導方針。 這些指導方針包含常見的使用者模型和互動模式的相關資訊，好讓新的使用者介面 (UI) 的設計工具可以建立會順暢且一致的開發環境內的使用者體驗。

@@ -13,11 +13,11 @@ caps.latest.revision: 21
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: e8219f12eed091858a43c2bd5092b8b06f8320bc
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58940525"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62422893"
 ---
 # <a name="vstemplate-element-visual-studio-templates"></a>VSTemplate 項目 (Visual Studio 範本)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

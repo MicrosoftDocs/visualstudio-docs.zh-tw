@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: f85963712fa1b051ea7256e6f805fe8e7c7e70d0
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60056546"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62952902"
 ---
 # <a name="walkthrough-create-a-custom-editor"></a>逐步解說：建立自訂編輯器
 VSPackage 專案範本可以建立簡單的自訂編輯器，在C++。 VSPackage 專案範本不再支援 C# 或 Visual Basic 專案。 如需詳細資訊，請參閱 < [Visual Studio SDK](../extensibility/visual-studio-sdk.md)。

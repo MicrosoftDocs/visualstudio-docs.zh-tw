@@ -9,11 +9,11 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: f659a7aa9d078ed5ee2f8685be006aaaa2450fa0
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55937264"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62560047"
 ---
 # <a name="basic-correctness-rules-rule-set-for-managed-code"></a>適用於 Managed 程式碼的基本正確性規則規則集
 基本正確性規則規則集著重於邏輯錯誤和架構 Api 的使用方式中的常見錯誤。 基本正確性規則中的最小建議規則規則集包含的規則。 如需詳細資訊，請參閱 < [managed 程式碼的 Managed 建議規則規則集](../code-quality/managed-recommended-rules-rule-set-for-managed-code.md)您應該包含這個規則集來展開上的最小建議規則報告的警告清單。

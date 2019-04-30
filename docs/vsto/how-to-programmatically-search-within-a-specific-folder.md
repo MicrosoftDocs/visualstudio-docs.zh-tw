@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 5ac3dbb169fee82a55cc41b773d3616c56f83534
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56638006"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62961897"
 ---
 # <a name="how-to-programmatically-search-within-a-specific-folder"></a>HOW TO：以程式設計方式在特定資料夾中搜尋
   此程式碼範例會使用`Find`並`FindNext`方法來搜尋的電子郵件訊息的主旨欄位中的文字**收件匣**。 這個方法會使用字串篩選條件來檢查為起始的字母的字母 T`Subject`文字。

@@ -12,12 +12,12 @@ ms.assetid: 27d4bbcf-99b1-498f-8b66-40002e3db0f8
 caps.latest.revision: 47
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 3aa3058c20fe0d5697b56adb72769f5f6962da1e
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: caccf8923a8614ceedb7198e218ca2bb14bb7ec0
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60086282"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444872"
 ---
 # <a name="adding-a-most-recently-used-list-to-a-submenu"></a>將最近使用的清單新增至子功能表
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -199,7 +199,7 @@ ms.locfileid: "60086282"
 2. 在  **TestMenu**功能表上，按一下**叫用 TestCommand**。 如此一來，就會顯示訊息方塊，指出命令已選取。  
   
     > [!NOTE]
-    >  此步驟，才能強制載入，並正確地顯示 MRU 清單 VSPackage。 如果您略過此步驟中，MRU 清單將不會顯示。  
+    > 此步驟，才能強制載入，並正確地顯示 MRU 清單 VSPackage。 如果您略過此步驟中，MRU 清單將不會顯示。  
   
 3. 在上 **[測試] 功能表**功能表上，按一下**子功能表**。 四個項目清單會顯示子功能表中，以下為分隔符號的結尾。 當您按一下 **項目 3**，應該會出現訊息方塊，並將其顯示文字，也就是 已選取項目 3。 （如果未顯示四個項目清單，請確定您已遵循先前步驟中的指示。）  
   

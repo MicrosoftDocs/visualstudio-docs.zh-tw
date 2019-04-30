@@ -19,12 +19,12 @@ caps.latest.revision: 40
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: cc6c7af3732f2f96ad53651b146898b655b68fdd
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: 91b438e8646a215aeed3390e87ce9c20ca923fae
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59647921"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441285"
 ---
 # <a name="security-page-project-designer"></a>專案設計工具、安全性頁
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -38,7 +38,7 @@ ms.locfileid: "59647921"
  決定是否在設計階段啟用安全性設定。 清除這個選項後，就無法使用 [安全性] 頁面上的所有其他選項。  
   
 > [!NOTE]
->  當您使用 [發行精靈] 發佈應用程式時，會自動啟用此選項。  
+> 當您使用 [發行精靈] 發佈應用程式時，會自動啟用此選項。  
   
  當選取此選項時，可以選擇從兩個選項按鈕中選取其中一個：[這是完全信任的應用程式] 或 [這是部分信任的應用程式]。  
   

@@ -16,11 +16,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 4038f1f65d688ee8d9bbf9ad01eb1698b811bee5
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60075216"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62850112"
 ---
 # <a name="error-unable-to-connect-to-sql-server-on-remote-machine"></a>錯誤：無法連線至遠端電腦上的 SQL Server
 無法連線到 SQL Server 遠端電腦上*名稱*。 存取遭拒。 請確認您已在遠端電腦中安裝遠端偵錯工具。 如果遠端電腦不在網域中，或者 Visual Studio 是以本機帳戶執行，則遠端電腦必須具有一個與本機帳戶相同使用者名稱的帳戶和密碼。

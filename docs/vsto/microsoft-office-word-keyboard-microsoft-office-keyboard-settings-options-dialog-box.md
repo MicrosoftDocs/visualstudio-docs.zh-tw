@@ -17,11 +17,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 6506fec976822ea4a4e675c9961395c952a7a35f
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56604089"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62970301"
 ---
 # <a name="microsoft-office-word-keyboard-microsoft-office-keyboard-settings-options-dialog-box"></a>Microsoft Office Word 鍵盤，Microsoft Office 鍵盤設定、 [選項] 對話方塊
   Microsoft Office Word 和 Visual Studio 同時處理的快速鍵。 不同的命令，在 Word 中，並在 Visual Studio 中可以代表相同的快速鍵組合。 在 Visual Studio 中的文件層級專案中開啟 Word 時，一次只有一個應用程式接收快顯命令。 根據預設，Visual Studio 會接收所有捷徑命令，但是您可以讓 Word 文件藉由選取具有焦點時，接收它們**動態鍵盤配置**。

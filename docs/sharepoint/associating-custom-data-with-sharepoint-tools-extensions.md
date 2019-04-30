@@ -17,11 +17,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 9a2c1869791b250fb90c6a634f057797f3c57a62
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60112254"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62987968"
 ---
 # <a name="associate-custom-data-with-sharepoint-tools-extensions"></a>將自訂的資料產生關聯的 SharePoint 工具擴充功能
   您可以新增自訂資料中 SharePoint 工具擴充功能的特定物件。 當您需要在您想要從您的延伸模組中的其他程式碼供稍後存取的擴充功能的其中一部分中的資料，這非常有用。 而不是實作自訂的方式來儲存及存取資料，您可以在您的延伸模組相關聯物件的資料，然後稍後再從同一個物件擷取資料。

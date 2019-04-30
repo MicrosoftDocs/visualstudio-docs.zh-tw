@@ -23,11 +23,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 83bed0588a0959ab85906d949e1b0752396223ae
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56609705"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62852921"
 ---
 # <a name="debug-source-files-common-properties-solution-property-pages-dialog-box"></a>方案屬性頁對話方塊、通用屬性、偵錯原始程式檔
 此屬性頁可指定對方案進行偵錯時，偵錯工具將於何處尋找原始程式檔。
@@ -38,7 +38,7 @@ ms.locfileid: "56609705"
 
  **不會尋找這些原始程式檔**輸入任何您不想偵錯工具讀取的檔案名稱。 如果偵錯工具在上面其中一個指定的目錄中找到這些檔案中的某一個，就會忽略該檔案。 如果在進行偵錯時出現 [尋找原始碼] 對話方塊，而您按一下 [取消]，您之前搜尋的檔案就會新增至這個清單，如此偵錯工具就不會繼續搜尋該檔案。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [偵錯工具安全性](../debugger/debugger-security.md)
 - [偵錯設定和準備](../debugger/debugger-settings-and-preparation.md)

@@ -15,11 +15,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 8196d4c48bfb93735b62c6f24cb08ec462e64c91
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55916839"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62788577"
 ---
 # <a name="ca1064-exceptions-should-be-public"></a>CA1064:例外狀況必須是公用
 

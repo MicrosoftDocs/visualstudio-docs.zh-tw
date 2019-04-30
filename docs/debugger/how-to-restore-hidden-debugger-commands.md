@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f5332b2e3b71df47fe2f39228c47bf4a1ec16de9
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 7766f83eef6205ce445ed892ffaf5861a0dcabbb
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60047018"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63387546"
 ---
 # <a name="how-to-restore-hidden-debugger-commands"></a>HOW TO：還原隱藏的偵錯工具命令
 當您設定 Visual Studio 時，將會要求您選擇一組預設 IDE 設定，做為您主要的程式設計語言。 某些語言的預設 IDE 設定可能會隱藏特定偵錯工具命令。
@@ -47,7 +47,7 @@ ms.locfileid: "60047018"
 7. 將想要的命令加入功能表之後，按一下 [關閉]。
 
     > [!WARNING]
-    >  有些功能表項目只會在偵錯工具處於特定模式時出現，例如，執行模式或中斷模式。 因此，當您完成以上步驟時，可能不會立即看見您所加入的項目。
+    > 有些功能表項目只會在偵錯工具處於特定模式時出現，例如，執行模式或中斷模式。 因此，當您完成以上步驟時，可能不會立即看見您所加入的項目。
 
 ## <a name="restoring-commands-not-available-from-the-customize-dialog-box"></a>從自訂對話方塊還原無法使用的命令
  有些命令可能無法從 [自訂] 對話方塊還原，特別是出現在階層式功能表中的命令。 若要還原這些命令，您必須匯入新的 IDE 設定集合。

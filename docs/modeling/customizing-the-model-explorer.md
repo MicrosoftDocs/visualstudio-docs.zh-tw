@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 745fea2ebaba478d9c405ab51db607e5eb025cc7
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 65ada4a061fd928a074c9fcdb24fab60a277c457
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60058001"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445850"
 ---
 # <a name="customizing-the-model-explorer"></a>自訂模型總管
 您可以針對您的特定領域語言設計工具中，如下所示變更的外觀和行為的 [總管] 中：
@@ -59,7 +59,7 @@ ms.locfileid: "60058001"
     [總管] 中應該會顯示三個**動作項目**具有圖示的節點。
 
 > [!NOTE]
->  如果您已將任何項目，會顯示在 [總管] 中產生的節點圖示，檔案總管的所有節點會都顯示圖示。 如果已設定無圖示，節點會顯示預設圖示。
+> 如果您已將任何項目，會顯示在 [總管] 中產生的節點圖示，檔案總管的所有節點會都顯示圖示。 如果已設定無圖示，節點會顯示預設圖示。
 
 ## <a name="changing-the-name-displayed-on-an-explorer-node"></a>變更顯示在 [總管] 節點的名稱
  您可以變更模型項目的名稱在總管中顯示的方式。 下列程序示範如何顯示名稱**任務**所參考**註解**註解節點中。

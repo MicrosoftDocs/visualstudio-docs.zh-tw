@@ -22,12 +22,12 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 robots: noindex,nofollow
-ms.openlocfilehash: 02d40062b1202a261aa7be4ae306329a6a93b37a
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: f0dd471e156f7a76462ac093c9ca54684f7dbc68
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59669454"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444487"
 ---
 # <a name="accessing-data-in-visual-studio"></a>在 Visual Studio 中存取資料
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -70,7 +70,7 @@ ms.locfileid: "59669454"
  許多資料庫供應商，以及第三方支援 Visual Studio 整合的 NuGet 套件。 在 nuget.org 上或透過 NuGet 套件管理員在 Visual Studio 中，您可以瀏覽供應項目 (**工具** > **NuGet 套件管理員** > **管理 nuget 封裝方案套件**)。 與 Visual Studio 整合擴充功能為其他資料庫產品。   您可以瀏覽至連線，瀏覽 Visual Studio 組件庫中的這些供應項目**工具** > **擴充功能和更新**，然後選取**線上**方對話方塊的窗格。  如需詳細資訊，請參閱 <<c0> [ 安裝資料庫系統、 工具和範例](../data-tools/installing-database-systems-tools-and-samples.md)。
 
 > [!NOTE]
->  SQL Server 2005 的延長的支援已於 2016 年 4 月 12 日結束。   沒有 data tools 在 Visual Studio 2015 和更新版本會繼續使用 SQL Server 2005，此日期之後無法保證。 如需詳細資訊，請參閱 <<c0> [ 適用於 SQL Server 2005 的結束支援公告](https://www.microsoft.com/sql-server/sql-server-2005)。
+> SQL Server 2005 的延長的支援已於 2016 年 4 月 12 日結束。   沒有 data tools 在 Visual Studio 2015 和更新版本會繼續使用 SQL Server 2005，此日期之後無法保證。 如需詳細資訊，請參閱 <<c0> [ 適用於 SQL Server 2005 的結束支援公告](https://www.microsoft.com/sql-server/sql-server-2005)。
 
 ### <a name="net-languages"></a>.NET 語言
  所有的.NET 資料存取，包括在.NET Core 中，根據 ADO.NET，一組類別，定義介面來存取任何種類的資料來源、 關聯式和非關聯性。 Visual Studio 有數個工具和設計工具，可以使用 ADO.NET 來協助您連接到資料庫，操作資料，並將資料呈現給使用者。 在本節中的文件說明如何使用這些工具。 您也可以直接用於 ADO.NET 命令物件執行程式。 如需有關直接呼叫 ADO.NET Api 的詳細資訊，請參閱[ADO.NET](https://msdn.microsoft.com/library/e80y5yhx\(v=vs.110\).aspx) MSDN Library 中。

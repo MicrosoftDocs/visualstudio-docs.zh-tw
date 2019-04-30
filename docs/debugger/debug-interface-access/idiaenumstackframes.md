@@ -13,18 +13,18 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 116ca69f890c37c84d4a31e2663d3c9ff1439f53
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56608734"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62833450"
 ---
 # <a name="idiaenumstackframes"></a>IDiaEnumStackFrames
 列舉各種可用的堆疊框架。
 
 ## <a name="methods-in-vtable-order"></a>依照 Vtable 順序的方法
 
-|方法|說明|
+|方法|描述|
 |------------|-----------------|
 |[IDiaEnumStackFrames::Next](../../debugger/debug-interface-access/idiaenumstackframes-next.md)|擷取列舉型別序列中的堆疊框架項目指定的數目。|
 |[IDiaEnumStackFrames::Reset](../../debugger/debug-interface-access/idiaenumstackframes-reset.md)|將列舉型別序列重設到開頭。|
@@ -63,13 +63,13 @@ void DumpStackFrames(IDiaStackWalker*     pStackWalker,
 ```
 
 ## <a name="requirements"></a>需求
-標頭： Dia2.h
+標頭：dia2.h
 
 程式庫： diaguids.lib
 
 DLL: msdia80.dll
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [介面 (偵錯介面存取 SDK)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)
 - [IDiaStackWalkFrame](../../debugger/debug-interface-access/idiastackwalkframe.md)
 - [IDiaStackWalker::getEnumFrames2](../../debugger/debug-interface-access/idiastackwalker-getenumframes2.md)

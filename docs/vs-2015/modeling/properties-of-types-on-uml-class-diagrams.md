@@ -13,12 +13,12 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 17d18a485e57b896aaf3f40b0cfdab63e10dce2c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 996f2f75499a54e0d5514590f2b087130b73ffb5
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60062226"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63387779"
 ---
 # <a name="properties-of-types-on-uml-class-diagrams"></a>UML 類別圖上的類型屬性
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,7 +26,7 @@ ms.locfileid: "60062226"
 在 UML 類別圖中，*型別*是類別、 介面或列舉型別。  
   
 > [!NOTE]
->  本主題是有關 UML 類別圖中類型的屬性。 如需詳細資訊，請參閱下列主題：  
+> 本主題是有關 UML 類別圖中類型的屬性。 如需詳細資訊，請參閱下列主題：  
   
 - [UML 類別圖表：參考](../modeling/uml-class-diagrams-reference.md)  
   

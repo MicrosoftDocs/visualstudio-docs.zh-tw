@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: eb53de9cf4d3056d9a07a915267391de27b753fb
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56614905"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62909610"
 ---
 # <a name="intercepting-legacy-language-service-commands"></a>攔截舊版語言服務命令
 使用[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]，您可以讓 [文字] 檢視會處理的語言服務截距命令。 這是適用於文字檢視不會管理的特定語言的行為。 您可以攔截這些命令加入 [文字] 檢視中的一或多個命令篩選器，從您的語言服務。

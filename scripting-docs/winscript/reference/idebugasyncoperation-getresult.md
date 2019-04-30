@@ -18,11 +18,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 49cf761c85fce3f8fc2f6705d114ab042e0c2ecd
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58157996"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62822041"
 ---
 # <a name="idebugasyncoperationgetresult"></a>IDebugAsyncOperation::GetResult
 提供同步偵錯作業傳回的物件參數與傳回值。  

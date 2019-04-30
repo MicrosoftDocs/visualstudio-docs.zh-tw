@@ -16,11 +16,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: b328d6071ae9dc96b8e7f62bad6d4417aa1730f4
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58157811"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62558186"
 ---
 # <a name="ijsdebugframeevaluate-method"></a>IJsDebugFrame::Evaluate 方法
 評估此堆疊框架的內容中的運算式。  

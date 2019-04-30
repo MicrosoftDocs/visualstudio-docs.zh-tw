@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a44a6a3474d56b1254333731d79b2172fd6143b9
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 5ff893f5603d3156d4ed6fe09848682ab5d04b06
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60077651"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63407619"
 ---
 # <a name="using-the-intellitrace-stand-alone-collector-c-visual-basic"></a>使用 IntelliTrace 獨立收集器 (C#，Visual Basic)
 
@@ -26,10 +26,10 @@ ms.locfileid: "60077651"
  觀看 IntelliTrace 動作：[收集和分析生產環境偵錯 （Channel 9 影片） 中的 IntelliTrace 資料](http://go.microsoft.com/fwlink/?LinkID=251851)
 
 > [!NOTE]
->  您也可以透過 **Trace** 模式使用 **Microsoft Monitoring Agent** ，即可收集遠端電腦上執行之 Web 和 Sharepoint App 的相同 IntelliTrace 資料。
+> 您也可以透過 **Trace** 模式使用 **Microsoft Monitoring Agent** ，即可收集遠端電腦上執行之 Web 和 Sharepoint App 的相同 IntelliTrace 資料。
 >
->  您可以透過 **Monitor** 模式執行代理程式，即可在 IntelliTrace 資料中收集效能相關事件。 **Monitor** 模式的效能影響低於 **Trace** 模式或 **IntelliTrace 獨立收集器**。 Microsoft Monitoring Agent 在安裝時確實會變更目標系統的環境。 請參閱[使用 Microsoft Monitoring Agent](../debugger/using-the-microsoft-monitoring-agent.md)。
->  IntelliTrace 獨立收集器不支援處理序快照集。
+> 您可以透過 **Monitor** 模式執行代理程式，即可在 IntelliTrace 資料中收集效能相關事件。 **Monitor** 模式的效能影響低於 **Trace** 模式或 **IntelliTrace 獨立收集器**。 Microsoft Monitoring Agent 在安裝時確實會變更目標系統的環境。 請參閱[使用 Microsoft Monitoring Agent](../debugger/using-the-microsoft-monitoring-agent.md)。
+> IntelliTrace 獨立收集器不支援處理序快照集。
 
  **需求**
 
@@ -38,7 +38,7 @@ ms.locfileid: "60077651"
 - 在開發電腦或其他要開啟 .iTrace 檔案的電腦上已安裝 Visual Studio Enterprise (但不能是 Professional 或 Community 版本)
 
   > [!NOTE]
-  >  請務必儲存符號 (.pdb) 檔案。 若要使用 IntelliTrace 進行偵錯並逐步執行程式碼，您必須具有相符的原始程式檔和符號檔。 請參閱[在部署後診斷問題](../debugger/diagnose-problems-after-deployment.md)。
+  > 請務必儲存符號 (.pdb) 檔案。 若要使用 IntelliTrace 進行偵錯並逐步執行程式碼，您必須具有相符的原始程式檔和符號檔。 請參閱[在部署後診斷問題](../debugger/diagnose-problems-after-deployment.md)。
 
   **常見問題集**
 
@@ -111,7 +111,7 @@ ms.locfileid: "60077651"
         `expand  /f:* IntelliTraceCollection.cab .`
 
        > [!NOTE]
-       >  句點 (**.**) 會保留含有當地語系化收集計劃的子資料夾。
+       > 句點 (**.**) 會保留含有當地語系化收集計劃的子資料夾。
 
 ## <a name="ConfigurePermissionsRunningCollector"></a> 設定收集器目錄的權限
 
@@ -125,7 +125,7 @@ ms.locfileid: "60077651"
 
     1. 將收集器目錄的完整權限授與執行 IntelliTrace PowerShell Cmdlet 的人員。
 
-         例如：
+         例如: 
 
          `icacls "C:\IntelliTraceCollector" /grant "` *\<Domain\UserID>* `":F`
 
@@ -216,7 +216,7 @@ ms.locfileid: "60077651"
      `Start-IntelliTraceCollection` `"` *\<ApplicationPool>* `"` *\<PathToCollectionPlan>* *\<FullPathToITraceFileDirectory>*
 
     > [!IMPORTANT]
-    >  執行這個命令之後，請輸入 **Y** ，確認您想要開始收集資料。
+    > 執行這個命令之後，請輸入 **Y** ，確認您想要開始收集資料。
 
      例如，從 **SharePoint - 80** 應用程式集區的 SharePoint 應用程式中收集資料：
 
@@ -247,7 +247,7 @@ ms.locfileid: "60077651"
      `Stop-IntelliTraceCollection` `"` *\<ApplicationPool>* `"`
 
     > [!IMPORTANT]
-    >  執行這個命令之後，請輸入 **Y** ，確認您想要停止收集資料。 否則，收集器可能會繼續收集資料、.iTrace 檔案會保留鎖定，或檔案可能未包含任何有用的資料。
+    > 執行這個命令之後，請輸入 **Y** ，確認您想要停止收集資料。 否則，收集器可能會繼續收集資料、.iTrace 檔案會保留鎖定，或檔案可能未包含任何有用的資料。
 
 6. [在 Visual Studio Enterprise 中，開啟 .iTrace 檔案。](#BKMK_View_IntelliTrace_Log_Files)
 
@@ -275,7 +275,7 @@ ms.locfileid: "60077651"
 ## <a name="BKMK_View_IntelliTrace_Log_Files"></a> 在 Visual Studio Enterprise 中，開啟 .iTrace 檔案。
 
 > [!NOTE]
->  若要使用 IntelliTrace 進行偵錯並逐步執行程式碼，您必須具有相符的原始程式檔和符號檔。 請參閱[在部署後診斷問題](../debugger/diagnose-problems-after-deployment.md)。
+> 若要使用 IntelliTrace 進行偵錯並逐步執行程式碼，您必須具有相符的原始程式檔和符號檔。 請參閱[在部署後診斷問題](../debugger/diagnose-problems-after-deployment.md)。
 
 1. 移動此 .iTrace 檔案，或將它複製到具有 Visual Studio Enterprise (但不是 Professional 或 Community 版本) 的電腦。
 
@@ -284,7 +284,7 @@ ms.locfileid: "60077651"
      Visual Studio 會顯示 [IntelliTrace 摘要]  頁面。 在大部分的區段中，您都可以檢閱事件或其他項目，並選擇一個項目，然後在發生事件的位置以及時間使用 IntelliTrace 開始偵錯。 請參閱[儲存的 IntelliTrace 資料的使用](../debugger/using-saved-intellitrace-data.md)。
 
     > [!NOTE]
-    >  若要使用 IntelliTrace 進行偵錯並逐步執行程式碼，您必須在開發電腦上具有相符的原始程式檔和符號檔。 請參閱[在部署後診斷問題](../debugger/diagnose-problems-after-deployment.md)。
+    > 若要使用 IntelliTrace 進行偵錯並逐步執行程式碼，您必須在開發電腦上具有相符的原始程式檔和符號檔。 請參閱[在部署後診斷問題](../debugger/diagnose-problems-after-deployment.md)。
 
 ## <a name="Minimizing"></a> 如何取得大部分的資料，而不會讓 App 變慢？
  IntelliTrace 可以收集大量資料，因此對您 App 效能的影響取決於 IntelliTrace 所收集的資料以及所分析的程式碼種類。 請參閱 [最佳化實際伺服器上的 IntelliTrace 收集](http://go.microsoft.com/fwlink/?LinkId=255233)。

@@ -16,18 +16,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e363989094f4d4859f272423792aa32152c6de57
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 99d8804b5c6050665508a9a1a6edc8b37fe7ff0c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60063877"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63405865"
 ---
 # <a name="walkthrough-download-assemblies-on-demand-with-the-clickonce-deployment-api"></a>逐步解說：下載依需求以 ClickOnce 部署 API 的組件
 根據預設，所有組件包含在[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]第一次執行應用程式時，會下載應用程式。 不過，您可能有應用程式的較少的使用者所使用的部分。 在此情況下，只有在建立組件的其中一種類型時，才會想要下載組件。 下列逐步解說示範如何將應用程式中的特定組件標示為「選擇性」，以及在 Common Language Runtime 需要時，使用 <xref:System.Deployment.Application> 命名空間中的類別來下載它們。
 
 > [!NOTE]
->  您的應用程式必須以完全信任執行，才能使用此程序。
+> 您的應用程式必須以完全信任執行，才能使用此程序。
 
 ## <a name="prerequisites"></a>必要條件
  您需要下列元件，才能完成此逐步解說的其中一個：

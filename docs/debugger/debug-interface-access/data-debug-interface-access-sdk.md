@@ -16,11 +16,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 6f0cf6e4f02d8a80f74d0edb46e188b41bfb425c
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56644493"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62554944"
 ---
 # <a name="data-debug-interface-access-sdk"></a>資料 (偵錯介面存取 SDK)
 所有的變數，例如參數、 區域變數、 全域變數和類別成員，由識別`SymTagData`符號。 常數值 (`LocIsConstant`) 也會識別與這個型別。
@@ -28,7 +28,7 @@ ms.locfileid: "56644493"
 ## <a name="properties"></a>屬性
  下表顯示適用於此符號類型的屬性。
 
-|屬性|資料類型|說明|
+|屬性|資料類型|描述|
 |--------------|---------------|-----------------|
 |[IDiaSymbol::get_access](../../debugger/debug-interface-access/idiasymbol-get-access.md)|`DWORD`|如果欄位，然後其中一個的值[CV_access_e 列舉](../../debugger/debug-interface-access/cv-access-e.md)。|
 |[IDiaSymbol::get_addressOffset](../../debugger/debug-interface-access/idiasymbol-get-addressoffset.md)|`DWORD`|時差的部分的位置;如需詳細資訊，請參閱 < [LocationType 列舉](../../debugger/debug-interface-access/locationtype.md)。|
@@ -61,7 +61,7 @@ ms.locfileid: "56644493"
 |[IDiaSymbol::get_virtualAddress](../../debugger/debug-interface-access/idiasymbol-get-virtualaddress.md)|`ULONGLONG`|可執行檔內的資料位置。|
 |[IDiaSymbol::get_volatileType](../../debugger/debug-interface-access/idiasymbol-get-volatiletype.md)|`BOOL`|`TRUE` 如果資料已標示為 volatile。|
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [CV_access_e 列舉](../../debugger/debug-interface-access/cv-access-e.md)
 - [DataKind 列舉](../../debugger/debug-interface-access/datakind.md)
 - [符號類型的語彙階層架構](../../debugger/debug-interface-access/lexical-hierarchy-of-symbol-types.md)

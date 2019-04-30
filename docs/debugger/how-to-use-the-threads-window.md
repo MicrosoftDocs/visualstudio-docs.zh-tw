@@ -18,11 +18,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: e3a87fd0480727a524b36ab209f5126b0f996c30
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "58790793"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62846880"
 ---
 # <a name="walkthrough-debug-a-multithreaded-app-using-the-threads-window-c-visual-basic-c"></a>逐步解說：偵錯多執行緒的應用程式，使用 [執行緒] 視窗 (C#，Visual Basic 中， C++)
 
@@ -37,7 +37,7 @@ ms.locfileid: "58790793"
 1. 開啟 Visual Studio 並建立新專案。
 
     ::: moniker range=">=vs-2019"
-    按 **Esc** 來關閉開始視窗。 型別**Ctrl + Q**來開啟 [搜尋] 方塊中，輸入**主控台**(或**c + +**)，選擇**範本**，然後：
+    按 **Esc** 關閉開始視窗。 型別**Ctrl + Q**來開啟 [搜尋] 方塊中，輸入**主控台**(或**c + +**)，選擇**範本**，然後：
 
     - 針對C#，選擇**建立新的主控台應用程式 (.NET Framework) 專案**的C#。 在出現的對話方塊中選擇 [建立]。
     - 針對C++，選擇**建立新的主控台應用程式專案**。 在出現的對話方塊中選擇 [建立]。

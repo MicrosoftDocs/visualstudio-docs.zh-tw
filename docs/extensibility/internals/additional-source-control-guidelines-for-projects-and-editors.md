@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 3566709819d2023dfd6e38e40f88a454de83e3e6
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56626098"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62861735"
 ---
 # <a name="additional-source-control-guidelines-for-projects-and-editors"></a>專案和編輯器適用的其他原始檔控制指導方針
 有幾個的專案和編輯器應符合以支援原始檔控制的指導方針。
@@ -23,7 +23,7 @@ ms.locfileid: "56626098"
 ## <a name="guidelines"></a>方針
  您的專案或編輯器應該也會執行以下動作來支援原始檔控制：
 
-|區域圖|專案|編輯器|詳細資料|
+|區域|專案|編輯器|詳細資料|
 |----------|-------------|------------|-------------|
 |私用檔案的複本|X||環境支援檔案的私用的複本。 也就是登錄在專案中每個人都他/她自己的私用複本，該專案中的檔案。|
 |ANSI/Unicode 持續性|X|X|如果您撰寫持續性程式碼時，保存 ANSI 格式的檔案，因為大部分的原始檔控制程式目前不支援 Unicode。|

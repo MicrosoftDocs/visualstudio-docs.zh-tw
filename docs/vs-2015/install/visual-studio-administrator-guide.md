@@ -14,11 +14,11 @@ author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.openlocfilehash: 5a84f0a037df92ff31ce66eb6692367ef1d209f6
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59649364"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62546655"
 ---
 # <a name="visual-studio-administrator-guide"></a>Visual Studio Administrator Guide
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -70,7 +70,7 @@ ms.locfileid: "59649364"
 |主題|描述|  
 |-----------|-----------------|  
 |[如何：安裝特定版本的 Visual Studio](../install/how-to-install-a-specific-release-of-visual-studio.md)|描述如何安裝最新版的特定組態[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]。|  
-|[如何：建立和執行自動的安裝的 Visual Studio](../install/how-to-create-and-run-an-unattended-installation-of-visual-studio.md)|描述如何安裝[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]以自動模式。|  
-|[如何：部署 Visual Studio 時會自動套用產品金鑰](../install/how-to-automatically-apply-product-keys-when-deploying-visual-studio.md)|描述如何部署到多部電腦時套用產品金鑰。|  
+|[如何：建立和執行 Visual Studio 的自動安裝](../install/how-to-create-and-run-an-unattended-installation-of-visual-studio.md)|描述如何安裝[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]以自動模式。|  
+|[如何：在部署 Visual Studio 時自動套用產品金鑰](../install/how-to-automatically-apply-product-keys-when-deploying-visual-studio.md)|描述如何部署到多部電腦時套用產品金鑰。|  
 |[說明檢視器系統管理員指南](../ide/help-viewer-administrator-guide.md)|提供有關如何管理本機說明安裝有或沒有網際網路存取的網路環境的資訊。|  
 |[安裝 Visual Studio](../install/install-visual-studio-2015.md)|提供指示與連結主題會說明如何安裝[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]。|

@@ -1,5 +1,5 @@
 ---
-title: DA0007：避免使用例外狀況控制流程 | Microsoft Docs
+title: DA0007：避免使用例外狀況進行控制流程 | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -15,17 +15,17 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 2599282909c62e3a35702346f793dfd914c18ac4
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54770821"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62580208"
 ---
 # <a name="da0007-avoid-using-exceptions-for-control-flow"></a>DA0007：避免使用例外狀況進行控制流程
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 規則 Id |DA0007 |  
-|類別目錄 |。.NET Framework 使用方式 |  
+|類別目錄 |.NET Framework 使用方式 |  
 |程式碼剖析方法 |所有 |  
 |訊息 |會一致地擲回大量例外狀況。 請考慮在程式邏輯中減少使用例外狀況。|  
 |訊息類型 |警告 |  

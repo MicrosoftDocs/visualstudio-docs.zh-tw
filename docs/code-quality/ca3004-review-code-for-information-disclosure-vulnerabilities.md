@@ -11,11 +11,11 @@ dev_langs:
 ms.workload:
 - multiple
 ms.openlocfilehash: 82f763d9a6b1ec27975aa80054456a6bbbaeaa2b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60069024"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62541257"
 ---
 # <a name="ca3004-review-code-for-information-disclosure-vulnerabilities"></a>CA3004：檢閱程式碼是否有資訊洩漏弱點
 

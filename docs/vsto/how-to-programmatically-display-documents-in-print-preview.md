@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: d8296d28e884c746e09b427914af02213bbbaa7e
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60049397"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62813032"
 ---
 # <a name="how-to-programmatically-display-documents-in-print-preview"></a>HOW TO：以程式設計方式在預覽列印中顯示文件
   如果您的方案會產生報告，您可能想要在 [預覽列印] 模式中向使用者顯示報告。

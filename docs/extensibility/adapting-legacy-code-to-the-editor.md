@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 4d0e9bcd9943dafc9dcbe9beb62433a62b55dc8e
-ms.sourcegitcommit: 22b73c601f88c5c236fe81be7ba4f7f562406d75
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "56227601"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62843995"
 ---
 # <a name="adapt-legacy-code-to-the-editor"></a>調整傳統的程式碼編輯器
 Visual Studio 編輯器中有許多功能，您可以從現有的程式碼元件存取。 下列指示說明如何調整非 MEF 元件，例如，VSPackage，使用編輯器功能。 指示也會說明如何使用配接器在 managed 和 unmanaged 程式碼中取得編輯器的服務。

@@ -9,12 +9,12 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a4d4d6a8399d3d40eaefe86ed9cbb3105729f08a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 126aa1ad57aa5f8961803b8443365c208f5623ff
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60118015"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63421256"
 ---
 # <a name="walkthrough-create-a-wpf-desktop-application-connected-to-an-azure-mobile-service"></a>逐步解說：建立連接至 Azure 行動服務的 WPF 桌面應用程式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -56,14 +56,14 @@ ms.locfileid: "60118015"
 3. 在左窗格中選擇 **WindowsAzure.MobileServices**，然後在右窗格中選擇 [安裝]  按鈕。  
   
     > [!NOTE]
-    >  如果出現 [預覽]  對話方塊，請檢閱建議的變更，然後選擇 [確定]  按鈕。  
+    > 如果出現 [預覽]  對話方塊，請檢閱建議的變更，然後選擇 [確定]  按鈕。  
   
 4. 在 [接受授權]  對話方塊中，檢閱授權條款並選擇 [我接受]  按鈕以接受條款。  
   
      必要的參考即會加入 **方案總管**。  
   
     > [!NOTE]
-    >  如果您不同意授權條款，請選擇 [我拒絕]  按鈕。 這樣一來，您將無法完成此逐步解說的其餘部分。  
+    > 如果您不同意授權條款，請選擇 [我拒絕]  按鈕。 這樣一來，您將無法完成此逐步解說的其餘部分。  
   
 ## <a name="create-the-user-interface"></a>建立使用者介面  
  下一步是建立應用程式的使用者介面。 首先您要建立可重複使用的使用者控制項，其會顯示兩個窗格並排的標準版面配置。 您要將使用者控制項加入主應用程式視窗，並加入控制項以輸入和顯示資料，然後撰寫程式碼來定義與行動服務後端的互動。  
@@ -288,7 +288,7 @@ ms.locfileid: "60118015"
      ![設計工具中的 MainWindow](../designers/media/wpfquickstart2.PNG "WPFQuickStart2")  
   
     > [!NOTE]
-    >  遵循接下來的幾個程序時，您可能會在開啟的 [錯誤清單]  中看到一些錯誤。 別擔心；一旦完成其餘的程序後，這些錯誤就會消失。  
+    > 遵循接下來的幾個程序時，您可能會在開啟的 [錯誤清單]  中看到一些錯誤。 別擔心；一旦完成其餘的程序後，這些錯誤就會消失。  
   
 6. 在 **方案總管**中，展開 [MainWindow.xaml]  節點並開啟 **MainWindow.xaml.cs** 檔或 **MainWindow.xaml.vb** 檔。  
   
@@ -482,7 +482,7 @@ ms.locfileid: "60118015"
 3. 在 [新的行動服務] 對話方塊中，選擇 [URL] 文字方塊並輸入 `wpfquickstart01`。  
   
     > [!NOTE]
-    >  您可能需要變更 URL 的數字部分。 Microsoft Azure 要求每個行動服務皆具備唯一的 URL。  
+    > 您可能需要變更 URL 的數字部分。 Microsoft Azure 要求每個行動服務皆具備唯一的 URL。  
   
      這會設定服務的 URL `https://wpfquickstart01.azure-mobile.net/`。  
   
@@ -491,7 +491,7 @@ ms.locfileid: "60118015"
 5. 在 [區域]  清單中，選擇您要部署行動服務的資料中心，然後選擇 [下一步]  (向右箭號) 按鈕。  
   
     > [!NOTE]
-    >  針對這項服務，您要使用預設 [後端]  設定與 [JavaScript] 。  
+    > 針對這項服務，您要使用預設 [後端]  設定與 [JavaScript] 。  
   
 6. 如果您要建立新的資料庫，請在 [指定資料庫設定]  頁面上的 [伺服器]  清單中選擇 [新的 SQL 資料庫伺服器] ，輸入您的 **SQL 登入名稱** 和 **密碼**，然後選擇 [完成]  (勾選記號) 按鈕。  
   

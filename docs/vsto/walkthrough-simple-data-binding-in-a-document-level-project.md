@@ -17,11 +17,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: f3b573842aee5f00f161213cf3e01dfcc4c8ba93
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60066645"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62981058"
 ---
 # <a name="walkthrough-simple-data-binding-in-a-document-level-project"></a>逐步解說：在文件層級專案中的簡單資料繫結
   本逐步解說會示範在文件層級專案中的資料繫結的基本概念。 SQL Server 資料庫中的單一資料欄位繫結至 Microsoft Office Excel 中的具名範圍。 本逐步解說也示範如何新增控制項，可讓您捲動瀏覽資料表中的所有記錄。

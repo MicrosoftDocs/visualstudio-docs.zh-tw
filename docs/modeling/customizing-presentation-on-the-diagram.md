@@ -10,11 +10,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 19f63ebc662b745062f0163a1f82eb036e164f3a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60046510"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62994691"
 ---
 # <a name="customize-presentation-on-the-diagram"></a>自訂圖表上的展示
 

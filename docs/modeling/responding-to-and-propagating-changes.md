@@ -10,11 +10,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 375f6996c91c294dd3b630c9ab987ff4b2d6cbdb
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60078638"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62824003"
 ---
 # <a name="responding-to-and-propagating-changes"></a>回應及傳播變更
 當建立、 刪除或更新項目時，您可以撰寫會傳播變更的其他部分的模型或外部的資源，例如檔案、 資料庫或其他元件的程式碼。

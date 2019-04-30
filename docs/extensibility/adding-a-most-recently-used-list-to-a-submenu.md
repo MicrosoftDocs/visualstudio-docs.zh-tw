@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 462f59d472c6de8872394b2eadd5f33aa27bccca
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56710080"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62843822"
 ---
 # <a name="add-a-most-recently-used-list-to-a-submenu"></a>新增 最近使用的子功能表清單
 本逐步解說是根據在示範[子功能表加入至功能表](../extensibility/adding-a-submenu-to-a-menu.md)，並示範如何加入子功能表中的動態清單。 動態清單構成建立最近使用的 (MRU) 清單的基礎。

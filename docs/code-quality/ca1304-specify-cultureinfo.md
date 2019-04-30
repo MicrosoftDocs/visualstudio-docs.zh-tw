@@ -15,11 +15,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: f1fe4ebce3a49c4aa626515e22eacd1c8e263847
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57870369"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62797506"
 ---
 # <a name="ca1304-specify-cultureinfo"></a>CA1304:必須指定 CultureInfo
 

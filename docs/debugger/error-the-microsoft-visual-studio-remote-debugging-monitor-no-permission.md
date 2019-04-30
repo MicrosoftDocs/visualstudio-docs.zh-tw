@@ -1,5 +1,5 @@
 ---
-title: 錯誤：遠端電腦上的 Microsoft Visual Studio 遠端偵錯監視沒有連接至這部電腦的使用權限
+title: 錯誤：遠端電腦上的 Microsoft Visual Studio 遠端偵錯監視沒有連線至這部電腦的權限
 titleSuffix: ''
 ms.custom: seodec18
 ms.date: 11/04/2016
@@ -20,13 +20,13 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: ac6e632927878988f8a3ff86d63fea080a45bd6d
-ms.sourcegitcommit: 01334abf36d7e0774329050d34b3a819979c95a2
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55852984"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62850444"
 ---
-# <a name="error-the-microsoft-visual-studio-remote-debugging-monitor-on-the-remote-computer-does-not-have-permission-to-connect-to-this-computer"></a>錯誤：遠端電腦上的 Microsoft Visual Studio 遠端偵錯監視沒有連接至這部電腦的使用權限
+# <a name="error-the-microsoft-visual-studio-remote-debugging-monitor-on-the-remote-computer-does-not-have-permission-to-connect-to-this-computer"></a>錯誤：遠端電腦上的 Microsoft Visual Studio 遠端偵錯監視沒有連線至這部電腦的權限
 
 當嘗試執行 Visual Studio 遠端偵錯監視 (msvsmon) 的使用者沒有本機電腦上的帳戶時，就會發生這個錯誤。
 

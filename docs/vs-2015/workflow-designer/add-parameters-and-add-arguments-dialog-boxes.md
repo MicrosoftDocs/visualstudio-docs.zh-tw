@@ -12,11 +12,11 @@ author: steved0x
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 64698ba801254f05ce0d51502a1290952109a383
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58940533"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62977148"
 ---
 # <a name="add-parameters-and-add-arguments-dialog-boxes"></a>加入參數及加入引數對話方塊
 下表描述的使用者介面 (UI) 項目**將參數加入**所使用的對話方塊<xref:System.Activities.Statements.InvokeMethod>設計工具。  

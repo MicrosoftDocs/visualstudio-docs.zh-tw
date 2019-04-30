@@ -11,12 +11,12 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 1c71becfb04115faefe88d5018c238ead38e4c88
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: c619ae6efd1de48319bf9c0398ee8ab4e3cd57ee
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58945113"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63442964"
 ---
 # <a name="edit-uml-sequence-diagrams-by-using-the-uml-api"></a>使用 UML API 編輯 UML 循序圖
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -55,7 +55,7 @@ using Microsoft.VisualStudio.ArchitectureTools.Extensibility.Presentation;
  如需詳細資訊，請參閱 <<c0> [ 在模型圖上定義功能表命令](../modeling/define-a-menu-command-on-a-modeling-diagram.md)。  
   
 ### <a name="getting-the-context"></a>正在取得內容  
- 如果您正在於循序圖中將互動編輯為命令或軌跡處理常式的一部分，您可以取得內容的參考。 例如:   
+ 如果您正在於循序圖中將互動編輯為命令或軌跡處理常式的一部分，您可以取得內容的參考。 例如：  
   
 ```  
 [SequenceDesignerExtension]  
@@ -75,7 +75,7 @@ public class MySequenceDiagramCommand : ICommandExtension
  有兩種類型的循序圖：一種在 UML 模型專案中手動建立，一種從程式碼產生。 使用 `UmlMode` 屬性探索您擁有的循序圖。  
   
 > [!NOTE]
->  這個屬性只會在產生自使用 Visual Studio 2013 及更早版本之程式碼的循序圖傳回 false。 這包括移轉自 2013 及更早版本之程式碼所產生的循序圖。 此版本的 Visual Studio 不支援產生新的循序圖。  
+> 這個屬性只會在產生自使用 Visual Studio 2013 及更早版本之程式碼的循序圖傳回 false。 這包括移轉自 2013 及更早版本之程式碼所產生的循序圖。 此版本的 Visual Studio 不支援產生新的循序圖。  
   
  例如，如果您想創造僅在 UML 循序圖上可見的功能表命令，則 `QueryStatus()` 方法可能包括下列陳述式：  
   
@@ -184,7 +184,7 @@ System.Diagnostics.Debug.Assert(
 ```  
   
 ### <a name="to-create-messages"></a>建立訊息  
- 若要建立訊息，您必須識別來源和目標生命線上的插入點。 例如:   
+ 若要建立訊息，您必須識別來源和目標生命線上的插入點。 例如：  
   
 ```  
 interaction.CreateMessage( sourceInsertionPoint,   

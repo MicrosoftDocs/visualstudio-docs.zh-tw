@@ -9,11 +9,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: bbcda5eef8ac6ac6aa20c6f487dfc94beb10866c
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56714177"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62929656"
 ---
 # <a name="troubleshoot-breakpoints-in-the-visual-studio-debugger"></a>疑難排解 Visual Studio 偵錯工具中的中斷點
 
@@ -35,7 +35,7 @@ ms.locfileid: "56714177"
 
 * 如果未載入您的模組，請檢查下列命令來找出原因：
   * 請確認您正在偵錯正確的處理序。
-  * 請檢查您正在偵錯正確類型的程式碼。 您可以找出何種程式碼偵錯工具已設定為在偵錯**處理程序** 視窗 (**偵錯** > **Windows**  >  **處理序**)。 比方說，如果您嘗試偵錯C#程式碼中，確認您偵錯工具會設定為適當類型的.NET Framework (例如，Managed (v4\*) 與受管理 (v2\*/v3\*) 與受管理 (CoreCLR)).
+  * 請檢查您正在偵錯正確類型的程式碼。 您可以找出何種程式碼偵錯工具已設定為在偵錯**處理程序** 視窗 (**偵錯** > **Windows**  >  **處理序**)。 比方說，如果您嘗試偵錯 C# 程式碼，確認您偵錯工具設定為適當類型的.NET Framework (例如，Managed (v4\*) 與受管理 (v2\*/v3\*) 與受管理 (CoreCLR))。
 
 ### <a name="-the-current-source-code-is-different-from-the-version-built-into"></a>"… 目前的原始碼與不同版本內建...」
 
@@ -53,7 +53,7 @@ ms.locfileid: "56714177"
 
 以下是要檢查的一些事項：
 1. 如果您的程式碼是在多個處理序或多部電腦執行，請確定您正在偵錯的正確的處理序或電腦。
-2. 確認您的程式碼正在執行。 若要測試您的程式碼正在執行，將呼叫加入`System.Diagnostics.Debugger.Break`(C#/VB) 或`__debugbreak`（c + +） 的程式碼行，您嘗試設定的中斷點，然後重建您的專案。
+2. 確認您的程式碼正在執行。 若要測試您的程式碼正在執行，將呼叫加入`System.Diagnostics.Debugger.Break`(C#/VB) 或`__debugbreak`(C++) 的程式碼行，您嘗試設定的中斷點，然後重建您的專案。
 3. 如果您正在偵錯最佳化程式碼，請確定函式設定中斷點的位置不在內嵌於另一個函式。 `Debugger.Break`中先前的核取所述的測試可以用來測試此問題。
 
 ## <a name="i-deleted-a-breakpoint-but-i-continue-to-hit-it-when-i-start-debugging-again"></a>我刪除了中斷點，但再次啟動偵錯時繼續叫用此中斷點

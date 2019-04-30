@@ -17,12 +17,12 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 829e219056b7c0a74226dd933ab38b8559ebd6b2
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: c296be2e3a00efcdf48bdd6e4442e88fc32b3695
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60107082"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63422530"
 ---
 # <a name="describe-control-flow-with-fragments-on-uml-sequence-diagrams"></a>以 UML 循序圖說明具有片段的控制流程
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ ms.locfileid: "60107082"
  合併片段包含一或多個 *「互動運算元」*(interaction operand)，而這每一個都含括一或多個訊息、互動使用或合併片段。  
   
 > [!NOTE]
->  本主題是有關在循序圖中的片段。 如需如何閱讀 UML 循序圖的詳細資訊，請參閱[UML 循序圖：參考資料](../modeling/uml-sequence-diagrams-reference.md)。 如需如何繪製 UML 循序圖的詳細資訊，請參閱[UML 循序圖：指導方針](../modeling/uml-sequence-diagrams-guidelines.md)。  
+> 本主題是有關在循序圖中的片段。 如需如何閱讀 UML 循序圖的詳細資訊，請參閱[UML 循序圖：參考資料](../modeling/uml-sequence-diagrams-reference.md)。 如需如何繪製 UML 循序圖的詳細資訊，請參閱[UML 循序圖：指導方針](../modeling/uml-sequence-diagrams-guidelines.md)。  
   
  ![合併片段有兩個互動運算元](../modeling/media/uml-seqfragments.png "UML_SeqFragments")  
   
@@ -45,7 +45,7 @@ ms.locfileid: "60107082"
 3. 您可以在每個互動運算元裡面按一下，個別選取它們。 在此範例中，會選取最上層的互動運算元，讓您可以看到它的界限。 一般而言，只會看見互動運算元之間的分隔線。  
   
     > [!NOTE]
-    >  若要選取最上層的互動運算元，您不能按太靠近合併片段頂端之處。  
+    > 若要選取最上層的互動運算元，您不能按太靠近合併片段頂端之處。  
   
 4. 成立條件。 您可以賦予每個互動運算元一個成立條件。 這說明執行互動運算元內訊息的條件。  
   
@@ -57,7 +57,7 @@ ms.locfileid: "60107082"
 1. 選取一則訊息，或一系列全由相同生命線或執行出現次數開始的訊息。  
   
    > [!NOTE]
-   >  如果您選取多則訊息，它們必須形成不可中斷的序列。  
+   > 如果您選取多則訊息，它們必須形成不可中斷的序列。  
   
 2. 以滑鼠右鍵按一下其中一個訊息，並指向 [環繞] ，然後按一下您想要的合併片段類型，例如 [Alt 合併片段] 。  
   
@@ -100,7 +100,7 @@ ms.locfileid: "60107082"
 - 以滑鼠右鍵按一下合併片段的標題，然後按一下 [屬性] 。  
   
     > [!NOTE]
-    >  不同類型的合併片段有不同的屬性。  
+    > 不同類型的合併片段有不同的屬性。  
   
 ## <a name="KindsOfFragment"></a> 類型的合併片段  
   

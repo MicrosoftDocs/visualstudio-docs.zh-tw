@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: cfe4b81f455f9efb5ee03b9c3db5f189cf19e176
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56681643"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62869530"
 ---
 # <a name="idebugproperty2getextendedinfo"></a>IDebugProperty2::GetExtendedInfo
 取得擴充屬性的資訊。
@@ -45,7 +45,7 @@ int GetExtendedInfo ( 
 
  `pExtendedInfo`
 
- [out]傳回`VARIANT`（c + +） 或物件 (C#)，可用來擷取擴充的屬性的資訊。 比方說，這個參數可能會傳回`IUnknown`介面，可以查詢[IDebugDocumentText2](../../../extensibility/debugger/reference/idebugdocumenttext2.md)介面。 如需詳細資訊，請參閱 < 備註 >。
+ [out]傳回`VARIANT`(C++) 或物件 (C#)，可用來擷取擴充的屬性的資訊。 比方說，這個參數可能會傳回`IUnknown`介面，可以查詢[IDebugDocumentText2](../../../extensibility/debugger/reference/idebugdocumenttext2.md)介面。 如需詳細資訊，請參閱 < 備註 >。
 
 ## <a name="return-value"></a>傳回值
  如果成功，則傳回`S_OK`; 否則會傳回錯誤碼。 傳回`S_GETEXTENDEDINFO_NO_EXTENDEDINFO`如果擷取沒有延伸資訊。

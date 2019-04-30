@@ -11,12 +11,12 @@ caps.latest.revision: 28
 author: alexhomer1
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 3c328b8522913dcb8095c09a031b2a2c80f58030
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 0fc24dc76e59a04b9485a71ba4dff44e0c7ba64d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60086763"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63442800"
 ---
 # <a name="create-and-run-unit-tests-for-a-store-app-in-visual-studio"></a>在 Visual Studio 中對市集應用程式建立及執行單元測試
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -24,7 +24,7 @@ ms.locfileid: "60086763"
 Visual Studio 2012 Express for Windows 8 單元測試工具的設計支援在軟體開發作法中包含單元測試的開發人員和小組。 單元測試提供一種有效率且可維護的方式，讓開發人員和測試人員尋找 Visual C#、Visual Basic 和 Visual C++ 專案中類別方法的邏輯錯誤。
 
 > [!NOTE]
->  本節的這些主題說明 Visual Studio 2012 Express for Windows 8 的功能。 Visual Studio Ultimate、VS Premium 和 VS Professional 都有為單元測試提供額外的功能。
+> 本節的這些主題說明 Visual Studio 2012 Express for Windows 8 的功能。 Visual Studio Ultimate、VS Premium 和 VS Professional 都有為單元測試提供額外的功能。
 >
 > - 在 VS Ultimate、VS Premium 和 VS Professional 中，您可以使用任何協力廠商或開放原始碼單元測試架構，只要該架構已經為 Microsoft [測試總管] 建立附加配接器即可。 您也可使用 VS Ultimate 及 VS Premium，分析及顯示測試的程式碼涵蓋範圍資訊。
 >   - 在 VS Ultimate 中，您可以在每次建置之後執行測試。 您也可以使用 Microsoft Fakes，這是一種 Managed 程式碼的隔離架構，會以測試程式碼替代系統和協力廠商功能，以將測試焦點放在自己的程式碼上。

@@ -16,11 +16,11 @@ manager: wpickett
 ms.workload:
 - multiple
 ms.openlocfilehash: 41ac8e38f501152d329e788572c500f68a8d2214
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55907954"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62820716"
 ---
 # <a name="intrinsic-functions"></a>內建函式
 SAL 中的運算式可以是 C/C++ 運算式 (假設該運算式沒有副作用的話)，例如 ++、-- 和函式呼叫在這個內容中全都有副作用。  不過，SAL 提供一些類似的函式物件和一些可以用於 SAL 運算式的保留的符號。 這些指*內建函式*。
@@ -35,7 +35,7 @@ SAL 中的運算式可以是 C/C++ 運算式 (假設該運算式沒有副作用�
 |`_Nullterm_length_(param)`|`param` 已達緩衝區，但不包括 null 結束字元的項目數。 您可能會套用至任何非彙總、 非 void 類型的緩衝區。|
 |`_Old_(expr)`|在前置條件下進行評估時，`_Old_` 會傳回輸入值 `expr`。  在後置條件下進行評估時，它會傳回值 `expr`，因為它已在前置條件下進行評估。|
 |`_Param_(n)`|`n`個參數的函式，從 1 到計算`n`，和`n`是常值的整數常數。 如果參數的名稱，就有一個此註解等同於依名稱存取的參數。 **注意︰** `n`可能會參考省略符號，定義，或可用函式原型中不使用名稱的位置參數。|
-|`return`|C/c + + 保留關鍵字`return`可以用於 SAL 運算式來表示函式的傳回值。  值只能在後置狀態下使用，因此在前置狀態下使用就是語法錯誤。|
+|`return`|C /C++保留的關鍵字`return`可以用於 SAL 運算式來表示函式的傳回值。  值只能在後置狀態下使用，因此在前置狀態下使用就是語法錯誤。|
 
 ## <a name="string-specific"></a>特定的字串
  下列內建函式註釋可讓您操作字串。 這四種函式的目的都相同：傳回 null 結束字元之前所找到類型的項目數。 差異在於項目中參考的資料類型。 請注意，如果您要指定不是以字元組成之以 null 終止的緩衝區長度，請使用前一節中的 `_Nullterm_length_(param)` 註釋。

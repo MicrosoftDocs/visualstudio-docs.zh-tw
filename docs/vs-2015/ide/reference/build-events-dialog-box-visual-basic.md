@@ -17,12 +17,12 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: f9c68a5d7f59726eecebe5affad16465a03aeda2
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: 5eb4473056e8d9c42fedf781ed0f5d1189f42fca
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59652783"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63442665"
 ---
 # <a name="build-events-dialog-box-visual-basic"></a>建置事件對話方塊 (Visual Basic)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -33,13 +33,13 @@ ms.locfileid: "59652783"
  指定要在建置開始前執行的任何命令。 若要鍵入很長的命令，請按一下 [建置前進行編輯] 顯示[建置前事件/建置後事件命令列對話方塊](../../ide/reference/pre-build-event-post-build-event-command-line-dialog-box.md)。  
   
 > [!NOTE]
->  如果專案是最新狀態，而且未觸發任何建置，則建置前事件不會執行。  
+> 如果專案是最新狀態，而且未觸發任何建置，則建置前事件不會執行。  
   
  **建置後事件命令列**  
  指定要在建置結束後執行的任何命令。 若要鍵入很長的命令，請按一下 [建置後進行編輯] 顯示 [建置前事件/建置後事件命令列] 對話方塊。  
   
 > [!NOTE]
->  在執行 .bat 檔案的所有建置命令前方，加入 `call` 陳述式。 例如，`call C:\MyFile.bat` 或 `call C:\MyFile.bat call C:\MyFile2.bat`。  
+> 在執行 .bat 檔案的所有建置命令前方，加入 `call` 陳述式。 例如，`call C:\MyFile.bat` 或 `call C:\MyFile.bat call C:\MyFile2.bat`。  
   
  **執行建置後事件**  
  指定要執行建置後事件的條件，如下表所示。  

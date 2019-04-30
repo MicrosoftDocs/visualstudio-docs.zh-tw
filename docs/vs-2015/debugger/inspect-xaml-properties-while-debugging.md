@@ -15,11 +15,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 52d978472f057359cb2b1e0375f2d7ba524d1925
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60101427"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62423823"
 ---
 # <a name="inspect-xaml-properties-while-debugging"></a>在偵錯時檢查 XAML 屬性
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

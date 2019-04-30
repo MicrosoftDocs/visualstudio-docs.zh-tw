@@ -12,12 +12,12 @@ ms.assetid: 2f13e601-dadc-476e-a8ec-01c4515082e7
 caps.latest.revision: 18
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 15320fc86eab15ff59229239b28721f6e926e794
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 74694c903040b278ed8864b46756cac66381405a
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58939537"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445019"
 ---
 # <a name="dbgattribflags"></a>DBG_ATTRIB_FLAGS
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -300,7 +300,7 @@ public const int DBG_ATTRIB_MULTI_CUSTOM_VIEWERS = 0x0001000000000000
 ## <a name="remarks"></a>備註  
   
 > [!NOTE]
->  適用於 C# 組件中未實際定義這個列舉型別中的值。 相反地，您必須將定義複製到原始程式檔中。  
+> 適用於 C# 組件中未實際定義這個列舉型別中的值。 相反地，您必須將定義複製到原始程式檔中。  
   
  這些旗標也可用來做為引數傳遞時，篩選的物件，例如，子系[EnumChildren](../../../extensibility/debugger/reference/idebugproperty2-enumchildren.md)。 值可能會結合的位元`OR`。  
   

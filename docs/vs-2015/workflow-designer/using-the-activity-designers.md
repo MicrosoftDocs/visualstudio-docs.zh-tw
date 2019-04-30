@@ -13,11 +13,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: ce8d963d56a6ad79562db22ab0e59885730c24b1
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58943331"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62858414"
 ---
 # <a name="using-the-activity-designers"></a>使用活動設計工具
 [!INCLUDE[wfd1](../includes/wfd1-md.md)] 包括許多系統供應的活動，在您建構活動與工作流程時，可以使用這些活動。 本節描述系統供應的活動分類與其可用的設計工具。 這些類別內的個別活動與其個別設計工具的主題，均描述這些活動的功能，並提供如何使用活動的指引。  

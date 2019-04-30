@@ -19,11 +19,11 @@ dev_langs:
 ms.workload:
 - multiple
 ms.openlocfilehash: 1a06197278c61a25c4baad15888f818ed1e1f673
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55955878"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62797365"
 ---
 # <a name="ca1414-mark-boolean-pinvoke-arguments-with-marshalas"></a>CA1414:以 MarshalAs 標記布林 P/Invoke 引數
 
@@ -40,7 +40,7 @@ ms.locfileid: "55955878"
 ## <a name="rule-description"></a>規則描述
  平台叫用方法存取 unmanaged 程式碼，並使用定義`Declare`中的關鍵字[!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]或<xref:System.Runtime.InteropServices.DllImportAttribute?displayProperty=fullName>。 <xref:System.Runtime.InteropServices.MarshalAsAttribute> 指定用來轉換資料類型，managed 和 unmanaged 程式碼之間封送處理行為。 許多簡單的資料類型，例如<xref:System.Byte?displayProperty=fullName>和<xref:System.Int32?displayProperty=fullName>、 unmanaged 程式碼中有單一的表示法，並不需要指定其封送處理行為; common language runtime 會自動提供正確的行為。
 
- <xref:System.Boolean>資料類型在 unmanaged 程式碼中有多種表示。 當<xref:System.Runtime.InteropServices.MarshalAsAttribute>未指定，預設值封送處理行為<xref:System.Boolean>資料類型是<xref:System.Runtime.InteropServices.UnmanagedType?displayProperty=fullName>。 這是 32 位元整數，也就是不適合所有情況。 Unmanaged 方法需要布林值表示應該決定，並對應到適當<xref:System.Runtime.InteropServices.UnmanagedType?displayProperty=fullName>。 UnmanagedType.Bool 是 Win32 BOOL 類型，這一律是 4 個位元組。 應該使用 c + + 的 UnmanagedType.U1`bool`或其他 1 個位元組類型。
+ <xref:System.Boolean>資料類型在 unmanaged 程式碼中有多種表示。 當<xref:System.Runtime.InteropServices.MarshalAsAttribute>未指定，預設值封送處理行為<xref:System.Boolean>資料類型是<xref:System.Runtime.InteropServices.UnmanagedType?displayProperty=fullName>。 這是 32 位元整數，也就是不適合所有情況。 Unmanaged 方法需要布林值表示應該決定，並對應到適當<xref:System.Runtime.InteropServices.UnmanagedType?displayProperty=fullName>。 UnmanagedType.Bool 是 Win32 BOOL 類型，這一律是 4 個位元組。 應該用於 UnmanagedType.U1 C++ `bool`或其他 1 個位元組類型。
 
 ## <a name="how-to-fix-violations"></a>如何修正違規
  若要修正此規則的違規情形，套用<xref:System.Runtime.InteropServices.MarshalAsAttribute>至<xref:System.Boolean>參數或傳回值。 將屬性的值設定為適當<xref:System.Runtime.InteropServices.UnmanagedType>。

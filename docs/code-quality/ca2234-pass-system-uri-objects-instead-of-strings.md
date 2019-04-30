@@ -19,11 +19,11 @@ dev_langs:
 ms.workload:
 - multiple
 ms.openlocfilehash: 97b73793d0c473727960dbde8fe32fc584ff6dd5
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57869202"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62541692"
 ---
 # <a name="ca2234-pass-systemuri-objects-instead-of-strings"></a>CA2234:必須傳遞 System.Uri 物件而非字串
 

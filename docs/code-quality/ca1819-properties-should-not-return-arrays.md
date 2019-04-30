@@ -18,11 +18,11 @@ dev_langs:
 ms.workload:
 - multiple
 ms.openlocfilehash: 11209ec181e2c2b61c7767787ee99c2d69eabe8b
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57872739"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62545559"
 ---
 # <a name="ca1819-properties-should-not-return-arrays"></a>CA1819:屬性不應該傳回陣列
 

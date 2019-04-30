@@ -9,11 +9,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 7fab8a42d5559c23ce6816d5a247561a4376a7fe
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60075827"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62909158"
 ---
 # <a name="manifest-to-code"></a>資訊清單至程式碼
 資訊清單以程式碼工具是 Visual Studio 映像服務採用.imagemanifest 檔案，並產生包裝函式的檔案或檔案參考中的映像資訊清單的值的主控台應用程式C++， C#，適用於 Visual Studio 的 VB 或.vsct 檔案延伸模組。 此工具會產生可用於從 Visual Studio 映像服務直接提出要求的映像或傳遞到 Api 的資訊清單的值，如果程式碼不會處理任何自己的 UI 和轉譯的包裝函式檔案。

@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 19ad68ce060eca252befb033b3181fc9da7a28c2
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56706128"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62890772"
 ---
 # <a name="asyncvoidmethodbuildermobjectidfordebugger-field"></a>AsyncVoidMethodBuilder.m_objectIdForDebugger 欄位
 表示偵錯工具用來唯一識別這個產生器的延遲初始化的物件。

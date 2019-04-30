@@ -12,12 +12,12 @@ caps.latest.revision: 49
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 8832f31724d5e688b93dcca76cce8e1a496c9ced
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 40be072c9ebc518068d9f02a28507b011bec125a
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60083214"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446766"
 ---
 # <a name="walkthrough-connecting-a-host-to-a-generated-directive-processor"></a>逐步解說：將主機連接至產生的指示詞處理器
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,7 +27,7 @@ ms.locfileid: "60083214"
  在本逐步解說中，您會擴充自訂主機，以支援呼叫指示詞處理器的文字範本。 當您定義特定領域語言時，它會產生*指示詞處理器*的領域模型。 指示詞處理器，可讓使用者更輕鬆地撰寫存取模型，並減少撰寫組件並匯入的範本中的指示詞的範本。  
   
 > [!WARNING]
->  本逐步解說是根據[逐步解說：建立自訂文字範本主機](../modeling/walkthrough-creating-a-custom-text-template-host.md)。 第一次執行該逐步解說。  
+> 本逐步解說是根據[逐步解說：建立自訂文字範本主機](../modeling/walkthrough-creating-a-custom-text-template-host.md)。 第一次執行該逐步解說。  
   
  本逐步解說包含下列工作：  
   
@@ -68,7 +68,7 @@ ms.locfileid: "60083214"
 2. 在 [ **建置** ] 功能表上，按一下 [ **建置方案**]。  
   
    > [!IMPORTANT]
-   >  此步驟會產生指示詞處理器，並將它的索引鍵，在登錄中。  
+   > 此步驟會產生指示詞處理器，並將它的索引鍵，在登錄中。  
   
 3. 按一下 [偵錯] 功能表上的 [開始偵錯]。  
   
@@ -120,7 +120,7 @@ ms.locfileid: "60083214"
 5. 找出屬性的程式碼`StandardAssemblyReferences`，並將它取代為下列程式碼：  
   
     > [!NOTE]
-    >  在此步驟中，您可以新增所需的支援您的主機將會產生指示詞處理器的組件的參考。  
+    > 在此步驟中，您可以新增所需的支援您的主機將會產生指示詞處理器的組件的參考。  
   
     ```csharp  
     //the host can provide standard assembly references  
@@ -156,7 +156,7 @@ ms.locfileid: "60083214"
 6. 找出函式的程式碼`ResolveDirectiveProcessor`，並將它取代為下列程式碼：  
   
     > [!IMPORTANT]
-    >  此程式碼包含硬式編碼的名稱，您要連接的產生指示詞處理器的參考。 您可以輕鬆地進行這更一般，在此情況下它會尋找所有的指示詞處理器的登錄中列出，並嘗試尋找相符項目。 在此情況下，主機會使用任何產生的指示詞處理器。  
+    > 此程式碼包含硬式編碼的名稱，您要連接的產生指示詞處理器的參考。 您可以輕鬆地進行這更一般，在此情況下它會尋找所有的指示詞處理器的登錄中列出，並嘗試尋找相符項目。 在此情況下，主機會使用任何產生的指示詞處理器。  
   
     ```csharp  
     //the engine calls this method based on the directives the user has   
@@ -241,7 +241,7 @@ ms.locfileid: "60083214"
 2. 將下列程式碼加入至此文字檔中：  
   
     > [!NOTE]
-    >  文字範本的程式設計語言不需要符合自訂主應用程式。  
+    > 文字範本的程式設計語言不需要符合自訂主應用程式。  
   
     ```csharp  
     Text Template Host Test  
@@ -325,7 +325,7 @@ ms.locfileid: "60083214"
      `<YOUR PATH>CustomHost\bin\Debug\CustomHost.exe`  
   
     > [!NOTE]
-    >  而不是輸入位址，您可以瀏覽至 CustomHost.exe 檔中**Windows 檔案總管**，然後將檔案拖曳到 [命令提示字元] 視窗。  
+    > 而不是輸入位址，您可以瀏覽至 CustomHost.exe 檔中**Windows 檔案總管**，然後將檔案拖曳到 [命令提示字元] 視窗。  
   
 3. 輸入空格。  
   
@@ -336,7 +336,7 @@ ms.locfileid: "60083214"
      `<YOUR PATH>TestTemplateWithDP.txt`  
   
     > [!NOTE]
-    >  而不是輸入位址，您可以瀏覽至檔案 TestTemplateWithDP.txt 中**Windows 檔案總管**，然後將檔案拖曳到 [命令提示字元] 視窗。  
+    > 而不是輸入位址，您可以瀏覽至檔案 TestTemplateWithDP.txt 中**Windows 檔案總管**，然後將檔案拖曳到 [命令提示字元] 視窗。  
   
      自訂主應用程式執行，並啟動文字範本轉換流程。  
   

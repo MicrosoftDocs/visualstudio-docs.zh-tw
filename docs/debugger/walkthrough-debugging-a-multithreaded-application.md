@@ -23,12 +23,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d55d4ae23b2fd8bf03e6aa9ad7301531aedcfcac
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: fddd8efd11d2a3d61f0cff33cb832ebd8a0c5d2a
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60107758"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63406926"
 ---
 # <a name="view-threads-in-the-visual-studio-debugger-by-using-the-threads-window-c-visual-basic-c"></a>在 Visual Studio 偵錯工具中檢視往來文章，使用 [執行緒] 視窗 (C#，Visual Basic 中， C++)
 在 [**執行緒**] 視窗中，您可以檢查及使用您要偵錯應用程式中的執行緒。 如需如何使用的逐步指引**執行緒** 視窗中，請參閱[逐步解說：使用 [執行緒] 視窗進行偵錯](../debugger/how-to-use-the-threads-window.md)。
@@ -85,7 +85,7 @@ ms.locfileid: "60107758"
  在 managed 程式碼，暫停的計數會變更您凍結或解除凍結執行緒時。 如果您凍結執行緒在 managed 程式碼時，其暫停的計數為 1。 當您凍結執行緒原生程式碼時，其暫停的計數為 0，除非您使用`SuspendThread`呼叫。
 
 > [!NOTE]
->  當您偵錯機器碼對 Managed 程式碼的呼叫時，Managed 程式碼與呼叫它的機器碼會在相同的實體執行緒中執行。 暫止或凍結原生執行緒，也會凍結 Managed 程式碼。
+> 當您偵錯機器碼對 Managed 程式碼的呼叫時，Managed 程式碼與呼叫它的機器碼會在相同的實體執行緒中執行。 暫止或凍結原生執行緒，也會凍結 Managed 程式碼。
 
 ### <a name="to-freeze-or-thaw-execution-of-a-thread"></a>若要凍結或解除凍結執行緒的執行
 

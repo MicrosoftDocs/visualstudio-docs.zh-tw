@@ -1,5 +1,5 @@
 ---
-title: 如何： 偵錯 OnStart 方法 |Microsoft Docs
+title: HOW TO：偵錯 OnStart 方法 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -20,14 +20,14 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 2fc5e8a7e0bbc80fd7fa0aa2d242239a9be6a219
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56714968"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62894413"
 ---
-# <a name="how-to-debug-the-onstart-method"></a>如何：偵錯 OnStart 方法
-您可以藉由啟動服務並將偵錯工具附加到服務處理序，對 Windows 服務進行偵錯。 如需詳細資訊，請參閱 [How to: Debug Windows Service Applications](/dotnet/framework/windows-services/how-to-debug-windows-service-applications)。 但是若要對 Windows 服務的 <xref:System.ServiceProcess.ServiceBase.OnStart%2A?displayProperty=fullName> 方法進行偵錯，您必須從方法內啟動偵錯工具。
+# <a name="how-to-debug-the-onstart-method"></a>HOW TO：對 OnStart 方法進行偵錯
+您可以藉由啟動服務並將偵錯工具附加到服務處理序，對 Windows 服務進行偵錯。 如需詳細資訊，請參閱[如何：偵錯 Windows 服務應用程式](/dotnet/framework/windows-services/how-to-debug-windows-service-applications)。 但是若要對 Windows 服務的 <xref:System.ServiceProcess.ServiceBase.OnStart%2A?displayProperty=fullName> 方法進行偵錯，您必須從方法內啟動偵錯工具。
 
 1. 在 <xref:System.Diagnostics.Debugger.Launch%2A> 方法的開頭加入對 `OnStart()`的呼叫。
 
@@ -52,6 +52,6 @@ ms.locfileid: "56714968"
 
 5. Visual Studio 的新執行個體隨即啟動，並在 `Debugger.Launch()` 方法停止執行。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [偵錯工具安全性](../debugger/debugger-security.md)
 - [偵錯 Managed 程式碼](../debugger/debugging-managed-code.md)

@@ -16,12 +16,12 @@ caps.latest.revision: 23
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 8337fa86173b62a6576be6d3abe8d76dbef427d7
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 95f863a8b33f6cbff7e592b0a7a45e664494d826
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60040065"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63427240"
 ---
 # <a name="accessing-local-and-remote-data-in-clickonce-applications"></a>在 ClickOnce 應用程式中存取本機和遠端資料
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,7 +43,7 @@ ms.locfileid: "60040065"
  資料目錄的用途是要保存應用程式 Managed 資料，也就是應用程式所明確儲存和維護的資料。 應用程式資訊清單中所有不是標記為「資料」的靜態、非相依檔案都是位於應用程式目錄中， 這個目錄是應用程式的可執行檔 (.exe) 以及組件所在的位置。  
   
 > [!NOTE]
->  在解除安裝 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 應用程式時，也會移除其資料目錄。 請絕對不要使用資料目錄來儲存由使用者所管理資料 (例如文件)。  
+> 在解除安裝 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 應用程式時，也會移除其資料目錄。 請絕對不要使用資料目錄來儲存由使用者所管理資料 (例如文件)。  
   
 #### <a name="marking-data-files-in-a-clickonce-distribution"></a>標示 ClickOnce 散發中的資料檔案  
  若要將現有檔案置於資料目錄中，您必須在 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 應用程式的應用程式資訊清單檔中將此現有檔案標記為資料檔案。 如需詳細資訊，請參閱[如何：在 ClickOnce 應用程式中納入資料檔案](../deployment/how-to-include-a-data-file-in-a-clickonce-application.md)。  
@@ -52,7 +52,7 @@ ms.locfileid: "60040065"
  若要從資料目錄讀取，需具備 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 應用程式要求讀取權限；同樣地，寫入目錄則需要寫入權限。 如果設定以完全信任狀態執行，您的應用程式就會自動擁有這種權限。 如需有關為您的權限提升或受信任的應用程式部署的應用程式提升權限的詳細資訊，請參閱[保護 ClickOnce 應用程式](../deployment/securing-clickonce-applications.md)。  
   
 > [!NOTE]
->  如果您的組織不使用受信任的應用程式部署，並關閉了權限提升，判斷提示權限就會失敗。  
+> 如果您的組織不使用受信任的應用程式部署，並關閉了權限提升，判斷提示權限就會失敗。  
   
  一旦您的應用程式具有這些權限之後，即可使用方法呼叫 <xref:System.IO>內部的類別以存取資料目錄。 您可以使用定義於 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 之 <xref:System.Deployment.Application.ApplicationDeployment.DataDirectory%2A> 屬性上的 <xref:System.Deployment.Application.ApplicationDeployment.CurrentDeployment%2A> 屬性，來取得 Windows Form <xref:System.Deployment.Application.ApplicationDeployment>應用程式內的資料目錄路徑。 這是最方便的存取資料方法，也是建議的方法。 下列程式碼範例將示範如何針對已做為資料檔加入部署中的 CSV.txt 文字檔執行這個動作。  
   

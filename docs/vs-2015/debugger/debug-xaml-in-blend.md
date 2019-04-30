@@ -14,12 +14,12 @@ caps.latest.revision: 8
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 4e78caf838a6e121fbe2778e7bdee2c5c87019a4
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: beea8cd3ad6ac12bef284e0d5fda9e995a8613c5
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58941716"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63434088"
 ---
 # <a name="debug-xaml-in-blend"></a>在 Blend 中偵錯 XAML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ ms.locfileid: "58941716"
  如果 XAML 或程式碼後置檔案不符合語言的格式規則，就會發生語法錯誤。 錯誤描述有助於您了解修正方法。 這份清單也會指出發生錯誤的檔案名稱與行號。 XAML 錯誤會顯示在 [結果] 面板的 [標記] 索引標籤中。  
   
 > [!TIP]
->  XAML 是 XML 架構的標記語言，並且遵循 XML 語法規則。  
+> XAML 是 XML 架構的標記語言，並且遵循 XML 語法規則。  
   
  常見的一些 XAML 語法錯誤原因如下：  
   

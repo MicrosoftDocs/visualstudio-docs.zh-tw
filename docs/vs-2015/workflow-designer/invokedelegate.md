@@ -13,11 +13,11 @@ author: steved0x
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 30281d8cd5d5ed94ed89a980006f9618292a778d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58945450"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62951966"
 ---
 # <a name="invokedelegate"></a>InvokeDelegate
 

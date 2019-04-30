@@ -9,12 +9,12 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 44e12e616e453dcdc0390e8a6eb5b2065a51a6bb
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: 31bbc54b08fc053d10bd79d6a6b24e7605bc0351
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59656930"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63384050"
 ---
 # <a name="linq-to-sql-tools-in-visual-studio"></a>LINQ to SQL 工具，在 Visual Studio 中
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,7 +41,7 @@ LINQ to SQL 是 Microsoft 所發行的第一個物件關聯式對應技術。 �
  ![LINQ to SQL 設計工具](../data-tools/media/raddata-linq-to-sql-designer.png "raddata LINQ to SQL 設計工具")
 
 > [!IMPORTANT]
->  [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]是簡單的物件關聯式對應程式，因為它支援僅為 1:1 對應關聯性。 換句話說，實體類別與資料庫資料表或檢視之間只可以有一對一對應關聯性。 不支援複雜的對應，例如實體類別對應至聯結的資料表;使用 Entity Framework 進行複雜的對應。 此外，這個設計工具是單向程式碼產生器。 這表示只有您對設計工具介面進行的變更才會反映在程式碼檔案中。 [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]中並不會反映程式碼檔的手動變更。 儲存設計工具並重新產生程式碼時，會覆寫您在程式碼檔中進行的所有手動變更。 如需如何加入使用者程式碼及擴充產生之類別的詳細資訊[!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]，請參閱[How to:擴充 O/R 設計工具所產生的程式碼](../data-tools/how-to-extend-code-generated-by-the-o-r-designer.md)。
+> [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]是簡單的物件關聯式對應程式，因為它支援僅為 1:1 對應關聯性。 換句話說，實體類別與資料庫資料表或檢視之間只可以有一對一對應關聯性。 不支援複雜的對應，例如實體類別對應至聯結的資料表;使用 Entity Framework 進行複雜的對應。 此外，這個設計工具是單向程式碼產生器。 這表示只有您對設計工具介面進行的變更才會反映在程式碼檔案中。 [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]中並不會反映程式碼檔的手動變更。 儲存設計工具並重新產生程式碼時，會覆寫您在程式碼檔中進行的所有手動變更。 如需如何加入使用者程式碼及擴充產生之類別的詳細資訊[!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]，請參閱[How to:擴充 O/R 設計工具所產生的程式碼](../data-tools/how-to-extend-code-generated-by-the-o-r-designer.md)。
 
 ## <a name="creating-and-configuring-the-datacontext"></a>建立和設定 DataContext
  新增之後**LINQ to SQL 類別**項目至專案並開啟[!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]，空的設計介面表示空<xref:System.Data.Linq.DataContext>準備好進行設定。 <xref:System.Data.Linq.DataContext>設有拖曳到設計介面上的第一個項目所提供的連接資訊... 因此，<xref:System.Data.Linq.DataContext> 會使用第一個放入設計介面之項目的連接資訊來進行設定。 如需詳細資訊<xref:System.Data.Linq.DataContext>類別，請參閱 < [DataContext 方法 （O/R 設計工具）](../data-tools/datacontext-methods-o-r-designer.md)。
@@ -53,7 +53,7 @@ LINQ to SQL 是 Microsoft 所發行的第一個物件關聯式對應技術。 �
  您可以建立<xref:System.Data.Linq.DataContext>呼叫的方法 （對應至） 預存程序和函式將它們從拖曳**伺服器總管**/**資料庫總管**到[!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]. 預存程序和函式都會加入至 [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]做為 <xref:System.Data.Linq.DataContext> 的方法。
 
 > [!NOTE]
->  當您將預存程序和函式從**伺服器總管**/**資料庫總管**拖曳至[!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]，所產生的傳回類型<xref:System.Data.Linq.DataContext>方法不同視您卸除項目。 如需詳細資訊，請參閱 < [DataContext 方法 （O/R 設計工具）](../data-tools/datacontext-methods-o-r-designer.md)。
+> 當您將預存程序和函式從**伺服器總管**/**資料庫總管**拖曳至[!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]，所產生的傳回類型<xref:System.Data.Linq.DataContext>方法不同視您卸除項目。 如需詳細資訊，請參閱 < [DataContext 方法 （O/R 設計工具）](../data-tools/datacontext-methods-o-r-designer.md)。
 
 ## <a name="configuring-a-datacontext-to-use-stored-procedures-to-save-data-between-entity-classes-and-a-database"></a>設定 DataContext 使用預存程序在實體類別與資料庫之間儲存資料
  如前所述，您可以建立會呼叫預存程序和函式的 <xref:System.Data.Linq.DataContext> 方法。 此外，還可以指派預存程序來提供執行插入、更新和刪除作業時的預設 [!INCLUDE[vbtecdlinq](../includes/vbtecdlinq-md.md)] 執行階段行為。 如需詳細資訊，請參閱[如何：指派用來執行更新、插入和刪除的預存程序 (O/R 設計工具)](../data-tools/how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-o-r-designer.md)。

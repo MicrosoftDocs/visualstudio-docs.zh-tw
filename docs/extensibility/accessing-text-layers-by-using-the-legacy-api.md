@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: a0ba962ba4c18773b5c85480bce62ab728cab307
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60095226"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62892220"
 ---
 # <a name="access-text-layers-by-using-the-legacy-api"></a>使用舊版 API 存取文字圖層
 文字層通常會封裝在某種程度的文字版面配置。 比方說，「 函式-一次 「 圖層會隱藏文字之前和之後包含文字插入點 （caret) 的函式。

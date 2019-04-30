@@ -22,11 +22,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 79d116cfb7c9b6514032aa12d916b21b38ae94b3
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55942618"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62811683"
 ---
 # <a name="create-models-for-your-app"></a>建立應用程式模型
 
@@ -38,7 +38,7 @@ ms.locfileid: "55942618"
 
 |**圖表**|**顯示**|
 |-|-|
-|[相依性圖表中：指導方針](../modeling/layer-diagrams-guidelines.md)<br /><br /> [相依性圖表中：參考](../modeling/layer-diagrams-reference.md)|系統的高階架構|
+|[相依性圖表中：方針](../modeling/layer-diagrams-guidelines.md)<br /><br /> [相依性圖表中：參考](../modeling/layer-diagrams-reference.md)|系統的高階架構|
 |Code Map<br /><br /> [對應方案之間的相依性](../modeling/map-dependencies-across-your-solutions.md)<br /><br /> [使用 Code Map 分析器尋找潛在問題](../modeling/find-potential-problems-using-code-map-analyzers.md)|現有程式碼中的相依性和其他關聯性|
 |程式碼產生的類別圖<br /><br /> [使用類別圖表 (類別設計工具)](../ide/class-designer/designing-and-viewing-classes-and-types.md)|.NET 程式碼中的類型及其關聯性|
 

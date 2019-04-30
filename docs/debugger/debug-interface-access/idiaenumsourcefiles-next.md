@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 29424c2b12884cae7f803a46e15f7183d9690d96
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56631779"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62829624"
 ---
 # <a name="idiaenumsourcefilesnext"></a>IDiaEnumSourceFiles::Next
 擷取列舉序列中的原始程式檔中指定的數目。
@@ -48,7 +48,7 @@ HRESULT Next ( 
 ## <a name="return-value"></a>傳回值
  如果成功，則傳回 `S_OK`。 傳回`S_FALSE`如果不有任何更多的原始程式檔。 否則會傳回錯誤碼。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [IDiaEnumSourceFiles](../../debugger/debug-interface-access/idiaenumsourcefiles.md)
 - [IDiaSession::findLinesByLinenum](../../debugger/debug-interface-access/idiasession-findlinesbylinenum.md)
 - [IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md)

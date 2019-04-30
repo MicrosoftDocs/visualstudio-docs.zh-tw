@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 604c68ef82f66358238f94b43f000fae24a076f1
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56616829"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62834148"
 ---
 # <a name="idiatable"></a>IDiaTable
 列舉 DIA 資料來源資料表。
@@ -31,7 +31,7 @@ IDiaTable : IEnumUnknown
 ## <a name="methods-in-vtable-order"></a>依照 Vtable 順序的方法
 下表顯示的方法`IDiaTable`。
 
-|方法|說明|
+|方法|描述|
 |------------|-----------------|
 |[IDiaTable::get__NewEnum](../../debugger/debug-interface-access/idiatable-get-newenum.md)|擷取[IEnumVARIANT 介面](/previous-versions/windows/desktop/api/oaidl/nn-oaidl-ienumvariant)這個列舉值的版本。|
 |[IDiaTable::get_name](../../debugger/debug-interface-access/idiatable-get-name.md)|擷取資料表的名稱。|
@@ -131,13 +131,13 @@ void UseTable(IDiaSession *pSession)
 ```
 
 ## <a name="requirements"></a>需求
-標頭： Dia2.h
+標頭：dia2.h
 
 程式庫： diaguids.lib
 
 DLL: msdia80.dll
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [介面 (偵錯介面存取 SDK)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)
 - [IDiaEnumTables](../../debugger/debug-interface-access/idiaenumtables.md)
 - [IDiaEnumTables::Item](../../debugger/debug-interface-access/idiaenumtables-item.md)

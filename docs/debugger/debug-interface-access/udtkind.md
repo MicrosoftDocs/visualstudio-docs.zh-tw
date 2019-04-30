@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 511beae100529f0db555eca0a8ddb995d7a335d1
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56636576"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62853511"
 ---
 # <a name="udtkind"></a>UdtKind
 描述各種不同的使用者定義型別 (UDT)。
@@ -48,6 +48,6 @@ UdtInterface UDT 是一種介面。
 ## <a name="requirements"></a>需求
 標頭： cvconst.h
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [列舉和結構](../../debugger/debug-interface-access/enumerations-and-structures.md)
 - [IDiaSymbol::get_udtKind](../../debugger/debug-interface-access/idiasymbol-get-udtkind.md)

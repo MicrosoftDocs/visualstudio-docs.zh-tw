@@ -10,11 +10,11 @@ ms.workload:
 - data-storage
 - dotnet
 ms.openlocfilehash: a454218bbddb6c135ff7dc2a5910e6e4a9b3c7e4
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55956775"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62565074"
 ---
 # <a name="visual-studio-data-tools-for-net"></a>適用於 .NET 的 Visual Studio Data Tools
 
@@ -40,7 +40,7 @@ Visual Studio 和.NET Framework 一起提供廣泛的 API 和工具連線到資�
 
 5. 新增項目，例如商務規則、 搜尋、 資料驗證，或利用基礎資料庫公開 （expose） 的自訂功能的自訂程式碼。
 
-您可以略過步驟 3 和程式的.NET 應用程式，以發出命令，直接與資料庫，而不是使用模型。 在此情況下，您會發現相關文件： [ADO.NET](/dotnet/framework/data/adonet/index)。 請注意，您仍然可以使用**資料來源組態精靈**和設計工具來產生資料繫結程式碼，當您填入自己的記憶體，然後將 UI 控制項資料繫結至這些物件的物件。
+您可以略過步驟 3 和程式的.NET 應用程式，以發出命令，直接與資料庫，而不是使用模型。 在此情況下，您會找到相關的文件：[ADO.NET](/dotnet/framework/data/adonet/index)。 請注意，您仍然可以使用**資料來源組態精靈**和設計工具來產生資料繫結程式碼，當您填入自己的記憶體，然後將 UI 控制項資料繫結至這些物件的物件。
 
 ## <a name="see-also"></a>另請參閱
 

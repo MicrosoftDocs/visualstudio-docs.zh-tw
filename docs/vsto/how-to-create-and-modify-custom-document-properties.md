@@ -15,11 +15,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 7d6ef8332a5adc21e25f2a414c5b359e48cf1ba7
-ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58194586"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62825782"
 ---
 # <a name="how-to-create-and-modify-custom-document-properties"></a>HOW TO：建立和修改自訂文件屬性
   上列 Microsoft Office 應用程式提供與文件一起儲存的內建屬性。 此外，如果您有想要與文件一起儲存的其他資訊，則可以建立和修改自訂文件屬性。

@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 98402a61629b48b25a8636aaf6a912e89c283951
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56605831"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62910023"
 ---
 # <a name="custom-document-properties-in-a-legacy-language-service"></a>舊版語言服務中的自訂文件屬性
 中可顯示文件屬性[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]**屬性**視窗。 程式設計語言通常不需要個別的原始程式檔相關聯的屬性。 不過，XML 支援會影響編碼方式、 結構描述和樣式表的文件屬性。

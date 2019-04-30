@@ -9,11 +9,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 426ffcd5d764cf5141fede28ccee74326311a618
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56700181"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62863099"
 ---
 # <a name="extensibility-in-visual-studio"></a>Visual Studio 的擴充性
 Visual Studio 提供許多擴充性選項。 您可以建立您自己的 Sdk、 Windows、 Windows Phone 和 Azure Sdk （這會安裝為 Visual Studio 的一部分），使用和擴充 Visual Studio 本身。

@@ -16,11 +16,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: f1102a996f06634396f8bec3a02400fa952810e5
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56629231"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62815348"
 ---
 # <a name="work-with-tables"></a>使用資料表
   本節中的主題針對在 Office 專案中使用 Microsoft Office Word 物件模型處理資料表，提供逐步程序和程式碼範例。 在某些情況下，您在 VSTO 增益集中執行這些工作的方式，不同於您在文件層級自訂中的執行方式。

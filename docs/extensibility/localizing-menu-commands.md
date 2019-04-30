@@ -16,11 +16,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 648bf8baebc8a0a2f42c69bc698d9f2edd729615
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60100244"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62907361"
 ---
 # <a name="localize-menu-commands"></a>將功能表命令當地語系化
 您也可以建立當地語系化的功能表和工具列命令提供當地語系化的文字 *.vsct*檔案，與當地語系化 *.resx*的 VSPackage，然後更新專案檔以納入的檔案變更。

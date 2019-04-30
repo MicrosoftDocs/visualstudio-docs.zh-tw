@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 3f5b353986cf77c554b277975fabb1cb755faba3
-ms.sourcegitcommit: cdcbf254db737d42275e95de4ffc4f8c14e87e00
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57428540"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62554866"
 ---
 # <a name="dia2dump-sample"></a>Dia2dump 範例
 
@@ -28,7 +28,7 @@ Dia2dump 範例隨附於 Visual Studio，並包含方案和原始程式檔。 �
 
 ## <a name="install-the-sample"></a>安裝範例
 
-當您選擇安裝範例**使用 c + + 的桌面開發**Visual Studio 安裝程式中的工作負載。 如需如何安裝 Visual Studio 並選擇特定工作負載和個別元件的資訊，請參閱[安裝 Visual Studio](../../install/install-visual-studio.md)。
+當您選擇安裝範例**使用的桌面開發C++**  Visual Studio 安裝程式中的工作負載。 如需如何安裝 Visual Studio 並選擇特定工作負載和個別元件的資訊，請參閱[安裝 Visual Studio](../../install/install-visual-studio.md)。
 
 安裝時，此範例是在您的 Visual Studio 安裝目錄中名為 \DIA SDK\Samples\DIA2Dump 子目錄中。
 
@@ -44,7 +44,7 @@ Dia2dump 範例隨附於 Visual Studio，並包含方案和原始程式檔。 �
 
 1. 開啟專案的 [屬性頁]  對話方塊。 如需詳細資料，請參閱[使用專案屬性](/cpp/ide/working-with-project-properties)。
 
-1. 開啟**組態屬性** > **C/c + +** > **一般**屬性頁。
+1. 開啟**組態屬性** > **C /C++** > **一般**屬性頁。
 
 1. 在 [**其他 Include 目錄**] 屬性中，選擇下拉式清單控制項中，然後選擇**編輯**。
 

@@ -12,12 +12,12 @@ ms.assetid: 9118eaa4-0453-4dc5-9e16-c7062d254869
 caps.latest.revision: 31
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: ded1741c9364ca9fa706441b5cfa313ce6e58569
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
-ms.translationtype: MT
+ms.openlocfilehash: 3c6c7bb6d149281048d281cb7af13fe51d75ffd5
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "59000731"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443892"
 ---
 # <a name="inside-the-visual-studio-sdk"></a>深入探索 Visual Studio SDK
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -71,7 +71,7 @@ Visual Studio 架構一般化的檢視
 ## <a name="document-windows"></a>文件視窗  
  文件視窗是一個已框架處理的子視窗之多重文件介面 (MDI) 視窗。 文件視窗通常用來裝載在文字編輯器、 表單編輯器 （也稱為設計工具） 或編輯控制項，但它們也可以裝載其他功能的類型。 **新的檔案**對話方塊包含 Visual Studio 提供的文件視窗的範例。  
   
- 大多數編輯器是一種程式設計語言或檔案類型，例如 HTML 頁面、 框架、 c + + 檔案或標頭檔的特定項目。 選取的範本**新的檔案** 對話方塊中，使用者以動態方式建立的文件視窗與範本相關聯的檔案類型的編輯器。 當使用者開啟現有的檔案，也會建立文件視窗。  
+ 大部分的編輯器的程式設計語言或檔案類型，例如 HTML 頁面，框架，特定C++檔案或標頭檔。 選取的範本**新的檔案** 對話方塊中，使用者以動態方式建立的文件視窗與範本相關聯的檔案類型的編輯器。 當使用者開啟現有的檔案，也會建立文件視窗。  
   
  文件視窗僅限於在 MDI 工作區。 每個文件視窗具有 索引標籤的上方、 且定位順序連結至其他可能是 MDI 區域中開啟的視窗。 以滑鼠右鍵按一下  索引標籤的文件視窗會顯示捷徑功能表，其中包括將 MDI 區域分割成多個水平或垂直索引標籤群組的選項。 分割 MDI 區域可讓同時檢視多個檔案。 如需詳細資訊，請參閱 <<c0> [ 文件 Windows](../../extensibility/internals/document-windows.md)。  
   
@@ -98,7 +98,7 @@ Visual Studio 架構一般化的檢視
  範本包含的專案結構和基本建置特定類型的應用程式、 控制項、 程式庫或類別所需的檔案。 當您想要開發的軟體，類似於其中一個範本時，建立以範本為基礎的專案，然後修改 該專案中的檔案。  
   
 > [!NOTE]
->  此範本架構不支援[!INCLUDE[vcprvc](../../includes/vcprvc-md.md)]專案。 如需有關如何建立資訊[!INCLUDE[vcprvc](../../includes/vcprvc-md.md)]專案範本，請參閱 <<c2> [ 設計精靈](http://msdn.microsoft.com/library/a7c0be7e-9297-4fed-83e3-5645c896d56b)。  
+> 此範本架構不支援[!INCLUDE[vcprvc](../../includes/vcprvc-md.md)]專案。 如需有關如何建立資訊[!INCLUDE[vcprvc](../../includes/vcprvc-md.md)]專案範本，請參閱 <<c2> [ 設計精靈](http://msdn.microsoft.com/library/a7c0be7e-9297-4fed-83e3-5645c896d56b)。  
   
  如需詳細資訊，請參閱 <<c0> [ 加入專案和專案項目範本](../../extensibility/internals/adding-project-and-project-item-templates.md)。  
   

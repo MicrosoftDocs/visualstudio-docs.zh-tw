@@ -12,12 +12,12 @@ caps.latest.revision: 21
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: dbfe242434cdc953ec29fdd10a318c435abadc1a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 5ce5534f5723a3f0e570779939f207018cac71cd
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60049825"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438898"
 ---
 # <a name="rapid-web-site-profiling-with-vsperfaspnetcmd"></a>使用 VSPerfASPNETCmd 快速進行網站程式碼剖析
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,18 +25,18 @@ ms.locfileid: "60049825"
 **VSPerfASPNETCmd** 命令列工具可讓您輕鬆地分析 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] Web 應用程式。 與 [VSPerfCmd](../profiling/vsperfcmd.md) 命令列工具相較之下，選項變少，無須設定任何環境變數，也不需要重新啟動電腦。 使用獨立分析工具進行程式碼剖析慣用的方法是使用 **VSPerfASPNETCmd**。 如需詳細資訊，請參閱[如何：安裝獨立的 Profiler](../profiling/how-to-install-the-stand-alone-profiler.md)。  
   
 > [!NOTE]
->  Windows 8 和 Windows Server 2012 增強式安全性功能需要的重大變更，會以 Visual Studio 分析工具在這些平台收集資料的方式表現。 Windows 市集應用程式也需要新的資料收集技術。 請參閱 [Windows 8 和 Windows Server 2012 應用程式的效能工具](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md)。  
+> Windows 8 和 Windows Server 2012 增強式安全性功能需要的重大變更，會以 Visual Studio 分析工具在這些平台收集資料的方式表現。 Windows 市集應用程式也需要新的資料收集技術。 請參閱 [Windows 8 和 Windows Server 2012 應用程式的效能工具](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md)。  
   
  在某些情況下，像是收集並行資料或暫停和繼續程式碼剖析時，慣用的程式碼剖析方法是使用 **VSPerfCmd**。  
   
 > [!NOTE]
->  程式碼剖析工具的命令列工具位於 [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] 安裝目錄的 \Team Tools\Performance Tools 子目錄中。 在 64 位元電腦上，請使用VSPerfASPNETCmd 工具，其位於 32 位元的 \Team Tools\Performance Tools 目錄中。 若要使用分析工具命令列工具，您必須將工具路徑加入至命令提示字元視窗的 PATH 環境變數，或將它加入至命令本身。 如需詳細資訊，請參閱[指定命令列工具的路徑](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md)。  
+> 程式碼剖析工具的命令列工具位於 [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] 安裝目錄的 \Team Tools\Performance Tools 子目錄中。 在 64 位元電腦上，請使用VSPerfASPNETCmd 工具，其位於 32 位元的 \Team Tools\Performance Tools 目錄中。 若要使用分析工具命令列工具，您必須將工具路徑加入至命令提示字元視窗的 PATH 環境變數，或將它加入至命令本身。 如需詳細資訊，請參閱[指定命令列工具的路徑](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md)。  
   
 ## <a name="profiling-an-aspnet-application"></a>對 ASP.NET 應用程式進行程式碼剖析  
  若要對 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] Web 應用程式進行程式碼剖析，請輸入下列各節所述的其中一個命令。 網站隨即啟動，且分析工具會開始收集資料。 使用您的應用程式，然後關閉瀏覽器。 若要停止進行程式碼剖析，請在命令提示字元視窗中，按 Enter 鍵。  
   
 > [!NOTE]
->  根據預設，不會在 **vsperfaspnetcmd** 命令之後傳回命令提示字元。 您可以使用 **/nowait** 選項以強制傳回命令提示字元。 請參閱[使用 /NoWait 選項](#UsingNoWait)。  
+> 根據預設，不會在 **vsperfaspnetcmd** 命令之後傳回命令提示字元。 您可以使用 **/nowait** 選項以強制傳回命令提示字元。 請參閱[使用 /NoWait 選項](#UsingNoWait)。  
   
 ## <a name="to-collect-application-statistics-by-using-the-sampling-method"></a>使用取樣方法收集應用程式統計資料  
  取樣是 **VSPerfASPNETCmd** 工具的預設程式碼剖析方法，並不需要在命令列上指定。 下列命令列會從指定的 Web 應用程式收集應用程式統計資料︰  
@@ -66,9 +66,9 @@ ms.locfileid: "60049825"
 ## <a name="to-collect-tier-interaction-data"></a>收集階層互動資料  
   
 > [!WARNING]
->  使用 [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)]、[!INCLUDE[vsPreLong](../includes/vsprelong-md.md)] 或 [!INCLUDE[vs_pro_current_short](../includes/vs-pro-current-short-md.md)] 可以收集階層互動分析 (TIP) 資料。 不過，只能在 [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)] 和 [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)]檢視階層互動分析資料。  
+> 使用 [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)]、[!INCLUDE[vsPreLong](../includes/vsprelong-md.md)] 或 [!INCLUDE[vs_pro_current_short](../includes/vs-pro-current-short-md.md)] 可以收集階層互動分析 (TIP) 資料。 不過，只能在 [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)] 和 [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)]檢視階層互動分析資料。  
 >   
->  若要在 Windows 8 或 Windows Server 2012 上收集 TIP 資料，您必須使用檢測 (**/trace**) 選項。  
+> 若要在 Windows 8 或 Windows Server 2012 上收集 TIP 資料，您必須使用檢測 (**/trace**) 選項。  
   
  透過取樣資料收集階層互動資料：  
   

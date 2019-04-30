@@ -11,12 +11,12 @@ caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ca7f4e44f1d40256e821091609752b48d8f204d0
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 372e19b9ebb1253bda28b4c7723a2366c90b7441
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58939572"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63412135"
 ---
 # <a name="properties-of-domain-properties"></a>網域屬性的屬性
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -24,7 +24,7 @@ ms.locfileid: "58939572"
 A*定義域屬性*是模型項目，可保存值的功能。 例如，`Person` 網域類別可能具有屬性 `Name` 和 `BirthDate`。 在 DSL 定義中，網域屬性會列在圖表上的網域類別方塊中以及 DSL Explorer 中的網域類別之下。 如需詳細資訊，請參閱 <<c0> [ 如何定義特定領域語言](../modeling/how-to-define-a-domain-specific-language.md)。  
   
 > [!NOTE]
->  "property" 一字有兩種用法。 A*定義域屬性*是您在網域類別定義的功能。 相反地，DSL 的許多項目具有*屬性*，列出**屬性**DSL 定義中的視窗。 例如，每個網域屬性都有一組屬性，這些屬性會在本主題中說明。  
+> "property" 一字有兩種用法。 A*定義域屬性*是您在網域類別定義的功能。 相反地，DSL 的許多項目具有*屬性*，列出**屬性**DSL 定義中的視窗。 例如，每個網域屬性都有一組屬性，這些屬性會在本主題中說明。  
   
  在執行階段，當使用者建立網域類別的執行個體時，可以在 [屬性] 視窗中看到網域屬性的值，並可顯示在圖形上。  
   

@@ -15,11 +15,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 2374e3c1aa79414bfa39ea97abeec7e8e44d2c36
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55929813"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62797382"
 ---
 # <a name="ca1400-pinvoke-entry-points-should-exist"></a>CA1400:P/Invoke 進入點應該要存在
 

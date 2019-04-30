@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 3b667a6c6322a925b49290ab3234788a4eee3544
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57867951"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62856795"
 ---
 # <a name="whats-new-in-source-control-for-the-visual-studio-2015-sdk"></a>在 Visual Studio 2015 SDK 的原始檔控制中最新消息
 
@@ -27,7 +27,7 @@ ms.locfileid: "57867951"
 
 Visual Studio 支援兩種類型的原始檔控制解決方案。 在所有版本的 Visual Studio 中，您仍舊可以以原始檔控制外掛程式 API 為基礎的外掛程式。 您也可以建立提供深入整合的原始檔控制 VSPackage[!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)]適用於原始檔控制解決方案需要高層級的複雜度與自我管理的路徑。
 
-VSPackage 可以將幾乎所有種類的功能加入 Visual Studio。 原始檔控制 VSPackage 提供給使用者，以原始檔控制系統的後端通訊懩  鎏 UI 從 Visual Studio 中，完整的原始檔控制功能。
+VSPackage 可以將幾乎所有種類的功能加入 Visual Studio。 原始檔控制 VSPackage 提供給使用者，以原始檔控制系統的後端通訊 UI 從 Visual Studio 中，完整的原始檔控制功能。
 
 實作原始檔控制 VSPackage，需要 「 全部或全無 」 的策略。 原始檔控制 VSPackage 的建立者必須投入大量心力來實作許多原始檔控制的介面和新的 UI 項目 （對話方塊、 功能表和工具列） 以涵蓋整個原始檔控制功能，以及介面所需的任何套件已成功與 Visual Studio 整合。
 

@@ -7,12 +7,12 @@ ms.topic: conceptual
 ms.assetid: d25990e0-e782-4a79-9d9a-1caf3c56c6a2
 caps.latest.revision: 10
 manager: jillfra
-ms.openlocfilehash: 81bf6c5ef975d7ce154c1d8bb987e962dfdf4ec2
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 0b65fa016d0d2e09a4200004de3f473503604f6e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60040737"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63442875"
 ---
 # <a name="how-to-manually-package-an-extension-vsix-deployment"></a>HOW TO：手動封裝擴充功能 （VSIX 部署）
 您可以建立 VSIX 封裝，來包裝進行部署的 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 擴充功能。 建立封裝的方法有三種：  
@@ -29,7 +29,7 @@ ms.locfileid: "60040737"
  若要手動封裝擴充功能，請將 extension.manifest 檔案和 [Content_Types].xml 檔案加入擴充功能專案中，並將它們與組建輸出一起放在壓縮檔中，並重新命名壓縮檔，使其具有 .vsix 副檔名。 要封裝的擴充功能必須是 [VSIX 結構描述](http://msdn.microsoft.com/76e410ec-b1fb-4652-ac98-4a4c52e09a2b)所支援的類型。  
   
 > [!NOTE]
->  VSIX 封裝中的檔案名稱不得包含空格，也不下定義的保留在統一資源識別元 (URI)，做為字元[ \[RFC2396\]](http://go.microsoft.com/fwlink/?LinkId=90339)。  
+> VSIX 封裝中的檔案名稱不得包含空格，也不下定義的保留在統一資源識別元 (URI)，做為字元[ \[RFC2396\]](http://go.microsoft.com/fwlink/?LinkId=90339)。  
   
 #### <a name="to-manually-create-a-vsix-package"></a>手動建立 VSIX 封裝  
   

@@ -15,12 +15,12 @@ caps.latest.revision: 43
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 57c843b7c556ac409a63d5e6c01e2699da59958b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: e9afaa8fc74ef893b3b916c66907ae5d1a3af55f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60099568"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441085"
 ---
 # <a name="how-to-create-a-domain-specific-language-solution"></a>HOW TO：建立特定領域語言方案
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -55,7 +55,7 @@ ms.locfileid: "60099568"
        **Domain-specific Language Designer 精靈**隨即出現。  
   
       > [!NOTE]
-      >  最好是您所輸入的名稱應該是有效的 Visual C# 識別項，因為它可能會用來產生程式碼。  
+      > 最好是您所輸入的名稱應該是有效的 Visual C# 識別項，因為它可能會用來產生程式碼。  
   
       ![建立 DSL 對話方塊](../modeling/media/create-dsldialog.png "Create_DSLDialog")  
   
@@ -76,7 +76,7 @@ ms.locfileid: "60099568"
     精靈會建立具有兩個專案，名為的解決方案**Dsl**並**DslPackage**。  
   
    > [!NOTE]
-   >  如果您看到訊息，向您發出警示不執行文字範本來自不受信任的來源，請按一下**確定**。 您可以設定此訊息不會再出現。  
+   > 如果您看到訊息，向您發出警示不執行文字範本來自不受信任的來源，請按一下**確定**。 您可以設定此訊息不會再出現。  
   
 ## <a name="settings"></a> DSL 設計工具的精靈頁面  
  您可以保留預設值未變更的欄位數。 不過，請確定您設定副檔名欄位。  

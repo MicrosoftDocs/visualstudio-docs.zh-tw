@@ -12,12 +12,12 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 7692e418c3e01b89a8dcf775350c062600351ac3
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 5bcb562d89ee68320c48cc778be3294a2af5c719
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60093042"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63426937"
 ---
 # <a name="how-to-add-a-command-to-the-shortcut-menu"></a>HOW TO：在捷徑功能表中新增命令
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,7 +35,7 @@ ms.locfileid: "60093042"
    如需範例，請參閱[Visualization and Modeling SDK 網站](http://go.microsoft.com/fwlink/?LinkID=185579)。  
   
 > [!NOTE]
->  您也可以覆寫 CommandSet.cs 中的方法，即可修改部分現有命令 (例如剪下、貼上、全選和列印) 的行為。 如需詳細資訊，請參閱[如何：修改標準功能表命令](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md)。  
+> 您也可以覆寫 CommandSet.cs 中的方法，即可修改部分現有命令 (例如剪下、貼上、全選和列印) 的行為。 如需詳細資訊，請參閱[如何：修改標準功能表命令](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md)。  
   
 ## <a name="defining-a-command-using-mef"></a>使用 MEF 定義命令  
  Managed Extension Framework (MEF) 提供在圖表功能表上定義功能表命令的替代方法。 它的主要用途是讓您或其他方可以擴充 DSL。 使用者可以選擇僅安裝 DSL，也可以安裝 DSL 和擴充功能。 然而，在 DSL 上啟用 MEF 的初始工作之後，MEF 也會減少定義捷徑功能表命令的工作。  
@@ -90,7 +90,7 @@ ms.locfileid: "60093042"
     ```  
   
     > [!NOTE]
-    >  每一個按鈕或群組都是以 GUID 和整數 ID 識別。 您可以使用相同的 GUID 建立數個群組和按鈕。 不過，它們必須具有不同的 ID。 GUID 名稱和 ID 名稱會轉譯成的實際 Guid 和數字 Id 在`<Symbols>`節點。  
+    > 每一個按鈕或群組都是以 GUID 和整數 ID 識別。 您可以使用相同的 GUID 建立數個群組和按鈕。 不過，它們必須具有不同的 ID。 GUID 名稱和 ID 名稱會轉譯成的實際 Guid 和數字 Id 在`<Symbols>`節點。  
   
 3. 為命令加入可見度限制，令其只在網域指定的語言之內容中載入。 如需詳細資訊，請參閱 < [VisibilityConstraints 元素](../extensibility/visibilityconstraints-element.md)。  
   
@@ -120,7 +120,7 @@ ms.locfileid: "60093042"
 5. 將 `{000...000}` 取代為識別您群組和功能表項目的 GUID。 若要取得新的 GUID，請使用**建立 GUID**工具**工具**功能表。  
   
     > [!NOTE]
-    >  如果您加入更多群組或功能表項目，您就可以使用相同的 GUID。 不過，您必須為 `IDSymbols` 使用新的值。  
+    > 如果您加入更多群組或功能表項目，您就可以使用相同的 GUID。 不過，您必須為 `IDSymbols` 使用新的值。  
   
 6. 在您從此程序複製的程式碼中，將每個出現的下列字串取代為您自己的字串：  
   
@@ -162,7 +162,7 @@ ms.locfileid: "60093042"
   
 2. 在  **DslPackage**，建立名為的資料夾**自訂程式碼**。 在此資料夾中，建立新的類別檔案，稱為`CommandSet.cs`。  
   
-3. 在新檔案中，撰寫具有與產生部分類別相同之命名空間和名稱的部分宣告。 例如：  
+3. 在新檔案中，撰寫具有與產生部分類別相同之命名空間和名稱的部分宣告。 例如:   
   
      `namespace Company.Language1 /* Make sure this is correct */`  
   
@@ -298,7 +298,7 @@ private const int cmdidMyContextMenuCommand = 1;
  使用相同的 GUID 值，當您插入**Commands.vsct**。  
   
 > [!NOTE]
->  如果您變更 VSCT 檔的 Symbols 區段，您必須也將這些宣告變更為相符。 您也應在 Package.tt 中遞增版本號碼  
+> 如果您變更 VSCT 檔的 Symbols 區段，您必須也將這些宣告變更為相符。 您也應在 Package.tt 中遞增版本號碼  
   
  將功能表命令註冊為此命令集的一部分。 圖表初始化時會呼叫 `GetMenuCommands()` 一次：  
   

@@ -18,11 +18,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: caf2d0e63db724c8eb3c1e72c79a109548af8f9c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60056011"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62556841"
 ---
 # <a name="how-to-add-a-custom-property"></a>HOW TO：新增自訂屬性
   您可以將自訂屬性加入模型利用**屬性編輯器**。 您可以存取這些屬性來擷取資訊，例如連接字串和其他資料在執行階段的程式碼中。

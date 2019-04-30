@@ -9,12 +9,12 @@ caps.latest.revision: 12
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: cc1f87ac6ce94a1ef474388f75b33aa963b19f8d
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: d54fdce78528f348e99436c3a58d15e1cbe861b7
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60046376"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444277"
 ---
 # <a name="walkthrough-missing-objects-due-to-vertex-shading"></a>逐步解說：因頂點著色而遺漏的物件
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -64,7 +64,7 @@ ms.locfileid: "60046376"
     在 [圖形管線階段]  視窗中， **輸入組合語言** 階段會在物件轉換前顯示其幾何， **端點著色器** 階段則會顯示轉換後的相同物件。 在此情節中，當遺漏物件顯示在 **輸入組合語言** 階段中，而沒有任何項目顯示在 **端點著色器** 階段時，您就會知道找到了遺漏物件。  
   
    > [!NOTE]
-   >  若有其他幾何階段 (例如輪廓著色器、網域著色器或幾何著色器階段) 在處理物件，則其都可能是問題的原因。 一般而言，問題與初期階段相關，在該階段中不會顯示結果，或者會以非預期的方式顯示結果。  
+   > 若有其他幾何階段 (例如輪廓著色器、網域著色器或幾何著色器階段) 在處理物件，則其都可能是問題的原因。 一般而言，問題與初期階段相關，在該階段中不會顯示結果，或者會以非預期的方式顯示結果。  
   
 4. 在到達對應至遺漏物件的繪製呼叫時停止。 在此情節中，[圖形管線階段]  視窗表示幾何已發給 GPU (由輸入組合語言縮圖表示)，但未在轉譯目標中出現，因為在端點著色器階段 (由端點著色器縮圖表示) 發生錯誤：  
   
@@ -107,7 +107,7 @@ ms.locfileid: "60046376"
     ![設定物件的常數緩衝區的程式碼](../debugger/media/gfx-diag-demo-missing-object-shader-step-7.png "gfx_diag_demo_missing_object_shader_step_7")  
   
    > [!TIP]
-   >  如果您同時偵錯應用程式，您可以在這個位置上設定中斷點，當轉譯下一個畫面格時就會叫用該中斷點。 您可以接著檢查 `m_marbleConstantBufferData` 的成員，確認 `projection` 成員的值在填滿常數緩衝區時會設定為全部為零。  
+   > 如果您同時偵錯應用程式，您可以在這個位置上設定中斷點，當轉譯下一個畫面格時就會叫用該中斷點。 您可以接著檢查 `m_marbleConstantBufferData` 的成員，確認 `projection` 成員的值在填滿常數緩衝區時會設定為全部為零。  
   
    在您找到填入常數緩衝區的位置，並發現其值來自於變數 `m_marbleConstantBufferData` 之後，下一個步驟就是查明 `m_marbleConstantBufferData.projection` 成員設定為全部為零的位置。 您可以使用 [尋找所有參考]  快速掃描變更 `m_marbleConstantBufferData.projection`值的程式碼。  
   

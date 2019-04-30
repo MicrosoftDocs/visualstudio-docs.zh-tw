@@ -12,12 +12,12 @@ caps.latest.revision: 38
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 370f6992fb044f5bd7f3593e63afeab46c82830b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 81f2766e5c382f8beaa4cb20472da6e0e6fc94e2
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60072288"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432618"
 ---
 # <a name="model-editor"></a>模型編輯器
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -157,7 +157,7 @@ ms.locfileid: "60072288"
 2. 在 [屬性] 視窗中，指定 [旋轉]、[縮放] 和 [平移] 屬性的值。  
   
    > [!IMPORTANT]
-   >  對於 [旋轉] 屬性，請指定繞著三個軸中每一個軸旋轉的度數。 旋轉會依序套用，因此務必要規劃旋轉，先繞 X 軸旋轉，接著繞 Y 軸、Z 軸旋轉。  
+   > 對於 [旋轉] 屬性，請指定繞著三個軸中每一個軸旋轉的度數。 旋轉會依序套用，因此務必要規劃旋轉，先繞 X 軸旋轉，接著繞 Y 軸、Z 軸旋轉。  
   
    使用模型工具，您可以快速但不精確地建立轉換。 藉由設定物件屬性，您可以精確但不快速地指定轉換。 建議您使用模型化工具盡可能取得您所需的轉換，然後微調屬性值。  
   

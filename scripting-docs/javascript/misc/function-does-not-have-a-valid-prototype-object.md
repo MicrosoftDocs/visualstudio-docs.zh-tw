@@ -15,11 +15,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 413f73a53a6d4f698219139a87c449be4c155831
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60038675"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63007499"
 ---
 # <a name="function-does-not-have-a-valid-prototype-object"></a>函式沒有有效的原型物件
 您嘗試使用**instanceof**來判斷是否物件衍生自特定的函式類別，但重新定義的物件`prototype`屬性為`null`，或外部的物件型別 (這兩個不是有效[!INCLUDE[javascript](../../javascript/includes/javascript-md.md)]物件)。 將物件從主應用程式物件模型 （例如，Internet Explorer 文件或視窗物件） 或外部 COM 物件，可以是外部物件。  

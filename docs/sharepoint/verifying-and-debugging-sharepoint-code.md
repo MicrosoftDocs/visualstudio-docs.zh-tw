@@ -16,11 +16,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 7b57e07245631d37594d66ea7907b16efd817b2b
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54869485"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63008237"
 ---
 # <a name="verify-and-debug-sharepoint-code"></a>驗證及偵錯 SharePoint 程式碼
 您可以藉由使用 IntelliTrace 和單元測試更輕鬆地對 SharePoint 方案進行偵錯，並確保方案中的每一個方法都能正確運作。 您可以在 Visual Studio 中的 SharePoint 專案中使用這些功能，依照其他專案類型的相同程序。

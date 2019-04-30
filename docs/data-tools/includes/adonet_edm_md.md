@@ -13,11 +13,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-ms.openlocfilehash: b36531a33b66c885493da3ba15db8f77a8cb95e1
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: 6185a0195deb4d33a909fb44cbb26373c5b615f8
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38946103"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62566044"
 ---
 實體資料模型

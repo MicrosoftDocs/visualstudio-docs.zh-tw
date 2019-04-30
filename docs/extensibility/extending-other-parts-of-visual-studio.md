@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: cf4066a9eee47d1ffad156768287bf036aaae3cf
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60080913"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62912424"
 ---
 # <a name="extend-other-parts-of-visual-studio"></a>擴充 Visual Studio 的其他部分
 

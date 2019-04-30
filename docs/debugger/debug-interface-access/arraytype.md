@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 6c470866d9d197a5537b85d21f516c01ada96576
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56634119"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62563034"
 ---
 # <a name="arraytype"></a>ArrayType
 陣列由`SymTagArray`符號。
@@ -25,7 +25,7 @@ ms.locfileid: "56634119"
 ## <a name="properties"></a>屬性
  下表顯示此符號類型的其他有效屬性。
 
-|屬性|資料類型|說明|
+|屬性|資料類型|描述|
 |--------------|---------------|-----------------|
 |[IDiaSymbol::get_arrayIndexType](../../debugger/debug-interface-access/idiasymbol-get-arrayindextype.md)|`IDiaSymbol*`|陣列索引類型的符號。|
 |[IDiaSymbol::get_arrayIndexTypeId](../../debugger/debug-interface-access/idiasymbol-get-arrayindextypeid.md)|`DWORD`|陣列索引類型符號的識別碼。|
@@ -42,6 +42,6 @@ ms.locfileid: "56634119"
 |[IDiaSymbol::get_unalignedType](../../debugger/debug-interface-access/idiasymbol-get-unalignedtype.md)|`BOOL`|`TRUE` 如果陣列是未對齊|
 |[IDiaSymbol::get_volatileType](../../debugger/debug-interface-access/idiasymbol-get-volatiletype.md)|`BOOL`|`TRUE` 如果陣列會標示為 volatile。|
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [符號類型的類別階層架構](../../debugger/debug-interface-access/class-hierarchy-of-symbol-types.md)
 - [維度](../../debugger/debug-interface-access/dimension.md)

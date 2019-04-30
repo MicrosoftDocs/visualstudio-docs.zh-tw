@@ -17,12 +17,12 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a28076b8c394818c248a5a18c7bc91d484f2c28a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 40a884fe2ae6aaf73256d8edbcbd083a193b0342
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60045794"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444628"
 ---
 # <a name="remove-parameters-refactoring-c"></a>移除參數重構 (C#)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ ms.locfileid: "60045794"
  您第一遊標定位在方法、 索引子或委派執行移除參數的作業。 在位置，叫用 移除資料指標時`Parameters`作業中，按一下**重構**功能表上，按下鍵盤快速鍵，或從快顯功能表選取命令。  
   
 > [!NOTE]
->  您無法擴充方法中移除第一個參數。  
+> 您無法擴充方法中移除第一個參數。  
   
 ### <a name="to-remove-parameters"></a>若要移除參數  
   
@@ -73,7 +73,7 @@ ms.locfileid: "60045794"
  您可以從方法宣告或方法呼叫，以移除參數。 將游標放在方法宣告或委派的名稱，然後叫用移除參數。  
   
 > [!CAUTION]
->  移除參數可讓您移除參考的參數內的成員，但它不會移除對該參數參考方法主體中。 這可能會發生建置錯誤導入您的程式碼。 不過，您可以使用**預覽變更**對話方塊，即可檢閱您的程式碼，然後再執行重構作業。  
+> 移除參數可讓您移除參考的參數內的成員，但它不會移除對該參數參考方法主體中。 這可能會發生建置錯誤導入您的程式碼。 不過，您可以使用**預覽變更**對話方塊，即可檢閱您的程式碼，然後再執行重構作業。  
   
  如果要移除的參數已修改的方法呼叫期間，移除參數也會移除所作的修改。 例如，如果呼叫的方法已從  
   

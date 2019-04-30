@@ -11,12 +11,12 @@ caps.latest.revision: 15
 author: alexhomer1
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a8ea5d8a8120f8b78ec41ee7dbaf0221a549f15c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: dc9b13ce1de0464db353fa5935d14ad8c8b328d1
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60103871"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63442846"
 ---
 # <a name="analyze-c-code-quality-of-store-apps-using-visual-studio-static-code-analysis"></a>使用 Visual Studio 靜態程式碼分析，分析市集應用程式的 C++ 程式碼品質
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -55,7 +55,7 @@ ms.locfileid: "60103871"
  在您了解問題之後，就可以在程式碼中解決問題。 然後重新執行程式碼分析來確定 [程式碼分析] 視窗中不會再次出現警告，且您的修正尚未引發新的警告。
 
 > [!TIP]
->  您可以從 [程式碼分析] 視窗重新執行程式碼分析。 選擇 [分析] 按鈕，然後選擇要分析的範圍。 您可以在整個方案或選取的專案上重新執行分析。
+> 您可以從 [程式碼分析] 視窗重新執行程式碼分析。 選擇 [分析] 按鈕，然後選擇要分析的範圍。 您可以在整個方案或選取的專案上重新執行分析。
 
 ## <a name="BKMK_Suppress"></a> 隱藏程式碼分析警告
  有時候您可能決定不修正程式碼分析警告。 您可能會判斷解決這項警告需要太多重新編碼，而在任何實際實作程式碼時會有問題發生的可能性。 或是，您可能會認為警告中使用的分析對於特定內容是不適當的。 您可以隱藏個別的警告，使之不再出現於 [程式碼分析] 視窗中。

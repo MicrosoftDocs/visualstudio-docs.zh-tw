@@ -9,11 +9,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: b25c47e6db79fe4b860b6e7c209f0fc8403d0fcd
-ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57526008"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62838489"
 ---
 # <a name="debugger-user-interface-xslt"></a>偵錯工具使用者介面 (XSLT)
 

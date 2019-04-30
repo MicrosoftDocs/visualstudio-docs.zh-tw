@@ -18,12 +18,12 @@ caps.latest.revision: 19
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 66e9e5a3f0a46f54346c71d85bad03846c12f937
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: b588168b62a9219d0de703a5deb6dbe153df6305
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60050306"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445097"
 ---
 # <a name="how-to-use-the-parallel-watch-window"></a>HOW TO：使用 [平行監看式] 視窗
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,7 +37,7 @@ ms.locfileid: "60050306"
 - 可以顯示電腦、處理序、Tile、工作和執行緒的可設定資料行。  
   
   > [!TIP]
-  >  您必須開啟**平行工作** 視窗顯示中的工作資訊**平行監看式**視窗。  
+  > 您必須開啟**平行工作** 視窗顯示中的工作資訊**平行監看式**視窗。  
   
 - **\<新增監看式 >** 資料行中，您可以在其中輸入要監看的運算式。  
   
@@ -90,4 +90,4 @@ ms.locfileid: "60050306"
 ## <a name="see-also"></a>另請參閱  
  [對多執行緒應用程式進行偵錯](../debugger/debug-multithreaded-applications-in-visual-studio.md)   
  [如何：使用 [GPU 執行緒] 視窗](../debugger/how-to-use-the-gpu-threads-window.md)   
- [逐步解說：偵錯C++AMP 應用程式](http://msdn.microsoft.com/library/40e92ecc-f6ba-411c-960c-b3047b854fb5)
+ [逐步解說：針對 C++ AMP 應用程式進行偵錯](http://msdn.microsoft.com/library/40e92ecc-f6ba-411c-960c-b3047b854fb5)

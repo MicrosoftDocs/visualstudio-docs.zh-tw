@@ -25,12 +25,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 9e6ebd09188e737e75c9e5f66ed95411e1a9453d
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 4ab27c27873fc0addf1dbdbdbca81613d3015cc3
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60106198"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445551"
 ---
 # <a name="custom-task-panes"></a>自訂工作窗格
   工作窗格是通常停駐在 Microsoft Office 應用程式視窗一側的使用者介面面板。 自訂工作窗格為您提供建立個人專屬工作窗格的方法，也為使用者提供了熟悉的介面，供他們用來存取您方案的功能。 例如，介面中可以包含控制項，而這些控制項則會執行程式碼來修改文件或顯示資料來源中的資料。
@@ -38,7 +38,7 @@ ms.locfileid: "60106198"
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]
 
 > [!NOTE]
->  自訂工作窗格與執行窗格不同。 而執行窗格則屬於 Microsoft Office Word 和 Microsoft Office Excel 之文件層級自訂的一部分。 如需詳細資訊，請參閱 <<c0> [ 執行窗格概觀](../vsto/actions-pane-overview.md)。
+> 自訂工作窗格與執行窗格不同。 而執行窗格則屬於 Microsoft Office Word 和 Microsoft Office Excel 之文件層級自訂的一部分。 如需詳細資訊，請參閱 <<c0> [ 執行窗格概觀](../vsto/actions-pane-overview.md)。
 
 ## <a name="benefits-of-custom-task-panes"></a>自訂工作窗格的優點
  自訂工作窗格可以讓您將功能整合成熟悉的使用者介面。 您可以利用 Visual Studio 工具快速建立自訂工作窗格。

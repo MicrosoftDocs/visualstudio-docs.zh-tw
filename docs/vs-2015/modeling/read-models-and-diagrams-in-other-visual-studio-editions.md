@@ -11,12 +11,12 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 20c449148b98c89f1eb64beb61588661f02ab74a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 21dc0cb7f02639ca6faa89ae4c067f21e083d6d3
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60073523"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63387505"
 ---
 # <a name="read-models-and-diagrams-in-other-visual-studio-editions"></a>在其他 Visual Studio 版本中讀取模型和圖表
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,14 +31,14 @@ ms.locfileid: "60073523"
  基於這個理由，如果您想要讀取 UML 圖表或分層圖，則也必須存取在其中建立它的模型專案。 從 [!INCLUDE[esprscc](../includes/esprscc-md.md)] 存取專案，或取得專案檔複本，即可完成這項作業。  
   
 > [!NOTE]
->  這不適用於透過程式碼產生的 Code Map 和 .NET 類別圖。 這些圖表可以與模型專案分開檢視。  
+> 這不適用於透過程式碼產生的 Code Map 和 .NET 類別圖。 這些圖表可以與模型專案分開檢視。  
   
  若要讀取 UML 圖表或分層圖，您需要的最小檔案集如下：  
   
 - 兩個圖表檔，例如，想要讀取之圖表**MyDiagram.classdiagram 和 MyDiagram.classdiagram.layout**。  
   
     > [!NOTE]
-    >  對於分層圖，您應該也有檔案，稱為_MyDiagram_**。 layerdiagram.suppressions**。  
+    > 對於分層圖，您應該也有檔案，稱為_MyDiagram_**。 layerdiagram.suppressions**。  
   
 - 模型專案檔 (**MyModel.modelproj**)  
   

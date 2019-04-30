@@ -12,11 +12,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: b1285e4efa3db8a7ec99808f5888d3dbf948e589
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58152518"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62830317"
 ---
 # <a name="profilerheapobjectscopelist-structure"></a>PROFILER_HEAP_OBJECT_SCOPE_LIST 結構
 此結構是僅限函式物件相關聯。 範圍清單表示函式的 closure 的範圍，其中每個範圍是堆積物件與相關聯的屬性清單，表示每個指定的範圍內的變數清單。 在某些情況下，範圍可能無法使用，在物件和其索引至屬性清單的名稱使用。  

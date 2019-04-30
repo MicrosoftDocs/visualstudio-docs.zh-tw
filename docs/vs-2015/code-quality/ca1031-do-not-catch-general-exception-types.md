@@ -15,12 +15,12 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 3133ea902717f4fea15cfb66b8d0050f7a538940
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 4588a949b4b6439c3f76270b0bcdab9cd52c23d9
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58942726"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63431220"
 ---
 # <a name="ca1031-do-not-catch-general-exception-types"></a>CA1031:不要攔截一般例外狀況類型
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,7 +45,7 @@ ms.locfileid: "58942726"
  請勿隱藏此規則的警告。 攔截一般例外狀況類型時，可以隱藏執行階段程式庫使用者的問題，而且可能會使偵錯更困難。
 
 > [!NOTE]
->  開頭[!INCLUDE[net_v40_long](../includes/net-v40-long-md.md)]，common language runtime (CLR) 不會再提供中的作業系統和 managed 程式碼，例如存取違規發生的損毀的狀態例外狀況[!INCLUDE[TLA#tla_mswin](../includes/tlasharptla-mswin-md.md)]、 由 managed 程式碼。 如果您想要編譯中的應用程式[!INCLUDE[net_v40_short](../includes/net-v40-short-md.md)]或更新版本及維護的損毀的狀態例外狀況處理，您可以套用<xref:System.Runtime.ExceptionServices.HandleProcessCorruptedStateExceptionsAttribute>屬性處理損毀的狀態例外狀況的方法。
+> 開頭[!INCLUDE[net_v40_long](../includes/net-v40-long-md.md)]，common language runtime (CLR) 不會再提供中的作業系統和 managed 程式碼，例如存取違規發生的損毀的狀態例外狀況[!INCLUDE[TLA#tla_mswin](../includes/tlasharptla-mswin-md.md)]、 由 managed 程式碼。 如果您想要編譯中的應用程式[!INCLUDE[net_v40_short](../includes/net-v40-short-md.md)]或更新版本及維護的損毀的狀態例外狀況處理，您可以套用<xref:System.Runtime.ExceptionServices.HandleProcessCorruptedStateExceptionsAttribute>屬性處理損毀的狀態例外狀況的方法。
 
 ## <a name="example"></a>範例
  下列範例顯示違反此規則的類型，以及正確地實作的型別`catch`區塊。

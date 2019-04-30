@@ -19,11 +19,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 59229b1ca2b055fc8242bf6446541a395eceaa56
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60071352"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62846843"
 ---
 # <a name="how-to-use-the-gpu-threads-window-c"></a>HOW TO：使用 [GPU 執行緒] 視窗 (C++)
 在 [GPU 執行緒] 視窗中，您可以檢查和處理正在偵錯的應用程式中，於 GPU 上執行的執行緒。 如需有關在 GPU 執行的應用程式的詳細資訊，請參閱[ C++ AMP 概觀](/cpp/parallel/amp/cpp-amp-overview)。
@@ -105,4 +105,4 @@ ms.locfileid: "60071352"
 ## <a name="see-also"></a>另請參閱
 - [對多執行緒應用程式進行偵錯](../debugger/debug-multithreaded-applications-in-visual-studio.md)
 - [如何：使用平行監看式視窗](../debugger/how-to-use-the-parallel-watch-window.md)
-- [逐步解說：偵錯C++AMP 應用程式](/cpp/parallel/amp/walkthrough-debugging-a-cpp-amp-application)
+- [逐步解說：針對 C++ AMP 應用程式進行偵錯](/cpp/parallel/amp/walkthrough-debugging-a-cpp-amp-application)

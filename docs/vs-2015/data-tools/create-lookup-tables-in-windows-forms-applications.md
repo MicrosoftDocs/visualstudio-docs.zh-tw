@@ -17,12 +17,12 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 76c55d45e279a3fcf6579c77bf7d226c7baf13d2
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: adea3666c3f8b8d78c37b32a1a42f7f8b270369c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60102974"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63431162"
 ---
 # <a name="create-lookup-tables-in-windows-forms-applications"></a>在 Windows Forms 應用程式中建立查閱資料表
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,7 +43,7 @@ ms.locfileid: "60102974"
 2. 展開中的節點**Zdroje dat**視窗內，直到您可以看到父資料表和所有其資料行和關聯的子資料表和其所有資料行。  
   
     > [!NOTE]
-    >  子資料表節點是會顯示為父資料表中的可展開的子節點的節點。  
+    > 子資料表節點是會顯示為父資料表中的可展開的子節點的節點。  
   
 3. 變更子資料表的卸除類型**詳細資料**藉由選取**詳細資料**子資料表的節點上的控制項清單。 如需詳細資訊，請參閱 <<c0> [ 設定要從資料來源視窗拖曳時要建立的控制項](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md)。  
   

@@ -15,11 +15,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 6ddbb19c73660dcb77fc8166522946b0b3461e95
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56599969"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63006758"
 ---
 # <a name="access-the-ribbon-at-runtime"></a>在執行階段功能區的存取
   您可以撰寫程式碼以顯示、隱藏和修改功能區，並且讓使用者從自訂工作窗格、執行窗格或 Outlook 表單區域中的控制項執行程式碼。
@@ -41,7 +41,7 @@ ms.locfileid: "56599969"
 ## <a name="access-a-collection-of-ribbons-that-appear-in-a-specific-outlook-inspector-window"></a>存取出現在特定 [Outlook 檢查] 視窗中的功能區集合
  您可以存取出現在 Outlook 功能區集合*偵測器*。 [檢查] 是一個視窗，會在使用者執行特定工作 (例如建立電子郵件訊息) 時，在 Outlook 中開啟。 若要存取 [檢查] 視窗的功能區，請呼叫 `Globals` 類別的 `Ribbons` 屬性，並傳入代表 [檢查] 的 <xref:Microsoft.Office.Interop.Outlook.Inspector> 物件。
 
- 以下範例將取得目前擁有焦點之 [檢查] 中的功能區集合。 然後這個範例會存取名為 `Ribbon1` 的功能區，並且將出現在功能區下拉式方塊中的文字設定為 `Hello World`。
+ 以下範例將取得目前擁有焦點之 [檢查] 中的功能區集合。 然後這個範例會存取名為 `Ribbon1` 的功能區，並且將出現在功能區上下拉式方塊中的文字設定為 `Hello World`。
 
  [!code-vb[Trin_Outlook_FR_Access#5](../vsto/codesnippet/VisualBasic/Trin_Outlook_FR_Access_O12/ThisAddIn.vb#5)]
  [!code-csharp[Trin_Outlook_FR_Access#5](../vsto/codesnippet/CSharp/Trin_Outlook_FR_Access_O12/ThisAddIn.cs#5)]
@@ -49,7 +49,7 @@ ms.locfileid: "56599969"
 ## <a name="access-a-collection-of-ribbons-that-appear-for-a-specific-outlook-explorer"></a>存取出現在特定 Outlook 總管的功能區集合
  您可以存取出現在 Outlook 功能區集合*總管*。 [總管] 是 Outlook 執行個體的主要應用程式使用者介面 (UI)。 若要存取 [總管] 視窗的功能區，請呼叫 `Globals` 類別的 `Ribbons` 屬性，並傳入代表 [總管] 的 <xref:Microsoft.Office.Interop.Outlook.Explorer> 物件。
 
- 下列範例會取得目前擁有焦點的 [總管] 中的功能區集合。 然後這個範例會存取名為 `Ribbon1` 的功能區，並且將出現在功能區下拉式方塊中的文字設定為 `Hello World`。
+ 下列範例會取得目前擁有焦點的 [總管] 中的功能區集合。 然後這個範例會存取名為 `Ribbon1` 的功能區，並且將出現在功能區上下拉式方塊中的文字設定為 `Hello World`。
 
  [!code-vb[Trin_Outlook_FR_Access#6](../vsto/codesnippet/VisualBasic/Trin_Outlook_FR_Access_O12/ThisAddIn.vb#6)]
  [!code-csharp[Trin_Outlook_FR_Access#6](../vsto/codesnippet/CSharp/Trin_Outlook_FR_Access_O12/ThisAddIn.cs#6)]

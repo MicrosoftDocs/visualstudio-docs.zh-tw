@@ -9,12 +9,12 @@ caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 2e9cef8726ad690508948ac0a9878df1bd85c96e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: b78c409a761a98439cbbbfdf088e052eca745f32
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58930606"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444461"
 ---
 # <a name="properties-of-domain-roles"></a>網域角色的屬性
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,7 +43,7 @@ ms.locfileid: "58930606"
 |內容顯示名稱|會顯示在產生的設計工具產生的角色屬性名稱。|屬性名稱屬性調整過的值。|  
   
 > [!NOTE]
->  顯示名稱的預設值根據相關聯的屬性值中，插入小寫字元前面，和另一個大寫字元之後沒有接著，每個大寫字元前的加上空格。  
+> 顯示名稱的預設值根據相關聯的屬性值中，插入小寫字元前面，和另一個大寫字元之後沒有接著，每個大寫字元前的加上空格。  
   
 ## <a name="see-also"></a>另請參閱  
  [網域關聯性的屬性](../modeling/properties-of-domain-relationships.md)

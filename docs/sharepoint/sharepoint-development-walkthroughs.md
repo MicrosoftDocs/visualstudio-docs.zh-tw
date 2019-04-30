@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 0ae7ed434d2f76036f0409fe21d4dd1493cd28b2
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56619988"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62979467"
 ---
 # <a name="sharepoint-development-walkthroughs"></a>SharePoint 開發的逐步解說
   下列逐步解說示範如何開發和部署 SharePoint 方案使用[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]。

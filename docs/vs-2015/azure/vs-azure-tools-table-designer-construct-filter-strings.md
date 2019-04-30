@@ -1,22 +1,24 @@
 ---
 title: 建構資料表設計工具的篩選字串 | Microsoft Docs
 description: 建構資料表設計工具的篩選字串
+services: visual-studio-online
 author: ghogen
-manager: jillfra
+manager: douge
 assetId: a1a10ea1-687a-4ee1-a952-6b24c2fe1a22
-ms.prod: visual-studio-dev14
+ms.prod: visual-studio-dev15
 ms.technology: vs-azure
 ms.custom: vs-azure
 ms.workload: azure-vs
 ms.topic: conceptual
-ms.date: 11/18/2016
-ms.author: ghogen
+origin.date: 11/18/2016
+ms.date: 09/10/2018
+ms.author: v-junlch
 ms.openlocfilehash: ab38ffd1f94e6c8c432d25d8408a0209e4f96e30
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58942638"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62961920"
 ---
 # <a name="constructing-filter-strings-for-the-table-designer"></a>建構資料表設計工具的篩選字串
 ## <a name="overview"></a>總覽
@@ -41,9 +43,9 @@ WCF Data Services 以 [開放式資料通訊協定](http://go.microsoft.com/fwli
 
 建構篩選字串時，下列規則很重要：
 
-* 使用邏輯運算子來比較屬性與值。 請注意，無法比較屬性與動態值。運算式的一端必須是常數。
-* 篩選字串的所有部分都區分大小寫。
-* 常數和屬性必須是相同的資料類型，篩選才能傳回有效的結果。 如需支援的屬性類型的詳細資訊，請參閱 [了解表格服務資料模型](http://go.microsoft.com/fwlink/p/?LinkId=400448)。
+- 使用邏輯運算子來比較屬性與值。 請注意，無法比較屬性與動態值。運算式的一端必須是常數。
+- 篩選字串的所有部分都區分大小寫。
+- 常數和屬性必須是相同的資料類型，篩選才能傳回有效的結果。 如需支援的屬性類型的詳細資訊，請參閱 [了解表格服務資料模型](http://go.microsoft.com/fwlink/p/?LinkId=400448)。
 
 ## <a name="filtering-on-string-properties"></a>篩選字串屬性
 當您篩選字串屬性時，請用單引號括住字串常數。
@@ -92,3 +94,5 @@ WCF Data Services 以 [開放式資料通訊協定](http://go.microsoft.com/fwli
 下列範例會傳回 CustomerSince 屬性等於 2008 年 7 月 10 日的實體：
 
     CustomerSince eq datetime'2008-07-10T00:00:00Z'
+
+<!-- Update_Description: update metedata properties -->

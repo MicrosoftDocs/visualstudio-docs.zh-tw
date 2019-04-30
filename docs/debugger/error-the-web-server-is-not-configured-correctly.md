@@ -1,5 +1,5 @@
 ---
-title: 錯誤： Web 伺服器未正確設定 |Microsoft Docs
+title: 錯誤：Web 伺服器未正確設定 |Microsoft Docs
 ms.date: 09/20/2017
 ms.topic: troubleshooting
 f1_keywords:
@@ -17,11 +17,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: fc0c61b766b6f93fd1321b15861000d7c628f124
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56711601"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62850407"
 ---
 # <a name="error-the-web-server-is-not-configured-correctly"></a>錯誤：未正確設定 Web 伺服器
 
@@ -47,6 +47,6 @@ ms.locfileid: "56711601"
 
 4. 如果`maxConnection`限制在 IIS 中的為太低，並有太多連線，您可能需要[增加的連線限制](/iis/configuration/system.applicationhost/sites/sitedefaults/limits)。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [在執行 IIS 的遠端電腦上對 ASP.NET 進行遠端偵錯](../debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md)
 - [偵錯 Web 應用程式：錯誤和疑難排解](../debugger/debugging-web-applications-errors-and-troubleshooting.md)

@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 3d2a3b8b1ef028562502454994da18e799b8f28b
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56703539"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62871092"
 ---
 # <a name="idebugprocess2getinfo"></a>IDebugProcess2::GetInfo
 取得處理序的描述。

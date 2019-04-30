@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: be3fb721fd058f127b4d361c769d4cdfdc1e4b92
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 392afc210798611442a12d5f51f150ddc79f85ba
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60050885"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63408368"
 ---
 # <a name="walkthrough-writing-a-visualizer-in-visual-basic"></a>逐步解說：在 Visual Basic 中撰寫視覺化檢視
 本逐步解說顯示如何使用 [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] 撰寫簡易的視覺化檢視。 您在本逐步解說中建立的視覺化檢視會使用 Windows Form 訊息方塊顯示字串的內容。 這個簡易字串視覺化檢視是一個基本範例，示範如何建立更適用專案之其他資料型別的視覺化檢視。
@@ -56,7 +56,7 @@ ms.locfileid: "60050885"
 2. 將 Class1.vb 變更成有意義的名稱，例如 DebuggerSide.vb。
 
    > [!NOTE]
-   >  [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 會自動變更 DebuggerSide.vb 中的類別宣告，以符合新的檔案名稱。
+   > [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 會自動變更 DebuggerSide.vb 中的類別宣告，以符合新的檔案名稱。
 
 3. 在 [方案總管] 中，以滑鼠右鍵按一下 [My First Visualizer]，然後在捷徑功能表上按一下 [新增參考]。
 

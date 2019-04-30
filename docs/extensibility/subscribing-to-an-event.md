@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 70b0be3caca70e7a0dbf6f113cb5658169011d7f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60105099"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62432339"
 ---
 # <a name="subscribing-to-an-event"></a>訂閱事件
 本逐步解說說明如何建立回應事件而執行的文件資料表 (RDT) 中的工具視窗。 工具視窗裝載使用者控制項，可實作<xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocTableEvents>。 <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable.AdviseRunningDocTableEvents%2A>方法會將介面連接到事件。

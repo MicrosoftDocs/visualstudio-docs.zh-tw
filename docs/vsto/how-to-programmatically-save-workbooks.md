@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 0ac57569802bbab5317f59e5311e4871a6e74ba1
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: f82e469997a7d072ab04e4c5ef6df0f36a8dc9ec
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60093055"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63419475"
 ---
 # <a name="how-to-programmatically-save-workbooks"></a>HOW TO：以程式設計方式儲存活頁簿
   儲存活頁簿有好幾種方式。 您可以儲存活頁簿，而不變更路徑。 如果活頁簿先前沒有儲存過，則應該指定路徑來儲存活頁簿。 如果沒有明確指定路徑，Microsoft Office Excel 會將這個檔案以建立時指定的名稱儲存在目前的資料夾中。 您也可以儲存活頁簿的複本，而不修改記憶體中的已開啟活頁簿。
@@ -46,7 +46,7 @@ ms.locfileid: "60093055"
  您可以將指定的活頁簿儲存至新位置或使用新名稱儲存，也可以選擇性地指定檔案格式、密碼、存取模式等項目。
 
 > [!NOTE]
->  您可能想要設定<xref:Microsoft.Office.Interop.Excel._Application.DisplayAlerts%2A>屬性，以**False**因為以某些格式儲存，使用新路徑儲存活頁簿需要互動之前。 將此屬性設定為**False**會讓 Excel 使用所有預設值。
+> 您可能想要設定<xref:Microsoft.Office.Interop.Excel._Application.DisplayAlerts%2A>屬性，以**False**因為以某些格式儲存，使用新路徑儲存活頁簿需要互動之前。 將此屬性設定為**False**會讓 Excel 使用所有預設值。
 
 ### <a name="to-save-a-workbook-associated-with-a-document-level-customization"></a>儲存與文件層級自訂相關聯的活頁簿
 

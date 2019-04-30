@@ -11,12 +11,12 @@ ms.assetid: 9fcfaa0f-7b41-4b68-82ec-7a151dca5d7e
 caps.latest.revision: 26
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: c4c62bf12505bf04b8a680946ce848ea92709507
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 4b01b38510b11f5a9928e865b1511d0ea5639ea8
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58944952"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63408571"
 ---
 # <a name="support-for-project-and-configuration-properties"></a>支援專案和組態屬性
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -53,7 +53,7 @@ ms.locfileid: "58944952"
  負責的專案，以保存專案和設定屬性的專案檔。  
   
 > [!NOTE]
->  專案可以最佳化持續性保存其預設值不同的唯一屬性值。  
+> 專案可以最佳化持續性保存其預設值不同的唯一屬性值。  
   
 ## <a name="support-for-project-and-configuration-properties"></a>支援專案和組態屬性  
  `Microsoft.VisualStudio.Package.SettingsPage`類別會實作專案] 和 [組態屬性頁。 預設實作`SettingsPage`泛型屬性方格中的使用者提供的公用屬性。 `Microsoft.VisualStudio.Package.HierarchyNode.GetPropertyPageGuids`方法會選取類別衍生自`SettingsPage`的專案屬性方格。 `Microsoft.VisualStudio.Package.ProjectNode.GetConfigPropertyPageGuids`方法會選取類別衍生自`SettingsPage`的組態屬性方格。 您的專案類型應該覆寫這些方法來選取適當的屬性頁面。  
@@ -65,7 +65,7 @@ ms.locfileid: "58944952"
 - `Microsoft.VisualStudio.Package.SettingsPage.GetConfigProperty` 和`Microsoft.VisualStudio.Package.SettingsPage.SetConfigProperty`保存組態屬性。  
   
   > [!NOTE]
-  >  實作`Microsoft.VisualStudio.Package.SettingsPage`並`Microsoft.VisualStudio.Package.ProjectNode`類別會使用`Microsoft.Build.BuildEngine`(MSBuild) 方法來取得和設定從專案檔的專案] 和 [組態屬性。  
+  > 實作`Microsoft.VisualStudio.Package.SettingsPage`並`Microsoft.VisualStudio.Package.ProjectNode`類別會使用`Microsoft.Build.BuildEngine`(MSBuild) 方法來取得和設定從專案檔的專案] 和 [組態屬性。  
   
   此類別衍生自`SettingsPage`必須實作`Microsoft.VisualStudio.Package.SettingsPage.ApplyChanges`和`Microsoft.VisualStudio.Package.SettingsPage.BindProperties`以保留的專案檔的專案] 或 [組態屬性。  
   
@@ -83,7 +83,7 @@ ms.locfileid: "58944952"
  <xref:System.ComponentModel.CategoryAttribute>， <xref:System.ComponentModel.DisplayNameAttribute>，和<xref:System.ComponentModel.DescriptionAttribute>屬性會決定配置、 標記和一般屬性頁面中的專案和設定屬性的描述。 這些屬性決定的類別，分別顯示名稱和描述的選項。  
   
 > [!NOTE]
->  對等的屬性、 SRCategory、 LocDisplayName，SRDescription，字串資源當地語系化，並使用定義於[專案-Visual Studio 2013 的 MPF](http://mpfproj12.codeplex.com/)。  
+> 對等的屬性、 SRCategory、 LocDisplayName，SRDescription，字串資源當地語系化，並使用定義於[專案-Visual Studio 2013 的 MPF](http://mpfproj12.codeplex.com/)。  
   
  請考慮下列程式碼片段：  
   

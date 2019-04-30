@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: c1781e6aab84bfcdc665ef0d779130decc9c6421
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60091950"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62926020"
 ---
 # <a name="breakpoint-related-methods"></a>中斷點相關的方法
 偵錯引擎 (DE) 必須支援的設定中斷點。 Visual Studio 偵錯支援下列類型的中斷點：

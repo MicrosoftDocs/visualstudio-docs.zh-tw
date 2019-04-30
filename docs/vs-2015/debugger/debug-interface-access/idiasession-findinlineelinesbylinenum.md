@@ -11,12 +11,12 @@ caps.latest.revision: 6
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 71b663781b323e9c616957c902674cb13d5c0c92
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
-ms.translationtype: MT
+ms.openlocfilehash: d16bc6f3e2e8f190e3a26023407237509984cece
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "58939843"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444682"
 ---
 # <a name="idiasessionfindinlineelinesbylinenum"></a>IDiaSession::findInlineeLinesByLinenum
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -46,7 +46,7 @@ HRESULT findInlineeLinesByVA ( 
  [in]指定以一為基的行號。  
   
 > [!NOTE]
->  您無法使用零來指定所有行 (使用[idiasession:: Findlines](../../debugger/debug-interface-access/idiasession-findlines.md)方法來尋找所有行)。  
+> 您無法使用零來指定所有行 (使用[idiasession:: Findlines](../../debugger/debug-interface-access/idiasession-findlines.md)方法來尋找所有行)。  
   
  `column`  
  [in]指定的資料行編號。 使用指定的所有資料行的零。 資料行是一條線的位元組位移。  

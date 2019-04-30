@@ -15,11 +15,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: c45635da013f360ccbb1fe2343bca23a58f142c4
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59504103"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62557127"
 ---
 # <a name="get-started-sharepoint-development-in-visual-studio"></a>取得已啟動 （中的 SharePoint 開發 Visual Studio）
   本節可協助您開始使用利用 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 和 [!INCLUDE[wss_14_long](../sharepoint/includes/wss-14-long-md.md)] 的 [!INCLUDE[moss_14_long](../sharepoint/includes/moss-14-long-md.md)]開發 SharePoint 解決方案。

@@ -15,11 +15,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 6f00597c7d0cd55deb3a8747f6d23c658d83c2e4
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56601071"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62951979"
 ---
 # <a name="error-messages-office-development-in-visual-studio"></a>錯誤訊息 （在 Visual Studio 中的 Office 程式開發）
   每個錯誤訊息主題都涵蓋一個訊息，並提供可能產生錯誤的原因和可行的解決方式或替代方式來解決問題。

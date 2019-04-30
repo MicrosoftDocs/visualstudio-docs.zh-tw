@@ -9,12 +9,12 @@ caps.latest.revision: 14
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: c8c846c6f17c1fde0ef57855f4a557625fba80ad
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: cb14fb4017ea1df6659b9a1a0ac093cd7cf7e0b1
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60045149"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444821"
 ---
 # <a name="how-to-change-the-graphics-diagnostics-playback-machine"></a>HOW TO：變更圖形診斷播放電腦
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,7 +49,7 @@ ms.locfileid: "60045149"
 4. 選擇 [選取] 按鈕。  
   
 > [!NOTE]
->  **遠端偵錯工具連接**對話方塊可能也會顯示直接連線到您的開發電腦或相同的子網路上的遠端偵錯目標。 您可以為圖形診斷播放電腦使用其中一個遠端偵錯目標而不必以手動方式加以設定。 在 [**遠端偵錯工具連接**對話方塊方塊中，選取您想要的目標然後選擇**選取**] 按鈕。  
+> **遠端偵錯工具連接**對話方塊可能也會顯示直接連線到您的開發電腦或相同的子網路上的遠端偵錯目標。 您可以為圖形診斷播放電腦使用其中一個遠端偵錯目標而不必以手動方式加以設定。 在 [**遠端偵錯工具連接**對話方塊方塊中，選取您想要的目標然後選擇**選取**] 按鈕。  
   
 ## <a name="see-also"></a>另請參閱  
  [圖形記錄文件](../debugger/graphics-log-document.md)

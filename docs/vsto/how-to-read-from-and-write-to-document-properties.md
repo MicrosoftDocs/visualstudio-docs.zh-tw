@@ -16,11 +16,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: ac0d81c9e42a5c3aa22a09d59f346e6127b1284f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60115766"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62961562"
 ---
 # <a name="how-to-read-from-and-write-to-document-properties"></a>HOW TO：讀取和寫入文件屬性
   文件屬性可與文件一起儲存。 Office 應用程式提供許多內建屬性，例如作者、標題和主旨。 本主題說明如何設定 Microsoft Office Excel 和 Microsoft Office Word 的文件屬性。

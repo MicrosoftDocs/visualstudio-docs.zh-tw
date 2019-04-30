@@ -20,14 +20,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 32ab1bb6d4bde8f6e75fdaeb4416372cdc236318
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.openlocfilehash: aebe1faf31d53fb44cf5efddbee154018e42a365
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56698998"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62847754"
 ---
-# <a name="how-to-run-the-worker-process-under-a-user-account"></a>如何：在使用者帳戶下執行背景工作處理序
+# <a name="how-to-run-the-worker-process-under-a-user-account"></a>HOW TO：在使用者帳戶下執行背景工作處理序
 若要設定電腦以便在某個使用者帳戶下執行 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 背景工作處理序 (aspnet_wp.exe 或 w3wp.exe)，請依照下列步驟執行。
 
  > [!IMPORTANT]
@@ -45,21 +45,22 @@ ms.locfileid: "56698998"
 
 4. 在 [!INCLUDE[winxpsvr](../debugger/includes/winxpsvr_md.md)]中，預設是安裝 IIS 6.0。 對應的背景工作處理序是 w3wp.exe。若要以 aspnet_wp.exe 做為背景工作處理序在 IIS 6.0 模式中執行，您必須執行下列步驟：
 
-   1.  依序按一下 [ **開始**]、[ **系統管理工具** ]，然後選擇 [ **網際網路資訊服務**]。
+   1. 依序按一下 [ **開始**]、[ **系統管理工具** ]，然後選擇 [ **網際網路資訊服務**]。
 
-   2.  在 [ **網際網路資訊服務** ] 對話方塊中，以滑鼠右鍵按一下 [ **網站** ] 資料夾，然後選擇 [ **屬性**]。
+   2. 在 [ **網際網路資訊服務** ] 對話方塊中，以滑鼠右鍵按一下 [ **網站** ] 資料夾，然後選擇 [ **屬性**]。
 
-   3.  在 [ **網站屬性** ] 對話方塊中，選擇 [ **服務**]。
+   3. 在 [ **網站屬性** ] 對話方塊中，選擇 [ **服務**]。
 
-   4.  選取 [ **以 IIS 6.0 隔離模式執行 WWW 服務**]。
+   4. 選取 [ **以 IIS 6.0 隔離模式執行 WWW 服務**]。
 
-   5.  關閉 [ **屬性** ] 對話方塊以及 [ **網際網路服務管理員**]。
+   5. 關閉 [ **屬性** ] 對話方塊以及 [ **網際網路服務管理員**]。
 
 5. 開啟 Windows 命令提示，然後執行下列命令重設伺服器：
 
    ```cmd
    iisreset
    ```
+
    — 或 —
 
    ```cmd
@@ -85,6 +86,6 @@ ms.locfileid: "56698998"
 
 13. 按一下 [ **確定** ] 以關閉此 [ **暫存 ASP.NET 檔案屬性** ] 對話方塊。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [針對 ASP.NET 應用程式進行偵錯](../debugger/how-to-enable-debugging-for-aspnet-applications.md)
 - [ASP.NET 偵錯：系統需求](../debugger/aspnet-debugging-system-requirements.md)

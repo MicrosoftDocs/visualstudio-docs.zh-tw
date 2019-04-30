@@ -11,12 +11,12 @@ caps.latest.revision: 17
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: a7e89f2c7b9e834f9896ca3609fd3211e2d41862
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 614977aef83092c64071524e33507848c34bf442
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60044066"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63420080"
 ---
 # <a name="graphics-pixel-history"></a>圖形像素歷史記錄
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -62,7 +62,7 @@ Visual Studio 圖形診斷工具中的 [圖形像素歷史記錄] 視窗可幫�
 3. 在您感興趣的基本項目下，遵循著色器標題連結；例如，遵循 [頂點著色器 obj:30] 連結檢視頂點著色器原始程式碼。  
   
     > [!TIP]
-    >  物件編號 **obj:30** 可在整個圖形分析器介面中識別此著色器 (例如在物件資料表和管線階段視窗中)。  
+    > 物件編號 **obj:30** 可在整個圖形分析器介面中識別此著色器 (例如在物件資料表和管線階段視窗中)。  
   
 ##### <a name="to-debug-a-shader"></a>偵錯著色器  
   

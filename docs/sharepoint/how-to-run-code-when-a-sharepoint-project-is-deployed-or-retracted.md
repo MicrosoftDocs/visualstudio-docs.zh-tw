@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 4aadc089fba5c1f55488c72bfd5c3e46ebf59487
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60084397"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62813468"
 ---
 # <a name="how-to-run-code-when-a-sharepoint-project-is-deployed-or-retracted"></a>HOW TO：SharePoint 專案部署或撤銷時執行程式碼
   如果您想要部署或撤回 SharePoint 專案時執行其他工作，您可以處理由 Visual Studio 所引發的事件。 如需詳細資訊，請參閱 <<c0> [ 擴充 SharePoint 封裝和部署](../sharepoint/extending-sharepoint-packaging-and-deployment.md)。

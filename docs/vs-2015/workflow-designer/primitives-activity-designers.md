@@ -10,11 +10,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: ed26f1522913c0a8b395a0c058f73f66843eb1df
-ms.sourcegitcommit: 22b73c601f88c5c236fe81be7ba4f7f562406d75
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "59000478"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62971273"
 ---
 # <a name="primitives-activity-designers"></a>基本活動設計工具
 基本活動設計工具會用於在 <xref:System.Activities.Statements> 命名空間中建立及設定各種活動，例如 Assign 和 Delay 活動。 本節包含的主題會提供如何使用 [!INCLUDE[wfd2](../includes/wfd2-md.md)] 活動與範本設計工具的指引。  

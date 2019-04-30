@@ -10,11 +10,11 @@ author: gewarren
 ms.author: gewarren
 manager: wpickett
 ms.openlocfilehash: 62b6a6e5415f79886246075363a4663efecc246e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58942839"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62535791"
 ---
 # <a name="basic-design-guideline-rules-rule-set-for-managed-code"></a>適用於 Managed 程式碼的基本設計方針規則規則集
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

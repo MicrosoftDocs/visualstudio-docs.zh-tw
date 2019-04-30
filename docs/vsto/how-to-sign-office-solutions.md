@@ -15,11 +15,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 1fff7555c17f4fdac43de2690f8e133cc32881db
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60101226"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62971117"
 ---
 # <a name="how-to-sign-office-solutions"></a>HOW TO：簽署 Office 方案
   如果您登入解決方案，您可以授與信任給方案做為辨識項使用的憑證。 您可以使用相同的憑證用於多個方案，並沒有額外的安全性原則更新，所有的解決方案將會信任。

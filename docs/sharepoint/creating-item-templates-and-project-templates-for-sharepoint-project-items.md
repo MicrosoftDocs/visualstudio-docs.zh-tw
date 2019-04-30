@@ -17,19 +17,20 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: a7bc365df9ef84b5ef8e501bcbbfd48865bb865e
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: 1f8332b12b05c1d5db1f09afabacbba5e8ba83e9
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57868030"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62952683"
 ---
 # <a name="create-item-templates-and-project-templates-for-sharepoint-project-items"></a>建立項目範本和專案範本，為 SharePoint 專案項目
-  當您定義自訂的 SharePoint 專案項目類型時，則您可以將它與項目範本或專案範本。 此關聯可讓其他開發人員使用 Visual Studio 中的專案項目。 您也可以建立範本的精靈。
 
- 例如，Visual Studio 不會包含專案範本或將欄位加入至 SharePoint 網站的項目範本。 您可以定義 SharePoint 專案項目類型表示的欄位，並再建構其他開發人員可用來將欄位項目新增至 SharePoint 專案項目範本。 或者，您可以建構專案範本，好讓開發人員可以建立新的 SharePoint 專案的欄位項目。 在這兩種情況下，您也可以提供一個精靈，開發人員使用您的範本時，會出現。 此精靈可以從 設定新的項目或專案的開發人員收集資訊。
+當您定義自訂的 SharePoint 專案項目類型時，則您可以將它與項目範本或專案範本。 此關聯可讓其他開發人員使用 Visual Studio 中的專案項目。 您也可以建立範本的精靈。
 
- 項目範本和專案範本都 *.zip*包含 Visual studio 用來建立專案項目或專案檔案的檔案。 如需項目範本和專案範本的基本概念的詳細資訊，請參閱[建立專案和項目範本](../ide/creating-project-and-item-templates.md)。
+例如，Visual Studio 不會包含專案範本或將欄位加入至 SharePoint 網站的項目範本。 您可以定義 SharePoint 專案項目類型表示的欄位，並再建構其他開發人員可用來將欄位項目新增至 SharePoint 專案項目範本。 或者，您可以建構專案範本，好讓開發人員可以建立新的 SharePoint 專案的欄位項目。 在這兩種情況下，您也可以提供一個精靈，開發人員使用您的範本時，會出現。 此精靈可以從 設定新的項目或專案的開發人員收集資訊。
+
+項目範本和專案範本都 *.zip*包含 Visual studio 用來建立專案項目或專案檔案的檔案。 如需項目範本和專案範本的基本概念的詳細資訊，請參閱[建立專案和項目範本](../ide/creating-project-and-item-templates.md)。
 
 ## <a name="create-item-templates"></a>建立項目範本
  當您建立 SharePoint 專案項目的項目範本時，有一些檔案，一向是必要的和特定類型的專案項目可能使用的選擇性檔案。 如需示範如何定義 SharePoint 專案項目類型，並為它建立的項目範本的逐步解說，請參閱 <<c0> [ 逐步解說： 建立自訂動作專案項目與項目範本，第 1 部分](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-1.md)。
@@ -43,7 +44,6 @@ ms.locfileid: "57868030"
 |Visual Studio 延伸模組組件可實作<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeProvider>介面。|這個組件定義的執行的階段行為的專案項目。 這個組件必須包含在 VSIX 封裝，包含項目範本。 如需詳細資訊，請參閱 <<c0> [ 定義自訂 SharePoint 專案項目類型](../sharepoint/defining-custom-sharepoint-project-item-types.md)並[部署適用於 Visual Studio 中 SharePoint 工具擴充功能](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md)。|
 
  下表列出一些最常見的選擇性檔案可以包含在項目範本。 某些類型的專案項目可能需要其他這裡未列出的檔案。
-
 
 | 選用的檔案 | 描述 |
 |----------------------| - |
@@ -72,7 +72,7 @@ ms.locfileid: "57868030"
 
 |選用的檔案|描述|
 |-------------------|-----------------|
-|SharePoint 專案項目|您可以包含一或多個.spdata 檔案可定義 SharePoint 專案項目型別。 每個 *.spdata*檔案必須具有相符<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeProvider>VSIX 封裝專案範本中包含的延伸模組組件中的實作。 如需詳細資訊，請參閱 <<c0> [ 建立項目範本](#createitemtemplates)。<br /><br /> 一般而言，SharePoint 專案包含至少一個 SharePoint 專案項目。 不過，這是不必要。|
+|SharePoint 專案項目|您可以包含一或多個.spdata 檔案可定義 SharePoint 專案項目型別。 每個 *.spdata*檔案必須具有相符<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeProvider>VSIX 封裝專案範本中包含的延伸模組組件中的實作。 如需詳細資訊，請參閱 <<c0> [ 建立項目範本](#create-item-templates)。<br /><br /> 一般而言，SharePoint 專案包含至少一個 SharePoint 專案項目。 不過，這是不必要。|
 |*\<featureName>.feature*|此檔案會定義用來分組進行部署的數個專案項目是 SharePoint 功能。 當您使用功能設計工具在您的專案中自訂功能時，Visual Studio 會在這個檔案中儲存之功能的相關資料。 如果您想要的專案項目分組為不同的功能，您可以包含多個 *.feature*檔案。<br /><br /> 當您建立自訂的 SharePoint 專案範本時，我們建議您將只有最少的必要的內容包含在每個 *.feature*檔案，以及您在使用中的 Api 來設定功能<xref:Microsoft.VisualStudio.SharePoint.Features>中的命名空間專案範本與相關聯的延伸模組。 如果您這麼做，您的專案範本受到未來變更的結構 *.feature*檔案。 如需範例，示範如何建立 *.feature*檔案只需要最少內容，請參閱[逐步解說：使用專案範本，第 1 部分建立網站資料行專案項目](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-1.md)。<br /><br /> 如果您想要修改 *.feature*直接檔案中，您可以使用之結構描述，以確認內容 *%Program Files (x86)%\Microsoft Visual Studio 11.0\Xml\Schemas\FeatureModelSchema.xsd*。|
 |*\<featureName>.Template.xml*|這個檔案提供的基礎功能資訊清單檔案 (*Feature.xml*) 從專案產生的每項功能。 如果您想要指定某些不是要變更您的專案類型的使用者的行為，您可以將內容到這個檔案。 如需詳細資訊，請參閱[建置組塊：功能](http://go.microsoft.com/fwlink/?LinkId=169183)並[Feature.xml](http://go.microsoft.com/fwlink/?LinkId=177795)檔案。<br /><br /> 當您建置專案的方案套件時，Visual Studio 的內容合併至每個成對 *\<featureName >.feature*檔案並 *\<featureName >。Template.xml*檔案載入功能資訊清單檔案。 如需有關建置方案套件的詳細資訊，請參閱[How to:使用 MSBuild 工作建立 SharePoint 方案套件](../sharepoint/how-to-create-a-sharepoint-solution-package-by-using-msbuild-tasks.md)。|
 

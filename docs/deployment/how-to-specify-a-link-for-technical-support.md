@@ -21,11 +21,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 7a050ae24ddb5b796acf101e0432a5b64cd28031
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60051670"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62898567"
 ---
 # <a name="how-to-specify-a-link-for-technical-support"></a>HOW TO：指定技術支援的連結
 發佈時[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]應用程式中，**支援 URL**屬性會識別網頁或使用者可以前往取得應用程式的相關資訊的檔案共用。 這是選擇性的; 屬性如果提供，URL 會顯示在應用程式的項目**新增或移除程式** 對話方塊。

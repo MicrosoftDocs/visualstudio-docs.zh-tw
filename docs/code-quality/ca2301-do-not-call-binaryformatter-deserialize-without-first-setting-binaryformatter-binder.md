@@ -11,11 +11,11 @@ dev_langs:
 ms.workload:
 - multiple
 ms.openlocfilehash: d90ed71c1d5ca4cbfdcf8e500e1d176519a2fdff
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60037592"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62541547"
 ---
 # <a name="ca2301-do-not-call-binaryformatterdeserialize-without-first-setting-binaryformatterbinder"></a>CA2301：未先設定 BinaryFormatter.Binder 之前，請勿呼叫 BinaryFormatter.Deserialize
 

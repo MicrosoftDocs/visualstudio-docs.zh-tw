@@ -15,11 +15,11 @@ manager: jillfra
 ms.workload:
 - data-storage
 ms.openlocfilehash: b622fc77884acde5b81d886628afce9f077e86a8
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55955241"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62567969"
 ---
 # <a name="configure-service-reference-dialog-box"></a>設定服務參考對話方塊
 
@@ -105,5 +105,5 @@ ms.locfileid: "55955241"
 
 ## <a name="see-also"></a>另請參閱
 
-- [如何：將參考新增至 Web 服務](how-to-add-update-or-remove-a-wcf-data-service-reference.md)
+- [如何：將參考加入至 web 服務](how-to-add-update-or-remove-a-wcf-data-service-reference.md)
 - [Windows Communication Foundation 服務和 WCF 資料服務](../data-tools/configure-service-reference-dialog-box.md)

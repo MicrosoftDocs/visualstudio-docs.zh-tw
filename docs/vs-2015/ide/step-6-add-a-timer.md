@@ -9,12 +9,12 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 59bdcbd3cefe185a8809e471be22f00ea2478857
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: d6833e9735aa6a360ce0642e991bd019df347d16
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60082687"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63442499"
 ---
 # <a name="step-6-add-a-timer"></a>步驟 6：新增計時器
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ ms.locfileid: "60082687"
 計時器  
   
     > [!NOTE]
-    >  如果工具箱是空的，請確定先選取表單設計工具 (而不是選取表單的後置程式碼)，再開啟工具箱。  
+    > 如果工具箱是空的，請確定先選取表單設計工具 (而不是選取表單的後置程式碼)，再開啟工具箱。  
   
 2. 選擇 **Timer1** 圖示以選取計時器。 在 [屬性] 視窗中，從檢視事件切換為檢視屬性。 然後，將計時器的 [Interval] 屬性設為 [750]，但是將 [Enabled] 屬性設為 [False]。 [Interval] 屬性會告知計時器在「刻度」之間，或當其觸發其 Tick 事件時應等候多久的時間。 值為 750 表示會告知計時器等待四分之三秒 (750 毫秒)，再引發其 Tick 事件。 您只會在玩家選擇第二個標籤時呼叫 `Start()` 方法，以啟動計時器。  
   
@@ -41,7 +41,7 @@ ms.locfileid: "60082687"
      刻度事件處理常式會執行下列三件事情：首先，它會呼叫 `Stop()` 方法來確定計時器並未執行。 接著，它會使用兩個參考變數 `firstClicked` 和 `secondClicked`，確定玩家所選的兩個標籤的圖示再次看不見。 最後，它會將 `firstClicked` 和 `secondClicked` 參考變數重設為 Visual C# 中的 `null` 和 Visual Basic 中的 `Nothing`。 這個步驟很重要，因為這就是程式本身重設的方式。 現在它不會追蹤任何的 `Label` 控制項，而且已準備好讓玩家再度選擇標籤。  
   
     > [!NOTE]
-    >  `Timer` 物件具有可以啟動和停止計時器的 `Start()` 方法和 `Stop()` 方法。 當您在 [屬性] 視窗中將計時器的 [Enabled] 屬性設為 [True] 時，計時器會在程式開始時立即開始計時。 但是，當您將它設為 [False] 時，則要等到呼叫其 `Start()` 方法時才會開始計時。 通常，計時器會不斷地引發其 Tick 事件，並使用 [Interval] 屬性來決定在刻度之間要等待多少毫秒。 您可能已注意到在 Tick 事件內呼叫計時器之 `Stop()` 方法的方式。 該方式會使計時器進入「一次性模式」，表示在呼叫 `Start()` 方法時，它會等候指定的間隔、觸發單一 Tick 事件，然後停止。  
+    > `Timer` 物件具有可以啟動和停止計時器的 `Start()` 方法和 `Stop()` 方法。 當您在 [屬性] 視窗中將計時器的 [Enabled] 屬性設為 [True] 時，計時器會在程式開始時立即開始計時。 但是，當您將它設為 [False] 時，則要等到呼叫其 `Start()` 方法時才會開始計時。 通常，計時器會不斷地引發其 Tick 事件，並使用 [Interval] 屬性來決定在刻度之間要等待多少毫秒。 您可能已注意到在 Tick 事件內呼叫計時器之 `Stop()` 方法的方式。 該方式會使計時器進入「一次性模式」，表示在呼叫 `Start()` 方法時，它會等候指定的間隔、觸發單一 Tick 事件，然後停止。  
   
 4. 若要查看作用中的新計時器，請移至程式碼編輯器並將下列程式碼加入至 `label_Click()` 事件處理常式方法的頂端和底端  (您會將 `if` 陳述式加入至頂端，而將三個陳述式加入至底端；其餘的方法則維持不變)。  
   

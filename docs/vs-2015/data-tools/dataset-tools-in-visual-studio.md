@@ -53,18 +53,18 @@ caps.latest.revision: 53
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: d45fcbd8bd84bb9b6510d4143d3250e2e67ad1b6
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 0dc80bd821a85c475adba7fbbc264ab6b5a76a9b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60085373"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63431131"
 ---
 # <a name="dataset-tools-in-visual-studio"></a>Visual Studio 中的資料集工具
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 注意]
->  資料集和相關的類別是舊版的.NET 技術，從早期 2000s 可讓應用程式的應用程式會與資料庫中斷連接時，使用記憶體中的資料。 它們是特別適用於應用程式，讓使用者能夠修改資料，並保存資料庫的變更。 雖然資料集已證明是非常成功的技術，我們建議新的.NET 應用程式使用 Entity Framework。 Entity Framework 提供更自然的方式，為物件模型的表格式資料搭配使用，而且有一個簡單的程式設計介面。
+> 資料集和相關的類別是舊版的.NET 技術，從早期 2000s 可讓應用程式的應用程式會與資料庫中斷連接時，使用記憶體中的資料。 它們是特別適用於應用程式，讓使用者能夠修改資料，並保存資料庫的變更。 雖然資料集已證明是非常成功的技術，我們建議新的.NET 應用程式使用 Entity Framework。 Entity Framework 提供更自然的方式，為物件模型的表格式資料搭配使用，而且有一個簡單的程式設計介面。
 
  基本上是小型資料庫的記憶體中物件的資料集物件。 它包含在其中，您可以儲存並修改一或多個資料庫中的資料，而不需要維護的開啟連接的 DataTable、 DataColumn 和 DataRow 物件。 資料集會維護其資料，變更的相關資訊，因此更新可以追蹤與您的應用程式變得重新連線時，傳送回資料庫。
 

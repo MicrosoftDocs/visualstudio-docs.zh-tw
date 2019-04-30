@@ -18,11 +18,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 64df7bd4c0d0dde303cdc15d7111688d14c7dc49
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58146977"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62935454"
 ---
 # <a name="iactivescriptauthoraddscriptlet"></a>IActiveScriptAuthor::AddScriptlet
 將程式碼的程式碼片段加入做為子系的根層級`IScriptNode`物件。 在主機中，程式碼片段的完整的名稱被允許將只有兩個層級。  

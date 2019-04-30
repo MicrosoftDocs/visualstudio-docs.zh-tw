@@ -8,12 +8,12 @@ ms.assetid: b681164c-c87a-4bd7-be48-ed77e1578471
 caps.latest.revision: 17
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: badf8d53a73c86bac9422fd2bb7e1f073dd291eb
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 689ff79fb35f7b84c976fed85e4af10a8e252f3c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60108265"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445865"
 ---
 # <a name="using-emulators-to-isolate-unit-tests-for-sharepoint-2010-applications"></a>使用模擬器來隔離 Sharepoint 2010 應用程式的單元測試
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -340,7 +340,7 @@ public string GetAppointmentsForToday(string listName, SPWeb web)
  以下是現有測試方法 `GetAppointmentsForTodayReturnsOnlyTodaysAppointments` 的修改，會實作 Fakes 委派。 必要的變更會在註解中叫出：  
   
 > [!IMPORTANT]
->  在 `EmulationMode.Passthrough` 內容中執行測試時，明確建立 Fakes 填充碼的測試方法會擲回 `ShimNotSupported` 例外狀況。 若要避免這個問題，請使用變數設定 `EmulationMode` 值，並將任何 Fakes 程式碼包裝在測試該值的 `if` 陳述式中。  
+> 在 `EmulationMode.Passthrough` 內容中執行測試時，明確建立 Fakes 填充碼的測試方法會擲回 `ShimNotSupported` 例外狀況。 若要避免這個問題，請使用變數設定 `EmulationMode` 值，並將任何 Fakes 程式碼包裝在測試該值的 `if` 陳述式中。  
   
 ```csharp  
 // class level field to set emulation mode  

@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 3cdd656367e42a0a5b5636049ff4483b3aa1e9f3
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/18/2019
-ms.locfileid: "56335164"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62910787"
 ---
 # <a name="ide-guids"></a>IDE GUID
 

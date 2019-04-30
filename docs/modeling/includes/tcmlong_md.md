@@ -1,9 +1,10 @@
 ---
 ms.topic: include
-ms.openlocfilehash: 8f06aa39acd1bbd0dff9da3df6549cc001f3e9a2
-ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
+ms.openlocfilehash: be2cebf6b18ffa4a8702c2932fa8079828ff22f2
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/07/2018
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62982657"
 ---
-Test Manager
+測試管理員

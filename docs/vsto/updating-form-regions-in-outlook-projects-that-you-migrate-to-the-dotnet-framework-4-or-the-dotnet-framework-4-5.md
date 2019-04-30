@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: fed87ee8106c3e8a09c341b9de4709060627dac1
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60048265"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62982567"
 ---
 # <a name="update-form-regions-in-outlook-projects-that-you-migrate-to-the-net-framework-4-or-the-net-framework-45"></a>更新您移轉至.NET Framework 4 或.NET Framework 4.5 之 Outlook 專案中的表單區域
   如果 Outlook VSTO 增益集專案的目標 Framework 與表單區域的變更為 [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] 或更新版本，您就必須在執行階段中，針對產生的表單區域程式碼以及可執行個體化特定表單區域類別的任何程式碼，進行一些變更。

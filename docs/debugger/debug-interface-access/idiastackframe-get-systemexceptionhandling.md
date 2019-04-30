@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 519602b09ea1adcf00ed534ecb22b4a082018464
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56615425"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62838037"
 ---
 # <a name="idiastackframegetsystemexceptionhandling"></a>IDiaStackFrame::get_systemExceptionHandling
 擷取指出系統例外狀況處理是否作用中的旗標。
@@ -39,10 +39,10 @@ HRESULT get_systemExceptionHandling ( 
  如果成功，會傳回 `S_OK`。 傳回`S_FALSE`不支援的屬性。 否則會傳回錯誤碼。
 
 ## <a name="remarks"></a>備註
- 系統例外狀況處理亦稱為結構化例外狀況處理。 這不是 c + + 例外狀況處理與相同的工作。
+ 系統例外狀況處理亦稱為結構化例外狀況處理。 這不是與相同的工作C++例外狀況處理。
 
- 若要判斷是否 c + + 例外狀況處理作用中，請呼叫[idiastackframe:: Get_cplusplusexceptionhandling](../../debugger/debug-interface-access/idiastackframe-get-cplusplusexceptionhandling.md)方法。
+ 若要判斷C++例外狀況處理已生效，請呼叫[idiastackframe:: Get_cplusplusexceptionhandling](../../debugger/debug-interface-access/idiastackframe-get-cplusplusexceptionhandling.md)方法。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [IDiaStackFrame](../../debugger/debug-interface-access/idiastackframe.md)
 - [IDiaStackFrame::get_cplusplusExceptionHandling](../../debugger/debug-interface-access/idiastackframe-get-cplusplusexceptionhandling.md)

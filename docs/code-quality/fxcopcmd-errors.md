@@ -1,21 +1,22 @@
 ---
 title: FxCopCmd 錯誤
 ms.date: 10/19/2016
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-code-analysis
 ms.topic: reference
 helpviewer_keywords:
 - FxCopCmd errors
-ms.assetid: bb614ed0-1b7c-4b56-99ae-da50ef6cfef9
 ms.author: gewarren
 author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: a40d4b7baa3d994ca41213a100881e5f509a5167
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55948260"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62816484"
 ---
 # <a name="fxcopcmd-tool-errors"></a>FxCopCmd 工具錯誤
 

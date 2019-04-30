@@ -18,11 +18,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: c9642902bf334ce83f95a9113059683f183c6116
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60113777"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62537952"
 ---
 # <a name="how-to-display-wpf-trace-information"></a>HOW TO：顯示 WPF 追蹤資訊
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

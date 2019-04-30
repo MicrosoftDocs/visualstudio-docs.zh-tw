@@ -30,11 +30,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 2673ed9a69a80b2e9ab9275ff54909e33e4434f4
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60059275"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62906342"
 ---
 # <a name="view-the-call-stack-and-use-the-call-stack-window-in-the-debugger"></a>檢視呼叫堆疊，並使用偵錯工具中的 [呼叫堆疊] 視窗
 

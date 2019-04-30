@@ -18,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 9ce0be90be111d458229189c2a06624bd726ac05
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 7879ad7cf18c3d09fddbab3923296e0896688af9
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56604825"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63447065"
 ---
 # <a name="publish-wizard-office-development-in-visual-studio"></a>發行精靈 （在 Visual Studio 中的 Office 程式開發）
   使用**發行精靈**將方案檔複製到指定的位置，建立資訊清單的檔案，並建立安裝程式。
@@ -46,7 +46,7 @@ ms.locfileid: "56604825"
   根據預設，發佈的位置是否*http://localhost/projectname/* 有 IIS 安裝，或如果您這樣做，則為 publish\ 目錄未安裝 IIS。
 
 > [!NOTE]
->  如果目標電腦執行 Windows Vista，則需要有更多的考量。 您必須是 Windows Vista 電腦上的系統管理員，才能使用本機發行選項。 另外，預設位置是永遠*發佈\\*目錄下，不論您是否已安裝 IIS。
+> 如果目標電腦執行 Windows Vista，則需要有更多的考量。 您必須是 Windows Vista 電腦上的系統管理員，才能使用本機發行選項。 另外，預設位置是永遠*發佈\\*目錄下，不論您是否已安裝 IIS。
 
 ## <a name="what-is-the-default-installation-path-on-end-user-computers"></a>使用者電腦上的預設安裝路徑為何？
  安裝路徑是選擇性的。 如果您想，您可以稍後再設定安裝路徑。 如需詳細資訊，請參閱[如何：變更 Office 方案的安裝路徑](https://msdn.microsoft.com/d0eaa07b-2d72-4902-899f-2f9fb165b8fd)。

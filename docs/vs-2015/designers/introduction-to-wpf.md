@@ -9,12 +9,12 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 8d20b8938f4d841bb42299b7aa9abaf633f72e7d
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 1f02018ed9ddb6f91f965d28767cde55e4c3e524
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60074605"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437299"
 ---
 # <a name="introduction-to-wpf"></a>WPF 簡介
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -208,7 +208,7 @@ End Namespace
   <xref:System.Windows.Controls.DockPanel> 可讓子 <xref:System.Windows.Controls.TextBox> 控制項指示排列方式。 為了執行這項操作， <xref:System.Windows.Controls.DockPanel> 會實作公開給子控制項的 <xref:System.Windows.Controls.DockPanel.Dock%2A> 屬性，讓每個控制項都能指定停駐樣式。  
   
 > [!NOTE]
->  WPF 建構是由父控制項實作並可供子控制項使用的屬性，又稱為 [附加屬性](https://msdn.microsoft.com/library/ms749011\(v=vs.100\).aspx)。  
+> WPF 建構是由父控制項實作並可供子控制項使用的屬性，又稱為 [附加屬性](https://msdn.microsoft.com/library/ms749011\(v=vs.100\).aspx)。  
   
  下圖顯示上述範例中之 XAML 標記的結果。  
   

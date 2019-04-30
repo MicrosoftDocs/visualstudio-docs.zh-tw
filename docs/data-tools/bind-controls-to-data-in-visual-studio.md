@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - data-storage
 ms.openlocfilehash: 32b392f59fb0ac587730d2aa432ca11d91d5a9ea
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55939758"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62824824"
 ---
 # <a name="bind-controls-to-data-in-visual-studio"></a>將控制項繫結至 Visual Studio 中的資料
 
@@ -35,13 +35,13 @@ ms.locfileid: "55939758"
 | 資料集 | 是 | 是 | 否 |
 | 實體資料模型 | 是<sup>1</sup> | 是 | 是 |
 | LINQ to SQL 類別 | 否<sup>2</sup> | 否<sup>2</sup> | 否<sup>2</sup> |
-| 服務 (包括 [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)]、WCF 服務和 Web 服務) | 是 | [是] | 是 |
-| Object | 是 | [是] | 是 |
-| SharePoint | 是 | [是] | 是 |
+| 服務 (包括 [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)]、WCF 服務和 Web 服務) | 是 | 是 | 是 |
+| Object | 是 | 是 | 是 |
+| SharePoint | 是 | 是 | 是 |
 
 1. 產生模型使用**Entity Data Model**精靈，然後將這些物件拖曳至設計工具。
 
-2. LINQ to SQL 類別不會出現在 [資料來源] 視窗中。 不過，您可以根據 LINQ to SQL 類別加入新的物件資料來源，然後將這些物件拖曳至設計工具，來建立資料繫結控制項。 如需詳細資訊，請參閱 <<c0> [ 逐步解說： 建立的 LINQ to SQL 類別 （O-R 設計工具）](how-to-create-linq-to-sql-classes-mapped-to-tables-and-views-o-r-designer.md)。
+2. LINQ to SQL 類別不會出現在 [資料來源] 視窗中。 不過，您可以根據 LINQ to SQL 類別加入新的物件資料來源，然後將這些物件拖曳至設計工具，來建立資料繫結控制項。 如需詳細資訊，請參閱[逐步解說：建立 LINQ to SQL 類別 （O-R 設計工具）](how-to-create-linq-to-sql-classes-mapped-to-tables-and-views-o-r-designer.md)。
 
 ## <a name="data-sources-window"></a>資料來源視窗
 

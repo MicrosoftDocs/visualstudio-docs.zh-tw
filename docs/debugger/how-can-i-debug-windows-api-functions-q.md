@@ -23,11 +23,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: cac0524c0d4421c034ebfd6dfa6f61a0e9b589fc
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60047616"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62894921"
 ---
 # <a name="how-can-i-debug-windows-api-functions"></a>如何偵錯 Windows API 函式？
 如果要偵錯已載入 NT 符號的 Windows API 函式，必須進行下列步驟。

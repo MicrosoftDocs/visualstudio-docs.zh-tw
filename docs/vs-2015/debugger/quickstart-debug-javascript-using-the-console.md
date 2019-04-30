@@ -20,12 +20,12 @@ caps.latest.revision: 10
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: b03f7c69e5eac71f9edc790df31d9704a141e590
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 313c189a05ae2a4e338c6f6bb9d7e9341e34284c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60065684"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446112"
 ---
 # <a name="quickstart-debug-javascript-using-the-console"></a>快速入門：使用主控台對 JavaScript 進行偵錯
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -59,7 +59,7 @@ ms.locfileid: "60065684"
 - [切換指令碼執行內容](#Switching)  
   
 > [!TIP]
->  如果 [JavaScript 主控台] 視窗已關閉，請選擇 [偵錯] > >  以重新開啟。 只有在指令碼偵錯工作階段期間，才會出現此視窗。  
+> 如果 [JavaScript 主控台] 視窗已關閉，請選擇 [偵錯] > >  以重新開啟。 只有在指令碼偵錯工作階段期間，才會出現此視窗。  
   
  使用 [JavaScript 主控台] 視窗，您可以與 App 互動，而不需要停止和重新啟動偵錯工具。 如需詳細資訊，請參閱 <<c0> [ 重新整理應用程式 (JavaScript)](../debugger/refresh-an-app-javascript.md)。 如需其他 JavaScript 偵錯功能，例如使用 [DOM 總管] 中，以及設定中斷點，詳細資訊，請參閱[快速入門：偵錯 HTML 和 CSS](../debugger/quickstart-debug-html-and-css.md)並[偵錯在 Visual Studio 中的應用程式](../debugger/debug-store-apps-in-visual-studio.md)。  
   
@@ -67,7 +67,7 @@ ms.locfileid: "60065684"
  下列步驟會建立 `FlipView` App，並顯示如何以互動方式為 JavaScript 程式碼錯誤偵錯。  
   
 > [!CAUTION]
->  此範例應用程式是 Windows 市集 App。 不過，此處所述的主控台功能也適用於使用 Apache Cordova Visual Studio Tools 所建立的 App。  
+> 此範例應用程式是 Windows 市集 App。 不過，此處所述的主控台功能也適用於使用 Apache Cordova Visual Studio Tools 所建立的 App。  
   
 #### <a name="to-debug-javascript-code-in-the-flipview-app"></a>在 FlipView App 中為 JavaScript 程式碼偵錯  
   
@@ -182,7 +182,7 @@ ms.locfileid: "60065684"
      複製此程式碼，並將其貼入 JavaScript 主控台輸入提示字元中。  
   
     > [!TIP]
-    >  當您將多行程式碼貼入 JavaScript 主控台輸入提示字元中時，主控台輸入提示會自動切換到多行模式。 您可以按 Ctrl+Alt+M 以開啟和關閉多行模式。 若要在多行模式下執行指令碼，請按 Ctrl+Enter 或選擇視窗右下角的箭頭符號。 如需詳細資訊，請參閱 [JavaScript 主控台視窗中的單行模式和多行模式](#SinglelineMultilineMode)。  
+    > 當您將多行程式碼貼入 JavaScript 主控台輸入提示字元中時，主控台輸入提示會自動切換到多行模式。 您可以按 Ctrl+Alt+M 以開啟和關閉多行模式。 若要在多行模式下執行指令碼，請按 Ctrl+Enter 或選擇視窗右下角的箭頭符號。 如需詳細資訊，請參閱 [JavaScript 主控台視窗中的單行模式和多行模式](#SinglelineMultilineMode)。  
   
 12. 更正提示中的 `push` 函式呼叫，將 `pages.push` 取代為 `Data.items.setAt`。 正確的程式碼應該如下所示：  
   
@@ -193,7 +193,7 @@ ms.locfileid: "60065684"
     ```  
   
     > [!TIP]
-    >  如果您想要使用 `pages` 物件而非 `Data.items`，您必須設定程式碼中的中斷點以保留範圍內的 `pages` 物件。  
+    > 如果您想要使用 `pages` 物件而非 `Data.items`，您必須設定程式碼中的中斷點以保留範圍內的 `pages` 物件。  
   
 13. 選擇綠色箭頭符號以執行指令碼。  
   

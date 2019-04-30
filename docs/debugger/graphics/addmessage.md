@@ -9,11 +9,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 41a71a69c916bf2fff30b2dee8784d5d9997436b
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56705566"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62896350"
 ---
 # <a name="addmessage"></a>AddMessage
 在圖形診斷會將自訂訊息*抬頭顯示器*（抬頭顯示器）。

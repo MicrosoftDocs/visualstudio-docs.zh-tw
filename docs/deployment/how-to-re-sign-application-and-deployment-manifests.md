@@ -19,11 +19,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: e934832f20ea7ab11484cdeb345f989aa842e06d
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60097013"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62928360"
 ---
 # <a name="how-to-re-sign-application-and-deployment-manifests"></a>HOW TO：重新簽署應用程式和部署資訊清單
 您對 Windows Forms 應用程式、 Windows Presentation Foundation 應用程式 (xbap) 或 Office 方案的應用程式資訊清單中的部署屬性變更之後，您必須重新簽署應用程式和部署資訊清單與憑證。 這項程序有助於確保不會在終端使用者電腦上安裝遭到竄改的檔案。

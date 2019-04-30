@@ -16,11 +16,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 954a106b87d0ee941aa9c3a6c9c35579d1cb3d54
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60071677"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62812530"
 ---
 # <a name="how-to-programmatically-list-recently-used-workbook-files"></a>HOW TO：以程式設計方式列出最近使用的活頁簿檔案
   <xref:Microsoft.Office.Interop.Excel._Application.RecentFiles%2A>屬性會傳回集合，其中包含出現在 Microsoft Office Excel 清單最近使用的檔案中的所有檔案的名稱。 清單的長度會根據使用者選取要保留的檔案數目而有所不同。 您可以在範圍中顯示結果。

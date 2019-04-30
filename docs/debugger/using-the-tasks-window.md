@@ -18,13 +18,13 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: b32dc6372a6ce4983e9bd11e05a4a662d0ad44ba
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54993006"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62901573"
 ---
-# <a name="using-the-tasks-window-c-visual-basic-c"></a>使用 [工作] 視窗 (C#，Visual Basic、 c + +)
+# <a name="using-the-tasks-window-c-visual-basic-c"></a>使用 [工作] 視窗 (C#，Visual Basic 中， C++)
 
 [工作] 視窗與 [執行緒] 視窗類似，差別在於前者顯示的是 <xref:System.Threading.Tasks.Task?displayProperty=fullName>、[task_handle](/cpp/parallel/concrt/reference/task-group-class) 或 [WinJS.Promise](/previous-versions/windows/apps/br211867(v=win.10)) 物件的詳細資訊，而非每個執行緒的詳細資訊。 與執行緒一樣，工作代表可以並行執行的非同步作業，但是多項工作可能會在相同執行緒上執行。
 
@@ -45,7 +45,7 @@ ms.locfileid: "54993006"
 
 [工作] 視窗中的資料行會顯示下列資訊。
 
-|資料行名稱|說明|
+|資料行名稱|描述|
 |-----------------|-----------------|
 |**旗標**|顯示已加上旗標的工作，並可讓您為工作加上或取消旗標。|
 |**圖示**|黃色箭號表示目前工作。 目前工作是目前執行緒上的最上方工作。<br /><br /> 白色箭號表示最新的工作，即叫用偵錯工具時的最新工作。<br /><br /> 暫停圖示表示已由使用者凍結的工作。 在清單中，於工作上按一下滑鼠右鍵，就可以凍結和解除凍結工作。|
@@ -56,7 +56,7 @@ ms.locfileid: "54993006"
 |**完成時間**|工作已完成的時間。|
 |**位置**|在工作之呼叫堆疊中的目前位置。 將滑鼠游標停留在這個儲存格上方，就可以查看整個工作的呼叫堆疊。 已排程工作的這個資料行沒有值。|
 |**Task**|初始方法和任何在建立工作時未傳遞給工作的引數。|
-|**AsyncState**|對於 Managed 程式碼來說，是指工作狀態。 根據預設，這個資料行是隱藏狀態。 若要顯示這個資料行，請開啟其中一個資料行標頭的操作功能表。 選擇 [資料行]、[AsyncState]。|
+|**AsyncState**|對於 Managed 程式碼來說，是指工作狀態。 根據預設，這個資料行是隱藏狀態。 若要顯示這個資料行，請開啟其中一個資料行標頭的內容功能表。 選擇 [資料行]、[AsyncState]。|
 |**父代**|建立這個工作之工作的 ID。 如果空白，表示工作沒有父代。 這只適用於 Managed 程式。|
 |**執行緒指派**|正在執行工作之執行緒的 ID 和名稱。|
 |**AppDomain**|針對 Managed 程式碼，是正在執行工作的應用程式定義域。|
@@ -68,7 +68,7 @@ ms.locfileid: "54993006"
  ![在 [工作] 視窗的捷徑檢閱功能表](../debugger/media/parallel_tasks_contextmenu.png "Parallel_Tasks_ContextMenu")
 
 ## <a name="sorting-tasks"></a>排序工作
- 若要依據資料行準則排序工作，請按一下資料行標頭。 例如，依序按一下**識別碼**資料行標頭，您可以排序依工作識別碼的工作：等等。 若要反轉排序次序，請再按一下資料行標頭。 目前排序資料行和排序次序是透過資料行上的箭號來表示。
+ 若要依據資料行準則排序工作，請按一下資料行標頭。 例如，依序按一下**識別碼**資料行標頭，您可以排序依工作識別碼的工作：id:1,2,3,4,5 等。 若要反轉排序次序，請再按一下資料行標頭。 目前排序資料行和排序次序是透過資料行上的箭號來表示。
 
 ## <a name="grouping-tasks"></a>群組工作
  您可以根據清單檢閱中的任何資料行，來群組工作。 例如，在 [狀態] 資料行標頭上按一下滑鼠右鍵，然後按一下 [分組依據] > [狀態]，就可以群組所有具有相同狀態的工作。 例如，您可以快速查看正在等候工作，以便您專注於封鎖的原因。 您也可以摺疊偵錯工作階段期間不感興趣的群組。 同樣地，您也可以依據其他資料行來進行群組。 只要按一下群組標頭旁邊的按鈕，就可以為群組加上 (取消) 旗標。 下圖顯示處於群組模式的 [工作] 視窗。

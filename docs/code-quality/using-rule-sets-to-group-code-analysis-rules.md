@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: c95b442835289265d197b6806c6d87fa051f2c1b
-ms.sourcegitcommit: d78821f8c353e0102b1554719f549f32dffac71b
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/27/2019
-ms.locfileid: "58515229"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62825080"
 ---
 # <a name="use-rule-sets-to-group-code-analysis-rules"></a>使用規則集分組程式碼分析規則
 
@@ -24,7 +24,7 @@ ms.locfileid: "58515229"
 
 您可以自訂規則集藉由新增或刪除規則，或變更規則的嚴重性，顯示為警告或錯誤**錯誤清單**。 自訂的規則集可滿足您特定的開發環境的需求。 當您自訂規則集時，規則集編輯器會提供搜尋和篩選工具，可協助您在程序。
 
-規則集可供[的 managed 程式碼靜態分析](how-to-configure-code-analysis-for-a-managed-code-project.md)， [c + + 程式碼分析](using-rule-sets-to-specify-the-cpp-rules-to-run.md)，並[Roslyn 分析器](analyzer-rule-sets.md)。
+規則集可供[的 managed 程式碼靜態分析](how-to-configure-code-analysis-for-a-managed-code-project.md)，[分析C++程式碼](using-rule-sets-to-specify-the-cpp-rules-to-run.md)，和[Roslyn 分析器](analyzer-rule-sets.md)。
 
 ## <a name="rule-set-format"></a>規則集格式
 

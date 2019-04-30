@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 09ab1bb7e44ee2772023a73632ca194796bbb33e
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56631883"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62910055"
 ---
 # <a name="custom-user-interface-source-control-vspackage"></a>自訂使用者介面 （原始檔控制 VSPackage）
 VSPackage 會宣告它的功能表項目和其預設狀態，透過 Visual Studio 命令資料表 (*.vsct*) 檔案。 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]整合式的開發環境 (IDE) 會顯示在其預設狀態中的功能表項目直到載入 VSPackage。 接著，<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A>呼叫方法來啟用或停用功能表項目。

@@ -18,11 +18,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: a42fe61d67eedbe6f69350c7b5ec17726f43486e
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58145794"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62990685"
 ---
 # <a name="idebugapplicationstartdebugsession"></a>IDebugApplication::StartDebugSession
 啟動預設的偵錯工具整合式的開發環境 (IDE)，並將偵錯工作階段附加至這個應用程式而言，如果其中一個尚未附加。  

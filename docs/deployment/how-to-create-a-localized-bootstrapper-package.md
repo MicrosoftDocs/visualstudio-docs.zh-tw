@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a1a6b131e75e61e319a691a0b132bb57b7d0c227
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 856ea1e59a32a64c6a48b52c3ef1dcad9e0bbb80
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60061485"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63406834"
 ---
 # <a name="how-to-create-a-localized-bootstrapper-package"></a>HOW TO：建立當地語系化的啟動載入器套件
 建立啟動載入器套件之後，您可以為每一個地區設定建立另外兩個檔案，藉此建立當地語系化版本的啟動載入器套件：軟體授權條款檔案 (例如 *eula.rtf*) 和套件資訊清單 (*package.xml*)。
@@ -31,7 +31,7 @@ ms.locfileid: "60061485"
 3. 建立名為 *package.xml* 的套件資訊清單，更新字串和文化特性，然後將檔案放入新資料夾中。 如果您已經建立目標語言的 Visual Studio 啟動載入器，則可以複製 Visual Studio *package.xml* 檔案，並且在這個步驟中進行修改。
 
 > [!NOTE]
->  如果您使用安裝專案部署應用程式，可以藉由變更 **Localization** 屬性將應用程式當地語系化。
+> 如果您使用安裝專案部署應用程式，可以藉由變更 **Localization** 屬性將應用程式當地語系化。
 
  [!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]
 

@@ -10,11 +10,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: d8aa3ecd29180e01a7d6f254303d42ac328aceaa
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60085216"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63385301"
 ---
 # <a name="how-to-extend-code-generated-by-the-or-designer"></a>HOW TO：擴充 O/R 設計工具產生的程式碼
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

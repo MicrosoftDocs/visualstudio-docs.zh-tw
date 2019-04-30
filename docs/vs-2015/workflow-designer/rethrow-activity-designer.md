@@ -12,11 +12,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 8b023a42da1c862927606c4bec0215120a5e5a11
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58940801"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62937753"
 ---
 # <a name="rethrow-activity-designer"></a>Rethrow 活動設計工具
 **重新擲回**活動設計工具會用來建立及設定<xref:System.Activities.Statements.Rethrow>活動。  

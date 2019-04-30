@@ -11,13 +11,13 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: f5323582bfe945bc031b9fd02fcf96bb615bcceb
-ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57524919"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62807941"
 ---
-# <a name="xml-schemas-dialog-box"></a>XML 結構描述 對話方塊
+# <a name="xml-schemas-dialog-box"></a>XML 結構描述對話方塊
 
 **XML 結構描述**對話方塊用來選取哪一個 XML 結構描述定義語言 (XSD) 結構描述與 XML 文件產生關聯。 您可以從結構描述快取中選取結構描述，或指定快取中沒有的結構描述。 選取的結構描述會被視為結構描述集的一部分。 結構描述集用於 IntelliSense 以及 XML 文件驗證。
 

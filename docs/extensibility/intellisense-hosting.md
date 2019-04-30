@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 6e4f6ae0f2df20cefefb8a086fbd383d98a6d5cd
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56702417"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62910616"
 ---
 # <a name="intellisense-hosting"></a>IntelliSense 裝載
 Visual Studio 可讓 IntelliSense 裝載。 IntellSense 裝載可讓您會提供 IntelliSense for Visual Studio 文字編輯器所未裝載的程式碼。

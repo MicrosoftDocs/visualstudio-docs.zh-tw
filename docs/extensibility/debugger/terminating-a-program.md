@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 729d37c36782cd1786124c94796f610931473f0c
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56704887"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62912745"
 ---
 # <a name="terminating-a-program"></a>終止程式
 下節描述了單一的程式，而且其中一個執行緒終止。

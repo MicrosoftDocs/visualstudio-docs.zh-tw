@@ -10,11 +10,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 25f8db1f6d14692538fe7f61ed2f9dbd37e0bd29
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "59000686"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62977314"
 ---
 # <a name="control-flow-activity-designers"></a>Control Flow 活動設計工具
 [!INCLUDE[wfd1](../includes/wfd1-md.md)] 包括幾項系統提供的活動，在您建構工作流程時，可以使用這些活動。 本節包含用來控制工作流程中之流程的系統提供活動。 下列主題說明會這些活動，並且提供如何使用的指引。  

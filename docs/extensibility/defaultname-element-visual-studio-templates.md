@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: bc859155afcde0b72b8898b2ea37c098f7458e53
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56717451"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62864186"
 ---
 # <a name="defaultname-element-visual-studio-templates"></a>DefaultName 項目 （Visual Studio 範本）
 建立時，請指定 Visual Studio 專案系統會產生的專案或項目的名稱。

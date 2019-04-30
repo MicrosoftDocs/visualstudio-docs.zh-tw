@@ -8,12 +8,12 @@ ms.assetid: 7e795873-1d4b-4a13-a52a-a411d87fb759
 caps.latest.revision: 15
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 18dbd175ddbf01a826d2a24b5d750cb00b64d28b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 8010ad1f8bbb1e49afe9e5e527e9639f2fb14601
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60098882"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63442815"
 ---
 # <a name="analyzing-coded-ui-tests-using-coded-ui-test-logs"></a>使用自動程式化 UI 測試記錄分析自動程式化 UI 測試
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -76,7 +76,7 @@ ms.locfileid: "60098882"
      自動化測試將會執行，並指出測試通過或失敗。  
   
     > [!TIP]
-    >  若要從 [測試功能表] 檢視測試總管，請指向 [Windows]，然後選擇 [測試總管]。  
+    > 若要從 [測試功能表] 檢視測試總管，請指向 [Windows]，然後選擇 [測試總管]。  
   
 4. 選擇 [測試總管] 結果中的 [輸出] 連結。  
   

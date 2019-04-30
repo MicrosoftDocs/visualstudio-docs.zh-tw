@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 70960cc92d60ebbffa34dda75557dfcb9a1a0d67
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: ab220b8a21db60918462e4c060ce613171e3faad
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60092717"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63442355"
 ---
 # <a name="how-to-add-a-command-to-the-shortcut-menu"></a>HOW TO：在捷徑功能表中新增命令
 
@@ -118,7 +118,7 @@ Managed Extension Framework (MEF) 提供在圖表功能表上定義功能表命�
 5. 將 `{000...000}` 取代為識別您群組和功能表項目的 GUID。 若要取得新的 GUID，請使用**建立 GUID**工具**工具**功能表。
 
     > [!NOTE]
-    >  如果您加入更多群組或功能表項目，您就可以使用相同的 GUID。 不過，您必須為 `IDSymbols` 使用新的值。
+    > 如果您加入更多群組或功能表項目，您就可以使用相同的 GUID。 不過，您必須為 `IDSymbols` 使用新的值。
 
 6. 在您從此程序複製的程式碼中，將每個出現的下列字串取代為您自己的字串：
 
@@ -296,7 +296,7 @@ private const int cmdidMyContextMenuCommand = 1;
  使用相同的 GUID 值，當您插入**Commands.vsct**。
 
 > [!NOTE]
->  如果您變更 VSCT 檔的 Symbols 區段，您必須也將這些宣告變更為相符。 您也應在 Package.tt 中遞增版本號碼
+> 如果您變更 VSCT 檔的 Symbols 區段，您必須也將這些宣告變更為相符。 您也應在 Package.tt 中遞增版本號碼
 
  將功能表命令註冊為此命令集的一部分。 圖表初始化時會呼叫 `GetMenuCommands()` 一次：
 

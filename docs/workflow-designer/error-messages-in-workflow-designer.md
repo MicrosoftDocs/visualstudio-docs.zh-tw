@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: ab2cb4562f816b254b658cfdc152dc38033fbe03
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60104537"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62949682"
 ---
 # <a name="error-messages-in-workflow-designer"></a>工作流程設計工具的錯誤訊息
 

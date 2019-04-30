@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: acaa43d4a9afe1084502c44f5221bc8518a9bd3e
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56713317"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62917928"
 ---
 # <a name="idebugprocess2getname"></a>IDebugProcess2::GetName
 取得標題、 易記名稱或處理序檔案名稱。

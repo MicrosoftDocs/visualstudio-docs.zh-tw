@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 512329317ce1e9587848edf15c68f57fe112299e
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56681917"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62876838"
 ---
 # <a name="idebugclassfieldenumnestedclasses"></a>IDebugClassField::EnumNestedClasses
 建立此類別中巢狀類別的列舉值。
@@ -47,7 +47,7 @@ int EnumNestedClasses(
 ## <a name="remarks"></a>備註
 列舉型別的每個項目是[IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md)描述巢狀的類別的物件。
 
-巢狀的類別是定義在另一個類別的類別。 例如: 
+巢狀的類別是定義在另一個類別的類別。 例如：
 
 ```
 class RootClass {

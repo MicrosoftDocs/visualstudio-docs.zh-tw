@@ -18,11 +18,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 4d964a8744f1f0a28704dd0a1d5e0fd2e67aab1c
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "58897669"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62997351"
 ---
 # <a name="idispatchexgetnextdispid"></a>IDispatchEx::GetNextDispID
 

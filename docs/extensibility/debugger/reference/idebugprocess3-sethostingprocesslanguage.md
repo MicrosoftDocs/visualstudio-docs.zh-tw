@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 0e10c77fb7e4fd3e7a679e9954140760c282952b
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56723730"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62917649"
 ---
 # <a name="idebugprocess3sethostingprocesslanguage"></a>IDebugProcess3::SetHostingProcessLanguage
 這個方法會設定程序會裝載下的語言。 然後偵錯引擎 (DE) 載入適當的運算式評估工具使用此語言。
@@ -39,7 +39,7 @@ int SetHostingProcessLanguage(
 #### <a name="parameters"></a>參數
  `guidLang`
 
- [in]`GUID` DE 應該使用的語言。 指定`GUID_NULL`（c + +） 或`Guid.Empty`(C#) 能夠使用預設的語言 DE。
+ [in]`GUID` DE 應該使用的語言。 指定`GUID_NULL`(C++) 或`Guid.Empty`(C#) 能夠使用預設的語言 DE。
 
 ## <a name="return-value"></a>傳回值
  如果成功，則傳回`S_OK`，否則會傳回錯誤碼。

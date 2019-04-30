@@ -8,11 +8,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 12ba03ab97da3295a93b54dfc012d10fc012fd30
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57872384"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62423919"
 ---
 # <a name="improve-performance-for-code-maps"></a>改善效能的 code map
 

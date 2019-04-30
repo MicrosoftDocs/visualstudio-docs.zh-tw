@@ -20,11 +20,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: c63cf941bca1965fc4a2e3997f0c0b50ebc44035
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58147588"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62955298"
 ---
 # <a name="dbgpropinfoflags"></a>DBGPROP_INFO_FLAGS
 用來指定`DebugPropertyInfo`欄位  

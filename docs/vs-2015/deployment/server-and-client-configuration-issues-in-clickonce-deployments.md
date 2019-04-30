@@ -18,12 +18,12 @@ caps.latest.revision: 35
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 008e7991c8f88fb1c5a8b2eb99659ebe9134df26
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 90772785297b84a12cc98d6ce21a2cd2e65743f9
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58942142"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444980"
 ---
 # <a name="server-and-client-configuration-issues-in-clickonce-deployments"></a>ClickOnce 部署中的伺服器和用戶端組態問題
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -60,7 +60,7 @@ ms.locfileid: "58942142"
  目前，[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]安裝使用 Internet Explorer 開啟部署資訊清單的 URL 時，才啟動。 只有當 Internet Explorer 設定為預設網頁瀏覽器，將會成功啟動其 URL 從另一個應用程式，例如 Microsoft Office Outlook、 啟動部署。  
   
 > [!NOTE]
->  如果部署提供者不是空白或已安裝 Microsoft.NET Framework Assistant 延伸模組，則支援 Mozilla Firefox。 此延伸模組會封裝與.NET Framework 3.5 SP1。 如需 XBAP 支援，需要時啟動 NPWPF 外掛程式。  
+> 如果部署提供者不是空白或已安裝 Microsoft.NET Framework Assistant 延伸模組，則支援 Mozilla Firefox。 此延伸模組會封裝與.NET Framework 3.5 SP1。 如需 XBAP 支援，需要時啟動 NPWPF 外掛程式。  
   
 ## <a name="activating-clickonce-applications-through-browser-scripting"></a>啟動 ClickOnce 應用程式，透過瀏覽器的指令碼  
  如果您開發自訂的網頁，可啟動[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]應用程式使用動態指令碼中，您可能會發現某些電腦上不會啟動應用程式。 Internet Explorer 包含設定，稱為**自動提示下載檔案**，這會影響這個行為。 此設定可用於**安全性**索引標籤中其**選項**影響這個行為的功能表。 它會呼叫**自動提示下載檔案**，而且列於下方**下載**類別目錄。 屬性設定為**啟用**根據預設，內部網路網頁，以及**停用**預設會針對網際網路的網頁。 當此設定設為**停用**，任何嘗試啟動[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]應用程式以程式設計方式 (比方說，是藉由指派至其 URL`document.location`屬性) 將會遭到封鎖。 在此情況下，使用者可以啟動應用程式只能透過使用者起始的下載，比方說，依序按一下 設為 應用程式的 URL 超連結。  
@@ -78,7 +78,7 @@ ms.locfileid: "58942142"
 ```  
   
 > [!NOTE]
->  您可以進行 NTLM （NT 挑戰-回應） 驗證，如果站台會提示輸入您的預設認證以外的認證，並在 [安全性] 對話方塊中，按一下**確定**提示您時如果您想要儲存所提供未來的工作階段的認證。 不過，這個因應措施不適用於基本驗證。  
+> 您可以進行 NTLM （NT 挑戰-回應） 驗證，如果站台會提示輸入您的預設認證以外的認證，並在 [安全性] 對話方塊中，按一下**確定**提示您時如果您想要儲存所提供未來的工作階段的認證。 不過，這個因應措施不適用於基本驗證。  
   
 ## <a name="using-third-party-web-servers"></a>使用第三方 Web 伺服器  
  如果您要部署[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]從 Web 伺服器，而不是 IIS 的應用程式，您可能會遇到的問題，如果伺服器傳回的內容金鑰類型不正確[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]檔案，例如部署資訊清單和應用程式資訊清單。 若要解決此問題，請參閱有關如何將新的內容類型加入至伺服器，並確定所有的檔案名稱副檔名對應，列出下表中的文件已備妥的網頁伺服器的說明。  

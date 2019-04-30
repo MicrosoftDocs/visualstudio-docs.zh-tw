@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: cfaa260b32deb2cb91b27dfcaa910e950ee00752
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: ffa7923bbe7e8a7b44fec280a5528ab023feed37
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60093705"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444696"
 ---
 # <a name="how-to-edit-a-sharepoint-deployment-configuration"></a>HOW TO：編輯 SharePoint 部署組態
   您可以建立部署組態，或修改現有的部署組態。 比方說，您無法執行單一的步驟，或變更的部署程序中的步驟順序。 您可能想要建立或修改部署組態，因為無法變更內建和以程式設計方式加入組態。
@@ -39,7 +39,7 @@ ms.locfileid: "60093705"
 4. 在 [**可用的部署步驟**窗格中，選擇您想要加入部署組態，請選擇的步驟 (**>**) 按鈕，然後再選擇 **[確定]** ] 按鈕。
 
     > [!NOTE]
-    >  如果您已設定預先部署命令或部署後命令，只有在您加入自訂的部署設定，也會執行這些步驟。
+    > 如果您已設定預先部署命令或部署後命令，只有在您加入自訂的部署設定，也會執行這些步驟。
 
 ## <a name="change-the-active-deployment-configuration"></a>變更現用部署組態
 

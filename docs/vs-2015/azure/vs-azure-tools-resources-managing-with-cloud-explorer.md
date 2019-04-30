@@ -12,11 +12,11 @@ ms.topic: conceptual
 ms.date: 03/25/2017
 ms.author: ghogen
 ms.openlocfilehash: 25995eacc961474fcb6486668c918d2e5be5ba76
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58942642"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62936145"
 ---
 # <a name="manage-the-resources-associated-with-your-azure-accounts-in-visual-studio-cloud-explorer"></a>在 Visual Studio Cloud Explorer 中管理與 Azure 帳戶關聯的資源
 

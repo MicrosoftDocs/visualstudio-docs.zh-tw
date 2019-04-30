@@ -18,11 +18,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: fe6870f3b19c5727fdbea0418b8373b990cb671a
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58144715"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62955077"
 ---
 # <a name="iactivescriptauthorparsescripttext"></a>IActiveScriptAuthor::ParseScriptText
 剖析指令碼文字、 將文字加入指令碼撰寫引擎，並建立`IScriptEntry`物件，對應至指令碼區塊。  

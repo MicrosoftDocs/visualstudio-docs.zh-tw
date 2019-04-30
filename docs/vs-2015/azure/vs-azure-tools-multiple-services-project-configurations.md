@@ -4,19 +4,17 @@ description: 了解如何透過變更 ServiceDefinition.csdef、ServiceConfigura
 author: ghogen
 manager: jillfra
 assetId: a4fb79ed-384f-4183-9f74-5cac257206b9
-ms.prod: visual-studio-dev14
-ms.technology: vs-azure
 ms.custom: vs-azure
 ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 11/11/2017
 ms.author: ghogen
 ms.openlocfilehash: 3dfea05e38930cc4613335fa5b5bccbe228b71fe
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59666134"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62422719"
 ---
 # <a name="configuring-your-azure-project-in-visual-studio-to-use-multiple-service-configurations"></a>在 Visual Studio 中設定 Azure 專案，以便使用多個服務組態
 

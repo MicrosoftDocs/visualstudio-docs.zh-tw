@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 2768a2e55b3e38158f2ef6b856a653a1a2c12dfa
-ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58322989"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62562399"
 ---
 # <a name="projectitem-element"></a>ProjectItem 項目
   代表 SharePoint 專案項目。 這個項目必要的根元素的 *.spdata*檔案。
@@ -55,7 +55,7 @@ ms.locfileid: "58322989"
 
 ### <a name="child-elements"></a>子元素
 
-|元素|描述|
+|項目|描述|
 |-------------|-----------------|
 |[ExtensionData](../sharepoint/extensiondata-element.md)|選擇性項目。<br /><br /> 代表 SharePoint 專案項目相關聯的自訂資料項目的集合。<br /><br /> 您可以只包含一個**ExtensionData**項目。|
 |[FeatureProperties](../sharepoint/featureproperties-element.md)|選擇性項目。<br /><br /> 表示它會部署到 SharePoint 時，會包含與功能的屬性值的集合。<br /><br /> 您可以只包含一個**FeatureProperties**項目。|

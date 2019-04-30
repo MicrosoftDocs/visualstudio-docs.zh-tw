@@ -14,12 +14,12 @@ ms.assetid: 2b018b18-b412-4e0e-b0ee-b580a2f3ba9c
 caps.latest.revision: 85
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ad9a30f5a54177a9df955cbe78d0ad0bc5d99ac3
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 7fcea011f78688630a94cff64f9d2a627acea88c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60058885"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63408477"
 ---
 # <a name="walkthrough-creating-and-running-unit-tests-for-managed-code"></a>逐步解說：建立和執行 Managed 程式碼的單元測試
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,10 +47,10 @@ ms.locfileid: "60058885"
   [使用單元測試改善您的程式碼](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md#BKMK_Use_unit_tests_to_improve_your_code)  
   
 > [!NOTE]
->  本逐步解說會使用適用於 Managed 程式碼的 Microsoft 單元測試架構。 [測試總管] 也可以從已安裝測試總管配接器的協力廠商單元測試架構來執行測試。 如需詳細資訊，請參閱[安裝協力廠商單元測試架構](../test/install-third-party-unit-test-frameworks.md)  
+> 本逐步解說會使用適用於 Managed 程式碼的 Microsoft 單元測試架構。 [測試總管] 也可以從已安裝測試總管配接器的協力廠商單元測試架構來執行測試。 如需詳細資訊，請參閱[安裝協力廠商單元測試架構](../test/install-third-party-unit-test-frameworks.md)  
   
 > [!NOTE]
->  如需有關如何從命令列執行測試的資訊，請參閱[逐步解說：使用命令列測試公用程式](http://msdn.microsoft.com/library/52c11992-9e94-4067-a4b7-59f19d69d867)。  
+> 如需有關如何從命令列執行測試的資訊，請參閱[逐步解說：使用命令列測試公用程式](http://msdn.microsoft.com/library/52c11992-9e94-4067-a4b7-59f19d69d867)。  
   
 ## <a name="prerequisites"></a>必要條件  
   
@@ -71,12 +71,12 @@ ms.locfileid: "60058885"
 5. 在 [ **名稱** ] 方塊中，輸入 `Bank` ]，然後按一下 [ **確定**。  
   
    > [!NOTE]
-   >  如果已經有專案使用 "Bank" 這個名稱，就請為專案選擇另一個名稱。  
+   > 如果已經有專案使用 "Bank" 這個名稱，就請為專案選擇另一個名稱。  
   
     新的 Bank 專案會建立並顯示在方案總管中，並於程式碼編輯器中開啟 Class1.cs 檔。  
   
    > [!NOTE]
-   >  如果 Class1.cs 檔並未在程式碼編輯器中開啟，請在方案總管中按兩下 Class1.cs 檔加以開啟。  
+   > 如果 Class1.cs 檔並未在程式碼編輯器中開啟，請在方案總管中按兩下 Class1.cs 檔加以開啟。  
   
 6. 從[用於建立單元測試的範例專案](../test/sample-project-for-creating-unit-tests.md)複製原始程式碼。  
   

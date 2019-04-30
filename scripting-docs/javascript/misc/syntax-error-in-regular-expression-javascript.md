@@ -15,11 +15,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 2c8010f268457ac60d17e617d08aa5898bdd0cb2
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60061641"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63006416"
 ---
 # <a name="syntax-error-in-regular-expression-javascript"></a>規則運算式中的語法錯誤 (JavaScript)
 搜尋字串的結構，違反了一個或多個的文法規則[!INCLUDE[javascript](../../javascript/includes/javascript-md.md)]規則運算式。  

@@ -15,11 +15,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 03948506d928f7d638b21c1fa4bc0a35818ec09a
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55926903"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62545418"
 ---
 # <a name="ca2116-aptca-methods-should-only-call-aptca-methods"></a>CA2116:APTCA 方法應該只呼叫 APTCA 方法
 

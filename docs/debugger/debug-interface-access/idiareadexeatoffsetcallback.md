@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: df32012a100d36c8d288b6b988b9498ff4afd3b3
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56635731"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62832551"
 ---
 # <a name="idiareadexeatoffsetcallback"></a>IDiaReadExeAtOffsetCallback
 可讓用戶端應用程式提供的可執行檔所指定的檔案位置的位元組。
@@ -31,7 +31,7 @@ IDiaReadExeAtOffsetCallback : IUnknown
 ## <a name="methods-in-vtable-order"></a>依照 Vtable 順序的方法
  下表顯示的方法`IDiaReadExeAtOffsetCallback`。
 
-|方法|說明|
+|方法|描述|
 |------------|-----------------|
 |[IDiaReadExeAtOffsetCallback::ReadExecutableAt](../../debugger/debug-interface-access/idiareadexeatoffsetcallback-readexecutableat.md)|讀取指定的可執行檔從指定的位移開始的位元組數目。|
 
@@ -42,13 +42,13 @@ IDiaReadExeAtOffsetCallback : IUnknown
  這個方法是藉由將用戶端應用程式，並傳遞給[idiadatasource:: Loaddataforexe](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md)方法作為替代方法來讀取檔案。
 
 ## <a name="requirements"></a>需求
- 標頭： Dia2.h
+ 標頭：dia2.h
 
  程式庫： diaguids.lib
 
  DLL: msdia80.dll
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [介面 (偵錯介面存取 SDK)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)
 - [IDiaDataSource::loadDataForExe](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md)
 - [IDiaReadExeAtRVACallback](../../debugger/debug-interface-access/idiareadexeatrvacallback.md)

@@ -8,11 +8,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: f287328c40e2391a17d0c9e0b8ce8067ba216295
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55922936"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62571429"
 ---
 # <a name="all-rules-rule-set"></a>所有規則規則集
 

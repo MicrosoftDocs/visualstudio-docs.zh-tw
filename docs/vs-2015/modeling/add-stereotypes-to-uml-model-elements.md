@@ -11,12 +11,12 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 092c07e9aa5f2999bcf3a28977151878123f6bfc
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 5bba638a595a01f17e4b7e4f8269a69cb6e466a1
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60043642"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63430492"
 ---
 # <a name="add-stereotypes-to-uml-model-elements"></a>將造型加入 UML 模型項目
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,14 +44,14 @@ ms.locfileid: "60043642"
 1. 以滑鼠右鍵按一下模型項目或關聯性，在圖表上或在**UML 模型總管**，然後按一下**屬性**。  
   
     > [!NOTE]
-    >  若要將相同的造型加入數個項目，您可以選取數個項目，然後以滑鼠右鍵按一下其中一個項目。  
+    > 若要將相同的造型加入數個項目，您可以選取數個項目，然後以滑鼠右鍵按一下其中一個項目。  
   
 2. 按一下 **造型**屬性，並選取您想要套用的造型。  
   
      對大部分種類的項目和關聯性而言，選取的造型會顯示在模型項目的 «＞ 形箭號» 中。  
   
     > [!NOTE]
-    >  如果您看**造型**屬性，或如果您想要的造型未出現，請確認模型項目位於套件或模型，適當的設定檔連結。  
+    > 如果您看**造型**屬性，或如果您想要的造型未出現，請確認模型項目位於套件或模型，適當的設定檔連結。  
   
 3. 有些造型可讓您設定模型項目其他屬性的值。 若要查看這些屬性，依序展開**造型**屬性。  
   

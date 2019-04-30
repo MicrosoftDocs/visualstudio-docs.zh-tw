@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 6f5c285e71179c5dd59fad0357dbf71ee4b32f9d
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60049184"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62813885"
 ---
 # <a name="how-to-execute-a-sharepoint-command"></a>HOW TO：執行 SharePoint 命令
   如果您想要使用 SharePoint 工具擴充功能中的伺服器物件模型，您必須建立自訂*SharePoint 命令*來呼叫 API。 定義命令，並將它部署使用 SharePoint 工具擴充功能之後，您的延伸模組可以執行呼叫 SharePoint 伺服器物件模型的命令。 若要執行此命令，使用其中一個的 ExecuteCommand 方法<xref:Microsoft.VisualStudio.SharePoint.ISharePointConnection>物件。

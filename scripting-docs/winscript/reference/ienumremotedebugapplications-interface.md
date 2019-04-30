@@ -14,11 +14,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 430551002bc7603d86f9c7fb624ec438734bd766
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58150617"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62963246"
 ---
 # <a name="ienumremotedebugapplications-interface"></a>IEnumRemoteDebugApplications 介面
 列舉應用程式物件。 此介面可用來列舉"附加至應用程式 」 的對話方塊中的機器上執行的應用程式。  

@@ -20,11 +20,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 64f44379c98808cb93fbe51498234a34a695c3d6
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60048942"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62564716"
 ---
 # <a name="create-custom-data-visualizers"></a>建立自訂的資料視覺化檢視
  A*視覺化檢視*屬於[!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)]適用於其資料類型的方式顯示變數或物件的偵錯工具使用者介面。 例如，HTML 視覺化檢視會解譯 HTML 字串，並顯示結果，就會出現在瀏覽器視窗中。 而點陣圖視覺化檢視會解譯點陣圖結構，並顯示它所代表的圖形。 有些視覺化檢視可讓您修改，以及檢視資料。

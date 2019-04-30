@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: a3c423361b860c5769d9555409b44973fdc25896
-ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58194573"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62891089"
 ---
 # <a name="create-a-windows-forms-toolbox-control"></a>建立 Windows Forms 工具箱控制項
 

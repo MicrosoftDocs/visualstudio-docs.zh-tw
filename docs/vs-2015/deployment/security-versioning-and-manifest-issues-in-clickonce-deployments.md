@@ -24,12 +24,12 @@ caps.latest.revision: 23
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: e971271d17c88780ec543ffc12ed4c6ebcc48f23
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: a4864d37cb5930075b292ee765bce9b288794019
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60043676"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444985"
 ---
 # <a name="security-versioning-and-manifest-issues-in-clickonce-deployments"></a>ClickOnce 部署中的安全性、版本控制和資訊清單問題
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -88,7 +88,7 @@ ms.locfileid: "60043676"
  如果您想要移動或複製的應用程式，您也必須更新`deploymentProvider`路徑，以便在用戶端實際安裝從新位置。 如果您已安裝應用程式時，就更新此路徑是尤其重要。 針對透過原始 URL，設定永遠啟動的線上應用程式`deploymentProvider`是選擇性的。 如果`deploymentProvider`時，就會生效; 否則用來啟動應用程式的 URL 用以做為基底 URL 下載應用程式檔案。  
   
 > [!NOTE]
->  將資訊清單更新每次您必須再次加以簽署。  
+> 將資訊清單更新每次您必須再次加以簽署。  
   
 ## <a name="see-also"></a>另請參閱  
  [疑難排解 ClickOnce 部署](../deployment/troubleshooting-clickonce-deployments.md)   

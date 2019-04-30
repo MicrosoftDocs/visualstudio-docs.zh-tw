@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c1b52628b016893353c83e998a1e395118807a31
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.openlocfilehash: 1feb0dc2282dff39b3895ed0e63a0fdefeb65872
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56603911"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63406608"
 ---
 # <a name="access-local-and-remote-data-in-clickonce-applications"></a>在 ClickOnce 應用程式中存取本機和遠端資料
 大部分應用程式都會取用或產生資料。 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 提供您許多選項，以進行本機和遠端的資料讀取及寫入。
@@ -40,23 +40,23 @@ ms.locfileid: "56603911"
  資料目錄的用途是要保存應用程式 Managed 資料，也就是應用程式所明確儲存和維護的資料。 應用程式資訊清單中所有不是標記為「資料」的靜態、非相依檔案都是位於應用程式目錄中， 這個目錄是應用程式可執行檔 (*.exe*) 以及組件所在的位置。
 
 > [!NOTE]
->  在解除安裝 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 應用程式時，也會移除其資料目錄。 請絕對不要使用資料目錄來儲存由終端使用者所管理的資料 (例如文件)。
+> 在解除安裝 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 應用程式時，也會移除其資料目錄。 請絕對不要使用資料目錄來儲存由終端使用者所管理的資料 (例如文件)。
 
 #### <a name="mark-data-files-in-a-clickonce-distribution"></a>標示 ClickOnce 散發中的資料檔案
- 若要將現有檔案置於資料目錄中，您必須在 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 應用程式的應用程式資訊清單檔中將此現有檔案標記為資料檔案。 如需詳細資訊，請參閱 [How to: Include a data file in a ClickOnce application](../deployment/how-to-include-a-data-file-in-a-clickonce-application.md) (如何：如何在 ClickOnce 應用程式中包含資料檔案)。
+ 若要將現有檔案置於資料目錄中，您必須在 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 應用程式的應用程式資訊清單檔中將此現有檔案標記為資料檔案。 如需詳細資訊，請參閱[如何：在 ClickOnce 應用程式中納入資料檔案](../deployment/how-to-include-a-data-file-in-a-clickonce-application.md)。
 
 #### <a name="read-from-and-write-to-the-data-directory"></a>讀取和寫入的資料目錄
  若要從資料目錄讀取，需具備 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 應用程式要求讀取權限；同樣地，寫入目錄則需要寫入權限。 如果設定以完全信任狀態執行，您的應用程式就會自動擁有這種權限。 如需有關為您的權限提升或受信任的應用程式部署的應用程式提升權限的詳細資訊，請參閱[保護 ClickOnce 應用程式](../deployment/securing-clickonce-applications.md)。
 
 > [!NOTE]
->  如果您的組織不使用受信任的應用程式部署，並關閉了權限提升，判斷提示權限就會失敗。
+> 如果您的組織不使用受信任的應用程式部署，並關閉了權限提升，判斷提示權限就會失敗。
 
  一旦您的應用程式具有這些權限之後，即可使用方法呼叫 <xref:System.IO>內部的類別以存取資料目錄。 您可以使用定義於 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 之 <xref:System.Deployment.Application.ApplicationDeployment.DataDirectory%2A> 屬性上的 <xref:System.Deployment.Application.ApplicationDeployment.CurrentDeployment%2A> 屬性，來取得 Windows Form <xref:System.Deployment.Application.ApplicationDeployment>應用程式內的資料目錄路徑。 這是最方便的存取資料方法，也是建議的方法。 下列程式碼範例將示範如何針對已作為資料檔納入部署中的 *CSV.txt* 文字檔執行這個動作。
 
  [!code-csharp[ClickOnce.OpenDataFile#1](../deployment/codesnippet/CSharp/accessing-local-and-remote-data-in-clickonce-applications_1.cs)]
  [!code-vb[ClickOnce.OpenDataFile#1](../deployment/codesnippet/VisualBasic/accessing-local-and-remote-data-in-clickonce-applications_1.vb)]
 
- 如需在您的部署中將檔案標示為資料檔案的詳細資訊，請參閱 [如何：在 ClickOnce 應用程式中包含資料檔案](../deployment/how-to-include-a-data-file-in-a-clickonce-application.md)。
+ 如需有關如何標記您的部署與資料檔案中的檔案的詳細資訊，請參閱[How to:在 ClickOnce 應用程式中納入資料檔案](../deployment/how-to-include-a-data-file-in-a-clickonce-application.md)。
 
  您也可以使用 <xref:System.Windows.Forms.Application> 類別上的相關變數 (例如 <xref:System.Windows.Forms.Application.LocalUserAppDataPath%2A>)，來取得資料目錄路徑。
 
@@ -109,4 +109,4 @@ ms.locfileid: "56603911"
 
 ## <a name="see-also"></a>另請參閱
 
-- [How to: Include a data file in a ClickOnce application](../deployment/how-to-include-a-data-file-in-a-clickonce-application.md) (如何：如何在 ClickOnce 應用程式中包含資料檔案)
+- [如何：在 ClickOnce 應用程式中納入資料檔案](../deployment/how-to-include-a-data-file-in-a-clickonce-application.md)

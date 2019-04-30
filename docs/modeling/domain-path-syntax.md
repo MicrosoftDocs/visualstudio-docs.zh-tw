@@ -10,11 +10,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 47c2adc2894cc67b337243c30f4a62bc3642ff39
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55955228"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62834164"
 ---
 # <a name="domain-path-syntax"></a>網域路徑語法
 DSL 定義使用類似 XPath 的語法來尋找模型中的特定項目。

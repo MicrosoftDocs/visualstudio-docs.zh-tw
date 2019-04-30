@@ -16,11 +16,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 9373ed07ec49bd41dad343dc447b4b2026793492
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60088505"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62967001"
 ---
 # <a name="how-to-add-and-remove-feature-dependencies"></a>HOW TO：新增和移除功能相依性
   您的 SharePoint 功能可能取決於其他功能的功能或資料。 在這些情況下，您可以針對您的功能將這些其他功能標示為相依性。 如此一來，可確保 SharePoint 伺服器，會啟動相依的功能，才能啟用您的功能。

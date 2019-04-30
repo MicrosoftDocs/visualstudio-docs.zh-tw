@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 3fc77e24a1a9ca72d6f689247f0de6a9e0bf26cc
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60098931"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62889980"
 ---
 # <a name="debugger-contexts"></a>偵錯工具內容
 在 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]偵錯，偵錯引擎 (DE) 同時會在內部運作數種不同的內容，，如下所示：

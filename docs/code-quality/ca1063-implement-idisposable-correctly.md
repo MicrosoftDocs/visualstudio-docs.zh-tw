@@ -17,11 +17,11 @@ dev_langs:
 ms.workload:
 - multiple
 ms.openlocfilehash: 22ecfcdd6dc20f5837622ec2cc3469f11c7efa8c
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57868310"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62788551"
 ---
 # <a name="ca1063-implement-idisposable-correctly"></a>CA1063:必須正確實作 IDisposable
 

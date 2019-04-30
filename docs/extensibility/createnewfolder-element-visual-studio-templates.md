@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 962a319477e63fdaa7b6f1982cd260ccb8d8bd7b
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56715104"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62927001"
 ---
 # <a name="createnewfolder-element-visual-studio-templates"></a>CreateNewFolder 項目 （Visual Studio 範本）
 決定是否要檢查建立專案的目標目錄是否不存在。 如果目錄不存在，則可為專案建立全新的目錄。 此設定通常會由 `NewProjectRequiresNewFolder(VsTemplate)` 登錄旗標 (`HKEY_LOCAL_MACHINE/SOFTWARE(/Wow6432Node)/Microsoft/VisualStudio/<version number>/Projects/<project GUID>`) 覆寫，所有一般專案類型都會使用此設定來決定是否要在新目錄中建立新專案。
@@ -57,7 +57,7 @@ ms.locfileid: "56715104"
  文字必須是 `true` 或 `false`，表示是否應該在從範本建立專案時建立新的容器資料夾。
 
 ## <a name="remarks"></a>備註
- `CreateNewFolder` 是選擇性項目。 預設值是 `true`。
+ `CreateNewFolder` 是選擇性項目。 預設值為 `true`。
 
  僅在基礎專案系統支援時，`CreateNewFolder` 才會接受在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 項目中指定的值。
 

@@ -9,11 +9,11 @@ manager: viveis
 ms.workload:
 - vssdk
 ms.openlocfilehash: 2bb74703f639848d643f536edf620e30b1836310
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53986007"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62806441"
 ---
 # <a name="open-folder-extensibility"></a>開啟資料夾擴充性
 
@@ -24,7 +24,7 @@ ms.locfileid: "53986007"
 * 移至導覽
 * 在檔案搜尋中尋找
 
-例如，基於.NET 和 c + + 開發的工作負載搭配使用時，使用者也會得到：
+搭配使用時的工作負載這類.NET 與和C++程式開發，使用者也可獲得：
 
 * 豐富的 Intellisense
 * 語言特有的功能
@@ -33,7 +33,7 @@ ms.locfileid: "53986007"
 
 ## <a name="an-api-without-project-systems"></a>沒有專案系統的 API
 
-在過去，Visual Studio 只了解方案和其使用專案系統的專案中的檔案。 專案系統負責載入專案的功能和使用者互動。 它了解有何檔案及其專案包含專案內容]、 [等其他專案的相依性的視覺表示方式，修改基礎專案檔案。 它是透過這些階層和其他元件運作代表使用者的功能。 並非所有程式碼基底都也會出現在 專案和方案的結構。 指令碼語言和 c + + 中撰寫適用於 Linux 的開放原始碼程式碼是很好的範例。 開啟資料夾時，Visual Studio 可讓使用者與他們的原始程式碼互動的新方式。
+在過去，Visual Studio 只了解方案和其使用專案系統的專案中的檔案。 專案系統負責載入專案的功能和使用者互動。 它了解有何檔案及其專案包含專案內容]、 [等其他專案的相依性的視覺表示方式，修改基礎專案檔案。 它是透過這些階層和其他元件運作代表使用者的功能。 並非所有程式碼基底都也會出現在 專案和方案的結構。 指令碼語言和撰寫的開放原始碼程式碼C++適用於 Linux 是很好的範例。 開啟資料夾時，Visual Studio 可讓使用者與他們的原始程式碼互動的新方式。
 
 開啟資料夾 Api 受到`Microsoft.VisualStudio.Workspace.*`命名空間並可供擴充項，可以產生和取用資料或周圍開啟的資料夾中檔案的動作。 延伸模組可以使用這些 Api，來為許多領域，包括提供的功能：
 

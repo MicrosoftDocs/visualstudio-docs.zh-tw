@@ -17,18 +17,18 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 601f20c530ec5e275139d1e70d3df58fa88cd715
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
-ms.translationtype: MT
+ms.openlocfilehash: 95489464128e706e755432bee991c5481f5af8bc
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58147627"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63425820"
 ---
 # <a name="iapplicationdebuggercreateinstanceatdebugger"></a>IApplicationDebugger::CreateInstanceAtDebugger
 允許偵錯工具處理序中的物件來建立程式碼也就是 out-處理序偵錯工具。  
   
 > [!IMPORTANT]
->  不應該實作這個方法，因為它可讓不受信任的程式碼，以建立受信任的偵錯工具執行緒任意物件。  
+> 不應該實作這個方法，因為它可讓不受信任的程式碼，以建立受信任的偵錯工具執行緒任意物件。  
   
 ## <a name="syntax"></a>語法  
   

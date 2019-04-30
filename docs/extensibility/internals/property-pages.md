@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 5df98f898c585d89c9bc493e606947f89b3206d2
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56614944"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62909425"
 ---
 # <a name="property-pages"></a>屬性頁
 使用者可以檢視和變更使用屬性頁的專案組態相關和-獨立屬性。 A**屬性頁**中已啟用 按鈕**屬性**視窗或 方案總管 工具列上的物件可提供所選物件的屬性頁面檢視。 屬性頁所建立的環境，並可供方案和專案。 它們，不過，也可以是可進行的專案項目使用的組態相關的屬性。 當專案中的檔案需要不同的編譯器參數設定，才能正確建置時，可能會使用這項功能。

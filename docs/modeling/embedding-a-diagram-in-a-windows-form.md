@@ -8,11 +8,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 9b2ed12175e986178d43ffe5e3da8b85e2ab22e5
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60044689"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62994586"
 ---
 # <a name="embed-a-diagram-in-a-windows-form"></a>在 Windows Form 中內嵌圖表
 

@@ -16,11 +16,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: b1f0761ba750146ce7f8cc52e6992dae689f7779
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58930517"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62976953"
 ---
 # <a name="debug-stepping-options-legacy"></a>偵錯逐步執行選項 (舊版)
 本主題描述如何偵錯在舊版 [!INCLUDE[wf](../includes/wf-md.md)] 中擁有並行活動的 [!INCLUDE[wfd1](../includes/wfd1-md.md)] 應用程式。 當您需要以 [!INCLUDE[wfd2](../includes/wfd2-md.md)] 或 [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] 為目標時，請使用舊版 [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)]。  

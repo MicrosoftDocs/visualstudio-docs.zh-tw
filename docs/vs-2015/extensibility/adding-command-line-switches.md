@@ -14,11 +14,11 @@ caps.latest.revision: 22
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: e28a3f303849458a407b212d3aad1a8c198f6d25
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58942784"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62562272"
 ---
 # <a name="adding-command-line-switches"></a>新增命令列參數
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

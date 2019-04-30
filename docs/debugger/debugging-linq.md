@@ -20,11 +20,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: e7a58b2c8f14f1dff241b7f3c7d783460a83b7bb
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60087985"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62852367"
 ---
 # <a name="debugging-linq"></a>偵錯 LINQ
 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]會支援對 Language-Integrated Query (LINQ) 程式碼進行偵錯，但有一些限制。 大部分偵錯功能都可以與 LINQ 陳述式一起運作，包括逐步執行、設定中斷點，以及在偵錯工具視窗中檢視結果。 本主題將描述 LINQ 偵錯的主要限制。

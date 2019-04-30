@@ -19,11 +19,11 @@ dev_langs:
 ms.workload:
 - multiple
 ms.openlocfilehash: fb01065fed41a30f26e15d7295fabc03fb3f1f4f
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55942553"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62779074"
 ---
 # <a name="ca1034-nested-types-should-not-be-visible"></a>CA1034:巢狀類型不應該為可見的
 

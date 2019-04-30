@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 16f2dafb6938c40a1d14f805c6a6deff6f25d16d
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 686239ed719a74cc91d9aec1412c81f38ecdd956
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60056111"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63387478"
 ---
 # <a name="composite-patterns-for-visual-studio"></a>適用於 Visual Studio 的複合模式
 複合模式結合不同組態中的互動與設計元素。 在 Visual Studio 中的一致性方面的最重要複合模式包括：
@@ -431,7 +431,7 @@ ms.locfileid: "60056111"
  清單選取項目中的重要概念是，它是資料列為基礎，進行任何選取整個資料列時，表示當做一個單位。 相反地，方格可以允許特定的資料格，而不會影響任何其他方面的資料列選取。 格線也可能包含巢狀資料列 （例如 TreeGrid） 可讓整個分支選取和取消選取此選項的互動的父資料列階層的階層。 清單中的選取項目會顯示在資料的整個資料列以簡單的反白顯示色彩。 焦點會顯示單虛線框線周圍的可編輯的目前資料列或資料格 （如果所有資料格都是唯讀資料列）。
 
 > [!NOTE]
->  **焦點**並**選取**是不同的概念。 *焦點*表示元素為目標的使用者介面接收的輸入未明確導向至另一個物件，而*選取*所指的物件包含一組後續所在的物件中的狀態作業可能需要的地方。
+> **焦點**並**選取**是不同的概念。 *焦點*表示元素為目標的使用者介面接收的輸入未明確導向至另一個物件，而*選取*所指的物件包含一組後續所在的物件中的狀態作業可能需要的地方。
 
  在清單中的選取項目可能是連續、 脫離的或地區。 當多個選取項目所允許的連續和斷續的選取項目應一律受到支援，同時支援區域 （方塊） 選取項目是選擇性的。 藉由拖曳清單內容的空白區起始區域選取項目。
 

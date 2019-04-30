@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0c4f3b6243e7deb7ef6040cb717de04660d6687d
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 9e247034b22b7fef8e83235cc6666d282720a219
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60065619"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63406701"
 ---
 # <a name="how-to-set-a-custom-log-file-location-for-clickonce-deployment-errors"></a>HOW TO：設定 ClickOnce 部署錯誤的自訂記錄檔位置
 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 會維護所有部署的啟動記錄檔。 這些記錄檔記錄有關安裝和初始化任何錯誤[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]部署。 根據預設，[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]建立每個部署啟動的一個記錄檔。 它會這些記錄檔儲存在 Temporary Internet Files 資料夾中。 部署記錄檔顯示給使用者時啟用失敗，且使用者按下**詳細資料**在產生的 [錯誤] 對話方塊。
@@ -29,10 +29,10 @@ ms.locfileid: "60065619"
  您也可以使用登錄編輯程式特定的用戶端變更此行為 (**regedit.exe**) 來設定自訂的記錄檔路徑。 在此情況下，[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]記錄啟用成功與失敗之所有部署在單一檔案。
 
 > [!CAUTION]
->  如果您不當使用登錄編輯程式，您可能會導致嚴重的問題，可能會要求您重新安裝作業系統。 使用登錄編輯程式的風險須自行承擔。
+> 如果您不當使用登錄編輯程式，您可能會導致嚴重的問題，可能會要求您重新安裝作業系統。 使用登錄編輯程式的風險須自行承擔。
 
 > [!NOTE]
->  您必須截斷或刪除記錄檔，偶爾會以防止它變得太大。
+> 您必須截斷或刪除記錄檔，偶爾會以防止它變得太大。
 
  下列程序描述如何設定單一用戶端的自訂記錄檔的位置。
 

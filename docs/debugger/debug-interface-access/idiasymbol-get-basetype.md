@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: e1d38e39fd7687de3ff87737b49972cb389187aa
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56640164"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62837603"
 ---
 # <a name="idiasymbolgetbasetype"></a>IDiaSymbol::get_baseType
 擷取這個符號的基礎類型<em>。</em>
@@ -61,12 +61,12 @@ if (pType->get_type( &pBaseType ) == S_OK)
 
 ## <a name="requirements"></a>需求
 
-|需求|說明|
+|需求|描述|
 |-----------------|-----------------|
 |標頭：|dia2.h|
 |版本:|DIA SDK v7.0|
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
 - [BasicType 列舉](../../debugger/debug-interface-access/basictype.md)
 - [IDiaSymbol::get_type](../../debugger/debug-interface-access/idiasymbol-get-type.md)

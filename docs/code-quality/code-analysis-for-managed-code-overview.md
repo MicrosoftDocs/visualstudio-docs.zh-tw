@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: 38a2bce9e3343c4439eaf033ccfb8d6e58b01baa
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57222593"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62540690"
 ---
 # <a name="overview-of-static-code-analysis-for-managed-code-in-visual-studio"></a>在 Visual Studio 中的 managed 程式碼的靜態程式碼分析的概觀
 

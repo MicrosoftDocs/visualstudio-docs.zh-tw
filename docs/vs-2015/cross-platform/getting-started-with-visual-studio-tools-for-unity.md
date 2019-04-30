@@ -9,12 +9,12 @@ caps.latest.revision: 12
 author: conceptdev
 ms.author: crdun
 manager: jillfra
-ms.openlocfilehash: 184004d24d685c0e7242f9ba5b34f679cc581d26
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: d2959164c9c585ae2661517922464dd63845a836
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60105028"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443047"
 ---
 # <a name="getting-started-with-visual-studio-tools-for-unity"></a>Visual Studio Tools for Unity 使用者入門
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -22,7 +22,7 @@ ms.locfileid: "60105028"
 在本節中，您將學習如何安裝 Visual Studio Tools for Unity 和設定您的 Unity 專案以使用 Visual Studio。  
   
 > [!IMPORTANT]
->  Unity 5.2 加入對 Visual Studio Tools for Unity 2.1 的內建支援，可簡化專案安裝。 若要利用這一點，您的 Windows 上必須有 Unity 5.2.0 版或更高版本，和 Visual Studio Tools for Unity 2.1 版或更高版本。  
+> Unity 5.2 加入對 Visual Studio Tools for Unity 2.1 的內建支援，可簡化專案安裝。 若要利用這一點，您的 Windows 上必須有 Unity 5.2.0 版或更高版本，和 Visual Studio Tools for Unity 2.1 版或更高版本。  
   
 ## <a name="prerequisites"></a>必要條件  
  若要使用 Visual Studio Tools for Unity，您需要：  
@@ -55,7 +55,7 @@ ms.locfileid: "60105028"
      [下載 Visual Studio 2010 Tools for Unity](https://visualstudiogallery.msdn.microsoft.com/6e536faa-ce73-494a-a746-6a14753015f1)  
   
 > [!NOTE]
->  Visual Studio 的 Express 版不支援 Visual Studio Tools for Unity 等擴充功能。 Visual Studio Community 是支援 Visual Studio Tools for Unity 及其他擴充功能的免費 Visual Studio 版本。 對於大多數使用者而言，Visual Studio Community 是比 Express 更好的選擇。  
+> Visual Studio 的 Express 版不支援 Visual Studio Tools for Unity 等擴充功能。 Visual Studio Community 是支援 Visual Studio Tools for Unity 及其他擴充功能的免費 Visual Studio 版本。 對於大多數使用者而言，Visual Studio Community 是比 Express 更好的選擇。  
   
 ## <a name="your-first-unity-project-with-visual-studio-tools-for-unity"></a>您的第一個使用 Visual Studio Tools for Unity 的 Unity 專案  
  在您具備所有必要元件之後，即可開始使用 Visual Studio 處理您的第一個 Unity 專案。 設定您的 Unity 專案會因安裝的 Unity 和 Visual Studio Tools for Unity 的版本而異。 請遵循下面適用於您已安裝的 Unity 和 Visual Studio Tools for Unity 版本的步驟。  

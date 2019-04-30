@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 89d81ee2e860dead62352cc14cef95e21536c29d
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60105316"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62965163"
 ---
 # <a name="walkthrough-display-signature-help"></a>逐步解說：顯示簽章說明
 簽章說明 (也稱為*參數資訊*) 方法的簽章顯示工具提示中，當使用者輸入的參數清單開始字元 （通常是左括號）。 依照所輸入的參數和參數分隔符號 （通常為逗號），工具提示會更新以顯示下一個參數以粗體顯示。 您可以定義簽章說明中的下列方法： 在語言服務的內容中，定義您自己的副檔名和內容類型，並顯示簽章說明只是該類型，或針對現有的內容類型 (例如，"text") 中顯示 簽章說明。 本逐步解說示範如何以顯示簽章說明 「 文字 」 內容類型。

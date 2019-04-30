@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 1ad60503c9f7b15bd4665fb8f9552864debc381d
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56609575"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62909201"
 ---
 # <a name="model-for-source-control-packages"></a>原始檔控制套件的模型
 下列模型代表來源控制項實作的範例。 在模型中，您會看到您必須實作的介面和環境服務，您必須呼叫。 如同所有的服務，您實際上會呼叫您取得透過服務的特定介面的方法。 讓您更輕鬆地查看原始檔控制會論及如何識別類別的名稱。

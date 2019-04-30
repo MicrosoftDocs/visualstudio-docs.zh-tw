@@ -15,11 +15,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 569f1027163d5651d184254b4e6f57a02df2a39a
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56596181"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63007837"
 ---
 # <a name="use-modules-to-include-files-in-the-solution"></a>使用模組來包含方案中的檔案
   可能有您可能的想要將檔案部署到 SharePoint 伺服器，不論他們的檔案類型，例如新的主版頁面。 若要這樣做，您可以使用*模組*(不到與混淆[!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)]的程式碼模組)。 模組是 SharePoint 方案中的檔案的容器。 部署方案時，模組中的檔案會複製到 SharePoint 伺服器上的指定資料夾中。

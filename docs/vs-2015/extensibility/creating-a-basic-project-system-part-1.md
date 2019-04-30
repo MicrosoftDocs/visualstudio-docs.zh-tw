@@ -12,12 +12,12 @@ ms.assetid: 882a10fa-bb1c-4b01-943a-7a3c155286dd
 caps.latest.revision: 48
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 1fcf05377545100dfffe2db2385ea80fef4106eb
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 8304719a4b15b5f23957c99244796999d7b3f55c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60104937"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63439392"
 ---
 # <a name="creating-a-basic-project-system-part-1"></a>建立基本的專案系統，第 1 部分
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,7 +27,7 @@ ms.locfileid: "60104937"
  專案檔案中定義的專案，例如 Visual C# 專案的.csproj 檔案。 您可以建立您自己副檔名自己專案的專案類型。 如需專案類型的詳細資訊，請參閱[專案類型](../extensibility/internals/project-types.md)。  
   
 > [!NOTE]
->  如果您需要使用自訂專案類型擴充 Visual Studio，我們強烈建議運用[Visual Studio 專案系統](https://github.com/Microsoft/VSProjectSystem)具有許多透過建置全新的專案系統的優點：  
+> 如果您需要使用自訂專案類型擴充 Visual Studio，我們強烈建議運用[Visual Studio 專案系統](https://github.com/Microsoft/VSProjectSystem)具有許多透過建置全新的專案系統的優點：  
 > 
 > - 更輕鬆入門訓練。  即使基本的專案系統需要數以萬計的幾行程式碼。  利用 CPS 降低上架成本來按幾下之前您已準備好您的需求加以自訂。  
 >   - 更容易維護。  利用 CPS，您只需要維護您自己的案例。  我們會處理所有的專案系統基礎結構的保養。  
@@ -37,7 +37,7 @@ ms.locfileid: "60104937"
  本逐步解說會示範如何建立具有專案檔案名稱副檔名.myproj 的專案類型。 本逐步解說會藉助現有的 Visual C# 專案系統。  
   
 > [!NOTE]
->  如需完整的語言專案系統的端對端範例，請參閱 IronPython 範例深入探討[VSSDK 範例](../misc/vssdk-samples.md)。  
+> 如需完整的語言專案系統的端對端範例，請參閱 IronPython 範例深入探討[VSSDK 範例](../misc/vssdk-samples.md)。  
   
  本逐步解說將說明如何完成這些工作：  
   
@@ -103,7 +103,7 @@ ms.locfileid: "60104937"
    ```  
   
    > [!IMPORTANT]
-   >  這不是最終形式 Program.cs 程式碼;取代參數將會處理在稍後的步驟。 您可能會看到編譯錯誤，但只要檔案**建置動作**是**內容**，您應該能夠建置並如往常般執行專案。  
+   > 這不是最終形式 Program.cs 程式碼;取代參數將會處理在稍後的步驟。 您可能會看到編譯錯誤，但只要檔案**建置動作**是**內容**，您應該能夠建置並如往常般執行專案。  
   
 7. 儲存檔案。  
   
@@ -112,7 +112,7 @@ ms.locfileid: "60104937"
 9. 在  **Projects\SimpleProject**資料夾新增名為 XML 檔案`SimpleProject.myproj`。  
   
    > [!NOTE]
-   >  此類型的所有專案的副檔名是.myproj。 如果您想要變更它，您必須變更它被提及的逐步解說中的每個地方。  
+   > 此類型的所有專案的副檔名是.myproj。 如果您想要變更它，您必須變更它被提及的逐步解說中的每個地方。  
   
 10. 下列幾行取代現有的內容。  
   
@@ -269,7 +269,7 @@ ms.locfileid: "60104937"
         ```  
   
         > [!IMPORTANT]
-        >  別忘了在路徑結尾的反斜線。  
+        > 別忘了在路徑結尾的反斜線。  
   
     3. 重新載入專案。  
   

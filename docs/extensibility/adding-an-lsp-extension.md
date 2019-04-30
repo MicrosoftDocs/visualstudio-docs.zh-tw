@@ -9,11 +9,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 44b8e31fea497bff928ce19e5cb165c7809883cb
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60104560"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62892340"
 ---
 # <a name="add-a-language-server-protocol-extension"></a>新增語言伺服器通訊協定延伸模組
 
@@ -289,7 +289,7 @@ namespace MockLanguageExtension
 
 請遵循下列步驟來設定的支援新增至您的 LSP 語言服務延伸模組：
 
-1. 將 JSON 檔案 (例如*MockLanguageExtensionSettings.json*) 在您的專案，其中包含設定和其預設值。 例如：
+1. 將 JSON 檔案 (例如*MockLanguageExtensionSettings.json*) 在您的專案，其中包含設定和其預設值。 例如: 
 
     ```json
     {
@@ -339,7 +339,7 @@ namespace MockLanguageExtension
 
 1. 使用者開啟含有您的伺服器擁有的檔案的工作區。
 2. 使用者新增的檔案 *.vs*稱為資料夾*VSWorkspaceSettings.json*。
-3. 使用者新增至一行*VSWorkspaceSettings.json*檔案伺服器提供的設定。 例如：
+3. 使用者新增至一行*VSWorkspaceSettings.json*檔案伺服器提供的設定。 例如: 
 
     ```json
     {

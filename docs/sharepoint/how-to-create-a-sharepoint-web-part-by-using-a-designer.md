@@ -15,11 +15,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 354fe62914a8708ac63acdde7d30060aca8d52fe
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60072015"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62966819"
 ---
 # <a name="how-to-create-a-sharepoint-web-part-by-using-a-designer"></a>HOW TO：使用設計工具建立 SharePoint Web 組件
   您可以建立的 web 組件，藉由新增**視覺化網頁組件**至任何 SharePoint 專案項目。 這會開啟，您可以在此處新增 web 組件控制項和程式碼的 Visual Studio 的 Visual Web Developer 設計工具。 視覺 web 組件的 web 組件一樣運作方式相同。 唯一的差別在於您設計 Visual Web Developer 設計工具中的視覺 web 組件。

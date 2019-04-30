@@ -14,12 +14,12 @@ caps.latest.revision: 28
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 52a2d7c239c9a4f3508f4bdb2077928e44ff802a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 56e39a8ed17cfa99bd8141e2176d42dd7d3d6274
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60107036"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63424844"
 ---
 # <a name="walkthrough-creating-a-wcf-data-service-with-wpf-and-entity-framework"></a>逐步解說：使用 WPF 和 Entity Framework 建立 WCF 資料服務
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -89,12 +89,12 @@ ms.locfileid: "60107036"
 6. 如果資料庫需要密碼，請選擇 [是，在連接字串中包含敏感性資料] 選項按鈕，然後選擇 [下一步] 按鈕。  
   
    > [!NOTE]
-   >  如果對話方塊隨即出現，請選擇 [是]，將檔案儲存到您的專案。  
+   > 如果對話方塊隨即出現，請選擇 [是]，將檔案儲存到您的專案。  
   
 7. 在 [選擇您的版本] 頁面上，選擇 [Entity Framework 5.0] 選項按鈕，然後選擇 [下一步] 按鈕。  
   
    > [!NOTE]
-   >  除了使用最新版的 Entity Framework 6 與 WCF 服務之外，您還需要安裝 WCF Data Services Entity Framework Provider NuGet 套件。 請參閱[使用 WCF Data Services 5.6.0 和 Entity Framework 6 +](http://blogs.msdn.com/b/odatateam/archive/2013/10/02/using-wcf-data-services-5-6-0-with-entity-framework-6.aspx)。  
+   > 除了使用最新版的 Entity Framework 6 與 WCF 服務之外，您還需要安裝 WCF Data Services Entity Framework Provider NuGet 套件。 請參閱[使用 WCF Data Services 5.6.0 和 Entity Framework 6 +](http://blogs.msdn.com/b/odatateam/archive/2013/10/02/using-wcf-data-services-5-6-0-with-entity-framework-6.aspx)。  
   
 8. 展開 [選擇您的資料庫物件] 頁面上的 [資料表] 節點，選取 [客戶] 核取方塊，然後選擇 [完成] 按鈕。  
   
@@ -129,7 +129,7 @@ ms.locfileid: "60107036"
     隨即會顯示 Customers 資料表中資料的 XML 表示。  
   
    > [!NOTE]
-   >  在某些情況中，Internet Explorer 會將資料錯譯為 RSS 摘要 (RSS Feed)。 您必須確定顯示 RSS 摘要的選項已停用。 如需詳細資訊，請參閱 <<c0> [ 疑難排解服務參考](../data-tools/troubleshooting-service-references.md)。  
+   > 在某些情況中，Internet Explorer 會將資料錯譯為 RSS 摘要 (RSS Feed)。 您必須確定顯示 RSS 摘要的選項已停用。 如需詳細資訊，請參閱 <<c0> [ 疑難排解服務參考](../data-tools/troubleshooting-service-references.md)。  
   
 8. 關閉瀏覽器視窗。  
   

@@ -13,12 +13,12 @@ caps.latest.revision: 45
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 2545db069db73fed59c95b3b4adc576facd51bc5
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: b3517322087c940636be07f50a013fe79307f0b7
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60067635"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446713"
 ---
 # <a name="writing-a-t4-text-template"></a>撰寫 T4 文字範本
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -100,7 +100,7 @@ Hello!
  只要程式碼中允許 `Write();` 陳述式的位置，就可以插入文字區塊。  
   
 > [!NOTE]
->  當您內嵌文字區塊，例如迴圈或條件式複合陳述式內時，一律使用大括號 {...} 若要包含文字區塊。  
+> 當您內嵌文字區塊，例如迴圈或條件式複合陳述式內時，一律使用大括號 {...} 若要包含文字區塊。  
   
 ### <a name="expression-control-blocks"></a>運算式控制區塊  
  運算式控制區塊會評估運算式，並將它轉換為字串。 這會插入至輸出檔案。  
@@ -191,7 +191,7 @@ private void WriteSquareLine(int i)
 <#@ assembly name="System.Xml" #>  
 ```  
   
- 您應該使用絕對路徑名稱，或在路徑名稱中使用標準巨集名稱。 例如:   
+ 您應該使用絕對路徑名稱，或在路徑名稱中使用標準巨集名稱。 例如：  
   
 ```  
 <#@ assembly name="$(SolutionDir)library\MyAssembly.dll" #>  

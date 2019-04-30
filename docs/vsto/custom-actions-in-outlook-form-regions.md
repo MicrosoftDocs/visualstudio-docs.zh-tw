@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 0044991b330594d80422f0c6ac1d1d64b1fec237
-ms.sourcegitcommit: b7f25ae08e45fcaa84a84276b588cf6799cc7620
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/07/2019
-ms.locfileid: "57567179"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62951167"
 ---
 # <a name="custom-actions-in-outlook-form-regions"></a>Outlook 表單區域中的自訂動作
   動作會顯示按鈕，讓使用者能夠回應 Microsoft Office Outlook 項目。 例如，若要回應的郵件項目，使用者按一下**回覆**，**全部回覆**，或**向前**動作按鈕。 每個動作建立新的郵件項目，並使用來自原始項目的資訊填入的項目欄位。

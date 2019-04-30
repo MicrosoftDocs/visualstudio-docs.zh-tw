@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: e5e627d758a1249a1e9b5e877255a67cfb255cf9
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60060666"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62799065"
 ---
 # <a name="syntax-coloring-in-custom-editors"></a>自訂編輯器中的語法著色
 Visual Studio 環境 SDK 編輯器，包括核心編輯器中，找出特定的語法項目，並顯示，且指定的色彩，給定文件檢視使用的語言服務。

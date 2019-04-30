@@ -15,11 +15,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: c6b61c62e8a3b69963bd56129fd3e7168271fc07
-ms.sourcegitcommit: a916ce1eec19d49f060146f7dd5b65f3925158dd
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "55231580"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62951222"
 ---
 # <a name="wizarddata-element-visual-studio-templates"></a>WizardData 項目 (Visual Studio 範本)
 
@@ -109,4 +109,4 @@ ms.locfileid: "55231580"
 - [Visual Studio 範本結構描述參考](../extensibility/visual-studio-template-schema-reference.md)
 - [建立專案和項目範本](../ide/creating-project-and-item-templates.md)
 - [WizardExtension 元素 (Visual Studio 範本)](../extensibility/wizardextension-element-visual-studio-templates.md)
-- [如何：使用精靈與專案範本](../extensibility/how-to-use-wizards-with-project-templates.md)
+- [如何：搭配專案範本使用精靈](../extensibility/how-to-use-wizards-with-project-templates.md)

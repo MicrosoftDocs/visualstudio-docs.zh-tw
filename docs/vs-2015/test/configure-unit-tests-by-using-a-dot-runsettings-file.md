@@ -8,12 +8,12 @@ ms.assetid: f7e9e4a2-5d01-4f78-b408-5be3892bd162
 caps.latest.revision: 28
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a86811bb4d87dffcf9abdacae9bca1fdac4298ee
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: e01165f12bcf3b41e4ef1279d12ce99bf8f6598f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60043038"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63442786"
 ---
 # <a name="configure-unit-tests-by-using-a-runsettings-file"></a>使用 .runsettings 檔案設定單元測試
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,11 +23,11 @@ ms.locfileid: "60043038"
  如果您不想要執行任何特殊組態，則不需要 *.runsettings 檔案。 最常見做法是自訂[程式碼涵蓋範圍](../test/customizing-code-coverage-analysis.md)。  
   
 > [!NOTE]
->  **.runsettings 和 .testsettings**  
+> **.runsettings 和 .testsettings**  
 >   
->  有兩種類型的檔案可用來設定測試。 *.runsettings 是用於單元測試。 而 \*.testsettings 是針對[實驗室環境測試](http://msdn.microsoft.com/library/0c15317e-80c6-4317-aed3-82b8e15e3901)、Web 效能和負載測試以及用於自訂一些類型的診斷資料配接器 (例如 IntelliTrace 和事件記錄配接器)。  
+> 有兩種類型的檔案可用來設定測試。 *.runsettings 是用於單元測試。 而 \*.testsettings 是針對[實驗室環境測試](http://msdn.microsoft.com/library/0c15317e-80c6-4317-aed3-82b8e15e3901)、Web 效能和負載測試以及用於自訂一些類型的診斷資料配接器 (例如 IntelliTrace 和事件記錄配接器)。  
 >   
->  在舊版 Visual Studio 到 2010 中，也是使用 *.testsettings 檔案來自訂單元測試。 您還是可以這麼做，但是測試的執行速度比使用 \*.runsettings 檔案中的對等組態還要慢。  
+> 在舊版 Visual Studio 到 2010 中，也是使用 *.testsettings 檔案來自訂單元測試。 您還是可以這麼做，但是測試的執行速度比使用 \*.runsettings 檔案中的對等組態還要慢。  
   
 ## <a name="customizing-tests-with-a-runsettings-file"></a>使用 .runsettings 檔案自訂測試  
   

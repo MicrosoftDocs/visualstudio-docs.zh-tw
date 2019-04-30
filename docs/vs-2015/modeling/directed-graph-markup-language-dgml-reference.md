@@ -9,12 +9,12 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 9330a41d0888532640774891386011f6b8dbfc24
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 0de96057326a9e4b6a64865ef34972d5542aff30
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60106016"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443004"
 ---
 # <a name="directed-graph-markup-language-dgml-reference"></a>有向圖形標記語言 (DGML) 參考
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -24,7 +24,7 @@ ms.locfileid: "60106016"
  請注意，某些版本的 Visual Studio 只支援一部分的 DGML 功能，請參閱[architecture and modeling tools 的版本支援](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)。  
   
 > [!NOTE]
->  當您編輯 .dgml 檔案時，IntelliSense 會協助您識別每個項目的可用屬性和其值。 若要以屬性指定色彩，請使用常見色彩名稱 (例如 "Blue") 或 ARGB 十六進位值 (例如 "#ffa0b1c3")。 DGML 使用一小部分的 Windows Presentation Foundation (WPF) 色彩定義格式。 如需詳細資訊，請參閱 <<c0> [ 色彩類別](http://go.microsoft.com/fwlink/?LinkId=182345)。  
+> 當您編輯 .dgml 檔案時，IntelliSense 會協助您識別每個項目的可用屬性和其值。 若要以屬性指定色彩，請使用常見色彩名稱 (例如 "Blue") 或 ARGB 十六進位值 (例如 "#ffa0b1c3")。 DGML 使用一小部分的 Windows Presentation Foundation (WPF) 色彩定義格式。 如需詳細資訊，請參閱 <<c0> [ 色彩類別](http://go.microsoft.com/fwlink/?LinkId=182345)。  
   
 ## <a name="DGML"></a> DGML 語法  
  下表說明 DGML 中所使用的項目種類：  
@@ -70,7 +70,7 @@ ms.locfileid: "60106016"
    此選擇性項目包含 `<Node/>` 項目的清單，用以定義地圖上的節點。 如需詳細資訊，請參閱 `<Node/>` 項目。  
   
   > [!NOTE]
-  >  當您在 `<Link/>` 項目中參考未定義的節點時，地圖會自動建立 `<Node/>` 項目。  
+  > 當您在 `<Link/>` 項目中參考未定義的節點時，地圖會自動建立 `<Node/>` 項目。  
   
    範例：  
   
@@ -151,7 +151,7 @@ ms.locfileid: "60106016"
    這個項目定義將來源節點連接至目標節點的單一連結。 它會出現在 `<Links></Links>` 項目清單內。  
   
   > [!NOTE]
-  >  如果這個項目參考未定義的節點，地圖文件會自動建立具有指定屬性 (如有指定的話) 的節點。  
+  > 如果這個項目參考未定義的節點，地圖文件會自動建立具有指定屬性 (如有指定的話) 的節點。  
   
    這個項目必須包括下列屬性：  
   

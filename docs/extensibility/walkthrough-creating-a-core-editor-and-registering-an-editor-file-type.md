@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: dd6514ec43cd3180d808c20d5589bf18e3a9b58b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 4aac1298c13cb931eba889e6323faff9b1640f8b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60048201"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63411027"
 ---
 # <a name="walkthrough-create-a-core-editor-and-registering-an-editor-file-type"></a>逐步解說：建立核心編輯器 」 和 「 登錄編輯程式檔案類型
 本逐步解說示範如何建立啟動 VSPackage[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]核心編輯器時的檔案 *.myext*載入檔案的副檔名。
@@ -325,7 +325,7 @@ ms.locfileid: "60048201"
 3. 開啟**VSPackage.resx**檔案中，加入新字串，將名稱設**101**，並將值設定為`IDS_EDITORNAME`。 此步驟可讓您存取您所建立的字串資源識別碼的套件。
 
    > [!NOTE]
-   >  如果**VSPackage.resx**檔案包含另一個字串`name`屬性設為**101**，取代另一個唯一的數字的值，這裡並在下列步驟。
+   > 如果**VSPackage.resx**檔案包含另一個字串`name`屬性設為**101**，取代另一個唯一的數字的值，這裡並在下列步驟。
 
 4. 在 **方案總管**，開啟**MyPackagePackage.cs**檔案。
 

@@ -15,12 +15,12 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 7e7f70808ff91ec32ef52deedc05724f9bac3f7d
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 970f3828319e2e9c016baa66bb1e5fc2032b81ce
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60079134"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63387043"
 ---
 # <a name="how-to-add-update-or-remove-a-wcf-data-service-reference"></a>HOW TO：新增、更新或移除 WCF 資料服務參考
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,7 +40,7 @@ A*服務參考*允許存取一或多個專案[!INCLUDE[ssAstoria](../includes/ss
 2. 在 **地址**方塊，輸入服務的 URL，然後按一下**移**搜尋服務。 如果服務實作使用者名稱和密碼的安全性，您可能會提示輸入使用者名稱和密碼。  
   
     > [!NOTE]
-    >  您只應該參考來自信任來源的服務。 新增不信任來源的參考可能會危及安全性。  
+    > 您只應該參考來自信任來源的服務。 新增不信任來源的參考可能會危及安全性。  
   
      您也可以選取從 URL**地址**清單中，它會儲存先前的 15 個 Url 處找到有效的服務中繼資料。  
   
@@ -91,7 +91,7 @@ A*服務參考*允許存取一或多個專案[!INCLUDE[ssAstoria](../includes/ss
      服務用戶端將會從方案中移除，並描述服務的中繼資料將會從 app.config 檔案中移除。  
   
     > [!NOTE]
-    >  參考的服務參考的任何程式碼，就必須手動移除。  
+    > 參考的服務參考的任何程式碼，就必須手動移除。  
   
 ## <a name="see-also"></a>另請參閱  
  [Visual Studio 中的 Windows Communication Foundation 服務和 WCF 資料服務](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md)

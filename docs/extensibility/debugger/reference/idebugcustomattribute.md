@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 338f07f26bf4d0471fbf178a369a085d5ef76a08
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56679082"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62921727"
 ---
 # <a name="idebugcustomattribute"></a>IDebugCustomAttribute
 此介面代表自訂屬性，它可以提供名稱、 父節點和屬性的類別類型。

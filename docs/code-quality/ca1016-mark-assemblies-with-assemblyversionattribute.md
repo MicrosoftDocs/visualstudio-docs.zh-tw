@@ -19,11 +19,11 @@ dev_langs:
 ms.workload:
 - multiple
 ms.openlocfilehash: a00c8e30e981794e69d4572e0a924438514780c7
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55917775"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62779566"
 ---
 # <a name="ca1016-mark-assemblies-with-assemblyversionattribute"></a>CA1016:組件必須標記 AssemblyVersionAttribute
 

@@ -15,11 +15,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: e07b9e55ddfff54d0668433137079a38c0ddd296
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60079314"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63007418"
 ---
 # <a name="number-expected"></a>必須是數字
 您嘗試叫用**Number.prototype.toString**或是**Number.prototype.valueOf**以外的類型的物件上的方法**數目**。 這種類型的引動過程的物件必須是型別**數字**。  

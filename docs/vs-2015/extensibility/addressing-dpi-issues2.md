@@ -6,12 +6,12 @@ ms.assetid: 359184aa-f5b6-4b6c-99fe-104655b3a494
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 43f13ebc6a3f7a430b3608eba37284a85c3c5eab
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 70b20a463563c54ce0b8ac81b9acab042b0389eb
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60049538"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443957"
 ---
 # <a name="addressing-dpi-issues"></a>處理 DPI 問題
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -116,11 +116,11 @@ VsUI::DpiHelper::LogicalToDeviceUnits(&hBitmap);
 ```  
   
 > [!NOTE]
->  請勿在模組層級或類別層級的靜態變數使用 helper 函式。 程式庫也會使用靜態執行緒同步處理，您可能會遇到的問題順序初始化。 請將這些靜態變數轉換成非靜態成員變數，或將包裝函式，因此它們取得建構在第一次存取上）。  
+> 請勿在模組層級或類別層級的靜態變數使用 helper 函式。 程式庫也會使用靜態執行緒同步處理，您可能會遇到的問題順序初始化。 請將這些靜態變數轉換成非靜態成員變數，或將包裝函式，因此它們取得建構在第一次存取上）。  
   
  若要從 Visual Studio 環境內執行的 managed 程式碼存取 DPI helper 函式：  
   
-- 取用專案必須參考殼層 MPF 的最新版本。 例如：  
+- 取用專案必須參考殼層 MPF 的最新版本。 例如:   
   
     ```csharp  
     <Reference Include="Microsoft.VisualStudio.Shell.14.0.dll" />  
@@ -128,7 +128,7 @@ VsUI::DpiHelper::LogicalToDeviceUnits(&hBitmap);
   
 - 請確定專案具有參考**System.Windows.Forms**， **PresentationCore**，並**PresentationUI**。  
   
-- 在程式碼，使用**Microsoft.VisualStudio.PlatformUI** DpiHelper 類別的命名空間和呼叫靜態函式。 支援的類型 （點、 大小、 矩形和等等），都有提供擴充程式函式會傳回新的擴充物件。 例如：  
+- 在程式碼，使用**Microsoft.VisualStudio.PlatformUI** DpiHelper 類別的命名空間和呼叫靜態函式。 支援的類型 （點、 大小、 矩形和等等），都有提供擴充程式函式會傳回新的擴充物件。 例如:   
   
     ```csharp  
     using Microsoft.VisualStudio.PlatformUI;  
@@ -175,7 +175,7 @@ xmlns:vsui="clr-namespace:Microsoft.VisualStudio.PlatformUI;assembly=Microsoft.V
   
  步驟 1：Prescale 200%、 300%，並使用 NearestNeighbor 等等的映像。  
   
- Prescale 使用任一個套用的繫結，或使用 XAML 標記延伸的轉換子的映像。 例如:   
+ Prescale 使用任一個套用的繫結，或使用 XAML 標記延伸的轉換子的映像。 例如：  
   
 ```xaml  
 <vsui:DpiPrescaleImageSourceConverter x:Key="DpiPrescaleImageSourceConverter" />  
@@ -213,7 +213,7 @@ xmlns:vsui="clr-namespace:Microsoft.VisualStudio.PlatformUI;assembly=Microsoft.V
     <Image Source="{Binding Path=SelectedImage, Converter={StaticResource DpiPrescaleImageSourceConverter}}" Width="16" Height="16" />  
     ```  
   
-- 如果不知道原始映像的大小，LayoutTransform 可用來相應減少為最終的映像物件。 例如：  
+- 如果不知道原始映像的大小，LayoutTransform 可用來相應減少為最終的映像物件。 例如:   
   
     ```xaml  
     <Image Source="{Binding Path=SelectedImage, Converter={StaticResource DpiPrescaleImageSourceConverter}}" >  

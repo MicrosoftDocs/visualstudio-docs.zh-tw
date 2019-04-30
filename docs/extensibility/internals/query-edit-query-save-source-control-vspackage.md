@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: f7e4cba0d15a1ac0728591ec697ef2f21bf19351
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56614398"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62859433"
 ---
 # <a name="query-edit-query-save-source-control-vspackage"></a>查詢編輯查詢儲存 (原始檔控制 VSPackage)
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 編輯器可以廣播查詢編輯查詢儲存 (QEQS) 事件。 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 原始檔控制虛設常式實作 QEQS 服務，使其 QEQS 事件的收件者。 這些事件接著會委派至目前作用中的原始檔控制 VSPackage。 作用中的原始檔控制 VSPackage 實作<xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2>和其方法。 方法的`IVsQueryEditQuerySave2`介面通常只有在第一次，以及在儲存文件之前，編輯的文件之前，立即呼叫。

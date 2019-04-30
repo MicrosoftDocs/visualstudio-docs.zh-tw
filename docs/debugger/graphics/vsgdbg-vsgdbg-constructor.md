@@ -9,11 +9,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: db51226c4d980359fd36ee5196e48d7fa4577a37
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56723197"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62895139"
 ---
 # <a name="vsgdbgvsgdbg-constructor"></a>VsgDbg::VsgDbg (建構函式)
 建構的執行個體`VsgDbg`不論是否正在準備圖形診斷，以主動擷取和記錄的圖形資訊預設會根據指定的布林值參數的應用程式元件的類別。
@@ -34,7 +34,7 @@ VsgDbg(
 
  當建構函式呼叫`bDefaultInit`設定為`false`，在應用程式元件的圖形診斷可以準備好主動擷取與記錄圖形資訊稍後藉由呼叫`Init`函式。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [VsgDbg::~VsgDbg (解構函式)](vsgdbg-tilde-vsgdbg-destructor.md)
 - [Init](init.md)
 - [DONT_SAVE_VSGLOG_TO_TEMP](dont-save-vsglog-to-temp.md)

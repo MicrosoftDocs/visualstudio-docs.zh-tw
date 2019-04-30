@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 1a7ed11e7d3e093afaeaa19fd87ea68b7fecd266
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55952446"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62816561"
 ---
 # <a name="customize-a-rule-set"></a>自訂規則集
 
@@ -70,7 +70,7 @@ ms.locfileid: "55952446"
 
 ### <a name="rule-precedence"></a>規則優先順序
 
-- 如果相同的規則列出的兩個或更多時間在規則中設定不同的嚴重性，編譯器會產生錯誤。 例如: 
+- 如果相同的規則列出的兩個或更多時間在規則中設定不同的嚴重性，編譯器會產生錯誤。 例如：
 
    ```xml
    <RuleSet Name="Rules for ClassLibrary21" Description="Code analysis rules for ClassLibrary21.csproj." ToolsVersion="15.0">

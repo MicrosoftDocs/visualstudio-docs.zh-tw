@@ -9,12 +9,12 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: f4c6b72c521b15c1087b71ddb7241268cf56d64c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 5ddd76bab4d007a9476dde75f46f3f2bc77be865
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60070247"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63442536"
 ---
 # <a name="step-4-lay-out-your-form-with-a-tablelayoutpanel-control"></a>步驟 4：使用 TableLayoutPanel 控制項來配置表單
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,7 +38,7 @@ ms.locfileid: "60070247"
 TableLayoutPanel 控制項  
   
     > [!NOTE]
-    >  新增 TableLayoutPanel 之後，如果表單內出現標題為 [TableLayoutPanel 工作] 的視窗，請選擇表單內的任何位置以關閉它。 稍後在教學課程中，您將深入了解此視窗。  
+    > 新增 TableLayoutPanel 之後，如果表單內出現標題為 [TableLayoutPanel 工作] 的視窗，請選擇表單內的任何位置以關閉它。 稍後在教學課程中，您將深入了解此視窗。  
   
      請注意 [工具箱] 在您選擇索引標籤時會展開以包含您的表單，當您選擇其外部任何地方時就會關閉。 這就是 IDE 的自動隱藏功能。 您可以藉著選擇視窗右上角的圖釘圖示，開啟或關閉任何視窗的此功能，以便切換自動隱藏並鎖定視窗。 圖釘圖示顯示如下。  
   
@@ -62,7 +62,7 @@ TableLayoutPanel 控制項
 7. 將 TableLayoutPanel **Dock** 屬性設定為 [Fill] 之後，面板會填滿整個表單。 如果您再次調整表單的大小，TableLayoutPanel 會停駐不動，並調整大小來填滿表單。  
   
     > [!NOTE]
-    >  TableLayoutPanel 如同 Microsoft Office Word 中的表格：它具有列和欄，且單一儲存格可以跨越多個列和欄。 每一個儲存格中放置一個控制項 (例如按鈕、核取方塊或標籤)。 您的 TableLayoutPanel 將具有一個橫跨整個上方資料列的 `PictureBox` 控制項、在左下方儲存格有一個 `CheckBox` 控制項，以及在右下方儲存格中則有四個 `Button` 控制項。  
+    > TableLayoutPanel 如同 Microsoft Office Word 中的表格：它具有列和欄，且單一儲存格可以跨越多個列和欄。 每一個儲存格中放置一個控制項 (例如按鈕、核取方塊或標籤)。 您的 TableLayoutPanel 將具有一個橫跨整個上方資料列的 `PictureBox` 控制項、在左下方儲存格有一個 `CheckBox` 控制項，以及在右下方儲存格中則有四個 `Button` 控制項。  
   
 8. 目前，TableLayoutPanel 具有兩個大小相等的資料列和兩個大小相等的資料行。 您需要對它們調整大小，使上方資料列和右邊資料行都變得更大。 在 [Windows Form 設計工具] 中，選取 [TableLayoutPanel]。 右上角有一個黑色的小型三角形按鈕，如下所示。  
   

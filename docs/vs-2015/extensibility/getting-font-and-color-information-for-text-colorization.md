@@ -11,12 +11,12 @@ ms.assetid: d1f985bd-743e-40b7-9458-d9af53647c91
 caps.latest.revision: 23
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 96e5bc47a12e838fb11aa82c18981805abc4ae7b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 35372b6d228c8d1c0dbe985379b7753c0f88d311
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58944254"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63440124"
 ---
 # <a name="getting-font-and-color-information-for-text-colorization"></a>取得字型和色彩資訊文字的顏色標示
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,7 +26,7 @@ ms.locfileid: "58944254"
  需要顯示彩色的文字的大部分實作`T:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaults`和相關聯的呈現、 擷取和儲存文字顯示設定的介面。  
   
 > [!NOTE]
->  當自訂核心編輯器 (支援**文字 EditorCategory**)，強烈建議您在語言服務中使用著色技術。 如需詳細資訊，請參閱 <<c0> [ 字型和色彩概觀](../extensibility/font-and-color-overview.md)。  
+> 當自訂核心編輯器 (支援**文字 EditorCategory**)，強烈建議您在語言服務中使用著色技術。 如需詳細資訊，請參閱 <<c0> [ 字型和色彩概觀](../extensibility/font-and-color-overview.md)。  
   
 ## <a name="getting-default-font-and-color-information"></a>取得預設字型和色彩資訊  
  所有**字型和色彩**應指定設定的任何視窗，以顯示文字**顯示項目**之一**分類**。 如需詳細資訊，請參閱 <<c0> [ 字型和色彩、 環境、 選項對話方塊](../ide/reference/fonts-and-colors-environment-options-dialog-box.md)。  

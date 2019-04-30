@@ -12,11 +12,11 @@ ms.topic: conceptual
 ms.date: 8/31/2017
 ms.author: ghogen
 ms.openlocfilehash: 6d6b35218355db686a4154928e5529d213e733d5
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58942639"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62968024"
 ---
 # <a name="accessing-azure-virtual-machines-from-server-explorer"></a>從伺服器總管存取 Azure 虛擬機器
 

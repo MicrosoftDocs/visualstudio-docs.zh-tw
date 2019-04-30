@@ -15,12 +15,12 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ae43b6b1cdc5a3c94e6eb14d0aaa398c320c6274
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: f77a6b9b655cc7dfbf0639a81d7d350b904ce82a
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60113855"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63435219"
 ---
 # <a name="how-to-specify-build-events-c"></a>HOW TO：指定建置事件 (C#)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,17 +44,17 @@ ms.locfileid: "60113855"
 4. 在 [建置前事件命令列] 方塊中，指定建置事件的語法。  
   
     > [!NOTE]
-    >  如果專案是最新狀態，而且未觸發任何建置，則建置前事件不會執行。  
+    > 如果專案是最新狀態，而且未觸發任何建置，則建置前事件不會執行。  
   
 5. 在 [建置後事件命令列] 方塊中，指定建置事件的語法。  
   
     > [!NOTE]
-    >  在執行 .bat 檔案的所有建置命令前方，加入 `call` 陳述式。 例如，`call C:\MyFile.bat` 或 `call C:\MyFile.bat call C:\MyFile2.bat`。  
+    > 在執行 .bat 檔案的所有建置命令前方，加入 `call` 陳述式。 例如，`call C:\MyFile.bat` 或 `call C:\MyFile.bat call C:\MyFile2.bat`。  
   
 6. 在 [執行建置後事件] 方塊中，指定要執行建置後事件的情況。  
   
     > [!NOTE]
-    >  若要新增冗長的語法，或從[建置前事件/建置後事件命令列對話方塊](../ide/reference/pre-build-event-post-build-event-command-line-dialog-box.md)選取任何建置巨集，請按一下省略符號按鈕 (**…**) 來顯示編輯方塊。  
+    > 若要新增冗長的語法，或從[建置前事件/建置後事件命令列對話方塊](../ide/reference/pre-build-event-post-build-event-command-line-dialog-box.md)選取任何建置巨集，請按一下省略符號按鈕 (**…**) 來顯示編輯方塊。  
   
      建置事件語法可以包含在命令提示字元或 .bat 檔案中的任何有效命令。 批次檔的名稱之前應該加上 `call` 以確保所有後續的命令都會執行。  
   

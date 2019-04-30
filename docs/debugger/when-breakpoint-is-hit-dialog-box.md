@@ -18,11 +18,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: d4cc3c2366ca20328f591b0661e8c2b3e5af1e45
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56717698"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62929197"
 ---
 # <a name="when-breakpoint-is-hit-dialog-box"></a>叫用中斷點時對話方塊
 使用此對話方塊中，您可以自訂在觸及中斷點時，就會發生的動作。
@@ -34,6 +34,6 @@ ms.locfileid: "56717698"
 
  **繼續執行**才能啟用此控制項時，才**列印訊息**已選取。 選取此控制項，您可以使用中斷點與追蹤點來追蹤程式執行，而不是重大時叫用位置。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [使用中斷點](../debugger/using-breakpoints.md)
 - [使用 DebuggerDisplay 屬性](../debugger/using-the-debuggerdisplay-attribute.md)

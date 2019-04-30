@@ -18,11 +18,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: bec912596c792a67f65434062bc0d0ed11bd3fb9
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58149022"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62935701"
 ---
 # <a name="iactivescriptclone"></a>IActiveScript::Clone
 複製目前指令碼引擎 （減去任何目前的執行狀態），傳回不已在目前的執行緒中的任何網站載入指令碼引擎。 這個新的指令碼引擎的屬性會與原始的指令碼引擎會在已轉換為初始化的狀態屬性相同。  

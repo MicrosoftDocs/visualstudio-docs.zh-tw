@@ -28,12 +28,12 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 69e18d2baabd7bffcf794def593022b898bcd940
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 91223021ce6f05b91d47e7b7019fb0c5c02243db
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60094524"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63416792"
 ---
 # <a name="how-to-customize-menus-and-toolbars-in-visual-studio"></a>HOW TO：在 Visual Studio 中自訂功能表和工具列
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,7 +41,7 @@ ms.locfileid: "60094524"
 您可以自訂 Visual Studio，不只是可以加入及移除功能表列上的工具列和功能表，還可以加入及移除任何指定工具列或功能表上的命令。
 
 > [!WARNING]
->  在自訂某個工具列或功能表之後，請確認 [自訂] 對話方塊中的核取方塊保持選取。 否則，在關閉並重新開啟 Visual Studio 後，您所做的變更將不會保存下來。
+> 在自訂某個工具列或功能表之後，請確認 [自訂] 對話方塊中的核取方塊保持選取。 否則，在關閉並重新開啟 Visual Studio 後，您所做的變更將不會保存下來。
 
  **本主題內容：**
 
@@ -84,14 +84,14 @@ ms.locfileid: "60094524"
     - 若要移除自訂工具列，請在 [工具列] 清單中選擇該工具列，然後選擇 [刪除] 按鈕。
 
         > [!IMPORTANT]
-        >  您可以刪除您建立的工具列，但無法刪除預設工具列。
+        > 您可以刪除您建立的工具列，但無法刪除預設工具列。
 
     - 若要將工具列移動至不同的停駐位置，請在 [工具列] 清單中選擇該工具列，選擇 [修改選取範圍] 按鈕，然後在出現的清單中選擇一個位置。
 
          您也可以拖曳工具列的左邊緣，將它移動至主要停駐區中的任何位置。
 
         > [!NOTE]
-        >  如需如何改善工具列可用性和協助工具的詳細資訊，請參閱[如何：設定 IDE 協助工具選項](../ide/reference/how-to-set-ide-accessibility-options.md)。
+        > 如需如何改善工具列可用性和協助工具的詳細資訊，請參閱[如何：設定 IDE 協助工具選項](../ide/reference/how-to-set-ide-accessibility-options.md)。
 
 ## <a name="bkmk_customize"></a> 自訂功能表或工具列
 

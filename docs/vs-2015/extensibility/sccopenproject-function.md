@@ -12,12 +12,12 @@ ms.assetid: d609510b-660a-46d7-b93d-2406df20434d
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 0c89c98203306b287a3d4a3eb45ef673146a42b6
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: af2b33d31d813533d833e4a5c15a3b562bc2e94e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58940651"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446797"
 ---
 # <a name="sccopenproject-function"></a>SccOpenProject 函式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -88,14 +88,14 @@ SCCRTN SccOpenProject (
  IDE 可能會傳入使用者名稱 (`lpUser`)，或它可能會直接傳遞指標設為空字串。 如果沒有使用者名稱，則原始檔控制外掛程式應該使用它做為預設值。 不過，如果沒有名稱傳遞，或如果具有指定名稱的登入失敗，外掛程式應該會提示使用者登入，會傳回有效的名稱，在`lpUser`當它收到有效的登入`.`因為外掛程式可能會變更使用者名稱字串IDE 一律會配置大小的緩衝區 (`SCC_USER_LEN`+ 1 或 SCC_USER_SIZE，其中包括 null 結束字元的空間)。  
   
 > [!NOTE]
->  第一個 IDE 可能需要執行的動作可能會呼叫`SccOpenProject`函式或[SccGetProjPath](../extensibility/sccgetprojpath-function.md)。 基於這個理由，這兩者有相同`lpUser`參數。  
+> 第一個 IDE 可能需要執行的動作可能會呼叫`SccOpenProject`函式或[SccGetProjPath](../extensibility/sccgetprojpath-function.md)。 基於這個理由，這兩者有相同`lpUser`參數。  
   
  `lpAuxProjPath` 並`lpProjName`讀取從方案檔，或從呼叫傳回`SccGetProjPath`函式。 這些參數會包含原始檔控制外掛程式將與專案相關聯的字串，並只對外掛程式有意義。 如果沒有這類字串是方案檔中，而且不瀏覽提示使用者 (這會傳回字串，以透過`SccGetProjPath`函式)，IDE 會將空字串傳遞兩個`lpAuxProjPath`和`lpProjName`，並預期這些值來更新根據外掛程式時，會傳回此函式。  
   
  `lpTextOutProc` 是的原始檔控制外掛程式用來顯示命令結果輸出至 IDE 所提供的回呼函式的指標。 此回呼函式中將詳細說明[LPTEXTOUTPROC](../extensibility/lptextoutproc.md)。  
   
 > [!NOTE]
->  如果原始檔控制外掛程式想要利用這一點，它必須已設定`SCC_CAP_TEXTOUT`中的旗標[SccInitialize](../extensibility/sccinitialize-function.md)。 如果未設定該旗標，或 IDE 不支援這項功能，如果`lpTextOutProc`會`NULL`。  
+> 如果原始檔控制外掛程式想要利用這一點，它必須已設定`SCC_CAP_TEXTOUT`中的旗標[SccInitialize](../extensibility/sccinitialize-function.md)。 如果未設定該旗標，或 IDE 不支援這項功能，如果`lpTextOutProc`會`NULL`。  
   
  `dwFlags`參數可控制結果，在開啟的專案目前不存在。 它包含兩種位元旗標`SCC_OP_CREATEIFNEW`和`SCC_OP_SILENTOPEN`。 如果已開啟的專案存在，函式只會開啟專案，並傳回`SCC_OK`。 如果專案不存在，而且如果`SCC_OP_CREATEIFNEW`旗標為開啟、 原始檔控制外掛程式可以在原始檔控制系統中建立專案、 開啟它，並傳回`SCC_OK`。 如果專案不存在，而且`SCC_OP_CREATEIFNEW`旗標為關閉，外掛程式應該然後檢查有無`SCC_OP_SILENTOPEN`旗標。 如果該旗標不在外掛程式可能會提示使用者輸入專案名稱。 如果該旗標會位於，外掛程式應該只傳回`SCC_E_UNKNOWNPROJECT`。  
   
@@ -105,7 +105,7 @@ SCCRTN SccOpenProject (
  如果原始檔控制外掛程式的設定`SCC_CAP_REENTRANT`位元`SccInitialize`，則上述的工作階段順序可能會以平行方式重複許多次。 不同`pvContext`結構追蹤不同的工作階段，其中每一個`pvContext`一次是一個開啟的專案相關聯。 根據`pvContext`參數，此外掛程式可以判斷在任何特定的呼叫中參考的專案。 如果功能位元`SCC_CAP_REENTRANT`未設定，nonreentrant 原始檔控制外掛程式僅限於其能夠使用多個專案。  
   
 > [!NOTE]
->  `SCC_CAP_REENTRANT` 1.1 版的原始檔控制外掛程式 API 中引進了位元。 未設定，或是在 1.0 版中，會忽略，而且所有 1.0 版原始檔控制外掛程式會假設 nonreentrant。  
+> `SCC_CAP_REENTRANT` 1.1 版的原始檔控制外掛程式 API 中引進了位元。 未設定，或是在 1.0 版中，會忽略，而且所有 1.0 版原始檔控制外掛程式會假設 nonreentrant。  
   
 ## <a name="see-also"></a>另請參閱  
  [原始檔控制外掛程式 API 函式](../extensibility/source-control-plug-in-api-functions.md)   

@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: db9bc2738e9a4d7cac0d57b9c613b7070f60baff
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56711550"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62802907"
 ---
 # <a name="sccenumchangedfiles-function"></a>SccEnumChangedFiles 函式
 指定本機檔案的清單，此函式，判斷哪些檔案是從原始程式碼控制資料庫中對應的版本不同。

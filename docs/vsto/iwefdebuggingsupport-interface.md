@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: a71adf5371275fbbdc19cdf09be96ef900ec073d
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56599710"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62583759"
 ---
 # <a name="iwefdebuggingsupport-interface"></a>IWefDebuggingSupport 介面
   由偵錯的環境中，為了方便偵錯的應用程式，適用於 Office 的 Visual Studio 這類實作。 Office 應用程式，例如 Word 或 Excel，從 Visual Studio 中取得這個介面，，然後在偵錯工作階段的特定時間點在介面上呼叫方法。

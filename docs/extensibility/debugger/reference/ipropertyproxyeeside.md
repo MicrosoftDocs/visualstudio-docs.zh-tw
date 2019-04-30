@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: bdd9b804556cd748c921a0c21729daee56e9499b
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56708455"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62913932"
 ---
 # <a name="ipropertyproxyeeside"></a>IPropertyProxyEESide
 這個介面會提供方法來檢視相關聯的物件上的資料。 這個介面是支援的類型視覺化檢視的一部分。

@@ -15,11 +15,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 92a6e7fc6433f120c053303421feb5e8d58bd1c1
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60095512"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63006190"
 ---
 # <a name="the-precision-is-out-of-range"></a>整數位數超過範圍
 您嘗試將無效的引數傳遞至函式**Number.prototype.toPrecision**。 引數**toPrecision**必須介於 1 到 21 （含） 之間。  

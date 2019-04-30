@@ -1,51 +1,52 @@
 ---
 title: IDebugDocument2::GetDocumentClassID | Microsoft Docs
-ms.date: 11/04/2016
+ms.date: 11/15/2016
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-sdk
 ms.topic: reference
 f1_keywords:
 - IDebugDocument2::GetDocumentClassID
 helpviewer_keywords:
 - IDebugDocument2::GetDocumentClassID
 ms.assetid: 111c2b85-ebfa-487f-b896-2ec4a3eac4d1
-author: gregvanl
+caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
-ms.workload:
-- vssdk
 ms.openlocfilehash: 9e969d7c6f17aeaa8642b9988e741318ec1591d6
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56691250"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62921524"
 ---
 # <a name="idebugdocument2getdocumentclassid"></a>IDebugDocument2::GetDocumentClassID
-取得文件的類別識別項。
+[!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-## <a name="syntax"></a>語法
-
-```cpp
-HRESULT GetDocumentClassID( 
-   CLSID* pclsid
-);
-```
-
-```csharp
-int GetDocumentClassID( 
-   out Guid pclsid
-);
-```
-
-#### <a name="parameters"></a>參數
- `pclsid`
-
- [out]傳回的文件的類別 id 的 GUID。
-
-## <a name="return-value"></a>傳回值
- 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。
-
-## <a name="remarks"></a>備註
- 類別 GUID 可用來具現化每一個都代表在文件的個別類別。
-
-## <a name="see-also"></a>另請參閱
-- [IDebugDocument2](../../../extensibility/debugger/reference/idebugdocument2.md)
+取得文件的類別識別項。  
+  
+## <a name="syntax"></a>語法  
+  
+```cpp#  
+HRESULT GetDocumentClassID(   
+   CLSID* pclsid  
+);  
+```  
+  
+```csharp  
+int GetDocumentClassID(   
+   out Guid pclsid  
+);  
+```  
+  
+#### <a name="parameters"></a>參數  
+ `pclsid`  
+ [out]傳回的文件的類別 id 的 GUID。  
+  
+## <a name="return-value"></a>傳回值  
+ 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。  
+  
+## <a name="remarks"></a>備註  
+ 類別 GUID 可用來具現化每一個都代表在文件的個別類別。  
+  
+## <a name="see-also"></a>另請參閱  
+ [IDebugDocument2](../../../extensibility/debugger/reference/idebugdocument2.md)

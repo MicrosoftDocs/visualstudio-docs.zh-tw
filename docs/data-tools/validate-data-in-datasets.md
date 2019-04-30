@@ -21,12 +21,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 1b7ef69d2bb7ac9390c82ffb4e17db27a49637aa
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 1e9fd28a946911a019ee0a1e144e7565bac9e004
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60041587"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63402728"
 ---
 # <a name="validate-data-in-datasets"></a>驗證資料集中的資料
 驗證資料是資料物件中所輸入的值符合的條件約束的資料集結構描述中的確認程序。 驗證程序也會確認這些值會遵循您的應用程式所建立的規則。 它是個不錯的做法，驗證資料，再將更新傳送至基礎資料庫。 這會減少錯誤，以及可能的應用程式與資料庫之間的往返次數。
@@ -54,7 +54,7 @@ ms.locfileid: "60041587"
 根據預設，每個資料行的變更，因此引發四個事件。 第一個是<xref:System.Data.DataTable.ColumnChanging>和<xref:System.Data.DataTable.ColumnChanged>正在變更之特定資料行的事件。 接下來是<xref:System.Data.DataTable.RowChanging>和<xref:System.Data.DataTable.RowChanged>事件。 如果要對資料列進行多項變更，則會引發事件，每個變更。
 
 > [!NOTE]
->  資料列<xref:System.Data.DataRow.BeginEdit%2A>方法會關閉<xref:System.Data.DataTable.RowChanging>和<xref:System.Data.DataTable.RowChanged>每個個別資料行變更之後的事件。 在此情況下，不會引發事件之前<xref:System.Data.DataRow.EndEdit%2A>已呼叫方法，當<xref:System.Data.DataTable.RowChanging>和<xref:System.Data.DataTable.RowChanged>會一次引發事件。 如需詳細資訊，請參閱 <<c0> [ 填入 dataset 時關閉條件約束](../data-tools/turn-off-constraints-while-filling-a-dataset.md)。
+> 資料列<xref:System.Data.DataRow.BeginEdit%2A>方法會關閉<xref:System.Data.DataTable.RowChanging>和<xref:System.Data.DataTable.RowChanged>每個個別資料行變更之後的事件。 在此情況下，不會引發事件之前<xref:System.Data.DataRow.EndEdit%2A>已呼叫方法，當<xref:System.Data.DataTable.RowChanging>和<xref:System.Data.DataTable.RowChanged>會一次引發事件。 如需詳細資訊，請參閱 <<c0> [ 填入 dataset 時關閉條件約束](../data-tools/turn-off-constraints-while-filling-a-dataset.md)。
 
 您選擇的事件取決於您想要驗證細微程度。 如果這是很重要，您在資料行的變更時立即攔截錯誤，請使用組建驗證<xref:System.Data.DataTable.ColumnChanging>事件。 否則，請使用<xref:System.Data.DataTable.RowChanging>事件，可能會導致一次擷取數個錯誤。 此外，如果您的資料結構，讓一個資料行的值會根據另一個資料行的內容進行驗證，您在執行驗證<xref:System.Data.DataTable.RowChanging>事件。
 
@@ -80,7 +80,7 @@ ms.locfileid: "60041587"
 ## <a name="validate-data-during-column-changes"></a>在資料行變更期間驗證資料
 
 > [!NOTE]
->  **Dataset 設計工具**建立部分類別中的驗證邏輯加入至資料集。 設計工具所產生的資料集不會刪除，或變更的部分類別中的任何程式碼。
+> **Dataset 設計工具**建立部分類別中的驗證邏輯加入至資料集。 設計工具所產生的資料集不會刪除，或變更的部分類別中的任何程式碼。
 
 您可以在回應中的資料行的值變更時驗證資料<xref:System.Data.DataTable.ColumnChanging>事件。 這個事件引發時，會傳遞的事件引數 (<xref:System.Data.DataColumnChangeEventArgs.ProposedValue%2A>)，包含目前的資料行建議的值。 根據內容`e.ProposedValue`，您可以：
 
@@ -102,7 +102,7 @@ ms.locfileid: "60041587"
 2. 按兩下您想要驗證之資料表標題列。 此動作會自動建立<xref:System.Data.DataTable.RowChanging>事件處理常式<xref:System.Data.DataTable>資料集的部分類別檔案中。
 
     > [!TIP]
-    >  若要建立的資料列變更的事件處理常式的資料表名稱的左邊按兩下。 如果您按兩下資料表名稱時，您可以編輯它。
+    > 若要建立的資料列變更的事件處理常式的資料表名稱的左邊按兩下。 如果您按兩下資料表名稱時，您可以編輯它。
 
      [!code-vb[VbRaddataValidating#3](../data-tools/codesnippet/VisualBasic/validate-data-in-datasets_1.vb)]
 
@@ -113,7 +113,7 @@ ms.locfileid: "60041587"
 2. 按兩下您想要驗證之資料表標題列。 此動作會建立部分類別檔案<xref:System.Data.DataTable>。
 
     > [!NOTE]
-    >  **Dataset 設計工具**不會自動建立的事件處理常式<xref:System.Data.DataTable.RowChanging>事件。 您必須建立方法以處理<xref:System.Data.DataTable.RowChanging>事件，並執行程式碼，來連結資料表的初始設定方法中的事件。
+    > **Dataset 設計工具**不會自動建立的事件處理常式<xref:System.Data.DataTable.RowChanging>事件。 您必須建立方法以處理<xref:System.Data.DataTable.RowChanging>事件，並執行程式碼，來連結資料表的初始設定方法中的事件。
 
 3. 將下列程式碼複製到的部分類別中：
 
@@ -141,7 +141,7 @@ ms.locfileid: "60041587"
 資料表中的每個資料列具有<xref:System.Data.DataRow.RowState%2A>屬性會追蹤該資料列的目前狀態的使用中的值，<xref:System.Data.DataRowState>列舉型別。 您可以從資料集或資料的資料表傳回變更的資料列，藉由呼叫`GetChanges`方法<xref:System.Data.DataSet>或<xref:System.Data.DataTable>。 您可以在呼叫之前有變更來確認`GetChanges`藉由呼叫<xref:System.Data.DataSet.HasChanges%2A>資料集的方法。
 
 > [!NOTE]
->  您將變更認可到資料集或資料的資料表之後 (藉由呼叫<xref:System.Data.DataSet.AcceptChanges%2A>方法)，則`GetChanges`方法會傳回任何資料。 如果您的應用程式需要處理變更的資料列，您必須處理的變更，然後再呼叫`AcceptChanges`方法。
+> 您將變更認可到資料集或資料的資料表之後 (藉由呼叫<xref:System.Data.DataSet.AcceptChanges%2A>方法)，則`GetChanges`方法會傳回任何資料。 如果您的應用程式需要處理變更的資料列，您必須處理的變更，然後再呼叫`AcceptChanges`方法。
 
 呼叫<xref:System.Data.DataSet.GetChanges%2A>的資料集或資料表的方法會傳回新的資料集或資料表，其中包含已變更的唯一記錄。 如果您想要取得特定的記錄 — 例如，新的記錄或修改的記錄，您可以將傳遞的值<xref:System.Data.DataRowState>列舉型別做為參數`GetChanges`方法。
 
@@ -183,7 +183,7 @@ ms.locfileid: "60041587"
 資料集將資料列變更時，會保留原始 (<xref:System.Data.DataRowVersion.Original>) 和新 (<xref:System.Data.DataRowVersion.Current>) 的資料列版本。 比方說，之前呼叫`AcceptChanges`方法中，您的應用程式可以存取記錄的不同版本 (如中所定義<xref:System.Data.DataRowVersion>列舉型別) 並據以處理變更。
 
 > [!NOTE]
->  不同版本的資料列存在，只有經編輯之後，它之前`AcceptChanges`已呼叫方法。 之後`AcceptChanges`已呼叫方法、 目前和原始的版本都相同。
+> 不同版本的資料列存在，只有經編輯之後，它之前`AcceptChanges`已呼叫方法。 之後`AcceptChanges`已呼叫方法、 目前和原始的版本都相同。
 
 傳遞<xref:System.Data.DataRowVersion>值資料行索引 （或資料行名稱做為字串） 以及傳回該資料行的特定資料列版本的值。 已變更的資料行識別期間<xref:System.Data.DataTable.ColumnChanging>和<xref:System.Data.DataTable.ColumnChanged>事件。 這是要檢查不同的資料列版本進行驗證的好時機。 不過，如果您已暫時停用條件約束，將不會引發這些事件，而且您必須以程式設計方式識別哪些資料行已變更。 您可以逐一查看<xref:System.Data.DataTable.Columns%2A>集合，並比較不同<xref:System.Data.DataRowVersion>值。
 

@@ -28,12 +28,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 139e76911825866375a0f524c53dd23b8967f9ed
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 8641a677ae36ad5a3c1f0f4344fc5c12b8798d7d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60063162"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445149"
 ---
 # <a name="map-methods-on-the-call-stack-while-debugging-in-visual-studio"></a>在 Visual Studio 中進行偵錯時對應呼叫堆疊上的方法
 
@@ -114,7 +114,7 @@ ms.locfileid: "60063162"
  ![顯示堆疊呼叫 Code Map 上的方法中的欄位](../debugger/media/debuggermap_showfields.png)
 
 > [!NOTE]
->  根據預設，將項目加入對應圖也會加入父群組節點，例如類別、命名空間和組件。 雖然這很有用，您可以簡化對應圖關閉這項功能會使用**包含父代**按鈕，在 [對應] 工具列中，或按下**CTRL**當您新增的項目。
+> 根據預設，將項目加入對應圖也會加入父群組節點，例如類別、命名空間和組件。 雖然這很有用，您可以簡化對應圖關閉這項功能會使用**包含父代**按鈕，在 [對應] 工具列中，或按下**CTRL**當您新增的項目。
 
  ![與堆疊呼叫 Code Map 上的方法相關的欄位](../debugger/media/debuggermap_showedfields.png)
 

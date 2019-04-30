@@ -10,11 +10,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 73dcb29211eac35fad670f981aae1ebda75e2436
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56716151"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62433355"
 ---
 # <a name="requiredplatformversion-element-visual-studio-templates"></a>RequiredPlatformVersion 元素 （Visual Studio 範本）
 指定的專案範本正常運作所需的作業系統最低版本。 這個項目用於建立的專案範本[!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)]應用程式。

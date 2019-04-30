@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 06b392dd10c364e746f592a4d0ffd9ac32ca7df9
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56720201"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62870564"
 ---
 # <a name="idebugprogram2causebreak"></a>IDebugProgram2::CauseBreak
 程式停止執行下一個要求的時間執行其執行緒嘗試的其中一個。

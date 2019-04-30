@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 9d803e074970e2827f7e644d29d12e4df920d7c4
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55027512"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62862962"
 ---
 # <a name="how-to-implement-the-find-and-replace-mechanism"></a>HOW TO：實作尋找和取代機制
 

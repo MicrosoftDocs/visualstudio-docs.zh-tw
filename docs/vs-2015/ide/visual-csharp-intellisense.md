@@ -13,12 +13,12 @@ caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ea48e1807291e935081f01e821cffafa794104f5
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 8de573e8d5f46988868f18114fdabb07f62690e0
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60075755"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443170"
 ---
 # <a name="visual-c-intellisense"></a>Visual C# IntelliSense
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -50,7 +50,7 @@ ms.locfileid: "60075755"
  Visual C# 的完成清單包含範圍內的擴充方法。  
   
 > [!NOTE]
->  完成清單不會顯示 <xref:System.String> 物件的所有擴充方法 。  
+> 完成清單不會顯示 <xref:System.String> 物件的所有擴充方法 。  
   
  擴充方法與執行個體方法使用不同的圖示。 如需清單圖示的清單，請參閱[類別檢視和物件瀏覽器圖示](../ide/class-view-and-object-browser-icons.md)。 當同名的執行個體方法與擴充方法都在範圍中時，完成清單會顯示擴充方法圖示。  
   
@@ -148,12 +148,12 @@ ms.locfileid: "60075755"
  ![產生事件處理常式](../ide/media/vxgenerateeventhandler.gif "vxGenerateEventHandler")  
   
 > [!NOTE]
->  如果 IntelliSense 建立的新委派，參考的是現有的事件處理常式，IntelliSense 就會在工具提示中傳達這項資訊。 接著您就可以修改此參考，程式碼編輯器中已選取該文字。 否則，自動事件連結即於此刻完成。  
+> 如果 IntelliSense 建立的新委派，參考的是現有的事件處理常式，IntelliSense 就會在工具提示中傳達這項資訊。 接著您就可以修改此參考，程式碼編輯器中已選取該文字。 否則，自動事件連結即於此刻完成。  
   
  如果按下 TAB，IntelliSense 就會虛設出有正確簽章的方法，並將游標放在事件處理常式的主體中。  
   
 > [!NOTE]
->  使用 [檢視] 功能表上的 [向後巡覽] 命令 (CTRL+-)，返回事件連結陳述式。  
+> 使用 [檢視] 功能表上的 [向後巡覽] 命令 (CTRL+-)，返回事件連結陳述式。  
   
  下列工作示範 IntelliSense 如何自動連結名為 `button1_Click` 的事件處理常式和名為 `button1.Click` 的事件欄位。  
   

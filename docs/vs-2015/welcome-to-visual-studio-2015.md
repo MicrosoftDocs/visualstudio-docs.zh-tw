@@ -13,12 +13,12 @@ ms.assetid: ba237712-f8c4-4d13-854b-ab4a16afa309
 caps.latest.revision: 128
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 05fd28e6b47d74c28edc491458b73b487d282a45
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: a2418df5a831416d74328e4ca926cdf8c3a721e2
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60067725"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63383436"
 ---
 # <a name="welcome-to-visual-studio-2015"></a>歡迎使用 Visual Studio 2015
 [!INCLUDE[vs2017banner](includes/vs2017banner.md)]
@@ -26,9 +26,9 @@ ms.locfileid: "60067725"
 歡迎使用 Visual Studio！ 我們將為您提供建立強大的裝置應用程式 (桌面應用程式)、Web 應用程式和雲端應用程式所需的一切。 您可以在一個 IDE 中，撰寫用於 iOS、 Android 和 Windows 的程式碼。 不僅可以取得強大的 IntelliSense，還可以輕鬆巡覽程式碼、快速建置和快速部署。 Visual Studio 可提升您的產能，不論您是單獨工作或以大型小組成員的身分工作，都很輕鬆。
 
 > [!NOTE]
->  按一下這裡可取得 [Visual Studio 2015 update 3](https://www.visualstudio.com/news/releasenotes/vs2015-update3-vs)版本資訊。
+> 按一下這裡可取得 [Visual Studio 2015 update 3](https://www.visualstudio.com/news/releasenotes/vs2015-update3-vs)版本資訊。
 >
->  按一下這裡以取得 [Visual Studio 2017](https://www.visualstudio.com/news/releasenotes/vs2017-relnotes) 版本資訊。
+> 按一下這裡以取得 [Visual Studio 2017](https://www.visualstudio.com/news/releasenotes/vs2017-relnotes) 版本資訊。
 
  下載免費的 [Visual Studio Community](http://go.microsoft.com/fwlink/?LinkId=517106) ，馬上開始撰寫程式碼。 如果您要進行跨平台開發，請務必安裝選擇性套件 (您可以從 [其他版本的 Visual Studio](http://www.visualstudio.com/products/compare-visual-studio-products-vs)獲取更多功能)。
 

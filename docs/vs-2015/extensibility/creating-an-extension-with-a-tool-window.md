@@ -9,11 +9,11 @@ caps.latest.revision: 6
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 94c8335b8d723ef20c04cfffe6b3788d71ecaa4f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60118119"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62431845"
 ---
 # <a name="creating-an-extension-with-a-tool-window"></a>使用工具視窗建立延伸模組
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

@@ -10,12 +10,12 @@ ms.assetid: 69e8f78e-bcf1-46cb-8866-7de37d134997
 caps.latest.revision: 28
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 6f2ed846e8644f5f6e391d9c850016721186021e
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: 0f8ac7b6cea0896c597dc46b8b5edd7072069840
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59663962"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63386026"
 ---
 # <a name="modifying-the-isolated-shell-by-using-the-pkgdef-file"></a>藉由修改 Isolated 的 Shell。Pkgdef 檔案
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,7 +23,7 @@ ms.locfileid: "59663962"
 .Pkgdef 檔支援可供您自訂 isolated 的 shell 應用程式的設定。 它會指定應用程式的電腦上安裝並啟動應用程式時，Visual Studio shell 所參考之時所建立的值。 依據適用的登錄機碼的檔案中組織的設定。  
 
 > [!WARNING]
->  請注意 Visual Studio 啟動時，則不會掃描 VSPackage 的.vsixmanifest 檔案中未宣告的.pkgdef 檔。  
+> 請注意 Visual Studio 啟動時，則不會掃描 VSPackage 的.vsixmanifest 檔案中未宣告的.pkgdef 檔。  
 
  .Pkgdef 檔包含每個所識別金鑰，可能是區段`[$RootKey$]`或是`[$RootKey$\`*子機碼*`]`; 其中 $RootKey$ 為應用程式的根目錄機碼。  
 
@@ -53,7 +53,7 @@ ms.locfileid: "59663962"
  下列章節說明影響行為的 Visual Studio shell 隔離模式中的特定登錄值。 您也可以定義應用程式的其他登錄值，這個檔案中。  
 
 > [!NOTE]
->  .Pkgdef 檔中未提供設定值，如果沒有對應的項目會在登錄中。  
+> .Pkgdef 檔中未提供設定值，如果沒有對應的項目會在登錄中。  
 
 ## <a name="settings"></a>設定  
  下表描述 [$RootKey$] 下定義的值。  

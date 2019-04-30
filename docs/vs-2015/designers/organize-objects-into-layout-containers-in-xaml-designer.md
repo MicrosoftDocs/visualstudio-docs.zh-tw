@@ -9,12 +9,12 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 3ca6fc205585d832f4dadc5f4ce4709a71c7b6fe
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 5c2aef08695d2cea04d23a343d318680bc53f44c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60059197"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432592"
 ---
 # <a name="organize-objects-into-layout-containers-in-xaml-designer"></a>在 XAML 設計工具中將物件組織在版面配置容器中
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,7 +28,7 @@ ms.locfileid: "60059197"
  本頁面描述版面配置面板和控制項，然後會引導您觀賞短片，協助您開始使用。  
   
 > [!NOTE]
->  某些影片可能會參考 Blend 或 Expression Blend，這些工具使用與 Visual Studio 和 Blend for Visual Studio 相同的 XAML 設計工具。  
+> 某些影片可能會參考 Blend 或 Expression Blend，這些工具使用與 Visual Studio 和 Blend for Visual Studio 相同的 XAML 設計工具。  
   
 ## <a name="layout-panels"></a>版面配置面板  
  選擇這些版面配置面板的其中一個，開始您的頁面。 您可以有一個以上的頁面。 例如，您著手開始的是 [格線] 版面配置面板，然後將 **StackPanel** 新增至 [格線] 中的區域，以便可以在該項目中垂直排列控制項。  

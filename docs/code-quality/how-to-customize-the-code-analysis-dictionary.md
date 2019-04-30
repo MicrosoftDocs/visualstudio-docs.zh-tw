@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: cbc2d0f0863ae4b9083c0fb56873eb18b665c7c1
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60081641"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62816340"
 ---
 # <a name="how-to-customize-the-code-analysis-dictionary"></a>HOW TO：自訂程式碼分析字典
 程式碼分析會使用內建的字典，來檢查拼字、 文法的情況下和其他的.NET Framework 方針的命名慣例中的錯誤程式碼中的識別項。 您可以建立自訂字典的 Xml 檔案，來新增、 移除或修改詞彙、 縮寫，以及內建的字典的縮略字。

@@ -9,11 +9,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 0a3520b2bf1d6111e945f037502a589feed0d80a
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/18/2019
-ms.locfileid: "56335320"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62909772"
 ---
 # <a name="delayed-document-loading"></a>延遲載入文件
 
@@ -43,7 +43,7 @@ ms.locfileid: "56335320"
 
 - 如果您的延伸模組會使用 managed 程式碼，您不應該呼叫<xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable.GetDocumentInfo%2A>除非您確定文件不是處於暫止的初始化狀態，或您想要完全初始化的文件。 原因是因為此方法一律會傳回文件資料物件，如有必要，請建立它。 相反地，您應該在呼叫其中一個方法`IVsRunningDocumentTable4`介面。
 
-- 如果您的延伸模組會使用 c + +，您可以傳遞`null`您不想要的參數。
+- 如果您的延伸模組會使用C++，您可以傳遞`null`您不想要的參數。
 
 - 您可以避免不必要的文件載入之前您要求相關的屬性之前您尋求其他屬性，請呼叫下列方法之一：
 

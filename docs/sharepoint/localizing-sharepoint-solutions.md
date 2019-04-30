@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 71d22bb6210bb515941ca00ebb8b8655a6c089e0
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 90da60cb904ba6e3db2be3805256fcf4eb9122ee
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56639917"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444344"
 ---
 # <a name="localize-sharepoint-solutions"></a>當地語系化 SharePoint 方案
 
@@ -31,7 +31,7 @@ ms.locfileid: "56639917"
  若要當地語系化方案，您可以從程式碼中移除硬式編碼的字串，並它們抽出資源檔。 資源檔[!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)]-架構檔案 *.resx*延伸模組。 資源檔包含在解決方案中使用的字串翻譯的版本。 如需詳細資訊，請參閱 <<c0> [ 應用程式中的資源](http://go.microsoft.com/fwlink/?LinkID=155844)。
 
 > [!NOTE]
->  加入 SharePoint 方案資源檔中只有字串資源。 雖然資源編輯器可讓您將非字串資源，但是非字串資源不會部署到 SharePoint。
+> 加入 SharePoint 方案資源檔中只有字串資源。 雖然資源編輯器可讓您將非字串資源，但是非字串資源不會部署到 SharePoint。
 
 ## <a name="resource-files"></a>資源檔
  有三種類型的資源檔： 預設、 語言中性和特定語言。
@@ -76,7 +76,7 @@ $Resources:String ID
  設定**部署類型**屬性的每個資源檔**AppGlobalResource**。 這會導致要部署至 App_GlobalResources 資料夾，可用於所有的 ASPX 頁面和控制項，在方案中的資源檔。 App_GlobalResources 資料夾位於 C:\inetpub\wwwroot\wss\VirtualDirectories\\< 連接埠號碼\>\App_GlobalResources。
 
 > [!NOTE]
->  如果您使用非全域資源檔，請將它們移到專案項目資料夾，若要啟用的部署類型屬性和其他 SharePoint 特定屬性。
+> 如果您使用非全域資源檔，請將它們移到專案項目資料夾，若要啟用的部署類型屬性和其他 SharePoint 特定屬性。
 
  ASPX 標記資源檔也可用來當地語系化程式碼。 如果您使用的資源来當地語系化 ASPX 標記除了程式碼，將 [建置動作] 屬性設定每個檔案做為內嵌資源，以將資源編譯成附屬組件。 不過，如果您只當地語系化標記會使用資源檔，您可以防止將檔案編譯成主應用程式組件的內容 （選擇性） 變更 建置動作。
 

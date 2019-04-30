@@ -9,12 +9,12 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c1f2f4dc5eb4c285b99a72a58836e5f81b3ef30f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 9ee1e1bc8762ae21ea69db5215d4dc472858d720
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60088453"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63442457"
 ---
 # <a name="modify-the-style-of-objects-in-blend"></a>在 Blend 中修改物件的樣式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -86,11 +86,11 @@ ms.locfileid: "60088453"
   ![](../designers/media/4818ee6a-ce60-4b79-91c8-3b1871829eea.png "4818ee6a-ce60-4b79-91c8-3b1871829eea")  
   
 > [!NOTE]
->  您無法為每一個類型的控制項建立樣式或範本。 如果控制項不支援此項，階層連結按鈕就不會出現在畫板上。  
+> 您無法為每一個類型的控制項建立樣式或範本。 如果控制項不支援此項，階層連結按鈕就不會出現在畫板上。  
 >   
->  若要回到主文件的編輯範圍，請按一下 [將範圍傳回] ![](../designers/media/55844eb3-ed98-4f20-aa66-a6f5b23eeb2b.png "55844eb3-ed98-4f20-aa66-a6f5b23eeb2b")。  
+> 若要回到主文件的編輯範圍，請按一下 [將範圍傳回] ![](../designers/media/55844eb3-ed98-4f20-aa66-a6f5b23eeb2b.png "55844eb3-ed98-4f20-aa66-a6f5b23eeb2b")。  
 >   
->  ![](../designers/media/4a5612e1-7a28-4587-b870-0fe7112ec2ad.png "4a5612e1-7a28-4587-b870-0fe7112ec2ad")  
+> ![](../designers/media/4a5612e1-7a28-4587-b870-0fe7112ec2ad.png "4a5612e1-7a28-4587-b870-0fe7112ec2ad")  
   
  **觀看短片：**![設定已安裝的功能](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [建立樣式](https://www.youtube.com/watch?v=W8YdXDPeKdc)。  
   

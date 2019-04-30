@@ -17,11 +17,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 85dbe4917d37c8d39dd8348c32d88933032ede1b
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56603857"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62900531"
 ---
 # <a name="clickonce-cache-overview"></a>ClickOnce 快取概觀
 所有[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]應用程式，無論它們是在本機安裝或線上，儲存在用戶端電腦[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]應用程式*快取*。 A[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]快取是一系列的隱藏目前使用者的 Documents and Settings 資料夾的本機設定目錄底下的目錄。 此快取保留應用程式的所有檔案，包括組件、 組態檔、 應用程式和使用者設定和資料目錄。 快取也會負責將應用程式的資料目錄移轉到最新版本的。 如需有關資料移轉的詳細資訊，請參閱[存取本機和 ClickOnce 應用程式中的遠端資料](../deployment/accessing-local-and-remote-data-in-clickonce-applications.md)。

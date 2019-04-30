@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 96b24dac472525a711073eccf41355ddb6f10611
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56616413"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62554231"
 ---
 # <a name="idiaaddressmap"></a>IDiaAddressMap
 可讓您控制 DIA SDK 如何計算偵錯物件的虛擬和相對虛擬位址。
@@ -31,7 +31,7 @@ IDiaAddressMap : IUnknown
 ## <a name="methods-in-vtable-order"></a>依照 Vtable 順序的方法
  下表顯示的方法`IDiaAddressMap`。
 
-|方法|說明|
+|方法|描述|
 |------------|-----------------|
 |[IDiaAddressMap::get_addressMapEnabled](../../debugger/debug-interface-access/idiaaddressmap-get-addressmapenabled.md)|指出是否已為特定的工作階段建立對應的位址。|
 |[IDiaAddressMap::put_addressMapEnabled](../../debugger/debug-interface-access/idiaaddressmap-put-addressmapenabled.md)|指定對應位址是否應該用來將符號位址轉譯。|
@@ -49,13 +49,13 @@ IDiaAddressMap : IUnknown
  這個介面是可從 DIA 工作階段物件。 用戶端會呼叫`QueryInterface`DIA 工作階段物件介面上，通常方法[IDiaSession](../../debugger/debug-interface-access/idiasession.md)，以擷取`IDiaAddressMap`介面。
 
 ## <a name="requirements"></a>需求
- 標頭： Dia2.h
+ 標頭：dia2.h
 
  程式庫： diaguids.lib
 
  DLL: msdia80.dll
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [介面 (偵錯介面存取 SDK)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)
 - [IDiaDataSource::loadDataForExe](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md)
 - [IDiaSession](../../debugger/debug-interface-access/idiasession.md)

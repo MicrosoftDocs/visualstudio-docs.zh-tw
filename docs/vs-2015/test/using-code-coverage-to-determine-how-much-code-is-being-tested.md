@@ -10,12 +10,12 @@ ms.assetid: 800fc739-acd2-4242-84cb-1d83b4d82cf9
 caps.latest.revision: 38
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 9af0a3dc7c08a415f320ce3560cdfc23c462d4c7
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: f539fd0a20bf852b04b5a41aff829cdcf0e52cf3
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60087517"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445920"
 ---
 # <a name="using-code-coverage-to-determine-how-much-code-is-being-tested"></a>使用程式碼涵蓋範圍來決定所測試的程式碼數量
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,7 +43,7 @@ ms.locfileid: "60087517"
 3. 如果結果顯示涵蓋範圍較小，請檢查不會執行的部分程式碼，並撰寫更多測試來涵蓋這些項目。 開發小組通常以 80% 的程式碼涵蓋範圍為目標。 某些情況可以接受較小的涵蓋範圍。 例如，從標準範本產生之程式碼涵蓋範圍較小是可接受的。  
   
 > [!TIP]
->  若要取得準確的結果：  
+> 若要取得準確的結果：  
 > 
 > - 請務必關閉編譯器最佳化。  
 > 
@@ -240,7 +240,7 @@ ExcludeSourceFromCodeCoverage(Exclusion4, L"*\\unittest1.cpp");
 - 您必須設定編譯器選項或使用 `#pragma managed(off)` 將排除編譯為 Unmanaged (機器碼)。  
   
 > [!NOTE]
->  若要排除 C++/CLI 程式碼中的函式，請將 `[System::Diagnostics::CodeAnalysis::ExcludeFromCodeCoverage]` 屬性套用至該函式。 這和 C# 的做法相同。  
+> 若要排除 C++/CLI 程式碼中的函式，請將 `[System::Diagnostics::CodeAnalysis::ExcludeFromCodeCoverage]` 屬性套用至該函式。 這和 C# 的做法相同。  
   
 ### <a name="including-or-excluding-additional-elements"></a>包含或排除其他項目  
  程式碼涵蓋範圍分析只能對載入的組件或與 .dll 或 .exe 檔案位於同一個目錄中的 .pdb 檔案執行。 因此，在某些情況下，您可以藉由取得包含適當 .pdb 檔案的複本來擴充所包含的組件集。  

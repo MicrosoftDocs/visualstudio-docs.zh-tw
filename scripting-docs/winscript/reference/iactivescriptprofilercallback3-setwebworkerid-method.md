@@ -12,11 +12,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 0798a23b4c8ad4e5859bec73ebfed47a56b322d6
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58151293"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62993099"
 ---
 # <a name="iactivescriptprofilercallback3setwebworkerid-method"></a>IActiveScriptProfilerCallback3::SetWebWorkerId 方法
 通知分析工具有關要用於此程式碼剖析工作階段的背景工作角色識別碼。 如果函式不在頁面的內容中執行，則不被呼叫此方法。 值`webWorkerId`就會遞增 1，每個背景工作角色，從 1 開始。 穩定超過工作階段，並只會對應至背景工作角色建立所在的順序不適合的識別碼值。  

@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: fbf9c2f914bbe0bed741a407faf1d0055a4b43a7
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60043716"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62806438"
 ---
 # <a name="mssccprjscc-file"></a>MSSCCPRJ。SCC 檔案
 當您將 Visual Studio 方案或專案使用 IDE 的原始檔控制之下時，IDE 就會收到兩個關鍵資訊。 資訊是從原始檔控制外掛程式的字串形式提供。 "AuxPath 」 和 「 專案名稱 」，這些字串是不透明的 ide，但在版本控制中找出方案或專案正在使用的外掛程式。 IDE 通常呼叫以取得這些字串在第一次[SccGetProjPath](../extensibility/sccgetprojpath-function.md)，它然後未來呼叫的方案或專案檔中儲存[SccOpenProject](../extensibility/sccopenproject-function.md)。 當內嵌的方案和專案檔中，"AuxPath 」 和 「 專案名稱 」 字串不會自動更新時使用者分支、 分支，或複製會在版本控制中的方案和專案檔。 若要確定方案和專案檔會指向其版本控制中的正確位置，使用者必須手動更新的字串。 字串會是不透明，因為它可能不清楚如何已更新。

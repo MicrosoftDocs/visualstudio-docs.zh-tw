@@ -14,12 +14,12 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: fd0bf5c0e95b4c859dc2d6470ab6f922041b20ba
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 7c0dc7b406f7e04aaa9848e2f5dcb96f17430f6d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60049876"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436947"
 ---
 # <a name="create-a-sql-database-by-using-a-script"></a>使用指令碼中建立 SQL database
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -234,7 +234,7 @@ ms.locfileid: "60049876"
 2. 底下**已安裝**，展開**範本**節點，展開**其他語言**節點中，選取**SQL Server**類別目錄，然後選取  **SQL Server 資料庫專案**範本。  
   
     > [!NOTE]
-    >  **其他語言**節點不會出現在 Visual Studio 的所有安裝。  
+    > **其他語言**節點不會出現在 Visual Studio 的所有安裝。  
   
 3. 在 **名稱**方塊中，輸入`Small Database`。  
   

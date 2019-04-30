@@ -10,12 +10,12 @@ ms.assetid: 91b167a3-280a-498b-8fc2-f67859a2c64e
 caps.latest.revision: 29
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: bfadcb962e63a38f4f8190c2dd9c02f4e2ac4643
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 9541180ba8740cdc12a038f81c4ef74d47fcc1aa
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60107992"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446229"
 ---
 # <a name="run-unit-tests-with-test-explorer"></a>使用測試總管執行單元測試
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -77,7 +77,7 @@ ms.locfileid: "60107992"
 ### <a name="BKMK_Run_tests_after_every_build"></a> 每次建置後執行測試  
   
 > [!WARNING]
->  只有 Visual Studio Enterprise 支援在每次建置後執行單元測試。  
+> 只有 Visual Studio Enterprise 支援在每次建置後執行單元測試。  
   
 |||  
 |-|-|  
@@ -201,7 +201,7 @@ TEST_METHOD(Method1)
    ![在測試總管中篩選測試](../test/media/ute-filtertestlist.png "UTE_FilterTestList")  
   
 > [!NOTE]
->  搜尋是區分大小寫且比對指定字串與準則值的任何部分。  
+> 搜尋是區分大小寫且比對指定字串與準則值的任何部分。  
   
 |限定詞|描述|  
 |---------------|-----------------|  
@@ -253,7 +253,7 @@ FullName:"MyClass" - FullName:"PerfTest"
 1. 在 Visual Studio 編輯器中，於您要偵錯的一個或多個測試方法中設定中斷點。  
   
    > [!NOTE]
-   >  由於測試方法可以依照任何順序執行，請在您要偵錯的所有測試方法中設定中斷點。  
+   > 由於測試方法可以依照任何順序執行，請在您要偵錯的所有測試方法中設定中斷點。  
   
 2. 在測試總管中，選取測試方法，然後選擇內容功能表上的 [偵測選取的測試]  。  
   
@@ -267,7 +267,7 @@ FullName:"MyClass" - FullName:"PerfTest"
 ### <a name="BKMK_Analyzeunit_test_code_coverage"></a> 分析單元測試程式碼涵蓋範圍  
   
 > [!NOTE]
->  單元測試之程式碼涵蓋範圍僅適用於 Visual Studio Enterprise。  
+> 單元測試之程式碼涵蓋範圍僅適用於 Visual Studio Enterprise。  
   
  您可以使用 Visual Studio 程式碼涵蓋範圍工具來判斷您的單元測試實際測試的產品程式碼數量。 您可以在方案中的所選測試或所有測試上執行程式碼涵蓋範圍。  
   

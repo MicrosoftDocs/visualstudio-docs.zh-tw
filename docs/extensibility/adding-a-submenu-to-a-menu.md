@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 7ae0fa20b110f67ac23b7b6013444021dffc468c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60047004"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62843861"
 ---
 # <a name="add-a-submenu-to-a-menu"></a>將子功能表加入至功能表
 本逐步解說是根據在示範[Visual Studio 功能表列中加入功能表](../extensibility/adding-a-menu-to-the-visual-studio-menu-bar.md)示範如何以新增至子功能表**TestMenu**功能表。

@@ -6,12 +6,12 @@ ms.assetid: fd39882e-06d1-4b39-80d2-4d07b6e4f8f5
 caps.latest.revision: 15
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: 8dd993f918d9f2d884b9e2d082a71c9c4eebc9cf
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 5373f1fa9d6bb596e099f3b7396ef13c91ee5a51
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60097202"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63387647"
 ---
 # <a name="verify-your-xamarin-environment"></a>驗證您的 Xamarin 環境
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ ms.locfileid: "60097202"
  ![從 [空白應用程式 &#40;原生可攜式&#41;] 範本建立新專案的結果](../cross-platform/media/crossplat-xamarin-verify-1.png "CrossPlat Xamarin 驗證 1")  
   
 > [!NOTE]
->  若無範本，請參閱[沒有 Xamarin 專案範本嗎？試試這個](#missing) (位於本頁面底端)。  
+> 若無範本，請參閱[沒有 Xamarin 專案範本嗎？試試這個](#missing) (位於本頁面底端)。  
   
 ## <a name="android"></a>Android  
   
@@ -59,7 +59,7 @@ ms.locfileid: "60097202"
         - Windows 7 及舊版：在下拉式清單中改選取 [Xamarin Player for Android]，然後按 F5 鍵執行。 如需 Xamarin Player、其裝置管理員和疑難排解提示的詳細資訊，請閱讀 [Xamarin Android Player](http://developer.xamarin.com/guides/android/getting_started/installation/android-player/) (xamarin.com)。  
   
 > [!NOTE]
->  在 Visual Studio 中，您可能會發現工具列中有 Android Emulator Manager (AVD) 按鈕 (如下所示)，這會開啟特別用來設定 Google Android 模擬器的裝置管理員。  這對 Visual Studio Emulator for Android 或 Xamarin Player 不會有影響，這兩者會有各自用來設定設定檔的裝置管理員。  See [Introducing Visual Studio’s Emulator for Android](http://blogs.msdn.com/b/visualstudioalm/archive/2014/11/12/introducing-visual-studio-s-emulator-for-android.aspx) (Visual Studio ALM blog) and [Xamarin Android Player](http://developer.xamarin.com/guides/android/getting_started/installation/android-player/) (xamarin.com) for details.  
+> 在 Visual Studio 中，您可能會發現工具列中有 Android Emulator Manager (AVD) 按鈕 (如下所示)，這會開啟特別用來設定 Google Android 模擬器的裝置管理員。  這對 Visual Studio Emulator for Android 或 Xamarin Player 不會有影響，這兩者會有各自用來設定設定檔的裝置管理員。  See [Introducing Visual Studio’s Emulator for Android](http://blogs.msdn.com/b/visualstudioalm/archive/2014/11/12/introducing-visual-studio-s-emulator-for-android.aspx) (Visual Studio ALM blog) and [Xamarin Android Player](http://developer.xamarin.com/guides/android/getting_started/installation/android-player/) (xamarin.com) for details.  
 > ![CrossPlat Xamarin 驗證 7](../cross-platform/media/crossplat-xamarin-verify-7.png "CrossPlat Xamarin 驗證 7")  
   
 ## <a name="windows-phone"></a>Windows Phone  

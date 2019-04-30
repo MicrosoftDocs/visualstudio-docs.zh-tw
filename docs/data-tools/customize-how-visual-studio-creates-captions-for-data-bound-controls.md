@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - data-storage
 ms.openlocfilehash: 1745aef29da9fc8efd49789f0112c903128f6f74
-ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57323692"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62567581"
 ---
 # <a name="customize-how-visual-studio-creates-captions-for-data-bound-controls"></a>自訂 Visual Studio 為資料繫結的控制項建立標題的方式
 
@@ -43,7 +43,7 @@ ms.locfileid: "57323692"
 
 下表描述控制項標題標籤的登錄值。
 
-|登錄項目|說明|
+|登錄項目|描述|
 |-------------------|-----------------|
 |**SmartCaptionExpression**|您用來比對模式的規則運算式。|
 |**SmartCaptionReplacement**|若要顯示在比對任何群組的格式**SmartCaptionExpression**。|

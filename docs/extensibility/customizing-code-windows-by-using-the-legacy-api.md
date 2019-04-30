@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: c0ea617a252d60d8e8d5810c42f7331508c28165
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56708975"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62890979"
 ---
 # <a name="customize-code-windows-by-using-the-legacy-api"></a>使用舊版 API 來自訂程式碼視窗
 程式碼視窗會支援一或多個文字檢視的文件視窗物件。 程式碼視窗的確切的功能取決於相關聯的語言服務。 在多重文件介面 (MDI) 模式中，程式碼視窗會是 MDI 子框架。

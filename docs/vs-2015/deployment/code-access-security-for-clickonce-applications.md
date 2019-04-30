@@ -24,12 +24,12 @@ caps.latest.revision: 33
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: b56f926006b952b0e92a791e36bb821f3df0197d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 54160bbdfe834a1b3226f4445b862c151bcf35c3
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58941718"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63423284"
 ---
 # <a name="code-access-security-for-clickonce-applications"></a>ClickOnce 應用程式的程式碼存取安全性
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,7 +46,7 @@ ClickOnce 應用程式是以 .NET Framework 為基礎，並且受限於程式碼
 - 當應用程式需要完全信任權限時，可能會提示使用者將權限授與應用程式。 這表示應用程式無法真正提供 ClickOnce 經驗，而且提示可能會令較沒有經驗的使用者困惑。  
   
   > [!NOTE]
-  >  從卸除式媒體例如 CD-ROM 安裝應用程式時，不會提示使用者。 此外，網路系統管理員可以設定網路原則，以便在安裝來自信任來源的應用程式時，不會提示使用者。 如需詳細資訊，請參閱 [Trusted Application Deployment Overview](../deployment/trusted-application-deployment-overview.md)。  
+  > 從卸除式媒體例如 CD-ROM 安裝應用程式時，不會提示使用者。 此外，網路系統管理員可以設定網路原則，以便在安裝來自信任來源的應用程式時，不會提示使用者。 如需詳細資訊，請參閱 [Trusted Application Deployment Overview](../deployment/trusted-application-deployment-overview.md)。  
   
   若要限制 ClickOnce 應用程式的權限，您可以修改您應用程式的程式碼存取安全性權限，要求最符合應用程式所需權限的區域。 在大部分情況下，您可以選取要從中部署應用程式的區域。 例如，如果您的應用程式是企業應用程式，您可以使用 [近端內部網路]  區域。 如果您的應用程式是網際網路應用程式，您可以使用 [網際網路]  區域。  
   

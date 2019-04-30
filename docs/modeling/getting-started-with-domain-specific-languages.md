@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d2710e529ea558b87527e84865717645116b6b36
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 915a6c6d06380aa67c2c79ce52598668a9b33f18
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60069545"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63442386"
 ---
 # <a name="get-started-with-domain-specific-languages"></a>特定領域語言的使用者入門
 
@@ -294,7 +294,7 @@ DSL 定義中可以指定在模型圖上的顯示方式。 您可以選擇各種
          設定其名稱，例如**城鎮**。
 
         > [!NOTE]
-        >  模型的根目錄以外的每個網域類別必須是至少一個內嵌關聯性的目標，或必須繼承自的類別，做為目標的內嵌。 基於這個理由，並經常方便使用的內嵌關聯性工具，建立網域類別。
+        > 模型的根目錄以外的每個網域類別必須是至少一個內嵌關聯性的目標，或必須繼承自的類別，做為目標的內嵌。 基於這個理由，並經常方便使用的內嵌關聯性工具，建立網域類別。
 
     2. 將網域屬性新增至新的類別，例如**名稱**。
 
@@ -305,7 +305,7 @@ DSL 定義中可以指定在模型圖上的顯示方式。 您可以選擇各種
          ![DSL 定義片段：家譜根部](../modeling/media/familyt_root.png)
 
         > [!NOTE]
-        >  參考關聯性代表到另一個模型樹狀結構的某一部分的交互參考。
+        > 參考關聯性代表到另一個模型樹狀結構的某一部分的交互參考。
 
 3. 新增圖形以代表鄉鎮的模型圖表上。
 

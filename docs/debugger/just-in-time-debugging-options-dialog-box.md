@@ -21,11 +21,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 23a285cf0ce017130a5fe76171c50082362e4856
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56710470"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62905931"
 ---
 # <a name="just-in-time-debugging-options-dialog-box"></a>選項對話方塊、偵錯、Just-In-Time
 若要存取 [Just-In-Time] 頁面，請前往 [工具] 功能表並按一下 [選項]。 在 [選項] 對話方塊中，展開 [偵錯] 節點並選取 [Just-In-Time]。 這個頁面可讓您啟用 Managed 程式碼、機器碼和指令碼的 Just-In-Time 偵錯。 如需詳細資訊，請參閱 [Just-In-Time 偵錯](../debugger/just-in-time-debugging-in-visual-studio.md)。
@@ -55,6 +55,6 @@ ms.locfileid: "56710470"
 
  **拒絕存取。請系統管理員啟用 Just-In-Time 偵錯，或是修復您的 Visual Studio 安裝。**
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [選項對話方塊、偵錯](../debugger/debugging-options-dialog-box.md)
 - [如何：指定偵錯工具設定](../debugger/how-to-specify-debugger-settings.md)

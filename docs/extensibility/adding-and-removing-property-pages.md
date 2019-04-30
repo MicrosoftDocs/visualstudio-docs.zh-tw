@@ -16,11 +16,11 @@ dev_langs:
 ms.workload:
 - vssdk
 ms.openlocfilehash: 0277d0f04042b6d7ed4cb8b6233d8b0ccec464f7
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60095486"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62843887"
 ---
 # <a name="add-and-remove-property-pages"></a>新增和移除屬性頁
 

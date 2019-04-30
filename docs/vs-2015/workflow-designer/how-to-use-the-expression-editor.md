@@ -11,12 +11,12 @@ caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: caf878f6ea43a7f041285fb02b2f32175ca862b1
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: cc876426c18184c966c277e8dafb5a373da332b7
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60057182"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63408375"
 ---
 # <a name="how-to-use-the-expression-editor"></a>HOW TO：使用運算式編輯器
 [運算式編輯器] 是 [!INCLUDE[wfd1](../includes/wfd1-md.md)] 控制項，在許多工作流程活動中，會用來做為輸入及評估這些運算式的工具。 [運算式編輯器] 提供完整功能的 IDE 編輯經驗，包括 IntelliSense、顏色標示、ParamInfo、錯誤不規則曲線等等。 編譯器在運算式輸入之後會加以驗證。 如果運算式無效，就會顯示錯誤圖示。 編輯器也可以開啟做**運算式編輯器** 對話方塊。  
@@ -32,7 +32,7 @@ ms.locfileid: "60057182"
 - 如果焦點放在重新裝載工作流程設計工具中的 [運算式編輯器] 上，則其行為表現會像 TextBlock。 如果在重新裝載工作流程設計工具中失去焦點，則 [運算式編輯器] 看起來又會像一般 TextBlock。  
   
 > [!NOTE]
->  [運算式編輯器] 的 IntelliSense 僅能在 [!INCLUDE[vs2010](../includes/vs2010-md.md)] 內部使用。 在 [!INCLUDE[vs2010](../includes/vs2010-md.md)] 與重新裝載的情況下，編譯器在運算式輸入之後會加以驗證，而如果運算式無效，運算式編輯器會顯示錯誤圖示。  
+> [運算式編輯器] 的 IntelliSense 僅能在 [!INCLUDE[vs2010](../includes/vs2010-md.md)] 內部使用。 在 [!INCLUDE[vs2010](../includes/vs2010-md.md)] 與重新裝載的情況下，編譯器在運算式輸入之後會加以驗證，而如果運算式無效，運算式編輯器會顯示錯誤圖示。  
   
 ### <a name="using-the-expression-editor"></a>使用運算式編輯器  
   
@@ -41,7 +41,7 @@ ms.locfileid: "60057182"
 2. 將活動加入至工作流程，例如 <xref:System.Activities.Statements.Assign> 活動。  
   
     > [!NOTE]
-    >  許多工作流程活動都有運算式編輯器。 在變數設計工具、引數設計工具及動態引數設計工具中，也會出現運算式 TextBlock， 而 <xref:System.Activities.Statements.Assign> 活動會用來做為範例。  
+    > 許多工作流程活動都有運算式編輯器。 在變數設計工具、引數設計工具及動態引數設計工具中，也會出現運算式 TextBlock， 而 <xref:System.Activities.Statements.Assign> 活動會用來做為範例。  
   
 3. 在 <xref:System.Activities.Statements.Assign> 活動的活動設計工具中，按一下左方的運算式編輯器。  
   

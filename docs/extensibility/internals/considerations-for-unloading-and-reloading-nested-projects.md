@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: b0b5738a5e8cf01466dd632797c3f92ffd135a44
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54942736"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62861331"
 ---
 # <a name="considerations-for-unloading-and-reloading-nested-projects"></a>卸載及重新載入巢狀的專案的考量
 

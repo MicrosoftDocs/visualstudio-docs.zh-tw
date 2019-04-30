@@ -14,11 +14,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: cdf4d9657832c2dc1e7691eed5c334e770de5700
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "58945303"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62976990"
 ---
 # <a name="creating-a-workflow-project"></a>建立工作流程專案
 工作流程、[!INCLUDE[indigo1](../includes/indigo1-md.md)]、工作流程服務、自訂活動與自訂活動設計工具都可使用 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 專案範本建立。 本節描述如何使用 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 中提供的專案範本來建立程式庫和應用程式。  

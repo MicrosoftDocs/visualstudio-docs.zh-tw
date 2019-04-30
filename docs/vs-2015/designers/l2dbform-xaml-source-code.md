@@ -9,12 +9,12 @@ caps.latest.revision: 4
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 11b35534641ec01c9d622b35caacf2e68162e4e1
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: f08045a83849bdbd5bf6fb51287a66806d3bf4d6
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54797349"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63403491"
 ---
 # <a name="l2dbformxaml-source-code"></a>L2DBForm.xaml 原始程式碼
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -87,7 +87,7 @@ Text="{Binding Path=Attribute[id].Value}"...Text="{Binding Path=Value}"
 ### <a name="description"></a>描述  
   
 > [!NOTE]
->  建議您將下列程式碼複製到程式碼編輯器 (例如，Visual Studio 中的 C# 原始程式碼編輯器)，如此將更容易追蹤行號。  
+> 建議您將下列程式碼複製到程式碼編輯器 (例如，Visual Studio 中的 C# 原始程式碼編輯器)，如此將更容易追蹤行號。  
   
 ### <a name="code"></a>程式碼  
   
@@ -241,6 +241,6 @@ Text="{Binding Path=Attribute[id].Value}"...Text="{Binding Path=Value}"
 ### <a name="comments"></a>註解  
  如需與 WPF UI 元素關聯之事件處理常式的 C# 原始程式碼，請參閱 [L2DBForm.xaml.cs 原始程式碼](../designers/l2dbform-xaml-cs-source-code.md)。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [逐步解說：LinqToXmlDataBinding 範例](../designers/walkthrough-linqtoxmldatabinding-example.md)   
  [L2DBForm.xaml.cs Source Code](../designers/l2dbform-xaml-cs-source-code.md)

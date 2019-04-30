@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: f6e796cc00478ee823c345fd02738f8677c36373
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60074632"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62813663"
 ---
 # <a name="how-to-localize-a-feature"></a>HOW TO：當地語系化功能
   根據預設，功能標題和描述使用硬式編碼的字串值。 若要當地語系化的功能標題和描述，請將字串取代運算式參考當地語系化的資源。

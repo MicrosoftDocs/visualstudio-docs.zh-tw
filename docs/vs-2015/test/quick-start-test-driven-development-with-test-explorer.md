@@ -8,12 +8,12 @@ ms.assetid: 5161b533-2127-4172-b473-d4ffc76ff05b
 caps.latest.revision: 17
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: f45e9c466bcb99dd0fecb00702441d3d97899a52
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 4b3c709c2d7a83e4b144232a491dabf205ea46f7
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60108980"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446191"
 ---
 # <a name="quick-start-test-driven-development-with-test-explorer"></a>快速入門：搭配 [測試總管] 進行以測試為導向的開發工作
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -62,10 +62,10 @@ ms.locfileid: "60108980"
    **若要偵錯測試：** 請開啟一或多個測試的捷徑功能表，然後選擇 [偵測選取的測試]。  
   
 > [!IMPORTANT]
->  顯示的結果是最近執行的結果。 有顏色的結果列只會顯示已執行的測試結果。 例如，如果您執行許多測試，但是有些失敗了，接著只執行成功的測試，然後結果列就會全部顯示綠色。  
+> 顯示的結果是最近執行的結果。 有顏色的結果列只會顯示已執行的測試結果。 例如，如果您執行許多測試，但是有些失敗了，接著只執行成功的測試，然後結果列就會全部顯示綠色。  
   
 > [!NOTE]
->  如果未出現任何測試，請確定已安裝配接器將 [測試總管] 連接至您使用的測試架構。 如需詳細資訊，請參閱 <<c0> [ 使用不同的測試架構](/visualstudio/test/getting-started-with-unit-testing#use-a-different-unit-test-framework)。  
+> 如果未出現任何測試，請確定已安裝配接器將 [測試總管] 連接至您使用的測試架構。 如需詳細資訊，請參閱 <<c0> [ 使用不同的測試架構](/visualstudio/test/getting-started-with-unit-testing#use-a-different-unit-test-framework)。  
   
 ## <a name="walkthrough"></a> 逐步解說：使用單元測試來開發方法  
  本逐步解說示範如何使用 Microsoft 單元測試架構以 C# 來開發受測方法。 您可以輕鬆地將它改寫成其他語言，並使用其他測試架構 (例如 NUnit)。 如需詳細資訊，請參閱 < [Usa 不同的測試架構](/visualstudio/test/getting-started-with-unit-testing#use-a-different-unit-test-framework)。  
@@ -152,7 +152,7 @@ ms.locfileid: "60108980"
 1. 若要提高您對於程式碼在任何情況下都能運作的信心，您可以加入嘗試各種輸入值的測試。  
   
     > [!TIP]
-    >  避免改變已經成功的現有測試， 而改為加入新的測試。 只有在使用者的需求改變時，才變更現有的測試。 這個原則可協助您確保在擴充程式碼時不會失去現有的功能。  
+    > 避免改變已經成功的現有測試， 而改為加入新的測試。 只有在使用者的需求改變時，才變更現有的測試。 這個原則可協助您確保在擴充程式碼時不會失去現有的功能。  
   
      在您的測試類別中加入下面測試，該測試會嘗試某個範圍的輸入值：  
   
@@ -257,7 +257,7 @@ ms.locfileid: "60108980"
 1. 簡化程式碼，但不變更測試。  
   
     > [!TIP]
-    >  「 *重構* 」(Refactoring) 是要讓程式碼的效能變得更好或讓程式碼更容易了解而做的變更。 它不是要變更程式碼的行為，因此並不會變更測試。  
+    > 「 *重構* 」(Refactoring) 是要讓程式碼的效能變得更好或讓程式碼更容易了解而做的變更。 它不是要變更程式碼的行為，因此並不會變更測試。  
     >   
     >  我們建議您分開執行重構步驟與擴充功能的步驟。 讓測試保持不變，您就會有信心沒有在重構時不小心引入了 Bug。  
   

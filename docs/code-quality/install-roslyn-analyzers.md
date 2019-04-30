@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: 1afeb6f75648ce2ab1687fa9262ab28b658b0d70
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60077806"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62820814"
 ---
 # <a name="install-net-compiler-platform-analyzers"></a>安裝.NET Compiler Platform 分析器
 

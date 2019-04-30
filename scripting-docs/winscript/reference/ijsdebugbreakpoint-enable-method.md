@@ -16,11 +16,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 14f827048db7c29e09938de3d1c70cd4d61a388d
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58153873"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62583226"
 ---
 # <a name="ijsdebugbreakpointenable-method"></a>IJsDebugBreakPoint::Enable 方法
 啟用中斷點。  

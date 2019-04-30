@@ -10,12 +10,12 @@ ms.assetid: 5838f02d-001f-49ce-adce-c9ea1afaec2f
 caps.latest.revision: 58
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ffdd925b1fdddb6bddfb3704e561fac8efc84b57
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 25a52b4854dd957787100ba2bc742f199c4a9a81
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60048979"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63416527"
 ---
 # <a name="creating-a-data-driven-coded-ui-test"></a>建立資料驅動自動程式化 UI 測試
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -140,7 +140,7 @@ ms.locfileid: "60048979"
      現在，您可以在這個測試方法中使用此資料來源。  
   
     > [!TIP]
-    >  如需使用其他資料來源類型 (例如 XML、SQL Express 和 Excel) 的範例，請參閱＜問與答＞小節中的[資料來源屬性範例](#CreateDataDrivenCUIT_QA_DataSourceAttributes)。  
+    > 如需使用其他資料來源類型 (例如 XML、SQL Express 和 Excel) 的範例，請參閱＜問與答＞小節中的[資料來源屬性範例](#CreateDataDrivenCUIT_QA_DataSourceAttributes)。  
   
 2. 執行測試。  
   

@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: b9efd6500f979436027a160357c881ae6d1de426
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56596245"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62829071"
 ---
 # <a name="idiaframedatagetallocatesbasepointer"></a>IDiaFrameData::get_allocatesBasePointer
 擷取指出是否要將基底指標配置此位址範圍中的程式碼的旗標。 這個方法已淘汰。
@@ -41,6 +41,6 @@ HRESULT get_allocatesBasePointer ( 
 ## <a name="remarks"></a>備註
  這個屬性應該僅供程式碼，先前稱為存取 FPO_DATA，或計劃字串時所傳回[idiaframedata:: Get_program](../../debugger/debug-interface-access/idiaframedata-get-program.md)方法是`NULL`。 否則，程式字串包含計算前一個暫存器值所需的所有資訊。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)
 - [IDiaFrameData::get_program](../../debugger/debug-interface-access/idiaframedata-get-program.md)

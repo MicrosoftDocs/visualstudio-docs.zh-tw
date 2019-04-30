@@ -10,11 +10,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 9262ec994ec847c38ec8d5c1ad95010a929cc4ba
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "58945292"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62549524"
 ---
 # <a name="t4-output-directive"></a>T4 輸出指示詞
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

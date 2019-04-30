@@ -10,12 +10,12 @@ ms.assetid: 822cbb8d-7ab4-40ee-bd12-44016ebcce81
 caps.latest.revision: 32
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 83bc344cf4c99efd426066a47c240b710ef455e4
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 8dfc751b040bd775c3f55ff7db804c2a16d45d5f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60056038"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63414621"
 ---
 # <a name="inside-the-editor"></a>深入探索編輯器
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -92,7 +92,7 @@ ms.locfileid: "60056038"
  為一連串的字元或一連串的行，您可以檢視文字快照集內容。 字元和行都是同時編製索引從零開始。 空白文字快照集包含零個字元和一個空白行。 任何有效 Unicode 換行字元序列，或是開頭或結尾的緩衝區，是以分隔列。 文字的快照集，以明確表示分行符號字元，並不是所有具有相同文字快照中的分行符號。  
   
 > [!NOTE]
->  如需 Visual Studio 編輯器中的分行符號字元的詳細資訊，請參閱[編碼與分行符號](../ide/encodings-and-line-breaks.md)。  
+> 如需 Visual Studio 編輯器中的分行符號字元的詳細資訊，請參閱[編碼與分行符號](../ide/encodings-and-line-breaks.md)。  
   
  表示文字行<xref:Microsoft.VisualStudio.Text.ITextSnapshotLine>物件，可從文字的快照集的特定行號或特定的字元位置。  
   

@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: cab7ea023524da7e28e2baa2d4e5018cd091c60d
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55953499"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62949990"
 ---
 # <a name="clearcollectiont-activity-designer"></a>ClearCollection\<T > 活動設計工具
 
@@ -35,7 +35,7 @@ ms.locfileid: "55953499"
 
 下表顯示 <xref:System.Activities.Statements.ClearCollection%601> 屬性，並且描述屬性在設計工具中的使用方式。
 
-|屬性名稱|必要項|使用方式|
+|屬性名稱|必要|使用量|
 |-|--------------|-|
 |<xref:System.Activities.Activity.DisplayName%2A>|False|指定 <xref:System.Activities.Statements.ClearCollection%601> 活動選用的易記名稱。 預設值是 ClearCollection < Int32\>。 雖然 <xref:System.Activities.Activity.DisplayName%2A> 值並非絕對必要，但建議您盡量使用。|
 |<xref:System.Activities.Statements.ClearCollection%601.Collection%2A>|True|指定要清除項目的集合。 此集合屬於類型**ICollection\<TypeArgument >。** 若要指定集合，請在屬性方格中輸入 Visual Basic 運算式。|

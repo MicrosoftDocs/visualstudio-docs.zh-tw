@@ -10,11 +10,11 @@ ms.assetid: 4cdf5ab5-9f09-4caf-9011-2dcb2c62f1b7
 caps.latest.revision: 14
 manager: jillfra
 ms.openlocfilehash: 1c1fb48e4bb354ef403b39b0f1320ead92f43967
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60054363"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62948178"
 ---
 # <a name="how-to-use-getglobalservice"></a>HOW TO：使用 GetGlobalService
 有時候您可能需要從 工具視窗取得服務或控制未設置，否則就不知道您想要的服務的服務提供者已決定位置的容器。 比方說，您可能要從控制項內的活動記錄檔寫入。 如需有關這些和其他案例的詳細資訊，請參閱[How to:疑難排解服務](../extensibility/how-to-troubleshoot-services.md)。  

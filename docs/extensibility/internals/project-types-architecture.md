@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 3aee42e266e1082228c30ce56ac128e19ef6c576
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56613607"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62909456"
 ---
 # <a name="project-types-architecture"></a>專案類型架構
 本章節包含在專案類型架構的詳細的資訊[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]。

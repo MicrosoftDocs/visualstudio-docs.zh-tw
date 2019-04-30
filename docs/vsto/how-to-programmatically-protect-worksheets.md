@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 93acd8466ae90a6db4d1f25d93460e501335af50
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 7d6fb66684bd51c75e655bc2403cb6a9fb5846a2
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60062213"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438806"
 ---
 # <a name="how-to-programmatically-protect-worksheets"></a>HOW TO：以程式設計方式保護工作表
   Microsoft Office Excel 中的保護功能有助於防止使用者和程式碼修改工作表中的物件。 根據預設，開啟保護之後所有的儲存格都會鎖定。
@@ -30,7 +30,7 @@ ms.locfileid: "60062213"
  使用文件層級自訂時，您可以使用 Excel 設計工具保護工作表。 您也可以用程式設計的方式，在任何專案類型的執行階段中保護工作表。
 
 > [!NOTE]
->  您無法將 Windows Form 控制項加入受保護的工作表區域。
+> 您無法將 Windows Form 控制項加入受保護的工作表區域。
 
 ## <a name="use-the-designer"></a>使用設計工具
 

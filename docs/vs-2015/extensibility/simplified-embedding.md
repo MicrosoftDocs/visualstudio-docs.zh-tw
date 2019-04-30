@@ -10,12 +10,12 @@ ms.assetid: f1292478-a57d-48ec-8c9e-88a23f04ffe5
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 6575181a7cd56db7148ebe2d6c11c98949f1b753
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: b8e1ac2fa17409ac3228f87eb71c99ce9e725521
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58941879"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63447197"
 ---
 # <a name="simplified-embedding"></a>簡化嵌入
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,7 +26,7 @@ ms.locfileid: "58941879"
 使用簡化的嵌入編輯器  
   
 > [!NOTE]
->  在此圖中，只有物件的`CYourEditorFactory`物件才能建立標準檔案為基礎的編輯器。 如果您要建立自訂編輯器，您不需要實作<xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData2>，因為您的編輯器可能會有自己的私用持續性機制。 非自訂編輯器，不過，您必須執行這項作業。  
+> 在此圖中，只有物件的`CYourEditorFactory`物件才能建立標準檔案為基礎的編輯器。 如果您要建立自訂編輯器，您不需要實作<xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData2>，因為您的編輯器可能會有自己的私用持續性機制。 非自訂編輯器，不過，您必須執行這項作業。  
   
  中包含所有的介面實作，以建立編輯器來簡化內嵌`CYourEditorDocument`物件。 不過，若要支援多個檢視的文件資料，分割到不同的資料和檢視物件的介面下表所示。  
   

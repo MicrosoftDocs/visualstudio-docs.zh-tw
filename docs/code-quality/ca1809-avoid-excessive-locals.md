@@ -15,11 +15,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: f4ac6947f8424c3b9aa7429ee378b4bb89be73ca
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55921588"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62545237"
 ---
 # <a name="ca1809-avoid-excessive-locals"></a>CA1809:避免在方法中包含過多區域變數
 

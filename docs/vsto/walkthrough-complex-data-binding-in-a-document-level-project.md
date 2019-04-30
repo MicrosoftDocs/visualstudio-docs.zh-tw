@@ -16,11 +16,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: aabd45871e55fd22b9b9e35597555fd13b15d6eb
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60052528"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62981672"
 ---
 # <a name="walkthrough-complex-data-binding-in-a-document-level-project"></a>逐步解說：在文件層級專案中的複雜資料繫結
   本逐步解說會示範在文件層級專案中的複雜資料繫結的基本概念。 您可以將 Microsoft Office Excel 工作表中的多個資料格繫結至 Northwind SQL Server 資料庫中的欄位。

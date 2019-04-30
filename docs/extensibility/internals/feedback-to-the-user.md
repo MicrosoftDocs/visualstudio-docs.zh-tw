@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 4503639e65650b70871c9bf23a26eac1d4892a5f
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56605858"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62909981"
 ---
 # <a name="feedback-to-the-user"></a>使用者的意見反應
 在 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]整合式的開發環境 (IDE) 中，有關可用的功能以使用者的目前選取範圍和全域選取範圍內容為基礎的視覺化回饋。 下表列出可在不同的選取項目內容中的功能。

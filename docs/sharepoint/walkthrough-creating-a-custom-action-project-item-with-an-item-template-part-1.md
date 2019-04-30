@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 7397da630a5fd6f2c649d6f448627d7c77c55128
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 9417c2116dde909bda948e7d9140d7f52b090d68
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60059119"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63430481"
 ---
 # <a name="walkthrough-create-a-custom-action-project-item-with-an-item-template-part-1"></a>逐步解說：使用項目範本，第 1 部分中建立自訂動作專案項目
   您可以擴充 Visual Studio 中的 SharePoint 專案系統，藉由建立您自己的專案項目類型。 在本逐步解說中，您將建立可新增至 SharePoint 專案，以在 SharePoint 網站上建立的自訂動作專案項目。 自訂動作會將功能表項目**站台動作**的 SharePoint 網站的功能表。
@@ -44,7 +44,7 @@ ms.locfileid: "60059119"
   這是獨立的逐步解說。 完成本逐步解說之後，您可以藉由將項目範本的精靈來增強的專案項目。 如需詳細資訊，請參閱[逐步解說：建立自訂動作專案項目與項目範本，第 2 部分](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-2.md)。
 
 > [!NOTE]
->  您可以下載範例，以從[Github](https://github.com/SharePoint/PnP/tree/master/Samples/Workflow.Activities) ，示範如何建立工作流程的自訂活動。
+> 您可以下載範例，以從[Github](https://github.com/SharePoint/PnP/tree/master/Samples/Workflow.Activities) ，示範如何建立工作流程的自訂活動。
 
 ## <a name="prerequisites"></a>必要條件
  您需要完成這個逐步解說在開發電腦上的下列元件：
@@ -81,7 +81,7 @@ ms.locfileid: "60059119"
 4. 中**新的專案**對話方塊方塊中，展開**Visual C#** 或**Visual Basic**節點，然後選擇**擴充性**節點。
 
     > [!NOTE]
-    >  **擴充性**節點才會提供您安裝 Visual Studio SDK。 如需詳細資訊，請參閱稍早在本主題中的必要條件 > 一節。
+    > **擴充性**節點才會提供您安裝 Visual Studio SDK。 如需詳細資訊，請參閱稍早在本主題中的必要條件 > 一節。
 
 5. 選擇**VSIX 專案**範本。
 
@@ -164,7 +164,7 @@ ms.locfileid: "60059119"
 2. 在專案項目清單中，選擇**圖示檔**項目。
 
     > [!NOTE]
-    >  在 Visual Basic 專案中，您必須選擇**一般**節點以顯示**圖示檔**項目。
+    > 在 Visual Basic 專案中，您必須選擇**一般**節點以顯示**圖示檔**項目。
 
 3. 在 [**名稱**方塊中，輸入**CustomAction_SolutionExplorer.ico**，然後選擇**新增**] 按鈕。
 
@@ -197,7 +197,7 @@ ms.locfileid: "60059119"
 3. 檔案的內容取代為下列 XML 中，然後儲存並關閉檔案。
 
     > [!NOTE]
-    >  下列 XML 是 Visual C# 項目範本。 如果您要建立 Visual Basic 項目範本，將值取代`ProjectType`具有項目`VisualBasic`。
+    > 下列 XML 是 Visual C# 項目範本。 如果您要建立 Visual Basic 項目範本，將值取代`ProjectType`具有項目`VisualBasic`。
 
     ```xml
     <?xml version="1.0" encoding="utf-8"?>
@@ -310,7 +310,7 @@ ms.locfileid: "60059119"
 6. 在 **型別**清單中，選擇**Microsoft.VisualStudio.ItemTemplate**。
 
     > [!NOTE]
-    >  這個值會對應到`ItemTemplate`extension.vsixmanifest 檔案中的項目。 此項目可識別包含專案項目範本的 VSIX 套件中的子資料夾。 如需詳細資訊，請參閱 < [ItemTemplate 項目 （VSX 結構描述）](/previous-versions/visualstudio/visual-studio-2010/dd393681\(v\=vs.100\))。
+    > 這個值會對應到`ItemTemplate`extension.vsixmanifest 檔案中的項目。 此項目可識別包含專案項目範本的 VSIX 套件中的子資料夾。 如需詳細資訊，請參閱 < [ItemTemplate 項目 （VSX 結構描述）](/previous-versions/visualstudio/visual-studio-2010/dd393681\(v\=vs.100\))。
 
 7. 在 **來源**清單中，選擇**目前方案中的專案**。
 
@@ -323,7 +323,7 @@ ms.locfileid: "60059119"
 10. 在 **型別**清單中，選擇**Microsoft.VisualStudio.MefComponent**。
 
     > [!NOTE]
-    >  這個值會對應到`MefComponent`extension.vsixmanifest 檔案中的項目。 這個元素會指定在 VSIX 封裝中的延伸模組組件名稱。 如需詳細資訊，請參閱 < [MEFComponent 項目 （VSX 結構描述）](/previous-versions/visualstudio/visual-studio-2010/dd393736\(v\=vs.100\))。
+    > 這個值會對應到`MefComponent`extension.vsixmanifest 檔案中的項目。 這個元素會指定在 VSIX 封裝中的延伸模組組件名稱。 如需詳細資訊，請參閱 < [MEFComponent 項目 （VSX 結構描述）](/previous-versions/visualstudio/visual-studio-2010/dd393736\(v\=vs.100\))。
 
 11. 在 **來源**清單中，選擇**目前方案中的專案**。
 
@@ -425,7 +425,7 @@ ms.locfileid: "60059119"
      自訂動作會封裝並部署到 SharePoint 網站中指定**站台 URL**專案屬性。 Web 瀏覽器中開啟此站台的預設頁面。
 
     > [!NOTE]
-    >  如果**指令碼偵錯已停用** 對話方塊出現時，選擇**是**按鈕以繼續進行偵錯專案。
+    > 如果**指令碼偵錯已停用** 對話方塊出現時，選擇**是**按鈕以繼續進行偵錯專案。
 
 4. 上**站台動作**功能表上，選擇**SharePoint 開發人員中心**，確認瀏覽器會開啟網站 https://docs.microsoft.com/sharepoint/dev/，然後關閉網頁瀏覽器。
 

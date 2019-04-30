@@ -18,11 +18,11 @@ monikerRange: vs-2017
 ms.workload:
 - uwp
 ms.openlocfilehash: dbd276751d8052f21d92e38a0e337f9c133edf2c
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "58790026"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62907069"
 ---
 # <a name="debug-html-and-css-in-uwp-apps-in-visual-studio"></a>在 Visual Studio 中的 UWP 應用程式中偵錯 HTML 和 CSS
 

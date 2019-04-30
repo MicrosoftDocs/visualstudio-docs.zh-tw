@@ -12,11 +12,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 46ff7dc7ae79ae8bf269a7a3d3cad780ad7654bb
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58939577"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62943356"
 ---
 # <a name="flowdecision-activity-designer"></a>FlowDecision 活動設計工具
 <xref:System.Activities.Statements.FlowDecision> 節點是條件式節點，會根據是否滿足指定條件來提供控制流程的二選一分支。 如果流程要求兩個以上的分支，請改用 <xref:System.Activities.Statements.FlowSwitch%601>。  

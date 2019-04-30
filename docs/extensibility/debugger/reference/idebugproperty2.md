@@ -12,18 +12,18 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 32e571f46b30e4f54322fc0138ebfc9b27e3753a
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.openlocfilehash: 3e13233950940c01c758a0faf07611c1426475e8
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56709001"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63412678"
 ---
 # <a name="idebugproperty2"></a>IDebugProperty2
 此介面代表堆疊框架屬性、 程式文件屬性或某些其他屬性。 屬性通常是運算式評估的結果。
 
 > [!NOTE]
->  這種使用 「 屬性 」 不應混淆與表示類別的成員變數雖然`IDebugProperty2`可以表示這個實體。
+> 這種使用 「 屬性 」 不應混淆與表示類別的成員變數雖然`IDebugProperty2`可以表示這個實體。
 
 ## <a name="syntax"></a>語法
 

@@ -12,11 +12,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: a1652c6ebffff88782ffcc879158a5142f22395d
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58151189"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62823810"
 ---
 # <a name="profilerheapobject-structure"></a>PROFILER_HEAP_OBJECT 結構
 代表堆積物件來收集[IActiveScriptProfilerControl3::EnumHeap 方法](../../winscript/reference/iactivescriptprofilercontrol3-enumheap-method.md)。  
@@ -34,7 +34,7 @@ typedef struct _PROFILER_HEAP_OBJECT
 |成員|類型|描述|  
 |------------|----------|-----------------|  
 |objectId|[PROFILER_HEAP_OBJECT_ID 類型](../../winscript/reference/profiler-heap-object-id-type.md)|堆積物件的識別碼。|  
-|externalObjectAddress|[PROFILER_EXTERNAL_OBJECT_ADDRESS 類型](../../winscript/reference/profiler-external-object-address-type.md)|物件，例如 c + + 配置的物件，是 JavaScript 堆積以外的外部物件位址。|  
+|externalObjectAddress|[PROFILER_EXTERNAL_OBJECT_ADDRESS 類型](../../winscript/reference/profiler-external-object-address-type.md)|外部物件位址的物件，例如C++-配置超出 JavaScript 堆積的物件。|  
 |typeNameId|[PROFILER_HEAP_OBJECT_NAME_ID 類型](../../winscript/reference/profiler-heap-object-name-id-type.md)|從擷取的堆積物件型別名稱識別碼[IActiveScriptProfilerHeapEnum::GetNameIdMap](../../winscript/reference/iactivescriptprofilerheapenum-getnameidmap.md)。 只有其中一個`externalObjectAddress`或是`typeName`取決於存在`flags`值。|  
 |旗標|[PROFILER_HEAP_OBJECT_FLAGS 列舉](../../winscript/reference/profiler-heap-object-flags-enumeration.md)|包含堆積物件的基本資訊的旗標。|  
 |optionalInfoCount|USHORT|數目[PROFILER_HEAP_OBJECT_OPTIONAL_INFO 結構](../../winscript/reference/profiler-heap-object-optional-info-structure.md)記錄可供使用的堆積物件。|

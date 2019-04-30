@@ -17,12 +17,12 @@ caps.latest.revision: 42
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: aa74d6ca668203f7b13f11307ac59ef5270aac9b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 7d598cc245421aafb05cbf91fe2b7a95e39564a2
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60117703"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444330"
 ---
 # <a name="walkthrough-debugging-a-multithreaded-application"></a>逐步解說：偵錯多執行緒應用程式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -124,7 +124,7 @@ Thread::Sleep(3000);
 2. 移至**偵錯位置**工具列，並按一下**執行緒**清單。  
   
     > [!NOTE]
-    >  您可以透過三個明顯的清單辨認出這個工具列：**處理程序**，**執行緒**，以及**堆疊框架**。  
+    > 您可以透過三個明顯的清單辨認出這個工具列：**處理程序**，**執行緒**，以及**堆疊框架**。  
   
 3. 注意清單中出現的執行緒數。  
   

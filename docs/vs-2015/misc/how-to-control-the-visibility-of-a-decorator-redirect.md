@@ -10,11 +10,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 6abc8b0bf2af5b22910bc4ad90fa16a21ecdb386
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58939776"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62822408"
 ---
 # <a name="how-to-control-the-visibility-of-a-decorator--redirect"></a>HOW TO：控制 Decorator 的可視性-重新導向
 本主題已與另一個合併。 請參閱[自訂圖表上的展示](../modeling/customizing-presentation-on-the-diagram.md)。

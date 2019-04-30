@@ -15,11 +15,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: cde5489d970de02afbce28ab9c60c677ab199c84
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60105678"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62810746"
 ---
 # <a name="xmlmappedrange-control"></a>XmlMappedRange 控制項
   <xref:Microsoft.Office.Tools.Excel.XmlMappedRange>控制項是只有非重複的結構描述元素對應到 Microsoft Office Excel 中的資料格時，才會建立一個範圍。 例如，當`maxOccurs`屬性結構描述元素等於 1。 Visual Studio 會建立 XML 對應範圍之後，您可以針對它進行程式設計直接而不必周遊 Excel 物件模型。 您只能刪除<xref:Microsoft.Office.Tools.Excel.XmlMappedRange>時就會移除項目對應，請在 Excel 內的控制項。

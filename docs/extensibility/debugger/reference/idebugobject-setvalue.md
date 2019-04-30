@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: ccfea65f7f24b3d48fc5ec5d68028c72b9b4eece
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56692643"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62872446"
 ---
 # <a name="idebugobjectsetvalue"></a>IDebugObject::SetValue
 設定物件的值從一系列連續的位元組。

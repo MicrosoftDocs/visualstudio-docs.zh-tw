@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 3c557a155c68b3a45e2b96aceee8ddcfcaa1d82e
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56689885"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62874636"
 ---
 # <a name="idebugerrorbreakpoint2"></a>IDebugErrorBreakpoint2
 這個介面會表示錯誤或警告中斷點，例如無效的位置、 無效的運算式或為何暫止中斷點具有未繫結 （程式碼不會載入尚未等等） 的原因。

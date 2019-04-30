@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 96d83bbe34e0510ccf14204eb83fa1ed2da2d173
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56631961"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62978181"
 ---
 # <a name="understand-coauthoring-and-add-ins"></a>了解共同撰寫與增益集
 

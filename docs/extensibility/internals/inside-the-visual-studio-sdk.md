@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 078bf457c798c0be9ac56aad1859c6750881922a
-ms.sourcegitcommit: 05d104a14ff357d599ff274f97cd59d464ee4a46
-ms.translationtype: MT
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/04/2019
-ms.locfileid: "57870269"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62909655"
 ---
 # <a name="inside-the-visual-studio-sdk"></a>深入探索 Visual Studio SDK
 
@@ -69,7 +69,7 @@ ms.locfileid: "57870269"
 ## <a name="document-windows"></a>文件視窗
  文件視窗是一個已框架處理的子視窗之多重文件介面 (MDI) 視窗。 文件視窗通常用來裝載在文字編輯器、 表單編輯器 （也稱為設計工具） 或編輯控制項，但它們也可以裝載其他功能的類型。 **新的檔案**對話方塊包含 Visual Studio 提供的文件視窗的範例。
 
- 大多數編輯器是一種程式設計語言或檔案類型，例如 HTML 頁面、 框架、 c + + 檔案或標頭檔的特定項目。 選取的範本**新的檔案** 對話方塊中，使用者以動態方式建立的文件視窗與範本相關聯的檔案類型的編輯器。 當使用者開啟現有的檔案，也會建立文件視窗。
+ 大部分的編輯器的程式設計語言或檔案類型，例如 HTML 頁面，框架，特定C++檔案或標頭檔。 選取的範本**新的檔案** 對話方塊中，使用者以動態方式建立的文件視窗與範本相關聯的檔案類型的編輯器。 當使用者開啟現有的檔案，也會建立文件視窗。
 
  文件視窗僅限於在 MDI 工作區。 每個文件視窗具有 索引標籤的上方、 且定位順序連結至其他可能是 MDI 區域中開啟的視窗。 以滑鼠右鍵按一下  索引標籤的文件視窗會顯示捷徑功能表，其中包括將 MDI 區域分割成多個水平或垂直索引標籤群組的選項。 分割 MDI 區域可讓同時檢視多個檔案。 如需詳細資訊，請參閱 <<c0> [ 文件 Windows](../../extensibility/internals/document-windows.md)。
 
@@ -87,7 +87,7 @@ ms.locfileid: "57870269"
 
 在 Visual Studio 中，專案會是開發人員用來組織及建置的原始程式碼和其他資源的容器。 可讓您組織、 建置、 偵錯及部署來源的程式碼的專案，請參考 Web 服務、 資料庫和其他資源。 Vspackage 可以擴充 Visual Studio 專案系統所提供的專案類型、 專案子類型，以及自訂的工具。
 
-專案可能也一起收集*解決方案*，這是一群共同運作以建立應用程式的一或多個專案。 屬於方案的專案和狀態資訊會儲存在兩個方案檔，以文字為基礎[方案 (.sln) 檔案](solution-dot-sln-file.md)和二元[方案使用者選項 (.suo) 檔案](solution-user-options-dot-suo-file.md)。 這些檔案是類似於舊版的 Visual Basic 和工作區 (.dsw) 時使用的群組 (.vbg) 檔案和舊版的 c + + 中所使用的使用者選項 (.opt) 檔案。
+專案可能也一起收集*解決方案*，這是一群共同運作以建立應用程式的一或多個專案。 屬於方案的專案和狀態資訊會儲存在兩個方案檔，以文字為基礎[方案 (.sln) 檔案](solution-dot-sln-file.md)和二元[方案使用者選項 (.suo) 檔案](solution-user-options-dot-suo-file.md)。 這些檔案是類似於在舊版的 Visual Basic 中，所使用的群組 (.vbg) 檔案，以及工作區 (.dsw) 和使用者選項 (.opt) 檔案中較早版本所使用的C++。
 
 如需詳細資訊，請參閱 <<c0> [ 專案](../../extensibility/internals/projects.md)並[解決方案](../../extensibility/internals/solutions-overview.md)。
 

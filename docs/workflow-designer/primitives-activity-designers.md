@@ -9,11 +9,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 0facda4d2dfab4862208a6267f2b0f5f4db61b08
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55909384"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62969354"
 ---
 # <a name="primitives-activity-designers"></a>基本活動設計工具
 

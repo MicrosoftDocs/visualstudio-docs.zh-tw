@@ -8,12 +8,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: c455f36d17b761fe02b7d78e96fbf2c4582d490d
-ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
-ms.translationtype: MT
+ms.openlocfilehash: 25f844acefed50b5bb35e3b1d8c6a570e11ca194
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58415807"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62949511"
 ---
 # <a name="how-to-define-and-consume-activity-delegates-in-the-workflow-designer"></a>HOW TO：定義並取用工作流程設計工具中的活動委派
 
@@ -70,17 +70,17 @@ ms.locfileid: "58415807"
 
 ## <a name="use-the-custom-activity-in-a-workflow"></a>使用工作流程中的自訂活動
 
-1.  建置專案，藉由按下**Ctrl**+**Shift**+**B**。
+1. 建置專案，藉由按下**Ctrl**+**Shift**+**B**。
 
-2.  在 **方案總管**，開啟**Workflow1.xaml**設計工具中。
+2. 在 **方案總管**，開啟**Workflow1.xaml**設計工具中。
 
-3.  拖曳**MyForEach**從工具箱拖曳至設計工具介面的活動。 活動是在與專案同名的工具箱 的區段中。
+3. 拖曳**MyForEach**從工具箱拖曳至設計工具介面的活動。 活動是在與專案同名的工具箱 的區段中。
 
-4.  設定**項目**屬性**MyForEach**活動**new Object [] {1，"abc"}**。
+4. 設定**項目**屬性**MyForEach**活動**new Object [] {1，"abc"}**。
 
-5.  拖曳<xref:System.Activities.Statements.WriteLine>活動，從**基本型別**工具箱的區段**Delegate: Body**一節**MyForEach**活動。
+5. 拖曳<xref:System.Activities.Statements.WriteLine>活動，從**基本型別**工具箱的區段**Delegate: Body**一節**MyForEach**活動。
 
-6.  設定**文字**屬性<xref:System.Activities.Statements.WriteLine>活動**argument.tostring （)**。
+6. 設定**文字**屬性<xref:System.Activities.Statements.WriteLine>活動**argument.tostring （)**。
 
 工作流程執行時，主控台會顯示下列輸出：
 

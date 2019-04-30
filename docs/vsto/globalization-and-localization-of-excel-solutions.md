@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: f8d21f1697ce3d566c27e9845ae4c2a9a9d5e068
-ms.sourcegitcommit: 845442e2b515c3ca1e4e47b46cc1cef4df4f08d8
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/20/2019
-ms.locfileid: "56450174"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62972287"
 ---
 # <a name="globalization-and-localization-of-excel-solutions"></a>全球化和當地語系化的 Excel 方案
   本節包含在非英文設定的 Windows 電腦上執行 Microsoft Office Excel 解決方案之特殊考量的相關資訊。 當您使用 Visual Studio 建立其他種類的解決方案時，遇到的 Microsoft Office 解決方案全球化和當地語系化問題層面，大部分都一樣。 如需一般資訊，請參閱 < [Globalize 和當地語系化應用程式](../ide/globalizing-and-localizing-applications.md)。
@@ -77,7 +77,7 @@ Application.ActiveCell.Value2 = "05/12/04"
 
  但相同的程式碼，用在以 Visual Studio 中的 Office 開發工具建立的解決方案並透過 COM Interop 傳遞到 Excel 時，產生的結果和以 en-US 樣式格式化的日期一樣。
 
- 例如: 
+ 例如：
 
  [!code-vb[Trin_VstcoreCreatingExcel#6](../vsto/codesnippet/VisualBasic/Trin_VstcoreCreatingExcelVB/Sheet1.vb#6)]
  [!code-csharp[Trin_VstcoreCreatingExcel#6](../vsto/codesnippet/CSharp/Trin_VstcoreCreatingExcelCS/Sheet1.cs#6)]

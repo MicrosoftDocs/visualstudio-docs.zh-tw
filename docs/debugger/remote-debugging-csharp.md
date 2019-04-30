@@ -19,14 +19,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: c2e388154e0efa129a916fd0461a01317edbb870
-ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
-ms.translationtype: MTE95
+ms.openlocfilehash: 4c646f8f6dc228d42d6efb5ec44f3ec19a53a551
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58355159"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63408541"
 ---
-# <a name="remote-debugging-a-c-or-visual-basic-project-in-visual-studio"></a>遠端偵錯C#或 Visual Studio 中的 Visual Basic 專案
+# <a name="remote-debugging-a-c-or-visual-basic-project-in-visual-studio"></a>遠端偵錯 Visual Studio 中的 C# 或 Visual Basic 專案
 若要偵錯已部署在不同電腦的 Visual Studio 應用程式，安裝和您用來部署您的應用程式的電腦上執行遠端工具，設定您的專案從 Visual Studio 中，連線到遠端電腦，然後執行您的應用程式。
 
 ![遠端偵錯工具元件](../debugger/media/remote-debugger-client-apps.png "Remote_debugger_components")
@@ -90,7 +90,7 @@ ms.locfileid: "58355159"
 10. 從 Visual Studio 電腦複製您剛才建置的可執行檔到遠端電腦上新建立的資料夾。
 
     > [!CAUTION]
-    >  不變更程式碼或重建 （或您必須重複此步驟）。 您複製到遠端電腦的可執行檔必須完全符合您的本機來源和符號。
+    > 不變更程式碼或重建 （或您必須重複此步驟）。 您複製到遠端電腦的可執行檔必須完全符合您的本機來源和符號。
 
     您可以手動複製專案，請使用 Xcopy、 Robocopy、 Powershell 或其他選項。
 
@@ -116,7 +116,7 @@ ms.locfileid: "58355159"
 
 [!INCLUDE [remote-debugger-symbols](../debugger/includes/remote-debugger-symbols.md)]
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [Visual Studio 偵錯](../debugger/index.md)
 - [偵錯工具簡介](../debugger/debugger-feature-tour.md)
 - [設定 Windows 防火牆進行遠端偵錯](../debugger/configure-the-windows-firewall-for-remote-debugging.md)

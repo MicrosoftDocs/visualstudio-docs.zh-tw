@@ -9,12 +9,12 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ce02d639f6fcd3040566a2c279713c046f9c6ead
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: f41b6332aab272baed17e9955687c34803003d0b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60068090"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444575"
 ---
 # <a name="how-to-create-an-activity-library"></a>HOW TO：建立活動程式庫
 自訂活動是用來將工作流程中特定的商務程序模型化。 [!INCLUDE[vs2010](../includes/vs2010-md.md)] 中提供了活動程式庫範本，可讓您透過 [!INCLUDE[wfd1](../includes/wfd1-md.md)] 來以視覺方式建立這類自訂活動。  
@@ -38,14 +38,14 @@ ms.locfileid: "60068090"
 7. 在 **解決方案**方塊中，輸入描述性的名稱，您的解決方案，然後按一下**確定**。  
   
     > [!NOTE]
-    >  如果您想要新增至現有的方案工作流程主控台應用程式，開啟該方案中的[!INCLUDE[vs2010](../includes/vs2010-md.md)]，以滑鼠右鍵按一下方案中的**方案總管 中**，然後選取**新增**，然後**新增專案...** 若要開啟 [**新的專案**] 對話方塊。 依照本程序上面的說明繼續進行。  
+    > 如果您想要新增至現有的方案工作流程主控台應用程式，開啟該方案中的[!INCLUDE[vs2010](../includes/vs2010-md.md)]，以滑鼠右鍵按一下方案中的**方案總管 中**，然後選取**新增**，然後**新增專案...** 若要開啟 [**新的專案**] 對話方塊。 依照本程序上面的說明繼續進行。  
   
 8. 專案範本會以 XAML 格式建立活動定義。 [!INCLUDE[wfd1](../includes/wfd1-md.md)] 會開啟並顯示自訂活動的畫布。  
   
 9. 活動拖曳**工具箱**至設計介面，以將它包含在您的自訂活動。  
   
     > [!CAUTION]
-    >  自訂活動的主體中僅可有一個子活動，但是該子活動可以是複合活動，例如 <xref:System.Activities.Statements.Sequence> 活動或 <xref:System.Activities.Statements.Flowchart> 活動。  
+    > 自訂活動的主體中僅可有一個子活動，但是該子活動可以是複合活動，例如 <xref:System.Activities.Statements.Sequence> 活動或 <xref:System.Activities.Statements.Flowchart> 活動。  
   
 ## <a name="see-also"></a>另請參閱  
  [如何：建立活動](http://msdn.microsoft.com/library/c09b1e99-21b5-4d96-9c04-ec31db3f4436)   

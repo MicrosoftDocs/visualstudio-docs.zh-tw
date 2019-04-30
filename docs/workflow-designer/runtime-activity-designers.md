@@ -9,11 +9,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 54c24949c2f7046eade040498fbbd53962f12440
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55921168"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63008699"
 ---
 # <a name="runtime-activity-designers"></a>Runtime 活動設計工具
 執行階段活動設計工具會用來保存及結束工作流程活動。 在這一節中所包含的主題提供如何使用工作流程設計工具的活動設計工具的指引。

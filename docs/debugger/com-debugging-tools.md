@@ -22,11 +22,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 181596e7b76dc2288da82e731455710fde0205d8
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54964960"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62564739"
 ---
 # <a name="com-debugging-tools"></a>COM 偵錯工具
 
@@ -47,4 +47,4 @@ MFC ActiveX 範例 OCLIENT 和 SUPERPAD 也可以用來測試您的應用程式�
 - [Visual Studio 偵錯](../debugger/index.md)
 - [偵錯工具簡介](../debugger/debugger-feature-tour.md)
 - [OCLIENT 範例：說明如何視覺化編輯容器應用程式](https://msdn.microsoft.com/library/8cd5c234-9a4e-4934-8f5d-bac189ad92c4)
-- [SUPERPAD 範例：示範使用 CEditView 編輯文字的視覺化編輯伺服程式](https://msdn.microsoft.com/library/7b14e975-d986-4e6a-8289-226485cfcb72)
+- [SUPERPAD 範例：示範視覺化編輯伺服器編輯使用 CEditView 的文字](https://msdn.microsoft.com/library/7b14e975-d986-4e6a-8289-226485cfcb72)

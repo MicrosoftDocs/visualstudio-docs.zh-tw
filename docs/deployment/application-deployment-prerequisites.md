@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 12a46c424e8b2c44e0622edf4b4a615273580814
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: 6a4bf5545deecccb647b5113c4335539c6acb488
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59657588"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63408581"
 ---
 # <a name="application-deployment-prerequisites"></a>應用程式部署必要條件
 
@@ -48,7 +48,7 @@ ms.locfileid: "59657588"
   [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 可以偵測遺漏的必要條件，然後您可以使用啟動載入器，以便安裝必要條件。 如需詳細資訊，請參閱[如何：隨著 ClickOnce 應用程式安裝必要軟體](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md)。
 
 > [!NOTE]
->  若要變更 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 和 *MageUI.exe* 等工具所產生資訊清單中的值，您必須在文字編輯器中編輯應用程式資訊清單，然後重新簽署應用程式資訊清單和部署資訊清單。 如需詳細資訊，請參閱[如何：重新簽署應用程式和部署資訊清單](../deployment/how-to-re-sign-application-and-deployment-manifests.md)。
+> 若要變更 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 和 *MageUI.exe* 等工具所產生資訊清單中的值，您必須在文字編輯器中編輯應用程式資訊清單，然後重新簽署應用程式資訊清單和部署資訊清單。 如需詳細資訊，請參閱[如何：重新簽署應用程式和部署資訊清單](../deployment/how-to-re-sign-application-and-deployment-manifests.md)。
 
  如果您使用 Visual Studio 和 ClickOnce 部署應用程式，預設會根據方案中的 .NET Framework 版本來選取啟動載入器套件。 但是，如果您變更目標 .NET Framework 版本，則必須手動更新 [必要條件] 對話方塊中的選項。
 

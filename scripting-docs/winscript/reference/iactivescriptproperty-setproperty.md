@@ -17,12 +17,12 @@ caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f24f63612b5d4dcb1c6a5a65e0ad38f8056cf842
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
-ms.translationtype: MT
+ms.openlocfilehash: d689b7b2a252b208ae578f9bfd95ab93777f7cc5
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58159383"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63385958"
 ---
 # <a name="iactivescriptpropertysetproperty"></a>IActiveScriptProperty::SetProperty
 設定參數所指定的屬性。  
@@ -76,7 +76,7 @@ HRESULT SetProperty(
  若要選取的語言功能，當支援一組[!INCLUDE[javascript](../../javascript/includes/javascript-md.md)]指令碼引擎已初始化，則叫用`SetProperty`，並將對應的值傳遞至設為 SCRIPTPROP_INVOKEVERSIONING 啟用的語言功能。 如果這個屬性設定為 1 (SCRIPTLANGUAGEVERSION_5_7)，可用的語言功能會出現在 5.7 版的這些相同[!INCLUDE[javascript](../../javascript/includes/javascript-md.md)]指令碼引擎。 如果它設定為 2 (SCRIPTLANGUAGEVERSION_5_8)，可用的語言功能是出現在 5.7 版除了 5.8 版中所加入的新功能。 根據預設，這個屬性會設定為 0 (SCRIPTLANGUAGEVERSION_DEFAULT)，除非主機支援不同的預設行為，這是相當於出現在 5.7，版的語言功能集。 例如，Internet Explorer 8 選擇加入[!INCLUDE[javascript](../../javascript/includes/javascript-md.md)]5.8 的版本所支援的語言功能[!INCLUDE[javascript](../../javascript/includes/javascript-md.md)]Internet Explorer 8 的預設文件模式是 「 Internet Explorer 8 標準 」 模式時，預設的指令碼引擎。 切換至 Internet Explorer 7 標準的 Internet Explorer 8 文件模式或 Quirks 模式重設[!INCLUDE[javascript](../../javascript/includes/javascript-md.md)]支援只會將語言功能集存在於在 5.7 版中的指令碼引擎[!INCLUDE[javascript](../../javascript/includes/javascript-md.md)]指令碼引擎。  
   
 > [!NOTE]
->  時，才應該設定 SCRIPTPROP_INVOKEVERSIONING[!INCLUDE[javascript](../../javascript/includes/javascript-md.md)]指令碼引擎正在初始化。  
+> 時，才應該設定 SCRIPTPROP_INVOKEVERSIONING[!INCLUDE[javascript](../../javascript/includes/javascript-md.md)]指令碼引擎正在初始化。  
   
 ## <a name="example"></a>範例  
  下列範例顯示如何強制使用整數除法指令碼引擎，以及如何允許的比較函式多載。  

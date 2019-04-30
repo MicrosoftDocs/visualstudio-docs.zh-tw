@@ -13,12 +13,12 @@ caps.latest.revision: 33
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 19280ccd2564cdbec14a1d74ae8babb9447c05e7
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: e190360b4441a937e9bfa9fb317f9d07de506040
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60103718"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63447242"
 ---
 # <a name="idiasymbol"></a>IDiaSymbol
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -35,7 +35,7 @@ IDiaSymbol : IUnknown
  下表顯示的方法`IDiaSymbol`。  
   
 > [!NOTE]
->  符號會傳回有意義的資料，只是部分這些方法，根據符號的類型。 如果方法傳回`S_OK`，則該方法已經傳回有意義的資料。  
+> 符號會傳回有意義的資料，只是部分這些方法，根據符號的類型。 如果方法傳回`S_OK`，則該方法已經傳回有意義的資料。  
   
 |方法|描述|  
 |------------|-----------------|  
@@ -264,7 +264,7 @@ IDiaSymbol : IUnknown
  此範例示範如何顯示在指定的相對虛擬位址的函式的區域變數。 它也會示範如何彼此相關的不同類型的符號。  
   
 > [!NOTE]
->  `CDiaBSTR` 是一個類別，包裝`BSTR`並可自動處理具現化超出範圍時釋出的字串。  
+> `CDiaBSTR` 是一個類別，包裝`BSTR`並可自動處理具現化超出範圍時釋出的字串。  
   
 ```cpp#  
 void DumpLocalVars( DWORD rva, IDiaSession *pSession )  

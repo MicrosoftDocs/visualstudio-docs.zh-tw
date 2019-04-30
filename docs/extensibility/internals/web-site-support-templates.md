@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: fc5370db9c090fe5a7dcd9852d3df94e05f08e1f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60116494"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62856850"
 ---
 # <a name="web-site-support-templates"></a>網站支援範本
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 網站專案和項目範本會提供可重複使用且可自訂的網站專案和項目虛設常式，並不需要從頭開始建立新的網站專案和項目，來加速開發程序。 如需詳細資訊[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]範本，請參閱[建立專案和項目範本](../../ide/creating-project-and-item-templates.md)。

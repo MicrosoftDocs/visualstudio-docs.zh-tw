@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: d2a1eea79b0ac2d80fb2b75043d4462e73928798
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56620833"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62909550"
 ---
 # <a name="legacy-language-service-features"></a>舊版語言服務功能
 Managed 的封裝架構 (MPF) 語言服務可支援一或多個[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]功能，例如語法醒目提示、 IntelliSense 和中斷點驗證。 獨立於其他實作每個功能，但所有需要剖析器和語法反白顯示，除了需要掃描程式掃描程式。

@@ -9,12 +9,12 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 51dfdc95748690f43809244dc14ae2662d8aec39
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: b00f89b60c7e884bfaf71e971722530b44a78b4e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60086594"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445691"
 ---
 # <a name="help-viewer-administrator-guide"></a>說明檢視器系統管理員指南
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -51,7 +51,7 @@ ms.locfileid: "60086594"
 - 說明的預設來源仍處於線上。  
   
   > [!TIP]
-  >  您可以修改  HKEY_LOCAL_MACHINE\Software\Microsoft\VisualStudio\14.0\help\UseOnlineHelp 登錄機碼，變更說明的預設來源。 如需詳細資訊，請參閱 [Help Content Manager 覆寫設定](../ide/help-content-manager-overrides.md)。  
+  > 您可以修改  HKEY_LOCAL_MACHINE\Software\Microsoft\VisualStudio\14.0\help\UseOnlineHelp 登錄機碼，變更說明的預設來源。 如需詳細資訊，請參閱 [Help Content Manager 覆寫設定](../ide/help-content-manager-overrides.md)。  
   
 - 用戶端仍會提示您在第一次啟動 Visual studio 時安裝基本的說明內容。 您可以修改  HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VisualStudio\14.0\Help\DisableFirstRunHelpSelection 登錄機碼，以停用此提示。  
   
@@ -78,7 +78,7 @@ ms.locfileid: "60086594"
 - 在安裝本機說明內容後，使用者必須擁有系統管理員權限，以更新、新增或移除本機說明內容。  
   
   > [!TIP]
-  >  如果使用者沒有系統管理員權限，建議您停用說明檢視器中的 [管理內容] 索引標籤。 如需詳細資訊，請參閱 [Help Content Manager 覆寫設定](../ide/help-content-manager-overrides.md)。  
+  > 如果使用者沒有系統管理員權限，建議您停用說明檢視器中的 [管理內容] 索引標籤。 如需詳細資訊，請參閱 [Help Content Manager 覆寫設定](../ide/help-content-manager-overrides.md)。  
   
   警告：  
   
@@ -141,7 +141,7 @@ ms.locfileid: "60086594"
   
 2. 建立 .bat 檔案，以包含說明內容的部署指令碼。 由於用戶端在推送的部分過程中要刪除的檔案可能有讀取鎖定，您應該在推送更新之前關閉用戶端。  
   
-     例如：  
+     例如:   
   
     ```  
     REM - copy pre-ripped content to ProgramData  

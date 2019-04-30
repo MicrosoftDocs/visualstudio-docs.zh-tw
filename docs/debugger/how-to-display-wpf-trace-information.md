@@ -17,11 +17,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 55b818940a8e2a779c7bbc0e17dec5cd891a2d88
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60091391"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62848103"
 ---
 # <a name="how-to-display-wpf-trace-information"></a>HOW TO：顯示 WPF 追蹤資訊
 [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] 可以從 WPF 應用程式接收偵錯追蹤資訊，並將該資訊顯示在 [輸出] 視窗中。 若要顯示偵錯追蹤資訊，則必須啟用 WPF 追蹤功能。

@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: ff3ed7d23272bad1e047ddca46e20b4710644e30
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56704445"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62842601"
 ---
 # <a name="idebugpointerfield"></a>IDebugPointerField
 這個介面會表示為指標類型。
@@ -42,7 +42,7 @@ IDebugPointerField : IDebugContainerField
 |[GetDereferencedField](../../../extensibility/debugger/reference/idebugpointerfield-getdereferencedfield.md)|傳回[IDebugField](../../../extensibility/debugger/reference/idebugfield.md)描述指標的目標。|
 
 ## <a name="remarks"></a>備註
- C/c + +，指標可以是一個容器，如果使用它來使用陣列標記法。 例如，假設`char *pString`，`pString`的類型指標為`char`。 `pString[3]` 具有型別的一種容器，是一個指向`char`參考該容器的第四個項目。
+ 在 C /C++，如果使用它來使用陣列標記法指標可以是一個容器。 例如，假設`char *pString`，`pString`的類型指標為`char`。 `pString[3]` 具有型別的一種容器，是一個指向`char`參考該容器的第四個項目。
 
 ## <a name="requirements"></a>需求
  標頭： sh.h

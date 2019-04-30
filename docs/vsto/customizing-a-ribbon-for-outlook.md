@@ -17,11 +17,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 58735a36afd48132f919e370da5e27fd0c42a0f0
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56614957"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62956145"
 ---
 # <a name="customize-a-ribbon-for-outlook"></a>適用於 Outlook 自訂功能區
   當您在 Microsoft Office Outlook 自訂功能區時，您必須考慮自訂功能區在應用程式中出現的位置。 Outlook 會將功能區顯示在主應用程式使用者介面 (UI) 中，以及在使用者執行建立電子郵件訊息等特定工作時開啟的視窗中。 這些應用程式視窗名為偵測器。

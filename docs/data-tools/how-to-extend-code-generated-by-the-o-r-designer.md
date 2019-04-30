@@ -9,11 +9,11 @@ manager: jillfra
 ms.workload:
 - data-storage
 ms.openlocfilehash: e82166ab336023812c63045c031b81d94dea67e0
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60066243"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62566992"
 ---
 # <a name="how-to-extend-code-generated-by-the-or-designer"></a>HOW TO：擴充 O/R 設計工具產生的程式碼
 所產生的程式碼**O/R Designer**實體類別和設計工具介面上的其他物件進行變更時重新產生。 因為有這項重新產生作業，所以當設計工具重新產生程式碼時，您之前加入至所產生程式碼的程式碼，通常都會遭覆寫。 **O/R Designer**提供產生部分類別檔案，您可以在其中新增的功能不會覆寫的程式碼。 將您自己的程式碼加入至產生的程式碼的其中一個範例**O/R Designer**是資料將驗證新增至 LINQ to SQL (entity) 類別。 如需詳細資訊，請參閱[如何：將驗證新增至實體類別](../data-tools/how-to-add-validation-to-entity-classes.md)。

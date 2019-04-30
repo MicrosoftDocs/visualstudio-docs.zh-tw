@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 581f9c0b9907fd59863f6a468a45ef67d9966475
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60061394"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62813148"
 ---
 # <a name="how-to-run-code-when-deployment-steps-are-executed"></a>HOW TO：執行部署步驟時執行程式碼
   如果您想要執行的 SharePoint 專案中的部署步驟的其他工作，您可以處理的 SharePoint 專案項目之前和之後 Visual Studio 會執行每個部署步驟引發的事件。 如需詳細資訊，請參閱 <<c0> [ 擴充 SharePoint 封裝和部署](../sharepoint/extending-sharepoint-packaging-and-deployment.md)。

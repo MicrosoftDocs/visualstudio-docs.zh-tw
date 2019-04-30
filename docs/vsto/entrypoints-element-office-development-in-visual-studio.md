@@ -15,11 +15,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 5bbe0c00b86f38ab8b3dc47713af7d3b38f98045
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54862274"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62797560"
 ---
 # <a name="ltentrypointsgt-element-office-development-in-visual-studio"></a>&lt;進入點&gt;元素 （在 Visual Studio 中的 Office 程式開發）
   `entryPoints` 命名空間的 `vstav3` 項目包含與 Office 方案相關聯的所有 `entryPoint` 項目。

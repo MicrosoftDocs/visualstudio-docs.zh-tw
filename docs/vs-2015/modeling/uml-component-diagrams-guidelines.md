@@ -15,12 +15,12 @@ caps.latest.revision: 37
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 0b4a5e7e626e7cf9510047f0b016ff80ea8203e1
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: ef8a152293ef5e1cf9137540abb5590eb43c057a
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60056779"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63424442"
 ---
 # <a name="uml-component-diagrams-guidelines"></a>UML 元件圖：方針
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -57,7 +57,7 @@ ms.locfileid: "60056779"
  如需如何使用在設計流程中的元件圖的詳細資訊，請參閱[您的應用程式架構模型](../modeling/model-your-app-s-architecture.md)。  
   
 > [!NOTE]
->  建立任何模型圖的詳細的步驟所述[編輯 UML 模型和圖表](../modeling/edit-uml-models-and-diagrams.md)。  
+> 建立任何模型圖的詳細的步驟所述[編輯 UML 模型和圖表](../modeling/edit-uml-models-and-diagrams.md)。  
   
 #### <a name="to-create-a-component-diagram"></a>建立元件圖  
   
@@ -157,7 +157,7 @@ ms.locfileid: "60056779"
          提供的介面隨即出現在元件上。 旁邊顯示動作標籤。  
   
         > [!NOTE]
-        >  如果您使用**貼上**而不是**貼上參考**，將會建立具有新名稱的新介面。  
+        > 如果您使用**貼上**而不是**貼上參考**，將會建立具有新名稱的新介面。  
   
     3. 如果您想要建立需要的介面，請按一下動作標籤，然後按一下**轉換成需要的介面**。  
   

@@ -15,11 +15,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 10564f34683fec5c38ae069f2fb0c51fb0c8902a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60103455"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62935090"
 ---
 # <a name="expected-constant"></a>必須是常數
 您嘗試使用條件式編譯測試陳述式中的 （非條件式編譯） 變數。 條件式編譯測試陳述式必須評估為常數。  

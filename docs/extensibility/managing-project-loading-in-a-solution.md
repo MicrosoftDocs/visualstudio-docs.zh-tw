@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7a383096d164f1b08e2411a7bc808e96f8a6262e
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 5dcd8293bc11645b8ad934d1826286a8df51e5e9
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60061303"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63431309"
 ---
 # <a name="manage-project-loading-in-a-solution"></a>管理方案中的專案載入
 Visual Studio 方案可以包含大量的專案。 Visual Studio 預設會在開啟解決方案時，階段中載入方案中的所有專案，而且不允許使用者存取的任何專案，直到它們全部完成載入。 當專案載入的程序會持續超過兩分鐘時，會顯示進度列，顯示載入的專案數目及專案的總數。 使用者可以同時使用多個專案的方案中工作卸載的專案，但此程序有一些缺點： 已卸載的專案並不是建置為重建方案 命令的一部分，並關閉 IntelliSense 描述的型別和成員專案不會顯示。
@@ -44,7 +44,7 @@ pSolution.SetProperty((int)__VSPROPID4.VSPROPID_ActiveSolutionLoadManager, objLo
  如果方案負載管理員就是要管理解決方案載入一般情況下，它可以實作 VSPackage 的一部分。 封裝應該設定為自動載入，加上<xref:Microsoft.VisualStudio.Shell.ProvideAutoLoadAttribute>值為 vspackage <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.SolutionOpening_guid>。 然後可以在中啟用方案負載管理員<xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A>方法。
 
 > [!NOTE]
->  如需有關自動載入封裝的詳細資訊，請參閱[載入 Vspackage](../extensibility/loading-vspackages.md)。
+> 如需有關自動載入封裝的詳細資訊，請參閱[載入 Vspackage](../extensibility/loading-vspackages.md)。
 
  Visual Studio 可以辨識只有最後一個方案負載管理員啟動，因為一般解決方案負載管理員應該一律會偵測是否有現有的負載管理員之後再啟動本身。 如果呼叫`GetProperty()`上的方案服務[__VSPROPID4。VSPROPID_ActiveSolutionLoadManager](<xref:Microsoft.VisualStudio.Shell.Interop.__VSPROPID4.VSPROPID_ActiveSolutionLoadManager>)傳回`null`，沒有使用中的方案負載管理員。 如果它不會傳回 null，請檢查物件是否與您的方案負載管理員相同。
 

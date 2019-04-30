@@ -9,11 +9,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 4d6ab950c31bc6444eb0b8ae054d74c9a69ed466
-ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57526486"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62838642"
 ---
 # <a name="context-menus-xml-schema-explorer"></a>操作功能表 （XML 結構描述總管）
 
@@ -63,7 +63,7 @@ ms.locfileid: "57526486"
 |**檢視程式碼**|開啟包含所選取的節點，在 XML 編輯器中的檔案。 在 XML 結構描述總管中選取的項目也會在 XML 編輯器中選取。|
 |**屬性視窗**|會開啟**屬性**視窗 （如果它尚未開啟）。 這個視窗會顯示與節點有關的資訊。|
 
-## <a name="node-type-element"></a>節點型別：元素
+## <a name="node-type-element"></a>節點型別：項目
  除了上述的全域節點選項外，項目節點的操作功能表還包含下列選項：
 
 |選項|描述|

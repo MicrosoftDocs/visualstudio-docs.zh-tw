@@ -12,11 +12,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: b471cee4a07722e37ae4b58817823dd4fa48ee26
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58940805"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63004424"
 ---
 # <a name="terminateworkflow-activity-designer"></a>TerminateWorkflow 活動設計工具
 **TerminateWorkflow**活動設計工具會用來建立及設定<xref:System.Activities.Statements.TerminateWorkflow>活動。  

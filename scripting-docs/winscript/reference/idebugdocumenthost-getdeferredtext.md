@@ -17,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f20b090f880168b3561cba547db319813ba3fe02
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
-ms.translationtype: MT
+ms.openlocfilehash: 3e5800a6de15d2d59208022fa44d3c2f4c931e14
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58148069"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446577"
 ---
 # <a name="idebugdocumenthostgetdeferredtext"></a>IDebugDocumentHost::GetDeferredText
 傳回已加入使用的字元範圍`IDebugDocumentHelper::AddDeferredText`方法，在原始的主機文件。  
@@ -67,7 +67,7 @@ HRESULT GetDeferredText(
  這個方法可能會傳回`E_NOTIMPL`，如果主應用程式不會呼叫`IDebugDocumentHelper::AddDeferredText`。  
   
 > [!NOTE]
->  這個方法會傳回原始文件的文字。 主應用程式不會不追蹤的編輯動作或其他文件的變更。  
+> 這個方法會傳回原始文件的文字。 主應用程式不會不追蹤的編輯動作或其他文件的變更。  
   
 ## <a name="see-also"></a>另請參閱  
  [IDebugDocumentHost 介面](../../winscript/reference/idebugdocumenthost-interface.md)   

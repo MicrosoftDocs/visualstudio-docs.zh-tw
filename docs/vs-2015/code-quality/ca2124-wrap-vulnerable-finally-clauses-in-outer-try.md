@@ -15,12 +15,12 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 1eb503e9f5a9251cb9a348d29c7cd9636389a080
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 755cce18afcad3fde621fb5a960cc780906afe51
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58943502"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63385987"
 ---
 # <a name="ca2124-wrap-vulnerable-finally-clauses-in-outer-try"></a>CA2124:必須將有弱點的 finally 子句包裝在外層 try 中
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,7 +39,7 @@ ms.locfileid: "58943502"
  此規則會找出`try` / `finally`中以版本 1.0 和 1.1 版為目標的程式碼區塊[!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]可能容易受到惡意的例外狀況篩選條件出現在呼叫堆疊。 如果敏感的作業，例如模擬就會發生在 try 區塊中，而且會擲回例外狀況，可以執行篩選條件之前`finally`區塊。 模擬範例中，這表示篩選條件會執行以模擬的使用者。 篩選條件是目前實作，只要在 Visual Basic 中。
 
 > [!WARNING]
->  **附註**2.0 和更新版本的版本[!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]，執行階段自動保護`try` / `catch` /  `finally`阻止惡意的例外狀況篩選條件，如果重設，就會發生直接在方法內，其中包含例外狀況區塊。
+> **附註**2.0 和更新版本的版本[!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]，執行階段自動保護`try` / `catch` /  `finally`阻止惡意的例外狀況篩選條件，如果重設，就會發生直接在方法內，其中包含例外狀況區塊。
 
 ## <a name="how-to-fix-violations"></a>如何修正違規
  將未包裝`try` / `finally`外部 try 區塊中。 請參閱接下來的第二個範例。 這會強制`finally`篩選程式碼之前執行。

@@ -9,12 +9,12 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 98a7159f750a036ed588fd01761e20a2a23ee84e
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 802ff20facead891f05ac4727d1c091d095c50a2
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60059964"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63442486"
 ---
 # <a name="step-6-name-your-button-controls"></a>步驟 6：命名按鈕控制項
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -22,7 +22,7 @@ ms.locfileid: "60059964"
 表單上只有一個 PictureBox。 加入它時，IDE 會自動將它命名為 **pictureBox1**。 只有一個 CheckBox，名為 **checkBox1**。 接著，您將撰寫一些程式碼，該程式碼會參考 CheckBox 和 PictureBox。 因為這些控制項都只有一個，所以您在程式碼中看到 **pictureBox1** 或 **checkBox1** 時就知道它們代表的意義。  
   
 > [!NOTE]
->  在 Visual Basic 中，任何控制項名稱的預設第一個字母都是大寫，所以是 **PictureBox1**、 **CheckBox1**，依此類推。  
+> 在 Visual Basic 中，任何控制項名稱的預設第一個字母都是大寫，所以是 **PictureBox1**、 **CheckBox1**，依此類推。  
   
  表單上有四個按鈕，IDE 將它們分別命名為 **button1**、 **button2**、 **button3**及 **button4**。 只從目前的名稱來看，並無法得知哪一個按鈕才是 [關閉]  按鈕，以及哪一個是 [顯示圖片]  按鈕。 這就是為按鈕控制項指定更具資訊性名稱會很有用的原因。  
   
@@ -36,7 +36,7 @@ ms.locfileid: "60059964"
 包含 closeButton 名稱的 [屬性] 視窗  
   
     > [!NOTE]
-    >  如果您嘗試將按鈕的名稱變更為 **closeButton**，並在 close 和 Button 兩字中間加上空格，則 IDE 會顯示錯誤訊息：「屬性值無效」。 控制項名稱中不允許空格 (和其他一些字元)。  
+    > 如果您嘗試將按鈕的名稱變更為 **closeButton**，並在 close 和 Button 兩字中間加上空格，則 IDE 會顯示錯誤訊息：「屬性值無效」。 控制項名稱中不允許空格 (和其他一些字元)。  
   
 2. 將其他三個按鈕分別重新命名為 **backgroundButton**、 **clearButton**和 **showButton**。 您可以選擇 [屬性]  視窗中的控制項選取器下拉式清單，以驗證這些名稱。 新按鈕名稱隨即出現。  
   
@@ -53,14 +53,14 @@ ms.locfileid: "60059964"
      您看到稱為 `showButton_Click()`的程式碼。 當您開啟 **showButton** 按鈕的程式碼檔時，IDE 已將此加入至表單的程式碼。 在設計階段，當您開啟表單中的控制項程式碼檔案時，如果該控制項的程式碼不存在，會產生程式碼。 這個程式碼稱為 *「方法」*(method)，當您執行程式並選取控制項 (在此例中，[顯示圖片]  按鈕) 時執行它。  
   
     > [!NOTE]
-    >  在本教學課程中，自動產生的 Visual Basic 程式碼已經過簡化，括弧 () 之間的任何程式碼都已移除。 在此情況下，您也可以移除相同的程式碼。 您的程式在任一情況下都可運作。 在教學課程的其餘部分，任何自動產生的程式碼也都會盡可能地簡化。  
+    > 在本教學課程中，自動產生的 Visual Basic 程式碼已經過簡化，括弧 () 之間的任何程式碼都已移除。 在此情況下，您也可以移除相同的程式碼。 您的程式在任一情況下都可運作。 在教學課程的其餘部分，任何自動產生的程式碼也都會盡可能地簡化。  
   
 5. 再次選擇 Windows 表單設計工具索引標籤 (在 Visual C# 中為**Form1.cs [設計]** ，在 Visual Basic 中為 **Form1.vb [設計]** )，然後開啟 [清除圖片]  按鈕的程式碼檔，在表單程式碼中建立它的方法。 針對其他兩個按鈕重複此步驟。 IDE 每一次都會將新的方法加入至表單的程式碼檔案。  
   
 6. 若要再加入一個方法，在 [Windows Forms 設計工具] 中開啟 CheckBox 控制項的程式碼檔案，讓 IDE 加入 `checkBox1_CheckedChanged()` 方法。 每當使用者選取或清除核取方塊時就會呼叫該方法。  
   
     > [!NOTE]
-    >  在設計程式時，您通常會在程式碼編輯器和 [Windows Forms 設計工具] 之間移動。 IDE 可讓您在專案中輕鬆巡覽。 使用 [方案總管]  開啟 [Windows Forms 設計工具] (在 Visual C# 中按兩下 [Form1.cs]  或在 Visual Basic 中按兩下 [Form1.vb]  )，或是在功能表列上選擇 [檢視] 、[設計工具] 。  
+    > 在設計程式時，您通常會在程式碼編輯器和 [Windows Forms 設計工具] 之間移動。 IDE 可讓您在專案中輕鬆巡覽。 使用 [方案總管]  開啟 [Windows Forms 設計工具] (在 Visual C# 中按兩下 [Form1.cs]  或在 Visual Basic 中按兩下 [Form1.vb]  )，或是在功能表列上選擇 [檢視] 、[設計工具] 。  
   
      下列顯示您在程式碼編輯器中看到的新程式碼。  
   

@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 77fb772588b41460ddd68ae0a20b4593d1fda628
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 77c0a76ae326621ed00a523d8cf484b9aecb53c4
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60091027"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445195"
 ---
 # <a name="how-to-define-a-domain-specific-language"></a>如何定義網域指定的語言
 若要定義特定領域語言 (DSL)，您可以從範本建立 Visual Studio 方案。 該方案的關鍵部分是儲存在 DslDefinition.dsl 中的 DSL 定義圖。 [DSL 定義] 可定義 DSL 的類別和圖形。 在修改並加入這些項目之後，您可以加入程式碼，即可以更詳細的方式自訂 DSL。
@@ -106,7 +106,7 @@ ms.locfileid: "60091027"
  關閉 Visual Studio 的實驗執行個體。
 
 > [!NOTE]
->  當您已修改 DSL 時，將再也無法在範例測試檔案上看到圖形。 不過，您將能夠建立新項目。
+> 當您已修改 DSL 時，將再也無法在範例測試檔案上看到圖形。 不過，您將能夠建立新項目。
 
 ### <a name="modifying-the-template-dsl"></a>修改範本 DSL
  重新命名並保留範本 DSL 定義中的部分或全部網域類別及圖形類別。 您的新類別名稱應為有效的 CLR 名稱，不含空格或標點符號。
@@ -135,7 +135,7 @@ ms.locfileid: "60091027"
   以下章節說明如何建構最實用的 DSL 功能。 有許多可以用來建構 DSL 的其他模式，但是這些是最常使用的模式。
 
 > [!NOTE]
->  在之後加入功能，請務必按一下 [**轉換所有範本**在方案總管] 的工具列，再建置和執行 DSL。
+> 在之後加入功能，請務必按一下 [**轉換所有範本**在方案總管] 的工具列，再建置和執行 DSL。
 
  下圖顯示 DSL 的類別和關聯性部分，可用來做為本主題中的範例。
 
@@ -146,7 +146,7 @@ ms.locfileid: "60091027"
  ![已產生的 DSL 執行個體模型](../modeling/media/music_instance.png)
 
 > [!NOTE]
->  「模型」是指使用者建立的 DSL 執行個體，通常會顯示為圖表。 本主題同時討論 DSL 定義圖以及使用 DSL 時出現的模型圖表。
+> 「模型」是指使用者建立的 DSL 執行個體，通常會顯示為圖表。 本主題同時討論 DSL 定義圖以及使用 DSL 時出現的模型圖表。
 
 ## <a name="classes"></a> 定義網域類別
  網域類別代表 DSL 的概念。 執行個體*模型項目*。 秷濆 菾**MusicLibrary** DSL，您可能需要網域類別，叫做**專輯**並**歌曲**。
@@ -183,7 +183,7 @@ ms.locfileid: "60091027"
  如需詳細資訊，請參閱 <<c0> [ 屬性的網域關聯性](../modeling/properties-of-domain-relationships.md)並[屬性的網域角色](../modeling/properties-of-domain-roles.md)。
 
 > [!NOTE]
->  內嵌與繼承不同。 內嵌關聯性中的子系並不從其父系繼承功能。
+> 內嵌與繼承不同。 內嵌關聯性中的子系並不從其父系繼承功能。
 
 ### <a name="add-domain-properties-to-each-domain-class"></a>將網域屬性加入每一個網域類別
  網域屬性會儲存值。 範例如下：名稱、 標題、 發行集的日期。
@@ -294,7 +294,7 @@ ms.locfileid: "60091027"
    2. 以滑鼠右鍵按一下節點下的**工具箱索引標籤**具有相同名稱，例如 MusicLibrary DSL。 按一下 **加入項目工具**。
 
        > [!NOTE]
-       >  如果您以滑鼠右鍵按一下**工具**節點，您將不會看到**加入項目工具**。 請改按一下其上方的節點。
+       > 如果您以滑鼠右鍵按一下**工具**節點，您將不會看到**加入項目工具**。 請改按一下其上方的節點。
 
    3. 在 選取新的項目工具的 屬性 視窗中，設定**類別**您剛加入的網域類別。
 
@@ -462,7 +462,7 @@ ms.locfileid: "60091027"
          底下**Display 屬性**，選取應該顯示在清單中的屬性。 在範例中，此屬性為 Title。
 
 > [!NOTE]
->  藉由使用 [裝飾項目對應] 中的 [路徑] 欄位和 [區間對應] 欄位，您可以在網域類別與區間圖形之間建立更複雜的關聯性。
+> 藉由使用 [裝飾項目對應] 中的 [路徑] 欄位和 [區間對應] 欄位，您可以在網域類別與區間圖形之間建立更複雜的關聯性。
 
 #### <a name="to-define-a-tool-for-creating-the-shape"></a>定義用於建立圖形的工具
 
@@ -473,7 +473,7 @@ ms.locfileid: "60091027"
 3. 以滑鼠右鍵按一下節點下的**工具箱索引標籤**具有相同名稱，例如 MusicLibrary DSL。 按一下 **加入項目工具**。
 
     > [!NOTE]
-    >  如果您以滑鼠右鍵按一下**工具**節點，您將不會看到**加入項目工具**。 請改按一下其上方的節點。
+    > 如果您以滑鼠右鍵按一下**工具**節點，您將不會看到**加入項目工具**。 請改按一下其上方的節點。
 
 4. 在 選取新的項目工具的 屬性 視窗中，設定**類別**您剛加入的網域類別。
 

@@ -19,11 +19,11 @@ manager: jillfra
 ms.workload:
 - data-storage
 ms.openlocfilehash: ca5161d0ddb73a72b88f36e85bda9206839aec3d
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60082395"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62565856"
 ---
 # <a name="update-data-by-using-a-tableadapter"></a>使用 TableAdapter 更新資料
 

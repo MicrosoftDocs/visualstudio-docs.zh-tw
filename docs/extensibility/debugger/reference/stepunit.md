@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 0f1d6742b28badf39a5c9273d2891c2da9a9d5f0
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56712121"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62864863"
 ---
 # <a name="stepunit"></a>STEPUNIT
 指定間距單位逐步執行。

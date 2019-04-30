@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: cb9b218935085b04ae1a9931733aeca34766aa5f
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56641945"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62833682"
 ---
 # <a name="idiadatasourceloaddatafromistream"></a>IDiaDataSource::loadDataFromIStream
 準備透過記憶體中資料流存取程式資料庫 (.pdb) 檔案中儲存的偵錯資料。
@@ -38,7 +38,7 @@ HRESULT loadDataFromIStream ( 
 ## <a name="return-value"></a>傳回值
  如果成功，則傳回`S_OK`; 否則傳回錯誤碼。 下表顯示可能的傳回值，這個方法。
 
-|值|說明|
+|值|描述|
 |-----------|-----------------|
 |E_PDB_FORMAT|嘗試存取已過時的格式的檔案。|
 |E_INVALIDARG|無效的參數。|
@@ -53,7 +53,7 @@ HRESULT loadDataFromIStream ( 
 
  若要存取的資料載入程序 （透過回呼的機制），請使用[idiadatasource:: Loaddataforexe](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md)方法。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [IDiaDataSource](../../debugger/debug-interface-access/idiadatasource.md)
 - [IDiaDataSource::loadDataForExe](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md)
 - [IDiaDataSource::loadDataFromPdb](../../debugger/debug-interface-access/idiadatasource-loaddatafrompdb.md)

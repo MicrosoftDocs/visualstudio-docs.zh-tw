@@ -14,11 +14,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 963b11a4760fad8086822f13db129fae76467802
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58145755"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62979058"
 ---
 # <a name="idebugproperty-interface"></a>IDebugProperty 介面
 用來描述任何階層式實體的屬性進行偵錯具有名稱、 類型和值。 大多數情況下，`IDebugProperty`用來描述運算式評估、 陳述式的評估或註冊評估的結果。  

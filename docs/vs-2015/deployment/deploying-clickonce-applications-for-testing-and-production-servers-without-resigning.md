@@ -20,12 +20,12 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: c853e24da3f203d67874d7b9740d3239abd78c14
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 5c7cc8a9d1767a289112b18dbfe7c81b9a010bae
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60066594"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63422788"
 ---
 # <a name="deploying-clickonce-applications-for-testing-and-production-servers-without-resigning"></a>針對測試和實際執行伺服器部署 ClickOnce 應用程式但不重新簽章
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ ms.locfileid: "60066594"
 本主題討論 ClickOnce 導入.NET Framework 3.5 版可讓部署 ClickOnce 應用程式，從多個網路位置，而不重新簽署，或變更 ClickOnce 資訊清單中的新功能。  
   
 > [!NOTE]
->  重新簽署，仍然是部署新版本的應用程式的慣用的方法。 可能的話，使用重新簽章的方法。 如需詳細資訊，請參閱 [Mage.exe (資訊清單產生和編輯工具)](http://msdn.microsoft.com/library/77dfe576-2962-407e-af13-82255df725a1)。  
+> 重新簽署，仍然是部署新版本的應用程式的慣用的方法。 可能的話，使用重新簽章的方法。 如需詳細資訊，請參閱 [Mage.exe (資訊清單產生和編輯工具)](http://msdn.microsoft.com/library/77dfe576-2962-407e-af13-82255df725a1)。  
   
  第三方開發人員和 Isv 可以選擇加入，以在這項功能，讓他們的客戶更新其應用程式更容易。 這項功能可以用於下列情況：  
   

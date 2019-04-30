@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5937a54c43cf972dcebb25c12cddf6b76b2cb4bc
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 2eac5778320b45b841cdff2c8d95f6a591386712
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60069859"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63406728"
 ---
 # <a name="how-to-publish-a-clickonce-application-using-the-publish-wizard"></a>HOW TO：使用 [發行精靈] 發行 ClickOnce 應用程式
 若要讓使用者可以使用 ClickOnce 應用程式，您必須將它發行至檔案共用或路徑、FTP 伺服器或卸除式媒體。 您可以使用 [發佈精靈] 發佈應用程式；[專案設計工具] 的 [發佈] 頁面上也有提供與發佈相關的其他屬性。 如需詳細資訊，請參閱[發佈 ClickOnce 應用程式](../deployment/publishing-clickonce-applications.md)。
@@ -80,7 +80,7 @@ ms.locfileid: "60069859"
 4. 在 [使用者要如何安裝應用程式?] 頁面上，按一下 [從 CD-ROM 或 DVD-ROM]，然後按一下 [下一步]。
 
    > [!NOTE]
-   >  如果您要在 CD-ROM 插入光碟機時即自動執行安裝，請在 [專案設計工具] 中開啟 [發佈] 頁面，並按一下 [選項] 按鈕，然後在 [發佈選項精靈] 中，選取 [若是使用光碟安裝，在插入光碟後自動啟動安裝程式]。
+   > 如果您要在 CD-ROM 插入光碟機時即自動執行安裝，請在 [專案設計工具] 中開啟 [發佈] 頁面，並按一下 [選項] 按鈕，然後在 [發佈選項精靈] 中，選取 [若是使用光碟安裝，在插入光碟後自動啟動安裝程式]。
 
 5. 如果您使用 CD-ROM 散發應用程式，可能會想要從網站提供更新。 在 [應用程式會在哪裡檢查更新檔?] 頁面中，選擇更新選項：
 
@@ -95,7 +95,7 @@ ms.locfileid: "60069859"
     發行狀態會隨即顯示在狀態通知區域中。
 
    > [!NOTE]
-   >  在發行完成後，您必須使用 CD 燒錄機或 DVD 燒錄機，將檔案從步驟 3 中指定的位置複製到 CD-ROM 或 DVD-ROM 媒體。
+   > 在發行完成後，您必須使用 CD 燒錄機或 DVD 燒錄機，將檔案從步驟 3 中指定的位置複製到 CD-ROM 或 DVD-ROM 媒體。
 
 ## <a name="see-also"></a>另請參閱
 

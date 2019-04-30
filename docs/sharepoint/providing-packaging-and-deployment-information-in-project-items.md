@@ -25,11 +25,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 4b2bf1fc1b011b79fdd8123218a78ac91a14579b
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56621951"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62550477"
 ---
 # <a name="provide-packaging-and-deployment-information-in-project-items"></a>提供專案項目中的封裝和部署資訊
   中的所有 SharePoint 專案項目[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]有屬性，您可以使用專案部署到 SharePoint 時，提供額外的資料。 這些屬性如下所示：

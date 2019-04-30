@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 8f7afee863d36796bb481f9aca2c24a9ba891ae7
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60049941"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62952717"
 ---
 # <a name="create-sharepoint-solution-packages"></a>建立 SharePoint 方案套件
   藉由使用 封裝設計工具，您可以建立並自訂部署套件。 例如，您可以新增 SharePoint 專案項目和功能，重設 IIS 伺服器、 設定功能啟用範圍，以及識別功能相依性。 設計工具也會產生資訊清單，描述每個封裝的 XML 檔案。

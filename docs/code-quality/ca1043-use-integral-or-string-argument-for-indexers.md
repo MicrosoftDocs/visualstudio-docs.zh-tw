@@ -19,11 +19,11 @@ dev_langs:
 ms.workload:
 - multiple
 ms.openlocfilehash: 3d47b39208fce297fd058d6976b9fa7d7593cb9a
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57867147"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62778795"
 ---
 # <a name="ca1043-use-integral-or-string-argument-for-indexers"></a>CA1043:必須針對索引子使用整數或字串引數
 

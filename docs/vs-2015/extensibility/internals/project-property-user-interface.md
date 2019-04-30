@@ -13,11 +13,11 @@ caps.latest.revision: 17
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 2b54c6ba8f3daefa53f00478c1d7e4573311cfb6
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60061342"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62429154"
 ---
 # <a name="project-property-user-interface"></a>專案屬性使用者介面
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 8913d9b26ab79a37e9d6f28a5f3bf1974df15a5f
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56637174"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62554452"
 ---
 # <a name="functiontype"></a>FunctionType
 每個唯一的函式簽章由`SymTagFunctionType`符號。 每個參數會識別為具有類別子符號`SymTagFunctionArgType`標記。
@@ -26,7 +26,7 @@ ms.locfileid: "56637174"
 ## <a name="properties"></a>屬性
  下表顯示此符號類型的其他有效屬性。
 
-|屬性|資料類型|說明|
+|屬性|資料類型|描述|
 |--------------|---------------|-----------------|
 |[IDiaSymbol::get_callingConvention](../../debugger/debug-interface-access/idiasymbol-get-callingconvention.md)|`DWORD`|其中一個值[CV_call_e 列舉](../../debugger/debug-interface-access/cv-call-e.md)。|
 |[IDiaSymbol::get_classParent](../../debugger/debug-interface-access/idiasymbol-get-classparent.md)|`IDiaSymbol*`|此函式 （或方法） 是成員的類別。|
@@ -44,7 +44,7 @@ ms.locfileid: "56637174"
 |[IDiaSymbol::get_unalignedType](../../debugger/debug-interface-access/idiasymbol-get-unalignedtype.md)|`BOOL`|`TRUE` 如果函式未對齊。|
 |[IDiaSymbol::get_volatileType](../../debugger/debug-interface-access/idiasymbol-get-volatiletype.md)|`BOOL`|`TRUE` 如果函式標示為 volatile。|
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [符號類型的類別階層架構](../../debugger/debug-interface-access/class-hierarchy-of-symbol-types.md)
 - [CV_access_e 列舉](../../debugger/debug-interface-access/cv-access-e.md)
 - [FunctionArgType](../../debugger/debug-interface-access/functionargtype.md)

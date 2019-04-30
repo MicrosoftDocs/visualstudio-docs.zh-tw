@@ -1,5 +1,5 @@
 ---
-title: 如何： 從 DLL 專案進行偵錯 |Microsoft Docs
+title: HOW TO：從 DLL 專案進行偵錯 |Microsoft Docs
 ms.date: 10/10/2018
 ms.topic: conceptual
 dev_langs:
@@ -19,23 +19,23 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: a2e4df2028a14281ee2343ad48b4b71812d29fca
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56684308"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62847963"
 ---
-# <a name="how-to-debug-from-a-dll-project-in-visual-studio-c-c-visual-basic-f"></a>如何： 從 DLL 專案在 Visual Studio 中偵錯 (C#，c + +、 Visual Basic 中， F#)
+# <a name="how-to-debug-from-a-dll-project-in-visual-studio-c-c-visual-basic-f"></a>HOW TO：從 DLL 專案在 Visual Studio 中偵錯 (C#， C++，Visual Basic 中， F#)
 
 偵錯 DLL 專案的一個方法是在 DLL 專案屬性中指定呼叫端的應用程式。 然後您可以從開始偵錯 DLL 專案本身。 此方法才能運作，應用程式必須在相同的位置，與您設定的一個呼叫相同 DLL。 如果應用程式會尋找並載入 DLL 的不同版本，該版本將不會包含您的中斷點。 偵錯 Dll 的其他方法，請參閱[偵錯 DLL 專案](../debugger/debugging-dll-projects.md)。
 
-如果您受管理的應用程式呼叫原生 DLL，或您的原生應用程式呼叫的 managed 的 DLL，您可以偵錯 DLL 和呼叫端的應用程式。 如需詳細資訊，請參閱[如何：在混合模式中偵錯](../debugger/how-to-debug-in-mixed-mode.md)。
+如果您受管理的應用程式呼叫原生 DLL，或您的原生應用程式呼叫的 managed 的 DLL，您可以偵錯 DLL 和呼叫端的應用程式。 如需詳細資訊，請參閱[如何：在混合模式中進行偵錯](../debugger/how-to-debug-in-mixed-mode.md)。
 
 原生和 managed DLL 專案會有不同的設定，來指定呼叫的應用程式。
 
 ## <a name="specify-a-calling-app-in-a-native-dll-project"></a>在原生 DLL 專案中指定呼叫端的應用程式
 
-1. 選取中的 c + + DLL 專案**方案總管 中**。 選取 **屬性**圖示，並按下**Alt**+**Enter**，或以滑鼠右鍵按一下並選擇 **屬性**。
+1. 選取C++中的 DLL 專案**方案總管**。 選取 **屬性**圖示，並按下**Alt**+**Enter**，或以滑鼠右鍵按一下並選擇 **屬性**。
 
 1. 在  **\<專案 > 屬性頁**對話方塊方塊中，請確定**組態**在視窗頂端的欄位設定為**偵錯**。
 
@@ -53,7 +53,7 @@ ms.locfileid: "56684308"
 
 ## <a name="specify-a-calling-app-in-a-managed-dll-project"></a>指定呼叫端的應用程式中的 managed DLL 專案
 
-1. 選取C#或 Visual Basic DLL 專案中的**方案總管**。 選取 **屬性**圖示，並按下**Alt**+**Enter**，或以滑鼠右鍵按一下並選擇 **屬性**。
+1. 中，選取 C# 或 Visual Basic DLL 專案**方案總管 中**。 選取 **屬性**圖示，並按下**Alt**+**Enter**，或以滑鼠右鍵按一下並選擇 **屬性**。
 
 1. 請確定視窗頂端的 [組態] 欄位已設定為 [偵錯]。
 
@@ -67,7 +67,7 @@ ms.locfileid: "56684308"
 
 1. 新增任何必要的命令列引數中**命令列引數**或是**應用程式引數**欄位。
 
-   ![C#偵錯屬性 視窗](../debugger/media/dbg-debugging-properties-dll-csharp.png " C#偵錯屬性 視窗")
+   ![C# 偵錯屬性 視窗](../debugger/media/dbg-debugging-properties-dll-csharp.png "C# 偵錯屬性 視窗")
 
 1. 使用**檔案** > **儲存選取項目**或是**Ctrl**+**S**以儲存變更。
 

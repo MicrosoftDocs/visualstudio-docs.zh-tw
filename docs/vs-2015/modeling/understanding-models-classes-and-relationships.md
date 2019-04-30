@@ -11,12 +11,12 @@ caps.latest.revision: 37
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: f8de4432f1d0b4ab4bf24159744d20708d732fbd
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: d4381edb42e2aef53c00aea619eea34ee20060d5
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60108691"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63424335"
 ---
 # <a name="understanding-models-classes-and-relationships"></a>了解模型、類別和關聯性
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -97,7 +97,7 @@ ms.locfileid: "60108691"
  當模型儲存至 XML 格式檔案，內嵌的項目都放在其父代，除非您已自訂序列化。  
   
 > [!NOTE]
->  內嵌與繼承不同。 內嵌關聯性中的子系不會繼承父項的屬性。 內嵌是連結的一種模型項目之間。 繼承類別之間的關聯性，而不會建立模型項目之間的連結。  
+> 內嵌與繼承不同。 內嵌關聯性中的子系不會繼承父項的屬性。 內嵌是連結的一種模型項目之間。 繼承類別之間的關聯性，而不會建立模型項目之間的連結。  
   
 ### <a name="embedding-rules"></a>內嵌的規則  
  執行個體模型中的每個項目必須是一個內嵌連結的詳細資訊，除了模型根的目標。  

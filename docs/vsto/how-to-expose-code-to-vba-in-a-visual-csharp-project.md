@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 6da4d0642738fca2f35adbc2ec4e039e3edf11b2
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: ac41f4da29b95ba1fcd1601f98104956d584212a
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56604475"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63419506"
 ---
 # <a name="how-to-expose-code-to-vba-in-a-visual-c-project"></a>HOW TO：公開 （expose) 至視覺效果中的 VBA 程式碼C#專案
   如果您想要與彼此互動的程式碼的兩個類型，您可以公開 Visual C# 專案中 Visual basic for Applications (VBA) 程式碼的程式碼。
@@ -42,7 +42,7 @@ ms.locfileid: "56604475"
     如需有關支援的巨集的文件檔案格式的詳細資訊，請參閱 <<c0> [ 合併 VBA 和文件層級自訂](../vsto/combining-vba-and-document-level-customizations.md)。
 
    > [!NOTE]
-   >  這項功能無法用於 Word 範本專案。
+   > 這項功能無法用於 Word 範本專案。
 
 2. 請確定允許文件中的 VBA 程式碼執行，而不提示使用者啟用巨集。 您可以將 Office 專案的位置加入 Word 或 Excel 信任中心設定的信任位置清單，以信任 VBA 程式碼執行。
 
@@ -93,7 +93,7 @@ ms.locfileid: "56604475"
 10. 在 [屬性]  視窗中，選取 **ReferenceAssemblyFromVbaProject** 屬性，然後將值變更為 [True] 。
 
     > [!NOTE]
-    >  如果活頁簿或文件尚未包含 VBA 程式碼，或如果文件中的 VBA 程式碼不受信任執行，您就會收到錯誤訊息，當您設定**ReferenceAssemblyFromVbaProject**屬性設 **，則為True**. 這是因為在這種情況中，Visual Studio 無法修改文件中的 VBA 專案。
+    > 如果活頁簿或文件尚未包含 VBA 程式碼，或如果文件中的 VBA 程式碼不受信任執行，您就會收到錯誤訊息，當您設定**ReferenceAssemblyFromVbaProject**屬性設 **，則為True**. 這是因為在這種情況中，Visual Studio 無法修改文件中的 VBA 專案。
 
 11. 按一下訊息中顯示的 [確定]  。 此訊息會提醒您，如果您加入 VBA 程式碼的活頁簿，或文件時執行的專案[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]，VBA 程式碼將會遺失您建置專案的下一次。 這是因為在組建中的文件輸出資料夾中會覆寫的每次建置專案。
 

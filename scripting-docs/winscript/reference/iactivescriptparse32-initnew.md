@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptParse32::InitNew |Microsoft Docs
+title: IActiveScriptParse32::InitNew | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -11,11 +11,11 @@ caps.latest.revision: 3
 author: mikejo5000
 ms.author: mikejo
 ms.openlocfilehash: 685c596caa61a5cbd5042fad3a1bfb39c349c1b1
-ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "54094688"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63009420"
 ---
 # <a name="iactivescriptparse32initnew"></a>IActiveScriptParse32::InitNew
 初始化指令碼引擎。  

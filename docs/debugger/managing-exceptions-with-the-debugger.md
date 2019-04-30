@@ -34,11 +34,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: b83cb026bec6d33490517e5703a042b4a8e2434c
-ms.sourcegitcommit: cdcbf254db737d42275e95de4ffc4f8c14e87e00
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57428696"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62846469"
 ---
 # <a name="manage-exceptions-with-the-debugger-in-visual-studio"></a>使用 Visual Studio 中偵錯工具管理例外狀況
 
@@ -100,7 +100,7 @@ ms.locfileid: "57428696"
 
   但不會顯示`here`列。
 
-- C#主控台應用程式所參考的類別，有兩種方法的類別程式庫。 其中一種方法會擲回例外狀況，並處理它，而第二個方法會擲回相同的例外狀況，但不會加以處理。
+- C# 主控台應用程式參考類別庫有兩種方法的類別。 其中一種方法會擲回例外狀況，並處理它，而第二個方法會擲回相同的例外狀況，但不會加以處理。
 
   ```csharp
   public class Class1
@@ -124,7 +124,7 @@ ms.locfileid: "57428696"
   }
   ```
 
-  以下是主控台應用程式的 Main () 方法：
+  以下是主控台應用程式的 main() 方法：
 
   ```csharp
   static void Main(string[] args)
@@ -135,7 +135,7 @@ ms.locfileid: "57428696"
   }
   ```
 
-  如果您有**AccessViolationException**簽入**例外狀況設定**，執行會在中斷`throw`兩者中**throwunhandledexception （)** 和**Throwunhandledexception**當您在偵錯工具中，會在執行此程式碼時。
+  如果您有**AccessViolationException**簽入**例外狀況設定**，執行會在中斷`throw`兩者中**throwunhandledexception()** 和**Throwunhandledexception**當您在偵錯工具中，會在執行此程式碼時。
 
 若要將例外狀況設定還原為預設值，請選擇**將清單還原為預設設定**按鈕：
 

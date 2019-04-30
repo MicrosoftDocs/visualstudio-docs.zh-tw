@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: d781b2fe3ab597760a397c6ff0ec3c946bbe7653
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60083370"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63009407"
 ---
 # <a name="walkthrough-create-a-basic-site-definition-project"></a>逐步解說：建立基本網站定義專案
   本逐步解說會示範如何建立基本網站定義包含在其上的控制項的視覺 Web 組件。 為求清楚起見，您建立視覺 Web 組件會有只有少數的控制項。 不過，您可以建立更複雜的 SharePoint 網站定義包含更多的功能。

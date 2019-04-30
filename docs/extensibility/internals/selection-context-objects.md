@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 9bdc3dd946f6ab19f916f4ac536ba05a45fe9226
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60114973"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62859082"
 ---
 # <a name="selection-context-objects"></a>選取項目內容物件
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]整合式的開發環境 (IDE) 來判斷應該顯示在 IDE 中使用全域選取範圍內容物件。 在 IDE 中的每個視窗都可以有它自己的選取範圍的內容物件推送至全域範圍內容。 該視窗具有焦點時，IDE 會更新全域選取範圍內容從視窗的值。 如需詳細資訊，請參閱 <<c0> [ 使用者的意見反應](../../extensibility/internals/feedback-to-the-user.md)。

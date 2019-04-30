@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 308832522b4badde661d4132410ca8366856d7b9
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56635653"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62910592"
 ---
 # <a name="best-practices-for-security-in-vspackages"></a>在 Vspackage 中安全性的最佳做法
 若要安裝[!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)]您在電腦上，您必須執行系統管理認證的內容中。 安全性和部署的基本單位[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]應用程式[VSPackage](../../extensibility/internals/vspackages.md)。 必須使用註冊 VSPackage [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]，也需要系統管理認證。

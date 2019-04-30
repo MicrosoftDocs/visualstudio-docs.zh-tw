@@ -16,11 +16,11 @@ author: gewarren
 ms.author: gewarren
 manager: wpickett
 ms.openlocfilehash: 3fb1a6255539ded989c5ad9638fc961d606a19f7
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60097104"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62559740"
 ---
 # <a name="ca1039-lists-are-strongly-typed"></a>CA1039:清單為強類型
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

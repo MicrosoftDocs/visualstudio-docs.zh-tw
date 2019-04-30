@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 079c25b2bbaa37432009f0eeade9673f8d0afd28
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55950041"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62433951"
 ---
 # <a name="trycatch-activity-designer"></a>TryCatch 活動設計工具
 
@@ -39,7 +39,7 @@ ms.locfileid: "55950041"
 
 下表顯示<xref:System.Activities.Statements.TryCatch>內容並描述在設計工具的使用方式。
 
-|屬性名稱|必要項|使用方式|
+|屬性名稱|必要|使用量|
 |-|--------------|-|
 |<xref:System.Activities.Activity.DisplayName%2A>|False|指定 <xref:System.Activities.Statements.TryCatch> 活動選用的易記名稱。 預設為 TryCatch。|
 |<xref:System.Activities.Statements.TryCatch.Try%2A>|False|當 <xref:System.Activities.Statements.TryCatch> 執行時，首先執行的活動。|

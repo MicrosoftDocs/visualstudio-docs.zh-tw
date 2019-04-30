@@ -1,5 +1,5 @@
 ---
-title: 遠端偵錯 Visual c + + 專案 |Microsoft Docs
+title: 遠端偵錯視覺效果C++專案 |Microsoft Docs
 ms.custom: remotedebugging
 ms.date: 08/14/2018
 ms.topic: conceptual
@@ -18,13 +18,13 @@ manager: jillfra
 ms.workload:
 - cplusplus
 ms.openlocfilehash: fbfdb246769ac55afd7f164d91673e39e293f4c4
-ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57526058"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62903495"
 ---
-# <a name="remote-debugging-a-visual-c-project-in-visual-studio"></a>遠端偵錯 Visual Studio 中的 Visual c + + 專案
+# <a name="remote-debugging-a-visual-c-project-in-visual-studio"></a>遠端偵錯視覺效果C++在 Visual Studio 中的專案
 若要偵錯在不同電腦上的 Visual Studio 應用程式安裝，您將在其中部署您的應用程式的電腦上執行遠端工具，設定您的專案從 Visual Studio 中，連接到遠端電腦，然後部署並執行您的應用程式。
 
 ![遠端偵錯工具元件](../debugger/media/remote-debugger-client-apps.png "Remote_debugger_components")
@@ -106,7 +106,7 @@ ms.locfileid: "57526058"
 
 [!INCLUDE [remote-debugger-symbols](../debugger/includes/remote-debugger-symbols.md)]
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [Visual Studio 偵錯](../debugger/index.md)
 - [偵錯工具簡介](../debugger/debugger-feature-tour.md)
 - [設定 Windows 防火牆進行遠端偵錯](../debugger/configure-the-windows-firewall-for-remote-debugging.md)

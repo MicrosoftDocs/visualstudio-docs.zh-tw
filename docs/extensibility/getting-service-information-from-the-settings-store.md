@@ -9,11 +9,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: fe38bf84510ea247c737477e421db8dbb15f63c0
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60042637"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62863138"
 ---
 # <a name="get-service-information-from-the-settings-store"></a>從設定存放區取得服務資訊
 若要尋找所有可用的服務，或判斷是否已安裝特定的服務，您可以使用設定存放區。 您必須知道服務類別的型別。

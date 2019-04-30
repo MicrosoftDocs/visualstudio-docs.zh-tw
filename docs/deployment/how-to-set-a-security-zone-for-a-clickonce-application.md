@@ -17,11 +17,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 31a61dd337fce614c1271f994a42ec90f3be8acb
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60054075"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62898385"
 ---
 # <a name="how-to-set-a-security-zone-for-a-clickonce-application"></a>HOW TO：為 ClickOnce 應用程式設定安全性區域
 設定 ClickOnce 應用程式的程式碼存取安全性權限時，必須從 [專案設計工具]  之 [安全性] 頁面上的一組基底權限開始。

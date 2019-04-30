@@ -9,18 +9,18 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: afb835c883050064d96c32c80de75d58299892f7
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: c639ecc19f99f25fb5cb38539d2322131ddc2e0c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60040686"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446320"
 ---
 # <a name="accessing-models-from-text-templates"></a>從文字範本存取模型
 使用文字範本，您可以建立報表檔案、 原始程式碼檔案和其他以特定領域語言模型為基礎的文字檔。 如需文字範本的基本資訊，請參閱[程式碼產生和 T4 文字範本](../modeling/code-generation-and-t4-text-templates.md)。 文字範本進行偵錯時您的 DSL 中，以實驗模式運作，並已部署的 DSL 所在的電腦上也能運作。
 
 > [!NOTE]
->  當您建立的 DSL 方案，範例文字範本 **\*.tt**偵錯的專案中產生檔案。 當您變更網域類別的名稱時，這些範本就無法再運作。 不過，它們包含在需要時，基本指示詞，並提供範例，您可以更新以符合您的 DSL。
+> 當您建立的 DSL 方案，範例文字範本 **\*.tt**偵錯的專案中產生檔案。 當您變更網域類別的名稱時，這些範本就無法再運作。 不過，它們包含在需要時，基本指示詞，並提供範例，您可以更新以符合您的 DSL。
 
  若要從文字範本存取模型：
 
@@ -97,7 +97,7 @@ Here is a list of elements in the model:
 ## <a name="Multiple"></a> 從文字範本存取多個模型
 
 > [!NOTE]
->  這個方法可讓您讀取相同的範本中的多個模型，但不支援 ModelBus 參考。 ModelBus 參考會 shape 的模型，請參閱[文字範本中使用 Visual Studio ModelBus](../modeling/using-visual-studio-modelbus-in-a-text-template.md)。
+> 這個方法可讓您讀取相同的範本中的多個模型，但不支援 ModelBus 參考。 ModelBus 參考會 shape 的模型，請參閱[文字範本中使用 Visual Studio ModelBus](../modeling/using-visual-studio-modelbus-in-a-text-template.md)。
 
  如果您想要從相同的文字範本存取多個模型，您必須呼叫產生的指示詞處理器一次針對每個模型。 您必須指定每個模型中的檔案名稱`requires`參數。 您必須指定您想要用於根網域類別中的名稱`provides`參數。 您必須指定不同的值，如`provides`中每個指示詞呼叫的參數。 例如，假設您有三個分別稱為 Library.xyz、 School.xyz 及 Work.xyz 的模型檔案。 若要從相同的文字範本中存取它們，您必須撰寫類似下列的三個指示詞呼叫。
 
@@ -108,7 +108,7 @@ Here is a list of elements in the model:
 ```
 
 > [!NOTE]
->  此程式碼範例是針對最小語言方案範本為基礎的語言。
+> 此程式碼範例是針對最小語言方案範本為基礎的語言。
 
  若要存取您的文字範本中的模型，您現在可以在下列範例中撰寫程式碼類似的程式碼。
 

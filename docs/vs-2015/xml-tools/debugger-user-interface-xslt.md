@@ -9,12 +9,12 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 1af3b47b2d7c897b36556f0ebac105088cdc9b75
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: f2920f73560e622c4336a1eedc23e5034fa8ff91
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58945972"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63417442"
 ---
 # <a name="debugger-user-interface-xslt"></a>偵錯工具使用者介面 (XSLT)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -56,7 +56,7 @@ ms.locfileid: "58945972"
  [工作清單] 包括 XSLT 檔之指令碼區塊中發生的所有錯誤。  
   
 > [!NOTE]
->  XSLT 偵錯工具沒有警告，所以它們永不會顯示於 [工作清單] 中。  
+> XSLT 偵錯工具沒有警告，所以它們永不會顯示於 [工作清單] 中。  
   
 ## <a name="breakpoints-window"></a>中斷點視窗  
  [中斷點] 視窗會顯示目前專案中的所有中斷點。 當視窗在檢視表中時如果加入中斷點，則視窗會自動更新以顯示新中斷點。  

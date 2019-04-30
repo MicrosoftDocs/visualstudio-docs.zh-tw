@@ -19,12 +19,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - uwp
-ms.openlocfilehash: 1a0b90e5d863d41c46057e38c5f87bdad2481581
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 0ee4c97c4ecbf665bbaef39b658a4b96715acb23
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60088024"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63408636"
 ---
 # <a name="refresh-a-uwp-app-in-visual-studio"></a>重新整理 Visual Studio 中的 UWP 應用程式
 
@@ -43,7 +43,7 @@ ms.locfileid: "60088024"
 - 專案和項目屬性變更，例如對選取之偵錯裝置的變更，或對檔案之封裝動作的變更 (在 [屬性] 視窗中)。
 
 > [!IMPORTANT]
->  當您變更參考、封裝資訊清單或進行前述清單中指定的其他變更時，必須停止然後重新啟動偵錯工具才能更新 HTML、CSS 和 JavaScript 原始程式檔。
+> 當您變更參考、封裝資訊清單或進行前述清單中指定的其他變更時，必須停止然後重新啟動偵錯工具才能更新 HTML、CSS 和 JavaScript 原始程式檔。
 
 ### <a name="to-refresh-an-app"></a>若要重新整理應用程式
 

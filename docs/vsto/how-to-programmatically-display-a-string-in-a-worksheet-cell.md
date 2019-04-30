@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: a9760d019fa80d4ecae63633c38ac9df60932202
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60101193"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62813019"
 ---
 # <a name="how-to-programmatically-display-a-string-in-a-worksheet-cell"></a>HOW TO：以程式設計方式在工作表儲存格中顯示字串
   此範例示範如何以程式設計方式顯示在資料格中的文字。 若要在儲存格中顯示文字，使用<xref:Microsoft.Office.Tools.Excel.NamedRange>控制項或原生的 Excel 範圍物件。

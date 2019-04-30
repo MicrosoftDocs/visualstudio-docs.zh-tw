@@ -33,12 +33,12 @@ caps.latest.revision: 29
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 2d14077ff7547a1b8009ce6621c111174c582a5c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 55ef0a3528afca626c0a1cbf5c10735c9e83fcb4
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60095031"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443871"
 ---
 # <a name="windows-communication-foundation-services-and-wcf-data-services-in-visual-studio"></a>Visual Studio 中的 Windows Communication Foundation 服務和 WCF 資料服務
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -137,14 +137,14 @@ Visual Studio 提供使用與 Windows Communication Foundation (WCF) 工具和[!
     ```
 
     > [!NOTE]
-    >  取代*ServiceReference*與服務參考和取代命名空間*Service1Client*與服務的名稱。
+    > 取代*ServiceReference*與服務參考和取代命名空間*Service1Client*與服務的名稱。
 
 3. 使用建構函式多載，將會顯示 IntelliSense 清單。 選取`endpointConfigurationName As String`多載。
 
 4. 下列多載中，輸入`=` *ConfigurationName*，其中*ConfigurationName*是您想要使用之端點的名稱。
 
     > [!NOTE]
-    >  如果您不知道可用的端點名稱，您可以在 app.config 檔案中找到它們。
+    > 如果您不知道可用的端點名稱，您可以在 app.config 檔案中找到它們。
 
 #### <a name="to-find-the-available-endpoints-for-a-wcf-service"></a>若要尋找可用的端點的 WCF 服務
 
@@ -164,7 +164,7 @@ Visual Studio 提供使用與 Windows Communication Foundation (WCF) 工具和[!
  根據預設，服務參考加入至專案時它被設定為以同步方式呼叫方法。 您可以變更以非同步方式呼叫方法，藉由變更中的設定行為**設定服務參考** 對話方塊。
 
 > [!NOTE]
->  此選項設定以個別服務為基礎。 如果以非同步方式呼叫服務的一種方法，就必須以非同步方式呼叫所有方法。
+> 此選項設定以個別服務為基礎。 如果以非同步方式呼叫服務的一種方法，就必須以非同步方式呼叫所有方法。
 
  [!INCLUDE[note_settings_general](../includes/note-settings-general-md.md)]
 

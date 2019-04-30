@@ -9,11 +9,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 5539f698ba4b4c0998d23e413d2d71ac14e810e7
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60117768"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63001963"
 ---
 # <a name="how-to-get-an-overview-of-a-schema-set-using-the-graph-view"></a>HOW TO：取得使用 [圖形] 檢視設定的結構描述的概觀
 

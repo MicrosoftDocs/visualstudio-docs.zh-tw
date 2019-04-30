@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 77d92a65b77cbec94a6c74852393627af6763bad
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56685387"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62917380"
 ---
 # <a name="idebugprogram2enumcodecontexts"></a>IDebugProgram2::EnumCodeContexts
 擷取一份原始程式檔中的指定位置的程式碼內容。
@@ -51,7 +51,7 @@ int EnumCodeContexts( 
  如果成功，則傳回`S_OK`; 否則傳回錯誤碼。
 
 ## <a name="remarks"></a>備註
- 這個方法可讓偵錯工作階段管理員 (SDM) 或對應到的程式碼指定位置的來源檔案位置的 IDE。 如果來源所產生的程式碼 （例如，c + + 範本） 的多個區塊，則會傳回一個以上的程式碼內容。
+ 這個方法可讓偵錯工作階段管理員 (SDM) 或對應到的程式碼指定位置的來源檔案位置的 IDE。 如果來源所產生的程式碼的多個區塊，則會傳回一個以上的程式碼內容 (例如，C++範本)。
 
 ## <a name="see-also"></a>另請參閱
 - [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)

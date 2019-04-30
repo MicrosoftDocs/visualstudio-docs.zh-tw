@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 4b3a43c05f8be4806cf10098a4df673903494756
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55942423"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62933741"
 ---
 # <a name="removefromcollectiont-activity-designer"></a>RemoveFromCollection\<T > 活動設計工具
 
@@ -34,7 +34,7 @@ ms.locfileid: "55942423"
 
 下表顯示<xref:System.Activities.Statements.RemoveFromCollection%601>內容並描述在設計工具的使用方式：
 
-|屬性名稱|必要項|使用方式|
+|屬性名稱|必要|使用量|
 |-|--------------|-|
 |<xref:System.Activities.Activity.DisplayName%2A>|False|<xref:System.Activities.Statements.RemoveFromCollection%601> 活動可選用的易記名稱。 預設值是 RemoveFromCollection < Int32\>。<br /><br /> 雖然 <xref:System.Activities.Activity.DisplayName%2A> 並非絕對必要，但建議您盡量使用。|
 |<xref:System.Activities.Statements.RemoveFromCollection%601.Item%2A>|True|要移除之項目的**集合\<T >**。 此項目屬於類型*T*，這是型別的*TypeArgument*。 若要指定項目，請在屬性方格中輸入 Visual Basic 運算式。|

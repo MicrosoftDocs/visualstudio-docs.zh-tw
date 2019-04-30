@@ -19,11 +19,11 @@ dev_langs:
 ms.workload:
 - multiple
 ms.openlocfilehash: c3c5d2df6be4fef281d91794b5b71bfa0c3e653f
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55956062"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62779671"
 ---
 # <a name="ca1009-declare-event-handlers-correctly"></a>CA1009:事件處理常式必須正確宣告
 

@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f7d74b90fc0bcbe67b13cffadb2793bc15213b9f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 4fc7dd207a525eaed12db1b2e45e7720d96ee8b6
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60094134"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63388704"
 ---
 # <a name="getting-started-with-visual-studio-graphics-diagnostics"></a>Visual Studio 圖形診斷快速入門
 在本節中，您將準備第一次使用圖形診斷，並從 Direct3D 應用程式擷取畫面格，然後在圖形分析器中檢查它們。
@@ -46,7 +46,7 @@ ms.locfileid: "60094134"
    安裝 Windows SDK 時，也會自動安裝圖形工具功能。
 
 > [!TIP]
->  Windows 10 的選擇性圖形工具功能提供輕量型擷取和播放功能 (例如命令列擷取程式 **dxcap.exe**)，以用於未安裝開發人員工具之電腦的支援、測試和診斷案例。 如需詳細資訊，請參閱[命令列擷取工具](command-line-capture-tool.md)主題。
+> Windows 10 的選擇性圖形工具功能提供輕量型擷取和播放功能 (例如命令列擷取程式 **dxcap.exe**)，以用於未安裝開發人員工具之電腦的支援、測試和診斷案例。 如需詳細資訊，請參閱[命令列擷取工具](command-line-capture-tool.md)主題。
 
 ## <a name="using-graphics-diagnostics-for-the-first-time"></a>第一次使用圖形診斷
  您現在已具備所有必要元件，可以開始使用圖形診斷。 請依照下列步驟進行。
@@ -63,7 +63,7 @@ ms.locfileid: "60094134"
  您現在已經準備好開始第一個圖形診斷工作階段。 在 Visual Studio 主功能表上，選擇**偵錯，圖形開始圖形偵錯**，或直接按**alt+f5**。 這樣會使用圖形診斷來啟動您的應用程式，並在 Visual Studio 中顯示診斷工作階段視窗。
 
 > [!IMPORTANT]
->  如果您是在 Windows 10 上執行應用程式，並且尚未安裝選擇性圖形工具功能，則系統會提示您現在這麼做。 您必須先安裝它，才能在 Windows 10 上使用圖形診斷。
+> 如果您是在 Windows 10 上執行應用程式，並且尚未安裝選擇性圖形工具功能，則系統會提示您現在這麼做。 您必須先安裝它，才能在 Windows 10 上使用圖形診斷。
 
 ### <a name="3---capture-frames"></a>3 - 擷取畫面格
  只要您啟動應用程式，就已準備好擷取畫面格。

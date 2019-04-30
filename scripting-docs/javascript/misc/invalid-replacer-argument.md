@@ -16,11 +16,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 46e01a4e6bb989fad2da6f979c79b7aba13df63a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60060783"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63007310"
 ---
 # <a name="invalid-replacer-argument"></a>無效的取代子引數
 已嘗試叫用`JSON.stringify`不是有效的引數。 `replacer`引數必須是函式或陣列。  

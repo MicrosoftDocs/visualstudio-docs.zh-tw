@@ -12,12 +12,12 @@ caps.latest.revision: 68
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: aaca69818524df134aa9ad7514ee5e0227b6a812
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: b1dd1598d73cdbd77bc6fe0cb35e639c0fb484b0
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60084982"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443430"
 ---
 # <a name="walkthrough-test-first-support-with-the-generate-from-usage-feature"></a>逐步解說：測試優先支援，並產生功能
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -66,7 +66,7 @@ ms.locfileid: "60084982"
 2. 找到類別 `UnitTest1` 的宣告，並將它重新命名為 `AutomobileTest`。 如果 C# 中有 `UnitTest1()` 建構函式，請將它重新命名為 `AutomobileTest()`。  
   
     > [!NOTE]
-    >  IntelliSense 提供兩種完成 IntelliSense 陳述式的方式： *完成模式* (completion mode) 和 *建議模式*(suggestion mode)。 當類別和成員在使用前即已定義的情況下，請使用建議模式。 當 IntelliSense 視窗開啟時，您可以按 CTRL+ALT+SPACEBAR 在完成模式和建議模式之間切換。 如需詳細資訊，請參閱 [Using IntelliSense](../ide/using-intellisense.md) 。 當您在下個步驟輸入 `Automobile` 時，建議模式非常有幫助。  
+    > IntelliSense 提供兩種完成 IntelliSense 陳述式的方式： *完成模式* (completion mode) 和 *建議模式*(suggestion mode)。 當類別和成員在使用前即已定義的情況下，請使用建議模式。 當 IntelliSense 視窗開啟時，您可以按 CTRL+ALT+SPACEBAR 在完成模式和建議模式之間切換。 如需詳細資訊，請參閱 [Using IntelliSense](../ide/using-intellisense.md) 。 當您在下個步驟輸入 `Automobile` 時，建議模式非常有幫助。  
   
 3. 找到 `TestMethod1()` 方法並將它重新命名為 `DefaultAutomobileIsInitializedCorrectly()`。 在這個方法內，建立名為 `Automobile`的類別新執行個體，如下列圖例所示。 波浪底線隨即出現，這表示發生編譯時期錯誤，類型名稱下會出現智慧標籤。 智慧標籤的確切位置會因您使用 [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] 或 [!INCLUDE[csprcs](../includes/csprcs-md.md)] 而不同。  
   

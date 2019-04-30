@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: ce8bca614d0af9c7b0557d5b5979797f127a47af
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56604908"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62860365"
 ---
 # <a name="implementing-single-file-generators"></a>實作單一檔案產生器
 自訂工具 — 有時稱為單一檔案產生器，可用來擴充[!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)]並[!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)]專案中的系統[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]。 自訂工具是實作的 COM 元件<xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator>介面。 使用此介面，自訂工具將轉換成單一的輸出檔案的單一輸入的檔案。 轉換的結果可能是原始碼或任何其他輸出，是很有用。 自訂工具產生的程式碼檔案的兩個範例會產生以回應在視覺化設計工具和使用 Web 服務描述語言 (WSDL) 產生的檔案中變更程式碼。

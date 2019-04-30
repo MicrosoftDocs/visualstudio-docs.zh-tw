@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d49c062540b50e442f2ac32e69ee37934c53bf2c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: b29b95b9c53f18d6f97ac2455dd30aa6e26ccde4
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60068609"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63415473"
 ---
 # <a name="how-to-implement-undo-management"></a>HOW TO：實作復原管理
 用於復原管理的主要介面是<xref:Microsoft.VisualStudio.OLE.Interop.IOleUndoManager>，這由環境實作。 若要支援復原管理，請實作不同的復原單位 (也就是<xref:Microsoft.VisualStudio.OLE.Interop.IOleUndoUnit>，其中可以包含多個個別的步驟。
@@ -75,7 +75,7 @@ ms.locfileid: "60068609"
    `OleUndoManager`類別代表單一復原 stack 執行個體。 因此，為每個受到追蹤的復原或取消復原的資料實體的一個復原管理員物件。
 
 > [!NOTE]
->  文字編輯器是廣泛使用復原管理員物件，就沒有特定的支援的文字編輯器的一般元件。 如果您想要支援多層級復原或取消復原，您可以使用此物件，若要這樣做。
+> 文字編輯器是廣泛使用復原管理員物件，就沒有特定的支援的文字編輯器的一般元件。 如果您想要支援多層級復原或取消復原，您可以使用此物件，若要這樣做。
 
 ## <a name="see-also"></a>另請參閱
 - <xref:Microsoft.VisualStudio.TextManager.Interop.IVsChangeTrackingUndoManager>

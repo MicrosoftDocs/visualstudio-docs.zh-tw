@@ -11,11 +11,11 @@ caps.latest.revision: 16
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 724d4d0c4b392a362e702f33ea996df3a6fc0ad6
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58943715"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62555964"
 ---
 # <a name="customizing-the-isolated-shell"></a>自訂 Isolated 的 Shell
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ ms.locfileid: "58943715"
  您可以自訂應用程式圖示，它是由應用程式名稱的應用程式標題列中顯示的圖示。 將不同的圖示複製到圖示目錄中。 在 [**方案總管] 中**，將圖示新增至資源檔的資料夾。 然後開啟 VSShellStub.rc 檔案，並使用 [新增] 圖示的名稱取代 IDI_STUBPROGRAM 值。 如需詳細資訊，請參閱[逐步解說：建立基本獨立 Shell 應用程式](../extensibility/walkthrough-creating-a-basic-isolated-shell-application.md)。  
   
 ##### <a name="the-command-line-logo"></a>命令列的標誌  
- 您可以自訂的命令列的標誌，也就是從命令列中，啟動應用程式中的"CommandLineLogo 」 資料列的值變更時，會出現的文字*SolutionName*。Application.pkgdef 檔案。 如需詳細資訊，請參閱[逐步解說：建立基本的 Isolated 的 Shell 應用程式](../extensibility/walkthrough-creating-a-basic-isolated-shell-application.md)  
+ 您可以自訂的命令列的標誌，也就是從命令列中，啟動應用程式中的"CommandLineLogo 」 資料列的值變更時，會出現的文字*SolutionName*。Application.pkgdef 檔案。 如需詳細資訊，請參閱[逐步解說：建立基本的 Isolated Shell 應用程式](../extensibility/walkthrough-creating-a-basic-isolated-shell-application.md)  
   
 ##### <a name="the-name-of-the-user-files-subfolder"></a>使用者名稱的檔案子資料夾  
  您可以變更您的應用程式會維護使用者檔案中的"UserFilesSubFolderName 」 資料列的值變更的資料夾名稱*SolutionName*。Application.pkgdef 檔案。  
@@ -58,7 +58,7 @@ ms.locfileid: "58943715"
  您可以自訂網頁瀏覽器上，也就是開啟網頁瀏覽器視窗時，「 DefaultSearchPage 」 資料列中的值變更時，會顯示的頁面*SolutionName*。Application.pkgdef 檔案。  
   
 ##### <a name="the-default-home-page"></a>預設的首頁  
- 您可以自訂 [首頁] 頁面中的"DefaultHomePage 」 資料列的值變更*SolutionName*。Application.pkgdef 檔案。 如需詳細資訊，請參閱[逐步解說：建立基本的 Isolated 的 Shell 應用程式](../extensibility/walkthrough-creating-a-basic-isolated-shell-application.md)  
+ 您可以自訂 [首頁] 頁面中的"DefaultHomePage 」 資料列的值變更*SolutionName*。Application.pkgdef 檔案。 如需詳細資訊，請參閱[逐步解說：建立基本的 Isolated Shell 應用程式](../extensibility/walkthrough-creating-a-basic-isolated-shell-application.md)  
   
 ##### <a name="whether-or-not-to-hide-the-solution-concept"></a>指出是否要隱藏解決方案概念  
  您可以指定是否要隱藏您的應用程式中的方案中的"HideSolutionConcept 」 資料列的值變更*SolutionName*。Application.pkgdef 檔案。 若要隱藏解決方案，將值設定`dword:00000001`，並顯示方案，請將值設定`dword:00000000`。  

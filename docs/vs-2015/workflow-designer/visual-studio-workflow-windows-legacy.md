@@ -12,11 +12,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 0036c861638c4a0d5d2b7de4500eb00368efe447
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58945685"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62857544"
 ---
 # <a name="visual-studio-workflow-windows-legacy"></a>Visual Studio 工作流程視窗 (舊版)
 [!INCLUDE[wfd2](../includes/wfd2-md.md)] 提供的舊版 [!INCLUDE[vs2010](../includes/vs2010-md.md)] 可用來以 [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] 或 [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)] 為目標。 舊版設計工具是一種視覺化設計工具，可用來建立工作流程。 您可以將活動從**工具箱**設計介面，並那里設定它們。 當此介面為 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 編輯器視窗時，會佔用其他 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 編輯器視窗使用的主視窗區域。 工作流程的名稱會顯示在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 視窗標題列中。  

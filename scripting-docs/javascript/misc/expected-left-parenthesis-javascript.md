@@ -15,11 +15,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 67f8beaed8ba94d30c04df866805bc0c8268a093
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60070130"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62934869"
 ---
 # <a name="expected--javascript"></a>必須是 '(' (JavaScript)
 您嘗試將括在括號、 一組運算式，但未包含左括號。 某些運算式必須使用一組的開頭和結尾括號括住。 請注意，在下列範例中的括號內使用。  

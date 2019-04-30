@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 58675b5f9e963ec416a2c8586375a94f9c06ae69
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56678380"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62877519"
 ---
 # <a name="idebugbinder3findalias"></a>IDebugBinder3::FindAlias
 這個方法會找出的指定名稱的別名。 在程式中，這將會搜尋所有的別名。

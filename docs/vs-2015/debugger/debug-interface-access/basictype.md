@@ -14,11 +14,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 38de89b9774ac20f67b91e4ba864534122f4cdb0
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58943292"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62580833"
 ---
 # <a name="basictype"></a>BasicType
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -58,16 +58,16 @@ enum BasicType { 
  基本類型是`void`。  
   
  btChar  
- 基本類型是`char`（C/c + + 型別）。  
+ 基本類型是`char`(C /C++型別)。  
   
  btWChar  
  基本類型是寬 (Unicode) 字元 (`WCHAR`)。  
   
  btInt  
- 基本類型是`signed int`（C/c + + 型別）。  
+ 基本類型是`signed int`(C /C++型別)。  
   
  btUInt  
- 基本類型是`unsigned int`（C/c + + 型別）。  
+ 基本類型是`unsigned int`(C /C++型別)。  
   
  btFloat  
  基本的型別是浮點數 (`FLOAT`)。  
@@ -79,10 +79,10 @@ enum BasicType { 
  基本的型別是布林值 (`BOOL`)。  
   
  btLong  
- 基本類型是`long int`（C/c + + 型別）。  
+ 基本類型是`long int`(C /C++型別)。  
   
  btULong  
- 基本類型是`unsigned long int`（C/c + + 型別）。  
+ 基本類型是`unsigned long int`(C /C++型別)。  
   
  btCurrency  
  基本類型為貨幣。  

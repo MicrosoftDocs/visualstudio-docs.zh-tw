@@ -10,11 +10,11 @@ ms.workload:
 - vssdk
 monikerRange: vs-2017
 ms.openlocfilehash: 2362bda715a95e4228b6e4f882f1f8fb708667dd
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60086561"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62964777"
 ---
 # <a name="walkthrough-save-user-settings-on-a-start-page"></a>逐步解說：起始頁上儲存使用者設定
 

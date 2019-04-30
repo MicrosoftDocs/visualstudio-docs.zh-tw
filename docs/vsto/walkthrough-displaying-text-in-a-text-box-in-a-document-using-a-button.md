@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f6a9b62c62b863448bb1333b162c6706c48cd72b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 1b5a4152d655dd36eb258ff6b378bf79f87123a8
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60071755"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443835"
 ---
 # <a name="walkthrough-display-text-in-a-text-box-in-a-document-using-a-button"></a>逐步解說：在文字方塊中，使用按鈕文件中的顯示文字
   本逐步解說示範如何在 Microsoft Office Word 的文件層級自訂中使用按鈕和文字方塊。
@@ -60,7 +60,7 @@ ms.locfileid: "60071755"
 2. 從**通用控制項**索引標籤**工具箱**，拖曳<xref:Microsoft.Office.Tools.Word.Controls.TextBox>文件的控制項。
 
    > [!NOTE]
-   >  在 Word 中，控制項預設會內嵌於文字。 您可以修改方式控制項和圖案物件的插入預設值，進而**編輯**索引標籤**選項**在 Word 中的對話方塊。
+   > 在 Word 中，控制項預設會內嵌於文字。 您可以修改方式控制項和圖案物件的插入預設值，進而**編輯**索引標籤**選項**在 Word 中的對話方塊。
 
 3. 在 [ **檢視** ] 功能表中，按一下 [ **屬性視窗**]。
 

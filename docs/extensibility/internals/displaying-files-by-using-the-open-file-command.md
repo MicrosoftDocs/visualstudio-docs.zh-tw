@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9cc24e259ac5aaa8526d5855a1662c146e1438ff
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 6c4655d251d9020c1b8b4474865126dc98fa982f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60112152"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63420680"
 ---
 # <a name="display-files-by-using-the-open-file-command"></a>使用 開啟檔案命令顯示檔案
 下列步驟描述 IDE 如何處理**開啟的檔案**命令，其位於**檔案**功能表中的[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]。 步驟也會說明專案應該如何回應來自這個命令的呼叫。
@@ -31,7 +31,7 @@ ms.locfileid: "60112152"
     - 如果檔案未開啟，IDE 就會呼叫<xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3.IsDocumentInProject%2A>來查詢每個專案，以判斷哪個專案可以開啟檔案。
 
         > [!NOTE]
-        >  在您專案實作<xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3.IsDocumentInProject%2A>，提供優先順序值，指出您的專案會開啟檔案的層級。 中提供優先順序值<xref:Microsoft.VisualStudio.Shell.Interop.VSDOCUMENTPRIORITY>列舉型別。
+        > 在您專案實作<xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3.IsDocumentInProject%2A>，提供優先順序值，指出您的專案會開啟檔案的層級。 中提供優先順序值<xref:Microsoft.VisualStudio.Shell.Interop.VSDOCUMENTPRIORITY>列舉型別。
 
 2. 每個專案以表示重要性的優先順序層級這會造成正在開啟檔案的專案。
 

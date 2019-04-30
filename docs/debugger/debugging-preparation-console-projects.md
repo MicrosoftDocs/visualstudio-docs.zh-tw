@@ -19,15 +19,15 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: f94dcc62b829078fb8efc43ef92ddb203e1a1e32
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56709235"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62852076"
 ---
-# <a name="debugging-preparation-console-projects-c-c-visual-basic-f"></a>偵錯準備： 主控台專案 (C#，c + +、 Visual Basic 中， F#)
+# <a name="debugging-preparation-console-projects-c-c-visual-basic-f"></a>偵錯準備：主控台專案 (C#， C++，Visual Basic 中， F#)
 
-準備偵錯主控台專案與準備偵錯 Windows 專案類似，只需進行一些額外考量。 如需詳細資訊，請參閱 < [Windows Forms 應用程式](../debugger/debugging-preparation-windows-forms-applications.md)，和[偵錯準備： Windows Forms 應用程式 (.NET)](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/sez9z95a(v=vs.100))。 由於所有主控台應用程式都有相似性，這個主題的內容會涵蓋下列專案類型：
+準備偵錯主控台專案與準備偵錯 Windows 專案類似，只需進行一些額外考量。 如需詳細資訊，請參閱 < [Windows Forms 應用程式](../debugger/debugging-preparation-windows-forms-applications.md)，和[偵錯準備：Windows Forms 應用程式 (.NET)](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/sez9z95a(v=vs.100))。 由於所有主控台應用程式都有相似性，這個主題的內容會涵蓋下列專案類型：
 
 - C#Visual Basic 中，與F#主控台應用程式
 
@@ -35,7 +35,7 @@ ms.locfileid: "56709235"
 
 - C++ 主控台應用程式 (Win32)
 
-  您可能需要為您的主控台應用程式指定命令列引數。 如需詳細資訊，請參閱 < [c + + 偵錯組態的專案設定](../debugger/project-settings-for-a-cpp-debug-configuration.md)， [Visual Basic 偵錯組態的專案設定](../debugger/project-settings-for-a-visual-basic-debug-configuration.md)，或[專案設定為C#偵錯設定](../debugger/project-settings-for-csharp-debug-configurations.md)。
+  您可能需要為您的主控台應用程式指定命令列引數。 如需詳細資訊，請參閱 <<c0> [ 的專案設定C++偵錯組態](../debugger/project-settings-for-a-cpp-debug-configuration.md)， [Visual Basic 偵錯組態的專案設定](../debugger/project-settings-for-a-visual-basic-debug-configuration.md)，或[專案設定C#偵錯設定](../debugger/project-settings-for-csharp-debug-configurations.md)。</c0>
 
   跟所有的專案屬性一樣，這些引數會持續保留於偵錯工作階段和 Visual Studio 工作階段之間。 因此，如果某主控台應用程式是您先前已經偵錯的應用程式，請記住先前工作階段的 [\<專案> 屬性頁] 對話方塊中可能有引數。
 
@@ -54,7 +54,7 @@ ms.locfileid: "56709235"
 
   當您從 Visual Studio 啟動主控台應用程式時，[主控台] 視窗有時候會出現在 Visual Studio 視窗後面。 如果您嘗試從 Visual Studio 啟動主控台應用程式而且似乎沒有回應，請嘗試移動 Visual Studio 視窗。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [偵錯機器碼](../debugger/debugging-native-code.md)
 - [偵錯 Managed 程式碼](../debugger/debugging-managed-code.md)
 - [Visual C++ 專案類型](../debugger/debugging-preparation-visual-cpp-project-types.md)

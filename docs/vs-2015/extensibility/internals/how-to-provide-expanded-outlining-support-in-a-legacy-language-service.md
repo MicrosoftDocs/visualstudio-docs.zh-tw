@@ -12,12 +12,12 @@ ms.assetid: df759e89-8193-418c-8038-6626304d387b
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: a2b2b5ca848da4ca680be819e41a8053b21a7d0d
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: b1b2fd8f3d7e4f3637957ef11c4acb20ba51261d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60061355"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63442668"
 ---
 # <a name="how-to-provide-expanded-outlining-support-in-a-legacy-language-service"></a>HOW TO：在舊版語言服務中提供展開大綱的支援
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -53,6 +53,6 @@ ms.locfileid: "60061355"
 3. 如果文字工作階段已經存在，則您不需要建立一個，並指向現有的<xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextSession>會傳回物件。 使用此指標來列舉及建立大綱區域。 否則，呼叫<xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextManager.CreateHiddenTextSession%2A>建立隱藏的文字的工作階段緩衝區。 指標<xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextSession>會傳回物件。  
   
     > [!NOTE]
-    >  當您呼叫<xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextManager.CreateHiddenTextSession%2A>，您可以指定隱藏的文字，用戶端 (也就是<xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextClient>物件)。 此用戶端通知時隱藏的文字，或是大綱區域為展開或摺疊，只要使用者。  
+    > 當您呼叫<xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextManager.CreateHiddenTextSession%2A>，您可以指定隱藏的文字，用戶端 (也就是<xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextClient>物件)。 此用戶端通知時隱藏的文字，或是大綱區域為展開或摺疊，只要使用者。  
   
 4. 呼叫<xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextSession.AddHiddenRegions%2A>結構) 參數：指定的值為<xref:Microsoft.VisualStudio.TextManager.Interop.HIDDEN_REGION_TYPE>中`iType`隸屬<xref:Microsoft.VisualStudio.TextManager.Interop.NewHiddenRegion>結構，以指出您要建立大綱區域，而不是隱藏的區域。 指定的區域是用戶端控制，或以控制編輯器`dwBehavior`隸屬<xref:Microsoft.VisualStudio.TextManager.Interop.NewHiddenRegion>結構。 智慧型大綱實作可以包含各種編輯器和用戶端控制大綱區域。 指定大綱區域摺疊時，例如 "..."，在顯示的橫幅文字`pszBanner`隸屬<xref:Microsoft.VisualStudio.TextManager.Interop.NewHiddenRegion>結構。 編輯器的預設橫幅文字的隱藏區域為"..."。

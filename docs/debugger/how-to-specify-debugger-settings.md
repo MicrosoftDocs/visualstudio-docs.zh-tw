@@ -20,11 +20,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 5b109fd995f54ede3aa2c8a6381cb9e6296a6970
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60074969"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62847506"
 ---
 # <a name="how-to-specify-debugger-settings"></a>HOW TO：指定偵錯工具設定
 在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 中，您可以指定偵測工具行為的各種設定，包括變數如何顯示、某些警告是否要呈現、如何設定中斷點，以及中斷會如何影響執行中的程式  請在 [選項] 對話方塊中指定偵錯工具設定。

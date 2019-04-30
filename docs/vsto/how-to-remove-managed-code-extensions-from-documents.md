@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 438658af3f182ea732d0fefef0f5a5d6ecbefa03
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60071625"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62961588"
 ---
 # <a name="how-to-remove-managed-code-extensions-from-documents"></a>HOW TO：從文件移除 managed 程式碼擴充功能
   您可以透過程式設計方式移除自訂組件的文件或 Microsoft Office Word 或 Microsoft Office Excel 文件層級自訂一部分的活頁簿。 使用者可以開啟文件並檢視其內容，但不是會出現您的文件中加入任何自訂使用者介面 (UI)，並不會執行您的程式碼。

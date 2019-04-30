@@ -12,12 +12,12 @@ ms.assetid: f6411557-2f4b-4e9f-b02e-fce12a6ac7e9
 caps.latest.revision: 40
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 234f8ffbb3fdde48ca844386d5e5a716f74e8969
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: ac07a2c6becd46a2536e6a9b3340d075d5f078f2
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60054726"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63403249"
 ---
 # <a name="adding-a-command-to-the-solution-explorer-toolbar"></a>將命令新增至方案總管工具列
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ ms.locfileid: "60054726"
  如需功能表、 工具列命令和.vsct 檔的詳細資訊，請參閱[命令、 功能表和工具列](../extensibility/internals/commands-menus-and-toolbars.md)。  
   
 > [!NOTE]
->  使用 XML 命令表檔案 (.vsct) 而不是命令資料表設定 (.ctc) 檔案，來定義您的 Vspackage 中出現的功能表和命令。 如需詳細資訊，請參閱 [Visual Studio Command Table (.Vsct) Files](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)。  
+> 使用 XML 命令表檔案 (.vsct) 而不是命令資料表設定 (.ctc) 檔案，來定義您的 Vspackage 中出現的功能表和命令。 如需詳細資訊，請參閱 [Visual Studio Command Table (.Vsct) Files](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)。  
   
 ## <a name="prerequisites"></a>必要條件  
  從 Visual Studio 2015 中，從下載中心取得未安裝 Visual Studio SDK。 包含為 Visual Studio 安裝程式的選用功能。 您也可以在稍後安裝 VS SDK。 如需詳細資訊，請參閱 <<c0> [ 安裝 Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md)。  

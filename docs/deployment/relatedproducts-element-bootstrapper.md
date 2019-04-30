@@ -22,11 +22,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: f45b8c07cf03dc83969c3500c80b8ee215e3ad69
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56621626"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62898720"
 ---
 # <a name="ltrelatedproductsgt-element-bootstrapper"></a>&lt;RelatedProducts&gt;項目 （啟動載入器）
 `RelatedProducts`項目定義，或是相依於目前的產品中包含其他產品。
@@ -57,7 +57,7 @@ ms.locfileid: "56621626"
 
  `DependsOnProduct` 具有下列屬性。
 
-|屬性|說明|
+|屬性|描述|
 |---------------|-----------------|
 |`Code`|包含的產品，為所指定的程式碼名稱`ProductCode`屬性的`Product`項目。 如需詳細資訊，請參閱 < [\<產品 > 項目](../deployment/product-element-bootstrapper.md)。|
 
@@ -69,7 +69,7 @@ ms.locfileid: "56621626"
 
  `IncludesProduct` 具有下列屬性。
 
-|屬性|說明|
+|屬性|描述|
 |---------------|-----------------|
 |`Code`|包含的產品，為所指定的程式碼名稱`ProductCode`屬性的`Product`項目。 如需詳細資訊，請參閱 < [\<產品 > 項目](../deployment/product-element-bootstrapper.md)。|
 

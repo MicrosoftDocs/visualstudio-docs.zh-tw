@@ -9,12 +9,12 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 71d7dc0fc208fa3c108019f6324c3d053673e918
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 252b554542df23e2d3197dfe28100546a6d25b32
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60070832"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63411457"
 ---
 # <a name="t4-template-directive"></a>T4 範本指示詞
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -212,7 +212,7 @@ This is the common footer.
  您也可以將一般手寫的類別當做基底類別。 基底類別必須提供衍生類別所用的方法。  
   
 > [!WARNING]
->  如果您同時使用 `inherits` 和 `hostspecific` 屬性，請在衍生類別中指定 hostspecific="trueFromBase"，在基底類別中指定 host="true"。 這可避免在產生的程式碼中出現 `Host` 屬性的雙重定義。  
+> 如果您同時使用 `inherits` 和 `hostspecific` 屬性，請在衍生類別中指定 hostspecific="trueFromBase"，在基底類別中指定 host="true"。 這可避免在產生的程式碼中出現 `Host` 屬性的雙重定義。  
   
 ### <a name="inheritance-in-a-design-time-text-template"></a>設計階段文字範本中的繼承  
  設計階段文字範本時的檔案，即**自訂工具**設為**TextTemplatingFileGenerator**。 這種範本會為形成 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 專案之一部分的程式碼或文字產生輸出檔。 為產生輸出檔，會先將範本轉譯為中繼程式碼檔，後者通常不會顯示出來。 `inherits` 屬性會為這個中繼程式碼指定基底類別。  

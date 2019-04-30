@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 6dbc2638fa23a1e0c7bf1301c3c978a1ef864c75
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60074095"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62861676"
 ---
 # <a name="application-of-settings-across-multiple-project-connections"></a>跨多個專案連接設定的應用程式
 使用原始檔控制外掛程式 API 版本 1.2，建置可以跨多個專案或多個連接內容中執行相同的原始檔控制作業批次作業使用原始檔控制外掛程式。 批次可以用於去除多餘]、 [每個專案的使用者經驗的對話方塊。

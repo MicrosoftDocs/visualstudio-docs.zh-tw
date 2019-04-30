@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 6bfbcf9a63a01d391cbbc65067793d75d42899c1
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "58790325"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62901278"
 ---
 # <a name="debugging-techniques-and-tools-to-help-you-write-better-code"></a>偵錯技術和工具，可協助您撰寫更好的程式碼
 

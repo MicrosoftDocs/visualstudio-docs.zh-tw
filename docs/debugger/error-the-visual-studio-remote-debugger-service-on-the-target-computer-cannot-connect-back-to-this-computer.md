@@ -17,11 +17,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: e3f406ac338edfc79c3d8fd802d1cb43d0224f21
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60107149"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62850398"
 ---
 # <a name="error-the-visual-studio-remote-debugger-service-on-the-target-computer-cannot-connect-back-to-this-computer"></a>錯誤：目標電腦上的 Visual Studio 遠端偵錯工具服務無法連回這部電腦
 這個錯誤指出，Visual Studio 遠端偵錯工具服務正在某個使用者帳戶下執行，但是當該帳戶嘗試連接您在其中進行偵錯的電腦時無法進行驗證。

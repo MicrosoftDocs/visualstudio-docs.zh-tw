@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 4a53e7971ac54af439a02d765fb392157d4a5321
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56687454"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62911195"
 ---
 # <a name="icon-element"></a>Icon 元素
 Guid 屬性的圖示標記會定義點陣圖的 guid。 `id`屬性選取點陣圖區中的位置。 這是選擇性的項目。 如果這個項目不包含值**guidOfficeIcon:msotcidNoIcon**會隱含。

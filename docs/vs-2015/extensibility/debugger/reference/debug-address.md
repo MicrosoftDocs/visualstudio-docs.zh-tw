@@ -12,12 +12,12 @@ ms.assetid: 79f5e765-9aac-4b6e-82ef-bed88095e9ba
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: f9057b8c19c1e1763b29fe40fc77bfc0be064159
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: d001d29433573fedde3b4310f989667538b4b69c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58943960"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444966"
 ---
 # <a name="debugaddress"></a>DEBUG_ADDRESS
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -55,7 +55,7 @@ public struct DEBUG_ADDRESS {
  語彙基元，可識別的類別或此位址的類型。  
   
 > [!NOTE]
->  這個值是特定符號提供者也因此而不做為類別類型的識別項的一般意義。  
+> 這個值是特定符號提供者也因此而不做為類別類型的識別項的一般意義。  
   
  addr  
  A [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md)結構，其中包含可描述個別地址類型結構的聯集。 值`addr`。`dwKind` 來自[ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md)列舉型別，其中說明如何解譯聯集。  
@@ -63,7 +63,7 @@ public struct DEBUG_ADDRESS {
 ## <a name="remarks"></a>備註  
  此結構會傳遞至[GetAddress](../../../extensibility/debugger/reference/idebugaddress-getaddress.md)来填入的方法。  
   
- **警告 [只有 c + +]**  
+ **警告 [C++只]**  
   
  如果`addr.dwKind`已`ADDRESS_KIND_METADATA_LOCAL`如果`addr.addr.addrLocal.pLocal`不是 null 的值，則您必須呼叫`Release`語彙基元的指標：  
   

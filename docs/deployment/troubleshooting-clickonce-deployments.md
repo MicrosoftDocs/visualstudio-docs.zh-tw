@@ -19,11 +19,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: eef5973eb7ec4b8779f89779fe1aad62d86f4850
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56612578"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62898116"
 ---
 # <a name="troubleshoot-clickonce-deployments"></a>針對 ClickOnce 部署進行疑難排解
 本主題將協助您診斷及解決常見的問題與[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]部署。
@@ -32,11 +32,11 @@ ms.locfileid: "56612578"
 
 ## <a name="deployment-considerations"></a>部署考量
 
- [How to: Set a custom log file location for ClickOnce deployment errors](../deployment/how-to-set-a-custom-log-file-location-for-clickonce-deployment-errors.md) (如何：設定 ClickOnce 部署錯誤的自訂記錄檔位置)
+ [如何：設定 ClickOnce 部署錯誤的自訂記錄檔位置](../deployment/how-to-set-a-custom-log-file-location-for-clickonce-deployment-errors.md)
 
  描述如何重新導向所有[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]單一記錄檔的電腦上啟用失敗。
 
- [How to: Specify verbose log files for ClickOnce deployments](../deployment/how-to-specify-verbose-log-files-for-clickonce-deployments.md) (如何：指定 ClickOnce 部署的詳細資訊記錄檔)
+ [如何：指定供 ClickOnce 部署使用的詳細資訊記錄檔](../deployment/how-to-specify-verbose-log-files-for-clickonce-deployments.md)
 
  描述如何增加詳細資料，[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]寫入記錄檔。
 

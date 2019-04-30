@@ -18,11 +18,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: b3e02869abab65878412f96b77d5782b9717a1b6
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58155702"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62821924"
 ---
 # <a name="idebugasyncoperationstart"></a>IDebugAsyncOperation::Start
 會導致開始非同步作業。  

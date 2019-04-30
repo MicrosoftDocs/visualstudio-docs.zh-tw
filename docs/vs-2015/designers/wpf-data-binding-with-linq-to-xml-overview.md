@@ -9,12 +9,12 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a614a90fe6388d9189d2b63e02f9bf63f83f0b7b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: e949dd566a065b266bfdbf8eae36a099fa229ef7
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54774174"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63403421"
 ---
 # <a name="wpf-data-binding-with-linq-to-xml-overview"></a>WPF 資料繫結與 LINQ to XML 概觀
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,7 +35,7 @@ ms.locfileid: "54774174"
 ## <a name="data-binding-in-the-windows-presentation-foundation"></a>Windows Presentation Foundation 中的資料繫結  
  WPF 資料繫結可讓 UI 項目將其屬性中的一個屬性與資料來源產生關聯。 其中一個簡單的範例為 <xref:System.Windows.Controls.Label>，其文字表示使用者定義物件中公用屬性的值。 WPF 資料繫結依賴下列元件：  
   
-|元件|說明|  
+|元件|描述|  
 |---------------|-----------------|  
 |繫結目標|與資料來源相關聯的 UI 項目。 WPF 中的 Visual 項目衍生自 <xref:System.Windows.UIElement> 類別。|  
 |目標屬性|反映資料繫結來源值的繫結目標「相依性屬性」。 相依性屬性是由 <xref:System.Windows.DependencyObject> 類別 (可衍生 <xref:System.Windows.UIElement>) 直接支援。|  
@@ -61,7 +61,7 @@ ms.locfileid: "54774174"
  這些動態屬性是特殊的執行階段屬性，會在 <xref:System.Xml.Linq.XAttribute> 和 <xref:System.Xml.Linq.XElement> 類別中，複製現有方法和屬性的功能。 這些屬性會單獨加入到這些類別中，讓它們當做 WPF 的動態資料來源使用。 為符合這個需求，全部這些動態屬性都要實作變更通知。 下一節 [LINQ to XML 動態屬性](../designers/linq-to-xml-dynamic-properties.md)中會提供這些動態屬性的詳細參考。  
   
 > [!NOTE]
->  在 <xref:System.Xml.Linq> 命名空間各種類別中找到的多數標準公用屬性都可以用於一次資料繫結。 不過請記住，在此配置下，不會自動更新來源或目標。  
+> 在 <xref:System.Xml.Linq> 命名空間各種類別中找到的多數標準公用屬性都可以用於一次資料繫結。 不過請記住，在此配置下，不會自動更新來源或目標。  
   
 ### <a name="accessing-dynamic-properties"></a>存取動態屬性  
  <xref:System.Xml.Linq.XAttribute> 和 <xref:System.Xml.Linq.XElement> 類別中的動態屬性無法像標準屬性般存取。 例如，在 CLR 相容的語言 (例如 C#) 中，這些屬性無法：  
@@ -88,7 +88,7 @@ ms.locfileid: "54774174"
   
  若要實作 WPF 動態繫結，動態屬性將搭配 <xref:System.Windows.Data> 命名空間 (特別是 <xref:System.Windows.Data.Binding> 類別) 所提供的功能使用。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [使用 LINQ to XML 進行 WPF 資料繫結](../designers/wpf-data-binding-with-linq-to-xml.md)   
  [LINQ to XML 動態屬性](../designers/linq-to-xml-dynamic-properties.md)   
  [WPF 中的 XAML](http://msdn.microsoft.com/library/5d858575-a83b-42df-ad3f-047ed2d6e3c8)   

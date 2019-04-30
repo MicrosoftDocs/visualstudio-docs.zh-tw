@@ -16,11 +16,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 7d0a24301f7571225ed1002ce4e331f29fd4d77c
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57873867"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62824064"
 ---
 # <a name="scenario-change-your-design-using-visualization-and-modeling"></a>案例：使用視覺化和模型製作工具變更設計
 
@@ -95,7 +95,7 @@ Lucerne 則維持一個相當大型且複雜的系統集合，其中有些系統
 
 - [對應方案之間的相依性](../modeling/map-dependencies-across-your-solutions.md)
 
-- [如何：將類別圖表新增至專案 （類別設計工具）](../ide/class-designer/how-to-add-class-diagrams-to-projects.md)
+- [如何：將類別圖表新增至專案 (類別設計工具)](../ide/class-designer/how-to-add-class-diagrams-to-projects.md)
 
 - [Modeling SDK for Visual Studio - 特定領域語言](../modeling/modeling-sdk-for-visual-studio-domain-specific-languages.md)
 
@@ -383,7 +383,7 @@ Code Map 顯示程式碼的目前組織及關聯性。 項目在地圖上是以 
 
 您可以使用 [類別設計工具] 從程式碼建立類別圖，來開始探索及討論現有類別。
 
-- [如何：將類別圖表新增至專案 （類別設計工具）](../ide/class-designer/how-to-add-class-diagrams-to-projects.md)
+- [如何：將類別圖表新增至專案 (類別設計工具)](../ide/class-designer/how-to-add-class-diagrams-to-projects.md)
 
 #### <a name="summary-strengths-of-class-diagrams"></a>摘要: 類別圖表的優勢
  類別圖表可協助您定義下列項目：

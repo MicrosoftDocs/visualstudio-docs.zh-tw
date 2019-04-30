@@ -11,12 +11,12 @@ caps.latest.revision: 35
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 0f814623d8084619ccbe82d6660900055f81b3ef
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 2399ff36639732f20babef368a1d9e2f6758a1c4
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60101180"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437879"
 ---
 # <a name="msbuild-properties1"></a>MSBuild Properties1
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -57,7 +57,7 @@ ms.locfileid: "60101180"
  若要從衍生的工具內取得環境變數的目前值，請使用[屬性函式](../msbuild/property-functions.md) System.Environment.GetEnvironmentVariable。 然而，一般慣用的方法是使用工作參數 <xref:Microsoft.Build.Utilities.ToolTask.EnvironmentVariables%2A>。 這個字串陣列中設定的環境屬性可以傳遞至繁衍的工具，而不會影響系統環境變數。  
   
 > [!TIP]
->  並非所有環境變數都會在讀取後變成初始屬性。 任何未採用有效 MSBuild 屬性名稱 (例如 "386") 的環境變數都會被忽略。  
+> 並非所有環境變數都會在讀取後變成初始屬性。 任何未採用有效 MSBuild 屬性名稱 (例如 "386") 的環境變數都會被忽略。  
   
  如需詳細資訊，請參閱[如何：在組建中使用環境變數](../msbuild/how-to-use-environment-variables-in-a-build.md)。  
   

@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 2fcc2fe575bd6b526f5f66d936625c87e91b0b39
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60111177"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62999795"
 ---
 # <a name="development-best-practices-for-com-vsto-and-vba-add-ins-in-office"></a>COM、 VSTO 和 VBA 增益集 Office 的開發最佳作法
   如果您正在適用於 Office 開發 COM、 VSTO 或 VBA 增益集，請遵循本文中所述的開發最佳作法。   這有助於確保：

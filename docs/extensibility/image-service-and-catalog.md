@@ -9,11 +9,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: e76f3dfdb6ce8890387a85be474bac4d0f605777
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60106276"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62911214"
 ---
 # <a name="image-service-and-catalog"></a>映像服務和目錄
 此操作手冊包含指導方針和最佳作法採用 Visual Studio 映像服務與 Visual Studio 2015 中導入的映像目錄。

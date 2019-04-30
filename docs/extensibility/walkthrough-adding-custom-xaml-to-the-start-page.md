@@ -13,11 +13,11 @@ ms.workload:
 - vssdk
 monikerRange: vs-2017
 ms.openlocfilehash: 2ee368224eb4991a2f1f167d565bd2b07f85d4c6
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60072172"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62953071"
 ---
 # <a name="walkthrough-add-custom-xaml-to-the-start-page"></a>逐步解說：將自訂的 XAML 加入至 [開始] 頁面
 

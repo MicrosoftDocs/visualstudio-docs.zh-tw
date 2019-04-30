@@ -22,11 +22,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 2d5884ab002590f8944aa8c1134c67758a2f0c58
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58943884"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62423799"
 ---
 # <a name="how-to-write-a-run-time-error-reporting-function"></a>HOW TO：撰寫執行階段錯誤報告函式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

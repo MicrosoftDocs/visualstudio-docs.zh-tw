@@ -9,12 +9,12 @@ helpviewer_keywords:
 ms.assetid: 700e80a4-c1e1-4178-af53-45e86dd2c08b
 caps.latest.revision: 9
 manager: jillfra
-ms.openlocfilehash: 2d5ba5a271cd7132d9750fc0569b801022aeb932
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 7b963436e9d968dd5ba3829e97d0fd0c52e49641
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60117848"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443013"
 ---
 # <a name="how-to-create-a-vsct-file-from-an-existing-ctc-file"></a>HOW TO：建立。從現有的 Vsct 檔案。Ctc 檔案
 您可以從現有命令資料表 .ctc 原始程式檔建立 XML .vsct 檔。 這樣做，您可以充分利用新的 XML [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 命令資料表 (VSCT) 編譯器格式。  
@@ -42,7 +42,7 @@ ms.locfileid: "60117848"
      這會建立新的 .vsct XML 命令資料表原始程式檔。 您可以像是處理任何其他 .vsct 檔一樣，使用 Vsct.exe (VSCT 編譯器) 編譯此檔案。  
   
     > [!NOTE]
-    >  您可以重新格式化 XML 註解來改善 .vsct 檔的可讀性。  
+    > 您可以重新格式化 XML 註解來改善 .vsct 檔的可讀性。  
   
 ## <a name="see-also"></a>另請參閱  
  [如何：建立。Vsct 檔案](../extensibility/internals/how-to-create-a-dot-vsct-file.md)   

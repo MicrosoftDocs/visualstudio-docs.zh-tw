@@ -15,11 +15,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: f3da7f0da3901511e0f14e48b3ff0500928e3774
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55917476"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62806624"
 ---
 # <a name="ca2221-finalizers-should-be-protected"></a>CA2221:Finalizer 方法應該為 protected
 
@@ -34,7 +34,7 @@ ms.locfileid: "55917476"
  公用類型會實作完成項，不會指定系列 （受保護） 的存取。
 
 ## <a name="rule-description"></a>規則描述
- 完成項必須使用系列存取修飾詞 (Modifier)。 此規則會強制執行 C#、 Visual Basic 和 Visual c + + 編譯器。
+ 完成項必須使用系列存取修飾詞 (Modifier)。 此規則會強制執行C#，Visual Basic 和 VisualC++編譯器。
 
 ## <a name="how-to-fix-violations"></a>如何修正違規
  若要修正此規則的違規情形，變更系列存取完成項。

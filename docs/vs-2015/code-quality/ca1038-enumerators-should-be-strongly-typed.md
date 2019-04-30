@@ -15,12 +15,12 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: be143ecb57a952c45e518eef0d83d52274075614
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 84b6ae6ef0c63870ad9dc593fd0cf2e166e65397
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58930489"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62559815"
 ---
 # <a name="ca1038-enumerators-should-be-strongly-typed"></a>CA1038:列舉程式應該是強類型
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,11 +35,11 @@ ms.locfileid: "58930489"
 ## <a name="cause"></a>原因
  公用或受保護的型別會實作<xref:System.Collections.IEnumerator?displayProperty=fullName>但不提供強型別的版本<xref:System.Collections.IEnumerator.Current%2A?displayProperty=fullName>屬性。 衍生自下列類型的類型為免套用此規則：
 
--   <xref:System.Collections.CollectionBase?displayProperty=fullName>
+- <xref:System.Collections.CollectionBase?displayProperty=fullName>
 
--   <xref:System.Collections.DictionaryBase?displayProperty=fullName>
+- <xref:System.Collections.DictionaryBase?displayProperty=fullName>
 
--   <xref:System.Collections.ReadOnlyCollectionBase?displayProperty=fullName>
+- <xref:System.Collections.ReadOnlyCollectionBase?displayProperty=fullName>
 
 ## <a name="rule-description"></a>規則描述
  這項規則要求<xref:System.Collections.IEnumerator>實作也提供強型別的版本<xref:System.Collections.IEnumerator.Current%2A>屬性，因此使用者不需要傳回值轉換成強型別時使用介面所提供的功能。 這項規則假設，實作型別<xref:System.Collections.IEnumerator>包含比強型別的執行個體的集合<xref:System.Object>。

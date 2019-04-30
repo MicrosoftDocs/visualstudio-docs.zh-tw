@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 21efca0d922087281f94facfdaf04a12606bc4db
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: ba106bd28db63b6215abd02ea00aff0b3c0c00e0
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60044589"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432236"
 ---
 # <a name="deploying-a-custom-directive-processor"></a>部署自訂指示詞處理器
 
@@ -144,7 +144,7 @@ ms.locfileid: "60044589"
 ```
 
 > [!NOTE]
->  這個屬性要放在套件類別，而非指示詞處理器類別上。
+> 這個屬性要放在套件類別，而非指示詞處理器類別上。
 
  當您建置專案時，就會產生 .pkgdef 檔。 當您安裝 VSPackage 時，.pkgdef 檔將會註冊指示詞處理器。
 
@@ -156,7 +156,7 @@ ms.locfileid: "60044589"
  除非不得已，否則不建議使用這個方法來安裝自訂指示詞處理器。 它無法提供啟用和停用指示詞處理器的便利方式，也無法提供散發指示詞處理器給其他使用者的方法。
 
 > [!CAUTION]
->  不當編輯登錄可能會對系統造成嚴重損害。 變更登錄之前，務必先備份電腦上任何重要的資料。
+> 不當編輯登錄可能會對系統造成嚴重損害。 變更登錄之前，務必先備份電腦上任何重要的資料。
 
 #### <a name="to-register-a-directive-processor-by-setting-a-registry-key"></a>若要設定登錄機碼來註冊指示詞處理器
 

@@ -14,12 +14,12 @@ ms.assetid: 19f483b6-4d3e-424e-9d68-dc129c788e47
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: c799d2733c4deca07cdcbe087b1b694f9d1725e6
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: fb85bc64164acc09aef6464b69e72b7c6cf46d77
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58944287"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63405630"
 ---
 # <a name="binding-keyboard-shortcuts-to-menu-items"></a>將鍵盤快速鍵繫結至功能表項目
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,7 +44,7 @@ ms.locfileid: "58944287"
 4. 直到您找到未對應的其中一個，請嘗試不同的組合索引鍵。  
   
    > [!NOTE]
-   >  使用 alt 鍵的鍵盤快速鍵可能會開啟功能表，並不是直接執行命令。 因此，**目前所使用的快顯**方塊可能是空白，當您輸入包含 ALT 捷徑。 您可以確認捷徑不會透過關閉開啟功能表**選項**] 對話方塊中，然後按 [索引鍵。  
+   > 使用 alt 鍵的鍵盤快速鍵可能會開啟功能表，並不是直接執行命令。 因此，**目前所使用的快顯**方塊可能是空白，當您輸入包含 ALT 捷徑。 您可以確認捷徑不會透過關閉開啟功能表**選項**] 對話方塊中，然後按 [索引鍵。  
   
    下列程序假設您有現有的 VSPackage，具有功能表命令。 如果您需要這麼做的說明，看看[建立具有功能表命令的擴充](../extensibility/creating-an-extension-with-a-menu-command.md)。  
   
@@ -55,7 +55,7 @@ ms.locfileid: "58944287"
 2. 建立空`<KeyBindings>`區段之後`<Commands>`如果尚不存在。  
   
    > [!WARNING]
-   >  如需有關索引鍵繫結的詳細資訊，請參閱[按鍵繫結關係](../extensibility/keybinding-element.md)。  
+   > 如需有關索引鍵繫結的詳細資訊，請參閱[按鍵繫結關係](../extensibility/keybinding-element.md)。  
   
     在 `<KeyBindings>`區段中，建立`<KeyBinding>`項目。  
   

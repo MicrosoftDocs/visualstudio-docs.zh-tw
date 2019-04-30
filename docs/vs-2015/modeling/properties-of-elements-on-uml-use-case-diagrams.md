@@ -14,12 +14,12 @@ caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: dbe2a9f3d46be72ae1e463da7c6173ef0571bc89
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: b52afab80bc22c03dc5ff980b937cad53869f5db
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58939911"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444408"
 ---
 # <a name="properties-of-elements-on-uml-use-case-diagrams"></a>UML 使用案例圖上的項目屬性
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,17 +27,17 @@ ms.locfileid: "58939911"
 在 UML 使用案例圖中，圖表上的每個項目都會有屬性。 若要查看項目的屬性，以滑鼠右鍵按一下的項目在圖表上或在**UML 模型總管**，然後按一下**屬性**。 屬性會出現在**屬性**視窗。  
   
 > [!NOTE]
->  本主題是關於 UML 使用案例圖中的項目屬性。 如需如何讀取 UML 活動圖表的詳細資訊，請參閱[UML 使用案例圖：參考資料](../modeling/uml-use-case-diagrams-reference.md)。 如需如何繪製 UML 活動圖表的詳細資訊，請參閱[UML 使用案例圖：指導方針](../modeling/uml-use-case-diagrams-guidelines.md)。  
+> 本主題是關於 UML 使用案例圖中的項目屬性。 如需如何讀取 UML 活動圖表的詳細資訊，請參閱[UML 使用案例圖：參考資料](../modeling/uml-use-case-diagrams-reference.md)。 如需如何繪製 UML 活動圖表的詳細資訊，請參閱[UML 使用案例圖：指導方針](../modeling/uml-use-case-diagrams-guidelines.md)。  
   
 ## <a name="properties-of-elements"></a>項目屬性  
   
 |屬性|預設|項目|描述|  
 |--------------|-------------|-------------|-----------------|  
-|**名稱**|預設名稱|全部|識別項目。|  
-|**限定的名稱**|封裝::名稱|全部|唯一識別該項目。 前面加上含有該項目之套件的合格名稱。|  
-|**工作項目**|0 associated|全部|與此項目相關聯的工作項目數。 若要關聯工作項目，請參閱[連結模型項目和工作項目](../modeling/link-model-elements-and-work-items.md)。|  
-|**描述**|(無)|全部|您可以在這裡設定項目的一般注意事項。|  
-|**Color**|(預設值)|全部|圖案的色彩。 不像其他屬性，這不是圖形顯示的項目屬性。|  
+|**名稱**|預設名稱|All|識別項目。|  
+|**限定的名稱**|封裝::名稱|All|唯一識別該項目。 前面加上含有該項目之套件的合格名稱。|  
+|**工作項目**|0 associated|All|與此項目相關聯的工作項目數。 若要關聯工作項目，請參閱[連結模型項目和工作項目](../modeling/link-model-elements-and-work-items.md)。|  
+|**描述**|(無)|All|您可以在這裡設定項目的一般注意事項。|  
+|**Color**|(預設值)|All|圖案的色彩。 不像其他屬性，這不是圖形顯示的項目屬性。|  
 |**影像路徑**|(無)|行動|應該要用來取代預設執行者圖示的影像檔案路徑。 此圖示應為 Visual Studio 專案內的資源檔。|  
 |**Subjects**|(無)|使用案例|擁有使用案例的子系統或其他類型。<br /><br /> 將使用案例放置在圖表的子系統上，即可設定它。|  
 |**可見度**|Public|使用案例、執行者、子系統|**公用**-全域可見。<br /><br /> **封裝**-在套件內可見。|  

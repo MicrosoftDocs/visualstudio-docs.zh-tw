@@ -15,11 +15,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 4442143b2766ed3608a852d0f811a6b943fd19df
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60117043"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63007102"
 ---
 # <a name="function-expected"></a>必須是函式
 可能是您嘗試叫用的其中一個**函式原型**不是物件上的方法`Function`物件，或您的物件則會在函式呼叫內容中使用。 例如，下列程式碼會產生這個錯誤因為**範例**不是函式。  

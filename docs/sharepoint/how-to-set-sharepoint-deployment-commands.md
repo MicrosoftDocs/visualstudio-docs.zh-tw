@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 7664dfcfe11d7ab7dc6ab03045533bbd9e69fb9c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60077780"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62812906"
 ---
 # <a name="how-to-set-sharepoint-deployment-commands"></a>HOW TO：設定 SharePoint 部署命令
   您可以自訂部署程序，藉由設定預先部署和部署後命令。 當您偵錯 SharePoint 方案，從 Visual Studio 時，這些命令會執行之前和之後的其他部署動作。

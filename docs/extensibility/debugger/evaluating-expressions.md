@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: de25fca07642414ec42f17c2e458b90ce94041cb
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56711302"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62925787"
 ---
 # <a name="evaluate-expressions"></a>評估運算式
 運算式會從字串向下傳遞從**自動變數**，**監看式**，**快速監看式**，或**即時運算**windows。 評估運算式時，它會產生可列印的字串，包含名稱和類型的變數或引數，而其值。 此字串會顯示在對應的 IDE 視窗。

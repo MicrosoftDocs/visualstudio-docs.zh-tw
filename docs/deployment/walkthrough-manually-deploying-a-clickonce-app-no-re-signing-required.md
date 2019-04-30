@@ -22,12 +22,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 773a9f5a990b3432484c1ff13012b173c9fac1cb
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 50febcb027ec51b62bdde7ea06a7112470cdc247
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60076220"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63405845"
 ---
 # <a name="walkthrough-manually-deploy-a-clickonce-application-that-does-not-require-re-signing-and-that-preserves-branding-information"></a>逐步解說：手動部署 ClickOnce 應用程式，而無須重新簽署而且會保留商標資訊
 當您建立[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]應用程式並再將它提供給客戶發行並部署，客戶有以往都會需要更新部署資訊清單，並重新簽署資訊清單。 同時，仍然是慣用的方法，在大部分情況下，.NET Framework 3.5 可讓您建立[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]客戶可以部署而不需要重新產生新的部署資訊清單的部署。 如需詳細資訊，請參閱 <<c0> [ 部署 ClickOnce 應用程式，但不重新簽署的測試和生產環境伺服器](../deployment/deploying-clickonce-applications-for-testing-and-production-without-resigning.md)。
@@ -35,7 +35,7 @@ ms.locfileid: "60076220"
  當您建立[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]應用程式，然後將它交給客戶來發佈和部署，應用程式可以使用客戶的商標或保留您的品牌。 比方說，如果應用程式是單一的專屬應用程式，您可能想要保留您的品牌。 如果應用程式高度自訂的每個客戶中，您可能想要使用客戶的商標。 .NET Framework 3.5 可讓您保留您的品牌、 發行者資訊和安全性簽章，當您為組織部署的應用程式。 如需詳細資訊，請參閱 <<c0> [ 建立 ClickOnce 應用程式供其他人部署](../deployment/creating-clickonce-applications-for-others-to-deploy.md)。
 
 > [!NOTE]
->  在此逐步解說中您建立部署以手動方式使用其中一種命令列工具*Mage.exe*或圖形化工具*MageUI.exe*。 如需有關手動部署的詳細資訊，請參閱[逐步解說：手動部署 ClickOnce 應用程式](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)。
+> 在此逐步解說中您建立部署以手動方式使用其中一種命令列工具*Mage.exe*或圖形化工具*MageUI.exe*。 如需有關手動部署的詳細資訊，請參閱[逐步解說：手動部署 ClickOnce 應用程式](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)。
 
 ## <a name="prerequisites"></a>必要條件
  若要執行本逐步解說中的步驟您需要下列項目：
@@ -51,7 +51,7 @@ ms.locfileid: "60076220"
 2. 建立名為目前的版本，您的部署。 如果這是您要部署應用程式的第一次，您可能會選擇**1.0.0.0**。
 
    > [!NOTE]
-   >  您部署的版本可能不同於您的應用程式檔案的版本。
+   > 您部署的版本可能不同於您的應用程式檔案的版本。
 
 3. 建立名為子目錄**bin**並複製所有的應用程式檔案，包括可執行檔、 組件、 資源和資料檔案。
 
@@ -101,7 +101,7 @@ ms.locfileid: "60076220"
 3. 建立目前的部署版本命名的子目錄。 如果這是您要部署應用程式的第一次，您可能會選擇**1.0.0.0**。
 
    > [!NOTE]
-   >  您部署的版本可能不同於您的應用程式檔案的版本。
+   > 您部署的版本可能不同於您的應用程式檔案的版本。
 
 4. 移動\\ **bin**目錄到您在步驟 2 中建立的目錄。
 

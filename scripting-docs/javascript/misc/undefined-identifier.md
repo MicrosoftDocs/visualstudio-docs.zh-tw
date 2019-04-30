@@ -15,11 +15,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: ee928a945081d1ac1369a71d11f74f2c5db2b365
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60097099"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63005910"
 ---
 # <a name="undefined-identifier"></a>未定義的識別項
 您嘗試使用識別項，[!INCLUDE[javascript](../../javascript/includes/javascript-md.md)]編譯器無法辨識。 每當您使用，則會傳回未定義的值：  

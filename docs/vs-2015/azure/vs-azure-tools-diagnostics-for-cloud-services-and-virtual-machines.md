@@ -11,11 +11,11 @@ ms.author: mikejo
 ms.prod: visual-studio-dev14
 ms.technology: vs-azure
 ms.openlocfilehash: 3790d370e969a913db31c3bab139b2c42ef97d22
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60105421"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62964561"
 ---
 # <a name="set-up-diagnostics-for-azure-cloud-services-and-virtual-machines"></a>針對 Azure 雲端服務與虛擬機器設定診斷
 需要針對 Azure 雲端服務或 Azure 虛擬機器進行疑難排解時，您可以使用 Visual Studio 更輕鬆地設定 Azure 診斷。 診斷會在執行雲端服務的虛擬機器和虛擬機器執行個體上擷取系統資料和記錄資料。 診斷資料會傳輸到您選擇的儲存體帳戶。 如需 Azure 中診斷記錄的詳細資訊，請參閱[在 Azure App Service 中針對 Web 應用程式啟用診斷記錄](/azure/app-service/web-sites-enable-diagnostic-log)。

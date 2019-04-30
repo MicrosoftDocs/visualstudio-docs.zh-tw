@@ -6,12 +6,12 @@ ms.assetid: e970d936-1df4-4c0c-96e3-ef6191295882
 caps.latest.revision: 14
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: 346cc2b68193a72d532ba0542cc406e4afa75234
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: d709dc2b5262f4fbad341b0b77d45a90b138ed6f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60097384"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443992"
 ---
 # <a name="learn-about-mobile-development-with-xamarin"></a>了解 Xamarin 的行動應用程式開發
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -19,9 +19,9 @@ ms.locfileid: "60097384"
 本主題引導您前往概觀資料，以協助您了解如何使用 Xamarin 開發跨平台行動應用程式。 如果您尚未安裝 Visual Studio 和 Xamarin，請先開始進行 [Setup and install](../cross-platform/setup-and-install.md) 程序，然後在安裝程式執行時，返回此處以檢閱這些資源。  
   
 > [!NOTE]
->  除非另有註明，否則建議一開始只閱讀此處直接連結的頁面，而不要閱讀附屬頁面。 如果閱讀完這份清單後安裝程序仍在執行，您可以隨時返回並探索其他主題。  
+> 除非另有註明，否則建議一開始只閱讀此處直接連結的頁面，而不要閱讀附屬頁面。 如果閱讀完這份清單後安裝程序仍在執行，您可以隨時返回並探索其他主題。  
 >   
->  您也可以隨時檢閱標示為「基本概念」的主題，並於稍後回顧「深入探討」主題。  
+> 您也可以隨時檢閱標示為「基本概念」的主題，並於稍後回顧「深入探討」主題。  
   
 ## <a name="essentials-introduction-to-xamarin"></a>基本概念：Xamarin 簡介  
  *10-20 分鐘*  

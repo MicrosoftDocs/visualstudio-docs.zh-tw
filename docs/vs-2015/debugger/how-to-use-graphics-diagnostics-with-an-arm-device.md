@@ -9,12 +9,12 @@ caps.latest.revision: 12
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 7ae934de4a9f0dbcf4076d7402abd138eac20268
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: f2a89344785f997f3b878df7d827db6e4732860b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60104871"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63384013"
 ---
 # <a name="how-to-use-graphics-diagnostics-with-an-arm-device"></a>HOW TO：搭配 ARM 裝置使用圖形診斷
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ ms.locfileid: "60104871"
 2. 安裝[遠端偵錯工具](https://my.visualstudio.com/Downloads?q=remote%20tools%20visual%20studio%202015)ARM 型裝置上。  
   
 > [!IMPORTANT]
->  您可能需要針對 Windows Phone 8.1 裝置，註冊您的電話以進行開發。 若要這麼做，您必須是註冊的開發人員。 如需詳細資訊，請參閱 <<c0> [ 如何部署和執行應用程式，適用於 Windows Phone 8](http://msdn.microsoft.com/library/windowsphone/develop/ff402565.aspx)。  
+> 您可能需要針對 Windows Phone 8.1 裝置，註冊您的電話以進行開發。 若要這麼做，您必須是註冊的開發人員。 如需詳細資訊，請參閱 <<c0> [ 如何部署和執行應用程式，適用於 Windows Phone 8](http://msdn.microsoft.com/library/windowsphone/develop/ff402565.aspx)。  
   
  在裝置上啟用遠端偵錯之後，請將它設為偵錯目標，並啟動圖形診斷。  
   

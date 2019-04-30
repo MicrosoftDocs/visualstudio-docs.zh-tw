@@ -12,11 +12,11 @@ author: corob-msft
 ms.author: corob
 manager: jillfra
 ms.openlocfilehash: e947800c82036b061b2f48303733690a95ec53bc
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60053971"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62573062"
 ---
 # <a name="visual-c-for-cross-platform-mobile-development"></a>適用於跨平台行動裝置開發的 Visual C++
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

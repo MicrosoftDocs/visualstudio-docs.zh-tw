@@ -13,11 +13,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-ms.openlocfilehash: 1f67484ece15cde37a63a8e6f048028b94366c76
-ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
+ms.openlocfilehash: 0e6035c20b51d3f9064e46ef0314c35dd6e6b8b5
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/12/2018
-ms.locfileid: "24601308"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62546506"
 ---
 Windows XP

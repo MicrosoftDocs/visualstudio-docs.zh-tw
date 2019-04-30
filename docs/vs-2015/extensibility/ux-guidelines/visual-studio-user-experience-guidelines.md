@@ -9,11 +9,11 @@ caps.latest.revision: 4
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 02b01c2c1262d6c48f51f9c1867094913b8cd715
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "59000638"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62584927"
 ---
 # <a name="visual-studio-user-experience-guidelines"></a>Visual Studio 使用者體驗方針
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

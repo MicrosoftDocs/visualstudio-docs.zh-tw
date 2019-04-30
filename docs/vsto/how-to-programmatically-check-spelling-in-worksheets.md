@@ -16,11 +16,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: feb284657932a0c20cd785b14db5e2b3de9366f1
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60090832"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62575556"
 ---
 # <a name="how-to-programmatically-check-spelling-in-worksheets"></a>HOW TO：以程式設計方式檢查工作表拼字
   您可以用程式設計方式檢查工作表中的拼字。 如果工作表中有任何拼寫不正確的字，[拼字檢查]  對話方塊就會自動出現。

@@ -10,12 +10,12 @@ ms.assetid: bfe083b6-3e35-4b9c-ad4f-b30b9ff412a5
 caps.latest.revision: 39
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 42d4209c691d052a1715ae9cfbab5b1e576848cd
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 71ecff799f0da84ca47456467e190edcf95b0a15
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60071430"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63442291"
 ---
 # <a name="walkthrough-adding-features-to-a-custom-editor"></a>逐步解說：將功能新增至自訂編輯器
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -51,7 +51,7 @@ ms.locfileid: "60071430"
     2. 若要回應外部檔案變更，實作<xref:Microsoft.VisualStudio.Shell.Interop.IVsFileChangeEx>和<xref:Microsoft.VisualStudio.Shell.Interop.IVsDocDataFileChangeControl>編輯器的文件資料物件。  
   
         > [!NOTE]
-        >  呼叫`QueryService`上<xref:Microsoft.VisualStudio.Shell.Interop.SVsFileChangeEx>若要取得的指標`IVsFileChangeEx`。  
+        > 呼叫`QueryService`上<xref:Microsoft.VisualStudio.Shell.Interop.SVsFileChangeEx>若要取得的指標`IVsFileChangeEx`。  
   
 7. 協調與原始程式碼控制的文件編輯事件。 若要這樣做：  
   
@@ -138,7 +138,7 @@ ms.locfileid: "60071430"
      <xref:Microsoft.VisualStudio.Shell.Interop.IOleInPlaceComponent>  
   
     > [!NOTE]
-    >  `IOleInPlaceComponent`介面用來避免 OLE 2 功能表合併。  
+    > `IOleInPlaceComponent`介面用來避免 OLE 2 功能表合併。  
   
      您`IOleCommandTarget`實作會處理命令這類**剪下**，**複製**，和**貼上**。 實作時`IOleCommandTarget`，決定您的編輯器是否需要自己.vsct 檔案，以定義自己的命令功能表結構，或是如果它可以實作所定義的標準命令[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]。 通常，編輯器使用和擴充 IDE 的功能表，然後定義自己的工具列。 不過，通常就需要定義它自己特定的命令，除了使用 IDE 的標準命令集合編輯器。 若要這樣做，您的編輯器必須宣告標準的命令會使用它，並接著定義在.vsct 檔案中的任何新的命令、 快顯功能表、 最上層功能表和工具列。 如果您建立就地啟用編輯器，然後實作<xref:Microsoft.VisualStudio.Shell.Interop.IOleInPlaceComponent>並定義編輯器在.vsct 檔案而不是使用 OLE 2 功能表合併的功能表和工具列。  
   
@@ -156,4 +156,4 @@ ms.locfileid: "60071430"
   
 ## <a name="see-also"></a>另請參閱  
  [參與 Automation 模型](../extensibility/internals/contributing-to-the-automation-model.md)   
- [如何：編輯器提供的內容](../extensibility/how-to-provide-context-for-editors.md)
+ [如何：為編輯器提供內容](../extensibility/how-to-provide-context-for-editors.md)

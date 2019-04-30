@@ -11,12 +11,12 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 9e67b6e999078523c11ba2b59175743e4a8f3d33
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 865cd15416fbc901b6c5e58e1d83385f64f6a5a8
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60044231"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441069"
 ---
 # <a name="how-to-intercept-a-click-on-a-shape-or-decorator"></a>HOW TO：攔截圖形或裝飾項目上的點選
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,7 +38,7 @@ public partial class MyShape // change
 ```  
   
 > [!NOTE]
->  設定`e.Handled`至`true`，除非您想要傳遞至包含的圖形或圖表的事件。  
+> 設定`e.Handled`至`true`，除非您想要傳遞至包含的圖形或圖表的事件。  
   
 ## <a name="to-intercept-clicks-on-decorators"></a>若要攔截的裝飾項目上按下  
  OnDoubleClick 方法的 ImageField 類別的執行個體上執行映像的裝飾項目。 您可以攔截按下滑鼠，如果您要撰寫 ImageField 子類別。 欄位為 InitializeShapeFields 方法中。 因此，您必須變更您的子類別，而不是一般 ImageField 具現化該方法。 InitializeShapeFields 方法是在產生的程式碼的圖形類別。 如果您設定，您可以覆寫 shape 類別其`Generates Double Derived`屬性，如下列程序中所述。  

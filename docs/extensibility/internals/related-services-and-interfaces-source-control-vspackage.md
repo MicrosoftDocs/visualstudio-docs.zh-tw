@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: a792bc7b0c64b7e509e6d426c8b4f33c9f816276
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60062044"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62908553"
 ---
 # <a name="related-services-and-interfaces-source-control-vspackage"></a>相關的服務和介面 (原始檔控制 VSPackage)
 此區段會列出所有的原始檔控制 VSPackage 相關的介面，在[!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)]。 原始檔控制 VSPackage 實作這些介面部分，並使用其他人來完成原始檔控制工作。

@@ -19,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 4f2c79787317c3d759322e5bd7f7beed4a43892a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: e39ea4041ab9806c7ca857680af5c5c04510eba9
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60057728"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63430705"
 ---
 # <a name="walkthrough-create-a-site-column-content-type-and-list-for-sharepoint"></a>逐步解說：建立 SharePoint 網站資料行、 內容類型和清單
   下列程序示範如何建立自訂的 SharePoint 網站資料行，或*欄位*— 以及使用的網站資料行的內容類型。 它也會示範如何建立會使用新的內容類型的清單。
@@ -112,7 +112,7 @@ ms.locfileid: "60057728"
 6. 內容類型設計工具出現之後，在**資料行**索引標籤上，新增三個站台先前定義的資料行：**病患名稱**，**病患識別碼**，以及**醫生名稱**。 若要新增這些資料行，第一個清單方塊的清單中選擇站台資料行底下**顯示名稱**，然後選擇其中一個清單中的每個站台的資料行 一次。
 
     > [!TIP]
-    >  若要更快速地選擇網站資料行，請輸入的資料行名稱的前幾個字母來篩選清單。
+    > 若要更快速地選擇網站資料行，請輸入的資料行名稱的前幾個字母來篩選清單。
 
 7. 除了三個自訂網站欄中，新增**註解**從網站資料行清單的網站資料行。
 
@@ -164,7 +164,7 @@ ms.locfileid: "60057728"
      自訂清單資料行僅適用於這份清單。 當您將自訂的清單資料行加入清單時，新清單的內容類型，包括所有資料行加入至清單中，建立並設定為預設的清單。
 
     > [!TIP]
-    >  如果您從站台的資料行清單中選擇資料行，則會使用現有的網站資料行。 不過，如果您輸入的資料行名稱的值而不在清單中選擇任何資料行時，自訂清單建立資料行是，即使在清單中已經有相同名稱的資料行。
+    > 如果您從站台的資料行清單中選擇資料行，則會使用現有的網站資料行。 不過，如果您輸入的資料行名稱的值而不在清單中選擇任何資料行時，自訂清單建立資料行是，即使在清單中已經有相同名稱的資料行。
 
      （選擇性） 而不是設定的自訂清單資料行的資料類型**單一文字行**、 您改為可以設定此資料行的資料類型為查閱，以及從資料表或另一個清單，會擷取其值。 查閱資料行的相關資訊，請參閱[SharePoint 2010 中的清單關聯性](http://go.microsoft.com/fwlink/?LinkId=224994)並[查閱和清單的關聯性](http://go.microsoft.com/fwlink/?LinkID=224995)。
 

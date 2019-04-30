@@ -9,11 +9,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: ff64735e1711a18bd7c55c6e052fa8579bd12e16
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60100354"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62563717"
 ---
 # <a name="configure-windows-firewall-for-remote-debugging"></a>設定 Windows 防火牆進行遠端偵錯
 

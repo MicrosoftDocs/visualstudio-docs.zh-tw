@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 2153091b2b2abae05bf6f6c7856d2fa6d43f8967
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60109019"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62812415"
 ---
 # <a name="how-to-programmatically-list-all-worksheets-in-a-workbook"></a>HOW TO：以程式設計方式列出活頁簿中的所有工作表
   <xref:Microsoft.Office.Interop.Excel.Workbook> 類別會提供 <xref:Microsoft.Office.Interop.Excel.Worksheets> 物件。 這個物件在活頁簿中含有所有 <xref:Microsoft.Office.Interop.Excel.Worksheet> 物件的集合。

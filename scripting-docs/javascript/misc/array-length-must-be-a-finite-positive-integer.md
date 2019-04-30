@@ -15,11 +15,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 31673205a7ca94783985e0249c5664b4bbca6147
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60073978"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62818120"
 ---
 # <a name="array-length-must-be-a-finite-positive-integer"></a>陣列長度必須是有限的正整數
 您呼叫**陣列**不是整數 （整數包含零，再加上正值的整數的集合） 的引數的建構函式。  

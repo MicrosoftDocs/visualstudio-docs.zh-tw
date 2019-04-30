@@ -14,12 +14,12 @@ ms.assetid: d2620e71-be9e-44c9-b5b7-03a4c8d9cf0b
 caps.latest.revision: 36
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 59ecd079b7e95d86ab85eb9e5e36fcf938f99f58
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 0309019cc36e9f81596061dbbede0f84b0b78a05
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58943332"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63403589"
 ---
 # <a name="visual-studio-isolated-shell"></a>Visual Studio 獨立模式 Shell
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,10 +31,10 @@ Visual Studio 獨立模式 shell 可讓您建立獨立的應用程式可執行�
  若要建立 isolated 的 shell 應用程式，開始使用 Visual Studio Shell 獨立模式的專案。 此專案包含您要開發和測試您自己的 isolated 的 shell 應用程式的所有項目。 當您準備好開始撰寫安裝程式，以部署您的應用程式時，您必須取得獨立模式的 shell 可轉散發套件，從[Microsoft Visual Studio Shell （獨立模式） 可轉散發套件](http://go.microsoft.com/fwlink/?LinkId=616022)。  
   
 > [!NOTE]
->  您可以存取獨立模式的 shell 可轉散發套件之前，系統會要求您填寫簡短的客戶問卷調查。  在填寫問卷之後, 您會導向至 Visual Studio Connect 頁面可轉散發套件下載連結。  您可以在後續造訪 Visual Studio Connect 網站的 [下找到的下載連結**程式&#124;VISUAL STUDIO 2015 整合和 ISOLATED SHELL** ] 索引標籤。  
+> 您可以存取獨立模式的 shell 可轉散發套件之前，系統會要求您填寫簡短的客戶問卷調查。  在填寫問卷之後, 您會導向至 Visual Studio Connect 頁面可轉散發套件下載連結。  您可以在後續造訪 Visual Studio Connect 網站的 [下找到的下載連結**程式&#124;VISUAL STUDIO 2015 整合和 ISOLATED SHELL** ] 索引標籤。  
   
 > [!NOTE]
->  如需如何部署獨立 shell 應用程式的詳細資訊，請參閱[逐步解說：建立基本獨立 Shell 應用程式](../extensibility/walkthrough-creating-a-basic-isolated-shell-application.md)。  
+> 如需如何部署獨立 shell 應用程式的詳細資訊，請參閱[逐步解說：建立基本獨立 Shell 應用程式](../extensibility/walkthrough-creating-a-basic-isolated-shell-application.md)。  
   
 ## <a name="working-with-the-isolated-shell"></a>使用 獨立模式 shell  
  Visual Studio isolated shell 應用程式具有完整存取權 Visual Studio 服務，並支援特殊的自訂和商標。 有數種方式，您可以自訂 isolated 的 shell 應用程式：  

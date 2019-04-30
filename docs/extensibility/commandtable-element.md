@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 9942df0084924543149eb78f245a996559d594ee
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56686466"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62926648"
 ---
 # <a name="commandtable-element"></a>CommandTable 元素
 CommandTable 是根項目 *.vsct*檔案。 這是定義 VSPackage 提供給 IDE 命令的類型與實際配置的檔案。 命令可能會包含功能表項目、 功能表、 工具列和下拉式方塊。 如需詳細資訊，請參閱 < [Visual Studio 命令表檔案 (.vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)。
@@ -67,7 +67,7 @@ CommandTable 是根項目 *.vsct*檔案。 這是定義 VSPackage 提供給 IDE 
 
 |元素|描述|
 |-------------|-----------------|
-|無||
+|None||
 
 ## <a name="see-also"></a>另請參閱
 - [Visual Studio 命令表檔案 (.vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

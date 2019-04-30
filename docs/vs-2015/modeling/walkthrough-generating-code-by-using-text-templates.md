@@ -12,12 +12,12 @@ caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 8c374dc5cc616f58cb81a1191b095971561df9b1
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 37abc4862b12ab11239b2dd8a24b8c18acab2a51
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60052879"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446697"
 ---
 # <a name="walkthrough-generating-code-by-using-text-templates"></a>逐步解說：使用文字範本產生程式碼
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ ms.locfileid: "60052879"
  在此範例專案中，範本會讀取範例 XML 檔案，並產生對應到每個節點類型的類別。 在手動撰寫的程式碼中，您可以使用這些類別來巡覽 XML 檔案。 您也可以在使用相同節點類型的任何其他檔案上執行應用程式。 範例 XML 檔案的目的是要提供您想要應用程式處理之所有節點類型的範例。  
   
 > [!NOTE]
->  [隨附的應用程式](http://go.microsoft.com/fwlink/?LinkId=178765)xsd.exe [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]可以從 XML 檔案產生強類型類別。 這裡示範的範本僅當成範例使用。  
+> [隨附的應用程式](http://go.microsoft.com/fwlink/?LinkId=178765)xsd.exe [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]可以從 XML 檔案產生強類型類別。 這裡示範的範本僅當成範例使用。  
   
  以下是範例檔案：  
   
@@ -142,7 +142,7 @@ namespace MyProject
 2. 在 [加入新項目]  對話方塊中，從 [範本]  窗格中選取 [文字範本]  。  
   
    > [!NOTE]
-   >  請確定您新增的是「文字範本」，而非「前置處理過的文字範本」。  
+   > 請確定您新增的是「文字範本」，而非「前置處理過的文字範本」。  
   
 3. 在檔案的範本指示詞中，將 `hostspecific` 屬性變更為 `true`。  
   

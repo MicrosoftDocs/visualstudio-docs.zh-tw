@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 11374ca0a65a5b430b819a9ef1bdf57f7434e923
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 8482f2704fe81482d95c2c8e73ae6e8c8ffd272d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60053750"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63417123"
 ---
 # <a name="how-to-open-project-specific-editors"></a>HOW TO：開啟專案特定的編輯器
 如果在開啟的專案項目檔本質上繫結至特定的編輯器中為該專案，專案必須使用專案特定編輯器開啟檔案。 檔案無法委派到 IDE 的機制，來選取一個編輯器。 比方說，而不是使用標準的點陣圖編輯器中，您可以使用此專案特定編輯器選項來指定特定的點陣圖編輯器可辨識對您的專案是唯一的檔案中的資訊。
@@ -29,7 +29,7 @@ ms.locfileid: "60053750"
 1. 呼叫<xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable.FindAndLockDocument%2A>方法 (`RDT_EditLock`) 來判斷是否已開啟的檔案 （文件資料物件）。
 
     > [!NOTE]
-    >  如需有關文件資料和文件檢視物件的詳細資訊，請參閱[文件的自訂編輯器中的資料和文件檢視](../extensibility/document-data-and-document-view-in-custom-editors.md)。
+    > 如需有關文件資料和文件檢視物件的詳細資訊，請參閱[文件的自訂編輯器中的資料和文件檢視](../extensibility/document-data-and-document-view-in-custom-editors.md)。
 
 2. 如果檔案已經開啟，請藉由呼叫 resurface 檔案<xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.IsDocumentOpen%2A>方法並指定值的 IDO_ActivateIfOpen`grfIDO`參數。
 

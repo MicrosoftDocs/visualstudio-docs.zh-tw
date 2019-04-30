@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 66e8da821657dc1aefd8563f3826891cb75e1792
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56704627"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62805960"
 ---
 # <a name="provide-a-language-service-context-by-using-the-legacy-api"></a>使用舊版 API 提供的語言服務內容
 有兩個選項，以提供使用者內容中使用的語言服務[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]核心編輯器： 提供文字標記的內容，或提供所有的使用者內容。 此處所述的每個之間的差異。

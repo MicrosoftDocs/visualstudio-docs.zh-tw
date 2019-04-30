@@ -24,12 +24,12 @@ caps.latest.revision: 29
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 17eb5c1ca2ad35b7a510c5a70d3ad5c5f741c69d
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 666b5acaae84a1b16c1b4bdfeb7cb1b8f4bcfb64
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60063396"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63386000"
 ---
 # <a name="hierarchical-update"></a>階層式更新
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -61,7 +61,7 @@ ms.locfileid: "60063396"
  設定的順序來執行更新設定個別的順序插入、 更新和刪除，才能將修改過的所有資料都儲存在資料集的所有資料表。 啟用階層式更新時，插入第一次，執行，則更新，然後刪除。 `TableAdapterManager`提供`UpdateOrder`可以設為第一次，執行更新，然後插入和刪除的屬性。  
   
 > [!NOTE]
->  請務必了解的是包含所有更新的順序。 也就是，當執行更新時，插入，然後按一下 刪除執行中的資料集的所有資料表。  
+> 請務必了解的是包含所有更新的順序。 也就是，當執行更新時，插入，然後按一下 刪除執行中的資料集的所有資料表。  
   
  若要設定`UpdateOrder`屬性中的，拖曳項目之後[資料來源視窗](http://msdn.microsoft.com/library/0d20f699-cc95-45b3-8ecb-c7edf1f67992)到表單上，選取`TableAdapterManager`在元件匣，然後將設定`UpdateOrder`中的屬性**屬性**  視窗。 如需詳細資訊，請參閱[如何：執行階層式更新時設定的順序](http://msdn.microsoft.com/library/a0734935-78dd-4c0b-80d7-5e7925789c83)。  
   
@@ -71,7 +71,7 @@ ms.locfileid: "60063396"
  不過，有時候您可能想要從備份還原資料集。 當您使用自動遞增的值時，可能會發生這個的其中一個範例。 例如，如果儲存作業未順利完成、 自動遞增的值不會重設在資料集中，並將資料集繼續建立自動遞增的值。這可讓編號可能不會接受您的應用程式中的間距。 在情況下發生這種問題，其中`TableAdapterManager`提供`BackupDataSetBeforeUpdate`以備份複本取代現有的資料集，如果交易失敗的屬性。  
   
 > [!NOTE]
->  備份複本的記憶體時`TableAdapterManager.UpdateAll`方法是否執行。 因此，沒有任何以程式設計方式存取此備份的資料集，因為它會取代原始資料集，或超出範圍只要`TableAdapterManager.UpdateAll`方法完成執行。  
+> 備份複本的記憶體時`TableAdapterManager.UpdateAll`方法是否執行。 因此，沒有任何以程式設計方式存取此備份的資料集，因為它會取代原始資料集，或超出範圍只要`TableAdapterManager.UpdateAll`方法完成執行。  
   
 ## <a name="modify-the-generated-save-code-to-perform-the-hierarchical-update"></a>修改所產生的儲存程式碼以執行階層式更新  
  呼叫 `TableAdapterManager.UpdateAll` 方法並傳入包含關聯資料表的資料集名稱，可將資料集內關聯資料表的變更儲存至資料庫。 例如，執行 `TableAdapterManager.UpdateAll(NorthwindDataset)` 方法，以將 NorthwindDataset 中所有資料表的更新傳送至後端資料庫。  
@@ -81,7 +81,7 @@ ms.locfileid: "60063396"
  產生的儲存程式碼也包含一行會呼叫 `CustomersBindingSource.EndEdit` 方法的程式碼。 更具體來說，它會呼叫<xref:System.Windows.Forms.BindingSource.EndEdit%2A>方法的第一個<xref:System.Windows.Forms.BindingSource>加入至表單。 換句話說，此程式碼才會產生第一個資料表，從拖曳**Zdroje dat**視窗拖曳至表單。 <xref:System.Windows.Forms.BindingSource.EndEdit%2A> 呼叫會認可目前正在編輯的所有資料繫結控制項中，所有正在進行的變更。 因此，當資料繫結控制項還有焦點時，您可以按一下 [儲存] 按鈕，就會在實際儲存 (`TableAdapterManager.UpdateAll` 方法) 之前，先認可該控制項中所有暫止的編輯項目。  
   
 > [!NOTE]
->  Dataset 設計工具只會增加`BindingSource.EndEdit`拖曳至表單上的第一個資料表的程式碼。 因此，您必須對表單上每個關聯資料表，加入一行程式碼以呼叫 `BindingSource.EndEdit` 方法。 在此逐步說明中，這表示您必須加入 `OrdersBindingSource.EndEdit` 方法的呼叫。  
+> Dataset 設計工具只會增加`BindingSource.EndEdit`拖曳至表單上的第一個資料表的程式碼。 因此，您必須對表單上每個關聯資料表，加入一行程式碼以呼叫 `BindingSource.EndEdit` 方法。 在此逐步說明中，這表示您必須加入 `OrdersBindingSource.EndEdit` 方法的呼叫。  
   
 #### <a name="to-update-the-code-to-commit-changes-to-the-related-tables-before-saving"></a>更新程式碼以在儲存前認可關聯資料表的變更  
   
@@ -95,7 +95,7 @@ ms.locfileid: "60063396"
    除了將資料儲存至資料庫前，先認可關聯子資料表的變更外，您可能也必須先認可新建立的父記錄，才能將子記錄加入至資料集。 換言之，您可能必須先將新的父記錄 (Customer) 加入至資料集，外部索引鍵條件約束才會允許新的子記錄 (Orders) 加入至資料集。 若要完成此工作，您可以使用子 `BindingSource.AddingNew` 事件。  
   
 > [!NOTE]
->  您是否必須認可新的父記錄，則用來繫結至資料來源的控制項型別而定。 本逐步解說中，您可以使用個別的控制項繫結至父資料表。 這需要額外的程式碼，以認可新的父記錄。 如果父記錄已改為顯示在複雜繫結控制項類似<xref:System.Windows.Forms.DataGridView>此額外<xref:System.Windows.Forms.BindingSource.EndEdit%2A>呼叫父記錄就不一定需要。 因為控制項的基礎資料繫結功能會處理新記錄的認可。  
+> 您是否必須認可新的父記錄，則用來繫結至資料來源的控制項型別而定。 本逐步解說中，您可以使用個別的控制項繫結至父資料表。 這需要額外的程式碼，以認可新的父記錄。 如果父記錄已改為顯示在複雜繫結控制項類似<xref:System.Windows.Forms.DataGridView>此額外<xref:System.Windows.Forms.BindingSource.EndEdit%2A>呼叫父記錄就不一定需要。 因為控制項的基礎資料繫結功能會處理新記錄的認可。  
   
 #### <a name="to-add-code-to-commit-parent-records-in-the-dataset-before-adding-new-child-records"></a>加入程式碼以在新增子記錄前先認可資料集中的父記錄  
   

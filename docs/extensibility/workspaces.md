@@ -8,11 +8,11 @@ manager: viveis
 ms.workload:
 - vssdk
 ms.openlocfilehash: 011781b434c4d005e473c5f97c60a9269dc5d034
-ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57324230"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62952759"
 ---
 # <a name="workspaces"></a>工作區
 

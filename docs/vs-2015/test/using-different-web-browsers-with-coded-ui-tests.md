@@ -8,12 +8,12 @@ ms.assetid: a859595f-6517-43f2-9d61-c706cb55a388
 caps.latest.revision: 25
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 5289804eb85b9af4fff090f98cc97f8d2c9ec676
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: d3854f4844fba3b3c1a0a519f06d59d31c4f7072
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60100400"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445878"
 ---
 # <a name="using-different-web-browsers-with-coded-ui-tests"></a>使用不同的 Web 瀏覽器搭配自動程式化 UI 測試
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -59,7 +59,7 @@ ms.locfileid: "60100400"
  **錄製：** 您必須使用自動程式化 UI 測試產生器，來錄製使用 Internet Explorer 的 Web 應用程式測試。 您可以選擇性地使用一組預先定義的屬性針對待測控制項加入驗證和自訂程式碼，就像平常使用自動程式化 UI 測試所做的一樣。 如需詳細資訊，請參閱[使用 UI 自動化來測試您的程式碼](../test/use-ui-automation-to-test-your-code.md)。  
   
 > [!NOTE]
->  您不能使用 Google Chrome 或 Mozilla Firefox 瀏覽器記錄自動程式化 UI 測試。  
+> 您不能使用 Google Chrome 或 Mozilla Firefox 瀏覽器記錄自動程式化 UI 測試。  
   
  **使用 Internet Explorer 播放：** 若未明確指定瀏覽器，預設會使用 Internet Explorer 執行測試。 您可以在測試程式碼中設定 **BrowserWindow.CurrentBrowser** 屬性，以明確指定要使用的瀏覽器。 若使用 Internet Explorer，應將這個屬性設定為 **IE** 或 **Internet Explorer**。  
   
@@ -76,7 +76,7 @@ ms.locfileid: "60100400"
 3. 反白顯示延伸模組並選擇 [下載]。  
   
    > [!TIP]
-   >  您也可以在[這裡](http://visualstudiogallery.msdn.microsoft.com/11cfc881-f8c9-4f96-b303-a2780156628d/)下載自動程式碼 UI 跨瀏覽器測試專用的 Selenium 元件。  
+   > 您也可以在[這裡](http://visualstudiogallery.msdn.microsoft.com/11cfc881-f8c9-4f96-b303-a2780156628d/)下載自動程式碼 UI 跨瀏覽器測試專用的 Selenium 元件。  
   
    如需建立和使用自動程式碼 UI 測試的詳細資訊，請參閱[建立自動程式碼 UI 測試](../test/use-ui-automation-to-test-your-code.md#VerifyingCodeUsingCUITCreate)。  
   

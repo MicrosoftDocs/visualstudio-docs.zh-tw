@@ -9,12 +9,12 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: dc428d70e036da311d2cf3050cec9e94a13782e3
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 47d53ad2579ce24f6d5fde2503a0acc98b4f7f5c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60089974"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444123"
 ---
 # <a name="how-to-set-breakpoints-in-workflows"></a>HOW TO：在工作流程中設定中斷點
 使用 [!INCLUDE[wfd1](../includes/wfd1-md.md)] 時，您可以在圖形化工作流程上設定中斷點，就像利用 Visual Basic 或 C# 程式碼設定一樣。 如預期般，工作流程執行會在您設定的每個中斷點上停止。  
@@ -22,13 +22,13 @@ ms.locfileid: "60089974"
  中斷點有三種狀態：*暫止*，*繫結*，以及*錯誤*。 設定中斷點時，狀態為「擱置」，由實心的紅色圖示表示。 如果執行階段已載入工作流程型別，中斷點就會變成「繫結」狀態。 如果您指定的中斷點格式不正確，例如活動名稱無效，就會出現錯誤視窗。 中斷點仍會新增至中斷點視窗，但以小的 "x" 記號標示。  
   
 > [!NOTE]
->  不支援在已叫用的工作流程上設定中斷點。  
+> 不支援在已叫用的工作流程上設定中斷點。  
 > 
 > [!WARNING]
->  請確定您選取的選項**啟用 Just My Code （僅限 Managed）** 從**工具**，**選項**，**偵錯**功能表之前偵錯。 如果您有兩個巢狀於另一個序列的序列，而且您在第一個內部序列上設定中斷點，按下**F11**將不進行偵錯到第二個內部序列<strong>啟用 Just My Code （僅限 Managed）</strong>未選取選項。  
+> 請確定您選取的選項**啟用 Just My Code （僅限 Managed）** 從**工具**，**選項**，**偵錯**功能表之前偵錯。 如果您有兩個巢狀於另一個序列的序列，而且您在第一個內部序列上設定中斷點，按下**F11**將不進行偵錯到第二個內部序列<strong>啟用 Just My Code （僅限 Managed）</strong>未選取選項。  
 > 
 > [!WARNING]
->  如果 XAML 檔案屬性的完整路徑不正確，就不會取得工作流程中的中斷點。將專案/方案移至另一個資料夾或另一台機器之後，XAML 檔案的完整路徑即不正確。選取 Ctrl+S 以儲存並更新完整路徑屬性。  
+> 如果 XAML 檔案屬性的完整路徑不正確，就不會取得工作流程中的中斷點。將專案/方案移至另一個資料夾或另一台機器之後，XAML 檔案的完整路徑即不正確。選取 Ctrl+S 以儲存並更新完整路徑屬性。  
   
 ### <a name="to-set-a-breakpoint-on-an-activity-in-the-design-view"></a>若要在設計檢視中的活動上設定中斷點  
   

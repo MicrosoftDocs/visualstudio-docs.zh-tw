@@ -17,11 +17,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 6174688bbab5655a7a108e1c971e926ee5977ba1
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60101726"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62575425"
 ---
 # <a name="how-to-programmatically-collapse-ranges-or-selections-in-documents"></a>HOW TO：以程式設計方式摺疊範圍或選取的文件
   如果您正在使用 <xref:Microsoft.Office.Interop.Word.Range> 或 <xref:Microsoft.Office.Interop.Word.Selection> 物件，您可能會想要先將選取範圍變更為插入點再插入文字，以免覆寫現有的文字。 同時<xref:Microsoft.Office.Interop.Word.Range>並<xref:Microsoft.Office.Interop.Word.Selection>物件具有摺疊方法，其使用<xref:Microsoft.Office.Interop.Word.WdCollapseDirection>列舉值：

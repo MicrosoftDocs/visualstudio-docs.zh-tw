@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 584298725f2a57962ecd52c99fd1a745610ec336
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56681253"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62931314"
 ---
 # <a name="menu-commands"></a>功能表命令
 在本節中的 [說明] 主題會列出可以使用 Spy + + 功能表上的命令。

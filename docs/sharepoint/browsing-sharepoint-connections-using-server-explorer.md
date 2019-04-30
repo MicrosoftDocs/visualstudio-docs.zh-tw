@@ -16,18 +16,18 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c9f64e2cebf267e9be1773b37a5827c876961a0d
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 8dfde37125b78e2ff8077712321b3a19816582cf
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56609523"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63387798"
 ---
 # <a name="browse-sharepoint-connections-by-using-server-explorer"></a>使用伺服器總管瀏覽 SharePoint 連線
-  您現在可以瀏覽本機 SharePoint 連接中的**伺服器總管**。 使用這項技術就可以巡覽系統中的 SharePoint 網站元件。 SharePoint 站台元件，例如清單定義和內容類型，會顯示在名為節點**SharePoint 連線**在樹狀檢視中的**伺服器總管**。 若要顯示**伺服器總管**，在功能表列上選擇 **檢視** > **伺服器總管**。 除了顯示 SharePoint 網站元件之外，您還可以使用捷徑功能表的命令移除項目、檢閱其屬性或重新整理樹狀檢閱。
+  您現在可以瀏覽本機 SharePoint 連接中的**伺服器總管**。 使用這項技術就可以巡覽系統中的 SharePoint 網站元件。 SharePoint 站台元件，例如清單定義和內容類型，會顯示在名為節點**SharePoint 連線**在樹狀檢視中的**伺服器總管**。 若要顯示**伺服器總管**，在功能表列上選擇 **檢視** > **伺服器總管**。 除了顯示 SharePoint 網站元件之外，您還可以使用捷徑功能表的命令移除項目、檢視其屬性或重新整理樹狀檢視。
 
 > [!IMPORTANT]
->  若要瀏覽 SharePoint 網站，您必須是 SharePoint 網站集合的系統管理員，同時必須以本機電腦的系統管理員身分執行 Visual Studio。 否則，網站會出現在**伺服器總管**，但是您無法展開其節點。 若要確認您是否是網站集合管理員，開啟 在網頁瀏覽器，開啟 站台**站台動作** 功能表中，選擇**網站權限**，然後在**權限：Team Site**頁面上，選擇**Site Collection Administrators**命令**管理**功能區上的群組。 您的名稱會出現在文字方塊中，如果您是網站集合管理員。 如果**Site Collection Administrators**命令未出現在功能區上的管理群組中，您不是系統管理員針對網站集合，您必須從站台系統管理員取得適當的權限。
+> 若要瀏覽 SharePoint 網站，您必須是 SharePoint 網站集合的系統管理員，同時必須以本機電腦的系統管理員身分執行 Visual Studio。 否則，網站會出現在**伺服器總管**，但是您無法展開其節點。 若要確認您是否是網站集合管理員，開啟 在網頁瀏覽器，開啟 站台**站台動作** 功能表中，選擇**網站權限**，然後在**權限：Team Site**頁面上，選擇**Site Collection Administrators**命令**管理**功能區上的群組。 您的名稱會出現在文字方塊中，如果您是網站集合管理員。 如果**Site Collection Administrators**命令未出現在功能區上的管理群組中，您不是系統管理員針對網站集合，您必須從站台系統管理員取得適當的權限。
 
 ## <a name="server-explorer-nodes"></a>伺服器總管 節點
  表示 SharePoint 網站的每個元件中的節點**伺服器總管**樹狀檢視下的**SharePoint 連線**。 例如，預設的 SharePoint 網站包含一個名為討論中，這表示在顯示的討論區類型的內容類型**討論**SharePoint 網站的頁面。 討論內容類型包含數個欄位。 若要檢視中的這些欄位**伺服器總管**，展開**ContentTypes**節點，然後**討論**節點。 下，它會有數個欄位節點，例如內文，討論主題和 Title。
@@ -45,7 +45,7 @@ ms.locfileid: "56609523"
 
 ## <a name="related-topics"></a>相關主題
 
-|標題|描述|
+|標題|說明|
 |-----------|-----------------|
 |[如何：新增或移除 SharePoint 連線](../sharepoint/how-to-add-or-remove-sharepoint-connections.md)|描述會新增至新的 SharePoint 網站需要的步驟**SharePoint 連線**中的節點**伺服器總管**。|
 

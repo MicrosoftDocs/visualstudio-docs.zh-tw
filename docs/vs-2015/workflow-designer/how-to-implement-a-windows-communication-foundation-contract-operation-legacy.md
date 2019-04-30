@@ -10,11 +10,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 56866e084eac7dc3a3ac2a0b80baaa2533ccd285
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58943850"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62931187"
 ---
 # <a name="how-to-implement-a-windows-communication-foundation-contract-operation-legacy"></a>HOW TO：實作 Windows Communication Foundation 合約作業 (舊版)
 本主題描述當使用以 [!INCLUDE[indigo1](../includes/indigo1-md.md)] 或 [!INCLUDE[wfd1](../includes/wfd1-md.md)] 為目標的舊版 [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] 時，如何實作 [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)] 合約作業。  

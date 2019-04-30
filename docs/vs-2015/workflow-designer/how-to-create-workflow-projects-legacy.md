@@ -12,12 +12,12 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: bc878a7f4469d7f8ef8bf61d0d5f3b721f39b7e1
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 6d779294f991786f90faf8dd1de756749b6baffc
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60117742"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444174"
 ---
 # <a name="how-to-create-workflow-projects-legacy"></a>HOW TO：建立工作流程專案 (舊版)
 請依照這些步驟來建立以 [!INCLUDE[wf](../includes/wf-md.md)] 或 [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] 為目標的 [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)] 專案。 這個程序會使用 [!INCLUDE[wfd1](../includes/wfd1-md.md)] 所提供的舊版 [!INCLUDE[vs2010](../includes/vs2010-md.md)]。  
@@ -33,7 +33,7 @@ ms.locfileid: "60117742"
 3. 選取 **.NET Framework 3.0**選項或 **.NET Framework 3.5**在清單頂端的下拉式選項**新專案**存取舊版設計工具 視窗。  
   
     > [!NOTE]
-    >  中的預設選項[!INCLUDE[vs2010](../includes/vs2010-md.md)]已 **.NET Framework 4**。 這個選項是用來建立以 [!INCLUDE[wf](../includes/wf-md.md)] 為目標的 [!INCLUDE[netfx40_short](../includes/netfx40-short-md.md)] 應用程式，而不會使用舊版設計工具。  
+    > 中的預設選項[!INCLUDE[vs2010](../includes/vs2010-md.md)]已 **.NET Framework 4**。 這個選項是用來建立以 [!INCLUDE[wf](../includes/wf-md.md)] 為目標的 [!INCLUDE[netfx40_short](../includes/netfx40-short-md.md)] 應用程式，而不會使用舊版設計工具。  
   
 4. 在 **專案類型**窗格中，選取 Visual C# 專案或 Visual Basic 專案，然後選取**工作流程**。  
   

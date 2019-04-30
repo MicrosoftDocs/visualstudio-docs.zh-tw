@@ -1,5 +1,5 @@
 ---
-title: 教學課程 1：建立圖片檢視器 | Microsoft Docs
+title: 教學課程 1：建立圖片檢視器 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -9,12 +9,12 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 756c979a19451a940e52165d60cc2e5d3fb6b315
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 5044d499e4568dba73c6db0865f92edcf02be4ca
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54796812"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443246"
 ---
 # <a name="tutorial-1-create-a-picture-viewer"></a>教學課程 1：建立圖片檢視器
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,27 +42,27 @@ ms.locfileid: "54796812"
   
   若要下載這個範例的完整版，請參閱 [Complete Picture Viewer tutorial sample](http://code.msdn.microsoft.com/Complete-Picture-Viewer-7d91d3a8) (完整的圖片檢視器教學課程範例)。  
   
-  ![影片連結](../data-tools/media/playvideo.gif "PlayVideo")如需觀看本主題的影片版本，請參閱[如何：在 Visual Basic 中建立圖片檢視器](http://go.microsoft.com/fwlink/?LinkId=205207) 或[如何：在 C# 中建立圖片檢視器](http://go.microsoft.com/fwlink/?LinkId=205198)。  
+  ![影片連結](../data-tools/media/playvideo.gif "PlayVideo")如本主題的影片版本，請參閱[How DO i在 Visual Basic 中建立圖片檢視器？](http://go.microsoft.com/fwlink/?LinkId=205207)或[How Do i:建立圖片檢視器中的C#嗎？](http://go.microsoft.com/fwlink/?LinkId=205198).  
   
 > [!NOTE]
->  這些影片使用舊版 Visual Studio，因此有一些功能表命令以及某些使用者介面項目會有些微差異。 不過，概念和程序在目前 Visual Studio 版本中的運作方式雷同。 本教學課程中同時涵蓋 Visual C# 和 Visual Basic，所以請將焦點放在您使用的程式語言專屬資訊。  
+> 這些影片使用舊版 Visual Studio，因此有一些功能表命令以及某些使用者介面項目會有些微差異。 不過，概念和程序在目前 Visual Studio 版本中的運作方式雷同。 本教學課程中同時涵蓋 Visual C# 和 Visual Basic，所以請將焦點放在您使用的程式語言專屬資訊。  
 >   
->  若要查看 Visual Basic 程式碼，請選擇程式碼區塊頂端的 [VB] 索引標籤，若要查看 Visual C# 程式碼，請選擇 [C#] 索引標籤。如果您有興趣了解 Visual C++，請參閱[使用者入門](../misc/getting-started-with-visual-cpp-in-visual-studio-2015.md)和 [C++ 語言教學課程](http://www.cplusplus.com/doc/tutorial/)。  
+> 若要查看 Visual Basic 程式碼，請選擇程式碼區塊頂端的 [VB] 索引標籤，若要查看 Visual C# 程式碼，請選擇 [C#] 索引標籤。如果您有興趣了解 Visual C++，請參閱[使用者入門](../misc/getting-started-with-visual-cpp-in-visual-studio-2015.md)和 [C++ 語言教學課程](http://www.cplusplus.com/doc/tutorial/)。  
 >   
->  如果您有興趣了解如何撰寫 Windows 市集的 Visual C# 或 Visual Basic 應用程式，請參閱[使用 C# 或 Visual Basic 建立您的第一個 Windows 市集應用程式](http://msdn.microsoft.com/library/windows/apps/hh974581.aspx)。 如需建立適用於 Windows 市集之 JavaScript 應用程式的資訊，請參閱[使用 JavaScript 建立您的第一個 Windows 市集應用程式](http://msdn.microsoft.com/library/windows/apps/br211385.aspx)。  
+> 如果您有興趣了解如何撰寫 Windows 市集的 Visual C# 或 Visual Basic 應用程式，請參閱[使用 C# 或 Visual Basic 建立您的第一個 Windows 市集應用程式](http://msdn.microsoft.com/library/windows/apps/hh974581.aspx)。 如需建立適用於 Windows 市集之 JavaScript 應用程式的資訊，請參閱[使用 JavaScript 建立您的第一個 Windows 市集應用程式](http://msdn.microsoft.com/library/windows/apps/br211385.aspx)。  
   
 ## <a name="related-topics"></a>相關主題  
   
 |標題|描述|  
 |-----------|-----------------|  
 |[步驟 1：建立 Windows Forms 應用程式專案](../ide/step-1-create-a-windows-forms-application-project.md)|從建立 Windows Forms 應用程式專案開始。|  
-|[步驟 2：執行您的程式](../ide/step-2-run-your-program.md)|執行您在上一個步驟中建立的 Windows Forms 應用程式。|  
-|[步驟 3：設定您的表單屬性](../ide/step-3-set-your-form-properties.md)|使用 [屬性] 視窗變更表單的外觀。|  
-|[步驟 4：使用 TableLayoutPanel 控制項來配置您的表單](../ide/step-4-lay-out-your-form-with-a-tablelayoutpanel-control.md)|新增 `TableLayoutPanel` 控制項至表單。|  
-|[步驟 5：將控制項新增至您的表單](../ide/step-5-add-controls-to-your-form.md)|將控制項 (例如 `PictureBox` 控制項和 `CheckBox` 控制項) 新增至表單。 將按鈕加入至表單。|  
-|[步驟 6：命名您的按鈕控制項](../ide/step-6-name-your-button-controls.md)|將按鈕重新命名為更有意義的名稱。|  
-|[步驟 7：將對話方塊元件新增至您的表單](../ide/step-7-add-dialog-components-to-your-form.md)|將 **OpenFileDialog** 元件和 **ColorDialog** 元件新增至表單。|  
+|[步驟 2：執行程式](../ide/step-2-run-your-program.md)|執行您在上一個步驟中建立的 Windows Forms 應用程式。|  
+|[步驟 3：設定表單屬性](../ide/step-3-set-your-form-properties.md)|使用 [屬性] 視窗變更表單的外觀。|  
+|[步驟 4：使用 TableLayoutPanel 控制項來配置表單](../ide/step-4-lay-out-your-form-with-a-tablelayoutpanel-control.md)|新增 `TableLayoutPanel` 控制項至表單。|  
+|[步驟 5：將控制項新增至表單](../ide/step-5-add-controls-to-your-form.md)|將控制項 (例如 `PictureBox` 控制項和 `CheckBox` 控制項) 新增至表單。 將按鈕加入至表單。|  
+|[步驟 6：為按鈕控制項命名](../ide/step-6-name-your-button-controls.md)|將按鈕重新命名為更有意義的名稱。|  
+|[步驟 7：將對話方塊元件新增至表單](../ide/step-7-add-dialog-components-to-your-form.md)|將 **OpenFileDialog** 元件和 **ColorDialog** 元件新增至表單。|  
 |[步驟 8：為顯示圖片按鈕事件處理常式撰寫程式碼](../ide/step-8-write-code-for-the-show-a-picture-button-event-handler.md)|使用 IntelliSense 工具撰寫程式碼。|  
-|[步驟 9：檢閱、註解和測試您的程式碼](../ide/step-9-review-comment-and-test-your-code.md)|檢閱和測試程式碼。 視需要加入註解。|  
-|[步驟 10：撰寫其他按鈕和核取方塊的程式碼](../ide/step-10-write-code-for-additional-buttons-and-a-check-box.md)|使用 IntelliSense 撰寫程式碼讓其他按鈕和核取方塊發揮作用。|  
+|[步驟 9：檢閱、註解及測試您的程式碼](../ide/step-9-review-comment-and-test-your-code.md)|檢閱和測試程式碼。 視需要加入註解。|  
+|[步驟 10：為其他按鈕及核取方塊撰寫程式碼](../ide/step-10-write-code-for-additional-buttons-and-a-check-box.md)|使用 IntelliSense 撰寫程式碼讓其他按鈕和核取方塊發揮作用。|  
 |[步驟 11：執行您的程式並嘗試其他功能](../ide/step-11-run-your-program-and-try-other-features.md)|執行程式並設定背景色彩。 嘗試其他功能，例如變更色彩、字型和框線。|

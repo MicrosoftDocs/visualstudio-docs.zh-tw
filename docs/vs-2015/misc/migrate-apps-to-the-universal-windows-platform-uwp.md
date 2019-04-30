@@ -10,11 +10,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 6827d1b2b1a85d94e8ad8d5f88c505aebc3abb93
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60042570"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63001280"
 ---
 # <a name="migrate-apps-to-the-universal-windows-platform-uwp"></a>將應用程式移轉至通用 Windows 平台 (UWP)
 視需要手動變更現有使用 Visual Studio 2015 RC 為 Windows 市集 8.1 應用程式、Windows Phone 8.1 應用程式或通用 Windows 應用程式所建立的專案檔案，使其能夠用於 Visual Studio 2015 RTM。 (如果您的 Windows 8.1 通用應用程式同時具有 Windows 應用程式專案和 Windows Phone 專案，則需要遵循移轉每個專案的步驟)。  
@@ -400,7 +400,7 @@ ms.locfileid: "60042570"
   
    ```  
   
-8. 新增**uap**命名空間\<VisualElements > 項目和任何其子項目。 例如：  
+8. 新增**uap**命名空間\<VisualElements > 項目和任何其子項目。 例如:   
   
    ```xml  
    <uap:VisualElements  
@@ -469,7 +469,7 @@ ms.locfileid: "60042570"
   
     ```  
   
-11. 將 **uap** 命名空間加入 chatMessageNotification 類型的背景工作。 例如：  
+11. 將 **uap** 命名空間加入 chatMessageNotification 類型的背景工作。 例如:   
   
     ```xml  
     <Extension Category="windows.backgroundTasks" EntryPoint="Fabrikam.BackgroundTask" Executable="MyBackground.exe">  
@@ -505,7 +505,7 @@ ms.locfileid: "60042570"
   
      使用所使用實際架構的適當 Publisher 和 MinVersion 值。 請注意，在 Windows 10 中，這些名稱可能會變更。  
   
-13. 將 gattCharacteristicNotification 和 rfcommConnection 背景類型工作取代為 Bluetooth 類型工作。 例如:   
+13. 將 gattCharacteristicNotification 和 rfcommConnection 背景類型工作取代為 Bluetooth 類型工作。 例如：  
   
      **舊：**  
   
@@ -528,7 +528,7 @@ ms.locfileid: "60042570"
     </Extension>  
     ```  
   
-14. 將 Bluetooth 裝置功能 bluetooth.rfcomm 和 bluetooth.genericAttributeProfile 取代為一般 Bluetooth 功能。 例如:   
+14. 將 Bluetooth 裝置功能 bluetooth.rfcomm 和 bluetooth.genericAttributeProfile 取代為一般 Bluetooth 功能。 例如：  
   
      **舊：**  
   
@@ -566,7 +566,7 @@ ms.locfileid: "60042570"
   
        - \<ApplicationView > 項目  
   
-         例如:   
+         例如：  
   
        ```xml  
        <m2:VisualElements  

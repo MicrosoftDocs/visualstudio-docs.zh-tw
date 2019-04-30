@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 98b506c11ef126d0179b198336e8d969c4eec267
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56721286"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62918643"
 ---
 # <a name="idebugmodule3"></a>IDebugModule3
 這個介面會表示支援的符號和 JustMyCode 狀態的替代位置的模組。

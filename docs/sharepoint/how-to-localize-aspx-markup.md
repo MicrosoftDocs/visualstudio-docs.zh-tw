@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 25768f44ee51ee94d456d0652ab7575def3a259d
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 4cd3c17a9e771ad9a1aee7526f24e3a8282f208d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60057564"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443096"
 ---
 # <a name="how-to-localize-aspx-markup"></a>HOW TO：當地語系化 ASPX 標記
   [!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)] (.aspx) 網頁通常會使用硬式編碼的字串值。 若要當地語系化這些字串，請將它們取代參考當地語系化的資源的運算式中。
@@ -36,7 +36,7 @@ ms.locfileid: "60057564"
     2. 若要加入資源檔中**方案總管**，開啟 SharePoint 專案項目捷徑功能表，然後選擇**新增** > **新項目**。 之下**Visual Basic**或是**Visual C#** 節點，選擇 **資源檔**範本。
 
     > [!NOTE]
-    >  請務必將資源檔新增至 SharePoint 專案項目，若要啟用的部署類型屬性。 在此程序稍後需要此屬性。 如果您的解決方案並沒有 SharePoint 專案項目，您可以新增空白的 SharePoint 專案，並移除其預設值*Elements.xml*檔案。
+    > 請務必將資源檔新增至 SharePoint 專案項目，若要啟用的部署類型屬性。 在此程序稍後需要此屬性。 如果您的解決方案並沒有 SharePoint 專案項目，您可以新增空白的 SharePoint 專案，並移除其預設值*Elements.xml*檔案。
 
 2. 提供的預設語言資源檔案加上您所選擇的名稱 *.resx*擴充功能，例如 MyAppResources.resx。 針對每個當地語系化的資源檔使用相同的基底名稱，但是會加上文化特性 [!INCLUDE[TLA2#tla_id](../sharepoint/includes/tla2sharptla-id-md.md)]。 例如，名稱在德文當地語系化資源*為 MyAppResources.de-DE.resx*。
 

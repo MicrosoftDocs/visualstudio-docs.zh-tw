@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f24b86f51d658ea2f228f1e72d18394fcba4b47b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: a83207633d60348d664e3c9337b48288bb6c1baf
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60072815"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63447047"
 ---
 # <a name="required-changes-to-run-office-projects-that-you-migrate-to-the-net-framework-4-or-the-net-framework-45"></a>必要的變更，執行您移轉至.NET Framework 4 或.NET Framework 4.5 的 Office 專案
   如果 Office 專案的目標 framework 變更為[!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]或更新版本從.NET Framework 較早版本，您必須執行下列工作，以確保解決方案可以在開發電腦和終端使用者電腦上執行：
@@ -44,7 +44,7 @@ ms.locfileid: "60072815"
 2. 在 [屬性]  節點 (C#) 或 [我的專案]  節點 (Visual Basic) 下，按兩下 AssemblyInfo 程式碼檔，以在程式碼編輯器中加以開啟。
 
     > [!NOTE]
-    >  在 Visual Basic 專案中，您必須按一下 [方案總管]  中的 [顯示所有檔案]  按鈕，才能查看 AssemblyInfo 程式碼檔。
+    > 在 Visual Basic 專案中，您必須按一下 [方案總管]  中的 [顯示所有檔案]  按鈕，才能查看 AssemblyInfo 程式碼檔。
 
 3. 找出 <xref:System.Security.SecurityTransparentAttribute>，並將它從檔案移除或加上註解。
 
