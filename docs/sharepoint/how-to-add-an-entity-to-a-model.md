@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 4c270ff9a31073835d8f907547cf0f532e237b1e
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: c7d74b731bd1857330c40a7929d84efe40a03201
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60089454"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63431240"
 ---
 # <a name="how-to-add-an-entity-to-a-model"></a>HOW TO：將實體新增至模型
   若要建立實體，請從 Visual Studio 中新增實體控制項**工具箱**商務資料連接 (BDC) 設計工具上。
@@ -40,7 +40,7 @@ ms.locfileid: "60089454"
      新的識別碼會出現在實體中。
 
     > [!NOTE]
-    >  您可以變更實體和中的識別項的名稱**屬性**視窗。
+    > 您可以變更實體和中的識別項的名稱**屬性**視窗。
 
 4. 在類別中定義之實體的欄位。 您可以將新類別加入專案，或使用現有的類別使用物件關聯式設計工具 （O/R 設計工具） 等其他工具所建立。 下列範例顯示名為連絡人的實體類別。
 

@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 583c15a5b605671e09ac47a42d49b068393ffe2e
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 8127b35c7b3c861ce0568acc5c0459d6d31eee08
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60062551"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63440876"
 ---
 # <a name="walkthrough-display-custom-task-panes-with-email-messages-in-outlook"></a>逐步解說：在 Outlook 中顯示自訂工作窗格與電子郵件訊息
   本逐步解說示範如何顯示每個已建立或開啟的電子郵件訊息的自訂工作窗格的唯一執行個體。 使用者可以使用每則電子郵件訊息功能區上的按鈕，顯示或隱藏自訂工作窗格。
@@ -31,7 +31,7 @@ ms.locfileid: "60062551"
  若要顯示含有多個檔案總管或偵測器視窗的自訂工作窗格，您必須針對每一個開啟的視窗，建立該自訂工作窗格的執行個體。 自訂工作窗格，Outlook 視窗中的行為相關資訊，請參閱[自訂工作窗格](../vsto/custom-task-panes.md)。
 
 > [!NOTE]
->  本逐步解說會呈現一小部分的 VSTO 增益集程式碼，以便更容易討論程式碼背後的邏輯。
+> 本逐步解說會呈現一小部分的 VSTO 增益集程式碼，以便更容易討論程式碼背後的邏輯。
 
  這個逐步解說將說明下列工作：
 
@@ -48,7 +48,7 @@ ms.locfileid: "60062551"
 - 同步處理功能區切換按鈕和自訂工作窗格。
 
 > [!NOTE]
->  在下列指示的某些 Visual Studio 使用者介面項目中，您的電腦可能會顯示不同的名稱或位置。 您所擁有的 Visual Studio 版本以及使用的設定會決定這些項目。 如需詳細資訊，請參閱[將 Visual Studio IDE 個人化](../ide/personalizing-the-visual-studio-ide.md)。
+> 在下列指示的某些 Visual Studio 使用者介面項目中，您的電腦可能會顯示不同的名稱或位置。 您所擁有的 Visual Studio 版本以及使用的設定會決定這些項目。 如需詳細資訊，請參閱[將 Visual Studio IDE 個人化](../ide/personalizing-the-visual-studio-ide.md)。
 
 ## <a name="prerequisites"></a>必要條件
  您需要下列元件才能完成此逐步解說：

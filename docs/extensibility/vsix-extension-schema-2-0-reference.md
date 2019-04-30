@@ -11,18 +11,18 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1a029345afb8b54c85d35e500e4ada48c02c54ff
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 7cf2840c22bcddb9090cb078be6a8ad53d1ca1aa
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60114518"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63411133"
 ---
 # <a name="vsix-extension-schema-20-reference"></a>VSIX 延伸結構描述 2.0 參考
 VSIX 部署資訊清單檔描述 VSIX 封裝的內容。 檔案格式是結構描述所決定。 此結構描述的 2.0 版支援的自訂型別和屬性加入。  資訊清單的結構描述是 「 可延伸的。 它並不了解的 XML 元素和屬性，則會忽略資訊清單的載入器。
 
 > [!IMPORTANT]
->  Visual Studio 2015 可以載入 Visual Studio 2010 中，Visual Studio 2012 或 Visual Studio 2013 格式中的 VSIX 檔案。
+> Visual Studio 2015 可以載入 Visual Studio 2010 中，Visual Studio 2012 或 Visual Studio 2013 格式中的 VSIX 檔案。
 
 ## <a name="package-manifest-schema"></a>封裝資訊清單結構描述
  資訊清單的 XML 檔案的根項目是`<PackageManifest>`。 它具有單一屬性`Version`，這是資訊清單的格式版本。 如果格式進行重要變更，則會變更的版本格式。 本文說明資訊清單的格式版本 2.0 中，指定資訊清單中，藉由設定`Version`屬性版本的值 ="2.0"。

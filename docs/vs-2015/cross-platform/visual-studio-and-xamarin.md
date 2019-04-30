@@ -8,12 +8,12 @@ ms.assetid: 1da4064f-af69-472c-8f31-98484be5f790
 caps.latest.revision: 14
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: a38e711a8a0244992f9958b4d48920f3437a8329
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: 098d94a1aed9020271db5010e278a4aa8fc68330
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59666516"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63442121"
 ---
 # <a name="visual-studio-and-xamarin"></a>Visual Studio 和 Xamarin
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,7 +35,7 @@ Xamarin 是行動應用程式開發平台，可從通用 C#/.NET 程式碼基底
   您可以透過[任何版本的 Visual Studio 2015](https://www.visualstudio.com/vs-2015-product-editions) (Community、Professional 及 Enterprise) 來使用所有的 Xamarin 功能。 另請注意，截至 2016 年 3 月 31 日，Xamarin 已隨附於所有版本的 Visual Studio 2015 中，不再需要個別授權。 針對 Visual Studio 2013，您可以個別安裝 Xamarin，如[設定和安裝](../cross-platform/setup-and-install.md)主題中所述。  
   
 > [!NOTE]
->  這些指示會說明最簡單且最直接的電腦設定，適用於具有 Windows 和 Visual Studio 背景的人員。 在這項設定中，整體開發經驗已經過簡化，因為您只有在使用 iOS 模擬器和行動網卡時才需要與 Mac 互動。 如果您具備 Mac 背景，則建議您在 Parallels/VMWare 中執行 Visual Studio，或是使用 Xamarin Studio Community。 如需相關指示，請參閱[針對 Mac 使用者的設定、安裝和驗證](../cross-platform/setup-install-and-verifications-for-mac-users.md)。  
+> 這些指示會說明最簡單且最直接的電腦設定，適用於具有 Windows 和 Visual Studio 背景的人員。 在這項設定中，整體開發經驗已經過簡化，因為您只有在使用 iOS 模擬器和行動網卡時才需要與 Mac 互動。 如果您具備 Mac 背景，則建議您在 Parallels/VMWare 中執行 Visual Studio，或是使用 Xamarin Studio Community。 如需相關指示，請參閱[針對 Mac 使用者的設定、安裝和驗證](../cross-platform/setup-install-and-verifications-for-mac-users.md)。  
   
 > [!NOTE]
->  如果您想要尋求以 HTML 和 CSS 為基礎的跨平台開發解決方案，請試試 Visual Studio Tools for Apache Cordova，如 [Visual Studio 中的跨平台開發](../cross-platform/cross-platform-mobile-development-in-visual-studio.md#HTML)所述。
+> 如果您想要尋求以 HTML 和 CSS 為基礎的跨平台開發解決方案，請試試 Visual Studio Tools for Apache Cordova，如 [Visual Studio 中的跨平台開發](../cross-platform/cross-platform-mobile-development-in-visual-studio.md#HTML)所述。

@@ -11,12 +11,12 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 673b6bda444fd097b2ce4f4eee87c9f558e64c08
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: a5aa6edaaba54f9c08921a594b90ca1a7352e4da
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60069610"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433418"
 ---
 # <a name="calculated-and-custom-storage-properties"></a>計算及自訂的儲存區屬性
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -54,7 +54,7 @@ ms.locfileid: "60069610"
      Dsl\GeneratedCode\DomainClasses.cs 或 DomainRelationships.cs 隨即開啟。 上述反白顯示的方法呼叫中，註解會提示您提供實作 get*YourProperty*（)。  
   
     > [!NOTE]
-    >  這個檔案會產生從 DslDefinition.dsl。 如果您編輯此檔案時，您的變更將會遺失您按一下 下一次**轉換所有範本**。 相反地，在個別檔案中新增所需的方法。  
+    > 這個檔案會產生從 DslDefinition.dsl。 如果您編輯此檔案時，您的變更將會遺失您按一下 下一次**轉換所有範本**。 相反地，在個別檔案中新增所需的方法。  
   
 6. 建立或開啟類別檔案，在個別的資料夾，例如 CustomCode\\*YourDomainClass*。 cs。  
   
@@ -94,7 +94,7 @@ ms.locfileid: "60069610"
   
 - 不過，它應該更新任何外部的資源，例如資料庫或檔案內容或市集外的物件。 如此可確保它們會保留在 synchronism 存放區中的值。  
   
-  例如:   
+  例如：  
   
 ```  
 void SetAgeValue(int value)  

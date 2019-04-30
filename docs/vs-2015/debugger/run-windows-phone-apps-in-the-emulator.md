@@ -14,12 +14,12 @@ caps.latest.revision: 12
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 7d9b30dd50838eced1299e4aaae6999c8fb9f0e5
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: c594e3837a4fe2c8b2e5a7b69e5db93377a8dc8d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60052205"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63442328"
 ---
 # <a name="run-windows-phone-apps-in-the-emulator"></a>在模擬器中執行 Windows Phone 應用程式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -48,7 +48,7 @@ Windows Phone 模擬器提供一個虛擬化環境，在此環境中，就算沒
    如果選取的模擬器已在執行，則會在執行中的模擬器內部署並啟動您的應用程式。 一次只能執行一個模擬器執行個體。  
   
 > [!TIP]
->  在模擬器上測試應用程式時，請在偵錯工作階段之間開啟模擬器，以快速重新執行應用程式。  
+> 在模擬器上測試應用程式時，請在偵錯工作階段之間開啟模擬器，以快速重新執行應用程式。  
   
 ### <a name="BKMK_vs"></a> 從 Visual Studio 執行應用程式  
   

@@ -17,12 +17,12 @@ caps.latest.revision: 25
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: f0f6d09dbd653dc332fd01414ff1ebb73cd2d014
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 8215b8e0955b79224341d5d43b51a473740f5fe5
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58945344"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63442329"
 ---
 # <a name="choosing-a-clickonce-update-strategy"></a>選擇 ClickOnce 更新策略
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,10 +34,10 @@ ms.locfileid: "58945344"
  此外，您可以決定應用程式檢查更新的頻率，而且可以讓更新成為必要。  
   
 > [!NOTE]
->  應用程式更新會需要網路連接。 如果沒有網路連接，不論您所選擇的更新策略為何，應用程式將會執行但不檢查更新。  
+> 應用程式更新會需要網路連接。 如果沒有網路連接，不論您所選擇的更新策略為何，應用程式將會執行但不檢查更新。  
   
 > [!NOTE]
->  在 .NET Framework 2.0 和 .NET Framework 3.0 中，不論應用程式是隨時檢查更新、在啟動之前或之後檢查更新，或者使用 <xref:System.Deployment.Application> API 檢查更新，您都必須設定部署資訊清單中的 `deploymentProvider`。 `deploymentProvider` 元素相當於 Visual Studio 中，[發行] 索引標籤之 [更新] 對話方塊中的 [更新位置] 欄位。 .NET Framework 3.5 則放寬了此規則。 如需詳細資訊，請參閱 <<c0> [ 部署 ClickOnce 應用程式的測試和實際執行伺服器，而不需要 Resigning](../deployment/deploying-clickonce-applications-for-testing-and-production-servers-without-resigning.md)。  
+> 在 .NET Framework 2.0 和 .NET Framework 3.0 中，不論應用程式是隨時檢查更新、在啟動之前或之後檢查更新，或者使用 <xref:System.Deployment.Application> API 檢查更新，您都必須設定部署資訊清單中的 `deploymentProvider`。 `deploymentProvider` 元素相當於 Visual Studio 中，[發行] 索引標籤之 [更新] 對話方塊中的 [更新位置] 欄位。 .NET Framework 3.5 則放寬了此規則。 如需詳細資訊，請參閱 <<c0> [ 部署 ClickOnce 應用程式的測試和實際執行伺服器，而不需要 Resigning](../deployment/deploying-clickonce-applications-for-testing-and-production-servers-without-resigning.md)。  
   
 ## <a name="checking-for-updates-after-application-startup"></a>在應用程式啟動後檢查更新  
  使用此策略時，應用程式會在執行中時，嘗試在背景中尋找及讀取部署資訊清單檔。 如果有可用的更新，下次使用者執行應用程式時，就會收到下載並安裝更新的提示。  
@@ -79,7 +79,7 @@ ms.locfileid: "58945344"
  有時候，您可能會想要要求使用者執行更新版本的應用程式。 例如，您可能會對外部資源 (例如 Web 服務) 進行變更，進而導致舊版應用程式無法正確運作。 在這種情況下，您就會想要將更新標記為必要，並防止使用者執行舊版。  
   
 > [!NOTE]
->  雖然您可以使用其他更新策略來要求更新，不過選取 [在應用程式啟動前] 選項是保證不會執行舊版的唯一方式。 在啟動時若偵測到強制更新，使用者就必須接受更新或關閉應用程式。  
+> 雖然您可以使用其他更新策略來要求更新，不過選取 [在應用程式啟動前] 選項是保證不會執行舊版的唯一方式。 在啟動時若偵測到強制更新，使用者就必須接受更新或關閉應用程式。  
   
  若要將更新標記為必要項，請在 [應用程式更新] 對話方塊中按一下 [指定此應用程式的最小必要版本]，然後指定發行版本 (**主要**、**次要**、**建置**、**修訂**)，這樣會指定可安裝應用程式的最低版本號碼。  
   

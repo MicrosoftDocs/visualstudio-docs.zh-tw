@@ -13,11 +13,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-ms.openlocfilehash: 95a6ccfe7074db51d8b4ffbd209ca7b832ac4e68
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: 8fcc805962406f0ab5f2e741c6f3cc9f7eee248b
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38940888"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62536970"
 ---
 WCF

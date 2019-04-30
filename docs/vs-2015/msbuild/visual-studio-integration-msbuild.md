@@ -19,12 +19,12 @@ caps.latest.revision: 26
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 048307c6c8117a77a57da6dc20f2615ae82feb0c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: e8a2bd058faa2c3ef9d17a82ad08dd3ad28842a8
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60117495"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445633"
 ---
 # <a name="visual-studio-integration-msbuild"></a>Visual Studio 整合 (MSBuild)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -64,7 +64,7 @@ Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' 
 ```  
   
 > [!NOTE]
->  有些項目類型名稱是 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 中特有的，但是沒有列在這個下拉式清單中。  
+> 有些項目類型名稱是 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 中特有的，但是沒有列在這個下拉式清單中。  
   
 ## <a name="in-process-compilers"></a>同處理序編譯器  
  如果可能，[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 會嘗試使用同處理序 (In-Process) 版本的 [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] 編譯器來提升效能  (不適用 [!INCLUDE[csprcs](../includes/csprcs-md.md)])。若要讓這種編譯器能夠正常運作，必須符合下列條件：  

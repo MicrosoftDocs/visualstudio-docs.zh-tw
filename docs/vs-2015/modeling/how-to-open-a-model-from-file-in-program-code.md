@@ -9,12 +9,12 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: f0c0374f50894cefbb240c6349c9c2450734501d
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: c87b197219cec112a9235f4af6fb1a51ae793a88
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60071846"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441020"
 ---
 # <a name="how-to-open-a-model-from-file-in-program-code"></a>HOW TO：在程式碼中開啟檔案的模型
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,7 +35,7 @@ ms.locfileid: "60071846"
 3. 在 [專案屬性] 視窗中，在**應用程式**索引標籤上，設定**目標 framework**欄位 **.NET Framework 4**。  
   
 > [!NOTE]
->  您可能需要這樣做，即使您選取 **.NET Framework 4**專案的 [建立] 對話方塊中。 目標 framework 不應 **.NET Framework 4 Client Profile**。  
+> 您可能需要這樣做，即使您選取 **.NET Framework 4**專案的 [建立] 對話方塊中。 目標 framework 不應 **.NET Framework 4 Client Profile**。  
   
 ## <a name="references"></a>參考  
  您必須將這些參考您[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]應用程式專案：  

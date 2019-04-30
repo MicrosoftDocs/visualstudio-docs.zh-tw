@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bf8c3a43cfff286e43d099258913b816491527da
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: d435ff9970748e8debe5edfd15514cde4f531b86
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60065648"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63389702"
 ---
 # <a name="capturing-graphics-information"></a>擷取圖形資訊
 從 DirectX 應用程式擷取圖形資訊，以使用 Visual Studio 圖形分析器來診斷轉譯問題和效能問題。
@@ -40,7 +40,7 @@ ms.locfileid: "60065648"
 - 在鍵盤上按 Print Screen 鍵。
 
   > [!NOTE]
-  >  當應用程式在 [圖形診斷] 下執行時，PRINT SCREEN 鍵只能用來擷取圖形資訊的框架，而不會執行其一般功能。 此種狀況在停止擷取圖形資訊 (通常會藉由停止偵錯或正常結束) 之前都會保持有效狀態，即是程式焦點是在另一個應用程式上亦是如此。
+  > 當應用程式在 [圖形診斷] 下執行時，PRINT SCREEN 鍵只能用來擷取圖形資訊的框架，而不會執行其一般功能。 此種狀況在停止擷取圖形資訊 (通常會藉由停止偵錯或正常結束) 之前都會保持有效狀態，即是程式焦點是在另一個應用程式上亦是如此。
 
 - 在 Visual Studio 擷取介面中，選擇位於 [診斷工作階段] 時間軸下的 [擷取畫面格] 按鈕，或選擇位於 [每秒畫面格數] 泳道下方且位於先前擷取之任一畫面格右邊的大型 [擷取畫面格] 按鈕。 下面的影像中會將這兩個按鈕反白顯示。
 

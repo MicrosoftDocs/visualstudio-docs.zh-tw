@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: a24fde5f04a88de7eec34836df38bc1cca8669ab
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 3e04f3b4420cc8f3b56eee304ae199cf87fa4a3a
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60060627"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63412579"
 ---
 # <a name="how-to-programmatically-insert-text-into-word-documents"></a>HOW TO：以程式設計方式將文字插入 Word 文件
   在 Microsoft Office Word 文件中插入文字的方式主要有三種：
@@ -33,7 +33,7 @@ ms.locfileid: "60060627"
 - 使用 <xref:Microsoft.Office.Interop.Word.Selection.TypeText%2A> 物件的 <xref:Microsoft.Office.Interop.Word.Selection> 方法將文字插入游標或選取範圍。
 
 > [!NOTE]
->  您也可以將文字插入內容控制項與書籤中。 如需詳細資訊，請參閱 <<c0> [ 內容控制項](../vsto/content-controls.md)並[書籤控制項](../vsto/bookmark-control.md)。
+> 您也可以將文字插入內容控制項與書籤中。 如需詳細資訊，請參閱 <<c0> [ 內容控制項](../vsto/content-controls.md)並[書籤控制項](../vsto/bookmark-control.md)。
 
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]
 

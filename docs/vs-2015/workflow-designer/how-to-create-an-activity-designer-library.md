@@ -9,12 +9,12 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 3950540edb7ab17bafa5ed5c9e7b0f3660ad436a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: a27dac0c82b2784eac84b174f5cb67719093aace
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60090598"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444641"
 ---
 # <a name="how-to-create-an-activity-designer-library"></a>HOW TO：建立活動設計工具程式庫
 自訂活動設計工具可讓您建立標準或自訂活動的使用者介面。 您可以控制使用者介面的複雜性，並且能為活動建立多個設計工具。 這個案例可讓您建立專為多個對象量身訂做的設計工具。  
@@ -36,14 +36,14 @@ ms.locfileid: "60090598"
 7. 在 **解決方案**方塊中，輸入描述性的名稱，您的解決方案，然後按一下**確定**。  
   
     > [!NOTE]
-    >  如果您想要新增至現有的方案工作流程主控台應用程式，開啟該方案中的[!INCLUDE[vs2010](../includes/vs2010-md.md)]，在方案上按一下滑鼠右鍵**方案總管 中**，然後選取**新增**，則**新增專案...** 若要開啟 [**新的專案**] 對話方塊。 依照本程序上面的說明繼續進行。  
+    > 如果您想要新增至現有的方案工作流程主控台應用程式，開啟該方案中的[!INCLUDE[vs2010](../includes/vs2010-md.md)]，在方案上按一下滑鼠右鍵**方案總管 中**，然後選取**新增**，則**新增專案...** 若要開啟 [**新的專案**] 對話方塊。 依照本程序上面的說明繼續進行。  
   
 8. 專案範本是以 XAML 建立活動設計工具定義，以及使用原始程式碼建立程式碼後置實作檔案。 [!INCLUDE[wfd1](../includes/wfd1-md.md)] 會開啟並顯示活動設計工具的畫布。  
   
 9. 拖曳[!INCLUDE[avalon1](../includes/avalon1-md.md)]控制項從**工具箱**至設計介面，以在您的自訂活動設計工具中使用它們。  如需如何實作自訂活動設計工具的範例，請參閱[How to:建立自訂活動設計工具](http://msdn.microsoft.com/library/2f3aade6-facc-44ef-9657-a407ef8b9b31)。  
   
     > [!WARNING]
-    >  自訂活動設計工具可以用於自訂活動，也可用於預設[!INCLUDE[netfx40_short](../includes/netfx40-short-md.md)]活動。  
+    > 自訂活動設計工具可以用於自訂活動，也可用於預設[!INCLUDE[netfx40_short](../includes/netfx40-short-md.md)]活動。  
   
 ## <a name="see-also"></a>另請參閱  
  [建立工作流程專案](../workflow-designer/creating-a-workflow-project.md)

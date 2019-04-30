@@ -18,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 87dda9c975f35ac8b48e60acd3e692f9b3a070d4
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 25b30db78706dce95188289187ce55011ce1362d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60103509"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441742"
 ---
 # <a name="how-to-protect-parts-of-documents-by-using-content-controls"></a>HOW TO：使用內容控制項保護文件的組件
   當您保護文件的某個部分時，使用者即無法變更或刪除文件中該部分的內容。 您可使用多種方法，透過內容控制項來保護 Microsoft Office Word 文件的下列部分：
@@ -73,7 +73,7 @@ ms.locfileid: "60103509"
 - 您想要保護已包含內容控制項的區域，但是想要保護的文字或其他項目不在內容控制項內。
 
 > [!NOTE]
->  如果建立的 <xref:Microsoft.Office.Tools.Word.GroupContentControl> 包含內嵌內容控制項，則不會自動保護這些內嵌內容控制項。 若要防止使用者編輯內嵌內容控制項，請使用**LockContents**控制項的屬性。
+> 如果建立的 <xref:Microsoft.Office.Tools.Word.GroupContentControl> 包含內嵌內容控制項，則不會自動保護這些內嵌內容控制項。 若要防止使用者編輯內嵌內容控制項，請使用**LockContents**控制項的屬性。
 
 ### <a name="to-protect-an-area-of-a-document-at-design-time"></a>若要在設計階段保護文件的區域
 
@@ -82,7 +82,7 @@ ms.locfileid: "60103509"
 2. 按一下 [功能區] 上的 [開發人員]  索引標籤。
 
     > [!NOTE]
-    >  如果 [開發人員]  索引標籤沒有顯示，您必須先使其顯示。 如需詳細資訊，請參閱[如何：在功能區顯示開發人員索引標籤](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md)。
+    > 如果 [開發人員]  索引標籤沒有顯示，您必須先使其顯示。 如需詳細資訊，請參閱[如何：在功能區顯示開發人員索引標籤](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md)。
 
 3. 在 **控制項**群組中，按一下**群組**下拉式按鈕，然後按一下**群組**。
 

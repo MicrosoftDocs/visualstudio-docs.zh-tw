@@ -14,12 +14,12 @@ caps.latest.revision: 23
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 07e3c15fad2758de965d0e13c2b64ac3ceebd2fe
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: dc5a54b1dee2345f42abd3a00b39c11388185d03
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60114128"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63434870"
 ---
 # <a name="debugging-gpu-code"></a>偵錯 GPU 程式碼
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ ms.locfileid: "60114128"
  [!INCLUDE[win7](../includes/win7-md.md)]、[!INCLUDE[win8](../includes/win8-md.md)]、[!INCLUDE[winsvr08_r2](../includes/winsvr08-r2-md.md)] 和 [!INCLUDE[winserver8](../includes/winserver8-md.md)] 都支援偵錯。 如需在軟體模擬器上偵錯，則需要使用 [!INCLUDE[win8](../includes/win8-md.md)] 或 [!INCLUDE[winserver8](../includes/winserver8-md.md)]。 如需在硬體上偵錯，您必須安裝圖形卡的驅動程式。 並非所有硬體廠商都實作所有偵錯工具功能。 請參閱廠商文件以了解限制。  
   
 > [!NOTE]
->  若獨立硬體廠商想要支援 Visual Studio 中的 GPU 偵錯，則必須建立實作 VSD3DDebug 介面並且以自己的驅動程式為目標的 DLL。  
+> 若獨立硬體廠商想要支援 Visual Studio 中的 GPU 偵錯，則必須建立實作 VSD3DDebug 介面並且以自己的驅動程式為目標的 DLL。  
   
 ## <a name="configuring-gpu-debugging"></a>設定 GPU 偵錯  
  偵錯工具無法在相同應用程式執行時中斷 CPU 程式碼和 GPU 程式碼。 根據預設，偵錯工具會中斷 CPU 程式碼。 若要對 GPU 程式碼進行偵錯，請使用這兩個步驟的其中一個：  

@@ -12,12 +12,12 @@ caps.latest.revision: 42
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: da7b1f1bda7fac222d0d47c6bf2a15eaf3a8396f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: fa3a91df779094e3e11722dfc7bfc03c58bcea7e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60052060"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63383411"
 ---
 # <a name="walkthrough-configuring-and-using-a-custom-rule-set"></a>逐步解說：設定和使用自訂規則集
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -70,7 +70,7 @@ ms.locfileid: "60052060"
     在 檔案 功能表中，按一下 **儲存選取項目**與您所選取規則集的相關資訊和其設定更新專案檔。  
   
    > [!TIP]
-   >  在真實世界的情況下，最好使用排列優先順序的問題，您想要使用程式碼分析的目標是開始**最小建議規則**規則集和更正所需的問題，然後以累加方式新增更多的規則設定為找出並解決其他問題。  
+   > 在真實世界的情況下，最好使用排列優先順序的問題，您想要使用程式碼分析的目標是開始**最小建議規則**規則集和更正所需的問題，然後以累加方式新增更多的規則設定為找出並解決其他問題。  
   
    接下來，您會加入一些程式碼，到將用來示範違規 CA1704 的類別庫 」 的識別項應該使用正確的拼字"程式碼分析規則。 如需詳細資訊，請參閱[CA1704:識別項應該使用正確的拼字](../code-quality/ca1704-identifiers-should-be-spelled-correctly.md)。  
   

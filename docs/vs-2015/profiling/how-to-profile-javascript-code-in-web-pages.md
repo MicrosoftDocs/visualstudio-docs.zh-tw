@@ -13,12 +13,12 @@ caps.latest.revision: 32
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 5f838974292a16a9aeaea11362848b06f5abe982
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 5c3a6526732ffa398d25b0c3c5d73fed771f6958
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60048511"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443471"
 ---
 # <a name="how-to-profile-javascript-code-in-web-pages"></a>HOW TO：分析網頁中的 JavaScript 程式碼
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ ms.locfileid: "60048511"
 - Internet Explorer 8 (含) 以後版本。  
   
 > [!WARNING]
->  若要對 Windows 市集應用程式中的 JavaScript 進行程式碼剖析，請參閱下列其中一個主題：  
+> 若要對 Windows 市集應用程式中的 JavaScript 進行程式碼剖析，請參閱下列其中一個主題：  
 > 
 > - [JavaScript 函式計時](http://msdn.microsoft.com/library/b2bf49fc-aea7-4d9c-8fcf-cff8b8dd0c03)[遠端裝置上的 JavaScript 函式計時](http://msdn.microsoft.com/library/d78812b6-a97e-46dc-8d99-e724d1d725d8)  
 >   - [分析 JavaScript 函式計時資料](http://msdn.microsoft.com/library/b5aea8d8-36df-47ba-a7ca-95406700ca9b)  

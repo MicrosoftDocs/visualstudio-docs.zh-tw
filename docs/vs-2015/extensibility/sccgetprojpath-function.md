@@ -12,12 +12,12 @@ ms.assetid: 1079847e-d45f-4cb8-9d92-1e01ce5d08f6
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 4c7a4af5928f1d7b803e882c1826e451982389bc
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 585402efbda165844f449e2477d5ca69722613a8
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60093926"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446870"
 ---
 # <a name="sccgetprojpath-function"></a>SccGetProjPath 函式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -99,7 +99,7 @@ SCCRTN SccGetProjPath (
  針對`lpUser`、 IDE 可能會傳入使用者名稱，或它可能只需傳入指標設為空字串。 如果沒有使用者名稱，則原始檔控制外掛程式應該使用它做為預設值。 不過，如果沒有名稱傳遞，或具有指定名稱的登入失敗，外掛程式應該會提示使用者輸入登入和傳遞回名稱`lpUser`當它收到有效的登入。 因為外掛程式可能會變更此字串，IDE 一律會配置大小的緩衝區 (`SCC_USER_LEN`+ 1)。  
   
 > [!NOTE]
->  IDE 會執行的第一個動作可能會呼叫`SccOpenProject`函式或`SccGetProjPath`函式。 因此，這兩者有相同`lpUser`參數，可讓原始檔控制外掛程式，以將使用者登入兩次。 即使從函式傳回指出失敗，外掛程式必須填妥此使用有效的登入名稱的字串。  
+> IDE 會執行的第一個動作可能會呼叫`SccOpenProject`函式或`SccGetProjPath`函式。 因此，這兩者有相同`lpUser`參數，可讓原始檔控制外掛程式，以將使用者登入兩次。 即使從函式傳回指出失敗，外掛程式必須填妥此使用有效的登入名稱的字串。  
   
  `lpLocalPath` 是，使用者會將專案的目錄。 它可能是空字串。 如果沒有目前定義的 （若為嘗試從原始檔控制系統下載之專案的使用者） 的目錄，而且如果`bAllowChangePath`是`TRUE`，原始檔控制外掛程式可以提示使用者輸入，或使用其他方法，將其擁有字串`lpLocalPath`。 如果`bAllowChangePath`是`FALSE`，外掛程式不應該變更字串，因為使用者已使用指定的目錄中。  
   

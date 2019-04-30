@@ -15,12 +15,12 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c6de88572b685b5a432b4f73b125a464f125218b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: a6008566f71a241fb5daccab8d6a5dcb68882452
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58945767"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444419"
 ---
 # <a name="properties-of-elements-on-uml-sequence-diagrams"></a>UML 循序圖上的項目屬性
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,16 +28,16 @@ ms.locfileid: "58945767"
 在 UML 循序圖中，圖表上的每個項目都會有屬性。 若要查看項目的屬性，以滑鼠右鍵按一下的項目在圖表上或在**UML 模型總管**，然後按一下**屬性**。 屬性會出現在**屬性**視窗。  
   
 > [!NOTE]
->  本主題有關 UML 循序圖中的項目屬性。 如需如何閱讀 UML 循序圖的詳細資訊，請參閱[UML 循序圖：參考資料](../modeling/uml-sequence-diagrams-reference.md)。 如需如何繪製 UML 循序圖的詳細資訊，請參閱[UML 循序圖：指導方針](../modeling/uml-sequence-diagrams-guidelines.md)。  
+> 本主題有關 UML 循序圖中的項目屬性。 如需如何閱讀 UML 循序圖的詳細資訊，請參閱[UML 循序圖：參考資料](../modeling/uml-sequence-diagrams-reference.md)。 如需如何繪製 UML 循序圖的詳細資訊，請參閱[UML 循序圖：指導方針](../modeling/uml-sequence-diagrams-guidelines.md)。  
   
 ## <a name="properties-of-elements"></a>項目屬性  
   
 |屬性|預設|項目|描述|  
 |--------------|-------------|-------------|-----------------|  
-|**名稱**|預設名稱|全部|識別項目。|  
-|**限定的名稱**|封裝::名稱|全部|唯一識別該項目。 前面加上含有該項目之套件的合格名稱。|  
-|**工作項目**|0 associated|全部|與此項目相關聯的工作項目數。 若要關聯工作項目，請參閱[連結模型項目和工作項目](../modeling/link-model-elements-and-work-items.md)。|  
-|**描述**|(空白)|全部|您可以在這裡設定項目的一般注意事項。|  
+|**名稱**|預設名稱|All|識別項目。|  
+|**限定的名稱**|封裝::名稱|All|唯一識別該項目。 前面加上含有該項目之套件的合格名稱。|  
+|**工作項目**|0 associated|All|與此項目相關聯的工作項目數。 若要關聯工作項目，請參閱[連結模型項目和工作項目](../modeling/link-model-elements-and-work-items.md)。|  
+|**描述**|(空白)|All|您可以在這裡設定項目的一般注意事項。|  
 |**Color**|(項目類型的預設值)|生命線，訊息|圖案的色彩。 這是圖形的屬性，而不是它所顯示的項目。|  
 |**Type**|(空白)|生命線|生命線所代表的執行個體類型。<br /><br /> 如果生命線標頭中顯示參考符號，則此類別或介面分別存在於 UML 模型總管中，而且可以顯示在類別圖上。|  
 |**Actor**|False|生命線|表示生命線代表外部圖表相關元件的使用者、裝置或軟體元件。|  

@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 6e0cc6ee8df5285555760521b415ce8f6679fc2f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 17f8acd38df810d0ea7e5c0da2293a5de31eb281
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60072041"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446502"
 ---
 # <a name="how-to-create-a-user-control-for-a-sharepoint-application-page-or-web-part"></a>HOW TO：建立 SharePoint 應用程式頁面或 web 組件的使用者控制項
   您可以建立自訂使用者控制項，為 SharePoint 方案提供自訂功能，而且您可以在專案內重複使用該功能。 您可以將 Web 組件或應用程式頁面中加入使用者控制項，或加入其他 ASP.NET 控制項和 SharePoint 控制項，並且定義控制項的屬性和方法。 如需有關使用者控制項的詳細資訊，請參閱 <<c0> [ 建立可重複使用的控制項，為 web 組件或應用程式頁面](../sharepoint/creating-reusable-controls-for-web-parts-or-application-pages.md)並[使用者控制項和 SharePoint 中的伺服器控制項](https://blogs.msdn.microsoft.com/kaevans/2011/04/28/user-controls-and-server-controls-in-sharepoint/)。
@@ -40,7 +40,7 @@ ms.locfileid: "60072041"
 5. 在 SharePoint 範本清單中，選擇**使用者控制項 （僅限陣列方案）**。
 
     > [!NOTE]
-    >  使用者控制項只適用於陣列方案。
+    > 使用者控制項只適用於陣列方案。
 
 6. 在 [**名稱**方塊，使用者控制項，為指定的名稱，然後選擇**新增**] 按鈕。
 

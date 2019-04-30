@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 1c1596213b618ba67cd4bf1406f63c0754fd9b96
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 38312384c3e6ce51aa1b5b0b16df378286fc58b0
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56619312"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443577"
 ---
 # <a name="how-to-add-a-creator-method"></a>HOW TO：新增建立者方法
   建立者方法會將新資料加入至實體的資料來源。 商務資料連接 (BDC) 服務會呼叫這個方法，當使用者選擇**新的項目**按鈕**功能區**的模型為基礎的清單。 如需詳細資訊，請參閱 <<c0> [ 設計 business data connectivity 模型](../sharepoint/designing-a-business-data-connectivity-model.md)。
@@ -58,7 +58,7 @@ ms.locfileid: "56619312"
 5. 將資料加入至資料來源的建立者方法中加入程式碼。 下列範例會將 SQL Server 的 AdventureWorks 範例資料庫的連絡人。
 
    > [!NOTE]
-   >  值取代`ServerName`欄位與您伺服器的名稱。
+   > 值取代`ServerName`欄位與您伺服器的名稱。
 
     [!code-csharp[SP_BDC#4](../sharepoint/codesnippet/CSharp/SP_BDC/bdcmodel1/contactservice.cs#4)]
     [!code-vb[SP_BDC#4](../sharepoint/codesnippet/VisualBasic/sp_bdc/bdcmodel1/contactservice.vb#4)]

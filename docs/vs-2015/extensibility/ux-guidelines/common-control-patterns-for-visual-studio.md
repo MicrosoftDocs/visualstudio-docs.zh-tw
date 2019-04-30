@@ -8,12 +8,12 @@ ms.assetid: 3e893949-6398-42f1-9eab-a8d8c2b7f02d
 caps.latest.revision: 8
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 9644aeed1df42aa3a73af7d2cd7d7fa81bd27684
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 246464baea7e07e4d97e3483b423d200cf2b960c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60040827"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63430033"
 ---
 # <a name="common-control-patterns-for-visual-studio"></a>適用於 Visual Studio 的通用控制項模式
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -325,7 +325,7 @@ ms.locfileid: "60040827"
  某些按鈕應該一律使用圖形化映像，也絕對不要包含文字，以節省空間，並避免當地語系化問題。 這些通常可在 欄位選擇器和其他可排序的清單。
 
 > [!NOTE]
->  使用者需要這些按鈕 （沒有存取金鑰） 索引標籤，因此將它們放在合理的順序。 將按鈕的 name 屬性對應至花費，讓螢幕助讀程式正確地解譯按鈕動作的動作。
+> 使用者需要這些按鈕 （沒有存取金鑰） 索引標籤，因此將它們放在合理的順序。 將按鈕的 name 屬性對應至花費，讓螢幕助讀程式正確地解譯按鈕動作的動作。
 
 |||
 |-|-|

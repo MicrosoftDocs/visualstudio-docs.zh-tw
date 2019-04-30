@@ -9,12 +9,12 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 6f5b57b4246a7e047f64ca79c9a0021cbfc0766f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: c7e8a28180270a5093bdeb59f45fde9e6838a6ba
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60058404"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63434051"
 ---
 # <a name="step-2-run-your-program"></a>步驟 2：執行程式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -55,7 +55,7 @@ ms.locfileid: "60058404"
     - 選擇 [Form1] 視窗右上角的 X 按鈕。  
   
     > [!NOTE]
-    >  當您在 IDE 內部執行程式時，就稱為「偵錯」，因為您通常會這樣做來尋找和修正程式碼中的 Bug (錯誤)。 雖然此程式很小，而且實際上不會有任何作用，但它仍然是真正的程式。 您遵循相同程序執行和偵錯其他程式。 若要進一步了解偵錯，請參閱[偵錯工具基本概念](../debugger/debugger-basics.md)。  
+    > 當您在 IDE 內部執行程式時，就稱為「偵錯」，因為您通常會這樣做來尋找和修正程式碼中的 Bug (錯誤)。 雖然此程式很小，而且實際上不會有任何作用，但它仍然是真正的程式。 您遵循相同程序執行和偵錯其他程式。 若要進一步了解偵錯，請參閱[偵錯工具基本概念](../debugger/debugger-basics.md)。  
   
 ### <a name="to-continue-or-review"></a>若要繼續或檢視  
   

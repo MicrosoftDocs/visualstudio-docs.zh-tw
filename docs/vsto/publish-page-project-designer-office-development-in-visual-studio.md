@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 55a27a8d0c5c119870e92bfbf7cff4b85f90cf99
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 84a62fc796243172c9130c8113c4e6d289ed3092
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60103514"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63447010"
 ---
 # <a name="publish-page-project-designer-office-development-in-visual-studio"></a>發行 Page，Project Designer （Visual Studio 中的 Office 程式開發）
   [專案設計工具]  的 [發行]  頁面，可用以設定部署的屬性。
@@ -29,7 +29,7 @@ ms.locfileid: "60103514"
  若要存取此頁面，選取 [] 中的專案**方案總管**，然後在**專案**功能表上，選擇*Projectname* **屬性**. 如果未顯示 [發行]  頁面，請選擇 [發行]  索引標籤。
 
 > [!NOTE]
->  您也可以在 [發行精靈] 中設定發行位置。 如需詳細資訊，請參閱[如何：使用 ClickOnce 發行 Office 方案](https://msdn.microsoft.com/2b6c247e-bc04-4ce4-bb64-c4e79bb3d5b8)。
+> 您也可以在 [發行精靈] 中設定發行位置。 如需詳細資訊，請參閱[如何：使用 ClickOnce 發行 Office 方案](https://msdn.microsoft.com/2b6c247e-bc04-4ce4-bb64-c4e79bb3d5b8)。
 
 ## <a name="uielement-list"></a>UIElement 清單
  **發行資料夾位置 （網站、 ftp 伺服器或檔案路徑）** 所需。

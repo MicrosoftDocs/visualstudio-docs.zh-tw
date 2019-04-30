@@ -20,11 +20,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: dcb55ee2128d237c2be6f57da828ec3c5877cfdd
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60044514"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445081"
 ---
 # <a name="how-to-use-the-gpu-threads-window"></a>HOW TO：使用 GPU 執行緒視窗
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -108,4 +108,4 @@ ms.locfileid: "60044514"
 ## <a name="see-also"></a>另請參閱  
  [對多執行緒應用程式進行偵錯](../debugger/debug-multithreaded-applications-in-visual-studio.md)   
  [如何：使用平行監看式視窗](../debugger/how-to-use-the-parallel-watch-window.md)   
- [逐步解說：偵錯C++AMP 應用程式](http://msdn.microsoft.com/library/40e92ecc-f6ba-411c-960c-b3047b854fb5)
+ [逐步解說：針對 C++ AMP 應用程式進行偵錯](http://msdn.microsoft.com/library/40e92ecc-f6ba-411c-960c-b3047b854fb5)

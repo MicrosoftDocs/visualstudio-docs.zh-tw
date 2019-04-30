@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 0d2dfe0da64abb9540724c05d13b84715a684af0
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 30bb597288c19328bb71ce7b5212200991d7181e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60082031"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443076"
 ---
 # <a name="how-to-mark-controls-as-safe-controls"></a>HOW TO：將控制項標記為安全控制項
   為了安全性，SharePoint 會區別指令碼資料隱碼攻擊時受到保護的 Web 控制項和 Web 控制項不是。 受保護的控制項，或是*安全控制項*，可以由不受信任的使用者存取。 您可以將標記為安全的 SharePoint 專案項目，或在 安全控制項項目屬性中的控制項**封裝設計工具**將組件加入封裝。 如需詳細資訊，請參閱
@@ -27,7 +27,7 @@ ms.locfileid: "60082031"
 - [web.config 檔案設定變更](http://go.microsoft.com/fwlink/?LinkId=178965)並[Web 組件註冊為安全控制項](http://go.microsoft.com/fwlink/?LinkId=171013)。
 
 > [!IMPORTANT]
->  這些程序是為了說明之用。 只有當確定它們是安全的安全控制項標記。
+> 這些程序是為了說明之用。 只有當確定它們是安全的安全控制項標記。
 
 ## <a name="marking-safe-controls-in-the-safe-control-entries-property"></a>標示的安全控制項項目屬性中的安全控制項
 
@@ -94,7 +94,7 @@ ms.locfileid: "60082031"
     |針對指令碼的安全|離開**防止指令碼**清除核取方塊。|
 
     > [!NOTE]
-    >  **組件名稱**值，透過新增的組件**進階**索引標籤**封裝設計工具**不能是語彙基元，它必須是強式名稱組件。 如需詳細資訊，請參閱[建立和使用強式名稱的組件](http://go.microsoft.com/fwlink/?LinkId=177513)。
+    > **組件名稱**值，透過新增的組件**進階**索引標籤**封裝設計工具**不能是語彙基元，它必須是強式名稱組件。 如需詳細資訊，請參閱[建立和使用強式名稱的組件](http://go.microsoft.com/fwlink/?LinkId=177513)。
 
 13. 選擇** 索引標籤**金鑰，才能建立另一個安全控制項項目。
 

@@ -13,18 +13,18 @@ caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f380245422047142b3f06757f6c1057302dd5d26
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
-ms.translationtype: MT
+ms.openlocfilehash: d8de6f57cabe808df1506870fe65da31ef74e644
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58146041"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436024"
 ---
 # <a name="idebugapplicationnode100-interface"></a>IDebugApplicationNode100 介面
 `IDebugApplicationNode100`介面會擴充功能[IDebugApplicationNode 介面](../../winscript/reference/idebugapplicationnode-interface.md)。 您可以取得此介面的執行個體的實作上呼叫 QueryInterface [IDebugApplicationNode 介面](../../winscript/reference/idebugapplicationnode-interface.md)。  
   
 > [!IMPORTANT]
->  這個介面被實作由 PDM v10.0 和更新版本。 可在 activdbg100.h 中找到。  
+> 這個介面被實作由 PDM v10.0 和更新版本。 可在 activdbg100.h 中找到。  
   
 ## <a name="methods"></a>方法  
  `IDebugApplicationNode100` 介面公開下列方法。  

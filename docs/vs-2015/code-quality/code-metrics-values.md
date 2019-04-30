@@ -13,12 +13,12 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: d5e3669ddaf9d8073038f0fa0c01c7e5a19a209d
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: f103a1239996e1f68fb6dae7a9f0a41f55ad858e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60049554"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437093"
 ---
 # <a name="code-metrics-values"></a>程式碼度量值
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ ms.locfileid: "60049554"
 - **循環複雜度**– 測量程式碼的結構化的複雜度。 它會建立計算的程式流程中不同的程式碼路徑數目。 具有複雜的控制流程的程式將會需要更多測試來達到良好的程式碼涵蓋範圍，因此比較不容易維護。  
   
     > [!NOTE]
-    >  在某些情況下，循環複雜度中方法的計算[!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)]與舊版不同。 如需詳細資訊，請參閱 「 變更在 Visual Studio 2010 程式碼複雜度計算區段 」 的[疑難排解程式碼度量問題](../code-quality/troubleshooting-code-metrics-issues.md)。  
+    > 在某些情況下，循環複雜度中方法的計算[!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)]與舊版不同。 如需詳細資訊，請參閱 「 變更在 Visual Studio 2010 程式碼複雜度計算區段 」 的[疑難排解程式碼度量問題](../code-quality/troubleshooting-code-metrics-issues.md)。  
   
 - **繼承深度**– 指出類別階層的根擴充的類別定義的數目。 更深的階層更加困難可能了解特定的方法和欄位定義或 / 及重新定義。  
   

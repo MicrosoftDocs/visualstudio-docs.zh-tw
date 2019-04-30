@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 085e5ae408155227c1d60e312b7e9623be2e3897
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: afbde92cd666e0e67b1e70b0b4899c09d8b5b3e7
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60064449"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63411075"
 ---
 # <a name="walkthrough-add-features-to-a-custom-editor"></a>逐步解說：將功能加入至自訂編輯器
 建立自訂編輯器之後，您可以加入更多的功能。
@@ -49,7 +49,7 @@ ms.locfileid: "60064449"
     2. 若要回應外部檔案變更，實作<xref:Microsoft.VisualStudio.Shell.Interop.IVsFileChangeEx>和<xref:Microsoft.VisualStudio.Shell.Interop.IVsDocDataFileChangeControl>編輯器的文件資料物件。
 
         > [!NOTE]
-        >  呼叫`QueryService`上<xref:Microsoft.VisualStudio.Shell.Interop.SVsFileChangeEx>若要取得的指標`IVsFileChangeEx`。
+        > 呼叫`QueryService`上<xref:Microsoft.VisualStudio.Shell.Interop.SVsFileChangeEx>若要取得的指標`IVsFileChangeEx`。
 
 7. 協調與原始程式碼控制的文件編輯事件。 請依照下列步驟：
 
@@ -136,7 +136,7 @@ ms.locfileid: "60064449"
    <xref:Microsoft.VisualStudio.Shell.Interop.IOleInPlaceComponent>
 
   > [!NOTE]
-  >  `IOleInPlaceComponent`介面用來避免 OLE 2 功能表合併。
+  > `IOleInPlaceComponent`介面用來避免 OLE 2 功能表合併。
 
    您`IOleCommandTarget`實作會處理命令這類**剪下**，**複製**，和**貼上**。 實作時`IOleCommandTarget`，決定您的編輯器的值需要有自己 *.vsct*檔案，以定義自己的命令功能表結構或者它可以實作所定義的標準命令[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]。 通常，編輯器使用和擴充 IDE 的功能表，然後定義自己的工具列。 不過，它通常是所需的編輯器來定義它自己特定的命令，除了使用 IDE 的標準命令集。 您的編輯器必須宣告它會使用標準命令，並接著定義任何新的命令、 內容、 最上層的功能表中功能表和工具列 *.vsct*檔案。 如果您建立就地啟用編輯器時，實作<xref:Microsoft.VisualStudio.Shell.Interop.IOleInPlaceComponent>，並定義編輯器中的功能表和工具列 *.vsct*而不是使用 OLE 2 功能表合併的檔案。
 

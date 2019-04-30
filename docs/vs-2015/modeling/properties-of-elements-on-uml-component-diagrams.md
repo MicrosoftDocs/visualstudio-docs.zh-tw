@@ -14,12 +14,12 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: f5fc99de05ef040db8c4560f9f6623081018a556
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: c7f3f30d08fb62defec5e783da286e968a6b17c9
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58943309"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444426"
 ---
 # <a name="properties-of-elements-on-uml-component-diagrams"></a>UML 元件圖中的項目屬性
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,16 +27,16 @@ ms.locfileid: "58943309"
 在 UML 元件圖中，圖表上的每個項目都會有屬性。 若要查看項目的屬性，以滑鼠右鍵按一下的項目在圖表上或在**UML 模型總管**，然後按一下**屬性**。 屬性會出現在**屬性**視窗。  
   
 > [!NOTE]
->  本主題有關 UML 元件圖中的項目屬性。 如需如何閱讀 UML 元件圖的詳細資訊，請參閱[UML 元件圖：參考資料](../modeling/uml-component-diagrams-reference.md)。 如需如何繪製 UML 元件圖的詳細資訊，請參閱[UML 元件圖：指導方針](../modeling/uml-component-diagrams-guidelines.md)。  
+> 本主題有關 UML 元件圖中的項目屬性。 如需如何閱讀 UML 元件圖的詳細資訊，請參閱[UML 元件圖：參考資料](../modeling/uml-component-diagrams-reference.md)。 如需如何繪製 UML 元件圖的詳細資訊，請參閱[UML 元件圖：指導方針](../modeling/uml-component-diagrams-guidelines.md)。  
   
 ## <a name="properties-of-elements"></a>項目屬性  
   
 |屬性|預設|項目|描述|  
 |--------------|-------------|-------------|-----------------|  
-|**名稱**|預設名稱|全部|識別項目。|  
-|**限定的名稱**|命名空間::名稱|全部|唯一識別該項目。<br /><br /> 元件或類型的名稱前面會加上包含它之套件的限定名稱。<br /><br /> 組件或連接埠的名稱前面會加上擁有它之元件的限定名稱。|  
-|**工作項目**|0 associated|全部|與此項目相關聯的工作項目數。 若要關聯工作項目，請參閱[連結模型項目和工作項目](../modeling/link-model-elements-and-work-items.md)。|  
-|**描述**|(無)|全部|您可以在這裡設定項目的一般注意事項。|  
+|**名稱**|預設名稱|All|識別項目。|  
+|**限定的名稱**|命名空間::名稱|All|唯一識別該項目。<br /><br /> 元件或類型的名稱前面會加上包含它之套件的限定名稱。<br /><br /> 組件或連接埠的名稱前面會加上擁有它之元件的限定名稱。|  
+|**工作項目**|0 associated|All|與此項目相關聯的工作項目數。 若要關聯工作項目，請參閱[連結模型項目和工作項目](../modeling/link-model-elements-and-work-items.md)。|  
+|**描述**|(無)|All|您可以在這裡設定項目的一般注意事項。|  
 |**Color**|(類型的預設)|元件、組件、委派、組件組譯碼|圖案的色彩。 不像其他屬性，這是圖形的色彩，而不是圖形顯示的模型項目色彩。|  
 |**間接具現化**|True|元件|元件只以設計成品方式存在。 在執行階段，只有其組件存在。|  
 |**為抽象**|False|元件|元件定義只能用來做為一般化，其他元件可以從中特製化。|  

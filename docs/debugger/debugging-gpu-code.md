@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e1de8b942b64de56b93b2fece3f46b23413b6981
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: ea3286c2d4ae27afc7422700bd4f745ab28520fa
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60038277"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63399431"
 ---
 # <a name="debugging-gpu-code"></a>偵錯 GPU 程式碼
 您可以對圖形處理器 (GPU) 上執行的 C++ 程式碼進行偵錯。 在 Visual Studio 中的 GPU 偵錯支援包括競爭偵測、啟動處理序和附加至處理序，以及整合到偵錯視窗中。
@@ -27,7 +27,7 @@ ms.locfileid: "60038277"
  [!INCLUDE[win7](../debugger/includes/win7_md.md)]、[!INCLUDE[win8](../debugger/includes/win8_md.md)]、[!INCLUDE[winsvr08_r2](../debugger/includes/winsvr08_r2_md.md)] 和 [!INCLUDE[winserver8](../debugger/includes/winserver8_md.md)] 都支援偵錯。 如需在軟體模擬器上偵錯，則需要使用 [!INCLUDE[win8](../debugger/includes/win8_md.md)] 或 [!INCLUDE[winserver8](../debugger/includes/winserver8_md.md)]。 如需在硬體上偵錯，您必須安裝圖形卡的驅動程式。 並非所有硬體廠商都實作所有偵錯工具功能。 請參閱廠商文件以了解限制。
 
 > [!NOTE]
->  若獨立硬體廠商想要支援 Visual Studio 中的 GPU 偵錯，則必須建立實作 VSD3DDebug 介面並且以自己的驅動程式為目標的 DLL。
+> 若獨立硬體廠商想要支援 Visual Studio 中的 GPU 偵錯，則必須建立實作 VSD3DDebug 介面並且以自己的驅動程式為目標的 DLL。
 
 ## <a name="configuring-gpu-debugging"></a>設定 GPU 偵錯
  偵錯工具無法在相同應用程式執行時中斷 CPU 程式碼和 GPU 程式碼。 根據預設，偵錯工具會中斷 CPU 程式碼。 若要對 GPU 程式碼進行偵錯，請使用這兩個步驟的其中一個：
@@ -80,6 +80,6 @@ ms.locfileid: "60038277"
  C++ AMP 計算可能會超過 Windows 逾時偵測與復原程序 (TDR) 所設定的預設時間間隔。 發生這種情況時，計算就會取消，而且資料將會遺失。 如需詳細資訊，請參閱 [Handling TDRs in C++ AMP](http://go.microsoft.com/fwlink/p/?LinkId=249154) (在 C++ AMP 中處理 TDR)。
 
 ## <a name="see-also"></a>另請參閱
-- [逐步解說：偵錯C++AMP 應用程式](/cpp/parallel/amp/walkthrough-debugging-a-cpp-amp-application)
+- [逐步解說：針對 C++ AMP 應用程式進行偵錯](/cpp/parallel/amp/walkthrough-debugging-a-cpp-amp-application)
 - [C++ 偵錯組態的專案設定](../debugger/project-settings-for-a-cpp-debug-configuration.md)
 - [在 Visual Studio 中開始 GPU 偵錯](http://go.microsoft.com/fwlink/p/?LinkId=255381)

@@ -9,12 +9,12 @@ caps.latest.revision: 13
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 5873033e160a8354db70565606dcb399da13e073
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: c43f392cddfd5ea36180d9b2675db82469f86ce0
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60109519"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446084"
 ---
 # <a name="remote-debugging-aspnet-on-a-remote-iis-computer"></a>遠端偵錯 IIS 的遠端電腦上的 ASP.NET
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -63,7 +63,7 @@ ms.locfileid: "60109519"
 1. 將 ASP.NET 專案目錄從 Visual Studio 電腦複製到在 Windows 伺服器電腦上的本機目錄 (我們將稱之為 **C:\Publish**)。 您可以手動複製專案，請使用 Xcopy、 Web Deploy、 Robocopy、 Powershell 或其他選項。
 
     > [!CAUTION]
-    >  如果您需要對程式碼或重建的變更，您必須重新發行，並重複此步驟。 您複製到遠端電腦的可執行檔必須完全符合您的本機來源和符號。
+    > 如果您需要對程式碼或重建的變更，您必須重新發行，並重複此步驟。 您複製到遠端電腦的可執行檔必須完全符合您的本機來源和符號。
 1. 請確定 web.config 檔案會列出 .NET Framework 的正確版本。  比方說，Windows Server 2008 R2 上的預設安裝的.NET Framework 版本是 4.0.30319，但是我們建立的是 ASP.NET 4.5.2 版本。 如果 ASP.NET 4.0 應用程式正在執行 Windows Server 電腦上，您需要變更的版本：
   
     ```xml

@@ -13,12 +13,12 @@ ms.assetid: d2d4b78e-a2dd-4217-97a6-ab648fd2ee2f
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: cbca803b7caaef3e5a5ae4cbc46fc8e850a1575b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 25c60bc42895a0527f1638dada5a28a1631314e0
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58941316"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63417876"
 ---
 # <a name="idebugprogramnode2detachdebuggerv7"></a>IDebugProgramNode2::DetachDebugger_V7
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -43,7 +43,7 @@ int DetachDebugger_V7 ();
 ## <a name="remarks"></a>備註  
   
 > [!WARNING]
->  至於[!INCLUDE[vsprvslong](../../../includes/vsprvslong-md.md)]，這個方法已不再使用，且應該一律傳回`E_NOTIMPL`。  
+> 至於[!INCLUDE[vsprvslong](../../../includes/vsprvslong-md.md)]，這個方法已不再使用，且應該一律傳回`E_NOTIMPL`。  
   
  偵錯工具意外結束時，會呼叫這個方法。 呼叫這個方法時，DE 應該繼續程式，如同使用者已從它中斷連結。 應該不傳送任何偵錯事件。 程式應該要在其所在之可附加的偵錯工具的另一個執行個體的狀態。  
   

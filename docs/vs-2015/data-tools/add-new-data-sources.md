@@ -19,12 +19,12 @@ caps.latest.revision: 60
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: db550b2a99f12190cac0bde74859191c2943b2d5
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 77b962d9ab4594bba5be42100a46e67e1c861384
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60102753"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445760"
 ---
 # <a name="add-new-data-sources"></a>新增新資料來源
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,7 +42,7 @@ ms.locfileid: "60102753"
 - 類別或您方案中的集合。  
   
 > [!NOTE]
->  如果您不使用資料繫結功能，資料集、 Entity Framework、 LINQ to SQL、 WCF、 或 SharePoint，「 資料來源 」 的概念不適用。 只要直接連接到資料庫所使用的 SQLCommand 物件，並直接與資料庫通訊。  
+> 如果您不使用資料繫結功能，資料集、 Entity Framework、 LINQ to SQL、 WCF、 或 SharePoint，「 資料來源 」 的概念不適用。 只要直接連接到資料庫所使用的 SQLCommand 物件，並直接與資料庫通訊。  
   
  您建立和編輯資料來源，使用**資料來源組態精靈**Windows Form 或 Windows Presentation Foundation 應用程式中。 Entity Framework 的第一次建立實體類別，並選取，以啟動精靈**專案** > **加入新的資料來源**（本文稍後詳細說明）。  
   
@@ -84,7 +84,7 @@ ms.locfileid: "60102753"
 - Web 服務。  
   
     > [!NOTE]
-    >  在出現的項目**Zdroje dat**視窗均依存於服務所傳回的資料。 部分服務所提供的資訊可能不足，無法供 [資料來源組態精靈] 建立可繫結的物件。 例如，如果服務傳回不具類型的資料集，沒有任何項目會出現在**Zdroje dat**視窗中，當您完成精靈。 這是因為不具類型資料集不提供結構描述，因此精靈沒有足夠的資訊來建立資料來源。  
+    > 在出現的項目**Zdroje dat**視窗均依存於服務所傳回的資料。 部分服務所提供的資訊可能不足，無法供 [資料來源組態精靈] 建立可繫結的物件。 例如，如果服務傳回不具類型的資料集，沒有任何項目會出現在**Zdroje dat**視窗中，當您完成精靈。 這是因為不具類型資料集不提供結構描述，因此精靈沒有足夠的資訊來建立資料來源。  
   
 ## <a name="data-source-for-an-object"></a>物件的資料來源  
  您可以從任何公開 （expose） 執行的一或多個公用屬性的物件建立資料來源**資料來源組態精靈**，然後選取**物件**資料來源類型。 物件的所有公用屬性會顯示在**Zdroje dat**視窗。   如果您使用 Entity Framework，並產生一個模型，這是您可以在此找到的實體類別，將會為您的應用程式的資料來源。  
@@ -94,10 +94,10 @@ ms.locfileid: "60102753"
  如果您想要繫結至組件或未出現在 [樹狀] 檢視的專案中的物件，請按一下**加入參考**並用**Add Reference Dialog Box**加入至組件或專案的參考。 加入參考之後，組件或專案會加入 [樹狀] 檢視中。  
   
 > [!NOTE]
->  若要建置的專案，然後物件才會出現在樹狀檢視中包含您的物件。  
+> 若要建置的專案，然後物件才會出現在樹狀檢視中包含您的物件。  
   
 > [!NOTE]
->  若要支援拖放資料繫結物件實作<xref:System.ComponentModel.ITypedList>或<xref:System.ComponentModel.IListSource>介面都必須有預設建構函式。 否則，Visual Studio 無法具現化的資料來源物件，而且當您將項目拖曳至設計介面，它會顯示錯誤。  
+> 若要支援拖放資料繫結物件實作<xref:System.ComponentModel.ITypedList>或<xref:System.ComponentModel.IListSource>介面都必須有預設建構函式。 否則，Visual Studio 無法具現化的資料來源物件，而且當您將項目拖曳至設計介面，它會顯示錯誤。  
   
 ## <a name="data-source-for-a-sharepoint-list"></a>如需 SharePoint 清單的資料來源  
  您也可以執行從 SharePoint 清單建立資料來源**資料來源組態精靈**，然後選取**SharePoint**資料來源類型。 SharePoint 會將資料公開透過[!INCLUDE[ssAstoria](../includes/ssastoria-md.md)]，因此建立 SharePoint 資料來源是從服務建立資料來源相同。 選取**SharePoint**中的項目**資料來源組態精靈**開啟**加入服務參考**對話方塊中，您連接至 SharePoint 資料服務藉由指向 SharePoint 伺服器。  這需要 SharePoint SDK。  

@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: b464fd4e8c1748adf50e9997dbbac553288043da
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 61e71f31ce887c7e1ea9ec57b0aa3f24a45be364
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60088518"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63414286"
 ---
 # <a name="walkthrough-insert-text-into-a-document-from-an-actions-pane"></a>逐步解說：從 [動作] 窗格中的文件中插入文字
   本逐步解說示範如何建立 Microsoft Office Word 文件中的 [動作] 窗格。 [動作] 窗格包含兩個控制項收集輸入，然後將文字傳送到文件。
@@ -34,7 +34,7 @@ ms.locfileid: "60088518"
 - [動作] 窗格開啟時顯示的應用程式。
 
 > [!NOTE]
->  在下列指示的某些 Visual Studio 使用者介面項目中，您的電腦可能會顯示不同的名稱或位置。 您所擁有的 Visual Studio 版本以及使用的設定會決定這些項目。 如需詳細資訊，請參閱[將 Visual Studio IDE 個人化](../ide/personalizing-the-visual-studio-ide.md)。
+> 在下列指示的某些 Visual Studio 使用者介面項目中，您的電腦可能會顯示不同的名稱或位置。 您所擁有的 Visual Studio 版本以及使用的設定會決定這些項目。 如需詳細資訊，請參閱[將 Visual Studio IDE 個人化](../ide/personalizing-the-visual-studio-ide.md)。
 
 ## <a name="prerequisites"></a>必要條件
  您需要下列元件才能完成此逐步解說：
@@ -78,7 +78,7 @@ ms.locfileid: "60088518"
 2. 選取的字詞**名稱**，而不選取段落標記，然後按一下**確定**。
 
     > [!NOTE]
-    >  段落標記應該是外部書籤。 如果文件中看不到段落標記，按一下**工具**功能表上，指向**Microsoft Office Word Tools** ，然後按一下 **選項**。 按一下 [**檢視**索引標籤，然後選取**段落標記**中的核取方塊**格式化標記**一節**選項**] 對話方塊。
+    > 段落標記應該是外部書籤。 如果文件中看不到段落標記，按一下**工具**功能表上，指向**Microsoft Office Word Tools** ，然後按一下 **選項**。 按一下 [**檢視**索引標籤，然後選取**段落標記**中的核取方塊**格式化標記**一節**選項**] 對話方塊。
 
 3. 在 **屬性**視窗中，變更**名稱**屬性**Bookmark1**至**showName**。
 

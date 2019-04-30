@@ -19,12 +19,12 @@ caps.latest.revision: 65
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 3dd58013cb26e8533a5b898a0e5cd1df3be1b262
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: e0352f98fe4d053f8c90d1b2c8f910e73cde23a6
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59649052"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441505"
 ---
 # <a name="compile-page-project-designer-visual-basic"></a>專案設計工具、編譯頁 (Visual Basic)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -39,7 +39,7 @@ ms.locfileid: "59649052"
  下列設定可讓您選取要顯示或修改的組態和平台。  
   
 > [!NOTE]
->  使用簡化的組建組態時，專案系統會決定要建置偵錯或發行版本。 因此，不會顯示 [組態] 和 [平台] 清單。 如需詳細資訊，請參閱[偵錯和發行專案組態](http://msdn.microsoft.com/0440b300-0614-4511-901a-105b771b236e)。  
+> 使用簡化的組建組態時，專案系統會決定要建置偵錯或發行版本。 因此，不會顯示 [組態] 和 [平台] 清單。 如需詳細資訊，請參閱[偵錯和發行專案組態](http://msdn.microsoft.com/0440b300-0614-4511-901a-105b771b236e)。  
   
  **組態**  
  指定要顯示或修改的組態設定。 設定是 [偵錯] (預設值)、[發行] 或 [所有組態]。 如需詳細資訊，請參閱 <<c0> [ 偵錯和發行專案組態](http://msdn.microsoft.com/0440b300-0614-4511-901a-105b771b236e)和[How to:建立及編輯組態](../../ide/how-to-create-and-edit-configurations.md)。  

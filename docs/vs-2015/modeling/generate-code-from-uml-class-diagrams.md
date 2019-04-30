@@ -16,12 +16,12 @@ caps.latest.revision: 53
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 020dd35d225d8629a8061d1a74b234b62960c830
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: c95a361f00e9b744aa78f443ad7c173209a5a0bd
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60056155"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63442421"
 ---
 # <a name="generate-code-from-uml-class-diagrams"></a>從 UML 類別圖產生程式碼
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -101,7 +101,7 @@ ms.locfileid: "60056155"
 2. 在 [**屬性**] 視窗中，選擇的下拉式箭號**造型**屬性，，然後選取您想要套用的造型核取方塊。  
 
    > [!TIP]
-   >  如果 C# 造型並未出現，請針對此模型或是包含您有興趣之模型項目的封裝來啟用 C# 設定檔。 選取封裝或模型中的根**UML 模型總管**。 然後在**屬性**] 視窗中，選擇**設定檔**，然後啟用 [C# 設定檔。  
+   > 如果 C# 造型並未出現，請針對此模型或是包含您有興趣之模型項目的封裝來啟用 C# 設定檔。 選取封裝或模型中的根**UML 模型總管**。 然後在**屬性**] 視窗中，選擇**設定檔**，然後啟用 [C# 設定檔。  
 
 3. 依序展開**造型**屬性，以查看您可以設定的其他屬性。  
 
@@ -144,7 +144,7 @@ ms.locfileid: "60056155"
  可以將一個以上的範本套用至模型項目。 您可以從每一個模型項目產生一個以上的檔案。  
 
 > [!NOTE]
->  附加至模型根的繫結會當做模型內所有項目的預設值。 若要查看這些預設繫結，請開啟**UML 模型總管**。 開啟模型專案的捷徑功能表，然後選擇**設定的程式碼產生**。 或者，在 [UML 模型總管] 中選取模型的根。 在 [屬性] 視窗中，選擇 **[...]** 中**文字範本繫結**屬性。 直到您已使用的繫結不會出現**產生的程式碼**至少一次命令。 範本繫結無法附加至圖表。  
+> 附加至模型根的繫結會當做模型內所有項目的預設值。 若要查看這些預設繫結，請開啟**UML 模型總管**。 開啟模型專案的捷徑功能表，然後選擇**設定的程式碼產生**。 或者，在 [UML 模型總管] 中選取模型的根。 在 [屬性] 視窗中，選擇 **[...]** 中**文字範本繫結**屬性。 直到您已使用的繫結不會出現**產生的程式碼**至少一次命令。 範本繫結無法附加至圖表。  
 
 #### <a name="to-attach-text-template-bindings-to-a-package-or-other-model-element"></a>若要將文字範本繫結附加至封裝或其他模型項目  
 

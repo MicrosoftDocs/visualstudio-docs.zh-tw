@@ -9,12 +9,12 @@ caps.latest.revision: 15
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 91ccf1637d6b8a1f612031c8d59deeef8e07efc7
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 575f17c641eb057dc01fb3302098bd9f8b47f9c5
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60077351"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63431618"
 ---
 # <a name="troubleshooting-performance-tools-issues"></a>效能工具問題疑難排解
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -48,4 +48,4 @@ ms.locfileid: "60077351"
 - 在程式碼剖析資料 (.vsp) 檔案中內嵌符號資訊。 如需詳細資訊，請參閱[使用效能資料檔案儲存符號資訊](../profiling/saving-symbol-information-with-performance-data-files.md)。  
   
 > [!NOTE]
->  分析引擎所需的 .pdb 檔版本要和編譯的應用程式檔案相同。 來自舊版或更新版本的應用程式檔案的 .pdb 檔不適用。
+> 分析引擎所需的 .pdb 檔版本要和編譯的應用程式檔案相同。 來自舊版或更新版本的應用程式檔案的 .pdb 檔不適用。

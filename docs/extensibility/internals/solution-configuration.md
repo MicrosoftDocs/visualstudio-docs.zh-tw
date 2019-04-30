@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0d8da1446682c36549440e9b9e38ce110e0b35ba
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: e2683c3a2ea80aad341b7fab4fb35d13ea5379c7
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56614817"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63429043"
 ---
 # <a name="solution-configuration"></a>方案組態
 方案組態儲存方案層級屬性。 這些指示的行為**開始**(F5) 索引鍵和**建置**命令。 根據預設，這些命令會建置，並開始偵錯組態。 這兩個命令的方案組態的內容中執行。 這表示使用者可以預期 F5 來啟動和任何使用中方案已透過設定的組建。 環境被設計來建置和執行時，最佳化解決方案，而不是專案中。
@@ -23,7 +23,7 @@ ms.locfileid: "56614817"
  標準的 Visual Studio 工具列包含 [開始] 按鈕和方案組態下拉式清單右邊的 [開始] 按鈕。 這份清單可讓使用者選擇在按下 F5 時要啟動的組態，建立自己的方案組態，或編輯現有的組態。
 
 > [!NOTE]
->  沒有擴充性介面來建立或編輯方案組態。 您必須使用`DTE.SolutionBuilder`。 不過，有擴充性 Api 用於管理方案的組建。 如需詳細資訊，請參閱<xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionBuildManager2>。
+> 沒有擴充性介面來建立或編輯方案組態。 您必須使用`DTE.SolutionBuilder`。 不過，有擴充性 Api 用於管理方案的組建。 如需詳細資訊，請參閱<xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionBuildManager2>。
 
  以下是如何實作您的專案類型所支援的解決方案組態：
 

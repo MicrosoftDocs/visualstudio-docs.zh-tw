@@ -11,12 +11,12 @@ caps.latest.revision: 14
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 4ade2b369cd1c9e0371acacfcd63b06a2d89e58a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 36555d9b00c9aff3f594ae2217afe8434bb41542
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60066700"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63442746"
 ---
 # <a name="how-to-start-spy"></a>HOW TO：啟動 Spy++
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,7 +26,7 @@ ms.locfileid: "60066700"
  當您啟動 Spy + + 中，如果會顯示訊息要求權限對電腦進行變更，請按一下**是**。  
   
 > [!NOTE]
->  您可以執行 Spy + + 的只有一個執行的個體。 如果您嘗試執行另一個執行個體，它只會導致目前正在執行的執行個體，以取得焦點。  
+> 您可以執行 Spy + + 的只有一個執行的個體。 如果您嘗試執行另一個執行個體，它只會導致目前正在執行的執行個體，以取得焦點。  
   
 ### <a name="to-start-spy-from-visual-studio"></a>若要從 Visual Studio 啟動 Spy + +  
   
@@ -35,7 +35,7 @@ ms.locfileid: "60066700"
      Spy + + 會獨立執行之後您將它啟動,，因為您可以關閉 Visual Studio。  
   
     > [!NOTE]
-    >  當您使用 Spy + + 記錄訊息時，它可能會造成作業系統執行速度變慢。  
+    > 當您使用 Spy + + 記錄訊息時，它可能會造成作業系統執行速度變慢。  
   
 ### <a name="to-start-spy-at-a-command-prompt"></a>若要在命令提示字元啟動 Spy + +  
   

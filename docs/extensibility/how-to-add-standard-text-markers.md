@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 021e5f39f3296a475795b991283e60aa518b98dc
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 53aece13887fc727e7b0b1497f9546ee7a2fe63b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60060081"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63415500"
 ---
 # <a name="how-to-add-standard-text-markers"></a>HOW TO：新增標準文字標記
 使用下列程序建立隨附的預設文字標記類型的其中一個[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]核心編輯器。
@@ -27,7 +27,7 @@ ms.locfileid: "60060081"
      在此方法呼叫中，指定標記類型，某個範圍的文字上，建立標記和<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClient>介面。 然後此方法會將讓指標回到新建立的文字標記中。 標記類型皆取自<xref:Microsoft.VisualStudio.TextManager.Interop.MARKERTYPE>列舉型別。 指定<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClient>介面，如果您想要收到標記事件的通知。
 
     > [!NOTE]
-    >  在主要 UI 執行緒上只能建立文字標記。 核心編輯器是要建立文字標記的文字緩衝的內容，而文字緩衝區不是安全執行緒。
+    > 在主要 UI 執行緒上只能建立文字標記。 核心編輯器是要建立文字標記的文字緩衝的內容，而文字緩衝區不是安全執行緒。
 
 ## <a name="add-a-custom-command"></a>新增自訂命令
  實作`IVsTextMarkerClient`介面，並提供給它的指標，從標記增強了數種方式的標記行為。 首先，這可讓您為您的標記提供提示，並執行命令。 這也可讓您接收事件通知，針對個別的標記，並透過標記建立自訂內容功能表。 若要將自訂命令新增至 [標記] 內容功能表使用下列程序。

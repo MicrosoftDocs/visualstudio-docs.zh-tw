@@ -9,12 +9,12 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 8773b9f80299c1a46b6a57506d09f9f4ca32b998
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: d56a36693d995687a2dddede3d60ada44c8d32bd
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60060770"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436193"
 ---
 # <a name="debugging-or-disabling-project-code-in-xaml-designer"></a>偵錯或停用 XAML 設計工具的專案程式碼
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -80,12 +80,12 @@ ms.locfileid: "60060770"
      您可以再次切換按鈕重新啟用專案程式碼。  
   
     > [!NOTE]
-    >  至於以 ARM 或 X64 處理器為目標的專案，Visual Studio 無法在設計工具中執行專案程式碼，所以停用設計工具中的 [停用專案程式碼]  按鈕。  
+    > 至於以 ARM 或 X64 處理器為目標的專案，Visual Studio 無法在設計工具中執行專案程式碼，所以停用設計工具中的 [停用專案程式碼]  按鈕。  
   
 - 無論哪個選項都會導致重新載入設計工具，然後停用所有相關聯專案的程式碼。  
   
     > [!NOTE]
-    >  停用專案程式碼會導致設計階段資料遺失。 另一個方法是偵錯在設計工具中執行的程式碼。  
+    > 停用專案程式碼會導致設計階段資料遺失。 另一個方法是偵錯在設計工具中執行的程式碼。  
   
 ## <a name="see-also"></a>另請參閱  
  [在 Visual Studio 和 Blend for Visual Studio 中設計 XAML](../designers/designing-xaml-in-visual-studio.md)

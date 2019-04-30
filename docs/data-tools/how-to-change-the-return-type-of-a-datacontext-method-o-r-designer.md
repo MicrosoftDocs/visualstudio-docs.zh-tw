@@ -8,18 +8,18 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 93d65574012d219d0f65d5b42600c75cf7a624fb
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 03e24c11e18f092823ad8dd8c4479b50e531b78b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60046705"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63402813"
 ---
 # <a name="how-to-change-the-return-type-of-a-datacontext-method-or-designer"></a>HOW TO：變更 DataContext 方法的傳回型別 (O/R 設計工具)
 傳回型別<xref:System.Data.Linq.DataContext>（根據預存程序或函式建立） 的方法有所不同卸除預存程序或函式中的地方**O/R Designer**。 如果將項目直接放入現有的實體類別，且預存程序或函式所傳回資料的結構描述符合實體類別的型態，則建立的 <xref:System.Data.Linq.DataContext> 方法會具有該實體類別的傳回型別。 如果您將項目放的空白區域**O/R Designer**、<xref:System.Data.Linq.DataContext>建立方法會傳回自動產生的型別。 您可以在將 <xref:System.Data.Linq.DataContext> 方法加入至方法窗格後，變更方法的傳回型別。 若要檢查或變更 <xref:System.Data.Linq.DataContext> 方法的傳回型別，請選取該方法，然後按一下 [屬性] 視窗中的 [傳回型別] 屬性。
 
 > [!NOTE]
->  您無法使用 [屬性] 視窗，將傳回型別設定為實體類別的 <xref:System.Data.Linq.DataContext> 方法還原成傳回自動產生的型別。 若要將 <xref:System.Data.Linq.DataContext> 方法還原成傳回自動產生的類型，則必須再次將原始資料庫物件拖曳至 **O/R 設計工具**。
+> 您無法使用 [屬性] 視窗，將傳回型別設定為實體類別的 <xref:System.Data.Linq.DataContext> 方法還原成傳回自動產生的型別。 若要將 <xref:System.Data.Linq.DataContext> 方法還原成傳回自動產生的類型，則必須再次將原始資料庫物件拖曳至 **O/R 設計工具**。
 
 [!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]
 

@@ -19,12 +19,12 @@ caps.latest.revision: 81
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: a6fe3d3f144b192ef14ff52c942c75d9edd1be85
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 41b3e662668967d07e2a304d589d498dd2c7b51d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60076207"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446099"
 ---
 # <a name="remote-debugging"></a>Remote Debugging
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -50,7 +50,7 @@ ms.locfileid: "60076207"
 2. 在下載頁面上，選擇符合您的作業系統 (x，x86、 x64 或 ARM 版本） 的工具版本，並下載遠端工具。
   
     > [!IMPORTANT]
-    >  我們建議您安裝最新的遠端工具版本符合您的 Visual Studio 版本。 不建議使用不相符的版本。  
+    > 我們建議您安裝最新的遠端工具版本符合您的 Visual Studio 版本。 不建議使用不相符的版本。  
     >   
     >  此外，您必須安裝具有相同的架構做為您想要將它安裝所在的作業系統的遠端工具。 換句話說，如果您想要偵錯遠端電腦執行 64 位元作業系統上的 32 位元應用程式，您就必須在遠端電腦上安裝 64 位元版本的遠端工具。  
   
@@ -145,7 +145,7 @@ ms.locfileid: "60076207"
    如需預設使用的連接埠號碼的清單，請參閱 < [Remote Debugger Port Assignments](../debugger/remote-debugger-port-assignments.md)。  
   
    > [!WARNING]
-  >  您可以選擇在 [非驗證] 模式下執行遠端工具，但非常不建議您使用這個模式。 在此模式中執行時不具有網路安全性。 只有在確定網路沒有面臨惡意或攻擊流量的風險時，才能選擇非驗證模式。
+  > 您可以選擇在 [非驗證] 模式下執行遠端工具，但非常不建議您使用這個模式。 在此模式中執行時不具有網路安全性。 只有在確定網路沒有面臨惡意或攻擊流量的風險時，才能選擇非驗證模式。
 
 ## <a name="bkmk_configureService"></a> （選擇性）設定遠端偵錯工具 as a service
  進行偵錯 ASP.NET 和其他伺服器環境中，您必須以系統管理員身分執行遠端偵錯工具或者，如果您想要一律執行中，以服務方式執行遠端偵錯工具。
@@ -221,7 +221,7 @@ ms.locfileid: "60076207"
 11. 在 Visual Studio 的電腦上，您應該會看到執行過程在中斷點停止。  
   
     > [!TIP]
-    >  或者，您可以另外執行一個步驟來部署檔案。 在 [方案總管] 中，以滑鼠右鍵按一下 [mymfc] 節點，然後選擇 [部署]。  
+    > 或者，您可以另外執行一個步驟來部署檔案。 在 [方案總管] 中，以滑鼠右鍵按一下 [mymfc] 節點，然後選擇 [部署]。  
   
     如果您有應用程式所使用的非程式碼檔案，您需要將它們包含在 Visual Studio 專案。 建立其他檔案的專案資料夾 (在**方案總管**，按一下**新增 / 新的資料夾**。)然後將檔案加入資料夾 (在**方案總管 中**，按一下**新增 / 現有項目**，然後選取檔案。)。 在每個檔案的 [屬性] 頁面上，將 [複製到輸出目錄] 設定為 [一律複製]。  
   
@@ -253,7 +253,7 @@ ms.locfileid: "60076207"
 10. 從 Visual Studio 電腦複製您剛才建置的可執行檔到遠端電腦上新建立的資料夾。
   
     > [!CAUTION]
-    >  不變更程式碼或重建 （或您必須重複此步驟）。 您複製到遠端電腦的可執行檔必須完全符合您的本機來源和符號。
+    > 不變更程式碼或重建 （或您必須重複此步驟）。 您複製到遠端電腦的可執行檔必須完全符合您的本機來源和符號。
 
     您可以手動複製專案，請使用 Xcopy、 Robocopy、 Powershell 或其他選項。
   

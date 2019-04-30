@@ -29,12 +29,12 @@ caps.latest.revision: 245
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 1601853a99ebea5ef687fbe5679fd74b45d5c381
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 1d74fc577044cd11ca161f099e2432fd03ecfad2
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60107693"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63440959"
 ---
 # <a name="map-dependencies-across-your-solutions"></a>對應方案之間的相依性
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -59,7 +59,7 @@ ms.locfileid: "60107693"
 - Visual Studio Professional:開啟 code map、 進行有限的編輯，以及巡覽程式碼。  
   
 > [!WARNING]
->  在您與使用 Visual Studio Professional 的其他人共用在 Visual Studio Enterprise 中建立的對應時，請確定對應中的所有項目都已成為可見的，例如隱藏項目、展開的群組和跨群組連結。  
+> 在您與使用 Visual Studio Professional 的其他人共用在 Visual Studio Enterprise 中建立的對應時，請確定對應中的所有項目都已成為可見的，例如隱藏項目、展開的群組和跨群組連結。  
   
  **您可以針對這些語言的程式碼對應相依性**：  
   
@@ -142,7 +142,7 @@ ms.locfileid: "60107693"
     或使用鍵盤選取項目，然後按下加號鍵 (**+**)。 若要瀏覽更深層的程式碼，請為命名空間、類型和成員執行相同的作業。  
   
    > [!TIP]
-   >  如需詳細資訊，使用程式碼的對應使用滑鼠、 鍵盤及觸控裝置，請參閱[瀏覽和重新整理 code map](../modeling/browse-and-rearrange-code-maps.md)。  
+   > 如需詳細資訊，使用程式碼的對應使用滑鼠、 鍵盤及觸控裝置，請參閱[瀏覽和重新整理 code map](../modeling/browse-and-rearrange-code-maps.md)。  
   
 5. 若要簡化對應，並將焦點放在個別部分，請選擇 Code Map 工具列上的 [篩選]  ，然後只選取您感興趣的節點和連結類型。 例如，您可以隱藏所有的方案資料夾和組件容器。  
   
@@ -157,7 +157,7 @@ ms.locfileid: "60107693"
     在此範例中，紫色連結是呼叫、虛線的連結是參考，而淺藍色連結則是欄位存取。 綠色的連結可以是繼承，或者可以是 *「彙總連結」* (aggregate link)，表示多個關聯性類型 (或 *「分類」*(category))。  
   
    > [!TIP]
-   >  如果看到綠色連結，可能不表示只有繼承關聯性。 也有可能是方法呼叫，但是繼承關聯性將其隱藏。 若要查看特定類型的連結，請使用 [篩選]  窗格中的核取方塊，隱藏您不感興趣的類型。  
+   > 如果看到綠色連結，可能不表示只有繼承關聯性。 也有可能是方法呼叫，但是繼承關聯性將其隱藏。 若要查看特定類型的連結，請使用 [篩選]  窗格中的核取方塊，隱藏您不感興趣的類型。  
   
 7. 若要取得項目或連結的詳細資訊，請將指標移到頂端，直到出現工具提示。 這會顯示程式碼項目或連結代表的類別分類的詳細資料。  
   
@@ -196,7 +196,7 @@ ms.locfileid: "60107693"
 2. 將您想要對應的組件或二進位檔從 Visual Studio 外部拖曳到對應上。 例如，從 Windows 檔案總管或檔案總管拖曳組件或二進位檔。  
   
 > [!NOTE]
->  只要您是以相同的使用者存取控制 (UAC) 權限等級執行它與 Visual Studio，就可以從 Windows 檔案總管或檔案總管拖曳組件或二進位檔。 例如，如果 UAC 已開啟，而您是以系統管理員身分執行 Visual Studio，那麼 Windows 檔案總管或檔案總管將會封鎖拖曳作業。 若要解決這個問題，請確定兩者都執行相同的權限等級，或關閉 UAC。  
+> 只要您是以相同的使用者存取控制 (UAC) 權限等級執行它與 Visual Studio，就可以從 Windows 檔案總管或檔案總管拖曳組件或二進位檔。 例如，如果 UAC 已開啟，而您是以系統管理員身分執行 Visual Studio，那麼 Windows 檔案總管或檔案總管將會封鎖拖曳作業。 若要解決這個問題，請確定兩者都執行相同的權限等級，或關閉 UAC。  
   
 ## <a name="SeeSpecificSource"></a> 查看特定相依性  
  例如，假設您有要在出現暫止變更的某些檔案中，執行程式碼檢閱。 若要查看這些變更中的相依性，您可以從那些檔案建立 Code Map。  
@@ -218,7 +218,7 @@ ms.locfileid: "60107693"
      您也可以從 [方案總管]、[類別檢視] 或 [物件瀏覽器] 將項目拖曳至空白的或現有的 Code Map。 若要建立空白的對應，請參閱 [建立空白的 Code Map](#GetStarted)。 若要包含項目的父階層，請按住 **CTRL** 鍵不放同時拖曳項目，或使用 Code Map 工具列上的 [包含父代]  按鈕，指定預設動作。  
   
     > [!NOTE]
-    >  當您從跨多個應用程式 (如 Windows Phone 或 Windows 市集) 共用的專案中加入項目時，這些項目會與目前作用中的應用程式專案出現在對應上。 如果您將內容變更為其他應用程式專案，並且從共用專案加入更多項目，這些項目現在會與新的作用中應用程式專案一起顯示。 您使用對應中項目執行的作業僅適用於共用相同內容的項目。  
+    > 當您從跨多個應用程式 (如 Windows Phone 或 Windows 市集) 共用的專案中加入項目時，這些項目會與目前作用中的應用程式專案出現在對應上。 如果您將內容變更為其他應用程式專案，並且從共用專案加入更多項目，這些項目現在會與新的作用中應用程式專案一起顯示。 您使用對應中項目執行的作業僅適用於共用相同內容的項目。  
   
 4. 若要瀏覽項目，請將其展開。 將滑鼠指標移至項目上方，然後按一下出現的＞形箭號 (向下箭號) 圖示。  
   
@@ -353,13 +353,13 @@ ms.locfileid: "60107693"
  Visual Studio 會將對應儲存為 .dgml 檔案，讓您可以和其他 Visual Studio Enterprise 和 Visual Studio Professional 的使用者共用。  
   
 > [!NOTE]
->  在您與 Visual Studio Professional 使用者共用對應之前，請展開所有群組，顯示隱藏的節點和跨群組連結，並擷取任何您希望其他人在對應看到的已刪除節點。 否則，其他使用者就無法看到這些項目。  
+> 在您與 Visual Studio Professional 使用者共用對應之前，請展開所有群組，顯示隱藏的節點和跨群組連結，並擷取任何您希望其他人在對應看到的已刪除節點。 否則，其他使用者就無法看到這些項目。  
 >   
->  若您儲存的對應是位於模型專案中，或此對應是從模型專案複製到另一個位置，就會發生下列錯誤：  
+> 若您儲存的對應是位於模型專案中，或此對應是從模型專案複製到另一個位置，就會發生下列錯誤：  
 >   
->  「無法將 *fileName* 儲存在專案目錄外。 不支援連結項目。」  
+> 「無法將 *fileName* 儲存在專案目錄外。 不支援連結項目。」  
 >   
->  Visual Studio 顯示錯誤，不過還是會建立儲存的版本。 若要避免此錯誤，請將對應建立在模型專案之外。 然後您可以將它儲存到您想要的位置。 只將檔案複製到方案中的另一個位置然後再嘗試儲存，這種做法不會有用。  
+> Visual Studio 顯示錯誤，不過還是會建立儲存的版本。 若要避免此錯誤，請將對應建立在模型專案之外。 然後您可以將它儲存到您想要的位置。 只將檔案複製到方案中的另一個位置然後再嘗試儲存，這種做法不會有用。  
   
 ### <a name="export-the-map-as-an-image-so-you-can-copy-it-into-other-applications-such-as-microsoft-word-or-powerpoint"></a>將對應匯出為影像，因此您可以將它複製到其他應用程式，例如 Microsoft Word 文件或 PowerPoint  
   

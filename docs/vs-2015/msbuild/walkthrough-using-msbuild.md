@@ -11,12 +11,12 @@ caps.latest.revision: 34
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: f03c7260899db9e463282e45ef5bc76badb8a483
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: b6e77934f8e565800eb4a7a753df4beb3b003fbb
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60082798"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445588"
 ---
 # <a name="walkthrough-using-msbuild"></a>逐步解說：使用 MSBuild
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -132,7 +132,7 @@ MSBuild 是 Microsoft 和 Visual Studio 的建置平台。 此逐步解說將介
  從 [Visual Studio 命令提示字元] 執行 MSBuild，以建置前述內容所定義的 HelloWorld 目標。 使用 /target 或 /t 命令列參數來選取目標。  
   
 > [!NOTE]
->  我們會在下列各節中，將 **Visual Studio 命令提示字元**稱為**命令視窗**。  
+> 我們會在下列各節中，將 **Visual Studio 命令提示字元**稱為**命令視窗**。  
   
 #### <a name="to-build-the-target"></a>建置目標  
   
@@ -154,12 +154,12 @@ MSBuild 是 Microsoft 和 Visual Studio 的建置平台。 此逐步解說將介
     ```  
   
 > [!NOTE]
->  如果您看到了 `The target "HelloWorld" does not exist in the project`，則您可能忘了在程式碼編輯器中儲存該專案檔。 請儲存檔案，然後再試一次。  
+> 如果您看到了 `The target "HelloWorld" does not exist in the project`，則您可能忘了在程式碼編輯器中儲存該專案檔。 請儲存檔案，然後再試一次。  
   
  藉由交替使用程式碼編輯器和命令視窗，您可以變更專案檔，並快速查看結果。  
   
 > [!NOTE]
->  如果您執行 msbuild 時未搭配使用 /t 命令參數，則 msbuild 會建置由 Project 項目的 DefaultTarget 屬性所指定的目標，在此案例中為 "Build"。 這會建置 Windows Form 應用程式 BuildApp.exe。  
+> 如果您執行 msbuild 時未搭配使用 /t 命令參數，則 msbuild 會建置由 Project 項目的 DefaultTarget 屬性所指定的目標，在此案例中為 "Build"。 這會建置 Windows Form 應用程式 BuildApp.exe。  
   
 ## <a name="build-properties"></a>組建屬性  
  組建屬性是會引導組建的名稱/值組。 專案檔頂端已經定義了數個組建屬性：  
@@ -227,7 +227,7 @@ $(PropertyName)
     ```  
   
 > [!NOTE]
->  如果您未看見這幾行，則您可能忘了在程式碼編輯器中儲存該專案檔。 請儲存檔案，然後再試一次。  
+> 如果您未看見這幾行，則您可能忘了在程式碼編輯器中儲存該專案檔。 請儲存檔案，然後再試一次。  
   
 ### <a name="conditional-properties"></a>條件式屬性  
  有條件地定義許多屬性 (例如 Configuration)，也就是 Condition 屬性會出現在屬性項目中。 只有當條件評估為 "true" 時，才能定義或重新定義條件式屬性。 請注意，未定義屬性的預設值是空字串。 例如，套用至物件的  
@@ -319,7 +319,7 @@ $(PropertyName)
  如需詳細資訊，請參閱[項目](../msbuild/msbuild-items.md)。  
   
 > [!NOTE]
->  檔案路徑會相對於包含 MSBuild 專案檔的資料夾。  
+> 檔案路徑會相對於包含 MSBuild 專案檔的資料夾。  
   
 ## <a name="examining-item-type-values"></a>檢查項目類型值  
  若要取得項目類型的值，請使用下列語法，其中 ItemType 為項目類型的名稱：  

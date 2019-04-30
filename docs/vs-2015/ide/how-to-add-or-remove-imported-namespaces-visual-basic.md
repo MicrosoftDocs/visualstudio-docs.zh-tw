@@ -15,12 +15,12 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 311fdca1d56133d85e7b6daa36fe8e4d3a50d5ad
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 5f660a7b457f8ba70439321d3eb619389e50fe97
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60065411"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445721"
 ---
 # <a name="how-to-add-or-remove-imported-namespaces-visual-basic"></a>HOW TO：新增或移除匯入的命名空間 (Visual Basic)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,7 +38,7 @@ ms.locfileid: "60065411"
 3. 在 [匯入的命名空間] 清單中，選取您要新增之命名空間的核取方塊。  
   
     > [!NOTE]
-    >  若要匯入，命名空間必須位在參考的元件中。 如果命名空間未出現在清單中，則您必須將參考新增至包含它的元件中。 如需詳細資訊，請參閱[NIB 如何：新增或移除參考使用加入參考對話方塊](http://msdn.microsoft.com/3bd75d61-f00c-47c0-86a2-dd1f20e231c9)。  
+    > 若要匯入，命名空間必須位在參考的元件中。 如果命名空間未出現在清單中，則您必須將參考新增至包含它的元件中。 如需詳細資訊，請參閱[NIB 如何：新增或移除參考使用加入參考對話方塊](http://msdn.microsoft.com/3bd75d61-f00c-47c0-86a2-dd1f20e231c9)。  
   
 ### <a name="to-remove-an-imported-namespace"></a>移除匯入的命名空間  
   
@@ -64,7 +64,7 @@ ms.locfileid: "60065411"
 4. 按一下 [新增使用者匯入] 按鈕，將命名空間新增至 [匯入的命名空間] 清單。  
   
     > [!NOTE]
-    >  如果命名空間符合清單中的現有命名空間，則會停用 [新增使用者匯入] 按鈕；您不能將匯入新增兩次。  
+    > 如果命名空間符合清單中的現有命名空間，則會停用 [新增使用者匯入] 按鈕；您不能將匯入新增兩次。  
   
 #### <a name="to-update-a-user-import"></a>更新使用者匯入  
   

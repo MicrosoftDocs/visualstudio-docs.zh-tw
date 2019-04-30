@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: d8f02fbff9ed727359adbc5db1b25ee14dbccb3a
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 8ac9340ea853a1852d039f05a3ecbb100845ab84
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56644441"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443550"
 ---
 # <a name="create-application-pages-for-sharepoint"></a>建立 SharePoint 相關應用程式頁面
   *應用程式頁面*是 ASP.NET 網頁，專為在 SharePoint 網站中使用。 應用程式頁面是 ASP.NET 網頁的特殊化的類型。 應用程式頁面和標準的 ASP.NET 網頁的主要差異是應用程式頁面包含與 SharePoint 主版頁面合併的內容。 主版頁面可讓應用程式頁面來做為站台的其他頁面共用相同的外觀和行為。
@@ -36,7 +36,7 @@ ms.locfileid: "56644441"
  應用程式頁面無法執行這些動作。 不過應用程式頁面會是頁面的最佳的類型，即可建立您若希望以包含自訂程式碼頁面。 雖然您可以在站台 頁面中加入自訂程式碼，程式碼時停止執行使用者自訂的頁面，藉由使用 SharePoint Designer 之類的工具。
 
 > [!NOTE]
->  Visual Studio 不提供範本，可協助您建立 SharePoint 網站的網站頁面。 如需詳細資訊，請參閱 < [SharePoint 頁面類型](http://go.microsoft.com/fwlink/?LinkID=211584)。
+> Visual Studio 不提供範本，可協助您建立 SharePoint 網站的網站頁面。 如需詳細資訊，請參閱 < [SharePoint 頁面類型](http://go.microsoft.com/fwlink/?LinkID=211584)。
 
 ## <a name="create-an-application-page"></a>建立應用程式頁面
  若要建立應用程式頁面上，新增**應用程式頁面**至 SharePoint 專案項目。 當您建立應用程式頁面時，Visual Studio 會加入至您的專案的下列資料夾：
@@ -58,7 +58,7 @@ ms.locfileid: "56644441"
  在 Visual Studio 中使用設計工具檢視中設計應用程式頁面的內容。 此設計工具隨即出現，當您在專案中開啟應用程式頁面 (按兩下它，或開啟其捷徑功能表，然後選擇**開啟**)，然後選擇**設計**底部的按鈕編輯器。
 
 > [!NOTE]
->  您可以設計頁面只能在**來源**設計工具的檢視。 **設計**設計工具檢視已停用應用程式頁面。
+> 您可以設計頁面只能在**來源**設計工具的檢視。 **設計**設計工具檢視已停用應用程式頁面。
 
  就像您會偵錯在 Visual Studio 中的其他 SharePoint 專案項目，您可以偵錯應用程式頁面。 當您啟動 Visual Studio 偵錯工具時，Visual Studio 會開啟 SharePoint 網站。
 

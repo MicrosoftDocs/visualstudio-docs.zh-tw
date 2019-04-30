@@ -12,18 +12,18 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ddeffb8d6421044db0f1e7bb6db63c3fa7e2119e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 29eb905a4852bf521ebee72a498b44edbdcef8df
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58943380"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445401"
 ---
 # <a name="systemactivities-tab-choose-toolbox-items-dialog-box"></a>系統活動索引標籤，選擇工具箱項目對話方塊
 此索引標籤**選擇工具箱項目** 對話方塊會顯示一份[!INCLUDE[wf](../includes/wf-md.md)]活動、 範本和項目可供您。 若要顯示這份清單，請選取**選擇工具箱項目**從**工具**功能表或以滑鼠右鍵按一下**工具箱**，然後選取**選擇的項目**以顯示**選擇工具箱項目**對話方塊中，然後選取其**System.Activities**  索引標籤。根據預設，此清單包含 System.Activities、 System.ServiceModel.Activities 及 System.Activities.Core.Presentation 組件; 的工作流程活動不過，只有系統提供顯示的活動和活動，顯示在其他組件透過新增**工具箱**依預設會核取。 最近新增的活動，會自動選取，並會出現在**工具箱**當您按下**確定**在對話方塊中。 此外，這些項目會出現在**工具箱**下新的類別對應到活動/項目/範本所在的命名空間。  
   
 > [!WARNING]
->  如果嘗試加入的組件並未包含任何工作流程活動，就會顯示錯誤對話方塊，說明該組件沒有包含任何活動。  
+> 如果嘗試加入的組件並未包含任何工作流程活動，就會顯示錯誤對話方塊，說明該組件沒有包含任何活動。  
   
  此對話方塊不受專案影響，因此**System.Activities**索引標籤會繼續顯示在獨立 XAML 或非工作流程專案類型。  
   

@@ -12,12 +12,12 @@ ms.assetid: ae9eb72b-f2aa-43b8-87ca-da19d2e78d17
 caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 398fa692e79b5cbe1e532cb51d7d23fc12fec0b4
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: c8ef097ed02ae90b03289e3a2f3a1ad3f0ad8618
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58930422"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446034"
 ---
 # <a name="idebugsymbolsearchevent2getsymbolsearchinfo"></a>IDebugSymbolSearchEvent2::GetSymbolSearchInfo
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -51,7 +51,7 @@ int GetSymbolSearchInfo(
  [in、 out]傳回字串，包含從模組的任何錯誤訊息。 如果沒有任何錯誤，此字串只會包含模組的名稱，但永遠不會是空白。  
   
 > [!NOTE]
->  [C + +]`pbstrDebugMessage`不可`NULL`，而且必須與釋放`SysFreeString`。  
+> [C++]`pbstrDebugMessage`不得`NULL`，而且必須與釋放`SysFreeString`。  
   
  `pdwModuleInfoFlags`  
  [out]從旗標的組合[MODULE_INFO_FLAGS](../../../extensibility/debugger/reference/module-info-flags.md)列舉，指出是否已載入任何符號。  

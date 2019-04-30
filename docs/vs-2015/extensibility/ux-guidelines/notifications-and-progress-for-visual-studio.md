@@ -8,12 +8,12 @@ ms.assetid: f0ef65e9-0f1f-45f4-9f25-6e2398691168
 caps.latest.revision: 7
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 3d31dcaaf450f21f2c1db6666e38ad048dfeaf12
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 8f17b875f0637883222a633cb1082ad24788d4c2
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60080185"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63431348"
 ---
 # <a name="notifications-and-progress-for-visual-studio"></a>通知和適用於 Visual Studio 的進度
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -421,7 +421,7 @@ private bool TryCreateInfoBarUI(IVsInfoBar infoBar, out IVsInfoBarUIElement uiEl
 - 內文件索引標籤
 
 > [!IMPORTANT]
->  可以定位資訊列提供給全域內容的相關訊息。 工具列和文件區域之間會出現此選項。 這因為這會導致 「 跳和 jerk 」 的問題不建議使用的 IDE，應該加以避免，除非絕對必要且適當。
+> 可以定位資訊列提供給全域內容的相關訊息。 工具列和文件區域之間會出現此選項。 這因為這會導致 「 跳和 jerk 」 的問題不建議使用的 IDE，應該加以避免，除非絕對必要且適當。
 
 #### <a name="placing-an-infobar-in-a-toolwindowpane"></a>資訊列置於 ToolWindowPane
  ToolWindowPane.AddInfoBar(IVsInfoBar) 方法可用來加入工具視窗中的資訊列。 此 API 可以將新增的 IVsInfoBar （哪些 InfoBarModel 為預設的實作），或 IVsUIElement。

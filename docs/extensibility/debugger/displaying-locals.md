@@ -11,16 +11,16 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ea6345ef56cec8e3a7d90ed964c320f96fdbcdcd
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.openlocfilehash: db7587ad6cd12c80d21caf38e7d35289e4782da3
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56711237"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63411261"
 ---
 # <a name="display-locals"></a>顯示 [區域變數]
 > [!IMPORTANT]
->  在 Visual Studio 2015 中，這種實作運算式評估工具已被取代。 實作 CLR 運算式評估工具的詳細資訊，請參閱[CLR 運算式評估工具](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators)並[Managed 運算式評估工具範例](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)。
+> 在 Visual Studio 2015 中，這種實作運算式評估工具已被取代。 實作 CLR 運算式評估工具的詳細資訊，請參閱[CLR 運算式評估工具](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators)並[Managed 運算式評估工具範例](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)。
 
  永遠執行的方法，也就是包含的方法或目前的方法內容中進行。 當執行暫停時，Visual Studio 會呼叫偵錯引擎 (DE) 取得一份本機變數和引數，統稱為方法的區域變數。 Visual Studio 會顯示這些區域變數和其值在**區域變數**視窗。
 
@@ -29,7 +29,7 @@ ms.locfileid: "56711237"
  DE 呼叫[EnumChildren](../../extensibility/debugger/reference/idebugproperty2-enumchildren.md)若要取得[IEnumDebugPropertyInfo2](../../extensibility/debugger/reference/ienumdebugpropertyinfo2.md)物件，它會篩選為傳回唯一的區域變數，並且列舉以產生一份[DEBUG_PROPERTY_INFO](../../extensibility/debugger/reference/debug-property-info.md)結構。 每個結構會包含名稱、 類型和區域變數的值。 類型和值會儲存為格式化的字串，適用於顯示。 名稱、 類型和值通常一起顯示在一行**區域變數**視窗。
 
 > [!NOTE]
->  **快速監看式**並**監看式**視窗也會顯示變數的名稱、 值和類型相同的格式。 不過，藉由呼叫以取得這些值[GetPropertyInfo](../../extensibility/debugger/reference/idebugproperty2-getpropertyinfo.md)而不是`IDebugProperty2::EnumChildren`。
+> **快速監看式**並**監看式**視窗也會顯示變數的名稱、 值和類型相同的格式。 不過，藉由呼叫以取得這些值[GetPropertyInfo](../../extensibility/debugger/reference/idebugproperty2-getpropertyinfo.md)而不是`IDebugProperty2::EnumChildren`。
 
 ## <a name="in-this-section"></a>本節內容
  [區域變數的範例實作](../../extensibility/debugger/sample-implementation-of-locals.md)使用範例來逐步完成實作區域變數的程序。

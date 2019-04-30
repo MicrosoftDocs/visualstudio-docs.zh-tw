@@ -10,18 +10,18 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f6c0d6928236c151e182c90056641432e4706952
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: 101bc22cd33b3438e0dc82542c20b1bb103cb617
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59651282"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63418682"
 ---
 # <a name="add-items-to-the-add-new-item-dialog-box"></a>將項目新增至 [加入新項目] 對話方塊
 加入項目至的程序**加入新項目**對話方塊開頭的登錄機碼。 下列登錄項目中所示**AddItemTemplates**一節包含可在哪一個項目中的目錄名稱與路徑**加入新項目**放 對話方塊。
 
 > [!NOTE]
->  資料表的正後方的程式碼片段包含其他資訊的登錄項目。
+> 資料表的正後方的程式碼片段包含其他資訊的登錄項目。
 
  本章節位於**HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\14.0Exp\Projects**。
 
@@ -42,7 +42,7 @@ ms.locfileid: "59651282"
 | Val SortPriority | REG_DWORD | 100 ([!INCLUDE[vcprx64](../../extensibility/internals/includes/vcprx64_md.md)]) | 判斷樹狀節點中顯示的檔案中的排序次序**加入新項目** 對話方塊。 |
 
 > [!NOTE]
->  Visual C# 和 Visual Basic 專案類型 GUID 如下所示：
+> Visual C# 和 Visual Basic 專案類型 GUID 如下所示：
 > - [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)]: {FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}
 > - [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)]: {F184B08F-C81C-45F6-A57F-5ABD9991F28F}
 
@@ -53,7 +53,7 @@ ms.locfileid: "59651282"
  不過，您沒有將所有項目在其中一個 *.vsdir*檔案。 您可以有一個 *.vsdir*檔案的目錄中的每個項目。 如需詳細資訊，請參閱 < [Wizard (.vsz) 檔](../../extensibility/internals/wizard-dot-vsz-file.md)並[範本目錄描述 (.vsdir) 檔案](../../extensibility/internals/template-directory-description-dot-vsdir-files.md)。
 
 > [!NOTE]
->  *.Vsdir*是選擇性的範本目錄中的檔案。 如果您只想要將專案項目放在目錄中，並顯示在**加入新項目** 對話方塊中，您可以將該檔案中指定的範本目錄置於**TemplatesDir**陳述式。 在右窗格中會顯示檔案**加入新項目**該專案的對話方塊。 不過，如果您想要顯示的檔案或圖示的當地語系化的標題，您必須包含至少一個 *.vsdir*範本目錄中的檔案。
+> *.Vsdir*是選擇性的範本目錄中的檔案。 如果您只想要將專案項目放在目錄中，並顯示在**加入新項目** 對話方塊中，您可以將該檔案中指定的範本目錄置於**TemplatesDir**陳述式。 在右窗格中會顯示檔案**加入新項目**該專案的對話方塊。 不過，如果您想要顯示的檔案或圖示的當地語系化的標題，您必須包含至少一個 *.vsdir*範本目錄中的檔案。
 
 ## <a name="group-project-items"></a>群組的專案項目
  如果您想要包含在資料夾中的樣板群組**加入新項目**對話方塊方塊樹狀目錄中，您必須使用項目範本根目錄底下的子目錄中。 當**加入新項目**對話方塊會顯示給使用者，他們也會看到子資料夾，並可以從中選取專案項目。

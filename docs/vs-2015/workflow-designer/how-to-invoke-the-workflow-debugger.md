@@ -9,12 +9,12 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 73bbfc4557324a221e993ed51c300b6924abd6c3
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: a3d5033bc9953aa00efb950eabce5e7346952f9d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60099516"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444150"
 ---
 # <a name="how-to-invoke-the-workflow-debugger"></a>HOW TO：叫用工作流程偵錯工具
 一般而言，偵錯工作流程的方式就如同偵錯以其他 Visual Studio 程式語言撰寫的程式。 您可以利用下列方式啟動工作流程偵錯工具：  
@@ -26,7 +26,7 @@ ms.locfileid: "60099516"
 - 使用遠端偵錯。 如需使用遠端偵錯資訊，請參閱[How to:啟用遠端偵錯](http://go.microsoft.com/fwlink/?LinkId=196257)。  
   
     > [!NOTE]
-    >  如果工作流程應用程式目標設為 x86 架構，而您的電腦執行 64 位元作業系統上裝載，則遠端偵錯將無法運作，除非[!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)]安裝在遠端電腦或目標工作流程應用程式變更為**任何 CPU**。  
+    > 如果工作流程應用程式目標設為 x86 架構，而您的電腦執行 64 位元作業系統上裝載，則遠端偵錯將無法運作，除非[!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)]安裝在遠端電腦或目標工作流程應用程式變更為**任何 CPU**。  
   
 ### <a name="stepping-through-code"></a>逐步執行程式碼  
   

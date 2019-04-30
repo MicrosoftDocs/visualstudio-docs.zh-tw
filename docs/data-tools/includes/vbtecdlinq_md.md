@@ -13,11 +13,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-ms.openlocfilehash: 5ecfb7f7c41347650e52273861b6e3fa42cbc97e
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: 1ef3c44323f6626ba62b869996663775e23ac0f6
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38944190"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62564848"
 ---
 LINQ to SQL

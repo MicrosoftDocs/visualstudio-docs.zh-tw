@@ -9,12 +9,12 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a4c170b533b1eadb60be2ec1ca5d5fe000c5b4d6
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 76a45297062b42b559f07867b20bdadac79cc082
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60055727"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63386849"
 ---
 # <a name="how-to-view-and-edit-code-by-using-peek-definition-altf12"></a>HOW TO：檢視和編輯程式碼使用查看定義 (alt+f12)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -24,7 +24,7 @@ ms.locfileid: "60055727"
  您可以搭配使用 C#、Visual Basic 和 C++ 程式碼與 [查看定義]。 在 Visual Basic 中，[預覽定義] 會針對沒有定義中繼資料的符號 (例如，內建的 .NET Framework 類型) 顯示 [物件瀏覽器] 的連結。  
   
 > [!IMPORTANT]
->  您無法在 Visual Studio 2013 的任何 Express 版本中使用這個命令。  
+> 您無法在 Visual Studio 2013 的任何 Express 版本中使用這個命令。  
   
 ## <a name="working-with-peek-definition"></a>使用查看定義  
   
@@ -76,7 +76,7 @@ ms.locfileid: "60055727"
     |在程式碼編輯器視窗和定義視窗之間切換|Shift+Esc|  
   
     > [!NOTE]
-    >  您也可以使用相同的鍵盤快速鍵，在 [查看定義] 視窗中編輯程式碼，就如同在 Visual Studio 中的其他位置使用。  
+    > 您也可以使用相同的鍵盤快速鍵，在 [查看定義] 視窗中編輯程式碼，就如同在 Visual Studio 中的其他位置使用。  
   
 ## <a name="see-also"></a>另請參閱  
  [產能的秘訣](../ide/productivity-tips-for-visual-studio.md)

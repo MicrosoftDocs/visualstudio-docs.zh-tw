@@ -13,12 +13,12 @@ caps.latest.revision: 13
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: ece5c23a04901eaf0c17e7dfbf59f1ce7c5ccfa2
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 3a7b3edb0262e3e2b4f0cde51b499e25b04aba51
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58939257"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63442902"
 ---
 # <a name="class-hierarchy-of-symbol-types"></a>符號類型的類別階層架構
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -46,7 +46,7 @@ ms.locfileid: "58939257"
 |[維度](../../debugger/debug-interface-access/dimension.md)|陣列維度的符號。|  
   
 > [!NOTE]
->  每個符號可以有屬性，保存相關的符號，以及其他符號的參考資訊。 在個別的符號主題中列出了這些屬性。  
+> 每個符號可以有屬性，保存相關的符號，以及其他符號的參考資訊。 在個別的符號主題中列出了這些屬性。  
   
 ## <a name="see-also"></a>另請參閱  
  [CV_access_e 列舉](../../debugger/debug-interface-access/cv-access-e.md)   

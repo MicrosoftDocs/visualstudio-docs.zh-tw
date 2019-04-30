@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 29ee2b487299351b2d71a9b495257a939fb59f6c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 162f8df09b1f6ce9372a57728d653d5d3c20a551
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60070143"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63415724"
 ---
 # <a name="register-the-program"></a>註冊計劃
 偵錯引擎已取得的連接埠之後，由[IDebugPort2](../../extensibility/debugger/reference/idebugport2.md)介面後，啟用要偵錯程式的下一個步驟是註冊的連接埠。 註冊之後，程式就會有可供偵錯由下列方式之一：
@@ -38,7 +38,7 @@ ms.locfileid: "60070143"
      下列範例會顯示啟動程式，並註冊與連接埠的偵錯引擎。
 
     > [!NOTE]
-    >  此程式碼範例不是唯一的方式來啟動，並繼續處理序;此程式碼是主要的註冊計劃與連接埠的範例。
+    > 此程式碼範例不是唯一的方式來啟動，並繼續處理序;此程式碼是主要的註冊計劃與連接埠的範例。
 
     ```cpp
     // This is an IDebugEngineLaunch2 method.

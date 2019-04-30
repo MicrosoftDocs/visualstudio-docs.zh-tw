@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4c4a5338422ce99b0bb5a1b8fa003652f3c68212
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.openlocfilehash: 97af3e1bcee89462b7060aaefa8f1fb452d2ab03
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56633667"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63400704"
 ---
 # <a name="idiasymbolgetlanguage"></a>IDiaSymbol::get_language
 擷取來源的語言。
@@ -39,8 +39,8 @@ HRESULT get_language ( 
  如果成功，則傳回`S_OK`; 否則傳回`S_FALSE`或錯誤碼。
 
 > [!NOTE]
->  傳回值為`S_FALSE`表示此屬性不適用於符號。
+> 傳回值為`S_FALSE`表示此屬性不適用於符號。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
 - [CV_CFL_LANG 列舉](../../debugger/debug-interface-access/cv-cfl-lang.md)

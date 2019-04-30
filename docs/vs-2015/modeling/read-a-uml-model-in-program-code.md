@@ -11,12 +11,12 @@ caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 48d70901a2d616031eeed197b639f3a7bb7336c3
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 37539ee6c031d88b9db279cc61214ac5e3077e76
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60092990"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63387674"
 ---
 # <a name="read-a-uml-model-in-program-code"></a>讀取程式碼中的 UML 模型
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -50,7 +50,7 @@ using (IModelingProjectReader projectReader =
   
  如果想要讀取圖表中的圖形，您必須先讀取專案，再讀取圖表。  
   
- 例如：  
+ 例如:   
   
 ```  
 using Microsoft.VisualStudio.ArchitectureTools.Extensibility.Presentation;   
@@ -74,7 +74,7 @@ foreach (string diagramFile in projectReader. DiagramFileNames)
  上節中的範例會在 Visual Studio 擴充功能中發揮作用。 在獨立應用程式中讀取模型是可能的，但是您必須在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 專案中加入一些參考。  
   
 > [!NOTE]
->  未來的產品版本可能會變更在獨立應用程式中讀取模型的詳細方式。 未來版本可能不提供目前版本可以存取的某些功能。  
+> 未來的產品版本可能會變更在獨立應用程式中讀取模型的詳細方式。 未來版本可能不提供目前版本可以存取的某些功能。  
   
 #### <a name="to-add-references-to-read-a-model-in-a-stand-alone-application"></a>加入參考以在獨立應用程式中讀取模型。  
   

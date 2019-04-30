@@ -13,12 +13,12 @@ caps.latest.revision: 44
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: d0b98d57500ad2115abfcbd229d29009afdda059
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 9fbdaf845d780935b238bac2ba2c2e7cb0c53b59
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60114221"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437820"
 ---
 # <a name="capturing-graphics-information"></a>擷取圖形資訊
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,7 +43,7 @@ ms.locfileid: "60114221"
 - 接下鍵盤上的 Print Screen 鍵。  
   
   > [!NOTE]
-  >  當應用程式在 [圖形診斷] 下執行時，PRINT SCREEN 鍵只能用來擷取圖形資訊的框架，而不會執行其一般功能。 此種狀況在停止擷取圖形資訊 (通常會藉由停止偵錯或正常結束) 之前都會保持有效狀態，即是程式焦點是在另一個應用程式上亦是如此。  
+  > 當應用程式在 [圖形診斷] 下執行時，PRINT SCREEN 鍵只能用來擷取圖形資訊的框架，而不會執行其一般功能。 此種狀況在停止擷取圖形資訊 (通常會藉由停止偵錯或正常結束) 之前都會保持有效狀態，即是程式焦點是在另一個應用程式上亦是如此。  
   
 - 在 Visual Studio 擷取介面中，選擇**擷取畫面格** 按鈕位於上方**診斷工作階段**時間表，或選擇大型**擷取框架**按鈕位於下方**每秒畫面格數**泳道和任何先前擷取的畫面格右邊。 下面的影像中會將這兩個按鈕反白顯示。  
   

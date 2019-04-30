@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 558ff5a36d172b8cd1fef0b811d1eaa920b90c6d
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55913872"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63009271"
 ---
 # <a name="rethrow-activity-designer"></a>Rethrow 活動設計工具
 
@@ -33,7 +33,7 @@ ms.locfileid: "55913872"
 
 下表顯示<xref:System.Activities.Statements.Rethrow>屬性，並說明它們在設計工具的使用方式：
 
-|屬性名稱|必要項|使用方式|
+|屬性名稱|必要|使用量|
 |-|--------------|-|
 |<xref:System.Activities.Activity.DisplayName%2A>|False|指定 <xref:System.Activities.Statements.Rethrow> 活動選用的易記名稱。 預設為 Rethrow。|
 

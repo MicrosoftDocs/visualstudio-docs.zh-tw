@@ -9,12 +9,12 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: eb5a9e6806c76cbb072090c35444d936ce50bb79
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: b589050c156e4c3d1e322bfa5996364016cbe38e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60087114"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446730"
 ---
 # <a name="walkthrough-debugging-a-text-template-that-accesses-a-model"></a>逐步解說：偵錯文字範本存取模型
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -22,7 +22,7 @@ ms.locfileid: "60087114"
 當您修改或新增特定領域語言方案中的文字範本時，您可能會發生錯誤時，引擎會將轉換原始程式碼或編譯產生的程式碼時的範本。 下列逐步解說會示範一些您可以進行偵錯文字範本的操作。  
   
 > [!NOTE]
->  如需文字範本在一般情況下，請參閱[程式碼產生和 T4 文字範本](../modeling/code-generation-and-t4-text-templates.md)。 如需有關偵錯文字範本的詳細資訊，請參閱[逐步解說：偵錯文字範本](http://msdn.microsoft.com/library/5c3fd3b7-c110-4e86-a22f-d5756be6b94f)。  
+> 如需文字範本在一般情況下，請參閱[程式碼產生和 T4 文字範本](../modeling/code-generation-and-t4-text-templates.md)。 如需有關偵錯文字範本的詳細資訊，請參閱[逐步解說：偵錯文字範本](http://msdn.microsoft.com/library/5c3fd3b7-c110-4e86-a22f-d5756be6b94f)。  
   
 ## <a name="creating-a-domain-specific-language-solution"></a>建立特定領域語言方案  
  在此程序中，您可以建立具有下列特性的特定領域語言解決方案：  
@@ -58,7 +58,7 @@ ms.locfileid: "60087114"
 1. DebugTest.tt 中的程式碼取代為下列程式碼：  
   
     > [!NOTE]
-    >  包含錯誤的程式碼。 介紹錯誤以進行偵錯。  
+    > 包含錯誤的程式碼。 介紹錯誤以進行偵錯。  
   
     ```csharp  
     <#@ template language="C#" inherits="Microsoft.VisualStudio.TextTemplating.VSHost.ModelingTextTransformation"#>  
@@ -122,7 +122,7 @@ ms.locfileid: "60087114"
 1. DebugTest.tt 中的程式碼取代為下列程式碼：  
   
     > [!NOTE]
-    >  包含錯誤的程式碼。 介紹錯誤以進行偵錯。  
+    > 包含錯誤的程式碼。 介紹錯誤以進行偵錯。  
   
     ```csharp  
     <#@ template language="C#" inherits="Microsoft.VisualStudio.TextTemplating.VSHost.ModelingTextTransformation"#>  

@@ -22,12 +22,12 @@ caps.latest.revision: 35
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e3361ba51607924ee0bd0701f6f2dddf12334f93
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 62cbbd63f38e3317b03b203b3ca1cadc2a17e0c3
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60090377"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63386104"
 ---
 # <a name="how-to-connect-to-data-in-a-service"></a>HOW TO：連線至服務中的資料
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,7 +37,7 @@ ms.locfileid: "60090377"
  完成精靈的詳細資訊，服務參考加入至專案並立即提供[資料來源視窗](http://msdn.microsoft.com/library/0d20f699-cc95-45b3-8ecb-c7edf1f67992)。  
   
 > [!NOTE]
->  [資料來源] 視窗中所顯示的項目，取決於服務所傳回的資訊。 部分服務所提供的資訊可能不足，無法供 [資料來源組態精靈] 建立可繫結的物件。 例如，如果服務傳回不具類型的資料集，然後顯示任何項目中**資料來源視窗**時正在完成精靈。 這是因為不具類型資料集不會提供結構描述，所以精靈沒有足夠的資訊來建立資料來源。  
+> [資料來源] 視窗中所顯示的項目，取決於服務所傳回的資訊。 部分服務所提供的資訊可能不足，無法供 [資料來源組態精靈] 建立可繫結的物件。 例如，如果服務傳回不具類型的資料集，然後顯示任何項目中**資料來源視窗**時正在完成精靈。 這是因為不具類型資料集不會提供結構描述，所以精靈沒有足夠的資訊來建立資料來源。  
   
  [!INCLUDE[note_settings_general](../includes/note-settings-general-md.md)]  
   
@@ -52,7 +52,7 @@ ms.locfileid: "60090377"
 4. （選擇性） 的新**命名空間**可以類型來取代預設的值。  
   
     > [!NOTE]
-    >  按一下 [**進階**來開啟[設定服務參考對話方塊]](../data-tools/configure-service-reference-dialog-box.md)。  
+    > 按一下 [**進階**來開啟[設定服務參考對話方塊]](../data-tools/configure-service-reference-dialog-box.md)。  
   
 5. 按一下 **確定**加入服務參考加入專案。  
   

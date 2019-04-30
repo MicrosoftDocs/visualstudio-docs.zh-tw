@@ -9,18 +9,18 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 531e723bbc7c1b288a73f1ea036cb24efcf8ce4a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 2b4677413fd06176136935e583073f611d1a127a
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60056106"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445184"
 ---
 # <a name="how-to-intercept-a-click-on-a-shape-or-decorator"></a>HOW TO：攔截圖形或裝飾項目上的點選
 下列程序示範如何攔截圖案或 decorator 上的圖示。 您可以攔截按一下、 按兩下、 拖曳，及其他筆勢，並讓回應項目。
 
 ## <a name="to-intercept-clicks-on-shapes"></a>若要攔截在圖形上的點選
- 在 Dsl 專案中產生的程式碼檔案中，從不同的程式碼檔案寫入 shape 類別的部分類別定義。 覆寫`OnDoubleClick()`或其中一個名稱開頭的方法`On...`。 例如：
+ 在 Dsl 專案中產生的程式碼檔案中，從不同的程式碼檔案寫入 shape 類別的部分類別定義。 覆寫`OnDoubleClick()`或其中一個名稱開頭的方法`On...`。 例如: 
 
 ```csharp
 public partial class MyShape // change
@@ -34,7 +34,7 @@ public partial class MyShape // change
 ```
 
 > [!NOTE]
->  設定`e.Handled`至`true`，除非您想要傳遞至包含的圖形或圖表的事件。
+> 設定`e.Handled`至`true`，除非您想要傳遞至包含的圖形或圖表的事件。
 
 ## <a name="to-intercept-clicks-on-decorators"></a>若要攔截的裝飾項目上按下
  OnDoubleClick 方法的 ImageField 類別的執行個體上執行映像的裝飾項目。 您可以攔截按下滑鼠，如果您要撰寫 ImageField 子類別。 欄位為 InitializeShapeFields 方法中。 因此，您必須變更您的子類別，而不是一般 ImageField 具現化該方法。 InitializeShapeFields 方法是在產生的程式碼的圖形類別。 如果您設定，您可以覆寫 shape 類別其`Generates Double Derived`屬性，如下列程序中所述。

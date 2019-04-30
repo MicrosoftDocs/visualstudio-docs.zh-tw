@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: dc3c335a8095f1c9cf44d49da45a4d1e94b32547
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: b3d8c9873f529a366f7910946cf5807c45f73ca7
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60070208"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63415392"
 ---
 # <a name="display-files-by-using-the-open-with-command"></a>使用 [開啟] 命令來顯示檔案
 專案可以要求以顯示 IDE**開啟** 對話方塊。 此要求會提示使用者開啟標準編輯器選取的檔案。 下列步驟說明此程序：
@@ -27,7 +27,7 @@ ms.locfileid: "60070208"
 2. 根據文件的副檔名，IDE 會決定哪一個登錄可以中所列的編輯器開啟指定的文件，並顯示這項資訊**開啟** 對話方塊。
 
     > [!NOTE]
-    >  有一個內建的編輯器，必須包含在專案**開啟**對話方塊必須註冊每個這類編輯器的編輯器 factory。 內建編輯器只有函式與特定類型的實作中會強制執行的專案<xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory.CreateEditorInstance%2A>方法。 IDE 具有內建編輯器 factory 的核心文字編輯器] 和 [二進位編輯器。 IDE 也會建立代表每個已註冊的 Windows 檔案關聯的編輯器 factory 的執行個體。 這類檔案的範例是 Microsoft Word。
+    > 有一個內建的編輯器，必須包含在專案**開啟**對話方塊必須註冊每個這類編輯器的編輯器 factory。 內建編輯器只有函式與特定類型的實作中會強制執行的專案<xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory.CreateEditorInstance%2A>方法。 IDE 具有內建編輯器 factory 的核心文字編輯器] 和 [二進位編輯器。 IDE 也會建立代表每個已註冊的 Windows 檔案關聯的編輯器 factory 的執行個體。 這類檔案的範例是 Microsoft Word。
 
 3. 當使用者選取的項目**開啟** 對話方塊中，然後在 IDE 開啟文件，藉由呼叫<xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenStandardEditor%2A>方法。 如需詳細資訊，請參閱[如何：開啟標準編輯器](../../extensibility/how-to-open-standard-editors.md)。
 

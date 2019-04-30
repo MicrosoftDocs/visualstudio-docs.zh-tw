@@ -14,12 +14,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - uwp
-ms.openlocfilehash: 726a61ae6c515d80fae13c8bfbac6a13943be6ea
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 43d545a52cbe066e4bb5002b57e9539b9a1b303c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60081758"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63402636"
 ---
 # <a name="debug-a-webview-control-in-a-uwp-app"></a>偵錯 WebView 控制項在 UWP 應用程式
 
@@ -42,7 +42,7 @@ ms.locfileid: "60081758"
 4. (選擇性) 若為非 Express 版本的 Visual Studio，依序選擇 [工具] > [選項] > [偵錯] > [Just-In-Time]，然後停用指令碼的 Just-In-Time (JIT) 偵錯，以停用 JIT 偵錯。
 
     > [!NOTE]
-    >  藉由停用 JIT 偵錯，您可以隱藏在部分網頁上發生之未處理例外的對話方塊。 在 Visual Studio Express 中，一律停用 JIT 偵錯。
+    > 藉由停用 JIT 偵錯，您可以隱藏在部分網頁上發生之未處理例外的對話方塊。 在 Visual Studio Express 中，一律停用 JIT 偵錯。
 
 5. 按 F5 開始偵錯作業。
 
@@ -79,7 +79,7 @@ ms.locfileid: "60081758"
      ![目標 [JavaScript 主控台] 視窗中的選取項目](../debugger/media/js_console_target.png "JS_Console_Target")
 
     > [!NOTE]
-    >  使用主控台，您可以一次與單一 `WebView`、`iFrame`、共用連絡人或 Web 背景工作互動。 每個項目需要個別的 Web 平台主機 (WWAHost.exe) 執行個體。 您一次可以與一個主機互動。
+    > 使用主控台，您可以一次與單一 `WebView`、`iFrame`、共用連絡人或 Web 背景工作互動。 每個項目需要個別的 Web 平台主機 (WWAHost.exe) 執行個體。 您一次可以與一個主機互動。
 
 6. 檢視及修改您的應用程式中的變數或使用主控台命令中所述[快速入門：偵錯 JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md)並[JavaScript Console commands](../debugger/javascript-console-commands.md)。
 

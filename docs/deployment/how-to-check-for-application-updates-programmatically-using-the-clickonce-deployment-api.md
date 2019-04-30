@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 27e1f1b923b395121fb5671088d99421a79c45fc
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 90499ae5dadac705d759270996f647b2d1a65445
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60059210"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63406611"
 ---
 # <a name="how-to-check-for-application-updates-programmatically-using-the-clickonce-deployment-api"></a>HOW TO：使用 ClickOnce 部署 API 以程式檢查應用程式更新
 ClickOnce 提供兩種方式可在部署之後，更新的應用程式。 在第一個方法中，您可以設定 ClickOnce 部署，自動檢查更新，在特定時間間隔。 在第二個方法中，您可以撰寫程式碼使用<xref:System.Deployment.Application.ApplicationDeployment>檢查是否有更新的類別，根據事件，例如使用者的要求。
@@ -30,7 +30,7 @@ ClickOnce 提供兩種方式可在部署之後，更新的應用程式。 在第
  若要以程式設計方式更新 ClickOnce 應用程式，您必須指定更新的位置。 這有時候稱為部署提供者。 如需有關如何設定這個屬性的詳細資訊，請參閱 <<c0> [ 選擇 ClickOnce 更新策略](../deployment/choosing-a-clickonce-update-strategy.md)。
 
 > [!NOTE]
->  您也可以使用如下所述來部署您的應用程式，從一個位置，但從另一個更新它的技術。 如需詳細資訊，請參閱[如何：指定部署更新的替代位置](../deployment/how-to-specify-an-alternate-location-for-deployment-updates.md)。
+> 您也可以使用如下所述來部署您的應用程式，從一個位置，但從另一個更新它的技術。 如需詳細資訊，請參閱[如何：指定部署更新的替代位置](../deployment/how-to-specify-an-alternate-location-for-deployment-updates.md)。
 
 ### <a name="to-check-for-updates-programmatically"></a>若要以程式設計方式檢查更新
 

@@ -27,12 +27,12 @@ caps.latest.revision: 36
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 6be45876174afa00a58ea9948661f051f8df1ddc
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 8e6c234b622dcc335a6fe42fd57f1f815a5fd9d9
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60045703"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63447295"
 ---
 # <a name="specify-symbol-pdb-and-source-files-in-the-visual-studio-debugger"></a>在 Visual Studio Debugger 中指定符號 (.pdb) 和原始程式檔
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -72,7 +72,7 @@ ms.locfileid: "60045703"
 4. 若要改善符號載入效能，在 [ **快取此目錄中的符號** ] 方塊中，輸入符號伺服器可以從中複製符號的本機目錄路徑，或是符號可以複製到其中的本機目錄路徑。
 
    > [!NOTE]
-   >  請不要將符號快取放到受保護的資料夾 (例如 C:\Windows 資料夾或它的其中一個子資料夾)。 請改用可讀寫的資料夾。
+   > 請不要將符號快取放到受保護的資料夾 (例如 C:\Windows 資料夾或它的其中一個子資料夾)。 請改用可讀寫的資料夾。
 
    **指定符號載入行為**
 
@@ -116,7 +116,7 @@ ms.locfileid: "60045703"
  Windows 應用程式和程式庫的協力廠商提供者可提供對網際網路上符號伺服器的存取。 您也可以在 [ **選項對話方塊**/**符號** ] 頁面上輸入這些符號伺服器的 URL。
 
 > [!NOTE]
->  如果您使用 Microsoft 公用符號伺服器以外的其他符號伺服器，請確定該符號伺服器和其路徑值得信任。 由於符號檔可能包含任意可執行程式碼，因此可能會讓您面臨安全性威脅。
+> 如果您使用 Microsoft 公用符號伺服器以外的其他符號伺服器，請確定該符號伺服器和其路徑值得信任。 由於符號檔可能包含任意可執行程式碼，因此可能會讓您面臨安全性威脅。
 
 ### <a name="BKMK_Find_and_load_symbols_while_debugging"></a> 在偵錯時尋找並載入符號
  只要偵錯工具處於中斷模式，您就可以載入偵錯工具選項先前所排除或編譯器找不到之模組的符號。 您可以從 [呼叫堆疊]、[模組]、[區域變數]、[自動變數] 和所有 [監看式] 視窗的捷徑功能表中載入符號。 如果偵錯工具在未提供符號或原始程式檔的程式碼中發生中斷，則會出現文件視窗。 您可以在這裡找到有關遺漏檔案的資訊，並採取動作找出和載入這些檔案。
@@ -224,7 +224,7 @@ ms.locfileid: "60045703"
  當本機電腦上沒有原始程式碼，或者 .pdb 檔不符合原始程式碼時，您都可以使用來源伺服器協助偵錯應用程式。 來源伺服器會接受對檔案的要求，並傳回實際的檔案。 來源伺服器藉由名為 srcsrv.dll 的 DLL 檔案執行。 來源伺服器會讀取應用程式的 .pdb 檔，該檔含有原始程式碼儲存機制的指標，以及用來從儲存機制擷取原始程式碼的命令。 只要在名為 srcsrv.ini 的檔案中列出允許的命令，並將該檔置於與 srcsrv.dll 和 devenv.exe 相同的目錄中，就能限制可以從應用程式的 .pdb 檔執行何種命令。
 
 > [!IMPORTANT]
->  應用程式的 .pdb 檔中可以內嵌任意命令，因此在 srcsrv.ini 檔案中務必只加入您要執行的命令。 嘗試執行 srcsvr.ini 檔案中未包含的任何命令，都會讓確認對話方塊出現。 如需詳細資訊，請參閱[安全性警告：偵錯工具必須執行未受信任的命令](../debugger/security-warning-debugger-must-execute-untrusted-command.md)。 由於不會對命令參數進行任何驗證，因此請謹慎使用受信任的命令。 例如，如果您信任 cmd.exe，惡意的使用者便可能指定會使命令具危險性的參數。
+> 應用程式的 .pdb 檔中可以內嵌任意命令，因此在 srcsrv.ini 檔案中務必只加入您要執行的命令。 嘗試執行 srcsvr.ini 檔案中未包含的任何命令，都會讓確認對話方塊出現。 如需詳細資訊，請參閱[安全性警告：偵錯工具必須執行未受信任的命令](../debugger/security-warning-debugger-must-execute-untrusted-command.md)。 由於不會對命令參數進行任何驗證，因此請謹慎使用受信任的命令。 例如，如果您信任 cmd.exe，惡意的使用者便可能指定會使命令具危險性的參數。
 
  **若要啟用來源伺服器**
 

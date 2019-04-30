@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 09c16e55766c0239346540dfcc74b99b2ed8579b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: fcc35f74625b17762656451e598d131dfe85417e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60103587"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63385855"
 ---
 # <a name="validation-in-a-domain-specific-language"></a>網域指定的語言中的驗證
 身為網域指定的語言 (DSL) 的作者，您可以定義驗證條件約束，以驗證使用者建立的模型是否有意義。 例如，如果您的 DSL 允許使用者繪製人們與其祖先的家譜，您可以撰寫條件約束，確保孩子的出生日期晚於父母的出生日期。
@@ -25,7 +25,7 @@ ms.locfileid: "60103587"
  驗證是特別重要，如果您正在撰寫文字範本或其他工具來處理使用者的模型。 驗證可確保模型滿足這些工具假設的前置條件。
 
 > [!WARNING]
->  除了擴充功能的功能表命令和軌跡處理常式之外，您也可以將驗證條件約束定義為 DSL 的個別擴充功能。 當使用者安裝 DSL 時，可以另外選擇安裝這些擴充功能。 如需詳細資訊，請參閱 <<c0> [ 藉由使用 MEF 擴充您的 DSL](../modeling/extend-your-dsl-by-using-mef.md)。
+> 除了擴充功能的功能表命令和軌跡處理常式之外，您也可以將驗證條件約束定義為 DSL 的個別擴充功能。 當使用者安裝 DSL 時，可以另外選擇安裝這些擴充功能。 如需詳細資訊，請參閱 <<c0> [ 藉由使用 MEF 擴充您的 DSL](../modeling/extend-your-dsl-by-using-mef.md)。
 
 ## <a name="running-validation"></a>執行驗證
  當使用者編輯模型 (亦即網域指定的語言執行個體) 時，下列動作會執行驗證：
@@ -48,7 +48,7 @@ ms.locfileid: "60103587"
  每個驗證方法會報告找到的任何錯誤。
 
 > [!NOTE]
->  驗證方法會報告錯誤，但不會變更模型。 如果您想要調整或避免特定變更，請參閱[驗證的替代方法](#alternatives)。
+> 驗證方法會報告錯誤，但不會變更模型。 如果您想要調整或避免特定變更，請參閱[驗證的替代方法](#alternatives)。
 
 #### <a name="to-define-a-validation-constraint"></a>定義驗證條件約束
 
@@ -310,7 +310,7 @@ private void TestForCircularLinks(ValidationContext context)
 ```
 
 > [!NOTE]
->  您可以視需要在方法前面加上任意數目的 `[ValidationMethod()]` 屬性。 您可以同時將一個方法加入至自訂分類和標準分類。
+> 您可以視需要在方法前面加上任意數目的 `[ValidationMethod()]` 屬性。 您可以同時將一個方法加入至自訂分類和標準分類。
 
  若要叫用自訂驗證：
 

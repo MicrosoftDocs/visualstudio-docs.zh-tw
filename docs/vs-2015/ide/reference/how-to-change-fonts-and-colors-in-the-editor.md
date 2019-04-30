@@ -15,12 +15,12 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c7d57643661edec90f12a54a2482b59d83bbb3c8
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: fd4e61960616245d459140e351386ae7b55adc22
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60040946"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441705"
 ---
 # <a name="how-to-change-fonts-and-colors-in-the-editor"></a>HOW TO：變更字型和色彩編輯器中
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ ms.locfileid: "60040946"
 - 您可以針對每一種類型的文字項目，設定 [項目前景]、[項目背景] 和 [粗體] 選項。 例如，如果您變更色彩，並針對 [註解] 和 [書籤] 選取 [粗體]，則其他類型的文字項目不會受到影響。  
   
 > [!NOTE]
->  根據您目前使用的設定或版本，您所看到的對話方塊與功能表命令可能會與 [說明] 中描述的不同。 若要變更設定，請從 [ **工具** ] 功能表中選取 [ **匯入和匯出設定** ]。 如需詳細資訊，請參閱 [在 Visual Studio 中自訂開發設定](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)  
+> 根據您目前使用的設定或版本，您所看到的對話方塊與功能表命令可能會與 [說明] 中描述的不同。 若要變更設定，請從 [ **工具** ] 功能表中選取 [ **匯入和匯出設定** ]。 如需詳細資訊，請參閱 [在 Visual Studio 中自訂開發設定](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)  
   
 ### <a name="to-change-the-default-font-face-size-and-colors"></a>變更預設字體、大小和色彩  
   
@@ -49,7 +49,7 @@ ms.locfileid: "60040946"
 4. 選取 [顯示項目] 中的適當項目，然後修改 [項目前景] 和 [項目背景] 選項。  
   
     > [!TIP]
-    >  按一下 [使用預設值] 可重設預設設定。  
+    > 按一下 [使用預設值] 可重設預設設定。  
   
 5. 按一下 [確定] 。  
   

@@ -18,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c2d06098d1643f4c9b5e64206cdf94362a2c97b4
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 8697a49c57840d358eeaa597fe984b6671958b09
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60040142"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446961"
 ---
 # <a name="ribbon-overview"></a>功能區概觀
   功能區是一種方式，使其更容易尋找到組織相關的命令。 命令會顯示為功能區上的控制項。 控制項分為*群組*沿著水平帶狀的應用程式視窗的頂端。 相關的群組會組織在索引標籤上。
@@ -49,7 +49,7 @@ ms.locfileid: "60040142"
 - 將自訂群組加入自訂或內建的索引標籤。
 
   > [!NOTE]
-  >  內建索引標籤或群組可以是現有的 Microsoft Office 應用程式功能區上的。 例如，**資料** 索引標籤是在 Excel 中的內建索引標籤。 **連線**群組上是內建群組**資料** 索引標籤。
+  > 內建索引標籤或群組可以是現有的 Microsoft Office 應用程式功能區上的。 例如，**資料** 索引標籤是在 Excel 中的內建索引標籤。 **連線**群組上是內建群組**資料** 索引標籤。
 
 - 將自訂控制項加入自訂群組。
 
@@ -96,7 +96,7 @@ ms.locfileid: "60040142"
 - 建立 Outlook 功能區*偵測器*。 如需詳細資訊，請參閱 < [outlook 自訂功能區](../vsto/customizing-a-ribbon-for-outlook.md)。
 
     > [!NOTE]
-    >  [偵測器] 是使用者執行特定工作時開啟的視窗，例如建立電子郵件訊息。
+    > [偵測器] 是使用者執行特定工作時開啟的視窗，例如建立電子郵件訊息。
 
 - 選取要顯示在執行階段的功能區。
 
@@ -106,7 +106,7 @@ ms.locfileid: "60040142"
  若要選取要顯示在執行階段的功能區，請覆寫`CreateRibbonExtensibilityObject`方法中的`ThisAddin`， `ThisWorkbook`，或`ThisDocument`的專案，然後傳回您想要顯示的功能區類別。 下列範例會檢查名為欄位的值`myCondition`，並傳回適當的功能區。
 
 > [!NOTE]
->  在此範例中所用的語法會傳回一個功能區，利用所建立**功能區 （視覺化設計工具）** 項目。 傳回一個功能區，建立使用語法**功能區 (XML)** 項目會有些許不同。 如需有關傳回**功能區 (XML)** 項目，請參閱[功能區 XML](../vsto/ribbon-xml.md)。
+> 在此範例中所用的語法會傳回一個功能區，利用所建立**功能區 （視覺化設計工具）** 項目。 傳回一個功能區，建立使用語法**功能區 (XML)** 項目會有些許不同。 如需有關傳回**功能區 (XML)** 項目，請參閱[功能區 XML](../vsto/ribbon-xml.md)。
 
  加入下列程式碼：
 

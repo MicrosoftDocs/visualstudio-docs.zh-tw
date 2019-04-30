@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 05dd21bbb423d75cd175f13ca945516024db01eb
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: da666f237824ccae349a023611f7e7b78fdaf684
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60049838"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63402836"
 ---
 # <a name="how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-or-designer"></a>HOW TO：指派用來執行更新、插入和刪除的預存程序 (O/R 設計工具)
 
@@ -59,7 +59,7 @@ ms.locfileid: "60049838"
 10. 按一下 [確定] 或 [套用]。
 
     > [!NOTE]
-    >  您可以繼續設定每個類別和行為組合的行為，只要您按**套用**每一項變更之後。 如果您變更了類別或行為再按一下 [**套用**，警告] 對話方塊隨即出現，並提供您的機會，以套用變更。
+    > 您可以繼續設定每個類別和行為組合的行為，只要您按**套用**每一項變更之後。 如果您變更了類別或行為再按一下 [**套用**，警告] 對話方塊隨即出現，並提供您的機會，以套用變更。
 
 若要還原成使用預設執行階段邏輯來進行更新，請在 [屬性] 視窗中按一下 [Insert]、[Update] 或 [Delete] 命令旁邊的省略符號，然後選取 [設定行為] 對話方塊中的 [使用執行階段]。
 

@@ -9,12 +9,12 @@ helpviewer_keywords:
 ms.assetid: 7d316945-06e0-4d8e-ba3a-0ef96fc75399
 caps.latest.revision: 26
 manager: jillfra
-ms.openlocfilehash: 9c673fd7eb2b51e611256efb427baa0174d29462
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 192274d087731f68cb7e01c1da20e80cbfef0360
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58940767"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446411"
 ---
 # <a name="in-place-activation"></a>在就地啟用
 如果您的編輯器檢視主控 ActiveX 或其他主動式控制項，您必須實作編輯器檢視，作為 ActiveX 控制項或是作為使用就地啟用模型的主動式文件資料物件。  
@@ -25,7 +25,7 @@ ms.locfileid: "58940767"
  如果您實作 ActiveX 控制項，您可以主控其他內嵌的物件。 如果您實作文件資料物件，視窗框架會限制您使用 ActiveX 控制項的能力。  
   
 > [!NOTE]
->  <xref:Microsoft.VisualStudio.OLE.Interop.IOleDocument> 和 <xref:Microsoft.VisualStudio.OLE.Interop.IOleDocumentView> 介面允許分開資料和檢視。 不過，Visual Studio 不支援這項功能，而且這些介面只會用來代表文件檢視物件。  
+> <xref:Microsoft.VisualStudio.OLE.Interop.IOleDocument> 和 <xref:Microsoft.VisualStudio.OLE.Interop.IOleDocumentView> 介面允許分開資料和檢視。 不過，Visual Studio 不支援這項功能，而且這些介面只會用來代表文件檢視物件。  
   
  使用 <xref:Microsoft.VisualStudio.Shell.Interop.SOleComponentUIManager> 服務的編輯器，可以藉由呼叫 <xref:Microsoft.VisualStudio.Shell.Interop.IOleInPlaceComponentUIManager> 介面的方法來提供功能表、工具列和命令整合；此介面是由 <xref:Microsoft.VisualStudio.Shell.Interop.SOleComponentUIManager> 服務所實作。 編輯器也可以提供其他 Visual Studio 功能，例如選取項目追蹤和復原管理。 如需詳細資訊，請參閱 <<c0> [ 建立自訂編輯器和設計工具](../extensibility/creating-custom-editors-and-designers.md)。  
   
@@ -36,7 +36,7 @@ ms.locfileid: "58940767"
 就地啟用編輯器  
   
 > [!NOTE]
->  在此繪圖的物件中，建立標準的編輯器只需要 `CYourEditorFactory` 物件。 如果您要建立自訂編輯器，您不需要實作 <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData2> ，因為您的編輯器可能有自己的私用持續性機制。 如需詳細資訊，請參閱 <<c0> [ 建立自訂編輯器和設計工具](../extensibility/creating-custom-editors-and-designers.md)。  
+> 在此繪圖的物件中，建立標準的編輯器只需要 `CYourEditorFactory` 物件。 如果您要建立自訂編輯器，您不需要實作 <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData2> ，因為您的編輯器可能有自己的私用持續性機制。 如需詳細資訊，請參閱 <<c0> [ 建立自訂編輯器和設計工具](../extensibility/creating-custom-editors-and-designers.md)。  
   
  實作來建立就地啟用編輯器的所有介面，顯示在單一 `CYourEditorDocument` 物件上，但這項組態只支援文件資料的單一檢視。 如需支援文件資料之多個檢視的詳細資訊，請參閱 [Supporting Multiple Document Views](../extensibility/supporting-multiple-document-views.md)。  
   

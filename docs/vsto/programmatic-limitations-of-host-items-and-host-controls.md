@@ -30,12 +30,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 488551d9b86ec7bd09adadd92d515cac1a53e841
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: d885ba9d32126e0d77828047adbde84d557fd821
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56596139"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63447085"
 ---
 # <a name="programmatic-limitations-of-host-items-and-host-controls"></a>主項目和主控制項的程式設計限制
   每個主項目和主控制項的行為，都已設計成像是對應的原生 Microsoft Office Word 或 Microsoft Office Excel 物件一樣，同時還具備額外的功能。 不過，主項目和主控制項在執行階段的行為，還是與原生 Office 物件有些基本差異。
@@ -57,7 +57,7 @@ ms.locfileid: "56596139"
  您無法將主控制項加入原生 <xref:Microsoft.Office.Interop.Word.Document> 或 <xref:Microsoft.Office.Interop.Excel.Worksheet>。
 
 > [!NOTE]
->  下列主控制項無法以程式設計方式加入工作表或文件： <xref:Microsoft.Office.Tools.Excel.XmlMappedRange>、 <xref:Microsoft.Office.Tools.Word.XMLNode>和 <xref:Microsoft.Office.Tools.Word.XMLNodes>。
+> 下列主控制項無法以程式設計方式加入工作表或文件： <xref:Microsoft.Office.Tools.Excel.XmlMappedRange>、 <xref:Microsoft.Office.Tools.Word.XMLNode>和 <xref:Microsoft.Office.Tools.Word.XMLNodes>。
 
 ## <a name="understand-type-differences-between-host-items-host-controls-and-native-office-objects"></a>了解主項目，主控制項和原生 Office 物件的類型差異
  在每個主項目和主控制項中，都有基礎的原生 Microsoft Office Word 或 Microsoft Office Excel 物件。 您可以使用主項目或主控制項的 InnerObject 屬性來存取基礎物件。 不過，您無法將原生 Office 物件轉換成其對應的主項目或主控制項。 如果您嘗試將原生 Office 物件轉換成主項目或主控制項的類型，將會擲回 <xref:System.InvalidCastException> 。

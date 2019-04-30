@@ -27,12 +27,12 @@ caps.latest.revision: 23
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 92718187fd8c83eb20ce8b39d323d60434f5f48f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 2a55b78cfa962abe4a1eecf778be9cdc6de3aa6e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60065749"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63384058"
 ---
 # <a name="mfc-debugging-techniques"></a>MFC 偵錯技術
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -236,10 +236,10 @@ Total allocations: 67 bytes
  在 MFC 程式中，您可以使用[cmemorystate:: Dumpallobjectssince](http://msdn.microsoft.com/library/a7f89034-bca4-4786-88d5-1571a5425ab2)傾印堆積上尚未解除配置的所有物件的描述。 `DumpAllObjectsSince` 會傾印從上一個 [CMemoryState::Checkpoint](http://msdn.microsoft.com/library/b2d80fea-3d21-457e-816d-b035909bf21a)。 如果沒有發生 `Checkpoint` 呼叫， `DumpAllObjectsSince` 會傾印目前在記憶體的所有物件和非物件。  
   
 > [!NOTE]
->  您必須先 [啟用診斷追蹤](../debugger/mfc-debugging-techniques.md#BKMK_Enabling_memory_diagnostics)，才能使用 MFC 物件傾印。  
+> 您必須先 [啟用診斷追蹤](../debugger/mfc-debugging-techniques.md#BKMK_Enabling_memory_diagnostics)，才能使用 MFC 物件傾印。  
   
 > [!NOTE]
->  MFC 會在程式結束時自動傾印所有的流失物件，因此您不需要建立程式碼來傾印這個時候的物件。  
+> MFC 會在程式結束時自動傾印所有的流失物件，因此您不需要建立程式碼來傾印這個時候的物件。  
   
  下列程式碼會比較兩個記憶體狀態來測試記憶體流失，如果偵測到遺漏便會傾印所有物件：  
   

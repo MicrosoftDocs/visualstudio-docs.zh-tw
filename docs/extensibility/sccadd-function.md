@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 84e9c6dadd9e553d456bfb46d054a7ae727aa087
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.openlocfilehash: a738a01df224051e3190d828f852fe1ccfa7e9da
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56682748"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63434718"
 ---
 # <a name="sccadd-function"></a>SccAdd 函式
 此函式會將新檔案加入至原始檔控制系統。
@@ -85,7 +85,7 @@ SCCRTN SccAdd(
  一般`fOptions`陣列中，取代以下`pfOptions`，使用其中一個`LONG`選項每個檔案的規格。 這是因為檔案類型可能會不同檔案。
 
 > [!NOTE]
->  是無效的同時指定兩者`SCC_FILETYPE_TEXT`和`SCC_FILETYPE_BINARY`選項相同的檔案，但卻是有效都不指定。 設定都不是設定相同`SCC_FILETYPE_AUTO`，在此情況下的原始檔控制外掛程式會自動偵測 dll 的檔案類型。
+> 是無效的同時指定兩者`SCC_FILETYPE_TEXT`和`SCC_FILETYPE_BINARY`選項相同的檔案，但卻是有效都不指定。 設定都不是設定相同`SCC_FILETYPE_AUTO`，在此情況下的原始檔控制外掛程式會自動偵測 dll 的檔案類型。
 
  以下是使用中的旗標的清單`pfOptions`陣列：
 

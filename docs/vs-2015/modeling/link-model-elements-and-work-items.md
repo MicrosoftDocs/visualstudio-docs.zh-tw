@@ -19,12 +19,12 @@ caps.latest.revision: 49
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 2b0ec545defec941d9a59001841d8bea443aa522
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: cdfcb6bb07f167ea1da81101ae00613a5b2fac93
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60071859"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63440936"
 ---
 # <a name="link-model-elements-and-work-items"></a>連結模型項目和工作項目
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ ms.locfileid: "60071859"
  若要查看哪些 Visual Studio 版本支援這項功能，請參閱 [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)。  
   
 > [!NOTE]
->  您必須使用 Team Explorer 建立與開啟連結。 請確定您的模型專案和圖表已簽入版本控制，以便其他人可開啟所連結的圖表。  
+> 您必須使用 Team Explorer 建立與開啟連結。 請確定您的模型專案和圖表已簽入版本控制，以便其他人可開啟所連結的圖表。  
   
  例如，您可以連結：  
   
@@ -61,7 +61,7 @@ ms.locfileid: "60071859"
 - 圖表。 若要選取圖表，請選擇圖表的空白部分。  
   
 > [!WARNING]
->  您必須先連接 TFS 原始程式碼控制 (SCC) 才能建立或連結工作項目。 若您嘗試開啟連接至不同的 TFS SCC，Visual Studio 會自動關閉目前方案。 請先確認您已連接至適當的 SCC，再嘗試建立或連結至工作項目。 在更新版本的 Visual Studio 中，如果沒有連接至 SCC 即無法使用功能表命令。  
+> 您必須先連接 TFS 原始程式碼控制 (SCC) 才能建立或連結工作項目。 若您嘗試開啟連接至不同的 TFS SCC，Visual Studio 會自動關閉目前方案。 請先確認您已連接至適當的 SCC，再嘗試建立或連結至工作項目。 在更新版本的 Visual Studio 中，如果沒有連接至 SCC 即無法使用功能表命令。  
   
 - [連接到 team 專案](#ConnectTFS)  
   
@@ -99,7 +99,7 @@ ms.locfileid: "60071859"
      Visual Studio 會將模型項目連結至新的工作項目。 模型項目之上或旁邊會出現一個圖示。  
   
 > [!WARNING]
->  您必須先連接 TFS 原始程式碼控制 (SCC) 才能建立或連結工作項目。 若您嘗試開啟連接至不同的 TFS SCC，Visual Studio 會自動關閉目前方案。 請先確認您已連接至適當的 SCC，再嘗試建立或連結至工作項目。 在更新版本的 Visual Studio 中，如果沒有連接至 SCC 即無法使用功能表命令。  
+> 您必須先連接 TFS 原始程式碼控制 (SCC) 才能建立或連結工作項目。 若您嘗試開啟連接至不同的 TFS SCC，Visual Studio 會自動關閉目前方案。 請先確認您已連接至適當的 SCC，再嘗試建立或連結至工作項目。 在更新版本的 Visual Studio 中，如果沒有連接至 SCC 即無法使用功能表命令。  
   
 ## <a name="LinkExisting"></a> 模型項目連結至現有的工作項目  
  當您將模型項目連結至工作項目時，請從模型項目開始，而非工作項目。  
@@ -123,7 +123,7 @@ ms.locfileid: "60071859"
      當您完成時，模型項目的 [ **工作項目** ] 屬性就會顯示比先前更大的數目。 模型項目之上或旁邊也會出現一個圖示。  
   
 > [!WARNING]
->  您必須先連接 TFS 原始程式碼控制 (SCC) 才能建立或連結工作項目。 若您嘗試開啟連接至不同的 TFS SCC，Visual Studio 會自動關閉目前方案。 請先確認您已連接至適當的 SCC，再嘗試建立或連結至工作項目。 在更新版本的 Visual Studio 中，如果沒有連接至 SCC 即無法使用功能表命令。  
+> 您必須先連接 TFS 原始程式碼控制 (SCC) 才能建立或連結工作項目。 若您嘗試開啟連接至不同的 TFS SCC，Visual Studio 會自動關閉目前方案。 請先確認您已連接至適當的 SCC，再嘗試建立或連結至工作項目。 在更新版本的 Visual Studio 中，如果沒有連接至 SCC 即無法使用功能表命令。  
   
 ## <a name="OpenWorkItem"></a> 檢視工作項目連結至模型項目  
   
@@ -132,7 +132,7 @@ ms.locfileid: "60071859"
 2. 在模型圖表或在 [ **UML 模型總管**] 上，開啟模型項目的捷徑功能表。 選擇 [ **檢視工作項目** ] 以檢視連結的工作項目清單。  
   
     > [!NOTE]
-    >  僅會顯示目前連接之伺服器的工作項目。 如果您沒有看到任何工作項目，請確定您已連接至 [ **Team Explorer**] 中的正確伺服器。  
+    > 僅會顯示目前連接之伺服器的工作項目。 如果您沒有看到任何工作項目，請確定您已連接至 [ **Team Explorer**] 中的正確伺服器。  
   
 ## <a name="ViewLinkedModels"></a> 檢視模型項目連結至工作項目  
  您可以檢視連結至 Visual Studio Team Services 及 Team Foundation Server 2012 (含) 以後版本中工作項目的模型圖表與項目。 例如，工作項目可能連接到類別模型，以顯示要實作的新類別設計。  
@@ -140,7 +140,7 @@ ms.locfileid: "60071859"
 1. 在 **Team Explorer**中，確定您已經連接到模型項目連結至工作項目所在的 Team 專案。  
   
     > [!NOTE]
-    >  您只能使用 Team Explorer 檢視連結的模型項目，不能使用 Team Web Access 檢視。 確定您的工作區已對應至包含模型圖表或項目的模型專案。 如果您沒有工作區，則必須建立一個。 請參閱 [疑難排解](#Troubleshooting) 和 [建立和使用工作區](http://msdn.microsoft.com/library/1d7f6ed8-ec7c-48f8-86da-9aea55a90d5a)。  
+    > 您只能使用 Team Explorer 檢視連結的模型項目，不能使用 Team Web Access 檢視。 確定您的工作區已對應至包含模型圖表或項目的模型專案。 如果您沒有工作區，則必須建立一個。 請參閱 [疑難排解](#Troubleshooting) 和 [建立和使用工作區](http://msdn.microsoft.com/library/1d7f6ed8-ec7c-48f8-86da-9aea55a90d5a)。  
   
 2. 開啟工作項目，選擇 [ **連結**]。 在 [ **模型連結**] 底下，開啟所連結模型項目的捷徑功能表。 選擇 [ **開啟連結項目**]。  
   
@@ -160,7 +160,7 @@ ms.locfileid: "60071859"
     2. 在 [ **工作項目** ] 屬性中，選擇省略符號按鈕 **[…]**。  
   
         > [!NOTE]
-        >  只會顯示目前伺服器上的工作項目。 如果清單是空的，但工作項目數目不是零，請確認您是否連接到 [ **Team Explorer**] 中正確的伺服器。  
+        > 只會顯示目前伺服器上的工作項目。 如果清單是空的，但工作項目數目不是零，請確認您是否連接到 [ **Team Explorer**] 中正確的伺服器。  
   
 3. 在 [ **移除工作項目的連結**] 下，清除您要取消連結的所選項目。 選擇 [確定] 。  
   

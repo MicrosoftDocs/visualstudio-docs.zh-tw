@@ -11,12 +11,12 @@ ms.assetid: 99311a93-d642-4344-bbf9-ff6e7fa5bf7f
 caps.latest.revision: 26
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: f84d66a1dc51baffe743b1f7c16b4bf0ff15ef3a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 474d5c66507b56bea609568b6acfe9f5eff75e9c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60117898"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63414611"
 ---
 # <a name="implementing-custom-categories-and-display-items"></a>實作自訂類別和顯示項目
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -90,7 +90,7 @@ VSPackage 可以提供控制項的字型和色彩，其文字的[!INCLUDE[vsprvs
   - 顯示針對每個成員的資訊**分類**。  
   
   > [!NOTE]
-  >  每隔**分類**必須包含至少一個**顯示項目**。  
+  > 每隔**分類**必須包含至少一個**顯示項目**。  
   
 - IDE 使用`T:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorGroup`介面來定義數個類別的聯集。  
   
@@ -122,7 +122,7 @@ VSPackage 可以提供控制項的字型和色彩，其文字的[!INCLUDE[vsprvs
      這可透過系統實作<xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage>介面。 主要目的是為了支援持續性，雖然<xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage.GetItem%2A>方法可用來取得字型和色彩資訊**顯示項目**。 如需詳細資訊，請參閱 <<c0> [ 存取儲存的字型和色彩設定](../extensibility/accessing-stored-font-and-color-settings.md)。  
   
     > [!NOTE]
-    >  為了確保透過輪詢所得到的結果正確無誤，它可能會使用<xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorCacheManager>介面，以決定在呼叫的擷取方法之前是否需要快取排清和更新<xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage>介面。  
+    > 為了確保透過輪詢所得到的結果正確無誤，它可能會使用<xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorCacheManager>介面，以決定在呼叫的擷取方法之前是否需要快取排清和更新<xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage>介面。  
   
 ## <a name="see-also"></a>另請參閱  
  <xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider.QueryService%2A>   

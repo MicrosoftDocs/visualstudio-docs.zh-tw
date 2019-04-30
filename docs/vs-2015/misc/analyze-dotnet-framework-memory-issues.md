@@ -10,12 +10,12 @@ ms.assetid: 43341928-9930-48cf-a57f-ddcc3984b787
 caps.latest.revision: 9
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 75a51cbe851b6566ab210a3c8ae12a9b7c2e0d2b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: e78cefa9778e2889130f865e4c61cc8a97014db7
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60107654"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444664"
 ---
 # <a name="analyze-net-framework-memory-issues"></a>分析 .NET Framework 記憶體問題
 使用 Visual Studio Managed 記憶體分析器，找出 .NET Framework 程式碼中記憶體流失和記憶體使用沒有效率的問題。 目標程式碼的最小 .NET Framework 版本是 .NET Framework 4.5。  
@@ -59,7 +59,7 @@ ms.locfileid: "60107654"
  記憶體分析工具會分析中的資訊*傾印檔案*包含堆積資訊。 您可以在 Visual Studio 中建立傾印檔案，或者您可以使用之類的工具[ProcDump](http://technet.microsoft.com/sysinternals/dd996900.aspx)從[Windows Sysinternals](http://technet.microsoft.com/sysinternals)。 請參閱[什麼是傾印，以及如何建立一個？](http://blogs.msdn.com/b/debugger/archive/2009/12/30/what-is-a-dump-and-how-do-i-create-one.aspx) Visual Studio 偵錯工具團隊部落格上。  
   
 > [!NOTE]
->  大多數工具都可以收集含有或不含堆積記憶體資料的傾印資訊。 Visual Studio 記憶體分析器需要完整的堆積資訊。  
+> 大多數工具都可以收集含有或不含堆積記憶體資料的傾印資訊。 Visual Studio 記憶體分析器需要完整的堆積資訊。  
   
  **若要從 Visual Studio 收集傾印**  
   

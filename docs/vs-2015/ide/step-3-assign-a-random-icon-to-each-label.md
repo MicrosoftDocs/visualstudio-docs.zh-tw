@@ -9,12 +9,12 @@ caps.latest.revision: 33
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 3562b74939fe9207ddcf10e98bd0b4d0d7d1bead
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: e2b2d4ee5feb0bed25ad41931f151e81db6edd3c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60085983"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63442589"
 ---
 # <a name="step-3-assign-a-random-icon-to-each-label"></a>步驟 3：將隨機圖示指派給每一個標籤
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,7 +36,7 @@ ms.locfileid: "60085983"
      [!code-vb[VbExpressTutorial4Step2_3_4#14](../snippets/visualbasic/VS_Snippets_VBCSharp/vbexpresstutorial4step2_3_4/vb/form1.vb#14)]  
   
     > [!NOTE]
-    >  因為 "iconLabel" 和 "control" 這兩個名稱都屬描述性，所以會加以使用。 您可以使用任何名稱來取代這些名稱，程式碼的作用完全相同 (只要您變更迴圈內每一個陳述式中的名稱即可)。  
+    > 因為 "iconLabel" 和 "control" 這兩個名稱都屬描述性，所以會加以使用。 您可以使用任何名稱來取代這些名稱，程式碼的作用完全相同 (只要您變更迴圈內每一個陳述式中的名稱即可)。  
   
      `AssignIconsToSquares()` 方法會反覆通過 TableLayoutPanel 中的每一個 Label 控制項，並為每一個控制項執行相同的陳述式。 這些陳述式會從您在[步驟 2：新增隨機物件和圖示清單](../ide/step-2-add-a-random-object-and-a-list-of-icons.md)。 (這就是您為何將兩個圖示都包含在清單中的緣故，所以會有一對圖示指派給隨機 Label 控制項)。  
   
@@ -71,7 +71,7 @@ ms.locfileid: "60085983"
      因為您未隱藏它們，所以圖示現在是可見的。 若要讓玩家看不到它們，您可以將每個 Label 的 `Forecolor` 屬性設定為與其 `BackColor` 屬性相同的色彩。  
   
     > [!TIP]
-    >  另一種隱藏控制項 (如 Label) 的方式是將其 **Visible** 屬性設定為 `False`。  
+    > 另一種隱藏控制項 (如 Label) 的方式是將其 **Visible** 屬性設定為 `False`。  
   
 6. 若要隱藏圖示，請停止程式並移除 `For Each` 迴圈內部程式碼註解行的註解標記。  
   

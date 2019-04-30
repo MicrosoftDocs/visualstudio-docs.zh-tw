@@ -13,12 +13,12 @@ ms.assetid: dda5e8e1-6878-4aa9-9ee4-e7d0dcc11210
 caps.latest.revision: 18
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: a500b84f04f5f9dce37515edae71fda509a63bbb
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 48dd08b8ef1a8b32497d03dc7989b32a22ee5a9c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58940374"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63426360"
 ---
 # <a name="idebugmodule3getsymbolinfo"></a>IDebugModule3::GetSymbolInfo
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -53,7 +53,7 @@ int GetSymbolInfo(
  如果方法成功，它會傳回`S_OK`; 否則它會傳回錯誤碼。  
   
 > [!NOTE]
->  傳回的字串 (在`MODULE_SYMBOL_SEARCH_INFO`結構) 可能是空的即使`S_OK`會傳回。 在此案例中，是要傳回的任何搜尋資訊。  
+> 傳回的字串 (在`MODULE_SYMBOL_SEARCH_INFO`結構) 可能是空的即使`S_OK`會傳回。 在此案例中，是要傳回的任何搜尋資訊。  
   
 ## <a name="remarks"></a>備註  
  如果`bstrVerboseSearchInfo`欄位`MODULE_SYMBOL_SEARCH_INFO`結構不是空的則它將包含路徑搜尋和該搜尋結果的清單。 路徑，後面接著省略符號 （"..."），後面接著結果會格式化為清單。 如果有多個路徑的結果組，每一組將分隔"\r\n"（歸位字元-/ 換行） 配對。 模式看起來像這樣：  
@@ -66,7 +66,7 @@ int GetSymbolInfo(
  在此範例中，這個方法會傳回具有三個不同的搜尋結果的三個路徑。 每一行都終止歸位字元-/ 換行組。 範例輸出中只會將搜尋結果輸出為單一字串。  
   
 > [!NOTE]
->  狀態結果會是 [...] 到該行結尾的正後方的所有項目。  
+> 狀態結果會是 [...] 到該行結尾的正後方的所有項目。  
   
 ```cpp#  
 void ShowSymbolSearchResults(IDebugModule3 *pIDebugModule3)  

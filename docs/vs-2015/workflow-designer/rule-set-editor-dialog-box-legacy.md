@@ -13,12 +13,12 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e259328b2c9b7e2abcd5decead3560cb184fa930
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: d3827ef20ae5eb67c1052b6c7f6147d736013490
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58945174"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438892"
 ---
 # <a name="rule-set-editor-dialog-box-legacy"></a>規則集編輯器對話方塊 (舊版)
 本主題描述如何使用**規則集編輯器**對話方塊中，在舊版[!INCLUDE[wfd1](../includes/wfd1-md.md)]。 當您需要以 [!INCLUDE[wfd2](../includes/wfd2-md.md)] 或 [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] 為目標時，請使用舊版 [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)]。  
@@ -26,12 +26,12 @@ ms.locfileid: "58945174"
  **規則集編輯器** 對話方塊用來建立和修改[PolicyActivity](http://go.microsoft.com/fwlink?LinkID=65019)規則集，可序列化為.rules 檔案。  
   
 > [!NOTE]
->  如果您想要開啟.rules 副檔名**含編碼的 XML 編輯器**，您必須先關閉工作流程或活動相關聯的設計工具視窗。  
+> 如果您想要開啟.rules 副檔名**含編碼的 XML 編輯器**，您必須先關閉工作流程或活動相關聯的設計工具視窗。  
   
  如需有關如何存取資訊**規則集編輯器** 對話方塊中，請參閱[How to:建立 PolicyActivity 規則集 （舊版）](../workflow-designer/how-to-create-a-policyactivity-rule-set-legacy.md)。  
   
 > [!WARNING]
->  舊版 [!INCLUDE[wfd2](../includes/wfd2-md.md)] 的規則編輯器，它所針對的 [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] 或 [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)] 不支援多重目標。  
+> 舊版 [!INCLUDE[wfd2](../includes/wfd2-md.md)] 的規則編輯器，它所針對的 [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] 或 [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)] 不支援多重目標。  
   
  下表描述的使用者介面 (UI) 項目**規則集編輯器** 對話方塊。  
   

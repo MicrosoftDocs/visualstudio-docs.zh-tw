@@ -24,12 +24,12 @@ caps.latest.revision: 50
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: d1a6167759d35dd67142e1919423df6aa380fe88
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: c3f79e492440f98f733488afb241fa6f86e220b9
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60063526"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444238"
 ---
 # <a name="watch-and-quickwatch-windows"></a>監看式及快速監看式視窗
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -162,7 +162,7 @@ var1 = var2
  有時候您可能需要觀察特定物件的行為，例如您可能想在區域變數已超出範圍之後，追蹤該變數參考的物件。 在 C# 和 Visual Basic 中，您可以針對參考類型的特定執行個體建立物件 ID，並在中斷點條件和 [監看式] 視窗中使用它們。 物件 ID 是由 Common Language Runtime (CLR) 偵錯服務所產生並與物件相關聯。  
   
 > [!NOTE]
->  物件 ID 會建立弱式參考，且不會防止記憶體回收物件。 它們僅針對目前的偵錯工作階段才有效。  
+> 物件 ID 會建立弱式參考，且不會防止記憶體回收物件。 它們僅針對目前的偵錯工作階段才有效。  
   
  在下列程式碼中，其中一個方法會使用區域變數建立 `Person` ，但您想要找出不同方法中的 `Person`名稱：  
   
@@ -215,7 +215,7 @@ public class Program
 6. 繼續偵錯，當執行在 `DoSomething()` 方法中停止時，[監看式]  視窗會顯示 `Person` 物件。  
   
 > [!NOTE]
->  如果您想要查看物件的屬性，如上述範例中的 `Person.Name` ，則必須啟用屬性評估。  
+> 如果您想要查看物件的屬性，如上述範例中的 `Person.Name` ，則必須啟用屬性評估。  
   
 ## <a name="using-registers-in-the-watch-window-c-only"></a>在 [監看式] 視窗中使用暫存器 (僅限 C++)  
  如果您正在偵錯原生程式碼，您可以新增暫存器名稱，以及使用的變數名稱 **$\<暫存器名稱 >** 或是 **@\<註冊名稱 >**.  如需詳細資訊，請參閱 [Pseudovariables](../debugger/pseudovariables.md)。  

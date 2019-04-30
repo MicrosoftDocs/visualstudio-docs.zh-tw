@@ -11,12 +11,12 @@ caps.latest.revision: 17
 author: corob-msft
 ms.author: corob
 manager: jillfra
-ms.openlocfilehash: c19ba7ea458f7922f5e82e3277b9ab305090a5cb
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 57aa9011043ab30e465e03beffe54e6abcc706a8
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60113075"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444589"
 ---
 # <a name="install-visual-c-for-cross-platform-mobile-development"></a>安裝 Visual C++ for Cross-Platform Mobile Development
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ ms.locfileid: "60113075"
 - 如需安裝需求，請參閱 [Visual Studio 2015 系統需求](https://www.visualstudio.com/visual-studio-2015-system-requirements-vs)。  
   
   > [!IMPORTANT]
-  >  如果您使用 Windows 7 或 Windows Server 2008 R2，便可以為傳統型 Windows 應用程式、Android Native Activity 應用程式和程式庫，以及適用於 iOS 的應用程式和程式碼程式庫開發程式碼，但不適用於 Windows 市集或通用 Windows 應用程式。  
+  > 如果您使用 Windows 7 或 Windows Server 2008 R2，便可以為傳統型 Windows 應用程式、Android Native Activity 應用程式和程式庫，以及適用於 iOS 的應用程式和程式碼程式庫開發程式碼，但不適用於 Windows 市集或通用 Windows 應用程式。  
   
   若要建置特定裝置平台的應用程式，有幾個額外的需求：  
   
@@ -75,12 +75,12 @@ ms.locfileid: "60113075"
 4. 安裝完成時，關閉安裝程式，然後重新啟動電腦。 適用於協力廠商元件的部分安裝動作要在重新啟動電腦之後才會生效。  
   
     > [!IMPORTANT]
-    >  您必須重新啟動，確定一切都已正確安裝。  
+    > 您必須重新啟動，確定一切都已正確安裝。  
   
      如果無法安裝 Android 版 Microsoft Visual Studio 模擬器元件，則您的電腦可能並未啟用 HYPER-V。 使用 [開啟或關閉 Windows 功能] 控制台應用程式來啟用 HYPER-V，然後再次執行 Visual Studio 安裝程式。  
   
     > [!NOTE]
-    >  如果您的電腦或 Windows 版本不支援 HYPER-V，您就無法使用Android 版 Microsoft Visual Studio 模擬器元件。 Windows 的 Home Edition 不包含 HYPER-V 支援。  
+    > 如果您的電腦或 Windows 版本不支援 HYPER-V，您就無法使用Android 版 Microsoft Visual Studio 模擬器元件。 Windows 的 Home Edition 不包含 HYPER-V 支援。  
   
 5. 開啟 Visual Studio。 如果這是您第一次執行 Visual Studio，可能需要一些時間來設定和登入。 當 Visual Studio 就緒時，請在 [工具]  功能表中依序選取 [擴充功能和更新] 、[更新] 。 如果有適用於 Visual C++ for Cross-Platform Mobile Development 或 Microsoft Visual Studio Emulator for Android 的 Visual Studio 更新，請加以安裝。  
   
@@ -91,7 +91,7 @@ ms.locfileid: "60113075"
  如果您在安裝 Visual C++ Mobile Development 選項時，決定不要安裝一或多個使用 Visual Studio 安裝程式的協力廠商相依項目，可使用 [Install the tools](#InstallTheTools)中的步驟於稍後安裝。 您也可以獨立於 Visual Studio 安裝或更新這些項目。  
   
 > [!CAUTION]
->  您可以依任何順序安裝相依項目，除了 Java 之外。 您必須先安裝及設定 JDK，再安裝 Android SDK。  
+> 您可以依任何順序安裝相依項目，除了 Java 之外。 您必須先安裝及設定 JDK，再安裝 Android SDK。  
   
  請閱讀下列資訊並使用這些連結，以手動安裝相依項目。  
   

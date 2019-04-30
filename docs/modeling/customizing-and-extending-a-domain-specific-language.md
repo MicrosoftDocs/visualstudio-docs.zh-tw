@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8383e82091ec9cc62f5b08dcc89f1e1e74239030
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: fd399bb0d18d4a12493530932705b938a5f6dd67
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60096786"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63414850"
 ---
 # <a name="customizing-and-extending-a-domain-specific-language"></a>自訂及擴充網域指定的語言
 Visual Studio 模型和視覺效果 SDK (VMSDK) 提供在中，您可以定義模型化工具的數個層級：
@@ -28,7 +28,7 @@ Visual Studio 模型和視覺效果 SDK (VMSDK) 提供在中，您可以定義�
 3. 使用程式碼，以擴充您的模型化工具。 VMSDK 是為了能讓您輕鬆整合擴充功能與從 DSL 定義產生的程式碼而專門設計的。  如需詳細資訊，請參閱 <<c0> [ 來自訂特定領域語言撰寫的程式碼](../modeling/writing-code-to-customise-a-domain-specific-language.md)。
 
 > [!NOTE]
->  當您已更新在 DSL 定義檔案時，請務必按一下 [**轉換所有範本**後再重建您的方案的方案總管] 工具列中。
+> 當您已更新在 DSL 定義檔案時，請務必按一下 [**轉換所有範本**後再重建您的方案的方案總管] 工具列中。
 
 ## <a name="customShapes"></a> 這一節
 

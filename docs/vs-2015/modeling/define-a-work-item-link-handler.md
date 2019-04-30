@@ -11,12 +11,12 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 213237037225b18128ab149f384466e5fab0d668
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: cd50f4c80e5e67f6fb7582dc2bc22963151b42fe
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60104677"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433120"
 ---
 # <a name="define-a-work-item-link-handler"></a>定義工作項目連結處理常式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -152,7 +152,7 @@ namespace WorkItems
  基於測試目的，請在偵錯模式中執行連結處理常式。  
   
 > [!WARNING]
->  您必須先連接 TFS 原始程式碼控制 (SCC) 才能建立或連結工作項目。 若您嘗試開啟連接至不同的 TFS SCC，Visual Studio 會自動關閉目前方案。 請先確認您已連接至適當的 SCC，再嘗試建立或連結至工作項目。 在更新版本的 Visual Studio 中，如果沒有連接至 SCC 即無法使用功能表命令。  
+> 您必須先連接 TFS 原始程式碼控制 (SCC) 才能建立或連結工作項目。 若您嘗試開啟連接至不同的 TFS SCC，Visual Studio 會自動關閉目前方案。 請先確認您已連接至適當的 SCC，再嘗試建立或連結至工作項目。 在更新版本的 Visual Studio 中，如果沒有連接至 SCC 即無法使用功能表命令。  
   
 #### <a name="to-test-the-link-handler"></a>測試連結處理常式  
   
@@ -221,7 +221,7 @@ public void OnWorkItemLinked
 ```  
   
 > [!NOTE]
->  若要讓此範例運作，您必須在 `System.Drawing.dll` 加入專案參考，並匯入命名空間 `Microsoft.VisualStudio.ArchitectureTools.Extensibility.Presentation`。 不過，`OnWorkItemLinked` 的其他實作並不需要這些加入作業。  
+> 若要讓此範例運作，您必須在 `System.Drawing.dll` 加入專案參考，並匯入命名空間 `Microsoft.VisualStudio.ArchitectureTools.Extensibility.Presentation`。 不過，`OnWorkItemLinked` 的其他實作並不需要這些加入作業。  
   
 ### <a name="listening-for-link-removal"></a>接聽連結移除作業  
  在每個刪除的工作項目連結之前，會呼叫一次 `OnWorkItemRemoved`。 如果刪除模型項目，將會移除其所有連結。  

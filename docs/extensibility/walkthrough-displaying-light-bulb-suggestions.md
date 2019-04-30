@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d0799bdff6957e811c365fe153a722d25e306366
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 25365c5599d299189b07ec5c30124aac0004f390
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60086672"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444953"
 ---
 # <a name="walkthrough-display-light-bulb-suggestions"></a>逐步解說：顯示燈泡建議
 燈泡是 Visual Studio 編輯器中，展開以顯示一組動作，例如，內建的程式碼分析器或重構程式碼所識別的問題的修正程式的圖示。
@@ -177,7 +177,7 @@ ms.locfileid: "60086672"
 6. 實作<xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedActionsSource.GetSuggestedActions%2A>方法，以傳回的陣列<xref:Microsoft.VisualStudio.Language.Intellisense.SuggestedActionSet>物件都包含不同<xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedAction>物件。 展開燈泡時，會呼叫這個方法。
 
     > [!WARNING]
-    >  您應該確定的實作`HasSuggestedActionsAsync()`並`GetSuggestedActions()`是一致的; 也就是說，如果`HasSuggestedActionsAsync()`會傳回`true`，然後`GetSuggestedActions()`應該有一些動作，才能顯示。 在許多情況下，`HasSuggestedActionsAsync()`之前呼叫`GetSuggestedActions()`，但不一定如此。 例如，如果使用者叫用燈泡動作，藉由按下 (**CTRL +** 。) 只`GetSuggestedActions()`呼叫。
+    > 您應該確定的實作`HasSuggestedActionsAsync()`並`GetSuggestedActions()`是一致的; 也就是說，如果`HasSuggestedActionsAsync()`會傳回`true`，然後`GetSuggestedActions()`應該有一些動作，才能顯示。 在許多情況下，`HasSuggestedActionsAsync()`之前呼叫`GetSuggestedActions()`，但不一定如此。 例如，如果使用者叫用燈泡動作，藉由按下 (**CTRL +** 。) 只`GetSuggestedActions()`呼叫。
 
     ```csharp
     public IEnumerable<SuggestedActionSet> GetSuggestedActions(ISuggestedActionCategorySet requestedActionCategories, SnapshotSpan range, CancellationToken cancellationToken)
@@ -326,7 +326,7 @@ ms.locfileid: "60086672"
     ```
 
     > [!WARNING]
-    >  燈泡動作**Invoke**方法不應該顯示 UI。 如果您的動作會啟動新的使用者介面 （例如預覽 或 選取項目 對話方塊），不會顯示直接從 UI **Invoke**方法，但改為排程後傳回從顯示您的 UI **Invoke**.
+    > 燈泡動作**Invoke**方法不應該顯示 UI。 如果您的動作會啟動新的使用者介面 （例如預覽 或 選取項目 對話方塊），不會顯示直接從 UI **Invoke**方法，但改為排程後傳回從顯示您的 UI **Invoke**.
 
 10. 若要完成實作，新增`Dispose()`和`TryGetTelemetryId()`方法。
 

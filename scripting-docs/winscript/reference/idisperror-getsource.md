@@ -17,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6f793675d40c87e4c64c2a83d37327f5222d8d1f
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
-ms.translationtype: MT
+ms.openlocfilehash: 8a84640f020a1ff255b8c7e5dd753752e0d310a7
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58144884"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446891"
 ---
 # <a name="idisperrorgetsource"></a>IDispError::GetSource
 傳回語言的程式設計識別項的類別或引發錯誤的應用程式。  
@@ -50,7 +50,7 @@ HRESULT GetSource(
  這個方法用來判斷類別或應用程式發生例外狀況。 程式設計識別項可能會傳回地區設定識別碼 (LCID) 提供的引動過程時所指定的語言。  
   
 > [!NOTE]
->  這個方法尚未實作。  
+> 這個方法尚未實作。  
   
 ## <a name="see-also"></a>另請參閱  
  [IDispError 介面](../../winscript/reference/idisperror-interface.md)

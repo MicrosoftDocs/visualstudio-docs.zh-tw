@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 4591c6b794905eb0b8742292c752762cdea991e0
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: e1fd14dcbe2ed5840fdaa2da755fe6a95d7c8e68
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60099529"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63402927"
 ---
 # <a name="how-to-add-update-or-remove-a-wcf-data-service-reference"></a>HOW TO：新增、更新或移除 WCF 資料服務參考
 A*服務參考*允許存取一或多個專案[!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)]。 使用**加入服務參考**對話方塊，即可搜尋[!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)]在目前方案中，區域網路上，在本機，或在網際網路上。
@@ -37,7 +37,7 @@ A*服務參考*允許存取一或多個專案[!INCLUDE[ssAstoria](../data-tools/
 2. 在 **地址**方塊，輸入服務的 URL，然後按一下**移**搜尋服務。 如果服務實作使用者名稱和密碼的安全性，您可能會提示輸入使用者名稱和密碼。
 
     > [!NOTE]
-    >  您只應該參考來自信任來源的服務。 新增不信任來源的參考可能會危及安全性。
+    > 您只應該參考來自信任來源的服務。 新增不信任來源的參考可能會危及安全性。
 
      您也可以選取從 URL**地址**清單中，它會儲存先前的 15 個 Url 處找到有效的服務中繼資料。
 
@@ -88,7 +88,7 @@ A*服務參考*允許存取一或多個專案[!INCLUDE[ssAstoria](../data-tools/
      服務用戶端將會從方案中移除，並描述服務的中繼資料會移除*app.config*檔案。
 
     > [!NOTE]
-    >  您必須手動移除參考的服務參考的任何程式碼。
+    > 您必須手動移除參考的服務參考的任何程式碼。
 
 ## <a name="see-also"></a>另請參閱
 

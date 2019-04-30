@@ -9,12 +9,12 @@ caps.latest.revision: 21
 author: alexhomer1
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: af4b6ba85982c926230100aac5c7a451df79b825
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 4ec7d42fe5f1db8a44f17cf3dffdfd6174a58995
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60100179"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445939"
 ---
 # <a name="unit-testing-visual-c-code-in-a-store-app"></a>對市集應用程式中的 Visual C# 程式碼進行單元測試
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,7 +26,7 @@ ms.locfileid: "60100179"
  本主題還會建立單一 Visual Studio 方案，以及用於單元測試和要測試之 DLL 的個別專案。 您也可以直接在 DLL 專案中包含單元測試，或是針對單元測試和 DLL 建立個別方案。  
   
 > [!NOTE]
->  Visual Studio Community、Enterprise  及 Professional 均提供針對單元測試的額外功能。  
+> Visual Studio Community、Enterprise  及 Professional 均提供針對單元測試的額外功能。  
 > 
 > - 請使用任何協力廠商及開放原始碼單元測試架構，只要該架構已經為 Microsoft [測試總管] 建立附加配接器即可。 您也可以分析及顯示測試的程式碼涵蓋範圍資訊。  
 >   - 每次建置後都執行測試。  
@@ -211,7 +211,7 @@ ms.locfileid: "60100179"
     ```  
   
     > [!TIP]
-    >  建議您不要變更已通過的測試。 相反地，請加入新的測試，更新程式碼，使測試通過，然後再加入另一個測試，依此類推。  
+    > 建議您不要變更已通過的測試。 相反地，請加入新的測試，更新程式碼，使測試通過，然後再加入另一個測試，依此類推。  
     >   
     >  當您的使用者變更他們的需求時，請停用已不再正確的測試。 以相同的累加方式，撰寫新的測試，一次使一個測試生效。  
   
@@ -222,7 +222,7 @@ ms.locfileid: "60100179"
      ![RangeTest 失敗](../test/media/ute-cpp-testexplorer-rangetest-fail.png "UTE_Cpp_TestExplorer_RangeTest_Fail")  
   
     > [!TIP]
-    >  在您撰寫每一項測試之後立即確認其失敗。 這樣有助於避免撰寫永遠不會失敗的測試這種易犯的錯誤。  
+    > 在您撰寫每一項測試之後立即確認其失敗。 這樣有助於避免撰寫永遠不會失敗的測試這種易犯的錯誤。  
   
 4. 透過測試強化程式碼，讓新的測試都成功。 將 **Rooter.cs** 中的 `SqareRoot` 函式變更如下：  
   
@@ -247,7 +247,7 @@ ms.locfileid: "60100179"
      現在三項測試都會成功。  
   
 > [!TIP]
->  開發程式碼時，一次加入一個測試。 確定所有測試在每次反覆之後都通過。  
+> 開發程式碼時，一次加入一個測試。 確定所有測試在每次反覆之後都通過。  
   
 ## <a name="BKMK_Debug_a_failing_test"></a> 對失敗的測試進行偵錯  
   
@@ -332,7 +332,7 @@ ms.locfileid: "60100179"
 2. 選擇 [全部執行] 測試重構的方法，並確定並未導入迴歸。  
   
 > [!TIP]
->  一組穩定而良好的單元測試，可確認您並未在變更程式碼時引入錯誤。  
+> 一組穩定而良好的單元測試，可確認您並未在變更程式碼時引入錯誤。  
   
  **重構測試程式碼以消除重複的程式碼。**  
   
@@ -365,4 +365,4 @@ ms.locfileid: "60100179"
 2. 選擇 [全部執行] 以測試重構的方法，並確定並未導入錯誤。  
   
 > [!NOTE]
->  若要將協助程式方法新增至測試類別，請不要將 `[TestMethod]` 屬性新增至方法。 [測試總管] 並未登錄要執行的方法。
+> 若要將協助程式方法新增至測試類別，請不要將 `[TestMethod]` 屬性新增至方法。 [測試總管] 並未登錄要執行的方法。

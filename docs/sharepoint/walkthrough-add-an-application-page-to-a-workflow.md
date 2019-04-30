@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: fe2e782723b35a8cdd5505c60f74d1be12bb2077
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 032447051bc03b037abba2920d48473f0d73935f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60083026"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63409552"
 ---
 # <a name="walkthrough-add-an-application-page-to-a-workflow"></a>逐步解說：將應用程式頁面加入至工作流程
   本逐步解說示範如何新增應用程式頁面，以顯示衍生自工作流程在工作流程專案的資料。 本文是根據本主題所述之專案[逐步解說：建立工作流程關聯與初始表單](../sharepoint/walkthrough-creating-a-workflow-with-association-and-initiation-forms.md)。
@@ -295,7 +295,7 @@ ms.locfileid: "60083026"
     ```
 
     > [!WARNING]
-    >  請務必在程式碼中的 「 TestServer"取代的有效執行 SharePoint 的伺服器名稱。
+    > 請務必在程式碼中的 「 TestServer"取代的有效執行 SharePoint 的伺服器名稱。
 
 ## <a name="test-the-application-page"></a>測試應用程式頁面
  接下來，判斷是否應用程式頁面上可正確顯示費用的資料。

@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5f16385452fa0fa0f4e706da1856185355aa95a5
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 3d5d9e4cd0baa2343a68a3d86a96110c97b6cbb7
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60047185"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63426807"
 ---
 # <a name="registering-single-file-generators"></a>註冊單一檔案產生器
 若要提供自訂的工具[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]，您必須註冊因此[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]可以加以具現化，並與特定專案類型關聯。
@@ -51,7 +51,7 @@ ms.locfileid: "60047185"
         必要項。 指出是否從這個自訂的工具所產生的檔案類型都會提供給視覺化設計工具。 此參數的值必須是 （零） 針對至視覺化設計工具無法使用的類型為 0 或 （一） 1 類型可用來視覺化設計工具。
 
    > [!NOTE]
-   >  您必須註冊自訂的工具，分別為每個您想要自訂的工具，使其可用的語言。
+   > 您必須註冊自訂的工具，分別為每個您想要自訂的工具，使其可用的語言。
 
     比方說，MSDataSetGenerator 將本身註冊一次針對每種語言：
 

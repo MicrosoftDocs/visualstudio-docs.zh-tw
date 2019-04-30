@@ -17,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4087e77fdd87aaa012e4d09013bb92ae5835bb0d
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
-ms.translationtype: MT
+ms.openlocfilehash: fa831ff511ea507e03ca858b93383ff38ead9039
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58160676"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446906"
 ---
 # <a name="idisperrorgethelpinfo"></a>IDispError::GetHelpInfo
 傳回說明檔路徑，以及說明錯誤，可能的話，本主題的內容識別碼。  
@@ -57,7 +57,7 @@ HRESULT GetHelpInfo(
  這個方法傳回的說明檔路徑，以及說明錯誤，可能的話，本主題的內容識別碼。  
   
 > [!NOTE]
->  這個方法尚未實作。  
+> 這個方法尚未實作。  
   
 ## <a name="see-also"></a>另請參閱  
  [IDispError 介面](../../winscript/reference/idisperror-interface.md)

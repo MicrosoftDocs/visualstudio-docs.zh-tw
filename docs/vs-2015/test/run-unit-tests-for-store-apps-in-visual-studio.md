@@ -9,12 +9,12 @@ caps.latest.revision: 14
 author: alexhomer1
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 309dbfcac8e5c4c38e65f8901c699dc2fa51c7a1
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: bfcdb3906f405b9f7ba4650be13f4522ab559ee8
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60104172"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446218"
 ---
 # <a name="run-unit-tests-for-store-apps-in-visual-studio"></a>在 Visual Studio 中對市集應用程式執行單元測試
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -22,7 +22,7 @@ ms.locfileid: "60104172"
 本主題說明如何使用 Microsoft Visual Studio 的 [測試總管] 執行單元測試。
 
 > [!NOTE]
->  本節各項主題會說明 Visual Studio Express for Windows 8 的功能。 Visual Studio Community、Enterprise 及 Professional 均提供針對單元測試的額外功能。
+> 本節各項主題會說明 Visual Studio Express for Windows 8 的功能。 Visual Studio Community、Enterprise 及 Professional 均提供針對單元測試的額外功能。
 >
 > - 請使用任何協力廠商或開放原始碼單元測試架構，只要該架構已經為 Microsoft [測試總管] 建立附加配接器即可。 您也可以分析和顯示測試的程式碼涵蓋範圍資訊。
 >   - 每次建置後都執行測試。 您也可以使用 Microsoft Fakes，這是一種 Managed 程式碼的隔離架構，會以測試程式碼替代系統和協力廠商功能，以將測試焦點放在自己的程式碼上。
@@ -118,7 +118,7 @@ ms.locfileid: "60104172"
 1. 在 Visual Studio 編輯器中，於您要偵錯的一個或多個測試方法中設定中斷點。
 
    > [!NOTE]
-   >  由於測試方法可以依照任何順序執行，請在您要偵錯的所有測試方法中設定中斷點。
+   > 由於測試方法可以依照任何順序執行，請在您要偵錯的所有測試方法中設定中斷點。
 
 2. 在 [測試總管] 中，選取測試方法，然後選擇捷徑功能表上的 [偵錯選取的測試]。
 

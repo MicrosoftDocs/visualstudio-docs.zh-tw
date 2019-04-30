@@ -20,18 +20,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f4b920706a6a43f52ab861d392efe4b30f28c4ca
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: aee8be6904452cc40ab68130f98cf63caf0fc7fb
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60056571"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63406995"
 ---
 # <a name="how-to-publish-a-project-that-has-a-specific-locale"></a>HOW TO：發佈具有特定地區設定的專案
 一個應用程式包含不同地區設定的元件是很常見的情況。 在此情況下，您會建立一個內含數個專案的方案，然後針對每個地區設定發行不同的專案。 本程序示範如何使用巨集，發行方案中地區設定為 'en' 的第一個專案。 如果您要使用 'en' 以外的地區設定來嘗試執行這個程序，請確定將巨集中的 `localeString` 設定為符合您所使用的地區設定 (例如 'de' 或 'de-DE')。
 
 > [!NOTE]
->  當您使用這個巨集時，發行位置應為有效的 URL 或通用命名慣例 (UNC) 共用。 此外，電腦上也必須安裝 Internet Information Services (IIS)。 若要安裝 IIS，請在 [開始] 功能表上，按一下 [控制台]。 按兩下 [新增或移除程式]。 在 [新增或移除程式] 中，按一下 [新增/移除 Windows 元件]。 在 [Windows 元件精靈] 中，選取 [元件] 清單中的 [Internet Information Services (IIS)] 核取方塊。 然後按一下 [完成] 關閉精靈。
+> 當您使用這個巨集時，發行位置應為有效的 URL 或通用命名慣例 (UNC) 共用。 此外，電腦上也必須安裝 Internet Information Services (IIS)。 若要安裝 IIS，請在 [開始] 功能表上，按一下 [控制台]。 按兩下 [新增或移除程式]。 在 [新增或移除程式] 中，按一下 [新增/移除 Windows 元件]。 在 [Windows 元件精靈] 中，選取 [元件] 清單中的 [Internet Information Services (IIS)] 核取方塊。 然後按一下 [完成] 關閉精靈。
 
 ### <a name="to-create-the-publishing-macro"></a>建立發行巨集
 

@@ -17,12 +17,12 @@ caps.latest.revision: 35
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 873f4735cd1be2525b8b009dc94787b4eed394ad
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 0b8fc664ee47cd34ab984d1ac448b45c2f17c5b0
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60095735"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443717"
 ---
 # <a name="how-to-attach-and-detach-performance-tools-to-running-processes"></a>HOW TO：附加和中斷連結效能工具，來執行處理程序
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ ms.locfileid: "60095735"
 程式碼剖析工具可以用來附加至或中斷連結執行中的處理序，以協助取樣與蒐集效能資料。 當您想要避免蒐集應用程式載入時間的資料，或是在處理序進入特定狀態後監視其效能時，就可以使用這種方法來執行處理序的程式碼剖析。  
   
 > [!NOTE]
->  下列步驟適用於從 [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] 整合式開發環境 (IDE) 中附加和中斷連結處理序。 如需使用命令列工具的詳細資訊，請參閱[從命令列進行程式碼剖析](../profiling/using-the-profiling-tools-from-the-command-line.md)。 如需如何對服務進行程式碼剖析的詳細資訊，請參閱[對服務進行程式碼剖析](../profiling/command-line-profiling-of-services.md)。  
+> 下列步驟適用於從 [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] 整合式開發環境 (IDE) 中附加和中斷連結處理序。 如需使用命令列工具的詳細資訊，請參閱[從命令列進行程式碼剖析](../profiling/using-the-profiling-tools-from-the-command-line.md)。 如需如何對服務進行程式碼剖析的詳細資訊，請參閱[對服務進行程式碼剖析](../profiling/command-line-profiling-of-services.md)。  
   
  可以進行程式碼剖析的處理序，取決於電腦系統管理員所設定的使用者存取權限。 例如，使用者帳戶可能擁有下列任何一項的使用權限：  
   

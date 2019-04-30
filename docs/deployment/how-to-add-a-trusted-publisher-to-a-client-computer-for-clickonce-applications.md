@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 071077c54abe3126febdc098b6860a65ce0fd792
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 42fdbcb3da2e2b3c335b55ca66449d6264c2cf16
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60041701"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63407620"
 ---
 # <a name="how-to-add-a-trusted-publisher-to-a-client-computer-for-clickonce-applications"></a>HOW TO：將信任發行者新增到 ClickOnce 應用程式的用戶端電腦
 您可以使用信任的應用程式部署來設定用戶端電腦，以較高的信任等級執行 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 應用程式，而不提示使用者。 下列程序示範如何使用命令列工具 CertMgr.exe 將發行者的憑證新增至用戶端電腦上的受信任發行者存放區。
@@ -28,7 +28,7 @@ ms.locfileid: "60041701"
  您使用的命令會根據發行憑證的憑證授權單位 (CA) 是否為用戶端信任的根而略有不同。 如果 Windows 用戶端電腦是網域的一部分，則會以清單形式包含視為受信任根的 CA。 系統管理員通常會設定此清單。 如果您的憑證是由其中一個受信任根所發出，或由鏈結至其中一個受信任根的 CA 所發出，則可以將憑證新增至用戶端的受信任根存放區。 另一方面，如果您的憑證不是由其中一個受信任根所發出，則必須將憑證新增至用戶端的受信任根存放區和受信任發行者存放區。
 
 > [!NOTE]
->  您必須透過這種方式在下列用戶端電腦上新增憑證：要部署需要更高權限之 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 應用程式的用戶端電腦。 手動或透過部署至用戶端的應用程式，即可新增憑證。 您只需要設定這些電腦一次，之後，就可以部署使用相同憑證簽署之任意數目的 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 應用程式。
+> 您必須透過這種方式在下列用戶端電腦上新增憑證：要部署需要更高權限之 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 應用程式的用戶端電腦。 手動或透過部署至用戶端的應用程式，即可新增憑證。 您只需要設定這些電腦一次，之後，就可以部署使用相同憑證簽署之任意數目的 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 應用程式。
 
  您也可以使用 <xref:System.Security.Cryptography.X509Certificates.X509Store> 類別，以程式設計方式將憑證新增至存放區。
 

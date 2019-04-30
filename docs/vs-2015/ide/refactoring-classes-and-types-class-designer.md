@@ -20,12 +20,12 @@ caps.latest.revision: 30
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 1fae6a503323d42d4f759a30b4db790a88079815
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: eaee3dae25f5f2e5544a2521a7bce0201b45a3e2
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60048394"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441148"
 ---
 # <a name="refactoring-classes-and-types-class-designer"></a>重構類別和類型 (類別設計工具)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ ms.locfileid: "60048394"
 當您重構程式碼時，可以變更其內部結構以及設計其物件的方式，而不是其外部行為，使其更容易了解、維護且更有效率。 使用類別設計工具和 [類別細節] 視窗可讓您在 Visual Studio 專案中重構 Visual C# .NET、Visual Basic .NET 或 C++ 程式碼時，減少必須執行的工作以及引入 bug 的機會。  
   
 > [!NOTE]
->  專案的檔案可能是唯讀的，因為專案是在原始程式碼控制之下且尚未簽出、參考的專案或是其檔案在磁碟上標示為唯讀。 當您在處於上述其中一種狀態的專案中工作時，依據專案的狀態，您會有各種儲存工作的方式可以使用。 這適用於重構程式碼，也適用於您以其他方式變更的程式碼，例如直接編輯。 如需詳細資訊，請參閱 [顯示唯讀資訊 (類別設計工具)](http://msdn.microsoft.com/33e2d3a9-1668-4d10-ae56-fa09b3156e0a)。  
+> 專案的檔案可能是唯讀的，因為專案是在原始程式碼控制之下且尚未簽出、參考的專案或是其檔案在磁碟上標示為唯讀。 當您在處於上述其中一種狀態的專案中工作時，依據專案的狀態，您會有各種儲存工作的方式可以使用。 這適用於重構程式碼，也適用於您以其他方式變更的程式碼，例如直接編輯。 如需詳細資訊，請參閱 [顯示唯讀資訊 (類別設計工具)](http://msdn.microsoft.com/33e2d3a9-1668-4d10-ae56-fa09b3156e0a)。  
   
 ## <a name="common-tasks"></a>一般工作  
   
@@ -65,7 +65,7 @@ ms.locfileid: "60048394"
 3. 若要將焦點從儲存格移開，請按 **ENTER** 鍵，或是在儲存格以外的地方按一下。  
   
     > [!NOTE]
-    >  在 [類別細節] 視窗中，您可以變更成員的名稱，但不能變更類型的名稱。  
+    > 在 [類別細節] 視窗中，您可以變更成員的名稱，但不能變更類型的名稱。  
   
 ##### <a name="to-rename-a-name-in-the-properties-window"></a>在 [屬性] 視窗中重新命名  
   

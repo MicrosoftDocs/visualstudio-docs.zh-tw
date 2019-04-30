@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d486ae5c056be37c0284d39fabaa6945f5c91659
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: d629c0049966d0520e0e40d23b0fd41798ccf2b6
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60045027"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63386974"
 ---
 # <a name="understanding-models-classes-and-relationships"></a>了解模型、類別和關聯性
 特定領域語言 (DSL) 是由其 DSL 定義檔案，連同您可能會撰寫任何自訂程式碼定義。 大部分的 DSL 方案中的程式碼會產生這個檔案。
@@ -93,7 +93,7 @@ ms.locfileid: "60045027"
  當模型儲存至 XML 格式檔案，內嵌的項目都放在其父代，除非您已自訂序列化。
 
 > [!NOTE]
->  內嵌與繼承不同。 內嵌關聯性中的子系不會繼承父項的屬性。 內嵌是連結的一種模型項目之間。 繼承類別之間的關聯性，而不會建立模型項目之間的連結。
+> 內嵌與繼承不同。 內嵌關聯性中的子系不會繼承父項的屬性。 內嵌是連結的一種模型項目之間。 繼承類別之間的關聯性，而不會建立模型項目之間的連結。
 
 ### <a name="embedding-rules"></a>內嵌的規則
  執行個體模型中的每個項目必須是一個內嵌連結的詳細資訊，除了模型根的目標。

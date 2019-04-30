@@ -11,18 +11,18 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 027dc559c33b5b8f10a4555985e8b2a5a5a416c5
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 73cf7fe43dcbe15bdeedf6822c9172533e6d420b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56604934"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63423075"
 ---
 # <a name="project-subtypes"></a>專案子類型
 專案子類型可讓您自訂或 flavor 的專案系統的行為[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]。 自訂包括將其他資料儲存在專案檔中，加入或篩選中的項目**加入新項目** 對話方塊中，控制組件進行偵錯和部署的方式和擴充專案**屬性頁面** 對話方塊。 Vspackage 實作專案子類型使用 COM 彙總。
 
 > [!NOTE]
->  Visual c + + 專案系統不支援專案子類型。 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 實作 SQL Server 和智慧型裝置專案，本身就會使用專案子類型。
+> 視覺效果C++專案系統不支援專案子類型。 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 實作 SQL Server 和智慧型裝置專案，本身就會使用專案子類型。
 
 ## <a name="in-this-section"></a>本節內容
 - [設計專案子類型](../../extensibility/internals/project-subtypes-design.md)

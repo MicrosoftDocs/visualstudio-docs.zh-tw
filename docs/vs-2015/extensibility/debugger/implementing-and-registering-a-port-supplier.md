@@ -11,12 +11,12 @@ ms.assetid: fb057052-ee16-4272-8e16-a4da5dda0ad4
 caps.latest.revision: 18
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 9d0546a357ce9d50b8e17e1543d12246d5fd5574
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 377aa88df71fd0d3c42745fe2d3ce3b648191aa4
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58945208"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63430252"
 ---
 # <a name="implementing-and-registering-a-port-supplier"></a>實作和註冊連接埠提供者
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -57,7 +57,7 @@ RemoveMetric(metrictypePortSupplier,
 ```  
   
 > [!NOTE]
->  [SDK 協助程式進行偵錯](../../extensibility/debugger/reference/sdk-helpers-for-debugging.md)`SetMetric`和`RemoveMetric`dbgmetric.h 中定義，並編譯成 ad2de.lib 的靜態函數。 `metrictypePortSupplier`， `metricCLSID`，和`metricName`dbgmetric.h 中也會定義協助程式。  
+> [SDK 協助程式進行偵錯](../../extensibility/debugger/reference/sdk-helpers-for-debugging.md)`SetMetric`和`RemoveMetric`dbgmetric.h 中定義，並編譯成 ad2de.lib 的靜態函數。 `metrictypePortSupplier`， `metricCLSID`，和`metricName`dbgmetric.h 中也會定義協助程式。  
   
  連接埠提供者可以透過方法提供它的名稱和 GUID [GetPortSupplierName](../../extensibility/debugger/reference/idebugportsupplier2-getportsuppliername.md)並[GetPortSupplierId](../../extensibility/debugger/reference/idebugportsupplier2-getportsupplierid.md)分別。  
   

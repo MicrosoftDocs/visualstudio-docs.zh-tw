@@ -17,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e47934dd8aa2cea7a89f6e2ca0ff777227eba745
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
-ms.translationtype: MT
+ms.openlocfilehash: 391095acc1d2f541a3c497abeac5ae7248baa4e8
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58144945"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446623"
 ---
 # <a name="idebugdocumenthelperaddunicodetext"></a>IDebugDocumentHelper::AddUnicodeText
 將 Unicode 字串附加至這份文件的結尾。  
@@ -51,7 +51,7 @@ HRESULT AddUnicodeText(
  這個方法會產生`IDebugDocumentTextEvents`通知。  
   
 > [!NOTE]
->  如果這個方法之後呼叫`AddDeferredText`已呼叫`E_FAIL`會傳回。  
+> 如果這個方法之後呼叫`AddDeferredText`已呼叫`E_FAIL`會傳回。  
   
 ## <a name="see-also"></a>另請參閱  
  [IDebugDocumentHelper 介面](../../winscript/reference/idebugdocumenthelper-interface.md)   

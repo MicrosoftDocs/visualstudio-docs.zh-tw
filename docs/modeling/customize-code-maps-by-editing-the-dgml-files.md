@@ -20,12 +20,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 78026f091d9ed61d38d5cf9bd98ec16d85e193c6
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: c9e41b99e7f2dd9349bc04bd4988dbf103095c94
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60047719"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441628"
 ---
 # <a name="customize-code-maps-by-editing-the-dgml-files"></a>Customize code maps by editing the DGML files
 
@@ -47,7 +47,7 @@ ms.locfileid: "60047719"
 
     若要加入新的群組，請找出 `<Nodes>` 區段。 加入新的 `<Node/>` 項目。
 
-3. 在 `<Node/>` 項目中加入 `Group` 屬性，指定群組呈現為展開或摺疊的狀態。 例如: 
+3. 在 `<Node/>` 項目中加入 `Group` 屬性，指定群組呈現為展開或摺疊的狀態。 例如：
 
    ```xml
    <Nodes>
@@ -96,7 +96,7 @@ ms.locfileid: "60047719"
     Stroke="StrokeValue"
     ```
 
-     例如：
+     例如: 
 
     ```xml
     <DirectedGraph Background="Green" xmlns="http://schemas.microsoft.com/vs/2009/dgml" >
@@ -117,7 +117,7 @@ ms.locfileid: "60047719"
 - 根據特定條件組成的程式碼項目和連結群組
 
 > [!TIP]
->  如果您在許多不同的程式碼項目或連結之間使用了重覆的樣式，您可能可以考慮套用一個分類到那些程式碼項目或連結，然後將樣式套用到該分類。 如需詳細資訊，請參閱 <<c0> [ 指派分類給程式碼項目和連結](#AssignCategories)並[指派屬性給程式碼項目和連結](#AssignProperties)。
+> 如果您在許多不同的程式碼項目或連結之間使用了重覆的樣式，您可能可以考慮套用一個分類到那些程式碼項目或連結，然後將樣式套用到該分類。 如需詳細資訊，請參閱 <<c0> [ 指派分類給程式碼項目和連結](#AssignCategories)並[指派屬性給程式碼項目和連結](#AssignProperties)。
 
 ##### <a name="to-apply-a-custom-style-to-a-single-code-element"></a>將自訂樣式套用至單一程式碼項目
 
@@ -201,7 +201,7 @@ ms.locfileid: "60047719"
     Shape="ShapeFilePathLocation"
     ```
 
-     例如: 
+     例如：
 
     ```xml
     <Nodes>
@@ -236,7 +236,7 @@ ms.locfileid: "60047719"
     StrokeDashArray="StrokeArrayValues"
     ```
 
-     例如: 
+     例如：
 
     ```xml
     <Links>
@@ -266,7 +266,7 @@ ms.locfileid: "60047719"
 
 2. 在 `<Style/>` 項目中加入包含 `<Condition/>` 屬性的 `Expression` 項目，以指定傳回布林值的運算式。
 
-    例如: 
+    例如：
 
    ```xml
    <Condition Expression="MyCategory"/>
@@ -314,7 +314,7 @@ ms.locfileid: "60047719"
 
 3. 在 `<Condition/>` 項目的下一行加入一個或多個 `<Setter/>` 項目來指定 `Property` 屬性與固定的 `Value` 屬性，或加入計算的 `Expression` 屬性，以套用至符合條件的對應、程式碼項目或連結。
 
-    例如: 
+    例如：
 
    ```xml
    <Setter Property="BackGround" Value="Green"/>
@@ -442,7 +442,7 @@ ms.locfileid: "60047719"
 
 1. 在文字或 XML 編輯器中開啟此 .dgml 檔案。
 
-2. 找出該程式碼項目的 `<Node/>` 項目。 指定此屬性的名稱及值。 例如: 
+2. 找出該程式碼項目的 `<Node/>` 項目。 指定此屬性的名稱及值。 例如：
 
     ```xml
     <Nodes>
@@ -489,7 +489,7 @@ ms.locfileid: "60047719"
 
 - 找出您要的程式碼項目之 `<Node/>` 項目。
 
-- 在 `<Node/>` 項目中加入 `Category` 屬性，以指定分類的名稱。 例如：
+- 在 `<Node/>` 項目中加入 `Category` 屬性，以指定分類的名稱。 例如: 
 
     ```xml
     <Nodes>
@@ -511,7 +511,7 @@ ms.locfileid: "60047719"
 
 2. 找出同時包含來源程式碼項目與目標程式碼項目名稱的 `<Link/>` 項目。
 
-3. 在 `<Link/>` 項目中加入 `Category` 屬性，以指定分類的名稱。 例如: 
+3. 在 `<Link/>` 項目中加入 `Category` 屬性，以指定分類的名稱。 例如：
 
     ```xml
     <Links>
@@ -533,7 +533,7 @@ ms.locfileid: "60047719"
 
 2. 加入父分類的 `<Category/>` 項目，然後將 `BasedOn` 屬性加入至子分類的 `<Category/>` 項目。
 
-     例如：
+     例如: 
 
     ```xml
     <Nodes>
@@ -555,7 +555,7 @@ ms.locfileid: "60047719"
  您可以編輯此對應的 .dgml 檔案，並將 `Reference` 屬性加入程式碼項目的 `<Node/>` 項目或連結的 `<Link/>` 項目，藉此將文件或 URL 連結至程式碼項目或連結。 然後，您就可以從程式碼項目或連結開啟和檢視該內容。 `Reference` 屬性會指定該內容的路徑。 此路徑可以是相對於 .dgml 檔案位置的路徑，或是絕對路徑。
 
 > [!CAUTION]
->  如果您使用相對路徑，而且 .dgml 檔案已移動到不同的位置，那麼那些路徑將不再解析。 當您嘗試開啟和檢視連結的內容時，會發生表示內容無法檢視的錯誤。
+> 如果您使用相對路徑，而且 .dgml 檔案已移動到不同的位置，那麼那些路徑將不再解析。 當您嘗試開啟和檢視連結的內容時，會發生表示內容無法檢視的錯誤。
 
  例如，您可能會想要連結下列程式碼項目：
 
@@ -580,9 +580,9 @@ ms.locfileid: "60047719"
    - 在 `<Node/>` 或 `<Link/>` 項目中，加入 `Reference` 屬性以指定此程式碼項目的位置。
 
      > [!NOTE]
-     >  每個項目只能有一個 `Reference` 屬性。
+     > 每個項目只能有一個 `Reference` 屬性。
 
-     例如：
+     例如: 
 
    ```xml
    <Nodes>

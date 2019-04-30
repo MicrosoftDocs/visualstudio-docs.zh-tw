@@ -9,12 +9,12 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 3eb3e244fba620913581330c74825140c9dd76d7
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: e05e8c313e6c2345964386c9c4f08c1bb6f16089
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60081576"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63442550"
 ---
 # <a name="step-5-add-controls-to-your-form"></a>步驟 5：將控制項新增至表單
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,14 +37,14 @@ ms.locfileid: "60081576"
 PictureBox 工作  
   
     > [!NOTE]
-    >  如果不小心將錯誤類型的控制項加入至 TableLayoutPanel，您可以刪除它。 以滑鼠右鍵按一下控制項，然後在操作功能表中選擇 [刪除]。 您也可以使用功能表列移除表單中的控制項。 在功能表列上，依序選擇 [編輯] 和 [復原] 或 [編輯] 和 [刪除]。  
+    > 如果不小心將錯誤類型的控制項加入至 TableLayoutPanel，您可以刪除它。 以滑鼠右鍵按一下控制項，然後在操作功能表中選擇 [刪除]。 您也可以使用功能表列移除表單中的控制項。 在功能表列上，依序選擇 [編輯] 和 [復原] 或 [編輯] 和 [刪除]。  
   
 5. 選擇 [停駐於父容器中] 連結。 這樣會自動將 PictureBox 的 **Dock** 屬性設定為 **Fill**。 若要確認這一點，請選擇 [PictureBox] 控制項選取它，並移至 [屬性] 視窗，然後確定 [Dock] 屬性設定為 [Fill]。  
   
 6. 變更 PictureBox 的 **ColumnSpan** 屬性，使 PictureBox 橫跨兩個資料行。 選擇 [PictureBox] 控制項，並將其 [ColumnSpan] 屬性設定為 **2**。 另外，您也想要在 PictureBox 空白時顯示空框架。 將其 [BorderStyle] 屬性設定為 [Fixed3D]。  
   
     > [!NOTE]
-    >  如果您看不到 PictureBox 的 **ColumnSpan** 屬性，可能是因為 PictureBox 是新增至表單，而不是 TableLayoutPanel。 若要修正這個問題，請選擇 [PictureBox]，將它刪除，選擇 [TableLayoutPanel]，然後加入新的 PictureBox。  
+    > 如果您看不到 PictureBox 的 **ColumnSpan** 屬性，可能是因為 PictureBox 是新增至表單，而不是 TableLayoutPanel。 若要修正這個問題，請選擇 [PictureBox]，將它刪除，選擇 [TableLayoutPanel]，然後加入新的 PictureBox。  
   
 7. 選擇表單上的 [TableLayoutPanel]，然後將 **CheckBox** 控制項新增至表單。 按兩下 [工具箱] 中的 [CheckBox] 項目，將新的 CheckBox 控制項新增至資料表的下一個可用儲存格。 由於 PictureBox 會佔用 TableLayoutPanel 的前兩個儲存格，因此 CheckBox 控制項會加入至左下方儲存格。 選擇 [Text] 屬性，並輸入 **Stretch** 這個字，如下圖所示。  
   
@@ -54,7 +54,7 @@ PictureBox 工作
 8. 選擇表單上的 [TableLayoutPanel]，並移至 [工具箱] 中的 [容器] 群組 (您取得 TableLayoutPanel 控制項的位置)，然後按兩下 [FlowLayoutPanel] 項目將新的控制項新增至 PictureBox (右下方) 中的最後一個儲存格。 接著將 FlowLayoutPanel 停駐在 TableLayoutPanel 中 (藉由選擇 FlowLayoutPanel 的黑色三角形工作清單上的 [停駐於父容器中]，或將 FlowLayoutPanel 的 [Dock] 屬性設定為 [Fill])。  
   
     > [!NOTE]
-    >  FlowLayoutPanel 是一種容器，可依序整齊地排列其他控制項。 當您調整 FlowLayoutPanel 的大小時，如果還有空間可將所有控制項配置在單一資料列上，它就會這樣做。 否則，它會將控制項分行排列，由下往上堆疊控制項。 您將會使用 FlowLayoutPanel 來放置四個按鈕。 如果按鈕加入時為上下重疊排列，則務必在加入按鈕之前確定已選取 [FlowLayoutPanel]。 雖然先前表示每一個儲存格中只能有一個控制項，但是 TableLayoutPanel 的右下方儲存格中有四個按鈕控制項。 這是因為您可以在儲存格中放入一個控制項來存放其他控制項。 這類控制項稱為容器，而 FlowLayoutPanel 就是容器。  
+    > FlowLayoutPanel 是一種容器，可依序整齊地排列其他控制項。 當您調整 FlowLayoutPanel 的大小時，如果還有空間可將所有控制項配置在單一資料列上，它就會這樣做。 否則，它會將控制項分行排列，由下往上堆疊控制項。 您將會使用 FlowLayoutPanel 來放置四個按鈕。 如果按鈕加入時為上下重疊排列，則務必在加入按鈕之前確定已選取 [FlowLayoutPanel]。 雖然先前表示每一個儲存格中只能有一個控制項，但是 TableLayoutPanel 的右下方儲存格中有四個按鈕控制項。 這是因為您可以在儲存格中放入一個控制項來存放其他控制項。 這類控制項稱為容器，而 FlowLayoutPanel 就是容器。  
   
 ### <a name="to-add-buttons"></a>若要加入按鈕  
   
@@ -63,14 +63,14 @@ PictureBox 工作
 2. 您通常會使用 [工具箱] 加入其他按鈕。 此時，選擇 [button2]，然後在功能表列上依序選擇 [編輯]和 [複製]\ (或按 Ctrl+C)。 在功能表列上，依序選擇 [編輯] 和 [貼上]\(或按 Ctrl+V)，貼上按鈕的複本。 現在再貼一次。 IDE 現在已將 **button3** 和 **button4** 新增至 FlowLayoutPanel。  
   
     > [!NOTE]
-    >  您可以複製及貼上任何控制項。 IDE 會以邏輯方式命名和放置新的控制項。 如果您將控制項貼至容器中，IDE 會選擇下一個邏輯放置空間。  
+    > 您可以複製及貼上任何控制項。 IDE 會以邏輯方式命名和放置新的控制項。 如果您將控制項貼至容器中，IDE 會選擇下一個邏輯放置空間。  
   
 3. 選擇第一個按鈕，將其 [Text] 屬性設定為 [顯示圖片]。 然後，將接下來三個按鈕的 [Text] 屬性分別設定為 [清除圖片]、[設定背景色彩] 和 [關閉]。  
   
 4. 下一個步驟是調整按鈕的大小和排列按鈕，使它們對齊面板右邊。 選擇 [FlowLayoutPanel] 並查看其 [FlowDirection] 屬性。 將此屬性設定為 [RightToLeft]。 這樣做之後，按鈕應該會立即對齊儲存格右邊，且順序會反轉，使得 [顯示圖片] 按鈕位於右邊。  
   
     > [!NOTE]
-    >  如果按鈕的順序還是不對，您可以在 FlowLayoutPanel 上拖曳按鈕，依任何順序重新排列按鈕。 您可以選擇按鈕並將它向左或向右拖曳。  
+    > 如果按鈕的順序還是不對，您可以在 FlowLayoutPanel 上拖曳按鈕，依任何順序重新排列按鈕。 您可以選擇按鈕並將它向左或向右拖曳。  
   
 5. 選擇 [關閉] 按鈕選取它。 按住 CTRL 鍵並選擇其他三個按鈕，將它們全部選取。 選取所有按鈕後，請移至 [屬性] 視窗並向下捲動至 [AutoSize] 屬性。 此屬性會指示按鈕自動調整本身的大小，以容納其所有文字。 將此屬性設定為 [true]。 您的按鈕現在應該具有適當的大小且順序正確  (只要將四個按鈕全部選取，您就可以同時將四個 **AutoSize** 屬性全部變更)。下列圖片顯示這四個按鈕。  
   

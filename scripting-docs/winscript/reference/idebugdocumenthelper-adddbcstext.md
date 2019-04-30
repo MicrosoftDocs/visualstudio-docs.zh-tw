@@ -17,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1d5de41ff83f3ffd5b208445830862138511ba2b
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
-ms.translationtype: MT
+ms.openlocfilehash: 2d346f3877574c45aaff6dcef8ca99f699a42552
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58154789"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446646"
 ---
 # <a name="idebugdocumenthelperadddbcstext"></a>IDebugDocumentHelper::AddDBCSText
 附加至這份文件結尾的 DBCS 字串。  
@@ -51,7 +51,7 @@ HRESULT AddDBCSText(
  這個方法會產生`IDebugDocumentTextEvents`通知。  
   
 > [!NOTE]
->  如果這個方法之後呼叫`IDebugDocumentHelper::AddDeferredText`已呼叫`E_FAIL`會傳回。  
+> 如果這個方法之後呼叫`IDebugDocumentHelper::AddDeferredText`已呼叫`E_FAIL`會傳回。  
   
 ## <a name="see-also"></a>另請參閱  
  [IDebugDocumentHelper 介面](../../winscript/reference/idebugdocumenthelper-interface.md)   

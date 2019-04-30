@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9b1799ac2e7124f79d10dcc8860a994e2f182ea7
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 0ac8a47aeca8875dabe3fdf388e9a73d68ec514e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60051345"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445214"
 ---
 # <a name="how-to-create-a-domain-specific-language-solution"></a>HOW TO：建立特定領域語言方案
 特定領域語言 (DSL) 會建立使用特製化的 Visual Studio 方案。
@@ -63,7 +63,7 @@ ms.locfileid: "60051345"
     精靈會建立具有兩個專案，名為的解決方案**Dsl**並**DslPackage**。
 
    > [!NOTE]
-   >  如果您看到訊息，向您發出警示不執行文字範本來自不受信任的來源，請按一下**確定**。 您可以設定此訊息不會再出現。
+   > 如果您看到訊息，向您發出警示不執行文字範本來自不受信任的來源，請按一下**確定**。 您可以設定此訊息不會再出現。
 
 ## <a name="settings"></a> DSL 設計工具的精靈頁面
  您可以保留預設值未變更的欄位數。 不過，請確定您設定副檔名欄位。

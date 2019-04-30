@@ -16,18 +16,18 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 552f14885a95bf5c8461d6ca9db7ef2dbe204c73
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 4a9dc406665dc754f0c57c401f672cd4799183ef
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56643752"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63418460"
 ---
 # <a name="guids-and-ids-of-visual-studio-toolbars"></a>Visual Studio 識別碼和 Guid 的工具列
 本主題列舉的 GUID 和 ID 值會包含在 Visual Studio 整合式的開發環境 (IDE) 中的工具列，而且包含的群組。 這些值會定義於 *.vsct*安裝為 Visual Studio SDK 的一部分的檔案。 如需詳細資訊，請參閱 < [IDE 定義的命令、 功能表和群組](../../extensibility/internals/ide-defined-commands-menus-and-groups.md)。
 
 > [!NOTE]
->  Visual studio 工具列的許多未定義的 Visual Studio 和其 GUID 和 ID 值不是公用。 本主題列出在 Visual Studio SDK 中定義的工具列 *.vsct*檔案。
+> Visual studio 工具列的許多未定義的 Visual Studio 和其 GUID 和 ID 值不是公用。 本主題列出在 Visual Studio SDK 中定義的工具列 *.vsct*檔案。
 
  如需有關如何使用 IDE 中所定義的物件 *.vsct*檔，請參閱[擴充功能表和命令](../../extensibility/extending-menus-and-commands.md)。
 
@@ -108,7 +108,7 @@ ms.locfileid: "56643752"
  工具列可以直接在 IDE 中或出現在工具視窗中這類**方案總管 中**。 因為工具視窗中未定義 *.vsct*檔案，工具視窗工具列執行未定義父代。 相反地，它們都放在程式碼中。 下表顯示在 IDE 中，工具視窗會顯示的工具列和其所包含的命令群組。
 
 > [!NOTE]
->  工具列和群組會使用 GUID `guidSHLMainMenu`，除非特別指定，否則使用 guid: id 的語法。 指定工具列的 GUID，則它也適用於從該工具列下降的群組。
+> 工具列和群組會使用 GUID `guidSHLMainMenu`，除非特別指定，否則使用 guid: id 的語法。 指定工具列的 GUID，則它也適用於從該工具列下降的群組。
 
 |工具視窗|工具列|群組|
 |-----------------|-------------|------------|
@@ -119,7 +119,7 @@ ms.locfileid: "56643752"
 |類別檢視|IDM_VS_TOOL_CLASSVIEW_GO|IDG_VS_CLASSVIEW_SEARCH2|
 |物件瀏覽器|IDM_VS_TOOL_OBJBROWSER|IDG_VS_OBJBROWSER_SUBSETS<br /><br /> IDG_VS_OBJBROWSER_SEARCH<br /><br /> IDG_VS_OBJBROWSER_ADDREFERENCE<br /><br /> IDG_VS_OBJBROWSER_BROWSERSETTINGS|
 |物件瀏覽器|IDM_VS_TOOL_OBJECT_BROWSER_GO|IDG_VS_OBJBROWSER_SEARCH2|
-|輸出|IDM_VS_TOOL_OUTPUTWINDOW|IDG_VS_OUTPUTWINDOW_SELECT<br /><br /> IDG_VS_OUTPUTWINDOW_GOTO<br /><br /> IDG_VS_OUTPUTWINDOW_NEXTPREV<br /><br /> IDG_VS_OUTPUTWINDOW_CLEAR<br /><br /> IDG_VS_OUTPUTWINDOW_WORDWRAP|
+|Output|IDM_VS_TOOL_OUTPUTWINDOW|IDG_VS_OUTPUTWINDOW_SELECT<br /><br /> IDG_VS_OUTPUTWINDOW_GOTO<br /><br /> IDG_VS_OUTPUTWINDOW_NEXTPREV<br /><br /> IDG_VS_OUTPUTWINDOW_CLEAR<br /><br /> IDG_VS_OUTPUTWINDOW_WORDWRAP|
 |尋找和取代|IDM_VS_TOOL_UNIFIEDFIND|IDG_VS_FINDTAB<br /><br /> IDG_VS_REPLACETAB|
 |尋找結果 1|IDM_VS_TOOL_FINDRESULTS1|IDG_VS_FINDRESULTS1_GOTO<br /><br /> IDG_VS_FINDRESULTS1_NEXTPREV<br /><br /> IDG_VS_FINDRESULTS1_CLEAR<br /><br /> IDG_VS_FINDRESULTS1_STOPFIND|
 |尋找結果 2|IDM_VS_TOOL_FINDRESULTS2|IDG_VS_FINDRESULTS2_GOTO<br /><br /> IDG_VS_FINDRESULTS2_NEXTPREV<br /><br /> IDG_VS_FINDRESULTS2_CLEAR<br /><br /> IDG_VS_FINDRESULTS2_STOPFIND|

@@ -20,12 +20,12 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 153773d27d4f27a6987f7984955dde26b187b65e
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 6d93d9f771da9387661603f3eb71301e9d9aead7
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60116509"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63427135"
 ---
 # <a name="walkthrough-creating-a-custom-bootstrapper-to-show-a-privacy-prompt"></a>逐步解說：建立自訂啟動載入器以顯示隱私權提示
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -128,7 +128,7 @@ ms.locfileid: "60116509"
     6. 在 **啟始物件**下拉式選單中，選取**Module1**。  
   
        > [!NOTE]
-       >  停用的應用程式架構，會停用功能，例如 Windows XP 視覺化樣式、 應用程式事件、 啟動顯示畫面、 單一執行個體的應用程式等等。 如需詳細資訊，請參閱[專案設計工具、應用程式頁 (Visual Basic)](../ide/reference/application-page-project-designer-visual-basic.md)。  
+       > 停用的應用程式架構，會停用功能，例如 Windows XP 視覺化樣式、 應用程式事件、 啟動顯示畫面、 單一執行個體的應用程式等等。 如需詳細資訊，請參閱[專案設計工具、應用程式頁 (Visual Basic)](../ide/reference/application-page-project-designer-visual-basic.md)。  
   
        適用於 Visual C# 只有開發人員：  
   
@@ -154,12 +154,12 @@ ms.locfileid: "60116509"
 1. 建立名為**UpdateConsentDialog** %PROGRAMFILES%\Microsoft SDKs\Windows\v7.0A\Bootstrapper\Packages 中。  
   
     > [!NOTE]
-    >  您可能需要系統管理權限才能建立這個資料夾。  
+    > 您可能需要系統管理權限才能建立這個資料夾。  
   
 2. 在 [UpdateConsentDialog] 目錄中，建立名為 en-us 子目錄。  
   
     > [!NOTE]
-    >  建立新的目錄，每個地區設定。 比方說，您可以新增 fr-fr，以 de 地區設定中的子目錄。 如有必要，這些目錄會包含法文與德文字串和語言套件。  
+    > 建立新的目錄，每個地區設定。 比方說，您可以新增 fr-fr，以 de 地區設定中的子目錄。 如有必要，這些目錄會包含法文與德文字串和語言套件。  
   
 #### <a name="step-2-to-create-the-productxml-manifest-file"></a>步驟 2：若要建立 product.xml 資訊清單檔  
   
@@ -224,7 +224,7 @@ ms.locfileid: "60116509"
 4. 建立稱為 「 軟體授權條款 eula.rtf 文件。  
   
     > [!NOTE]
-    >  軟體授權條款應該包含授權、 擔保、 責任和用戶所在地法律資訊。 這些檔案應該是地區設定特定，因此請確定該檔案會儲存在支援 MBCS 或 UNICODE 字元格式。 請參閱您的法務部門與內容相關的軟體授權條款。  
+    > 軟體授權條款應該包含授權、 擔保、 責任和用戶所在地法律資訊。 這些檔案應該是地區設定特定，因此請確定該檔案會儲存在支援 MBCS 或 UNICODE 字元格式。 請參閱您的法務部門與內容相關的軟體授權條款。  
   
 5. 將文件儲存在 UpdateConsentDialog 啟動載入器目錄的 en-us 子目錄。  
   
@@ -244,7 +244,7 @@ ms.locfileid: "60116509"
 4. 選取 **更新同意對話方塊**。  
   
     > [!NOTE]
-    >  您可能必須關閉再重新開啟 Visual Studio 以查看 必要條件 對話方塊中的 更新同意對話方塊。  
+    > 您可能必須關閉再重新開啟 Visual Studio 以查看 必要條件 對話方塊中的 更新同意對話方塊。  
   
 5. 按一下 [確定] 。  
   

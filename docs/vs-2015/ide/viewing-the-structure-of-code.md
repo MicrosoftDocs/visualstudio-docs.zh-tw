@@ -28,12 +28,12 @@ caps.latest.revision: 32
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 4d80f8b9a6786d84d645a91dead2ac05a829718b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 1277370ca14044755988affc5ccf2bf1fb851a09
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60115064"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443200"
 ---
 # <a name="viewing-the-structure-of-code"></a>檢視程式碼的結構
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -55,7 +55,7 @@ ms.locfileid: "60115064"
  如果您有 Visual Studio Enterprise，即可使用 Code Map 以視覺方式呈現程式碼的結構，而其相依性適用於整個方案，且能夠向下鑽研至您感興趣的程式碼部分。 如需詳細資訊，請參閱[對應方案之間的相依性](../modeling/map-dependencies-across-your-solutions.md)。  
   
 > [!NOTE]
->  Visual Studio 的版本及您正在使用的設定，可能會影響 IDE 中的功能。 其可能會與本主題中所述內容有所不同。  
+> Visual Studio 的版本及您正在使用的設定，可能會影響 IDE 中的功能。 其可能會與本主題中所述內容有所不同。  
   
 ## <a name="BKMK_ClassView"></a> 類別檢視 (Visual Basic、C#、C++)  
  [類別檢視] 可以顯示為方案總管的一部分，同時也可顯示在另一個視窗中。 [類別檢視] 視窗會顯示應用程式的項目。 上窗格會顯示命名空間、類型、介面、列舉及類別，而下窗格則會顯示屬於上窗格中所選類型的成員。 您使用此視窗可移至原始程式碼中的成員定義 (如果定義在您的方案之外，則會在 [物件瀏覽器] 中)。  

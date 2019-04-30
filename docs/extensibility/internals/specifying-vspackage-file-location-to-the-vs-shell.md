@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c22ab65ac849fdf8bc004c10b246584f0e511cf8
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: d3ea1316efb17bb64472079677c93cfd2b85dcd1
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59664225"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63428917"
 ---
 # <a name="specifying-vspackage-file-location-to-the-vs-shell"></a>為 VS Shell 指定 VSPackage 檔案位置
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 必須是找不到組件載入 VSPackage 的 DLL。 您可以找到以各種方式下, 表中所述。
@@ -29,4 +29,4 @@ ms.locfileid: "59664225"
 | 將放入 DLL **PublicAssemblies**目錄。 | 最後，組件也可以放入**PublicAssemblies**子目錄。 組件位於**PublicAssemblies**會自動偵測，並也會出現在**的 [加入參考**] 對話方塊中的[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]。<br /><br /> VSPackage 組件應該只能置於**PublicAssemblies**如果它們包含的目錄管理是由其他 VSPackage 開發人員重複使用的元件。 大部分的組件不符合此準則。 |
 
 > [!NOTE]
->  使用強式名稱的所有相依組件已簽署組件。 這些組件也應該安裝在您自己的目錄或全域組件快取 (GAC) 中。 這可防止使用具有相同的基底檔案名稱，稱為弱式名稱繫結的組件的衝突。
+> 使用強式名稱的所有相依組件已簽署組件。 這些組件也應該安裝在您自己的目錄或全域組件快取 (GAC) 中。 這可防止使用具有相同的基底檔案名稱，稱為弱式名稱繫結的組件的衝突。
