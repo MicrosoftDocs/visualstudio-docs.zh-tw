@@ -17,12 +17,12 @@ caps.latest.revision: 56
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 7a57e7e42e1cfc2690732881e6702315d1b0f4d4
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 363a9eda86a55da2dd773a2cef5a40fc53f0a81e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60088882"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63424502"
 ---
 # <a name="uml-class-diagrams-guidelines"></a>UML 類別圖：方針
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ ms.locfileid: "60088882"
  若要查看哪些 Visual Studio 版本支援這項功能，請參閱 [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)。  
   
 > [!NOTE]
->  本主題說明 UML 類別圖。 另外有一種類別圖，您可建立並用來視覺化程式碼。 請參閱[設計和檢視類別與類型](http://go.microsoft.com/fwlink/?LinkId=142231)。  
+> 本主題說明 UML 類別圖。 另外有一種類別圖，您可建立並用來視覺化程式碼。 請參閱[設計和檢視類別與類型](http://go.microsoft.com/fwlink/?LinkId=142231)。  
   
 ## <a name="Using"></a> 使用 UML 類別圖  
  您可以將 UML 類別圖用於各種目的：  
@@ -82,7 +82,7 @@ ms.locfileid: "60088882"
  如需 UML 類別圖 參考之元素的相關資訊，請參閱[UML 類別圖：參考資料](../modeling/uml-class-diagrams-reference.md)。  
   
 > [!NOTE]
->  建立任何模型圖的詳細的步驟所述[編輯 UML 模型和圖表](../modeling/edit-uml-models-and-diagrams.md)。  
+> 建立任何模型圖的詳細的步驟所述[編輯 UML 模型和圖表](../modeling/edit-uml-models-and-diagrams.md)。  
   
 #### <a name="to-create-a-uml-class-diagram"></a>若要建立 UML 類別圖  
   
@@ -185,7 +185,7 @@ ms.locfileid: "60088882"
   您也可以撰寫尚未在模型中定義的類型名稱。 名稱將列在下**未指定的型別**UML 模型總管 中。  
   
 > [!NOTE]
->  如果您後續在模型中定義了使用該名稱的類別或介面，較舊的屬性和作業仍將參考 [未指定的類型] 中的項目。 如果要使其改為參考新類別，您必須審視每個屬性或作業並重設類型，從下拉式功能表選取新類別。  
+> 如果您後續在模型中定義了使用該名稱的類別或介面，較舊的屬性和作業仍將參考 [未指定的類型] 中的項目。 如果要使其改為參考新類別，您必須審視每個屬性或作業並重設類型，從下拉式功能表選取新類別。  
   
 #### <a name="multiple-types"></a>多個類型  
  您可以設定任何屬性、作業或參數類型的多重性。  
@@ -262,7 +262,7 @@ visibility attribute-name : Type
 visibility operation-name (parameter1 : Type1, ...) : Type  
 ```  
   
- 例如:   
+ 例如：  
   
 ```  
 + AddItem (item : MenuItem, quantity : Integer) : Boolean  
@@ -273,9 +273,9 @@ visibility operation-name (parameter1 : Type1, ...) : Type
  每個類型都可以是在模型中已定義的類型、標準類型 (例如 Integer 或 String) 或尚未定義的新類型名稱。  
   
 > [!NOTE]
->  如果撰寫參數清單中沒有類型的名稱，則會指出參數的名稱，而非類型。 在以下範例中，MenuItem 和 Integer 成為具有未指定類型的兩個參數名稱：  
+> 如果撰寫參數清單中沒有類型的名稱，則會指出參數的名稱，而非類型。 在以下範例中，MenuItem 和 Integer 成為具有未指定類型的兩個參數名稱：  
 >   
->  `AddItem(MenuItem, Integer) /* parameter names, not types! */`  
+> `AddItem(MenuItem, Integer) /* parameter names, not types! */`  
   
  若要在簽章中設定類型的多重性，請在類型名稱後面的方括弧中撰寫多重性，例如：  
   
@@ -289,7 +289,7 @@ visibility operation-name (parameter1 : Type1, ...) : Type
  不過，您只能設定**Is Static**並**Is Abstract**中的屬性**屬性**視窗。  
   
 #### <a name="full-signature"></a>完整簽章  
- 編輯屬性 (Attribute) 或作業的簽章時，部分其他屬性 (Property) 可能出現在行的結尾、每個參數之後。 它們在大括號 {…} 之中顯示。 您可以編輯或加入這些屬性。 例如:   
+ 編輯屬性 (Attribute) 或作業的簽章時，部分其他屬性 (Property) 可能出現在行的結尾、每個參數之後。 它們在大括號 {…} 之中顯示。 您可以編輯或加入這些屬性。 例如：  
   
 ```  
 + AddItems (items: MenuItem [1..*] {unique, ordered})  

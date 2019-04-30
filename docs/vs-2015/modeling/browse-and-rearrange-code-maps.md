@@ -24,12 +24,12 @@ caps.latest.revision: 91
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 9b9744cf6d3ff8be30d06ffa877f96940fd20a24
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: ffb29ee31390c512802bfd16c7b94333d0c6c403
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60055245"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433414"
 ---
 # <a name="browse-and-rearrange-code-maps"></a>瀏覽和重新排列 Code Map
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -103,7 +103,7 @@ ms.locfileid: "60055245"
 - 彙總連結表示兩個群組間，指向相同方向的所有關聯性。  
   
 > [!TIP]
->  對應預設只顯示選取節點的跨群組連結。 若要變更此行為，以顯示或隱藏群組之間的彙總的連結，請按一下**版面配置**程式碼對應 工具列，然後選擇**進階**，然後**顯示所有跨群組連結**或**隱藏所有跨群組連結**。 請參閱[隱藏或顯示節點和連結](#HidingShowing)如需詳細資訊。  
+> 對應預設只顯示選取節點的跨群組連結。 若要變更此行為，以顯示或隱藏群組之間的彙總的連結，請按一下**版面配置**程式碼對應 工具列，然後選擇**進階**，然後**顯示所有跨群組連結**或**隱藏所有跨群組連結**。 請參閱[隱藏或顯示節點和連結](#HidingShowing)如需詳細資訊。  
   
 |**若要**|**執行下列步驟**|  
 |------------|-----------------------------|  
@@ -118,7 +118,7 @@ ms.locfileid: "60055245"
  隱藏節點可防止節點參與配置演算法。 根據預設，跨群組連結是隱藏的。 跨群組連結是連接不同群組節點的個別連結。 當群組摺疊起來時，對應會將所有跨群組連結彙總成單一的群組間連結。 當您展開一個群組並選取群組內的節點時，跨群組連結會出現並顯示該群組中的相依性。  
   
 > [!CAUTION]
->  在您要與使用 Visual Studio Professional 的人共用 Visual Studio Enterprise 建立的對應之前，請確保取消隱藏所有您要讓其他人看到的所有節點或跨群組連結。 否則，那些使用者將無法取消隱藏這些項目。  
+> 在您要與使用 Visual Studio Professional 的人共用 Visual Studio Enterprise 建立的對應之前，請確保取消隱藏所有您要讓其他人看到的所有節點或跨群組連結。 否則，那些使用者將無法取消隱藏這些項目。  
   
 ### <a name="to-hide-or-show-nodes"></a>隱藏或顯示節點  
   
@@ -153,7 +153,7 @@ ms.locfileid: "60055245"
  您可以顯示更多或較少的對應項目，以便向下鑽研或簡化對應。 也可以重新命名項目，並將註解加入項目。  
   
 > [!CAUTION]
->  在您與 Visual Professional 的使用者共用以 Visual Studio Enterprise 建立的對應之前，請確認您想讓其他人查看的程式碼項目都顯示在對應上。 否則，那些使用者將無法擷取已刪除的程式碼項目。  
+> 在您與 Visual Professional 的使用者共用以 Visual Studio Enterprise 建立的對應之前，請確認您想讓其他人查看的程式碼項目都顯示在對應上。 否則，那些使用者將無法擷取已刪除的程式碼項目。  
   
 ### <a name="add-a-node-for-a-code-element"></a>為程式碼項目加入節點  
   
@@ -267,7 +267,7 @@ ms.locfileid: "60055245"
 3. 如果清單不包含分類或屬性，請選擇**+** 中**圖例**，然後選擇**節點屬性**，**節點類別**，**連結屬性**，或**連結類別**。 再選擇屬性或類別。 類別或屬性現在會出現在**圖例** 方塊中。  
   
     > [!NOTE]
-    >  若要建立並將類別或屬性指派給程式碼項目，您可以編輯對應的.dgml 檔案;請參閱[藉由編輯 DGML 檔案自訂 code map](../modeling/customize-code-maps-by-editing-the-dgml-files.md)。  
+    > 若要建立並將類別或屬性指派給程式碼項目，您可以編輯對應的.dgml 檔案;請參閱[藉由編輯 DGML 檔案自訂 code map](../modeling/customize-code-maps-by-editing-the-dgml-files.md)。  
   
 4. 在 **圖例**方塊中，按一下 類別目錄或您加入的屬性旁邊的圖示或您想要變更。  
   
@@ -290,7 +290,7 @@ ms.locfileid: "60055245"
     |特定的色彩或圖示|開啟類別或屬性值的清單。 選取色彩或圖示。|  
   
     > [!NOTE]
-    >  您可以重新排列、 刪除或暫時停用中的樣式**圖例** 方塊中。 請參閱[編輯 [圖例] 方塊](#ModifyLegend)。  
+    > 您可以重新排列、 刪除或暫時停用中的樣式**圖例** 方塊中。 請參閱[編輯 [圖例] 方塊](#ModifyLegend)。  
   
 ## <a name="ModifyLegend"></a> 編輯 [圖例] 方塊  
  您可以重新排列、 刪除或暫時停用中的樣式**圖例**方塊：  

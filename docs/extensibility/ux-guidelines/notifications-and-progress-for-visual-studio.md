@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: dc5ddb4561c2c353271babe590a9e5b2b3c2e510
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: a783d19136998bbc9a18daa975c1db87bda19779
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60044286"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63428740"
 ---
 # <a name="notifications-and-progress-for-visual-studio"></a>通知和適用於 Visual Studio 的進度
 ## <a name="BKMK_NotificationSystems"></a> 通知系統
@@ -417,7 +417,7 @@ private bool TryCreateInfoBarUI(IVsInfoBar infoBar, out IVsInfoBarUIElement uiEl
 - 內文件索引標籤
 
 > [!IMPORTANT]
->  可以定位資訊列提供給全域內容的相關訊息。 工具列和文件區域之間會出現此選項。 這因為這會導致 「 跳和 jerk 」 的問題不建議使用的 IDE，應該加以避免，除非絕對必要且適當。
+> 可以定位資訊列提供給全域內容的相關訊息。 工具列和文件區域之間會出現此選項。 這因為這會導致 「 跳和 jerk 」 的問題不建議使用的 IDE，應該加以避免，除非絕對必要且適當。
 
 #### <a name="placing-an-infobar-in-a-toolwindowpane"></a>資訊列置於 ToolWindowPane
  ToolWindowPane.AddInfoBar(IVsInfoBar) 方法可用來加入工具視窗中的資訊列。 此 API 可以將新增的 IVsInfoBar （哪些 InfoBarModel 為預設的實作），或 IVsUIElement。

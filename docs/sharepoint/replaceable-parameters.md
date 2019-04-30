@@ -14,12 +14,12 @@ author: John-Hart
 ms.author: johnhart
 manager: jillfra
 ms.workload: office
-ms.openlocfilehash: d85e125ee09d459d23b3b709f58d5af43e76e984
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 165ef1256a0150e0942d85c4f876c8b3f5e15c72
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56611863"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63422907"
 ---
 # <a name="replaceable-parameters"></a>可置換的參數
   可置換的參數，或*語彙基元*，可以使用專案檔內，以提供其實際的值不在設計階段已知的 SharePoint 方案項目中的值。 它們是類似的函式中的標準[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]範本語彙基元。 如需詳細資訊，請參閱 <<c0> [ 範本參數](../ide/template-parameters.md)。
@@ -86,7 +86,7 @@ ms.locfileid: "56611863"
   不過，您可以將其他副檔名加入清單。 新增`<TokenReplacementFileExtensions>`之前會定義 SharePoint 專案檔中的任何 PropertyGroup 項目\<匯入 > 的 於 SharePoint 目標檔。
 
 > [!NOTE]
->  編譯專案之後，就會發生語彙基元取代，因為您不應該新增會進行編譯，這類的檔案類型的檔案副檔名 *.cs*， *.vb*或是 *.resx*。 Token 已被取代，只在未編譯的檔案。
+> 編譯專案之後，就會發生語彙基元取代，因為您不應該新增會進行編譯，這類的檔案類型的檔案副檔名 *.cs*， *.vb*或是 *.resx*。 Token 已被取代，只在未編譯的檔案。
 
  例如，若要新增的檔案名稱副檔名 (*.myextension*並 *.yourextension*) 的語彙基元取代檔案名稱的副檔名清單，您會將下列內容新增至專案 (*.csproj*) 檔案：
 

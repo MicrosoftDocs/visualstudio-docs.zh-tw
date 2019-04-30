@@ -10,12 +10,12 @@ ms.assetid: 64b772ad-4392-42e9-a237-5137f0384bf0
 caps.latest.revision: 43
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: c263dfaa6f2326f6ed43c596cad4b96404443d17
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 512d2aaffe64ea6ed17e909d9177aad74c654462
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60076587"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63408784"
 ---
 # <a name="walkthrough-highlighting-text"></a>逐步解說：反白顯示文字
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -353,7 +353,7 @@ ms.locfileid: "60076587"
  若要建立您的標記者，您必須實作<xref:Microsoft.VisualStudio.Text.Tagging.IViewTaggerProvider>。 這個類別會是 MEF 元件的組件，因此您必須設定正確的屬性，這樣才能被辨認此延伸模組。  
   
 > [!NOTE]
->  如需 MEF 的詳細資訊，請參閱[Managed Extensibility Framework (MEF)](http://msdn.microsoft.com/library/6c61b4ec-c6df-4651-80f1-4854f8b14dde)。  
+> 如需 MEF 的詳細資訊，請參閱[Managed Extensibility Framework (MEF)](http://msdn.microsoft.com/library/6c61b4ec-c6df-4651-80f1-4854f8b14dde)。  
   
 #### <a name="to-create-a-tagger-provider"></a>若要建立的標記者提供者  
   

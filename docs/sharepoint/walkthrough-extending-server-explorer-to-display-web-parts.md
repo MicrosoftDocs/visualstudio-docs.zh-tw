@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 29fcd40a2fc64a12ed7b29845b0a9f0ea3db5589
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 5ef444d78e5a486f9e384ea02d1eb88461e3fce2
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60040568"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63430331"
 ---
 # <a name="walkthrough-extend-server-explorer-to-display-web-parts"></a>逐步解說：擴充伺服器總管以顯示 web 組件
   在 Visual Studio 中，您可以使用**SharePoint 連線**節點**伺服器總管**檢視 SharePoint 網站上的元件。 不過，**伺服器總管**預設不會顯示某些元件。 在本逐步解說中，您將會延長**伺服器總管**，以顯示 Web 組件庫上每個連線的 SharePoint 網站。
@@ -40,7 +40,7 @@ ms.locfileid: "60040568"
 - 偵錯和測試延伸模組。
 
 > [!NOTE]
->  使用適用於 SharePoint 的用戶端物件模型，而其伺服器物件模型不是本逐步解說的替代版本，請參閱[逐步解說：呼叫 SharePoint 用戶端物件模型，在 伺服器總管延伸模組](../sharepoint/walkthrough-calling-into-the-sharepoint-client-object-model-in-a-server-explorer-extension.md)。
+> 使用適用於 SharePoint 的用戶端物件模型，而其伺服器物件模型不是本逐步解說的替代版本，請參閱[逐步解說：呼叫 SharePoint 用戶端物件模型，在 伺服器總管延伸模組](../sharepoint/walkthrough-calling-into-the-sharepoint-client-object-model-in-a-server-explorer-extension.md)。
 
 ## <a name="prerequisites"></a>必要條件
  您需要完成這個逐步解說在開發電腦上的下列元件：
@@ -75,7 +75,7 @@ ms.locfileid: "60040568"
 3. 中**新的專案**對話方塊方塊中，展開**Visual C#** 或**Visual Basic**節點，然後選擇**擴充性**節點。
 
     > [!NOTE]
-    >  **擴充性**節點才會提供您安裝 Visual Studio SDK。 如需詳細資訊，請參閱稍早在本主題中的必要條件 > 一節。
+    > **擴充性**節點才會提供您安裝 Visual Studio SDK。 如需詳細資訊，請參閱稍早在本主題中的必要條件 > 一節。
 
 4. 在對話方塊頂端，選擇 **.NET Framework 4.5**清單中的.NET Framework 版本。
 
@@ -211,7 +211,7 @@ ms.locfileid: "60040568"
 1. 在 WebPartNodeExtension 專案中，開啟 SiteNodeExtension 程式碼檔案，並接著將下列程式碼貼到它。
 
     > [!NOTE]
-    >  新增下列程式碼，專案會有某些編譯錯誤，但它們就會消失之後當您加入程式碼在稍後的步驟。
+    > 新增下列程式碼，專案會有某些編譯錯誤，但它們就會消失之後當您加入程式碼在稍後的步驟。
 
      [!code-csharp[SPExtensibility.SPExplorer.WebPartNodeWithCommands#1](../sharepoint/codesnippet/CSharp/WebPartNode/webpartnodeextension/sitenodeextension.cs#1)]
      [!code-vb[SPExtensibility.SPExplorer.WebPartNodeWithCommands#1](../sharepoint/codesnippet/VisualBasic/spextensibility.spexplorer.webpartnodewithcommands.webpartnode/webpartnodeextension/sitenodeextension.vb#1)]
@@ -266,7 +266,7 @@ ms.locfileid: "60040568"
 1. 在功能表列上選擇 [建置] > [建置解決方案]。
 
     > [!WARNING]
-    >  到目前為止，WebPartNode 專案可能有建置錯誤，因為在 VSIX 資訊清單檔案不具有任何值給作者。 當您將在稍後步驟中的值，這個錯誤就會消失運作。
+    > 到目前為止，WebPartNode 專案可能有建置錯誤，因為在 VSIX 資訊清單檔案不具有任何值給作者。 當您將在稍後步驟中的值，這個錯誤就會消失運作。
 
 ## <a name="create-a-vsix-package-to-deploy-the-extension"></a>建立 VSIX 封裝，來部署擴充功能
  若要建立 VSIX 封裝部署擴充功能，請在解決方案中使用 VSIX 專案。 首先，設定 VSIX 套件藉由修改 source.extension.vsixmanifest 檔案中的，在 VSIX 專案。 建立方案，然後建立 VSIX 封裝。
@@ -290,7 +290,7 @@ ms.locfileid: "60040568"
 6. 在 **型別**清單中，選擇**Microsoft.VisualStudio.MefComponent**。
 
     > [!NOTE]
-    >  這個值會對應到`MefComponent`extension.vsixmanifest 檔案中的項目。 這個元素會指定在 VSIX 封裝中的延伸模組組件名稱。 如需詳細資訊，請參閱 < [MEFComponent 項目 （VSX 結構描述）](/previous-versions/visualstudio/visual-studio-2010/dd393736\(v\=vs.100\))。
+    > 這個值會對應到`MefComponent`extension.vsixmanifest 檔案中的項目。 這個元素會指定在 VSIX 封裝中的延伸模組組件名稱。 如需詳細資訊，請參閱 < [MEFComponent 項目 （VSX 結構描述）](/previous-versions/visualstudio/visual-studio-2010/dd393736\(v\=vs.100\))。
 
 7. 在 **來源**清單中，選擇**目前方案中的專案**。
 
@@ -303,7 +303,7 @@ ms.locfileid: "60040568"
 10. 在 **型別**方塊中，輸入**SharePoint.Commands.v4**。
 
     > [!NOTE]
-    >  這個元素會指定您想要包含在 Visual Studio 擴充功能的自訂延伸模組。 如需詳細資訊，請參閱 <<c0> [ 資產項目 （VSX 結構描述）](https://msdn.microsoft.com/9fcfc098-edc7-484b-9d4c-acd17829d737)。
+    > 這個元素會指定您想要包含在 Visual Studio 擴充功能的自訂延伸模組。 如需詳細資訊，請參閱 <<c0> [ 資產項目 （VSX 結構描述）](https://msdn.microsoft.com/9fcfc098-edc7-484b-9d4c-acd17829d737)。
 
 11. 在 **來源**清單中，選擇**目前方案中的專案**清單項目。
 

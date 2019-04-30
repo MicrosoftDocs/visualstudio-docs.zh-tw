@@ -12,12 +12,12 @@ caps.latest.revision: 23
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: c40c2f824518ed00dacc41094c1b567f5de248ae
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 68decc73e14f8748d8434e05e50d6d3b48612d40
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60112815"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436775"
 ---
 # <a name="collecting-net-memory-allocation-and-lifetime-data"></a>收集 .NET 記憶體配置和存留期資料
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ ms.locfileid: "60112815"
 - [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)]、[!INCLUDE[vsPreLong](../includes/vsprelong-md.md)]、[!INCLUDE[vsPro](../includes/vspro-md.md)]  
   
 > [!NOTE]
->  Windows 8 和 Windows Server 2012 增強式安全性功能需要的重大變更，會以 Visual Studio 分析工具在這些平台收集資料的方式表現。 Windows 市集應用程式也需要新的資料收集技術。 請參閱 [Windows 8 和 Windows Server 2012 應用程式的效能工具](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md)。  
+> Windows 8 和 Windows Server 2012 增強式安全性功能需要的重大變更，會以 Visual Studio 分析工具在這些平台收集資料的方式表現。 Windows 市集應用程式也需要新的資料收集技術。 請參閱 [Windows 8 和 Windows Server 2012 應用程式的效能工具](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md)。  
   
  您可以使用取樣或檢測分析方法來收集資料。  
   
@@ -42,7 +42,7 @@ ms.locfileid: "60112815"
 - 當您使用檢測方法時，分析工具會追蹤由檢測模組所產生的 .NET 記憶體配置和物件。  
   
 > [!IMPORTANT]
->  當您使用取樣方法收集 .NET 記憶體資料 (配置、物件存留期，或兩者)，則會忽略所有使用者指定的取樣事件，並使用適當的記憶體配置事件來收集資料。  
+> 當您使用取樣方法收集 .NET 記憶體資料 (配置、物件存留期，或兩者)，則會忽略所有使用者指定的取樣事件，並使用適當的記憶體配置事件來收集資料。  
   
  如果您啟用 .NET 記憶體配置的分析，也可以啟用 [配置檢視]。 如果您啟用 .NET 存留期資料的分析，也可以啟用 [物件存留期檢視]。 如需詳細資訊，請參閱[配置檢視](../profiling/dotnet-memory-allocations-view.md)和[物件存留期檢視](../profiling/object-lifetime-view.md)。  
   

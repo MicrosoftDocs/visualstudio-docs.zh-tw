@@ -11,16 +11,16 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f466473bcc811a688f06e6cf4cdd8b4fc8e80648
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.openlocfilehash: e6fdbdcdf292d90fc63758c2b7d183225e63a850
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56700246"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63411322"
 ---
 # <a name="common-language-runtime-and-expression-evaluation"></a>Common language runtime 和運算式評估
 > [!IMPORTANT]
->  在 Visual Studio 2015 中，這種實作運算式評估工具已被取代。 如需實作 CLR 運算式評估工具的資訊，請參閱[CLR 運算式評估工具](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators)並[Managed 運算式評估工具範例](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)。
+> 在 Visual Studio 2015 中，這種實作運算式評估工具已被取代。 如需實作 CLR 運算式評估工具的資訊，請參閱[CLR 運算式評估工具](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators)並[Managed 運算式評估工具範例](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)。
 
  編譯器，例如 Visual Basic 和 C# （唸成 c-sharp），以 Common Language Runtime (CLR) 為目標，產生 Microsoft Intermediate Language (MSIL)，也就是更新版本編譯為原生程式碼。 CLR 提供偵錯引擎 (DE) 產生的程式碼偵錯。 如果您打算將您專屬的程式語言整合到 Visual Studio IDE，您可以選擇 編譯為 MSIL，並因此將不需要撰寫您自己的裝置。 不過，您必須撰寫能夠評估您的程式語言的內容中運算式的運算式評估工具 (EE)。
 

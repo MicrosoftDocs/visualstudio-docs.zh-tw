@@ -21,12 +21,12 @@ caps.latest.revision: 47
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: c690e0c009e50cbb98b6dc4f61c1dc6284443edf
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: f79ece781db19f2483ef1dd6cb0a81ff7cf78e06
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60074332"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63430974"
 ---
 # <a name="navigating-through-code-with-the-debugger"></a>使用偵錯工具巡覽程式碼
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -54,7 +54,7 @@ ms.locfileid: "60074332"
  若要停止偵錯時每一行程式碼 （每個陳述式），使用**F11**鍵盤快速鍵 (或**偵錯** / **逐步執行**功能表上)。  
   
 > [!TIP]
->  當您執行每一行程式碼時，您可以暫留變數，以查看其值，或是使用[區域變數](../debugger/autos-and-locals-windows.md)並[監看式](../debugger/autos-and-locals-windows.md)監看變更其值的 windows。  
+> 當您執行每一行程式碼時，您可以暫留變數，以查看其值，或是使用[區域變數](../debugger/autos-and-locals-windows.md)並[監看式](../debugger/autos-and-locals-windows.md)監看變更其值的 windows。  
   
  以下是一些詳細的行為**逐步執行**:  
   
@@ -87,7 +87,7 @@ ms.locfileid: "60074332"
 |**Shift+F11**|**跳離函式**|**跳離函式**會繼續執行程式碼和目前的函式會傳回 （偵錯工具會略過透過目前的函式） 時，會暫停執行。|  
   
 > [!TIP]
->  如果您要尋找應用程式中的進入點，以啟動**F10**或是**F11**。 當您要檢查您的應用程式狀態，或想要深入了解其執行流程時，這些命令通常是很有幫助。  
+> 如果您要尋找應用程式中的進入點，以啟動**F10**或是**F11**。 當您要檢查您的應用程式狀態，或想要深入了解其執行流程時，這些命令通常是很有幫助。  
   
 ## <a name="BKMK_Break_into_code_by_using_breakpoints_or_Break_All"></a> 執行至特定位置或函式  
  通常的偵錯程式碼的慣用的方法，這些方法可用於當您知道實際程式的碼內容您想要檢查，或至少您知道您要開始偵錯。  
@@ -140,7 +140,7 @@ ms.locfileid: "60074332"
 - 在 反組譯碼 視窗中，將游標放在您想要執行接下來，以滑鼠右鍵按一下組譯碼指令，然後選擇 **設定下一個陳述式**。  
   
 > [!CAUTION]
->  設定下一個陳述式會導致程式計數器直接跳至新的位置。 使用這個命令時請務必要注意：  
+> 設定下一個陳述式會導致程式計數器直接跳至新的位置。 使用這個命令時請務必要注意：  
 > 
 > - 不會執行舊與新執行點之間的指令  
 >   - 如果將執行點向後移，並不會復原中間的指令  
@@ -149,7 +149,7 @@ ms.locfileid: "60074332"
 >   - 啟用 [編輯後繼續] 時，如果您進行了 [編輯後繼續] 無法立即重新對應的編輯作業，[ **設定下一個陳述式** ] 就會失敗。 舉例來說，如果您編輯了 catch 區塊內的程式碼，就會發生這種情況。 當發生這種情況時，您將會看到一則錯誤訊息，說明不支援此作業。  
 > 
 > [!NOTE]
->  在 Managed 程式碼中，您無法在下列情況中移動下一個陳述式：  
+> 在 Managed 程式碼中，您無法在下列情況中移動下一個陳述式：  
 > 
 > - 下一個陳述式是在與目前陳述式不同的方法中  
 >   - 使用 Just-In-Time 偵錯啟動偵錯。  
@@ -166,7 +166,7 @@ ms.locfileid: "60074332"
  停用 Just My Code 時，偵錯工具可以逐步執行非使用者程式碼和非使用者程式碼會出現在偵錯工具視窗。  
   
 > [!NOTE]
->  裝置專案不支援 Just My Code。  
+> 裝置專案不支援 Just My Code。  
   
  **逐步執行系統呼叫**  
   

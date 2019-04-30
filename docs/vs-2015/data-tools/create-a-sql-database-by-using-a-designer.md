@@ -25,12 +25,12 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 robots: noindex,nofollow
-ms.openlocfilehash: acab2df1ff39d5f245baf27642f1ab71104671a7
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: f816095992379748b6d1888b5df54dc5433a8306
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60069779"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436960"
 ---
 # <a name="create-a-sql-database-by-using-a-designer"></a>使用設計工具建立 SQL database
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -180,14 +180,14 @@ ms.locfileid: "60069779"
 6. 加入至少三筆訂單的資料。  
   
     > [!IMPORTANT]
-    >  確定所有訂單 ID 和訂單數量都是整數，而且每個客戶 ID 都符合您在 Customers 資料表的 CustomerID 資料行中指定的值。  
+    > 確定所有訂單 ID 和訂單數量都是整數，而且每個客戶 ID 都符合您在 Customers 資料表的 CustomerID 資料行中指定的值。  
   
 7. 在功能表列上選取**檔案** > **全部儲存**。  
   
 8. 在功能表列上選取**檔案** > **關閉方案**。  
   
     > [!NOTE]
-    >  最佳做法是，複製資料庫檔案，然後將複本貼到其他位置或為複本指定不同的名稱，以此方式備份剛建立的資料庫檔案。  
+    > 最佳做法是，複製資料庫檔案，然後將複本貼到其他位置或為複本指定不同的名稱，以此方式備份剛建立的資料庫檔案。  
   
 ## <a name="next-steps"></a>後續步驟  
  有一些範例資料的本機資料庫檔案之後，您可以完成任何示範資料庫工作的逐步解說。

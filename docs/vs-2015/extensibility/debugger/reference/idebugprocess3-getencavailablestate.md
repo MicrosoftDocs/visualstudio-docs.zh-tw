@@ -12,12 +12,12 @@ ms.assetid: 98a5d527-8a72-476c-8e92-0bff3d97c195
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 17bf401b9992d156fdaba60ae46bffde6f8ce8cc
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 5cf5941ff75360c64add85e72a4c02c3ad716309
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58930397"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63405669"
 ---
 # <a name="idebugprocess3getencavailablestate"></a>IDebugProcess3::GetENCAvailableState
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -46,7 +46,7 @@ int GetENCAvailableState(
  如果成功，則傳回`S_OK`，否則會傳回錯誤碼。  
   
 > [!NOTE]
->  自訂連接埠供應商應該一律傳回`E_NOTIMPL`。  
+> 自訂連接埠供應商應該一律傳回`E_NOTIMPL`。  
   
 ## <a name="remarks"></a>備註  
  此狀態可能會受到[DisableENC](../../../extensibility/debugger/reference/idebugprocess3-disableenc.md)。  

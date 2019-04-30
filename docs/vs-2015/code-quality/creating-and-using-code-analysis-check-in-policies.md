@@ -11,22 +11,22 @@ caps.latest.revision: 41
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 2aef2183cde96bfb5faa1bb62fa341f901dd7018
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 274aa497e004ddafee9a56b028f3001bb8deb630
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58939376"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437090"
 ---
 # <a name="creating-and-using-code-analysis-check-in-policies"></a>建立和使用程式碼分析簽入原則
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-當您使用 Team Foundation 版本控制 (TFVC) 時，您可以建立.NET Framework 和原生 （C/c + +） 程式碼專案的 team 專案中的程式碼分析簽入原則。 您可以使用程式碼分析簽入原則來控制及改善簽入程式碼基底的程式碼品質。  
+當您使用 Team Foundation 版本控制 (TFVC) 時，您可以建立以程式碼分析簽入原則適用於.NET Framework 和原生 (C /C++) 程式碼專案的 team 專案中。 您可以使用程式碼分析簽入原則來控制及改善簽入程式碼基底的程式碼品質。  
   
  當本機組建是最新狀態，並已執行的最新的來源檔案的程式碼分析時，就會通過此原則。 最少的程式碼專案中已啟用程式碼分析規則都必須包含相同的 team 專案簽入原則中所定義的規則。 在被指定為 Team 專案設定中的錯誤的規則也必須指定為程式碼專案中的錯誤  
   
 > [!IMPORTANT]
->  程式碼分析簽入原則不適用於網站專案。 它們可以套用至 web 應用程式專案。  
+> 程式碼分析簽入原則不適用於網站專案。 它們可以套用至 web 應用程式專案。  
   
  您使用的 Team 專案設定來建立程式碼分析簽入原則[!INCLUDE[esprscc](../includes/esprscc-md.md)]。 簽入原則指定，並針對 team 專案時，強制執行，但設定程式碼分析回合而且在本機開發電腦上執行的個別程式碼專案。 本章節描述如何指定程式碼分析簽入原則，為 team 專案以及如何實作 managed 程式碼的自訂程式碼分析原則。  
   

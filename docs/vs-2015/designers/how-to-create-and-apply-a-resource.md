@@ -12,12 +12,12 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c6b387acd7494396d118915f94a93ca88ec67199
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 47c7385ba54e432e42575f5b8cbae29172ddf62b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60118223"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63434464"
 ---
 # <a name="how-to-create-and-apply-a-resource"></a>如何建立和套用資源
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -63,7 +63,7 @@ XAML 設計工具中的項目樣式和樣板會儲存在可重複使用的實體
    - 將樣式或控制項樣板資源套用至控制項。 開啟 [文件大綱] 視窗中控制項的操作功能表，選擇 [編輯範本] 或 [編輯其他範本]、選擇 [套用資源]，然後從出現的清單中選擇控制項範本的名稱。  
   
      > [!NOTE]
-     >  [編輯範本] 可用來套用控制項範本。 [編輯其他範本] 可用來套用其他範本類型。  
+     > [編輯範本] 可用來套用控制項範本。 [編輯其他範本] 可用來套用其他範本類型。  
   
      資源可套用至任何相容位置。 例如，筆刷資源可以套用至 <xref:Windows.UI.Xaml.Controls.TextBox> 控制項的 **Foreground** 屬性。  
   

@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: faecd527c0b9b442a163df0bdd749b8183163d03
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 7d9142e92367dd10653bb8fdaaf86c34f3f17b84
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60114637"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63399241"
 ---
 # <a name="error-workgroup-remote-logon-failure"></a>錯誤：工作群組遠端登入失敗
 這個錯誤為：
@@ -39,7 +39,7 @@ ms.locfileid: "60114637"
 - 如果 Visual Studio 電腦和遠端電腦都位於工作群組中，則發生這個錯誤的原因，可能是因為遠端電腦上的預設 [本機安全性原則] 設定。 [本機安全性原則] 的預設設定是 [僅適用於來賓 - 本機使用者以來賓身分驗證]。 若要在此設定上偵錯，您必須將遠端電腦上的設定變更為 [一般 - 本機使用者以自我身分驗證]。
 
 > [!NOTE]
->  您必須是系統管理員，才能進行下列工作。
+> 您必須是系統管理員，才能進行下列工作。
 
 ### <a name="to-open-the-local-security-policy-window"></a>若要開啟本機安全性原則視窗
 

@@ -13,12 +13,12 @@ caps.latest.revision: 38
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ccf761521d43e3f5ff9d12a4af7fbae4addcddc9
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: f956f492c3dc690ef2edb67d9a7c75e6c0108820
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60100517"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433276"
 ---
 # <a name="customizing-element-creation-and-movement"></a>自訂項目的建立和移動
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -72,9 +72,9 @@ ms.locfileid: "60100517"
    比方說，您可以使用模型中的新位置中的資料，合併的項目中設定屬性。  
   
 > [!NOTE]
->  如果您撰寫自訂的合併程式碼時，它會影響只使用此 EMD 執行的合併。 如果合併相同類型的物件，其他 EMDs，或如果沒有其他自訂程式碼，而不需使用 EMD 會建立這些物件，然後它們將不會影響您的自訂合併程式碼。  
+> 如果您撰寫自訂的合併程式碼時，它會影響只使用此 EMD 執行的合併。 如果合併相同類型的物件，其他 EMDs，或如果沒有其他自訂程式碼，而不需使用 EMD 會建立這些物件，然後它們將不會影響您的自訂合併程式碼。  
 >   
->  如果您想要確定新的項目或新的關聯性一律處理您的自訂程式碼，請考慮定義`AddRule`上的內嵌關聯性和`DeleteRule`項目的網域類別上。 如需詳細資訊，請參閱 <<c0> [ 規則傳播變更內模型](../modeling/rules-propagate-changes-within-the-model.md)。  
+> 如果您想要確定新的項目或新的關聯性一律處理您的自訂程式碼，請考慮定義`AddRule`上的內嵌關聯性和`DeleteRule`項目的網域類別上。 如需詳細資訊，請參閱 <<c0> [ 規則傳播變更內模型](../modeling/rules-propagate-changes-within-the-model.md)。  
   
 ## <a name="example-defining-an-emd-without-custom-code"></a>範例：定義 EMD 不需要自訂程式碼  
  下列範例可讓使用者在同一時間建立項目和連接器，從工具箱拖曳至 「 現有 」 圖形拖曳。 此範例會將 EMD 加入至 DSL 定義中。 之前這項修改，使用者可以將工具拖曳至圖表，但不是到現有的圖形。  

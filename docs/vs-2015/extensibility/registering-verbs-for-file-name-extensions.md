@@ -10,12 +10,12 @@ ms.assetid: 81a58e40-7cd0-4ef4-a475-c4e1e84d6e06
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: ff021643313d267cc92d2f08afa8f41a3ce806b5
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: bb8270de3635b6a9d28a6bf550b29a014d0fed9f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58945551"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432542"
 ---
 # <a name="registering-verbs-for-file-name-extensions"></a>註冊適用於副檔名的動詞命令
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,7 +40,7 @@ ms.locfileid: "58945551"
   可能的話，請註冊一個標準動詞。 最常見的方式是開啟的動詞命令。 只有當沒有清楚的差異開啟檔案，並編輯檔案，請使用編輯動詞命令。 例如，開啟的.htm 檔案被它顯示在瀏覽器中，而編輯的.htm 檔案被啟動 HTML 編輯器。 標準動詞命令已當地語系化的作業系統地區設定。  
   
 > [!NOTE]
->  註冊時的標準動詞，未設定開啟的索引鍵的預設值。 預設值會包含在功能表上的顯示字串。 作業系統會提供這個標準動詞命令的字串。  
+> 註冊時的標準動詞，未設定開啟的索引鍵的預設值。 預設值會包含在功能表上的顯示字串。 作業系統會提供這個標準動詞命令的字串。  
   
  專案檔應該要啟動的新執行個體註冊[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]當使用者在開啟的檔案。 下列範例說明的標準動詞註冊[!INCLUDE[csprcs](../includes/csprcs-md.md)]專案。  
   
@@ -111,7 +111,7 @@ ms.locfileid: "58945551"
  預設的動詞命令是使用者按兩下 Windows 檔案總管中的檔案時所執行的動作。 預設的動詞命令為動詞命令指定為預設值的 HKEY_CLASSES_ROOT\\*progid*\Shell 索引鍵。 如果未不指定任何值，預設的動詞命令是指定 HKEY_CLASSES_ROOT 裡的第一個指令動詞\\*progid*\Shell 索引鍵清單。  
   
 > [!NOTE]
->  如果您想要變更預設的並排顯示部署中的延伸模組的動詞命令，請考慮對安裝與移除的影響。 在安裝期間會覆寫原始的預設值。  
+> 如果您想要變更預設的並排顯示部署中的延伸模組的動詞命令，請考慮對安裝與移除的影響。 在安裝期間會覆寫原始的預設值。  
   
 ## <a name="see-also"></a>另請參閱  
  [管理並存的檔案關聯](../extensibility/managing-side-by-side-file-associations.md)

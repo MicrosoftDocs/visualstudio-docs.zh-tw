@@ -11,12 +11,12 @@ ms.assetid: 49e7efae-e713-4762-a824-96fdaf92cdc9
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 9d95275f5b4ffd91f993fc3e5a650d3d160fa2a4
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: e56de828d3b357762da98cde3b9591033c6b5d19
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58945143"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441483"
 ---
 # <a name="vsct-xml-schema-reference"></a>VSCT XML 結構描述參考
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,14 +26,14 @@ ms.locfileid: "58945143"
  以 XML 為基礎的命令資料表設定 (.vsct) 檔案的整合式的開發環境 (IDE) 中定義 VSPackage 提供的命令項目。 這些項目包含功能表項目、 功能表、 工具列和下拉式方塊。  
   
 > [!NOTE]
->  VSCT 編譯器可以執行前置處理器在.vsct 檔。 因為這通常是 c + + 前置處理器，您可以定義包含，且包含相同的語法是 c + + 檔案中使用巨集。 .vsct 提供這個範例檔案**新的專案**VSPackage 專案建立精靈。  
+> VSCT 編譯器可以執行前置處理器在.vsct 檔。 這通常是因為C++您可以定義前置處理器，包含與具有相同的語法中所使用的巨集C++檔案。 .vsct 提供這個範例檔案**新的專案**VSPackage 專案建立精靈。  
   
 ## <a name="optional-elements"></a>選擇性的項目  
  某些 VSCT 項目是選擇性的。 如果`Parent`未指定引數，Group_Undefined:0將隱含。 如果`Icon`未指定引數，會隱含 guidOfficeIcon:msotcidNoIcon。 攠摝坫定義時，模擬，也就是通常未使用，是選擇性的。  
   
  可能在編譯時期內嵌點陣圖項目，藉由指定的位置中的點陣圖區`href`引數。 點陣圖區是在合併過程中複製而不是擷取自 DLL 的資源。 當`href`提供引數，則`usedList`引數會變成選用項目，並使用視為點陣圖區中的所有位置。  
   
- 使用符號名稱，必須定義所有的 GUID 和 ID 值。 可能會定義這些名稱，在標頭檔或 VSCT\<符號 > 區段。 符號名稱必須是本機路徑，包含透過\<Include > 項目，或所參考\<Extern > 項目。 符號名稱從檔案匯入標頭中指定\<Extern > 如果它遵循簡單的模式的項目 #define 符號值。 值可以是另一個符號，只要該符號已定義過。 GUID 定義必須遵循 OLE 或 c + + 格式。 識別碼值可能是十進位數字或會加上 0 x 的十六進位數字，下列幾行中所示：  
+ 使用符號名稱，必須定義所有的 GUID 和 ID 值。 可能會定義這些名稱，在標頭檔或 VSCT\<符號 > 區段。 符號名稱必須是本機路徑，包含透過\<Include > 項目，或所參考\<Extern > 項目。 符號名稱從檔案匯入標頭中指定\<Extern > 如果它遵循簡單的模式的項目 #define 符號值。 值可以是另一個符號，只要該符號已定義過。 GUID 定義必須遵循任一 OLE 或C++格式。 識別碼值可能是十進位數字或會加上 0 x 的十六進位數字，下列幾行中所示：  
   
 - {6D484634-E53D-4a2c-ADCB-55145C9362C8}  
   

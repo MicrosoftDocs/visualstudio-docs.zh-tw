@@ -14,12 +14,12 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: cb0502128b95716b0598b373be81519a06911f06
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 863df1da686e56a8b38c0652baf0aafab7436d08
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60052801"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63434348"
 ---
 # <a name="define-packages-and-namespaces"></a>定義套件和命名空間
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -80,7 +80,7 @@ ms.locfileid: "60052801"
 2. 以滑鼠右鍵按一下您要加入新套件的套件或模型。  
   
    > [!NOTE]
-   >  您可以讓某個套件成為另一個套件內的巢狀套件。  
+   > 您可以讓某個套件成為另一個套件內的巢狀套件。  
   
 3. 指向**新增**，然後按一下**封裝**。  
   
@@ -95,7 +95,7 @@ ms.locfileid: "60052801"
 - 將套件從 [UML 模型總管] 拖曳至類別圖。  
   
     > [!NOTE]
-    >  這會在此圖表上建立套件的檢視。 不一定會顯示套件所含的所有項目。 若要確定您看到所有套件內容，請在 [UML 模型總管] 中進行檢視。  
+    > 這會在此圖表上建立套件的檢視。 不一定會顯示套件所含的所有項目。 若要確定您看到所有套件內容，請在 [UML 模型總管] 中進行檢視。  
   
 ## <a name="Elements"></a> 建立套件內的模型項目  
  有四種方式可將模型項目放到套件內：  
@@ -123,7 +123,7 @@ ms.locfileid: "60052801"
 4. 輸入新項目的名稱。  
   
     > [!NOTE]
-    >  新的項目不會出現在任何圖表上。 若要建立新項目的檢視，您可以將它從 [UML 模型總管] 拖曳至圖表。 圖表必須是顯示這種項目的類型。  
+    > 新的項目不會出現在任何圖表上。 若要建立新項目的檢視，您可以將它從 [UML 模型總管] 拖曳至圖表。 圖表必須是顯示這種項目的類型。  
   
 #### <a name="to-create-an-element-in-a-package-on-a-uml-class-diagram"></a>在 UML 類別圖的套件中建立項目  
   
@@ -173,7 +173,7 @@ ms.locfileid: "60052801"
      項目的限定名稱會變更，以顯示其新擁有套件。  
   
     > [!NOTE]
-    >  如果您將項目從套件拖曳至圖表的空白部分，則其擁有套件不會變更。 這可讓您製作圖表來顯示數個套件中的項目，而不需顯示套件本身。  
+    > 如果您將項目從套件拖曳至圖表的空白部分，則其擁有套件不會變更。 這可讓您製作圖表來顯示數個套件中的項目，而不需顯示套件本身。  
   
 ## <a name="Pasting"></a> 將項目貼入套件  
  您可以將項目貼入套件中。 如果您將一組相關項目貼入套件，則也會貼上其間的關聯性。  
@@ -185,7 +185,7 @@ ms.locfileid: "60052801"
 2. 以滑鼠右鍵按一下封裝，然後按一下**貼上**。  
   
     > [!NOTE]
-    >  套件可以在不同的圖表上。  
+    > 套件可以在不同的圖表上。  
   
 ## <a name="Import"></a> 匯入套件之間的關聯性  
  您可以定義匯入套件之間關聯性，使用**匯入**工具。  

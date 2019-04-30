@@ -1,15 +1,23 @@
+---
+ms.openlocfilehash: 0170c6ed655ce54e2dbadf57341dff56616186ec
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62964560"
+---
 > [!WARNING]
-> 當您啟用現有角色的診斷時，在部署封裝時，會停用您已設定的任何延伸模組。 它們包括：
+> 當您在現有角色上啟用診斷功能時，您已設定的任何擴充功能都會在部署套件時停用。 它們包括：
 >
 > * Microsoft Monitoring Agent 診斷
-> * Microsoft Azure 安全性監視
-> * Microsoft 反惡意程式碼                 
+> * Microsoft Azure 安全性監控
+> * Microsoft Antimalware                 
 > * Microsoft Monitoring Agent
-> * Microsoft Service Profiler 代理程式      
+> * Microsoft 服務分析工具代理程式      
 > * Windows Azure 網域擴充功能        
 > * Windows Azure 診斷擴充功能   
-> * Windows Azure 的遠端桌面延伸模組
+> * Windows Azure 遠端桌面擴充功能
 > * Windows Azure 記錄檔收集器
 >
-> 在部署更新的角色之後，您可以重設您的擴充功能，透過 Azure 入口網站或 PowerShell。
+> 在部署更新的角色之後，您可以透過 Azure 入口網站或 PowerShell 重設您的擴充功能。
 >

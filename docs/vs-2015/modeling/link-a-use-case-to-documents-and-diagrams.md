@@ -14,12 +14,12 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 012ab6828364af155b52bc19d9a83564b2126a6b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: ee7657b12741cf65583317ba87bd465e15eb02bb
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60088674"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63440972"
 ---
 # <a name="link-a-use-case-to-documents-and-diagrams"></a>將使用案例連結到文件與圖表
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -81,7 +81,7 @@ ms.locfileid: "60088674"
 3. 選取新的成品，然後輸入或貼上 URL 傳入**超連結**屬性。  
   
     > [!NOTE]
-    >  如果您想要提供檔案路徑，最好選擇其中一個常見的工作區中的檔案 (開頭為 '\\\\')，或您的 Visual Studio 方案中的檔案。 這確保檔案路徑在另一個小組成員的電腦上或移動方案時也仍然有效。 若要加入您的解決方案的文件，例如 Word 文件，以滑鼠右鍵按一下方案總管 中的方案，指向**新增**，然後按一下**現有項目**。  
+    > 如果您想要提供檔案路徑，最好選擇其中一個常見的工作區中的檔案 (開頭為 '\\\\')，或您的 Visual Studio 方案中的檔案。 這確保檔案路徑在另一個小組成員的電腦上或移動方案時也仍然有效。 若要加入您的解決方案的文件，例如 Word 文件，以滑鼠右鍵按一下方案總管 中的方案，指向**新增**，然後按一下**現有項目**。  
   
 ## <a name="see-also"></a>另請參閱  
  [UML 使用案例圖表：參考](../modeling/uml-use-case-diagrams-reference.md)   

@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4a5543805741f1c64627aee15590d61635a89b1c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: fcc08f9af3452289b3e0e76fe6970e75e8f854db
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60109825"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63414818"
 ---
 # <a name="customizing-copy-behavior"></a>自訂複製行為
 在使用 Visual Studio Visualization and Modeling SDK 建立特定領域語言 (DSL)，您可能會改變使用者複製及貼上項目時，會發生什麼事。
@@ -232,7 +232,7 @@ partial class MyDslClipboardCommandSet // EDIT NAME
  DSL 的行為方面複製、 貼上、 建立和刪除物件的各個層面的執行個體所控管<xref:Microsoft.VisualStudio.Modeling.ElementOperations>合併至圖表。 您可以修改您的 DSL 行為衍生您自己的類別，從<xref:Microsoft.VisualStudio.Modeling.ElementOperations>，並覆寫<xref:Microsoft.VisualStudio.Modeling.Diagrams.Diagram.ElementOperations%2A>圖表類別的屬性。
 
 > [!TIP]
->  如需有關如何使用程式碼自訂模型的詳細資訊，請參閱 <<c0> [ 巡覽及更新程式碼中的模型](../modeling/navigating-and-updating-a-model-in-program-code.md)。
+> 如需有關如何使用程式碼自訂模型的詳細資訊，請參閱 <<c0> [ 巡覽及更新程式碼中的模型](../modeling/navigating-and-updating-a-model-in-program-code.md)。
 
  ![複製作業的順序圖表](../modeling/media/dslcopyseqdiagram.png)
 

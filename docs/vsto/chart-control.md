@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: fbd6adeba6d2c131da10ce028c12c6f50b827444
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 21ca64f6661c4f0d7182bf20887ff8bdf754a6fc
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60088771"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63440320"
 ---
 # <a name="chart-control"></a>圖表控制項
   <xref:Microsoft.Office.Tools.Excel.Chart> 控制項是一個會公開事件的圖表物件。 當您將圖表加入工作表時，Visual Studio 會建立 <xref:Microsoft.Office.Tools.Excel.Chart> 物件，以便您直接對這個物件進行程式設計，而不必周遊 Microsoft Office Excel 物件模型。
@@ -34,7 +34,7 @@ ms.locfileid: "60088771"
  您可以新增<xref:Microsoft.Office.Tools.Excel.Chart>控制項加入工作表，在執行階段中的 VSTO 增益集。 如需詳細資訊，請參閱[如何：將圖表控制項加入工作表](../vsto/how-to-add-chart-controls-to-worksheets.md)。
 
 > [!NOTE]
->  當工作表關閉時，動態建立的圖表物件不會保存為工作表中的主控制項。 如需詳細資訊，請參閱 <<c0> [ 將控制項加入 Office 文件，在執行階段](../vsto/adding-controls-to-office-documents-at-run-time.md)。
+> 當工作表關閉時，動態建立的圖表物件不會保存為工作表中的主控制項。 如需詳細資訊，請參閱 <<c0> [ 將控制項加入 Office 文件，在執行階段](../vsto/adding-controls-to-office-documents-at-run-time.md)。
 
 ## <a name="formatting"></a>格式化
  可套用至 <xref:Microsoft.Office.Interop.Excel.Chart> 的任何格式，皆可套用至 <xref:Microsoft.Office.Tools.Excel.Chart> 控制項。 其包括框線、字型、圖表類型、格線、圖例和資料標籤。

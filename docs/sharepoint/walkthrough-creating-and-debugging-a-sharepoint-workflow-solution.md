@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 15bb3c7bca9db7e268dde998e210629a8167497f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: ad39c8b8bad373cd7892a1eeda89b149622913a7
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60109552"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63430356"
 ---
 # <a name="walkthrough-create-and-debug-a-sharepoint-workflow-solution"></a>逐步解說：建立和偵錯 SharePoint 工作流程方案
   本逐步解說示範如何建立基本的循序工作流程範本。 工作流程會檢查共用的文件庫，以判斷是否經過審閱文件的屬性。 如果已檢閱文件，工作流程完成。
@@ -35,9 +35,9 @@ ms.locfileid: "60109552"
 - 處理工作流程活動事件。
 
 > [!NOTE]
->  雖然本逐步解說使用循序工作流程專案，程序就會是相同的狀態機器工作流程專案。
+> 雖然本逐步解說使用循序工作流程專案，程序就會是相同的狀態機器工作流程專案。
 >
->  此外，您的電腦可能會顯示不同的名稱或位置的某些 Visual Studio 使用者介面項目中的下列指示。 您所擁有的 Visual Studio 版本以及使用的設定會決定這些項目。 如需詳細資訊，請參閱[將 Visual Studio IDE 個人化](../ide/personalizing-the-visual-studio-ide.md)。
+> 此外，您的電腦可能會顯示不同的名稱或位置的某些 Visual Studio 使用者介面項目中的下列指示。 您所擁有的 Visual Studio 版本以及使用的設定會決定這些項目。 如需詳細資訊，請參閱[將 Visual Studio IDE 個人化](../ide/personalizing-the-visual-studio-ide.md)。
 
 ## <a name="prerequisites"></a>必要條件
  您需要下列元件才能完成此逐步解說：

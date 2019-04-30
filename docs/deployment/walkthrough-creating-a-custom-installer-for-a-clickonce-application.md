@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 87bf42ccb44c170321f36a9fe2fa7f44e274dcfe
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 597d0a29e153659359d3a6591970750bfd4de770
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60099659"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63405736"
 ---
 # <a name="walkthrough-create-a-custom-installer-for-a-clickonce-application"></a>逐步解說：建立自訂安裝程式的 ClickOnce 應用程式
 任何的 ClickOnce 應用程式為基礎 *.exe*檔案可以以無訊息方式安裝及更新的自訂安裝程式。 自訂安裝程式可以實作自訂使用者體驗，在安裝期間，其中包括安全性和維護作業的自訂對話方塊。 若要執行安裝作業，自訂的安裝程式會使用<xref:System.Deployment.Application.InPlaceHostingManager>類別。 本逐步解說示範如何建立自訂安裝程式會以無訊息方式安裝 ClickOnce 應用程式。
@@ -53,7 +53,7 @@ ms.locfileid: "60099659"
      這些方法會呼叫<xref:System.Deployment.Application.InPlaceHostingManager>方法，以下載部署資訊清單中，判斷提示適當的權限，請安裝，然後下載並安裝到 ClickOnce 快取的應用程式權限的使用者。 自訂安裝程式可以指定 ClickOnce 應用程式預先信任，或可以延後信任決策<xref:System.Deployment.Application.InPlaceHostingManager.AssertApplicationRequirements%2A>方法呼叫。 此程式碼預先信任應用程式。
 
     > [!NOTE]
-    >  透過預先信任所指派的權限不能超過自訂安裝程式的程式碼的權限。
+    > 透過預先信任所指派的權限不能超過自訂安裝程式的程式碼的權限。
 
      [!code-vb[System.Deployment.Application.InPlaceHostingManager#1](../deployment/codesnippet/VisualBasic/walkthrough-creating-a-custom-installer-for-a-clickonce-application_1.vb)]
      [!code-csharp[System.Deployment.Application.InPlaceHostingManager#1](../deployment/codesnippet/CSharp/walkthrough-creating-a-custom-installer-for-a-clickonce-application_1.cs)]

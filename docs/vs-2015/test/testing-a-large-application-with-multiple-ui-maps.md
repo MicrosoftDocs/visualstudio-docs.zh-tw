@@ -11,12 +11,12 @@ ms.assetid: 6e1ae9ec-e9b1-458a-bd96-0eb15e46f1d5
 caps.latest.revision: 24
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 5a6a3247ed53b6a84feb203ce0e9b480e7f9ce5d
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 18180ee3277cdff60d11c0ae35e8aa3c990764de
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60073887"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63386040"
 ---
 # <a name="testing-a-large-application-with-multiple-ui-maps"></a>測試含有多個 UI 對應的大型應用程式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -59,7 +59,7 @@ ms.locfileid: "60073887"
     隨即顯示 [ 新增項目] 對話方塊。  
   
    > [!NOTE]
-   >  您必須在自動程式化 UI 測試專案中，才能加入新的自動程式化 UI 測試對應。  
+   > 您必須在自動程式化 UI 測試專案中，才能加入新的自動程式化 UI 測試對應。  
   
 3. 從清單中選取 [自動程式碼 UI 測試對應]。  
   

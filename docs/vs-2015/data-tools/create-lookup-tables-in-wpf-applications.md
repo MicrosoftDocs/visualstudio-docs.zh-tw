@@ -22,12 +22,12 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: d069f48e39327cf73f741eb2b2ff02688fa4c3d4
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 8401a41c479dea70289cd0ebf072fc3b57eff78d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60095915"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63434515"
 ---
 # <a name="create-lookup-tables-in-wpf-applications"></a>在 WPF 應用程式中建立查閱資料表
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,7 +47,7 @@ ms.locfileid: "60095915"
     - 物件。 如需詳細資訊，請參閱[如何：連接到資料物件中](http://msdn.microsoft.com/library/862fd351-0f4d-4220-9743-6103b87dc24b)。  
   
     > [!NOTE]
-    >  您可以建立查閱資料表之前，必須存在兩個相關的資料表或物件當做專案資料來源。  
+    > 您可以建立查閱資料表之前，必須存在兩個相關的資料表或物件當做專案資料來源。  
   
 2. 開啟**WPF 設計工具**，並確定設計工具會包含有效的置放目標中的項目容器**Zdroje dat**視窗。  
   
@@ -58,7 +58,7 @@ ms.locfileid: "60095915"
 4. 展開中的節點**Zdroje dat**  視窗中，直到您可以看到父資料表或物件和關聯的子資料表或物件。  
   
     > [!NOTE]
-    >  會顯示為在父資料表或物件的可展開的子節點的節點是相關的子資料表或物件。  
+    > 會顯示為在父資料表或物件的可展開的子節點的節點是相關的子資料表或物件。  
   
 5. 按一下下拉式選單，子節點，然後選取**詳細資料**。  
   
@@ -73,12 +73,12 @@ ms.locfileid: "60095915"
     - **ListView**  
   
         > [!NOTE]
-        >  如果**ListBox**或是**ListView**控制項不會出現在清單中，您可以將這些控制項新增至清單。 如需資訊，請參閱[設定要從資料來源視窗拖曳時要建立的控制項](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md)。  
+        > 如果**ListBox**或是**ListView**控制項不會出現在清單中，您可以將這些控制項新增至清單。 如需資訊，請參閱[設定要從資料來源視窗拖曳時要建立的控制項](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md)。  
   
     - 任何自訂控制項衍生自<xref:System.Windows.Controls.Primitives.Selector>。  
   
         > [!NOTE]
-        >  如何加入自訂控制項的控制項清單以您可以選取中的項目**資料來源** 視窗中，請參閱[將自訂控制項加入至資料來源視窗](../data-tools/add-custom-controls-to-the-data-sources-window.md)。  
+        > 如何加入自訂控制項的控制項清單以您可以選取中的項目**資料來源** 視窗中，請參閱[將自訂控制項加入至資料來源視窗](../data-tools/add-custom-controls-to-the-data-sources-window.md)。  
   
 8. 從 [子] 節點拖曳**Zdroje dat**視窗拖曳至 WPF 設計工具中的容器。 (在上述範例中，子節點是**訂單**節點。)  
   

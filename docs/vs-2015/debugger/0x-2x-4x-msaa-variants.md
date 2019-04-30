@@ -9,12 +9,12 @@ caps.latest.revision: 11
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 4b188be0a8ff3c8bac6dc8fd2b5474756a1565f3
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: f6cc62e4ba56cb7be461bbf3cee5435cb404b7fe
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60090015"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63439979"
 ---
 # <a name="0x2x4x-msaa-variants"></a>0x/2x/4x MSAA 變異
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ ms.locfileid: "60090015"
  如果應用程式尚未啟用 MSAA，則 2x MSAA 和 4x MSAA 變異指出在應用程式中啟用它們的相對效能成本。 當成本為可接受的低水平時，請考慮啟用 MSAA 以增強應用程式的影像品質。  
   
 > [!NOTE]
->  您的硬體可能未完全支援所有格式的 MSAA。 如果其中任何變異遇到無法克服的硬體限制，則其在效能摘要表格中的資料行會空白，並會產生一則錯誤訊息。  
+> 您的硬體可能未完全支援所有格式的 MSAA。 如果其中任何變異遇到無法克服的硬體限制，則其在效能摘要表格中的資料行會空白，並會產生一則錯誤訊息。  
   
 ## <a name="remarks"></a>備註  
  這些變異會覆寫建立呈現目標的 `ID3DDevice::CreateTexture2D` 呼叫上的樣本計數和樣本品質引數。 特別是在下列情況下，會覆寫這些參數：  

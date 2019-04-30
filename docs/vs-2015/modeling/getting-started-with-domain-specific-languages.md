@@ -9,12 +9,12 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 99fdded48ab720e7b5efbe0e4801926fe4c4c64a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 4a13d0b648be87f1378ae74e6f321c1c369d7795
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60090611"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63427057"
 ---
 # <a name="getting-started-with-domain-specific-languages"></a>開始使用網域指定的語言
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -79,7 +79,7 @@ ms.locfileid: "60090611"
     產生的方案包含兩個專案。 它們會命名為 Dsl 和 DslPackage。 圖表檔，也就是開啟具名的 DslDefinition.dsl。  
   
    > [!NOTE]
-   >  大部分的程式碼，您可以看到兩個專案中的資料夾中會產生從 DslDefinition.dsl。 基於這個理由，大部分您的 dsl 修改此檔案中。  
+   > 大部分的程式碼，您可以看到兩個專案中的資料夾中會產生從 DslDefinition.dsl。 基於這個理由，大部分您的 dsl 修改此檔案中。  
   
    這時使用者介面類似以下圖片。  
   
@@ -104,7 +104,7 @@ ms.locfileid: "60090611"
 1. 按一下 **轉換所有範本**在 方案總管 工具列中。 這樣會重新產生大部分的 DslDefinition.dsl 中的原始程式碼。  
   
    > [!NOTE]
-   >  每當您變更 DslDefinition.dsl 時，您必須按一下 **轉換所有範本**重新建置方案之前。 您可以自動化此步驟。 如需詳細資訊，請參閱 <<c0> [ 如何自動執行轉換的所有範本](http://msdn.microsoft.com/b63cfe20-fe5e-47cc-9506-59b29bca768a)。  
+   > 每當您變更 DslDefinition.dsl 時，您必須按一下 **轉換所有範本**重新建置方案之前。 您可以自動化此步驟。 如需詳細資訊，請參閱 <<c0> [ 如何自動執行轉換的所有範本](http://msdn.microsoft.com/b63cfe20-fe5e-47cc-9506-59b29bca768a)。  
   
 2. 按 f5 鍵，或在**偵錯**功能表上，按一下**開始偵錯**。  
   
@@ -171,7 +171,7 @@ ms.locfileid: "60090611"
    您可以將任意數目的文字範本檔案新增至專案。 每個範本會產生一個結果檔案。  
   
 > [!NOTE]
->  當您變更 DSL 定義中時，範例文字範本程式碼將無法運作，除非您更新它。  
+> 當您變更 DSL 定義中時，範例文字範本程式碼將無法運作，除非您更新它。  
   
  如需詳細資訊，請參閱 <<c0> [ 特定領域語言產生程式碼](../modeling/generating-code-from-a-domain-specific-language.md)並[來自訂特定領域語言撰寫的程式碼](../modeling/writing-code-to-customise-a-domain-specific-language.md)。  
   
@@ -179,7 +179,7 @@ ms.locfileid: "60090611"
  當您想要修改 DSL 定義中時，關閉實驗執行個體，並更新主要定義[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]執行個體。  
   
 > [!NOTE]
->  您已修改 DSL 定義之後，您可能會遺失您已使用舊版建立的測試模型中的資訊。  例如，偵錯方案包含名為範例，其中包含一些圖形和連接器的檔案。 開始開發您的 DSL 定義之後，將不會顯示，以及它們時將會遺失您儲存檔案。  
+> 您已修改 DSL 定義之後，您可能會遺失您已使用舊版建立的測試模型中的資訊。  例如，偵錯方案包含名為範例，其中包含一些圖形和連接器的檔案。 開始開發您的 DSL 定義之後，將不會顯示，以及它們時將會遺失您儲存檔案。  
   
  您可以將各種不同的擴充功能對您的 DSL。 下列範例可讓您印象的可能性。  
   
@@ -285,7 +285,7 @@ ms.locfileid: "60090611"
          設定其名稱，例如**城鎮**。  
   
         > [!NOTE]
-        >  模型的根目錄以外的每個網域類別必須是至少一個內嵌關聯性的目標，或必須繼承自的類別，做為目標的內嵌。 基於這個理由，並經常方便使用的內嵌關聯性工具，建立網域類別。  
+        > 模型的根目錄以外的每個網域類別必須是至少一個內嵌關聯性的目標，或必須繼承自的類別，做為目標的內嵌。 基於這個理由，並經常方便使用的內嵌關聯性工具，建立網域類別。  
   
     2. 將網域屬性新增至新的類別，例如**名稱**。  
   
@@ -296,7 +296,7 @@ ms.locfileid: "60090611"
          ![DSL 定義片段： 家譜根部](../modeling/media/familyt-root.png "FamilyT_Root")  
   
         > [!NOTE]
-        >  參考關聯性代表到另一個模型樹狀結構的某一部分的交互參考。  
+        > 參考關聯性代表到另一個模型樹狀結構的某一部分的交互參考。  
   
 3. 新增圖形以代表鄉鎮的模型圖表上。  
   

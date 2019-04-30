@@ -12,16 +12,16 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b7621508c069d21e7d90d7477254fe03468b0ea3
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.openlocfilehash: 59c7ec2b6313ee27fc46c778f8b19e104b169273
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56722521"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63421473"
 ---
 # <a name="writing-a-common-language-runtime-expression-evaluator"></a>撰寫 common language runtime 運算式評估工具
 > [!IMPORTANT]
->  在 Visual Studio 2015 中，這種實作運算式評估工具已被取代。 實作 CLR 運算式評估工具的詳細資訊，請參閱[CLR 運算式評估工具](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators)並[Managed 運算式評估工具範例](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)。
+> 在 Visual Studio 2015 中，這種實作運算式評估工具已被取代。 實作 CLR 運算式評估工具的詳細資訊，請參閱[CLR 運算式評估工具](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators)並[Managed 運算式評估工具範例](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)。
 
  運算式評估工具 (EE) 是偵錯引擎 (DE) 處理語法的一部分，並產生程式碼進行偵錯的程式語言的語意。 運算式必須評估內容中的一種程式設計語言。 比方說，在某些語言中，"A + B"的運算式表示"總和 A 和 b。 」 在其他語言中，相同的運算式可能表示 「 A 或 B 」 因此，個別 EE 必須寫入針對每個 Visual Studio IDE 中產生物件来進行偵錯的程式碼的程式設計語言。
 

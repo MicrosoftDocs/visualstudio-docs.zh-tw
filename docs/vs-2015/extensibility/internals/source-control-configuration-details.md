@@ -10,12 +10,12 @@ ms.assetid: adbee9fc-7a2e-4abe-a3b8-e6615bcd797f
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 51fac40d0bffe570ac1f374872fb4572c1c83441
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 5faa0ce575647038ac5ac7839b6dc066b7b51ce6
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60109461"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432059"
 ---
 # <a name="source-control-configuration-details"></a>原始檔控制組態的詳細資料
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -43,7 +43,7 @@ ms.locfileid: "60109461"
  專案或編輯器儲存檔案之前，必須呼叫<xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QuerySaveFile%2A>或<xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QuerySaveFiles%2A>。 對於專案檔案，這些呼叫會自動完成此解決方案，知道何時要儲存專案檔。 編輯器會負責進行這些呼叫，除非編輯器實作`IVsPersistDocData2`會使用協助程式函式<xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.SaveDocDataToFile%2A>。 如果您的編輯器實作`IVsPersistDocData2`中，如此一來，然後呼叫`IVsQueryEditQuerySave2::QuerySaveFile`或`IVsQueryEditQuerySave2::QuerySaveFiles`就自動完成。  
   
 > [!NOTE]
->  一定要先進行這些呼叫 — 亦即，當您的編輯器是能夠接收取消一次。  
+> 一定要先進行這些呼叫 — 亦即，當您的編輯器是能夠接收取消一次。  
   
 ## <a name="request-permission-to-add-remove-or-rename-files-in-the-project"></a>要求權限來新增、 移除或重新命名專案中的檔案  
  專案可以新增、 重新命名或移除檔案或目錄之前，必須呼叫適當`IVsTrackProjectDocuments2::OnQuery*`從環境的方法來要求權限。 如果授與權限時，則專案必須完成作業，然後再呼叫 適當`IVsTrackProjectDocuments2::OnAfter*`方法來通知環境已完成的作業。 專案必須呼叫的方法<xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocuments2>介面的所有檔案 （例如特殊的檔案） 和不只是父檔案。 檔案呼叫是必要項目，但目錄呼叫都是選擇性。 如果您的專案具有目錄資訊，則它應該呼叫適當<xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocuments2>方法，但如果它並沒有這項資訊，則環境會推斷目錄資訊。  

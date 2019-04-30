@@ -13,12 +13,12 @@ ms.assetid: 3ffc4312-c6db-4759-a946-a4bb85f4a17a
 caps.latest.revision: 36
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 78561db4bbf9517cc3fbcd5d9ac6ca36fcafbe05
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: cab4244fbf9173895159a4b104260006fc93f0c2
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60071222"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436254"
 ---
 # <a name="making-commands-available"></a>提供可用的命令
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -101,7 +101,7 @@ ms.locfileid: "60071222"
 - 開啟內容`GUID`s 開啟和關閉 (藉由呼叫<xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection.SetCmdUIContext%2A>方法)。  
   
     > [!CAUTION]
-    >  請確定，VSPackage 不會影響任何現有內容 GUID 的狀態因為其他 Vspackage 可能取決於它們。  
+    > 請確定，VSPackage 不會影響任何現有內容 GUID 的狀態因為其他 Vspackage 可能取決於它們。  
   
 ## <a name="example"></a>範例  
  VSPackage 命令的下列範例會示範動態可視性由命令內容管理，而不必載入 VSPackage 的命令。  

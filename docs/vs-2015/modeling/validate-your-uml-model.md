@@ -12,12 +12,12 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 5114e7b32bd22b341489e15ac354cc24b3c6d7d7
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: f795928677f4a232c3ae3cec0d3bab9d9266cb35
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60113309"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437465"
 ---
 # <a name="validate-your-uml-model"></a>驗證 UML 模型
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ ms.locfileid: "60113309"
 - **驗證命令。** 若要叫用驗證在任何時間，請按一下**驗證 UML 模型**上**架構**功能表。  
   
   > [!NOTE]
-  >  已安裝驗證條件約束時，才會出現命令。  
+  > 已安裝驗證條件約束時，才會出現命令。  
   
 - **儲存模型。** 當您儲存模型時，可以套用驗證條件約束。 這些條件約束的目的是協助確定您不會儲存根據專案解譯無效的模型。  
   

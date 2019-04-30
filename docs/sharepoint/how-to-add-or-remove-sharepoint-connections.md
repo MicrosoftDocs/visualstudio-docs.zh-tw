@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 70594f8c881289bd394f33353f237bdab71c91f1
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 3c094ad703727903e7109d6a748b8383e4cad7d6
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60077364"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63435490"
 ---
 # <a name="how-to-add-or-remove-sharepoint-connections"></a>HOW TO：新增或移除 SharePoint 連線
   伺服器總管 可讓您瀏覽 SharePoint 網站，以及資料連接。 不過，您可以瀏覽 SharePoint 網站的內容之前您必須將它加入**SharePoint 連線**節點。
@@ -41,7 +41,7 @@ ms.locfileid: "60077364"
 3. 選擇的站台，，然後在功能表列上，選擇**編輯** > **刪除**。
 
     > [!NOTE]
-    >  此步驟並不會刪除基礎的網站。它會刪除從連接**伺服器總管**。
+    > 此步驟並不會刪除基礎的網站。它會刪除從連接**伺服器總管**。
 
 ## <a name="see-also"></a>另請參閱
 - [瀏覽 SharePoint 連線，使用 伺服器總管](../sharepoint/browsing-sharepoint-connections-using-server-explorer.md)

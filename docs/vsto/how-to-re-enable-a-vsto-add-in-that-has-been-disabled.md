@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 8da3d003ea156ea3182ddbb5a5fd0da3c2681304
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 9cdb05328d2a59eb61c57f8f028ade1af0f7ce2f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60095063"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63418805"
 ---
 # <a name="how-to-re-enable-a-vsto-add-in-that-has-been-disabled"></a>HOW TO：重新啟用 VSTO 增益集已停用
   Microsoft Office 應用程式可以停用無法如預期般運作的 VSTO 增益集。 如果應用程式在您嘗試進行偵錯時並未載入 VSTO 增益集，表示應用程式可能已經強制停用或非強制停用 VSTO 增益集。
@@ -53,7 +53,7 @@ ms.locfileid: "60095063"
  當 VSTO 增益集產生的錯誤不會導致應用程式意外關閉時，可能會發生非強制停用。 例如，如果在 <xref:Microsoft.Office.Tools.AddIn.Startup> 事件處理常式正在執行時擲回未處理的例外狀況，應用程式可能會非強制停用 VSTO 增益集。
 
 > [!NOTE]
->  當您重新啟用非強制停用的 VSTO 增益集時，應用程式會立即嘗試載入 VSTO 增益集。 如果未修正當初造成應用程式非強制停用 VSTO 增益集的問題，則應用程式會再次非強制停用 VSTO 增益集。
+> 當您重新啟用非強制停用的 VSTO 增益集時，應用程式會立即嘗試載入 VSTO 增益集。 如果未修正當初造成應用程式非強制停用 VSTO 增益集的問題，則應用程式會再次非強制停用 VSTO 增益集。
 
 ### <a name="to-re-enable-a-vsto-add-in"></a>若要重新啟用 VSTO 增益集
 

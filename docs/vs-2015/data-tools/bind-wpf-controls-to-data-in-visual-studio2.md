@@ -22,12 +22,12 @@ caps.latest.revision: 29
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 003b010ed5b1e3bf442be778b6cbb7d6e35efe1f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 5c1733d6d4e60aad10896dbd2fcad16406830b83
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60111996"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437046"
 ---
 # <a name="bind-wpf-controls-to-data-in-visual-studio"></a>將 WPF 控制項繫結至 Visual Studio 中的資料
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -80,7 +80,7 @@ ms.locfileid: "60111996"
      若要選取不同的控制項，請按一下項目旁邊的下拉式箭頭，並選取控制項。 如需詳細資訊，請參閱 <<c0> [ 設定要從資料來源視窗拖曳時要建立的控制項](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md)。
 
     > [!NOTE]
-    >  若您不想要顯示特定資料行或屬性，請展開項目以顯示其子項。 按一下下拉式清單旁的箭號的資料行或屬性，您不想要顯示此項目，並按一下**無**。
+    > 若您不想要顯示特定資料行或屬性，請展開項目以顯示其子項。 按一下下拉式清單旁的箭號的資料行或屬性，您不想要顯示此項目，並按一下**無**。
 
 3. 將項目拖曳至設計工具中的有效容器中，例如 <xref:System.Windows.Controls.Grid>。 如需有效容器的詳細資訊，請參閱[繫結 WPF 控制項新增至 Visual Studio 中的資料](../data-tools/bind-wpf-controls-to-data-in-visual-studio1.md)。
 
@@ -96,7 +96,7 @@ ms.locfileid: "60111996"
 2. 按一下下拉式清單旁的箭號的項目並選取**詳細資料**。
 
     > [!NOTE]
-    >  若您不想要顯示特定資料行或屬性，請展開項目以顯示其子項。 按一下下拉式清單旁的箭號的資料行或屬性，您不想要顯示此項目，並按一下**無**。
+    > 若您不想要顯示特定資料行或屬性，請展開項目以顯示其子項。 按一下下拉式清單旁的箭號的資料行或屬性，您不想要顯示此項目，並按一下**無**。
 
 3. 將項目拖曳至設計工具中的有效容器中，例如 <xref:System.Windows.Controls.Grid>。 如需有效容器的詳細資訊，請參閱[繫結 WPF 控制項新增至 Visual Studio 中的資料](../data-tools/bind-wpf-controls-to-data-in-visual-studio1.md)。
 
@@ -118,7 +118,7 @@ ms.locfileid: "60111996"
      [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 會產生[!INCLUDE[TLA#tla_titlexaml](../includes/tlasharptla-titlexaml-md.md)]，以及將控制項繫結至資料的程式碼。 如需詳細資訊，請參閱 <<c0> [ 繫結 WPF 控制項新增至 Visual Studio 中的資料](../data-tools/bind-wpf-controls-to-data-in-visual-studio1.md)。
 
     > [!NOTE]
-    >  若控制項已繫結至資料，則會將控制項的資料繫結重設為已在最近拖曳至控制項的項目。
+    > 若控制項已繫結至資料，則會將控制項的資料繫結重設為已在最近拖曳至控制項的項目。
 
 ## <a name="see-also"></a>另請參閱
  [將 WPF 控制項繫結至 Visual Studio 中的資料](../data-tools/bind-wpf-controls-to-data-in-visual-studio1.md) [WPF 應用程式中建立查閱資料表](../data-tools/create-lookup-tables-in-wpf-applications.md) [WPF 應用程式中顯示相關的資料](../data-tools/display-related-data-in-wpf-applications.md)[繫結 WPF 控制項新增至資料集](../data-tools/bind-wpf-controls-to-a-dataset.md)[繫結 WPF 控制項新增至 WCF data service](../data-tools/bind-wpf-controls-to-a-wcf-data-service.md) [逐步解說：在 WPF 應用程式中顯示相關的資料](../data-tools/walkthrough-displaying-related-data-in-a-wpf-application.md)

@@ -16,12 +16,12 @@ ms.assetid: c9cacd57-9225-450f-a9ac-cbf3168ea844
 caps.latest.revision: 8
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 8bafe0d76b86c73424614589c08095f096da9936
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 6ec717707727b046ecd0d749179ea463ae3a4950
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58941905"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436284"
 ---
 # <a name="guids-and-ids-of-visual-studio-toolbars"></a>Visual Studio 工具列的 GUID 和識別碼
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ ms.locfileid: "58941905"
 本主題列舉的 GUID 和 ID 值會包含在 Visual Studio 整合式的開發環境 (IDE) 中的工具列，而且包含的群組。 在安裝 Visual Studio SDK 的一部分的.vsct 檔案中定義這些值。 如需詳細資訊，請參閱 < [IDE-Defined 命令、 功能表和群組](../../extensibility/internals/ide-defined-commands-menus-and-groups.md)。
 
 > [!NOTE]
->  Visual studio 工具列的許多未定義的 Visual Studio 和其 GUID 和 ID 值不是公用。 本主題會列出 Visual Studio SDK.vsct 檔案中定義的工具列。
+> Visual studio 工具列的許多未定義的 Visual Studio 和其 GUID 和 ID 值不是公用。 本主題會列出 Visual Studio SDK.vsct 檔案中定義的工具列。
 
  如需如何使用.vsct 檔案中定義的 IDE 物件的詳細資訊，請參閱[擴充的功能表和命令](../../extensibility/extending-menus-and-commands.md)。
 
@@ -110,7 +110,7 @@ ms.locfileid: "58941905"
  工具列可以直接在 IDE 中或出現在工具視窗中這類**方案總管 中**。 .Vsct 檔案中未定義工具視窗，因為工作視窗工具列中沒有已定義父代。 相反地，它們都放在程式碼中。 下表顯示在 IDE 中，工具視窗會顯示的工具列和其所包含的命令群組。
 
 > [!NOTE]
->  工具列和群組會使用 GUID `guidSHLMainMenu`，除非特別指定，否則使用 guid: id 的語法。 指定工具列的 GUID，則它也適用於從該工具列下降的群組。
+> 工具列和群組會使用 GUID `guidSHLMainMenu`，除非特別指定，否則使用 guid: id 的語法。 指定工具列的 GUID，則它也適用於從該工具列下降的群組。
 
 |工具視窗|工具列|群組|
 |-----------------|-------------|------------|

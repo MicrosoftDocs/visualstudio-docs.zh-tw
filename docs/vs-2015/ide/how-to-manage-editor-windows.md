@@ -14,12 +14,12 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 107b42500bbe2daed0d03d3e23e4817c9c3b3fc4
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 29047f53b08472a0ff65960bfe694789f7f7cbe1
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60089922"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63430502"
 ---
 # <a name="how-to-manage-editor-windows"></a>HOW TO：管理編輯器 Windows
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,7 +27,7 @@ ms.locfileid: "60089922"
 您可以同時在數個位置處理程式碼。 做法是分割編輯器視窗，或開啟數個編輯器視窗執行個體。  
   
 > [!NOTE]
->  並非所有編輯器視窗都支援多個執行個體。  
+> 並非所有編輯器視窗都支援多個執行個體。  
   
 ## <a name="splitting-an-editor-window"></a>分割編輯器視窗  
  編輯器視窗執行個體可以分割為兩個不同的檢視，以方便進行編輯。  
@@ -41,7 +41,7 @@ ms.locfileid: "60089922"
      編輯區域分成兩個以分隔列分隔的窗格。 您可以分別捲動這些窗格，以同時檢視和編輯使用中文件的不同部分。 對某個窗格進行的任何變更都會反映在另一個窗格。  
   
     > [!TIP]
-    >  若要讓某個窗格大於另一個窗格，請向上或向下拖曳分隔列。  
+    > 若要讓某個窗格大於另一個窗格，請向上或向下拖曳分隔列。  
   
 #### <a name="to-return-to-single-pane-view"></a>返回單一窗格檢視  
   

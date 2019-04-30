@@ -11,18 +11,18 @@ ms.assetid: 236be234-e05f-4ad8-9200-24ce51768ecf
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 9b1f052392edab92dfd566c14bb0e452ca0056bf
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 3595daa51fddf5c9c027d5643382918d85f83cc1
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60113894"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63435682"
 ---
 # <a name="registering-an-expression-evaluator"></a>註冊運算式評估工具
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 > [!IMPORTANT]
->  在 Visual Studio 2015 中，這種實作運算式評估工具已被取代。 如需實作 CLR 運算式評估工具的資訊，請參閱[CLR 運算式評估工具](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators)並[Managed 運算式評估工具範例](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)。  
+> 在 Visual Studio 2015 中，這種實作運算式評估工具已被取代。 如需實作 CLR 運算式評估工具的資訊，請參閱[CLR 運算式評估工具](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators)並[Managed 運算式評估工具範例](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)。  
   
  運算式評估工具 (EE) 必須將自己做為使用 Windows COM 環境和 Visual Studio 的 class factory 登錄。 因此，它可能會插入至偵錯引擎 (DE) 位址空間或 Visual Studio 的位址空間，視實體會具現化 EE EE 被實作為 DLL。  
   
@@ -104,7 +104,7 @@ namespace EEMC
  EE DLL 實作`DllRegisterServer`向 COM 環境，以及 Visual Studio 的函式。  
   
 > [!NOTE]
->  MyCEE 程式碼範例登錄機碼位於檔案 dllentry.cpp，位於 EnVSDK\MyCPkgs\MyCEE 在 VSIP 安裝。  
+> MyCEE 程式碼範例登錄機碼位於檔案 dllentry.cpp，位於 EnVSDK\MyCPkgs\MyCEE 在 VSIP 安裝。  
   
 ### <a name="dll-server-process"></a>DLL 伺服器處理序  
  當註冊 EE，DLL 伺服器：  
@@ -121,7 +121,7 @@ namespace EEMC
     |`metricEngine`|`GUID`s 的偵錯引擎 (DE) 可搭配此 EE|  
   
     > [!NOTE]
-    >  `metricLanguage``GUID`識別的語言名稱，但它是`guidLang`引數`SetEEMetric`選取語言。 當編譯器產生偵錯資訊檔案時，它應該寫入適當`guidLang`，讓裝置知道要使用哪一個 EE。 DE 通常會符號提供者要求此語言`GUID`，儲存在偵錯資訊檔案。  
+    > `metricLanguage``GUID`識別的語言名稱，但它是`guidLang`引數`SetEEMetric`選取語言。 當編譯器產生偵錯資訊檔案時，它應該寫入適當`guidLang`，讓裝置知道要使用哪一個 EE。 DE 通常會符號提供者要求此語言`GUID`，儲存在偵錯資訊檔案。  
   
 3. 藉由建立 hkey_local_machine\software\microsoft\visualstudio \ 底下的機碼會向 Visual Studio\\*X.Y*，其中*X.Y*是向 Visual Studio 的版本。  
   

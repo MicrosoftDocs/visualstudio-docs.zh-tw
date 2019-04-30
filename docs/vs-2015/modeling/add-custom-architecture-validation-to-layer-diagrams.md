@@ -11,12 +11,12 @@ caps.latest.revision: 44
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: b91f89bc6c3db52526c8c5e64549b08310a17313
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 920b15d1cd4f7ed0ec11614a50f5dd32e050995a
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60045875"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432400"
 ---
 # <a name="add-custom-architecture-validation-to-layer-diagrams"></a>在分層圖中加入自訂架構驗證
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,12 +26,12 @@ ms.locfileid: "60045875"
  當使用者在分層圖上選取 [驗證架構]  命令時，會叫用標準驗證方法，後面接著任何已安裝的驗證擴充功能。  
   
 > [!NOTE]
->  分層圖中的驗證與 UML 圖表中的驗證不同。 在分層圖中，主要目的是比較圖表與方案其他部分的程式碼。  
+> 分層圖中的驗證與 UML 圖表中的驗證不同。 在分層圖中，主要目的是比較圖表與方案其他部分的程式碼。  
   
  您可以將圖層驗證擴充功能封裝成 Visual Studio 整合擴充功能 (VSIX)，您可將它散發給其他 Visual Studio 使用者。 您可以單獨將驗證程式放在 VSIX 中，或是在相同 VSIX 中將它與其他擴充功能結合。 您應該在單獨的 Visual Studio 專案中撰寫驗證程式的程式碼，而不是在與其他擴充功能相同的專案中。  
   
 > [!WARNING]
->  建立驗證專案之後，請複製本主題結尾的 [範例程式碼](#example) ，然後視您的需要加以編輯。  
+> 建立驗證專案之後，請複製本主題結尾的 [範例程式碼](#example) ，然後視您的需要加以編輯。  
   
 ## <a name="requirements"></a>需求  
  請參閱 [需求](../modeling/extend-layer-diagrams.md#prereqs)。  
@@ -48,7 +48,7 @@ ms.locfileid: "60045875"
     此範本隨即建立包含小型範例的專案。  
   
    > [!WARNING]
-   >  Makethe 範本正常運作：  
+   > Makethe 範本正常運作：  
    > 
    > - 編輯對 `LogValidationError` 的呼叫，移除選擇性引數 `errorSourceNodes` 和 `errorTargetNodes`。  
    >   - 如果您使用自訂屬性，套用更新中所述[將自訂屬性加入分層圖](../modeling/add-custom-properties-to-layer-diagrams.md)。  
@@ -58,7 +58,7 @@ ms.locfileid: "60045875"
 4. 若要測試擴充功能，請參閱 [圖層驗證偵錯](#debugging)。  
   
    > [!NOTE]
-   >  只有在特定情況下才會呼叫您的方法，且中斷點將不會自動運作。 如需詳細資訊，請參閱 [圖層驗證偵錯](#debugging)。  
+   > 只有在特定情況下才會呼叫您的方法，且中斷點將不會自動運作。 如需詳細資訊，請參閱 [圖層驗證偵錯](#debugging)。  
   
 5. 主要執行個體中安裝擴充功能[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]，或其他電腦上，尋找 **.vsix**中的檔案*bin\\*。 將它複製到您要安裝它的電腦上，然後按兩下該檔案。 若要對其解除安裝，請使用 [工具]  功能表上的 [擴充功能和更新]  。  
   
@@ -115,7 +115,7 @@ ms.locfileid: "60045875"
 7. 若要測試擴充功能，請參閱 [圖層驗證偵錯](#debugging)。  
   
     > [!NOTE]
-    >  只有在特定情況下才會呼叫您的方法，且中斷點將不會自動運作。 如需詳細資訊，請參閱 [圖層驗證偵錯](#debugging)。  
+    > 只有在特定情況下才會呼叫您的方法，且中斷點將不會自動運作。 如需詳細資訊，請參閱 [圖層驗證偵錯](#debugging)。  
   
 8. 若要在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]的主要執行個體或其他電腦上安裝此擴充功能，請在 **bin\*** 目錄中尋找 **.vsix** 檔案。 將它複製到您想要安裝 VSIX 的電腦。 在 Windows 檔案總管中按兩下 VSIX 檔案。 (Windows 8 中為檔案總管。)  
   
@@ -147,7 +147,7 @@ ms.locfileid: "60045875"
 - 當您發現錯誤時，可以使用 `LogValidationError()`回報。  
   
   > [!WARNING]
-  >  請不要使用 `LogValidationError`的選擇性參數。  
+  > 請不要使用 `LogValidationError`的選擇性參數。  
   
   當使用者叫用 [驗證架構]  功能表命令時，圖層執行階段系統會分析圖層及其成品，以產生圖形。 圖形包含四個部分：  
   
@@ -162,7 +162,7 @@ ms.locfileid: "60045875"
   建構好圖形後，會呼叫標準驗證方法。 完成時，任何已安裝的擴充驗證方法會依未指定的順序呼叫。 圖形會傳遞至每個 `ValidateArchitecture` 方法，它可以掃描圖形並報告其所找到的任何錯誤。  
   
 > [!NOTE]
->  這與套用至 UML 圖表的驗證程序不同，而且與可以用於定義域專屬語言的驗證程序不同。  
+> 這與套用至 UML 圖表的驗證程序不同，而且與可以用於定義域專屬語言的驗證程序不同。  
   
  驗證方法不應該變更圖層模型或正在驗證的程式碼。  
   

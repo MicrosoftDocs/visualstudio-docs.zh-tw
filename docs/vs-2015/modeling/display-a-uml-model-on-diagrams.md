@@ -11,12 +11,12 @@ caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 31181cd3dd70d3767bce65fe338d8dc152ec311c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 694b4dd1531dc196d06ba46eb8c5b77f66052bc2
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60042349"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436221"
 ---
 # <a name="display-a-uml-model-on-diagrams"></a>在圖表上顯示 UML 模型
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -102,7 +102,7 @@ ms.locfileid: "60042349"
  `Context.CurrentDiagram as IClassDiagram;`  
   
 > [!NOTE]
->  只有在您所處理的命令中，`IDiagram` 的執行個體 (及其子類型，例如 `IClassDiagram`) 才有效。 建議您不要將 `IDiagram` 物件保留在使用者重新取得控制權後仍會保存的變數中。  
+> 只有在您所處理的命令中，`IDiagram` 的執行個體 (及其子類型，例如 `IClassDiagram`) 才有效。 建議您不要將 `IDiagram` 物件保留在使用者重新取得控制權後仍會保存的變數中。  
   
  如需詳細資訊，請參閱 <<c0> [ 在模型圖上定義功能表命令](../modeling/define-a-menu-command-on-a-modeling-diagram.md)。  
   

@@ -22,12 +22,12 @@ caps.latest.revision: 142
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: c9097a8c067ce4e04dd54f879a6c1388f854d7ec
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: dfa2d0cb454dba07a036883a296d364cb3182afc
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60079301"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63440153"
 ---
 # <a name="intellitrace"></a>IntelliTrace
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -62,7 +62,7 @@ ms.locfileid: "60079301"
 |**不支援**|- C++、 其他語言和指令碼<br />-Windows 服務、 Silverlight、 Xbox 或[!INCLUDE[winmobile](../includes/winmobile-md.md)]應用程式|  
   
 > [!NOTE]
->  如果您要偵錯已在執行中的處理序，則不能使用 IntelliTrace。 您必須在處理序啟動時啟動 IntelliTrace。  
+> 如果您要偵錯已在執行中的處理序，則不能使用 IntelliTrace。 您必須在處理序啟動時啟動 IntelliTrace。  
   
 ## <a name="IntelliTraceVSTraditional"></a> 為什麼要使用 IntelliTrace 進行偵錯？  
  傳統或「即時」(Live) 偵錯只會顯示應用程式的目前狀態，並只包含有關過去事件的有限資料。 您必須根據應用程式的目前狀態來推斷這些事件，或者必須透過重新執行應用程式來重新建立這些事件。  
@@ -161,7 +161,7 @@ ms.locfileid: "60079301"
 - 第一層子物件的指標，但不含是否為 null 以外的值  
   
 > [!NOTE]
->  IntelliTrace 只會收集陣列中的前 256 個物件以及字串的前 256 個字元。  
+> IntelliTrace 只會收集陣列中的前 256 個物件以及字串的前 256 個字元。  
   
  請參閱[設定 IntelliTrace](http://msdn.microsoft.com/7657ecab-e07e-4b1b-872d-f05d966be37e)。  
   

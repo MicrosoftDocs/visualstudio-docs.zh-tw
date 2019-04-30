@@ -11,12 +11,12 @@ helpviewer_keywords:
 ms.assetid: 89123eae-0fef-46d5-bd36-3d2a166b14e3
 caps.latest.revision: 24
 manager: jillfra
-ms.openlocfilehash: 209f5956d77e714f7f663693f9ac22241d428480
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: b0ad8fce0fc582b42cc64944677f7b680aa96541
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60105056"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436530"
 ---
 # <a name="visual-studio-interop-assembly-parameter-marshaling"></a>Visual Studio Interop 組件參數封送處理
 Vspackage 以 managed 程式碼撰寫，可能必須呼叫或 unmanaged 的 COM 程式碼所呼叫。 一般而言，方法引數轉換，或由封送處理，會自動 interop 封送處理器。 不過，有時候引數無法轉換以直接的方式。 在這些情況下，interop 組件方法的原型參數來儘可能密集地符合 COM 函式參數。 如需詳細資訊，請參閱 < [Interop 封送處理](http://msdn.microsoft.com/library/115f7a2f-d422-4605-ab36-13a8dd28142a)。  
@@ -46,7 +46,7 @@ Vspackage 以 managed 程式碼撰寫，可能必須呼叫或 unmanaged 的 COM 
  某些情況下，會產生 COM 介面`IUnknown`物件，並在 COM 介面然後將它傳遞做為類型`void **`。 這些介面是特別重要因為如果變數定義為 [out] 中的 IDL 中，則`IUnknown`物件是使用參考計數`AddRef`方法。 如果物件未正確地處理，就會發生記憶體流失。  
   
 > [!NOTE]
->  `IUnknown`未明確地釋放時建立的 COM 介面，並在 [out] 的變數中傳回的物件會造成記憶體流失。  
+> `IUnknown`未明確地釋放時建立的 COM 介面，並在 [out] 的變數中傳回的物件會造成記憶體流失。  
   
  處理這類物件的 managed 的方法應該視為<xref:System.IntPtr>為指標`IUnknown`物件，然後呼叫<xref:System.Runtime.InteropServices.Marshal.GetObjectForIUnknown%2A>方法，以取得物件。 呼叫端應該再將傳回值轉換成任何類型的適用。 當不再需要物件時，呼叫<xref:System.Runtime.InteropServices.Marshal.Release%2A>釋放它。  
   
@@ -77,7 +77,7 @@ else
 ```  
   
 > [!NOTE]
->  下列方法將已知`IUnknown`做為類型的物件指標<xref:System.IntPtr>。 在本節中所述，請處理它們。  
+> 下列方法將已知`IUnknown`做為類型的物件指標<xref:System.IntPtr>。 在本節中所述，請處理它們。  
   
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFactory.CreateProject%2A>  
   

@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4635030dad4b43aa27294c8425a70d3f53e5715e
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 910ee20cf08c1d5a42e6b6a430f7b51ccddf4925
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60056844"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63429368"
 ---
 # <a name="walkthrough-getting-a-list-of-installed-code-snippets-legacy-implementation"></a>逐步解說：取得已安裝的程式碼片段 (舊版實作) 清單
 程式碼片段是一種程式碼，可以插入來源緩衝區 （可讓選擇的一份已安裝的程式碼片段） 的功能表命令或藉由從 IntelliSense 完成清單中選取的程式碼片段捷徑。
@@ -106,7 +106,7 @@ ms.locfileid: "60056844"
 1. 下列方法示範如何呼叫`GetSnippets`方法的剖析作業中完成。 <xref:Microsoft.VisualStudio.Package.LanguageService.OnParseComplete%2A>方法的剖析作業中所啟動的原因之後呼叫<xref:Microsoft.VisualStudio.Package.ParseReason>。
 
 > [!NOTE]
->  `expansionsList`陣列清單會基於效能考量而快取。 程式碼片段的變更才會反映清單中的語言服務停止並重新載入 (例如，藉由停止再重新開始[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)])。
+> `expansionsList`陣列清單會基於效能考量而快取。 程式碼片段的變更才會反映清單中的語言服務停止並重新載入 (例如，藉由停止再重新開始[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)])。
 
 ```csharp
 class TestLanguageService : LanguageService

@@ -12,12 +12,12 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ce4b5671d0e10d2f524ee96494d37cb68babe72a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 6852b12e8a3cbc902770a2825d12697c12fc1760
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60058872"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436545"
 ---
 # <a name="troubleshooting-exceptions-systemservicemodelsecuritymessagesecurityexception"></a>疑難排解例外狀況：System.ServiceModel.Security.MessageSecurityException
 A<xref:System.ServiceModel.Security.MessageSecurityException>例外狀況時擲回[!INCLUDE[vsindigo](../includes/vsindigo-md.md)]決定訊息未正確受到保護，或已遭竄改。 這個錯誤通常是在下列所有條件都成立時發生：  
@@ -35,7 +35,7 @@ A<xref:System.ServiceModel.Security.MessageSecurityException>例外狀況時擲�
  如果遠端使用者可能會透過使用 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 程式開發伺服器執行網站，同時也會使用 Web 服務或 WCF 服務，您可以建立自訂服務繫結或是關閉 NTLM 安全性。  
   
 > [!IMPORTANT]
->  關閉 NTLM 安全性不是建議的方式，並且可能造成安全性威脅。  
+> 關閉 NTLM 安全性不是建議的方式，並且可能造成安全性威脅。  
   
  如果您建立自訂服務繫結，則仍然受到 NTLM 驗證的保護。  
   
@@ -74,7 +74,7 @@ A<xref:System.ServiceModel.Security.MessageSecurityException>例外狀況時擲�
    當您使用 WCF 服務參考時，可以遵循下列步驟停用 NTLM 安全性。  
   
 > [!IMPORTANT]
->  關閉 NTLM 安全性不是建議的方式，並且可能造成安全性威脅。  
+> 關閉 NTLM 安全性不是建議的方式，並且可能造成安全性威脅。  
   
 #### <a name="to-turn-off-ntlm-security"></a>若要關閉 NTLM 安全性  
   

@@ -18,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 5c59824594a783ad952a7b15c47ee3f781aba79d
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 8a29c813a5217e68541fd076eadf62bf54710014
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60081316"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436480"
 ---
 # <a name="specific-security-considerations-for-office-solutions"></a>指定 Office 方案的安全性考量
   Microsoft .NET Framework 和 Microsoft Office 所提供的安全性功能，可協助保護您的 Office 解決方案免於可能的安全性威脅。 本主題說明一些這類威脅，並提供建議協助您免於威脅。 本主題也包含 Microsoft Office 安全性設定如何影響 Office 方案的相關資訊。
@@ -74,7 +74,7 @@ ms.locfileid: "60081316"
  [!code-vb[Trin_VstcoreOutlookSecurity#2](../vsto/codesnippet/VisualBasic/Trin_VstcoreOutlookSecurity/ThisAddIn.vb#2)]
 
 > [!NOTE]
->  如果 Outlook 與 Exchange 搭配使用，則從 `ThisAddIn.Application` 取得所有 Outlook 物件並不保證 VSTO 增益集可存取整個 Outlook 物件模型。 例如，如果 Exchange 系統管理員設定 Outlook 自動拒絕使用 Outlook 物件模型存取地址資訊的所有嘗試則 Outlook 將不會允許上述的程式碼範例，若要存取 [To] 屬性中，即使程式碼範例會使用受信任`ThisAddIn.Application`欄位。
+> 如果 Outlook 與 Exchange 搭配使用，則從 `ThisAddIn.Application` 取得所有 Outlook 物件並不保證 VSTO 增益集可存取整個 Outlook 物件模型。 例如，如果 Exchange 系統管理員設定 Outlook 自動拒絕使用 Outlook 物件模型存取地址資訊的所有嘗試則 Outlook 將不會允許上述的程式碼範例，若要存取 [To] 屬性中，即使程式碼範例會使用受信任`ThisAddIn.Application`欄位。
 
 ### <a name="specify-which-add-ins-to-trust-when-using-exchange"></a>指定使用 Exchange 時信任哪些增益集
  當 Outlook 與 Exchange 搭配使用時，系統管理員便可以指定特定 VSTO 增益集可以在不遇到物件模型保護的情況下執行。 使用 Visual Studio 中 Office 方案建立的 Outlook VSTO 增益集無法個別受到信任，它們只能以群組方式受到信任。

@@ -9,12 +9,12 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ba23da85e24dd7c1020b19b66852cad86f79a03b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: b733af14e5b5124928c315ae4a87098513714214
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60084774"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433341"
 ---
 # <a name="creating-a-windows-forms-based-domain-specific-language"></a>建立 Windows Form 架構之網域指定的語言
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -85,7 +85,7 @@ DSL 執行個體，顯示 Windows Form 使用者介面和 [模型總管] 中。
      為它提供額外的網域屬性，名為`Size`型別的**Int32**，以及`IsOrganic`型別的**布林**。  
 
     > [!NOTE]
-    >  如果您刪除根網域類別，然後再建立新的根目錄，您必須重設的編輯器的根類別屬性。 在  **DSL Explorer**，選取**編輯器**。 然後在 [屬性] 視窗中，將**根類別**至`Farm`。  
+    > 如果您刪除根網域類別，然後再建立新的根目錄，您必須重設的編輯器的根類別屬性。 在  **DSL Explorer**，選取**編輯器**。 然後在 [屬性] 視窗中，將**根類別**至`Farm`。  
 
 4. 使用**具名網域類別**工具來建立下列網域類別：  
 
@@ -110,7 +110,7 @@ DSL 執行個體，顯示 Windows Form 使用者介面和 [模型總管] 中。
 10. 建置**Dsl**專案。  
 
     > [!NOTE]
-    >  在這個階段，而且未發生錯誤無法建置其他專案。 不過，我們想要建置 Dsl 專案，使其組件可供使用，資料來源精靈。  
+    > 在這個階段，而且未發生錯誤無法建置其他專案。 不過，我們想要建置 Dsl 專案，使其組件可供使用，資料來源精靈。  
 
 ## <a name="updating-the-ui-project"></a>更新 UI 專案  
  現在您可以建立新的使用者控制項，將會顯示儲存在 DSL 模型中的資訊。 若要連接至模型的使用者控制項的最簡單方式是透過資料繫結。 資料繫結名稱為配接器類型**ModelingBindingSource**專為連接到非 VMSDK 介面的 Dsl。  
@@ -154,7 +154,7 @@ DSL 執行個體，顯示 Windows Form 使用者介面和 [模型總管] 中。
 6. 使用工具箱 中建立兩個執行個體**DataGridView**，並將它們命名`AnimalGridView`和`FieldGridView`。  
 
    > [!NOTE]
-   >  是的動物 」 和 「 欄位項目從資料來源視窗拖曳至控制項的替代步驟。 此動作會自動建立資料格和格線檢視與資料來源之間的繫結。 不過，此繫結運作不正常的 Dsl。 因此最好是建立資料格和繫結以手動方式。  
+   > 是的動物 」 和 「 欄位項目從資料來源視窗拖曳至控制項的替代步驟。 此動作會自動建立資料格和格線檢視與資料來源之間的繫結。 不過，此繫結運作不正常的 Dsl。 因此最好是建立資料格和繫結以手動方式。  
 
 7. 如果 [工具箱] 中不含**ModelingBindingSource**工具，請將它加入。 在捷徑功能表上**資料**索引標籤上，選擇**選擇項目**。 在 [**選擇工具箱項目**對話方塊中，選取**ModelingBindingSource**從 **.NET Framework] 索引標籤**。  
 
@@ -227,7 +227,7 @@ DSL 執行個體，顯示 Windows Form 使用者介面和 [模型總管] 中。
      `Goat1` 會出現在**動物**檢視。  
 
     > [!WARNING]
-    >  您必須使用的捷徑功能表上**伺服陣列**節點，不**動物**節點。  
+    > 您必須使用的捷徑功能表上**伺服陣列**節點，不**動物**節點。  
 
 4. 選取 **伺服陣列**根節點，並檢視其屬性。  
 

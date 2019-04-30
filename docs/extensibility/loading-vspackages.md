@@ -11,18 +11,18 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ce0f09c1749621838729e1e4f64feb3ca8b07628
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 92d6605f85aff7cd99abd4046999f484332a2faa
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60117560"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63431333"
 ---
 # <a name="load-vspackages"></a>載入 Vspackage
 Vspackage 會載入到 Visual Studio 中，只有需要其功能時，只有。 比方說，Visual Studio 使用專案 factory 或 VSPackage 實作的服務時，會載入 VSPackage。 這項功能稱為延遲的載入，這會盡可能以改善效能。
 
 > [!NOTE]
->  Visual Studio 可以判斷特定的 VSPackage 資訊，例如 VSPackage 提供，而不必載入 VSPackage 的命令。
+> Visual Studio 可以判斷特定的 VSPackage 資訊，例如 VSPackage 提供，而不必載入 VSPackage 的命令。
 
  Vspackage 可以例如設定自動載入在特定的使用者介面 (UI) 內容中，開啟方案時。 <xref:Microsoft.VisualStudio.Shell.ProvideAutoLoadAttribute>屬性會設定此內容。
 

@@ -9,12 +9,12 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 04867207ee8510a99ec19dc3f32175abedb39bf9
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 13a26ec22060985705f6a1b54cf691c50ae07f1a
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60054634"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63435216"
 ---
 # <a name="how-to-search-for-topics"></a>HOW TO：搜尋主題
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ ms.locfileid: "60054634"
 2. 在搜尋查詢中，指定要套用至搜尋的邏輯或進階搜尋運算子 (如果有的話)。 若要搜尋所有可用的說明，請不要使用運算子。  
   
     > [!NOTE]
-    >  在[檢視器選項] 對話方塊中，如果您的主要地區設定不是英文，您可以指定其他喜好設定，例如要一次顯示的搜尋結果數目上限以及是否要包括英文內容。  
+    > 在[檢視器選項] 對話方塊中，如果您的主要地區設定不是英文，您可以指定其他喜好設定，例如要一次顯示的搜尋結果數目上限以及是否要包括英文內容。  
   
 3. 選擇 Enter 鍵。  
   

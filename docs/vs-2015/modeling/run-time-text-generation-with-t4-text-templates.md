@@ -14,12 +14,12 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 37fa7bafb77c67d29ff9625fa04388f9dd826f8e
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 586ad1d68ce1d0310b30b8bdac8aa2fb55acdeb5
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60059262"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63411882"
 ---
 # <a name="run-time-text-generation-with-t4-text-templates"></a>使用 T4 文字範本在執行階段產生文字
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -60,7 +60,7 @@ This report is Company Confidential.
 3. 輸入您的範本檔案的名稱。  
   
     > [!NOTE]
-    >  範本檔案名稱將用於做為產生的程式碼中的類別名稱。 因此，它應該沒有空格或標點符號。  
+    > 範本檔案名稱將用於做為產生的程式碼中的類別名稱。 因此，它應該沒有空格或標點符號。  
   
 4. 選擇 [新增]。  
   
@@ -84,7 +84,7 @@ This report is Company Confidential.
 2. 設定檔案的**自訂工具**屬性設**TextTemplatingFilePreprocessor**。 在 [方案總管] 中，檔案的捷徑功能表上選擇**屬性**。  
   
     > [!NOTE]
-    >  如果已設定的屬性，請確定它是**TextTemplatingFilePreprocessor**而非**TextTemplatingFileGenerator**。 如果包含檔案已擴充此情形 **.tt**。  
+    > 如果已設定的屬性，請確定它是**TextTemplatingFilePreprocessor**而非**TextTemplatingFileGenerator**。 如果包含檔案已擴充此情形 **.tt**。  
   
 3. 變更的檔案名稱副檔名 **.tt**。 雖然這個步驟是選擇性的它可協助您避免在不正確的編輯器中開啟檔案。  
   
@@ -115,7 +115,7 @@ This report is Company Confidential.
 ```  
   
 ### <a name="embedded-program-code"></a>內嵌的程式碼  
- 您可以插入程式碼之間`<#`和`#>`。 例如：  
+ 您可以插入程式碼之間`<#`和`#>`。 例如:   
   
 ```csharp  
 <table>  

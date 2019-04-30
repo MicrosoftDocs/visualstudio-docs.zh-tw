@@ -15,12 +15,12 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 217cef39fb3f8564d4ac51878e515622706811ed
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 6bbdcb2e2ac8f905a2b52cfb41ed90217d215b4b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58940228"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63431547"
 ---
 # <a name="ca1045-do-not-pass-types-by-reference"></a>CA1045:不要以傳址方式傳遞類型
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,7 +45,7 @@ ms.locfileid: "58940228"
  雖然傳回的值很常見，並且大量使用正確的應用程式的`out`和`ref`參數需要中繼的設計和編碼技能。 程式庫架構設計人員負責設計的目標為一般使用者不應預期使用者會熟練地運用`out`或`ref`參數。
 
 > [!NOTE]
->  當您使用大型結構參數時，會複製這些結構所需的其他資源可能會造成效能上的影響時傳值方式傳遞。 在這些情況下，您可以考慮使用`ref`或`out`參數。
+> 當您使用大型結構參數時，會複製這些結構所需的其他資源可能會造成效能上的影響時傳值方式傳遞。 在這些情況下，您可以考慮使用`ref`或`out`參數。
 
 ## <a name="how-to-fix-violations"></a>如何修正違規
  若要修正此起因於實值類型的規則的違規情形，讓方法傳回的物件做為其傳回的值。 如果此方法必須傳回多個值，請將它傳回保存值物件的單一執行個體重新設計。

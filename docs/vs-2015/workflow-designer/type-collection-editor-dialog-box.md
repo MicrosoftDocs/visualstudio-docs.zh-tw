@@ -11,18 +11,18 @@ caps.latest.revision: 4
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 8f3b536ff59c01e1be71bd0fcfb57946219cefd1
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 66cd861fcf92c400e1499834ea6255df4d5cf0fa
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60073069"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432345"
 ---
 # <a name="type-collection-editor-dialog-box"></a>型別集合編輯器對話方塊
 **型別集合編輯器** 對話方塊用來新增至已知型別的**傳送**並**接收**活動。 此對話方塊也會用來加入泛用型別引數**InvokeMethod**活動。 當用於**傳送**並**接收**活動，以加入已知型別，**型別集合編輯器**對話方塊需要是唯一的型別新增項目。 如果加入重複的型別，並認可變更，即可**確定**，會傳回錯誤訊息。 當用於**InvokeMethod**活動，將泛型型別引數**型別集合編輯器**對話方塊允許重複的型別。  
   
 > [!NOTE]
->  [!INCLUDE[crabout](../includes/crabout-md.md)] 如需已知型別的詳細資訊，請參閱 [Data Contract Known Types](http://msdn.microsoft.com/library/1a0baea1-27b7-470d-9136-5bbad86c4337)就會將 CLR 型別對應至 XSD。  
+> [!INCLUDE[crabout](../includes/crabout-md.md)] 如需已知型別的詳細資訊，請參閱 [Data Contract Known Types](http://msdn.microsoft.com/library/1a0baea1-27b7-470d-9136-5bbad86c4337)就會將 CLR 型別對應至 XSD。  
   
  下表描述的使用者介面 (UI) 項目**型別集合** 對話方塊。  
   

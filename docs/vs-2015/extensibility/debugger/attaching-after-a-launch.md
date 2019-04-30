@@ -10,12 +10,12 @@ ms.assetid: 5a3600a1-dc20-4e55-b2a4-809736a6ae65
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 71b26fc2d26e180af25919dde5d3c4ee1bc1f891
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 693cf6d746f51862415f2f30e46d48a998047f14
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60113114"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437440"
 ---
 # <a name="attaching-after-a-launch"></a>在啟動後附加
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ ms.locfileid: "60113114"
 - 如果較為合理促進 DE 與程式之間的通訊，然後執行階段環境共同建立 DE。 這會保留在一個位址空間中，SDM DE、 執行階段環境和程式一起放在另一個。 這是典型的規定與解譯器，以執行指令碼的語言實作。  
   
     > [!NOTE]
-    >  DE 將附加至程式的方式會視實作而定。 DE 與程式之間的通訊也會視實作而定。  
+    > DE 將附加至程式的方式會視實作而定。 DE 與程式之間的通訊也會視實作而定。  
   
 ## <a name="implementation"></a>實作  
  以程式設計的方式，當工作階段的偵錯管理員 (SDM) 先收到[IDebugProgram2](../../extensibility/debugger/reference/idebugprogram2.md)物件，表示要啟動的程式，它會呼叫[附加](../../extensibility/debugger/reference/idebugprogram2-attach.md)方法，並傳遞它[IDebugEventCallback2](../../extensibility/debugger/reference/idebugeventcallback2.md)物件，也就是更新用來傳遞回到 SDM 的偵錯事件。 `IDebugProgram2::Attach`然後方法會呼叫[OnAttach](../../extensibility/debugger/reference/idebugprogramnodeattach2-onattach.md)方法。 如需有關如何接收 SDM`IDebugProgram2`介面，請參閱 <<c2> [ 通知連接埠](../../extensibility/debugger/notifying-the-port.md)。  

@@ -17,12 +17,12 @@ caps.latest.revision: 15
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 04f6c78f3733bbc8aab3aec5811f1eb643ecca4e
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 18c8dd4d0bc79ac2f3af44b8b5f8dd6faacb9f45
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60056610"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63434086"
 ---
 # <a name="how-to-install-prerequisites-with-a-clickonce-application"></a>HOW TO：與 ClickOnce 應用程式一起安裝必要軟體
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,12 +32,12 @@ ms.locfileid: "60056610"
  而不是封裝和發行必要條件，您也可以指定元件的下載位置。 比方說，而不是包含每個應用程式，您將發行的必要條件，您可以使用集中式的檔案共用或包含的所有必要條件的安裝程式的 Web 位置，在安裝時，將下載的元件和安裝從該位置。  
   
 > [!IMPORTANT]
->  您應該將必要條件安裝程式封裝加入您的開發電腦，然後再發行您的第一個[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]應用程式。 如需詳細資訊，請參閱[如何：隨著 ClickOnce 應用程式納入必要軟體](../deployment/how-to-include-prerequisites-with-a-clickonce-application.md)。  
+> 您應該將必要條件安裝程式封裝加入您的開發電腦，然後再發行您的第一個[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]應用程式。 如需詳細資訊，請參閱[如何：隨著 ClickOnce 應用程式納入必要軟體](../deployment/how-to-include-prerequisites-with-a-clickonce-application.md)。  
   
  在進行管理的必要條件**必要條件** 對話方塊中，從可存取**發佈**窗格**專案設計工具**。  
   
 > [!NOTE]
->  除了預先決定的必要條件清單中，您可以將自己的元件加入清單。 如需詳細資訊，請參閱 <<c0> [ 建立啟動載入器套件](../deployment/creating-bootstrapper-packages.md)。  
+> 除了預先決定的必要條件清單中，您可以將自己的元件加入清單。 如需詳細資訊，請參閱 <<c0> [ 建立啟動載入器套件](../deployment/creating-bootstrapper-packages.md)。  
   
 ### <a name="to-specify-prerequisites-to-install-with-a-clickonce-application"></a>若要指定要使用 ClickOnce 應用程式安裝的必要條件  
   
@@ -68,7 +68,7 @@ ms.locfileid: "60056610"
 6. 從下拉式清單中，選取位置或輸入 URL、 檔案路徑或 FTP 位置，然後按一下 **[確定]。**  
   
     > [!NOTE]
-    >  您必須確定在安裝程式指定的元件存在於指定的位置。  
+    > 您必須確定在安裝程式指定的元件存在於指定的位置。  
   
 ## <a name="see-also"></a>另請參閱  
  [發佈 ClickOnce 應用程式](../deployment/publishing-clickonce-applications.md)   

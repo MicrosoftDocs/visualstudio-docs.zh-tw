@@ -12,12 +12,12 @@ caps.latest.revision: 16
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: aaebcb9bf5edb5fda6938d364b3f96dc8823576f
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: 3f9a6f7985e3ebb3e77dcc605157f75e00a0842b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59653485"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63426029"
 ---
 # <a name="msbuild-transforms"></a>MSBuild 轉換
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ ms.locfileid: "59653485"
 ```  
   
 > [!NOTE]
->  您可以為已轉換的項目清單指定自訂分隔符號 (方法與您為標準項目清單指定分隔符號的方式相同)。 例如，若要使用逗號 (,) 而不是預設的分號 (;) 來分隔已轉換的項目清單，請使用下列 XML。  
+> 您可以為已轉換的項目清單指定自訂分隔符號 (方法與您為標準項目清單指定分隔符號的方式相同)。 例如，若要使用逗號 (,) 而不是預設的分號 (;) 來分隔已轉換的項目清單，請使用下列 XML。  
   
 ```  
 @(RESXFile->'Toolset\%(filename)%(extension)', ',')  

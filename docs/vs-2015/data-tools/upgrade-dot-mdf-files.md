@@ -22,12 +22,12 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 robots: noindex,nofollow
-ms.openlocfilehash: 395e2a6233c1b6187d9089459cb8f267c4c3c904
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: d4d2218337153418ef201ee7896eeb095c4778fb
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60079904"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63424913"
 ---
 # <a name="upgrade-mdf-files"></a>升級 .mdf 檔案
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,10 +47,10 @@ ms.locfileid: "60079904"
   您可能也會提示您升級資料庫檔案，如果檔案的版本不相容的 SQL Server Express 或目前已安裝的 LocalDB 執行個體，透過 SQL Server Express 或 LocalDB 的較早版本所建立的。 若要解決此問題，Visual Studio 會提示您升級的檔案。  
   
 > [!IMPORTANT]
->  我們建議您在升級之前先備份資料庫檔案。  
+> 我們建議您在升級之前先備份資料庫檔案。  
   
 > [!WARNING]
->  如果您升級 LocalDB 2014 (V12) 至 LocalDB 2016 (V13) 的 32 位元中所建立的.mdf 檔案時，您無法在 32 位元版本的 LocalDB 中再次開啟該檔案。  在 Update 2 中，LocalDB V13 會是 64 位元。  
+> 如果您升級 LocalDB 2014 (V12) 至 LocalDB 2016 (V13) 的 32 位元中所建立的.mdf 檔案時，您無法在 32 位元版本的 LocalDB 中再次開啟該檔案。  在 Update 2 中，LocalDB V13 會是 64 位元。  
   
  您將資料庫升級之前，請考慮下列準則：  
   

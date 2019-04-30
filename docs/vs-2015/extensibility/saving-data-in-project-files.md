@@ -12,12 +12,12 @@ ms.assetid: a3d4b15b-a91e-41ba-b235-e62632d11bc5
 caps.latest.revision: 29
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 31a9b093fc912be9db573b89d8c6b09e927c8b87
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: fc671963854e4fa0c2af763de5000fac82a839b8
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60048719"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432522"
 ---
 # <a name="saving-data-in-project-files"></a>將資料儲存於專案檔
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -208,7 +208,7 @@ ms.locfileid: "60048719"
     ```  
   
 > [!NOTE]
->  本主題所提供的所有程式碼範例是較大的範例中，部分[VSSDK 範例](../misc/vssdk-samples.md)。  
+> 本主題所提供的所有程式碼範例是較大的範例中，部分[VSSDK 範例](../misc/vssdk-samples.md)。  
   
 ## <a name="see-also"></a>另請參閱  
  [在 MSBuild 專案檔中保存資料](../extensibility/internals/persisting-data-in-the-msbuild-project-file.md)

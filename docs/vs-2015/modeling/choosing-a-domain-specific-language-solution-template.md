@@ -11,12 +11,12 @@ caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 943493273808afdb2dfb099ff1f44900028e4dd6
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 36b821219b02fa77171d89214d8cf4813ce92303
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58945869"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433393"
 ---
 # <a name="choosing-a-domain-specific-language-solution-template"></a>選擇網域指定的語言方案範本
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,7 +26,7 @@ ms.locfileid: "58945869"
  下列解決方案範本可在特定領域語言設計工具精靈。  
   
 > [!NOTE]
->  範本的目的是提供開始的 DSL。 名為類別和元件圖表的範本不完整的 UML 圖表。 如果您想要建立 UML 模型，請考慮的 UML 模型工具，提供一組整合在單一模型周圍的圖表。 它們可以擴充，並且可以使用 ModelBus 與 DSL 整合。 如需詳細資訊，請參閱 <<c0> [ 建立應用程式模型](../modeling/create-models-for-your-app.md)。  
+> 範本的目的是提供開始的 DSL。 名為類別和元件圖表的範本不完整的 UML 圖表。 如果您想要建立 UML 模型，請考慮的 UML 模型工具，提供一組整合在單一模型周圍的圖表。 它們可以擴充，並且可以使用 ModelBus 與 DSL 整合。 如需詳細資訊，請參閱 <<c0> [ 建立應用程式模型](../modeling/create-models-for-your-app.md)。  
   
 |範本|功能|描述|  
 |--------------|--------------|-----------------|  

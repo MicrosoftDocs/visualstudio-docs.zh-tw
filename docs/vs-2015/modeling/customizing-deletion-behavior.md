@@ -13,12 +13,12 @@ caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: d22db963f895c4ca53a44e20bc0babd0dff49853
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: fa7db2f55a89bd6c542bff0cf30ee058e339f15c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60107580"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433293"
 ---
 # <a name="customizing-deletion-behavior"></a>自訂刪除行為
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -77,7 +77,7 @@ ms.locfileid: "60107580"
  DSL 定義檔案中的選項只能讓您選擇刪除是否傳播至相鄰項目。 若要實作更複雜的刪除傳播配置，可以撰寫程式碼。  
   
 > [!NOTE]
->  若要加入您的 DSL 定義中的程式碼，請建立不同的程式碼檔案中**Dsl**專案，並撰寫部分定義以擴大 Generated Code 資料夾中的類別。 如需詳細資訊，請參閱 <<c0> [ 來自訂特定領域語言撰寫的程式碼](../modeling/writing-code-to-customise-a-domain-specific-language.md)。  
+> 若要加入您的 DSL 定義中的程式碼，請建立不同的程式碼檔案中**Dsl**專案，並撰寫部分定義以擴大 Generated Code 資料夾中的類別。 如需詳細資訊，請參閱 <<c0> [ 來自訂特定領域語言撰寫的程式碼](../modeling/writing-code-to-customise-a-domain-specific-language.md)。  
   
 ## <a name="closure"></a> 定義刪除關閉  
  刪除作業使用類別_YourModel_**DeleteClosure**來判斷要刪除，請提供初始選擇的項目。 它重複呼叫 `ShouldVisitRelationship()` 和 `ShouldVisitRolePlayer()`，查核關聯性的圖形。 您可以覆寫這些方法。 ShouldVisitRolePlayer 隨附於連結的識別以及位於其中一個連結之角色的項目。 它應傳回下列其中一個值：  
@@ -213,7 +213,7 @@ partial class Artist
      如需詳細資訊，請參閱 <<c0> [ 事件處理常式傳播變更外部模型](../modeling/event-handlers-propagate-changes-outside-the-model.md)。  
   
     > [!WARNING]
-    >  刪除某個項目時，您可以存取其網域屬性值，但是無法巡覽關聯性連結。 不過，如果您對某個關聯性設定已刪除事件，您也可以存取原先為其角色扮演者的兩個項目。 因此，如果您要回應模型項目的刪除，但是想要存取它連結的項目，請對關聯性 (而非模型項目的網域類別) 設定刪除事件。  
+    > 刪除某個項目時，您可以存取其網域屬性值，但是無法巡覽關聯性連結。 不過，如果您對某個關聯性設定已刪除事件，您也可以存取原先為其角色扮演者的兩個項目。 因此，如果您要回應模型項目的刪除，但是想要存取它連結的項目，請對關聯性 (而非模型項目的網域類別) 設定刪除事件。  
   
 ### <a name="example-deletion-rules"></a>Deletion 規則範例  
   

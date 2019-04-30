@@ -10,12 +10,12 @@ ms.assetid: 12df4d06-df6b-4eaf-a7bf-c83655a0c683
 caps.latest.revision: 18
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: e5900d5c818883ffc78b2399b937c80307b52c36
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 11a98599a9812cd00650d113170ff55c01ac44db
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60116513"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63435900"
 ---
 # <a name="how-to-provide-context-for-editors"></a>HOW TO：編輯器提供的內容
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -67,7 +67,7 @@ ms.locfileid: "60116513"
      當**動態說明**視窗呼叫<xref:Microsoft.VisualStudio.Shell.Interop.IVsUserContextUpdate.UpdateUserContext%2A>指出正在進行更新，編輯器或設計工具可以在該時間更新適當的父代內容包和任何子內容包的內容。  
   
     > [!NOTE]
-    >  `SetDirty`旗標會自動設為`true`每當加入或移除的內容封包的內容。 **動態說明** 視窗只會呼叫<xref:Microsoft.VisualStudio.Shell.Interop.IVsUserContextUpdate.UpdateUserContext%2A>上的內容封包如果`SetDirty`旗標設為`true`。 它會重設為`false`之後更新。  
+    > `SetDirty`旗標會自動設為`true`每當加入或移除的內容封包的內容。 **動態說明** 視窗只會呼叫<xref:Microsoft.VisualStudio.Shell.Interop.IVsUserContextUpdate.UpdateUserContext%2A>上的內容封包如果`SetDirty`旗標設為`true`。 它會重設為`false`之後更新。  
   
 3. 呼叫<xref:Microsoft.VisualStudio.Shell.Interop.IVsUserContext.AddAttribute%2A>將內容新增至作用中的內容集合或<xref:Microsoft.VisualStudio.Shell.Interop.IVsUserContext.RemoveAttribute%2A>移除內容。  
   
@@ -75,7 +75,7 @@ ms.locfileid: "60116513"
  如果您正在撰寫自己的編輯器，您必須完成所有三個為編輯器提供內容，本主題中的程序。  
   
 > [!NOTE]
->  若要正常啟動編輯器或設計工具 視窗，並確保命令路由更新正確，您必須呼叫<xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame.Show%2A>讓焦點視窗元件上。  
+> 若要正常啟動編輯器或設計工具 視窗，並確保命令路由更新正確，您必須呼叫<xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame.Show%2A>讓焦點視窗元件上。  
   
  SEID 是變更選取項目為基礎的屬性集合。 SEID 資訊是透過全域選取範圍。 全域的選取項目會連結至所觸發的事件<xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackSelectionEx>介面，且有一份所有項目，是選取 （目前的編輯器、 目前的工具視窗、 目前的階層，等等）。  
   

@@ -13,24 +13,24 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 2e1855c64e88cdf45715654eede780aaa20d0258
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 6a9a11f42acae44c441aca8cb06a1a363fea5a73
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60091417"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63418863"
 ---
 # <a name="how-to-show-the-developer-tab-on-the-ribbon"></a>HOW TO：在功能區顯示開發人員索引標籤
   若要存取**開發人員** 索引標籤上的 Office 應用程式功能區中，您必須將它設定為顯示該索引標籤上，因為它不會出現預設。 例如，如果您要將 <xref:Microsoft.Office.Tools.Word.GroupContentControl> 加入至 Word 文件層級自訂中，您必須顯示此索引標籤。
 
 > [!NOTE]
->  本指導僅適用於 Office 2010 或更新版應用程式。 如果您想要在 2007 Microsoft Office System 顯示這個索引標籤，請參閱本主題的下列版本[How to:在功能區顯示開發人員索引標籤](https://web.archive.org/web/20140303033431/msdn.microsoft.com/library/bb608625(v=vs.90).aspx
+> 本指導僅適用於 Office 2010 或更新版應用程式。 如果您想要在 2007 Microsoft Office System 顯示這個索引標籤，請參閱本主題的下列版本[How to:在功能區顯示開發人員索引標籤](https://web.archive.org/web/20140303033431/msdn.microsoft.com/library/bb608625(v=vs.90).aspx
 )。
 
  [!INCLUDE[appliesto_ribbon](../vsto/includes/appliesto-ribbon-md.md)]
 
 > [!NOTE]
->  沒有存取權**開發人員** 索引標籤。
+> 沒有存取權**開發人員** 索引標籤。
 
 ## <a name="to-show-the-developer-tab"></a>顯示開發人員索引標籤
 

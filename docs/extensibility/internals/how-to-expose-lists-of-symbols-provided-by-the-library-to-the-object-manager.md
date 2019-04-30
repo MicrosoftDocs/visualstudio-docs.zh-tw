@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 19f426d60ea8ee3d9326fa9b13adfff115c169d5
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 93791cda512ee8d74664e1b8b04890da74e399ad
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60061316"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63420626"
 ---
 # <a name="how-to-expose-lists-of-symbols-provided-by-the-library-to-the-object-manager"></a>HOW TO：公開 （expose) 至物件管理員程式庫所提供的符號清單
 符號瀏覽工具，**類別檢視**，**物件瀏覽器**，**呼叫瀏覽器**並**尋找符號結果**，傳遞至新資料的要求[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]物件管理員。 物件管理員尋找適當的程式庫，並要求新的符號清單。 藉由提供要求的資料，以回應的程式庫[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]物件的管理員，透過<xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2>介面。 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]物件管理員會呼叫方法<xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2>介面取得的資料，並使用它來填入，或更新的符號瀏覽工具的檢視。
@@ -27,9 +27,9 @@ ms.locfileid: "60061316"
  叫用的工具、 節點已展開，或重新整理檢視時，程式庫可能會收到資料的要求。 第一次叫用的符號瀏覽工具時，物件管理員會要求要提供最上層清單的程式庫。 當使用者展開清單節點時，則程式庫會提供該節點下的子系清單。 每個物件管理員查詢包含感興趣的項目的索引。 若要顯示新的清單，物件管理員必須決定多少項目會在清單中，項目，其名稱、 存取範圍，以及其他屬性的類型。
 
 > [!NOTE]
->  下列的 managed 程式碼範例示範如何提供透過實作的符號清單<xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2>介面。 物件管理員這個介面中呼叫的方法，並使用取得的資料填入，或更新的符號瀏覽工具。
+> 下列的 managed 程式碼範例示範如何提供透過實作的符號清單<xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2>介面。 物件管理員這個介面中呼叫的方法，並使用取得的資料填入，或更新的符號瀏覽工具。
 >
->  如需原生程式碼符號提供者實作，使用<xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectList2>介面。
+> 如需原生程式碼符號提供者實作，使用<xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectList2>介面。
 
 ## <a name="to-provide-lists-of-symbols-to-the-object-manager"></a>物件管理員提供的符號清單
 

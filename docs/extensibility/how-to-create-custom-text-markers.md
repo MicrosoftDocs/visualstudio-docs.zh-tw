@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: cf0462b4d6aac29c87d71506e3a535f21e2b91a7
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 717badcc52088568ae348dbb1b712b2202cc7a72
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60103395"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63415551"
 ---
 # <a name="how-to-create-custom-text-markers"></a>HOW TO：建立自訂文字標記
 如果您想要建立自訂文字標記，以強調或組織程式碼，您必須採取下列步驟：
@@ -41,7 +41,7 @@ ms.locfileid: "60103395"
     `<PackageGUID>` VSPackage 的 GUID 實作自動化物件。
 
    > [!NOTE]
-   >  根路徑**hkey_local_machine\software\microsoft\visualstudio \\\\<版本 >** 可以覆寫為其他根目錄的 Visual Studio shell 初始化時，如需詳細資訊，請參閱[命令列參數](../extensibility/command-line-switches-visual-studio-sdk.md)。
+   > 根路徑**hkey_local_machine\software\microsoft\visualstudio \\\\<版本 >** 可以覆寫為其他根目錄的 Visual Studio shell 初始化時，如需詳細資訊，請參閱[命令列參數](../extensibility/command-line-switches-visual-studio-sdk.md)。
 
 2. 建立四個值之下**hkey_local_machine\software\microsoft\visualstudio \\\\<版本 > \Text Editor\External 標記\\\<MarkerGUID >**
 

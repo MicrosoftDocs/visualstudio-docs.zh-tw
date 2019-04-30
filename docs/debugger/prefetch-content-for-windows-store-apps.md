@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 7e59548ac46196f86813aa312e68bbe043edf701
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.openlocfilehash: 03ae7ecaf9998646d1dc13c4a93bbf34b53f5e47
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56701273"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63408602"
 ---
 # <a name="debug-uwp-apps-using-prefetched-content-in-visual-studio"></a>偵錯在 Visual Studio 中使用的預先擷取的內容的 UWP 應用程式
 
@@ -28,16 +28,16 @@ ms.locfileid: "56701273"
 ## <a name="to-force-preloading-of-contentprefetcher-specified-resources"></a>若要強制 ContentPrefetcher 預先載入指定的資源
  下列程序會假設您已經設定 ContentPrefetcher 功能，而且已指定要在應用程式專案中預先載入的內容 URI。 如果指定的資源是新資源或已經過修改，則您必須先啟動並停止應用程式，再選擇 [觸發 Microsoft Store 應用程式預先擷取] 命令，才能強制預先載入內容。 您要先執行應用程式以註冊 URI。 接著，[觸發 Microsoft Store 應用程式預先擷取] 命令會強制 ContentPrefetcher 下載內容並將其新增至快取。 未來執行應用程式時，您就可以認定內容已經預先載入。
 
-1. 啟動應用程式，向應用程式註冊預先擷取內容 URI。 在 [偵錯] 功能表上，選擇 [開始偵錯] (鍵盤快速鍵：F5)。
+1. 啟動應用程式，向應用程式註冊預先擷取內容 URI。 在 [偵錯] 功能表上選擇 [開始偵錯] (鍵盤快速鍵：F5)。
 
-2. 在 [偵錯] 功能表上，選擇 [停止偵錯] (鍵盤快速鍵：Shift+F5)。
+2. 在 **偵錯**功能表上，選擇**停止偵錯**(鍵盤快速鍵：Shift + F5）。
 
 3. 在 [偵錯] 功能表上選擇 [其他偵錯目標]，然後選擇 [觸發 Microsoft Store 應用程式預先擷取]。
 
    現在您可以在已經預先擷取 Web 資源的情況下偵錯、測試或分析應用程式。
 
 > [!NOTE]
->  當您新增或修改指定的 Web 內容時，請重複上述步驟。
+> 當您新增或修改指定的 Web 內容時，請重複上述步驟。
 
-## <a name="see-also"></a>請參閱
-- [部落格文章： 觸發預先擷取適用於 Windows 市集應用程式在 Visual Studio 2013 Update 2](https://devblogs.microsoft.com/devops/triggering-prefetch-for-windows-store-apps-in-visual-studio-2013-update-2/)
+## <a name="see-also"></a>另請參閱
+- [部落格文章：在 Visual Studio 2013 Update 2 中的 Windows 市集應用程式中觸發預先擷取](https://devblogs.microsoft.com/devops/triggering-prefetch-for-windows-store-apps-in-visual-studio-2013-update-2/)

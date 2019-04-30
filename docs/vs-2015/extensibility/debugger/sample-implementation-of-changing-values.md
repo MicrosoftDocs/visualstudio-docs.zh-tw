@@ -11,23 +11,23 @@ ms.assetid: ee2d955b-12ca-4f27-89aa-c2d0e768b6b6
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 4a7b35c2a96ae31d698ff2294878adc45e3d6572
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 6a7f8f8c352db4f2fcd0230f4eac66e8bddb94e6
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60056402"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436677"
 ---
 # <a name="sample-implementation-of-changing-values"></a>變更值的範例實作
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 > [!IMPORTANT]
->  在 Visual Studio 2015 中，這種實作運算式評估工具已被取代。 如需實作 CLR 運算式評估工具的資訊，請參閱[CLR 運算式評估工具](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators)並[Managed 運算式評估工具範例](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)。  
+> 在 Visual Studio 2015 中，這種實作運算式評估工具已被取代。 如需實作 CLR 運算式評估工具的資訊，請參閱[CLR 運算式評估工具](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators)並[Managed 運算式評估工具範例](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)。  
   
  顯示在每次本機**區域變數**時段[IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md)與其相關聯的物件。 這`IDebugProperty2`物件包含區域的名稱、 值和型別。 當使用者變更區域變數的值時，Visual Studio 會呼叫[SetValueAsString](../../extensibility/debugger/reference/idebugproperty2-setvalueasstring.md)来更新的本機記憶體中的值。 在此範例中，表示本機`CFieldProperty`可實作類別`IDebugProperty2`介面。  
   
 > [!NOTE]
->  針對**監看式**並**快速監看式**運算式，要變更的值由`CValueProperty`MyCEE 範例中的類別。 不過，實作`IDebugProperty2::SetValueAsString`相同如下所示。  
+> 針對**監看式**並**快速監看式**運算式，要變更的值由`CValueProperty`MyCEE 範例中的類別。 不過，實作`IDebugProperty2::SetValueAsString`相同如下所示。  
   
  這個實作`IDebugProperty2::SetValueAsString`會執行下列工作：  
   

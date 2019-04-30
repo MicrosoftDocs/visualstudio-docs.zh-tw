@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 4d1e7bfd074b0ed7f6f1bcef99acf28f478a9c51
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 24bbd859b4867225e5ec5df95d298dd04146df46
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60097488"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63421021"
 ---
 # <a name="how-to-update-a-data-source-with-data-from-a-host-control"></a>HOW TO：從主控制項的資料更新資料來源
   您可以將主控制項繫結至資料來源，並以在控制項中對資料所做的變更來更新資料來源。 這個程序包含兩個主要步驟：
@@ -61,7 +61,7 @@ ms.locfileid: "60097488"
    - 若要更新資料來源，控制項的資料繫結屬性值變更時，請將這個屬性設 System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged。
 
      > [!NOTE]
-     >  System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged 選項不適用於 Word 主控制項，，因為 Word 不提供文件變更或控制項變更通知。 不過，這個選項可用於 Word 文件上的 Windows Form 控制項。
+     > System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged 選項不適用於 Word 主控制項，，因為 Word 不提供文件變更或控制項變更通知。 不過，這個選項可用於 Word 文件上的 Windows Form 控制項。
 
      下列範例會將 <xref:Microsoft.Office.Tools.Excel.NamedRange> 控制項設定為只要控制項中的值一變更就自動更新資料來源。 這個範例假設您有名為 <xref:Microsoft.Office.Tools.Excel.NamedRange> 的 `namedRange1` 控制項，而且控制項的 <xref:Microsoft.Office.Tools.Excel.NamedRange.Value2%2A> 屬性已繫結至資料來源中的欄位。
 
@@ -85,7 +85,7 @@ ms.locfileid: "60097488"
     - 若要在控制項的資料繫結屬性值變更時更新資料來源，請選取 [OnPropertyChanged] 。
 
         > [!NOTE]
-        >  [OnPropertyChanged]  選項不適用於 Word 主控制項，因為 Word 不提供文件變更或控制項變更通知。 不過，這個選項可用於 Word 文件上的 Windows Form 控制項。
+        > [OnPropertyChanged]  選項不適用於 Word 主控制項，因為 Word 不提供文件變更或控制項變更通知。 不過，這個選項可用於 Word 文件上的 Windows Form 控制項。
 
 6. 關閉 [格式化與進階繫結]  對話方塊。
 

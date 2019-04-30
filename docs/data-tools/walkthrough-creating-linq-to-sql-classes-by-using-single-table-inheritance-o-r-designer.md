@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 2b270d742cab45bebc48e37dd557ce4cdb2470b3
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 7bb6562c0eb74f537efb25be031e9c9be46d64b6
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60114336"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63402681"
 ---
 # <a name="walkthrough-create-linq-to-sql-classes-by-using-single-table-inheritance-or-designer"></a>逐步解說：建立 LINQ to SQL 類別中，使用單一資料表繼承 （O/R 設計工具）
 [在 Visual Studio 中的 LINQ to SQL 工具](../data-tools/linq-to-sql-tools-in-visual-studio2.md)支援單一資料表繼承，因為它通常實作在關聯式系統中。 這個逐步解說中所提供的泛型步驟為基礎以[How to:使用 O/R 設計工具設定繼承](../data-tools/how-to-configure-inheritance-by-using-the-o-r-designer.md)主題，並提供一些實際資料來示範如何使用中的繼承[!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)]。
@@ -45,7 +45,7 @@ ms.locfileid: "60114336"
 1. 在 **伺服器總管**或**資料庫總管**，以滑鼠右鍵按一下**資料表**節點，然後按一下**加入新的資料表**。
 
     > [!NOTE]
-    >  您可以使用 Northwind 資料庫，或其他可以在其中加入資料表的任何資料庫。
+    > 您可以使用 Northwind 資料庫，或其他可以在其中加入資料表的任何資料庫。
 
 2. 在**資料表設計工具**中，將下列資料行新增至資料表：
 

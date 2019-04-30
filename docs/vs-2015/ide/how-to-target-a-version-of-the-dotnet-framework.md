@@ -12,12 +12,12 @@ caps.latest.revision: 53
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 8983b027eb82ac9ac09b3f753333af9f7d08e2a5
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: a815a7ee13b415220c41189b6b060d893e8ef8e8
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60114843"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63435149"
 ---
 # <a name="how-to-target-a-version-of-the-net-framework"></a>HOW TO：以一個 .NET Framework 版本為目標
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,7 +25,7 @@ ms.locfileid: "60114843"
 本文件說明如何在建立專案時以某個 .NET Framework 版本為目標，以及如何變更現有 Visual Basic、Visual C# 或 Visual F# 專案的目標版本。  
   
 > [!IMPORTANT]
->  如需如何變更 C++ 專案目標版本的資訊，請參閱[如何：修改目標 Framework 和平台工具組](http://msdn.microsoft.com/library/031b1d54-e6e1-4da7-9868-3e75a87d9ffe)。  
+> 如需如何變更 C++ 專案目標版本的資訊，請參閱[如何：修改目標 Framework 和平台工具組](http://msdn.microsoft.com/library/031b1d54-e6e1-4da7-9868-3e75a87d9ffe)。  
   
  **本主題內容**  
   
@@ -37,7 +37,7 @@ ms.locfileid: "60114843"
  當您建立專案時，做為目標的 .NET Framework 版本會決定您可以使用的範本。  
   
 > [!NOTE]
->  在 Visual Studio Express 版中，您必須先建立專案，才能變更目標，如本主題稍後的[變更目標版本](../ide/how-to-target-a-version-of-the-dotnet-framework.md#bkmk_existing)中所述。  
+> 在 Visual Studio Express 版中，您必須先建立專案，才能變更目標，如本主題稍後的[變更目標版本](../ide/how-to-target-a-version-of-the-dotnet-framework.md#bkmk_existing)中所述。  
   
 #### <a name="to-target-a-version-when-you-create-a-project"></a>若要在建立專案時設定目標版本  
   
@@ -46,7 +46,7 @@ ms.locfileid: "60114843"
 2. 在 [新增專案] 對話方塊頂端的清單中，選擇要設定為專案目標的 .NET Framework 版本。  
   
     > [!NOTE]
-    >  通常，只有一個 .NET Framework 版本會與 Visual Studio 一起安裝。 如果您要以另一個版本為目標，則必須先確定該版本已安裝。 請參閱 [Visual Studio 多目標概觀](../ide/visual-studio-multi-targeting-overview.md)。  
+    > 通常，只有一個 .NET Framework 版本會與 Visual Studio 一起安裝。 如果您要以另一個版本為目標，則必須先確定該版本已安裝。 請參閱 [Visual Studio 多目標概觀](../ide/visual-studio-multi-targeting-overview.md)。  
   
 3. 在已安裝的範本清單中，選擇您要建立的專案類型，為專案命名，然後選擇 [確定] 按鈕。  
   
@@ -62,14 +62,14 @@ ms.locfileid: "60114843"
      ![Visual Studio 方案總管的 [屬性]](../ide/media/vs-slnexplorer-properties.png "vs_slnExplorer_Properties")  
   
     > [!IMPORTANT]
-    >  如需如何變更 C++ 專案目標版本的資訊，請參閱[如何：修改目標 Framework 和平台工具組](http://msdn.microsoft.com/library/031b1d54-e6e1-4da7-9868-3e75a87d9ffe)。  
+    > 如需如何變更 C++ 專案目標版本的資訊，請參閱[如何：修改目標 Framework 和平台工具組](http://msdn.microsoft.com/library/031b1d54-e6e1-4da7-9868-3e75a87d9ffe)。  
   
 2. 在 [屬性] 視窗的左欄中，選擇 **[應用程式]** 索引標籤。  
   
      ![Visual Studio 應用程式、[屬性]、[應用程式] 索引標籤](../ide/media/vs-slnexplorer-properties-applicationtab.png "vs_slnExplorer_Properties_ApplicationTab")  
   
     > [!NOTE]
-    >  在建立 Windows 市集應用程式之後，就無法變更 Windows 或 .NET Framework 的目標版本。  
+    > 在建立 Windows 市集應用程式之後，就無法變更 Windows 或 .NET Framework 的目標版本。  
   
 3. 在 [目標 Framework] 清單中，選擇您要的版本。  
   
@@ -78,7 +78,7 @@ ms.locfileid: "60114843"
      專案將會卸載。 當您重新載入專案時，它會以您剛剛選擇的 .NET Framework 版本為目標。  
   
     > [!NOTE]
-    >  如果您的程式碼包含的 .NET Framework 版本參考與您的目標版本不同，則會在您編譯或執行程式碼時出現錯誤訊息。 若要解決這些錯誤，您必須修改參考。 請參閱[針對 .NET Framework 目標錯誤進行疑難排解](../msbuild/troubleshooting-dotnet-framework-targeting-errors.md)。  
+    > 如果您的程式碼包含的 .NET Framework 版本參考與您的目標版本不同，則會在您編譯或執行程式碼時出現錯誤訊息。 若要解決這些錯誤，您必須修改參考。 請參閱[針對 .NET Framework 目標錯誤進行疑難排解](../msbuild/troubleshooting-dotnet-framework-targeting-errors.md)。  
   
 ## <a name="see-also"></a>另請參閱  
  [Visual Studio 多目標概觀](../ide/visual-studio-multi-targeting-overview.md)   

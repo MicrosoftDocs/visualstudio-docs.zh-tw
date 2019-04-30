@@ -9,12 +9,12 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c6e6ec0cb8affbb820886f2bca163aae00d8536f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 2c7eecfb6d56d4db378882f6cd45f96454a086dd
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60101370"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63421728"
 ---
 # <a name="how-to-create-xml-snippets"></a>HOW TO：建立 XML 片段
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -61,7 +61,7 @@ XML 編輯器可用於建立新的 XML 片段。 該編輯器包括名為 Snippe
  `Code` 項目定義叫用片段時將插入的 XML 文字。  
   
 > [!NOTE]
->  XML 片段文字必須包含在 `<![CDATA[...]]>` 區段中。  
+> XML 片段文字必須包含在 `<![CDATA[...]]>` 區段中。  
   
  以下是重複使用片段建立的 `Code` 項目。  
   

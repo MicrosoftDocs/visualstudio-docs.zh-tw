@@ -19,12 +19,12 @@ caps.latest.revision: 19
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: ce88cb875a008b806aa882dafe186af7d8f29f29
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: 758491a068fe2c2c7318717f5481b41839c49a3f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59649536"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63419770"
 ---
 # <a name="createitem-task"></a>CreateItem 工作
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ ms.locfileid: "59649536"
 使用輸入項目填入項目集合。 這可將項目從一個清單複製到另一個。  
   
 > [!NOTE]
->  此工作已被取代。 從 .NET Framework 3.5 開始，項目 (Item) 群組可以放在 [Target](../msbuild/target-element-msbuild.md) 項目 (Element) 內。 如需詳細資訊，請參閱[項目](../msbuild/msbuild-items.md)。  
+> 此工作已被取代。 從 .NET Framework 3.5 開始，項目 (Item) 群組可以放在 [Target](../msbuild/target-element-msbuild.md) 項目 (Element) 內。 如需詳細資訊，請參閱[項目](../msbuild/msbuild-items.md)。  
   
 ## <a name="attributes"></a>屬性  
  下表說明 `CreateItem` 工作的參數。  

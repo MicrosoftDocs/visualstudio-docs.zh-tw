@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: cf2ef7aac4b9e9b54beeed0d4a6d6be31983c30e
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 6d4ee308c5c689644c9fd9ca6e85493a081e2cdf
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56602256"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63440743"
 ---
 # <a name="develop-office-solutions"></a>開發 Office 方案
   在您使用 Visual Studio 中的 Office Developer Tools 來設計專案並且設定專案檔之後，即可開始專注於實作程式碼和自訂使用者介面 (UI)。
@@ -27,7 +27,7 @@ ms.locfileid: "56602256"
  [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]
 
 > [!NOTE]
->  想要開發解決方案，擴充的 Office 體驗，跨[多個平台](https://dev.office.com/add-in-availability)嗎？ 查看新[Office 增益集模型](https://dev.office.com/docs/add-ins/overview/office-add-ins)。 Office 增益集較小的使用量，相較於 VSTO 增益集和解決方案，而且您可以使用幾乎任何 web 程式設計技術，例如 HTML5、 JavaScript、 CSS3、 以及 XML 來建置。
+> 想要開發解決方案，擴充的 Office 體驗，跨[多個平台](https://dev.office.com/add-in-availability)嗎？ 查看新[Office 增益集模型](https://dev.office.com/docs/add-ins/overview/office-add-ins)。 Office 增益集較小的使用量，相較於 VSTO 增益集和解決方案，而且您可以使用幾乎任何 web 程式設計技術，例如 HTML5、 JavaScript、 CSS3、 以及 XML 來建置。
 
 ## <a name="office-solutions-programming-model"></a>Office 方案程式設計模型
  Office 物件模型會公開您可以對其進行程式設計的各種物件。 每當您使用 Managed 程式碼進行 Office 方案程式設計時，您會撰寫使用 Office 主要 Interop 組件中類型的程式碼。 在您使用 Visual Studio 中的 Office 專案範本建立的方案中，也可以直接在專案中針對產生的類別撰寫程式碼。 如需詳細資訊，請參閱 <<c0> [ 撰寫 Office 方案中的程式碼](../vsto/writing-code-in-office-solutions.md)。

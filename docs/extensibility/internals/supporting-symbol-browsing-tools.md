@@ -18,12 +18,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f4d3d15f6d38ab494c586f22cc428d5e00442e84
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 87612ebc9bbcaf14bdf25d91a4e5dbe018c22143
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56616998"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63428764"
 ---
 # <a name="supporting-symbol-browsing-tools"></a>支援符號瀏覽工具
 **物件瀏覽器**，**類別檢視**，**呼叫瀏覽器**並**尋找符號結果**工具提供符號瀏覽 Visual Studio 中的功能。 這些工具顯示的符號的階層式樹狀結構檢視，並顯示在樹狀目錄中的符號之間的關聯性。 符號可能代表命名空間、 物件、 類別、 類別成員和各種元件中包含其他語言項目。 這些元件包括 Visual Studio 專案中，外部[!INCLUDE[dnprdnshort](../../code-quality/includes/dnprdnshort_md.md)]元件和型別 (.tlb) 程式庫。 如需詳細資訊，請參閱[檢視程式碼的結構](../../ide/viewing-the-structure-of-code.md)。
@@ -46,9 +46,9 @@ ms.locfileid: "56616998"
  [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]物件管理員呼叫<xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2.GetExpandable3%2A>方法，以判斷指定的清單項目是可展開且有子系的項目。 UI 會傳送要求以展開項目，如果物件管理員會藉由呼叫要求符號的子清單<xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2.GetList2%2A>方法。 視所建立的樹狀結構的不同部分的程序繼續執行。
 
 > [!NOTE]
->  若要實作的原生程式碼符號提供者，請使用<xref:Microsoft.VisualStudio.Shell.Interop.IVsLibrary2>和<xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectList2>介面。
+> 若要實作的原生程式碼符號提供者，請使用<xref:Microsoft.VisualStudio.Shell.Interop.IVsLibrary2>和<xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectList2>介面。
 
 ## <a name="see-also"></a>另請參閱
 - [如何：使用物件管理員註冊程式庫](../../extensibility/internals/how-to-register-a-library-with-the-object-manager.md)
-- [如何：公開 （expose) 程式庫提供對物件管理員中的符號的清單](../../extensibility/internals/how-to-expose-lists-of-symbols-provided-by-the-library-to-the-object-manager.md)
-- [如何：識別文件庫中的符號](../../extensibility/internals/how-to-identify-symbols-in-a-library.md)
+- [如何：將程式庫提供的符號清單公開至物件管理員](../../extensibility/internals/how-to-expose-lists-of-symbols-provided-by-the-library-to-the-object-manager.md)
+- [如何：識別程式庫中的符號](../../extensibility/internals/how-to-identify-symbols-in-a-library.md)

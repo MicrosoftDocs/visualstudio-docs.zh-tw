@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b2b4098bd1f1a3279c918b1f150e3a4c45880ac5
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.openlocfilehash: 27acdda0dad152bcb18c4bef304b97190444c63d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56719414"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63413150"
 ---
 # <a name="idebugprocess3getencavailablestate"></a>IDebugProcess3::GetENCAvailableState
 這個方法會取得目前的編輯後繼續狀態的程序。 自訂連接埠供應商應該一律傳回`E_NOTIMPL`。
@@ -45,7 +45,7 @@ int GetENCAvailableState(
  如果成功，則傳回`S_OK`，否則會傳回錯誤碼。
 
 > [!NOTE]
->  自訂連接埠供應商應該一律傳回`E_NOTIMPL`。
+> 自訂連接埠供應商應該一律傳回`E_NOTIMPL`。
 
 ## <a name="remarks"></a>備註
  此狀態可能會受到[DisableENC](../../../extensibility/debugger/reference/idebugprocess3-disableenc.md)。

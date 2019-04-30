@@ -8,12 +8,12 @@ ms.assetid: 35e766ad-269f-41e4-ba23-74a556c315f3
 caps.latest.revision: 7
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: fc09d8570eed04c559e1b94f65319739bbc4ee13
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: b1b77dc7e01ae791379dda52b305ebcdbbf68447
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60103287"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433905"
 ---
 # <a name="system-requirements-for-the-visual-studio-emulator-for-android"></a>System requirements for the Visual Studio Emulator for Android
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,7 +23,7 @@ Visual Studio Emulator for Android 是以虛擬機器形式在 Hyper-V (Windows 
  安裝程式會在您安裝模擬器時嘗試以無訊息方式設定這些必要條件。 安裝程式成功設定必要條件時，模擬器就會依照預期方式運作。 否則，您可能需要手動啟用這些必要條件。 如果您需要手動設定必要條件，則步驟和工具與 [這裡](https://msdn.microsoft.com/library/windows/apps/jj863509\(v=vs.105\).aspx) 針對 Windows Phone 模擬器所述的步驟相同。
 
 > [!IMPORTANT]
->  模擬器的安裝程式會檢查執行 Visual Studio Emulator for Android 的必要條件。 如果必要條件不存在，則會顯示警告，但安裝時不需要這些必要條件。
+> 模擬器的安裝程式會檢查執行 Visual Studio Emulator for Android 的必要條件。 如果必要條件不存在，則會顯示警告，但安裝時不需要這些必要條件。
 
  此主題包括下列各節。
 

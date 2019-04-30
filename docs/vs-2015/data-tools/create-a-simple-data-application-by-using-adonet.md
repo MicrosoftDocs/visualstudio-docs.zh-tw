@@ -14,12 +14,12 @@ caps.latest.revision: 46
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 234c289cd039485163aa201516c418bacaed590b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 9b41d199ab634ef5eeb2a6baaef8401919870b63
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60047421"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436985"
 ---
 # <a name="create-a-simple-data-application-by-using-adonet"></a>使用 ADO.NET 建立簡單的資料應用程式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ ms.locfileid: "60047421"
  這篇文章示範簡單的方式非常快速的方式取得移出資料庫的資料。 如果您的應用程式需要非一般的方式修改資料，並更新資料庫，您應該考慮使用 Entity Framework，並使用資料繫結至自動同步處理使用者介面控制項的基礎資料中的變更。  
   
 > [!IMPORTANT]
->  為了簡化程式碼，它不會包含可實際執行的例外狀況處理。  
+> 為了簡化程式碼，它不會包含可實際執行的例外狀況處理。  
   
  **本主題內容**  
   
@@ -78,7 +78,7 @@ ms.locfileid: "60047421"
 3. 為每個表單加入下圖中顯示的文字方塊、按鈕和其他控制項。 對每個控制項設定資料表描述的屬性。  
   
    > [!NOTE]
-   >  加入群組方塊和標籤控制項會更清楚，但是不在程式碼中使用。  
+   > 加入群組方塊和標籤控制項會更清楚，但是不在程式碼中使用。  
   
    **巡覽表單**  
   
@@ -135,7 +135,7 @@ ms.locfileid: "60047421"
 5. 在 [**值**] 欄中，輸入您的連接字串 （不含任何外部引號括住），然後儲存變更。  
   
 > [!NOTE]
->  在實際的應用程式中，您應該在連接字串安全地儲存中, 所述[連接字串和組態檔](http://msdn.microsoft.com/library/37df2641-661e-407a-a3fb-7bf9540f01e8)。  
+> 在實際的應用程式中，您應該在連接字串安全地儲存中, 所述[連接字串和組態檔](http://msdn.microsoft.com/library/37df2641-661e-407a-a3fb-7bf9540f01e8)。  
   
 ## <a name="BKMK_retrievetheconnectionstring"></a> 擷取連接字串  
   

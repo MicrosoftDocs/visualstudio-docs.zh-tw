@@ -34,12 +34,12 @@ caps.latest.revision: 23
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: fc5dfaa203e3e915075ad819fa859be46b9e2b7a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: dd61ea128093735a69ad9b1f30cddc593b5856a4
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60095343"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63440432"
 ---
 # <a name="start-a-debugging-session-for-a-store-app-in-visual-studio-vb-c-c-and-xaml"></a>在 Visual Studio 中，為市集應用程式啟動偵錯工作階段 (VB、C#、C++ 和 XAML)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,7 +49,7 @@ ms.locfileid: "60095343"
  本主題說明如何對於以 XAML 和 Visual  C++、Visual C# 或 Visual Basic撰寫的市集應用程式，開始偵錯工作階段。 要對應用程式進行偵錯，必須設定偵錯工作階段並選擇應用程式的啟動方式。
 
 > [!NOTE]
->  如以 JavaScript 和 HTML 撰寫的應用程式，請參閱[啟動偵錯工作階段 (JavaScript)](../debugger/start-a-debugging-session-for-store-apps-in-visual-studio-javascript.md)。
+> 如以 JavaScript 和 HTML 撰寫的應用程式，請參閱[啟動偵錯工作階段 (JavaScript)](../debugger/start-a-debugging-session-for-store-apps-in-visual-studio-javascript.md)。
 
 ## <a name="BKMK_In_this_topic"></a>本主題內容
  [開始偵錯的簡易方式](#BKMK_The_easy_way_to_start_debugging)
@@ -152,7 +152,7 @@ ms.locfileid: "60095343"
     ![選取遠端偵錯工具連接 對話方塊](../debugger/media/vsrun-selectremotedebuggerdlg.png "VSRUN_SelectRemoteDebuggerDlg")
 
   > [!NOTE]
-  >  [ **選取遠端偵錯工具連接** ] 對話方塊會顯示位於本機子網路上的電腦，以及透過乙太網路纜線直接連接至 Visual Studio 電腦的任何電腦。 若要指定另一部電腦，請在 [ **電腦名稱** ] 方塊中輸入名稱。
+  > [ **選取遠端偵錯工具連接** ] 對話方塊會顯示位於本機子網路上的電腦，以及透過乙太網路纜線直接連接至 Visual Studio 電腦的任何電腦。 若要指定另一部電腦，請在 [ **電腦名稱** ] 方塊中輸入名稱。
 
   ![僅適用於 Windows Phone](../debugger/media/phone-only-content.png "phone_only_content")
 
@@ -210,7 +210,7 @@ ms.locfileid: "60095343"
  根據預設，您必須提供認證才能執行遠端偵錯工具。
 
 > [!IMPORTANT]
->  您可以選擇在 [非驗證] 模式下執行遠端偵錯工具，但非常不建議您使用這個模式。 在此模式中執行時不具有網路安全性。 只有在確定網路沒有面臨惡意或攻擊流量的風險時，才能選擇非驗證模式。
+> 您可以選擇在 [非驗證] 模式下執行遠端偵錯工具，但非常不建議您使用這個模式。 在此模式中執行時不具有網路安全性。 只有在確定網路沒有面臨惡意或攻擊流量的風險時，才能選擇非驗證模式。
 
  若要移除驗證需求：
 
@@ -250,7 +250,7 @@ ms.locfileid: "60095343"
  若要將已安裝的應用程式設定成以偵錯模式執行，請執行下列作業：
 
 > [!NOTE]
->  以下程序必須在應用程式未執行時實施。
+> 以下程序必須在應用程式未執行時實施。
 
 1. 在 [ **偵錯** ] 功能表上，選擇 [ **偵錯 Installed App Package**]。
 

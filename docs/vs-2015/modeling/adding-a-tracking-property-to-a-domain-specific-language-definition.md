@@ -13,12 +13,12 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 6b2b3f87084d4bb1a64f2c43f860c7b8bcaae64c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 4d53cdee5d92a92bb7405d1ecfb669e6de25a5a0
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60070481"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432395"
 ---
 # <a name="adding-a-tracking-property-to-a-domain-specific-language-definition"></a>在網域指定的語言定義中加入追蹤屬性
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -248,7 +248,7 @@ ms.locfileid: "60070481"
  實作`GetCustomProperties`方法的型別描述元`ExampleModel`網域類別。  
   
 > [!NOTE]
->  DSL 工具產生的自訂類型描述元的程式碼`ExampleModel`呼叫`GetCustomProperties`; 不過，DSL 工具不會產生程式碼會實作的方法。  
+> DSL 工具產生的自訂類型描述元的程式碼`ExampleModel`呼叫`GetCustomProperties`; 不過，DSL 工具不會產生程式碼會實作的方法。  
   
  定義這個方法會建立追蹤的追蹤屬性的命名空間的屬性描述元。 此外，針對 [追蹤屬性提供屬性可讓**屬性**才能正確顯示屬性] 視窗。  
   
@@ -344,7 +344,7 @@ ms.locfileid: "60070481"
  實作`GetCustomElementsValue`方法`ExampleModel`網域類別。  
   
 > [!NOTE]
->  DSL 工具產生的程式碼`ExampleModel`呼叫`GetCustomElementsValue`; 不過，DSL 工具不會產生程式碼會實作的方法。  
+> DSL 工具產生的程式碼`ExampleModel`呼叫`GetCustomElementsValue`; 不過，DSL 工具不會產生程式碼會實作的方法。  
   
  定義`GetCustomElementsValue`CustomElements 導出屬性的方法提供邏輯`ExampleModel`。 這個方法會計算數目`ExampleElement`具有追蹤使用者已更新的值，並傳回表示這個計數為模型中的總項目所佔百分比的字串屬性的命名空間的網域類別。  
   
@@ -425,7 +425,7 @@ ms.locfileid: "60070481"
  此外，新增 [儲存體和方法，以取得和設定，命名空間] 自訂儲存屬性的`ExampleElement`網域類別。  
   
 > [!NOTE]
->  DSL 工具產生的程式碼`ExampleModel`呼叫 get 和 set 方法; 不過，DSL 工具不會產生實作方法的程式碼。  
+> DSL 工具產生的程式碼`ExampleModel`呼叫 get 和 set 方法; 不過，DSL 工具不會產生實作方法的程式碼。  
   
 #### <a name="to-add-the-method-for-the-custom-type-descriptor"></a>若要加入自訂類型描述元方法  
   
@@ -591,7 +591,7 @@ ms.locfileid: "60070481"
  加入以支援 XML 序列化自訂後載入行為的程式碼。  
   
 > [!NOTE]
->  DSL 工具產生呼叫的程式碼`OnPostLoadModel`和`OnPostLoadModelAndDiagram`方法; 不過，DSL 工具不會產生程式碼來實作這些方法。  
+> DSL 工具產生呼叫的程式碼`OnPostLoadModel`和`OnPostLoadModelAndDiagram`方法; 不過，DSL 工具不會產生程式碼來實作這些方法。  
   
 #### <a name="to-add-code-to-support-the-custom-post-load-behavior"></a>加入程式碼以支援自訂的後載入行為  
   

@@ -1,6 +1,6 @@
 ---
 title: 分析器規則集
-ms.date: 07/20/2018
+ms.date: 04/22/2019
 ms.topic: conceptual
 helpviewer_keywords:
 - analyzers, rule sets
@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: da5eab1424ac6f6fe580ec0f71ec3efd6e120020
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
-ms.translationtype: MT
+ms.openlocfilehash: 32ed328cb399f0cd3e9a2a147d29fad56b845399
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57866993"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63387703"
 ---
 # <a name="rule-sets-for-roslyn-analyzers"></a>Roslyn 分析器的規則集
 
@@ -25,7 +25,7 @@ ms.locfileid: "57866993"
 
 ## <a name="use-analyzer-rule-sets"></a>使用分析器規則集
 
-之後您[安裝 nuget 分析器](install-roslyn-analyzers.md)，找出預先定義的規則中設定其*ruleset*目錄，例如 *%USERPROFILE%\\.nuget\packages\microsoft.codequality.analyzers\<版本 > \rulesets*。 從該處，您可以拖放，或複製並貼上，一或多個規則集至您的 Visual Studio 專案中**方案總管 中**。
+之後您[安裝 nuget 分析器](install-roslyn-analyzers.md)，找出預先定義的規則中設定其*ruleset*目錄。 例如，如果您參考`Microsoft.CodeAnalysis.FxCopAnalyzers`分析器套件，則您可以找到它的規則集目錄，在 *%USERPROFILE%\\.nuget\packages\microsoft.codeanalysis.fxcopanalyzers\\\<版本\>\rulesets*。 從該處，您可以拖放，或複製並貼上，一或多個規則集至您的 Visual Studio 專案中**方案總管 中**。
 
 若要讓規則集的作用中的規則集分析，以滑鼠右鍵按一下專案中**方案總管**，然後選擇**屬性**。 在 專案屬性頁中，選取**程式碼分析** 索引標籤。底下**執行此規則集**，選取**瀏覽**，然後選取 複製到專案目錄中您所需的規則集。 現在您只看到 vybranou 的 sadu pravidel 中啟用這些規則的規則違規。
 

@@ -17,12 +17,12 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 020fdd5f3df5f0f3b53f1ca28992c2b6a40a35f8
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 7a1b7c93e4b30bbfd373a5fad9d7001452d4f587
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60116146"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63403540"
 ---
 # <a name="how-to-set-a-custom-log-file-location-for-clickonce-deployment-errors"></a>HOW TO：設定 ClickOnce 部署錯誤的自訂記錄檔位置
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,10 +32,10 @@ ms.locfileid: "60116146"
  您也可以使用登錄編輯程式特定的用戶端變更此行為 (**regedit.exe**) 來設定自訂的記錄檔路徑。 在此情況下，[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]記錄啟用成功與失敗之所有部署在單一檔案。  
   
 > [!CAUTION]
->  如果您不當使用登錄編輯程式，您可能會導致嚴重的問題，可能會要求您重新安裝作業系統。 使用登錄編輯程式的風險須自行承擔。  
+> 如果您不當使用登錄編輯程式，您可能會導致嚴重的問題，可能會要求您重新安裝作業系統。 使用登錄編輯程式的風險須自行承擔。  
   
 > [!NOTE]
->  您必須截斷或刪除記錄檔，偶爾會以防止它變得太大。  
+> 您必須截斷或刪除記錄檔，偶爾會以防止它變得太大。  
   
  下列程序描述如何設定單一用戶端的自訂記錄檔的位置。  
   

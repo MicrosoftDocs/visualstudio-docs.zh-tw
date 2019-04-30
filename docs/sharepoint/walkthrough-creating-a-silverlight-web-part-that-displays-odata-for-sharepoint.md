@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: a331e94ad57fc4ca23dc859415c61609025f799b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: c58762c1060475a85de643ed52fffcc9f311bd96
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60058248"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63430395"
 ---
 # <a name="walkthrough-create-a-silverlight-web-part-that-displays-odata-for-sharepoint"></a>逐步解說：建立顯示 SharePoint 之 OData 的 Silverlight web 組件
   SharePoint 2010 會透過 OData 公開其清單資料。 在 SharePoint 中，OData 服務是 RESTful 服務 ListData.svc 所實作。 本逐步解說示範如何建立裝載 Silverlight 應用程式的 SharePoint web 組件。 Silverlight 應用程式會顯示使用 ListData.svc 公告 SharePoint 清單資訊。 如需詳細資訊，請參閱 < [SharePoint Foundation REST 介面](http://go.microsoft.com/fwlink/?LinkId=225999)並[開放式資料通訊協定](http://go.microsoft.com/fwlink/?LinkId=226000)。
@@ -35,7 +35,7 @@ ms.locfileid: "60058248"
  首先，在 Visual Studio 中建立 Silverlight 應用程式。 Silverlight 應用程式使用 ListData.svc 服務，從 SharePoint 宣告清單擷取資料。
 
 > [!NOTE]
->  任何版本的 Silverlight 4.0 之前不支援所需的介面參考 SharePoint 清單資料。
+> 任何版本的 Silverlight 4.0 之前不支援所需的介面參考 SharePoint 清單資料。
 
 #### <a name="to-create-a-silverlight-application-and-silverlight-web-part"></a>若要建立 Silverlight 應用程式和 Silverlight web 組件
 
@@ -73,7 +73,7 @@ ms.locfileid: "60058248"
 2. 在 **方案總管 中**，開啟捷徑功能表**參考**，然後選擇 **加入服務參考**。
 
     > [!NOTE]
-    >  如果您使用 Visual Basic，您必須選擇**顯示所有檔案**頂端的圖示**方案總管**以顯示**參考**節點。
+    > 如果您使用 Visual Basic，您必須選擇**顯示所有檔案**頂端的圖示**方案總管**以顯示**參考**節點。
 
 3. 在位址方塊中的**加入服務參考**對話方塊方塊中，輸入您的 SharePoint 網站的 URL，例如**http://MySPSite**，然後選擇**移** 按鈕。
 
@@ -228,7 +228,7 @@ ms.locfileid: "60058248"
      Silverlight web 組件應該現在會顯示從 SharePoint 網站的公告資料。 根據預設，頁面會儲存在 SharePoint 網站頁面清單中。
 
     > [!NOTE]
-    >  當存取 Silverlight 中跨網域的資料時，Silverlight 會保護可用來惡意探索 web 應用程式的安全性弱點。 如果您在存取 Silverlight 中的遠端資料時遇到問題，請參閱[讓服務提供跨網域界限](http://go.microsoft.com/fwlink/?LinkId=223276)。
+    > 當存取 Silverlight 中跨網域的資料時，Silverlight 會保護可用來惡意探索 web 應用程式的安全性弱點。 如果您在存取 Silverlight 中的遠端資料時遇到問題，請參閱[讓服務提供跨網域界限](http://go.microsoft.com/fwlink/?LinkId=223276)。
 
 ## <a name="see-also"></a>另請參閱
 - [建立 SharePoint web 組件](../sharepoint/creating-web-parts-for-sharepoint.md)

@@ -26,18 +26,18 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 17ca737e0796230b9af207bf2f203700676ac630
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: e103b07b82d587ac00e2ff53e9ed7ea344267a85
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60078924"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63440330"
 ---
 # <a name="build-office-solutions"></a>建置 Office 方案
   一般而言，建置和偵錯 Office 專案，和在 Visual Studio 中建置和偵錯其他類型的專案是相同的，例如 Windows Forms。 本節主題會說明兩者之間的差異。 如需如何建置應用程式的一般資訊，請參閱[編譯，並在 Visual Studio 建置](../ide/compiling-and-building-in-visual-studio.md)。
 
 > [!NOTE]
->  想要開發解決方案，擴充的 Office 體驗，跨[多個平台](https://dev.office.com/add-in-availability)嗎？ 查看新[Office 增益集模型](https://dev.office.com/docs/add-ins/overview/office-add-ins)。 Office 增益集較小的使用量，相較於 VSTO 增益集和解決方案，而且您可以使用幾乎任何 web 程式設計技術，例如 HTML5、 JavaScript、 CSS3、 以及 XML 來建置。
+> 想要開發解決方案，擴充的 Office 體驗，跨[多個平台](https://dev.office.com/add-in-availability)嗎？ 查看新[Office 增益集模型](https://dev.office.com/docs/add-ins/overview/office-add-ins)。 Office 增益集較小的使用量，相較於 VSTO 增益集和解決方案，而且您可以使用幾乎任何 web 程式設計技術，例如 HTML5、 JavaScript、 CSS3、 以及 XML 來建置。
 
 ## <a name="project-output-for-office-projects"></a>Office 專案的專案輸出
  Office 專案的輸出位置是 *projectname*\bin\release 或 *projectname*\bin\debug。 無法建立到部署目錄。
@@ -56,7 +56,7 @@ ms.locfileid: "60078924"
 - 程式資料庫 (*PDB*) 檔案。
 
 > [!NOTE]
->  文件層級解決方案如果建立在遠端位置而不是本機電腦，請在應用程式信任中心的 [信任位置] 清單中加入完整的路徑。 如需詳細資訊，請參閱稱為授與信任給文件中的區段[保護的 Office 方案](../vsto/securing-office-solutions.md)。
+> 文件層級解決方案如果建立在遠端位置而不是本機電腦，請在應用程式信任中心的 [信任位置] 清單中加入完整的路徑。 如需詳細資訊，請參閱稱為授與信任給文件中的區段[保護的 Office 方案](../vsto/securing-office-solutions.md)。
 
 ### <a name="application-level-projects"></a>應用程式層級專案
  當您建置 VSTO 增益集專案時，專案輸出會包含下列項目：

@@ -12,12 +12,12 @@ ms.assetid: a7a32ad4-3a0a-4eb8-a6ac-491c42885639
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: a50b298dfafe093e404c6575b16a074d106522ee
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 2db026367e43c1092cf9744817449ce51556a4a6
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60103429"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436318"
 ---
 # <a name="exposing-types-to-visual-designers"></a>將類型公開至視覺化設計工具
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ ms.locfileid: "60103429"
  專案系統的變更追蹤輸出檔的自訂工具，提供完整支援，前提是這些變更是執行自訂工具的結果。 每次執行自訂工具時，會產生新的 temporary PE，並適當的通知傳送給設計工具。  
   
 > [!NOTE]
->  臨時程式可執行檔的產生檔案會在背景執行，因為沒有任何錯誤會回報給使用者，如果編譯失敗。  
+> 臨時程式可執行檔的產生檔案會在背景執行，因為沒有任何錯誤會回報給使用者，如果編譯失敗。  
   
  利用暫時的 PE 支援的自訂工具必須遵循下列規則：  
   

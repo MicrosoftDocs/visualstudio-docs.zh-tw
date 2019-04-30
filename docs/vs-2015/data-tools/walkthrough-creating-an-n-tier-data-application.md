@@ -17,12 +17,12 @@ caps.latest.revision: 51
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 6b1f585aaa3677955cef61a923061a62dcdc1e62
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: b6c4ae0082d76b4eb9e58561daec48d196438bac
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60110449"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63424752"
 ---
 # <a name="walkthrough-creating-an-n-tier-data-application"></a>逐步解說：建立多層式架構 (N-Tier) 資料應用程式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -64,14 +64,14 @@ N-層 * 資料應用程式是應用程式存取資料而且分成多個邏輯層
  這個逐步解說的第一個步驟是建立一個方案和兩個類別庫專案。 第一個類別庫將會保留資料集 (產生的具類型 DataSet 類別以及將保留應用程式資料的 DataTables)。 此專案是用做應用程式的資料實體層，而且通常位於中介層。 Dataset 設計工具用來建立初始資料集，並自動將程式碼分成兩個類別程式庫。  
   
 > [!NOTE]
->  請確認正確命名專案和方案，然後按一下 [確定]。 這麼做可以讓您輕鬆地完成這個逐步解說。  
+> 請確認正確命名專案和方案，然後按一下 [確定]。 這麼做可以讓您輕鬆地完成這個逐步解說。  
   
 #### <a name="to-create-the-n-tier-solution-and-dataentitytier-class-library"></a>建立多層式架構方案和 DataEntityTier 類別庫  
   
 1. 從**檔案** 功能表中，建立新的專案。  
   
     > [!NOTE]
-    >  **Dataset 設計工具**支援[!INCLUDE[vbprvb](../includes/vbprvb-md.md)]和 C# 專案。 請使用下列其中一種語言，來建立新的專案。  
+    > **Dataset 設計工具**支援[!INCLUDE[vbprvb](../includes/vbprvb-md.md)]和 C# 專案。 請使用下列其中一種語言，來建立新的專案。  
   
 2. 在 **新的專案**對話方塊的 **專案類型**窗格中，按一下**Windows**。  
   
@@ -125,7 +125,7 @@ N-層 * 資料應用程式是應用程式存取資料而且分成多個邏輯層
 6. 如果資料庫需要密碼，請選取選項來加入敏感性資料，然後按 [下一步] 。  
   
     > [!NOTE]
-    >  如果您已選取本機資料庫檔案 (而非連接至 SQL Server)，則系統可能會詢問您是否要將檔案加入至專案。 按一下 **是**將資料庫檔案加入至專案。  
+    > 如果您已選取本機資料庫檔案 (而非連接至 SQL Server)，則系統可能會詢問您是否要將檔案加入至專案。 按一下 **是**將資料庫檔案加入至專案。  
   
 7. 按一下 **下一步**上**將連接字串儲存到應用程式組態檔**頁面。  
   
@@ -153,7 +153,7 @@ N-層 * 資料應用程式是應用程式存取資料而且分成多個邏輯層
    資料集和 TableAdapter 會分隔到兩個類別庫專案。 原本包含整個資料集的專案 (DataAccessTier) 現在只會包含 TableAdapter。 中指定的專案**資料集 Project**屬性 (DataEntityTier) 包含具類型資料集：NorthwindDataSet.Dataset.Designer.vb （或 NorthwindDataSet.Dataset.Designer.cs）。  
   
 > [!NOTE]
->  當您分隔資料集與 TableAdapter 時 (設定 [資料集專案] 屬性)，將不會自動移動專案中的現有部份資料集類別。 現有資料集部分類別必須手動移至資料集專案。  
+> 當您分隔資料集與 TableAdapter 時 (設定 [資料集專案] 屬性)，將不會自動移動專案中的現有部份資料集類別。 現有資料集部分類別必須手動移至資料集專案。  
   
 ## <a name="creating-a-new-service-application"></a>建立新的服務應用程式  
  因為這個逐步解說示範如何使用 WCF 服務來存取資料存取層，所以請建立新的 WCF 應用程式服務。  
@@ -220,7 +220,7 @@ N-層 * 資料應用程式是應用程式存取資料而且分成多個邏輯層
  現在，資料存取層包含方法可以傳回資料、在資料服務中建立方法以呼叫資料存取層中的方法。  
   
 > [!NOTE]
->  針對 C# 專案，您必須加入下列程式碼的 `System.Data.DataSetExtensions` 組件參考以進行編譯。  
+> 針對 C# 專案，您必須加入下列程式碼的 `System.Data.DataSetExtensions` 組件參考以進行編譯。  
   
 #### <a name="to-create-the-getcustomers-and-getorders-functions-in-the-data-service"></a>在資料服務中建立 GetCustomers 和 GetOrders 函式  
   
@@ -322,7 +322,7 @@ N-層 * 資料應用程式是應用程式存取資料而且分成多個邏輯層
 3. 選取  **Service1**然後按一下**確定**。  
   
     > [!NOTE]
-    >  如果您在目前電腦上有多個服務，則請選取先前在這個逐步解說中建立的服務 (含有 GetCustomers 和 GetOrders 方法的服務)。  
+    > 如果您在目前電腦上有多個服務，則請選取先前在這個逐步解說中建立的服務 (含有 GetCustomers 和 GetOrders 方法的服務)。  
   
 ## <a name="adding-datagridviews-to-the-form-to-display-the-data-returned-by-the-data-service"></a>將 DataGridViews 加入至表單以顯示資料服務所傳回的資料  
  在您新增資料服務的服務參考之後，會將服務所傳回的資料自動填入 [資料來源] 視窗。  
@@ -361,7 +361,7 @@ N-層 * 資料應用程式是應用程式存取資料而且分成多個邏輯層
  因為服務會傳回來自 Customers 和 Orders 資料表的資料，所以 maxReceivedMessageSize 的預設值不足以保留資料，因此必須予以增加。 在這個逐步解說中，您會將此值變更為 6553600。 您將在用戶端上變更此值，而這樣會自動更新服務參考。  
   
 > [!NOTE]
->  較小的預設大小是要限制拒絕服務 (DoS) 攻擊的機率。 如需詳細資訊，請參閱<xref:System.ServiceModel.WSHttpBindingBase.MaxReceivedMessageSize%2A>。  
+> 較小的預設大小是要限制拒絕服務 (DoS) 攻擊的機率。 如需詳細資訊，請參閱<xref:System.ServiceModel.WSHttpBindingBase.MaxReceivedMessageSize%2A>。  
   
 #### <a name="to-increase-the-maxreceivedmessagesize-value"></a>增加 maxReceivedMessageSize 值  
   

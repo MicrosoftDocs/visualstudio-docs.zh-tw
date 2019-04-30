@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 26b917b04314c99ba6575842b8e102113b22b469
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 8204b13aa0405d01590e4aeb0fe43a92b41c226f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56596955"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63431265"
 ---
 # <a name="how-to-add-an-updater-method"></a>HOW TO：新增更新者方法
   您可以讓使用者藉由更新 SharePoint 外部清單中的商務資料*Updater*方法。 如需詳細資訊，請參閱 <<c0> [ 設計 business data connectivity 模型](../sharepoint/designing-a-business-data-connectivity-model.md)。
@@ -50,7 +50,7 @@ ms.locfileid: "56596955"
      如需詳細資訊，請參閱 <<c0> [ 設計 business data connectivity 模型](../sharepoint/designing-a-business-data-connectivity-model.md)。
 
    > [!NOTE]
-   >  如果實體類型的識別項表示不會自動產生的資料庫資料表中的欄位，設定**預先更新者欄位**屬性設 **，則為 True**。
+   > 如果實體類型的識別項表示不會自動產生的資料庫資料表中的欄位，設定**預先更新者欄位**屬性設 **，則為 True**。
 
 4. 在 **方案總管**，開啟實體時，所產生的服務程式碼檔案的捷徑功能表，然後選擇**檢視程式碼**。
 
@@ -59,7 +59,7 @@ ms.locfileid: "56596955"
 5. 加入程式碼來更新資料的 Update 方法。 下列範例會更新為 SQL Server 的 AdventureWorks 範例資料庫中的連絡人資訊。
 
    > [!NOTE]
-   >  值取代`ServerName`欄位與您伺服器的名稱。
+   > 值取代`ServerName`欄位與您伺服器的名稱。
 
     [!code-csharp[SP_BDC#5](../sharepoint/codesnippet/CSharp/SP_BDC/bdcmodel1/contactservice.cs#5)]
     [!code-vb[SP_BDC#5](../sharepoint/codesnippet/VisualBasic/sp_bdc/bdcmodel1/contactservice.vb#5)]

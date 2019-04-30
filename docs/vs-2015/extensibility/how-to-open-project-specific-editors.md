@@ -12,12 +12,12 @@ ms.assetid: 83e56d39-c97b-4c6b-86d6-3ffbec97e8d1
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 46f6b64fecfbbe3a57dad130ad0a65475fad56af
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 2439a07f63b8da854ca8dc331d26e30f49503257
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60105392"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63435933"
 ---
 # <a name="how-to-open-project-specific-editors"></a>HOW TO：開啟專案特定的編輯器
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,7 +31,7 @@ ms.locfileid: "60105392"
 1. 呼叫<xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable.FindAndLockDocument%2A>方法 (RDT_EditLock) 來判斷是否已開啟的檔案 （文件資料物件）。  
   
     > [!NOTE]
-    >  如需有關文件資料和文件檢視物件的詳細資訊，請參閱[文件資料和自訂編輯器中的文件檢視](../extensibility/document-data-and-document-view-in-custom-editors.md)。  
+    > 如需有關文件資料和文件檢視物件的詳細資訊，請參閱[文件資料和自訂編輯器中的文件檢視](../extensibility/document-data-and-document-view-in-custom-editors.md)。  
   
 2. 如果檔案已經開啟，請藉由呼叫 resurface 檔案<xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.IsDocumentOpen%2A>方法並指定值的 IDO_ActivateIfOpen`grfIDO`參數。  
   
@@ -56,4 +56,4 @@ ms.locfileid: "60105392"
 ## <a name="see-also"></a>另請參閱  
  [開啟和儲存專案項目](../extensibility/internals/opening-and-saving-project-items.md)   
  [如何：開啟標準編輯器](../extensibility/how-to-open-standard-editors.md)   
- [如何：開啟編輯器開啟的文件](../extensibility/how-to-open-editors-for-open-documents.md)
+ [如何：針對開啟的文件開啟編輯器](../extensibility/how-to-open-editors-for-open-documents.md)

@@ -30,12 +30,12 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 5cee90bd16f0b7a151ca826517f081a89518ff5b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: d443a38750904df26fdfffc65104bcde31c8d6fc
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60060653"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437597"
 ---
 # <a name="creating-and-configuring-type-members-class-designer"></a>建立和設定類型成員 (類別設計工具)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -53,7 +53,7 @@ ms.locfileid: "60060653"
 |模組 (僅限 VB)|方法、屬性、欄位、事件、建構函式、常數|  
   
 > [!NOTE]
->  使用自動實作屬性 (僅限 C#) 可在屬性的 get 與 set 存取子不需要額外邏輯時，讓屬性宣告更為簡明。 若要顯示完整簽章，請從 [類別圖表] 功能表中依序選擇 [變更成員格式] 和 [顯示完整簽章]。 如需自動實作屬性的詳細資訊，請參閱[自動實作的屬性](http://msdn.microsoft.com/library/aa55fa97-ccec-431f-b5e9-5ac789fd32b7)。  
+> 使用自動實作屬性 (僅限 C#) 可在屬性的 get 與 set 存取子不需要額外邏輯時，讓屬性宣告更為簡明。 若要顯示完整簽章，請從 [類別圖表] 功能表中依序選擇 [變更成員格式] 和 [顯示完整簽章]。 如需自動實作屬性的詳細資訊，請參閱[自動實作的屬性](http://msdn.microsoft.com/library/aa55fa97-ccec-431f-b5e9-5ac789fd32b7)。  
   
 ## <a name="common-tasks"></a>一般工作  
   
@@ -85,10 +85,10 @@ ms.locfileid: "60060653"
 - 類別細節視窗  
   
 > [!NOTE]
->  您也可以使用本章節中的程序建立建構函式和解構函式。 請記住，建構函式和解構函式是特殊類型的方法，因此它們會出現在類別圖表圖案的 [方法] 區間以及 [類別細節] 視窗方格的 [方法] 區段中。  
+> 您也可以使用本章節中的程序建立建構函式和解構函式。 請記住，建構函式和解構函式是特殊類型的方法，因此它們會出現在類別圖表圖案的 [方法] 區間以及 [類別細節] 視窗方格的 [方法] 區段中。  
   
 > [!NOTE]
->  參數是您唯一可以加入委派的實體。 請注意，標題為「若要使用類別細節視窗工具列建立成員」的程序對此動作無效。  
+> 參數是您唯一可以加入委派的實體。 請注意，標題為「若要使用類別細節視窗工具列建立成員」的程序對此動作無效。  
   
 #### <a name="to-create-a-member-using-class-designer"></a>若要使用類別設計工具建立成員  
   
@@ -182,7 +182,7 @@ ms.locfileid: "60060653"
 3. 編輯 [類別細節] 視窗方格欄位中的值。 每次編輯之後都要按 ENTER，或讓焦點離開已編輯的欄位 (例如按下 TAB)。 您所進行的編輯會立即反應在程式碼中。  
   
     > [!NOTE]
-    >  如果您只想要修改成員的名稱，可以透過就地編輯來進行。  
+    > 如果您只想要修改成員的名稱，可以透過就地編輯來進行。  
   
 ## <a name="AddMethodParams"></a> 將參數新增至方法  
  您可以使用 [類別細節] 視窗將參數加入至方法。 參數可以設定為必要或是選擇性。 如果提供參數的 [選擇性預設值] 屬性值，即可指示設計工具產生程式碼作為選擇性參數。  
@@ -216,10 +216,10 @@ ms.locfileid: "60060653"
   [屬性] 視窗會顯示在 [類別細節] 視窗中顯示的參數屬性相同：[名稱]、[類型]、[修飾詞]、[摘要] 及 [選擇性預設] 屬性。 在其中一個位置變更屬性將會全域更新屬性值，包括在另一個位置的顯示值。  
   
 > [!NOTE]
->  若要將參數新增至委派，請參閱[建立成員](../ide/creating-and-configuring-type-members-class-designer.md#CreateMembers)。  
+> 若要將參數新增至委派，請參閱[建立成員](../ide/creating-and-configuring-type-members-class-designer.md#CreateMembers)。  
   
 > [!NOTE]
->  雖然解構函式是方法，但是卻不能擁有參數。  
+> 雖然解構函式是方法，但是卻不能擁有參數。  
   
 ### <a name="HowToAddParameterToMethod"></a> 將參數新增至方法  
   
@@ -254,7 +254,7 @@ ms.locfileid: "60060653"
 4. 在 [屬性] 視窗中，鍵入 [選擇性預設值] 屬性的值。 設定參數的 [選擇性預設值] 屬性會讓該參數成為選擇性。  
   
     > [!NOTE]
-    >  選擇性參數必須是參數清單中的最後一個參數。  
+    > 選擇性參數必須是參數清單中的最後一個參數。  
   
 ## <a name="ClassDetailsUsageNotes"></a> 類別細節使用注意事項  
  請注意下列有關使用 [類別細節] 視窗的祕訣。  

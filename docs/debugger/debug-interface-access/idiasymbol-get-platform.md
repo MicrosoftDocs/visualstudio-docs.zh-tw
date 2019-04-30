@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7bbcad8902a2c3ce86b1127d9317a3901c655372
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.openlocfilehash: 6df21b974489004a27847e307089b1a65715b076
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56639449"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63401129"
 ---
 # <a name="idiasymbolgetplatform"></a>IDiaSymbol::get_platform
 擷取編譯所編譯模組的平台類型。
@@ -39,8 +39,8 @@ HRESULT get_platform ( 
  如果成功，則傳回`S_OK`; 否則傳回`S_FALSE`或錯誤碼。
 
 > [!NOTE]
->  傳回值為`S_FALSE`表示屬性不是適用於符號。
+> 傳回值為`S_FALSE`表示屬性不是適用於符號。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
 - [CV_CPU_TYPE_e 列舉](../../debugger/debug-interface-access/cv-cpu-type-e.md)

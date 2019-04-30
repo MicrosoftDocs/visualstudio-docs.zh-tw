@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 64ebe3bc2d4d406d6144305b368d37613aef0158
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: d89c3181757a0ed95b818ba2e73197511bf06e4d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60039729"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63434255"
 ---
 # <a name="troubleshooting-vspackages"></a>針對 VSPackage 進行疑難排解
 以下是常見的問題，您可能會有的 VSPackage，並解決問題的提示。
@@ -46,7 +46,7 @@ ms.locfileid: "60039729"
 4. 開啟**輸出**視窗中的執行個體[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]，無法載入 VSPackage。 若要載入 VSPackage 的失敗原因的相關資訊可能會顯示該視窗中。
 
    > [!NOTE]
-   >  如果您要啟動的實驗版本[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]從[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]整合式的開發環境 (IDE)，檢查**輸出**這兩個版本的視窗。
+   > 如果您要啟動的實驗版本[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]從[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]整合式的開發環境 (IDE)，檢查**輸出**這兩個版本的視窗。
 
 5. 檢查活動記錄檔。
 
@@ -85,7 +85,7 @@ ms.locfileid: "60039729"
     4. 在上**偵錯**功能表上，按一下**開始偵錯**或按 F5。
 
         > [!NOTE]
-        >  如果您正在偵錯專案，建立或立即載入您專案的現有執行個體。
+        > 如果您正在偵錯專案，建立或立即載入您專案的現有執行個體。
 
 2. 使用活動記錄檔。
 

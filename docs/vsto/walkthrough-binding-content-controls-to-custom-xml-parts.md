@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 65cadbde0cde939d45161e3b8dc69685ae31fa69
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 52366cc268335df98da53701e5cde283c67a022d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60041614"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438710"
 ---
 # <a name="walkthrough-bind-content-controls-to-custom-xml-parts"></a>逐步解說：內容控制項繫結至自訂 XML 組件
   本逐步解說示範如何將 Word 之文件層級自訂中的內容控制項繫結至文件中所儲存的 XML 資料。
@@ -85,7 +85,7 @@ ms.locfileid: "60041614"
 5. 在功能區中，選擇**開發人員** 索引標籤。
 
    > [!NOTE]
-   >  如果 [開發人員]  索引標籤沒有顯示，您必須先使其顯示。 如需詳細資訊，請參閱[如何：在功能區顯示開發人員索引標籤](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md)。
+   > 如果 [開發人員]  索引標籤沒有顯示，您必須先使其顯示。 如需詳細資訊，請參閱[如何：在功能區顯示開發人員索引標籤](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md)。
 
 6. 在 [**控制項**群組中，選擇**文字**] 按鈕![PlainTextContentControl](../vsto/media/plaintextcontrol.gif "PlainTextContentControl")新增<xref:Microsoft.Office.Tools.Word.PlainTextContentControl>第一個資料格中。
 

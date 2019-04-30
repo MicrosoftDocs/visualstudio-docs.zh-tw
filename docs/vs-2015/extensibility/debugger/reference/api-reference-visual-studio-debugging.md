@@ -10,12 +10,12 @@ ms.assetid: e4e429da-3667-41f7-9158-a8207d13e91a
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 2571054e2fc90e770aec89b22c6a0b5e52786ba7
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: f3e95200cf29c8561798c858635c3864d635fb40
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58940844"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63424508"
 ---
 # <a name="api-reference-visual-studio-debugging"></a>API 參考 (Visual Studio 偵錯)
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -39,10 +39,10 @@ ms.locfileid: "58940844"
 |E_ACCESSDENIED|一般拒絕存取錯誤。|0x80070005|  
   
 > [!NOTE]
->  當[!INCLUDE[vsprvs](../../../includes/vsprvs-md.md)]偵錯方法會傳回`S_OK`，則會假設所有參數的指標都有效，也就是沒有驗證場地進行 out 參數的指標時`S_OK`會傳回。  
+> 當[!INCLUDE[vsprvs](../../../includes/vsprvs-md.md)]偵錯方法會傳回`S_OK`，則會假設所有參數的指標都有效，也就是沒有驗證場地進行 out 參數的指標時`S_OK`會傳回。  
   
 > [!NOTE]
->  無效或`NULL`[out] 參數可能會造成 IDE 損毀。  
+> 無效或`NULL`[out] 參數可能會造成 IDE 損毀。  
   
 ## <a name="see-also"></a>另請參閱  
  [介面](../../../extensibility/debugger/reference/interfaces-visual-studio-debugging.md)   

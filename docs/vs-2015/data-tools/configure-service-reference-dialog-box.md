@@ -15,12 +15,12 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 18ea294c204f1512aaa3eeae904eed52edf8e9f2
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 4b490b379df401f4eb0c680524be8bac91dee410
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60114141"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437019"
 ---
 # <a name="configure-service-reference-dialog-box"></a>設定服務參考對話方塊
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,7 +28,7 @@ ms.locfileid: "60114141"
 **設定服務參考** 對話方塊可讓您設定的行為[!INCLUDE[vsindigo](../includes/vsindigo-md.md)]服務。  
   
 > [!NOTE]
->  根據您目前使用的設定或版本，您所看到的對話方塊與功能表命令可能會與 [說明] 中描述的不同。 若要變更設定，請從 [工具] 功能表中選擇 [匯入和匯出設定]。 如需詳細資訊，請參閱 [在 Visual Studio 中自訂開發設定](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)  
+> 根據您目前使用的設定或版本，您所看到的對話方塊與功能表命令可能會與 [說明] 中描述的不同。 若要變更設定，請從 [工具] 功能表中選擇 [匯入和匯出設定]。 如需詳細資訊，請參閱 [在 Visual Studio 中自訂開發設定](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)  
   
  若要存取 [設定服務參考] 對話方塊，請以滑鼠右鍵按一下 [方案總管] 中的服務參考，然後選擇 [設定服務參考]。 您也可以按一下 [新增服務參考對話方塊] 中的 [進階] 按鈕來存取這個對話方塊。  
   
@@ -51,13 +51,13 @@ ms.locfileid: "60114141"
  用於更新網址，服務參考會在這個網址查詢服務。 例如在開發期間，可能會在開發伺服器上裝載服務，稍後再將服務移至實際伺服器，並強迫變更位址。  
   
 > [!NOTE]
->  從 [新增服務參考對話方塊] 顯示 [設定服務參考] 對話方塊時，無法使用位址項目。  
+> 從 [新增服務參考對話方塊] 顯示 [設定服務參考] 對話方塊時，無法使用位址項目。  
   
  **產生的類別存取層級**  
  判斷 WCF 用戶端類別的程式碼存取層級。  
   
 > [!NOTE]
->  針對網站專案，這個選項一律會設為 `Public`，而且無法變更。 如需詳細資訊，請參閱 <<c0> [ 疑難排解服務參考](../data-tools/troubleshooting-service-references.md)。  
+> 針對網站專案，這個選項一律會設為 `Public`，而且無法變更。 如需詳細資訊，請參閱 <<c0> [ 疑難排解服務參考](../data-tools/troubleshooting-service-references.md)。  
   
  **產生非同步作業**  
  判斷將以同步方式 (預設) 或非同步方式呼叫 WCF 服務方法。  
@@ -90,10 +90,10 @@ ms.locfileid: "60114141"
  顯示[NIB:加入 Web 參考對話方塊](http://msdn.microsoft.com/bdf05776-c591-40af-bfd7-e1e2aa1e87b5)。  
   
 > [!NOTE]
->  只有針對以 [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] 2.0 版為目標的專案，才應使用這個選項。  
+> 只有針對以 [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] 2.0 版為目標的專案，才應使用這個選項。  
   
 > [!NOTE]
->  **加入 Web 參考** 按鈕時才能使用唯一**設定服務參考**對話方塊隨即出現從**Add Service Reference Dialog Box**。  
+> **加入 Web 參考** 按鈕時才能使用唯一**設定服務參考**對話方塊隨即出現從**Add Service Reference Dialog Box**。  
   
 ## <a name="see-also"></a>另請參閱  
  [如何：新增、 更新或移除服務參考](http://msdn.microsoft.com/library/cacc14bd-4455-4a44-be78-d2ac16113dd9)   

@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 832af0383d2ff00b4f2d415257abdfbe3ad4bf91
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: aa310539b3a36d78137f336b8fea8f40a5d459ca
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60062349"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63430420"
 ---
 # <a name="walkthrough-create-a-sharepoint-project-extension"></a>逐步解說：建立 SharePoint 專案擴充功能
   此逐步解說將說明如何建立 SharePoint 專案延伸模組。 您可以使用專案擴充功能，例如加入、 刪除或重新命名專案時的專案層級事件回應。 您也可以新增自訂屬性，或當屬性值變更時回應。 不同的專案項目擴充功能，於專案延伸模組不能與特定的 SharePoint 專案類型相關聯。 當您建立的專案延伸模組時，擴充功能載入任何種類的 SharePoint 專案中開啟時[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]。
@@ -65,7 +65,7 @@ ms.locfileid: "60062349"
 3. 中**新的專案**對話方塊方塊中，展開**Visual C#** 或**Visual Basic**節點，然後選擇**擴充性**節點。
 
     > [!NOTE]
-    >  只有當您安裝 Visual Studio SDK 時，才使用這個節點。 如需詳細資訊，請參閱稍早在本主題中的必要條件 > 一節。
+    > 只有當您安裝 Visual Studio SDK 時，才使用這個節點。 如需詳細資訊，請參閱稍早在本主題中的必要條件 > 一節。
 
 4. 在對話方塊頂端，選擇 **.NET Framework 4.5**清單中的版本的.NET Framework 中，然後選擇**VSIX 專案**範本。
 
@@ -143,7 +143,7 @@ ms.locfileid: "60062349"
 6. 在 **型別**清單中，選擇**Microsoft.VisualStudio.MefComponent**。
 
     > [!NOTE]
-    >  這個值會對應到`MEFComponent`extension.vsixmanifest 檔案中的項目。 這個元素會指定在 VSIX 封裝中的延伸模組組件名稱。 如需詳細資訊，請參閱 < [MEFComponent 項目 （VSX 結構描述）](/previous-versions/visualstudio/visual-studio-2010/dd393736\(v\=vs.100\))。
+    > 這個值會對應到`MEFComponent`extension.vsixmanifest 檔案中的項目。 這個元素會指定在 VSIX 封裝中的延伸模組組件名稱。 如需詳細資訊，請參閱 < [MEFComponent 項目 （VSX 結構描述）](/previous-versions/visualstudio/visual-studio-2010/dd393736\(v\=vs.100\))。
 
 7. 在 **來源**清單中，選擇**目前方案中的專案**選項按鈕。
 

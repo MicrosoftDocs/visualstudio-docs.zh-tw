@@ -13,12 +13,12 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 6211e33f8ef14687df3c70841ef61a2f25d10457
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: b41f5f6a3d937f23db1039fdab5e1cf7e36960ef
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60062395"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433257"
 ---
 # <a name="customizing-file-storage-and-xml-serialization"></a>自訂檔案儲存體和 XML 序列化
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ ms.locfileid: "60062395"
  您也可以撰寫更進階的自訂程式碼。  
   
 > [!NOTE]
->  如果您想要將模型儲存在特定的格式，但您不需要將它重新載入來自該表單，請考慮使用文字範本產生輸出，從模型中，而不是一種自訂的序列化配置。 如需詳細資訊，請參閱 <<c0> [ 特定領域語言產生程式碼](../modeling/generating-code-from-a-domain-specific-language.md)。  
+> 如果您想要將模型儲存在特定的格式，但您不需要將它重新載入來自該表單，請考慮使用文字範本產生輸出，從模型中，而不是一種自訂的序列化配置。 如需詳細資訊，請參閱 <<c0> [ 特定領域語言產生程式碼](../modeling/generating-code-from-a-domain-specific-language.md)。  
   
 ## <a name="model-and-diagram-files"></a>模型和圖表檔  
  每個模型通常會儲存在兩個檔案：  

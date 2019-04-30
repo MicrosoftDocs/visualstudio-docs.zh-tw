@@ -13,12 +13,12 @@ caps.latest.revision: 24
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 4aba200bff4bc8a017756ece6576e589f33e9df6
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: c4b2e6dd825cfcf67ffffd9ace27017c8d01aa33
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59662249"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63431397"
 ---
 # <a name="how-to-build-incrementally"></a>HOW TO：以累加方式建置
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -54,7 +54,7 @@ ms.locfileid: "59662249"
  當目標中指定輸入和輸出時，可能每個輸出對應到唯一的一個輸入，或者是輸出和輸入之間不能有直接對應。 例如，在先前的 [Csc 工作](../msbuild/csc-task.md)中，輸出 hello.exe 無法對應至任何單一輸入；它相依於全部的輸入。  
   
 > [!NOTE]
->  輸入和輸出之間沒有直接對應的目標，一律會比每個輸出對應只能對應到一個輸入的目標更常建置，因為 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 無法判斷某些輸入變更的情況下，哪些輸出需要重建。  
+> 輸入和輸出之間沒有直接對應的目標，一律會比每個輸出對應只能對應到一個輸入的目標更常建置，因為 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 無法判斷某些輸入變更的情況下，哪些輸出需要重建。  
   
  您可以識別輸出和輸入之間有直接對應的工作，例如 [LC 工作](../msbuild/lc-task.md)，最適合進行累加建置，而不像 `Csc` 和 [Vbc](../msbuild/vbc-task.md) 之類的工作，它們會從許多輸入產生一個輸出組件。  
   
@@ -70,7 +70,7 @@ ms.locfileid: "59662249"
   這個專案檔同時包含 `Convert` 和 `Build` 目標。 `GenerateContentFiles` 和 `BuildHelp` 工作分別放在 `Convert` 和 `Build`目標，以便能以累加方式建置每個目標。 藉由使用 `Output` 項目，`GenerateContentFiles` 工作的輸出會放在 `ContentFile` 項目清單，在這裡它們可以作為 `BuildHelp` 工作的輸入。 這樣使用 `Output` 項目，會自動提供一個工作的輸出作為另一個工作的輸入，您便不需要以手動方式在每個工作列出個別項目或項目清單。  
   
 > [!NOTE]
->  雖然 `GenerateContentFiles` 目標可以以累加方式建置，該目標的所有輸出永遠必須作為 `BuildHelp` 目標的輸入。 當您使用 `Output` 項目時，[!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 會自動提供一個目標的所有輸出，作為另一個目標的輸入。  
+> 雖然 `GenerateContentFiles` 目標可以以累加方式建置，該目標的所有輸出永遠必須作為 `BuildHelp` 目標的輸入。 當您使用 `Output` 項目時，[!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 會自動提供一個目標的所有輸出，作為另一個目標的輸入。  
   
 ```  
 <Project DefaultTargets="Build"  

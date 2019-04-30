@@ -9,12 +9,12 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ac8612530ad7a28fef76b3339b9207408842aa8c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 1c1d0babfec4a2fd56e2ed40c5f2c75329ccb6d3
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60055089"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63434452"
 ---
 # <a name="how-to-create-and-modify-mip-levels"></a>HOW TO：建立和修改 MIP 層級
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,7 +42,7 @@ ms.locfileid: "60055089"
 2. 選取您想要修改的 MIP 層級之後，您可以使用繪圖工具來修改它，而不需變更其他 MIP 層級的內容。 「影像編輯器」工具列上會提供繪圖工具。 選取工具之後，您可以在 [屬性] 視窗中變更其屬性。 如需有關繪圖工具及其屬性的資訊，請參閱[影像編輯器](../designers/image-editor.md)。  
   
 > [!NOTE]
->  如果您不需要修改個別 MIP 層級的內容 (就像您想要達成特定效果時可能會做的)，建議您在建置階段從來源材質產生 Mipmap。 這有助於確保 MIP 層級與來源材質保持同步，因為對某個 MIP 層級的修改並不會自動傳播至其他層級。 如需如何在建置階段產生 Mipmap 的詳細資訊，請參閱[如何：匯出包含 Mipmap 的材質](../designers/how-to-export-a-texture-that-contains-mipmaps.md)。  
+> 如果您不需要修改個別 MIP 層級的內容 (就像您想要達成特定效果時可能會做的)，建議您在建置階段從來源材質產生 Mipmap。 這有助於確保 MIP 層級與來源材質保持同步，因為對某個 MIP 層級的修改並不會自動傳播至其他層級。 如需如何在建置階段產生 Mipmap 的詳細資訊，請參閱[如何：匯出包含 Mipmap 的材質](../designers/how-to-export-a-texture-that-contains-mipmaps.md)。  
   
 ## <a name="see-also"></a>另請參閱  
- [如何：建立基本材質](../designers/how-to-create-a-basic-texture.md)
+ [如何：建立基本紋理](../designers/how-to-create-a-basic-texture.md)

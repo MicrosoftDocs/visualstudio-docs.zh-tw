@@ -24,12 +24,12 @@ caps.latest.revision: 30
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 337c57c79e55c5113bb4411a091d2c29a954c342
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: bb97c86176dd29278f64ab467557e663ee9e6d2e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60098580"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437548"
 ---
 # <a name="customizing-window-layouts-in-visual-studio"></a>在 Visual Studio 中自訂視窗版面配置
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -77,7 +77,7 @@ ms.locfileid: "60098580"
   您可透過拖曳、使用 [視窗]  功能表上的命令，或是在要排列的視窗標題列上按一下滑鼠右鍵，來排列工具和文件視窗。
 
 > [!NOTE]
->  在下列指示的某些 Visual Studio 使用者介面項目中，您的電腦可能會顯示不同的名稱或位置。 您所擁有的 Visual Studio 版本以及使用的設定會決定這些項目。 如需詳細資訊，請參閱 [在 Visual Studio 中自訂開發設定](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)
+> 在下列指示的某些 Visual Studio 使用者介面項目中，您的電腦可能會顯示不同的名稱或位置。 您所擁有的 Visual Studio 版本以及使用的設定會決定這些項目。 如需詳細資訊，請參閱 [在 Visual Studio 中自訂開發設定](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)
 
 ### <a name="docking-windows"></a>固定視窗
  若您按一下並拖曳工具視窗的標題列，或是文件視窗的索引標籤，則會顯示輔助方塊。 執行拖曳作業時，若將滑鼠資料指標停駐於菱形的其中一個箭號上，則會顯示陰影區域指出當您立即放開滑鼠按鈕時的視窗固定位置。
@@ -106,16 +106,16 @@ ms.locfileid: "60098580"
  ![自動隱藏](../ide/media/vs2015-auto-hide.png "vs2015_auto_hide")
 
 > [!NOTE]
->  若要設定以個別或固定群組方式「自動隱藏」工具視窗，請在 [選項]  對話方塊中選取或清除 [自動隱藏按鈕僅對使用中的工具視窗生效]  。 如需詳細資訊，請參閱 [General, Environment, Options Dialog Box](../ide/reference/general-environment-options-dialog-box.md)。
+> 若要設定以個別或固定群組方式「自動隱藏」工具視窗，請在 [選項]  對話方塊中選取或清除 [自動隱藏按鈕僅對使用中的工具視窗生效]  。 如需詳細資訊，請參閱 [General, Environment, Options Dialog Box](../ide/reference/general-environment-options-dialog-box.md)。
 
 > [!NOTE]
->  視窗具有焦點時，可能會暫時顯示已啟用「自動隱藏」的工具視窗。 若要再次隱藏視窗，請選取目前視窗以外的項目。 當視窗失去焦點時，其即會自動隱藏。
+> 視窗具有焦點時，可能會暫時顯示已啟用「自動隱藏」的工具視窗。 若要再次隱藏視窗，請選取目前視窗以外的項目。 當視窗失去焦點時，其即會自動隱藏。
 
 ### <a name="specifying-a-monitor"></a>指定監視器
  若您具有第二個監視器且受作業系統支援，則可選擇要顯示視窗的監視器。 您甚至還可在其他監視器上，以「浮動定位」方式將多個視窗組成群組。
 
 > [!TIP]
->  您可建立多個 [方案總管]  的執行個體，並將其移至另一個監視器。 以滑鼠右鍵按一下視窗，然後選擇 [新增方案總管檢視] 。 您可按兩下並選擇 Ctrl 鍵，讓所有視窗回到原始監視器。
+> 您可建立多個 [方案總管]  的執行個體，並將其移至另一個監視器。 以滑鼠右鍵按一下視窗，然後選擇 [新增方案總管檢視] 。 您可按兩下並選擇 Ctrl 鍵，讓所有視窗回到原始監視器。
 
 ### <a name="reset-name-and-switch-between-window-layouts"></a>重設、命名和切換不同的視窗版面配置
  您可使用 [重設視窗版面配置]  命令，讓 IDE 回到您設定集合的原始視窗版面配置。 當您執行此命令時，會發生下列動作：

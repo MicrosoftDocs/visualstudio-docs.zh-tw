@@ -9,12 +9,12 @@ caps.latest.revision: 7
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: be0b661c85165ff348eccf7d55507ce228100091
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 208ff7f9bbfc2d07669a8b485edffc8dfc4cd54f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58944482"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437792"
 ---
 # <a name="command-line-capture-tool"></a>命令列擷取工具
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -79,7 +79,7 @@ DXCap.exe –info
  在驗證模式下，`events` 指定會比較其立即結果的圖形事件集。 比方說，`-examine present,draw,copy,clear`限制只有屬於那些類別的事件比較。  
   
 > [!TIP]
->  我們建議您從`-examine present,draw,copy,clear`因為這會顯示大部分的問題，但需要更少的時間比更廣泛的事件集。 如有必要，您可以指定較大或不同的事件集來驗證這些事件，並且顯示其他種類的問題。  
+> 我們建議您從`-examine present,draw,copy,clear`因為這會顯示大部分的問題，但需要更少的時間比更廣泛的事件集。 如有必要，您可以指定較大或不同的事件集來驗證這些事件，並且顯示其他種類的問題。  
   
  `-haltonfail`  
  在驗證模式下`-haltonfail`硬體和 WARP 轉譯器之間偵測到差異時，中止驗證。 按下按鍵之後，會繼續執行驗證。  
@@ -140,7 +140,7 @@ DXCap.exe –c "C:\Program Files\Internet Explorer\iexplorer.exe" "www.fishgl.co
  在上述範例中的命令會在檢視位於 www.fishgl.com 的網頁時，擷取 Internet Explorer 桌上型電腦版本的圖形資訊；該網頁使用 WebGL API 來呈現 3D 內容。  
   
 > [!NOTE]
->  因為應用程式之後出現的命令列引數會傳遞給它，所以您必須指定適用於 DXCap.exe 的引數，然後才能使用 `–c` 選項。  
+> 因為應用程式之後出現的命令列引數會傳遞給它，所以您必須指定適用於 DXCap.exe 的引數，然後才能使用 `–c` 選項。  
   
 ### <a name="capture-graphics-information-from-a-windows-store-app"></a>擷取來自 Windows 市集應用程式的圖形資訊。  
  您可以擷取來自 Windows 市集應用程式的圖形資訊。  

@@ -17,12 +17,12 @@ caps.latest.revision: 18
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 55dfa9a360d33a73b6298f186d12810f8510b1fc
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: af03329a05501427f6d04d6cddbd637c3311b339
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60063552"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63434921"
 ---
 # <a name="walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api"></a>逐步解說：依需求以 ClickOnce 部署 API 下載組件
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ ms.locfileid: "60063552"
 根據預設，所有組件包含在[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]第一次執行應用程式時，會下載應用程式。 不過，您可能有應用程式的較少的使用者所使用的部分。 在此情況下，只有在建立組件的其中一種類型時，才會想要下載組件。 下列逐步解說示範如何將應用程式中的特定組件標示為「選擇性」，以及在 Common Language Runtime 需要時，使用 <xref:System.Deployment.Application> 命名空間中的類別來下載它們。  
   
 > [!NOTE]
->  您的應用程式必須以完全信任執行，才能使用此程序。  
+> 您的應用程式必須以完全信任執行，才能使用此程序。  
   
 ## <a name="prerequisites"></a>必要條件  
  您需要下列元件，才能完成此逐步解說的其中一個：  

@@ -9,12 +9,12 @@ helpviewer_keywords:
 ms.assetid: d086be78-ec3c-43cc-b799-5180a71e19f1
 caps.latest.revision: 16
 manager: jillfra
-ms.openlocfilehash: 0ec69fa123775cb477195d4022fb439fb990f415
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
-ms.translationtype: MT
+ms.openlocfilehash: f41578f2522487f746a469933a2269a621390f3c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "59000707"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63408417"
 ---
 # <a name="how-to-register-a-service"></a>HOW TO：註冊服務
 Managed Package Framework (MPF) 提供屬性以控制受管理服務的註冊。 RegPkg 公用程式使用這些屬性，向 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]註冊服務。  
@@ -38,7 +38,7 @@ Managed Package Framework (MPF) 提供屬性以控制受管理服務的註冊。
  需要有 <xref:System.Runtime.InteropServices.ComVisibleAttribute>才能透過 Unmanaged 程式碼取得介面。  
   
 > [!NOTE]
->  雖然您可以針對服務和介面使用相同的類型或 GUID，但是建議您使用不同的類型或 GUID，因為服務可以公開不同的介面。  
+> 雖然您可以針對服務和介面使用相同的類型或 GUID，但是建議您使用不同的類型或 GUID，因為服務可以公開不同的介面。  
   
 ## <a name="see-also"></a>另請參閱  
  [註冊 Vspackage](../extensibility/internals/registering-vspackages.md)   

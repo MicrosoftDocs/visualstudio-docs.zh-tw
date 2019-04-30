@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 79ae6aee44f720b868e30c831ee4d6aa61c9611d
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: f0f849088a2c3cc726adc6054aef1ff7a7c1c52f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60090403"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63427412"
 ---
 # <a name="how-to-add-xmlnode-controls-to-word-documents"></a>HOW TO：將 XMLNode 控制項加入 Word 文件
   **重要**本主題有關 Microsoft Word 中設定的資訊是提供專門用於權益與使用個人和組織使用者位於外部皒玿璅其領域，或使用，或開發在執行的程式，第 2010 年 1 月 Microsoft 何時移除特定功能的實作之前由 Microsoft 所授權的 Microsoft Word 產品與自訂 XML 從 Microsoft Word。 有關 Microsoft Word 的這項資訊可能不會讀取或使用的個人或組織在美國或其區域使用，或開發在 2010 年 1 月 10 日之後由 Microsoft 所授權的 Microsoft Word 產品執行的程式;這些產品無法運作此日期之前的授權或購買，以在美國以外的使用授權的產品相同。
@@ -28,7 +28,7 @@ ms.locfileid: "60090403"
  當您將非重複的 XML 結構描述元素對應至 Microsoft Office Word 文件時，Visual Studio 會自動將<xref:Microsoft.Office.Tools.Word.XMLNode>控制項加入文件。 如需對應重複的 XML 結構描述元素的資訊，請參閱[How to:XMLNodes 控制項加入 Word 文件](../vsto/how-to-add-xmlnodes-controls-to-word-documents.md)。
 
 > [!NOTE]
->  <xref:Microsoft.Office.Tools.Word.XMLNode>控制項不是可從**工具箱**或**Zdroje dat**視窗中，而且不能以程式設計方式建立。
+> <xref:Microsoft.Office.Tools.Word.XMLNode>控制項不是可從**工具箱**或**Zdroje dat**視窗中，而且不能以程式設計方式建立。
 
  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]
 
@@ -37,7 +37,7 @@ ms.locfileid: "60090403"
 1. 在 Visual Studio 設計工具中，功能區中的文件中按一下**開發人員** 索引標籤。
 
     > [!NOTE]
-    >  如果 [開發人員]  索引標籤沒有顯示，您必須先使其顯示。 如需詳細資訊，請參閱[如何：在功能區顯示開發人員索引標籤](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md)。
+    > 如果 [開發人員]  索引標籤沒有顯示，您必須先使其顯示。 如需詳細資訊，請參閱[如何：在功能區顯示開發人員索引標籤](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md)。
 
 2. 在  **XML**群組中，按一下**結構描述**。
 

@@ -10,12 +10,12 @@ ms.assetid: fa3b993b-ab95-47fa-a38b-b788f3a5b2d8
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 56d9ea80054ec3732f62f70a582b95da32fdbe9c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 46ccdd87d44ee90c925992f4d7b997c9bbe09684
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60086711"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63435518"
 ---
 # <a name="creating-an-extension-with-an-editor-item-template"></a>使用編輯器項目範本建立延伸模組
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -65,7 +65,7 @@ ms.locfileid: "60086711"
  編輯器檢視區 Adornment 範本會建立將具有檢視區的右上角的紅色外框的淺紫方塊檢視區相對裝飾。  
   
 > [!NOTE]
->  *Viewport*是目前顯示的文字檢視的區域。  
+> *Viewport*是目前顯示的文字檢視的區域。  
   
 #### <a name="to-create-a-viewport-adornment-extension-by-using-the-editor-viewport-adornment-template"></a>若要使用的編輯器檢視區 Adornment 範本建立的檢視區 adornment 延伸模組  
   

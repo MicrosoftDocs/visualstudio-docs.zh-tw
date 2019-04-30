@@ -12,18 +12,18 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 67a58ab1bf508ba1b2edc7117412638de6c2231a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 9c714aec9bf4bb1fa28bd04a1b5e3375f98da4dd
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60099542"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63410084"
 ---
 # <a name="create-a-custom-debug-engine"></a>建立自訂的偵錯引擎
 偵錯引擎 (DE) 是元件，可讓特定的執行階段架構的偵錯。 通常是只有一個 DE 實作每個執行階段環境。
 
 > [!NOTE]
->  TRANSACT-SQL 和 JScript 的個別 DE 實作時，VBScript 和 JScript 會共用單一的規定。
+> TRANSACT-SQL 和 JScript 的個別 DE 實作時，VBScript 和 JScript 會共用單一的規定。
 
  規定適用於解譯器或作業的系統，以提供執行控制、 中斷點、 和運算式評估為這類偵錯服務。 這些服務透過 DE 介面實作，而且可能會造成偵錯工具不同的作業模式之間轉換。 如需詳細資訊，請參閱 <<c0> [ 作業模式](../../extensibility/debugger/operational-modes.md)。
 

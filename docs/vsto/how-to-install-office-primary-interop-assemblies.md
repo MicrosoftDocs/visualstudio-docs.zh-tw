@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 2ddba23ecb6007ff3b678932b118208742d1f0d4
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 4b6f701e3962a25e7239c829d409a3ad69a1833a
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60109500"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63419600"
 ---
 # <a name="how-to-install-office-primary-interop-assemblies"></a>HOW TO：安裝 Office 主要 interop 組件
   當您安裝 Office 時，請安裝 Microsoft Office 主要 Interop 組件 (PIA)。
@@ -30,7 +30,7 @@ ms.locfileid: "60109500"
 2. 安裝 Microsoft Office，並確定 **.NET 程式設計支援**選取您想要擴充的應用程式的功能 （這項功能隨附於預設安裝）。
 
     > [!WARNING]
-    >  根據預設，PIA 內嵌在您的方案時您會建置它讓您不需要將 Pia 散發給使用者，以做為使用 VSTO 增益集或自訂的先決條件。
+    > 根據預設，PIA 內嵌在您的方案時您會建置它讓您不需要將 Pia 散發給使用者，以做為使用 VSTO 增益集或自訂的先決條件。
 
 ## <a name="see-also"></a>另請參閱
 - [Office 主要 interop 組件](../vsto/office-primary-interop-assemblies.md)

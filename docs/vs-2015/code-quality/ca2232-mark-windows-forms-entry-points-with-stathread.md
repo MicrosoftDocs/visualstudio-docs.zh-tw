@@ -15,12 +15,12 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: d486189b557c0c1146be68e6c0328cb49d5ed291
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 6e8b7242fcd82db1a0cfb82cf6cd6df5a9f75084
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58945267"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63435418"
 ---
 # <a name="ca2232-mark-windows-forms-entry-points-with-stathread"></a>CA2232:Windows Forms 進入點必須標記 STAThread
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,7 +39,7 @@ ms.locfileid: "58945267"
  <xref:System.STAThreadAttribute> 表示的 COM 執行緒模型應用程式是單一執行緒 apartment。 在使用 Windows Form 的任何應用程式之進入點上必須有此屬性。如果省略的話，Windows 元件就無法正常運作。 如果屬性不存在，則應用程式會使用多執行緒的 apartment 模型不支援 Windows Form。
 
 > [!NOTE]
->  [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] 使用應用程式架構的專案不會將標示**Main** stathread 的方法。 [!INCLUDE[vbprvb](../includes/vbprvb-md.md)]編譯器自動執行。
+> [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] 使用應用程式架構的專案不會將標示**Main** stathread 的方法。 [!INCLUDE[vbprvb](../includes/vbprvb-md.md)]編譯器自動執行。
 
 ## <a name="how-to-fix-violations"></a>如何修正違規
  若要修正此規則的違規情形，加入<xref:System.STAThreadAttribute>屬性至進入點。 如果<xref:System.MTAThreadAttribute?displayProperty=fullName>屬性存在，則將它移除。

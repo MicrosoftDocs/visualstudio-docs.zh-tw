@@ -9,12 +9,12 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 722d318d05b37a7dc9c41c8e7078c9b486de6318
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: 5381c33790cbe9a7b5083f29d2602af39387bf61
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59668349"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63386750"
 ---
 # <a name="how-to-add-validation-to-entity-classes"></a>HOW TO：將驗證新增至實體類別
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -24,7 +24,7 @@ ms.locfileid: "59668349"
  [LINQ to SQL 工具，在 Visual Studio 中](../data-tools/linq-to-sql-tools-in-visual-studio2.md)提供可讓使用者將擴充的設計工具所產生的程式碼，執行插入、 更新和刪除完整實體，以及個別的資料行後面的部分方法變更。  
   
 > [!NOTE]
->  本主題提供使用 [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]將驗證加入至實體類別時的基本步驟。 因為它可能難以遵循這些泛型步驟，而不會參考特定實體類別，提供逐步解說中使用實際的資料。  
+> 本主題提供使用 [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]將驗證加入至實體類別時的基本步驟。 因為它可能難以遵循這些泛型步驟，而不會參考特定實體類別，提供逐步解說中使用實際的資料。  
   
 ## <a name="adding-validation-for-changes-to-the-value-in-a-specific-column"></a>加入在特定資料行中的值變更時的驗證  
  這個程序顯示如何在資料行中的值發生變更時驗證資料。 因為驗證是在實際類別定義 (而不是使用者介面) 內執行，所以如果值無法通過驗證，就會擲回例外狀況 (Exception)。 請在會嘗試變更資料行值的應用程式的程式碼中實作錯誤處理。  
@@ -78,7 +78,7 @@ ms.locfileid: "59668349"
  除了可以檢查變更期間的值以外，您還可以在發生整個實體類別的更新時驗證資料。 更新期間執行的驗證可以應商務規則 (Business Rule) 的需要，比較多個資料行的值。 下列程序顯示如何在發生整個實體類別的更新時進行驗證。  
   
 > [!NOTE]
->  整個實體類別的更新驗證程式碼是在部分 <xref:System.Data.Linq.DataContext> 類別 (而不是在特定實體類別的部分類別) 中執行。  
+> 整個實體類別的更新驗證程式碼是在部分 <xref:System.Data.Linq.DataContext> 類別 (而不是在特定實體類別的部分類別) 中執行。  
   
 #### <a name="to-validate-data-during-an-update-to-an-entity-class"></a>若要在實體類別更新期間驗證資料  
   

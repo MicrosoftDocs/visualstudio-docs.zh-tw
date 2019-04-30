@@ -23,12 +23,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 77fa9442289851aff91d8d9bfc55e581edfa774a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: e9ce2388dbf61ef3af524f0debc776891dca004f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60117535"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436501"
 ---
 # <a name="ribbon-xml"></a>功能區 XML
   功能區 (XML) 項目可讓您使用 XML 自訂功能區。 如果您想要自訂功能區的功能區 （視覺化設計工具） 項目不支援的方式，請使用功能區 (XML) 項目。 您可以使用每個項目進行比較，請參閱[功能區概觀](../vsto/Ribbon-overview.md)。
@@ -60,7 +60,7 @@ ms.locfileid: "60117535"
 - 在功能區類別中定義回呼方法。
 
 > [!NOTE]
->  Outlook 還需要另一個步驟。 如需詳細資訊，請參閱 < [outlook 自訂功能區](../vsto/customizing-a-ribbon-for-outlook.md)。
+> Outlook 還需要另一個步驟。 如需詳細資訊，請參閱 < [outlook 自訂功能區](../vsto/customizing-a-ribbon-for-outlook.md)。
 
  如需示範如何以自動化從功能區應用程式的逐步解說，請參閱[逐步解說：使用功能區 XML 建立自訂的索引標籤](../vsto/walkthrough-creating-a-custom-tab-by-using-ribbon-xml.md)。
 

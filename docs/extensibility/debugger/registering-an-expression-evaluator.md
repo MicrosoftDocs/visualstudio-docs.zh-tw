@@ -11,16 +11,16 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: dd3d58b61683c2b25da3e988d307effc28d61dc9
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 2de018cc757adba814c8705fb0f2e02e96f1c59c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60073360"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63420787"
 ---
 # <a name="register-an-expression-evaluator"></a>註冊運算式評估工具
 > [!IMPORTANT]
->  在 Visual Studio 2015 中，這種實作運算式評估工具已被取代。 實作 CLR 運算式評估工具的詳細資訊，請參閱[CLR 運算式評估工具](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators)並[Managed 運算式評估工具範例](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)。
+> 在 Visual Studio 2015 中，這種實作運算式評估工具已被取代。 實作 CLR 運算式評估工具的詳細資訊，請參閱[CLR 運算式評估工具](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators)並[Managed 運算式評估工具範例](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)。
 
  運算式評估工具 (EE) 必須將自己做為使用 Windows COM 環境和 Visual Studio 的 class factory 登錄。 EE 會設為 DLL，因此它會將其插入偵錯引擎 (DE) 位址空間或 Visual Studio 的位址空間，視實體會具現化 EE。
 
@@ -101,7 +101,7 @@ namespace EEMC
  EE DLL 實作`DllRegisterServer`向 COM 環境，以及 Visual Studio 的函式。
 
 > [!NOTE]
->  您可以在檔案中找到 MyCEE 程式碼範例登錄機碼*dllentry.cpp*，位於 EnVSDK\MyCPkgs\MyCEE 在 VSIP 安裝。
+> 您可以在檔案中找到 MyCEE 程式碼範例登錄機碼*dllentry.cpp*，位於 EnVSDK\MyCPkgs\MyCEE 在 VSIP 安裝。
 
 ### <a name="dll-server-process"></a>DLL 伺服器處理序
  當註冊 EE，DLL 伺服器：
@@ -118,7 +118,7 @@ namespace EEMC
     |`metricEngine`|`GUID`s 的偵錯引擎 (DE) 可搭配此 EE|
 
     > [!NOTE]
-    >  `metricLanguage``GUID`識別的語言名稱，但它是`guidLang`引數`SetEEMetric`選取語言。 當編譯器產生偵錯資訊檔案時，它應該寫入適當`guidLang`，讓裝置知道要使用哪一個 EE。 DE 通常會符號提供者要求此語言`GUID`，儲存在偵錯資訊檔案。
+    > `metricLanguage``GUID`識別的語言名稱，但它是`guidLang`引數`SetEEMetric`選取語言。 當編譯器產生偵錯資訊檔案時，它應該寫入適當`guidLang`，讓裝置知道要使用哪一個 EE。 DE 通常會符號提供者要求此語言`GUID`，儲存在偵錯資訊檔案。
 
 3. 藉由建立 hkey_local_machine\software\microsoft\visualstudio \ 底下的機碼會向 Visual Studio\\*X.Y*，其中*X.Y*是向 Visual Studio 的版本。
 

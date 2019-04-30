@@ -18,12 +18,12 @@ caps.latest.revision: 50
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: aeaba355e101bd8e48126bfa01f95668a37abe3e
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 45588d06cddd919d8ff0f96329cce5f6054edd00
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60081420"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63431425"
 ---
 # <a name="javascript-console-commands"></a>JavaScript Console commands
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,7 +35,7 @@ ms.locfileid: "60081420"
  如果 [JavaScript 主控台] 視窗已關閉，您可以開啟偵錯時在 Visual Studio 中選擇**偵錯** > **Windows** > **JavaScript主控台**。  
   
 > [!NOTE]
->  如果在偵錯工作階段期間無法使用該視窗，請確定在專案的 [偵錯] 屬性中的偵錯工具類型已設為 [指令碼]  。  
+> 如果在偵錯工作階段期間無法使用該視窗，請確定在專案的 [偵錯] 屬性中的偵錯工具類型已設為 [指令碼]  。  
   
 ## <a name="console-object-commands"></a>主控台物件命令  
  此表格顯示 `console` 物件命令的語法，該命令可用於 [JavaScript 主控台] 視窗，也可以用來從程式碼傳送訊息至主控台。 此物件提供數種格式，以便您在必要時可區分告知性訊息與錯誤訊息。  
@@ -43,7 +43,7 @@ ms.locfileid: "60081420"
  如需避免與本機物件命名的主控台相混淆，您可以使用較長的命令格式 `window.console.[command]` 。  
   
 > [!TIP]
->  舊版的 Visual Studio 不支援完整的命令集。 請使用主控台物件中的 IntelliSense，取得支援命令的快速資訊。  
+> 舊版的 Visual Studio 不支援完整的命令集。 請使用主控台物件中的 IntelliSense，取得支援命令的快速資訊。  
   
 |命令|描述|範例|  
 |-------------|-----------------|-------------|  

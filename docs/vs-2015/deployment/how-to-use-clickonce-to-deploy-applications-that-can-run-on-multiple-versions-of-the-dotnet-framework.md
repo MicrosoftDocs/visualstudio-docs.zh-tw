@@ -17,12 +17,12 @@ caps.latest.revision: 19
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 95bd19ffaf966b74e66f08c4a49c5c60658002f5
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 10243821a665d473983dfb729b53186e8ed38244
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60095473"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432928"
 ---
 # <a name="how-to-use-clickonce-to-deploy-applications-that-can-run-on-multiple-versions-of-the-net-framework"></a>HOW TO：使用 ClickOnce 部署可在多個.NET Framework 版本執行的應用程式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ ms.locfileid: "60095473"
 您可以部署目標使用 ClickOnce 部署技術的多個版本的.NET framework 的應用程式。 這需要您產生，並更新應用程式和部署資訊清單。  
   
 > [!NOTE]
->  變更多個版本的.NET framework 為目標的應用程式之前，您應該確定您的應用程式執行與多個.NET Framework 版本。 版本的 common language runtime 是不同[!INCLUDE[net_v40_short](../includes/net-v40-short-md.md)]與.NET Framework 2.0、.NET Framework 3.0，以及.NET Framework 3.5。  
+> 變更多個版本的.NET framework 為目標的應用程式之前，您應該確定您的應用程式執行與多個.NET Framework 版本。 版本的 common language runtime 是不同[!INCLUDE[net_v40_short](../includes/net-v40-short-md.md)]與.NET Framework 2.0、.NET Framework 3.0，以及.NET Framework 3.5。  
   
  此程序需要下列步驟：  
   

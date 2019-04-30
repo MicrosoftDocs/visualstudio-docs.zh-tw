@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 567eba3da4856cd88a583bf614d5afbc13e77b0d
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 0aa124d25e279b7e44292645d81d80829f5d3f8f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60074917"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63420190"
 ---
 # <a name="how-to-customize-a-sharepoint-solution-package"></a>HOW TO：自訂 SharePoint 方案套件
   您可以使用 封裝設計工具來建立和自訂套件 (*.wsp*)。 比方說，您可以新增 SharePoint 專案項目及功能，指定是否會重設部署方案時，Web 伺服器，以及設定部署伺服器類型。
@@ -47,7 +47,7 @@ ms.locfileid: "60074917"
 2. 封裝展開，展開 封裝，並開啟*Package.Template.xml*檔案。
 
     > [!NOTE]
-    >  當您開啟 [套件] 範本的資訊清單 XML 檔案時，檔案進行自動驗證，以及您可以略過警告出現在 [錯誤清單] 視窗中。
+    > 當您開啟 [套件] 範本的資訊清單 XML 檔案時，檔案進行自動驗證，以及您可以略過警告出現在 [錯誤清單] 視窗中。
 
 ## <a name="change-the-manifest-template"></a>變更資訊清單範本
  您可以變更 Visual Studio XML 編輯器或 [資訊清單的範本] 窗格中的封裝資訊清單檔案的 XML 程式碼。 XML 程式碼的任何變更會合併到封裝的封裝資訊清單檔案。
@@ -68,7 +68,7 @@ ms.locfileid: "60074917"
  您可以停用封裝設計工具，並建立*manifest.xml*手動檔案。 第一次您執行此程序，在封裝設計工具中的目前設定會儲存到封裝範本 XML 檔。 然後，您可以修改或覆寫 XML 程式碼。
 
 > [!NOTE]
->  如果您新增或移除 SharePoint 專案項目和功能的 XML 檔案中停用封裝設計工具時，這些專案項目和功能不會封裝。
+> 如果您新增或移除 SharePoint 專案項目和功能的 XML 檔案中停用封裝設計工具時，這些專案項目和功能不會封裝。
 
 #### <a name="to-overwrite-packaged-manifest-file-by-disabling-the-designer"></a>若要覆寫封裝資訊清單的檔案，藉由停用設計工具
 

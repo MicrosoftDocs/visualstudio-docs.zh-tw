@@ -11,12 +11,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 8301a4ecae71bfa2b215e20dfabf73e058c48dc4
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: e1b6477c112de7b19b00bcd173984533f5737014
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60059106"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436713"
 ---
 # <a name="walkthrough-create-a-site-column-project-item-with-a-project-template-part-2"></a>逐步解說：使用專案範本，第 2 部分建立網站資料行專案項目
   您定義自訂 SharePoint 專案項目類型，並將它與 Visual Studio 中的專案範本產生關聯之後，您也可以提供範本的精靈。 您可以使用精靈，在使用您的範本來建立新的專案，其中包含的專案項目時，從使用者收集資訊。 您所收集的資訊可以用來初始化專案項目中。
@@ -222,7 +222,7 @@ ms.locfileid: "60059106"
  新增 XAML 來定義精靈 視窗和精靈頁面，提供 UI 的兩個使用者控制項的 UI，並加入程式碼來定義 「 視窗 」 和 「 使用者控制項的行為。 您所建立的精靈，類似於 Visual Studio 中的 SharePoint 專案的內建精靈。
 
 > [!NOTE]
->  在下列步驟中，您將 XAML 或程式碼新增至您的專案之後您的專案時，會有某些編譯錯誤。 當您在稍後步驟中加入程式碼時，這些錯誤就會消失運作。
+> 在下列步驟中，您將 XAML 或程式碼新增至您的專案之後您的專案時，會有某些編譯錯誤。 當您在稍後步驟中加入程式碼時，這些錯誤就會消失運作。
 
 #### <a name="to-create-the-wizard-window-ui"></a>若要建立 UI 中的 [精靈] 視窗
 
@@ -233,7 +233,7 @@ ms.locfileid: "60059106"
      [!code-xml[SPExtensibility.ProjectItem.SiteColumn#10](../sharepoint/codesnippet/Xaml/sitecolumnprojectitem/projecttemplatewizard/wizardwindow.xaml#10)]
 
     > [!NOTE]
-    >  在此 XAML 中建立的視窗衍生自<xref:Microsoft.VisualStudio.PlatformUI.DialogWindow>基底類別。 當您將自訂的 WPF 對話方塊加入 Visual Studio 時，我們建議您從有一致的樣式，與其他 Visual Studio 對話方塊，並避免強制回應對話方塊的問題可能會發生這個類別衍生您的對話方塊。 如需詳細資訊，請參閱 <<c0> [ 建立和管理強制回應對話方塊](/visualstudio/extensibility/creating-and-managing-modal-dialog-boxes)。
+    > 在此 XAML 中建立的視窗衍生自<xref:Microsoft.VisualStudio.PlatformUI.DialogWindow>基底類別。 當您將自訂的 WPF 對話方塊加入 Visual Studio 時，我們建議您從有一致的樣式，與其他 Visual Studio 對話方塊，並避免強制回應對話方塊的問題可能會發生這個類別衍生您的對話方塊。 如需詳細資訊，請參閱 <<c0> [ 建立和管理強制回應對話方塊](/visualstudio/extensibility/creating-and-managing-modal-dialog-boxes)。
 
 3. 如果您正在開發 Visual Basic 專案，移除`ProjectTemplateWizard`來自命名空間`WizardWindow`中的類別名稱`x:Class`屬性`Window`項目。 此元素會在第一行中的 XAML。 當您完成時，第一個行看起來應該如下列範例所示。
 
@@ -513,7 +513,7 @@ ms.locfileid: "60059106"
      網站資料行是封裝並部署至 SharePoint 網站**網站 URL**指定專案屬性。 Web 瀏覽器中開啟此站台的預設頁面。
 
     > [!NOTE]
-    >  如果**指令碼偵錯已停用** 對話方塊出現時，選擇**是**按鈕以繼續進行偵錯專案。
+    > 如果**指令碼偵錯已停用** 對話方塊出現時，選擇**是**按鈕以繼續進行偵錯專案。
 
 2. 在上**站台動作**功能表上，選擇**站台設定**。
 
@@ -543,4 +543,4 @@ ms.locfileid: "60059106"
 - [定義自訂 SharePoint 專案項目類型](../sharepoint/defining-custom-sharepoint-project-item-types.md)
 - [為 SharePoint 專案項目建立項目範本和專案範本](../sharepoint/creating-item-templates-and-project-templates-for-sharepoint-project-items.md)
 - [Visual Studio 範本結構描述參考](/visualstudio/extensibility/visual-studio-template-schema-reference)
-- [如何：使用精靈與專案範本](../extensibility/how-to-use-wizards-with-project-templates.md)
+- [如何：搭配專案範本使用精靈](../extensibility/how-to-use-wizards-with-project-templates.md)

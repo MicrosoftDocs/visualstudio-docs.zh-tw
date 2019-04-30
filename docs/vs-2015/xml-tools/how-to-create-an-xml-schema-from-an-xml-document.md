@@ -9,12 +9,12 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 8e32d96451e2494816ddd5f7a66591f40f847e85
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 0f12436f9f129c6fb8a0fe3a4b6c853a9e58e650
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60066061"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438120"
 ---
 # <a name="how-to-create-an-xml-schema-from-an-xml-document"></a>HOW TO：從 XML 文件建立 XML 結構描述
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,7 +42,7 @@ XML 編輯器允許您從 XML 文件，建立 XML 結構描述定義語言 (XSD)
      結構描述可儲存至磁碟、加入至專案或捨棄。  
   
     > [!NOTE]
-    >  **Create Schema**命令也會提供快顯功能表的 XML 編輯器 和 底下**XML**功能表。  
+    > **Create Schema**命令也會提供快顯功能表的 XML 編輯器 和 底下**XML**功能表。  
   
 ## <a name="see-also"></a>另請參閱  
  [XML 編輯器](../xml-tools/xml-editor.md)

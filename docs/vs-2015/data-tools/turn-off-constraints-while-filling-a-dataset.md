@@ -23,12 +23,12 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 8719b893bc8cb47f8a2d7b75b43592187c198289
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 3e75f06a999638f1346b1304fd438a8cc3f6b0b6
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60057689"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63424985"
 ---
 # <a name="turn-off-constraints-while-filling-a-dataset"></a>填入資料集時關閉條件約束
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,7 +38,7 @@ ms.locfileid: "60057689"
  如果沒有任何機制來允許暫時性條件約束的暫止，每次您嘗試載入的子資料表中的記錄，就會引發錯誤。 若要暫停資料集內的所有條件約束的另一個方法是使用<xref:System.Data.DataRow.BeginEdit%2A>，和<xref:System.Data.DataRow.EndEdit%2A>屬性。  
   
 > [!NOTE]
->  驗證事件 (例如<xref:System.Data.DataTable.ColumnChanging>和<xref:System.Data.DataTable.RowChanging>) 將不會引發條件約束已關閉時。  
+> 驗證事件 (例如<xref:System.Data.DataTable.ColumnChanging>和<xref:System.Data.DataTable.RowChanging>) 將不會引發條件約束已關閉時。  
   
 ### <a name="to-suspend-update-constraints-programmatically"></a>若要以程式設計方式暫停更新條件約束  
   

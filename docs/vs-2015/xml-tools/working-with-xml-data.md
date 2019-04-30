@@ -9,12 +9,12 @@ caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 536e3a2aa6254004fb34eb243583184e5ab0279e
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: aef35ff50080e9b596cc63915da77851b549bc3f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60092171"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438867"
 ---
 # <a name="working-with-xml-data"></a>使用 XML 資料
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,7 +45,7 @@ ms.locfileid: "60092171"
  Visual Studio 支援偵錯 XSLT 樣式表。 使用偵錯工具，您可在 XSLT 樣式表中設定中斷點，從程式碼逐步執行 XSLT 樣式表等。  
   
 > [!NOTE]
->  XSLT 偵錯在 Professional 版及 Team 版中可用。  
+> XSLT 偵錯在 Professional 版及 Team 版中可用。  
   
 ## <a name="in-this-section"></a>本節內容  
  [XML 編輯器](../xml-tools/xml-editor.md)  

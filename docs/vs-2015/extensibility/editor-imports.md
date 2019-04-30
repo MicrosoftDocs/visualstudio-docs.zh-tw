@@ -10,12 +10,12 @@ ms.assetid: 8d096de3-33b4-427a-a122-4aeff8a72da0
 caps.latest.revision: 20
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 461687e5d1e9570ea2e03610f838f6114fbc7643
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 4805bff12d284dc5a54451e157c9e8fb92deeae2
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58942679"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432112"
 ---
 # <a name="editor-imports"></a>編輯器匯入
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,7 +25,7 @@ ms.locfileid: "58942679"
  若要使用的編輯器匯入，您它匯入為欄位或屬性的匯出 Managed Extensibility Framework 元件組件的類別。  
   
 > [!NOTE]
->  如需有關 Managed Extensibility Framework 的詳細資訊，請參閱[Managed Extensibility Framework (MEF)](http://msdn.microsoft.com/library/6c61b4ec-c6df-4651-80f1-4854f8b14dde)。  
+> 如需有關 Managed Extensibility Framework 的詳細資訊，請參閱[Managed Extensibility Framework (MEF)](http://msdn.microsoft.com/library/6c61b4ec-c6df-4651-80f1-4854f8b14dde)。  
   
 ## <a name="import-syntax"></a>匯入語法  
  下列範例顯示如何匯入編輯器選項 factory 服務。  
@@ -44,7 +44,7 @@ internal IEditorOptionsFactoryService m_editorOptions = null;
   
  如需使用 匯入的範例，請參閱下列逐步解說：  
   
- [逐步解說：建立邊界圖像](../extensibility/walkthrough-creating-a-margin-glyph.md)  
+ [逐步解說：建立邊界字符](../extensibility/walkthrough-creating-a-margin-glyph.md)  
   
  [逐步解說：自訂文字檢視](../extensibility/walkthrough-customizing-the-text-view.md)  
   

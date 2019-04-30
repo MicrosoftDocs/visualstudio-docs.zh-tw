@@ -9,12 +9,12 @@ caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: d6c3410468a53b978165dfcae228b71985fcbe51
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 59259d8186803d966e79f27012e6be6c22b47dd8
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60117755"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63414712"
 ---
 # <a name="how-to-create-a-basic-color-shader"></a>HOW TO：建立基本色彩著色器
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -51,7 +51,7 @@ ms.locfileid: "60117755"
    下圖顯示完成的著色器圖形和套用至立方體的著色器預覽。  
   
 > [!NOTE]
->  在此圖中，指定橘色以更適當展現著色器的效果。  
+> 在此圖中，指定橘色以更適當展現著色器的效果。  
   
  ![3D 模型上的著色器圖形及其結果](../designers/media/digit-flat-color-effect.png "Digit-Flat-Color-Effect")  
   

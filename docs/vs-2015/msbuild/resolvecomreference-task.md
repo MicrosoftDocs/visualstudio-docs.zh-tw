@@ -19,12 +19,12 @@ caps.latest.revision: 29
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 830d2d7d077b65e205536e1b10579fe64633b21a
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: fc9ca34d8b8afc01787db594ffba5a1a36ec190e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59664986"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63439339"
 ---
 # <a name="resolvecomreference-task"></a>ResolveComReference 工作
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,7 +46,7 @@ ms.locfileid: "59664986"
 |`ResolvedAssemblyReferences`|選擇性的 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 輸出參數。<br /><br /> 指定已解析的組件參考。|  
 |`ResolvedFiles`|選擇性的 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 輸出參數。<br /><br /> 指定磁碟上的完整檔案，這個磁碟對應至已提供作為這項工作輸入之類型程式庫的實體位置。|  
 |`ResolvedModules`|選擇性的 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 參數。|  
-|`SdkToolsPath`|選擇性 [String] (<!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  -->) 參數。<br /><br /> 如果 `ExecuteAsTool` 是 `true`，則此參數必須設定為目標 Framework 版本的 SDK 工具路徑。|  
+|`SdkToolsPath`|選擇性的 [String](<!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  -->)參數。<br /><br /> 如果 `ExecuteAsTool` 是 `true`，則此參數必須設定為目標 Framework 版本的 SDK 工具路徑。|  
 |`StateFile`|Optional <!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  --> 參數。<br /><br /> 指定 COM 元件時間戳記的快取檔案。 如果沒有，則每次執行都會重新產生所有的包裝函式。|  
 |`TargetFrameworkVersion`|Optional <!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  --> 參數。<br /><br /> 指定專案目標 Framework 版本。<br /><br /> 預設為 `String.Empty`。 這表示不篩選以目標 Framework 為基礎的參考。|  
 |`TargetProcessorArchitecture`|Optional <!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  --> 參數。<br /><br /> 指定慣用的目標處理器架構。 平移後，傳送至 tlbimp.exe /machine 旗標。<br /><br /> 參數值應該是 <xref:Microsoft.Build.Utilities.ProcessorArchitecture> 的成員。|  
@@ -75,7 +75,7 @@ ms.locfileid: "59664986"
 |`WrapperTool`|選擇性項目中繼資料。<br /><br /> 指定為此類型程式庫產生組件包裝函式使用的包裝函式工具。 如未指定此項目中繼資料，工作會使用預設的包裝函式工具 "tlbimp"。 可用且不區分大小寫的 TypeLib 選項有：<br /><br /> -   `Primary`：當您想要使用 COM 元件已產生的主要 Interop 組件時，請使用此包裝函式工具。 當您使用此包裝函式工具時，請勿指定包裝函式的輸出目錄，因為這會造成工作失敗。<br />-   `TLBImp`：當您想要產生 COM 元件的 Interop 組件時，請使用此包裝函式工具。<br />-   `AXImp`：當您想要產生 ActiveX 控制項的 Interop 組件時，請使用此包裝函式工具。|  
   
 > [!NOTE]
->  您為唯一識別類型程式庫所提供的資訊愈詳細，工作解析至正確磁碟檔案的可能性就愈大。  
+> 您為唯一識別類型程式庫所提供的資訊愈詳細，工作解析至正確磁碟檔案的可能性就愈大。  
   
 ## <a name="remarks"></a>備註  
  除了上述所列的參數，這項工作也會從 <xref:Microsoft.Build.Utilities.Task> 類別繼承參數。 如需這些其他參數的清單及其說明，請參閱 [Task 基底類別](../msbuild/task-base-class.md)。  

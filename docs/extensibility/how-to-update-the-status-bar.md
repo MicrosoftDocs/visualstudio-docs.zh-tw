@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 88acd6cf55e8d03b355f1defb861bc5ae919ed52
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 94ee2d0585892730659943b6dc826ca1b8947510
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60047965"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63415459"
 ---
 # <a name="how-to-update-the-status-bar"></a>HOW TO：更新狀態列
 **狀態列**一種控制列位於底部的許多應用程式視窗，其中包含一或多個狀態的文字行或指標。
@@ -27,7 +27,7 @@ ms.locfileid: "60047965"
 2. 當呼叫 IDE <xref:Microsoft.VisualStudio.Shell.Interop.IVsStatusbarUser.SetInfo%2A>，更新中的資訊**狀態列**藉由呼叫的方法<xref:Microsoft.VisualStudio.Shell.Interop.IVsStatusbarUser>。
 
     > [!NOTE]
-    >  IDE 呼叫<xref:Microsoft.VisualStudio.Shell.Interop.IVsStatusbarUser.SetInfo%2A>只當您的文件視窗一開始啟動。 您的文件視窗是作用中的時間所剩期間內，您必須更新**狀態列**編輯器變更的狀態資訊。
+    > IDE 呼叫<xref:Microsoft.VisualStudio.Shell.Interop.IVsStatusbarUser.SetInfo%2A>只當您的文件視窗一開始啟動。 您的文件視窗是作用中的時間所剩期間內，您必須更新**狀態列**編輯器變更的狀態資訊。
 
 ## <a name="robust-programming"></a>穩固程式設計
  A**狀態列**包含四個不同的欄位：

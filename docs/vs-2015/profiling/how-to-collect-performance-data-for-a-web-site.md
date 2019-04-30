@@ -19,12 +19,12 @@ caps.latest.revision: 38
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 4391f4cf989b51a49b874e6eccdcceb28f609003
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 3307b5372852d6f3e269264a02fa2c90cb1acd22
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60060549"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432790"
 ---
 # <a name="how-to-collect-performance-data-for-a-web-site"></a>HOW TO：為網站收集效能資料
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ ms.locfileid: "60060549"
 您可以使用 [效能精靈]  收集 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] Web 應用程式的效能資料。 您可以對 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 中開啟之 Web 應用程式進行程式碼剖析，也可以對位於本機電腦上但在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] IDE 中未開啟之 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 網站進行程式碼剖析。  
   
 > [!NOTE]
->  [效能精靈]  可讓您將階層互動 (TIP) 資料及/或 JScript 效能資料新增至收集的程式碼剖析資料。 TIP 選項會從伺服器端處理序收集資料。 JScript 程式碼剖析會從本機或遠端網站上執行的指令碼收集資料。 在大部分情況下，您應該只選擇其中一個選項。  
+> [效能精靈]  可讓您將階層互動 (TIP) 資料及/或 JScript 效能資料新增至收集的程式碼剖析資料。 TIP 選項會從伺服器端處理序收集資料。 JScript 程式碼剖析會從本機或遠端網站上執行的指令碼收集資料。 在大部分情況下，您應該只選擇其中一個選項。  
   
  依據系統管理員提供的使用者存取權限設定，個別使用者不一定具有安全性權限可以在裝載 ASP.NET 處理序的電腦上建立分析工具工作階段。 下列範例説明各使用者之間可能存在的差異：  
   

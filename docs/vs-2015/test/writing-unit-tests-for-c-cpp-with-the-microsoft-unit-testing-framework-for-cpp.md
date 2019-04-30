@@ -8,12 +8,12 @@ ms.assetid: 4f4b5f10-7314-4725-8c6e-e72f52eff918
 caps.latest.revision: 16
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 02c819ee0311066fb2a4e543213faaedfee5a2ad
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: d532234e50177222c3165638c0d77a8bd7c1b142
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60109409"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437967"
 ---
 # <a name="writing-unit-tests-for-cc-with-the-microsoft-unit-testing-framework-for-c"></a>使用適用於 C++ 的 Microsoft 單元測試架構撰寫適用於 C/C++ 的單元測試
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -247,7 +247,7 @@ ms.locfileid: "60109409"
     ```  
   
     > [!TIP]
-    >  建議您不要變更已通過的測試。 相反地，請加入新的測試，更新程式碼，使測試通過，然後再加入另一個測試，依此類推。  
+    > 建議您不要變更已通過的測試。 相反地，請加入新的測試，更新程式碼，使測試通過，然後再加入另一個測試，依此類推。  
     >   
     >  當您的使用者變更他們的需求時，請停用已不再正確的測試。 以相同的累加方式，撰寫新的測試，一次使一個測試生效。  
   
@@ -258,7 +258,7 @@ ms.locfileid: "60109409"
      ![RangeTest 失敗](../test/media/ute-cpp-testexplorer-rangetest-fail.png "UTE_Cpp_TestExplorer_RangeTest_Fail")  
   
     > [!TIP]
-    >  確認每個測試在您撰寫之後立即失敗。 這樣有助於避免撰寫永遠不會失敗的測試這種易犯的錯誤。  
+    > 確認每個測試在您撰寫之後立即失敗。 這樣有助於避免撰寫永遠不會失敗的測試這種易犯的錯誤。  
   
 3. 增強受測試的程式碼，使新的測試通過：  
   
@@ -286,7 +286,7 @@ ms.locfileid: "60109409"
      ![單元測試總管 &#45; 範圍測試成功](../test/media/utecpp12.png "UteCpp12")  
   
     > [!TIP]
-    >  開發程式碼時，一次加入一個測試。 確定所有測試在每次反覆之後都通過。  
+    > 開發程式碼時，一次加入一個測試。 確定所有測試在每次反覆之後都通過。  
   
 ### <a name="debug"></a> 對失敗的測試進行偵錯  
   
@@ -361,7 +361,7 @@ ms.locfileid: "60109409"
      ![所有測試都成功](../test/media/ute-ult-alltestspass.png "UTE_ULT_AllTestsPass")  
   
 > [!TIP]
->  如果個別測試之間沒有任何相依性，因此可依任意順序執行，請使用工具列上的 ![UTE&#95;parallelicon&#45;small](../test/media/ute-parallelicon-small.png "UTE_parallelicon-small") 切換按鈕，以開啟平行測試的執行。 這可大幅縮短執行所有測試所需的時間。  
+> 如果個別測試之間沒有任何相依性，因此可依任意順序執行，請使用工具列上的 ![UTE&#95;parallelicon&#45;small](../test/media/ute-parallelicon-small.png "UTE_parallelicon-small") 切換按鈕，以開啟平行測試的執行。 這可大幅縮短執行所有測試所需的時間。  
   
 ### <a name="refactor"></a> 重構程式碼，但不變更測試  
   
@@ -378,7 +378,7 @@ ms.locfileid: "60109409"
 2. 建置方案，然後選擇 [全部執行] ，確定您沒有引入錯誤。  
   
     > [!TIP]
-    >  一組良好的單元測試可讓您有信心，當您變更程式碼時，不會引入 Bug。  
+    > 一組良好的單元測試可讓您有信心，當您變更程式碼時，不會引入 Bug。  
     >   
     >  將重構作業與其他變更分開。  
   

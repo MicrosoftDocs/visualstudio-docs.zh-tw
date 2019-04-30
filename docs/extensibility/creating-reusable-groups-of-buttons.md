@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: fe0d5c3dd55380587f8f5f1c6477ee8c53bf1156
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 48ab55b58eee8f6444b253c09db1eeedcc8c5692
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60051657"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63411362"
 ---
 # <a name="create-reusable-groups-of-buttons"></a>建立可重複使用的按鈕群組
 命令群組是一律會出現在一起的功能表或工具列的命令集合。 將它指派給不同的父功能表的 CommandPlacements 區段中可重複使用任何命令群組 *.vsct*檔案。
@@ -81,7 +81,7 @@ ms.locfileid: "60051657"
     ```
 
     > [!NOTE]
-    >  [優先順序] 欄位的值會決定新的命令群組中的命令位置。 CommandPlacement 元素會覆寫項目定義中設定中，設定優先順序。 具有較高的優先順序值的命令之前，會顯示具有較低的優先順序值的命令。 允許重複的優先順序值，但無法保證有相同的優先順序值的命令的相對位置，因為順序**devenv /setup**命令會從登錄中建立的最後一個介面可能不一致。
+    > [優先順序] 欄位的值會決定新的命令群組中的命令位置。 CommandPlacement 元素會覆寫項目定義中設定中，設定優先順序。 具有較高的優先順序值的命令之前，會顯示具有較低的優先順序值的命令。 允許重複的優先順序值，但無法保證有相同的優先順序值的命令的相對位置，因為順序**devenv /setup**命令會從登錄中建立的最後一個介面可能不一致。
 
 ## <a name="to-put-a-reusable-group-of-buttons-on-a-menu"></a>若要將一組可重複使用按鈕放在功能表上
 

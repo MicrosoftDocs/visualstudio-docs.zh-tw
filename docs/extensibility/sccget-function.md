@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6b773fc52da702f2563276b4a8e51b6c3651f596
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: fad29d305d3657f9ed6372769a85d84260c1e77b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60044489"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63434657"
 ---
 # <a name="sccget-function"></a>SccGet 函式
 此函式會擷取一或多個檔案，來檢視和編譯，但不是用於編輯的複本。 在大部分的系統中，檔案會標記為唯讀。
@@ -81,7 +81,7 @@ SCCRTN SccGet(
  `SCC_GET_ALL`旗標可以結合`SCC_GET_RECURSIVE`旗標，以擷取指定的目錄中的所有檔案和所有的子目錄。
 
 > [!NOTE]
->  `SCC_GET_RECURSIVE` 永遠不會傳遞而且`SCC_GET_ALL`。 此外，請注意，如果目錄*C:\A*並*C:\A\B*兩者都傳遞遞迴 get 上, *C:\A\B*和所有子目錄會實際都擷取兩次。 是 IDE 的責任，並不是原始檔控制外掛程式，藉此確定這類的重複項目會保留從陣列。
+> `SCC_GET_RECURSIVE` 永遠不會傳遞而且`SCC_GET_ALL`。 此外，請注意，如果目錄*C:\A*並*C:\A\B*兩者都傳遞遞迴 get 上, *C:\A\B*和所有子目錄會實際都擷取兩次。 是 IDE 的責任，並不是原始檔控制外掛程式，藉此確定這類的重複項目會保留從陣列。
 
  最後，即使原始檔控制外掛程式指定`SCC_CAP_GET_NOUI`上初始化時，表示它並沒有 Get 命令的使用者介面，以擷取檔案 IDE 仍可能會呼叫此函式的旗標。 旗標只是表示，IDE 不會顯示取得功能表項目，而且，外掛程式不需要提供任何 UI。
 

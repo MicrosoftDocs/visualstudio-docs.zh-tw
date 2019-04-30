@@ -12,12 +12,12 @@ ms.assetid: 545268f3-8e83-446a-a398-1a9db9e866e8
 caps.latest.revision: 18
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 6bcf8979f0240f60de1a6af9d7f6f4163ecf0af9
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: daac15bbb7829d510db17ba02057a2dc86c55990
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58940559"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432513"
 ---
 # <a name="sccadd-function"></a>SccAdd 函式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -80,7 +80,7 @@ SCCRTN SccAdd(
  一般`fOptions`陣列中，取代以下`pfOptions`，使用其中一個`LONG`選項每個檔案的規格。 這是因為檔案類型可能會不同檔案。  
   
 > [!NOTE]
->  是無效的同時指定兩者`SCC_FILETYPE_TEXT`和`SCC_FILETYPE_BINARY`選項相同的檔案，但卻是有效都不指定。 設定都不是設定相同`SCC_FILETYPE_AUTO`，在此情況下的原始檔控制外掛程式會自動偵測 dll 的檔案類型。  
+> 是無效的同時指定兩者`SCC_FILETYPE_TEXT`和`SCC_FILETYPE_BINARY`選項相同的檔案，但卻是有效都不指定。 設定都不是設定相同`SCC_FILETYPE_AUTO`，在此情況下的原始檔控制外掛程式會自動偵測 dll 的檔案類型。  
   
  以下是使用中的旗標的清單`pfOptions`陣列：  
   

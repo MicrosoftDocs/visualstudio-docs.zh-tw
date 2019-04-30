@@ -10,12 +10,12 @@ ms.assetid: e8e78514-5720-4fc2-aa43-00b6af482e38
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 00a2f5e4e405ff2cba7275cd4c1310db850632b5
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 2af9e0765fb5bc73a35bebfc2f50f5d2a41122d3
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60118028"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63435961"
 ---
 # <a name="how-to-implement-error-markers"></a>HOW TO：實作錯誤標記
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,7 +47,7 @@ ms.locfileid: "60118028"
 1. 在正在進行篩選檢視中，篩選會取得與該檢視的資料相關聯的工作提供者的指標。  
   
     > [!NOTE]
-    >  您可以使用相同的命令篩選方法秘訣、 陳述式完成、 錯誤標記和等等。  
+    > 您可以使用相同的命令篩選方法秘訣、 陳述式完成、 錯誤標記和等等。  
   
 2. 當篩選條件收到的事件可表示您已經移動到另一行時，工作會檢查有錯誤。  
   

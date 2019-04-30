@@ -9,12 +9,12 @@ caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c392323905676706835a94bd86fcd53e3f6b8cc7
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 69ca24f45384ef650c4a692a8ec0afc079f19bac
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60054777"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63425364"
 ---
 # <a name="query-datasets"></a>查詢資料集
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,7 +25,7 @@ ms.locfileid: "60054777"
  資料集，資料表和資料行名稱會依預設不區分大小寫 — 也就是資料集稱為 「 客戶 」 資料表可以也稱為 「 客戶 」。 這符合多個資料庫，包括 SQL 伺服器的 SQL Server 中的命名慣例，預設行為是資料元素的名稱不能進行區分大小寫。  
   
 > [!NOTE]
->  不同的資料集，於 XML 文件都區分大小寫，因此結構描述中定義的資料元素的名稱會區分大小寫。 例如，結構描述的通訊協定可讓要定義名為 「 客戶 」 並建立名為 「 客戶。 」 的不同資料表的資料表的結構描述 當結構描述，其中包含只有大小寫不同的元素用來產生資料集類別，這會導致名稱衝突。  
+> 不同的資料集，於 XML 文件都區分大小寫，因此結構描述中定義的資料元素的名稱會區分大小寫。 例如，結構描述的通訊協定可讓要定義名為 「 客戶 」 並建立名為 「 客戶。 」 的不同資料表的資料表的結構描述 當結構描述，其中包含只有大小寫不同的元素用來產生資料集類別，這會導致名稱衝突。  
   
  區分大小寫，不過，可能會如何解譯資料之資料集內的因素。 例如，如果您篩選資料集資料表中的資料，請搜尋條件可能會傳回根據比較是否區分大小寫不同的結果。 您可以控制的篩選、 搜尋和排序資料集設為區分大小寫<xref:System.Data.DataSet.CaseSensitive%2A>屬性。 在資料集中的所有資料表預設會都繼承這個屬性的值。 (您可以設定資料表的連線，覆寫這個屬性為每個個別的資料表<xref:System.Data.DataTable.CaseSensitive%2A>屬性。)  
   

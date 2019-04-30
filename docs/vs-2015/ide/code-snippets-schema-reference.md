@@ -14,12 +14,12 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 994b87de61aaa0b303b0b0bf8454dad716c9978f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: b49b1aa1022b12dc2d409037a1241f51b469a14c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60114502"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436234"
 ---
 # <a name="code-snippets-schema-reference"></a>程式碼片段結構描述參考
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,7 +45,7 @@ IntelliSense 程式碼片段是預先設計的程式碼片段，可用以插入�
  指定程式碼片段所參考的組件名稱。  
   
 > [!NOTE]
->  只有 Visual Basic 程式碼片段支援 `Assembly` 項目。  
+> 只有 Visual Basic 程式碼片段支援 `Assembly` 項目。  
   
  **Assembly** 項目的文字值有兩種，即組件的易記文字名稱，例如 `System.dll`，或是組件的強式名稱，例如 `System,Version=1.0.0.1,Culture=neutral,PublicKeyToken=9b35aa323c18d4fb1`。  
   
@@ -240,7 +240,7 @@ is a great color. I love Blue.
  指定常值或物件在 Visual Studio 中得到焦點時要執行的函式。  
   
 > [!NOTE]
->  只有 Visual C# 程式碼片段支援 `Function` 項目。  
+> 只有 Visual C# 程式碼片段支援 `Function` 項目。  
   
 ```xml  
 <Function>  
@@ -289,7 +289,7 @@ is a great color. I love Blue.
  指定提供程式碼片段詳細資訊的 URL。  
   
 > [!NOTE]
->  Visual Studio 不會使用 `HelpUrl` 元素。 此項目是 IntelliSense 程式碼片段 XML 結構描述的一部分，任何包含此項目的程式碼片段都會生效，但是不會使用此項目的值。  
+> Visual Studio 不會使用 `HelpUrl` 元素。 此項目是 IntelliSense 程式碼片段 XML 結構描述的一部分，任何包含此項目的程式碼片段都會生效，但是不會使用此項目的值。  
   
 ```xml  
 <HelpUrl>  
@@ -325,7 +325,7 @@ is a great color. I love Blue.
  指定 IntelliSense 程式碼片段使用的匯入命名空間。  
   
 > [!NOTE]
->  只有 Visual Basic 專案支援 `Import` 項目。  
+> 只有 Visual Basic 專案支援 `Import` 項目。  
   
 ```xml  
 <Import>  
@@ -346,7 +346,7 @@ is a great color. I love Blue.
  將個別 `Import` 項目設為群組。  
   
 > [!NOTE]
->  只有 Visual Basic 專案支援 `Imports` 項目。  
+> 只有 Visual Basic 專案支援 `Imports` 項目。  
   
 ```xml  
 <Imports>  
@@ -428,7 +428,7 @@ is a great color. I love Blue.
  指定必須匯入的命名空間，匯入後程式碼片段才能進行編譯和執行。 在 `Namespace` 項目中指定的命名空間會自動加入至程式碼開頭的 `Imports` 陳述式中 (如果不存在的話)。  
   
 > [!NOTE]
->  只有 Visual Basic 專案支援 `Namespace` 項目。  
+> 只有 Visual Basic 專案支援 `Namespace` 項目。  
   
 ```xml  
 <Namespace>  
@@ -475,7 +475,7 @@ is a great color. I love Blue.
  指定程式碼片段所需之組件參考的相關資訊。  
   
 > [!NOTE]
->  只有 Visual Basic 專案支援 `Reference` 項目。  
+> 只有 Visual Basic 專案支援 `Reference` 項目。  
   
 ```xml  
 <Reference>  
@@ -497,7 +497,7 @@ is a great color. I love Blue.
  將個別 `Reference` 項目設為群組。  
   
 > [!NOTE]
->  只有 Visual Basic 專案支援 `References` 項目。  
+> 只有 Visual Basic 專案支援 `References` 項目。  
   
 ```xml  
 <References>  
@@ -517,7 +517,7 @@ is a great color. I love Blue.
  指定用來插入程式碼片段的捷徑文字。 `Shortcut` 項目的文字值只能包含英數字元、短破折號 ( - ) 及底線 ( _ )。  
   
 > [!CAUTION]
->  C++ 程式碼片段捷徑不支援 _ 和 – 字元。  
+> C++ 程式碼片段捷徑不支援 _ 和 – 字元。  
   
 ```xml  
 <Shortcut>  
@@ -644,7 +644,7 @@ is a great color. I love Blue.
  指定提供所參考組件相關詳細資訊的 URL。  
   
 > [!NOTE]
->  只有 Visual Basic 專案支援 `Url` 項目。  
+> 只有 Visual Basic 專案支援 `Url` 項目。  
   
 ```xml  
 <Url>  

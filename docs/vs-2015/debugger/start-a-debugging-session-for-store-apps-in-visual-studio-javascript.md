@@ -17,12 +17,12 @@ caps.latest.revision: 27
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 12c5fb2db92c70144e38aa3ca2110b8b3d5c354e
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 630b2896e7446cf62982dd62ed12f9f7b7ca4aa9
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60105086"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63427288"
 ---
 # <a name="start-a-debugging-session-for-store-apps-in-visual-studio-javascript"></a>在 Visual Studio 中，為市集應用程式啟動偵錯工作階段 (JavaScript)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ ms.locfileid: "60105086"
  本主題說明如何對於以 JavaScript 和 HTML5 撰寫的 Windows 市集應用程式，開始偵錯工作階段。 您可以使用單一按鍵開始偵錯，也可以設定特定案例的偵錯工作階段，然後選擇啟動應用程式的方式。
 
 > [!NOTE]
->  撰寫 XAML 和視覺效果中的應用程式C#、 Visual C++，或 Visual Basic，請參閱 <<c2> [ 啟動偵錯工作階段 (VB、 C#，C++和 XAML)</c2>](../debugger/start-a-debugging-session-for-a-store-app-in-visual-studio-vb-csharp-cpp-and-xaml.md)
+> 撰寫 XAML 和視覺效果中的應用程式C#、 Visual C++，或 Visual Basic，請參閱 <<c2> [ 啟動偵錯工作階段 (VB、 C#，C++和 XAML)</c2>](../debugger/start-a-debugging-session-for-a-store-app-in-visual-studio-vb-csharp-cpp-and-xaml.md)
 
 ## <a name="BKMK_In_this_topic"></a>本主題內容
  [本主題內容](#BKMK_In_this_topic)
@@ -117,7 +117,7 @@ ms.locfileid: "60105086"
    ![選取遠端偵錯工具連接](../debugger/media/vsrun-pro-selectremotedebuggerdlg.png "VSRUN_PRO_SelectRemoteDebuggerDlg")
 
   > [!NOTE]
-  >  [選取遠端偵錯工具連接] 對話方塊會顯示位於本機子網路上的電腦，以及透過乙太網路纜線直接連接至 Visual Studio 電腦的任何電腦。 若要指定另一部電腦，請在 [ **電腦名稱** ] 方塊中輸入名稱。
+  > [選取遠端偵錯工具連接] 對話方塊會顯示位於本機子網路上的電腦，以及透過乙太網路纜線直接連接至 Visual Studio 電腦的任何電腦。 若要指定另一部電腦，請在 [ **電腦名稱** ] 方塊中輸入名稱。
 
   ![僅適用於 Windows Phone](../debugger/media/phone-only-content.png "phone_only_content")
 
@@ -178,7 +178,7 @@ ms.locfileid: "60105086"
  若要將已安裝的應用程式設定成以偵錯模式執行，請執行下列作業：
 
 > [!NOTE]
->  以下程序必須在應用程式未執行時實施。
+> 以下程序必須在應用程式未執行時實施。
 
 1. 在 [ **偵錯** ] 功能表上，選擇 [ **偵錯 Installed App Package**]。
 
@@ -226,9 +226,9 @@ ms.locfileid: "60105086"
 ### <a name="BKMK_Attach_the_debugger"></a> 附加偵錯工具
 
 > [!TIP]
->  JavaScript 應用程式是在 wwahost.exe 處理序的執行個體中執行。 如果在您附加至應用程式時有其他 JavaScript 應用程式正在執行，則需要知道在其中執行應用程式之 wwahost.exe 的數值處理序 ID (PID)。
+> JavaScript 應用程式是在 wwahost.exe 處理序的執行個體中執行。 如果在您附加至應用程式時有其他 JavaScript 應用程式正在執行，則需要知道在其中執行應用程式之 wwahost.exe 的數值處理序 ID (PID)。
 >
->  處理此情況的最簡單方式是關閉所有其他 JavaScript 應用程式。 否則，您可以在啟動應用程式之前開啟 Windows 工作管理員，並記下 wwahost.exe 處理序的 ID。 當您指定要附加的處理序**可用的處理序** 對話方塊中，應用程式的 wwahost.exe 會有不同於您所記下的識別碼。
+> 處理此情況的最簡單方式是關閉所有其他 JavaScript 應用程式。 否則，您可以在啟動應用程式之前開啟 Windows 工作管理員，並記下 wwahost.exe 處理序的 ID。 當您指定要附加的處理序**可用的處理序** 對話方塊中，應用程式的 wwahost.exe 會有不同於您所記下的識別碼。
 
  若要附加偵錯工具：
 

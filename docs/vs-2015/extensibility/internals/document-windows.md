@@ -10,12 +10,12 @@ ms.assetid: 50081d48-987f-43db-8bf9-51b7cf76e9c0
 caps.latest.revision: 18
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: fb8ce0938ae79b0fc6108f6f3cdbe80a116f5531
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 5e62be456422b7ee5e9f2828a44a6be05e1211d9
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58945079"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436340"
 ---
 # <a name="document-windows"></a>文件視窗
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -38,7 +38,7 @@ ms.locfileid: "58945079"
  藉由實作編輯器建立文件視窗。 <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory>介面建立的具現化編輯器一部分的文件視窗。 如需詳細資訊，請參閱 <<c0> [ 編輯器中的舊版介面](../../extensibility/legacy-interfaces-in-the-editor.md)。  
   
 > [!NOTE]
->  若要提供向後和向前瀏覽 視窗中的點，實作<xref:Microsoft.VisualStudio.Shell.Interop.IVsBackForwardNavigation>介面。 文字編輯器會使用文字標記來識別瀏覽文件中的點。  
+> 若要提供向後和向前瀏覽 視窗中的點，實作<xref:Microsoft.VisualStudio.Shell.Interop.IVsBackForwardNavigation>介面。 文字編輯器會使用文字標記來識別瀏覽文件中的點。  
   
 ## <a name="the-running-document-table"></a>執行文件資料表  
  IDE 會使用執行文件資料表 (RDT) 來追蹤每個文件視窗的狀態。 RDT 是透過哪份文件視窗會收到通知的事件，例如方案已關閉時，或已編輯檔案的機制。 如需詳細資訊，請參閱 <<c0> [ 執行文件表格](../../extensibility/internals/running-document-table.md)。  

@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ac93b71d67bc842b2498fbd4d017b17d9ddcf00c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 62d84dcb7ce22f1199d12a958250a465cd25a49c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60062599"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63412459"
 ---
 # <a name="how-to-programmatically-protect-documents-and-parts-of-documents"></a>HOW TO：以程式設計方式保護文件和文件的部分
   您可以在 Microsoft Office Word 文件加入保護，以防止使用者對文件進行任何編輯。
@@ -29,7 +29,7 @@ ms.locfileid: "60062599"
  您也可以將文件的特定區域標記為例外狀況，讓指定的使用者只能編輯文件的那些區域。 例如，您可能想要保護除了特定書籤以外的整份文件。 您可以選擇性地加入密碼，除非使用者知道密碼，否則無法移除文件保護。
 
 > [!NOTE]
->  下列範例不會使用密碼保護。不過，您可以考慮在加入文件保護時使用密碼。 如需詳細資訊，請參閱文件保護裝置範例[Office 程式開發範例和逐步解說](../vsto/office-development-samples-and-walkthroughs.md)。
+> 下列範例不會使用密碼保護。不過，您可以考慮在加入文件保護時使用密碼。 如需詳細資訊，請參閱文件保護裝置範例[Office 程式開發範例和逐步解說](../vsto/office-development-samples-and-walkthroughs.md)。
 
  您也可以使用內容控制項保護文件的部分。 如需詳細資訊，請參閱[如何：使用內容控制項保護文件的部分](../vsto/how-to-protect-parts-of-documents-by-using-content-controls.md)。
 

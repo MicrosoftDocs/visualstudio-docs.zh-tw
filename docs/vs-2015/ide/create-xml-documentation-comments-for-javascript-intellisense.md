@@ -14,12 +14,12 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 7b13931746cc9668ea18ead71babd5140e971818
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 90fb5b1c9a388d64e191915bbcbbe3de65f6aa99
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60079275"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437631"
 ---
 # <a name="create-xml-documentation-comments-for-javascript-intellisense"></a>建立 JavaScript IntelliSense 的 XML 文件註解
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,14 +29,14 @@ ms.locfileid: "60079275"
  本主題提供基本教學課程中使用 XML 文件註解。 如需使用其他項目，例如[ \<var >](../ide/var-javascript.md)並[\<值 >](../ide/value-javascript.md)，和其他程式碼範例，請參閱[XML 文件註解](../ide/xml-documentation-comments-javascript.md). 如需這類提供 IntelliSense 資訊的非同步回呼`Promise`，請參閱 < [\<傳回 >](../ide/returns-javascript.md)。  
   
 > [!NOTE]
->  XML 文件註解僅能從參考的檔案、組件和服務取得。  
+> XML 文件註解僅能從參考的檔案、組件和服務取得。  
   
 ### <a name="to-create-xml-documentation-comments-for-a-javascript-function"></a>若要建立 XML 文件註解，JavaScript 函式  
   
 - 在函數中，新增[\<摘要 >](../ide/summary-javascript.md)， [ \<param >](../ide/param-javascript.md)，並[\<傳回 >](../ide/returns-javascript.md)項目，並在與每個項目之前三個斜線 （/ /）。  
   
     > [!NOTE]
-    >  每個項目必須是單一行。  
+    > 每個項目必須是單一行。  
   
      下列範例顯示的 JavaScript 函式。  
   
@@ -118,7 +118,7 @@ ms.locfileid: "60079275"
 1. 建立具有 OpenAjax MessageBundle 格式文件註解的 XML 檔案。  
   
     > [!IMPORTANT]
-    >  MessageBundle 是建議的格式。 在 Microsoft Ajax 或.winmd 檔案中不支援這種格式。 如需使用替代方法`VSDoc`格式，請參閱 < [ \<loc >](../ide/loc-javascript.md)。  
+    > MessageBundle 是建議的格式。 在 Microsoft Ajax 或.winmd 檔案中不支援這種格式。 如需使用替代方法`VSDoc`格式，請參閱 < [ \<loc >](../ide/loc-javascript.md)。  
   
      下列範例示範內容，其中包含當地語系化的 IntelliSense 資訊側車檔案中。 這是一個 XML 檔案，它位於特定文化特性資料夾中，例如日本。 此資料夾必須位於相同的位置，以包含.js 檔案`<loc>`項目。 XML 檔案的檔案名稱必須符合`filename`參數中指定`<loc>`項目。  
   

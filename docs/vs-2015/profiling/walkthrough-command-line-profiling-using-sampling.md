@@ -13,12 +13,12 @@ caps.latest.revision: 26
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 6e9c8f14fbec74b353550a1420a5ff3e119d6dce
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 96dfe49ce4e174680202cd60c3e8bca83cfbf575
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60117430"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63439689"
 ---
 # <a name="walkthrough-command-line-profiling-using-sampling"></a>逐步解說：命令列使用取樣分析
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,7 +49,7 @@ ms.locfileid: "60117430"
  「取樣」是一種剖析的方法，會定期輪詢特定處理序以判斷使用中的函數。 產生的資料會提供計數，表示在取樣處理序時，函式位於呼叫堆疊頂端的頻率。  
   
 > [!NOTE]
->  程式碼剖析工具的命令列工具位於 Visual Studio 安裝目錄的 \Team Tools\Performance Tools 子目錄中。 在 64 位元電腦上，64 位元和 32 位元版本的工具都可以使用。 若要使用程式碼分析工具命令列工具，必須將路徑加入至命令提示字元視窗的 PATH 環境變數，或將它加入至命令本身。 如需詳細資訊，請參閱[指定命令列工具的路徑](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md)。 PeopleTrax 是 32 位元應用程式。  
+> 程式碼剖析工具的命令列工具位於 Visual Studio 安裝目錄的 \Team Tools\Performance Tools 子目錄中。 在 64 位元電腦上，64 位元和 32 位元版本的工具都可以使用。 若要使用程式碼分析工具命令列工具，必須將路徑加入至命令提示字元視窗的 PATH 環境變數，或將它加入至命令本身。 如需詳細資訊，請參閱[指定命令列工具的路徑](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md)。 PeopleTrax 是 32 位元應用程式。  
   
 #### <a name="to-profile-the-peopletrax-application-by-using-the-sampling-method"></a>使用取樣方法剖析 PeopleTrax 應用程式  
   

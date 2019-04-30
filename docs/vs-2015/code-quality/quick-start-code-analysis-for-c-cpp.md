@@ -12,12 +12,12 @@ caps.latest.revision: 10
 author: mikeblome
 ms.author: mblome
 manager: jillfra
-ms.openlocfilehash: 5e334d4e081c4afcb8046e3bbe3026fc0edbb20e
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 0eaf2f50239249a2aec85cfa88fc610946d5f700
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60099360"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436701"
 ---
 # <a name="quick-start-code-analysis-for-cc"></a>快速入門：C/C++ 的程式碼分析
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,7 +49,7 @@ ms.locfileid: "60099360"
     2. 根據預設，程式碼分析不會報告從外部工具自動產生的程式碼警告。 若要檢視產生程式碼的警告，請清除**隱藏所產生的程式碼的結果** 核取方塊。  
   
         > [!NOTE]
-        >  這個選項不會在表單和範本中出現錯誤和警告時，抑制來自產生的程式碼的程式碼分析錯誤和警告。 您可以同時檢視及維護表單或範本的原始程式碼。  
+        > 這個選項不會在表單和範本中出現錯誤和警告時，抑制來自產生的程式碼的程式碼分析錯誤和警告。 您可以同時檢視及維護表單或範本的原始程式碼。  
   
 3. 若要執行程式碼分析，每次使用選取的組態建置專案時，請選取**啟用適用於 C 的程式碼分析 /C++上建置**核取方塊。 您也可以執行程式碼分析手動開啟**分析**功能表，然後選擇**上執行程式碼分析** *ProjectName*。  
   
@@ -94,7 +94,7 @@ ms.locfileid: "60099360"
  在您了解問題之後，就可以在程式碼中解決問題。 然後重新執行程式碼分析來確定 [程式碼分析] 視窗中不會再次出現警告，且您的修正尚未引發新的警告。  
   
 > [!TIP]
->  您可以從 [程式碼分析] 視窗重新執行程式碼分析。 選擇**分析**按鈕，然後選擇要分析的範圍。 您可以在整個方案或選取的專案上重新執行分析。  
+> 您可以從 [程式碼分析] 視窗重新執行程式碼分析。 選擇**分析**按鈕，然後選擇要分析的範圍。 您可以在整個方案或選取的專案上重新執行分析。  
   
 ## <a name="BKMK_Suppress"></a> 隱藏程式碼分析警告  
  有時候您可能決定不修正程式碼分析警告。 您可能會判斷解決這項警告需要太多重新編碼，而在任何實際實作程式碼時會有問題發生的可能性。 或是，您可能會認為警告中使用的分析對於特定內容是不適當的。 您可以隱藏個別的警告，使之不再出現於 [程式碼分析] 視窗中。  

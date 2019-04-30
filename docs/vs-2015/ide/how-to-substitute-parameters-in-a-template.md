@@ -12,12 +12,12 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: be004820967f85de41b11c38031722b87a5af375
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 3c0a710bc3ad504c6654528db33b9a6698f4f7ae
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60039410"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63435154"
 ---
 # <a name="how-to-substitute-parameters-in-a-template"></a>HOW TO：替代範本中的參數
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,14 +29,14 @@ ms.locfileid: "60039410"
   
 #### <a name="to-use-a-parameter-to-replace-namespace-name-with-the-project-name"></a>使用參數將命名空間名稱取代為專案名稱  
   
-1. 在範本的一或多個程式碼檔案中，插入參數。 例如:   
+1. 在範本的一或多個程式碼檔案中，插入參數。 例如：  
   
     ```  
     namespace $safeprojectname$  
     ```  
   
     > [!NOTE]
-    >  以格式 $<參數>$ 撰寫範本參數。  
+    > 以格式 $<參數>$ 撰寫範本參數。  
   
 2. 在範本的 .vstemplate 檔案中，找出包括此檔案的 `ProjectItem` 項目。  
   

@@ -13,12 +13,12 @@ caps.latest.revision: 45
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 751b894e46fa6c76f866ddd3209d25c169ff6660
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: 41c7aa12e4adf2a757689670cdfed394f2a534c6
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59649403"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433705"
 ---
 # <a name="call-hierarchy"></a>呼叫階層
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -55,7 +55,7 @@ ms.locfileid: "59649403"
 - [程式碼定義視窗] 若已開啟，則顯示所選取之成員的程式碼。 在 C# 和 C++ 中可以使用這個視窗。 如需這個視窗的詳細資訊，請參閱[檢視程式碼的結構](../../ide/viewing-the-structure-of-code.md)。  
   
 > [!NOTE]
->  呼叫階層找不到方法群組參考，其中包含將方法新增為事件處理常式，或將方法指派給委派的位置。 若要尋找某個方法的所有參考，您可以使用 [尋找所有參考] 命令。  
+> 呼叫階層找不到方法群組參考，其中包含將方法新增為事件處理常式，或將方法指派給委派的位置。 若要尋找某個方法的所有參考，您可以使用 [尋找所有參考] 命令。  
   
 ## <a name="shortcut-menu-items"></a>捷徑功能表項目  
  下表描述幾個當您以滑鼠右鍵按一下樹狀檢視窗格中的節點時，可以使用的捷徑功能表選項。  

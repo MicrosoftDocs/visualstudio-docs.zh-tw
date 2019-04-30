@@ -11,12 +11,12 @@ caps.latest.revision: 49
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 9591875b525d44e343f8326b7f5a145b04b57cff
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 4107a5fb88392f9d02cca8f41b0f53d5844d9490
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60071158"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63422715"
 ---
 # <a name="define-validation-constraints-for-uml-models"></a>定義 UML 模型的驗證條件約束
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -55,7 +55,7 @@ ms.locfileid: "60071158"
     如需詳細資訊，請參閱 [評估驗證條件約束](#Implementing)。  
   
    > [!IMPORTANT]
-   >  請確定您的 **.cs** 檔案包含下列 `using` 陳述式：  
+   > 請確定您的 **.cs** 檔案包含下列 `using` 陳述式：  
    >   
    >  `using Microsoft.VisualStudio.ArchitectureTools.Extensibility.Uml;`  
   
@@ -223,7 +223,7 @@ using Microsoft.VisualStudio.Uml.Classes;
  驗證方法應指定您要套用的驗證條件約束是 true 或 false。 如果是 true，將不會執行任何動作。 如果是 false，應使用 `ValidationContext` 參數所提供的方法報告錯誤。  
   
 > [!NOTE]
->  驗證方法不應該變更模型。 無法保證條件約束的執行時間或執行順序。 如果您必須在同一驗證回合中連續執行的驗證方法之間傳遞資訊，可以使用 [協調多個驗證](#ContextCache)下所述的內容快取。  
+> 驗證方法不應該變更模型。 無法保證條件約束的執行時間或執行順序。 如果您必須在同一驗證回合中連續執行的驗證方法之間傳遞資訊，可以使用 [協調多個驗證](#ContextCache)下所述的內容快取。  
   
  例如，如果要確定每種類型 (類別、介面或列舉) 的名稱長度至少有三個字元，可以使用這個方法：  
   

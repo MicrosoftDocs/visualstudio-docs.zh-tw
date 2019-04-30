@@ -19,12 +19,12 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 robots: noindex,nofollow
-ms.openlocfilehash: 400e16918f01697eecce2af608ba89e041ca6449
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: c7cd8a48092c39048d52a7ebe9cd27163ba32110
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60065385"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63424783"
 ---
 # <a name="walkthrough-displaying-related-data-in-a-wpf-application"></a>逐步解說：在 WPF 應用程式中顯示相關的資料
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -167,7 +167,7 @@ ms.locfileid: "60065385"
 1. 在 [**資料來源**] 視窗中，找出**SalesOrderDetails**子系的節點**SalesOrderHeaders**節點。  
   
    > [!NOTE]
-   >  另外還有**SalesOrderDetails**的對等節點**SalesOrderHeaders**節點。 請確定您選取的子節點**SalesOrderHeaders**節點。  
+   > 另外還有**SalesOrderDetails**的對等節點**SalesOrderHeaders**節點。 請確定您選取的子節點**SalesOrderHeaders**節點。  
   
 2. 展開子**SalesOrderDetails**節點。  
   

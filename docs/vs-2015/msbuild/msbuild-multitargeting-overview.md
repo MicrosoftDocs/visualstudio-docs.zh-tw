@@ -9,12 +9,12 @@ caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 1d4221cfdc0d741264aa4667892117ba0cc24f9a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: f5b60f44dd1d32a9d19814b4d2194e7586d86865
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60108278"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63426854"
 ---
 # <a name="msbuild-multitargeting-overview"></a>MSBuild 多目標概觀
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -22,7 +22,7 @@ ms.locfileid: "60108278"
 您可以使用 MSBuild，將應用程式編譯為在數個 .NET Framework 版本中的任一版上或數個系統平台中的任一個平台上執行。 例如，您可以將應用程式編譯為在 32 位元平台的 .NET Framework 2.0 上執行，也可以將同一個應用程式編譯為在 64 位元平台的 .NET Framework 4.5 上執行。  
   
 > [!IMPORTANT]
->  除了名稱「多目標」之外，專案一次只能以一個架構和一個平台為目標。  
+> 除了名稱「多目標」之外，專案一次只能以一個架構和一個平台為目標。  
   
  這些是一部分的 MSBuild 目標功能︰  
   

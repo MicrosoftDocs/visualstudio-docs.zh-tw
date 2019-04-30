@@ -10,12 +10,12 @@ ms.assetid: 22491cdc-8f04-4e1c-8eb4-ff33798ec792
 caps.latest.revision: 26
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: d7c21d3755d29ec3e71a3be756778320e678ab89
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 41bf80c8ae00aa22666750de7b4b23df981c8465
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60062772"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63435928"
 ---
 # <a name="how-to-migrate-extensibility-projects-to-visual-studio-2015"></a>HOW TO：將擴充性專案移轉至 Visual Studio 2015
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,7 +23,7 @@ ms.locfileid: "60062772"
 以下是如何升級您的延伸模組。  
   
 > [!IMPORTANT]
->  如果您想要維護您的擴充方案，針對較早版本的 Visual Studio 的版本，請務必製作複本，才能將它升級。 它可能難以返回先前的狀態中的升級的版本。  
+> 如果您想要維護您的擴充方案，針對較早版本的 Visual Studio 的版本，請務必製作複本，才能將它升級。 它可能難以返回先前的狀態中的升級的版本。  
   
 #### <a name="to-upgrade-an-extensibility-solution"></a>若要升級的擴充性解決方案  
   
@@ -54,4 +54,4 @@ ms.locfileid: "60062772"
 5. 您也可以切換成使用 VS SDK 建置工具的 NuGet 版本。 此 NuGet 封裝[Microsoft.VSSDK.BuildTools](http://www.nuget.org/packages/Microsoft.VSSDK.BuildTools)並一次新增至您的專案會包含必要的工具和目標，讓您的電腦上建置您的擴充性專案，而不需要安裝 VS SDK 的檔案。  
   
 > [!NOTE]
->  不需要您更新您現有的擴充性專案，以使用 NuGet 參考組件和工具。  他們可以繼續建置使用參考組件和工具與 VS SDK 一起安裝。
+> 不需要您更新您現有的擴充性專案，以使用 NuGet 參考組件和工具。  他們可以繼續建置使用參考組件和工具與 VS SDK 一起安裝。

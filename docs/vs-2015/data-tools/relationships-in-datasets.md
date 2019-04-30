@@ -22,11 +22,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 9991adc9d770487c646c97da81b6245ae65ba5f5
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60075372"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63425405"
 ---
 # <a name="relationships-in-datasets"></a>在資料集中的關聯性
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

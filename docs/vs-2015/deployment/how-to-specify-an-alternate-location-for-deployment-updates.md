@@ -16,12 +16,12 @@ caps.latest.revision: 17
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 6fafeeb386e1dd40067620d529cb25023d3f0f29
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 9040c55b2298d18d1c87e652f76950f771bd14f5
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60087933"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437661"
 ---
 # <a name="how-to-specify-an-alternate-location-for-deployment-updates"></a>HOW TO：指定部署更新的替代位置
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ ms.locfileid: "60087933"
 您可以安裝您[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]應用程式一開始是從光碟或檔案共用，但應用程式必須檢查是否有定期更新，在網站上。 讓您的應用程式可以在其初始安裝後從 Web 自行更新，您可以在您的部署資訊清單中指定更新的替代位置。  
   
 > [!NOTE]
->  您的應用程式必須設定為在本機安裝才能使用這項功能。 如需詳細資訊，請參閱[逐步解說：手動部署 ClickOnce 應用程式](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)。 此外，如果您安裝[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]應用程式從網路中，設定替代位置原因[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]用於初始安裝和所有後續更新中的該位置。 如果您安裝應用程式的本機 （例如，從 CD)，使用原始媒體，來執行初始安裝和所有後續的更新會使用替代的位置。  
+> 您的應用程式必須設定為在本機安裝才能使用這項功能。 如需詳細資訊，請參閱[逐步解說：手動部署 ClickOnce 應用程式](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)。 此外，如果您安裝[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]應用程式從網路中，設定替代位置原因[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]用於初始安裝和所有後續更新中的該位置。 如果您安裝應用程式的本機 （例如，從 CD)，使用原始媒體，來執行初始安裝和所有後續的更新會使用替代的位置。  
   
 ### <a name="specifying-an-alternate-location-for-updates-by-using-mageuiexe-windows-forms-based-utility"></a>使用 MageUI.exe （Windows Form 為基礎的公用程式） 來指定更新的替代位置  
   
@@ -56,7 +56,7 @@ ms.locfileid: "60087933"
 3. 儲存檔案。  
   
     > [!NOTE]
-    >  您現在需要重新簽署 Mage.exe 副檔名。 如需詳細資訊，請參閱[逐步解說：手動部署 ClickOnce 應用程式](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)。  
+    > 您現在需要重新簽署 Mage.exe 副檔名。 如需詳細資訊，請參閱[逐步解說：手動部署 ClickOnce 應用程式](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)。  
   
 ## <a name="net-framework-security"></a>.NET Framework 安全性  
  如果您從離線媒體例如 CD、 安裝應用程式，而且電腦已上線，[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]所指定的 URL 會先檢查`<deploymentProvider>`以判斷是否更新位置包含較新版的部署資訊清單中的標記應用程式。 若是如此，請[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]會從初始的安裝目錄，直接從該處，應用程式而不是安裝和 common language runtime (CLR) 會決定您的應用程式信任層級使用`<deploymentProvider>`。 如果電腦處於離線狀態，或`<deploymentProvider>`無法連線，[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]安裝 CD，與 CLR 授與信任的安裝點為基礎，進行 CD 安裝，這表示您的應用程式收到的完全信任。 所有後續的更新將會繼承該信任層級。  

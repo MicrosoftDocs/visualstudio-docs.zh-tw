@@ -16,18 +16,18 @@ caps.latest.revision: 36
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 9dc94abdfb35bc4537f0ba80f96f393157263e63
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: 924e4414d668f4cb3a12f5d27b915117da0a7119
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59658145"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437221"
 ---
 # <a name="error-list-window"></a>錯誤清單視窗
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 注意]
->  錯誤清單會顯示特定錯誤訊息的相關資訊。 您可以從 [輸出] 視窗複製錯誤碼或錯誤字串文字。 若要顯示 [輸出] 視窗，請按下 Ctrl+Alt+O。 請參閱[輸出視窗](../../ide/reference/output-window.md)。  
+> 錯誤清單會顯示特定錯誤訊息的相關資訊。 您可以從 [輸出] 視窗複製錯誤碼或錯誤字串文字。 若要顯示 [輸出] 視窗，請按下 Ctrl+Alt+O。 請參閱[輸出視窗](../../ide/reference/output-window.md)。  
   
  您可以使用 [錯誤清單] 視窗，更快速地開發應用程式。 例如，您可以進行下列工作：  
   
@@ -50,7 +50,7 @@ ms.locfileid: "59658145"
   若要排序清單，請按一下任何資料行標頭。 若要以另一個資料行來重新排序，請按住 SHIFT 鍵，然後按一下其他的資料行標頭。 若要選取要顯示和隱藏的資料行，請從捷徑功能表中選擇 [顯示行]。 若要變更已顯示的資料行順序，請將任一資料行標頭拖曳到左邊或右邊。  
   
 > [!NOTE]
->  根據您目前使用的設定或版本，您所看到的對話方塊與功能表命令可能會與此處所描述的不同。 如果要變更設定，請按一下 [工具]/[匯入和匯出設定]。 如需詳細資訊，請參閱 [在 Visual Studio 中自訂開發設定](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)  
+> 根據您目前使用的設定或版本，您所看到的對話方塊與功能表命令可能會與此處所描述的不同。 如果要變更設定，請按一下 [工具]/[匯入和匯出設定]。 如需詳細資訊，請參閱 [在 Visual Studio 中自訂開發設定](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)  
   
 ## <a name="error-list-filters"></a>錯誤清單篩選條件  
  在兩個下拉式方塊中有兩種篩選型別，一個位於工具列的右邊，一個位於工具列的左邊。 位於工具列左邊的下拉式清單會指定一組可使用的程式碼檔案 ([整個解決方案]、[開啟的文件]、[目前專案] 和 [目前文件])。  
@@ -62,7 +62,7 @@ ms.locfileid: "59658145"
 2. **目前專案**：顯示 [編輯器] 中目前所選文件專案，或 [方案總管] 中所選專案的錯誤、警告和訊息。  
   
    > [!NOTE]
-   >  如果目前選取的文件專案不同於方案總管中選取的專案，則會變更錯誤、警告和訊息的篩選清單。  
+   > 如果目前選取的文件專案不同於方案總管中選取的專案，則會變更錯誤、警告和訊息的篩選清單。  
   
 3. **目前文件**：顯示 [編輯器] 或 [方案總管] 中目前所選文件的錯誤、警告和訊息。  
   

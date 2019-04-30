@@ -18,12 +18,12 @@ caps.latest.revision: 32
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 85f57d03ac52562c5cbebc27f410570c03e33d3f
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: 7795a5577a385542828a3d7c14670696f630544d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59668167"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63430443"
 ---
 # <a name="troubleshooting-net-framework-targeting-errors"></a>疑難排解 .NET Framework 目標錯誤
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -54,7 +54,7 @@ ms.locfileid: "59668167"
 ```  
   
 > [!NOTE]
->  在關閉並重新開啟專案後，您也應該重建它，以確保能夠正確解析所有參考。  
+> 在關閉並重新開啟專案後，您也應該重建它，以確保能夠正確解析所有參考。  
   
 ## <a name="see-also"></a>另請參閱  
  [如何：.NET Framework 版本為目標](../ide/how-to-target-a-version-of-the-dotnet-framework.md)   

@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: a88bfb7d117f646a74c4242cbf851711e9179196
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: f4922b791ea3ad7ab58c231342e11b5c175d4895
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60057858"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63430350"
 ---
 # <a name="walkthrough-extend-a-sharepoint-project-item-type"></a>逐步解說：擴充 SharePoint 專案項目類型
   您可以使用**Business Data Connectivity 模型**專案項目，在 SharePoint 中建立的商務資料連接 (BDC) 服務的模型。 根據預設，當您建立模型時使用這個專案項目中，模型中的資料不是顯示給使用者。 您也必須在 SharePoint 中，讓使用者可以檢視的資料建立外部清單。
@@ -67,7 +67,7 @@ ms.locfileid: "60057858"
 3. 中**新的專案**對話方塊方塊中，展開**Visual C#** 或**Visual Basic**節點，然後選擇**擴充性**節點。
 
     > [!NOTE]
-    >  **擴充性**節點才會提供您安裝 Visual Studio SDK。 如需詳細資訊，請參閱稍早在本主題中的必要條件 > 一節。
+    > **擴充性**節點才會提供您安裝 Visual Studio SDK。 如需詳細資訊，請參閱稍早在本主題中的必要條件 > 一節。
 
 4. 在頂端的清單**新的專案**對話方塊方塊中，選擇 **.NET Framework 4.5**。
 
@@ -132,7 +132,7 @@ ms.locfileid: "60057858"
 1. 將下列程式碼貼入 ProjectItemExtension 程式碼檔案。
 
     > [!NOTE]
-    >  新增下列程式碼之後，專案會有某些編譯錯誤。 當您在稍後步驟中加入程式碼時，這些錯誤就會消失運作。
+    > 新增下列程式碼之後，專案會有某些編譯錯誤。 當您在稍後步驟中加入程式碼時，這些錯誤就會消失運作。
 
      [!code-csharp[SPExtensibility.ProjectItemExtension.BDCGenerateExternalDataLists#1](../sharepoint/codesnippet/CSharp/generateexternaldatalists/bdcprojectitemextension/projectitemextension.cs#1)]
      [!code-vb[SPExtensibility.ProjectItemExtension.BDCGenerateExternalDataLists#1](../sharepoint/codesnippet/VisualBasic/generateexternaldatalists/bdcprojectitemextension/projectitemextension.vb#1)]
@@ -176,7 +176,7 @@ ms.locfileid: "60057858"
 6. 在 **型別**清單中，選擇**Microsoft.VisualStudio.MefComponent**。
 
     > [!NOTE]
-    >  這個值會對應到`MefComponent`extension.vsixmanifest 檔案中的項目。 這個元素會指定在 VSIX 封裝中的延伸模組組件名稱。 如需詳細資訊，請參閱 < [MEFComponent 項目 （VSX 結構描述）](/previous-versions/visualstudio/visual-studio-2010/dd393736\(v\=vs.100\))。
+    > 這個值會對應到`MefComponent`extension.vsixmanifest 檔案中的項目。 這個元素會指定在 VSIX 封裝中的延伸模組組件名稱。 如需詳細資訊，請參閱 < [MEFComponent 項目 （VSX 結構描述）](/previous-versions/visualstudio/visual-studio-2010/dd393736\(v\=vs.100\))。
 
 7. 在 **來源**清單中，選擇**目前方案中的專案**。
 

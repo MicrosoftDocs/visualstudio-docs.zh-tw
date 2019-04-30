@@ -10,12 +10,12 @@ ms.assetid: 937a0b19-1216-45d5-a7ad-4fe1d6f73097
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: af08f5c2b487505b1c0800db852760c2f139dae0
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 03b68c0fbaf92ff2c768c36ccdbea1988c99a973
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58939775"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63430120"
 ---
 # <a name="using-text-markers-with-the-legacy-api"></a>使用舊版 API 中的文字標記
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,7 +25,7 @@ ms.locfileid: "58939775"
  由於文字標記相關聯的效能額外負荷的情況下，不會建立許多標記文字緩衝區。 每次使用者編輯緩衝區的內容時，就會更新每個標記。  
   
 > [!NOTE]
->  使用者可以變更顯示的標記類型，但其圖案與樣式不使用的色彩。 如需詳細資訊，請參閱 <<c0> [ 字型和色彩、 環境、 選項對話方塊](../ide/reference/fonts-and-colors-environment-options-dialog-box.md)。  
+> 使用者可以變更顯示的標記類型，但其圖案與樣式不使用的色彩。 如需詳細資訊，請參閱 <<c0> [ 字型和色彩、 環境、 選項對話方塊](../ide/reference/fonts-and-colors-environment-options-dialog-box.md)。  
   
 ## <a name="related-topics"></a>相關主題  
   

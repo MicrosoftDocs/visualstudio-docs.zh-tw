@@ -19,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 89c4a4598b92096d968225f7420d46244aeca3dc
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 3a2354df7027f3aa73f13e830b9a85895e54c920
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60082902"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63419289"
 ---
 # <a name="how-to-programmatically-store-and-retrieve-date-values-in-excel-ranges"></a>HOW TO：以程式設計方式儲存和擷取日期值在 Excel 範圍中
   您可以儲存和擷取中的值<xref:Microsoft.Office.Tools.Excel.NamedRange>控制項或原生的 Excel 範圍物件。
@@ -34,7 +34,7 @@ ms.locfileid: "60082902"
  如果您儲存日期值落在或之後的 1/1/1900 在範圍內使用 Visual Studio 中 Office 開發工具時，它會儲存在 OLE Automation (OA) 格式。 您必須使用<xref:System.DateTime.FromOADate%2A>方法來擷取的 OLE Automation (OA) 日期值。 如果日期為 1900 年 1 月 1 日之前，會將它儲存為字串。
 
 > [!NOTE]
->  Excel 日期不同 1900年的前兩個月的 OLE Automation 日期。 也有差異如果**1904年日期系統**核取選項。 下列程式碼範例不會說明這些差異。
+> Excel 日期不同 1900年的前兩個月的 OLE Automation 日期。 也有差異如果**1904年日期系統**核取選項。 下列程式碼範例不會說明這些差異。
 
 ## <a name="use-a-namedrange-control"></a>使用 NamedRange 控制項
 

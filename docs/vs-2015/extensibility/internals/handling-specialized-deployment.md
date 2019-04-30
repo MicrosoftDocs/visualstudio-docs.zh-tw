@@ -11,12 +11,12 @@ ms.assetid: de068b6a-e806-45f0-9dec-2458fbb486f7
 caps.latest.revision: 33
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 3c69c7732079b5cb85932d6d71cd797166b744d4
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: bfd5d4d1a5a94662c2fe3fb9d406cc098014f6e6
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60054803"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436277"
 ---
 # <a name="handling-specialized-deployment"></a>處理特製化的部署
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -291,7 +291,7 @@ ms.locfileid: "60054803"
     ```  
   
 > [!NOTE]
->  本主題所提供的所有程式碼範例是較大的範例中，部分[VSSDK 範例](../../misc/vssdk-samples.md)。  
+> 本主題所提供的所有程式碼範例是較大的範例中，部分[VSSDK 範例](../../misc/vssdk-samples.md)。  
   
 ## <a name="see-also"></a>另請參閱  
  [專案子類型](../../extensibility/internals/project-subtypes.md)

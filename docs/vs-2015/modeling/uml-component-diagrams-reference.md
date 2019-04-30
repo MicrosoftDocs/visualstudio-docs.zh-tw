@@ -19,12 +19,12 @@ caps.latest.revision: 38
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 91300aea88c86d0791db5bd73b91c3b5069ad607
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: 581906741bb43eb221c6a0b6f6bb9aeccd2f3945
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59656982"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63424388"
 ---
 # <a name="uml-component-diagrams-reference"></a>UML 元件圖：參考資料
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,7 +38,7 @@ ms.locfileid: "59656982"
  如需如何使用在設計流程中的元件圖的詳細資訊，請參閱[您的應用程式架構模型](../modeling/model-your-app-s-architecture.md)。  
 
 > [!NOTE]
->  本主題描述元件圖中可以使用的項目。 如需詳細資訊如何繪製元件圖的詳細資訊，請參閱[UML 元件圖：指導方針](../modeling/uml-component-diagrams-guidelines.md)。 如需如何在一般情況下繪製模型圖表的詳細資訊，請參閱[編輯 UML 模型和圖表](../modeling/edit-uml-models-and-diagrams.md)。  
+> 本主題描述元件圖中可以使用的項目。 如需詳細資訊如何繪製元件圖的詳細資訊，請參閱[UML 元件圖：指導方針](../modeling/uml-component-diagrams-guidelines.md)。 如需如何在一般情況下繪製模型圖表的詳細資訊，請參閱[編輯 UML 模型和圖表](../modeling/edit-uml-models-and-diagrams.md)。  
 
 ## <a name="reading-component-diagrams"></a>讀取元件圖  
  下表描述可在元件圖上使用的項目，以及其主要屬性。 元素的屬性完整清單，請參閱 < [UML 元件圖上項目的屬性](../modeling/properties-of-elements-on-uml-component-diagrams.md)。  

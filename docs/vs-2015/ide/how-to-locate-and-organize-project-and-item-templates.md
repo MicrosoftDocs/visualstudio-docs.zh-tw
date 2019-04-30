@@ -16,12 +16,12 @@ caps.latest.revision: 28
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 1f4788ab9fa23049ded8107fe1d33a9419b79c00
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 4b14a374214a605ec718ad60c6942752f3134edd
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60091235"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63416727"
 ---
 # <a name="how-to-locate-and-organize-project-and-item-templates"></a>HOW TO：尋找並組織專案與項目範本
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -59,7 +59,7 @@ ms.locfileid: "60091235"
  [新增專案] 和 [新增項目] 對話方塊中的類別反映存在於已安裝和自訂範本位置的目錄結構。 您可以修改這些目錄結構，以對您有意義的方式組織範本。  
   
 > [!NOTE]
->  您無法在程式設計語言層級建立新的類別。 只能在每一種語言內建立新的類別。  
+> 您無法在程式設計語言層級建立新的類別。 只能在每一種語言內建立新的類別。  
   
  如果特定語言的已安裝和自訂範本的目錄結構沒有相同的結構 (也就是某個資料夾下有不存在於其他資料夾下的目錄)，則出現在 [新增專案] 對話方塊的類別集將合併所有類別。  
   

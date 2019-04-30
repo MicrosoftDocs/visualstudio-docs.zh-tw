@@ -9,12 +9,12 @@ helpviewer_keywords:
 ms.assetid: 10bb4f69-b259-41f0-b91a-69b04385d9a5
 caps.latest.revision: 31
 manager: jillfra
-ms.openlocfilehash: a14fcb8e81261962e8851347a54d7c8d52565d20
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 116f76324a2150413c0ae6d08bc99e114efcc50e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60110436"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436505"
 ---
 # <a name="walkthrough-displaying-smarttags"></a>逐步解說：顯示智慧標籤
 智慧標籤已取代為燈泡。 請參閱[逐步解說：Displaying Light Bulb Suggestions](../extensibility/walkthrough-displaying-light-bulb-suggestions.md)。  
@@ -24,7 +24,7 @@ ms.locfileid: "60110436"
  雖然智慧標籤是編輯器中 IntelliSense 實作的一部分，但是您可以透過子類別化 <xref:Microsoft.VisualStudio.Language.Intellisense.SmartTag>，然後實作 <xref:Microsoft.VisualStudio.Text.Tagging.ITagger%601> 介面和 <xref:Microsoft.VisualStudio.Text.Tagging.IViewTaggerProvider> 介面，來實作智慧標籤。  
   
 > [!NOTE]
->  其他類型的標籤可以透過類似的方式實作。  
+> 其他類型的標籤可以透過類似的方式實作。  
   
  下列逐步解說示範如何建立智慧標籤會出現在目前的文字，有兩個建議的動作：**轉換為大寫**並**轉換為小寫**。  
   

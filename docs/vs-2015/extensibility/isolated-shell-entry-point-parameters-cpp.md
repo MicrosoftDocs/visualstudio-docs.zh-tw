@@ -11,12 +11,12 @@ ms.assetid: 18f4b18b-2173-4afa-ba0a-42fe33e61118
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 6089c4ef32ef0d0b0bce081cef6d16bd569c0901
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 9e736343212c4bf6acd833f5740b996c6c032c3f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60041945"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63439812"
 ---
 # <a name="isolated-shell-entry-point-parameters-c"></a>獨立模式 Shell 進入點參數 (C++)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -75,7 +75,7 @@ typedef int (__cdecl *STARTFCN)(LPSTR, LPWSTR, int, GUID *, WCHAR *pszSettings);
  若要覆寫一個或多個設定，請傳遞 Unicode 字串，包含要覆寫的設定。 字串是名稱 / 值組的分號分隔清單。 每一組包含要覆寫設定的名稱，後面接著等號 （=），後面接著要套用設定的值。  
   
 > [!NOTE]
->  Unicode 字串中不包含空白字元。  
+> Unicode 字串中不包含空白字元。  
   
  如需布林值的設定，下列字串代表 true 值;所有其他字串代表 false 值。 這些字串是不區分大小寫。  
   

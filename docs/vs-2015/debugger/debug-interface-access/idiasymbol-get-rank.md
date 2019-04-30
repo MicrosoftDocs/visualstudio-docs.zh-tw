@@ -13,12 +13,12 @@ caps.latest.revision: 11
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 5574f0c2a5e6b5d1b75a85e74faceb18e99216e8
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: cf7c39213ae2eb233509d720b7e7c2eab0a17560
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58940122"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432189"
 ---
 # <a name="idiasymbolgetrank"></a>IDiaSymbol::get_rank
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -41,10 +41,10 @@ HRESULT get_rank ( 
  如果成功，則傳回`S_OK`; 否則傳回`S_FALSE`或錯誤碼。  
   
 > [!NOTE]
->  傳回值為`S_FALSE`表示此屬性不適用於符號。  
+> 傳回值為`S_FALSE`表示此屬性不適用於符號。  
   
 ## <a name="remarks"></a>備註  
- 陣序規範是指的陣列會宣告為陣列中的維度數目`myarray[1,2,3]`。 此範例中有 3 和 3 個維度的順位。 陣序規範不適用於 c + + 會使用每個維度的陣列的陣列的概念 (亦即`myarray[1][2][3]`)。  
+ 陣序規範是指的陣列會宣告為陣列中的維度數目`myarray[1,2,3]`。 此範例中有 3 和 3 個維度的順位。 陣序規範不適用於C++使用每個維度的陣列的陣列概念 (亦即`myarray[1][2][3]`)。  
   
 ## <a name="see-also"></a>另請參閱  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

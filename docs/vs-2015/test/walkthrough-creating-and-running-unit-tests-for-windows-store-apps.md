@@ -13,12 +13,12 @@ ms.assetid: dd3e8a6a-b366-433e-a409-b9a9b89da89a
 caps.latest.revision: 23
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a9874379586dd077f857a58800010391da36d19f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 7ff078649703eef438ff7f4b14a51e7f7d155231
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60069846"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63428204"
 ---
 # <a name="walkthrough-creating-and-running-unit-tests-for-windows-store-apps"></a>逐步解說：建立和執行單元測試 Windows 市集應用程式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,7 +26,7 @@ ms.locfileid: "60069846"
 Visual Studio 包含 Managed [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] 應用程式的單元測試支援，並包含 Visual C#、Visual Basic 和 Visual C++ 的單元測試程式庫範本。  
   
 > [!TIP]
->  如需開發 [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] 應用程式的詳細資訊，請參閱 [Windows 市集應用程式入門](http://go.microsoft.com/fwlink/?LinkID=241410)。  
+> 如需開發 [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] 應用程式的詳細資訊，請參閱 [Windows 市集應用程式入門](http://go.microsoft.com/fwlink/?LinkID=241410)。  
   
  Visual Studio 提供下列單元測試功能：  
   
@@ -54,7 +54,7 @@ Visual Studio 包含 Managed [!INCLUDE[win8_appname_long](../includes/win8-appna
 2. 在 [範本] 下，選擇您要用來建立單元測試的程式設計語言，然後選擇相關聯的 [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] 單元測試程式庫。 例如，依序選擇 [ **Visual C#** ]、[ **Windows 市集**] 和 [ **單元測試程式庫 (Windows 市集應用程式)**]。  
   
     > [!NOTE]
-    >  Visual Studio 包含 Visual C#、Visual Basic 和 Visual C++ 的單元測試程式庫範本。  
+    > Visual Studio 包含 Visual C#、Visual Basic 和 Visual C++ 的單元測試程式庫範本。  
   
 3. (選擇性) 在 [ **名稱** ] 文字方塊中，輸入 [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)]單元測試專案要使用的名稱。  
   
@@ -84,7 +84,7 @@ Visual Studio 包含 Managed [!INCLUDE[win8_appname_long](../includes/win8-appna
 3. 在 [ **功能**] 底下的清單中，選取您要讓單元測試及其所測試之程式碼具有的功能。 例如，如果單元測試需要且測試中的程式碼必須有存取網際網路的能力時，則選擇 [ **網際網路** ] 核取方塊。  
   
     > [!NOTE]
-    >  您選取的功能應該只包含讓 [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] 單元測試正常運作的功能。 這些功能沒有必要包含不屬於要測試之 [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)]應用程式的功能，並且通常應該是指定給受測 [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)]應用程式的其中一組功能。  
+    > 您選取的功能應該只包含讓 [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] 單元測試正常運作的功能。 這些功能沒有必要包含不屬於要測試之 [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)]應用程式的功能，並且通常應該是指定給受測 [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)]應用程式的其中一組功能。  
   
      如需有關資訊清單設計工具的詳細資訊，請參閱[使用資訊清單設計工具設定 Windows 8.1 應用程式套件](http://msdn.microsoft.com/library/24c58b7f-9c6d-41c3-b385-c1e8497d5b2d)。  
   
@@ -111,22 +111,22 @@ Visual Studio 包含 Managed [!INCLUDE[win8_appname_long](../includes/win8-appna
      現在列出了您的單元測試。  
   
     > [!NOTE]
-    >  您必須建置方案以更新 [測試總管] 中的單元測試清單。  
+    > 您必須建置方案以更新 [測試總管] 中的單元測試清單。  
   
     > [!WARNING]
-    >  Visual Studio 的已知問題：您必須在建置測試專案之前開啟測試總管 中。  
+    > Visual Studio 的已知問題：您必須在建置測試專案之前開啟測試總管 中。  
   
 3. 在 [測試總管] 中，選擇您建立的單元測試。  
   
     > [!TIP]
-    >  [測試總管] 會在 [ **來源:**] 旁邊提供原始程式碼的連結。  
+    > [測試總管] 會在 [ **來源:**] 旁邊提供原始程式碼的連結。  
   
 4. 選擇 [ **全部執行**]。  
   
      ![單元測試總管 &#45; 執行單元測試](../test/media/unit-test-win8-unittestexplorer-contextmenurun.png "Unit_Test_Win8_UnitTestExplorer_ContextMenuRun")  
   
     > [!TIP]
-    >  您可以選取 [測試總管] 中列出的一個或多個單元測試，然後以滑鼠右鍵按一下並選擇 [ **執行選取的測試**]。  
+    > 您可以選取 [測試總管] 中列出的一個或多個單元測試，然後以滑鼠右鍵按一下並選擇 [ **執行選取的測試**]。  
     >   
     >  此外，您可以選擇 [ **偵錯選取的測試**]、[ **開啟測試**]，並使用 [ **屬性** ] 選項。  
     >   

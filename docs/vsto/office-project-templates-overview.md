@@ -30,12 +30,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 49cb0af47f34abbda5bd212d8ce535e98c44d6b5
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 4e998b2367929f788ace5fb6a8de7fc5bb96c3e3
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60054569"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438779"
 ---
 # <a name="office-project-templates-overview"></a>Office 專案範本概觀
   Visual Studio 中的 Microsoft Office 開發人員工具包含專案範本，用來建立下列類型的 Office 方案：
@@ -77,7 +77,7 @@ ms.locfileid: "60054569"
   [Word 範本] 和 [Excel 範本] 專案範本的運作方式與 [Word 文件] 和 [Excel 活頁簿] 專案範本完全相同。 不過，[Word 範本] 和 [Excel 範本] 專案範本可讓使用者以您方案中的自訂範本，輕鬆地建立新的本機文件或活頁簿複本。 使用者透過範本建立的新文件會具有您方案中的功能。
 
 > [!NOTE]
->  參考 Managed 程式碼擴充的 Word 範本不能當做全域 VSTO 增益集。如果是從 Word 的 Startup 目錄載入該範本，則不會呼叫該組件。 如需詳細資訊，請參閱[全域範本和 Excel 增益集 （.xla 檔案） 的限制](#Limitations)
+> 參考 Managed 程式碼擴充的 Word 範本不能當做全域 VSTO 增益集。如果是從 Word 的 Startup 目錄載入該範本，則不會呼叫該組件。 如需詳細資訊，請參閱[全域範本和 Excel 增益集 （.xla 檔案） 的限制](#Limitations)
 
  如需開始使用這些專案類型的詳細資訊，請參閱下列主題：
 

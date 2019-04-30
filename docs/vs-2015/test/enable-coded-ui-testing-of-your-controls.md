@@ -8,12 +8,12 @@ ms.assetid: 5ef1188f-89dc-413d-801d-0efdaf9b0427
 caps.latest.revision: 24
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 332926de13053339c4e98f2d533d9e39213be4d5
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 9d6162f26bbfcf3f3bce8f2a3db649fbf1b63a52
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60040286"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63416513"
 ---
 # <a name="enable-coded-ui-testing-of-your-controls"></a>啟用控制項的自動程式化 UI 測試功能
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -78,7 +78,7 @@ ms.locfileid: "60040286"
 4. 針對子控制項的協助工具物件，覆寫 <xref:System.Windows.Forms.AccessibleObject.Bounds%2A>、<xref:System.Windows.Forms.AccessibleObject.Name%2A>、<xref:System.Windows.Forms.AccessibleObject.Parent%2A>、<xref:System.Windows.Forms.AccessibleObject.Role%2A>、<xref:System.Windows.Forms.AccessibleObject.State%2A>、<xref:System.Windows.Forms.AccessibleObject.Navigate%2A> 和 <xref:System.Windows.Forms.AccessibleObject.Select%2A> 屬性和方法。  
   
 > [!NOTE]
->  本主題一開始在此程序的 <xref:System.Windows.Forms.AccessibleObject> 中提供協助工具範例，然後在其餘程序中，以其做為建置基礎。 如果您想要建立協助工具範例的有效版本，請建立主控台應用程式，然後將 Program.cs 中的程式碼取代成該範例程式碼。 您必須將參考加入協助工具、System.Drawing 和 System.Windows.Forms。 您應將協助工具的 [內嵌 Interop 類型] 變更為 **False**，以消除建置警告。 您可以將專案的輸出類型從 [主控台應用程式] 變更為 [Windows 應用程式]，如此當您執行應用程式時，才不會出現主控台視窗。  
+> 本主題一開始在此程序的 <xref:System.Windows.Forms.AccessibleObject> 中提供協助工具範例，然後在其餘程序中，以其做為建置基礎。 如果您想要建立協助工具範例的有效版本，請建立主控台應用程式，然後將 Program.cs 中的程式碼取代成該範例程式碼。 您必須將參考加入協助工具、System.Drawing 和 System.Windows.Forms。 您應將協助工具的 [內嵌 Interop 類型] 變更為 **False**，以消除建置警告。 您可以將專案的輸出類型從 [主控台應用程式] 變更為 [Windows 應用程式]，如此當您執行應用程式時，才不會出現主控台視窗。  
   
 ## <a name="customproprties"></a> 藉由實作屬性提供者，支援自訂屬性驗證  
  為記錄和播放以及屬性驗證實作基本支援之後，就可以藉由實作 <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestPropertyProvider> 外掛程式，讓自動程式碼 UI 測試能夠使用控制項的自訂屬性。 例如，下列程序所建立的屬性提供者，能夠讓自動程式化 UI 測試存取圖表控制項的 CurveLegend 子控制項的狀態屬性。  
@@ -324,7 +324,7 @@ ms.locfileid: "60040286"
 11. 建置您的二進位檔，並將其複製到 **%ProgramFiles%\Common\Microsoft Shared\VSTT\10.0\UITestExtensionPackages**。  
   
 > [!NOTE]
->  這個擴充套件將會套用至 "Text" 類型的任何控制項。 如果您要測試多個相同類型的控制項，您必須個別進行測試，並管理當您錄製測試時所要部署的擴充套件。  
+> 這個擴充套件將會套用至 "Text" 類型的任何控制項。 如果您要測試多個相同類型的控制項，您必須個別進行測試，並管理當您錄製測試時所要部署的擴充套件。  
   
 ## <a name="codegeneration"></a> 藉由實作類別來存取自訂屬性，支援程式碼產生  
  當自動程式碼 UI 測試產生器從工作階段錄製作業產生程式碼時，它會使用 <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl> 類別來存取您的控制項。  
@@ -512,7 +512,7 @@ Assert.AreEqual(this.AssertMethod3ExpectedValues.UIATextState, uIAText.State);
 4. 建置您的二進位檔，並將其複製到 %ProgramFiles%\Common Files\Microsoft Shared\VSTT\10.0\UITestExtensionPackages。  
   
 > [!NOTE]
->  動作篩選與協助工具實作或屬性提供者沒有相依關係。  
+> 動作篩選與協助工具實作或屬性提供者沒有相依關係。  
   
 ## <a name="debug-your-property-provider-or-action-filter"></a>偵錯屬性提供者或動作篩選  
  內容提供者和動作篩選會在一個擴充套件中實作，自動程式碼 UI 測試產生器會在不同於您的應用程式的個別處理序中，載入及執行此擴充套件。  

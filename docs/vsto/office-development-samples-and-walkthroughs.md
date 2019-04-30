@@ -20,12 +20,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 1306629a33b668104c3159c1ed2d5840cc4a3801
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 5ba918ef2d2bdbc35f7e46b6b8553037d3e5d281
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56623641"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63447112"
 ---
 # <a name="office-development-samples-and-walkthroughs"></a>Office 程式開發範例和逐步解說
   本章節包含範例應用程式、 程式碼範例和逐步解說，說明語法、 結構和用來建置 Microsoft Office 方案的技術。
@@ -35,7 +35,7 @@ ms.locfileid: "56623641"
  如需保護應用程式的資訊，請參閱[保護的 Office 方案](../vsto/securing-office-solutions.md)。
 
 > [!NOTE]
->  想要開發解決方案，擴充的 Office 體驗，跨[多個平台](https://dev.office.com/add-in-availability)嗎？ 查看新[Office 增益集模型](https://dev.office.com/docs/add-ins/overview/office-add-ins)。 Office 增益集較小的使用量，相較於 VSTO 增益集和解決方案，而且您可以使用幾乎任何 web 程式設計技術，例如 HTML5、 JavaScript、 CSS3、 以及 XML 來建置。
+> 想要開發解決方案，擴充的 Office 體驗，跨[多個平台](https://dev.office.com/add-in-availability)嗎？ 查看新[Office 增益集模型](https://dev.office.com/docs/add-ins/overview/office-add-ins)。 Office 增益集較小的使用量，相較於 VSTO 增益集和解決方案，而且您可以使用幾乎任何 web 程式設計技術，例如 HTML5、 JavaScript、 CSS3、 以及 XML 來建置。
 
 ## <a name="in-this-section"></a>本節內容
 

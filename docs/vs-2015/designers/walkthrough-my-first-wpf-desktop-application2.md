@@ -9,12 +9,12 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 74ae6a4510efc63a633e627fdd0b165aa547b2be
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: bee99bc546eca3787db1f9cd082359afb6881d10
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60041990"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63421160"
 ---
 # <a name="walkthrough-my-first-wpf-desktop-application"></a>逐步解說：我第一個 WPF 桌面應用程式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,7 +47,7 @@ name ="簡介"></a>本逐步解說提供 Windows Presentation Foundation (WPF) �
      請注意，當您將 `<Window` 標記變更成 `<NavigationWindow`時，Intellisense 也會自動將結尾標記變更成 `</NavigationWindow>` 。  
   
     > [!NOTE]
-    >  變更標記之後，如果 [錯誤清單]  視窗開啟，您可能會注意到數個錯誤。 別擔心，您在後面幾個步驟所做的變更會讓它們消失不見。  
+    > 變更標記之後，如果 [錯誤清單]  視窗開啟，您可能會注意到數個錯誤。 別擔心，您在後面幾個步驟所做的變更會讓它們消失不見。  
   
 3. 選擇並刪除 `<Grid>` 和 `</Grid>` 標記。  
   
@@ -307,14 +307,14 @@ name ="簡介"></a>本逐步解說提供 Windows Presentation Foundation (WPF) �
      ![逐步解說的浮水印影像](../designers/media/wpf-watermark.png "WPF_watermark")  
   
     > [!NOTE]
-    >  或者，您可以建立自己的影像並儲存為 `watermark.png`。  
+    > 或者，您可以建立自己的影像並儲存為 `watermark.png`。  
   
 2. 在 **方案總管**中，開啟 **ExpenseIt** 節點的捷徑功能表，然後依序選擇 [加入] 和 [現有項目] 。  
   
 3. 在 [加入現有項目]  對話方塊中，找到剛剛加入的 **watermark.png** 影像，選擇它後再選擇 [加入]  按鈕。  
   
     > [!NOTE]
-    >  您可能需要展開 [檔案類型]  清單並選擇 [影像檔] 。  
+    > 您可能需要展開 [檔案類型]  清單並選擇 [影像檔] 。  
   
 4. 開啟 **ExpenseItHome.xaml** 檔案，並在 `</Grid>` 標記的正上方加入下列 XAML 程式碼，建立背景影像：  
   

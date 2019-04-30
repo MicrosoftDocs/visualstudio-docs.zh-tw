@@ -13,12 +13,12 @@ caps.latest.revision: 20
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: d5b7e8dbe12f9c57c101c8f877dfcb0c6ee3196f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 3a37350cf274fbb551326ac96387330b0f3956e7
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60064689"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63439691"
 ---
 # <a name="walkthrough-command-line-profiling-using-instrumentation"></a>逐步解說：命令列使用檢測進行分析
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,7 +49,7 @@ ms.locfileid: "60064689"
  「檢測」是一種剖析方法，會將剖析的二進位檔案建置成特別版本，使它包含探查函數，以在檢測模組中收集函數進入和離開的時間資訊。 因為這個剖析方法比取樣更具侵入性，所以會帶來更多的額外負荷。 已檢測之二進位檔的大小也會比偵錯或發行的二進位檔來得大，所以並不適合用來部署。  
   
 > [!NOTE]
->  請不要傳送已檢測的二進位檔給客戶。 已檢測的二進位檔可能包含一些風險， 因為除了有安全性風險外，這類二進位檔所包含的資訊會讓您的應用程式比較容易進行反向工程。  
+> 請不要傳送已檢測的二進位檔給客戶。 已檢測的二進位檔可能包含一些風險， 因為除了有安全性風險外，這類二進位檔所包含的資訊會讓您的應用程式比較容易進行反向工程。  
   
 #### <a name="to-profile-the-peopletrax-application-by-using-the-instrumentation-method"></a>使用檢測方法剖析 PeopleTrax 應用程式  
   

@@ -11,12 +11,12 @@ ms.assetid: d20b8d6a-f0e0-4115-b3a3-edda893ae678
 caps.latest.revision: 18
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 5100fb42cba7c993861ef5b9fa0682400b0cfa4a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 427ef425c64323246ffe1141d081fd7d921506a6
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58944480"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63435243"
 ---
 # <a name="how-to-implement-nested-projects"></a>HOW TO：實作巢狀專案
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -28,7 +28,7 @@ ms.locfileid: "58944480"
 1. 整合式的開發環境 (IDE) 載入父專案的專案檔案和啟動資訊，藉由呼叫<xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFactory>介面。 父專案建立並加入至方案。  
   
    > [!NOTE]
-   >  到目前為止，則還太早父專案來建立巢狀的專案，因為必須先建立父專案，可以建立子專案的程序。 依照這個順序中，父專案可以將設定套用至子專案，並視子專案能夠取得父專案中的資訊。 此序列是需要在原始程式碼控制 (SCC) 等方案總管 中的用戶端。  
+   > 到目前為止，則還太早父專案來建立巢狀的專案，因為必須先建立父專案，可以建立子專案的程序。 依照這個順序中，父專案可以將設定套用至子專案，並視子專案能夠取得父專案中的資訊。 此序列是需要在原始程式碼控制 (SCC) 等方案總管 中的用戶端。  
   
     父專案必須等候<xref:Microsoft.VisualStudio.Shell.Interop.IVsParentProject.OpenChildren%2A>專案，它可以建立巢狀 （子） 之前，IDE 所要呼叫的方法。  
   
@@ -57,7 +57,7 @@ ms.locfileid: "58944480"
     如果已經存在，則父專案會建立每個巢狀專案的 GUID 藉由呼叫`CoCreateGuid`。  
   
    > [!NOTE]
-   >  `CoCreateGuid` COM API 呼叫時要建立的 GUID。 如需詳細資訊，請參閱`CoCreateGuid`和 MSDN Library 中的 Guid。  
+   > `CoCreateGuid` COM API 呼叫時要建立的 GUID。 如需詳細資訊，請參閱`CoCreateGuid`和 MSDN Library 中的 Guid。  
   
     父專案會儲存此 GUID 要擷取下一次，它會在 IDE 中開啟其專案檔中。 請參閱步驟 4 與呼叫相關的詳細資訊`AddVirtualProjectEX`擷取`guidProjectID`子專案。  
   
@@ -66,7 +66,7 @@ ms.locfileid: "58944480"
      因為父和子專案具現化以程式設計的方式，您可以在此時設定巢狀專案的屬性。  
   
     > [!NOTE]
-    >  不只執行您會看到從巢狀專案中，執行的內容資訊，但您也可以要求父專案是否已藉由檢查該項目的任何內容<xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID>。 如此一來，您可以加入額外的動態說明屬性及功能表選項，指定個別的巢狀專案。  
+    > 不只執行您會看到從巢狀專案中，執行的內容資訊，但您也可以要求父專案是否已藉由檢查該項目的任何內容<xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID>。 如此一來，您可以加入額外的動態說明屬性及功能表選項，指定個別的巢狀專案。  
   
 10. 階層是顯示在 [方案總管] 藉由呼叫<xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.GetNestedHierarchy%2A>方法。  
   

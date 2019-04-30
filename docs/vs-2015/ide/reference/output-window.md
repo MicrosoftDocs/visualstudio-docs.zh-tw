@@ -17,12 +17,12 @@ caps.latest.revision: 35
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 9b373551444087ad8ff3789d927267a30efd5e4d
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: 335058a6521f10313c94cbfbdd9657348cc90963
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59668908"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438069"
 ---
 # <a name="output-window"></a>輸出視窗
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ ms.locfileid: "59668908"
 [輸出] 視窗可以顯示整合式開發環境 (IDE) 中各種功能的狀態訊息。 若要開啟 [輸出] 視窗，請在功能表列上選擇 [檢視/輸出]\(或按一下 CTRL+ALT+O)。  
   
 > [!WARNING]
->  在 Visual Studio Express 版本的 [檢視] 功能表上不會出現 [輸出] 視窗。 若要顯示它，請使用快速鍵 CTRL+ALT+O。  
+> 在 Visual Studio Express 版本的 [檢視] 功能表上不會出現 [輸出] 視窗。 若要顯示它，請使用快速鍵 CTRL+ALT+O。  
   
 ## <a name="toolbar"></a>工具列  
  **顯示來自以下位置的輸出**  

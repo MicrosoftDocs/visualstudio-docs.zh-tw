@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: d4dec78b368991da18c5bc0f5a673c1dca91fbfc
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 34808d70a7df1bf5d030e4205de34ff3ec4d03b2
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60059990"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63430396"
 ---
 # <a name="walkthrough-create-a-site-column-project-item-with-a-project-template-part-1"></a>逐步解說：使用專案範本，第 1 部分建立網站資料行專案項目
   SharePoint 專案的一或多個 SharePoint 專案項目的容器。 您可以擴充 SharePoint 專案系統，在 Visual Studio 中的建立您自己的 SharePoint 專案項目類型，然後再將它們關聯的專案範本。 在本逐步解說中，您將建立網站資料行定義的專案項目類型，然後會建立專案範本，可用來建立新的專案，其中包含網站資料行專案項目。
@@ -75,7 +75,7 @@ ms.locfileid: "60059990"
 4. 依序展開**Visual Basic**或是**Visual C#** 節點，然後選擇 **擴充性**節點。
 
     > [!NOTE]
-    >  **擴充性**節點才會提供您安裝 Visual Studio SDK。 如需詳細資訊，請參閱稍早在本主題中的必要條件 > 一節。
+    > **擴充性**節點才會提供您安裝 Visual Studio SDK。 如需詳細資訊，請參閱稍早在本主題中的必要條件 > 一節。
 
 5. 在專案範本清單中，選擇**VSIX 專案**。
 
@@ -162,7 +162,7 @@ ms.locfileid: "60059990"
 2. 建立名為 SharePoint 2010 專案**BaseSharePointProject**。
 
    > [!IMPORTANT]
-   >  在  **SharePoint 自訂精靈**，請勿選取**部署為伺服陣列方案**選項按鈕。
+   > 在  **SharePoint 自訂精靈**，請勿選取**部署為伺服陣列方案**選項按鈕。
 
 3. 空白項目項目加入專案，並將然後命名的項目**Field1**。
 
@@ -175,7 +175,7 @@ ms.locfileid: "60059990"
 7. 在包含 BaseSharePointProject 專案目錄中，選取 key.snk 檔案，然後再選擇**新增** 按鈕。
 
    > [!NOTE]
-   >  在本逐步解說中，您所建立的專案範本會使用相同的 key.snk 檔案簽署使用範本建立的每個專案。 若要了解如何擴充這個範例，以建立不同的 key.snk 檔案以進行每個專案執行個體，請參閱[逐步解說：使用專案範本，第 2 部分建立網站資料行專案項目](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-2.md)。
+   > 在本逐步解說中，您所建立的專案範本會使用相同的 key.snk 檔案簽署使用範本建立的每個專案。 若要了解如何擴充這個範例，以建立不同的 key.snk 檔案以進行每個專案執行個體，請參閱[逐步解說：使用專案範本，第 2 部分建立網站資料行專案項目](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-2.md)。
 
 8. 重複步驟 5-8，從指定的子資料夾，BaseSharePointProject 目錄中加入下列檔案：
 
@@ -654,7 +654,7 @@ ms.locfileid: "60059990"
 6. 在 **型別**清單中，選擇**Microsoft.VisualStudio.ProjectTemplate**。
 
     > [!NOTE]
-    >  這個值會對應到`ProjectTemplate`extension.vsixmanifest 檔案中的項目。 此項目可識別包含專案範本的 VSIX 套件中的子資料夾。 如需詳細資訊，請參閱 < [ProjectTemplate 項目 （VSX 結構描述）](/previous-versions/visualstudio/visual-studio-2010/dd393735\(v\=vs.100\))。
+    > 這個值會對應到`ProjectTemplate`extension.vsixmanifest 檔案中的項目。 此項目可識別包含專案範本的 VSIX 套件中的子資料夾。 如需詳細資訊，請參閱 < [ProjectTemplate 項目 （VSX 結構描述）](/previous-versions/visualstudio/visual-studio-2010/dd393735\(v\=vs.100\))。
 
 7. 在 **來源**清單中，選擇**目前方案中的專案**。
 
@@ -667,7 +667,7 @@ ms.locfileid: "60059990"
 10. 在 **型別**清單中，選擇**Microsoft.VisualStudio.MefComponent**。
 
     > [!NOTE]
-    >  這個值會對應到`MefComponent`extension.vsixmanifest 檔案中的項目。 這個元素會指定在 VSIX 封裝中的延伸模組組件名稱。 如需詳細資訊，請參閱 < [MEFComponent 項目 （VSX 結構描述）](/previous-versions/visualstudio/visual-studio-2010/dd393736\(v\=vs.100\))。
+    > 這個值會對應到`MefComponent`extension.vsixmanifest 檔案中的項目。 這個元素會指定在 VSIX 封裝中的延伸模組組件名稱。 如需詳細資訊，請參閱 < [MEFComponent 項目 （VSX 結構描述）](/previous-versions/visualstudio/visual-studio-2010/dd393736\(v\=vs.100\))。
 
 11. 在 **來源**清單中，選擇**目前方案中的專案**。
 
@@ -715,14 +715,14 @@ ms.locfileid: "60059990"
      此步驟中指定您想要用於偵錯在開發電腦上的本機 SharePoint 網站。
 
     > [!NOTE]
-    >  **站台 URL**屬性是空的預設值，因為網站欄專案範本未提供精靈來建立專案時，收集此值。 若要了解如何新增精靈，這個值會要求開發人員，並接著在新的專案中設定這個屬性，請參閱[逐步解說：使用專案範本，第 2 部分建立網站資料行專案項目](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-2.md)。
+    > **站台 URL**屬性是空的預設值，因為網站欄專案範本未提供精靈來建立專案時，收集此值。 若要了解如何新增精靈，這個值會要求開發人員，並接著在新的專案中設定這個屬性，請參閱[逐步解說：使用專案範本，第 2 部分建立網站資料行專案項目](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-2.md)。
 
 3. 選擇 **F5** 鍵。
 
      網站資料行是封裝並部署到 SharePoint 網站中指定**站台 URL**專案屬性。 Web 瀏覽器中開啟此站台的預設頁面。
 
     > [!NOTE]
-    >  如果**指令碼偵錯已停用** 對話方塊出現時，選擇**是**按鈕以繼續進行偵錯專案。
+    > 如果**指令碼偵錯已停用** 對話方塊出現時，選擇**是**按鈕以繼續進行偵錯專案。
 
 4. 在上**站台動作**功能表上，選擇**站台設定**。
 

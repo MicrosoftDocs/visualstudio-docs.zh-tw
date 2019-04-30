@@ -14,12 +14,12 @@ caps.latest.revision: 35
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: a326be363295ed1033d0e91e1675e326a51c9adf
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: a37ededab38cf27a002117f874d17d6a340000d9
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60104313"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63429161"
 ---
 # <a name="how-to-configure-code-analysis-for-a-managed-code-project"></a>HOW TO：設定受控碼專案的程式碼分析
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,7 +27,7 @@ ms.locfileid: "60104313"
 在[!INCLUDE[vsUltLong](../includes/vsultlong-md.md)]，[!INCLUDE[vsPreLong](../includes/vsprelong-md.md)]並[!INCLUDE[vsPro](../includes/vspro-md.md)]，您可以從程式碼分析的清單中選擇*規則集*来套用至 managed 程式碼專案。 預設規則設為 Microsoft 最小建議規則。 您可以套用設定至專案或方案中的所有專案的另一個規則。  
   
 > [!NOTE]
->  如需如何設定 ASP.NET Web 應用程式設定的規則資訊，請參閱[How to:設定 ASP.NET Web 應用程式的程式碼分析](../code-quality/how-to-configure-code-analysis-for-an-aspnet-web-application.md)。  
+> 如需如何設定 ASP.NET Web 應用程式設定的規則資訊，請參閱[How to:設定 ASP.NET Web 應用程式的程式碼分析](../code-quality/how-to-configure-code-analysis-for-an-aspnet-web-application.md)。  
   
 ### <a name="to-configure-a-rule-set-for-a-net-framework-project"></a>若要設定的規則集的.NET Framework 專案  
   
@@ -42,7 +42,7 @@ ms.locfileid: "60104313"
 5. 根據預設，程式碼分析不會報告從外部工具自動產生的程式碼警告。 若要檢視產生程式碼的警告，請清除**隱藏所產生的程式碼的結果** 核取方塊。  
   
     > [!NOTE]
-    >  這個選項不會在表單和範本中出現錯誤和警告時，抑制來自產生的程式碼的程式碼分析錯誤和警告。 您可以同時檢視及維護表單或範本的原始程式碼。  
+    > 這個選項不會在表單和範本中出現錯誤和警告時，抑制來自產生的程式碼的程式碼分析錯誤和警告。 您可以同時檢視及維護表單或範本的原始程式碼。  
   
 6. 在 **執行此規則集**清單中，執行下列其中之一：  
   

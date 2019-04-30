@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 7c53d7bd1264ff21866746796d598b27cfac5984
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 510d923d2503aeb6e07859813537c9094fe25b09
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60094537"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63419708"
 ---
 # <a name="how-to-cache-data-for-use-offline-or-on-a-server"></a>HOW TO：離線或在伺服器上快取資料以供使用
   您可以將標記資料項目，以快取中的文件，如此就可以使用離線。 這也使得資料可能儲存在伺服器的文件，會由其他程式碼操作文件中。
@@ -32,7 +32,7 @@ ms.locfileid: "60094537"
  您可以將標記或快取您的程式碼中宣告的資料項目時，如果您使用的資料項目<xref:System.Data.DataSet>，設定屬性**屬性**視窗。 如果您要快取不資料項目<xref:System.Data.DataSet>或<xref:System.Data.DataTable>，確保其符合所快取文件中的準則。 如需詳細資訊，請參閱 <<c0> [ 快取資料](../vsto/caching-data.md)。
 
 > [!NOTE]
->  使用標示為 Visual Basic 建立的資料集**快取**並**WithEvents** (包括從拖曳的資料集**Zdroje dat**視窗或**工具箱**具有**CacheInDocument**屬性設定為 **，則為 True**) 已在快取其名稱前面加上底線。 例如，如果您建立資料集並將它命名**客戶**，則<xref:Microsoft.VisualStudio.Tools.Applications.CachedDataItem>名稱會是 **_Customers**快取中。 當您使用<xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument>若要存取此快取的項目，您必須指定 **_Customers**而非**客戶**。
+> 使用標示為 Visual Basic 建立的資料集**快取**並**WithEvents** (包括從拖曳的資料集**Zdroje dat**視窗或**工具箱**具有**CacheInDocument**屬性設定為 **，則為 True**) 已在快取其名稱前面加上底線。 例如，如果您建立資料集並將它命名**客戶**，則<xref:Microsoft.VisualStudio.Tools.Applications.CachedDataItem>名稱會是 **_Customers**快取中。 當您使用<xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument>若要存取此快取的項目，您必須指定 **_Customers**而非**客戶**。
 
 ### <a name="to-cache-data-in-the-document-using-code"></a>使用程式碼文件中的快取資料
 

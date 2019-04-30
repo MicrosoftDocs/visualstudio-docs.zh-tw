@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6fb271a03a8932989d6201329c441a21a226f559
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.openlocfilehash: 2e609f59e0d72628be4233be52738ff244c6acca
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56614281"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63400173"
 ---
 # <a name="idiasymbolgetunmodifiedtype"></a>IDiaSymbol::get_unmodifiedType
 擷取這個符號的原始類型。 使用時機[SymTagEnum 列舉](../../debugger/debug-interface-access/symtagenum.md)設為型別。
@@ -39,17 +39,17 @@ HRESULT get_unmodifiedType( 
  如果成功，則傳回`S_OK`; 否則傳回`S_FALSE`或錯誤碼。
 
 > [!NOTE]
->  傳回值為`S_FALSE`表示此屬性不適用於符號。
+> 傳回值為`S_FALSE`表示此屬性不適用於符號。
 
 ## <a name="remarks"></a>備註
  目前的類型是傳回的原始型別所做的修改。 符號的原始型別可以先取得符號的類型，和接著詢問所傳回的原始類型的類型來判斷。 請注意一些符號可能不會有原始類型的修改的類型。
 
 ## <a name="requirements"></a>需求
- 標頭： Dia2.h
+ 標頭：dia2.h
 
  程式庫： diaguids.lib
 
  DLL: msdia100.dll
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

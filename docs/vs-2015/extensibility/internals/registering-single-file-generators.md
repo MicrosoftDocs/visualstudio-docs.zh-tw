@@ -11,12 +11,12 @@ ms.assetid: db7592c0-1273-4843-9617-6e2ddabb6ca8
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: bf0d5e29138f27956dff52571296395507d44976
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 1ced598c2a670cd79d7daeeac90f6807baf7d1dd
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60055414"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436600"
 ---
 # <a name="registering-single-file-generators"></a>註冊單一檔案產生器
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -53,7 +53,7 @@ ms.locfileid: "60055414"
          必要項。 指出是否從這個自訂的工具所產生的檔案類型都會提供給視覺化設計工具。 此參數的值必須是 （零） 針對至視覺化設計工具無法使用的類型為 0 或 （一） 1 類型可用來視覺化設計工具。  
   
     > [!NOTE]
-    >  您必須註冊自訂的工具，分別為每個您想要自訂的工具，使其可用的語言。  
+    > 您必須註冊自訂的工具，分別為每個您想要自訂的工具，使其可用的語言。  
   
      比方說，MSDataSetGenerator 將本身註冊一次針對每種語言：  
   

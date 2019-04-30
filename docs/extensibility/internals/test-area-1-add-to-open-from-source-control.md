@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 699496825e272fc492bac8ef4fe472019b1935d2
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 2ba64bdcf299f52d0200e1fa66dead11a8824c14
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60083513"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63429979"
 ---
 # <a name="test-area-1-add-toopen-from-source-control"></a>測試區域 1：從原始檔控制新增至 / Open
 此原始檔控制外掛程式測試區域涵蓋如何將方案或專案原始檔控制之下，並擷取從原始檔控制。
@@ -37,7 +37,7 @@ ms.locfileid: "60083513"
 - 針對[!INCLUDE[vsvss](../../extensibility/includes/vsvss_md.md)]，加入從原始檔控制也會提供**檔案**，**新增**，**現有專案**; 查看在[!INCLUDE[vsvss](../../extensibility/includes/vsvss_md.md)]位置。
 
   > [!NOTE]
-  >  這項測試中可用的本機檔案或本機 IIS （web 伺服器） 的路徑。
+  > 這項測試中可用的本機檔案或本機 IIS （web 伺服器） 的路徑。
 
 ## <a name="expected-behavior"></a>預期的行為
 

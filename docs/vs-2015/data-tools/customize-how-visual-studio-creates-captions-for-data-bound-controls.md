@@ -20,12 +20,12 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 1b3bba0d47e77b9e712a375627e2e4aebc6702b3
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 960100db5a257ab30431c1edee2bce9ded21d46d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60079476"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63431187"
 ---
 # <a name="customize-how-visual-studio-creates-captions-for-data-bound-controls"></a>自訂 Visual Studio 為資料繫結的控制項建立標題的方式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ ms.locfileid: "60079476"
 當您拖曳項目從[資料來源視窗](http://msdn.microsoft.com/library/0d20f699-cc95-45b3-8ecb-c7edf1f67992)拖曳至 Windows Form 設計工具中，特殊的考量派上用場： 標題標籤中的資料行名稱重新格式化成更容易閱讀的字串當兩個或更多的字找到要串連在一起。 您可以自訂這些標籤建立所在，藉由設定的方式**SmartCaptionExpression**， **SmartCaptionReplacement**，並**SmartCaptionSuffix**中的值**HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\10.0\Data 設計工具**登錄機碼。
 
 > [!NOTE]
->  此登錄機碼不存在，您必須建立它。
+> 此登錄機碼不存在，您必須建立它。
 
  智慧標題會受到輸入的值的規則運算式**SmartCaptionExpression**值。 新增**資料設計工具**登錄機碼會覆寫預設規則運算式，控制標題標籤。 如需有關規則運算式的詳細資訊，請參閱 <<c0> [ 在 Visual Studio 中使用規則運算式](../ide/using-regular-expressions-in-visual-studio.md)。
 
@@ -54,9 +54,9 @@ ms.locfileid: "60079476"
 |**SmartCaptionSuffix**|:|表示附加至傳回字串的字元。 例如，如果標題是`Company Name`後, 置詞可讓 `Company Name:`|
 
 > [!CAUTION]
->  您必須非常小心進行任何項目在 登錄編輯時。 編輯前先備份登錄。 如果您不當使用登錄編輯程式，您可以會造成嚴重的問題，可能會要求您重新安裝作業系統。 Microsoft 不保證您不當使用登錄編輯程式而造成的問題，可以解決。 您必須自行承擔使用登錄編輯器的風險。
+> 您必須非常小心進行任何項目在 登錄編輯時。 編輯前先備份登錄。 如果您不當使用登錄編輯程式，您可以會造成嚴重的問題，可能會要求您重新安裝作業系統。 Microsoft 不保證您不當使用登錄編輯程式而造成的問題，可以解決。 您必須自行承擔使用登錄編輯器的風險。
 >
->  下列知識庫文件包含針對備份、 編輯和還原登錄的指示：[Microsoft Windows 登錄說明](http://support.microsoft.com/default.aspx?scid=kb;en-us;256986)(http://support.microsoft.com/default.aspx?scid=kb; en-us-我們; 256986)
+> 下列知識庫文件包含針對備份、 編輯和還原登錄的指示：[Microsoft Windows 登錄說明](http://support.microsoft.com/default.aspx?scid=kb;en-us;256986)(http://support.microsoft.com/default.aspx?scid=kb; en-us-我們; 256986)
 
 ### <a name="to-modify-the-smart-captioning-behavior-of-the-data-sources-window"></a>若要修改智慧的隱藏式字幕功能行為的資料來源 視窗
 

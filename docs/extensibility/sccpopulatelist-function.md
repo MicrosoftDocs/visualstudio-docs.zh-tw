@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5a28c4aef9284148379d65f3f8bef1b035f8580c
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.openlocfilehash: 583731e311f6e6257bfb43c9f21ac2db143145eb
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56709950"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63434581"
 ---
 # <a name="sccpopulatelist-function"></a>SccPopulateList 函式
 此函式會更新特定的原始檔控制命令的檔案清單，並提供對指定的所有檔案的原始檔控制狀態。
@@ -87,7 +87,7 @@ SCCRTN SccPopulateList (
  若要呼叫的外掛程式會繼續`pfnPopulate`函式，可新增和刪除檔案，直到它已完成，並接著會傳回從`SccPopulateList`函式。 然後，IDE 可以顯示其清單。 `lpStatus`陣列都表示原始 IDE 所傳入的清單中的所有檔案。 在所有這些檔案除了使狀態中外掛程式的填滿使用的回呼函式。
 
 > [!NOTE]
->  原始檔控制外掛程式一律可以選擇只會立即傳回從此函式，因為它是保留的清單。 如果外掛程式實作此函式，可能表示這藉由設定`SCC_CAP_POPULATELIST`中的第一個呼叫的功能位元旗標[SccInitialize](../extensibility/sccinitialize-function.md)。 根據預設，外掛程式應該永遠假設傳入的所有項目是檔案。 不過，如果設定 IDE`SCC_PL_DIR`加上旗標在`fOptions`參數，傳入的所有項目都視為目錄。 外掛程式應該在目錄中新增所屬的所有檔案。 IDE 永遠不會將傳入檔案和目錄的混合。
+> 原始檔控制外掛程式一律可以選擇只會立即傳回從此函式，因為它是保留的清單。 如果外掛程式實作此函式，可能表示這藉由設定`SCC_CAP_POPULATELIST`中的第一個呼叫的功能位元旗標[SccInitialize](../extensibility/sccinitialize-function.md)。 根據預設，外掛程式應該永遠假設傳入的所有項目是檔案。 不過，如果設定 IDE`SCC_PL_DIR`加上旗標在`fOptions`參數，傳入的所有項目都視為目錄。 外掛程式應該在目錄中新增所屬的所有檔案。 IDE 永遠不會將傳入檔案和目錄的混合。
 
 ## <a name="see-also"></a>另請參閱
 - [原始檔控制外掛程式 API 函式](../extensibility/source-control-plug-in-api-functions.md)

@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ae63dd41e18b9226967b77b8adec2f45d05d9447
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 80a19924aaf4fa0afe8e809006ada7fada0288f3
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60057169"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63428107"
 ---
 # <a name="how-to-map-schemas-to-worksheets-inside-visual-studio"></a>HOW TO：將結構描述對應至 Visual Studio 內的工作表
   Visual Studio 中開啟工作表時，您可以將 XML 結構描述對應至工作表中。 您使用 Visual Studio 外部開啟活頁簿時，您所使用的相同 Microsoft Office Excel 工具。 是否將結構描述對應至工作表之前，或建立您的 Excel 解決方案之後，Office 專案就會建立相同的物件。
@@ -30,7 +30,7 @@ ms.locfileid: "60057169"
  [!INCLUDE[appliesto_xlalldoc](../vsto/includes/appliesto-xlalldoc-md.md)]
 
 > [!NOTE]
->  您無法在 Excel 方案中使用多部分的 XML 結構描述。
+> 您無法在 Excel 方案中使用多部分的 XML 結構描述。
 
 ## <a name="to-map-an-xml-schema-to-an-excel-worksheet-in-visual-studio"></a>若要將 XML 結構描述對應至 Visual Studio 中的 Excel 工作表
 
@@ -41,7 +41,7 @@ ms.locfileid: "60057169"
 3. 按一下 [功能區] 上的 [開發人員]  索引標籤。
 
     > [!NOTE]
-    >  如果 [開發人員]  索引標籤沒有顯示，您必須先使其顯示。 如需詳細資訊，請參閱[如何：在功能區顯示開發人員索引標籤](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md)。
+    > 如果 [開發人員]  索引標籤沒有顯示，您必須先使其顯示。 如需詳細資訊，請參閱[如何：在功能區顯示開發人員索引標籤](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md)。
 
 4. 在  **XML**群組中，按一下**來源**。
 

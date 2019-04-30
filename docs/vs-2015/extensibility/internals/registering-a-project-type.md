@@ -12,12 +12,12 @@ ms.assetid: dfc0e231-6b4e-447d-9d64-0e66dea3394a
 caps.latest.revision: 22
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 9f56de9b3ce3f1faf5a63fa6b8fd8574a57b82f3
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 63e0140b752adda02aba6126580ec08ee1f7536a
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58941825"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436623"
 ---
 # <a name="registering-a-project-type"></a>註冊專案類型
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -27,7 +27,7 @@ ms.locfileid: "58941825"
  在下列範例中，從登錄的陳述式提供預設路徑和資料如果適用的話，後面的資料表包含每個陳述式的登錄指令碼中的項目。 資料表提供的指令碼項目和陳述式的其他資訊。  
   
 > [!NOTE]
->  下列的登錄資訊被要當做類型的範例和用途，您會撰寫以註冊您的專案類型的登錄指令碼中的項目。 您實際的項目和其用法可能會因您的專案類型的特定需求。 您應該檢閱可用來尋找接近您正在開發，專案類型的其中一個範例，然後檢閱 登錄指令碼，該範例。  
+> 下列的登錄資訊被要當做類型的範例和用途，您會撰寫以註冊您的專案類型的登錄指令碼中的項目。 您實際的項目和其用法可能會因您的專案類型的特定需求。 您應該檢閱可用來尋找接近您正在開發，專案類型的其中一個範例，然後檢閱 登錄指令碼，該範例。  
   
  下列範例會從 HKEY_CLASSES_ROOT。  
   

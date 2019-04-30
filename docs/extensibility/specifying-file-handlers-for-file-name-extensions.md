@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: aba754735bb8a002b1876770b47594ccc98e43fb
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.openlocfilehash: 7b56df6c315d0612d6139fcda8b94f5d1b33b12a
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56687532"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63434553"
 ---
 # <a name="specifying-file-handlers-for-file-name-extensions"></a>指定適用於副檔名的檔案處理常式
 有數種方式來判斷應用程式會處理具有特定副檔名的檔案。 OpenWithList 和 OpenWithProgids 動詞命令是兩種方式可以指定副檔名之登錄項目下的檔案處理常式。
@@ -34,7 +34,7 @@ HKEY_CLASSES_ROOT\
 ```
 
 > [!NOTE]
->  指定的應用程式的索引鍵是 HKEY_CLASSES_ROOT\Applications 下方的清單。
+> 指定的應用程式的索引鍵是 HKEY_CLASSES_ROOT\Applications 下方的清單。
 
  藉由新增 OpenWithList 金鑰，您會宣告您的應用程式支援檔案延伸模組，即使另一個應用程式會取得延伸模組的擁有權。 這可能是您的應用程式或其他應用程式的未來版本。
 
@@ -50,7 +50,7 @@ HKEY_CLASSES_ROOT\
  您可以註冊不同的應用程式能夠開啟特定副檔名設定版本的 Progid 做為值加入 HKEY_CLASSES_ROOT\\*\<擴充功能 >* \OpenWithProgids 索引鍵。 此登錄機碼包含替代的 Progid 相關聯的檔案副檔名的清單。 列出的 Progid 相關聯的應用程式會出現在**開啟**_Product Name_子功能表。 如果相同的應用程式中同時指定`OpenWithList`和`OpenWithProgids`索引鍵，作業系統會將合併重複的項目。
 
 > [!NOTE]
->  `OpenWithProgids`金鑰僅適用於 Windows XP 中。 因為其他作業系統會忽略此金鑰，請勿使用它作為唯一的註冊檔案處理常式。 若要提供更好的使用者體驗，在 Windows XP 中使用此金鑰。
+> `OpenWithProgids`金鑰僅適用於 Windows XP 中。 因為其他作業系統會忽略此金鑰，請勿使用它作為唯一的註冊檔案處理常式。 若要提供更好的使用者體驗，在 Windows XP 中使用此金鑰。
 
  加入所需的 Progid 做為 REG_NONE 型別的值。 下列程式碼提供的 Progid 註冊副檔名的檔案範例 (。*ext*)。
 

@@ -13,12 +13,12 @@ caps.latest.revision: 9
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 7425979bf231cf5ee5748e9d4cbd1eadae72f48a
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
-ms.translationtype: MT
+ms.openlocfilehash: b759c8fc65130c37f24e8ec03bbcebf3a52241d0
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "58941486"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436440"
 ---
 # <a name="idiasymbolgetcontainer"></a>IDiaSymbol::get_container
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -41,7 +41,7 @@ HRESULT get_container(
  如果成功，會傳回 S_OK;否則，會傳回 S_FALSE 或錯誤碼。  
   
 > [!NOTE]
->  傳回值為 S_FALSE 表示屬性不是適用於符號。  
+> 傳回值為 S_FALSE 表示屬性不是適用於符號。  
   
 ## <a name="requirements"></a>需求  
   

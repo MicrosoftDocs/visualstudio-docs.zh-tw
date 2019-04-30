@@ -13,12 +13,12 @@ caps.latest.revision: 30
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 29d4ee5455a05bfac98debc2f6ebdbb06b813f31
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 8b1d3a5209490c253f4646210d4eeeda9d807155
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60059847"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63417806"
 ---
 # <a name="model-user-requirements"></a>模型使用者需求
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,7 +46,7 @@ Visual Studio 透過繪製使用者活動的圖表，以及系統協助他們達
   如果您使用需求模型來聚焦與使用者或其業務人員的討論，並在每次重複的開頭重新瀏覽該討論，則需求模型提供最大的好處。 撰寫程式碼之前，您不需要詳細地完成它。 局部運作的應用程式 (即使極為簡化) 通常會構成使用者需求討論的最生動基礎。 模型是彙總這些討論結果的有效方法。 如需詳細資訊，請參閱 <<c0> [ 在開發程序中使用模型](../modeling/use-models-in-your-development-process.md)。  
   
 > [!NOTE]
->  在這些主題中，「系統」表示您正在開發的系統或應用程式。 它可能是許多軟體和硬體元件的大型集合、單一應用程式或較大系統內的軟體元件。 在每種情況下，需求模型都會描述可在系統外部看到的行為 (不論是透過使用者介面或 API)。  
+> 在這些主題中，「系統」表示您正在開發的系統或應用程式。 它可能是許多軟體和硬體元件的大型集合、單一應用程式或較大系統內的軟體元件。 在每種情況下，需求模型都會描述可在系統外部看到的行為 (不論是透過使用者介面或 API)。  
   
 ## <a name="common-tasks"></a>一般工作  
  您可以建立數個不同的使用者需求檢視。  每個檢視都提供特定類型的資訊。  建立這些檢視時，最好經常切換使用不同的檢視。 您可以從任何檢視開始。  
@@ -209,7 +209,7 @@ Visual Studio 透過繪製使用者活動的圖表，以及系統協助他們達
 ## <a name="Sequences"></a> 顯示使用者與系統之間的互動  
  您可以使用循序圖來示範系統與外部行動之間或系統不同組件之間的訊息交換。 這提供極清楚顯示互動序列的使用案例中步驟的檢視。 在使用案例中有數個互動方以及系統具有 API 的情況下，循序圖特別有用。  
   
- 例如：  
+ 例如:   
   
  ![包含系統和行動的順序圖表。](../modeling/media/uml-reqmseq.png "UML_ReqmSeq")  
   

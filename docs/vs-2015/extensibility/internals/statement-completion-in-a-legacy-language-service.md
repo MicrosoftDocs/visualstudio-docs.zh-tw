@@ -11,12 +11,12 @@ ms.assetid: 617439dc-3f0e-4e5f-b346-3e4e7fcf3c1b
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 66ca9a6176fc17784e79e5c4f3ad633a8c685854
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 163eb0f23716fa2f036d07612b741c0c9419b92e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58942791"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63408472"
 ---
 # <a name="statement-completion-in-a-legacy-language-service"></a>舊版語言服務中的陳述式完成
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -26,7 +26,7 @@ ms.locfileid: "58942791"
  舊版語言服務會實作成 VSPackage 的一部分，但實作語言服務功能的較新的方式是使用 MEF 擴充功能。 若要深入了解實作陳述式完成的新方式，請參閱[逐步解說：顯示陳述式完成](../../extensibility/walkthrough-displaying-statement-completion.md)。  
   
 > [!NOTE]
->  我們建議您開始使用新的編輯器 API 盡。 這會改善您的語言服務的效能，並可讓您充分利用新編輯器功能。  
+> 我們建議您開始使用新的編輯器 API 盡。 這會改善您的語言服務的效能，並可讓您充分利用新編輯器功能。  
   
 ## <a name="implementing-statement-completion"></a>實作的陳述式完成  
  在核心編輯器中，陳述式完成就會啟動一種特殊的 UI，以互動方式可幫助您更輕鬆地和快速撰寫程式碼。 陳述式完成可協助藉由顯示相關的物件或類別時所需之以避免您不必記住的特定項目，也需要查閱說明參考主題中。  

@@ -21,12 +21,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8161623b35dd626e59cdb0ed387ece6a104429a1
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: eecde0bc5e488cd91632a45406c621ce45bd4447
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60047578"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63407763"
 ---
 # <a name="remote-debugging"></a>Remote Debugging
 您可以偵錯已部署在不同電腦的 Visual Studio 應用程式。 若要這樣做，您可以使用 Visual Studio 遠端偵錯工具。
@@ -100,7 +100,7 @@ ms.locfileid: "60047578"
      如需預設使用的連接埠號碼的清單，請參閱 < [Remote Debugger Port Assignments](../debugger/remote-debugger-port-assignments.md)。
 
      > [!WARNING]
-     >  您可以選擇在 [非驗證] 模式下執行遠端工具，但非常不建議您使用這個模式。 在此模式中執行時不具有網路安全性。 只有在確定網路沒有面臨惡意或攻擊流量的風險時，才能選擇非驗證模式。
+     > 您可以選擇在 [非驗證] 模式下執行遠端工具，但非常不建議您使用這個模式。 在此模式中執行時不具有網路安全性。 只有在確定網路沒有面臨惡意或攻擊流量的風險時，才能選擇非驗證模式。
 
 ## <a name="bkmk_configureService"></a> （選擇性）設定遠端偵錯工具 as a service
 進行偵錯 ASP.NET 和其他伺服器環境中，您必須以系統管理員身分執行遠端偵錯工具或者，如果您想要一律執行中，以服務方式執行遠端偵錯工具。

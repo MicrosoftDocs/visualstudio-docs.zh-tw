@@ -11,12 +11,12 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 25c4359a5ff64a3ddd229e872aa8a52303c22bf2
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: fef5d4ab83d22b31b64c6e6ec509cab47a426f9b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60068427"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63426961"
 ---
 # <a name="understanding-the-dsl-code"></a>了解 DSL 程式碼
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,7 +27,7 @@ ms.locfileid: "60068427"
  若要建立方案，其為大部分的範例，本主題中的來源，建立從 DSL**元件模型**解決方案範本。 這是您建立新的 DSL 方案時所顯示的其中一個標準範本。  
   
 > [!NOTE]
->  元件圖表 DSL 範本與 UML 元件圖表，您可以使用 [架構] 功能表在 Visual Studio 中建立不相關。 在 **新的專案**對話方塊方塊中，展開**其他專案類型 \ 擴充性**，然後按一下 **特定領域語言設計工具**。  
+> 元件圖表 DSL 範本與 UML 元件圖表，您可以使用 [架構] 功能表在 Visual Studio 中建立不相關。 在 **新的專案**對話方塊方塊中，展開**其他專案類型 \ 擴充性**，然後按一下 **特定領域語言設計工具**。  
   
  如果您對這個方案範本不熟悉，請按 F5 鍵進行實驗。 請特別注意，您可以將通訊埠工具拖曳到元件上來建立通訊埠，也可以連接通訊埠。  
   
@@ -133,7 +133,7 @@ ms.locfileid: "60068427"
   表示網域模型的類別。 該類別衍生自 <xref:Microsoft.VisualStudio.Modeling.DomainModel>。  
   
 > [!NOTE]
->  此類別與模型的根類別不同。  
+> 此類別與模型的根類別不同。  
   
  Copy Closure 和 Delete Closure 定義複製或刪除某個項目時，應包含的其他項目。 您可以設定來控制此行為**Propagates Copy**並**傳播刪除**每一個關聯性兩端角色的屬性。 如果您要動態決定這些值，您可以撰寫程式碼，覆寫 Closure 類別的方法。 如需詳細資訊，請參閱[如何：程式設計複製和貼上行為-重新導向](../misc/how-to-program-copy-and-paste-behavior-redirect.md)。  
   
@@ -344,7 +344,7 @@ explorerWindow.TreeContainer.ObjectModelBrowser.SelectedNode = treeNode;
  若要自訂這個檔案，請編輯 `.tt` 檔。  
   
 > [!WARNING]
->  如果您編輯 .tt 檔以納入圖示或影像等資源，請確定 VSIX 組建中包含此資源。 在 [方案總管] 中，選取的檔案，並確定**Include in VSIX**屬性是`True`。  
+> 如果您編輯 .tt 檔以納入圖示或影像等資源，請確定 VSIX 組建中包含此資源。 在 [方案總管] 中，選取的檔案，並確定**Include in VSIX**屬性是`True`。  
   
  這個檔案控制如何將 DSL 封裝成 Visual Studio 整合擴充功能 (VSIX)。 如需詳細資訊，請參閱[部署特定領域語言方案](../modeling/deploying-domain-specific-language-solutions.md)。  
   

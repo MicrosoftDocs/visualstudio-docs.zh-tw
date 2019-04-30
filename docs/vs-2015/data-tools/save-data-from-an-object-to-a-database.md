@@ -18,12 +18,12 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 6980ecc7676afd978f8dfd243ef8f383413ad83d
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: c079d3f85dbab87e30edb059c76202dd727f715c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60074879"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63425053"
 ---
 # <a name="save-data-from-an-object-to-a-database"></a>從物件中將資料儲存至資料庫
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,7 +35,7 @@ ms.locfileid: "60074879"
  根據預設，會產生上可以直接對資料庫執行 TableAdapter DBDirect 方法。 這些方法可以直接呼叫，而且不需要<xref:System.Data.DataSet>或<xref:System.Data.DataTable>協調變更，以便將更新傳送至資料庫的物件。  
   
 > [!NOTE]
->  當您設定 TableAdapter 時，主查詢必須提供足夠的資訊，如需建立 DBDirect 方法。 例如，如果沒有定義主索引鍵資料行的資料表，TableAdapter 已設定來查詢資料，它不會產生 DBDirect 方法。  
+> 當您設定 TableAdapter 時，主查詢必須提供足夠的資訊，如需建立 DBDirect 方法。 例如，如果沒有定義主索引鍵資料行的資料表，TableAdapter 已設定來查詢資料，它不會產生 DBDirect 方法。  
   
 |TableAdapter DBDirect 方法|描述|  
 |----------------------------------|-----------------|  
@@ -57,7 +57,7 @@ ms.locfileid: "60074879"
 - 修改記錄，藉由呼叫`TableAdapter.Update`方法，傳遞新的值來更新記錄，並傳入要找出資料錄的原始值。  
   
     > [!NOTE]
-    >  您的物件需要維護的原始值，才能將其傳遞給`Update`方法。 這個範例會使用具有屬性`orig`儲存原始值的前置詞。  
+    > 您的物件需要維護的原始值，才能將其傳遞給`Update`方法。 這個範例會使用具有屬性`orig`儲存原始值的前置詞。  
   
      下列範例會更新中的現有記錄`Customers`藉由傳遞中的全新及原始值的表格`Customer`物件到`TableAdapter.Update`方法。  
   
@@ -69,7 +69,7 @@ ms.locfileid: "60074879"
 - 刪除記錄，藉由呼叫`TableAdapter.Delete`方法並傳入要找出資料錄的原始值。  
   
     > [!NOTE]
-    >  您的物件需要維護的原始值，才能將其傳遞給`Delete`方法。 這個範例會使用具有屬性`orig`儲存原始值的前置詞。  
+    > 您的物件需要維護的原始值，才能將其傳遞給`Delete`方法。 這個範例會使用具有屬性`orig`儲存原始值的前置詞。  
   
      下列範例會刪除從資料錄`Customers`藉由傳遞中的原始值的資料表`Customer`物件到`TableAdapter.Delete`方法。  
   

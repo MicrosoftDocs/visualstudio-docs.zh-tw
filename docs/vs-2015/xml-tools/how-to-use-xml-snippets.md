@@ -9,12 +9,12 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 4a6c48d878f2bacd8317878366980ecc317f7adb
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: ba4d98a1d6a59a35bf4aa279831036eecec99989
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60055258"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63440575"
 ---
 # <a name="how-to-use-xml-snippets"></a>HOW TO：使用 XML 片段
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,7 +27,7 @@ ms.locfileid: "60055258"
  下列程序說明如何存取**插入程式碼片段**命令。  
   
 > [!NOTE]
->  **插入程式碼片段**命令也會提供透過鍵盤快速鍵 （CTRL + K、 CTRL + X）。  
+> **插入程式碼片段**命令也會提供透過鍵盤快速鍵 （CTRL + K、 CTRL + X）。  
   
 #### <a name="to-insert-snippets-from-the-shortcut-menu"></a>透過捷徑功能表插入片段  
   
@@ -60,7 +60,7 @@ ms.locfileid: "60055258"
 4. 按 TAB 鍵，以叫用 XML 片段。  
   
 > [!NOTE]
->  有時可能無法叫用 XML 片段。 例如，如果您嘗試在 `xs:complexType` 節點內插入 `xs:element` 項目，則編輯器不會產生 XML 片段。 在 `xs:complexType` 節點內使用 `xs:element` 項目時，因為沒有必要的屬性或項目子系，所以編輯器並無任何要插入的資料。  
+> 有時可能無法叫用 XML 片段。 例如，如果您嘗試在 `xs:complexType` 節點內插入 `xs:element` 項目，則編輯器不會產生 XML 片段。 在 `xs:complexType` 節點內使用 `xs:element` 項目時，因為沒有必要的屬性或項目子系，所以編輯器並無任何要插入的資料。  
   
 #### <a name="to-insert-snippets-using-the-shortcut-name"></a>使用捷徑名稱插入片段  
   
@@ -76,7 +76,7 @@ ms.locfileid: "60055258"
  下列程序說明如何存取**環繞**命令。  
   
 > [!NOTE]
->  **環繞**命令也會提供透過鍵盤快速鍵 （CTRL + K、 CTRL + S）。  
+> **環繞**命令也會提供透過鍵盤快速鍵 （CTRL + K、 CTRL + S）。  
   
 #### <a name="to-use-surround-with-from-the-context-menu"></a>透過操作功能表使用以此環繞  
   

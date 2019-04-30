@@ -19,12 +19,12 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: cd19af4bc2533d2bd4e7c21dd49eae53510ae429
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: d794e135c38858522c19c6842573445ab9fb669f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60118210"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63425025"
 ---
 # <a name="save-data-to-a-database-multiple-tables"></a>將資料儲存至資料庫 (多個資料表)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ ms.locfileid: "60118210"
  您可以透過呼叫 TableAdapter 的 `Update` 方法，將應用程式的資料存回資料庫。 當您將資料表從**Zdroje dat**視窗拖曳到表單時，必須先儲存資料的程式碼會自動加入。加入至表單的任何其他資料表都需要手動加入此程式碼。 此逐步解說會示範如何加入程式碼，以儲存多個資料表的更新。  
   
 > [!NOTE]
->  對話方塊和功能表命令，您會看到，可能會有所不同說明中所述取決於您使用的設定或您使用的版本不同。 若要變更設定，請從 [ **工具** ] 功能表中選取 [ **匯入和匯出設定** ]。 如需詳細資訊，請參閱 [在 Visual Studio 中自訂開發設定](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)  
+> 對話方塊和功能表命令，您會看到，可能會有所不同說明中所述取決於您使用的設定或您使用的版本不同。 若要變更設定，請從 [ **工具** ] 功能表中選取 [ **匯入和匯出設定** ]。 如需詳細資訊，請參閱 [在 Visual Studio 中自訂開發設定](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)  
   
  這個逐步解說中所述的工作包括：  
   
@@ -118,7 +118,7 @@ ms.locfileid: "60118210"
 2. 從 [資料來源] 視窗將關聯的 [Orders] 節點拖曳至 [Form1]。  
   
     > [!NOTE]
-    >  關聯的 [Orders] 節點位於 [Fax] 節點之下，而且是 [Customers] 節點的子節點。  
+    > 關聯的 [Orders] 節點位於 [Fax] 節點之下，而且是 [Customers] 節點的子節點。  
   
      <xref:System.Windows.Forms.DataGridView> 控制項以及巡覽記錄的工具區域 (<xref:System.Windows.Forms.BindingNavigator>) 會出現在表單上。 OrdersTableAdapter 和<xref:System.Windows.Forms.BindingSource>會出現在元件匣。  
   
@@ -126,7 +126,7 @@ ms.locfileid: "60118210"
  您可以藉由呼叫 [Customers] 和 [Orders] TableAdapters 的 `Update` 方法以更新資料庫。 根據預設，事件處理常式**儲存**按鈕<xref:System.Windows.Forms.BindingNavigator>新增至表單的程式碼，以將更新傳送至資料庫。 此程序修改程式碼，以將更新傳送正確的順序。這會排除參考完整性錯誤提高的可能性。 程式碼也會藉由將 try-catch 區塊中的更新呼叫換行，以實作錯誤處理。 您可以修改程式碼，使其符合應用程式的需求。  
   
 > [!NOTE]
->  為了清楚起見，本逐步解說中所使用的交易。不過，如果您正在更新兩個或多個相關資料表，包含在交易內的所有更新邏輯。 交易是確保對資料庫的所有相關的變更都成功，認可任何變更之前的程序。 如需詳細資訊，請參閱 <<c0> [ 異動和並行存取](http://msdn.microsoft.com/library/f46570de-9e50-4fe6-8710-a8c31fa8569b)。  
+> 為了清楚起見，本逐步解說中所使用的交易。不過，如果您正在更新兩個或多個相關資料表，包含在交易內的所有更新邏輯。 交易是確保對資料庫的所有相關的變更都成功，認可任何變更之前的程序。 如需詳細資訊，請參閱 <<c0> [ 異動和並行存取](http://msdn.microsoft.com/library/f46570de-9e50-4fe6-8710-a8c31fa8569b)。  
   
 #### <a name="to-add-update-logic-to-the-application"></a>將更新邏輯加入至應用程式  
   

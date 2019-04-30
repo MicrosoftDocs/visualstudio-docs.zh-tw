@@ -15,12 +15,12 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 46a9b8ce099146b6bae853557404c7bfabbbfb6a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 0eadff91e8762349ec95c2d9f3bf5717bfecaa4a
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58944502"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63435026"
 ---
 # <a name="ca2115-call-gckeepalive-when-using-native-resources"></a>CA2115:使用原生資源時必須呼叫 GC.KeepAlive
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,7 +41,7 @@ ms.locfileid: "58944502"
  這項規則假設<xref:System.IntPtr>和<xref:System.UIntPtr>欄位儲存 unmanaged 資源的指標。 因為完成項的用途是釋放 unmanaged 的資源，此規則會假設完成項會釋放指標欄位所指向的 unmanaged 的資源。 這項規則也會假設方法參考傳遞至 unmanaged 程式碼的 unmanaged 的資源的指標欄位。
 
 ## <a name="how-to-fix-violations"></a>如何修正違規
- 若要修正此規則的違規情形，將呼叫加入<xref:System.GC.KeepAlive%2A>方法，並傳遞目前執行個體 (`this`在 C# 和 c + +) 做為引數。 位置呼叫程式碼的最後一行之後，物件必須加以保護以免記憶體回收。 若要在呼叫之後立即<xref:System.GC.KeepAlive%2A>，物件一次視為已準備好進行記憶體回收假設沒有受管理的參考它。
+ 若要修正此規則的違規情形，將呼叫加入<xref:System.GC.KeepAlive%2A>方法，並傳遞目前執行個體 (`this`在C#和C++) 做為引數。 位置呼叫程式碼的最後一行之後，物件必須加以保護以免記憶體回收。 若要在呼叫之後立即<xref:System.GC.KeepAlive%2A>，物件一次視為已準備好進行記憶體回收假設沒有受管理的參考它。
 
 ## <a name="when-to-suppress-warnings"></a>隱藏警告的時機
  此規則可讓一些可能會導致誤判的假設。 您可以安全地隱藏此規則的警告，如果：
@@ -56,7 +56,7 @@ ms.locfileid: "58944502"
  在下列範例中，`BadMethod`不包含呼叫`GC.KeepAlive`且因此違反此規則。 `GoodMethod` 包含已更正的程式碼。
 
 > [!NOTE]
->  這個範例是虛擬程式碼，雖然程式碼編譯並執行，因為尚未建立或釋放 unmanaged 的資源，不會引發警告。
+> 這個範例是虛擬程式碼，雖然程式碼編譯並執行，因為尚未建立或釋放 unmanaged 的資源，不會引發警告。
 
  [!code-csharp[FxCop.Security.IntptrAndFinalize#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Security.IntptrAndFinalize/cs/FxCop.Security.IntptrAndFinalize.cs#1)]
 

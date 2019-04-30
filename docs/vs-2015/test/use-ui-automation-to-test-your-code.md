@@ -17,12 +17,12 @@ ms.assetid: ad9e3eaa-ab86-436e-95b8-dc20eb1f8b2a
 caps.latest.revision: 87
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 8840c570d4de2544a5cdb4831f083e5a3598ca72
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: f9a7d4288258ab3e90a7eec6ba3de7ac6892ee93
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60113790"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63442897"
 ---
 # <a name="use-ui-automation-to-test-your-code"></a>使用 UI 自動化來測試您的程式碼
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -98,7 +98,7 @@ ms.locfileid: "60113790"
     **若要暫停錄製** (例如，如果您需要處理傳入的電子郵件)，請選擇 [暫停]。
 
    > [!WARNING]
-   >  將會錄製所有在桌面上執行的動作。 如果您執行的動作可能會導致在錄製中包括敏感性資料，則請暫停錄製。
+   > 將會錄製所有在桌面上執行的動作。 如果您執行的動作可能會導致在錄製中包括敏感性資料，則請暫停錄製。
 
     **若要刪除錯誤錄製的動作**，請選擇 [編輯動作]。
 
@@ -113,7 +113,7 @@ ms.locfileid: "60113790"
     ![自動程式化 UI 測試目標項目](../test/media/codedui-1.png "CodedUI_1")
 
    > [!TIP]
-   >  在錄製動作與確認值之間替換。 在每串動作或驗證結束時產生程式碼。 如果您想要，則可以稍後插入新的動作和驗證。
+   > 在錄製動作與確認值之間替換。 在每串動作或驗證結束時產生程式碼。 如果您想要，則可以稍後插入新的動作和驗證。
 
     如需詳細資料，請參閱[驗證控制項屬性](#VerifyingCodeUsingCUITGenerateAssertions)。
 
@@ -230,7 +230,7 @@ ms.locfileid: "60113790"
   若要使用鍵盤選取 UI 控制項，請使用滑鼠將滑鼠指標移至控制項上方。 然後同時按住 **Ctrl** 鍵和 **I** 鍵。 放開按鍵。 此控制項是透過自動程式碼 UI 測試產生器所錄製。
 
 > [!WARNING]
->  如果您使用 Microsoft Lync，則必須先關閉 Lync，再啟動自動程式化 UI 測試產生器。 Microsoft Lync 會妨礙 **Ctrl+I** 鍵盤快速鍵。
+> 如果您使用 Microsoft Lync，則必須先關閉 Lync，再啟動自動程式化 UI 測試產生器。 Microsoft Lync 會妨礙 **Ctrl+I** 鍵盤快速鍵。
 
  *我無法錄製控制項上的滑鼠停留。有什麼方法可以解決這個問題？*
  **手動錄製滑鼠停留**
@@ -255,7 +255,7 @@ Mouse.Hover(uIItem1Text, new Point(87, 9));
  用來在自動程式化 UI 測試中套用滑鼠停留事件的預設鍵盤指派 Ctrl+Shift+R，視需要可以設定成使用不同的按鍵。
 
 > [!WARNING]
->  在一般情況下，您應該不需要變更滑鼠停留事件的鍵盤指派。 重新指派鍵盤指派時請小心。 您的選擇可能已在 Visual Studio 或正在測試之應用程式的其他位置中使用。
+> 在一般情況下，您應該不需要變更滑鼠停留事件的鍵盤指派。 重新指派鍵盤指派時請小心。 您的選擇可能已在 Visual Studio 或正在測試之應用程式的其他位置中使用。
 
  若要變更鍵盤指派，您必須修改下列組態檔：
 
@@ -356,7 +356,7 @@ Mouse.Hover(uIItem1Text, new Point(87, 9));
   ```
 
   > [!WARNING]
-  >  您不應該編輯此檔案，因為它會在您建立其他測試時重新產生。
+  > 您不應該編輯此檔案，因為它會在您建立其他測試時重新產生。
 
    您可以將這些方法複製至 UIMap.cs，以建立這些方法的調整版本。 例如，您可以建立可從測試方法呼叫的參數化版本：
 

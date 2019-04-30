@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 43a818be208c7e07ef74a8f35923f3042bb8fad5
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55938159"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63009784"
 ---
 # <a name="cancellationscope-activity-designer"></a>CancellationScope 活動設計工具
 
@@ -35,7 +35,7 @@ ms.locfileid: "55938159"
 
 下表顯示 <xref:System.Activities.Statements.CancellationScope> 屬性，並且描述屬性在設計工具中的使用方式。 <xref:System.Activities.Activity.DisplayName%2A>屬性可以在屬性方格中編輯，但其他屬性必須在工作流程設計工具介面上編輯。
 
-|屬性名稱|必要項|使用方式|
+|屬性名稱|必要|使用量|
 |-|--------------|-|
 |<xref:System.Activities.Activity.DisplayName%2A>|False|<xref:System.Activities.Statements.CancellationScope> 活動可選用的易記名稱。 預設為 CancellationScope。 雖然 <xref:System.Activities.Activity.DisplayName%2A> 值並非絕對必要，但建議您盡量使用。|
 |<xref:System.Activities.Statements.CancellationScope.Body%2A>|True|指定提供取消邏輯的活動。 若要新增<xref:System.Activities.Statements.CancellationScope.Body%2A>活動，從下拉式**工具箱**到**主體**方塊**CancellationScope**活動設計工具。 新增提示文字 「 置放活動 」。|

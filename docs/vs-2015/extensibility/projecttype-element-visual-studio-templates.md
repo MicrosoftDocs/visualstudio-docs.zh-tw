@@ -12,12 +12,12 @@ ms.assetid: ccf9d83f-c7f3-49c7-a31f-e1f22bec004c
 caps.latest.revision: 20
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: f1cd8e7e85b9753c3742044ae2a557cdf4637214
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: b01dd370fe5e3d7a5207363c5ab7ec4f2a0254c5
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60084878"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63388397"
 ---
 # <a name="projecttype-element-visual-studio-templates"></a>ProjectType 項目 (Visual Studio 範本)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,7 +25,7 @@ ms.locfileid: "60084878"
 將分類的專案範本，使其出現在中指定的群組**新的專案**或**加入新項目** 對話方塊。  
   
 > [!WARNING]
->  支援的專案範本C++開始在 Visual Studio 2012 中。 它們不支援C++在 Visual Studio 2010 和舊版中。  
+> 支援的專案範本C++開始在 Visual Studio 2012 中。 它們不支援C++在 Visual Studio 2010 和舊版中。  
   
  \<VSTemplate>  
  \<TemplateData>  

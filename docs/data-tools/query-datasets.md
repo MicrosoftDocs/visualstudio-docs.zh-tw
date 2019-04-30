@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: ccd8bd0cb37aaa2d4bfad7ea20979987048bf862
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: bec1c878dce59ccb5444d74ba0255c9ceb705780
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60050669"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63402733"
 ---
 # <a name="query-datasets"></a>查詢資料集
 若要搜尋的資料集內的特定記錄，請使用`FindBy`datatable，方法撰寫您自己的 foreach 陳述式，以使用迴圈處理資料表的資料列集合，或使用[LINQ to DataSet](/dotnet/framework/data/adonet/linq-to-dataset)。
@@ -25,7 +25,7 @@ ms.locfileid: "60050669"
 資料集，資料表和資料行名稱會依預設不區分大小寫 — 也就是資料集稱為 「 客戶 」 資料表可以也稱為 「 客戶 」。 這會比對多個資料庫，包括 SQL Server 中的命名慣例。 在 SQL Server 的預設行為會是資料元素的名稱不能進行區分大小寫。
 
 > [!NOTE]
->  不同的資料集，於 XML 文件都區分大小寫，因此結構描述中定義的資料元素的名稱會區分大小寫。 例如，結構描述的通訊協定可讓要定義名為 「 客戶 」 並建立名為 「 客戶。 」 的不同資料表的資料表的結構描述 當結構描述，其中包含只有大小寫不同的元素用來產生資料集類別，這會導致名稱衝突。
+> 不同的資料集，於 XML 文件都區分大小寫，因此結構描述中定義的資料元素的名稱會區分大小寫。 例如，結構描述的通訊協定可讓要定義名為 「 客戶 」 並建立名為 「 客戶。 」 的不同資料表的資料表的結構描述 當結構描述，其中包含只有大小寫不同的元素用來產生資料集類別，這會導致名稱衝突。
 
 區分大小寫，不過，可能會如何解譯資料之資料集內的因素。 例如，如果您篩選資料集資料表中的資料，請搜尋條件可能會傳回根據比較是否區分大小寫不同的結果。 您可以控制的篩選、 搜尋和排序資料集設為區分大小寫<xref:System.Data.DataSet.CaseSensitive%2A>屬性。 在資料集中的所有資料表預設會都繼承這個屬性的值。 (您可以設定資料表的連線，覆寫這個屬性為每個個別的資料表<xref:System.Data.DataTable.CaseSensitive%2A>屬性。)
 
@@ -68,7 +68,7 @@ ms.locfileid: "60050669"
 此頁面提供使用具類型資料集的範例。 瀏覽關聯性中不具類型資料集的相關資訊，請參閱[巡覽 Datarelation](/dotnet/framework/data/adonet/dataset-datatable-dataview/navigating-datarelations)。
 
 > [!NOTE]
->  如果您是在 Windows Forms 應用程式中，而且顯示的資料使用的資料繫結功能，設計工具所產生的表單可能會提供足夠的功能，您的應用程式。 如需詳細資訊，請參閱 <<c0> [ 控制項繫結至 Visual Studio 中的資料](../data-tools/bind-controls-to-data-in-visual-studio.md)。 具體來說，請參閱 <<c0> [ 中的資料集的關聯性](relationships-in-datasets.md)。
+> 如果您是在 Windows Forms 應用程式中，而且顯示的資料使用的資料繫結功能，設計工具所產生的表單可能會提供足夠的功能，您的應用程式。 如需詳細資訊，請參閱 <<c0> [ 控制項繫結至 Visual Studio 中的資料](../data-tools/bind-controls-to-data-in-visual-studio.md)。 具體來說，請參閱 <<c0> [ 中的資料集的關聯性](relationships-in-datasets.md)。
 
 下列程式碼範例示範如何瀏覽向上和向下中具類型資料集的關聯性。 程式碼範例使用具類型<xref:System.Data.DataRow>s (`NorthwindDataSet.OrdersRow`) 和產生的 FindBy*PrimaryKey* (`FindByCustomerID`) 方法，以找出所需的資料列，並傳回相關的記錄。 範例正確編譯和執行只有當您擁有：
 

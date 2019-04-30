@@ -18,12 +18,12 @@ caps.latest.revision: 50
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 729639c99747ce7f7358ad3c4b0b6374bd64d010
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 04a941ae7aab30825c66ac5d3d81ac12d4b7c7db
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58944062"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437748"
 ---
 # <a name="using-the-debuggerdisplay-attribute"></a>使用 DebuggerDisplay 屬性
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,7 +37,7 @@ ms.locfileid: "58944062"
  偵錯工具是否評估這個隱含 `ToString()` 呼叫，是取決於 [工具 / 選項 / 偵錯]  對話方塊中的使用者設定。 Visual Basic 並未實作這個隱含 `ToString()` 評估。  
   
 > [!IMPORTANT]
->  如果已核取 [工具/選項 / 偵錯]  對話方塊中的 [在變數視窗中顯示物件的原始結構]  核取方塊，即忽略 `DebuggerDisplay` 屬性。  
+> 如果已核取 [工具/選項 / 偵錯]  對話方塊中的 [在變數視窗中顯示物件的原始結構]  核取方塊，即忽略 `DebuggerDisplay` 屬性。  
   
  下表說明 `DebuggerDisplay` 屬性的一些可能用法和範例輸出。  
   

@@ -17,12 +17,12 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: f239da7816f72b9204364303113d32f5e06c4fd8
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: 70d640b97bae15575689d41c38bd774507276906
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59661902"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436881"
 ---
 # <a name="property-pages-javascript"></a>JavaScript、屬性頁
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -48,7 +48,7 @@ ms.locfileid: "59661902"
  您可以使用下列選項，來設定專案的一般屬性。  
   
 > [!NOTE]
->  有些選項僅適用於 Windows 市集應用程式。  
+> 有些選項僅適用於 Windows 市集應用程式。  
   
  **輸出路徑**  
  指定專案組態的輸出檔位置。 路徑是相對的；如果您輸入絕對路徑，則會在專案中儲存絕對路徑。 預設路徑為 bin\Debug。  
@@ -62,7 +62,7 @@ ms.locfileid: "59661902"
  您可以使用下列選項，來設定專案中偵錯行為的屬性。  
   
 > [!NOTE]
->  有些選項僅適用於 Windows 市集應用程式。  
+> 有些選項僅適用於 Windows 市集應用程式。  
   
  **要啟動的偵錯工具**  
  指定偵錯工具的預設主機。  

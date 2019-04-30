@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 7f039154265e9031713eb5511bb1c51a63e5b422
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 23ea89b25ca1bd1e7aa48ab1782d23bd7db057f0
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60109175"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437111"
 ---
 # <a name="how-to-programmatically-cache-a-data-source-in-an-office-document"></a>HOW TO：以程式設計方式快取 Office 文件中的資料來源
   您以程式設計的方式可以將文件中的資料快取資料物件，藉由呼叫`StartCaching`方法的許多項目，例如<xref:Microsoft.Office.Tools.Word.Document>， <xref:Microsoft.Office.Tools.Excel.Workbook>，或<xref:Microsoft.Office.Tools.Excel.Worksheet>。 移除資料快取中的資料物件，藉由呼叫`StopCaching`主項目的的方法。
@@ -52,7 +52,7 @@ ms.locfileid: "60109175"
      [!code-vb[Trin_VstcoreDataExcel#14](../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet1.vb#14)]
 
     > [!NOTE]
-    >  請勿呼叫`StopCaching`從事件處理常式，如`Shutdown`文件或工作表的事件。 依時間`Shutdown`就會引發事件，就無法再修改的資料快取。 如需詳細資訊`Shutdown`事件，請參閱 < [Events in Office Projects](../vsto/events-in-office-projects.md)。
+    > 請勿呼叫`StopCaching`從事件處理常式，如`Shutdown`文件或工作表的事件。 依時間`Shutdown`就會引發事件，就無法再修改的資料快取。 如需詳細資訊`Shutdown`事件，請參閱 < [Events in Office Projects](../vsto/events-in-office-projects.md)。
 
 ## <a name="see-also"></a>另請參閱
 

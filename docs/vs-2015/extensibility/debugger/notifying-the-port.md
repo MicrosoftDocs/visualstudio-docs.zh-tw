@@ -10,12 +10,12 @@ ms.assetid: f9fce48e-7d4e-4627-a0fb-77b75428146a
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: d17331c9a18132a882f02c3ecbdc66ca8111e1e4
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 8cf3969dda783882f24d02a748f345cdb66fe413
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58940146"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63410064"
 ---
 # <a name="notifying-the-port"></a>通知連接埠
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -33,12 +33,12 @@ ms.locfileid: "58940146"
    以程式設計的方式，當連接埠先接收新的方案節點，它會建立[IDebugProgram2](../../extensibility/debugger/reference/idebugprogram2.md)介面代表程式。  
   
 > [!NOTE]
->  這不應該混淆與`IDebugProgram2`稍後由偵錯引擎 (DE) 的介面。  
+> 這不應該混淆與`IDebugProgram2`稍後由偵錯引擎 (DE) 的介面。  
   
  連接埠傳送[IDebugProgramCreateEvent2](../../extensibility/debugger/reference/idebugprogramcreateevent2.md)程式建立事件回到工作階段偵錯管理員 (SDM) 透過 COM`IConnectionPoint`介面。  
   
 > [!NOTE]
->  這不應該混淆與`IDebugProgramCreateEvent2`DE 稍後傳送的介面。  
+> 這不應該混淆與`IDebugProgramCreateEvent2`DE 稍後傳送的介面。  
   
  事件介面本身，以及傳送連接埠[IDebugPort2](../../extensibility/debugger/reference/idebugport2.md)， [IDebugProcess2](../../extensibility/debugger/reference/idebugprocess2.md)，和[IDebugProgram2](../../extensibility/debugger/reference/idebugprogram2.md)介面，代表此連接埠，處理，以及程式，分別。 SDM 呼叫[IDebugProgram2::GetEngineInfo](../../extensibility/debugger/reference/idebugprogram2-getengineinfo.md)取得可以偵錯程式 DE 的 GUID。 原本取自 GUID [IDebugProgramNode2](../../extensibility/debugger/reference/idebugprogramnode2.md)介面。  
   

@@ -9,12 +9,12 @@ caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 23838c7e68a3da18ba5438a2c56814d6dc27f9b8
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: c8a701715c0adff479fa29dbe9c9b28287031dfd
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60102649"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63428293"
 ---
 # <a name="step-9-try-other-features"></a>步驟 9：嘗試其他功能
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,22 +28,22 @@ ms.locfileid: "60102649"
 - 以您選擇的圖示和色彩予以取代。  
   
     > [!TIP]
-    >  嘗試查看標籤的 [Forecolor](http://msdn.microsoft.com/library/system.windows.forms.control.forecolor%28v=vs.110%29.aspx) 屬性。  
+    > 嘗試查看標籤的 [Forecolor](http://msdn.microsoft.com/library/system.windows.forms.control.forecolor%28v=vs.110%29.aspx) 屬性。  
   
 - 加入遊戲計時器，追蹤玩家過關所需的時間。  
   
     > [!TIP]
-    >  若要這樣做，您可以加入標籤以便在 TableLayoutPanel 上方的表單上顯示已耗用的時間，並將另一個計時器加入至表單以追蹤時間。 請使用程式碼在玩家啟動遊戲時啟動計時器，並在配對最後兩個圖示之後停止計時器。  
+    > 若要這樣做，您可以加入標籤以便在 TableLayoutPanel 上方的表單上顯示已耗用的時間，並將另一個計時器加入至表單以追蹤時間。 請使用程式碼在玩家啟動遊戲時啟動計時器，並在配對最後兩個圖示之後停止計時器。  
   
 - 加入當玩家找到配對項目時的音效、當玩家發現不相符的兩個圖示時的另一種音效，以及當程式再次隱藏圖示時的第三種音效。  
   
     > [!TIP]
-    >  若要播放音效，您可以使用 System.media 命名空間。 如需詳細資訊，請參閱 [Play Sounds in Windows Forms App (C# .NET)](http://youtu.be/qOh4ooHg1UU) (在 Windows Forms 應用程式中播放音效 (C# .NET)) 或 [How To Play Audio In Visual Basic](http://youtu.be/-4oPDeQrtMs) (如何在 Visual Basic 中播放音訊)。  
+    > 若要播放音效，您可以使用 System.media 命名空間。 如需詳細資訊，請參閱 [Play Sounds in Windows Forms App (C# .NET)](http://youtu.be/qOh4ooHg1UU) (在 Windows Forms 應用程式中播放音效 (C# .NET)) 或 [How To Play Audio In Visual Basic](http://youtu.be/-4oPDeQrtMs) (如何在 Visual Basic 中播放音訊)。  
   
 - 使戲局變大，可讓遊戲變得更困難。  
   
     > [!TIP]
-    >  您需要做的不僅是將資料列及資料行加入至 TableLayoutPanel，還需要考量您所建立的圖示數目。  
+    > 您需要做的不僅是將資料列及資料行加入至 TableLayoutPanel，還需要考量您所建立的圖示數目。  
   
 - 如果玩家的速度太慢回應而且並未在特定時間內及時選擇第二個圖示，則隱藏第一個圖示，可讓遊戲更具挑戰性。  
   

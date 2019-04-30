@@ -14,18 +14,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d6fb1ab2addb58f9b28e1185fd55f9fdf63f5600
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.openlocfilehash: 06b96327205369d0280a865b632801edbf199745
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56628959"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63407857"
 ---
 # <a name="ltcompatibleframeworksgt-element-clickonce-deployment"></a>&lt;compatibleFrameworks&gt;項目 （ClickOnce 部署）
 識別安裝及執行此應用程式所需的 .NET Framework 版本。
 
 > [!NOTE]
->  [*MageUI.exe* ](/dotnet/framework/tools/mageui-exe-manifest-generation-and-editing-tool-graphical-client)不支援`compatibleFrameworks`憑證，使用已簽署項目儲存應用程式資訊清單時[ *MageUI.exe*](/dotnet/framework/tools/mageui-exe-manifest-generation-and-editing-tool-graphical-client)。 您必須改用 [*Mage.exe*](/dotnet/framework/tools/mage-exe-manifest-generation-and-editing-tool)。
+> [*MageUI.exe* ](/dotnet/framework/tools/mageui-exe-manifest-generation-and-editing-tool-graphical-client)不支援`compatibleFrameworks`憑證，使用已簽署項目儲存應用程式資訊清單時[ *MageUI.exe*](/dotnet/framework/tools/mageui-exe-manifest-generation-and-editing-tool-graphical-client)。 您必須改用 [*Mage.exe*](/dotnet/framework/tools/mage-exe-manifest-generation-and-editing-tool)。
 
 ## <a name="syntax"></a>語法
 
@@ -45,14 +45,14 @@ ms.locfileid: "56628959"
 
  下表列出屬性，`compatibleFrameworks`項目支援。
 
-|屬性|說明|
+|屬性|描述|
 |---------------|-----------------|
 |`S` `upportUrl`|選擇性。 指定的 URL，可以下載相容的慣用的.NET Framework 版本的位置。|
 
 ## <a name="framework"></a>架構
  必要項。 下表列出的屬性，`framework`項目支援。
 
-|屬性|說明|
+|屬性|描述|
 |---------------|-----------------|
 |`targetVersion`|必要項。 指定的目標.NET Framework 的版本號碼。|
 |`profile`|必要項。 指定的目標.NET Framework 的設定檔。|

@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 85b9d20dd67ff11f5bded7060440f2e768a205a9
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.openlocfilehash: 84f82ab6e5cca57a1fabd600cecc7a5ee505c150
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56722859"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63411110"
 ---
 # <a name="vsix-manifest-designer"></a>VSIX 資訊清單設計工具
 修改 VSIX 封裝資訊清單檔，它會設定 Visual Studio 擴充功能的安裝行為。
@@ -29,7 +29,7 @@ ms.locfileid: "56722859"
  若要開啟 [ **VSIX 資訊清單設計工具**，找出*source.extension.vsixmanifest*中的檔案**方案總管] 中**，並開啟檔案。 如果檔案不包含有效的 XML，將不會開啟資訊清單設計工具。
 
 > [!NOTE]
->  *Source.extension.vsixmanifest*檔案輸出至*extension.vsixmanifest*建置封裝時。
+> *Source.extension.vsixmanifest*檔案輸出至*extension.vsixmanifest*建置封裝時。
 
 ## <a name="uielement-list"></a>UIElement 清單
  **VSIX 資訊清單設計工具**包含對應至結構描述的下列最上層元素的四個區段：

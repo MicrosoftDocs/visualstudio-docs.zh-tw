@@ -60,12 +60,12 @@ caps.latest.revision: 46
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a949f920fe956d1b0b3e7e9522d1b82e26a60168
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: bba1d1b45c47a61f85bf37d4768a8f05ba0c3e87
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60077819"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63439781"
 ---
 # <a name="writing-code-in-the-code-and-text-editor"></a>在程式碼和文字編輯器中撰寫程式碼
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -78,7 +78,7 @@ Visual Studio 編輯器提供許多功能，讓您能夠更輕鬆地撰寫並管
  不同的 Visual Studio 語言提供不同的功能集，而在某些情況下，功能在不同的語言下運作方式也會不同。 在功能的描述中有指出許多這些差異，如需詳細資訊，請參閱特定 Visual Studio 語言的各章節。  
 
 > [!IMPORTANT]
->  Visual Studio 的版本及您正在使用的設定，可能會影響 IDE 中的功能。 其可能會與本主題中所述內容有所不同。  
+> Visual Studio 的版本及您正在使用的設定，可能會影響 IDE 中的功能。 其可能會與本主題中所述內容有所不同。  
 
 ## <a name="editor-features"></a>編輯器功能  
 

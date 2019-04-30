@@ -14,12 +14,12 @@ caps.latest.revision: 14
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: e105ef33202781dcf3a2f82706827156e76548eb
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 560ab40811bc53c97e7097e510144d62aeddfbb2
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60084332"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63421818"
 ---
 # <a name="just-my-code"></a>Just My Code
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,13 +32,13 @@ ms.locfileid: "60084332"
  ![啟用 Just My Code，在 [選項] 對話方塊](../debugger/media/dbg-justmycode-options.png "DBG_JustMyCode_Options")  
   
 > [!NOTE]
->  **啟用 Just My Code**設定是套用至所有語言中的所有 Visual Studio 專案的全域設定。  
+> **啟用 Just My Code**設定是套用至所有語言中的所有 Visual Studio 專案的全域設定。  
   
 ### <a name="BKMK_Override_call_stack_filtering"></a> 覆寫呼叫堆疊篩選  
  在呼叫堆疊的顯示中，例如在 [呼叫堆疊] 和 [工作] 視窗中，Just My Code 會將非使用者程式碼摺疊至標記為 `[External Code]` 標註的框架中。 若要檢視摺疊的框架，請選擇**顯示外部程式碼**顯示呼叫堆疊的操作功能表上。  
   
 > [!NOTE]
->  **顯示外部程式碼**設定會儲存到目前的使用者程式碼剖析工具。 它會套用至使用者所開啟的所有語言之專案。  
+> **顯示外部程式碼**設定會儲存到目前的使用者程式碼剖析工具。 它會套用至使用者所開啟的所有語言之專案。  
   
 ## <a name="BKMK__NET_Framework_Just_My_Code"></a> .NET framework Just My Code  
   

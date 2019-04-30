@@ -37,12 +37,12 @@ caps.latest.revision: 35
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 4a0edc40a8a6523c76a6b6f8074a108219152c06
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 51d361bf74fb1181c64e5299b0925c262f185e9b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54756874"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63426326"
 ---
 # <a name="finding-and-replacing-text"></a>Finding and Replacing Text
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -54,7 +54,7 @@ ms.locfileid: "54756874"
  若要尋找和取代規則運算式，請參閱[在 Visual Studio 中使用規則運算式](../ide/using-regular-expressions-in-visual-studio.md)。  
   
 > [!TIP]
->  [尋找/命令] 方塊仍然是工具列控制項，但不再預設為可見。 您可以選擇 [標準] 工具列上的 [新增或移除按鈕]，然後選擇 [尋找]，以顯示 [尋找/命令] 方塊。 如需詳細資訊，請參閱[尋找/命令方塊](../ide/find-command-box.md)。  
+> [尋找/命令] 方塊仍然是工具列控制項，但不再預設為可見。 您可以選擇 [標準] 工具列上的 [新增或移除按鈕]，然後選擇 [尋找]，以顯示 [尋找/命令] 方塊。 如需詳細資訊，請參閱[尋找/命令方塊](../ide/find-command-box.md)。  
   
 ## <a name="find-and-replace-control"></a>尋找和取代控制項  
  [尋找和取代] 控制項會出現在程式碼編輯器視窗的右上角。 [尋找和取代] 控制項會立即反白顯示目前文件中每個出現的指定搜尋字串。 您可以選擇搜尋控制項上的 [找下一個] 按鈕或 [找上一個] 按鈕，以從第一個出現位置巡覽至另一個出現位置。  
@@ -79,5 +79,5 @@ ms.locfileid: "54756874"
 ### <a name="creating-custom-component-sets"></a>建立自訂元件集  
  您可以選擇 [查詢] 方塊旁的 [編輯自訂元件集] 按鈕，將元件集定義為搜尋範圍。 您可以指定已安裝的 .NET 或 COM 元件、方案中所含的 Visual Studio 專案，或者任何組件或類型庫 (.dll、.tlb、.olb、.exe 或 .ocx)。 若要搜尋參考，請選取 [查詢參考] 方塊。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [在 Visual Studio 中使用規則運算式](../ide/using-regular-expressions-in-visual-studio.md)

@@ -9,12 +9,12 @@ caps.latest.revision: 15
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 316243f53871c9411af08d6721f2ca590fadea99
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 5d49b870b83eeb4bce48c562f3944aacef871cd2
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60078612"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63431059"
 ---
 # <a name="application-timeline"></a>應用程式時間軸
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,13 +38,13 @@ ms.locfileid: "60078612"
 5. Windows 7  
   
 > [!NOTE]
->  除了 [時間軸]  資料之外，您還可以收集並分析 CPU 使用量資料和能源消耗資料。 請參閱[執行但不偵錯程式碼剖析工具](http://msdn.microsoft.com/library/e97ce1a4-62d6-4b8e-a2f7-61576437ff01)  
+> 除了 [時間軸]  資料之外，您還可以收集並分析 CPU 使用量資料和能源消耗資料。 請參閱[執行但不偵錯程式碼剖析工具](http://msdn.microsoft.com/library/e97ce1a4-62d6-4b8e-a2f7-61576437ff01)  
   
 ## <a name="BKMK_Collect_Timeline_data_for_your_app"></a>收集應用程式時間軸資料  
  您可以在本機電腦、連接的裝置、Visual Studio 模擬器 (Simulator 或 Emulator) 或遠端裝置上分析應用程式的回應性。 請參閱[來執行分析工具，但不偵錯](http://msdn.microsoft.com/library/e97ce1a4-62d6-4b8e-a2f7-61576437ff01)。  
   
 > [!TIP]
->  請盡可能直接在裝置上執行應用程式。 在模擬器上或透過遠端桌面連接觀察到的應用程式效能，可能與裝置上的實際效能不同。 相反地，使用 Visual Studio 遠端工具收集資料並不會影響效能資料。  
+> 請盡可能直接在裝置上執行應用程式。 在模擬器上或透過遠端桌面連接觀察到的應用程式效能，可能與裝置上的實際效能不同。 相反地，使用 Visual Studio 遠端工具收集資料並不會影響效能資料。  
   
  基礎步驟如下：  
   
@@ -55,7 +55,7 @@ ms.locfileid: "60078612"
 3. 選取 [應用程式時間軸]  ，然後在視窗底部按一下 [開始]  。  
   
     > [!NOTE]
-    >  您可能會看到 [使用者帳戶控制] 視窗，其要求您提供執行 VsEtwCollector.exe 的權限。 按一下 [ **是**]。  
+    > 您可能會看到 [使用者帳戶控制] 視窗，其要求您提供執行 VsEtwCollector.exe 的權限。 按一下 [ **是**]。  
   
 4. 執行您感興趣用來在應用程式中程式碼剖析的案例，來收集效能資料。  
   
@@ -107,7 +107,7 @@ ms.locfileid: "60078612"
 |**XAML 其他**|執行 XAML 執行階段程式碼所花費的時間。|  
   
 > [!TIP]
->  當您開始進行程式碼剖析以檢視 UI 執行緒上所執行的應用程式時，請選擇 [CPU 使用量]  工具和 [應用程式時間軸]  工具。 將長時間執行的應用程式程式碼移到背景執行緒可以改善 UI 回應性。  
+> 當您開始進行程式碼剖析以檢視 UI 執行緒上所執行的應用程式時，請選擇 [CPU 使用量]  工具和 [應用程式時間軸]  工具。 將長時間執行的應用程式程式碼移到背景執行緒可以改善 UI 回應性。  
   
 #### <a name="BKMK_Customizing_Timeline_details_"></a> 自訂時間軸詳細資料  
  您可以使用 [時間軸詳細資料]  工具列來排序、篩選及指定 [時間軸詳細資料]  檢視項目的註釋。  

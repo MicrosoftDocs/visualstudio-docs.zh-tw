@@ -12,19 +12,19 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: fc97aad2d3a056a61ae925816ac6d2457918db65
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 0e173819f4966bd1770ac862626987bafb9bf120
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60100777"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63418447"
 ---
 # <a name="how-to-generate-registry-information-for-an-installer"></a>HOW TO：產生安裝程式的登錄資訊
 
 *RegPkg.exe*公用程式可用來產生 managed VSPackage 註冊資訊清單。 資訊清單可以併入 Windows 安裝程式安裝套件。 RegPkg 也可以產生的檔案，可以包含在安裝程式來源檔案是根據[Windows Installer XML 工具組](http://go.microsoft.com/fwlink/?LinkId=62238)。
 
 > [!IMPORTANT]
->  RegPkg 產生專屬於您的開發系統的路徑名稱，因此每次您使用 RegPkg 時，您必須編輯輸出需要使用適當的 Windows Installer 格式屬性。 例如，`InprocServer32`值應該 *\<SystemFolder\>mscoree.dll*路徑應該使用*\<#filekey\>* 和*\<$componentkey\>*。 調整的輸出，如此一來支援安裝在不同的磁碟機，或在不同的目錄、 本地化的目錄名稱，以及使用者可以選擇的路徑中的 Windows 電腦。 如需詳細資訊，請參閱 <<c0> [ 格式化](http://go.microsoft.com/fwlink/?LinkId=71120)Windows Installer SDK 中。 如果您依照您的開發系統路徑 RegPkg 慣例 — 例如，檔案識別碼的格式*File_\<檔名\>*— 您需要進行較少的變更。
+> RegPkg 產生專屬於您的開發系統的路徑名稱，因此每次您使用 RegPkg 時，您必須編輯輸出需要使用適當的 Windows Installer 格式屬性。 例如，`InprocServer32`值應該 *\<SystemFolder\>mscoree.dll*路徑應該使用*\<#filekey\>* 和*\<$componentkey\>*。 調整的輸出，如此一來支援安裝在不同的磁碟機，或在不同的目錄、 本地化的目錄名稱，以及使用者可以選擇的路徑中的 Windows 電腦。 如需詳細資訊，請參閱 <<c0> [ 格式化](http://go.microsoft.com/fwlink/?LinkId=71120)Windows Installer SDK 中。 如果您依照您的開發系統路徑 RegPkg 慣例 — 例如，檔案識別碼的格式*File_\<檔名\>*— 您需要進行較少的變更。
 
 ## <a name="to-create-a-registration-manifest"></a>若要建立的註冊資訊清單
 

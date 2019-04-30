@@ -9,12 +9,12 @@ caps.latest.revision: 15
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: edce61d7f5cf8f84c021b759fdaee1c06bf68ccb
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: ffbd5568d35b59e262577102a9368089fdcac6be
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60044916"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63431097"
 ---
 # <a name="visualizing-eventsource-events-as-markers"></a>將 EventSource 事件顯示為標記
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -94,7 +94,7 @@ ms.locfileid: "60044916"
  使用 cvSpanId 欄位 (一個整數)，來比對事件組合。 表示延伸範圍的每一組開始/停止事件都必須要有唯一的值。 一般而言，對於並行程式碼，這需要使用 <xref:System.Threading.Interlocked.Exchange%2A> 這類同步處理原始物件，以確保正確的索引鍵 (用於 CvSpanID 的值)。  
   
 > [!NOTE]
->  使用 SpanID 將延伸範圍巢狀化，不支援允許其在相同執行緒上部分重疊，或允許其在一個執行緒上開始並在另一個執行緒上結束。  
+> 使用 SpanID 將延伸範圍巢狀化，不支援允許其在相同執行緒上部分重疊，或允許其在一個執行緒上開始並在另一個執行緒上結束。  
   
 ## <a name="see-also"></a>另請參閱  
  [並行視覺化檢視標記](../profiling/concurrency-visualizer-markers.md)

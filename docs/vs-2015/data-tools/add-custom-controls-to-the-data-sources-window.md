@@ -23,12 +23,12 @@ caps.latest.revision: 45
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 5bc50d013f64543a60d6dad63531c9963fae869c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 99bd377ac54b664424b4bd29ab2917b00dae35fa
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60055635"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63429116"
 ---
 # <a name="add-custom-controls-to-the-data-sources-window"></a>將自訂控制項加入 [資料來源] 視窗
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,7 +38,7 @@ ms.locfileid: "60055635"
  如需有關選取的項目中建立的資料繫結控制項**資料來源** 視窗中，請參閱[設定從資料來源視窗拖曳時要建立的控制項](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md)。  
   
 > [!NOTE]
->  根據目前使用的設定與版本，您所看到的對話方塊與功能表命令可能會與 [說明] 中所描述的不同。 若要變更您的設定，在**工具**功能表上，選取**匯入和匯出設定**。 如需詳細資訊，請參閱 [在 Visual Studio 中自訂開發設定](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)  
+> 根據目前使用的設定與版本，您所看到的對話方塊與功能表命令可能會與 [說明] 中所描述的不同。 若要變更您的設定，在**工具**功能表上，選取**匯入和匯出設定**。 如需詳細資訊，請參閱 [在 Visual Studio 中自訂開發設定](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)  
   
 ## <a name="customizinglist"></a> 自訂資料類型的可繫結控制項的清單  
  若要新增或移除的項目中的可用控制項清單中的控制項**Zdroje dat**有特定的資料類型，執行下列步驟的視窗。  
@@ -66,7 +66,7 @@ ms.locfileid: "60055635"
 5. 在 **關聯的控制項**方塊中，選取您想要選取的資料類型，可用的每個控制項或清除任何您想要從清單中移除的控制項。  
   
     > [!NOTE]
-    >  如果您想要選取的控制項不會不出現在**關聯的控制項** 方塊中，您必須將控制項新增至清單。 如需詳細資訊，請參閱 < [Adding Controls to 清單相關聯控制項的資料型別的](#addingcontrols)。  
+    > 如果您想要選取的控制項不會不出現在**關聯的控制項** 方塊中，您必須將控制項新增至清單。 如需詳細資訊，請參閱 < [Adding Controls to 清單相關聯控制項的資料型別的](#addingcontrols)。  
   
 6. 按一下 [確定] 。  
   
@@ -94,7 +94,7 @@ ms.locfileid: "60055635"
 3. 在 **關聯的控制項**方塊中，您剛加入至控制項**工具箱**現在應該會出現。  
   
     > [!NOTE]
-    >  位在目前方案中，或是參考的組件中的控制項才可以加入至相關聯控制項的清單。 （控制項也必須實作其中一個資料繫結屬性上表中。）若要將資料繫結至自訂控制項，不適用於**資料來源** 視窗中，將控制項從**工具箱**放至設計介面，然後拖曳的項目繫結至從**資料來源**視窗拖曳至控制項。  
+    > 位在目前方案中，或是參考的組件中的控制項才可以加入至相關聯控制項的清單。 （控制項也必須實作其中一個資料繫結屬性上表中。）若要將資料繫結至自訂控制項，不適用於**資料來源** 視窗中，將控制項從**工具箱**放至設計介面，然後拖曳的項目繫結至從**資料來源**視窗拖曳至控制項。  
   
 ## <a name="see-also"></a>另請參閱  
  [將控制項繫結至 Visual Studio 中的資料](../data-tools/bind-controls-to-data-in-visual-studio.md)

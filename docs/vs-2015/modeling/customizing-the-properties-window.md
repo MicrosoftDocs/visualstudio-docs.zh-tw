@@ -11,12 +11,12 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 1c346cc488966448cc1b77b624c80fe602555840
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 3e391e21ac16bdbee9fc2881b264f964a4b28cc0
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60088791"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433224"
 ---
 # <a name="customizing-the-properties-window"></a>自訂屬性視窗
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -63,7 +63,7 @@ ms.locfileid: "60088791"
  若要轉送屬性，您可以定義網域類型描述元。 如果您有兩個網域類別之間的網域關聯性，您可以使用網域型別描述項來設定第二個網域類別中的網域屬性值的第一個類別中的網域屬性。 例如，如果您有之間的關聯性**活頁簿**網域類別與**作者**網域類別，您可以使用網域型別描述項來進行**名稱**屬性本書**作者**出現在 [屬性] 視窗中，當使用者選取的書籍。  
   
 > [!NOTE]
->  當使用者編輯模型時，轉送屬性會影響僅 [屬性] 視窗。 它不會接收的類別上定義的網域屬性。 如果您想要存取轉送的網域屬性，在 DSL 定義中的其他部分，或在程式碼中，您必須存取轉送項目。  
+> 當使用者編輯模型時，轉送屬性會影響僅 [屬性] 視窗。 它不會接收的類別上定義的網域屬性。 如果您想要存取轉送的網域屬性，在 DSL 定義中的其他部分，或在程式碼中，您必須存取轉送項目。  
   
  下列程序假設您已建立 DSL。 前幾個步驟摘要說明的必要條件。  
   
@@ -121,7 +121,7 @@ ms.locfileid: "60088791"
         新的項目之下**網域類型**節點。  
   
        > [!WARNING]
-       >  功能表項目不是 DSL 的根節點上**網域類型**節點。  
+       > 功能表項目不是 DSL 的根節點上**網域類型**節點。  
   
    2. 在 [屬性] 視窗中設定的名稱和新類型的命名空間。  
   
@@ -182,7 +182,7 @@ ms.locfileid: "60088791"
   您也可以提供屬性的值，將會顯示在屬性方格中的圖形表示。 若要這樣做，請覆寫`GetPaintValueSupported`，和`PaintValue`。  如需詳細資訊，請參閱<xref:System.Drawing.Design.UITypeEditor>。  
   
 > [!NOTE]
->  在不同的程式碼檔案中加入程式碼**Dsl**專案。  
+> 在不同的程式碼檔案中加入程式碼**Dsl**專案。  
   
  例如:   
   
@@ -214,7 +214,7 @@ internal class TextFileNameEditor : System.Windows.Forms.Design.FileNameEditor
  您可以提供一份使用者可從中選擇的值。  
   
 > [!NOTE]
->  這項技術會提供一份可能會在執行階段變更的值。 如果您想要提供不會變更的清單，請考慮改為使用列舉的類型做為您的網域屬性的類型。  
+> 這項技術會提供一份可能會在執行階段變更的值。 如果您想要提供不會變更的清單，請考慮改為使用列舉的類型做為您的網域屬性的類型。  
   
  若要定義的標準值清單，您將新增至您的網域屬性具有下列格式的 CLR 屬性：  
   
