@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: a1b6ef478b9f3661690383623df7c89fae28bb0c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 5c264048887d3a1ba77d498784dc3e6cc4384159
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60063539"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63440353"
 ---
 # <a name="associate-a-form-region-with-an-outlook-message-class"></a>Outlook 訊息類別相關聯的表單區域
   您可以指定哪些 Microsoft Office Outlook 項目顯示表單區域的表單區域關聯至每個項目的訊息類別。 例如，如果您想要的郵件項目底部附加表單區域，您可以將表單區域`IPM.Note`訊息類別。
@@ -45,7 +45,7 @@ ms.locfileid: "60063539"
  您也可以指定自訂訊息類別的名稱。 自訂訊息類別會識別您在 Outlook 中定義的自訂表單。
 
 > [!NOTE]
->  為取代型和全部取代型表單區域，您可以指定新的自訂訊息類別名稱。 您不需要使用現有的自訂表單的訊息類別名稱。 自訂訊息類別名稱必須是唯一的。 若要確保名稱是唯一的一個方式是使用如下所示的命名慣例：\<*StandardMessageClassName*>。\<*公司*>。\<*MessageClassName*> (例如： `IPM.Note.Contoso.MyMessageClass`)。
+> 為取代型和全部取代型表單區域，您可以指定新的自訂訊息類別名稱。 您不需要使用現有的自訂表單的訊息類別名稱。 自訂訊息類別名稱必須是唯一的。 若要確保名稱是唯一的一個方式是使用如下所示的命名慣例：\<*StandardMessageClassName*>。\<*公司*>。\<*MessageClassName*> (例如： `IPM.Note.Contoso.MyMessageClass`)。
 
 ## <a name="associate-a-form-region-with-an-outlook-message-class"></a>Outlook 訊息類別相關聯的表單區域
  有兩種方式，將表單區域關聯的訊息類別：
@@ -76,7 +76,7 @@ ms.locfileid: "60063539"
   **新的 Outlook 表單區域**當您按一下時，精靈會驗證您輸入的格式**完成**。
 
 > [!NOTE]
->  **新的 Outlook 表單區域**精靈不會驗證您提供的訊息類別名稱是否正確或無效。
+> **新的 Outlook 表單區域**精靈不會驗證您提供的訊息類別名稱是否正確或無效。
 
  當您完成精靈中，**新的 Outlook 表單區域**精靈會將屬性套用至表單區域類別包含指定的訊息類別名稱。 您也可以手動套用這些屬性。
 
@@ -101,7 +101,7 @@ ms.locfileid: "60063539"
   當您建置專案時，visual Studio 就會驗證訊息類別名稱的格式。
 
 > [!NOTE]
->  Visual Studio 不會驗證您提供的訊息類別名稱正確或無效。
+> Visual Studio 不會驗證您提供的訊息類別名稱正確或無效。
 
 ## <a name="see-also"></a>另請參閱
 - [存取表單區域在執行階段](../vsto/accessing-a-form-region-at-run-time.md)

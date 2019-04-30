@@ -9,12 +9,12 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 9fa00e8b5aafa131a9ca64b6fdaa7cba79fcb3b2
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 164f049b5ed1133acfd1f4e66f805b1510d29d5d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60074212"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63411494"
 ---
 # <a name="t4-assembly-directive"></a>T4 組件指示詞
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -24,7 +24,7 @@ ms.locfileid: "60074212"
  撰寫文字範本的一般概觀，請參閱 <<c0> [ 撰寫 T4 文字範本](../modeling/writing-a-t4-text-template.md)。  
   
 > [!NOTE]
->  在執行階段 (前置處理過的) 文字範本中，不需要 `assembly` 指示詞。 相反地，將必要的組件，加入**參考**的您[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]專案。  
+> 在執行階段 (前置處理過的) 文字範本中，不需要 `assembly` 指示詞。 相反地，將必要的組件，加入**參考**的您[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]專案。  
   
 ## <a name="using-the-assembly-directive"></a>使用組件指示詞  
  指示詞的語法如下：  

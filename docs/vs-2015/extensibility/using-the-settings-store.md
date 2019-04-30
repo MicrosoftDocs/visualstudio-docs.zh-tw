@@ -10,12 +10,12 @@ ms.assetid: 447ec08a-eca5-40b8-89b0-f98fdf3d39a4
 caps.latest.revision: 29
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 87a561ed3596b98f35e26e19e2c5851534aba564
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 4b6c2810a81ada06152faea06e86a27f7907a643
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60094813"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63430104"
 ---
 # <a name="using-the-settings-store"></a>使用設定存放區
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -84,6 +84,6 @@ ms.locfileid: "60094813"
 2. 瀏覽至 HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\14.0Exp_Config\InstalledProducts\\。  
   
     > [!NOTE]
-    >  請確定您正在查看該索引鍵包含 \14.0Exp_Config\ 和不 \14.0_Config\\。 當您執行 Visual Studio 的實驗執行個體時，組態設定是在登錄區 「 14.0Exp_Config"。  
+    > 請確定您正在查看該索引鍵包含 \14.0Exp_Config\ 和不 \14.0_Config\\。 當您執行 Visual Studio 的實驗執行個體時，組態設定是在登錄區 「 14.0Exp_Config"。  
   
 3. 展開 \Installed Products\ 節點。 如果在先前步驟中的訊息是**Microsoft Windows Phone 開發人員工具安裝：True**，則 \Installed Products\ 應該包含 Microsoft Windows Phone 開發人員工具 節點。 如果訊息是**Microsoft Windows Phone 開發人員工具安裝：False**，則 \Installed Products\ 不應包含 Microsoft Windows Phone 開發人員工具 節點。

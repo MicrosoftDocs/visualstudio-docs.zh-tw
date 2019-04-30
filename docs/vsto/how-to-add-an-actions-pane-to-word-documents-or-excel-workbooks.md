@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f1d72d3da8adeff7b8280bda84eb92b730679fea
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: f9696640358626c254f1792fc29a31a41d4bafb3
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60085840"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63427899"
 ---
 # <a name="how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks"></a>HOW TO：將執行窗格新增至 Word 文件或 Excel 活頁簿
   若要加入 Microsoft Office Word 文件或 Microsoft Excel 活頁簿的 [動作] 窗格，請先建立 Windows Forms 使用者控制項。 然後，將使用者控制項加入<xref:Microsoft.Office.Tools.ActionsPane.Controls%2A>的屬性`ThisDocument.ActionsPane`欄位 (Word) 或`ThisWorkbook.ActionsPane`專案中的欄位 (Excel)。
@@ -28,7 +28,7 @@ ms.locfileid: "60085840"
  [!INCLUDE[appliesto_alldoc](../vsto/includes/appliesto-alldoc-md.md)]
 
 > [!NOTE]
->  在下列指示的某些 Visual Studio 使用者介面項目中，您的電腦可能會顯示不同的名稱或位置。 您所擁有的 Visual Studio 版本以及使用的設定會決定這些項目。 如需詳細資訊，請參閱[將 Visual Studio IDE 個人化](../ide/personalizing-the-visual-studio-ide.md)。
+> 在下列指示的某些 Visual Studio 使用者介面項目中，您的電腦可能會顯示不同的名稱或位置。 您所擁有的 Visual Studio 版本以及使用的設定會決定這些項目。 如需詳細資訊，請參閱[將 Visual Studio IDE 個人化](../ide/personalizing-the-visual-studio-ide.md)。
 
 ## <a name="creating-the-user-control"></a>建立使用者控制項
  下列程序示範如何建立使用者控制項，在 Word 或 Excel 專案。 它還會新增至使用者控制項，將文字寫入至文件或活頁簿中，使用者按一下的按鈕。
@@ -42,12 +42,12 @@ ms.locfileid: "60085840"
 3. 在**加入新項目**對話方塊中，選取**執行窗格控制項**，其命名**HelloControl**，然後按一下**新增**。
 
     > [!NOTE]
-    >  您也可以加入**使用者控制項**項目加入您的專案。 所產生的類別**執行窗格控制項**並**使用者控制**的功能相同的項目。
+    > 您也可以加入**使用者控制項**項目加入您的專案。 所產生的類別**執行窗格控制項**並**使用者控制**的功能相同的項目。
 
 4. 從**Windows Form**索引標籤**工具箱**拖曳**按鈕**控制項拖曳至控制項。
 
     > [!NOTE]
-    >  如果控制項不顯示在設計工具中，按兩下**HelloControl**中**方案總管 中**。
+    > 如果控制項不顯示在設計工具中，按兩下**HelloControl**中**方案總管 中**。
 
 5. 加入程式碼以<xref:System.Windows.Forms.Control.Click>按鈕的事件處理常式。 下列範例會顯示 Microsoft Office Word 文件的程式碼。
 

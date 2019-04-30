@@ -9,12 +9,12 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: df77c65d116bf0e44b700d15d0b810e9adf04c78
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: a753ac6691e419267fdca34ed5e78a9a5b3cfdd3
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60112113"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63424793"
 ---
 # <a name="walkthrough-customizing-the-insert-update-and-delete-behavior-of-entity-classes"></a>逐步解說：自訂實體類別的插入、更新和刪除行為
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -63,7 +63,7 @@ ms.locfileid: "60112113"
 2. 將專案命名為**UpdatingwithSProcsWalkthrough**。  
   
     > [!NOTE]
-    >  [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)] 和 C# 專案都支援 [!INCLUDE[vbprvb](../includes/vbprvb-md.md)]。 因此請以其中一種語言建立新專案。  
+    > [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)] 和 C# 專案都支援 [!INCLUDE[vbprvb](../includes/vbprvb-md.md)]。 因此請以其中一種語言建立新專案。  
   
 3. 按一下  **Windows Forms 應用程式**範本，然後按一下**確定**。 如需詳細資訊，請參閱 <<c0> [ 用戶端應用程式](http://msdn.microsoft.com/library/2dfb50b7-5af2-4e12-9bbb-c5ade0e39a68)。  
   
@@ -89,7 +89,7 @@ ms.locfileid: "60112113"
      會建立名為 **Customer** 的實體類別。 它的屬性會對應至 Customers 資料表中的各資料行。 因為這個實體類別代表 Customers 資料表中的單一客戶，所以其名稱為 **Customer** (而非 **Customers**)。  
   
     > [!NOTE]
-    >  此重新命名的行為稱為「複數表示」。 它可以開啟或關閉在中開啟[Options Dialog Box](../ide/reference/options-dialog-box-visual-studio.md)。 如需詳細資訊，請參閱[如何：開啟和關閉複數表示 (O/R 設計工具)](../data-tools/how-to-turn-pluralization-on-and-off-o-r-designer.md)。  
+    > 此重新命名的行為稱為「複數表示」。 它可以開啟或關閉在中開啟[Options Dialog Box](../ide/reference/options-dialog-box-visual-studio.md)。 如需詳細資訊，請參閱[如何：開啟和關閉複數表示 (O/R 設計工具)](../data-tools/how-to-turn-pluralization-on-and-off-o-r-designer.md)。  
   
 3. 按一下 [建置] 功能表上的 [建置 UpdatingwithSProcsWalkthrough] 以建置專案。  
   
@@ -102,7 +102,7 @@ ms.locfileid: "60112113"
 7. 展開 [UpdatingwithSProcsWalkthrough] 節點，然後尋找並選取 [Customer] 類別。  
   
     > [!NOTE]
-    >  如果**客戶**類別無法使用，請取消精靈、建置專案，然後再次執行精靈。  
+    > 如果**客戶**類別無法使用，請取消精靈、建置專案，然後再次執行精靈。  
   
 8. 按一下 [完成] 以建立資料來源，然後將 [客戶] 實體類別新增至 [資料來源] 視窗。  
   
@@ -116,7 +116,7 @@ ms.locfileid: "60112113"
 2. 從**資料來源** 視窗中，拖曳**客戶**節點拖曳至 Form1。  
   
     > [!NOTE]
-    >  若要顯示 [資料來源] 視窗，請按一下 [資料] 功能表上的 [顯示資料來源]。  
+    > 若要顯示 [資料來源] 視窗，請按一下 [資料] 功能表上的 [顯示資料來源]。  
   
 3. 在 [程式碼編輯器] 中開啟 Form1。  
   
@@ -192,7 +192,7 @@ ms.locfileid: "60112113"
 9. 按一下 [套用] 儲存所選取類別和行為的設定。  
   
     > [!NOTE]
-    >  完成每一項變更後按一下 [套用]，即可繼續設定每個類別/行為組合的行為。 如果您變更了類別或行為再按一下 **套用**、 提供讓您套用任何變更將會出現警告對話方塊。  
+    > 完成每一項變更後按一下 [套用]，即可繼續設定每個類別/行為組合的行為。 如果您變更了類別或行為再按一下 **套用**、 提供讓您套用任何變更將會出現警告對話方塊。  
   
 10. 選取 [行為] 清單中的 [更新]。  
   
@@ -205,7 +205,7 @@ ms.locfileid: "60112113"
 13. 將 [Original_CustomerID] 方法引數對應至 [CustomerID (Original)] 類別屬性。  
   
     > [!NOTE]
-    >  根據預設，方法引數會對應至同名的類別屬性。 如果屬性名稱變更，使得資料表與實體類別之間不再對應，則您可能需要選取當 O/R 設計工具無法判斷正確的對應時，所要對應的對等類別屬性。 此外，如果方法引數沒有可對應的有效類別屬性，可以將 [類別屬性] 值設定為 [(無)]。  
+    > 根據預設，方法引數會對應至同名的類別屬性。 如果屬性名稱變更，使得資料表與實體類別之間不再對應，則您可能需要選取當 O/R 設計工具無法判斷正確的對應時，所要對應的對等類別屬性。 此外，如果方法引數沒有可對應的有效類別屬性，可以將 [類別屬性] 值設定為 [(無)]。  
   
 14. 按一下 [套用] 儲存所選類別和行為的設定。  
   
@@ -220,7 +220,7 @@ ms.locfileid: "60112113"
 19. 按一下 [確定] 。  
   
 > [!NOTE]
->  雖然這在本特定逐步解說中不會構成問題，仍不建議 [!INCLUDE[vbtecdlinq](../includes/vbtecdlinq-md.md)] 在插入和更新期間，針對識別 (自動遞增)、rowguidcol (資料庫產生的 GUID) 和時間戳記資料行自動處理資料庫產生的值。 其他資料行型別的資料庫產生值將非預期地產生 null 值。 若要傳回資料庫產生的值，您應該手動將 <xref:System.Data.Linq.Mapping.ColumnAttribute.IsDbGenerated%2A> 設定為 `true`，並將 <xref:System.Data.Linq.Mapping.ColumnAttribute.AutoSync%2A> 設定為下列其中一項：<xref:System.Data.Linq.Mapping.AutoSync>、<xref:System.Data.Linq.Mapping.AutoSync> 或 <xref:System.Data.Linq.Mapping.AutoSync>。  
+> 雖然這在本特定逐步解說中不會構成問題，仍不建議 [!INCLUDE[vbtecdlinq](../includes/vbtecdlinq-md.md)] 在插入和更新期間，針對識別 (自動遞增)、rowguidcol (資料庫產生的 GUID) 和時間戳記資料行自動處理資料庫產生的值。 其他資料行型別的資料庫產生值將非預期地產生 null 值。 若要傳回資料庫產生的值，您應該手動將 <xref:System.Data.Linq.Mapping.ColumnAttribute.IsDbGenerated%2A> 設定為 `true`，並將 <xref:System.Data.Linq.Mapping.ColumnAttribute.AutoSync%2A> 設定為下列其中一項：<xref:System.Data.Linq.Mapping.AutoSync>、<xref:System.Data.Linq.Mapping.AutoSync> 或 <xref:System.Data.Linq.Mapping.AutoSync>。  
   
 ## <a name="testing-the-application"></a>測試應用程式  
  再次執行應用程式，確認 **UpdateCustomers** 預存程序已正確更新資料庫中的客戶記錄。  

@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: d8aefab319b9b197b9b7df0e23fec71aa3cb64d1
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 7c729896083c7d32a48ba39906d8e9a0ebde4b59
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60039307"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63420945"
 ---
 # <a name="how-to-validate-data-when-a-new-row-is-added-to-a-listobject-control"></a>HOW TO：新的資料列加入 ListObject 控制項時驗證資料
   使用者可以將新的資料列加入繫結至資料的 <xref:Microsoft.Office.Tools.Excel.ListObject> 控制項。 您可以先驗證使用者的資料，再認可資料來源的變更。
@@ -30,7 +30,7 @@ ms.locfileid: "60039307"
  每次將資料列加入繫結至資料的 <xref:Microsoft.Office.Tools.Excel.ListObject> ，就會引發 <xref:Microsoft.Office.Tools.Excel.ListObject.BeforeAddDataBoundRow> 事件。 您可以處理這個事件以執行資料驗證。 例如，如果您的應用程式需要只有 65 年滿 18 歲之間的員工，可以加入資料來源，請確認輸入的年齡落在該範圍內加入資料列之前。
 
 > [!NOTE]
->  除用戶端之外，亦請一律檢查伺服器上的使用者輸入。 如需詳細資訊，請參閱 <<c0> [ 安全的用戶端應用程式](/dotnet/framework/data/adonet/secure-client-applications)。
+> 除用戶端之外，亦請一律檢查伺服器上的使用者輸入。 如需詳細資訊，請參閱 <<c0> [ 安全的用戶端應用程式](/dotnet/framework/data/adonet/secure-client-applications)。
 
 ### <a name="to-validate-data-when-a-new-row-is-added-to-data-bound-listobject"></a>在新資料列加入資料繫結的 ListObject 時驗證資料
 

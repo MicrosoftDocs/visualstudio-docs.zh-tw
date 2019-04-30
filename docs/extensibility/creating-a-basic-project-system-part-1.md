@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: cb6793855fc4df4080a7f94799cfe2372308a5a0
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: ced39d928b2d0d02c7008d6b44c934ccd053b09b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60060302"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63409995"
 ---
 # <a name="create-a-basic-project-system-part-1"></a>建立基本專案系統，第 1 部分
 在 Visual Studio 中，專案會是開發人員用來組織原始程式碼檔和其他資產的容器。 專案會顯示為子系中的解決方案**方案總管 中**。 專案可讓您組織、 建置、 偵錯和部署來源的程式碼及建立 Web 服務、 資料庫和其他資源的參考。
@@ -25,7 +25,7 @@ ms.locfileid: "60060302"
  專案檔案中定義的專案，例如 *.csproj* Visual C# 專案檔。 您可以建立您自己副檔名自己專案的專案類型。 如需專案類型的詳細資訊，請參閱[專案類型](../extensibility/internals/project-types.md)。
 
 > [!NOTE]
->  如果您需要使用自訂專案類型擴充 Visual Studio，我們強烈建議運用[Visual Studio 專案系統](https://github.com/Microsoft/VSProjectSystem)(VSP) 具有許多透過建置全新的專案系統的優點：
+> 如果您需要使用自訂專案類型擴充 Visual Studio，我們強烈建議運用[Visual Studio 專案系統](https://github.com/Microsoft/VSProjectSystem)(VSP) 具有許多透過建置全新的專案系統的優點：
 >
 > - 更輕鬆入門訓練。  即使基本的專案系統需要數以萬計的幾行程式碼。  利用 VSP 降低上架成本來按幾下之前您已準備好您的需求加以自訂。
 > - 更容易維護。  利用 VSP，您只需要維護您自己的案例。  我們會處理所有的專案系統基礎結構的保養。
@@ -35,7 +35,7 @@ ms.locfileid: "60060302"
  本逐步解說會示範如何建立具有專案副檔名的專案類型 *.myproj*。 本逐步解說會藉助現有的 Visual C# 專案系統。
 
 > [!NOTE]
->  如需擴充功能專案的範例，請參閱[VSSDK 範例](https://aka.ms/vs2015sdksamples)。
+> 如需擴充功能專案的範例，請參閱[VSSDK 範例](https://aka.ms/vs2015sdksamples)。
 
  本逐步解說將說明如何完成這些工作：
 
@@ -101,7 +101,7 @@ ms.locfileid: "60060302"
    ```
 
    > [!IMPORTANT]
-   >  這不是最終形式*Program.cs*程式碼，取代參數會在稍後步驟中處理。 您可能會看到編譯錯誤，但只要檔案**建置動作**是**內容**，您應該能夠建置並如往常般執行專案。
+   > 這不是最終形式*Program.cs*程式碼，取代參數會在稍後步驟中處理。 您可能會看到編譯錯誤，但只要檔案**建置動作**是**內容**，您應該能夠建置並如往常般執行專案。
 
 7. 儲存檔案。
 
@@ -110,7 +110,7 @@ ms.locfileid: "60060302"
 9. 在  *Projects\SimpleProject*資料夾新增名為 XML 檔案*SimpleProject.myproj*。
 
    > [!NOTE]
-   >  此類型的所有專案的都副檔名 *.myproj*。 如果您想要變更它，您必須變更它被提及的逐步解說中的每個地方。
+   > 此類型的所有專案的都副檔名 *.myproj*。 如果您想要變更它，您必須變更它被提及的逐步解說中的每個地方。
 
 10. 下列幾行取代現有的內容。
 
@@ -255,7 +255,7 @@ Templates
         ```
 
         > [!IMPORTANT]
-        >  別忘了在路徑結尾的反斜線。
+        > 別忘了在路徑結尾的反斜線。
 
     3. 重新載入專案。
 

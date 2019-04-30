@@ -21,12 +21,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 756b8859c2f13c53eb46a0d9ae9d32836997f70f
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
-ms.translationtype: MTE95
+ms.openlocfilehash: 9b498bdb491e3a15dddf005d43435d84b837fcd0
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55035922"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63387751"
 ---
 # <a name="how-to-debug-optimized-code"></a>HOW TO：對最佳化程式碼進行偵錯
 
@@ -74,10 +74,10 @@ ms.locfileid: "55035922"
 
 8. 如果您選擇 `Custom` 的 `Optimization` 選項，現在就可以為其他顯示在屬性清單裡的任一屬性設定其選項。
 
-9. 選取 [組態屬性 | C/c + +，命令列] 節點的 [專案屬性] 頁面中，並新增`(` [/Zo](/cpp/build/reference/zo-enhance-optimized-debugging) `)`來**其他選項**文字方塊。
+9. 選取 [組態屬性 | C /C++、 命令列] 節點的 [專案屬性] 頁面中，並新增`(` [/Zo](/cpp/build/reference/zo-enhance-optimized-debugging) `)`到**其他選項**文字方塊。
 
     > [!WARNING]
-    >  `/Zo` 需要 Visual Studio 2013 Update 3 或更新版本。
+    > `/Zo` 需要 Visual Studio 2013 Update 3 或更新版本。
     >
     >  新增 `/Zo` 將會停用 [編輯後繼續](../debugger/edit-and-continue-visual-csharp.md)。
 

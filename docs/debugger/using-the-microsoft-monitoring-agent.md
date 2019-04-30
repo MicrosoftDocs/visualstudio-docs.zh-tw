@@ -8,19 +8,19 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8fb9f1ec1eafb0dbea7ca5437d80a32e4fe9d9dc
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: c8f136b28c30c1fe79eda2f7c97540cb60a3ffda
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60043118"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63407552"
 ---
 # <a name="using-the-microsoft-monitoring-agent-c-visual-basic"></a>使用 Microsoft Monitoring Agent (C#，Visual Basic)
 
 您可以使用 **Microsoft Monitoring Agent**，在本機監視裝載 IIS 的 ASP.NET Web 應用程式和 SharePoint 2010 或 2013 應用程式是否發生錯誤、效能問題或其他問題。 您可以將來自代理程式的診斷事件儲存至 IntelliTrace 記錄檔 (.iTrace)。 接著，您可以在 Visual Studio Enterprise (但不能在 Professional 或 Community 版本) 中開啟記錄檔，以偵錯所有 Visual Studio 診斷工具的問題。 您也可以透過 **Trace** 模式執行代理程式，即可收集 IntelliTrace 診斷資料和方法資料。 Microsoft Monitoring Agent 可以與 [Application Insights](/azure/application-insights/) 和 [System Center Operation Manager](/previous-versions/system-center/system-center-2012-R2/hh205987(v=sc.12))整合。 Microsoft Monitoring Agent 在安裝時確實會變更目標系統的環境。
 
 > [!NOTE]
->  您也可以使用 **IntelliTrace 獨立收集器**收集遠端機器上 Web、SharePoint、WPF 和 Windows Form 應用程式的 IntelliTrace 診斷和方法資料，而不需要變更目標環境。 獨立收集器對效能的影響，大於以 **Monitor** 模式執行 Microsoft Monitoring Agent。 請參閱[使用 IntelliTrace 獨立收集器](../debugger/using-the-intellitrace-stand-alone-collector.md)。
+> 您也可以使用 **IntelliTrace 獨立收集器**收集遠端機器上 Web、SharePoint、WPF 和 Windows Form 應用程式的 IntelliTrace 診斷和方法資料，而不需要變更目標環境。 獨立收集器對效能的影響，大於以 **Monitor** 模式執行 Microsoft Monitoring Agent。 請參閱[使用 IntelliTrace 獨立收集器](../debugger/using-the-intellitrace-stand-alone-collector.md)。
 
  如果您使用 System Center 2012，請搭配使用 Microsoft Monitoring Agent 與 Operations Manager 來取得問題警示，並建立連結至已儲存 IntelliTrace 記錄檔的 Team Foundation Server 工作項目。 接著，您可以將這些工作項目指派給其他人，以進一步偵錯。 請參閱 [整合 Operations Manager 與開發程序](/previous-versions/system-center/system-center-2012-R2/jj614609(v=sc.12)) 和 [使用 Microsoft Monitoring Agent 監視](/previous-versions/system-center/system-center-2012-R2/dn465153(v=sc.12))。
 
@@ -59,7 +59,7 @@ ms.locfileid: "60043118"
      請務必在開始監視之前建立這個目錄。 若要避免讓應用程式變慢，請選擇本機高速磁碟上不是非常活躍的位置。
 
     > [!IMPORTANT]
-    >  IntelliTrace 記錄檔可能包含個人和機密資料。 限制這個目錄，只供必須使用檔案的識別使用。 請檢查您公司的隱私權原則。
+    > IntelliTrace 記錄檔可能包含個人和機密資料。 限制這個目錄，只供必須使用檔案的識別使用。 請檢查您公司的隱私權原則。
 
 5. 若要執行詳細的函式層級監視，或是監視 SharePoint 應用程式，請將 IntelliTrace 記錄檔目錄的讀取和寫入權限授與裝載 Web 應用程式或 SharePoint 應用程式的應用程式集區。 [問：如何設定應用程式集區的權限？](#FullPermissionsITLog)
 
@@ -77,7 +77,7 @@ ms.locfileid: "60043118"
 3. [造訪 TechNet](http://technet.microsoft.com/systemcenter/default) 以取得最新的說明內容。
 
 #### <a name="FullPermissionsITLog"></a> 問：如何設定應用程式集區的權限？
- **答：** 使用 Windows **icacls** 命令，或使用 Windows 檔案總管 (或檔案總管)。 例如: 
+ **答：** 使用 Windows **icacls** 命令，或使用 Windows 檔案總管 (或檔案總管)。 例如：
 
 - 使用 Windows **icacls** 命令設定權限：
 
@@ -159,7 +159,7 @@ ms.locfileid: "60043118"
 
    如果 `enabled` 屬性不存在，表示已啟用事件。
 
-   例如: 
+   例如：
 
   - 針對未使用 Windows Workflow 的應用程式停用 Windows Workflow 事件。
 
@@ -244,7 +244,7 @@ ms.locfileid: "60043118"
 
     **Checkpoint-WebApplicationMonitoring "IIS:\sites** *\\<IISWebsiteName\>\\<IISWebAppName\>"*
 
-    例如: 
+    例如：
 
     **PS C:\\>Checkpoint-WebApplicationMonitoring "Fabrikam\FabrikamFiber.Web"**
 
@@ -257,7 +257,7 @@ ms.locfileid: "60043118"
 3. 將記錄檔複製到安全的共用資料夾，然後從具有 Visual Studio Enterprise (不具有 Professional 或 Community 版本) 的電腦開啟記錄檔。
 
    > [!IMPORTANT]
-   >  當您共用 IntelliTrace 記錄檔時，請務必小心，因為它們可能包含個人和機密資料。 請確認可以存取這些記錄檔的人員都具有查看該資料的權限。 請檢查您公司的隱私權原則。
+   > 當您共用 IntelliTrace 記錄檔時，請務必小心，因為它們可能包含個人和機密資料。 請確認可以存取這些記錄檔的人員都具有查看該資料的權限。 請檢查您公司的隱私權原則。
 
    **下一步：**[診斷記錄的事件，在 Visual Studio Enterprise](../debugger/diagnose-problems-after-deployment.md#InvestigateEvents)
 
