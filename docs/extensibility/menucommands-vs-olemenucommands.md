@@ -9,11 +9,11 @@ helpviewer_keywords:
 ms.assetid: 553d5e07-3e19-4aba-b490-6c7dd05fd82e
 manager: jillfra
 ms.openlocfilehash: 83d528efd499615c92db163aed4d0b8881e75fdf
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60086009"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62433730"
 ---
 # <a name="menucommands-vs-olemenucommands"></a>MenuCommand 對比OleMenuCommand
 您可以藉由衍生自建立功能表命令<xref:System.ComponentModel.Design.MenuCommand>或從<xref:Microsoft.VisualStudio.Shell.OleMenuCommand>物件，並實作適當的事件處理常式。 在大多數情況下，您可以使用 <xref:System.ComponentModel.Design.MenuCommand>，就如同 VSPackage 專案範本一樣，但有時候您可能需要使用 <xref:Microsoft.VisualStudio.Shell.OleMenuCommand>。
