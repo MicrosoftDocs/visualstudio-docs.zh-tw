@@ -34,7 +34,7 @@ Just My Code 的運作方式不同.NET Framework 中C++，和 JavaScript 專案�
 
 ## <a name="just-my-code-debugging"></a>Just My Code 偵錯
 
-偵錯工作階段中，**模組**視窗中顯示哪些程式碼偵錯工具視為 My Code （使用者程式碼） 的模組以及其符號載入狀態。 如需詳細資訊，請參閱 <<c0> [ 更熟悉的偵錯工具附加至您的應用程式的方式](../debugger/debugger-tips-and-tricks.md#modules_window)。
+偵錯工作階段中，**模組**視窗中顯示哪些程式碼偵錯工具視為 My Code （使用者程式碼） 的模組以及其符號載入狀態。 如需詳細資訊，請參閱 <c0> [ 更熟悉的偵錯工具附加至您的應用程式的方式](../debugger/debugger-tips-and-tricks.md#modules_window)。
 
 ![在 [模組] 視窗中的使用者程式碼](../debugger/media/dbg_justmycode_module.png "[模組] 視窗中的使用者程式碼")
 
@@ -97,7 +97,7 @@ Just My Code 的運作方式不同.NET Framework 中C++，和 JavaScript 專案�
 - 中指定的函式 *\*.natjmc*中的檔案 *%VsInstallDirectory%\Common7\Packages\Debugger\Visualizers*資料夾。
 
 > [!NOTE]
-> 程式碼逐步執行 Just My Code，支援C++程式碼必須使用在 Visual Studio 15.8 Preview 3 或更新版本，在 MSVC 編譯器進行編譯，而且必須啟用 /JMC 編譯器參數 （它預設啟用）。 如需詳細資訊，請參閱 <<c0> [ 自訂C++的呼叫堆疊和程式碼逐步執行行為](#BKMK_CPP_Customize_call_stack_behavior))，而這[部落格文章](https://devblogs.microsoft.com/cppblog/announcing-jmc-stepping-in-visual-studio/)。</c0> 使用舊版的編譯器編譯的程式碼 *.natstepfilter*檔案是唯一的辦法自訂程式碼逐步執行，也就是獨立的 Just My Code。 請參閱[自訂C++逐步執行行為](#BKMK_CPP_Customize_stepping_behavior)。
+> 程式碼逐步執行 Just My Code，支援C++程式碼必須使用在 Visual Studio 15.8 Preview 3 或更新版本，在 MSVC 編譯器進行編譯，而且必須啟用 /JMC 編譯器參數 （它預設啟用）。 如需詳細資訊，請參閱 <c0> [ 自訂C++的呼叫堆疊和程式碼逐步執行行為](#BKMK_CPP_Customize_call_stack_behavior))，而這[部落格文章](https://devblogs.microsoft.com/cppblog/announcing-jmc-stepping-in-visual-studio/)。</c0> 使用舊版的編譯器編譯的程式碼 *.natstepfilter*檔案是唯一的辦法自訂程式碼逐步執行，也就是獨立的 Just My Code。 請參閱[自訂C++逐步執行行為](#BKMK_CPP_Customize_stepping_behavior)。
 
 <a name="BKMK_CPP_Stepping_behavior"></a> 在C++偵錯：
 
