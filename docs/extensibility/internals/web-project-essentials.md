@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1cfd7c6c8543537f88bdf033068d2ae62c7a634a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 30ffd684eb6527ee73e54cc590dc3e4b1d3c51d3
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60071327"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63429345"
 ---
 # <a name="web-project-essentials"></a>Web 專案的基本資訊
 Web 專案建立 Web 應用程式。 您可以使用 Web 專案來建立智慧型 Web 網頁的 Web 應用程式。 智慧型的網頁上具有呈現網頁上，依需求的伺服器端程式碼。
@@ -35,7 +35,7 @@ Web 專案建立 Web 應用程式。 您可以使用 Web 專案來建立智慧�
 - Web 專案的方案檔位於與網站本身分開。 根據預設，方案檔會位於 \Documents and 設定\\*YourAccount*\My 文件\\*\<Visual Studio # # # >* \Projects\\ *YourWebSite*。
 
   > [!NOTE]
-  >  如果您想要保留與網站的方案檔，只要那里移動，並重新開啟它。
+  > 如果您想要保留與網站的方案檔，只要那里移動，並重新開啟它。
 
 - 如果您開啟 Visual Studio 中沒有方案檔的網站時，新的方案檔會自動產生它。
 

@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 18956cd3f4fa1a550808577f9e7fec9c9b193b4c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 092af518cc6c6fb1d98025cda54a6a1d491940c9
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60095857"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445132"
 ---
 # <a name="how-to-open-a-model-from-file-in-program-code"></a>HOW TO：在程式碼中開啟檔案的模型
 您可以在任何應用程式中開啟 DSL 模型。
@@ -31,7 +31,7 @@ ms.locfileid: "60095857"
 3. 在 [專案屬性] 視窗中，在**應用程式**索引標籤上，設定**目標 framework**欄位 **.NET Framework 4**。
 
 > [!NOTE]
->  您可能需要這樣做，即使您選取 **.NET Framework 4**專案的 [建立] 對話方塊中。 目標 framework 不應 **.NET Framework 4 Client Profile**。
+> 您可能需要這樣做，即使您選取 **.NET Framework 4**專案的 [建立] 對話方塊中。 目標 framework 不應 **.NET Framework 4 Client Profile**。
 
 ## <a name="references"></a>參考
  您必須將這些應用程式 Visual Studio 專案的參考：

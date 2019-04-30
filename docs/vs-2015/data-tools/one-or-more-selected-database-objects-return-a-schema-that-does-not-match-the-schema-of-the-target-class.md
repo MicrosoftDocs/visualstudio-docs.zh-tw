@@ -10,11 +10,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 79e7b2a406338e5ecfacf41f9c0485a35c2d97d0
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60043025"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62559657"
 ---
 # <a name="one-or-more-selected-database-objects-return-a-schema-that-does-not-match-the-schema-of-the-target-class"></a>一個或多個選取的資料庫物件傳回與目標類別之結構描述不符的結構描述
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

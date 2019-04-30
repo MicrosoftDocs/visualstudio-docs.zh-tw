@@ -9,17 +9,17 @@ manager: jillfra
 ms.workload:
 - data-storage
 ms.openlocfilehash: d6f14dbe79e9ba0f2a8642c61a0682b25aa703f0
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55945829"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62567161"
 ---
 # <a name="entity-framework-tools-in-visual-studio"></a>在 Visual Studio 中的 entity Framework 工具
 
 Entity Framework 是一種物件關聯式對應技術，可讓.NET 開發人員使用網域特有物件來處理關聯式資料。 它不需要開發人員通常需要撰寫的大部分資料存取程式碼。 Entity Framework 是模型對於新的.NET 應用程式的技術建議的物件關聯式對應 (ORM)。
 
-Entity Framework 工具專門設計來協助您建置 Entity Framework (EF) 應用程式。 Entity Framework 的完整文件已正式推出： [EF Core 與 EF 6](/ef/)。
+Entity Framework 工具專門設計來協助您建置 Entity Framework (EF) 應用程式。 Entity Framework 的完整文件位於這裡：[EF Core 和 EF 6](/ef/)。
 
 您可以使用 Entity Framework 工具，建立*概念模型*從現有資料庫然後以圖形方式以視覺化方式檢視和編輯概念模型。 或者，您可以先以圖形方式建立概念模型，然後產生可支援該模型的資料庫。 無論使用哪一種方式，當基礎資料庫變更時，您都可以自動更新模型，而且可以自動產生應用程式的物件層程式碼。 資料庫產生和物件層程式碼產生皆可自訂。
 

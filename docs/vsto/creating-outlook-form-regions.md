@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ea3f72a26938a50cddbb622565173be603436ba3
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: dc0f56331c11c6c33561774d38ef79e286a4133a
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60092756"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445566"
 ---
 # <a name="create-outlook-form-regions"></a>建立 Outlook 表單區域
   您可以使用表單區域自訂 Microsoft Office Outlook 表單。 Visual Studio 提供進階的工具，可讓您更方便地設計、開發和偵錯表單區域。
@@ -90,7 +90,7 @@ ms.locfileid: "60092756"
 - Outlook 表單儲存區 (*.ofs*) 檔案。
 
     > [!NOTE]
-    >  這個檔案只會在您匯入已在 Outlook 中設計的表單區域時加入專案。
+    > 這個檔案只會在您匯入已在 Outlook 中設計的表單區域時加入專案。
 
 #### <a name="form-region-factory-class"></a>表單區域 factory 類別
  表單區域程式碼檔案包含一個部分類別，用來實作 <xref:Microsoft.Office.Tools.Outlook.IFormRegionFactory> 介面。 也就是表單區域 Factory 類別。 表單區域 Factory 類別會負責建立表單區域的新執行個體。
@@ -110,7 +110,7 @@ ms.locfileid: "60092756"
  [表單區域設計工具] 可協助您設計表單區域的配置和外觀。 您可以將 managed 的控制項拖曳至設計工具的介面、 按兩下控制項開啟事件處理常式，和在 設定屬性**屬性**視窗。
 
 > [!NOTE]
->  您可以找到影響表單區域在下方的 Outlook 中顯示的方式的屬性**Manifest**中的節點**屬性**視窗。
+> 您可以找到影響表單區域在下方的 Outlook 中顯示的方式的屬性**Manifest**中的節點**屬性**視窗。
 
  表單區域設計工具才會提供您所選取**設計新的表單區域**中**選取您要建立此表單區域的方式**頁面**新的 Outlook 表單區域**精靈。
 
@@ -138,7 +138,7 @@ ms.locfileid: "60092756"
  您可以在表單區域 Factory 類別的 `InitializeManifest` 方法中變更表單區域屬性。
 
 > [!NOTE]
->  若要匯入表單區域，您必須在目標 Outlook 版本與開發電腦上所安裝版本相同的專案中進行。 例如，如果您已安裝 Outlook 2010，匯入表單區域則只能在專案中的建立使用**Outlook 2010 增益集**專案範本。
+> 若要匯入表單區域，您必須在目標 Outlook 版本與開發電腦上所安裝版本相同的專案中進行。 例如，如果您已安裝 Outlook 2010，匯入表單區域則只能在專案中的建立使用**Outlook 2010 增益集**專案範本。
 
 ### <a name="update-an-imported-form-regions-design"></a>更新的匯入的表單區域設計
  您可以加入、移除或變更表單區域上的控制項。 在執行這些動作前，請先備份您加入表單區域程式碼檔案的任何程式碼。 然後，開啟 *.ofs*檔案在 Outlook 中，修改表單區域，並儲存所做的變更。 使用**新的 Outlook 表單區域**精靈來匯入已修改 *.ofs*檔案。 然後您可以將程式碼貼入新的表單區域程式碼檔案。

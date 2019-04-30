@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 4c0792871835d8adea52c1e4adfdfd2c38f7d617
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60107784"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62857783"
 ---
 # <a name="test-area-7-share"></a>測試區域 7：共用
 這個測試部分涵蓋透過位置之間的共用項目**共用**命令。

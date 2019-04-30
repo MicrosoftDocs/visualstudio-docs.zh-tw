@@ -12,11 +12,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: d5661df1f7f9266be34b59703316b06bec631007
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60099685"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62991402"
 ---
 # <a name="iactivescripttraceinfostopscripttracing-method"></a>IActiveScriptTraceInfo::StopScriptTracing 方法
 停止指令碼追蹤。  

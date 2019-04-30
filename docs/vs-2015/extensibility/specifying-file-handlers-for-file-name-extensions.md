@@ -10,12 +10,12 @@ ms.assetid: e3de4730-a95c-465a-b3b2-92ca85364ad7
 caps.latest.revision: 19
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: dd999fe10da48f91482976ade56681ee53346802
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 0fe2f26a959fc6a185bf244bfa4571846b7991a5
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58941878"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63447181"
 ---
 # <a name="specifying-file-handlers-for-file-name-extensions"></a>指定適用於副檔名的檔案處理常式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,7 +36,7 @@ HKEY_CLASSES_ROOT\
 ```  
   
 > [!NOTE]
->  指定的應用程式的索引鍵是 HKEY_CLASSES_ROOT\Applications 下方的清單。  
+> 指定的應用程式的索引鍵是 HKEY_CLASSES_ROOT\Applications 下方的清單。  
   
  藉由新增 OpenWithList 金鑰，您會宣告您的應用程式支援檔案延伸模組，即使另一個應用程式會取得延伸模組的擁有權。 這可能是您的應用程式或其他應用程式的未來版本。  
   
@@ -52,7 +52,7 @@ HKEY_CLASSES_ROOT\
  您可以註冊不同的應用程式能夠開啟特定副檔名設定版本的 Progid 做為值加入 HKEY_CLASSES_ROOT\\*\<擴充功能 >* \OpenWithProgids 索引鍵。 此登錄機碼包含替代的 Progid 相關聯的檔案副檔名的清單。 列出的 Progid 相關聯的應用程式會出現在**開啟**_Product Name_子功能表。 如果相同的應用程式中同時指定`OpenWithList`和`OpenWithProgids`索引鍵，作業系統會將合併重複的項目。  
   
 > [!NOTE]
->  `OpenWithProgids`金鑰僅適用於 Windows XP 中。 因為其他作業系統會忽略此金鑰，請勿使用它作為唯一的註冊檔案處理常式。 若要提供更好的使用者體驗，在 Windows XP 中使用此金鑰。  
+> `OpenWithProgids`金鑰僅適用於 Windows XP 中。 因為其他作業系統會忽略此金鑰，請勿使用它作為唯一的註冊檔案處理常式。 若要提供更好的使用者體驗，在 Windows XP 中使用此金鑰。  
   
  加入所需的 Progid 做為 REG_NONE 型別的值。 下列程式碼提供的 Progid 註冊副檔名的檔案範例 (。*ext*)。  
   
@@ -65,7 +65,7 @@ HKEY_CLASSES_ROOT\
          otherprogid   REG_NONE (zero-length binary value)  
 ```  
   
- 指定為副檔名的預設值是預設的檔案處理常式的 ProgID。 如果您修改檔案延伸模組隨附於舊版的 ProgID[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]或，可以接手其他應用程式，則您必須註冊`OpenWithProgids`鍵檔案副檔名，並在清單中，連同指定的新 ProgID您支援舊的 Progid。 例如：  
+ 指定為副檔名的預設值是預設的檔案處理常式的 ProgID。 如果您修改檔案延伸模組隨附於舊版的 ProgID[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]或，可以接手其他應用程式，則您必須註冊`OpenWithProgids`鍵檔案副檔名，並在清單中，連同指定的新 ProgID您支援舊的 Progid。 例如:   
   
 ```  
 HKEY_CLASSES_ROOT\  

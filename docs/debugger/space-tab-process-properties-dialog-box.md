@@ -11,18 +11,18 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 563d54c39b4d9ce3bb2d76a9e531161c2c4ee5b3
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56708091"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62929814"
 ---
 # <a name="space-tab-process-properties-dialog-box"></a>處理序屬性對話方塊、空間索引標籤
 使用**空間**檢查處理序的位址空間 索引標籤。 若要顯示[處理序屬性對話方塊](../debugger/process-properties-dialog-box.md)，焦點移至[處理序檢視](../debugger/processes-view.md)視窗。 在樹狀目錄中，選取任何處理序節點，然後選擇**屬性**從**檢視**功能表。
 
  下列設定位於**空間** 索引標籤：
 
-|進入|說明|
+|進入|描述|
 |-----------|-----------------|
 |[顯示標記空間]|使用此清單方塊選取的空間 （影像、 對應、 保留，或未指派） 類別。|
 |[Executable 位元組]|針對選取的分類中，所有使用此程序的位址空間的總和。 可執行檔的記憶體是指可以執行程式，但不是能讀取或寫入。|

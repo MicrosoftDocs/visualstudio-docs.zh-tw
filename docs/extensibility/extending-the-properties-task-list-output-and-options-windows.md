@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c3bf289a20f206db5aede2de01ddc2030c52b8fa
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: a0e38daa68999da32c3b667a5e220c622b012667
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60078378"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63417229"
 ---
 # <a name="extend-the-properties-task-list-output-and-options-windows"></a>擴充屬性、 工作清單、 輸出和選項的 windows
 您可以存取任何 Visual Studio 中的 [工具] 視窗。 本逐步解說示範如何整合到新的工具視窗的相關資訊**選項**頁面和新的設定上**屬性**頁面上，以及如何將寫入**工作清單**並**輸出**windows。
@@ -33,7 +33,7 @@ ms.locfileid: "60078378"
 1. 建立專案，名為**TodoList**使用 [VSIX] 範本，然後新增名為的自訂工具視窗項目範本**TodoWindow**。
 
     > [!NOTE]
-    >  如需使用工具視窗建立擴充功能的詳細資訊，請參閱[建立的擴充功能與工具視窗](../extensibility/creating-an-extension-with-a-tool-window.md)。
+    > 如需使用工具視窗建立擴充功能的詳細資訊，請參閱[建立的擴充功能與工具視窗](../extensibility/creating-an-extension-with-a-tool-window.md)。
 
 ## <a name="set-up-the-tool-window"></a>設定工具視窗
  新增文字方塊，以在其中輸入新 ToDo 項目，若要加入至清單中，新的項目按鈕和清單方塊中顯示的項目在清單上。
@@ -41,7 +41,7 @@ ms.locfileid: "60078378"
 1. 在  *TodoWindow.xaml*，從使用者控制項中刪除按鈕時，文字方塊中，以及 StackPanel 控制項。
 
     > [!NOTE]
-    >  這不會刪除**button1_Click**事件處理常式，您將在稍後步驟中重複使用。
+    > 這不會刪除**button1_Click**事件處理常式，您將在稍後步驟中重複使用。
 
 2. 從**所有 WPF 控制項**一節**工具箱**，拖曳**畫布**方格控制項。
 

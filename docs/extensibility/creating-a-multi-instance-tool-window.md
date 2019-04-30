@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 687d46136ad4ed0f043210839e95caf6071f87f2
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56317480"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62891077"
 ---
 # <a name="create-a-multi-instance-tool-window"></a>建立多個執行個體工具視窗
 您可以程式設計的工具視窗，讓多個執行個體可以同時開啟。 根據預設，工具視窗可以有開啟的只有一個執行個體。

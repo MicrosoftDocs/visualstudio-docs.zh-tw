@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f5d6c78f7d5c931272bb66b2706d3b5e531785cc
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 8dd8627c4e9baaa790a5d97a8021220a820356fb
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60062634"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63442441"
 ---
 # <a name="namedrange-control"></a>NamedRange 控制項
   <xref:Microsoft.Office.Tools.Excel.NamedRange> 控制項是具有唯一名稱、可公開事件及繫結至資料的範圍。 如需詳細資訊，請參閱 < [Excel 物件模型概觀](../vsto/excel-object-model-overview.md)。
@@ -35,7 +35,7 @@ ms.locfileid: "60062634"
  在 VSTO 增益集中，您可以在執行階段將 <xref:Microsoft.Office.Tools.Excel.NamedRange> 控制項加入工作表。 如需詳細資訊，請參閱[如何：將 NamedRange 控制項加入工作表](../vsto/how-to-add-namedrange-controls-to-worksheets.md)。
 
 > [!NOTE]
->  根據預設，當工作表關閉時，動態建立的具名範圍不會保存為工作表中的主控制項。 如需詳細資訊，請參閱 <<c0> [ 將控制項加入 Office 文件，在執行階段](../vsto/adding-controls-to-office-documents-at-run-time.md)。
+> 根據預設，當工作表關閉時，動態建立的具名範圍不會保存為工作表中的主控制項。 如需詳細資訊，請參閱 <<c0> [ 將控制項加入 Office 文件，在執行階段](../vsto/adding-controls-to-office-documents-at-run-time.md)。
 
  <xref:Microsoft.Office.Tools.Excel.NamedRange> 控制項只能包含特定工作表上的範圍。 <xref:Microsoft.Office.Tools.Excel.NamedRange> 控制項不可以具有適用於所有工作表的相對名稱，也不可以包含在活頁簿中合併兩個 (含) 以上工作表的範圍 (3-D 範圍)。
 

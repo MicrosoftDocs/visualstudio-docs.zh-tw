@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 528a57ddf6dd9b193e767a4942d26e43789043c0
-ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
-ms.translationtype: MT
+ms.openlocfilehash: 1f6a8c3ca6c6c4015acc6c8be3914d4c458dfeb0
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57525895"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63447087"
 ---
 # <a name="office-primary-interop-assemblies"></a>Office 主要 Interop 組件
 
@@ -84,7 +84,7 @@ Visual Studio 中的每一個 Office 專案範本設計成只能搭配一個 Mic
 如果您已在全域組件快取中安裝及註冊 PIA，這些版本的組件會顯示在 [參考管理員]  對話方塊的 [COM]  索引標籤上。 您應該避免加入這些版本的組件參考，因為使用這些版本的組件參考可能會發生一些開發問題。 例如，如果您在全域組件快取中註冊了不同版本的 PIA，您的專案將會自動建置為最後註冊的組件版本 (即使在 [參考管理員]  對話方塊的 [COM]  索引標籤上指定了不同版本的組件亦然)。
 
 > [!NOTE]
->  當您加入參考某些組件的單一組件時，系統會自動將這些組件加入至專案。 例如，若要參考*Office.dll*並*Microsoft.Vbe.Interop.dll*時您將參考加入至 Word、 Excel、 Outlook、 Microsoft Forms 或 Graph 組件會自動新增組件。
+> 當您加入參考某些組件的單一組件時，系統會自動將這些組件加入至專案。 例如，若要參考*Office.dll*並*Microsoft.Vbe.Interop.dll*時您將參考加入至 Word、 Excel、 Outlook、 Microsoft Forms 或 Graph 組件會自動新增組件。
 
 <a name="pialist"></a>
 

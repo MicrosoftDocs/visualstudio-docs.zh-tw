@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: e7400fc2b635c036f4bf9b2ff3632a20e628b50d
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56691510"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62800335"
 ---
 # <a name="sccrunscc-function"></a>SccRunScc 函式
 此函式會叫用原始檔控制系統管理工具。
@@ -72,6 +72,6 @@ SCCRTN SccRunScc(
 
 ## <a name="see-also"></a>另請參閱
 - [原始檔控制外掛程式 API 函式](../extensibility/source-control-plug-in-api-functions.md)
-- [如何：安裝原始檔控制外掛程式](../extensibility/internals/how-to-install-a-source-control-plug-in.md)
+- [如何：安裝原始程式碼控制外掛程式](../extensibility/internals/how-to-install-a-source-control-plug-in.md)
 - [功能旗標](../extensibility/capability-flags.md)
 - [SccInitialize](../extensibility/sccinitialize-function.md)

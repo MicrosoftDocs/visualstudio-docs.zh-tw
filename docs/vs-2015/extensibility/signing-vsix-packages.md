@@ -14,12 +14,12 @@ ms.assetid: e34cfc2c-361c-44f8-9cfe-9f2be229d248
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: c27b000748fdac99b78f0e7d0ff737356956a78d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 9fabe2931310b97f0c0864ea77ceef024f0e57cd
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58942236"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63447213"
 ---
 # <a name="signing-vsix-packages"></a>簽署 VSIX 套件
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ ms.locfileid: "58942236"
  如果您想要保護您的延伸模組，並確定未遭到竄改，您可以加入 VSIX 封裝來數位簽章。 當已簽署 VSIX 時，VSIX 安裝程式會顯示一則訊息指出它已簽署，再加上簽章本身的相關詳細資訊。 如果有已修改的 VSIX 內容，尚未重新簽署 VSIX，VSIX 安裝程式將會顯示簽章無效。 安裝並不會停止，但會警告使用者。  
   
 > [!IMPORTANT]
->  自 2015年起，使用 SHA256 加密以外的任何簽署 VSIX 封裝將會識別為具有無效簽章。 VSIX 安裝未遭到封鎖，但使用者將會收到警告。  
+> 自 2015年起，使用 SHA256 加密以外的任何簽署 VSIX 封裝將會識別為具有無效簽章。 VSIX 安裝未遭到封鎖，但使用者將會收到警告。  
   
 ## <a name="signing-a-vsix-with-vsixsigntool"></a>簽署與 VSIXSignTool VSIX  
  沒有簽署工具可從 SHA256 加密[VisualStudioExtensibility](http://www.nuget.org/profiles/VisualStudioExtensibility)在 nuget.org 上[VsixSignTool](http://www.nuget.org/packages/Microsoft.VSSDK.Vsixsigntool)。  

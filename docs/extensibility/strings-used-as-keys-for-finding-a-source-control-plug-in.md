@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 3233bfbfa379fac7be7214431e7a09844b7d65ec
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56704601"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62800105"
 ---
 # <a name="strings-used-as-keys-for-finding-a-source-control-plug-in"></a>用作索引鍵以尋找原始檔控制外掛程式的字串
 下列字串是索引鍵來存取此登錄來尋找資訊的原始檔控制外掛程式。
@@ -48,5 +48,5 @@ ms.locfileid: "56704601"
 
 ## <a name="see-also"></a>另請參閱
 - [原始檔控制外掛程式](../extensibility/source-control-plug-ins.md)
-- [如何：安裝原始檔控制外掛程式](../extensibility/internals/how-to-install-a-source-control-plug-in.md)
+- [如何：安裝原始程式碼控制外掛程式](../extensibility/internals/how-to-install-a-source-control-plug-in.md)
 - [MSSCCPRJ.SCC 檔案](../extensibility/mssccprj-scc-file.md)

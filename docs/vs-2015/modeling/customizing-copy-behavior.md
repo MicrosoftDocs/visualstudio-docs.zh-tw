@@ -9,12 +9,12 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 4a06ad526cd16335a664ae833f61cb0052a215fc
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: b88d3541bc9c3b2f890c2aadf0103c48d3dad865
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60054935"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433305"
 ---
 # <a name="customizing-copy-behavior"></a>自訂複製行為
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -238,7 +238,7 @@ partial class MyDslClipboardCommandSet // EDIT NAME
  DSL 行為在許多方面與複製、貼上、建立及刪除物件相關，這些物件是由合併至圖表的 <xref:Microsoft.VisualStudio.Modeling.ElementOperations> 執行個體所管理。 您可以從 <xref:Microsoft.VisualStudio.Modeling.ElementOperations> 衍生自己的類別，並覆寫您的圖表類別的 <xref:Microsoft.VisualStudio.Modeling.Diagrams.Diagram.ElementOperations%2A> 屬性，藉此修改 DSL 的行為。  
   
 > [!TIP]
->  如需有關如何使用程式碼自訂模型的詳細資訊，請參閱 <<c0> [ 巡覽及更新程式碼中的模型](../modeling/navigating-and-updating-a-model-in-program-code.md)。  
+> 如需有關如何使用程式碼自訂模型的詳細資訊，請參閱 <<c0> [ 巡覽及更新程式碼中的模型](../modeling/navigating-and-updating-a-model-in-program-code.md)。  
   
  ![複製作業的順序圖表](../modeling/media/dslcopyseqdiagram.png "dslCopySeqDiagram")  
   

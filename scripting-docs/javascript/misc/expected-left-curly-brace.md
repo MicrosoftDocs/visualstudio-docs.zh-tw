@@ -15,11 +15,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 6fac3676c96e3f9ebc69b34f688ad52efd1e7248
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60057287"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62934852"
 ---
 # <a name="expected-"></a>必須是 '{'
 您未包含標記的函式主體開頭的左大括號。 程式碼，即使它是在同一行，讓函式的主體必須包含在左邊和右邊大括號。 請注意，函式主體中的括號的用法是比在迴圈中更嚴格。  

@@ -15,11 +15,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 5a30da75d5498cb9cb827ffaa89d2079f4e1b7a0
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60084761"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63006378"
 ---
 # <a name="object-member-expected"></a>必須是物件成員
 您嘗試對物件的資料成員，執行作業，但沒有成員。  

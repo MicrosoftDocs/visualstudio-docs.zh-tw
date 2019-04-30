@@ -9,12 +9,12 @@ caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 29ee765bfc11362a870d359ff0a9cdc3f633e464
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 44d877f7ff6774e8e52428f4a44acab99816c480
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60080796"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63434416"
 ---
 # <a name="how-to-export-a-texture-for-use-with-direct2d-or-javascipt-apps"></a>HOW TO：匯出紋理以與 Direct2D 或 Javascipt 應用程式搭配使用
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -57,7 +57,7 @@ ms.locfileid: "60080796"
 3. 將輸出格式設定為其中一種區塊壓縮格式。 在 [組態屬性] > [影像內容管線] > [一般] 頁面上，將 [壓縮] 屬性設定為 [BC3_UNORM 壓縮 (/compress:BC3_UNORM)]。 您可以依據您的需求，選擇任何其他 BC1、BC2 或 BC3 格式。 Direct2D 目前不支援 BC4、BC5、BC6 或 BC7 材質。 如需有關不同 BC 格式的詳細資訊，請參閱[區塊壓縮 (Direct3D 10) (英文)](http://msdn.microsoft.com/library/windows/desktop/bb694531.aspx)。  
   
    > [!NOTE]
-   >  指定的壓縮格式會決定「影像內容管線」所產生之檔案的格式。 這與「影像編輯器」中來源影像的 [格式] 屬性不同，該屬性所決定的是儲存在磁碟上的來源影像檔案格式，亦即「工作格式」。 一般而言，您不會想要壓縮工作格式。  
+   > 指定的壓縮格式會決定「影像內容管線」所產生之檔案的格式。 這與「影像編輯器」中來源影像的 [格式] 屬性不同，該屬性所決定的是儲存在磁碟上的來源影像檔案格式，亦即「工作格式」。 一般而言，您不會想要壓縮工作格式。  
   
 4. 設定「影像內容管線」以產生使用預乘 Alpha 的輸出。 在 [組態屬性] > [影像內容管線] > [一般] 頁面上，將 [轉換成預乘 Alpha 格式] 屬性設定為 [是 (/generatepremultipliedalpha)]。  
   

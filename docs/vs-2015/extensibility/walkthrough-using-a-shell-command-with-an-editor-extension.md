@@ -10,12 +10,12 @@ ms.assetid: 08526848-a442-4cd4-afa1-b2eac2005adb
 caps.latest.revision: 47
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 93df780aee27b794a991a023f559f64a806de046
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: c82d77a617461a8d01d06fd2a502d2fef8399906
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60057478"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63408697"
 ---
 # <a name="walkthrough-using-a-shell-command-with-an-editor-extension"></a>逐步解說：搭配編輯器延伸模組使用 Shell 命令
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -54,7 +54,7 @@ ms.locfileid: "60057478"
  因為您要新增為 MEF 元件的 vspackage，您必須指定這兩種類型的資產資訊清單中。  
   
 > [!NOTE]
->  如需 MEF 的詳細資訊，請參閱[Managed Extensibility Framework (MEF)](http://msdn.microsoft.com/library/6c61b4ec-c6df-4651-80f1-4854f8b14dde)。  
+> 如需 MEF 的詳細資訊，請參閱[Managed Extensibility Framework (MEF)](http://msdn.microsoft.com/library/6c61b4ec-c6df-4651-80f1-4854f8b14dde)。  
   
 #### <a name="to-refer-to-the-mef-component-in-the-vspackage-project"></a>VSPackage 專案中的 MEF 元件參考  
   

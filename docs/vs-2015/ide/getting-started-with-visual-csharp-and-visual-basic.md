@@ -1,5 +1,5 @@
 ---
-title: Getting Started with VisualC#和 Visual Basic |Microsoft Docs
+title: Getting Started with Visual C# 和 Visual Basic |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -17,11 +17,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 65e766193838060d4c856b6a530a688ef8cd2d1b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54788277"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62584692"
 ---
 # <a name="getting-started-with-visual-c-and-visual-basic"></a>Visual C# 和 Visual Basic 使用者入門
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,7 +37,7 @@ ms.locfileid: "54788277"
  [教學課程 1：建立圖片檢視器](../ide/tutorial-1-create-a-picture-viewer.md)  
  建置一個從檔案載入圖片並將圖片顯示在視窗中的程式。 了解如何拖曳表單上的控制項 (例如按鈕和圖片方塊)、設定其屬性，以及使用容器來順暢地調整表單的大小。 開始撰寫程式碼。  
   
- [教學課程 2：建立計時的數學測驗](../ide/tutorial-2-create-a-timed-math-quiz.md)  
+ [教學課程 2：建立計時數學測驗](../ide/tutorial-2-create-a-timed-math-quiz.md)  
  建置一個計時的數學測驗遊戲，玩家必須在指定的時間內回答四個隨機的算術問題。 了解如何使用 `Random` 類別產生亂數、使用 `Timer` 控制項觸發事件、使用 `if else` 陳述式控制程式流程，以及執行基本算術運算。  
   
  [教學課程 3：建立配對遊戲](../ide/tutorial-3-create-a-matching-game.md)  

@@ -14,11 +14,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: d8f645d6460ff15734348267b5138b1b6edea071
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58149545"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63005874"
 ---
 # <a name="idebugstackframe-interface"></a>IDebugStackFrame 介面
 代表執行緒堆疊上的邏輯堆疊框架。 呼叫`IDebugStackFrame::QueryInterface`方法，以取得`IDebugExpressionContext`介面，可讓運算式評估和監看式視窗。  

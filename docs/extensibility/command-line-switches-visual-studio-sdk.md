@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: af56a0ecda516fd7cf3e775d58459b08790f9148
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56721598"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62891377"
 ---
 # <a name="command-line-switches-visual-studio-sdk"></a>命令列參數 (Visual Studio SDK)
 *Devenv.exe*，啟動可執行檔[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]整合式的開發環境 (IDE)，專為開發的 Vspackage 支援的命令列參數。 Vspackage 也可以提供自己的參數在 Devenv 命令列。 下列主題提供如何在 IDE 中使用命令列參數的相關資訊。

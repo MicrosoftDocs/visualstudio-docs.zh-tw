@@ -9,12 +9,12 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ebd8317af13ab542936b5f5d2f886b937bc6e65d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 7c04b8bd4ab956fe60191237910db35e2e463d3e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58939278"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63442940"
 ---
 # <a name="export-uml-diagrams-to-image-files"></a>將 UML 圖表匯出至影像檔案
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,7 +27,7 @@ ms.locfileid: "58939278"
  下列程式碼會定義捷徑功能表命令 (也稱為內容功能表命令)，這些命令會將影像儲存到檔案。  
   
 > [!NOTE]
->  若要將此程式碼做為功能表命令執行，您必須將它併入 MEF 元件。 如需詳細資訊，請參閱 <<c0> [ 在模型圖上定義功能表命令](../modeling/define-a-menu-command-on-a-modeling-diagram.md)。  
+> 若要將此程式碼做為功能表命令執行，您必須將它併入 MEF 元件。 如需詳細資訊，請參閱 <<c0> [ 在模型圖上定義功能表命令](../modeling/define-a-menu-command-on-a-modeling-diagram.md)。  
   
  程式碼會先使用 <xref:Microsoft.VisualStudio.ArchitectureTools.Extensibility.Presentation.IShape.GetObject%2A> 以取得基礎實作的 <xref:Microsoft.VisualStudio.Modeling.Diagrams.Diagram>。 這個類型具有 <xref:Microsoft.VisualStudio.Modeling.Diagrams.Diagram.CreateBitmap%2A> 方法。  
   

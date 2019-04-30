@@ -18,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e329631f0bdeb79a068e4a791158f94cec3904ee
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: d2ad5a5424844896541e46d2afbc158320c7e5a3
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60061927"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63442402"
 ---
 # <a name="outlook-object-model-overview"></a>Outlook 物件模型概觀
   若要開發 Microsoft Office Outlook 的 VSTO 增益集，您可以與 Outlook 物件模型提供的物件進行互動。 Outlook 物件模型會提供表示使用者介面中各種項目的類別和介面。 例如， <xref:Microsoft.Office.Interop.Outlook.Application> 物件表示整個應用程式、 <xref:Microsoft.Office.Interop.Outlook.Folder> 物件表示含有電子郵件訊息或其他項目的資料夾，而 <xref:Microsoft.Office.Interop.Outlook.MailItem> 物件則表示電子郵件訊息。
@@ -65,7 +65,7 @@ ms.locfileid: "60061927"
   若要取得的執行個體<xref:Microsoft.Office.Interop.Outlook.Application>物件，請使用的應用程式欄位`ThisAddIn`專案中的類別。 如需詳細資訊，請參閱 <<c0> [ 程式的 VSTO 增益集](../vsto/programming-vsto-add-ins.md)。
 
 > [!NOTE]
->  為了避免安全性警告，當您使用屬性和方法所封鎖的 Outlook 物件模型保護時，取得 Outlook 物件的 [應用程式] 欄位從`ThisAddIn`類別。 如需詳細資訊，請參閱 < [Office 方案的特定安全性考量](../vsto/specific-security-considerations-for-office-solutions.md)。
+> 為了避免安全性警告，當您使用屬性和方法所封鎖的 Outlook 物件模型保護時，取得 Outlook 物件的 [應用程式] 欄位從`ThisAddIn`類別。 如需詳細資訊，請參閱 < [Office 方案的特定安全性考量](../vsto/specific-security-considerations-for-office-solutions.md)。
 
 ### <a name="explorer-object"></a>Explorer 物件
  <xref:Microsoft.Office.Interop.Outlook.Explorer> 物件表示會顯示含有項目之資料夾內容的視窗，而這些項目包括電子郵件訊息、工作或約會。 <xref:Microsoft.Office.Interop.Outlook.Explorer> 物件含有一些方法和屬性，可讓您用來修改視窗，以及視窗變更時引發的事件。

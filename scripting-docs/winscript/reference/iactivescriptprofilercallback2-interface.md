@@ -13,12 +13,12 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3e292dad6c6b633d5f30f263f388d8e85bb6c541
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: b0a0df287db477c5bf768798f200ea0d97de6d1e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60115272"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63385934"
 ---
 # <a name="iactivescriptprofilercallback2-interface"></a>IActiveScriptProfilerCallback2 介面
 提供指令碼引擎用來通知分析工具物件，Document Object Model (DOM) 的事件發生時的方法。 分析工具物件會實作這個介面。  
@@ -36,7 +36,7 @@ ms.locfileid: "60115272"
  所提供的不是載入 DOM 中呼叫的函式呼叫的通知[IActiveScriptProfilerCallback 介面](../../winscript/reference/iactivescriptprofilercallback-interface.md)。  
   
 > [!NOTE]
->  若要新增至啟動和停止指令碼執行時，程式碼剖析功能，請呼叫下列方法。 藉由使用這些方法，您可以取得的完整呼叫堆疊如果[!INCLUDE[javascript](../../javascript/includes/javascript-md.md)]當您啟動或停止程式碼剖析執行。  
+> 若要新增至啟動和停止指令碼執行時，程式碼剖析功能，請呼叫下列方法。 藉由使用這些方法，您可以取得的完整呼叫堆疊如果[!INCLUDE[javascript](../../javascript/includes/javascript-md.md)]當您啟動或停止程式碼剖析執行。  
 > 
 > - 呼叫[IActiveScriptProfilerControl2::CompleteProfilerStart](../../winscript/reference/iactivescriptprofilercontrol2-completeprofilerstart.md)通知分析工具，您已開始分析。  
 >   - 呼叫[IActiveScriptProfilerControl2::PrepareProfilerStop](../../winscript/reference/iactivescriptprofilercontrol2-prepareprofilerstop.md)通知分析工具，您很快就會停止分析。  

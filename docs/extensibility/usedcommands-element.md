@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: e951776df807cae1b66cbc3564b9ee7a3d0165ae
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56699856"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62432030"
 ---
 # <a name="usedcommands-element"></a>UsedCommands 項目
 UsedCommands 元素分組 UsedCommand 元素和其他 UsedCommands 分組。

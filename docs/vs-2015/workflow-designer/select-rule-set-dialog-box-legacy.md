@@ -13,12 +13,12 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 3b619421c2d1eb9d8c2a4853c7a6ce5c3fbb7ea7
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 6b3c2a7e23aba13cbe843c33510a81b66ba2b815
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58945309"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445420"
 ---
 # <a name="select-rule-set-dialog-box-legacy"></a>選取規則集對話方塊 (舊版)
 本主題描述如何使用**選取規則集**對話方塊中，在舊版[!INCLUDE[wfd1](../includes/wfd1-md.md)]。 當您需要以 [!INCLUDE[wfd2](../includes/wfd2-md.md)] 或 [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] 為目標時，請使用舊版 [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)]。  
@@ -39,7 +39,7 @@ ms.locfileid: "58945309"
  如需如何建立和編輯規則集的詳細資訊，請參閱[規則集編輯器對話方塊 （舊版）](../workflow-designer/rule-set-editor-dialog-box-legacy.md)。  
   
 > [!WARNING]
->  舊版 [!INCLUDE[wfd2](../includes/wfd2-md.md)] 的規則編輯器，它所針對的 [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] 或 [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)] 不支援多重目標。  
+> 舊版 [!INCLUDE[wfd2](../includes/wfd2-md.md)] 的規則編輯器，它所針對的 [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] 或 [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)] 不支援多重目標。  
   
  如需有關條件的詳細資訊，請參閱[在工作流程中使用條件](http://go.microsoft.com/fwlink?LinkID=65009)。  
   

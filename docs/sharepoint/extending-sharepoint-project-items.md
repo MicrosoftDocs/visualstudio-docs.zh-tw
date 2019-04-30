@@ -15,11 +15,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: f60c95418379399196c461e055645ae7c85a473e
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56597656"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62967392"
 ---
 # <a name="extend-sharepoint-project-items"></a>擴充 SharePoint 專案項目
   當您想要將功能新增至已安裝 Visual Studio 中的 SharePoint 專案項目類型，請建立專案項目擴充功能。 比方說，您可以在其中建立內建的擴充功能**事件接收器**或是**清單定義**專案項目在 Visual Studio 中，或者您可以建立自訂專案項目類型的擴充功能。 您也可以建立所有 SharePoint 專案項目類型的擴充功能。
@@ -61,7 +61,7 @@ ms.locfileid: "56597656"
 |循序性工作流程<br /><br /> 狀態機器工作流程|Microsoft.VisualStudio.SharePoint.Workflow|
 |網站定義|Microsoft.VisualStudio.SharePoint.SiteDefinition|
 |視覺 Web 組件|Microsoft.VisualStudio.SharePoint.VisualWebPart|
-|網頁組件|Microsoft.VisualStudio.SharePoint.WebPart|
+|Web 組件|Microsoft.VisualStudio.SharePoint.WebPart|
 |工作流程關聯表單|Microsoft.VisualStudio.SharePoint.WorkflowAssociation|
 
 ## <a name="see-also"></a>另請參閱

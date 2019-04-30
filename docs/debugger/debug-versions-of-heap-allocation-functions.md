@@ -24,11 +24,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: d00ea299ae7cebea5d6ad1a09837dc75e10568aa
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56617336"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62852794"
 ---
 # <a name="debug-versions-of-heap-allocation-functions"></a>堆積配置函式的偵錯版本
 C 執行階段程式庫包含堆積配置 (Heap Allocation) 函式的特殊偵錯版本。 這些函式的名稱與發行版本相同，再加上「_dbg」。 本主題以 `malloc` 和 `_malloc_dbg` 為例，說明 CRT 函式發行版本和 _dbg 版本之間的差異。
@@ -47,6 +47,6 @@ C 執行階段程式庫包含堆積配置 (Heap Allocation) 函式的特殊偵�
 
   未定義 _DEBUG，呼叫`malloc`不干擾，呼叫`_malloc_dbg`會解析為`malloc`，定義[_CRTDBG_MAP_ALLOC](/cpp/c-runtime-library/crtdbg-map-alloc)會忽略，而來源相關的檔案資訊未提供配置要求。 因為 `malloc` 沒有區塊型別參數，`_CLIENT_BLOCK` 類型的要求會被當成標準配置處理。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [CRT 偵錯技術](../debugger/crt-debugging-techniques.md)

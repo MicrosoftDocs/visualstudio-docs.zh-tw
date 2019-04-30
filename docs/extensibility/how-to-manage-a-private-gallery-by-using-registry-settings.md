@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 35a5c80785aa5d7f3e38dfb52b503c42d788e557
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56723145"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62862949"
 ---
 # <a name="how-to-manage-a-private-gallery-by-using-registry-settings"></a>HOW TO：使用登錄設定管理私用組件庫
 如果您是系統管理員或獨立模式 Shell 擴充功能的開發人員，您可以控制存取權的控制項、 範本和 Visual Studio 組件庫、 範例庫或私用組件庫中的工具。 若要讓資源庫，可以或無法使用，建立 *.pkgdef*描述的已修改的登錄機碼和其值的檔案。

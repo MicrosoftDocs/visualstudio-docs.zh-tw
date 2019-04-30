@@ -22,11 +22,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 69ad1208f9c3e36ff4f73b633efc9de180a09457
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56700194"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62852089"
 ---
 # <a name="debugging-errors-and-warning-dialog-boxes"></a>偵錯錯誤和警告對話方塊
 底下列出一些偵錯應用程式時可能會碰到的錯誤和警告對話方塊。
@@ -54,10 +54,10 @@ ms.locfileid: "56700194"
 
  [無法連線至電腦](../debugger/error-unable-to-connect-to-the-machine-name-the-machine-cannot-be-found-on-the-network.md)
 
- [錯誤：無法進行偵錯，系統中已啟動一個核心偵錯工具](../debugger/error-debugging-isn-t-possible-because-a-kernel-debugger-is-enabled-on-the-system.md)
+ [錯誤：無法進行偵錯，因為系統中已啟動核心偵錯工具](../debugger/error-debugging-isn-t-possible-because-a-kernel-debugger-is-enabled-on-the-system.md)
 
 ## <a name="related-sections"></a>相關章節
- [Debugging Script and Web: Errors and Troubleshooting](../debugger/debugging-web-applications-errors-and-troubleshooting.md) (對指令碼和 Web 進行偵錯：錯誤和疑難排解)
+ [偵錯指令碼和 Web:錯誤和疑難排解](../debugger/debugging-web-applications-errors-and-troubleshooting.md)
 
  [遠端偵錯錯誤](../debugger/remote-debugging-errors-and-troubleshooting.md)
 

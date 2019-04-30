@@ -15,12 +15,12 @@ caps.latest.revision: 21
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: c2440f31b6a6ac345644e20e14b4a82972967fab
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: d4bc6eeb208ab6d80168431f110f0f6169abbc82
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60104274"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63442143"
 ---
 # <a name="how-to-specify-additional-instrumentation-options"></a>HOW TO：指定其他檢測選項
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ ms.locfileid: "60104274"
 - [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)]、[!INCLUDE[vsPreLong](../includes/vsprelong-md.md)]、[!INCLUDE[vsPro](../includes/vspro-md.md)]  
   
 > [!IMPORTANT]
->  插入的每個探查會稍微改變原始程式的行為。 這個改變會在分析階段造成額外負荷。 即使扣除掉這個額外負荷的近似值，它仍會對多執行緒的應用程式有輕微的執行時間變化。 [VSInstr](../profiling/vsinstr.md) 工具選項可協助在程式碼剖析期間控制資料的收集。  
+> 插入的每個探查會稍微改變原始程式的行為。 這個改變會在分析階段造成額外負荷。 即使扣除掉這個額外負荷的近似值，它仍會對多執行緒的應用程式有輕微的執行時間變化。 [VSInstr](../profiling/vsinstr.md) 工具選項可協助在程式碼剖析期間控制資料的收集。  
   
 ### <a name="to-specify-additional-instrumentation-option"></a>指定其他的檢測選項  
   

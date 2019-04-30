@@ -13,15 +13,15 @@ manager: wpickett
 ms.workload:
 - cplusplus
 ms.openlocfilehash: acfa1e274b7c0744c2d9968682960b1cd50e0044
-ms.sourcegitcommit: 2dc924c96a6d48803c8eedc3d6781202629b41fa
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57736923"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62820333"
 ---
 # <a name="walkthrough-analyzing-cc-code-for-defects"></a>逐步解說：分析 C/C++ 程式碼的缺失
 
-本逐步解說示範如何使用 C/c + + 程式碼的程式碼分析工具分析 C/c + + 程式碼有潛在的程式碼缺失。
+本逐步解說示範如何分析 C /C++使用適用於 C 的程式碼分析工具的潛在的程式碼的程式碼缺失 /C++程式碼。
 
 - 執行程式碼分析原生程式碼。
 - 分析程式碼缺失警告。
@@ -31,7 +31,7 @@ ms.locfileid: "57736923"
 ## <a name="prerequisites"></a>必要條件
 
 - 一份[示範範例](../code-quality/demo-sample.md)。
-- 基本的 C/c + + 的了解。
+- 基本的了解 C /C++。
 
 ### <a name="to-run-code-defect-analysis-on-native-code"></a>在原生程式碼執行的程式碼缺失分析
 
@@ -51,7 +51,7 @@ ms.locfileid: "57736923"
 
 5. 按一下 **程式碼分析**。
 
-6. 按一下 **啟用 C/c + + 建置的程式碼分析**核取方塊。
+6. 按一下 **啟用適用於 C 的程式碼分析 /C++上建置**核取方塊。
 
 7. 重建 CodeDefects 專案。
 
@@ -113,7 +113,7 @@ ms.locfileid: "57736923"
 
 3. 按一下 **程式碼分析**。
 
-4. 選取 **啟用 C/c + + 建置的程式碼分析**核取方塊。
+4. 選取 **啟用適用於 C 的程式碼分析 /C++上建置**核取方塊。
 
 5. 重建註解的專案。
 
@@ -179,4 +179,4 @@ ms.locfileid: "57736923"
 ## <a name="see-also"></a>另請參閱
 
 [逐步解說：分析 Managed 程式碼的程式碼缺失](../code-quality/walkthrough-analyzing-managed-code-for-code-defects.md)
-[C/c + + 程式碼分析](../code-quality/code-analysis-for-c-cpp-overview.md)
+[適用於 C 的程式碼分析 /C++](../code-quality/code-analysis-for-c-cpp-overview.md)

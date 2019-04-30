@@ -13,11 +13,11 @@ caps.latest.revision: 7
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: f558dc11f4f338cd370442bf9feaed419ce29411
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58945072"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62547581"
 ---
 # <a name="metadataaddressarrayelem"></a>METADATA_ADDRESS_ARRAYELEM
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -44,7 +44,7 @@ public struct METADATA_ADDRESS_ARRAYELEM {
  tokMethod  
  識別碼陣列的這個項目是的一部分。  
   
- [C + +]`_mdToken`已`typedef`適用於 32 位元`int`。  
+ [C++]`_mdToken`是`typedef`適用於 32 位元`int`。  
   
  dwIndex  
  陣列中這個項目的索引。  

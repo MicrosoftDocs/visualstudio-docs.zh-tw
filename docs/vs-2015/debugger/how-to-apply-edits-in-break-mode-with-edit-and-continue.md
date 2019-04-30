@@ -24,12 +24,12 @@ caps.latest.revision: 33
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: e26b293a5ac7326ca8f82250ec3d0da9fe96371c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 5c04dc0ae6e5272d2544ad7436fa7ca516c9a022
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60069922"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437352"
 ---
 # <a name="how-to-apply-edits-in-break-mode-with-edit-and-continue"></a>HOW TO：套用在中斷模式中的編輯，以編輯後繼續
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -75,7 +75,7 @@ ms.locfileid: "60069922"
      如需詳細資訊，請參閱 <<c0> [ 在 Visual Basic 編輯後繼續中不支援編輯](../debugger/unsupported-edits-in-visual-basic-edit-and-continue.md)。  
   
     > [!NOTE]
-    >  如果您嘗試進行 [編輯後繼續] 不允許的程式碼變更，您的編輯會被加上紫色波浪線，而且 [工作清單] 中會出現工作。 除非您復原不合法的程式碼變更，否則將無法繼續執行程式碼。  
+    > 如果您嘗試進行 [編輯後繼續] 不允許的程式碼變更，您的編輯會被加上紫色波浪線，而且 [工作清單] 中會出現工作。 除非您復原不合法的程式碼變更，否則將無法繼續執行程式碼。  
   
 3. 在 [偵錯] 功能表上，按一下 [繼續] 以恢復執行。  
   

@@ -17,12 +17,12 @@ caps.latest.revision: 47
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: c2d8ecd09487248b4c4be05b354133c710febf30
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: cfc486401792afc7d2c6295cacca843aa6c5b11b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60076194"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445032"
 ---
 # <a name="securing-clickonce-applications"></a>保護 ClickOnce 應用程式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -74,7 +74,7 @@ ms.locfileid: "60076194"
  請絕對不要將透過查詢字串擷取的引數傳遞給資料庫或命令列，而沒有檢查這些引數來確定其是否安全。 不安全的引數為包含資料庫或命令列逸出字元 (Escape Character) 的引數，這些引數可讓惡意使用者操縱您的應用程式來執行任意命令。  
   
 > [!NOTE]
->  查詢字串引數是在啟動 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 應用程式時傳遞引數給它的唯一方法； 您不能從命令列傳遞引數給 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 應用程式。  
+> 查詢字串引數是在啟動 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 應用程式時傳遞引數給它的唯一方法； 您不能從命令列傳遞引數給 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 應用程式。  
   
 ## <a name="deploying-obfuscated-assemblies"></a>部署模糊化組件  
  您可能會想要使用 Dotfuscator 模糊化您的應用程式，防止他人對程式碼進行反向工程。 不過，組件模糊化功能尚未整合到 Visual Studio IDE 或 ClickOnce 部署程序中； 因此，您將需要在部署程序之外執行模糊化，或許是使用建置後步驟。 在建置專案後，您要在 Visual Studio 外面手動執行下列步驟：  

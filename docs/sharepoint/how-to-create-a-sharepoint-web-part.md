@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 304e9f29d317a5258467e4ff45248d0dd2066d4f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60041117"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62966805"
 ---
 # <a name="how-to-create-a-sharepoint-web-part"></a>HOW TO：建立 SharePoint web 組件
   您可以建立並自訂 web 組件，藉由新增**Web 組件**至任何 SharePoint 專案項目，然後再編輯 web 組件，或使用設計工具的程式碼檔案。 如需詳細資訊，請參閱[如何：使用設計工具建立 SharePoint web 組件](../sharepoint/how-to-create-a-sharepoint-web-part-by-using-a-designer.md)。

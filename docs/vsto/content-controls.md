@@ -38,12 +38,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: cca58ec0c9f493cd418cbb5aabca7a8d2c1939b4
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 4cecbaf834185e66d7d584d58d2abb4dbdf46f9e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60062174"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445596"
 ---
 # <a name="content-controls"></a>內容控制項
   內容控制項提供一種設計文件和範本的方式，能讓它們具有下列功能：
@@ -72,7 +72,7 @@ ms.locfileid: "60062174"
   在文件層級的專案中，您可以於設計階段或執行階段，將內容控制項加入文件。 在 VSTO 增益集專案中，您可以在執行階段將內容控制項加入任何開啟的文件。 如需詳細資訊，請參閱[如何：將內容控制項加入 Word 文件](../vsto/how-to-add-content-controls-to-word-documents.md)。
 
 > [!NOTE]
->  您可以使用內容控制項只會儲存為 Open XML 格式的文件中。 您無法使用 Word 97-2003 文件中儲存的文件中的內容控制項 (*.doc*) 格式。
+> 您可以使用內容控制項只會儲存為 Open XML 格式的文件中。 您無法使用 Word 97-2003 文件中儲存的文件中的內容控制項 (*.doc*) 格式。
 
 ## <a name="types-of-content-controls"></a>型別的內容控制項
  有九種不同型別的內容控制項可以加入文件。 大部分的內容控制項在 <xref:Microsoft.Office.Tools.Word> 命名空間中有對應的型別。 您也可以使用泛型的 <xref:Microsoft.Office.Tools.Word.ContentControl>，它可以代表任何可用的內容控制項。 如需示範如何使用每個可用的內容控制項的逐步解說，請參閱[逐步解說：使用內容控制項建立範本](../vsto/walkthrough-creating-a-template-by-using-content-controls.md)。
@@ -137,7 +137,7 @@ ms.locfileid: "60062174"
   如果要保護的區域不在內容控制項內，或者要保護的區域包含內容控制項和其他類型的內容，您可以將整個區域放入 <xref:Microsoft.Office.Tools.Word.GroupContentControl>。 不像其他內容的控制項，<xref:Microsoft.Office.Tools.Word.GroupContentControl> 不提供向使用者顯示的 UI。 它唯一的用途是定義使用者無法編輯的區域。
 
 > [!NOTE]
->  如果建立的 <xref:Microsoft.Office.Tools.Word.GroupContentControl> 包含內嵌內容控制項，則不會自動保護這些內嵌內容控制項。 您必須使用**LockContents**屬性的每個內嵌控制項，以防止使用者編輯其內容。
+> 如果建立的 <xref:Microsoft.Office.Tools.Word.GroupContentControl> 包含內嵌內容控制項，則不會自動保護這些內嵌內容控制項。 您必須使用**LockContents**屬性的每個內嵌控制項，以防止使用者編輯其內容。
 
  如需如何使用內容控制項保護文件的組件的詳細資訊，請參閱[How to:使用內容控制項保護文件的部分](../vsto/how-to-protect-parts-of-documents-by-using-content-controls.md)。
 
@@ -170,7 +170,7 @@ ms.locfileid: "60062174"
  內容控制項也支援雙向的資料繫結，讓控制項中的變更更新回資料來源。 如需詳細資訊，請參閱[如何：從主控制項的資料更新資料來源](../vsto/how-to-update-a-data-source-with-data-from-a-host-control.md)。
 
 > [!NOTE]
->  內容控制項不支援複雜的資料繫結。 如果使用 Windows Form 資料模型將 <xref:Microsoft.Office.Tools.Word.DropDownListContentControl> 或 <xref:Microsoft.Office.Tools.Word.ComboBoxContentControl> 繫結到資料來源，當使用者按一下控制項就只會看到單一值。 如果您想要將這些控制項繫結至一組使用者可以從中選擇的資料值，您可以將這些控制項繫結至自訂 XML 組件中的元素。
+> 內容控制項不支援複雜的資料繫結。 如果使用 Windows Form 資料模型將 <xref:Microsoft.Office.Tools.Word.DropDownListContentControl> 或 <xref:Microsoft.Office.Tools.Word.ComboBoxContentControl> 繫結到資料來源，當使用者按一下控制項就只會看到單一值。 如果您想要將這些控制項繫結至一組使用者可以從中選擇的資料值，您可以將這些控制項繫結至自訂 XML 組件中的元素。
 
 ### <a name="bind-content-controls-to-custom-xml-parts"></a>內容控制項繫結至自訂 XML 組件
  您可以將一些內容控制項繫結至內嵌於文件的自訂 XML 組件的元素。 如需有關自訂 XML 組件的詳細資訊，請參閱 <<c0> [ 自訂 XML 組件概觀](../vsto/custom-xml-parts-overview.md)。

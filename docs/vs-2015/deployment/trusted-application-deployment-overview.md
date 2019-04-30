@@ -17,12 +17,12 @@ caps.latest.revision: 33
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 0b8081946da2053d257691c8ec5dc2b1302e4d75
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 869a756b1995a1ae5de3736fcee4ccede6cb46e5
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60105834"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63427102"
 ---
 # <a name="trusted-application-deployment-overview"></a>受信任的應用程式部署概觀
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ ms.locfileid: "60105834"
  信任的應用程式部署 ( [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 部署技術的一部分)，可讓各種規模的組織以更安全的方式授與 Managed 應用程式的其他權限，而不需要進行使用者提示。 使用信任的應用程式部署，組織可以只設定用戶端電腦的信任發行者清單，這些發行者是使用 Authenticode 憑證來識別。 此後，由其中一個信任發行者簽署的任何 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 應用程式，會收到較高的信任層級。  
   
 > [!NOTE]
->  信任的應用程式部署需要對使用者電腦進行一次性的組態。 在 Managed 桌面環境中，可以使用全域原則來執行此組態。 如果您的應用程式不想要使用這種方式，請改用權限提高。 如需詳細資訊，請參閱[保護 ClickOnce 應用程式](../deployment/securing-clickonce-applications.md)。  
+> 信任的應用程式部署需要對使用者電腦進行一次性的組態。 在 Managed 桌面環境中，可以使用全域原則來執行此組態。 如果您的應用程式不想要使用這種方式，請改用權限提高。 如需詳細資訊，請參閱[保護 ClickOnce 應用程式](../deployment/securing-clickonce-applications.md)。  
   
 ## <a name="trusted-application-deployment-basics"></a>信任的應用程式部署基本概念  
  下表顯示信任的應用程式部署所涉及的物件和角色。  
@@ -91,7 +91,7 @@ ms.locfileid: "60105834"
  取得您的憑證之後，必須用它來簽署您的部署。 如果您使用 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 發行精靈來部署應用程式，精靈會自動產生測試憑證 (如果您未自行指定憑證的話)。 不過，您也可以使用 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 專案設計工具視窗，提供由 CA 所提供的憑證。  另請參閱[How to:發行 ClickOnce 應用程式使用發行精靈](http://msdn.microsoft.com/library/31kztyey\(v=vs.110\))或[How to:使用發佈精靈發佈 ClickOnce 應用程式](http://msdn.microsoft.com/library/31kztyey\(v=vs.110\))。  
   
 > [!CAUTION]
->  我們不建議使用測試憑證來部署應用程式。  
+> 我們不建議使用測試憑證來部署應用程式。  
   
  您也可以使用 Mage.exe 或 MageUI.exe SDK 工具簽署應用程式。 如需詳細資訊，請參閱[逐步解說：手動部署 ClickOnce 應用程式](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)。 如需與部署簽署相關的命令列選項的完整清單，請參閱 < [Mage.exe （資訊清單產生和編輯工具）](http://msdn.microsoft.com/library/77dfe576-2962-407e-af13-82255df725a1)。  
   

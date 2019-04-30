@@ -17,15 +17,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 29659af4fa05c6556656a0a11f13377119f9df9e
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.openlocfilehash: 86c69070a6c954ccf01581690e11237fea4e52c7
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56612903"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63406753"
 ---
 # <a name="clickonce-security-and-deployment"></a>ClickOnce 安全性和部署
-[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 是一種部署技術，可讓您建立自行更新以 Windows 為基礎的應用程式可以安裝並執行最少使用者介入。 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 提供完整的支援發佈及更新應用程式部署與 ClickOnce 技術，如果您在開發您的專案與 Visual Basic 和 Visual C#。 部署 Visual c + + 應用程式的相關資訊，請參閱[Visual c + + 應用程式的 ClickOnce 部署](/cpp/ide/clickonce-deployment-for-visual-cpp-applications)。
+[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 是一種部署技術，可讓您建立自行更新以 Windows 為基礎的應用程式可以安裝並執行最少使用者介入。 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 發佈及更新應用程式部署與 ClickOnce 技術，如果您在開發您的專案與 Visual Basic 和 Visual C# 提供完整支援。 如需部署視覺效果C++應用程式，請參閱[視覺效果的 ClickOnce 部署C++應用程式](/cpp/ide/clickonce-deployment-for-visual-cpp-applications)。
 
  [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 部署可克服在部署中的三個主要問題：
 
@@ -54,13 +54,13 @@ ms.locfileid: "56612903"
  程式碼存取安全性有助於限制程式碼對受保護資源的存取權。 在大部分情況下，您可以選擇的網際網路或近端內部網路區域，以限制權限。 使用**安全性**頁面**ProjectDesigner**要求適用於應用程式的區域。 您也可以偵錯應用程式，以限制權限來模擬的使用者體驗。 如需詳細資訊，請參閱 [ClickOnce 應用程式的程式碼存取安全性](../deployment/code-access-security-for-clickonce-applications.md)。
 
 ### <a name="clickonce-trust-prompt"></a>ClickOnce 信任提示
- 如果應用程式要求更多的權限超過允許的區域，您就可以提示使用者進行信任決策。 使用者可以決定是否受信任而得以執行 ClickOnce 應用程式，例如 Windows Forms 應用程式、 Windows Presentation Foundation 應用程式、 主控台應用程式、 XAML 瀏覽器應用程式，以及 Office 方案。 如需詳細資訊，請參閱 <<c0> [ 如何： 設定 ClickOnce 信任提示行為](../deployment/how-to-configure-the-clickonce-trust-prompt-behavior.md)。
+ 如果應用程式要求更多的權限超過允許的區域，您就可以提示使用者進行信任決策。 使用者可以決定是否受信任而得以執行 ClickOnce 應用程式，例如 Windows Forms 應用程式、 Windows Presentation Foundation 應用程式、 主控台應用程式、 XAML 瀏覽器應用程式，以及 Office 方案。 如需詳細資訊，請參閱[如何：設定 ClickOnce 信任提示行為](../deployment/how-to-configure-the-clickonce-trust-prompt-behavior.md)。
 
 ## <a name="how-clickonce-deployment-works"></a>ClickOnce 部署的運作方式
  核心[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]部署架構根據兩個 XML 資訊清單檔案： 應用程式資訊清單和部署資訊清單。 檔案用來描述從 ClickOnce 應用程式的安裝位置，更新方式和更新的時機。
 
 ### <a name="publish-clickonce-applications"></a>發佈 ClickOnce 應用程式
- 應用程式資訊清單描述應用程式本身。 這包括組件、 相依性和構成應用程式、 必要的權限，以及位置會提供更新的檔案。 應用程式開發人員使用發行精靈，在 Visual Studio 或資訊清單產生和編輯工具來撰寫應用程式資訊清單 (*Mage.exe*) 中[!INCLUDE[winsdklong](../deployment/includes/winsdklong_md.md)]。 如需詳細資訊，請參閱 <<c0> [ 如何： 發行 ClickOnce 應用程式使用發行精靈](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)。
+ 應用程式資訊清單描述應用程式本身。 這包括組件、 相依性和構成應用程式、 必要的權限，以及位置會提供更新的檔案。 應用程式開發人員使用發行精靈，在 Visual Studio 或資訊清單產生和編輯工具來撰寫應用程式資訊清單 (*Mage.exe*) 中[!INCLUDE[winsdklong](../deployment/includes/winsdklong_md.md)]。 如需詳細資訊，請參閱[如何：使用 [發佈精靈] 發佈 ClickOnce 應用程式](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)。
 
  部署資訊清單會描述應用程式的部署方式。 這包括應用程式資訊清單的位置以及用戶端應該執行的應用程式的版本。
 
@@ -75,13 +75,13 @@ ms.locfileid: "56612903"
  應用程式可以新增至使用者的**開始** 功能表並**新增或移除程式**群組中**控制台**。 不同於其他部署技術，不會加入至**Program Files**資料夾或登錄和無系統管理權限所需的安裝
 
 > [!NOTE]
->  它也可防止應用程式新增至**開始**功能表並**新增或移除程式** 群組，實際上讓它像 Web 應用程式的行為。 如需詳細資訊，請參閱 <<c0> [ 選擇 ClickOnce 部署策略](../deployment/choosing-a-clickonce-deployment-strategy.md)。
+> 它也可防止應用程式新增至**開始**功能表並**新增或移除程式** 群組，實際上讓它像 Web 應用程式的行為。 如需詳細資訊，請參閱 <<c0> [ 選擇 ClickOnce 部署策略](../deployment/choosing-a-clickonce-deployment-strategy.md)。
 
 ### <a name="update-clickonce-applications"></a>更新 ClickOnce 應用程式
  當應用程式開發人員建立應用程式的更新的版本時，它們產生新的應用程式資訊清單，並將檔案複製到部署位置 — 通常是原始的應用程式部署資料夾的同層級資料夾。 系統管理員會更新部署資訊清單，以指向應用程式新版本的位置。
 
 > [!NOTE]
->  **發行精靈**Visual Studio 中可以用來執行這些步驟。
+> **發行精靈**Visual Studio 中可以用來執行這些步驟。
 
  除了部署位置外，部署資訊清單也包含更新位置 (網頁或網路檔案共用)，應用程式會在該位置檢查更新的版本。 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] **發行**屬性用來指定時間和頻率的應用程式應該檢查更新。 部署資訊清單中，可以指定更新行為，或它可以呈現為藉由應用程式的使用者介面中的使用者選項[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]Api。 此外，也可以運用 [Publish] (發佈) 屬性將更新設為強制性，或復原為較舊版本。 如需詳細資訊，請參閱[選擇 ClickOnce 更新策略](../deployment/choosing-a-clickonce-update-strategy.md)。
 
@@ -91,11 +91,11 @@ ms.locfileid: "56612903"
 ## <a name="clickonce-tools"></a>ClickOnce tools
  下表顯示的工具，可用來產生、 編輯、 登入，並重新簽署應用程式和部署資訊清單。
 
-|工具|說明|
+|工具|描述|
 |----------|-----------------|
 |[專案設計工具、安全性頁面](../ide/reference/security-page-project-designer.md)|簽署的應用程式和部署資訊清單。|
-|[專案設計工具、發行頁面](../ide/reference/publish-page-project-designer.md)|產生和編輯 Visual Basic 和 Visual 的應用程式和部署資訊清單C#應用程式。|
-|[*Mage.exe* (資訊清單產生和編輯工具)](/dotnet/framework/tools/mage-exe-manifest-generation-and-editing-tool)|產生 Visual basic 中，視覺效果的應用程式和部署資訊清單C#，和 Visual c + + 應用程式。<br /><br /> 簽署並重新簽署應用程式和部署資訊清單。<br /><br /> 可以從批次指令碼和命令提示字元中執行。|
+|[專案設計工具、發行頁面](../ide/reference/publish-page-project-designer.md)|產生和編輯 Visual Basic 和 Visual C# 應用程式的應用程式和部署資訊清單。|
+|[*Mage.exe* (資訊清單產生和編輯工具)](/dotnet/framework/tools/mage-exe-manifest-generation-and-editing-tool)|產生 Visual basic 中，視覺效果的應用程式和部署資訊清單C#，而 VisualC++應用程式。<br /><br /> 簽署並重新簽署應用程式和部署資訊清單。<br /><br /> 可以從批次指令碼和命令提示字元中執行。|
 |[*MageUI.exe* (資訊清單產生和編輯工具，圖形化用戶端)](/dotnet/framework/tools/mageui-exe-manifest-generation-and-editing-tool-graphical-client)|產生和編輯應用程式和部署資訊清單。<br /><br /> 簽署並重新簽署應用程式和部署資訊清單。|
 |[GenerateApplicationManifest 工作](../msbuild/generateapplicationmanifest-task.md)|產生應用程式資訊清單。<br /><br /> 從執行 MSBuild。 如需詳細資訊，請參閱 [MSBuild 參考](../msbuild/msbuild-reference.md)。|
 |[GenerateDeploymentManifest 工作](../msbuild/generatedeploymentmanifest-task.md)|產生部署資訊清單。<br /><br /> 從執行 MSBuild。 如需詳細資訊，請參閱 [MSBuild 參考](../msbuild/msbuild-reference.md)。|

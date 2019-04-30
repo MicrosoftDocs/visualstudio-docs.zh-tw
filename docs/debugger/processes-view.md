@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 99ba60021410f1965e05f7c5479231013d53cb71
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56697620"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62904221"
 ---
 # <a name="processes-view"></a>處理序檢視
 處理序檢視會顯示您系統上的所有作用中處理序樹狀結構。 會顯示處理序識別碼和模組名稱。 如果您想要檢查特定的系統程序，通常對應於執行程式，請使用處理序檢視。 處理程序會以模組名稱識別，或指定 [系統處理序]。

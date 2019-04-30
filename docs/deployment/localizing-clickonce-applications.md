@@ -21,12 +21,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 529adc66ece75219e71d7ae8b17857f5036e1668
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 81ee263b3bb908daace4bf27f86cff710ae90684
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60097280"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63406791"
 ---
 # <a name="localize-clickonce-applications"></a>將 ClickOnce 應用程式當地語系化
 當地語系化是讓應用程式適合特定文化特性的程序， 這個程序包括將使用者介面 (UI) 文字翻譯成特定地區的語言、使用正確的日期和貨幣格式、調整表單上控制項的大小，以及視需要將控制項左右反轉。
@@ -51,7 +51,7 @@ ms.locfileid: "60097280"
  這種方法的優點是會建立單一部署，並簡化了當地語系化部署的過程。 在執行階段，將會根據使用者 Windows 作業系統之預設文化特性而使用適當的附屬組件。 這種方法的缺點是不管應用程式要在用戶端電腦上安裝或更新，都會下載所有的附屬組件。 如果您的應用程式包含大量的字串，或是您的客戶使用慢速的網路連接，這種處理序可能會在應用程式更新期間影響效能。
 
 > [!NOTE]
->  這個方法假設您的應用程式會自動調整控制項的高度、寬度和位置，使其符合不同文化特性中的不同文字字串大小。 Windows Form 包含各種控制項和技術，讓您可用來設計方便進行當地語系化的表單，包括 <xref:System.Windows.Forms.FlowLayoutPanel> 和 <xref:System.Windows.Forms.TableLayoutPanel> 控制項以及 <xref:System.Windows.Forms.Control.AutoSize%2A> 屬性。  另請參閱[How to:支援使用 AutoSize 和 TableLayoutPanel 控制項的 Windows form 的當地語系化](/previous-versions/visualstudio/visual-studio-2010/1zkt8b33(v=vs.100))。
+> 這個方法假設您的應用程式會自動調整控制項的高度、寬度和位置，使其符合不同文化特性中的不同文字字串大小。 Windows Form 包含各種控制項和技術，讓您可用來設計方便進行當地語系化的表單，包括 <xref:System.Windows.Forms.FlowLayoutPanel> 和 <xref:System.Windows.Forms.TableLayoutPanel> 控制項以及 <xref:System.Windows.Forms.Control.AutoSize%2A> 屬性。  另請參閱[How to:支援使用 AutoSize 和 TableLayoutPanel 控制項的 Windows form 的當地語系化](/previous-versions/visualstudio/visual-studio-2010/1zkt8b33(v=vs.100))。
 
 ## <a name="generate-one-deployment-for-each-culture"></a>為每種文化特性產生一個部署
  在這種部署策略中，您會產生多個部署。 在每個部署內，您只會加入特定文化特性所需的附屬組件，並且將部署標記為具有於該種文化特性。

@@ -18,11 +18,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: d23843aa72ce5cf79f6442048b6493d17eb6ef64
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58147913"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62787766"
 ---
 # <a name="iscriptentrygetname"></a>IScriptEntry::GetName
 代表單一物件 （例如函式） 的項目，傳回物件的名稱。  

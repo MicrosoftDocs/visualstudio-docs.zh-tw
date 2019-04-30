@@ -9,11 +9,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 2758dd6425e2bfb4505a1ee9e61d4966e3ba90b6
-ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57525153"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62808425"
 ---
 # <a name="start-view"></a>開始檢視
 

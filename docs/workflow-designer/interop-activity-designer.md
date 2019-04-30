@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: e020e2f4e1ffae9c0e979f2230ff845b1cda203e
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55942696"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62536421"
 ---
 # <a name="interop-activity-designer"></a>Interop 活動設計工具
 
@@ -43,7 +43,7 @@ Visual Basic 專案，您可以將專案目標重定為使用完整的.NET Frame
 
 下表顯示<xref:System.Activities.Statements.Interop>屬性，並描述在設計工具的使用方式。 這些屬性可以在屬性方格中或在工作流程設計工具介面上編輯。
 
-|屬性名稱|必要項|使用方式|
+|屬性名稱|必要|使用量|
 |-|--------------|-|
 |<xref:System.Activities.Activity.DisplayName%2A>|False|<xref:System.Activities.Statements.Interop> 活動的易記名稱。 預設值是**Interop**。 雖然顯示名稱不是必要的建議您為其提供。|
 |<xref:System.Activities.Statements.Interop.ActivityType%2A>|True|指定 <xref:System.Activities.Statements.Interop> 活動所包含之活動的活動型別。 指定的型別必須衍生自 <xref:System.Workflow.ComponentModel.Activity>。|

@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 3dcbfbe7b6e6ac5bacb9e8e36e43d780d3051903
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60108967"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62812552"
 ---
 # <a name="how-to-programmatically-move-items-in-outlook"></a>HOW TO：以程式設計方式在 Outlook 中移動項目
   此範例中移動的未閱讀的電子郵件訊息**收件匣**資料夾，名為**測試**。 此範例只會移動有這個字的訊息**測試**在`Subject`欄位。

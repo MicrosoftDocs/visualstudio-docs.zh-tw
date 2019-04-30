@@ -17,11 +17,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 0fc22e0c8ae0b0bdaf0729b3cdb3847cd25f580f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60042285"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63008223"
 ---
 # <a name="walkthrough-add-feature-event-receivers"></a>逐步解說：新增功能事件接收器
   功能事件接收器是發生在 SharePoint 中的其中一種下列功能相關的事件時執行的方法：

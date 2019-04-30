@@ -15,11 +15,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 226056f139e45f432d757aff8f8774b013742de3
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60076808"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62946598"
 ---
 # <a name="cannot-assign-to-a-function-result"></a>無法指派給函式結果
 您嘗試指派值給函式的結果。 函式的結果可以指派給變數，但它不能做為變數。 如果您想要將新的值指派給函式本身，省略括號 （函式呼叫運算子）。 下列範例示範用來產生這個錯誤的情況。  

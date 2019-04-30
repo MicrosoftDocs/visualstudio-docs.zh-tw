@@ -22,13 +22,13 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 008dde8239c2b4b70220159275b12066b8cf70bb
-ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57525491"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62851018"
 ---
-# <a name="edit-code-and-continue-debugging-in-visual-studio-c-vb-c"></a>編輯程式碼，並在 Visual Studio 中繼續偵錯 (C#、 VB、 c + +)
+# <a name="edit-code-and-continue-debugging-in-visual-studio-c-vb-c"></a>編輯程式碼，並在 Visual Studio 中繼續偵錯 (C#，VB， C++)
 [編輯後繼續] 功能可以在您的程式處於中斷模式時，讓您對原始程式碼進行變更以節省時間。 當您選擇之類的執行命令，會在繼續執行程式時**繼續**或是**步驟**、 編輯及繼續自動套用程式碼變更，但有一些限制。 這可以讓您在偵錯工作階段期間變更程式碼而不需要停止、重新編譯整個程式並重新啟動偵錯工作階段。
 
  本節包括下列主題：
@@ -45,7 +45,7 @@ ms.locfileid: "57525491"
 
  [F# 不支援編輯後繼續](../debugger/edit-and-continue-not-supported-for-f-hash.md)
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [偵錯工具安全性](../debugger/debugger-security.md)
 - [選項對話方塊、偵錯、編輯後繼續](https://msdn.microsoft.com/library/bcew296c.aspx)
 - [偵錯工具簡介](../debugger/debugger-feature-tour.md)

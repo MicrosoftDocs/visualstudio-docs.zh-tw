@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 00e1e849ba12303041d23b89e65230c2a5aafc9b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 58094d505cf2fd3621b801040f0f71904796d86b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60075093"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63388412"
 ---
 # <a name="how-to-edit-a-register-value-c-c-visual-basic-f"></a>HOW TO：編輯暫存器值 (C#， C++，Visual Basic 中， F#)
 
@@ -37,10 +37,10 @@ ms.locfileid: "60075093"
 2. 輸入新值。
 
     > [!CAUTION]
-    >  變更暫存器值 (尤其是 EIP 和 EBP 暫存器中的值) 會影響程式執行。
+    > 變更暫存器值 (尤其是 EIP 和 EBP 暫存器中的值) 會影響程式執行。
 
     > [!CAUTION]
-    >  由於分數元件的十進位至二進位轉換，編輯浮點數值會略微不精確。 即使表面上無害的編輯也可能造成浮點暫存器中的某些最小顯著性位元變更。
+    > 由於分數元件的十進位至二進位轉換，編輯浮點數值會略微不精確。 即使表面上無害的編輯也可能造成浮點暫存器中的某些最小顯著性位元變更。
 
 ## <a name="see-also"></a>另請參閱
 - [如何：使用暫存器視窗](../debugger/how-to-use-the-registers-window.md)

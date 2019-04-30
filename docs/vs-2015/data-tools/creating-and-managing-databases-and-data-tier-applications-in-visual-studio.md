@@ -14,18 +14,18 @@ caps.latest.revision: 40
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 6b6ee9413a2394d0477cd1c7b1a0caf83dd6ad6d
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: d6cb4a3beb12d2b33b8b13441df66116fe449d09
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59651379"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63431149"
 ---
 # <a name="creating-and-managing-databases-and-data-tier-applications-in-visual-studio"></a>建立和管理資料庫和 Visual Studio 中的資料層應用程式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 重要事項]
->  資料庫專案所包含的舊版[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]現已提供在[!INCLUDE[sql_Denali_long](../includes/sql-denali-long-md.md)]工具。 如需詳細資訊，請參閱 < [SQL Server Developer Tools](http://go.microsoft.com/fwlink/?LinkId=228126)。
+> 資料庫專案所包含的舊版[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]現已提供在[!INCLUDE[sql_Denali_long](../includes/sql-denali-long-md.md)]工具。 如需詳細資訊，請參閱 < [SQL Server Developer Tools](http://go.microsoft.com/fwlink/?LinkId=228126)。
 
  您可以使用資料庫專案來建立新的資料庫，新的資料層應用程式 (Dac)，並更新現有的資料庫和資料層應用程式。 資料庫專案和 DAC 專案，可讓您將版本控制和專案管理技術套用至您的資料庫開發工作中，相同的方式將這些技術套用至 managed 或原生程式碼中。 您可以協助您建立來管理對資料庫和資料庫伺服器的開發團隊*DAC 專案*，*資料庫專案*，或有*伺服器專案*並放到在版本控制。 您的小組成員可以簽出檔案進行、 建置和測試中的變更*隔離式的開發環境*，或沙箱，與小組共用它們之前。 為了協助確保程式碼品質，您的小組可以完成，並在預備環境中測試所有變更的特定版本的資料庫，然後再部署到生產環境的變更。
 

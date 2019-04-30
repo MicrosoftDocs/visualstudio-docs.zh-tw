@@ -16,11 +16,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: cdb38bcb8a86900cae7eb596c48b5765bc247eac
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56645819"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62815082"
 ---
 # <a name="work-with-text-in-documents"></a>使用文件中的文字
   本節中的主題針對在 Office 專案中使用 Microsoft Office Word 物件模型處理文字，提供逐步程序和程式碼範例。

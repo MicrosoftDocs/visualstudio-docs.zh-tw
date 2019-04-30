@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ce6d86d84d6f51b995649d5cbfda652262dcfc66
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: f11ea8e93d7d952f28315481f65149122a7b68a3
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60045717"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63415577"
 ---
 # <a name="how-to-use-linked-undo-management"></a>HOW TO：使用連結的復原管理
 連結的復原可讓使用者同時復原所做的相同編輯多個檔案中。 例如，跨多個程式檔，例如標頭檔和視覺效果的同時文字變更C++檔案中，連結的復原交易。 連結的復原功能內建於復原管理員 中，環境的實作和<xref:Microsoft.VisualStudio.TextManager.Interop.IVsLinkedUndoTransactionManager>可讓您管理這項功能。 連結的復原會實作可以連結在一起，以視為單一復原單元的個別復原堆疊為父系復原單位。 使用連結的復原的程序會在下一節中詳細說明。
@@ -29,7 +29,7 @@ ms.locfileid: "60045717"
 3. 呼叫<xref:Microsoft.VisualStudio.TextManager.Interop.IVsLinkedUndoTransactionManager.CloseLinkedUndo%2A>以向前復原所有做為其中一個連結的復原單位。
 
     > [!NOTE]
-    >  若要實作連結的復原管理在編輯器中，將復原管理。 如需有關如何實作連結的復原管理的詳細資訊，請參閱[How to:實作復原管理](../extensibility/how-to-implement-undo-management.md)。
+    > 若要實作連結的復原管理在編輯器中，將復原管理。 如需有關如何實作連結的復原管理的詳細資訊，請參閱[How to:實作復原管理](../extensibility/how-to-implement-undo-management.md)。
 
 ## <a name="see-also"></a>另請參閱
 - <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCompoundAction>

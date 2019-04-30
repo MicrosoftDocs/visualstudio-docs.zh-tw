@@ -9,11 +9,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 66736431b295f974bda1ca855d88cd5f5f868e7d
-ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57526151"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62807712"
 ---
 # <a name="xml-snippets"></a>XML 片段
 

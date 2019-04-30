@@ -18,11 +18,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 3396aee8c044ee9b84d7d6256c6ad69a99965170
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58158863"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62954881"
 ---
 # <a name="iactivescriptparseparsescripttext"></a>IActiveScriptParse::ParseScriptText
 剖析指定的程式碼程式碼片段，加入宣告至命名空間，並評估為適當的程式碼。  

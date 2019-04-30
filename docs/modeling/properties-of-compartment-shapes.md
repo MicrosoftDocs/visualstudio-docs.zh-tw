@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: b44b32f98406e4692de97562bbf97e2656b3a7de
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55937370"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62964283"
 ---
 # <a name="properties-of-compartment-shapes"></a>區間圖案的屬性
 區間圖形都是其中一個圖形，您可以使用特定領域語言中顯示的網域類別。 您可以展開和摺疊區間。
@@ -41,7 +41,7 @@ ms.locfileid: "55937370"
 |自訂屬性|用來將屬性加入至這個區間圖形從產生的來源的程式碼類別|\<無>|
 |產生雙衍生|如果`True`，將產生的基底類別和部分類別 （以支援透過覆寫自訂）。 如需詳細資訊，請參閱 <<c0> [ 覆寫及擴充產生的類別](../modeling/overriding-and-extending-the-generated-classes.md)。|False|
 |具有自訂建構函式|如果`True`，以原始碼提供自訂建構函式。 如需詳細資訊，請參閱 <<c0> [ 覆寫及擴充產生的類別](../modeling/overriding-and-extending-the-generated-classes.md)。|False|
-|繼承修飾詞|描述的繼承來源的程式碼類別從 區間圖形所產生的類型 (`none`，`abstract`或`sealed`)。|無|
+|繼承修飾詞|描述的繼承來源的程式碼類別從 區間圖形所產生的類型 (`none`，`abstract`或`sealed`)。|None|
 |基底區間圖形|此圖形的基底類別。|(無)|
 |名稱|此圖形的名稱。|目前的名稱|
 |命名空間|此圖形附屬於命名空間。|目前的命名空間|
@@ -57,4 +57,4 @@ ms.locfileid: "55937370"
 
 ## <a name="see-also"></a>另請參閱
 
-- [特定領域語言工具字彙](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)
+- [Domain-Specific Language Tools Glossary](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa) (特定領域語言工具字彙表)

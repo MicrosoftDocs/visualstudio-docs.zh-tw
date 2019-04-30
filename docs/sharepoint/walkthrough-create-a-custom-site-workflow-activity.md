@@ -17,11 +17,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: f717345689de9be640e03e9c7d81726a57d494b0
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60084315"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63008291"
 ---
 # <a name="walkthrough-create-a-custom-site-workflow-activity"></a>逐步解說：建立自訂網站工作流程活動
   本逐步解說示範如何建立站台層級工作流程使用自訂活動[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]。 （網站層級的工作流程套用至整個網站，而不只是在站台上的清單）。自訂活動建立備份的公告清單中，並再將 [公告] 清單的內容複製到其中。

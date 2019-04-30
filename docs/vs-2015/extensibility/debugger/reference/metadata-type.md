@@ -13,11 +13,11 @@ caps.latest.revision: 8
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 1be7cb6071a0307a56285b8929e52e038c263fdc
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58942621"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62546820"
 ---
 # <a name="metadatatype"></a>METADATA_TYPE
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -52,7 +52,7 @@ public struct METADATA_TYPE {
  tokClass  
  此類型的中繼資料語彙基元的識別碼。  
   
- [C + +]`_mdToken`已`typedef`適用於 32 位元`int`。  
+ [C++]`_mdToken`是`typedef`適用於 32 位元`int`。  
   
 ## <a name="remarks"></a>備註  
  此結構會顯示為中的等位的一部分[TYPE_INFO](../../../extensibility/debugger/reference/type-info.md)結構時`dwKind`欄位`TYPE_INFO`結構設定為`TYPE_KIND_METADATA`(值[dwTYPE_KIND](../../../extensibility/debugger/reference/dwtype-kind.md)列舉型別）。  

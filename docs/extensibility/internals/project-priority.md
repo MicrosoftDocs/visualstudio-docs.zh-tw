@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 6d444896c305130c7805b8fd6ec1bdf020ed446d
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60089441"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62909249"
 ---
 # <a name="project-priority"></a>專案優先順序
 專案項目通常是在方案中只能有一個專案的成員。 因此，IDE 可以輕易地判斷哪一個專案用來開啟項目中。 不過，如果項目是多個專案的成員，IDE 會判斷最佳的專案開啟的項目使用的優先順序配置。
@@ -34,5 +34,5 @@ ms.locfileid: "60089441"
 
 ## <a name="see-also"></a>另請參閱
 - [其他檔案專案](../../extensibility/internals/miscellaneous-files-project.md)
-- [如何：開啟編輯器開啟的文件](../../extensibility/how-to-open-editors-for-open-documents.md)
+- [如何：針對開啟的文件開啟編輯器](../../extensibility/how-to-open-editors-for-open-documents.md)
 - [新增專案與專案項目範本](../../extensibility/internals/adding-project-and-project-item-templates.md)

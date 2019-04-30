@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 49d253b63b682d81903003d6bdd148922989f274
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: d804acd19d585bf9517ce9b8d771290a1f1c214a
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60082317"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63435460"
 ---
 # <a name="how-to-create-a-sharepoint-command"></a>HOW TO：建立 SharePoint 命令
   如果您想要使用 SharePoint 工具擴充功能中的伺服器物件模型，您必須建立自訂*SharePoint 命令*來呼叫 API。 您可以直接呼叫伺服器物件模型的組件中定義之 SharePoint 命令。
@@ -33,7 +33,7 @@ ms.locfileid: "60082317"
     - 目標 AnyCPU 或 x64 平台。 根據預設，類別庫專案的目標平台會為 AnyCPU。 如需有關如何選取目標平台的詳細資訊，請參閱[How to:將專案設定到目標平台](../ide/how-to-configure-projects-to-target-platforms.md)。
 
     > [!NOTE]
-    >  您無法在相同的專案定義的 SharePoint 工具延伸模組中，實作 SharePoint 命令，因為 SharePoint 命令的目標.NET Framework 3.5 和 SharePoint 工具擴充功能目標[!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]。 您必須定義任何您在個別的專案中的延伸模組所使用的 SharePoint 命令。 如需詳細資訊，請參閱 <<c0> [ 部署適用於 Visual Studio 中 SharePoint 工具擴充功能](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md)。
+    > 您無法在相同的專案定義的 SharePoint 工具延伸模組中，實作 SharePoint 命令，因為 SharePoint 命令的目標.NET Framework 3.5 和 SharePoint 工具擴充功能目標[!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]。 您必須定義任何您在個別的專案中的延伸模組所使用的 SharePoint 命令。 如需詳細資訊，請參閱 <<c0> [ 部署適用於 Visual Studio 中 SharePoint 工具擴充功能](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md)。
 
 2. 加入下列組件的參考：
 

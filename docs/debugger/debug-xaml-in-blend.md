@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 284948bc1167a78b2e99b02607b94ce28cc47a0e
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.openlocfilehash: 535e7ea155200b06b0783e79d95f4eba96ce1eed
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56631038"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63399512"
 ---
 # <a name="debug-xaml-in-blend"></a>在 Blend 中偵錯 XAML
 您可以使用 [!INCLUDE[blend_first](../debugger/includes/blend_first_md.md)] 中的工具為應用程式的 XAML 偵錯。 當您建置專案時，所有錯誤都會顯示在 [結果] 面板中。 只要按兩下錯誤，即可找到與該錯誤相關的標記。 如果需要更多工作空間，您可以按 F12 隱藏 [結果] 面板。
@@ -27,7 +27,7 @@ ms.locfileid: "56631038"
  如果 XAML 或程式碼後置檔案不符合語言的格式規則，就會發生語法錯誤。 錯誤描述有助於您了解修正方法。 這份清單也會指出發生錯誤的檔案名稱與行號。 XAML 錯誤會顯示在 [結果] 面板的 [標記] 索引標籤中。
 
 > [!TIP]
->  XAML 是 XML 架構的標記語言，並且遵循 XML 語法規則。
+> XAML 是 XML 架構的標記語言，並且遵循 XML 語法規則。
 
  常見的一些 XAML 語法錯誤原因如下：
 

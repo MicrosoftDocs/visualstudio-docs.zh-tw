@@ -1,5 +1,5 @@
 ---
-title: 如何： 逐步執行 WCF 服務 |Microsoft Docs
+title: HOW TO：逐步執行 WCF 服務 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -17,13 +17,13 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 0fe025ed3050f25ec53175c543adfaf7cb48c506
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56689807"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62906464"
 ---
-# <a name="how-to-step-into-wcf-services"></a>如何：逐步執行 WCF 服務
+# <a name="how-to-step-into-wcf-services"></a>HOW TO：逐步執行 WCF 服務
 在 [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)] 中，您可以逐步執行 WCF 服務。 如果 WCF 服務與用戶端都位於相同的 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 方案，您就可以執行到達 WCF 服務內部的中斷點。
 
  您必須在 app.config 或 Web.config 檔案內啟用偵錯，才能使用逐步執行。 如需如何啟用偵錯並逐步執行 WCF 服務的限制，請參閱 < [WCF 偵錯的限制](../debugger/limitations-on-wcf-debugging.md)。
@@ -40,7 +40,7 @@ ms.locfileid: "56689807"
 
 5. 執行至中斷點，然後開始逐步執行。 偵錯工具將自動逐步執行服務。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [偵錯 WCF 服務](../debugger/debugging-wcf-services.md)
 - [WCF 偵錯的限制](../debugger/limitations-on-wcf-debugging.md)
-- [如何：偵錯自我裝載的 WCF 服務](../debugger/how-to-debug-a-self-hosted-wcf-service.md)
+- [如何：針對自我裝載的 WCF 服務進行偵錯](../debugger/how-to-debug-a-self-hosted-wcf-service.md)

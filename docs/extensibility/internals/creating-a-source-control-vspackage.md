@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 19ca32a35f8ade3d3e444dd312a5ac71bfcd0a8a
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56646235"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62861323"
 ---
 # <a name="create-a-source-control-vspackage"></a>建立原始檔控制 VSPackage
 這份文件包含連結架構的概觀與整合的原始檔控制封裝[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]，定義要實作的介面，並使用，服務的 API，並說明簡單的原始程式碼的範例控制封裝的實作。

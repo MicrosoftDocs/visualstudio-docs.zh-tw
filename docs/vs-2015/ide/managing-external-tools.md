@@ -57,12 +57,12 @@ caps.latest.revision: 41
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ce3cfa8762c6202a7c36bd9606a0fa77ccdd94a4
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: d6dec053e1075865b51c14df951915308852f8a2
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60084037"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445436"
 ---
 # <a name="managing-external-tools"></a>管理外部工具
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -85,7 +85,7 @@ ms.locfileid: "60084037"
 6. WCF 服務組態編輯器：可讓您建立和修改 WCF 服務的組態設定。  
   
 > [!WARNING]
->  視您安裝的 Visual Studio 版本及套用的設定檔之不同，您看到的外部工具清單或許有些不同。 如需詳細資訊，請參閱 [在 Visual Studio 中自訂開發設定](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)  
+> 視您安裝的 Visual Studio 版本及套用的設定檔之不同，您看到的外部工具清單或許有些不同。 如需詳細資訊，請參閱 [在 Visual Studio 中自訂開發設定](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)  
   
 ## <a name="adding-new-tools"></a>加入新工具  
  您可將外部工具加入 [工具] 功能表。 開啟 [外部工具] 對話方塊，按一下 [加入]，然後填入資訊。 例如，下列輸入內容會讓 Windows 檔案總管的開啟位置，會是於 Visual Studio 中目前所開啟之檔案所在的目錄：  
@@ -100,7 +100,7 @@ ms.locfileid: "60084037"
  下列引數是您啟動外部工具時指派的 Visual Studio 變數。 可使用 [外部工具] 對話方塊將 [記事本] 或 Spy++ 等外部工具的連結列在 [工具] 功能表上。  
   
 > [!NOTE]
->  IDE 狀態列會顯示目前這一行和目前資料行的變數，以指出插入點在作用中程式碼編輯器的位置。 目前的文字變數則會傳回在該位置選取的文字或程式碼。  
+> IDE 狀態列會顯示目前這一行和目前資料行的變數，以指出插入點在作用中程式碼編輯器的位置。 目前的文字變數則會傳回在該位置選取的文字或程式碼。  
   
 |名稱|引數|描述|  
 |----------|--------------|-----------------|  

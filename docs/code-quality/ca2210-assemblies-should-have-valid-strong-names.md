@@ -15,11 +15,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: e596f2e970df487a31628ab0bd29051172b950e4
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55931074"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62796675"
 ---
 # <a name="ca2210-assemblies-should-have-valid-strong-names"></a>CA2210:組件應該具備有效的強式名稱
 
@@ -68,7 +68,7 @@ ms.locfileid: "55931074"
 
 - 針對.NET Framework v1.0 或 v1.1，使用任何一種<xref:System.Reflection.AssemblyKeyFileAttribute?displayProperty=fullName>或<xref:System.Reflection.AssemblyKeyNameAttribute?displayProperty=fullName>屬性。
 
-- 針對[!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)]，使用任何一種`/keyfile`或是`/keycontainer`編譯器選項[/KEYFILE （指定金鑰或金鑰組以簽署組件）](/cpp/build/reference/keyfile-specify-key-or-key-pair-to-sign-an-assembly)或[/KEYCONTAINER （指定金鑰容器以簽署組件）](/cpp/build/reference/keycontainer-specify-a-key-container-to-sign-an-assembly) c + + 中的連結器選項)。
+- 針對[!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)]，使用任何一種`/keyfile`或是`/keycontainer`編譯器選項[/KEYFILE （指定金鑰或金鑰組以簽署組件）](/cpp/build/reference/keyfile-specify-key-or-key-pair-to-sign-an-assembly)或[/KEYCONTAINER （指定金鑰容器以簽署組件）](/cpp/build/reference/keycontainer-specify-a-key-container-to-sign-an-assembly)中的連結器選項C++)。
 
 ### <a name="sign-your-assembly-with-a-strong-name-in-visual-studio"></a>在 Visual Studio 中以強式名稱組件簽章
 

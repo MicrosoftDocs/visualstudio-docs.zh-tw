@@ -15,11 +15,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: e897133b39110f65dfadc091f77855cfef1f6f6b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60117274"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62934895"
 ---
 # <a name="expected--"></a>必須是 '-'
 您嘗試建立的規則運算式常值，但不是包含斜線 （/） 的其中一個。 就像字串常值會寫入為一對引號內的字元，規則運算式常值會表示為斜線 （/） 字元的一組內的字元。  

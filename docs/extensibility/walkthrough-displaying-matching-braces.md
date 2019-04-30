@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: ae1b0f45d119b759d6618630a65353eff4415c78
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60086529"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62795991"
 ---
 # <a name="walkthrough-display-matching-braces"></a>逐步解說：顯示對稱的括號
 實作語言為基礎的功能，例如，定義您想要比對，請在大括的號，並插入號是其中一個大括號時，將文字標記標記新增至對稱的括號比對的大括號。 您可以定義一種語言的內容中的大括號、 定義您自己的副檔名和內容類型，和套用的標籤為輸入，或將標記套用至現有的內容類型 （例如 「 文字 」）。 下列逐步解說示範如何套用至"text"的內容類型的標籤進行比對的大括號。

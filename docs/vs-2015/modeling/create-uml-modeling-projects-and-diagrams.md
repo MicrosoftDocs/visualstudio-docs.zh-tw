@@ -25,12 +25,12 @@ caps.latest.revision: 50
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a302feda3e6254667df797cdbef5d199886a4c0c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: bc537e76e87e519019cfbb1c3f612eb0a4bd6181
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60068323"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433367"
 ---
 # <a name="create-uml-modeling-projects-and-diagrams"></a>建立 UML 模型專案和圖表
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,7 +40,7 @@ UML 模型可協助您了解、討論及設計軟體系統。 Visual Studio 提�
  UML 模型圖表與圖層圖表可以只存在於模型專案內部。 每個模型專案都包含共用的 UML 模型和數個 UML 圖表。 每個圖表都是模型的部分檢視。 UML 模型包含 UML 圖表上的所有元素，而且可以使用 [UML 模型總管] 來檢視。 如需模型及其與圖表關聯性的相關資訊，請參閱[編輯 UML 模型和圖表](../modeling/edit-uml-models-and-diagrams.md)。 模型版本控制下的專案的相關資訊，請參閱[管理模型與版本控制下的圖表](../modeling/manage-models-and-diagrams-under-version-control.md)和[建構模型方案](../modeling/structure-your-modeling-solution.md)  
   
 > [!NOTE]
->  還有另一種圖表，也就是 .NET 類別圖表，可用來將程式碼視覺化。 如需詳細資訊，請參閱 <<c0> [ 設計和檢視類別與類型](http://go.microsoft.com/fwlink/?LinkId=142231)。  
+> 還有另一種圖表，也就是 .NET 類別圖表，可用來將程式碼視覺化。 如需詳細資訊，請參閱 <<c0> [ 設計和檢視類別與類型](http://go.microsoft.com/fwlink/?LinkId=142231)。  
   
 ## <a name="CreatingModelingDiagrams"></a> 建立模型專案中的圖表  
  若要查看哪些 Visual Studio 版本支援這項功能，請參閱 [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)。  
@@ -76,7 +76,7 @@ UML 模型可協助您了解、討論及設計軟體系統。 Visual Studio 提�
 1. 在 [**方案總管] 中**，按一下模型專案節點。  
   
     > [!NOTE]
-    >  模型專案包含名為模型定義資料夾**ModelDefinition**。  
+    > 模型專案包含名為模型定義資料夾**ModelDefinition**。  
   
 2. 在 [專案]  功能表中，按一下 [加入新項目] 。  
   
@@ -87,7 +87,7 @@ UML 模型可協助您了解、討論及設計軟體系統。 Visual Studio 提�
      模型圖表隨即開啟，並出現在模型專案中。  
   
     > [!CAUTION]
-    >  不要加入、複製，或將現有的圖表檔案拖曳至其他模型專案或方案中其他位置。 這會造成所複製圖表中的項目消失，或在開啟圖表時發生錯誤。 您必須從其中所建立的模型專案中開啟圖表。 這是因為 UML 圖表是其模型專案所擁有的模型檢視。 若要複製圖表檔案，請建立新的圖表，然後將來源圖表中的項目複製到新的圖表。 如需詳細資訊，請參閱 <<c0> [ 疑難排解模型專案和圖表](#TroubleshootingModelingProjects)。  
+    > 不要加入、複製，或將現有的圖表檔案拖曳至其他模型專案或方案中其他位置。 這會造成所複製圖表中的項目消失，或在開啟圖表時發生錯誤。 您必須從其中所建立的模型專案中開啟圖表。 這是因為 UML 圖表是其模型專案所擁有的模型檢視。 若要複製圖表檔案，請建立新的圖表，然後將來源圖表中的項目複製到新的圖表。 如需詳細資訊，請參閱 <<c0> [ 疑難排解模型專案和圖表](#TroubleshootingModelingProjects)。  
   
 #### <a name="to-create-a-blank-modeling-project"></a>建立空白模型專案  
   
@@ -111,7 +111,7 @@ UML 模型可協助您了解、討論及設計軟體系統。 Visual Studio 提�
      圖表會從專案和檔案系統中移除。 在圖表上顯示的項目不會移除從**UML 模型總管**。  
   
     > [!NOTE]
-    >  每個圖表都有兩個檔案，其中一個附屬於另一個之下。 例如，如果您具有名稱為 `CD1` 的元件圖表，您應該刪除名為 `CD1.componentdiagram` 的檔案。 名為 `CD1.componentdiagram.layout` 的附屬檔案會自動刪除。  
+    > 每個圖表都有兩個檔案，其中一個附屬於另一個之下。 例如，如果您具有名稱為 `CD1` 的元件圖表，您應該刪除名為 `CD1.componentdiagram` 的檔案。 名為 `CD1.componentdiagram.layout` 的附屬檔案會自動刪除。  
   
 #### <a name="to-temporarily-exclude-a-diagram-from-a-project"></a>暫時從專案排除圖表  
   
@@ -120,14 +120,14 @@ UML 模型可協助您了解、討論及設計軟體系統。 Visual Studio 提�
      圖表隨即從專案中移除。 它並不會從檔案系統中移除。  
   
     > [!NOTE]
-    >  在圖表上顯示的項目不會移除從**UML 模型總管**。  
+    > 在圖表上顯示的項目不會移除從**UML 模型總管**。  
   
 #### <a name="to-restore-a-temporarily-excluded-diagram-to-a-project"></a>將暫時排除的圖表還原至專案  
   
 1. 在 [**方案總管] 中**，按一下模型專案節點。  
   
     > [!NOTE]
-    >  模型專案包含名為模型定義資料夾**ModelDefinition**。  
+    > 模型專案包含名為模型定義資料夾**ModelDefinition**。  
   
 2. 在 **專案**功能表上，按一下**加入現有項目**。  
   
@@ -136,7 +136,7 @@ UML 模型可協助您了解、討論及設計軟體系統。 Visual Studio 提�
      模型圖表隨即開啟，並出現在模型專案中。  
   
     > [!NOTE]
-    >  每個圖表都會在檔案系統中有一組檔案。 請勿選取副檔名為 `.layout` 的檔案。 此外，Visual Studio 並不支援將現有的 UML 圖表加入多個模型專案。 每個圖表檔案都必須在其中所建立的模型專案內開啟。 這是因為 UML 圖表會顯示其模型專案所擁有的模型檢視。  
+    > 每個圖表都會在檔案系統中有一組檔案。 請勿選取副檔名為 `.layout` 的檔案。 此外，Visual Studio 並不支援將現有的 UML 圖表加入多個模型專案。 每個圖表檔案都必須在其中所建立的模型專案內開啟。 這是因為 UML 圖表會顯示其模型專案所擁有的模型檢視。  
   
 ## <a name="NonModelDiagrams"></a> 不需要模型專案的圖表  
  下列類型的圖表並不屬於模型專案：  

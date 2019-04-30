@@ -1,5 +1,5 @@
 ---
-title: 逐步解說： 以程式設計方式擷取圖形資訊 |Microsoft Docs
+title: 逐步解說：以程式設計方式擷取圖形資訊 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 author: mikejo5000
@@ -8,11 +8,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 8fa8d750049d7d74d912e68544c91d5006252068
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56722911"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62848528"
 ---
 # <a name="walkthrough-capturing-graphics-information-programmatically"></a>逐步解說：以程式設計方式擷取圖形資訊
 您可以使用 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 圖形診斷，透過程式設計方式從 Direct3D 應用程式擷取圖形資訊。
@@ -114,7 +114,7 @@ ms.locfileid: "56722911"
 
 - 了解如何使用圖形診斷工具分析擷取到的圖形資訊。 請參閱[概觀](overview-of-visual-studio-graphics-diagnostics.md)。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [逐步解說：擷取圖形資訊](walkthrough-capturing-graphics-information.md)
 - [Capturing Graphics Information](capturing-graphics-information.md)
 - [命令列擷取工具](command-line-capture-tool.md)

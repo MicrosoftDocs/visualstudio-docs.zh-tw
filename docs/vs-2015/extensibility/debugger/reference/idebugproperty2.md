@@ -12,12 +12,12 @@ ms.assetid: a7d5c70f-a1a5-4120-9f70-184e01c25bff
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: d82443e5b9380eef93abf26248871b5d98d68e68
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 1f72a66e6dbfe2749910019760c16f6363498785
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58939714"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63403278"
 ---
 # <a name="idebugproperty2"></a>IDebugProperty2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -25,7 +25,7 @@ ms.locfileid: "58939714"
 此介面代表堆疊框架屬性、 程式文件屬性或某些其他屬性。 屬性通常是運算式評估的結果。  
   
 > [!NOTE]
->  這種使用 「 屬性 」 不應混淆與表示類別的成員變數雖然`IDebugProperty2`可以表示這個實體。  
+> 這種使用 「 屬性 」 不應混淆與表示類別的成員變數雖然`IDebugProperty2`可以表示這個實體。  
   
 ## <a name="syntax"></a>語法  
   

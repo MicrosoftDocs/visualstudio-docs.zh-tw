@@ -9,11 +9,11 @@ manager: wpickett
 ms.workload:
 - cplusplus
 ms.openlocfilehash: 002a82143ca30e87a8e83f3e7e4b7217ab677f11
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60087920"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62822496"
 ---
 # <a name="using-the-c-core-guidelines-checkers"></a>使用 C++ Core Guidelines 檢查工具
 

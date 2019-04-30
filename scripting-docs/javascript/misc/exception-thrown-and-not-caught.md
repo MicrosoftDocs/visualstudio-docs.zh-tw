@@ -15,11 +15,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: bae4ed0a335a9c12d16cb46208f77c4b66f12547
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60050493"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62946325"
 ---
 # <a name="exception-thrown-and-not-caught"></a>發生例外狀況而且未攔截
 您包含`throw`陳述式中您的程式碼，但不住**試**區塊中，或不相關聯**攔截**區塊來捕捉此錯誤。 內擲回例外狀況**嘗試**封鎖使用**擲回**陳述式，並已攔截外部**試**區塊**攔截**陳述式。  

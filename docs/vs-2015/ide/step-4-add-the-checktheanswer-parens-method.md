@@ -9,12 +9,12 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 0b2473654bf05a66ef94bd0e88f06ae3e27dbf12
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: a9806bad150a5d03a942c7dfb36753f91d10536e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60060536"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63442566"
 ---
 # <a name="step-4-add-the-checktheanswer-method"></a>步驟 4：新增 CheckTheAnswer() 方法
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -22,7 +22,7 @@ ms.locfileid: "60060536"
 在本教學課程的第四個部分中，您將撰寫 `CheckTheAnswer()` 這個方法，用於判斷數學問題的答案是否正確。 這個主題是有關基本程式碼撰寫概念的教學課程系列的一部分。 如需教學課程的概觀，請參閱[教學課程 2：建立計時的數學測驗](../ide/tutorial-2-create-a-timed-math-quiz.md)。  
   
 > [!NOTE]
->  如果您是在 Visual Basic 中依照步驟一路做下來，您將使用 `Function` 關鍵字，而不會使用慣用的 `Sub` 關鍵字，因為這個方法會傳回值。 理由就是這麼簡單：Sub 不會傳回值，但 Function 會傳回值。  
+> 如果您是在 Visual Basic 中依照步驟一路做下來，您將使用 `Function` 關鍵字，而不會使用慣用的 `Sub` 關鍵字，因為這個方法會傳回值。 理由就是這麼簡單：Sub 不會傳回值，但 Function 會傳回值。  
   
 ### <a name="to-verify-whether-the-answers-are-correct"></a>若要驗證答案是否正確  
   
@@ -45,7 +45,7 @@ ms.locfileid: "60060536"
 3. 儲存您的程式，執行程式，開始進行測驗，並提供正確答案給加法問題。  
   
     > [!NOTE]
-    >  當您輸入答案時，必須在開始輸入答案之前先選取預設值，或是手動刪除零。 您將在本教學課程稍後更正這種行為。  
+    > 當您輸入答案時，必須在開始輸入答案之前先選取預設值，或是手動刪除零。 您將在本教學課程稍後更正這種行為。  
   
      當您提供正確答案時，訊息方塊隨即開啟，[開始] 按鈕會變成可用，且計時器會停止。  
   

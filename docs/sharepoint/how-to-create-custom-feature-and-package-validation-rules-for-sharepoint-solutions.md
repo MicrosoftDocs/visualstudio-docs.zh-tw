@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 061a86ee301378bc8b456d370eddd19d2f91bbb6
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60109201"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62966740"
 ---
 # <a name="how-to-create-custom-feature-and-package-validation-rules-for-sharepoint-solutions"></a>HOW TO：建立自訂的功能和封裝驗證規則，SharePoint 方案
   您可以建立自訂驗證規則，以確定 Visual Studio 所產生的方案套件。 您也可以選取整個功能或套件上執行完整驗證**Validate**從封裝或功能的操作功能表**PackagingExplorer**。 當您將新的功能或 SharePonit 專案項目加入專案，以判斷是否功能的封裝會處於有效狀態，則會執行部分驗證。

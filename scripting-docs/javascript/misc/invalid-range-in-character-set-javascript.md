@@ -15,14 +15,14 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 1cbfa4de401c2a1dc0626f8f00dbb0bd1bf24408
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60079587"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63007044"
 ---
 # <a name="invalid-range-in-character-set-javascript"></a>不正確的字元集範圍 (JavaScript)
-您嘗試使用無效的字元設定的範圍建立規則運算式。 字元集的範圍必須從單一字元，例如 a-z 或 0-9;您不能包含字元類別，例如 \w 中的字元。 也必須在範圍中的第一個字元前面的範圍中，第二個字元。 例如:   
+您嘗試使用無效的字元設定的範圍建立規則運算式。 字元集的範圍必須從單一字元，例如 a-z 或 0-9;您不能包含字元類別，例如 \w 中的字元。 也必須在範圍中的第一個字元前面的範圍中，第二個字元。 例如：  
   
 ```JavaScript  
 var good = /[a-z]/;     // A valid character range - a comes before z.  

@@ -26,12 +26,12 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 87e0280534eaf97fefebe54712b0f0b12e14bdac
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 684bf375568b83333ac5e4c9f88eeae00449cd42
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60077273"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443255"
 ---
 # <a name="understanding-build-configurations"></a>了解組建組態
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,7 +39,7 @@ ms.locfileid: "60077273"
 您可以儲存不同的方案和專案屬性組態，以用於不同類型的組建。 若要建立、選取、修改或刪除組態，您可以使用 [組態管理員]。 若要開啟組態，請在功能表列上，依序選擇 [建置]、[組態管理員]，或直接在 [快速啟動] 方塊中鍵入**組態**。 您也可以使用 [標準] 工具列上的 [方案組態] 清單，來選取組態或開啟 [組態管理員]。  
   
 > [!NOTE]
->  如果您在工具列上找不到方案組態設定，而且無法存取 [組態管理員]，則可能會套用 [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] 開發設定。 如需詳細資訊，請參閱[如何：管理設定套用 Visual Basic 開發者設定](../ide/how-to-manage-build-configurations-with-visual-basic-developer-settings-applied.md)。  
+> 如果您在工具列上找不到方案組態設定，而且無法存取 [組態管理員]，則可能會套用 [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] 開發設定。 如需詳細資訊，請參閱[如何：管理設定套用 Visual Basic 開發者設定](../ide/how-to-manage-build-configurations-with-visual-basic-developer-settings-applied.md)。  
   
  根據預設，使用 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 範本所建立的專案會包含偵錯和發行組態。 偵錯組態支援應用程式的偵錯，而發行組態則會建置可部署的應用程式版本。 如需詳細資訊，請參閱[如何：設定偵錯和發行組態](../debugger/how-to-set-debug-and-release-configurations.md)。 您也可以建立自訂方案組態和專案組態。 如需詳細資訊，請參閱[如何：建立和編輯組態](../ide/how-to-create-and-edit-configurations.md)。  
   
@@ -49,9 +49,9 @@ ms.locfileid: "60077273"
  方案組態之 [專案內容] 方塊中的每個項目，分別代表方案中的一個專案。 針對 [使用中的方案組態] 和 [使用中的方案平台] 的每種組合，您可以設定每個專案的使用方式 (如需方案平台的詳細資訊，請參閱[了解組建平台](../ide/understanding-build-platforms.md))。  
   
 > [!NOTE]
->  當您定義新的方案組態並選取 [建立新專案組態] 核取方塊時，[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 會將新的組態自動指派給所有專案。 同樣地，當您定義新的方案平台並選取 [建立新專案組態] 核取方塊時，[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 會將新的平台自動指派給所有專案。 此外，如果您加入以新平台為目標的專案，Visual Studio 會將該平台加入方案平台清單中，並指派給所有專案。  
+> 當您定義新的方案組態並選取 [建立新專案組態] 核取方塊時，[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 會將新的組態自動指派給所有專案。 同樣地，當您定義新的方案平台並選取 [建立新專案組態] 核取方塊時，[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 會將新的平台自動指派給所有專案。 此外，如果您加入以新平台為目標的專案，Visual Studio 會將該平台加入方案平台清單中，並指派給所有專案。  
 >   
->  您仍然可以修改每個專案的設定。  
+> 您仍然可以修改每個專案的設定。  
   
  使用中的方案組態也會提供 IDE 的內容。 例如，如果您正在處理某個專案，且組態指定這個專案是針對行動裝置所建置，則 [工具箱] 只會顯示可用於行動裝置專案中的項目。  
   

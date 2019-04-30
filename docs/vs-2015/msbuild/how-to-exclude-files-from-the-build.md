@@ -13,12 +13,12 @@ caps.latest.revision: 19
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: bd1535841a01b6e188383d74ed3b6124b4a325f6
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 0cd59df3b6056040445ac8de79e064a939aff145
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60052555"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63440054"
 ---
 # <a name="how-to-exclude-files-from-the-build"></a>HOW TO：從組建中排除檔案
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -76,7 +76,7 @@ ms.locfileid: "60052555"
     ```  
   
     > [!NOTE]
-    >  您必須指定這兩個屬性的路徑。 如果您使用絕對路徑，在 `Include` 屬性中指定檔案位置，也必須在 `Exclude` 屬性中使用絕對路徑。如果您在 `Include` 屬性中使用相對路徑，就必須在 `Exclude` 屬性中使用相對路徑。  
+    > 您必須指定這兩個屬性的路徑。 如果您使用絕對路徑，在 `Include` 屬性中指定檔案位置，也必須在 `Exclude` 屬性中使用絕對路徑。如果您在 `Include` 屬性中使用相對路徑，就必須在 `Exclude` 屬性中使用相對路徑。  
   
 ## <a name="using-conditions-to-exclude-a-file-or-directory-from-the-inputs-for-a-build"></a>使用條件來從組建的輸入中排除檔案或目錄  
  例如，如果偵錯組建中 (但不在發行組建中) 有您想要包含的項目，您可以使用 `Condition` 屬性來指定要包含該項目的條件。  

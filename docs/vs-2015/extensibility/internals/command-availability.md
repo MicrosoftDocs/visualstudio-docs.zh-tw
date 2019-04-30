@@ -11,12 +11,12 @@ ms.assetid: c74e3ccf-d771-48c8-a2f9-df323b166784
 caps.latest.revision: 35
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 56aeb6a43cea18513a422741289a08a5b7c901c5
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: f060f6c49fc02c75b3fe9f792133c9ee88c6d56c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60084230"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441596"
 ---
 # <a name="command-availability"></a>命令可用性
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -50,7 +50,7 @@ Visual Studio 內容會決定哪些命令可供使用。 根據目前的專案�
 3. 藉由呼叫開啟內容的 Guid 和關閉<xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection.SetCmdUIContext%2A>方法。  
   
     > [!CAUTION]
-    >  請確定，VSPackage 不會影響任何現有內容的 Guid 因為其他 Vspackage 可能取決於它們。  
+    > 請確定，VSPackage 不會影響任何現有內容的 Guid 因為其他 Vspackage 可能取決於它們。  
   
 ## <a name="see-also"></a>另請參閱  
  [選取內容物件](../../extensibility/internals/selection-context-objects.md)   

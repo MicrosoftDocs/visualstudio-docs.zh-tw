@@ -9,12 +9,12 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 1dc742b62fd30c4d5d3e012b2237edcfabd8ed0a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: b1e806b5600c0199c1f131ebc3008cc9f8ee1c68
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60110020"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441999"
 ---
 # <a name="step-1-create-a-windows-forms-application-project"></a>步驟 1：建立 Windows Forms 應用程式專案
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,7 +39,7 @@ ms.locfileid: "60110020"
 4. 下圖顯示您現在會在 Visual Studio 介面中看到的內容。  
   
     > [!NOTE]
-    >  您的視窗配置看起來可能不會與下圖完全相同。 確切的視窗配置取決於 Visual Studio 版本、您使用的程式語言及其他因素。 不過，您應該確認三個視窗都已出現。  
+    > 您的視窗配置看起來可能不會與下圖完全相同。 確切的視窗配置取決於 Visual Studio 版本、您使用的程式語言及其他因素。 不過，您應該確認三個視窗都已出現。  
   
      ![IDE 視窗](../ide/media/express-ideoverview-visio.png "Express_IDEOverview_Visio")  
 IDE 視窗  
@@ -57,7 +57,7 @@ IDE 視窗
     - **屬性視窗**：在這個視窗中，您可以變更在其他視窗中所選擇項目的屬性。 例如，如果您選擇 Form1，可以設定 **Text** 屬性變更其標題，也可以設定 **Backcolor** 屬性變更背景色彩。  
   
     > [!NOTE]
-    >  方案總管中的第一行會顯示 [方案 'PictureViewer' (1 個專案)]，表示 Visual Studio 已為您建立方案。 方案可以包含多個專案，不過，您將暫時使用只包含一個專案的方案。  
+    > 方案總管中的第一行會顯示 [方案 'PictureViewer' (1 個專案)]，表示 Visual Studio 已為您建立方案。 方案可以包含多個專案，不過，您將暫時使用只包含一個專案的方案。  
   
 6. 在功能表列上，依序選擇 [檔案] 和 [全部儲存]。  
   

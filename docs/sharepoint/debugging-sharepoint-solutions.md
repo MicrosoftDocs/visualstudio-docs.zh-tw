@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: cffed1a3905ca1a1aceb9d2cfdcf4abc89f83574
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 60aa38d5042625393132ffceb3cc226f44e67645
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60060796"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443495"
 ---
 # <a name="debug-sharepoint-solutions"></a>偵錯 SharePoint 方案
   您可以使用偵錯 SharePoint 方案[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]偵錯工具。 當您啟動偵錯，[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]專案會將檔案部署到 SharePoint 伺服器，然後開啟 網頁瀏覽器中的 SharePoint 網站的執行個體。 下列各節將說明如何偵錯 SharePoint 應用程式[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]。
@@ -103,7 +103,7 @@ ms.locfileid: "60060796"
 8. 工作流程，將關聯工作流程，與 SharePoint 文件庫、 清單中或您在選取的站台**SharePoint 自訂精靈**。
 
    > [!NOTE]
-   >  只有當您選取，就會發生此關聯**自動關聯工作流程**精靈中。
+   > 只有當您選取，就會發生此關聯**自動關聯工作流程**精靈中。
 
 9. 執行可自訂的部署後命令。
 
@@ -126,7 +126,7 @@ ms.locfileid: "60060796"
  當您偵錯工作流程專案[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]至程式庫或清單加入工作流程範本 （取決於其型別）。 您可以接著啟動工作流程範本，以手動方式或藉由新增或更新項目。 您可以接著使用[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]偵錯工作流程。
 
 > [!NOTE]
->  如果您加入其他組件的參考，請確定這些組件會安裝在全域組件快取 ( [!INCLUDE[TLA2#tla_gac](../sharepoint/includes/tla2sharptla-gac-md.md)])。 否則，工作流程解決方案將會失敗。 如需有關如何安裝組件的資訊，請參閱 <<c0> [ 手動開始文件或項目上的 工作流程](https://support.office.com/article/Manually-start-a-workflow-on-a-document-or-item-5C106E0E-6FF2-4A75-AF99-F01653BC7963)。
+> 如果您加入其他組件的參考，請確定這些組件會安裝在全域組件快取 ( [!INCLUDE[TLA2#tla_gac](../sharepoint/includes/tla2sharptla-gac-md.md)])。 否則，工作流程解決方案將會失敗。 如需有關如何安裝組件的資訊，請參閱 <<c0> [ 手動開始文件或項目上的 工作流程](https://support.office.com/article/Manually-start-a-workflow-on-a-document-or-item-5C106E0E-6FF2-4A75-AF99-F01653BC7963)。
 
  不過，部署程序無法啟動工作流程。 您必須從 SharePoint 網站啟動工作流程。 使用 Microsoft Office Word 2010 中，用戶端應用程式，或使用不同的伺服器端程式碼，您也可以啟動工作流程。 使用其中一種方法中指定**SharePoint 自訂精靈**。
 

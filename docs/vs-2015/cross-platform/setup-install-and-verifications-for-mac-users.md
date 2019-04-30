@@ -6,12 +6,12 @@ ms.assetid: 22725520-59ba-4f6f-80e4-097b1287a34b
 caps.latest.revision: 14
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: 54297754fcc85484a90e25686b0fd14aa7841946
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 543401b0e3fcebee22c1c9581f22ec96a76000af
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60116000"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433879"
 ---
 # <a name="setup-install-and-verifications-for-mac-users"></a>針對 Mac 使用者的設定、安裝和驗證
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -73,7 +73,7 @@ ms.locfileid: "60116000"
      ![在 Visual Studio 選項中檢查 Xamarin 更新](../cross-platform/media/cross-plat-xamarin-setup-3.png "跨平台 Xamarin 設定 3")  
   
     > [!NOTE]
-    >  請確定將 Xamarin 更新為版本 4.0.3.214 或更高版本，以避免發生舊版 Xamarin 授權的問題。  如果您嘗試檢查更新，並看到關於 Microsoft 建置工具的錯誤，請參閱 [Xamarin 論壇](http://forums.xamarin.com/discussion/69015/xamarin-update-on-vs-2013-says-i-need-the-build-tools-for-vs-2015)上的討論。
+    > 請確定將 Xamarin 更新為版本 4.0.3.214 或更高版本，以避免發生舊版 Xamarin 授權的問題。  如果您嘗試檢查更新，並看到關於 Microsoft 建置工具的錯誤，請參閱 [Xamarin 論壇](http://forums.xamarin.com/discussion/69015/xamarin-update-on-vs-2013-says-i-need-the-build-tools-for-vs-2015)上的討論。
   
 6. 當您在 Windows 和 Mac 電腦上完成安裝 Xamarin 之後，請依照[使用 XMA 連線到 Mac (英文)](http://developer.xamarin.com/guides/ios/getting_started/installation/windows/#Connecting_to_the_Mac_Using_XMA) (xamarin.com) 上的指示執行，如此就能透過 Visual Studio 使用 iOS。  
   

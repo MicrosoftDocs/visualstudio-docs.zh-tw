@@ -9,12 +9,12 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 34eedf61afd79570ca1e4ba471efa9802aae7bfa
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: 588bf415a801a9244cd9a046e0c503c0b238db58
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59664121"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63417408"
 ---
 # <a name="formatting-xml-text-editor-options-dialog-box"></a>格式化、XML、文字編輯器 (選項對話方塊)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -22,14 +22,14 @@ ms.locfileid: "59664121"
 此對話方塊可讓您指定 XML 編輯器的格式化設定。 您可以存取**選項**對話方塊中，從**工具**功能表。  
   
 > [!NOTE]
->  這些設定都是當您選取**文字編輯器**資料夾中， **XML**資料夾，然後**格式化**選項**選項**  對話方塊。  
+> 這些設定都是當您選取**文字編輯器**資料夾中， **XML**資料夾，然後**格式化**選項**選項**  對話方塊。  
   
 ## <a name="attributes"></a>屬性  
  **保留手動屬性的格式**  
  不重新格式化屬性。 這是預設值。  
   
 > [!NOTE]
->  如果屬性跨多行，則編輯器會將屬性的每一行縮排，以符合父項目的縮排。  
+> 如果屬性跨多行，則編輯器會將屬性的每一行縮排，以符合父項目的縮排。  
   
  **將每個屬性在各自的行上對齊**  
  垂直對齊第二個屬性及後續屬性，使其符合第一個屬性的縮排。 下列 XML 文字為如何對齊屬性的範例。  

@@ -9,11 +9,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 4051a02de6a046621e62c21b4d2399b5a2703cb8
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56714799"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62895188"
 ---
 # <a name="vsgdbg-class"></a>VsgDbg 類別
 表示讓您以程式設計方式控制圖形診斷的應用程式元件的介面。
@@ -29,14 +29,14 @@ class VsgDbg;
 
 ### <a name="public-constructors"></a>公用建構函式
 
-|名稱|說明|
+|名稱|描述|
 |----------|-----------------|
 |[VsgDbg::VsgDbg (建構函式)](vsgdbg-vsgdbg-constructor.md)|建構的執行個體`VsgDbg`類別，並選擇性地準備 圖形診斷來主動擷取與記錄的圖形資訊的應用程式元件。|
 |[VsgDbg::~VsgDbg (解構函式)](vsgdbg-tilde-vsgdbg-destructor.md)|終結的執行個體`VsgDbg`類別。|
 
 ### <a name="public-methods"></a>公用方法
 
-|名稱|說明|
+|名稱|描述|
 |----------|-----------------|
 |[AddMessage](addmessage.md)|將圖形診斷抬頭顯示器 （Hud 顯示器） 的自訂訊息。|
 |[BeginCapture](begincapture.md)|開始會結束，在擷取間隔`EndCapture`。|

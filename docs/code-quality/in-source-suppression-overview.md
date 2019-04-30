@@ -15,11 +15,11 @@ dev_langs:
 ms.workload:
 - multiple
 ms.openlocfilehash: 6cd61304e150da63d2d461ef364e7039789c71fc
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57223078"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62825813"
 ---
 # <a name="suppress-code-analysis-warnings"></a>隱藏程式碼分析警告
 
@@ -27,7 +27,7 @@ ms.locfileid: "57223078"
 
 <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute>屬性是在編譯時期定義 CODE_ANALYSIS 編譯的符號時，才會包含您的 managed 程式碼組件的 IL 中繼資料中的條件式屬性。
 
-在 C + + /cli CLI，使用巨集 CA\_抑制\_訊息或 CA\_GLOBAL\_SUPPRESS_MESSAGE 標頭檔中的新增屬性。
+在C++/CLI，使用巨集 CA\_抑制\_訊息或 CA\_GLOBAL\_SUPPRESS_MESSAGE 標頭檔中的新增屬性。
 
 > [!NOTE]
 > 您不應該在發行組建中，使用在原始程式檔的隱藏項目，以避免不小心傳送來源在隱藏項目中繼資料。 此外，在原始程式檔隱藏項目處理成本，因為您的應用程式的效能可能會降低。
@@ -85,7 +85,7 @@ CA_SUPPRESS_MESSAGE("Rule Category", "Rule Id", Justification = "Justification",
 
 程式碼分析警告會隱藏的層級<xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute>屬性會套用。 例如，屬性可以套用在組件、 模組、 類型、 成員或參數層級。 的目的是緊密結合的程式碼的隱藏項目資訊發生違規的位置。
 
-一般格式的隱藏項目包含規則的類別和規則識別項，其中包含規則名稱的選擇性人們可讀取表示。 例如: 
+一般格式的隱藏項目包含規則的類別和規則識別項，其中包含規則名稱的選擇性人們可讀取表示。 例如：
 
 `[SuppressMessage("Microsoft.Design", "CA1039:ListsAreStrongTyped")]`
 

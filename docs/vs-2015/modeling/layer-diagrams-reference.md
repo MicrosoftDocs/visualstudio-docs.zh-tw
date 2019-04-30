@@ -22,12 +22,12 @@ caps.latest.revision: 35
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 1c9ea6398ca02291bb9dc11693c98336cd33b14b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: d281b0ddb15a2acc455acd037c088c133c74c1f1
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60061982"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63440978"
 ---
 # <a name="layer-diagrams-reference"></a>分層圖：參考資料
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -85,7 +85,7 @@ ms.locfileid: "60061982"
      **圖層總管**隨即開啟並顯示連結至所選的圖層的成品。 **圖層總管**有一個資料行顯示每個成品連結的屬性。  
   
     > [!NOTE]
-    >  如果您無法看到所有這些屬性，依序展開**圖層總管**視窗。  
+    > 如果您無法看到所有這些屬性，依序展開**圖層總管**視窗。  
   
     |**在圖層總管 中的資料行**|**描述**|  
     |----------------------------------|---------------------|  

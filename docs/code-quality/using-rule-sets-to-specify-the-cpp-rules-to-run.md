@@ -8,19 +8,19 @@ manager: wpickett
 ms.workload:
 - cplusplus
 ms.openlocfilehash: d4d7dfc1f010b860653edbe14fa7af9050bddba4
-ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57323649"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62820369"
 ---
-# <a name="use-rule-sets-to-specify-the-c-rules-to-run"></a>使用規則集來指定要執行的 c + + 規則
+# <a name="use-rule-sets-to-specify-the-c-rules-to-run"></a>使用規則集來指定C++要執行規則
 
 在 Visual Studio 中，您可以建立和修改自訂*規則集*以符合程式碼分析與相關聯的特定專案需求。 預設的規則集儲存在`%VSINSTALLDIR%\Team Tools\Static Analysis Tools\Rule Sets`。
 
 **Visual Studio 2017 15.7 版及更新版本**您可以建立自訂規則集使用任何文字編輯器，並將它們套用在命令列組建，不論建置的系統所使用的項目。 如需詳細資訊，請參閱 < [/analyze: ruleset](/cpp/build/reference/analyze-code-analysis)。
 
-若要建立自訂的 c + + 規則，設定 Visual Studio 中，C/c + + 專案必須在 Visual Studio IDE 中開啟。 然後規則集編輯器中開啟的標準規則集，然後新增或移除特定規則及選擇性變更 程式碼分析會判斷已違反規則時所發生的動作之後。
+若要建立自訂C++規則集在 Visual Studio 中，C /C++必須在 Visual Studio IDE 中開啟專案。 然後規則集編輯器中開啟的標準規則集，然後新增或移除特定規則及選擇性變更 程式碼分析會判斷已違反規則時所發生的動作之後。
 
 若要建立新的自訂規則集，您將使用新的檔案名稱儲存。 自訂規則集會自動指派至專案。
 

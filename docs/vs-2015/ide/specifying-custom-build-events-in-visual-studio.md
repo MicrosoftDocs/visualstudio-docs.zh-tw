@@ -11,12 +11,12 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 1e99ee6c9570f3bb73bc70f230f31e153a8a0da1
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: ace8b173eb20b6e628fbb7066ff9010624cca9e9
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60054147"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441953"
 ---
 # <a name="specifying-custom-build-events-in-visual-studio"></a>在 Visual Studio 中指定自訂建置事件
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -53,7 +53,7 @@ ms.locfileid: "60054147"
      範例：`for %I in (*.txt *.doc *.html) do copy %I c:\`<我的目錄>`\`
 
     > [!NOTE]
-    >  在批次指令碼中，上述程式碼中的 `%I` 應該是 `%%I`。
+    > 在批次指令碼中，上述程式碼中的 `%I` 應該是 `%%I`。
 
 ## <a name="see-also"></a>另請參閱
  [編譯和建置](../ide/compiling-and-building-in-visual-studio.md)[建置前事件/建置後事件命令列對話方塊](../ide/reference/pre-build-event-post-build-event-command-line-dialog-box.md) [MSBuild 特殊字元](../msbuild/msbuild-special-characters.md)[逐步解說：建置應用程式](../ide/walkthrough-building-an-application.md)

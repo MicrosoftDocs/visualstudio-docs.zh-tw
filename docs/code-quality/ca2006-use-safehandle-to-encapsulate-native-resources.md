@@ -15,11 +15,11 @@ manager: jillfra
 ms.workload:
 - cplusplus
 ms.openlocfilehash: 6d29eb9475d48e634766df65836162d6a79fed77
-ms.sourcegitcommit: 1024f336dcd8e8a4c50b9a9ad8ec85b6e70073a8
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/09/2019
-ms.locfileid: "57699625"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62808406"
 ---
 # <a name="ca2006-use-safehandle-to-encapsulate-native-resources"></a>CA2006:必須使用 SafeHandle 封裝原生資源
 

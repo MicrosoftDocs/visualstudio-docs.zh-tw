@@ -15,11 +15,11 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: b527f959f093f155d74e2a85a1812d7ccb58d1e7
-ms.sourcegitcommit: 847d192013eb8225776243045c9b5a53d1ba4a59
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/15/2019
-ms.locfileid: "59584528"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62901205"
 ---
 # <a name="walkthrough-writing-a-visualizer-in-c"></a>逐步解說：在 C 中撰寫視覺化檢視\#
 本逐步解說顯示如何使用 C# 撰寫簡易的視覺化檢視。 您在本逐步解說中建立的視覺化檢視會使用 Windows 表單訊息方塊來顯示字串內容。 這個簡易字串視覺化檢視不是特別適用於本身，但它會顯示建立更有用的視覺化檢視，其他資料類型時，所必須遵循的基本步驟。
@@ -38,7 +38,7 @@ ms.locfileid: "59584528"
 1. 建立新的類別庫專案。
 
     ::: moniker range=">=vs-2019"
-    按 **Esc** 來關閉開始視窗。 型別**Ctrl + Q**來開啟 搜尋 方塊中，輸入**類別庫**，選擇 **範本**，然後選擇 **建立新的類別庫 (.NET Standard)**. 在出現的對話方塊中選擇 [建立]。
+    按 **Esc** 關閉開始視窗。 型別**Ctrl + Q**來開啟 搜尋 方塊中，輸入**類別庫**，選擇 **範本**，然後選擇 **建立新的類別庫 (.NET Standard)**. 在出現的對話方塊中選擇 [建立]。
     ::: moniker-end
     ::: moniker range="vs-2017"
     從頂端功能表列中，選擇 [檔案] > [新增] > [專案]。 在左窗格中**新的專案**對話方塊的 **視覺化C#** ，選擇 **.NET Standard**，然後在中間窗格選擇**類別庫 (。NET Standard)**。

@@ -15,12 +15,12 @@ caps.latest.revision: 50
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 3b2421a8c1002e8fed1830a9de51383c35c01393
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: ecfd329e0e5c096e6e0c2011b60cd97dcd1c2937
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60059223"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433825"
 ---
 # <a name="beginners-guide-to-performance-profiling"></a>效能分析的初級開發人員指南
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ ms.locfileid: "60059223"
  如果 [取樣] 沒有提供您所需的資料，則其他程式碼剖析工具集合方法可提供不同種類的資訊，這可能會很有幫助。 如需這些其他方法的詳細資訊，請參閱[如何：選擇收集方法](../profiling/how-to-choose-collection-methods.md)。  
   
 > [!TIP]
->  如果您剖析呼叫 Windows 函式的程式碼，您應該要確定您有最新的 .pdb 檔案。 如果沒有這些檔案，您的報告檢視會列出隱晦且難以了解的 Windows 函式名稱。 如需如何確認您擁有所需檔案的詳細資訊，請參閱[如何：參考 Windows 符號資訊](../profiling/how-to-reference-windows-symbol-information.md)。  
+> 如果您剖析呼叫 Windows 函式的程式碼，您應該要確定您有最新的 .pdb 檔案。 如果沒有這些檔案，您的報告檢視會列出隱晦且難以了解的 Windows 函式名稱。 如需如何確認您擁有所需檔案的詳細資訊，請參閱[如何：參考 Windows 符號資訊](../profiling/how-to-reference-windows-symbol-information.md)。  
   
 ## <a name="Step1"></a>建立和執行效能工作階段  
  若要取得您要分析的資料，您必須先建立效能工作階段，然後再執行工作階段。 [效能精靈] 可讓您進行這兩項工作。  
@@ -46,7 +46,7 @@ ms.locfileid: "60059223"
 1. 在 Visual Studio 中開啟方案。 設定要發行的組態 (在工具列上尋找 [方案組態] 方塊，其已依預設設定為 [偵錯]。 請將它變更為 [發行]。)  
   
     > [!IMPORTANT]
-    >  如果您不是所使用之電腦的系統管理員，則在使用分析工具時應該以系統管理員身分執行 Visual Studio。 (以滑鼠右鍵按一下 Visual Studio 應用程式圖示，然後按一下 [以系統管理員身分執行]。  
+    > 如果您不是所使用之電腦的系統管理員，則在使用分析工具時應該以系統管理員身分執行 Visual Studio。 (以滑鼠右鍵按一下 Visual Studio 應用程式圖示，然後按一下 [以系統管理員身分執行]。  
   
 2. 在 [偵錯] 功能表上選擇 [效能分析工具] 。  
   

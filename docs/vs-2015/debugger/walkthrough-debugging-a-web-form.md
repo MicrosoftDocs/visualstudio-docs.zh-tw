@@ -23,12 +23,12 @@ caps.latest.revision: 34
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: ad6fa498fe9b89854f7fe3c74af9636b5b59e47f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 56a11c24ad8a38cc837659ac063987573c0ba492
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60053815"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444316"
 ---
 # <a name="walkthrough-debugging-a-web-form"></a>逐步解說：偵錯 Web 表單
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,7 +36,7 @@ ms.locfileid: "60053815"
 這個逐步解說中的步驟將示範如何偵錯 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] Web 應用程式 (也稱為 Web Form)。 會向您示範如何啟動及停止執行、設定中斷點，以及在 [監看式] 視窗中檢查變數。  
   
 > [!NOTE]
->  若要完成本逐步解說，您在伺服器電腦中必須具有系統管理員權限。 根據預設，[!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 處理序 aspnet_wp.exe 或 w3wp.exe 會做為 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 處理序執行。 若要對 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 進行偵錯，您必須在 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 執行的電腦上具有系統管理員權限。 如需詳細資訊，請參閱 [System Requirements](../debugger/aspnet-debugging-system-requirements.md)。  
+> 若要完成本逐步解說，您在伺服器電腦中必須具有系統管理員權限。 根據預設，[!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 處理序 aspnet_wp.exe 或 w3wp.exe 會做為 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 處理序執行。 若要對 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 進行偵錯，您必須在 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 執行的電腦上具有系統管理員權限。 如需詳細資訊，請參閱 [System Requirements](../debugger/aspnet-debugging-system-requirements.md)。  
   
  根據目前使用的設定與版本，您所看到的對話方塊與功能表命令可能會與 [說明] 中所描述的不同。 若要變更設定，請從 [ **工具** ] 功能表中選取 [ **匯入和匯出設定** ]。 如需詳細資訊，請參閱 [在 Visual Studio 中自訂開發設定](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)  
   

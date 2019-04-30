@@ -19,12 +19,12 @@ caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 63328af2211f18fe553c32b018ed0a8422a1857f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 282945f473f2799b92b24321383190ca38557cbc
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60066347"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63422781"
 ---
 # <a name="deploying-com-components-with-clickonce"></a>使用 ClickOnce 部署 COM 元件
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -65,7 +65,7 @@ ms.locfileid: "60066347"
 2. 在 **新的專案**對話方塊中，選取**Visual Basic**節點，然後選取**ActiveX DLL**專案。 在 [名稱] 方塊中，輸入 `VB6Hello`。  
   
     > [!NOTE]
-    >  只有 ActiveX DLL 和 ActiveX 控制項的專案類型所支援的免註冊 COM;不支援 ActiveX EXE 和 ActiveX 文件的專案類型。  
+    > 只有 ActiveX DLL 和 ActiveX 控制項的專案類型所支援的免註冊 COM;不支援 ActiveX EXE 和 ActiveX 文件的專案類型。  
   
 3. 在 [**方案總管] 中**，按兩下**Class1.vb**開啟文字編輯器。  
   
@@ -80,7 +80,7 @@ ms.locfileid: "60066347"
 5. 建置元件。 從**建置**功能表上，按一下**建置方案**。  
   
 > [!NOTE]
->  免註冊 COM 支援只 Dll 和 COM 控制項專案類型。 您無法使用 Exe 免註冊 com。  
+> 免註冊 COM 支援只 Dll 和 COM 控制項專案類型。 您無法使用 Exe 免註冊 com。  
   
  現在您可以建立以 Windows 為基礎的應用程式，並加入 COM 元件的參考。  
   
@@ -128,7 +128,7 @@ ms.locfileid: "60066347"
    現在，您按下 f5 鍵，應用程式如預期般運作，，但是現在正在免註冊 com。 為了證明這點，請嘗試取消註冊 VB6Hello.dll 元件，並執行 Visual Studio IDE 外部 RegFreeComDemo1.exe。 按一下按鈕時，這次它仍能運作。 如果您暫時重新命名應用程式資訊清單，它會一次失敗。  
   
 > [!NOTE]
->  您可以暫時將它取消登錄，以模擬 COM 元件不存在。 開啟命令提示字元中，移至您的系統資料夾中，輸入`cd /d %windir%\system32`，然後輸入，以取消註冊元件`regsvr32 /u VB6Hello.dll`。 您可以再次註冊輸入`regsvr32 VB6Hello.dll`。  
+> 您可以暫時將它取消登錄，以模擬 COM 元件不存在。 開啟命令提示字元中，移至您的系統資料夾中，輸入`cd /d %windir%\system32`，然後輸入，以取消註冊元件`regsvr32 /u VB6Hello.dll`。 您可以再次註冊輸入`regsvr32 VB6Hello.dll`。  
   
  最後一個步驟是發佈應用程式使用[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]:  
   

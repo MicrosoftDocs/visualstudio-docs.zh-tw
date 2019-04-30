@@ -10,11 +10,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 66159516c6b1360203130dedb56c0e6c192a118a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60050007"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62824016"
 ---
 # <a name="security-of-text-templates"></a>文字範本的安全性
 文字範本具有下列安全性考量：

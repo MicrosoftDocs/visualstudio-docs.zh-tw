@@ -24,11 +24,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: f884206ecafebbe26bfdadfaa7e95f3dbd0f389f
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54948722"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62901554"
 ---
 # <a name="walkthrough-debugging-a-web-form"></a>逐步解說：偵錯 Web 表單
 這個逐步解說中的步驟將示範如何偵錯 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] Web 應用程式 (也稱為 Web Form)。 會向您示範如何啟動及停止執行、設定中斷點，以及在 [監看式] 視窗中檢查變數。
@@ -52,7 +52,7 @@ ms.locfileid: "54948722"
 
 5. 在 [語言] 清單中，按一下 **Visual C#** 或 **Visual Basic**。
 
-6. 按一下 [確定 **Deploying Office Solutions**]。
+6. 按一下 [確定] 。
 
     [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 會建立新的專案，並且顯示預設的 HTML 原始程式碼。 其也會在 IIS 中 [預設的網站] 下方，建立名為 [網站] 的新虛擬目錄。
 

@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: a6ad2051212a943cea805579f0f1ab083af60602
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60057247"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62911953"
 ---
 # <a name="folder-element-visual-studio-project-templates"></a>Folder 元素 （Visual Studio 專案範本）
 指定將會加入至專案的資料夾。
@@ -86,7 +86,7 @@ ms.locfileid: "60057247"
 
      `...`
 
-- 在範本中不包含資料夾 *.zip*檔案，但將使用的資料夾新增`TargetFileName`屬性`ProjectItem`項目。 例如: 
+- 在範本中不包含資料夾 *.zip*檔案，但將使用的資料夾新增`TargetFileName`屬性`ProjectItem`項目。 例如：
 
      `...`
 

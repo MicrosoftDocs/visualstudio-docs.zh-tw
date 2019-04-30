@@ -18,11 +18,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 88e6a66f560e778297658a63244eb510967101f2
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58148083"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62807324"
 ---
 # <a name="ienumdebugexpressioncontextsreset"></a>IEnumDebugExpressionContexts::Reset
 將列舉型別序列重設到開頭。  

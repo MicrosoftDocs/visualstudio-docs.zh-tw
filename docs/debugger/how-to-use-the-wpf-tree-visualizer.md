@@ -17,11 +17,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: da18990620644834192c38c24ced9a25ecb56215
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60071261"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62906105"
 ---
 # <a name="how-to-use-the-wpf-tree-visualizer"></a>HOW TO：使用 WPF 樹狀架構視覺化檢視
 您可以使用 [WPF 樹狀架構視覺化檢視] 瀏覽 WPF 物件的視覺化樹狀結構，以及檢視該樹狀結構內含物件的 WPF 相依性屬性。 如需視覺化樹狀結構的詳細資訊，請參閱[WPF 中的樹狀結構](/dotnet/framework/wpf/advanced/trees-in-wpf)。 如需有關相依性屬性的詳細資訊，請參閱 <<c0> [ 相依性屬性概觀](/dotnet/framework/wpf/advanced/dependency-properties-overview)。

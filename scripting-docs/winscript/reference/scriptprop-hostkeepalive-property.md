@@ -12,11 +12,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 3724bfcb1ec42617cda4c89269cb0160accafb1a
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58150201"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62840322"
 ---
 # <a name="scriptprophostkeepalive-property"></a>SCRIPTPROP_HOSTKEEPALIVE 屬性
 用來指定應該保留指令碼引擎有未完成的參考的完整功能。  

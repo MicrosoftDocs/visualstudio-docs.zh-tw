@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 33f9b513bcf336cac68af7d915880af0652b0954
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56719318"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62917761"
 ---
 # <a name="idebugprocess2getserver"></a>IDebugProcess2::GetServer
 取得伺服器上執行此程序。

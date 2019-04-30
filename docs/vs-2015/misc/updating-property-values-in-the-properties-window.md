@@ -11,11 +11,11 @@ ms.assetid: 9358e8c3-b9d2-4fd4-aaab-cf48d1526db4
 caps.latest.revision: 9
 manager: jillfra
 ms.openlocfilehash: 18ecf0a21c5b2d73bdf8e439d25765b6b275cbd9
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60080551"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62434185"
 ---
 # <a name="updating-property-values-in-the-properties-window"></a>更新屬性視窗中的屬性值
 有兩種方法可以讓 [屬性]  視窗與屬性值變更同步。 第一種方法是呼叫 <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell> 介面，此介面可存取基本視窗化功能 (包括存取和建立環境所提供的工具和文件視窗)。 下列步驟說明這項同步處理程序。  

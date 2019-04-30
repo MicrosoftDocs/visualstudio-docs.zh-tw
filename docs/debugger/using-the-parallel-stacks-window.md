@@ -18,13 +18,13 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: e9728346bc4c6d805bb0febd3a0d5bef0ed809a5
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56712537"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62902277"
 ---
-# <a name="view-threads-and-tasks-in-the-parallel-stacks-window-c-visual-basic-c"></a>在 [平行堆疊] 視窗中檢視執行緒和工作 (C#，Visual Basic、 c + +)
+# <a name="view-threads-and-tasks-in-the-parallel-stacks-window-c-visual-basic-c"></a>在 [平行堆疊] 視窗中檢視執行緒和工作 (C#，Visual Basic 中， C++)
 
 **平行堆疊**視窗是用於偵錯多執行緒應用程式。 它有幾種檢視：
 
@@ -46,7 +46,7 @@ ms.locfileid: "56712537"
 
 ![在 [平行堆疊] 視窗的工具列](../debugger/media/parallel_stackstoolbar.png "平行堆疊 工具列")
 
-|圖示|控制項|說明|
+|圖示|控制項|描述|
 |-|-|-|
 |![執行緒/工作下拉式方塊](media/parallel_toolbar1.png "執行緒/工作下拉式方塊")|**執行緒**/**工作**下拉式方塊|切換執行緒呼叫堆疊檢閱和工作呼叫堆疊檢閱。 如需詳細資訊，請參閱[工作檢視](#tasks-view)和[執行緒檢視](#threads-view)。|
 |![顯示只加上旗標圖示](media/parallel_toolbar2.png "僅顯示已標幟的圖示")|僅顯示有旗標的項目|顯示呼叫堆疊，只針對這類標示其他偵錯工具視窗中，執行緒**GPU 執行緒**視窗和**平行監看式**視窗。|
@@ -57,7 +57,7 @@ ms.locfileid: "56712537"
 ### <a name="stack-frame-icons"></a>堆疊框架的圖示
 下列圖示會提供所有檢視中的作用中和目前的堆疊框架的相關資訊：
 
-|圖示|說明|
+|圖示|描述|
 |-|-|
 |![黃色箭號](media/icon_parallelyellowarrow.gif)|表示目前執行緒的目前位置 （作用中堆疊框架）。|
 |![執行緒圖示](media/icon_parallelthreads.gif)|表示非目前執行緒的目前位置 （作用中堆疊框架）。|
@@ -68,7 +68,7 @@ ms.locfileid: "56712537"
 
 ![[平行堆疊] 視窗中的快顯功能表](../debugger/media/parallel_contmenu.png "平行堆疊 視窗中的快顯功能表")
 
-|Menu item|說明|
+|Menu item|描述|
 |-|-|
 |**旗標**|將選取的項目加上旗標。|
 |**取消旗標**|取消所選取項目的旗標。|
@@ -98,7 +98,7 @@ ms.locfileid: "56712537"
 
 下表描述的主要特色**執行緒**檢視：
 
-|圖說文字|元素名稱|說明|
+|圖說文字|元素名稱|描述|
 |-|-|-|
 |1|呼叫堆疊區段或節點|包含一系列的一個或多個執行緒的方法。 如果畫面不連線到它的箭號行，框架會顯示執行緒的整個呼叫路徑。|
 |2|藍色醒目提示|表示目前執行緒的呼叫路徑。|

@@ -18,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 9b9a88aff9cd587f695ace56c44eaf9c8fcb8875
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 366416e4f18435bd01391657eb2fc4f65f8a4d62
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60117196"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441773"
 ---
 # <a name="how-to-open-office-solutions-without-running-code"></a>HOW TO：不執行程式碼開啟 Office 方案
   即使使用者的 Office 應用程式中的安全性設定設為 「 高 」，就會執行使用 managed 程式碼擴充功能所建立的 Microsoft Office 方案。 這是因為.NET 組件程式碼安全性由 Microsoft.NET Framework 中，不是由 Microsoft Office。
@@ -39,7 +39,7 @@ ms.locfileid: "60117196"
 - 開啟文件和活頁簿**檔案**按住功能表**Shift**防止 Word 和 Excel 文件開啟時，引發初始化事件的索引鍵。
 
     > [!NOTE]
-    >  如果您開啟的文件或活頁簿**快速入門**工作窗格中，按住**Shift**不略過程式碼。 此外，按住 shift 鍵無法防止事件引發之後已開啟的文件。
+    > 如果您開啟的文件或活頁簿**快速入門**工作窗格中，按住**Shift**不略過程式碼。 此外，按住 shift 鍵無法防止事件引發之後已開啟的文件。
 
      這個方法很有用，如果您想要開啟的文件，而不需要執行，而且第一次修改文件的程式碼進行變更。
 

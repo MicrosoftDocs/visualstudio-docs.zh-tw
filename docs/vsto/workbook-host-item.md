@@ -20,12 +20,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: b8ffe18ea3407480faa69a6b9b3ba4309b28b279
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: e30ab9ce498134426caa35e0c3c9f9652f683535
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56625255"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445527"
 ---
 # <a name="workbook-host-item"></a>Workbook 主項目
   <xref:Microsoft.Office.Tools.Excel.Workbook> 主項目是可從 Excel 的主要 Interop 組件擴充 <xref:Microsoft.Office.Interop.Excel.Workbook> 類型的一種類型。 <xref:Microsoft.Office.Tools.Excel.Workbook> 主項目除了提供與 <xref:Microsoft.Office.Interop.Excel.Workbook> 物件相同的所有屬性、方法和事件之外，也會提供其他功能。
@@ -49,7 +49,7 @@ ms.locfileid: "56625255"
  <xref:Microsoft.Office.Tools.Excel.Workbook> 主項目不能做為主控制項的容器。 因此，您無法將任何可見的控制項加入活頁簿，但您可以加入 <xref:System.Data.DataSet>等元件，讓所有工作表都能共用這些元件。 在文件層級專案中，您可以在 [工具箱]  的 [元件]  索引標籤、[資料]  索引標籤和 [所有 Windows Forms] 索引標籤上，找到活頁簿可用的元件。
 
 > [!NOTE]
->  Visual Studio 中的 Office 開發工具不支援共用活頁簿。
+> Visual Studio 中的 Office 開發工具不支援共用活頁簿。
 
 ## <a name="understand-workbook-host-items-in-vsto-add-in-projects"></a>了解 VSTO 增益集專案中的 workbook 主項目
  在 VSTO 增益集專案中，您可以產生<xref:Microsoft.Office.Tools.Excel.Workbook>在執行階段是在 Excel 中開啟任何活頁簿的主項目。 若要產生 <xref:Microsoft.Office.Tools.Excel.Workbook> 主項目，請使用 `GetVstoObject` 方法。 如需詳細資訊，請參閱 <<c0> [ 擴充 Word 文件和 VSTO 增益集在執行階段中的 Excel 活頁簿](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)。

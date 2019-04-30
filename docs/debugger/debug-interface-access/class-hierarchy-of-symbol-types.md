@@ -12,19 +12,19 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 67e32d855ec6d0c172542cbdacc235f6b3e1b003
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.openlocfilehash: bc9981d324fe61cd3afe6cce4bc08d7b9b686c7f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56604440"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63402627"
 ---
 # <a name="class-hierarchy-of-symbol-types"></a>符號類型的類別階層架構
 下表描述的類別階層架構中的符號類型。
 
 ## <a name="symbol-types"></a>符號類型
 
-|符號類型|說明|
+|符號類型|描述|
 |-----------------|-----------------|
 |[UDT](../../debugger/debug-interface-access/udt.md)|用來代表每個類別、 結構和等位的符號。|
 |[Enum (偵錯介面存取 SDK)](../../debugger/debug-interface-access/enum-debug-interface-access-sdk.md)|列舉類型的符號。|
@@ -43,9 +43,9 @@ ms.locfileid: "56604440"
 |[維度](../../debugger/debug-interface-access/dimension.md)|陣列維度的符號。|
 
 > [!NOTE]
->  每個符號可以有屬性，保存相關的符號，以及其他符號的參考資訊。 在個別的符號主題中列出了這些屬性。
+> 每個符號可以有屬性，保存相關的符號，以及其他符號的參考資訊。 在個別的符號主題中列出了這些屬性。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [CV_access_e 列舉](../../debugger/debug-interface-access/cv-access-e.md)
 - [符號類型的語彙階層架構](../../debugger/debug-interface-access/lexical-hierarchy-of-symbol-types.md)
 - [符號和符號標記](../../debugger/debug-interface-access/symbols-and-symbol-tags.md)

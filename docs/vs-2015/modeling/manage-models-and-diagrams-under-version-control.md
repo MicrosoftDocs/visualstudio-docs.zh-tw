@@ -11,12 +11,12 @@ caps.latest.revision: 32
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 2a7ba74c18097f7eb4b2f8ff50780dfd5ffb57df
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 4c29b7e3279513e2876396abd5083c3ddefa0baf
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60080316"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63440925"
 ---
 # <a name="manage-models-and-diagrams-under-version-control"></a>在版本控制下管理模型與圖表
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,7 +26,7 @@ ms.locfileid: "60080316"
  若要查看哪些 Visual Studio 版本支援這項功能，請參閱 [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)。  
   
 > [!IMPORTANT]
->  當有多位使用者進行同一個模型專案時，請務必特別注意。 了解如何 [組織中型或大型專案中的模型](../modeling/structure-your-modeling-solution.md)。  
+> 當有多位使用者進行同一個模型專案時，請務必特別注意。 了解如何 [組織中型或大型專案中的模型](../modeling/structure-your-modeling-solution.md)。  
   
 ## <a name="ModelingProjects"></a> 模型專案中的檔案  
  模型專案上可以有多位使用者同時執行工作 (假設這些使用者處理不同的檔案)。  
@@ -42,7 +42,7 @@ ms.locfileid: "60080316"
     - **DiagramName.classdiagram.layout** - 如果刪除此檔案，圖形仍會在圖表中顯示，但是會失去其大小和位置。 每個配置檔案都是圖表檔的附屬項目。 若要顯示配置檔案，請在方案總管中按一下圖表檔旁邊的 [+]。  
   
 > [!NOTE]
->  請務必維護檔案之間的一致性。 例如，若您使用原始檔控制回復 .uml 檔案中的變更，則必須同時回復 .*diagram 和 .layout 檔案中對應的變更。 中的項目表示。\*如果.uml 檔案中未也表示，圖表檔案將會遺失。  
+> 請務必維護檔案之間的一致性。 例如，若您使用原始檔控制回復 .uml 檔案中的變更，則必須同時回復 .*diagram 和 .layout 檔案中對應的變更。 中的項目表示。\*如果.uml 檔案中未也表示，圖表檔案將會遺失。  
   
 ## <a name="Shared"></a> 使用共用模型專案  
  若要減少並行處理專案的不同部分時發生的衝突：  
@@ -68,7 +68,7 @@ ms.locfileid: "60080316"
 - 務必先關閉所有圖表，再執行 [取得]  作業。  
   
     > [!NOTE]
-    >  若在執行 [取得] 時有開啟的檔案，且此作業導致本機變更，則會提示您重新載入檔案。 在此情況下，請按一下 [否] ，然後重新載入整個專案。 以滑鼠右鍵按一下 **方案總管**中的模型專案節點，並按一下 [卸載專案] ，然後按一下 [重新載入專案] 。  
+    > 若在執行 [取得] 時有開啟的檔案，且此作業導致本機變更，則會提示您重新載入檔案。 在此情況下，請按一下 [否] ，然後重新載入整個專案。 以滑鼠右鍵按一下 **方案總管**中的模型專案節點，並按一下 [卸載專案] ，然後按一下 [重新載入專案] 。  
   
 ### <a name="Exclusive"></a> 需要獨佔存取權的模型變更  
  在您進行下列種類的變更之前，請先確定整個專案有「簽出」鎖定。  
@@ -94,7 +94,7 @@ ms.locfileid: "60080316"
      在方案總管中，以滑鼠右鍵按一下目的資料夾或專案，指向 [加入] ，然後按一下 [現有項目] 。 在對話方塊中選取圖表檔，然後按一下 [加入] 。 配置檔將自動加入。  
   
     > [!NOTE]
-    >  您無法將此檔案移至不同的專案。  
+    > 您無法將此檔案移至不同的專案。  
   
 ## <a name="Merging"></a> 合併模型檔和圖表中的變更  
  多位使用者同時處理模型之後， [!INCLUDE[esprscc](../includes/esprscc-md.md)] 將提示您合併模型檔案中的變更。 依循前面幾節中所述之方法處理不同的專案，將可避免大部分的合併。 通常剩餘的衝突可安全無虞地自動合併。 下列變更應該很容易上手：  

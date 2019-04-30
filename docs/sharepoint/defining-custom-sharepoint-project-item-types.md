@@ -15,11 +15,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: e5f32abba4c4cbdeab59ed66e38019d913e704e6
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56604818"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62580780"
 ---
 # <a name="define-custom-sharepoint-project-item-types"></a>定義自訂 SharePoint 專案項目類型
   當您想要建立新類型的 SharePoint 專案項目，請定義新的 SharePoint 專案項目類型。 例如，Visual Studio 不會包含新增的欄位或自訂動作至 SharePoint 網站的 SharePoint 專案項目。 您可以定義自己的 SharePoint 專案項目建立欄位、 自訂動作或其他類型的 SharePoint 元件的型別。

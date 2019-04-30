@@ -11,11 +11,11 @@ caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 ms.openlocfilehash: 10cdff328216d06a3326dd3595ef8fc78bc9cfc9
-ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "54348109"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62993146"
 ---
 # <a name="iactivescriptparseprocedure32"></a>IActiveScriptParseProcedure32
 如果 Windows 指令碼引擎可讓您可以加入至指令碼的程序的來源的程式碼文字，它會實作`IActiveScriptParseProcedure32`介面。 解譯的指令碼語言具有無獨立的撰寫環境，例如 VBScript，這會提供替代機制 (而非`IActiveScriptParse32`或`IPersist`*) 加入命名空間中的指令碼程序。  

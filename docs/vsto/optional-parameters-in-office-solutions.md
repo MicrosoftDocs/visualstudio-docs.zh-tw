@@ -18,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: d6baf0c32d087ea804bb8e221745337c73b64114
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: e8684ad4b9429a5499660ef4ad6fdd8133dccaa5
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56639259"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63442407"
 ---
 # <a name="optional-parameters-in-office-solutions"></a>Office 方案中的選擇性參數
   Microsoft Office 應用程式物件模型中的許多方法，都接受選擇性參數。 如果您使用 Visual Basic 在 Visual Studio 中開發 Office 方案，就不必傳遞選擇性參數的值，因為每個遺漏的參數都會自動使用預設值。 在大部分情況下，您也可以省略 Visual C# 專案中的選擇性參數。 不過，您不能省略選擇性**ref**參數的`ThisDocument`文件層級 Word 專案中的類別。
@@ -33,7 +33,7 @@ ms.locfileid: "56639259"
  如需有關使用 Visual C# 和 Visual Basic 專案中的選擇性參數的詳細資訊，請參閱[具名和選擇性引數&#40;C&#35;程式設計指南&#41;](/dotnet/csharp/programming-guide/classes-and-structs/named-and-optional-arguments)並[&#40;Visual Basic&#41;](/dotnet/visual-basic/programming-guide/language-features/procedures/optional-parameters)。
 
 > [!NOTE]
->  在舊版的 Visual Studio 中，您必須為 Visual C# 專案中的每一個選擇性參數傳遞值。 為方便起見，這些專案包含名為 `missing` 的全域變數，當您想要使用參數的預設值時，可以傳遞給選擇性參數。 Visual C# 專案適用於 Office 的 Visual Studio 仍然包含`missing`變數，但您通常不需要您在開發中的 Office 方案時，請使用它[!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)]，但當您呼叫方法的選擇性**ref**中的參數`ThisDocument`Word 的文件層級專案中的類別。
+> 在舊版的 Visual Studio 中，您必須為 Visual C# 專案中的每一個選擇性參數傳遞值。 為方便起見，這些專案包含名為 `missing` 的全域變數，當您想要使用參數的預設值時，可以傳遞給選擇性參數。 Visual C# 專案適用於 Office 的 Visual Studio 仍然包含`missing`變數，但您通常不需要您在開發中的 Office 方案時，請使用它[!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)]，但當您呼叫方法的選擇性**ref**中的參數`ThisDocument`Word 的文件層級專案中的類別。
 
 ## <a name="example-in-excel"></a>Excel 範例
  <xref:Microsoft.Office.Tools.Excel.Worksheet.CheckSpelling%2A> 方法有許多選擇性參數。 某些參數可以指定值，其他還可以接受預設值，如下列程式碼範例所示。 這個範例需要有名為 `Sheet1` 工作表類別的文件層級專案。

@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: d693113db28acc456625f7c22b671006ed17038b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: eb6651d788979343752fac30c4570d955b53068c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60096981"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63402850"
 ---
 # <a name="edit-data-in-datasets"></a>編輯資料集中的資料
 如同您編輯任何資料庫中的資料表中的資料，您可以編輯資料的資料表中的資料。 此程序可以包含插入、 更新和刪除資料表中的記錄。 在資料繫結表單中，您可以指定哪些欄位是使用者可編輯。 在這些情況下，資料繫結基礎結構會處理所有變更追蹤，以便變更可以傳送回資料庫更新版本。 如果您以程式設計方式進行編輯的資料，而且您想要將這些變更傳送回資料庫，您必須使用的物件和方法，為您做的變更追蹤。
@@ -58,7 +58,7 @@ ms.locfileid: "60096981"
      這個方法並不會實際移除記錄。 相反地，它會將記錄標示為刪除。
 
     > [!NOTE]
-    >  如果您收到的 count 屬性<xref:System.Data.DataRowCollection>，產生的計數包括已標示為刪除的記錄。 若要取得精確的計數的不標示為要刪除的記錄，您可以逐一查看集合<xref:System.Data.DataRow.RowState%2A>每一筆記錄的屬性。 (標示為要刪除的記錄都有<xref:System.Data.DataRow.RowState%2A>的<xref:System.Data.DataRowState.Deleted>。)或者，您可以建立資料檢視的資料列狀態為基礎的篩選條件的資料集，並從該處取得計數屬性。
+    > 如果您收到的 count 屬性<xref:System.Data.DataRowCollection>，產生的計數包括已標示為刪除的記錄。 若要取得精確的計數的不標示為要刪除的記錄，您可以逐一查看集合<xref:System.Data.DataRow.RowState%2A>每一筆記錄的屬性。 (標示為要刪除的記錄都有<xref:System.Data.DataRow.RowState%2A>的<xref:System.Data.DataRowState.Deleted>。)或者，您可以建立資料檢視的資料列狀態為基礎的篩選條件的資料集，並從該處取得計數屬性。
 
 下列範例示範如何呼叫<xref:System.Data.DataRow.Delete%2A>方法，以將標記中的第一個資料列`Customers`資料表為已刪除：
 

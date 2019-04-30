@@ -16,11 +16,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: e1b45196fa70328809aa5da3a1f56ea57fce2085
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60087348"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62967640"
 ---
 # <a name="how-to-programmatically-add-new-worksheets-to-workbooks"></a>HOW TO：以程式設計方式在活頁簿中加入新的工作表
   您可以用程式設計方式建立工作表，然後將工作表加入活頁簿的工作表集合。

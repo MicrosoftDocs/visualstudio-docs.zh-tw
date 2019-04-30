@@ -16,12 +16,12 @@ caps.latest.revision: 39
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 5bf3e8998abe18a4d40e031b85ffb6683fa62dc7
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 105f16c0d9deb8d94a102818c5335af18685c675
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54752118"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63439337"
 ---
 # <a name="call-tree-view"></a>呼叫樹狀圖檢閱
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,7 +39,7 @@ ms.locfileid: "54752118"
  [呼叫樹狀圖] 檢視可以設定透過限制呈現的資料量來減少雜訊。 使用減少雜訊，可讓檢視中的效能問題更為顯著。 容易區分效能問題時，分析會較容易。 如需詳細資訊，請參閱[如何：在報表檢視中設定減少雜訊](../profiling/how-to-configure-noise-reduction-in-report-views.md)。  
   
 > [!NOTE]
->  如果設定減少雜訊在啟用時顯示警告，則會在報表中顯示資訊列。  
+> 如果設定減少雜訊在啟用時顯示警告，則會在報表中顯示資訊列。  
   
  如需 [呼叫樹狀圖] 檢視中資料行定義的詳細資訊，請參閱下列各項：  
   
@@ -51,7 +51,7 @@ ms.locfileid: "54752118"
   
  [呼叫樹狀圖檢視](../profiling/call-tree-view-contention-data.md)  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [效能報告檢視](../profiling/performance-report-views.md)   
  [了解檢測資料值](../profiling/understanding-instrumentation-data-values.md)   
  [了解取樣資料值](../profiling/understanding-sampling-data-values.md)

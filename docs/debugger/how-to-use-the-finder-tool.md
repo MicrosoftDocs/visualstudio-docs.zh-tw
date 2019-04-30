@@ -1,5 +1,5 @@
 ---
-title: 如何： 使用搜尋工具 |Microsoft Docs
+title: HOW TO：使用搜尋工具 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,14 +10,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 42cd2ec74c92bce545c459765f32eea479a2d5b3
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.openlocfilehash: 5bf3fcf00486ebb8ec54f2d692d483a7f9cf18d7
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56694617"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63387660"
 ---
-# <a name="how-to-use-the-finder-tool"></a>如何：使用搜尋工具
+# <a name="how-to-use-the-finder-tool"></a>HOW TO：使用搜尋工具
 您可以使用搜尋工具，在**尋找視窗**對話方塊，即可顯示視窗屬性或訊息。 搜尋工具也可以找出已停用的子視窗，並分辨哪一個視窗，反白顯示，如果停用子視窗重疊。
 
  ![Spy&#43; &#43;尋找視窗對話方塊](../debugger/media/icon_spy--_find.png "Icon_Spy + + _Find")搜尋工具，在 尋找視窗對話方塊
@@ -41,7 +41,7 @@ ms.locfileid: "56694617"
      如果您有您想要檢查 （例如，從 偵錯工具複製） 的視窗控制代碼，將它輸入**處理**文字方塊。
 
    > [!TIP]
-   >  若要減少螢幕混亂的情形，請選取**隱藏 spy + +** 選項。 此選項會隱藏主 Spy + + 視窗中，並且只留下**尋找視窗**對話方塊顯示在其他應用程式之上。 當您按一下 還原 Spy + + 主要視窗**確定**或是**取消**，或清除**隱藏 Spy + +** 選項。
+   > 若要減少螢幕混亂的情形，請選取**隱藏 spy + +** 選項。 此選項會隱藏主 Spy + + 視窗中，並且只留下**尋找視窗**對話方塊顯示在其他應用程式之上。 當您按一下 還原 Spy + + 主要視窗**確定**或是**取消**，或清除**隱藏 Spy + +** 選項。
 
 4. 底下**顯示**，選取**屬性**或是**訊息**。
 
@@ -49,7 +49,7 @@ ms.locfileid: "56694617"
 
     如果您選取**屬性**，則[視窗屬性對話方塊](../debugger/window-properties-dialog-box.md)隨即開啟。 如果您選取**訊息**，則[訊息檢視](../debugger/messages-view.md)視窗隨即開啟。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [Spy++ 檢視](../debugger/spy-increment-views.md)
 - [使用 Spy++](../debugger/using-spy-increment.md)
 - [Spy++ 參考](../debugger/spy-increment-reference.md)

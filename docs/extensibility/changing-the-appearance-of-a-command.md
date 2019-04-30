@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 7431fa1670f6a75b69c1a1033a51975307426771
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56691341"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62926844"
 ---
 # <a name="change-the-appearance-of-a-command"></a>變更命令的外觀
 您可以變更命令的外觀，至您的使用者提供意見反應。 比方說，您可能會想看起來不同，無法使用時的命令。 您可以讓命令，可以或無法使用，隱藏或顯示，或核取或取消核取功能表上。

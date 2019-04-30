@@ -10,11 +10,11 @@ author: kraigb
 ms.author: kraigb
 manager: jillfra
 ms.openlocfilehash: 9c18ae2731d92e6d128d13e7687bac77ae76dc8a
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59648443"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62575646"
 ---
 # <a name="getting-started-with-python"></a>開始使用 Python
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -91,9 +91,9 @@ Azure SDK for Python 支援 Windows、Mac 和 Linux，可讓您更容易使用�
   
 ## <a name="see-also"></a>另請參閱  
 
-[Ptvs 快速入門：設定 Visual Studio](../python/getting-started-with-ptvs-setting-up-visual-studio.md)
+[PTVS 入門：設定 Visual Studio](../python/getting-started-with-ptvs-setting-up-visual-studio.md)
 [ptvs 快速入門：開始撰寫程式碼 （專案）](../python/getting-started-with-ptvs-start-coding-projects.md)
 [ptvs 快速入門：編輯程式碼](../python/getting-started-with-ptvs-editing-code.md)
 [ptvs 快速入門：偵錯](../python/getting-started-with-ptvs-debugging.md)
 [ptvs 快速入門：互動式 Python](../python/getting-started-with-ptvs-interactive-python.md)
-[ptvs 快速入門：在 Azure 建置網站](../python/getting-started-with-ptvs-building-a-website-in-azure.md)
+[ptvs 快速入門：在 Azure 中建置網站](../python/getting-started-with-ptvs-building-a-website-in-azure.md)

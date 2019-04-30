@@ -7,11 +7,11 @@ ms.assetid: d20a30c0-0dcc-4e2c-a809-31c8ea28c7df
 ms.author: brgeorge
 manager: jillfra
 ms.openlocfilehash: 3e36b9deb2d5837927d239232cafbcac15dfe406
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60117508"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62881941"
 ---
 # <a name="visual-language-dictionary"></a>視覺化語言字典
 

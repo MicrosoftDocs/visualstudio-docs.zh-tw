@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 3a2ae395d94d76fd2b11de33cc6d5053d8b92432
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56633430"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62859656"
 ---
 # <a name="project-modeling"></a>將專案模型化
 您的專案實作標準專案物件，提供自動化的下一個步驟：<xref:EnvDTE.Projects>並`ProjectItems`集合，而`Project`和<xref:EnvDTE.ProjectItem>物件; 並且您的實作唯一剩餘的物件。 Dteinternal.h 檔案中，會定義這些標準的物件。 BscPrj 範例中，會提供標準的物件的實作。 您可以使用這些類別為模型來建立您自己的標準專案物件，並排顯示，就能從其他專案類型的專案物件。

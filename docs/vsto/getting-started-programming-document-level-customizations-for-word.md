@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 2b2872ca6496444cbb3878dc39800a8661400a76
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60056324"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62971793"
 ---
 # <a name="get-started-programming-document-level-customizations-for-word"></a>開始使用 word 的文件層級自訂程式設計
   如果您剛開始使用 Visual Studio 建立 Microsoft Office word 的文件層級自訂，以下是您需要知道。

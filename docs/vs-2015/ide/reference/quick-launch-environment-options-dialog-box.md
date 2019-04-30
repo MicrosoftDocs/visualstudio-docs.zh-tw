@@ -15,12 +15,12 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 91b62fa8384bd2e0e9e90e9c9057a89e61869a2a
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: a35e1498c4f2e6a10f56f1ab7687bd8516eb6808
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59658613"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63416704"
 ---
 # <a name="quick-launch-environment-options-dialog-box"></a>選項對話方塊、環境、快速啟動
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -42,7 +42,7 @@ ms.locfileid: "59658613"
 |文件|@doc<br /><br /> 例如： `@doc font` |限制搜尋符合搜尋準則之開啟文件的檔案名稱和路徑，但不會搜尋檔案本身內的文字。|  
   
 > [!NOTE]
->  您可以在 [選項] 對話方塊的 [一般] 和 [鍵盤] 頁面上，變更快速鍵。  
+> 您可以在 [選項] 對話方塊的 [一般] 和 [鍵盤] 頁面上，變更快速鍵。  
   
 ## <a name="show-previous-results"></a>顯示先前的結果  
  根據預設，您輸入的搜尋字詞不會在搜尋工作階段之間保留。 如果您搜尋某個字詞，然後將游標移出 [快速啟動] 區域再移回，則會清除搜尋字串。 若要保留搜尋結果，請移至 [選項] 對話方塊，並選擇 [快速啟動]，然後選取 [啟用快速啟動時顯示前一個搜尋的搜尋結果]。 核取方塊。 下次您執行搜尋、離開 [快速啟動] 區域並返回時，[快速啟動] 將會保留上次使用的搜尋字詞，也會顯示搜尋結果。  

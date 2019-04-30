@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 7220e435090cc688d32a2d6d26917a8c05510d4f
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56687909"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62806105"
 ---
 # <a name="parent-element"></a>父項目
 按鈕或下拉式方塊的父代可能只是群組。 功能表或群組的父系可能是功能表或群組。 在  [CommandPlacement 元素](../extensibility/commandplacement-element.md)，則需要這個元素; 所有其他執行個體中是選擇性的。 如果省略這個項目，則父代`Group_Undefined:0`會隱含。
@@ -38,7 +38,7 @@ ms.locfileid: "56687909"
 |id|必要項。 識別碼的 GUID/識別碼命令識別項。|
 
 ### <a name="child-elements"></a>子元素
- 無
+ None
 
 ### <a name="parent-elements"></a>父元素
 

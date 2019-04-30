@@ -15,12 +15,12 @@ caps.latest.revision: 28
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: d44ae7d3eb4c01434e2a8b6f2cf7c0391c749ad7
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 03991f3d5900377ceca5464bf41cfb90fcae650e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60114563"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63440599"
 ---
 # <a name="how-to-set-permissions"></a>HOW TO：設定權限
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,7 +38,7 @@ ms.locfileid: "60114563"
   如果系統管理員將或程式碼剖析工具軟體驅動程式的存取權限授與 Users 群組的成員，他們就可以執行這個程式碼剖析工具。 最後一個程序，「授與剖析工具驅動程式的存取權限」，說明如何授與此驅動程式的存取權限。  
   
 > [!NOTE]
->  您必須具有系統管理員權限，才能執行這些程序中的步驟。  
+> 您必須具有系統管理員權限，才能執行這些程序中的步驟。  
   
 ### <a name="to-create-a-user-account-that-has-user-permissions"></a>建立具有使用者權限的使用者帳戶  
   

@@ -11,11 +11,11 @@ dev_langs:
 ms.workload:
 - multiple
 ms.openlocfilehash: a10f72297746a1e7bda3c69f8f7daf0efacd20bc
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60115610"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62541258"
 ---
 # <a name="ca3002-review-code-for-xss-vulnerabilities"></a>CA3002：檢閱程式碼是否有 XSS 弱點
 

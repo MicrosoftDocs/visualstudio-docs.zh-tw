@@ -38,11 +38,11 @@ manager: jillfra
 ms.workload:
 - cplusplus
 ms.openlocfilehash: 4ccf0fea80ddfcc7db0921512391f5063a8f2dad
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60100205"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62846966"
 ---
 # <a name="how-to-use-native-run-time-checks"></a>HOW TO：使用原生執行階段檢查
 您可以在 Visual C++ 中使用原生 [runtime_checks](/cpp/preprocessor/runtime-checks) 來攔截最常見的執行階段錯誤，例如：

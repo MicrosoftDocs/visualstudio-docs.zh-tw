@@ -11,12 +11,12 @@ ms.assetid: 0b40d495-f17f-4bb9-ace8-b365a7172784
 caps.latest.revision: 26
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 0ef8bdb5f35ed727a207140dde6cf20f5645e5b3
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 736031f1de24144f7b5f68ed44710e0c894df41a
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60074121"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445734"
 ---
 # <a name="visual-studio-shell-integrated"></a>Visual Studio Shell （整合模式）
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,7 +26,7 @@ Visual Studio 整合式 shell 包含整合式的開發環境 (IDE)、 偵錯工�
  Visual Studio 整合式 shell 是實際的 Visual Studio 隔離 shell 加上額外的安裝，其中包括整合式的 shell 特定元件組合。  您的整合式的 shell 應用程式應該包含這兩個獨立模式的 shell 可轉散發套件中的套件[Microsoft Visual Studio Shell （獨立模式） 可轉散發套件](http://go.microsoft.com/fwlink/?LinkId=616022)以及整合式的 shell 可轉散發套件從[Microsoft Visual Studio Shell （整合模式） 可轉散發套件](http://go.microsoft.com/fwlink/?LinkId=616021)。  
   
 > [!NOTE]
->  您可以存取隔離和整合模式 shell 可轉散發套件之前，系統會要求您填寫簡短的客戶問卷調查。  在填寫問卷之後, 您會導向至 Visual Studio Connect 頁面可轉散發套件下載連結。  您可以在後續造訪 Visual Studio Connect 網站的 [下找到的下載連結**程式&#124;VISUAL STUDIO 2015 整合和 ISOLATED SHELL** ] 索引標籤。  
+> 您可以存取隔離和整合模式 shell 可轉散發套件之前，系統會要求您填寫簡短的客戶問卷調查。  在填寫問卷之後, 您會導向至 Visual Studio Connect 頁面可轉散發套件下載連結。  您可以在後續造訪 Visual Studio Connect 網站的 [下找到的下載連結**程式&#124;VISUAL STUDIO 2015 整合和 ISOLATED SHELL** ] 索引標籤。  
   
  如果您在 Visual Studio 的完整版本的同一部電腦上安裝您的整合式的 shell 應用程式，將會直接在 Visual Studio 整合您的應用程式元件。  
   

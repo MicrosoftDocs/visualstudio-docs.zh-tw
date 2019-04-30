@@ -10,12 +10,12 @@ ms.assetid: 9f4e210c-4b47-4daa-91fa-1c301c4587f9
 caps.latest.revision: 63
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 204c141fb1bb8021ce1908b9c0db7fcf3e0104bc
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 7b5897f6c4463cc5a3c7928a722ed5a0a09e42b3
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60059741"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63430584"
 ---
 # <a name="creating-an-options-page"></a>建立選項頁
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -92,7 +92,7 @@ ms.locfileid: "60059741"
     ```  
   
     > [!NOTE]
-    >  預設實作<xref:Microsoft.VisualStudio.Shell.DialogPage>支援的屬性具有適當的轉換或結構或可擴充至具有適當的轉換子的屬性的陣列。 如需轉換器的清單，請參閱<xref:System.ComponentModel>命名空間。  
+    > 預設實作<xref:Microsoft.VisualStudio.Shell.DialogPage>支援的屬性具有適當的轉換或結構或可擴充至具有適當的轉換子的屬性的陣列。 如需轉換器的清單，請參閱<xref:System.ComponentModel>命名空間。  
   
 6. 建置此專案並開始偵錯。  
   

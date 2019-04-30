@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 786c71f568bc44eeecdd44dfd91462ad00dda445
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: fe706260bcb535f33a14eea2fd174ee37ea1c8aa
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60071183"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63388381"
 ---
 # <a name="how-to-expand-and-collapse-spy-trees"></a>HOW TO：展開和摺疊 Spy++ 樹狀結構
 您可以展開和摺疊方法有兩種 Windows、 處理序和執行緒檢視： 藉由在視窗中，或使用的圖示上按一下**樹狀結構**功能表。 + 和-視覺效果中所顯示的一樣，採取行動在樹狀目錄中的圖示C++[專案] 視窗。
@@ -30,7 +30,7 @@ ms.locfileid: "60071183"
 |[摺疊]|完全摺疊目前選取的項目。|
 
 > [!TIP]
->  如果您展開 處理程序，您會看見該處理序擁有的所有執行緒。 如果您展開執行緒時，您會看到其所擁有的所有視窗的清單。
+> 如果您展開 處理程序，您會看見該處理序擁有的所有執行緒。 如果您展開執行緒時，您會看到其所擁有的所有視窗的清單。
 
 ### <a name="to-expand-or-collapse-spy-trees"></a>若要展開或摺疊 Spy + + 樹狀結構
 

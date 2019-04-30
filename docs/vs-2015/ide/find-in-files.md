@@ -21,12 +21,12 @@ caps.latest.revision: 45
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 430f2a55f180428c781e7a8cbe1f78d3a0355128
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: e1d9c456c22b4d3003d9435f813a4c3c1dc47881
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54804355"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63383378"
 ---
 # <a name="find-in-files"></a>檔案中尋找
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,7 +44,7 @@ ms.locfileid: "54804355"
    若要取消尋找作業，請按 CTRL + BREAK。  
   
 > [!NOTE]
->  [尋找和取代] 工具不會搜尋目錄與 `Hidden` 或 `System` 屬性集。  
+> [尋找和取代] 工具不會搜尋目錄與 `Hidden` 或 `System` 屬性集。  
   
 ## <a name="find-what"></a>尋找目標  
  若要搜尋新的文字字串或運算式，請在方塊中指定。 若要搜尋您最近搜尋過的 20 筆字串之一，請開啟該清單，並選擇您要搜尋的字串。 如果您想要在搜尋字串中使用一或多個規則運算式，請選擇相鄰的 [運算式產生器] 按鈕。 如需詳細資訊，請參閱[在 Visual Studio 中使用規則運算式](../ide/using-regular-expressions-in-visual-studio.md)。  
@@ -53,10 +53,10 @@ ms.locfileid: "54804355"
  [查詢] 下拉式清單中所選擇的選項，可決定 [檔案中尋找] 只會搜尋目前使用中檔案，或搜尋所有儲存在特定資料夾內的檔案。 從清單中選取搜尋範圍，或按一下 [瀏覽 (...)] 按鈕，顯示 [選擇搜尋資料夾] 對話方塊，然後輸入您本身的目錄集。 您也可以直接在 [查詢] 方塊中輸入路徑。  
   
 > [!WARNING]
->  使用 [整個方案] 或 [目前專案] 選項時，並不會搜尋專案和方案檔。 如果您想查詢專案檔，請選擇搜尋資料夾。  
+> 使用 [整個方案] 或 [目前專案] 選項時，並不會搜尋專案和方案檔。 如果您想查詢專案檔，請選擇搜尋資料夾。  
   
 > [!NOTE]
->  如果選取 [查詢] 選項時，所搜尋的檔案已從原始程式碼控制簽出，則只會搜尋該檔案的本機電腦下載版本。  
+> 如果選取 [查詢] 選項時，所搜尋的檔案已從原始程式碼控制簽出，則只會搜尋該檔案的本機電腦下載版本。  
   
 ## <a name="include-subfolders"></a>包含子資料夾  
  指定將搜尋 [查詢] 資料夾的子資料夾。  
@@ -93,7 +93,7 @@ ms.locfileid: "54804355"
  附加結果  
  將此搜尋結果附加到上一個搜尋結果。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [尋找和取代文字](../ide/finding-and-replacing-text.md)   
  [檔案中取代](../ide/replace-in-files.md)   
  [Visual Studio 命令](../ide/reference/visual-studio-commands.md)

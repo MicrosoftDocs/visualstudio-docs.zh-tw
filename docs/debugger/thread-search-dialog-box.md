@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 2fddbb589a6978f72dc5926a78c9eb13f21b3a4b
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56707155"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62901858"
 ---
 # <a name="thread-search-dialog-box"></a>執行緒搜尋對話方塊
 使用此對話方塊，即可尋找並選取的節點中的特定執行緒[執行緒檢視](../debugger/threads-view.md)。 若要顯示此對話方塊中，焦點移至**執行緒**檢視 視窗中。 然後選擇**尋找執行緒**從**搜尋**功能表。

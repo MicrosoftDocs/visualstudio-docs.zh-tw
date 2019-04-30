@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 1286af8222703028d5a8a1bd2dbb0d990ca7e30c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60041089"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62889901"
 ---
 # <a name="hit-a-breakpoint"></a>叫用中斷點
 當偵錯引擎 (DE) 執行，或逐步執行時叫用中斷點時下, 一節會說明的程序：

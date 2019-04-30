@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 9537b3eef0d5da445d9456b414c89bbaac08ae87
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60067751"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62813968"
 ---
 # <a name="how-to-deploy-and-publish-a-sharepoint-solution-to-a-local-sharepoint-site"></a>HOW TO：部署並發佈至本機 SharePoint 網站的 SharePoint 方案
   您可以部署或發行至本機 SharePoint 伺服器的 SharePoint 解決方案，在您的開發電腦上。 部署程序副本 *.wsp*檔案至 SharePoint 伺服器，會安裝方案，，，然後啟動功能。 發佈處理只能複製 *.wsp*檔案至 SharePoint 伺服器並將其安裝。 您必須以手動方式啟動它在 SharePoint 中啟用它。

@@ -9,11 +9,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: daf5b32ce8088dbb020fdaf484013dd1a1889826
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60112334"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62908007"
 ---
 # <a name="vsix-color-compiler"></a>VSIX 色彩編譯器
 Visual Studio 擴充功能色彩編譯器工具會採用代表現有的 Visual Studio 佈景主題色彩的.xml 檔案的主控台應用程式並將它.pkgdef 檔案，以便可以在 Visual Studio 中使用這些色彩。 就可以輕鬆地比較.xml 檔案之間的差異，因為此工具是可用來管理原始檔控制中的自訂色彩。 它也可以連結至建置環境以便組建的輸出是有效的.pkgdef 檔案。

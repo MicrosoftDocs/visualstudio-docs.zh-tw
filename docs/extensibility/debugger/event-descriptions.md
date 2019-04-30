@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: d5a1567cc7f5d3f6072b47fda1aacd32f69cb672
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56695280"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62889716"
 ---
 # <a name="event-descriptions"></a>事件描述
 事件的每個類型都有特定的用途。

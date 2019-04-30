@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0ea782140405b55a6c5a90b01fb466586f66cc38
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 5741b286af454493f543b2c39c894341c87df1b1
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60054101"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444906"
 ---
 # <a name="writing-to-the-user-settings-store"></a>寫入使用者設定存放區
 使用者設定為可寫入的設定，在像是**工具 / 選項**對話方塊中，屬性 視窗中，然後某些其他對話方塊。 Visual Studio 擴充功能可能會使用這些來儲存少量資料。 本逐步解說示範如何將 「 記事本 」 加入 Visual Studio 是以外部工具讀取和寫入使用者設定存放區。
@@ -27,7 +27,7 @@ ms.locfileid: "60054101"
 3. 瀏覽至 HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\14.0Exp\External 工具\\。
 
     > [!NOTE]
-    >  請確定您正在查看該索引鍵包含 \14.0Exp\ 和不 \14.0\\。 當您執行 Visual Studio 的實驗執行個體時，您的使用者設定是在登錄區 「 14.0Exp"。
+    > 請確定您正在查看該索引鍵包含 \14.0Exp\ 和不 \14.0\\。 當您執行 Visual Studio 的實驗執行個體時，您的使用者設定是在登錄區 「 14.0Exp"。
 
 4. \External Tools\ 子機碼，以滑鼠右鍵按一下，然後按一下**匯出**。 請確定**選取分支**已選取。
 

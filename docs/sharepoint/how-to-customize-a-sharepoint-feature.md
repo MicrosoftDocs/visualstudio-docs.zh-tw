@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e54d2dc388ca308e037fb8ff918f521ee16e9092
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: e7a00f3c58f917e7355a63ebca71c74127826a2e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60067257"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63429220"
 ---
 # <a name="how-to-customize-a-sharepoint-feature"></a>HOW TO：自訂 SharePoint 功能
   您可以建立及使用 Visual Studio 中的功能設計工具自訂 SharePoint 功能。 比方說，您可以設定功能範圍，以及新增為相依性的其他功能。 根據預設，當您在方案總管 或 SharePoint 封裝總管 中新增的新功能時，會開啟功能設計工具。
@@ -49,7 +49,7 @@ ms.locfileid: "60067257"
 2. 展開 [功能]、 展開 FeatureName、 展開 FeatureName.feature，然後再開啟 *\<FeatureName >。Template.xml*檔案。
 
     > [!NOTE]
-    >  當您開啟了功能範本資訊清單的 XML 檔案時，檔案會自動進行驗證，並出現在 [錯誤清單] 視窗中出現的警告可以忽略。
+    > 當您開啟了功能範本資訊清單的 XML 檔案時，檔案會自動進行驗證，並出現在 [錯誤清單] 視窗中出現的警告可以忽略。
 
 ## <a name="change-the-manifest-template"></a>變更資訊清單範本
  您可以變更 Visual Studio XML 編輯器或 [資訊清單的範本] 窗格中的功能資訊清單檔案的 XML 程式碼。 XML 程式碼的任何變更會合併到封裝的資訊清單檔案中，功能。 例如，您可能要變更資訊清單的範本，以自訂功能屬性。
@@ -70,7 +70,7 @@ ms.locfileid: "60067257"
  您可以停用功能設計工具，並建立*feature.xml*手動檔案。 第一次您執行此程序，在功能設計工具中目前的設定會儲存到功能的範本 XML 檔。 然後，您可以修改或覆寫 XML 程式碼。
 
 > [!NOTE]
->  如果您新增或移除 SharePoint 專案項目 XML 檔案中，停用功能設計工具時，這些專案項目不會封裝。
+> 如果您新增或移除 SharePoint 專案項目 XML 檔案中，停用功能設計工具時，這些專案項目不會封裝。
 
 #### <a name="to-overwrite-packaged-manifest-file-by-disabling-the-designer"></a>若要覆寫封裝資訊清單的檔案，藉由停用設計工具
 

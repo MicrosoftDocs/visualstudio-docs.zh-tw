@@ -9,11 +9,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 1b4156c8125ad6cf3af9f5600ceb2b6c5bc21419
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55948182"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63004221"
 ---
 # <a name="messaging-activity-designers"></a>Messaging 活動設計工具
 

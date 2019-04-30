@@ -9,12 +9,12 @@ caps.latest.revision: 29
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 318caec1f96bc0b69a6fe9540231608a8636e107
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 07e5c91038013f51199212a3215490bbfdf34257
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60099492"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63442619"
 ---
 # <a name="step-2-create-a-random-addition-problem"></a>步驟 2：建立隨機加法問題
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -22,7 +22,7 @@ ms.locfileid: "60099492"
 在本教學課程的第二個部分中，您會加入以隨機數字為基礎的數學問題，藉此增加測驗的挑戰性。 您也會建立名為 `StartTheQuiz()` 的方法，這個方法會填入問題並啟動倒數計時器。 稍後在本教學課程中，您將加入減法、乘法和除法問題。  
   
 > [!NOTE]
->  這個主題是有關基本程式碼撰寫概念的教學課程系列的一部分。 如需教學課程的概觀，請參閱[教學課程 2：建立計時的數學測驗](../ide/tutorial-2-create-a-timed-math-quiz.md)。  
+> 這個主題是有關基本程式碼撰寫概念的教學課程系列的一部分。 如需教學課程的概觀，請參閱[教學課程 2：建立計時的數學測驗](../ide/tutorial-2-create-a-timed-math-quiz.md)。  
   
 ### <a name="to-create-a-random-addition-problem"></a>若要建立隨機加法問題  
   
@@ -46,7 +46,7 @@ ms.locfileid: "60099492"
 4. 將兩個整數變數加入至表單，並命名為 **addend1** 和 **addend2**。  
   
     > [!NOTE]
-    >  整數變數在 C# 中稱為 int，在 Visual Basic 中則稱為 Integer。 這類變數會儲存從 -2147483648 到 2147483647 的正數或負數，但是只能儲存整數，不包括小數。  
+    > 整數變數在 C# 中稱為 int，在 Visual Basic 中則稱為 Integer。 這類變數會儲存從 -2147483648 到 2147483647 的正數或負數，但是只能儲存整數，不包括小數。  
   
      您可以使用類似的語法加入整數變數，就像加入 `Random` 物件一般，如下列程式碼所示。  
   
@@ -66,7 +66,7 @@ Next 方法
      您在物件後面輸入一個點時，IntelliSense 會顯示物件的成員清單，例如屬性、方法和事件。  
   
     > [!NOTE]
-    >  當您使用 `Next()` 方法搭配 `Random` 物件時 (例如，當您呼叫 `randomizer.Next(50)` 時)，會得到小於 50 (從 0 到 49) 的隨機數字。 在這個範例中，您呼叫了 `randomizer.Next(51)`。 您使用 51 而不是 50，如此這兩個數字就會相加並得出從 0 到 100 的答案。 如果您將 50 傳給 `Next()` 方法，它會選擇 0 至 49 的數字，所以可能的最大答案是 98，而不是 100。 當方法中的前兩個陳述式執行之後，`addend1` 和 `addend2` 這兩個整數變數會各自保存一個從 0 至 50 的隨機數字。 這個螢幕擷取畫面會顯示 Visual C# 程式碼，不過，IntelliSense 對於 Visual Basic 運作的方式一樣。  
+    > 當您使用 `Next()` 方法搭配 `Random` 物件時 (例如，當您呼叫 `randomizer.Next(50)` 時)，會得到小於 50 (從 0 到 49) 的隨機數字。 在這個範例中，您呼叫了 `randomizer.Next(51)`。 您使用 51 而不是 50，如此這兩個數字就會相加並得出從 0 到 100 的答案。 如果您將 50 傳給 `Next()` 方法，它會選擇 0 至 49 的數字，所以可能的最大答案是 98，而不是 100。 當方法中的前兩個陳述式執行之後，`addend1` 和 `addend2` 這兩個整數變數會各自保存一個從 0 至 50 的隨機數字。 這個螢幕擷取畫面會顯示 Visual C# 程式碼，不過，IntelliSense 對於 Visual Basic 運作的方式一樣。  
   
      仔細查看這些陳述式。  
   

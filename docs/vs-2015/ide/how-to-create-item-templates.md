@@ -14,12 +14,12 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 587d0a3fb571a0cb5934f56fca1ffa0ad34d3086
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 4484ec75cf44fc60c72091fb17cce510efdb9cd4
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60108785"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63417039"
 ---
 # <a name="how-to-create-item-templates"></a>HOW TO：建立項目範本
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -53,7 +53,7 @@ ms.locfileid: "60108785"
      範本檔案會加入至.zip 檔案，並複製至您在對話方塊中指定的任何目錄。 預設位置為 **..\Users\\<使用者名稱\>\Documents\Visual Studio \<>\My Exported Templates\\** 資料夾。  
   
     > [!WARNING]
-    >  在舊版 Visual Studio 中，預設位置為 **..\Users\\<使用者名稱\>\Documents\Visual Studio \<版本>\Templates\ItemTemplates**。  
+    > 在舊版 Visual Studio 中，預設位置為 **..\Users\\<使用者名稱\>\Documents\Visual Studio \<版本>\Templates\ItemTemplates**。  
   
 ### <a name="to-enable-the-item-template-to-be-used-in-a-store-project"></a>若要讓項目範本可在市集專案中使用  
   

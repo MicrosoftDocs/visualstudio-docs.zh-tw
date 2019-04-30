@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: e8de1f98cb6953ba713796e1dbd74de849a0aaf7
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56715925"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62917301"
 ---
 # <a name="idebugprogram2enummodules"></a>IDebugProgram2::EnumModules
 擷取此程式已載入，並且正在執行的模組清單。

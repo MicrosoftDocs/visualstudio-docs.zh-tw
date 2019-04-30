@@ -1,5 +1,5 @@
 ---
-title: '&lt;摘要&gt;(JavaScript) |Microsoft Docs'
+title: '&lt;summary&gt; (JavaScript) | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -13,11 +13,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 81d41918d61bbe95cfe19d2382535449a47deb8c
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54775810"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62431416"
 ---
 # <a name="ltsummarygt-javascript"></a>&lt;summary&gt; (JavaScript)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,16 +33,16 @@ ms.locfileid: "54775810"
   
 #### <a name="parameters"></a>參數  
  `locid`  
- 選擇性。 如需函式或方法的當地語系化資訊識別項。 識別項是成員識別碼或其對應至`name`屬性 OpenAjax 中繼資料所定義的訊息組合中的值。 識別項型別取決於所指定的格式[ \<loc >](../ide/loc-javascript.md)項目。  
+ 選擇性。 關於函式或方法的當地語系化資訊識別項。 該識別項會是成員識別碼，或對應由 OpenAjax 中繼資料所定義訊息包中的 `name` 屬性值。 識別項類型會依據在 [\<loc>](../ide/loc-javascript.md) 元素中指定的格式而有所不同。  
   
  `description`  
  選擇性。 函式或方法的描述。  
   
 ## <a name="remarks"></a>備註  
- 用來標註函式，其中包含的項目[\<摘要 >](../ide/summary-javascript.md)， [ \<param >](../ide/param-javascript.md)，以及[\<傳回 >](../ide/returns-javascript.md)，必須放在任何陳述式之前的函式主體。  
+ 用於標註函式的元素 (包括 [\<summary>](../ide/summary-javascript.md)、[\<param>](../ide/param-javascript.md) 和 [\<returns>](../ide/returns-javascript.md)) 必須放在函式主體中的任何陳述式之前。  
   
 ## <a name="example"></a>範例  
- 下列程式碼示範如何使用`<summary>`項目。  
+ 下列程式碼示範如何使用 `<summary>` 元素。  
   
 ```javascript  
 function areaFunction(radiusParam)  

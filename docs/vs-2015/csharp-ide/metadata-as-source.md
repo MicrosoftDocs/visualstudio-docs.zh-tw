@@ -15,12 +15,12 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 8d1a4d269b0b7e1afb151bea5bbd97d5ab770d00
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 5883708d0ed32f636c5e229147676cf1545f8a47
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58944360"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444603"
 ---
 # <a name="metadata-as-source"></a>中繼資料當做原始碼
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,7 +28,7 @@ ms.locfileid: "58944360"
 中繼資料當做原始程式碼，可讓您檢視在唯讀緩衝區中顯示為 C# 原始程式碼的中繼資料。 這會啟用類型和成員 (不含實作) 宣告的檢視。 針對專案或解決方案不提供原始程式碼的類型或成員執行 [移至定義]  命令，就可以檢視當做原始程式碼的中繼資料。  
   
 > [!NOTE]
->  當您嘗試對標記為內部的類型或成員執行 [移至定義]  命令時，整合式的開發環境 (IDE) 不會將它們的中繼資料顯示為原始程式碼，無論參考的組件是否為 Friend 組件。  
+> 當您嘗試對標記為內部的類型或成員執行 [移至定義]  命令時，整合式的開發環境 (IDE) 不會將它們的中繼資料顯示為原始程式碼，無論參考的組件是否為 Friend 組件。  
   
  您可以在程式碼編輯器或 [程式碼定義]  視窗中檢視當做原始程式碼的中繼資料。  
   

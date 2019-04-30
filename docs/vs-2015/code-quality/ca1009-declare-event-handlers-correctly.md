@@ -16,11 +16,11 @@ author: gewarren
 ms.author: gewarren
 manager: wpickett
 ms.openlocfilehash: 9f3764e7e7965fb9efe46a8404273de9adde4a34
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58943472"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62422797"
 ---
 # <a name="ca1009-declare-event-handlers-correctly"></a>CA1009:事件處理常式必須正確宣告
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

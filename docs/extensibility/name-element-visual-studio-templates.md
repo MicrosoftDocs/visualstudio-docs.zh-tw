@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 67160258eb445b1a7131898687fa410ac1636f40
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56697685"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62433743"
 ---
 # <a name="name-element-visual-studio-templates"></a>Name 元素 （Visual Studio 範本）
 指定範本的名稱，因為它會出現在**新的專案**或是**加入新項目** 對話方塊。

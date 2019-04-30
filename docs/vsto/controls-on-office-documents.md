@@ -17,11 +17,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 37633d02f4b7a9a140b41058a39369fde7f64002
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56618207"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62951147"
 ---
 # <a name="controls-on-office-documents"></a>Office 文件上的控制項
   您也可以在 Visual Studio 中使用 Office 開發工具，將 Windows Forms 控制項和「主控制項」 *appliesto_controls* (Host Control) 加入 Word 文件和 Excel 工作表。 主控制項是一種物件，在 Word 和 Excel 物件模型中擴充各種使用者介面 (UI) 物件。

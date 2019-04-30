@@ -15,11 +15,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 42a3fb7b44f0e21c564bc9bef26d5aa158d43091
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56631506"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62909329"
 ---
 # <a name="optimizing-menu-and-toolbar-commands"></a>將功能表和工具列命令最佳化
 Vspackage 和其對應的命令，以新增[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]可能會造成太過擁擠的 UI。 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 提供方法來協助減少 UI 命令產生混淆。

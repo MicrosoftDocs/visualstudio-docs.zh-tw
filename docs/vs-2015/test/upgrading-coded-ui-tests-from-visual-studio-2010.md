@@ -8,12 +8,12 @@ ms.assetid: 11232a83-73ea-46bd-bc0c-46f74f6e3a42
 caps.latest.revision: 35
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 58bfe0a2a6c337081ebb96464a701decb73cc022
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 42db6024353e3b26ddcaf6b5fa838ff791d964f4
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60080692"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445903"
 ---
 # <a name="upgrading-coded-ui-tests-from-visual-studio-2010"></a>升級 Visual Studio 2010 的自動程式化 UI 測試
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,19 +25,19 @@ ms.locfileid: "60080692"
 - Visual Studio 企業版
 
 > [!NOTE]
->  Visual Studio 包含一個以上的測試專案類型。 如果您要建立新的自動程式碼 UI 測試，則必須在自動程式碼 UI 測試專案類型中建立。 如需詳細資訊，請參閱 [從舊版 Visual Studio 升級測試](http://msdn.microsoft.com/e9c8b7f6-bd72-448e-8edb-d090dcc5cf52)。
+> Visual Studio 包含一個以上的測試專案類型。 如果您要建立新的自動程式碼 UI 測試，則必須在自動程式碼 UI 測試專案類型中建立。 如需詳細資訊，請參閱 [從舊版 Visual Studio 升級測試](http://msdn.microsoft.com/e9c8b7f6-bd72-448e-8edb-d090dcc5cf52)。
 
 > [!WARNING]
->  當您在[!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)] 或 [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] 連同 [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)] 中開啟測試專案，則必須重建包含自動程式碼 UI 測試的 [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)]個測試專案。
+> 當您在[!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)] 或 [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] 連同 [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)] 中開啟測試專案，則必須重建包含自動程式碼 UI 測試的 [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)]個測試專案。
 
 > [!WARNING]
->  在 [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)] 中開啟建立於 [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)]且只包含單元測試的測試專案時，則無法將自動程式碼 UI 測試新增至其中。 同樣地，您無法將自動程式碼 UI 測試新增至建立於 [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)]中的單元測試專案。
+> 在 [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)] 中開啟建立於 [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)]且只包含單元測試的測試專案時，則無法將自動程式碼 UI 測試新增至其中。 同樣地，您無法將自動程式碼 UI 測試新增至建立於 [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)]中的單元測試專案。
 
 ## <a name="compatibility-issues-between-visual-studio-2010-and-visual-studio-2012"></a>Visual Studio 2010 和 Visual Studio 2012 之間的相容性問題
  下表列出在 [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)] 和 [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)]之間移轉自動程式碼 UI 測試時要注意的問題。
 
 > [!CAUTION]
->  在自動程式碼 UI 測試專案中有一個和參考相關的已知問題並未出現在 [方案總管] 中。 如需詳細資訊，請參閱包含在 [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] 安裝媒體上的讀我檔案。
+> 在自動程式碼 UI 測試專案中有一個和參考相關的已知問題並未出現在 [方案總管] 中。 如需詳細資訊，請參閱包含在 [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] 安裝媒體上的讀我檔案。
 
 |自動程式碼 UI 功能|問題|方案|
 |----------------------------|-----------|--------------|

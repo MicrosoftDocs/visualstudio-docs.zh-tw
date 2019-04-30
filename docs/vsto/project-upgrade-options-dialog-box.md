@@ -17,11 +17,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 619e64dc09858b7d29e05804e3c3c353882f90ef
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56641724"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62561737"
 ---
 # <a name="project-upgrade-options-dialog-box"></a>專案升級、 選項對話方塊
   您可以使用 [專案升級]  頁面，指定 Visual Studio 是否會自動變更 VSTO 增益集專案，將其目標設定為開發電腦上所安裝的 Office 版本。

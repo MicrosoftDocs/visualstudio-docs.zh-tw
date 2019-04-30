@@ -16,11 +16,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: cf7a68d5d3567305e4f70049d76a1c260ddecf25
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60102519"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62826930"
 ---
 # <a name="grant-trust-to-office-solutions"></a>授與信任給 Office 方案
   將信任授與為 Office 方案表示修改每個目標電腦的安全性原則信任方案組件、 應用程式資訊清單、 部署資訊清單和文件。 信任可以由您或使用者授與至 Office 方案之用。

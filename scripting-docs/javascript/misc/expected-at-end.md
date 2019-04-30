@@ -15,11 +15,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 6179d628c8da58cffa76020f04e3fd1df3396b5d
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56840493"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62935298"
 ---
 # <a name="expected-end"></a>必須是 '\@end'
 您嘗試建立有條件地編譯的程式碼區塊，但不是含<strong>@end</strong>陳述式結尾。 [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] 陳述式可以有條件地編譯方法內括住<strong>@if/ @end</strong>區塊。  

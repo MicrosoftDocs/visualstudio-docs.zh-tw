@@ -9,12 +9,12 @@ caps.latest.revision: 15
 author: alexhomer1
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 716e6141d9f5ae76773a47b81ae54f5d7b70a9ec
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 4da615971004cb499fb6bab414517474c2bf6265
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60104176"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445968"
 ---
 # <a name="unit-testing-a-visual-c-dll-for-store-apps"></a>對市集應用程式的 Visual C++ DLL 進行單元測試
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -220,7 +220,7 @@ ms.locfileid: "60104176"
     ```  
   
     > [!TIP]
-    >  建議您不要變更已通過的測試。 相反地，請加入新的測試，更新程式碼，使測試通過，然後再加入另一個測試，依此類推。  
+    > 建議您不要變更已通過的測試。 相反地，請加入新的測試，更新程式碼，使測試通過，然後再加入另一個測試，依此類推。  
     >   
     >  當您的使用者變更他們的需求時，請停用已不再正確的測試。 以相同的累加方式，撰寫新的測試，一次使一個測試生效。  
   
@@ -231,7 +231,7 @@ ms.locfileid: "60104176"
      ![RangeTest 失敗](../test/media/ute-cpp-testexplorer-rangetest-fail.png "UTE_Cpp_TestExplorer_RangeTest_Fail")  
   
     > [!TIP]
-    >  確認每個測試在您撰寫之後立即失敗。 這樣有助於避免撰寫永遠不會失敗的測試這種易犯的錯誤。  
+    > 確認每個測試在您撰寫之後立即失敗。 這樣有助於避免撰寫永遠不會失敗的測試這種易犯的錯誤。  
   
 4. 透過測試強化程式碼，讓新的測試都成功。 將下列內容加入至 **RooterLib.cpp**：  
   
@@ -259,7 +259,7 @@ ms.locfileid: "60104176"
      這兩個測試都通過。  
   
 > [!TIP]
->  開發程式碼時，一次加入一個測試。 確定所有測試在每次反覆之後都通過。  
+> 開發程式碼時，一次加入一個測試。 確定所有測試在每次反覆之後都通過。  
   
 ## <a name="BKMK_Debug_a_failing_test"></a> 對失敗的測試進行偵錯  
   
@@ -346,6 +346,6 @@ ms.locfileid: "60104176"
 2. 選擇 [全部執行] 測試重構的方法，並確定並未導入迴歸。  
   
     > [!TIP]
-    >  一組穩定而良好的單元測試，可確認您並未在變更程式碼時引入錯誤。  
+    > 一組穩定而良好的單元測試，可確認您並未在變更程式碼時引入錯誤。  
     >   
     >  將重構作業與其他變更分開。

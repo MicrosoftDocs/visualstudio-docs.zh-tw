@@ -20,11 +20,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 88cdc78fd739de412b4cf796d0ca7a42f9174e0a
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56619078"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62564030"
 ---
 # <a name="crt-debugging-techniques"></a>CRT 偵錯技術
 如果您要偵錯的程式使用 C 執行階段程式庫，可以使用這些偵錯技術。
@@ -56,5 +56,5 @@ ms.locfileid: "56619078"
 
 ## <a name="related-sections"></a>相關章節
 
-- [偵錯原生程式碼](../debugger/debugging-native-code.md)-討論一些常見的偵錯問題和 C 和 c + + 應用程式的技術。
+- [偵錯機器碼](../debugger/debugging-native-code.md)-適用於 C 討論一些常見的偵錯問題和技術和C++應用程式。
 - [偵錯工具安全性](../debugger/debugger-security.md)-提供更安全偵錯的建議。

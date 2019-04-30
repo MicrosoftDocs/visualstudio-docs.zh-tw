@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 89ba8aadaa55a22c8e8c645866a9163628404407
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.openlocfilehash: b3fb11457319d4cea762808ec2619f32c37780a1
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56712784"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63412671"
 ---
 # <a name="idebugstackframe3interceptcurrentexception"></a>IDebugStackFrame3::InterceptCurrentException
 何時要攔截目前的例外狀況，請呼叫目前的堆疊框架上偵錯工具。
@@ -64,7 +64,7 @@ int InterceptCurrentException(
  當偵錯工具想要知道是否應該攔截例外狀況時，它會在目前的堆疊框架物件上呼叫這個方法。 這個方法會負責處理的例外狀況的所有詳細資料。 如果[IDebugStackFrame3](../../../extensibility/debugger/reference/idebugstackframe3.md)未實作介面或`InterceptStackException`方法會傳回任何錯誤，則偵錯工具會繼續正常處理例外狀況。
 
 > [!NOTE]
->  例外狀況可以被攔截只能在 managed 程式碼，也就是正在偵錯之程式的.NET 執行階段下執行時。 當然，協力廠商語言實作者可以實作`InterceptStackException`人員可以選擇他們自己偵錯引擎。
+> 例外狀況可以被攔截只能在 managed 程式碼，也就是正在偵錯之程式的.NET 執行階段下執行時。 當然，協力廠商語言實作者可以實作`InterceptStackException`人員可以選擇他們自己偵錯引擎。
 
  攔截完成之後， [IDebugInterceptExceptionCompleteEvent2](../../../extensibility/debugger/reference/idebuginterceptexceptioncompleteevent2.md)收到信號。
 

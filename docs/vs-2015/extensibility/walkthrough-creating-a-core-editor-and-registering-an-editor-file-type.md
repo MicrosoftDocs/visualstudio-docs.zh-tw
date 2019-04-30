@@ -10,12 +10,12 @@ ms.assetid: 24d2bffd-a35c-46db-8515-fd60b884b7fb
 caps.latest.revision: 30
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 9e900fa7d7bb65d5f55faab00c779247114278eb
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: c791d991f797a9ccc581fa6d79b0400c17c84e0e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58942547"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63442265"
 ---
 # <a name="walkthrough-creating-a-core-editor-and-registering-an-editor-file-type"></a>逐步解說：建立核心編輯器和註冊編輯器檔案類型
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,25 +28,25 @@ ms.locfileid: "58942547"
 ## <a name="locations-for-the-visual-studio-package-project-template"></a>如需 Visual Studio Package 專案範本位置  
  Visual Studio Package 專案範本位在 [新增專案]  對話方塊的三個不同位置：  
   
-1.  位在 Visual Basic 擴充性下。 專案的預設語言為 Visual Basic。  
+1. 位在 Visual Basic 擴充性下。 專案的預設語言為 Visual Basic。  
   
-2.  位在 C# 擴充性下。 專案的預設語言為 C#。  
+2. 位在 C# 擴充性下。 專案的預設語言為 C#。  
   
-3.  位在其他專案類型擴充性下。 專案的預設語言為 C++。  
+3. 位在其他專案類型擴充性下。 專案的預設語言為 C++。  
   
 ### <a name="to-create-the-vspackage"></a>若要建立 VSPackage  
   
--   開始[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]並建立[!INCLUDE[csprcs](../includes/csprcs-md.md)]名為 VSPackage`MyPackage`中所述，[逐步解說：建立功能表命令的 VSPackage](http://msdn.microsoft.com/d699c149-5d1e-47ff-94c7-e1222af02c32)。  
+- 開始[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]並建立[!INCLUDE[csprcs](../includes/csprcs-md.md)]名為 VSPackage`MyPackage`中所述，[逐步解說：建立功能表命令的 VSPackage](http://msdn.microsoft.com/d699c149-5d1e-47ff-94c7-e1222af02c32)。  
   
 ### <a name="to-add-the-editor-factory"></a>若要加入編輯器 factory  
   
-1.  以滑鼠右鍵按一下**MyPackage**專案，指向**新增**，然後按一下 **類別**。  
+1. 以滑鼠右鍵按一下**MyPackage**專案，指向**新增**，然後按一下 **類別**。  
   
-2.  在 **加入新項目**對話方塊方塊中，請確定**類別**選取範本時，型別`EditorFactory.cs`為名稱，然後按一下**新增**將類別新增至您的專案。  
+2. 在 **加入新項目**對話方塊方塊中，請確定**類別**選取範本時，型別`EditorFactory.cs`為名稱，然後按一下**新增**將類別新增至您的專案。  
   
      應該會自動開啟 EditorFactory.cs 檔案。  
   
-3.  從您的程式碼中參考下列組件。  
+3. 從您的程式碼中參考下列組件。  
   
     ```vb  
     Imports System.Runtime.InteropServices  
@@ -69,7 +69,7 @@ ms.locfileid: "58942547"
   
     ```  
   
-4.  新增的 GUID`EditorFactory`類別，新增`Guid`之前的類別宣告的屬性。  
+4. 新增的 GUID`EditorFactory`類別，新增`Guid`之前的類別宣告的屬性。  
   
      您可以使用 guidgen.exe 程式在產生新的 GUID[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]命令提示字元，或按一下**建立 GUID**上**工具**功能表。 此處所使用的 GUID 是只是範例;請勿使用它在您的專案。  
   
@@ -81,7 +81,7 @@ ms.locfileid: "58942547"
     [Guid("0eea3187-c5fa-48d4-aa72-b5eecd3b17b1")]   
     ```  
   
-5.  在類別定義中，加入要包含父封裝和服務提供者的兩個私用變數。  
+5. 在類別定義中，加入要包含父封裝和服務提供者的兩個私用變數。  
   
     ```vb  
     Class EditorFactory  
@@ -98,7 +98,7 @@ ms.locfileid: "58942547"
   
     ```  
   
-6.  新增公用類別建構函式接受一個參數的型別<xref:Microsoft.VisualStudio.Shell.Package>:  
+6. 新增公用類別建構函式接受一個參數的型別<xref:Microsoft.VisualStudio.Shell.Package>:  
   
     ```vb  
     Public Sub New(ByVal parentPackage As Package)  
@@ -113,7 +113,7 @@ ms.locfileid: "58942547"
     }  
     ```  
   
-7.  修改`EditorFactory`類別衍生自宣告<xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory>介面。  
+7. 修改`EditorFactory`類別衍生自宣告<xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory>介面。  
   
     ```vb  
     Class EditorFactory Implements IVsEditorFacto  
@@ -124,7 +124,7 @@ ms.locfileid: "58942547"
   
     ```  
   
-8.  以滑鼠右鍵按一下<xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory>，按一下**實作介面**，然後按一下**明確實作介面**。  
+8. 以滑鼠右鍵按一下<xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory>，按一下**實作介面**，然後按一下**明確實作介面**。  
   
      這會新增四個方法必須實作在<xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory>介面。  
   
@@ -320,20 +320,20 @@ ms.locfileid: "58942547"
   
 ### <a name="to-register-the-editor-factory"></a>若要註冊編輯器 factory  
   
-1.  中**方案總管**，按兩下 Resources.resx 檔案將它開啟字串資料表，在其中的項目**String1 是**選取。  
+1. 中**方案總管**，按兩下 Resources.resx 檔案將它開啟字串資料表，在其中的項目**String1 是**選取。  
   
-2.  變更的識別項的名稱`IDS_EDITORNAME`和以文字**MyPackage 編輯器。** 這個字串會顯示為您的編輯器的名稱。  
+2. 變更的識別項的名稱`IDS_EDITORNAME`和以文字**MyPackage 編輯器。** 這個字串會顯示為您的編輯器的名稱。  
   
-3.  開啟 VSPackage.resx 檔案，並加入新字串，將名稱設定為**101**的值和`IDS_EDITORNAME`。 這會將封裝提供的資源識別碼，來存取您剛才建立的字串。  
+3. 開啟 VSPackage.resx 檔案，並加入新字串，將名稱設定為**101**的值和`IDS_EDITORNAME`。 這會將封裝提供的資源識別碼，來存取您剛才建立的字串。  
   
     > [!NOTE]
-    >  如果 VSPackage.resx 檔案包含另一個字串`name`屬性設為**101**，取代另一個唯一的數字的值，這裡並在下列步驟。  
+    > 如果 VSPackage.resx 檔案包含另一個字串`name`屬性設為**101**，取代另一個唯一的數字的值，這裡並在下列步驟。  
   
-4.  在 [**方案總管] 中**，開啟 MyPackagePackage.cs 檔案。  
+4. 在 [**方案總管] 中**，開啟 MyPackagePackage.cs 檔案。  
   
      這是主套件檔案。  
   
-5.  之前加入下列的使用者屬性`Guid`屬性。  
+5. 之前加入下列的使用者屬性`Guid`屬性。  
   
     ```vb  
     <ProvideEditorFactoryAttribute(GetType(EditorFactory), 101)> _  
@@ -349,7 +349,7 @@ ms.locfileid: "58942547"
   
      <xref:Microsoft.VisualStudio.Shell.ProvideEditorExtensionAttribute>屬性會將與您的編輯器 factory.myext 檔案延伸模組，讓任何一次，在載入延伸模組，會叫用編輯器 factory 的檔案。  
   
-6.  加入私用變數，以`MyPackage`類別，建構函式之前，並提供它的類型`EditorFactory`。  
+6. 加入私用變數，以`MyPackage`類別，建構函式之前，並提供它的類型`EditorFactory`。  
   
     ```vb  
     Private editorFactory As EditorFactory  
@@ -359,7 +359,7 @@ ms.locfileid: "58942547"
     private EditorFactory editorFactory;  
     ```  
   
-7.  尋找`Initialize`方法 (您可能必須開啟`Package Members`隱藏的區域)，並新增下列程式碼呼叫之後`base.Initialize()`。  
+7. 尋找`Initialize`方法 (您可能必須開啟`Package Members`隱藏的區域)，並新增下列程式碼呼叫之後`base.Initialize()`。  
   
     ```vb  
     'Create our editor factory and register it.   
@@ -374,7 +374,7 @@ ms.locfileid: "58942547"
   
     ```  
   
-8.  編譯程式，並確定沒有任何錯誤。  
+8. 編譯程式，並確定沒有任何錯誤。  
   
      此步驟中登錄的實驗登錄區中的編輯器 factory [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]。 如果提示您覆寫的 resource.h 檔案時，請按一下**確定**。  
   

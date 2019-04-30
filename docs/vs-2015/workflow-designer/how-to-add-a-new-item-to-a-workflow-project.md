@@ -10,11 +10,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: ecc310896f7b938025d42e06ac5ef0ec8bac3d35
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60063620"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62932999"
 ---
 # <a name="how-to-add-a-new-item-to-a-workflow-project"></a>HOW TO：將新項目新增至工作流程專案
 在建立工作流程專案後，可以將工作流程活動、設計工具和其他熟悉的 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 項目加入至專案。  

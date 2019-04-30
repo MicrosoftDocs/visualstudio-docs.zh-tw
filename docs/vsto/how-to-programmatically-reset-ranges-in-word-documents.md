@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 622d807da832c4c07baf8b62c902c2b1d25cc14d
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60072067"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62955691"
 ---
 # <a name="how-to-programmatically-reset-ranges-in-word-documents"></a>HOW TO：以程式設計方式重設 Word 文件中的範圍
   使用 <xref:Microsoft.Office.Interop.Word.Range.SetRange%2A> 方法，可以調整 Microsoft Office Word 文件中現有範圍的大小。

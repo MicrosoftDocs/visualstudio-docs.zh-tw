@@ -15,11 +15,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 622dfafbe16efee1e953fbc42bfa3b94cfa3cc58
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56604570"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62965267"
 ---
 # <a name="walkthrough-create-a-web-part-for-sharepoint"></a>逐步解說：建立 SharePoint web 組件
 

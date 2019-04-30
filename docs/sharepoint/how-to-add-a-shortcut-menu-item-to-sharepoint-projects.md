@@ -15,11 +15,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 5b5db3fe3aaf8dc57c7df6a63810106ae9fb30fb
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60115584"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62967118"
 ---
 # <a name="how-to-add-a-shortcut-menu-item-to-sharepoint-projects"></a>HOW TO：加入 SharePoint 專案的捷徑功能表項目
   您可以加入任何 SharePoint 專案的捷徑功能表項目。 當使用者以滑鼠右鍵按一下專案節點中的，會出現的功能表項目**方案總管 中**。

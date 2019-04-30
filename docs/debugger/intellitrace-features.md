@@ -21,13 +21,13 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 762fc8a28b8c5b3f8729ecd728d12ed5cdbbafc6
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56720181"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62846368"
 ---
-# <a name="intellitrace-features-c-visual-basic-c"></a>IntelliTrace 功能 (C#，Visual Basic、 c + +)
+# <a name="intellitrace-features-c-visual-basic-c"></a>IntelliTrace 功能 (C#，Visual Basic 中， C++)
 
 您可以使用 IntelliTrace 記錄您應用程式的事件和方法呼叫，以讓您檢查它在執行之不同時間點的狀態 (呼叫堆疊和區域變數值)。 只要如常開始偵錯，預設會開啟 IntelliTrace，而您可以在新 [診斷工具] 視窗的 [事件] 索引標籤中查看 IntelliTrace 所記錄的資訊。選取事件，然後按一下 [啟用歷程偵錯]，以查看針對此事件記錄的呼叫堆疊和區域變數。
 
@@ -46,7 +46,7 @@ Visual Studio Enterprise 版本 (而非 Visual Studio Professional 或 Community
 
 如果您正在偵錯，請停止偵錯。 移至**工具 > 選項 > IntelliTrace > IntelliTrace 事件**。 選擇您要 IntelliTrace 記錄的事件。
 
-## <a name="Snapshots"></a> 收集快照集 (C#，Visual Basic、 c + +)
+## <a name="Snapshots"></a> 收集快照集 (C#，Visual Basic 中， C++)
 
 這不預設啟用，但 IntelliTrace 可以擷取您的應用程式，在每個中斷點和偵錯工具步驟事件的快照集，您可以在歷程記錄偵錯工作階段中檢視這些快照集。 快照集可讓您完整的應用程式的狀態檢視。 若要啟用擷取的快照集，請前往**工具 > 選項 > IntelliTrace > 一般**，然後選取**IntelliTrace 快照集 （managed 與原生）**。 如需詳細資訊，請參閱[使用 IntelliTrace 檢查先前的應用程式狀態](../debugger/view-historical-application-state.md)
 
@@ -92,7 +92,7 @@ IntelliTrace 預設會記錄您方案所使用之所有模組的資訊。 您可
 
 嘗試將模組數目保持為最小值。 因為要收集的資料比較少，所以效能會更好。 因為通過的資料較少，所以 UI 中的雜訊也會較少。
 
-## <a name="SaveSession"></a> 將 IntelliTrace 資料儲存至檔案 (C#，Visual Basic、 c + +)
+## <a name="SaveSession"></a> 將 IntelliTrace 資料儲存至檔案 (C#，Visual Basic 中， C++)
 
 如果您正在進行偵錯，而且應用程式處於中斷狀態，則可以移至 [偵錯] > [IntelliTrace] > [儲存 IntelliTrace 工作階段] 來儲存 IntelliTrace 已收集的資料。 已停用此功能表項目，因此，如果應用程式仍在執行，或您已停止偵錯，則無法儲存 IntelliTrace 已收集的資料。
 

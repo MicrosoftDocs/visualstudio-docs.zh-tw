@@ -19,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: bfee8d6183a8292f5c39140ada9d4787e4f027ac
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: df1045cd0b35a2c8d4afa765167693032c6d9936
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60104536"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441813"
 ---
 # <a name="excel-object-model-overview"></a>Excel 物件模型概觀
   若要開發使用 Microsoft Office Excel 的方案，您可以與 Excel 物件模型提供的物件進行互動。 本主題將介紹最重要的物件：
@@ -72,7 +72,7 @@ ms.locfileid: "60104536"
 
 - 工作表
 
-- 範圍
+- Range
 
   使用 Excel 執行的大部分工作都是以這四個物件及其成員為中心。
 
@@ -80,7 +80,7 @@ ms.locfileid: "60104536"
  Excel <xref:Microsoft.Office.Interop.Excel.Application> 物件代表 Excel 應用程式本身。 <xref:Microsoft.Office.Interop.Excel.Application> 物件會公開有關執行中應用程式、套用至該執行個體的選項，以及目前在執行個體中開啟之使用者物件的大量資訊。
 
 > [!NOTE]
->  請勿在 Excel 中，將 <xref:Microsoft.Office.Interop.Excel.ApplicationClass.EnableEvents%2A> 物件的 <xref:Microsoft.Office.Interop.Excel.Application> 屬性設定為 **false**(Native Office Object)。 將這個屬性設定為 false，會導致 Excel 無法引發任何事件，包括主控制項的事件在內。
+> 請勿在 Excel 中，將 <xref:Microsoft.Office.Interop.Excel.ApplicationClass.EnableEvents%2A> 物件的 <xref:Microsoft.Office.Interop.Excel.Application> 屬性設定為 **false**(Native Office Object)。 將這個屬性設定為 false，會導致 Excel 無法引發任何事件，包括主控制項的事件在內。
 
 ### <a name="workbook-object"></a>生活頁簿物件
  <xref:Microsoft.Office.Interop.Excel.Workbook> 物件代表 Excel 應用程式中的單一活頁簿。

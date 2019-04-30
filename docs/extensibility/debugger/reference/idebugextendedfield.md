@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: ed0b7300fca935a88b6da9e878d87f5ce443bec9
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56682813"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62873912"
 ---
 # <a name="idebugextendedfield"></a>IDebugExtendedField
 擴充欄位，可支援 managed 程式碼的泛型的類型。

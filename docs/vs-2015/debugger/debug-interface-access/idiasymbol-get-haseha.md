@@ -13,12 +13,12 @@ caps.latest.revision: 10
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: b861d0437e44e9ad5fd912981357a02fb2210482
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 87adaa2e43068784e5ec6488030f147891a027dd
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58945724"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63406049"
 ---
 # <a name="idiasymbolgethaseha"></a>IDiaSymbol::get_hasEHa
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -41,10 +41,10 @@ HRESULT get_hasEHa(
  如果成功，則傳回`S_OK`; 否則傳回`S_FALSE`或錯誤碼。  
   
 > [!NOTE]
->  傳回值為`S_FALSE`表示屬性不是適用於符號。  
+> 傳回值為`S_FALSE`表示屬性不是適用於符號。  
   
 ## <a name="remarks"></a>備註  
- 可以混合使用非同步或結構化例外狀況處理與 c + + 樣式例外狀況處理，但它需要特定的編譯器參數，/EHa，若要啟用它。  
+ 它是可以混合使用非同步或結構化例外狀況處理C++-樣式例外狀況處理，但它會需要特定的編譯器參數，/EHa，若要啟用它。  
   
 ## <a name="requirements"></a>需求  
   

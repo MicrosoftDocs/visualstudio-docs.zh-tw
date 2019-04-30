@@ -10,11 +10,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 9fcad439c7f0633f75d2a7364e2d0d3bfb142f89
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60090338"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62994636"
 ---
 # <a name="domain-property-value-change-handlers"></a>網域屬性值變更處理常式
 

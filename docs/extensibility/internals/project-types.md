@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: d28b0b015d5f75eac081b0409d4f8d4b9a4edb9a
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56623628"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62859584"
 ---
 # <a name="project-types"></a>專案類型
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 包含語言的數種專案類型，例如[!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)]和[!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)]。 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 也可讓您建立您自己的專案類型。

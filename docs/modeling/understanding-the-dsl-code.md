@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9d8ce41d6532a7c389d20872c35a216a96910578
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: c2ff6d38ef4fcce400888121ef12883b00bcc0c7
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60087765"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63386711"
 ---
 # <a name="understanding-the-dsl-code"></a>了解 DSL 程式碼
 
@@ -70,7 +70,7 @@ ms.locfileid: "60087765"
 
  (在元件方案範例中，其中一個連接產生器稱為 ConnectionBuilder，這是巧合，因為網域關聯性的名稱剛好是 Connection。)
 
- 在 建立關聯性*關聯性*`Builder.Connect()`方法。 預設版本驗證來源和目標模型項目是可接受的，然後再具現化關聯性。 例如：
+ 在 建立關聯性*關聯性*`Builder.Connect()`方法。 預設版本驗證來源和目標模型項目是可接受的，然後再具現化關聯性。 例如: 
 
  `CommentReferencesSubject(sourceAccepted, targetAccepted);`
 
@@ -131,7 +131,7 @@ ms.locfileid: "60087765"
   表示網域模型的類別。 該類別衍生自 <xref:Microsoft.VisualStudio.Modeling.DomainModel>。
 
 > [!NOTE]
->  此類別與模型的根類別不同。
+> 此類別與模型的根類別不同。
 
  Copy Closure 和 Delete Closure 定義複製或刪除某個項目時，應包含的其他項目。 您可以設定來控制此行為**Propagates Copy**並**傳播刪除**每一個關聯性兩端角色的屬性。 如果您要動態決定這些值，您可以撰寫程式碼，覆寫 Closure 類別的方法。
 
@@ -340,7 +340,7 @@ explorerWindow.TreeContainer.ObjectModelBrowser.SelectedNode = treeNode;
  若要自訂這個檔案，請編輯 `.tt` 檔。
 
 > [!WARNING]
->  如果您編輯 .tt 檔以納入圖示或影像等資源，請確定 VSIX 組建中包含此資源。 在 [方案總管] 中，選取的檔案，並確定**Include in VSIX**屬性是`True`。
+> 如果您編輯 .tt 檔以納入圖示或影像等資源，請確定 VSIX 組建中包含此資源。 在 [方案總管] 中，選取的檔案，並確定**Include in VSIX**屬性是`True`。
 
  這個檔案控制如何將 DSL 封裝成 Visual Studio 整合擴充功能 (VSIX)。 如需詳細資訊，請參閱[部署特定領域語言方案](../modeling/deploying-domain-specific-language-solutions.md)。
 

@@ -9,11 +9,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 7a2bd17b91f7a18adce1153634cb9fc55902720b
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56680902"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62848483"
 ---
 # <a name="init"></a>Init
 準備圖形診斷，以主動擷取和記錄到圖形記錄檔的圖形資訊的應用程式元件。
@@ -34,5 +34,5 @@ void Init(
 
  您可以完成並關閉使用中的圖形記錄檔藉由呼叫`UnInit`，然後再擷取和記錄新的圖形記錄檔的多個圖形資訊，藉由呼叫`Init`一次。 您可以重複此步驟為您想要建立使用相同的數個獨立的圖形記錄檔的多次`VsgDbg`執行個體。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [UnInit](init.md)

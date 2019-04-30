@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 702c671922d8ea7a1552504be062b7b31de16a09
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: c7d1373339fac4768e2af1eda5770d5058ae8078
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60053932"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446602"
 ---
 # <a name="walkthrough-import-a-sharepoint-designer-reusable-workflow-into-visual-studio"></a>逐步解說：SharePoint Designer 可重複使用工作流程匯入 Visual Studio
   本逐步解說示範如何匯入 SharePoint Designer 2010 中建立可重複使用工作流程[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]SharePoint 工作流程專案。
@@ -124,7 +124,7 @@ ms.locfileid: "60053932"
  因為[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]可以只匯入 *.wsp*檔案，您必須將儲存為可重複使用的工作流程 *.wsp*檔案，並將它部署到 SharePoint 中，然後再匯入到[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]。
 
 > [!IMPORTANT]
->  如果您收到執行階段錯誤，執行下列程序，您必須對 SharePoint 網站存取的系統上執行程序。
+> 如果您收到執行階段錯誤，執行下列程序，您必須對 SharePoint 網站存取的系統上執行程序。
 
 #### <a name="to-save-and-deploy-the-reusable-workflow"></a>若要儲存並部署可重複使用的工作流程
 
@@ -170,7 +170,7 @@ ms.locfileid: "60053932"
 6. 在 [**指定新專案來源**頁面上，瀏覽至您先前儲存在系統上位置 *.wsp*檔案，開啟檔案，然後選擇**下一步]** 按鈕。
 
    > [!NOTE]
-   >  選擇**完成**按鈕以匯入中的所有可用項目 *.wsp*檔案。
+   > 選擇**完成**按鈕以匯入中的所有可用項目 *.wsp*檔案。
 
     這會顯示一份可供匯入可重複使用工作流程。
 
@@ -256,7 +256,7 @@ ms.locfileid: "60053932"
 12. 中**啟動新的工作流程**區段中，選擇連結**SPD Workflow Test**，然後選擇**啟動**按鈕來起始工作流程。
 
     > [!NOTE]
-    >  或者，您可以自動為相關聯的工作流程清單藉由執行工作流程設定精靈，並設定自動產生關聯的工作流程。
+    > 或者，您可以自動為相關聯的工作流程清單藉由執行工作流程設定精靈，並設定自動產生關聯的工作流程。
 
      請注意兩個動作由工作流程： 您的名稱會出現在工作的**指派給**資料行，且宣告會出現在**公告**清單。
 

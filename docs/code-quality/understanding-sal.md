@@ -8,18 +8,18 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - multiple
-ms.openlocfilehash: 7f79796d186f5a365c37a8e24a3e523aba7ceb72
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
-ms.translationtype: MT
+ms.openlocfilehash: f306e0a30dc8faa8f961cb7096a31a049547a70e
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55946648"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62820402"
 ---
 # <a name="understanding-sal"></a>了解 SAL
 
-Microsoft 原始程式碼註釋語言 (SAL) 提供一組註釋，您可以使用來描述函式會使用其參數、 它對它們的假設和完成時的保證。 標頭檔中所定義的註解`<sal.h>`。 C + + 的 visual Studio 程式碼分析會修改其分析的函式中使用 SAL 註釋。 適用於 Windows 的驅動程式開發 SAL 2.0 的相關資訊，請參閱[SAL 2.0 註解的 Windows 驅動程式](http://go.microsoft.com/fwlink/?LinkId=250979)。
+Microsoft 原始程式碼註釋語言 (SAL) 提供一組註釋，您可以使用來描述函式會使用其參數、 它對它們的假設和完成時的保證。 標頭檔中所定義的註解`<sal.h>`。 Visual Studio 程式碼分析，如C++若要修改其分析的函式中使用 SAL 註釋。 適用於 Windows 的驅動程式開發 SAL 2.0 的相關資訊，請參閱[SAL 2.0 註解的 Windows 驅動程式](http://go.microsoft.com/fwlink/?LinkId=250979)。
 
-原生，C 和 c + + 提供適用於開發人員一致的方式表達意圖和不可變數只有有限的方式。 藉由使用 SAL 註釋中,，您可以描述您的函式，更詳細地使開發人員使用它們可以更了解如何使用它們。
+原生，C 和C++提供適用於開發人員一致的方式表達意圖和不可變數只有有限的方式。 藉由使用 SAL 註釋中,，您可以描述您的函式，更詳細地使開發人員使用它們可以更了解如何使用它們。
 
 ## <a name="what-is-sal-and-why-should-you-use-it"></a>什麼是 SAL 以及為什麼您應該使用它？
 
@@ -110,9 +110,9 @@ wchar_t * wmemcpy(
 
 #### <a name="to-use-visual-studio-code-analysis-tools-and-sal"></a>若要使用 Visual Studio 程式碼分析工具和 SAL
 
-1.  在 Visual Studio 中，開啟包含 SAL 註釋的 c + + 專案。
+1. 在 Visual Studio 中開啟C++專案，其中包含 SAL 註釋。
 
-2.  在功能表列上選擇 **建置**，**針對方案執行程式碼分析**。
+2. 在功能表列上選擇 **建置**，**針對方案執行程式碼分析**。
 
      請考慮\_在\_這一節的範例。 如果您在其上執行程式碼分析，會顯示此警告：
 
@@ -122,15 +122,15 @@ wchar_t * wmemcpy(
 
 `_In_`註解表示：
 
--   參數必須有效，而且將不會修改。
+- 參數必須有效，而且將不會修改。
 
--   此函式只會從單一項目緩衝區讀取。
+- 此函式只會從單一項目緩衝區讀取。
 
--   呼叫端必須提供緩衝區，並將它初始化。
+- 呼叫端必須提供緩衝區，並將它初始化。
 
--   `_In_` 指定 「 唯讀 」。 常見的錯誤是套用`_In_`應有的參數`_Inout_`註釋改。
+- `_In_` 指定 「 唯讀 」。 常見的錯誤是套用`_In_`應有的參數`_Inout_`註釋改。
 
--   `_In_` 但會忽略非指標純量上分析器所允許的。
+- `_In_` 但會忽略非指標純量上分析器所允許的。
 
 ```cpp
 void InCallee(_In_ int *pInt)
@@ -361,7 +361,7 @@ Visual Studio 程式碼分析會驗證這個函數會檢查之前的 null`*pInt`
 
 ### <a name="example-the-success-annotation-in-combination-with-out"></a>範例：\_成功\_結合的註解\_出\_
 
-註解可以套用至大部分的物件。  特別是，您可以標註的整個函式。  其中一個函式的最明顯的特性是它可以成功或失敗。 但緩衝區和大小之間的關聯，例如 C/c + + 無法表示函式成功或失敗。 使用`_Success_`註解，您可以說出成功的函式如下所示。  參數以`_Success_`註釋不只是，當為 true 表示已成功函式的運算式。 運算式可以是任何註解剖析器可以處理的項目。 函式成功時，都只適用於函式傳回之後的註釋的效果。 此範例示範如何`_Success_`互動`_Out_`執行適當的動作。 您可以使用關鍵字`return`來代表傳回的值。
+註解可以套用至大部分的物件。  特別是，您可以標註的整個函式。  其中一個函式的最明顯的特性是它可以成功或失敗。 但像是緩衝區和它的大小，C 之間的關聯 /C++無法表示函式成功或失敗。 使用`_Success_`註解，您可以說出成功的函式如下所示。  參數以`_Success_`註釋不只是，當為 true 表示已成功函式的運算式。 運算式可以是任何註解剖析器可以處理的項目。 函式成功時，都只適用於函式傳回之後的註釋的效果。 此範例示範如何`_Success_`互動`_Out_`執行適當的動作。 您可以使用關鍵字`return`來代表傳回的值。
 
 ```cpp
 _Success_(return != false) // Can also be stated as _Success_(return)

@@ -15,11 +15,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 47faa5e496585940f61f94bb6dfb0b8d9d70f752
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55932738"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62797507"
 ---
 # <a name="ca1306-set-locale-for-data-types"></a>CA1306:必須設定資料類型的地區設定
 

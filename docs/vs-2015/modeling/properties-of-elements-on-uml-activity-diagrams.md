@@ -14,12 +14,12 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: b8106fde63769d40f220165a072fff137da353f7
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: a442d3a116fa527271cad5acd2ffc7f7fec5d076
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58939571"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444436"
 ---
 # <a name="properties-of-elements-on-uml-activity-diagrams"></a>UML 活動圖表中的項目屬性
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,17 +27,17 @@ ms.locfileid: "58939571"
 在 UML 活動圖表上，每個項目都具有屬性。 若要查看項目的屬性，以滑鼠右鍵按一下的項目在圖表上或在**UML 模型總管**，然後按一下**屬性**。 屬性會出現在**屬性**視窗。  
   
 > [!NOTE]
->  本主題有關 UML 活動圖表上項目的屬性。 如需如何閱讀 UML 活動圖表的詳細資訊，請參閱[UML 活動圖表：參考資料](../modeling/uml-activity-diagrams-reference.md)。 如需如何繪製 UML 活動圖表的詳細資訊，請參閱[UML 活動圖表：指導方針](../modeling/uml-activity-diagrams-guidelines.md)。  
+> 本主題有關 UML 活動圖表上項目的屬性。 如需如何閱讀 UML 活動圖表的詳細資訊，請參閱[UML 活動圖表：參考資料](../modeling/uml-activity-diagrams-reference.md)。 如需如何繪製 UML 活動圖表的詳細資訊，請參閱[UML 活動圖表：指導方針](../modeling/uml-activity-diagrams-guidelines.md)。  
   
 ## <a name="properties-of-elements"></a>項目屬性  
   
 |         屬性         |        預設         |                               項目                               |                                                                                                                                                                描述                                                                                                                                                                 |
 |--------------------------|------------------------|---------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|         **名稱**         |     預設名稱     |                                 全部                                 |                                                                                                                                                          識別項目。                                                                                                                                                           |
-|    **限定的名稱**    |    封裝::名稱     |                                 全部                                 |                                                                                                                     唯一識別該項目。 前面加上含有該項目之套件的合格名稱。                                                                                                                     |
-|      **工作項目**      |      0 associated      |                                 全部                                 |                                                                                與此項目相關聯的工作項目數。 若要關聯工作項目，請參閱[連結模型項目和工作項目](../modeling/link-model-elements-and-work-items.md)。                                                                                |
-|     **描述**      |         (無)         |                                 全部                                 |                                                                                                                                             您可以在這裡設定項目的一般注意事項。                                                                                                                                             |
-|        **Color**         | (類型的預設) |                                 全部                                 |                                                                                                                                                          圖案的色彩。                                                                                                                                                           |
+|         **名稱**         |     預設名稱     |                                 All                                 |                                                                                                                                                          識別項目。                                                                                                                                                           |
+|    **限定的名稱**    |    封裝::名稱     |                                 All                                 |                                                                                                                     唯一識別該項目。 前面加上含有該項目之套件的合格名稱。                                                                                                                     |
+|      **工作項目**      |      0 associated      |                                 All                                 |                                                                                與此項目相關聯的工作項目數。 若要關聯工作項目，請參閱[連結模型項目和工作項目](../modeling/link-model-elements-and-work-items.md)。                                                                                |
+|     **描述**      |         (無)         |                                 All                                 |                                                                                                                                             您可以在這裡設定項目的一般注意事項。                                                                                                                                             |
+|        **Color**         | (類型的預設) |                                 All                                 |                                                                                                                                                          圖案的色彩。                                                                                                                                                           |
 |         **本文**         |         (無)         |                               動作                                |                                                                                                                                                      詳細地指定動作。                                                                                                                                                       |
 |       **Language**       |         (無)         |                               動作                                |                                                                                                                                                  內容中運算式的語言。                                                                                                                                                   |
 | **本機後置條件** |         (無)         |         動作、傳送、接受、呼叫行為、呼叫作業         |                                                                                                                          執行結束時必須滿足的條件約束。 藉由動作所達成的目標。                                                                                                                          |

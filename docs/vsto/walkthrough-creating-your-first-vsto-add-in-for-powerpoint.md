@@ -16,11 +16,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 48b69b90c8ede6bfba4d388f547742de6d92cd7f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60048407"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62981238"
 ---
 # <a name="walkthrough-create-your-first-vsto-add-in-for-powerpoint"></a>逐步解說：您第一個 VSTO 增益集建立 powerpoint
   本逐步解說會示範如何建立 Microsoft Office PowerPoint 的 VSTO 增益集。 不論開啟哪一份簡報，您在這類方案中建立的功能都可供應用程式本身使用。 如需詳細資訊，請參閱 < [Office 方案開發概觀&#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)。

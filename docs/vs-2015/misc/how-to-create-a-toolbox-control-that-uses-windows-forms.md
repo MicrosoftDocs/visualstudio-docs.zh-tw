@@ -11,18 +11,18 @@ helpviewer_keywords:
 ms.assetid: abbd3c3c-3a6e-4539-bd6c-a5891dead234
 caps.latest.revision: 12
 manager: jillfra
-ms.openlocfilehash: a2b51b8f07a1cc049e4761001bfea754b6ca1819
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 33b4d8f1932429838f701df1f6ffaaceef321c4e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60105639"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63442926"
 ---
 # <a name="how-to-create-a-toolbox-control-that-uses-windows-forms"></a>HOW TO：建立使用 Windows Forms 工具箱控制項
 隨附於 [!INCLUDE[vssdk_dev11_long](../includes/vssdk-dev11-long-md.md)] 的 [WPF 工具箱控制項] 範本，可讓您建立在安裝擴充功能時會自動加入 [工具箱]  的 Windows Forms 控制項。 本主題會示範如何使用範本建立可散發給其他使用者的 [工具箱]  控制項。  
   
 > [!NOTE]
->  若要了解如何下載 Visual Studio SDK，請參閱 MSDN 網站上的 [Visual Studio 擴充性開發人員中心](http://go.microsoft.com/fwlink/?linkid=121964) 。  
+> 若要了解如何下載 Visual Studio SDK，請參閱 MSDN 網站上的 [Visual Studio 擴充性開發人員中心](http://go.microsoft.com/fwlink/?linkid=121964) 。  
   
 ## <a name="creating-a-toolbox-control"></a>建立 [工具箱] 控制項  
  請使用 [Windows Forms 工具箱控制項] 範本建立專案，然後在設計工具中建置使用者介面 (UI)。  

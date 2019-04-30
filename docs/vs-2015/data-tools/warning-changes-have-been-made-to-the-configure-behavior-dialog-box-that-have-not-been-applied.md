@@ -10,11 +10,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: e631f73a6714cf26b55cf9907095fc322467d3cd
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60053893"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62558692"
 ---
 # <a name="warning-changes-have-been-made-to-the-configure-behavior-dialog-box-that-have-not-been-applied"></a>警告。 尚未套用的設定行為對話方塊已經變更了
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

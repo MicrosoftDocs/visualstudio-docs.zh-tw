@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: c33fff3d8b5bd30ecec1b566e550d14e4cb68c11
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56679576"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62925800"
 ---
 # <a name="expression-evaluator"></a>運算式評估工具
 運算式評估工具 (EE) 檢查來剖析，並在執行階段評估變數和運算式語言的語法，讓 IDE 處於中斷模式時，使用者可以檢視。

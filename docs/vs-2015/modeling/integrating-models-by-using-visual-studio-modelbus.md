@@ -9,12 +9,12 @@ caps.latest.revision: 28
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 4530b12ff3c5fa05d63d845cf4d364d2c238ff77
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: e9f0a185ce4f78a81d1ed806e38b102296093f48
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60041285"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441012"
 ---
 # <a name="integrating-models-by-using-visual-studio-modelbus"></a>使用 Visual Studio Modelbus 整合模型
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -24,7 +24,7 @@ ms.locfileid: "60041285"
  ModelBus 可讓您建立模型或模型內特定項目的唯一參考。 這個參考可以儲存在模型外，例如儲存在另一個模型的項目中。 在此情況下，工具需要取得項目的存取權，模型匯流排基礎結構會載入適當的模型並傳回項目。 如有需要，您可以向使用者顯示模型。 如果無法從先前的位置存取檔案，ModelBus 會請使用者尋找檔案。 如果使用者找到檔案，ModelBus 會修正該檔案的所有參考。
 
 > [!NOTE]
->  在 ModelBus 的目前 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 實作中，連結的模型必須是相同 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 方案中的項目。
+> 在 ModelBus 的目前 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 實作中，連結的模型必須是相同 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 方案中的項目。
 
  如需其他資訊和範例程式碼，請參閱：
 
@@ -130,7 +130,7 @@ ms.locfileid: "60041285"
 5. 按一下  **確定**，然後按一下**轉換所有範本**在 方案總管 工具列中。
 
     > [!WARNING]
-    >  如果您尚未選取有效的模型或實體，[確定] 按鈕即使可能顯示為已啟用，也不會有任何作用。
+    > 如果您尚未選取有效的模型或實體，[確定] 按鈕即使可能顯示為已啟用，也不會有任何作用。
 
 6. 如果您指定目標類型清單 (例如 Company.FamilyTree.Person)，則必須將組件參考加入至您的 DSL 專案，並參考目標 DSL 的 DLL (例如 Company.FamilyTree.Dsl.dll)。
 
@@ -143,7 +143,7 @@ ms.locfileid: "60041285"
 3. 在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 之實驗執行個體的偵錯專案中，加入每個 DSL 執行個體的檔案。
 
     > [!NOTE]
-    >  只有在模型是相同 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 方案中的項目時，[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ModelBus 才能解析這些模型的參考。 例如，您無法建立針對檔案系統其他部分之模型檔的參考。
+    > 只有在模型是相同 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 方案中的項目時，[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ModelBus 才能解析這些模型的參考。 例如，您無法建立針對檔案系統其他部分之模型檔的參考。
 
 4. 在已公開的 DSL 執行個體中建立一些項目和連結，並加以儲存。
 
@@ -163,7 +163,7 @@ ms.locfileid: "60041285"
  若要建立項目參考，您需要模型檔的配接器，以及所要參考的項目。
 
 > [!NOTE]
->  透過 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ModelBus，您可以建立僅針對相同 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 方案中之項目的參考。
+> 透過 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ModelBus，您可以建立僅針對相同 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 方案中之項目的參考。
 
 ### <a name="import-the-exposed-dsl-assemblies"></a>匯入已公開的 DSL 組件
  在使用專案中，將專案參考加入至 DSL 和已公開 DSL 的 ModelBusAdapter 組件。
@@ -197,7 +197,7 @@ using System.Linq;
  您可以從 AdapterManager 取得配接器，以提供模型內個別項目的存取權。
 
 > [!NOTE]
->  您必須在配接器使用完畢之後加以處置。 使用 `using` 陳述式是達成此目標的最便利方式。 下列範例將說明這點。
+> 您必須在配接器使用完畢之後加以處置。 使用 `using` 陳述式是達成此目標的最便利方式。 下列範例將說明這點。
 
 ```
 // The file path of a model instance of the FamilyTree DSL:

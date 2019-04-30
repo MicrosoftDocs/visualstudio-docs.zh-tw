@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: e02bfd8b528c484518816589f4f3e0e19bfa8c94
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56687519"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62913175"
 ---
 # <a name="roadmap-for-extending-the-debugger"></a>擴充偵錯工具的藍圖
 這份文件提供用於擴充的指南和參考資訊[!INCLUDE[vs_current_short](../../code-quality/includes/vs_current_short_md.md)]偵錯工具與[!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)]。
@@ -25,7 +25,7 @@ ms.locfileid: "56687519"
 
  您的編譯器和其輸出會決定設定您的產品中的偵錯的必要條件。 如果您的編譯器：
 
-- 以 Windows 原生作業系統為目標，並將寫入 *。PDB*檔案中，您可以使用偵錯程式原生程式碼的偵錯引擎 (DE)，已整合至[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]。 您不需要實作 DE 或運算式的評估工具。 運算式評估工具是針對 c + + 程式設計語言的語法所撰寫。
+- 以 Windows 原生作業系統為目標，並將寫入 *。PDB*檔案中，您可以使用偵錯程式原生程式碼的偵錯引擎 (DE)，已整合至[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]。 您不需要實作 DE 或運算式的評估工具。 運算式評估工具的語法撰寫C++程式設計語言。
 
 - 產生的 Microsoft intermediate language (MSIL) 的輸出，您可以使用 managed 程式碼的偵錯引擎 DE，這也會整合到偵錯程式[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]。 因此，您只需要實作的運算式評估工具。 為您提供的範例運算式評估工具。 如需詳細資訊，請參閱下列主題：
 

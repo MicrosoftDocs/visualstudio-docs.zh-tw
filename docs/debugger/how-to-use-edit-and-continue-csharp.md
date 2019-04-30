@@ -1,5 +1,5 @@
 ---
-title: 如何： 使用 編輯後繼續 (C#) |Microsoft Docs
+title: HOW TO：使用 編輯後繼續 (C#) |Microsoft Docs
 ms.date: 10/04/2018
 ms.topic: conceptual
 dev_langs:
@@ -16,13 +16,13 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: 515068f29045ef92ee7d2323f752ba2185f28cac
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56696346"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62906267"
 ---
-# <a name="how-to-use-edit-and-continue-c"></a>如何：使用編輯後繼續 (C#)
+# <a name="how-to-use-edit-and-continue-c"></a>HOW TO：使用編輯後繼續 (C#)
 編輯後繼續，您可以進行，並將變更套用至您的程式碼在中斷模式中，偵錯時，而不需要停止並重新啟動偵錯工作階段。
 
 編輯後繼續C#會在自動發生，當您在中斷模式中進行程式碼變更，然後繼續使用偵錯**繼續**，**步驟**，或**設定下一個陳述式**，或評估在偵錯工具視窗中的函式。

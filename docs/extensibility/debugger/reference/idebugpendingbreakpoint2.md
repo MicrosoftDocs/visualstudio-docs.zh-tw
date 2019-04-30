@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 816fad53554675e7f29cef838d4ea24e154dca8c
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56713304"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62871930"
 ---
 # <a name="idebugpendingbreakpoint2"></a>IDebugPendingBreakpoint2
 此介面表示中斷點已繫結至程式碼位置。
@@ -54,7 +54,7 @@ IDebugPendingBreakpoint2 : IUnknown
 ## <a name="remarks"></a>備註
  `IDebugPendingBreakpoint2` 可以視為將中斷點繫結至可套用至一或多個程式的程式碼所需的所有必要資訊的提供者。
 
- 暫止中斷點可能會產生一個以上的繫結的中斷點。 例如，c + + 樣式範本中的中斷點可能會產生每個唯一的執行個體，該範本的繫結的中斷點。
+ 暫止中斷點可能會產生一個以上的繫結的中斷點。 例如，在中斷點C++-樣式範本可能會產生每個唯一的執行個體，該範本的繫結的中斷點。
 
 ## <a name="requirements"></a>需求
  標頭： msdbg.h

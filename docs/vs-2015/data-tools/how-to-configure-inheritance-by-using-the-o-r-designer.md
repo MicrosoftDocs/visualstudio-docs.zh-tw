@@ -9,12 +9,12 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 9c4c8cea0b29994bb880dd0d93832da0e875cc56
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: e8a0b51a9fbfb009087e0cd5600d9c480c8d433b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60115597"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63386794"
 ---
 # <a name="how-to-configure-inheritance-by-using-the-or-designer"></a>HOW TO：使用 O/R 設計工具設定繼承
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,12 +36,12 @@ ms.locfileid: "60115597"
 4. 在 [工具箱] 的 [物件關聯式設計工具] 索引標籤中按一下 [繼承]，然後按一下子類別 (重新命名的資料表)，將其連線至基底類別。  
   
     > [!NOTE]
-    >  按一下 [工具箱] 中的 [繼承] 項目，然後放開滑鼠按鍵，按一下在步驟 3 中建立的第二個類別複本，再按一下在步驟 2 中建立的第一個類別。 繼承線的箭號會指向第一個類別。  
+    > 按一下 [工具箱] 中的 [繼承] 項目，然後放開滑鼠按鍵，按一下在步驟 3 中建立的第二個類別複本，再按一下在步驟 2 中建立的第一個類別。 繼承線的箭號會指向第一個類別。  
   
 5. 在每個類別中，刪除任何不想要顯示而且沒有用於關聯的物件屬性。 如果您嘗試刪除用於關聯的物件屬性，您會收到錯誤：[屬性\<屬性名稱 > 不能刪除，因為它正參與關聯\<關聯名稱 >](../data-tools/the-property-property-name-cannot-be-deleted-because-it-is-participating-in-the-association-association-name.md)。  
   
     > [!NOTE]
-    >  因為衍生類別會繼承其基底類別中定義的屬性，所以這兩個類別中不可以定義相同的資料行  (資料行是以屬性形式實作)。在基底類別的屬性上設定 [繼承修飾詞]，就可以啟用衍生類別中的資料行建立作業。 如需詳細資訊，請參閱[不在組建中：覆寫屬性和方法](http://msdn.microsoft.com/2167e8f5-1225-4b13-9ebd-02591ba90213)。  
+    > 因為衍生類別會繼承其基底類別中定義的屬性，所以這兩個類別中不可以定義相同的資料行  (資料行是以屬性形式實作)。在基底類別的屬性上設定 [繼承修飾詞]，就可以啟用衍生類別中的資料行建立作業。 如需詳細資訊，請參閱[不在組建中：覆寫屬性和方法](http://msdn.microsoft.com/2167e8f5-1225-4b13-9ebd-02591ba90213)。  
   
 6. 選取 [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]中的繼承線。  
   

@@ -15,11 +15,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 1abef0067a58225eea6110d4cc2f7257bc605463
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55916566"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62808383"
 ---
 # <a name="ca2001-avoid-calling-problematic-methods"></a>CA2001:避免呼叫有問題的方法
 
@@ -44,7 +44,7 @@ ms.locfileid: "55916566"
 |<xref:System.Threading.Thread.Resume%2A?displayProperty=fullName><br /><br /> <xref:System.Threading.Thread.Suspend%2A?displayProperty=fullName>|Thread.Suspend 和 Thread.Resume 已被取代，因為其無法預期的行為。  使用中的其他類別<xref:System.Threading>命名空間，例如<xref:System.Threading.Monitor>， <xref:System.Threading.Mutex>，和<xref:System.Threading.Semaphore>，以同步處理執行緒或保護資源。|
 |<xref:System.Runtime.InteropServices.SafeHandle.DangerousGetHandle%2A?displayProperty=fullName>|DangerousGetHandle 方法會有安全性風險，因為它可以傳回不是有效的控制代碼。 請參閱<xref:System.Runtime.InteropServices.SafeHandle.DangerousAddRef%2A>而<xref:System.Runtime.InteropServices.SafeHandle.DangerousRelease%2A>如需有關如何安全地使用 DangerousGetHandle 方法的方法。|
 |<xref:System.Reflection.Assembly.LoadFrom%2A?displayProperty=fullName><br /><br /> <xref:System.Reflection.Assembly.LoadFile%2A?displayProperty=fullName><br /><br /> <xref:System.Reflection.Assembly.LoadWithPartialName%2A?displayProperty=fullName>|這些方法可以從非預期的位置載入組件。 例如，請參閱 Suzanne Cook 的.NET CLR 筆記部落格文章[LoadFile vs。LoadFrom](http://go.microsoft.com/fwlink/?LinkId=164450)並[選擇繫結內容](http://go.microsoft.com/fwlink/?LinkId=164451)如需載入的組件的方法資訊。|
-|[CoSetProxyBlanket](http://go.microsoft.com/fwlink/?LinkID=169250) (Ole32)<br /><br /> [CoInitializeSecurity](http://go.microsoft.com/fwlink/?LinkId=169255) (Ole32)|使用者程式碼會啟動 managed 處理序中執行時，就無法再以可靠地呼叫 CoSetProxyBlanket。 Common language runtime (CLR) 會初始化動作，可能會防止使用者 P/Invoke 成功。<br /><br /> 如果您沒有 CoSetProxyBlanket 呼叫的受管理的應用程式，我們建議您啟動程序，使用原生程式碼 （c + +） 的可執行檔、 原生程式碼中，呼叫 CoSetProxyBlanket，然後啟動處理序中的 受管理的程式碼應用程式。 （請務必指定的執行階段版本號碼）。|
+|[CoSetProxyBlanket](http://go.microsoft.com/fwlink/?LinkID=169250) (Ole32)<br /><br /> [CoInitializeSecurity](http://go.microsoft.com/fwlink/?LinkId=169255) (Ole32)|使用者程式碼會啟動 managed 處理序中執行時，就無法再以可靠地呼叫 CoSetProxyBlanket。 Common language runtime (CLR) 會初始化動作，可能會防止使用者 P/Invoke 成功。<br /><br /> 如果您沒有 CoSetProxyBlanket 呼叫的受管理的應用程式，我們建議您在使用原生程式碼啟動程序 (C++) 的可執行檔 CoSetProxyBlanket 呼叫原生程式碼，然後啟動處理序中的 受管理的程式碼應用程式。 （請務必指定的執行階段版本號碼）。|
 
 ## <a name="how-to-fix-violations"></a>如何修正違規
 

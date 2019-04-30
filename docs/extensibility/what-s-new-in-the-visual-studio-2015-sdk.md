@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a67b2e1d9cbbad4a9b3426d264e6fecf8623e5a7
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 4d0136c1e2f27e3053733b32d536e86684f62c39
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60105081"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444930"
 ---
 # <a name="what39s-new-in-the-visual-studio-2015-sdk"></a>什麼&#39;的新功能 Visual Studio 2015 SDK
 Visual Studio SDK for Visual Studio 2015 中，更新，Visual Studio 2015 和 Visual Studio 2017 具有下列全新和更新功能。
@@ -57,9 +57,9 @@ Visual Studio SDK for Visual Studio 2015 中，更新，Visual Studio 2015 和 V
  VS SDK 項目範本用於其參考的 NuGet，及建置工具，因此您會取得預設 NuGet 的優點。
 
 > [!NOTE]
->  您可以繼續使用您的專案中安裝 VS SDK 參考組件 (位於\<Visual Studio 安裝位置 > \ VSSDK\VisualStudioIntegration\Common\Assemblies)，不是需要現有的擴充性專案若要使用 NuGet 套件升級。  專案**參考] / [加入參考**對話方塊會繼續使用已安裝的 VS SDK 參考組件。
+> 您可以繼續使用您的專案中安裝 VS SDK 參考組件 (位於\<Visual Studio 安裝位置 > \ VSSDK\VisualStudioIntegration\Common\Assemblies)，不是需要現有的擴充性專案若要使用 NuGet 套件升級。  專案**參考] / [加入參考**對話方塊會繼續使用已安裝的 VS SDK 參考組件。
 >
->  如果您想要修改您現有的專案，以使用 NuGet，請參閱[How to:將 VSPackages 移轉至 Visual Studio 2015](../extensibility/how-to-migrate-extensibility-projects-to-visual-studio-2015.md)具有擴充性專案更新至 NuGet 套件的區段。
+> 如果您想要修改您現有的專案，以使用 NuGet，請參閱[How to:將 VSPackages 移轉至 Visual Studio 2015](../extensibility/how-to-migrate-extensibility-projects-to-visual-studio-2015.md)具有擴充性專案更新至 NuGet 套件的區段。
 
 ## <a name="light-bulbs"></a>燈泡
  其中一種最令人興奮的新方式撰寫延伸模組程式碼是由 Roslyn 專案中提供。 如需詳細資訊，請參閱 < [Roslyn](https://github.com/dotnet/Roslyn)。

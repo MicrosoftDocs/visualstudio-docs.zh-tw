@@ -19,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ca0c160cb9a1cb6f76f64293db7858c0609d2d5d
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 46fa903b0025279fec3b33d3c14ce1661d076926
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60069974"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438675"
 ---
 # <a name="walkthrough-call-code-from-vba-in-a-visual-basic-project"></a>逐步解說：在 Visual Basic 專案中，從 VBA 呼叫程式碼
   本逐步解說示範如何從文件中的 Visual Basic for Applications (VBA) 程式碼，呼叫 Microsoft Office Word 文件層級自訂中的方法。 這個程序和三個基本步驟相關：將方法加入 `ThisDocument` 主項目類別、將方法公開至 VBA 程式碼，然後從文件中的 VBA 程式碼呼叫此方法。
@@ -46,7 +46,7 @@ ms.locfileid: "60069974"
 - 從 VBA 程式碼呼叫方法。
 
 > [!NOTE]
->  在下列指示的某些 Visual Studio 使用者介面項目中，您的電腦可能會顯示不同的名稱或位置。 您所擁有的 Visual Studio 版本以及使用的設定會決定這些項目。 如需詳細資訊，請參閱[將 Visual Studio IDE 個人化](../ide/personalizing-the-visual-studio-ide.md)。
+> 在下列指示的某些 Visual Studio 使用者介面項目中，您的電腦可能會顯示不同的名稱或位置。 您所擁有的 Visual Studio 版本以及使用的設定會決定這些項目。 如需詳細資訊，請參閱[將 Visual Studio IDE 個人化](../ide/personalizing-the-visual-studio-ide.md)。
 
 ## <a name="prerequisites"></a>必要條件
  您需要下列元件才能完成此逐步解說：
@@ -69,7 +69,7 @@ ms.locfileid: "60069974"
 3. 按一下 [功能區] 上的 [開發人員]  索引標籤。
 
     > [!NOTE]
-    >  如果 [開發人員]  索引標籤沒有顯示，您必須先使其顯示。 如需詳細資訊，請參閱[如何：在功能區顯示開發人員索引標籤](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md)。
+    > 如果 [開發人員]  索引標籤沒有顯示，您必須先使其顯示。 如需詳細資訊，請參閱[如何：在功能區顯示開發人員索引標籤](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md)。
 
 4. 在 [程式碼]  群組中，按一下 [Visual Basic] 。
 
@@ -180,7 +180,7 @@ ms.locfileid: "60069974"
  您現在可以從文件中的 VBA 程式碼呼叫 `CreateTable` 方法。
 
 > [!NOTE]
->  在這個逐步解說中，您會在偵錯專案時將 VBA 程式碼加入文件。 您加入此文件的 VBA 程式碼將會在下一次建置專案時被覆寫，因為 Visual Studio 會將組建輸出資料夾中的文件取代為來自主要專案資料夾的文件複本。 如果您要儲存 VBA 程式碼，可以將它複製到專案資料夾的文件中。 如需詳細資訊，請參閱 <<c0> [ 合併 VBA 和文件層級自訂](../vsto/combining-vba-and-document-level-customizations.md)。
+> 在這個逐步解說中，您會在偵錯專案時將 VBA 程式碼加入文件。 您加入此文件的 VBA 程式碼將會在下一次建置專案時被覆寫，因為 Visual Studio 會將組建輸出資料夾中的文件取代為來自主要專案資料夾的文件複本。 如果您要儲存 VBA 程式碼，可以將它複製到專案資料夾的文件中。 如需詳細資訊，請參閱 <<c0> [ 合併 VBA 和文件層級自訂](../vsto/combining-vba-and-document-level-customizations.md)。
 
 ### <a name="to-call-the-method-from-vba-code"></a>從 VBA 程式碼呼叫方法
 

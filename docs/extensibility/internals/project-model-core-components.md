@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 3e7139b92467c0b6622accce9530abf3e75fcea0
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56636147"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62859607"
 ---
 # <a name="project-model-core-components"></a>專案模型的核心元件
 下表會探討專案模型。 這些表格會顯示在模型中的介面和特定物件相關聯的服務中所識別的服務與介面的簡短描述。 此外，資料表將詳細說明其他在專案建立及維護，根據您的特定專案類型的需求中是選擇性的介面。
@@ -102,6 +102,6 @@ ms.locfileid: "56636147"
 ## <a name="see-also"></a>另請參閱
 - <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>
 - [檢查清單：建立新的專案類型](../../extensibility/internals/checklist-creating-new-project-types.md)
-- [不在組建中：使用 HierUtil7 專案類別來實作專案類型 （c + +）](https://msdn.microsoft.com/library/a5c16a09-94a2-46ef-87b5-35b815e2f346)
+- [不在組建中：使用 HierUtil7 專案類別來實作專案類型 (C++)](https://msdn.microsoft.com/library/a5c16a09-94a2-46ef-87b5-35b815e2f346)
 - [支援符號瀏覽工具](../../extensibility/internals/supporting-symbol-browsing-tools.md)
 - [專案模型的元素](../../extensibility/internals/elements-of-a-project-model.md)

@@ -20,12 +20,12 @@ caps.latest.revision: 21
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: ba3ee5d8ee04b4a0f2cd360d6b213c69c6f8d1bc
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: cb1747341de65a5f642790410c35eee35620575e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58945519"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63442706"
 ---
 # <a name="how-to-stop-code-changes"></a>HOW TO：停止程式碼變更
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ ms.locfileid: "58945519"
 當 [編輯後繼續] 正在套用程式碼變更時，您可以停止該作業。  
   
 > [!CAUTION]
->  在 Managed 程式碼中停止程式碼變更，可能會產生非預期的結果。 一般來說，將變更套用至 Managed 程式碼的過程很快，因此不太需要在 Managed 程式碼中停止程式碼變更。  
+> 在 Managed 程式碼中停止程式碼變更，可能會產生非預期的結果。 一般來說，將變更套用至 Managed 程式碼的過程很快，因此不太需要在 Managed 程式碼中停止程式碼變更。  
   
 ### <a name="to-stop-applying-code-changes"></a>若要停止套用程式碼變更  
   

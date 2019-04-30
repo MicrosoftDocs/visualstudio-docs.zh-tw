@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: f01784cd21bbc0a29a6216525e626a8fa992e0ba
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56695514"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62856596"
 ---
 # <a name="language-services-and-the-core-editor"></a>語言服務及核心編輯器
 在 Visual Studio 中的編輯器的常見問題與服務相關聯的語言。 除此之外，語言服務會提供語法著色、 陳述式完成、 IntelliSense 和文字格式設定。
@@ -26,7 +26,7 @@ ms.locfileid: "56695514"
  如需詳細資訊，請參閱 <<c0> [ 判斷哪一個編輯器在專案中開啟檔案](../extensibility/internals/determining-which-editor-opens-a-file-in-a-project.md)。
 
 ## <a name="language-services-and-the-core-editor"></a>語言服務及核心編輯器
- 藉由實作語言服務，您可以控制文件檢視中顯示資料的方式。 語言服務會提供資訊和給定的語言，例如 Visual c + + 特有的行為。 當您建立的文字緩衝區，並判斷您要開啟的文件的副檔名時，文字緩衝區會判斷登錄機碼，從這個檔案名稱副檔名相關聯的語言服務**HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Editors\\{YourLanguageService GUID} \Extensions**。 標準的 VSPackage，載入程序，然後載入 VSPackage，並建立您的語言服務的執行個體。
+ 藉由實作語言服務，您可以控制文件檢視中顯示資料的方式。 語言服務提供的資訊，以及指定的語言，例如視覺效果的特定行為的C++。 當您建立的文字緩衝區，並判斷您要開啟的文件的副檔名時，文字緩衝區會判斷登錄機碼，從這個檔案名稱副檔名相關聯的語言服務**HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Editors\\{YourLanguageService GUID} \Extensions**。 標準的 VSPackage，載入程序，然後載入 VSPackage，並建立您的語言服務的執行個體。
 
  基本語言服務是由下列圖所示。
 

@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: b68a2a7105fba7bfb6f1240c6eec8c6ae497bed6
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56612929"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62839195"
 ---
 # <a name="idiasessiongetglobalscope"></a>IDiaSession::get_globalScope
 擷取至全域範圍的參考。
@@ -38,7 +38,7 @@ HRESULT get_globalScope ( 
 ## <a name="return-value"></a>傳回值
  如果成功，則傳回`S_OK`; 否則傳回錯誤碼。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [Exe](../../debugger/debug-interface-access/exe.md)
 - [IDiaSession](../../debugger/debug-interface-access/idiasession.md)
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

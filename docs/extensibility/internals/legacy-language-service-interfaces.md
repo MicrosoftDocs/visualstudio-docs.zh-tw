@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: c5c907885e91cc3b7765ff94528a30a84b17ee46
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56631402"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62909561"
 ---
 # <a name="legacy-language-service-interfaces"></a>舊版語言服務介面
 針對任何特定的程式設計語言，可以有只有一個執行個體的語言服務一次。 不過，單一語言服務可以提供多個編輯器。

@@ -12,11 +12,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: d09954409baccfdc5d9eb083a15bd02f5d16cb85
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58941214"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62785254"
 ---
 # <a name="dowhile-activity-designer"></a>DoWhile 活動設計工具
 <xref:System.Activities.Statements.DoWhile>活動會在執行中包含的活動及其<xref:System.Activities.Statements.DoWhile.Body%2A>至少一次，直到指定的條件評估為為止**false**。 如果您需要包含在迴圈主體中的活動執行零次或多次，請改用 <xref:System.Activities.Statements.While> 活動。  

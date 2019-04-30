@@ -20,12 +20,12 @@ caps.latest.revision: 39
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 01bfaf5ee9143a3122f779ab8292210b90da771f
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: dd4043b34cc809af92fc5bbd1c44e322261096e9
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59650392"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437996"
 ---
 # <a name="signing-page-project-designer"></a>專案設計工具、簽署頁
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -86,7 +86,7 @@ ms.locfileid: "59650392"
  請注意，延遲簽署專案將無法執行，也無法進行偵錯。 不過，您可以搭配使用 [Sn.exe (強式名稱工具)](http://msdn.microsoft.com/library/c1d2b532-1b8e-4c7a-8ac5-53b801135ec6) 與 `-Vr` 選項，以在開發期間略過驗證。  
   
 > [!NOTE]
->  當您簽署組件時，不一定可以存取私密金鑰。 例如，組織可能會有開發人員無法每日存取的嚴密保護金鑰組。 公開金鑰可能可以使用，但只有少數人才能存取私密金鑰。 在這類情況下，您可以使用「延遲」或「部分簽署」提供公開金鑰，並將私密金鑰的新增延遲到交付組件時。  
+> 當您簽署組件時，不一定可以存取私密金鑰。 例如，組織可能會有開發人員無法每日存取的嚴密保護金鑰組。 公開金鑰可能可以使用，但只有少數人才能存取私密金鑰。 在這類情況下，您可以使用「延遲」或「部分簽署」提供公開金鑰，並將私密金鑰的新增延遲到交付組件時。  
   
 ## <a name="see-also"></a>另請參閱  
  [專案屬性參考](../../ide/reference/project-properties-reference.md)   

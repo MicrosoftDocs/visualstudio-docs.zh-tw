@@ -16,11 +16,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: a31b56b4b2d568b3bc3fd59f876f5052b9f6faff
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60063994"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62946364"
 ---
 # <a name="circular-reference-in-value-argument-not-supported"></a>不支援數值引數中的循環參考
 已嘗試叫用`JSON.stringify`不是有效的值。 `value`引數、 陣列或物件，包含循環參考。  

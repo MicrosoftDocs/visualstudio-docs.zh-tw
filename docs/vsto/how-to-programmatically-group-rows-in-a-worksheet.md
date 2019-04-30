@@ -20,12 +20,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c2498029b5570a1576f62bcf042a7b87f856f3de
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 269ecdb67fe58a5ad2aff6af63ba6ea45647811a
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60076650"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63412623"
 ---
 # <a name="how-to-programmatically-group-rows-in-a-worksheet"></a>HOW TO：以程式設計方式在工作表中的群組資料列
   您可以群組一個或多個完整的資料列。 若要建立群組時的工作表中，使用<xref:Microsoft.Office.Tools.Excel.NamedRange>控制項或原生的 Excel 範圍物件。
@@ -43,7 +43,7 @@ ms.locfileid: "60076650"
      [!code-vb[Trin_VstcoreExcelAutomation#32](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#32)]
 
     > [!NOTE]
-    >  若要取消群組的資料列，請呼叫<xref:Microsoft.Office.Tools.Excel.NamedRange.Ungroup%2A>方法。
+    > 若要取消群組的資料列，請呼叫<xref:Microsoft.Office.Tools.Excel.NamedRange.Ungroup%2A>方法。
 
 ## <a name="use-native-excel-ranges"></a>使用原生 Excel 範圍
  此程式碼假設您有三個名為的 Excel 範圍`data2001`， `data2002`，和`dataAll`工作表上。
@@ -56,7 +56,7 @@ ms.locfileid: "60076650"
      [!code-vb[Trin_VstcoreExcelAutomation#33](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#33)]
 
     > [!NOTE]
-    >  若要取消群組的資料列，請呼叫<xref:Microsoft.Office.Interop.Excel.Range.Ungroup%2A>方法。
+    > 若要取消群組的資料列，請呼叫<xref:Microsoft.Office.Interop.Excel.Range.Ungroup%2A>方法。
 
 ## <a name="see-also"></a>另請參閱
 - [使用工作表](../vsto/working-with-worksheets.md)

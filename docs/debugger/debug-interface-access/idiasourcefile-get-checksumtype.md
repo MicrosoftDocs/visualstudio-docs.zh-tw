@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 35e5719d285e9e99e5f7429685fa04a2c6d7f3ab
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56646391"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62832275"
 ---
 # <a name="idiasourcefilegetchecksumtype"></a>IDiaSourceFile::get_checksumType
 擷取的總和檢查碼類型。
@@ -41,7 +41,7 @@ HRESULT get_checksumType ( 
 ## <a name="remarks"></a>備註
  總和檢查碼型別是可以對應至總和檢查碼演算法的值。 例如，標準的 PDB 檔案格式可以通常具有下列值之一：
 
-|總和檢查碼類型|CryptoAPI 標籤|說明|
+|總和檢查碼類型|CryptoAPI 標籤|描述|
 |-------------------|---------------------|-----------------|
 |0|\<無>|不存在的總和檢查碼。|
 |1|`CALG_MD5`|使用 MD5 雜湊演算法產生的總和檢查碼。|
@@ -51,6 +51,6 @@ HRESULT get_checksumType ( 
 
  若要取得實際的總和檢查碼位元組，原始程式檔，請呼叫[idiasourcefile:: Get_checksum](../../debugger/debug-interface-access/idiasourcefile-get-checksum.md)方法。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md)
 - [IDiaSourceFile::get_checksum](../../debugger/debug-interface-access/idiasourcefile-get-checksum.md)

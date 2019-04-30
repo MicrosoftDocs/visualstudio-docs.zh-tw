@@ -17,11 +17,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: bfaf520658edfdcf5b80fb89f89489a47c7fffa3
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56695579"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62852691"
 ---
 # <a name="debugger-project-settings"></a>偵錯工具專案設定
 某些專案設定也會影響偵錯。 這些設定可以決定像是偵錯工具要查看哪些目錄、用於啟動程式的命令和命令引數，以及為程式建立的偵錯資訊類型等行為。 您可以在 [ **屬性頁** ] 對話方塊中變更這些設定。
@@ -29,11 +29,11 @@ ms.locfileid: "56695579"
  本節說明可以使用的選項，以及設定這些選項的方式。
 
 ## <a name="in-this-section"></a>本節內容
- [如何： 指定偵錯工具設定](../debugger/how-to-specify-debugger-settings.md)說明中的偵錯工具設定**選項** 對話方塊。
+ [如何：指定偵錯工具設定](../debugger/how-to-specify-debugger-settings.md)說明中的偵錯工具設定**選項** 對話方塊。
 
- [如何： 設定偵錯和發行組態](../debugger/how-to-set-debug-and-release-configurations.md)描述**偵錯**並**發行**設定，以及兩者間切換。
+ [如何：設定偵錯和發行組態](../debugger/how-to-set-debug-and-release-configurations.md)描述**偵錯**並**發行**設定，以及兩者間切換。
 
- [專案 [c + + 偵錯組態設定](../debugger/project-settings-for-a-cpp-debug-configuration.md)清單中可用的屬性**屬性頁**C 或 c + + 專案] 對話方塊。
+ [專案設定為C++偵錯組態](../debugger/project-settings-for-a-cpp-debug-configuration.md)中可用的屬性會列出**屬性頁**對話方塊中，適用於 C 或C++專案。
 
  [專案設定為C#偵錯組態](../debugger/project-settings-for-csharp-debug-configurations.md)中可用的屬性會列出**屬性頁**對話方塊的 C#專案。
 
@@ -48,5 +48,5 @@ ms.locfileid: "56695579"
 
  [偵錯工具設定和準備](../debugger/debugger-settings-and-preparation.md)說明與偵錯工具相關的屬性設定，以及進行偵錯與程式時所需的準備工作[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]偵錯工具。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
  [偵錯工具安全性](../debugger/debugger-security.md)

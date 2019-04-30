@@ -8,11 +8,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: f49ab8d3462877a28cf40aed519b71615b23f8d4
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55914067"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62856359"
 ---
 # <a name="t4-import-directive"></a>T4 匯入指示詞
 
@@ -43,7 +43,7 @@ The file contains: <#=  fileContent #>
 
   此外，如果使用自訂指示詞，指示詞處理器可能會自動匯入一些組件。
 
-  例如，如果撰寫特定領域語言 (DSL)，就不需要為下列命名空間撰寫 import 指示詞：
+  例如，如果撰寫網域指定的語言 (DSL)，就不需要為下列命名空間撰寫 import 指示詞：
 
 - `Microsoft.VisualStudio.Modeling`
 

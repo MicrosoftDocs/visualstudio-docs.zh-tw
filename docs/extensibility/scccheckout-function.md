@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 9304f0bdcb414da37e70df66eca470999a685735
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56706947"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62433301"
 ---
 # <a name="scccheckout-function"></a>SccCheckout 函式
 提供一份完整的檔案名稱，此函式取出它們的本機磁碟機。 註解適用於正在簽出的所有檔案。註解引數可以是`null`字串。

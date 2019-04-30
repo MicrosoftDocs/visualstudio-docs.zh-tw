@@ -12,12 +12,12 @@ caps.latest.revision: 40
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 449e273659df1e3b6846ff8e7e3d8d6943ba69f4
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: a4d158e3c624a63863e5a8305dd0b9b4b5ef10ea
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60079820"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444226"
 ---
 # <a name="add-commands-and-gestures-to-layer-diagrams"></a>將命令和軌跡加入分層圖
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,7 +27,7 @@ ms.locfileid: "60079820"
  您可以視需要在相同的 Visual Studio 專案中定義許多命令和軌跡處理常式。 您也可以將許多這類專案合併成單一 VSIX。 例如，您可以定義單一 VSIX，其中包含圖層指令、定義域專屬的語言以及 UML 圖表的命令。  
   
 > [!NOTE]
->  您也可以自訂架構驗證讓使用者原始程式碼與分層圖進行比較。 您應該要在個別的 Visual Studio 專案中定義架構驗證。 您可以將它加入相同的 VSIX，就像其他擴充功能一樣。 如需詳細資訊，請參閱 <<c0> [ 分層圖中加入自訂架構驗證](../modeling/add-custom-architecture-validation-to-layer-diagrams.md)。  
+> 您也可以自訂架構驗證讓使用者原始程式碼與分層圖進行比較。 您應該要在個別的 Visual Studio 專案中定義架構驗證。 您可以將它加入相同的 VSIX，就像其他擴充功能一樣。 如需詳細資訊，請參閱 <<c0> [ 分層圖中加入自訂架構驗證](../modeling/add-custom-architecture-validation-to-layer-diagrams.md)。  
   
 ## <a name="requirements"></a>需求  
  請參閱 [需求](../modeling/extend-layer-diagrams.md#prereqs)。  
@@ -65,7 +65,7 @@ ms.locfileid: "60079820"
 1. 在新的或現有的 Visual Studio 方案中建立類別庫專案。 在 [新增專案]  對話方塊中，按一下 [Visual C#]  ，然後按一下 [類別庫] 。 這個專案將會包含命令或軌跡處理常式類別。  
   
     > [!NOTE]
-    >  雖然您可以在單一類別庫中定義多個命令或軌跡處理常式類別，不過您應該在個別的類別庫中定義圖層驗證類別。  
+    > 雖然您可以在單一類別庫中定義多個命令或軌跡處理常式類別，不過您應該在個別的類別庫中定義圖層驗證類別。  
   
 2. 在您的方案中識別或建立 VSIX 專案。 VSIX 專案會包含名為 **source.extension.vsixmanifest**的檔案。 若要加入 VSIX 專案：  
   

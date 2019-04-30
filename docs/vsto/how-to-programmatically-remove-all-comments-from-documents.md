@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 78b73cfe13d2374afad22dd322a80fe69acfb838
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60068973"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62955828"
 ---
 # <a name="how-to-programmatically-remove-all-comments-from-documents"></a>HOW TO：以程式設計方式在文件中移除所有註解
   您可以使用 `DeleteAllComments` 方法，從 Microsoft Office Word 文件移除所有註解。

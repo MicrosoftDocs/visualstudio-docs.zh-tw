@@ -10,12 +10,12 @@ ms.assetid: 74900b9a-baef-432a-8231-4568fb5e19ad
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: e82c8b6268affc4fb473c799d973c66db69c111b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 7a0233873ba5d6ea2fca746f8e12f4bf693b79da
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60079041"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444065"
 ---
 # <a name="syntax-coloring-in-custom-editors"></a>自訂編輯器中的語法著色
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -54,7 +54,7 @@ Visual Studio 環境 SDK 編輯器，包括核心編輯器中，找出特定的�
 3. 使用所傳回的顏色標示資訊<xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer.ColorizeLine%2A>重新繪製，並顯示其文字。  
   
 > [!NOTE]
->  除了使用語言服務的色彩標示器，VSPackage 可以選擇使用一般用途的 Visual Studio 環境 SDK 文字著色機制。 如需有關這項機制的詳細資訊，請參閱 <<c0> [ 使用的字型和色彩](../extensibility/using-fonts-and-colors.md)。  
+> 除了使用語言服務的色彩標示器，VSPackage 可以選擇使用一般用途的 Visual Studio 環境 SDK 文字著色機制。 如需有關這項機制的詳細資訊，請參閱 <<c0> [ 使用的字型和色彩](../extensibility/using-fonts-and-colors.md)。  
   
 ## <a name="see-also"></a>另請參閱  
  [舊版語言服務中的語法著色](../extensibility/internals/syntax-coloring-in-a-legacy-language-service.md)   

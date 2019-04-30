@@ -20,11 +20,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: f73b67ac4268c04dfa9ff7ab020891623f528f9b
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56699245"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62851264"
 ---
 # <a name="edit-and-continue-visual-basic"></a>編輯後繼續 (Visual Basic)
 「編輯後繼續」是 [!INCLUDE [vbprvb](../code-quality/includes/vbprvb_md.md)] 偵錯的一個功能，當程式碼在中斷模式中執行時，這項功能可讓您變更程式碼。 套用程式碼編輯之後，您可以繼續以新的編輯執行程式碼，並查看其效果。
@@ -45,7 +45,7 @@ ms.locfileid: "56699245"
  本章節中的主題提供其他詳細資訊，說明使用這項功能的方法以及不允許進行的變更種類。
 
 ## <a name="in-this-section"></a>本節內容
- [如何： 在編輯後繼續的中斷模式套用編輯](../debugger/how-to-apply-edits-in-break-mode-with-edit-and-continue.md)說明如何套用在中斷模式中的程式碼編輯。
+ [如何：在編輯後繼續的中斷模式套用編輯](../debugger/how-to-apply-edits-in-break-mode-with-edit-and-continue.md)說明如何套用在中斷模式中的程式碼編輯。
 
  [支援程式碼變更 (C#和 Visual Basic)](../debugger/supported-code-changes-csharp.md)描述什麼類型的編輯內容無法在執行[!INCLUDE [vb_current_short](../debugger/includes/vb_current_short_md.md)]編輯後繼續。
 

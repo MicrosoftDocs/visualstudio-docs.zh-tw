@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 591a5bdbeaa8724eb51d5755066b382c08740bf9
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60102939"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62910393"
 ---
 # <a name="command-routing-algorithm"></a>命令路由演算法
 在 Visual Studio 中許多不同的元件會處理命令。 命令會從最內側的內容中，根據目前的選取範圍，路由傳送到最外層的 （也稱為全域） 內容。 如需詳細資訊，請參閱 <<c0> [ 命令可用性](../../extensibility/internals/command-availability.md)。

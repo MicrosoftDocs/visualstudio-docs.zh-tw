@@ -9,12 +9,12 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 226f2281af2ccdb288ff2c186da280b329a2af1f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: e58471c1676ce67e96ef2c325f5ec461f54cfc9c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60071872"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441990"
 ---
 # <a name="step-1-create-a-project-and-add-labels-to-your-form"></a>步驟 1：建立專案並將標籤新增至表單
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -22,7 +22,7 @@ ms.locfileid: "60071872"
 開發這個測驗的前幾個步驟是建立專案，然後將標籤、按鈕和其他控制項加入至表單。 另外也會設定您所加入每個控制項的屬性。 專案將包含表單、控制項和程式碼 (稍後在本教學課程中加以說明)。 按鈕用於開始測驗，標籤用於顯示測驗問題，而其他控制項則顯示測驗的答案及完成測驗所剩餘的時間。  
   
 > [!NOTE]
->  這個主題是有關基本程式碼撰寫概念的教學課程系列的一部分。 如需教學課程的概觀，請參閱[教學課程 2：建立計時的數學測驗](../ide/tutorial-2-create-a-timed-math-quiz.md)。  
+> 這個主題是有關基本程式碼撰寫概念的教學課程系列的一部分。 如需教學課程的概觀，請參閱[教學課程 2：建立計時的數學測驗](../ide/tutorial-2-create-a-timed-math-quiz.md)。  
   
 ### <a name="to-create-a-project-and-set-properties-for-a-form"></a>建立專案和設定表單的屬性  
   
@@ -145,7 +145,7 @@ ms.locfileid: "60071872"
 9. 在第四個資料列中，將第一個標籤命名為 **dividedLeftLabel**、將第二個標籤的 [Text] 屬性變更為 [÷] (除號)、將第三個標籤命名為 **dividedRightLabel**，然後將 NumericUpDown 控制項命名為 **quotient**。  
   
     > [!NOTE]
-    >  您可以從本教學課程中複製乘號 × 和除號 ÷，並貼入表單中。  
+    > 您可以從本教學課程中複製乘號 × 和除號 ÷，並貼入表單中。  
   
 ### <a name="to-add-a-start-button-and-set-the-tab-index-order"></a>若要加入開始按鈕和設定定位索引順序  
   
@@ -162,7 +162,7 @@ ms.locfileid: "60071872"
 6. 將 [startButton] 控制項的 [TabIndex] 屬性值設定為 [1]。  
   
     > [!NOTE]
-    >  **TabIndex** 屬性會設定受測者選擇 Tab 鍵時的控制項順序。 若要了解其運作方式，請開啟任何對話方塊 (例如，在功能表列上，依序選擇 [檔案]和 [開啟])，然後選擇 Tab 鍵幾次。 觀察每次您選擇 Tab 鍵時，游標從一個控制項移至另一個控制項的情況。 程式設計人員在建立該表單時就已決定順序。  
+    > **TabIndex** 屬性會設定受測者選擇 Tab 鍵時的控制項順序。 若要了解其運作方式，請開啟任何對話方塊 (例如，在功能表列上，依序選擇 [檔案]和 [開啟])，然後選擇 Tab 鍵幾次。 觀察每次您選擇 Tab 鍵時，游標從一個控制項移至另一個控制項的情況。 程式設計人員在建立該表單時就已決定順序。  
   
 7. 將 NumericUpDown sum 控制項的 [TabIndex] 屬性值設定為 [2]、針對 difference 控制項設定為 [3]、針對 product 控制項設定為 [4]，以及針對 quotient 控制項設定為 [5]。  
   

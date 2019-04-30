@@ -9,11 +9,11 @@ manager: jillfra
 ms.workload:
 - uwp
 ms.openlocfilehash: d5b04a64ea75458d23e64e83a405a103ae70a100
-ms.sourcegitcommit: 22b73c601f88c5c236fe81be7ba4f7f562406d75
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "56227692"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62906039"
 ---
 # <a name="inspect-xaml-properties-while-debugging"></a>在偵錯時檢查 XAML 屬性
 您可以使用 [即時視覺化樹狀結構] 和 [即時屬性總管] 來即時檢視正在執行的 XAML 程式碼。 這些工具提供您執行中之 XAML 應用程式 UI 項目的樹狀檢閱，並且顯示任何您所選取之 UI 項目的執行階段屬性。
@@ -25,7 +25,7 @@ ms.locfileid: "56227692"
 |Windows Presentation Foundation (4.0 和更新版本) 應用程式|Windows 7 和更新版本|
 |通用 Windows 應用程式|Windows 10 及更新版本，與[Windows 10 SDK](https://dev.windows.com/en-us/downloads/windows-10-sdk)|
 
-## <a name="looking-at-elements-in-the-live-visual-tree"></a>查看即時視覺化樹狀中的項目
+## <a name="looking-at-elements-in-the-live-visual-tree"></a>查看即時視覺化樹狀結構中的項目
 首先我們使用一個非常簡單的 WPF 應用程式，而該程式具有清單檢視和按鈕。 每當您按一下按鈕，就會將另一個項目加入清單。 偶數的項目以灰色顯示，而奇數項目則以黃色顯示。
 
 建立新的 C# WPF 應用程式 ([檔案] > [新增] > [專案]，然後選取 [C#]，並尋找 [WPF 應用程式])。 將其命名為 **TestXAML**。

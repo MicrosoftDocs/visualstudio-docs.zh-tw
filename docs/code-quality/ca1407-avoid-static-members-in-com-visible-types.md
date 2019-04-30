@@ -15,11 +15,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 5b09122aebdc02b9eacb32df596914a0a08a9ea9
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55932674"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62546254"
 ---
 # <a name="ca1407-avoid-static-members-in-com-visible-types"></a>CA1407:避免在 COM 可見類型中使用靜態成員
 

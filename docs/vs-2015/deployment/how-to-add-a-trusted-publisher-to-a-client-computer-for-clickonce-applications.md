@@ -16,12 +16,12 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: b8c2bc30814af9cdc6181d08b313df20146f855e
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 7129d8de5e37b24304b7f1cbf862e4cd299cdf72
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60080945"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63442211"
 ---
 # <a name="how-to-add-a-trusted-publisher-to-a-client-computer-for-clickonce-applications"></a>HOW TO：加入用戶端電腦中的受信任的發行者，ClickOnce 應用程式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,7 +31,7 @@ ms.locfileid: "60080945"
  您使用的命令會根據發行憑證的憑證授權單位 (CA) 是否為用戶端信任的根而略有不同。 如果 Windows 用戶端電腦是網域的一部分，則會以清單形式包含視為受信任根的 CA。 系統管理員通常會設定此清單。 如果您的憑證是由其中一個受信任根所發出，或由鏈結至其中一個受信任根的 CA 所發出，則可以將憑證新增至用戶端的受信任根存放區。 另一方面，如果您的憑證不是由其中一個受信任根所發出，則必須將憑證新增至用戶端的受信任根存放區和受信任發行者存放區。  
   
 > [!NOTE]
->  您必須透過這種方式在下列用戶端電腦上新增憑證：要部署需要更高權限之 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 應用程式的用戶端電腦。 手動或透過部署至用戶端的應用程式，即可新增憑證。 您只需要設定這些電腦一次，之後，就可以部署使用相同憑證簽署之任意數目的 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 應用程式。  
+> 您必須透過這種方式在下列用戶端電腦上新增憑證：要部署需要更高權限之 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 應用程式的用戶端電腦。 手動或透過部署至用戶端的應用程式，即可新增憑證。 您只需要設定這些電腦一次，之後，就可以部署使用相同憑證簽署之任意數目的 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 應用程式。  
   
  您也可以使用 <xref:System.Security.Cryptography.X509Certificates.X509Store> 類別，以程式設計方式將憑證新增至存放區。  
   

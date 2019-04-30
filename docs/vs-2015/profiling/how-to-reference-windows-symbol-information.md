@@ -14,12 +14,12 @@ caps.latest.revision: 26
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 45e1ad3c89d811a0a2bd715c86d8fcd8006600b0
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: c7a123a42c1a46faf67fb5b63b1ab4ef300735f3
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60086698"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443451"
 ---
 # <a name="how-to-reference-windows-symbol-information"></a>HOW TO：參考 Windows 符號資訊
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,7 +27,7 @@ ms.locfileid: "60086698"
 Visual Studio 程式碼剖析工具會使用符號 (.pdb) 檔案來解析符號名稱，例如程式二進位檔案中的函式名稱。 您可以依照下列步驟進行，以為本機電腦上的 Windows 版本自動下載並更新正確的 .pdb 檔案。  
   
 > [!NOTE]
->  此設定不會影響現有的報告。 只有在指定符號伺服器之後所建立的報告會含有符號資訊。  
+> 此設定不會影響現有的報告。 只有在指定符號伺服器之後所建立的報告會含有符號資訊。  
   
  如需詳細資訊，請參閱[指定符號 (.pdb) 和原始程式檔](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)。  
   

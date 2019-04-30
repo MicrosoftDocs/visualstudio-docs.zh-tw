@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 25b703eafccb412c33640a9e73e72afa09c0c277
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56695982"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62889888"
 ---
 # <a name="get-a-port"></a>取得連接埠
 連接埠代表處理程序執行所在機器的連線。 該電腦可能是本機電腦或遠端電腦 (這無法可能執行非 Windows 型作業系統，請參閱[連接埠](../../extensibility/debugger/ports.md)如需詳細資訊)。

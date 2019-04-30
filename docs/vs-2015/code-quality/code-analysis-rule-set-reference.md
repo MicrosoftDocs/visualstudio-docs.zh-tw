@@ -12,11 +12,11 @@ author: gewarren
 ms.author: gewarren
 manager: wpickett
 ms.openlocfilehash: a1f91b352da5a41ec2ef81fb6067976073c787ef
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58943698"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62576748"
 ---
 # <a name="code-analysis-rule-set-reference"></a>程式碼分析規則集參考
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,8 +36,8 @@ ms.locfileid: "58943698"
 |[適用於 Managed 程式碼的全球化規則規則集](../code-quality/globalization-rules-rule-set-for-managed-code.md)|這些規則的重點在於使用於不同的語言、 地區設定中和文化特性時會無法正確顯示的應用程式中資料的問題。 包含這個規則集，如果您的應用程式已當地語系化或全球化。|  
 |[適用於 Managed 程式碼的 Managed 最小規則規則集](../code-quality/managed-minimun-rules-rule-set-for-managed-code.md)|這些規則的重點在於程式碼分析的最精確的程式碼中最關鍵的問題。  這些規則是數量很少，它們僅供有限的 Visual Studio 版本中執行。  與其他 Visual Studio 版本使用 MinimumRecommendedRules.ruleset。|  
 |[適用於 Managed 程式碼的 Managed 建議規則規則集](../code-quality/managed-recommended-rules-rule-set-for-managed-code.md)|這些規則的重點包括潛在的安全性漏洞、 應用程式當機，以及其他重要的邏輯和設計錯誤的程式碼中最關鍵的問題。 您應該包含您專案建立的此規則設定任何自訂規則集中。|  
-|[混合最小規則規則集](../code-quality/mixed-minimum-rules-rule-set.md)|這些規則的重點在於支援 Common Language Runtime，包括潛在的安全性漏洞和應用程式損毀的 c + + 專案中最關鍵的問題。 您應該包含您為支援 Common Language Runtime 之 c + + 專案建立此規則設定任何自訂規則集中。|  
-|[混合建議規則規則集](../code-quality/mixed-recommended-rules-rule-set.md)|這些規則的重點在於支援 Common Language Runtime，包括潛在的安全性漏洞、 應用程式當機，以及其他重要的邏輯和設計錯誤的 c + + 專案中最常見且關鍵的問題。 您應該包含您為支援 Common Language Runtime 之 c + + 專案建立此規則設定任何自訂規則集中。  此規則被設計來與 Visual Studio Professional 版及更新版本設定。|  
+|[混合最小規則規則集](../code-quality/mixed-minimum-rules-rule-set.md)|這些規則的重點在於最關鍵的問題，在您C++支援 Common Language Runtime，包括潛在的安全性漏洞和應用程式損毀的專案。 您應該包含這個規則集建立的任何自訂規則集中您C++支援 Common Language Runtime 的專案。|  
+|[混合建議規則規則集](../code-quality/mixed-recommended-rules-rule-set.md)|這些規則的重點在於最一般和重大的問題在您C++支援 Common Language Runtime，包括潛在的安全性漏洞、 應用程式當機，以及其他重要的邏輯和設計錯誤的專案。 您應該包含這個規則集建立的任何自訂規則集中您C++支援 Common Language Runtime 的專案。  此規則被設計來與 Visual Studio Professional 版及更新版本設定。|  
 |[原生最小規則規則集](../code-quality/native-minimum-rules-rule-set.md)|這些規則的重點在於您的原生程式碼，包括潛在的安全性漏洞和應用程式損毀最關鍵的問題。 您應該在為原生專案建立的任何自訂規則集中，包含此規則集。|  
 |[原生建議規則規則集](../code-quality/native-recommended-rules-rule-set.md)|這些規則的重點在於最關鍵且常見的問題，您的原生程式碼，包括潛在的安全性漏洞和應用程式損毀。  您應該在為原生專案建立的任何自訂規則集中，包含此規則集。  此規則可配合使用 Visual Studio Professional edition 和更新版本。|  
 |[適用於 Managed 程式碼的安全性規則規則集](../code-quality/security-rules-rule-set-for-managed-code.md)|這個規則集包含所有的 Microsoft 安全性規則。 包含這個規則集以最大化所報告的潛在安全性問題數目。|

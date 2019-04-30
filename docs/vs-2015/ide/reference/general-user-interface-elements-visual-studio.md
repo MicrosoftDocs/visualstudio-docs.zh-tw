@@ -10,11 +10,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 39669408402a12ce8010865606e2a2ec3929569b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54756388"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62537598"
 ---
 # <a name="general-user-interface-elements-visual-studio"></a>一般使用者介面項目 (Visual Studio)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -41,15 +41,15 @@ ms.locfileid: "54756388"
 
  [選項、 文字編輯器、 基本 (Visual Basic)](../../ide/reference/options-text-editor-basic-visual-basic.md)可讓您指定 Visual Basic 檔案的選項。
 
- [選項、 文字編輯器、 C/c + +，格式化](../../ide/reference/options-text-editor-c-cpp-formatting.md)可讓您指定 C 或 c + + 檔案的格式化選項。
+ [選項、 文字編輯器、 C /C++、 格式化](../../ide/reference/options-text-editor-c-cpp-formatting.md)可讓您指定適用於 C 的格式化選項或C++檔案。
 
- [選項、 文字編輯器、 C/c + +、 進階](../../ide/reference/options-text-editor-c-cpp-advanced.md)可讓您指定 C 或 c + + 檔案的進階的選項。
+ [選項、 文字編輯器、 C /C++的進階](../../ide/reference/options-text-editor-c-cpp-advanced.md)可讓您指定適用於 C 的進階的選項或C++檔案。
 
- [選項、 文字編輯器 中， C#、 格式化](../../ide/reference/options-text-editor-csharp-formatting.md)可讓您指定的格式化選項C#檔案。
+ [選項、 文字編輯器、 C#、 格式](../../ide/reference/options-text-editor-csharp-formatting.md)可讓您指定 C# 檔案的格式化選項。
 
- [選項、 文字編輯器 中，C#的進階](../../ide/reference/options-text-editor-csharp-advanced.md)可讓您指定進階的選項C#檔案。
+ [選項、 文字編輯器、 C# 中，進階](../../ide/reference/options-text-editor-csharp-advanced.md)可讓您指定 C# 檔案的進階的選項。
 
- [選項、 文字編輯器 中， C#，IntelliSense](../../ide/reference/options-text-editor-csharp-intellisense.md)可讓您指定的 IntelliSense 選項C#檔案。
+ [選項、 文字編輯器、 C# 中，IntelliSense](../../ide/reference/options-text-editor-csharp-intellisense.md)可讓您指定 C# 檔案的 IntelliSense 選項。
 
  [選項、 文字編輯器、 XAML，格式化](../../ide/reference/options-text-editor-xaml-formatting.md)可讓您指定的 XAML 檔案的格式化選項。
 

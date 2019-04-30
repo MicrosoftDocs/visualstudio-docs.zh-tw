@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 353e7dcbe1bcc44b9e8b7e9c7c417913ef07be35
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56618870"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62828420"
 ---
 # <a name="idialoadcallback"></a>IDiaLoadCallback
 DIA 符號尋找程序，因此可以讓使用者介面來報告進度的位置嘗試會收到回呼。
@@ -31,7 +31,7 @@ IDiaLoadCallback : IUnknown
 ## <a name="methods-in-vtable-order"></a>依照 Vtable 順序的方法
  此介面公開下列方法：
 
-|方法|說明|
+|方法|描述|
 |------------|-----------------|
 |[IDiaLoadCallback::NotifyDebugDir](../../debugger/debug-interface-access/idialoadcallback-notifydebugdir.md)|當偵錯已找到的目錄中的.exe 檔案時呼叫。|
 |[IDiaLoadCallback::NotifyOpenDBG](../../debugger/debug-interface-access/idialoadcallback-notifyopendbg.md)|在開啟候選.dbg 檔案時呼叫。|
@@ -45,13 +45,13 @@ IDiaLoadCallback : IUnknown
  可以加載入程序的其他限制，請參閱 < [IDiaLoadCallback2](../../debugger/debug-interface-access/idialoadcallback2.md)介面。
 
 ## <a name="requirements"></a>需求
- 標頭： Dia2.h
+ 標頭：dia2.h
 
  程式庫： diaguids.lib
 
  DLL: msdia80.dll
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [介面 (偵錯介面存取 SDK)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)
 - [IDiaDataSource::loadDataForExe](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md)
 - [IDiaReadExeAtOffsetCallback](../../debugger/debug-interface-access/idiareadexeatoffsetcallback.md)

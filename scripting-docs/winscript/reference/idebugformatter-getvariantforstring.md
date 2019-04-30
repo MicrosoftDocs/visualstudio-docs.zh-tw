@@ -18,11 +18,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: ea6cd1f77481282700de492e2857046044a04e2a
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58155377"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62979285"
 ---
 # <a name="idebugformattergetvariantforstring"></a>IDebugFormatter::GetVariantForString
 傳回包含指定的字串的 VARIANT。  

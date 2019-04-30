@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 99dbc928834cddade1c434f9d5d5d8e68c40825b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 085d2aff138be1d6beecc5e0895437e92d88da87
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60106029"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444999"
 ---
 # <a name="walkthrough-highlight-text"></a>逐步解說：反白顯示文字
 您可以新增至編輯器的不同視覺效果，藉由建立 Managed Extensibility Framework (MEF) 元件組件。 本逐步解說示範如何以反白顯示目前的文字在文字檔中的每個相符項目。 如果在單字出現超過一次在文字檔案中，您將插入號放一次，每個相符項目會反白顯示。
@@ -351,7 +351,7 @@ ms.locfileid: "60106029"
  若要建立您的標記者，您必須實作<xref:Microsoft.VisualStudio.Text.Tagging.IViewTaggerProvider>。 這個類別會是 MEF 元件的組件，因此您必須設定正確的屬性，這樣才能被辨認此延伸模組。
 
 > [!NOTE]
->  如需 MEF 的詳細資訊，請參閱[Managed Extensibility Framework (MEF)](/dotnet/framework/mef/index)。
+> 如需 MEF 的詳細資訊，請參閱[Managed Extensibility Framework (MEF)](/dotnet/framework/mef/index)。
 
 ### <a name="to-create-a-tagger-provider"></a>若要建立的標記者提供者
 

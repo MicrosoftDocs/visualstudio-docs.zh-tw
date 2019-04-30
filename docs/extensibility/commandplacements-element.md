@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: fcacd56700867682e10ead8e46cfdadcdc66b31d
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56696762"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62926867"
 ---
 # <a name="commandplacements-element"></a>CommandPlacements 元素
 CommandPlacements 元素分組 CommandPlacement 元素和其他 CommandPlacements 分組。

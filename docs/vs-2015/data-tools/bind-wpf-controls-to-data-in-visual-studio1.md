@@ -22,12 +22,12 @@ caps.latest.revision: 39
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 3546da7508767c6766b2caa0c96e6238f4cc6e90
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 16a3868f564f39d4908adf74a6b1a44ae83ebc9d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60039014"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437063"
 ---
 # <a name="bind-wpf-controls-to-data-in-visual-studio"></a>將 WPF 控制項繫結至 Visual Studio 中的資料
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -98,7 +98,7 @@ ms.locfileid: "60039014"
  當您將物件或屬性從**資料來源**設計工具中，視窗[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]會產生[!INCLUDE[TLA#tla_titlexaml](../includes/tlasharptla-titlexaml-md.md)]建立資料繫結控制項 （或將現有控制項繫結至物件或屬性）。 不過，[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 不會產生可將資料填入物件的程式碼。 您必須自行撰寫此程式碼。
 
 > [!NOTE]
->  自訂類別必須是公用的和，根據預設，具有不含參數的建構函式。 它們不能有 「 點 」，其語法中的巢狀的類別。 如需詳細資訊，請參閱 < [XAML 和自訂類別，如 WPF](http://msdn.microsoft.com/library/e7313137-581e-4a64-8453-d44e15a6164a)。
+> 自訂類別必須是公用的和，根據預設，具有不含參數的建構函式。 它們不能有 「 點 」，其語法中的巢狀的類別。 如需詳細資訊，請參閱 < [XAML 和自訂類別，如 WPF](http://msdn.microsoft.com/library/e7313137-581e-4a64-8453-d44e15a6164a)。
 
  [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 會產生[!INCLUDE[TLA#tla_titlexaml](../includes/tlasharptla-titlexaml-md.md)]，會進行下列作業：
 

@@ -9,11 +9,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: dfefc7d6aaa40d628cc0ee9d582fddf65adb411e
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60052606"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63001904"
 ---
 # <a name="how-to-examine-the-content-model-of-nodes-using-the-content-model-view"></a>HOW TO：檢查使用內容模型檢視節點的內容模型
 

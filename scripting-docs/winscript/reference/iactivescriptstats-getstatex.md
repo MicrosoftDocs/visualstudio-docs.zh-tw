@@ -17,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 5f1585e335fac0072eba48494bf8c27736a47f41
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
-ms.translationtype: MT
+ms.openlocfilehash: 3e5f25887d8fdd5b5fb774cc2e8619c1a93432c1
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58149165"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63442782"
 ---
 # <a name="iactivescriptstatsgetstatex"></a>IActiveScriptStats::GetStatEx
 傳回自訂指令碼統計資料。  
@@ -59,7 +59,7 @@ HRESULT GetStatEx(
  這個方法可讓傳回自訂主機都有意義的統計資料的自訂指令碼引擎。  
   
 > [!NOTE]
->  這個方法目前尚未實作。  
+> 這個方法目前尚未實作。  
   
 ## <a name="see-also"></a>另請參閱  
  [IActiveScriptStats::GetStat](../../winscript/reference/iactivescriptstats-getstat.md)   

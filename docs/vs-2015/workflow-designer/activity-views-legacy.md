@@ -14,11 +14,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 62b3c9185226512ff28c8d028cd0ba7d33b0f12f
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58942371"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62977445"
 ---
 # <a name="activity-views-legacy"></a>活動檢視 (舊版)
 [!INCLUDE[wf](../includes/wf-md.md)] 提供的許多活動 (工作流程組成的元素) 具有舊版 [!INCLUDE[wfd1](../includes/wfd1-md.md)] 中所提供的幾個設計檢視。 當您拖曳的活動設計工具**工具箱**拖曳至設計介面，之後每當您選取活動時，您可以在使用其中一種在不同的設計檢視之間切換**工作流程**功能表或以滑鼠右鍵按一下選取的活動。 此外，當您將指標移至選取活動的名稱上方時，會顯示一組下拉式索引標籤，可用來在不同的檢視之間切換。  

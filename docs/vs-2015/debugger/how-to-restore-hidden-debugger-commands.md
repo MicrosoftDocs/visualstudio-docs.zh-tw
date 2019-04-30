@@ -22,12 +22,12 @@ caps.latest.revision: 14
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: a882a1523d89f547f98389e6ad3e6baf32cbb01c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 297be3a3a4ad3c70ad28c627d5dc8d64c6ba1c7a
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60039348"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63442081"
 ---
 # <a name="how-to-restore-hidden-debugger-commands"></a>HOW TO：還原隱藏的偵錯工具命令
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -53,7 +53,7 @@ ms.locfileid: "60039348"
 7. 將想要的命令加入功能表之後，按一下 [關閉]。  
   
     > [!WARNING]
-    >  有些功能表項目只會在偵錯工具處於特定模式時出現，例如，執行模式或中斷模式。 因此，當您完成以上步驟時，可能不會立即看見您所加入的項目。  
+    > 有些功能表項目只會在偵錯工具處於特定模式時出現，例如，執行模式或中斷模式。 因此，當您完成以上步驟時，可能不會立即看見您所加入的項目。  
   
 ## <a name="restoring-commands-not-available-from-the-customize-dialog-box"></a>從自訂對話方塊還原無法使用的命令  
  有些命令可能無法從 [自訂] 對話方塊還原，特別是出現在階層式功能表中的命令。 若要還原這些命令，您必須匯入新的 IDE 設定集合。  

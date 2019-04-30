@@ -12,11 +12,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 111f53ec5b427207a6bde5d590cf8f1c908ff130
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58940538"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62977250"
 ---
 # <a name="assign-activity-designer"></a>Assign 活動設計工具
 **指派**活動設計工具會用來建立及設定<xref:System.Activities.Statements.Assign>活動。  

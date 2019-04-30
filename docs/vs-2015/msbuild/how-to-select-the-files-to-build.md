@@ -13,12 +13,12 @@ caps.latest.revision: 17
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 5a45720c739087c2caf43314cbcbc8aea162534c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 0968dd8914b99e8d47ef1364231059175aaf73fe
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60064839"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437898"
 ---
 # <a name="how-to-select-the-files-to-build"></a>HOW TO：選取要建置的檔案
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,7 +41,7 @@ ms.locfileid: "60064839"
      `<VBFile Include="form1.vb"/>`  
   
     > [!NOTE]
-    >  如果項目集合中的項目不在與專案檔相同的目錄中，您必須指定項目的完整或相對路徑。 例如：`Include="..\..\form2.cs"`。  
+    > 如果項目集合中的項目不在與專案檔相同的目錄中，您必須指定項目的完整或相對路徑。 例如：`Include="..\..\form2.cs"`。  
   
 #### <a name="to-declare-multiple-items"></a>宣告多個項目  
   
@@ -100,9 +100,9 @@ ms.locfileid: "60064839"
      `<VBC Sources="@(VBFile)">...</VBC>`  
   
 > [!NOTE]
->  您必須使用萬用字元與項目來指定組置的輸入；您不能使用 `Sources` 屬性在 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 工作 (例如 [Csc](../msbuild/csc-task.md) 或 [Vbc](../msbuild/vbc-task.md)) 中指定輸入。 下列範例在專案檔案中無效︰  
+> 您必須使用萬用字元與項目來指定組置的輸入；您不能使用 `Sources` 屬性在 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 工作 (例如 [Csc](../msbuild/csc-task.md) 或 [Vbc](../msbuild/vbc-task.md)) 中指定輸入。 下列範例在專案檔案中無效︰  
 >   
->  `<CSC Sources="*.cs">...</CSC>`  
+> `<CSC Sources="*.cs">...</CSC>`  
   
 ## <a name="example"></a>範例  
  下列程式碼範例會顯示個別包含所有輸入檔案的專案。  

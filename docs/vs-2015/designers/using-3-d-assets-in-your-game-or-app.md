@@ -16,12 +16,12 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c475366c190e5ac008394f8642f64da022532a0a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 20076e4f8cc05ad971a1cbe710c95f444b80938b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60064735"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63386881"
 ---
 # <a name="using-3-d-assets-in-your-game-or-app"></a>在遊戲或應用程式中使用 3D 資產
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -59,7 +59,7 @@ ms.locfileid: "60064735"
 3. 在 [組態屬性] 下，選擇 [一般]，然後在屬性格線的 [一般] 下，將 [項目類型] 屬性設定為適當的內容管線項目類型。 例如，針對影像或紋理檔，選擇 [影像內容管線]。  
   
    > [!IMPORTANT]
-   >  [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 預設會假設應該使用 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 內建的**影像**項目類型來分類多種類型的影像檔。 因此，您需要變更想要由影像內容管線處理之每個影像的 [項目類型] 屬性。 3D 模型和視覺著色器圖形的其他類型內容管線來源檔，預設為正確的 [項目類型]。  
+   > [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 預設會假設應該使用 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 內建的**影像**項目類型來分類多種類型的影像檔。 因此，您需要變更想要由影像內容管線處理之每個影像的 [項目類型] 屬性。 3D 模型和視覺著色器圖形的其他類型內容管線來源檔，預設為正確的 [項目類型]。  
   
 4. 選擇 [確定]  按鈕。  
   
@@ -202,8 +202,8 @@ cbuffer MiscVars : register(b3)
   
 |標題|說明|  
 |-----------|-----------------|  
-|[如何：匯出包含 Mipmap 的材質](../designers/how-to-export-a-texture-that-contains-mipmaps.md)|描述如何使用影像內容管線，匯出含有預先計算之 MIP 對應的紋理。|  
-|[如何：匯出包含預乘 Alpha 的材質](../designers/how-to-export-a-texture-that-has-premultiplied-alpha.md)|描述如何使用影像內容管線，匯出含有預乘的 Alpha 值的紋理。|  
-|[如何：匯出材質以搭配 Direct2D 或 Javascipt 應用程式](../designers/how-to-export-a-texture-for-use-with-direct2d-or-javascipt-apps.md)|描述如何使用影像內容管線，匯出可用於 Direct2D 或 JavaScript 應用程式的紋理。|  
+|[如何：匯出包含 Mipmap 的紋理](../designers/how-to-export-a-texture-that-contains-mipmaps.md)|描述如何使用影像內容管線，匯出含有預先計算之 MIP 對應的紋理。|  
+|[如何：匯出包含預乘 Alpha 的紋理](../designers/how-to-export-a-texture-that-has-premultiplied-alpha.md)|描述如何使用影像內容管線，匯出含有預乘的 Alpha 值的紋理。|  
+|[如何：匯出紋理以與 Direct2D 或 JavaScript 應用程式搭配使用](../designers/how-to-export-a-texture-for-use-with-direct2d-or-javascipt-apps.md)|描述如何使用影像內容管線，匯出可用於 Direct2D 或 JavaScript 應用程式的紋理。|  
 |[使用 3D 資產來打造遊戲和應用程式](../designers/working-with-3-d-assets-for-games-and-apps.md)|描述 Visual Studio 提供用於建立和管理 3-D 資產 (包括紋理和影像)、3-D 模型和著色器的編輯工具。|  
 |[如何：匯出著色器](../designers/how-to-export-a-shader.md)|描述如何從著色器設計工具匯出著色器。|

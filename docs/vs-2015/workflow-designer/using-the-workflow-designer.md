@@ -13,11 +13,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 6e60c314a6886831758f403402958cfe97c4a4fc
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58944938"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62855421"
 ---
 # <a name="using-the-workflow-designer"></a>使用工作流程設計工具
 本節詳述如何使用內建的設計工具，以及多個活動設計工具裝載的運算式編輯器，建立新的活動與工作流程專案。  

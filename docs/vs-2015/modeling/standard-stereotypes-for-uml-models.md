@@ -12,12 +12,12 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: fbd12f7579cc401284515de1f950ad2a9809dbca
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 822676baf9f0c599fd1383f1841c8f85136be879
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60116585"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63411741"
 ---
 # <a name="standard-stereotypes-for-uml-models"></a>UML 模型的標準造型
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -56,7 +56,7 @@ ms.locfileid: "60116585"
 2. 在 [屬性] 視窗中，設定**設定檔**屬性為空白。  
   
     > [!NOTE]
-    >  只有當所有模型或套件中的項目都未使用該設定檔造型，才能取消設定檔的連結。  
+    > 只有當所有模型或套件中的項目都未使用該設定檔造型，才能取消設定檔的連結。  
   
 #### <a name="to-apply-a-stereotype-to-a-model-element"></a>將造型套用至模型項目  
   
@@ -67,7 +67,7 @@ ms.locfileid: "60116585"
      對大部分種類的項目而言，所選造型會顯示在模型項目的 «＞ 形箭號» 中。  
   
     > [!NOTE]
-    >  如果您看**造型**屬性，或如果您想要的造型未出現，請確認模型項目位於套件或模型，適當的設定檔連結。  
+    > 如果您看**造型**屬性，或如果您想要的造型未出現，請確認模型項目位於套件或模型，適當的設定檔連結。  
   
 3. 有些造型可讓您設定模型項目其他屬性的值。 若要查看這些屬性，依序展開**造型**屬性。  
   

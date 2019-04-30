@@ -15,11 +15,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 6b1d461419497a0a45f50f12589cf3ac978a7666
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60092636"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62967353"
 ---
 # <a name="extend-the-sharepoint-connections-node-in-server-explorer"></a>擴充 SharePoint 連線節點，在 伺服器總管
   在 Visual Studio 中，您可以連接至本機 SharePoint 網站，在開發電腦上使用**SharePoint 連線**中的節點**伺服器總管**視窗。 這個節點會顯示在階層樹狀結構檢視中的許多元件的本機 SharePoint 網站。 例如，您可以在本機的站台上檢視清單、 文件庫和內容類型。 如需使用詳細資訊**伺服器總管**若要連線至本機 SharePoint 網站，請參閱[使用伺服器總管瀏覽 SharePoint 連線](../sharepoint/browsing-sharepoint-connections-using-server-explorer.md)。

@@ -14,11 +14,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 7184be62a8ad2b65e81d1ad82f01f0ce3f4668c5
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58146379"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63004889"
 ---
 # <a name="idebugsyncoperation-interface"></a>IDebugSyncOperation 介面
 可讓指令碼引擎抽取巢狀方式置於特定已封鎖的執行緒時，執行所需的作業 （例如，運算式評估中）。 介面也提供一種機制，取消沒有回應的作業。  

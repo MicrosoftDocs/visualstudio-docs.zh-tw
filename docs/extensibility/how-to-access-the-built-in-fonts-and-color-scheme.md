@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 58d5fd0bfe1c8d5f5896d365a7b0ecfdb8da25b3
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 71797d3e080ad4fbbb1256914e98bc3a62f9fb01
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60068219"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63415522"
 ---
 # <a name="how-to-access-the-built-in-fonts-and-color-ccheme"></a>HOW TO：存取的內建的字型和色彩 ccheme
 Visual Studio 整合式的開發環境 (IDE) 有 [編輯器] 視窗相關聯的字型和色彩配置。 您可以透過此配置<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView>介面。
@@ -39,7 +39,7 @@ Visual Studio 整合式的開發環境 (IDE) 有 [編輯器] 視窗相關聯的�
      此 GUID 用來唯一識別類別目錄中。 IDE 的預設字型和色彩的規格，此類別會重複使用。
 
     > [!NOTE]
-    >  當擷取使用的字型和色彩資料<xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorEvents>或其他介面，Vspackage 會使用此 GUID 參考內建的資訊。
+    > 當擷取使用的字型和色彩資料<xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorEvents>或其他介面，Vspackage 會使用此 GUID 參考內建的資訊。
 
 2. 類別目錄的名稱必須新增至 VSPackage 的資源字串資料表 (*.rc*) 檔案，以便您可以在需要時顯示在 IDE 中當地語系化。
 

@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0530e5547fd17e1db84e7164039b507cb4583703
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 836788e0d9d44c7da5dda44ce80f76ab91642dda
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60086309"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63423970"
 ---
 # <a name="parameter-info-in-a-legacy-language-service"></a>舊版語言服務中的參數資訊
 IntelliSense 的 參數資訊工具提示提供使用者有關他們在語言建構的提示。
@@ -27,7 +27,7 @@ IntelliSense 的 參數資訊工具提示提供使用者有關他們在語言建
  舊版語言服務會實作成 VSPackage 的一部分，但實作語言服務功能的較新的方式是使用 MEF 擴充功能。 若要深入了解，請參閱[擴充編輯器和語言服務](../../extensibility/extending-the-editor-and-language-services.md)。
 
 > [!NOTE]
->  我們建議您開始使用新的編輯器 API 盡。 這會改善您的語言服務的效能，並可讓您充分利用新編輯器功能。
+> 我們建議您開始使用新的編輯器 API 盡。 這會改善您的語言服務的效能，並可讓您充分利用新編輯器功能。
 
 ## <a name="how-parameter-info-tooltips-work"></a>參數資訊工具提示的運作方式
  當您在編輯器中輸入陳述式時，則 VSPackage 會顯示小工具提示視窗，其中包含正在鍵入的陳述式的定義。 例如，如果您輸入 Microsoft Foundation Classes (MFC) 陳述式 (例如`pMainFrame ->UpdateWindow`) 並按左括弧鍵開始列出參數，就會顯示的定義顯示方法秘訣`UpdateWindow`方法。

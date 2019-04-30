@@ -15,14 +15,14 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 261cf0ad93208c0eac09e42dcd68853352318e88
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58149152"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62817896"
 ---
 # <a name="boolean-expected"></a>必須是布林
-您嘗試叫用**Boolean.prototype.toString**或是**Boolean.prototype.valueOf**以外的類型的物件上的方法`Boolean`。 這種類型的引動過程的物件必須是型別`Boolean`。 例如: 
+您嘗試叫用**Boolean.prototype.toString**或是**Boolean.prototype.valueOf**以外的類型的物件上的方法`Boolean`。 這種類型的引動過程的物件必須是型別`Boolean`。 例如：
 
 ```JavaScript
 var o = new Object;

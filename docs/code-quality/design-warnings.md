@@ -15,11 +15,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: c8da8b003f74b21ab0a6178742c28f85423dd2ec
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55908890"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62816795"
 ---
 # <a name="design-warnings"></a>設計警告
 設計警告支援遵循.NET Framework 設計方針。
@@ -28,12 +28,12 @@ ms.locfileid: "55908890"
 
 | 規則 | 描述 |
 | - | - |
-| [CA1000:不要在泛型類型上宣告靜態成員](../code-quality/ca1000-do-not-declare-static-members-on-generic-types.md) | 呼叫泛型類型的靜態成員時，必須為類型指定型別引數。 呼叫不支援介面的泛型執行個體 (Instance) 成員時，必須為成員指定型別引數。 在上述兩種情況下，指定型別引數的語法不同且容易混淆。 |
+| [CA1000:不要在泛型類型上宣告靜態成員](../code-quality/ca1000-do-not-declare-static-members-on-generic-types.md) | 呼叫泛型類型的靜態成員時，必須為類型指定類型引數。 呼叫不支援介面的泛型執行個體 (Instance) 成員時，必須為成員指定型別引數。 在上述兩種情況下，指定型別引數的語法不同且容易混淆。 |
 | [CA1001：具有可處置欄位的類型應該為可處置](../code-quality/ca1001-types-that-own-disposable-fields-should-be-disposable.md) | 類別會宣告及實作類型為 System.IDisposable 的執行個體欄位和類別未實作 IDisposable。 宣告 IDisposable 欄位的類別會間接擁有 Unmanaged 資源，且應實作 IDisposable 介面。 |
 | [CA1002:不要公開泛型清單](../code-quality/ca1002-do-not-expose-generic-lists.md) | System.Collections.Generic.List < (的\<(T >) >) 是專為效能而非繼承的泛型集合。 因此，List 不包含任何虛擬成員。 應該改為公開專為繼承所設計的泛型集合。 |
 | [CA1003： 必須使用一般事件處理常式執行個體](../code-quality/ca1003-use-generic-event-handler-instances.md) | 型別包含的委派，會傳回 void，其簽章包含兩個參數 （物件的第一個和第二個是指派給 EventArgs 的類型） 和包含的組件目標[!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)]。 |
 | [CA1004:泛型方法應該提供型別參數](../code-quality/ca1004-generic-methods-should-provide-type-parameter.md) | 推斷是指如何利用傳遞到泛型方法的引數類型，而不是利用型別引數的明確規格，來決定泛型方法的型別引數。 若要啟用推斷，泛型方法的參數簽章必須包含與方法之型別參數具有相同類型的參數。 在上述情形中，不必指定類型引數。 當您使用推斷所有類型參數時，呼叫泛型和非泛型執行個體方法的語法是相同的。這可簡化泛型方法的可用性。 |
-| [CA1005:避免在泛型類型上的過多參數](../code-quality/ca1005-avoid-excessive-parameters-on-generic-types.md) | 泛型類型所包含的型別參數越多，就越難了解並記住每個型別參數所代表的含意。 具有一個型別參數，如所示清單通常顯然\<T >，並在某些情況下，具有兩個類型參數，如\<TKey，TValue >。 不過，如果存在兩個以上的型別參數，則對大多數使用者而言都會變得難以理解。 |
+| [CA1005:避免在泛型類型上的過多參數](../code-quality/ca1005-avoid-excessive-parameters-on-generic-types.md) | 泛型類型所包含的類型參數越多，就越難了解並記住每個類型參數所代表的含意。 具有一個型別參數，如所示清單通常顯然\<T >，並在某些情況下，具有兩個類型參數，如\<TKey，TValue >。 不過，如果存在兩個以上的類型參數，則對大多數使用者而言都會變得難以理解。 |
 | [CA1006:無法建立巢狀成員簽章中的泛型型別](../code-quality/ca1006-do-not-nest-generic-types-in-member-signatures.md) | 巢狀型別引數就是也是泛型類型的型別引數。 若要呼叫其簽章含有巢狀型別引數的成員，則使用者必須具現化 (Instantiate) 一個泛型類型，並將這個類型傳遞給第二個泛型類型的建構函式。 必要程序及語法十分複雜，且應予以避免。 |
 | [CA1007:在適當時使用泛型](../code-quality/ca1007-use-generics-where-appropriate.md) | 外部可見的方法包含 System.Object 類型的傳址參數。 使用泛型方法可讓所有類型 (遵守條件約束) 傳遞給方法，而不需要先將類型轉型為傳址參數類型。 |
 | [CA1008:列舉應該使用零值](../code-quality/ca1008-enums-should-have-zero-value.md) | 如同其他實值類型一般，未初始化的列舉其預設值為零。 賦予屬性的有效值列舉應該使用值為零，因此預設值是有效的值的列舉型別定義的成員。 如果已套用 FlagsAttribute 屬性的列舉定義零值成員，則其名稱應該是 "None"，以表示列舉中未設定任何值。 |

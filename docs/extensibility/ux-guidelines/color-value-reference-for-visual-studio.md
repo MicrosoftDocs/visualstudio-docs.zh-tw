@@ -10,11 +10,11 @@ ms.assetid: 694ffb31-132c-4d63-b930-8254e7c50c25
 ms.reviewer: Jamie.Young
 manager: jillfra
 ms.openlocfilehash: 64d2396215ab8c27607e5d1734cdc8cdfe675db6
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60118080"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62805545"
 ---
 # <a name="color-value-reference-for-visual-studio"></a>Visual Studio 的色彩值參考
 

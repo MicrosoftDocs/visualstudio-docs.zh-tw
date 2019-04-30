@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 28334cc7aa0c8a5587a20d6c9dfdee3133d9ea7e
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56718192"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62921786"
 ---
 # <a name="idebugdocument2"></a>IDebugDocument2
 此介面代表來源文件。
@@ -43,7 +43,7 @@ IDebugDocument2 : IUnknown
 |[GetDocumentClassID](../../../extensibility/debugger/reference/idebugdocument2-getdocumentclassid.md)|取得文件的類別識別項。|
 
 ## <a name="remarks"></a>備註
- DE 提供的原始程式碼時，才會實作這個介面。 比方說，當您正在偵錯 HTML 網頁上的指令碼，DE 提供原始碼因為下載來源或動態產生，而且為磁碟檔案不存在。 當偵錯傳統的語言，例如 c + +，這個介面就不需要實作。
+ DE 提供的原始程式碼時，才會實作這個介面。 比方說，當您正在偵錯 HTML 網頁上的指令碼，DE 提供原始碼因為下載來源或動態產生，而且為磁碟檔案不存在。 當偵錯傳統的語言，例如C++，不需要實作這個介面。
 
 ## <a name="requirements"></a>需求
  標頭： msdbg.h

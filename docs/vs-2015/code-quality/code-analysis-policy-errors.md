@@ -14,11 +14,11 @@ author: gewarren
 ms.author: gewarren
 manager: wpickett
 ms.openlocfilehash: 9b61d7d9718e9557ef153474718542f889ad7629
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58942279"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62576737"
 ---
 # <a name="code-analysis-policy-errors"></a>程式碼分析原則錯誤
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -71,9 +71,9 @@ ms.locfileid: "58942279"
   
    套用至這個錯誤[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]專案和 Web 專案。 原則會要求要執行的 managed 程式碼分析，但未啟用用戶端上目前的專案中。  
   
-   **您必須在專案中啟用 C/c + + 程式碼分析{0}屬性和簽入之前的組建。**  
+   **您必須啟用 C /C++專案中的程式碼分析{0}屬性和簽入之前的組建。**  
   
-   此錯誤適用於非受控專案。 程式碼分析原則需要程式碼分析 C/c + +，但未啟用用戶端上目前的專案中。  
+   此錯誤適用於非受控專案。 程式碼分析原則需要適用於 C 的程式碼分析 /C++，但不是啟用用戶端上目前的專案中。  
   
 ## <a name="see-also"></a>另請參閱  
  [程式碼分析應用程式錯誤](../code-quality/code-analysis-application-errors.md)

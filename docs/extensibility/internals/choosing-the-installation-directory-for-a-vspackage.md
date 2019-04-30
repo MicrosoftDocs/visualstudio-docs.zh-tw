@@ -11,23 +11,23 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: be54c19a1e09b610611c8791d62d012ebdaf5ae8
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60106263"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62862043"
 ---
 # <a name="choose-the-installation-directory-for-a-vspackage"></a>選擇 vspackage 的安裝目錄
 VSPackage 和其支援的檔案必須是使用者的檔案系統上。 位置取決於 VSPackage 是否管理或未受管理，您的並排顯示版本設定配置和使用者選擇。
 
 ## <a name="unmanaged-vspackages"></a>Unmanaged 的 Vspackage
- Unmanaged 的 VSPackage 是 COM 伺服器可安裝在任何位置。 其登錄資訊必須精確地反映其位置。 安裝程式使用者介面 (UI) 應該提供的預設位置為的子目錄`ProgramFilesFolder`Windows Installer 屬性值。 例如: 
+ Unmanaged 的 VSPackage 是 COM 伺服器可安裝在任何位置。 其登錄資訊必須精確地反映其位置。 安裝程式使用者介面 (UI) 應該提供的預設位置為的子目錄`ProgramFilesFolder`Windows Installer 屬性值。 例如：
 
 *&lt;ProgramFilesFolder&gt;\\&lt;MyCompany&gt;\\&lt;MyVSPackageProduct&gt;\V1.0\\*
 
  應該允許使用者變更預設目錄來容納保持小型的開機磁碟分割的使用者，且想要安裝另一個磁碟區上的應用程式和工具。
 
- 如果您的並排顯示配置使用已建立版本的 VSPackage，您可以使用子目錄來儲存不同的版本。 例如：
+ 如果您的並排顯示配置使用已建立版本的 VSPackage，您可以使用子目錄來儲存不同的版本。 例如: 
 
  *&lt;ProgramFilesFolder&gt;\\&lt;MyCompany&gt;\\&lt;MyVSPackageProduct&gt;\\V1.0\\2002\\*
 

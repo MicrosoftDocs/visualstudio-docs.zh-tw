@@ -32,12 +32,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 6318108523f072beaae85c51604dbb45982a244f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 0fdea53ec99c4f95fb4bb9526b3f154bea5b662b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60094849"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441830"
 ---
 # <a name="events-in-office-projects"></a>Office 專案中的事件
   每個 Office 專案範本會自動產生數個事件處理常式。 文件層級自訂的事件處理常式與 VSTO 增益集的事件處理常式有些許不同。
@@ -82,7 +82,7 @@ ms.locfileid: "60094849"
     - `ThisWorkbook_Shutdown`
 
 > [!NOTE]
->  在文件的 **Shutdown** 事件處理常式執行期間，請勿以程式設計方式移除控制項。 當 **Shutdown** 事件發生時，文件的 UI 項目便無法再使用。 如果您想要在應用程式關閉之前移除控制項，請將程式碼加入其他事件處理常式，例如 **BeforeClose** 或 **BeforeSave**。
+> 在文件的 **Shutdown** 事件處理常式執行期間，請勿以程式設計方式移除控制項。 當 **Shutdown** 事件發生時，文件的 UI 項目便無法再使用。 如果您想要在應用程式關閉之前移除控制項，請將程式碼加入其他事件處理常式，例如 **BeforeClose** 或 **BeforeSave**。
 
 ### <a name="event-handler-method-declarations"></a>事件處理常式方法宣告
  每個事件處理常式方法宣告都具有傳遞給它的相同引數： *sender* 和 *e*。 在 Excel 中， *sender* 引數會參考工作表，例如 `Sheet1` 或 `Sheet2`；在 Word 中， *sender* 引數會參考文件。 *e* 引數會參考事件的標準引數 (在此情況下不會使用)。
@@ -95,7 +95,7 @@ ms.locfileid: "60094849"
  下列程式碼範例會顯示 Excel 文件層級專案中的預設事件處理常式。
 
 > [!NOTE]
->  下列程式碼範例顯示 `Sheet1` 類別中的事件處理常式。 其他主項目類別中的事件處理常式名稱會對應至這個類別名稱。 例如，在 `Sheet2` 類別中， **Startup** 事件處理常式的名稱為 `Sheet2_Startup`。 在 `ThisWorkbook` 類別中， **Startup** 事件處理常式的名稱為 `ThisWorkbook_Startup`。
+> 下列程式碼範例顯示 `Sheet1` 類別中的事件處理常式。 其他主項目類別中的事件處理常式名稱會對應至這個類別名稱。 例如，在 `Sheet2` 類別中， **Startup** 事件處理常式的名稱為 `Sheet2_Startup`。 在 `ThisWorkbook` 類別中， **Startup** 事件處理常式的名稱為 `ThisWorkbook_Startup`。
 
  [!code-csharp[Trin_VstcoreExcelAutomation#83](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#83)]
  [!code-vb[Trin_VstcoreExcelAutomation#83](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#83)]
@@ -150,7 +150,7 @@ ms.locfileid: "60094849"
 - <xref:Microsoft.Office.Interop.Outlook.ExplorerEvents_10_Event.Close> 物件的 <xref:Microsoft.Office.Interop.Outlook.Explorer> 事件。
 
 > [!NOTE]
->  您可以修改登錄，強制 Outlook 在結束時引發 <xref:Microsoft.Office.Tools.AddInBase.Shutdown> 事件。 不過，如果系統管理員還原此設定，則 Outlook 結束時，便不會再執行任何您加入至 `ThisAddIn_Shutdown` 方法的程式碼。 如需詳細資訊，請參閱 <<c0> [ 關機變更適用於 Outlook 2010](http://go.microsoft.com/fwlink/?LinkID=184614)。
+> 您可以修改登錄，強制 Outlook 在結束時引發 <xref:Microsoft.Office.Tools.AddInBase.Shutdown> 事件。 不過，如果系統管理員還原此設定，則 Outlook 結束時，便不會再執行任何您加入至 `ThisAddIn_Shutdown` 方法的程式碼。 如需詳細資訊，請參閱 <<c0> [ 關機變更適用於 Outlook 2010](http://go.microsoft.com/fwlink/?LinkID=184614)。
 
 ## <a name="see-also"></a>另請參閱
 - [開發 Office 方案](../vsto/developing-office-solutions.md)

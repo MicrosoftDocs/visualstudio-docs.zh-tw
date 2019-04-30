@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 343c56e3d3175c26900b0cfb4cdc3d816a324404
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56630583"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62831815"
 ---
 # <a name="idiastackwalkframe"></a>IDiaStackWalkFrame
 會維護引動過程之間的堆疊內容[idiaframedata:: Execute](../../debugger/debug-interface-access/idiaframedata-execute.md)方法。
@@ -31,7 +31,7 @@ IDiaStackWalkFrame : IUnknown
 ## <a name="methods-in-vtable-order"></a>依照 Vtable 順序的方法
  下表顯示的方法`IDiaStackWalkFrame`。
 
-|方法|說明|
+|方法|描述|
 |------------|-----------------|
 |[IDiaStackWalkFrame::get_registerValue](../../debugger/debug-interface-access/idiastackwalkframe-get-registervalue.md)|擷取暫存器的值。|
 |[IDiaStackWalkFrame::put_registerValue](../../debugger/debug-interface-access/idiastackwalkframe-put-registervalue.md)|設定暫存器值。|
@@ -46,12 +46,12 @@ IDiaStackWalkFrame : IUnknown
  用戶端應用程式會實作這個介面，並將傳遞至介面的執行個體[idiaframedata:: Execute](../../debugger/debug-interface-access/idiaframedata-execute.md)方法。 每次叫用期間，維持狀態的暫存器一次又一次使用相同的執行個體，這個介面的`execute`方法。 `execute`方法也使用此介面來判斷傳回的位址。
 
 ## <a name="requirements"></a>需求
- 標頭： Dia2.h
+ 標頭：dia2.h
 
  程式庫： diaguids.lib
 
  DLL: msdia80.dll
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [介面 (偵錯介面存取 SDK)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)
 - [IDiaFrameData::execute](../../debugger/debug-interface-access/idiaframedata-execute.md)

@@ -26,12 +26,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 8cc47445f9d2024f5d8a83c8f376bc0299b8ea4e
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 61c81cef552c18eab5aa737b3460d539abfbdcfc
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60103636"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63447006"
 ---
 # <a name="ribbon-designer"></a>功能區設計工具
   功能區設計工具是視覺效果設計畫布。 若要將自訂索引標籤、 群組和控制項加入 Microsoft Office 應用程式的功能區中使用功能區設計工具。
@@ -47,7 +47,7 @@ ms.locfileid: "60103636"
 - [將控制項加入至 Backstage 檢視](#CustomizingMicrosoftOfficeButton)
 
 > [!NOTE]
->  有一些您無法使用功能區設計工具完成的工作。 如需有關這些工作和完成它們的詳細資訊，請參閱 <<c0> [ 功能區概觀](../vsto/ribbon-overview.md)。
+> 有一些您無法使用功能區設計工具完成的工作。 如需有關這些工作和完成它們的詳細資訊，請參閱 <<c0> [ 功能區概觀](../vsto/ribbon-overview.md)。
 
  ![影片連結](../vsto/media/playvideo.gif "影片連結")如需相關的影片示範，請參閱[How do i:您可以使用功能區設計工具自訂 Outlook 功能區？](http://go.microsoft.com/fwlink/?LinkID=130312).
 

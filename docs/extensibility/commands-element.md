@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 823a91f15ef1dca47e8fd58db0646cd5248cfb1f
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56684022"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62891248"
 ---
 # <a name="commands-element"></a>Commands 元素
 表示 [VSPackage] 工具列上的命令的集合。 集合可以有最多五個小節中，如下： 功能表、 群組、 按鈕、 combos，與點陣圖。

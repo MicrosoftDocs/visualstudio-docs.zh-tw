@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 190ec35d014e6b443a9f80bf79433ac14b8fb8ad
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56703587"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62903765"
 ---
 # <a name="process-search-dialog-box"></a>處理序搜尋對話方塊
 使用此對話方塊，即可尋找並選取特定的處理序中的節點[處理序檢視](../debugger/processes-view.md)。 若要顯示此對話方塊中，焦點移至**處理序**檢視 視窗中。 然後選擇**尋找處理序**從**搜尋**功能表。

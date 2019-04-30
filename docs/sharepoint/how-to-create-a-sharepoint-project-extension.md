@@ -15,11 +15,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 37f22e085334bf6a18ef1b5482b6b6c206690148
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60073198"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62966870"
 ---
 # <a name="how-to-create-a-sharepoint-project-extension"></a>HOW TO：建立 SharePoint 專案擴充功能
   當您想要將功能新增至已在 Visual Studio 中開啟任何 SharePoint 專案，請建立專案擴充功能。 如需詳細資訊，請參閱 <<c0> [ 擴充 SharePoint 專案系統](../sharepoint/extending-the-sharepoint-project-system.md)。

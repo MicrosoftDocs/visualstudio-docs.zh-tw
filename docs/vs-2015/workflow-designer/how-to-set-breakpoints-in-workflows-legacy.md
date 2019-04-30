@@ -14,12 +14,12 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 92950247420f49c4a5295d25aec2c8697efb3534
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 7cec06813890523e604234ccefdbcd7d1de31653
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60069961"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444179"
 ---
 # <a name="how-to-set-breakpoints-in-workflows-legacy"></a>HOW TO：在工作流程中設定中斷點 (舊版)
 本主題描述如何在使用舊版 [!INCLUDE[wf](../includes/wf-md.md)] 建置的 [!INCLUDE[wfd1](../includes/wfd1-md.md)] 應用程式中設定中斷點。 當您的 [!INCLUDE[wfd2](../includes/wfd2-md.md)] 應用程式需要以 [!INCLUDE[wf2](../includes/wf2-md.md)] 或 [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] 為目標時，請使用舊版 [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)]。  
@@ -39,7 +39,7 @@ ms.locfileid: "60069961"
      當偵錯工具在中斷點處停止時，您也可以使用這個選項來設定偵錯時的新中斷點。  
   
     > [!NOTE]
-    >  不支援在已叫用的工作流程上設定中斷點。  
+    > 不支援在已叫用的工作流程上設定中斷點。  
   
 ### <a name="to-set-a-breakpoint-using-the-new-breakpoint-option-on-the-debug-menu"></a>若要使用偵錯功能表上的新增中斷點選項設定中斷點  
   
@@ -52,7 +52,7 @@ ms.locfileid: "60069961"
 3. 指定的名稱中的活動**函式**文字方塊中，使用下列語法： `QualifiedActivityId[:[FullClassName][:InstanceId]]`。  
   
     > [!NOTE]
-    >  （選擇性） 而非使用中的活動名稱**函式** 文字方塊中，您可以藉由指定的工作流程活動的絕對路徑設定中斷點。 例如，假設您擁有名為工作流程解決方案**WorkflowConsoleApplication1**和名為方案中的工作流程**Workflow1**使用的活動**Delay1**. 您可以使用活動名稱**Delay1** ，或指定為路徑**Delay1:WorkflowConsoleApplication1.Workflow1**或**Delay1:WorkflowConsoleApplication1.Workflow1: {6614886A-608E-412B-BF98-99FF1559DDDF}**。  
+    > （選擇性） 而非使用中的活動名稱**函式** 文字方塊中，您可以藉由指定的工作流程活動的絕對路徑設定中斷點。 例如，假設您擁有名為工作流程解決方案**WorkflowConsoleApplication1**和名為方案中的工作流程**Workflow1**使用的活動**Delay1**. 您可以使用活動名稱**Delay1** ，或指定為路徑**Delay1:WorkflowConsoleApplication1.Workflow1**或**Delay1:WorkflowConsoleApplication1.Workflow1: {6614886A-608E-412B-BF98-99FF1559DDDF}**。  
   
 4. 選取 **使用 IntelliSense**核取方塊，以確認函式名稱。  
   

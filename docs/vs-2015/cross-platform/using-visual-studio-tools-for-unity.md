@@ -9,12 +9,12 @@ caps.latest.revision: 7
 author: conceptdev
 ms.author: crdun
 manager: jillfra
-ms.openlocfilehash: eed341b5ae43f52e7df35d820012e760166e096f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: cd05f5ebad1a07e818e377b90aeb5e137f296cd9
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60073423"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443368"
 ---
 # <a name="using-visual-studio-tools-for-unity"></a>使用 Visual Studio Tools for Unity
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -117,7 +117,7 @@ ms.locfileid: "60073423"
      ![這個圖示顯示 VSTU 已連接到 Unity。](../cross-platform/media/vstu-connection-connected.png "vstu_connection_connected")  
   
 > [!TIP]
->  如果插頭圖示顯示一個勾選記號，則表示您已連接到 Unity 執行個體。  
+> 如果插頭圖示顯示一個勾選記號，則表示您已連接到 Unity 執行個體。  
   
  [選取 Unity 執行個體] 對話方塊會顯示您可連接之每個 Unity 執行個體的一些資訊。  
   
@@ -136,7 +136,7 @@ ms.locfileid: "60073423"
  這個 Unity 執行個體用於通訊之 UDP 通訊端的通訊埠編號。  
   
 > [!IMPORTANT]
->  由於 Visual Studio Tools for Unity 是透過 UDP 網路通訊端與 Unity 執行個體通訊，因此您的防火牆可能會要求這項資訊。 如果發生這種情況，您必須授權連接，VSTU 和 Unity 才能通訊。  
+> 由於 Visual Studio Tools for Unity 是透過 UDP 網路通訊端與 Unity 執行個體通訊，因此您的防火牆可能會要求這項資訊。 如果發生這種情況，您必須授權連接，VSTU 和 Unity 才能通訊。  
   
 ### <a name="debugging-your-project-in-a-unity-player"></a> 在 Unity 播放器中為專案偵錯  
  如果沒有執行 Unity Editor，您可以將 Visual Studio Tools for Unity 直接連接到在獨立播放器中執行的 Unity 應用程式，您也可以透過這個方式來偵錯平台特定的問題。  
@@ -154,7 +154,7 @@ ms.locfileid: "60073423"
 - 在 Unity Web Player 的操作功能表上，選擇 [Release Channel]，並確定已啟用 [Development] 選項。  
   
   > [!IMPORTANT]
-  >  在 Unity 4.2 (含) 以後版本中，只有 Web Player 操作功能表才會提供 [Release Channel] 操作功能表項目 (在開啟操作功能表時按 **Alt** 鍵)。 如果 Web Player 是在 Mac OS X 上執行，請改按 **Option** 鍵。  
+  > 在 Unity 4.2 (含) 以後版本中，只有 Web Player 操作功能表才會提供 [Release Channel] 操作功能表項目 (在開啟操作功能表時按 **Alt** 鍵)。 如果 Web Player 是在 Mac OS X 上執行，請改按 **Option** 鍵。  
   
   最後，請確定您已連接到要偵錯的 Unity 執行個體。 如需如何執行此動作的相關資訊，請參閱[將 Visual Studio 連接到 Unity](#connecting-visual-studio-to-unity) 一節。  
   
@@ -162,7 +162,7 @@ ms.locfileid: "60073423"
  許多 Unity 開發人員會將程式碼元件撰寫成外部 DLL，以便與其他專案共用他們所開發的功能。 Visual Studio Tools for Unity 可讓您順暢地連同 Unity 專案中的其他程式碼一起為這些 DLL 中的程式碼偵錯。  
   
 > [!NOTE]
->  目前，Visual Studio Tools for Unity 僅支援 Managed DLL， 並不支援對機器碼 DLL 進行偵錯 (例如以 C++ 撰寫的 DLL)。  
+> 目前，Visual Studio Tools for Unity 僅支援 Managed DLL， 並不支援對機器碼 DLL 進行偵錯 (例如以 C++ 撰寫的 DLL)。  
   
  請注意，此處所述的情節假設您有原始程式碼；也就是說，您正在開發或重複使用自己的第一方程式碼，或您有協力廠商程式庫的程式碼，並打算將其部署至 Unity 專案中做為 DLL。 該情節不會說明如何對您沒有原始程式碼的 DLL 進行偵錯。  
   

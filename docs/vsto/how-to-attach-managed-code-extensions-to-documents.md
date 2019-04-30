@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 18ca5e0cbf341f27454377c544e20cd2aba1388f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: f56d51817491726e6011e965bfd6d68630bb0dbf
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60044260"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441807"
 ---
 # <a name="how-to-attach-managed-code-extensions-to-documents"></a>HOW TO：將 managed 程式碼擴充附加至文件
   您可以將自訂組件附加至現有的 Microsoft Office Word 文件或 Microsoft Office Excel 活頁簿。 文件或活頁簿可以處於任何支援的 Visual Studio 中的開發工具與 Microsoft Office 專案的檔案格式。 如需詳細資訊，請參閱 <<c0> [ 文件層級自訂的架構](../vsto/architecture-of-document-level-customizations.md)。
@@ -28,7 +28,7 @@ ms.locfileid: "60044260"
  若要將自訂附加至 Word 或 Excel 文件，請使用<xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument.AddCustomization%2A>方法的<xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument>類別。 因為<xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument>類別設計來在沒有安裝 Microsoft Office 的電腦上執行，您可以使用這個方法不直接相關 （例如主控台或 Windows Forms 應用程式中） 的 Microsoft Office 程式開發的方案中。
 
 > [!NOTE]
->  自訂將無法載入程式碼預期沒有指定的文件的控制項。
+> 自訂將無法載入程式碼預期沒有指定的文件的控制項。
 
  ![影片連結](../vsto/media/playvideo.gif "影片連結")如需相關的影片示範，請參閱[How do i:附加或中斷連結的 Word 文件從 VSTO 組件嗎？](http://go.microsoft.com/fwlink/?LinkId=136782).
 

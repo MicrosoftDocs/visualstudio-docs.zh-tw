@@ -11,12 +11,12 @@ ms.assetid: 8e16c381-03c8-404e-92ef-3614cdf3150a
 caps.latest.revision: 53
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: cc12854574f21c1d75f57bae592d6a504db9b189
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 9099bc79a555f908ddda12dc9da83f015791fd86
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60087562"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444830"
 ---
 # <a name="adding-a-tool-window"></a>新增工具視窗
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,7 +41,7 @@ ms.locfileid: "60087562"
 1. 建立專案，名為**FirstToolWin**使用 [VSIX] 範本，然後新增名為的自訂工具視窗項目範本**FirstToolWindow**。  
   
     > [!NOTE]
-    >  如需使用工具視窗建立擴充功能的詳細資訊，請參閱[工具視窗建立擴充](../extensibility/creating-an-extension-with-a-tool-window.md)。  
+    > 如需使用工具視窗建立擴充功能的詳細資訊，請參閱[工具視窗建立擴充](../extensibility/creating-an-extension-with-a-tool-window.md)。  
   
 ## <a name="add-a-control-to-the-tool-window"></a>將控制項加入工具視窗  
   
@@ -264,7 +264,7 @@ public System.Windows.Controls.MediaElement MediaPlayer
      第一個具名的參數是`Style`且其值為`Tabbed`，這表示會將此視窗中現有的視窗的索引標籤。 停駐的位置由指定`Window`參數，此案例中，n 的 GUID**方案總管 中**。  
   
     > [!NOTE]
-    >  如需在 IDE 中 windows 類型的詳細資訊，請參閱<xref:EnvDTE.vsWindowType>。  
+    > 如需在 IDE 中 windows 類型的詳細資訊，請參閱<xref:EnvDTE.vsWindowType>。  
   
 ## <a name="testing-the-tool-window"></a>測試工具視窗  
   

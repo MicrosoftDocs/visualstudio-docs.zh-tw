@@ -15,11 +15,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 3b8f2deaa728a2bcd71bcd2264fcd110aee7982e
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55945764"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62825249"
 ---
 # <a name="usage-warnings"></a>用法警告
 用法警告支援.NET Framework 的正確用法。
@@ -50,7 +50,7 @@ ms.locfileid: "55945764"
 |[CA2220:完成項應該呼叫基底類別完成項](../code-quality/ca2220-finalizers-should-call-base-class-finalizer.md)|最終化必須透過繼承階層架構 (Inheritance Hierarchy) 進行傳播。 若要確保這一點，則類型必須在它們自己的 Finalize 方法中呼叫基底類別 Finalize 方法。|
 |[CA2221:完成項應該受到保護](../code-quality/ca2221-finalizers-should-be-protected.md)|完成項必須使用系列存取修飾詞 (Modifier)。|
 |[CA2222:不要降低繼承的成員的可視性](../code-quality/ca2222-do-not-decrease-inherited-member-visibility.md)|您不得變更繼承成員的存取修飾詞 (Modifier)。 將繼承成員變更為私用不會防止呼叫端存取方法的基底類別 (Base Class) 實作。|
-|[CA2223:成員不應該由多個傳回的型別不同](../code-quality/ca2223-members-should-differ-by-more-than-return-type.md)|雖然通用語言執行平台允許使用傳回型別區分其他部分都相同的成員，但這個功能不屬於 Common Language Specification，也不是 .NET 程式語言共通的功能。|
+|[CA2223:成員不應該由多個傳回的型別不同](../code-quality/ca2223-members-should-differ-by-more-than-return-type.md)|雖然通用語言執行平台允許使用傳回類型區分其他部分都相同的成員，但這個功能不屬於 Common Language Specification，也不是 .NET 程式語言共通的功能。|
 |[CA2224:覆寫等於多載等號比較運算子](../code-quality/ca2224-override-equals-on-overloading-operator-equals.md)|公用類型會實作等號比較運算子，但不會覆寫 Object.Equals。|
 |[CA2225:運算子多載必須有具名的替代項目](../code-quality/ca2225-operator-overloads-have-named-alternates.md)|偵測到運算子多載，且找不到預期的具名替代方法。 具名的替代成員可存取運算子，與相同的功能，並可供開發人員並不支援多載的運算子的語言設計程式。|
 |[CA2226:運算子應該有對稱的多載](../code-quality/ca2226-operators-should-have-symmetrical-overloads.md)|型別會實作相等或不等比較運算子，並不會實作相反的運算子。|
@@ -62,9 +62,9 @@ ms.locfileid: "55945764"
 |[CA2232:以 STAThread 標記 Windows Form 進入點](../code-quality/ca2232-mark-windows-forms-entry-points-with-stathread.md)|STAThreadAttribute 表示應用程式的 COM 執行緒模型為單一執行緒 Apartment。 在使用 Windows Form 的任何應用程式之進入點上必須有此屬性。如果省略的話，Windows 元件就無法正常運作。|
 |[CA2233:運算不應該發生溢位](../code-quality/ca2233-operations-should-not-overflow.md)|不應執行算術運算，而不需要先驗證運算元，以確定作業的結果不相關的資料類型的可能值的範圍之外。|
 |[CA2234： 必須必須傳遞 System.Uri 物件而不是字串](../code-quality/ca2234-pass-system-uri-objects-instead-of-strings.md)|呼叫字串參數名稱包含 "uri"、"URI"、"urn"、"URN"、"url" 或 "URL"，  而且此方法的宣告類型會包含具有 System.Uri 參數的對應方法多載。|
-|[CA2235： 必須標記所有不可序列化的欄位](../code-quality/ca2235-mark-all-non-serializable-fields.md)|可序列化之類型中所宣告之類型的執行個體 (Instance) 欄位是不可序列化的。|
+|[CA2235：必須標記所有不可序列化的欄位](../code-quality/ca2235-mark-all-non-serializable-fields.md)|可序列化之類型中所宣告之類型的執行個體 (Instance) 欄位是不可序列化的。|
 |[CA2236： 必須ISerializable 類型上呼叫基底類別方法](../code-quality/ca2236-call-base-class-methods-on-iserializable-types.md)|若要修正此規則的違規情形，請從對應的衍生類型方法或建構函式，呼叫基底類型 GetObjectData 方法或序列化建構函式。|
-|[CA2237： 必須Serializableattribute 標記 ISerializable 類型](../code-quality/ca2237-mark-iserializable-types-with-serializableattribute.md)|能夠辨識的 common language runtime 為可序列化，類型必須標記 SerializableAttribute 屬性為即使使用自訂序列化常式透過實作 ISerializable 介面的類型。|
+|[CA2237：Serializableattribute 標記 ISerializable 類型](../code-quality/ca2237-mark-iserializable-types-with-serializableattribute.md)|能夠辨識的 common language runtime 為可序列化，類型必須標記 SerializableAttribute 屬性為即使使用自訂序列化常式透過實作 ISerializable 介面的類型。|
 |[CA2238： 請正確實作序列化方法](../code-quality/ca2238-implement-serialization-methods-correctly.md)|處理序列化事件的方法沒有正確的簽章、傳回型別或可視性。|
 |[CA2239： 必須提供選擇性欄位的還原序列化方法](../code-quality/ca2239-provide-deserialization-methods-for-optional-fields.md)|型別具有使用 System.Runtime.Serialization.OptionalFieldAttribute 屬性標示的欄位和類型不提供還原序列化事件處理常式方法。|
 |[CA2240:必須正確實作 ISerializable](../code-quality/ca2240-implement-iserializable-correctly.md)|若要修正此規則的違規情形，將 GetObjectData 方法設為可見和可覆寫，並確定所有執行個體欄位都包含在序列化程序，或以 NonSerializedAttribute 屬性明確標記。|

@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2c757f2ee7dc69e53f492d4dfa37c2ca95b4af70
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 304b2afd734527b80a465fc5074077bf8b0661fe
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60100582"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63411324"
 ---
 # <a name="create-a-settings-category"></a>建立設定類別
 
@@ -46,7 +46,7 @@ ms.locfileid: "60100582"
      這會建立資源，該名稱"My Category"的類別、 物件"My Settings"和類別描述 「 OptionInteger 和 OptionFloat"。
 
     > [!NOTE]
-    >  三者之中，只有類別名稱未出現在**匯入和匯出設定**精靈。
+    > 三者之中，只有類別名稱未出現在**匯入和匯出設定**精靈。
 
 3. 在  *MyToolsOptionsPackage.cs*，新增`float`名為屬性`OptionFloat`到`OptionPageGrid`類別，如下列範例所示。
 
@@ -76,7 +76,7 @@ ms.locfileid: "60100582"
     ```
 
     > [!NOTE]
-    >  `OptionPageGrid`現在名為"My Category"類別目錄包含兩個屬性，`OptionInteger`和`OptionFloat`。
+    > `OptionPageGrid`現在名為"My Category"類別目錄包含兩個屬性，`OptionInteger`和`OptionFloat`。
 
 4. 新增<xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute>至`MyToolsOptionsPackage`類別並為它提供類別名稱"My Category"，讓它 ObjectName"My Settings"，再 isToolsOptionPage 設為 true。 設定 categoryResourceID、 objectNameResourceID 和 DescriptionResourceID 對應識別碼稍早建立的字串資源。
 

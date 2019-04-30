@@ -11,12 +11,12 @@ ms.assetid: 4948c494-3d4d-4f50-b3f9-959e73f90e4d
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: f253f053f9f8fc9a7e377d78ae46307262c13006
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 03bb20abf32f7c320ed56f4a649a9f43453e7694
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58942970"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63447268"
 ---
 # <a name="important-commands-for-language-service-filters"></a>語言服務篩選的重要命令
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -26,7 +26,7 @@ ms.locfileid: "58942970"
 ## <a name="commands-to-handle"></a>控制代碼的命令  
   
 > [!NOTE]
->  它並不一定要篩選為下表中的每個命令。  
+> 它並不一定要篩選為下表中的每個命令。  
   
 |命令|描述|  
 |-------------|-----------------|  

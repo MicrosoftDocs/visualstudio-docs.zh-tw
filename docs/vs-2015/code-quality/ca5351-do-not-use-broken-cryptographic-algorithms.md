@@ -8,12 +8,12 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 71f92543b73eddb26f82e787f5c81f53d3aeddb8
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 780745e2b4213d8fdd130fe03cac292b233c5b0c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60102662"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63430668"
 ---
 # <a name="ca5351-do-not-use-broken-cryptographic-algorithms"></a>CA5351 不要使用中斷的密碼編譯演算法
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,7 +26,7 @@ ms.locfileid: "60102662"
 |中斷變更|非中斷|  
   
 > [!NOTE]
->  上次於 2015 年 11 月更新此警告。  
+> 上次於 2015 年 11 月更新此警告。  
   
 ## <a name="cause"></a>原因  
  雜湊函式 (例如 <xref:System.Security.Cryptography.MD5> ) 和加密演算法 (例如 <xref:System.Security.Cryptography.DES> 和 <xref:System.Security.Cryptography.RC2> ) 可以公開重大風險，而且可能會透過一般攻擊技巧 (例如暴力攻擊和雜湊衝突) 而導致公開機密資訊。  

@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cdf8668b6a34ca6f663b83640e71951f0cb7c255
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: c04f500ceb8a1c95f643fe43c292bb668d54c2aa
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60110228"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63406584"
 ---
 # <a name="how-to-specify-which-files-are-published-by-clickonce"></a>HOW TO：指定哪些檔案是由 ClickOnce 發佈
 發佈時[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]隨應用程式會部署專案中的應用程式中，所有非程式碼檔案。 在某些情況下，您可能不想要或需要發行特定檔案，或您可能想要安裝特定條件為基礎的檔案。 Visual Studio 提供的功能來排除檔案、 將檔案標示為資料檔案或必要條件，以及建立的條件式安裝的檔案群組。
@@ -92,7 +92,7 @@ ms.locfileid: "60110228"
 4. 在 **應用程式檔案**對話方塊中，選取**群組**欄位，您想要在新的群組中包含的檔案。
 
     > [!NOTE]
-    >  檔案必須有**建置動作**屬性設定為**內容**檔案名稱會出現在之前**應用程式檔案** 對話方塊。
+    > 檔案必須有**建置動作**屬性設定為**內容**檔案名稱會出現在之前**應用程式檔案** 對話方塊。
 
 5. 在 **下載群組**欄位中，選取**\<新增...>** 從下拉式清單。
 
@@ -111,7 +111,7 @@ ms.locfileid: "60110228"
 5. 在 **下載群組**欄位中，從下拉式清單中選取一個群組。
 
     > [!NOTE]
-    >  您無法變更**下載群組**所需的應用程式執行的檔案。
+    > 您無法變更**下載群組**所需的應用程式執行的檔案。
 
 ## <a name="see-also"></a>另請參閱
 - [發佈 ClickOnce 應用程式](../deployment/publishing-clickonce-applications.md)

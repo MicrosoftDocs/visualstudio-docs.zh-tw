@@ -10,11 +10,11 @@ ms.assetid: 847717c9-477d-4ac9-8b2c-2da878912478
 caps.latest.revision: 11
 manager: jillfra
 ms.openlocfilehash: 83608d768940158dcdab427a557577677e56f7c8
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60056168"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62822434"
 ---
 # <a name="how-to-create-a-vsct-file-from-an-existing-cto-file"></a>HOW TO：建立。從現有的 Vsct 檔案。Cto 檔案
 您可以從現有的二進位檔 .cto 建立 XML 檔 .vsct。 這樣做可讓您充分利用新的命令資料表編譯器格式。 即使 .cto 檔是從 .ctc 檔所編譯，這個程序也適用。 您可以將 .vsct 檔編輯並編譯成另一個 .cto 檔。  

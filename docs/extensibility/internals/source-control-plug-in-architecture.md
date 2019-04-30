@@ -11,17 +11,17 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 6ff9c73ebbe976df7c3d25304280e743cad0423c
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56601728"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62908514"
 ---
 # <a name="source-control-plug-in-architecture"></a>原始檔控制外掛程式架構
 您可以加入至原始檔控制支援[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]藉由實作和附加的原始檔控制外掛程式的整合式的開發環境 (IDE)。 IDE 會連接到原始檔控制外掛程式，透過定義完善的原始檔控制外掛程式 API。 IDE 會提供工具列和功能表命令所組成的使用者介面 (UI)，以顯示原始檔控制系統的版本控制功能。 原始檔控制外掛程式會實作原始檔控制功能。
 
 ## <a name="source-control-plug-in-resources"></a>原始檔控制外掛程式資源
- 原始檔控制外掛程式提供可協助建立並連線到應用程式版本設定資源[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]IDE。 原始檔控制外掛程式含有 API 規格，必須實作原始檔控制外掛程式，讓它可以整合到[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]IDE。 它也包含實作的基本架構的原始檔控制外掛程式示範實作必要的功能與原始檔控制外掛程式 API 相容的程式碼範例 （c + + 中撰寫）。
+ 原始檔控制外掛程式提供可協助建立並連線到應用程式版本設定資源[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]IDE。 原始檔控制外掛程式含有 API 規格，必須實作原始檔控制外掛程式，讓它可以整合到[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]IDE。 它也包含程式碼範例 (以C++) 實作的基本架構的原始檔控制外掛程式示範實作必要的功能與原始檔控制外掛程式 API 相容。
 
  原始檔控制外掛程式 API 規格可讓您使用您選擇的任何原始檔控制系統，如果您建立一組必要根據原始檔控制外掛程式 API 所實作的函式的原始檔控制 DLL。
 

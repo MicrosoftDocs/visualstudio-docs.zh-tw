@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 1d8070acfa254ae26e017a0070a21884309bc4d7
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56616335"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62840635"
 ---
 # <a name="idiatableitem"></a>IDiaTable::Item
 擷取指定的項目資料表中的參考。
@@ -48,7 +48,7 @@ HRESULT Item ( 
 
  它是更常見的方法來呼叫`QueryInterface`方法中的[IDiaTable](../../debugger/debug-interface-access/idiatable.md)適當的列舉程式介面的介面，並使用列舉值的特定方法來存取資料表內容。 請參閱[IDiaEnumInjectedSources](../../debugger/debug-interface-access/idiaenuminjectedsources.md)介面的範例。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [IDiaTable](../../debugger/debug-interface-access/idiatable.md)
 - [IDiaTable::get_Count](../../debugger/debug-interface-access/idiatable-get-count.md)
 - [IDiaSegment](../../debugger/debug-interface-access/idiasegment.md)

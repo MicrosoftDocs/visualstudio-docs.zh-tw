@@ -19,12 +19,12 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: d2aefe68761d31f87d84c9215a6187c28e7b471b
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: 3541dada6167bd2f0a95913d9ccc385dc3e5ccc3
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59668986"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63439477"
 ---
 # <a name="bind-windows-forms-controls-to-data"></a>將 Windows Forms 控制項繫結至資料
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -54,7 +54,7 @@ ms.locfileid: "59668986"
  ![資料來源繫結詳細資料](../data-tools/media/raddata-bind-data-source-to-details.png "raddata 繫結資料來源詳細資料")  
   
 > [!IMPORTANT]
->  請注意，在上圖中，您將從 [客戶] 資料表中，不是從 「 訂單 」 資料表中的 [訂單] 屬性。 藉由 Customer.Orders 屬性繫結，在 DataGridView 中所做的巡覽命令會立即反映在詳細資料控制項。 如果您從 [Orders] 資料表拖曳時，控制項就仍然繫結至資料集，但不是會不會同步處理，則使用 DataGridView。  
+> 請注意，在上圖中，您將從 [客戶] 資料表中，不是從 「 訂單 」 資料表中的 [訂單] 屬性。 藉由 Customer.Orders 屬性繫結，在 DataGridView 中所做的巡覽命令會立即反映在詳細資料控制項。 如果您從 [Orders] 資料表拖曳時，控制項就仍然繫結至資料集，但不是會不會同步處理，則使用 DataGridView。  
   
  下圖顯示的預設資料繫結控制項的 Customers 資料表中的 Orders 屬性繫結至 [詳細資料] 之後才加入至表單中**Zdroje dat**視窗。  
   

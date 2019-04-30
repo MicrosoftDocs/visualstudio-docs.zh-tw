@@ -17,11 +17,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: e3c9521389ce348a482f35ec95c9766edea49f5f
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56631051"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62977896"
 ---
 # <a name="password-protection-on-office-documents"></a>Office 文件上的密碼保護
   您可在您的 Microsoft Office Word 文件和 Microsoft Office Excel 活頁簿設定密碼，以便他們不知道密碼的其他人無法開啟。 此選項稱為**密碼開啟**。

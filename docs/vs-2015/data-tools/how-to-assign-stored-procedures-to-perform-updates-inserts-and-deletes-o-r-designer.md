@@ -9,12 +9,12 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 84aa3400eb6b64e8904d95e0fce7b43ae9351ad8
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 1b5834e00cfaf43d1e5230ffbb221dbd5044d687
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60060861"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63386832"
 ---
 # <a name="how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-or-designer"></a>HOW TO：指派用來執行更新、插入和刪除的預存程序 (O/R 設計工具)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -22,10 +22,10 @@ ms.locfileid: "60060861"
 預存程序 (Stored Procedure) 可以加入至 O/R 設計工具，而且可以當成一般 <xref:System.Data.Linq.DataContext> 方法來執行。 它們也可用來覆寫預設值[!INCLUDE[vbtecdlinq](../includes/vbtecdlinq-md.md)]執行插入、 更新和刪除時的變更儲存至資料庫的實體類別的執行階段行為 (例如，在呼叫時，才<xref:System.Data.Linq.DataContext.SubmitChanges%2A>方法)。  
   
 > [!NOTE]
->  如果預存程序傳回的值需要送回給用戶端 (例如，在預存程序中計算的值)，請在預存程序中建立輸出參數。 如果您無法使用輸出參數，請撰寫部分方法實作 (Implementation)，而不要依賴 O/R 設計工具產生的覆寫作業。 與資料庫產生的值對應的成員，必須在 INSERT 或 UPDATE 作業成功完成之後設定為適當值。 如需詳細資訊，請參閱 <<c0> [ 開發人員在覆寫預設行為的責任](http://msdn.microsoft.com/library/c6909ddd-e053-46a8-980c-0e12a9797be1)。  
+> 如果預存程序傳回的值需要送回給用戶端 (例如，在預存程序中計算的值)，請在預存程序中建立輸出參數。 如果您無法使用輸出參數，請撰寫部分方法實作 (Implementation)，而不要依賴 O/R 設計工具產生的覆寫作業。 與資料庫產生的值對應的成員，必須在 INSERT 或 UPDATE 作業成功完成之後設定為適當值。 如需詳細資訊，請參閱 <<c0> [ 開發人員在覆寫預設行為的責任](http://msdn.microsoft.com/library/c6909ddd-e053-46a8-980c-0e12a9797be1)。  
   
 > [!NOTE]
->  [!INCLUDE[vbtecdlinq](../includes/vbtecdlinq-md.md)] 會自動針對識別 (自動遞增)、rowguidcol (資料庫產生的 GUID) 和時間戳記資料行處理資料庫產生的值。 其他資料行型別的資料庫產生值將非預期地產生 null 值。 若要傳回資料庫產生的值，您應該手動將 <xref:System.Data.Linq.Mapping.ColumnAttribute.IsDbGenerated%2A> 設定為 `true`，並將 <xref:System.Data.Linq.Mapping.ColumnAttribute.AutoSync%2A> 設定為下列其中一項：<xref:System.Data.Linq.Mapping.AutoSync>、<xref:System.Data.Linq.Mapping.AutoSync> 或 <xref:System.Data.Linq.Mapping.AutoSync>。  
+> [!INCLUDE[vbtecdlinq](../includes/vbtecdlinq-md.md)] 會自動針對識別 (自動遞增)、rowguidcol (資料庫產生的 GUID) 和時間戳記資料行處理資料庫產生的值。 其他資料行型別的資料庫產生值將非預期地產生 null 值。 若要傳回資料庫產生的值，您應該手動將 <xref:System.Data.Linq.Mapping.ColumnAttribute.IsDbGenerated%2A> 設定為 `true`，並將 <xref:System.Data.Linq.Mapping.ColumnAttribute.AutoSync%2A> 設定為下列其中一項：<xref:System.Data.Linq.Mapping.AutoSync>、<xref:System.Data.Linq.Mapping.AutoSync> 或 <xref:System.Data.Linq.Mapping.AutoSync>。  
   
 ## <a name="configuring-the-update-behavior-of-an-entity-class"></a>設定實體類別的更新行為  
  利用 [!INCLUDE[vbtecdlinq](../includes/vbtecdlinq-md.md)] 實體類別中的資料變更來更新資料庫 (插入、更新和刪除) 的邏輯，預設是由 [!INCLUDE[vbtecdlinq](../includes/vbtecdlinq-md.md)] 執行階段所提供。 執行階段會建立預設資料表 （資料行和主索引鍵資訊） 的結構描述為基礎的 Insert、 Update 和 Delete 命令。 當不需要的預設行為時，您可以設定更新行為，指派特定的預存程序來執行所需的插入、 更新和刪除作業來操作您的資料表中的資料。 未產生預設行為時 (例如，實體類別是對應至檢視時)，同樣可以這樣做。 最後，在資料庫需要透過預存程序進行資料表存取時，也可以覆寫預設更新行為。  
@@ -55,12 +55,12 @@ ms.locfileid: "60060861"
 9. 檢查 [方法引數] 和 [類別屬性] 清單，以確認 [方法引數] 對應至適當的 [類別屬性]。 對應的原始方法引數 (Original_*ArgumentName*) 至原始屬性 (*PropertyName* (Original)) 的 Update 和 Delete 命令。  
   
     > [!NOTE]
-    >  根據預設，方法引數會對應至同名的類別屬性。 如果屬性名稱變更，使得資料表與實體類別之間不再對應，則您可能需要選取當 O/R 設計工具無法判斷正確的對應時，所要對應的對等類別屬性。  
+    > 根據預設，方法引數會對應至同名的類別屬性。 如果屬性名稱變更，使得資料表與實體類別之間不再對應，則您可能需要選取當 O/R 設計工具無法判斷正確的對應時，所要對應的對等類別屬性。  
   
 10. 按一下 [確定] 或 [套用]。  
   
     > [!NOTE]
-    >  完成每一項變更後按一下 [套用]，即可繼續設定每個類別/行為組合的行為。 如果您變更了類別或行為再按一下 **套用**、 提供讓您套用任何變更將會出現警告對話方塊。  
+    > 完成每一項變更後按一下 [套用]，即可繼續設定每個類別/行為組合的行為。 如果您變更了類別或行為再按一下 **套用**、 提供讓您套用任何變更將會出現警告對話方塊。  
   
      若要還原為使用預設執行階段邏輯進行更新，請按一下 Insert、 Update、 旁邊的省略符號或 Delete 命令中的**屬性** 視窗，然後選取**使用執行階段**在**設定行為** 對話方塊。  
   

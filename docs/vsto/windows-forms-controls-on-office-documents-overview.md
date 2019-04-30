@@ -27,12 +27,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 39cdb98f14823b02c8d4d2b60575eddca6da0420
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 927451ed35ce4bbdfbff7531b2828b0571354f34
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60055349"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445362"
 ---
 # <a name="windows-forms-controls-on-office-documents-overview"></a>在 Office 文件概觀上的 Windows Form 控制項
   Windows Forms 控制項是使用者可以互動，輸入或操作資料的物件。 在 Microsoft Office Excel 和 Microsoft Office Word 的文件層級專案，您可以將 Windows Form 控制項加入文件或活頁簿專案中在設計階段，或您可以在執行階段以程式設計方式加入這些控制項。 您可以程式設計方式加入這些控制項加入任何開啟的文件或 VSTO 增益集在執行階段的工作表的 Excel 或 Word。
@@ -109,7 +109,7 @@ ms.locfileid: "60055349"
 - **將垂直間距設為相等**
 
 > [!NOTE]
->  在 Word 專案中，只有選取的控制項與文字未對齊時才會啟用這些按鈕。 根據預設，在設計階段加入文件的控制項會與文字對齊。
+> 在 Word 專案中，只有選取的控制項與文字未對齊時才會啟用這些按鈕。 根據預設，在設計階段加入文件的控制項會與文字對齊。
 
 ### <a name="prevent-old-data-from-appearing-in-excel-workbooks-during-loading"></a>從 Excel 活頁簿中出現在載入期間防止舊資料
  當您在設計階段將 Windows Forms 控制項加入文件或工作表時，如果使用者關閉文件，控制項仍然會留在文件中。 在設計階段加入的控制項也稱為 *靜態控制項*。

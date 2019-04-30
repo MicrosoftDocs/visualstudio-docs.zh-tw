@@ -11,11 +11,11 @@ ms.assetid: 408dcdef-8ef9-4644-97d2-f311cd35824f
 caps.latest.revision: 12
 manager: jillfra
 ms.openlocfilehash: a244463832ff5620efa74a2c7fd20d6d47d79e76
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60117521"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62810694"
 ---
 # <a name="providing-a-custom-properties-window"></a>提供自訂屬性視窗
 可提供您自己**屬性**視窗中指定的專案系統，而不是擴充**屬性**所提供的視窗[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]整合式的開發環境 (IDE)。 最常遇到的案例是當您自行實作設置在視窗框架的物件。  

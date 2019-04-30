@@ -20,12 +20,12 @@ caps.latest.revision: 32
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 10b4efd574dd5829e4717b168dc4e565476e9b52
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 4a6909bade36dce15bfae725fbaab60f24236451
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60102947"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436989"
 ---
 # <a name="connect-to-data-in-an-access-database-windows-forms"></a>連線至 Access 資料庫中的資料 (Windows Forms)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -61,7 +61,7 @@ ms.locfileid: "60102947"
      ![將 OLE DB 資料提供者](../data-tools/media/datachangedatasourceoledb.png "dataChangeDataSourceOLEDB")  
   
     > [!IMPORTANT]
-    >  雖然資料來源**Microsoft Access 資料庫檔案 (OLE DB)** 可能看起來是正確的選擇，您可以使用該資料來源類型僅適用於.mdb 資料庫檔案。  
+    > 雖然資料來源**Microsoft Access 資料庫檔案 (OLE DB)** 可能看起來是正確的選擇，您可以使用該資料來源類型僅適用於.mdb 資料庫檔案。  
   
 8. 在  **OLE DB 提供者**，選取**Microsoft Office 12.0 Access 資料庫引擎 OLE DB 提供者**。  
   
@@ -70,7 +70,7 @@ ms.locfileid: "60102947"
 9. 在 **伺服器或檔案名稱**，指定您想要連線，，然後選取的.accdb 檔案的名稱與路徑**確定**。  
   
     > [!NOTE]
-    >  如果資料庫檔案的使用者名稱和密碼，請在您選取之前指定它們**確定**。  
+    > 如果資料庫檔案的使用者名稱和密碼，請在您選取之前指定它們**確定**。  
   
 10. 選取 **下一步**上**選擇資料連接**頁面。  
   

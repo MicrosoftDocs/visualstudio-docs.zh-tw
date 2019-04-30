@@ -13,11 +13,11 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 9dd05e553ab5353b6ebf39970437c21c498caaff
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58941280"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62548088"
 ---
 # <a name="idebugstackframe2getthread"></a>IDebugStackFrame2::GetThread
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]

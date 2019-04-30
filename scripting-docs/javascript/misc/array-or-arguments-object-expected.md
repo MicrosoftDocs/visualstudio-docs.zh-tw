@@ -15,11 +15,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 403972bfc7a8f6c061713dba4138ef6ccb08444a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60097267"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62817985"
 ---
 # <a name="array-or-arguments-object-expected"></a>必須是陣列或引數物件
 您並未提供做為引數的陣列。 此錯誤適用於**Function.prototype.apply**僅方法。 如果指定，此函式的第二個引數必須是`Array`物件或**引數**物件。  

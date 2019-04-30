@@ -10,11 +10,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 6b3e6d9812f06df6d4af65f624579ec5f6550515
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55913310"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62424059"
 ---
 # <a name="choosing-a-domain-specific-language-solution-template"></a>選擇網域指定的語言方案範本
 若要建立特定領域語言方案，選擇其中一個特定領域語言設計工具精靈 中提供的解決方案範本。 藉由選擇最接近的語言，您想要建立的範本，您可以減少的修改，您必須先啟動解決方案。

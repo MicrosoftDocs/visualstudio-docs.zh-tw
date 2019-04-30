@@ -18,11 +18,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 41bf932b242865b1deac4c61db400f973bd0b00c
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58145001"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62787156"
 ---
 # <a name="iscriptnodedelete"></a>IScriptNode::Delete
 刪除此物件樹狀結構。  

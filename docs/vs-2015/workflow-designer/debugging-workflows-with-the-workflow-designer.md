@@ -13,11 +13,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 0135d9f782976f1d6ad6e2e09dc95c27cc66d846
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58943338"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62976739"
 ---
 # <a name="debugging-workflows-with-the-workflow-designer"></a>使用工作流程設計工具偵錯工作流程
 [!INCLUDE[wfd1](../includes/wfd1-md.md)] 提供工作流程與自訂活動的偵錯功能。 其處理序與行為表現類似預設的 [!INCLUDE[vs2010](../includes/vs2010-md.md)] 偵錯工具。 本節中的主題說明如何執行傳統的偵錯程序，以及 XAML 與運算式的偵錯。  

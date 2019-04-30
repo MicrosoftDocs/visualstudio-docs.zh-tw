@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: f572405b6246619dac8b567283696319d65211bc
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56625747"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62953176"
 ---
 # <a name="additional-resources-to-develop-office-solutions"></a>以開發 Office 方案的其他資源
   Microsoft Office Developer Tools for Visual Studio 只代表許多擴充 Office 應用程式方式的其中之一。 Office 應用程式也有一些內建的功能，例如 Open XML 格式，是 Office Developer Tools for Visual Studio 或本文件未涵蓋者。

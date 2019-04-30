@@ -11,12 +11,12 @@ ms.assetid: 9e2e01d9-7beb-42b2-99b2-86995578afda
 caps.latest.revision: 33
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: fe03499200d3528a1aed286550191fd9dfcc1451
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 997e734f6d2ab6bcf70e3a4843ac66564683c79b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60039838"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443306"
 ---
 # <a name="how-to-install-a-source-control-plug-in"></a>HOW TO：安裝原始檔控制外掛程式
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -47,7 +47,7 @@ ms.locfileid: "60039838"
     |HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\SourceSafe\SCCServerPath|c:\vss\win32\ssscc.dll|  
   
     > [!NOTE]
-    >  SCCServerPath 是 SourceSafe 外掛程式的完整路徑。 您的原始檔控制外掛程式會使用不同的公司和產品名稱，但相同的登錄項目路徑。  
+    > SCCServerPath 是 SourceSafe 外掛程式的完整路徑。 您的原始檔控制外掛程式會使用不同的公司和產品名稱，但相同的登錄項目路徑。  
   
 2. 下列選擇性的登錄項目可用來修改您的原始檔控制外掛程式的行為。 這些項目放在相同的子機碼為 SccServerName 和 SccServerPath。  
   
@@ -75,7 +75,7 @@ ms.locfileid: "60039838"
     |HKEY_LOCAL_MACHINE\SOFTWARE\SourceCodeControlProvider\ProviderRegKey|SOFTWARE\Microsoft\SourceSafe|  
   
     > [!NOTE]
-    >  您的原始檔控制外掛程式會使用相同的子機碼和項目名稱，但此值將會不同。  
+    > 您的原始檔控制外掛程式會使用相同的子機碼和項目名稱，但此值將會不同。  
   
 4. 建立子機碼下的 SourceCodeControlProvider 子機碼中，名為 InstalledSCCProviders，並將放置該子機碼下的一個項目。  
   
@@ -88,7 +88,7 @@ ms.locfileid: "60039838"
     |HKEY_LOCAL_MACHINE\SOFTWARE\SourceCodeControlProvider\InstalledSCCProviders\Microsoft Visual SourceSafe|SOFTWARE\Microsoft\SourceSafe|  
   
     > [!NOTE]
-    >  可以有多個原始檔控制外掛程式在這種方式中註冊。 這是如何[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]找出所有安裝原始檔控制外掛程式 API 為基礎的外掛程式。  
+    > 可以有多個原始檔控制外掛程式在這種方式中註冊。 這是如何[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]找出所有安裝原始檔控制外掛程式 API 為基礎的外掛程式。  
   
 ## <a name="how-an-ide-locates-the-dll"></a>IDE 如何找出 DLL  
  [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] IDE 有兩個方式來尋找原始檔控制外掛程式 DLL:  
@@ -100,14 +100,14 @@ ms.locfileid: "60039838"
   若要找出 DLL 中的第一個方法，IDE 會尋找項目的 ProviderRegKey HKEY_LOCAL_MACHINE\Software\SourceCodeControlProvider 子機碼下。 此項目的值會指向另一個子機碼。 IDE 接著會尋找名為 SccServerPath，HKEY_LOCAL_MACHINE 底下的第二個子機碼中的項目。 此項目的值會指向該 DLL 中的 IDE。  
   
 > [!NOTE]
->  IDE 無法載入 Dll 從相對路徑 (例如.\NewProvider.DLL)。 必須指定 DLL 的完整路徑 (例如 c:\Providers\NewProvider.DLL)。 這是藉由防止未經授權或模擬外掛程式的 Dll 載入加強安全性的 IDE。  
+> IDE 無法載入 Dll 從相對路徑 (例如.\NewProvider.DLL)。 必須指定 DLL 的完整路徑 (例如 c:\Providers\NewProvider.DLL)。 這是藉由防止未經授權或模擬外掛程式的 Dll 載入加強安全性的 IDE。  
   
  在第二種方法中，找出 DLL，IDE 會尋找所有項目的 HKEY_LOCAL_MACHINE\Software\SourceCodeControlProvider\InstalledSCCProviders 子機碼下<em>。</em> 每個項目都有名稱和值。 IDE 會向使用者顯示這些名稱的清單<em>。</em> 當使用者選擇的名稱時，IDE 會在指向子機碼所選取名稱尋找的值。 IDE 會尋找名為 SccServerPath，HKEY_LOCAL_MACHINE 底下的子機碼中的項目。 這個項目的值會指向正確的 DLL 中的 IDE。  
   
  原始檔控制外掛程式需要支援兩種尋找 DLL，並因此，設定 ProviderRegKey，覆寫任何先前的設定。 更重要的是，它必須將本身加入 InstalledSccProviders 份這樣使用者就能選擇使用哪一個原始檔控制外掛程式。  
   
 > [!NOTE]
->  因為使用 HKEY_LOCAL_MACHINE 機碼時，只有一個原始檔控制外掛程式可以註冊為預設原始檔控制外掛程式指定的電腦上 (不過，[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]讓使用者可以判斷哪一個原始檔控制外掛程式他們想要實際使用的特定的解決方案）。 在安裝過程中，檢查看看是否已經設定原始檔控制外掛程式;如果是的話，，詢問使用者要設定新的原始檔控制外掛程式安裝為預設值。 在 解除安裝期間請勿移除通用於所有原始檔控制外掛程式在 HKEY_LOCAL_MACHINE\SOFTWARE\SourceCodeControlProvider; 中的其他登錄子機碼移除只有您特定 SCC 子機碼。  
+> 因為使用 HKEY_LOCAL_MACHINE 機碼時，只有一個原始檔控制外掛程式可以註冊為預設原始檔控制外掛程式指定的電腦上 (不過，[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]讓使用者可以判斷哪一個原始檔控制外掛程式他們想要實際使用的特定的解決方案）。 在安裝過程中，檢查看看是否已經設定原始檔控制外掛程式;如果是的話，，詢問使用者要設定新的原始檔控制外掛程式安裝為預設值。 在 解除安裝期間請勿移除通用於所有原始檔控制外掛程式在 HKEY_LOCAL_MACHINE\SOFTWARE\SourceCodeControlProvider; 中的其他登錄子機碼移除只有您特定 SCC 子機碼。  
   
 ## <a name="how-the-ide-detects-version-1213-support"></a>IDE 會 1.2/1.3 版支援的偵測  
  如何沒有[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]偵測是否外掛程式支援原始檔控制外掛程式 API 版本 1.2 和 1.3 功能嗎？ 若要宣告進階的功能，原始檔控制外掛程式必須實作對應的函式。  

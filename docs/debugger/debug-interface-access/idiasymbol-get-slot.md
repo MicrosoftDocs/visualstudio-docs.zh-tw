@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7027a02be666b7faa7d3d831d5c1d81a86ee2119
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.openlocfilehash: be6d0ccbdfe2b89fbeb1f504bf683fab2b5a83b9
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56598254"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63400730"
 ---
 # <a name="idiasymbolgetslot"></a>IDiaSymbol::get_slot
 擷取位置的位置編號。 使用時機[LocationType 列舉](../../debugger/debug-interface-access/locationtype.md)是`LocIsSlot`。
@@ -39,8 +39,8 @@ HRESULT get_slot ( 
  如果成功，則傳回`S_OK`; 否則傳回`S_FALSE`或錯誤碼。
 
 > [!NOTE]
->  傳回值為`S_FALSE`表示屬性不是適用於符號。
+> 傳回值為`S_FALSE`表示屬性不是適用於符號。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
 - [LocationType 列舉](../../debugger/debug-interface-access/locationtype.md)

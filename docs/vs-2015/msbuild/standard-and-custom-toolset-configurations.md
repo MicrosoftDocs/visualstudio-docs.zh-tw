@@ -12,12 +12,12 @@ caps.latest.revision: 34
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: c629d82d208f45433564c1b36bb5aa889e402915
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: d08a7eb20c01568b3501f16348eb19afdcaefa2c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59668323"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444374"
 ---
 # <a name="standard-and-custom-toolset-configurations"></a>標準和自訂工具組的組態
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -57,7 +57,7 @@ MSBuild 工具組包含工作、目標和工具的參考，可用以組建應用
  `VisualStudioVersion` 組建屬性會指出子工具組是否成為作用中。 例如，`VisualStudioVersion` 值為 "12.0" 會指定 MSBuild 12.0 子工具組。 如需詳細資訊，請參閱[工具組 (ToolsVersion)](../msbuild/msbuild-toolset-toolsversion.md) 的＜子工具組＞一節。  
 
 > [!NOTE]
->  建議您避免變更這些設定。 但您可以新增自己的設定，並定義全電腦的自訂工具組定義，如下節所述。  
+> 建議您避免變更這些設定。 但您可以新增自己的設定，並定義全電腦的自訂工具組定義，如下節所述。  
 
 ## <a name="custom-toolset-definitions"></a>自訂工具組定義  
  當標準工具組無法滿足您的組建需求時，您可以建立自訂的工具組。 例如，您可能有個組建置實驗室案例，必須使用個別的系統組建 [!INCLUDE[vcprvc](../includes/vcprvc-md.md)] 專案。 使用自訂工具組，您就可以在建立專案或執行 MSBuild.exe 時，將自訂值指派給 `ToolsVersion` 屬性。 這樣做，也可以使用 `$(MSBuildToolsPath)` 屬性匯入該目錄的 .targets 檔案，以及定義您自己的自訂工具組屬性，這些屬性可用於使用該工具組的任何專案。  
@@ -86,12 +86,12 @@ MSBuild 工具組包含工作、目標和工具的參考，可用以組建應用
 ```  
 
 > [!NOTE]
->  為正確讀取，`<configSections>` 必須在 `<configuration>` 區段的第一個小節中。  
+> 為正確讀取，`<configSections>` 必須在 `<configuration>` 區段的第一個小節中。  
 
  `ToolsetConfigurationSection` 是可供任何 MSBuild 主機自訂組態使用的自訂組態區段。 如果使用自訂的工具組，主機除提供組態檔項目以外，不必執行任何作業來初始化組建引擎。 在登錄中定義項目，您就可以指定全電腦的工具組，套用至 MSBuild.exe、[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 和所有 MSBuild 主機。  
 
 > [!NOTE]
->  如果組態檔定義的 `ToolsVersion` 設定已在登錄中定義，這兩個定義不會合併。 組態檔中的定義優先，`ToolsVersion` 的登錄設定則予以忽略。  
+> 如果組態檔定義的 `ToolsVersion` 設定已在登錄中定義，這兩個定義不會合併。 組態檔中的定義優先，`ToolsVersion` 的登錄設定則予以忽略。  
 
  下列屬性專門針對專案中使用的 `ToolsVersion` 值：  
 

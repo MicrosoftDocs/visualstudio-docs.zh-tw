@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 45d1b74fd492d91104fbf60ffee689b772fea05f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60091937"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62860253"
 ---
 # <a name="new-project-generation-under-the-hood-part-one"></a>新專案產生：一探究竟，第一部份
 有人想到要如何建立您自己的專案類型嗎？ 不知道實際發生什麼事時建立新的專案？ 讓我們來看一下在幕後，並請參閱什麼實際狀況。
@@ -213,4 +213,4 @@ devenv /installvstemplates
     **MyProjectNode**做為子節點的 Visual C# 中的 [Windows] 節點下，只會出現。
 
 ## <a name="see-also"></a>另請參閱
-- [新的專案產生：在幕後，第二部分](../../extensibility/internals/new-project-generation-under-the-hood-part-two.md)
+- [新專案產生：一探究竟，第二部份](../../extensibility/internals/new-project-generation-under-the-hood-part-two.md)

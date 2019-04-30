@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 18c2100341a62abd0f8f12bd4b459c7e271a15bc
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60048706"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62912516"
 ---
 # <a name="dynamically-add-menu-items"></a>以動態方式加入功能表項目
 您可以在執行階段加入功能表項目，藉由指定`DynamicItemStart`命令在 Visual Studio 命令表中的預留位置按鈕定義的旗標 (*.vsct*) 檔案，則定義 （在程式碼） 來顯示的功能表項目數目和處理命令。 當載入 VSPackage 時，動態功能表項目會取代預留位置。

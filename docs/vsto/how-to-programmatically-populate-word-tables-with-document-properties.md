@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: e8a7e87268b021d8bc8a14b1b5d99f3331c0f431
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56631584"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62955985"
 ---
 # <a name="how-to-programmatically-populate-word-tables-with-document-properties"></a>HOW TO：以程式設計方式填入 Word 表格文件屬性
   下列範例會在文件的頂端建立 Microsoft Office Word 表格，並用主文件的屬性填入這個表格。

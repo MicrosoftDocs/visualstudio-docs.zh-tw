@@ -18,11 +18,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: a67a16e3fd4868726087df6f2596571d14630f80
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58147991"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62990972"
 ---
 # <a name="idebugapplicationdebugoutput"></a>IDebugApplication::DebugOutput
 會導致顯示偵錯工具整合式的開發環境 (IDE) 所指定的字串。  

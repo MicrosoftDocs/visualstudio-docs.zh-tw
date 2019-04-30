@@ -16,11 +16,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 4d3a43af5b2c7d50034cbed9d7da16e65b402f70
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56608301"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62928517"
 ---
 # <a name="ltfileassociationgt-element-clickonce-application"></a>&lt;fileAssociation&gt;項目 （ClickOnce 應用程式）
 識別要與應用程式相關聯的副檔名。
@@ -40,7 +40,7 @@ ms.locfileid: "56608301"
 ## <a name="elements-and-attributes"></a>元素和屬性
  `fileAssociation` 項目是選擇性的。 此元素具有下列屬性。
 
-|屬性|說明|
+|屬性|描述|
 |---------------|-----------------|
 |`extension`|必要項。 要與應用程式相關聯的副檔名。|
 |`description`|必要項。 Shell 所使用的檔案類型的描述。|

@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: be522112dd4cfa16744d0c9e54601ba7a0492704
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55912621"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63004237"
 ---
 # <a name="parallelforeach-activity-designer"></a>ParallelForEach 活動設計工具
 
@@ -41,7 +41,7 @@ ms.locfileid: "55912621"
 
 下表顯示最為實用的 <xref:System.Activities.Statements.ParallelForEach%601> 活動屬性，並且說明它們在設計工具中的使用方式。
 
-|屬性名稱|必要項|使用方式|
+|屬性名稱|必要|使用量|
 |-|--------------|-|
 |<xref:System.Activities.Activity.DisplayName%2A>|False|指定活動設計工具在標頭中的易記顯示名稱。 預設值是**ParallelForEach\<Int32 >**。 值可以在中選擇性地編輯**屬性**方格或直接在活動設計工具標頭。|
 |<xref:System.Activities.Statements.ParallelForEach%601.Body%2A>|False|集合中每個項目要執行的活動。 若要新增<xref:System.Activities.Statements.ParallelForEach%601.Body%2A>活動，請從工具箱拖曳到**主體**方塊**ParallelForEach\<T >** 活動設計工具提示文字 「 置放活動 」 與。|

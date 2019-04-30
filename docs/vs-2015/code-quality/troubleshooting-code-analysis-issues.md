@@ -2,19 +2,19 @@
 title: 針對程式碼分析問題進行疑難排解 | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.technology: vs-ide-code-analysis
+ms.technology: vs-ide-test
 ms.topic: troubleshooting
 ms.assetid: 61c7e44d-2780-4df5-9bcb-49e40c1152fc
 caps.latest.revision: 7
-author: gewarren
+author: erickson-doug
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 047866f958ebfe6de20d5f7760b72eaab4135ef1
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60075308"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62551464"
 ---
 # <a name="troubleshooting-code-analysis-issues"></a>程式碼分析問題疑難排解
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

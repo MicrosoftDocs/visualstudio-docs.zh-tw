@@ -10,11 +10,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 250b213fc3bc54d67f55d41c5eb3aba7e3488cd4
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58942706"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62420182"
 ---
 # <a name="messaging-activity-designers"></a>Messaging 活動設計工具
 傳訊活動設計工具會用來建立及設定從 [!INCLUDE[indigo1](../includes/indigo1-md.md)] 應用程式內部傳送與接收 [!INCLUDE[wf](../includes/wf-md.md)] 訊息的傳訊活動。 [!INCLUDE[netfx40_long](../includes/netfx40-long-md.md)] 導入五個傳訊活動，而且 [!INCLUDE[wfd1](../includes/wfd1-md.md)] 提供兩個新的範本設計工具，可用來管理工作流程內的傳訊。 本節包含的主題以及下表所列的主題會提供如何使用 [!INCLUDE[wfd2](../includes/wfd2-md.md)] 活動與範本設計工具的指引。  

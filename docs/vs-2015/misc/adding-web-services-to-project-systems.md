@@ -11,11 +11,11 @@ ms.assetid: 8efa078b-68b2-45a2-9be2-44f807bc0d7f
 caps.latest.revision: 8
 manager: jillfra
 ms.openlocfilehash: f5b192be8e5f68ad9314fe08fff963c032013cb0
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60042296"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63002661"
 ---
 # <a name="adding-web-services-to-project-systems"></a>將 Web 服務加入專案系統中
 XML Web service 在一般情況下，是以程式設計方式的資訊傳回給專案系統使用的 SOAP (Simple Object Access Protocol) 通訊協定的 URL 定址資源。 您也可以使用 VSPackage 專案系統整合的 Web 服務<xref:Microsoft.VisualStudio.Shell.Interop.IVsAddProjectItemDlg2>介面。  

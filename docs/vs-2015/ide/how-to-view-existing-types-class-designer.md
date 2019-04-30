@@ -15,12 +15,12 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 582b3763cf2925e373bb3f71b843755ade49dcd2
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 45a4dd40e00182084686841279f81eb1de9d8a28
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60046491"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63424573"
 ---
 # <a name="how-to-view-existing-types-class-designer"></a>HOW TO：檢視現有類型 (類別設計工具)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,7 +38,7 @@ ms.locfileid: "60046491"
 2. 將原始程式碼檔從 [方案總管] 的專案拖曳至類別圖。  
   
    > [!WARNING]
-   >  如果方案中有跨多個應用程式共用程式碼的專案，您只能從下列來源將檔案或程式碼拖曳至另一個類別圖：  
+   > 如果方案中有跨多個應用程式共用程式碼的專案，您只能從下列來源將檔案或程式碼拖曳至另一個類別圖：  
    > 
    > - 包含圖表的應用程式專案  
    >   - 由應用程式專案匯入的共用專案  
@@ -50,12 +50,12 @@ ms.locfileid: "60046491"
    您也可以將一或多個類型從 [類別檢視] 的專案節點中拖曳至類別圖，以檢視專案中的類型。  
   
 > [!TIP]
->  如果未開啟 [類別檢視]，請從 [檢視] 功能表將其開啟。 如需類別檢視的詳細資訊，請參閱[檢視類別和其成員](http://msdn.microsoft.com/71e9e8f3-261a-4e0c-87bf-5ec48b8bf333)。  
+> 如果未開啟 [類別檢視]，請從 [檢視] 功能表將其開啟。 如需類別檢視的詳細資訊，請參閱[檢視類別和其成員](http://msdn.microsoft.com/71e9e8f3-261a-4e0c-87bf-5ec48b8bf333)。  
   
  若要在圖表上的預設位置顯示類型，請在 [類別檢視] 中選取一或多個類型、在所選類型上按一下滑鼠右鍵，並且選擇 [檢視類別圖表]。  
   
 > [!NOTE]
->  如果專案中已有包含類型的已關閉類別圖，便會開啟類別圖以顯示類型圖案。 但是，如果專案中沒有包含類型的類別圖，[類別設計工具] 會在專案中建立新的類別圖，並且開啟圖表以顯示類型。  
+> 如果專案中已有包含類型的已關閉類別圖，便會開啟類別圖以顯示類型圖案。 但是，如果專案中沒有包含類型的類別圖，[類別設計工具] 會在專案中建立新的類別圖，並且開啟圖表以顯示類型。  
   
  第一次在圖表上顯示類型時，類型圖案依預設會摺疊。 您可以展開圖案以檢視其內容。  
   

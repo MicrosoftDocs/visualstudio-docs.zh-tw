@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: e69c82899cb5f7aa24235641ae517709686170a7
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55932842"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62949756"
 ---
 # <a name="delay-activity-designer"></a>Delay 活動設計工具
 
@@ -35,7 +35,7 @@ ms.locfileid: "55932842"
 
 下表顯示<xref:System.Activities.Statements.Delay>屬性，並說明它們在設計工具的使用方式。 這些屬性可以在屬性方格中編輯，其中一些可以在工作流程設計工具介面上編輯。
 
-|屬性名稱|必要項|使用方式|
+|屬性名稱|必要|使用量|
 |-|--------------|-|
 |<xref:System.Activities.Activity.DisplayName%2A>|False|<xref:System.Activities.Statements.Delay> 活動的易記名稱。 預設為 Delay。 雖然<xref:System.Activities.Activity.DisplayName%2A>值不是絕對必要，是最佳的做法是使用其中一個。|
 |<xref:System.Activities.Statements.Delay.Duration%2A>|True|延遲工作流程的時間長度。 這個屬性會在屬性方格中設定。 輸入常值 <xref:System.TimeSpan> (使用 00:00:00 格式) 或 Visual Basic 運算式，即可指定時間長度。|

@@ -12,12 +12,12 @@ ms.assetid: 8b86d62f-c274-4e91-82e0-38cdb9a423d5
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: d4e46a74651a838a2f9badfc8b9d43d00250ea1c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 68ed49b2b22a8302fad0355dde3f937f6b67794b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58942781"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443929"
 ---
 # <a name="anatomy-of-a-vsix-package"></a>VSIX 套件的結構
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,7 +27,7 @@ VSIX 封裝是.vsix 檔案，其中包含一或多個 Visual Studio 擴充功能
  VSIX 套件格式會遵循開放封裝慣例 (OPC) 標準。 套件包含二進位檔和支援檔案，以及 [Content_Types].xml 檔案和.vsix 資訊清單檔案。 一個 VSIX 封裝可能包含多個專案或甚至是多個套件有自己的資訊清單的輸出。  
   
 > [!NOTE]
->  VSIX 封裝中包含的檔案名稱不得包含空格，也不下定義的保留在統一資源識別元 (URI)，做為字元[ \[RFC2396\]](http://go.microsoft.com/fwlink/?LinkId=90339)。  
+> VSIX 封裝中包含的檔案名稱不得包含空格，也不下定義的保留在統一資源識別元 (URI)，做為字元[ \[RFC2396\]](http://go.microsoft.com/fwlink/?LinkId=90339)。  
   
 ## <a name="the-vsix-manifest"></a>VSIX 資訊清單  
  VSIX 資訊清單包含要安裝的延伸模組和如下所示 VSX 結構描述的相關資訊。 如需詳細資訊，請參閱 < [VSIX 延伸結構描述 1.0 參考](http://msdn.microsoft.com/76e410ec-b1fb-4652-ac98-4a4c52e09a2b)。 如需範例 VSIX 資訊清單中，請參閱 < [PackageManifest 項目 （根項目、 VSX 結構描述）](http://msdn.microsoft.com/f8ae42ba-775a-4d2b-976a-f556e147f187)。  

@@ -11,12 +11,12 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 35713751061e5a590a5a7bc9cc5fa03bccd56966
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: b9a5612a9d6fd04850134a51f62a02496deb1708
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54769300"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441933"
 ---
 # <a name="setting-bookmarks-in-code"></a>在程式碼中設定書籤
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ ms.locfileid: "54769300"
  若要加入書籤，請將游標放在您要加入書籤的程式碼行。 按一下 [切換] 按鈕，或按 CTRL+K。 這會加入書籤。 如果您再按一下 [切換] 按鈕 (或再次按 CTRL+K)，會移除書籤。 您也可以按一下書籤視窗中的 [刪除] 按鈕來刪除書籤。  
   
 > [!IMPORTANT]
->  書籤是設在行號，不是在程式碼。 如果您修改程式碼，書籤保留在行號，而不會隨程式碼移動。  
+> 書籤是設在行號，不是在程式碼。 如果您修改程式碼，書籤保留在行號，而不會隨程式碼移動。  
   
  您可以使用書籤視窗中的 [下一個書籤] 和 [上一個書籤] 按鈕，在書籤之間巡覽。  
   

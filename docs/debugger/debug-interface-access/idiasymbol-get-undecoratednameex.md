@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 83fda196a50c433de182a64f39faef7a6ba6cb17
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.openlocfilehash: f2a952c074e62e7fe999826882e382a552789f3a
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56607846"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63400549"
 ---
 # <a name="idiasymbolgetundecoratednameex"></a>IDiaSymbol::get_undecoratedNameEx
-擷取部分或全部的 c + + 未裝飾名稱裝飾 （連結） 的名稱。
+擷取部分或全部的未裝飾名稱的C++裝飾 （連結） 的名稱。
 
 ## <a name="syntax"></a>語法
 
@@ -38,21 +38,21 @@ HRESULT get_undecoratedNameEx( 
 
  `pRetVal`
 
-[out]傳回的未裝飾的名稱的 c + + 裝飾名稱。
+[out]傳回的未裝飾的名稱C++裝飾名稱。
 
 ## <a name="return-value"></a>傳回值
  如果成功，則傳回`S_OK`; 否則傳回`S_FALSE`或錯誤碼。
 
 > [!NOTE]
->  傳回值為`S_FALSE`表示此屬性不適用於符號。
+> 傳回值為`S_FALSE`表示此屬性不適用於符號。
 
 ## <a name="remarks"></a>備註
  `undecorateOptions`可以是下列旗標的組合。
 
 > [!NOTE]
->  旗標名稱未定義在 DIA SDK 中，因此您需要將宣告新增至您的程式碼，或使用原始值。
+> 旗標名稱未定義在 DIA SDK 中，因此您需要將宣告新增至您的程式碼，或使用原始值。
 
-|旗標|值|說明|
+|旗標|值|描述|
 |----------|-----------|-----------------|
 |UNDNAME_COMPLETE|0x0000|啟用完整 undecoration。|
 |UNDNAME_NO_LEADING_UNDERSCORES|0x0001|移除 Microsoft 擴充關鍵字前置底線。|
@@ -75,5 +75,5 @@ HRESULT get_undecoratedNameEx( 
 |UNDNAME_NO_IDENT_CHAR_CHECK|0x10000|隱藏有效的識別項字元檢查。|
 |UNDNAME_NO_PTR64|0x20000|不包含 ptr64 輸出中。|
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

@@ -10,12 +10,12 @@ ms.assetid: 2f70863b-425b-4e65-86b4-d6a898e29dc7
 caps.latest.revision: 19
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: f7bc8ca8e9b38283c647cfde2d593e292d44ce43
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
-ms.translationtype: MT
+ms.openlocfilehash: ecdacfc4ac65e0dc18512bfb56eb870545c66a9b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "59000444"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443484"
 ---
 # <a name="adding-items-to-the-add-new-item-dialog-boxes"></a>將項目新增至新增項目對話方塊
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -23,7 +23,7 @@ ms.locfileid: "59000444"
 加入項目至的程序**加入新項目**對話方塊開頭的登錄機碼。 下列的登錄項目所示，AddItemTemplates 區段包含可在哪些項目中的目錄的名稱與路徑**加入新項目**放 對話方塊。  
   
 > [!NOTE]
->  資料表的正後方的程式碼片段包含其他資訊的登錄項目。  
+> 資料表的正後方的程式碼片段包含其他資訊的登錄項目。  
   
  此區段位於 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\14.0Exp\Projects]。  
   
@@ -44,7 +44,7 @@ ms.locfileid: "59000444"
 |Val SortPriority|REG_DWORD|100 ([!INCLUDE[vcprx64](../../includes/vcprx64-md.md)])|判斷樹狀節點中顯示的檔案中的排序次序**加入新項目** 對話方塊。|  
   
 > [!NOTE]
->  Visual C# 和 Visual Basic 專案類型 GUID，如下所示的：[!INCLUDE[csprcs](../../includes/csprcs-md.md)]: {FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}[!INCLUDE[vbprvb](../../includes/vbprvb-md.md)]: {F184B08F-C81C-45F6-A57F-5ABD9991F28F}  
+> Visual C# 和 Visual Basic 專案類型 GUID，如下所示的：[!INCLUDE[csprcs](../../includes/csprcs-md.md)]: {FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}[!INCLUDE[vbprvb](../../includes/vbprvb-md.md)]: {F184B08F-C81C-45F6-A57F-5ABD9991F28F}  
   
  目錄列 TemplateDirs，也就是 %template_path%\someprojectitems，是節點的左側**加入新項目**對話方塊方塊中的樹狀結構。 在樹狀目錄中的其他項目為基礎的根目錄中的子目錄。 可加入至專案的檔案是在右窗格中的項目**加入新項目** 對話方塊。  
   
@@ -53,7 +53,7 @@ ms.locfileid: "59000444"
  不過，您不必擁有的所有項目一個.vsdir 檔案中。 您可以有一個.vsdir 檔案的目錄中的每個項目。 如需詳細資訊，請參閱[精靈 (。在 Vsz) 檔案](../../extensibility/internals/wizard-dot-vsz-file.md)和[範本目錄描述 (。Vsdir) 檔案](../../extensibility/internals/template-directory-description-dot-vsdir-files.md)。  
   
 > [!NOTE]
->  範本目錄中的.vsdir 檔案是選擇性的。 如果您只想要將專案項目放在目錄中，並顯示在**加入新項目** 對話方塊中，您可以將檔案放在 TemplatesDir 陳述式中指定的範本目錄中。 在右窗格中會顯示檔案**加入新項目**該專案的對話方塊。 不過，如果您想要顯示的檔案或圖示的當地語系化的標題，您必須包含至少一個.vsdir 檔案範本目錄中。  
+> 範本目錄中的.vsdir 檔案是選擇性的。 如果您只想要將專案項目放在目錄中，並顯示在**加入新項目** 對話方塊中，您可以將檔案放在 TemplatesDir 陳述式中指定的範本目錄中。 在右窗格中會顯示檔案**加入新項目**該專案的對話方塊。 不過，如果您想要顯示的檔案或圖示的當地語系化的標題，您必須包含至少一個.vsdir 檔案範本目錄中。  
   
 ## <a name="grouping-project-items"></a>群組的專案項目  
  如果您想要包含在資料夾中的樣板群組**加入新項目**對話方塊方塊樹狀目錄中，您必須使用項目範本根目錄底下的子目錄中。 當**加入新項目**對話方塊會顯示給使用者，他們也會看到子資料夾，並可以從中選取專案項目。  

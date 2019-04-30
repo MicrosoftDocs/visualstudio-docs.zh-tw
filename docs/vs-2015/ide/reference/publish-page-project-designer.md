@@ -18,12 +18,12 @@ caps.latest.revision: 37
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 15fd3f1b93378adba0579b6de50d0e779a09ac5a
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: 7f50c5897f68e43071d4920f85f1a694cacbf655
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59658210"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441314"
 ---
 # <a name="publish-page-project-designer"></a>專案設計工具、發行頁
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ ms.locfileid: "59658210"
  若要存取 [發行]  頁面，請選取方案總管 中的專案節點，然後按一下 [專案]  功能表上的 [屬性] 。 當 [ **專案設計工具** ] 出現時，請按一下 [ **發行** ] 索引標籤。  
   
 > [!NOTE]
->  這裡描述的一些 ClickOnce 屬性也可以設定於 [發行精靈] 中 (從 [組建] 功能表或按一下此頁面上的 [發行精靈] 按鈕即可使用)。  
+> 這裡描述的一些 ClickOnce 屬性也可以設定於 [發行精靈] 中 (從 [組建] 功能表或按一下此頁面上的 [發行精靈] 按鈕即可使用)。  
   
 ## <a name="uielement-list"></a>UIElement 清單  
  **發行資料夾位置**  

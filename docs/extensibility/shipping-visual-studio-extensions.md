@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 2ea2217614ed27a98281cce7a3d34b72f74ae803
-ms.sourcegitcommit: 1c8e07b98fc0a44b5ab90bcef77d9fac7b3eb452
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/25/2019
-ms.locfileid: "56796591"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62433015"
 ---
 # <a name="shipping-visual-studio-extensions"></a>推出 Visual Studio 延伸模組
 您完成開發您的擴充功能之後，您可以將它安裝在其他電腦上、 與朋友和同事，共用或 Visual Studio Marketplace 上發行它。 在本節中，我們說明您需要執行以發佈及維護您的延伸模組的所有項目： 使用.vsix 檔案、 發佈、 當地語系化，及更新。
@@ -53,8 +53,8 @@ ms.locfileid: "56796591"
 |[VSIX 封裝的結構](../extensibility/anatomy-of-a-vsix-package.md)|描述 VSIX 套件的元件。|
 |[VSIX 專案範本](../extensibility/vsix-project-template.md)|提供有關如何封裝和發行延伸模組的逐步指示。|
 |[將 VSIX 封裝當地語系化](../extensibility/localizing-vsix-packages.md)|說明如何藉由使用 extension.vsixlangpack 檔案安裝程序提供當地語系化的文字。|
-|[如何：更新擴充功能](../extensibility/how-to-update-a-visual-studio-extension.md)|描述如何更新您的系統上的擴充功能，以及如何將更新部署至現有的 Visual Studio 擴充功能。|
-|[如何：將相依性加入至 VSIX 封裝](../extensibility/how-to-add-a-dependency-to-a-vsix-package.md)|描述如何將參考加入至 VSIX 部署封裝。|
+|[如何：更新延伸模組](../extensibility/how-to-update-a-visual-studio-extension.md)|描述如何更新您的系統上的擴充功能，以及如何將更新部署至現有的 Visual Studio 擴充功能。|
+|[如何：將相依性新增至 VSIX 套件](../extensibility/how-to-add-a-dependency-to-a-vsix-package.md)|描述如何將參考加入至 VSIX 部署封裝。|
 |[準備適用於 Windows Installer 部署的擴充功能](../extensibility/preparing-extensions-for-windows-installer-deployment.md)|說明如何使用 Windows 安裝程式將延伸模組部署。|
 |[簽署 VSIX 封裝](../extensibility/signing-vsix-packages.md)|說明如何簽署 VSIX 封裝。|
 |[私用組件庫](../extensibility/private-galleries.md)|說明如何建立擴充功能私用組件庫。|

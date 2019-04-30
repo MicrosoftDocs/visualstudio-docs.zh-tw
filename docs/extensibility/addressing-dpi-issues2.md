@@ -9,11 +9,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 1e46ada7a4e71c5d84cbb28d86f1712bbeca6dce
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56318494"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62892033"
 ---
 # <a name="address-dpi-issues"></a>處理 DPI 問題
 越來越多的裝置都隨附 「 高解析度 」 畫面。 這些畫面通常會有超過 200 個像素為單位，每英吋 (ppi)。 使用這些電腦上的應用程式需要相應增加以符合檢視裝置的一般檢視距離內容需求的內容。 自 2014年起，高密度顯示的主要目標是行動運算裝置 （平板電腦、 蛤殼膝上型電腦和手機）。
@@ -34,7 +34,7 @@ Windows 8.1 和更新版本包含數個功能，讓這些機器能夠使用的�
 
   Visual Studio 中選擇要 DPI 縮放比例感知，並因此未 「 虛擬化。 」
 
-  Windows （和 Visual Studio） 運用數種不同方式處理縮放係數由系統設定的 UI 技術。 例如: 
+  Windows （和 Visual Studio） 運用數種不同方式處理縮放係數由系統設定的 UI 技術。 例如：
 
 - WPF 會測量控制項，以與裝置無關的方式 （單位，不像素為單位）。 WPF UI 會自動調整為目前的 DPI。
 
@@ -128,7 +128,7 @@ VsUI::DpiHelper::LogicalToDeviceUnits(&hBitmap);
 
 - 請確定專案具有參考**System.Windows.Forms**， **PresentationCore**，並**PresentationUI**。
 
-- 在程式碼，使用**Microsoft.VisualStudio.PlatformUI** DpiHelper 類別的命名空間和呼叫靜態函式。 支援的類型 （點、 大小、 矩形和等等），都有提供擴充程式函式會傳回新的擴充物件。 例如: 
+- 在程式碼，使用**Microsoft.VisualStudio.PlatformUI** DpiHelper 類別的命名空間和呼叫靜態函式。 支援的類型 （點、 大小、 矩形和等等），都有提供擴充程式函式會傳回新的擴充物件。 例如：
 
     ```csharp
     using Microsoft.VisualStudio.PlatformUI;

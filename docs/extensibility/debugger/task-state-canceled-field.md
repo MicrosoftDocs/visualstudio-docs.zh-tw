@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: b022daee6e71cd0728c2c161eb3e75a865304d04
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56719713"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62912722"
 ---
 # <a name="taskstatecanceled-field"></a>TASK_STATE_CANCELED 欄位
 已達到執行中狀態，或確認其取消作業，然後完成而沒有例外狀況前，已取消工作。

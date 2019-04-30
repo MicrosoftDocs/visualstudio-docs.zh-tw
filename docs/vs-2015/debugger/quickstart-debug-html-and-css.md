@@ -21,12 +21,12 @@ caps.latest.revision: 104
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 7dd7afa571b83cb5d1b12018da2f1e812a3a5fbd
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 1820b1c9838e5558ea6ee96f2abdbcf88a24e4b0
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60068154"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446137"
 ---
 # <a name="quickstart-debug-html-and-css"></a>快速入門：偵錯 HTML 和 CSS
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -61,7 +61,7 @@ ms.locfileid: "60068154"
  DOM 總管會顯示所呈現頁面的檢視，您可以使用 DOM 總管變更值並立即查看結果。 這讓您能測試變更，而不需要停止並重新開始偵錯工具。 當您以此方法與頁面互動時，專案中的原始程式碼並不會變更，因此當您找到所需的程式碼修正時，您可以對原始程式碼進行變更。  
   
 > [!TIP]
->  若要避免在對原始程式碼進行變更時停止再重新開始偵錯工具，您可以使用 [偵錯] 工具列上的 [重新整理 Windows 應用程式]  按鈕 (或按 F4)，重新整理應用程式。 如需詳細資訊，請參閱 <<c0> [ 重新整理應用程式 (JavaScript)](../debugger/refresh-an-app-javascript.md)。  
+> 若要避免在對原始程式碼進行變更時停止再重新開始偵錯工具，您可以使用 [偵錯] 工具列上的 [重新整理 Windows 應用程式]  按鈕 (或按 F4)，重新整理應用程式。 如需詳細資訊，請參閱 <<c0> [ 重新整理應用程式 (JavaScript)](../debugger/refresh-an-app-javascript.md)。  
   
  您可將 DOM 總管用於：  
   
@@ -74,12 +74,12 @@ ms.locfileid: "60068154"
   偵錯應用程式時，您通常需要在 DOM 總管中選取項目。 當您選取項目時，DOM 總管右邊索引標籤上的值會自動更新，以反映 DOM 總管中選取的項目。 以下是 [] 索引標籤：**樣式**，**計算**，**版面配置**。 Windows 市集應用程式也支援 [事件]  和 [變更]  索引標籤。 如需選取項目的詳細資訊，請參閱 [Selecting elements](#SelectingElements)。  
   
 > [!TIP]
->  如果 [DOM 總管] 視窗已關閉，選擇 [偵錯] > >  即可重新開啟。 此視窗只有在指令碼偵錯工作階段期間才會顯示。  
+> 如果 [DOM 總管] 視窗已關閉，選擇 [偵錯] > >  即可重新開啟。 此視窗只有在指令碼偵錯工作階段期間才會顯示。  
   
  在接下來的程序中，我們將會經歷使用 DOM 總管以互動方式偵錯應用程式的過程。 我們將建立一個使用 `FlipView` 控制項的應用程式，然後對它進行偵錯。 應用程式包含幾個錯誤。  
   
 > [!WARNING]
->  下列範例應用程式是 Windows 市集應用程式。 針對 Cordova 支援相同的功能，但應用程式會不同。  
+> 下列範例應用程式是 Windows 市集應用程式。 針對 Cordova 支援相同的功能，但應用程式會不同。  
   
 #### <a name="to-debug-by-inspecting-the-live-dom"></a>藉由檢查 Live DOM 偵錯  
   
@@ -183,14 +183,14 @@ ms.locfileid: "60068154"
 10. 切換至 Visual Studio 並選擇 [ **DOM 總管** ] 索引標籤。  
   
     > [!TIP]
-    >  您可以按 Alt+Tab 或 F12，在 Visual Studio 和執行中應用程式之間切換。  
+    > 您可以按 Alt+Tab 或 F12，在 Visual Studio 和執行中應用程式之間切換。  
   
 11. 在 [DOM 總管] 視窗中，選取識別碼為 `"fView"`之區段的 DIV 項目。 使用方向鍵來檢視和選取正確的 DIV 項目 (向右鍵可讓您檢視項目的子系)。  
   
      ![DOM Explorer](../debugger/media/js-dom-explorer.png "JS_DOM_Explorer")  
   
     > [!TIP]
-    >  您也可以在 [JavaScript 主控台] 視窗的左下角，於 >> 輸入提示下鍵入 `select(fView)`，然後按 ENTER 來選取 DIV 項目。  
+    > 您也可以在 [JavaScript 主控台] 視窗的左下角，於 >> 輸入提示下鍵入 `select(fView)`，然後按 ENTER 來選取 DIV 項目。  
   
      在 [DOM 總管] 視窗右邊索引標籤上的值會自動更新，以反映 DOM 總管中的目前項目。  
   
@@ -209,7 +209,7 @@ ms.locfileid: "60068154"
 15. 選取 `width: 100px;height: 100px;`然後按 Delete 鍵，再按 Enter。 在您按下 Enter 之後，新值就會立即反映在模擬器或 Phone 模擬器中，即使尚未停止偵錯工作階段也是如此。  
   
     > [!IMPORTANT]
-    >  您可以更新 [DOM 總管] 視窗中的屬性，也可以更新 [樣式] 、[計算] 和 [配置]  索引標籤中出現的值。 如需詳細資訊，請參閱 <<c0> [ 使用 DOM 總管偵錯 CSS 樣式](../debugger/debug-css-styles-using-dom-explorer.md)並[使用 DOM 總管偵錯配置](../debugger/debug-layout-using-dom-explorer.md)。  
+    > 您可以更新 [DOM 總管] 視窗中的屬性，也可以更新 [樣式] 、[計算] 和 [配置]  索引標籤中出現的值。 如需詳細資訊，請參閱 <<c0> [ 使用 DOM 總管偵錯 CSS 樣式](../debugger/debug-css-styles-using-dom-explorer.md)並[使用 DOM 總管偵錯配置](../debugger/debug-layout-using-dom-explorer.md)。  
   
 16. 藉由選取 [模擬器] 或 [Phone 模擬器] 或是使用 Alt+Tab，切換至應用程式。  
   
@@ -281,7 +281,7 @@ ms.locfileid: "60068154"
   當您選擇要醒目提示項目時，只要在模擬器中將滑鼠停留在任何項目上方，該項目就會醒目提示。 已反白顯示之元素的色彩，會與顯示在 [DOM 總管] 之 [ **配置** ] 索引標籤中的方塊模型相符。  
   
 > [!NOTE]
->  Windows Phone 模擬器僅部分支援藉由滑鼠游標停留來醒目提示示項目。  
+> Windows Phone 模擬器僅部分支援藉由滑鼠游標停留來醒目提示示項目。  
   
  如需範例，示範如何使用選取項目**選取項目**按鈕，請參閱[使用 DOM 總管偵錯 CSS 樣式](../debugger/debug-css-styles-using-dom-explorer.md)。  
   

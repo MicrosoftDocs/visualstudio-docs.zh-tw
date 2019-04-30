@@ -8,12 +8,12 @@ ms.assetid: 47926aa1-3b41-410d-bca8-f77fc950cbe7
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 8de4960548b363c99b9625553c47b2cbad2df2de
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: d5e45c91e9dadb0f457e3a2ecfa2e5484fbe0e78
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60063682"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63412325"
 ---
 # <a name="managing-universal-windows-projects"></a>管理通用 Windows 專案
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -235,7 +235,7 @@ ms.locfileid: "60063682"
     ```  
   
     > [!IMPORTANT]
-    >  如果使用者已開啟C++實驗執行個體中的通用 Windows 應用程式專案，上述程式碼會擲回例外狀況。 這是已知的問題。 若要避免此例外狀況，取代`foreach`含有下列區塊上方：  
+    > 如果使用者已開啟C++實驗執行個體中的通用 Windows 應用程式專案，上述程式碼會擲回例外狀況。 這是已知的問題。 若要避免此例外狀況，取代`foreach`含有下列區塊上方：  
   
     ```csharp  
     var importingProjects = sharedAssetsProject.EnumImportingProjects();  
@@ -525,7 +525,7 @@ ms.locfileid: "60063682"
 9. 修改共用的項目。 您無法修改共用的項目，在平台專案中;相反地，您必須修改它們實際的擁有者，這些項目之共用專案中。 您可以使用共用專案中取得對應的項目 ID <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject.IsDocumentInProject%2A>，讓它共用的項目完整路徑。 然後您可以修改共用的項目。 變更會傳播到平台專案中。  
   
     > [!IMPORTANT]
-    >  您應該了解專案項目為共用的項目再加以修改。  
+    > 您應該了解專案項目為共用的項目再加以修改。  
   
      下列方法修改專案項目檔案的名稱。  
   

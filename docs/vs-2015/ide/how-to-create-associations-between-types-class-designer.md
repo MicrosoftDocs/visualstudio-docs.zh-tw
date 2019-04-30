@@ -17,12 +17,12 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 7f70b18bb2b648231e3cada312fd241375be3193
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 2d152ce38c445955988ec76a2e328691eac152ca
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60099841"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63416944"
 ---
 # <a name="how-to-create-associations-between-types-class-designer"></a>HOW TO：建立類型之間的關聯 (類別設計工具)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ ms.locfileid: "60099841"
  雖然您可以將所有欄位或屬性顯示為關聯，但是針對要在圖表上突顯的部分而只將重要成員顯示為關聯才更具意義  (您可以隱藏次要成員或將其顯示為一般成員)。  
   
 > [!NOTE]
->  [類別設計工具] 只支援單向關聯。  
+> [類別設計工具] 只支援單向關聯。  
   
 ### <a name="to-define-an-association-line-in-the-class-diagram"></a>若要在類別圖中定義關聯線  
   

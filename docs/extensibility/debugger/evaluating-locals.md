@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 977962352887e9cce09b3b703c3f66dd15cb7397
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56710899"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62889862"
 ---
 # <a name="evaluate-locals"></a>評估 [區域變數]
 > [!IMPORTANT]
@@ -32,7 +32,7 @@ ms.locfileid: "56710899"
 
 3. 格式化值取決於本機的類型。
 
-4. 傳回泛型的物件，包含區域的值。 在 C# 中，這是`object`，並在 c + +，這是`VARIANT`。
+4. 傳回泛型的物件，包含區域的值。 在C#，這是`object`，然後在C++，這是`VARIANT`。
 
 ## <a name="managed-code"></a>Managed 程式碼
  這是函的擷取 managed 程式碼中區域變數的值式的實作。

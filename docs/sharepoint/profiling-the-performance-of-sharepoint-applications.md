@@ -19,11 +19,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 8b59a3de88403300a46b7992a2dad72e3d6b59e0
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54864133"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62563307"
 ---
 # <a name="profile-the-performance-of-sharepoint-applications"></a>分析 SharePoint 應用程式的效能
 
@@ -39,7 +39,7 @@ ms.locfileid: "54864133"
 
 ## <a name="performance-session-process"></a>效能工作階段的程序
 
-若要分析應用程式，您開始使用程式碼剖析工具效能精靈建立效能工作階段。 在功能表列上選擇 **分析**，**啟動效能精靈**。 當您完成精靈時，您會輸入效能工作階段，例如您想要的剖析方法以及您想要剖析的應用程式所需的資訊。 如需詳細資訊，請參閱[＜How to：網站或使用 [效能精靈] 的 Web 應用程式程式碼剖析](http://go.microsoft.com/fwlink/?LinkId=224692)。 或者，您可以使用命令列選項來設定和執行效能工作階段。 如需詳細資訊，請參閱 <<c0> [ 程式碼剖析工具從命令列使用](http://go.microsoft.com/fwlink/?LinkId=224703)。 如果您想要手動設定效能工作階段的各個層面，請參閱[How to:使用 程式碼剖析工具，手動建立效能工作階段](http://go.microsoft.com/fwlink/?LinkId=224691)。 您也可以建立效能工作階段從單元測試，在**測試結果**視窗中，開啟單元測試的捷徑功能表，然後選擇**建立效能工作階段**。
+若要分析應用程式，您開始使用程式碼剖析工具效能精靈建立效能工作階段。 在功能表列上選擇 **分析**，**啟動效能精靈**。 當您完成精靈時，您會輸入效能工作階段，例如您想要的剖析方法以及您想要剖析的應用程式所需的資訊。 如需詳細資訊，請參閱[如何：網站或使用 [效能精靈] 的 Web 應用程式程式碼剖析](http://go.microsoft.com/fwlink/?LinkId=224692)。 或者，您可以使用命令列選項來設定和執行效能工作階段。 如需詳細資訊，請參閱 <<c0> [ 程式碼剖析工具從命令列使用](http://go.microsoft.com/fwlink/?LinkId=224703)。 如果您想要手動設定效能工作階段的各個層面，請參閱[How to:使用 程式碼剖析工具，手動建立效能工作階段](http://go.microsoft.com/fwlink/?LinkId=224691)。 您也可以建立效能工作階段從單元測試，在**測試結果**視窗中，開啟單元測試的捷徑功能表，然後選擇**建立效能工作階段**。
 
 設定效能工作階段之後，儲存工作階段組態、 伺服器設定為提供程式碼剖析資料，和執行應用程式。 當您使用應用程式時，效能資料會寫入至記錄檔。 效能工作階段都會列入**效能總管**下方**目標**資料夾。 在效能工作階段完成之後，它的報表會出現在**報表**中的資料夾**效能總管**。 若要顯示報表，請開啟它**效能總管**。 若要檢視或設定效能工作階段的屬性，開啟其捷徑功能表中的**效能總管**，然後選擇**屬性**。 如需效能工作階段的特定屬性的詳細資訊，請參閱[設定程式碼剖析工具效能工作階段](http://go.microsoft.com/fwlink/?LinkId=224694)。 如需如何解譯結果的效能工作階段資訊，請參閱[分析程式碼剖析工具資料](http://go.microsoft.com/fwlink/?LinkId=224704)。
 

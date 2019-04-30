@@ -13,18 +13,18 @@ caps.latest.revision: 3
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3d702699aa2e980c3be9d4d05eef96261a788788
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
-ms.translationtype: MT
+ms.openlocfilehash: ea8f3f983cf7279cf6dc9600813a08268cef8301
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58145092"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63383500"
 ---
 # <a name="iremotedebugapplication110-interface"></a>IRemoteDebugApplication110 介面
 用來提供新功能，可以呼叫由指令碼偵錯工具和程序中的呼叫端。  
   
 > [!IMPORTANT]
->  這個介面是由 PDM v11.0 和更新版本所實作。 可在 activdbg100.h 中找到。  
+> 這個介面是由 PDM v11.0 和更新版本所實作。 可在 activdbg100.h 中找到。  
   
 ## <a name="methods"></a>方法  
  `IRemoteDebugApplication110` 介面公開下列方法。  

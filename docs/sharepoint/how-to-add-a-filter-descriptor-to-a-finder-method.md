@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: dc6492b52cb739c49bdba9f231ebcda313a66105
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: fceb6270aea9da5af1a53adf7560df7dd3702349
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60068661"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63418294"
 ---
 # <a name="how-to-add-a-filter-descriptor-to-a-finder-method"></a>HOW TO：將篩選描述元加入至搜尋方法
   篩選描述元，讓取用者模型的執行之前，將值傳遞給方法。 如需詳細資訊，請參閱 <<c0> [ 設計 business data connectivity 模型](../sharepoint/designing-a-business-data-connectivity-model.md)。
@@ -62,7 +62,7 @@ ms.locfileid: "60068661"
      下列範例會傳回具有指定的訂購日期的銷售訂單。
 
     > [!NOTE]
-    >  值取代`ServerName`欄位與您伺服器的名稱。
+    > 值取代`ServerName`欄位與您伺服器的名稱。
 
      [!code-csharp[SP_BDC#11](../sharepoint/codesnippet/CSharp/SP_BDC/bdcmodel1/salesorderservice.cs#11)]
      [!code-vb[SP_BDC#11](../sharepoint/codesnippet/VisualBasic/sp_bdc/bdcmodel1/salesorderservice.vb#11)]

@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 307e8e5285dd0023d30772c5eac7a4e351287aa5
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60060927"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62909175"
 ---
 # <a name="persisting-data-in-the-msbuild-project-file"></a>在 MSBuild 專案檔中保存資料
 專案子類型可能需要將子類型特定的資料保存在專案檔，以供稍後使用。 專案子類型會使用專案檔案持續性，以符合下列需求：

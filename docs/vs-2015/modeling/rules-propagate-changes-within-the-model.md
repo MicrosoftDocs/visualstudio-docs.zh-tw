@@ -12,12 +12,12 @@ caps.latest.revision: 32
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 581d6d1f6e5923569f4d98705226d2336978bfc5
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 29950be152c140a8315f96f8752b1fa906c3f801
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60067556"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63442934"
 ---
 # <a name="rules-propagate-changes-within-the-model"></a>規則傳播模型內的變更
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -73,7 +73,7 @@ namespace ExampleNamespace
 ```  
 
 > [!NOTE]
->  規則的程式碼應變更市集; 內的項目只有狀態也就是說，規則應該變更只有模型項目、 關聯性、 圖形、 連接器、 圖表或其屬性。 如果您想要將變更傳播到外部存放區的資源，定義儲存的事件。 如需詳細資訊，請參閱[事件處理常式傳播變更外部模型](../modeling/event-handlers-propagate-changes-outside-the-model.md)  
+> 規則的程式碼應變更市集; 內的項目只有狀態也就是說，規則應該變更只有模型項目、 關聯性、 圖形、 連接器、 圖表或其屬性。 如果您想要將變更傳播到外部存放區的資源，定義儲存的事件。 如需詳細資訊，請參閱[事件處理常式傳播變更外部模型](../modeling/event-handlers-propagate-changes-outside-the-model.md)  
 
 ### <a name="to-define-a-rule"></a>若要定義規則  
 

@@ -9,12 +9,12 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: bec6c539963d54bfa1d866ccc4811425bba9e3a4
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 807d2b7de34acda52dd05ff8263ae3303dca61c6
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60068570"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441913"
 ---
 # <a name="step-1-create-a-project-and-add-a-table-to-your-form"></a>步驟 1：建立專案並將資料表新增至表單
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,7 +42,7 @@ ms.locfileid: "60068570"
    1. 將 **BackColor** 屬性設定為 [CornflowerBlue]。 若要這麼做，請在 [屬性] 視窗中選擇 **BackColor** 屬性旁的下拉式箭頭，開啟 [BackColor] 對話方塊。  然後，請在 [BackColor] 對話方塊的 [Web] 索引標籤，以檢視可用的色彩名稱清單。  
   
       > [!NOTE]
-      >  色彩不是以字母順序排序，CornflowerBlue 位在靠近清單底部的位置。  
+      > 色彩不是以字母順序排序，CornflowerBlue 位在靠近清單底部的位置。  
   
    2. 選擇屬性旁邊的下拉式按鈕，然後選擇大型中間按鈕，將 **Dock** 屬性設定為 [Fill]。 如此可將資料表延伸，使其涵蓋整個表單。  
   
@@ -77,12 +77,12 @@ ms.locfileid: "60068570"
         TableLayoutPanel 中的左上角儲存格現在應該包含一個黑色方塊 (位於藍色背景中央)。  
   
        > [!NOTE]
-       >  Webdings 字型是 Windows 作業系統隨附的圖示字型。 在配對遊戲中，玩家必須將圖示配對，因此您會使用此字型來顯示要配對的圖示。 不要將 **c** 放在 **Text** 屬性中，請嘗試輸入不同字母，看看顯示的圖示為何。 驚嘆號是一隻蜘蛛、大寫 N 是眼睛，而逗號則是一個辣椒。  
+       > Webdings 字型是 Windows 作業系統隨附的圖示字型。 在配對遊戲中，玩家必須將圖示配對，因此您會使用此字型來顯示要配對的圖示。 不要將 **c** 放在 **Text** 屬性中，請嘗試輸入不同字母，看看顯示的圖示為何。 驚嘆號是一隻蜘蛛、大寫 N 是眼睛，而逗號則是一個辣椒。  
   
 8. 選擇您的 Label 控制項並將其複製至 TableLayoutPanel 中的下一個儲存格 (選擇 Ctrl+C 鍵，或是依序選擇功能表列上的 [編輯] 和 [複製])。然後將它貼上  (選擇 Ctrl+V 鍵，或是依序選擇功能表列上的 [編輯]和 [貼上])。第一個標籤的複本會顯示在 TableLayoutPanel 的第二個儲存格中。 再次將它貼上，而另一個標籤會顯示在第三個欄框中。 持續貼上 `Label` 控制項，直到所有儲存格都已填滿為止。  
   
    > [!NOTE]
-   >  如果您貼上的次數太多，則 IDE 會將新資料列加入至 TableLayoutPanel，讓它有位置可以加入新的 Label 控制項。 您可以將它復原。 若要移除新的儲存格，請選擇 Ctrl+Z 鍵，或依序選擇功能表列上的 [編輯] 和 [復原]。  
+   > 如果您貼上的次數太多，則 IDE 會將新資料列加入至 TableLayoutPanel，讓它有位置可以加入新的 Label 控制項。 您可以將它復原。 若要移除新的儲存格，請選擇 Ctrl+Z 鍵，或依序選擇功能表列上的 [編輯] 和 [復原]。  
   
     現在您的表單已配置完成。其外觀應該如下列圖片。  
   

@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 81cf358d3dfb8fc45a4f696b0483e28673094d44
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56840454"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62862010"
 ---
 # <a name="automation-support-for-options-pages"></a>自動化支援的選項頁面
 Vspackage 可以提供自訂**選項**對話方塊來**工具**功能表 (**工具選項**頁面) 中[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]並可供自動化模型。

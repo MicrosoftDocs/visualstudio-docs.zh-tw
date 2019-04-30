@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 042d6b6c59489abcfbdcdd4dd10055ea4dedfff5
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60055654"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62934332"
 ---
 # <a name="walkthrough-generate-code-by-using-text-templates"></a>逐步解說：使用文字範本產生程式碼
 
@@ -103,7 +103,7 @@ foreach (XmlNode artist in catalog.SelectNodes("artist"))
 
 ### <a name="add-a-test-code-file"></a>新增測試程式碼檔案
 
-將 C# 檔案新增至您的專案，並在其中撰寫您可撰寫的程式碼範例。 例如: 
+將 C# 檔案新增至您的專案，並在其中撰寫您可撰寫的程式碼範例。 例如：
 
 ```csharp
 using System;

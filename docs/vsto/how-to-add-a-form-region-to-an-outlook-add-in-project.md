@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 139cdb0314783c76352cc499256fb89610354843
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 5c742b4cbbda440ea84314efbc5281e54771fe60
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60083942"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63427898"
 ---
 # <a name="how-to-add-a-form-region-to-an-outlook-add-in-project"></a>HOW TO：將表單區域加入 Outlook 增益集專案
   使用 [新的 Outlook 表單區域精靈]  建立表單區域，以擴充標準或自訂的 Microsoft Office Outlook 表單。 您可以建立新的表單區域並且在 Visual Studio 中設計使用者介面，或者匯入在 Outlook 中設計的表單區域並加入 Visual Basic 或 C# 程式碼。
@@ -48,7 +48,7 @@ ms.locfileid: "60083942"
 6. 在 [選取您希望如何建立此表單區域]  頁面中，選取要藉由拖曳 Managed 控制項至視覺化設計工具來設計表單區域，或匯入之前在 Outlook 中設計的表單區域。
 
     > [!NOTE]
-    >  如果您選擇要匯入在 Outlook 中設計表單區域，則您必須指定 Outlook 表單儲存區的位置 (*.ofs*) 檔案。 您無法將 Managed 控制項加入在 Outlook 中設計的表單區域；只能在現有 UI 後面加入程式碼。 如需詳細資訊，請參閱 <<c0> [ 建立 Outlook 表單區域](../vsto/creating-outlook-form-regions.md)。
+    > 如果您選擇要匯入在 Outlook 中設計表單區域，則您必須指定 Outlook 表單儲存區的位置 (*.ofs*) 檔案。 您無法將 Managed 控制項加入在 Outlook 中設計的表單區域；只能在現有 UI 後面加入程式碼。 如需詳細資訊，請參閱 <<c0> [ 建立 Outlook 表單區域](../vsto/creating-outlook-form-regions.md)。
 
 7. 在 [選取要建立的表單區域類型]  頁面上，檢視表單區域類型並選取其中一個，然後按 [下一步] 。 如需表單區域類型的詳細資訊，請參閱[建立 Outlook 表單區域](../vsto/creating-outlook-form-regions.md)。
 

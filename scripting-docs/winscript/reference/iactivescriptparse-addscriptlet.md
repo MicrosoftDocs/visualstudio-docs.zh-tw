@@ -18,11 +18,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: ee5d76060789118e9051c2d8dcc5fc570617f6a8
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58151267"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62954950"
 ---
 # <a name="iactivescriptparseaddscriptlet"></a>IActiveScriptParse::AddScriptlet
 將指令碼中的程式碼的程式碼片段。 這個方法會在環境中與主應用程式文件提及永續性狀態的指令碼主機會負責還原指令碼，而非透過`IPersist*`介面。 主要範例是允許的程式碼內嵌在 HTML 文件附加至內建事件的程式碼片段的 HTML 指令碼語言 (例如，ONCLICK="button1.text='Exit' 」)。  

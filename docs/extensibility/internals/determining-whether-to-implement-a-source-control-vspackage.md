@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: fd3e0888cb45facbf2946e6a4656147dab75350e
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60100481"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62910016"
 ---
 # <a name="determine-whether-to-implement-a-source-control-vspackage"></a>判斷是否要實作原始檔控制 VSPackage
 本節中，將詳細說明選擇原始檔控制外掛程式和原始檔控制 Vspackage 擴充原始檔控制解決方案，並提供廣泛的指導方針選擇適合整合路徑的相關。

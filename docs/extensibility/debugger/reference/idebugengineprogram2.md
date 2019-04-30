@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: dcf84711b6f87d055bb37f47c259306fb55e0f77
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56681097"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62875167"
 ---
 # <a name="idebugengineprogram2"></a>IDebugEngineProgram2
 這個介面會提供多執行緒偵錯支援。

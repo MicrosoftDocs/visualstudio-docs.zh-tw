@@ -12,11 +12,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 0c90a2d0e0297a00454e38f428093a2f2db1e46d
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "59000547"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62977479"
 ---
 # <a name="add-correlationinitializers-dialog-box"></a>加入相互關聯初始設定式對話方塊
 **加入相互關聯初始設定式** 對話方塊會在[!INCLUDE[wfd1](../includes/wfd1-md.md)]若要設定**CorrelationInitializers**屬性<xref:System.ServiceModel.Activities.Send>， <xref:System.ServiceModel.Activities.Receive>， <xref:System.ServiceModel.Activities.SendReply>，及<xref:System.ServiceModel.Activities.ReceiveReply>活動。 [!INCLUDE[crabout](../includes/crabout-md.md)] 活動設計工具使用此方塊中，請參閱[傳送](../workflow-designer/send-activity-designer.md)，[接收](../workflow-designer/receive-activity-designer.md)， [ReceiveAndSendReply](../workflow-designer/receiveandsendreply-template-designer.md)，以及[SendAndReceiveReply](../workflow-designer/sendandreceivereply-template-designer.md)主題。  

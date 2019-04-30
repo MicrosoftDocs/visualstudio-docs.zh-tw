@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 794b9605664315e47e7ae2a778c76652c420a7f7
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 30211d773036bbe12c0e807e3be18f13793360b7
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60066386"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63388638"
 ---
 # <a name="hlsl-shader-debugger"></a>HLSL 著色器偵錯工具
 Visual Studio 圖形分析器中的 HLSL 偵錯工具可協助您了解 HLSL 著色器程式碼在應用程式的真實狀況下的運作方式。
@@ -55,7 +55,7 @@ Visual Studio 圖形分析器中的 HLSL 偵錯工具可協助您了解 HLSL 著
 2. 在管線階段的標題下方選擇 [開始偵錯]，此時會顯示為一個小綠色箭號。
 
     > [!NOTE]
-    >  這個 HLSL 偵錯工具進入點只能偵錯對應階段的第一個著色器執行緒，也就是第一個端點或是第一個處理的像素。 您可以使用 [像素歷史記錄] 來存取這些著色器階段的其他執行緒。
+    > 這個 HLSL 偵錯工具進入點只能偵錯對應階段的第一個著色器執行緒，也就是第一個端點或是第一個處理的像素。 您可以使用 [像素歷史記錄] 來存取這些著色器階段的其他執行緒。
 
 #### <a name="to-start-the-hlsl-debugger-from-the-graphics-pixel-history"></a>從圖形像素歷史記錄啟動 HLSL 偵錯工具
 
@@ -68,7 +68,7 @@ Visual Studio 圖形分析器中的 HLSL 偵錯工具可協助您了解 HLSL 著
     在所選擇著色器的右側，選擇 [開始偵錯]，此時會顯示為一個小綠色箭號。
 
    > [!NOTE]
-   >  這個進入點會進入 HLSL 偵錯工具中偵錯任何對應至所選擇繪製呼叫、基本類型和像素的像素著色器執行緒，或進入至藉由所選擇繪製呼叫、基本類型和像素產生插補的端點著色器執行緒。 在端點著色器的情況下，您可以展開端點著色器詳細資料以進一步限定對特定端點的進入點。
+   > 這個進入點會進入 HLSL 偵錯工具中偵錯任何對應至所選擇繪製呼叫、基本類型和像素的像素著色器執行緒，或進入至藉由所選擇繪製呼叫、基本類型和像素產生插補的端點著色器執行緒。 在端點著色器的情況下，您可以展開端點著色器詳細資料以進一步限定對特定端點的進入點。
 
    如需有關如何使用 HLSL 偵錯工具來偵錯著色器錯誤的範例，請參閱[範例](graphics-diagnostics-examples.md)或另請參閱 > 一節中連結的逐步解說。
 

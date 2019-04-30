@@ -12,12 +12,12 @@ ms.assetid: 26c9ba92-e3b9-4dd2-bd5e-76b17745e308
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: f80636e8dd16d372ceaf3d6032e861738d97b46c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 81279e0fdb0df6600686adc57bb1c5489e8e7aab
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58943900"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432449"
 ---
 # <a name="sccdirdiff-function"></a>SccDirDiff 函式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -80,7 +80,7 @@ SCCRTN SccDirDiff(
 |SCC_DIFF_QD_TIME|如果外掛程式支援，以無訊息方式比較時間戳記，透過目錄，或如果不支援，便會回到 SCC_DIFF_QD_CHECKSUM 或 SCC_DIFF_QD_CONTENTS。|  
   
 > [!NOTE]
->  此函式會使用相同的命令旗標，作為[SccDiff](../extensibility/sccdiff-function.md)。 不過，原始檔控制外掛程式，可以選擇不支援目錄的 「 快速 diff"作業。  
+> 此函式會使用相同的命令旗標，作為[SccDiff](../extensibility/sccdiff-function.md)。 不過，原始檔控制外掛程式，可以選擇不支援目錄的 「 快速 diff"作業。  
   
 ## <a name="see-also"></a>另請參閱  
  [原始檔控制外掛程式 API 函式](../extensibility/source-control-plug-in-api-functions.md)

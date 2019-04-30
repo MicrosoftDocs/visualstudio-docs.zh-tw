@@ -18,11 +18,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 71fdd358c03604b196b0a57a9667f40dfb92b049
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60073965"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62976991"
 ---
 # <a name="developing-applications-with-the-workflow-designer"></a>使用工作流程設計工具開發應用程式
 [!INCLUDE[wfd1](../includes/wfd1-md.md)] 是視覺化設計工具，也是偵錯工具，可用於圖形建構與 [!INCLUDE[wf](../includes/wf-md.md)] 開發環境下所裝載之 [!INCLUDE[netfx40_long](../includes/netfx40-long-md.md)] 中的 [!INCLUDE[vs2010](../includes/vs2010-md.md)] 應用程式之偵錯。 它可讓您使用範本與活動設計工具，來撰寫複合工作流程應用程式、活動程式庫或 [!INCLUDE[indigo1](../includes/indigo1-md.md)] 服務。 [!INCLUDE[crabout](../includes/crabout-md.md)] 工作流程，請參閱[Windows Workflow Foundation &#91;.NET Framework 4&#93;](http://msdn.microsoft.com/library/9a23ea6b-d600-483e-89cd-8889cfec5f66)。  

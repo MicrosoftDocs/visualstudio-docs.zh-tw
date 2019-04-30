@@ -8,11 +8,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 6c708dea61246b361620d5dcf05437ff68f1ba42
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55929527"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62974147"
 ---
 # <a name="properties-of-model-elements"></a>模型項目的屬性
 此區段會列出在 DSL 定義圖，或在 [DSL 總管] 中，選取項目時，您看到 [屬性] 視窗中的屬性。

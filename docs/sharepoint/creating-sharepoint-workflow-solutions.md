@@ -20,12 +20,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 756b1b1171c18fe435d318d5fb4bccf278aecc58
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
-ms.translationtype: MT
+ms.openlocfilehash: d78d82a51f88bfaf076b56692629e801689e103e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54874064"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443536"
 ---
 # <a name="create-sharepoint-workflow-solutions"></a>建立 SharePoint 工作流程方案
 
@@ -57,7 +57,7 @@ ms.locfileid: "54874064"
  建立工作流程之後，您可以修改其屬性，在 [屬性] 視窗中。 雖然大部分的工作流程屬性可以變更直接在 [屬性] 視窗中，但有些會需要您按一下省略符號按鈕 (![ASP.NET Mobile 設計工具橢圓形](../sharepoint/media/mwellipsis.gif "ASP.NET Mobile 設計工具橢圓形")) 至變更其值。 此按鈕會重新啟動**SharePoint 自訂精靈**。 屬性值變更，請選擇後**完成**完成 按鈕。
 
 > [!NOTE]
->  **工作流程類型**屬性是唯讀的而且無法變更。 如果您想要變更工作流程類型時，您必須建立另一個工作流程。
+> **工作流程類型**屬性是唯讀的而且無法變更。 如果您想要變更工作流程類型時，您必須建立另一個工作流程。
 
 ## <a name="design-a-sharepoint-workflow"></a>設計 SharePoint 工作流程
  商務程序中定義的所有步驟之後，使用[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]來設計 SharePoint 工作流程的工作流程設計工具。 若要開啟設計工具，請按兩下 Workflow1.cs 或 Workflow1.vb 中的**方案總管**，或針對這些檔案的開啟捷徑功能表，然後選擇**開啟**。

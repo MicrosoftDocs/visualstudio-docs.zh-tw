@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 5d6875baf72d94494a1abaea9260e344b236f83c
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56685920"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62925581"
 ---
 # <a name="implement-a-port-supplier"></a>實作連接埠提供者
 連接埠提供者會提供工作階段的偵錯管理員 (SDM) 的要求上的連接埠。 對非 DCOM 機器或新的裝置時需要支援偵錯時，就必須實作連接埠提供者。 比方說，若要提供對手機偵錯，您可能會設定連接埠提供者，提供連接埠，連接到行動電話 （也許是透過 IR 或儲存格連接），並列舉的處理程序和手機上執行的程式。

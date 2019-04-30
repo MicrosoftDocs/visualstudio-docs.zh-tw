@@ -21,11 +21,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: c75708afa3c230dcc4bba308cf2d7c97b77d802b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60050922"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62939547"
 ---
 # <a name="automate-word-by-using-extended-objects"></a>使用擴充的物件自動化 Word
   在 Visual Studio 中開發 Word 方案時，您可以在方案中使用 *「主項目」* (Host Item) 和 *「主控制項」*(Host Control)。 這些物件可以擴充 Word 物件模型 (也就是 Word 的主要 Interop 組件公開的物件模型) 中某些常用的物件，例如 <xref:Microsoft.Office.Interop.Word.Document> 和 <xref:Microsoft.Office.Interop.Word.ContentControl> 物件。 這些擴充物件的行為與它們所根據的 Word 物件一樣，但是這些物件會在物件中加入額外的事件和資料繫結功能。

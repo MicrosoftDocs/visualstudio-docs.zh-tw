@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 94e3ccc30507ccd7995c4d4fad548fe5ff425365
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 264b7cd4d60ebc963d794e0ca06fc16fd5edc7d7
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60094604"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445357"
 ---
 # <a name="how-to-manage-control-layout-on-actions-panes"></a>HOW TO：管理執行窗格控制項配置
   執行窗格停駐文件或工作表的權限預設;不過，它可以停駐 left，top 或 bottom。 如果您使用多個使用者控制項，您可以撰寫程式碼，以適當堆疊使用者控制項，在 [動作] 窗格上。 如需詳細資訊，請參閱 <<c0> [ 執行窗格概觀](../vsto/actions-pane-overview.md)。
@@ -29,10 +29,10 @@ ms.locfileid: "60094604"
  控制項堆疊順序取決於是否垂直或水平停駐 [動作] 窗格。
 
 > [!NOTE]
->  如果使用者重新調整大小在執行階段的 [動作] 窗格，您可以設定來調整大小與執行窗格控制項。 您可以使用 Windows Form 控制項的 <xref:System.Windows.Forms.Control.Anchor%2A> 屬性，將控制項錨定到執行窗格。 如需詳細資訊，請參閱[如何：Windows Forms 上的控制項的錨點](/dotnet/framework/winforms/controls/how-to-anchor-controls-on-windows-forms)。
+> 如果使用者重新調整大小在執行階段的 [動作] 窗格，您可以設定來調整大小與執行窗格控制項。 您可以使用 Windows Form 控制項的 <xref:System.Windows.Forms.Control.Anchor%2A> 屬性，將控制項錨定到執行窗格。 如需詳細資訊，請參閱[如何：Windows Forms 上的控制項的錨點](/dotnet/framework/winforms/controls/how-to-anchor-controls-on-windows-forms)。
 
 > [!NOTE]
->  在下列指示的某些 Visual Studio 使用者介面項目中，您的電腦可能會顯示不同的名稱或位置。 您所擁有的 Visual Studio 版本以及使用的設定會決定這些項目。 如需詳細資訊，請參閱[將 Visual Studio IDE 個人化](../ide/personalizing-the-visual-studio-ide.md)。
+> 在下列指示的某些 Visual Studio 使用者介面項目中，您的電腦可能會顯示不同的名稱或位置。 您所擁有的 Visual Studio 版本以及使用的設定會決定這些項目。 如需詳細資訊，請參閱[將 Visual Studio IDE 個人化](../ide/personalizing-the-visual-studio-ide.md)。
 
 ## <a name="to-set-the-stack-order-of-the-actions-pane-controls"></a>若要設定執行窗格控制項堆疊順序
 

@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 96f46692b86f35c999e21541b9c8c7a7dcc7f670
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56714162"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62866040"
 ---
 # <a name="ienumdebugprograms2next"></a>IEnumDebugPrograms2::Next
 從列舉中傳回下的一個項目集。

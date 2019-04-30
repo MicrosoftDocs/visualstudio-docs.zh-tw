@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d8ca2366111e0e87e8e95db66f9bdb146016adb8
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 63d313534fab789c5e4e79fb644111314e054250
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60040128"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445162"
 ---
 # <a name="how-to-migrate-a-domain-specific-language-to-a-new-version"></a>HOW TO：將特定領域語言移轉至新的版本
 您可以移轉專案定義及使用特定領域語言[!INCLUDE[vs2010](../misc/includes/vs2010_md.md)]版本中的[!INCLUDE[dsl](../modeling/includes/dsl_md.md)]所散發之[!INCLUDE[vs_orcas_long](../debugger/includes/vs_orcas_long_md.md)]。
@@ -53,7 +53,7 @@ ms.locfileid: "60040128"
    - 選取專案或解決方案，以查看變更，讓此工具的清單。
 
        > [!NOTE]
-       >  顯示資料夾名稱旁邊的核取方塊會有任何作用。 您必須展開要檢查專案和方案的資料夾。
+       > 顯示資料夾名稱旁邊的核取方塊會有任何作用。 您必須展開要檢查專案和方案的資料夾。
 
 4. 轉換專案。
 
@@ -74,7 +74,7 @@ ms.locfileid: "60040128"
    2. 按一下 [**轉換所有範本**方案總管] 中的標頭中的按鈕。
 
        > [!NOTE]
-       >  您可以進行此步驟中不必要的。 如需詳細資訊，請參閱 <<c0> [ 如何自動執行轉換的所有範本](/previous-versions/visualstudio/visual-studio-2012/ff521399\(v\=vs.110\))。
+       > 您可以進行此步驟中不必要的。 如需詳細資訊，請參閱 <<c0> [ 如何自動執行轉換的所有範本](/previous-versions/visualstudio/visual-studio-2012/ff521399\(v\=vs.110\))。
 
 6. 更新已轉換的專案中自訂程式碼。
 

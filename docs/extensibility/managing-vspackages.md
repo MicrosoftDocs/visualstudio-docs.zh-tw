@@ -14,13 +14,13 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: a316d2af6ecb76c573cfb43e1334df1933a2989b
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56694708"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62856216"
 ---
-# <a name="manage-vspackages"></a>管理 Vspackage
+# <a name="manage-vspackages"></a>管理 VSPackages
 在大部分情況下，您不必擔心管理 Vspackage，因為專案和項目範本註冊，並自動載入封裝。 不過，在某些情況下，您可能需要了解更多的資訊，以管理您的封裝。
 
 ## <a name="use-the-experimental-instance"></a>使用實驗性執行個體

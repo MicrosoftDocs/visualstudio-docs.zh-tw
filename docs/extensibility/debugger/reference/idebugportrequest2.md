@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 8e2b78986b997358d7f15c9c8c73bb4bd0f73aaf
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56695423"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62871476"
 ---
 # <a name="idebugportrequest2"></a>IDebugPortRequest2
 這個介面會描述連接埠。 若要將連接埠新增至連接埠提供者會使用這個描述。

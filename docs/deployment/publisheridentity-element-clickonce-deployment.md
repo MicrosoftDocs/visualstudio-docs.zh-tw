@@ -17,11 +17,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 995b002784c1e76ceed36e51edb1ae893448f448
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56628438"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62927535"
 ---
 # <a name="ltpublisheridentitygt-element-clickonce-deployment"></a>&lt;publisherIdentity&gt;項目 （ClickOnce 部署）
 包含簽署此部署資訊清單之發行者的資訊。
@@ -38,7 +38,7 @@ ms.locfileid: "56628438"
 ## <a name="elements-and-attributes"></a>元素和屬性
  `publisherIdentity` ，則需要簽署資訊清單元素。 下表顯示的屬性，`publisherIdentity`項目支援。
 
-|屬性|說明|
+|屬性|描述|
 |---------------|-----------------|
 |`name`|必要項。 描述發行此應用程式的合作對象的識別。|
 |`issuerKeyHash`|必要項。 包含憑證簽發者的公開金鑰的 sha-1 雜湊。|

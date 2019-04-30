@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b1e1dd08cb6b27624e7b83a595ca0937bcc6003d
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: c682920c7e879d65dfddd3b4fee17a0f20b26b21
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60112203"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63411280"
 ---
 # <a name="create-a-breakpoint"></a>建立中斷點
 以下說明建立中斷點的程序。
@@ -31,7 +31,7 @@ ms.locfileid: "60112203"
 3. [IDebugPendingBreakpoint2::CanBind](../../extensibility/debugger/reference/idebugpendingbreakpoint2-canbind.md)
 
     > [!NOTE]
-    >  **CanBind**只有在使用者提出的中斷點時，才會呼叫**中斷點**視窗。
+    > **CanBind**只有在使用者提出的中斷點時，才會呼叫**中斷點**視窗。
 
 4. [IDebugPendingBreakpoint2::Bind](../../extensibility/debugger/reference/idebugpendingbreakpoint2-bind.md)
 

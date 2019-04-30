@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 395c45b19559833549c9613278f1a4ddbb06f30a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: ffd060ca442d0979c76781ae4467b28af69a42b3
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60104059"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63415198"
 ---
 # <a name="expose-types-to-visual-designers"></a>公開至視覺化設計工具的型別
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 必須能夠存取類別和類型定義在設計階段才能顯示視覺化設計工具。 類別會從一組預先定義的包含目前的專案 （參考，加上其相依性） 的完整相依性集合的組件載入。 它也可能需要的視覺化設計工具存取類別和自訂工具所產生的檔案中定義的類型。
@@ -27,7 +27,7 @@ ms.locfileid: "60104059"
  專案系統的變更追蹤輸出檔的自訂工具，提供完整支援，前提是這些變更是執行自訂工具的結果。 每次執行自訂工具時，會產生新的 temporary PE，並適當的通知傳送給設計工具。
 
 > [!NOTE]
->  臨時程式可執行檔的產生檔案會在背景執行，因為沒有任何錯誤會回報給使用者，如果編譯失敗。
+> 臨時程式可執行檔的產生檔案會在背景執行，因為沒有任何錯誤會回報給使用者，如果編譯失敗。
 
  利用暫時的 PE 支援的自訂工具必須遵循下列規則：
 

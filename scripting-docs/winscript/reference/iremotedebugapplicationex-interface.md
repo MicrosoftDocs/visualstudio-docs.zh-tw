@@ -14,11 +14,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: ab9e25a28ade1ac73b9e4837dae61e2d91f24c45
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58144403"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62788374"
 ---
 # <a name="iremotedebugapplicationex-interface"></a>IRemoteDebugApplicationEx 介面
 代表執行中應用程式。 它不需要對應至作業系統處理序。 一般而言，偵錯工具的目標應用程式進行偵錯。 處理序偵錯管理員通常會實作應用程式物件。  

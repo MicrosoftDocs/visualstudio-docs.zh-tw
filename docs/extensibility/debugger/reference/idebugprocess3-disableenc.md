@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 39b7456d9a045331c53f8465cc7387823c734104
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.openlocfilehash: 2cc26c9d2dae65d8bab0126be5a62b144ebf42b7
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56688923"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63413290"
 ---
 # <a name="idebugprocess3disableenc"></a>IDebugProcess3::DisableENC
 這個方法明確地停用編輯後繼續在此程序 （和它包含的所有程式）。 自訂連接埠供應商應該一律傳回`E_NOTIMPL`。
@@ -44,7 +44,7 @@ HRESULT DisableENC(
  如果成功，則傳回`S_OK`，否則會傳回錯誤碼。
 
 > [!NOTE]
->  自訂連接埠供應商應該一律傳回`E_NOTIMPL`。
+> 自訂連接埠供應商應該一律傳回`E_NOTIMPL`。
 
 ## <a name="remarks"></a>備註
  一次編輯後繼續 會停用處理程序，可以只藉由重新啟動處理程序重新啟用。

@@ -28,11 +28,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 53003e2a88faf2ef29d3a1eb3df1da081f20ce57
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60077754"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62561681"
 ---
 # <a name="program-document-level-customizations"></a>程式文件層級自訂
   當您使用文件層級自訂擴充 Microsoft Office Word 或 Microsoft Office Excel 時，可以執行下列工作：

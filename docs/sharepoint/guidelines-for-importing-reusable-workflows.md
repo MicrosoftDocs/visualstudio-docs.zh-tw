@@ -16,11 +16,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: bb386a2d80931ece415b0b3939f2947678808261
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60041217"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62557121"
 ---
 # <a name="guidelines-for-importing-reusable-workflows"></a>匯入可重複使用的工作流程的指導方針
   若要匯入以 SharePoint Designer 所建立可重複使用的工作流程，請使用 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 中的 [匯入可重複使用的 SharePoint 2010 工作流程] 專案範本。 此範本會匯入*宣告**工作流程*([!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)]-只)，並將它轉換*程式碼工作流程*，這是您可以使用增強的工作流程[!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)]或[!INCLUDE[csprcs](../sharepoint/includes/csprcs-md.md)]程式碼。 [!INCLUDE[crdefault](../sharepoint/includes/crdefault-md.md)] [逐步解說：SharePoint Designer 可重複使用工作流程匯入 Visual Studio](../sharepoint/walkthrough-import-a-sharepoint-designer-reusable-workflow-into-visual-studio.md)。

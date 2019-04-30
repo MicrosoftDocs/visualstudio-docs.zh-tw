@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f0af3634c2aeb851dab580922f8c282824f41626
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 7037b49763d4fda844b7692052935a4eee7f7107
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60075986"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63420696"
 ---
 # <a name="checklist-create-a-legacy-language-service"></a>檢查清單：建立舊版語言服務
 下列檢查清單摘要說明您必須採取才能建立語言服務的基本步驟[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]核心編輯器。 若要整合到您的語言服務[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]，您必須建立偵錯運算式評估工具。 如需詳細資訊，請參閱 <<c0> [ 撰寫 CLR 運算式評估工具](../../extensibility/debugger/writing-a-common-language-runtime-expression-evaluator.md)中[Visual Studio 偵錯工具擴充性](../../extensibility/debugger/visual-studio-debugger-extensibility.md)。
@@ -61,7 +61,7 @@ ms.locfileid: "60075986"
     必須處理的命令取決於所提供的服務。 如需詳細資訊，請參閱 <<c0> [ 語言的重要命令服務篩選](../../extensibility/internals/important-commands-for-language-service-filters.md)。
 
     > [!NOTE]
-    >  <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextViewFilter>介面必須實作的相同物件上<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>介面。
+    > <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextViewFilter>介面必須實作的相同物件上<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>介面。
 
 - 陳述式完成
 

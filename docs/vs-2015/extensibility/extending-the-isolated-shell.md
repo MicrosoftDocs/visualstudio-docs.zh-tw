@@ -10,12 +10,12 @@ ms.assetid: 9a641d8f-211e-4486-a1b1-4a89fafe7ee8
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 65efd5a864863fb18f26d8fdfc3736423aad7aeb
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: ea55039de769598b26868727a93cfa11726e4838
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60054088"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443915"
 ---
 # <a name="extending-the-isolated-shell"></a>擴充 Isolated 的 Shell
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,7 +23,7 @@ ms.locfileid: "60054088"
 您可以擴充 Visual Studio 隔離 shell 藉由將 VSPackage、 Managed Extensibility Framework (MEF) 元件的組件或泛型的 VSIX 專案新增至您的獨立的 shell 應用程式。  
   
 > [!NOTE]
->  下列步驟 presuppose 已使用 Visual Studio Shell 獨立模式的專案範本，來建立基本的 isolated 的 shell 應用程式。 如需有關這個專案範本的詳細資訊，請參閱[逐步解說：建立基本獨立 Shell 應用程式](../extensibility/walkthrough-creating-a-basic-isolated-shell-application.md)。  
+> 下列步驟 presuppose 已使用 Visual Studio Shell 獨立模式的專案範本，來建立基本的 isolated 的 shell 應用程式。 如需有關這個專案範本的詳細資訊，請參閱[逐步解說：建立基本獨立 Shell 應用程式](../extensibility/walkthrough-creating-a-basic-isolated-shell-application.md)。  
   
 ## <a name="locations-for-the-visual-studio-package-project-template"></a>Visual Studio Package 專案範本位置  
  Visual Studio Package 專案範本位在 [新增專案]  對話方塊的三個不同位置：  
@@ -121,4 +121,4 @@ ms.locfileid: "60054088"
 8. 建置並執行方案。  
   
 ## <a name="see-also"></a>另請參閱  
- [逐步解說：建立基本的 Isolated 的 Shell 應用程式](../extensibility/walkthrough-creating-a-basic-isolated-shell-application.md)
+ [逐步解說：建立基本的 Isolated Shell 應用程式](../extensibility/walkthrough-creating-a-basic-isolated-shell-application.md)

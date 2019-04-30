@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: a0d6a6cfeb3cb222d2ef58233b072f80e50c8d9e
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60056428"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62891887"
 ---
 # <a name="add-icons-to-menu-commands"></a>將圖示加入至功能表命令
 命令可以出現在功能表和工具列。 在工具列上很常見的只是圖示 （以節省空間） 時在功能表上顯示命令通常會出現圖示和文字的命令。

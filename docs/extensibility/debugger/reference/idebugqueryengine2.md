@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: bbe3444d5bcdb31a4ef7619b123041f459a09852
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56701650"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62916405"
 ---
 # <a name="idebugqueryengine2"></a>IDebugQueryEngine2
 此介面可讓偵錯管理員 (SDM) 擷取介面，代表偵錯引擎 (DE) 的工作階段。

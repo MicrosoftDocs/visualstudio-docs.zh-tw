@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - aspnet
 ms.openlocfilehash: ba255d1d1e906e8fe7bacd05d1f4afd4b7bf413b
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59366467"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63407848"
 ---
 # <a name="remote-debug-aspnet-on-a-remote-iis-computer"></a>在執行 IIS 的遠端電腦上對 ASP.NET 進行遠端偵錯
 偵錯已部署至 IIS 的 ASP.NET 應用程式，安裝並部署您的應用程式的所在的電腦上執行遠端工具，然後連結至您執行的應用程式從 Visual Studio。

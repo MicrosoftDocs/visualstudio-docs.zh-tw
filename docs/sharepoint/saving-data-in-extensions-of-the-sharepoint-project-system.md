@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 52b04490a646c7ced27d4a2d7f2344e27cbbae8b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60082759"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62827241"
 ---
 # <a name="save-data-in-extensions-of-the-sharepoint-project-system"></a>將資料儲存在 SharePoint 專案系統的擴充功能
   當您擴充 SharePoint 專案系統時，您可以儲存 SharePoint 專案已關閉之後依然存在的字串資料。 通常與特定專案項目或專案本身相關聯的資料。

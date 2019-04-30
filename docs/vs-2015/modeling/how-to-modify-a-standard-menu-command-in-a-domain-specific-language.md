@@ -12,12 +12,12 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 53b75732c636a551e3a000008d3ddcca2aa686cb
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 966a81f7863f71296bb7b6bd307a5e3a5241c783
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60058476"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441031"
 ---
 # <a name="how-to-modify-a-standard-menu-command-in-a-domain-specific-language"></a>HOW TO：使用特定領域語言修改標準功能表命令
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,7 +35,7 @@ ms.locfileid: "60058476"
    本主題說明此程序。  
   
 > [!NOTE]
->  如果您想要建立您自己的功能表命令，請參閱[How to:將命令加入至捷徑功能表](../modeling/how-to-add-a-command-to-the-shortcut-menu.md)。  
+> 如果您想要建立您自己的功能表命令，請參閱[How to:將命令加入至捷徑功能表](../modeling/how-to-add-a-command-to-the-shortcut-menu.md)。  
   
 ## <a name="what"></a> 您可以修改哪些命令？  
   
@@ -52,7 +52,7 @@ ms.locfileid: "60058476"
 5. 關閉檔案而不儲存您的編輯。  
   
     > [!NOTE]
-    >  您通常不應該編輯產生的檔案。 任何編輯在下次產生檔案時都會遺失。  
+    > 您通常不應該編輯產生的檔案。 任何編輯在下次產生檔案時都會遺失。  
   
 ## <a name="extend"></a> 擴充適當的命令集類別  
  建立包含命令集類別之部分宣告的新檔案。  
@@ -67,7 +67,7 @@ ms.locfileid: "60058476"
   
 2. 在  **DslPackage**，建立名為的資料夾**自訂程式碼**。 在此資料夾中，建立新的類別檔案，名為`CommandSet.cs`。  
   
-3. 在新檔案中，撰寫具有與產生部分類別相同之命名空間和名稱的部分宣告。 例如：  
+3. 在新檔案中，撰寫具有與產生部分類別相同之命名空間和名稱的部分宣告。 例如:   
   
     ```  
     using System;  
@@ -90,7 +90,7 @@ ms.locfileid: "60058476"
  下列範例會在使用者選取多個圖形時，停用 [刪除] 功能表項目。  
   
 > [!NOTE]
->  這個方法不會影響是否可透過按鍵來使用命令。 例如，停用 [刪除] 功能表項目無法防止透過 Delete 鍵叫用此命令。  
+> 這個方法不會影響是否可透過按鍵來使用命令。 例如，停用 [刪除] 功能表項目無法防止透過 Delete 鍵叫用此命令。  
   
 ```  
 /// <summary>  

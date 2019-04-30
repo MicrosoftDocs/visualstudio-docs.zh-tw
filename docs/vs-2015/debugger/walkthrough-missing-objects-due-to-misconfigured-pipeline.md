@@ -9,12 +9,12 @@ caps.latest.revision: 16
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 01366bfd0f32f9cbf731613339f2c592873e2623
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 9d74006051fd39043de75cec81fdad3f1083adef
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60114102"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444289"
 ---
 # <a name="walkthrough-missing-objects-due-to-misconfigured-pipeline"></a>逐步解說：因管線設定錯誤而遺漏的物件
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -64,7 +64,7 @@ ms.locfileid: "60114102"
     在 [圖形管線階段]  視窗中， **輸入組合語言** 階段會在物件轉換前顯示其幾何， **端點著色器** 階段則會顯示轉換後的相同物件。 在此情節中，請注意 [圖形管線階段]  視窗會顯示 **輸入組合語言** 和  **端點著色器** 階段，而非其中一個繪製呼叫的 **像素著色器** 階段。  
   
    > [!NOTE]
-   >  若有其他管線階段 (例如輪廓著色器、網域著色器或幾何著色器階段) 在處理物件，則其都可能是問題的原因。 一般而言，問題與初期階段相關，在該階段中不會顯示結果，或者會以非預期的方式顯示結果。  
+   > 若有其他管線階段 (例如輪廓著色器、網域著色器或幾何著色器階段) 在處理物件，則其都可能是問題的原因。 一般而言，問題與初期階段相關，在該階段中不會顯示結果，或者會以非預期的方式顯示結果。  
   
 4. 在到達對應至遺漏物件的繪製呼叫時停止。 在此情節中，[圖形管線階段]  視窗表示幾何已發給 GPU (由 **輸入組合語言** 階段的存在表現) 且已轉換 (由 **頂點著色器** 階段表示)，但似乎沒有作用中的像素著色器，因此不會出現在轉譯目標中 (因為不存在 **像素著色器** 階段)。 在此情節中，您甚至可在 **輸出合併** 階段中看到遺漏物件的黑色輪廓：  
   
@@ -87,7 +87,7 @@ ms.locfileid: "60114102"
 1. 尋找對應至遺漏物件的 `PSSetShader` 呼叫。 於 [圖形事件清單]  視窗中，在此 [圖形事件清單]  視窗右上角的 [搜尋]  方塊輸入「Draw;PSSetShade」。 這樣會篩選清單，使其只包含「PSSetShader」事件及標題中具有「Draw」的事件。 選擇出現在遺漏物件之繪製呼叫前的第一個 `PSSetShader` 呼叫。  
   
    > [!NOTE]
-   >  若未在此畫面格期間設定，則`PSSetShader` 不會出現在 [圖形事件清單]  視窗中。 通常只有在單一像素著色器為所有的物件使用，或在此畫面格期間無意地略過 `PSSetShader` 呼叫時，才會發生此狀況。 在任何一種情況下，建議您搜尋 `PSSetShader` 呼叫的應用程式原始程式碼，並使用傳統偵錯技術來檢查這些呼叫的行為。  
+   > 若未在此畫面格期間設定，則`PSSetShader` 不會出現在 [圖形事件清單]  視窗中。 通常只有在單一像素著色器為所有的物件使用，或在此畫面格期間無意地略過 `PSSetShader` 呼叫時，才會發生此狀況。 在任何一種情況下，建議您搜尋 `PSSetShader` 呼叫的應用程式原始程式碼，並使用傳統偵錯技術來檢查這些呼叫的行為。  
   
 2. 開啟 [圖形事件呼叫堆疊]  視窗。 在 [圖形診斷]  工具列上，選擇 [圖形事件清單堆疊] 。  
   
@@ -96,7 +96,7 @@ ms.locfileid: "60114102"
     ![不會初始化像素著色器程式碼](../debugger/media/gfx-diag-demo-misconfigured-pipeline-step-5.png "gfx_diag_demo_misconfigured_pipeline_step_5")  
   
    > [!NOTE]
-   >  若您無法只透過檢查呼叫堆疊來找到 null 值的來源，建議您在 `PSSetShader` 呼叫上設定條件中斷點，如此當像素著色器將設定為 null 時，會中斷程式執行。 然後在偵錯模式中重新啟動應用程式，並使用傳統的偵錯技術來尋找 null 值的來源。  
+   > 若您無法只透過檢查呼叫堆疊來找到 null 值的來源，建議您在 `PSSetShader` 呼叫上設定條件中斷點，如此當像素著色器將設定為 null 時，會中斷程式執行。 然後在偵錯模式中重新啟動應用程式，並使用傳統的偵錯技術來尋找 null 值的來源。  
   
    若要修正此問題，請使用 `ID3D11DeviceContext::PSSetShader` API 呼叫的第一個參數，以指派正確的像素著色器 。  
   

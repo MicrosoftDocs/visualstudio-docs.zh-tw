@@ -18,12 +18,12 @@ caps.latest.revision: 27
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 48b5d8406f5b5c6d43afadf9e544914e6133090c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 430154b1f9b9f652052dc828c921d3ded16a3787
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60046934"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63442693"
 ---
 # <a name="how-to-publish-a-clickonce-application-using-the-publish-wizard"></a>HOW TO：使用發行精靈發行 ClickOnce 應用程式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,10 +33,10 @@ ms.locfileid: "60046934"
  在執行 [發行精靈] 之前，您應該適當設定發行屬性。 例如，如果您要指定用於簽署 ClickOnce 應用程式的金鑰，您可以在 [專案設計工具] 的 [簽署] 頁面上執行這項操作。 如需詳細資訊，請參閱[保護 ClickOnce 應用程式](../deployment/securing-clickonce-applications.md)。  
   
 > [!NOTE]
->  當您使用 ClickOnce 安裝多個版本的應用程式時，安裝會將舊版應用程式移至您指定之發行位置中名為 Archive 的資料夾。 以這種方式封存先前的版本可將安裝目錄與舊版的資料夾分開。  
+> 當您使用 ClickOnce 安裝多個版本的應用程式時，安裝會將舊版應用程式移至您指定之發行位置中名為 Archive 的資料夾。 以這種方式封存先前的版本可將安裝目錄與舊版的資料夾分開。  
   
 > [!NOTE]
->  根據目前使用的設定與版本，您所看到的對話方塊與功能表命令可能會與 [說明] 中所描述的不同。 若要變更設定，請在 [工具]  功能表上按一下 [匯入和匯出設定]  。 如需詳細資訊，請參閱 [在 Visual Studio 中自訂開發設定](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)  
+> 根據目前使用的設定與版本，您所看到的對話方塊與功能表命令可能會與 [說明] 中所描述的不同。 若要變更設定，請在 [工具]  功能表上按一下 [匯入和匯出設定]  。 如需詳細資訊，請參閱 [在 Visual Studio 中自訂開發設定](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)  
   
 ### <a name="to-publish-to-a-file-share-or-path"></a>發行至檔案共用或路徑  
   
@@ -83,7 +83,7 @@ ms.locfileid: "60046934"
 4. 在 [使用者要如何安裝應用程式?] 頁面上，按一下 [從 CD-ROM 或 DVD-ROM]，然後按一下 [下一步]。  
   
    > [!NOTE]
-   >  如果您要在 CD-ROM 插入光碟機時即自動執行安裝，請在 [專案設計工具] 中開啟 [發佈] 頁面，並按一下 [選項] 按鈕，然後在 [發佈選項精靈] 中，選取 [若是使用光碟安裝，在插入光碟後自動啟動安裝程式]。  
+   > 如果您要在 CD-ROM 插入光碟機時即自動執行安裝，請在 [專案設計工具] 中開啟 [發佈] 頁面，並按一下 [選項] 按鈕，然後在 [發佈選項精靈] 中，選取 [若是使用光碟安裝，在插入光碟後自動啟動安裝程式]。  
   
 5. 如果您使用 CD-ROM 散發應用程式，可能會想要從網站提供更新。 在 [應用程式會在哪裡檢查更新檔?] 頁面中，選擇更新選項：  
   
@@ -98,7 +98,7 @@ ms.locfileid: "60046934"
     發行狀態會隨即顯示在狀態通知區域中。  
   
    > [!NOTE]
-   >  在發行完成後，您必須使用 CD 燒錄機或 DVD 燒錄機，將檔案從步驟 3 中指定的位置複製到 CD-ROM 或 DVD-ROM 媒體。  
+   > 在發行完成後，您必須使用 CD 燒錄機或 DVD 燒錄機，將檔案從步驟 3 中指定的位置複製到 CD-ROM 或 DVD-ROM 媒體。  
   
 ## <a name="see-also"></a>另請參閱  
  [ClickOnce 安全性和部署](../deployment/clickonce-security-and-deployment.md)   

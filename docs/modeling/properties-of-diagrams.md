@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 05c348edfa4665b138ac0f6069b0afaf6735da7a
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55937257"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62999263"
 ---
 # <a name="properties-of-diagrams"></a>圖表的屬性
 您可以設定指定如何圖表會顯示在產生的設計工具中的屬性。 例如，您可以指定文字的預設色彩在圖表中。
@@ -33,7 +33,7 @@ ms.locfileid: "55937257"
 |自訂屬性|用來將屬性加入至產生的程式碼類別。|\<無>|
 |產生雙衍生|如果`True`，將產生的基底類別和部分類別 （以支援透過覆寫自訂）。 如需詳細資訊，請參閱 <<c0> [ 覆寫及擴充產生的類別](../modeling/overriding-and-extending-the-generated-classes.md)。|False|
 |具有自訂建構函式|如果`True`，以原始碼提供自訂建構函式。 如需詳細資訊，請參閱 <<c0> [ 覆寫及擴充產生的類別](../modeling/overriding-and-extending-the-generated-classes.md)...|False|
-|繼承修飾詞|描述的繼承來源的程式碼類別，產生自圖表的類型 (`none`， `abstract`，或`sealed`)。|無|
+|繼承修飾詞|描述的繼承來源的程式碼類別，產生自圖表的類型 (`none`， `abstract`，或`sealed`)。|None|
 |基底的圖表|此圖表的基底類別。|(無)|
 |名稱|此圖表的名稱。|目前的名稱|
 |命名空間|此圖表附屬於命名空間。|目前的命名空間|

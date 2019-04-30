@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: a236b30552007112663ad9f985ddc94995fe1ef8
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: bb7ee0a937e6cb901704763e1f4ead478d99e0e8
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60050020"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63419448"
 ---
 # <a name="how-to-hide-controls-on-worksheets-when-printing"></a>HOW TO：列印時隱藏工作表的控制項
   當您列印 Windows Form 控制項的 Microsoft Office Excel 文件時，控制項也會顯示在列印的工作表上。 列印工作表時，您可以隱藏控制項。
@@ -28,10 +28,10 @@ ms.locfileid: "60050020"
  [!INCLUDE[appliesto_xlalldoc](../vsto/includes/appliesto-xlalldoc-md.md)]
 
 > [!NOTE]
->  如果您隱藏控制項，顯示資料，例如<xref:Microsoft.Office.Tools.Excel.Controls.TextBox>，控制項中的資料將不會顯示在列印的工作表上。
+> 如果您隱藏控制項，顯示資料，例如<xref:Microsoft.Office.Tools.Excel.Controls.TextBox>，控制項中的資料將不會顯示在列印的工作表上。
 
 > [!NOTE]
->  在下列指示的某些 Visual Studio 使用者介面項目中，您的電腦可能會顯示不同的名稱或位置。 您所擁有的 Visual Studio 版本以及使用的設定會決定這些項目。 如需詳細資訊，請參閱[將 Visual Studio IDE 個人化](../ide/personalizing-the-visual-studio-ide.md)。
+> 在下列指示的某些 Visual Studio 使用者介面項目中，您的電腦可能會顯示不同的名稱或位置。 您所擁有的 Visual Studio 版本以及使用的設定會決定這些項目。 如需詳細資訊，請參閱[將 Visual Studio IDE 個人化](../ide/personalizing-the-visual-studio-ide.md)。
 
 ## <a name="to-hide-controls-when-a-worksheet-is-printed"></a>若要隱藏工作表時的控制項列印
 

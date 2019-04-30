@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - azure
 ms.openlocfilehash: 9cf5752c43e22f2df73fa6701374805cf4770a82
-ms.sourcegitcommit: cdcbf254db737d42275e95de4ffc4f8c14e87e00
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57428618"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62563356"
 ---
 # <a name="debug-azure-services-in-visual-studio"></a>偵錯 Visual Studio 中的 Azure 服務
 
@@ -33,6 +33,6 @@ ms.locfileid: "57428618"
 
 - 若要遠端偵錯 Azure Service Fabric 上的 ASP.NET，請參閱[偵錯遠端 Service Fabric 應用程式](/azure/service-fabric/service-fabric-debugging-your-application#debug-a-remote-service-fabric-application)
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [Visual Studio 偵錯](../debugger/index.md)

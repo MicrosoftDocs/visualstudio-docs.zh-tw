@@ -11,12 +11,12 @@ ms.assetid: 1c323afd-fb4e-449a-adaa-bb7a5d3b1468
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 3870027762675f4f9791fa720ae932aedf0b5f90
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 1830e014a32129b8e63c78d179eed12f3375b035
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60061329"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432152"
 ---
 # <a name="enabling-the-azure-sdk"></a>啟用 Azure SDK
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,7 +38,7 @@ Azure SDK for.NET 可協助您建立、 設定、 建置、 偵錯、 執行和�
      請依照安裝程式中的指示執行。  
   
     > [!NOTE]
-    >  若要安裝 Azure Tools，您必須擁有 Internet Information Services 7.0 和已安裝的 ASP.NET 應用程式開發元件。 如果未安裝這些元件，Azure Tools 安裝程式會提示您安裝它們。  
+    > 若要安裝 Azure Tools，您必須擁有 Internet Information Services 7.0 和已安裝的 ASP.NET 應用程式開發元件。 如果未安裝這些元件，Azure Tools 安裝程式會提示您安裝它們。  
   
 ## <a name="see-also"></a>另請參閱  
  [Azure](https://azure.microsoft.com/)   

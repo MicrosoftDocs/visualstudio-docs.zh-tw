@@ -8,11 +8,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 00da6f72bfafcc62075bc06739e4daec0fe45994
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60038136"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62951208"
 ---
 # <a name="writing-user-commands-and-actions"></a>撰寫使用者命令和動作
 您可以自訂網域指定的語言，方法為將命令加入圖表，以及回應手勢，例如拖放、按一下和按兩下事件。
