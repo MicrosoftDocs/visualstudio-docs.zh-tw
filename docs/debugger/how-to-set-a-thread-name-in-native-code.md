@@ -1,5 +1,5 @@
 ---
-title: 如何： 在機器碼中設定執行緒名稱 |Microsoft Docs
+title: HOW TO：在機器碼中設定執行緒名稱 |Microsoft Docs
 ms.date: 12/17/2018
 ms.topic: conceptual
 dev_langs:
@@ -17,14 +17,14 @@ manager: jillfra
 ms.workload:
 - cplusplus
 ms.openlocfilehash: d37a028fb5af099484d81374e52cfd12af727f94
-ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57526226"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62847534"
 ---
-# <a name="how-to-set-a-thread-name-in-native-code"></a>如何：在機器碼中設定執行緒名稱
-在所有 Visual Studio 版本中，都可以將執行緒命名。 執行緒命名適合用來識別感興趣的執行緒**執行緒**執行中處理序進行偵錯時的視窗。 具有 名為執行緒也可以很有幫助執行透過損毀傾印的檢查和分析效能會擷取使用各種工具，事後進行偵錯時。
+# <a name="how-to-set-a-thread-name-in-native-code"></a>HOW TO：在機器碼中設定執行緒名稱
+在所有 Visual Studio 版本中，都可以將執行緒命名。 執行緒命名適合用來識別感興趣的執行緒**執行緒**執行中處理序進行偵錯時的視窗。 具有名為執行緒也可以很有幫助執行透過損毀傾印的檢查和分析效能會擷取使用各種工具，事後進行偵錯時。
 
 ## <a name="ways-to-set-a-thread-name"></a>如何設定執行緒名稱
 
@@ -108,7 +108,7 @@ void SetThreadName(DWORD dwThreadID, const char* threadName) {
 }
 ```
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [對多執行緒應用程式進行偵錯](../debugger/debug-multithreaded-applications-in-visual-studio.md)
 - [在偵錯工具中檢視資料](../debugger/viewing-data-in-the-debugger.md)
-- [如何：在 Managed 程式碼中設定執行緒名稱](../debugger/how-to-set-a-thread-name-in-managed-code.md)
+- [如何：在 Managed 程式碼碼中設定執行緒名稱](../debugger/how-to-set-a-thread-name-in-managed-code.md)
