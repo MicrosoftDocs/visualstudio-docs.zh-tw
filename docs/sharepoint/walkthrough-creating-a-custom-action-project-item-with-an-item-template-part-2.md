@@ -11,12 +11,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: b71b092bcadef24e564b14dd215bc9c328aa8e7f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: d9170c6ed32c7a807af8c869ca9616db3bdff683
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60081134"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63430460"
 ---
 # <a name="walkthrough-create-a-custom-action-project-item-with-an-item-template-part-2"></a>逐步解說：建立自訂動作專案項目與項目範本，第 2 部分
   您定義自訂 SharePoint 專案項目類型，並將它與 Visual Studio 中的項目範本產生關聯之後，您也可以提供範本的精靈。 您可以使用精靈，在使用您的範本將新的執行個體的專案項目加入至專案時，從使用者收集資訊。 您所收集的資訊可以用來初始化專案項目中。
@@ -34,7 +34,7 @@ ms.locfileid: "60081134"
 - 偵錯和測試精靈。
 
 > [!NOTE]
->  您可以下載範例，以從[Github](https://github.com/SharePoint/PnP/tree/master/Samples/Workflow.Activities) ，示範如何建立工作流程的自訂活動。
+> 您可以下載範例，以從[Github](https://github.com/SharePoint/PnP/tree/master/Samples/Workflow.Activities) ，示範如何建立工作流程的自訂活動。
 
 ## <a name="prerequisites"></a>必要條件
  若要執行本逐步解說中，您必須先建立 CustomActionProjectItem 解決方案藉由完成[逐步解說：使用項目範本，第 1 部分中建立自訂動作專案項目](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-1.md)。
@@ -125,12 +125,12 @@ ms.locfileid: "60081134"
 2. 在 XAML 檢視中，請以下列 XAML 取代目前的 XAML。 XAML 定義 UI，包括標題、 控制的指定行為的自訂動作，並在視窗底部的 瀏覽按鈕。
 
     > [!NOTE]
-    >  您的專案會有某些編譯錯誤之後新增此程式碼。 當您在稍後步驟中加入程式碼時，這些錯誤就會消失運作。
+    > 您的專案會有某些編譯錯誤之後新增此程式碼。 當您在稍後步驟中加入程式碼時，這些錯誤就會消失運作。
 
      [!code-xml[SPExtensibility.ProjectItem.CustomAction#9](../sharepoint/codesnippet/Xaml/customactionprojectitem/itemtemplatewizard/wizardwindow.xaml#9)]
 
     > [!NOTE]
-    >  在此 XAML 中建立的視窗衍生自<xref:Microsoft.VisualStudio.PlatformUI.DialogWindow>基底類別。 當您將自訂的 WPF 對話方塊加入 Visual Studio 時，我們建議您將您的對話方塊中衍生自這個類別有一致的樣式，與其他 Visual Studio 中的對話方塊，並避免與強制回應對話方塊時，可能會發生的問題。 如需詳細資訊，請參閱 <<c0> [ 建立和管理強制回應對話方塊](/visualstudio/extensibility/creating-and-managing-modal-dialog-boxes)。
+    > 在此 XAML 中建立的視窗衍生自<xref:Microsoft.VisualStudio.PlatformUI.DialogWindow>基底類別。 當您將自訂的 WPF 對話方塊加入 Visual Studio 時，我們建議您將您的對話方塊中衍生自這個類別有一致的樣式，與其他 Visual Studio 中的對話方塊，並避免與強制回應對話方塊時，可能會發生的問題。 如需詳細資訊，請參閱 <<c0> [ 建立和管理強制回應對話方塊](/visualstudio/extensibility/creating-and-managing-modal-dialog-boxes)。
 
 3. 如果您正在開發 Visual Basic 專案，移除`ItemTemplateWizard`來自命名空間`WizardWindow`中的類別名稱`x:Class`屬性`Window`項目。 此元素會在第一行中的 XAML。 當您完成時，第一行應該類似下列程式碼：
 
@@ -314,7 +314,7 @@ ms.locfileid: "60081134"
      自訂動作會封裝並部署到 SharePoint 網站所指定**站台 URL**屬性的專案，並在 web 瀏覽器會開啟到這個站台的預設頁面。
 
     > [!NOTE]
-    >  如果**指令碼偵錯已停用** 對話方塊出現時，選擇**是** 按鈕。
+    > 如果**指令碼偵錯已停用** 對話方塊出現時，選擇**是** 按鈕。
 
 2. 在 SharePoint 網站的 [清單] 區域中，選擇**任務**連結。
 
@@ -346,5 +346,5 @@ ms.locfileid: "60081134"
 - [定義自訂 SharePoint 專案項目類型](../sharepoint/defining-custom-sharepoint-project-item-types.md)
 - [建立項目範本和專案範本，為 SharePoint 專案項目](../sharepoint/creating-item-templates-and-project-templates-for-sharepoint-project-items.md)
 - [Visual Studio 範本結構描述參考](/visualstudio/extensibility/visual-studio-template-schema-reference)
-- [如何：使用精靈與專案範本](../extensibility/how-to-use-wizards-with-project-templates.md)
+- [如何：搭配專案範本使用精靈](../extensibility/how-to-use-wizards-with-project-templates.md)
 - [自訂動作的預設位置和識別碼](http://go.microsoft.com/fwlink/?LinkId=181964)

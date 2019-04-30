@@ -17,12 +17,12 @@ caps.latest.revision: 26
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 12a4f736217374eefa32dda30111da5e71fbab39
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 945edb462b1ba849a3a1b9fd6797c8393b651163
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60110475"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437675"
 ---
 # <a name="view-dom-event-listeners"></a>檢視 DOM 事件接聽程式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ ms.locfileid: "60110475"
  上的清單**事件** 索引標籤上是動態的。 如果您在應用程式執行時加入事件接聽程式，則新事件接聽程式會在該處顯示。 如需加入及移除事件接聽程式的資訊，請參閱 <<c0> [ 解決問題的事件接聽程式的秘訣](#Tips)本主題中。
 
 > [!NOTE]
->  事件接聽程式的程式碼項目不是 DOM 項目，例如`xhr`，不會出現在**事件** 索引標籤。
+> 事件接聽程式的程式碼項目不是 DOM 項目，例如`xhr`，不會出現在**事件** 索引標籤。
 
 ## <a name="view-event-listeners-for-dom-elements"></a>檢視 DOM 項目的事件接聽程式
  此範例顯示 Windows Phone 市集應用程式。 Windows 市集應用程式也支援這裡說明的 [DOM 總管] 功能。

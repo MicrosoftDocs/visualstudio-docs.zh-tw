@@ -14,12 +14,12 @@ caps.latest.revision: 33
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 442181aa78e539471aa35feb96ec7503e09a97ec
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 53f65b54888c254c93e72aafa00e239f95d85ddf
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60065827"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63416849"
 ---
 # <a name="how-to-customize-class-diagrams-class-designer"></a>HOW TO：自訂類別圖表 (類別設計工具)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ ms.locfileid: "60065827"
  例如，您可以調整整個類別圖的縮放比例、變更個別類型成員的群組和排序方式、隱藏或顯示關聯性，以及將個別或多組類型移至圖表的任何位置。  
   
 > [!NOTE]
->  自訂圖形出現在圖表中的方式不會改變圖表呈現類型的基礎程式碼。  
+> 自訂圖形出現在圖表中的方式不會改變圖表呈現類型的基礎程式碼。  
   
  包含類型成員的區段 (例如類別中的屬性區段) 稱為區間。 您可以隱藏或顯示個別區間和類型成員。  
   
@@ -64,7 +64,7 @@ ms.locfileid: "60065827"
      指定特定的縮放值。 您可以使用 [縮放] 下拉式清單，或鍵入有效的縮放比例 (有效範圍介於 10% 到 400% 之間)。  
   
     > [!NOTE]
-    >  變更縮放比例不會影響類別圖列印成品的比例。  
+    > 變更縮放比例不會影響類別圖列印成品的比例。  
   
 ## <a name="CustomizeGroupingSorting"></a> 自訂類型成員的分組和排序方式  
   

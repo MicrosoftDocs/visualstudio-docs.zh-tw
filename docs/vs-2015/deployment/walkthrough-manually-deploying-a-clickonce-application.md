@@ -21,12 +21,12 @@ caps.latest.revision: 51
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: df11af5dee9ce510af01dab037a47a1bdd2f2880
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: baa62dc48b329cd3639c0623fccfdbe2325cf9e3
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60082200"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63429129"
 ---
 # <a name="walkthrough-manually-deploying-a-clickonce-application"></a>逐步解說：手動部署 ClickOnce 應用程式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -57,7 +57,7 @@ ms.locfileid: "60082200"
      您應該登入您的部署使用 Authenticode 憑證。 您可以使用 Visual Studio、 MageUI.exe 或 MakeCert.exe 和 Pvk2Pfx.exe 工具來產生測試憑證，或者您可以取得憑證從憑證授權單位 (CA)。 如果您選擇使用受信任的應用程式部署，您也必須執行一次安裝所有的用戶端電腦上的憑證。 如需詳細資訊，請參閱 [Trusted Application Deployment Overview](../deployment/trusted-application-deployment-overview.md)。  
   
     > [!NOTE]
-    >  您也可以簽署您的部署，您可以從憑證授權單位取得的 CNG 憑證。  
+    > 您也可以簽署您的部署，您可以從憑證授權單位取得的 CNG 憑證。  
   
 - 請確定應用程式沒有與 UAC 資訊內嵌資訊清單。  
   
@@ -76,7 +76,7 @@ ms.locfileid: "60082200"
 2. 在您剛才建立的部署目錄，建立版本的子目錄。 如果這是您要部署應用程式的第一次，命名版本子目錄**1.0.0.0**。  
   
     > [!NOTE]
-    >  您部署的版本可以不同於您的應用程式的版本。  
+    > 您部署的版本可以不同於您的應用程式的版本。  
   
 3. 所有的應用程式檔案複製到版本子目錄，包括可執行檔、 組件、 資源和資料檔案。 如有必要，您可以建立其他子目錄包含其他檔案。  
   
@@ -89,7 +89,7 @@ ms.locfileid: "60082200"
     ```  
   
     > [!NOTE]
-    >  務必包含句點 （.） 之後`-FromDirectory`選項，指出目前的目錄。 如果您未包含點，您必須指定您的應用程式檔案的路徑。  
+    > 務必包含句點 （.） 之後`-FromDirectory`選項，指出目前的目錄。 如果您未包含點，您必須指定您的應用程式檔案的路徑。  
   
 6. 登入應用程式資訊清單，使用您的 Authenticode 憑證。 取代*mycert.pfx*與您的憑證檔案的路徑。 取代*passwd*取代為您的憑證檔案的密碼。  
   
@@ -134,7 +134,7 @@ ms.locfileid: "60082200"
 2. 在您剛才建立的部署目錄，建立版本的子目錄。 如果這是您要部署應用程式的第一次，命名版本子目錄**1.0.0.0**。  
   
     > [!NOTE]
-    >  您部署的版本是可能不同於您的應用程式的版本。  
+    > 您部署的版本是可能不同於您的應用程式的版本。  
   
 3. 所有的應用程式檔案複製到版本子目錄，包括可執行檔、 組件、 資源和資料檔案。 如有必要，您可以建立其他子目錄包含其他檔案。  
   

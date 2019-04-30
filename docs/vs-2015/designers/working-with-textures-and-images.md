@@ -9,12 +9,12 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: bdee0fadfb1101d7087b7154f231958615aee227
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: c3211f72b867063e07e339ff803019cb9699e94a
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54795928"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63403469"
 ---
 # <a name="working-with-textures-and-images"></a>使用紋理和影像
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -22,7 +22,7 @@ ms.locfileid: "54795928"
 您可以使用 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 中的影像編輯器來建立和修改紋理和影像。 影像編輯器支援豐富的紋理和影像格式，如同在 DirectX 應用程式開發中所使用的一樣。  
   
 > [!NOTE]
->  影像編輯器不支援圖示或游標等低色影像。 若要建立或修改這種影像，請使用[圖示影像編輯器](http://msdn.microsoft.com/library/586d2b8b-0348-4883-a85d-1ff0ddbf14dd)。  
+> 影像編輯器不支援圖示或游標等低色影像。 若要建立或修改這種影像，請使用[圖示影像編輯器](http://msdn.microsoft.com/library/586d2b8b-0348-4883-a85d-1ff0ddbf14dd)。  
   
 ## <a name="textures-and-images"></a>紋理和影像  
  紋理和影像在基本層級只是資料的資料表，可用來在圖形應用程式中提供視覺詳細資料。 紋理或影像所提供的詳細資料類型取決於其使用方式，但色彩範例、alpha (投影片) 值、曲面法線和高度值都是常見範例。 紋理和影像的主要差異在於紋理必須要與圖形表示法搭配使用 (通常為 3-D 模型) 以表達完整的物件或場景，但影像通常是物件或場景的獨立表示法。  
@@ -47,7 +47,7 @@ ms.locfileid: "54795928"
   
 ## <a name="related-topics"></a>相關主題  
   
-|標題|說明|  
+|標題|描述|  
 |-----------|-----------------|  
 |[Image Editor](../designers/image-editor.md)|描述如何使用影像編輯器來處理紋理和影像。|  
 |[影像編輯器範例](../designers/image-editor-examples.md)|提供示範如何使用影像編輯器來執行一般映像處理工作的主題連結。|

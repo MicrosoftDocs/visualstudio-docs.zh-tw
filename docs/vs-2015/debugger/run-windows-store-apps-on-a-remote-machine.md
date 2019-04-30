@@ -14,12 +14,12 @@ caps.latest.revision: 47
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: fa0fac38c79e4c54cb461ef51e016508d043f202
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: e53e05d9df5a7bbdca5fd8a9b74dd9325dc7aae5
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60039791"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63426469"
 ---
 # <a name="run-windows-store-apps-on-a-remote-machine"></a>在遠端電腦上執行 Windows 市集應用程式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -66,7 +66,7 @@ ms.locfileid: "60039791"
  根據預設，遠端偵錯工具會使用 Windows 驗證。  
   
 > [!WARNING]
->  您也可以選擇在 [非驗證] 模式下執行遠端偵錯工具，但非常不建議您使用這個模式。 在此模式中執行時不具有網路安全性。 只有在確定網路沒有面臨惡意或攻擊流量的風險時，才能選擇非驗證模式。  
+> 您也可以選擇在 [非驗證] 模式下執行遠端偵錯工具，但非常不建議您使用這個模式。 在此模式中執行時不具有網路安全性。 只有在確定網路沒有面臨惡意或攻擊流量的風險時，才能選擇非驗證模式。  
   
 ## <a name="BKMK_DirectConnect"></a> 如何直接連接到遠端裝置  
  若要直接連接到遠端裝置，請使用標準乙太網路纜線將 Visual Studio 電腦連接到此裝置。 如果裝置沒有乙太網路連接埠，您可以使用 USB 乙太網路轉接線連接到纜線。  
@@ -74,15 +74,15 @@ ms.locfileid: "60039791"
 ## <a name="BKMK_Installing_the_Remote_Tools"></a> 安裝遠端工具  
   
 > [!NOTE]
->  **版本和更新**  
+> **版本和更新**  
 >   
->  **Visual Studio 2015 遠端工具** 不支援舊版 Visual Studio。  
+> **Visual Studio 2015 遠端工具** 不支援舊版 Visual Studio。  
 >   
->  我們建議您安裝 Visual Studio 2015 遠端工具更新版本，以符合您的 Visual Studio 安裝更新版本。  
+> 我們建議您安裝 Visual Studio 2015 遠端工具更新版本，以符合您的 Visual Studio 安裝更新版本。  
 >   
->  VS 偵錯工具與 VS 2015 版本和 VS 2015 遠端工具的任何組合相容。 不過，Visual Studio 的最新功能要求 Visual Studio 和遠端工具必須是最新版本。  
+> VS 偵錯工具與 VS 2015 版本和 VS 2015 遠端工具的任何組合相容。 不過，Visual Studio 的最新功能要求 Visual Studio 和遠端工具必須是最新版本。  
 >   
->  其他診斷工具可能要求遠端工具和 Visual Studio 必須是相同版本。  
+> 其他診斷工具可能要求遠端工具和 Visual Studio 必須是相同版本。  
   
  **在遠端裝置上安裝遠端偵錯元件**  
   
@@ -101,7 +101,7 @@ ms.locfileid: "60039791"
 ## <a name="BKMK_Starting_the_Remote_Debugger_Monitor"></a> 啟動遠端偵錯工具監視  
   
 > [!NOTE]
->  由於遠端偵錯工具會設定防火牆，允許與 Visual Studio 主機通訊，因此您第一次啟動遠端偵錯工具時，必須是遠端裝置上的系統管理員。  
+> 由於遠端偵錯工具會設定防火牆，允許與 Visual Studio 主機通訊，因此您第一次啟動遠端偵錯工具時，必須是遠端裝置上的系統管理員。  
   
  安裝遠端工具之後，請選擇 [ **開始** ] 畫面的 [ **遠端偵錯工具** ]。 [ **遠端偵錯組態** ] 會在您第一次啟動遠端偵錯工具時出現。  
   
@@ -125,7 +125,7 @@ ms.locfileid: "60039791"
    2. 選擇 [ **權限** ] 新增或移除具有遠端偵錯權限的使用者。  
   
        > [!NOTE]
-       >  每一個從遠端進行偵錯的使用者帳戶都必須具有權限。  
+       > 每一個從遠端進行偵錯的使用者帳戶都必須具有權限。  
   
    使用 [ **遠端偵錯工具組態精靈** ] 設定遠端偵錯工具的進階選項。 若要開啟精靈，請選擇 [開始] 畫面上的 [ **遠端偵錯工具組態精靈** ]。  
   
@@ -141,7 +141,7 @@ ms.locfileid: "60039791"
  此對話方塊會列出 Visual Studio 電腦的區域子網路上的裝置，以及執行遠端偵錯工具的裝置。  
   
 > [!TIP]
->  如果無法順利連接到遠端裝置，請嘗試輸入裝置的 IP 位址。 若要判斷裝置的 IP 位址，請開啟命令視窗，然後輸入 **ipconfig**。 IP 位址會列示為 **IPv4 Address**。  
+> 如果無法順利連接到遠端裝置，請嘗試輸入裝置的 IP 位址。 若要判斷裝置的 IP 位址，請開啟命令視窗，然後輸入 **ipconfig**。 IP 位址會列示為 **IPv4 Address**。  
   
 ### <a name="BKMK_Choosing_the_remote_device_for_C__and_Visual_Basic_projects"></a> 選擇 C# 和 Visual Basic 專案的遠端裝置  
  ![受管理的遠端偵錯專案屬性](../debugger/media/vsrun-managed-projprop-remote.png "VSRUN_Managed_ProjProp_Remote")  

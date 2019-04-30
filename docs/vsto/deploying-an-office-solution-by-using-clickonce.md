@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 940cf70047437c8aa3182121e8b1585b448018f8
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 9e5c6282c446fbc9ef24433e40452cca2b1b905a
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60060733"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441848"
 ---
 # <a name="deploy-an-office-solution-by-using-clickonce"></a>使用 ClickOnce 部署 Office 方案
   使用 ClickOnce 只需要幾個步驟就能部署 Office 方案。 如果您發行更新，方案會自動偵測並安裝更新。 不過，ClickOnce 要求您針對電腦上的每個使用者分別安裝方案。 因此，您應該考慮使用 Windows Installer (*.msi*) 如果一個以上的使用者將同一部電腦上執行您的解決方案。
@@ -83,7 +83,7 @@ ms.locfileid: "60060733"
 9. 如果您的解決方案是以.NET Framework 4.5 為目標，同時選取**Visual Studio 2010 Tools for Office Runtime**核取方塊。
 
     > [!NOTE]
-    >  根據預設，不會出現此核取方塊。 若要顯示這個核取方塊，您必須建立啟動載入器套件。 請參閱[使用 Visual Studio 2012 建立的 Office 2013 VSTO 增益集啟動載入器套件](create-vsto-add-ins-for-office-by-using-visual-studio.md)。
+    > 根據預設，不會出現此核取方塊。 若要顯示這個核取方塊，您必須建立啟動載入器套件。 請參閱[使用 Visual Studio 2012 建立的 Office 2013 VSTO 增益集啟動載入器套件](create-vsto-add-ins-for-office-by-using-visual-studio.md)。
 
 10. 底下**指定必要條件的安裝位置**，選擇其中一個選項，會出現，然後選擇**確定** 按鈕。
 
@@ -100,7 +100,7 @@ ms.locfileid: "60060733"
 11. 選擇**更新**按鈕，指定您想每位使用者的 VSTO 增益集或自訂檢查更新，，然後選擇**確定** 按鈕。
 
     > [!NOTE]
-    >  如果您要部署使用 CD 或卸除式磁碟機，請選擇**永遠不檢查更新**選項按鈕。
+    > 如果您要部署使用 CD 或卸除式磁碟機，請選擇**永遠不檢查更新**選項按鈕。
 
      如需有關如何發行更新的資訊，請參閱 <<c0> [ 發行更新](#Update)。
 
@@ -129,7 +129,7 @@ ms.locfileid: "60060733"
       ![發行資料夾結構](../vsto/media/publishfolderstructure.png "發行資料夾結構")
 
     > [!NOTE]
-    >  ClickOnce 會附加 *.deploy*延伸模組組件，讓受保護的安裝網際網路資訊服務 (IIS) 將不會封鎖檔案，因為不安全的副檔名。 當使用者安裝方案時，ClickOnce 會移除 *.deploy*延伸模組。
+    > ClickOnce 會附加 *.deploy*延伸模組組件，讓受保護的安裝網際網路資訊服務 (IIS) 將不會封鎖檔案，因為不安全的副檔名。 當使用者安裝方案時，ClickOnce 會移除 *.deploy*延伸模組。
 
 14. 將方案檔複製到您在本程序前段指定的安裝位置。
 
@@ -164,7 +164,7 @@ ms.locfileid: "60060733"
 6. 在 [ **MIME 類型**] 視窗中，輸入 **.vsto**作為延伸模組中，輸入**應用程式/x-ms-vsto**做為 MIME 輸入，然後再套用新設定。
 
     > [!NOTE]
-    >  您必須重新啟動 World Wide Web Publishing 服務，或等待背景工作處理序回收，變更才會生效。 您必須接著清除瀏覽器的磁碟快取，並嘗試開啟 *.vsto*檔案一次。
+    > 您必須重新啟動 World Wide Web Publishing 服務，或等待背景工作處理序回收，變更才會生效。 您必須接著清除瀏覽器的磁碟快取，並嘗試開啟 *.vsto*檔案一次。
 
 ##### <a name="to-add-the-vsto-mime-type-to-iis-70"></a>若要將 .vsto MIME 類型加入至 IIS 7.0
 
@@ -185,7 +185,7 @@ ms.locfileid: "60060733"
     ```
 
     > [!NOTE]
-    >  您必須重新啟動 World Wide Web Publishing 服務，或是等待背景工作處理序回收，變更才會生效。 您必須接著清除瀏覽器的磁碟快取，並嘗試開啟 *.vsto*檔案一次。
+    > 您必須重新啟動 World Wide Web Publishing 服務，或是等待背景工作處理序回收，變更才會生效。 您必須接著清除瀏覽器的磁碟快取，並嘗試開啟 *.vsto*檔案一次。
 
 ## <a name="Put"></a> 將方案文件放置到終端使用者的電腦 （文件層級自訂）
  您可以建立部署後動作，為其複製到使用者的電腦上將方案文件。 如此一來，使用者不需要他們的電腦從安裝位置手動複製文件之後安裝方案。 您必須建立定義部署後動作的類別、 建置及發行方案、 修改應用程式資訊清單，及重新簽署應用程式和部署資訊清單。
@@ -300,7 +300,7 @@ ms.locfileid: "60060733"
     ```
 
     > [!NOTE]
-    >  在上述範例中，將 MostRecentVersionNumber 您解決方案的最新的發行版本的版本號碼 (例如**1_0_0_4**)。
+    > 在上述範例中，將 MostRecentVersionNumber 您解決方案的最新的發行版本的版本號碼 (例如**1_0_0_4**)。
 
      「ExcelWorkbook.vsto 簽署成功」訊息隨即顯示。
 
@@ -386,7 +386,7 @@ ms.locfileid: "60060733"
   若要變更方案的安裝路徑，您必須更新安裝程式，然後使用者必須執行安裝程式。 若是文件層級自訂，使用者也必須更新其文件中的屬性，以指向新位置。
 
 > [!NOTE]
->  如果您不想要求使用者更新其文件屬性，您可以要求使用者從安裝位置取得更新的文件。
+> 如果您不想要求使用者更新其文件屬性，您可以要求使用者從安裝位置取得更新的文件。
 
 #### <a name="to-change-the-installation-path-in-the-setup-program"></a>若要變更安裝程式中的安裝路徑
 
@@ -401,10 +401,10 @@ ms.locfileid: "60060733"
    ```
 
    > [!NOTE]
-   >  如果出現訊息並指出可執行檔的簽章將失效，則用來簽署方案的憑證將不再有效且發行者為未知。 如此一來，使用者就必須確認可以信任方案的來源，才能進行安裝。
+   > 如果出現訊息並指出可執行檔的簽章將失效，則用來簽署方案的憑證將不再有效且發行者為未知。 如此一來，使用者就必須確認可以信任方案的來源，才能進行安裝。
 
    > [!NOTE]
-   >  若要顯示目前的 URL 值，請執行 `setup.exe /url`。
+   > 若要顯示目前的 URL 值，請執行 `setup.exe /url`。
 
    若是文件層級自訂，使用者必須開啟文件，然後更新其 _AssemblyLocation 屬性。 下列步驟將描述使用者如何執行這項工作。
 
@@ -454,7 +454,7 @@ ms.locfileid: "60060733"
      下次使用者開啟應用程式或自訂文件時，就會偵測到部署資訊清單的變更。 舊版 Office 方案便會從 ClickOnce 快取中執行。
 
 > [!NOTE]
->  任何方案都只有前一個版本會儲存為本機資料。 如果復原兩個版本，則不會保留本機資料。 如需本機資料的詳細資訊，請參閱[存取 ClickOnce 應用程式中的本機和遠端資料](../deployment/accessing-local-and-remote-data-in-clickonce-applications.md)。
+> 任何方案都只有前一個版本會儲存為本機資料。 如果復原兩個版本，則不會保留本機資料。 如需本機資料的詳細資訊，請參閱[存取 ClickOnce 應用程式中的本機和遠端資料](../deployment/accessing-local-and-remote-data-in-clickonce-applications.md)。
 
 ## <a name="see-also"></a>另請參閱
 

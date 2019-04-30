@@ -13,18 +13,18 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2c67ff6e458f8350ef36a8a454e017b3ce6ea114
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
-ms.translationtype: MT
+ms.openlocfilehash: 85704ed9e9a9493ef02e4d4d68a84a2d1623533f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58144923"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446856"
 ---
 # <a name="idisperror-interface"></a>IDispError 介面
 提供詳細內容錯誤訊息。  
   
 > [!NOTE]
->  未實作此介面。  
+> 未實作此介面。  
   
  除了繼承自方法`IUnknown`，則`IDispError`介面會公開下列方法。  
   

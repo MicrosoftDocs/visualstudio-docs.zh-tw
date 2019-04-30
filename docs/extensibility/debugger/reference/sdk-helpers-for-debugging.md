@@ -14,18 +14,18 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 852992b3e7553ee07b2834d7253cd41dd46f4e8b
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.openlocfilehash: e3979b7c50ee3af997924d15908556011682595d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56706401"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63415892"
 ---
 # <a name="sdk-helpers-for-debugging"></a>適用於偵錯的 SDK 協助程式
-這些函式和宣告是實作 c + + 中的 偵錯引擎、 運算式評估工具和符號提供者的全域 helper 函式。
+這些函式和宣告是實作偵錯引擎、 運算式評估工具和符號中的提供者的全域 helper 函式C++。
 
 > [!NOTE]
->  此時沒有任何受管理的版本，這些函式和宣告。
+> 此時沒有任何受管理的版本，這些函式和宣告。
 
 ## <a name="overview"></a>總覽
  為了讓偵錯引擎、 運算式評估工具和符號提供者以供 Visual Studio，您必須註冊它們。 這是藉由設定登錄子機碼和項目，亦稱為 「 設定度量 」。 下列全域函式被設計來簡化更新這些計量的程序。 若要了解這些函式會更新每個登錄子機碼的版面配置的登錄位置，請參閱章節。
@@ -237,7 +237,7 @@ HRESULT EnumMetricSections(
  度量是讀取和寫入至登錄，具體而言是在`VisualStudio`子機碼。
 
 > [!NOTE]
->  大部分的情況下，在 HKEY_LOCAL_MACHINE 機碼會寫入計量。 不過，有時候 HKEY_CURRENT_USER 要目的地的索引鍵。 Dbgmetric.lib 會處理這兩個金鑰。 當取得度量時，它會搜尋 HKEY_CURRENT_USER 先，接著 HKEY_LOCAL_MACHINE。 當它設定計量時，參數會指定要使用哪一個最上層機碼。
+> 大部分的情況下，在 HKEY_LOCAL_MACHINE 機碼會寫入計量。 不過，有時候 HKEY_CURRENT_USER 要目的地的索引鍵。 Dbgmetric.lib 會處理這兩個金鑰。 當取得度量時，它會搜尋 HKEY_CURRENT_USER 先，接著 HKEY_LOCAL_MACHINE。 當它設定計量時，參數會指定要使用哪一個最上層機碼。
 
  *[registry key]*\
 
@@ -269,7 +269,7 @@ HRESULT EnumMetricSections(
 |*[metric value]*|指派給計量的值。 此值應該有 （字串、 數字等） 的類型取決於計量。|
 
 > [!NOTE]
->  所有的 Guid 會儲存在格式`{GUID}`。 例如， `{123D150B-FA18-461C-B218-45B3E4589F9B}` 。
+> 所有的 Guid 會儲存在格式`{GUID}`。 例如， `{123D150B-FA18-461C-B218-45B3E4589F9B}` 。
 
 ### <a name="debug-engines"></a>偵錯引擎
  以下是在登錄中的偵錯引擎度量資訊的組織。 `Engine` 是偵錯引擎的計量類型名稱，以及對應至 *[計量類型]* 上述的登錄樹狀子目錄中。
@@ -348,7 +348,7 @@ HRESULT EnumMetricSections(
  以下是在登錄中的運算式評估工具度量資訊的組織。 `ExpressionEvaluator` 運算式評估工具的計量類型名稱，並對應至 *[計量類型]*。
 
 > [!NOTE]
->  計量類型，如`ExpressionEvaluator`中未定義 dbgmetric.h，因為它會假設所有計量變更運算式評估工具會通過適當的運算式評估工具計量函式 (的版面配置`ExpressionEvaluator`子機碼有點變得複雜，因此詳細資料會隱藏 dbgmetric.lib 內）。
+> 計量類型，如`ExpressionEvaluator`中未定義 dbgmetric.h，因為它會假設所有計量變更運算式評估工具會通過適當的運算式評估工具計量函式 (的版面配置`ExpressionEvaluator`子機碼有點變得複雜，因此詳細資料會隱藏 dbgmetric.lib 內）。
 
  `ExpressionEvaluator`\
 
@@ -414,7 +414,7 @@ HRESULT EnumMetricSections(
 |預留位置|描述|
 |-----------------|-----------------|
 |*[偵錯引擎 guid]*|支援例外狀況，偵錯引擎的 GUID。|
-|*[exception types]*|識別可以處理的例外狀況類別的子機碼一般標題。 一般名稱**c + + 例外狀況**， **Win32 例外狀況**， **Common Language Runtime 例外狀況**，以及**原生執行階段檢查**。 這些名稱也會用來識別特定類別的例外狀況給使用者。|
+|*[exception types]*|識別可以處理的例外狀況類別的子機碼一般標題。 一般名稱**C++例外狀況**， **Win32 例外狀況**， **Common Language Runtime 例外**，以及**原生執行階段檢查**. 這些名稱也會用來識別特定類別的例外狀況給使用者。|
 |*[exception]*|例外狀況的名稱： 例如， **_com_error**或是**Control-break**。 這些名稱也會用來識別使用者的特定例外狀況。|
 
 ## <a name="requirements"></a>需求

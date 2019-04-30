@@ -26,12 +26,12 @@ manager: jillfra
 ms.workload:
 - dotnet
 - cplusplus
-ms.openlocfilehash: b0a10d720e911f80aa5ef7b4a42f521bfd9c31bd
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 3bee60a54576ab816c63cf60f2226ebbbaf50c44
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60070404"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63388477"
 ---
 # <a name="how-to-enable-and-disable-edit-and-continue-c-vb-c"></a>HOW TO：啟用和停用編輯後繼續 (C#，VB， C++)
 
@@ -46,7 +46,7 @@ ms.locfileid: "60070404"
 1. 在 **工具** > **選項**> (或**偵錯** > **選項**) >**偵錯** > **一般**，選取**編輯後繼續**右窗格中。
 
     > [!NOTE]
-    >  如果已啟用 IntelliTrace，而且您同時收集 IntelliTrace 事件和呼叫資訊，則會停用 [編輯後繼續]。 如需詳細資訊，請參閱 < [IntelliTrace](../debugger/intellitrace.md)。
+    > 如果已啟用 IntelliTrace，而且您同時收集 IntelliTrace 事件和呼叫資訊，則會停用 [編輯後繼續]。 如需詳細資訊，請參閱 < [IntelliTrace](../debugger/intellitrace.md)。
 
 1. 針對C++程式碼，請確定**啟用原生編輯後繼續**已選取此項目，並設定其他選項：
     - **繼續時套用變更 (僅限原生)**

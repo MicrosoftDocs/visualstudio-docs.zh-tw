@@ -16,12 +16,12 @@ caps.latest.revision: 45
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 82f3d4a3ae9bc587fef038186afe9faef880571c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 971ca4e94f28016335483a03f4b0121de587f00d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60114726"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63439962"
 ---
 # <a name="rename-refactoring-c"></a>重新命名重構 (C#)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ ms.locfileid: "60114726"
 **重新命名**是 Visual Studio 的整合式的開發環境 (IDE) 可輕鬆地重新命名程式碼符號，例如欄位、 區域變數、 方法、 命名空間、 屬性和類型的識別項的重構功能。 **重新命名**可用變更的註解中，並在字串中的名稱，以及變更的宣告和呼叫的識別項。  
   
 > [!NOTE]
->  適用於 Visual Studio 中使用原始檔控制，取得最新版本的來源，再重新執行 重新命名重構。  
+> 適用於 Visual Studio 中使用原始檔控制，取得最新版本的來源，再重新執行 重新命名重構。  
   
  重新命名重整功能是可從下列 Visual Studio 功能：  
   
@@ -116,7 +116,7 @@ ms.locfileid: "60114726"
 2. 宣告中`MethodB`中，輸入或 backspace 鍵方法識別項。 這個識別項下方會出現智慧標籤提示。  
   
     > [!NOTE]
-    >  此外，您只可以叫用重新命名重整智慧標籤使用的識別項宣告。  
+    > 此外，您只可以叫用重新命名重整智慧標籤使用的識別項宣告。  
   
 3. 輸入鍵盤快速鍵 SHIFT + ALT + F10，然後按 向下箭號顯示智慧標籤功能表。  
   
@@ -144,7 +144,7 @@ ms.locfileid: "60114726"
  如果**重新命名多載**勾選，重新命名重構引擎`Derived.Method(int i)`因為它多載`Derived.Method()`，`Base.Method(int i)`因為它會覆寫`Derived.Method(int i)`，和`Base.Method()`因為它的多載`Base.Method(int i)`.  
   
 > [!NOTE]
->  當您重新命名參考的組件中所定義的成員時，對話方塊會說明重新命名會造成建置錯誤。  
+> 當您重新命名參考的組件中所定義的成員時，對話方塊會說明重新命名會造成建置錯誤。  
   
 ## <a name="renaming-properties-of-anonymous-types"></a>重新命名匿名型別的屬性  
  當您重新命名匿名型別中的屬性時，重新命名作業將會傳播至其他具有相同屬性的匿名型別中的屬性。 下列範例說明此行為。  

@@ -10,12 +10,12 @@ ms.assetid: 91a6417e-a6fe-4bc2-9d9f-5173c634a99b
 caps.latest.revision: 34
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 295ff3e48e2b0598a8cf33bfd4842e35b7469737
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 5bf0e34c76406b054ea2d27434f749b676b0b30c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60085516"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63439795"
 ---
 # <a name="language-service-and-editor-extension-points"></a>語言服務及編輯器擴充點
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -115,7 +115,7 @@ internal IContentTypeRegistryService ContentTypeRegistryService { get; set; }
  若要將內容類型與副檔名產生關聯，請使用<xref:Microsoft.VisualStudio.Utilities.FileExtensionToContentTypeDefinition>。  
   
 > [!NOTE]
->  在 Visual Studio 中，檔案名稱副檔名會註冊使用<xref:Microsoft.VisualStudio.Shell.ProvideLanguageExtensionAttribute>的語言服務套件。 <xref:Microsoft.VisualStudio.Utilities.FileExtensionToContentTypeDefinition> MEF 的內容類型關聯這種方式中已註冊的副檔名。  
+> 在 Visual Studio 中，檔案名稱副檔名會註冊使用<xref:Microsoft.VisualStudio.Shell.ProvideLanguageExtensionAttribute>的語言服務套件。 <xref:Microsoft.VisualStudio.Utilities.FileExtensionToContentTypeDefinition> MEF 的內容類型關聯這種方式中已註冊的副檔名。  
   
  若要匯出內容的型別定義的檔案名稱的副檔名，您必須包含下列屬性：  
   
@@ -278,7 +278,7 @@ internal class TestTaggerProvider : ITaggerProvider
 - <xref:Microsoft.VisualStudio.Text.Tagging.TextMarkerTag>： 與透過裝飾相關聯。  
   
   > [!NOTE]
-  >  如需<xref:Microsoft.VisualStudio.Text.Tagging.TextMarkerTag>，請參閱 HighlightWordTag 定義[逐步解說：反白顯示文字](../extensibility/walkthrough-highlighting-text.md)。  
+  > 如需<xref:Microsoft.VisualStudio.Text.Tagging.TextMarkerTag>，請參閱 HighlightWordTag 定義[逐步解說：反白顯示文字](../extensibility/walkthrough-highlighting-text.md)。  
   
 - <xref:Microsoft.VisualStudio.Text.Tagging.OutliningRegionTag>： 可以展開或摺疊大綱區域相關聯。  
   
@@ -324,7 +324,7 @@ internal class HighlightWordFormatDefinition : MarkerFormatDefinition
  若要將此格式定義套用至標記中，參考您設定的名稱屬性中的類別 （而不是顯示名稱） 的名稱。  
   
 > [!NOTE]
->  如需<xref:Microsoft.VisualStudio.Text.Classification.MarkerFormatDefinition>，請參閱中的 HighlightWordFormatDefinition 類別[逐步解說：反白顯示文字](../extensibility/walkthrough-highlighting-text.md)。  
+> 如需<xref:Microsoft.VisualStudio.Text.Classification.MarkerFormatDefinition>，請參閱中的 HighlightWordFormatDefinition 類別[逐步解說：反白顯示文字](../extensibility/walkthrough-highlighting-text.md)。  
   
 ## <a name="extending-adornments"></a>擴充裝飾  
  裝飾定義視覺效果，可以新增在文字檢視中顯示的文字或文字檢視本身。 您可以為任何類型的定義您自己的裝飾<xref:System.Windows.UIElement>。  
@@ -516,7 +516,7 @@ internal sealed class TestOption : EditorOptionDefinition<bool>
 - <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedActionsSource>  
   
 > [!IMPORTANT]
->  <xref:Microsoft.VisualStudio.Language.Intellisense.ISmartTagSource> 已被取代的益處<xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedActionsSource>。  
+> <xref:Microsoft.VisualStudio.Language.Intellisense.ISmartTagSource> 已被取代的益處<xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedActionsSource>。  
   
  此外，您必須實作相同類型的提供者：  
   
@@ -529,7 +529,7 @@ internal sealed class TestOption : EditorOptionDefinition<bool>
 - <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedActionsSourceProvider>  
   
 > [!IMPORTANT]
->  <xref:Microsoft.VisualStudio.Language.Intellisense.ISmartTagSourceProvider> 已被取代的益處<xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedActionsSourceProvider>。  
+> <xref:Microsoft.VisualStudio.Language.Intellisense.ISmartTagSourceProvider> 已被取代的益處<xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedActionsSourceProvider>。  
   
  您必須將匯出的提供者，以及下列屬性：  
   

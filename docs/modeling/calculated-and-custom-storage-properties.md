@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d1a1e161c0559013571a2ceaa775cfe428c1345c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 1ca2401333f7678b821b5c6fa68f7953a91996d0
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60060419"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63440027"
 ---
 # <a name="calculated-and-custom-storage-properties"></a>計算及自訂的儲存區屬性
 特定領域語言 (DSL) 中的所有網域屬性可以顯示使用者在圖表上，並在語言總管中，並可由程式碼存取。 不過，屬性不同，會儲存其值的方式。
@@ -50,7 +50,7 @@ ms.locfileid: "60060419"
      Dsl\GeneratedCode\DomainClasses.cs 或 DomainRelationships.cs 隨即開啟。 上述反白顯示的方法呼叫中，註解會提示您提供實作 get*YourProperty*（)。
 
     > [!NOTE]
-    >  這個檔案會產生從 DslDefinition.dsl。 如果您編輯此檔案時，您的變更將會遺失您按一下 下一次**轉換所有範本**。 相反地，在個別檔案中新增所需的方法。
+    > 這個檔案會產生從 DslDefinition.dsl。 如果您編輯此檔案時，您的變更將會遺失您按一下 下一次**轉換所有範本**。 相反地，在個別檔案中新增所需的方法。
 
 6. 建立或開啟類別檔案，在個別的資料夾，例如 CustomCode\\*YourDomainClass*。 cs。
 

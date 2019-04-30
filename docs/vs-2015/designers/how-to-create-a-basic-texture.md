@@ -9,12 +9,12 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a343cb508933b91f5400ff6bc17c285a54bd2e87
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: bd1a9a2a269c173ef9dcb47b39921073802fe1ee
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60076795"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438404"
 ---
 # <a name="how-to-create-a-basic-texture"></a>HOW TO：建立基本紋理
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -55,7 +55,7 @@ ms.locfileid: "60076795"
 5. 在 [影像編輯器] 工具列上，選擇 [填滿] 工具，然後按住 Shift 鍵並選擇影像中的任意點。 使用 Shift 鍵會造成填滿色彩的 Alpha 值取代影像中的色彩；否則，Alpha 值是用來將填滿色彩和影像中的色彩混合。  
   
    > [!IMPORTANT]
-   >  此步驟加上前一步驟中選取的色彩，可確保會備妥您即將繪製的「靶心」目標材質基底影像。 以透明黑色填滿影像，同時目標邊界為黑色時，目標周圍不會有鋸齒化成品。  
+   > 此步驟加上前一步驟中選取的色彩，可確保會備妥您即將繪製的「靶心」目標材質基底影像。 以透明黑色填滿影像，同時目標邊界為黑色時，目標周圍不會有鋸齒化成品。  
   
 6. 在 [影像編輯器] 工具列上，選擇 [橢圓形] 工具。  
   
@@ -70,7 +70,7 @@ ms.locfileid: "60076795"
 11. 使用 [橢圓形] 工具，繪製一個從像素座標 `(3, 3)` 到像素座標 `(508, 508)` 的圓形。 您在繪製時按住 Shift 鍵，可以更輕鬆繪製圓形。  
   
     > [!NOTE]
-    >  目前指標位置的像素座標會顯示在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 狀態列。  
+    > 目前指標位置的像素座標會顯示在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 狀態列。  
   
 12. 變更背景色彩。 將 [R] 設定為 `44`、[G] 設為 `165`、[B] 設為 `211`，並將 [A] 設為 `255`。  
   

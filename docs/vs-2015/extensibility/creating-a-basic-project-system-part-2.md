@@ -12,12 +12,12 @@ ms.assetid: aee48fc6-a15f-4fd5-8420-7f18824de220
 caps.latest.revision: 24
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 6004e7346ab4bb4bb8d95c04fbbbdd86e1527001
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: b4709cc5f011dd55445583c46dd96894b979647c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60079600"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63435543"
 ---
 # <a name="creating-a-basic-project-system-part-2"></a>建立基本的專案系統，第 2 部分
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,7 +39,7 @@ ms.locfileid: "60079600"
 - 建立在專案屬性頁。  
   
 > [!NOTE]
->  在本逐步解說的步驟是以 C# 專案為基礎。 不過，除了例如副檔名的檔案和程式碼的詳細資訊，您可以使用相同的步驟針對 Visual Basic 專案。  
+> 在本逐步解說的步驟是以 C# 專案為基礎。 不過，除了例如副檔名的檔案和程式碼的詳細資訊，您可以使用相同的步驟針對 Visual Basic 專案。  
   
 ## <a name="creating-a-visual-studio-template"></a>建立 Visual Studio 範本  
  [建立基本專案系統，第 1 部分](../extensibility/creating-a-basic-project-system-part-1.md)示範如何建立基本的專案範本，並將它新增至專案系統。 它也會示範如何使用 Visual Studio 中註冊此範本，使用<xref:Microsoft.VisualStudio.Shell.ProvideProjectFactoryAttribute>屬性系統登錄中寫入 \Templates\Projects\SimpleProject\ 資料夾的完整路徑。  
@@ -100,7 +100,7 @@ ms.locfileid: "60079600"
 - \<ProjectType > 項目名稱中的專案類型**新的專案** 對話方塊。 此名稱將專案名稱的參數取代 ProvideProjectFactory 屬性。  
   
   > [!NOTE]
-  >  \<ProjectType > 項目必須符合`LanguageVsTemplate`引數`ProvideProjectFactory`SimpleProjectPackage.cs 檔案中的屬性。  
+  > \<ProjectType > 項目必須符合`LanguageVsTemplate`引數`ProvideProjectFactory`SimpleProjectPackage.cs 檔案中的屬性。  
   
   \<TemplateContent > 一節將說明這些新的專案建立時產生的檔案：  
   
@@ -115,7 +115,7 @@ ms.locfileid: "60079600"
   如需 Visual Studio 範本結構描述中元素的詳細資訊，請參閱[Visual Studio 範本結構描述參考](../extensibility/visual-studio-template-schema-reference.md)。  
   
 > [!NOTE]
->  如果專案具有一個以上的 Visual Studio 範本，每個範本是在不同的資料夾。 在該資料夾中的每個檔案必須有**建置動作**設為**ZipProject**。  
+> 如果專案具有一個以上的 Visual Studio 範本，每個範本是在不同的資料夾。 在該資料夾中的每個檔案必須有**建置動作**設為**ZipProject**。  
   
 ## <a name="adding-a-minimal-vsct-file"></a>將最小.vsct 檔案  
  Visual Studio 必須以辨識新的或修改 Visual Studio 範本的安裝模式執行。 安裝模式需要.vsct 檔必須存在。 因此，您必須將最小.vsct 檔加入專案。  

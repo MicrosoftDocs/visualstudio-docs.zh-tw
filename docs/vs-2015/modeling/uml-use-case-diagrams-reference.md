@@ -19,12 +19,12 @@ caps.latest.revision: 35
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 256489e41c769452f9505f95ec64ec9aee853c67
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 45f8d742af1cd6a0ed73f3beda24e829b417e81f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58942323"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63424323"
 ---
 # <a name="uml-use-case-diagrams-reference"></a>UML 使用案例圖：參考資料
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,7 +36,7 @@ ms.locfileid: "58942323"
  若要查看哪些 Visual Studio 版本支援這項功能，請參閱 [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)。  
   
 > [!NOTE]
->  本主題描述使用案例圖中可用的項目。 如需如何繪製使用案例圖的詳細資訊，請參閱[UML 使用案例圖：指導方針](../modeling/uml-use-case-diagrams-guidelines.md)。 如需如何建立和繪製模型圖表的詳細資訊，請參閱[編輯 UML 模型和圖表](../modeling/edit-uml-models-and-diagrams.md)。  
+> 本主題描述使用案例圖中可用的項目。 如需如何繪製使用案例圖的詳細資訊，請參閱[UML 使用案例圖：指導方針](../modeling/uml-use-case-diagrams-guidelines.md)。 如需如何建立和繪製模型圖表的詳細資訊，請參閱[編輯 UML 模型和圖表](../modeling/edit-uml-models-and-diagrams.md)。  
   
 ## <a name="reading-use-case-diagrams"></a>閱讀使用案例圖  
  下節中的各表將描述使用案例圖上可用的項目，以及其主要屬性。 如需的屬性完整清單，請參閱 <<c0> [ 屬性中的項目 UML 使用案例圖](../modeling/properties-of-elements-on-uml-use-case-diagrams.md)。  

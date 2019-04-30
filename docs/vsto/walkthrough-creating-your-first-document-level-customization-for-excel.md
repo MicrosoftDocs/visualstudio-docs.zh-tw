@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 81020496c1e80718d1aa0995791762d55ef70a76
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 9cc23e140f0bfa2654cef1c3faeb805620a683b0
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60104495"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438532"
 ---
 # <a name="walkthrough-create-your-first-document-level-customization-for-excel"></a>逐步解說：建立您第一個適用於 Excel 的文件層級自訂
   本入門逐步解說將示範如何建立 Microsoft Office Excel 的文件層級自訂。 只有在特定的活頁簿開啟時，才能使用您在這種方案中建立的功能。 您不能使用文件層級自訂來進行應用程式層級的變更，例如在任何活頁簿開啟時顯示新功能區索引標籤。
@@ -106,7 +106,7 @@ ms.locfileid: "60104495"
      **這段文字已加入使用設計工具。**
 
 > [!WARNING]
->  如果您將這行文字加入儲存格中**A2**，它將會覆寫在這個範例中的其他程式碼。
+> 如果您將這行文字加入儲存格中**A2**，它將會覆寫在這個範例中的其他程式碼。
 
 ## <a name="add-text-to-a-worksheet-programmatically"></a>以程式設計方式將文字加入工作表
  接著，將程式碼加入 Sheet1 程式碼檔案。 新程式碼會使用 Excel 物件模型，將第二行文字加入活頁簿。 根據預設，Sheet1 程式碼檔案包含下列產生的程式碼：

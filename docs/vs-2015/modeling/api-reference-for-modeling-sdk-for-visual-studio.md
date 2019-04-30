@@ -9,12 +9,12 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 1e788abb51425e0f2656c10ba860602a36c8aad8
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: b2cbf516b5ed999623c05e7f68656199363906bf
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58945109"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63408447"
 ---
 # <a name="api-reference-for-modeling-sdk-for-visual-studio"></a>Modeling SDK for Visual Studio 的 API 參考
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -22,7 +22,7 @@ ms.locfileid: "58945109"
 Visual Studio Visualization and Modeling SDK 提供的平台會建置您的特定領域語言 (DSL) 和 UML 工具。
 
 > [!NOTE]
->  如需 UML 模型 API 的資訊，請參閱[UML 模型擴充性的 API 參考](../modeling/api-reference-for-uml-modeling-extensibility.md)。 文字轉換的相關資訊，請參閱[自訂 T4 文字轉換](../modeling/customizing-t4-text-transformation.md)。
+> 如需 UML 模型 API 的資訊，請參閱[UML 模型擴充性的 API 參考](../modeling/api-reference-for-uml-modeling-extensibility.md)。 文字轉換的相關資訊，請參閱[自訂 T4 文字轉換](../modeling/customizing-t4-text-transformation.md)。
 
  本章節包含命名空間名稱開頭為"Microsoft.VisualStudio.Modeling 」 參考的資料。
 

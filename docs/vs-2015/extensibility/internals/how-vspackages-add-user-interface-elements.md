@@ -12,12 +12,12 @@ ms.assetid: abc5d9d9-b267-48a1-92ad-75fbf2f4c1b9
 caps.latest.revision: 61
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: df04f8da29972b4be3967e5fd677a43e76ce1ac5
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 553c502c100cbb6ed4ae249096af408af14423b4
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60085625"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436116"
 ---
 # <a name="how-vspackages-add-user-interface-elements"></a>VSPackage 如何新增使用者介面項目
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -65,7 +65,7 @@ VSPackage 可以加入使用者介面 (UI) 項目，例如功能表、 工具列
  最上層元素`Symbols`一節[GuidSymbol 元素](../../extensibility/guidsymbol-element.md)。 `GuidSymbol` 元素會對應至 Guid ide 用來識別封裝和其元件部分的名稱。  
   
 > [!NOTE]
->  在 Visual Studio 封裝範本所自動產生的 Guid。 您也可以按一下來建立唯一的 GUID**建立 GUID**上**工具**功能表。  
+> 在 Visual Studio 封裝範本所自動產生的 Guid。 您也可以按一下來建立唯一的 GUID**建立 GUID**上**工具**功能表。  
   
  第一個`GuidSymbol`項目，「 guid [PackageName] 套件 」，是封裝本身的 GUID。 這是由 Visual Studio 用來載入封裝的 GUID。 一般而言，它並沒有子項目。  
   

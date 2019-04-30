@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b4cfca45d2ad1979b091c668854990ce9a7c0311
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 2d1d13c071d8eb291a857dd0afc3da664b0ddca7
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60090416"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63435333"
 ---
 # <a name="design-time-code-generation-by-using-t4-text-templates"></a>使用 T4 文字範本在設計階段產生程式碼
 設計階段 T4 文字範本可讓您在 Visual Studio 專案中產生程式碼和其他檔案。 通常，您會撰寫範本，讓他們變更其根據從資料產生的程式碼*模型*。 模型是檔案或資料庫，其中包含您的應用程式需求的重要資訊。
@@ -28,7 +28,7 @@ ms.locfileid: "60090416"
  例如，您的模型可以將工作流程定義為表格或圖表。 您可以透過模型產生執行工作流程的軟體。 當您的使用者需求變更時，很容易與使用者討論新的工作流程。 透過工作流程重新產生程式碼，會比手動更新程式碼更為可靠。
 
 > [!NOTE]
->  A*模型*是描述應用程式的特定層面的資料來源。 它可以是任何形式、任何類型的檔案或資料庫。 它不需要是任何特定形式 (如 UML 模型或「特定領域語言」模型)。 一般模型的格式是表格或 XML 檔案。
+> A*模型*是描述應用程式的特定層面的資料來源。 它可以是任何形式、任何類型的檔案或資料庫。 它不需要是任何特定形式 (如 UML 模型或「特定領域語言」模型)。 一般模型的格式是表格或 XML 檔案。
 
  您可能已熟悉如何產生程式碼。 當您定義中的資源 **.resx**檔案在 Visual Studio 方案中，一組類別和方法會自動產生。 編輯資源檔案中的資源，會比編輯類別和方法更為簡單也較可靠。 運用文字範本，您可以使用相同的方式透過您專屬設計的原始檔產生程式碼。
 
@@ -121,7 +121,7 @@ ms.locfileid: "60090416"
 ## <a name="debugging-a-design-time-t4-text-template"></a>偵錯設計階段 T4 文字範本
  偵錯文字範本：
 
-- 將 `debug="true"` 插入至 `template` 指示詞。 例如: 
+- 將 `debug="true"` 插入至 `template` 指示詞。 例如：
 
    `<#@ template debug="true" hostspecific="false" language="C#" #>`
 
@@ -132,9 +132,9 @@ ms.locfileid: "60090416"
   範本將會執行並停止於中斷點。 您可以檢查變數，並照常逐步執行程式碼。
 
 > [!TIP]
->  `debug="true"` 會將更多行號指示詞插入至產生的程式碼，以讓產生的程式碼更精確地對應至文字範本。 如果您遺漏它，則中斷點可能會以錯誤的狀態停止執行作業。
+> `debug="true"` 會將更多行號指示詞插入至產生的程式碼，以讓產生的程式碼更精確地對應至文字範本。 如果您遺漏它，則中斷點可能會以錯誤的狀態停止執行作業。
 >
->  但是，您可以將此子句留在範本指示詞中，即使未進行偵錯也是一樣。 這樣只會導致效能稍微降低。
+> 但是，您可以將此子句留在範本指示詞中，即使未進行偵錯也是一樣。 這樣只會導致效能稍微降低。
 
 ## <a name="generating-code-or-resources-for-your-solution"></a>產生您方案的程式碼或資源
  您可以產生不同的程式檔案 (視模型而定)。 模型是一個輸入 (例如資料庫、組態檔、UML 模型、DSL 模型或其他來源)。 您通常會產生數個程式檔案從相同的模型。 若要達到這樣的效果，請為每個產生的程式檔案建立範本檔，並且讓所有範本讀取相同的模型。

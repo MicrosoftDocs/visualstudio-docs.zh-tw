@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5a8301bb5daf0334a48078690a15b1f3d2991698
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: dcc86d8c43703b0274c5282c9f4f843f760e697c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56622796"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63428912"
 ---
 # <a name="statement-completion-in-a-legacy-language-service"></a>舊版語言服務中的陳述式完成
 完成陳述式是由其語言服務可協助使用者完成語言關鍵字或其已開始在核心編輯器中輸入的項目程序。 本主題討論陳述式完成的運作方式，以及如何在您的語言服務中實作。
@@ -24,7 +24,7 @@ ms.locfileid: "56622796"
  舊版語言服務會實作成 VSPackage 的一部分，但實作語言服務功能的較新的方式是使用 MEF 擴充功能。 若要深入了解實作陳述式完成的新方式，請參閱[逐步解說：顯示陳述式完成](../../extensibility/walkthrough-displaying-statement-completion.md)。
 
 > [!NOTE]
->  我們建議您開始使用新的編輯器 API 盡。 這會改善您的語言服務的效能，並可讓您充分利用新編輯器功能。
+> 我們建議您開始使用新的編輯器 API 盡。 這會改善您的語言服務的效能，並可讓您充分利用新編輯器功能。
 
 ## <a name="implementing-statement-completion"></a>實作的陳述式完成
  在核心編輯器中，陳述式完成就會啟動一種特殊的 UI，以互動方式可幫助您更輕鬆地和快速撰寫程式碼。 陳述式完成可協助藉由顯示相關的物件或類別時所需之以避免您不必記住的特定項目，也需要查閱說明參考主題中。

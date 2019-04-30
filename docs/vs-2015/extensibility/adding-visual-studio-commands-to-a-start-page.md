@@ -11,12 +11,12 @@ ms.assetid: a8e2765c-cfb5-47b5-a414-6e48b434e0c2
 caps.latest.revision: 21
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 47f752f00e1efe130f029a3cabdd2e3e3bf19449
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 638c9c0f0d024830124445485dcf9991678bd4d7
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60072436"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63429005"
 ---
 # <a name="adding-visual-studio-commands-to-a-start-page"></a>將 Visual Studio 命令新增至起始頁
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,7 +49,7 @@ xmlns:vscom="clr-namespace:Microsoft.VisualStudio.Shell;assembly=Microsoft.Visua
 ```  
   
 > [!NOTE]
->  `x:`別名，這指的是 XAML 結構描述，是需要的所有命令開頭。  
+> `x:`別名，這指的是 XAML 結構描述，是需要的所有命令開頭。  
   
  您可以設定的值`Command`屬性，您可以從存取任何命令**命令**視窗。 如需可用命令的清單，請參閱 < [Visual Studio 命令別名](../ide/reference/visual-studio-command-aliases.md)。  
   
@@ -65,7 +65,7 @@ xmlns:vscom="clr-namespace:Microsoft.VisualStudio.Shell;assembly=Microsoft.Visua
  您可以使用相同的語法是用來呼叫其他 Visual Studio 命令，從已註冊 Vspackage 呼叫命令。 比方說，如果已安裝的 VSPackage 新增**首頁**命令以**檢視**功能表中，您可以藉由設定呼叫該命令`CommandParameter`至`View.HomePage`。  
   
 > [!NOTE]
->  如果您呼叫 VSPackage 相關聯的命令時，必須載入封裝時叫用命令。  
+> 如果您呼叫 VSPackage 相關聯的命令時，必須載入封裝時叫用命令。  
   
 ## <a name="adding-commands-from-assemblies"></a>將命令加入從組件  
  若要呼叫的命令，從組件，或存取程式碼所關聯的功能表命令的 VSPackage 中，您必須建立組件別名，然後呼叫 別名。  
@@ -89,7 +89,7 @@ xmlns:vscom="clr-namespace:Microsoft.VisualStudio.Shell;assembly=Microsoft.Visua
     ```  
   
 > [!NOTE]
->  您必須將您的組件複製並貼在...\\ *Visual Studio 安裝資料夾*\Common7\IDE\PrivateAssemblies\ 以確定它載入會在呼叫之前。  
+> 您必須將您的組件複製並貼在...\\ *Visual Studio 安裝資料夾*\Common7\IDE\PrivateAssemblies\ 以確定它載入會在呼叫之前。  
   
 ## <a name="adding-commands-with-the-dte-object"></a>將命令加入與 DTE 物件  
  您可以從 [開始] 頁面中標記和程式碼中存取 DTE 物件。  

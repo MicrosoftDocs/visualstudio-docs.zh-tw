@@ -22,12 +22,12 @@ caps.latest.revision: 26
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: e913d67442d21cb1a0895721c22ede9b69363f53
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: d871d469fc71beaa5c3e3323aad08eda3f546729
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60068700"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63434485"
 ---
 # <a name="how-to-debug-an-executable-not-part-of-a-visual-studio-solution"></a>HOW TO：偵錯 Visual Studio 方案可執行檔不屬於
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -61,7 +61,7 @@ ms.locfileid: "60068700"
 5. 選擇執行命令，例如啟動可執行檔**開始**，從**偵錯**功能表。  
   
     > [!NOTE]
-    >  並非所有的程式語言都支援 EXE 專案。 如果您需要使用這項功能，請安裝 [!INCLUDE[vcprvc](../includes/vcprvc-md.md)]。  
+    > 並非所有的程式語言都支援 EXE 專案。 如果您需要使用這項功能，請安裝 [!INCLUDE[vcprvc](../includes/vcprvc-md.md)]。  
   
      當您在偵錯沒有原始程式碼的可執行檔時，不論您是附加到正在執行的可執行檔，或者是將可執行檔加入至 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 方案，可用的偵錯功能都會受到限制。 如果可執行檔在建置時沒有相容格式的偵錯資訊，將更進一步地限制可用功能。 如果您有原始程式碼，最好的方法是將原始程式碼匯入至 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]，並在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 中建立偵錯版的可執行檔。  
   

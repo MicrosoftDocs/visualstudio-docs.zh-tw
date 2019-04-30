@@ -15,12 +15,12 @@ ms.assetid: 84639d86-dd21-4b35-9988-6bb654162488
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 4cce7d5d8e3bff5a759fa0f63f5bb9524511c9df
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: d10549867c355018e301afa14cf2ba3a8f113e4d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58945899"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436299"
 ---
 # <a name="guids-and-ids-of-visual-studio-menus"></a>Visual Studio 功能表的 GUID 和識別碼
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -61,7 +61,7 @@ ms.locfileid: "58945899"
 |視窗|IDM_VS_MENU_WINDOW|
 |增益集|IDM_VS_MENU_ADDINS|
 |社群|IDM_VS_MENU_COMMUNITY|
-|說明|IDM_VS_MENU_HELP|
+|Help|IDM_VS_MENU_HELP|
 
 ## <a name="groups-on-visual-studio-menus"></a>在 Visual Studio 功能表上的群組
  下列清單會顯示在 Visual Studio 功能表列直接從功能表下降的群組。 將命令新增至 Visual Studio 功能表的最快方式是其中一個群組設定為父代。 在本節中看不到從子功能表下降的群組。
@@ -88,7 +88,7 @@ ms.locfileid: "58945899"
 |-----------|--------|
 |復原/取消復原|IDG_VS_EDIT_UNDOREDO|
 |剪下/複製/貼上|IDG_VS_EDIT_CUTCOPY|
-|選用版|IDG_VS_EDIT_SELECT|
+|Select|IDG_VS_EDIT_SELECT|
 |GoTo|IDG_VS_EDIT_GOTO|
 |Find|IDG_VS_EDIT_FIND|
 |物件|IDG_VS_EDIT_OBJECTS|
@@ -180,7 +180,7 @@ ms.locfileid: "58945899"
  下列階層會顯示在 Visual Studio 功能表列上的功能表與相關聯的子功能表。 只有一組可以有一個功能表做為其父系，因為每一個子功能表必須下降從群組在功能表上，而不是直接從功能表。 如需功能表、 群組和子功能表之間的關聯性的詳細資訊，請參閱[子功能表加入功能表](../../extensibility/adding-a-submenu-to-a-menu.md)。
 
 > [!NOTE]
->  Visual Studio 功能表列上的功能表名稱不會個別顯示此階層中上，因為他們可以從推斷在 IDE 中，群組的命名慣例，如下所示：IDG_VS_*功能表名稱*_*群組名稱*。
+> Visual Studio 功能表列上的功能表名稱不會個別顯示此階層中上，因為他們可以從推斷在 IDE 中，群組的命名慣例，如下所示：IDG_VS_*功能表名稱*_*群組名稱*。
 
 |父群組|子功能表|子群組|
 |------------------|-------------|------------------|

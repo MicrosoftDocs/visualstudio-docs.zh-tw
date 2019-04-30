@@ -15,12 +15,12 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 robots: noindex,nofollow
-ms.openlocfilehash: fcc31e2f7fb06f58f07b0af58a1375466b16cc23
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 646bba541e18fd372bd5236f7ebb6b91d1472d55
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60053048"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63435077"
 ---
 # <a name="analyze-cpu-usage-in-a-windows-universal-app"></a>分析 Windows 通用 App 中的 CPU 使用量
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ ms.locfileid: "60053048"
  當您需要調查應用程式的效能問題時，了解應用程式如何使用 CPU 是不錯的起點。 [CPU 使用量]  工具顯示 CPU 花時間執行程式碼的地方。 若要聚焦於特定情況，在單一診斷工作階段中，CPU 使用率可以與 [XAML UI 回應性](http://msdn.microsoft.com/library/4ff84cd1-4e63-4fda-b34f-3ef862a6e480)工具和/或[能源消耗](../profiling/analyze-energy-use-in-store-apps.md)工具搭配執行。  
   
 > [!NOTE]
->  **CPU 使用量**工具不得與 Windows Phone Silverlight 8.1 應用程式搭配使用。  
+> **CPU 使用量**工具不得與 Windows Phone Silverlight 8.1 應用程式搭配使用。  
   
  此逐步解說會帶領您收集和分析簡單 Windows 通用 XAML app 的 CPU 使用量。  
   

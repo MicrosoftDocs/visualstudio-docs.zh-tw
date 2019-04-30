@@ -16,18 +16,18 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 413cee4a768dcf2fe1b6b82b78e213db5b1df9b6
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 874f19e0ae4e752a36ce95deab669ab46bfbf038
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56631116"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63419498"
 ---
 # <a name="how-to-programmatically-save-attachments-from-outlook-email-items"></a>HOW TO：以程式設計方式儲存附件，從 Outlook 電子郵件項目
   這個範例會在收件匣中收到郵件時，將電子郵件附件儲存至指定的資料夾。
 
 > [!IMPORTANT]
->  這個範例才能運作，只有當您將新增名為的資料夾時，才**TestFileSave** C 目錄的根目錄。
+> 這個範例才能運作，只有當您將新增名為的資料夾時，才**TestFileSave** C 目錄的根目錄。
 
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]
 

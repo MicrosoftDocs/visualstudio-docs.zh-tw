@@ -17,12 +17,12 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 768bfc5de11f8b7fa6c3cd8988dbcc70633dde89
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 1b104a7a0451da7f772077d2f566b36b9f601c17
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60082826"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433813"
 ---
 # <a name="how-to-enable-clickonce-security-settings"></a>HOW TO：啟用 ClickOnce 安全性設定
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,7 +44,7 @@ ms.locfileid: "60082826"
      您現在可以在 [安全性] 頁面上的應用程式自訂的安全性設定。  
   
     > [!NOTE]
-    >  此核取方塊會自動選取以發行應用程式每次**發佈**精靈。  
+    > 此核取方塊會自動選取以發行應用程式每次**發佈**精靈。  
   
 ### <a name="to-disable-clickonce-security-settings"></a>若要停用 ClickOnce 安全性設定  
   
@@ -57,7 +57,7 @@ ms.locfileid: "60082826"
      您的應用程式將會執行完全信任的安全性設定;上的任何設定**安全性**頁面將會被忽略。  
   
     > [!NOTE]
-    >  使用 [發行精靈] 中，發行應用程式每次會選取此核取方塊;您必須在每次成功的發行之後，再次加以清除。  
+    > 使用 [發行精靈] 中，發行應用程式每次會選取此核取方塊;您必須在每次成功的發行之後，再次加以清除。  
   
 ## <a name="see-also"></a>另請參閱  
  [保護 ClickOnce 應用程式](../deployment/securing-clickonce-applications.md)   

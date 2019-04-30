@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2e87429c38d5b456eca08daa6675edcb0bd3f056
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 88ace66b8a28061ea7e8fdc7fa64f419042edf11
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60079807"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63410129"
 ---
 # <a name="create-an-extension-with-an-editor-item-template"></a>使用編輯器項目範本建立擴充功能
 您可以使用隨附於 Visual Studio SDK 來建立基本編輯器擴充功能新增至編輯器的分類器、 裝飾及邊界的項目範本。 編輯器項目範本可供 Visual C# 或 Visual Basic VSIX 專案。
@@ -63,7 +63,7 @@ ms.locfileid: "60079807"
  編輯器檢視區 Adornment 範本會建立將具有檢視區的右上角的紅色外框的淺紫方塊檢視區相對裝飾。
 
 > [!NOTE]
->  **Viewport**是目前顯示的文字檢視的區域。
+> **Viewport**是目前顯示的文字檢視的區域。
 
 ### <a name="to-create-a-viewport-adornment-extension-by-using-the-editor-viewport-adornment-template"></a>若要使用的編輯器檢視區 Adornment 範本建立的檢視區 adornment 延伸模組
 

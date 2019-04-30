@@ -12,12 +12,12 @@ ms.assetid: 5277b5fa-073b-4bd1-8ba1-9dc913aa3c50
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 70efef9232bd7e9baf317e59111e59e9f98bf46b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 751acf4e5f56b7b477f05ab71571e0becd566649
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58939639"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436331"
 ---
 # <a name="elimination-of-sak-files"></a>消除 ~SAK 檔案
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -50,7 +50,7 @@ ms.locfileid: "58939639"
  [HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\8.0\SourceControl]「 DoNotCreateTemporaryFilesInSourceControl"= dword: 00000001  
   
 > [!NOTE]
->  如果此登錄機碼設定為 dword:00000000，它就相當於在不存在，金鑰和 Visual Studio 仍會嘗試建立暫存檔案。 不過，如果登錄機碼設定為 dword: 00000001，Visual Studio 不會嘗試建立暫存檔案。 而是會假設原始檔控制外掛程式不支援 MSSCCPRJ。SCC 檔案，而且不支援共用簽出。  
+> 如果此登錄機碼設定為 dword:00000000，它就相當於在不存在，金鑰和 Visual Studio 仍會嘗試建立暫存檔案。 不過，如果登錄機碼設定為 dword: 00000001，Visual Studio 不會嘗試建立暫存檔案。 而是會假設原始檔控制外掛程式不支援 MSSCCPRJ。SCC 檔案，而且不支援共用簽出。  
   
 ## <a name="see-also"></a>另請參閱  
  [原始檔控制外掛程式 API 版本 1.2 的新功能](../../extensibility/internals/what-s-new-in-the-source-control-plug-in-api-version-1-2.md)

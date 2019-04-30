@@ -11,12 +11,12 @@ caps.latest.revision: 7
 author: steved0x
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 69e918eae56d35d134b9b7c3093d5f0599a12c5e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 026ee7af3c60b3832449f5f2ed996f00c75a1c87
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58939508"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63435376"
 ---
 # <a name="transition-activity-designer"></a>轉換活動設計工具
 <xref:System.Activities.Statements.Transition> 表示在兩個狀態之間轉換。  
@@ -40,7 +40,7 @@ ms.locfileid: "58939508"
  轉換可由這些方式建立：從某個狀態將線條拖曳到另一個狀態，或將狀態放到三角形上，當某個狀態被拖曳到另一個狀態上方時會出現此三角形。 若要以拖曳的方式來建立轉換，將滑鼠停留在來源狀態的邊緣，並將線條從源狀態拖曳到目的狀態。 若要以放置的方式來建立轉換，拖曳目的狀態並停留在來源狀態上方，然後放到來源狀態周圍四個三角形的其中一個。 目的狀態可以是任一個新的狀態從拖曳**工具箱**，或從 工作流程設計工具拖曳到現有狀態。  
   
 > [!NOTE]
->  狀態機器中的單一狀態最多可以有 76 個以工作流程設計工具來建立的轉換。 針對在設計工具以外建立的工作流程，狀態的轉換數目上限僅受制於系統資源。  
+> 狀態機器中的單一狀態最多可以有 76 個以工作流程設計工具來建立的轉換。 針對在設計工具以外建立的工作流程，狀態的轉換數目上限僅受制於系統資源。  
   
  共用觸發轉換是一組共用相同觸發事件的轉換。 共用觸發程序允許對目的狀態的條件式進展，根據的是運算式的評估結果，此運算式是針對多個共用通用觸發事件的轉換所設定。 若要將其他動作加入到轉換，並建立共用轉換，請按一下指出所要之轉換起始點的圓形，然後將它拖曳到所要的狀態。 新的轉換會與初始轉換共用相同的觸發程序，但擁有唯一的條件和動作。 共用的轉換也可以建立從轉換設計工具內依序按一下**新增共用的觸發程序轉換**底部的轉換設計工具，然後選取 所需的目標狀態從**可用的狀態，來連接**下拉式清單。  
   

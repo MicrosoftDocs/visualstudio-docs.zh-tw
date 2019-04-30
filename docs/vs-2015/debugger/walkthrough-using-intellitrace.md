@@ -9,12 +9,12 @@ caps.latest.revision: 10
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: bbc2135f292197a1856eaea8d80c03d1c41adff3
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 96d18ae0684dab5b6dc5c4001b93804bb13aa75e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60053802"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444257"
 ---
 # <a name="walkthrough-using-intellitrace"></a>逐步解說：使用 IntelliTrace
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -55,7 +55,7 @@ ms.locfileid: "60053802"
 5. 照常開始偵錯 (按 [F5]  或按一下 [偵錯] / [開始偵錯] )。  
   
     > [!TIP]
-    >  偵錯時，請保持 [區域變數]  和 [自動變數]  視窗開啟，以查看和記錄這些視窗中所顯示的值。  
+    > 偵錯時，請保持 [區域變數]  和 [自動變數]  視窗開啟，以查看和記錄這些視窗中所顯示的值。  
   
 6. 執行會在中斷點停止。 [診斷工具]  視窗若未出現，請按一下 [偵錯] / [視窗] / [IntelliTrace 事件] 。  
   
@@ -87,7 +87,7 @@ ms.locfileid: "60053802"
 1. 開啟呼叫收集 (在 [工具] / [選項] / [IntelliTrace] / [一般] 中，選取 [IntelliTrace 事件和呼叫資訊] 。 IntelliTrace 會在下一個偵錯工作階段開始時，開始收集此資訊。  
   
     > [!TIP]
-    >  這可能會讓應用程式變慢，並增加儲存到磁碟之 IntelliTrace 記錄檔 (.iTrace 檔案) 的大小。 若要取得大部分呼叫資料，但將影響降至最低，可以只記錄您所關注之模組的資料。 如果要變更 .iTrace 檔案的大小上限，請前往 [工具] / [選項] / [IntelliTrace] / [進階] ，然後指定磁碟空間的最大值。 預設值為 250 MB。  
+    > 這可能會讓應用程式變慢，並增加儲存到磁碟之 IntelliTrace 記錄檔 (.iTrace 檔案) 的大小。 若要取得大部分呼叫資料，但將影響降至最低，可以只記錄您所關注之模組的資料。 如果要變更 .iTrace 檔案的大小上限，請前往 [工具] / [選項] / [IntelliTrace] / [進階] ，然後指定磁碟空間的最大值。 預設值為 250 MB。  
   
 2. 開始對前一節中所建立的 C# 主控台應用程式進行偵錯。 執行會在中斷點停止。 [診斷工具]  視窗若未出現，請按一下 [偵錯] / [視窗] / [IntelliTrace 事件] 。  
   
@@ -98,6 +98,6 @@ ms.locfileid: "60053802"
      選取並按兩下其中一個函式呼叫。 您應會看到函式的進入點與結束點，以及目前對其他函式的呼叫，以及該呼叫所引發的 IntelliTrace 事件。 若未開啟歷程偵錯，此動作會加以開啟。 若要深入了解歷程偵錯，請參閱 [Historical Debugging](../debugger/historical-debugging.md)。  
   
     > [!NOTE]
-    >  有一些呼叫可能會呈現暗灰色。 這是因為 IntelliTrace 未對錄對應模組的資料。 若要顯示此資料，請將 IntelliTrace 設定成從這些模組收集資料。 指定模組的相關資訊，請參閱[IntelliTrace 功能](../debugger/intellitrace-features.md)。  
+    > 有一些呼叫可能會呈現暗灰色。 這是因為 IntelliTrace 未對錄對應模組的資料。 若要顯示此資料，請將 IntelliTrace 設定成從這些模組收集資料。 指定模組的相關資訊，請參閱[IntelliTrace 功能](../debugger/intellitrace-features.md)。  
   
 ## <a name="next-steps"></a>後續步驟

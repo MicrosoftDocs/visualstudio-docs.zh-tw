@@ -10,12 +10,12 @@ helpviewer_keywords:
 ms.assetid: 3bac375d-8bd5-41be-a8de-32eb33c5cfac
 caps.latest.revision: 20
 manager: jillfra
-ms.openlocfilehash: 833783267c70c0a201e4b84bc5031bce517dc0a2
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: b66724542d45aa6f57b7c2748c7c1cab1ec8c064
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60054478"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436568"
 ---
 # <a name="support-for-settings-categories"></a>設定類別的支援
 設定類別包含自訂整合式開發環境 (IDE) 的選項群組。 例如，設定可以控制 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 視窗的配置和功能表的內容。 如需詳細資訊，請參閱 [在 Visual Studio 中自訂開發設定](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)。  
@@ -25,7 +25,7 @@ ms.locfileid: "60054478"
  此頁面之巡覽窗格中的樹狀目錄控制項會列出類別。 類別是一組顯示為「自訂設定點」(即核取方塊) 的相關設定。 您可以使用這些核取方塊來選取要保存在 .vsettings 檔案中的類別。 此精靈可讓您命名 .vsettings 檔案，並指定其路徑。  
   
 > [!NOTE]
->  設定會儲存或還原為類別，而個別設定名稱則不會顯示在精靈中。  
+> 設定會儲存或還原為類別，而個別設定名稱則不會顯示在精靈中。  
   
  Managed Package Framework (MPF) 支援撰寫最少的額外程式碼來建立設定類別。  
   
@@ -48,7 +48,7 @@ ms.locfileid: "60054478"
  設定類別的登錄路徑是透過合併 <xref:Microsoft.VisualStudio.Shell.Package.ApplicationRegistryRoot%2A>、字組、UserSettings、設定類別以及自訂設定點名稱所決定。 會連結設定類別和自訂設定點的名稱，並用底線區隔，以形成出現在登錄中的標準非當地語系化名稱。 例如，如果設定類別為 "My Category"、自訂設定點名稱為 "My Settings" 且 ApplicationRegistryRoot 為 HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp，則設定類別的登錄機碼為 HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp\UserSettings\My Category_My Settings。  
   
 > [!NOTE]
->  標準名稱不會出現在使用者介面 (UI) 中。 它用來將可讀名稱與設定類別產生關聯，這與程式設計識別項 (ProgID) 十分類似。  
+> 標準名稱不會出現在使用者介面 (UI) 中。 它用來將可讀名稱與設定類別產生關聯，這與程式設計識別項 (ProgID) 十分類似。  
   
 ### <a name="settings-category-attribute"></a>設定類別屬性  
  <xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute>判斷類別目錄中的自訂設定點的對應**匯入和匯出設定精靈**與提供它的 VSPackage 產生關聯的類別。 請考慮下列程式碼片段：  

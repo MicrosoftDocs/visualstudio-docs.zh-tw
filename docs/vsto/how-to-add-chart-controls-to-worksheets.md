@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 2e3d51f35be039c5eafe15956b2d403c11005b68
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: fccd328c521789c8ebb4b32c49b2a03a46027eb5
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60056311"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63427768"
 ---
 # <a name="how-to-add-chart-controls-to-worksheets"></a>HOW TO：將圖表控制項加入工作表
   您可以新增<xref:Microsoft.Office.Tools.Excel.Chart>Microsoft Office Excel 工作表在設計階段，並在執行階段在文件層級自訂中的控制項。 您也可以新增<xref:Microsoft.Office.Tools.Excel.Chart>在 VSTO 增益集的執行階段的控制項。
@@ -39,7 +39,7 @@ ms.locfileid: "60056311"
  您可以採用您從應用程式中加入圖表的方式，將 <xref:Microsoft.Office.Tools.Excel.Chart> 控制項加入工作表。
 
 > [!NOTE]
->  <xref:Microsoft.Office.Tools.Excel.Chart>控制項不是可從**工具箱**或**Zdroje dat**視窗。
+> <xref:Microsoft.Office.Tools.Excel.Chart>控制項不是可從**工具箱**或**Zdroje dat**視窗。
 
 ### <a name="to-add-a-chart-host-control-to-a-worksheet-in-excel"></a>將圖表主控制項加入 Excel 工作表
 

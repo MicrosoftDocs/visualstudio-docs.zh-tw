@@ -11,12 +11,12 @@ caps.latest.revision: 5
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 485969b40fdcedd2ec8835de8d9c9a699aba9e79
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: fe97461800d6f6e6eb285dd7eddb610ab2f5b5ac
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60091781"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63420063"
 ---
 # <a name="graphics-state"></a>圖形狀態
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,7 +46,7 @@ Visual Studio 圖形診斷中的 [狀態] 視窗可協助您了解在目前事�
     - **顯示釘選的狀態檢視**  
   
 > [!IMPORTANT]
->  您必須在 [顯示 API 輸入狀態] 或 [顯示邏輯狀態] 檢視中釘選狀態，它才會顯示在 [顯示釘選的狀態檢視] 中。  
+> 您必須在 [顯示 API 輸入狀態] 或 [顯示邏輯狀態] 檢視中釘選狀態，它才會顯示在 [顯示釘選的狀態檢視] 中。  
   
 ### <a name="state-table-format"></a>狀態資料表格式  
  [狀態] 視窗會呈現數個資料行的資訊。  

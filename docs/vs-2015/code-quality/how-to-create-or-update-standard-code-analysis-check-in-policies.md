@@ -13,12 +13,12 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 766ecde2da88c2a666470c790f6399cce198b2a7
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 9b1ad310385d5c8c8cecaee408d049a172d53e1e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60053152"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436854"
 ---
 # <a name="how-to-create-or-update-standard-code-analysis-check-in-policies"></a>HOW TO：建立或更新標準程式碼分析簽入原則
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,7 +26,7 @@ ms.locfileid: "60053152"
 您可以要求所有 team 專案中的程式碼專案上執行程式碼分析，使用程式碼分析簽入原則。 需要程式碼分析，可以改善簽入程式碼基底的程式碼的品質。  
   
 > [!NOTE]
->  只有當您使用 Team Foundation Server 時，才使用這項功能。  
+> 只有當您使用 Team Foundation Server 時，才使用這項功能。  
   
  程式碼分析簽入原則套用至每個 team 專案中的程式碼專案，並設定 team 專案設定。 程式碼分析回合設定的程式碼專案的專案 (.xxproj) 檔案中的程式碼專案。 在本機電腦上執行程式碼分析回合。 中 team 專案設定的規則時啟用程式碼分析簽入原則、 其上次的編輯之後必須編譯要簽入程式碼專案中的檔案和包含執行的程式碼分析，至少必須在電腦上執行，c已對 hanges。  
   

@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 7069da816d8f693fc38856d1218f5f9f6284dd4c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: ddeba1539cf68d53f4b9f931d2bcd18a159028fd
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60063604"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438701"
 ---
 # <a name="walkthrough-bind-data-to-controls-on-a-word-actions-pane"></a>逐步解說：將資料繫結至 Word 執行窗格上的控制項
   本逐步解說會示範在 Word 執行窗格上的控制項資料繫結。 這些控制項會顯示 SQL Server 資料庫中資料表之間的主要/詳細資料關聯。
@@ -38,7 +38,7 @@ ms.locfileid: "60063604"
 - 當應用程式開啟時，請顯示 [動作] 窗格。
 
 > [!NOTE]
->  在下列指示的某些 Visual Studio 使用者介面項目中，您的電腦可能會顯示不同的名稱或位置。 您所擁有的 Visual Studio 版本以及使用的設定會決定這些項目。 如需詳細資訊，請參閱[將 Visual Studio IDE 個人化](../ide/personalizing-the-visual-studio-ide.md)。
+> 在下列指示的某些 Visual Studio 使用者介面項目中，您的電腦可能會顯示不同的名稱或位置。 您所擁有的 Visual Studio 版本以及使用的設定會決定這些項目。 如需詳細資訊，請參閱[將 Visual Studio IDE 個人化](../ide/personalizing-the-visual-studio-ide.md)。
 
 ## <a name="prerequisites"></a>必要條件
  您需要下列元件才能完成此逐步解說：
@@ -78,7 +78,7 @@ ms.locfileid: "60063604"
 1. 如果**資料來源**看不到視窗，顯示，請在功能表列選擇**檢視** > **其他 Windows**  >  **資料來源**。
 
    > [!NOTE]
-   >  如果**顯示資料來源**，按一下 Word 文件，然後再檢查一次。
+   > 如果**顯示資料來源**，按一下 Word 文件，然後再檢查一次。
 
 2. 按一下 **加入新的資料來源**來啟動**資料來源組態精靈**。
 
@@ -111,7 +111,7 @@ ms.locfileid: "60063604"
 4. 選取 `SuppliersBindingNavigator`中**元件**紙匣，然後按**刪除**。 您不會使用`SuppliersBindingNavigator`在本逐步解說。
 
     > [!NOTE]
-    >  正在刪除`SuppliersBindingNavigator`不會移除所有針對它所產生的程式碼。 您可以移除此程式碼。
+    > 正在刪除`SuppliersBindingNavigator`不會移除所有針對它所產生的程式碼。 您可以移除此程式碼。
 
 5. 移動下拉式方塊，讓您可在 標籤 和 變更**大小**屬性設**171，21**。
 

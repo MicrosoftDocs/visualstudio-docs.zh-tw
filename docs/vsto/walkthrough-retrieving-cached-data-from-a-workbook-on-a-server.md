@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: bd39ec744e88c2a9334f31c2974ed92f1f6b9a12
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: ddf7bd222b61b3eb72a571857336c69deba6499f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60101414"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63421777"
 ---
 # <a name="walkthrough-retrieve-cached-data-from-a-workbook-on-a-server"></a>逐步解說：擷取伺服器上的活頁簿中的快取的資料
   本逐步解說示範如何從 Microsoft Office Excel 活頁簿中而不啟動 Excel 使用快取的資料集擷取資料<xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument>類別。
@@ -43,7 +43,7 @@ ms.locfileid: "60101414"
   雖然本逐步解說假設您的開發電腦上執行的程式碼，本逐步解說所示範的程式碼可用並沒有 Excel 安裝在伺服器上。
 
 > [!NOTE]
->  在下列指示的某些 Visual Studio 使用者介面項目中，您的電腦可能會顯示不同的名稱或位置。 您所擁有的 Visual Studio 版本以及使用的設定會決定這些項目。 如需詳細資訊，請參閱[將 Visual Studio IDE 個人化](../ide/personalizing-the-visual-studio-ide.md)。
+> 在下列指示的某些 Visual Studio 使用者介面項目中，您的電腦可能會顯示不同的名稱或位置。 您所擁有的 Visual Studio 版本以及使用的設定會決定這些項目。 如需詳細資訊，請參閱[將 Visual Studio IDE 個人化](../ide/personalizing-the-visual-studio-ide.md)。
 
 ## <a name="prerequisites"></a>必要條件
  您需要下列元件才能完成此逐步解說：
@@ -259,7 +259,7 @@ ms.locfileid: "60101414"
    - A<xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument>物件，用來存取活頁簿中的資料快取。
 
      > [!NOTE]
-     >  下列程式碼會假設使用儲存活頁簿 *.xlsx*延伸模組。 如果您的專案中的活頁簿有不同的延伸模組，修改視的路徑。
+     > 下列程式碼會假設使用儲存活頁簿 *.xlsx*延伸模組。 如果您的專案中的活頁簿有不同的延伸模組，修改視的路徑。
 
      [!code-csharp[Trin_CachedDataWalkthroughs#10](../vsto/codesnippet/CSharp/AdventureWorksDataSet/DataWriter/Program.cs#10)]
      [!code-vb[Trin_CachedDataWalkthroughs#10](../vsto/codesnippet/VisualBasic/AdventureWorksDataSet/DataWriter/Module1.vb#10)]

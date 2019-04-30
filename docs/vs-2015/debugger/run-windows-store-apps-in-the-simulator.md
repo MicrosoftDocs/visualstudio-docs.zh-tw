@@ -14,12 +14,12 @@ caps.latest.revision: 45
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 61c56636eec92f28468533b7c4d9a51e6f120363
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 0588d887cc1ba36a1ebb71df933686f68be524fc
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60054493"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63426616"
 ---
 # <a name="run-windows-store-apps-in-the-simulator"></a>在模擬器中執行 Windows 市集應用程式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ Windows 市集應用程式適用的 Visual Studio 模擬器則是桌面應用程
  如需 Windows Phone 資訊，請參閱 [Run Windows Phone apps in the emulator](../debugger/run-windows-phone-apps-in-the-emulator.md) 。  
   
 > [!IMPORTANT]
->  Visual Studio 2015 模擬器不包含 [地理位置] 按鈕。 這是因為 Windows 10 模擬器不包含地理位置模擬。 如果您需要執行這類模擬，您可以在 Windows 8.1 或舊版作業系統上使用 Visual Studio 2013 模擬器。  
+> Visual Studio 2015 模擬器不包含 [地理位置] 按鈕。 這是因為 Windows 10 模擬器不包含地理位置模擬。 如果您需要執行這類模擬，您可以在 Windows 8.1 或舊版作業系統上使用 Visual Studio 2013 模擬器。  
   
 ## <a name="BKMK_Set_the_simulator_as_the_target"></a> 將模擬器設定為目標  
  若要在模擬器中執行 Windows 市集應用程式，請在偵錯工具 [ **標準** ] 工具列上，從 [ **開始偵錯** ] 按鈕旁邊的下拉式清單中選取 [ **模擬器** ]。  
@@ -86,10 +86,10 @@ Windows 市集應用程式適用的 Visual Studio 模擬器則是桌面應用程
  將模擬器往任意方向旋轉 90 度，即可在縱向或橫向之間切換裝置方向。  
   
 > [!NOTE]
->  模擬器不接受專案的 [DisplayProperties.AutoRotationPreferences](http://go.microsoft.com/fwlink/?LinkId=249460) 屬性。 例如，如果您的專案將方向設定為 `Landscape`，接著您將模擬器旋轉為縱向方向，則模擬器顯示影像也會據以旋轉並調整大小。 在實際裝置上測試這些設定。  
+> 模擬器不接受專案的 [DisplayProperties.AutoRotationPreferences](http://go.microsoft.com/fwlink/?LinkId=249460) 屬性。 例如，如果您的專案將方向設定為 `Landscape`，接著您將模擬器旋轉為縱向方向，則模擬器顯示影像也會據以旋轉並調整大小。 在實際裝置上測試這些設定。  
   
 > [!NOTE]
->  如果因為旋轉模擬器而使得模擬器的某一邊大於所顯示螢幕的同一邊，模擬器會自動調整大小以便符合螢幕。 如果再次旋轉模擬器，模擬器不會重新調整回其原始大小。  
+> 如果因為旋轉模擬器而使得模擬器的某一邊大於所顯示螢幕的同一邊，模擬器會自動調整大小以便符合螢幕。 如果再次旋轉模擬器，模擬器不會重新調整回其原始大小。  
   
 ## <a name="BKMK_Change_the_simulated_screen_size_and_resolution"></a> 變更模擬的螢幕大小和解析度  
  若要變更模擬的螢幕大小與解析度，請從調色盤上選擇 [變更解析度]  按鈕，並從清單中選擇新的大小與解析度。  
@@ -97,13 +97,13 @@ Windows 市集應用程式適用的 Visual Studio 模擬器則是桌面應用程
  螢幕大小和解析度列示為 *螢幕寬度英吋，像素 X 像素高度*。 請注意，螢幕大小和解析度都是模擬的。 模擬器上的位置座標會轉換為已選取裝置大小和解析度的座標。  
   
 > [!NOTE]
->  您可以將點陣圖影像的已調整版本儲存在您的應用程式中，Windows 會載入目前比例的正確影像。 如需詳細資訊，請參閱 [回應式設計 101](https://msdn.microsoft.com/library/windows/apps/dn958435.aspx)。 不過，如果您變更了模擬器解析度，因此 Windows 選擇了不同的影像來符合解析度，則您必須停止並重新開始偵錯工作階段，才能檢視新影像。  
+> 您可以將點陣圖影像的已調整版本儲存在您的應用程式中，Windows 會載入目前比例的正確影像。 如需詳細資訊，請參閱 [回應式設計 101](https://msdn.microsoft.com/library/windows/apps/dn958435.aspx)。 不過，如果您變更了模擬器解析度，因此 Windows 選擇了不同的影像來符合解析度，則您必須停止並重新開始偵錯工作階段，才能檢視新影像。  
   
 ## <a name="BKMK_Capture_a_screenshot_of_your_app_for_submission_to_the_Microsoft_Store"></a> 擷取應用程式的螢幕擷取畫面以提交至 Windows 市集  
  當您提交應用程式至 Windows 應用程式市集時，必須包含該應用程式的螢幕擷取畫面。  
   
 > [!NOTE]
->  螢幕擷取畫面會以模擬器的目前解析度儲存。 若要變更解析度，請選擇 [ **變更解析度** ] 按鈕。  
+> 螢幕擷取畫面會以模擬器的目前解析度儲存。 若要變更解析度，請選擇 [ **變更解析度** ] 按鈕。  
   
 - 若要從模擬器建立您的應用程式的螢幕擷取畫面，請選擇 [ **擷取螢幕擷取畫面到剪貼簿** ] 按鈕。  
   

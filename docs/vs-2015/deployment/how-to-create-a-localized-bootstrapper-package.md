@@ -13,12 +13,12 @@ caps.latest.revision: 17
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 71fbafb46db563c56bafb926b66b88bc39fda2ed
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 5ec3cd1365826c1a06b2d0f7bd6da377c8dc4d46
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60039342"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63440660"
 ---
 # <a name="how-to-create-a-localized-bootstrapper-package"></a>HOW TO：建立當地語系化啟動載入器套件
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ ms.locfileid: "60039342"
 3. 建立名為 package.xml 的套件資訊清單，更新字串和文化特性，然後將檔案放入新資料夾中。 如果您已建立目標語言的 Visual Studio 啟動載入器，可以複製 Visual Studio package.xml 檔，並且在這個步驟中進行修改。  
   
 > [!NOTE]
->  如果您使用安裝專案部署應用程式，可以藉由變更 **Localization** 屬性將應用程式當地語系化。  
+> 如果您使用安裝專案部署應用程式，可以藉由變更 **Localization** 屬性將應用程式當地語系化。  
   
  [!INCLUDE[note_settings_general](../includes/note-settings-general-md.md)]  
   

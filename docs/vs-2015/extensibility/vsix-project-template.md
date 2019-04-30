@@ -11,12 +11,12 @@ ms.assetid: b6c82167-e2a5-4cff-8c8b-2d72e2a9092c
 caps.latest.revision: 22
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: e8bc80e28979a1adf86f4b0490f84cc393450521
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 2386f1be805f6347fc32fba4ee8bfe57c8602329
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60096126"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436896"
 ---
 # <a name="vsix-project-template"></a>VSIX 專案範本
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,13 +26,13 @@ ms.locfileid: "60096126"
  VSIX 部署支援 Vspackage、 組件、 MEF 元件、 專案範本、 項目範本，[工具箱] 控制項和自訂延伸模組類型。  
   
 > [!NOTE]
->  若要使用 VSIX 專案，您必須安裝 Visual Studio SDK。 如需有關 Visual Studio SDK 的詳細資訊，請參閱[Visual Studio SDK](../extensibility/visual-studio-sdk.md)。  
+> 若要使用 VSIX 專案，您必須安裝 Visual Studio SDK。 如需有關 Visual Studio SDK 的詳細資訊，請參閱[Visual Studio SDK](../extensibility/visual-studio-sdk.md)。  
   
 ## <a name="where-to-find-the-vsix-project-template"></a>哪裡可以找到 VSIX 專案範本  
  VSIX 專案範本位於**新的專案** 對話方塊。 展開  **Visual Basic**節點或**Visual C#** 節點，然後選擇 **擴充性**。  
   
 > [!TIP]
->  您應該要確定該.NET Framework 4.5 或更新版本中頂端的下拉式清單中指定**新的專案** 對話方塊。  
+> 您應該要確定該.NET Framework 4.5 或更新版本中頂端的下拉式清單中指定**新的專案** 對話方塊。  
   
 ## <a name="uses-of-the-vsix-project-template"></a>VSIX 專案範本的用途  
  VSIX 專案範本有兩個主要用途：  

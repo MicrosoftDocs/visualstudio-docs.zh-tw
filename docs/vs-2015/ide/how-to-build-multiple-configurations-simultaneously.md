@@ -9,12 +9,12 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 16a509c5a8fa46620e60fb5f1497c38d97ff6330
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 6812395046222c3370e43bfbe75a0502d2cb9044
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60068310"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63439278"
 ---
 # <a name="how-to-build-multiple-configurations-simultaneously"></a>HOW TO：同時建置多個組態
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ ms.locfileid: "60068310"
 2. 在 [建置] 資料行中，選取您要用來建置專案之組態的核取方塊。  
   
     > [!TIP]
-    >  若要編輯或建立方案的組建組態，請選擇功能表列上的 [建置]、[組態管理員] 以開啟 [組態管理員] 對話方塊。 在您編輯方案的組建組態之後，請在 [批次建置] 對話方塊中選擇 [重建] 按鈕，來更新方案中專案的所有組建組態。  
+    > 若要編輯或建立方案的組建組態，請選擇功能表列上的 [建置]、[組態管理員] 以開啟 [組態管理員] 對話方塊。 在您編輯方案的組建組態之後，請在 [批次建置] 對話方塊中選擇 [重建] 按鈕，來更新方案中專案的所有組建組態。  
   
 3. 選擇 [建置] 或 [重建] 按鈕，以使用您指定的組態來建置專案。  
   

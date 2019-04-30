@@ -9,12 +9,12 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 33666c0e5d63d8d4d33d544fcfe18d8c185ce843
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: a436027fc4194f762fc4b28545fdf5d4bd3b95b6
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60044348"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444607"
 ---
 # <a name="how-to-create-a-workflow-console-application"></a>HOW TO：建立工作流程主控台應用程式
 [!INCLUDE[wf](../includes/wf-md.md)] 可讓您建立執行系統或人工處理序的工作流程。 [!INCLUDE[wfd1](../includes/wfd1-md.md)] 會提供建立這些工作流程的設計介面。 [!INCLUDE[wfd2](../includes/wfd2-md.md)] 可用來從 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 建立工作流程，或者可以整合到重新裝載設計工具的其他應用程式中。  
@@ -40,7 +40,7 @@ ms.locfileid: "60044348"
 7. 在 **解決方案**方塊中，輸入新方案的名稱。 按一下 **確定**建立應用程式。  
   
     > [!NOTE]
-    >  如果您想要新增至現有的方案工作流程主控台應用程式，開啟該方案中的[!INCLUDE[vs2010](../includes/vs2010-md.md)]，以滑鼠右鍵按一下方案中的**方案總管 中**，然後選取**新增**，然後**新增專案...** 若要開啟 [**新的專案**] 對話方塊。 依照本程序上面的說明繼續進行。  
+    > 如果您想要新增至現有的方案工作流程主控台應用程式，開啟該方案中的[!INCLUDE[vs2010](../includes/vs2010-md.md)]，以滑鼠右鍵按一下方案中的**方案總管 中**，然後選取**新增**，然後**新增專案...** 若要開啟 [**新的專案**] 對話方塊。 依照本程序上面的說明繼續進行。  
   
 8. 專案範本會以 XAML 建立工作流程定義，而主控台應用程式定義會使用原始程式碼。 [!INCLUDE[wfd2](../includes/wfd2-md.md)] 會開啟並顯示您所建立之工作流程的畫布。  
   

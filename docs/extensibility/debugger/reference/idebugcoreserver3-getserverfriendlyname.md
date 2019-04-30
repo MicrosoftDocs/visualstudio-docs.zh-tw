@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0dec32c47354f43cee33077985c122c92aaebc6f
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.openlocfilehash: f70e8301b6a44397d351345fe3cb8fe0c3d3426e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56718114"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63414036"
 ---
 # <a name="idebugcoreserver3getserverfriendlyname"></a>IDebugCoreServer3::GetServerFriendlyName
 擷取伺服器的易記名稱。
@@ -42,7 +42,7 @@ int GetServerFriendlyName(
  [out]傳回伺服器的易記名稱。
 
 > [!NOTE]
->  呼叫端負責釋放字串。
+> 呼叫端負責釋放字串。
 
 ## <a name="return-value"></a>傳回值
  如果成功，則傳回`S_OK`，否則會傳回錯誤碼。

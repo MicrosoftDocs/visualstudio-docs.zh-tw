@@ -22,12 +22,12 @@ caps.latest.revision: 93
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 980b7e0f54c058650a393c35467a73d926ec6638
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: c5976f2d701ecf051625c93ab6b70fb88ed15108
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60088726"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433322"
 ---
 # <a name="customize-code-maps-by-editing-the-dgml-files"></a>Customize code maps by editing the DGML files
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,7 +37,7 @@ ms.locfileid: "60088726"
  在文字或 XML 編輯器中編輯 Code Map 的 .dgml 檔案。 如果對應 Visual Studio 方案的一部分，請選取它**方案總管**，開啟捷徑功能表，然後選擇**開啟**， **XML （文字） 編輯器**。  
   
 > [!NOTE]
->  若要建立 Code Map，您必須擁有 Visual Studio Enterprise。 當您在 Visual Studio 中編輯 Code Map 時，它會在您儲存此 .dgml 檔案時刪除任何未使用的 DGML 項目和屬性，藉此予以清除。 它也會在您手動加入新的連結時自動建立程式碼項目。 當您儲存 .dgml 檔案時，任何加入至項目的屬性可能會自行按照字母順序重新排列。  
+> 若要建立 Code Map，您必須擁有 Visual Studio Enterprise。 當您在 Visual Studio 中編輯 Code Map 時，它會在您儲存此 .dgml 檔案時刪除任何未使用的 DGML 項目和屬性，藉此予以清除。 它也會在您手動加入新的連結時自動建立程式碼項目。 當您儲存 .dgml 檔案時，任何加入至項目的屬性可能會自行按照字母順序重新排列。  
   
 ## <a name="OrganizeNodes"></a> 群組程式碼項目  
  您可以加入新的群組，或將現有的節點轉換成群組。  
@@ -120,7 +120,7 @@ ms.locfileid: "60088726"
 - 根據特定條件組成的程式碼項目和連結群組  
   
 > [!TIP]
->  如果您在許多不同的程式碼項目或連結之間使用了重覆的樣式，您可能可以考慮套用一個分類到那些程式碼項目或連結，然後將樣式套用到該分類。 如需詳細資訊，請參閱 <<c0> [ 指派分類給程式碼項目和連結](#AssignCategories)並[指派屬性給程式碼項目和連結](#AssignProperties)。  
+> 如果您在許多不同的程式碼項目或連結之間使用了重覆的樣式，您可能可以考慮套用一個分類到那些程式碼項目或連結，然後將樣式套用到該分類。 如需詳細資訊，請參閱 <<c0> [ 指派分類給程式碼項目和連結](#AssignCategories)並[指派屬性給程式碼項目和連結](#AssignProperties)。  
   
 ##### <a name="to-apply-a-custom-style-to-a-single-code-element"></a>將自訂樣式套用至單一程式碼項目  
   
@@ -204,7 +204,7 @@ ms.locfileid: "60088726"
     Shape="ShapeFilePathLocation"  
     ```  
   
-     例如：  
+     例如:   
   
     ```xml  
     <Nodes>  
@@ -317,7 +317,7 @@ ms.locfileid: "60088726"
   
 3. 在 `<Condition/>` 項目的下一行加入一個或多個 `<Setter/>` 項目來指定 `Property` 屬性與固定的 `Value` 屬性，或加入計算的 `Expression` 屬性，以套用至符合條件的對應、程式碼項目或連結。  
   
-    例如:   
+    例如：  
   
    ```xml  
    <Setter Property="BackGround" Value="Green"/>  
@@ -445,7 +445,7 @@ ms.locfileid: "60088726"
   
 1. 在文字或 XML 編輯器中開啟此 .dgml 檔案。  
   
-2. 找出該程式碼項目的 `<Node/>` 項目。 指定此屬性的名稱及值。 例如：  
+2. 找出該程式碼項目的 `<Node/>` 項目。 指定此屬性的名稱及值。 例如:   
   
     ```xml  
     <Nodes>  
@@ -536,7 +536,7 @@ ms.locfileid: "60088726"
   
 2. 加入父分類的 `<Category/>` 項目，然後將 `BasedOn` 屬性加入至子分類的 `<Category/>` 項目。  
   
-     例如：  
+     例如:   
   
     ```xml  
     <Nodes>  
@@ -558,7 +558,7 @@ ms.locfileid: "60088726"
  您可以編輯此對應的 .dgml 檔案，並將 `Reference` 屬性加入程式碼項目的 `<Node/>` 項目或連結的 `<Link/>` 項目，藉此將文件或 URL 連結至程式碼項目或連結。 然後，您就可以從程式碼項目或連結開啟和檢視該內容。 `Reference` 屬性會指定該內容的路徑。 此路徑可以是相對於 .dgml 檔案位置的路徑，或是絕對路徑。  
   
 > [!CAUTION]
->  如果您使用相對路徑，而且 .dgml 檔案已移動到不同的位置，那麼那些路徑將不再解析。 當您嘗試開啟和檢視連結的內容時，會發生表示內容無法檢視的錯誤。  
+> 如果您使用相對路徑，而且 .dgml 檔案已移動到不同的位置，那麼那些路徑將不再解析。 當您嘗試開啟和檢視連結的內容時，會發生表示內容無法檢視的錯誤。  
   
  例如，您可能會想要連結下列程式碼項目：  
   
@@ -583,7 +583,7 @@ ms.locfileid: "60088726"
    - 在 `<Node/>` 或 `<Link/>` 項目中，加入 `Reference` 屬性以指定此程式碼項目的位置。  
   
      > [!NOTE]
-     >  每個項目只能有一個 `Reference` 屬性。  
+     > 每個項目只能有一個 `Reference` 屬性。  
   
      例如：  
   
@@ -610,7 +610,7 @@ ms.locfileid: "60088726"
   
       4. 使用`Label`屬性來指定程式碼項目上的顯示文字**移至參考**快顯功能表。  
   
-      例如：  
+      例如:   
   
    ```xml  
    <Nodes>  

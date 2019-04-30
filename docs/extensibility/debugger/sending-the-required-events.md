@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: dcff0d559894e8d4ba322e4e8ebab71000a3809e
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 45a65259c88eb9e8e946aa226eecc7cffa053552
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60083552"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63415610"
 ---
 # <a name="send-the-required-events"></a>傳送所需的事件
 使用此程序傳送必要的事件。
@@ -34,7 +34,7 @@ ms.locfileid: "60083552"
 5. 如果要進行偵錯應用程式啟動時，傳送[IDebugEntryPointEvent2](../../extensibility/debugger/reference/idebugentrypointevent2.md) SDM 時執行的執行階段架構中的程式碼的第一個指令的物件事件。 這個事件永遠是 「 停止 」 事件。 當逐步執行偵錯工作階段，IDE 會停止此事件。
 
 > [!NOTE]
->  許多語言會使用全域初始設定式或外部的先行編譯的函式 （從 CRT 程式庫或 _Main） 在其程式碼的開頭。 如果您正在偵錯的程式語言包含這些類型的初始項目點之前的項目，此程式碼執行，而且就會傳送項目點事件時的使用者進入點，例如**主要**或`WinMain`，是已達到。
+> 許多語言會使用全域初始設定式或外部的先行編譯的函式 （從 CRT 程式庫或 _Main） 在其程式碼的開頭。 如果您正在偵錯的程式語言包含這些類型的初始項目點之前的項目，此程式碼執行，而且就會傳送項目點事件時的使用者進入點，例如**主要**或`WinMain`，是已達到。
 
 ## <a name="see-also"></a>另請參閱
 - [啟用要偵錯程式](../../extensibility/debugger/enabling-a-program-to-be-debugged.md)

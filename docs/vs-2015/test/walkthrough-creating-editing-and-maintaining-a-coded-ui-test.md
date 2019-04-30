@@ -8,12 +8,12 @@ ms.assetid: f7c25ba7-5c9c-455b-9242-701cda56f90c
 caps.latest.revision: 43
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 8df705e1e4da6a54f060de45a90aed7c41691683
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 940a7551c83ec9a195ac0d54b430115ed926abf5
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60061810"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63428224"
 ---
 # <a name="walkthrough-creating-editing-and-maintaining-a-coded-ui-test"></a>逐步解說：建立、 編輯和維護自動程式化的 UI 測試
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -123,7 +123,7 @@ ms.locfileid: "60061810"
 2. 建立 SimpleWPFApp 應用程式的桌面捷徑。 以滑鼠右鍵按一下 SimpleWPFApp.exe，然後選擇 [複製]。 在桌面上按一下滑鼠右鍵，然後選取 [貼上捷徑]。  
   
     > [!TIP]
-    >  使用應用程式的捷徑可以輕鬆加入或修改應用程式的自動程式化 UI 測試，因為它能讓您快速啟動應用程式。  
+    > 使用應用程式的捷徑可以輕鬆加入或修改應用程式的自動程式化 UI 測試，因為它能讓您快速啟動應用程式。  
   
 3. 在 [方案總管] 中，以滑鼠右鍵按一下方案，選擇 [加入]，然後選取 [新增專案]。  
   
@@ -154,7 +154,7 @@ ms.locfileid: "60061810"
      ![暫停錄製](../test/media/cuit.png "CUIT_")  
   
     > [!WARNING]
-    >  將會錄製所有在桌面上執行的動作。 如果您執行的動作可能會導致在錄製中包括敏感性資料，則請暫停錄製。  
+    > 將會錄製所有在桌面上執行的動作。 如果您執行的動作可能會導致在錄製中包括敏感性資料，則請暫停錄製。  
   
 9. 使用桌面捷徑啟動 SimpleWPFApp。  
   
@@ -203,7 +203,7 @@ ms.locfileid: "60061810"
 3. 若要修正這個問題，您可以使用 `WaitForControlEnabled()` 方法，讓自動程式碼 UI 測試先等候 [CheckBox] 控制項完成啟用後再繼續進行至這一行。  
   
     > [!WARNING]
-    >  請勿修改 UIMap.Designer.cs 檔案。 每次您使用 [UIMap - 自動程式碼 UI 測試產生器] 產生程式碼時，對 UIMapDesigner.cs 檔案中的程式碼所做的變更都會被覆寫。 如果您需要修改錄製的方法，必須將它複製到 UIMap.cs 檔案並重新命名。 UIMap.cs 檔案可用來覆寫 UIMapDesigner.cs 檔案中的方法和屬性。 您必須移除 Coded UITest.cs 檔案中原始方法的參考，並將它取代為重新命名的方法名稱。  
+    > 請勿修改 UIMap.Designer.cs 檔案。 每次您使用 [UIMap - 自動程式碼 UI 測試產生器] 產生程式碼時，對 UIMapDesigner.cs 檔案中的程式碼所做的變更都會被覆寫。 如果您需要修改錄製的方法，必須將它複製到 UIMap.cs 檔案並重新命名。 UIMap.cs 檔案可用來覆寫 UIMapDesigner.cs 檔案中的方法和屬性。 您必須移除 Coded UITest.cs 檔案中原始方法的參考，並將它取代為重新命名的方法名稱。  
   
 4. 在 [方案總管] 中，找出自動程式化 UI 測試專案中的 **UIMap.uitest**。  
   
@@ -224,7 +224,7 @@ ms.locfileid: "60061810"
      測試方法的更新就會儲存在 UIMap.Designer 檔案中。  
   
     > [!CAUTION]
-    >  一旦移動方法，便無法使用 [自動程式碼 UI 測試編輯器] 來編輯方法。 您必須使用 [程式碼編輯器] 加入及維護自訂程式碼。  
+    > 一旦移動方法，便無法使用 [自動程式碼 UI 測試編輯器] 來編輯方法。 您必須使用 [程式碼編輯器] 加入及維護自訂程式碼。  
   
 10. 將這個方法從 `SimpleAppTest()` 重新命名為 `ModifiedSimpleAppTest()`  
   

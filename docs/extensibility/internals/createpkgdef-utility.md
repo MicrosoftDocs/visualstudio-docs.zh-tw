@@ -13,18 +13,18 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 96b0343cd088a8d608cd3503162bf7fa737b79f4
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 19372b341a0a8ba49caa0208a9a2fbbfd0a6b29b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56602438"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63418702"
 ---
 # <a name="createpkgdef-utility"></a>CreatePkgDef 公用程式
 採用 Visual Studio 延伸模組做為參數的.dll 檔案，並建立 *.pkgdef*伴隨著檔案 *.dll*檔案。 *.Pkgdef*檔案包含會否則寫入系統登錄時已安裝的延伸模組的所有資訊。
 
 > [!NOTE]
->  建立專案範本會自動包含在 Visual Studio SDK 中的大部分 *.pkgdef*檔案做為建置程序的一部分。 本文件適用於想要以手動的方式，建立封裝，或轉換現有的封裝，若要使用的任何人 *.pkgdef*部署。
+> 建立專案範本會自動包含在 Visual Studio SDK 中的大部分 *.pkgdef*檔案做為建置程序的一部分。 本文件適用於想要以手動的方式，建立封裝，或轉換現有的封裝，若要使用的任何人 *.pkgdef*部署。
 
 ## <a name="syntax"></a>語法
 
@@ -55,7 +55,7 @@ CreatePkgDef /out=<FileName> [/codebase] [/assembly] <AssemblyPath>
   如果安裝資料夾 *%vsinstalldir%\Common7\IDE\Extensions\\*，預設會啟用擴充功能。
 
 > [!NOTE]
->  **擴充功能和更新**工具無法用來存取延伸模組，除非它安裝 VSIX 套件的一部分。
+> **擴充功能和更新**工具無法用來存取延伸模組，除非它安裝 VSIX 套件的一部分。
 
 ## <a name="see-also"></a>另請參閱
 - [CreateExpInstance 公用程式](../../extensibility/internals/createexpinstance-utility.md)

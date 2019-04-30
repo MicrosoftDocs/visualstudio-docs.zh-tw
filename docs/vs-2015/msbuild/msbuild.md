@@ -12,12 +12,12 @@ caps.latest.revision: 62
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: b204a0f3bda5eab9291d4201fbea3c39a3f62ca6
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 2534726de9f4aeb015753e0b1ea6870f2120e014
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60050396"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63425905"
 ---
 # <a name="msbuild"></a>MSBuild
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,7 +49,7 @@ ms.locfileid: "60050396"
   您可以在 Visual Studio IDE 中撰寫程式碼，但是使用 MSBuild 執行組建。 另一種替代方式是，您可以在開發電腦的 IDE 中建置程式碼，但是使用 MSBuild 命令列建置整合自多位開發人員的程式碼。  
   
 > [!NOTE]
->  您可以使用 Team Foundation Build 自動編譯、測試和部署您的應用程式。 您的建置系統可以在開發人員簽入程式碼 (例如，做為連續整合策略的一部分) 時或是根據排程 (例如，夜間組建驗證測試組建) 自動執行組建。 Team Foundation Build 會使用 MSBuild 編譯您的程式碼。 如需詳細資訊，請參閱[建置應用程式](http://msdn.microsoft.com/library/a971b0f9-7c28-479d-a37b-8fd7e27ef692)。  
+> 您可以使用 Team Foundation Build 自動編譯、測試和部署您的應用程式。 您的建置系統可以在開發人員簽入程式碼 (例如，做為連續整合策略的一部分) 時或是根據排程 (例如，夜間組建驗證測試組建) 自動執行組建。 Team Foundation Build 會使用 MSBuild 編譯您的程式碼。 如需詳細資訊，請參閱[建置應用程式](http://msdn.microsoft.com/library/a971b0f9-7c28-479d-a37b-8fd7e27ef692)。  
   
  本主題提供 MSBuild 的概觀。 如需入門教學課程，請參閱[逐步解說：使用 MSBuild](../msbuild/walkthrough-using-msbuild.md)。  
   
@@ -83,7 +83,7 @@ MSBuild.exe MyProj.proj /property:Configuration=Debug
  如需 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 命令列選項的詳細資訊，請參閱[命令列參考](../msbuild/msbuild-command-line-reference.md)。  
   
 > [!IMPORTANT]
->  下載專案之前，請判斷程式碼的可信度。  
+> 下載專案之前，請判斷程式碼的可信度。  
   
 ## <a name="BKMK_ProjectFile"></a> 專案檔  
  [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 使用直接且可擴充的 XML 專案檔格式。 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 專案檔格式讓開發人員可以描述將要建置的項目，以及如何針對不同的作業系統和組態來建置這些項目。 此外，專案檔格式還能讓開發人員撰寫可重複使用的建置規則供個別檔案使用，讓這些組建在產品內的不同專案中仍有一致的表現。  
@@ -193,7 +193,7 @@ MSBuild.exe MyProj.proj /property:Configuration=Debug
   
 |標題|描述|  
 |-----------|-----------------|  
-|[逐步解說：從頭開始建立 MSBuild 專案檔案](../msbuild/walkthrough-creating-an-msbuild-project-file-from-scratch.md)|顯示如何僅使用文字編輯器來累加建立基本專案檔。|  
+|[逐步解說：從頭開始建立 MSBuild 專案檔](../msbuild/walkthrough-creating-an-msbuild-project-file-from-scratch.md)|顯示如何僅使用文字編輯器來累加建立基本專案檔。|  
 |[逐步解說：使用 MSBuild](../msbuild/walkthrough-using-msbuild.md)|介紹 MSBuild 的建置區塊，以及顯示如何在不關閉 Visual Studio IDE 的情況下，撰寫和管理 MSBuild 專案及進行偵錯。|  
 |[MSBuild 概念](../msbuild/msbuild-concepts.md)|呈現 MSBuild 的四個建置組塊：屬性、項目、目標和工作。|  
 |[項目](../msbuild/msbuild-items.md)|描述 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 檔案格式的一般概念，以及項目如何彼此搭配。|  

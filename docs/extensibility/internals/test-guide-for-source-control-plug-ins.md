@@ -14,18 +14,18 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 40de16290e52755ab92d09edf0c90c045ad4dc86
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 120aed577f0365c9d595916e191779793271d90d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60061030"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63429915"
 ---
 # <a name="test-guide-for-source-control-plug-ins"></a>原始檔控制外掛程式測試指南
 本節提供指引來測試您的原始檔控制外掛程式與[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]。 會提供廣泛的最常見的測試區域，以及一些更複雜的區域可能會造成問題的概觀。 本概觀旨在沒有測試案例的詳盡清單。
 
 > [!NOTE]
->  某些 bug 修正和最新的增強功能[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]IDE 可能會發現問題的現有原始檔控制外掛程式先前不時所發生之使用舊版[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]。 強烈建議您測試您現有原始檔控制外掛程式在本節中，列舉的區域，即使沒有變更已對外掛程式自舊版[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]。
+> 某些 bug 修正和最新的增強功能[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]IDE 可能會發現問題的現有原始檔控制外掛程式先前不時所發生之使用舊版[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]。 強烈建議您測試您現有原始檔控制外掛程式在本節中，列舉的區域，即使沒有變更已對外掛程式自舊版[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]。
 
 ## <a name="common-preparation"></a>常見的準備
  具有機器[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]和目標原始檔控制外掛程式安裝為必要。 同樣地設定第二部電腦可用部分從原始檔控制測試開啟。
@@ -51,7 +51,7 @@ ms.locfileid: "60061030"
 
 ## <a name="test-areas-covered-in-this-section"></a>本章節涵蓋的測試區域
 
-- [測試區域 1:從原始檔控制新增至 / Open](../../extensibility/internals/test-area-1-add-to-open-from-source-control.md)
+- [測試區域 1：新增到原始程式碼控制或從中開啟](../../extensibility/internals/test-area-1-add-to-open-from-source-control.md)
 
     - 案例 1a:將方案加入原始檔控制
 
@@ -59,9 +59,9 @@ ms.locfileid: "60061030"
 
     - 案例 1 c:從原始檔控制新增解決方案
 
-- [測試區域 2:取得從原始檔控制](../../extensibility/internals/test-area-2-get-from-source-control.md)
+- [測試區域 2：從原始程式碼控制取得](../../extensibility/internals/test-area-2-get-from-source-control.md)
 
-- [測試區域 3:簽出/復原簽出](../../extensibility/internals/test-area-3-check-out-undo-checkout.md)
+- [測試區域 3：簽出及復原簽出](../../extensibility/internals/test-area-3-check-out-undo-checkout.md)
 
     - 案例 3:簽出/復原簽出
 
@@ -75,7 +75,7 @@ ms.locfileid: "60061030"
 
     - 案例 3e:復原簽出
 
-- [測試區域 4:簽入](../../extensibility/internals/test-area-4-check-in.md)
+- [測試區域 4：簽入](../../extensibility/internals/test-area-4-check-in.md)
 
     - 案例 4a:修改過的項目
 
@@ -83,7 +83,7 @@ ms.locfileid: "60061030"
 
     - 案例 4 c:新增專案
 
-- [測試區域 5:變更原始檔控制](../../extensibility/internals/test-area-5-change-source-control.md)
+- [測試區域 5：變更原始程式碼控制](../../extensibility/internals/test-area-5-change-source-control.md)
 
     - 案例 5a:繫結
 
@@ -91,11 +91,11 @@ ms.locfileid: "60061030"
 
     - 案例 5 c:重新繫結
 
-- [測試區域 6︰刪除](../../extensibility/internals/test-area-6-delete.md)
+- [測試區域 6：刪除](../../extensibility/internals/test-area-6-delete.md)
 
-- [測試區域 7︰共用](../../extensibility/internals/test-area-7-share.md)
+- [測試區域 7：共用](../../extensibility/internals/test-area-7-share.md)
 
-- [測試區域 8︰外掛程式切換](../../extensibility/internals/test-area-8-plug-in-switching.md)
+- [測試區域 8：外掛程式切換](../../extensibility/internals/test-area-8-plug-in-switching.md)
 
     - 案例 8a:自動變更
 

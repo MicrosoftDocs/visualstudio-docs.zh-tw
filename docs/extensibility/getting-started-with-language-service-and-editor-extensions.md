@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 829ceea8f4acf0f884e3345e05053d368489d9ea
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: acb18a6471a7d2debbb20107dc780f67857327ad
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60049018"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63415567"
 ---
 # <a name="get-started-with-language-service-and-editor-extensions"></a>語言服務及編輯器擴充功能入門
 若要將語言服務功能，例如大綱、 括號對稱、 IntelliSense 和燈泡，加入您自己的程式設計語言或任何內容類型，您可以使用編輯器延伸模組。 您也可以自訂的外觀和行為的 Visual Studio 編輯器，例如色彩標示、 邊界、 裝飾和其他視覺元素的文字。 您也可以定義您自己的內容的類型，並指定的外觀和行為，您的內容會出現的文字檢視。
@@ -23,7 +23,7 @@ ms.locfileid: "60049018"
  若要開始撰寫編輯器延伸模組，使用已安裝 Visual Studio SDK 的一部分的編輯器專案範本。 Visual Studio SDK 是可下載的工具，可讓您更輕鬆地使用 Vspackage，或使用 Managed Extensibility Framework (MEF) 開發 Visual Studio 擴充功能，一組。
 
 > [!NOTE]
->  如需有關 Visual Studio SDK 的詳細資訊，請參閱[Visual Studio SDK](../extensibility/visual-studio-sdk.md)。
+> 如需有關 Visual Studio SDK 的詳細資訊，請參閱[Visual Studio SDK](../extensibility/visual-studio-sdk.md)。
 
  我們建議您先了解下列概念和技術撰寫您自己的編輯器延伸模組之前。
 
@@ -34,7 +34,7 @@ ms.locfileid: "60049018"
  Visual Studio 編輯器會使用 Managed Extensibility Framework (MEF) 來管理其元件和延伸模組。 MEF 也可讓開發人員輕鬆地建立主應用程式，例如 Visual Studio 的擴充功能。 在此架構中，您可以定義根據 MEF 合約的延伸模組，並將它匯出為 MEF 元件組件。 主應用程式管理之元件部分，找到這些物件、 註冊，並確保它們會套用至正確的內容。
 
 > [!NOTE]
->  如需在編輯器中的 MEF 的詳細資訊，請參閱[編輯器中的 Managed Extensibility Framework](../extensibility/managed-extensibility-framework-in-the-editor.md)。
+> 如需在編輯器中的 MEF 的詳細資訊，請參閱[編輯器中的 Managed Extensibility Framework](../extensibility/managed-extensibility-framework-in-the-editor.md)。
 
 ## <a name="visual-studio-editor-extension-points-and-extensions"></a>Visual Studio 編輯器擴充點和擴充功能
  編輯器擴充點的 MEF 元件部分，您可以自訂及擴充。 在某些情況下您會藉由實作介面，並將它匯出加上正確的中繼資料擴充擴充點。 在其他情況下，只是宣告的擴充功能，並將它匯出為特定類型。
@@ -59,7 +59,7 @@ ms.locfileid: "60049018"
  當您在電腦上安裝擴充功能時，請在資料夾的子資料夾，也是以 Visual Studio 中包含的二進位檔和資訊清單。
 
 > [!WARNING]
->  您不必擔心資訊清單和部署位置的詳細資料，如果您使用其中一個隨附於 Visual Studio 擴充性範本編輯器。 範本會包含所需登錄及部署擴充功能的所有項目。
+> 您不必擔心資訊清單和部署位置的詳細資料，如果您使用其中一個隨附於 Visual Studio 擴充性範本編輯器。 範本會包含所需登錄及部署擴充功能的所有項目。
 
 ## <a name="run-extensions-in-the-experimental-instance"></a>執行實驗的執行個體中的擴充功能
  藉由部署 （在 Windows Vista 和 Windows 7） 的下列實驗性資料夾中儲存的遊戲開發擴充功能時，您可以隔離您的 Visual Studio 版本：

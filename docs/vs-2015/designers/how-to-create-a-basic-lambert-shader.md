@@ -9,12 +9,12 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: d70a0c279c0720e79477b518ab63cf0326ca5237
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 227c9c84022e3c3340b4821df9dbd2dbe9465a03
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60111242"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63414678"
 ---
 # <a name="how-to-create-a-basic-lambert-shader"></a>HOW TO：建立基本 Lambert 著色器
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,7 +49,7 @@ ms.locfileid: "60111242"
    下圖顯示完成的著色器圖形和套用至茶壺模型的著色器預覽。  
   
 > [!NOTE]
->  為了更適當展現此圖中的著色器效果，已使用著色器的 **MaterialDiffuse** 參數來指定橘色。 遊戲或應用程式可以使用這個參數為每個物件提供獨特的色彩值。 如需材質參數的詳細資訊，請參閱[著色器設計工具](../designers/shader-designer.md)中的＜預覽著色器＞一節。  
+> 為了更適當展現此圖中的著色器效果，已使用著色器的 **MaterialDiffuse** 參數來指定橘色。 遊戲或應用程式可以使用這個參數為每個物件提供獨特的色彩值。 如需材質參數的詳細資訊，請參閱[著色器設計工具](../designers/shader-designer.md)中的＜預覽著色器＞一節。  
   
  ![著色器圖形和其效果預覽。](../designers/media/digit-lambert-effect-graph.png "Digit-Lambert-Effect-Graph")  
   

@@ -11,12 +11,12 @@ ms.assetid: f7fe9a7e-f669-4642-ad5d-186b2e6e6ec9
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 7d1bfcfc3176e14900553504a66307ff6e8dcf5a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: f3bae21baa0c484f2deeb8406a703b92cadc874b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60049253"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63439048"
 ---
 # <a name="designer-initialization-and-metadata-configuration"></a>設計工具初始化和中繼資料組態
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,7 +47,7 @@ ms.locfileid: "60049253"
 1. 建立物件，實作<xref:Microsoft.VisualStudio.Shell.Design.DesignSurfaceExtension>類別。  
   
    > [!NOTE]
-   >  <xref:Microsoft.VisualStudio.Shell.Design.DesignSurfaceExtension>應該永遠不會在相同物件上實作類別<xref:Microsoft.VisualStudio.Shell.Package>類別。  
+   > <xref:Microsoft.VisualStudio.Shell.Design.DesignSurfaceExtension>應該永遠不會在相同物件上實作類別<xref:Microsoft.VisualStudio.Shell.Package>類別。  
   
 2. 註冊類別實作<xref:Microsoft.VisualStudio.Shell.Design.DesignSurfaceExtension>做為 VSPackage 的設計工具擴充功能提供支援，藉由套用的執行個體<xref:Microsoft.VisualStudio.Shell.Design.DesignSurfaceExtensionAttribute>，<xref:Microsoft.VisualStudio.Shell.ProvideObjectAttribute>並<xref:Microsoft.VisualStudio.Shell.ProvideServiceAttribute>提供的 VSPackage 的實作類別<xref:Microsoft.VisualStudio.Shell.Package>.  
   
@@ -93,7 +93,7 @@ ms.locfileid: "60049253"
   `internal class MyPackage : Package {}`  
   
 > [!NOTE]
->  在現階段，設計介面僅支援建立的元件，因此只元件可以有本機中繼資料。 在上述範例中，我們已嘗試修改屬性，例如`Color`物件的屬性。 如果`false`為全域的旗標，傳入`CustomBrowser`永遠不會出現，因為設計工具不會實際建立的執行個體`Color`。 全域旗標設定為`false`適用於元件，例如控制項、 計時器和對話方塊。  
+> 在現階段，設計介面僅支援建立的元件，因此只元件可以有本機中繼資料。 在上述範例中，我們已嘗試修改屬性，例如`Color`物件的屬性。 如果`false`為全域的旗標，傳入`CustomBrowser`永遠不會出現，因為設計工具不會實際建立的執行個體`Color`。 全域旗標設定為`false`適用於元件，例如控制項、 計時器和對話方塊。  
   
 ## <a name="see-also"></a>另請參閱  
  <xref:Microsoft.VisualStudio.Shell.Design.DesignSurfaceExtension>   

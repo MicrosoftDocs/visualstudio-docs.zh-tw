@@ -10,12 +10,12 @@ ms.assetid: ca2f4e43-322c-4431-8680-52da846940bc
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 7c7b3641a6c9fbc680f4a902b2f0e5d7bf331401
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 6b3208230b438eb52c68ef5709cbb0d6628b60ee
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60090679"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63430169"
 ---
 # <a name="web-project-essentials"></a>Web 專案的基本資訊
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -37,7 +37,7 @@ Web 專案建立 Web 應用程式。 您可以使用 Web 專案來建立智慧�
 - Web 專案的方案檔位於與網站本身分開。 根據預設，方案檔會位於 \Documents and 設定\\*YourAccount*\My 文件\\*\<Visual Studio # # # >* \Projects\\ *YourWebSite*。  
   
     > [!NOTE]
-    >  如果您想要保留與網站的方案檔，只要那里移動，並重新開啟它。  
+    > 如果您想要保留與網站的方案檔，只要那里移動，並重新開啟它。  
   
 - 如果您開啟 Visual Studio 中沒有方案檔的網站時，新的方案檔會自動產生它。  
   

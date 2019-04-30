@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e4e05eae6339d55d16fb0cf6ba6ebeb9d1f4f296
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 9126a0d3bb552f525247cbfb2243504a1effaa92
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60106653"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63435477"
 ---
 # <a name="how-to-create-a-bdc-model"></a>HOW TO：建立 BDC 模型
   您可以使用範本，為該類型的項目，並再將模型加入至任何 SharePoint 專案，以建立商務資料連接 (BDC) 模型。 如需詳細資訊，請參閱 <<c0> [ 建立 business data connectivity 模型](../sharepoint/creating-a-business-data-connectivity-model.md)。 如需如何設計模型的詳細資訊，請參閱[設計 business data connectivity 模型](../sharepoint/designing-a-business-data-connectivity-model.md)。
@@ -28,7 +28,7 @@ ms.locfileid: "60106653"
 1. 在功能表列上，選擇 [檔案] > [新增] > [專案]。
 
     > [!NOTE]
-    >  如果您的 IDE 設定為使用 Visual Basic 開發設定中，選擇**檔案** > **新專案**。
+    > 如果您的 IDE 設定為使用 Visual Basic 開發設定中，選擇**檔案** > **新專案**。
 
      [ **新增專案** ] 對話方塊隨即開啟。
 
@@ -43,7 +43,7 @@ ms.locfileid: "60106653"
      您將測試您指定的 SharePoint 網站上的模型。
 
     > [!IMPORTANT]
-    >  您必須為陣列方案部署專案，因為 BDC 模型支援陣列方案。
+    > 您必須為陣列方案部署專案，因為 BDC 模型支援陣列方案。
 
      建立空白的 SharePoint 專案。
 

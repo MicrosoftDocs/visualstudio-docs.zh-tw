@@ -13,12 +13,12 @@ ms.assetid: 9c399598-b9fa-4da7-84b5-defbf82e9335
 caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 77810368ea6eea8f31a660e6487091459962e0b4
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 4117e028611c2ff64102a97579d17d72f50407e0
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58943321"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63430159"
 ---
 # <a name="the-structure-of-the-contenttypesxml-file"></a>結構的 [Content_types].xml 檔案
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,7 +26,7 @@ ms.locfileid: "58943321"
 包含在 VSIX 封裝的內容類型的相關資訊。 Visual Studio 安裝套件，請使用 [Content_Types].xml 檔案，但它不會安裝檔案本身。  
   
 > [!NOTE]
->  雖然本主題只適用於 VSIX 封裝中所使用的 [有效].xml 檔案，但是 [Content_Types].xml 檔案類型會是一部分*開放封裝慣例 (OPC)* 標準。 如需詳細資訊，請參閱[OPC:新標準的封裝您的資料](http://go.microsoft.com/fwlink/?LinkID=148207)MSDN 網站上。  
+> 雖然本主題只適用於 VSIX 封裝中所使用的 [有效].xml 檔案，但是 [Content_Types].xml 檔案類型會是一部分*開放封裝慣例 (OPC)* 標準。 如需詳細資訊，請參閱[OPC:新標準的封裝您的資料](http://go.microsoft.com/fwlink/?LinkID=148207)MSDN 網站上。  
   
 ## <a name="attributes-and-elements"></a>屬性和項目  
  下列各節描述的根項目和其屬性和子項目。  

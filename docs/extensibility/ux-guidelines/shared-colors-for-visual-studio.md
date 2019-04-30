@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5ce63a9f5ab04748975521c225d207bee2b0937b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 7e873250488bff50519cc12060841110325a48e8
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60089546"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63430228"
 ---
 # <a name="shared-colors-for-visual-studio"></a>適用於 Visual Studio 的共用的色彩
 當您在設計 UI 使用通用的 Visual Studio shell 項目，或您想要介面項目保持一致與類似的功能時，使用套件定義檔案中現有的語彙基元名稱，以選擇並指派色彩。 這可確保您的 UI 與整體 Visual Studio 環境保持一致，而且會在加入或更新佈景主題時自動更新。
@@ -1413,7 +1413,7 @@ ms.locfileid: "60089546"
 #### <a name="BKMK_CommandDropDown"></a> 命令列下拉式清單
 
 > [!IMPORTANT]
->  下拉式清單與下拉式方塊類似，但沒有可編輯的文字區域。 如果下拉式清單包括可編輯的文字區域，使用的色彩語彙基元[命令列下拉式方塊](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md#BKMK_CommandComboBox)。
+> 下拉式清單與下拉式方塊類似，但沒有可編輯的文字區域。 如果下拉式清單包括可編輯的文字區域，使用的色彩語彙基元[命令列下拉式方塊](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md#BKMK_CommandComboBox)。
 
 ![命令列下拉式清單 （紅線）](../../extensibility/ux-guidelines/media/0303-042_dropdownredline.png "0303年 042_DropdownRedline")<br />命令列下拉式清單 （紅線）
 

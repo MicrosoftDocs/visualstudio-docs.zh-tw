@@ -16,12 +16,12 @@ caps.latest.revision: 36
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 0533ed4a4d1fc45b41f1e324b087cc0e249e1083
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 5617dc6cbe4b7ba096afe1f308d06e7f4aaf9c6a
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60100441"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63439654"
 ---
 # <a name="walkthrough-find-a-memory-leak-javascript"></a>逐步解說：找出記憶體流失 (JavaScript)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,7 +39,7 @@ ms.locfileid: "60100441"
 2. 選擇左窗格中的 [JavaScript]  ，再選擇 [Windows] 、[Windows 8] ，然後選擇 [通用]  或 [Windows Phone 應用程式] 。  
   
     > [!IMPORTANT]
-    >  本主題中的記憶體使用量結果是以 Windows 8 應用程式為測試對象。  
+    > 本主題中的記憶體使用量結果是以 Windows 8 應用程式為測試對象。  
   
 3. 在中間窗格選擇 [空白應用程式]  專案範本。  
   
@@ -55,7 +55,7 @@ ms.locfileid: "60100441"
     ```  
   
     > [!IMPORTANT]
-    >  如果您要使用 Windows 8.1 通用應用程式範本，必須更新 .Windows 及 .WindowsPhone 專案中的 HTML 與 CSS 程式碼。  
+    > 如果您要使用 Windows 8.1 通用應用程式範本，必須更新 .Windows 及 .WindowsPhone 專案中的 HTML 與 CSS 程式碼。  
   
 6. 開啟 default.css 並新增下列 CSS 程式碼：  
   
@@ -137,7 +137,7 @@ ms.locfileid: "60100441"
 1. 在 [偵錯]  工具列的 [開始偵錯]  清單中，選擇已更新專案的偵錯目標：其中一個 Windows Phone 模擬器或 [模擬器] 。  
   
    > [!TIP]
-   >  如果是 Windows 市集應用程式，您也可以選擇此清單內的 [ **本機電腦** ] 或 [ **遠端電腦** ]。 但使用模擬器 (emulator 或 simulator) 的優點是，您可以將其置於 Visual Studio 旁邊，方便在執行中的應用程式與 JavaScript 記憶體分析器之間切換。 如需詳細資訊，請參閱[從 Visual Studio 執行應用程式](../debugger/run-store-apps-from-visual-studio.md)及[在遠端電腦上執行 Windows 市集應用程式](../debugger/run-windows-store-apps-on-a-remote-machine.md)。  
+   > 如果是 Windows 市集應用程式，您也可以選擇此清單內的 [ **本機電腦** ] 或 [ **遠端電腦** ]。 但使用模擬器 (emulator 或 simulator) 的優點是，您可以將其置於 Visual Studio 旁邊，方便在執行中的應用程式與 JavaScript 記憶體分析器之間切換。 如需詳細資訊，請參閱[從 Visual Studio 執行應用程式](../debugger/run-store-apps-from-visual-studio.md)及[在遠端電腦上執行 Windows 市集應用程式](../debugger/run-windows-store-apps-on-a-remote-machine.md)。  
   
 2. 在 [偵錯] 功能表上選擇 [效能分析工具]。  
   
@@ -152,7 +152,7 @@ ms.locfileid: "60100441"
     當您選擇按鈕時，在 default.js 中運作的事件處理程式碼隨即導致記憶體流失。 我們將利用這個狀況進行診斷。  
   
    > [!TIP]
-   >  重複您要測試是否導致記憶體流失的情節，以便更容易篩選掉不必要的資訊 (例如在應用程式初始化或載入頁面期間加入至堆積的物件)。  
+   > 重複您要測試是否導致記憶體流失的情節，以便更容易篩選掉不必要的資訊 (例如在應用程式初始化或載入頁面期間加入至堆積的物件)。  
   
 5. 當應用程式仍在執行時，切換至 Visual Studio (Alt+Tab)。  
   
@@ -171,14 +171,14 @@ ms.locfileid: "60100441"
     ![基準快照和快照 2](../profiling/media/js-mem-app-snapshot2.png "JS_Mem_App_Snapshot2")  
   
    > [!NOTE]
-   >  擷取快照時，[Windows Phone 模擬器] 不會顯示應用程式的螢幕擷取畫面。  
+   > 擷取快照時，[Windows Phone 模擬器] 不會顯示應用程式的螢幕擷取畫面。  
   
 9. 切換至應用程式並再次選擇 [ **Leak Memory** ]。  
   
 10. 切換至 Visual Studio 並再次選擇 [ **擷取堆積快照** ]，這次是第三次。  
   
     > [!TIP]
-    >  您可以在這個工作流程中擷取第三張快照，藉此從基準快照到第二張快照中篩選掉與記憶體流失無關聯的變更。 例如，可能會有如更新頁首和頁尾等預期的變更，這將會對記憶體使用量產生一些變更，但可能與記憶體流失無關。  
+    > 您可以在這個工作流程中擷取第三張快照，藉此從基準快照到第二張快照中篩選掉與記憶體流失無關聯的變更。 例如，可能會有如更新頁首和頁尾等預期的變更，這將會對記憶體使用量產生一些變更，但可能與記憶體流失無關。  
   
      下圖顯示快照 #2 和快照 #3。  
   
@@ -191,7 +191,7 @@ ms.locfileid: "60100441"
     - 與快照 #1 相比，堆積大小 (左邊紅色向上箭號旁顯示的數字) 增加了數 KB。  
   
       > [!IMPORTANT]
-      >  堆積大小的記憶體使用量精確值視偵錯目標而定。  
+      > 堆積大小的記憶體使用量精確值視偵錯目標而定。  
   
     - 與快照 #1 相比，堆積中的物件數目 (右邊紅色向上箭號旁顯示的數字) 也增加了。 增加了一個物件 (+1) 並且未移除任何物件 (-0)。  
   
@@ -222,7 +222,7 @@ ms.locfileid: "60100441"
       此時可協助應用程式的一些知識：選擇**Leak Memory**按鈕時應該移除 DIV 元素並加入新元素，因此程式碼似乎不是正常運作 （也就是流失記憶體）。 下一節會說明如何修正這個問題。  
   
     > [!TIP]
-    >  在某些情況下，找出與 `Global` 物件有關的物件可能有助於識別該物件。 若要這麼做，請開啟識別項的捷徑功能表，然後選擇 [ **在根檢視中顯示**]。  
+    > 在某些情況下，找出與 `Global` 物件有關的物件可能有助於識別該物件。 若要這麼做，請開啟識別項的捷徑功能表，然後選擇 [ **在根檢視中顯示**]。  
   
 ## <a name="FixingMemory"></a> 修正記憶體問題  
   

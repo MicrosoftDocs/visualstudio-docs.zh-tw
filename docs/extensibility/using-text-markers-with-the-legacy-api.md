@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d6a3807dc91b129ba4b337f57e3f857e4f379581
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.openlocfilehash: b443c4530a71897d11731c023af57215eac8706a
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56696685"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63434195"
 ---
 # <a name="using-text-markers-with-the-legacy-api"></a>使用舊版 API 中的文字標記
 文字標記是文字的浮動的一組可能會影響顯示的緩衝區中和文字的區域的行為。 標記包含中斷點、 書籤、 波浪底線和唯讀區域。 文字標記是基本上不同於語法著色。 語法著色是文字的快速的方式進行通訊區域相關聯的語言語法。 當 Windows 在速度都很重要時，會重新繪製畫面中，通常要求語法著色。 語法標色變更文字的色彩。 文字標記可以變更許多其他的文字內容。 文字標記可以 「 浮動 」，並套用特殊的行為和著色。
@@ -23,11 +23,11 @@ ms.locfileid: "56696685"
  由於文字標記相關聯的效能額外負荷的情況下，不會建立許多標記文字緩衝區。 每次使用者編輯緩衝區的內容時，就會更新每個標記。
 
 > [!NOTE]
->  使用者可以變更顯示的標記類型，但其圖案與樣式不使用的色彩。 如需詳細資訊，請參閱 <<c0> [ 字型和色彩、 環境、 選項對話方塊](../ide/reference/fonts-and-colors-environment-options-dialog-box.md)。
+> 使用者可以變更顯示的標記類型，但其圖案與樣式不使用的色彩。 如需詳細資訊，請參閱 <<c0> [ 字型和色彩、 環境、 選項對話方塊](../ide/reference/fonts-and-colors-environment-options-dialog-box.md)。
 
 ## <a name="related-topics"></a>相關主題
 
-| 標題 | 描述 |
+| 標題 | 說明 |
 | - | - |
 | [如何：新增標準文字標記](../extensibility/how-to-add-standard-text-markers.md) | 描述如何將所提供的標準文字標記類型[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]核心編輯器文字檢視。 |
 | [如何：實作錯誤標記](../extensibility/how-to-implement-error-markers.md) | 描述如何實作的執行個體[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]用以使用紅色波浪底線指出錯誤的標記。 |

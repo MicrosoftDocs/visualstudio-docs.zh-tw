@@ -6,12 +6,12 @@ ms.assetid: 2cfcad00-352c-4161-814c-f5ae32d8ada8
 caps.latest.revision: 19
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: b1e34fa5d4f49d0dfa415e0ac47e55cea236307e
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 646d8949004f44041fe75d1c6fed2e6f989b92c9
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60043306"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63435291"
 ---
 # <a name="setup-and-install"></a>設定和安裝
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,7 +27,7 @@ ms.locfileid: "60043306"
 如果您在執行此設定和安裝之後遇到使用 Xamarin 的問題，請在 [forums.xamarin.com](http://forums.xamarin.com/) 上提出您的問題。
   
 > [!NOTE]
->  截至 2016 年 3 月 31 日，所有 Visual Studio 版本中都會免費隨附所有的 Xamarin，不需要個別授權。 適用於 Mac 的 Xamarin Studio 社群也是對於學生、OSS 開發人員和小型團隊而言，也是一項免費資源。 請注意，如果您目前安裝的 Visual Studio 是以較早的 Xamarin 授權所設定，則您必須將 Xamarin 更新到版本 4.0.3.214 或更高版本。 若要執行此動作，移至 [工具] > [選項] > [Xamarin] > [其他]、按一下 [立即檢查] 連結，然後下載 4.0.3.214 更新。 當您重新啟動 Visual Studio 時，移至 [工具] > [Xamarin 帳戶...]，您應該會看到更新的狀態。  
+> 截至 2016 年 3 月 31 日，所有 Visual Studio 版本中都會免費隨附所有的 Xamarin，不需要個別授權。 適用於 Mac 的 Xamarin Studio 社群也是對於學生、OSS 開發人員和小型團隊而言，也是一項免費資源。 請注意，如果您目前安裝的 Visual Studio 是以較早的 Xamarin 授權所設定，則您必須將 Xamarin 更新到版本 4.0.3.214 或更高版本。 若要執行此動作，移至 [工具] > [選項] > [Xamarin] > [其他]、按一下 [立即檢查] 連結，然後下載 4.0.3.214 更新。 當您重新啟動 Visual Studio 時，移至 [工具] > [Xamarin 帳戶...]，您應該會看到更新的狀態。  
   
  **本主題內容：**  
   
@@ -56,7 +56,7 @@ ms.locfileid: "60043306"
 ## <a name="windows"></a> Windows 設定 (Visual Studio 和 Xamarin)  
   
 > [!TIP]
->  這些指示適用於 Visual Studio 2015。 若要使用 Xamarin 搭配 Visual Studio 2013 (Update 2 是必要項)，請依照[直接安裝 Xamarin (英文)](https://developer.xamarin.com/guides/cross-platform/getting_started/requirements/#install) (xamarin.com) 的指示執行。  
+> 這些指示適用於 Visual Studio 2015。 若要使用 Xamarin 搭配 Visual Studio 2013 (Update 2 是必要項)，請依照[直接安裝 Xamarin (英文)](https://developer.xamarin.com/guides/cross-platform/getting_started/requirements/#install) (xamarin.com) 的指示執行。  
   
 1. [下載並啟動任何 Visual Studio 2015 版本的安裝程式](https://www.visualstudio.com/downloads/download-visual-studio-vs.aspx) (Community、Professional 或 Enterprise)。 Visual Studio 2015 Community 是免費版本，而 Professional 和 Enterprise 版則可試用 30 天，之後您必須購買授權。  
   
@@ -83,7 +83,7 @@ ms.locfileid: "60043306"
     ![在 Visual Studio 選項中檢查 Xamarin 更新](../cross-platform/media/cross-plat-xamarin-setup-3.png "跨平台 Xamarin 設定 3")  
   
    > [!NOTE]
-   >  如先前所述，請確定將 Xamarin 更新為版本 4.0.3.214 或更高版本，以避免發生舊版 Xamarin 授權的問題。  
+   > 如先前所述，請確定將 Xamarin 更新為版本 4.0.3.214 或更高版本，以避免發生舊版 Xamarin 授權的問題。  
 
    如果您未在 [工具] > [選項] 中看見 Xamarin 的選項，請仔細檢查您的安裝，或嘗試重新啟動 Visual Studio。 您也可以在 [選項] 對話方塊中搜尋 Xamarin。
       

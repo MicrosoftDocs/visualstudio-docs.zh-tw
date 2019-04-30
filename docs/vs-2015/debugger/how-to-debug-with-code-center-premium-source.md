@@ -17,12 +17,12 @@ caps.latest.revision: 26
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 88644f3bf768f1b3467467a31edbd83e8e5f151c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: db9a3e08e14e7fadca6df9e32361c0b042f565e9
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60039873"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438326"
 ---
 # <a name="how-to-debug-with-code-center-premium-source"></a>HOW TO：使用 Code Center Premium 來源進行偵錯
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -56,12 +56,12 @@ ms.locfileid: "60039873"
      `src=https://codepremium.msdn.microsoft.com/source/Visual%20Studio%202010/SP1/`  
   
    > [!NOTE]
-   >  請務必包含結尾斜線<strong>/</strong> 路徑的結尾。  
+   > 請務必包含結尾斜線<strong>/</strong> 路徑的結尾。  
   
      將這些位置移至清單頂端，以確保優先載入這些符號。  
   
    > [!NOTE]
-   >  這些 Code Center Premium 位置必須先列出，才能讓它們成為優先載入的位置。 在 Visual Studio 2010 中，您無法將上述任何伺服器移**Microsoft 符號伺服器**項目，這就是為什麼您必須清除此核取方塊。  
+   > 這些 Code Center Premium 位置必須先列出，才能讓它們成為優先載入的位置。 在 Visual Studio 2010 中，您無法將上述任何伺服器移**Microsoft 符號伺服器**項目，這就是為什麼您必須清除此核取方塊。  
    > 
    >  若要在偵錯工作階段期間從 Microsoft 符號載入符號，請執行下列作業：  
    > 
@@ -113,7 +113,7 @@ ms.locfileid: "60039873"
     `https://codepremium.msdn.microsoft.com/source/Visual%20Studio%202010/SP1/`  
   
    > [!NOTE]
-   >  請務必包含結尾斜線<strong>/</strong> 路徑的結尾。  
+   > 請務必包含結尾斜線<strong>/</strong> 路徑的結尾。  
   
 4. 針對方案中的每個 Managed 專案執行下列作業  
   

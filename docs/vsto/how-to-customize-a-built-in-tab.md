@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 5a686d2a43fed0fdb8c5c1e8f21d4b35fd63f3a6
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 8e6f2d0da758a8897f28a22dec8adf1f8e05a36c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60075658"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63419452"
 ---
 # <a name="how-to-customize-a-built-in-tab"></a>HOW TO：自訂內建索引標籤
   您可在內建索引標籤加入群組和控制項。內建索引標籤是已位在 Microsoft Office 應用程式功能區的索引標籤。 例如，**資料** 索引標籤是在 Excel 中的內建索引標籤。 當您建立自訂群組時，它會出現在索引標籤的最末端，但是您可以在索引標籤上任意移動群組。
@@ -26,14 +26,14 @@ ms.locfileid: "60075658"
  [!INCLUDE[appliesto_ribbon](../vsto/includes/appliesto-ribbon-md.md)]
 
 > [!NOTE]
->  您可以在內建索引標籤加入群組，但無法從內建索引標籤移除內建群組。
+> 您可以在內建索引標籤加入群組，但無法從內建索引標籤移除內建群組。
 
 ### <a name="to-add-groups-to-a-built-in-tab"></a>在內建索引標籤加入群組
 
 1. 以滑鼠右鍵按一下功能區程式碼檔案中的**方案總管**，然後按一下**檢視表設計工具**。
 
     > [!NOTE]
-    >  如果功能區程式碼檔案不會出現在**方案總管**，您必須新增**功能區項目**至您的專案。 請參閱[如何：開始自訂功能區](../vsto/how-to-get-started-customizing-the-ribbon.md)。
+    > 如果功能區程式碼檔案不會出現在**方案總管**，您必須新增**功能區項目**至您的專案。 請參閱[如何：開始自訂功能區](../vsto/how-to-get-started-customizing-the-ribbon.md)。
 
 2. 在功能區設計工具中，任何索引標籤上按一下滑鼠右鍵，然後按一下**屬性**。
 
@@ -48,7 +48,7 @@ ms.locfileid: "60075658"
 5. 從**Office 功能區控制項**索引標籤**工具箱**，將群組拖曳至 [] 索引標籤。
 
     > [!NOTE]
-    >  內建群組不會顯示在設計工具中。 因此，判斷是否使用內建索引標籤的唯一方法是檢查**ControlId**  索引標籤的屬性。
+    > 內建群組不會顯示在設計工具中。 因此，判斷是否使用內建索引標籤的唯一方法是檢查**ControlId**  索引標籤的屬性。
 
 ### <a name="to-position-groups-on-a-built-in-tab"></a>將群組放置在內建索引標籤
 

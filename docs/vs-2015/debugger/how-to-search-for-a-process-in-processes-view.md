@@ -12,12 +12,12 @@ caps.latest.revision: 7
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 0accb5165b1aded6318012ffb07755a63222283c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: e39168e36e9540ec8c5e23a9030d996b81c4097c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58940370"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63431721"
 ---
 # <a name="how-to-search-for-a-process-in-processes-view"></a>HOW TO：在處理序檢視中搜尋處理序
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,10 +37,10 @@ ms.locfileid: "58940370"
 4. 清除，您不想指定值的任何欄位。  
   
    > [!TIP]
-   >  若要尋找模組所擁有的所有處理程序，請清除**程序**方塊，然後輸入中的模組名稱**模組** 方塊中。 然後使用**尋找下一個**繼續搜尋處理序。  
+   > 若要尋找模組所擁有的所有處理程序，請清除**程序**方塊，然後輸入中的模組名稱**模組** 方塊中。 然後使用**尋找下一個**繼續搜尋處理序。  
   
 5. 選擇**向上**或是**向下**初始搜尋的方向。  
   
-6. 按一下 [確定 **Deploying Office Solutions**]。  
+6. 按一下 [確定] 。  
   
    如果找到相符的處理程序，它會以醒目提示**處理序檢視**視窗。

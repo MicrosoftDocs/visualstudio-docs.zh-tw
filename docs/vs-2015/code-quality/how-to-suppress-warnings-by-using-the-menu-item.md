@@ -12,18 +12,18 @@ caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: a8fbc314580b106f5e1e8dae5a0a78d043d3940b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 5097ecb0f7458e739def275d616eb344a2a6db0d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60080900"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63426560"
 ---
 # <a name="how-to-suppress-warnings-by-using-the-menu-item"></a>HOW TO：使用功能表項目隱藏警告
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 注意]
->  在來源中隱藏項目不支援適用於網站專案。  
+> 在來源中隱藏項目不支援適用於網站專案。  
   
  若要隱藏程式碼分析警告，您可以使用 [程式碼分析] 視窗。 隱藏警告不同時停用它。 當您隱藏警告時，它只適用於特定的執行個體的違規。 在 [錯誤清單] 視窗中仍會報告相同的警告的其他違規。  
   
@@ -42,4 +42,4 @@ ms.locfileid: "60080900"
      隱藏特定警告，並加上刪除線的 [程式碼分析] 視窗中出現的警告。  
   
 > [!NOTE]
->  沒有為目標的隱藏項目會出現在全域隱藏項目檔案。
+> 沒有為目標的隱藏項目會出現在全域隱藏項目檔案。

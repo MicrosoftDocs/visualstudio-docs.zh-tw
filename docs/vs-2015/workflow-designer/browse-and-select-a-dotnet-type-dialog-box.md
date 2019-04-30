@@ -12,12 +12,12 @@ caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: b4c02c7dbce09383b5fc3cb1fd7f5eec6e9116b1
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: e7a4169d57cd5b004ded9fbc9b8a16bf7537754b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60079833"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63417576"
 ---
 # <a name="browse-and-select-a-net-type-dialog-box"></a>瀏覽並選取 .NET 類型對話方塊
 在 [**屬性**] 視窗、 對話方塊，或是如變數設計工具，當您選取的設計工具**Vyhledat Typy...** 從清單中的資料型別，是**瀏覽並選取.NET 型別**對話方塊 （簡稱為 「 型別瀏覽器 」）。 在這個對話方塊中，您可以從組件與專案的樹狀檢視中選擇型別。  
@@ -31,7 +31,7 @@ ms.locfileid: "60079833"
 - 在 <xref:System.Activities.Statements.TryCatch> 活動上加入 catch 時。  
   
 > [!NOTE]
->  型別瀏覽器可以顯示 Visual Basic 不規則陣列型別，而不是多維陣列型別。 請參閱[不規則陣列](http://go.microsoft.com/fwlink/?LinkId=195226)並[多維陣列](http://go.microsoft.com/fwlink/?LinkId=195227)如需詳細資訊。  
+> 型別瀏覽器可以顯示 Visual Basic 不規則陣列型別，而不是多維陣列型別。 請參閱[不規則陣列](http://go.microsoft.com/fwlink/?LinkId=195226)並[多維陣列](http://go.microsoft.com/fwlink/?LinkId=195227)如需詳細資訊。  
   
 ## <a name="selecting-a-value-or-reference-type-from-the-type-browser"></a>從型別瀏覽器選取值或參考型別  
   

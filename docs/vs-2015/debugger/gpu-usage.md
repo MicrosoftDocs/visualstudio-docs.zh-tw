@@ -9,12 +9,12 @@ caps.latest.revision: 7
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: eef55dd0e5af443379b2685ccab9bd2de8074e0d
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: b7dee579f726a1edfc81e1f3e1ec62bf7d8beba4
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60066704"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437960"
 ---
 # <a name="gpu-usage"></a>GPU 使用量
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,7 +31,7 @@ ms.locfileid: "60066704"
 - 支援所需計時檢測的 GPU 和驅動程式。  
   
   > [!NOTE]
-  >  如需所支援硬體和驅動程式的詳細資訊，請參閱本文件結尾的[硬體和驅動程式支援](#hwsupport)。  
+  > 如需所支援硬體和驅動程式的詳細資訊，請參閱本文件結尾的[硬體和驅動程式支援](#hwsupport)。  
   
   如需圖形診斷需求的詳細資訊，請參閱[使用者入門](../debugger/getting-started-with-visual-studio-graphics-diagnostics.md)。  
   
@@ -47,7 +47,7 @@ ms.locfileid: "60066704"
     ![選擇您要使用的診斷工具。](../debugger/media/gfx-diag-diagsession-tools.png "gfx_diag_diagsession_tools")  
   
    > [!NOTE]
-   >  並非所有效能及診斷工具都可以同時使用。  
+   > 並非所有效能及診斷工具都可以同時使用。  
   
 3. 選擇 [效能及診斷] 中樞底部的藍色 [開始] 按鈕，以使用您選取的工具執行應用程式。  
   
@@ -110,7 +110,7 @@ ms.locfileid: "60066704"
 |**執行緒 ID**|事件的來源執行緒 ID。|  
   
 > [!IMPORTANT]
->  事件屬性需要 Windows 8.1。 此外，如果您的 GPU 或驅動程式不支援所需的檢測功能，則所有事件都會顯示為「未歸屬」。 如果您遇到這個問題，請務必更新您的 GPU 驅動程式，然後重試。 如需詳細資訊，請參閱下面的[硬體和驅動程式支援](#hwsupport)。  
+> 事件屬性需要 Windows 8.1。 此外，如果您的 GPU 或驅動程式不支援所需的檢測功能，則所有事件都會顯示為「未歸屬」。 如果您遇到這個問題，請務必更新您的 GPU 驅動程式，然後重試。 如需詳細資訊，請參閱下面的[硬體和驅動程式支援](#hwsupport)。  
   
 ## <a name="gpu-usage-settings"></a>GPU 使用量設定  
  您可以設定 GPU 使用量工具延後收集程式碼剖析資訊，而不是在應用程式啟動時立即開始收集資訊。 因為程式碼剖析資訊的大小可能很大，所以這適用於您知道應用程式效能變慢之後不再出現時。  
@@ -126,7 +126,7 @@ ms.locfileid: "60066704"
      ![設定 GPU 使用量收集的開始時間](../debugger/media/gfx-diag-gpu-usage-config.png "gfx_diag_gpu_usage_config")  
   
 > [!IMPORTANT]
->  Direct3D 12 應用程式目前不支援延後程式碼剖析。  
+> Direct3D 12 應用程式目前不支援延後程式碼剖析。  
   
  如果使用這項設定延後收集程式碼剖析資訊，則使用 GPU 使用量工具執行您的應用程式時，[GPU 使用量工具] 視窗下半部中的額外連結會變成可用。 若要開始收集程式碼剖析資訊，請選擇 [開始收集其他詳細 GPU 使用量資料] 訊息中的 [開始] 連結。  
   

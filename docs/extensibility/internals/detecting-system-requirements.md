@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4232a057c97d3d457a60d97fa000090c18428f66
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: c65df25645a13f58dce9ddec69acf6834a77210f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60050494"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63420697"
 ---
 # <a name="detect-system-requirements"></a>偵測系統需求
 VSPackage 才能運作，除非已安裝 Visual Studio。 當您使用 Microsoft Windows Installer 管理 VSPackage 的安裝時，您可以設定以偵測是否已安裝 Visual Studio 安裝程式。 您也可以設定以檢查系統有任何其他需求，例如，特定版本的 Windows 或特定的 RAM 數量。
@@ -33,7 +33,7 @@ VSPackage 才能運作，除非已安裝 Visual Studio。 當您使用 Microsoft
 安裝較新版本時，該版本的登錄機碼會與較早版本也加入。 也就是，如果安裝 Enterprise edition，則**安裝**金鑰設為*1*企業的需求，以及 Professional 及 Community 版。 因此，您需要只會檢查您所需要的最新版本。
 
 > [!NOTE]
->  在登錄編輯程式的 64 位元版本，32 位元的金鑰會顯示下**HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\\**。 Visual Studio 金鑰受到**HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\DevDiv\vs\Servicing\\**。
+> 在登錄編輯程式的 64 位元版本，32 位元的金鑰會顯示下**HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\\**。 Visual Studio 金鑰受到**HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\DevDiv\vs\Servicing\\**。
 
 |產品|Key|
 |-------------|---------|

@@ -12,12 +12,12 @@ caps.latest.revision: 42
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 046ae576880c6749c6bb033f66124c0085dfab16
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 5bb3632e1ed7bf07e236322700ba8553b53a75cb
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60057156"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63426607"
 ---
 # <a name="in-source-suppression-overview"></a>原始檔中隱藏項目概觀
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ ms.locfileid: "60057156"
  您不應該使用在原始程式檔的隱藏項目上的發行組建，以避免不小心傳送來源在隱藏項目中繼資料。 在原始程式檔隱藏項目處理成本，因為您的應用程式的效能也會降低包含在原始程式檔隱藏項目中繼資料。  
   
 > [!NOTE]
->  您沒有交給程式碼這些屬性自行。 如需詳細資訊，請參閱[如何：使用功能表項目隱藏警告](../code-quality/how-to-suppress-warnings-by-using-the-menu-item.md)。 功能表項目不是適用於C++程式碼。  
+> 您沒有交給程式碼這些屬性自行。 如需詳細資訊，請參閱[如何：使用功能表項目隱藏警告](../code-quality/how-to-suppress-warnings-by-using-the-menu-item.md)。 功能表項目不是適用於C++程式碼。  
   
 ## <a name="suppressmessage-attribute"></a>SuppressMessage 屬性  
  當您以滑鼠右鍵按一下中的程式碼分析警告**錯誤清單**，然後按一下 **隱藏訊息**，則**SuppressMessage**屬性會加入您的程式碼或為專案的全域隱藏項目檔案。  
@@ -109,7 +109,7 @@ CA_SUPPRESS_MESSAGE("Rule Category", "Rule Id", Justification = "Justification",
  `[module: SuppressMessage("Microsoft.Design", "CA1020:AvoidNamespacesWithFewTypes", Scope = "namespace", Target = "MyNamespace")]`  
   
 > [!NOTE]
->  當您隱藏警告，其中含有命名空間範圍時，它會隱藏對本身的命名空間的警告。 它不會抑制警告針對命名空間內的型別。  
+> 當您隱藏警告，其中含有命名空間範圍時，它會隱藏對本身的命名空間的警告。 它不會抑制警告針對命名空間內的型別。  
   
  可以表示任何隱藏項目，藉由指定明確的範圍。 這些隱藏項目必須即時的全域層級。 您無法指定成員層級隱藏項目來裝飾型別。  
   
@@ -118,7 +118,7 @@ CA_SUPPRESS_MESSAGE("Rule Category", "Rule Id", Justification = "Justification",
  `[module: SuppressMessage("Microsoft.Design", "CA1055:AbstractTypesDoNotHavePublicConstructors", Scope="member", Target="Microsoft.Tools.FxCop.Type..ctor()")]`  
   
 > [!NOTE]
->  目標永遠會包含完整項目名稱。  
+> 目標永遠會包含完整項目名稱。  
   
 ## <a name="global-suppression-file"></a>全域隱藏項目檔  
  全域隱藏項目檔案會維護的全域層級隱藏項目或未指定目標的隱藏項目會隱藏項目。 比方說，隱藏項目組件層級的違規會儲存此檔案中。 此外，有些 ASP.NET 隱藏項目會儲存在這個檔案中，因為專案層級設定不適用於表單後面的程式碼。 建立全域隱藏項目並將其加入您的專案，您選取第一次**專案隱藏項目檔中的流程範本**選項**隱藏訊息**命令，在 [錯誤清單] 視窗。 如需詳細資訊，請參閱[如何：使用功能表項目隱藏警告](../code-quality/how-to-suppress-warnings-by-using-the-menu-item.md)。  

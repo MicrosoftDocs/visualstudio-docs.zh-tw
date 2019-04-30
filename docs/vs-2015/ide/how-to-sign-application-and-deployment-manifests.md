@@ -18,12 +18,12 @@ caps.latest.revision: 61
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ef782929b24d6f5e06c8e64aec53763481c503eb
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: ddeb3fa5414208c610a7a21e176d55b0b0f985b5
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60051697"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63435185"
 ---
 # <a name="how-to-sign-application-and-deployment-manifests"></a>HOW TO：簽署應用程式和部署資訊清單
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,7 +37,7 @@ ms.locfileid: "60051697"
  如需建立金鑰檔的資訊，請參閱[如何：建立公開/私密金鑰組](http://msdn.microsoft.com/library/05026813-f3bd-4d7c-9e0b-fc588eb3d114)。  
   
 > [!NOTE]
->  [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 只支援副檔名為 .pfx 的個人資訊交換 (PFX) 金鑰檔。 不過，您可以在專案屬性的 [簽署] 頁面中，按一下 [從存放區選取]，即可從目前使用者的 Windows 憑證存放區選取其他類型的憑證。  
+> [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 只支援副檔名為 .pfx 的個人資訊交換 (PFX) 金鑰檔。 不過，您可以在專案屬性的 [簽署] 頁面中，按一下 [從存放區選取]，即可從目前使用者的 Windows 憑證存放區選取其他類型的憑證。  
   
 ### <a name="to-sign-application-and-deployment-manifests-using-a-certificate"></a>使用憑證簽署應用程式和部署資訊清單  
   
@@ -48,7 +48,7 @@ ms.locfileid: "60051697"
      [選取憑證] 對話方塊隨即出現，並顯示 Windows 憑證存放區的內容。  
   
     > [!TIP]
-    >  如果您按一下 [按一下這裡檢視憑證屬性]，則會顯示 [憑證詳細資料] 對話方塊。 這個對話方塊包含憑證的詳細資訊與其他選項。 您可以按一下 [憑證] 檢視其他說明資訊。  
+    > 如果您按一下 [按一下這裡檢視憑證屬性]，則會顯示 [憑證詳細資料] 對話方塊。 這個對話方塊包含憑證的詳細資訊與其他選項。 您可以按一下 [憑證] 檢視其他說明資訊。  
   
 3. 選取您想要用來簽署資訊清單的憑證。  
   
@@ -65,7 +65,7 @@ ms.locfileid: "60051697"
 3. 在 [選取檔案] 對話方塊中，瀏覽至您要使用的金鑰檔 (.pfx) 位置，然後按一下 [開啟]。  
   
     > [!NOTE]
-    >  此選項僅支援具有 .pfx 副檔名的檔案。 如果您的金鑰檔或憑證是其他格式，請將它儲存在 Windows 憑證存放區，並遵循上一個程序所述選取該憑證。 選取的憑證用途應包含程式碼簽署。  
+    > 此選項僅支援具有 .pfx 副檔名的檔案。 如果您的金鑰檔或憑證是其他格式，請將它儲存在 Windows 憑證存放區，並遵循上一個程序所述選取該憑證。 選取的憑證用途應包含程式碼簽署。  
   
      [輸入密碼以開啟檔案] 對話方塊隨即出現。 (如果 .pfx 檔案是儲存在您的 Windows 憑證存放區，或未受密碼保護，系統就不會提示您輸入密碼)。  
   
@@ -83,7 +83,7 @@ ms.locfileid: "60051697"
  針對 .exe 應用程式，您可以選擇是否要簽署 ClickOnce 資訊清單。 下列程序說明如何產生未簽署的 ClickOnce 資訊清單。  
   
 > [!IMPORTANT]
->  未簽署的資訊清單可以簡化應用程式的開發和測試作業。 不過，未簽署的資訊清單會在生產環境中帶來很大的安全性風險。 因此，只有當您是在內部網路 (其與網際網路或其他來源的惡意程式碼完全隔離) 的電腦上執行 ClickOnce 應用程式時，才建議使用未簽署的資訊清單。  
+> 未簽署的資訊清單可以簡化應用程式的開發和測試作業。 不過，未簽署的資訊清單會在生產環境中帶來很大的安全性風險。 因此，只有當您是在內部網路 (其與網際網路或其他來源的惡意程式碼完全隔離) 的電腦上執行 ClickOnce 應用程式時，才建議使用未簽署的資訊清單。  
   
  除非已產生的雜湊中特別排除一或多個檔案，否則 ClickOnce 預設會自動簽署資訊清單。 換句話說，如果所有檔案都包含在雜湊中，發行應用程式時即會產生已簽署的資訊清單，即使清除 [簽署 ClickOnce 資訊清單] 核取方塊亦同。  
   
@@ -104,7 +104,7 @@ ms.locfileid: "60051697"
 2. 開啟 [應用程式檔案] 對話方塊，針對要從產生的雜湊中排除的檔案，將其 [雜湊] 設為 [排除]。  
   
     > [!NOTE]
-    >  從雜湊排除檔案時，會將 ClickOnce 設為停用自動簽署資訊清單，您即不需要先使用簽署的資訊清單來發行 (如先前程序所示)。  
+    > 從雜湊排除檔案時，會將 ClickOnce 設為停用自動簽署資訊清單，您即不需要先使用簽署的資訊清單來發行 (如先前程序所示)。  
   
 3. 發行應用程式。  
   

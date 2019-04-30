@@ -10,12 +10,12 @@ ms.assetid: e9f715dc-12b7-439b-bdf3-f3dc75e62f1c
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 853a3f8db3623156e000c9360981933091ef9afd
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 85e466e7ebb6294a77e89040260c16fe0043e372
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60106958"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437674"
 ---
 # <a name="authoring-vsct-files"></a>撰寫。Vsct 檔案
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -86,7 +86,7 @@ ms.locfileid: "60106958"
     設定`guid`並`id`屬性`Menu`項目，然後再把`type`屬性設定為您想要的類型。 您也可以設定`priority`屬性，以在父群組中建立功能表的相對位置。  
   
    > [!NOTE]
-   >  `priority`屬性不適用於工具列和快顯功能表。  
+   > `priority`屬性不適用於工具列和快顯功能表。  
   
 2. 命令群組功能表和工具列的直接子系所都必須裝載 Visual Studio IDE 中的所有命令。 如果您要新增新的功能表或工具列的 ide，這些必須包含新的命令群組。 您也可以新增至現有的功能表和工具列命令群組，以便您可以以視覺化方式分組您的命令。  
   
@@ -99,14 +99,14 @@ ms.locfileid: "60106958"
    1. 設定`guid`並`id`每個屬性`Button`項目，然後再把`type`屬性設定為想要的按鈕類型。 您也可以設定`priority`屬性，以在父群組中建立命令的相對位置。  
   
       > [!NOTE]
-      >  使用`type="button"`標準功能表命令和工具列上的按鈕。  
+      > 使用`type="button"`標準功能表命令和工具列上的按鈕。  
   
    2. 在 `Button`項目，新增[字串](../../extensibility/strings-element.md)包含的項目[ButtonText](../../extensibility/buttontext-element.md)項目和[CommandName](../../extensibility/commandname-element.md)項目。 `ButtonText`項目 功能表項目或工具列按鈕的工具提示中提供的文字標籤。 `CommandName`項目會提供要在命令中也使用的命令名稱。  
   
    3. 如果您的命令將會有圖示，建立[ 圖示](../../extensibility/icon-element.md)中的項目`Button`項目，並將其`guid`並`id`屬性加入`Bitmap`圖示的項目。  
   
       > [!NOTE]
-      >  工具列按鈕必須有圖示。  
+      > 工具列按鈕必須有圖示。  
   
       如需詳細資訊，請參閱[Menucommand 對比。OleMenuCommands](../../misc/menucommands-vs-olemenucommands.md)。  
   

@@ -23,23 +23,23 @@ caps.latest.revision: 28
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 35a5fc722a0d7b2ececa4aaa198381cdd3390a7b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 529fd979912d1743967109a11933140b482c2caf
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58944264"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63435716"
 ---
 # <a name="how-to-debug-optimized-code"></a>HOW TO：對最佳化程式碼進行偵錯
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 注意]
->  根據您目前使用的設定或版本，您所看到的對話方塊與功能表命令可能會與 [說明] 中描述的不同。 若要變更設定，請從 [工具] 功能表中選擇 [匯入和匯出設定]。 如需詳細資訊，請參閱 [在 Visual Studio 中自訂開發設定](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)  
+> 根據您目前使用的設定或版本，您所看到的對話方塊與功能表命令可能會與 [說明] 中描述的不同。 若要變更設定，請從 [工具] 功能表中選擇 [匯入和匯出設定]。 如需詳細資訊，請參閱 [在 Visual Studio 中自訂開發設定](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)  
   
 > [!NOTE]
->  [/Zo (增強最佳化的偵錯)](http://msdn.microsoft.com/library/eea8d89a-7fe0-4fe1-86b2-7689bbebbd7f) 編譯器選項 (在 Visual Studio Update 3 引入) 會針對最佳化程式碼 (不使用 **/Od** 編譯器選項建置的專案) 產生更豐富的偵錯資訊。 請參閱 [/O 選項 (最佳化程式碼)](http://msdn.microsoft.com/library/77997af9-5555-4b3d-aa57-6615b27d4d5d))。 這包括改善對於本機變數和內嵌函式的偵錯支援。  
+> [/Zo (增強最佳化的偵錯)](http://msdn.microsoft.com/library/eea8d89a-7fe0-4fe1-86b2-7689bbebbd7f) 編譯器選項 (在 Visual Studio Update 3 引入) 會針對最佳化程式碼 (不使用 **/Od** 編譯器選項建置的專案) 產生更豐富的偵錯資訊。 請參閱 [/O 選項 (最佳化程式碼)](http://msdn.microsoft.com/library/77997af9-5555-4b3d-aa57-6615b27d4d5d))。 這包括改善對於本機變數和內嵌函式的偵錯支援。  
 >   
->  使用 **/Zo** 編譯器選項時，會停用 [編輯後繼續](../debugger/edit-and-continue-visual-csharp.md)。  
+> 使用 **/Zo** 編譯器選項時，會停用 [編輯後繼續](../debugger/edit-and-continue-visual-csharp.md)。  
   
  當編譯器最佳化程式碼時，它會重新調整位置並重新組織指令。 這會產生較有效率的已編譯程式碼。 因為這種重新安排，偵錯工具不一定能辨識對應到一組指令的原始程式碼。  
   
@@ -77,10 +77,10 @@ ms.locfileid: "58944264"
   
 8. 如果您選擇 `Custom` 的 `Optimization` 選項，現在就可以為其他顯示在屬性清單裡的任一屬性設定其選項。  
   
-9. 選取 [組態屬性 | C/c + +，命令列] 節點的 [專案屬性] 頁面中，並新增`(` [/Zo](http://msdn.microsoft.com/library/eea8d89a-7fe0-4fe1-86b2-7689bbebbd7f) `)`來**其他選項**文字方塊。  
+9. 選取 [組態屬性 | C /C++、 命令列] 節點的 [專案屬性] 頁面中，並新增`(` [/Zo](http://msdn.microsoft.com/library/eea8d89a-7fe0-4fe1-86b2-7689bbebbd7f) `)`到**其他選項**文字方塊。  
   
     > [!WARNING]
-    >  `/Zo` 需要 Visual Studio 2013 Update 3 或更新版本。  
+    > `/Zo` 需要 Visual Studio 2013 Update 3 或更新版本。  
     >   
     >  新增 `/Zo` 將會停用 [編輯後繼續](../debugger/edit-and-continue-visual-csharp.md)。  
   

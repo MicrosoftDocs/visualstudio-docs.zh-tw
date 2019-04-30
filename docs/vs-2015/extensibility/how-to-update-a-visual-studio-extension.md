@@ -12,12 +12,12 @@ ms.assetid: 93f79774-7b79-4dd6-94ad-13698f72c257
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 87bfa86585d384c7940d5a5bcf31d07579bc75a1
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 0d1464cdd2be79cd93a3e98bcf8769e8f4b8b89f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60064676"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63435889"
 ---
 # <a name="how-to-update-a-visual-studio-extension"></a>HOW TO：更新 Visual Studio 延伸模組
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,7 +45,7 @@ ms.locfileid: "60064676"
 1. 在 Visual Studio 中，開啟您想要更新的擴充功能的解決方案。 進行變更。
 
     > [!IMPORTANT]
-    >  不帶正負號不會自動更新所有使用者延伸模組。 您應一律登入您的擴充功能。
+    > 不帶正負號不會自動更新所有使用者延伸模組。 您應一律登入您的擴充功能。
 
 2. 在 [**方案總管] 中**，開啟 source.extension.manifest。
 
@@ -60,7 +60,7 @@ ms.locfileid: "60064676"
      您可以啟用或停用自動檢查更新底部**更新** 窗格 (**啟用/停用自動偵測可用的更新**)，哪些變更**檢查更新**中設定**工具 / 選項 / 環境 / 擴充功能和更新**。
 
     > [!NOTE]
-    >  從 Visual Studio 2015 Update 2 開始，您可以指定 (在 [工具] / [選項] / [環境] / [延伸模組和更新] 中) 是否要自動更新每個使用者延伸模組、所有使用者延伸模組，或兩者皆自動更新 (預設值)。
+    > 從 Visual Studio 2015 Update 2 開始，您可以指定 (在 [工具] / [選項] / [環境] / [延伸模組和更新] 中) 是否要自動更新每個使用者延伸模組、所有使用者延伸模組，或兩者皆自動更新 (預設值)。
 
 ## <a name="see-also"></a>另請參閱
  [VSIX 封裝的結構](../extensibility/anatomy-of-a-vsix-package.md)[尋找及使用 Visual Studio 擴充功能](../ide/finding-and-using-visual-studio-extensions.md)

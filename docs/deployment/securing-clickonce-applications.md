@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: eab627b09c1544b69a8834711e51a3bbbdd63e5a
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: 2b23e10dfd00f4e1b9bde8520ef50aa60cd18b35
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "58866782"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63406744"
 ---
 # <a name="secure-clickonce-applications"></a>保護 ClickOnce 應用程式
 在 .NET Framework 中，[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 應用程式受到程式碼存取安全性條件約束的限制，因此能夠協助限制程式碼對受保護之資源和作業的存取。 因此，很重要的是您必須了解程式碼存取安全性的含意，照著撰寫 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 應用程式。 您的應用程式可以使用完全信任或部分信任區域 (例如網際網路和內部網路區域) 以限制存取。
@@ -71,7 +71,7 @@ ms.locfileid: "58866782"
  請絕對不要將透過查詢字串擷取的引數傳遞給資料庫或命令列，而沒有檢查這些引數來確定其是否安全。 不安全的引數為包含資料庫或命令列逸出字元 (Escape Character) 的引數，這些引數可讓惡意使用者操縱您的應用程式來執行任意命令。
 
 > [!NOTE]
->  查詢字串引數是在啟動 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 應用程式時傳遞引數給它的唯一方法； 您不能從命令列傳遞引數給 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 應用程式。
+> 查詢字串引數是在啟動 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 應用程式時傳遞引數給它的唯一方法； 您不能從命令列傳遞引數給 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 應用程式。
 
 ## <a name="deploying-obfuscated-assemblies"></a>部署模糊化組件
  Visual Studio 包含免費的 [PreEmptive Protection-Dotfuscator Community](../ide/dotfuscator/index.md)，可用來透過程式碼混淆和作用中的保護措施，保護您的 ClickOnce 應用程式。  如需詳細資訊，請參閱 [Dotfuscator Community 使用者指南的 ClickOnce 一節](https://www.preemptive.com/dotfuscator/ce/docs/help/5.27/advanced_clickonce.html)。

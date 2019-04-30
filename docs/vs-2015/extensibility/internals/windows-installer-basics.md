@@ -11,12 +11,12 @@ ms.assetid: 497e479b-add8-4644-870a-917f15306b97
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 2566c97a4dc025e27aecf64a7a8950a578882348
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 516deb626bd8c6056612fcc481b9d530da504b9d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60054376"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437262"
 ---
 # <a name="windows-installer-basics"></a>Windows Installer 基本概念
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -59,7 +59,7 @@ Windows 安裝程式安裝和解除安裝應用程式或使用者的電腦上的
  兩組規則會決定部署透過您的安裝程式元件的資源。 雖然您應該會強制執行第二個集合，身為安裝的作者，Windows 安裝程式本身，會維護一個規則集。  
   
 > [!NOTE]
->  只有當您執行的.msi 檔案的驗證，就會發生 Windows Installer 規則強制執行。 不過，您會 cautioned 這些規則視為最佳做法。 如需詳細資訊，請參閱 <<c0> [ 驗證安裝資料庫](http://msdn.microsoft.com/library/aa372477\(VS.85\).aspx)並[封裝驗證](http://msdn.microsoft.com/library/aa370569\(VS.85\).aspx)。  
+> 只有當您執行的.msi 檔案的驗證，就會發生 Windows Installer 規則強制執行。 不過，您會 cautioned 這些規則視為最佳做法。 如需詳細資訊，請參閱 <<c0> [ 驗證安裝資料庫](http://msdn.microsoft.com/library/aa372477\(VS.85\).aspx)並[封裝驗證](http://msdn.microsoft.com/library/aa370569\(VS.85\).aspx)。  
   
 #### <a name="installer-enforced-rules"></a>安裝程式強制執行規則  
   

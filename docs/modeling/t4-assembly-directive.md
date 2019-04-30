@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6be7cad9034f67a00d8f795a5c4f4f9ad45c1abe
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
-ms.translationtype: MT
+ms.openlocfilehash: e5dfb9a6489fed2c21d05799e9196c813a224571
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55922364"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63422949"
 ---
 # <a name="t4-assembly-directive"></a>T4 組件指示詞
 
@@ -21,7 +21,7 @@ ms.locfileid: "55922364"
  撰寫文字範本的一般概觀，請參閱 <<c0> [ 撰寫 T4 文字範本](../modeling/writing-a-t4-text-template.md)。
 
 > [!NOTE]
->  在執行階段 (前置處理過的) 文字範本中，不需要 `assembly` 指示詞。 相反地，將必要的組件，加入**參考**的 Visual Studio 專案。
+> 在執行階段 (前置處理過的) 文字範本中，不需要 `assembly` 指示詞。 相反地，將必要的組件，加入**參考**的 Visual Studio 專案。
 
 ## <a name="using-the-assembly-directive"></a>使用組件指示詞
  指示詞的語法如下：
@@ -36,7 +36,7 @@ ms.locfileid: "55922364"
 
 - 組件的絕對路徑
 
-  您可以使用`$(variableName)`語法來參考 Visual Studio 變數，例如`$(SolutionDir)`，和`%VariableName%`來參考環境變數。 例如: 
+  您可以使用`$(variableName)`語法來參考 Visual Studio 變數，例如`$(SolutionDir)`，和`%VariableName%`來參考環境變數。 例如：
 
 ```
 <#@ assembly name="$(SolutionDir)\MyProject\bin\Debug\SomeLibrary.Dll" #>

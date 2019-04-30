@@ -20,12 +20,12 @@ caps.latest.revision: 27
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: cf3c68d7f70822bbe7b085b92e64bda0b9437dfc
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: 3493c487c446bb66e99bf98a7c3f5599599801fd
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59660979"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63424138"
 ---
 # <a name="generateapplicationmanifest-task"></a>GenerateApplicationManifest 工作
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,10 +44,10 @@ ms.locfileid: "59660979"
 |`Dependencies`|選擇性的 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 參數。<br /><br /> 指定項目清單，這份清單會為所產生的資訊清單定義一組相依組件。 每個項目都可以利用項目中繼資料進一步描述，以指出其他部署狀態和相依性的類型。 如需詳細資訊，請參閱以下的＜項目中繼資料＞一節。|  
 |`Description`|選擇性的 `String` 參數。<br /><br /> 指定應用程式或元件的描述。|  
 |`EntryPoint`|選擇性的 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 參數。<br /><br /> 指定單一項目，以指出所產生資訊清單組件的進入點。<br /><br /> 對於 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 應用程式資訊清單，這個參數會指定應用程式執行時啟動的組件。|  
-|`ErrorReportUrl`|選擇性 [String] (<!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  -->) 參數。<br /><br /> 指定在 ClickOnce 安裝錯誤報告期間顯示在對話方塊中的網頁 URL。|  
+|`ErrorReportUrl`|選擇性的 [String](<!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  -->)參數。<br /><br /> 指定在 ClickOnce 安裝錯誤報告期間顯示在對話方塊中的網頁 URL。|  
 |`FileAssociations`|選擇性的 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 參數。<br /><br /> 指定與 ClickOnce 部署資訊清單建立關聯之一或多個檔案類型的清單。<br /><br /> 檔案關聯只有在 .NET Framework 3.5 或更新版本設為目標時才有效。|  
 |`Files`|選擇性的 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 參數。<br /><br /> 要包含在資訊清單中的檔案。 指定每個檔案的完整路徑。|  
-|`HostInBrowser`|選擇性的 [布林] (<!-- TODO: review code entity reference <xref:assetId:///Boolean?qualifyHint=False&amp;autoUpgrade=True>  -->) 參數。<br /><br /> 如果為 `true`，表示應用程式是裝載於瀏覽器中 (與 WPF 網頁瀏覽器應用程式相同)。|  
+|`HostInBrowser`|選擇性的[布林值](<!-- TODO: review code entity reference <xref:assetId:///Boolean?qualifyHint=False&amp;autoUpgrade=True>  -->)參數。<br /><br /> 如果為 `true`，表示應用程式是裝載於瀏覽器中 (與 WPF 網頁瀏覽器應用程式相同)。|  
 |`IconFile`|選擇性的 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 參數。<br /><br /> 表示應用程式圖示檔。 應用程式圖示會在產生的應用程式資訊清單中顯示，並在 [開始] 功能表和 [新增/移除程式] 對話方塊中使用。 如果未指定這項輸入，便會使用預設圖示。 如果工作要產生原生資訊清單，則會忽略此參數。|  
 |`InputManifest`|選擇性的 <xref:Microsoft.Build.Framework.ITaskItem> 參數。<br /><br /> 指出要作為資訊清單產生器基底的輸入 XML 文件。 這可讓結構化資料 (例如應用程式安全性或自訂資訊清單定義) 能夠反映在輸出資訊清單中。 XML 文件中的根元素必須是 asmv1 命名空間中的組件節點。|  
 |`IsolatedComReferences`|選擇性的 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 參數。<br /><br /> 指定要在所產生資訊清單中隔離的 COM 元件。 這個參數支援可在「免註冊的 COM」部署中隔離 COM 元件的功能。 其運作方式是利用標準的 COM 註冊定義來自動產生資訊清單。 不過，必須在建置電腦上註冊 COM 元件，才能讓這項功能正常運作。|  
@@ -90,10 +90,10 @@ ms.locfileid: "59660979"
  上述範例說明了產生資訊清單時可能發生的最簡單案例，其中 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 資訊清單是針對單一程式所產生。 預設名稱和身分識別都是從資訊清單的組件推斷而來。  
   
 > [!NOTE]
->  在以下範例中，所有應用程式二進位檔都會預先建置，以便讓您專注於資訊清單產生的各個方面。 這個範例會產生能夠完整運作的 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 部署。  
+> 在以下範例中，所有應用程式二進位檔都會預先建置，以便讓您專注於資訊清單產生的各個方面。 這個範例會產生能夠完整運作的 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 部署。  
   
 > [!NOTE]
->  如需本範例中 `SignFile` 工作所使用之 `Thumbprint` 屬性的詳細資訊，請參閱 [SignFile 工作](../msbuild/signfile-task.md)。  
+> 如需本範例中 `SignFile` 工作所使用之 `Thumbprint` 屬性的詳細資訊，請參閱 [SignFile 工作](../msbuild/signfile-task.md)。  
   
 ```  
 <Project DefaultTargets="Build"  
@@ -143,10 +143,10 @@ ms.locfileid: "59660979"
  除了明確指定資訊清單的名稱和身分識別之外，這個範例與前一個範例類似。 此外，這個範例已設定為線上應用程式，而非安裝的應用程式。  
   
 > [!NOTE]
->  在以下範例中，所有應用程式二進位檔都會預先建置，以便讓您專注於資訊清單產生的各個方面。 這個範例會產生能夠完整運作的 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 部署。  
+> 在以下範例中，所有應用程式二進位檔都會預先建置，以便讓您專注於資訊清單產生的各個方面。 這個範例會產生能夠完整運作的 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 部署。  
   
 > [!NOTE]
->  如需本範例中 `SignFile` 工作所使用之 `Thumbprint` 屬性的詳細資訊，請參閱 [SignFile 工作](../msbuild/signfile-task.md)。  
+> 如需本範例中 `SignFile` 工作所使用之 `Thumbprint` 屬性的詳細資訊，請參閱 [SignFile 工作](../msbuild/signfile-task.md)。  
   
 ```  
 <Project DefaultTargets="Build"  
@@ -201,10 +201,10 @@ ms.locfileid: "59660979"
  這個範例使用 `GenerateApplicationManifest` 和 `GenerateDeploymentManifest` 工作來產生 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 應用程式，以及具有多個檔案和組件之應用程式的部署資訊清單。  
   
 > [!NOTE]
->  在以下範例中，所有應用程式二進位檔都會預先建置，以便讓您專注於資訊清單產生的各個方面。 這個範例會產生能夠完整運作的 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 部署。  
+> 在以下範例中，所有應用程式二進位檔都會預先建置，以便讓您專注於資訊清單產生的各個方面。 這個範例會產生能夠完整運作的 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 部署。  
   
 > [!NOTE]
->  如需本範例中 `SignFile` 工作所使用之 `Thumbprint` 屬性的詳細資訊，請參閱 [SignFile 工作](../msbuild/signfile-task.md)。  
+> 如需本範例中 `SignFile` 工作所使用之 `Thumbprint` 屬性的詳細資訊，請參閱 [SignFile 工作](../msbuild/signfile-task.md)。  
   
 ```  
 <Project DefaultTargets="Build"  
@@ -321,7 +321,7 @@ ms.locfileid: "59660979"
  這個範例會產生 Test.exe.manifest，使應用程式 XCOPY 能夠利用「免註冊的 COM」進行部署。  
   
 > [!NOTE]
->  在以下範例中，所有應用程式二進位檔都會預先建置，以便讓您專注於資訊清單產生的各個方面。 這個範例會產生能夠完整運作的 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 部署。  
+> 在以下範例中，所有應用程式二進位檔都會預先建置，以便讓您專注於資訊清單產生的各個方面。 這個範例會產生能夠完整運作的 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 部署。  
   
 ```  
 <Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  

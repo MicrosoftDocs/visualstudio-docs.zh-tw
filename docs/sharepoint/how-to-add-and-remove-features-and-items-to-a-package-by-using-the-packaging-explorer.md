@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f62181909afef7f404270a085f9bbb1a5341c115
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: ae44f7d4631316fc1250a79b9a8424c3731f1329
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60104456"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63431228"
 ---
 # <a name="how-to-add-and-remove-features-and-items-to-a-package-by-using-the-packaging-explorer"></a>HOW TO：新增和移除功能和項目加入封裝時，使用 [封裝總管]
   若要設定要部署的 SharePoint 項目和功能的套件，您可以使用 [封裝總管] 中。 您的.wsp 檔內，您可以調整的 SharePoint 專案項目和功能。
@@ -51,7 +51,7 @@ ms.locfileid: "60104456"
     - 開啟功能的捷徑功能表，選擇 **剪下**，開啟您想要移動功能，再選擇的專案的捷徑功能表**貼上**。
 
     > [!NOTE]
-    >  如果您的方案中有一個以上的 SharePoint 專案，請使用此程序。
+    > 如果您的方案中有一個以上的 SharePoint 專案，請使用此程序。
 
 ## <a name="validate-a-feature-or-package"></a>驗證功能或封裝
  您可以識別潛在的問題中的 SharePoint 功能和封裝驗證的檔案。 警告和錯誤會顯示在輸出視窗 和 錯誤清單 視窗中。

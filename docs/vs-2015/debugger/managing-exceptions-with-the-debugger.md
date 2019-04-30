@@ -33,12 +33,12 @@ caps.latest.revision: 40
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 2a8bc2e1f4c78e32db6fa5e09ec50bdd182f4fa6
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 6e50f19c4889e5f15c7dc3d458d1347912ecbc1d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60040960"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63439181"
 ---
 # <a name="managing-exceptions-with-the-debugger"></a>使用偵錯工具管理例外狀況
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -54,10 +54,10 @@ ms.locfileid: "60040960"
 - 如果您曾設定 [Just My Code](../debugger/just-my-code.md)，且偵錯工具設定為在非由使用者程式碼所處理的任何例外狀況時中斷。  
   
 > [!NOTE]
->  ASP.NET 具有最上層例外狀況處理常式，這會在瀏覽器中顯示錯誤頁面。 它不會中斷執行，除非 [Just My Code]  已開啟。 如需範例，請參閱下列 [Setting the debugger to continue on user-unhandled exceptions](../debugger/managing-exceptions-with-the-debugger.md#BKMK_UserUnhandled) 。  
+> ASP.NET 具有最上層例外狀況處理常式，這會在瀏覽器中顯示錯誤頁面。 它不會中斷執行，除非 [Just My Code]  已開啟。 如需範例，請參閱下列 [Setting the debugger to continue on user-unhandled exceptions](../debugger/managing-exceptions-with-the-debugger.md#BKMK_UserUnhandled) 。  
   
 > [!NOTE]
->  在 Visual Basic 應用程式中，即使使用 On Error 樣式的錯誤處理常式，偵錯工具還是會將所有錯誤都當成例外狀況管理。  
+> 在 Visual Basic 應用程式中，即使使用 On Error 樣式的錯誤處理常式，偵錯工具還是會將所有錯誤都當成例外狀況管理。  
   
 ## <a name="managing-exceptions-with-the-exception-settings-window"></a>藉由 [例外狀況設定] 視窗管理例外狀況  
  您可以使用 [例外狀況設定]  視窗來指定哪些例外狀況 (或例外狀況的集合) 會導致偵錯工具中斷，並指定在哪個點上您會想要中斷。 您可以新增或刪除例外狀況，或指定要中斷的例外狀況。 在經由 [偵錯] / [Windows] / [例外狀況設定] 開啟方案時，此視窗隨即開啟。  
@@ -162,7 +162,7 @@ ms.locfileid: "60040960"
  如果您想要將例外狀況加入 [GPU 記憶體存取例外狀況]、[JavaScript 執行階段例外狀況] 或 [Win32 例外狀況] 類別，您需要包含此錯誤碼和描述。  
   
 > [!TIP]
->  請檢查您的拼字！ [例外狀況設定]  視窗並不會檢查加入的例外狀況是否存在。 因此如果您輸入 **Sytem.UriTemplateMatchException**，您會得到針對該例外狀況的項目 (而非針對 **System.UriTemplateMatchException**)。  
+> 請檢查您的拼字！ [例外狀況設定]  視窗並不會檢查加入的例外狀況是否存在。 因此如果您輸入 **Sytem.UriTemplateMatchException**，您會得到針對該例外狀況的項目 (而非針對 **System.UriTemplateMatchException**)。  
   
  例外狀況設定會保存在此方案的 .suo 檔案中，因此可套用至特定的方案中。 您無法在不同方案間重複使用特定的例外狀況設定。 此時，會保存已加入的例外狀況；但已刪除的例外狀況除外。 換句話說，您可以加入例外狀況，關閉並重新開啟方案，然後該例外狀況仍不會消失。 但是，如果您刪除例外狀況，然後關閉/重新開啟此方案，則該例外狀況會重新出現。  
   

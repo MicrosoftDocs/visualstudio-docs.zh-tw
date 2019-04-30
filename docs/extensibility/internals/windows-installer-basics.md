@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: bf47b5c6aa84cb5d5cc961e34161435dc27dd517
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 9978e12d5b4d94a5f860bfdd5d3dc90ae6fef3ad
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60066256"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63431021"
 ---
 # <a name="windows-installer-basics"></a>Windows Installer 基本概念
 Windows 安裝程式安裝和解除安裝應用程式或使用者的電腦上的軟體產品執行這些工作單位，稱為 Windows 安裝程式元件 （有時稱為 WICs 或只是元件）。 GUID 會識別每個 WIC，也就是安裝和參考計數來設定使用 Windows 安裝程式的基本單位。
@@ -53,7 +53,7 @@ Windows 安裝程式安裝和解除安裝應用程式或使用者的電腦上的
  兩組規則會決定部署透過您的安裝程式元件的資源。 雖然您應該會強制執行第二個集合，身為安裝的作者，Windows 安裝程式本身，會維護一個規則集。
 
 > [!NOTE]
->  只有當您執行的.msi 檔案的驗證，就會發生 Windows Installer 規則強制執行。 不過，您會 cautioned 這些規則視為最佳做法。 如需詳細資訊，請參閱 <<c0> [ 驗證安裝資料庫](/windows/desktop/Msi/validating-an-installation-database)並[封裝驗證](/windows/desktop/Msi/package-validation)。
+> 只有當您執行的.msi 檔案的驗證，就會發生 Windows Installer 規則強制執行。 不過，您會 cautioned 這些規則視為最佳做法。 如需詳細資訊，請參閱 <<c0> [ 驗證安裝資料庫](/windows/desktop/Msi/validating-an-installation-database)並[封裝驗證](/windows/desktop/Msi/package-validation)。
 
 #### <a name="installer-enforced-rules"></a>安裝程式強制執行規則
 

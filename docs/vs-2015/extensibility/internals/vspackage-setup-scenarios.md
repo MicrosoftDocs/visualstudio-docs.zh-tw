@@ -10,12 +10,12 @@ ms.assetid: d2928498-f27c-46b4-a9cd-cba41fd85a10
 caps.latest.revision: 22
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: c94963b0ebfc6df454870222059a460b2868427d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 58b4350812900bc11e8aaa3222b3b0898db19e13
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58945580"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63440793"
 ---
 # <a name="vspackage-setup-scenarios"></a>VSPackage 安裝案例
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -45,13 +45,13 @@ ms.locfileid: "58945580"
  如圖所示，共用的元件都會 Feat_Common 功能，一定會安裝的一部分。 藉由 [Feat_VS2002] 和 [Feat_VS2003] 功能顯示，使用者可以在安裝階段選擇到哪些版本的[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]他們想要整合 VSPackage。 使用者也可以使用 Windows 安裝程式的維護模式來新增或移除的功能，在此情況下新增或移除不同版本的 VSPackage 註冊資訊[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]。  
   
 > [!NOTE]
->  將功能顯示資料行設定為 0，會隱藏它。 的低層級的資料行值，例如 1，可確保一律會進行安裝。 如需詳細資訊，請參閱 < [INSTALLLEVEL 屬性](http://msdn.microsoft.com/library/aa369536\(VS.85\).aspx)並[特徵資料表](http://msdn.microsoft.com/library/aa368585.aspx)。  
+> 將功能顯示資料行設定為 0，會隱藏它。 的低層級的資料行值，例如 1，可確保一律會進行安裝。 如需詳細資訊，請參閱 < [INSTALLLEVEL 屬性](http://msdn.microsoft.com/library/aa369536\(VS.85\).aspx)並[特徵資料表](http://msdn.microsoft.com/library/aa368585.aspx)。  
   
 ## <a name="scenario-2-shared-vspackage-update"></a>案例 2:共用的 VSPackage 更新  
  在此案例中，出貨 VSPackage 安裝案例 1 中的更新的版本。 討論中，更新會新增支援[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]，但也可能是較簡單安全性修補程式或 bug 修正 service pack。 安裝較新的元件的 Windows 安裝程式的規則需要變更的元件已經在系統上不會重新複製。 在此情況下，具有已存在的 1.0 版的系統會覆寫更新的元件 Comp_MyVSPackage.dll，並且讓使用者選擇加入新的功能 Feat_VS2005 Comp_VS2005_Reg 其元件。  
   
 > [!CAUTION]
->  每當多個版本之間的共用 VSPackage [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]，它是基本的 VSPackage 的後續版本維護與舊版的回溯相容性[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]。 您無法維護回溯相容性，您必須使用並排顯示的私用的 Vspackage。 如需詳細資訊，請參閱 <<c0> [ 支援多個版本的 Visual Studio](../../extensibility/supporting-multiple-versions-of-visual-studio.md)。  
+> 每當多個版本之間的共用 VSPackage [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]，它是基本的 VSPackage 的後續版本維護與舊版的回溯相容性[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]。 您無法維護回溯相容性，您必須使用並排顯示的私用的 Vspackage。 如需詳細資訊，請參閱 <<c0> [ 支援多個版本的 Visual Studio](../../extensibility/supporting-multiple-versions-of-visual-studio.md)。  
   
  ![VS 共用的 VS 套件更新影像](../../extensibility/internals/media/vs-sharedpackageupdate.gif "VS_SharedPackageUpdate")  
 共用 VSPackage 更新安裝程式  

@@ -15,12 +15,12 @@ caps.latest.revision: 4
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 8b5dc42932334b54bb46664da14af7df8dcfe131
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: bf1fd84d884068d11d15d614f5e281577bd3ce55
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60050776"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433575"
 ---
 # <a name="how-to-create-a-policyactivity-rule-set-legacy"></a>HOW TO：建立 PolicyActivity 規則集 (舊版)
 本主題描述當使用以 [!INCLUDE[wfd1](../includes/wfd1-md.md)] 或 [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] 為目標的舊版 [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)] 時，如何建立原則活動規則集。  
@@ -28,7 +28,7 @@ ms.locfileid: "60050776"
  拖曳之後**原則**從活動項目**工具箱**至工作流程設計介面中，您會想要選取現有的規則或建立新的規則集[PolicyActivity](http://go.microsoft.com/fwlink?LinkID=65019)活動。 選取 使用現有的規則[選取規則集對話方塊 （舊版）](../workflow-designer/select-rule-set-dialog-box-legacy.md)和您使用建立規則集[規則集編輯器對話方塊 （舊版）](../workflow-designer/rule-set-editor-dialog-box-legacy.md)。  
   
 > [!NOTE]
->  您可以開啟[規則集編輯器對話方塊 （舊版）](../workflow-designer/rule-set-editor-dialog-box-legacy.md)對話方塊中，按兩下，以直接[PolicyActivity](http://go.microsoft.com/fwlink?LinkID=65019)是工作流程設計介面的活動。  
+> 您可以開啟[規則集編輯器對話方塊 （舊版）](../workflow-designer/rule-set-editor-dialog-box-legacy.md)對話方塊中，按兩下，以直接[PolicyActivity](http://go.microsoft.com/fwlink?LinkID=65019)是工作流程設計介面的活動。  
   
 ### <a name="to-select-or-create-a-rule-set-for-a-policyactivity-activity"></a>若要選取或建立 PolicyActivity 活動的規則集  
   

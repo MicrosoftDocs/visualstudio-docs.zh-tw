@@ -11,12 +11,12 @@ caps.latest.revision: 7
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: e7987b4da158572d22d609b095877f6d125512c9
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: d5974bc962faf439af8de5d50bf51bad3d824647
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58942115"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63439079"
 ---
 # <a name="how-to-search-for-a-thread-in-threads-view"></a>HOW TO：在執行緒檢視中搜尋執行緒
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,10 +36,10 @@ ms.locfileid: "58942115"
 4. 清除，您不想指定值的任何欄位。  
   
    > [!TIP]
-   >  若要尋找模組所擁有的所有執行緒，請清除**執行緒**文字方塊並輸入模組中的名稱**模組** 方塊中。 然後使用**尋找下一個**繼續搜尋執行緒。  
+   > 若要尋找模組所擁有的所有執行緒，請清除**執行緒**文字方塊並輸入模組中的名稱**模組** 方塊中。 然後使用**尋找下一個**繼續搜尋執行緒。  
   
 5. 選擇**向上**或是**向下**初始搜尋的方向。  
   
-6. 按一下 [確定 **Deploying Office Solutions**]。  
+6. 按一下 [確定] 。  
   
    如果找到相符的執行緒，則它會反白顯示 [執行緒] 檢視視窗中。

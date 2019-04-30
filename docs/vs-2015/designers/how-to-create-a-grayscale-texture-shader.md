@@ -9,14 +9,14 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e7d35347a4b656f9610097bc8dfe03e7c8488c01
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: b43e7806ebf6d67300fdee7be165c7cd745c4acb
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54779603"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63431710"
 ---
-# <a name="how-to-create-a-grayscale-texture-shader"></a>如何：建立灰階材質著色器
+# <a name="how-to-create-a-grayscale-texture-shader"></a>HOW TO：建立灰階紋理著色器
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 本文件將示範如何使用著色器設計工具和有向圖形著色器語言 (DGSL)，來建立灰階材質著色器。 這個著色器可修改材質範例的 RGB 色彩值，然後和未經修改的 Alpha 值一起使用來設定完稿色彩。  
@@ -28,7 +28,7 @@ ms.locfileid: "54779603"
   
 #### <a name="to-create-a-grayscale-texture-shader"></a>建立灰階材質著色器  
   
-1. 建立基本材質著色器，如[如何：建立基本材質著色器](../designers/how-to-create-a-basic-texture-shader.md)中所述。  
+1. 建立基本紋理著色器，如[如何：建立基本材質著色器](../designers/how-to-create-a-basic-texture-shader.md)。  
   
 2. 將 [材質範例] 節點的 [RGB] 端點和 [完稿色彩] 節點的 [RGB] 端點中斷連接。 在 [選取] 模式中，選擇 [材質範例] 節點的 [RGB] 端點，然後選擇 [中斷連結]。 這樣會替下一個步驟加入的節點留出空間。  
   
@@ -37,20 +37,20 @@ ms.locfileid: "54779603"
 4. 使用 [反滲透] 節點來計算灰階值。 在 [選取] 模式中，將 [材質範例] 節點的 [RGB] 端點移至 [反滲透] 節點的 [RGB] 端點。  
   
    > [!NOTE]
-   >  根據預設，[反滲透] 節點可將輸入色彩完全去色，並使用標準的明亮度加權進行灰階轉換。 您可以變更 [明亮度] 屬性的值或只將輸入色彩部分去色，來變更 [反滲透] 節點的行為。 若要將輸入色彩部份去色，請對 [反滲透] 節點的 [百分比] 端點提供 [0, 1] 範圍內的純量值。  
+   > 根據預設，[反滲透] 節點可將輸入色彩完全去色，並使用標準的明亮度加權進行灰階轉換。 您可以變更 [明亮度] 屬性的值或只將輸入色彩部分去色，來變更 [反滲透] 節點的行為。 若要將輸入色彩部份去色，請對 [反滲透] 節點的 [百分比] 端點提供 [0, 1] 範圍內的純量值。  
   
 5. 將灰階色彩值連接到完稿色彩。 將 [反滲透] 節點的 [輸出] 端點移至 [完稿色彩] 節點的 [RGB] 端點。  
   
    下圖顯示完成的著色器圖形和套用至立方體的著色器預覽。  
   
 > [!NOTE]
->  在此圖中，使用一個平面當成預覽圖形，並已指定材質以更適當展現著色器的效果。  
+> 在此圖中，使用一個平面當成預覽圖形，並已指定材質以更適當展現著色器的效果。  
   
  ![著色器圖形和其效果預覽](../designers/media/digit-grayscale-effect.png "Digit-Grayscale-Effect")  
   
  某些圖形可對一些著色器提供更佳的預覽。 如需在著色器設計工具中預覽著色器的詳細資訊，請參閱[著色器設計工具](../designers/shader-designer.md)  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [如何：將著色器套用至 3d 模型](../designers/how-to-apply-a-shader-to-a-3-d-model.md)   
  [如何：匯出著色器](../designers/how-to-export-a-shader.md)   
  [影像編輯器](../designers/image-editor.md)   

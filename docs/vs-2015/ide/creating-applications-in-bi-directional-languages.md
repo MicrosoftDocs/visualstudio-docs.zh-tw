@@ -13,12 +13,12 @@ caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: acba0174fde52886d3be7ec6288148171fe40cca
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: c45f3ac7cfec727eb0a27fc79e5fe09237e8f8c3
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60104976"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437584"
 ---
 # <a name="creating-applications-in-bi-directional-languages"></a>使用雙向語言建立應用程式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,7 +26,7 @@ ms.locfileid: "60104976"
 您可以使用 Visual Studio 來建立應用程式，以正確顯示由右至左撰寫的語言文字，包括阿拉伯文和希伯來文。 針對某些功能，您可以直接設定屬性， 若為其他情況，則必須在程式碼中實作功能。  
   
 > [!NOTE]
->  若要輸入及顯示雙向語言，您必須使用已設為適當語言的 Windows 版本。 這包括已安裝適當語言套件的英文版 Windows，或正確的 Windows 當地語系化版本。  
+> 若要輸入及顯示雙向語言，您必須使用已設為適當語言的 Windows 版本。 這包括已安裝適當語言套件的英文版 Windows，或正確的 Windows 當地語系化版本。  
   
 ## <a name="types-of-application-that-support-bi-directional-languages"></a>支援雙向語言的應用程式類型  
   
@@ -66,7 +66,7 @@ ms.locfileid: "60104976"
 - 檔案內容。 您可以使用 Unicode 編碼方式，或使用選取的字碼頁，來開啟或儲存檔案。  
   
     > [!NOTE]
-    >  程式碼編輯器是特殊案例。 如需詳細資訊，請參閱下方。  
+    > 程式碼編輯器是特殊案例。 如需詳細資訊，請參閱下方。  
   
 - 資料項目。 伺服器總管會正確顯示下列項目，以供您編輯。  
   
@@ -79,10 +79,10 @@ ms.locfileid: "60104976"
 - 程式碼和常值文字。 在程式碼編輯器 (亦即文字編輯器) 中，您可以使用阿拉伯文或希伯來文命名類別、函式、變數、屬性、字串常值、屬性等等。 不過，編輯器不支援由右至左的讀取順序；文字一律從左邊界開始。  
   
     > [!TIP]
-    >  建議您將字串常值放在資源檔中，而不要在您的程式中直接撰寫 (硬式編碼)。 如需詳細資訊，請參閱[逐步解說：將 Windows Form 當地語系化](http://msdn.microsoft.com/9a96220d-a19b-4de0-9f48-01e5d82679e5)。  
+    > 建議您將字串常值放在資源檔中，而不要在您的程式中直接撰寫 (硬式編碼)。 如需詳細資訊，請參閱[逐步解說：將 Windows Form 當地語系化](http://msdn.microsoft.com/9a96220d-a19b-4de0-9f48-01e5d82679e5)。  
   
     > [!NOTE]
-    >  您必須使用一致的方式來參考以這些語言物名的物件。 例如，若您使用 Kashida 來命名阿拉伯文的變數，則在參考該變數時，您必須一律使用 Kashida，否則會產生錯誤。  
+    > 您必須使用一致的方式來參考以這些語言物名的物件。 例如，若您使用 Kashida 來命名阿拉伯文的變數，則在參考該變數時，您必須一律使用 Kashida，否則會產生錯誤。  
   
 - 程式碼註解。 您可以使用阿拉伯文或希伯來文建立註解。 您也可以在註解產生器工具中使用這些語言。  
   

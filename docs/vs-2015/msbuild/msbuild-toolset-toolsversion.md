@@ -14,12 +14,12 @@ caps.latest.revision: 33
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 192fdd737816d2239b15530e2d5c03d73f82e0d5
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: bd65f12c065ee1d96934c6790779c8b4ca87b393
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59657502"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63426308"
 ---
 # <a name="msbuild-toolset-toolsversion"></a>MSBuild Toolset (ToolsVersion)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -97,7 +97,7 @@ MSBuild 使用工作、目標和工具的工具組建置應用程式。 一般�
  如本主題先前所述，MSBuild 會使用登錄機碼指定基本工具的路徑。 如果機碼具有子機碼，MSBuild 會使用它指定包含其他工具之子工具組的路徑。 在此情況下，該工具組的定義方式為組合在兩個機碼中定義的屬性定義。  
   
 > [!NOTE]
->  如果工具組屬性名稱衝突，為子機碼路徑定義的值會覆寫為根機碼路徑定義的值。  
+> 如果工具組屬性名稱衝突，為子機碼路徑定義的值會覆寫為根機碼路徑定義的值。  
   
  如果 `VisualStudioVersion` 建置屬性存在，子工具組會變為使用中。 此屬性會採用下列其中一個值：  
   

@@ -11,12 +11,12 @@ caps.latest.revision: 24
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 1806e39e70d98ce7f47dda6bbc32a8f261b96acd
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 5dc2fe8e6f9b0ed1e6970943ab5eedf1b62eb961
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60091313"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432681"
 ---
 # <a name="how-to-limit-instrumentation-to-specific-dlls"></a>HOW TO：限制檢測特定 Dll
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -68,7 +68,7 @@ ms.locfileid: "60091313"
 7. 選擇性。 若要加入其他 .dll 檔案，請以滑鼠右鍵按一下 [目標]，然後選取 [加入目標二進位檔]。 接著再從 [加入目標二進位檔] 對話方塊選取檔案。  
   
     > [!NOTE]
-    >  請勿指定執行 DLL 的可執行檔 (.exe)。  
+    > 請勿指定執行 DLL 的可執行檔 (.exe)。  
   
 ## <a name="see-also"></a>另請參閱  
  [控制資料收集](../profiling/controlling-data-collection.md)   

@@ -16,12 +16,12 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c1cde6d36a1244976a2cc95dd9c1d3698be40df0
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: a0ce02a76d32a967e2c7e5f06818b5838337f9b1
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59652614"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433683"
 ---
 # <a name="options-dialog-box--projects-and-solutions-build-and-run"></a>選項對話方塊, 專案和方案, 建置和執行
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -37,7 +37,7 @@ ms.locfileid: "59652614"
   
  **執行時 (當專案過期時)**  
  > [!NOTE]
->  此清單只適用於 [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)] 專案。  
+> 此清單只適用於 [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)] 專案。  
   
  當您選擇 F5 鍵或選擇功能表列上的 [偵錯]、[開始] 時，如果專案設定已過期，則預設會出現一則訊息。 您可以指定是否依然要建置專案，以及是否顯示此訊息。 使用此選項來指定是否顯示訊息，以及建置行為在不顯示訊息時應該為何。  
   
@@ -54,7 +54,7 @@ ms.locfileid: "59652614"
  當您從 [建置] 功能表開始建置時，如果發生建置錯誤，則會出現一則訊息。 您可以指定是否要繼續啟動應用程式，以及每次發生建置錯誤時是否顯示訊息。 使用此選項來指定是否顯示訊息，以及行為在不顯示訊息時應該為何。  
   
 > [!NOTE]
->  此選項只適用於 [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)] 專案。  
+> 此選項只適用於 [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)] 專案。  
   
  [提示啟動]  
  每次發生建置錯誤時便顯示訊息方塊。  
@@ -73,7 +73,7 @@ ms.locfileid: "59652614"
   
  **MSBuild 專案組建記錄檔詳細資訊**  
  > [!NOTE]
->  此選項只適用於 Visual C++ 專案。  
+> 此選項只適用於 Visual C++ 專案。  
   
  決定多少資訊會寫入建置記錄檔，其位置在 \\...\\*專案名稱*\Debug\\*專案名稱*.log。  
   

@@ -126,12 +126,12 @@ caps.latest.revision: 17
 author: mikeblome
 ms.author: mblome
 manager: jillfra
-ms.openlocfilehash: f16859b3c879e2d3abb64105c50f8ec4934d17e5
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: b6d36b01ca84558d0d3d45251884e5598becfa1b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60061511"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63429188"
 ---
 # <a name="annotating-function-parameters-and-return-values"></a>註釋函式參數和傳回值
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -219,7 +219,7 @@ ms.locfileid: "60061511"
   
      `_Out_writes_to_(_Old_(s), _Old_(s))    _Out_writes_bytes_to_(_Old_(s), _Old_(s))`  
   
-     換句話說，每個項目存在於緩衝區中最多`s`前的狀態處於有效後的狀態。  例如：  
+     換句話說，每個項目存在於緩衝區中最多`s`前的狀態處於有效後的狀態。  例如:   
   
      `void *memcpy(_Out_writes_bytes_all_(s) char *p1,    _In_reads_bytes_(s) char *p2,    _In_ int s); void * wordcpy(_Out_writes_all_(s) DWORD *p1,     _In_reads_(s) DWORD *p2,    _In_ int s);`  
   
@@ -318,7 +318,7 @@ ms.locfileid: "60061511"
   下表中，其他的子字串會插入到來進一步限定意義的註釋的註釋名稱。  各種子字串都`_z`， `_COM_`， `_buffer_`， `_bytebuffer_`，和`_to_`。  
   
 > [!IMPORTANT]
->  如果 COM 的介面，您會在加上附註，使用這些註解的 COM 形式。 不要使用任何其他類型介面的 COM 註解。  
+> 如果 COM 的介面，您會在加上附註，使用這些註解的 COM 形式。 不要使用任何其他類型介面的 COM 註解。  
   
  **註解和描述**  
   
@@ -474,7 +474,7 @@ ms.locfileid: "60061511"
      參數、 欄位或結果是在範圍中 （含） 從`low`至`hi`。  相當於`_Satisfies_(_Curr_ >= low && _Curr_ <= hi)`套用至適當的預先狀態或狀態後置條件以及標註的物件。  
   
     > [!IMPORTANT]
-    >  雖然名稱包含 「 中 」 及 「 發送 」 的語意`_In_`並`_Out_`請勿**不**套用到這些註解。  
+    > 雖然名稱包含 「 中 」 及 「 發送 」 的語意`_In_`並`_Out_`請勿**不**套用到這些註解。  
   
 - `_Pre_equal_to_(expr)`  
   
@@ -484,7 +484,7 @@ ms.locfileid: "60061511"
   
 - `_Struct_size_bytes_(size)`  
   
-     適用於結構或類別的宣告。  表示具有所指定的位元組數目可能會大於宣告的型別，該類型的有效物件`size`。  例如：  
+     適用於結構或類別的宣告。  表示具有所指定的位元組數目可能會大於宣告的型別，該類型的有效物件`size`。  例如:   
   
      `typedef _Struct_size_bytes_(nSize) struct MyStruct {    size_t nSize;    ... };`  
   

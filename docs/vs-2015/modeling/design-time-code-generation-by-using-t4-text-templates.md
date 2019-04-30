@@ -17,12 +17,12 @@ caps.latest.revision: 40
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: f2bd66ca5e5cc7e5884e98ddf4d5c2ba5df15742
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: d74b989c5615f1fca079b9d8b41fdc7560e4e274
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60065139"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63422439"
 ---
 # <a name="design-time-code-generation-by-using-t4-text-templates"></a>使用 T4 文字範本在設計階段產生程式碼
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ ms.locfileid: "60065139"
  例如，您的模型可以將工作流程定義為表格或圖表。 您可以透過模型產生執行工作流程的軟體。 當您使用者的需求變更時，很容易就可以與使用者討論新的工作流程。 透過工作流程重新產生程式碼，會比手動更新程式碼更為可靠。  
   
 > [!NOTE]
->  A*模型*是描述應用程式的特定層面的資料來源。 它可以是任何形式、任何類型的檔案或資料庫。 它不需要是任何特定形式 (如 UML 模型或「特定領域語言」模型)。 一般模型的格式是表格或 XML 檔案。  
+> A*模型*是描述應用程式的特定層面的資料來源。 它可以是任何形式、任何類型的檔案或資料庫。 它不需要是任何特定形式 (如 UML 模型或「特定領域語言」模型)。 一般模型的格式是表格或 XML 檔案。  
   
  您可能已熟悉如何產生程式碼。 當您定義中的資源 **.resx**檔案中您[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]解決方案、 一組類別和方法會自動產生。 編輯資源檔案中的資源，會比編輯類別和方法更為簡單也較可靠。 運用文字範本，您可以使用相同的方式透過您專屬設計的原始檔產生程式碼。  
   
@@ -74,7 +74,7 @@ ms.locfileid: "60065139"
 6. 在 **方案總管**，展開範本檔節點，然後您會發現副檔名的檔案 **.txt**。 此檔案包含從範本產生的文字。  
   
     > [!NOTE]
-    >  如果您的專案是 Visual Basic 專案，您必須按一下**顯示所有檔案**才能看到輸出檔案。  
+    > 如果您的專案是 Visual Basic 專案，您必須按一下**顯示所有檔案**才能看到輸出檔案。  
   
 ### <a name="regenerating-the-code"></a>重新產生程式碼  
  在下列任何情況下，將會執行範本，並產生附帶檔案：  
@@ -141,9 +141,9 @@ ms.locfileid: "60065139"
   範本將會執行並停止於中斷點。 您可以檢查變數，並照常逐步執行程式碼。  
   
 > [!TIP]
->  `debug="true"` 會將更多行號指示詞插入至產生的程式碼，以讓產生的程式碼更精確地對應至文字範本。 如果您遺漏它，則中斷點可能會以錯誤的狀態停止執行作業。  
+> `debug="true"` 會將更多行號指示詞插入至產生的程式碼，以讓產生的程式碼更精確地對應至文字範本。 如果您遺漏它，則中斷點可能會以錯誤的狀態停止執行作業。  
 >   
->  但是，您可以將此子句留在範本指示詞中，即使未進行偵錯也是一樣。 這樣只會導致效能稍微降低。  
+> 但是，您可以將此子句留在範本指示詞中，即使未進行偵錯也是一樣。 這樣只會導致效能稍微降低。  
   
 ## <a name="generating-code-or-resources-for-your-solution"></a>產生您方案的程式碼或資源  
  您可以產生不同的程式檔案 (視模型而定)。 模型是一個輸入 (例如資料庫、組態檔、UML 模型、DSL 模型或其他來源)。 您通常會產生數個來自相同模型的程式檔案。 若要達到這樣的效果，請為每個產生的程式檔案建立範本檔，並且讓所有範本讀取相同的模型。  
@@ -277,7 +277,7 @@ ms.locfileid: "60065139"
  `this.Host` (在 VB 中，為 `Me.Host`) 的類型是 `Microsoft.VisualStudio.TextTemplating.ITextTemplatingEngineHost`。  
   
 ### <a name="getting-data-from-includevsprvsincludesvsprvs-mdmd"></a>從 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 取得資料  
- 若要使用 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 中所提供的服務，請設定 `hostSpecific` 屬性，並載入 `EnvDTE` 組件。 然後，您可以使用 IServiceProvider.GetCOMService() 來存取 DTE 和其他服務。 例如：  
+ 若要使用 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 中所提供的服務，請設定 `hostSpecific` 屬性，並載入 `EnvDTE` 組件。 然後，您可以使用 IServiceProvider.GetCOMService() 來存取 DTE 和其他服務。 例如:   
   
 ```scr  
 <#@ template hostspecific="true" language="C#" #>  
@@ -293,7 +293,7 @@ Number of projects in this VS solution:  <#= dte.Solution.Projects.Count #>
 ```  
   
 > [!TIP]
->  文字範本是在其專屬應用程式網域中執行，而服務是透過封送處理進行存取。 在此情況下，GetCOMService() 比 GetService() 還要可靠。  
+> 文字範本是在其專屬應用程式網域中執行，而服務是透過封送處理進行存取。 在此情況下，GetCOMService() 比 GetService() 還要可靠。  
   
 ## <a name="Regenerating"></a> 自動重新產生程式碼  
  通常，會使用一個輸入模型來產生 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 方案中的數個檔案。 每個檔案都是透過其專屬範本所產生，但是範本都參考相同的模型。  

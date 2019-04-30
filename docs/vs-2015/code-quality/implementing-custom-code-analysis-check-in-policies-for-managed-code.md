@@ -13,12 +13,12 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: e27892859dd58add2f505fa04e21faac5576a80b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 91f81036345e647820353911356c01b7c4caff99
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60088752"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63426555"
 ---
 # <a name="implementing-custom-code-analysis-check-in-policies-for-managed-code"></a>為 Managed 程式碼實作自訂程式碼分析簽入原則
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,7 +35,7 @@ ms.locfileid: "60088752"
  若要建立自訂規則集為 team 專案，您先建立簽入原則中的規則集的特殊資料夾**原始檔控制總管**。 然後您會建立規則集檔案，並將檔案加入至版本控制。 最後，您會指定設定為程式碼分析簽入原則針對 team 專案的規則。  
   
 > [!NOTE]
->  若要建立 team 專案的資料夾，您先必須對應 team 專案的根目錄到本機電腦上的位置。 如需詳細資訊，請參閱 <<c0> [ 建立和使用工作區 （舊）](http://msdn.microsoft.com/db4d5692-179a-44fe-ad31-0c1c900c9cb2)。  
+> 若要建立 team 專案的資料夾，您先必須對應 team 專案的根目錄到本機電腦上的位置。 如需詳細資訊，請參閱 <<c0> [ 建立和使用工作區 （舊）](http://msdn.microsoft.com/db4d5692-179a-44fe-ad31-0c1c900c9cb2)。  
   
 #### <a name="to-create-the-version-control-folder-for-the-check-in-policy-rule-set"></a>若要建立簽入原則規則集的版本控制資料夾  
   
@@ -72,7 +72,7 @@ ms.locfileid: "60088752"
 4. 在 [**簽入時**] 對話方塊中，您可以選擇新增註解，然後按一下**簽入**。  
   
     > [!NOTE]
-    >  如果您已經為您的 team 專案設定程式碼分析簽入原則，而且您已選取**簽入使其僅包含屬於目前方案的檔案強制執行**，您將會觸發原則失敗警告。 在原則失敗 對話方塊中，選取**覆寫原則失敗，並繼續簽入**。 新增必要的註解，然後再按**確定**。  
+    > 如果您已經為您的 team 專案設定程式碼分析簽入原則，而且您已選取**簽入使其僅包含屬於目前方案的檔案強制執行**，您將會觸發原則失敗警告。 在原則失敗 對話方塊中，選取**覆寫原則失敗，並繼續簽入**。 新增必要的註解，然後再按**確定**。  
   
 #### <a name="to-specify-the-rule-set-file-as-the-check-in-policy"></a>若要指定規則集檔案為簽入原則  
   
@@ -91,7 +91,7 @@ ms.locfileid: "60088752"
      **$/** `TeamProjectName` **/** `VersionControlPath`  
   
     > [!NOTE]
-    >  您可以使用下列程序，在其中複製路徑**原始檔控制總管**:  
+    > 您可以使用下列程序，在其中複製路徑**原始檔控制總管**:  
   
     - 在 **資料夾** 窗格中，按一下 規則集檔案所在的資料夾。 複製資料夾中所顯示的版本控制路徑**來源**方塊，然後以手動方式輸入規則集檔案的名稱。  
   

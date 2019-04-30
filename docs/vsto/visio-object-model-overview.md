@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: dbae3a1e003c0d9381b80fc24227e65a18c1c8f1
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 1ca692e85396b11647c507b18c95ca095b3f8072
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60096552"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438763"
 ---
 # <a name="visio-object-model-overview"></a>Visio 物件模型概觀
   若要開發 Microsoft Office Visio 的 Office 方案，您可以與 Visio 物件模型互動。 組成這個物件模型的類別和介面，是由 Visio 的主要 Interop 組件所提供，並在 `Microsoft.Office.Interop.Visio` 命名空間中定義。
@@ -67,7 +67,7 @@ ms.locfileid: "60096552"
  VBA 物件模型參考中的所有物件和成員都會對應至 Visio 主要 Interop 組件 (PIA) 中的類型和成員。 比方說， `Document` VBA 物件模型參考中的物件會對應至 Visio PIA 中的 Microsoft.Office.Interop.Visio.Document 型別。 雖然 VBA 物件模型參考會提供大部分屬性、方法和事件的程式碼範例，但如果您想要在以 Visual Studio 建立的 Visio VSTO 增益集專案中使用這些程式碼範例，您必須將此參考中的 VBA 程式碼改成 Visual Basic 或 Visual C# 程式碼。
 
 > [!NOTE]
->  目前沒有 Visio 主要 Interop 組件的參考文件。
+> 目前沒有 Visio 主要 Interop 組件的參考文件。
 
  如需相關程式碼範例和其他建立 Visio 解決方案的工具，請參閱[Visio 2010 軟體開發套件](http://go.microsoft.com/fwlink/?LinkId=196501)。
 

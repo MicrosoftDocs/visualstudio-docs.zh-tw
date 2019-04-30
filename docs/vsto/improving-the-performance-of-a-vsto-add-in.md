@@ -10,12 +10,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: df17245a398c71e7ae9ce0077352f47b0b70ab9b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 2add0dfced6a3b8e8263dafe133ee3a2f86637f5
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60071817"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63420942"
 ---
 # <a name="improve-the-performance-of-a-vsto-add-in"></a>提升 VSTO 增益集的效能
   最佳化您為 Office 應用程式建立的 VSTO 增益集，您可以提供使用者更好的體驗，讓他們快速地啟動、關閉、開啟項目及執行其他工作。 如果是 Outlook 適用的 VSTO 增益集，您還可以減少 VSTO 增益集因為效能不佳而停用的機率。 實作下列策略可以提升 VSTO 增益集的效能：
@@ -93,7 +93,7 @@ ms.locfileid: "60071817"
 - 驗證部署資訊清單的數位簽章。
 
   > [!NOTE]
-  >  這個方法如果不需要將您 VSTO 增益集部署至使用者的電腦上的安全位置。
+  > 這個方法如果不需要將您 VSTO 增益集部署至使用者的電腦上的安全位置。
 
   如需詳細資訊，請參閱 <<c0> [ 使用 Windows Installer 部署 Office 方案](../vsto/deploying-an-office-solution-by-using-windows-installer.md)。
 
@@ -111,7 +111,7 @@ ms.locfileid: "60071817"
  請考慮在不同的執行緒中執行耗時的工作 (例如需長時間執行的工作、資料庫連接或其他類型的網路呼叫)。 如需詳細資訊，請參閱 < [Office 中的執行緒支援](../vsto/threading-support-in-office.md)。
 
 > [!NOTE]
->  所有呼叫 Office 物件模型的程式碼，都必須在主執行緒中執行。
+> 所有呼叫 Office 物件模型的程式碼，都必須在主執行緒中執行。
 
 ## <a name="see-also"></a>另請參閱
 

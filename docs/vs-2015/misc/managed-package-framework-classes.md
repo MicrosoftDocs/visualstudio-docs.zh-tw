@@ -12,18 +12,18 @@ helpviewer_keywords:
 ms.assetid: 15aedcc3-c79a-460b-b620-43223f1ae81e
 caps.latest.revision: 24
 manager: jillfra
-ms.openlocfilehash: d8e2bbf51aa6266411558e91f3c17905d0c8605c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 75f7cb153a976614ff790095141a820af80b5834
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58943538"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63422759"
 ---
 # <a name="managed-package-framework-classes"></a>Managed 封裝架構類別
 Managed 封裝架構 (MPF) 類別可用來使用 Managed 程式碼建立 VSPackage。 它們提供許多 VSPackage 介面的預設實作。 藉由隱藏實作詳細資料和複雜性，MPF 可讓您以最少的程式碼建立 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 整合產品。  
   
 > [!WARNING]
->  Visual Studio SDK 附有大部分包含 Managed 封裝架構類別的組件。 您可以在 [適用於專案的 Managed 封裝架構](http://mpfproj11.codeplex.com/)中下載適用於專案的 Managed 封裝架構原始程式碼。  
+> Visual Studio SDK 附有大部分包含 Managed 封裝架構類別的組件。 您可以在 [適用於專案的 Managed 封裝架構](http://mpfproj11.codeplex.com/)中下載適用於專案的 Managed 封裝架構原始程式碼。  
   
 ## <a name="mpf-namespaces"></a>MPF 命名空間  
  下表列出 [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)]所提供的 MPF 命名空間。  

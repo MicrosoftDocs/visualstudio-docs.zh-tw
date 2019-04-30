@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 68bb68160b78df4abe1b6874080c9a3ec91a3e31
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 2549ad27f0f05d3425dd6625e9d48fdfab4db3a6
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60063422"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63386072"
 ---
 # <a name="writing-a-t4-text-template"></a>撰寫 T4 文字範本
 文字範本包含將透過它產生的文字。 例如，建立網頁的範本會包含"\<html >...」 和所有其他標準部分 HTML 網頁。 插入範本中所*控制區塊*，這是一個片段的程式碼。 控制區塊提供不同的值，並允許文字的各部分成為條件式和重複。
@@ -94,7 +94,7 @@ Hello!
  只要程式碼中允許 `Write();` 陳述式的位置，就可以插入文字區塊。
 
 > [!NOTE]
->  當您內嵌文字區塊，例如迴圈或條件式複合陳述式內時，一律使用大括號 {...} 若要包含文字區塊。
+> 當您內嵌文字區塊，例如迴圈或條件式複合陳述式內時，一律使用大括號 {...} 若要包含文字區塊。
 
 ### <a name="expression-control-blocks"></a>運算式控制區塊
  運算式控制區塊會評估運算式，並將它轉換為字串。 這會插入至輸出檔案。

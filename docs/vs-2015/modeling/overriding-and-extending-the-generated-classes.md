@@ -11,12 +11,12 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 34e40863883643955c4517337de5410f0745703d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: a7b9733a47b4763a0f28ee4b24b54fdfd44bf066
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58939923"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63435009"
 ---
 # <a name="overriding-and-extending-the-generated-classes"></a>覆寫及擴充產生的類別
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,7 +46,7 @@ ms.locfileid: "58939923"
  `} }`  
   
 > [!NOTE]
->  若要覆寫產生的類別中的方法，一律從產生的檔案分隔的檔案中撰寫程式碼。 一般而言，該檔案包含在名為 CustomCode 資料夾中。 如果您變更產生的程式碼時，它們將會遺失的情況，當您重新產生的 DSL 定義中的程式碼。  
+> 若要覆寫產生的類別中的方法，一律從產生的檔案分隔的檔案中撰寫程式碼。 一般而言，該檔案包含在名為 CustomCode 資料夾中。 如果您變更產生的程式碼時，它們將會遺失的情況，當您重新產生的 DSL 定義中的程式碼。  
   
  若要探索您可以覆寫哪些方法，請輸入**覆寫**在類別中後, 接空格。 IntelliSense 工具提示會告訴您哪些方法可以覆寫。  
   

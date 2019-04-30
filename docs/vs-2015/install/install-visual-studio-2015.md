@@ -19,12 +19,12 @@ caps.latest.revision: 183
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: 8e6f39e420981615f391103c6cee431f930190bf
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 677a72f0378c62f2ca65515ec563069f22b9ff09
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60118093"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433014"
 ---
 # <a name="install-visual-studio-2015"></a>安裝 Visual Studio 2015
 
@@ -53,7 +53,7 @@ ms.locfileid: "60118093"
  自訂元件包括 Visual C++、Visual F#、SQL Server Data Tools、跨平台行動工具和 SDK 以及協力廠商 SDK 和擴充功能。 如果您沒有在初始安裝期間選取任何自訂元件，仍可於稍後安裝。
 
 > [!NOTE]
->  自訂安裝會自動包含預設安裝中的元件。
+> 自訂安裝會自動包含預設安裝中的元件。
 
  自訂元件的完整清單如下所示：
 
@@ -70,7 +70,7 @@ ms.locfileid: "60118093"
  您也可以使用您的 Visual Studio 訂用帳戶服務，從使用安裝媒體 (Dvd)，安裝 Visual Studio [My.VisualStudio.com](https://my.visualstudio.com/downloads?q=visual%20studio%20enterprise%202015)網站，下載 web 安裝程式從[Visual Studio下載](http://go.microsoft.com/fwlink/?LinkId=517106)網站，或藉由建立離線安裝版面配置 (請參閱 <<c8> [ 建立離線安裝 Visual Studio 的](../install/create-an-offline-installation-of-visual-studio.md)頁面以取得詳細資料)。
 
 > [!IMPORTANT]
->  您必須擁有系統管理員認證才能安裝 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]。 不過，在安裝之後，您不需要它們也可使用 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 。
+> 您必須擁有系統管理員認證才能安裝 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]。 不過，在安裝之後，您不需要它們也可使用 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 。
 
  您的本機系統管理員帳戶必須啟用下列權限，才能安裝 Visual Studio 中的所有項目。
 

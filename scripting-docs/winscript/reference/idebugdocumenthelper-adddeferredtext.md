@@ -17,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b1219543c438c79ad1add068262d9556dd2d7ce8
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
-ms.translationtype: MT
+ms.openlocfilehash: b2f2a7c134142668613cc38cee9357e42cb95096
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58159331"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433934"
 ---
 # <a name="idebugdocumenthelperadddeferredtext"></a>IDebugDocumentHelper::AddDeferredText
 指定的文字可用，但它不提供的字元，請告知協助專家。  
@@ -57,7 +57,7 @@ HRESULT AddDeferredText(
  它假設呼叫一次`IDebugDocumentText::GetText`可以從多個呼叫中取得字元`AddDeferredText`。 協助程式類別可能也會要求針對相同的延後的字元範圍一次以上。  
   
 > [!NOTE]
->  若要呼叫`AddDeferredText`不應混用來呼叫`AddUnicodeText`或`AddDBCSText`。 如果發生這種情況，`E_FAIL`會傳回。  
+> 若要呼叫`AddDeferredText`不應混用來呼叫`AddUnicodeText`或`AddDBCSText`。 如果發生這種情況，`E_FAIL`會傳回。  
   
 ## <a name="see-also"></a>另請參閱  
  [IDebugDocumentHelper 介面](../../winscript/reference/idebugdocumenthelper-interface.md)   

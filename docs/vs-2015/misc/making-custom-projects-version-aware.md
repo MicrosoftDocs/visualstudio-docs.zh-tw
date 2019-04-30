@@ -7,12 +7,12 @@ ms.topic: conceptual
 ms.assetid: 5233d3ff-6e89-4401-b449-51b4686becca
 caps.latest.revision: 33
 manager: jillfra
-ms.openlocfilehash: 3118ce72cd75baaf15fc66eedc5f2cd48c6f43d6
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 10b57508c498607533a9a9b1fbbcf3b15b6f7a4f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60096591"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63422733"
 ---
 # <a name="making-custom-projects-version-aware"></a>讓自訂專案成為版本感知
 在自訂專案系統中，您可以允許在多個版本的 Visual Studio 中載入該類型的專案。 您也可以防止舊版本的 Visual Studio 中載入該類型的專案。 您也可以讓該專案能夠向較新版本識別自己，以防專案需要修復、轉換或取代。  
@@ -37,7 +37,7 @@ ms.locfileid: "60096591"
 6. `VSPUVF_PROJECT_DEPRECATED`：表示已不再支援此專案。  
   
 > [!NOTE]
->  為了避免混淆，在設定升級旗標時請不要合併它們。 例如，不要建立模稜兩可的升級狀態，例如 `VSPUVF_PROJECT_SAFEREPAIR | VSPUVF_PROJECT_DEPRECATED`。  
+> 為了避免混淆，在設定升級旗標時請不要合併它們。 例如，不要建立模稜兩可的升級狀態，例如 `VSPUVF_PROJECT_SAFEREPAIR | VSPUVF_PROJECT_DEPRECATED`。  
   
  專案類別可能會從 `UpgradeProjectFlavor_CheckOnly` 介面實作函式 `IVsProjectFlavorUpgradeViaFactory2` 。 若要讓此函式運作，必須呼叫先前所述的 `IVsProjectUpgradeViaFactory4.UpgradeProject_CheckOnly` 實作。 Visual Basic 或 C# 基礎專案系統中已實作此呼叫。 此函式的效果可讓專案類別除了基底專案系統已判斷的升級需求之外，也能判斷專案的升級需求。 相容性對話方塊會顯示最嚴重的兩項需求。  
   
@@ -72,7 +72,7 @@ ms.locfileid: "60096591"
      如果您實作此程式碼，會出現專案相容性對話方塊。 對話方塊會向使用者要求權限，以將所有指定的專案標記為不相容。 如果使用者同意， `AskForUserConsentToBreakAssetCompat` 會傳回 `S_OK`，否則 `AskForUserConsentToBreakAssetCompat` 會傳回 `OLE_E_PROMPTSAVECANCELLED`。  
   
     > [!WARNING]
-    >  在最常見的情況下， `IVsHierarchy` 陣列將只包含一個項目。  
+    > 在最常見的情況下， `IVsHierarchy` 陣列將只包含一個項目。  
   
 3. 如果 `AskForUserConsentToBreakAssetCompat` 傳回 `S_OK`，元件會標記或接受中斷相容性的變更。  
   
@@ -98,7 +98,7 @@ ms.locfileid: "60096591"
      如需詳細資訊，請參閱<xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.SetProperty%2A>。  
   
 > [!IMPORTANT]
->  您必須實作 `VSHPROPID_MinimumDesignTimeCompatVersion` 屬性，來將專案標記為相容或不相容。 比方說，如果專案系統使用 MSBuild 專案檔，請在專案檔加入 `<MinimumVisualStudioVersion>` 建置屬性，且值等於對應的 `VSHPROPID_MinimumDesignTimeCompatVersion` 屬性值。  
+> 您必須實作 `VSHPROPID_MinimumDesignTimeCompatVersion` 屬性，來將專案標記為相容或不相容。 比方說，如果專案系統使用 MSBuild 專案檔，請在專案檔加入 `<MinimumVisualStudioVersion>` 建置屬性，且值等於對應的 `VSHPROPID_MinimumDesignTimeCompatVersion` 屬性值。  
   
 ## <a name="detecting-whether-a-project-is-incompatible"></a>偵測專案是否不相容  
  與 Visual Studio 目前版本不相容的專案必須避免載入。 此外，也不能升級或修復不相容的專案。 因此，必須檢查專案的相容性兩次：第一次是在考慮升級或修復它時，第二次則是在載入它之前。  
@@ -129,7 +129,7 @@ IVsProjectUpgradeViaFactory::UpgradeProject_CheckOnly(
    `IVsProjectUpgradeViaFactory4` 和 `IVsProjectFlavorUpgradeViaFactory2` 中的新實作能更精確地指定移轉類型。  
   
 > [!NOTE]
->  您可以快取 `UpgradeProject_CheckOnly` 方法的相容性檢查結果，以便也可供後續呼叫 `CreateProject`時使用。  
+> 您可以快取 `UpgradeProject_CheckOnly` 方法的相容性檢查結果，以便也可供後續呼叫 `CreateProject`時使用。  
   
  例如，如果專為 `UpgradeProject_CheckOnly` SP1 專案系統撰寫的 `CreateProject` 和 [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)] 方法會檢查專案檔案，並發現 `<MinimumVisualStudioVersion>` 組建屬性為 "11.0"，則 Visual Studio 2010 SP1 便不會載入專案。 此外， **方案導覽** 會表示專案「不相容」，且不會載入它。  
   

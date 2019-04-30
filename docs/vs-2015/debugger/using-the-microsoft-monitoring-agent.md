@@ -9,12 +9,12 @@ caps.latest.revision: 8
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: c6ea3c9a5ecb0fa10c6b020f3af8a51a65952c9a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 06db94841a45f648461822c5f205cb68bbb2b1c2
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60082070"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437717"
 ---
 # <a name="using-the-microsoft-monitoring-agent"></a>使用 Microsoft Monitoring Agent
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -62,7 +62,7 @@ ms.locfileid: "60082070"
      請務必在開始監視之前建立這個目錄。 若要避免讓應用程式變慢，請選擇本機高速磁碟上不是非常活躍的位置。  
   
     > [!IMPORTANT]
-    >  IntelliTrace 記錄檔可能包含個人和機密資料。 限制這個目錄，只供必須使用檔案的識別使用。 請檢查您公司的隱私權原則。  
+    > IntelliTrace 記錄檔可能包含個人和機密資料。 限制這個目錄，只供必須使用檔案的識別使用。 請檢查您公司的隱私權原則。  
   
 5. 若要執行詳細的函式層級監視，或是監視 SharePoint 應用程式，請將 IntelliTrace 記錄檔目錄的讀取和寫入權限授與裝載 Web 應用程式或 SharePoint 應用程式的應用程式集區。 [問：如何設定應用程式集區的權限？](#FullPermissionsITLog)  
   
@@ -80,7 +80,7 @@ ms.locfileid: "60082070"
 3. [造訪 TechNet](http://technet.microsoft.com/systemcenter/default) 以取得最新的說明內容。  
   
 #### <a name="FullPermissionsITLog"></a> 問：如何設定應用程式集區的權限？  
- **答：** 使用 Windows **icacls** 命令，或使用 Windows 檔案總管 (或檔案總管)。 例如：  
+ **答：** 使用 Windows **icacls** 命令，或使用 Windows 檔案總管 (或檔案總管)。 例如:   
   
 - 使用 Windows **icacls** 命令設定權限：  
   
@@ -162,7 +162,7 @@ ms.locfileid: "60082070"
   
    如果 `enabled` 屬性不存在，表示已啟用事件。  
   
-   例如：  
+   例如:   
   
   - 針對未使用 Windows Workflow 的應用程式停用 Windows Workflow 事件。  
   
@@ -259,7 +259,7 @@ ms.locfileid: "60082070"
 3. 將記錄檔複製到安全的共用資料夾，然後從具有 Visual Studio Enterprise (不具有 Professional 或 Community 版本) 的電腦開啟記錄檔。  
   
    > [!IMPORTANT]
-   >  當您共用 IntelliTrace 記錄檔時，請務必小心，因為它們可能包含個人和機密資料。 請確認可以存取這些記錄檔的人員都具有查看該資料的權限。 請檢查您公司的隱私權原則。  
+   > 當您共用 IntelliTrace 記錄檔時，請務必小心，因為它們可能包含個人和機密資料。 請確認可以存取這些記錄檔的人員都具有查看該資料的權限。 請檢查您公司的隱私權原則。  
   
    **下一步：**[診斷記錄的事件，在 Visual Studio Enterprise](../debugger/diagnose-problems-after-deployment.md#InvestigateEvents)  
   
@@ -280,7 +280,7 @@ ms.locfileid: "60082070"
   
     **Stop-WebApplicationMonitoring -All**  
   
-    例如:   
+    例如：  
   
     **PS C:\\>Stop-WebApplicationMonitoring "Fabrikam\iFabrikamFiber.Web"**  
   

@@ -14,12 +14,12 @@ caps.latest.revision: 26
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: b197bbc434ecf01ad5b6df332530ad719575aede
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 76dac6e20cc85eeb5784b0b6e29ee8d1b23fbd92
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60104079"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432803"
 ---
 # <a name="how-to-collect-cpu-counter-data"></a>HOW TO：收集 CPU 計數器資料
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -63,7 +63,7 @@ CPU 事件計數器可用來收集硬體特定的效能資料。 本主題說明
 4. 針對每個您想收集的事件，選取事件，然後按一下向右鍵以將事件加入至 [選取的計數器] 清單。  
   
     > [!NOTE]
-    >  只有在您選取 [收集 CPU 計數器] 核取方塊時，才會啟用 [可用的效能計數器]。  
+    > 只有在您選取 [收集 CPU 計數器] 核取方塊時，才會啟用 [可用的效能計數器]。  
   
 ## <a name="see-also"></a>另請參閱  
  [設定效能工作階段](../profiling/configuring-performance-sessions.md)   

@@ -21,12 +21,12 @@ caps.latest.revision: 84
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 143daa7f54179867325206f62a852fd685852a6f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: e1a0ce9cfaa09a5332d0bce39b31f946b7b5a177
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60051813"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437480"
 ---
 # <a name="validate-code-with-layer-diagrams"></a>使用分層圖驗證程式碼
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -56,7 +56,7 @@ ms.locfileid: "60051813"
   您可以在 Visual Studio 中的開放分層圖或從命令提示字元手動驗證程式碼。 您也可以在執行本機組建或 Team Foundation Build 時自動驗證程式碼。 請參閱[Channel 9 影片：設計和驗證架構使用圖層圖表](http://go.microsoft.com/fwlink/?LinkID=252073)。  
   
 > [!IMPORTANT]
->  如果您要以 Team Foundation Build 執行圖層驗證，您也必須在您的組建伺服器上安裝相同版本的 Visual Studio。  
+> 如果您要以 Team Foundation Build 執行圖層驗證，您也必須在您的組建伺服器上安裝相同版本的 Visual Studio。  
   
 - [項目是否支援驗證](#SupportsValidation)  
   
@@ -92,14 +92,14 @@ ms.locfileid: "60051813"
 1. 以滑鼠右鍵按一下圖表介面，然後按一下**驗證架構**。  
   
     > [!NOTE]
-    >  根據預設，**建置動作**上的圖層圖表 (.layerdiagram) 檔案的屬性設定為**Validate** ，讓圖表納入驗證程序。  
+    > 根據預設，**建置動作**上的圖層圖表 (.layerdiagram) 檔案的屬性設定為**Validate** ，讓圖表納入驗證程序。  
   
      **錯誤清單**視窗會報告所發生的任何錯誤。 如需有關驗證錯誤的詳細資訊，請參閱 <<c0> [ 了解並解決圖層驗證的錯誤](#UnderstandingValidationErrors)。  
   
 2. 若要檢視每個錯誤的來源，請連按兩下中的錯誤**錯誤清單**視窗。  
   
     > [!NOTE]
-    >  [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 可能會顯示 Code Map，而非錯誤來源。 如果程式碼具有並非由圖層圖表所指定的組件相依性，或是程式碼遺失了圖層圖表所指定的相依性，則會出現此情況。 請檢閱 Code Map 或程式碼，以判斷相依性是否應存在。 如需 code map 的詳細資訊，請參閱[對應方案之間的相依性](../modeling/map-dependencies-across-your-solutions.md)。  
+    > [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 可能會顯示 Code Map，而非錯誤來源。 如果程式碼具有並非由圖層圖表所指定的組件相依性，或是程式碼遺失了圖層圖表所指定的相依性，則會出現此情況。 請檢閱 Code Map 或程式碼，以判斷相依性是否應存在。 如需 code map 的詳細資訊，請參閱[對應方案之間的相依性](../modeling/map-dependencies-across-your-solutions.md)。  
   
 3. 若要管理錯誤，請參閱[管理驗證錯誤](#ManageErrors)。  
   
@@ -145,7 +145,7 @@ ms.locfileid: "60051813"
  在開發過程中，您可以隱藏驗證期間已報告過的某些衝突。 例如，您可能會想要隱藏已經處理的錯誤，或是與特定情節無關的錯誤。 當您隱藏錯誤時，最好在 [!INCLUDE[esprfound](../includes/esprfound-md.md)] 中記錄工作項目。  
   
 > [!WARNING]
->  您必須先連接 TFS 原始程式碼控制 (SCC) 才能建立或連結工作項目。 若您嘗試開啟連接至不同的 TFS SCC，Visual Studio 會自動關閉目前方案。 請先確認您已連接至適當的 SCC，再嘗試建立或連結至工作項目。 在更新版本的 Visual Studio 中，如果沒有連接至 SCC 即無法使用功能表命令。  
+> 您必須先連接 TFS 原始程式碼控制 (SCC) 才能建立或連結工作項目。 若您嘗試開啟連接至不同的 TFS SCC，Visual Studio 會自動關閉目前方案。 請先確認您已連接至適當的 SCC，再嘗試建立或連結至工作項目。 在更新版本的 Visual Studio 中，如果沒有連接至 SCC 即無法使用功能表命令。  
   
 ##### <a name="to-create-a-work-item-for-a-validation-error"></a>若要針對驗證錯誤建立工作項目  
   

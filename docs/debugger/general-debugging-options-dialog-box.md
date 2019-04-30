@@ -21,12 +21,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 29b730bacd589e7b42b9f87086eda91d9e199622
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 8579504f549cb078fee178127c7396896fce5313
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59504415"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63399414"
 ---
 # <a name="general-debugging-options"></a>一般偵錯選項
 
@@ -85,7 +85,7 @@ ms.locfileid: "59504415"
 **啟用來源連結支援**：會告知 Visual Studio 偵錯工具下載來源檔案 *.pdb*包含來源連結資訊的檔案。 如需有關來源連結的詳細資訊，請參閱[來源連結規格](https://github.com/dotnet/core/blob/master/Documentation/diagnostics/source_link.md)。
 
 > [!IMPORTANT]
->  因為來源連結將會下載使用 http 或 https 的檔案，請確定您信任 *.pdb*檔案。
+> 因為來源連結將會下載使用 http 或 https 的檔案，請確定您信任 *.pdb*檔案。
 
 - **改為對所有來源連結要求使用 Git 認證管理員驗證**： 當已啟用來源連結支援，並驗證失敗的來源連結要求時，Visual Studio 接著會呼叫 Git 認證管理員。
 

@@ -19,12 +19,12 @@ caps.latest.revision: 28
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 50b9fcb98b64e36d37ec2153588dcbb388ea960b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 017414bdbf8e0e1a3a664782aab1ea44bda030c4
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60105496"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432827"
 ---
 # <a name="how-to-choose-sampling-events"></a>HOW TO：選擇取樣事件
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,7 +40,7 @@ ms.locfileid: "60105496"
 - 效能計數器 - 低階效能問題的 CPU 計數器。  
   
 > [!IMPORTANT]
->  如果您使用取樣方法收集 .NET 記憶體資料 (配置或物件存留期，或兩者)，則會忽略所有使用者指定的取樣事件，並會使用適當的記憶體配置或記憶體回收事件 (或兩者) 來收集資料。  
+> 如果您使用取樣方法收集 .NET 記憶體資料 (配置或物件存留期，或兩者)，則會忽略所有使用者指定的取樣事件，並會使用適當的記憶體配置或記憶體回收事件 (或兩者) 來收集資料。  
   
 ### <a name="to-select-a-sample-event"></a>選取取樣事件  
   
@@ -51,7 +51,7 @@ ms.locfileid: "60105496"
 3. 從 [取樣事件] 下拉式清單中選取要用來對應用程式進行程式碼剖析的取樣事件。  
   
     > [!NOTE]
-    >  只有當您從 [取樣事件] 下拉式清單中選取 [效能計數器] 時，才會啟用 [可用的效能計數器]。  
+    > 只有當您從 [取樣事件] 下拉式清單中選取 [效能計數器] 時，才會啟用 [可用的效能計數器]。  
   
 4. 如果您選取 [效能計數器]，請從 [可用的效能計數器] 樹狀檢視控制項中選取特定的 CPU 計數器。  
   

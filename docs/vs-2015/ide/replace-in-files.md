@@ -16,12 +16,12 @@ caps.latest.revision: 33
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 6d4199b0f1daad60ea7fdcdf6405ae232a70d5b3
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 20e2b63e98969241dc91a24da81d4c170ef98b47
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60082590"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63419730"
 ---
 # <a name="replace-in-files"></a>檔案中取代
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ ms.locfileid: "60082590"
 [檔案中取代]** 可讓您在一組指定檔案中搜尋程式碼的字串或運算式，並變更部分或所有找到的相符項目。 在 [結果選項] 內選取的 [尋找結果] 視窗中，會列出找到的相符項目與所採取的動作。  
   
 > [!NOTE]
->  根據您目前使用的設定或版本，您所看到的對話方塊與功能表命令可能會與 [說明] 中描述的不同。 若要變更設定，請從 [工具] 功能表中選擇 [匯入和匯出設定]。 如需詳細資訊，請參閱 [在 Visual Studio 中自訂開發設定](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)  
+> 根據您目前使用的設定或版本，您所看到的對話方塊與功能表命令可能會與 [說明] 中描述的不同。 若要變更設定，請從 [工具] 功能表中選擇 [匯入和匯出設定]。 如需詳細資訊，請參閱 [在 Visual Studio 中自訂開發設定](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)  
   
  您可以使用下列方法之一，在 [檔案中尋找] 視窗中顯示 [檔案中取代]。  
   
@@ -53,7 +53,7 @@ ms.locfileid: "60082590"
  [查詢] 下拉式清單中所選擇的選項，可決定 [檔案中取代] 只會搜尋目前作用中的檔案，還是會搜尋所有儲存在特定資料夾內的檔案。 從清單中選取搜尋範圍、輸入資料夾路徑，或按一下 [瀏覽 (...)] 按鈕，顯示 [選擇搜尋資料夾] 對話方塊，然後選擇要搜尋的資料夾集合。 您也可以直接在 [查詢] 方塊中輸入路徑。  
   
 > [!NOTE]
->  如果選取 [查詢] 選項時，所搜尋的檔案已從原始程式碼控制簽出，則只會搜尋該檔案的本機電腦下載版本。  
+> 如果選取 [查詢] 選項時，所搜尋的檔案已從原始程式碼控制簽出，則只會搜尋該檔案的本機電腦下載版本。  
   
 ## <a name="find-options"></a>尋找選項  
  您可以展開或摺疊 [尋找選項] 區段。 可選取或清除下列選項：  
@@ -88,7 +88,7 @@ ms.locfileid: "60082590"
  選取時，會將已進行取代作業的所有檔案保持開啟，以便您復原或儲存變更。 由於記憶體有限，因此在取代作業之後可以保持開啟的檔案數目有所限制。  
   
 > [!CAUTION]
->  只有在保持開啟可供編輯的檔案中，才可以使用 [復原]。 如果未選取這個選項，則未開啟以供編輯的檔案將會保持關閉狀態，其中也不會出現 [復原] 選項。  
+> 只有在保持開啟可供編輯的檔案中，才可以使用 [復原]。 如果未選取這個選項，則未開啟以供編輯的檔案將會保持關閉狀態，其中也不會出現 [復原] 選項。  
   
 ## <a name="see-also"></a>另請參閱  
  [尋找和取代文字](../ide/finding-and-replacing-text.md)   

@@ -26,12 +26,12 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: b0489dec1c2d6cb3d7559a2bdd029ccab6c3ce5f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: dbbb730af965b414a907bb230a58291ec53084a3
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60056805"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63425340"
 ---
 # <a name="save-data-back-to-the-database"></a>將資料儲存回資料庫
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -96,7 +96,7 @@ ms.locfileid: "60056805"
 |目前|Jim Wilson|James C. Wilson|  
   
 > [!CAUTION]
->  在 `preserveChanges = true`案例中，如果<xref:System.Data.DataSet.RejectChanges%2A>記錄，以在目標資料集上呼叫方法，則它會還原為原始資料，從*來源*資料集。 這表示，如果您嘗試更新原始資料來源與目標資料集，它可能無法以尋找要更新原始的資料列。 您可以防止並行存取違規，另一個資料集填入資料來源更新的記錄，然後再執行合併以防止並行存取違規。 （當另一位使用者已填入資料集之後，請修改資料來源中的記錄會發生並行存取違規）。  
+> 在 `preserveChanges = true`案例中，如果<xref:System.Data.DataSet.RejectChanges%2A>記錄，以在目標資料集上呼叫方法，則它會還原為原始資料，從*來源*資料集。 這表示，如果您嘗試更新原始資料來源與目標資料集，它可能無法以尋找要更新原始的資料列。 您可以防止並行存取違規，另一個資料集填入資料來源更新的記錄，然後再執行合併以防止並行存取違規。 （當另一位使用者已填入資料集之後，請修改資料來源中的記錄會發生並行存取違規）。  
   
 ## <a name="update-constraints"></a>更新限制式  
  若要變更現有的資料列，新增或更新個別資料行中的資料。 如果資料集包含條件約束 （例如外部索引鍵或非 null 的條件約束），它很有可能，記錄可以暫時處於錯誤狀態更新它。 也就是說，它可以處於錯誤狀態完成更新一個資料行後，但您前往下一個。  
@@ -110,7 +110,7 @@ ms.locfileid: "60056805"
   完成更新之後，您可以重新啟用條件約束檢查，這也會重新啟用 更新事件，並引發它們。  
   
 > [!NOTE]
->  在 Windows Forms 中，內建資料格的資料繫結架構暫止條件約束檢查焦點移出資料列，並沒有明確呼叫之前<xref:System.Data.DataRow.BeginEdit%2A>， <xref:System.Data.DataRow.EndEdit%2A>，或<xref:System.Data.DataRow.CancelEdit%2A>方法。  
+> 在 Windows Forms 中，內建資料格的資料繫結架構暫止條件約束檢查焦點移出資料列，並沒有明確呼叫之前<xref:System.Data.DataRow.BeginEdit%2A>， <xref:System.Data.DataRow.EndEdit%2A>，或<xref:System.Data.DataRow.CancelEdit%2A>方法。  
   
  條件約束會自動停用時<xref:System.Data.DataSet.Merge%2A>資料集上叫用方法。 合併完成後，如果有任何條件約束，無法啟用資料集上的<xref:System.Data.ConstraintException>就會擲回。 在此情況下，<xref:System.Data.DataSet.EnforceConstraints%2A>屬性設定為`false,`，重設之前，必須解決所有的條件約束違規<xref:System.Data.DataSet.EnforceConstraints%2A>屬性設`true`。  
   
@@ -182,12 +182,12 @@ ms.locfileid: "60056805"
 - 之後您載入資料集。 如果您載入資料集藉由呼叫 TableAdapter 的`Fill`方法，則配接器會自動為您認可變更。 不過，如果您載入資料集合併另一個資料集，然後您必須以手動方式認可的變更。  
   
   > [!NOTE]
-  >  您可以避免配接器會自動認可變更，當您呼叫`Fill`方法，藉由設定`AcceptChangesDuringFill`屬性的介面卡`false`。 如果設定為`false`，則<xref:System.Data.DataRow.RowState%2A>填滿期間插入每個資料列會設為<xref:System.Data.DataRowState>。  
+  > 您可以避免配接器會自動認可變更，當您呼叫`Fill`方法，藉由設定`AcceptChangesDuringFill`屬性的介面卡`false`。 如果設定為`false`，則<xref:System.Data.DataRow.RowState%2A>填滿期間插入每個資料列會設為<xref:System.Data.DataRowState>。  
   
 - 之後您的資料集將變更傳送至另一個處理序，例如 XML Web service。  
   
   > [!CAUTION]
-  >  認可變更，如此一來，就會清除任何變更資訊。 不認可後的變更直到您完成執行作業，需要您的應用程式知道在資料集中進行哪些變更。  
+  > 認可變更，如此一來，就會清除任何變更資訊。 不認可後的變更直到您完成執行作業，需要您的應用程式知道在資料集中進行哪些變更。  
   
   這個方法會產生下列結果：  
   
@@ -208,7 +208,7 @@ ms.locfileid: "60056805"
 |<xref:System.Data.DataSet.AcceptChanges%2A?displayProperty=fullName>|認可的資料集的所有資料表中的所有資料列上的變更。|  
   
 > [!NOTE]
->  如果您載入資料集藉由呼叫 TableAdapter 的`Fill`方法，您不需要明確接受變更。 根據預設，`Fill`方法呼叫`AcceptChanges`完成填入資料表格之後的方法。  
+> 如果您載入資料集藉由呼叫 TableAdapter 的`Fill`方法，您不需要明確接受變更。 根據預設，`Fill`方法呼叫`AcceptChanges`完成填入資料表格之後的方法。  
   
  相關的方法， `RejectChanges`，藉由複製復原變更的影響<xref:System.Data.DataRowVersion>回版本<xref:System.Data.DataRowVersion>記錄版本。 它也會設定<xref:System.Data.DataRow.RowState%2A>每一個記錄備份至<xref:System.Data.DataRowState>。  
   
@@ -224,7 +224,7 @@ ms.locfileid: "60056805"
 - 在資料後端，將資料傳送至資料來源 — 比方說，資料庫，並讓它接受或拒絕資料。 如果您正在使用的資料庫，具有複雜的驗證資料，以及提供錯誤資訊的設備，這可能是實用的方法，因為您可以驗證的資料，不論其來自何處。 不過，這種方法可能不會配合特定應用程式的驗證需求。 此外，驗證資料的資料來源可能會導致許多往返到資料來源，取決於您的應用程式可由後端所引發的驗證錯誤的解析的協助。  
   
   > [!IMPORTANT]
-  >  使用資料命令時<xref:System.Data.SqlClient.SqlCommand.CommandType%2A>屬性設為<xref:System.Data.CommandType>，仔細檢查，然後將它傳遞到您的資料庫用戶端傳來的資訊。 惡意的使用者可能會嘗試傳送 (插入) 修改過或額外的 SQL 陳述式，以獲得未授權的存取權或藉此破壞資料庫。 傳送至資料庫的使用者輸入之前，請務必確認資訊有效。 最好一律使用參數化的查詢或預存程序，可能的話。 如需詳細資訊，請參閱 [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07) (指令碼攻擊概觀)。  
+  > 使用資料命令時<xref:System.Data.SqlClient.SqlCommand.CommandType%2A>屬性設為<xref:System.Data.CommandType>，仔細檢查，然後將它傳遞到您的資料庫用戶端傳來的資訊。 惡意的使用者可能會嘗試傳送 (插入) 修改過或額外的 SQL 陳述式，以獲得未授權的存取權或藉此破壞資料庫。 傳送至資料庫的使用者輸入之前，請務必確認資訊有效。 最好一律使用參數化的查詢或預存程序，可能的話。 如需詳細資訊，請參閱 [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07) (指令碼攻擊概觀)。  
   
   集中進行完變更之後，您可以將變更傳送至資料來源。 大多數情況下，您可以呼叫`Update`TableAdapter （或資料配接器） 的方法。 方法會迴圈每一筆記錄資料表中的資料，判斷需要該類型的更新 （更新、 插入或刪除），如果有的話，然後再執行適當的命令。  
   
@@ -256,7 +256,7 @@ ms.locfileid: "60056805"
 - 傳送的 SQL 陳述式包含的 SET 子句，來設定新的已修改的資料行的值。  
   
     > [!NOTE]
-    >  如果使用的 TableAdapter`UpdateCommand`屬性設定為預存程序的名稱、 配接器將不會建構 SQL 陳述式。 相反地，它會叫用預存程序以適當的參數傳入。  
+    > 如果使用的 TableAdapter`UpdateCommand`屬性設定為預存程序的名稱、 配接器將不會建構 SQL 陳述式。 相反地，它會叫用預存程序以適當的參數傳入。  
   
 ## <a name="passing-parameters"></a>傳遞參數  
  通常，您會使用參數來傳遞要更新資料庫中的資料錄的值。  當 TableAdapter 的`Update`方法會執行 UPDATE 陳述式，它必須填寫的參數值。 它會取得這些值從`Parameters`適當的資料命令的集合，在此情況下，`UpdateCommand`在 TableAdapter 中的物件。  
@@ -268,7 +268,7 @@ ms.locfileid: "60056805"
  在 UPDATE 陳述式，您需要指定這兩個新的值 （其會將寫入的記錄），以及舊值 （以便可以在資料庫中找到記錄）。 因此有每個值的兩個參數： 一個用於 SET 子句，WHERE 子句，另一種。 這兩個參數會讀取更新時，記錄中的資料，但他們會收到不同版本的資料行值的參數為基礎[SqlParameter.SourceVersion 屬性](https://msdn.microsoft.com/library/system.data.sqlclient.sqlparameter.sourceversion.aspx)。 SET 子句的參數取得最新版本，和 WHERE 子句的參數取得原始的版本。  
   
 > [!NOTE]
->  您也可以在 設定值`Parameters`收集程式碼，您通常會執行中的資料配接器的事件處理常式中自行<xref:System.Data.DataTable.RowChanging>事件。  
+> 您也可以在 設定值`Parameters`收集程式碼，您通常會執行中的資料配接器的事件處理常式中自行<xref:System.Data.DataTable.RowChanging>事件。  
   
 ## <a name="see-also"></a>另請參閱  
  [使用 TableAdapter 更新資料](../data-tools/update-data-by-using-a-tableadapter.md)   

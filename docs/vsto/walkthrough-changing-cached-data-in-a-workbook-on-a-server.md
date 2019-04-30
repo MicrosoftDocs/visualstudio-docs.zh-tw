@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 3cb1793407b7baa3d290d43b0c0ef5a815cb8c40
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 386fee1c5c7da4eb06618d0afc522648b5248c6a
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60116962"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438637"
 ---
 # <a name="walkthrough-change-cached-data-in-a-workbook-on-a-server"></a>逐步解說：變更伺服器的活頁簿中的快取的資料
   本逐步解說示範如何修改 Microsoft Office Excel 活頁簿中快取不會啟動 Excel 所使用的資料集<xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument>類別。
@@ -43,7 +43,7 @@ ms.locfileid: "60116962"
   雖然本逐步解說假設您的開發電腦上執行的程式碼，本逐步解說所示範的程式碼可用並沒有 Excel 安裝在伺服器上。
 
 > [!NOTE]
->  在下列指示的某些 Visual Studio 使用者介面項目中，您的電腦可能會顯示不同的名稱或位置。 您所擁有的 Visual Studio 版本以及使用的設定會決定這些項目。 如需詳細資訊，請參閱[將 Visual Studio IDE 個人化](../ide/personalizing-the-visual-studio-ide.md)。
+> 在下列指示的某些 Visual Studio 使用者介面項目中，您的電腦可能會顯示不同的名稱或位置。 您所擁有的 Visual Studio 版本以及使用的設定會決定這些項目。 如需詳細資訊，請參閱[將 Visual Studio IDE 個人化](../ide/personalizing-the-visual-studio-ide.md)。
 
 ## <a name="prerequisites"></a>必要條件
  您需要下列元件才能完成此逐步解說：
@@ -269,7 +269,7 @@ ms.locfileid: "60116962"
    - A<xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument>物件，用來存取活頁簿中的資料快取。
 
      > [!NOTE]
-     >  下列程式碼假設您使用具有的活頁簿 *.xlsx*副檔名。 如果您的專案中的活頁簿會有不同的檔案副檔名，修改視的路徑。
+     > 下列程式碼假設您使用具有的活頁簿 *.xlsx*副檔名。 如果您的專案中的活頁簿會有不同的檔案副檔名，修改視的路徑。
 
      [!code-csharp[Trin_CachedDataWalkthroughs#6](../vsto/codesnippet/CSharp/AdventureWorksDataSet/DataWriter/Program.cs#6)]
      [!code-vb[Trin_CachedDataWalkthroughs#6](../vsto/codesnippet/VisualBasic/AdventureWorksDataSet/DataWriter/Module1.vb#6)]

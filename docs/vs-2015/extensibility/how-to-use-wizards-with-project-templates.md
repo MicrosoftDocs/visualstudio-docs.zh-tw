@@ -14,12 +14,12 @@ ms.assetid: 47ee26cf-67b7-4ff1-8a9d-ab11a725405c
 caps.latest.revision: 23
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 8da1661d518ff13d3949bee27dc0b78f5e244103
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: e8722cc2990f91446c806bf80f3673dc4c941532
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60056142"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432564"
 ---
 # <a name="how-to-use-wizards-with-project-templates"></a>HOW TO：搭配專案範本使用精靈
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,7 +36,7 @@ Visual Studio 提供<xref:Microsoft.VisualStudio.TemplateWizard.IWizard>介面�
 1. 建立 C# 專案範本的專案 (在 Visual Studio 中，**檔案 / 新增 / 專案 / Visual C# / 擴充性 / C# 專案範本**)。 命名**MyProjectTemplate**。  
   
     > [!NOTE]
-    >  系統可能會要求您安裝 Visual Studio SDK。 如需詳細資訊，請參閱 <<c0> [ 安裝 Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md)。  
+    > 系統可能會要求您安裝 Visual Studio SDK。 如需詳細資訊，請參閱 <<c0> [ 安裝 Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md)。  
   
 2. 加入新的 VSIX 專案 (**檔案 / 新增 / 專案 / Visual C# / 擴充性 / VSIX 專案**) 相同的方案與專案範本專案中 (在**方案總管 中**，選取 解決方案 節點中，按一下滑鼠右鍵，然後選取**新增 / 新增專案**)。 它命名為**MyProjectWizard。**  
   

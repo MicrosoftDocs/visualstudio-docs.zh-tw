@@ -11,12 +11,12 @@ ms.assetid: bb3d3322-0e5e-4dd5-b93a-24d5fbcd2ffd
 caps.latest.revision: 30
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 812862c3eaf99b7459bb422e174f8fe155ea384a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: d450e02d23159f186fd85bf1b687a2fb2c18e82a
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60042583"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432567"
 ---
 # <a name="how-to-use-the-activity-log"></a>HOW TO：使用活動記錄
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -24,7 +24,7 @@ ms.locfileid: "60042583"
 Vspackage 可以將訊息寫入活動記錄檔。 這項功能是對於在零售環境中偵錯 Vspackage 特別有用。  
   
 > [!TIP]
->  永遠開啟活動記錄檔。 Visual Studio 會保留上次一百個項目，以及具有一般的設定資訊的前十個項目一個循環緩衝區。  
+> 永遠開啟活動記錄檔。 Visual Studio 會保留上次一百個項目，以及具有一般的設定資訊的前十個項目一個循環緩衝區。  
   
 ### <a name="to-write-an-entry-to-the-activity-log"></a>若要將項目寫入活動記錄檔  
   

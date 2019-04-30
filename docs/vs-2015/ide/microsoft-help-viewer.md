@@ -20,12 +20,12 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 8572deb32ea5fab2ce8ad831deeaba783496cbc5
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 3a1e9a3abd6b16ae0365279a6eb9cb067bfeb225
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60104326"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63430858"
 ---
 # <a name="microsoft-help-viewer"></a>Microsoft Help Viewer
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ ms.locfileid: "60104326"
 您可以使用 Microsoft Help Viewer 在本機電腦上安裝及檢視各種產品和技術的內容。  
   
 > [!WARNING]
->  當您安裝 Visual Studio 時，您會取得說明檢視器。 若要在說明檢視器中開始讀取說明主題，而不要在 MSDN 下載網站上讀取，請在 Visual Studio 中移至 [說明] 功能表，選取 [設定說明偏好]，然後選取 [在說明檢視器中啟動]。 指定 Visual Studio 版本的離線說明主題僅於該版本的最終發行之後才可使用。  
+> 當您安裝 Visual Studio 時，您會取得說明檢視器。 若要在說明檢視器中開始讀取說明主題，而不要在 MSDN 下載網站上讀取，請在 Visual Studio 中移至 [說明] 功能表，選取 [設定說明偏好]，然後選取 [在說明檢視器中啟動]。 指定 Visual Studio 版本的離線說明主題僅於該版本的最終發行之後才可使用。  
   
  您可執行以下動作：  
   

@@ -7,12 +7,12 @@ ms.topic: conceptual
 ms.assetid: 9d3186f3-07d2-441f-b33e-435e95d8a0b8
 caps.latest.revision: 11
 ms.author: brgeorge
-ms.openlocfilehash: c09419d1294d51fe0b566acc649bc3f9612acfca
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 421ff85831bb611b655de2bc35f01423b61921a2
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60117172"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436578"
 ---
 # <a name="shared-colors"></a>共用色彩
 在此插入簡介。  
@@ -31,7 +31,7 @@ ms.locfileid: "60117172"
 - **使用其位置適用的控制項色彩。** 在特定狀態中，部分 Visual Studio 控制項沒有個別框線和背景色彩。 而是會選取其後介面的色彩。 務必根據控制項所放置的位置，而為其使用適合的語彙基元名稱。  
   
 > [!IMPORTANT]
->  請勿使用「起始頁」或 "Cider" 類別中找到的語彙基元！  
+> 請勿使用「起始頁」或 "Cider" 類別中找到的語彙基元！  
   
 ### <a name="command-structures"></a>命令結構  
   
@@ -240,7 +240,7 @@ ms.locfileid: "60117172"
 ##### <a name="BKMK_CommandComboBox"></a> 下拉式方塊  
   
 > [!IMPORTANT]
->  下拉式方塊與下拉式清單類似，但包括可編輯的文字區域。 如果下拉式清單未包括可編輯的文字區域，請使用 [Drop-down](../misc/shared-colors.md#BKMK_CommandDropDown)下找到的色彩語彙基元。  
+> 下拉式方塊與下拉式清單類似，但包括可編輯的文字區域。 如果下拉式清單未包括可編輯的文字區域，請使用 [Drop-down](../misc/shared-colors.md#BKMK_CommandDropDown)下找到的色彩語彙基元。  
   
  ![Combo box redline](../extensibility/ux-guidelines/media/0303-029-comboboxredline.png "0303-029_ComboBoxRedline")  
   
@@ -318,7 +318,7 @@ ms.locfileid: "60117172"
 ##### <a name="BKMK_CommandDropDown"></a> 下拉式清單  
   
 > [!IMPORTANT]
->  下拉式清單與下拉式方塊類似，但沒有可編輯的文字區域。 如果下拉式清單包括可編輯的文字區域，請使用 [Combo box](../misc/shared-colors.md#BKMK_CommandComboBox)下找到的色彩語彙基元。  
+> 下拉式清單與下拉式方塊類似，但沒有可編輯的文字區域。 如果下拉式清單包括可編輯的文字區域，請使用 [Combo box](../misc/shared-colors.md#BKMK_CommandComboBox)下找到的色彩語彙基元。  
   
  ![卸除&#45;向下紅線](../extensibility/ux-guidelines/media/0303-042-dropdownredline.png "0303年 042_DropdownRedline")  
   

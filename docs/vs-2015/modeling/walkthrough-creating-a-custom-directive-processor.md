@@ -12,12 +12,12 @@ caps.latest.revision: 76
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 8d71c820435ccf5bd131c11bc79844ac157561c7
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 438dd372cc2d70ecb8d1d41602751b6ce0cdf821
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60105301"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446758"
 ---
 # <a name="walkthrough-creating-a-custom-directive-processor"></a>逐步解說：建立自訂指示詞處理器
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -86,7 +86,7 @@ End Property
 1. 在 Visual Studio 中建立 C# 或 Visual Basic 類別庫專案，並命名為 CustomDP。  
 
     > [!NOTE]
-    >  如果您想要在多台電腦上安裝指示詞處理器，最好是使用 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 擴充功能 (VSIX) 專案，並在擴充功能中包含 .pkgdef 檔。 如需詳細資訊，請參閱 <<c0> [ 部署自訂指示詞處理器](../modeling/deploying-a-custom-directive-processor.md)。  
+    > 如果您想要在多台電腦上安裝指示詞處理器，最好是使用 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 擴充功能 (VSIX) 專案，並在擴充功能中包含 .pkgdef 檔。 如需詳細資訊，請參閱 <<c0> [ 部署自訂指示詞處理器](../modeling/deploying-a-custom-directive-processor.md)。  
 
 2. 加入下列組件的參考：  
 
@@ -619,7 +619,7 @@ End Property
  您可以從文字範本中呼叫指示詞之前[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]，您必須新增登錄機碼指示詞處理器。  
 
 > [!NOTE]
->  如果您想要在多台電腦上安裝指示詞處理器，最好是定義 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 擴充功能 (VSIX)，在其中包含 .pkgdef 檔和組件。 如需詳細資訊，請參閱 <<c0> [ 部署自訂指示詞處理器](../modeling/deploying-a-custom-directive-processor.md)。  
+> 如果您想要在多台電腦上安裝指示詞處理器，最好是定義 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 擴充功能 (VSIX)，在其中包含 .pkgdef 檔和組件。 如需詳細資訊，請參閱 <<c0> [ 部署自訂指示詞處理器](../modeling/deploying-a-custom-directive-processor.md)。  
 
  指示詞處理器的機碼存在於下列登錄位置：  
 
@@ -636,7 +636,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VisualStudio\*.0\TextTemplatin
  在本節中，您會將自訂指示詞處理器的機碼加入至位於上述位置的登錄。  
 
 > [!CAUTION]
->  不當編輯登錄可能會對系統造成嚴重損害。 變更登錄之前，務必先備份電腦上任何重要的資料。  
+> 不當編輯登錄可能會對系統造成嚴重損害。 變更登錄之前，務必先備份電腦上任何重要的資料。  
 
 #### <a name="to-add-a-registry-key-for-the-directive-processor"></a>若要加入指示詞處理器的登錄機碼  
 
@@ -649,7 +649,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VisualStudio\*.0\TextTemplatin
 3. 加入名為 CustomDirectiveProcessor 的新機碼。  
 
    > [!NOTE]
-   >  這是將會在自訂指示詞的 [處理器] 欄位中使用的名稱。 這個名稱不需要與指示詞名稱、指示詞處理器類別名稱或指示詞處理器命名空間相符。  
+   > 這是將會在自訂指示詞的 [處理器] 欄位中使用的名稱。 這個名稱不需要與指示詞名稱、指示詞處理器類別名稱或指示詞處理器命名空間相符。  
 
 4. 加入名為 Class 的新字串值，其值 CustomDP.CustomDirectiveProcessor 為新字串名稱的值。  
 
@@ -687,7 +687,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VisualStudio\*.0\TextTemplatin
 1. 建立名為文字檔`DocFile.xml`使用任何文字編輯器 (例如 [記事本])。  
 
     > [!NOTE]
-    >  您可以在任何位置建立這個檔案 (例如 C:\Test\DocFile.xml)。  
+    > 您可以在任何位置建立這個檔案 (例如 C:\Test\DocFile.xml)。  
 
 2. 將下列程式碼加入至此文字檔中：  
 
@@ -743,7 +743,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VisualStudio\*.0\TextTemplatin
 4. 將 TestDP.tt 的內容變更為下列文字。  
 
     > [!NOTE]
-    >  請務必取代字串 <`YOUR PATH>` DocFile.xml 檔的路徑。  
+    > 請務必取代字串 <`YOUR PATH>` DocFile.xml 檔的路徑。  
 
      文字範本的語言與指示詞處理器的語言不一定要相符。  
 
@@ -830,7 +830,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VisualStudio\*.0\TextTemplatin
     ```  
 
     > [!NOTE]
-    >  在這個範本中，`Processor` 參數的值為 `CustomDirectiveProcessor`。 `Processor` 參數的值必須與處理器之登錄機碼的名稱相符。  
+    > 在這個範本中，`Processor` 參數的值為 `CustomDirectiveProcessor`。 `Processor` 參數的值必須與處理器之登錄機碼的名稱相符。  
 
 5. 在 [檔案] 功能表上按一下 [全部儲存]。  
 
@@ -882,7 +882,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VisualStudio\*.0\TextTemplatin
 1. 以下列內容取代 TestDP.tt 中的程式碼。 HTML 會反白顯示。 請務必取代字串`YOUR PATH`DocFile.xml 檔的路徑。  
 
     > [!NOTE]
-    >  其他開啟\<# 和結尾 #> 標記的陳述式程式碼分開的 HTML 標記。  
+    > 其他開啟\<# 和結尾 #> 標記的陳述式程式碼分開的 HTML 標記。  
 
     ```csharp  
     <#@ assembly name="System.Xml" #>  

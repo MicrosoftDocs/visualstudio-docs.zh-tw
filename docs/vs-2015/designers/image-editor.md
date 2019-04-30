@@ -12,12 +12,12 @@ caps.latest.revision: 47
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 08fd0d6e33de0c032ab63f013fca7ee3174b260e
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: eba06da32c04fa0ac8824d3cd1c8d024d96c3091
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60077377"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63434400"
 ---
 # <a name="image-editor"></a>影像編輯器
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -82,7 +82,7 @@ ms.locfileid: "60077377"
  在開始使用您剛建立的影像之前，您可以變更其預設組態。 例如，您可以變更其維度或其使用的色彩格式。 如需有關如何設定影像的這些及其他屬性的資訊，請參閱[影像屬性](#ImageProperties)。  
   
 > [!NOTE]
->  如果您想要使用特定的色彩格式，在儲存您的工作之前，請務必設定 [色彩格式] 屬性。 如果檔案格式支援壓縮，則在您第一次儲存檔案或選擇 [另存新檔] 時，可以調整壓縮設定。  
+> 如果您想要使用特定的色彩格式，在儲存您的工作之前，請務必設定 [色彩格式] 屬性。 如果檔案格式支援壓縮，則在您第一次儲存檔案或選擇 [另存新檔] 時，可以調整壓縮設定。  
   
 ## <a name="working-with-the-image-editor"></a>使用影像編輯器  
  本節描述如何使用「影像編輯器」來修改材質和影像。  
@@ -166,7 +166,7 @@ ms.locfileid: "60077377"
 |深度切割|目前的深度切割。 只有第一個切割是可供檢視的；所有其他切割會在儲存影像時即遺失。|  
   
 > [!NOTE]
->  由於 [旋轉角度] 屬性適用於所有工具和選取的區域，因此它一律會與其他工具屬性一起顯示在 [屬性] 視窗的底部。 [旋轉角度] 一律會顯示，因為當沒有任何其他選取範圍或作用中的工具時，會隱含地選取整個影像。 如需有關 [旋轉角度] 屬性的詳細資訊，請參閱[工具屬性](#ToolProperties)。  
+> 由於 [旋轉角度] 屬性適用於所有工具和選取的區域，因此它一律會與其他工具屬性一起顯示在 [屬性] 視窗的底部。 [旋轉角度] 一律會顯示，因為當沒有任何其他選取範圍或作用中的工具時，會隱含地選取整個影像。 如需有關 [旋轉角度] 屬性的詳細資訊，請參閱[工具屬性](#ToolProperties)。  
   
 #### <a name="resizing-images"></a>調整影像大小  
  以下是兩種調整影像大小的方式。 在這兩種案例中，「影像編輯器」都會使用雙線性內插補點來進行影像重新取樣。  

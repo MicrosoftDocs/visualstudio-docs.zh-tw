@@ -18,12 +18,12 @@ caps.latest.revision: 16
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 275d3d0547d83e794801c45a7554d58e181d64e7
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 4ec63fe5ae4b99252321b86b44066c46842a0851
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60107056"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433900"
 ---
 # <a name="how-to-customize-the-default-web-page-for-a-clickonce-application"></a>HOW TO：自訂 ClickOnce 應用程式的預設網頁
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,14 +31,14 @@ ms.locfileid: "60107056"
 發行 ClickOnce 應用程式到 Web，當網頁自動產生及發行以及應用程式。 預設的網頁包含應用程式和安裝應用程式、 安裝必要元件，或存取 MSDN 上的說明連結的名稱。  
   
 > [!NOTE]
->  您在頁面看到的實際連結相依於檢視頁面所在的電腦，以及您要納入的必要條件。  
+> 您在頁面看到的實際連結相依於檢視頁面所在的電腦，以及您要納入的必要條件。  
   
  網頁的預設名稱是 Publish.htm;您可以變更中的名稱**專案設計工具**。 如需詳細資訊，請參閱[如何：指定 ClickOnce 應用程式的發行頁面](../deployment/how-to-specify-a-publish-page-for-a-clickonce-application.md)。  
   
  Publish.htm Web 網頁會在偵測到較新版本時，才發行。  
   
 > [!NOTE]
->  變更您對您**發佈**設定不會影響的 Publish.htm 網頁，但有一個例外： 如果您新增或移除最初發行之後的必要元件，必要條件清單已經不正確。 您必須編輯必要條件的連結，以反映所做的變更的文字。  
+> 變更您對您**發佈**設定不會影響的 Publish.htm 網頁，但有一個例外： 如果您新增或移除最初發行之後的必要元件，必要條件清單已經不正確。 您必須編輯必要條件的連結，以反映所做的變更的文字。  
   
 ### <a name="to-customize-the-publish-web-page"></a>若要自訂 [發行 Web] 頁面  
   

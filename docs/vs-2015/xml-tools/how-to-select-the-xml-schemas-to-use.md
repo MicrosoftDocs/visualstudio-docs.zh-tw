@@ -9,12 +9,12 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: d694fe9bb614acfd80e5ec1b9f6bed166775c214
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: d897fe074c0215d462ff81ccd33e7d71487b1282
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60091470"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433108"
 ---
 # <a name="how-to-select-the-xml-schemas-to-use"></a>HOW TO：選取要使用的 XML 結構描述
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,7 +26,7 @@ XML 編輯器提供位於 %InstallDir%\Xml\Schemas 目錄的結構描述快取�
  您所指定的結構描述與其他所有 XML 文件屬性，會一起儲存在隱藏的解決方案使用者選項檔 (.suo) 中。 因此，在下次開啟解決方案時無需重新輸入這些值。  
   
 > [!NOTE]
->  編輯器可使用內嵌結構描述，或由 `xsd:schemaLocation` 屬性參考的結構描述進行驗證。 如需詳細資訊，請參閱 < [XML 文件驗證](../xml-tools/xml-document-validation.md)。  
+> 編輯器可使用內嵌結構描述，或由 `xsd:schemaLocation` 屬性參考的結構描述進行驗證。 如需詳細資訊，請參閱 < [XML 文件驗證](../xml-tools/xml-document-validation.md)。  
   
 ### <a name="to-select-an-xml-schema-from-the-schema-cache"></a>若要從結構描述快取選取 XML 結構描述  
   
@@ -71,7 +71,7 @@ XML 編輯器提供位於 %InstallDir%\Xml\Schemas 目錄的結構描述快取�
      結構描述會從記憶體中的結構描述快取移除，但不會從檔案系統中移除。  
   
     > [!NOTE]
-    >  如果您仍需透過結構描述參考`schemaLocation`屬性，或比對`targetNamespace`再**移除**不適用於這種情況，因為自動關聯。 在此情況下建議您將標示為結構描述**請勿使用選取的結構描述**中**使用**資料行。  
+    > 如果您仍需透過結構描述參考`schemaLocation`屬性，或比對`targetNamespace`再**移除**不適用於這種情況，因為自動關聯。 在此情況下建議您將標示為結構描述**請勿使用選取的結構描述**中**使用**資料行。  
   
 ## <a name="see-also"></a>另請參閱  
  [結構描述快取](../xml-tools/schema-cache.md)   

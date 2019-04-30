@@ -19,12 +19,12 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ee820bc246e11b722d663ecc6a6037f182bc2c33
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 12cbeca740fd81292109183468a304fc2d3da30c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60053113"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63439482"
 ---
 # <a name="bind-objects-in-visual-studio"></a>在 Visual Studio 中的物件繫結
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ ms.locfileid: "60053113"
 Visual Studio 會提供設計階段工具，為您的應用程式中的資料來源使用自訂的物件。 當您想要將資料庫中的資料儲存在您繫結至 UI 控制項的物件時，建議的方法是使用 Entity Framework 來產生類別。 DbSet 物件上呼叫 AcceptChanges，實體 Frameworkautogenerates 所有未定案變更追蹤程式碼，這表示，任何會變更為本機物件會自動保存至資料庫。    如需詳細資訊，請參閱 < [Entity Framework 文件](https://ef.readthedocs.org/en/latest/)。
 
 > [!TIP]
->  如果您的應用程式已經根據資料集，只應該被視為這篇文章中的物件繫結的方法。如果您已熟悉的資料集，而且您要處理的資料是表格式和不太複雜或太大，也可以使用這些方法。 如需甚至更簡單的範例，牽涉到將資料載入直接物件使用 DataReader，並以手動方式更新 UI 而不需要資料繫結，請參閱[使用 ADO.NET 建立簡單資料應用程式](../data-tools/create-a-simple-data-application-by-using-adonet.md)。
+> 如果您的應用程式已經根據資料集，只應該被視為這篇文章中的物件繫結的方法。如果您已熟悉的資料集，而且您要處理的資料是表格式和不太複雜或太大，也可以使用這些方法。 如需甚至更簡單的範例，牽涉到將資料載入直接物件使用 DataReader，並以手動方式更新 UI 而不需要資料繫結，請參閱[使用 ADO.NET 建立簡單資料應用程式](../data-tools/create-a-simple-data-application-by-using-adonet.md)。
 
 ## <a name="object-requirements"></a>物件的需求
  若要使用資料設計工具，在 Visual Studio 中的自訂物件的唯一需求是物件，必須至少一個公用屬性。
@@ -55,7 +55,7 @@ Visual Studio 會提供設計階段工具，為您的應用程式中的資料來
 - 將資料從物件儲存回資料庫。
 
 > [!NOTE]
->  若要進一步了解，，和提供的範例，此頁面上的內容，我們建議您先完成下列：[逐步解說：連接至資料物件 (Windows Form)](http://msdn.microsoft.com/library/21a7fba2-b38b-4726-8cbe-d22154b75a05)。 該逐步解說建立此處所討論的物件。
+> 若要進一步了解，，和提供的範例，此頁面上的內容，我們建議您先完成下列：[逐步解說：連接至資料物件 (Windows Form)](http://msdn.microsoft.com/library/21a7fba2-b38b-4726-8cbe-d22154b75a05)。 該逐步解說建立此處所討論的物件。
 
 ### <a name="loaddata-into-objects"></a>物件的 Loaddata
  例如，您將資料載入您的物件使用 Tableadapter。 根據預設，Tableadapter 會建立具有兩種方法，從資料庫擷取資料並填入資料的資料表。
@@ -67,7 +67,7 @@ Visual Studio 會提供設計階段工具，為您的應用程式中的資料來
   載入您的自訂物件的資料最簡單方式是呼叫`TableAdapter.GetData`方法，傳回的資料表中的資料列集合執行迴圈，並將填入每個物件中每個資料列的值。 您可以建立`GetData`傳回填入的資料的資料表加入至 TableAdapter 的任何查詢的方法。
 
 > [!NOTE]
->  Visual Studio 命名的 TableAdapter 查詢`Fill`和`GetData`根據預設，但是這些名稱可以變更為任何有效的方法名稱。
+> Visual Studio 命名的 TableAdapter 查詢`Fill`和`GetData`根據預設，但是這些名稱可以變更為任何有效的方法名稱。
 
  下列範例示範如何在資料的資料表中，資料列執行迴圈，並填入具有資料的物件：
 
@@ -82,7 +82,7 @@ Visual Studio 會提供設計階段工具，為您的應用程式中的資料來
  中的自動產生的集合<xref:System.Windows.Forms.BindingSource>使用<xref:System.ComponentModel.BindingList%601>其類型的集合。 如果您的應用程式不需要額外的功能，則您可以維護您的集合內<xref:System.Windows.Forms.BindingSource>。 如需詳細資訊，請參閱 <<c0> <xref:System.Windows.Forms.BindingSource.List%2A> 屬性<xref:System.Windows.Forms.BindingSource>類別。
 
 > [!NOTE]
->  如果您的集合需要的功能不提供的基底實作<xref:System.ComponentModel.BindingList%601>，因此您可以視需要新增至類別，您應該建立自訂的集合。
+> 如果您的集合需要的功能不提供的基底實作<xref:System.ComponentModel.BindingList%601>，因此您可以視需要新增至類別，您應該建立自訂的集合。
 
  下列程式碼示範如何建立強型別集合類別`Order`物件：
 
@@ -97,7 +97,7 @@ Visual Studio 會提供設計階段工具，為您的應用程式中的資料來
  如需將物件新增至自訂集合的範例，請參閱`LoadOrders`方法中的[逐步解說：連接至資料物件 (Windows Form)](http://msdn.microsoft.com/library/21a7fba2-b38b-4726-8cbe-d22154b75a05)。
 
 > [!NOTE]
->  `Add`方法會自動提供為您自訂的集合。 當您繼承自<xref:System.ComponentModel.BindingList%601>。
+> `Add`方法會自動提供為您自訂的集合。 當您繼承自<xref:System.ComponentModel.BindingList%601>。
 
  下列程式碼示範如何將物件加入至具型別集合中<xref:System.Windows.Forms.BindingSource>:
 
@@ -107,7 +107,7 @@ Visual Studio 會提供設計階段工具，為您的應用程式中的資料來
  下列程式碼示範如何將物件加入至繼承的型別集合<xref:System.ComponentModel.BindingList%601>:
 
 > [!NOTE]
->  在此範例中`Orders`集合是屬性`Customer`物件。
+> 在此範例中`Orders`集合是屬性`Customer`物件。
 
  [!code-csharp[VbRaddataConnecting#6](../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataConnecting/CS/Class1.cs#6)]
  [!code-vb[VbRaddataConnecting#6](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataConnecting/VB/Class1.vb#6)]
@@ -116,7 +116,7 @@ Visual Studio 會提供設計階段工具，為您的應用程式中的資料來
  從集合移除物件呼叫`Remove`或是`RemoveAt`方法，或您的自訂集合類別的<xref:System.Windows.Forms.BindingSource>。
 
 > [!NOTE]
->  `Remove`並`RemoveAt`方法會自動提供給您的自訂集合當您繼承自<xref:System.ComponentModel.BindingList%601>。
+> `Remove`並`RemoveAt`方法會自動提供給您的自訂集合當您繼承自<xref:System.ComponentModel.BindingList%601>。
 
  下列程式碼顯示如何尋找及移除的具類型的集合中的物件<xref:System.Windows.Forms.BindingSource>與<xref:System.Windows.Forms.BindingSource.RemoveAt%2A>方法：
 

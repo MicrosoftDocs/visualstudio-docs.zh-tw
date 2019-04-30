@@ -12,12 +12,12 @@ ms.assetid: d49bc8c5-f631-4153-9d3c-feb3564da305
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: c17064d2d14fe072a4f5215ac06c9f7e38fa8e51
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: aa5ea0a269cdbfe678328dc652b4177bdc667b99
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58943379"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432470"
 ---
 # <a name="sccdiff-function"></a>SccDiff 函式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -74,7 +74,7 @@ SCCRTN SccDiff(
  當做效能最佳化，原始檔控制外掛程式可能會使用總和檢查碼或而不是呼叫的逐位元組比較時間戳記為基礎的替代方案`SCC_DIFF_CONTENTS`： 這些形式的比較會很明顯地更快但較不可靠。 並非所有的原始檔控制系統可能會支援這些替代的比較方法，而外掛程式可能切換回內容比較。 所有的原始檔控制外掛程式至少必須支援的內容比較。  
   
 > [!NOTE]
->  快速差異旗標互斥。 能夠傳遞任何旗標，但同時傳遞多個無效。 `SCC_DIFF_QUICK_DIFF`這結合了所有的旗標的遮罩可以用來測試，但它應該永遠不會做為參數傳遞。  
+> 快速差異旗標互斥。 能夠傳遞任何旗標，但同時傳遞多個無效。 `SCC_DIFF_QUICK_DIFF`這結合了所有的旗標的遮罩可以用來測試，但它應該永遠不會做為參數傳遞。  
   
 |`fOption`|意義|  
 |---------------|-------------|  

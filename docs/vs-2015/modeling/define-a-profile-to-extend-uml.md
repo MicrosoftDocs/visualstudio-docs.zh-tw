@@ -16,12 +16,12 @@ caps.latest.revision: 44
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 59e00fb6b4db879ed70904397ba9a54c8bc25a6f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: b256971cd327098e22b243a1c171b0c9e82d32bc
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60069364"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433136"
 ---
 # <a name="define-a-profile-to-extend-uml"></a>定義要擴充 UML 的設定檔
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,7 +39,7 @@ ms.locfileid: "60069364"
   您可以將專屬設定檔散發給您的小組。 每個小組成員都可以安裝您的設定檔。 這可讓他們編輯和建立使用其造型的模型。  
   
 > [!NOTE]
->  如果您在所編輯的模型中套用設定檔的造型，然後與其他人員共用模型，則他們應該在自己的電腦上安裝相同的設定檔。 否則，他們將無法看到您已經使用的造型。  
+> 如果您在所編輯的模型中套用設定檔的造型，然後與其他人員共用模型，則他們應該在自己的電腦上安裝相同的設定檔。 否則，他們將無法看到您已經使用的造型。  
   
  設定檔通常是較大一部分[!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)]延伸模組。 例如，您可以定義將模型的某些組件轉譯為程式碼的命令。 您可以定義設定檔，而使用者必須將它套用至他們想要轉譯的套件。 您會在單一 [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] 擴充功能中一併散發新命令和設定檔。  
   
@@ -83,7 +83,7 @@ ms.locfileid: "60069364"
 1. 建立 Visual Studio 擴充功能專案。  
   
    > [!NOTE]
-   >  您必須已安裝 [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] 才能使用此程序。  
+   > 您必須已安裝 [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] 才能使用此程序。  
   
    1. 在 [檔案]  功能表中，指向 [新增] ，然後按一下 [專案] 。  
   
@@ -194,7 +194,7 @@ ms.locfileid: "60069364"
 2. 在與預設設定檔相同的目錄中，加入新的目錄。  
   
     > [!NOTE]
-    >  如果您是使用 Visual Studio 擴充功能專案來建置擴充功能，請使用 [方案總管] 將新的資料夾加入專案。  
+    > 如果您是使用 Visual Studio 擴充功能專案來建置擴充功能，請使用 [方案總管] 將新的資料夾加入專案。  
   
 3. 將新目錄的名稱變更為當地語系化文化特性的 ISO 簡短程式碼 (例如 `bg` 代表保加利亞文或 `fr` 代表法文)。 您應該使用中性文化特性代碼，通常為兩個字母，而不是特定文化特性 (例如 `fr-CA`)。 如需文化特性代碼的詳細資訊，請參閱[CultureInfo.GetCultures 方法](http://go.microsoft.com/fwlink/?LinkId=160782)，以提供完整的文化特性代碼清單。  
   
@@ -211,7 +211,7 @@ ms.locfileid: "60069364"
      `de\MyProfile.profile`  
   
     > [!NOTE]
-    >  您不應該將設定檔之本地語系化版本的參考插入 `extension.vsixmanifest`。 所複製設定檔的名稱必須與父資料夾中設定檔的名稱相同。  
+    > 您不應該將設定檔之本地語系化版本的參考插入 `extension.vsixmanifest`。 所複製設定檔的名稱必須與父資料夾中設定檔的名稱相同。  
   
 5. 編輯設定檔的新複本，方法是將使用者看到的所有組件都翻譯為目標語言 (例如 `displayName` 屬性)。  
   
@@ -247,7 +247,7 @@ ms.locfileid: "60069364"
 ```  
   
 > [!NOTE]
->  稱為 `name` 的屬性不得包含空格或標點符號。 出現在使用者介面中的屬性 `displayName` 應該是有效的 XML 字串。  
+> 稱為 `name` 的屬性不得包含空格或標點符號。 出現在使用者介面中的屬性 `displayName` 應該是有效的 XML 字串。  
   
  每個設定檔都包含三個主要區段。 它們以反向順序顯示如下：  
   
@@ -310,7 +310,7 @@ ms.locfileid: "60069364"
  `name` 的 `metaclassMoniker` 屬性是與 `<metaClasses>` 區段中項目的連結。  
   
 > [!NOTE]
->  Moniker 名稱的開頭必須是 `/yourProfileName/`，其中 `yourProfileName` 定義於設定檔的 `name` 屬性中 (在此範例中為 "CSharpProfile")。 Moniker 的結尾是 metaclasses 區段中其中一個項目的名稱。  
+> Moniker 名稱的開頭必須是 `/yourProfileName/`，其中 `yourProfileName` 定義於設定檔的 `name` 屬性中 (在此範例中為 "CSharpProfile")。 Moniker 的結尾是 metaclasses 區段中其中一個項目的名稱。  
   
  每個造型都可以列出零或多個屬性，並且會將這些屬性加入套用它的任何模型項目。 `<propertyType>`包含其中一個類型中所定義的連結`<propertyTypes>`一節。 連結必須是參照 `<externalTypeMoniker>` 的 `<externalType>,` 或參照 `<enumerationTypeMoniker>` 的 `<enumerationType>`。 同樣地，連結的開頭是您設定檔的名稱。  
   

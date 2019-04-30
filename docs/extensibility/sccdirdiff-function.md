@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: dbd637fa78e9290402990bdbbc237e0f431e14d7
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.openlocfilehash: 2a0638b0e644242e471ff30bc58d550675089695
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56691120"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63434673"
 ---
 # <a name="sccdirdiff-function"></a>SccDirDiff 函式
 此函式會顯示目前的本機目錄上的用戶端磁碟和對應的專案，原始檔控制下的差異。
@@ -83,7 +83,7 @@ SCCRTN SccDirDiff(
 |SCC_DIFF_QD_TIME|如果外掛程式支援，以無訊息方式比較時間戳記，透過目錄，或如果不支援，便會回到 SCC_DIFF_QD_CHECKSUM 或 SCC_DIFF_QD_CONTENTS。|
 
 > [!NOTE]
->  此函式會使用相同的命令旗標，作為[SccDiff](../extensibility/sccdiff-function.md)。 不過，原始檔控制外掛程式，可以選擇不支援目錄的 「 快速 diff"作業。
+> 此函式會使用相同的命令旗標，作為[SccDiff](../extensibility/sccdiff-function.md)。 不過，原始檔控制外掛程式，可以選擇不支援目錄的 「 快速 diff"作業。
 
 ## <a name="see-also"></a>另請參閱
 - [原始檔控制外掛程式 API 函式](../extensibility/source-control-plug-in-api-functions.md)

@@ -11,12 +11,12 @@ ms.assetid: 8b73b341-a33a-4ab5-9390-178c9e563d2d
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 3df1a4e61859aee4b27dccf5360e0ae99ad5aa8b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 3b79afe64aafac473d4fe5d22464998d0c2f0537
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60077520"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437618"
 ---
 # <a name="checklist-creating-a-legacy-language-service"></a>檢查清單：建立舊版語言服務
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -63,7 +63,7 @@ ms.locfileid: "60077520"
     必須處理的命令取決於所提供的服務。 如需詳細資訊，請參閱 <<c0> [ 語言服務篩選器的重要命令](../../extensibility/internals/important-commands-for-language-service-filters.md)。  
   
   > [!NOTE]
-  >  <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextViewFilter>介面必須實作的相同物件上<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>介面。  
+  > <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextViewFilter>介面必須實作的相同物件上<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>介面。  
   
 - 陳述式完成  
   

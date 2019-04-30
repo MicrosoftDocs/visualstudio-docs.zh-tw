@@ -9,12 +9,12 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a7dfd293f5b2219eab6c3a2896c800a1337f2c8c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 2dac656f9a765875fc552739b814538582200cc8
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60111970"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63424691"
 ---
 # <a name="walkthrough-creating-linq-to-sql-classes-by-using-single-table-inheritance-or-designer"></a>逐步解說：使用單一資料表繼承 （O/R 設計工具） 中建立 LINQ to SQL 類別
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,7 +45,7 @@ ms.locfileid: "60111970"
 1. 在 **伺服器總管**/**資料庫總管**，以滑鼠右鍵按一下**資料表**節點，然後按一下**加入新的資料表**。  
   
     > [!NOTE]
-    >  您可以使用 Northwind 資料庫，或其他可以在其中加入資料表的任何資料庫。  
+    > 您可以使用 Northwind 資料庫，或其他可以在其中加入資料表的任何資料庫。  
   
 2. 在 [資料表設計工具] 中，將下列資料行加入至資料表：  
   
@@ -96,7 +96,7 @@ ms.locfileid: "60111970"
 2. 將專案命名為**InheritanceWalkthrough**。  
   
     > [!NOTE]
-    >  Visual Basic 和 C# 專案都支援 [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]。 請使用下列其中一種語言，來建立新的專案。  
+    > Visual Basic 和 C# 專案都支援 [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]。 請使用下列其中一種語言，來建立新的專案。  
   
 3. 按一下  **Windows Forms 應用程式**範本，然後按一下 **確定**。 如需詳細資訊，請參閱 <<c0> [ 用戶端應用程式](http://msdn.microsoft.com/library/2dfb50b7-5af2-4e12-9bbb-c5ade0e39a68)。  
   

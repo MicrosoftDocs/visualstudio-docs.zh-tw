@@ -20,12 +20,12 @@ caps.latest.revision: 33
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 82ef77884d4ade77e8d940df6c37d8336c2a1dbf
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 759cf18033adb962a6ccb97a31802963e12ba5c4
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60097008"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63431209"
 ---
 # <a name="create-and-configure-tableadapters"></a>建立和設定 TableAdapter
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -60,7 +60,7 @@ Tableadapter 會提供您的應用程式與資料庫之間的通訊。 它們連
      從已選取預存程序將參數對應至資料表中對應的資料行。 例如，如果您的預存程序會接受名為的參數`@CompanyName`它傳遞給`CompanyName`資料表中的資料行集**來源資料行**的`@CompanyName`參數`CompanyName`。  
   
     > [!NOTE]
-    >  指派給 SELECT 命令的預存程序是由呼叫 TableAdapter 的方法命名，在精靈的下一個步驟中執行。 預設方法是`Fill`，因此通常用來執行 SELECT 程序的程式碼是`TableAdapter.Fill(tableName)`。 如果您變更預設名稱，從`Fill`，替代`Fill`名稱指派和"TableAdapter"取代為 TableAdapter 的實際名稱 (例如`CustomersTableAdapter`)。  
+    > 指派給 SELECT 命令的預存程序是由呼叫 TableAdapter 的方法命名，在精靈的下一個步驟中執行。 預設方法是`Fill`，因此通常用來執行 SELECT 程序的程式碼是`TableAdapter.Fill(tableName)`。 如果您變更預設名稱，從`Fill`，替代`Fill`名稱指派和"TableAdapter"取代為 TableAdapter 的實際名稱 (例如`CustomersTableAdapter`)。  
   
 - **進階選項**在 [精靈] 可讓您產生 INSERT、 UPDATE 和 DELETE 陳述式定義的 SELECT 陳述式為基礎**產生的 SQL 陳述式**頁面。 使用開放式並行存取，並指定是否要重新整理資料表 after INSERT 和 UPDATE 陳述式會執行。  
   
@@ -82,7 +82,7 @@ Tableadapter 會提供您的應用程式與資料庫之間的通訊。 它們連
 3. 在 **選擇資料連接**畫面上，選取或建立查詢將使用的連接。  
   
     > [!NOTE]
-    >  設計工具無法判斷適當的連接，若要使用，或沒有連線可供使用時，才會出現此畫面。  
+    > 設計工具無法判斷適當的連接，若要使用，或沒有連線可供使用時，才會出現此畫面。  
   
 4. 在 **選擇命令類型**畫面上，選取從資料庫擷取資料的下列方法：  
   
@@ -97,7 +97,7 @@ Tableadapter 會提供您的應用程式與資料庫之間的通訊。 它們連
 - 如果您要編輯現有的 TableAdapter 查詢，以滑鼠右鍵按一下查詢，然後選擇**設定**從捷徑功能表。  
   
     > [!NOTE]
-    >  以滑鼠右鍵按一下主查詢的 TableAdapter 會重新設定 TableAdapter 和<xref:System.Data.DataTable>結構描述。 其他查詢的 TableAdapter 上按一下滑鼠右鍵，不過，設定所選的查詢。 **TableAdapter 組態精靈** TableAdapter 查詢組態精靈 會重新設定所選的查詢時，將 TableAdapter 定義中，會重新設定。  
+    > 以滑鼠右鍵按一下主查詢的 TableAdapter 會重新設定 TableAdapter 和<xref:System.Data.DataTable>結構描述。 其他查詢的 TableAdapter 上按一下滑鼠右鍵，不過，設定所選的查詢。 **TableAdapter 組態精靈** TableAdapter 查詢組態精靈 會重新設定所選的查詢時，將 TableAdapter 定義中，會重新設定。  
   
 #### <a name="to-add-a-global--query-to-a-tableadapter"></a>若要將全域查詢新增至 TableAdapter  
   
@@ -108,7 +108,7 @@ Tableadapter 會提供您的應用程式與資料庫之間的通訊。 它們連
 - 提供查詢，以執行所需的工作，例如`SELECT COUNT(*) AS CustomerCount FROM Customers`。  
   
     > [!NOTE]
-    >  拖曳**查詢**物件直接放入**Dataset 設計工具**建立傳回純量 （單一） 值的方法。 當您選取的預存程序的查詢可能會傳回一個以上的單一值時，由精靈建立的方法只會傳回單一值。 例如，查詢可能會傳回所傳回資料的第一個資料列的第一個資料行。  
+    > 拖曳**查詢**物件直接放入**Dataset 設計工具**建立傳回純量 （單一） 值的方法。 當您選取的預存程序的查詢可能會傳回一個以上的單一值時，由精靈建立的方法只會傳回單一值。 例如，查詢可能會傳回所傳回資料的第一個資料列的第一個資料行。  
   
 ## <a name="see-also"></a>另請參閱  
  [使用 TableAdapter 填入資料集](../data-tools/fill-datasets-by-using-tableadapters.md)

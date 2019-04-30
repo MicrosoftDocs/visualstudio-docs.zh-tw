@@ -11,12 +11,12 @@ caps.latest.revision: 33
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: becc123cab729aff7d1306bb0ee13aee521444ec
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: fc8bcd7a373ab6ee63e32b5873fd149001137511
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60105041"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433178"
 ---
 # <a name="define-a-custom-modeling-toolbox-item"></a>定義自訂模型工具箱項目
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ ms.locfileid: "60105041"
 - 由關聯所連結的一對類別，代表此 [觀察器] 模式。  
   
 > [!NOTE]
->  您可以使用這個方法建立項目工具。 也就是說，您可以建立從工具箱拖曳到圖表上的工具。 您無法建立連接器工具。  
+> 您可以使用這個方法建立項目工具。 也就是說，您可以建立從工具箱拖曳到圖表上的工具。 您無法建立連接器工具。  
   
 ## <a name="DefineTool"></a> 定義自訂模型工具  
   
@@ -136,7 +136,7 @@ ms.locfileid: "60105041"
  您可以在 Visual Studio 中編輯此點陣圖檔，並且在 [屬性] 視窗中將其高度和寬度設定為 16。  
   
 > [!NOTE]
->  如果您嘗試單獨使用圖表檔之後開始使用 .tbxinfo 檔，可能會發現該工具箱內同時包含舊版和新版的工具箱項目。 如果此 .tbxinfo 檔中圖表檔的名稱輸入錯誤，也會發生這種情況。 如果發生這種情況，在 [工具箱] 的捷徑功能表上選擇**重設工具箱**。 自訂的工具箱項目將會消失。 重新啟動 Visual Studio，然後正確的自訂項目將會出現。  
+> 如果您嘗試單獨使用圖表檔之後開始使用 .tbxinfo 檔，可能會發現該工具箱內同時包含舊版和新版的工具箱項目。 如果此 .tbxinfo 檔中圖表檔的名稱輸入錯誤，也會發生這種情況。 如果發生這種情況，在 [工具箱] 的捷徑功能表上選擇**重設工具箱**。 自訂的工具箱項目將會消失。 重新啟動 Visual Studio，然後正確的自訂項目將會出現。  
   
 ## <a name="Extension"></a> 如何散發 Visual Studio 擴充功能中的工具箱項目  
  您可以將其他的工具箱項目[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]封裝成 Visual Studio 擴充功能 (VSIX) 的使用者。 您可以將命令、設定檔和其他擴充功能封裝到同一個 VSIX 檔。 如需詳細資訊，請參閱 <<c0> [ 部署 Visual Studio 擴充功能](http://go.microsoft.com/fwlink/?LinkId=160780)。  
@@ -164,7 +164,7 @@ ms.locfileid: "60105041"
     - 在 [方案總管] 中，在 VSIX 專案的捷徑功能表上選擇**新增**，**現有項目**。 在對話方塊中，設定**類型的物件：所有檔案**。 找出檔案，它們全部選取，然後選擇**新增**。  
   
         > [!NOTE]
-        >  在此專案中，您無法在此模型編輯器開啟該圖表檔。  
+        > 在此專案中，您無法在此模型編輯器開啟該圖表檔。  
   
 5. 為您剛才加入的所有檔案設定下列屬性。 藉由在 [方案總管] 中選取所有檔案，您可以同時設定其屬性。 小心不要變更此專案中其他檔案的屬性。  
   
@@ -185,7 +185,7 @@ ms.locfileid: "60105041"
     - 類型 = `Microsoft.VisualStudio.ArchitectureTools.CustomToolboxItems`  
   
         > [!NOTE]
-        >  這不是下拉式清單的其中一個選項。 您必須使用鍵盤將其輸入。  
+        > 這不是下拉式清單的其中一個選項。 您必須使用鍵盤將其輸入。  
   
     - **來源** = **檔案系統上的**。  
   

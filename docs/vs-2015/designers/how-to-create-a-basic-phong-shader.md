@@ -9,12 +9,12 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 78ff2ecf77d3d8943601b8bd0779fa37811ec2d2
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 7153c02f5cd3d494edb56b218512ba5de87f318a
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60113751"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438425"
 ---
 # <a name="how-to-create-a-basic-phong-shader"></a>HOW TO：建立基本 Phong 著色器
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -53,7 +53,7 @@ ms.locfileid: "60113751"
    下圖顯示完成的著色器圖形和套用至茶壺模型的著色器預覽。  
   
 > [!NOTE]
->  為了更適當展現此圖中的著色器效果，已使用著色器的 **MaterialDiffuse** 參數來指定橘色，並使用 **MaterialSpecular** 和 **MaterialSpecularPower** 參數來指定金屬外觀。 如需材質參數的詳細資訊，請參閱[著色器設計工具](../designers/shader-designer.md)中的＜預覽著色器＞一節。  
+> 為了更適當展現此圖中的著色器效果，已使用著色器的 **MaterialDiffuse** 參數來指定橘色，並使用 **MaterialSpecular** 和 **MaterialSpecularPower** 參數來指定金屬外觀。 如需材質參數的詳細資訊，請參閱[著色器設計工具](../designers/shader-designer.md)中的＜預覽著色器＞一節。  
   
  ![著色器圖形和其效果預覽](../designers/media/digit-lighting-graph.png "Digit-Lighting-Graph")  
   
@@ -62,9 +62,9 @@ ms.locfileid: "60113751"
  下圖顯示本文件中所述的著色器，套用至 3D 模型。 將 **MaterialSpecular** 屬性設定為 (1.00, 0.50, 0.20, 0.00)，並將其 **MaterialSpecularPower** 屬性設定為 16。  
   
 > [!NOTE]
->  **MaterialSpecular** 屬性可決定表面材質的外觀。 一種高光面表面，例如往往有亮白色反射色彩的玻璃或塑膠板。 金屬表面常會有接近其擴散色彩的反射色彩。 緞面表面往往會有深灰色的反射色彩。  
+> **MaterialSpecular** 屬性可決定表面材質的外觀。 一種高光面表面，例如往往有亮白色反射色彩的玻璃或塑膠板。 金屬表面常會有接近其擴散色彩的反射色彩。 緞面表面往往會有深灰色的反射色彩。  
 >   
->  **MaterialSpecularPower** 屬性可決定反射亮部的濃度。 高光澤度會模擬更模糊、範圍更小的亮部。 非常低的光澤度會模擬強烈、呈彎曲狀的亮部，使整個表面的色彩過度飽和而隱蔽起來。  
+> **MaterialSpecularPower** 屬性可決定反射亮部的濃度。 高光澤度會模擬更模糊、範圍更小的亮部。 非常低的光澤度會模擬強烈、呈彎曲狀的亮部，使整個表面的色彩過度飽和而隱蔽起來。  
   
  ![已套用至模型的 Phong 光源](../designers/media/digit-lighting-model.png "Digit-Lighting-Model")  
   

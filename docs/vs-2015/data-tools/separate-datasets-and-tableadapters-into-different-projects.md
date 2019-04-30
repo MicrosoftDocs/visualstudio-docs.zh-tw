@@ -17,12 +17,12 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 9228eaec55dc936d44eeccd55e6a05559aea27e4
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: c90943f64166cfd5113032d14c2c66be1db858eb
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59647457"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63425103"
 ---
 # <a name="separate-datasets-and-tableadapters-into-different-projects"></a>將資料集和 TableAdapter 分成不同的專案
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,7 +41,7 @@ ms.locfileid: "59647457"
 1. 開啟的方案，包含資料集 （.xsd 檔案）。  
   
    > [!NOTE]
-   >  如果方案不包含您要區隔您的資料集程式碼的專案，建立專案，或將現有的專案加入方案。  
+   > 如果方案不包含您要區隔您的資料集程式碼的專案，建立專案，或將現有的專案加入方案。  
   
 2. 按兩下具類型資料集檔案 （.xsd 檔案） 中**方案總管**以開啟中的資料集**Dataset 設計工具**。  
   
@@ -54,7 +54,7 @@ ms.locfileid: "59647457"
     選取您要產生資料集程式碼的專案之後**資料集檔案**屬性會填入預設的檔案名稱。 如有必要，您可以變更此名稱。 此外，如果您想要產生資料集的程式碼至特定的目錄，您可以設定**專案資料夾**的資料夾名稱的屬性。  
   
    > [!NOTE]
-   >  當您分隔資料集和 Tableadapter (藉由設定**資料集 Project**屬性)，將不會自動移動專案中的現有部份資料集類別。 現有的資料集部分的類別必須手動將移至資料集專案。  
+   > 當您分隔資料集和 Tableadapter (藉由設定**資料集 Project**屬性)，將不會自動移動專案中的現有部份資料集類別。 現有的資料集部分的類別必須手動將移至資料集專案。  
   
 6. 儲存的資料集。  
   
@@ -63,7 +63,7 @@ ms.locfileid: "59647457"
    根據預設之後您分隔資料集, 和`TableAdapter`程式碼，結果是離散的類別檔案中的每個專案。 原始的專案具有名為的檔案，其中包含 DatasetName.Designer.vb （或 DatasetName.Designer.cs）`TableAdapter`程式碼。 中指定的專案**資料集 Project**屬性都有檔名為 DatasetName.DataSet.Designer.vb （或 DatasetName.DataSet.Designer.cs） 包含資料集的程式碼。  
   
 > [!NOTE]
->  若要檢視產生的類別檔案中，選取 資料集或`TableAdapter`專案。 然後，在**方案總管**，選取**顯示所有檔案**。  
+> 若要檢視產生的類別檔案中，選取 資料集或`TableAdapter`專案。 然後，在**方案總管**，選取**顯示所有檔案**。  
   
 ## <a name="see-also"></a>另請參閱  
  [多層式架構資料應用程式概觀](../data-tools/n-tier-data-applications-overview.md)   

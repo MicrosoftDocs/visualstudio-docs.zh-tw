@@ -11,12 +11,12 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 0a6e551dd2f045684168947d2c5a4e63089928c1
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: be66bf02294c12d39bcfd28793bb036696296476
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60098437"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63417771"
 ---
 # <a name="model-your-app39s-architecture"></a>模型化應用程式&#39;s 架構
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,7 +28,7 @@ ms.locfileid: "60098437"
  模型的目的是要減少自然語言描述中所發生的語意模糊，並且協助您和同事將此設計視覺化以及討論替代設計。 模型應該搭配其他文件或討論一起使用。 模型本身無法代表完整的架構規格。  
   
 > [!NOTE]
->  在本主題中，「系統」表示您正在開發的軟體。 它可能是許多軟體和硬體元件的大型集合、單一應用程式，或應用程式的一部分。  
+> 在本主題中，「系統」表示您正在開發的軟體。 它可能是許多軟體和硬體元件的大型集合、單一應用程式，或應用程式的一部分。  
   
  系統的架構可以分成兩個區域：  
   

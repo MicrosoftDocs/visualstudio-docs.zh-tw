@@ -13,12 +13,12 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 0c85690b34f0db705fe2a17e2f98d5b4f11433b3
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: b26a152567da3b6285653ba8e14a72bce664ce0d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60044972"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63434519"
 ---
 # <a name="how-to-add-an-application-configuration-file-to-a-c-project"></a>HOW TO：新增應用程式組態檔C#專案
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,7 +26,7 @@ ms.locfileid: "60044972"
 您可以將應用程式組態檔 (app.config 檔案) 加入 C# 專案，以自訂通用語言執行平台尋找及載入組件檔的方式。 如需有關應用程式組態檔的詳細資訊，請參閱[執行階段如何找出組件](http://msdn.microsoft.com/library/772ac6f4-64d2-4cfb-92fd-58096dcd6c34)。  
   
 > [!NOTE]
->  不支援 Windows 市集<xref:System.Configuration>。 如此一來，市集應用程式不包含 app.config 範本。  
+> 不支援 Windows 市集<xref:System.Configuration>。 如此一來，市集應用程式不包含 app.config 範本。  
   
  當您建置專案時，開發環境會自動複製您的 app.config 檔案會變更以符合您的可執行檔複製的檔案名稱，然後移動到 bin 目錄。  
   

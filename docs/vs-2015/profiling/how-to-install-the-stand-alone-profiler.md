@@ -12,12 +12,12 @@ caps.latest.revision: 29
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: b32966dd8a64c4688878ab2843893a1f2a9a3cff
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 5923bc99906cf4bcad8ea92ad74a30470fb41a1c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60069662"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432724"
 ---
 # <a name="how-to-install-the-stand-alone-profiler"></a>HOW TO：安裝獨立的 Profiler
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,7 +25,7 @@ ms.locfileid: "60069662"
 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 提供命令列型獨立分析工具，不用安裝 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] IDE 即可執行。 當電腦未安裝或無法安裝開發環境時，就會發生這種情況。 例如，您不應該在生產環境的 Web 伺服器上安裝開發環境。  
   
 > [!NOTE]
->  當您要用獨立的分析工具收集 ASP.NET 網站的效能資料時，建議您使用 [VSPerfASPNetCmd](../profiling/vsperfaspnetcmd.md) 程式碼工具，不要用 [VSPerfCmd](../profiling/vsperfcmd.md) 工具。  
+> 當您要用獨立的分析工具收集 ASP.NET 網站的效能資料時，建議您使用 [VSPerfASPNetCmd](../profiling/vsperfaspnetcmd.md) 程式碼工具，不要用 [VSPerfCmd](../profiling/vsperfcmd.md) 工具。  
   
 ### <a name="to-install-the-stand-alone-profiler"></a>安裝獨立分析工具  
   
@@ -34,12 +34,12 @@ ms.locfileid: "60069662"
 2. 將 vsintr.exe 和 msdis150.dll 的路徑新增至系統路徑。  
   
     > [!NOTE]
-    >  在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 的預設安裝中，vsinstr.exe 和 msdis150.dll 位於 \Program Files\Visual Studio 10\Team Tools\Performance Tools。  
+    > 在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 的預設安裝中，vsinstr.exe 和 msdis150.dll 位於 \Program Files\Visual Studio 10\Team Tools\Performance Tools。  
   
 3. 在命令提示字元處，鍵入 **VSInstr**。  
   
     > [!NOTE]
-    >  如果顯示 vsinstr.exe 的使用資訊，即表示所有項目設定正確。 如果看到有錯誤指出找不到 vsinstr.exe 或它其中一個相依性，請確定是否依步驟 2 所述正確設定路徑。  
+    > 如果顯示 vsinstr.exe 的使用資訊，即表示所有項目設定正確。 如果看到有錯誤指出找不到 vsinstr.exe 或它其中一個相依性，請確定是否依步驟 2 所述正確設定路徑。  
   
 4. 將 **_NT_SYMBOL_PATH** 變數設為 **symsrv\*symsrv.dll\*c:\localcache\*http://msdl.microsoft.com/download/symbols** ，以設定符號伺服器  
   
@@ -48,7 +48,7 @@ ms.locfileid: "60069662"
      **start %COMSPEC%**  
   
     > [!NOTE]
-    >  如需如何設定符號伺服器套件的詳細指示，請參閱[如何：參考 Windows 符號資訊](../profiling/how-to-reference-windows-symbol-information.md)。  
+    > 如需如何設定符號伺服器套件的詳細指示，請參閱[如何：參考 Windows 符號資訊](../profiling/how-to-reference-windows-symbol-information.md)。  
   
 6. 使用 [VSPerfReport](../profiling/vsperfreport.md) 工具將符號序列化成分析資料 (.vsp) 檔案。 使用 **VSPerfReport /summary:all /packsymbols** 參數。 如未在資料檔案中插入符號，請確定設定了 _NT_SYMBOL_PATH 環境變數。  
   

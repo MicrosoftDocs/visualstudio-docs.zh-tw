@@ -11,12 +11,12 @@ caps.latest.revision: 13
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 3d7a758a40ed5cee6a42994170ca35188e942db7
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 35e9fa2d75528549f8c55f5b52dbd4c4aa2271a6
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58945270"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63431460"
 ---
 # <a name="introducing-spy"></a>Spy++ 簡介
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,7 +40,7 @@ Spy++ 可讓您執行下列工作︰
   您可以在各種 Spy++ 視窗中，按一下滑鼠右鍵顯示常用命令的捷徑功能表。 指標位置可決定要顯示哪些命令。 例如，如果您在 [視窗] 檢視的項目上按一下滑鼠右鍵，會顯示選取的視窗，然後按一下捷徑功能表上的 [反白顯示]  ，則選取視窗的框線就會閃爍，以便更輕鬆地找到該視窗。  
   
 > [!NOTE]
->  有兩個其他 Spy + + 的公用程式：PView，會顯示程序和執行緒，以及 DDESPY 的詳細資料。EXE，可讓您監視動態資料交換 (DDE) 訊息。  
+> 有兩個其他 Spy + + 的公用程式：PView，會顯示程序和執行緒，以及 DDESPY 的詳細資料。EXE，可讓您監視動態資料交換 (DDE) 訊息。  
   
 ## <a name="64-bit-operating-systems"></a>64 位元作業系統  
  Spy++ 有兩個版本。 第一個版本名為 Spy++ (spyxx.exe)。如果視窗是在 32 位元處理序中執行，就非常適合用這個版本來顯示傳送至視窗的訊息。 例如，Visual Studio 會在 32 位元處理序中執行。 因此，您可以使用 Spy++ 來顯示傳送至方案總管 的訊息。 由於 Visual Studio 中大多數組建的預設組態是在 32 位元處理序中執行，因此 Visual Studio 中的 [工具]  功能表即會提供第一個版本的 Spy++。  
@@ -52,7 +52,7 @@ Spy++ 可讓您執行下列工作︰
  您可以直接從命令列執行任一版本的 Spy++。  
   
 > [!NOTE]
->  雖然 Spy++ (64 位元) 的檔案名稱包含 "amd"，但它會在任何 x64 Windows 作業系統上執行。  
+> 雖然 Spy++ (64 位元) 的檔案名稱包含 "amd"，但它會在任何 x64 Windows 作業系統上執行。  
   
 ## <a name="see-also"></a>另請參閱  
  [使用 Spy++](../debugger/using-spy-increment.md)   

@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 43ee8d26338b6d15530c51191c3368d3fc556d2c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 08c63966528a2ae34d5a9d776ee111ecee96b22f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60081732"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63430369"
 ---
 # <a name="walkthrough-create-a-workflow-with-association-and-initiation-forms"></a>逐步解說：使用關聯與初始表單建立工作流程
   本逐步解說示範如何建立基本的循序工作流程，其中包含使用關聯與初始表單。 這是啟用參數加入至工作流程，以及使用者 （初始表單） 來啟動工作流程時先到 SharePoint 系統管理員 （關聯表單），相關聯的 ASPX 形式。
@@ -50,9 +50,9 @@ ms.locfileid: "60081732"
 - 以手動方式啟動的工作流程。
 
 > [!NOTE]
->  雖然本逐步解說使用循序工作流程專案，程序也適用於狀態機器工作流程。
+> 雖然本逐步解說使用循序工作流程專案，程序也適用於狀態機器工作流程。
 >
->  此外，您的電腦可能會顯示不同的名稱或位置的一些[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]下列指示中的使用者介面項目。 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]您擁有的版本和您所使用的設定會決定這些項目。 如需詳細資訊，請參閱[將 Visual Studio IDE 個人化](../ide/personalizing-the-visual-studio-ide.md)。
+> 此外，您的電腦可能會顯示不同的名稱或位置的一些[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]下列指示中的使用者介面項目。 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]您擁有的版本和您所使用的設定會決定這些項目。 如需詳細資訊，請參閱[將 Visual Studio IDE 個人化](../ide/personalizing-the-visual-studio-ide.md)。
 
 ## <a name="prerequisites"></a>必要條件
  您需要下列元件才能完成此逐步解說：
@@ -134,7 +134,7 @@ ms.locfileid: "60081732"
 3. 依序展開**ExpenseReportAssocForm.aspx**中的檔案**方案總管 中**顯示與其相依的檔案。
 
     > [!NOTE]
-    >  如果您的專案處於[!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)]，您必須選擇**檢視的所有檔案**按鈕執行此步驟。
+    > 如果您的專案處於[!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)]，您必須選擇**檢視的所有檔案**按鈕執行此步驟。
 
 4. 開啟 ExpenseReportAssocForm.aspx 檔案的捷徑功能表，然後選擇**檢視程式碼**。
 
@@ -325,7 +325,7 @@ ms.locfileid: "60081732"
     ```
 
     > [!NOTE]
-    >  在程式碼，取代`somedomain\\someuser`網域和使用者名稱，將會建立工作，例如，"`Office\\JoeSch`」。 測試是最簡單的方式使用您正在開發使用的帳戶。
+    > 在程式碼，取代`somedomain\\someuser`網域和使用者名稱，將會建立工作，例如，"`Office\\JoeSch`」。 測試是最簡單的方式使用您正在開發使用的帳戶。
 
 3. 下面`MethodInvoking`方法，加入下列的範例：
 

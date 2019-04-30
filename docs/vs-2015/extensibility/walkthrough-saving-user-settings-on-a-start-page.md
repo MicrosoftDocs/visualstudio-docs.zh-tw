@@ -8,12 +8,12 @@ ms.assetid: 754b9bf3-8681-4c77-b0a4-09146a4e1d2d
 caps.latest.revision: 19
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 510d0c2144b2640f720bea004cdc44026f749310
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 8976d329f6303d60cc00609bc9ed9471456c1b63
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60111151"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63408751"
 ---
 # <a name="walkthrough-saving-user-settings-on-a-start-page"></a>逐步解說：在起始頁儲存使用者設定
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,9 +29,9 @@ ms.locfileid: "60111151"
 ## <a name="prerequisites"></a>必要條件  
   
 > [!NOTE]
->  若要依照本逐步解說執行作業，您必須安裝 Visual Studio SDK。 如需詳細資訊，請參閱 < [Visual Studio SDK](../extensibility/visual-studio-sdk.md)。  
+> 若要依照本逐步解說執行作業，您必須安裝 Visual Studio SDK。 如需詳細資訊，請參閱 < [Visual Studio SDK](../extensibility/visual-studio-sdk.md)。  
 >   
->  您可以使用，以下載起始頁專案範本**延伸模組管理員**。  
+> 您可以使用，以下載起始頁專案範本**延伸模組管理員**。  
   
 ## <a name="setting-up-the-project"></a>設定專案  
   

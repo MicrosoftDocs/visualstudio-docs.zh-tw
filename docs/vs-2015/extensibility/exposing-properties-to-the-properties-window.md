@@ -12,12 +12,12 @@ ms.assetid: 47f295b5-1ca5-4e7b-bb52-7b926b136622
 caps.latest.revision: 37
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 0b7b9e352c3042e5175b7420a9d4203ca7f59e7f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: c28a0520680951920ee19e91f3df098066f432dd
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60117132"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432135"
 ---
 # <a name="exposing-properties-to-the-properties-window"></a>將屬性公開至屬性視窗
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -177,7 +177,7 @@ ms.locfileid: "60117132"
 10. 簽入的核取方塊**MyToolWindow**視窗。 **IsChecked**中**屬性** 視窗變更為**True**。 清除核取方塊，在**MyToolWindow**視窗。 **IsChecked**中**屬性** 視窗變更為**False**。 值變更**IsChecked**中**屬性**視窗。 中的核取方塊**MyToolWindow**視窗會變更，以符合新的值。  
   
     > [!NOTE]
-    >  如果您必須處置的物件，會顯示在**屬性**視窗中，呼叫`OnSelectChange`使用`null`選取容器第一次。 之後處置物件的屬性，您可以變更為 已更新的選取項目容器<xref:Microsoft.VisualStudio.Shell.SelectionContainer.SelectableObjects%2A>和<xref:Microsoft.VisualStudio.Shell.SelectionContainer.SelectedObjects%2A>列出。  
+    > 如果您必須處置的物件，會顯示在**屬性**視窗中，呼叫`OnSelectChange`使用`null`選取容器第一次。 之後處置物件的屬性，您可以變更為 已更新的選取項目容器<xref:Microsoft.VisualStudio.Shell.SelectionContainer.SelectableObjects%2A>和<xref:Microsoft.VisualStudio.Shell.SelectionContainer.SelectedObjects%2A>列出。  
   
 ## <a name="changing-selection-lists"></a>變更選取項目清單  
  在本節中，您要新增的基本屬性類別的選取項目清單，並使用工具視窗介面來選擇要顯示的選取項目清單。  
@@ -261,7 +261,7 @@ ms.locfileid: "60117132"
 6. 選取核取方塊，在**MyToolWindow**視窗。 **屬性** 視窗會顯示`Simple`物件屬性， **SomeText**並**ReadOnly**。 清除核取方塊。 視窗的公用屬性會出現在**屬性**視窗。  
   
     > [!NOTE]
-    >  顯示名稱**SomeText**是**我文字**。  
+    > 顯示名稱**SomeText**是**我文字**。  
   
 ## <a name="best-practice"></a>最佳作法  
  在本逐步解說，<xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer>實作，以便可選取的物件集合和所選的物件的集合相同的集合。 選取的物件會出現在屬性瀏覽器清單。 如需更完整的 ISelectionContainer 實作中，請參閱 Reference.ToolWindow 範例。  

@@ -15,12 +15,12 @@ caps.latest.revision: 28
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e9e12894a6c526e70e9d2ea814c2634a271098d4
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 315a0e2f6c68a98eac8bb2c36d184ef68998e5ae
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60104261"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63435130"
 ---
 # <a name="how-to-specify-build-events-visual-basic"></a>HOW TO：指定建置事件 (Visual Basic)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ ms.locfileid: "60104261"
  您可在 建置事件 對話方塊 (位於 專案設計工具} 的 編譯 頁面) 中，指定建置事件。  
   
 > [!NOTE]
->  Visual Basic Express 不支援建置事件的項目。 只有完整版 Visual Studio 產品才支援此項目。  
+> Visual Basic Express 不支援建置事件的項目。 只有完整版 Visual Studio 產品才支援此項目。  
   
 ## <a name="how-to-specify-pre-build-and-post-build-events"></a>如何指定建置前和建置後事件  
   
@@ -45,10 +45,10 @@ ms.locfileid: "60104261"
 4. 輸入建置前或建置後動作的命令列引數，然後按一下 [確定]。  
   
     > [!NOTE]
-    >  在執行 .bat 檔案的所有建置命令前方，加入 `call` 陳述式。 例如，`call C:\MyFile.bat` 或 `call C:\MyFile.bat call C:\MyFile2.bat`。  
+    > 在執行 .bat 檔案的所有建置命令前方，加入 `call` 陳述式。 例如，`call C:\MyFile.bat` 或 `call C:\MyFile.bat call C:\MyFile2.bat`。  
   
     > [!NOTE]
-    >  如果您的建置前或建置後事件未順利完成，您可以將代碼不為零 (0) 的事件動作結束 (若為 0 表示動作成功)，以終止建置。  
+    > 如果您的建置前或建置後事件未順利完成，您可以將代碼不為零 (0) 的事件動作結束 (若為 0 表示動作成功)，以終止建置。  
   
 ## <a name="example-how-to-change-manifest-information-using-a-post-build-event"></a>範例：如何使用建置後事件變更資訊清單  
  下列程序示範如何使用從建置後事件呼叫的 .exe 命令 (專案目錄中的 .exe.manifest 檔案)，設定應用程式資訊清單中的最低作業系統版本。 最低作業系統版本是由四組號碼來表示，例如 4.10.0.0。 若要進行上述作業，請使用命令來變更資訊清單的 `<dependentOS>` 區段：  

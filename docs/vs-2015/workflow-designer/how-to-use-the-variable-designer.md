@@ -11,12 +11,12 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 22096541df20d2eb6ba5bd00c2fc531e9988d5e9
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 0db5cba76f464e559f46963afd0be6b663ad6d6f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60104287"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63407878"
 ---
 # <a name="how-to-use-the-variable-designer"></a>HOW TO：使用變數設計工具
 變數設計工具適用於建立變數，以用於資料繫結的狀況以及條件陳述式。 按一下即可存取設計工具**變數**設計畫布左下角的按鈕。 設計工具會包含一份變數出現在表格式的格式，而且可依每個資料行標頭中，除了**預設**資料行。 每個變數都會包含名稱、變數型別、範圍與預設值 (如果有的話)。 名稱和預設值都是可編輯的文字欄位，而型別和範圍都可從下拉式清單中選取。 範圍是叫用變數設計工具時選取的活動。 如果無法在選取範圍內建立變數，則範圍會預設為離選取最近的祖系活動，以便在其範圍內建立變數。 [!INCLUDE[crabout](../includes/crabout-md.md)] 變數，請參閱[變數和引數](http://msdn.microsoft.com/library/d03dbe34-5b2e-4f21-8b57-693ee49611b8)。  
@@ -34,7 +34,7 @@ ms.locfileid: "60104287"
 4. 按一下標示為空白資料列**建立變數**。 這會將新的資料列新增使用新的變數，使用下列的預設值： 針對 variablex**名稱**其中 x 是整數，其初始值為 1，若要建立唯一的變數名稱，會自動遞增**字串**for**變數型別**，和**順序**如**範圍**。 不加入任何值**預設**。 在工作流程設計過程中，您隨時可以變更這些值。  
   
     > [!NOTE]
-    >  若要刪除變數，按一下選取的變數，然後按**刪除**索引鍵。  
+    > 若要刪除變數，按一下選取的變數，然後按**刪除**索引鍵。  
   
 ## <a name="see-also"></a>另請參閱  
  [使用工作流程設計工具](../workflow-designer/using-the-workflow-designer.md)   

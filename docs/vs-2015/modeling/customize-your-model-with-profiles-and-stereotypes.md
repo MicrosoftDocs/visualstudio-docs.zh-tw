@@ -13,12 +13,12 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 85bdd48f37d8b8d60df6821934980bf46ebf29cd
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: f7e9aee38208a96ab75318a86810359392b5b8e1
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58939912"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433349"
 ---
 # <a name="customize-your-model-with-profiles-and-stereotypes"></a>使用設定檔和造型自訂您的模型
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ ms.locfileid: "58939912"
  ![包含造型的 UML 類別。](../modeling/media/uml-class-stereotype.png "UML_class_stereotype")  
   
 > [!NOTE]
->  如果您使用設定檔來建立模型，然後與其他人共用模型，他們將無法看到造型，除非他們的電腦上安裝了相同的設定檔。  
+> 如果您使用設定檔來建立模型，然後與其他人共用模型，他們將無法看到造型，除非他們的電腦上安裝了相同的設定檔。  
   
 ## <a name="related-topics"></a>相關主題  
   

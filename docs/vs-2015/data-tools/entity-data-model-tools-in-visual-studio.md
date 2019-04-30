@@ -14,12 +14,12 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: db58bb1826aab9a26dcec6a9475c49fc99057891
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: e10279740d590b63bb3781afd3486f7952123664
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59661097"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63431929"
 ---
 # <a name="entity-data-model-tools-in-visual-studio"></a>在 Visual Studio 中的實體資料模型工具
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,7 +43,7 @@ Entity Framework 是一種物件關聯式對應技術，可讓.NET 開發人員�
 - 您可以使用**更新模型精靈**變更已對基礎資料庫時，更新您的概念模型、 儲存體模型和對應。
 
   > [!NOTE]
-  >  從 Visual Studio 2010[!INCLUDE[adonet_edm](../includes/adonet-edm-md.md)]工具不支援[!INCLUDE[ss2k](../includes/ss2k-md.md)]。
+  > 從 Visual Studio 2010[!INCLUDE[adonet_edm](../includes/adonet-edm-md.md)]工具不支援[!INCLUDE[ss2k](../includes/ss2k-md.md)]。
 
   工具會產生，或修改.edmx 檔案。 此檔案包含描述概念模型、 儲存模型，以及它們之間的對應的資訊。 如需詳細資訊，請參閱 < [EDMX](https://msdn.microsoft.com/data/jj650889.aspx)。
 

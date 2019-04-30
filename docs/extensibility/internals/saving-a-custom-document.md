@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f32f710b6e9749628716181ecf309f2520be041d
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 0f02c4a98920fc575b5ab7c557dd469deb76a586
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60078261"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63427460"
 ---
 # <a name="saving-a-custom-document"></a>儲存自訂文件
 環境控制代碼**儲存**，**另存新檔**，並**全部儲存**命令。 當使用者按一下**儲存**，**另存新檔**，**或 全部儲存**上**檔案**功能表或關閉方案，導致 全部儲存，下列處理程序就會發生。
@@ -39,7 +39,7 @@ ms.locfileid: "60078261"
      自訂編輯器，在文件資料物件和專案之間的通訊都是私用的。 因此，任何特殊的持續性的問題被處理這兩個物件之間。
 
     > [!NOTE]
-    >  如果您實作您自己的持續性時，務必呼叫<xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QuerySaveFiles%2A>方法，以節省時間。 這個方法會檢查以確定它是安全儲存檔案 （例如，檔案不是唯讀）。
+    > 如果您實作您自己的持續性時，務必呼叫<xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QuerySaveFiles%2A>方法，以節省時間。 這個方法會檢查以確定它是安全儲存檔案 （例如，檔案不是唯讀）。
 
 ## <a name="see-also"></a>另請參閱
 - <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>

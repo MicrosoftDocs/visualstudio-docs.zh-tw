@@ -9,12 +9,12 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 8735931e761f7d511615b5be7e93e0198a6b1a45
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: eda8424aeb28231df0ae0355931989bec13a89b7
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60071716"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436167"
 ---
 # <a name="how-to-create-a-geometry-based-gradient-shader"></a>HOW TO：建立以幾何為基礎的漸層著色器
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -59,7 +59,7 @@ ms.locfileid: "60071716"
    下圖顯示完成的著色器圖形和套用至圓球的著色器預覽。  
   
 > [!NOTE]
->  在本圖例中，指定橘色以更適當展現著色器效果，但因為世界空間中尚無預覽圖形的位置，而無法在著色器設計工具中完整預覽著色器。 著色器必須在實際場景中預覽，才能呈現完整的效果。  
+> 在本圖例中，指定橘色以更適當展現著色器效果，但因為世界空間中尚無預覽圖形的位置，而無法在著色器設計工具中完整預覽著色器。 著色器必須在實際場景中預覽，才能呈現完整的效果。  
   
  ![著色器圖形和其效果預覽](../designers/media/digit-gradient-effect-graph.png "Digit-Gradient-Effect-Graph")  
   

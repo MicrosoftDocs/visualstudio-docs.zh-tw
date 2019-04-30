@@ -15,12 +15,12 @@ caps.latest.revision: 28
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 7a39b6f84185c78ccea11e09e628050a6bf4f601
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: e6bbbd4fa2ad051407ece3e05c1806c1231ef2e8
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60053391"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437124"
 ---
 # <a name="immediate-window"></a>即時運算視窗
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -45,7 +45,7 @@ ms.locfileid: "60053391"
  此命令的兩個版本都會傳回 `varA` 變數的值。  
   
 > [!NOTE]
->  若要在 [即時運算] 視窗中發出 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 命令，您必須在命令前面加上大於符號 (>)。 若要輸入多個命令，請切換到 [命令] 視窗。  
+> 若要在 [即時運算] 視窗中發出 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 命令，您必須在命令前面加上大於符號 (>)。 若要輸入多個命令，請切換到 [命令] 視窗。  
   
 ## <a name="design-time-expression-evaluation"></a>設計階段運算式評估  
  您可以在設計階段使用 [即時運算] 視窗來執行函式或副程式。  

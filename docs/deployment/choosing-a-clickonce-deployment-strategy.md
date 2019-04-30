@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 52e0dc775e5e9413fb251261a319e529f36393eb
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 6b4ed387d00c96c1d66fdac0bb92a0bfbae7c530
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60102181"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63406683"
 ---
 # <a name="choose-a-clickonce-deployment-strategy"></a>選擇 ClickOnce 部署策略
 有三種不同的策略可用來部署 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 應用程式。您所選擇的策略主要是取決於您要部署的應用程式類型。 這三種部署策略說明如下：
@@ -32,7 +32,7 @@ ms.locfileid: "60102181"
 - 從 Web 或網路共用啟動應用程式
 
     > [!NOTE]
-    >  除了選擇部署策略外，您也會想要選擇提供應用程式更新的策略。 如需詳細資訊，請參閱 <<c0> [ 選擇 ClickOnce 更新策略](../deployment/choosing-a-clickonce-update-strategy.md)。
+    > 除了選擇部署策略外，您也會想要選擇提供應用程式更新的策略。 如需詳細資訊，請參閱 <<c0> [ 選擇 ClickOnce 更新策略](../deployment/choosing-a-clickonce-update-strategy.md)。
 
 ## <a name="install-from-the-web-or-a-network-share"></a>從 Web 或網路共用安裝
  使用這項策略時，您的應用程式就會部署至 Web 伺服器或網路檔案共用。 當一般使用者想要安裝應用程式時，使用者會按一下 Web 網頁上的圖示，或按兩下檔案共用中的圖示。 然後就會在終端使用者電腦上下載、安裝並啟動應用程式。 [開始] 功能表和 [控制台] 的 [新增或移除程式] 中會新增一些項目。
@@ -49,7 +49,7 @@ ms.locfileid: "60102181"
  這項策略類似第一項策略，不過此應用程式的行為會與 Web 應用程式一樣。 當使用這按一下 Web 網頁上的連結 (或按兩下檔案共用中的圖示) 時，就會啟動應用程式。 當使用者關閉應用程式時，該應用程式就無法在使用者的本機電腦上使用。而且 [開始] 功能表或 [控制台] 的 [新增或移除程式] 中不會新增任何項目。
 
 > [!NOTE]
->  就技術上而言，應用程式會下載並安裝在本機電腦的應用程式快取中，就如同 Web 應用程式會下載至 Web 快取一樣。 與 Web 快取相同的是，檔案最後都會從應用程式快取中清除。 不過，在使用者的感覺上，應用程式是從 Web 或檔案快取執行的。
+> 就技術上而言，應用程式會下載並安裝在本機電腦的應用程式快取中，就如同 Web 應用程式會下載至 Web 快取一樣。 與 Web 快取相同的是，檔案最後都會從應用程式快取中清除。 不過，在使用者的感覺上，應用程式是從 Web 或檔案快取執行的。
 
  這項策略最適合不常使用的應用程式，例如，通常一年只會執行一次的員工福利工具。
 

@@ -24,12 +24,12 @@ caps.latest.revision: 43
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 07930dc31651d11aedccc6c597070bbba62ff0b9
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 2be23466642357d19dad52407fcb9bf82e843c5b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58945100"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63424480"
 ---
 # <a name="uml-class-diagrams-reference"></a>UML 類別圖：參考資料
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,7 +37,7 @@ ms.locfileid: "58945100"
 UML 類別圖描述您的應用程式在內部以及與使用者溝通所使用的物件和資訊結構。 它所描述的資訊不會參考任何特殊實作。 其類別和關聯性可利用許多方式實作，例如資料庫資料表、XML 節點或軟體物件的組合。  
   
 > [!NOTE]
->  本主題說明 UML 類別圖。 還有另一種類別圖，也就是 .NET 類別圖，可用來將程式碼視覺化。 如需詳細資訊，請參閱 <<c0> [ 設計和檢視類別與類型](http://go.microsoft.com/fwlink/?LinkId=142231)。  
+> 本主題說明 UML 類別圖。 還有另一種類別圖，也就是 .NET 類別圖，可用來將程式碼視覺化。 如需詳細資訊，請參閱 <<c0> [ 設計和檢視類別與類型](http://go.microsoft.com/fwlink/?LinkId=142231)。  
   
  若要建立 UML 類別圖中，在**架構**功能表上，選擇**新增 UML 或分層圖**。 如需如何繪製 UML 類別圖的詳細資訊，請參閱[UML 類別圖：指導方針](../modeling/uml-class-diagrams-guidelines.md)。 如需如何建立和繪製模型圖表的詳細資訊，請參閱[編輯 UML 模型和圖表](../modeling/edit-uml-models-and-diagrams.md)。  
   

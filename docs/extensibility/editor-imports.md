@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 99619efa5181fbcf299e99cde60b8879731c0c74
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.openlocfilehash: b11ef172cdd8fb4b1c72b72b43198ad7ad8f74e5
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56715631"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63417349"
 ---
 # <a name="editor-imports"></a>編輯器匯入
 您可以匯入幾個的編輯器服務、 處理站和代理程式，為您的擴充功能提供核心編輯器的不同類型的存取。 例如，您可以匯入<xref:Microsoft.VisualStudio.Text.Operations.ITextStructureNavigatorSelectorService>提供您<xref:Microsoft.VisualStudio.Text.Operations.ITextStructureNavigator>指定的內容類型。 （這個巡覽可讓您執行不同種類的搜尋文字的緩衝區上）。
@@ -23,7 +23,7 @@ ms.locfileid: "56715631"
  若要使用的編輯器匯入，您它匯入為欄位或屬性的匯出 Managed Extensibility Framework 元件組件的類別。
 
 > [!NOTE]
->  如需有關 Managed Extensibility Framework 的詳細資訊，請參閱[Managed Extensibility Framework (MEF)](/dotnet/framework/mef/index)。
+> 如需有關 Managed Extensibility Framework 的詳細資訊，請參閱[Managed Extensibility Framework (MEF)](/dotnet/framework/mef/index)。
 
 ## <a name="import-syntax"></a>匯入語法
  下列範例顯示如何匯入編輯器選項 factory 服務。

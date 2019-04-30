@@ -16,18 +16,18 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 093016b3924d7882901a2b2c1bda060571d5bff4
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: a49ad82cc6cbb2eef8a8746b2c94575925ab1ddd
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56618402"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436727"
 ---
 # <a name="deploy-publish-and-upgrade-sharepoint-solution-packages"></a>部署、 發行和升級 SharePoint 方案套件
   開發 Visual Studio 中的 SharePoint 方案之後，您可以將其套件 (.wsp) 檔案部署至本機 SharePoint 伺服器，或將它發佈至遠端或本機 SharePoint 伺服器。 如果您部署的檔案時，您可以自訂部署的封裝檔案 (.wsp) 的方式。
 
 > [!NOTE]
->  目前，只有沙箱化方案可以發行至 SharePoint 的遠端伺服器。 如需詳細資訊，請參閱 <<c0> [ 沙箱化方案考量](../sharepoint/sandboxed-solution-considerations.md)。
+> 目前，只有沙箱化方案可以發行至 SharePoint 的遠端伺服器。 如需詳細資訊，請參閱 <<c0> [ 沙箱化方案考量](../sharepoint/sandboxed-solution-considerations.md)。
 
 ## <a name="deploy-publish-and-upgrade"></a>部署、 發行和升級
  *部署*指的是複製到本機主機從 Visual Studio 中 SharePoint 專案建置 SharePoint 方案檔。 在已部署的解決方案中，您可以設定的部署步驟，例如回收網際網路資訊服務 (IIS) 集區中，在部署後，啟用解決方案等等。 若要部署，請使用**Deploy**命令**建置**功能表。 如需詳細資訊，請參閱[如何：編輯 SharePoint 部署組態](../sharepoint/how-to-edit-a-sharepoint-deployment-configuration.md)和[How to:部署並發佈至本機 SharePoint 網站的 SharePoint 方案](../sharepoint/how-to-deploy-and-publish-a-sharepoint-solution-to-a-local-sharepoint-site.md)。

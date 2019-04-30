@@ -11,12 +11,12 @@ ms.assetid: 1ac3de27-a23b-438d-9593-389e45839cfa
 caps.latest.revision: 21
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: f1db922974c587cdeadc131d17c44cbab4b49af0
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 64f9a9f4d0785f033191ab527084f0dddb1ff104
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60048537"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63434369"
 ---
 # <a name="legacy-language-service-parser-and-scanner"></a>舊版語言服務的剖析器和掃描器
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -68,7 +68,7 @@ namespace MyNamespace
  與做為一部分 （語彙基元會轉換為某種形式的可執行程式碼） 編譯器的剖析器，不同的語言服務剖析器可以呼叫許多不同的原因，然後在許多不同的內容。 在這種方法的實作方式<xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A>方法中的<xref:Microsoft.VisualStudio.Package.LanguageService>類別是由您決定。 請務必記住，<xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A>可能會在背景執行緒上呼叫方法。  
   
 > [!CAUTION]
->  <xref:Microsoft.VisualStudio.Package.ParseRequest>結構包含參考<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView>物件。 這<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView>物件不能在背景執行緒。 事實上，許多基底的 MPF 類別不能在背景執行緒。 其中包括<xref:Microsoft.VisualStudio.Package.Source>， <xref:Microsoft.VisualStudio.Package.ViewFilter>，<xref:Microsoft.VisualStudio.Package.CodeWindowManager>類別，以及檢視與通訊的直接或間接的任何其他類別。  
+> <xref:Microsoft.VisualStudio.Package.ParseRequest>結構包含參考<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView>物件。 這<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView>物件不能在背景執行緒。 事實上，許多基底的 MPF 類別不能在背景執行緒。 其中包括<xref:Microsoft.VisualStudio.Package.Source>， <xref:Microsoft.VisualStudio.Package.ViewFilter>，<xref:Microsoft.VisualStudio.Package.CodeWindowManager>類別，以及檢視與通訊的直接或間接的任何其他類別。  
   
  此剖析器通常會剖析整個來源檔案的第一個時間呼叫它，或當剖析原因值<xref:Microsoft.VisualStudio.Package.ParseReason>指定。 後續呼叫<xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A>方法處理剖析程式碼的一小部分，而且可以使用前一個完整的剖析作業的結果更快速地執行。 <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A>方法進行通訊的剖析作業中透過結果<xref:Microsoft.VisualStudio.Package.AuthoringSink>和<xref:Microsoft.VisualStudio.Package.AuthoringScope>物件。 <xref:Microsoft.VisualStudio.Package.AuthoringSink>物件用來收集特定的剖析原因，例如，範圍的資訊比對括號或有參數清單的方法簽章的資訊。 <xref:Microsoft.VisualStudio.Package.AuthoringScope>提供的宣告和方法簽章以及支援的集合移至進階的編輯選項 (**移至定義**，**移至宣告**，**移至參考**)。  
   

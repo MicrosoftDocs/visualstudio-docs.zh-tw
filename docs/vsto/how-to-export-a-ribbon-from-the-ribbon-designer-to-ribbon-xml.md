@@ -18,18 +18,18 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: b36c149022849dd6a788bcb5ee8f58cc12ae4417
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 17d6efe4aa18682c6777128113f6fa60347f8950
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60110995"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63419500"
 ---
 # <a name="how-to-export-a-ribbon-from-the-ribbon-designer-to-ribbon-xml"></a>HOW TO：將功能區設計工具功能區匯出至功能區 XML
   **功能區 （視覺化設計工具）** 項目不支援所有可能的功能區自訂類型。 若要進階方式自訂功能區，您可以將設計工具功能區匯出至功能區 XML，並直接編輯 XML。
 
 > [!NOTE]
->  並非所有的屬性值會出現在功能區 XML 檔案。 如需詳細資訊，請參閱 <<c0> [ 功能區概觀](../vsto/ribbon-overview.md)。
+> 並非所有的屬性值會出現在功能區 XML 檔案。 如需詳細資訊，請參閱 <<c0> [ 功能區概觀](../vsto/ribbon-overview.md)。
 
  [!INCLUDE[appliesto_ribbon](../vsto/includes/appliesto-ribbon-md.md)]
 

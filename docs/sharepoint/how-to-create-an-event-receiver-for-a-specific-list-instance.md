@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: deba5e493f58a99e672e362977406670e1eee0e1
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 34114c12ef47fb796de7354aa3133af1fc704267
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60094342"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63408542"
 ---
 # <a name="how-to-create-an-event-receiver-for-a-specific-list-instance"></a>HOW TO：建立事件接收器的特定清單執行個體
   清單定義的任何執行個體中發生的事件回應的清單執行個體事件接收器。 雖然事件接收者範本不會啟用特定的清單執行個體的目標，您可以修改事件接收器來回應特定的清單執行個體中的事件清單定義範圍內。
@@ -43,7 +43,7 @@ ms.locfileid: "60094342"
 6. 在 **何種類型的事件接收器？** 清單中，選擇**清單項目事件**。
 
     > [!NOTE]
-    >  您也可以選取任何其他類型的清單定義，例如，範圍的事件接收器**列出的電子郵件事件**或是**清單工作流程事件**。
+    > 您也可以選取任何其他類型的清單定義，例如，範圍的事件接收器**列出的電子郵件事件**或是**清單工作流程事件**。
 
 7. 在 **何種項目應該做為事件來源？** 清單中，選擇**公告**。
 

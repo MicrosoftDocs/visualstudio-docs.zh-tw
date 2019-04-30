@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 4c806e2d84973c445c9ab8a6aedb7c4f1fb28354
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: e7b8394d0c21ed5a45639e4dad5fe3695aaccc27
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60075541"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63439994"
 ---
 # <a name="how-to-add-a-resource-file"></a>HOW TO：加入資源檔
   方案節點，然後在 [方案總管] 中的功能節點的捷徑功能表上，是將資源檔的命令。 如需詳細資訊，請參閱 <<c0> [ 當地語系化 SharePoint 方案](../sharepoint/localizing-sharepoint-solutions.md)。
@@ -32,7 +32,7 @@ ms.locfileid: "60075541"
 3. 中**加入新項目**對話方塊方塊中，選擇**全域資源檔**範本，然後選擇**新增** 按鈕。
 
    > [!NOTE]
-   >  只有在選取 SharePoint 專案項目時，會出現全域資源檔案的專案項目範本。
+   > 只有在選取 SharePoint 專案項目時，會出現全域資源檔案的專案項目範本。
 
 4. 在 **加入資源**對話方塊方塊中，選擇資源檔案，例如英文 （美國） 文化特性。
 

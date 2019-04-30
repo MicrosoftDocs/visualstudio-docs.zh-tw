@@ -11,12 +11,12 @@ caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 90bf88beafee6f263695b3614cf6385419b33efe
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 020c934d3427dda77c41fb410143972d6f48656b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54797591"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438091"
 ---
 # <a name="working-with-3-d-assets-for-games-and-apps"></a>使用 3D 資產來打造遊戲和應用程式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,14 +44,14 @@ ms.locfileid: "54797591"
  您可以使用 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 著色器設計工具 (即圖形式著色器設計工具) 來建立自訂視覺效果，而不需要知道 HLSL 程式設計。  
   
 > [!NOTE]
->  如需如何開始 DirectX 程式設計的詳細資訊，請參閱 [DirectX](http://go.microsoft.com/fwlink/p/?LinkId=224633)。 如需如何偵錯 DirectX 應用程式的詳細資訊，請參閱[圖形診斷 (偵錯 DirectX 圖形)](../debugger/visual-studio-graphics-diagnostics.md)。  
+> 如需如何開始 DirectX 程式設計的詳細資訊，請參閱 [DirectX](http://go.microsoft.com/fwlink/p/?LinkId=224633)。 如需如何偵錯 DirectX 應用程式的詳細資訊，請參閱[圖形診斷 (偵錯 DirectX 圖形)](../debugger/visual-studio-graphics-diagnostics.md)。  
   
 ## <a name="directx-version-compatibility"></a>DirectX 版本相容性  
  [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 使用 DirectX 來轉譯 2D 和 3D 資產。 您可以選取 DirectX 11 轉譯器或 Windows Advanced Rasterization Platform (WARP) 軟體轉譯器。 DirectX 11 轉譯器對 DirectX 11 和 DirectX 10 GPU 提供高效能硬體加速呈現轉譯。 WARP 轉譯器有助於確定您的資產適用於各種不同的電腦，包含未配備現代化圖形硬體的電腦，以及具有整合式圖形硬體的電腦。 如需 WARP 的詳細資訊，請參閱 [Windows Advanced Rasterization Platform (WARP) 指南](http://go.microsoft.com/fwlink/p/?LinkId=224634)。  
   
 ## <a name="related-topics"></a>相關主題  
   
-|標題|說明|  
+|標題|描述|  
 |-----------|-----------------|  
 |[使用紋理和影像](../designers/working-with-textures-and-images.md)|描述如何使用 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 來使用影像和紋理。|  
 |[使用 3D 模型](../designers/working-with-3-d-models.md)|描述如何使用 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 來使用 3D 模型。|  

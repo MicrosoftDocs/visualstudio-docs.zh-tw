@@ -18,12 +18,12 @@ caps.latest.revision: 28
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 8340867406e99fd6c6f84d1dc84d89a395a338fb
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 61b5a5d04e9c59d9c4034cb97c8ec0fd79264d48
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60106861"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437311"
 ---
 # <a name="how-to-debug-a-partial-trust-application"></a>HOW TO：偵錯部分信任應用程式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,7 +41,7 @@ ms.locfileid: "60106861"
  稍候，您可以在偵錯期間返回並查看您加入了那些使用權限。 如果您在偵錯期間加入使用權限，可能會立刻指出您必須在程式碼中加入使用者同意提示。  
   
 > [!NOTE]
->  偵錯工具視覺化檢視需要比部分信任應用程式所允許還要大的權限。 當您在部分信任的程式碼中被停止時，視覺化檢視將不會載入。 若要使用視覺化檢視進行偵錯，您必須以完全信任方式執行程式碼。  
+> 偵錯工具視覺化檢視需要比部分信任應用程式所允許還要大的權限。 當您在部分信任的程式碼中被停止時，視覺化檢視將不會載入。 若要使用視覺化檢視進行偵錯，您必須以完全信任方式執行程式碼。  
   
 ### <a name="to-choose-a-zone-for-your-partial-trust-application"></a>若要選擇部分信任應用程式的區域  
   

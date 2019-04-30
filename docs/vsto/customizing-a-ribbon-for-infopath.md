@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: bdd39b0ffa59342df669fa619ea5a86a41cef79b
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 6ec01b49ca61fcf295884deafa280c8ee33a2b4c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56602230"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437450"
 ---
 # <a name="customize-a-ribbon-for-infopath"></a>自訂 infopath 的功能區
   當您在 Microsoft Office InfoPath 自訂功能區時，您必須考慮自訂功能區在應用程式中出現的位置。 [!INCLUDE[InfoPath_14_short](../vsto/includes/infopath-14-short-md.md)] 可以在下列三種 InfoPath 應用程式視窗中顯示功能區：
@@ -36,7 +36,7 @@ ms.locfileid: "56602230"
   [預覽列印] 視窗可讓設計人員和使用者在列印前預覽表單或表單範本的頁面。
 
 > [!NOTE]
->  [增益集]  索引標籤不會出現在 [預覽列印] 視窗。 如果您想要在 [預覽列印] 視窗中顯示自訂索引標籤，請確定索引標籤的 [OfficeId]  屬性未設定為 [TabAddIns] 。
+> [增益集]  索引標籤不會出現在 [預覽列印] 視窗。 如果您想要在 [預覽列印] 視窗中顯示自訂索引標籤，請確定索引標籤的 [OfficeId]  屬性未設定為 [TabAddIns] 。
 
  您必須指定每個要讓功能區出現在其中的視窗之功能區類型。
 

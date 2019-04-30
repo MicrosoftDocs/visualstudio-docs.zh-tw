@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: aba73d5fc6c1609a3347178765ba516840b5176e
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: e2a7cd6143b9c97bbcd06337d38ae169dfa94305
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60061685"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438619"
 ---
 # <a name="walkthrough-change-worksheet-formatting-using-checkbox-controls"></a>逐步解說：變更工作表的格式使用核取方塊控制項
   本逐步解說會示範使用 Microsoft Office Excel 工作表上的核取方塊變更格式的基本概念。 您將使用 Visual Studio 中的 Office 開發工具建立，並將程式碼新增至您的專案。 若要查看完整的範例結果，請參閱 Excel 控制項範例： [Office 程式開發範例和逐步解說](../vsto/office-development-samples-and-walkthroughs.md)。
@@ -35,7 +35,7 @@ ms.locfileid: "60061685"
 - 測試您的專案。
 
 > [!NOTE]
->  在下列指示的某些 Visual Studio 使用者介面項目中，您的電腦可能會顯示不同的名稱或位置。 您所擁有的 Visual Studio 版本以及使用的設定會決定這些項目。 如需詳細資訊，請參閱[將 Visual Studio IDE 個人化](../ide/personalizing-the-visual-studio-ide.md)。
+> 在下列指示的某些 Visual Studio 使用者介面項目中，您的電腦可能會顯示不同的名稱或位置。 您所擁有的 Visual Studio 版本以及使用的設定會決定這些項目。 如需詳細資訊，請參閱[將 Visual Studio IDE 個人化](../ide/personalizing-the-visual-studio-ide.md)。
 
 ## <a name="prerequisites"></a>必要條件
  您需要下列元件才能完成此逐步解說：
@@ -94,7 +94,7 @@ ms.locfileid: "60061685"
      接下來，您會將拖曳<xref:Microsoft.Office.Tools.Excel.NamedRange>控制項加入工作表。
 
     > [!NOTE]
-    >  您也可以加入<xref:Microsoft.Office.Tools.Excel.NamedRange>控制項中輸入**textFont**成**名稱** 方塊中。
+    > 您也可以加入<xref:Microsoft.Office.Tools.Excel.NamedRange>控制項中輸入**textFont**成**名稱** 方塊中。
 
 #### <a name="to-add-text-to-a-namedrange-control"></a>將文字加入 NamedRange 控制項
 

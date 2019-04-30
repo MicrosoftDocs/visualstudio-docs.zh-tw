@@ -20,12 +20,12 @@ caps.latest.revision: 33
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 360384118f5c2d02801b63b8836800eca5e26d78
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 6496d38e753d2338966916d1d7855abca77ace34
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60102246"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438483"
 ---
 # <a name="how-to-debug-from-a-dll-project"></a>HOW TO：從 DLL 專案進行偵錯
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,7 +35,7 @@ ms.locfileid: "60102246"
  如果機器碼呼叫了 Managed DLL，且您想要對兩者進行偵錯，可以在專案屬性中指定此項目。 如需詳細資訊，請參閱[如何：在混合模式偵錯](../debugger/how-to-debug-in-mixed-mode.md)。  
   
 > [!NOTE]
->  您無法在 Visual Studio 的 Express 版中指定外部呼叫應用程式。 而是需要將可執行的專案加入方案中，並將其設定為啟動專案，並從可執行的專案之 DLL 中呼叫方法。  
+> 您無法在 Visual Studio 的 Express 版中指定外部呼叫應用程式。 而是需要將可執行的專案加入方案中，並將其設定為啟動專案，並從可執行的專案之 DLL 中呼叫方法。  
   
 ### <a name="to-specify-the-calling-application-in-a-c-project"></a>在 C++ 專案中指定呼叫應用程式  
   

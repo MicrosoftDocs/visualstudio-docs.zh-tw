@@ -20,12 +20,12 @@ caps.latest.revision: 19
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: cb9ff8e31004a3b314102ad6b0e64cd72cab6467
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 9a2679825d41a6360dde05e7511d607f8be69dfa
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60039691"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63434112"
 ---
 # <a name="debug-multiple-processes"></a>偵錯多重處理序
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -64,7 +64,7 @@ ms.locfileid: "60039691"
 - [開始偵錯 Visual Studio 方案中的多個處理序](#BKMK_Start_debugging_multiple_processes_in_a_Visual_Studio_solution)•[變更啟始專案](#BKMK_Change_the_startup_project)•[方案中啟動特定專案](#BKMK_Start_a_specific_project_in_a_solution)•[啟動多個專案方案](#BKMK_Start_multiple_projects_in_a_solution)•[附加至處理序](#BKMK_Attach_to_a_process)•[自動啟動偵錯工具中的 處理序](#BKMK_Automatically_start_an_process_in_the_debugger)  
   
 > [!NOTE]
->  偵錯工具不會自動附加至所偵錯處理序啟動的子處理序 (即使子專案位於相同方案中)。 若要偵錯子處理序：  
+> 偵錯工具不會自動附加至所偵錯處理序啟動的子處理序 (即使子專案位於相同方案中)。 若要偵錯子處理序：  
 > 
 > - 在子處理序啟動之後附加至該子處理序。  
 > 
@@ -166,7 +166,7 @@ ms.locfileid: "60039691"
 ### <a name="BKMK_Break__step__and_continue_commands"></a> 中斷、逐步執行和繼續命令  
   
 > [!NOTE]
->  根據預設，中斷、繼續和逐步執行偵錯工具命令會影響所有正在偵錯的處理序。 若要變更此行為，請參閱[設定多個處理序的執行行為](#BKMK_Configure_the_execution_behavior_of_multiple_processes)  
+> 根據預設，中斷、繼續和逐步執行偵錯工具命令會影響所有正在偵錯的處理序。 若要變更此行為，請參閱[設定多個處理序的執行行為](#BKMK_Configure_the_execution_behavior_of_multiple_processes)  
   
 ||||  
 |-|-|-|  
@@ -197,7 +197,7 @@ ms.locfileid: "60039691"
   例如，如果您啟動偵錯的處理序，從 Visual Studio 方案，附加至已在執行，另一個處理序，然後選擇**停止偵錯**、 偵錯工作階段結束，啟動 Visual Studio 中的程序已終止，而您附加的處理程序會繼續執行。 您可以使用下列程序控制停止偵錯的方式。  
   
 > [!NOTE]
->  **中斷所有處理序，當其中一個處理序中斷**選項不會影響停止偵錯或結束及中斷連結處理序。  
+> **中斷所有處理序，當其中一個處理序中斷**選項不會影響停止偵錯或結束及中斷連結處理序。  
   
  **若要變更停止偵錯影響個別處理序**  
   

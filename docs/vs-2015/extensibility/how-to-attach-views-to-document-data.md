@@ -10,12 +10,12 @@ ms.assetid: f92c0838-45be-42b8-9c55-713e9bb8df07
 caps.latest.revision: 23
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 50b9ef50e077a4e335b0c4f0718a3c51624e09c8
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 6bc1b57e189902624c13149d0264142ff66af050
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60080640"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436009"
 ---
 # <a name="how-to-attach-views-to-document-data"></a>HOW TO：如何︰將檢視附加至文件資料
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,7 +39,7 @@ ms.locfileid: "60080640"
 4. 如果您關閉這份文件時，Visual Studio 會呼叫您的編輯器 factory 的第二次。 在此呼叫時，`DocDataExisting`參數等於 NULL。 編輯器 factory 實作然後可以在自己的編輯器中開啟文件資料物件。  
   
     > [!NOTE]
-    >  若要判斷是否有您可以使用現有的文件資料物件，您也可以使用的介面實作的私用知識轉型的指標，實際[!INCLUDE[vcprvc](../includes/vcprvc-md.md)]私用實作的類別。 例如，實作所有的標準編輯器`IVsPersistFileFormat`，該項則繼承自<xref:Microsoft.VisualStudio.OLE.Interop.IPersist>。 因此，您可以呼叫`QueryInterface`針對<xref:Microsoft.VisualStudio.OLE.Interop.IPersist.GetClassID%2A>，並在現有的文件資料物件上的類別識別碼是否符合您的實作類別識別碼，則您可以使用文件資料物件。  
+    > 若要判斷是否有您可以使用現有的文件資料物件，您也可以使用的介面實作的私用知識轉型的指標，實際[!INCLUDE[vcprvc](../includes/vcprvc-md.md)]私用實作的類別。 例如，實作所有的標準編輯器`IVsPersistFileFormat`，該項則繼承自<xref:Microsoft.VisualStudio.OLE.Interop.IPersist>。 因此，您可以呼叫`QueryInterface`針對<xref:Microsoft.VisualStudio.OLE.Interop.IPersist.GetClassID%2A>，並在現有的文件資料物件上的類別識別碼是否符合您的實作類別識別碼，則您可以使用文件資料物件。  
   
 ## <a name="robust-programming"></a>穩固程式設計  
  當 Visual Studio 會呼叫您實作<xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory.CreateEditorInstance%2A>方法，它會傳遞回指標中的現有文件資料物件`punkDocDataExisting`參數，如果有的話。 檢查文件資料物件中傳回`punkDocDataExisting`來判斷文件資料物件是否適合您的編輯器，請注意，本主題中的程序的步驟 4 中所述。 如果適合，則您的編輯器 factory 應該提供第二個檢視資料中所述[支援多個文件檢視](../extensibility/supporting-multiple-document-views.md)。 如果沒有，則它應該會顯示適當的錯誤訊息。  

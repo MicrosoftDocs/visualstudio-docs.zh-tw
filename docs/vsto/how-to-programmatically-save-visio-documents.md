@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 08303b672fe45db4b6ccfcb5a64be5115e660186
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 85a45da13594a6f204e91f93ddcee64acb29c493
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60069430"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63419396"
 ---
 # <a name="how-to-programmatically-save-visio-documents"></a>HOW TO：以程式設計方式儲存 Visio 文件
   儲存 Microsoft Office Visio 文件的方式有很多種：
@@ -40,7 +40,7 @@ ms.locfileid: "60069430"
      若要使用此程式碼範例，請從專案的 `ThisAddIn` 類別中執行它。
 
     > [!NOTE]
-    >  如果尚未儲存新的 Visio 文件，`Microsoft.Office.Interop.Visio.Document.Save` 方法會擲回例外狀況。
+    > 如果尚未儲存新的 Visio 文件，`Microsoft.Office.Interop.Visio.Document.Save` 方法會擲回例外狀況。
 
      [!code-csharp[Trin_VstcoreVisioAutomationAddIn#11](../vsto/codesnippet/CSharp/trin_vstcorevisioautomationaddin/ThisAddIn.cs#11)]
      [!code-vb[Trin_VstcoreVisioAutomationAddIn#11](../vsto/codesnippet/VisualBasic/trin_vstcorevisioautomationaddin/ThisAddIn.vb#11)]

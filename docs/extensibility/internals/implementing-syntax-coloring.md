@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 453952f52561a761ab4cf01825d07aa97595d0c2
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 15659cc8061601776e3a3197a49f14e2c824aa7b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60080198"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63420433"
 ---
 # <a name="implementing-syntax-coloring"></a>實作語法著色
 當語言服務會提供語法顏色標示時、 剖析器將一行文字轉換成陣列的可設定色彩的項目，並傳回語彙基元的型別對應至這些色彩的項目。 剖析器應該會傳回屬於可設定色彩的項目清單的語彙基元型別。 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 根據色彩標示器物件指派給適當的語彙基元型別屬性的程式碼 視窗中顯示每個可設定色彩的項目。
@@ -27,7 +27,7 @@ ms.locfileid: "60080198"
  舊版語言服務會實作成 VSPackage 的一部分，但實作語言服務功能的較新的方式是使用 MEF 擴充功能。 若要深入了解實作語法著色的新方式，請參閱[逐步解說：反白顯示文字](../../extensibility/walkthrough-highlighting-text.md)。
 
 > [!NOTE]
->  我們建議您開始使用新的編輯器 API 盡。 這會改善您的語言服務的效能，並可讓您充分利用新編輯器功能。
+> 我們建議您開始使用新的編輯器 API 盡。 這會改善您的語言服務的效能，並可讓您充分利用新編輯器功能。
 
 ## <a name="steps-followed-by-an-editor-to-colorize-text"></a>若要以色彩標示文字編輯器所遵循步驟
 

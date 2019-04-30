@@ -36,12 +36,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 2ef2d97b0e3b15accdeb267513b38ef6d5bd729d
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: e9bd569f41ae15b6e95cc92fe969a4263c760735
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56607105"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63427968"
 ---
 # <a name="host-items-and-host-controls-overview"></a>主項目和主控制項概觀
   主項目和主控制項類型可為使用 Visual Studio 中的 Office 開發工具建立的 Office 方案，提供程式撰寫模型。 主項目和主控制項會以較接近與 Managed 物件 (例如 Windows Form 控制項) 互動的方式，與以 COM 為基礎的 Microsoft Office Word 和 Microsoft Office Excel 物件模型進行互動。
@@ -113,7 +113,7 @@ ms.locfileid: "56607105"
   您也可以在 Office 方案中使用 Windows Form 控制項，方法是直接將控制項加入 Word 和 Excel 文件介面。 如需詳細資訊，請參閱 < [Windows Forms 控制項上 Office 文件概觀](../vsto/windows-forms-controls-on-office-documents-overview.md)。
 
 > [!NOTE]
->  不支援將主控制項或 Windows Form 控制項加入 Word 子文件。
+> 不支援將主控制項或 Windows Form 控制項加入 Word 子文件。
 
 ### <a name="add-host-controls-to-your-documents"></a>將主控制項加入您的文件
  在文件層級的專案中，您可以使用下列方式，在設計階段將主控制項加入 Word 文件或 Excel 工作表：
@@ -148,7 +148,7 @@ ms.locfileid: "56607105"
  當您將主控制項從 [工具箱]  拖曳至文件時，會自動使用控制項類型來命名控制項，並在結尾處加上一個累加號碼。 例如，書籤會命名為 **bookmark1**、 **bookmark2**，依此類推。 如果使用 Word 或 Excel 的原生功能來加入控制項，可以在建立控制項時為它指定特定名稱。 您也可以變更 [屬性]  視窗中的 [名稱]  屬性值，來重新命名控制項。
 
 > [!NOTE]
->  您不可以使用保留字來命名主控制項。 例如，如果將 <xref:Microsoft.Office.Tools.Excel.NamedRange> 控制項加入工作表，並將名稱變更為 **System**，則建置專案時會發生錯誤。
+> 您不可以使用保留字來命名主控制項。 例如，如果將 <xref:Microsoft.Office.Tools.Excel.NamedRange> 控制項加入工作表，並將名稱變更為 **System**，則建置專案時會發生錯誤。
 
 ### <a name="delete-host-controls"></a>刪除主控制項
  在文件層級專案中，您可以刪除主控制項在設計階段選取 Excel 工作表或 Word 文件上的控制項，然後按**刪除**索引鍵。 不過，您必須使用 Excel 中的 [定義名稱]  對話方塊來刪除 <xref:Microsoft.Office.Tools.Excel.NamedRange> 控制項。
@@ -160,13 +160,13 @@ ms.locfileid: "56607105"
  如果使用者在執行階段文件刪除主控制項，方案也會非預期的方式可能會失敗。 您可以使用 Word 和 Excel 中的文件保護功能，防止主控制項遭到刪除。 如需詳細資訊，請參閱 < [Office 程式開發範例和逐步解說](../vsto/office-development-samples-and-walkthroughs.md)。
 
 > [!NOTE]
->  請勿在文件或工作表的 `Shutdown` 事件處理常式期間，以程式設計方式移除控制項。 當 `Shutdown` 事件發生時，UI 項目便無法再使用。 如果您想要在應用程式關閉之前移除控制項，請將程式碼加入其他事件處理常式，例如 `BeforeClose` 或 `BeforeSave`。
+> 請勿在文件或工作表的 `Shutdown` 事件處理常式期間，以程式設計方式移除控制項。 當 `Shutdown` 事件發生時，UI 項目便無法再使用。 如果您想要在應用程式關閉之前移除控制項，請將程式碼加入其他事件處理常式，例如 `BeforeClose` 或 `BeforeSave`。
 
 ### <a name="program-against-host-control-events"></a>針對主控制項事件進行程式設計
  主控制項擴充 Office 物件的其中一種方法是透過加入事件。 例如，Excel 中的 <xref:Microsoft.Office.Interop.Excel.Range> 物件和 Word 中 <xref:Microsoft.Office.Interop.Word.Bookmark> 物件沒有事件，但是 [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] 會藉由加入可程式化的事件來擴充這些物件。 您可以透過下列用以存取 Windows Form 控制項事件的相同方式，來存取這些事件並對其撰寫程式碼：透過 Visual Basic 中的事件下拉式清單，以及 C# 中的事件屬性頁。 如需詳細資訊，請參閱[逐步解說：針對 NamedRange 控制項的事件的程式](../vsto/walkthrough-programming-against-events-of-a-namedrange-control.md)。
 
 > [!NOTE]
->  請勿在 Excel 中，將 <xref:Microsoft.Office.Interop.Excel._Application.EnableEvents%2A> 物件的 <xref:Microsoft.Office.Interop.Excel.Application> 屬性設定為 **false**(Native Office Object)。 將這個屬性設定為 **false** ，會導致 Excel 無法引發任何事件，包括主控制項的事件在內。
+> 請勿在 Excel 中，將 <xref:Microsoft.Office.Interop.Excel._Application.EnableEvents%2A> 物件的 <xref:Microsoft.Office.Interop.Excel.Application> 屬性設定為 **false**(Native Office Object)。 將這個屬性設定為 **false** ，會導致 Excel 無法引發任何事件，包括主控制項的事件在內。
 
 ## <a name="see-also"></a>另請參閱
 - [主項目和主控制項的程式設計限制](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)

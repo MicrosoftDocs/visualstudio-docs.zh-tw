@@ -12,12 +12,12 @@ caps.latest.revision: 43
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 75438b5a2ffa5917f667ab3fdc3a9bd3528f0e55
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 607eda7550819e4150f026a0671ed744ba9c10a7
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58945768"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63427049"
 ---
 # <a name="generating-files-with-the-texttransform-utility"></a>使用 TextTransform 公用程式產生檔案
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,7 +25,7 @@ ms.locfileid: "58945768"
 TextTransform.exe 是命令列工具，可用來轉換文字範本。 當您呼叫 TextTransform.exe 時，您可以指定文字範本檔案的名稱做為引數。 TextTransform.exe 呼叫文字轉換引擎，並處理文字範本。 TextTransform.exe 通常會從指令碼呼叫。 不過，它通常不需要，因為在 Visual Studio 中或在建置流程中，您可以執行文字轉換。  
   
 > [!NOTE]
->  如果您想要執行建置程序的一部分的文字轉換，請考慮使用 MSBuild 的文字轉換工作。 如需詳細資訊，請參閱 <<c0> [ 建置流程中的程式碼產生](../modeling/code-generation-in-a-build-process.md)。 中的電腦上[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]已安裝，您也可以撰寫應用程式或[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]可以轉換文字範本的延伸模組。 如需詳細資訊，請參閱 <<c0> [ 藉由使用自訂主機處理文字範本](../modeling/processing-text-templates-by-using-a-custom-host.md)。  
+> 如果您想要執行建置程序的一部分的文字轉換，請考慮使用 MSBuild 的文字轉換工作。 如需詳細資訊，請參閱 <<c0> [ 建置流程中的程式碼產生](../modeling/code-generation-in-a-build-process.md)。 中的電腦上[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]已安裝，您也可以撰寫應用程式或[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]可以轉換文字範本的延伸模組。 如需詳細資訊，請參閱 <<c0> [ 藉由使用自訂主機處理文字範本](../modeling/processing-text-templates-by-using-a-custom-host.md)。  
   
  TextTransform.exe 位於下列目錄：  
   
