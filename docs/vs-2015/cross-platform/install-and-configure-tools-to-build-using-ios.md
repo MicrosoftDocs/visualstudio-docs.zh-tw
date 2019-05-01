@@ -11,12 +11,12 @@ caps.latest.revision: 13
 author: corob-msft
 ms.author: corob
 manager: jillfra
-ms.openlocfilehash: cdde44b5d960a3f9ef462e06b55260477a8933c0
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 227d4ba765dbea3be5306f05995cc29d075e6a66
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60097072"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63434140"
 ---
 # <a name="install-and-configure-tools-to-build-using-ios"></a>Install and Configure Tools to Build using iOS
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -24,7 +24,7 @@ ms.locfileid: "60097072"
 您可以使用 Visual C++ for Cross-Platform Mobile Development 編輯、偵錯 iOS 程式碼並將其部署至 iOS 模擬器或 iOS 裝置，但由於授權限制，必須在 Mac 上遠端建置及執行程式碼。 若要使用 Visual Studio 建置並執行 iOS 應用程式，您必須在 Mac 上安裝及設定 [vcremote](http://go.microsoft.com/fwlink/p/?LinkId=534988)遠端代理程式。 遠端代理程式會處理來自 Visual Studio 的建立要求，並在連接至 Mac 的 iOS 裝置或 Mac 中的 iOS 模擬器上執行應用程式。  
   
 > [!NOTE]
->  如需使用雲端裝載 Mac 服務，而非使用 Mac 的相關資訊，請參閱 [Build and Simulate iOS in the Cloud](https://taco.visualstudio.com/docs/build_ios_cloud/)。 本指示是針對使用 Visual Studio Tools for Apache Cordova 進行建置。 若要使用本指示以利用 Visual C++ for Cross-Platform Mobile Development 進行建置，請將 vs-mda-remote 取代為 vcremote。  
+> 如需使用雲端裝載 Mac 服務，而非使用 Mac 的相關資訊，請參閱 [Build and Simulate iOS in the Cloud](https://taco.visualstudio.com/docs/build_ios_cloud/)。 本指示是針對使用 Visual Studio Tools for Apache Cordova 進行建置。 若要使用本指示以利用 Visual C++ for Cross-Platform Mobile Development 進行建置，請將 vs-mda-remote 取代為 vcremote。  
   
  一旦您已安裝使用 iOS 進行建置的工具，請參閱本主題以取得可在 Visual Studio 及 Mac 上進行 iOS 開發快速設定和更新遠端代理程式的方式。  
   
@@ -93,7 +93,7 @@ ms.locfileid: "60097072"
    安裝期間會在您的 Mac 上安裝 vcremote 並啟動開發人員模式。 也會安裝[Homebrew](http://brew.sh/) 和兩個 npm 封裝、vcremote-lib 和 vcremote-utils 公用程式。  
   
   > [!NOTE]
-  >  若要安裝 Homebrew，您必須具備 sudo (系統管理員) 存取權。 如果您沒有 sudo 但要安裝 vcremote，可手動將 Homebrew 安裝到 usr/local 位置，並將它的 bin 資料夾加入路徑中。 如需詳細資訊，請參閱 [Homebrew 文件](https://github.com/Homebrew/homebrew/wiki/Installation)。 若要手動啟用開發人員模式，在終端機應用程式中輸入下列命令：`DevToolsSecurity –enable`  
+  > 若要安裝 Homebrew，您必須具備 sudo (系統管理員) 存取權。 如果您沒有 sudo 但要安裝 vcremote，可手動將 Homebrew 安裝到 usr/local 位置，並將它的 bin 資料夾加入路徑中。 如需詳細資訊，請參閱 [Homebrew 文件](https://github.com/Homebrew/homebrew/wiki/Installation)。 若要手動啟用開發人員模式，在終端機應用程式中輸入下列命令：`DevToolsSecurity –enable`  
   
   如果您已更新為新版 Visual Studio，也必須將遠端代理程式更新為目前版本。 若要更新遠端代理程式，請重複下載及安裝遠端代理程式的步驟。  
   
@@ -154,7 +154,7 @@ ms.locfileid: "60097072"
 5. 在 [主機名稱]  和 [連接埠]  欄位中，輸入您啟動遠端代理程式時所指定的值。 主機名稱可能是您的 Mac DNS 名稱或 IP 位址。 預設連接埠是 3030。  
   
    > [!NOTE]
-   >  如果您無法使用主機名稱 ping 到 Mac，就需要使用 IP 位址。  
+   > 如果您無法使用主機名稱 ping 到 Mac，就需要使用 IP 位址。  
   
 6. 如果您是在預設的安全連線模式中使用遠端代理程式，請核取 [安全]  核取方塊，然後在 [Pin]  欄位中輸入遠端代理程式指定的 PIN 值。 如果您是在不安全的連線模式中使用遠端代理程式，請清除 [安全]  核取方塊，並將 [Pin]  欄位保留空白。  
   

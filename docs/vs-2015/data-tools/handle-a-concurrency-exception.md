@@ -21,12 +21,12 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 7ee82187adac74f90b6f5cb8485c68452d8329b0
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 421360421a732935d452053630c17cda319f4b0d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60060706"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63434490"
 ---
 # <a name="handle-a-concurrency-exception"></a>處理並行例外狀況
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -55,7 +55,7 @@ ms.locfileid: "60060706"
 - Northwind 範例資料庫，以執行更新的權限的存取。
   
 > [!NOTE]
->  對話方塊和功能表命令，您會看到，可能會有所不同說明中所述取決於您使用的設定或您使用的版本不同。 若要變更設定，請從 [ **工具** ] 功能表中選取 [ **匯入和匯出設定** ]。 如需詳細資訊，請參閱 [在 Visual Studio 中自訂開發設定](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)  
+> 對話方塊和功能表命令，您會看到，可能會有所不同說明中所述取決於您使用的設定或您使用的版本不同。 若要變更設定，請從 [ **工具** ] 功能表中選取 [ **匯入和匯出設定** ]。 如需詳細資訊，請參閱 [在 Visual Studio 中自訂開發設定](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)  
   
 ## <a name="create-a-new-project"></a>建立新專案  
  您可以建立新的 Windows 應用程式，以開始您逐步解說。  
@@ -86,7 +86,7 @@ ms.locfileid: "60060706"
 3. 選取 Northwind 範例資料庫的連線，從清單中可用的連線。如果連接不在清單中的連線，請選取**新連線**  
   
     > [!NOTE]
-    >  如果您要連接到本機資料庫檔案，請選取**No**當系統詢問您是否要將檔案加入您的專案。  
+    > 如果您要連接到本機資料庫檔案，請選取**No**當系統詢問您是否要將檔案加入您的專案。  
   
 4. 在 [**將連接字串儲存到應用程式組態檔**畫面上，選取**下一步]**。  
   
@@ -149,7 +149,7 @@ ms.locfileid: "60060706"
  在本節中，您可以加入嘗試更新資料庫的程式碼。您也會處理任何<xref:System.Data.DBConcurrencyException>，可能會引發，以及任何其他例外狀況。  
   
 > [!NOTE]
->  `CreateMessage`和`ProcessDialogResults`方法將會新增稍後在本逐步解說。  
+> `CreateMessage`和`ProcessDialogResults`方法將會新增稍後在本逐步解說。  
   
 ##### <a name="to-add-error-handling-for-the-concurrency-error"></a>若要加入並行錯誤的錯誤處理  
   
@@ -201,7 +201,7 @@ ms.locfileid: "60060706"
 6. 在第一筆記錄 (`ALFKI`) 變更`ContactName`至`Maria Anders2`。  
   
     > [!NOTE]
-    >  瀏覽至不同的資料列，以認可變更。  
+    > 瀏覽至不同的資料列，以認可變更。  
   
 7. 切換至`ConcurrencyWalkthrough`執行表單。  
   

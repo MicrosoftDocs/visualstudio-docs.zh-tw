@@ -9,12 +9,12 @@ caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a4d0eb491a2dbe0b6fc290cefb665bcb931f8a1a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 2f162f827fa1866b5ca241bd9aaae2aadffb56e6
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60048870"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63428601"
 ---
 # <a name="step-8-write-code-for-the-show-a-picture-button-event-handler"></a>步驟 8：為顯示圖片按鈕事件處理常式撰寫程式碼
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -54,7 +54,7 @@ Visual C# 程式碼
     3. 鍵入句號 (`.`) (許多程式設計人員會說是一個點)。因為您在 **openFileDialog1** 後面鍵入一個點，所以 [IntelliSense] 視窗隨即開啟並填入 **OpenFileDialog** 元件的所有屬性和方法。 當您在 [Windows Forms 設計工具] 中選擇該元件時，[屬性] 視窗中也會顯示相同的屬性。 您也可以選擇指示元件執行動作 (例如開啟對話方塊) 的方法。  
   
         > [!NOTE]
-        >  [IntelliSense] 視窗可以同時顯示屬性和方法。 若要判斷顯示的內容，請查看 [IntelliSense] 視窗中每個項目左方的圖示。 您在每個方法旁邊會看到方塊圖片，而在每個屬性旁邊會看到扳手 (或扳鉗) 的圖片。 每一個事件旁邊也會出現閃電圖示。 這些圖片如下所示。  
+        > [IntelliSense] 視窗可以同時顯示屬性和方法。 若要判斷顯示的內容，請查看 [IntelliSense] 視窗中每個項目左方的圖示。 您在每個方法旁邊會看到方塊圖片，而在每個屬性旁邊會看到扳手 (或扳鉗) 的圖片。 每一個事件旁邊也會出現閃電圖示。 這些圖片如下所示。  
   
          ![方法圖示](../ide/media/express-iconmethod.png "Express_IconMethod")  
 方法圖示  
@@ -72,21 +72,21 @@ Visual C# 程式碼
     5. 當您在控制項或元件上使用方法時 (稱為「呼叫方法」)，需要新增括號。 因此，在 `ShowDialog` 中緊接 "g" 之後輸入左括弧和右括弧：`()`。現在這應該看起來像 "openFileDialog1.ShowDialog()"。  
   
         > [!NOTE]
-        >  方法在任何程式中都很重要，本教學課程已展示幾種使用方法的做法。 您可以呼叫元件的方法來指示元件執行動作，就像您呼叫 **OpenFileDialog** 元件的 `ShowDialog()` 方法一樣。 您可以建立自己的方法來指示程式執行動作，例如您正在建置名為 `showButton_Click()` 的方法，當使用者選擇按鈕時，就會開啟對話方塊和圖片。  
+        > 方法在任何程式中都很重要，本教學課程已展示幾種使用方法的做法。 您可以呼叫元件的方法來指示元件執行動作，就像您呼叫 **OpenFileDialog** 元件的 `ShowDialog()` 方法一樣。 您可以建立自己的方法來指示程式執行動作，例如您正在建置名為 `showButton_Click()` 的方法，當使用者選擇按鈕時，就會開啟對話方塊和圖片。  
   
     6. 在 Visual C# 中，新增空格，然後新增兩個等號 (`==`)。 在 Visual Basic 中，新增空格，然後使用單一等號 (`=`) (Visual C# 和 Visual Basic 使用不同的相等運算子)。  
   
     7. 加入另一個空格。 這樣做之後，另一個 [IntelliSense] 視窗會隨即開啟。 開始鍵入 `DialogResult`，並選擇 TAB 鍵將其新增。  
   
         > [!NOTE]
-        >  當您撰寫程式碼來呼叫方法時，有時會傳回一個值。 在這個案例中，**OpenFileDialog** 元件的 `ShowDialog()` 方法會傳回 DialogResult 值。 DialogResult 是特殊值，可讓您得知對話方塊中發生的情形。 **OpenFileDialog** 元件可讓使用者選擇 [確定] 或 [取消]，因此其 `ShowDialog()` 方法會傳回 DialogResult.OK 或 DialogResult.Cancel。  
+        > 當您撰寫程式碼來呼叫方法時，有時會傳回一個值。 在這個案例中，**OpenFileDialog** 元件的 `ShowDialog()` 方法會傳回 DialogResult 值。 DialogResult 是特殊值，可讓您得知對話方塊中發生的情形。 **OpenFileDialog** 元件可讓使用者選擇 [確定] 或 [取消]，因此其 `ShowDialog()` 方法會傳回 DialogResult.OK 或 DialogResult.Cancel。  
   
     8. 鍵入一個點來開啟 DialogResult 值 [IntelliSense] 視窗。 輸入字母 `O`，然後選擇 TAB 鍵插入 **OK**。  
   
          若要深入了解 `DialogResult`，請參閱 [DialogResult](http://msdn.microsoft.com/library/system.windows.forms.dialogresult.aspx)。  
   
         > [!NOTE]
-        >  第一行程式碼應該就完成。 在 Visual C# 中，程式碼應該如下所示。  
+        > 第一行程式碼應該就完成。 在 Visual C# 中，程式碼應該如下所示。  
         >   
         >  `if (openFileDialog1.ShowDialog() == DialogResult.OK)`  
         >   

@@ -19,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 2ec9dcc6f5458e33e5ea215d65aacd48c622f111
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 0d8b99a547ebe80494d80aa26903c58060d44947
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60051996"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63440378"
 ---
 # <a name="architecture-of-document-level-customizations"></a>文件層級自訂的架構
   [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)] 包含的專案可以建立 Microsoft Office Word 和 Microsoft Office Excel 的文件層級自訂。 本主題描述文件層級自訂的下列各方面：
@@ -49,7 +49,7 @@ ms.locfileid: "60051996"
  如果使用者同時開啟多個文件層級自訂，每個組件會在不同的應用程式定義域中載入。 這表示如果某個方案運作失常，並不會導致其他方案失敗。 文件層級自訂設計成搭配單一應用程式定義域中的單一文件使用， 而不是設計成跨文件進行通訊。 如需有關應用程式定義域的詳細資訊，請參閱 <<c0> [ 應用程式定義域](/dotnet/framework/app-domains/application-domains)。
 
 > [!NOTE]
->  使用 Visual Studio 中的 Office Developer Tools 所建立的文件層級自訂，設計成只能在使用者啟動應用程式時使用。 如果是以程式設計的方式啟動應用程式 (例如，使用 Automation)，則該自訂可能無法如預期般運作。
+> 使用 Visual Studio 中的 Office Developer Tools 所建立的文件層級自訂，設計成只能在使用者啟動應用程式時使用。 如果是以程式設計的方式啟動應用程式 (例如，使用 Automation)，則該自訂可能無法如預期般運作。
 
 ### <a name="design-time-and-run-time-experiences"></a>設計階段和執行階段的體驗
  了解設計方案和執行方案的體驗，有助於了解文件層級自訂的架構。
@@ -118,7 +118,7 @@ ms.locfileid: "60051996"
  ![2007 office 自訂架構](../vsto/media/office07-custom.png "2007 Office 自訂架構")
 
 > [!NOTE]
->  在以 [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]為目標的 Office 方案中，方案會使用內嵌於方案組件中的主要 Interop 組件 (PIA) 類型資訊來呼叫主應用程式的物件模型，而不是直接呼叫 PIA。 如需詳細資訊，請參閱 <<c0> [ 設計和建立 Office 方案](../vsto/designing-and-creating-office-solutions.md)。
+> 在以 [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]為目標的 Office 方案中，方案會使用內嵌於方案組件中的主要 Interop 組件 (PIA) 類型資訊來呼叫主應用程式的物件模型，而不是直接呼叫 PIA。 如需詳細資訊，請參閱 <<c0> [ 設計和建立 Office 方案](../vsto/designing-and-creating-office-solutions.md)。
 
 ### <a name="loading-process"></a>載入程序
  當使用者開啟屬於 Microsoft Office 方案一部分的文件時，會執行下列步驟。

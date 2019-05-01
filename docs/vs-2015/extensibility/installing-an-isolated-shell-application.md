@@ -11,12 +11,12 @@ ms.assetid: 33416226-9083-41b5-b153-10d2bf35c012
 caps.latest.revision: 41
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 55c4ebc96d93d9b068c29d24727d40975518b1ef
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 60862d631d93788f10c372310da9eb3d181943ef
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60062824"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63414535"
 ---
 # <a name="installing-an-isolated-shell-application"></a>安裝 Isolated 的 Shell 應用程式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -108,7 +108,7 @@ ms.locfileid: "60062824"
 2. 識別命令介面與殼層應用程式需要，如下列範例所示的元件。  
   
     > [!NOTE]
-    >  某些項目可以參考其他.wxs 檔案中定義。  
+    > 某些項目可以參考其他.wxs 檔案中定義。  
   
     ```xml  
     <Feature Id="ProductFeature" Title="$(var.ShortProductName)Shell" Level="1">  
@@ -159,7 +159,7 @@ ms.locfileid: "60062824"
         ```  
   
     > [!NOTE]
-    >  Shell （獨立模式） 應用程式的必要的相依性：DebuggerProxy，MasterPkgDef，資源 （尤其是.winprf 檔案），應用程式和 PkgDefs。  
+    > Shell （獨立模式） 應用程式的必要的相依性：DebuggerProxy，MasterPkgDef，資源 （尤其是.winprf 檔案），應用程式和 PkgDefs。  
   
 ### <a name="registry-entries"></a>登錄項目  
  Shell （獨立模式） 專案範本會包含*ProjectName*合併安裝上的登錄機碼的.reg 檔案。 這些登錄項目必須是安裝和清除用途的 MSI 的一部分。 您也必須在 ApplicationRegistry.wxs 建立相符的登錄區塊。  
@@ -211,7 +211,7 @@ ms.locfileid: "60062824"
  若要判斷是否必須安裝 Visual Studio Shell （獨立模式），請先判斷是否已安裝的檢查 HKLM\Software\Microsoft\DevDiv\vs\Servicing\ShellVersion\isoshell\LCID\Install 登錄值。  
   
 > [!NOTE]
->  在 Product.wxs Shell 偵測區塊也會讀取這些值。  
+> 在 Product.wxs Shell 偵測區塊也會讀取這些值。  
   
  HKLM\Software\Microsoft\AppEnv\14.0\ShellFolder 指定已安裝 Visual Studio Shell，而您可以檢查檔案的位置。  
   
@@ -369,4 +369,4 @@ dwResult = ExecCmd(boutiqueInstallCmd, FALSE);
 ```  
   
 ## <a name="see-also"></a>另請參閱  
- [逐步解說：建立基本的 Isolated 的 Shell 應用程式](../extensibility/walkthrough-creating-a-basic-isolated-shell-application.md)
+ [逐步解說：建立基本的 Isolated Shell 應用程式](../extensibility/walkthrough-creating-a-basic-isolated-shell-application.md)

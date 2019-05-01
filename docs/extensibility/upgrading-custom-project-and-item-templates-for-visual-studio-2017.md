@@ -9,12 +9,12 @@ manager: jillfra
 ms.workload:
 - vssdk
 monikerRange: vs-2017
-ms.openlocfilehash: 7c50bb7bf6c61a8061b3817c53027a3dd6e5b29f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: cb4defa206d176e57804e6d2473262568cd5edbf
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60102623"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63434207"
 ---
 # <a name="upgrade-custom-project-and-item-templates-for-visual-studio-2017"></a>升級自訂專案與 Visual Studio 2017 的項目範本
 
@@ -53,7 +53,7 @@ ms.locfileid: "60102623"
     3. 重新開啟 Visual Studio。 您應該預期的位置中找到您的範本。
 
     > [!NOTE]
-    >  當登錄機碼存在時，沒有可用的 Visual Studio 擴充性專案範本。 您必須刪除登錄機碼 (和重新執行**devenv /installvstemplates**) 來使用它們。
+    > 當登錄機碼存在時，沒有可用的 Visual Studio 擴充性專案範本。 您必須刪除登錄機碼 (和重新執行**devenv /installvstemplates**) 來使用它們。
 
 ## <a name="other-recommendations-for-deploying-project-and-item-templates"></a>其他建議的部署專案和項目範本
 

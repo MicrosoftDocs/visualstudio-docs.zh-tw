@@ -22,12 +22,12 @@ caps.latest.revision: 50
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 7efd2c988791d0de4f414a48e5c47bc70b05b784
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
-ms.translationtype: MT
+ms.openlocfilehash: cf4a3b699d3854ef2a502fb1bf1d7fb2d6204acb
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "59000375"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446488"
 ---
 # <a name="general-debugging-options-dialog-box"></a>選項對話方塊、偵錯、一般
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -91,7 +91,7 @@ ms.locfileid: "59000375"
  告知 Visual Studio Debugger 從實作 SrcSrv (`srcsrv.dll`) 通訊協定的來源伺服器取得來源檔。 Team Foundation Server 和 Windows 偵錯工具這兩個來源伺服器會實作通訊協定。 如需 SrcSrv 設定的詳細資訊，請參閱 Debugging Tools for Windows 文件。 此外，請參閱 <<c0> [ 指定符號 (.pdb) 和原始程式檔](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)。  
   
 > [!IMPORTANT]
->  因為讀取 .pdb 檔案可以執行檔案中的任意程式碼，請確定您信任伺服器。  
+> 因為讀取 .pdb 檔案可以執行檔案中的任意程式碼，請確定您信任伺服器。  
   
  **來源伺服器診斷訊息列印到輸出視窗**  
  啟用來源伺服器支援時，這個設定會開啟診斷顯示畫面。  
@@ -173,7 +173,7 @@ ms.locfileid: "59000375"
   在偵錯時，您可以使用 [編輯後繼續] 功能。  
   
   **啟用原生編輯後繼續**  
-  在偵錯原生 C++ 程式碼時，您可以使用 [編輯後繼續] 功能。 如需詳細資訊，請參閱 <<c0> [ 編輯後繼續 （Visual c + +）](../debugger/edit-and-continue-visual-cpp.md)。  
+  在偵錯原生 C++ 程式碼時，您可以使用 [編輯後繼續] 功能。 如需詳細資訊，請參閱 <<c0> [ 編輯後繼續 (Visual C++)](../debugger/edit-and-continue-visual-cpp.md)。</c0>  
   
   **繼續時套用變更 (僅限原生)**  
   當從中斷狀態繼續處理序時，Visual Studio 會自動編譯和套用任何未完成的程式碼變更。 若未選取，您可以選擇使用 [偵錯] 功能表下的 [套用程式碼變更] 項目套用變更。  
