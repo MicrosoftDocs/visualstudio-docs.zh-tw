@@ -16,12 +16,12 @@ caps.latest.revision: 51
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 1f2d3f0bd70a4c7be82b991eb5397065fe3d4ee7
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 3e78e23d7e176dffef1531da1af28d318253d9d1
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60116163"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63431435"
 ---
 # <a name="just-in-time-debugging-in-visual-studio"></a>Visual Studio 中的 Just-In-Time 偵錯
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -92,7 +92,7 @@ ms.locfileid: "60116163"
 5. 關閉**登錄編輯程式**視窗。
 
 > [!NOTE]
->  如果您嘗試停用 Just 時間的伺服器端應用程式的偵錯，而且這些步驟未能解決此問題，請關閉伺服器端偵錯 IIS 應用程式設定中，然後重試。
+> 如果您嘗試停用 Just 時間的伺服器端應用程式的偵錯，而且這些步驟未能解決此問題，請關閉伺服器端偵錯 IIS 應用程式設定中，然後重試。
 
 #### <a name="to-enable-just-in-time-debugging-of-a-windows-form"></a>若要啟用 Windows Form 的 Just-In-Time 偵錯
 
@@ -140,7 +140,7 @@ static void Main(string[] args)
 ```
 
 > [!IMPORTANT]
->  為了讓這個程序運作[release 組態](../debugger/how-to-set-debug-and-release-configurations.md)，您必須關閉[Just My Code](../debugger/just-my-code.md)。 在 Visual Studio 中，按一下**工具 / 選項**。 在 **選項**對話方塊中，選取**偵錯**。 移除核取**啟用 Just My Code**。
+> 為了讓這個程序運作[release 組態](../debugger/how-to-set-debug-and-release-configurations.md)，您必須關閉[Just My Code](../debugger/just-my-code.md)。 在 Visual Studio 中，按一下**工具 / 選項**。 在 **選項**對話方塊中，選取**偵錯**。 移除核取**啟用 Just My Code**。
 
  建置方案 (在 Visual Studio 中，選擇**建置 / 重建方案**)。 您可以選擇偵錯或發行組態。 如需組建組態的詳細資訊，請參閱[了解組建組態](../ide/understanding-build-configurations.md)。
 
@@ -157,7 +157,7 @@ static void Main(string[] args)
  請勿按下**取消**！ 幾秒之後，您應該會看到兩個按鈕**偵錯**並**關閉程式**。 按一下 **偵錯**。
 
 > [!CAUTION]
->  如果您的應用程式包含不受信任的程式碼，會出現安全性警告對話方塊。 這個對話方塊可讓您決定是否繼續偵錯。 在繼續偵錯之前，請決定這是否為可以信任的程式碼。 這是您自行撰寫的程式碼嗎？ 您信任撰寫這個程式碼的人嗎？ 如果應用程式在遠端電腦上執行，您認得它的處理序名稱嗎？ 即使應用程式在本機執行，也不代表絕對可以信任。 請考慮在您的電腦上執行的惡意程式碼的可能性。 如果您決定，程式碼您即將要偵錯是值得信任，按一下**偵錯**。 否則，請按一下**不要偵錯**。
+> 如果您的應用程式包含不受信任的程式碼，會出現安全性警告對話方塊。 這個對話方塊可讓您決定是否繼續偵錯。 在繼續偵錯之前，請決定這是否為可以信任的程式碼。 這是您自行撰寫的程式碼嗎？ 您信任撰寫這個程式碼的人嗎？ 如果應用程式在遠端電腦上執行，您認得它的處理序名稱嗎？ 即使應用程式在本機執行，也不代表絕對可以信任。 請考慮在您的電腦上執行的惡意程式碼的可能性。 如果您決定，程式碼您即將要偵錯是值得信任，按一下**偵錯**。 否則，請按一下**不要偵錯**。
 
  **Visual Studio Just-In-Time 偵錯工具** 視窗隨即出現：
 

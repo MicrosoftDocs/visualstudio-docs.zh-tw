@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: b561a4aebe34ac943b0163e66dfbf2edf423eedb
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: f53083c49504146aca545da73bd38950493efcd8
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56599684"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63429199"
 ---
 # <a name="msbuild-properties-supported-by-sharepoint"></a>SharePoint 支援的 MsBuild 屬性
   任何[!INCLUDE[vstecmsbuild](../sharepoint/includes/vstecmsbuild-md.md)]Microsoft.VisualStudio.SharePoint.targets 檔案、 專案檔或專案使用者檔案中定義的屬性可以用於[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]SharePoint 專案。 除了一般[!INCLUDE[vstecmsbuild](../sharepoint/includes/vstecmsbuild-md.md)]專案中，SharePoint 所提供的屬性會定義 SharePoint 專案特有的其他屬性。
@@ -49,7 +49,7 @@ ms.locfileid: "56599684"
  取得彈性，而不是使用中的硬式編碼的字串**預先部署命令列**並**部署後命令列**方塊在 SharePoint 內容 頁面中，您可以使用 SharePoint做為引數的屬性。 比方說，而不是指定特定[!INCLUDE[TLA2#tla_url](../sharepoint/includes/tla2sharptla-url-md.md)]字串的 SharePoint 網站，您可以改為使用`$(SharePointSiteUrl)`。
 
 > [!NOTE]
->  您可以使用[!INCLUDE[vstecmsbuild](../sharepoint/includes/vstecmsbuild-md.md)]變數語法`$(` *propertyName* `)`或環境變數語法`%` *propertyName* `%`指定的屬性。
+> 您可以使用[!INCLUDE[vstecmsbuild](../sharepoint/includes/vstecmsbuild-md.md)]變數語法`$(` *propertyName* `)`或環境變數語法`%` *propertyName* `%`指定的屬性。
 
 ## <a name="see-also"></a>另請參閱
 

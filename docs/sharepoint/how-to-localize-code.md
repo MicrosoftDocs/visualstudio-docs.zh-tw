@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: fbcf07b462e280f522741b8329d34c2907f5b454
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 8b848bdb4d0b71f5762601204195f0e81a1c2733
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60066282"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443085"
 ---
 # <a name="how-to-localize-code"></a>HOW TO：當地語系化程式碼
   未當地語系化的程式碼使用硬式編碼的字串值。 若要當地語系化字串，取代呼叫<xref:System.Web.HttpContext.GetGlobalResourceObject%2A>，這是參考當地語系化的資源的方法。
@@ -32,7 +32,7 @@ ms.locfileid: "60066282"
      選擇**資源檔**範本。
 
     > [!NOTE]
-    >  請務必將資源檔新增至 SharePoint 專案項目，以便提供的部署類型屬性。 在此程序稍後需要此屬性。
+    > 請務必將資源檔新增至 SharePoint 專案項目，以便提供的部署類型屬性。 在此程序稍後需要此屬性。
 
 2. 提供的預設語言資源檔案加上您所選擇的名稱 *.resx*擴充功能，例如*MyAppResources.resx*。
 

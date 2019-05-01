@@ -9,12 +9,12 @@ helpviewer_keywords:
 ms.assetid: 7d92bb6a-b9b9-4cd8-99e9-b5ee129b52a3
 caps.latest.revision: 9
 manager: jillfra
-ms.openlocfilehash: 0fa07029ee1b96f3b8f1328d654b4d5d83953142
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 77da71c6762927610900feedeeae20421a14c4d0
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58945136"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432278"
 ---
 # <a name="getting-field-descriptions-from-the-properties-window"></a>從 [屬性] 視窗中取得欄位描述
 在 [屬性]  視窗底部的描述區域會顯示選取的屬性欄位相關資訊。 這項功能預設為開啟。 如果想要隱藏描述欄位，請以滑鼠右鍵按一下 [屬性]  視窗，然後按一下 [描述] 。 這樣也會移除功能表視窗之 [描述]  標題旁的核取記號。 只要依照相同的步驟切換 [描述]  ，就可以再次顯示欄位。  
@@ -26,7 +26,7 @@ ms.locfileid: "58945136"
 1. 請將 `helpstringdll` 屬性加入類型程式庫 (`typelib`) 的 library 陳述式。  
   
    > [!NOTE]
-   >  如果類型程式庫位於物件程式庫 (.olb) 檔案中，這個步驟就是選擇性的。  
+   > 如果類型程式庫位於物件程式庫 (.olb) 檔案中，這個步驟就是選擇性的。  
   
 2. 為字串指定 `helpstringcontext` 屬性。 您也可以指定 `helpstring` 屬性。  
   

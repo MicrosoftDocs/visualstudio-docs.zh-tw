@@ -10,12 +10,12 @@ ms.assetid: e0f666a0-92a7-4f9c-ba79-d05b13fb7f11
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: fe6870046d1dd15c7bc5795dd82d393272ca6b1e
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: bc6c5d665367f2d5af9e2dd6d2a7d664e50f4830
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60097358"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63434382"
 ---
 # <a name="migrating-a-legacy-language-service"></a>移轉舊版語言服務
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -25,13 +25,13 @@ ms.locfileid: "60097358"
  舊版語言服務會實作成 VSPackage 的一部分，但實作語言服務功能的較新的方式是使用 MEF 擴充功能。 若要深入了解實作語言服務的新方式，請參閱[編輯器和語言服務延伸模組](../../extensibility/editor-and-language-service-extensions.md)。  
   
 > [!NOTE]
->  我們建議您開始使用新的編輯器 API 盡。 這會改善您的語言服務的效能，並可讓您充分利用新編輯器功能。  
+> 我們建議您開始使用新的編輯器 API 盡。 這會改善您的語言服務的效能，並可讓您充分利用新編輯器功能。  
   
 ## <a name="migrating-a-visual-studio-2008-language-service-solution-to-a-later-version"></a>移轉至較新版的 Visual Studio 2008 語言服務解決方案  
  下列步驟顯示如何調整名為 RegExLanguageService Visual Studio 2008 範例。 您可以找到在 Visual Studio 2008 SDK 安裝中，此範例中*Visual Studio SDK 安裝路徑*\VisualStudioIntegration\Samples\IDE\CSharp\Example.RegExLanguageService\ 資料夾。  
   
 > [!IMPORTANT]
->  如果您的語言服務不會定義的色彩，您必須明確設定<xref:Microsoft.VisualStudio.Shell.ProvideLanguageServiceAttribute.RequestStockColors%2A>至`true`vspackage:  
+> 如果您的語言服務不會定義的色彩，您必須明確設定<xref:Microsoft.VisualStudio.Shell.ProvideLanguageServiceAttribute.RequestStockColors%2A>至`true`vspackage:  
   
 ```  
 [Microsoft.VisualStudio.Shell.ProvideLanguageService(typeof(YourLanguageService), YourLanguageServiceName, 0, RequestStockColors = true)]  

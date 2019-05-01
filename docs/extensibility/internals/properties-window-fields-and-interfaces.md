@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 03f3c9ca624f0cccae5f9a21573fdcf01b7e9143
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 1bf74bb93901cbd1637efd22690b8b1ba52f6b97
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60060224"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63425739"
 ---
 # <a name="properties-window-fields-and-interfaces"></a>Properties Window Fields and Interfaces
 若要判斷哪些資訊會顯示在選取的模型**屬性**視窗根據在 IDE 中具有焦點的視窗。 每個視窗中，然後選取視窗內的物件可以有其推送至全域範圍內容的選取項目內容物件。 該視窗具有焦點時，環境會更新全域選取範圍內容視窗框架的值。 當焦點變更時，因此會選取範圍內容。
@@ -81,7 +81,7 @@ ms.locfileid: "60060224"
 1. 請將 `helpstringdll` 屬性加入類型程式庫 (`typelib`) 的 library 陳述式。
 
    > [!NOTE]
-   >  如果類型程式庫位於物件程式庫 (.olb) 檔案中，這個步驟就是選擇性的。
+   > 如果類型程式庫位於物件程式庫 (.olb) 檔案中，這個步驟就是選擇性的。
 
 2. 為字串指定 `helpstringcontext` 屬性。 您也可以指定 `helpstring` 屬性。
 

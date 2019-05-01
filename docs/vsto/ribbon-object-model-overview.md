@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 5958eb6fb8fd14dd510fa87d900efa76cb6f6a87
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 83f906ad9e5ded349250fe5324076527975c9bf6
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60040712"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446991"
 ---
 # <a name="ribbon-object-model-overview"></a>功能區物件模型概觀
   [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]會公開強類型的物件模型，您可以使用它來取得和設定在執行階段的功能區控制項的屬性。 例如，您可以動態填入功能表控制項，或顯示和隱藏控制項內容。 您也可以新增索引標籤、 群組和控制項的功能區中，但只在 Office 應用程式載入功能區之前。 如需資訊，請參閱[設定會變成唯讀的屬性](#SettingReadOnlyProperties)。
@@ -130,7 +130,7 @@ ms.locfileid: "60040712"
  下表顯示只能在功能區載入之前設定的屬性。
 
 > [!NOTE]
->  您可以隨時設定動態功能表上的控制項的屬性。 這個表格不適用於在此情況下。
+> 您可以隨時設定動態功能表上的控制項的屬性。 這個表格不適用於在此情況下。
 
 |屬性|功能區控制項類別|
 |--------------|--------------------------|
@@ -163,7 +163,7 @@ ms.locfileid: "60040712"
  如果您有任何這些屬性設定為不同的值，建立功能區的其他執行個體時的條件式邏輯時，此程式碼會有任何作用。
 
 > [!NOTE]
->  請確認**名稱**屬性設定為您的 Outlook 功能區中新增每個控制項。 如果您在 Outlook 功能區在執行階段加入控制項，您必須在程式碼中設定這個屬性。 如果您在設計階段將控制項新增至 Outlook 功能區，就會自動設定的 Name 屬性。
+> 請確認**名稱**屬性設定為您的 Outlook 功能區中新增每個控制項。 如果您在 Outlook 功能區在執行階段加入控制項，您必須在程式碼中設定這個屬性。 如果您在設計階段將控制項新增至 Outlook 功能區，就會自動設定的 Name 屬性。
 
 ## <a name="ribbon-control-events"></a>功能區控制項事件
  每個控制項類別包含一或多個事件。 下表描述這些事件。

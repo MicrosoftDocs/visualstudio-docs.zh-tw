@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ed55c42211222ca94587b4358bb904f9637cb3f4
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 320b20fa40250ca47dd414b362059e152eba2c3b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56596317"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63420986"
 ---
 # <a name="imanagedaddin-interface"></a>IManagedAddin 介面
   實作 IManagedAddin 介面以建立元件，可將 managed VSTO 增益集。2007 Microsoft Office system 中已新增這個介面。
@@ -82,7 +82,7 @@ interface IManagedAddin : IUnknown
  Microsoft Office 應用程式會使用這個 CLSID 建立實作 IManagedAddin 的 COM 物件。
 
 > [!CAUTION]
->  也會使用這個 CLSID *VSTOLoader.dll*在[!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]。 因此，如果您使用 IManagedAddin 來建立您自己的 VSTO 增益集載入器和執行階段元件時，則無法部署您的元件會執行 VSTO 增益集依賴電腦[!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]。
+> 也會使用這個 CLSID *VSTOLoader.dll*在[!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]。 因此，如果您使用 IManagedAddin 來建立您自己的 VSTO 增益集載入器和執行階段元件時，則無法部署您的元件會執行 VSTO 增益集依賴電腦[!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]。
 
 ## <a name="see-also"></a>另請參閱
 - [Unmanaged API 參考&#40;在 Visual Studio 中的 Office 程式開發&#41;](../vsto/unmanaged-api-reference-office-development-in-visual-studio.md)
