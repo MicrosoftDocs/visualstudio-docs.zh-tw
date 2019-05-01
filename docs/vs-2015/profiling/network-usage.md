@@ -9,12 +9,12 @@ caps.latest.revision: 12
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 62f6847e03484838f232a9b64f392ca0938f213d
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 33e5dbeced93ddfd1a1eec817d205a7be80d0e60
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60114493"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441889"
 ---
 # <a name="network-usage"></a>網路使用量
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -24,7 +24,7 @@ Visual Studio 的 [網路] 診斷工具會收集使用 [Windows.Web.Http 應用�
  網路工具僅支援 Windows 通用平台應用程式。 目前不支援其他平台。  
   
 > [!NOTE]
->  如需更多完整的網路工具描述，請參閱[介紹 Visual Studio 的網路工具](http://blogs.msdn.com/b/visualstudio/archive/2015/05/04/introducing-visual-studio-s-network-tool.aspx)。  
+> 如需更多完整的網路工具描述，請參閱[介紹 Visual Studio 的網路工具](http://blogs.msdn.com/b/visualstudio/archive/2015/05/04/introducing-visual-studio-s-network-tool.aspx)。  
   
 ## <a name="collecting-network-tool-data"></a>收集網路工具資料  
  您應該針對 Visual Studio 電腦上開啟的 Visual Studio 專案執行 [網路] 工具。  

@@ -8,12 +8,12 @@ ms.assetid: f6337c35-acae-4c5f-b5d9-ac5ff687ef18
 caps.latest.revision: 18
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 404192923d25e3eccc0bb40064569bec3e6c6cec
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: ef0a8d1867114cd655f1e361cf0401dab6bce1a5
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60059249"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63416649"
 ---
 # <a name="customizing-code-coverage-analysis"></a>自訂程式碼涵蓋範圍分析
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -69,7 +69,7 @@ ms.locfileid: "60059249"
 ```  
   
 > [!WARNING]
->  符號解析可能需要一些時間，特別是在使用具有大量組件的遠端檔案位置時。 因此，請考慮將遠端 .pdb 檔案複製到二進位 (.dll 和 .exe) 檔案在本機中的位置。  
+> 符號解析可能需要一些時間，特別是在使用具有大量組件的遠端檔案位置時。 因此，請考慮將遠端 .pdb 檔案複製到二進位 (.dll 和 .exe) 檔案在本機中的位置。  
   
 ### <a name="excluding-and-including"></a>排除和包含  
  您可以在程式碼涵蓋範圍分析中排除指定的組件。 例如：  
@@ -134,7 +134,7 @@ ms.locfileid: "60059249"
 ```  
   
 > [!WARNING]
->  如果規則運算式出現錯誤，例如未逸出和無對應的括號，則程式碼涵蓋範圍分析不會執行。  
+> 如果規則運算式出現錯誤，例如未逸出和無對應的括號，則程式碼涵蓋範圍分析不會執行。  
   
 ### <a name="other-ways-to-include-or-exclude-elements"></a>包含或排除項目的其他方法  
  如需範例，請參閱[本主題結尾處的範例](#sample)。  

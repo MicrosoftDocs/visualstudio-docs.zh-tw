@@ -1,5 +1,5 @@
 ---
-title: C + + 偵錯組態的專案設定 |Microsoft Docs
+title: 專案設定為C++偵錯組態 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -112,20 +112,20 @@ caps.latest.revision: 52
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 1ea5740b66187f97cacb43edfc1ea0d77d6cb8d1
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 87b8913a95203d082a76e8b18a92d2f509cace16
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58945460"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446171"
 ---
 # <a name="project-settings-for-a-c-debug-configuration"></a>C++ 偵錯組態的專案設定
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-您可以變更專案設定中的 C 或 Visual c + + 偵錯組態**屬性頁** 對話方塊中所述[How to:設定偵錯和發行組態](../debugger/how-to-set-debug-and-release-configurations.md)。 下表顯示 [屬性頁] 對話方塊中與偵錯工具相關的設定位置。  
+您可以變更 C 或視覺效果的專案設定C++中的偵錯組態**屬性頁**對話方塊中，如所述[How to:設定偵錯和發行組態](../debugger/how-to-set-debug-and-release-configurations.md)。 下表顯示 [屬性頁] 對話方塊中與偵錯工具相關的設定位置。  
   
 > [!WARNING]
->  中的偵錯專案設定**組態屬性/偵錯**Windows 市集應用程式和元件以 c + + 所撰寫的類別目錄會不同。 請參閱[啟動偵錯工作階段 (VB、 C#、 c + + 和 XAML）](../debugger/start-a-debugging-session-for-a-store-app-in-visual-studio-vb-csharp-cpp-and-xaml.md) Windows Development Center 中。  
+> 中的偵錯專案設定**組態屬性/偵錯**類別的 Windows 市集應用程式和元件撰寫的C++不同。 請參閱[啟動偵錯工作階段 (VB、 C#，C++和 XAML)](../debugger/start-a-debugging-session-for-a-store-app-in-visual-studio-vb-csharp-cpp-and-xaml.md) Windows Development Center 中。  
   
  指定哪些偵錯工具中使用**偵錯工具啟動**清單方塊。 您的選擇將影響屬性的可見性。  
   
