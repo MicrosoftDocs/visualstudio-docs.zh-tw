@@ -23,12 +23,12 @@ caps.latest.revision: 48
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c7161d8115f8cc99f830293cdf5f957a2264f5a0
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 8d7d4524f1839179ac253265d95f191caf1c50af
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60041178"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445681"
 ---
 # <a name="how-to-add-or-remove-references-by-using-the-reference-manager"></a>HOW TO：新增或移除參考，可以使用 參考管理員
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -99,7 +99,7 @@ ms.locfileid: "60041178"
 - 您應該避免將檔案參考加入至同一方案中的其他專案輸出，因為這麼做可能會造成編譯錯誤。 請改用 [加入參考] 對話方塊中的 [專案] 索引標籤，來建立專案對專案間的參考。 這樣一來就能夠更有效的管理在專案中所建立的類別庫，使得小組開發更為容易。 如需詳細資訊，請參閱[針對中斷參考進行疑難排解](../ide/troubleshooting-broken-references.md)。  
   
 - > [!NOTE]
-    >  在 Visual Studio 2015 中，如果某個專案的 .NET Framework 目標版本為第 4.5 版，而其他專案的目標版本為第 2 版、第 3 版、第 3.5 版或第 4.0 版，則會建立檔案參考而非專案參考。  
+    > 在 Visual Studio 2015 中，如果某個專案的 .NET Framework 目標版本為第 4.5 版，而其他專案的目標版本為第 2 版、第 3 版、第 3.5 版或第 4.0 版，則會建立檔案參考而非專案參考。  
   
 #### <a name="to-display-an-assembly-in-the-add-reference-dialog-box"></a>若要在加入參考對話方塊中顯示組件  
   
@@ -181,7 +181,7 @@ ms.locfileid: "60041178"
  SDK 是檔案集合，Visual Studio 會將這個集合視為單一元件。 在 [延伸模組] 索引標籤中，適用於叫用 [參考管理員] 對話方塊所在專案的 SDK 會以單一項目形式列出。 加入至專案時，Visual Studio 會使用所有 SDK 內容，因此使用者不需要採取任何進一步動作就可以在 IntelliSense、工具箱、設計工具、物件瀏覽器、組建、部署、偵錯和封裝中利用 SDK 內容。 如需如何在 [延伸模組] 索引標籤中顯示 SDK 的詳細資訊，請參閱[建立軟體開發套件](../extensibility/creating-a-software-development-kit.md)。  
   
 > [!NOTE]
->  如果專案參考的 SDK 取決於另一個 SDK，除非使用者手動加入另一個 SDK 的參考，否則 Visual Studio 不會使用另一個 SDK。 當使用者在 [延伸模組] 索引標籤上選擇 SDK 時，[參考管理員] 對話方塊除了列出 SDK 的名稱和版本之外，還會在詳細資料窗格中列出所有 SDK 相依性的名稱，藉此幫助使用者識別 SDK。 如果使用者未注意到相依性而只加入該 SDK，MSBuild 將會提示使用者加入相依性。  
+> 如果專案參考的 SDK 取決於另一個 SDK，除非使用者手動加入另一個 SDK 的參考，否則 Visual Studio 不會使用另一個 SDK。 當使用者在 [延伸模組] 索引標籤上選擇 SDK 時，[參考管理員] 對話方塊除了列出 SDK 的名稱和版本之外，還會在詳細資料窗格中列出所有 SDK 相依性的名稱，藉此幫助使用者識別 SDK。 如果使用者未注意到相依性而只加入該 SDK，MSBuild 將會提示使用者加入相依性。  
   
  如果專案類型不支援 [延伸模組]，這個索引標籤就不會出現在 [參考管理員] 對話方塊中。  
   
@@ -207,7 +207,7 @@ ms.locfileid: "60041178"
     ```  
   
     > [!NOTE]
-    >  如果您加入屬性，建置執行速度可能會變慢。  
+    > 如果您加入屬性，建置執行速度可能會變慢。  
   
 ## <a name="recent"></a>最近  
  [組件]、[COM]、[Windows] 和 [瀏覽] 各支援一個 [最近] 索引標籤，其中會列舉最近加入專案中的元件清單。  

@@ -14,12 +14,12 @@ caps.latest.revision: 19
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: c23bbb74a4f166ebe33cc45f40f42f9847316d30
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 9238bd4f42291af23a1279c9caa83f1039c8f249
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60043293"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437764"
 ---
 # <a name="control-execution-of-a-store-app-in-a-visual-studio-debug-session-for-windows-store-apps-javascript"></a>為 Windows 市集應用程式，在 Visual Studio 偵錯工作階段中控制市集應用程式的執行 (JavaScript)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,9 +33,9 @@ ms.locfileid: "60043293"
  **偵錯工具鍵盤快速鍵。** 滑鼠和鍵盤在 Visual Studio 偵錯工具中的巡覽已最佳化。 本主題中的許多步驟都會以括號備註的方式加上鍵盤快速鍵。 例如，(鍵盤：F5) 表示輸入 F5 鍵啟動或繼續偵錯工具執行。
 
 > [!NOTE]
->  **模組模式**
+> **模組模式**
 >
->  Windows 市集應用程式通常會使用 JavaScript *「模組模式」* (Module pattern) 來封裝頁面中的資料和函式。 模組模式使用單一、自我執行且匿名的 Closure 讓頁面功能與全域命名空間保持分離。 在這個主題中，我們稱該函式為 *「模組」*(module)。
+> Windows 市集應用程式通常會使用 JavaScript *「模組模式」* (Module pattern) 來封裝頁面中的資料和函式。 模組模式使用單一、自我執行且匿名的 Closure 讓頁面功能與全域命名空間保持分離。 在這個主題中，我們稱該函式為 *「模組」*(module)。
 
 ## <a name="in-this-topic"></a>本主題內容
  您可以了解如何：

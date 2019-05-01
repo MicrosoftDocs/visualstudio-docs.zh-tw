@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 89559798e342c8993e523517e5c85fc38e1c0cf8
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: a2727f0f3a5f2b46c5110a33e63b102f9d26bdaf
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60110859"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446618"
 ---
 # <a name="walkthrough-import-items-from-an-existing-sharepoint-site"></a>逐步解說：從現有的 SharePoint 網站匯入項目
   本逐步解說示範如何從現有的 SharePoint 網站將匯入項目[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]SharePoint 專案。
@@ -75,7 +75,7 @@ ms.locfileid: "60110859"
  接下來，取得 SharePoint 安裝程式 (.wsp) 檔案，其中包含的 SharePoint 項目和您想要匯入的項目您[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]SharePoint 專案。 如果您還沒有的.wsp 檔，然後您必須建立一個從現有的 SharePoint 網站。 針對此範例中，您會將預設的 SharePoint 網站匯出到.wsp 檔案。
 
 > [!IMPORTANT]
->  如果您收到執行階段錯誤，執行下列程序，您必須對 SharePoint 網站存取的系統上執行程序。
+> 如果您收到執行階段錯誤，執行下列程序，您必須對 SharePoint 網站存取的系統上執行程序。
 
 ### <a name="to-export-an-existing-sharepoint-site"></a>將現有的 SharePoint 網站
 
@@ -117,7 +117,7 @@ ms.locfileid: "60110859"
 6. 在 [**指定新專案來源**頁面上，瀏覽至您儲存在系統上位置 *.wsp*先前檔案，然後選擇 [**下一步]** ] 按鈕。
 
    > [!NOTE]
-   >  如果您選擇**完成**按鈕，在此頁面上，在所有可用的項目 *.wsp*將匯入檔案。
+   > 如果您選擇**完成**按鈕，在此頁面上，在所有可用的項目 *.wsp*將匯入檔案。
 
 7. 在**選取要匯入項目**方塊中，清除所有核取方塊，在清單中，除了**測試資料行**，然後選擇**完成** 按鈕。
 

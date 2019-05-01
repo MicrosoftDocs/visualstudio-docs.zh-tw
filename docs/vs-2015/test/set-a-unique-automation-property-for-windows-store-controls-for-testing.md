@@ -8,12 +8,12 @@ ms.assetid: 9bdd74ff-2534-4fc7-a5c3-a77bf7843037
 caps.latest.revision: 12
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 6ce207776fe2f3dfe00ddc764546a370dbb53dca
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: a765896ef8b4eb645c04536105bc2284fc5c3d16
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60107031"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446048"
 ---
 # <a name="set-a-unique-automation-property-for-windows-store-controls-for-testing"></a>為用於測試的 Windows 市集控制項設定唯一自動化屬性
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -80,7 +80,7 @@ ms.locfileid: "60107031"
  **Blend for Visual Studio:** 您可以使用下列方法之一來從 Blend for Visual Studio 執行此動作。  
   
 > [!NOTE]
->  針對使用 XAML 靜態建立的控制項，您只能使用這個方法。  
+> 針對使用 XAML 靜態建立的控制項，您只能使用這個方法。  
   
  **提供現有控制項的唯一名稱**  
   
@@ -136,7 +136,7 @@ ms.locfileid: "60107031"
  針對這兩個範例，您必須接著覆寫 ItemSource 的 ToString() 方法，如使用下列程式碼所示。 此程式碼可確保 AutomationProperties.Name 值已設定而且是唯一的，因為您無法使用繫結來設定每個資料繫結清單項目的唯一自動化屬性。 在此情況下，設定 AutomationProperties.Name 的唯一值就已足夠。  
   
 > [!NOTE]
->  使用這個方法，也可以透過繫結，將清單項目的內部內容設定為「員工」類別中的字串。 如本範例所示，每個清單項目內的按鈕控制項都會獲指派本身為員工識別碼的唯一自動化識別碼。  
+> 使用這個方法，也可以透過繫結，將清單項目的內部內容設定為「員工」類別中的字串。 如本範例所示，每個清單項目內的按鈕控制項都會獲指派本身為員工識別碼的唯一自動化識別碼。  
   
 ```  
   
