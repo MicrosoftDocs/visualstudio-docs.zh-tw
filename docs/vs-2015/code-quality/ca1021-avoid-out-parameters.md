@@ -17,7 +17,7 @@ ms.author: gewarren
 manager: wpickett
 ms.openlocfilehash: b52d5a97fc3c2e3a6bf5b4bb938bad9da50d3a7d
 ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 01/23/2019
 ms.locfileid: "58943280"
@@ -78,7 +78,7 @@ ms.locfileid: "58943280"
 **12345**
 **12345**
 **變更指標-傳址方式傳遞：** 
- **12345**
+**12345**
 **12345 ABCDE**
 **傳回值來傳遞：**
 **12345 ABCDE**
