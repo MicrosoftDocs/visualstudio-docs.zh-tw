@@ -95,7 +95,16 @@
     },
     "fileMetadata": {
       "open_to_public_contributors": {
-        "vs-2015/**/**.md": false,
+        "vs-2015/code-quality/**/**.md": false,
+        "vs-2015/csharp-ide/**/**.md": false,
+        "vs-2015/data-tools/**/**.md": false,
+        "vs-2015/debugger/**/**.md": false,
+        "vs-2015/deployment/**/**.md": false,
+        "vs-2015/extensibility/**/**.md": false,
+        "vs-2015/misc/**/**.md": false,
+        "vs-2015/modeling/**/**.md": false,
+        "vs-2015/workflow-designer/**/**.md": false,
+        "vs-2015/xml-tools/**/**.md": false,
         "code-quality/**/**.md": false,
         "extensibility/**/**.md": false,
         "modeling/**/**.md": false,
