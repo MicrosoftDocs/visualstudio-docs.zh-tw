@@ -66,7 +66,7 @@ ms.locfileid: "63430033"
 
 - 唯讀欄位會顯示有但 （使用中） 的預設前景灰色 （停用） 背景。
 
-- 所需欄位應有**\<需要 >** 做為其中的標準。 您不應該變更除了在少數情況下的背景色彩。
+- 所需欄位應有 **\<需要>** 做為其中的標準。 您不應該變更除了在少數情況下的背景色彩。
 
 - 錯誤驗證：請參閱[通知和適用於 Visual Studio 的進度](../../extensibility/ux-guidelines/notifications-and-progress-for-visual-studio.md)
 
