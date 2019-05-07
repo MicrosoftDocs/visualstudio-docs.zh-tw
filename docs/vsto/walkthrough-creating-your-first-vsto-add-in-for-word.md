@@ -107,7 +107,7 @@ ms.locfileid: "63438494"
 
 3. 確認下列文字已加入文件中。
 
-     **This text was added by using code.**
+     **此文字使用新增的程式碼。**
 
 4. 關閉 Word。
 

@@ -104,7 +104,7 @@ ms.locfileid: "62981423"
 
 3. 請確認已將下列文字加入活頁簿。
 
-     **This text was added by using code.**
+     **此文字使用新增的程式碼。**
 
 4. 關閉 Excel。
 
