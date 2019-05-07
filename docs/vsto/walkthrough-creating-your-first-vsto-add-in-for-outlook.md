@@ -111,7 +111,7 @@ ms.locfileid: "62981319"
 
 3. 請確認下列文字加入郵件的主旨行和本文中。
 
-     **This text was added by using code.**
+     **此文字使用新增的程式碼。**
 
 4. 關閉 Outlook。
 

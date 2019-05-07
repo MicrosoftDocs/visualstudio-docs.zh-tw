@@ -105,7 +105,7 @@ ms.locfileid: "62981238"
 
 3. 確認下列文字已加入投影片頂端的新文字方塊中。
 
-     **This text was added by using code.**
+     **此文字使用新增的程式碼。**
 
 4. 關閉 PowerPoint。
 
