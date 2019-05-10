@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: faa7263c3f5fa86a77c94271dec1b429d2f00543
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 6226463ff16cc1415b99c3b06973ae8f580688a1
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62869772"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65458970"
 ---
 # <a name="idebugprogrampublisher2setdebuggerpresent"></a>IDebugProgramPublisher2::SetDebuggerPresent
 告知偵錯工具存在並在執行計劃發行者。
@@ -36,8 +39,8 @@ int SetDebuggerPresent(
 );
 ```
 
-#### <a name="parameters"></a>參數
- `fDebuggerPresent`
+## <a name="parameters"></a>參數
+ `fDebuggerPresent`\
 
  [in]非零 (`TRUE`) 如果偵錯工具，則為零 (`FALSE`) 如果不是。
 

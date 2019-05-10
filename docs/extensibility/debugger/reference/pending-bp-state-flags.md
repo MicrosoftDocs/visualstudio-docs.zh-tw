@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7614b0633f6490e8c3bb6837ed89fda67575c71e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: e51944c2a7b0ad72e2c03b54a61e90bb1883177d
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62913699"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65457982"
 ---
 # <a name="pendingbpstateflags"></a>PENDING_BP_STATE_FLAGS
 指定暫止中斷點的狀態旗標。
@@ -39,10 +42,10 @@ public enum enum_PENDING_BP_STATE_FLAGS { 
 };
 ```
 
-## <a name="members"></a>成員
- PBPSF_NONE 預留位置。
+## <a name="fields"></a>欄位
+ `PBPSF_NONE` 預留位置。
 
- PBPSF_VIRTUALIZED 暫止的中斷點，另一個則是每次載入新的程式碼時，繫結指定的虛擬化的。
+ `PBPSF_VIRTUALIZED` 指定虛擬化暫止中斷點，另一個則是每次載入新的程式碼時，繫結。
 
 ## <a name="remarks"></a>備註
  用於`flags`隸屬[PENDING_BP_STATE_INFO](../../../extensibility/debugger/reference/pending-bp-state-info.md)結構。

@@ -1,10 +1,9 @@
 - name: Visual Studio Tools for AI
-  href: index.yml
   items:
+    - name: Visual Studio Tools for AI
+      href: index.yml
     - name: 總覽
-      items:
-        - name: 關於適用於 AI 的 Visual Studio Tools
-          href: about-ai-tools.md
+      href: about-ai-tools.md
     - name: 安裝
       href: installation.md
     - name: 快速入門

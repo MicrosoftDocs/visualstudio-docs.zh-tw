@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 86c20e7c6828cfbf3ec31ba5dcbec9c7ee8478df
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 887002086b50198ba192bde3f19390d3267a5c9d
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62869356"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65457360"
 ---
 # <a name="idebugproviderprogramnode2unmarshaldebuggeeinterface"></a>IDebugProviderProgramNode2::UnmarshalDebuggeeInterface
 跨處理序界限，會取得指定的介面。
@@ -38,12 +41,12 @@ int UnmarshalDebuggeeInterface(
 );
 ```
 
-#### <a name="parameters"></a>參數
- `riid`
+## <a name="parameters"></a>參數
+ `riid`\
 
  [in]若要取得介面的 GUID。
 
- `ppvObject`
+ `ppvObject`\
 
  [out]傳回實作所需的介面的物件。 [C++] 這可以直接為所需的介面型別轉換。 [C#] 使用<xref:System.Runtime.InteropServices.Marshal.GetObjectForIUnknown%2A>方法來取得所需的介面。
 

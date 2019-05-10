@@ -19,15 +19,17 @@
 - name: 作法指南
   items:
     - name: R 專案
-      href: r-projects-in-visual-studio.md
       items:
+        - name: R 專案
+          href: r-projects-in-visual-studio.md
         - name: 套件管理員
           href: r-package-manager-in-visual-studio.md
         - name: SQL Server 整合
           href: integrating-sql-server-with-r.md
     - name: 編輯程式碼
-      href: editing-r-code-in-visual-studio.md
       items:
+        - name: 編輯程式碼
+          href: editing-r-code-in-visual-studio.md
         - name: IntelliSense
           href: r-intellisense.md
         - name: 進行 Lint 檢查
@@ -35,8 +37,9 @@
         - name: 程式碼片段
           href: code-snippets-for-r.md
     - name: 工作區 (本機和遠端)
-      href: r-workspaces-in-visual-studio.md
       items:
+        - name: 工作區 (本機和遠端)
+          href: r-workspaces-in-visual-studio.md
         - name: 設定遠端工作區
           href: setting-up-remote-r-workspaces.md
         - name: 適用於 Linux 的遠端 R 服務

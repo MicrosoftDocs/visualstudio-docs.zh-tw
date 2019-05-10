@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b1096755c1647f976b76ab61be1c24b358d4363d
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: fe49341bf485068701d3fb06842c5ef65359a9bf
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63412632"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65458670"
 ---
 # <a name="idebugreference2"></a>IDebugReference2
 此介面代表堆疊框架屬性或其他某個屬性的參考。

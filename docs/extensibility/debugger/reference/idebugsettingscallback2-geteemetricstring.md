@@ -10,12 +10,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a2091cd052923fe375bf9ba90ffdad50c993f5b4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 58132d73cd532acd0c89ad5258c6ba4a59b905fa
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62868942"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65458610"
 ---
 # <a name="idebugsettingscallback2geteemetricstring"></a>IDebugSettingsCallback2::GetEEMetricString
 擷取指定其名稱的運算式評估工具度量的值字串。
@@ -40,20 +43,20 @@ private int GetEEMetricString(
 );
 ```
 
-#### <a name="parameters"></a>參數
- `guidLang`
+## <a name="parameters"></a>參數
+ `guidLang`\
 
  [in]程式設計語言的唯一識別碼。
 
- `guidVendor`
+ `guidVendor`\
 
  [in]供應商的唯一識別碼。
 
- `pszMetric`
+ `pszMetric`\
 
  [in]計量名稱。
 
- `pbstrValue`
+ `pbstrValue`\
 
  [out]傳回的度量值的字串。
 

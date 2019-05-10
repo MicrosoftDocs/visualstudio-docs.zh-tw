@@ -78,7 +78,7 @@ ms.locfileid: "63446098"
     Hello!  
     ```  
   
-7. 按一下 **重新整理 Windows 應用程式**按鈕時，哪一個看起來像這樣：![重新整理 Windows 應用程式] 按鈕](../debugger/media/js-refresh.png "JS_Refresh")。 (或按 F4)。  
+7. 按一下 **重新整理 Windows 應用程式**按鈕時，哪一個看起來像這樣：![重新整理 Windows 應用程式 按鈕](../debugger/media/js-refresh.png "JS_Refresh")。 (或按 F4)。  
   
 8. 切換至應用程式。 應用程式隨即重新載入而不重新啟動偵錯工具，且會顯示新的頁面標題。  
   

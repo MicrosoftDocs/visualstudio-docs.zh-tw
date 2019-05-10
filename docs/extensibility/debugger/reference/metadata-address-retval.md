@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 63f3b7363a6852dd54033d89828f8af9b0eb76fa
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 8e31682de4c625e40baaac6daff4687c713abda9
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62913883"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65460966"
 ---
 # <a name="metadataaddressretval"></a>METADATA_ADDRESS_RETVAL
 此結構表示從方法或函式的傳回值。
@@ -42,14 +45,18 @@ public struct METADATA_ADDRESS_RETVAL {
 }
 ```
 
-## <a name="terms"></a>詞彙
- tokMethod 這個傳回值是針對方法的識別碼。
+## <a name="members"></a>成員
+ `tokMethod`\
+ 這個傳回值是針對方法的識別碼。
 
- dwCorType 傳回值的基底類型。 這是介於`CorElementType`列舉型別中定義[!INCLUDE[dnprdnshort](../../../code-quality/includes/dnprdnshort_md.md)]SDK corhdr.h 檔案。
+ `dwCorType`\
+ 傳回值的基底型別。 這是介於`CorElementType`列舉型別中定義[!INCLUDE[dnprdnshort](../../../code-quality/includes/dnprdnshort_md.md)]SDK corhdr.h 檔案。
 
- dwSigSize 的傳回值的簽章大小 (儲存在`rgSig`)。
+ `dwSigSize`\
+ 傳回值的簽章的大小 (儲存在`rgSig`)。
 
- rgSig 形成的簽章的傳回值的位元組陣列。
+ `rgSig`\
+ 建構簽章的傳回值的位元組陣列。
 
 ## <a name="remarks"></a>備註
  此結構是中的等位的一部分[DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md)結構的時機`dwKind`欄位`DEBUG_ADDRESS_UNION`結構設定為`ADDRESS_KIND_RETVAL`(中的值[ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md)列舉型別）。

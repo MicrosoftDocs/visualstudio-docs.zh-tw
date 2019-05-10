@@ -8,18 +8,22 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e6dde8eee0c21f41cb21acf97fb68961dd0beee7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e1350523b347d0dfb87831947b4fd1d9206521ca
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62933678"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65461336"
 ---
-# <a name="xml-schema-designer-workspace"></a>XML 結構描述設計工具工作區
+# <a name="xml-schema-designer-workspace-views"></a>XML 結構描述設計工具工作區檢視
 
-XML 結構描述設計工具 (XSD 設計工具) 是一種圖形化工具，可協助您瀏覽 XML 結構描述。 除了[XML 結構描述總管](../xml-tools/xml-schema-explorer.md)，可讓您瀏覽和巡覽 XML 結構描述樹狀目錄並執行搜尋，XSD 設計工具提供可讓您瀏覽 XSD 結構描述更詳細的三個檢視。 開始檢視是 XSD 設計工具的啟動點，您可以從開始檢視巡覽至 XSD 設計工具的其他檢視，並查看結構描述集的詳細資訊。 圖表檢視可讓您查看結構描述集的概觀，以及結構描述節點之間的關聯性。 內容模型檢視提供區域和全域結構描述節點詳細資訊的圖形表示，包括簡單和複雜型別、項目、群組、屬性和屬性群組。
+XML 結構描述設計工具 (XSD 設計工具) 是一種圖形化工具，可協助您瀏覽 XML 結構描述。 除了[XML 結構描述總管](../xml-tools/xml-schema-explorer.md)，可讓您瀏覽和巡覽 XML 結構描述樹狀目錄並執行搜尋，XSD 設計工具提供三種，您可以瀏覽 XSD 結構描述更詳細的檢視。
 
-您必須將您感興趣的節點加入至工作空間，才能開始瀏覽這些節點。 工作空間在所有檢視之間共用。
+- **開始檢視**是啟動點 XSD 設計工具，從開始檢視中，您可以巡覽至 XSD 設計工具的其他檢視，並查看結構描述集的詳細資料。
+- **圖表檢視**可讓您查看結構描述設定和結構描述節點之間的關聯性的概觀。
+- **內容模型檢視**提供本機和全域結構描述節點，包括簡單和複雜型別、 項目、 群組、 屬性和屬性群組的詳細資料的圖形化表示法。
+
+若要開始探索您感興趣的節點，您必須將它們新增至工作區。 工作空間在所有檢視之間共用。
 
 ## <a name="add-nodes-to-the-workspace"></a>將節點新增至工作區
 

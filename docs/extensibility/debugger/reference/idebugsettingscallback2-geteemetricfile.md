@@ -10,12 +10,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 370ee63ff31bcb0eeba82fbb55fd37166de7ff52
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: e800d8d57d34c0ed99cb3cfa9a3f6a7b871a034d
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62869040"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65458612"
 ---
 # <a name="idebugsettingscallback2geteemetricfile"></a>IDebugSettingsCallback2::GetEEMetricFile
 擷取運算式評估工具計量提供檔案名稱或計量。
@@ -40,20 +43,20 @@ private int GetEEMetricFile(
 );
 ```
 
-#### <a name="parameters"></a>參數
- `guidLang`
+## <a name="parameters"></a>參數
+ `guidLang`\
 
  [in]程式設計語言的唯一識別碼。
 
- `guidVendor`
+ `guidVendor`\
 
  [in]供應商的唯一識別碼。
 
- `pszMetric`
+ `pszMetric`\
 
  [in]計量名稱。
 
- `pbstrValue`
+ `pbstrValue`\
 
  [out]以字串傳回計量檔案的內容。
 

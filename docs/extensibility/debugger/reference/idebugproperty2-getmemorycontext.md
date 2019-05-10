@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2db790564ed46a0add74552a8c691e92eb781855
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 6d806b5dc129e2d82c0b6a1aa49fc1f26a2dd393
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62869491"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65457917"
 ---
 # <a name="idebugproperty2getmemorycontext"></a>IDebugProperty2::GetMemoryContext
 取得屬性值的記憶體內容。
@@ -36,8 +39,8 @@ int GetMemoryContext(
 );
 ```
 
-#### <a name="parameters"></a>參數
- `ppMemory`
+## <a name="parameters"></a>參數
+ `ppMemory`\
 
  [out]傳回[IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md)物件，表示此屬性相關聯的記憶體。
 

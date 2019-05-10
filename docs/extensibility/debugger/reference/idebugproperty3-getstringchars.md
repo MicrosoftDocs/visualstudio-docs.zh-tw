@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 01558ccf2d4f0e06231a9cbe152c47b1601bfdb2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 21ae1d4c16ce422d2baed2bd71ab5d0aa8b92e0c
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62916523"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65457673"
 ---
 # <a name="idebugproperty3getstringchars"></a>IDebugProperty3::GetStringChars
 擷取此屬性相關聯的字串，並將它儲存在使用者提供的緩衝區。
@@ -40,18 +43,18 @@ int GetStringChars(
 );
 ```
 
-#### <a name="parameters"></a>參數
-`buflen`
+## <a name="parameters"></a>參數
+`buflen`\
 
  [in]使用者提供的緩衝區可容納的字元數上限。
 
-`rgString`
+`rgString`\
 
  [out]傳回的字串。
 
  [C++只]，`rgString`是接收之字串的 Unicode 字元的緩衝區的指標。 這個緩衝區必須至少是`buflen`字元 （而不是個位元組） 的大小。
 
-`pceltFetched`
+`pceltFetched`\
 
  [out]傳回的實際儲存在緩衝區中的字元數的位置。 (可以是`NULL`在C++。)
 

@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: bd92f8a93427264966bb44bbf44d5e519cb9459a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 09d86fb259cb4fe04b55211acbd60833e6362855
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62914201"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65458143"
 ---
 # <a name="ipropertyproxyeesidegetmanagedviewercreationdata"></a>IPropertyProxyEESide::GetManagedViewerCreationData
 擷取此屬性類型的檢視器的相關資訊，才能具現化該檢視器。
@@ -46,28 +49,28 @@ int GetManagedViewerCreationData(
 );
 ```
 
-#### <a name="parameters"></a>參數
- `assemName`
+## <a name="parameters"></a>參數
+ `assemName`\
 
  [out]傳回保存此物件的組件的名稱。
 
- `assemBytes`
+ `assemBytes`\
 
  [out]傳回[IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md)物件，其中包含這個物件 （如果不可用的任何位元組，這是 null 值） 的組件位元組。
 
- `assemPdb`
+ `assemPdb`\
 
  [out]傳回`IEEDataStorage`物件，包含符號儲存這個物件的資訊 （如果不可用的任何符號存放區，這是 null 值）。
 
- `className`
+ `className`\
 
  [out]傳回包含此物件的類別名稱。
 
- `alr`
+ `alr`\
 
  [out]傳回值，以從[ASSEMBLYLOCRESOLUTION](../../../extensibility/debugger/reference/assemblylocresolution.md)列舉，指出組件的位置。
 
- `replacementOk`
+ `replacementOk`\
 
  [out]傳回非零值 (`TRUE`)，可以變更這個物件的值; 如果零 (`FALSE`) 的物件是否唯讀。
 

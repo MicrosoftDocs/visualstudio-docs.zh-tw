@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b3fb11457319d4cea762808ec2619f32c37780a1
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: c38d8c1c2f06701d1e0a34560b674aa62292a803
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63412671"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65457403"
 ---
 # <a name="idebugstackframe3interceptcurrentexception"></a>IDebugStackFrame3::InterceptCurrentException
 何時要攔截目前的例外狀況，請呼叫目前的堆疊框架上偵錯工具。
@@ -38,12 +41,12 @@ int InterceptCurrentException(
 );
 ```
 
-#### <a name="parameters"></a>參數
- `dwFlags`
+## <a name="parameters"></a>參數
+ `dwFlags`\
 
  [in]指定不同的動作。 目前，只有[INTERCEPT_EXCEPTION_ACTION](../../../extensibility/debugger/reference/intercept-exception-action.md)值`IEA_INTERCEPT`支援，而且必須加以指定。
 
- `pqwCookie`
+ `pqwCookie`\
 
  [out]識別特定的例外狀況的唯一值。
 

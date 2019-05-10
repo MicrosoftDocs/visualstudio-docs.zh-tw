@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9af33dd296c222a6ab187097437e3774d2bbdbd4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: ac5a891912d84a719a8bf475724f0b1cb7d685d4
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62913436"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65457935"
 ---
 # <a name="programnodearray"></a>PROGRAM_NODE_ARRAY
 包含描述感興趣的程式物件的陣列。
@@ -39,9 +42,11 @@ public struct tagPROGRAM_NODE_ARRAY {
 ```
 
 ## <a name="members"></a>成員
- dwCount 物件數目在`Members`陣列。
+ `dwCount`\
+ 中的物件數目`Members`陣列。
 
- 陣列的成員[IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md)物件，描述要求的程式。
+ `Members`\
+ 陣列[IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md)物件，描述要求的程式。
 
 ## <a name="remarks"></a>備註
  此結構是的一部分[PROVIDER_PROCESS_DATA](../../../extensibility/debugger/reference/provider-process-data.md)結構會接著會填入呼叫[GetProviderProcessData](../../../extensibility/debugger/reference/idebugprogramprovider2-getproviderprocessdata.md)方法。

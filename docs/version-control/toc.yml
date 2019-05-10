@@ -1,6 +1,6 @@
 - name: 版本控制
   href: /visualstudio/version-control/index
-- name: 概觀
+- name: 總覽
   items:
     - name: 了解 Git
       href: /azure/devops/repos/git/gitworkflow?toc=/visualstudio/version-control/toc.json&bc=/azure/devops/repos/git/breadcrumb/vc/toc.json
@@ -21,8 +21,9 @@
 - name: 教學課程
   items:
     - name: Git
-      href: /azure/devops/repos/git/gitquickstart?toc=/visualstudio/version-control/toc.json&bc=/azure/devops/repos/git/breadcrumb/vc/toc.json
       items:
+        - name: Git
+          href: /azure/devops/repos/git/gitquickstart?toc=/visualstudio/version-control/toc.json&bc=/azure/devops/repos/git/breadcrumb/vc/toc.json
         - name: 建立新的存放庫
           href: /azure/devops/repos/git/creatingrepo?toc=/visualstudio/version-control/toc.json&bc=/azure/devops/repos/git/breadcrumb/vc/toc.json
         - name: 編輯現有的存放庫

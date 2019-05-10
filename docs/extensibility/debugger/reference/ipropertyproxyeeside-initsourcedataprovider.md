@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6fb0d2b960c2bafd1a2d502e41c8a435a5205d11
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 05f5987037e63c3c81585ba51deed72f06fd3278
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62865767"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65461089"
 ---
 # <a name="ipropertyproxyeesideinitsourcedataprovider"></a>IPropertyProxyEESide::InitSourceDataProvider
 初始化此物件的來源資料，並傳回物件，其中包含初始資料。
@@ -36,8 +39,8 @@ int InitSourceDataProvider(
 );
 ```
 
-#### <a name="parameters"></a>參數
- `dataOut`
+## <a name="parameters"></a>參數
+ `dataOut`\
 
  [out]傳回[IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md)物件
 

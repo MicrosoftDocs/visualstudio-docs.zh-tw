@@ -3,52 +3,57 @@
   expanded: true
   items:
     - name: 分析 Managed 程式碼品質
-      href: analyzing-managed-code-quality-by-using-code-analysis.md
       items:
+        - name: 分析 Managed 程式碼品質
+          href: analyzing-managed-code-quality-by-using-code-analysis.md
         - name: Managed 程式碼的程式碼分析概觀
           href: code-analysis-for-managed-code-overview.md
-        - name: HOW TO：啟用和停用自動程式碼分析
+        - name: 作法：啟用和停用自動程式碼分析
           href: how-to-enable-and-disable-automatic-code-analysis-for-managed-code.md
-        - name: HOW TO：啟用和停用完整解決方案分析
+        - name: 作法：啟用和停用完整解決方案分析
           href: how-to-enable-and-disable-full-solution-analysis-for-managed-code.md
         - name: 自動功能暫停
           href: automatic-feature-suspension.md
-        - name: HOW TO：手動執行程式碼分析
+        - name: 作法：手動執行程式碼分析
           href: how-to-run-code-analysis-manually-for-managed-code.md
         - name: 逐步解說：分析受控碼的程式碼缺失
           href: walkthrough-analyzing-managed-code-for-code-defects.md
         - name: 使用 SuppressMessage 屬性隱藏警告
-          href: suppress-warnings-by-using-the-suppressmessage-attribute.md
           items:
+            - name: 使用 SuppressMessage 屬性隱藏警告
+              href: suppress-warnings-by-using-the-suppressmessage-attribute.md
             - name: 原始檔中隱藏項目概觀
               href: in-source-suppression-overview.md
-            - name: HOW TO：使用功能表項目隱藏警告
+            - name: 作法：使用功能表項目隱藏警告
               href: how-to-suppress-warnings-by-using-the-menu-item.md
-        - name: HOW TO：隱藏所產生程式碼的警告
-          href: how-to-suppress-code-analysis-warnings-for-generated-code.md
-        - name: HOW TO：自訂程式碼分析字典
-          href: how-to-customize-the-code-analysis-dictionary.md
-        - name: 匿名方法和程式碼分析
-          href: anonymous-methods-and-code-analysis.md
-        - name: HOW TO：檢視受控碼缺失
-          href: how-to-view-managed-code-defects.md
-        - name: HOW TO：為受控碼的缺失建立工作項目
-          href: how-to-create-a-work-item-for-a-managed-code-defect.md
-        - name: Managed 程式碼的程式碼分析警告
-          href: code-analysis-for-managed-code-warnings.md
-          items:
-            - name: 依據 CheckId 列出警告
-              href: code-analysis-warnings-for-managed-code-by-checkid.md
-            - name: 密碼編譯警告
-              href: cryptography-warnings.md
+            - name: 作法：隱藏所產生程式碼的警告
+              href: how-to-suppress-code-analysis-warnings-for-generated-code.md
+            - name: 作法：自訂程式碼分析字典
+              href: how-to-customize-the-code-analysis-dictionary.md
+            - name: 匿名方法和程式碼分析
+              href: anonymous-methods-and-code-analysis.md
+            - name: 作法：檢視受控碼缺失
+              href: how-to-view-managed-code-defects.md
+            - name: 作法：為受控碼的缺失建立工作項目
+              href: how-to-create-a-work-item-for-a-managed-code-defect.md
+            - name: Managed 程式碼的程式碼分析警告
               items:
-                - name: CA5350：請勿使用弱式密碼編譯演算法
-                  href: ca5350-do-not-use-weak-cryptographic-algorithms.md
-                - name: CA5351 不要使用中斷的密碼編譯演算法
-                  href: ca5351-do-not-use-broken-cryptographic-algorithms.md
+                - name: Managed 程式碼的程式碼分析警告
+                  href: code-analysis-for-managed-code-warnings.md
+                - name: 依據 CheckId 列出警告
+                  href: code-analysis-warnings-for-managed-code-by-checkid.md
+                - name: 密碼編譯警告
+                  items:
+                    - name: 密碼編譯警告
+                      href: cryptography-warnings.md
+                    - name: CA5350：請勿使用弱式密碼編譯演算法
+                      href: ca5350-do-not-use-weak-cryptographic-algorithms.md
+                    - name: CA5351 不要使用中斷的密碼編譯演算法
+                      href: ca5351-do-not-use-broken-cryptographic-algorithms.md
             - name: 設計警告
-              href: design-warnings.md
               items:
+                - name: 設計警告
+                  href: design-warnings.md
                 - name: CA1000：不要在泛型類型上宣告靜態成員
                   href: ca1000-do-not-declare-static-members-on-generic-types.md
                 - name: CA1001：具有可處置欄位的類型應該為可處置
@@ -174,8 +179,9 @@
                 - name: 'CA2210:組件應該具備有效的強式名稱'
                   href: ca2210-assemblies-should-have-valid-strong-names.md
             - name: 全球化警告
-              href: globalization-warnings.md
               items:
+                - name: 全球化警告
+                  href: globalization-warnings.md
                 - name: 'CA1300:必須指定 MessageBoxOptions'
                   href: ca1300-specify-messageboxoptions.md
                 - name: 'CA1301:避免使用重複的快速鍵'
@@ -199,8 +205,9 @@
                 - name: 'CA2101:必須指定 P/Invoke 字串引數的封送處理'
                   href: ca2101-specify-marshaling-for-p-invoke-string-arguments.md
             - name: 互通性警告
-              href: interoperability-warnings.md
               items:
+                - name: 互通性警告
+                  href: interoperability-warnings.md
                 - name: 'CA1400:P/Invoke 進入點應該要存在'
                   href: ca1400-p-invoke-entry-points-should-exist.md
                 - name: 'CA1401:P/Invokes 不應該為可見的'
@@ -233,368 +240,380 @@
                   href: ca1414-mark-boolean-p-invoke-arguments-with-marshalas.md
                 - name: 'CA1415:P/Invokes 必須正確宣告'
                   href: ca1415-declare-p-invokes-correctly.md
-            - name: 維護性警告
-              href: maintainability-warnings.md
-              items:
-                - name: 'CA1500:變數名稱不應該與欄位名稱相符'
-                  href: ca1500-variable-names-should-not-match-field-names.md
-                - name: 'CA1501:避免在物件間過度繼承'
-                  href: ca1501-avoid-excessive-inheritance.md
-                - name: 'CA1502:避免造成過度複雜的方法'
-                  href: ca1502-avoid-excessive-complexity.md
-                - name: 'CA1504:必須檢閱可能造成誤導的欄位名稱'
-                  href: ca1504-review-misleading-field-names.md
-                - name: 'CA1505:應避免撰寫無法維護的程式碼'
-                  href: ca1505-avoid-unmaintainable-code.md
-                - name: 'CA1506:應避免使用結合過度的類別'
-                  href: ca1506-avoid-excessive-class-coupling.md
-            - name: 行動性警告
-              href: mobility-warnings.md
-              items:
-                - name: 'CA1600:不要使用 Idle 處理序優先順序'
-                  href: ca1600-do-not-use-idle-process-priority.md
-                - name: 'CA1601:不要使用會妨礙電源狀態變更的計時器'
-                  href: ca1601-do-not-use-timers-that-prevent-power-state-changes.md
-            - name: 命名警告
-              href: naming-warnings.md
-              items:
-                - name: 'CA1700:不要在列舉值名稱中包含 ''Reserved'''
-                  href: ca1700-do-not-name-enum-values-reserved.md
-                - name: 'CA1701:資源字串複合字應該使用正確的大小寫'
-                  href: ca1701-resource-string-compound-words-should-be-cased-correctly.md
-                - name: 'CA1702:複合字應該使用正確的大小寫'
-                  href: ca1702-compound-words-should-be-cased-correctly.md
-                - name: 'CA1703:資源字串應該使用正確的拼字'
-                  href: ca1703-resource-strings-should-be-spelled-correctly.md
-                - name: 'CA1704:識別項應該使用正確的拼字'
-                  href: ca1704-identifiers-should-be-spelled-correctly.md
-                - name: 'CA1707:識別項名稱不應該包含底線'
-                  href: ca1707-identifiers-should-not-contain-underscores.md
-                - name: 'CA1708:識別項名稱不應該只靠大小寫區別'
-                  href: ca1708-identifiers-should-differ-by-more-than-case.md
-                - name: 'CA1709:識別項名稱應該使用正確的大小寫'
-                  href: ca1709-identifiers-should-be-cased-correctly.md
-                - name: 'CA1710:識別項應該使用正確的後置字元'
-                  href: ca1710-identifiers-should-have-correct-suffix.md
-                - name: 'CA1711:識別項名稱不應該使用不正確的後置字元'
-                  href: ca1711-identifiers-should-not-have-incorrect-suffix.md
-                - name: 'CA1712:不要使用類型名稱作為列舉值的前置字元'
-                  href: ca1712-do-not-prefix-enum-values-with-type-name.md
-                - name: 'CA1713:事件不應該有 before 或 after 前置字元'
-                  href: ca1713-events-should-not-have-before-or-after-prefix.md
-                - name: 'CA1714:旗標列舉應該使用複數名稱'
-                  href: ca1714-flags-enums-should-have-plural-names.md
-                - name: 'CA1715:識別項名稱應該使用正確的前置字元'
-                  href: ca1715-identifiers-should-have-correct-prefix.md
-                - name: 'CA1716:識別項名稱不應該和關鍵字相符'
-                  href: ca1716-identifiers-should-not-match-keywords.md
-                - name: 'CA1717:只有 FlagsAttribute 列舉應該使用複數名稱'
-                  href: ca1717-only-flagsattribute-enums-should-have-plural-names.md
-                - name: 'CA1719:參數名稱不應該和成員名稱相符'
-                  href: ca1719-parameter-names-should-not-match-member-names.md
-                - name: 'CA1720:識別項名稱不應該包含類型名稱'
-                  href: ca1720-identifiers-should-not-contain-type-names.md
-                - name: 'CA1721:屬性名稱不應該和其中有 get 的方法名稱相符'
-                  href: ca1721-property-names-should-not-match-get-methods.md
-                - name: 'CA1722:識別項名稱不應該使用不正確的前置字元'
-                  href: ca1722-identifiers-should-not-have-incorrect-prefix.md
-                - name: 'CA1725:參數名稱應該符合基底類型的宣告'
-                  href: ca1725-parameter-names-should-match-base-declaration.md
-                - name: 'CA1724:類型名稱不應該和命名空間相符'
-                  href: ca1724-type-names-should-not-match-namespaces.md
-                - name: 'CA1726:建議使用慣用詞彙'
-                  href: ca1726-use-preferred-terms.md
-            - name: 效能警告
-              href: performance-warnings.md
-              items:
-                - name: 'CA1800:不要執行不必要的轉換'
-                  href: ca1800-do-not-cast-unnecessarily.md
-                - name: 'CA1802:建議在適當時使用常值'
-                  href: ca1802-use-literals-where-appropriate.md
-                - name: 'CA1804:必須移除未使用的區域變數'
-                  href: ca1804-remove-unused-locals.md
-                - name: 'CA1809:避免在方法中包含過多區域變數'
-                  href: ca1809-avoid-excessive-locals.md
-                - name: 'CA1810:必須將參考類型內部的靜態欄位初始化'
-                  href: ca1810-initialize-reference-type-static-fields-inline.md
-                - name: 'CA1811:避免使用未呼叫的私用程式碼'
-                  href: ca1811-avoid-uncalled-private-code.md
-                - name: 'CA1812:避免使用未執行個體化的內部類別'
-                  href: ca1812-avoid-uninstantiated-internal-classes.md
-                - name: 'CA1813:避免使用非密封屬性'
-                  href: ca1813-avoid-unsealed-attributes.md
-                - name: 'CA1814:建議使用不規則陣列取代多維陣列'
-                  href: ca1814-prefer-jagged-arrays-over-multidimensional.md
-                - name: 'CA1815:必須覆寫實值類型上的 Equals 方法和等號比較運算子'
-                  href: ca1815-override-equals-and-operator-equals-on-value-types.md
-                - name: 'CA1819:屬性不應該傳回陣列'
-                  href: ca1819-properties-should-not-return-arrays.md
-                - name: 'CA1820:應該使用字串長度測試空白字串'
-                  href: ca1820-test-for-empty-strings-using-string-length.md
-                - name: 'CA1821:必須移除空的完成項'
-                  href: ca1821-remove-empty-finalizers.md
-                - name: 'CA1822:將成員標記為 static'
-                  href: ca1822-mark-members-as-static.md
-                - name: 'CA1823:避免包含未使用的私用欄位'
-                  href: ca1823-avoid-unused-private-fields.md
-                - name: 'CA1824:組件必須標記 NeutralResourcesLanguageAttribute'
-                  href: ca1824-mark-assemblies-with-neutralresourceslanguageattribute.md
-            - name: 可攜性警告
-              href: portability-warnings.md
-              items:
-                - name: 'CA1900:實值類型欄位應該為可移植的'
-                  href: ca1900-value-type-fields-should-be-portable.md
-                - name: 'CA1901:P/Invoke 宣告應該為可移植的'
-                  href: ca1901-p-invoke-declarations-should-be-portable.md
-                - name: 'CA1903:只使用來自目標架構的 API'
-                  href: ca1903-use-only-api-from-targeted-framework.md
-            - name: 可靠性警告
-              href: reliability-warnings.md
-              items:
-                - name: 'CA2000:必須在超出範圍前處置物件'
-                  href: ca2000-dispose-objects-before-losing-scope.md
-                - name: 'CA2001:避免呼叫有問題的方法'
-                  href: ca2001-avoid-calling-problematic-methods.md
-                - name: 'CA2002:不要鎖定具有弱式識別的物件'
-                  href: ca2002-do-not-lock-on-objects-with-weak-identity.md
-                - name: 'CA2003:不要將 Fiber 視為執行緒'
-                  href: ca2003-do-not-treat-fibers-as-threads.md
-                - name: 'CA2004:必須移除對 GC.KeepAlive 的呼叫'
-                  href: ca2004-remove-calls-to-gc-keepalive.md
-                - name: 'CA2006:必須使用 SafeHandle 封裝原生資源'
-                  href: ca2006-use-safehandle-to-encapsulate-native-resources.md
-            - name: 安全性警告
-              href: security-warnings.md
-              items:
-                - name: 'CA2100:必須檢閱 SQL 查詢中是否有安全性弱點'
-                  href: ca2100-review-sql-queries-for-security-vulnerabilities.md
-                - name: 'CA2102:必須使用一般處理常式攔截非 CLSCompliant 例外狀況'
-                  href: ca2102-catch-non-clscompliant-exceptions-in-general-handlers.md
-                - name: 'CA2103:必須檢閱命令式安全性'
-                  href: ca2103-review-imperative-security.md
-                - name: 'CA2104:不要宣告唯讀的可變動參考類型'
-                  href: ca2104-do-not-declare-read-only-mutable-reference-types.md
-                - name: 'CA2105:陣列欄位不應該為唯讀'
-                  href: ca2105-array-fields-should-not-be-read-only.md
-                - name: 'CA2106:必須保護判斷提示'
-                  href: ca2106-secure-asserts.md
-                - name: 'CA2107:必須檢閱 Deny 和 Permit Only 的使用方式'
-                  href: ca2107-review-deny-and-permit-only-usage.md
-                - name: 'CA2108:必須檢閱實值類型上的宣告式安全性'
-                  href: ca2108-review-declarative-security-on-value-types.md
-                - name: 'CA2109:必須檢閱可見的事件處理常式'
-                  href: ca2109-review-visible-event-handlers.md
-                - name: 'CA2111:指標不應該為可見的'
-                  href: ca2111-pointers-should-not-be-visible.md
-                - name: 'CA2112:受保護類型不應該公開欄位'
-                  href: ca2112-secured-types-should-not-expose-fields.md
-                - name: 'CA2114:方法安全性應該是類型的超集'
-                  href: ca2114-method-security-should-be-a-superset-of-type.md
-                - name: 'CA2115:使用原生資源時必須呼叫 GC.KeepAlive'
-                  href: ca2115-call-gc-keepalive-when-using-native-resources.md
-                - name: 'CA2116:APTCA 方法應該只呼叫 APTCA 方法'
-                  href: ca2116-aptca-methods-should-only-call-aptca-methods.md
-                - name: 'CA2117:APTCA 類型應該只擴充 APTCA 基底類型'
-                  href: ca2117-aptca-types-should-only-extend-aptca-base-types.md
-                - name: 'CA2118:檢閱 SuppressUnmanagedCodeSecurityAttribute 使用方法'
-                  href: ca2118-review-suppressunmanagedcodesecurityattribute-usage.md
-                - name: 'CA2119:密封方法以滿足私用介面的要求'
-                  href: ca2119-seal-methods-that-satisfy-private-interfaces.md
-                - name: 'CA2120:必須保護序列化建構函式'
-                  href: ca2120-secure-serialization-constructors.md
-                - name: 'CA2121:靜態建構函式應該為私用的'
-                  href: ca2121-static-constructors-should-be-private.md
-                - name: 'CA2122:不要間接公開具有連結要求的方法'
-                  href: ca2122-do-not-indirectly-expose-methods-with-link-demands.md
-                - name: 'CA2123:覆寫連結要求應該與基底相同'
-                  href: ca2123-override-link-demands-should-be-identical-to-base.md
-                - name: 'CA2124:必須將有弱點的 finally 子句包裝在外層 try 中'
-                  href: ca2124-wrap-vulnerable-finally-clauses-in-outer-try.md
-                - name: 'CA2126:必須同時具有類型連結要求和繼承要求'
-                  href: ca2126-type-link-demands-require-inheritance-demands.md
-                - name: 'CA2130:安全性關鍵常數應該是透明的'
-                  href: ca2130-security-critical-constants-should-be-transparent.md
-                - name: 'CA2131:安全性關鍵類型可能未參與類型等價'
-                  href: ca2131-security-critical-types-may-not-participate-in-type-equivalence.md
-                - name: 'CA2132:預設建構函式至少必須和基底類型的預設建構函式一樣關鍵'
-                  href: ca2132-default-constructors-must-be-at-least-as-critical-as-base-type-default-constructors.md
-                - name: 'CA2133:委派必須繫結至具有一致透明度的方法'
-                  href: ca2133-delegates-must-bind-to-methods-with-consistent-transparency.md
-                - name: 'CA2134:覆寫基底方法時，方法必須保持一致的透明度'
-                  href: ca2134-methods-must-keep-consistent-transparency-when-overriding-base-methods.md
-                - name: 'CA2135:層級 2 組件不應該包含 LinkDemand'
-                  href: ca2135-level-2-assemblies-should-not-contain-linkdemands.md
-                - name: 'CA2136:成員不應該具有衝突的透明度註釋'
-                  href: ca2136-members-should-not-have-conflicting-transparency-annotations.md
-                - name: 'CA2137:透明方法必須只包含可驗證的 IL'
-                  href: ca2137-transparent-methods-must-contain-only-verifiable-il.md
-                - name: 'CA2138:透明方法不可以使用 SuppressUnmanagedCodeSecurity 屬性呼叫方法'
-                  href: ca2138-transparent-methods-must-not-call-methods-with-the-suppressunmanagedcodesecurity-attribute.md
-                - name: 'CA2139:透明方法不能使用 HandleProcessCorruptingExceptions 屬性'
-                  href: ca2139-transparent-methods-may-not-use-the-handleprocesscorruptingexceptions-attribute.md
-                - name: 'CA2140:透明程式碼不可以參考安全性關鍵項目'
-                  href: ca2140-transparent-code-must-not-reference-security-critical-items.md
-                - name: CA2141：透明方法不可以滿足 LinkDemand
-                  href: ca2141-transparent-methods-must-not-satisfy-linkdemands.md
-                - name: 'CA2142:透明程式碼不可以使用 LinkDemand 加以保護'
-                  href: ca2142-transparent-code-should-not-be-protected-with-linkdemands.md
-                - name: 'CA2143:透明方法不可以使用安全性要求'
-                  href: ca2143-transparent-methods-should-not-use-security-demands.md
-                - name: 'CA2144:透明程式碼不可以從位元組陣列載入組件'
-                  href: ca2144-transparent-code-should-not-load-assemblies-from-byte-arrays.md
-                - name: 'CA2145:透明方法不可以使用 SuppressUnmanagedCodeSecurityAttribute 來裝飾'
-                  href: ca2145-transparent-methods-should-not-be-decorated-with-the-suppressunmanagedcodesecurityattribute.md
-                - name: 'CA2146:類型至少必須和基底類型與介面一樣關鍵'
-                  href: ca2146-types-must-be-at-least-as-critical-as-their-base-types-and-interfaces.md
-                - name: 'CA2147:CA2147：透明方法不可以使用安全性判斷提示'
-                  href: ca2147-transparent-methods-may-not-use-security-asserts.md
-                - name: 'CA2149:透明方法不可以呼叫機器碼'
-                  href: ca2149-transparent-methods-must-not-call-into-native-code.md
-                - name: 'CA2151:具有關鍵類型的欄位應為安全性關鍵'
-                  href: ca2151-fields-with-critical-types-should-be-security-critical.md
-                - name: CA5122 P/Invoke 宣告不可為安全關鍵
-                  href: ca5122-p-invoke-declarations-should-not-be-safe-critical.md
-                - name: 'CA2153:避免處理損毀狀態例外狀況'
-                  href: ca2153-avoid-handling-corrupted-state-exceptions.md
-                - name: 'CA3075:不安全的 DTD 處理'
-                  href: ca3075-insecure-dtd-processing.md
-                - name: 'CA3076:不安全的 XSLT 指令碼執行'
-                  href: ca3076-insecure-xslt-script-execution.md
-                - name: 'CA3077:API 設計、XML 文件和 XML 文字讀取器中的不安全處理'
-                  href: ca3077-insecure-processing-in-api-design-xml-document-and-xml-text-reader.md
-            - name: 用法警告
-              href: usage-warnings.md
-              items:
-                - name: 'CA1801:必須檢閱未使用的參數'
-                  href: ca1801-review-unused-parameters.md
-                - name: 'CA1806:不要忽略方法的結果'
-                  href: ca1806-do-not-ignore-method-results.md
-                - name: 'CA1816:正確呼叫 GC.SuppressFinalize'
-                  href: ca1816-call-gc-suppressfinalize-correctly.md
-                - name: 'CA2200:必須重新擲回以保存堆疊詳細資料'
-                  href: ca2200-rethrow-to-preserve-stack-details.md
-                - name: 'CA2201:不要引發保留的例外狀況類型'
-                  href: ca2201-do-not-raise-reserved-exception-types.md
-                - name: 'CA2202:不要多次處置物件的 Dispose 方法'
-                  href: ca2202-do-not-dispose-objects-multiple-times.md
-                - name: 'CA2204:常值必須使用正確的拼字'
-                  href: ca2204-literals-should-be-spelled-correctly.md
-                - name: 'CA2205:必須使用 Win32 API 的受控對應項'
-                  href: ca2205-use-managed-equivalents-of-win32-api.md
-                - name: 'CA2207:必須將實值類型的靜態欄位內嵌初始化'
-                  href: ca2207-initialize-value-type-static-fields-inline.md
-                - name: 'CA2208:必須正確執行個體化引數例外狀況'
-                  href: ca2208-instantiate-argument-exceptions-correctly.md
-                - name: 'CA2211:非常數欄位不應該為可見的'
-                  href: ca2211-non-constant-fields-should-not-be-visible.md
-                - name: 'CA2212:不要以 WebMethod 標記 Serviced 元件'
-                  href: ca2212-do-not-mark-serviced-components-with-webmethod.md
-                - name: 'CA2213:可處置的欄位應該受到處置'
-                  href: ca2213-disposable-fields-should-be-disposed.md
-                - name: 'CA2214:不要呼叫建構函式中的可覆寫方法'
-                  href: ca2214-do-not-call-overridable-methods-in-constructors.md
-                - name: 'CA2215:Dispose 方法應該呼叫基底類別處置'
-                  href: ca2215-dispose-methods-should-call-base-class-dispose.md
-                - name: 'CA2216:可處置的類型應該宣告完成項'
-                  href: ca2216-disposable-types-should-declare-finalizer.md
-                - name: 'CA2217:不要以 FlagsAttribute 標記列舉'
-                  href: ca2217-do-not-mark-enums-with-flagsattribute.md
-                - name: 'CA2218:覆寫 Equals 時必須一併覆寫 GetHashCode'
-                  href: ca2218-override-gethashcode-on-overriding-equals.md
-                - name: 'CA2219:不要在 exception 子句中引發例外狀況'
-                  href: ca2219-do-not-raise-exceptions-in-exception-clauses.md
-                - name: 'CA2220:完成項應該呼叫基底類別完成項'
-                  href: ca2220-finalizers-should-call-base-class-finalizer.md
-                - name: 'CA2221:Finalizer 方法應該為 protected'
-                  href: ca2221-finalizers-should-be-protected.md
-                - name: 'CA2222:不要降低繼承成員的可視性'
-                  href: ca2222-do-not-decrease-inherited-member-visibility.md
-                - name: 'CA2223:成員不應該只有在傳回類型上不同'
-                  href: ca2223-members-should-differ-by-more-than-return-type.md
-                - name: 'CA2224:多載等號比較運算子時必須一併覆寫 Equals'
-                  href: ca2224-override-equals-on-overloading-operator-equals.md
-                - name: 'CA2225:運算子多載必須有具名的替代方法'
-                  href: ca2225-operator-overloads-have-named-alternates.md
-                - name: 'CA2226:運算子應該有對稱的多載'
-                  href: ca2226-operators-should-have-symmetrical-overloads.md
-                - name: 'CA2227:集合屬性應該為唯讀'
-                  href: ca2227-collection-properties-should-be-read-only.md
-                - name: 'CA2228:不要使用尚未發行版本所支援的格式建置資源'
-                  href: ca2228-do-not-ship-unreleased-resource-formats.md
-                - name: 'CA2229:必須實作序列化建構函式'
-                  href: ca2229-implement-serialization-constructors.md
-                - name: 'CA2230:必須使用 params 作為變數引數'
-                  href: ca2230-use-params-for-variable-arguments.md
-                - name: 'CA2231:在覆寫 ValueType.Equals 上多載等號運算子'
-                  href: ca2231-overload-operator-equals-on-overriding-valuetype-equals.md
-                - name: 'CA2232:Windows Forms 進入點必須標記 STAThread'
-                  href: ca2232-mark-windows-forms-entry-points-with-stathread.md
-                - name: 'CA2233:運算不應該發生溢位'
-                  href: ca2233-operations-should-not-overflow.md
-                - name: 'CA2234:必須傳遞 System.Uri 物件而非字串'
-                  href: ca2234-pass-system-uri-objects-instead-of-strings.md
-                - name: 'CA2235:必須標記所有不可序列化的欄位'
-                  href: ca2235-mark-all-non-serializable-fields.md
-                - name: 'CA2236:必須呼叫 ISerializable 類型上的基底類別方法'
-                  href: ca2236-call-base-class-methods-on-iserializable-types.md
-                - name: 'CA2237:ISerializable 類型必須標記 SerializableAttribute'
-                  href: ca2237-mark-iserializable-types-with-serializableattribute.md
-                - name: 'CA2238:必須正確實作序列化方法'
-                  href: ca2238-implement-serialization-methods-correctly.md
-                - name: 'CA2239:必須為選擇性欄位提供還原序列化方法'
-                  href: ca2239-provide-deserialization-methods-for-optional-fields.md
-                - name: 'CA2240:必須正確實作 ISerializable'
-                  href: ca2240-implement-iserializable-correctly.md
-                - name: 'CA2241:必須提供格式化方法的正確引數'
-                  href: ca2241-provide-correct-arguments-to-formatting-methods.md
-                - name: 'CA2242:必須正確測試 NaN'
-                  href: ca2242-test-for-nan-correctly.md
-                - name: 'CA2243:屬性字串常值必須正確剖析'
-                  href: ca2243-attribute-string-literals-should-parse-correctly.md
-            - name: 程式碼分析原則錯誤
-              href: code-analysis-policy-errors.md
+                - name: 維護性警告
+                  items:
+                    - name: 維護性警告
+                      href: maintainability-warnings.md
+                    - name: 'CA1500:變數名稱不應該與欄位名稱相符'
+                      href: ca1500-variable-names-should-not-match-field-names.md
+                    - name: 'CA1501:避免在物件間過度繼承'
+                      href: ca1501-avoid-excessive-inheritance.md
+                    - name: 'CA1502:避免造成過度複雜的方法'
+                      href: ca1502-avoid-excessive-complexity.md
+                    - name: 'CA1504:必須檢閱可能造成誤導的欄位名稱'
+                      href: ca1504-review-misleading-field-names.md
+                    - name: 'CA1505:應避免撰寫無法維護的程式碼'
+                      href: ca1505-avoid-unmaintainable-code.md
+                    - name: 'CA1506:應避免使用結合過度的類別'
+                      href: ca1506-avoid-excessive-class-coupling.md
+                    - name: 行動性警告
+                      items:
+                        - name: 行動性警告
+                          href: mobility-warnings.md
+                        - name: 'CA1600:不要使用 Idle 處理序優先順序'
+                          href: ca1600-do-not-use-idle-process-priority.md
+                        - name: 'CA1601:不要使用會妨礙電源狀態變更的計時器'
+                          href: ca1601-do-not-use-timers-that-prevent-power-state-changes.md
+                    - name: 命名警告
+                      items:
+                        - name: 命名警告
+                          href: naming-warnings.md
+                        - name: 'CA1700:不要在列舉值名稱中包含 ''Reserved'''
+                          href: ca1700-do-not-name-enum-values-reserved.md
+                        - name: 'CA1701:資源字串複合字應該使用正確的大小寫'
+                          href: ca1701-resource-string-compound-words-should-be-cased-correctly.md
+                        - name: 'CA1702:複合字應該使用正確的大小寫'
+                          href: ca1702-compound-words-should-be-cased-correctly.md
+                        - name: 'CA1703:資源字串應該使用正確的拼字'
+                          href: ca1703-resource-strings-should-be-spelled-correctly.md
+                        - name: 'CA1704:識別項應該使用正確的拼字'
+                          href: ca1704-identifiers-should-be-spelled-correctly.md
+                        - name: 'CA1707:識別項名稱不應該包含底線'
+                          href: ca1707-identifiers-should-not-contain-underscores.md
+                        - name: 'CA1708:識別項名稱不應該只靠大小寫區別'
+                          href: ca1708-identifiers-should-differ-by-more-than-case.md
+                        - name: 'CA1709:識別項名稱應該使用正確的大小寫'
+                          href: ca1709-identifiers-should-be-cased-correctly.md
+                        - name: 'CA1710:識別項應該使用正確的後置字元'
+                          href: ca1710-identifiers-should-have-correct-suffix.md
+                        - name: 'CA1711:識別項名稱不應該使用不正確的後置字元'
+                          href: ca1711-identifiers-should-not-have-incorrect-suffix.md
+                        - name: 'CA1712:不要使用類型名稱作為列舉值的前置字元'
+                          href: ca1712-do-not-prefix-enum-values-with-type-name.md
+                        - name: 'CA1713:事件不應該有 before 或 after 前置字元'
+                          href: ca1713-events-should-not-have-before-or-after-prefix.md
+                        - name: 'CA1714:旗標列舉應該使用複數名稱'
+                          href: ca1714-flags-enums-should-have-plural-names.md
+                        - name: 'CA1715:識別項名稱應該使用正確的前置字元'
+                          href: ca1715-identifiers-should-have-correct-prefix.md
+                        - name: 'CA1716:識別項名稱不應該和關鍵字相符'
+                          href: ca1716-identifiers-should-not-match-keywords.md
+                        - name: 'CA1717:只有 FlagsAttribute 列舉應該使用複數名稱'
+                          href: ca1717-only-flagsattribute-enums-should-have-plural-names.md
+                        - name: 'CA1719:參數名稱不應該和成員名稱相符'
+                          href: ca1719-parameter-names-should-not-match-member-names.md
+                        - name: 'CA1720:識別項名稱不應該包含類型名稱'
+                          href: ca1720-identifiers-should-not-contain-type-names.md
+                        - name: 'CA1721:屬性名稱不應該和其中有 get 的方法名稱相符'
+                          href: ca1721-property-names-should-not-match-get-methods.md
+                        - name: 'CA1722:識別項名稱不應該使用不正確的前置字元'
+                          href: ca1722-identifiers-should-not-have-incorrect-prefix.md
+                        - name: 'CA1725:參數名稱應該符合基底類型的宣告'
+                          href: ca1725-parameter-names-should-match-base-declaration.md
+                        - name: 'CA1724:類型名稱不應該和命名空間相符'
+                          href: ca1724-type-names-should-not-match-namespaces.md
+                        - name: 'CA1726:建議使用慣用詞彙'
+                          href: ca1726-use-preferred-terms.md
+                    - name: 效能警告
+                      items:
+                        - name: 效能警告
+                          href: performance-warnings.md
+                        - name: 'CA1800:不要執行不必要的轉換'
+                          href: ca1800-do-not-cast-unnecessarily.md
+                        - name: 'CA1802:建議在適當時使用常值'
+                          href: ca1802-use-literals-where-appropriate.md
+                        - name: 'CA1804:必須移除未使用的區域變數'
+                          href: ca1804-remove-unused-locals.md
+                        - name: 'CA1809:避免在方法中包含過多區域變數'
+                          href: ca1809-avoid-excessive-locals.md
+                        - name: 'CA1810:必須將參考類型內部的靜態欄位初始化'
+                          href: ca1810-initialize-reference-type-static-fields-inline.md
+                        - name: 'CA1811:避免使用未呼叫的私用程式碼'
+                          href: ca1811-avoid-uncalled-private-code.md
+                        - name: 'CA1812:避免使用未執行個體化的內部類別'
+                          href: ca1812-avoid-uninstantiated-internal-classes.md
+                        - name: 'CA1813:避免使用非密封屬性'
+                          href: ca1813-avoid-unsealed-attributes.md
+                        - name: 'CA1814:建議使用不規則陣列取代多維陣列'
+                          href: ca1814-prefer-jagged-arrays-over-multidimensional.md
+                        - name: 'CA1815:必須覆寫實值類型上的 Equals 方法和等號比較運算子'
+                          href: ca1815-override-equals-and-operator-equals-on-value-types.md
+                        - name: 'CA1819:屬性不應該傳回陣列'
+                          href: ca1819-properties-should-not-return-arrays.md
+                        - name: 'CA1820:應該使用字串長度測試空白字串'
+                          href: ca1820-test-for-empty-strings-using-string-length.md
+                        - name: 'CA1821:必須移除空的完成項'
+                          href: ca1821-remove-empty-finalizers.md
+                        - name: 'CA1822:將成員標記為 static'
+                          href: ca1822-mark-members-as-static.md
+                        - name: 'CA1823:避免包含未使用的私用欄位'
+                          href: ca1823-avoid-unused-private-fields.md
+                        - name: 'CA1824:組件必須標記 NeutralResourcesLanguageAttribute'
+                          href: ca1824-mark-assemblies-with-neutralresourceslanguageattribute.md
+                    - name: 可攜性警告
+                      items:
+                        - name: 可攜性警告
+                          href: portability-warnings.md
+                        - name: 'CA1900:實值類型欄位應該為可移植的'
+                          href: ca1900-value-type-fields-should-be-portable.md
+                        - name: 'CA1901:P/Invoke 宣告應該為可移植的'
+                          href: ca1901-p-invoke-declarations-should-be-portable.md
+                        - name: 'CA1903:只使用來自目標架構的 API'
+                          href: ca1903-use-only-api-from-targeted-framework.md
+                    - name: 可靠性警告
+                      items:
+                        - name: 可靠性警告
+                          href: reliability-warnings.md
+                        - name: 'CA2000:必須在超出範圍前處置物件'
+                          href: ca2000-dispose-objects-before-losing-scope.md
+                        - name: 'CA2001:避免呼叫有問題的方法'
+                          href: ca2001-avoid-calling-problematic-methods.md
+                        - name: 'CA2002:不要鎖定具有弱式識別的物件'
+                          href: ca2002-do-not-lock-on-objects-with-weak-identity.md
+                        - name: 'CA2003:不要將 Fiber 視為執行緒'
+                          href: ca2003-do-not-treat-fibers-as-threads.md
+                        - name: 'CA2004:必須移除對 GC.KeepAlive 的呼叫'
+                          href: ca2004-remove-calls-to-gc-keepalive.md
+                        - name: 'CA2006:必須使用 SafeHandle 封裝原生資源'
+                          href: ca2006-use-safehandle-to-encapsulate-native-resources.md
+                    - name: 安全性警告
+                      items:
+                        - name: 安全性警告
+                          href: security-warnings.md
+                        - name: 'CA2100:必須檢閱 SQL 查詢中是否有安全性弱點'
+                          href: ca2100-review-sql-queries-for-security-vulnerabilities.md
+                        - name: 'CA2102:必須使用一般處理常式攔截非 CLSCompliant 例外狀況'
+                          href: ca2102-catch-non-clscompliant-exceptions-in-general-handlers.md
+                        - name: 'CA2103:必須檢閱命令式安全性'
+                          href: ca2103-review-imperative-security.md
+                        - name: 'CA2104:不要宣告唯讀的可變動參考類型'
+                          href: ca2104-do-not-declare-read-only-mutable-reference-types.md
+                        - name: 'CA2105:陣列欄位不應該為唯讀'
+                          href: ca2105-array-fields-should-not-be-read-only.md
+                        - name: 'CA2106:必須保護判斷提示'
+                          href: ca2106-secure-asserts.md
+                        - name: 'CA2107:必須檢閱 Deny 和 Permit Only 的使用方式'
+                          href: ca2107-review-deny-and-permit-only-usage.md
+                        - name: 'CA2108:必須檢閱實值類型上的宣告式安全性'
+                          href: ca2108-review-declarative-security-on-value-types.md
+                        - name: 'CA2109:必須檢閱可見的事件處理常式'
+                          href: ca2109-review-visible-event-handlers.md
+                        - name: 'CA2111:指標不應該為可見的'
+                          href: ca2111-pointers-should-not-be-visible.md
+                        - name: 'CA2112:受保護類型不應該公開欄位'
+                          href: ca2112-secured-types-should-not-expose-fields.md
+                        - name: 'CA2114:方法安全性應該是類型的超集'
+                          href: ca2114-method-security-should-be-a-superset-of-type.md
+                        - name: 'CA2115:使用原生資源時必須呼叫 GC.KeepAlive'
+                          href: ca2115-call-gc-keepalive-when-using-native-resources.md
+                        - name: 'CA2116:APTCA 方法應該只呼叫 APTCA 方法'
+                          href: ca2116-aptca-methods-should-only-call-aptca-methods.md
+                        - name: 'CA2117:APTCA 類型應該只擴充 APTCA 基底類型'
+                          href: ca2117-aptca-types-should-only-extend-aptca-base-types.md
+                        - name: 'CA2118:檢閱 SuppressUnmanagedCodeSecurityAttribute 使用方法'
+                          href: ca2118-review-suppressunmanagedcodesecurityattribute-usage.md
+                        - name: 'CA2119:密封方法以滿足私用介面的要求'
+                          href: ca2119-seal-methods-that-satisfy-private-interfaces.md
+                        - name: 'CA2120:必須保護序列化建構函式'
+                          href: ca2120-secure-serialization-constructors.md
+                        - name: 'CA2121:靜態建構函式應該為私用的'
+                          href: ca2121-static-constructors-should-be-private.md
+                        - name: 'CA2122:不要間接公開具有連結要求的方法'
+                          href: ca2122-do-not-indirectly-expose-methods-with-link-demands.md
+                        - name: 'CA2123:覆寫連結要求應該與基底相同'
+                          href: ca2123-override-link-demands-should-be-identical-to-base.md
+                        - name: 'CA2124:必須將有弱點的 finally 子句包裝在外層 try 中'
+                          href: ca2124-wrap-vulnerable-finally-clauses-in-outer-try.md
+                        - name: 'CA2126:必須同時具有類型連結要求和繼承要求'
+                          href: ca2126-type-link-demands-require-inheritance-demands.md
+                        - name: 'CA2130:安全性關鍵常數應該是透明的'
+                          href: ca2130-security-critical-constants-should-be-transparent.md
+                        - name: 'CA2131:安全性關鍵類型可能未參與類型等價'
+                          href: ca2131-security-critical-types-may-not-participate-in-type-equivalence.md
+                        - name: 'CA2132:預設建構函式至少必須和基底類型的預設建構函式一樣關鍵'
+                          href: ca2132-default-constructors-must-be-at-least-as-critical-as-base-type-default-constructors.md
+                        - name: 'CA2133:委派必須繫結至具有一致透明度的方法'
+                          href: ca2133-delegates-must-bind-to-methods-with-consistent-transparency.md
+                        - name: 'CA2134:覆寫基底方法時，方法必須保持一致的透明度'
+                          href: ca2134-methods-must-keep-consistent-transparency-when-overriding-base-methods.md
+                        - name: 'CA2135:層級 2 組件不應該包含 LinkDemand'
+                          href: ca2135-level-2-assemblies-should-not-contain-linkdemands.md
+                        - name: 'CA2136:成員不應該具有衝突的透明度註釋'
+                          href: ca2136-members-should-not-have-conflicting-transparency-annotations.md
+                        - name: 'CA2137:透明方法必須只包含可驗證的 IL'
+                          href: ca2137-transparent-methods-must-contain-only-verifiable-il.md
+                        - name: 'CA2138:透明方法不可以使用 SuppressUnmanagedCodeSecurity 屬性呼叫方法'
+                          href: ca2138-transparent-methods-must-not-call-methods-with-the-suppressunmanagedcodesecurity-attribute.md
+                        - name: 'CA2139:透明方法不能使用 HandleProcessCorruptingExceptions 屬性'
+                          href: ca2139-transparent-methods-may-not-use-the-handleprocesscorruptingexceptions-attribute.md
+                        - name: 'CA2140:透明程式碼不可以參考安全性關鍵項目'
+                          href: ca2140-transparent-code-must-not-reference-security-critical-items.md
+                        - name: CA2141：透明方法不可以滿足 LinkDemand
+                          href: ca2141-transparent-methods-must-not-satisfy-linkdemands.md
+                        - name: 'CA2142:透明程式碼不可以使用 LinkDemand 加以保護'
+                          href: ca2142-transparent-code-should-not-be-protected-with-linkdemands.md
+                        - name: 'CA2143:透明方法不可以使用安全性要求'
+                          href: ca2143-transparent-methods-should-not-use-security-demands.md
+                        - name: 'CA2144:透明程式碼不可以從位元組陣列載入組件'
+                          href: ca2144-transparent-code-should-not-load-assemblies-from-byte-arrays.md
+                        - name: 'CA2145:透明方法不可以使用 SuppressUnmanagedCodeSecurityAttribute 來裝飾'
+                          href: ca2145-transparent-methods-should-not-be-decorated-with-the-suppressunmanagedcodesecurityattribute.md
+                        - name: 'CA2146:類型至少必須和基底類型與介面一樣關鍵'
+                          href: ca2146-types-must-be-at-least-as-critical-as-their-base-types-and-interfaces.md
+                        - name: 'CA2147:CA2147：透明方法不可以使用安全性判斷提示'
+                          href: ca2147-transparent-methods-may-not-use-security-asserts.md
+                        - name: 'CA2149:透明方法不可以呼叫機器碼'
+                          href: ca2149-transparent-methods-must-not-call-into-native-code.md
+                        - name: 'CA2151:具有關鍵類型的欄位應為安全性關鍵'
+                          href: ca2151-fields-with-critical-types-should-be-security-critical.md
+                        - name: CA5122 P/Invoke 宣告不可為安全關鍵
+                          href: ca5122-p-invoke-declarations-should-not-be-safe-critical.md
+                        - name: 'CA2153:避免處理損毀狀態例外狀況'
+                          href: ca2153-avoid-handling-corrupted-state-exceptions.md
+                        - name: 'CA3075:不安全的 DTD 處理'
+                          href: ca3075-insecure-dtd-processing.md
+                        - name: 'CA3076:不安全的 XSLT 指令碼執行'
+                          href: ca3076-insecure-xslt-script-execution.md
+                        - name: 'CA3077:API 設計、XML 文件和 XML 文字讀取器中的不安全處理'
+                          href: ca3077-insecure-processing-in-api-design-xml-document-and-xml-text-reader.md
+                    - name: 用法警告
+                      items:
+                        - name: 用法警告
+                          href: usage-warnings.md
+                        - name: 'CA1801:必須檢閱未使用的參數'
+                          href: ca1801-review-unused-parameters.md
+                        - name: 'CA1806:不要忽略方法的結果'
+                          href: ca1806-do-not-ignore-method-results.md
+                        - name: 'CA1816:正確呼叫 GC.SuppressFinalize'
+                          href: ca1816-call-gc-suppressfinalize-correctly.md
+                        - name: 'CA2200:必須重新擲回以保存堆疊詳細資料'
+                          href: ca2200-rethrow-to-preserve-stack-details.md
+                        - name: 'CA2201:不要引發保留的例外狀況類型'
+                          href: ca2201-do-not-raise-reserved-exception-types.md
+                        - name: 'CA2202:不要多次處置物件的 Dispose 方法'
+                          href: ca2202-do-not-dispose-objects-multiple-times.md
+                        - name: 'CA2204:常值必須使用正確的拼字'
+                          href: ca2204-literals-should-be-spelled-correctly.md
+                        - name: 'CA2205:必須使用 Win32 API 的受控對應項'
+                          href: ca2205-use-managed-equivalents-of-win32-api.md
+                        - name: 'CA2207:必須將實值類型的靜態欄位內嵌初始化'
+                          href: ca2207-initialize-value-type-static-fields-inline.md
+                        - name: 'CA2208:必須正確執行個體化引數例外狀況'
+                          href: ca2208-instantiate-argument-exceptions-correctly.md
+                        - name: 'CA2211:非常數欄位不應該為可見的'
+                          href: ca2211-non-constant-fields-should-not-be-visible.md
+                        - name: 'CA2212:不要以 WebMethod 標記 Serviced 元件'
+                          href: ca2212-do-not-mark-serviced-components-with-webmethod.md
+                        - name: 'CA2213:可處置的欄位應該受到處置'
+                          href: ca2213-disposable-fields-should-be-disposed.md
+                        - name: 'CA2214:不要呼叫建構函式中的可覆寫方法'
+                          href: ca2214-do-not-call-overridable-methods-in-constructors.md
+                        - name: 'CA2215:Dispose 方法應該呼叫基底類別處置'
+                          href: ca2215-dispose-methods-should-call-base-class-dispose.md
+                        - name: 'CA2216:可處置的類型應該宣告完成項'
+                          href: ca2216-disposable-types-should-declare-finalizer.md
+                        - name: 'CA2217:不要以 FlagsAttribute 標記列舉'
+                          href: ca2217-do-not-mark-enums-with-flagsattribute.md
+                        - name: 'CA2218:覆寫 Equals 時必須一併覆寫 GetHashCode'
+                          href: ca2218-override-gethashcode-on-overriding-equals.md
+                        - name: 'CA2219:不要在 exception 子句中引發例外狀況'
+                          href: ca2219-do-not-raise-exceptions-in-exception-clauses.md
+                        - name: 'CA2220:完成項應該呼叫基底類別完成項'
+                          href: ca2220-finalizers-should-call-base-class-finalizer.md
+                        - name: 'CA2221:Finalizer 方法應該為 protected'
+                          href: ca2221-finalizers-should-be-protected.md
+                        - name: 'CA2222:不要降低繼承成員的可視性'
+                          href: ca2222-do-not-decrease-inherited-member-visibility.md
+                        - name: 'CA2223:成員不應該只有在傳回類型上不同'
+                          href: ca2223-members-should-differ-by-more-than-return-type.md
+                        - name: 'CA2224:多載等號比較運算子時必須一併覆寫 Equals'
+                          href: ca2224-override-equals-on-overloading-operator-equals.md
+                        - name: 'CA2225:運算子多載必須有具名的替代方法'
+                          href: ca2225-operator-overloads-have-named-alternates.md
+                        - name: 'CA2226:運算子應該有對稱的多載'
+                          href: ca2226-operators-should-have-symmetrical-overloads.md
+                        - name: 'CA2227:集合屬性應該為唯讀'
+                          href: ca2227-collection-properties-should-be-read-only.md
+                        - name: 'CA2228:不要使用尚未發行版本所支援的格式建置資源'
+                          href: ca2228-do-not-ship-unreleased-resource-formats.md
+                        - name: 'CA2229:必須實作序列化建構函式'
+                          href: ca2229-implement-serialization-constructors.md
+                        - name: 'CA2230:必須使用 params 作為變數引數'
+                          href: ca2230-use-params-for-variable-arguments.md
+                        - name: 'CA2231:在覆寫 ValueType.Equals 上多載等號運算子'
+                          href: ca2231-overload-operator-equals-on-overriding-valuetype-equals.md
+                        - name: 'CA2232:Windows Forms 進入點必須標記 STAThread'
+                          href: ca2232-mark-windows-forms-entry-points-with-stathread.md
+                        - name: 'CA2233:運算不應該發生溢位'
+                          href: ca2233-operations-should-not-overflow.md
+                        - name: 'CA2234:必須傳遞 System.Uri 物件而非字串'
+                          href: ca2234-pass-system-uri-objects-instead-of-strings.md
+                        - name: 'CA2235:必須標記所有不可序列化的欄位'
+                          href: ca2235-mark-all-non-serializable-fields.md
+                        - name: 'CA2236:必須呼叫 ISerializable 類型上的基底類別方法'
+                          href: ca2236-call-base-class-methods-on-iserializable-types.md
+                        - name: 'CA2237:ISerializable 類型必須標記 SerializableAttribute'
+                          href: ca2237-mark-iserializable-types-with-serializableattribute.md
+                        - name: 'CA2238:必須正確實作序列化方法'
+                          href: ca2238-implement-serialization-methods-correctly.md
+                        - name: 'CA2239:必須為選擇性欄位提供還原序列化方法'
+                          href: ca2239-provide-deserialization-methods-for-optional-fields.md
+                        - name: 'CA2240:必須正確實作 ISerializable'
+                          href: ca2240-implement-iserializable-correctly.md
+                        - name: 'CA2241:必須提供格式化方法的正確引數'
+                          href: ca2241-provide-correct-arguments-to-formatting-methods.md
+                        - name: 'CA2242:必須正確測試 NaN'
+                          href: ca2242-test-for-nan-correctly.md
+                        - name: 'CA2243:屬性字串常值必須正確剖析'
+                          href: ca2243-attribute-string-literals-should-parse-correctly.md
+                - name: 程式碼分析原則錯誤
+                  href: code-analysis-policy-errors.md
+- name: 分析 C/C++ 程式碼品質
+  items:
     - name: 分析 C/C++ 程式碼品質
       href: analyzing-c-cpp-code-quality-by-using-code-analysis.md
+    - name: 快速入門：C/C++ 的程式碼分析
+      href: quick-start-code-analysis-for-c-cpp.md
+    - name: 使用規則集指定要執行的 C++ 規則
+      href: using-rule-sets-to-specify-the-cpp-rules-to-run.md
+    - name: 使用 C++ Core Guidelines 檢查工具
+      href: using-the-cpp-core-guidelines-checkers.md
+    - name: C/C++ 程式碼分析概觀
+      href: code-analysis-for-c-cpp-overview.md
+    - name: 作法：為 C/C++ 專案設定程式碼分析屬性
+      href: how-to-set-code-analysis-properties-for-c-cpp-projects.md
+    - name: 逐步解說：分析 C/C++ 程式碼的缺失
       items:
-        - name: 快速入門：C/C++ 的程式碼分析
-          href: quick-start-code-analysis-for-c-cpp.md
-        - name: 使用規則集指定要執行的 C++ 規則
-          href: using-rule-sets-to-specify-the-cpp-rules-to-run.md
-        - name: 使用 C++ Core Guidelines 檢查工具
-          href: using-the-cpp-core-guidelines-checkers.md
-        - name: C/C++ 程式碼分析概觀
-          href: code-analysis-for-c-cpp-overview.md
-        - name: HOW TO：為 C/C++ 專案設定程式碼分析屬性
-          href: how-to-set-code-analysis-properties-for-c-cpp-projects.md
         - name: 逐步解說：分析 C/C++ 程式碼的缺失
           href: walkthrough-analyzing-c-cpp-code-for-defects.md
-          items:
-            - name: 示範範例
-              href: demo-sample.md
+        - name: 示範範例
+          href: demo-sample.md
+    - name: 使用 SAL 註釋減少 C/C++ 程式碼的缺失
+      items:
         - name: 使用 SAL 註釋減少 C/C++ 程式碼的缺失
           href: using-sal-annotations-to-reduce-c-cpp-code-defects.md
-          items:
-            - name: 了解 SAL
-              href: understanding-sal.md
-            - name: 註釋函式參數和傳回值
-              href: annotating-function-parameters-and-return-values.md
-            - name: 註釋函式行為
-              href: annotating-function-behavior.md
-            - name: 註釋結構和類別
-              href: annotating-structs-and-classes.md
-            - name: 註釋鎖定行為
-              href: annotating-locking-behavior.md
-            - name: 指定套用註釋的時機和位置
-              href: specifying-when-and-where-an-annotation-applies.md
-            - name: 內建函式
-              href: intrinsic-functions.md
-            - name: 最佳作法和範例
-              href: best-practices-and-examples-sal.md
-        - name: HOW TO：使用 _analysis_assume 來指定其他程式碼資訊
+        - name: 了解 SAL
+          href: understanding-sal.md
+        - name: 註釋函式參數和傳回值
+          href: annotating-function-parameters-and-return-values.md
+        - name: 註釋函式行為
+          href: annotating-function-behavior.md
+        - name: 註釋結構和類別
+          href: annotating-structs-and-classes.md
+        - name: 註釋鎖定行為
+          href: annotating-locking-behavior.md
+        - name: 指定套用註釋的時機和位置
+          href: specifying-when-and-where-an-annotation-applies.md
+        - name: 內建函式
+          href: intrinsic-functions.md
+        - name: 最佳作法和範例
+          href: best-practices-and-examples-sal.md
+        - name: 作法：使用 _analysis_assume 來指定其他程式碼資訊
           href: how-to-specify-additional-code-information-by-using-analysis-assume.md
         - name: C/C++ 程式碼分析警告
-          href: code-analysis-for-c-cpp-warnings.md
           items:
+            - name: C/C++ 程式碼分析警告
+              href: code-analysis-for-c-cpp-warnings.md
             - name: C1250
               href: c1250.md
             - name: C1251
@@ -1167,138 +1186,146 @@
               href: c28350.md
             - name: C28351
               href: c28351.md
-    - name: 使用規則集分組程式碼分析規則
-      href: using-rule-sets-to-group-code-analysis-rules.md
-      items:
-        - name: 逐步解說：設定和使用自訂規則集
-          href: walkthrough-configuring-and-using-a-custom-rule-set.md
-        - name: HOW TO：設定受控碼專案的程式碼分析
-          href: how-to-configure-code-analysis-for-a-managed-code-project.md
-        - name: HOW TO：設定 ASP.NET Web 應用程式的程式碼分析
-          href: how-to-configure-code-analysis-for-an-aspnet-web-application.md
-        - name: HOW TO：將程式碼專案規則集與 Team 專案簽入原則進行同步處理
-          href: how-to-synchronize-code-project-rule-sets-with-team-project-check-in-policy.md
-        - name: HOW TO：對解決方案中的多個專案指定規則集
-          href: how-to-specify-managed-code-rule-sets-for-multiple-projects-in-a-solution.md
-        - name: 建立自訂規則集
-          href: creating-custom-code-analysis-rule-sets.md
+        - name: 使用規則集分組程式碼分析規則
           items:
-            - name: HOW TO：建立自訂規則集
-              href: how-to-create-a-custom-rule-set.md
-            - name: 在規則集編輯器中工作
-              href: working-in-the-code-analysis-rule-set-editor.md
-        - name: 程式碼分析規則集參考
-          href: code-analysis-rule-set-reference.md
+            - name: 使用規則集分組程式碼分析規則
+              href: using-rule-sets-to-group-code-analysis-rules.md
+            - name: 逐步解說：設定和使用自訂規則集
+              href: walkthrough-configuring-and-using-a-custom-rule-set.md
+            - name: 作法：設定受控碼專案的程式碼分析
+              href: how-to-configure-code-analysis-for-a-managed-code-project.md
+            - name: 作法：設定 ASP.NET Web 應用程式的程式碼分析
+              href: how-to-configure-code-analysis-for-an-aspnet-web-application.md
+            - name: 作法：將程式碼專案規則集與 Team 專案簽入原則進行同步處理
+              href: how-to-synchronize-code-project-rule-sets-with-team-project-check-in-policy.md
+            - name: 作法：對解決方案中的多個專案指定規則集
+              href: how-to-specify-managed-code-rule-sets-for-multiple-projects-in-a-solution.md
+            - name: 建立自訂規則集
+              items:
+                - name: 建立自訂規則集
+                  href: creating-custom-code-analysis-rule-sets.md
+                - name: 作法：建立自訂規則集
+                  href: how-to-create-a-custom-rule-set.md
+                - name: 在規則集編輯器中工作
+                  href: working-in-the-code-analysis-rule-set-editor.md
+            - name: 程式碼分析規則集參考
+              items:
+                - name: 程式碼分析規則集參考
+                  href: code-analysis-rule-set-reference.md
+                - name: 所有規則規則集
+                  href: all-rules-rule-set.md
+                - name: 適用於 Managed 程式碼的基本正確性規則規則集
+                  href: basic-correctness-rules-rule-set-for-managed-code.md
+                - name: 適用於 Managed 程式碼的基本設計方針規則規則集
+                  href: basic-design-guideline-rules-rule-set-for-managed-code.md
+                - name: 適用於 Managed 程式碼的擴充正確性規則規則集
+                  href: extended-correctness-rules-rule-set-for-managed-code.md
+                - name: 適用於 Managed 程式碼的擴充設計方針規則規則集
+                  href: extended-design-guidelines-rules-rule-set-for-managed-code.md
+                - name: 適用於 Managed 程式碼的全球化規則規則集
+                  href: globalization-rules-rule-set-for-managed-code.md
+                - name: 適用於 Managed 程式碼的 Managed 最小規則規則集
+                  href: managed-minimun-rules-rule-set-for-managed-code.md
+                - name: 適用於 Managed 程式碼的 Managed 建議規則規則集
+                  href: managed-recommended-rules-rule-set-for-managed-code.md
+                - name: 混合最小規則規則集
+                  href: mixed-minimum-rules-rule-set.md
+                - name: 混合建議規則規則集
+                  href: mixed-recommended-rules-rule-set.md
+                - name: 原生最小規則規則集
+                  href: native-minimum-rules-rule-set.md
+                - name: 原生建議規則規則集
+                  href: native-recommended-rules-rule-set.md
+                - name: 適用於 Managed 程式碼的安全性規則規則集
+                  href: security-rules-rule-set-for-managed-code.md
+        - name: 程式碼分析應用程式錯誤
           items:
-            - name: 所有規則規則集
-              href: all-rules-rule-set.md
-            - name: 適用於 Managed 程式碼的基本正確性規則規則集
-              href: basic-correctness-rules-rule-set-for-managed-code.md
-            - name: 適用於 Managed 程式碼的基本設計方針規則規則集
-              href: basic-design-guideline-rules-rule-set-for-managed-code.md
-            - name: 適用於 Managed 程式碼的擴充正確性規則規則集
-              href: extended-correctness-rules-rule-set-for-managed-code.md
-            - name: 適用於 Managed 程式碼的擴充設計方針規則規則集
-              href: extended-design-guidelines-rules-rule-set-for-managed-code.md
-            - name: 適用於 Managed 程式碼的全球化規則規則集
-              href: globalization-rules-rule-set-for-managed-code.md
-            - name: 適用於 Managed 程式碼的 Managed 最小規則規則集
-              href: managed-minimun-rules-rule-set-for-managed-code.md
-            - name: 適用於 Managed 程式碼的 Managed 建議規則規則集
-              href: managed-recommended-rules-rule-set-for-managed-code.md
-            - name: 混合最小規則規則集
-              href: mixed-minimum-rules-rule-set.md
-            - name: 混合建議規則規則集
-              href: mixed-recommended-rules-rule-set.md
-            - name: 原生最小規則規則集
-              href: native-minimum-rules-rule-set.md
-            - name: 原生建議規則規則集
-              href: native-recommended-rules-rule-set.md
-            - name: 適用於 Managed 程式碼的安全性規則規則集
-              href: security-rules-rule-set-for-managed-code.md
-    - name: 程式碼分析應用程式錯誤
-      href: code-analysis-application-errors.md
-      items:
-        - name: CA0001
-          href: ca0001.md
-        - name: CA0051
-          href: ca0051.md
-        - name: CA0052
-          href: ca0052.md
-        - name: CA0053
-          href: ca0053.md
-        - name: CA0054
-          href: ca0054.md
-        - name: CA0055
-          href: ca0055.md
-        - name: CA0056
-          href: ca0056.md
-        - name: CA0057
-          href: ca0057.md
-        - name: CA0058
-          href: ca0058.md
-        - name: CA0059
-          href: ca0059.md
-        - name: CA0060
-          href: ca0060.md
-        - name: CA0061
-          href: ca0061.md
-        - name: CA0062
-          href: ca0062.md
-        - name: CA0063
-          href: ca0063.md
-        - name: CA0064
-          href: ca0064.md
-        - name: CA0065
-          href: ca0065.md
-        - name: CA0066
-          href: ca0066.md
-        - name: CA0067
-          href: ca0067.md
-        - name: CA0068
-          href: ca0068.md
-        - name: CA0069
-          href: ca0069.md
-        - name: CA0070
-          href: ca0070.md
-        - name: CA0501
-          href: ca0501.md
-        - name: CA0502
-          href: ca0502.md
-        - name: CA0503
-          href: ca0503.md
-        - name: CA0504
-          href: ca0504.md
-        - name: CA0505
-          href: ca0505.md
-        - name: FxCopCmd 錯誤
-          href: fxcopcmd-errors.md
-    - name: 使用 Team 專案簽入原則強化程式碼品質
-      href: enhancing-code-quality-with-team-project-check-in-policies.md
-      items:
-        - name: 建立和使用程式碼分析簽入原則
-          href: creating-and-using-code-analysis-check-in-policies.md
+            - name: 程式碼分析應用程式錯誤
+              href: code-analysis-application-errors.md
+            - name: CA0001
+              href: ca0001.md
+            - name: CA0051
+              href: ca0051.md
+            - name: CA0052
+              href: ca0052.md
+            - name: CA0053
+              href: ca0053.md
+            - name: CA0054
+              href: ca0054.md
+            - name: CA0055
+              href: ca0055.md
+            - name: CA0056
+              href: ca0056.md
+            - name: CA0057
+              href: ca0057.md
+            - name: CA0058
+              href: ca0058.md
+            - name: CA0059
+              href: ca0059.md
+            - name: CA0060
+              href: ca0060.md
+            - name: CA0061
+              href: ca0061.md
+            - name: CA0062
+              href: ca0062.md
+            - name: CA0063
+              href: ca0063.md
+            - name: CA0064
+              href: ca0064.md
+            - name: CA0065
+              href: ca0065.md
+            - name: CA0066
+              href: ca0066.md
+            - name: CA0067
+              href: ca0067.md
+            - name: CA0068
+              href: ca0068.md
+            - name: CA0069
+              href: ca0069.md
+            - name: CA0070
+              href: ca0070.md
+            - name: CA0501
+              href: ca0501.md
+            - name: CA0502
+              href: ca0502.md
+            - name: CA0503
+              href: ca0503.md
+            - name: CA0504
+              href: ca0504.md
+            - name: CA0505
+              href: ca0505.md
+            - name: FxCopCmd 錯誤
+              href: fxcopcmd-errors.md
+        - name: 使用 Team 專案簽入原則強化程式碼品質
           items:
-            - name: HOW TO：建立或更新標準程式碼分析簽入原則
-              href: how-to-create-or-update-standard-code-analysis-check-in-policies.md
-            - name: 為 Managed 程式碼實作自訂簽入原則
-              href: implementing-custom-code-analysis-check-in-policies-for-managed-code.md
-            - name: HOW TO：以程式碼分析簽入原則來強制程式碼的可維護性
-              href: how-to-enforce-maintainable-code-with-a-code-analysis-check-in-policy.md
-            - name: 程式碼分析簽入原則的版本相容性
-              href: version-compatibility-for-code-analysis-check-in-policies.md
+            - name: 使用 Team 專案簽入原則強化程式碼品質
+              href: enhancing-code-quality-with-team-project-check-in-policies.md
+            - name: 建立和使用程式碼分析簽入原則
+              items:
+                - name: 建立和使用程式碼分析簽入原則
+                  href: creating-and-using-code-analysis-check-in-policies.md
+                - name: 作法：建立或更新標準程式碼分析簽入原則
+                  href: how-to-create-or-update-standard-code-analysis-check-in-policies.md
+                - name: 為 Managed 程式碼實作自訂簽入原則
+                  href: implementing-custom-code-analysis-check-in-policies-for-managed-code.md
+                - name: 作法：以程式碼分析簽入原則來強制程式碼的可維護性
+                  href: how-to-enforce-maintainable-code-with-a-code-analysis-check-in-policy.md
+                - name: 程式碼分析簽入原則的版本相容性
+                  href: version-compatibility-for-code-analysis-check-in-policies.md
 - name: 測量 Managed 程式碼的複雜度和維護性
-  href: measuring-complexity-and-maintainability-of-managed-code.md
   items:
+    - name: 測量 Managed 程式碼的複雜度和維護性
+      href: measuring-complexity-and-maintainability-of-managed-code.md
     - name: 程式碼度量值
       href: code-metrics-values.md
-    - name: HOW TO：產生程式碼度量資料
+    - name: 作法：產生程式碼度量資料
       href: how-to-generate-code-metrics-data.md
     - name: 使用程式碼度量資料
       href: working-with-code-metrics-data.md
 - name: 品質工具疑難排解
-  href: troubleshooting-quality-tools.md
   items:
+    - name: 品質工具疑難排解
+      href: troubleshooting-quality-tools.md
     - name: 程式碼分析問題疑難排解
       href: troubleshooting-code-analysis-issues.md
     - name: 程式碼度量問題疑難排解

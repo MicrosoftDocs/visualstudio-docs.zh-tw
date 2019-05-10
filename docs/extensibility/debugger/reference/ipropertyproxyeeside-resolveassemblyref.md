@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3294c19455b5ddf36ebecff52dab4908be84afab
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 87b72f7bf9d91f7e59bd5550149ed7cf09f8827d
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62865793"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65458106"
 ---
 # <a name="ipropertyproxyeesideresolveassemblyref"></a>IPropertyProxyEESide::ResolveAssemblyRef
 判斷指定的 managed 組件參考的位置。
@@ -44,24 +47,24 @@ int ResolveAssemblyRef(
 );
 ```
 
-#### <a name="parameters"></a>參數
- `assemName`
+## <a name="parameters"></a>參數
+ `assemName`\
 
  [in]要解析的組件的名稱。
 
- `assemBytes`
+ `assemBytes`\
 
  [out]傳回[IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md)物件，其中包含與參考相關聯的組件位元組。
 
- `assemPdb`
+ `assemPdb`\
 
  [out]傳回`IEEDataStorage`物件，包含符號儲存與這個參考相關聯的資料。
 
- `assemLocation`
+ `assemLocation`\
 
  [out]傳回此參考的路徑位置。
 
- `alr`
+ `alr`\
 
  [out]傳回值，以從[ASSEMBLYLOCRESOLUTION](../../../extensibility/debugger/reference/assemblylocresolution.md)列舉，指出此參考的組件的位置。
 

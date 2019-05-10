@@ -6,8 +6,9 @@
 - name: Visual Studio Tools for Apache Cordova
   href: /visualstudio/cross-platform/tools-for-cordova/
 - name: Visual Studio Tools for Unity
-  href: visual-studio-tools-for-unity.md
   items:
+    - name: Visual Studio Tools for Unity
+      href: visual-studio-tools-for-unity.md
     - name: Visual Studio Tools for Unity 使用者入門
       href: getting-started-with-visual-studio-tools-for-unity.md
     - name: 使用 Visual Studio Tools for Unity
@@ -15,8 +16,9 @@
     - name: 在 Unity 中使用 .NET 4.x
       href: unity-scripting-upgrade.md
     - name: 使用 Visual Studio Tools for Unity 設計程式
-      href: programming-visual-studio-tools-for-unity.md
       items:
+        - name: 使用 Visual Studio Tools for Unity 設計程式
+          href: programming-visual-studio-tools-for-unity.md
         - name: 自訂 VSTU 所建立的專案檔
           href: customize-project-files-created-by-vstu.md
         - name: 與 VSTU 共用 Unity 記錄回呼
@@ -32,11 +34,13 @@
     - name: 使用 Unity 應用程式進行 DevOps
       href: application-lifecycle-management-alm-with-unity-apps.md
 - name: 適用於跨平台行動裝置開發的 Visual C++
-  href: visual-cpp-for-cross-platform-mobile-development.md
   items:
+    - name: 適用於跨平台行動裝置開發的 Visual C++
+      href: visual-cpp-for-cross-platform-mobile-development.md
     - name: 安裝 Visual C++ for Cross-Platform Mobile Development
-      href: install-visual-cpp-for-cross-platform-mobile-development.md
       items:
+        - name: 安裝 Visual C++ for Cross-Platform Mobile Development
+          href: install-visual-cpp-for-cross-platform-mobile-development.md
         - name: Install and Configure Tools to Build using iOS
           href: install-and-configure-tools-to-build-using-ios.md
     - name: 建立 Android Native Activity 應用程式
@@ -50,8 +54,9 @@
     - name: 跨平台行動開發範例
       href: cross-platform-mobile-development-examples.md
     - name: C++ 跨平台專案屬性
-      href: cross-platform-prop-pages.md
       items:
+        - name: C++ 跨平台專案屬性
+          href: cross-platform-prop-pages.md
         - name: 一般專案屬性 (Android C++)
           href: general-android-prop-page.md
         - name: Android 偵錯工具屬性
@@ -67,8 +72,9 @@
 - name: 開發適用於通用 Windows 平台 (UWP) 的應用程式
   href: develop-apps-for-the-universal-windows-platform-uwp.md
 - name: Visual Studio Emulator for Android
-  href: visual-studio-emulator-for-android.md
   items:
+    - name: Visual Studio Emulator for Android
+      href: visual-studio-emulator-for-android.md
     - name: System requirements for the Visual Studio Emulator for Android
       href: system-requirements-for-the-visual-studio-emulator-for-android.md
     - name: 針對 Visual Studio 的 Android 模擬器進行疑難排解

@@ -9,8 +9,9 @@
     - name: 資料科學與分析應用程式工作負載
       href: data-science-and-analytical-applications-workload.md
 - name: 安裝
-  href: installing-python-support-in-visual-studio.md
   items:
+    - name: 安裝
+      href: installing-python-support-in-visual-studio.md
     - name: 安裝 Python 解譯器
       href: installing-python-interpreters.md
 - name: 快速入門
@@ -75,8 +76,9 @@
 - name: 概念
   items:
     - name: Python 專案
-      href: managing-python-projects-in-visual-studio.md
       items:
+        - name: Python 專案
+          href: managing-python-projects-in-visual-studio.md
         - name: Web 專案範本
           href: python-web-application-project-templates.md
         - name: Django Web 專案範本
@@ -88,8 +90,9 @@
 - name: 作法指南
   items:
     - name: 管理 Python 環境
-      href: managing-python-environments-in-visual-studio.md
       items:
+        - name: 管理 Python 環境
+          href: managing-python-environments-in-visual-studio.md
         - name: 選取專案的解譯器
           href: selecting-a-python-environment-for-a-project.md
         - name: 為相依性使用 requirements.txt
@@ -101,8 +104,9 @@
         - name: 為 Web 應用程式設定 IIS
           href: configure-web-apps-for-iis-windows.md
     - name: 編輯 Python 程式碼
-      href: editing-python-code-in-visual-studio.md
       items:
+        - name: 編輯 Python 程式碼
+          href: editing-python-code-in-visual-studio.md
         - name: 格式化程式碼
           href: formatting-python-code.md
         - name: 重構程式碼
@@ -112,13 +116,15 @@
     - name: 定義自訂功能表命令
       href: defining-custom-python-project-commands.md
     - name: 互動式 Python (REPL)
-      href: python-interactive-repl-in-visual-studio.md
       items:
+        - name: 互動式 Python (REPL)
+          href: python-interactive-repl-in-visual-studio.md
         - name: 使用 IPython REPL
           href: interactive-repl-ipython.md
     - name: 偵錯
-      href: debugging-python-in-visual-studio.md
       items:
+        - name: 偵錯
+          href: debugging-python-in-visual-studio.md
         - name: 在遠端 Linux 電腦上偵錯程式碼
           href: debugging-python-code-on-remote-linux-machines.md
     - name: 發佈至 Linux 上的 Azure App Service

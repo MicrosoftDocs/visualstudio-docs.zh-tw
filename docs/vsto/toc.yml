@@ -1,12 +1,15 @@
 - name: Visual Studio 中的 Office 和 SharePoint 程式開發
-  href: office-and-sharepoint-development-in-visual-studio.md
   items:
+    - name: Visual Studio 中的 Office 和 SharePoint 程式開發
+      href: office-and-sharepoint-development-in-visual-studio.md
     - name: 建立適用於 Office 的 VSTO 增益集
-      href: create-vsto-add-ins-for-office-by-using-visual-studio.md
       items:
+        - name: 建立適用於 Office 的 VSTO 增益集
+          href: create-vsto-add-ins-for-office-by-using-visual-studio.md
         - name: 快速入門
-          href: getting-started-office-development-in-visual-studio.md
           items:
+            - name: 快速入門
+              href: getting-started-office-development-in-visual-studio.md
             - name: Office 方案開發概觀
               href: office-solutions-development-overview-vsto.md
             - name: 變更以 .NET Framework 4 或 .NET Framework 4.5 為目標的 Office 專案設計
@@ -14,8 +17,9 @@
             - name: 依 Office 應用程式和專案類型提供的功能
               href: features-available-by-office-application-and-project-type.md
             - name: 設定電腦以開發 Office 方案
-              href: configuring-a-computer-to-develop-office-solutions.md
               items:
+                - name: 設定電腦以開發 Office 方案
+                  href: configuring-a-computer-to-develop-office-solutions.md
                 - name: 設定電腦以開發 Office 方案
                   href: how-to-configure-a-computer-to-develop-office-solutions.md
                 - name: 安裝 Visual Studio Tools for Office Runtime 可轉散發套件
@@ -35,11 +39,13 @@
             - name: 用於開發 Office 方案的其他資源
               href: additional-resources-for-developing-office-solutions.md
         - name: 升級和移轉 Office 方案
-          href: upgrading-and-migrating-office-solutions.md
           items:
+            - name: 升級和移轉 Office 方案
+              href: upgrading-and-migrating-office-solutions.md
             - name: 將 Office 方案移轉至 .NET Framework 4 或更新版本
-              href: migrating-office-solutions-to-the-dotnet-framework-4-or-later.md
               items:
+                - name: 將 Office 方案移轉至 .NET Framework 4 或更新版本
+                  href: migrating-office-solutions-to-the-dotnet-framework-4-or-later.md
                 - name: 執行 Office 專案的必要變更
                   href: required-changes-to-run-office-projects-that-you-migrate-to-the-dotnet-framework-4-or-the-dotnet-framework-4-5.md
                 - name: 更新 Excel 和 Word 專案
@@ -49,15 +55,17 @@
                 - name: 更新 Outlook 專案中的表單區域
                   href: updating-form-regions-in-outlook-projects-that-you-migrate-to-the-dotnet-framework-4-or-the-dotnet-framework-4-5.md
         - name: Office 方案在 Visual Studio 中的架構
-          href: architecture-of-office-solutions-in-visual-studio.md
           items:
+            - name: Office 方案在 Visual Studio 中的架構
+              href: architecture-of-office-solutions-in-visual-studio.md
             - name: 文件層級自訂的架構
               href: architecture-of-document-level-customizations.md
             - name: VSTO 增益集的架構
               href: architecture-of-vsto-add-ins.md
             - name: Visual Studio Tools for Office Runtime 概觀
-              href: visual-studio-tools-for-office-runtime-overview.md
               items:
+                - name: Visual Studio Tools for Office Runtime 概觀
+                  href: visual-studio-tools-for-office-runtime-overview.md
                 - name: Visual Studio Tools for Office Runtime Installation Scenarios
                   href: visual-studio-tools-for-office-runtime-installation-scenarios.md
                 - name: Visual Studio Tools for Office Runtime 的組件
@@ -67,8 +75,9 @@
             - name: Custom Document Properties Overview
               href: custom-document-properties-overview.md
         - name: Designing and Creating Office Solutions
-          href: designing-and-creating-office-solutions.md
           items:
+            - name: Designing and Creating Office Solutions
+              href: designing-and-creating-office-solutions.md
             - name: Office 專案範本概觀
               href: office-project-templates-overview.md
             - name: 在 Visual Studio 中建立 Office 專案
@@ -86,8 +95,9 @@
             - name: 設定 Office 方案的組態資訊
               href: how-to-set-up-configuration-information-for-an-office-solution.md
             - name: 在 Visual Studio 中使用 Office 功能
-              href: using-office-functionality-inside-of-visual-studio.md
               items:
+                - name: 在 Visual Studio 中使用 Office 功能
+                  href: using-office-functionality-inside-of-visual-studio.md
                 - name: 文件層級方案的文件保護
                   href: document-protection-in-document-level-solutions.md
                 - name: 資訊版權管理和 Managed 程式碼擴充概觀
@@ -99,11 +109,13 @@
                 - name: 以不執行程式碼的方式開啟 Office 方案
                   href: how-to-open-office-solutions-without-running-code.md
         - name: 開發 Office 方案
-          href: developing-office-solutions.md
           items:
+            - name: 開發 Office 方案
+              href: developing-office-solutions.md
             - name: 撰寫 Office 方案中的程式碼
-              href: writing-code-in-office-solutions.md
               items:
+                - name: 撰寫 Office 方案中的程式碼
+                  href: writing-code-in-office-solutions.md
                 - name: Office 方案中的選擇性參數
                   href: optional-parameters-in-office-solutions.md
                 - name: Office 方案中的晚期繫結
@@ -117,8 +129,9 @@
                 - name: Office 方案的共同開發
                   href: collaborative-development-of-office-solutions.md
             - name: VSTO 增益集程式設計
-              href: programming-vsto-add-ins.md
               items:
+                - name: VSTO 增益集程式設計
+                  href: programming-vsto-add-ins.md
                 - name: 提升 VSTO 增益集的效能
                   href: improving-the-performance-of-a-vsto-add-in.md
                 - name: 在 VSTO 增益集的執行階段中擴充 Word 文件和 Excel 活頁簿
@@ -130,11 +143,13 @@
                 - name: 使用擴充性介面自訂 UI 功能
                   href: customizing-ui-features-by-using-extensibility-interfaces.md
             - name: 文件層級自訂程式設計
-              href: programming-document-level-customizations.md
               items:
+                - name: 文件層級自訂程式設計
+                  href: programming-document-level-customizations.md
                 - name: 合併 VBA 和文件層級自訂
-                  href: combining-vba-and-document-level-customizations.md
                   items:
+                    - name: 合併 VBA 和文件層級自訂
+                      href: combining-vba-and-document-level-customizations.md
                     - name: 公開程式碼給 Visual Basic 專案中的 VBA
                       href: how-to-expose-code-to-vba-in-a-visual-basic-project.md
                     - name: '公開程式碼給 Visual C# 專案中的 VBA'
@@ -144,25 +159,29 @@
                     - name: '逐步解說：在 Visual C# 專案中呼叫 VBA 的程式碼'
                       href: walkthrough-calling-code-from-vba-in-a-visual-csharp-project.md
                 - name: Managing Documents on a Server by Using the ServerDocument Class
-                  href: managing-documents-on-a-server-by-using-the-serverdocument-class.md
                   items:
+                    - name: Managing Documents on a Server by Using the ServerDocument Class
+                      href: managing-documents-on-a-server-by-using-the-serverdocument-class.md
                     - name: 從文件移除受控碼延伸模組
                       href: how-to-remove-managed-code-extensions-from-documents.md
                     - name: 將受控碼延伸模組附加至文件
                       href: how-to-attach-managed-code-extensions-to-documents.md
             - name: Office UI 自訂
-              href: office-ui-customization.md
               items:
+                - name: Office UI 自訂
+                  href: office-ui-customization.md
                 - name: Office 文件上的控制項
-                  href: controls-on-office-documents.md
                   items:
+                    - name: Office 文件上的控制項
+                      href: controls-on-office-documents.md
                     - name: 主項目和主控制項概觀
                       href: host-items-and-host-controls-overview.md
                     - name: 主項目和主控制項的程式設計限制
                       href: programmatic-limitations-of-host-items-and-host-controls.md
                     - name: Office 文件上的 Windows Forms 控制項概觀
-                      href: windows-forms-controls-on-office-documents-overview.md
                       items:
+                        - name: Office 文件上的 Windows Forms 控制項概觀
+                          href: windows-forms-controls-on-office-documents-overview.md
                         - name: Office 文件上的 Windows Form 控制項限制
                           href: limitations-of-windows-forms-controls-on-office-documents.md
                         - name: 將 Windows Forms 控制項新增至 Office 文件
@@ -184,13 +203,15 @@
                         - name: 列印時隱藏工作表的控制項
                           href: how-to-hide-controls-on-worksheets-when-printing.md
                     - name: 在執行階段將控制項加入至 Office 文件
-                      href: adding-controls-to-office-documents-at-run-time.md
                       items:
+                        - name: 在執行階段將控制項加入至 Office 文件
+                          href: adding-controls-to-office-documents-at-run-time.md
                         - name: 在 Office 文件中保存動態控制項
                           href: persisting-dynamic-controls-in-office-documents.md
                 - name: 功能區概觀
-                  href: ribbon-overview.md
                   items:
+                    - name: 功能區概觀
+                      href: ribbon-overview.md
                     - name: 開始自訂功能區
                       href: how-to-get-started-customizing-the-ribbon.md
                     - name: 功能區設計工具
@@ -222,8 +243,9 @@
                     - name: 逐步解說：使用功能區 XML 建立自訂的索引標籤
                       href: walkthrough-creating-a-custom-tab-by-using-ribbon-xml.md
                 - name: 執行窗格概觀
-                  href: actions-pane-overview.md
                   items:
+                    - name: 執行窗格概觀
+                      href: actions-pane-overview.md
                     - name: 將執行窗格新增至 Word 文件或 Excel 活頁簿
                       href: how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md
                     - name: 管理執行窗格的控制項配置
@@ -235,8 +257,9 @@
                     - name: 逐步解說：從執行窗格將文字插入文件
                       href: walkthrough-inserting-text-into-a-document-from-an-actions-pane.md
                 - name: 自訂工作窗格
-                  href: custom-task-panes.md
                   items:
+                    - name: 自訂工作窗格
+                      href: custom-task-panes.md
                     - name: 在應用程式中新增自訂工作窗格
                       href: how-to-add-a-custom-task-pane-to-an-application.md
                     - name: 逐步解說：運用自訂工作窗格將應用程式自動化
@@ -256,11 +279,13 @@
                 - name: 逐步解說：使用 Windows 表單收集資料
                   href: walkthrough-collecting-data-using-a-windows-form.md
             - name: Office 方案的資料
-              href: data-in-office-solutions.md
               items:
+                - name: Office 方案的資料
+                  href: data-in-office-solutions.md
                 - name: 將資料繫結至 Office 方案中的控制項
-                  href: binding-data-to-controls-in-office-solutions.md
                   items:
+                    - name: 將資料繫結至 Office 方案中的控制項
+                      href: binding-data-to-controls-in-office-solutions.md
                     - name: 將資料庫的資料填入工作表
                       href: how-to-populate-worksheets-with-data-from-a-database.md
                     - name: 將資料庫的資料填入文件
@@ -284,18 +309,21 @@
                     - name: 逐步解說：VSTO 增益集專案中的複雜資料繫結
                       href: walkthrough-complex-data-binding-in-vsto-add-in-project.md
                 - name: Custom XML Parts Overview
-                  href: custom-xml-parts-overview.md
                   items:
+                    - name: Custom XML Parts Overview
+                      href: custom-xml-parts-overview.md
                     - name: 將自訂 XML 組件新增至文件層級自訂
                       href: how-to-add-custom-xml-parts-to-document-level-customizations.md
                     - name: 使用 VSTO 增益集將自訂 XML 組件新增至文件
                       href: how-to-add-custom-xml-parts-to-documents-by-using-vsto-add-ins.md
                 - name: 文件層級自訂中的快取資料
-                  href: cached-data-in-document-level-customizations.md
                   items:
+                    - name: 文件層級自訂中的快取資料
+                      href: cached-data-in-document-level-customizations.md
                     - name: 快取資料
-                      href: caching-data.md
                       items:
+                        - name: 快取資料
+                          href: caching-data.md
                         - name: 快取資料供離線使用或於伺服器上使用
                           href: how-to-cache-data-for-use-offline-or-on-a-server.md
                         - name: 以程式設計方式快取 Office 文件的資料來源
@@ -305,8 +333,9 @@
                         - name: 逐步解說：使用快取資料集來建立主從式關聯
                           href: walkthrough-creating-a-master-detail-relation-using-a-cached-dataset.md
                     - name: 存取伺服器文件中的資料
-                      href: accessing-data-in-documents-on-the-server.md
                       items:
+                        - name: 存取伺服器文件中的資料
+                          href: accessing-data-in-documents-on-the-server.md
                         - name: 逐步解說：在伺服器的活頁簿中插入資料
                           href: walkthrough-inserting-data-into-a-workbook-on-a-server.md
                         - name: 逐步解說：擷取伺服器上的活頁簿快取資料
@@ -314,8 +343,9 @@
                         - name: 逐步解說：變更伺服器上的活頁簿快取資料
                           href: walkthrough-changing-cached-data-in-a-workbook-on-a-server.md
                 - name: 文件層級自訂中的 XML 結構描述和資料
-                  href: xml-schemas-and-data-in-document-level-customizations.md
                   items:
+                    - name: 文件層級自訂中的 XML 結構描述和資料
+                      href: xml-schemas-and-data-in-document-level-customizations.md
                     - name: 在 Visual Studio 內將結構描述對應至 Word 文件
                       href: how-to-map-schemas-to-word-documents-inside-visual-studio.md
                     - name: 在 Visual Studio 內將結構描述對應至工作表
@@ -325,8 +355,9 @@
             - name: 自動儲存如何影響 Office 方案
               href: how-autosave-impacts-office-solutions.md
             - name: Office 方案疑難排解
-              href: troubleshooting-office-solutions.md
               items:
+                - name: Office 方案疑難排解
+                  href: troubleshooting-office-solutions.md
                 - name: Office 方案的錯誤疑難排解
                   href: troubleshooting-errors-in-office-solutions.md
                 - name: 重新啟用已停用的 VSTO 增益集
@@ -346,14 +377,17 @@
             - name: Office 專案中的協助工具
               href: accessibility-in-office-projects.md
         - name: Excel 方案
-          href: excel-solutions.md
           items:
+            - name: Excel 方案
+              href: excel-solutions.md
             - name: Deploying Office Solutions
-              href: excel-object-model-overview.md
               items:
+                - name: Deploying Office Solutions
+                  href: excel-object-model-overview.md
                 - name: 使用活頁簿
-                  href: working-with-workbooks.md
                   items:
+                    - name: 使用活頁簿
+                      href: working-with-workbooks.md
                     - name: 以程式設計方式建立新活頁簿
                       href: how-to-programmatically-create-new-workbooks.md
                     - name: 以程式設計方式開啟活頁簿
@@ -369,8 +403,9 @@
                     - name: 以程式設計方式將文字檔開啟為活頁簿
                       href: how-to-programmatically-open-text-files-as-workbooks.md
                 - name: 使用工作表
-                  href: working-with-worksheets.md
                   items:
+                    - name: 使用工作表
+                      href: working-with-worksheets.md
                     - name: 以程式設計方式在活頁簿中新增工作表
                       href: how-to-programmatically-add-new-worksheets-to-workbooks.md
                     - name: 以程式設計方式複製工作表
@@ -406,8 +441,9 @@
                     - name: 以程式設計方式在工作表中排序資料
                       href: how-to-programmatically-sort-data-in-worksheets.md
                 - name: 使用範圍
-                  href: working-with-ranges.md
                   items:
+                    - name: 使用範圍
+                      href: working-with-ranges.md
                     - name: 以程式設計方式在程式碼中參考工作表範圍
                       href: how-to-programmatically-refer-to-worksheet-ranges-in-code.md
                     - name: 以程式設計方式用遞增變化的資料自動填滿範圍
@@ -425,8 +461,9 @@
                     - name: 以程式設計方式在工作表儲存格中顯示字串
                       href: how-to-programmatically-display-a-string-in-a-worksheet-cell.md
             - name: 使用擴充物件自動化 Excel
-              href: automating-excel-by-using-extended-objects.md
               items:
+                - name: 使用擴充物件自動化 Excel
+                  href: automating-excel-by-using-extended-objects.md
                 - name: Workbook 主項目
                   href: workbook-host-item.md
                 - name: Worksheet 主項目
@@ -474,14 +511,17 @@
         - name: InfoPath 方案
           href: infopath-solutions.md
         - name: Outlook 方案
-          href: outlook-solutions.md
           items:
+            - name: Outlook 方案
+              href: outlook-solutions.md
             - name: Outlook 物件模型概觀
-              href: outlook-object-model-overview.md
               items:
+                - name: Outlook 物件模型概觀
+                  href: outlook-object-model-overview.md
                 - name: 使用連絡人項目
-                  href: working-with-contact-items.md
                   items:
+                    - name: 使用連絡人項目
+                      href: working-with-contact-items.md
                     - name: 以程式設計方式存取 Outlook 連絡人
                       href: how-to-programmatically-access-outlook-contacts.md
                     - name: 以程式設計方式搜尋特定的連絡人
@@ -493,8 +533,9 @@
                     - name: 以程式設計方式刪除 Outlook 連絡人
                       href: how-to-programmatically-delete-outlook-contacts.md
                 - name: 使用郵件項目
-                  href: working-with-mail-items.md
                   items:
+                    - name: 使用郵件項目
+                      href: working-with-mail-items.md
                     - name: 以程式設計方式建立電子郵件項目
                       href: how-to-programmatically-create-an-e-mail-item.md
                     - name: 以程式設計方式傳送電子郵件
@@ -508,8 +549,9 @@
                     - name: 以程式設計方式從收件匣中擷取未讀取的訊息
                       href: how-to-programmatically-retrieve-unread-messages-from-the-inbox.md
                 - name: 使用資料夾
-                  href: working-with-folders.md
                   items:
+                    - name: 使用資料夾
+                      href: working-with-folders.md
                     - name: 以程式設計方式在特定資料夾中搜尋
                       href: how-to-programmatically-search-within-a-specific-folder.md
                     - name: 以程式設計方式依名稱擷取資料夾
@@ -521,8 +563,9 @@
                     - name: 以程式設計方式在 Outlook 中移動項目
                       href: how-to-programmatically-move-items-in-outlook.md
                 - name: 使用行事曆項目
-                  href: working-with-calendar-items.md
                   items:
+                    - name: 使用行事曆項目
+                      href: working-with-calendar-items.md
                     - name: 以程式設計方式建立約會
                       href: how-to-programmatically-create-appointments.md
                     - name: 以程式設計方式刪除約會
@@ -534,8 +577,9 @@
                 - name: 以程式設計方式判斷目前的 Outlook 項目
                   href: how-to-programmatically-determine-the-current-outlook-item.md
             - name: Creating Outlook Form Regions
-              href: creating-outlook-form-regions.md
               items:
+                - name: Creating Outlook Form Regions
+                  href: creating-outlook-form-regions.md
                 - name: 建立 Outlook 表單區域的方針
                   href: guidelines-for-creating-outlook-form-regions.md
                 - name: 在 Outlook 增益集專案中新增表單區域
@@ -555,23 +599,27 @@
             - name: 逐步解說：建立 Outlook 的第一個 VSTO 增益集
               href: walkthrough-creating-your-first-vsto-add-in-for-outlook.md
         - name: PowerPoint 方案
-          href: powerpoint-solutions.md
           items:
+            - name: PowerPoint 方案
+              href: powerpoint-solutions.md
             - name: 逐步解說：建立 PowerPoint 的第一個 VSTO 增益集
               href: walkthrough-creating-your-first-vsto-add-in-for-powerpoint.md
         - name: 專案方案
-          href: project-solutions.md
           items:
+            - name: 專案方案
+              href: project-solutions.md
             - name: 逐步解說：建立專案的第一個 VSTO 增益集
               href: walkthrough-creating-your-first-vsto-add-in-for-project.md
         - name: Visio 方案
-          href: visio-solutions.md
           items:
+            - name: Visio 方案
+              href: visio-solutions.md
             - name: Visio 物件模型概觀
               href: visio-object-model-overview.md
             - name: 使用 Visio 文件
-              href: working-with-visio-documents.md
               items:
+                - name: 使用 Visio 文件
+                  href: working-with-visio-documents.md
                 - name: 以程式設計方式建立新的 Visio 文件
                   href: how-to-programmatically-create-new-visio-documents.md
                 - name: 以程式設計方式開啟 Visio 文件
@@ -583,21 +631,25 @@
                 - name: 以程式設計方式列印 Visio 文件
                   href: how-to-programmatically-print-visio-documents.md
             - name: 使用 Visio 圖案
-              href: working-with-visio-shapes.md
               items:
+                - name: 使用 Visio 圖案
+                  href: working-with-visio-shapes.md
                 - name: 以程式設計方式將圖形新增至 Visio 文件
                   href: how-to-programmatically-add-shapes-to-a-visio-document.md
                 - name: 以程式設計方式在 Visio 文件中複製並貼上圖形
                   href: how-to-programmatically-copy-and-paste-shapes-in-a-visio-document.md
         - name: Word 方案
-          href: word-solutions.md
           items:
+            - name: Word 方案
+              href: word-solutions.md
             - name: Word 物件模型概觀
-              href: word-object-model-overview.md
               items:
+                - name: Word 物件模型概觀
+                  href: word-object-model-overview.md
                 - name: 使用文件
-                  href: working-with-documents.md
                   items:
+                    - name: 使用文件
+                      href: working-with-documents.md
                     - name: 以程式設計方式建立新文件
                       href: how-to-programmatically-create-new-documents.md
                     - name: 以程式設計方式開啟現有文件
@@ -625,8 +677,9 @@
                     - name: 以程式設計方式從文件中移除所有的註解
                       href: how-to-programmatically-remove-all-comments-from-documents.md
                 - name: 處理文件中的文字
-                  href: working-with-text-in-documents.md
                   items:
+                    - name: 處理文件中的文字
+                      href: working-with-text-in-documents.md
                     - name: 以程式設計方式在文件中定義及選取範圍
                       href: how-to-programmatically-define-and-select-ranges-in-documents.md
                     - name: 以程式設計方式擷取範圍中的開頭和結尾字元
@@ -660,8 +713,9 @@
                     - name: 以程式設計方式為文件中的文字新增註解
                       href: how-to-programmatically-add-comments-to-text-in-documents.md
                 - name: 處理資料表
-                  href: working-with-tables.md
                   items:
+                    - name: 處理資料表
+                      href: working-with-tables.md
                     - name: 以程式設計方式建立 Word 表格
                       href: how-to-programmatically-create-word-tables.md
                     - name: 以程式設計方式將文件屬性填入 Word 表格
@@ -671,8 +725,9 @@
                     - name: 以程式設計方式在 Word 表格的儲存格中新增文字和格式
                       href: how-to-programmatically-add-text-and-formatting-to-cells-in-word-tables.md
             - name: 使用擴充物件自動化 Word
-              href: automating-word-by-using-extended-objects.md
               items:
+                - name: 使用擴充物件自動化 Word
+                  href: automating-word-by-using-extended-objects.md
                 - name: Document 主項目
                   href: document-host-item.md
                 - name: 內容控制項
@@ -712,8 +767,9 @@
         - name: 偵錯 Office 專案
           href: debugging-office-projects.md
         - name: 保護 Office 方案
-          href: securing-office-solutions.md
           items:
+            - name: 保護 Office 方案
+              href: securing-office-solutions.md
             - name: 授與信任給 Office 方案
               href: granting-trust-to-office-solutions.md
             - name: Granting Trust to Documents
@@ -731,20 +787,23 @@
             - name: Office 方案安全性疑難排解
               href: troubleshooting-office-solution-security.md
         - name: 部署 Office 方案
-          href: deploying-an-office-solution.md
           items:
+            - name: 部署 Office 方案
+              href: deploying-an-office-solution.md
             - name: 使用 ClickOnce 部署 Office 方案
               href: deploying-an-office-solution-by-using-clickonce.md
             - name: 使用 Windows Installer 部署 Office 方案
               href: deploying-an-office-solution-by-using-windows-installer.md
             - name: Office 方案部署疑難排解
-              href: troubleshooting-office-solution-deployment.md
               items:
+                - name: Office 方案部署疑難排解
+                  href: troubleshooting-office-solution-deployment.md
                 - name: Office 方案的事件記錄
                   href: event-logging-for-office-solutions.md
         - name: 範例與逐步解說
-          href: office-development-samples-and-walkthroughs.md
           items:
+            - name: 範例與逐步解說
+              href: office-development-samples-and-walkthroughs.md
             - name: Office 程式開發範例
               href: office-development-samples.md
             - name: 使用 Word 的逐步解說
@@ -758,13 +817,15 @@
             - name: 安全性和部署的逐步解說
               href: security-and-deployment-walkthroughs.md
         - name: 一般參考 (Visual Studio 中的 Office 程式開發)
-          href: general-reference-office-development-in-visual-studio.md
           items:
+            - name: 一般參考 (Visual Studio 中的 Office 程式開發)
+              href: general-reference-office-development-in-visual-studio.md
             - name: Office 主要 Interop 組件
               href: office-primary-interop-assemblies.md
             - name: Office 方案的應用程式資訊清單
-              href: application-manifests-for-office-solutions.md
               items:
+                - name: Office 方案的應用程式資訊清單
+                  href: application-manifests-for-office-solutions.md
                 - name: <customHostSpecified> 項目
                   href: customhostspecified-element-office-development-in-visual-studio.md
                 - name: <addin> 項目
@@ -806,8 +867,9 @@
             - name: Office 方案的部署資訊清單
               href: deployment-manifests-for-office-solutions.md
             - name: 使用者介面參考 (Visual Studio 中的 Office 程式開發)
-              href: user-interface-reference-office-development-in-visual-studio.md
               items:
+                - name: 使用者介面參考 (Visual Studio 中的 Office 程式開發)
+                  href: user-interface-reference-office-development-in-visual-studio.md
                 - name: 選項對話方塊、Microsoft Office 鍵盤設定、Microsoft Office Word 鍵盤
                   href: microsoft-office-word-keyboard-microsoft-office-keyboard-settings-options-dialog-box.md
                 - name: 選項對話方塊、Microsoft Office 鍵盤設定、Microsoft Office Excel 鍵盤
@@ -819,8 +881,9 @@
                 - name: 發行精靈 (Visual Studio 中的 Office 程式開發)
                   href: publish-wizard-office-development-in-visual-studio.md
             - name: 錯誤訊息 (Visual Studio 中的 Office 程式開發)
-              href: error-messages-office-development-in-visual-studio.md
               items:
+                - name: 錯誤訊息 (Visual Studio 中的 Office 程式開發)
+                  href: error-messages-office-development-in-visual-studio.md
                 - name: 這部電腦未安裝 Microsoft Office
                   href: microsoft-office-is-not-installed-on-this-computer.md
                 - name: 用來建立此專案的活頁簿包含設計工具無法載入的 ActiveX 控制項
@@ -832,8 +895,9 @@
         - name: Managed 參考 (Visual Studio 中的 Office 程式開發)
           href: managed-reference-office-development-in-visual-studio.md
         - name: Unmanaged API 參考 (Visual Studio 中的 Office 程式開發)
-          href: unmanaged-api-reference-office-development-in-visual-studio.md
           items:
+            - name: Unmanaged API 參考 (Visual Studio 中的 Office 程式開發)
+              href: unmanaged-api-reference-office-development-in-visual-studio.md
             - name: EnsureVSTOComponent 函式
               href: ensurevstocomponent-function.md
             - name: GetValidCompatibleFramework 函式
@@ -841,15 +905,17 @@
             - name: GetVstoSolutionMetadata 函式
               href: getvstosolutionmetadata-function.md
             - name: IManagedAddin 介面
-              href: imanagedaddin-interface.md
               items:
+                - name: IManagedAddin 介面
+                  href: imanagedaddin-interface.md
                 - name: 載入方法
                   href: imanagedaddin-load.md
                 - name: 卸載方法
                   href: imanagedaddin-unload.md
             - name: IWefDebuggingSupport 介面
-              href: iwefdebuggingsupport-interface.md
               items:
+                - name: IWefDebuggingSupport 介面
+                  href: iwefdebuggingsupport-interface.md
                 - name: GetAutoInsertExtensions 方法
                   href: getautoinsertextensions-method.md
                 - name: SetWefProcessId 方法

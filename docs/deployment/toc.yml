@@ -63,8 +63,9 @@
 - name: 作法指南
   items:
     - name: ClickOnce 安全性和部署
-      href: clickonce-security-and-deployment.md
       items:
+        - name: ClickOnce 安全性和部署
+          href: clickonce-security-and-deployment.md
         - name: 選擇 ClickOnce 部署策略
           href: choosing-a-clickonce-deployment-strategy.md
         - name: ClickOnce 快取概觀
@@ -74,13 +75,15 @@
         - name: Windows Vista 的 ClickOnce 部署
           href: clickonce-deployment-on-windows-vista.md
         - name: 將 ClickOnce 應用程式當地語系化
-          href: localizing-clickonce-applications.md
           items:
+            - name: 將 ClickOnce 應用程式當地語系化
+              href: localizing-clickonce-applications.md
             - name: 發行具有特定地區設定的專案
               href: how-to-publish-a-project-that-has-a-specific-locale.md
         - name: 保護 ClickOnce 應用程式
-          href: securing-clickonce-applications.md
           items:
+            - name: 保護 ClickOnce 應用程式
+              href: securing-clickonce-applications.md
             - name: ClickOnce 和 Authenticode
               href: clickonce-and-authenticode.md
             - name: 受信任的應用程式部署概觀
@@ -104,8 +107,9 @@
             - name: 使用 SignTool.exe 簽署安裝程式檔案 (ClickOnce)
               href: how-to-sign-setup-files-with-signtool-exe-clickonce.md
         - name: 發行 ClickOnce 應用程式
-          href: publishing-clickonce-applications.md
           items:
+            - name: 發行 ClickOnce 應用程式
+              href: publishing-clickonce-applications.md
             - name: 使用發行精靈發行 ClickOnce 應用程式
               href: how-to-publish-a-clickonce-application-using-the-publish-wizard.md
             - name: 建立 ClickOnce 應用程式供其他人部署
@@ -129,8 +133,9 @@
             - name: 自動累加 ClickOnce 的發行版本
               href: how-to-automatically-increment-the-clickonce-publish-version.md
             - name: 指定哪些檔案是由 ClickOnce 發行
-              href: how-to-specify-which-files-are-published-by-clickonce.md
               items:
+                - name: 指定哪些檔案是由 ClickOnce 發行
+                  href: how-to-specify-which-files-are-published-by-clickonce.md
                 - name: 在 ClickOnce 應用程式中納入資料檔案
                   href: how-to-include-a-data-file-in-a-clickonce-application.md
             - name: 與 ClickOnce 應用程式一起安裝必要軟體
@@ -144,13 +149,15 @@
             - name: 指定 ClickOnce 應用程式的開始功能表名稱
               href: how-to-specify-a-start-menu-name-for-a-clickonce-application.md
             - name: 指定技術支援的連結
-              href: how-to-specify-a-link-for-technical-support.md
               items:
+                - name: 指定技術支援的連結
+                  href: how-to-specify-a-link-for-technical-support.md
                 - name: 指定個別必要條件的支援 URL
                   href: how-to-specify-a-support-url-for-individual-prerequisites-in-a-clickonce-deployment.md
             - name: 指定 ClickOnce 應用程式的發行頁面
-              href: how-to-specify-a-publish-page-for-a-clickonce-application.md
               items:
+                - name: 指定 ClickOnce 應用程式的發行頁面
+                  href: how-to-specify-a-publish-page-for-a-clickonce-application.md
                 - name: 自訂 ClickOnce 應用程式的預設網頁
                   href: how-to-customize-the-default-web-page-for-a-clickonce-application.md
             - name: 啟用 CD 安裝的 AutoStart
@@ -160,8 +167,9 @@
             - name: 在線上 ClickOnce 應用程式中擷取查詢字串資訊
               href: how-to-retrieve-query-string-information-in-an-online-clickonce-application.md
             - name: 使用設計工具停用 ClickOnce 應用程式的 URL 啟動
-              href: how-to-disable-url-activation-of-clickonce-applications-by-using-the-designer.md
               items:
+                - name: 使用設計工具停用 ClickOnce 應用程式的 URL 啟動
+                  href: how-to-disable-url-activation-of-clickonce-applications-by-using-the-designer.md
                 - name: 停用 ClickOnce 應用程式的 URL 啟動
                   href: how-to-disable-url-activation-of-clickonce-applications.md
             - name: 部署可在多個 .NET Framework 版本上執行的應用程式
@@ -169,15 +177,17 @@
             - name: 發行已啟用視覺樣式的 WPF 應用程式
               href: how-to-publish-a-wpf-application-with-visual-styles-enabled.md
             - name: 逐步解說：使用設計工具視需要下載組件
-              href: walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer.md
               items:
+                - name: 逐步解說：使用設計工具視需要下載組件
+                  href: walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer.md
                 - name: 逐步解說：視需要下載組件
                   href: walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api.md
             - name: 逐步解說：使用設計工具視需要下載附屬組件
               href: walkthrough-downloading-satellite-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer.md
             - name: 逐步解說：手動部署 ClickOnce 應用程式
-              href: walkthrough-manually-deploying-a-clickonce-application.md
               items:
+                - name: 逐步解說：手動部署 ClickOnce 應用程式
+                  href: walkthrough-manually-deploying-a-clickonce-application.md
                 - name: 逐步解說：手動部署不需要重新簽署的應用程式
                   href: walkthrough-manually-deploying-a-clickonce-app-no-re-signing-required.md
             - name: 逐步解說：視需要下載附屬組件
@@ -185,8 +195,9 @@
             - name: 逐步解說：建立自訂安裝程式
               href: walkthrough-creating-a-custom-installer-for-a-clickonce-application.md
         - name: 選擇 ClickOnce 更新策略
-          href: choosing-a-clickonce-update-strategy.md
           items:
+            - name: 選擇 ClickOnce 更新策略
+              href: choosing-a-clickonce-update-strategy.md
             - name: ClickOnce 執行應用程式更新的方式
               href: how-clickonce-performs-application-updates.md
             - name: 以程式設計方式檢查應用程式更新
@@ -196,8 +207,9 @@
         - name: ClickOnce 部署範例和逐步解說
           href: clickonce-deployment-samples-and-walkthroughs.md
         - name: 針對 ClickOnce 部署進行疑難排解
-          href: troubleshooting-clickonce-deployments.md
           items:
+            - name: 針對 ClickOnce 部署進行疑難排解
+              href: troubleshooting-clickonce-deployments.md
             - name: 設定 ClickOnce 部署錯誤的自訂記錄檔位置
               href: how-to-set-a-custom-log-file-location-for-clickonce-deployment-errors.md
             - name: 指定供 ClickOnce 部署使用的詳細資訊記錄檔
@@ -211,8 +223,9 @@
             - name: 對使用 System.Deployment.Application 的 ClickOnce 應用程式進行偵錯
               href: debugging-clickonce-applications-that-use-system-deployment-application.md
     - name: 應用程式部署必要條件
-      href: application-deployment-prerequisites.md
       items:
+        - name: 應用程式部署必要條件
+          href: application-deployment-prerequisites.md
         - name: 64 位元應用程式的部署必要條件
           href: deploying-prerequisites-for-64-bit-applications.md
         - name: 建立啟動載入器套件
@@ -226,8 +239,9 @@
         - name: 逐步解說：建立具有隱私權提示的自訂啟動載入器
           href: walkthrough-creating-a-custom-bootstrapper-to-show-a-privacy-prompt.md
         - name: 產品和封裝結構描述參考
-          href: product-and-package-schema-reference.md
           items:
+            - name: 產品和封裝結構描述參考
+              href: product-and-package-schema-reference.md
             - name: <Product> 元素 (啟動載入器)
               href: product-element-bootstrapper.md
             - name: <Package> 元素 (啟動載入器)
@@ -247,11 +261,13 @@
 - name: 參考資料
   items:
     - name: ClickOnce 參考
-      href: clickonce-reference.md
       items:
+        - name: ClickOnce 參考
+          href: clickonce-reference.md
         - name: ndptecclick
-          href: clickonce-application-manifest.md
           items:
+            - name: ndptecclick
+              href: clickonce-application-manifest.md
             - name: <assembly> 元素 (ClickOnce 應用程式)
               href: assembly-element-clickonce-application.md
             - name: <assemblyIdentity> 元素 (ClickOnce 應用程式)
@@ -267,8 +283,9 @@
             - name: <fileAssociation> 元素 (ClickOnce 應用程式)
               href: fileassociation-element-clickonce-application.md
         - name: ClickOnce 部署資訊清單
-          href: clickonce-deployment-manifest.md
           items:
+            - name: ClickOnce 部署資訊清單
+              href: clickonce-deployment-manifest.md
             - name: <assembly> 元素 (ClickOnce 部署)
               href: assembly-element-clickonce-deployment.md
             - name: <assemblyIdentity> 元素 (ClickOnce 部署)

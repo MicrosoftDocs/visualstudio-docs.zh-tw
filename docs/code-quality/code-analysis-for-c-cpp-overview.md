@@ -21,12 +21,12 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 07ba2c64be0af987b82c870b89d3451b5d48d28f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5c4221783768f1e579ecad74fdfaf6e74214edfd
+ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62540818"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65226141"
 ---
 # <a name="code-analysis-for-cc-overview"></a>C/C++ 程式碼分析概觀
 
@@ -50,11 +50,11 @@ C:\>cl /analyze Sample.cpp
 
 ## <a name="pragma-support"></a>#pragma 支援
 
-您可以使用`#pragma`指示詞，以將警告視為錯誤; 啟用或停用警告，並隱藏個別的程式碼行警告。 如需詳細資訊，請參閱[如何：設定適用於 C 的程式碼分析屬性 /C++專案](how-to-set-code-analysis-properties-for-c-cpp-projects.md)。
+您可以使用`#pragma`指示詞，以將警告視為錯誤; 啟用或停用警告，並隱藏個別的程式碼行警告。 如需詳細資訊，請參閱 [Pragma 指示詞和 __Pragma 關鍵字](https://docs.microsoft.com/cpp/preprocessor/pragma-directives-and-the-pragma-keyword)。
 
 ## <a name="annotation-support"></a>註釋支援
 
-註釋可改善程式碼分析的正確性。 註釋提供函式參數和傳回型別上前置和後置條件的其他資訊。 如需詳細資訊，請參閱[如何：使用 __analysis_assume 來指定其他程式碼資訊](../code-quality/how-to-specify-additional-code-information-by-using-analysis-assume.md)
+註釋可改善程式碼分析的正確性。 註釋提供函式參數和傳回型別上前置和後置條件的其他資訊。 如需詳細資訊，請參閱 <<c0> [ 使用 SAL 註釋減少 C /C++程式碼缺失</c0>](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md)
 
 ## <a name="run-analysis-tool-as-part-of-check-in-policy"></a>執行分析工具作為簽入原則的一部分
 
