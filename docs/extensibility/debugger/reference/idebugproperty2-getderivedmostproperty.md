@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1227cb697dc78a8833e304d775fb4b1af85a2a69
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: e4c109906ca586d58753c6471f20ed05adc08de4
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62916628"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65457751"
 ---
 # <a name="idebugproperty2getderivedmostproperty"></a>IDebugProperty2::GetDerivedMostProperty
 取得屬性的最具衍生性屬性。
@@ -36,8 +39,8 @@ int GetDerivedMostProperty ( 
 );
 ```
 
-#### <a name="parameters"></a>參數
- `ppDerivedMost`
+## <a name="parameters"></a>參數
+ `ppDerivedMost`\
 
  [out]傳回[IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)物件，表示最具衍生性的屬性。
 

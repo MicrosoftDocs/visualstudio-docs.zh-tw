@@ -1,16 +1,19 @@
 - name: MsBuild
-  href: msbuild.md
   items:
+    - name: MsBuild
+      href: msbuild.md
     - name: MSBuild 16.0 中的新功能
       href: whats-new-msbuild-16-0.md
     - name: MSBuild 15.0 的新功能
       href: what-s-new-in-msbuild-15-0.md
     - name: MSBuild 概念
-      href: msbuild-concepts.md
       items:
+        - name: MSBuild 概念
+          href: msbuild-concepts.md
         - name: MSBuild 屬性
-          href: msbuild-properties.md
           items:
+            - name: MSBuild 屬性
+              href: msbuild-properties.md
             - name: 在組建中使用環境變數
               href: how-to-use-environment-variables-in-a-build.md
             - name: 參考專案檔的名稱或位置
@@ -20,8 +23,9 @@
             - name: 屬性函式
               href: property-functions.md
         - name: MSBuild 項目
-          href: msbuild-items.md
           items:
+            - name: MSBuild 項目
+              href: msbuild-items.md
             - name: 選取要建置的檔案
               href: how-to-select-the-files-to-build.md
             - name: 從組建中排除檔案
@@ -33,8 +37,9 @@
             - name: Item 函式
               href: item-functions.md
         - name: MSBuild 目標
-          href: msbuild-targets.md
           items:
+            - name: MSBuild 目標
+              href: msbuild-targets.md
             - name: 目標建置順序
               href: target-build-order.md
             - name: 累加建置
@@ -52,8 +57,9 @@
             - name: 參考 MSBuild 專案 SDK
               href: how-to-use-project-sdk.md
         - name: MSBuild 工作
-          href: msbuild-tasks.md
           items:
+            - name: MSBuild 工作
+              href: msbuild-tasks.md
             - name: 工作撰寫
               href: task-writing.md
             - name: 忽略工作中的錯誤
@@ -61,8 +67,9 @@
             - name: 建置包含資源的專案
               href: how-to-build-a-project-that-has-resources.md
             - name: MSBuild 內嵌工作
-              href: msbuild-inline-tasks.md
               items:
+                - name: MSBuild 內嵌工作
+                  href: msbuild-inline-tasks.md
                 - name: 逐步解說：建立內嵌工作
                   href: walkthrough-creating-an-inline-task.md
             - name: 具有 RoslynCodeTaskFactory 的 MSBuild 內嵌工作
@@ -70,18 +77,21 @@
         - name: 比較屬性和項目
           href: comparing-properties-and-items.md
         - name: MSBuild 特殊字元
-          href: msbuild-special-characters.md
           items:
+            - name: MSBuild 特殊字元
+              href: msbuild-special-characters.md
             - name: 在 MSBuild 中逸出特殊字元
               href: how-to-escape-special-characters-in-msbuild.md
             - name: 在專案檔中使用保留的 XML 字元
               href: how-to-use-reserved-xml-characters-in-project-files.md
     - name: MSBuild 進階概念
-      href: msbuild-advanced-concepts.md
       items:
+        - name: MSBuild 進階概念
+          href: msbuild-advanced-concepts.md
         - name: MSBuild 批次處理
-          href: msbuild-batching.md
           items:
+            - name: MSBuild 批次處理
+              href: msbuild-batching.md
             - name: 工作批次處理中的項目中繼資料
               href: item-metadata-in-task-batching.md
             - name: 目標批次處理中的項目中繼資料
@@ -89,8 +99,9 @@
         - name: MSBuild 轉換
           href: msbuild-transforms.md
         - name: Visual Studio 整合 (MSBuild)
-          href: visual-studio-integration-msbuild.md
           items:
+            - name: Visual Studio 整合 (MSBuild)
+              href: visual-studio-integration-msbuild.md
             - name: 延伸 Visual Studio 建置流程
               href: how-to-extend-the-visual-studio-build-process.md
             - name: 從 IDE 中啟動組建
@@ -98,18 +109,21 @@
             - name: 註冊 .NET Framework 的擴充功能
               href: registering-extensions-of-the-dotnet-framework.md
         - name: 使用 MSBuild 同時建置多個專案
-          href: building-multiple-projects-in-parallel-with-msbuild.md
           items:
+            - name: 使用 MSBuild 同時建置多個專案
+              href: building-multiple-projects-in-parallel-with-msbuild.md
             - name: 使用多個處理器來建置專案
               href: using-multiple-processors-to-build-projects.md
             - name: 在建置大型專案時有效使用記憶體
               href: using-memory-efficiently-when-you-build-large-projects.md
         - name: MSBuild 多目標概觀
-          href: msbuild-multitargeting-overview.md
           items:
+            - name: MSBuild 多目標概觀
+              href: msbuild-multitargeting-overview.md
             - name: MSBuild Toolset (ToolsVersion)
-              href: msbuild-toolset-toolsversion.md
               items:
+                - name: MSBuild Toolset (ToolsVersion)
+                  href: msbuild-toolset-toolsversion.md
                 - name: 標準和自訂工具組的組態
                   href: standard-and-custom-toolset-configurations.md
                 - name: 覆寫 ToolsVersion 設定
@@ -119,15 +133,17 @@
             - name: 在設計階段時解析組件
               href: resolving-assemblies-at-design-time.md
             - name: 設定目標和工作
-              href: configuring-targets-and-tasks.md
               items:
+                - name: 設定目標和工作
+                  href: configuring-targets-and-tasks.md
                 - name: 設定目標和工作
                   href: how-to-configure-targets-and-tasks.md
             - name: 疑難排解 .NET Framework 目標錯誤
               href: troubleshooting-dotnet-framework-targeting-errors.md
         - name: 檔案追蹤
-          href: file-tracking.md
           items:
+            - name: 檔案追蹤
+              href: file-tracking.md
             - name: EndTrackingContext
               href: endtrackingcontext.md
             - name: ResumeTracking
@@ -151,8 +167,9 @@
         - name: MSBuild 最佳做法
           href: msbuild-best-practices.md
     - name: MSBuild 中的記錄
-      href: logging-in-msbuild.md
       items:
+        - name: MSBuild 中的記錄
+          href: logging-in-msbuild.md
         - name: 使用 MSBuild 取得組建記錄檔
           href: obtaining-build-logs-with-msbuild.md
         - name: 組建記錄器
@@ -168,11 +185,13 @@
     - name: 逐步解說：從頭建立 MSBuild 專案檔案
       href: walkthrough-creating-an-msbuild-project-file-from-scratch.md
     - name: MSBuild 參考
-      href: msbuild-reference.md
       items:
+        - name: MSBuild 參考
+          href: msbuild-reference.md
         - name: MSBuild 專案檔案結構描述參考
-          href: msbuild-project-file-schema-reference.md
           items:
+            - name: MSBuild 專案檔案結構描述參考
+              href: msbuild-project-file-schema-reference.md
             - name: Choose 項目 (MSBuild)
               href: choose-element-msbuild.md
             - name: Import 項目 (MSBuild)
@@ -218,11 +237,13 @@
             - name: When 元素 (MSBuild)
               href: when-element-msbuild.md
         - name: MSBuild 工作參考
-          href: msbuild-task-reference.md
           items:
+            - name: MSBuild 工作參考
+              href: msbuild-task-reference.md
             - name: Visual C++ 特有的 MSBuild 工作
-              href: msbuild-tasks-specific-to-visual-cpp.md
               items:
+                - name: Visual C++ 特有的 MSBuild 工作
+                  href: msbuild-tasks-specific-to-visual-cpp.md
                 - name: BscMake 工作
                   href: bscmake-task.md
                 - name: CL 工作
@@ -418,13 +439,15 @@
         - name: MSBuild 回應檔
           href: msbuild-response-files.md
         - name: WPF MSBuild 參考
-          href: wpf-msbuild-reference.md
           items:
+            - name: WPF MSBuild 參考
+              href: wpf-msbuild-reference.md
             - name: WPF .Targets 檔案
               href: wpf-dot-targets-files.md
             - name: WPF MSBuild 工作參考
-              href: wpf-msbuild-task-reference.md
               items:
+                - name: WPF MSBuild 工作參考
+                  href: wpf-msbuild-task-reference.md
                 - name: FileClassifier 工作
                   href: fileclassifier-task.md
                 - name: GenerateTemporaryTargetAssembly 工作
@@ -446,8 +469,9 @@
         - name: 要逸出的特殊字元
           href: special-characters-to-escape.md
     - name: 以程式設計方式使用 MSBuild
-      href: msbuild-api.md
       items:
+        - name: 以程式設計方式使用 MSBuild
+          href: msbuild-api.md
         - name: 更新至 MSBuild 15
           href: updating-an-existing-application.md
     - name: MSBuild 字彙表

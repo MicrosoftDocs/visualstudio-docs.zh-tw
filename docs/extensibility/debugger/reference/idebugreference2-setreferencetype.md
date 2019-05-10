@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 53404ae46771472bbbaa4de996b332d3d75f0d0c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 1fe88127bbd07a71b7bb8e459f12abb983a1938e
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62868975"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65457306"
 ---
 # <a name="idebugreference2setreferencetype"></a>IDebugReference2::SetReferenceType
 設定參考型別。 保留供未來使用。
@@ -36,8 +39,8 @@ int SetReferenceType ( 
 );
 ```
 
-#### <a name="parameters"></a>參數
- `dwRefType`
+## <a name="parameters"></a>參數
+ `dwRefType`\
 
  [in]值，以從[REFERENCE_TYPE](../../../extensibility/debugger/reference/reference-type.md)列舉，指定參考型別。
 

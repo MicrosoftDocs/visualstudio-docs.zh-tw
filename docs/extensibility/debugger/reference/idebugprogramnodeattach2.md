@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 255d057154b9814cb81325a737324c18de470bc8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a2b883500b0d768641887af8e9ef126094ead534
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62869785"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65458988"
 ---
 # <a name="idebugprogramnodeattach2"></a>IDebugProgramNodeAttach2
 允許程式節點，嘗試附加至相關聯的程式的通知。

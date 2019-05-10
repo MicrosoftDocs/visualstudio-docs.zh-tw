@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b4c19bed895a04e372f930d347a7caa761d34a56
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 5d08e2ec34f153e984ea158eaca4ca282652e67e
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62865360"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65460886"
 ---
 # <a name="pendingbpstateinfo"></a>PENDING_BP_STATE_INFO
 包含已準備好繫結至程式碼位置的中斷點的狀態資訊。
@@ -39,9 +42,11 @@ public struct PENDING_BP_STATE_INFO { 
 ```
 
 ## <a name="members"></a>成員
- 狀態中的值[PENDING_BP_STATE](../../../extensibility/debugger/reference/pending-bp-state.md)列舉，指定暫止中斷點的狀態。
+ `state`\
+ 值，以從[PENDING_BP_STATE](../../../extensibility/debugger/reference/pending-bp-state.md)列舉，指定暫止中斷點的狀態。
 
- 從旗標的組合加上旗標[PENDING_BP_STATE_FLAGS](../../../extensibility/debugger/reference/pending-bp-state-flags.md)列舉，指定是否要虛擬化的中斷點。
+ `flags`\
+ 從旗標的組合[PENDING_BP_STATE_FLAGS](../../../extensibility/debugger/reference/pending-bp-state-flags.md)列舉，指定是否要虛擬化的中斷點。
 
 ## <a name="remarks"></a>備註
  此結構會傳遞至[GetState](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-getstate.md)填滿其中的方法。

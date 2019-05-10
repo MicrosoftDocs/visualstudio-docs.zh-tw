@@ -1,6 +1,7 @@
 - name: 'C# 教學課程'
-  href: index.yml
   items:
+    - name: 'C# 教學課程'
+      href: index.yml
     - name: 總覽
       items:
         - name: Visual Studio 概觀

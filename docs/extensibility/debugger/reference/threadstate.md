@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 96eb95d39c60952c48e62c0e2e61edefeaa59783
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 3019671b98d3eb17c92d97c368f2f7338ee55a1d
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62913336"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65460704"
 ---
 # <a name="threadstate"></a>THREADSTATE
 指定執行緒的狀態。
@@ -45,16 +48,21 @@ public enum enum_THREADSTATE { 
 };
 ```
 
-## <a name="members"></a>成員
- THREADSTATE_RUNNING 表示執行緒正在執行。
+## <a name="fields"></a>欄位
+ `THREADSTATE_RUNNING`\
+ 表示執行緒正在執行。
 
- THREADSTATE_STOPPED 表示執行緒已停止因為中斷點。
+ `THREADSTATE_STOPPED`\
+ 表示執行緒已停止因為中斷點。
 
- THREADSTATE_FRESH 表示執行緒已建立，但尚未執行的程式碼。
+ `THREADSTATE_FRESH`\
+ 表示執行緒已建立，但尚未執行的程式碼。
 
- THREADSTATE_DEAD 表示執行緒已無作用。
+ `THREADSTATE_DEAD`\
+ 表示執行緒已無作用。
 
- THREADSTATE_FROZEN 指出已凍結執行緒 （可以執行任何執行）。
+ `THREADSTATE_FROZEN`\
+ 表示已凍結執行緒 （可以執行任何執行）。
 
 ## <a name="remarks"></a>備註
  用於`dwThreadState`欄位[THREADPROPERTIES](../../../extensibility/debugger/reference/threadproperties.md)結構。

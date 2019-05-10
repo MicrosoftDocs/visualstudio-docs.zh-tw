@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9e215222b8637d97378dc9db24f995ab76123f00
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 8936ab07f4df7b2e2295fae4192bca79205429ac
+ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62868648"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65224153"
 ---
 # <a name="idebugsymbolprovidergetcontainerfield"></a>IDebugSymbolProvider::GetContainerField
 這個方法會取得包含偵錯位址的欄位。
@@ -38,12 +41,12 @@ int GetContainerField(
 );
 ```
 
-#### <a name="parameters"></a>參數
- `pAddress`
+## <a name="parameters"></a>參數
+ `pAddress`\
 
  [in]表示的地址[IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md)介面。
 
- `ppContainerField`
+ `ppContainerField`\
 
  [out]傳回由容器欄位[IDebugContainerField](../../../extensibility/debugger/reference/idebugcontainerfield.md)介面。
 

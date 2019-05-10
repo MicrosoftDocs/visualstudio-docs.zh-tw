@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d0e6db00c6c09b52e635e141d9e9a18ff3df6466
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 391f4bc6eb0480d26fd616afcea222db3b7be4b7
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62869053"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65457376"
 ---
 # <a name="idebugreference2getreferenceinfo"></a>IDebugReference2::GetReferenceInfo
 取得[DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md)結構描述的參考。 保留供未來使用。
@@ -46,28 +49,28 @@ int GetReferenceInfo ( 
 );
 ```
 
-#### <a name="parameters"></a>參數
- `dwFields`
+## <a name="parameters"></a>參數
+ `dwFields`\
 
  [in]從旗標的組合[DEBUGREF_INFO_FLAGS](../../../extensibility/debugger/reference/debugref-info-flags.md)決定填寫欄位的列舉型別[DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md)結構。
 
- `nRadix`
+ `nRadix`\
 
  [in]要用於格式化數字的任何資訊基數。
 
- `dwTimeout`
+ `dwTimeout`\
 
  [in]最大時間 （毫秒），這個方法返回之前等候。 使用`INFINITE`無限期等候。
 
- `rgpArgs`
+ `rgpArgs`\
 
  [in]陣列[IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md)物件。 保留供未來使用;設定為 null 的值。
 
- `dwArgCount`
+ `dwArgCount`\
 
  [in]中的參考引數數目`rgpArgs`陣列。 保留供未來使用;設定為 0。
 
- `pReferenceInfo`
+ `pReferenceInfo`\
 
  [out]A [DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md)會填入的屬性描述的結構。
 

@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0a39ce54d1cb1fb1a3773b4241be35214421f08a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 3541181e0141e20381be7cdd24a45d7c7a0704ec
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62865673"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65458048"
 ---
 # <a name="metadatatype"></a>METADATA_TYPE
 此結構會指定取自中繼資料的欄位類型的相關資訊。
@@ -40,16 +43,16 @@ public struct METADATA_TYPE {
 };
 ```
 
-#### <a name="parameters"></a>參數
- ulAppDomainID
+## <a name="parameters"></a>參數
+ `ulAppDomainID`\
 
  符號所來自的應用程式的識別碼。 這用來唯一識別應用程式的執行個體。
 
- guidModule
+ `guidModule`\
 
  模組包含此欄位的 GUID。
 
- tokClass
+ `tokClass`\
 
  此類型的中繼資料語彙基元的識別碼。
 

@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 803d9569c611e3c4cd70f2c82ecd525716d8ddb3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 7f6fb974bd5affc89eeacbfccace5c1e89218db5
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62913523"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65457930"
 ---
 # <a name="providerflags"></a>PROVIDER_FLAGS
 指定要從程式提供者取得所需的屬性。
@@ -49,20 +52,27 @@ public enum enum_PROVIDER_FLAGS {
 };
 ```
 
-## <a name="members"></a>成員
- 指定 PFLAG_NONE 沒有旗標。
+## <a name="fields"></a>欄位
+ `PFLAG_NONE`\
+ 指定沒有旗標。
 
- PFLAG_REMOTE_PORT 呼叫端想要在不同的電腦上的程式清單[!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)]。
+ `PFLAG_REMOTE_PORT`\
+ 呼叫端想要在不同的電腦上的程式清單[!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)]。
 
- 處理序目前正在偵錯的這個執行個體的 PFLAG_DEBUGGEE [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)]。
+ `PFLAG_DEBUGGEE`\
+ 此程序目前正在偵錯的這個執行個體[!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)]。
 
- PFLAG_ATTACH_TODEBUGGEE[!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)]附加偵錯程式，但未啟動。
+ `PFLAG_ATTACH_TODEBUGGEE`\
+ [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] 附加偵錯程式，但未啟動。
 
- PFLAG_REASON_WATCH[!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)]會監看事件。
+ `PFLAG_REASON_WATCH`\
+ [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] 監看事件。
 
- PFLAG_GET_PROGRAM_NODES 呼叫端想要`ProgramNodes`欄位[PROVIDER_PROCESS_DATA](../../../extensibility/debugger/reference/provider-process-data.md)結構。
+ `PFLAG_GET_PROGRAM_NODES`\
+ 呼叫端想要`ProgramNodes`欄位[PROVIDER_PROCESS_DATA](../../../extensibility/debugger/reference/provider-process-data.md)結構。
 
- PFLAG_GET_IS_DEBUGGER_PRESENT 呼叫端想要`fIsTheDebuggerPresent`欄位`PROVIDER_PROCESS_DATA`結構。
+ `PFLAG_GET_IS_DEBUGGER_PRESENT`\
+ 呼叫端想要`fIsTheDebuggerPresent`欄位`PROVIDER_PROCESS_DATA`結構。
 
 ## <a name="remarks"></a>備註
  這些旗標會傳遞下列方法：

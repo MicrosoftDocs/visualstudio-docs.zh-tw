@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c79f15102b5adae2112f4abdeeb68b80962895e8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 4deb573ece9ed2678e617ee74772184d4327551a
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62916795"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65459031"
 ---
 # <a name="idebugprogramnodeattach2onattach"></a>IDebugProgramNodeAttach2::OnAttach
 將附加至相關聯的程式，或是遵照的附加程序[附加](../../../extensibility/debugger/reference/idebugengine2-attach.md)方法。
@@ -36,8 +39,8 @@ int OnAttach(
 };
 ```
 
-#### <a name="parameters"></a>參數
- `guidProgramId`
+## <a name="parameters"></a>參數
+ `guidProgramId`\
 
  [in]`GUID`要指派給相關聯的程式。
 

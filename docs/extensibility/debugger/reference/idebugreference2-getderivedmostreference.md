@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0d10c265ba8b77dc8cc434fd8a9c688f1c7188a8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: ba770dec92054f68c3cb95433d2a2c83bdb37bce
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62869193"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65457513"
 ---
 # <a name="idebugreference2getderivedmostreference"></a>IDebugReference2::GetDerivedMostReference
 取得參考的最具衍生性參考。 保留供未來使用。
@@ -36,8 +39,8 @@ int GetDerivedMostReference( 
 );
 ```
 
-#### <a name="parameters"></a>參數
- `ppDerivedMost`
+## <a name="parameters"></a>參數
+ `ppDerivedMost`\
 
  [out]傳回[IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md)物件，表示最具衍生性的屬性。
 

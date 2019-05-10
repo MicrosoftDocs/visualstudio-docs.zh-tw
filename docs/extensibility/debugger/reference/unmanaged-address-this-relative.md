@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e9d2bf87a804295a5ea8f6750ee9cd93643c53bc
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: a2ba039164c43ccc99b3305bb29bc4f1c98f68f7
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62913006"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65460639"
 ---
 # <a name="unmanagedaddressthisrelative"></a>UNMANAGED_ADDRESS_THIS_RELATIVE
 此結構表示的位址，是相對於`this`指標 (`Me` Visual Basic 中)。
@@ -40,12 +43,15 @@ public struct UNMANAGED_THIS_RELATIVE {
 }
 ```
 
-## <a name="terms"></a>詞彙
- dwOffset 位元組位移之基底的位置 （例如，類別 vtable 開頭）。
+## <a name="members"></a>成員
+ `dwOffset`\
+ 位元組位移之基底的位置 （例如，類別 vtable 開頭）。
 
- dwBitOffset 位移之基底的位置的位元 (一律為 0 除非參考是位元欄位)。
+ `dwBitOffset`\
+ 在基底位置的位元位移 (一律為 0 除非參考是位元欄位)。
 
- dwBitLength 代表地址的位元數 (一律為 0 除非參考是位元欄位)。
+ `dwBitLength`\
+ 代表地址的位元數 (一律為 0 除非參考是位元欄位)。
 
 ## <a name="remarks"></a>備註
  此結構是中的等位的一部分[DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md)結構的時機`dwKind`欄位`DEBUG_ADDRESS_UNION`結構設定為`ADDRESS_KIND_UNMANAGED_THIS_RELATIVE`(中的值[ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md)列舉型別）。

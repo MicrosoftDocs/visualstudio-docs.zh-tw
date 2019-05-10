@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: cfe4b81f455f9efb5ee03b9c3db5f189cf19e176
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: fa66f61c7e72f1c629fe664baf2c2a5dcc9631e2
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62869530"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65458895"
 ---
 # <a name="idebugproperty2getextendedinfo"></a>IDebugProperty2::GetExtendedInfo
 取得擴充屬性的資訊。
@@ -38,12 +41,12 @@ int GetExtendedInfo ( 
 );
 ```
 
-#### <a name="parameters"></a>參數
- `guidExtendedInfo`
+## <a name="parameters"></a>參數
+ `guidExtendedInfo`\
 
  [in]決定要擷取的擴充資訊的類型的 GUID。 如需詳細資訊，請參閱 < 備註 >。
 
- `pExtendedInfo`
+ `pExtendedInfo`\
 
  [out]傳回`VARIANT`(C++) 或物件 (C#)，可用來擷取擴充的屬性的資訊。 比方說，這個參數可能會傳回`IUnknown`介面，可以查詢[IDebugDocumentText2](../../../extensibility/debugger/reference/idebugdocumenttext2.md)介面。 如需詳細資訊，請參閱 < 備註 >。
 

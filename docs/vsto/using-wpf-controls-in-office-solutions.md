@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c8c447ce6b202fc3ccca65c6725e9eb3e5f13ecf
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 8b0cd5939bf91a3f154cf28434f561ed93b1a597
+ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62982257"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65226665"
 ---
 # <a name="use-wpf-controls-in-office-solutions"></a>在 Office 方案中使用 WPF 控制項
 
@@ -55,7 +55,7 @@ ms.locfileid: "62982257"
 
     - 針對表單區域，新增**Outlook 表單區域**項目加入專案。 如需詳細資訊，請參閱[如何：將表單區域加入 Outlook 增益集專案](../vsto/how-to-add-a-form-region-to-an-outlook-add-in-project.md)。
 
-    - 針對 [動作] 窗格中，新增**執行窗格控制項**或是**使用者控制**項目加入專案。 如需詳細資訊，請參閱[如何：加入執行窗格加入 Word 文件或 Excel 活頁簿](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md)和[How to:加入執行窗格加入 Word 文件或 Excel 活頁簿](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md)。
+    - 針對 [動作] 窗格中，新增**執行窗格控制項**或是**使用者控制**項目加入專案。 如需詳細資訊，請參閱[如何：加入執行窗格加入 Word 文件或 Excel 活頁簿](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md)。
 
     - 對於自訂工作窗格，請新增**使用者控制項**項目加入專案。 如需詳細資訊，請參閱[如何：應用程式中加入自訂工作窗格](../vsto/how-to-add-a-custom-task-pane-to-an-application.md)。
 

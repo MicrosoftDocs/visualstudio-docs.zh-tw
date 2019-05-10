@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5858bf29d1bf5fd2f93032aec9791380fbbd37c5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: d958c535cc93e140f61e6681130f16c8d49d8fc0
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62913844"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65458066"
 ---
 # <a name="metadataaddressfield"></a>METADATA_ADDRESS_FIELD
 
@@ -37,9 +40,9 @@ public struct METADATA_ADDRESS_FIELD {
 }
 ```
 
-## <a name="terms"></a>詞彙
+## <a name="members"></a>成員
 
-`tokField`
+`tokField`\
 
 欄位 token 的識別碼。
 

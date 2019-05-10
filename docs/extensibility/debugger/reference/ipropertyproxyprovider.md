@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c1e9afbe99e6265e47bf033c7d4af8e93590aaf6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: bf323e69e95266321cb4011e163cda967844a854
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62913971"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65461204"
 ---
 # <a name="ipropertyproxyprovider"></a>IPropertyProxyProvider
 這個介面會提供 proxy 介面來檢視及變更物件的資料。

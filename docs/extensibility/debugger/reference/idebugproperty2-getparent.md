@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 30fa28ba52d40698447c6607be4b694466bb6127
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 5805beed58b01c0a2a31b92008f7acdf10e4f960
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62916641"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65458118"
 ---
 # <a name="idebugproperty2getparent"></a>IDebugProperty2::GetParent
 取得屬性的父屬性。
@@ -36,8 +39,8 @@ int GetParent ( 
 );
 ```
 
-#### <a name="parameters"></a>參數
- `ppParent`
+## <a name="parameters"></a>參數
+ `ppParent`\
 
  [out]傳回[IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)物件，表示屬性的父代。
 

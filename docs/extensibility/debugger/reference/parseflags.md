@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 56ba1933d1b63f9af863b115972f3ecf1dfc4346
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: e5d298add846a7f3b7baf566f3c31e16c68b8dc5
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62913712"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65460836"
 ---
 # <a name="parseflags"></a>PARSEFLAGS
 指定如何剖析的運算式。
@@ -41,12 +44,15 @@ public enum enum_PARSEFLAGS { 
 };
 ```
 
-## <a name="members"></a>成員
- PARSE_EXPRESSION 表示的運算式不是陳述式。
+## <a name="fields"></a>欄位
+ `PARSE_EXPRESSION`\
+ 表示運算式不是陳述式。
 
- PARSE_FUNCTION_AS_ADDRESS 表示的運算式剖析 （並稍後再評估） 是為位址。
+ `PARSE_FUNCTION_AS_ADDRESS`\
+ 表示運算式的剖析 （並稍後再評估） 位址。
 
- PARSE_DESIGN_TIME_EXPR_EVAL 表示設計階段剖析運算式 （也就是當設計工具開啟時）。
+ `PARSE_DESIGN_TIME_EXPR_EVAL`\
+ 表示在設計階段剖析運算式 （也就是當設計工具開啟時）。
 
 ## <a name="remarks"></a>備註
  做為參數傳遞[ParseText](../../../extensibility/debugger/reference/idebugexpressioncontext2-parsetext.md)並[剖析](../../../extensibility/debugger/reference/idebugexpressionevaluator-parse.md)方法。

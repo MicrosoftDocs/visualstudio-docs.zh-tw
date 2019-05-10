@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: fd4494b21d4b5b3aa3f73cbabed771f2fac7280c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: f439928d253aa5e8b500a489ca1a2d184ecbd507
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62869001"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65457691"
 ---
 # <a name="idebugreference2getmemorycontext"></a>IDebugReference2::GetMemoryContext
 取得參考的記憶體內容。 保留供未來使用。
@@ -36,8 +39,8 @@ int GetMemoryContext ( 
 );
 ```
 
-#### <a name="parameters"></a>參數
- `ppMemory`
+## <a name="parameters"></a>參數
+ `ppMemory`\
 
  [out]傳回[IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md)物件，表示參考的值相關聯的記憶體。
 

@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e756c6e08693339b51bf4b27d23873285b2aefe0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 39762b5f60a2c54af563d2f5acaaa080134325e7
+ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62866622"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65225776"
 ---
 # <a name="ienumdebugportsuppliers2reset"></a>IEnumDebugPortSuppliers2::Reset
 將列舉重設第一個項目。

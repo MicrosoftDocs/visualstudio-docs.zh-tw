@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9dcb50f732d4c7aae94cf32036cd17340d636dd9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3665b0cf55da19339f862d1f30556bc736110f28
+ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62868355"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65226217"
 ---
 # <a name="idebugthread2"></a>IDebugThread2
 這個介面表示在程式中執行的執行緒。

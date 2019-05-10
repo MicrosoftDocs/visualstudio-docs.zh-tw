@@ -27,8 +27,9 @@
     - name: 分析 CPU 使用量
       href: cpu-usage.md
     - name: 分析記憶體使用量
-      href: analyze-memory-usage.md
       items:
+        - name: 分析記憶體使用量
+          href: analyze-memory-usage.md
         - name: 自訂原生 ETW 堆積事件
           href: custom-native-etw-heap-events.md
         - name: 記憶體使用量 (不使用偵錯工具)
@@ -48,13 +49,15 @@
     - name: 分析 HTML UI 回應性
       href: html-ui-responsiveness.md
     - name: 使用效能總管
-      href: performance-explorer.md
       items:
+        - name: 使用效能總管
+          href: performance-explorer.md
         - name: Windows 8 和 Windows Server 2012 應用程式的效能工具
           href: performance-tools-on-windows-8-and-windows-server-2012-applications.md
         - name: 概觀 (效能工具)
-          href: overviews-performance-tools.md
           items:
+            - name: 概觀 (效能工具)
+              href: overviews-performance-tools.md
             - name: 效能工作階段概觀
               href: performance-session-overview.md
             - name: 了解效能收集方法
@@ -76,8 +79,9 @@
             - name: 分析和 Windows Vista 安全性
               href: profiling-and-windows-vista-security.md
         - name: 效能工具入門
-          href: getting-started-with-performance-tools.md
           items:
+            - name: 效能工具入門
+              href: getting-started-with-performance-tools.md
             - name: CPU 取樣的初學者指南
               href: beginners-guide-to-cpu-sampling.md
             - name: 使用效能精靈對網站或 Web 應用程式進行程式碼剖析
@@ -85,15 +89,17 @@
             - name: 手動建立效能工作階段
               href: how-to-manually-create-performance-sessions.md
         - name: 設定效能工作階段
-          href: configuring-performance-sessions.md
           items:
+            - name: 設定效能工作階段
+              href: configuring-performance-sessions.md
             - name: 參考 Windows 符號資訊
               href: how-to-reference-windows-symbol-information.md
             - name: 選擇收集方法
               href: how-to-choose-collection-methods.md
             - name: 使用取樣收集效能統計資料
-              href: collecting-performance-statistics-by-using-sampling.md
               items:
+                - name: 使用取樣收集效能統計資料
+                  href: collecting-performance-statistics-by-using-sampling.md
                 - name: 選擇取樣事件
                   href: how-to-choose-sampling-events.md
                 - name: 收集程式行層級取樣資料
@@ -101,8 +107,9 @@
             - name: 收集 .NET 記憶體配置和存留期資料
               href: collecting-dotnet-memory-allocation-and-lifetime-data.md
             - name: 使用檢測設備收集詳細計時資料
-              href: collecting-detailed-timing-data-by-using-instrumentation.md
               items:
+                - name: 使用檢測設備收集詳細計時資料
+                  href: collecting-detailed-timing-data-by-using-instrumentation.md
                 - name: 收集 CPU 計數器資料
                   href: how-to-collect-cpu-counter-data.md
                 - name: 重新配置所檢測的二進位檔
@@ -118,8 +125,9 @@
             - name: 收集階層互動資料
               href: collecting-tier-interaction-data.md
             - name: 收集其他效能資料
-              href: collecting-additional-performance-data.md
               items:
+                - name: 收集其他效能資料
+                  href: collecting-additional-performance-data.md
                 - name: 收集 Windows 計數器資料
                   href: how-to-collect-windows-counter-data.md
                 - name: 收集 Windows 事件追蹤 (ETW) 資料
@@ -139,8 +147,9 @@
             - name: 指定 .NET Framework 執行階段
               href: how-to-specify-the-dotnet-framework-runtime.md
         - name: 控制資料收集
-          href: controlling-data-collection.md
           items:
+            - name: 控制資料收集
+              href: controlling-data-collection.md
             - name: 啟動和結束效能資料收集
               href: how-to-start-and-end-performance-data-collection.md
             - name: 為執行中的處理序附加和中斷連結效能工具
@@ -154,23 +163,27 @@
             - name: 從檢測排除或包含精簡函式
               href: how-to-exclude-or-include-short-functions-from-instrumentation.md
         - name: 分析效能工具資料
-          href: analyzing-performance-tools-data.md
           items:
+            - name: 分析效能工具資料
+              href: analyzing-performance-tools-data.md
             - name: 使用效能規則分析資料
-              href: using-performance-rules-to-analyze-data.md
               items:
+                - name: 使用效能規則分析資料
+                  href: using-performance-rules-to-analyze-data.md
                 - name: 檢視效能警告
                   href: how-to-view-performance-warnings.md
                 - name: 設定效能規則
                   href: how-to-configure-performance-rules.md
                 - name: 效能規則參考
-                  href: performance-rules-reference.md
                   items:
+                    - name: 效能規則參考
+                      href: performance-rules-reference.md
                     - name: 依識別碼排序的效能規則
                       href: performance-rules-by-id.md
                     - name: .NET Framework 使用效能規則
-                      href: dotnet-framework-usage-performance-rules.md
                       items:
+                        - name: .NET Framework 使用效能規則
+                          href: dotnet-framework-usage-performance-rules.md
                         - name: DA0001：使用 StringBuilder 進行串連
                           href: da0001-use-stringbuilder-for-concatenations.md
                         - name: DA0005：常見的 GC2 集合
@@ -202,15 +215,17 @@
                         - name: DA0039：鎖定競爭的比率極高
                           href: da0039-very-high-rate-of-lock-contentions.md
                     - name: 記憶體和分頁效能規則
-                      href: memory-and-paging-performance-rules.md
                       items:
+                        - name: 記憶體和分頁效能規則
+                          href: memory-and-paging-performance-rules.md
                         - name: DA0014：極高比率的使用中記憶體分頁到磁碟
                           href: da0014-extremely-high-rates-of-paging-active-memory-to-disk.md
                         - name: DA0017：高比率的使用中記憶體分頁到磁碟
                           href: da0017-high-rates-of-paging-active-memory-to-disk.md
                     - name: 程式碼剖析工具使用規則
-                      href: profiling-tools-usage-rules.md
                       items:
+                        - name: 程式碼剖析工具使用規則
+                          href: profiling-tools-usage-rules.md
                         - name: DA0002：遺漏 VSPerfCorProf.dll
                           href: da0002-vsperfcorprof-dll-is-missing.md
                         - name: DA0003：許多核心樣本
@@ -226,8 +241,9 @@
                         - name: DA0030：收集資料庫專案的階層互動量測
                           href: da0030-gather-tier-interaction-measurements-for-database-projects.md
                     - name: 資源監視效能規則
-                      href: resource-monitoring-performance-rules.md
                       items:
+                        - name: 資源監視效能規則
+                          href: resource-monitoring-performance-rules.md
                         - name: DA0501：所分析之處理序的平均 CPU 使用量
                           href: da0501-average-cpu-consumption-by-the-process-being-profiled.md
                         - name: DA0502：所分析之處理序的 CPU 使用量上限
@@ -241,13 +257,15 @@
                         - name: DA0506：為所分析的處理序配置的最大私用位元組
                           href: da0506-maximum-private-bytes-allocated-for-the-process-being-profiled.md
             - name: 效能報告檢視
-              href: performance-report-views.md
               items:
+                - name: 效能報告檢視
+                  href: performance-report-views.md
                 - name: 效能報告概觀
                   href: performance-report-overview.md
                 - name: 一般資料檢視
-                  href: common-data-views.md
                   items:
+                    - name: 一般資料檢視
+                      href: common-data-views.md
                     - name: 處理序檢視
                       href: process-view.md
                     - name: 標記檢視
@@ -271,8 +289,9 @@
                     - name: Windows 事件追蹤 (ETW) 報告
                       href: event-tracing-for-windows-etw-report.md
                 - name: 分析工具取樣方法資料檢視
-                  href: profiler-sampling-method-data-views.md
                   items:
+                    - name: 分析工具取樣方法資料檢視
+                      href: profiler-sampling-method-data-views.md
                     - name: 摘要檢視 - 取樣資料
                       href: summary-view-sampling-data.md
                     - name: 呼叫樹狀圖檢視 - 取樣資料
@@ -288,8 +307,9 @@
                     - name: 指令指標 (IP) 檢視 - 取樣資料
                       href: instruction-pointers-ips-view-sampling-data.md
                 - name: 檢測方法資料檢視
-                  href: instrumentation-method-data-views.md
                   items:
+                    - name: 檢測方法資料檢視
+                      href: instrumentation-method-data-views.md
                     - name: 摘要檢視 - 檢測資料
                       href: summary-view-instrumentation-data.md
                     - name: 呼叫樹狀圖檢視 - 檢測資料
@@ -301,8 +321,9 @@
                     - name: 函式檢視 - 檢測資料
                       href: functions-view-instrumentation-data.md
                 - name: .NET 記憶體資料檢視
-                  href: dotnet-memory-data-views.md
                   items:
+                    - name: .NET 記憶體資料檢視
+                      href: dotnet-memory-data-views.md
                     - name: 摘要檢視 - .NET 記憶體資料
                       href: summary-view-dotnet-memory-data.md
                     - name: .NET 記憶體配置檢視
@@ -330,8 +351,9 @@
                     - name: 函式檢視 - .NET 記憶體檢測資料
                       href: functions-view-dotnet-memory-instrumentation-data.md
                 - name: 資源爭用資料檢視
-                  href: resource-contention-data-views.md
                   items:
+                    - name: 資源爭用資料檢視
+                      href: resource-contention-data-views.md
                     - name: 摘要檢視 - 資源爭用檢視
                       href: summary-view-resource-contention-view.md
                     - name: 呼叫樹狀圖檢視 - 爭用資料
@@ -355,13 +377,15 @@
                     - name: 指令指標 (IP) 檢視 - 爭用資料
                       href: instruction-pointers-ips-view-contention-data.md
                 - name: 階層互動檢視
-                  href: tier-interaction-views.md
                   items:
+                    - name: 階層互動檢視
+                      href: tier-interaction-views.md
                     - name: 階層互動檢視
                       href: tier-interactions-view.md
             - name: 自訂效能工具報表檢視
-              href: customizing-performance-tools-report-views.md
               items:
+                - name: 自訂效能工具報表檢視
+                  href: customizing-performance-tools-report-views.md
                 - name: 自訂報表檢視資料行
                   href: how-to-customize-report-view-columns.md
                 - name: 篩選報表檢視
@@ -375,8 +399,9 @@
                 - name: 篩選分析工具報告檢視以顯示 Just My Code
                   href: how-to-filter-profiling-tools-report-views-to-display-just-my-code.md
         - name: 比較效能資料檔案
-          href: comparing-performance-data-files.md
           items:
+            - name: 比較效能資料檔案
+              href: comparing-performance-data-files.md
             - name: 比較效能資料檔案
               href: how-to-compare-performance-data-files.md
         - name: 使用效能資料檔案儲存符號資訊
@@ -384,8 +409,9 @@
         - name: 儲存和匯出效能工具資料
           href: saving-and-exporting-performance-tools-data.md
         - name: 從命令列使用分析工具
-          href: using-the-profiling-tools-from-the-command-line.md
           items:
+            - name: 從命令列使用分析工具
+              href: using-the-profiling-tools-from-the-command-line.md
             - name: 從命令列指定符號檔位置
               href: how-to-specify-symbol-file-locations-from-the-command-line.md
             - name: 指定程式碼剖析工具命令列工具的路徑
@@ -395,11 +421,13 @@
             - name: 從命令列新增階層互動資料
               href: adding-tier-interaction-data-from-the-command-line.md
             - name: 獨立應用程式的命令列分析
-              href: command-line-profiling-of-stand-alone-applications.md
               items:
+                - name: 獨立應用程式的命令列分析
+                  href: command-line-profiling-of-stand-alone-applications.md
                 - name: 使用分析工具命令列收集獨立應用程式的應用程式統計資料
-                  href: collecting-application-statistics-for-stand-alone-applications.md
                   items:
+                    - name: 使用分析工具命令列收集獨立應用程式的應用程式統計資料
+                      href: collecting-application-statistics-for-stand-alone-applications.md
                     - name: 使用命令列以分析工具啟動獨立應用程式並收集應用程式統計資料
                       href: how-to-launch-a-stand-alone-app-and-collect-application-statistics.md
                     - name: 使用命令列將分析工具附加至 .NET Framework 獨立應用程式並收集應用程式統計資料
@@ -407,15 +435,17 @@
                     - name: 使用命令列將分析工具附加至原生獨立應用程式並收集應用程式統計資料
                       href: how-to-attach-the-profiler-to-a-native-app-and-collect-application-statistics.md
                 - name: 使用分析工具命令列收集獨立應用程式的詳細計時資料
-                  href: collecting-detailed-timing-data-for-a-stand-alone-application.md
                   items:
+                    - name: 使用分析工具命令列收集獨立應用程式的詳細計時資料
+                      href: collecting-detailed-timing-data-for-a-stand-alone-application.md
                     - name: 從命令列使用分析工具以檢測獨立的 .NET Framework 元件並收集計時資料
                       href: how-to-instrument-a-dotnet-framework-component-and-collect-timing-data.md
                     - name: 從命令列使用分析工具以檢測原生獨立元件並收集計時資料
                       href: how-to-instrument-a-native-component-and-collect-timing-data.md
                 - name: 使用程式碼剖析工具命令列收集獨立應用程式的並行資料
-                  href: collecting-concurrency-data-for-stand-alone-applications.md
                   items:
+                    - name: 使用程式碼剖析工具命令列收集獨立應用程式的並行資料
+                      href: collecting-concurrency-data-for-stand-alone-applications.md
                     - name: 使用命令列以分析工具啟動獨立的 .NET Framework 應用程式並收集並行資料
                       href: how-to-launch-a-stand-alone-dotnet-framework-app-to-collect-concurrency-data.md
                     - name: 使用命令列搭配分析工具啟動獨立的原生應用程式以收集並行資料
@@ -425,8 +455,9 @@
                     - name: 使用命令列將程式碼剖析工具附加到原生獨立應用程式並且收集並行資料
                       href: how-to-attach-the-profiler-to-a-native-app-and-collect-concurrency-data.md
                 - name: 使用程式碼剖析工具命令列收集獨立應用程式的 .NET Framework 記憶體資料
-                  href: collecting-dotnet-framework-memory-data-for-stand-alone-applications.md
                   items:
+                    - name: 使用程式碼剖析工具命令列收集獨立應用程式的 .NET Framework 記憶體資料
+                      href: collecting-dotnet-framework-memory-data-for-stand-alone-applications.md
                     - name: 使用命令列以分析工具啟動獨立的 .NET Framework 應用程式以收集記憶體資料
                       href: how-to-launch-a-stand-alone-dotnet-framework-app-to-collect-memory-data.md
                     - name: 使用命令列將分析工具附加至 .NET Framework 獨立應用程式以收集記憶體資料
@@ -436,30 +467,35 @@
                 - name: 逐步解說：使用取樣進行命令列分析
                   href: walkthrough-command-line-profiling-using-sampling.md
             - name: ASP.NET Web 應用程式的命令列分析
-              href: command-line-profiling-of-aspnet-web-applications.md
               items:
+                - name: ASP.NET Web 應用程式的命令列分析
+                  href: command-line-profiling-of-aspnet-web-applications.md
                 - name: 使用 VSPerfASPNETCmd 快速進行網站分析
                   href: rapid-web-site-profiling-with-vsperfaspnetcmd.md
                 - name: 從命令列使用程式碼剖析工具取樣方法收集 ASP.NET Web 應用程式的應用程式統計資料
-                  href: collecting-application-statistics-for-aspnet-using-the-profiler-sampling-method.md
                   items:
+                    - name: 從命令列使用程式碼剖析工具取樣方法收集 ASP.NET Web 應用程式的應用程式統計資料
+                      href: collecting-application-statistics-for-aspnet-using-the-profiler-sampling-method.md
                     - name: 使用命令列將分析工具附加至 ASP.NET Web 應用程式以收集應用程式統計資料
                       href: how-to-attach-the-profiler-to-an-aspnet-web-application-to-collect-application-statistics-by-using-the-command-line.md
                 - name: 從命令列使用分析工具檢測方法以收集 ASP.NET Web 應用程式的詳細計時資料
-                  href: collecting-detailed-timing-data-aspnet-profiler-instrumentation-method.md
                   items:
+                    - name: 從命令列使用分析工具檢測方法以收集 ASP.NET Web 應用程式的詳細計時資料
+                      href: collecting-detailed-timing-data-aspnet-profiler-instrumentation-method.md
                     - name: 使用命令列以分析工具檢測靜態編譯的 ASP.NET Web 應用程式並收集詳細計時資料
                       href: how-to-instrument-statically-compiled-aspnet-and-collect-detailed-timing-data.md
                     - name: 使用命令列以分析工具檢測動態編譯的 ASP.NET Web 應用程式並收集詳細計時資料
                       href: how-to-instrument-a-dynamically-compiled-aspnet-app-and-collect-timing-data.md
                 - name: 使用分析工具命令列收集 ASP.NET Web 應用程式的並行資料
-                  href: collecting-concurrency-data-for-an-aspnet-web-application.md
                   items:
+                    - name: 使用分析工具命令列收集 ASP.NET Web 應用程式的並行資料
+                      href: collecting-concurrency-data-for-an-aspnet-web-application.md
                     - name: 使用命令列將程式碼剖析工具附加至 ASP.NET Web 應用程式以收集並行資料
                       href: how-to-attach-the-profiler-to-an-aspnet-web-application-to-collect-concurrency-data-by-using-the-command-line.md
                 - name: 使用分析工具命令列收集 ASP.NET Web 應用程式的記憶體資料
-                  href: collecting-memory-data-from-an-aspnet-web-application.md
                   items:
+                    - name: 使用分析工具命令列收集 ASP.NET Web 應用程式的記憶體資料
+                      href: collecting-memory-data-from-an-aspnet-web-application.md
                     - name: 使用命令列將分析工具附加至 ASP.NET Web 應用程式以收集記憶體資料
                       href: how-to-attach-the-profiler-to-an-aspnet-web-application-to-collect-memory-data-by-using-the-command-line.md
                     - name: 使用分析工具命令列檢測靜態編譯的 ASP.NET Web 應用程式並收集記憶體資料
@@ -469,39 +505,45 @@
                 - name: 修改 Web.Config 檔案以檢測並分析動態編譯的 ASP.NET Web 應用程式
                   href: how-to-modify-web-config-files-to-instrument-dynamically-compiled-aspnet-apps.md
             - name: 服務的命令列分析
-              href: command-line-profiling-of-services.md
               items:
+                - name: 服務的命令列分析
+                  href: command-line-profiling-of-services.md
                 - name: 使用分析工具取樣方法收集服務的應用程式統計資料
-                  href: collecting-application-statistics-for-services-by-using-the-profiler-sampling-method.md
                   items:
+                    - name: 使用分析工具取樣方法收集服務的應用程式統計資料
+                      href: collecting-application-statistics-for-services-by-using-the-profiler-sampling-method.md
                     - name: 使用命令列將分析工具附加至 .NET 服務以收集應用程式統計資料
                       href: how-to-attach-the-profiler-to-a-dotnet-service-to-collect-application-statistics-by-using-the-command-line.md
                     - name: 使用命令列將分析工具附加至原生服務以收集應用程式統計資料
                       href: how-to-attach-the-profiler-to-a-native-service-to-collect-application-statistics-by-using-the-command-line.md
                 - name: 從分析工具命令列使用檢測方法收集服務的詳細計時資料
-                  href: collecting-detailed-timing-data-for-services-by-using-the-instrumentation-method.md
                   items:
+                    - name: 從分析工具命令列使用檢測方法收集服務的詳細計時資料
+                      href: collecting-detailed-timing-data-for-services-by-using-the-instrumentation-method.md
                     - name: 使用分析工具命令列以檢測 .NET 服務並收集詳細計時資料
                       href: how-to-instrument-a-dotnet-service-and-collect-detailed-timing-data-by-using-the-profiler-command-line.md
                     - name: 使用分析工具命令列以檢測原生服務並收集詳細計時資料
                       href: how-to-instrument-a-native-service-and-collect-detailed-timing-data-by-using-the-profiler-command-line.md
                 - name: 使用程式碼剖析工具命令列收集服務的並行資料
-                  href: collecting-concurrency-data-for-a-service-by-using-the-profiler-command-line.md
                   items:
+                    - name: 使用程式碼剖析工具命令列收集服務的並行資料
+                      href: collecting-concurrency-data-for-a-service-by-using-the-profiler-command-line.md
                     - name: 使用命令列將程式碼剖析工具附加至 .NET 服務以收集並行資料
                       href: how-to-attach-the-profiler-to-a-dotnet-service-to-collect-concurrency-data-by-using-the-command-line.md
                     - name: 使用命令列將分析工具附加至原生服務以收集並行資料
                       href: how-to-attach-the-profiler-to-a-native-service-to-collect-concurrency-data-by-using-the-command-line.md
                 - name: 使用程式碼剖析工具命令列以收集 .NET Framework 服務的記憶體資料
-                  href: collecting-memory-data-from-dotnet-framework-services-by-using-the-profiler-command-line.md
                   items:
+                    - name: 使用程式碼剖析工具命令列以收集 .NET Framework 服務的記憶體資料
+                      href: collecting-memory-data-from-dotnet-framework-services-by-using-the-profiler-command-line.md
                     - name: 使用命令列將分析工具附加至 .NET 服務以收集記憶體資料
                       href: how-to-attach-the-profiler-to-a-dotnet-service-to-collect-memory-data-by-using-the-command-line.md
                     - name: 使用分析工具命令列以檢測 .NET Framework 服務並收集記憶體資料
                       href: how-to-instrument-a-dotnet-framework-service-and-collect-memory-data-by-using-the-profiler-command-line.md
             - name: 從命令列建立分析工具報告
-              href: creating-profiler-reports-from-the-command-line.md
               items:
+                - name: 從命令列建立分析工具報告
+                  href: creating-profiler-reports-from-the-command-line.md
                 - name: 從命令列建立基本的分析報告
                   href: creating-basic-profiling-reports-from-the-command-line.md
                 - name: 從命令列篩選報表
@@ -517,8 +559,9 @@
             - name: 安裝獨立分析工具
               href: how-to-install-the-stand-alone-profiler.md
             - name: 命令列分析工具參考
-              href: command-line-profiling-tools-reference.md
               items:
+                - name: 命令列分析工具參考
+                  href: command-line-profiling-tools-reference.md
                 - name: VSInstr
                   href: vsinstr.md
                 - name: VSInstr 警告
@@ -526,8 +569,9 @@
                 - name: VSPerf
                   href: vsperf.md
                 - name: VSPerfCmd
-                  href: vsperfcmd.md
                   items:
+                    - name: VSPerfCmd
+                      href: vsperfcmd.md
                     - name: 啟動
                       href: start.md
                     - name: CrossSession
@@ -593,11 +637,13 @@
         - name: 程式碼剖析 HPC (高效能運算) 叢集
           href: profiling-on-hpc-high-performance-computing-clusters.md
         - name: 程式碼剖析工具 API
-          href: profiling-tools-apis.md
           items:
+            - name: 程式碼剖析工具 API
+              href: profiling-tools-apis.md
             - name: Visual Studio 分析工具 API 參考 (原生)
-              href: visual-studio-profiler-api-reference-native.md
               items:
+                - name: Visual Studio 分析工具 API 參考 (原生)
+                  href: visual-studio-profiler-api-reference-native.md
                 - name: CommentMarkAtProfile
                   href: commentmarkatprofile.md
                 - name: CommentMarkProfile
@@ -623,15 +669,17 @@
         - name: 針對效能工具問題進行疑難排解
           href: troubleshooting-performance-tools-issues.md
     - name: 並行視覺化檢視
-      href: concurrency-visualizer.md
       items:
+        - name: 並行視覺化檢視
+          href: concurrency-visualizer.md
         - name: 行為錯誤之多執行緒應用程式的一般模式
           href: common-patterns-for-poorly-behaved-multithreaded-applications.md
         - name: 使用率導覽
           href: utilization-navigator.md
         - name: 使用率檢視
-          href: utilization-view.md
           items:
+            - name: 使用率檢視
+              href: utilization-view.md
             - name: CPU 使用率圖形
               href: cpu-utilization-graph.md
             - name: 平均 CPU 使用率
@@ -647,8 +695,9 @@
             - name: GPU 活動 (其他處理序)
               href: gpu-activity-other-processes.md
         - name: 執行緒檢視 (平行處理效能)
-          href: threads-view-parallel-performance.md
           items:
+            - name: 執行緒檢視 (平行處理效能)
+              href: threads-view-parallel-performance.md
             - name: 封鎖時間分析報表
               href: blocking-time-profile-report.md
             - name: 通道 (執行緒檢視)
@@ -710,8 +759,9 @@
             - name: 縮放控制 (執行緒檢視)
               href: zoom-control-threads-view.md
         - name: 核心檢視
-          href: cores-view.md
           items:
+            - name: 核心檢視
+              href: cores-view.md
             - name: 核心檢視圖例
               href: cores-view-legend.md
             - name: 核心檢視邏輯核心
@@ -723,8 +773,9 @@
         - name: 進階設定對話方塊 (並行視覺化檢視)
           href: advanced-settings-dialog-box-concurrency-visualizer.md
         - name: 並行視覺化檢視中的標記
-          href: concurrency-visualizer-markers.md
           items:
+            - name: 並行視覺化檢視中的標記
+              href: concurrency-visualizer-markers.md
             - name: 旗標標記
               href: flag-markers.md
             - name: 訊息標記
@@ -734,29 +785,35 @@
             - name: 將 EventSource 事件顯示為標記
               href: visualizing-eventsource-events-as-markers.md
         - name: 並行視覺化檢視 SDK
-          href: concurrency-visualizer-sdk.md
           items:
+            - name: 並行視覺化檢視 SDK
+              href: concurrency-visualizer-sdk.md
             - name: 使用並行視覺化檢視標記 SDK
               href: how-to-use-the-concurrency-visualizer-markers-sdk.md
             - name: C++ 程式庫參考
-              href: cpp-library-reference.md
               items:
+                - name: C++ 程式庫參考
+                  href: cpp-library-reference.md
                 - name: Concurrency 命名空間 (並行視覺化檢視)
-                  href: concurrency-namespace-concurrency-visualizer.md
                   items:
+                    - name: Concurrency 命名空間 (並行視覺化檢視)
+                      href: concurrency-namespace-concurrency-visualizer.md
                     - name: Diagnostic 命名空間
-                      href: diagnostic-namespace.md
                       items:
+                        - name: Diagnostic 命名空間
+                          href: diagnostic-namespace.md
                         - name: span 類別
-                          href: span-class.md
                           items:
+                            - name: span 類別
+                              href: span-class.md
                             - name: 'span::~span 解構函式'
                               href: span-tilde-span-destructor.md
                             - name: 'span::span 建構函式'
                               href: span-span-constructor.md
                         - name: marker_series 類別
-                          href: marker-series-class.md
                           items:
+                            - name: marker_series 類別
+                              href: marker-series-class.md
                             - name: 'marker_series::~marker_series 解構函式'
                               href: marker-series-tilde-marker-series-destructor.md
                             - name: 'marker_series::is_enabled 方法'
@@ -772,8 +829,9 @@
                         - name: marker_importance 列舉
                           href: marker-importance-enumeration.md
             - name: C 程式庫參考
-              href: c-library-reference.md
               items:
+                - name: C 程式庫參考
+                  href: c-library-reference.md
                 - name: CvCreateDefaultMarkerSeriesOfDefaultProvider 函式
                   href: cvcreatedefaultmarkerseriesofdefaultprovider-function.md
                 - name: CvCreateMarkerSeries 函式
