@@ -9,38 +9,37 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fd399bb0d18d4a12493530932705b938a5f6dd67
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: ebbb18e37356c1ef6ccc47f18afe4736a418c0c3
+ms.sourcegitcommit: 6a19c5ece38a70731496a38f2ef20676ff18f8a4
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63414850"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65476584"
 ---
-# <a name="customizing-and-extending-a-domain-specific-language"></a>自訂及擴充網域指定的語言
+# <a name="customize-and-extend-a-domain-specific-language"></a>自訂及擴充特定領域語言
+
 Visual Studio 模型和視覺效果 SDK (VMSDK) 提供在中，您可以定義模型化工具的數個層級：
 
-1. 定義特定領域語言 (DSL) 使用 DSL 定義圖。 您可以使用圖表標記法、 可讀取的 XML 格式和產生程式碼和其他成品所需的基本工具，快速建立 DSL。
-
-     如需詳細資訊，請參閱 <<c0> [ 如何定義特定領域語言](../modeling/how-to-define-a-domain-specific-language.md)。
+1. 定義特定領域語言 (DSL) 使用 DSL 定義圖。 您可以使用圖表標記法、 可讀取的 XML 格式和產生程式碼和其他成品所需的基本工具，快速建立 DSL。 如需詳細資訊，請參閱 <<c0> [ 如何定義特定領域語言](../modeling/how-to-define-a-domain-specific-language.md)。
 
 2. 使用 DSL 定義的更進階的功能來微調 DSL。 比方說，您可以建立其他連結，使用者建立的項目時，會出現。 這些技巧大部分裡 DSL 定義中，而某些需要幾行程式碼。
 
-3. 使用程式碼，以擴充您的模型化工具。 VMSDK 是為了能讓您輕鬆整合擴充功能與從 DSL 定義產生的程式碼而專門設計的。  如需詳細資訊，請參閱 <<c0> [ 來自訂特定領域語言撰寫的程式碼](../modeling/writing-code-to-customise-a-domain-specific-language.md)。
+3. 使用程式碼，以擴充您的模型化工具。 VMSDK 是為了能讓您輕鬆整合擴充功能與從 DSL 定義產生的程式碼而專門設計的。 如需詳細資訊，請參閱 <<c0> [ 來自訂特定領域語言撰寫的程式碼](../modeling/writing-code-to-customise-a-domain-specific-language.md)。
 
 > [!NOTE]
-> 當您已更新在 DSL 定義檔案時，請務必按一下 [**轉換所有範本**後再重建您的方案的方案總管] 工具列中。
+> 更新在 DSL 定義檔之後，別忘了按一下**轉換所有範本**中的工具列**方案總管 中**後再重建您的解決方案。
 
-## <a name="customShapes"></a> 這一節
+## <a name="article-reference"></a>文件參考
 
 |若要達成此效果|請參閱本主題|
 |-|-|
-|允許使用者設定圖形的色彩和樣式屬性。|以滑鼠右鍵按一下圖形或連接器的類別，指向**加入已公開**，並按一下的項目。<br /><br /> 請參閱[自訂圖表上的展示](../modeling/customizing-presentation-on-the-diagram.md)。|
+|允許使用者設定圖形的色彩和樣式屬性。|以滑鼠右鍵按一下圖形或連接器的類別，指向**加入已公開**，並按一下的項目。|
 |不同類別的模型項目看起來類似上圖中，共用的屬性，例如初始的高度和寬度、 色彩、 工具提示的。|使用圖形或連接器類別之間的繼承。 在衍生的圖形與衍生的網域類別之間的對應會繼承父代的對應詳細資料。<br /><br /> 或者，您也可以將不同的網域類別對應至相同的圖形類別。|
 |不同的圖形內容會顯示模型項目的類別。|將一個以上的 shape 類別對應至相同的網域類別。 當您建置方案時，請遵循錯誤報表，並提供要求的程式碼，來決定要使用何種圖形。|
 |圖形色彩或字型等其他功能表示目前的狀態。|請參閱[更新圖案和接點來反映模型](../modeling/updating-shapes-and-connectors-to-reflect-the-model.md)。<br /><br /> 建立規則，以更新公開的屬性。 請參閱[規則傳播模型內的變更](../modeling/rules-propagate-changes-within-the-model.md)。<br /><br /> 或者，您也可以使用 OnAssociatedPropertyChanged() 更新非公開的功能，例如連結箭號或字型。|
 |表示狀態的圖形變更圖示。|在 DSL 詳細資料視窗中，設定裝飾項目對應的可見性。 找出相同的位置上的數個映像裝飾項目。 請參閱[更新圖案和接點來反映模型](../modeling/updating-shapes-and-connectors-to-reflect-the-model.md)。<br /><br /> 或者，您也可以覆寫`ImageField.GetDisplayImage()`。 中的範例，請參閱<xref:Microsoft.VisualStudio.Modeling.Diagrams.ImageField>。|
-|在圖形中設定背景影像|若要新增的錨定的 ImageField InitializeInstanceResources() 會覆寫。 請參閱[自訂圖表上的展示](../modeling/customizing-presentation-on-the-diagram.md)。|
-|任何深度的巢狀處理圖案|設定內嵌樹狀目錄中遞迴。 定義包含圖形的 BoundsRules。 請參閱[自訂圖表上的展示](../modeling/customizing-presentation-on-the-diagram.md)。|
+|在圖形中設定背景影像|若要新增的錨定的 ImageField InitializeInstanceResources() 會覆寫。|
+|任何深度的巢狀處理圖案|設定內嵌樹狀目錄中遞迴。 定義包含圖形的 BoundsRules。|
 |附加在固定時間點上的項目界限的連接器。|定義內嵌的終端機元素，表示圖表上的小連接埠。 若要修正的連接埠就地使用 BoundsRules。 電路圖表範例，請參閱 < [Visualization and Modeling SDK](http://go.microsoft.com/fwlink/?LinkID=186128)。|
 |文字欄位會顯示衍生自其他值的值。|將文字裝飾項目對應至 Calculated 或自訂儲存網域屬性。 如需詳細資訊，請參閱 <<c0> [ 計算和儲存體的自訂屬性](../modeling/calculated-and-custom-storage-properties.md)。|
 |將模型項目，或圖形之間的變更傳播|請參閱[定義域專屬語言中的驗證](../modeling/validation-in-a-domain-specific-language.md)。|

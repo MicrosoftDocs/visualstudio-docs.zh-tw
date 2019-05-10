@@ -9,25 +9,26 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9c88c9c8769051724855d292bfefb56f69cb8dee
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b48748c5c5d071e724be3ff35eca457f36385baa
+ms.sourcegitcommit: 6a19c5ece38a70731496a38f2ef20676ff18f8a4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62906919"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65476619"
 ---
-# <a name="using-escape-sequences-in-text-templates"></a>使用文字範本中的逸出序列
+# <a name="use-escape-sequences-in-text-templates"></a>使用文字範本中的逸出序列
+
 您可以使用逸出序列，文字範本產生文字範本標記中，及 （在 C# 僅限程式碼） 來逸出控制字元和引號。
 
- 若要列印至輸出檔的標準程式碼區塊的開盤和收盤標記，逸出標記，如下所示：
+若要列印至輸出檔的標準程式碼區塊的開盤和收盤標記，逸出標記，如下所示：
 
 ```
 \<# ... \#>
 ```
 
- 您可以執行相同的其他文字範本指示詞和程式碼區塊標籤。
+您可以執行相同的其他文字範本指示詞和程式碼區塊標籤。
 
- 如果文字區塊包含用來逸出文字範本標記的字串，您可以使用下列的逸出序列：
+如果文字區塊包含用來逸出文字範本標記的字串，您可以使用下列的逸出序列：
 
 - 如果文字範本標記會加上偶數數目的逸出 (\\) 字元範本剖析器會包含逸出字元的一半，且包含做為文字範本標記的順序。 例如，如果在文字範本中有四個逸出字元，會有兩個 「\\"產生的檔案中的字元。
 

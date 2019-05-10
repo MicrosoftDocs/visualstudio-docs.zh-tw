@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ce8bc44bf506cf315420aad4108832f7461f1c70
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ea106d98dbd18f224e7f2a9d95734eff591dfc2b
+ms.sourcegitcommit: 6a19c5ece38a70731496a38f2ef20676ff18f8a4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62822829"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65476661"
 ---
 # <a name="add-commands-and-gestures-to-dependency-diagrams"></a>將命令和軌跡新增至相依性圖表
 
@@ -28,7 +28,7 @@ ms.locfileid: "62822829"
 
 ## <a name="requirements"></a>需求
 
-請參閱 [需求](../modeling/extend-layer-diagrams.md#prereqs)。
+請參閱 [需求](../modeling/extend-layer-diagrams.md#requirements)。
 
 ## <a name="define-a-command-or-gesture-in-a-new-vsix"></a>在新的 VSIX 中定義的命令或軌跡
 
@@ -246,7 +246,7 @@ namespace MyLayerExtensions // change to your preference
 
      **OnDragDrop** - 當使用者將項目置放到此圖表上時受呼叫。
 
-- 每個方法的第一個引數是 `IShape`，您可以從這裡取得此圖層項目。 例如: 
+- 每個方法的第一個引數是 `IShape`，您可以從這裡取得此圖層項目。 例如：
 
     ```csharp
     public void OnDragDrop(IShape target, IDataObject data)

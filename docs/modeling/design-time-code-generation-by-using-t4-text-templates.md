@@ -15,24 +15,25 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2d1d13c071d8eb291a857dd0afc3da664b0ddca7
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 8422b32398c99f33575bb03923e1025207e5956e
+ms.sourcegitcommit: 6a19c5ece38a70731496a38f2ef20676ff18f8a4
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63435333"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65476711"
 ---
 # <a name="design-time-code-generation-by-using-t4-text-templates"></a>使用 T4 文字範本在設計階段產生程式碼
+
 設計階段 T4 文字範本可讓您在 Visual Studio 專案中產生程式碼和其他檔案。 通常，您會撰寫範本，讓他們變更其根據從資料產生的程式碼*模型*。 模型是檔案或資料庫，其中包含您的應用程式需求的重要資訊。
 
- 例如，您的模型可以將工作流程定義為表格或圖表。 您可以透過模型產生執行工作流程的軟體。 當您的使用者需求變更時，很容易與使用者討論新的工作流程。 透過工作流程重新產生程式碼，會比手動更新程式碼更為可靠。
+例如，您的模型可以將工作流程定義為表格或圖表。 您可以透過模型產生執行工作流程的軟體。 當您的使用者需求變更時，很容易與使用者討論新的工作流程。 透過工作流程重新產生程式碼，會比手動更新程式碼更為可靠。
 
 > [!NOTE]
 > A*模型*是描述應用程式的特定層面的資料來源。 它可以是任何形式、任何類型的檔案或資料庫。 它不需要是任何特定形式 (如 UML 模型或「特定領域語言」模型)。 一般模型的格式是表格或 XML 檔案。
 
- 您可能已熟悉如何產生程式碼。 當您定義中的資源 **.resx**檔案在 Visual Studio 方案中，一組類別和方法會自動產生。 編輯資源檔案中的資源，會比編輯類別和方法更為簡單也較可靠。 運用文字範本，您可以使用相同的方式透過您專屬設計的原始檔產生程式碼。
+您可能已熟悉如何產生程式碼。 當您定義中的資源 **.resx**檔案在 Visual Studio 方案中，一組類別和方法會自動產生。 編輯資源檔案中的資源，會比編輯類別和方法更為簡單也較可靠。 運用文字範本，您可以使用相同的方式透過您專屬設計的原始檔產生程式碼。
 
- 文字範本混合了您想要產生的文字以及產生文字變動部分的程式碼。 程式碼可讓您重複或有條件地省略所產生文字的組件。 所產生的文字本身可以是形成您應用程式一部分的程式碼。
+文字範本混合了您想要產生的文字以及產生文字變動部分的程式碼。 程式碼可讓您重複或有條件地省略所產生文字的組件。 所產生的文字本身可以是形成您應用程式一部分的程式碼。
 
 ## <a name="create-a-design-time-t4-text-template"></a>建立設計階段 T4 文字範本
 
@@ -53,7 +54,7 @@ ms.locfileid: "63435333"
 
     如果您已將該範本加入至 [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] 專案，則語言屬性會是 "`VB`"。
 
-4. 在檔案結尾加入一些文字。 例如: 
+4. 在檔案結尾加入一些文字。 例如：
 
    ```
    Hello, world!
@@ -119,7 +120,8 @@ ms.locfileid: "63435333"
    如果您使用 [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] 撰寫產生的程式碼，則 `template` 指示詞應該包含 `language="VB"`。 `"C#"` 預設值。
 
 ## <a name="debugging-a-design-time-t4-text-template"></a>偵錯設計階段 T4 文字範本
- 偵錯文字範本：
+
+偵錯文字範本：
 
 - 將 `debug="true"` 插入至 `template` 指示詞。 例如：
 
@@ -129,7 +131,7 @@ ms.locfileid: "63435333"
 
 - 選擇**偵錯 T4 範本**從文字範本檔案，在 [方案總管] 的捷徑功能表。
 
-  範本將會執行並停止於中斷點。 您可以檢查變數，並照常逐步執行程式碼。
+   此範本會執行，並在中斷點處停止。 您可以檢查變數，並照常逐步執行程式碼。
 
 > [!TIP]
 > `debug="true"` 會將更多行號指示詞插入至產生的程式碼，以讓產生的程式碼更精確地對應至文字範本。 如果您遺漏它，則中斷點可能會以錯誤的狀態停止執行作業。
@@ -137,9 +139,10 @@ ms.locfileid: "63435333"
 > 但是，您可以將此子句留在範本指示詞中，即使未進行偵錯也是一樣。 這樣只會導致效能稍微降低。
 
 ## <a name="generating-code-or-resources-for-your-solution"></a>產生您方案的程式碼或資源
- 您可以產生不同的程式檔案 (視模型而定)。 模型是一個輸入 (例如資料庫、組態檔、UML 模型、DSL 模型或其他來源)。 您通常會產生數個程式檔案從相同的模型。 若要達到這樣的效果，請為每個產生的程式檔案建立範本檔，並且讓所有範本讀取相同的模型。
 
-#### <a name="to-generate-program-code-or-resources"></a>產生程式碼或資源
+您可以產生不同的程式檔案 (視模型而定)。 模型是一個輸入 (例如資料庫、組態檔、UML 模型、DSL 模型或其他來源)。 您通常會產生數個程式檔案從相同的模型。 若要達到這樣的效果，請為每個產生的程式檔案建立範本檔，並且讓所有範本讀取相同的模型。
+
+### <a name="to-generate-program-code-or-resources"></a>產生程式碼或資源
 
 1. 變更輸出指示詞，以產生適當類型的檔案 (如 .cs、.vb、.resx 或 .xml)。
 
@@ -187,14 +190,16 @@ ms.locfileid: "63435333"
     ```
 
 ### <a name="generating-code-and-generated-text"></a>產生程式碼和產生的文字
- 當您產生程式碼時，最重要的是避免混淆在範本中執行的產生程式碼與所產生的產生的程式碼 (為方案的一部分)。 兩種語言不需要相同。
 
- 上述範例有兩個版本。 在其中一個版本中，產生程式碼的格式為 C#。 在另一個版本中，產生程式碼的格式為 Visual Basic。 但是兩者所產生的文字會相同，而且是 C# 類別。
+當您產生程式碼時，最重要的是避免混淆在範本中執行的產生程式碼與所產生的產生的程式碼 (為方案的一部分)。 兩種語言不需要相同。
 
- 透過相同的方式，您也可以使用 [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] 範本來產生任何語言的程式碼。 產生的文字不需要是任何特定語言，也不需要是程式碼。
+上述範例有兩個版本。 在其中一個版本中，產生程式碼的格式為 C#。 在另一個版本中，產生程式碼的格式為 Visual Basic。 但是兩者所產生的文字會相同，而且是 C# 類別。
+
+透過相同的方式，您也可以使用 [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] 範本來產生任何語言的程式碼。 產生的文字不需要是任何特定語言，也不需要是程式碼。
 
 ### <a name="structuring-text-templates"></a>建構文字範本
- 我們傾向最好將範本程式碼分成兩個部分：
+
+我們傾向最好將範本程式碼分成兩個部分：
 
 - 組態或資料收集部分：會在變數中設定值，但不包含文字區塊。 在上述範例中，這部分是 `properties` 的初始化。
 
@@ -202,10 +207,11 @@ ms.locfileid: "63435333"
 
 - 文字產生部分 (在此範例中，是 `foreach(...){...}`)：使用變數的值。
 
-  這不是必要的分隔，而是減少含文字部分的複雜性，讓範本的讀取更為容易的樣式。
+   這不是必要的分隔，而是減少含文字部分的複雜性，讓範本的讀取更為容易的樣式。
 
 ## <a name="reading-files-or-other-sources"></a>讀取檔案或其他來源
- 若要存取模型檔案或資料庫，您的範本程式碼可以使用 System.XML 這類組件。 若要存取這些組件，您必須插入下列這類指示詞：
+
+若要存取模型檔案或資料庫，您的範本程式碼可以使用 System.XML 這類組件。 若要存取這些組件，您必須插入下列這類指示詞：
 
 ```
 <#@ assembly name="System.Xml.dll" #>
@@ -213,9 +219,9 @@ ms.locfileid: "63435333"
 <#@ import namespace="System.IO" #>
 ```
 
- `assembly`指示詞可指定的組件提供您的範本程式碼，在 Visual Studio 專案的 [參考] 區段的相同方式。 您不需要包括自動參考之 System.dll 的參考。 `import` 指示詞可讓您使用未使用其完整名稱的類型，方式與一般程式檔案中的 `using` 指示詞相同。
+`assembly`指示詞可指定的組件提供您的範本程式碼，在 Visual Studio 專案的 [參考] 區段的相同方式。 您不需要包括自動參考之 System.dll 的參考。 `import` 指示詞可讓您使用未使用其完整名稱的類型，方式與一般程式檔案中的 `using` 指示詞相同。
 
- 例如，在匯入之後，才能**System.IO**，您可以撰寫：
+例如，在匯入之後，才能**System.IO**，您可以撰寫：
 
 ```csharp
 
@@ -232,13 +238,14 @@ ms.locfileid: "63435333"
 ```
 
 ### <a name="opening-a-file-with-a-relative-pathname"></a>使用相對路徑名稱來開啟檔案
- 若要從與文字範本相對的位置載入檔案，您可以使用 `this.Host.ResolvePath()`。 若要使用 this.Host，您必須在 `hostspecific="true"` 中設定 `template`：
+
+若要從與文字範本相對的位置載入檔案，您可以使用 `this.Host.ResolvePath()`。 若要使用 this.Host，您必須在 `hostspecific="true"` 中設定 `template`：
 
 ```
 <#@ template debug="false" hostspecific="true" language="C#" #>
 ```
 
- 然後，您可以撰寫，例如：
+然後，您可以撰寫，例如：
 
 ```csharp
 <# string fileName = this.Host.ResolvePath("filename.txt");
@@ -259,12 +266,13 @@ ms.locfileid: "63435333"
 #>
 ```
 
- 您也可以使用 `this.Host.TemplateFile`，以識別目前範本檔的名稱。
+您也可以使用 `this.Host.TemplateFile`，以識別目前範本檔的名稱。
 
- `this.Host` (在 VB 中，為 `Me.Host`) 的類型是 `Microsoft.VisualStudio.TextTemplating.ITextTemplatingEngineHost`。
+`this.Host` (在 VB 中，為 `Me.Host`) 的類型是 `Microsoft.VisualStudio.TextTemplating.ITextTemplatingEngineHost`。
 
 ### <a name="getting-data-from-visual-studio"></a>從 Visual Studio 中取得資料
- 若要使用 Visual Studio 中提供的服務，將`hostSpecific`屬性，並載入`EnvDTE`組件。 匯入`Microsoft.VisualStudio.TextTemplating`，其中包含`GetCOMService()`擴充方法。  然後，您可以使用 IServiceProvider.GetCOMService() 來存取 DTE 和其他服務。 例如：
+
+若要使用 Visual Studio 中提供的服務，將`hostSpecific`屬性，並載入`EnvDTE`組件。 匯入`Microsoft.VisualStudio.TextTemplating`，其中包含`GetCOMService()`擴充方法。  然後，您可以使用 IServiceProvider.GetCOMService() 來存取 DTE 和其他服務。 例如: 
 
 ```src
 <#@ template hostspecific="true" language="C#" #>
@@ -329,9 +337,10 @@ Warning("A warning message");
 ```
 
 ## <a name="Converting"></a> 將現有的檔案轉換成範本
- 範本的有用功能是它們看起來很像它們所產生的檔案和一些插入的程式碼。 這會建議建立範本的有用方法。 第一次建立一般檔案為原型，例如[!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]檔案，然後逐漸引進不同所產生的檔案產生程式碼。
 
-#### <a name="to-convert-an-existing-file-to-a-design-time-template"></a>將現有檔案轉換為設計階段範本
+範本的有用功能是它們看起來很像它們所產生的檔案和一些插入的程式碼。 這會建議建立範本的有用方法。 第一次建立一般檔案為原型，例如[!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]檔案，然後逐漸引進不同所產生的檔案產生程式碼。
+
+### <a name="to-convert-an-existing-file-to-a-design-time-template"></a>將現有檔案轉換為設計階段範本
 
 1. 加入 Visual Studio 專案，將您想要產生，例如類型的檔案`.cs`， `.vb`，或`.resx`檔案。
 
@@ -366,7 +375,8 @@ Warning("A warning message");
 7. 識別您要使其不同的檔案部分。 例如，只在特定狀況下出現的部分、重複的部分，或特定值不同的部分。 插入產生程式碼。 儲存檔案，並確認已正確地產生附帶檔案。 重複此步驟。
 
 ## <a name="guidelines-for-code-generation"></a>產生程式碼的指導方針
- 請參閱[撰寫 T4 文字範本的指導方針](../modeling/guidelines-for-writing-t4-text-templates.md)。
+
+請參閱[撰寫 T4 文字範本的指導方針](../modeling/guidelines-for-writing-t4-text-templates.md)。
 
 ## <a name="next-steps"></a>後續步驟
 
