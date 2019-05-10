@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 681cede68a2d649cd9f072b6c10e8476a9625f6e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 9b414983121454a7e3fb7c1e631815bc830f51be
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62869067"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65458697"
 ---
 # <a name="idebugreference2getsize"></a>IDebugReference2::GetSize
 取得大小，以位元組為單位，值的參考。 保留供未來使用。
@@ -36,8 +39,8 @@ int GetSize ( 
 );
 ```
 
-#### <a name="parameters"></a>參數
- `pdwSize`
+## <a name="parameters"></a>參數
+ `pdwSize`\
 
  [out]傳回大小，以位元組為單位，值的參考。
 

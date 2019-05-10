@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 33fe66319cda75ebdfc6fb47c9da6789cabc8e60
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 9324c33e383029fa6f98a9b890309cc0a11eb95d
+ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62907026"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65226266"
 ---
 # <a name="using-visual-studio-modelbus-in-a-text-template"></a>使用文字範本中的 Visual Studio ModelBus
 
@@ -35,7 +35,7 @@ ms.locfileid: "62907026"
 
 1. 如果目標 DSL 方案並沒有**ModelBusAdapter**專案中，建立一個使用 Modelbus 擴充功能精靈:
 
-    1. 下載並安裝 Visual Studio ModelBus 擴充功能，如果您還沒有這麼。 如需詳細資訊，請參閱 < [Visualization and Modeling SDK](http://go.microsoft.com/fwlink/?LinkID=185579)。
+    1. 下載並安裝 Visual Studio ModelBus 擴充功能，如果您還沒有這麼。 如需詳細資訊，請參閱 < [Visualization and Modeling SDK](https://devblogs.microsoft.com/devops/the-visual-studio-modeling-sdk-is-now-available-with-visual-studio-2017/)。
 
     2. 開啟 DSL 定義檔。 以滑鼠右鍵按一下設計介面，然後按一下**啟用 Modelbus**。
 

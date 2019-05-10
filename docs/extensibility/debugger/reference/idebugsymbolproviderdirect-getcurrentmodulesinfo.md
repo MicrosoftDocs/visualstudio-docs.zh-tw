@@ -11,12 +11,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 95dc42b0e65ad0f849dd95e0ffead122e4cd1ebf
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 1225729ceb6d1a874f4ca5bedef287ababbdb962
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62915695"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65457428"
 ---
 # <a name="idebugsymbolproviderdirectgetcurrentmodulesinfo"></a>IDebugSymbolProviderDirect::GetCurrentModulesInfo
 擷取符號群組中的模組的相關資訊。
@@ -43,24 +46,24 @@ int GetCurrentModulesInfo(
 );
 ```
 
-#### <a name="parameters"></a>參數
- `pCount`
+## <a name="parameters"></a>參數
+ `pCount`\
 
  [in]中的模組數目`ppGuids`陣列。
 
- `ppGuids`
+ `ppGuids`\
 
  [in]陣列，其中包含模組的唯一識別碼。
 
- `pADIds`
+ `pADIds`\
 
  [in]針對應用程式定義域的識別項。
 
- `pCurrentState`
+ `pCurrentState`\
 
  [in]目前的符號群組的狀態。
 
- `ppCDModItfs`
+ `ppCDModItfs`\
 
  [out]傳回物件，包含符號群組中的模組。
 

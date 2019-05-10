@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 67c055c1cf9fffde227d4e52a9764b2559a2342b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 838a7dc0024e69335bf5c49c664bd491a6949d08
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62864788"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65460913"
 ---
 # <a name="providerfields"></a>PROVIDER_FIELDS
 指定的程式提供者相關聯的屬性。
@@ -39,10 +42,12 @@ public enum enum_PROVIDER_FIELDS {
 };
 ```
 
-## <a name="members"></a>成員
- PFIELD_PROGRAM_NODES`ProgramNodes`欄位無效。
+## <a name="fields"></a>欄位
+ `PFIELD_PROGRAM_NODES`\
+ `ProgramNodes`欄位無效。
 
- PFIELD_IS_DEBUGGER_PRESENT`fIsDebuggerPresent`欄位無效。
+ `PFIELD_IS_DEBUGGER_PRESENT`\
+ `fIsDebuggerPresent`欄位無效。
 
 ## <a name="remarks"></a>備註
  這些值會傳回在`Fields`隸屬[PROVIDER_PROCESS_DATA](../../../extensibility/debugger/reference/provider-process-data.md)結構，以表示哪些欄位結構的明確已填入。

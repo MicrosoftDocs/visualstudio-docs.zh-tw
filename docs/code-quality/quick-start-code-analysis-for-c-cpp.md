@@ -1,5 +1,6 @@
 ---
 title: 快速入門：C/C++ 的程式碼分析
+description: 執行靜態分析C++來偵測常見的程式碼問題和缺失的 Visual Studio 中的程式碼。
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +11,12 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ecb4f46b238b72c9d83b46122b8567a8636282b8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 039ffcd1717dba8ec3c76ae1ca4a691d60851ee5
+ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62825399"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65226057"
 ---
 # <a name="quickstart-code-analysis-for-cc"></a>快速入門：C/C++ 的程式碼分析
 

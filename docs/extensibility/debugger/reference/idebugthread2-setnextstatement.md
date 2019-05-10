@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 896167d3655c5234f56f3b70e4369706250973c5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 0b6aca1ef95a8ae88301181955828f08c7c38bed
+ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62915528"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65226714"
 ---
 # <a name="idebugthread2setnextstatement"></a>IDebugThread2::SetNextStatement
 設定目前的指令指標至指定的程式碼內容。
@@ -38,10 +41,11 @@ int SetNextStatement ( 
 );
 ```
 
-#### <a name="parameters"></a>參數
- `pStackFrame` 保留供未來使用;設定為 null 的值。
+## <a name="parameters"></a>參數
+ `pStackFrame`\
+ 保留供未來使用;設定為 null 的值。
 
- `pCodeContext`
+ `pCodeContext`\
 
  [in][IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md)描述將要執行的程式碼位置的物件和其內容。
 

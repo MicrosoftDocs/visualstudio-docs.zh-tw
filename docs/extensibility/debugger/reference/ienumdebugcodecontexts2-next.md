@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b65a148ece1bf93cf9924293695616713238462c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 3fc2492b5962a71bf82d76b57d58eada9c6d3ee7
+ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62867494"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65223518"
 ---
 # <a name="ienumdebugcodecontexts2next"></a>IEnumDebugCodeContexts2::Next
 從列舉中傳回下的一個項目集。
@@ -40,16 +43,16 @@ int Next(
 );
 ```
 
-#### <a name="parameters"></a>參數
- `celt`
+## <a name="parameters"></a>參數
+ `celt`\
 
  [in]若要擷取的元素數目。 也會指定的大小上限`rgelt`陣列。
 
- `rgelt`
+ `rgelt`\
 
  [in、 out]陣列[IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md)来填入的項目。
 
- `pceltFetched`
+ `pceltFetched`\
 
  [out]傳回的項目數中實際傳回`rgelt`。
 

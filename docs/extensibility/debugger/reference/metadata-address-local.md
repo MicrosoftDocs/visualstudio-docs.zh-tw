@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8ac19a3e59e70d0a1fb03b78e64036bd2ac23219
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 10e94460dfd65294536fcb116099ba10c357d845
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62865832"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65461129"
 ---
 # <a name="metadataaddresslocal"></a>METADATA_ADDRESS_LOCAL
 
@@ -41,19 +44,19 @@ public struct METADATA_ADDRESS_LOCAL {
 }
 ```
 
-## <a name="terms"></a>詞彙
+## <a name="members"></a>成員
 
-`tokMethod`
+`tokMethod`\
 
 方法或函式識別碼的本機變數是的一部分。
 
 [C++]`_mdToken`是`typedef`適用於 32 位元`int`。
 
-`pLocal`
+`pLocal`\
 
 這個結構是表示其位址之語彙基元。
 
-`dwIndex`
+`dwIndex`\
 
 可以是方法或函式或其他值 （語言特有） 中的這個本機變數的索引。
 

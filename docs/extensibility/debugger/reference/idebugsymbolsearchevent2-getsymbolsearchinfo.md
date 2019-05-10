@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d917a3f33d0c4339420c048fe20184245bb8dac1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: a0f9097ae2db70f3743eb703bd6c654c4e464882
+ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62868404"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65224114"
 ---
 # <a name="idebugsymbolsearchevent2getsymbolsearchinfo"></a>IDebugSymbolSearchEvent2::GetSymbolSearchInfo
 呼叫以擷取結果的符號載入處理序相關的事件處理常式。
@@ -40,19 +43,19 @@ int GetSymbolSearchInfo(
 );
 ```
 
-#### <a name="parameters"></a>參數
- `pModule`
+## <a name="parameters"></a>參數
+ `pModule`\
 
  [out]IDebugModule3 物件，表示已載入符號的模組。
 
- `pbstrDebugMessage`
+ `pbstrDebugMessage`\
 
  [in、 out]傳回字串，包含從模組的任何錯誤訊息。 如果沒有任何錯誤，此字串只會包含模組的名稱，但永遠不會是空白。
 
 > [!NOTE]
 > [C++]`pbstrDebugMessage`不得`NULL`，而且必須與釋放`SysFreeString`。
 
- `pdwModuleInfoFlags`
+ `pdwModuleInfoFlags`\
 
  [out]從旗標的組合[MODULE_INFO_FLAGS](../../../extensibility/debugger/reference/module-info-flags.md)列舉，指出是否已載入任何符號。
 

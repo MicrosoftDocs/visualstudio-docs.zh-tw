@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: bb0ece36eba11b61f760552fe0559de46c1ce732
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: fa9c1805c7eaba480cd46ebc6e73ee370e3cbb22
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62864782"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65460777"
 ---
 # <a name="stepkind"></a>STEPKIND
 指定用於逐步執行步驟種類。
@@ -43,14 +46,18 @@ public enum enum_STEPKIND { 
 };
 ```
 
-## <a name="members"></a>成員
- STEP_INTO 會逐步執行函式。
+## <a name="fields"></a>欄位
+ `STEP_INTO`\
+ 逐步執行函式。
 
- STEP_OVER 函式的步驟。
+ `STEP_OVER`\
+ 不是進入函式。
 
- STEP_OUT 離函式的步驟。
+ `STEP_OUT`\
+ 跳離函式。
 
- STEP_BACKWARDS 步驟回溯到函式。
+ `STEP_BACKWARDS`\
+ 向後逐步執行函式。
 
 ## <a name="remarks"></a>備註
  作為引數[步驟](../../../extensibility/debugger/reference/idebugprocess3-step.md)方法。

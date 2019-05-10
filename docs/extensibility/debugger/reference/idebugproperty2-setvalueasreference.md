@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f2c8baa009160cc22766d1a30711fae5b153d2c5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: ec4ee2e7ca497a6bd3429447a1d66d6b216259cf
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62869438"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65457775"
 ---
 # <a name="idebugproperty2setvalueasreference"></a>IDebugProperty2::SetValueAsReference
 設定這個屬性的值，指定參考的值。
@@ -42,20 +45,20 @@ int SetValueAsReference(
 );
 ```
 
-#### <a name="parameters"></a>參數
- `rgpArgs`
+## <a name="parameters"></a>參數
+ `rgpArgs`\
 
  [in]要傳遞至 managed 程式碼屬性 setter 的引數陣列。 如果屬性 setter 不採用引數，或如果這個[IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)這類屬性 setter 中，未參考物件`rgpArgs`應為 null 的值。 此參數通常為 null 值。
 
- `dwArgCount`
+ `dwArgCount`\
 
  [in]中的引數數目`rgpArgs`陣列。
 
- `pValue`
+ `pValue`\
 
  [in]參考，形式[IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md)物件，用來設定這個屬性的值。
 
- `dwTimeout`
+ `dwTimeout`\
 
  [in]取得值，設定以毫秒為單位的時間長度。 一般的值是`INFINITE`。 這會影響任何可評估需要花費的時間的長度。
 

@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ec1012ef689750dcd16679763baa942be55f1805
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: d978f8108d35ab999c8ac2aea6fc068d889d3a95
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62865595"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65460978"
 ---
 # <a name="metadataaddressparam"></a>METADATA_ADDRESS_PARAM
 此結構表示的方法或函式的參數。
@@ -40,12 +43,15 @@ public struct METADATA_ADDRESS_PARAM {
 }
 ```
 
-## <a name="terms"></a>詞彙
- tokMethod 方法參數的識別碼是的一部分。
+## <a name="members"></a>成員
+ `tokMethod`\
+ 方法的 ID 參數是的一部分。
 
- tokParam 參數的識別碼。
+ `tokParam`\
+ 參數的識別碼。
 
- dwIndex 參數在參數清單中的索引。
+ `dwIndex`\
+ 在參數清單中參數的索引。
 
 ## <a name="remarks"></a>備註
  此結構是中的等位的一部分[DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md)結構的時機`dwKind`欄位`DEBUG_ADDRESS_UNION`結構設定為`ADDRESS_KIND_PARAM`(中的值[ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md)列舉型別）。

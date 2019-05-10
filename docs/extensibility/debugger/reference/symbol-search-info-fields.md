@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2621b88622e99ac95533e388197e483f2925f897
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 5d6f416d284c1712f8e52b2655a74e08f6f9cfe1
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63420815"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65458326"
 ---
 # <a name="symbolsearchinfofields"></a>SYMBOL_SEARCH_INFO_FIELDS
 指定要擷取的符號資訊種類。
@@ -42,10 +45,12 @@ public enum enum_SYMBOL_SEARCH_INFO_FIELDS
 
 ```
 
-## <a name="members"></a>成員
- SSIF_NONE 表示沒有旗標
+## <a name="fields"></a>欄位
+ `SSIF_NONE`\
+ 表示沒有旗標
 
- SSIF_VERBOSE_SEARCH_INFO 傳回所有搜尋用來尋找符號的路徑
+ `SSIF_VERBOSE_SEARCH_INFO`\
+ 傳回所有搜尋用來尋找符號的路徑
 
 ## <a name="remarks"></a>備註
  這些旗標會傳遞做為參數[GetSymbolInfo](../../../extensibility/debugger/reference/idebugmodule3-getsymbolinfo.md)傳回方法，以判斷的資訊數量。

@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 302c44b3d4947baa95554966246f15175841257d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 7ffdf2359b719be0fa3cf0a17ae4ed70bc36b673
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62913919"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65461067"
 ---
 # <a name="launchflags"></a>LAUNCH_FLAGS
 指定偵錯啟動旗標。
@@ -43,14 +46,18 @@ public enum enum_LAUNCH_FLAGS {
 };
 ```
 
-## <a name="members"></a>成員
-LAUNCH_DEBUG 會啟動偵錯的處理程序。
+## <a name="fields"></a>欄位
+`LAUNCH_DEBUG`\
+啟動偵錯的處理程序。
 
-LAUNCH_NODEBUG 啟動程序，但不偵錯它。
+`LAUNCH_NODEBUG`\
+啟動程序，但不偵錯它。
 
-LAUNCH_ENABLE_ENC 已被取代，請勿使用。
+`LAUNCH_ENABLE_ENC`\
+已被取代，請勿使用。
 
-LAUNCH_MERGE_ENV 啟動處理程序，並將合併啟動的主控件的環境。
+`LAUNCH_MERGE_ENV`\
+啟動處理程序，並將合併啟動的主控件的環境。
 
 ## <a name="remarks"></a>備註
 這些值會傳遞做為引數[LaunchSuspended](../../../extensibility/debugger/reference/idebugenginelaunch2-launchsuspended.md)方法。

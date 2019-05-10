@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d3ca4e944125f6673ca66accdb78742f693def77
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: df878cc59a47a8d3cc7079f8b919f87d9bb60f43
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62869122"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65457455"
 ---
 # <a name="idebugreference2compare"></a>IDebugReference2::Compare
 比較到另一個參考。 保留供未來使用。
@@ -38,12 +41,12 @@ int Compare ( 
 );
 ```
 
-#### <a name="parameters"></a>參數
- `dwCompare`
+## <a name="parameters"></a>參數
+ `dwCompare`\
 
  [in]值，以從[REFERENCE_COMPARE](../../../extensibility/debugger/reference/reference-compare.md)列舉，指定的比較作業，例如，等於、 小於或大於。
 
- `pReference`
+ `pReference`\
 
  [in][IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md)物件，表示要比較的參考。
 

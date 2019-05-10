@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 651bc4945f8acc65d5f12da5fecef7a4926ef416
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: fecff3d6a992360f2fec385e93d88a65b368db9f
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62868816"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65457518"
 ---
 # <a name="idebugstackframe2enumproperties"></a>IDebugStackFrame2::EnumProperties
 建立堆疊框架，例如本機變數與相關聯屬性的列舉值。
@@ -46,28 +49,28 @@ int EnumProperties ( 
 );
 ```
 
-#### <a name="parameters"></a>參數
- `dwFieldSpec`
+## <a name="parameters"></a>參數
+ `dwFieldSpec`\
 
  [in]從旗標的組合[DEBUGPROP_INFO_FLAGS](../../../extensibility/debugger/reference/debugprop-info-flags.md)列舉，指定哪些欄位中列舉[DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md)結構要進行填寫。
 
- `nRadix`
+ `nRadix`\
 
  [in]要用於格式化數字的任何資訊基數。
 
- `refiid`
+ `refiid`\
 
  [in]使用選取之篩選的 GUID [DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md)結構的列舉，例如`guidFilterLocals`。
 
- `dwTimeout`
+ `dwTimeout`\
 
  [in]最大時間 （毫秒），這個方法返回之前等候。 使用`INFINITE`無限期等候。
 
- `pcelt`
+ `pcelt`\
 
  [out]傳回列舉的屬性數目。 這等同於呼叫[GetCount](../../../extensibility/debugger/reference/ienumdebugpropertyinfo2-getcount.md)方法。
 
- `ppEnum`
+ `ppEnum`\
 
  [out]傳回[IEnumDebugPropertyInfo2](../../../extensibility/debugger/reference/ienumdebugpropertyinfo2.md)物件，其中包含所需的屬性清單。
 

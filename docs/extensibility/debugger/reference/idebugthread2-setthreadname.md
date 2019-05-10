@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0224d84434ddabdafd2c3245eb2ab48b8e9486be
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 7b74af8b93bb3b92d4673f40c06f0d9745ffb79c
+ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62915436"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65226207"
 ---
 # <a name="idebugthread2setthreadname"></a>IDebugThread2::SetThreadName
 設定執行緒的名稱。
@@ -36,8 +39,8 @@ int SetThreadName ( 
 );
 ```
 
-#### <a name="parameters"></a>參數
- `pszName`
+## <a name="parameters"></a>參數
+ `pszName`\
 
  [in]執行緒的名稱。
 

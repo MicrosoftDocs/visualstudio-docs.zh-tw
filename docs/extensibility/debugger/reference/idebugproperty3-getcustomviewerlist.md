@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7bf31379f99c9cde8b0050b080797f3a4e70acea
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 82b2e6da51b695bdc6fd2fd031a1f9decf484daa
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62916559"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65457649"
 ---
 # <a name="idebugproperty3getcustomviewerlist"></a>IDebugProperty3::GetCustomViewerList
 取得與這個屬性相關聯的自訂檢視器的清單。
@@ -42,20 +45,20 @@ int GetCustomViewerList(
 );
 ```
 
-#### <a name="parameters"></a>參數
-`celtSkip`
+## <a name="parameters"></a>參數
+`celtSkip`\
 
  [in]略過的檢視器的數目。
 
-`celtRequested`
+`celtRequested`\
 
  [in]若要擷取的檢視器的數目 (也會指定的大小`rgViewers`陣列)。
 
-`rgViewers`
+`rgViewers`\
 
  [in、 out]陣列[DEBUG_CUSTOM_VIEWER](../../../extensibility/debugger/reference/debug-custom-viewer.md)来填入結構。
 
-`pceltFetched`
+`pceltFetched`\
 
  [out]傳回的檢視器的實際數目。
 

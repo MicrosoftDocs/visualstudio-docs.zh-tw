@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 641687dbcfa6bf50ba9e848de589662d282d0c7b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 1c908658662d96d5c1ad5f3b16e9dcce2e4f7235
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62864569"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65458489"
 ---
 # <a name="threadpropertyfields"></a>THREADPROPERTY_FIELDS
 指定要擷取執行緒的相關資訊。
@@ -49,20 +52,27 @@ public enum enum_THREADPROPERTY_FIELDS { 
 };
 ```
 
-## <a name="members"></a>成員
- 初始化/使用 TPF_ID`dwThreadId`欄位[THREADPROPERTIES](../../../extensibility/debugger/reference/threadproperties.md)結構。
+## <a name="fields"></a>欄位
+ `TPF_ID`\
+ 初始化/使用`dwThreadId`欄位[THREADPROPERTIES](../../../extensibility/debugger/reference/threadproperties.md)結構。
 
- 初始化/使用 TPF_SUSPENDCOUNT`dwSuspendCount`欄位`THREADPROPERTIE`S 結構。
+ `TPF_SUSPENDCOUNT`\
+ 初始化/使用`dwSuspendCount`欄位`THREADPROPERTIE`S 結構。
 
- 初始化/使用 TPF_STATE`dwThreadState`欄位`THREADPROPERTIE`S 結構。
+ `TPF_STATE`\
+ 初始化/使用`dwThreadState`欄位`THREADPROPERTIE`S 結構。
 
- 初始化/使用 TPF_PRIORITY`bstrPriority`欄位`THREADPROPERTIE`S 結構。
+ `TPF_PRIORITY`\
+ 初始化/使用`bstrPriority`欄位`THREADPROPERTIE`S 結構。
 
- 初始化/使用 TPF_NAME`bstrName`欄位`THREADPROPERTIE`S 結構。
+ `TPF_NAME`\
+ 初始化/使用`bstrName`欄位`THREADPROPERTIE`S 結構。
 
- 初始化/使用 TPF_LOCATION`bstrLocation`欄位`THREADPROPERTIE`S 結構。
+ `TPF_LOCATION`\
+ 初始化/使用`bstrLocation`欄位`THREADPROPERTIE`S 結構。
 
- TPF_ALLFIELDS 指定所有欄位。
+ `TPF_ALLFIELDS`\
+ 指定所有欄位。
 
 ## <a name="remarks"></a>備註
  這些值會傳遞做為引數[GetThreadProperties](../../../extensibility/debugger/reference/idebugthread2-getthreadproperties.md)方法，以表示哪些欄位[THREADPROPERTIES](../../../extensibility/debugger/reference/threadproperties.md)結構會進行初始化。

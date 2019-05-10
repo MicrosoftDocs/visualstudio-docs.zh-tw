@@ -39,21 +39,25 @@
     - name: 使用偵錯工具巡覽程式碼
       href: navigating-through-code-with-the-debugger.md
     - name: 使用中斷點
-      href: using-breakpoints.md
       items:
+        - name: 使用中斷點
+          href: using-breakpoints.md
         - name: 針對中斷點進行疑難排解
           href: troubleshooting-breakpoints.md
     - name: 檢查資料
-      href: debugger-windows.md
       items:
+        - name: 檢查資料
+          href: debugger-windows.md
         - name: 檢查變數
           href: autos-and-locals-windows.md
         - name: 在變數上設定監看式
-          href: watch-and-quickwatch-windows.md
           items:
+            - name: 在變數上設定監看式
+              href: watch-and-quickwatch-windows.md
             - name: 偵錯工具中的運算式
-              href: expressions-in-the-debugger.md
               items:
+                - name: 偵錯工具中的運算式
+                  href: expressions-in-the-debugger.md
                 - name: C++ 中的格式規範
                   href: format-specifiers-in-cpp.md
                 - name: 內容運算子 (C++)
@@ -67,13 +71,15 @@
         - name: 在視覺化檢視中檢視字串值
           href: view-strings-visualizer.md
         - name: 檢視反組譯程式碼
-          href: how-to-use-the-disassembly-window.md
           items:
+            - name: 檢視反組譯程式碼
+              href: how-to-use-the-disassembly-window.md
             - name: 在記憶體中向上或向下翻頁
               href: how-to-page-up-or-down-in-memory.md
         - name: 檢視暫存器值
-          href: how-to-use-the-registers-window.md
           items:
+            - name: 檢視暫存器值
+              href: how-to-use-the-registers-window.md
             - name: 關於暫存器視窗
               href: debugging-basics-registers-window.md
             - name: 顯示和隱藏暫存器群組
@@ -85,34 +91,39 @@
         - name: 在偵錯時檢查 XAML 屬性
           href: inspect-xaml-properties-while-debugging.md
     - name: 檢視呼叫堆疊
-      href: how-to-use-the-call-stack-window.md
       items:
+        - name: 檢視呼叫堆疊
+          href: how-to-use-the-call-stack-window.md
         - name: 建立呼叫堆疊的視覺對應
           href: map-methods-on-the-call-stack-while-debugging-in-visual-studio.md
         - name: 呼叫堆疊視窗內的混合程式碼和遺失的資訊
           href: mixed-code-and-missing-information-in-the-call-stack-window.md
     - name: 編輯程式碼並繼續偵錯
-      href: edit-and-continue.md
       items:
+        - name: 編輯程式碼並繼續偵錯
+          href: edit-and-continue.md
         - name: 啟用和停用編輯後繼續
           href: how-to-enable-and-disable-edit-and-continue.md
         - name: 停止程式碼變更
           href: how-to-stop-code-changes.md
         - name: Edit and Continue (Visual C++)
-          href: edit-and-continue-visual-cpp.md
           items:
+            - name: Edit and Continue (Visual C++)
+              href: edit-and-continue-visual-cpp.md
             - name: 支援的程式碼變更 (C++)
               href: supported-code-changes-cpp.md
         - name: '編輯後繼續 (Visual C#)'
-          href: edit-and-continue-visual-csharp.md
           items:
+            - name: '編輯後繼續 (Visual C#)'
+              href: edit-and-continue-visual-csharp.md
             - name: '使用編輯後繼續 (C#)'
               href: how-to-use-edit-and-continue-csharp.md
             - name: 支援的程式碼變更
               href: supported-code-changes-csharp.md
         - name: 編輯後繼續 (Visual Basic)
-          href: edit-and-continue-visual-basic.md
           items:
+            - name: 編輯後繼續 (Visual Basic)
+              href: edit-and-continue-visual-basic.md
             - name: 以編輯後繼續在中斷模式中套用編輯
               href: how-to-apply-edits-in-break-mode-with-edit-and-continue.md
         - name: 撰寫 XAML 程式碼及針對其執行進行偵錯
@@ -122,36 +133,41 @@
     - name: 檢視偵錯工具資料
       items:
         - name: 檢視模組
-          href: how-to-use-the-modules-window.md
           items:
+            - name: 檢視模組
+              href: how-to-use-the-modules-window.md
             - name: 尋找程式損毀時所在的 DLL
               href: how-to-find-which-dll-your-program-crashed-in.md
         - name: 檢視指令碼文件
           href: how-to-view-script-documents.md
     - name: 偵錯工具祕訣與技巧
-      href: debugger-tips-and-tricks.md
       items:
+        - name: 偵錯工具祕訣與技巧
+          href: debugger-tips-and-tricks.md
         - name: 使用偵錯工具附加至執行中處理序
           href: attach-to-running-processes-with-the-visual-studio-debugger.md
         - name: 在設計階段偵錯
           href: walkthrough-debugging-at-design-time.md
         - name: 使用 Just-In-Time 偵錯工具進行偵錯
-          href: debug-using-the-just-in-time-debugger.md
           items:
+            - name: 使用 Just-In-Time 偵錯工具進行偵錯
+              href: debug-using-the-just-in-time-debugger.md
             - name: 停用 Just-In-Time 偵錯工具
               href: just-in-time-debugging-in-visual-studio.md
     - name: 設定偵錯
       items:
         - name: 使用偵錯工具管理例外狀況
-          href: managing-exceptions-with-the-debugger.md
           items:
+            - name: 使用偵錯工具管理例外狀況
+              href: managing-exceptions-with-the-debugger.md
             - name: 於例外狀況之後繼續執行
               href: continuing-execution-after-an-exception.md
             - name: 在發生例外狀況後檢查系統程式碼
               href: how-to-examine-system-code-after-an-exception.md
             - name: 使用原生執行階段檢查
-              href: how-to-use-native-run-time-checks.md
               items:
+                - name: 使用原生執行階段檢查
+                  href: how-to-use-native-run-time-checks.md
                 - name: 自訂原生執行階段檢查
                   href: native-run-time-checks-customization.md
                 - name: 撰寫執行階段錯誤報告函式
@@ -163,18 +179,21 @@
         - name: 對使用者程式碼進行偵錯
           href: just-my-code.md
         - name: 偵錯設定和準備
-          href: debugger-settings-and-preparation.md
           items:
+            - name: 偵錯設定和準備
+              href: debugger-settings-and-preparation.md
             - name: 偵錯工具專案設定
-              href: debugger-project-settings.md
               items:
+                - name: 偵錯工具專案設定
+                  href: debugger-project-settings.md
                 - name: 指定偵錯工具設定
                   href: how-to-specify-debugger-settings.md
                 - name: 設定偵錯和發行組態
                   href: how-to-set-debug-and-release-configurations.md
                 - name: C++ 偵錯組態的專案設定
-                  href: project-settings-for-a-cpp-debug-configuration.md
                   items:
+                    - name: C++ 偵錯組態的專案設定
+                      href: project-settings-for-a-cpp-debug-configuration.md
                     - name: 啟用 Visual C++ 中的偵錯功能 (-D_DEBUG)
                       href: enabling-debug-features-in-visual-cpp-d-debug.md
                 - name: Web 專案的屬性頁設定
@@ -184,8 +203,9 @@
                 - name: Visual Basic 偵錯組態的專案設定
                   href: project-settings-for-a-visual-basic-debug-configuration.md
             - name: 對 DLL 專案進行偵錯
-              href: debugging-dll-projects.md
               items:
+                - name: 對 DLL 專案進行偵錯
+                  href: debugging-dll-projects.md
                 - name: 從 DLL 專案進行偵錯
                   href: how-to-debug-from-a-dll-project.md
                 - name: 在混合模式中進行偵錯
@@ -199,23 +219,27 @@
             - name: 指定偵錯的 .NET Framework 版本
               href: how-to-specify-a-dotnet-framework-version-for-debugging.md
         - name: 建立資料的自訂檢視
-          href: viewing-data-in-the-debugger.md
           items:
+            - name: 建立資料的自訂檢視
+              href: viewing-data-in-the-debugger.md
             - name: 建立 C++ 物件的自訂檢視
-              href: create-custom-views-of-native-objects.md
               items:
+                - name: 建立 C++ 物件的自訂檢視
+                  href: create-custom-views-of-native-objects.md
                 - name: Visual C++ 自訂視覺化檢視相容性
                   href: visual-cpp-custom-visualizer-compatibility.md
             - name: 建立受控物件的自訂檢視
-              href: create-custom-views-of-dot-managed-objects.md
               items:
+                - name: 建立受控物件的自訂檢視
+                  href: create-custom-views-of-dot-managed-objects.md
                 - name: 告訴偵錯工具要顯示的項目
                   href: using-the-debuggerdisplay-attribute.md
                 - name: 告訴偵錯工具要顯示的類型
                   href: using-debuggertypeproxy-attribute.md
             - name: 建立資料的自訂視覺化檢視
-              href: create-custom-visualizers-of-data.md
               items:
+                - name: 建立資料的自訂視覺化檢視
+                  href: create-custom-visualizers-of-data.md
                 - name: 視覺化檢視架構
                   href: visualizer-architecture.md
                 - name: '逐步解說：以 C# 撰寫視覺化檢視'
@@ -233,8 +257,9 @@
         - name: 還原隱藏的偵錯工具命令
           href: how-to-restore-hidden-debugger-commands.md
     - name: 遠端偵錯
-      href: remote-debugging.md
       items:
+        - name: 遠端偵錯
+          href: remote-debugging.md
         - name: 在 IIS 電腦上對 ASP.NET Core 進行遠端偵錯
           href: remote-debugging-aspnet-on-a-remote-iis-computer.md
         - name: 在 IIS 電腦上對 ASP.NET 進行遠端偵錯
@@ -252,8 +277,9 @@
         - name: 解除封鎖 Windows Server 上的下載
           href: remote-debugging-unblock-file-download.md
         - name: 遠端偵錯錯誤和疑難排解
-          href: remote-debugging-errors-and-troubleshooting.md
           items:
+            - name: 遠端偵錯錯誤和疑難排解
+              href: remote-debugging-errors-and-troubleshooting.md
             - name: 遠端電腦上的 Microsoft Visual Studio 遠端偵錯監視沒有連線至這部電腦的權限
               href: error-the-microsoft-visual-studio-remote-debugging-monitor-no-permission.md
             - name: 嘗試聯繫遠端電腦時，發生 DCOM 錯誤。 存取被拒絕。
@@ -299,13 +325,15 @@
             - name: '遠端電腦未顯示於 [遠端連線] 對話方塊'
               href: error-remote-machine-does-not-appear-in-a-remote-connections-dialog.md
     - name: 對多執行緒應用程式進行偵錯
-      href: debug-multithreaded-applications-in-visual-studio.md
       items:
+        - name: 對多執行緒應用程式進行偵錯
+          href: debug-multithreaded-applications-in-visual-studio.md
         - name: 開始對多執行緒應用程式進行偵錯
           href: get-started-debugging-multithreaded-apps.md
         - name: 對執行緒和處理序進行偵錯的工具
-          href: debug-threads-and-processes.md
           items:
+            - name: 對執行緒和處理序進行偵錯的工具
+              href: debug-threads-and-processes.md
             - name: 使用平行堆疊視窗
               href: using-the-parallel-stacks-window.md
             - name: 使用平行監看式視窗
@@ -335,8 +363,9 @@
         - name: 在受控碼中設定執行緒名稱
           href: how-to-set-a-thread-name-in-managed-code.md
     - name: IntelliTrace
-      href: intellitrace.md
       items:
+        - name: IntelliTrace
+          href: intellitrace.md
         - name: 使用 IntelliTrace 檢視快照集
           href: view-snapshots-with-intellitrace.md
         - name: 使用 IntelliTrace 檢視事件
@@ -348,8 +377,9 @@
         - name: 使用歷程偵錯檢查您的應用程式
           href: historical-debugging-inspect-app.md
         - name: 於部署後診斷問題
-          href: diagnose-problems-after-deployment.md
           items:
+            - name: 於部署後診斷問題
+              href: diagnose-problems-after-deployment.md
             - name: 使用 IntelliTrace 獨立收集器
               href: using-the-intellitrace-stand-alone-collector.md
             - name: 使用 Microsoft Monitoring Agent
@@ -359,8 +389,9 @@
         - name: IntelliTrace 擴充性的 API 參考
           href: api-reference-for-intellitrace-extensibility.md
     - name: 對 Azure 服務進行偵錯
-      href: debug-azure-apps.md
       items:
+        - name: 對 Azure 服務進行偵錯
+          href: debug-azure-apps.md
         - name: 對即時 Azure 應用程式進行偵錯
           href: debug-live-azure-applications.md
         - name: 對即時 Azure 虛擬機器應用程式偵錯
@@ -374,16 +405,19 @@
         - name: 時間移動偵錯即時 Azure 虛擬機器應用程式
           href: debug-live-azure-virtual-machines-time-travel-debugging.md
     - name: 對特定應用程式類型進行偵錯
-      href: debugging-applications.md
       items:
+        - name: 對特定應用程式類型進行偵錯
+          href: debugging-applications.md
         - name: 對 64 位元應用程式進行偵錯
           href: debug-64-bit-applications.md
         - name: 對 UWP 應用程式進行偵錯
-          href: debugging-windows-store-and-windows-universal-apps.md
           items:
+            - name: 對 UWP 應用程式進行偵錯
+              href: debugging-windows-store-and-windows-universal-apps.md
             - name: 啟動 UWP 應用程式 的偵錯工作階段
-              href: start-a-debugging-session-for-a-store-app-in-visual-studio-vb-csharp-cpp-and-xaml.md
               items:
+                - name: 啟動 UWP 應用程式 的偵錯工作階段
+                  href: start-a-debugging-session-for-a-store-app-in-visual-studio-vb-csharp-cpp-and-xaml.md
                 - name: 在遠端電腦上對 UWP 應用程式偵錯
                   href: run-windows-store-apps-on-a-remote-machine.md
                 - name: 在模擬器中執行 UWP 應用程式
@@ -395,8 +429,9 @@
             - name: 在 Blend 中偵錯 XAML
               href: debug-xaml-in-blend.md
             - name: 偵錯 HTML 和 CSS
-              href: quickstart-debug-html-and-css.md
               items:
+                - name: 偵錯 HTML 和 CSS
+                  href: quickstart-debug-html-and-css.md
                 - name: 重新整理應用程式 (JavaScript)
                   href: refresh-an-app-javascript.md
                 - name: 偵錯 WebView 控制項
@@ -410,11 +445,13 @@
             - name: 預先擷取 Microsoft Store 應用程式的內容
               href: prefetch-content-for-windows-store-apps.md
         - name: 對受控碼進行偵錯
-          href: debugging-managed-code.md
           items:
+            - name: 對受控碼進行偵錯
+              href: debugging-managed-code.md
             - name: '偵錯準備：C#、F# 和 Visual Basic 專案類型'
-              href: debugging-preparation-csharp-f-hash-and-visual-basic-project-types.md
               items:
+                - name: '偵錯準備：C#、F# 和 Visual Basic 專案類型'
+                  href: debugging-preparation-csharp-f-hash-and-visual-basic-project-types.md
                 - name: 受控偵錯：建議的屬性設定
                   href: managed-debugging-recommended-property-settings.md
                 - name: 偵錯準備：Windows Form 應用程式
@@ -442,8 +479,9 @@
             - name: 對 .NET Framework 原始檔進行偵錯
               href: how-to-debug-dotnet-framework-source.md
             - name: 對 WPF 進行偵錯
-              href: debugging-wpf.md
               items:
+                - name: 對 WPF 進行偵錯
+                  href: debugging-wpf.md
                 - name: 使用 WPF 樹狀架構視覺化檢視
                   href: how-to-use-the-wpf-tree-visualizer.md
                 - name: 顯示 WPF 追蹤資訊
@@ -451,8 +489,9 @@
             - name: '對 F# 進行偵錯'
               href: debugging-f-hash.md
         - name: 對機器碼進行偵錯
-          href: debugging-native-code.md
           items:
+            - name: 對機器碼進行偵錯
+              href: debugging-native-code.md
             - name: 偵錯準備：Visual C++ 專案類型
               href: debugging-preparation-visual-cpp-project-types.md
             - name: 對最佳化程式碼進行偵錯
@@ -466,8 +505,9 @@
             - name: MFC 偵錯技術
               href: mfc-debugging-techniques.md
             - name: CRT 偵錯技術
-              href: crt-debugging-techniques.md
               items:
+                - name: CRT 偵錯技術
+                  href: crt-debugging-techniques.md
                 - name: CRT 偵錯程式庫操作
                   href: crt-debug-library-use.md
                 - name: 報告巨集
@@ -477,13 +517,15 @@
                 - name: CRT 偵錯堆積詳細資料
                   href: crt-debug-heap-details.md
                 - name: 撰寫偵錯攔截函式
-                  href: debug-hook-function-writing.md
                   items:
+                    - name: 撰寫偵錯攔截函式
+                      href: debug-hook-function-writing.md
                     - name: 用戶端區塊攔截函式
                       href: client-block-hook-functions.md
                     - name: 配置攔截函式
-                      href: allocation-hook-functions.md
                       items:
+                        - name: 配置攔截函式
+                          href: allocation-hook-functions.md
                         - name: 配置攔截和 C 執行階段記憶體配置
                           href: allocation-hooks-and-c-run-time-memory-allocations.md
                     - name: 報告攔截函式
@@ -491,8 +533,9 @@
                 - name: 尋找 CRT 程式庫的記憶體流失問題
                   href: finding-memory-leaks-using-the-crt-library.md
             - name: 對機器碼進行偵錯的常見問題集
-              href: debugging-native-code-faqs.md
               items:
+                - name: 對機器碼進行偵錯的常見問題集
+                  href: debugging-native-code-faqs.md
                 - name: 如何對存取違規進行偵錯？
                   href: how-can-i-debug-an-access-violation-q.md
                 - name: 在偵錯工具外執行程式時，如何對存取違規進行偵錯？
@@ -514,16 +557,19 @@
                 - name: 於暫止時回到呼叫 MFC 的函式
                   href: how-to-get-back-to-the-function-that-called-mfc-if-halted.md
             - name: 對 COM 和 ActiveX 進行偵錯
-              href: com-and-activex-debugging.md
               items:
+                - name: 對 COM 和 ActiveX 進行偵錯
+                  href: com-and-activex-debugging.md
                 - name: COM 伺服器和容器偵錯
-                  href: com-server-and-container-debugging.md
                   items:
+                    - name: COM 伺服器和容器偵錯
+                      href: com-server-and-container-debugging.md
                     - name: 使用 RPC 偵錯對 COM 用戶端和伺服器進行偵錯
                       href: how-to-debug-com-clients-and-servers-using-rpc-debugging.md
                 - name: 對 ActiveX 控制項進行偵錯
-                  href: how-to-debug-an-activex-control.md
                   items:
+                    - name: 對 ActiveX 控制項進行偵錯
+                      href: how-to-debug-an-activex-control.md
                     - name: 對資料繫結的 ActiveX 控制項進行偵錯
                       href: debugging-a-data-bound-activex-control.md
                 - name: COM 偵錯工具
@@ -535,8 +581,9 @@
         - name: 圖形診斷
           href: graphics/toc.yml
         - name: 對 ASP.NET 應用程式進行偵錯
-          href: how-to-enable-debugging-for-aspnet-applications.md
           items:
+            - name: 對 ASP.NET 應用程式進行偵錯
+              href: how-to-enable-debugging-for-aspnet-applications.md
             - name: ASP.NET 偵錯：系統需求
               href: aspnet-debugging-system-requirements.md
             - name: 在使用者帳戶下執行背景工作處理序
@@ -550,11 +597,13 @@
             - name: 對 ASP.NET 例外狀況進行偵錯
               href: how-to-debug-aspnet-exceptions.md
             - name: 偵錯 Web 應用程式：錯誤和疑難排解
-              href: debugging-web-applications-errors-and-troubleshooting.md
               items:
+                - name: 偵錯 Web 應用程式：錯誤和疑難排解
+                  href: debugging-web-applications-errors-and-troubleshooting.md
                 - name: 偵錯 Web 應用程式：疑難排解
-                  href: debugging-web-applications-troubleshooting.md
                   items:
+                    - name: 偵錯 Web 應用程式：疑難排解
+                      href: debugging-web-applications-troubleshooting.md
                     - name: 檢查 IIS 屬性設定
                       href: how-to-verify-iis-property-settings.md
                 - name: 網站使用 IP 位址
@@ -570,32 +619,37 @@
                 - name: 對 Web 服務進行偵錯時逾時
                   href: error-timeout-while-debugging-web-services.md
                 - name: 無法在 Web 伺服器上啟動偵錯
-                  href: error-unable-to-start-debugging-on-the-web-server.md
                   items:
+                    - name: 無法在 Web 伺服器上啟動偵錯
+                      href: error-unable-to-start-debugging-on-the-web-server.md
                     - name: Web 伺服器找不到要求的資源
                       href: error-the-web-server-could-not-find-the-requested-resource.md
                     - name: 未正確設定 Web 伺服器
                       href: error-the-web-server-is-not-configured-correctly.md
         - name: 對 Web 應用程式進行偵錯
-          href: debugging-web-applications.md
           items:
+            - name: 對 Web 應用程式進行偵錯
+              href: debugging-web-applications.md
             - name: JavaScript Console commands
               href: javascript-console-commands.md
             - name: 鍵盤快速鍵 (HTML 和 JavaScript)
               href: keyboard-shortcuts-html-and-javascript.md
             - name: 用戶端指令碼偵錯
-              href: client-side-script-debugging.md
               items:
+                - name: 用戶端指令碼偵錯
+                  href: client-side-script-debugging.md
                 - name: 指令碼偵錯的限制
                   href: limitations-on-script-debugging.md
                 - name: 附加至指令碼
-                  href: how-to-attach-to-script.md
                   items:
+                    - name: 附加至指令碼
+                      href: how-to-attach-to-script.md
                     - name: 警告：已停用指令碼偵錯
                       href: warning-script-debugging-disabled.md
         - name: 對 WCF 服務進行偵錯
-          href: debugging-wcf-services.md
           items:
+            - name: 對 WCF 服務進行偵錯
+              href: debugging-wcf-services.md
             - name: WCF 偵錯的限制
               href: limitations-on-wcf-debugging.md
             - name: 逐步執行 WCF 服務
@@ -603,8 +657,9 @@
             - name: 對自我裝載的 WCF 服務進行偵錯
               href: how-to-debug-a-self-hosted-wcf-service.md
     - name: 使用傾印檔案
-      href: using-dump-files.md
       items:
+        - name: 使用傾印檔案
+          href: using-dump-files.md
         - name: 傾印檔案摘要擴充性 API
           href: dump-file-summary-extensibility-api.md
     - name: 偵錯工具安全性
@@ -612,15 +667,17 @@
 - name: 參考資料
   items:
     - name: 偵錯使用者介面參考
-      href: debugging-user-interface-reference.md
       items:
+        - name: 偵錯使用者介面參考
+          href: debugging-user-interface-reference.md
         - name: '[選擇中斷點] 對話方塊'
           href: choose-breakpoints-dialog-box.md
         - name: 設定遠端偵錯防火牆對話方塊
           href: configure-firewall-for-remote-debugging-dialog-box.md
         - name: 選項對話方塊、偵錯
-          href: debugging-options-dialog-box.md
           items:
+            - name: 選項對話方塊、偵錯
+              href: debugging-options-dialog-box.md
             - name: 選項對話方塊、偵錯、一般
               href: general-debugging-options-dialog-box.md
             - name: 選項對話方塊、偵錯、Just-In-Time
@@ -644,8 +701,9 @@
         - name: '[叫用中斷點時] 對話方塊'
           href: when-breakpoint-is-hit-dialog-box.md
         - name: 偵錯錯誤和警告對話方塊
-          href: debugging-errors-and-warning-dialog-boxes.md
           items:
+            - name: 偵錯錯誤和警告對話方塊
+              href: debugging-errors-and-warning-dialog-boxes.md
             - name: 判斷提示已失敗對話方塊
               href: assertion-failed-dialog-box.md
             - name: 無法變更值對話方塊
@@ -699,11 +757,13 @@
     - name: 偵錯 (偵錯介面存取 SDK)
       href: debug-interface-access/debug-interface-access-sdk.md
     - name: Spy++ 說明
-      href: spy-increment-help.md
       items:
+        - name: Spy++ 說明
+          href: spy-increment-help.md
         - name: 使用 Spy++
-          href: using-spy-increment.md
           items:
+            - name: 使用 Spy++
+              href: using-spy-increment.md
             - name: Spy++ 簡介
               href: introducing-spy-increment.md
             - name: 啟動 Spy++
@@ -719,11 +779,13 @@
             - name: 展開和摺疊 Spy++ 樹狀結構
               href: how-to-expand-and-collapse-spy-increment-trees.md
         - name: Spy++ 檢視
-          href: spy-increment-views.md
           items:
+            - name: Spy++ 檢視
+              href: spy-increment-views.md
             - name: 視窗檢視
-              href: windows-view.md
               items:
+                - name: 視窗檢視
+                  href: windows-view.md
                 - name: 使用搜尋工具
                   href: how-to-use-the-finder-tool.md
                 - name: 在視窗檢視中搜尋視窗
@@ -731,8 +793,9 @@
                 - name: 顯示視窗屬性
                   href: how-to-display-window-properties.md
             - name: 訊息檢視
-              href: messages-view.md
               items:
+                - name: 訊息檢視
+                  href: messages-view.md
                 - name: 控制訊息檢視
                   href: how-to-control-messages-view.md
                 - name: 從尋找視窗開啟訊息檢視
@@ -746,25 +809,29 @@
                 - name: 顯示訊息屬性
                   href: how-to-display-message-properties.md
             - name: 處理序檢視
-              href: processes-view.md
               items:
+                - name: 處理序檢視
+                  href: processes-view.md
                 - name: 在處理序檢視中搜尋處理序
                   href: how-to-search-for-a-process-in-processes-view.md
                 - name: 顯示處理序屬性
                   href: how-to-display-process-properties.md
             - name: 執行緒檢視
-              href: threads-view.md
               items:
+                - name: 執行緒檢視
+                  href: threads-view.md
                 - name: 在執行緒檢視中搜尋執行緒
                   href: how-to-search-for-a-thread-in-threads-view.md
                 - name: 顯示執行緒屬性
                   href: how-to-display-thread-properties.md
         - name: Spy++ 參考
-          href: spy-increment-reference.md
           items:
+            - name: Spy++ 參考
+              href: spy-increment-reference.md
             - name: 功能表命令
-              href: menu-commands.md
               items:
+                - name: 功能表命令
+                  href: menu-commands.md
                 - name: Spy 功能表命令
                   href: spy-menu-commands.md
                 - name: 樹狀結構功能表命令
@@ -782,8 +849,9 @@
             - name: 字型對話方塊 (Microsoft Spy++ 說明)
               href: font-dialog-box-microsoft-spy-increment-help.md
             - name: Spy++ 檢視的搜尋工具
-              href: search-tools-for-spy-increment-views.md
               items:
+                - name: Spy++ 檢視的搜尋工具
+                  href: search-tools-for-spy-increment-views.md
                 - name: 尋找視窗對話方塊
                   href: find-window-dialog-box.md
                 - name: 視窗搜尋對話方塊
@@ -795,8 +863,9 @@
                 - name: 執行緒搜尋對話方塊
                   href: thread-search-dialog-box.md
             - name: 視窗屬性對話方塊
-              href: window-properties-dialog-box.md
               items:
+                - name: 視窗屬性對話方塊
+                  href: window-properties-dialog-box.md
                 - name: 視窗屬性對話方塊、一般索引標籤
                   href: general-tab-window-properties-dialog-box.md
                 - name: 視窗屬性對話方塊、樣式索引標籤
@@ -808,8 +877,9 @@
                 - name: 視窗屬性對話方塊、處理序索引標籤
                   href: process-tab-window-properties-dialog-box.md
             - name: 訊息選項對話方塊
-              href: message-options-dialog-box.md
               items:
+                - name: 訊息選項對話方塊
+                  href: message-options-dialog-box.md
                 - name: 訊息選項對話方塊、視窗索引標籤
                   href: windows-tab-message-options-dialog-box.md
                 - name: 訊息選項對話方塊、訊息索引標籤
@@ -819,8 +889,9 @@
             - name: 訊息屬性對話方塊
               href: message-properties-dialog-box.md
             - name: 處理序屬性對話方塊
-              href: process-properties-dialog-box.md
               items:
+                - name: 處理序屬性對話方塊
+                  href: process-properties-dialog-box.md
                 - name: 處理序屬性對話方塊、一般索引標籤
                   href: general-tab-process-properties-dialog-box.md
                 - name: 處理序屬性對話方塊、記憶體索引標籤
@@ -830,13 +901,15 @@
                 - name: 處理序屬性對話方塊、空間索引標籤
                   href: space-tab-process-properties-dialog-box.md
             - name: 執行緒屬性對話方塊
-              href: thread-properties-dialog-box.md
               items:
+                - name: 執行緒屬性對話方塊
+                  href: thread-properties-dialog-box.md
                 - name: 執行緒屬性對話方塊、一般索引標籤
                   href: general-tab-thread-properties-dialog-box.md
             - name: 其他對話方塊
-              href: other-dialog-boxes.md
               items:
+                - name: 其他對話方塊
+                  href: other-dialog-boxes.md
                 - name: 關於 Microsoft Spy++
                   href: about-microsoft-spy-increment.md
                 - name: Spy++ 說明的著作權注意事項

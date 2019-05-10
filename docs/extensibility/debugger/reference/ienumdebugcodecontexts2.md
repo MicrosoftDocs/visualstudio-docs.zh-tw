@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 282dd2db7048a9cd69ecf38839338ae29015f3f9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: cd05ffc383e4b2e37280f7b8967915675dec69b9
+ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62914963"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65223347"
 ---
 # <a name="ienumdebugcodecontexts2"></a>IEnumDebugCodeContexts2
 此介面列舉與偵錯工作階段中，或特定的程式或文件相關聯的程式碼內容。

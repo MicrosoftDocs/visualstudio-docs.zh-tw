@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b20222db9b007fbeee6daf0df1921e4c56744818
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 071dac72e39a3cce5b0b17dc9e401b9072efda6a
+ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62915823"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65224063"
 ---
 # <a name="idebugsymbolprovidergetlanguage"></a>IDebugSymbolProvider::GetLanguage
 這個方法會取得已編譯程式碼在偵錯位址使用的語言。
@@ -40,16 +43,16 @@ int GetLanguage(
 );
 ```
 
-#### <a name="parameters"></a>參數
- `pAddress`
+## <a name="parameters"></a>參數
+ `pAddress`\
 
  [in]位址物件，表示所[IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md)介面。
 
- `pguidLanguage`
+ `pguidLanguage`\
 
  [out]傳回`GUID`所指定的語言。
 
- `pguidLanguageVendor`
+ `pguidLanguageVendor`\
 
  [out]傳回`GUID`，指定的語言廠商。
 

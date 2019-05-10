@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b39eff84e1933c6181b3e6ae03bd6055b33570e2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1741c12a7e51d08f0bd575d79e3ca789428dad0a
+ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62914319"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65225507"
 ---
 # <a name="ienumdebugports2"></a>IEnumDebugPorts2
 此介面列舉電腦或連接埠的供應商的連接的埠。

@@ -11,12 +11,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2f75428155cfff20ce280d8428839d4332d13031
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 1894c5488c6d9405f8b1d84ae2cb2d497fb0542b
+ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62868098"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65226152"
 ---
 # <a name="idebugwindowscomputerport2getcomputerinfo"></a>IDebugWindowsComputerPort2::GetComputerInfo
 擷取電腦的相關資訊的偵錯工具中執行。
@@ -35,8 +38,8 @@ public int GetComputerInfo(
 );
 ```
 
-#### <a name="parameters"></a>參數
- `pInfo`
+## <a name="parameters"></a>參數
+ `pInfo`\
 
  [out]結構，其中包含電腦資訊的參考。
 
