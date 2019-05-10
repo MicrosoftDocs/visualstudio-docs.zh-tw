@@ -9,12 +9,12 @@ ms.author: heaths
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c13146d0d48dc176417040bcb756bf8069ad3c3e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: a7187fbcc3e3aca990846176676a47f5d17aaf00
+ms.sourcegitcommit: 62f42113ae4dae1ddfff1c4e02445acc09913445
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62907302"
+ms.lasthandoff: 04/29/2019
+ms.locfileid: "64878149"
 ---
 # <a name="locate-visual-studio"></a>尋找 Visual Studio
 
@@ -42,3 +42,4 @@ ms.locfileid: "62907302"
 ## <a name="see-also"></a>另請參閱
 
 * [Visual Studio 2017 安裝程式的變更](https://devblogs.microsoft.com/setup/changes-to-visual-studio-15-setup/)
+* [啟動 Visual Studio 中使用 DTE](launch-visual-studio-dte.md)
