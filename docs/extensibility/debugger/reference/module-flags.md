@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c3ec96c5ba806e6eff735edc8093868b19ebaf5b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: b090fecf532ef862660b26432e930830cdb1d12b
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62913831"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65460952"
 ---
 # <a name="moduleflags"></a>MODULE_FLAGS
 用來描述模組。
@@ -47,18 +50,24 @@ public enum enum_MODULE_FLAGS { 
 };
 ```
 
-## <a name="members"></a>成員
- MODULE_FLAG_NONE 指定沒有模組。
+## <a name="fields"></a>欄位
+ `MODULE_FLAG_NONE`\
+ 指定沒有模組。
 
- MODULE_FLAG_SYSTEM 指定系統模組。
+ `MODULE_FLAG_SYSTEM`\
+ 指定系統模組。
 
- MODULE_FLAG_SYMBOLS 指定符號的模組。
+ `MODULE_FLAG_SYMBOLS`\
+ 指定符號的模組。
 
- MODULE_FLAG_64BIT 指定 64 位元模組。
+ `MODULE_FLAG_64BIT`\
+ 指定 64 位元模組。
 
- MODULE_FLAG_OPTIMIZED 指定了模組已經過最佳化。 此狀態會反映在**模組**視窗。
+ `MODULE_FLAG_OPTIMIZED`\
+ 指定模組已經過最佳化。 此狀態會反映在**模組**視窗。
 
- MODULE_FLAG_UNOPTIMIZED 指定了模組尚未經過最佳化。 此狀態會反映在**模組**視窗。 這是預設狀態。
+ `MODULE_FLAG_UNOPTIMIZED`\
+ 指定模組尚未經過最佳化。 此狀態會反映在**模組**視窗。 這是預設狀態。
 
 ## <a name="remarks"></a>備註
  用於`m_dwModuleFlags`隸屬[MODULE_INFO](../../../extensibility/debugger/reference/module-info.md)結構。

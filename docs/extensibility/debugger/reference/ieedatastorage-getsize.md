@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: eff31ef70fc8cb812ff820a92653b6bb0cab6cd5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: e5bcbfe60284cb254054e66b9e03b5e0e31ce4b1
+ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62868220"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65224132"
 ---
 # <a name="ieedatastoragegetsize"></a>IEEDataStorage::GetSize
 傳回此物件包含的位元組數目。
@@ -36,8 +39,8 @@ int GetSize(
 );
 ```
 
-#### <a name="parameters"></a>參數
- `size`
+## <a name="parameters"></a>參數
+ `size`\
 
  [out]此物件包含的位元組數目。
 

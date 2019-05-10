@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ae1e87ad302cbd25fcda691b47372f4fbd5d1771
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: a866071b09c07f42d21bbf90de3bd6eda6717ab2
+ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62866053"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65223259"
 ---
 # <a name="ienumdebugpropertyinfo2next"></a>IEnumDebugPropertyInfo2::Next
 從列舉中傳回下的一個項目集。
@@ -40,16 +43,16 @@ int Next(
 );
 ```
 
-#### <a name="parameters"></a>參數
- `celt`
+## <a name="parameters"></a>參數
+ `celt`\
 
  [in]若要擷取的元素數目。 也會指定的大小上限`rgelt`陣列。
 
- `rgelt`
+ `rgelt`\
 
  [in、 out]陣列[DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md)来填入的項目。
 
- `pceltFetched`
+ `pceltFetched`\
 
  [out]傳回的項目數中實際傳回`rgelt`。
 

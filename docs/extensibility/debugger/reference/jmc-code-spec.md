@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0fd27ee043e55b4dd43be956e41dd870be550562
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 4fe0a804922296e26846b9b477091883c742253e
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62865874"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65458088"
 ---
 # <a name="jmccodespec"></a>JMC_CODE_SPEC
 此結構用來設定模組的 JustMyCode 資訊。
@@ -39,9 +42,11 @@ public struct JMC_CODE_SPEC {
 ```
 
 ## <a name="members"></a>成員
-fIsUserCode 非零 (`TRUE`) 模組時才會被視為使用者程式碼; 否則為零 (`FALSE`) 如果模組已被視為外部程式碼，而不進行偵錯。
+`fIsUserCode`\
+非零 (`TRUE`) 模組時才會被視為使用者程式碼; 否則為零 (`FALSE`) 如果模組已被視為外部程式碼，而不進行偵錯。
 
-bstrModuleName 有問題的模組名稱。
+`bstrModuleName`\
+有問題的模組名稱。
 
 ## <a name="remarks"></a>備註
 此結構會當做一份這類的結構，以傳遞[SetJustMyCodeState](../../../extensibility/debugger/reference/idebugengine3-setjustmycodestate.md)方法。

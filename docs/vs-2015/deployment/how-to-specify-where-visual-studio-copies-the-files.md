@@ -17,12 +17,12 @@ caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 5d36c5dafa37673263ab13dc46c7f02e44448fd8
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 8759145dd4a7647cad6e9964ae1f1c97d333b626
+ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63441622"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65226168"
 ---
 # <a name="how-to-specify-where-visual-studio-copies-the-files"></a>HOW TO：指定 Visual Studio 複製檔案的位置
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,7 +44,7 @@ ms.locfileid: "63441622"
 
    - 若要發行至檔案共用或磁碟路徑，請使用 UNC 路徑中輸入的路徑 (\\\Server\ApplicationName) 或檔案路徑 (C:\Deploy\ApplicationName)。
 
-   - 若要發行至 FTP 伺服器，請使用 ftp://ftp.microsoft.com/ApplicationName 格式來輸入路徑。
+   - 若要發行至 FTP 伺服器，請輸入路徑使用格式 ftp:\//ftp.microsoft.com/ApplicationName。
 
      請注意，文字必須出現在 [發佈位置] 方塊中才能讓 [瀏覽] (**...**) 按鈕運作。
 

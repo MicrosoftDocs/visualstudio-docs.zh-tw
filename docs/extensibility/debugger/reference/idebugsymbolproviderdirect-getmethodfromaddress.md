@@ -11,12 +11,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a0eecc7331bc510366cd012e30cc1088ef6c60da
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 76bec7cb621605933f8cc0b15ff6cb6e4dd6d70e
+ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62868453"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65224006"
 ---
 # <a name="idebugsymbolproviderdirectgetmethodfromaddress"></a>IDebugSymbolProviderDirect::GetMethodFromAddress
 擷取在指定的偵錯位址之方法的相關資訊。
@@ -47,32 +50,32 @@ int GetMethodFromAddress(
 );
 ```
 
-#### <a name="parameters"></a>參數
- `pAddress`
+## <a name="parameters"></a>參數
+ `pAddress`\
 
  [in]偵錯所表示的地址[IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md)介面。
 
- `pGuid`
+ `pGuid`\
 
  [out]模組的唯一識別碼。
 
- `pAppID`
+ `pAppID`\
 
  [out]應用程式定義域的識別項。
 
- `pTokenClass`
+ `pTokenClass`\
 
  [out]語彙基元，表示包含的類別。
 
- `pTokenMethod`
+ `pTokenMethod`\
 
  [out]語彙基元，表示模組。
 
- `pdwOffset`
+ `pdwOffset`\
 
  [out]以位元組為單位從開頭的位移`pAddress`參數。
 
- `pdwVersion`
+ `pdwVersion`\
 
  [out]版本號碼的方法。
 

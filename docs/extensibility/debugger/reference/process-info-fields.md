@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 835509048e888e13b91c53d9e35bd03d7aebdfed
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 28af715c307ebede5fa264c46cd42b85e8868674
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62913497"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65457950"
 ---
 # <a name="processinfofields"></a>PROCESS_INFO_FIELDS
 指定的擷取處理序的資訊類型。
@@ -53,24 +56,33 @@ public enum enum_PROCESS_INFO_FIELDS { 
 };
 ```
 
-## <a name="members"></a>成員
- 初始化/使用 PIF_FILE_NAME`bstrFileName`欄位[PROCESS_INFO](../../../extensibility/debugger/reference/process-info.md)結構。
+## <a name="fields"></a>欄位
+ `PIF_FILE_NAME`\
+ 初始化/使用`bstrFileName`欄位[PROCESS_INFO](../../../extensibility/debugger/reference/process-info.md)結構。
 
- 初始化/使用 PIF_BASE_NAME`bstrBaseName`欄位`PROCESS_INFO`結構。
+ `PIF_BASE_NAME`\
+ 初始化/使用`bstrBaseName`欄位`PROCESS_INFO`結構。
 
- 初始化/使用 PIF_TITLE`bstrTitle`欄位`PROCESS_INFO`結構。
+ `PIF_TITLE`\
+ 初始化/使用`bstrTitle`欄位`PROCESS_INFO`結構。
 
- 初始化/使用 PIF_PROCESS_ID`ProcessId`欄位`PROCESS_INFO`結構。
+ `PIF_PROCESS_ID`\
+ 初始化/使用`ProcessId`欄位`PROCESS_INFO`結構。
 
- 初始化/使用 PIF_SESSION_ID`dwSessionId`欄位`PROCESS_INFO`結構。
+ `PIF_SESSION_ID`\
+ 初始化/使用`dwSessionId`欄位`PROCESS_INFO`結構。
 
- 初始化/使用 PIF_ATTACHED_SESSION_NAME`bstrAttachedSessionName`欄位`PROCESS_INFO`結構。
+ `PIF_ATTACHED_SESSION_NAME`\
+ 初始化/使用`bstrAttachedSessionName`欄位`PROCESS_INFO`結構。
 
- 初始化/使用 PIF_CREATION_TIME`CreationTime`欄位`PROCESS_INFO`結構。
+ `PIF_CREATION_TIME`\
+ 初始化/使用`CreationTime`欄位`PROCESS_INFO`結構。
 
- 初始化/使用 PIF_FLAGS`Flags`欄位`PROCESS_INFO`結構。
+ `PIF_FLAGS`\
+ 初始化/使用`Flags`欄位`PROCESS_INFO`結構。
 
- PIF_ALL 填寫所有欄位。
+ `PIF_ALL`\
+ 填寫所有欄位。
 
 ## <a name="remarks"></a>備註
  傳遞給[GetInfo](../../../extensibility/debugger/reference/idebugprocess2-getinfo.md)方法，以表示哪些欄位[PROCESS_INFO](../../../extensibility/debugger/reference/process-info.md)結構會進行初始化。

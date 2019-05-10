@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: fdfb437b079fd3c7b5657a369402bfbe4de047e8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 105fd78ab743d9560cc2973e467efd070c1b00d6
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62916546"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65458819"
 ---
 # <a name="idebugproperty3getstringcharlength"></a>IDebugProperty3::GetStringCharLength
 在相關聯的屬性的字串中傳回字元的數。
@@ -36,7 +39,7 @@ int GetStringCharLength(
 );
 ```
 
-#### <a name="parameters"></a>參數
+## <a name="parameters"></a>參數
 
 |參數|描述|
 |---------------|-----------------|

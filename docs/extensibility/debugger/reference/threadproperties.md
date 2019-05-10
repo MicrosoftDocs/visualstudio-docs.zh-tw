@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 55b3334c8bd28d3975f06aa39ca8c7fd719f1f9e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 59b0fd83202ea8a5514d1ed637404d4864bf6b57
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62913349"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65460717"
 ---
 # <a name="threadproperties"></a>THREADPROPERTIES
 描述執行緒屬性。
@@ -49,19 +52,26 @@ public struct THREADPROPERTIES { 
 ```
 
 ## <a name="members"></a>成員
- dwFields A 中的旗標的組合[THREADPROPERTY_FIELDS](../../../extensibility/debugger/reference/threadproperty-fields.md)列舉，描述在此結構中的哪一個欄位都有效。
+ `dwFields`\
+ 從旗標的組合[THREADPROPERTY_FIELDS](../../../extensibility/debugger/reference/threadproperty-fields.md)列舉，描述在此結構中的哪一個欄位都有效。
 
- dwThreadId 執行緒 id。
+ `dwThreadId`\
+ 執行緒 id。
 
- dwSuspendCount 執行緒暫停計數。
+ `dwSuspendCount`\
+ 執行緒暫停計數。
 
- dwThreadState 的值從[THREADSTATE](../../../extensibility/debugger/reference/threadstate.md)列舉，指出作業的執行緒的狀態。
+ `dwThreadState`\
+ 值，以從[THREADSTATE](../../../extensibility/debugger/reference/threadstate.md)列舉，指出作業的執行緒的狀態。
 
- bstrPriority 字串，指定的執行緒優先權。例如，"上方 Normal"、"Normal"或者 「 時間重大 」。
+ `bstrPriority`\
+ 字串，指定的執行緒優先權。例如，"上方 Normal"、"Normal"或者 「 時間重大 」。
 
- bstName 執行緒名稱。
+ `bstName`\
+ 執行緒名稱。
 
- bstrLocation 執行緒位置 （通常是最上層的堆疊框架），通常表示為目前停止執行方法的名稱。
+ `bstrLocation`\
+ 執行緒位置 （通常是最上層的堆疊框架），通常表示為目前停止執行方法的名稱。
 
 ## <a name="remarks"></a>備註
  此結構會填入藉由呼叫[GetThreadProperties](../../../extensibility/debugger/reference/idebugthread2-getthreadproperties.md)方法。 因此傳回的資訊通常會用於填入**執行緒**視窗。

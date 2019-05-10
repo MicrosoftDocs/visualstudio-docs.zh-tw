@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 61a22a1868a47fd4b54b19cf224f995897775b4f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 00f1e8ea5487a4eecb6dc9fa1f2b16d18ec3fa07
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62865780"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65458059"
 ---
 # <a name="machineinfofields"></a>MACHINE_INFO_FIELDS
 指定要擷取特定電腦的資訊種類。
@@ -41,12 +44,15 @@ public enum enum_MACHINE_INFO_FIELDS { 
 };
 ```
 
-## <a name="members"></a>成員
- MCIF_NAME 初始化/使用`bstrName`欄位在結構中。
+## <a name="fields"></a>欄位
+ `MCIF_NAME`\
+ 初始化/使用`bstrName`欄位在結構中。
 
- MCIF_FLAGS 初始化/使用`Flags`欄位在結構中。
+ `MCIF_FLAGS`\
+ 初始化/使用`Flags`欄位在結構中。
 
- MIF_ALL 初始化/使用的所有欄位在結構中。
+ `MIF_ALL`\
+ 初始化/使用的所有欄位在結構中。
 
 ## <a name="remarks"></a>備註
  這些值會傳遞給[GetMachineInfo](../../../extensibility/debugger/reference/idebugcoreserver2-getmachineinfo.md)方法，以表示哪些成員[MACHINE_INFO](../../../extensibility/debugger/reference/machine-info.md)結構會進行初始化。

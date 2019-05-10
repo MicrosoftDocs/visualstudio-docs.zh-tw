@@ -1,6 +1,6 @@
 ---
-title: CA2302：呼叫 BinaryFormatter.Deserialize 之前，請務必先設定 BinaryFormatter.Binder
-ms.date: 04/05/2019
+title: CA2311:無法還原序列化而不需要第一個設定 NetDataContractSerializer.Binder
+ms.date: 05/01/2019
 ms.topic: reference
 author: dotpaul
 ms.author: paulming
@@ -11,33 +11,33 @@ dev_langs:
 ms.workload:
 - multiple
 f1_keywords:
-- CA2302
-- EnsureBinaryFormatterBinderIsSetBeforeCallingBinaryFormatterDeserialize
-ms.openlocfilehash: c833a60d98cbfd7eea3e3b673c7e60c6047a4ae9
+- CA2311
+- DoNotDeserializeWithoutFirstSettingNetDataContractSerializerBinder
+ms.openlocfilehash: aec95d4bbd2d9bc498f9688c5601591d480d7f3b
 ms.sourcegitcommit: db30651dc0ce4d0b274479b23a6bd102a5559098
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 05/06/2019
-ms.locfileid: "65083899"
+ms.locfileid: "65135436"
 ---
-# <a name="ca2302-ensure-binaryformatterbinder-is-set-before-calling-binaryformatterdeserialize"></a>CA2302：呼叫 BinaryFormatter.Deserialize 之前，請務必先設定 BinaryFormatter.Binder
+# <a name="ca2311-do-not-deserialize-without-first-setting-netdatacontractserializerbinder"></a>CA2311:無法還原序列化而不需要第一個設定 NetDataContractSerializer.Binder
 
 |||
 |-|-|
-|TypeName|EnsureBinaryFormatterBinderIsSetBeforeCallingBinaryFormatterDeserialize|
-|CheckId|CA2302|
+|TypeName|DoNotDeserializeWithoutFirstSettingNetDataContractSerializerBinder|
+|CheckId|CA2311|
 |分類|Microsoft.Security|
 |中斷變更|非中斷|
 
 ## <a name="cause"></a>原因
 
-A<xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter?displayProperty=nameWithType>還原序列化方法已呼叫或參考和<xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter.Binder>屬性可能是 null。
+A<xref:System.Runtime.Serialization.NetDataContractSerializer?displayProperty=nameWithType>還原序列化方法已呼叫或參考，但沒有<xref:System.Runtime.Serialization.NetDataContractSerializer.Binder>屬性集。
 
 ## <a name="rule-description"></a>規則描述
 
 [!INCLUDE[insecure-deserializers-description](includes/insecure-deserializers-description-md.md)]
 
-此規則會尋找<xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter?displayProperty=nameWithType>還原序列化方法呼叫或參考時<xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter.Binder>可能為 null。 如果您想要禁止使用的任何還原序列化<xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter>不論<xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter.Binder>屬性，停用此規則並[CA2301](ca2301-do-not-call-binaryformatter-deserialize-without-first-setting-binaryformatter-binder.md)，並啟用規則[CA2300](ca2300-do-not-use-insecure-deserializer-binaryformatter.md)。
+此規則會尋找<xref:System.Runtime.Serialization.NetDataContractSerializer?displayProperty=nameWithType>還原序列化方法呼叫或參考，當<xref:System.Runtime.Serialization.NetDataContractSerializer>沒有其<xref:System.Runtime.Serialization.NetDataContractSerializer.Binder>設定。 如果您想要禁止使用的任何還原序列化<xref:System.Runtime.Serialization.NetDataContractSerializer>不論<xref:System.Runtime.Serialization.NetDataContractSerializer.Binder>屬性，停用此規則並[CA2312](ca2312-ensure-netdatacontractserializer-binder-is-set-before-deserializing.md)，並啟用規則[CA2310](ca2310-do-not-use-insecure-deserializer-netdatacontractserializer.md)。
 
 ## <a name="how-to-fix-violations"></a>如何修正違規
 
@@ -49,8 +49,7 @@ A<xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter?displayPro
   - Newtonsoft Json.NET-使用 TypeNameHandling.None。 如果 TypeNameHandling 中，您必須使用另一個值，限制與自訂 ISerializationBinder 預期清單還原序列化的型別。
   - Protocol Buffers
 - 使序列化的資料竄改。 在序列化以密碼編譯方式登入序列化的資料。 在還原序列化時之前, 驗證密碼編譯簽章。 保護從被公開的密碼編譯金鑰和金鑰輪替的設計。
-- 限制已還原序列化的類型。 實作自訂<xref:System.Runtime.Serialization.SerializationBinder?displayProperty=nameWithType>。 之前與還原序列化<xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter>，將<xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter.Binder>執行個體的自訂屬性<xref:System.Runtime.Serialization.SerializationBinder>。 在 覆寫<xref:System.Runtime.Serialization.SerializationBinder.BindToType%2A>方法，如果類型是預期的情況，會擲回的例外狀況。
-  - 請確定所有的程式碼路徑有<xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter.Binder>屬性集。
+- 限制已還原序列化的類型。 實作自訂<xref:System.Runtime.Serialization.SerializationBinder?displayProperty=nameWithType>。 之前與還原序列化<xref:System.Runtime.Serialization.NetDataContractSerializer>，將<xref:System.Runtime.Serialization.NetDataContractSerializer.Binder>執行個體的自訂屬性<xref:System.Runtime.Serialization.SerializationBinder>。 在 覆寫<xref:System.Runtime.Serialization.SerializationBinder.BindToType%2A>方法，如果類型是預期的情況，會擲回的例外狀況。
 
 ## <a name="when-to-suppress-warnings"></a>隱藏警告的時機
 
@@ -63,33 +62,42 @@ A<xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter?displayPro
 ```csharp
 using System;
 using System.IO;
-using System.Runtime.Serialization.Formatters.Binary;
+using System.Runtime.Serialization;
 
-[Serializable]
+[DataContract]
 public class BookRecord
 {
+    [DataMember]
     public string Title { get; set; }
+
+    [DataMember]
     public string Author { get; set; }
+
+    [DataMember]
     public int PageCount { get; set; }
+
+    [DataMember]
     public AisleLocation Location { get; set; }
 }
 
-[Serializable]
+[DataContract]
 public class AisleLocation
 {
+    [DataMember]
     public char Aisle { get; set; }
+
+    [DataMember]
     public byte Shelf { get; set; }
 }
 
 public class ExampleClass
 {
-    public BinaryFormatter Formatter { get; set; }
-
     public BookRecord DeserializeBookRecord(byte[] bytes)
     {
+        NetDataContractSerializer serializer = new NetDataContractSerializer();
         using (MemoryStream ms = new MemoryStream(bytes))
         {
-            return (BookRecord) this.Formatter.Deserialize(ms);
+            return (BookRecord) serializer.Deserialize(ms);
         }
     }
 }
@@ -98,27 +106,34 @@ public class ExampleClass
 ```vb
 Imports System
 Imports System.IO
-Imports System.Runtime.Serialization.Formatters.Binary
+Imports System.Runtime.Serialization
 
-<Serializable()>
+<DataContract()>
 Public Class BookRecord
+    <DataMember()>
     Public Property Title As String
+
+    <DataMember()>
     Public Property Author As String
+
+    <DataMember()>
     Public Property Location As AisleLocation
 End Class
 
-<Serializable()>
+<DataContract()>
 Public Class AisleLocation
+    <DataMember()>
     Public Property Aisle As Char
+
+    <DataMember()>
     Public Property Shelf As Byte
 End Class
 
 Public Class ExampleClass
-    Public Property Formatter As BinaryFormatter
-
     Public Function DeserializeBookRecord(bytes As Byte()) As BookRecord
+        Dim serializer As NetDataContractSerializer = New NetDataContractSerializer()
         Using ms As MemoryStream = New MemoryStream(bytes)
-            Return CType(Me.Formatter.Deserialize(ms), BookRecord)
+            Return CType(serializer.Deserialize(ms), BookRecord)
         End Using
     End Function
 End Class
@@ -130,7 +145,6 @@ End Class
 using System;
 using System.IO;
 using System.Runtime.Serialization;
-using System.Runtime.Serialization.Formatters.Binary;
 
 public class BookRecordSerializationBinder : SerializationBinder
 {
@@ -152,19 +166,29 @@ public class BookRecordSerializationBinder : SerializationBinder
     }
 }
 
-[Serializable]
+[DataContract]
 public class BookRecord
 {
+    [DataMember]
     public string Title { get; set; }
+
+    [DataMember]
     public string Author { get; set; }
+
+    [DataMember]
     public int PageCount { get; set; }
+
+    [DataMember]
     public AisleLocation Location { get; set; }
 }
 
-[Serializable]
+[DataContract]
 public class AisleLocation
 {
+    [DataMember]
     public char Aisle { get; set; }
+
+    [DataMember]
     public byte Shelf { get; set; }
 }
 
@@ -172,11 +196,11 @@ public class ExampleClass
 {
     public BookRecord DeserializeBookRecord(byte[] bytes)
     {
-        BinaryFormatter formatter = new BinaryFormatter();
-        formatter.Binder = new BookRecordSerializationBinder();
+        NetDataContractSerializer serializer = new NetDataContractSerializer();
+        serializer.Binder = new BookRecordSerializationBinder();
         using (MemoryStream ms = new MemoryStream(bytes))
         {
-            return (BookRecord) formatter.Deserialize(ms);
+            return (BookRecord) serializer.Deserialize(ms);
         }
     }
 }
@@ -186,7 +210,6 @@ public class ExampleClass
 Imports System
 Imports System.IO
 Imports System.Runtime.Serialization
-Imports System.Runtime.Serialization.Formatters.Binary
 
 Public Class BookRecordSerializationBinder
     Inherits SerializationBinder
@@ -205,25 +228,33 @@ Public Class BookRecordSerializationBinder
     End Function
 End Class
 
-<Serializable()>
+<DataContract()>
 Public Class BookRecord
+    <DataMember()>
     Public Property Title As String
+
+    <DataMember()>
     Public Property Author As String
+
+    <DataMember()>
     Public Property Location As AisleLocation
 End Class
 
-<Serializable()>
+<DataContract()>
 Public Class AisleLocation
+    <DataMember()>
     Public Property Aisle As Char
+
+    <DataMember()>
     Public Property Shelf As Byte
 End Class
 
 Public Class ExampleClass
     Public Function DeserializeBookRecord(bytes As Byte()) As BookRecord
-        Dim formatter As BinaryFormatter = New BinaryFormatter()
-        formatter.Binder = New BookRecordSerializationBinder()
+        Dim serializer As NetDataContractSerializer = New NetDataContractSerializer()
+        serializer.Binder = New BookRecordSerializationBinder()
         Using ms As MemoryStream = New MemoryStream(bytes)
-            Return CType(formatter.Deserialize(ms), BookRecord)
+            Return CType(serializer.Deserialize(ms), BookRecord)
         End Using
     End Function
 End Class
@@ -231,6 +262,6 @@ End Class
 
 ## <a name="related-rules"></a>相關的規則
 
-[CA2300:請勿使用不安全還原 BinaryFormatter 序列化程式](ca2300-do-not-use-insecure-deserializer-binaryformatter.md)
+[CA2310:請勿使用不安全的還原序列化程式 NetDataContractSerializer](ca2310-do-not-use-insecure-deserializer-netdatacontractserializer.md)
 
-[CA2301:如果沒有第一個設定 BinaryFormatter.Binder 不呼叫 BinaryFormatter.Deserialize](ca2301-do-not-call-binaryformatter-deserialize-without-first-setting-binaryformatter-binder.md)
+[CA2312:請確定 NetDataContractSerializer.Binder 設定後再進行還原序列化](ca2312-ensure-netdatacontractserializer-binder-is-set-before-deserializing.md)

@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 421eea42c169f586657998e5d4cd57c4c797b71e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: c31d3a858af2886a27a51e22e131cb89b2234d6e
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62916900"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65459073"
 ---
 # <a name="idebugprogramnode2getengineinfo"></a>IDebugProgramNode2::GetEngineInfo
 取得名稱和執行程式的偵錯引擎 (DE) 的識別碼。
@@ -38,12 +41,12 @@ int GetEngineInfo(
 );
 ```
 
-#### <a name="parameters"></a>參數
- `pbstrEngine`
+## <a name="parameters"></a>參數
+ `pbstrEngine`\
 
  [out]傳回的執行程式的預設名稱 (C++-特定： 這可以是 null 指標，指出呼叫端不想在引擎的名稱)。
 
- `pguidEngine`
+ `pguidEngine`\
 
  [out]傳回執行程式 DE 的全域唯一識別碼 (C++-特定： 這可以是 null 指標，表示呼叫端不感興趣的引擎 GUID)。
 

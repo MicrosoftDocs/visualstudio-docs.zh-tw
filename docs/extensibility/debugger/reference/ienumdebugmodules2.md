@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c92a7f47f088a92a898e6cc5acbffe3522d9fec4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 548bcd0328f7bdf52e47eb9a4295168ca47a2517
+ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62914496"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65226698"
 ---
 # <a name="ienumdebugmodules2"></a>IEnumDebugModules2
 此介面列舉模組的清單。

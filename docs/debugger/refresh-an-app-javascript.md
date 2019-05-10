@@ -57,7 +57,7 @@ ms.locfileid: "63408636"
 
 5. 在 UWP 應用程式的首頁上，編輯部分的 html。
 
-7. 按一下 [**重新整理 Windows 應用程式**按鈕時，哪一個看起來像這樣：![重新整理 Windows 應用程式] 按鈕](../debugger/media/js_refresh.png "JS_Refresh")。 (或按 F4)。
+7. 按一下 **重新整理 Windows 應用程式**按鈕時，哪一個看起來像這樣：![重新整理 Windows 應用程式 按鈕](../debugger/media/js_refresh.png "JS_Refresh")。 (或按 F4)。
 
 8. 切換至應用程式。 應用程式會重新載入，並用來呈現應用程式更新的 HTML。
 

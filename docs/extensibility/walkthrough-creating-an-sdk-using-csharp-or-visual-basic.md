@@ -8,12 +8,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5b687f9fb705f8f8c8bee7ca611d618e012e8507
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+dev_langs:
+- CSharp
+- VB
+ms.openlocfilehash: 007da4e5e534ce6f9d8563011c0284432e4d9c19
+ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63443859"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65226118"
 ---
 # <a name="walkthrough-create-an-sdk-using-c-or-visual-basic"></a>逐步解說：使用 SDK 建立C#或 Visual Basic
 在本逐步解說中，您將了解如何使用 Visual C# 來建立簡單的數學程式庫 SDK，然後再封裝 SDK 作為 Visual Studio 擴充功能 (VSIX)。 您會完成下列程序：
@@ -28,7 +31,7 @@ ms.locfileid: "63443859"
 
 ## <a name="createClassLibrary"></a> 若要建立 SimpleMath Windows 執行階段元件
 
-1. 在功能表列上選擇 **檔案** > **新增** > **新專案**。
+1. 在功能表列上，選擇 [檔案] > [新增] > [專案]。
 
 2. 在範本清單中，依序展開**Visual C#** 或**Visual Basic**，選擇  **Windows 市集** 節點，然後選擇  **Windows 執行階段元件**範本。
 
@@ -153,7 +156,7 @@ ms.locfileid: "63443859"
 
 ## <a name="createSample"></a> 若要建立範例應用程式使用的類別庫
 
-1. 在功能表列上選擇 **檔案** > **新增** > **新專案**。
+1. 在功能表列上，選擇 [檔案] > [新增] > [專案]。
 
 2. 在範本清單中，依序展開**Visual C#** 或是**Visual Basic**，然後選擇  **Windows 市集**節點。
 
@@ -163,11 +166,11 @@ ms.locfileid: "63443859"
 
 5. 在參考類型的清單中，依序展開**Windows**，然後選擇**延伸模組**。
 
-6. 在 [詳細資料] 窗格中，選擇**簡單的數學 SDK**延伸模組。
+6. 在 [詳細資料] 窗格中，選擇**WinRT 數學程式庫**延伸模組。
 
     您的 SDK 的其他資訊會出現。 您可以選擇**更多資訊**連結，以開啟 https://msdn.microsoft.com/ ，如您在稍早在本逐步解說在 SDKManifest.xml 檔案中指定。
 
-7. 在 **參考管理員**對話方塊中，選取**簡單數學 SDK**核取方塊，，然後選擇  **確定**  按鈕。
+7. 在 **參考管理員**對話方塊中，選取**WinRT 數學程式庫**核取方塊，，然後選擇 **確定**按鈕。
 
 8. 在功能表列上選擇 **檢視** > **物件瀏覽器**。
 
@@ -181,11 +184,11 @@ ms.locfileid: "63443859"
 
     ```xml
     <Page
-        x:Class="WinRTMathTestCS.MainPage"
+        x:Class="ArithmeticUI.MainPage"
         IsTabStop="False"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        xmlns:local="using:WinRTMathTestCS"
+        xmlns:local="using:SimpleMath"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         mc:Ignorable="d">
@@ -207,11 +210,11 @@ ms.locfileid: "63443859"
 
     ```xml
     <Page
-        x:Class="WinRTMathTest.MainPage"
+        x:Class="ArithmeticUI.MainPage"
         IsTabStop="False"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        xmlns:local="using:WinRTMathTest"
+        xmlns:local="using:SimpleMath"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         mc:Ignorable="d">

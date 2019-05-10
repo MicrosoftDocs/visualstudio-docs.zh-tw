@@ -1,26 +1,27 @@
 ---
-title: 將程式碼新增至多層式架構 (N-Tier) 應用程式中的資料集
+title: 在多層式架構應用程式中加入資料集的程式碼
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
 helpviewer_keywords:
-- n-tier applications, extending datasets
+- n-tier applications, extending DataSets
 ms.assetid: d43c2ccd-4902-43d8-b1a8-d10ca5d3210c
 author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: a66250c9d376962bfef2db6b563070696fd33346
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: b776e75df2830b89fd1ffe9aed197e9cd1019851
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63402867"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65458461"
 ---
-# <a name="add-code-to-datasets-in-n-tier-applications"></a>將程式碼新增至多層式架構 (N-Tier) 應用程式中的資料集
+# <a name="add-code-to-datasets-in-n-tier-applications"></a>在多層式架構應用程式中加入資料集的程式碼
+
 您可以藉由建立資料集的部分類別檔案，並新增程式碼來擴充資料集的功能 (而不是將程式碼加入*DatasetName*。Dataset.Designer 檔案）。 部分類別可讓多個實體檔案分割為特定類別的程式碼。 如需詳細資訊，請參閱 <<c0> [ 部分](/dotnet/visual-basic/language-reference/modifiers/partial)或是[部分類別和方法](/dotnet/csharp/programming-guide/classes-and-structs/partial-classes-and-methods)。
 
 定義資料集的程式碼會產生每次變更 （在具類型的資料集） 的資料集定義。 當您進行任何修改的資料集組態的精靈執行期間的變更，也會產生此程式碼。 若要避免您的程式碼正在刪除在資料集的重新產生期間，加入資料集的部分類別檔案中的程式碼。
@@ -33,7 +34,7 @@ ms.locfileid: "63402867"
 > [!NOTE]
 > 具類型資料集時的驗證程式碼必須加入，提供功能來產生<xref:System.Data.DataTable.ColumnChanging>和<xref:System.Data.DataTable.RowChanging>事件處理常式。 如需詳細資訊，請參閱 <<c0> [ 將驗證新增至多層式架構資料集](../data-tools/add-validation-to-an-n-tier-dataset.md)。
 
-## <a name="to-add-code-to-datasets-in-n-tier-applications"></a>若要將程式碼加入 n-tier 應用程式中的資料集
+## <a name="to-add-code-to-datasets-in-n-tier-applications"></a>若要在多層式架構應用程式中加入資料集的程式碼
 
 1. 找出包含專案 *.xsd*檔案。
 

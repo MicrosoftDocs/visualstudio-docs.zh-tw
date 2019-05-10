@@ -9,8 +9,9 @@
 - name: 圖形記錄文件
   href: graphics-log-document.md
 - name: 圖形框架分析
-  href: graphics-frame-analysis.md
   items:
+    - name: 圖形框架分析
+      href: graphics-frame-analysis.md
     - name: 1x1 Viewport 大小變異
       href: 1x1-viewport-size-variant.md
     - name: 0x-2x-4x MSAA 變異
@@ -46,8 +47,9 @@
 - name: 命令列擷取工具
   href: command-line-capture-tool.md
 - name: 圖形診斷範例
-  href: graphics-diagnostics-examples.md
   items:
+    - name: 圖形診斷範例
+      href: graphics-diagnostics-examples.md
     - name: 逐步解說：擷取圖形資訊
       href: walkthrough-capturing-graphics-information.md
     - name: 逐步解說：以程式設計方式擷取圖形資訊
@@ -62,14 +64,16 @@
       href: walkthrough-debugging-rendering-errors-due-to-shading.md
     - name: 逐步解說：使用圖形診斷對計算著色器進行偵錯
       href: walkthrough-using-graphics-diagnostics-to-debug-a-compute-shader.md
-    - name: HOW TO：變更圖形診斷播放電腦
+    - name: 作法：變更圖形診斷播放電腦
       href: how-to-change-the-graphics-diagnostics-playback-machine.md
 - name: 參考 (程式設計擷取)
-  href: reference-programmatic-capture.md
   items:
+    - name: 參考 (程式設計擷取)
+      href: reference-programmatic-capture.md
     - name: VsgDbg 類別
-      href: vsgdbg-class.md
       items:
+        - name: VsgDbg 類別
+          href: vsgdbg-class.md
         - name: 'VsgDbg::VsgDbg (建構函式)'
           href: vsgdbg-vsgdbg-constructor.md
         - name: 'VsgDbg::~VsgDbg (解構函式)'

@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: de112b3bba0ca649e333cc990a50284c29b92239
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 12ad4db6583c702115f5c97b2fa2c4485c891298
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62916086"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65458583"
 ---
 # <a name="idebugstackframe2getcodecontext"></a>IDebugStackFrame2::GetCodeContext
 取得此堆疊框架的程式碼內容。
@@ -36,8 +39,8 @@ int GetCodeContext ( 
 );
 ```
 
-#### <a name="parameters"></a>參數
- `ppCodeCxt`
+## <a name="parameters"></a>參數
+ `ppCodeCxt`\
 
  [out]傳回[IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md)物件，代表目前指令指標在此堆疊框架。
 

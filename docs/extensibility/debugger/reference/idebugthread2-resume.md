@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4997b8c711a67a3bb45529627e81e70b786acf00
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 5fc7b8f5cf5cd5360a60e8c6fbf3b6bf43415575
+ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62915505"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65225996"
 ---
 # <a name="idebugthread2resume"></a>IDebugThread2::Resume
 繼續執行的執行緒。
@@ -36,8 +39,8 @@ int Resume ( 
 );
 ```
 
-#### <a name="parameters"></a>參數
- `pdwSuspendCount`
+## <a name="parameters"></a>參數
+ `pdwSuspendCount`\
 
  [out]在繼續作業之後，傳回的暫停計數。
 

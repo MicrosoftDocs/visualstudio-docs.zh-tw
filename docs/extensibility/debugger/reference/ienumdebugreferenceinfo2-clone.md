@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 85c531f0629eecc73befe3732c540e93d8d1d575
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 648e1a1e801cb143dd87a1d0ced4a1e7d8e5dba7
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62865975"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65461238"
 ---
 # <a name="ienumdebugreferenceinfo2clone"></a>IEnumDebugReferenceInfo2::Clone
 傳回一份目前的列舉，為個別的物件。
@@ -36,8 +39,8 @@ int Clone(
 );
 ```
 
-#### <a name="parameters"></a>參數
- `ppEnum`
+## <a name="parameters"></a>參數
+ `ppEnum`\
 
  [out]傳回這個列舉型別為個別物件的複本。
 

@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: bb1553070f9afecf6ce60ac51b94ecb3f05d0eb9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 04c63a2a18f04301e16dd0e8137ab8ba4b824c57
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62869716"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65457867"
 ---
 # <a name="idebugprogrampublisher2publishprogram"></a>IDebugProgramPublisher2::PublishProgram
 這個方法可供偵錯引擎 (DEs) 的程式和工作階段的偵錯管理員。
@@ -40,16 +43,16 @@ int PublishProgram(
 );
 ```
 
-#### <a name="parameters"></a>參數
- `Engines`
+## <a name="parameters"></a>參數
+ `Engines`\
 
  [in]針對 DEs，可以啟動或附加至這個程式的 Guid 的陣列。
 
- `szFriendlyName`
+ `szFriendlyName`\
 
  [in]（這會出現在功能表或對話方塊向使用者顯示） 之程式的易記名稱。
 
- `pDebuggeeInterface`
+ `pDebuggeeInterface`\
 
  [in]`IUnknown`程式介面 （來唯一識別該程式使用此值作為 cookie; 此相同的值用來 「 取消發行 」 計畫）
 
