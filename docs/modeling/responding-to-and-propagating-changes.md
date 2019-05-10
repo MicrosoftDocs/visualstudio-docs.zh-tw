@@ -9,18 +9,20 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 375f6996c91c294dd3b630c9ab987ff4b2d6cbdb
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a1d58ede1370976147b33cf1246f8b582adb3c5b
+ms.sourcegitcommit: 6a19c5ece38a70731496a38f2ef20676ff18f8a4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62824003"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65476606"
 ---
-# <a name="responding-to-and-propagating-changes"></a>回應及傳播變更
+# <a name="respond-to-and-propagate-changes"></a>回應及傳播變更
+
 當建立、 刪除或更新項目時，您可以撰寫會傳播變更的其他部分的模型或外部的資源，例如檔案、 資料庫或其他元件的程式碼。
 
-## <a name="in-this-section"></a>本節內容
- 做為指導方針，請考慮下列技術順序如下：
+## <a name="reference"></a>參考資料
+
+做為指導方針，請考慮下列技術順序如下：
 
 |技術|案例|如需詳細資訊|
 |-|-|-|
@@ -34,12 +36,13 @@ ms.locfileid: "62824003"
 |選取規則|選取規則特別限制使用者可以選取。|[如何：存取及限制目前的選取範圍](../modeling/how-to-access-and-constrain-the-current-selection.md)|
 |OnAssocatedPropertyChanged|表示使用的圖案和接點陰影、 線條、 色彩和線條寬度和樣式等功能的模型項目的狀態。|[更新圖案和接點來反映模型](../modeling/updating-shapes-and-connectors-to-reflect-the-model.md)|
 
-## <a name="comparing-rules-and-store-events"></a>**比較的規則和存放區事件**
- 在模型中發生變更時，會執行變更 notifiers、 規則和事件。
+## <a name="compare-rules-and-store-events"></a>比較規則，並儲存事件
 
- 規則通常會套用在其中發生的變更，結束交易並認可交易中的變更之後，會套用事件。
+在模型中發生變更時，會執行變更 notifiers、 規則和事件。
 
- 若要使用外部存放區和規則，以維護一致性的存放區中的物件同步處理的模型使用存放區事件。
+規則通常會套用在其中發生的變更，結束交易並認可交易中的變更之後，會套用事件。
+
+若要使用外部存放區和規則，以維護一致性的存放區中的物件同步處理的模型使用存放區事件。
 
 - **建立自訂規則**您建立自訂規則做為衍生的類別，從抽象的規則。 您也必須通知的自訂規則相關的架構。 如需詳細資訊，請參閱 <<c0> [ 規則傳播變更內模型](../modeling/rules-propagate-changes-within-the-model.md)。
 

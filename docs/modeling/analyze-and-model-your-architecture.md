@@ -3,39 +3,26 @@ title: 分析架構並製作架構模型
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
-- Visual Studio Ultimate, exploring code
-- Visual Studio Ultimate, visualizing code
 - diagrams - modeling
-- Visual Studio ALM, modeling
-- application, design
 - architecture
 - code visualization
 - application design
-- applications, architecture
 - code exploration
-- Visual Studio ALM, exploring code
 - modeling
 - application architecture
-- application, modeling
-- applications, modeling
 - architecture [Visual Studio ALM], modeling
 - application modeling
-- Visual Studio Ultimate, modeling
-- architecture [Visual Studio Ultimate], modeling
-- application, architecture
-- Visual Studio ALM, visualizing code
-- applications, designing
 author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 253f86f83805d11d7a1a6475fcbaf4eb76bfbc50
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: be731ea81baaaa6e9f04b7546bc26ccea0549389
+ms.sourcegitcommit: 6a19c5ece38a70731496a38f2ef20676ff18f8a4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62795665"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65476636"
 ---
 # <a name="analyze-and-model-your-architecture"></a>分析架構並製作架構模型
 
@@ -49,22 +36,23 @@ ms.locfileid: "62795665"
 
 請參閱[案例：變更您的設計使用視覺化和模型化](../modeling/scenario-change-your-design-using-visualization-and-modeling.md)。
 
-## <a name="to"></a>以
+## <a name="article-reference"></a>文件參考
 
 |||
 |-|-|
-|**視覺化程式碼**：<br /><br /> -藉由建立 code map，請參閱程式碼的組織和關聯性。 將組件、命名空間、類別、方法等之間的相依性視覺化。<br />-藉由從程式碼建立類別圖，請參閱類別結構與特定專案的成員。<br />-藉由建立相依性圖表驗證程式碼中尋找您的程式碼和它的設計之間的衝突。|-   [視覺化程式碼](../modeling/visualize-code.md)<br />-   [使用類別和其他類型 （類別設計工具）](../ide/class-designer/designing-and-viewing-classes-and-types.md)<br />-   [影片：了解使用 Visual Studio 2015 code map 的程式碼的設計](https://channel9.msdn.com/Events/Visual-Studio/Connect-event-2015/502)<br />-   [影片：驗證即時架構相依性](https://sec.ch9.ms/sessions/69613110-c334-4f25-bb36-08e5a93456b5/170ValidateArchitectureDependenciesWithVisualStudio.mp4)|
-|**定義架構**：<br /><br /> -定義和強制執行您的程式碼，藉由建立相依性圖表的元件之間的相依性條件約束。|-   [影片：驗證架構相依性，使用 Visual Studio (Channel 9)](https://channel9.msdn.com/Events/Connect/2016/170)|
-|**根據需求和預定設計驗證您的系統**<br /><br /> 驗證使用描述預定的架構的相依性圖表的程式碼相依性，並防止可能會與設計衝突的變更。|-   [影片：驗證架構相依性，使用 Visual Studio (Channel 9)](https://channel9.msdn.com/Events/Connect/2016/170)|
-|**自訂模型和圖表**：<br /><br /> -建立您自己的定義域專屬語言。|-   [Modeling SDK for Visual Studio-特定領域語言](../modeling/modeling-sdk-for-visual-studio-domain-specific-languages.md)|
-|**使用 T4 範本產生文字**：<br /><br /> -使用文字區塊和範本中的控制邏輯來產生文字檔案。<br /> -使用 Visual Studio 中包含的 MSBuild T4 範本建置|-   [程式碼產生和 T4 文字範本](../modeling/code-generation-and-t4-text-templates.md)|
-|**使用 Team Foundation 版本控制，共用模型、圖表和 Code Map**：<br /><br /> -將 code map、 專案和 Team Foundation 版本控制下的相依性圖表讓您可以共用它們。| |
+|**視覺化程式碼**：<br /><br />-藉由建立 code map，請參閱程式碼的組織和關聯性。 將組件、命名空間、類別、方法等之間的相依性視覺化。<br />-藉由從程式碼建立類別圖，請參閱類別結構與特定專案的成員。<br />-藉由建立相依性圖表驗證程式碼中尋找您的程式碼和它的設計之間的衝突。|- [視覺化程式碼](../modeling/visualize-code.md)<br />- [使用類別和其他類型 （類別設計工具）](../ide/class-designer/designing-and-viewing-classes-and-types.md)<br />- [影片：了解使用 Visual Studio 2015 code map 的程式碼的設計](https://channel9.msdn.com/Events/Visual-Studio/Connect-event-2015/502)<br />- [影片：驗證即時架構相依性](https://sec.ch9.ms/sessions/69613110-c334-4f25-bb36-08e5a93456b5/170ValidateArchitectureDependenciesWithVisualStudio.mp4)|
+|**定義架構**：<br /><br />-定義和強制執行您的程式碼，藉由建立相依性圖表的元件之間的相依性條件約束。|- [影片：驗證架構相依性，使用 Visual Studio (Channel 9)](https://channel9.msdn.com/Events/Connect/2016/170)|
+|**根據需求和預定設計驗證您的系統**<br /><br />驗證使用描述預定的架構的相依性圖表的程式碼相依性，並防止可能會與設計衝突的變更。|- [影片：驗證架構相依性，使用 Visual Studio (Channel 9)](https://channel9.msdn.com/Events/Connect/2016/170)|
+|**自訂模型和圖表**：<br /><br />-建立您自己的定義域專屬語言。|- [Modeling SDK for Visual Studio-特定領域語言](../modeling/modeling-sdk-for-visual-studio-domain-specific-languages.md)|
+|**使用 T4 範本產生文字**：<br /><br />-使用文字區塊和範本中的控制邏輯來產生文字檔案。<br /> -使用 Visual Studio 中包含的 MSBuild T4 範本建置|- [程式碼產生和 T4 文字範本](../modeling/code-generation-and-t4-text-templates.md)|
+|**使用 Team Foundation 版本控制，共用模型、圖表和 Code Map**：<br /><br />-將 code map、 專案和 Team Foundation 版本控制下的相依性圖表讓您可以共用它們。| |
 
 若要查看哪些版本的 Visual Studio 支援每項功能，請參閱[architecture and modeling tools 的版本支援](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)
 
 ## <a name="types-of-models-and-typical-uses"></a>類型的模型和一般用法
 
 ### <a name="code-maps"></a>Code Map
+
 Code Map 可協助您查看程式碼中的組織和關聯性。
 
 **一般用法：**
@@ -77,8 +65,9 @@ Code Map 可協助您查看程式碼中的組織和關聯性。
 - [使用 Code Map 偵錯您的應用程式](../modeling/use-code-maps-to-debug-your-applications.md)
 - [使用 Code Map 分析器尋找潛在問題](../modeling/find-potential-problems-using-code-map-analyzers.md)
 
-### <a name="dependency-diagram"></a>相依性圖表
-相依性圖表可讓您定義為一組圖層或區塊有明確的相依性的應用程式的結構。 您可以執行驗證，以探索程式碼中的相依性和相依性圖表上所述的相依性之間的衝突。
+### <a name="dependency-diagrams"></a>相依性圖表
+
+相依性圖表可讓您定義為一組圖層或區塊有明確的相依性的應用程式的結構。 即時驗證便會顯示在程式碼中的相依性和相依性圖表上所述的相依性之間的衝突。
 
 **一般用法：**
 
@@ -92,7 +81,8 @@ Code Map 可協助您查看程式碼中的組織和關聯性。
 - [使用相依性圖表驗證程式碼](../modeling/validate-code-with-layer-diagrams.md)
 
 ### <a name="domain-specific-language-dsl"></a>特定領域語言 (DSL)
-DSL 是您為特定目的所設計的標記法。 在 Visual Studio 中，通常會以圖形表示。
+
+DSL 是您為特定目的所設計的標記法。 在 Visual Studio 中，通常會以圖形。
 
 **一般用法：**
 
@@ -102,10 +92,6 @@ DSL 是您為特定目的所設計的標記法。 在 Visual Studio 中，通常
 **請參閱：**
 
 - [Modeling SDK for Visual Studio - 特定領域語言](../modeling/modeling-sdk-for-visual-studio-domain-specific-languages.md)
-
-## <a name="where-can-i-get-more-information"></a>哪裡可以取得詳細資訊？
-
-[Visual Studio Visualization & Modeling 工具論壇](http://go.microsoft.com/fwlink/?LinkId=184720)
 
 ## <a name="see-also"></a>另請參閱
 

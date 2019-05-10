@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b028655c0654bc5332264c3bcc0fced01480b69f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 4b955dc6f79c689ca30d8d9876d0888b14127490
+ms.sourcegitcommit: 6a19c5ece38a70731496a38f2ef20676ff18f8a4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62815033"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65476522"
 ---
 # <a name="modeling-sdk-for-visual-studio---domain-specific-languages"></a>Modeling SDK for Visual Studio - 網域指定的語言
 
@@ -41,38 +41,3 @@ MSDK 可讓您透過網域指定的語言 (DSL) 的形式迅速開發模型。 �
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
 
 [相關部落格文章](https://devblogs.microsoft.com/devops/the-visual-studio-modeling-sdk-is-now-available-with-visual-studio-2017/)
-
-如需進階的技術和疑難排解的指引，請瀏覽[Visual Studio DSL & Modeling Tools 擴充性論壇](http://go.microsoft.com/fwlink/?LinkID=186074)。
-
-## <a name="in-this-section"></a>本節內容
- [開始使用特定領域語言](../modeling/getting-started-with-domain-specific-languages.md)
-
- [了解模型、類別和關聯性](../modeling/understanding-models-classes-and-relationships.md)
-
- [如何定義特定領域語言](../modeling/how-to-define-a-domain-specific-language.md)
-
- [自訂及擴充特定領域語言](../modeling/customizing-and-extending-a-domain-specific-language.md)
-
- [特定領域語言中的驗證](../modeling/validation-in-a-domain-specific-language.md)
-
- [撰寫程式碼來自訂特定領域語言](../modeling/writing-code-to-customise-a-domain-specific-language.md)
-
- [從特定領域語言產生程式碼](../modeling/generating-code-from-a-domain-specific-language.md)
-
- [了解 DSL 程式碼](../modeling/understanding-the-dsl-code.md)
-
- [自訂檔案儲存體和 XML 序列化](../modeling/customizing-file-storage-and-xml-serialization.md)
-
- [部署特定領域語言方案](../modeling/deploying-domain-specific-language-solutions.md)
-
- [建立 Windows Forms 架構的特定領域語言](../modeling/creating-a-windows-forms-based-domain-specific-language.md)
-
- [建立 WPF 架構的特定領域語言](../modeling/creating-a-wpf-based-domain-specific-language.md)
-
- [如何：擴充特定領域語言設計工具](../modeling/how-to-extend-the-domain-specific-language-designer.md)
-
- [支援的 Visual Studio Visualization & Modeling SDK 版本](../modeling/supported-visual-studio-editions-for-visualization-amp-modeling-sdk.md)
-
- [如何：將特定領域語言移轉至新的版本](../modeling/how-to-migrate-a-domain-specific-language-to-a-new-version.md)
-
- [Modeling SDK for Visual Studio 的 API 參考](../modeling/api-reference-for-modeling-sdk-for-visual-studio.md)

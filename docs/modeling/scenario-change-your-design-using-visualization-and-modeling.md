@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7d0a24301f7571225ed1002ce4e331f29fd4d77c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7f2e31e74ba89c30cfbacc46d1b72428372191ae
+ms.sourcegitcommit: 6a19c5ece38a70731496a38f2ef20676ff18f8a4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62824064"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65476585"
 ---
 # <a name="scenario-change-your-design-using-visualization-and-modeling"></a>案例：使用視覺化和模型製作工具變更設計
 
@@ -116,7 +116,7 @@ Lucerne 則維持一個相當大型且複雜的系統集合，其中有些系統
 
 Visual Studio 模型圖表並沒有規定使用順序，所以您可以依需求或方法來加以使用。 小組在整個專案進行期間，通常會頻繁地反覆重新審視其模型。 每個圖表都具有特定優勢，可協助您了解、描述及溝通開發中系統的不同層面。
 
-Dinner Now 及 Lucerne 在彼此溝通以及與專案關係人溝通時，會使用圖表作為其共同語言。 例如，Dinner Now 會使用圖表執行這些工作：
+Dinner Now 及 Lucerne 溝通與彼此及與專案關係人會使用圖表作為其共同語言。 例如，Dinner Now 會使用圖表執行這些工作：
 
 - 將現有程式碼視覺化。
 
@@ -172,11 +172,11 @@ Dinner Now 必須評估符合新需求所需的成本。 這有一部分取決�
 
 |**圖表**|**描述**|
 |-|-|
-|*相依性圖表*<br /><br /> 請參閱：<br /><br /> - [從您的程式碼建立相依性圖表](../modeling/create-layer-diagrams-from-your-code.md)<br />- [相依性圖表中：參考](../modeling/layer-diagrams-reference.md)<br />- [相依性圖表中：方針](../modeling/layer-diagrams-guidelines.md)<br />- [使用相依性圖表驗證程式碼](../modeling/validate-code-with-layer-diagrams.md)|程式碼的邏輯架構。<br /><br /> 相依性圖表會組織，並將對應至擷取群組，稱為 Visual Studio 方案中的成品*層*。 這些圖層可識別這些成品在系統中執行的角色、工作或功能。<br /><br /> 分層圖有助於說明系統的預定設計，以及根據該設計來驗證不斷演變的程式碼。<br /><br /> 若要建立圖層，請從 [方案總管]、[Code Map]、[類別檢視] 以及 [物件瀏覽器] 拖曳項目。 若要繪製新圖層，請使用工具箱或以滑鼠右鍵按一下圖表介面。<br /><br /> 若要檢視現有相依性，請以滑鼠右鍵按一下分層圖介面，然後按一下 [產生相依性] 。 若要指定預定的相依性，請繪製新相依性。|
+|*相依性圖表*<br /><br /> 請參閱：<br /><br /> - [從您的程式碼建立相依性圖表](../modeling/create-layer-diagrams-from-your-code.md)<br />- [相依性圖表中：參考](../modeling/layer-diagrams-reference.md)<br />- [相依性圖表中：方針](../modeling/layer-diagrams-guidelines.md)<br />- [使用相依性圖表驗證程式碼](../modeling/validate-code-with-layer-diagrams.md)|程式碼的邏輯架構。<br /><br /> 相依性圖表會組織，並將對應至擷取群組，稱為 Visual Studio 方案中的成品*層*。 這些圖層可識別這些成品在系統中執行的角色、工作或功能。<br /><br /> 相依性圖表適合用來描述系統的預定的設計和驗證不斷演變的程式碼，根據該設計。<br /><br /> 若要建立圖層，請從 [方案總管]、[Code Map]、[類別檢視] 以及 [物件瀏覽器] 拖曳項目。 若要繪製新圖層，請使用工具箱或以滑鼠右鍵按一下圖表介面。<br /><br /> 若要檢視現有相依性，以滑鼠右鍵按一下 相依性圖表介面，然後**產生相依性**。 若要指定預定的相依性，請繪製新相依性。|
 
- 例如，下列相依性圖表描述圖層與每個圖層相關聯的成品數目之間的相依性：
+例如，下列相依性圖表描述圖層與每個圖層相關聯的成品數目之間的相依性：
 
- ![整合式的付款系統的相依性圖表](../modeling/media/layer_integrated_dnlucerne.png)
+![整合式的付款系統的相依性圖表](../modeling/media/layer_integrated_dnlucerne.png)
 
  **相依性圖表**
 
@@ -194,7 +194,7 @@ Dinner Now 必須評估符合新需求所需的成本。 這有一部分取決�
 
 - 大部分的圖表是由以線條連結之節點所組成。 針對每個圖表類型，工具箱會提供不同種類的節點及線條。
 
-     若要開啟工具箱，請在 [檢視]  功能表上按一下 [工具箱] 。
+   若要開啟工具箱，請在 [檢視]  功能表上按一下 [工具箱] 。
 
 - 若要建立節點，請將其從工具箱拖曳到圖表。 特定種類的節點必須拖曳到現有節點上。 例如，在元件圖表上，必須將新連接埠加入現有元件中。
 
@@ -206,7 +206,7 @@ Visual Studio 模型圖表已經與 Team Foundation Server 整合，以便您可
 
 當工作進行時，小組會更新工作項目以反映實際花在工作上的時間。 他們也會使用下列 Team Foundation Server 功能來監視及報告工作狀態：
 
-- 每日 *「待執行工作報表」* (Burndown Report)，此報表會顯示他們是否會在預定時間內完成計劃的工作。 他們會從 Team Foundation Server 產生其他類似的報表來追蹤 Bug 進度。
+- 每日*待執行工作報表*，顯示他們是否會完成規劃的工作，預定時間內。 他們會從 Team Foundation Server 產生其他類似的報表來追蹤 Bug 進度。
 
 - *「反覆項目工作表」* (Iteration Worksheet)，此工作表使用 Microsoft Excel 協助小組監視及平衡小組成員間的工作量。 此工作表連結到 Team Foundation Server，並在定期進度會議中提供討論重點。
 
@@ -329,7 +329,7 @@ Code Map 顯示程式碼的目前組織及關聯性。 項目在地圖上是以 
 
 |**圖表**|**描述**|
 |-|-|
-|相依性圖表|系統的邏輯架構。 您可以使用相依性驗證以確定程式碼保持與設計一致。<br /><br /> 若要易於識別現有 dependencys 或預期的 dependencys，請建立 code map 並群組相關的項目。 若要建立相依性圖表，請參閱：<br /><br /> - [從您的程式碼建立相依性圖表](../modeling/create-layer-diagrams-from-your-code.md)<br />- [相依性圖表中：方針](../modeling/layer-diagrams-guidelines.md)|
+|相依性圖表|系統的邏輯架構。 您可以使用相依性驗證以確定程式碼保持與設計一致。<br /><br /> 若要易於識別現有的相依性或預期的相依性，請建立 code map 並群組相關的項目。 若要建立相依性圖表，請參閱：<br /><br /> - [從您的程式碼建立相依性圖表](../modeling/create-layer-diagrams-from-your-code.md)<br />- [相依性圖表中：方針](../modeling/layer-diagrams-guidelines.md)|
 |類別圖表 (以程式碼為基礎)|特定專案程式碼中的現有類別。<br /><br /> 若要修改程式碼中的現有類別並將其視覺化，請使用 [類別設計工具]。<br /><br /> 請參閱[如何：將類別圖表新增至專案 （類別設計工具）](../ide/class-designer/how-to-add-class-diagrams-to-projects.md)。|
 
 ### <a name="DefineClasses"></a> 定義類型的詞彙：類別圖表

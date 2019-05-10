@@ -13,38 +13,38 @@ manager: jillfra
 ms.workload:
 - multiple
 monikerRange: vs-2017
-ms.openlocfilehash: fb7ef710d117318d475e32f19b5ca2511b94f8bc
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: dc75c7414e0fff18f76d14f8f9a4e0779a9e7a2b
+ms.sourcegitcommit: 6a19c5ece38a70731496a38f2ef20676ff18f8a4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63386929"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65476541"
 ---
 # <a name="whats-new-for-design-in-visual-studio-2017"></a>在 Visual Studio 2017 中設計的新功能
 
 ## <a name="live-dependency-validation"></a>即時相依性驗證
 
-移除不必要的相依性是很重要的一部分管理您的技術債務。 相依性的即時驗證現在包含，提供問題的精確資訊，且完全受益於錯誤清單] 和 [編輯器的新功能。
+移除不必要的相依性是很重要的一部分管理您的技術債務。 Visual Studio 提供即時驗證相依性，包括相關問題，例如它們的所在位置的精確資訊。 即時相依性驗證會採用完整的優點 錯誤清單 和 編輯器的新功能。
 
 ![作用中的即時相依性驗證](media/dep-validation-whatsnew-01.png)
 
-編寫體驗已變更為讓相依性驗證更容易找到和更容易存取，變更從 「 圖層圖表 」 到 「 相依性圖表 」 的術語。
+編寫體驗已變更為更容易被找到也更容易存取，讓相依性驗證。 術語已從 「 圖層圖表 」 變成 「 相依性圖表 」。
 
 **架構**功能表現在包含直接建立相依性圖表的命令：
 
 ![在 [架構] 功能表上的即時相依性項目](media/dep-validation-whatsnew-02.png)
 
-...並使其更有意義已變更之屬性名稱的相依性圖表，以及其描述中的圖層：
+圖層屬性名稱和描述已變更，使其更有意義：
 
 ![即時更新的相依性屬性名稱](media/dep-validation-whatsnew-03.png)
 
-您現在會看到您的變更，立即在方案中目前的程式碼分析結果的影響每次您儲存圖表。 您不必再等候完成 「 相依性驗證 」 命令。
+您立刻看到您的變更，在方案中目前的程式碼分析結果的影響每次您儲存圖表。 您不需要等候完成**驗證相依性**命令。
 
 如需詳細資訊，請參閱 <<c0> [ 此部落格文章](https://devblogs.microsoft.com/devops/live-architecture-dependency-validation-in-visual-studio-15-preview-5/)。
 
 ## <a name="uml-designers-have-been-removed"></a>已移除 UML 設計工具
 
-UML 設計工具已移除了此版本的 Visual Studio Enterprise。
+已從 Visual Studio 移除 UML 設計工具。
 
 * UML 圖表現在會顯示為 XML 檔案
 * UML 模型總管 不存在
@@ -57,7 +57,7 @@ UML 設計工具已移除了此版本的 Visual Studio Enterprise。
 * 不再支援後從連結到 DSL 或圖層
 * Modeling SDK 中的 UML 擴充性已不再支援
 
-不過，支援視覺化.NET 和 c + + 程式碼的架構是可透過[code map](map-dependencies-across-your-solutions.md)，與上面所述的相依性驗證有長足的改進。
+以視覺化方式呈現的.NET 架構的支援和C++程式碼也可透過[code map](map-dependencies-across-your-solutions.md)。
 
 如果您是 UML 設計工具的大量使用者時，您可以繼續使用 Visual Studio 2015 或更早版本，而您決定針對您的 UML 需求的替代工具。
 

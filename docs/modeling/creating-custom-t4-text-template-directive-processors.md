@@ -9,14 +9,14 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6c159cd6fbd4f2fbfff414688e2ec865bcc8ddb4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3f9d514178e4b899ca727e17ead260719697b562
+ms.sourcegitcommit: 6a19c5ece38a70731496a38f2ef20676ff18f8a4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63002704"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65476641"
 ---
-# <a name="creating-custom-t4-text-template-directive-processors"></a>建立自訂 T4 文字範本指示詞處理器
+# <a name="create-custom-t4-text-template-directive-processors"></a>建立自訂 T4 文字範本指示詞處理器
 
 *文字範本轉換流程*採用*文字範本*做為輸入並產生文字檔做為輸出的檔案。 *文字範本轉換引擎*控制項與文字範本轉換主應用程式和一個或多個文字範本的程序和引擎互動*指示詞處理器*完成程序。 如需詳細資訊，請參閱 <<c0> [ 文字範本轉換流程](../modeling/the-text-template-transformation-process.md)。
 
