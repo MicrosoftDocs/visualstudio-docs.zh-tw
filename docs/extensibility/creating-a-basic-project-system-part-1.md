@@ -601,7 +601,7 @@ Templates
 
 3. 檢查的值`nameSpace`和`className`參數。
 
-   - `nameSpace` 指定的值\<RootNamespace > 中的項目*\Templates\Projects\SimpleProject\SimpleProject.myproj*專案範本檔案。 此處的值為 `MyRootNamespace`。
+   - `nameSpace` 指定的值 \<RootNamespace> 中的項目 *\Templates\Projects\SimpleProject\SimpleProject.myproj* 專案範本檔案。 此處的值為 `MyRootNamespace`。
 
    - `className` 值會指定類別的來源檔案名稱，但不包括檔案名稱副檔名。 在此案例中，第一個檔案複製到目的資料夾是*AssemblyInfo.cs*; 因此，類別名稱的值是`AssemblyInfo`。
 
