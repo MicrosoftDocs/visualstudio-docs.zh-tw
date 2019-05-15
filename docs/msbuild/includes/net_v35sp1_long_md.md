@@ -13,10 +13,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-ms.openlocfilehash: 9b1f6eb7dc3091349c5fb91e480f6e673ecd7bf8
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 9676c35c8f781649d384a674d08099a9cf38b035
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62938691"
 ---
 .NET Framework 3.5 Service Pack 1

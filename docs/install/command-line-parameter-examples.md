@@ -12,12 +12,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 4196916958de2df4f9c3a12f030b22d712e87502
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5a87b5d98d9f3b7453cf0337d529b9ef99815d92
+ms.sourcegitcommit: 77b4ca625674658d5c5766e684fa0e2a07cad4da
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62974228"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "65614511"
 ---
 # <a name="command-line-parameter-examples-for-visual-studio-installation"></a>Visual Studio 安裝的命令列參數範例
 
@@ -67,7 +67,21 @@ ms.locfileid: "62974228"
 * 在批次檔或指令碼中使用，以等候 Visual Studio 安裝程式完成，然後再執行下一個命令。 針對批次檔，`%ERRORLEVEL%` 環境變數會包含命令的傳回值，如[使用命令列參數安裝 Visual Studio](use-command-line-parameters-to-install-visual-studio.md) 頁面中所述。 有些命令公用程式需要額外的參數來等候完成，以及取得安裝程式的傳回值。 以下為與 PowerShell 指令碼命令 'Start-Process' 搭配使用的其他參數範例：
 
    ```cmd
-   $exitCode = Start-Process -FilePath vs_enterprise.exe -ArgumentList "install", "--quiet", "--wait" -Wait -PassThru
+   start /wait vs_professional.exe --installPath "C:\VS" --passive --wait > nul
+   echo %errorlevel%
+   ```
+   ```PS
+   $exitCode = Start-Process -FilePath vs_enterprise.exe -ArgumentList "--installPath", "C:\VS", "--passive", "--wait" -Wait -PassThru
+   ```
+   或
+   ```PS
+    $startInfo = New-Object System.Diagnostics.ProcessStartInfo
+    $startInfo.FileName = "vs_enterprise.exe"
+    $startInfo.Arguments = "--all --quiet --wait" 
+    $process = New-Object System.Diagnostics.Process
+    $process.StartInfo = $startInfo
+    $process.Start() 
+    $process.WaitForExit()
    ```
 
 * 第一個 '--wait ' 會由 Visual Studio 安裝程式所使用，而 'Start-Process' 會使用第二個 '-Wait' 來等候完成。 'Start-Process' 會使用 '-PassThru' 參數，來使用安裝程式的結束代碼作為其傳回值。

@@ -9,12 +9,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: 0ce1b620a6d8aba7e4aea767745891dff6d9f869
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 9124054dec08fde94ec98ca9e3ebdfb6e48d7384
+ms.sourcegitcommit: 614d5b99576ea27a41957cd94062dc95cbd29c1c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62790026"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65531621"
 ---
 # <a name="generate-usings-in-visual-studio"></a>在 Visual Studio 中產生 using
 
@@ -32,7 +32,7 @@ ms.locfileid: "62790026"
 
 1. 從檔案複製程式碼並貼上到新檔案中，但不包含必要的 `using` 陳述式。 產生的錯誤現在會伴隨程式碼修正，該修正會新增遺失的 `using` 陳述式。
 
-    > [!NOTE] 
+    > [!NOTE]
     > 您需要在 [工具] > [選項] > [文字編輯器] > [C#] > [進階] > [Using 指示詞] 中啟用此建議。
 
 2. 選取 Ctrl+. 以開啟 [快速動作與重構] 功能表。
@@ -47,4 +47,4 @@ ms.locfileid: "62790026"
 
 - [程式碼產生](../code-generation-in-visual-studio.md)
 - [預覽變更](../../ide/preview-changes.md)
-- [.NET 開發人員的秘訣](../../ide/visual-studio-2017-for-dotnet-developers.md)
+- [.NET 開發人員的秘訣](../csharp-developer-productivity.md)

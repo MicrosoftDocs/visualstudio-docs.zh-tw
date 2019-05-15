@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9f263be2e26100c7b61bffca35df39b945d88a91
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: aa2c9a4585947fb7d2e21d1eea4e6613cdd33964
+ms.sourcegitcommit: 614d5b99576ea27a41957cd94062dc95cbd29c1c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62581977"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65531661"
 ---
 # <a name="features-of-the-code-editor"></a>程式碼編輯器的功能
 
@@ -52,7 +52,7 @@ Visual Studio 編輯器提供許多功能，讓您能夠更輕鬆地撰寫並管
 
 |||
 |-|-|
-|[將文件格式化](code-styles-and-quick-actions.md#format-document-command)|設定程式碼適當的行縮排，並移動大括號以分隔文件中的行。|
+|格式化文件|設定程式碼適當的行縮排，並移動大括號以分隔文件中的行。|
 |格式化選取範圍|設定程式碼適當的行縮排，並移動大括號以分隔選取範圍中的行。|
 |選取範圍空白鍵轉定位鍵|將前置空格變更至適當的定位點。|
 |選取範圍定位鍵轉空白鍵|將前置定位點變更為空格。 如果您要將檔案中所有空格轉換為定位點 (或轉換所有定位點為空格)，可以使用 `Edit.ConvertSpacesToTabs` 及 `Edit.ConvertTabsToSpaces` comm及s. 在 Visual Studio 功能表中看不到這些命令，但可以透過 [快速存取] 視窗或命令視窗加以呼叫。|
@@ -84,7 +84,7 @@ Visual Studio 編輯器提供許多功能，讓您能夠更輕鬆地撰寫並管
 
 若要定義新的熱鍵或重新定義現有熱鍵，請移至 [工具] > [選項] > [環境] > [鍵盤]。 如需快速鍵的詳細資訊，請參閱[預設鍵盤快速鍵](../ide/default-keyboard-shortcuts-in-visual-studio.md)。
 
-如需自訂編輯器的詳細資訊，請參閱[自訂編輯器](../ide/customizing-the-editor.md)。 如需 JavaScript 特定的編輯器選項，請參閱 [JavaScript 編輯器選項](../ide/reference/options-text-editor-javascript-formatting.md)。
+如需 JavaScript 特定的編輯器選項，請參閱 [JavaScript 編輯器選項](../ide/reference/options-text-editor-javascript-formatting.md)。
 
 ## <a name="see-also"></a>另請參閱
 

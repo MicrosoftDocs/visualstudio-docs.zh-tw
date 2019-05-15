@@ -10,12 +10,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 5a809eee1eb5460e245f64156385f759870adbd3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a0419100cbc5fcd543eb250fa85cbfe2ebd1c97f
+ms.sourcegitcommit: 614d5b99576ea27a41957cd94062dc95cbd29c1c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62970245"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65531594"
 ---
 # <a name="invert-if-statement"></a>反轉 if 陳述式
 
@@ -47,4 +47,4 @@ ms.locfileid: "62970245"
 ## <a name="see-also"></a>另請參閱
 
 - [重構](../refactoring-in-visual-studio.md)
-- [.NET 開發人員的秘訣](../../ide/visual-studio-2017-for-dotnet-developers.md)
+- [.NET 開發人員的秘訣](../csharp-developer-productivity.md)

@@ -11,14 +11,14 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a2c0a6f7c2203e7b3a37f974d916010dbe70b31f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 33d4f0cce0699c27068152827382eb7d8627b715
+ms.sourcegitcommit: 614d5b99576ea27a41957cd94062dc95cbd29c1c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62824213"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65531954"
 ---
-# <a name="how-to-change-text-case-in-the-editor"></a>HOW TO：變更編輯器中的文字大小寫
+# <a name="how-to-change-text-case-in-the-editor"></a>作法：變更編輯器中的文字大小寫
 
 您可以使用功能表命令或鍵盤快速鍵，將所選取文字的大小寫轉換成全部大寫或全部小寫。
 
@@ -42,6 +42,5 @@ ms.locfileid: "62824213"
 
 ## <a name="see-also"></a>另請參閱
 
-- [自訂編輯器](../ide/customizing-the-editor.md)
 - [文字編輯器選項對話方塊](../ide/reference/text-editor-options-dialog-box.md)
 - [程式碼編輯器的功能](../ide/writing-code-in-the-code-and-text-editor.md)

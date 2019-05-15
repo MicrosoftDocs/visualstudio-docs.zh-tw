@@ -10,12 +10,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 2d0875f9a298af24575cc05008713cbb6c3e2ead
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ce2b0f1e0c0db45c478c3917306683b314da0564
+ms.sourcegitcommit: 614d5b99576ea27a41957cd94062dc95cbd29c1c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62789728"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65531868"
 ---
 # <a name="unused-value-assignments-variables-and-parameters"></a>未使用的值指派、變數及參數
 
@@ -43,4 +43,4 @@ ms.locfileid: "62789728"
 ## <a name="see-also"></a>另請參閱
 
 - [重構](../refactoring-in-visual-studio.md)
-- [.NET 開發人員的秘訣](../../ide/visual-studio-2017-for-dotnet-developers.md)
+- [.NET 開發人員的秘訣](../csharp-developer-productivity.md)
