@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 116a08025f70c2cd1e4c87f775511bd20ac0e4ab
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: bda142c4209d2b369a169036cd2ee6aa7d5bafe2
+ms.sourcegitcommit: 77b4ca625674658d5c5766e684fa0e2a07cad4da
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62923626"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "65615026"
 ---
 # <a name="idebugbinderresolvedynamictype"></a>IDebugBinder::ResolveDynamicType
 這個方法會傳回變數的確切型別。
@@ -38,14 +41,12 @@ int ResolveDynamicType(
 );
 ```
 
-#### <a name="parameters"></a>參數
- `pDynamic`
+## <a name="parameters"></a>參數
+`pDynamic`\
+[in][IDebugDynamicField](../../../extensibility/debugger/reference/idebugdynamicfield.md)代表變數的類型。
 
- [in][IDebugDynamicField](../../../extensibility/debugger/reference/idebugdynamicfield.md)代表變數的類型。
-
- `ppResolved`
-
- [out]傳回[IDebugField](../../../extensibility/debugger/reference/idebugfield.md)提供變數的類型的特定資訊。
+`ppResolved`\
+[out]傳回[IDebugField](../../../extensibility/debugger/reference/idebugfield.md)提供變數的類型的特定資訊。
 
 ## <a name="return-value"></a>傳回值
  如果成功，則傳回`S_OK`; 否則傳回錯誤碼。

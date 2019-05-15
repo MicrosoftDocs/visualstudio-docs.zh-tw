@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f1d4622e1de76406568cda4761005c5482f3169d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 39c1c8b6d8294676df3527cafbdd035a9da84548
+ms.sourcegitcommit: 77b4ca625674658d5c5766e684fa0e2a07cad4da
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62877493"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "65615089"
 ---
 # <a name="idebugbinderresolveruntimetype"></a>IDebugBinder::ResolveRuntimeType
 這個方法會判斷物件的執行階段型別。
@@ -38,14 +41,12 @@ int ResolveRuntimeType(
 );
 ```
 
-#### <a name="parameters"></a>參數
- `pObject`
+## <a name="parameters"></a>參數
+`pObject`\
+[in][IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)進行解析。
 
- [in][IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)進行解析。
-
- `ppResolved`
-
- [out]傳回的物件做為類型[IDebugField](../../../extensibility/debugger/reference/idebugfield.md)。
+`ppResolved`\
+[out]傳回的物件做為類型[IDebugField](../../../extensibility/debugger/reference/idebugfield.md)。
 
 ## <a name="return-value"></a>傳回值
  如果成功，則傳回`S_OK`; 否則傳回錯誤碼。

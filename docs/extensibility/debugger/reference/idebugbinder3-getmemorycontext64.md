@@ -11,12 +11,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 522d6cc0888f3ccbfd8c39a9ec313f7e06add25f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 48c4bde703584a57baac8040d9c5176f942300db
+ms.sourcegitcommit: 77b4ca625674658d5c5766e684fa0e2a07cad4da
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62877470"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "65614754"
 ---
 # <a name="idebugbinder3getmemorycontext64"></a>IDebugBinder3::GetMemoryContext64
 將記憶體內容的物件位置或 64 位元記憶體位址。
@@ -39,18 +42,15 @@ int GetMemoryContext64 (
 );
 ```
 
-#### <a name="parameters"></a>參數
-`pField`
+## <a name="parameters"></a>參數
+`pField`\
+[in][IDebugField](../../../extensibility/debugger/reference/idebugfield.md) ，描述要尋找的物件。 如果`NULL`，然後使用`dwConstant`改。
 
- [in][IDebugField](../../../extensibility/debugger/reference/idebugfield.md) ，描述要尋找的物件。 如果`NULL`，然後使用`dwConstant`改。
+`uConstant`\
+[in]64 位元記憶體位址，例如 0x50000000。
 
-`uConstant`
-
- [in]64 位元記憶體位址，例如 0x50000000。
-
-`ppMemCxt`
-
- [out]傳回[IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md)代表物件的位址或在記憶體中的位址的介面。
+`ppMemCxt`\
+[out]傳回[IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md)代表物件的位址或在記憶體中的位址的介面。
 
 ## <a name="return-value"></a>傳回值
 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。

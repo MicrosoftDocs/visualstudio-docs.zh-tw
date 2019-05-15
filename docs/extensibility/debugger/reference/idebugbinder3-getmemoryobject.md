@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 01cb000519647c415f68b369f5d2147a30e705e0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 7741ad4f7b587cbd31888e643557c744ca4200e2
+ms.sourcegitcommit: 77b4ca625674658d5c5766e684fa0e2a07cad4da
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62923541"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "65614949"
 ---
 # <a name="idebugbinder3getmemoryobject"></a>IDebugBinder3::GetMemoryObject
 這個方法會擷取表示這個物件會繫結至記憶體的記憶體物件。
@@ -40,18 +43,15 @@ int GetMemoryObject(
 );
 ```
 
-#### <a name="parameters"></a>參數
- `pField`
+## <a name="parameters"></a>參數
+`pField`\
+[in]指定要取得的記憶體物件的欄位。
 
- [in]指定要取得的記憶體物件的欄位。
+`uConstant`\
+[in]代表記憶體位址或常數值的值。
 
- `uConstant`
-
- [in]代表記憶體位址或常數值的值。
-
- `ppObject`
-
- [out][IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)表示此物件的繫結至的記憶體。
+`ppObject`\
+[out][IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)表示此物件的繫結至的記憶體。
 
 ## <a name="return-value"></a>傳回值
  如果成功，則傳回`S_OK`; 否則傳回錯誤碼。

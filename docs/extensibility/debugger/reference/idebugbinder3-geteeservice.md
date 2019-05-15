@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3d709124a392ffb6b6cbbb5a29576a985fe6d0f2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: eaaaf52a0a577d8b802540ca9b4ae11ab9aa1dbd
+ms.sourcegitcommit: 77b4ca625674658d5c5766e684fa0e2a07cad4da
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62877555"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "65614908"
 ---
 # <a name="idebugbinder3geteeservice"></a>IDebugBinder3::GetEEService
 這個方法會傳回要求的服務。
@@ -42,22 +45,18 @@ Int GetEEService(
 );
 ```
 
-#### <a name="parameters"></a>參數
- `vendor`
+## <a name="parameters"></a>參數
+`vendor`\
+[in]`GUID` （null 的值是可接受的） 之供應商。
 
- [in]`GUID` （null 的值是可接受的） 之供應商。
+`language`\
+[in]`GUID`的 （null 的值是可接受） 的語言。
 
- `language`
+`iid`\
+[in]`IID`要取得的服務。
 
- [in]`GUID`的 （null 的值是可接受） 的語言。
-
- `iid`
-
- [in]`IID`要取得的服務。
-
- `ppService`
-
- [out]要求的服務介面。
+`ppService`\
+[out]要求的服務介面。
 
 ## <a name="return-value"></a>傳回值
  如果成功，則傳回`S_OK`; 否則傳回錯誤碼。

@@ -13,12 +13,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 267f7b3fed8df1a326bca9dd5c1ca8128330ee16
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: c0f178497b9f53c488c8f4cb3142559a7883778a
+ms.sourcegitcommit: 77b4ca625674658d5c5766e684fa0e2a07cad4da
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62877434"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "65614653"
 ---
 # <a name="idebugboundbreakpoint2enable"></a>IDebugBoundBreakpoint2::Enable
 啟用或停用中斷點。
@@ -37,10 +40,9 @@ int Enable( 
 );
 ```
 
-#### <a name="parameters"></a>參數
-`fEnable`
-
- [in]設定為非零 (`TRUE`) 若要啟用，或為零 (`FALSE`) 若要停用中斷點。
+## <a name="parameters"></a>參數
+`fEnable`\
+[in]設定為非零 (`TRUE`) 若要啟用，或為零 (`FALSE`) 若要停用中斷點。
 
 ## <a name="return-value"></a>傳回值
 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。 傳回`E_BP_DELETED`如果繫結的中斷點物件的狀態設為`BPS_DELETED`(屬於[BP_STATE](../../../extensibility/debugger/reference/bp-state.md)列舉型別)。

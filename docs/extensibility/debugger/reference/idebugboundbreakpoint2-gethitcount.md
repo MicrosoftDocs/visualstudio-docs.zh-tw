@@ -13,12 +13,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 88fde36e2d7b0ef776849d7d3af7e36418dfff7d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: e173f1f448cba6ee3ed3ab7a6176089996e48e4a
+ms.sourcegitcommit: 77b4ca625674658d5c5766e684fa0e2a07cad4da
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62877391"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "65614750"
 ---
 # <a name="idebugboundbreakpoint2gethitcount"></a>IDebugBoundBreakpoint2::GetHitCount
 取得此繫結中斷點目前叫用的次數。
@@ -37,10 +40,9 @@ int GetHitCount( 
 );
 ```
 
-#### <a name="parameters"></a>參數
- `pdwHitCount`
-
- [out]傳回叫用的次數。
+## <a name="parameters"></a>參數
+`pdwHitCount`\
+[out]傳回叫用的次數。
 
 ## <a name="return-value"></a>傳回值
  如果成功，則傳回`S_OK`; 否則傳回錯誤碼。 傳回`E_BP_DELETED`如果繫結的中斷點物件的狀態設為`BPS_DELETED`(屬於[BP_STATE](../../../extensibility/debugger/reference/bp-state.md)列舉型別)。
