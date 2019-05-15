@@ -24,14 +24,14 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 57987b67a2fa081ebaa577f10de478b5fd250aca
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 39873fdd1bc41b32a69909a1061ec3fc7fb63b67
+ms.sourcegitcommit: 614d5b99576ea27a41957cd94062dc95cbd29c1c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62429778"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65531899"
 ---
-# <a name="how-to-manage-editor-modes"></a>HOW TO：管理編輯器模式
+# <a name="how-to-manage-editor-modes"></a>作法：管理編輯器模式
 
 您可以使用各種不同的顯示模式來顯示 Visual Studio 程式碼編輯器。
 
@@ -63,6 +63,5 @@ ms.locfileid: "62429778"
 
 ## <a name="see-also"></a>另請參閱
 
-- [自訂編輯器](../ide/customizing-the-editor.md)
 - [在 Visual Studio 中自訂視窗版面配置](../ide/customizing-window-layouts-in-visual-studio.md)
 - [選項對話方塊、環境、字型和色彩](../ide/reference/fonts-and-colors-environment-options-dialog-box.md)

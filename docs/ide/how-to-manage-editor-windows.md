@@ -1,5 +1,5 @@
 ---
-title: HOW TO：管理編輯器視窗
+title: 作法：管理編輯器視窗
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,14 +13,14 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: be0c11509dc72baf8ab34cf2ef850fec352a9877
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 8a8b6d1d4c39f09382dd0e4a12660bed31ad9b2d
+ms.sourcegitcommit: 614d5b99576ea27a41957cd94062dc95cbd29c1c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62428998"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65531933"
 ---
-# <a name="how-to-manage-editor-windows"></a>HOW TO：管理編輯器視窗
+# <a name="how-to-manage-editor-windows"></a>作法：管理編輯器視窗
 
 您可以同時在數個位置處理程式碼。 做法是分割編輯器視窗，或開啟數個編輯器視窗執行個體。
 
@@ -56,6 +56,5 @@ ms.locfileid: "62428998"
 
 ## <a name="see-also"></a>另請參閱
 
-- [自訂編輯器](../ide/customizing-the-editor.md)
 - [程式碼編輯器的功能](../ide/writing-code-in-the-code-and-text-editor.md)
 - [自訂視窗版面配置](../ide/customizing-window-layouts-in-visual-studio.md)

@@ -27,14 +27,14 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4986faba52606937993af17824789ced2d600ad5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 4fce2c5aed3c98cf4583e20df96c0444cc91439a
+ms.sourcegitcommit: 614d5b99576ea27a41957cd94062dc95cbd29c1c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62429269"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65531971"
 ---
-# <a name="how-to-customize-menus-and-toolbars-in-visual-studio"></a>HOW TO：在 Visual Studio 中自訂功能表和工具列
+# <a name="how-to-customize-menus-and-toolbars-in-visual-studio"></a>作法：在 Visual Studio 中自訂功能表和工具列
 
 您可以自訂 Visual Studio，不只是可以新增及移除功能表列上的工具列和功能表，還可以新增及移除任何指定工具列或功能表上的命令。
 
@@ -120,4 +120,4 @@ ms.locfileid: "62429269"
 ## <a name="see-also"></a>另請參閱
 
 - [個人化 IDE](../ide/personalizing-the-visual-studio-ide.md)
-- [自訂編輯器](../ide/customizing-the-editor.md)
+- [自訂編輯器](../ide/how-to-change-text-case-in-the-editor.md)

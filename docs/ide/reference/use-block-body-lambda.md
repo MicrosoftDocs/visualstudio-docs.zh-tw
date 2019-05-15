@@ -9,12 +9,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: 1f055925a4da916bf88da802e7a4991b0362b057
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5c46506e81e5334efea9060e957269e92e9d49cc
+ms.sourcegitcommit: 614d5b99576ea27a41957cd94062dc95cbd29c1c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62789422"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65531925"
 ---
 # <a name="use-expression-body-or-block-body-for-lambda-expressions"></a>為 Lambda 運算式使用運算式主體或區塊主體
 
@@ -24,7 +24,7 @@ ms.locfileid: "62789422"
 
 **功能：** 可讓您重構 Lambda 運算式以使用運算式主體或區塊主體。
 
-**時機：** 您偏好以 Lambda 運算式使用運算式主體或區塊主體。 
+**時機：** 您偏好以 Lambda 運算式使用運算式主體或區塊主體。
 
 **原因：** Lambda 運算式可以根據您的使用者喜好設定來進行重構，以改善可讀性。
 
@@ -40,4 +40,4 @@ ms.locfileid: "62789422"
 ## <a name="see-also"></a>另請參閱
 
 - [重構](../refactoring-in-visual-studio.md)
-- [.NET 開發人員的秘訣](../../ide/visual-studio-2017-for-dotnet-developers.md)
+- [.NET 開發人員的秘訣](../csharp-developer-productivity.md)

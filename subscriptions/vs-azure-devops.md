@@ -7,12 +7,12 @@ ms.date: 09/19/2018
 ms.topic: conceptual
 description: 了解如何以 Visual Studio 訂閱者的身分使用 Azure DevOps。
 searchscope: VS Subscription
-ms.openlocfilehash: 08511fda1cc91d84929ee4fd095e82a0656d26a0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 9c10a8ec7e8ec71bee29f707e9abb8eb43f2b3c3
+ms.sourcegitcommit: bd519d1da375e374016f94a44c295d3253f61a8c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62947814"
+ms.lasthandoff: 04/30/2019
+ms.locfileid: "64945151"
 ---
 # <a name="azure-devops-benefits-for-visual-studio-subscribers"></a>Visual Studio 訂閱者的 Azure DevOps 權益
 
@@ -41,7 +41,7 @@ ms.locfileid: "62947814"
 
 深入了解 Azure DevOps 功能：
 
-- [Azure Boards & Repos (基本)](https://visualstudio.microsoft.com/team-services/compare-features/)
+- [Azure Boards & Repos (基本)](https://azure.microsoft.com/services/devops/compare-features/)
 - [Azure Test Plans](https://marketplace.visualstudio.com/items?itemName=ms.vss-testmanager-web)
 - [Azure Artifacts](https://marketplace.visualstudio.com/items?itemName=ms.feed)
 

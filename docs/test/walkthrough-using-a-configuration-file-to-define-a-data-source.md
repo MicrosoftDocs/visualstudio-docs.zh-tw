@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a64d6e46a674ad068c2a90eaf6b011a038d2e46e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ccb2400b209fa7902e8fde8dd7ba601e465a840d
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62976200"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65461466"
 ---
 # <a name="walkthrough-using-a-configuration-file-to-define-a-data-source"></a>逐步解說：使用組態檔定義資料來源
 
@@ -62,16 +62,16 @@ ms.locfileid: "62976200"
 
 2. 在 **configSections** 項目內建立 **section** 項目。
 
-3. 在 **section** 項目中新增稱為 `name` 的屬性，並為它指派值 `microsoft.visualstudio.testtools`。 新增另一個稱為 `type` 的屬性，並為它指派值 `Microsoft.VisualStudio.TestTools.UnitTesting.TestConfigurationSection, Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a`。
+3. 在 **section** 項目中新增稱為 `name` 的屬性，並為它指派值 `microsoft.visualstudio.testtools`。 新增另一個稱為 `type` 的屬性，並為它指派值 `Microsoft.VisualStudio.TestTools.UnitTesting.TestConfigurationSection, Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions`。
 
 **section** 項目應該看起來像這樣：
 
 ```xml
-<section name="microsoft.visualstudio.testtools" type="Microsoft.VisualStudio.TestTools.UnitTesting.TestConfigurationSection, Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"/>
+<section name="microsoft.visualstudio.testtools" type="Microsoft.VisualStudio.TestTools.UnitTesting.TestConfigurationSection, Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions" />
 ```
 
 > [!NOTE]
-> 組件名稱必須與您所使用的 Microsoft Visual Studio .NET Framework 組建相符。 如果您是使用 Visual Studio .NET Framework 3.5，請將 Version 設定為 9.0.0.0。 如果您是使用 Visual Studio .NET Framework 2.0，請將 Version 設定為 8.0.0.0。
+> 組件名稱必須與您所使用的 Microsoft Visual Studio .NET Framework 組建相符。
 
 ## <a name="define-connection-strings"></a>定義連接字串
 

@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8f7a4cd8e01f0538e2551b4b7c1c3ad67a221667
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 0228ab75da15099aad3a6f60feca3d71f644b4ff
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62955575"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65455082"
 ---
 # <a name="sample-xsd-file-simple-schema"></a>範例 XSD 檔案：簡單結構描述
 
@@ -45,3 +45,6 @@ XSD 結構描述設計工具文件中的數個範例使用下列 XSD 檔案。 �
  </xsd:complexType>
 </xsd:schema>
 ```
+
+> [!NOTE]
+> 此處所描述的範例公司、組織、產品、網域名稱、電子郵件地址、商標、人員、地點與事件均屬虛構。 並非影射任何真實的公司、組織、產品、網域名稱、電子郵件地址、商標、人員、地點或事件。

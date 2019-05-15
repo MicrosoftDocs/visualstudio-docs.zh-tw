@@ -13,14 +13,14 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cd3c5d9c1d17bd8a0dae4969c7203902747a8c8b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e07f6a1094658f575f4e805798ee468c5c829238
+ms.sourcegitcommit: 614d5b99576ea27a41957cd94062dc95cbd29c1c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62789763"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65531580"
 ---
-# <a name="how-to-display-line-numbers-in-the-editor"></a>HOW TO：在編輯器中顯示行號
+# <a name="how-to-display-line-numbers-in-the-editor"></a>作法：在編輯器中顯示行號
 
 您可以在程式碼中顯示或隱藏行號。
 
@@ -37,6 +37,5 @@ ms.locfileid: "62789763"
 
 ## <a name="see-also"></a>另請參閱
 
-- [自訂編輯器](../../ide/customizing-the-editor.md)
 - [文字編輯器選項對話方塊](../../ide/reference/text-editor-options-dialog-box.md)
 - [程式碼編輯器的功能](../../ide/writing-code-in-the-code-and-text-editor.md)

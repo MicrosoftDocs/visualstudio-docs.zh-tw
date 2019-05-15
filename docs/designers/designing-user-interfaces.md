@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2b3096242335a1e9d374da4a801c9ff4d2c80635
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 20124d2e9b9cc30a7577a3682358f2a9d918ed43
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62845480"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65456855"
 ---
 # <a name="design-user-interfaces"></a>設計使用者介面
 
@@ -24,6 +24,6 @@ ms.locfileid: "62845480"
 | Visual Studio 和 Blend for Visual Studio 中的 XAML 設計工具功能 | [在 Visual Studio 和 Blend for Visual Studio 中設計 XAML](../designers/designing-xaml-in-visual-studio.md) |
 | 使用 Visual Studio 設計任何以 XAML 為基礎的應用程式|[在 Visual Studio 中使用 XAML 設計工具建立 UI](creating-a-ui-by-using-xaml-designer-in-visual-studio.md) |
 | 使用 Blend for Visual Studio 設計任何以 XAML 為基礎的應用程式 | [使用 Blend for Visual Studio 建立 UI](creating-a-ui-by-using-blend-for-visual-studio.md) |
-|設計使用 XAML WPF 類別的桌面應用程式 | [Windows Presentation Foundation 快速入門](../designers/getting-started-with-wpf.md) |
+| 設計使用 XAML WPF 類別的桌面應用程式 | [Windows Presentation Foundation 快速入門](../designers/getting-started-with-wpf.md) |
 | 在 Visual Studio 中開發 DirectX 應用程式 | [使用 3D 資產來打造遊戲和應用程式](../designers/working-with-3-d-assets-for-games-and-apps.md) |
 | 適用於您程式的標準圖示 | [Visual Studio 影像庫](../designers/the-visual-studio-image-library.md) |

@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a43ade295d14934f452123407f9896eebdaf26c7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: eccbc834f4038ec18c2f84244488b81a59ecbfbf
+ms.sourcegitcommit: 614d5b99576ea27a41957cd94062dc95cbd29c1c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62953372"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65531564"
 ---
 # <a name="personalize-the-visual-studio-ide-and-editor"></a>個人化 Visual Studio 整合式開發環境 (IDE) 及編輯器
 
@@ -117,5 +117,5 @@ Visual Studio 使用者介面的預設色彩佈景主題為 [藍色]。 讓我�
 
 ## <a name="see-also"></a>另請參閱
 
-- [自訂編輯器](../ide/customizing-the-editor.md)
+- [自訂編輯器](../ide/how-to-change-text-case-in-the-editor.md)
 - [Visual Studio IDE 概觀](../get-started/visual-studio-ide.md)
