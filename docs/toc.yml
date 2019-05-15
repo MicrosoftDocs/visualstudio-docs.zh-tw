@@ -35,6 +35,8 @@
       href: install/install-visual-studio-versions-side-by-side.md
     - name: 選取安裝位置
       href: install/change-installation-locations.md
+    - name: 匯入或匯出安裝組態
+      href: install/import-export-installation-configurations.md
     - name: 針對安裝問題進行疑難排解
       href: install/troubleshooting-installation-issues.md
     - name: 更新 Visual Studio 2017
@@ -63,8 +65,6 @@
               href: install/create-a-network-installation-of-visual-studio.md
             - name: 更新 Visual Studio 的網路型安裝
               href: install/update-a-network-installation-of-visual-studio.md
-            - name: 匯入或匯出安裝組態
-              href: install/import-export-installation-configurations.md
             - name: 網路考量
               items:
                 - name: 在防火牆或 Proxy 伺服器後方安裝及使用 Visual Studio
