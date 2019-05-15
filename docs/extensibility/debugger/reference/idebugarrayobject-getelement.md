@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 735b92bb649344c055f7a645b961925e3cbd4d6e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 5550a1f1e83b9343a031df39728675db07de3559
+ms.sourcegitcommit: 77b4ca625674658d5c5766e684fa0e2a07cad4da
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62924044"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "65615156"
 ---
 # <a name="idebugarrayobjectgetelement"></a>IDebugArrayObject::GetElement
 取得陣列的項目。
@@ -38,14 +41,12 @@ int GetElement(
 );
 ```
 
-#### <a name="parameters"></a>參數
- `dwIndex`
+## <a name="parameters"></a>參數
+`dwIndex`\
+[in]項目索引。
 
- [in]項目索引。
-
- `ppElement`
-
- [out]傳回[IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)介面，表示項目。
+`ppElement`\
+[out]傳回[IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)介面，表示項目。
 
 ## <a name="return-value"></a>傳回值
  如果成功，會傳回 S_OK;否則，傳回錯誤碼。

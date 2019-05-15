@@ -11,12 +11,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 890e215c7e575e67a4360717851bab538966f419
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 17f6e487dee1b5ae490cfc2ab180eb872ed5b5d2
+ms.sourcegitcommit: 77b4ca625674658d5c5766e684fa0e2a07cad4da
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56715046"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "65615103"
 ---
 # <a name="idebugalias2getappdomainid"></a>IDebugAlias2::GetAppDomainId
 擷取應用程式定義域的識別項。
@@ -35,10 +38,9 @@ int GetAppDomainId (
 );
 ```
 
-#### <a name="parameters"></a>參數
- `pappDomainId`
-
- [out]傳回應用程式網域識別項。
+## <a name="parameters"></a>參數
+`pappDomainId`\
+[out]傳回應用程式網域識別項。
 
 ## <a name="return-value"></a>傳回值
  如果成功，則傳回`S_OK`; 否則傳回錯誤碼。

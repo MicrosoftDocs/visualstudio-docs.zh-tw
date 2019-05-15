@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1c091c7696867f369262a81259105dcf23fbe4c9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 2097a2168b40129c66ae6c48e75fee385ea81a45
+ms.sourcegitcommit: 77b4ca625674658d5c5766e684fa0e2a07cad4da
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62877735"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "65615251"
 ---
 # <a name="idebugarrayfieldgetrank"></a>IDebugArrayField::GetRank
 取得的順位或陣列的維度數目。
@@ -36,10 +39,9 @@ int GetRank(
 );
 ```
 
-#### <a name="parameters"></a>參數
- `pdwRank`
-
- [out]傳回順位。
+## <a name="parameters"></a>參數
+`pdwRank`\
+[out]傳回順位。
 
 ## <a name="return-value"></a>傳回值
  如果成功，會傳回 S_OK;否則，傳回錯誤碼。

@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3d2fce11c4ddd5a2ca882749ff4ae4a9b3ee0434
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: a12be8b3999639c69d479412e673b0e049629172
+ms.sourcegitcommit: 77b4ca625674658d5c5766e684fa0e2a07cad4da
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56723314"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "65615146"
 ---
 # <a name="idebugaddress2getprocessid"></a>IDebugAddress2::GetProcessID
 擷取擁有這所代表之物件的處理序的識別碼[IDebugAddress2](../../../extensibility/debugger/reference/idebugaddress2.md)介面。
@@ -36,10 +39,9 @@ int GetProcessID (
 );
 ```
 
-#### <a name="parameters"></a>參數
- `pProcID`
-
- [out]處理序識別碼。
+## <a name="parameters"></a>參數
+`pProcID`\
+[out]處理序識別碼。
 
 ## <a name="return-value"></a>傳回值
  如果成功，會傳回 S_OK;否則，傳回錯誤碼。

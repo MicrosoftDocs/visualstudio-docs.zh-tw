@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: bd80c54d436698e14db69bb356bd0cca61aa6ea3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: d090767cd50f465ea35033875cb84597fa8c6a47
+ms.sourcegitcommit: 77b4ca625674658d5c5766e684fa0e2a07cad4da
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62923978"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "65615139"
 ---
 # <a name="idebugarrayfieldgetelementtype"></a>IDebugArrayField::GetElementType
 取得項目的型別陣列中。
@@ -36,10 +39,9 @@ int GetElementType(
 );
 ```
 
-#### <a name="parameters"></a>參數
- `ppType`
-
- [out]傳回[IDebugField](../../../extensibility/debugger/reference/idebugfield.md)描述的項目類型的物件。
+## <a name="parameters"></a>參數
+`ppType`\
+[out]傳回[IDebugField](../../../extensibility/debugger/reference/idebugfield.md)描述的項目類型的物件。
 
 ## <a name="return-value"></a>傳回值
  如果成功，會傳回 S_OK;否則，傳回錯誤碼。

@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 77d4140a37577fa5bf4734e386300e062ef80399
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: b34cbc89874110712ea1d630a27bd709d21894b3
+ms.sourcegitcommit: 77b4ca625674658d5c5766e684fa0e2a07cad4da
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62877506"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "65614982"
 ---
 # <a name="idebugbinder3gettypeargumentcount"></a>IDebugBinder3::GetTypeArgumentCount
 這個方法會傳回與這個物件相關聯的引數類型的數目。
@@ -36,10 +39,9 @@ int GetTypeArgumentCount(
 );
 ```
 
-#### <a name="parameters"></a>參數
- `uCount`
-
- [out]與這個物件相關聯的引數類型的數目。
+## <a name="parameters"></a>參數
+`uCount`\
+[out]與這個物件相關聯的引數類型的數目。
 
 ## <a name="return-value"></a>傳回值
  如果成功，則傳回`S_OK`; 否則傳回錯誤碼。
