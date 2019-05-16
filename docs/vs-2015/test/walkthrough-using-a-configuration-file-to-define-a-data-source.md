@@ -12,12 +12,12 @@ ms.assetid: 95fa5214-b12e-4e1f-84e5-cc4c2d86b0d7
 caps.latest.revision: 34
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 7dde910c5622a67ad002a085ace746ebc68e8857
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: f078d8a15cbef4c2f17b154af13a997b77da8766
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63439234"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65695066"
 ---
 # <a name="walkthrough-using-a-configuration-file-to-define-a-data-source"></a>逐步解說：使用組態檔定義資料來源
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -219,7 +219,7 @@ ms.locfileid: "63439234"
   
 1. 在測試專案中加入單元測試。  
   
-     如需詳細資訊，請參閱[針對現有的程式碼建立和執行單元測試](http://msdn.microsoft.com/e8370b93-085b-41c9-8dec-655bd886f173)。  
+     如需詳細資訊，請參閱[針對現有的程式碼建立和執行單元測試](https://msdn.microsoft.com/e8370b93-085b-41c9-8dec-655bd886f173)。  
   
 2. 以下列程式碼取代自動產生的單元測試內容：  
   
@@ -270,6 +270,6 @@ ms.locfileid: "63439234"
   
 ## <a name="see-also"></a>另請參閱  
  [對程式碼進行單元測試](../test/unit-test-your-code.md)   
- [針對現有的程式碼建立和執行單元測試](http://msdn.microsoft.com/e8370b93-085b-41c9-8dec-655bd886f173)   
- [測試應用程式](http://msdn.microsoft.com/library/796b7d6d-ad45-4772-9719-55eaf5490dac)   
+ [針對現有的程式碼建立和執行單元測試](https://msdn.microsoft.com/e8370b93-085b-41c9-8dec-655bd886f173)   
+ [測試應用程式](https://msdn.microsoft.com/library/796b7d6d-ad45-4772-9719-55eaf5490dac)   
  [如何：建立資料驅動的單元測試](../test/how-to-create-a-data-driven-unit-test.md)

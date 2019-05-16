@@ -17,12 +17,12 @@ caps.latest.revision: 63
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 914d5806ed0b40a227d61c673e5f463624b0cc11
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: dbb123b952287de0b519bfdd40b0d9a851a0b81f
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63403576"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65686881"
 ---
 # <a name="scenario-change-your-design-using-visualization-and-modeling"></a>案例：使用視覺化和模型製作工具變更設計
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -297,11 +297,11 @@ ms.locfileid: "63403576"
   
  請參閱：  
   
-- [定義建置流程](http://msdn.microsoft.com/library/61593e10-d24b-492f-b19a-af4d85abea6b)  
+- [定義建置流程](https://msdn.microsoft.com/library/61593e10-d24b-492f-b19a-af4d85abea6b)  
   
-- [使用閘道簽入建置流程來驗證變更](http://msdn.microsoft.com/library/9cfc8b9c-1023-40fd-8ab5-1b1bd9c172ec)  
+- [使用閘道簽入建置流程來驗證變更](https://msdn.microsoft.com/library/9cfc8b9c-1023-40fd-8ab5-1b1bd9c172ec)  
   
-- [自訂建置流程範本](http://msdn.microsoft.com/library/b94c58f2-ae6f-4245-bedb-82cd114f6039)  
+- [自訂建置流程範本](https://msdn.microsoft.com/library/b94c58f2-ae6f-4245-bedb-82cd114f6039)  
   
 ### <a name="GeneralTips"></a> General Tips for Creating and Using Models  
   
@@ -336,13 +336,13 @@ ms.locfileid: "63403576"
   
   請參閱：  
   
-- [使用 Visual Studio Team Services 或 Team Foundation Server 來追蹤工作](http://msdn.microsoft.com/library/52aa8bc9-fc7e-4fae-9946-2ab255ca7503)  
+- [使用 Visual Studio Team Services 或 Team Foundation Server 來追蹤工作](https://msdn.microsoft.com/library/52aa8bc9-fc7e-4fae-9946-2ab255ca7503)  
   
 - [連結模型項目和工作項目](../modeling/link-model-elements-and-work-items.md)  
   
-- [Visual Studio ALM 的圖表、儀表板和報表](http://msdn.microsoft.com/library/1f28ba6c-c5e5-46d3-9209-ede24ae78e48)  
+- [Visual Studio ALM 的圖表、儀表板和報表](https://msdn.microsoft.com/library/1f28ba6c-c5e5-46d3-9209-ede24ae78e48)  
   
-- [使用 Project 建立您的待處理項目和工作](http://msdn.microsoft.com/library/be5cef4f-755f-4ffe-8dd7-876d1e02c330)  
+- [使用 Project 建立您的待處理項目和工作](https://msdn.microsoft.com/library/be5cef4f-755f-4ffe-8dd7-876d1e02c330)  
   
 ### <a name="TestValidateCheckInCode"></a> 在程式碼中進行測試、驗證及檢查  
  當小組完成每項工作時，他們會將程式碼簽入至 Team Foundation 版本控制，如果忘了這麼做，則會收到 Team Foundation Server 的提醒。 在 Team Foundation Server 接受簽入之前，小組會執行單元測試及圖層驗證，針對測試案例及設計來驗證程式碼。 他們使用 Team Foundation Server 定期執行組建、自動化單元測試及圖層驗證。 此行為有助於確定程式碼符合下列準則：  
@@ -359,13 +359,13 @@ ms.locfileid: "63403576"
   
   請參閱：  
   
-- [測試應用程式](http://msdn.microsoft.com/library/796b7d6d-ad45-4772-9719-55eaf5490dac)  
+- [測試應用程式](https://msdn.microsoft.com/library/796b7d6d-ad45-4772-9719-55eaf5490dac)  
   
 - [在開發期間驗證您的系統](../modeling/validate-your-system-during-development.md)  
   
 - [使用版本控制](http://go.microsoft.com/fwlink/?LinkID=525605)  
   
-- [建置應用程式](http://msdn.microsoft.com/library/a971b0f9-7c28-479d-a37b-8fd7e27ef692)  
+- [建置應用程式](https://msdn.microsoft.com/library/a971b0f9-7c28-479d-a37b-8fd7e27ef692)  
   
 ## <a name="UpdatingSystem"></a> Updating the System Using Visualization and Modeling  
  Lucerne 及 Dinner Now 必須整合其付款系統。 下列各節將示範 Visual Studio 中的模型圖表如何協助其執行這項工作：  
@@ -888,6 +888,6 @@ ms.locfileid: "63403576"
  [視覺化程式碼](../modeling/visualize-code.md)   
  [建立應用程式模型](../modeling/create-models-for-your-app.md)   
  [在您的開發程序中使用模型](../modeling/use-models-in-your-development-process.md)   
- [在 Agile 開發中使用模型](http://msdn.microsoft.com/592ac27c-3d3e-454a-9c38-b76658ed137f)   
+ [在 Agile 開發中使用模型](https://msdn.microsoft.com/592ac27c-3d3e-454a-9c38-b76658ed137f)   
  [在開發期間驗證您的系統](../modeling/validate-your-system-during-development.md)   
  [擴充 UML 模型和圖表](../modeling/extend-uml-models-and-diagrams.md)

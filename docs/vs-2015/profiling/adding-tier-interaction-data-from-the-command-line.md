@@ -12,12 +12,12 @@ caps.latest.revision: 14
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 9c591af9259a4a45af762e79552c99671a094d0f
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 369c5b75780e9d557dedbde60b5b584c8b3345b3
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54778879"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65705839"
 ---
 # <a name="adding-tier-interaction-data-from-the-command-line"></a>從命令列加入階層互動資料
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ ms.locfileid: "54778879"
   
  **在遠端電腦上收集 TIP 資料**  
   
- 若要在遠端電腦上收集階層互動資料，您必須從 Visual Studio 電腦的 _%VSInstallDir%_**\Team Tools\Performance Tools\Setups** 資料夾中，將 **vs\_profiler\_**_\<平台>_**\_**_\<語言>_**.exe** 檔案複製到遠端電腦並加以安裝。 您無法使用 [Visual Studio 遠端工具](http://msdn.microsoft.com/library/90f45630-0d26-4698-8c1f-63f85a12db9c) 下載封裝的程式碼剖析工具。  
+ 若要在遠端電腦上收集階層互動資料，您必須從 Visual Studio 電腦的 _%VSInstallDir%_**\Team Tools\Performance Tools\Setups** 資料夾中，將 **vs\_profiler\_**_\<平台>_**\_**_\<語言>_**.exe** 檔案複製到遠端電腦並加以安裝。 您無法使用 [Visual Studio 遠端工具](https://msdn.microsoft.com/library/90f45630-0d26-4698-8c1f-63f85a12db9c) 下載封裝的程式碼剖析工具。  
   
  **TIP 報告**  
   

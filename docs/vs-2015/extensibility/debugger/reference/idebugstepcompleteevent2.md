@@ -12,12 +12,12 @@ ms.assetid: eba2b76e-f90d-486b-ae5c-c47f1b8ba2e5
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 0a1b1034d4458174422b78f193deb8160e5a3c94
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e4631aea2b949a71cfb8c7dd2df52fd234aa25b3
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62546846"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65688498"
 ---
 # <a name="idebugstepcompleteevent2"></a>IDebugStepCompleteEvent2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -31,7 +31,7 @@ IDebugStepCompleteEvent2 : IUnknown
 ```  
   
 ## <a name="notes-for-implementers"></a>實作者的附註  
- DE 會實作這個介面來報告一個步驟的作業完成。 [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md)介面必須實作此介面的相同物件上。 使用 SDM [QueryInterface](http://msdn.microsoft.com/library/62fce95e-aafa-4187-b50b-e6611b74c3b3)若要存取`IDebugEvent2`介面。  
+ DE 會實作這個介面來報告一個步驟的作業完成。 [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md)介面必須實作此介面的相同物件上。 使用 SDM [QueryInterface](https://msdn.microsoft.com/library/62fce95e-aafa-4187-b50b-e6611b74c3b3)若要存取`IDebugEvent2`介面。  
   
 ## <a name="notes-for-callers"></a>呼叫端資訊  
  DE 建立，並傳送這個事件来報告的物件完成的步驟操作。 事件會使用傳送[IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md)附加至正在進行偵錯程式時，會將 SDM 所提供的回呼函式。  

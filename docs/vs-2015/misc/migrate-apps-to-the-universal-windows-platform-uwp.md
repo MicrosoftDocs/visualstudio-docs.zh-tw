@@ -9,12 +9,12 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 6827d1b2b1a85d94e8ad8d5f88c505aebc3abb93
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 86bc76b9b71c7b73a8d299aab41cb6e2eb37680d
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63001280"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65686659"
 ---
 # <a name="migrate-apps-to-the-universal-windows-platform-uwp"></a>將應用程式移轉至通用 Windows 平台 (UWP)
 視需要手動變更現有使用 Visual Studio 2015 RC 為 Windows 市集 8.1 應用程式、Windows Phone 8.1 應用程式或通用 Windows 應用程式所建立的專案檔案，使其能夠用於 Visual Studio 2015 RTM。 (如果您的 Windows 8.1 通用應用程式同時具有 Windows 應用程式專案和 Windows Phone 專案，則需要遵循移轉每個專案的步驟)。  
@@ -29,7 +29,7 @@ ms.locfileid: "63001280"
   
 - [您必須變更現有使用 Visual Studio 2015 CTP 所建立之通用 Windows 應用程式的單元測試專案](#MigrateUnitTest)。  
   
-  若您不想執行上述變更，可了解如何 [移植您現有的應用程式](http://msdn.microsoft.com/library/windows/apps/xaml/mt238321.aspx) 到新的通用 Windows 專案。  
+  若您不想執行上述變更，可了解如何 [移植您現有的應用程式](https://msdn.microsoft.com/library/windows/apps/xaml/mt238321.aspx) 到新的通用 Windows 專案。  
   
 ## <a name="MigrateCSharp"></a> 移轉 C# /VB Windows 市集 8.1 或 Windows Phone 8.1 應用程式以使用通用 Windows 平台  
   
@@ -110,7 +110,7 @@ ms.locfileid: "63001280"
   
     6. 新增\<e > 項目並將其值設定為： **，則為 true**。  
   
-    7. 通用 Windows 應用程式的預設資產縮放比例為 200。 如果您的專案包含資產不縮放比例為 200，則您必須新增\<u > 項目加入此 PropertyGroup 您資產的縮放比例的值。 深入了解 [資產與縮放比例](http://msdn.microsoft.com/library/jj679352.aspx)。  
+    7. 通用 Windows 應用程式的預設資產縮放比例為 200。 如果您的專案包含資產不縮放比例為 200，則您必須新增\<u > 項目加入此 PropertyGroup 您資產的縮放比例的值。 深入了解 [資產與縮放比例](https://msdn.microsoft.com/library/jj679352.aspx)。  
   
          現在您\<PropertyGroup > 項目看起來應該類似此範例：  
   
@@ -272,7 +272,7 @@ ms.locfileid: "63001280"
   
     4. 新增\<e > 項目並將其值設定為： true。  
   
-    5. 通用 Windows 應用程式的預設資產縮放比例為 200。 如果您的專案包含資產不縮放比例為 200，則您必須新增\<u > 項目加入此 PropertyGroup 您資產的縮放比例的值。 深入了解 [資產與縮放比例](http://msdn.microsoft.com/library/jj679352.aspx)。  
+    5. 通用 Windows 應用程式的預設資產縮放比例為 200。 如果您的專案包含資產不縮放比例為 200，則您必須新增\<u > 項目加入此 PropertyGroup 您資產的縮放比例的值。 深入了解 [資產與縮放比例](https://msdn.microsoft.com/library/jj679352.aspx)。  
   
     6. 適用於 Windows Phone 專案，將值變更的\<ApplicationType > 從 Windows Phone，到 Windows 市集。  
   
@@ -379,7 +379,7 @@ ms.locfileid: "63001280"
   
 5. 尋找\<必要條件 > 項目，並刪除這個項目和其任何子項目。  
   
-6. 新增**uap**命名空間下的\<資源 > 項目：小數位數、 DXFeatureLevel。 例如:   
+6. 新增**uap**命名空間下的\<資源 > 項目：小數位數、 DXFeatureLevel。 例如：  
   
    ```xml  
    <Resources>  
@@ -400,7 +400,7 @@ ms.locfileid: "63001280"
   
    ```  
   
-8. 新增**uap**命名空間\<VisualElements > 項目和任何其子項目。 例如:   
+8. 新增**uap**命名空間\<VisualElements > 項目和任何其子項目。 例如：  
   
    ```xml  
    <uap:VisualElements  
@@ -505,7 +505,7 @@ ms.locfileid: "63001280"
   
      使用所使用實際架構的適當 Publisher 和 MinVersion 值。 請注意，在 Windows 10 中，這些名稱可能會變更。  
   
-13. 將 gattCharacteristicNotification 和 rfcommConnection 背景類型工作取代為 Bluetooth 類型工作。 例如：  
+13. 將 gattCharacteristicNotification 和 rfcommConnection 背景類型工作取代為 Bluetooth 類型工作。 例如:   
   
      **舊：**  
   
@@ -566,7 +566,7 @@ ms.locfileid: "63001280"
   
        - \<ApplicationView > 項目  
   
-         例如：  
+         例如:   
   
        ```xml  
        <m2:VisualElements  
@@ -651,7 +651,7 @@ ms.locfileid: "63001280"
   
 4. 尋找\<PropertyGroup > 包含的項目\<TargetPlatformVersion > 和\<TargetPlatformMinVersion > 項目。 變更現有的值\<TargetPlatformVersion > 和\<TargetPlatformMinVersion > 項目是相同的版本，您已安裝的通用 Windows 平台。  
   
-    通用 Windows 應用程式的預設資產縮放比例為 200。 建立 Visual Studio 2015 RC 包含資產縮放比例為 100 的專案，您必須新增\<u > 項目加入此 PropertyGroup 100 的值。 深入了解 [資產與縮放比例](http://msdn.microsoft.com/library/jj679352.aspx)。  
+    通用 Windows 應用程式的預設資產縮放比例為 200。 建立 Visual Studio 2015 RC 包含資產縮放比例為 100 的專案，您必須新增\<u > 項目加入此 PropertyGroup 100 的值。 深入了解 [資產與縮放比例](https://msdn.microsoft.com/library/jj679352.aspx)。  
   
 5. 您先前如有加入任何 UWP 擴充功能 SDK 的參考 (例如 Windows Mobile SDK)，必須更新 SDK 版本。 比方說這\<SDKReference > 項目：  
   
@@ -761,7 +761,7 @@ ms.locfileid: "63001280"
   
      新增\<e > 項目並設定其值為 true，如果項目不存在。  
   
-     通用 Windows 應用程式的預設資產縮放比例為 200。 建立 Visual Studio 2015 RC 包含資產縮放比例為 100 的專案，您必須新增\<u > 項目加入此 PropertyGroup 100 的值。 深入了解 [資產與縮放比例](http://msdn.microsoft.com/library/jj679352.aspx)。  
+     通用 Windows 應用程式的預設資產縮放比例為 200。 建立 Visual Studio 2015 RC 包含資產縮放比例為 100 的專案，您必須新增\<u > 項目加入此 PropertyGroup 100 的值。 深入了解 [資產與縮放比例](https://msdn.microsoft.com/library/jj679352.aspx)。  
   
      因此這個\<PropertyGroup > 項目現在會如下所示：  
   

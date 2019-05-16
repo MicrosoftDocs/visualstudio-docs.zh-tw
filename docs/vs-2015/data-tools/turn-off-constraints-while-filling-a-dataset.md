@@ -23,12 +23,12 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 3e75f06a999638f1346b1304fd438a8cc3f6b0b6
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 1a1ab311db37478f4d5df982e3da022be1601103
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63424985"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65686608"
 ---
 # <a name="turn-off-constraints-while-filling-a-dataset"></a>填入資料集時關閉條件約束
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,7 +49,7 @@ ms.locfileid: "63424985"
   
 ### <a name="to-suspend-update-constraints-using-the-dataset-designer"></a>若要暫停使用 Dataset 設計工具的更新條件約束  
   
-1. 在 Dataset 設計工具中開啟您的資料集。 如需詳細資訊，請參閱[如何：在 Dataset 設計工具中開啟資料集](http://msdn.microsoft.com/library/36fc266f-365b-42cb-aebb-c993dc2c47c3)。  
+1. 在 Dataset 設計工具中開啟您的資料集。 如需詳細資訊，請參閱[如何：在 Dataset 設計工具中開啟資料集](https://msdn.microsoft.com/library/36fc266f-365b-42cb-aebb-c993dc2c47c3)。  
   
 2. 在 [屬性]  視窗中，將 <xref:System.Data.DataSet.EnforceConstraints%2A> 屬性設定為 `false`。  
   

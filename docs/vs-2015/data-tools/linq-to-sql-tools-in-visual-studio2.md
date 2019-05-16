@@ -9,12 +9,12 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 31bbc54b08fc053d10bd79d6a6b24e7605bc0351
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 24b874ab71cba23a3fe6cf4a6fb36293d6753935
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63384050"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65697766"
 ---
 # <a name="linq-to-sql-tools-in-visual-studio"></a>LINQ to SQL 工具，在 Visual Studio 中
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,7 +25,7 @@ LINQ to SQL 是 Microsoft 所發行的第一個物件關聯式對應技術。 �
 
  [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]具有其設計介面上的兩個不同區域： 左邊的 [實體] 窗格和右邊的 [方法] 窗格。 實體窗格是主設計介面，可以顯示實體類別、關聯和繼承階層。 方法窗格的設計介面，則可以顯示對應至預存程序和函式的 <xref:System.Data.Linq.DataContext> 方法。
 
- [!INCLUDE[vs_ordesigner_long](../includes/vs-ordesigner-long-md.md)] ([!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]) 提供視覺化設計介面建立[LINQ to SQL](http://msdn.microsoft.com/library/73d13345-eece-471a-af40-4cc7a2f11655)實體類別和資料庫中的物件為基礎的關聯 （關聯性）。 換句話說，[!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]是用於建立應用程式中對應至資料庫內物件的物件模型。 它同時會產生可以在實體類別和資料庫之間傳送和接收資料的強型別 (Strongly Typed) 的 <xref:System.Data.Linq.DataContext>。 [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]也提供功能，將預存程序 (Stored Procedure) 和函式對應至 <xref:System.Data.Linq.DataContext> 方法，以傳回資料並填入 (Populate) 實體類別。 最後，[!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]還可以設計實體類別之間的繼承 (Inheritance) 關聯性。
+ [!INCLUDE[vs_ordesigner_long](../includes/vs-ordesigner-long-md.md)] ([!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]) 提供視覺化設計介面建立[LINQ to SQL](https://msdn.microsoft.com/library/73d13345-eece-471a-af40-4cc7a2f11655)實體類別和資料庫中的物件為基礎的關聯 （關聯性）。 換句話說，[!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]是用於建立應用程式中對應至資料庫內物件的物件模型。 它同時會產生可以在實體類別和資料庫之間傳送和接收資料的強型別 (Strongly Typed) 的 <xref:System.Data.Linq.DataContext>。 [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]也提供功能，將預存程序 (Stored Procedure) 和函式對應至 <xref:System.Data.Linq.DataContext> 方法，以傳回資料並填入 (Populate) 實體類別。 最後，[!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]還可以設計實體類別之間的繼承 (Inheritance) 關聯性。
 
 ## <a name="opening-the-or-designer"></a>開啟 O/R 設計工具
  若要加入 LINQ to SQL 實體模型至您的專案，選擇**專案&#124;加入新項目**，然後選擇  **LINQ to SQL 類別**清單中的專案項目：
@@ -62,7 +62,7 @@ LINQ to SQL 是 Microsoft 所發行的第一個物件關聯式對應技術。 �
  [!INCLUDE[vbtecdlinq](../includes/vbtecdlinq-md.md)] 類別就像其他物件，可以使用繼承，也可以衍生自其他類別。 在資料庫中，有數種方式可以建立繼承關聯性。 [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]通常是在關聯式系統中實作，因此支援單一資料表繼承概念。 如需詳細資訊，請參閱[如何：使用 O/R 設計工具設定繼承](../data-tools/how-to-configure-inheritance-by-using-the-o-r-designer.md)。
 
 ## <a name="linq-to-sql-queries"></a>LINQ to SQL 查詢
- 所建立的實體類別[!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]專為搭配[LINQ (Language-Integrated Query)](http://msdn.microsoft.com/library/a73c4aec-5d15-4e98-b962-1274021ea93d)。 如需詳細資訊，請參閱[如何：如需資訊的查詢](http://msdn.microsoft.com/library/e538d288-2070-40ca-9da6-4fbc68cd6ad0)。
+ 所建立的實體類別[!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]專為搭配[LINQ (Language-Integrated Query)](https://msdn.microsoft.com/library/a73c4aec-5d15-4e98-b962-1274021ea93d)。 如需詳細資訊，請參閱[如何：如需資訊的查詢](https://msdn.microsoft.com/library/e538d288-2070-40ca-9da6-4fbc68cd6ad0)。
 
 ## <a name="separating-the-generated-datacontext-and-entity-class-code-into-different-namespaces"></a>將產生的 DataContext 和實體類別程式碼分隔至不同的命名空間
  [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]提供**內容命名空間**並**實體命名空間**上的屬性<xref:System.Data.Linq.DataContext>。 這些屬性會決定 <xref:System.Data.Linq.DataContext> 和實體類別程式碼產生時，會落在哪一個命名空間 (Namespace) 中。 根據預設，這些屬性是空的，而且 <xref:System.Data.Linq.DataContext> 和實體類別產生時，會落在應用程式的命名空間中。 產生程式碼時，如果希望使用其他的命名空間，而非應用程式的命名空間，請在 [內容命名空間] 和/或 [實體命名空間] 屬性中輸入值。
@@ -100,4 +100,4 @@ LINQ to SQL 是 Microsoft 所發行的第一個物件關聯式對應技術。 �
  <xref:System.Data.Linq>
 
 ## <a name="see-also"></a>另請參閱
- [適用於.NET 的 visual Studio 資料工具](../data-tools/visual-studio-data-tools-for-dotnet.md)[常見問題集](http://msdn.microsoft.com/library/252ed666-0679-4eea-b71b-2f14117ef443) [LINQ to SQL](http://msdn.microsoft.com/library/73d13345-eece-471a-af40-4cc7a2f11655) [存取 Visual Studio 中的資料](../data-tools/accessing-data-in-visual-studio.md)
+ [適用於.NET 的 visual Studio 資料工具](../data-tools/visual-studio-data-tools-for-dotnet.md)[常見問題集](https://msdn.microsoft.com/library/252ed666-0679-4eea-b71b-2f14117ef443) [LINQ to SQL](https://msdn.microsoft.com/library/73d13345-eece-471a-af40-4cc7a2f11655) [存取 Visual Studio 中的資料](../data-tools/accessing-data-in-visual-studio.md)

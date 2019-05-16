@@ -21,12 +21,12 @@ caps.latest.revision: 37
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 9f28c6e0914bd37affab72e75e8bbf3f82299c4e
-ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
+ms.openlocfilehash: 39076459f684aafce4e800ecad6341d120aac480
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "59000791"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65691432"
 ---
 # <a name="debugging-managed-code"></a>偵錯 Managed 程式碼
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -68,16 +68,16 @@ ms.locfileid: "59000791"
  [IntelliTrace](../debugger/intellitrace.md)  
  使用 IntelliTrace 錄製應用程式的執行記錄，就能更快、更容易尋找 Bug。 向後和向前逐步執行記錄的事件和呼叫，以檢查關鍵時間點的應用程式狀態。 進行程式碼偵錯，而不需要設定許多中斷點或經常重新啟動應用程式。 需要 Visual Studio Ultimate。  
   
- [追蹤和檢測應用程式](http://msdn.microsoft.com/library/773b6fc4-9013-4322-b728-5dec7a72e743)  
+ [追蹤和檢測應用程式](https://msdn.microsoft.com/library/773b6fc4-9013-4322-b728-5dec7a72e743)  
  說明可以讓您在執行應用程式時監視其執行情形的追蹤方法，以及在程式碼的策略性位置上放置和使用追蹤陳述式。 本主題也提供包含介紹檢測和追蹤、追蹤參數、追蹤接聽程式、應用程式中的追蹤程式碼、在應用程式程式碼中加入追蹤陳述式，以及使用 <xref:System.Diagnostics.Debug> 和 <xref:System.Diagnostics.Trace> 進行條件式編譯的連結。  
   
- [/ASSEMBLYDEBUG](http://msdn.microsoft.com/library/94443af3-470c-41d7-83a0-7434563d7982)  
+ [/ASSEMBLYDEBUG](https://msdn.microsoft.com/library/94443af3-470c-41d7-83a0-7434563d7982)  
  描述將 <xref:System.Diagnostics.DebuggableAttribute> 加入至以 C++ 撰寫之程式碼的連結器選項。 當使用像是掛上 C++ 的偵錯功能時就會需要這個屬性。  
   
- [對 Windows 服務應用程式進行偵錯](http://msdn.microsoft.com/library/63ab0800-0f05-4f1e-88e6-94c73fd920a2)  
+ [對 Windows 服務應用程式進行偵錯](https://msdn.microsoft.com/library/63ab0800-0f05-4f1e-88e6-94c73fd920a2)  
  提供偵錯 Windows 服務應用程式所需考量的因素，包括設定、附加到處理序、偵錯服務的 `OnStart` 方法程式碼和 Main 方法中的程式碼、設定中斷點，以及使用服務控制管理員啟動、停止、暫停和繼續服務。  
   
- [偵錯和分析](http://msdn.microsoft.com/library/4a04863e-2475-46f4-bc3f-3c11510c2a4b)  
+ [偵錯和分析](https://msdn.microsoft.com/library/4a04863e-2475-46f4-bc3f-3c11510c2a4b)  
  討論偵錯 .NET Framework 應用程式，及其組態需求。  
   
  [對指令碼和 Web 應用程式進行偵錯](../debugger/debugging-web-applications-and-script.md)  
@@ -88,6 +88,6 @@ ms.locfileid: "59000791"
  提供偵錯相關文件的主要連結。 這些資訊包括偵錯工具的新功能、設定和準備、中斷點、例外狀況處理、編輯後繼續、Managed 程式碼的偵錯、Visual C++ 專案的偵錯、COM 和 ActiveX 的偵錯、DLL 偵錯、SQL 偵錯，以及使用者介面的參考。  
   
 ## <a name="see-also"></a>另請參閱  
- [逐步解說：在設計階段偵錯自訂的 Windows Form 控制項](http://msdn.microsoft.com/library/1fd83ccd-3798-42fc-85a3-6cba99467387)   
+ [逐步解說：在設計階段偵錯自訂的 Windows Form 控制項](https://msdn.microsoft.com/library/1fd83ccd-3798-42fc-85a3-6cba99467387)   
  [偵錯工具安全性](../debugger/debugger-security.md)   
  [Visual Studio 偵錯](../debugger/debugging-in-visual-studio.md)

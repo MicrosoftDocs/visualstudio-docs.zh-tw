@@ -11,12 +11,12 @@ caps.latest.revision: 16
 author: erickson-doug
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 3f3a00a4ec5a013dc860a05ed48364178e3f23cf
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: c59b4123a3fbc957a99da7178d0d8ec288a06708
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63442849"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65686563"
 ---
 # <a name="analyze-visual-basic-and-c-code-quality-in-store-apps-using-visual-studio-static-code-analysis"></a>使用 Visual Studio 靜態程式碼分析，分析市集應用程式中的 Visual Basic 和 C# 程式碼品質
 
@@ -27,7 +27,7 @@ ms.locfileid: "63442849"
  Visual Studio Express 中的程式碼分析工具會檢查您的程式碼是否有常見缺失，以及是否違反良好的程式設計作法。 程式碼分析警告與編譯器錯誤和警告不同，因為程式碼分析工具會搜尋有效的特定程式碼模式，但仍然可以為您或使用您程式碼的其他人建立問題。 程式碼分析也可以尋找難以透過測試發現的程式碼缺失。 在開發過程中定期執行程式碼分析工具，可以提升已完成應用程式的品質。
 
 > [!NOTE]
-> 在 Visual Studio Ultimate、Visual Studio Premium 及 Visual Studio Professional 中，您可以使用程式碼分析的完整功能。 請參閱 MSDN Library 中的[使用程式碼分析工具進行應用程式品質分析](http://msdn.microsoft.com/library/dd264897.aspx)。
+> 在 Visual Studio Ultimate、Visual Studio Premium 及 Visual Studio Professional 中，您可以使用程式碼分析的完整功能。 請參閱 MSDN Library 中的[使用程式碼分析工具進行應用程式品質分析](https://msdn.microsoft.com/library/dd264897.aspx)。
 
 ## <a name="in-this-topic"></a>本主題內容
  您將學習到關於下列事項：
@@ -98,12 +98,12 @@ ms.locfileid: "63442849"
 ## <a name="BKMK_Warnings"></a> Visual Basic 和 C# 程式碼分析警告
  程式碼分析引發下列警告：
 
- [CA1001：具有可處置欄位的類型應該為可處置](http://msdn.microsoft.com/library/ms182172.aspx)
+ [CA1001：具有可處置欄位的類型應該為可處置](https://msdn.microsoft.com/library/ms182172.aspx)
 
- [CA1821：必須移除空的完成項](http://msdn.microsoft.com/library/bb264476.aspx)
+ [CA1821：必須移除空的完成項](https://msdn.microsoft.com/library/bb264476.aspx)
 
- [CA2213：可處置的欄位應該受到處置](http://msdn.microsoft.com/library/ms182328.aspx)
+ [CA2213：可處置的欄位應該受到處置](https://msdn.microsoft.com/library/ms182328.aspx)
 
- [CA2229：必須實作序列化建構函式](http://msdn.microsoft.com/library/ms182343.aspx)
+ [CA2229：必須實作序列化建構函式](https://msdn.microsoft.com/library/ms182343.aspx)
 
- [CA2231：在覆寫 ValueType.Equals 上多載等號運算子](http://msdn.microsoft.com/library/ms182359.aspx)
+ [CA2231：在覆寫 ValueType.Equals 上多載等號運算子](https://msdn.microsoft.com/library/ms182359.aspx)

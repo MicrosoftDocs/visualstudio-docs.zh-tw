@@ -16,12 +16,12 @@ caps.latest.revision: 9
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 1f463aca03cd0e869f4028f8e086c623295fd2f6
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 759386728283d3d39219133e53668afe3259714a
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58945511"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65697679"
 ---
 # <a name="error-user-could-not-execute-stored-procedure-spenablesqldebug"></a>錯誤：使用者無法執行預存程序 sp_enable_sql_debug
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,8 +32,8 @@ ms.locfileid: "58945511"
   
 - 沒有必要的伺服器使用權限。 若要在 SQL Server 2005 上進行偵錯，執行 Visual Studio 的帳戶和用來連接至 SQL Server 的帳戶都必須是系統管理員角色的成員。 用來連接至 SQL Server 的帳戶就是您的 Windows 使用者帳戶 (如果您使用 Windows 驗證)，或具有使用者 ID 和密碼的帳戶 (如果您使用 SQL 驗證)。  
   
-  如需詳細資訊，請參閱[如何：設定 SQL Server 權限偵錯](http://msdn.microsoft.com/84e088d0-0409-41d4-841b-f5d4b0fda414)。  
+  如需詳細資訊，請參閱[如何：設定 SQL Server 權限偵錯](https://msdn.microsoft.com/84e088d0-0409-41d4-841b-f5d4b0fda414)。  
   
 ## <a name="see-also"></a>另請參閱  
- [如何：設定 SQL Server 權限偵錯](http://msdn.microsoft.com/84e088d0-0409-41d4-841b-f5d4b0fda414)   
- [設定 SQL 偵錯](http://msdn.microsoft.com/3db09e68-edcc-42de-9c22-4e97cfd55ab3)
+ [如何：設定 SQL Server 權限偵錯](https://msdn.microsoft.com/84e088d0-0409-41d4-841b-f5d4b0fda414)   
+ [設定 SQL 偵錯](https://msdn.microsoft.com/3db09e68-edcc-42de-9c22-4e97cfd55ab3)

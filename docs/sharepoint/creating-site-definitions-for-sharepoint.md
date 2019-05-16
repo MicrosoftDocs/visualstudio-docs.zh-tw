@@ -40,7 +40,7 @@ ms.locfileid: "62580966"
 |*onet.xml*|指定新的站台組態]、 [站台定義範本，以及預設行為的元件。 這些設定可以包含屬性的內容類型都已啟用，預設清單檢視中，文件範本檔案，例如，與 Web 組件包含與站台。 根據預設，`Modules`區段會列出可以加入至 SharePoint 網站和設定方式的檔案。|
 |*webtemp_\<SiteDefinitionName>.xml*|指定出現在站台定義組態**範本選擇**一節**新的 SharePoint 網站**頁面。|
 
- 根據預設，所有的站台定義會儲存在*\<磁碟機： > \Program Files\Common Files\Microsoft Shared\Web Server Extensions\14\TEMPLATE\SiteTemplates*資料夾。 每個網站定義都有它自己的子資料夾。
+ 根據預設，所有的站台定義會儲存在 *\<磁碟機： >\Program Files\Common Files\Microsoft Shared\Web Server Extensions\14\TEMPLATE\SiteTemplates* 資料夾。 每個網站定義都有它自己的子資料夾。
 
 ## <a name="related-topics"></a>相關主題
 

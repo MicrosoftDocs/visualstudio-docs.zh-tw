@@ -9,12 +9,12 @@ caps.latest.revision: 66
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 40af4a29d35e4bd060251d0db8b6cb13dbb44caf
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 6b8c9cbc856559e349851dd4c08b65883793a640
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60081004"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65675675"
 ---
 # <a name="diagnose-problems-after-deployment"></a>於部署後診斷問題
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,7 +42,7 @@ ms.locfileid: "60081004"
 #### <a name="TFS2013"></a> Team Foundation Server 2013  
  設定組建定義，將原始檔、組建和符號的位置加入至建置資訊清單 (BuildInfo.config 檔案)。 Team Foundation Build 會自動建立此檔案並放在專案的輸出資料夾中。  
   
-1. [編輯組建定義或建立新的組建定義。](http://msdn.microsoft.com/library/1c2eca2d-9a65-477e-9b23-0678ff7882ee)  
+1. [編輯組建定義或建立新的組建定義。](https://msdn.microsoft.com/library/1c2eca2d-9a65-477e-9b23-0678ff7882ee)  
   
     ![檢視組建定義 TFS 2013](../debugger/media/ffr-tfs2013viewbuilddefinition.png "FFR_TFS2013ViewBuildDefinition")  
   
@@ -56,7 +56,7 @@ ms.locfileid: "60081004"
   
     ![設定組建定義 TFS 2013 中的符號路徑](../debugger/media/ffr-tfs2013builddefsymbolspath.png "FFR_TFS2013BuildDefSymbolsPath")  
   
-    如需更多關於符號的資訊，請參閱 [發佈符號資料](http://msdn.microsoft.com/library/bd6977ca-e30a-491a-a153-671d81222ce6)。  
+    如需更多關於符號的資訊，請參閱 [發佈符號資料](https://msdn.microsoft.com/library/bd6977ca-e30a-491a-a153-671d81222ce6)。  
   
 4. 加入這個 MSBuild 引數可以將 TFS 和符號位置加入建置資訊清單檔案中：  
   
@@ -144,7 +144,7 @@ ms.locfileid: "60081004"
  **/p:BuildSymbolStorePath=**\<符號的路徑>  
   
 ## <a name="DeployRelease"></a> 步驟 2：發行您的應用程式  
- 如果使用在建置流程中建立的 [Web.Deploy 套件](http://msdn.microsoft.com/library/dd394698.aspx) 來部署 App，建置資訊清單的名稱會從 "*ProjectName*.BuildInfo.config" 自動重新命名為 "BuildInfo.config"，並且會放在 Web 伺服器上 App 的 Web.config 檔案所在之相同的資料夾中。  
+ 如果使用在建置流程中建立的 [Web.Deploy 套件](https://msdn.microsoft.com/library/dd394698.aspx) 來部署 App，建置資訊清單的名稱會從 "*ProjectName*.BuildInfo.config" 自動重新命名為 "BuildInfo.config"，並且會放在 Web 伺服器上 App 的 Web.config 檔案所在之相同的資料夾中。  
   
  如果使用其他方法來部署 App，請確定將建置資訊清單的名稱從 "*ProjectName*.BuildInfo.config" 重新命名為 "BuildInfo.config"，並將其放在 Web 伺服器上 App 的 Web.config 檔案所在之相同的資料夾中。  
   
@@ -266,7 +266,7 @@ ms.locfileid: "60081004"
   
     - **ProjectVersionSpec**:您的專案版本  
   
-      例如：  
+      例如:   
   
     ```  
     <SourceControl type="TFS">  
@@ -288,7 +288,7 @@ ms.locfileid: "60081004"
   
     - **CommitId**:您的認可識別碼  
   
-      例如:   
+      例如：  
   
     ```  
     <SourceControl type="Git">   
@@ -304,7 +304,7 @@ ms.locfileid: "60081004"
   
    您的建置系統 ( `"TeamBuild"` 或 `"MSBuild"`) 和下列必要屬性的相關資訊：  
   
-  - **BuildLabel** （適用於 TeamBuild):組建名稱和編號。 此標籤也可做為部署事件的名稱。 如需組建編號的詳細資訊，請參閱 [使用組建編號提供有意義的名稱給已完成的組建](http://msdn.microsoft.com/library/1f302e9d-4b0a-40b5-8009-b69ca6f988c3)。  
+  - **BuildLabel** （適用於 TeamBuild):組建名稱和編號。 此標籤也可做為部署事件的名稱。 如需組建編號的詳細資訊，請參閱 [使用組建編號提供有意義的名稱給已完成的組建](https://msdn.microsoft.com/library/1f302e9d-4b0a-40b5-8009-b69ca6f988c3)。  
   
   - **SymbolPath** （建議選項）：以分號分隔的符號 （PDB 檔案） 位置的 Uri 清單。 這些 URI 可以是 URL 或 UNC。 這樣可讓 Visual Studio 更容易找到相符的符號以協助您進行偵錯。  
   
@@ -364,7 +364,7 @@ ms.locfileid: "60081004"
      ![從原始檔控制開啟 &#45; 已移轉](../debugger/media/ffr-openprojectfromsourcecontrol-migrated.png "FFR_OpenProjectFromSourceControl_Migrated")  
   
 #### <a name="WhatWorkspace"></a> 問：什麼是工作區？  
- **答：** 您的[工作區用於儲存來源的複本](http://msdn.microsoft.com/library/1d7f6ed8-ec7c-48f8-86da-9aea55a90d5a)，因此您可以在簽入工作之前分別開發及測試該複本。 如果您還沒有明確對應至找到之方案或專案的工作區，則 Visual Studio 會提示您選擇可用的工作區或建立新的工作區，並以您的電腦名稱做為預設工作區名稱。  
+ **答：** 您的[工作區用於儲存來源的複本](https://msdn.microsoft.com/library/1d7f6ed8-ec7c-48f8-86da-9aea55a90d5a)，因此您可以在簽入工作之前分別開發及測試該複本。 如果您還沒有明確對應至找到之方案或專案的工作區，則 Visual Studio 會提示您選擇可用的工作區或建立新的工作區，並以您的電腦名稱做為預設工作區名稱。  
   
 #### <a name="UntrustedSymbols"></a> 問：我為什麼收到有關未受信任符號的訊息？  
  ![是否搭配未受信任的符號路徑進行偵錯？](../debugger/media/ffr-ituntrustedsymbolpaths.png "FFR_ITUntrustedSymbolPaths")  

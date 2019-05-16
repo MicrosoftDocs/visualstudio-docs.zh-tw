@@ -75,12 +75,12 @@ caps.latest.revision: 22
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: e43175ace465abdece5ec1f06aeda10ecddb9a14
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 158aff0f14886ea5d714c35456bf53d5768f57b8
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60057452"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65697874"
 ---
 # <a name="crt-debug-heap-details"></a>CRT 偵錯堆積詳細資料
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -105,7 +105,7 @@ ms.locfileid: "60057452"
 ## <a name="BKMK_Find_buffer_overruns_with_debug_heap"></a>使用偵錯堆積尋找緩衝區溢位  
  開發人員最常面臨的兩種難解決的問題是，覆寫配置緩衝區的結尾和記憶體流失 (無法在不再需要時釋放配置)。 偵錯堆積提供的強大工具，可以解決這類的記憶體配置問題。  
   
- 堆積函式的偵錯版本是呼叫發行版本裡使用之函式的標準或基底版本。 當您要求記憶體區塊時，偵錯堆積管理員會從基底堆積配置比要求稍微大一點的記憶體區塊，並且傳回此區塊部分的指標。 例如，假設您的應用程式包含呼叫：`malloc( 10 )`。 在發行組建，而[malloc](http://msdn.microsoft.com/library/144fcee2-be34-4a03-bb7e-ed6d4b99eea0)會呼叫要求 10 位元組配置基底堆積配置常式。 在偵錯組建中，不過，`malloc`會呼叫[_malloc_dbg](http://msdn.microsoft.com/library/c97eca51-140b-4461-8bd2-28965b49ecdb)，它會呼叫要求 10 位元組的配置，再加上大約 36 位元組的額外記憶體基底堆積配置常式。 偵錯堆積裡所有產生的記憶體區塊會在單向連結串列 (Single-Linked List) 中完成連接 (依配置時間排列順序)。  
+ 堆積函式的偵錯版本是呼叫發行版本裡使用之函式的標準或基底版本。 當您要求記憶體區塊時，偵錯堆積管理員會從基底堆積配置比要求稍微大一點的記憶體區塊，並且傳回此區塊部分的指標。 例如，假設您的應用程式包含呼叫：`malloc( 10 )`。 在發行組建，而[malloc](https://msdn.microsoft.com/library/144fcee2-be34-4a03-bb7e-ed6d4b99eea0)會呼叫要求 10 位元組配置基底堆積配置常式。 在偵錯組建中，不過，`malloc`會呼叫[_malloc_dbg](https://msdn.microsoft.com/library/c97eca51-140b-4461-8bd2-28965b49ecdb)，它會呼叫要求 10 位元組的配置，再加上大約 36 位元組的額外記憶體基底堆積配置常式。 偵錯堆積裡所有產生的記憶體區塊會在單向連結串列 (Single-Linked List) 中完成連接 (依配置時間排列順序)。  
   
  偵錯堆積常式配置的額外記憶體是用於簿記資訊，這些資訊可能為將偵錯記憶體區塊連結在一起的指標，和用來捕捉配置區域覆寫的資料每端的小型緩衝區。  
   
@@ -150,10 +150,10 @@ typedef struct _CrtMemBlockHeader
  ![回到頁首](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [內容](#BKMK_Contents)  
   
 ## <a name="BKMK_Types_of_blocks_on_the_debug_heap"></a>偵錯堆積上的區塊類型  
- 偵錯堆積裡的每個記憶體區塊會設定成五種配置類型的其中一種。 這些類型可以針對不同的流失偵測和狀態報告目的來追蹤和報告。 您可以透過直接呼叫其中一個偵錯堆積配置函式 (例如 [_malloc_dbg](http://msdn.microsoft.com/library/c97eca51-140b-4461-8bd2-28965b49ecdb)) 加以配置的方式，來指定區塊類型。 五種偵錯堆積 (設定於 **_CrtMemBlockHeader** 結構的 **nBlockUse** 成員) 中的記憶體區塊類型如下：  
+ 偵錯堆積裡的每個記憶體區塊會設定成五種配置類型的其中一種。 這些類型可以針對不同的流失偵測和狀態報告目的來追蹤和報告。 您可以透過直接呼叫其中一個偵錯堆積配置函式 (例如 [_malloc_dbg](https://msdn.microsoft.com/library/c97eca51-140b-4461-8bd2-28965b49ecdb)) 加以配置的方式，來指定區塊類型。 五種偵錯堆積 (設定於 **_CrtMemBlockHeader** 結構的 **nBlockUse** 成員) 中的記憶體區塊類型如下：  
   
  **_NORMAL_BLOCK**  
- 呼叫 [malloc](http://msdn.microsoft.com/library/144fcee2-be34-4a03-bb7e-ed6d4b99eea0) 或 [calloc](http://msdn.microsoft.com/library/17bb79a1-98cf-4096-90cb-1f9365cd6829) 會建立一般區塊。 如果您只要使用一般區塊，而且不需要用戶端區塊，建議您定義 [_CRTDBG_MAP_ALLOC](http://msdn.microsoft.com/library/435242b8-caea-4063-b765-4a608200312b)，它會造成所有堆積配置呼叫都對應至它們在偵錯組建裡的偵錯對等用法。 這可將每個配置呼叫的相關檔名和行號資訊儲存在對應的區塊標頭裡。  
+ 呼叫 [malloc](https://msdn.microsoft.com/library/144fcee2-be34-4a03-bb7e-ed6d4b99eea0) 或 [calloc](https://msdn.microsoft.com/library/17bb79a1-98cf-4096-90cb-1f9365cd6829) 會建立一般區塊。 如果您只要使用一般區塊，而且不需要用戶端區塊，建議您定義 [_CRTDBG_MAP_ALLOC](https://msdn.microsoft.com/library/435242b8-caea-4063-b765-4a608200312b)，它會造成所有堆積配置呼叫都對應至它們在偵錯組建裡的偵錯對等用法。 這可將每個配置呼叫的相關檔名和行號資訊儲存在對應的區塊標頭裡。  
   
  `_CRT_BLOCK`  
  由許多執行階段程式庫函式內部所配置的記憶體區塊標記為 CRT 區塊，以便分別處理。 因此，流失偵測和其他操作不會受到影響。 配置必須從未配置、重新配置或釋放任何 CRT 類型的區塊。  
@@ -166,7 +166,7 @@ typedef struct _CrtMemBlockHeader
 freedbg(pbData, _CLIENT_BLOCK|(MYSUBTYPE<<16));  
 ```  
   
- 可以使用 [_CrtSetDumpClient](http://msdn.microsoft.com/library/f3dd06d0-c331-4a12-b68d-25378d112033) 安裝用戶端提供的攔截函式 (可用來傾印儲存在用戶端區塊的物件)，每當偵錯函式傾印用戶端區塊時就會予以呼叫。 此外，可使用 [_CrtDoForAllClientObjects](http://msdn.microsoft.com/library/d0fdb835-3cdc-45f1-9a21-54208e8df248)來呼叫應用程式為偵錯堆積裡每個用戶端區塊所提供的指定函式。  
+ 可以使用 [_CrtSetDumpClient](https://msdn.microsoft.com/library/f3dd06d0-c331-4a12-b68d-25378d112033) 安裝用戶端提供的攔截函式 (可用來傾印儲存在用戶端區塊的物件)，每當偵錯函式傾印用戶端區塊時就會予以呼叫。 此外，可使用 [_CrtDoForAllClientObjects](https://msdn.microsoft.com/library/d0fdb835-3cdc-45f1-9a21-54208e8df248)來呼叫應用程式為偵錯堆積裡每個用戶端區塊所提供的指定函式。  
   
  **_FREE_BLOCK**  
  一般來說，此清單會移除釋放的區塊。 若要檢查釋放記憶體是否仍然不能寫入，或模擬低記憶體條件，您可以選擇保留連結串列上的釋放區塊，將其標記為可用，並填入已知位元組值 (目前是 0xDD)。  
@@ -174,7 +174,7 @@ freedbg(pbData, _CLIENT_BLOCK|(MYSUBTYPE<<16));
  **_IGNORE_BLOCK**  
  可以在某段時間關閉偵錯堆積操作。 在這段期間，記憶體區塊會保留於清單終上，但是標記為忽略區塊。  
   
- 若要判斷指定區塊的類型和子類型，請使用函式 [_CrtReportBlockType](http://msdn.microsoft.com/library/0f4b9da7-bebb-4956-9541-b2581640ec6b)，以及巨集 **_BLOCK_TYPE** 和 **_BLOCK_SUBTYPE**。 巨集會定義 (在 crtdbg.h 裡)，參見下例：  
+ 若要判斷指定區塊的類型和子類型，請使用函式 [_CrtReportBlockType](https://msdn.microsoft.com/library/0f4b9da7-bebb-4956-9541-b2581640ec6b)，以及巨集 **_BLOCK_TYPE** 和 **_BLOCK_SUBTYPE**。 巨集會定義 (在 crtdbg.h 裡)，參見下例：  
   
 ```  
 #define _BLOCK_TYPE(block)          (block & 0xFFFF)  
@@ -187,10 +187,10 @@ freedbg(pbData, _CLIENT_BLOCK|(MYSUBTYPE<<16));
  許多偵錯堆積的功能必須從程式碼內存取。 下一節將說明一些功能以及如何使用這些功能。  
   
  `_CrtCheckMemory`  
- 例如，您可以使用對 [_CrtCheckMemory](http://msdn.microsoft.com/library/457cc72e-60fd-4177-ab5c-6ae26a420765) 的呼叫來檢查任何一點的堆積完整性。 這個函式檢查堆積裡的每個記憶體區塊，確認記憶體區塊標頭資訊是有效的，並且確認緩衝區未經修改。  
+ 例如，您可以使用對 [_CrtCheckMemory](https://msdn.microsoft.com/library/457cc72e-60fd-4177-ab5c-6ae26a420765) 的呼叫來檢查任何一點的堆積完整性。 這個函式檢查堆積裡的每個記憶體區塊，確認記憶體區塊標頭資訊是有效的，並且確認緩衝區未經修改。  
   
  `_CrtSetDbgFlag`  
- 您可以使用內部旗標 [_crtDbgFlag](http://msdn.microsoft.com/library/9e7adb47-8ab9-4e19-81d5-e2f237979973)，來控制偵錯堆積追蹤配置的方式，該旗標可以使用 [_CrtSetDbgFlag](http://msdn.microsoft.com/library/b5657ffb-6178-4cbf-9886-1af904ede94c) 函式進行讀取和設定。 您可以變更這個旗標，來指示偵錯堆積在程式結束時檢查記憶體流失，並且報告任何偵測到的遺漏。 同樣地，您可以指定連結串列不要移除釋放的記憶體區塊，以模擬低記憶體情況。 檢查堆積時，這些釋放的區塊會在它們的項目裡檢查以確定它們沒有被干擾。  
+ 您可以使用內部旗標 [_crtDbgFlag](https://msdn.microsoft.com/library/9e7adb47-8ab9-4e19-81d5-e2f237979973)，來控制偵錯堆積追蹤配置的方式，該旗標可以使用 [_CrtSetDbgFlag](https://msdn.microsoft.com/library/b5657ffb-6178-4cbf-9886-1af904ede94c) 函式進行讀取和設定。 您可以變更這個旗標，來指示偵錯堆積在程式結束時檢查記憶體流失，並且報告任何偵測到的遺漏。 同樣地，您可以指定連結串列不要移除釋放的記憶體區塊，以模擬低記憶體情況。 檢查堆積時，這些釋放的區塊會在它們的項目裡檢查以確定它們沒有被干擾。  
   
  **_crtDbgFlag** 旗標包含下列位元欄位：  
   
@@ -306,11 +306,11 @@ typedef struct _CrtMemState
   
 |功能|描述|  
 |--------------|-----------------|  
-|[_CrtMemCheckpoint](http://msdn.microsoft.com/library/f1bacbaa-5a0c-498a-ac7a-b6131d83dfbc)|將堆積的快照儲存在應用程式提供的 **_CrtMemState** 結構中。|  
-|[_CrtMemDifference](http://msdn.microsoft.com/library/0f327278-b551-482f-958b-76941f796ba4)|比較兩個記憶體狀態結構，將它們之間的差異儲存在第三個狀態結構，如果兩個狀態不同則傳回 TRUE。|  
-|[_CrtMemDumpStatistics](http://msdn.microsoft.com/library/27b9d731-3184-4a2d-b9a7-6566ab28a9fe)|傾印指定的 **_CrtMemState** 結構。 結構可能包含指定時間裡偵錯堆積的狀態快照或者是兩個快照之間的差異。|  
-|[_CrtMemDumpAllObjectsSince](http://msdn.microsoft.com/library/c48a447a-e6bb-475c-9271-a3021182a0dc)|傾印從堆積的指定快照使用後或從執行開始的所有配置物件之相關資訊。 如果應用程式是使用 **_CrtSetDumpClient** 安裝，則每次當它傾印 **_CLIENT_BLOCK** 區塊時，就會呼叫應用程式提供的攔截函式。|  
-|[_CrtDumpMemoryLeaks](http://msdn.microsoft.com/library/71b2eab4-7f55-44e8-a55a-bfea4f32d34c)|判斷自從程式執行開始時，是否有任何的記憶體流失發生，如果有的話，傾印所有配置的物件。 如果應用程式是使用 **_CrtSetDumpClient** 安裝，則每次當 **_CrtDumpMemoryLeaks** 傾印 **_CLIENT_BLOCK** 區塊時，它就會呼叫應用程式提供的攔截函式。|  
+|[_CrtMemCheckpoint](https://msdn.microsoft.com/library/f1bacbaa-5a0c-498a-ac7a-b6131d83dfbc)|將堆積的快照儲存在應用程式提供的 **_CrtMemState** 結構中。|  
+|[_CrtMemDifference](https://msdn.microsoft.com/library/0f327278-b551-482f-958b-76941f796ba4)|比較兩個記憶體狀態結構，將它們之間的差異儲存在第三個狀態結構，如果兩個狀態不同則傳回 TRUE。|  
+|[_CrtMemDumpStatistics](https://msdn.microsoft.com/library/27b9d731-3184-4a2d-b9a7-6566ab28a9fe)|傾印指定的 **_CrtMemState** 結構。 結構可能包含指定時間裡偵錯堆積的狀態快照或者是兩個快照之間的差異。|  
+|[_CrtMemDumpAllObjectsSince](https://msdn.microsoft.com/library/c48a447a-e6bb-475c-9271-a3021182a0dc)|傾印從堆積的指定快照使用後或從執行開始的所有配置物件之相關資訊。 如果應用程式是使用 **_CrtSetDumpClient** 安裝，則每次當它傾印 **_CLIENT_BLOCK** 區塊時，就會呼叫應用程式提供的攔截函式。|  
+|[_CrtDumpMemoryLeaks](https://msdn.microsoft.com/library/71b2eab4-7f55-44e8-a55a-bfea4f32d34c)|判斷自從程式執行開始時，是否有任何的記憶體流失發生，如果有的話，傾印所有配置的物件。 如果應用程式是使用 **_CrtSetDumpClient** 安裝，則每次當 **_CrtDumpMemoryLeaks** 傾印 **_CLIENT_BLOCK** 區塊時，它就會呼叫應用程式提供的攔截函式。|  
   
  ![回到頁首](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [內容](#BKMK_Contents)  
   
@@ -321,7 +321,7 @@ typedef struct _CrtMemState
   
  最簡單的辨識發生錯誤的特定堆積配置呼叫方法，是利用與偵錯堆積裡每個區塊相關的唯一配置要求編號。 當區塊的相關資訊由其中一個傾印函式回報時，這個配置要求編號會包含在大括弧裡 (例如 "{36}")。  
   
- 當您知道不適當配置區塊的配置要求編號後，您可以將這個編號傳遞至 [_CrtSetBreakAlloc](http://msdn.microsoft.com/library/33bfc6af-a9ea-405b-a29f-1c2d4d9880a1) 來建立中斷點。 執行會在配置區塊之前中斷，而您即可回溯追蹤以判斷哪一個常式要對這個錯誤呼叫負責。 若要避免重新編譯，您可以在偵錯工具裡將 **_crtBreakAlloc** 設定為您要的配置要求編號，來完成相同的事。  
+ 當您知道不適當配置區塊的配置要求編號後，您可以將這個編號傳遞至 [_CrtSetBreakAlloc](https://msdn.microsoft.com/library/33bfc6af-a9ea-405b-a29f-1c2d4d9880a1) 來建立中斷點。 執行會在配置區塊之前中斷，而您即可回溯追蹤以判斷哪一個常式要對這個錯誤呼叫負責。 若要避免重新編譯，您可以在偵錯工具裡將 **_crtBreakAlloc** 設定為您要的配置要求編號，來完成相同的事。  
   
  **建立配置常式的偵錯版本**  
   

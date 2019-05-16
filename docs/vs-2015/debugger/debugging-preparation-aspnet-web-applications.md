@@ -19,12 +19,12 @@ caps.latest.revision: 38
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: e7a2640d39c90dc36a3960d230df46ac75bdbce6
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 7a80587062442688551d07128a2cec49a712adf6
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60092418"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65691455"
 ---
 # <a name="debugging-preparation-aspnet-web-applications"></a>偵錯準備：ASP.NET Web 應用程式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,11 +43,11 @@ ms.locfileid: "60092418"
   
 1. 在函式和事件處理常式中設定一個或多個中斷點。  
   
-     如需詳細資訊，請參閱 [Breakpoints and Tracepoints](http://msdn.microsoft.com/fe4eedc1-71aa-4928-962f-0912c334d583)。  
+     如需詳細資訊，請參閱 [Breakpoints and Tracepoints](https://msdn.microsoft.com/fe4eedc1-71aa-4928-962f-0912c334d583)。  
   
 2. 遇到中斷點時，逐步執行函式內的程式碼。 請觀察程式碼的執行，直到您找出問題癥結。  
   
-     如需詳細資訊，請參閱 <<c0> [ 逐步執行程式碼](http://msdn.microsoft.com/8791dac9-64d1-4bb9-b59e-8d59af1833f9)並[偵錯 Web 應用程式和指令碼](../debugger/debugging-web-applications-and-script.md)。  
+     如需詳細資訊，請參閱 <<c0> [ 逐步執行程式碼](https://msdn.microsoft.com/8791dac9-64d1-4bb9-b59e-8d59af1833f9)並[偵錯 Web 應用程式和指令碼](../debugger/debugging-web-applications-and-script.md)。  
   
 ## <a name="changing-default-configurations"></a>變更預設的組態  
  如果想要變更 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 建立的預設偵錯和發行組態，您可以自行變更。 如需詳細資訊，請參閱[如何：設定偵錯和發行組態](../debugger/how-to-set-debug-and-release-configurations.md)。  

@@ -27,12 +27,12 @@ caps.latest.revision: 36
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 8e6c234b622dcc335a6fe42fd57f1f815a5fd9d9
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 23c570e9d29c2288da32469b524c5e4d9125b097
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63447295"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65694918"
 ---
 # <a name="specify-symbol-pdb-and-source-files-in-the-visual-studio-debugger"></a>在 Visual Studio Debugger 中指定符號 (.pdb) 和原始程式檔
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -94,10 +94,10 @@ ms.locfileid: "63447295"
 
    選取此選項將會載入 DLL 匯出表。 如果您使用 Windows 訊息、Windows 程序 (WindowProc)、COM 物件、封送處理 (Marshaling) 或是沒有其符號的任何 DLL，則 DLL 匯出表的符號資訊就會很有用。 讀取 DLL 匯出資訊會產生一些額外負荷， 因此，這項功能預設為關閉。
 
-   若您想知道 DLL 匯出表中可使用的符號，請使用 `dumpbin /exports`。 這些符號適用於任何 32 位元系統 DLL。 讀取 `dumpbin /exports` 輸出時，您可以看到確實的函式名稱，包含非英數字元。 這對設定函式的中斷點來說很有幫助。 DLL 匯出表中的函式名稱在偵錯工具中的其他位置可能會顯示為已被截斷。 這些呼叫都按呼叫順序列出，目前的函式 (巢狀最深處) 列在頂端。 如需詳細資訊，請參閱 [dumpbin /exports](http://msdn.microsoft.com/library/2971ab7e-4ee6-478b-9c85-cda42a4ce1bf)。
+   若您想知道 DLL 匯出表中可使用的符號，請使用 `dumpbin /exports`。 這些符號適用於任何 32 位元系統 DLL。 讀取 `dumpbin /exports` 輸出時，您可以看到確實的函式名稱，包含非英數字元。 這對設定函式的中斷點來說很有幫助。 DLL 匯出表中的函式名稱在偵錯工具中的其他位置可能會顯示為已被截斷。 這些呼叫都按呼叫順序列出，目前的函式 (巢狀最深處) 列在頂端。 如需詳細資訊，請參閱 [dumpbin /exports](https://msdn.microsoft.com/library/2971ab7e-4ee6-478b-9c85-cda42a4ce1bf)。
 
 ### <a name="BKMK_Use_symbol_servers_to_find_symbol_files_not_on_your_local_machine"></a> 使用符號伺服器尋找不在本機電腦上的符號檔
- [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 可以從實作 symsrv 通訊協定的符號伺服器下載偵錯符號檔。 [Visual Studio Team Foundation Server](http://msdn.microsoft.com/library/bd6977ca-e30a-491a-a153-671d81222ce6) 和 [Debugging Tools for Windows](http://msdn.microsoft.com/library/windows/hardware/ff551063\(v=VS.85\).aspx) 是可以實作符號伺服器的兩項工具。 在 VS [ **選項** ] 對話方塊中指定要使用的符號伺服器。
+ [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 可以從實作 symsrv 通訊協定的符號伺服器下載偵錯符號檔。 [Visual Studio Team Foundation Server](https://msdn.microsoft.com/library/bd6977ca-e30a-491a-a153-671d81222ce6) 和 [Debugging Tools for Windows](https://msdn.microsoft.com/library/windows/hardware/ff551063\(v=VS.85\).aspx) 是可以實作符號伺服器的兩項工具。 在 VS [ **選項** ] 對話方塊中指定要使用的符號伺服器。
 
  您可以使用的符號伺服器包括：
 
@@ -165,9 +165,9 @@ ms.locfileid: "63447295"
 
  **C++ 選項**
 
- 程式資料庫 (.pdb) 檔會保留偵錯和專案狀態資訊，以便您的程式進行偵錯組態的累加連結 (Incremental Link)。 當您使用 [/ZI 或 /Zi](http://msdn.microsoft.com/library/ce9fa7e1-0c9b-47e3-98ea-26d1a16257c8) 建置時，會建立 .pdb 檔 (適用於 C/C++)。
+ 程式資料庫 (.pdb) 檔會保留偵錯和專案狀態資訊，以便您的程式進行偵錯組態的累加連結 (Incremental Link)。 當您使用 [/ZI 或 /Zi](https://msdn.microsoft.com/library/ce9fa7e1-0c9b-47e3-98ea-26d1a16257c8) 建置時，會建立 .pdb 檔 (適用於 C/C++)。
 
- 在 [!INCLUDE[vcprvc](../includes/vcprvc-md.md)]中， [/Fd](http://msdn.microsoft.com/library/3977a9ed-f0ac-45df-bf06-01cedd2ba85a) 選項會為編譯器所建立的 .pdb 檔命名。 當您使用精靈在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 中建立專案時，就會設定 **/Fd** 選項以建立名為 *project*.pdb 的 .pdb 檔案。
+ 在 [!INCLUDE[vcprvc](../includes/vcprvc-md.md)]中， [/Fd](https://msdn.microsoft.com/library/3977a9ed-f0ac-45df-bf06-01cedd2ba85a) 選項會為編譯器所建立的 .pdb 檔命名。 當您使用精靈在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 中建立專案時，就會設定 **/Fd** 選項以建立名為 *project*.pdb 的 .pdb 檔案。
 
  如果您在使用 Makefile 建置 C/C++ 應用程式時，指定了 **/ZI** 或 **/Zi** ，但沒有指定 **/Fd**，那麼您在最後會得到兩個 .pdb 檔：
 
@@ -183,7 +183,7 @@ ms.locfileid: "63447295"
 
   **.NET Framework 選項**
 
-  程式資料庫 (.pdb) 檔會保留偵錯和專案狀態資訊，以便您的程式進行偵錯組態的累加連結 (Incremental Link)。 當您利用 **/debug**進行建置時，會建立一個 .pdb 檔。 您可以使用 **/debug:full** 或 **/debug:pdbonly**建置應用程式。 使用 **/debug:full** 建置會產生可偵錯的程式碼。 使用 **/debug:pdbonly** 進行建置則會產生 .pdb 檔案，但是不會產生 `DebuggableAttribute` 通知 JIT 編譯器有可用的偵錯資訊。 如果您要為發行組建 (Release Build) 產生 .pdb 檔案，但不希望是可偵錯的，請使用 **/debug:pdbonly** 。 如需詳細資訊，請參閱 [/debug (C# Compiler Options)](http://msdn.microsoft.com/library/e2b48c07-01bc-45cc-a52c-92e9085eb969) 或 [/debug (Visual Basic)](http://msdn.microsoft.com/library/c2b0bea5-1d5e-499f-9bd5-4f6c6b715ea2)。
+  程式資料庫 (.pdb) 檔會保留偵錯和專案狀態資訊，以便您的程式進行偵錯組態的累加連結 (Incremental Link)。 當您利用 **/debug**進行建置時，會建立一個 .pdb 檔。 您可以使用 **/debug:full** 或 **/debug:pdbonly**建置應用程式。 使用 **/debug:full** 建置會產生可偵錯的程式碼。 使用 **/debug:pdbonly** 進行建置則會產生 .pdb 檔案，但是不會產生 `DebuggableAttribute` 通知 JIT 編譯器有可用的偵錯資訊。 如果您要為發行組建 (Release Build) 產生 .pdb 檔案，但不希望是可偵錯的，請使用 **/debug:pdbonly** 。 如需詳細資訊，請參閱 [/debug (C# Compiler Options)](https://msdn.microsoft.com/library/e2b48c07-01bc-45cc-a52c-92e9085eb969) 或 [/debug (Visual Basic)](https://msdn.microsoft.com/library/c2b0bea5-1d5e-499f-9bd5-4f6c6b715ea2)。
 
   [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 偵錯工具會使用 EXE 或 DLL 檔中的 .pdb 檔路徑找出 project.pdb 檔。 如果偵錯工具在該位置找不到 .pdb 檔，或是路徑無效，偵錯工具就會搜尋包含 EXE 的路徑，然後再搜尋 [ **選項** ] 對話方塊中指定的符號路徑。 此路徑通常是 [ **符號** ] 節點中的 [ **偵錯** ] 資料夾。 偵錯工具不會載入與進行偵錯之可執行檔不相符的 .pdb 檔。 如果偵錯工具找不到 .pdb 檔案，[ **尋找符號** ] 對話方塊即會出現，可讓您搜尋符號或將額外的位置加入搜尋路徑。
 

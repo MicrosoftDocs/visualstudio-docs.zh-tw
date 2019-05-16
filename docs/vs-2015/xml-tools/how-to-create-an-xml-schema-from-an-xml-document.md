@@ -1,5 +1,5 @@
 ---
-title: HOW TO：從 XML 文件建立 XML 結構描述 |Microsoft Docs
+title: 作法：從 XML 文件建立 XML 結構描述 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-xml-tools
@@ -9,14 +9,14 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 0f12436f9f129c6fb8a0fe3a4b6c853a9e58e650
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: a732f0c6a9758de3ebd918559203b13a56d6a0ae
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63438120"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65697793"
 ---
-# <a name="how-to-create-an-xml-schema-from-an-xml-document"></a>HOW TO：從 XML 文件建立 XML 結構描述
+# <a name="how-to-create-an-xml-schema-from-an-xml-document"></a>作法：從 XML 文件建立 XML 結構描述
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 XML 編輯器允許您從 XML 文件，建立 XML 結構描述定義語言 (XSD) 結構描述。 XML 執行個體文件會決定如何以下列方式產生結構描述：  
@@ -29,7 +29,7 @@ XML 編輯器允許您從 XML 文件，建立 XML 結構描述定義語言 (XSD)
   
   接著，會使用所建立的結構描述來為 XML 文件提供 IntelliSense。  
   
-  如需有關結構描述推斷引擎的詳細資訊，請參閱 <<c0> [ 推斷 XML 結構描述](http://msdn.microsoft.com/library/b18e7ffd-3c04-482d-9934-ba2f6a59b2c9)。  
+  如需有關結構描述推斷引擎的詳細資訊，請參閱 <<c0> [ 推斷 XML 結構描述](https://msdn.microsoft.com/library/b18e7ffd-3c04-482d-9934-ba2f6a59b2c9)。  
   
 ### <a name="to-create-an-xml-schema"></a>建立 XML 結構描述  
   

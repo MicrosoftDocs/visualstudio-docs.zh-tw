@@ -9,14 +9,14 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 3a8364f742a5bdd90ffa2532f01476b49e381289
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 7f3cefc7c6e2a78d757bb931a430f09c6da103c1
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63441042"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65681028"
 ---
-# <a name="how-to-migrate-a-domain-specific-language-to-a-new-version"></a>HOW TO：將特定領域語言移轉至新的版本
+# <a name="how-to-migrate-a-domain-specific-language-to-a-new-version"></a>作法：將特定領域語言移轉至新的版本
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 您可以移轉專案定義及使用特定領域語言[!INCLUDE[vs2010](../includes/vs2010-md.md)]版本中的[!INCLUDE[dsl](../includes/dsl-md.md)]所散發之[!INCLUDE[vs_orcas_long](../includes/vs-orcas-long-md.md)]。  
@@ -78,7 +78,7 @@ ms.locfileid: "63441042"
    2. 按一下 [**轉換所有範本**方案總管] 中的標頭中的按鈕。  
   
        > [!NOTE]
-       > 您可以進行此步驟中不必要的。 如需詳細資訊，請參閱 <<c0> [ 如何自動執行轉換的所有範本](http://msdn.microsoft.com/b63cfe20-fe5e-47cc-9506-59b29bca768a)。  
+       > 您可以進行此步驟中不必要的。 如需詳細資訊，請參閱 <<c0> [ 如何自動執行轉換的所有範本](https://msdn.microsoft.com/b63cfe20-fe5e-47cc-9506-59b29bca768a)。  
   
 6. 更新已轉換的專案中自訂程式碼。  
   

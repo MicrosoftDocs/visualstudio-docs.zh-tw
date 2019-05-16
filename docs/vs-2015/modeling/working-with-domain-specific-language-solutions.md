@@ -9,12 +9,12 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: eab5a1b645023537ffee182804554f483d81f727
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: a9c69af03e88a8debf10763c1a62e82fe0e9430e
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58940539"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65700588"
 ---
 # <a name="working-with-domain-specific-language-solutions"></a>使用網域指定的語言方案
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,5 +49,5 @@ ms.locfileid: "58940539"
  [如何：擴充特定領域語言設計工具](../modeling/how-to-extend-the-domain-specific-language-designer.md)  
  您可以自訂 DSL 設計工具與功能表命令。  
   
- [如何自動轉換所有範本](http://msdn.microsoft.com/b63cfe20-fe5e-47cc-9506-59b29bca768a)  
+ [如何自動轉換所有範本](https://msdn.microsoft.com/b63cfe20-fe5e-47cc-9506-59b29bca768a)  
  若要避免按一下轉換所有範本，您可以讓它自動組建的一部分。

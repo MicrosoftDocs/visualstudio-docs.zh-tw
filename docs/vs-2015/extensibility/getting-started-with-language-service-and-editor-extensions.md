@@ -10,12 +10,12 @@ ms.assetid: 6b151891-c06d-40b1-9867-42298caa8492
 caps.latest.revision: 22
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: a29bb95b4b3e05097f2bf095e9312fe0704c31bc
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 4c4278679cabb72e9d06f79c1668e7546f24194d
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63421132"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65703752"
 ---
 # <a name="getting-started-with-language-service-and-editor-extensions"></a>開始使用語言服務及編輯器延伸模組
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ ms.locfileid: "63421132"
  我們建議您先了解下列概念和技術撰寫您自己的編輯器延伸模組之前。  
   
 ## <a name="the-windows-presentation-foundation-wpf-and-editor-extensions"></a>Windows Presentation Foundation (WPF) 及編輯器擴充功能  
- Visual Studio 編輯器使用者介面 (UI) 是使用 Windows Presentation Foundation (WPF) 來實作。 WPF 提供豐富的視覺效果和一致的程式設計模型與商務邏輯分隔的視覺效果，程式碼。 當您建立編輯器延伸模組時，您可以使用許多 WPF 項目和功能。 如需詳細資訊，請參閱 < [Windows Presentation Foundation](http://msdn.microsoft.com/library/f667bd15-2134-41e9-b4af-5ced6fafab5d)。  
+ Visual Studio 編輯器使用者介面 (UI) 是使用 Windows Presentation Foundation (WPF) 來實作。 WPF 提供豐富的視覺效果和一致的程式設計模型與商務邏輯分隔的視覺效果，程式碼。 當您建立編輯器延伸模組時，您可以使用許多 WPF 項目和功能。 如需詳細資訊，請參閱 < [Windows Presentation Foundation](https://msdn.microsoft.com/library/f667bd15-2134-41e9-b4af-5ced6fafab5d)。  
   
 ## <a name="the-managed-extensibility-framework-mef-and-editor-extensions"></a>Managed 的 Extensibility Framework (MEF) 及編輯器擴充功能  
  Visual Studio 編輯器會使用 Managed Extensibility Framework (MEF) 來管理其元件和延伸模組。 MEF 也可讓開發人員輕鬆地建立主應用程式，例如 Visual Studio 的擴充功能。 在此架構中，您可以定義根據 MEF 合約的延伸模組，並將它匯出為 MEF 元件組件。 主應用程式管理之元件部分，找到這些物件、 註冊，並確保它們會套用至正確的內容。  

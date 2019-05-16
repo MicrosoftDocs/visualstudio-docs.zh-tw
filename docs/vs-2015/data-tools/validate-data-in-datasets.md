@@ -24,12 +24,12 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 00a5194abfcabac37e49a2e35ed025fd0f85dbe4
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 2a6993d241f49261131ffad76dc50534ac8e1591
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63424808"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65694886"
 ---
 # <a name="validate-data-in-datasets"></a>驗證資料集中的資料
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,24 +38,24 @@ ms.locfileid: "63424808"
   
  您可以確認正在寫入至資料集的資料有效，藉由建置至本身的資料集的驗證檢查。 資料集可以檢查資料，不論如何執行更新時，直接由控制項在表單中，在一個元件，或以其他方式。 資料集是您的應用程式 （不同於後端資料庫） 的一部分，因為它是建置應用程式特定驗證的合理位置。  
   
- 將驗證新增至您的應用程式的最佳位置是資料集的部分類別檔案中。 在 [!INCLUDE[vbprvb](../includes/vbprvb-md.md)]或[!INCLUDE[csprcs](../includes/csprcs-md.md)]，開啟**Dataset 設計工具**，連按兩下您要建立驗證的資料行或資料表。 此動作會自動建立<xref:System.Data.DataTable.ColumnChanging>或<xref:System.Data.DataTable.RowChanging>事件處理常式。 如需詳細資訊，請參閱[如何：在資料行變更期間驗證資料](http://msdn.microsoft.com/library/a2680600-67b6-4a40-a77e-b5bc638281c5)或[How to:在資料列變更期間驗證資料](http://msdn.microsoft.com/library/afc03c77-dfed-4302-9376-929400468ecc)。 如需完整範例，請參閱[逐步解說：將驗證新增至資料集](http://msdn.microsoft.com/library/09351fab-d670-45e3-b53a-a944eff717e7)。  
+ 將驗證新增至您的應用程式的最佳位置是資料集的部分類別檔案中。 在 [!INCLUDE[vbprvb](../includes/vbprvb-md.md)]或[!INCLUDE[csprcs](../includes/csprcs-md.md)]，開啟**Dataset 設計工具**，連按兩下您要建立驗證的資料行或資料表。 此動作會自動建立<xref:System.Data.DataTable.ColumnChanging>或<xref:System.Data.DataTable.RowChanging>事件處理常式。 如需詳細資訊，請參閱[如何：在資料行變更期間驗證資料](https://msdn.microsoft.com/library/a2680600-67b6-4a40-a77e-b5bc638281c5)或[How to:在資料列變更期間驗證資料](https://msdn.microsoft.com/library/afc03c77-dfed-4302-9376-929400468ecc)。 如需完整範例，請參閱[逐步解說：將驗證新增至資料集](https://msdn.microsoft.com/library/09351fab-d670-45e3-b53a-a944eff717e7)。  
   
 ## <a name="validate-data"></a>驗證資料  
  在資料集內的驗證可以透過下列方式來完成：  
   
-- 藉由建立您自己的應用程式特定驗證中個別資料行的值變更期間檢查。  如需詳細資訊，請參閱[如何：在資料行變更期間驗證資料](http://msdn.microsoft.com/library/a2680600-67b6-4a40-a77e-b5bc638281c5)。  
+- 藉由建立您自己的應用程式特定驗證中個別資料行的值變更期間檢查。  如需詳細資訊，請參閱[如何：在資料行變更期間驗證資料](https://msdn.microsoft.com/library/a2680600-67b6-4a40-a77e-b5bc638281c5)。  
   
-- 藉由建立您自己應用程式特定的驗證，可以檢查在整個資料值的資料會變更資料列。 如需詳細資訊，請參閱[如何：在資料列變更期間驗證資料](http://msdn.microsoft.com/library/afc03c77-dfed-4302-9376-929400468ecc)。  
+- 藉由建立您自己應用程式特定的驗證，可以檢查在整個資料值的資料會變更資料列。 如需詳細資訊，請參閱[如何：在資料列變更期間驗證資料](https://msdn.microsoft.com/library/afc03c77-dfed-4302-9376-929400468ecc)。  
   
-- 建立金鑰，unique 條件約束等做為實際的結構描述定義的資料集的一部分。 如需有關驗證併入結構描述定義的詳細資訊，請參閱[限制為包含唯一值的 DataColumn](http://msdn.microsoft.com/library/8ca21f77-b99a-47a7-a656-7cfd7a1bd9df)。  
+- 建立金鑰，unique 條件約束等做為實際的結構描述定義的資料集的一部分。 如需有關驗證併入結構描述定義的詳細資訊，請參閱[限制為包含唯一值的 DataColumn](https://msdn.microsoft.com/library/8ca21f77-b99a-47a7-a656-7cfd7a1bd9df)。  
   
 - 藉由設定的屬性<xref:System.Data.DataColumn>物件，例如<xref:System.Data.DataColumn.MaxLength%2A>， <xref:System.Data.DataColumn.AllowDBNull%2A>，和<xref:System.Data.DataColumn.Unique%2A>。  
   
   多個事件所引發<xref:System.Data.DataTable>物件記錄中進行變更時：  
   
-- <xref:System.Data.DataTable.ColumnChanging>和<xref:System.Data.DataTable.ColumnChanged>期間和每個個別的資料行的變更之後，會引發事件。 <xref:System.Data.DataTable.ColumnChanging>事件很有用，當您想要驗證特定的資料行中的變更。 提議的變更的相關資訊會傳遞做為引數與事件。 如需詳細資訊，請參閱[如何：在資料行變更期間驗證資料](http://msdn.microsoft.com/library/a2680600-67b6-4a40-a77e-b5bc638281c5)。  
+- <xref:System.Data.DataTable.ColumnChanging>和<xref:System.Data.DataTable.ColumnChanged>期間和每個個別的資料行的變更之後，會引發事件。 <xref:System.Data.DataTable.ColumnChanging>事件很有用，當您想要驗證特定的資料行中的變更。 提議的變更的相關資訊會傳遞做為引數與事件。 如需詳細資訊，請參閱[如何：在資料行變更期間驗證資料](https://msdn.microsoft.com/library/a2680600-67b6-4a40-a77e-b5bc638281c5)。  
   
-- <xref:System.Data.DataTable.RowChanging>和<xref:System.Data.DataTable.RowChanged>期間和之後，會引發事件的資料列變更。 <xref:System.Data.DataTable.RowChanging>事件是較一般。 表示資料列，在某處發生變更，但您不知道哪個資料行已變更。 如需詳細資訊，請參閱[如何：在資料列變更期間驗證資料](http://msdn.microsoft.com/library/afc03c77-dfed-4302-9376-929400468ecc)。  
+- <xref:System.Data.DataTable.RowChanging>和<xref:System.Data.DataTable.RowChanged>期間和之後，會引發事件的資料列變更。 <xref:System.Data.DataTable.RowChanging>事件是較一般。 表示資料列，在某處發生變更，但您不知道哪個資料行已變更。 如需詳細資訊，請參閱[如何：在資料列變更期間驗證資料](https://msdn.microsoft.com/library/afc03c77-dfed-4302-9376-929400468ecc)。  
   
   根據預設，每個資料行的變更，因此引發四個事件。 第一個是<xref:System.Data.DataTable.ColumnChanging>和<xref:System.Data.DataTable.ColumnChanged>正在變更之特定資料行的事件。 接下來是<xref:System.Data.DataTable.RowChanging>和<xref:System.Data.DataTable.RowChanged>事件。 如果要對資料列進行多項變更，則會引發事件，每個變更。  
   
@@ -94,16 +94,16 @@ ms.locfileid: "63424808"
   
 - 藉由設定資料行錯誤拒絕建議的值 (<xref:System.Data.DataRow.SetColumnError%2A>) 從在資料行變更的事件處理常式。  
   
-- 選擇性地使用<xref:System.Windows.Forms.ErrorProvider>控制項來顯示錯誤訊息給使用者。 如需詳細資訊，請參閱 < [ErrorProvider 元件](http://msdn.microsoft.com/library/c0f2e231-c5c9-413d-a507-75af2db499b6)。  
+- 選擇性地使用<xref:System.Windows.Forms.ErrorProvider>控制項來顯示錯誤訊息給使用者。 如需詳細資訊，請參閱 < [ErrorProvider 元件](https://msdn.microsoft.com/library/c0f2e231-c5c9-413d-a507-75af2db499b6)。  
   
-  您也可以驗證執行期間<xref:System.Data.DataTable.RowChanging>事件。 如需詳細資訊，請參閱[如何：在資料列變更期間驗證資料](http://msdn.microsoft.com/library/afc03c77-dfed-4302-9376-929400468ecc)。  
+  您也可以驗證執行期間<xref:System.Data.DataTable.RowChanging>事件。 如需詳細資訊，請參閱[如何：在資料列變更期間驗證資料](https://msdn.microsoft.com/library/afc03c77-dfed-4302-9376-929400468ecc)。  
   
 ## <a name="validate-data-during-row-changes"></a>在資料列變更期間驗證資料  
  您可以撰寫程式碼，以確認您想要驗證每個資料的行包含符合您的應用程式的資料。 藉由設定資料行，指出它包含錯誤，是否無法接受建議的值執行這項操作。 下列範例會設定資料行發生錯誤時`Quantity`資料行是 0 或更小。 資料列變更的事件處理常式應該類似下列的範例。  
   
 #### <a name="to-validate-data-when-a-row-changes-visual-basic"></a>若要驗證資料的資料列時變更 (Visual Basic)  
   
-1. 在 **DataSet 設計工具**中開啟資料集。 如需詳細資訊，請參閱[如何：在 Dataset 設計工具中開啟資料集](http://msdn.microsoft.com/library/36fc266f-365b-42cb-aebb-c993dc2c47c3)。  
+1. 在 **DataSet 設計工具**中開啟資料集。 如需詳細資訊，請參閱[如何：在 Dataset 設計工具中開啟資料集](https://msdn.microsoft.com/library/36fc266f-365b-42cb-aebb-c993dc2c47c3)。  
   
 2. 按兩下您想要驗證之資料表標題列。 此動作會自動建立<xref:System.Data.DataTable.RowChanging>事件處理常式<xref:System.Data.DataTable>資料集的部分類別檔案中。  
   
@@ -114,7 +114,7 @@ ms.locfileid: "63424808"
   
 #### <a name="to-validate-data-when-a-row-changes-c"></a>若要驗證資料的資料列時變更 (C#)  
   
-1. 在 **DataSet 設計工具**中開啟資料集。 如需詳細資訊，請參閱[如何：在 Dataset 設計工具中開啟資料集](http://msdn.microsoft.com/library/36fc266f-365b-42cb-aebb-c993dc2c47c3)。  
+1. 在 **DataSet 設計工具**中開啟資料集。 如需詳細資訊，請參閱[如何：在 Dataset 設計工具中開啟資料集](https://msdn.microsoft.com/library/36fc266f-365b-42cb-aebb-c993dc2c47c3)。  
   
 2. 按兩下您想要驗證之資料表標題列。 此動作會建立部分類別檔案<xref:System.Data.DataTable>。  
   
@@ -144,7 +144,7 @@ ms.locfileid: "63424808"
     ```  
   
 ## <a name="to-retrieve-changed-rows"></a>若要擷取變更的資料列  
- 資料表中的每個資料列具有<xref:System.Data.DataRow.RowState%2A>屬性會追蹤該資料列的目前狀態的使用中的值，<xref:System.Data.DataRowState>列舉型別。 您可以從資料集或資料的資料表傳回變更的資料列，藉由呼叫`GetChanges`方法<xref:System.Data.DataSet>或<xref:System.Data.DataTable>。 您可以在呼叫之前有變更來確認`GetChanges`藉由呼叫<xref:System.Data.DataSet.HasChanges%2A>資料集的方法。 如需 <xref:System.Data.DataSet.HasChanges%2A> 的詳細資訊，請參閱[如何：檢查是否有變更的資料列](http://msdn.microsoft.com/library/af160d20-472b-4c13-8f15-75480c39a653)。  
+ 資料表中的每個資料列具有<xref:System.Data.DataRow.RowState%2A>屬性會追蹤該資料列的目前狀態的使用中的值，<xref:System.Data.DataRowState>列舉型別。 您可以從資料集或資料的資料表傳回變更的資料列，藉由呼叫`GetChanges`方法<xref:System.Data.DataSet>或<xref:System.Data.DataTable>。 您可以在呼叫之前有變更來確認`GetChanges`藉由呼叫<xref:System.Data.DataSet.HasChanges%2A>資料集的方法。 如需 <xref:System.Data.DataSet.HasChanges%2A> 的詳細資訊，請參閱[如何：檢查是否有變更的資料列](https://msdn.microsoft.com/library/af160d20-472b-4c13-8f15-75480c39a653)。  
   
 > [!NOTE]
 > 您將變更認可到資料集或資料的資料表之後 (藉由呼叫<xref:System.Data.DataSet.AcceptChanges%2A>方法)，則`GetChanges`方法會傳回任何資料。 如果您的應用程式需要處理變更的資料列，您必須處理的變更，然後再呼叫`AcceptChanges`方法。  
@@ -215,5 +215,5 @@ ms.locfileid: "63424808"
   
 ## <a name="see-also"></a>另請參閱
 
-- [如何：驗證 Windows Form DataGridView 控制項中的資料](http://msdn.microsoft.com/library/d10aef35-701e-4a3c-a684-2a2ed1aeaca6)   
-- [如何：表單驗證，使用 Windows Forms ErrorProvider 元件顯示錯誤圖示](http://msdn.microsoft.com/library/3b681a32-9db4-497b-a34b-34980eabee46)
+- [如何：驗證 Windows Form DataGridView 控制項中的資料](https://msdn.microsoft.com/library/d10aef35-701e-4a3c-a684-2a2ed1aeaca6)   
+- [如何：表單驗證，使用 Windows Forms ErrorProvider 元件顯示錯誤圖示](https://msdn.microsoft.com/library/3b681a32-9db4-497b-a34b-34980eabee46)

@@ -16,17 +16,17 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 4f4de01af6535a33607e5263966492210f8ce4a5
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 452c3b408ab6471963124e61bc803e99eb6be80d
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59647949"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65686912"
 ---
 # <a name="msbuild-tasks-specific-to-visual-c"></a>Visual C++ 特有的 MSBuild 工作
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-提供在建置流程期間執行之程式碼的工作。 安裝 Visual C++ 之後，除了已隨 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 安裝的工作之外，還會有下列工作可供使用。 如需詳細資訊，請參閱 [MSBuild (Visual C++) 概觀](http://msdn.microsoft.com/library/dd258f6f-ab51-48d9-b274-f7ba911d05ca)。  
+提供在建置流程期間執行之程式碼的工作。 安裝 Visual C++ 之後，除了已隨 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 安裝的工作之外，還會有下列工作可供使用。 如需詳細資訊，請參閱 [MSBuild (Visual C++) 概觀](https://msdn.microsoft.com/library/dd258f6f-ab51-48d9-b274-f7ba911d05ca)。  
   
  除了適用於每個工作的參數之外，每個工作也會有下列參數。  
   

@@ -16,21 +16,21 @@ caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a2c8d54b1625a4097d6b5a0acf6555d74fe83001
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 0e2ad3b2d89db83d3b9fa38438abdbde61e72bfe
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60116598"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65681379"
 ---
 # <a name="encapsulate-field-refactoring-c"></a>封裝欄位重構 (C#)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 **封裝欄位**重構作業可讓您快速建立屬性，從現有的欄位，然後順暢地以參考新的屬性更新您的程式碼。  
   
- 當[欄位](http://msdn.microsoft.com/library/3cbb2f61-75f8-4cce-b4ef-f5d1b3de0db7)是[公用](http://msdn.microsoft.com/library/0ae45d16-a551-4b74-9845-57208de1328e)，其他物件至該欄位的直接存取，並可以修改它，未偵測到由擁有該欄位的物件。 藉由使用[屬性](http://msdn.microsoft.com/library/e295a8a2-b357-4ee7-a12e-385a44146fa8)來封裝該欄位，您可以禁止直接存取的欄位。  
+ 當[欄位](https://msdn.microsoft.com/library/3cbb2f61-75f8-4cce-b4ef-f5d1b3de0db7)是[公用](https://msdn.microsoft.com/library/0ae45d16-a551-4b74-9845-57208de1328e)，其他物件至該欄位的直接存取，並可以修改它，未偵測到由擁有該欄位的物件。 藉由使用[屬性](https://msdn.microsoft.com/library/e295a8a2-b357-4ee7-a12e-385a44146fa8)來封裝該欄位，您可以禁止直接存取的欄位。  
   
- 若要建立新的屬性，**封裝欄位**作業會變更您想要封裝為欄位的存取修飾詞[私人](http://msdn.microsoft.com/library/654c0bb8-e6ac-4086-bf96-7474fa6aa1c8)，然後產生[取得](http://msdn.microsoft.com/library/a52de048-fbe0-41b0-82ec-8e4ac04d3a71)並[設定](http://msdn.microsoft.com/library/30d7e4e5-cc2e-4635-a597-14a724879619)該欄位的存取子。 在某些情況下，例如當欄位宣告為唯讀時，只會產生 `get` 存取子。  
+ 若要建立新的屬性，**封裝欄位**作業會變更您想要封裝為欄位的存取修飾詞[私人](https://msdn.microsoft.com/library/654c0bb8-e6ac-4086-bf96-7474fa6aa1c8)，然後產生[取得](https://msdn.microsoft.com/library/a52de048-fbe0-41b0-82ec-8e4ac04d3a71)並[設定](https://msdn.microsoft.com/library/30d7e4e5-cc2e-4635-a597-14a724879619)該欄位的存取子。 在某些情況下，例如當欄位宣告為唯讀時，只會產生 `get` 存取子。  
   
  重構引擎更新您的程式碼中指定的區域中新的屬性參考**更新參考**一節**封裝欄位** 對話方塊。  
   

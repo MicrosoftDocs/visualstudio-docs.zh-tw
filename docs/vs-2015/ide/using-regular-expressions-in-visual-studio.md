@@ -19,16 +19,16 @@ caps.latest.revision: 56
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 6906a351a9d93e566c1a184ed237beb15cbd7b89
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 1e57b3f8db5330f7d0778ee53e552c38e8295c62
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59669337"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65696414"
 ---
 # <a name="use-regular-expressions-in-visual-studio"></a>在 Visual Studio 中使用規則運算式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-Visual Studio 使用 .NET Framework 規則運算式來尋找和取代文字。 如需 .NET 規則運算式的詳細資訊，請參閱 [.NET Framework 規則運算式](http://msdn.microsoft.com/library/521b3f6d-f869-42e1-93e5-158c54a6895d)。
+Visual Studio 使用 .NET Framework 規則運算式來尋找和取代文字。 如需 .NET 規則運算式的詳細資訊，請參閱 [.NET Framework 規則運算式](https://msdn.microsoft.com/library/521b3f6d-f869-42e1-93e5-158c54a6895d)。
 
 在 Visual Studio 2012 之前，Visual Studio 在 [尋找和取代] 視窗中使用自訂的規則運算式語法。 如需如何將一些常用的自訂規則運算式符號轉換成該 .NET 版本之說明，請參閱 [Visual Studio Regular Expression Conversions](https://msdn.microsoft.com/library/2k3te2cs\(v=vs.110\).aspx) (Visual Studio 規則運算式轉換)。
 
@@ -36,7 +36,7 @@ Visual Studio 使用 .NET Framework 規則運算式來尋找和取代文字。 �
 > 在 Windows 作業系統中，大部分的程式行都是以 "\r\n" 結尾 (歸位字元後面接著新行)。 這些字元並不可見，但是會顯示在編輯器中，並傳遞至 .NET 規則運算式服務。
 
 > [!TIP]
-> 如需取代模式中所用規則運算式的資訊，請參閱[替代](http://msdn.microsoft.com/library/d1f52431-1c7d-4dc6-8792-6b988256892e)。 若要使用已編號的擷取群組，指定編號的群組之語法為 `$1`，以及使用 `(x)` 指定考慮中的此群組。 例如，群組的規則運算式`(\d)([a-z])`下列字串中找到四個的相符項目：**1a 2b 3c 4d**。 取代字串 `z$1` 會將該字串轉換為 **z1 z2 z3 z4**。
+> 如需取代模式中所用規則運算式的資訊，請參閱[替代](https://msdn.microsoft.com/library/d1f52431-1c7d-4dc6-8792-6b988256892e)。 若要使用已編號的擷取群組，指定編號的群組之語法為 `$1`，以及使用 `(x)` 指定考慮中的此群組。 例如，群組的規則運算式`(\d)([a-z])`下列字串中找到四個的相符項目：**1a 2b 3c 4d**。 取代字串 `z$1` 會將該字串轉換為 **z1 z2 z3 z4**。
 
 ## <a name="regular-expression-examples"></a>規則運算式範例
 

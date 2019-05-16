@@ -8,12 +8,12 @@ ms.assetid: ff978cc2-5a25-46d6-921b-e51adaa65992
 caps.latest.revision: 16
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: d524319eb31d3c51613894ad51470c718c9008e3
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 258b9fcb8b36be1d179d9f907ef2da16ff1c3037
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59652756"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65696254"
 ---
 # <a name="application-lifecycle-management-alm-with-xamarin-apps"></a>應用程式生命週期管理 (ALM) 與 Xamarin 應用程式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ Xamarin 可讓您使用 C#、.NET 及 Visual Studio，來建置目標為 Android
  下列表格列出您可以預期哪些 Visual Studio ALM 功能可與 Xamarin 專案搭配良好，哪些功能則有限制。 請參閱連結文件以取得這項功能的詳細資訊。  
   
 ## <a name="agile-tools"></a>Agile 工具  
- 參考連結：**[工作](http://msdn.microsoft.com/library/52aa8bc9-fc7e-4fae-9946-2ab255ca7503)** （使用 Visual Studio Team Services 或 TFS，包括 Team Explorer Everywhere）  
+ 參考連結：**[工作](https://msdn.microsoft.com/library/52aa8bc9-fc7e-4fae-9946-2ab255ca7503)** （使用 Visual Studio Team Services 或 TFS，包括 Team Explorer Everywhere）  
   
  一般註解：所有的計劃和追蹤功能都與專案類型和程式碼撰寫語言無關。  
   
@@ -61,25 +61,25 @@ Xamarin 可讓您使用 C#、.NET 及 Visual Studio，來建置目標為 Android
   
 |功能|支援 Xamarin|其他註解|  
 |-------------|----------------------------|-------------------------|  
-|[使用 Team Foundation 版本控制](http://msdn.microsoft.com/library/1d629052-c65d-4c5d-81eb-eaa4413fe285)或 Visual Studio Team Services|是||  
-|[開始使用 Team Services 中的 Git (英文)](http://msdn.microsoft.com/library/32f46ecd-1b03-4ef0-a9c4-8a120da2b03f)|是||  
-|[程式碼分析/改善程式碼品質 (參考、建議的變更等)](http://msdn.microsoft.com/library/73baa961-c21f-43fe-bb92-3f59ae9b5945)|是||  
+|[使用 Team Foundation 版本控制](https://msdn.microsoft.com/library/1d629052-c65d-4c5d-81eb-eaa4413fe285)或 Visual Studio Team Services|是||  
+|[開始使用 Team Services 中的 Git (英文)](https://msdn.microsoft.com/library/32f46ecd-1b03-4ef0-a9c4-8a120da2b03f)|是||  
+|[程式碼分析/改善程式碼品質 (參考、建議的變更等)](https://msdn.microsoft.com/library/73baa961-c21f-43fe-bb92-3f59ae9b5945)|是||  
 |[尋找程式碼變更和其他記錄](../ide/find-code-changes-and-other-history-with-codelens.md)|是|除了跨越這些到執行階段仍未解析實作的平台特定界限以外。|  
 |[使用 Code Map 偵錯您的應用程式](../modeling/use-code-maps-to-debug-your-applications.md)|是||  
   
 ## <a name="build"></a>組建  
- 參考連結：**[建置](http://msdn.microsoft.com/library/a971b0f9-7c28-479d-a37b-8fd7e27ef692)**  
+ 參考連結：**[建置](https://msdn.microsoft.com/library/a971b0f9-7c28-479d-a37b-8fd7e27ef692)**  
   
 |功能|支援 Xamarin|其他註解|  
 |-------------|----------------------------|-------------------------|  
 |內部部署 TFS 伺服器|是|組建電腦必須安裝 Xamarin，而且必須可連結到 OSX 電腦，以便為 iOS 進行建置。 請參閱 [為 Xamarin 設定 TFS](http://developer.xamarin.com/guides/cross-platform/ci/configuring_tfs/) (Xamarin 網站)|  
-|連結至 Visual Studio Team Services 的內部部署組建伺服器|是|如需相關指示，請參閱[組建伺服器](http://msdn.microsoft.com/library/2d258a0a-f178-4e93-9da1-eba61151af3c)。|  
+|連結至 Visual Studio Team Services 的內部部署組建伺服器|是|如需相關指示，請參閱[組建伺服器](https://msdn.microsoft.com/library/2d258a0a-f178-4e93-9da1-eba61151af3c)。|  
 |Visual Studio Team Services 的裝載控制器服務|是|[建置您的 Xamarin 應用程式 (英文)](https://www.visualstudio.com/docs/build/apps/mobile/xamarin)。|  
 |具有預先定義和後置指令碼的組建定義|是||  
 |包括閘道簽入的連續整合|是|TFVC 的閘道簽入，只適用於 Git 在提取要求模型上運作的時候，而不是簽入運作時。|  
   
 ## <a name="testing"></a>測試  
- 參考連結：**[測試應用程式](http://msdn.microsoft.com/library/796b7d6d-ad45-4772-9719-55eaf5490dac)**  
+ 參考連結：**[測試應用程式](https://msdn.microsoft.com/library/796b7d6d-ad45-4772-9719-55eaf5490dac)**  
   
 |功能|支援 Xamarin|其他註解|  
 |-------------|----------------------------|-------------------------|  
@@ -91,12 +91,12 @@ Xamarin 可讓您使用 C#、.NET 及 Visual Studio，來建置目標為 Android
 |[使用 UI 自動化來測試您的程式碼](../test/use-ui-automation-to-test-your-code.md)|僅限 Windows|Visual Studio 的 UI 測試錄製器僅適用 Windows。 對於所有平台，請參閱 [Xamarin 測試錄製器 (英文)](https://www.xamarin.com/test-cloud/recorder)。|  
   
 ## <a name="improve-code-quality"></a>改善程式碼品質  
- 參考連結：**[改善程式碼品質](http://msdn.microsoft.com/library/73baa961-c21f-43fe-bb92-3f59ae9b5945)**  
+ 參考連結：**[改善程式碼品質](https://msdn.microsoft.com/library/73baa961-c21f-43fe-bb92-3f59ae9b5945)**  
   
 |功能|支援 Xamarin|其他註解|  
 |-------------|----------------------------|-------------------------|  
 |[分析 Managed 程式碼品質](../code-quality/analyzing-managed-code-quality-by-using-code-analysis.md)|是||  
-|[使用程式碼複製品偵測來尋找重複程式碼](http://msdn.microsoft.com/library/a97cd5a6-5ffa-4104-9627-8e59e513654d)|是||  
+|[使用程式碼複製品偵測來尋找重複程式碼](https://msdn.microsoft.com/library/a97cd5a6-5ffa-4104-9627-8e59e513654d)|是||  
 |[測量 Managed 程式碼的複雜度和維護性](../code-quality/measuring-complexity-and-maintainability-of-managed-code.md)|是||  
 |[效能總管](../profiling/performance-explorer.md)|否|請改為透過 Xamarin Studio 來使用 [Xamarin 分析工具](http://developer.xamarin.com/guides/cross-platform/deployment,_testing,_and_metrics/) 。 請注意 Xamarin 分析工具目前為預覽狀態，而且尚未適用於 Windows 目標。|  
 |[分析 .NET Framework 記憶體問題](../misc/analyze-dotnet-framework-memory-issues.md)|否|Visual Studio 工具並不會為程式碼剖析而連結 Mono 架構。|  

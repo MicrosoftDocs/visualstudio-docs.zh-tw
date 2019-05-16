@@ -9,12 +9,12 @@ caps.latest.revision: 12
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: a78025bd11e56b001514f580acca18b7d21d5424
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 1a6160fb42ab3648eae9a7ea416e244b5cfabc99
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60067049"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65700933"
 ---
 # <a name="cpu-usage"></a>CPU 使用量
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,7 +25,7 @@ ms.locfileid: "60067049"
   
  如需分析 Windows 市集應用程式效能的逐步解說，請參閱 [分析市集應用程式的 CPU 使用量](https://msdn.microsoft.com/library/windows/apps/dn641982.aspx)。  
   
- [效能及診斷] 中樞提供許多其他選項來執行和管理診斷工作階段。 例如，您可以在本機或遠端電腦上，或在模擬器 (Simulator 或 Emulator) 中執行 [CPU 使用量]  工具。 您可以分析在 Visual Studio 中開啟之專案的效能，附加至執行中的應用程式，或啟動從 Windows 市集安裝的應用程式。 如需詳細資訊，請參閱[執行但不偵錯程式碼剖析工具](http://msdn.microsoft.com/library/e97ce1a4-62d6-4b8e-a2f7-61576437ff01)  
+ [效能及診斷] 中樞提供許多其他選項來執行和管理診斷工作階段。 例如，您可以在本機或遠端電腦上，或在模擬器 (Simulator 或 Emulator) 中執行 [CPU 使用量]  工具。 您可以分析在 Visual Studio 中開啟之專案的效能，附加至執行中的應用程式，或啟動從 Windows 市集安裝的應用程式。 如需詳細資訊，請參閱[執行但不偵錯程式碼剖析工具](https://msdn.microsoft.com/library/e97ce1a4-62d6-4b8e-a2f7-61576437ff01)  
   
 ## <a name="BKMK_Collect_CPU_usage_data"></a> 收集 CPU 使用量資料  
   

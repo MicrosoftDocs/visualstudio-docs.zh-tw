@@ -12,12 +12,12 @@ ms.assetid: 75174674-0c3c-4b57-b2fd-6ea8e817b67d
 caps.latest.revision: 19
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 9e9e6ece0d683d08521a76286671c944e57206c6
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: a523190a9e5c143667355c222e0fbe9441cc231a
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58942676"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65675363"
 ---
 # <a name="promptforsaveoncreation-element-visual-studio-templates"></a>PromptForSaveOnCreation 項目 (Visual Studio 範本)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -57,7 +57,7 @@ ms.locfileid: "58942676"
 ## <a name="remarks"></a>備註  
  `PromptForSaveOnCreation` 是選擇性項目。 預設值為 `false`。  
   
- 暫存專案是您可以建立和修改，而不將該專案的內容儲存在磁碟上。 如需詳細資訊，請參閱 < [NIB 暫存專案](http://msdn.microsoft.com/9cf1944c-7045-44cc-8701-7b0eb4099f2b)。  
+ 暫存專案是您可以建立和修改，而不將該專案的內容儲存在磁碟上。 如需詳細資訊，請參閱 < [NIB 暫存專案](https://msdn.microsoft.com/9cf1944c-7045-44cc-8701-7b0eb4099f2b)。  
   
 ## <a name="example"></a>範例  
  下列範例會設定的值`PromptForSaveOnCreation`等於`false`，指定允許專案建立為暫存專案。  

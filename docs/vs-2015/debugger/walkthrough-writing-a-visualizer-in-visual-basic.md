@@ -17,12 +17,12 @@ caps.latest.revision: 25
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: eba9efa9710a3dd439b1cd47e4df777a76d781aa
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 954bd976317f5b5ad577b1236c9d7421c2d50315
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63444240"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65688212"
 ---
 # <a name="walkthrough-writing-a-visualizer-in-visual-basic"></a>逐步解說：在 Visual Basic 中撰寫視覺化檢視
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ ms.locfileid: "63444240"
 本逐步解說顯示如何使用 [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] 撰寫簡易的視覺化檢視。 您在本逐步解說中建立的視覺化檢視會使用 Windows Form 訊息方塊顯示字串的內容。 這個簡易字串視覺化檢視是一個基本範例，示範如何建立更適用專案之其他資料型別的視覺化檢視。  
   
 > [!NOTE]
-> 根據目前使用的設定與版本，您所看到的對話方塊與功能表命令可能會與 [說明] 中所描述的不同。 若要變更設定，請在 [工具] 功能表中選擇 [匯入和匯出]。 如需詳細資訊，請參閱 [在 Visual Studio 中自訂開發設定](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)  
+> 根據目前使用的設定與版本，您所看到的對話方塊與功能表命令可能會與 [說明] 中所描述的不同。 若要變更設定，請在 [工具] 功能表中選擇 [匯入和匯出]。 如需詳細資訊，請參閱 [在 Visual Studio 中自訂開發設定](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)  
   
  視覺化檢視的程式碼必須放置在偵錯工具將讀取的 DLL 中。 第一步就是為 DLL 建立類別庫專案。  
   

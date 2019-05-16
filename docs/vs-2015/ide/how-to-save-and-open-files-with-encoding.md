@@ -1,5 +1,5 @@
 ---
-title: HOW TO：儲存及開啟檔案以編碼方式 |Microsoft Docs
+title: 作法：儲存及開啟檔案以編碼方式 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -14,14 +14,14 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: bb4e07f90f3a05f61957898c579b9a70da6e5ce1
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 58c06c67daef727db91fa42c7ee8ce97ff183f38
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60039223"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65685459"
 ---
-# <a name="how-to-save-and-open-files-with-encoding"></a>HOW TO：儲存及開啟檔案以編碼方式
+# <a name="how-to-save-and-open-files-with-encoding"></a>作法：儲存及開啟檔案以編碼方式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 您可以使用特定的字元編碼來儲存檔案，以支援雙向語言。 您也可以在開啟檔案時指定編碼方式，讓 Visual Studio 正確顯示檔案。  
@@ -59,5 +59,5 @@ ms.locfileid: "60039223"
 3. 遵循上述程序步驟 2 和 3。  
   
 ## <a name="see-also"></a>另請參閱  
- [編碼方式和 Windows Forms 全球化](http://msdn.microsoft.com/library/22e8965d-a712-42b3-8167-3ee346bd70f9)   
+ [編碼方式和 Windows Forms 全球化](https://msdn.microsoft.com/library/22e8965d-a712-42b3-8167-3ee346bd70f9)   
  [全球化和當地語系化應用程式](../ide/globalizing-and-localizing-applications.md)

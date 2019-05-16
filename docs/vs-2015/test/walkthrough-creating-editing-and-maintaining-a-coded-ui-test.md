@@ -8,12 +8,12 @@ ms.assetid: f7c25ba7-5c9c-455b-9242-701cda56f90c
 caps.latest.revision: 43
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 940a7551c83ec9a195ac0d54b430115ed926abf5
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 0a14cb7a30d985042df8f46086dcb1432af5afdd
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63428224"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65695093"
 ---
 # <a name="walkthrough-creating-editing-and-maintaining-a-coded-ui-test"></a>逐步解說：建立、 編輯和維護自動程式化的 UI 測試
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -388,6 +388,6 @@ ms.locfileid: "63428224"
   
 ## <a name="see-also"></a>另請參閱  
  [使用使用者介面自動化來測試您的程式碼](../test/use-ui-automation-to-test-your-code.md)   
- [WPF 設計工具快速入門](http://msdn.microsoft.com/18e61d03-b96a-4058-a166-8ec6b3f6116b)   
+ [WPF 設計工具快速入門](https://msdn.microsoft.com/18e61d03-b96a-4058-a166-8ec6b3f6116b)   
  [自動程式化 UI 測試和動作記錄的支援組態和平台](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)   
  [使用自動程式化 UI 測試編輯器來編輯自動程式化 UI 測試](../test/editing-coded-ui-tests-using-the-coded-ui-test-editor.md)

@@ -13,12 +13,12 @@ ms.assetid: da1b7a0d-4f1d-4d50-a07e-7b3ff60053f9
 caps.latest.revision: 29
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 338a18bb48c20c20fa1f89583ed0d4af84c99d5e
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: fc27b7b0c0e277a0e39b406a07d677fe25bf8e73
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63408386"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65695070"
 ---
 # <a name="using-the-assert-classes"></a>使用 Assert 類別
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -61,4 +61,4 @@ ms.locfileid: "63408386"
   
 ## <a name="see-also"></a>另請參閱  
  <xref:Microsoft.VisualStudio.TestTools.UnitTesting>   
- [針對現有的程式碼建立和執行單元測試](http://msdn.microsoft.com/e8370b93-085b-41c9-8dec-655bd886f173)
+ [針對現有的程式碼建立和執行單元測試](https://msdn.microsoft.com/e8370b93-085b-41c9-8dec-655bd886f173)

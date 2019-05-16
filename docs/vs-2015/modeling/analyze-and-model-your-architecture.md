@@ -32,12 +32,12 @@ caps.latest.revision: 129
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: d7a36d2033fabf6562cadfde84db84b06fb63fee
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 59cb744b64137a3ccf34e87d89abcba22e2afc9b
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "59000551"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65681001"
 ---
 # <a name="analyze-and-model-your-architecture"></a>分析架構並製作架構模型
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -79,4 +79,4 @@ ms.locfileid: "59000551"
 ## <a name="see-also"></a>另請參閱  
 
 - [Visual Studio 2015 中的模型化的最新消息](../modeling/what-s-new-for-design-in-visual-studio.md)   
-- [DevOps 與應用程式生命週期管理](http://msdn.microsoft.com/library/74a1f71d-7f23-4c71-8fd7-89ede614fab6)
+- [DevOps 與應用程式生命週期管理](https://msdn.microsoft.com/library/74a1f71d-7f23-4c71-8fd7-89ede614fab6)

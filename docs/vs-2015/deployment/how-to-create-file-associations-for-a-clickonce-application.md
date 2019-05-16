@@ -1,5 +1,5 @@
 ---
-title: HOW TO：建立 ClickOnce 應用程式的檔案關聯 |Microsoft Docs
+title: 作法：建立 ClickOnce 應用程式的檔案關聯 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-deployment
@@ -16,14 +16,14 @@ caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 42c7a65625d8e21ceff1070ccbc66d5881af853d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 82ffecdc719dad2f38208de00dc95438b3ff36ef
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58944335"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65697706"
 ---
-# <a name="how-to-create-file-associations-for-a-clickonce-application"></a>HOW TO：建立 ClickOnce 應用程式的檔案關聯
+# <a name="how-to-create-file-associations-for-a-clickonce-application"></a>作法：建立 ClickOnce 應用程式的檔案關聯
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 應用程式可以與一或多個檔案名稱副檔名，相關聯，以便在使用者開啟這些類型的檔案時應用程式也會自動啟動。 新增檔案副檔名支援以[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]應用程式很簡單。  
@@ -54,9 +54,9 @@ ms.locfileid: "58944335"
   
     `mage -Sign WindowsFormsApp1.exe.manifest -CertFile mycert.pfx`  
   
-    如需詳細資訊，請參閱 [Mage.exe (資訊清單產生和編輯工具)](http://msdn.microsoft.com/library/77dfe576-2962-407e-af13-82255df725a1)  
+    如需詳細資訊，請參閱 [Mage.exe (資訊清單產生和編輯工具)](https://msdn.microsoft.com/library/77dfe576-2962-407e-af13-82255df725a1)  
   
 ## <a name="see-also"></a>另請參閱  
  [\<fileAssociation > 項目](../deployment/fileassociation-element-clickonce-application.md)   
  [ClickOnce 應用程式資訊清單](../deployment/clickonce-application-manifest.md)   
- [Mage.exe (資訊清單產生和編輯工具)](http://msdn.microsoft.com/library/77dfe576-2962-407e-af13-82255df725a1)
+ [Mage.exe (資訊清單產生和編輯工具)](https://msdn.microsoft.com/library/77dfe576-2962-407e-af13-82255df725a1)

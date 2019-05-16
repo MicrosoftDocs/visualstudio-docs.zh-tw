@@ -1,5 +1,5 @@
 ---
-title: HOW TO：建立循序工作流程程式庫 （舊版） |Microsoft Docs
+title: 作法：建立循序工作流程程式庫 （舊版） |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-workflow-designer
@@ -14,12 +14,12 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: d44d1b83776cdd69c659ebed0bc2a1caaa53e123
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 6563c209dfd86a74c2d51fc9179948c63e7cf4b2
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63433509"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65686695"
 ---
 # <a name="how-to-create-a-sequential-workflow-library-legacy"></a>HOW TO：建立循序工作流程程式庫 (舊版)
 依照下列步驟使用 [!INCLUDE[wfd1](../includes/wfd1-md.md)] 提供的舊版 [!INCLUDE[vs2010](../includes/vs2010-md.md)] 來建立循序工作流程程式庫專案。 當您需要以 [!INCLUDE[wfd2](../includes/wfd2-md.md)] 或 [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] 為目標時，請使用舊版 [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)]。  
@@ -51,4 +51,4 @@ ms.locfileid: "63433509"
   
 ## <a name="see-also"></a>另請參閱  
  [建立舊版工作流程專案](../workflow-designer/creating-legacy-workflow-projects.md)   
- [工作流程撰寫樣式](http://msdn.microsoft.com/aacf4ec6-da05-4974-958a-974769dda739)
+ [工作流程撰寫樣式](https://msdn.microsoft.com/aacf4ec6-da05-4974-958a-974769dda739)

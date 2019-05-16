@@ -18,17 +18,17 @@ caps.latest.revision: 34
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 27090998a7afa6f99da9152e1f5bb7407fed6aa0
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 17b906f721bea6e4183575eced962e9ed830cda1
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63423263"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65675448"
 ---
 # <a name="clickonce-security-and-deployment"></a>ClickOnce 安全性和部署
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 是一種部署技術，可讓您建立自行更新以 Windows 為基礎的應用程式可以安裝並執行最少使用者介入。 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 發佈及更新應用程式部署與 ClickOnce 技術，如果您在開發您的專案與 Visual Basic 和 Visual C# 提供完整支援。 如需部署視覺效果C++應用程式，請參閱[視覺效果的 ClickOnce 部署C++應用程式](http://msdn.microsoft.com/library/9988c546-0936-452c-932f-9c76daa42157)。  
+[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 是一種部署技術，可讓您建立自行更新以 Windows 為基礎的應用程式可以安裝並執行最少使用者介入。 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 發佈及更新應用程式部署與 ClickOnce 技術，如果您在開發您的專案與 Visual Basic 和 Visual C# 提供完整支援。 如需部署視覺效果C++應用程式，請參閱[視覺效果的 ClickOnce 部署C++應用程式](https://msdn.microsoft.com/library/9988c546-0936-452c-932f-9c76daa42157)。  
   
  [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 部署可克服在部署中的三個主要問題：  
   
@@ -98,8 +98,8 @@ ms.locfileid: "63423263"
 |----------|-----------------|  
 |[專案設計工具、安全性頁面](../ide/reference/security-page-project-designer.md)|簽署的應用程式和部署資訊清單。|  
 |[專案設計工具、發行頁面](../ide/reference/publish-page-project-designer.md)|產生和編輯 Visual Basic 和 Visual C# 應用程式的應用程式和部署資訊清單。|  
-|[Mage.exe (資訊清單產生和編輯工具)](http://msdn.microsoft.com/library/77dfe576-2962-407e-af13-82255df725a1)|產生 Visual basic 中，視覺效果的應用程式和部署資訊清單C#，而 VisualC++應用程式。<br /><br /> 簽署並重新簽署應用程式和部署資訊清單。<br /><br /> 可以從批次指令碼和命令提示字元中執行。|  
-|[MageUI.exe (圖形用戶端、資訊清單產生和編輯工具)](http://msdn.microsoft.com/library/f9e130a6-8117-49c4-839c-c988f641dc14)|產生和編輯應用程式和部署資訊清單。<br /><br /> 簽署並重新簽署應用程式和部署資訊清單。|  
+|[Mage.exe (資訊清單產生和編輯工具)](https://msdn.microsoft.com/library/77dfe576-2962-407e-af13-82255df725a1)|產生 Visual basic 中，視覺效果的應用程式和部署資訊清單C#，而 VisualC++應用程式。<br /><br /> 簽署並重新簽署應用程式和部署資訊清單。<br /><br /> 可以從批次指令碼和命令提示字元中執行。|  
+|[MageUI.exe (圖形用戶端、資訊清單產生和編輯工具)](https://msdn.microsoft.com/library/f9e130a6-8117-49c4-839c-c988f641dc14)|產生和編輯應用程式和部署資訊清單。<br /><br /> 簽署並重新簽署應用程式和部署資訊清單。|  
 |[GenerateApplicationManifest 工作](../msbuild/generateapplicationmanifest-task.md)|產生應用程式資訊清單。<br /><br /> 從執行 MSBuild。 如需詳細資訊，請參閱 [MSBuild 參考](../msbuild/msbuild-reference.md)。|  
 |[GenerateDeploymentManifest 工作](../msbuild/generatedeploymentmanifest-task.md)|產生部署資訊清單。<br /><br /> 從執行 MSBuild。 如需詳細資訊，請參閱 [MSBuild 參考](../msbuild/msbuild-reference.md)。|  
 |[SignFile 工作](../msbuild/signfile-task.md)|簽署的應用程式和部署資訊清單。<br /><br /> 從執行 MSBuild。 如需詳細資訊，請參閱 [MSBuild 參考](../msbuild/msbuild-reference.md)。|  

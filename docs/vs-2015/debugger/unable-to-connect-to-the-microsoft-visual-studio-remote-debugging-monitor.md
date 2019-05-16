@@ -16,12 +16,12 @@ caps.latest.revision: 17
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: db946e2dfac035a8e0ddb5581c37e36b0406fb24
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 9d604c8505612ff2c33e4b14241288358f920c2c
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63437785"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65684824"
 ---
 # <a name="unable-to-connect-to-the-microsoft-visual-studio-remote-debugging-monitor"></a>Unable to Connect to the Microsoft Visual Studio Remote Debugging Monitor
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ ms.locfileid: "63437785"
 當您在 [附加至處理序]  對話方塊中輸入無效的 Visual Studio 遠端偵錯監視名稱時，就會出現這個錯誤訊息。 遠端偵錯監視的名稱通常與您嘗試為遠端偵錯連接的電腦名稱相同。 這個訊息可能發生的原因，是因為遠端電腦不存在於網路上、遠端電腦上的遠端偵錯監視設定不正確，或是因為網路問題或防火牆的存在，而無法對遠端電腦進行存取。  
   
 > [!IMPORTANT]
-> 如果您確信收到這則訊息是因為產品錯誤，請向 Visual Studio 報告這個問題： [傳送笑臉](http://msdn.microsoft.com/library/5cc9b67a-54d0-41b0-aa8f-80dff4475a6b)。 如果您需要更多協助，請參閱 [Talk to Us](../ide/talk-to-us.md) 與 Microsoft 連絡。  
+> 如果您確信收到這則訊息是因為產品錯誤，請向 Visual Studio 報告這個問題： [傳送笑臉](https://msdn.microsoft.com/library/5cc9b67a-54d0-41b0-aa8f-80dff4475a6b)。 如果您需要更多協助，請參閱 [Talk to Us](../ide/talk-to-us.md) 與 Microsoft 連絡。  
   
 ## <a name="i-got-this-message-while-i-was-debugging-locally"></a>我在本機偵錯時收到這則訊息  
  如果您是在本機偵錯時收到這則訊息，可能要歸責於您的防毒軟體或協力廠商防火牆。 Visual Studio 是 32 位元的應用程式，所以使用 64 位元版本的遠端偵錯工具偵錯 64 位元的應用程式。 這兩種處理序使用本機電腦內的區域網路進行通訊。 雖然沒有網路流量離開電腦，但協力廠商的安全性軟體很可能會封鎖通訊。  

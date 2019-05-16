@@ -17,12 +17,12 @@ caps.latest.revision: 36
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: d8a71ea8a6e9061ecb03b30fc61b23a9f5750e41
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 190ada55d5f46d159c6765e9af83d672b654313d
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60082603"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65688160"
 ---
 # <a name="walkthrough-writing-a-visualizer-in-c"></a>逐步解說：在 C 中撰寫視覺化檢視\#
 
@@ -31,7 +31,7 @@ ms.locfileid: "60082603"
 本逐步解說顯示如何使用 C# 撰寫簡易的視覺化檢視。 您在本逐步解說中建立的視覺化檢視會使用 Windows 表單訊息方塊來顯示字串內容。 這個簡易字串視覺化檢視不是特別適用於本身，但它會顯示建立更有用的視覺化檢視，其他資料類型時，所必須遵循的基本步驟。
 
 > [!NOTE]
-> 根據目前使用的設定與版本，您所看到的對話方塊與功能表命令可能會與 [說明] 中所描述的不同。 若要變更您的設定，請前往**工具**功能表，然後選擇**匯入和匯出設定**。 如需詳細資訊，請參閱 [在 Visual Studio 中自訂開發設定](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)
+> 根據目前使用的設定與版本，您所看到的對話方塊與功能表命令可能會與 [說明] 中所描述的不同。 若要變更您的設定，請前往**工具**功能表，然後選擇**匯入和匯出設定**。 如需詳細資訊，請參閱 [在 Visual Studio 中自訂開發設定](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)
 
 視覺化檢視程式碼必須放置在 DLL 中，將讀取偵錯工具。 因此，第一個步驟是為 DLL 建立類別庫專案。
 

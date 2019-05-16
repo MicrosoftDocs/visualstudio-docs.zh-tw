@@ -15,12 +15,12 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 2f59b8f09fb8ce15af407981aa9dccdeb008b3b9
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 88d23ee703b482813ad0a5401e9dea7adf9a063c
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58944046"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65705712"
 ---
 # <a name="ca1408-do-not-use-autodual-classinterfacetype"></a>CA1408:不要使用 AutoDual ClassInterfaceType
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -58,4 +58,4 @@ ms.locfileid: "58944046"
  [CA1412:ComSource 介面標記為 IDispatch](../code-quality/ca1412-mark-comsource-interfaces-as-idispatch.md)
 
 ## <a name="see-also"></a>另請參閱
- [類別介面簡介](http://msdn.microsoft.com/733c0dd2-12e5-46e6-8de1-39d5b25df024)[限定互通的.NET 類型](http://msdn.microsoft.com/library/4b8afb52-fb8d-4e65-b47c-fd82956a3cdd)[與相互操作 Unmanaged 程式碼](http://msdn.microsoft.com/library/ccb68ce7-b0e9-4ffb-839d-03b1cd2c1258)
+ [類別介面簡介](https://msdn.microsoft.com/733c0dd2-12e5-46e6-8de1-39d5b25df024)[限定互通的.NET 類型](https://msdn.microsoft.com/library/4b8afb52-fb8d-4e65-b47c-fd82956a3cdd)[與相互操作 Unmanaged 程式碼](https://msdn.microsoft.com/library/ccb68ce7-b0e9-4ffb-839d-03b1cd2c1258)

@@ -9,12 +9,12 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 9ee1e1bc8762ae21ea69db5215d4dc472858d720
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: a5ca94c88a1f131065b7d5de57e9cdc200696d58
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63442457"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65681442"
 ---
 # <a name="modify-the-style-of-objects-in-blend"></a>在 Blend 中修改物件的樣式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -95,12 +95,12 @@ ms.locfileid: "63442457"
  **觀看短片：**![設定已安裝的功能](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [建立樣式](https://www.youtube.com/watch?v=W8YdXDPeKdc)。  
   
 ### <a name="apply-a-style-or-template-to-a-control"></a>將樣式或範本套用至控制項  
- 在[物件與時間軸](http://msdn.microsoft.com/135a5a5e-ec6d-4f38-8827-60e284cd5f57)面板中以滑鼠右鍵按一下物件，並選擇 [編輯範本]，然後選擇 [套用資源]。  
+ 在[物件與時間軸](https://msdn.microsoft.com/135a5a5e-ec6d-4f38-8827-60e284cd5f57)面板中以滑鼠右鍵按一下物件，並選擇 [編輯範本]，然後選擇 [套用資源]。  
   
  ![](../designers/media/dc12debc-7711-47d9-84ce-10322a384397.png "dc12debc-7711-47d9-84ce-10322a384397")  
   
 ### <a name="restore-the-default-style-or-template-of-a-control"></a>還原控制項的預設樣式或範本  
- 選取控制項，然後在[屬性](http://msdn.microsoft.com/135a5a5e-ec6d-4f38-8827-60e284cd5f57)面板中，找出 [樣式] 或 [範本] 屬性。 然後按一下 [進階選項] ![](../designers/media/12e06962-5d8a-480d-a837-e06b84c545bb.png "12e06962-5d8a-480d-a837-e06b84c545bb")，然後按一下捷徑功能表上的 [重設]。  
+ 選取控制項，然後在[屬性](https://msdn.microsoft.com/135a5a5e-ec6d-4f38-8827-60e284cd5f57)面板中，找出 [樣式] 或 [範本] 屬性。 然後按一下 [進階選項] ![](../designers/media/12e06962-5d8a-480d-a837-e06b84c545bb.png "12e06962-5d8a-480d-a837-e06b84c545bb")，然後按一下捷徑功能表上的 [重設]。  
   
 ## <a name="Visual"></a> 視覺狀態：依控制項的狀態變更其外觀  
  控制項可根據使用者互動有不同的視覺外觀。 例如，在使用者按一下按鈕時，您可以讓按鈕變成綠色或者執行動畫。 您可以使用轉場來縮短或加長視覺狀態間的時間。  

@@ -15,12 +15,12 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: a024f2a695729dcc5c06ff6c5d6ac9c189fee762
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 7cf2fc4e9160f44f51ac565619bd8d52bff8b22b
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58930538"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65705725"
 ---
 # <a name="ca1406-avoid-int64-arguments-for-visual-basic-6-clients"></a>CA1406:避免對 Visual Basic 6 用戶端使用 int64 引數
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -60,4 +60,4 @@ ms.locfileid: "58930538"
  [CA1017:組件必須標記 comvisibleattribute](../code-quality/ca1017-mark-assemblies-with-comvisibleattribute.md)
 
 ## <a name="see-also"></a>另請參閱
- [以相互操作 Unmanaged 程式碼](http://msdn.microsoft.com/library/ccb68ce7-b0e9-4ffb-839d-03b1cd2c1258) [Long 資料類型](http://msdn.microsoft.com/library/b4770c34-1804-4f8c-b512-c10b0893e516)
+ [以相互操作 Unmanaged 程式碼](https://msdn.microsoft.com/library/ccb68ce7-b0e9-4ffb-839d-03b1cd2c1258) [Long 資料類型](https://msdn.microsoft.com/library/b4770c34-1804-4f8c-b512-c10b0893e516)
