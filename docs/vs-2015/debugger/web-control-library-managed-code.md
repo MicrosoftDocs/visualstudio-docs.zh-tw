@@ -17,17 +17,17 @@ caps.latest.revision: 29
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 18f6e72d18154f11866671a3e448d88c91768c7f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 031f894eb2e117a213f4f9fbbf08ac57a1512d61
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60047094"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65688168"
 ---
 # <a name="web-control-library-managed-code"></a>Web 控制項程式庫 (Managed 程式碼)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Web 控制項程式庫專案範本會建立 DLL。 因為類別庫是 DLL，所以您不能直接執行。 您必須建立嵌入該控制項的 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 頁面。 如需詳細資訊，請參閱 < [Web 控制項程式庫範本](http://msdn.microsoft.com/00666b07-71d2-4ace-a13c-cc130a3ce372)。  
+Web 控制項程式庫專案範本會建立 DLL。 因為類別庫是 DLL，所以您不能直接執行。 您必須建立嵌入該控制項的 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 頁面。 如需詳細資訊，請參閱 < [Web 控制項程式庫範本](https://msdn.microsoft.com/00666b07-71d2-4ace-a13c-cc130a3ce372)。  
   
 ### <a name="to-debug-a-web-control-library-method-1"></a>若要偵錯 Web 控制項程式庫 (方法 1)  
   

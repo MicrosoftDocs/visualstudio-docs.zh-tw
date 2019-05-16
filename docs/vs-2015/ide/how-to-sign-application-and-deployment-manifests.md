@@ -18,14 +18,14 @@ caps.latest.revision: 61
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ddeb3fa5414208c610a7a21e176d55b0b0f985b5
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 6dbcc6f74d39353ae38b7298851cb1bab5fb0fe0
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63435185"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65685431"
 ---
-# <a name="how-to-sign-application-and-deployment-manifests"></a>HOW TO：簽署應用程式和部署資訊清單
+# <a name="how-to-sign-application-and-deployment-manifests"></a>作法：簽署應用程式和部署資訊清單
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 如果您想要使用 ClickOnce 部署來發行應用程式，必須搭配使用 Authenticode 技術和公開/私密金鑰組來簽署應用程式和部署資訊清單。 您可以使用 Windows 憑證存放區或金鑰檔的憑證來簽署資訊清單。  
@@ -34,7 +34,7 @@ ms.locfileid: "63435185"
   
  針對 .exe 應用程式，您可以選擇是否要簽署 ClickOnce 資訊清單。 如需詳細資訊，請參閱本文件的＜產生未簽署的資訊清單＞ 一節。  
   
- 如需建立金鑰檔的資訊，請參閱[如何：建立公開/私密金鑰組](http://msdn.microsoft.com/library/05026813-f3bd-4d7c-9e0b-fc588eb3d114)。  
+ 如需建立金鑰檔的資訊，請參閱[如何：建立公開/私密金鑰組](https://msdn.microsoft.com/library/05026813-f3bd-4d7c-9e0b-fc588eb3d114)。  
   
 > [!NOTE]
 > [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 只支援副檔名為 .pfx 的個人資訊交換 (PFX) 金鑰檔。 不過，您可以在專案屬性的 [簽署] 頁面中，按一下 [從存放區選取]，即可從目前使用者的 Windows 憑證存放區選取其他類型的憑證。  
@@ -109,7 +109,7 @@ ms.locfileid: "63435185"
 3. 發行應用程式。  
   
 ## <a name="see-also"></a>另請參閱  
- [強式名稱的組件](http://msdn.microsoft.com/library/d4a80263-f3e0-4d81-9b61-f0cbeae3797b)   
- [如何：建立公用 / 私密金鑰組](http://msdn.microsoft.com/library/05026813-f3bd-4d7c-9e0b-fc588eb3d114)   
+ [強式名稱的組件](https://msdn.microsoft.com/library/d4a80263-f3e0-4d81-9b61-f0cbeae3797b)   
+ [如何：建立公用 / 私密金鑰組](https://msdn.microsoft.com/library/05026813-f3bd-4d7c-9e0b-fc588eb3d114)   
  [專案設計工具、簽署頁](../ide/reference/signing-page-project-designer.md)   
  [ClickOnce 安全性和部署](../deployment/clickonce-security-and-deployment.md)

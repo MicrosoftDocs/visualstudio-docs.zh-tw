@@ -1,5 +1,5 @@
 ---
-title: HOW TO：不成功的專案升級疑難排解 |Microsoft Docs
+title: 作法：不成功的專案升級疑難排解 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -18,12 +18,12 @@ caps.latest.revision: 31
 author: kraigb
 ms.author: kraigb
 manager: jillfra
-ms.openlocfilehash: 194dae93e3a013da366d454582b531a2cc4ff8b6
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 1fe975fedb8237762d7dadffceff22203dcb899e
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60096331"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65696384"
 ---
 # <a name="how-to-troubleshoot-unsuccessful-visual-studio-project-upgrades"></a>HOW TO：不成功的 Visual Studio 專案升級疑難排解
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -57,4 +57,4 @@ ms.locfileid: "60096331"
    如果您要在升級中執行專案[!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]版本中，您必須更新專案的參考，以及更新任何`Imports`或`Using`呼叫參考的陳述式。 如果您的專案載入在 IDE 中，您可以使用更新的參考**方案總管**或**參考管理員** 對話方塊。
 
 ## <a name="see-also"></a>另請參閱
- [/ 升級 (devenv.exe)](../ide/reference/upgrade-devenv-exe.md) [轉換至 ASP.NET 4](http://msdn.microsoft.com/library/790147c6-36c1-41b5-a52d-30b9ccd2bd10)
+ [/ 升級 (devenv.exe)](../ide/reference/upgrade-devenv-exe.md) [轉換至 ASP.NET 4](https://msdn.microsoft.com/library/790147c6-36c1-41b5-a52d-30b9ccd2bd10)

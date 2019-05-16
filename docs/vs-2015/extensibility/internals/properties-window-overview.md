@@ -10,12 +10,12 @@ ms.assetid: 289ed4f2-02ac-4899-855e-42dfe57ee05f
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: e43893af3275258c49e3e23348afb106416636a6
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: fd4be229338d1a09c22b4d81384dc90f0544fa39
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60113842"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65700747"
 ---
 # <a name="properties-window-overview"></a>屬性視窗概觀
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -38,7 +38,7 @@ ms.locfileid: "60113842"
 |介面名稱|描述|  
 |--------------------|-----------------|  
 |<xref:Microsoft.VisualStudio.Shell.Interop.ICategorizeProperties>|提供類別，以一份**屬性**視窗，並將每一個屬性對應至分類。|  
-|[IDispatch 介面](http://msdn.microsoft.com/ebbff4bc-36b2-4861-9efa-ffa45e013eb5)|公開物件的方法與屬性，以程式設計的工具以及其他支援自動化的應用程式。|  
+|[IDispatch 介面](https://msdn.microsoft.com/ebbff4bc-36b2-4861-9efa-ffa45e013eb5)|公開物件的方法與屬性，以程式設計的工具以及其他支援自動化的應用程式。|  
 |<xref:Microsoft.VisualStudio.Shell.Interop.IProvidePropertyBuilder>|提供呼叫的省略符號 （...） 按鈕*建造商*，開啟強制回應對話方塊視窗物件本身所實作。 值，輕鬆地型別不是使用者在文字欄位中時，會使用它。 比方說，它可能會用來開啟色彩選擇器可讓您決定的 RGB 值。|  
 |<xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer>|提供用來更新中所顯示資訊的物件的存取權**屬性**視窗。 <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer> 是由 Vspackage 實作針對每個視窗，其中包含要顯示的相關屬性與可選取物件。|  
 |<xref:Microsoft.VisualStudio.OLE.Interop.ITypeInfo>|提供介面和結構的欄位類型的物件，例如方法的相關的資訊。|  

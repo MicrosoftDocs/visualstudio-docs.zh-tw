@@ -15,12 +15,12 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: d4d206785991d37147d9d55d89947776a94b2ac4
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: b53e6a5c7ce65675037aac8c6fc4812f895d3b7b
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60111294"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65703715"
 ---
 # <a name="working-with-code-metrics-data"></a>使用程式碼度量資料
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -124,7 +124,7 @@ ms.locfileid: "60111294"
 ## <a name="BKMK_Creating_a_Work_Item_Based_on_Code_Metric_Results"></a> 建立工作項目，根據程式碼度量結果  
  您可以建立[!INCLUDE[esprfound](../includes/esprfound-md.md)]為基礎的工作項目會導致**程式碼度量結果**視窗。 建立工作項目時，[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]會自動輸入其中一個職銜**Title**下的欄位和程式碼度量資料**歷程記錄** 索引標籤。  
   
- 如需如何建立工作項目相關的詳細資訊，請參閱[建立工作項目&#91;重新導向&#93;](http://msdn.microsoft.com/24b2e064-16ac-4bf0-8de4-98a1f48b8c4b)。  
+ 如需如何建立工作項目相關的詳細資訊，請參閱[建立工作項目&#91;重新導向&#93;](https://msdn.microsoft.com/24b2e064-16ac-4bf0-8de4-98a1f48b8c4b)。  
   
 #### <a name="to-create-a-work-item-based-on-a-result"></a>若要建立根據結果的工作項目  
   

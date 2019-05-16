@@ -15,12 +15,12 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 59fec1fddb16296f1238deb5c2f9bbf0c350cdd2
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: d72dd7e143720ce4ef2fce364a7e5ed3529ff9f3
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58944865"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65691998"
 ---
 # <a name="ca1412-mark-comsource-interfaces-as-idispatch"></a>CA1412:ComSource 介面必須標記為 IDispatch
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -54,4 +54,4 @@ ms.locfileid: "58944865"
  [CA1408:不要使用 AutoDual ClassInterfaceType](../code-quality/ca1408-do-not-use-autodual-classinterfacetype.md)
 
 ## <a name="see-also"></a>另請參閱
- [如何：引發由 COM 接收所處理的事件](http://msdn.microsoft.com/7c9944b2-e951-4c3e-a0a1-59b2ae37d7fd)[與相互操作 Unmanaged 程式碼](http://msdn.microsoft.com/library/ccb68ce7-b0e9-4ffb-839d-03b1cd2c1258)
+ [如何：引發由 COM 接收所處理的事件](https://msdn.microsoft.com/7c9944b2-e951-4c3e-a0a1-59b2ae37d7fd)[與相互操作 Unmanaged 程式碼](https://msdn.microsoft.com/library/ccb68ce7-b0e9-4ffb-839d-03b1cd2c1258)

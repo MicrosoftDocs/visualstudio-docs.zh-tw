@@ -10,17 +10,17 @@ ms.assetid: 97c88693-05ff-499e-8c43-352ee073dcb7
 caps.latest.revision: 40
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 4427931b079671a19e647860b263105ffdf52bd4
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: d14e60ec28fb5f8ba80f9986c4316058539b35e6
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63435533"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65695028"
 ---
 # <a name="creating-a-settings-category"></a>建立設定分類
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-在本逐步解說您可以建立 Visual Studio 設定類別目錄，並使用它來儲存值，並還原從設定檔的值。 設定類別是一組顯示為 「 自訂設定點; 」 的相關內容也就是為核取方塊**匯入和匯出設定**精靈。 (您可以上找到**工具**功能表。)設定會儲存或還原為類別，並個別設定不會顯示在精靈中。 如需詳細資訊，請參閱 [在 Visual Studio 中自訂開發設定](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)  
+在本逐步解說您可以建立 Visual Studio 設定類別目錄，並使用它來儲存值，並還原從設定檔的值。 設定類別是一組顯示為 「 自訂設定點; 」 的相關內容也就是為核取方塊**匯入和匯出設定**精靈。 (您可以上找到**工具**功能表。)設定會儲存或還原為類別，並個別設定不會顯示在精靈中。 如需詳細資訊，請參閱 [在 Visual Studio 中自訂開發設定](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)  
   
  您建立設定類別從<xref:Microsoft.VisualStudio.Shell.DialogPage>類別。  
   

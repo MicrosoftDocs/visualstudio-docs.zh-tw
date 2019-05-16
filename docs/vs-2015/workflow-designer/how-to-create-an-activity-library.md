@@ -1,5 +1,5 @@
 ---
-title: HOW TO：建立活動程式庫 |Microsoft Docs
+title: 作法：建立活動程式庫 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-workflow-designer
@@ -9,14 +9,14 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: f41b6332aab272baed17e9955687c34803003d0b
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 9463e46a7341a7da5c4aa79ae477d6aa0ff0c6cc
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63444575"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65686651"
 ---
-# <a name="how-to-create-an-activity-library"></a>HOW TO：建立活動程式庫
+# <a name="how-to-create-an-activity-library"></a>作法：建立活動程式庫
 自訂活動是用來將工作流程中特定的商務程序模型化。 [!INCLUDE[vs2010](../includes/vs2010-md.md)] 中提供了活動程式庫範本，可讓您透過 [!INCLUDE[wfd1](../includes/wfd1-md.md)] 來以視覺方式建立這類自訂活動。  
   
 ### <a name="to-create-a-workflow-activity-library"></a>若要建立工作流程活動程式庫  
@@ -48,5 +48,5 @@ ms.locfileid: "63444575"
     > 自訂活動的主體中僅可有一個子活動，但是該子活動可以是複合活動，例如 <xref:System.Activities.Statements.Sequence> 活動或 <xref:System.Activities.Statements.Flowchart> 活動。  
   
 ## <a name="see-also"></a>另請參閱  
- [如何：建立活動](http://msdn.microsoft.com/library/c09b1e99-21b5-4d96-9c04-ec31db3f4436)   
+ [如何：建立活動](https://msdn.microsoft.com/library/c09b1e99-21b5-4d96-9c04-ec31db3f4436)   
  [建立工作流程專案](../workflow-designer/creating-a-workflow-project.md)

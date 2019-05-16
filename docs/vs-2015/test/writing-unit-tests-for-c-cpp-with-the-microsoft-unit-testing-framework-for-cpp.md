@@ -8,12 +8,12 @@ ms.assetid: 4f4b5f10-7314-4725-8c6e-e72f52eff918
 caps.latest.revision: 16
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: d532234e50177222c3165638c0d77a8bd7c1b142
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: d238b5923c6f1377ec68717c8ed658bc74fe8e6a
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63437967"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65695279"
 ---
 # <a name="writing-unit-tests-for-cc-with-the-microsoft-unit-testing-framework-for-c"></a>使用適用於 C++ 的 Microsoft 單元測試架構撰寫適用於 C/C++ 的單元測試
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ ms.locfileid: "63437967"
   
     - `#include` 一個 `.h` 檔案，該檔案中包含 DLL 可外部存取函式的宣告。  
   
-         `.h` 檔案應包含標記 `_declspec(dllimport)` 的函式宣告。 或者，您可以使用 .DEF 檔案來匯出方法。 如需詳細資訊，請參閱[匯入及匯出](http://msdn.microsoft.com/library/7c44c2aa-2117-4cec-9615-a65bfd3f8f7b)。  
+         `.h` 檔案應包含標記 `_declspec(dllimport)` 的函式宣告。 或者，您可以使用 .DEF 檔案來匯出方法。 如需詳細資訊，請參閱[匯入及匯出](https://msdn.microsoft.com/library/7c44c2aa-2117-4cec-9615-a65bfd3f8f7b)。  
   
          單元測試只能存取從受測試之 DLL 匯出的函式。  
   
@@ -168,7 +168,7 @@ ms.locfileid: "63437967"
   
      ![新的 DLL 程式碼專案以及包含 API 巨集的 .h 檔案](../test/media/utecpp07.png "UteCpp07")  
   
-     宣告子 `__declspec(dllexport)` 會使類別的 public 和 protected 成員顯示在 DLL 外部。 如需詳細資訊，請參閱 [Using dllimport and dllexport in C++ Classes](http://msdn.microsoft.com/library/8d7d1303-b9e9-47ca-96cc-67bf444a08a9)。  
+     宣告子 `__declspec(dllexport)` 會使類別的 public 和 protected 成員顯示在 DLL 外部。 如需詳細資訊，請參閱 [Using dllimport and dllexport in C++ Classes](https://msdn.microsoft.com/library/8d7d1303-b9e9-47ca-96cc-67bf444a08a9)。  
   
 4. 在主體 .cpp 檔案中，加入函式的最小主體：  
   
@@ -395,7 +395,7 @@ ms.locfileid: "63437967"
 ## <a name="see-also"></a>另請參閱  
  [將單元測試加入至現有的 C++ 應用程式](../test/unit-testing-existing-cpp-applications-with-test-explorer.md)   
  [使用 Microsoft.VisualStudio.TestTools.CppUnitTestFramework](../test/using-microsoft-visualstudio-testtools-cppunittestframework.md)   
- [Managed/Unmanaged 程式碼互通性概觀](http://msdn.microsoft.com/library/ms973872.aspx)   
+ [Managed/Unmanaged 程式碼互通性概觀](https://msdn.microsoft.com/library/ms973872.aspx)   
  [偵錯機器碼](../debugger/debugging-native-code.md)   
- [逐步解說：建立和使用動態連結程式庫 (C++)](http://msdn.microsoft.com/library/3ae94848-44e7-4955-bbad-7d40f493e941)   
- [匯入和匯出](http://msdn.microsoft.com/library/7c44c2aa-2117-4cec-9615-a65bfd3f8f7b)
+ [逐步解說：建立和使用動態連結程式庫 (C++)](https://msdn.microsoft.com/library/3ae94848-44e7-4955-bbad-7d40f493e941)   
+ [匯入和匯出](https://msdn.microsoft.com/library/7c44c2aa-2117-4cec-9615-a65bfd3f8f7b)

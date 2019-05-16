@@ -23,7 +23,7 @@ ms.locfileid: "62823333"
 # <a name="disabling-the-visual-studio-debugger-for-windows-workflow-foundation-legacy"></a>停用 Visual Studio Debugger for Windows Workflow Foundation (舊版)
 本主題描述在舊版 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 中建置 [!INCLUDE[wf](../includes/wf-md.md)] 應用程式時，如何透過組態檔停用 [!INCLUDE[wfd1](../includes/wfd1-md.md)] 偵錯工具。 當您需要以 [!INCLUDE[wfd2](../includes/wfd2-md.md)] 或 [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] 為目標時，請使用舊版 [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)]。
 
- 根據預設，將會針對主機處理序啟用 [!INCLUDE[vs_current_long](../includes/vs-current-long-md.md)] Debugger for [!INCLUDE[wf](../includes/wf-md.md)]。 若要停用工作流程偵錯，您必須明確地將它關閉將"DisableWorkflowDebugging"項目新增**\<交換器 >** 中的項目 **\<system.diagnostics >** 主機組態檔區段。
+ 根據預設，將會針對主機處理序啟用 [!INCLUDE[vs_current_long](../includes/vs-current-long-md.md)] Debugger for [!INCLUDE[wf](../includes/wf-md.md)]。 若要停用工作流程偵錯，您必須明確地將它關閉將"DisableWorkflowDebugging"項目新增 **\<交換器>** 中的項目 **\<system.diagnostics>** 主機組態檔區段。
 
  下列範例顯示如何修改主機組態檔來停用工作流程偵錯。
 

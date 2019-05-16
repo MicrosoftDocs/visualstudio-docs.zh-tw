@@ -1,5 +1,5 @@
 ---
-title: HOW TO：分析網頁中的 JavaScript 程式碼 | Microsoft Docs
+title: 作法：分析網頁中的 JavaScript 程式碼 | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -13,14 +13,14 @@ caps.latest.revision: 32
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 5c3a6526732ffa398d25b0c3c5d73fed771f6958
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: aa504e961ed8e592f5e3df84ff7a688fa2398200
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63443471"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65688150"
 ---
-# <a name="how-to-profile-javascript-code-in-web-pages"></a>HOW TO：分析網頁中的 JavaScript 程式碼
+# <a name="how-to-profile-javascript-code-in-web-pages"></a>作法：分析網頁中的 JavaScript 程式碼
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 程式碼剖析工具可以使用檢測程式碼剖析方法，針對 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] Web 應用程式、任意網頁或 JavaScript 應用程式中執行的 JavaScript 程式碼來收集效能資料。  
@@ -34,8 +34,8 @@ ms.locfileid: "63443471"
 > [!WARNING]
 > 若要對 Windows 市集應用程式中的 JavaScript 進行程式碼剖析，請參閱下列其中一個主題：  
 > 
-> - [JavaScript 函式計時](http://msdn.microsoft.com/library/b2bf49fc-aea7-4d9c-8fcf-cff8b8dd0c03)[遠端裝置上的 JavaScript 函式計時](http://msdn.microsoft.com/library/d78812b6-a97e-46dc-8d99-e724d1d725d8)  
->   - [分析 JavaScript 函式計時資料](http://msdn.microsoft.com/library/b5aea8d8-36df-47ba-a7ca-95406700ca9b)  
+> - [JavaScript 函式計時](https://msdn.microsoft.com/library/b2bf49fc-aea7-4d9c-8fcf-cff8b8dd0c03)[遠端裝置上的 JavaScript 函式計時](https://msdn.microsoft.com/library/d78812b6-a97e-46dc-8d99-e724d1d725d8)  
+>   - [分析 JavaScript 函式計時資料](https://msdn.microsoft.com/library/b5aea8d8-36df-47ba-a7ca-95406700ca9b)  
 >   - 
   
  您可以使用 [程式碼剖析精靈] 建立效能工作階段。 指定檢測方法，然後在效能工作階段的 [屬性] 對話方塊中，於 [檢測] 頁面上指定 JavaScript 程式碼剖析選項。  

@@ -1,5 +1,5 @@
 ---
-title: HOW TO：使用引數設計工具 |Microsoft Docs
+title: 作法：使用引數設計工具 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-workflow-designer
@@ -12,15 +12,15 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 90e259d9d5e71ab5e6837cc4aa9cd22ebf43aaac
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: a244379bfebcf58d76ba726d4f6a84bcdfa7d1df
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63432370"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65696267"
 ---
 # <a name="how-to-use-the-argument-designer"></a>HOW TO：使用引數設計工具
-與舊版 [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] 相較，引數設計工具可讓資料更容易流入及流出活動。 按一下即可存取設計工具**引數**設計畫布左下角的按鈕。 設計工具會包含一份表格顯示，並可依每個資料行標頭中，除了引數**預設值**資料行。 每個引數都包含名稱、in/out/in-out/屬性方向、型別與預設運算式值 (如果有的話)。 名稱與預設運算式值都是可編輯的文字欄位，而型別和方向都可從下拉式清單中選取。 [!INCLUDE[crabout](../includes/crabout-md.md)] 引數，請參閱[變數和引數](http://msdn.microsoft.com/library/d03dbe34-5b2e-4f21-8b57-693ee49611b8)。  
+與舊版 [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] 相較，引數設計工具可讓資料更容易流入及流出活動。 按一下即可存取設計工具**引數**設計畫布左下角的按鈕。 設計工具會包含一份表格顯示，並可依每個資料行標頭中，除了引數**預設值**資料行。 每個引數都包含名稱、in/out/in-out/屬性方向、型別與預設運算式值 (如果有的話)。 名稱與預設運算式值都是可編輯的文字欄位，而型別和方向都可從下拉式清單中選取。 [!INCLUDE[crabout](../includes/crabout-md.md)] 引數，請參閱[變數和引數](https://msdn.microsoft.com/library/d03dbe34-5b2e-4f21-8b57-693ee49611b8)。  
   
 ### <a name="to-create-a-new-argument"></a>若要建立新引數  
   
@@ -35,4 +35,4 @@ ms.locfileid: "63432370"
   
 ## <a name="see-also"></a>另請參閱  
  [使用工作流程設計工具](../workflow-designer/using-the-workflow-designer.md)   
- [變數與引數](http://msdn.microsoft.com/library/d03dbe34-5b2e-4f21-8b57-693ee49611b8)
+ [變數與引數](https://msdn.microsoft.com/library/d03dbe34-5b2e-4f21-8b57-693ee49611b8)

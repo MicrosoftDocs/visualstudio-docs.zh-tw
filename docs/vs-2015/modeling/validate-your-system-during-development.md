@@ -11,12 +11,12 @@ caps.latest.revision: 39
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e3b7f4de72984bb5b009a890bba9678a59df6c7c
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: 4570b8ed1afdfff2efd36dbc2f80e97cfbceecac
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "59000494"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65698067"
 ---
 # <a name="validate-your-system-during-development"></a>在開發期間驗證您的系統
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,7 +44,7 @@ Visual Studio 可協助您保持軟體與使用者需求和系統架構的一致
 |**技術文件和日誌**|[MSDN 架構中心](http://go.microsoft.com/fwlink/?LinkId=201343)|  
   
 ## <a name="see-also"></a>另請參閱  
- [測試應用程式](http://msdn.microsoft.com/library/796b7d6d-ad45-4772-9719-55eaf5490dac)   
+ [測試應用程式](https://msdn.microsoft.com/library/796b7d6d-ad45-4772-9719-55eaf5490dac)   
  [擴充 UML 模型和圖表](../modeling/extend-uml-models-and-diagrams.md)   
  [模型使用者需求](../modeling/model-user-requirements.md)   
  [分析架構並製作架構模型](../modeling/analyze-and-model-your-architecture.md)

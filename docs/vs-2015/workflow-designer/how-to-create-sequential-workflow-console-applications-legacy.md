@@ -1,5 +1,5 @@
 ---
-title: HOW TO：建立循序工作流程主控台應用程式 （舊版） |Microsoft Docs
+title: 作法：建立循序工作流程主控台應用程式 （舊版） |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-workflow-designer
@@ -13,14 +13,14 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: aaa7288d46b57204a637dc81d1d8b943debd87fa
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 932b770f38f75d26028eceb6c0addc2ababeef6d
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63417460"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65696352"
 ---
-# <a name="how-to-create-sequential-workflow-console-applications-legacy"></a>HOW TO：建立循序工作流程主控台應用程式 (舊版)
+# <a name="how-to-create-sequential-workflow-console-applications-legacy"></a>作法：建立循序工作流程主控台應用程式 (舊版)
 依照下列步驟使用 [!INCLUDE[wfd1](../includes/wfd1-md.md)] 提供的舊版 [!INCLUDE[vs2010](../includes/vs2010-md.md)] 來建立循序工作流程主控台應用程式專案。 當您需要以 [!INCLUDE[wfd2](../includes/wfd2-md.md)] 或 [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] 為目標時，請使用舊版 [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)]。  
   
 ### <a name="to-create-a-sequential-workflow-console-application"></a>若要建立循序工作流程主控台應用程式  
@@ -54,4 +54,4 @@ ms.locfileid: "63417460"
   
 ## <a name="see-also"></a>另請參閱  
  [建立舊版工作流程專案](../workflow-designer/creating-legacy-workflow-projects.md)   
- [開發工作流程](http://msdn.microsoft.com/557bcb1f-a7ab-49f6-8df7-2706b7001301)
+ [開發工作流程](https://msdn.microsoft.com/557bcb1f-a7ab-49f6-8df7-2706b7001301)

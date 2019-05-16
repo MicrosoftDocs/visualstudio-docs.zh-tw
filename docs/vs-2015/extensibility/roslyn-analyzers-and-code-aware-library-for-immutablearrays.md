@@ -8,17 +8,17 @@ ms.assetid: 0b0afa22-3fca-4d59-908e-352464c1d903
 caps.latest.revision: 6
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: c15b1f335129e7c749aadefaa78ee3f9c5862baa
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: 44cb171594a6d595652b3c013505927bd82f947e
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "59000495"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65685252"
 ---
 # <a name="roslyn-analyzers-and-code-aware-library-for-immutablearrays"></a>適用於 ImmutableArray 的 Roslyn 分析器和程式碼感知程式庫
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-[.NET 編譯器平台](https://github.com/dotnet/roslyn)("Roslyn") 可協助您建置程式碼感知程式庫。 程式碼感知程式庫會提供您可以使用的功能和工具 （Roslyn 分析器），可協助您使用程式庫，以最佳方式，或避免發生錯誤。 本主題說明如何建置真實世界的 Roslyn 分析器來攔截最常見錯誤時使用[NIB:不可變集合](http://msdn.microsoft.com/library/33f4449d-7078-450a-8d60-d9229f66bbca)NuGet 套件。 此範例也會示範如何提供分析器所找到的程式碼問題的程式碼修正。 使用者會看到 Visual Studio 燈泡 UI 中的程式碼修正，並可以自動套用修正程式碼。
+[.NET 編譯器平台](https://github.com/dotnet/roslyn)("Roslyn") 可協助您建置程式碼感知程式庫。 程式碼感知程式庫會提供您可以使用的功能和工具 （Roslyn 分析器），可協助您使用程式庫，以最佳方式，或避免發生錯誤。 本主題說明如何建置真實世界的 Roslyn 分析器來攔截最常見錯誤時使用[NIB:不可變集合](https://msdn.microsoft.com/library/33f4449d-7078-450a-8d60-d9229f66bbca)NuGet 套件。 此範例也會示範如何提供分析器所找到的程式碼問題的程式碼修正。 使用者會看到 Visual Studio 燈泡 UI 中的程式碼修正，並可以自動套用修正程式碼。
 
 ## <a name="getting-started"></a>快速入門
 您需要下列項目來建置此範例中：

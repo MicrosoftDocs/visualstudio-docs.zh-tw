@@ -25,12 +25,12 @@ caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 38239bd431f3e66e1a694361f3727c843fbf29d3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 0459168da627b8e67ad669486b70eb7758118d92
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62558459"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65688197"
 ---
 # <a name="work-with-datasets-in-n-tier-applications"></a>使用多層式架構 (N-Tier) 應用程式中的資料集
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -57,7 +57,7 @@ ms.locfileid: "62558459"
  [逐步解說：建立多層式架構 (N-Tier) 資料應用程式](../data-tools/walkthrough-creating-an-n-tier-data-application.md)  
  提供用於建立具類型資料集以及將 TableAdapter 和資料集程式碼分成多個專案的逐步指示。  
   
- [逐步解說：將驗證新增至多層式架構資料應用程式](http://msdn.microsoft.com/library/b35d072c-31f0-49ba-a225-69177592c265)  
+ [逐步解說：將驗證新增至多層式架構資料應用程式](https://msdn.microsoft.com/library/b35d072c-31f0-49ba-a225-69177592c265)  
  提供將驗證加入 n-tier 資料應用程式逐步解說中所建立的應用程式的逐步指示。  
   
 ## <a name="reference"></a>參考資料  
@@ -71,4 +71,4 @@ ms.locfileid: "62558459"
 - [階層式更新](../data-tools/hierarchical-update.md)   
 - [Visual Studio 中的資料集工具](../data-tools/dataset-tools-in-visual-studio.md)   
 - [存取 Visual Studio 中的資料](../data-tools/accessing-data-in-visual-studio.md)   
-- [使用 LINQ to SQL 的多層式架構和遠端應用程式](http://msdn.microsoft.com/library/854a1cdd-53cb-45f5-83ca-63962a9b3598)
+- [使用 LINQ to SQL 的多層式架構和遠端應用程式](https://msdn.microsoft.com/library/854a1cdd-53cb-45f5-83ca-63962a9b3598)

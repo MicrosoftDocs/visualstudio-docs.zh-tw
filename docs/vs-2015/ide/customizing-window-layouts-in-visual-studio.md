@@ -24,12 +24,12 @@ caps.latest.revision: 30
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: bb97c86176dd29278f64ab467557e663ee9e6d2e
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 84967c8aeb5319d748ff42d051f0f63dad1d9b12
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63437548"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65701258"
 ---
 # <a name="customizing-window-layouts-in-visual-studio"></a>在 Visual Studio 中自訂視窗版面配置
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -77,7 +77,7 @@ ms.locfileid: "63437548"
   您可透過拖曳、使用 [視窗]  功能表上的命令，或是在要排列的視窗標題列上按一下滑鼠右鍵，來排列工具和文件視窗。
 
 > [!NOTE]
-> 在下列指示的某些 Visual Studio 使用者介面項目中，您的電腦可能會顯示不同的名稱或位置。 您所擁有的 Visual Studio 版本以及使用的設定會決定這些項目。 如需詳細資訊，請參閱 [在 Visual Studio 中自訂開發設定](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)
+> 在下列指示的某些 Visual Studio 使用者介面項目中，您的電腦可能會顯示不同的名稱或位置。 您所擁有的 Visual Studio 版本以及使用的設定會決定這些項目。 如需詳細資訊，請參閱 [在 Visual Studio 中自訂開發設定](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)
 
 ### <a name="docking-windows"></a>固定視窗
  若您按一下並拖曳工具視窗的標題列，或是文件視窗的索引標籤，則會顯示輔助方塊。 執行拖曳作業時，若將滑鼠資料指標停駐於菱形的其中一個箭號上，則會顯示陰影區域指出當您立即放開滑鼠按鈕時的視窗固定位置。
@@ -182,4 +182,4 @@ ms.locfileid: "63437548"
 |[視窗種類](../misc/kinds-of-windows.md)|討論 IDE 中工具視窗與文件視窗之間的差異。|
 |[如何：排列和固定視窗](../misc/how-to-arrange-and-dock-windows.md)|說明如何停駐、自動隱藏和並排顯示視窗，以及如何重設視窗配置。|
 |[如何：在 IDE 中四處移動](../ide/how-to-move-around-in-the-visual-studio-ide.md)|說明如何在 IDE 中循環開啟的視窗 (依照使用的順序)。 同時說明如何跳到特定的文件。|
-|[Visual Studio 中的自訂開發設定](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)|包含有關設定組合的資訊，以及這些設定如何影響視窗配置、鍵盤快速鍵和 IDE 中其他元素的資訊。|
+|[Visual Studio 中的自訂開發設定](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)|包含有關設定組合的資訊，以及這些設定如何影響視窗配置、鍵盤快速鍵和 IDE 中其他元素的資訊。|

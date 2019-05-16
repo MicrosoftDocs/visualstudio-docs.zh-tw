@@ -15,12 +15,12 @@ caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 5c342a31b305dbba487d61ea063b9c81bededea6
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 93c56c17998bbe672ed5816fc950eec5cc56b1c3
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58943238"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65705739"
 ---
 # <a name="ca1407-avoid-static-members-in-com-visible-types"></a>CA1407:避免在 COM 可見類型中使用靜態成員
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -96,4 +96,4 @@ namespace Samples
  [CA1413:避免在 COM 可見實值類型中的非公用欄位](../code-quality/ca1413-avoid-non-public-fields-in-com-visible-value-types.md)
 
 ## <a name="see-also"></a>另請參閱
- [與 Unmanaged 程式碼互通](http://msdn.microsoft.com/library/ccb68ce7-b0e9-4ffb-839d-03b1cd2c1258)
+ [與 Unmanaged 程式碼互通](https://msdn.microsoft.com/library/ccb68ce7-b0e9-4ffb-839d-03b1cd2c1258)

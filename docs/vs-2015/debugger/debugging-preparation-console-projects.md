@@ -18,17 +18,17 @@ caps.latest.revision: 29
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 438e619be3e7650961709ef8fce8d69304d5c6ac
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 5ac87f6c5ef5fcf9fc7ca5532fe7436dedb8ba97
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58944613"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65691207"
 ---
 # <a name="debugging-preparation-console-projects"></a>偵錯準備：主控台專案
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-準備偵錯主控台專案與準備偵錯 Windows 專案類似，只需進行一些額外考量。 如需詳細資訊，請參閱 < [Windows Forms 應用程式](../debugger/debugging-preparation-windows-forms-applications.md)，和[偵錯準備：Windows Forms 應用程式 (.NET)](http://msdn.microsoft.com/a8bc54de-41a3-464d-9a12-db9bdcbc1ad5)。 由於所有主控台應用程式都有相似性，這個主題的內容會涵蓋下列專案類型：  
+準備偵錯主控台專案與準備偵錯 Windows 專案類似，只需進行一些額外考量。 如需詳細資訊，請參閱 < [Windows Forms 應用程式](../debugger/debugging-preparation-windows-forms-applications.md)，和[偵錯準備：Windows Forms 應用程式 (.NET)](https://msdn.microsoft.com/a8bc54de-41a3-464d-9a12-db9bdcbc1ad5)。 由於所有主控台應用程式都有相似性，這個主題的內容會涵蓋下列專案類型：  
   
 - C# 主控台應用程式  
   
@@ -38,7 +38,7 @@ ms.locfileid: "58944613"
   
 - C++ 主控台應用程式 (Win32)  
   
-  您可能需要為您的主控台應用程式指定命令列引數。 如需詳細資訊，請參閱 < [c + + 偵錯組態的專案設定](../debugger/project-settings-for-a-cpp-debug-configuration.md)， [Visual Basic 偵錯組態的專案設定](../debugger/project-settings-for-a-visual-basic-debug-configuration.md)，或[C# 偵錯組態的專案設定](../debugger/project-settings-for-csharp-debug-configurations.md).  
+  您可能需要為您的主控台應用程式指定命令列引數。 如需詳細資訊，請參閱 <<c0> [ 的專案設定C++偵錯組態](../debugger/project-settings-for-a-cpp-debug-configuration.md)， [Visual Basic 偵錯組態的專案設定](../debugger/project-settings-for-a-visual-basic-debug-configuration.md)，或[專案設定C#偵錯設定](../debugger/project-settings-for-csharp-debug-configurations.md)。</c0>  
   
   跟所有的專案屬性一樣，這些引數會持續保留於偵錯工作階段和 Visual Studio 工作階段之間。 因此，如果某主控台應用程式是您先前已經偵錯的應用程式，請記住先前工作階段的 [\<專案> 屬性頁] 對話方塊中可能有引數。  
   

@@ -60,12 +60,12 @@ caps.latest.revision: 46
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: bba1d1b45c47a61f85bf37d4768a8f05ba0c3e87
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 23dd08e95100f186c172fff2cfa6a392bd11eee4
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63439781"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65698092"
 ---
 # <a name="writing-code-in-the-code-and-text-editor"></a>在程式碼和文字編輯器中撰寫程式碼
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -188,7 +188,7 @@ Visual Studio 的 [巡覽至] 命令會對程式碼執行焦點式搜尋，協�
 
  如需語言專屬編輯器選項的相關資訊，請參閱：  
 
-- [Visual Basic 設定](http://msdn.microsoft.com/library/2712b3b1-18f2-430c-ae91-28468bbf5f32)  
+- [Visual Basic 設定](https://msdn.microsoft.com/library/2712b3b1-18f2-430c-ae91-28468bbf5f32)  
 
 - [使用 C# 的 Visual Studio 開發環境](../csharp-ide/using-the-visual-studio-development-environment-for-csharp.md)  
 

@@ -1,5 +1,5 @@
 ---
-title: HOW TO：指定應用程式圖示 (Visual Basic 中， C#) |Microsoft Docs
+title: 作法：指定應用程式圖示 (Visual Basic 中， C#) |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -13,14 +13,14 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: eaffdfa5a5caaa9a200f14230a67cac72af96df8
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 6f4502bcc439d55e36dad43add4c5b9852be21bd
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63435192"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65685371"
 ---
-# <a name="how-to-specify-an-application-icon-visual-basic-c"></a>HOW TO：指定應用程式圖示 (Visual Basic 中， C#)
+# <a name="how-to-specify-an-application-icon-visual-basic-c"></a>作法：指定應用程式圖示 (Visual Basic 中， C#)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 專案的 `Icon` 屬性指定已編譯的應用程式將會顯示在檔案總管和 Windows 工作列的圖示檔 (.ico)。  
@@ -46,4 +46,4 @@ ms.locfileid: "63435192"
  [Application Page, Project Designer (Visual Basic)](../ide/reference/application-page-project-designer-visual-basic.md)   
  [專案設計工具，應用程式頁面 (C#)](../ide/reference/application-page-project-designer-csharp.md)   
  [管理應用程式屬性](../ide/application-properties.md)  
- [如何：新增或移除資源](http://msdn.microsoft.com/7b77bc06-3952-4799-b029-def3f8f7f88d)
+ [如何：新增或移除資源](https://msdn.microsoft.com/7b77bc06-3952-4799-b029-def3f8f7f88d)

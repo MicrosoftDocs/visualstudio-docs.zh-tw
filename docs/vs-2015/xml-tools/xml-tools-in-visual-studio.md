@@ -33,12 +33,12 @@ caps.latest.revision: 29
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 07cb1a790640d01448b6331986519bf1bef619e9
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 906f08c0020eb288c1bcd318327be18dc8d08ca5
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59651717"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65695323"
 ---
 # <a name="xml-tools-in-visual-studio"></a>Visual Studio 中的 XML 工具
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -59,21 +59,21 @@ ms.locfileid: "59651717"
 ## <a name="reference"></a>參考資料
  [Microsoft.VisualStudio.XmlEditor](http://go.microsoft.com/fwlink/?LinkID=165699)公開[XML 編輯器](http://go.microsoft.com/fwlink/?LinkId=228249)剖析樹狀結構，透過[System.Xml.Linq](http://go.microsoft.com/fwlink/?LinkId=228250)任何 XML 文件。
 
- [XML 標準參考](http://msdn.microsoft.com/79c78508-c9d0-423a-a00f-672e855de401)提供 XML 技術，包括 XML、 文件類型定義 (DTD)、 XML 結構描述定義語言 (XSD) 和 XSLT 的相關資訊。
+ [XML 標準參考](https://msdn.microsoft.com/79c78508-c9d0-423a-a00f-672e855de401)提供 XML 技術，包括 XML、 文件類型定義 (DTD)、 XML 結構描述定義語言 (XSD) 和 XSLT 的相關資訊。
 
  <xref:System.Xml?displayProperty=fullName> 描述類別和其他項目構成<xref:System.Xml>命名空間，並提供更多詳細資訊的連結，每個項目。
 
  <xref:System.Xml.Serialization?displayProperty=fullName> 描述類別和其他項目構成<xref:System.Xml.Serialization>命名空間，並提供每個項目相關的更多詳細資訊的連結。
 
 ## <a name="related-sections"></a>相關章節
- [XML 文件物件模型 (DOM)](http://msdn.microsoft.com/library/b5e52844-4820-47c0-a61d-de2da33e9f54)描述如何<xref:System.Xml.XmlDocument>和其相關聯的類別符合 W3C 文件物件模型 （核心） 層級 1 和層級 2 命名空間支援規格。
+ [XML 文件物件模型 (DOM)](https://msdn.microsoft.com/library/b5e52844-4820-47c0-a61d-de2da33e9f54)描述如何<xref:System.Xml.XmlDocument>和其相關聯的類別符合 W3C 文件物件模型 （核心） 層級 1 和層級 2 命名空間支援規格。
 
- [使用 XmlReader 讀取 XML](http://msdn.microsoft.com/3029834c-a27e-4331-b7aa-711924062182)描述如何<xref:System.Xml.XmlReader>提供非快取、 順向、 唯讀存取 XML 資料的 XML 資料流。
+ [使用 XmlReader 讀取 XML](https://msdn.microsoft.com/3029834c-a27e-4331-b7aa-711924062182)描述如何<xref:System.Xml.XmlReader>提供非快取、 順向、 唯讀存取 XML 資料的 XML 資料流。
 
- [撰寫 XML 使用 XmlWriter](http://msdn.microsoft.com/ea41f72c-e1d3-4e0a-ab0f-f0eb1c27ab86)描述如何<xref:System.Xml.XmlWriter>非快取、 順向的方式產生 XML 資料流，並協助您建置符合 W3C 標準的 XML 文件。
+ [撰寫 XML 使用 XmlWriter](https://msdn.microsoft.com/ea41f72c-e1d3-4e0a-ab0f-f0eb1c27ab86)描述如何<xref:System.Xml.XmlWriter>非快取、 順向的方式產生 XML 資料流，並協助您建置符合 W3C 標準的 XML 文件。
 
- [XSLT 轉換](http://msdn.microsoft.com/library/202f8820-224c-494f-b61e-cd127eac6e03)描述如何<xref:System.Xml.Xsl.XslCompiledTransform>類別實作 XSLT 1.0 建議事項。
+ [XSLT 轉換](https://msdn.microsoft.com/library/202f8820-224c-494f-b61e-cd127eac6e03)描述如何<xref:System.Xml.Xsl.XslCompiledTransform>類別實作 XSLT 1.0 建議事項。
 
- [處理 XML 資料使用 XPath 資料模型](http://msdn.microsoft.com/library/536c6fce-1453-4654-9c72-bca54d47e081)描述如何<xref:System.Xml.XPath.XPathNavigator>類別可以處理 XML 資料儲存在<xref:System.Xml.XPath.XPathDocument>或<xref:System.Xml.XmlDocument>物件。 <xref:System.Xml.XPath.XPathNavigator> 類別以 XQuery 1.0 和 XPath 2.0 資料模型為基礎，可用以巡覽和編輯 XML 資料。
+ [處理 XML 資料使用 XPath 資料模型](https://msdn.microsoft.com/library/536c6fce-1453-4654-9c72-bca54d47e081)描述如何<xref:System.Xml.XPath.XPathNavigator>類別可以處理 XML 資料儲存在<xref:System.Xml.XPath.XPathDocument>或<xref:System.Xml.XmlDocument>物件。 <xref:System.Xml.XPath.XPathNavigator> 類別以 XQuery 1.0 和 XPath 2.0 資料模型為基礎，可用以巡覽和編輯 XML 資料。
 
- [XML 結構描述物件模型 (SOM)](http://msdn.microsoft.com/library/a897a599-ffd1-43f9-8807-e58c8a7194cd)描述用來建立及操作 XML 結構描述，藉由提供的類別<xref:System.Xml.Schema.XmlSchema>類別來載入及編輯結構描述。
+ [XML 結構描述物件模型 (SOM)](https://msdn.microsoft.com/library/a897a599-ffd1-43f9-8807-e58c8a7194cd)描述用來建立及操作 XML 結構描述，藉由提供的類別<xref:System.Xml.Schema.XmlSchema>類別來載入及編輯結構描述。

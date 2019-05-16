@@ -15,12 +15,12 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 30fa3449acc209fdc89c0be8e85f82fa3795a365
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 9e8deec8687e3ddb2b3d961aa9fc1e97a45c961d
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58942240"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65685124"
 ---
 # <a name="ca2221-finalizers-should-be-protected"></a>CA2221:Finalizer 方法應該為 protected
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,7 +36,7 @@ ms.locfileid: "58942240"
  公用類型會實作完成項，不會指定系列 （受保護） 的存取。
 
 ## <a name="rule-description"></a>規則描述
- 完成項必須使用系列存取修飾詞 (Modifier)。 此規則會強制執行 C#、 Visual Basic 和 Visual c + + 編譯器。
+ 完成項必須使用系列存取修飾詞 (Modifier)。 此規則會強制執行C#，Visual Basic 和 VisualC++編譯器。
 
 ## <a name="how-to-fix-violations"></a>如何修正違規
  若要修正此規則的違規情形，變更系列存取完成項。
@@ -81,4 +81,4 @@ ms.locfileid: "58942240"
 ```
 
 ## <a name="see-also"></a>另請參閱
- [Dispose 模式](http://msdn.microsoft.com/library/31a6c13b-d6a2-492b-9a9f-e5238c983bcb)
+ [Dispose 模式](https://msdn.microsoft.com/library/31a6c13b-d6a2-492b-9a9f-e5238c983bcb)

@@ -25,12 +25,12 @@ caps.latest.revision: 22
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 71d57d31575f0d8ac1296f4d5617a39fe6c98a7b
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 9c8e9f36e7118b1681701f6c8ac60a5bc851308f
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63435725"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65691350"
 ---
 # <a name="debugging-mixed-mode-applications"></a>偵錯混合模式應用程式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,10 +42,10 @@ ms.locfileid: "63435725"
 - 若要在 Visual Studio 2013 中使用 C++ 的「編輯後繼續」，您必須還原成舊版偵錯引擎。 請參閱 Microsoft 應用程式生命週期管理部落格上的 [Switching to Managed Compatibility Mode in Visual Studio 2013](http://blogs.msdn.com/b/visualstudioalm/archive/2013/10/16/switching-to-managed-compatibility-mode-in-visual-studio-2013.aspx) (在 Visual Studio 2013 中切換成受控相容性模式)。  
   
 ## <a name="property-evaluation-in-mixed-mode-applications"></a>混合模式應用程式的屬性評估  
- 在混合模式應用程式中，偵錯工具所進行的屬性評估是一種極耗資源的作業。 如此一來，像逐步執行之類的偵錯作業就會顯得相當慢。 如需詳細資訊，請參閱[逐步執行](http://msdn.microsoft.com/8791dac9-64d1-4bb9-b59e-8d59af1833f9)。 如果您在混合模式偵錯的效能非常低，可以考慮關閉偵錯視窗的屬性評估。  
+ 在混合模式應用程式中，偵錯工具所進行的屬性評估是一種極耗資源的作業。 如此一來，像逐步執行之類的偵錯作業就會顯得相當慢。 如需詳細資訊，請參閱[逐步執行](https://msdn.microsoft.com/8791dac9-64d1-4bb9-b59e-8d59af1833f9)。 如果您在混合模式偵錯的效能非常低，可以考慮關閉偵錯視窗的屬性評估。  
   
 > [!NOTE]
-> 根據您目前使用的設定或版本，您所看到的對話方塊與功能表命令可能會與 [說明] 中描述的不同。 若要變更設定，請從 [ **工具** ] 功能表中選取 [ **匯入和匯出設定** ]。 如需詳細資訊，請參閱 [在 Visual Studio 中自訂開發設定](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)  
+> 根據您目前使用的設定或版本，您所看到的對話方塊與功能表命令可能會與 [說明] 中描述的不同。 若要變更設定，請從 [ **工具** ] 功能表中選取 [ **匯入和匯出設定** ]。 如需詳細資訊，請參閱 [在 Visual Studio 中自訂開發設定](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)  
   
 #### <a name="to-turn-off-property-evaluation"></a>若要關閉屬性評估  
   

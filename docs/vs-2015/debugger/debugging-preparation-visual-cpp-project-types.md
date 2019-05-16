@@ -20,12 +20,12 @@ caps.latest.revision: 27
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 4752f9b04723934c0fe9a2cf8a74d4d07e474477
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 4f92b96d99889c88236df34b3f60c7fd71d5032d
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60116195"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65691349"
 ---
 # <a name="debugging-preparation-visual-c-project-types"></a>偵錯準備：Visual C++ 專案類型
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -100,7 +100,7 @@ ms.locfileid: "60116195"
    [本主題內容](../debugger/debugging-preparation-visual-cpp-project-types.md#BKMK_In_this_topic)  
   
 ## <a name="BKMK_Windows_Forms_Applications___NET_"></a> Windows Forms 應用程式 (.NET)  
- [Windows Forms 應用程式 (.NET)] 範本可以建立 [!INCLUDE[vcprvc](../includes/vcprvc-md.md)] Windows Forms 應用程式。 如需詳細資訊，請參閱[如何：建立 Windows 應用程式專案](http://msdn.microsoft.com/b2f93fed-c635-4705-8d0e-cf079a264efa)。  
+ [Windows Forms 應用程式 (.NET)] 範本可以建立 [!INCLUDE[vcprvc](../includes/vcprvc-md.md)] Windows Forms 應用程式。 如需詳細資訊，請參閱[如何：建立 Windows 應用程式專案](https://msdn.microsoft.com/b2f93fed-c635-4705-8d0e-cf079a264efa)。  
   
  在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 中偵錯這種類型的應用程式，與偵錯 Managed Windows Forms 應用程式類似。  
   
@@ -117,4 +117,4 @@ ms.locfileid: "60116195"
  [C++ 偵錯組態的專案設定](../debugger/project-settings-for-a-cpp-debug-configuration.md)   
  [附加至正在執行的程式或多個程式](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)   
  [偵錯和發行組態](../debugger/how-to-set-debug-and-release-configurations.md)   
- [如何：建立 Windows 應用程式專案](http://msdn.microsoft.com/b2f93fed-c635-4705-8d0e-cf079a264efa)
+ [如何：建立 Windows 應用程式專案](https://msdn.microsoft.com/b2f93fed-c635-4705-8d0e-cf079a264efa)

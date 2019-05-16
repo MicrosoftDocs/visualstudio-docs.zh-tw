@@ -13,12 +13,12 @@ ms.assetid: ba237712-f8c4-4d13-854b-ab4a16afa309
 caps.latest.revision: 128
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a2418df5a831416d74328e4ca926cdf8c3a721e2
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 229ce6d15d8f411a81c684d20945f4dcc9fb8957
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63383436"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65695029"
 ---
 # <a name="welcome-to-visual-studio-2015"></a>歡迎使用 Visual Studio 2015
 [!INCLUDE[vs2017banner](includes/vs2017banner.md)]
@@ -56,7 +56,7 @@ ms.locfileid: "63383436"
 
 1. [Xamarin for Visual Studio](./cross-platform/build-apps-with-native-ui-using-xamarin-in-visual-studio.md):常見的程式碼中的基底C#適用於所有裝置
 
-2. [使用 Visual Studio Apache Cordova](http://msdn.microsoft.com/library/db446f2c-6ba4-4c76-aac5-4c66f43b8c42):常見的程式碼基底 HTML、 CSS 和 JavaScript 或 Typescript
+2. [使用 Visual Studio Apache Cordova](https://msdn.microsoft.com/library/db446f2c-6ba4-4c76-aac5-4c66f43b8c42):常見的程式碼基底 HTML、 CSS 和 JavaScript 或 Typescript
 
 3. [Visual Studio Tools for Unity](./cross-platform/visual-studio-tools-for-unity.md):以 2D/3D 遊戲開發C#
 
@@ -67,9 +67,9 @@ ms.locfileid: "63383436"
 ## <a name="connect-your-apps-to-services"></a>將您的應用程式連接到服務
  您可以連接到下列現成服務 (假設每項服務各有一個帳戶)：
 
-- [Azure 行動服務](http://azure.microsoft.com/documentation/services/mobile-services/)
+- [Azure 行動服務](https://azure.microsoft.com/documentation/services/mobile-services/)
 
-- [Azure 儲存體](http://azure.microsoft.com/documentation/services/storage/)
+- [Azure 儲存體](https://azure.microsoft.com/documentation/services/storage/)
 
 - 將 Office 365 REST API 與您自己的應用程式進行整合，以連接雲端儲存的資料。 如需詳細資訊，請參閱 [下列範例](https://github.com/OfficeDev/?utf8=%E2%9C%93&query=o365)。
 
@@ -79,7 +79,7 @@ ms.locfileid: "63383436"
 ## <a name="build-test-and-manage-your-code"></a>建置、測試及管理您的程式碼
 
 ### <a name="check-in-your-code"></a>簽入您的程式碼
- 如果您在小組中工作，也需要共用最新版的程式碼，小組中的所有成員才能使用相同的程式碼基底。 Visual Studio 與 Visual Studio Team Services 或 Team Foundation Server 緊密整合，提供 Git 或 TFVC (Team Foundation Version Control) 版本控制。 使用 Visual Studio Team Services 可將程式碼儲存在雲端，而不需要維護本機伺服器。 如果您想要有內部部署伺服器，請使用 Team Foundation Server。 每次建立程式碼專案時，都可以選擇將專案加入版本控制。 了解哪一個版本控制系統最適合您的需求：[使用版本控制](http://msdn.microsoft.com/library/33267cee-fe5f-4aa3-b2cd-6d22ceace314)。
+ 如果您在小組中工作，也需要共用最新版的程式碼，小組中的所有成員才能使用相同的程式碼基底。 Visual Studio 與 Visual Studio Team Services 或 Team Foundation Server 緊密整合，提供 Git 或 TFVC (Team Foundation Version Control) 版本控制。 使用 Visual Studio Team Services 可將程式碼儲存在雲端，而不需要維護本機伺服器。 如果您想要有內部部署伺服器，請使用 Team Foundation Server。 每次建立程式碼專案時，都可以選擇將專案加入版本控制。 了解哪一個版本控制系統最適合您的需求：[使用版本控制](https://msdn.microsoft.com/library/33267cee-fe5f-4aa3-b2cd-6d22ceace314)。
 
 ### <a name="build-your-app"></a>建置您的應用程式
  您可以 [在本機建置應用程式](./ide/compiling-and-building-in-visual-studio.md) ，並確定它是否運作正常。 然後使用 [偵錯工具](./debugger/debugging-in-visual-studio.md) 來修正與您的應用程式相關的任何問題。 您也可以在共用組建伺服器或雲端中建置專案。 自動化建置流程，來建置您的小組開發人員已簽入版本控制的程式碼。 例如，您可以每晚或在每次簽入程式碼時建置一或多個專案。
@@ -87,17 +87,17 @@ ms.locfileid: "63383436"
 ### <a name="test-your-app"></a>測試您的應用程式
  [建立單元測試](./test/unit-test-your-code.md) 以改進您應用程式的品質。 這些測試可以在您每次簽入時執行，以及當做建置的一部分來執行。
 
- 規劃、建立及執行您應用程式的手動和自動化測試。 使用 Visual Studio Team Services 時，測試計畫、套件、測試案例和您的測試結果會儲存在雲端，使用 Team Foundation Server 時，則會儲存在內部部署。 進一步了解 [測試應用程式](http://msdn.microsoft.com/library/73baa961-c21f-43fe-bb92-3f59ae9b5945)。
+ 規劃、建立及執行您應用程式的手動和自動化測試。 使用 Visual Studio Team Services 時，測試計畫、套件、測試案例和您的測試結果會儲存在雲端，使用 Team Foundation Server 時，則會儲存在內部部署。 進一步了解 [測試應用程式](https://msdn.microsoft.com/library/73baa961-c21f-43fe-bb92-3f59ae9b5945)。
 
 ### <a name="deliver-your-teams-code-faster"></a>更快交付小組的程式碼
- 移除小組成員之間的障礙，並改進共同作業。 進一步自動化應用程式的發行，將應用程式發行至開發的每個階段，再一直發行至生產環境。 即時監視您的應用程式效能和可用性。 收集有關客戶實際上如何使用您的應用程式的即時使用狀況資料。 如需詳細資訊，請參閱 [DevOps 與應用程式生命週期管理](http://msdn.microsoft.com/library/74a1f71d-7f23-4c71-8fd7-89ede614fab6)。
+ 移除小組成員之間的障礙，並改進共同作業。 進一步自動化應用程式的發行，將應用程式發行至開發的每個階段，再一直發行至生產環境。 即時監視您的應用程式效能和可用性。 收集有關客戶實際上如何使用您的應用程式的即時使用狀況資料。 如需詳細資訊，請參閱 [DevOps 與應用程式生命週期管理](https://msdn.microsoft.com/library/74a1f71d-7f23-4c71-8fd7-89ede614fab6)。
 
 ## <a name="whats-new"></a>新功能
 
 |||||
 |-|-|-|-|
-|[Visual Studio 2015 中的新功能](./what-s-new-in-visual-studio-2015.md)|[Visual C# 的新功能](http://msdn.microsoft.com/library/9f18dc26-27fa-4603-a639-b573f07a117b)|[.NET Framework 4.6 的新功能](http://msdn.microsoft.com/library/1d971dd7-10fc-4692-8dac-30ca308fc0fa)|[ALM 的新功能](http://msdn.microsoft.com/54b98a53-6083-4303-869a-8063d8fae938)|
-|[C++ 的新功能](http://msdn.microsoft.com/library/1cc09fad-85a2-43c2-b022-bb99f5fe0ad7)|[Visual Basic 的新功能](http://msdn.microsoft.com/library/d7e97396-7f42-4873-a81c-4ebcc4b6ca02)|[JavaScript 的新功能](javascript/javascript-in-visual-studio.md#whats-new-in-javascript)||
+|[Visual Studio 2015 中的新功能](./what-s-new-in-visual-studio-2015.md)|[Visual C# 的新功能](https://msdn.microsoft.com/library/9f18dc26-27fa-4603-a639-b573f07a117b)|[.NET Framework 4.6 的新功能](https://msdn.microsoft.com/library/1d971dd7-10fc-4692-8dac-30ca308fc0fa)|[ALM 的新功能](https://msdn.microsoft.com/54b98a53-6083-4303-869a-8063d8fae938)|
+|[C++ 的新功能](https://msdn.microsoft.com/library/1cc09fad-85a2-43c2-b022-bb99f5fe0ad7)|[Visual Basic 的新功能](https://msdn.microsoft.com/library/d7e97396-7f42-4873-a81c-4ebcc4b6ca02)|[JavaScript 的新功能](javascript/javascript-in-visual-studio.md#whats-new-in-javascript)||
 |[Python](./python/getting-started-with-python.md)||||
 
 ## <a name="in-this-section"></a>本節內容
@@ -116,18 +116,18 @@ ms.locfileid: "63383436"
 
 - [跨平台行動裝置程式開發](./cross-platform/cross-platform-mobile-development-in-visual-studio.md)
 
-- [C# 和 Visual Basic 共用程式設計概念](http://msdn.microsoft.com/library/fa9bf5e6-07c8-4b5b-b1ae-8a22816a63c6)
+- [C# 和 Visual Basic 共用程式設計概念](https://msdn.microsoft.com/library/fa9bf5e6-07c8-4b5b-b1ae-8a22816a63c6)
 
-- [Visual C++](http://msdn.microsoft.com/library/e8dcc44c-a3e2-4ffe-887c-fd15b18dc458)
+- [Visual C++](https://msdn.microsoft.com/library/e8dcc44c-a3e2-4ffe-887c-fd15b18dc458)
 
 - [JavaScript](./javascript/javascript-in-visual-studio.md)
 
 - [Python](./python/getting-started-with-python.md)
 
-- [Visual F#](http://msdn.microsoft.com/library/66f52f8a-a034-4c32-bb83-fa5b030faa4d)
+- [Visual F#](https://msdn.microsoft.com/library/66f52f8a-a034-4c32-bb83-fa5b030faa4d)
 
-- [Visual Studio LightSwitch](http://msdn.microsoft.com/library/2021a2cf-f684-493f-8d1b-4cdf39bc6eb3)
+- [Visual Studio LightSwitch](https://msdn.microsoft.com/library/2021a2cf-f684-493f-8d1b-4cdf39bc6eb3)
 
-- [DevOps 與應用程式生命週期管理](http://msdn.microsoft.com/library/74a1f71d-7f23-4c71-8fd7-89ede614fab6)
+- [DevOps 與應用程式生命週期管理](https://msdn.microsoft.com/library/74a1f71d-7f23-4c71-8fd7-89ede614fab6)
 
 - [告訴我們](./ide/talk-to-us.md)

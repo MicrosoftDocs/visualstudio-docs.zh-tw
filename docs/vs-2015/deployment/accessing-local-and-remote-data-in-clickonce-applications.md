@@ -16,12 +16,12 @@ caps.latest.revision: 23
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 95f863a8b33f6cbff7e592b0a7a45e664494d826
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 1ce6b6ee633e926709b0c15c2234077055600a07
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63427240"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65688121"
 ---
 # <a name="accessing-local-and-remote-data-in-clickonce-applications"></a>在 ClickOnce 應用程式中存取本機和遠端資料
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -77,7 +77,7 @@ ms.locfileid: "63427240"
   
  隔離儲存區適用於 [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]的所有版本。 此外，隔離儲存區也適用於部分信任的應用程式，而不需要授與額外的權限。 如果應用程式必須以部分信任執行，並且必須維護應用程式特定資料，您就應該使用隔離儲存。  
   
- 如需詳細資訊，請參閱 [隔離儲存區](http://msdn.microsoft.com/library/aff939d7-9e49-46f2-a8cd-938d3020e94e)。  
+ 如需詳細資訊，請參閱 [隔離儲存區](https://msdn.microsoft.com/library/aff939d7-9e49-46f2-a8cd-938d3020e94e)。  
   
 ### <a name="other-local-files"></a>其他本機檔案  
  如果應用程式必須處理或儲存使用者資料 (例如報表、影像、音樂等等)，應用程式就需要 <xref:System.Security.Permissions.FileIOPermission> ，才能對本機檔案系統讀取和寫入資料。  
@@ -86,7 +86,7 @@ ms.locfileid: "63427240"
  有些時候，應用程式很可能必須從遠端網站擷取資訊，像是客戶資料或市場資訊。 本節會討論擷取遠端資料最常見的技巧。  
   
 ### <a name="accessing-files-by-using-http"></a>使用 HTTP 存取檔案  
- 您可以使用 <xref:System.Net.WebClient> 命名空間中的 <xref:System.Net.HttpWebRequest> 或 <xref:System.Net> 類別，從 Web 伺服器存取資料。 資料可以是靜態檔案，或是傳回未經處理文字或 XML 資料的 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 應用程式。 如果您的資料是 XML 格式，擷取資料的最快方法，就是使用 <xref:System.Xml.XmlDocument> 類別，此類別的 <xref:System.Xml.XmlDocument.Load%2A> 方法採用 URL 做為引數。 如需範例，請參閱 [Reading an XML Document into the DOM](http://msdn.microsoft.com/library/a4fb291f-5630-49ba-a49a-5b66c3b71e49)。  
+ 您可以使用 <xref:System.Net.WebClient> 命名空間中的 <xref:System.Net.HttpWebRequest> 或 <xref:System.Net> 類別，從 Web 伺服器存取資料。 資料可以是靜態檔案，或是傳回未經處理文字或 XML 資料的 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 應用程式。 如果您的資料是 XML 格式，擷取資料的最快方法，就是使用 <xref:System.Xml.XmlDocument> 類別，此類別的 <xref:System.Xml.XmlDocument.Load%2A> 方法採用 URL 做為引數。 如需範例，請參閱 [Reading an XML Document into the DOM](https://msdn.microsoft.com/library/a4fb291f-5630-49ba-a49a-5b66c3b71e49)。  
   
  如果應用程式會透過 HTTP 存取遠端資料，您就必須考慮安全性的問題。 根據預設，您當初部署應用程式的方式，可能會限制 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 應用程式對網路資源的存取。 套用這些限制主要是為了防止惡意程式存取有權限的遠端資料，或是利用使用者的電腦來攻擊網路上的其他電腦。  
   

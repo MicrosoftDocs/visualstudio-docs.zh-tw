@@ -19,12 +19,12 @@ caps.latest.revision: 42
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 1d0e34075fbadcc998dba09d1b7c13a5ffacc606
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 61693f30044a8ac5888bebb519dd156ab1e9510b
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62556868"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65705578"
 ---
 # <a name="bind-controls-to-data-in-visual-studio"></a>將控制項繫結至 Visual Studio 中的資料
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,7 +47,7 @@ ms.locfileid: "62556868"
 
  1. 產生模型使用**Entity Data Model**精靈，然後將這些物件拖曳至設計工具。
 
- 2. LINQ to SQL 類別不會出現在 [資料來源] 視窗中。 不過，您可以根據 LINQ to SQL 類別加入新的物件資料來源，然後將這些物件拖曳至設計工具，來建立資料繫結控制項。 如需詳細資訊，請參閱[逐步解說：建立 LINQ to SQL 類別 （O-R 設計工具）](http://msdn.microsoft.com/library/35aad4a4-2e8a-46e2-ae09-5fbfd333c233)。
+ 2. LINQ to SQL 類別不會出現在 [資料來源] 視窗中。 不過，您可以根據 LINQ to SQL 類別加入新的物件資料來源，然後將這些物件拖曳至設計工具，來建立資料繫結控制項。 如需詳細資訊，請參閱[逐步解說：建立 LINQ to SQL 類別 （O-R 設計工具）](https://msdn.microsoft.com/library/35aad4a4-2e8a-46e2-ae09-5fbfd333c233)。
 
 ## <a name="data-sources-window"></a>資料來源視窗
  資料來源可在 [資料來源] 視窗中以項目形式用於專案。 此視窗是可見的或可從**檢視**功能表上，當表單的設計介面是在您的專案使用中視窗。 您可以從建立控制項繫結至基礎資料，這個視窗拖曳項目，您也可以設定資料來源，以滑鼠右鍵按一下。
@@ -71,4 +71,4 @@ ms.locfileid: "62556868"
 |自訂控制項的標題。|[自訂 Visual Studio 為資料繫結的控制項建立標題的方式](../data-tools/customize-how-visual-studio-creates-captions-for-data-bound-controls.md)|
 
 ## <a name="see-also"></a>另請參閱
- [適用於.NET 的 visual Studio 資料工具](../data-tools/visual-studio-data-tools-for-dotnet.md) [Windows Form 資料繫結](http://msdn.microsoft.com/library/c3826d8e-ea25-4ad4-a669-45bfb19192aa)
+ [適用於.NET 的 visual Studio 資料工具](../data-tools/visual-studio-data-tools-for-dotnet.md) [Windows Form 資料繫結](https://msdn.microsoft.com/library/c3826d8e-ea25-4ad4-a669-45bfb19192aa)

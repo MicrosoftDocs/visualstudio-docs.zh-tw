@@ -1,5 +1,5 @@
 ---
-title: HOW TO：啟用 ASP.NET 應用程式的偵錯 |Microsoft Docs
+title: 作法：啟用 ASP.NET 應用程式的偵錯 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -18,20 +18,20 @@ caps.latest.revision: 40
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 3a229111a2aa4dd633d0728d3a1156c6a8048094
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 07036fd7c1db7dc8b56502ab9c914f1ba808e876
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60059951"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65703668"
 ---
-# <a name="how-to-enable-debugging-for-aspnet-applications"></a>HOW TO：啟用 ASP.NET 應用程式的偵錯
+# <a name="how-to-enable-debugging-for-aspnet-applications"></a>作法：啟用 ASP.NET 應用程式的偵錯
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 若要啟用偵錯，您必須先在 **專案屬性** 頁面以及應用程式的 web.config 檔案中啟用它。  
   
 > [!NOTE]  
-> 根據您目前使用的設定或版本，您所看到的對話方塊與功能表命令可能會與 [說明] 中描述的不同。 若要變更設定，請從 [ **工具** ] 功能表中選取 [ **匯入和匯出設定** ]。 如需詳細資訊，請參閱 [在 Visual Studio 中自訂開發設定](http://msdn.microsoft.com/library/22c4debb-4e31-47a8-8f19-16f328d7dcd3)  
+> 根據您目前使用的設定或版本，您所看到的對話方塊與功能表命令可能會與 [說明] 中描述的不同。 若要變更設定，請從 [ **工具** ] 功能表中選取 [ **匯入和匯出設定** ]。 如需詳細資訊，請參閱 [在 Visual Studio 中自訂開發設定](https://msdn.microsoft.com/library/22c4debb-4e31-47a8-8f19-16f328d7dcd3)  
   
 ### <a name="to-enable-aspnet-debugging-in-the-project-properties-visual-basicc"></a>在專案屬性中啟用 ASP.NET 偵錯 (Visual Basic/C#)  
   

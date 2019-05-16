@@ -14,12 +14,12 @@ ms.assetid: 2b018b18-b412-4e0e-b0ee-b580a2f3ba9c
 caps.latest.revision: 85
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 7fcea011f78688630a94cff64f9d2a627acea88c
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 2e120499893a5b2a85d9a40a57e078f3d8f6586d
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63408477"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65695043"
 ---
 # <a name="walkthrough-creating-and-running-unit-tests-for-managed-code"></a>逐步解說：建立和執行 Managed 程式碼的單元測試
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -50,7 +50,7 @@ ms.locfileid: "63408477"
 > 本逐步解說會使用適用於 Managed 程式碼的 Microsoft 單元測試架構。 [測試總管] 也可以從已安裝測試總管配接器的協力廠商單元測試架構來執行測試。 如需詳細資訊，請參閱[安裝協力廠商單元測試架構](../test/install-third-party-unit-test-frameworks.md)  
   
 > [!NOTE]
-> 如需有關如何從命令列執行測試的資訊，請參閱[逐步解說：使用命令列測試公用程式](http://msdn.microsoft.com/library/52c11992-9e94-4067-a4b7-59f19d69d867)。  
+> 如需有關如何從命令列執行測試的資訊，請參閱[逐步解說：使用命令列測試公用程式](https://msdn.microsoft.com/library/52c11992-9e94-4067-a4b7-59f19d69d867)。  
   
 ## <a name="prerequisites"></a>必要條件  
   
