@@ -1,5 +1,5 @@
 ---
-title: HOW TO：管理編輯器模式 |Microsoft Docs
+title: 作法：管理編輯器模式 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -25,20 +25,20 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 7db5f2869c1118a04f1aa734e5067ece4b268833
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 71f3b5b2c910bbbd61607f9112122569e5d3562e
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63430536"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65685612"
 ---
-# <a name="how-to-manage-editor-modes"></a>HOW TO：管理編輯器模式
+# <a name="how-to-manage-editor-modes"></a>作法：管理編輯器模式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 您可以用各種不同的顯示模式顯示 Visual Studio 程式碼編輯器。  
   
 > [!NOTE]
-> 根據您目前使用的設定或版本，您所看到的對話方塊與功能表命令可能會與 [說明] 中描述的不同。 若要變更設定，請從 [ **工具** ] 功能表中選取 [ **匯入和匯出設定** ]。 如需詳細資訊，請參閱 [在 Visual Studio 中自訂開發設定](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)  
+> 根據您目前使用的設定或版本，您所看到的對話方塊與功能表命令可能會與 [說明] 中描述的不同。 若要變更設定，請從 [ **工具** ] 功能表中選取 [ **匯入和匯出設定** ]。 如需詳細資訊，請參閱 [在 Visual Studio 中自訂開發設定](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)  
   
 ## <a name="enabling-full-screen-mode"></a>啟用全螢幕模式  
  您可以選擇隱藏所有工具視窗，並且只檢視文件視窗，方法是啟用 [全螢幕] 模式。  

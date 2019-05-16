@@ -12,12 +12,12 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 418d804a8e7eda785e628c55054b6b1160a84a59
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 788d6077af99e6fe9fa99328aa9281d6327297b1
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59664543"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65697175"
 ---
 # <a name="options-page-fonts-and-colors-node-properties"></a>字型和色彩節點屬性、選項頁
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -44,7 +44,7 @@ ms.locfileid: "59664543"
 |FontSize|Get/Set (短整數)|要使用的字型大小，以點為單位。 例如 10 或 12。|  
   
 ## <a name="see-also"></a>請參閱  
- [控制選項設定](http://msdn.microsoft.com/library/a09ed242-7494-4cde-bbd1-7a8ec617965d)   
- [在選項頁中決定屬性項目的名稱](http://msdn.microsoft.com/library/d450422d-47c7-4eeb-9f9f-3286264bc5aa)   
+ [控制選項設定](https://msdn.microsoft.com/library/a09ed242-7494-4cde-bbd1-7a8ec617965d)   
+ [在選項頁中決定屬性項目的名稱](https://msdn.microsoft.com/library/d450422d-47c7-4eeb-9f9f-3286264bc5aa)   
  [環境節點屬性、選項頁](../../ide/reference/options-page-environment-node-properties.md)   
  [文字編輯器節點屬性、選項頁面](../../ide/reference/options-page-text-editor-node-properties.md)

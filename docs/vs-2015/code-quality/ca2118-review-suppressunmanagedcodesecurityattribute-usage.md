@@ -15,12 +15,12 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: eb76233e968ad8212d15fbcc815c31ffd0f1838a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 4fdbf84cc981dfe9e7cee73fba06867250d2fc33
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60059171"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65687288"
 ---
 # <a name="ca2118-review-suppressunmanagedcodesecurityattribute-usage"></a>CA2118:檢閱 SuppressUnmanagedCodeSecurityAttribute 使用方法
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,7 +36,7 @@ ms.locfileid: "60059171"
  公用或受保護的類型或成員具有<xref:System.Security.SuppressUnmanagedCodeSecurityAttribute?displayProperty=fullName>屬性。
 
 ## <a name="rule-description"></a>規則描述
- <xref:System.Security.SuppressUnmanagedCodeSecurityAttribute> 變更預設安全性系統的行為執行 unmanaged 程式碼使用 COM interop 或平台叫用的成員。 一般而言，系統會發出[資料與模型化](http://msdn.microsoft.com/library/8c37635d-e2c1-4b64-a258-61d9e87405e6)unmanaged 程式碼權限。 此需求就會發生在執行階段的成員，每個引動過程，並檢查權限的呼叫堆疊中的每個呼叫端。 屬性存在時，系統便會發出[連結要求](http://msdn.microsoft.com/library/a33fd5f9-2de9-4653-a4f0-d9df25082c4d)權限： 呼叫端是 JIT 編譯時，系統會檢查立即呼叫端的權限。
+ <xref:System.Security.SuppressUnmanagedCodeSecurityAttribute> 變更預設安全性系統的行為執行 unmanaged 程式碼使用 COM interop 或平台叫用的成員。 一般而言，系統會發出[資料與模型化](https://msdn.microsoft.com/library/8c37635d-e2c1-4b64-a258-61d9e87405e6)unmanaged 程式碼權限。 此需求就會發生在執行階段的成員，每個引動過程，並檢查權限的呼叫堆疊中的每個呼叫端。 屬性存在時，系統便會發出[連結要求](https://msdn.microsoft.com/library/a33fd5f9-2de9-4653-a4f0-d9df25082c4d)權限： 呼叫端是 JIT 編譯時，系統會檢查立即呼叫端的權限。
 
  這個屬性主要是用於增加效能，不過，效能提升會伴隨顯著的安全性風險。 如果您將屬性放在呼叫原生方法的公用成員上時，在呼叫堆疊 （非立即呼叫端） 的呼叫端不需要執行 unmanaged 程式碼的 unmanaged 程式碼權限。 根據公用成員的動作和輸入的處理，它可能會允許不受信任的呼叫端來存取一般限制為可信任的程式碼的功能。
 
@@ -72,4 +72,4 @@ ms.locfileid: "60059171"
  [!code-csharp[FxCop.Security.TypeInvokeAndSuppress#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Security.TypeInvokeAndSuppress/cs/FxCop.Security.TypeInvokeAndSuppress.cs#1)]
 
 ## <a name="see-also"></a>另請參閱
- <xref:System.Security.SuppressUnmanagedCodeSecurityAttribute?displayProperty=fullName> [安全程式碼撰寫指導方針](http://msdn.microsoft.com/library/4f882d94-262b-4494-b0a6-ba9ba1f5f177)[安全性最佳化](http://msdn.microsoft.com/cf255069-d85d-4de3-914a-e4625215a7c0)[資料與模型化](http://msdn.microsoft.com/library/8c37635d-e2c1-4b64-a258-61d9e87405e6)[連結要求](http://msdn.microsoft.com/library/a33fd5f9-2de9-4653-a4f0-d9df25082c4d)
+ <xref:System.Security.SuppressUnmanagedCodeSecurityAttribute?displayProperty=fullName> [安全程式碼撰寫指導方針](https://msdn.microsoft.com/library/4f882d94-262b-4494-b0a6-ba9ba1f5f177)[安全性最佳化](https://msdn.microsoft.com/cf255069-d85d-4de3-914a-e4625215a7c0)[資料與模型化](https://msdn.microsoft.com/library/8c37635d-e2c1-4b64-a258-61d9e87405e6)[連結要求](https://msdn.microsoft.com/library/a33fd5f9-2de9-4653-a4f0-d9df25082c4d)

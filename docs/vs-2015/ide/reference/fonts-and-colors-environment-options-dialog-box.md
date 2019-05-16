@@ -27,12 +27,12 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 1cd4b57e2dccbb26c3b6ceba1be51fa5022469cb
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 84d7ee0a3e25db7c32e0f016e92dafb539757a61
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63437159"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65688653"
 ---
 # <a name="fonts-and-colors-environment-options-dialog-box"></a>選項對話方塊、環境、字型和色彩
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -40,7 +40,7 @@ ms.locfileid: "63437159"
 [選項] 對話方塊的 [字型和色彩] 頁面可讓您為整合式開發環境 (IDE) 中的各種使用者介面項目建立自訂的字型和色彩配置。 按一下 [工具]/[選項]，然後選取 [環境]/[字型和色彩]，即可存取此對話方塊。 如果此頁面未出現在清單中，請在 [選項] 對話方塊中選取 [顯示所有設定]。  
   
 > [!NOTE]
-> 根據您目前使用的設定或版本，您所看到的對話方塊與功能表命令可能會與 [說明] 中描述的不同。 若要變更設定，請從 [ **工具** ] 功能表中選取 [ **匯入和匯出設定** ]。 如需詳細資訊，請參閱 [在 Visual Studio 中自訂開發設定](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)  
+> 根據您目前使用的設定或版本，您所看到的對話方塊與功能表命令可能會與 [說明] 中描述的不同。 若要變更設定，請從 [ **工具** ] 功能表中選取 [ **匯入和匯出設定** ]。 如需詳細資訊，請參閱 [在 Visual Studio 中自訂開發設定](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)  
   
  色彩配置變更在您進行變更的工作階段期間不會生效。 您可以開啟 Visual Studio 的另一個執行個體，並產生您希望套用變更的情況，來評估色彩變更。  
   
@@ -163,7 +163,7 @@ ms.locfileid: "63437159"
 |**SQL DML 資料標記**|適用於 Transact-SQL 編輯器。 在此編輯器中的 DML 陳述式預設會以藍色週框方塊標示。|  
 |**過時程式碼**|等待更新的被取代的程式碼。 在某些情況下，[編輯後繼續] 無法立即套用程式碼變更，但它們會在稍後繼續偵錯時套用。 如果您編輯必須呼叫目前執行的函式的函式，或將 64 位元組以上的新變數加入等候呼叫堆疊的某個函式時，就會發生這種情況。 當發生這種情況時，偵錯工具會顯示「過時程式碼警告」對話方塊，並且已被取代的程式碼會繼續執行直到有問題的函式完成，並再次呼叫。 [編輯後繼續] 會在該時間套用程式碼變更。|  
 |**String**|字串常值。|  
-|**字串 (C# @ 逐字翻譯)**|C# 中逐字解譯的字串常值。 例如：<br /><br /> @"x"|  
+|**字串 (C# @ 逐字翻譯)**|C# 中逐字解譯的字串常值。 例如: <br /><br /> @"x"|  
 |**語法錯誤**|剖析錯誤。|  
 |**工作清單捷徑**|如果已將 [工作清單] 捷徑新增至一行，並且停用指示區邊界，就會將該行反白顯示。|  
 |**追蹤點 (停用)**|未使用。|  

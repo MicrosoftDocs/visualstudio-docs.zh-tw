@@ -14,12 +14,12 @@ caps.latest.revision: 18
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 638aba87698b32b18f41f8b389485893f880743f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 8fc60ff83113193f854c3264b7384738dea64f03
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60050162"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65674455"
 ---
 # <a name="memory-usage-without-debugging"></a>記憶體使用量 (不偵錯)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ ms.locfileid: "60050162"
   
 - 比較快照，以找出記憶體問題的根本原因。  
   
-  本主題說明如何使用記憶體使用量工具，分析 Windows 通用 XAML 應用程式。 如果您想要對使用 JavaScript 和 HTML 的 Windows 通用應用程式分析記憶體使用情況，請參閱[分析記憶體使用量 (JavaScript)](http://msdn.microsoft.com/library/windows/apps/jj819176.aspx)。  
+  本主題說明如何使用記憶體使用量工具，分析 Windows 通用 XAML 應用程式。 如果您想要對使用 JavaScript 和 HTML 的 Windows 通用應用程式分析記憶體使用情況，請參閱[分析記憶體使用量 (JavaScript)](https://msdn.microsoft.com/library/windows/apps/jj819176.aspx)。  
   
 ## <a name="BKMK_Start_a_Memory_Usage_diagnostic_session"></a>啟動記憶體使用量診斷工作階段  
   
@@ -204,7 +204,7 @@ ms.locfileid: "60050162"
   
 ## <a name="see-also"></a>另請參閱  
  [JavaScript 記憶體](../profiling/javascript-memory.md)   
- [分析應用程式效能](http://msdn.microsoft.com/library/58acb30b-8428-41a6-b195-b0fdedb89575)   
- [執行效能及診斷工具](http://msdn.microsoft.com/library/788279d8-f56b-40a0-9bef-facc3dfba471)   
- [使用 C++、C# 及 Visual Basic 的 Windows 市集應用程式的效能最佳做法](http://msdn.microsoft.com/library/windows/apps/hh750313.aspx)   
+ [分析應用程式效能](https://msdn.microsoft.com/library/58acb30b-8428-41a6-b195-b0fdedb89575)   
+ [執行效能及診斷工具](https://msdn.microsoft.com/library/788279d8-f56b-40a0-9bef-facc3dfba471)   
+ [使用 C++、C# 及 Visual Basic 的 Windows 市集應用程式的效能最佳做法](https://msdn.microsoft.com/library/windows/apps/hh750313.aspx)   
  [使用 Visual Studio 中的新記憶體使用量工具來診斷記憶體問題](http://go.microsoft.com/fwlink/p/?LinkId=394706)

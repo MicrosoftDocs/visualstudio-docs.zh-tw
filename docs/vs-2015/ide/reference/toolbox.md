@@ -16,12 +16,12 @@ caps.latest.revision: 38
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 47f0567b07f12d17d721881c98c670ad74800190
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: f7477017edc3c00a155064152f1d5df77bd35e63
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63419744"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65689363"
 ---
 # <a name="toolbox"></a>工具箱
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -33,22 +33,22 @@ ms.locfileid: "63419744"
  [工具箱] 只會顯示適用於您正在使用的檔案類型的項目。 您可以在 [工具箱] 內搜尋，以進一步篩選顯示的項目。 如果您的專案需要用戶端設定檔不支援的控制項，您可以藉由編輯專案屬性來設定您的專案，以整個架構為目標。  
   
 > [!NOTE]
-> 在下列指示的某些 Visual Studio 使用者介面項目中，您的電腦可能會顯示不同的名稱或位置。 您所擁有的 Visual Studio 版本以及使用的設定會決定這些項目。 如需詳細資訊，請參閱 [在 Visual Studio 中自訂開發設定](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)  
+> 在下列指示的某些 Visual Studio 使用者介面項目中，您的電腦可能會顯示不同的名稱或位置。 您所擁有的 Visual Studio 版本以及使用的設定會決定這些項目。 如需詳細資訊，請參閱 [在 Visual Studio 中自訂開發設定](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)  
   
 ## <a name="help-on-toolbox-tabs"></a>工具箱索引標籤上的說明  
  下列文件提供特定 [工具箱] 索引標籤的詳細資訊。  
   
-- [資料索引標籤、工具箱](http://msdn.microsoft.com/library/8a41dyt7\(v=vs.110\))  
+- [資料索引標籤、工具箱](https://msdn.microsoft.com/library/8a41dyt7\(v=vs.110\))  
   
-- [元件索引標籤、工具箱](http://msdn.microsoft.com/library/kb1cz7z9\(v=vs.110\))  
+- [元件索引標籤、工具箱](https://msdn.microsoft.com/library/kb1cz7z9\(v=vs.110\))  
   
-- [HTML 索引標籤、工具箱](http://msdn.microsoft.com/library/w9ss7h1a\(v=vs.110\))  
+- [HTML 索引標籤、工具箱](https://msdn.microsoft.com/library/w9ss7h1a\(v=vs.110\))  
   
-- [資料索引標籤、工具箱](http://msdn.microsoft.com/library/8a41dyt7\(v=vs.120\))  
+- [資料索引標籤、工具箱](https://msdn.microsoft.com/library/8a41dyt7\(v=vs.120\))  
   
-- [元件索引標籤、工具箱](http://msdn.microsoft.com/library/kb1cz7z9\(v=vs.120\))  
+- [元件索引標籤、工具箱](https://msdn.microsoft.com/library/kb1cz7z9\(v=vs.120\))  
   
-- [HTML 索引標籤、工具箱](http://msdn.microsoft.com/library/w9ss7h1a\(v=vs.120\))  
+- [HTML 索引標籤、工具箱](https://msdn.microsoft.com/library/w9ss7h1a\(v=vs.120\))  
   
 ## <a name="see-also"></a>請參閱  
  [使用工具箱](../../ide/using-the-toolbox.md)

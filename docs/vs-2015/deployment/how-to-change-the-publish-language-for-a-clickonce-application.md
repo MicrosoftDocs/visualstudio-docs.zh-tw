@@ -1,5 +1,5 @@
 ---
-title: HOW TO：變更發行 ClickOnce 應用程式的語言 |Microsoft Docs
+title: 作法：變更發行 ClickOnce 應用程式的語言 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-deployment
@@ -17,14 +17,14 @@ caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 2a50beda49895396bf9fec48213836a109d8a873
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 26e4074b731dad44cd9eed40f1c1cc755d786562
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63442173"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65683802"
 ---
-# <a name="how-to-change-the-publish-language-for-a-clickonce-application"></a>HOW TO：變更 ClickOnce 應用程式的發行語言
+# <a name="how-to-change-the-publish-language-for-a-clickonce-application"></a>作法：變更 ClickOnce 應用程式的發行語言
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 發佈時[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]應用程式，在安裝語言與您的開發電腦的文化特性的預設值時顯示的使用者介面。 如果您要發行當地語系化的應用程式，您必須指定語言和文化特性，以符合當地語系化的版本。 這取決於`Publish language`專案的屬性。  
@@ -32,7 +32,7 @@ ms.locfileid: "63442173"
  `Publish language`屬性可以在中設定**發行選項**對話方塊中，從可存取**發行**頁面**專案設計工具**。  
   
 > [!NOTE]
-> 根據您目前使用的設定或版本，您所看到的對話方塊與功能表命令可能會與 [說明] 中描述的不同。 若要變更設定，請從 [ **工具** ] 功能表中選取 [ **匯入和匯出設定** ]。 如需詳細資訊，請參閱 [在 Visual Studio 中自訂開發設定](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)  
+> 根據您目前使用的設定或版本，您所看到的對話方塊與功能表命令可能會與 [說明] 中描述的不同。 若要變更設定，請從 [ **工具** ] 功能表中選取 [ **匯入和匯出設定** ]。 如需詳細資訊，請參閱 [在 Visual Studio 中自訂開發設定](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)  
   
 ### <a name="to-change-the-publish-language"></a>若要變更的發行語言  
   

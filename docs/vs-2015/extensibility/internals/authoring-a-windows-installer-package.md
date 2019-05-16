@@ -11,12 +11,12 @@ ms.assetid: 0ce7c21d-0d3f-47fe-a0bb-eed506e32609
 caps.latest.revision: 21
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 30c941fd4f3c281dfe363d284a559bafe055451c
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 5e92e965f0efe531f1618be509d0a7c9655c573d
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "59000703"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65682545"
 ---
 # <a name="authoring-a-windows-installer-package"></a>編寫 Windows Installer 套件
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -36,7 +36,7 @@ ms.locfileid: "59000703"
   
 - 整合在 VSPackage[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]藉由呼叫**devenv.exe /setup** （使用 CustomAction 資料表）。  
   
-  如需詳細資訊，請參閱 < [Windows Installer](http://msdn.microsoft.com/library/cc185688\(VS.85\).aspx)。  
+  如需詳細資訊，請參閱 < [Windows Installer](https://msdn.microsoft.com/library/cc185688\(VS.85\).aspx)。  
   
 ## <a name="setup-tools"></a>安裝程式工具  
  有各式各樣的協力廠商安裝程式工具會提供 Windows Installer 封裝的開發環境。 兩個免費的工具，如下所示：  

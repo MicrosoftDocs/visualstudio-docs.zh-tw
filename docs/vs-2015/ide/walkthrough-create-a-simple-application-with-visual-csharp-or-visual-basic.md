@@ -9,12 +9,12 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: b278e05ec19bc550d8c8c8c1258514cf63cd5f9f
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: c800ddd7221a1adfbc54198363e356eb5260c7cf
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63436817"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65674931"
 ---
 # <a name="walkthrough-create-a-simple-application-with-visual-c-or-visual-basic"></a>逐步解說：使用 Visual C# 或 Visual Basic 建立簡單的應用程式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,14 +30,14 @@ ms.locfileid: "63436817"
  [偵錯和測試應用程式](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md#BKMK_DebugTest)  
   
 > [!NOTE]
-> 這個逐步解說是以 Visual Studio Professional 為基礎，提供您在建立這個逐步解說的專案時使用的 WPF 應用程式範本。 Visual Studio Express for Windows Desktop 也有提供該範本，不過，Visual Studio Express for Windows 和 Visual Studio Express for Web 則未提供。 如需如何使用 Visual Studio Express for Windows 的入門資訊，請參閱 [Windows 市集應用程式的開發人員中心](http://msdn.microsoft.com/windows/apps/br229519)。 如需如何使用 Visual Studio Express for Web 的入門資訊，請參閱 [Get Started with ASP.NET](http://www.asp.net/get-started)(開始使用 ASP.NET)。 此外，您的 Visual Studio 版本和使用的設定會決定某些使用者介面之項目的名稱和位置。 請參閱 [Visual Studio 中的自訂開發設定](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)。  
+> 這個逐步解說是以 Visual Studio Professional 為基礎，提供您在建立這個逐步解說的專案時使用的 WPF 應用程式範本。 Visual Studio Express for Windows Desktop 也有提供該範本，不過，Visual Studio Express for Windows 和 Visual Studio Express for Web 則未提供。 如需如何使用 Visual Studio Express for Windows 的入門資訊，請參閱 [Windows 市集應用程式的開發人員中心](https://msdn.microsoft.com/windows/apps/br229519)。 如需如何使用 Visual Studio Express for Web 的入門資訊，請參閱 [Get Started with ASP.NET](http://www.asp.net/get-started)(開始使用 ASP.NET)。 此外，您的 Visual Studio 版本和使用的設定會決定某些使用者介面之項目的名稱和位置。 請參閱 [Visual Studio 中的自訂開發設定](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)。  
   
 ## <a name="BKMK_ConfigureIDE"></a> 設定 IDE  
  當您第一次啟動 Visual Studio 時，Visual Studio 會提示您使用 Microsoft 服務帳戶 (MSA) 登入，請 [登入 Visual Studio](http://blogs.msdn.com/b/visualstudio/archive/2013/06/28/welcome-sign-in-to-visual-studio.aspx)。 您不一定要登入，可以稍後再進行。  
   
  在 Visual Studio 上市之後，您接下來就必須選擇一組可將預先定義的自訂套用到 IDE 的設定組合。 每個設定組合都是為了讓您更輕鬆地開發應用程式而精心設計的。  
   
- 這個逐步解說會假設您已套用 [一般開發設定]\(它對 IDE 套用的自訂最少)。 如果您已經選擇 C# 或 Visual Basic (兩者都是很好的選擇)，則不需要變更您的設定。  如果您要變更您的設定，則可使用 [匯入和匯出設定精靈] 。 請參閱 [Visual Studio 中的自訂開發設定](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)。  
+ 這個逐步解說會假設您已套用 [一般開發設定]\(它對 IDE 套用的自訂最少)。 如果您已經選擇 C# 或 Visual Basic (兩者都是很好的選擇)，則不需要變更您的設定。  如果您要變更您的設定，則可使用 [匯入和匯出設定精靈] 。 請參閱 [Visual Studio 中的自訂開發設定](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)。  
   
  開啟 Visual Studio 之後，您可以看到工具視窗、功能表和工具列，以及主視窗空間。 工具視窗會停駐在應用程式視窗的左右端，同時 [ **快速啟動**]、功能表列和標準工具列則位於視窗的上方。 位於應用程式視窗中央的是 [ **起始頁**]。 當您載入方案或專案時，編輯器和設計工具會出現在 [起始頁]  所在的空間中。 在開發應用程式時，您大部分時間都會在此中央區域工作。  
   
@@ -67,7 +67,7 @@ ms.locfileid: "63436817"
   
    ![套用暗色調佈景主題的 IDE](../ide/media/exploreide-darkthemeide.png "ExploreIDE-DarkThemeIDE")  
   
-   這個逐步解說的其餘部分使用的圖片色彩佈景主題是淺色佈景主題。 如需自訂 IDE 的詳細資訊，請參閱[在 Visual Studio 中自訂開發設定](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)。  
+   這個逐步解說的其餘部分使用的圖片色彩佈景主題是淺色佈景主題。 如需自訂 IDE 的詳細資訊，請參閱[在 Visual Studio 中自訂開發設定](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)。  
   
 ## <a name="BKMK_CreateApp"></a> 建立簡單的應用程式  
   
@@ -92,7 +92,7 @@ ms.locfileid: "63436817"
   
     ![建立 Visual C&#35; WPF 專案 HelloWPFApp](../ide/media/exploreide-newprojectcsharp.png "ExploreIDE-NewProjectcsharp")  
   
-   Visual Studio 會建立 HelloWPFApp 專案和方案，而且 [方案總管]  會顯示各種不同檔案。 WPF 設計工具會在分割檢視中顯示 MainWindow.xaml 的設計檢視和 XAML 檢視。 您可以滑動分隔器來增加或減少顯示任一檢視。  您可以選擇只查看視覺檢視，或只查看 XAML 檢視。 (如需詳細資訊，請參閱 [適用於 Windows Form 開發人員的 WPF 設計工具](http://msdn.microsoft.com/47ad0909-e89b-4996-b4ac-874d929f94ca))。 下列項目會在 [ **方案總管**] 中出現：  
+   Visual Studio 會建立 HelloWPFApp 專案和方案，而且 [方案總管]  會顯示各種不同檔案。 WPF 設計工具會在分割檢視中顯示 MainWindow.xaml 的設計檢視和 XAML 檢視。 您可以滑動分隔器來增加或減少顯示任一檢視。  您可以選擇只查看視覺檢視，或只查看 XAML 檢視。 (如需詳細資訊，請參閱 [適用於 Windows Form 開發人員的 WPF 設計工具](https://msdn.microsoft.com/47ad0909-e89b-4996-b4ac-874d929f94ca))。 下列項目會在 [ **方案總管**] 中出現：  
   
    圖 5：專案項目  
   
@@ -150,7 +150,7 @@ ms.locfileid: "63436817"
   
 3. 按 Ctrl-s 或使用 [檔案]  功能表項目儲存您的變更。  
   
-   接下來，您會將兩個 [RadioButton](http://msdn.microsoft.com/library/6c9ba847-eab7-4bba-9c74-6b56ef72067b) 控制項新增至表單。  
+   接下來，您會將兩個 [RadioButton](https://msdn.microsoft.com/library/6c9ba847-eab7-4bba-9c74-6b56ef72067b) 控制項新增至表單。  
   
 ##### <a name="to-add-radio-buttons"></a>加入選項按鈕  
   
@@ -178,7 +178,7 @@ ms.locfileid: "63436817"
   
 2. 在選取 RadioButton2 時按滑鼠右鍵，選擇 [編輯文字] ，然後輸入 `Goodbye`，即可開啟 RadioButton2 的捷徑功能表。  
   
-   最後一個要新增的 UI 項目是 [Button](http://msdn.microsoft.com/library/a9d8f5a5-c98c-463e-808a-5a4e63173098) 控制項。  
+   最後一個要新增的 UI 項目是 [Button](https://msdn.microsoft.com/library/a9d8f5a5-c98c-463e-808a-5a4e63173098) 控制項。  
   
 ##### <a name="to-add-the-button-control"></a>加入 Button 控制項  
   
@@ -248,7 +248,7 @@ ms.locfileid: "63436817"
 3. 儲存應用程式。  
   
 ## <a name="BKMK_DebugTest"></a> 偵錯和測試應用程式  
- 接下來，您會偵錯應用程式以尋找錯誤，並測試兩個訊息方塊是否都正確出現。 下列指示會告訴您如何建置和啟動偵錯工具，不過您稍後也可閱讀[建置 WPF 應用程式 (WPF)](http://msdn.microsoft.com/library/a58696fd-bdad-4b55-9759-136dfdf8b91c) 和[偵錯 WPF](../debugger/debugging-wpf.md) 以取得詳細資訊。  
+ 接下來，您會偵錯應用程式以尋找錯誤，並測試兩個訊息方塊是否都正確出現。 下列指示會告訴您如何建置和啟動偵錯工具，不過您稍後也可閱讀[建置 WPF 應用程式 (WPF)](https://msdn.microsoft.com/library/a58696fd-bdad-4b55-9759-136dfdf8b91c) 和[偵錯 WPF](../debugger/debugging-wpf.md) 以取得詳細資訊。  
   
 ### <a name="find-and-fix-errors"></a>尋找和修正錯誤  
  在這個步驟中，您將會發現我們先前變更主視窗 XAML 檔案名稱所產生的錯誤。  

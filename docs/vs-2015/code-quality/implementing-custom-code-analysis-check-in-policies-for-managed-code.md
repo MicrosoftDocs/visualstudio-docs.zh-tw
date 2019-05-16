@@ -13,12 +13,12 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 91f81036345e647820353911356c01b7c4caff99
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: f0b22eabc4df4b6ce7e8596f0c6546cb3a4c61c8
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63426555"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65696663"
 ---
 # <a name="implementing-custom-code-analysis-check-in-policies-for-managed-code"></a>為 Managed 程式碼實作自訂程式碼分析簽入原則
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,7 +35,7 @@ ms.locfileid: "63426555"
  若要建立自訂規則集為 team 專案，您先建立簽入原則中的規則集的特殊資料夾**原始檔控制總管**。 然後您會建立規則集檔案，並將檔案加入至版本控制。 最後，您會指定設定為程式碼分析簽入原則針對 team 專案的規則。  
   
 > [!NOTE]
-> 若要建立 team 專案的資料夾，您先必須對應 team 專案的根目錄到本機電腦上的位置。 如需詳細資訊，請參閱 <<c0> [ 建立和使用工作區 （舊）](http://msdn.microsoft.com/db4d5692-179a-44fe-ad31-0c1c900c9cb2)。  
+> 若要建立 team 專案的資料夾，您先必須對應 team 專案的根目錄到本機電腦上的位置。 如需詳細資訊，請參閱 <<c0> [ 建立和使用工作區 （舊）](https://msdn.microsoft.com/db4d5692-179a-44fe-ad31-0c1c900c9cb2)。  
   
 #### <a name="to-create-the-version-control-folder-for-the-check-in-policy-rule-set"></a>若要建立簽入原則規則集的版本控制資料夾  
   
@@ -61,7 +61,7 @@ ms.locfileid: "63426555"
   
 1. 在 **原始檔控制總管**，以滑鼠右鍵按一下新的資料夾，然後按一下**新增至資料夾的項目**。  
   
-     如需詳細資訊，請參閱 <<c0> [ 使用版本控制](http://msdn.microsoft.com/library/33267cee-fe5f-4aa3-b2cd-6d22ceace314)。  
+     如需詳細資訊，請參閱 <<c0> [ 使用版本控制](https://msdn.microsoft.com/library/33267cee-fe5f-4aa3-b2cd-6d22ceace314)。  
   
 2. 按一下此規則設定您所建立的檔案，然後按一下**完成**。  
   
@@ -82,7 +82,7 @@ ms.locfileid: "63426555"
   
 3. 在 **簽入原則**清單中，按兩下**程式碼分析**，並確定**強制執行 Managed 程式碼的程式碼分析**選取核取方塊。  
   
-4. 在 **執行此規則集**清單中，按一下**\<從原始檔控制選取規則集 >**。  
+4. 在 **執行此規則集**清單中，按一下 **\<從原始檔控制選取規則集>** 。  
   
 5. 在版本控制中，輸入簽入原則的規則集檔案的路徑。  
   
@@ -116,6 +116,6 @@ ms.locfileid: "63426555"
   
 6. 若要忽略來自其他公司元件中的程式碼，請選取**隱藏所產生的程式碼的結果** 核取方塊。  
   
-7. 在 [**執行此規則集**清單中，按一下**\<瀏覽] >**。  
+7. 在 [**執行此規則集**清單中，按一下 **\<瀏覽]>** 。  
   
 8. 指定簽入原則的規則集檔案的本機版本。

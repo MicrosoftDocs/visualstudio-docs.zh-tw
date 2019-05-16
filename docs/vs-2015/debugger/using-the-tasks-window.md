@@ -18,21 +18,21 @@ caps.latest.revision: 23
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: cdf7c5fe724ff4b043ca304eee3e5e0f31b0dd85
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 267a04e0d717bde311423aae7f35fba07ca6f39b
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63437713"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65684042"
 ---
 # <a name="using-the-tasks-window"></a>使用工作視窗
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-[工作] 視窗與 [執行緒] 視窗類似，差別在於前者顯示的是 <xref:System.Threading.Tasks.Task?displayProperty=fullName>、[task_handle](http://msdn.microsoft.com/library/b4af5b28-227d-4488-8194-0a0d039173b7) 或 [WinJS.Promise](http://msdn.microsoft.com/library/windows/apps/br211867.aspx) 物件的詳細資訊，而非每個執行緒的詳細資訊。 與執行緒一樣，工作代表可以並行執行的非同步作業，但是多項工作可能會在相同執行緒上執行。 請參閱[JavaScript （Windows 市集應用程式） 中的非同步程式設計](http://msdn.microsoft.com/library/windows/apps/hh700330.aspx)如需詳細資訊。  
+[工作] 視窗與 [執行緒] 視窗類似，差別在於前者顯示的是 <xref:System.Threading.Tasks.Task?displayProperty=fullName>、[task_handle](https://msdn.microsoft.com/library/b4af5b28-227d-4488-8194-0a0d039173b7) 或 [WinJS.Promise](https://msdn.microsoft.com/library/windows/apps/br211867.aspx) 物件的詳細資訊，而非每個執行緒的詳細資訊。 與執行緒一樣，工作代表可以並行執行的非同步作業，但是多項工作可能會在相同執行緒上執行。 請參閱[JavaScript （Windows 市集應用程式） 中的非同步程式設計](https://msdn.microsoft.com/library/windows/apps/hh700330.aspx)如需詳細資訊。  
   
- 在 Managed 程式碼中，當您使用 <xref:System.Threading.Tasks.Task?displayProperty=fullName> 物件或使用 **await** 和 **async** 關鍵字 (在 Visual Basic 中為 **Await** 和 **Async**) 時，可以使用 [工作] 視窗。 如需在 managed 程式碼中的工作的詳細資訊，請參閱[平行程式設計](http://msdn.microsoft.com/library/4d83c690-ad2d-489e-a2e0-b85b898a672d)。  
+ 在 Managed 程式碼中，當您使用 <xref:System.Threading.Tasks.Task?displayProperty=fullName> 物件或使用 **await** 和 **async** 關鍵字 (在 Visual Basic 中為 **Await** 和 **Async**) 時，可以使用 [工作] 視窗。 如需在 managed 程式碼中的工作的詳細資訊，請參閱[平行程式設計](https://msdn.microsoft.com/library/4d83c690-ad2d-489e-a2e0-b85b898a672d)。  
   
- 在機器碼中，您可以在操作[工作群組](http://msdn.microsoft.com/library/42f05ac3-2098-494a-ba84-737fcdcad077)、[平行演算法](http://msdn.microsoft.com/library/045dca7b-4d73-4558-a44c-383b88a28473)、[非同步代理程式](http://msdn.microsoft.com/library/6cf6ccc6-87f1-4e14-af15-ea8ba58fef1a)及[輕量型工作](http://msdn.microsoft.com/library/9aba278c-e0c9-4ede-b7c6-fedf7a365d90)時使用 [工作] 視窗。 如需機器碼格式之工作的詳細資訊，請參閱[並行執行階段](http://msdn.microsoft.com/library/874bc58f-8dce-483e-a3a1-4dcc9e52ed2c)。  
+ 在機器碼中，您可以在操作[工作群組](https://msdn.microsoft.com/library/42f05ac3-2098-494a-ba84-737fcdcad077)、[平行演算法](https://msdn.microsoft.com/library/045dca7b-4d73-4558-a44c-383b88a28473)、[非同步代理程式](https://msdn.microsoft.com/library/6cf6ccc6-87f1-4e14-af15-ea8ba58fef1a)及[輕量型工作](https://msdn.microsoft.com/library/9aba278c-e0c9-4ede-b7c6-fedf7a365d90)時使用 [工作] 視窗。 如需機器碼格式之工作的詳細資訊，請參閱[並行執行階段](https://msdn.microsoft.com/library/874bc58f-8dce-483e-a3a1-4dcc9e52ed2c)。  
   
  在 JavaScript 中，您可以在使用 promise .then 程式碼時使用 [工作] 視窗。  
   
@@ -51,7 +51,7 @@ ms.locfileid: "63437713"
 |**旗標**|顯示已加上旗標的工作，並可讓您為工作加上或取消旗標。|  
 |**圖示**|黃色箭號表示目前工作。 目前工作是目前執行緒上的最上方工作。<br /><br /> 白色箭號表示最新的工作，即叫用偵錯工具時的最新工作。<br /><br /> 暫停圖示表示已由使用者凍結的工作。 在清單中，於工作上按一下滑鼠右鍵，就可以凍結和解除凍結工作。|  
 |**ID**|由系統提供給工作的號碼。 在機器碼中，這是工作的位址。|  
-|**Status**|工作的目前狀態 (已排程、使用中、死結、等待中或已完成)。 已排程工作是尚未執行的工作，因此，還沒有呼叫堆疊、指派的執行緒或相關資訊。<br /><br /> 使用中工作是在進入偵錯工具之前正在執行程式碼的工作。<br /><br /> 等待中工作是因等待事件發出信號、釋放鎖定或另一個工作完成而遭封鎖的工作。<br /><br /> 死結工作是其執行緒與另一個執行緒產生死結的等待中工作。<br /><br /> 將滑鼠停留**狀態**死結或等待的工作，才能查看區塊的詳細資訊的儲存格。 **警告：** 只有在遭到封鎖的工作是使用等待鏈結周遊 (WCT) 所支援的同步處理原始物件時，[工作] 視窗才會報告死結。 例如，對於死結<xref:System.Threading.Tasks.Task>物件，使用了 WCT，偵錯工具會報告**等待中-死結**。 如果發生死結的工作是由「並行執行階段」管理 (即不使用 WCT)，偵錯工具會報告 [等待中]。 如需 WCT 的詳細資訊，請參閱[等待鏈結周遊](http://msdn.microsoft.com/library/ms681622\(VS.85\).aspx)。|  
+|**Status**|工作的目前狀態 (已排程、使用中、死結、等待中或已完成)。 已排程工作是尚未執行的工作，因此，還沒有呼叫堆疊、指派的執行緒或相關資訊。<br /><br /> 使用中工作是在進入偵錯工具之前正在執行程式碼的工作。<br /><br /> 等待中工作是因等待事件發出信號、釋放鎖定或另一個工作完成而遭封鎖的工作。<br /><br /> 死結工作是其執行緒與另一個執行緒產生死結的等待中工作。<br /><br /> 將滑鼠停留**狀態**死結或等待的工作，才能查看區塊的詳細資訊的儲存格。 **警告：** 只有在遭到封鎖的工作是使用等待鏈結周遊 (WCT) 所支援的同步處理原始物件時，[工作] 視窗才會報告死結。 例如，對於死結<xref:System.Threading.Tasks.Task>物件，使用了 WCT，偵錯工具會報告**等待中-死結**。 如果發生死結的工作是由「並行執行階段」管理 (即不使用 WCT)，偵錯工具會報告 [等待中]。 如需 WCT 的詳細資訊，請參閱[等待鏈結周遊](https://msdn.microsoft.com/library/ms681622\(VS.85\).aspx)。|  
 |**開始時間**|工作變成使用中的時間。|  
 |**持續期間**|工作已處於使用中狀態的秒數。|  
 |**完成時間**|工作已完成的時間。|  
@@ -61,7 +61,7 @@ ms.locfileid: "63437713"
 |**執行緒指派**|正在執行工作之執行緒的 ID 和名稱。|  
 |**傳回狀態**|工作完成時的狀態。 所傳回的狀態值**成功**， **Cancelled**，並**錯誤**。|  
 |**AppDomain**|針對 Managed 程式碼，是正在執行工作的應用程式定義域。|  
-|**task_group**|針對機器碼，是已排程工作之 [task_group](http://msdn.microsoft.com/library/b4af5b28-227d-4488-8194-0a0d039173b7) 物件的位址。 針對非同步代理程式和輕量型工作，此欄會設為 0。|  
+|**task_group**|針對機器碼，是已排程工作之 [task_group](https://msdn.microsoft.com/library/b4af5b28-227d-4488-8194-0a0d039173b7) 物件的位址。 針對非同步代理程式和輕量型工作，此欄會設為 0。|  
 |處理序|工作執行所在的處理序 ID。|  
 |非同步狀態|對於 Managed 程式碼來說，是指工作狀態。 根據預設，這個資料行是隱藏狀態。 若要顯示這個資料行，請開啟其中一個資料行標頭的內容功能表。 選擇 [資料行]、[AsyncState]。|  
   
@@ -95,7 +95,7 @@ ms.locfileid: "63437713"
 ## <a name="see-also"></a>另請參閱  
  [偵錯工具基礎](../debugger/debugger-basics.md)   
  [偵錯 Managed 程式碼](../debugger/debugging-managed-code.md)   
- [平行程式設計](http://msdn.microsoft.com/library/4d83c690-ad2d-489e-a2e0-b85b898a672d)   
- [並行執行階段](http://msdn.microsoft.com/library/874bc58f-8dce-483e-a3a1-4dcc9e52ed2c)   
+ [平行程式設計](https://msdn.microsoft.com/library/4d83c690-ad2d-489e-a2e0-b85b898a672d)   
+ [並行執行階段](https://msdn.microsoft.com/library/874bc58f-8dce-483e-a3a1-4dcc9e52ed2c)   
  [使用平行堆疊視窗](../debugger/using-the-parallel-stacks-window.md)   
  [逐步解說：對平行處理應用程式進行偵錯](../debugger/walkthrough-debugging-a-parallel-application.md)

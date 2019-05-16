@@ -21,12 +21,12 @@ caps.latest.revision: 24
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 0ba48e28d5ace9dc1c07d7ec302d070d5d5f15e6
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
+ms.openlocfilehash: de804cb26eb9c51acc67445e1f1b1c0fdfabab91
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "58945296"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65697537"
 ---
 # <a name="publishing-clickonce-applications"></a>發行 ClickOnce 應用程式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -98,8 +98,8 @@ ms.locfileid: "58945296"
 |[逐步解說：依需求以 ClickOnce 部署 API 下載附屬組件](../deployment/walkthrough-downloading-satellite-assemblies-on-demand-with-the-clickonce-deployment-api.md)|描述如何將您的附屬組件標記為選用項目，並僅下載用戶端電腦因其目前文化特性設定而需要的組件。|  
 |[逐步解說：手動部署 ClickOnce 應用程式](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)|說明如何使用.NET Framework 公用程式，部署 ClickOnce 應用程式。|  
 |[逐步解說：手動部署不需要重新簽署而且會保留商標資訊的 ClickOnce 應用程式](/visualstudio/deployment/walkthrough-manually-deploying-a-clickonce-app-no-re-signing-required?view=vs-2015)|說明如何使用 .NET Framework 公用程式，部署 ClickOnce 應用程式，但不重新簽署資訊清單。|  
-|[NIB：HOW TO：為特定的 CPU 類型最佳化應用程式](http://msdn.microsoft.com/294a75d2-4279-4b72-8298-2bea05be907a)|說明如何透過變更專案中的 [目標 CPU] 或 [平台目標] 屬性，針對 64 位元處理器發佈。|  
-|[逐步解說：啟用多個.NET Framework 版本上執行 ClickOnce 應用程式](http://msdn.microsoft.com/7f4383af-ed87-4853-b4d4-02a3967a5fd9)|說明如何啟用 ClickOnce 應用程式，在 NET Framework 的多個版本上安裝及執行。|  
+|[NIB：作法：為特定的 CPU 類型最佳化應用程式](https://msdn.microsoft.com/294a75d2-4279-4b72-8298-2bea05be907a)|說明如何透過變更專案中的 [目標 CPU] 或 [平台目標] 屬性，針對 64 位元處理器發佈。|  
+|[逐步解說：啟用多個.NET Framework 版本上執行 ClickOnce 應用程式](https://msdn.microsoft.com/7f4383af-ed87-4853-b4d4-02a3967a5fd9)|說明如何啟用 ClickOnce 應用程式，在 NET Framework 的多個版本上安裝及執行。|  
 |[逐步解說：為 ClickOnce 應用程式建立自訂安裝程式](../deployment/walkthrough-creating-a-custom-installer-for-a-clickonce-application.md)|說明如何建立自訂安裝程式，來安裝 ClickOnce 應用程式。|  
 |[如何：發行已啟用視覺樣式的 WPF 應用程式](../deployment/how-to-publish-a-wpf-application-with-visual-styles-enabled.md)|提供逐步指示，解決在您嘗試發行啟用視覺化樣式的 WPF 應用程式時出現的錯誤。|  
   

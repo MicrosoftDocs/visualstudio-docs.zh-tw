@@ -16,19 +16,19 @@ caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 55b24facd3a9ec935277a42c211a64d824ed6d7f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: deb2e446ff051b52e9c34d28abfa99436c064ad6
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60116741"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65680899"
 ---
 # <a name="extract-interface-refactoring-c"></a>擷取介面重構 (C#)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 擷取介面是重構作業，提供簡單的方法來建立新的介面與源自現有類別、 結構或介面的成員。  
   
- 當數個用戶端使用的類別、 結構或介面成員的相同子集或多個類別、 結構或介面共有的成員子集，它可用來對介面中的成員子集。 如需使用介面的詳細資訊，請參閱[介面](http://msdn.microsoft.com/library/2feda177-ce11-432d-81b4-d50f5f35fd37)。  
+ 當數個用戶端使用的類別、 結構或介面成員的相同子集或多個類別、 結構或介面共有的成員子集，它可用來對介面中的成員子集。 如需使用介面的詳細資訊，請參閱[介面](https://msdn.microsoft.com/library/2feda177-ce11-432d-81b4-d50f5f35fd37)。  
   
  擷取介面會產生新的檔案中的介面，並將游標置於新的檔案的開頭。 您可以指定要擷取至新的介面、 新的介面，名稱和產生的檔案使用的名稱的成員**擷取介面** 對話方塊。  
   

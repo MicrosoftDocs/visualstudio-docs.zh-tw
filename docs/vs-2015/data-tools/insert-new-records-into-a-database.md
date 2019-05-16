@@ -20,12 +20,12 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: bd5074af8f0a9ca172d04b4cd5bb1d9057ad4bb5
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 3f7ccd6af16d89c18f5a5bba63f6afc50de391c4
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63384082"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65688722"
 ---
 # <a name="insert-new-records-into-a-database"></a>在資料庫中插入新的記錄
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,7 +47,7 @@ ms.locfileid: "63384082"
   
 #### <a name="to-insert-new-records-into-a-database-by-using-the-tableadapterupdate-method"></a>將新記錄插入資料庫，使用 TableAdapter.Update 方法  
   
-1. 將新記錄新增至所需<xref:System.Data.DataTable>藉由建立新<xref:System.Data.DataRow>並將它新增至<xref:System.Data.DataTable.Rows%2A>集合。 如需詳細資訊，請參閱[如何：將資料列加入至 DataTable](http://msdn.microsoft.com/library/78ebbb43-c402-49cf-81da-0715289487bf)。  
+1. 將新記錄新增至所需<xref:System.Data.DataTable>藉由建立新<xref:System.Data.DataRow>並將它新增至<xref:System.Data.DataTable.Rows%2A>集合。 如需詳細資訊，請參閱[如何：將資料列加入至 DataTable](https://msdn.microsoft.com/library/78ebbb43-c402-49cf-81da-0715289487bf)。  
   
 2. 新的資料列新增至後<xref:System.Data.DataTable>，呼叫`TableAdapter.Update`方法。 您可以控制要藉由傳入整個更新的資料量<xref:System.Data.DataSet>，則<xref:System.Data.DataTable>，陣列<xref:System.Data.DataRow>或單一<xref:System.Data.DataRow>。  
   

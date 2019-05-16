@@ -1,5 +1,5 @@
 ---
-title: HOW TO：建立特定領域語言解決方案 |Microsoft Docs
+title: 作法：建立特定領域語言解決方案 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-modeling
@@ -15,14 +15,14 @@ caps.latest.revision: 43
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e9afaa8fc74ef893b3b916c66907ae5d1a3af55f
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: eae08b771f3bd5748485f9029f7f12725df6f28f
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63441085"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65698127"
 ---
-# <a name="how-to-create-a-domain-specific-language-solution"></a>HOW TO：建立特定領域語言方案
+# <a name="how-to-create-a-domain-specific-language-solution"></a>作法：建立特定領域語言方案
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 特定領域語言 (DSL) 由使用特殊化[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]解決方案。  
@@ -133,4 +133,4 @@ ms.locfileid: "63441085"
   
 ## <a name="see-also"></a>另請參閱  
  [如何定義特定領域語言](../modeling/how-to-define-a-domain-specific-language.md)   
- [Domain-Specific Language Tools Glossary](http://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa) (特定領域語言工具字彙表)
+ [Domain-Specific Language Tools Glossary](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa) (特定領域語言工具字彙表)

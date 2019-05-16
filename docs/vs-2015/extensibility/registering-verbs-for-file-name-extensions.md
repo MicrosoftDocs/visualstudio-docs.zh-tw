@@ -10,19 +10,19 @@ ms.assetid: 81a58e40-7cd0-4ef4-a475-c4e1e84d6e06
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: bb8270de3635b6a9d28a6bf550b29a014d0fed9f
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: dbd97310163a4eb3ae5502c6341dc73322ca653d
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63432542"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65685274"
 ---
 # <a name="registering-verbs-for-file-name-extensions"></a>註冊適用於副檔名的動詞命令
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 與應用程式的檔案名稱副檔名關聯通常會有偏好的動作，當使用者按兩下檔案時，就會發生。 此建議動作連結到動詞，例如開啟時，對應至動作。  
   
- 您可以註冊在 HKEY_CLASSES_ROOT 使用 Shell 機碼位於與擴充功能的程式設計識別項 (ProgID) 相關聯的動詞\\*progid*\shell。 如需詳細資訊，請參閱 <<c0> [ 檔案類型](http://msdn.microsoft.com/library/windows/desktop/cc144148\(v=vs.85\).aspx)。  
+ 您可以註冊在 HKEY_CLASSES_ROOT 使用 Shell 機碼位於與擴充功能的程式設計識別項 (ProgID) 相關聯的動詞\\*progid*\shell。 如需詳細資訊，請參閱 <<c0> [ 檔案類型](https://msdn.microsoft.com/library/windows/desktop/cc144148\(v=vs.85\).aspx)。  
   
 ## <a name="registering-standard-verbs"></a>註冊標準動詞命令  
  作業系統可辨識下列的標準動詞命令：  

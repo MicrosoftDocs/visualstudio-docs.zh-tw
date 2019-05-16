@@ -9,12 +9,12 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 802ff20facead891f05ac4727d1c091d095c50a2
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 26ba081e893867fcd80c7fc969301f417400d37a
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63442486"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65679293"
 ---
 # <a name="step-6-name-your-button-controls"></a>步驟 6：命名按鈕控制項
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -73,7 +73,7 @@ ms.locfileid: "63442486"
   
      為控制項加入事件處理常式之後，您隨時可以從 [Windows Forms 設計工具] 回到此控制項，方法是按兩下控制項，或是在功能表列上選擇 [檢視] 、[程式碼] 。  
   
-     當您建置程式時，名稱很重要，而方法 (包括事件處理常式) 則可以具有您想要的任何名稱。 當您使用 IDE 加入事件處理常式時，IDE 會根據控制項的名稱和所處理的事件來建立名稱。 例如，名稱為 **showButton** 按鈕的 Click 事件稱為 `showButton_Click()` 事件處理常式方法。 此外，方法名稱後面通常會加上左括弧和右括弧 ()，以表示目前所討論的是方法。 如果您決定要變更程式碼變數名稱，請用滑鼠右鍵按一下程式碼中的變數，然後選擇 [重構] 、[重新命名] 。 會重新命名該變數在程式碼中的所有執行個體。 請參閱[重新命名重構 (C#)](../csharp-ide/rename-refactoring-csharp.md)或是[重構和重新命名對話方塊](http://msdn.microsoft.com/library/001d2d81-9bb6-4e8e-ae3a-20c0daaa3959)如需詳細資訊。  
+     當您建置程式時，名稱很重要，而方法 (包括事件處理常式) 則可以具有您想要的任何名稱。 當您使用 IDE 加入事件處理常式時，IDE 會根據控制項的名稱和所處理的事件來建立名稱。 例如，名稱為 **showButton** 按鈕的 Click 事件稱為 `showButton_Click()` 事件處理常式方法。 此外，方法名稱後面通常會加上左括弧和右括弧 ()，以表示目前所討論的是方法。 如果您決定要變更程式碼變數名稱，請用滑鼠右鍵按一下程式碼中的變數，然後選擇 [重構] 、[重新命名] 。 會重新命名該變數在程式碼中的所有執行個體。 請參閱[重新命名重構 (C#)](../csharp-ide/rename-refactoring-csharp.md)或是[重構和重新命名對話方塊](https://msdn.microsoft.com/library/001d2d81-9bb6-4e8e-ae3a-20c0daaa3959)如需詳細資訊。  
   
 ### <a name="to-continue-or-review"></a>若要繼續或檢視  
   

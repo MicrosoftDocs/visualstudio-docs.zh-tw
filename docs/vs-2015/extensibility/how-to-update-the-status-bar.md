@@ -10,14 +10,14 @@ ms.assetid: 7500c8a7-4913-4818-a88b-bfd1b9887cb6
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 1d34642bd805469283ad22d6b40054596ed00a9e
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 1d48b07dd5e4fc1fe745e3669041884c1b8eacd9
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63441569"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65703151"
 ---
-# <a name="how-to-update-the-status-bar"></a>HOW TO：更新狀態列
+# <a name="how-to-update-the-status-bar"></a>作法：更新狀態列
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 **狀態列**一種控制列位於底部的許多應用程式視窗，其中包含一或多個狀態的文字行或指標。  
@@ -42,11 +42,11 @@ ms.locfileid: "63441569"
   
 - 編輯器的資訊  
   
-  如需詳細資訊，請參閱 <<c0> [ 狀態列](http://msdn.microsoft.com/library/fcbc5029-1aab-4e14-adf7-419038a4935e)。  
+  如需詳細資訊，請參閱 <<c0> [ 狀態列](https://msdn.microsoft.com/library/fcbc5029-1aab-4e14-adf7-419038a4935e)。  
   
   IDE 會自動呼叫<xref:Microsoft.VisualStudio.Shell.Interop.IVsStatusbarUser.SetInfo%2A>方法的程式<xref:Microsoft.VisualStudio.Shell.Interop.IVsStatusbarUser>文件視窗啟用時的實作。  
   
   VSPackage 實作器會負責更新狀態列中的狀態文字。 IDE 在 [狀態] 文字欄位設為空的文字時，會重設此字串，以 「 就緒 」 ("") 在閒置的時間。  
   
 ## <a name="see-also"></a>另請參閱  
- [狀態列](http://msdn.microsoft.com/library/fcbc5029-1aab-4e14-adf7-419038a4935e)
+ [狀態列](https://msdn.microsoft.com/library/fcbc5029-1aab-4e14-adf7-419038a4935e)

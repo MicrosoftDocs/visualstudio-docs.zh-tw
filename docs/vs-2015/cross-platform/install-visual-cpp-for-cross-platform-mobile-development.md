@@ -11,12 +11,12 @@ caps.latest.revision: 17
 author: corob-msft
 ms.author: corob
 manager: jillfra
-ms.openlocfilehash: 57aa9011043ab30e465e03beffe54e6abcc706a8
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 1aa81017f1a3d73e4ade1556ab141878e8a773f7
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63444589"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65698469"
 ---
 # <a name="install-visual-c-for-cross-platform-mobile-development"></a>安裝 Visual C++ for Cross-Platform Mobile Development
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,7 +38,7 @@ ms.locfileid: "63444589"
   
   若要建置特定裝置平台的應用程式，有幾個額外的需求：  
   
-- Windows Phone 模擬器與 Microsoft Visual Studio Emulator for Android 需要可執行 Hyper-V 的電腦。 您必須先啟用 Windows 中的 HYPER-V 功能，才能安裝和執行模擬器。 如需詳細資訊，請參閱模擬器的[系統需求](http://msdn.microsoft.com/4d5bb438-231a-4cd2-84b7-e9660b0e3baf)。  
+- Windows Phone 模擬器與 Microsoft Visual Studio Emulator for Android 需要可執行 Hyper-V 的電腦。 您必須先啟用 Windows 中的 HYPER-V 功能，才能安裝和執行模擬器。 如需詳細資訊，請參閱模擬器的[系統需求](https://msdn.microsoft.com/4d5bb438-231a-4cd2-84b7-e9660b0e3baf)。  
   
 - 搭配 Android SDK 的 x86 Android 模擬器在可執行 Intel HAXM 驅動程式的電腦上效能最佳。 此驅動程式需要 Intel x64 處理器並支援 VT-x 和執行停用位元。 如需詳細資訊，請參閱 [Intel® 硬體加速執行管理器安裝指示 - Microsoft Windows](http://go.microsoft.com/fwlink/p/?LinkId=536385)。  
   

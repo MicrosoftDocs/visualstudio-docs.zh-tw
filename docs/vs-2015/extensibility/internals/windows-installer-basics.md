@@ -11,12 +11,12 @@ ms.assetid: 497e479b-add8-4644-870a-917f15306b97
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 516deb626bd8c6056612fcc481b9d530da504b9d
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 4693654e12dc37209cb92e3e2ba95bde8bd13e77
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63437262"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65687671"
 ---
 # <a name="windows-installer-basics"></a>Windows Installer 基本概念
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -47,19 +47,19 @@ Windows 安裝程式安裝和解除安裝應用程式或使用者的電腦上的
  檔案、 登錄機碼、 捷徑、 或，依此類推，可能會安裝到電腦。 這些資源會以邏輯方式分組，為 Windows 安裝程式元件。  
   
  Windows 安裝程式元件 (WIC)  
- 表示已安裝及解除安裝當做一個單位的相關資源的邏輯群組的安裝基本的單位。 Windows 安裝程式元件是唯一的元件識別碼或 GUID 所識別。 此外，Windows 安裝程式會維護它的參考計數 WIC 層級。 最大的版本控制彈性，請在 指定 WIC 中包含不超過一個主要資源的詳細資訊，例如的 DLL。 請注意，識別並填入 WIC、 為它提供的 GUID，並將其部署之後，您無法變更其組合。 如需詳細資訊，請參閱 <<c0> [ 組織的應用程式元件](http://msdn.microsoft.com/library/aa370561.aspx)。  
+ 表示已安裝及解除安裝當做一個單位的相關資源的邏輯群組的安裝基本的單位。 Windows 安裝程式元件是唯一的元件識別碼或 GUID 所識別。 此外，Windows 安裝程式會維護它的參考計數 WIC 層級。 最大的版本控制彈性，請在 指定 WIC 中包含不超過一個主要資源的詳細資訊，例如的 DLL。 請注意，識別並填入 WIC、 為它提供的 GUID，並將其部署之後，您無法變更其組合。 如需詳細資訊，請參閱 <<c0> [ 組織的應用程式元件](https://msdn.microsoft.com/library/aa370561.aspx)。  
   
  套件 （可轉散發套件）  
  .msi 檔案和外部的原始程式檔可能會指向這個檔案所組成的部署單位。 套件包含 Windows 安裝程式需要執行 UI 和安裝或解除安裝應用程式的所有資訊。  
   
  .msi 檔案  
- COM 結構化儲存體檔案，其中包含的指示和安裝應用程式所需的資料。 每個套件都包含至少一個.msi 檔案。 將.msi 檔案包含安裝程式資料庫，摘要資訊資料流，可能是一或多個轉換和內部的原始程式檔。 要安裝檔案可以是壓縮成封包和.msi 檔案中的資料流中儲存或儲存、 壓縮，或未壓縮，外部來源媒體上將.msi 檔案。 如需詳細資訊，請參閱 < [Windows Installer 檔案副檔名](http://msdn.microsoft.com/library/aa372842\(VS.85\).aspx)。  
+ COM 結構化儲存體檔案，其中包含的指示和安裝應用程式所需的資料。 每個套件都包含至少一個.msi 檔案。 將.msi 檔案包含安裝程式資料庫，摘要資訊資料流，可能是一或多個轉換和內部的原始程式檔。 要安裝檔案可以是壓縮成封包和.msi 檔案中的資料流中儲存或儲存、 壓縮，或未壓縮，外部來源媒體上將.msi 檔案。 如需詳細資訊，請參閱 < [Windows Installer 檔案副檔名](https://msdn.microsoft.com/library/aa372842\(VS.85\).aspx)。  
   
 ## <a name="windows-installer-rules-enforcement"></a>Windows Installer 規則強制執行  
  兩組規則會決定部署透過您的安裝程式元件的資源。 雖然您應該會強制執行第二個集合，身為安裝的作者，Windows 安裝程式本身，會維護一個規則集。  
   
 > [!NOTE]
-> 只有當您執行的.msi 檔案的驗證，就會發生 Windows Installer 規則強制執行。 不過，您會 cautioned 這些規則視為最佳做法。 如需詳細資訊，請參閱 <<c0> [ 驗證安裝資料庫](http://msdn.microsoft.com/library/aa372477\(VS.85\).aspx)並[封裝驗證](http://msdn.microsoft.com/library/aa370569\(VS.85\).aspx)。  
+> 只有當您執行的.msi 檔案的驗證，就會發生 Windows Installer 規則強制執行。 不過，您會 cautioned 這些規則視為最佳做法。 如需詳細資訊，請參閱 <<c0> [ 驗證安裝資料庫](https://msdn.microsoft.com/library/aa372477\(VS.85\).aspx)並[封裝驗證](https://msdn.microsoft.com/library/aa370569\(VS.85\).aspx)。  
   
 #### <a name="installer-enforced-rules"></a>安裝程式強制執行規則  
   
@@ -69,9 +69,9 @@ Windows 安裝程式安裝和解除安裝應用程式或使用者的電腦上的
   
 #### <a name="component-provider-responsibilities"></a>元件提供者的責任  
   
-- 分開可能在後續版本中提供的任何兩個資源應該位於個別的元件。 資源應該分組到同一個元件，只有當您確定這些資源將永遠不會分開的提供時，才。 事實上，我們建議所有的主要資源 (例如 Dll) 一律存在於個別 WICs。 如需詳細資訊，請參閱 <<c0> [ 定義安裝程式元件](http://msdn.microsoft.com/library/aa368269\(VS.85\).aspx)。  
+- 分開可能在後續版本中提供的任何兩個資源應該位於個別的元件。 資源應該分組到同一個元件，只有當您確定這些資源將永遠不會分開的提供時，才。 事實上，我們建議所有的主要資源 (例如 Dll) 一律存在於個別 WICs。 如需詳細資訊，請參閱 <<c0> [ 定義安裝程式元件](https://msdn.microsoft.com/library/aa368269\(VS.85\).aspx)。  
   
 - 沒有建立版本的資源應該曾經出貨中一個以上的 WIC。  
   
 ## <a name="see-also"></a>另請參閱  
- [元件規則已中斷，會發生什麼事？](http://msdn.microsoft.com/library/aa372795\(VS.85\).aspx)
+ [元件規則已中斷，會發生什麼事？](https://msdn.microsoft.com/library/aa372795\(VS.85\).aspx)

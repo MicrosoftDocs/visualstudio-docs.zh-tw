@@ -17,12 +17,12 @@ caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: cff1677ab9209ce2a51b7587c410731a71e27eb0
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: f1c5886d4ac3efcb906a27f73af6a79fad95a5af
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60056715"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65700241"
 ---
 # <a name="troubleshooting-service-references"></a>服務參考的疑難排解
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -76,7 +76,7 @@ ms.locfileid: "60056715"
 
 3. 請確定**顯示進階組建組態** 核取方塊已選取，然後再按一下**確定**。
 
-4. 載入 WCF 服務專案。 如需詳細資訊，請參閱[NIB 如何：建立多專案解決方案](http://msdn.microsoft.com/02ecd6dd-0114-46fe-b335-ba9c5e3020d6)。
+4. 載入 WCF 服務專案。 如需詳細資訊，請參閱[NIB 如何：建立多專案解決方案](https://msdn.microsoft.com/02ecd6dd-0114-46fe-b335-ba9c5e3020d6)。
 
 5. 在 [ **Configuration Manager** ] 對話方塊中，將**現用方案組態**來**偵錯**。 如需詳細資訊，請參閱[如何：建立和編輯組態](../ide/how-to-create-and-edit-configurations.md)。
 

@@ -18,12 +18,12 @@ caps.latest.revision: 40
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: ac9800025bd55237a4f1d19ca6f07c78c757b603
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: e9ce72d69cb64b0421771324803a785546fa884f
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58930189"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65693758"
 ---
 # <a name="pseudovariables"></a>虛擬變數
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -52,7 +52,7 @@ $handles
 |`$clk`|以時脈週期顯示時間。|  
 |`$user`|針對執行應用程式的帳戶，顯示含有帳戶資訊的結構。 為安全起見，不會顯示密碼資訊。|  
 |`$exceptionstack`|顯示目前 Windows 執行階段例外狀況的堆疊追蹤。 `$ exceptionstack` 僅適用於在 Windows 8.1 或較新版本上執行的市集應用程式。 針對 C++ 和 SHE 例外狀況，不支援 `$ exceptionstack`。|  
-|`$ReturnValue`|顯示 .NET Framework 方法的傳回值。 請參閱[檢查的方法呼叫的傳回值](http://msdn.microsoft.com/library/e3245b37-8e2e-4200-ba84-133726e95f1f)|  
+|`$ReturnValue`|顯示 .NET Framework 方法的傳回值。 請參閱[檢查的方法呼叫的傳回值](https://msdn.microsoft.com/library/e3245b37-8e2e-4200-ba84-133726e95f1f)|  
   
  在 C# 和 Visual Basic 中，您可以使用下表中顯示的虛擬變數：  
   
@@ -68,8 +68,8 @@ $handles
 |`$delete` 或 `$$delete`|刪除在 [立即] 視窗中建立的隱含變數。 語法是`$delete,`*變數*或是`$delete,`*變數*`.`|  
 |`$objectids` 或 `$listobjectids`|將所有作用中物件 ID 顯示為指定運算式的子項。 語法是`$objectid,`*運算式*或是`$listobjectids,`*運算式*`.`|  
 |`$` *N* `#`|顯示物件識別碼等於 *N* 的物件。|  
-|`$dynamic`|針對實作 `IDynamicMetaObjectProvider` 的物件，顯示特殊 [動態檢視] 節點。 介面。 語法為 `$dynamic,` *object*。 此功能僅適用於使用 .NET Framework 第 4 版的程式碼。 請參閱[動態檢視](http://msdn.microsoft.com/library/4c851b17-2c12-46a0-9828-eb6ea6f5c563)。|  
+|`$dynamic`|針對實作 `IDynamicMetaObjectProvider` 的物件，顯示特殊 [動態檢視] 節點。 介面。 語法為 `$dynamic,` *object*。 此功能僅適用於使用 .NET Framework 第 4 版的程式碼。 請參閱[動態檢視](https://msdn.microsoft.com/library/4c851b17-2c12-46a0-9828-eb6ea6f5c563)。|  
   
 ## <a name="see-also"></a>另請參閱  
  [監看式及快速監看式視窗](../debugger/watch-and-quickwatch-windows.md)   
- [變數視窗](http://msdn.microsoft.com/library/ce0a67f6-2502-4b7a-ba45-cc32f8aeba3e)
+ [變數視窗](https://msdn.microsoft.com/library/ce0a67f6-2502-4b7a-ba45-cc32f8aeba3e)

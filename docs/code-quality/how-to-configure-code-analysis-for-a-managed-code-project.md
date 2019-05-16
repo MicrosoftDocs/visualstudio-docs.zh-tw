@@ -13,19 +13,21 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: a17db8fbdb281139ba095070130e6c608954b5a7
-ms.sourcegitcommit: 62f42113ae4dae1ddfff1c4e02445acc09913445
+ms.openlocfilehash: 555017cc49beba849ba9008c52950a70cd067a73
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/29/2019
-ms.locfileid: "64878176"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65676285"
 ---
-# <a name="how-to-configure-code-analysis-for-a-managed-code-project"></a>HOW TO：設定受控碼專案的程式碼分析
+# <a name="how-to-configure-static-code-analysis-for-managed-code"></a>HOW TO：設定 managed 程式碼的靜態程式碼分析
 
 在 Visual Studio 中，您可以從清單中選擇的程式碼分析[規則集](../code-quality/rule-set-reference.md)来套用至 managed 程式碼專案。 根據預設， **Microsoft 最小建議規則**選取規則集，但您可以套用不同的規則集有需要。 規則集可以套用至解決方案中的一或多個專案中。
 
-> [!TIP]
-> 如需如何設定 ASP.NET web 應用程式設定的規則的詳細資訊，請參閱[How to:設定 ASP.NET web 應用程式的程式碼分析](../code-quality/how-to-configure-code-analysis-for-an-aspnet-web-application.md)。
+如需如何設定 ASP.NET web 應用程式設定的規則的詳細資訊，請參閱[How to:設定 ASP.NET web 應用程式的程式碼分析](../code-quality/how-to-configure-code-analysis-for-an-aspnet-web-application.md)。
+
+> [!NOTE]
+> 本文適用於靜態程式碼分析，而不[Roslyn 分析器](use-roslyn-analyzers.md)，這不在建置之後執行程式碼分析。
 
 ## <a name="to-configure-a-rule-set-for-a-net-framework-project"></a>若要設定的規則集的.NET Framework 專案
 

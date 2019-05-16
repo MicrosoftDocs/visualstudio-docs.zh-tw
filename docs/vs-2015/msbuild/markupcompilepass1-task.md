@@ -19,12 +19,12 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 5ce5ad99abb356c1b047fb2507be9a08f688b993
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: dd5a6edc2f89470b4aacf05ef0a416c060cf23df
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59651431"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65703579"
 ---
 # <a name="markupcompilepass1-task"></a>MarkupCompilePass1 工作
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -125,5 +125,5 @@ ms.locfileid: "59651431"
  [工作參考](../msbuild/wpf-msbuild-task-reference.md)   
  [MSBuild 參考](../msbuild/msbuild-reference.md)   
  [工作參考](../msbuild/msbuild-task-reference.md)   
- [建置 WPF 應用程式 (WPF)](http://msdn.microsoft.com/library/a58696fd-bdad-4b55-9759-136dfdf8b91c)   
- [WPF XAML 瀏覽器應用程式概觀](http://msdn.microsoft.com/library/3a7a86a8-75d5-4898-96b9-73da151e5e16)
+ [建置 WPF 應用程式 (WPF)](https://msdn.microsoft.com/library/a58696fd-bdad-4b55-9759-136dfdf8b91c)   
+ [WPF XAML 瀏覽器應用程式概觀](https://msdn.microsoft.com/library/3a7a86a8-75d5-4898-96b9-73da151e5e16)

@@ -6,12 +6,12 @@ ms.assetid: 9d9c7fbb-ebae-4b20-9dd8-3c9070c0d0d1
 caps.latest.revision: 7
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 93fa86fcac429b38c1e727f39f8c94611310119c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 97d634f97eb7a13cfa54b2c0d326b19f31fb7d9d
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60062593"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65685493"
 ---
 # <a name="image-library-viewer"></a>影像庫檢視器
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -130,7 +130,7 @@ Visual Studio 影像庫檢視器工具可以載入，並搜尋映像資訊清單
 |||  
 |-|-|  
 |**屬性**|**定義**|  
-|URI|[必要]定義從何處可以載入映像的 URI。 它可以是下列其中一項：<br /><br /> -A [Pack URI](http://msdn.microsoft.com/library/aa970069\(v=vs.100\).aspx)使用應用程式: / / 授權單位<br /><br /> -絕對元件資源參考<br /><br /> -包含原生資源的檔案路徑|  
+|URI|[必要]定義從何處可以載入映像的 URI。 它可以是下列其中一項：<br /><br /> -A [Pack URI](https://msdn.microsoft.com/library/aa970069\(v=vs.100\).aspx)使用應用程式: / / 授權單位<br /><br /> -絕對元件資源參考<br /><br /> -包含原生資源的檔案路徑|  
 |背景|[選用]指出哪些類型的來源要使用的背景。<br /><br /> 它可以是下列其中一項：<br /><br /> - *Light*:淺色背景上可用的來源。<br /><br /> - *深色*:來源可以使用深色背景上。<br /><br /> - *高對比*:高對比模式中的任何背景上可用的來源。<br /><br /> - *HighContrastLight*:高對比模式中的淺色背景上可用的來源。<br /><br /> -*HighContrastDark*:在高對比模式中使用深色背景上可用的來源。<br /><br /> 如果**背景**省略屬性、 來源可以使用任何背景上。<br /><br /> 如果**背景**是*Light*，*深色*， *HighContrastLight*，或*HighContrastDark*，永遠不會反轉來源的色彩。 如果**背景**被省略或設為*高對比*，反轉的來源的色彩由映像的控制**AllowColorInversion**屬性。|  
   
  A\<來源 > 項目可以有一個下列的選擇性子項目：  

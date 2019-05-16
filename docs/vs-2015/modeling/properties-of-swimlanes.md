@@ -13,12 +13,12 @@ caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 04dee7bad28b6176ffb9499bfcdb5ff2dddc3e8d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: dd4435ed0930a920cd36e741ac7461e6f95ba815
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58945911"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65701519"
 ---
 # <a name="properties-of-swimlanes"></a>泳道的屬性
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -55,4 +55,4 @@ ms.locfileid: "58945911"
 |說明關鍵字|用來編製索引的此泳道的 F1 說明關鍵字。|\<無>|  
   
 ## <a name="see-also"></a>另請參閱  
- [Domain-Specific Language Tools Glossary](http://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa) (特定領域語言工具字彙表)
+ [Domain-Specific Language Tools Glossary](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa) (特定領域語言工具字彙表)

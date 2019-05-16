@@ -14,12 +14,12 @@ caps.latest.revision: 23
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: dc5a54b1dee2345f42abd3a00b39c11388185d03
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: bb5342dc2b5da3d1192aadbbea186b5b21f179f3
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63434870"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65691557"
 ---
 # <a name="debugging-gpu-code"></a>偵錯 GPU 程式碼
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -68,7 +68,7 @@ ms.locfileid: "63434870"
 ## <a name="troubleshooting"></a>疑難排解  
   
 ### <a name="specifying-an-accelerator"></a>指定加速器  
- GPU 程式碼中的中斷點只有在程式碼在 [accelerator::direct3d_ref](http://msdn.microsoft.com/library/a514b1a7-3b3f-4011-be6c-f7b0d9a42663) (REF) 加速器上執行時才會叫用。 如果您未在程式碼中指定加速器，則會在專案屬性中自動選取 REF 加速器作為 [偵錯加速器類型]。 如果您的程式碼明確選取加速器，則不會在偵錯期間使用 REF 加速器，而且除非您的 GPU 硬體支援偵錯，否則不會叫用中斷點。 您可以撰寫自己的程式碼補救這種情況，讓程式碼在偵錯期間使用 REF 加速器。 如需詳細資訊，請參閱專案屬性和[使用 accelerator 和 accelerator_view 物件](http://msdn.microsoft.com/library/18f0dc66-8236-4420-9f46-1a14f2c3fba1)並[專案設定為C++偵錯組態](../debugger/project-settings-for-a-cpp-debug-configuration.md)。  
+ GPU 程式碼中的中斷點只有在程式碼在 [accelerator::direct3d_ref](https://msdn.microsoft.com/library/a514b1a7-3b3f-4011-be6c-f7b0d9a42663) (REF) 加速器上執行時才會叫用。 如果您未在程式碼中指定加速器，則會在專案屬性中自動選取 REF 加速器作為 [偵錯加速器類型]。 如果您的程式碼明確選取加速器，則不會在偵錯期間使用 REF 加速器，而且除非您的 GPU 硬體支援偵錯，否則不會叫用中斷點。 您可以撰寫自己的程式碼補救這種情況，讓程式碼在偵錯期間使用 REF 加速器。 如需詳細資訊，請參閱專案屬性和[使用 accelerator 和 accelerator_view 物件](https://msdn.microsoft.com/library/18f0dc66-8236-4420-9f46-1a14f2c3fba1)並[專案設定為C++偵錯組態](../debugger/project-settings-for-a-cpp-debug-configuration.md)。  
   
 ### <a name="conditional-breakpoints"></a>條件中斷點  
  GPU 程式碼支援條件中斷點，不過，並非所有運算式都可以在裝置上進行評估。 如果運算式無法在裝置上評估，就會在偵錯工具上評估。 偵錯工具的執行速度可能會比裝置更慢。  
@@ -83,6 +83,6 @@ ms.locfileid: "63434870"
  C++ AMP 計算可能會超過 Windows 逾時偵測與復原程序 (TDR) 所設定的預設時間間隔。 發生這種情況時，計算就會取消，而且資料將會遺失。 如需詳細資訊，請參閱 [Handling TDRs in C++ AMP](http://go.microsoft.com/fwlink/p/?LinkId=249154) (在 C++ AMP 中處理 TDR)。  
   
 ## <a name="see-also"></a>另請參閱  
- [逐步解說：偵錯C++AMP 應用程式](http://msdn.microsoft.com/library/40e92ecc-f6ba-411c-960c-b3047b854fb5)   
+ [逐步解說：偵錯C++AMP 應用程式](https://msdn.microsoft.com/library/40e92ecc-f6ba-411c-960c-b3047b854fb5)   
  [C++ 偵錯組態的專案設定](../debugger/project-settings-for-a-cpp-debug-configuration.md)   
  [在 Visual Studio 中開始 GPU 偵錯](http://go.microsoft.com/fwlink/p/?LinkId=255381)

@@ -1,5 +1,5 @@
 ---
-title: HOW TO：建立 LINQ to SQL 類別 （O-R 設計工具） 之間的關聯 （關聯性） |Microsoft Docs
+title: 作法：建立 LINQ to SQL 類別 （O-R 設計工具） 之間的關聯 （關聯性） |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-data-tools
@@ -9,12 +9,12 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c5b97247ebf16a588e8f28b4b4e6f7c512566226
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 0907370ae8ad3c0d5e6b5ebc3c8bcab842474249
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63386769"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65684779"
 ---
 # <a name="how-to-create-an-association-relationship-between-linq-to-sql-classes-or-designer"></a>HOW TO：建立 LINQ to SQL 類別 （O/R 設計工具） 之間的關聯 （關聯性）
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -50,7 +50,7 @@ ms.locfileid: "63386769"
   
 ## <a name="see-also"></a>另請參閱  
  [LINQ to SQL 工具，在 Visual Studio 中](../data-tools/linq-to-sql-tools-in-visual-studio2.md)   
- [逐步解說：建立 LINQ to SQL 類別 （O-R 設計工具）](http://msdn.microsoft.com/library/35aad4a4-2e8a-46e2-ae09-5fbfd333c233)   
- [LINQ to SQL](http://msdn.microsoft.com/library/73d13345-eece-471a-af40-4cc7a2f11655)   
+ [逐步解說：建立 LINQ to SQL 類別 （O-R 設計工具）](https://msdn.microsoft.com/library/35aad4a4-2e8a-46e2-ae09-5fbfd333c233)   
+ [LINQ to SQL](https://msdn.microsoft.com/library/73d13345-eece-471a-af40-4cc7a2f11655)   
  [DataContext 方法 （O/R 設計工具）](../data-tools/datacontext-methods-o-r-designer.md)   
- [如何：表示主索引鍵](http://msdn.microsoft.com/library/63c65289-6539-42b2-8493-891c232018fa)
+ [如何：表示主索引鍵](https://msdn.microsoft.com/library/63c65289-6539-42b2-8493-891c232018fa)

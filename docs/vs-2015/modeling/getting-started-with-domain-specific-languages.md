@@ -9,12 +9,12 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 4a13d0b648be87f1378ae74e6f321c1c369d7795
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: ca90a90d476acc0bdbc1df426b981d98207bbd28
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63427057"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65687253"
 ---
 # <a name="getting-started-with-domain-specific-languages"></a>開始使用網域指定的語言
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -104,7 +104,7 @@ ms.locfileid: "63427057"
 1. 按一下 **轉換所有範本**在 方案總管 工具列中。 這樣會重新產生大部分的 DslDefinition.dsl 中的原始程式碼。  
   
    > [!NOTE]
-   > 每當您變更 DslDefinition.dsl 時，您必須按一下 **轉換所有範本**重新建置方案之前。 您可以自動化此步驟。 如需詳細資訊，請參閱 <<c0> [ 如何自動執行轉換的所有範本](http://msdn.microsoft.com/b63cfe20-fe5e-47cc-9506-59b29bca768a)。  
+   > 每當您變更 DslDefinition.dsl 時，您必須按一下 **轉換所有範本**重新建置方案之前。 您可以自動化此步驟。 如需詳細資訊，請參閱 <<c0> [ 如何自動執行轉換的所有範本](https://msdn.microsoft.com/b63cfe20-fe5e-47cc-9506-59b29bca768a)。  
   
 2. 按 f5 鍵，或在**偵錯**功能表上，按一下**開始偵錯**。  
   

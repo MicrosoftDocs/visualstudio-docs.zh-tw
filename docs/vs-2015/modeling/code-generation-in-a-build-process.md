@@ -12,12 +12,12 @@ caps.latest.revision: 30
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: f2146c8a15292ddc9233c8e10b8f58f5212df0c5
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 57114789ce9f0505423e8463f90117619bfc717b
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60077598"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65687050"
 ---
 # <a name="code-generation-in-a-build-process"></a>建置流程中的程式碼產生
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,7 +31,7 @@ ms.locfileid: "60077598"
 
 若要啟用建置工作，在您的開發電腦上，安裝[Modeling SDK for Visual Studio](https://www.microsoft.com/download/details.aspx?id=48148)。
 
-如果[您的組建伺服器](http://msdn.microsoft.com/library/788443c3-0547-452e-959c-4805573813a9)未安裝 Visual Studio，在電腦上的執行從開發電腦將下列檔案複製到組建電腦。 將 '*' 替代為最新版本號碼。
+如果[您的組建伺服器](https://msdn.microsoft.com/library/788443c3-0547-452e-959c-4805573813a9)未安裝 Visual Studio，在電腦上的執行從開發電腦將下列檔案複製到組建電腦。 將 '*' 替代為最新版本號碼。
 
 - $(ProgramFiles)\MSBuild\Microsoft\VisualStudio\v*.0\TextTemplating
 

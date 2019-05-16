@@ -19,12 +19,12 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 12cbeca740fd81292109183468a304fc2d3da30c
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 09afb67f0e9431ca8cd520635f243dca70880f09
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63439482"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65683157"
 ---
 # <a name="bind-objects-in-visual-studio"></a>在 Visual Studio 中的物件繫結
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -55,7 +55,7 @@ Visual Studio 會提供設計階段工具，為您的應用程式中的資料來
 - 將資料從物件儲存回資料庫。
 
 > [!NOTE]
-> 若要進一步了解，，和提供的範例，此頁面上的內容，我們建議您先完成下列：[逐步解說：連接至資料物件 (Windows Form)](http://msdn.microsoft.com/library/21a7fba2-b38b-4726-8cbe-d22154b75a05)。 該逐步解說建立此處所討論的物件。
+> 若要進一步了解，，和提供的範例，此頁面上的內容，我們建議您先完成下列：[逐步解說：連接至資料物件 (Windows Form)](https://msdn.microsoft.com/library/21a7fba2-b38b-4726-8cbe-d22154b75a05)。 該逐步解說建立此處所討論的物件。
 
 ### <a name="loaddata-into-objects"></a>物件的 Loaddata
  例如，您將資料載入您的物件使用 Tableadapter。 根據預設，Tableadapter 會建立具有兩種方法，從資料庫擷取資料並填入資料的資料表。
@@ -75,7 +75,7 @@ Visual Studio 會提供設計階段工具，為您的應用程式中的資料來
  [!code-vb[VbRaddataConnecting#4](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataConnecting/VB/Form1.vb#4)]
 
 ### <a name="create-a-typed-collection-of-objects"></a>建立具型別的物件的集合
- 您可以建立集合類別，針對您的物件，或使用自動提供的型別的集合[BindingSource 元件](http://msdn.microsoft.com/library/3e2faf4c-f5b8-4fa6-9fbc-f59c37ec2fb9)。
+ 您可以建立集合類別，針對您的物件，或使用自動提供的型別的集合[BindingSource 元件](https://msdn.microsoft.com/library/3e2faf4c-f5b8-4fa6-9fbc-f59c37ec2fb9)。
 
  當您建立之物件的自訂集合類別時，我們建議您繼承自<xref:System.ComponentModel.BindingList%601>。 這個泛型類別會提供功能來管理您的集合，以及引發事件會傳送通知給 Windows Form 中的資料繫結基礎結構的能力。
 
@@ -92,9 +92,9 @@ Visual Studio 會提供設計階段工具，為您的應用程式中的資料來
 ### <a name="addobjects-to-a-collection"></a>Addobjects 集合
  將物件新增至集合的藉由呼叫`Add`方法，或您的自訂集合類別的<xref:System.Windows.Forms.BindingSource>。
 
- 如需將加入至集合，使用的範例<xref:System.Windows.Forms.BindingSource>，請參閱 <<c2> `LoadCustomers` 方法中的[逐步解說：連接至資料物件 (Windows Form)](http://msdn.microsoft.com/library/21a7fba2-b38b-4726-8cbe-d22154b75a05)。
+ 如需將加入至集合，使用的範例<xref:System.Windows.Forms.BindingSource>，請參閱 <<c2> `LoadCustomers` 方法中的[逐步解說：連接至資料物件 (Windows Form)](https://msdn.microsoft.com/library/21a7fba2-b38b-4726-8cbe-d22154b75a05)。
 
- 如需將物件新增至自訂集合的範例，請參閱`LoadOrders`方法中的[逐步解說：連接至資料物件 (Windows Form)](http://msdn.microsoft.com/library/21a7fba2-b38b-4726-8cbe-d22154b75a05)。
+ 如需將物件新增至自訂集合的範例，請參閱`LoadOrders`方法中的[逐步解說：連接至資料物件 (Windows Form)](https://msdn.microsoft.com/library/21a7fba2-b38b-4726-8cbe-d22154b75a05)。
 
 > [!NOTE]
 > `Add`方法會自動提供為您自訂的集合。 當您繼承自<xref:System.ComponentModel.BindingList%601>。

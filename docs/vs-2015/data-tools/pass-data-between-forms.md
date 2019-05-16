@@ -20,12 +20,12 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 27d4b1ec935444009be1f85f4c1ad95f9da91f68
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: f6cee865542256906ac1685b937da0e63327a97d
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63425503"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65694847"
 ---
 # <a name="pass-data-between-forms"></a>在表單之間傳遞資料
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,7 +39,7 @@ ms.locfileid: "63425503"
   
 - 建立新**Windows 應用程式**專案。  
   
-- 建立和設定與資料集[資料來源組態精靈](http://msdn.microsoft.com/library/c4df7de5-5da0-4064-940c-761dd6d9e28f)。  
+- 建立和設定與資料集[資料來源組態精靈](https://msdn.microsoft.com/library/c4df7de5-5da0-4064-940c-761dd6d9e28f)。  
   
 - 選取從 [資料來源] 視窗拖曳項目時，要在表單上建立的控制項。 如需詳細資訊，請參閱 <<c0> [ 設定要從資料來源視窗拖曳時要建立的控制項](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md)。  
   
@@ -64,7 +64,7 @@ ms.locfileid: "63425503"
   
 2. 將專案命名為 `PassingDataBetweenForms`。  
   
-3. 選取  **Windows Forms 應用程式**，然後按一下**確定**。 如需詳細資訊，請參閱 <<c0> [ 用戶端應用程式](http://msdn.microsoft.com/library/2dfb50b7-5af2-4e12-9bbb-c5ade0e39a68)。  
+3. 選取  **Windows Forms 應用程式**，然後按一下**確定**。 如需詳細資訊，請參閱 <<c0> [ 用戶端應用程式](https://msdn.microsoft.com/library/2dfb50b7-5af2-4e12-9bbb-c5ade0e39a68)。  
   
      隨即建立 **PassingDataBetweenForms** 專案，並將其新增至 [方案總管]。  
   

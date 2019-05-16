@@ -17,12 +17,12 @@ caps.latest.revision: 42
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 7d598cc245421aafb05cbf91fe2b7a95e39564a2
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 33ce391523a256bcb195deccf0c14868b5eae707
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63444330"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65683087"
 ---
 # <a name="walkthrough-debugging-a-multithreaded-application"></a>逐步解說：偵錯多執行緒應用程式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,7 +47,7 @@ ms.locfileid: "63444330"
   
      新的主控台專案隨即出現。 專案建立之後，便會出現原始程式檔 (Source File)。 根據您所選擇的語言，原始程式檔的名稱可能是 Module1.vb、Program.cs 或 MyThreadWalkthroughApp.cpp  
   
-6. 刪除出現在原始程式檔中的程式碼，並取代範例程式碼，會出現在 「 建立執行緒 > 主題的章節[建立的執行緒和開始時間傳遞資料](http://msdn.microsoft.com/library/52b32222-e185-4f42-91a7-eaca65c0ab6d)。  
+6. 刪除出現在原始程式檔中的程式碼，並取代範例程式碼，會出現在 「 建立執行緒 > 主題的章節[建立的執行緒和開始時間傳遞資料](https://msdn.microsoft.com/library/52b32222-e185-4f42-91a7-eaca65c0ab6d)。  
   
 7. 在 [檔案] 功能表上按一下 [全部儲存]。  
   

@@ -9,14 +9,14 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 9d0f53e589f34fafd2514aa71efdaa16cfe3bc21
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: fe17c72463d58cb4e1ac0a76d904416559ed224b
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60117664"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65690555"
 ---
-# <a name="how-to-add-a-drag-and-drop-handler"></a>HOW TO：新增拖放處理常式
+# <a name="how-to-add-a-drag-and-drop-handler"></a>作法：新增拖放處理常式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 您可以將拖放事件的處理常式加入至您的 DSL，以便使用者可以從其他圖表或 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 的其他部分，拖曳項目到您的圖表上。 您也可以加入按兩下等事件的處理常式。 拖放和按兩下處理常式稱為共同*軌跡處理常式*。  
@@ -89,7 +89,7 @@ using System.Linq;
   定義 `IsAcceptableDropItem(e)` 以決定是否可接受拖曳的項目，並定義 ProcessDragDropItem(e) 以在放置項目時更新模型。 這些方法必須先從事件引數擷取項目。 如需如何執行該動作的資訊，請參閱[如何取得拖曳項目的參考](#extracting)。  
   
 ## <a name="MEF"></a> 使用 MEF 來定義軌跡處理常式  
- MEF (Managed Extensibility Framework) 可讓您定義使用最小組態安裝的元件。 如需詳細資訊，請參閱 [Managed Extensibility Framework (MEF)](http://msdn.microsoft.com/library/6c61b4ec-c6df-4651-80f1-4854f8b14dde)。  
+ MEF (Managed Extensibility Framework) 可讓您定義使用最小組態安裝的元件。 如需詳細資訊，請參閱 [Managed Extensibility Framework (MEF)](https://msdn.microsoft.com/library/6c61b4ec-c6df-4651-80f1-4854f8b14dde)。  
   
 #### <a name="to-define-a-mef-gesture-handler"></a>定義 MEF 軌跡處理常式  
   

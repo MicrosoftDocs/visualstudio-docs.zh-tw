@@ -17,12 +17,12 @@ caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a5d7339ac0e79ac318dcf3913be97bec6847ec69
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: c2cf949803bcc864937e67c1f94addaaf6abacbd
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63430540"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65685632"
 ---
 # <a name="how-to-manage-build-configurations-with-visual-basic-developer-settings-applied"></a>如何：在套用 Visual Basic 開發者設定的情況下管理組建組態
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ ms.locfileid: "63430540"
 根據預設，所有進階組建組態選項會隱藏，並套用 [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] Developer 設定。 本主題說明如何手動啟用這些設定。  
   
 ## <a name="enabling-advanced-build-configurations"></a>啟用進階組建組態  
- 根據預設，[!INCLUDE[vbprvb](../includes/vbprvb-md.md)] Developer 設定會隱藏開啟 [Configuration Manager] 對話方塊和[專案設計工具](http://msdn.microsoft.com/898dd854-c98d-430c-ba1b-a913ce3c73d7)中的 [組態] 和 [平台] 清單的選項。  
+ 根據預設，[!INCLUDE[vbprvb](../includes/vbprvb-md.md)] Developer 設定會隱藏開啟 [Configuration Manager] 對話方塊和[專案設計工具](https://msdn.microsoft.com/898dd854-c98d-430c-ba1b-a913ce3c73d7)中的 [組態] 和 [平台] 清單的選項。  
   
 #### <a name="to-enable-advanced-build-configurations"></a>啟用進階組建組態  
   

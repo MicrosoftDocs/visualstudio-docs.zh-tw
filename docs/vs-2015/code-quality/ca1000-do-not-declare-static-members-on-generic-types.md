@@ -15,12 +15,12 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 127a8cf5382e4822ae2a6b52e03b74682f53e2d8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 606ae90f92e7df4bf8ca513c7a58d36532562f87
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62562347"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65676533"
 ---
 # <a name="ca1000-do-not-declare-static-members-on-generic-types"></a>CA1000：不要在泛型類型上宣告靜態成員
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -78,4 +78,4 @@ someObject.GenericMethod<int>();
  [CA1007:在適當時使用泛型](../code-quality/ca1007-use-generics-where-appropriate.md)
 
 ## <a name="see-also"></a>另請參閱
- [泛型](http://msdn.microsoft.com/library/75ea8509-a4ea-4e7a-a2b3-cf72482e9282)
+ [泛型](https://msdn.microsoft.com/library/75ea8509-a4ea-4e7a-a2b3-cf72482e9282)

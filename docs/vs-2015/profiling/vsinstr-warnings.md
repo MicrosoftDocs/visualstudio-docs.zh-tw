@@ -15,22 +15,22 @@ caps.latest.revision: 25
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 300088cb8051f53f5f1afbfe41be92dac9853b53
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: b178afb59558f5e684d704137039891aefbf0e3a
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54834317"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65683250"
 ---
 # <a name="vsinstr-warnings"></a>VSInstr 警告
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 下表列出 VSInstr.exe 工具所發出的警告。 若要隱藏警告訊息使其不出現，您可以使用 NOWARN 選項以及警告編號。  
   
-|警告編號|描述|  
+|警告編號|說明|  
 |--------------------|-----------------|  
 |**VSP2000**|內部錯誤。 無法取得這個可執行檔的模組檔案名稱。|  
-|**VSP2001**|\<組件名稱> 是具備強式名稱的組件。 必須重新簽署後才能執行。<br /><br /> 檢測簽署的組件之後，就會發生這個警告。 您可以使用 sn.exe 工具來重新簽署二進位檔，或暫時關閉強式名稱需求。 如需詳細資訊，請參閱 [Sn.exe (強式名稱工具)](http://msdn.microsoft.com/library/c1d2b532-1b8e-4c7a-8ac5-53b801135ec6)。|  
+|**VSP2001**|\<組件名稱> 是具備強式名稱的組件。 必須重新簽署後才能執行。<br /><br /> 檢測簽署的組件之後，就會發生這個警告。 您可以使用 sn.exe 工具來重新簽署二進位檔，或暫時關閉強式名稱需求。 如需詳細資訊，請參閱 [Sn.exe (強式名稱工具)](https://msdn.microsoft.com/library/c1d2b532-1b8e-4c7a-8ac5-53b801135ec6)。|  
 |**VSP2002**|在檔案 \<filename> 中找不到函式 \<funcname><br /><br /> 如果在指定的檔案中找不到函式，就會發生這個警告。|  
 |**VSP2003**|在檔案 \<filename> 中找不到任何前往函式 \<funcname> 的交互跳躍點。<br /><br /> 如果 VSInstr 無法將交互跳躍點設為空值，就會發生這個警告。 交互跳躍點用於程式碼最佳化。|  
 |**VSP2004**|必須有函式 \<funcname>，因為它含有交互跳躍點，但它已被 EXCLUDE 命令列參數排除。<br /><br /> 如果函式已透過 EXCLUDE 選項排除，但在檢測程序期間需要此函式，就會發生這個警告。 分析工具會自動包含所需的函式。|  

@@ -9,12 +9,12 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e37f6d7891e561beecdf0f9146d647822940571b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: cf83fdf92133284271ea696bccef31af1bd72dbd
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60079846"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65701710"
 ---
 # <a name="run-unit-tests-on-uml-extensions"></a>在 UML 擴充功能上執行單元測試
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -99,7 +99,7 @@ ms.locfileid: "60079846"
      這樣可確定測試將在 Visual Studio 的試驗執行個體中執行。  
   
 ## <a name="DTE"></a> 存取 DTE 和 ModelStore  
- 撰寫方法，以在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]中開啟模型專案。 在每個測試回合中，您通常只會想要開啟方案一次。 若只要執行此方法一次，請在此方法的前面加上 `[AssemblyInitialize]` 屬性。 請不要忘記，每種測試方法上也需要 [HostType("VS IDE")] 屬性。  例如：  
+ 撰寫方法，以在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]中開啟模型專案。 在每個測試回合中，您通常只會想要開啟方案一次。 若只要執行此方法一次，請在此方法的前面加上 `[AssemblyInitialize]` 屬性。 請不要忘記，每種測試方法上也需要 [HostType("VS IDE")] 屬性。  例如:   
   
 ```csharp  
 using EnvDTE;  
@@ -140,7 +140,7 @@ namespace UnitTests
       // Find the ModelingProject and IModelStore:  
       foreach (Project project in ModelSolution.Projects)  
       {  
-        // http://msdn.microsoft.com/library/ee791691.aspx  
+        // https://msdn.microsoft.com/library/ee791691.aspx  
         ModelingProject = project as IModelingProject;  
         if (ModelingProject != null)  
         {  
@@ -340,7 +340,7 @@ using System.ComponentModel.Composition;
 ```  
   
  定義測試介面  
- 定義介面，而此介面包括要測試之類別的公用成員，以及您想要測試能夠使用之私用成員的其他屬性和方法。 將這個介面加入要測試的專案。 例如:   
+ 定義介面，而此介面包括要測試之類別的公用成員，以及您想要測試能夠使用之私用成員的其他屬性和方法。 將這個介面加入要測試的專案。 例如：  
   
 ```csharp  
 internal interface MyClassTestInterface {  
@@ -382,6 +382,6 @@ Assert.AreEqual("hello", testInstance.privateField1_Accessor);
  這是我們最不建議的方式。 舊版 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 已提供公用程式，來自動建立每種私用方法的存取子方法。 雖然這十分方便，但是我們的經驗告訴我們這樣可能會導致單元測試與其正在測試之應用程式的內部結構極緊密地結合。 因為測試需要與實作一起變更，所以這樣會在需求或架構變更時導致額外工作。 而且，實作設計中的任何錯誤假設也會內建至測試，因此，測試會找不到錯誤。  
   
 ## <a name="see-also"></a>另請參閱  
- [單元測試的結構](http://msdn.microsoft.com/a03d1ee7-9999-4e7c-85df-7d9073976144)   
+ [單元測試的結構](https://msdn.microsoft.com/a03d1ee7-9999-4e7c-85df-7d9073976144)   
  [在模型圖上定義功能表命令](../modeling/define-a-menu-command-on-a-modeling-diagram.md)   
  [UML – 使用文字快速輸入](http://code.msdn.microsoft.com/UML-Rapid-Entry-using-Text-0813ad8a)

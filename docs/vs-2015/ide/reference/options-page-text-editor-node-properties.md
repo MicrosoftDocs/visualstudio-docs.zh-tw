@@ -12,19 +12,19 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: fa63e84cd7655ebf8a48ff47a8d844a471c193cd
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: d127aaa85cdd8da9e5daebe5c7841e0f6e85238d
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59651613"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65674867"
 ---
 # <a name="options-page-text-editor-node-properties"></a>文字編輯器節點屬性、選項頁
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 本文件描述與 [選項] 對話方塊的 [文字編輯器] 分類 `DTE.Properties("TextEditor", <Property Page>)` 相關聯的一些頁面 (或屬性集合)。 每一小節的標題就是用來存取 `Properties` 集合的呼叫，而每一小節中的表格會列出集合中的屬性。  
   
- [控制選項設定](http://msdn.microsoft.com/library/a09ed242-7494-4cde-bbd1-7a8ec617965d)中的 Visual Basic 巨集會示範，如何顯示 [選項] 對話方塊中每一個頁面目前的選項及其值。  
+ [控制選項設定](https://msdn.microsoft.com/library/a09ed242-7494-4cde-bbd1-7a8ec617965d)中的 Visual Basic 巨集會示範，如何顯示 [選項] 對話方塊中每一個頁面目前的選項及其值。  
   
 ## <a name="general"></a>一般  
  `DTE.Properties("TextEditor", "General")`  
@@ -66,7 +66,7 @@ ms.locfileid: "59651613"
 |CutCopyBlankLines|Get/Set (布林值)|在選取時剪下或複製空白行。|  
   
 ## <a name="see-also"></a>請參閱  
- [控制選項設定](http://msdn.microsoft.com/library/a09ed242-7494-4cde-bbd1-7a8ec617965d)   
- [在選項頁中決定屬性項目的名稱](http://msdn.microsoft.com/library/d450422d-47c7-4eeb-9f9f-3286264bc5aa)   
+ [控制選項設定](https://msdn.microsoft.com/library/a09ed242-7494-4cde-bbd1-7a8ec617965d)   
+ [在選項頁中決定屬性項目的名稱](https://msdn.microsoft.com/library/d450422d-47c7-4eeb-9f9f-3286264bc5aa)   
  [環境節點屬性、選項頁](../../ide/reference/options-page-environment-node-properties.md)   
  [字型和色彩節點屬性、選項頁面](../../ide/reference/options-page-fonts-and-colors-node-properties.md)

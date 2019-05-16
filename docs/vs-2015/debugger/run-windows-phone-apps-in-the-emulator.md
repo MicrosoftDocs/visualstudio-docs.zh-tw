@@ -14,19 +14,19 @@ caps.latest.revision: 12
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: c594e3837a4fe2c8b2e5a7b69e5db93377a8dc8d
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 5673ebf28cc652e3bcd973808db87b5bb058659c
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63442328"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65683530"
 ---
 # <a name="run-windows-phone-apps-in-the-emulator"></a>在模擬器中執行 Windows Phone 應用程式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Windows Phone 模擬器提供一個虛擬化環境，在此環境中，就算沒有實體裝置，您還是可以在電腦上偵錯和測試 Windows Phone 應用程式。 您可以模擬常見觸控和旋轉事件，以及選擇您要模擬的實體螢幕大小和解析度。 您也可以測試許多常用功能，例如位置、網路、通知、感應器、加速計和選擇性的 SD 記憶卡。  
   
- 如需您可以在模擬器中測試之功能的詳細資訊，請參閱 <<c0> [ 在 Windows Phone 模擬器中測試應用程式功能](http://msdn.microsoft.com/c1b2b0ec-b8cc-4a98-84c1-701428e45cb1)。  
+ 如需您可以在模擬器中測試之功能的詳細資訊，請參閱 <<c0> [ 在 Windows Phone 模擬器中測試應用程式功能](https://msdn.microsoft.com/c1b2b0ec-b8cc-4a98-84c1-701428e45cb1)。  
   
  模擬器與 Visual Studio 搭配使用，能提供讓您用來設計、開發、偵錯和測試 Windows Phone 應用程式的完整環境。  
   
@@ -103,7 +103,7 @@ Windows Phone 模擬器提供一個虛擬化環境，在此環境中，就算沒
 ### <a name="BKMK_depltool"></a> 使用應用程式部署工具執行應用程式  
  您也可以使用 Windows Phone 應用程式部署工具 (**AppDeploy.exe**) 在模擬器中執行您的應用程式。 此工具是一個獨立應用程式，可在安裝 Windows Phone 開發工具時一併安裝。  
   
- 如需詳細資訊，請參閱 <<c0> [ 使用應用程式部署工具部署 Windows Phone 8.1 應用程式](http://msdn.microsoft.com/library/23700f82-1399-44d9-bc0c-714be4a48ee6)。  
+ 如需詳細資訊，請參閱 <<c0> [ 使用應用程式部署工具部署 Windows Phone 8.1 應用程式](https://msdn.microsoft.com/library/23700f82-1399-44d9-bc0c-714be4a48ee6)。  
   
 ## <a name="BKMK_toolbar"></a> 使用模擬器工具列設定 Windows Phone 模擬器  
  下表顯示模擬器工具列上所提供的設定按鈕。  

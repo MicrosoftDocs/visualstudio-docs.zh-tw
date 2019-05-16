@@ -9,12 +9,12 @@ caps.latest.revision: 28
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: 35c81dd879866d6a707e58add4a4fa94a254a918
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: a92d0ead091167437904c384b8f9afca2a3ab89c
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63433022"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65696211"
 ---
 # <a name="how-to-upgrade-from-a-trial-edition-of-visual-studio"></a>如何：從 Visual Studio 試用版升級
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,4 +44,4 @@ ms.locfileid: "63433022"
     > 需要網際網路存取才能註冊及解除鎖定任何版本的 Visual Studio。 不過，註冊 Visual Studio 後，網際網路連線便是選擇性的。
 
 ## <a name="see-also"></a>請參閱
- [安裝 Visual Studio](../install/install-visual-studio-2015.md) [登入 Visual Studio](../ide/signing-in-to-visual-studio.md) [如何：找出 Visual Studio 產品金鑰](../install/how-to-locate-the-visual-studio-product-key.md) [找出或變更 Team Foundation Server 的產品金鑰](http://msdn.microsoft.com/library/64f29927-b520-4c9f-b633-bcb527e562cd) [自訂 Visual Studio 中的開發設定](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)
+ [安裝 Visual Studio](../install/install-visual-studio-2015.md) [登入 Visual Studio](../ide/signing-in-to-visual-studio.md) [如何：找出 Visual Studio 產品金鑰](../install/how-to-locate-the-visual-studio-product-key.md) [找出或變更 Team Foundation Server 的產品金鑰](https://msdn.microsoft.com/library/64f29927-b520-4c9f-b633-bcb527e562cd) [自訂 Visual Studio 中的開發設定](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)

@@ -12,12 +12,12 @@ ms.assetid: b2d9079d-39a6-438a-8010-290056694b5c
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 4fe446234317aedbf2090c5ee43d69fd08b1f020
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 74e61e60384b3e98bf26eb8208696ecb9223efa3
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60117456"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65696337"
 ---
 # <a name="error-handling-and-return-values"></a>錯誤處理和傳回值
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -57,6 +57,6 @@ Vspackage 和 COM 錯誤使用相同的架構。 `SetErrorInfo`和`GetErrorInfo`
   
 ## <a name="see-also"></a>另請參閱  
  <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>   
- [SetErrorInfo （元件自動化）](http://msdn.microsoft.com/8eaacfac-fc37-4eaa-870b-10b99d598d66)   
- [GetErrorInfo](http://msdn.microsoft.com/03317526-8c4f-4173-bc10-110c8112676a)   
- [ISupportErrorInfo 介面](http://msdn.microsoft.com/42d33066-36b4-4a5b-aa5d-46682e560f32)
+ [SetErrorInfo （元件自動化）](https://msdn.microsoft.com/8eaacfac-fc37-4eaa-870b-10b99d598d66)   
+ [GetErrorInfo](https://msdn.microsoft.com/03317526-8c4f-4173-bc10-110c8112676a)   
+ [ISupportErrorInfo 介面](https://msdn.microsoft.com/42d33066-36b4-4a5b-aa5d-46682e560f32)

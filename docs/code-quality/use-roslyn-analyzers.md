@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 56637ee7826b944d739e170faf22ae354abd8adc
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7132fae3623e1ad10fb35d2b903935cdbffee12d
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62821293"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65676712"
 ---
 # <a name="use-roslyn-analyzers"></a>使用 Roslyn 分析器
 
@@ -56,7 +56,7 @@ A[規則集](../code-quality/using-rule-sets-to-group-code-analysis-rules.md)是
 若要變更專案中設定使用中的規則，瀏覽至**程式碼分析**專案屬性 索引標籤。 選取下方的清單設定的規則**執行此規則集**。 若要開啟規則集，請選取**開啟**。
 
 > [!NOTE]
-> .NET core 和.NET Standard 專案不會支援功能表命令的規則集所適用**方案總管**，例如**開啟作用中規則集**。 若要指定非預設規則集，是針對.NET Core 或.NET Standard 專案，以手動方式[新增**CodeAnalysisRuleSet**屬性設為專案檔案](using-rule-sets-to-group-code-analysis-rules.md#specify-a-rule-set-for-a-project)。 您可以設定 Visual Studio 中設定的規則，規則集編輯器 UI 內的規則。
+> .NET core 和.NET Standard 專案不會支援功能表命令的規則集所適用**方案總管**，例如**開啟作用中規則集**。 若要指定非預設規則集，是針對.NET Core 或.NET Standard 專案，以手動方式[新增**CodeAnalysisRuleSet**屬性](using-rule-sets-to-group-code-analysis-rules.md#specify-a-rule-set-for-a-project)專案檔。 您仍然可以設定 Visual Studio 中設定的規則，規則集編輯器 UI 內的規則。
 
 ## <a name="rule-severity"></a>規則嚴重性
 

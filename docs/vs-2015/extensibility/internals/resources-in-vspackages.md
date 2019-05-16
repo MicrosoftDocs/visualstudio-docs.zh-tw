@@ -12,12 +12,12 @@ ms.assetid: cc8c17a6-b190-4856-b001-0c1104f104b2
 caps.latest.revision: 24
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 39a05e7d0538cd332bbeaf2cddc48d6b141f0452
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 90674d17cdc3fb8956fd6eedeb3acb27226620cb
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58945652"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65696094"
 ---
 # <a name="resources-in-vspackages"></a>VSPackage 中的資源
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -90,5 +90,5 @@ type="System.Resources.ResXFileRef,System.Windows.Forms">
 ## <a name="see-also"></a>另請參閱  
  [Managed 的 Vspackage](../../misc/managed-vspackages.md)   
  [管理 Vspackage](../../extensibility/managing-vspackages.md)   
- [MFC 應用程式中的當地語系化資源：附屬 Dll](http://msdn.microsoft.com/library/3a1100ae-a9c8-47b5-adbd-cbedef5992ef)   
+ [MFC 應用程式中的當地語系化資源：附屬 Dll](https://msdn.microsoft.com/library/3a1100ae-a9c8-47b5-adbd-cbedef5992ef)   
  [Managed VSPackages](../../misc/managed-vspackages.md)

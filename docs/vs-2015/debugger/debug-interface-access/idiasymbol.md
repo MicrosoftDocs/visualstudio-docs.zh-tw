@@ -13,12 +13,12 @@ caps.latest.revision: 33
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: e190360b4441a937e9bfa9fb317f9d07de506040
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 7c9b267893bacef8c9126b1a17b4eb444af6a1dd
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63447242"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65692892"
 ---
 # <a name="idiasymbol"></a>IDiaSymbol
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -102,7 +102,7 @@ IDiaSymbol : IUnknown
 |[IDiaSymbol::get_hasLongJump](../../debugger/debug-interface-access/idiasymbol-get-haslongjump.md)|擷取旗標，指出函數是否包含 longjmp 命令 （C 樣式例外狀況處理的一部分）。|  
 |[IDiaSymbol::get_hasManagedCode](../../debugger/debug-interface-access/idiasymbol-get-hasmanagedcode.md)|擷取旗標，指出模組是否包含 managed 程式碼。|  
 |[IDiaSymbol::get_hasNestedTypes](../../debugger/debug-interface-access/idiasymbol-get-hasnestedtypes.md)|擷取表示使用者定義資料類型是否有巢狀型別定義的旗標。|  
-|[IDiaSymbol::get_hasSecurityChecks](../../debugger/debug-interface-access/idiasymbol-get-hassecuritychecks.md)|擷取表示函式或編譯模組是否已編譯中的安全性檢查的旗標 (透過[/GS （緩衝區安全性檢查）](http://msdn.microsoft.com/library/8d8a5ea1-cd5e-42e1-bc36-66e1cd7e731e)編譯器參數)。|  
+|[IDiaSymbol::get_hasSecurityChecks](../../debugger/debug-interface-access/idiasymbol-get-hassecuritychecks.md)|擷取表示函式或編譯模組是否已編譯中的安全性檢查的旗標 (透過[/GS （緩衝區安全性檢查）](https://msdn.microsoft.com/library/8d8a5ea1-cd5e-42e1-bc36-66e1cd7e731e)編譯器參數)。|  
 |[IDiaSymbol::get_hasSEH](../../debugger/debug-interface-access/idiasymbol-get-hasseh.md)|擷取旗標，指出函數是否有 Win32 樣式的結構化例外狀況處理。|  
 |[IDiaSymbol::get_hasSetJump](../../debugger/debug-interface-access/idiasymbol-get-hassetjump.md)|擷取旗標，指出函數是否包含 setjmp 命令。|  
 |[IDiaSymbol::get_indirectVirtualBaseClass](../../debugger/debug-interface-access/idiasymbol-get-indirectvirtualbaseclass.md)|擷取旗標，指出是否在使用者定義資料類型間接虛擬基底類別。|  
@@ -117,12 +117,12 @@ IDiaSymbol : IUnknown
 |[IDiaSymbol::get_isCVTCIL](../../debugger/debug-interface-access/idiasymbol-get-iscvtcil.md)|擷取旗標，指出模組是否已轉換成原生程式碼的從通用的中繼語言 (CIL)。|  
 |[IDiaSymbol::get_isDataAligned](../../debugger/debug-interface-access/idiasymbol-get-isdataaligned.md)|擷取旗標，指出使用者定義資料類型的項目是否對齊到特定的界限。|  
 |[IDiaSymbol::get_isHLSLData](../../debugger/debug-interface-access/idiasymbol-get-ishlsldata.md)|指定這個符號表示高階著色器語言 (HLSL) 資料。|  
-|[IDiaSymbol::get_isHotpatchable](../../debugger/debug-interface-access/idiasymbol-get-ishotpatchable.md)|旗標，指出是否已編譯的模組會擷取[/hotpatch （建立可線上修補的影像）](http://msdn.microsoft.com/library/aad539b6-c053-4c78-8682-853d98327798)編譯器參數。|  
+|[IDiaSymbol::get_isHotpatchable](../../debugger/debug-interface-access/idiasymbol-get-ishotpatchable.md)|旗標，指出是否已編譯的模組會擷取[/hotpatch （建立可線上修補的影像）](https://msdn.microsoft.com/library/aad539b6-c053-4c78-8682-853d98327798)編譯器參數。|  
 |[IDiaSymbol::get_isLTCG](../../debugger/debug-interface-access/idiasymbol-get-isltcg.md)|擷取旗標，指出是否受管理的編譯模組與 LTCG 連結器的連結。|  
 |[IDiaSymbol::get_isMatrixRowMajor](../../debugger/debug-interface-access/idiasymbol-get-ismatrixrowmajor.md)|指定矩陣是否為主要的資料列。|  
 |[IDiaSymbol::get_isMSILNetmodule](../../debugger/debug-interface-access/idiasymbol-get-ismsilnetmodule.md)|擷取旗標，指出受管理的編譯模組是否.netmodule （包含僅中繼資料）。|  
 |[IDiaSymbol::get_isMultipleInheritance](../../debugger/debug-interface-access/idiasymbol-get-ismultipleinheritance.md)|指定是否`this`指標會指向具有多重繼承的資料成員。|  
-|[IDiaSymbol::get_isNaked](../../debugger/debug-interface-access/idiasymbol-get-isnaked.md)|擷取旗標，指出函數是否有[naked](http://msdn.microsoft.com/library/69723241-05e1-439b-868e-20a83a16ab6d)屬性。|  
+|[IDiaSymbol::get_isNaked](../../debugger/debug-interface-access/idiasymbol-get-isnaked.md)|擷取旗標，指出函數是否有[naked](https://msdn.microsoft.com/library/69723241-05e1-439b-868e-20a83a16ab6d)屬性。|  
 |[IDiaSymbol::get_isOptimizedAway](../../debugger/debug-interface-access/idiasymbol-get-isoptimizedaway.md)|指定是否要繼續最佳化變數。|  
 |[IDiaSymbol::get_isPointerBasedOnSymbolValue](../../debugger/debug-interface-access/idiasymbol-get-ispointerbasedonsymbolvalue.md)|指定是否`this`指標為基礎的符號值。|  
 |[IDiaSymbol::get_isPointerToDataMember](../../debugger/debug-interface-access/idiasymbol-get-ispointertodatamember.md)|指定這個符號是否為資料成員的指標。|  
@@ -152,8 +152,8 @@ IDiaSymbol : IUnknown
 |[IDiaSymbol::get_msil](../../debugger/debug-interface-access/idiasymbol-get-msil.md)|擷取表示符號是否參考到 Microsoft Intermediate Language (MSIL) 程式碼的旗標。|  
 |[IDiaSymbol::get_name](../../debugger/debug-interface-access/idiasymbol-get-name.md)|擷取的符號名稱。|  
 |[IDiaSymbol::get_nested](../../debugger/debug-interface-access/idiasymbol-get-nested.md)|擷取旗標，指出是否在使用者定義資料類型巢狀。|  
-|[IDiaSymbol::get_noInline](../../debugger/debug-interface-access/idiasymbol-get-noinline.md)|旗標，指出是否以標記函式會擷取[noinline](http://msdn.microsoft.com/library/f259d55b-dec7-4bde-8cf9-14521e4fdc42)屬性。|  
-|[IDiaSymbol::get_noReturn](../../debugger/debug-interface-access/idiasymbol-get-noreturn.md)|旗標，指出是否使用宣告的函式會擷取[noreturn](http://msdn.microsoft.com/library/9c6517e5-22d7-4051-9974-3d2200ae4d1d)屬性。|  
+|[IDiaSymbol::get_noInline](../../debugger/debug-interface-access/idiasymbol-get-noinline.md)|旗標，指出是否以標記函式會擷取[noinline](https://msdn.microsoft.com/library/f259d55b-dec7-4bde-8cf9-14521e4fdc42)屬性。|  
+|[IDiaSymbol::get_noReturn](../../debugger/debug-interface-access/idiasymbol-get-noreturn.md)|旗標，指出是否使用宣告的函式會擷取[noreturn](https://msdn.microsoft.com/library/9c6517e5-22d7-4051-9974-3d2200ae4d1d)屬性。|  
 |[IDiaSymbol::get_noStackOrdering](../../debugger/debug-interface-access/idiasymbol-get-nostackordering.md)|擷取旗標，指出是否沒有堆疊順序進行堆疊緩衝區檢查的一部分。|  
 |[IDiaSymbol::get_notReached](../../debugger/debug-interface-access/idiasymbol-get-notreached.md)|擷取旗標，指出是否函式或標籤永遠不會到達。|  
 |[IDiaSymbol::get_numberOfAcceleratorPointerTags](../../debugger/debug-interface-access/idiasymbol-get-numberofacceleratorpointertags.md)|傳回的加速器指標中的標記數目C++AMP 虛設常式的函式。|  

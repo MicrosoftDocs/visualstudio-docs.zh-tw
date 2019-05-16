@@ -1,5 +1,5 @@
 ---
-title: HOW TO：將複數表示開啟和關閉 （O-R 設計工具） |Microsoft Docs
+title: 作法：將複數表示開啟和關閉 （O-R 設計工具） |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-data-tools
@@ -9,12 +9,12 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a446e91095d9498a6182d1f80d046382b64e876e
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: c8497f63e2b4dc51caa69b1babe0d707e8370aab
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63384287"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65704958"
 ---
 # <a name="how-to-turn-pluralization-on-and-off-or-designer"></a>HOW TO：開啟和關閉複數表示 (O/R 設計工具)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,5 +43,5 @@ ms.locfileid: "63384287"
   
 ## <a name="see-also"></a>另請參閱  
  [LINQ to SQL 工具，在 Visual Studio 中](../data-tools/linq-to-sql-tools-in-visual-studio2.md)   
- [LINQ to SQL](http://msdn.microsoft.com/library/73d13345-eece-471a-af40-4cc7a2f11655)   
+ [LINQ to SQL](https://msdn.microsoft.com/library/73d13345-eece-471a-af40-4cc7a2f11655)   
  [存取 Visual Studio 中的資料](../data-tools/accessing-data-in-visual-studio.md)

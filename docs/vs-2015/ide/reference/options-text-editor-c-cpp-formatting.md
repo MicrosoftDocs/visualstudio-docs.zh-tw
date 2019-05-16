@@ -16,12 +16,12 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ea9f23147c6ad7a8b3b28f799b90044763d36d16
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 66adcdeca1aa794649b42f4ae153d9b2f879deff
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63441380"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65697143"
 ---
 # <a name="options-text-editor-cc-formatting"></a>格式、C/C++、文字編輯器、選項
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -31,7 +31,7 @@ ms.locfileid: "63441380"
  若要存取這個頁面，請在 [選項] 對話方塊的左窗格中依序展開 [文字編輯器] 和 [C/C++]，然後按一下 [格式]。  
   
 > [!NOTE]
-> 在下列指示的某些 Visual Studio 使用者介面項目中，您的電腦可能會顯示不同的名稱或位置。 您所擁有的 Visual Studio 版本以及使用的設定會決定這些項目。 如需詳細資訊，請參閱 [在 Visual Studio 中自訂開發設定](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)  
+> 在下列指示的某些 Visual Studio 使用者介面項目中，您的電腦可能會顯示不同的名稱或位置。 您所擁有的 Visual Studio 版本以及使用的設定會決定這些項目。 如需詳細資訊，請參閱 [在 Visual Studio 中自訂開發設定](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)  
   
 ## <a name="cc-options"></a>C/C++ 選項  
  **啟用自動快速諮詢工具提示**  
@@ -66,16 +66,16 @@ ms.locfileid: "63441380"
  在文字編輯器中開啟檔案時，可以啟用大網功能。 如需詳細資訊，請參閱[大綱](../../ide/outlining.md)。 選取這個選項後，在您開啟檔案時將會啟用大綱功能。  
   
  **#pragma 區域區塊的自動大綱**  
- 選取這個選項時，會啟用 [pragma 指示詞](http://msdn.microsoft.com/library/9867b438-ac64-4e10-973f-c3955209873f)的自動大綱。 這可讓您在大綱模式下展開或摺疊 Pragma 區域區塊。  
+ 選取這個選項時，會啟用 [pragma 指示詞](https://msdn.microsoft.com/library/9867b438-ac64-4e10-973f-c3955209873f)的自動大綱。 這可讓您在大綱模式下展開或摺疊 Pragma 區域區塊。  
   
  **陳述式區塊的自動大綱**  
  選取這個選項時，會啟用下列陳述式結構的自動大綱：  
   
-- [if-else](http://msdn.microsoft.com/library/d9a1d562-8cf5-4bd4-9ba7-8ad970cd25b2)  
+- [if-else](https://msdn.microsoft.com/library/d9a1d562-8cf5-4bd4-9ba7-8ad970cd25b2)  
   
-- [switch 陳述式 (C++)](http://msdn.microsoft.com/library/6c3f3ed3-5593-463c-8f4b-b33742b455c6)  
+- [switch 陳述式 (C++)](https://msdn.microsoft.com/library/6c3f3ed3-5593-463c-8f4b-b33742b455c6)  
   
-- [while 陳述式 (C++)](http://msdn.microsoft.com/library/358dbe76-5e5e-4af5-b575-c2293c636899)  
+- [while 陳述式 (C++)](https://msdn.microsoft.com/library/358dbe76-5e5e-4af5-b575-c2293c636899)  
   
 ## <a name="see-also"></a>請參閱  
  [選項對話方塊、環境、一般](../../ide/reference/general-environment-options-dialog-box.md)   

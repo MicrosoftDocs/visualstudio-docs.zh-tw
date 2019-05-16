@@ -20,14 +20,14 @@ caps.latest.revision: 21
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: cb1747341de65a5f642790410c35eee35620575e
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 739538d82a478f182c06de0e34b13f8a1bd2b2e0
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63442706"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65690050"
 ---
-# <a name="how-to-stop-code-changes"></a>HOW TO：停止程式碼變更
+# <a name="how-to-stop-code-changes"></a>作法：停止程式碼變更
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 當 [編輯後繼續] 正在套用程式碼變更時，您可以停止該作業。  
@@ -45,4 +45,4 @@ ms.locfileid: "63442706"
   
 ## <a name="see-also"></a>另請參閱  
  [編輯後繼續](../debugger/edit-and-continue.md)   
- [選項對話方塊、偵錯、編輯後繼續](http://msdn.microsoft.com/library/009d225f-ef65-463f-a146-e4c518f86103)
+ [選項對話方塊、偵錯、編輯後繼續](https://msdn.microsoft.com/library/009d225f-ef65-463f-a146-e4c518f86103)

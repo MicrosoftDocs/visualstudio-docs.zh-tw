@@ -13,12 +13,12 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 84a2449e9686f71cfd932a2bf6047ed0208da1d0
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: d8e88bcf67c430bdd24c4338d92a30b6a7c10fef
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60114804"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65675002"
 ---
 # <a name="managing-application-settings-net"></a>管理應用程式設定 (.NET)
 
@@ -59,7 +59,7 @@ ms.locfileid: "60114804"
 >
 > 如果您是從外部來源取得連接字串資訊 (例如使用者提供使用者 ID 和密碼)，請務必確保您用來建構連接字串的值不能包含會變更連接行為的其他連接字串參數。
 >
-> 您可以考慮使用 [受保護的組態] 功能，將組態檔中的重要資訊加密。 如需詳細資訊，請參閱[保護連接資訊](http://msdn.microsoft.com/library/1471f580-bcd4-4046-bdaf-d2541ecda2f4)。
+> 您可以考慮使用 [受保護的組態] 功能，將組態檔中的重要資訊加密。 如需詳細資訊，請參閱[保護連接資訊](https://msdn.microsoft.com/library/1471f580-bcd4-4046-bdaf-d2541ecda2f4)。
 
 > [!NOTE]
 > 由於類別庫 (Class Library) 沒有組態檔模型，因此應用程式設定不適用於類別庫專案。 但是 Visual Studio Tools for Office DLL 專案例外，它可以有組態檔。
@@ -74,7 +74,7 @@ ms.locfileid: "60114804"
 
 ## <a name="accessing-or-changing-application-settings-at-run-time-in-visual-basic"></a>於執行階段在 Visual Basic 中存取或變更應用程式設定
 
-在 [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] 專案中，您可以使用 `My.Settings` 物件在執行階段存取應用程式設定。 請在 [設定]  頁中，按一下 [檢視程式碼]  按鈕，以檢視 Settings.vb 檔案 Settings.vb 會定義 `Settings` 類別，讓您用來處理設定類別上的下列事件： <xref:System.Configuration.ApplicationSettingsBase.SettingChanging>、 <xref:System.Configuration.ApplicationSettingsBase.PropertyChanged>、 <xref:System.Configuration.ApplicationSettingsBase.SettingsLoaded>和 <xref:System.Configuration.ApplicationSettingsBase.SettingsSaving>。 請注意，Settings.vb 中的 `Settings` 類別是部分類別，只會顯示使用者所擁有的程式碼，不會顯示整個產生的類別。 如需使用 `My.Settings` 物件存取應用程式設定的詳細資訊，請參閱 [Accessing Application Settings](http://msdn.microsoft.com/library/e38d0cc7-247a-46ca-ba04-f2913f0adb2e)。
+在 [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] 專案中，您可以使用 `My.Settings` 物件在執行階段存取應用程式設定。 請在 [設定]  頁中，按一下 [檢視程式碼]  按鈕，以檢視 Settings.vb 檔案 Settings.vb 會定義 `Settings` 類別，讓您用來處理設定類別上的下列事件： <xref:System.Configuration.ApplicationSettingsBase.SettingChanging>、 <xref:System.Configuration.ApplicationSettingsBase.PropertyChanged>、 <xref:System.Configuration.ApplicationSettingsBase.SettingsLoaded>和 <xref:System.Configuration.ApplicationSettingsBase.SettingsSaving>。 請注意，Settings.vb 中的 `Settings` 類別是部分類別，只會顯示使用者所擁有的程式碼，不會顯示整個產生的類別。 如需使用 `My.Settings` 物件存取應用程式設定的詳細資訊，請參閱 [Accessing Application Settings](https://msdn.microsoft.com/library/e38d0cc7-247a-46ca-ba04-f2913f0adb2e)。
 
 使用者在執行階段所變更之任何使用者範圍的設定值 (例如表單的位置)，都會儲存在 user.config 檔案中。 請注意，預設值仍然是儲存在 app.config 中。
 
@@ -98,8 +98,8 @@ Properties.Settings.Default.FirstUserSetting = "abc";
 Properties.Settings.Default.Save();
 ```
 
-如需透過 `Settings` 類別存取應用程式設定的一般資訊，請參閱[應用程式設定概觀](http://msdn.microsoft.com/library/0dd8bca5-a6bf-4ac4-8eec-5725d08b38dc)。 如需逐一查看設定的詳細資訊，請參閱此 [論壇文章](http://social.msdn.microsoft.com/Forums/vstudio/40fbb470-f1e8-4a02-a4a0-9f62b54d0fc4/is-this-possible-propertiessettingsdefault?forum=csharpgeneral)。
+如需透過 `Settings` 類別存取應用程式設定的一般資訊，請參閱[應用程式設定概觀](https://msdn.microsoft.com/library/0dd8bca5-a6bf-4ac4-8eec-5725d08b38dc)。 如需逐一查看設定的詳細資訊，請參閱此 [論壇文章](http://social.msdn.microsoft.com/Forums/vstudio/40fbb470-f1e8-4a02-a4a0-9f62b54d0fc4/is-this-possible-propertiessettingsdefault?forum=csharpgeneral)。
 
 ## <a name="see-also"></a>請參閱
 
-- [存取應用程式設定](http://msdn.microsoft.com/library/e38d0cc7-247a-46ca-ba04-f2913f0adb2e)
+- [存取應用程式設定](https://msdn.microsoft.com/library/e38d0cc7-247a-46ca-ba04-f2913f0adb2e)

@@ -14,12 +14,12 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c928d9f939db96ae302620952bbb6bbdedc396a3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 039e6d5ae21059692aecc05de51bc2b311436334
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62580623"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65695635"
 ---
 # <a name="creating-a-ui-by-using-xaml-designer-in-visual-studio"></a>在 Visual Studio 中使用 XAML 設計工具建立 UI
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,7 +42,7 @@ Visual Studio 中的 XAML 設計工具提供視覺化介面，協助您設計以
 
  **對齊線**：對齊線是當控制項邊緣對齊時，或文字基線對齊時顯示為紅色虛線的「對齊界限」。 只有在啟用 [貼齊至對齊線]  時才會顯示對齊界限。
 
- **格線滑軌**：`Grid` 滑軌可用來管理 [[格線]](http://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.controls.grid.aspx) 面板中的資料列和資料行。 您可以建立及刪除列和欄，以及調整其相對寬度和高度。 出現在畫板左邊的垂直 Grid 滑軌適用於列，而出現在頂端的水平線則適用於欄。
+ **格線滑軌**：`Grid` 滑軌可用來管理 [[格線]](https://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.controls.grid.aspx) 面板中的資料列和資料行。 您可以建立及刪除列和欄，以及調整其相對寬度和高度。 出現在畫板左邊的垂直 Grid 滑軌適用於列，而出現在頂端的水平線則適用於欄。
 
  **格線提示**：`Grid` 提示會顯示為 `Grid` 滑軌上已附加垂直或水平線的三角形。 當您拖曳 `Grid` 裝飾項時，相鄰欄或列的寬度或高度會在您移動滑鼠時更新。
 
@@ -50,7 +50,7 @@ Visual Studio 中的 XAML 設計工具提供視覺化介面，協助您設計以
 
  **調整控點大小**：調整控點大小會出現在選取的控制項上，讓您調整控制項的大小。 當您調整控制項的大小時，通常會出現寬度和高度值，協助您調整控制項的大小。 如需在 [設計] 檢視中操作控制項的詳細資訊，請參閱 [Working with elements in XAML Designer](../designers/working-with-elements-in-xaml-designer.md)。
 
- **邊界**：邊界代表控制項邊緣與其容器邊緣之間的固定間距。 您可以使用 [屬性] 視窗中 [[版面配置]](http://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.frameworkelement.margin.aspx) 底下的 **Margin** 屬性設定控制項的邊界。
+ **邊界**：邊界代表控制項邊緣與其容器邊緣之間的固定間距。 您可以使用 [屬性] 視窗中 [[版面配置]](https://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.frameworkelement.margin.aspx) 底下的 **Margin** 屬性設定控制項的邊界。
 
  **邊界提示**：您可以使用邊界裝飾項來變更項目相對於其版面配置容器的邊界。 當邊界裝飾項呈開啟狀態時，則未設定邊界且邊界裝飾項會顯示中斷的鏈結。 如果未設定邊界，則在執行階段調整版面配置容器的大小時，項目的位置維持不變。 當邊界裝飾項呈關閉狀態時，邊界裝飾項會顯示不中斷的鏈結，而且在執行階段調整版面配置容器的大小時，項目會隨著邊界移動 (邊界會保持固定)。
 

@@ -26,12 +26,12 @@ caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: f2e0cde0ca0026018c39557362e0ad090a568cfe
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: e18cda54431eec580464ccb59c5c6b6cce87d225
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54804715"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65701120"
 ---
 # <a name="culture-specific-classes-for-global-windows-forms-and-web-forms"></a>全域 Windows Form 和 Web Form 的文化特性特定類別
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,7 +39,7 @@ ms.locfileid: "54804715"
 每個文化特性對於顯示日期、時間、數字、貨幣及其他資訊都有不同的慣例。 <xref:System.Globalization> 命名空間包含的類別可用來修改文化特性 (Culture) 特定值的顯示方式，例如 <xref:System.Globalization.DateTimeFormatInfo>、**Calendar** 和 <xref:System.Globalization.NumberFormatInfo>。  
   
 ## <a name="using-the-culture-setting"></a>使用文化特性設定  
- 但大部分的情況，您會使用文化特性設定 (儲存於應用程式或控制台的 [地區選項] 中) 自動在執行階段判斷慣例並據以格式化資訊。 如需設定文化特性的詳細資訊，請參閱[如何：設定 Windows Form 全球化的文化特性和 UI 文化特性](http://msdn.microsoft.com/694e049f-0b91-474a-9789-d35124f248f0)或[如何：為 ASP.NET 網頁全球化設定文化特性和 UI 文化特性](http://msdn.microsoft.com/library/76091f86-f967-4687-a40f-de87bd8cc9a0)。 根據文化特性設定自動格式化資訊的類別，稱為文化特性專用。 一部分的文化特性 (Culture) 特定方法為 <xref:System.IFormattable.ToString%2A?displayProperty=fullName>、<xref:System.Console.WriteLine%2A?displayProperty=fullName> 和 <xref:System.String.Format%2A?displayProperty=fullName>。 一些文化特性函式 (在 Visual Basic 語言中) 如 `MonthName` 和 `WeekDayName`。  
+ 但大部分的情況，您會使用文化特性設定 (儲存於應用程式或控制台的 [地區選項] 中) 自動在執行階段判斷慣例並據以格式化資訊。 如需如何設定文化特性 (Culture) 的詳細資訊，請參閱 [How to:設定 Windows Form 全球化的文化特性和 UI 文化特性](https://msdn.microsoft.com/694e049f-0b91-474a-9789-d35124f248f0)或[How to:為 ASP.NET 網頁全球化設定文化特性和 UI 文化特性](https://msdn.microsoft.com/library/76091f86-f967-4687-a40f-de87bd8cc9a0)。 根據文化特性設定自動格式化資訊的類別，稱為文化特性專用。 一部分的文化特性 (Culture) 特定方法為 <xref:System.IFormattable.ToString%2A?displayProperty=fullName>、<xref:System.Console.WriteLine%2A?displayProperty=fullName> 和 <xref:System.String.Format%2A?displayProperty=fullName>。 一些文化特性函式 (在 Visual Basic 語言中) 如 `MonthName` 和 `WeekDayName`。  
   
  例如，下列程式碼示範如何使用 <xref:System.IFormattable.ToString%2A> 方法來針對目前的文化特性 (Culture) 對貨幣進行格式化：  
   
@@ -70,7 +70,7 @@ Console.WriteLine(myInt.ToString("C", Thread.CurrentThread.CurrentCulture));
   
  `$100.00`  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  <xref:System.IFormattable.ToString%2A?displayProperty=fullName>   
  <xref:System.Globalization.DateTimeFormatInfo>   
  <xref:System.Globalization.NumberFormatInfo>   

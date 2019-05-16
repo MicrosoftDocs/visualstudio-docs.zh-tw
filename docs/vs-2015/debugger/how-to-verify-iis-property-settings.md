@@ -1,5 +1,5 @@
 ---
-title: HOW TO：檢查 IIS 屬性設定 |Microsoft Docs
+title: 作法：檢查 IIS 屬性設定 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -20,12 +20,12 @@ caps.latest.revision: 15
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 6ab2b6981094ffbdfcd6544198179924b4e1c53a
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: ac2ce4f823d82d8a0d8569e15c4ba8920d91d36c
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63444777"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65686838"
 ---
 # <a name="how-to-verify-iis-property-settings"></a>HOW TO：確認 IIS 屬性設定
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ ms.locfileid: "63444777"
 您可以使用 IIS 系統管理工具設定 Web 應用程式的屬性。 必須正確設定這些屬性才能順利執行應用程式，因此驗證這些設定通常都是疑難排解的必要步驟。  
   
 > [!NOTE]
-> 根據您目前使用的設定或版本，您所看到的對話方塊與功能表命令可能會與 [說明] 中描述的不同。 若要變更設定，請從 [ **工具** ] 功能表中選取 [ **匯入和匯出設定** ]。 如需詳細資訊，請參閱 [在 Visual Studio 中自訂開發設定](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)  
+> 根據您目前使用的設定或版本，您所看到的對話方塊與功能表命令可能會與 [說明] 中描述的不同。 若要變更設定，請從 [ **工具** ] 功能表中選取 [ **匯入和匯出設定** ]。 如需詳細資訊，請參閱 [在 Visual Studio 中自訂開發設定](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)  
   
 ### <a name="to-check-iis-settings-for-the-web-application"></a>若要檢查 Web 應用程式的 IIS 設定  
   
@@ -61,7 +61,7 @@ ms.locfileid: "63444777"
   
     3. 按一下 [確定] 關閉 [驗證方法] 對話方塊。  
   
-5. 對於 ATL Server 應用程式，請驗證偵錯動詞命令 (DEBUG Verb) 是否與您的 ISAPI 副檔名有關聯。 如需詳細資訊，請參閱[如何：延伸模組相關聯 DEBUG 動詞命令](http://msdn.microsoft.com/50d261d3-4bd4-41c0-b44e-3591086f121e)。  
+5. 對於 ATL Server 應用程式，請驗證偵錯動詞命令 (DEBUG Verb) 是否與您的 ISAPI 副檔名有關聯。 如需詳細資訊，請參閱[如何：延伸模組相關聯 DEBUG 動詞命令](https://msdn.microsoft.com/50d261d3-4bd4-41c0-b44e-3591086f121e)。  
   
 6. 針對 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 應用程式，請確定應用程式的虛擬資料夾在 [網際網路資訊服務 (IIS) 管理員]、[網際網路服務管理員] 或 [網際網路資訊服務] 中已設定 [應用程式名稱]。  
   

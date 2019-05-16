@@ -17,12 +17,12 @@ caps.latest.revision: 38
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: d603d2435183581cac92a7c6dae6a4044d8f8fe5
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 2f67acff26d346b915f6b457fc0887f1d5f2ec3b
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60087426"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65695907"
 ---
 # <a name="debug-64-bit-applications"></a>偵錯 64 位元應用程式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -58,8 +58,8 @@ ms.locfileid: "60087426"
 - 您在使用 Visual Studio 時遇到停止回應或效能問題。 如果此問題經常發生，您可以收集 Visual Studio 的傾印 (devenv.exe) 和背景工作處理序 (msvsmon.exe)，然後傳送給 Microsoft。 
   
 ## <a name="see-also"></a>另請參閱  
- [64 位元應用程式](http://msdn.microsoft.com/library/fd4026bc-2c3d-4b27-86dc-ec5e96018181)   
- [為 64 位元設定程式](http://msdn.microsoft.com/library/cb99f72b-8c74-48f4-846a-8921b37b97e9)   
+ [64 位元應用程式](https://msdn.microsoft.com/library/fd4026bc-2c3d-4b27-86dc-ec5e96018181)   
+ [為 64 位元設定程式](https://msdn.microsoft.com/library/cb99f72b-8c74-48f4-846a-8921b37b97e9)   
  [Visual Studio IDE 64 位元支援](../ide/visual-studio-ide-64-bit-support.md)   
  [使用傾印檔案](../debugger/using-dump-files.md)   
  [Remote Debugging](../debugger/remote-debugging.md)

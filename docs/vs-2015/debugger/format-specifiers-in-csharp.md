@@ -27,12 +27,12 @@ caps.latest.revision: 34
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 47287bdc5bf0081970f4077ee8749a1ed0d71dad
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 6085ba95d3880417e517530069734052741113e2
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60118236"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65682494"
 ---
 # <a name="format-specifiers-in-c"></a>在 C 中的格式規範\#
 
@@ -64,7 +64,7 @@ ms.locfileid: "60118236"
 
 |指定名稱|格式|原始的監看值|顯示|
 |---------------|------------|--------------------------|--------------|
-|ac|強制評估運算式。 在隱含評估屬性和隱含函式呼叫關閉時，這就會很有用。 請參閱 [Side Effects and Expressions](http://msdn.microsoft.com/library/e1f8a6ea-9e19-481d-b6bd-df120ad3bf4e)。|訊息「使用者已關閉隱含函式評估」|\<值>|
+|ac|強制評估運算式。 在隱含評估屬性和隱含函式呼叫關閉時，這就會很有用。 請參閱 [Side Effects and Expressions](https://msdn.microsoft.com/library/e1f8a6ea-9e19-481d-b6bd-df120ad3bf4e)。|訊息「使用者已關閉隱含函式評估」|\<值>|
 |d|十進位整數|0x0065|101|
 |動態|使用動態檢視顯示指定的物件|顯示物件所有成員，包括動態檢視|只顯示動態檢視|
 |h|十六進位整數|61541|0x0000F065|
@@ -76,4 +76,4 @@ ms.locfileid: "60118236"
 ## <a name="see-also"></a>另請參閱
 
 - [監看式及快速監看式視窗](../debugger/watch-and-quickwatch-windows.md)
-- [變數視窗](http://msdn.microsoft.com/library/ce0a67f6-2502-4b7a-ba45-cc32f8aeba3e)
+- [變數視窗](https://msdn.microsoft.com/library/ce0a67f6-2502-4b7a-ba45-cc32f8aeba3e)

@@ -17,12 +17,12 @@ caps.latest.revision: 33
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 869a756b1995a1ae5de3736fcee4ccede6cb46e5
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: a09f32f90ffca081fb8bf405f5d661160e8d4adf
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63427102"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65686359"
 ---
 # <a name="trusted-application-deployment-overview"></a>受信任的應用程式部署概觀
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -80,7 +80,7 @@ ms.locfileid: "63427102"
   
 - <xref:System.Security.Cryptography?displayProperty=fullName> 命名空間。  
   
-- CertMgr.exe，這是 Internet Explorer 的元件，因此存在於 Windows 98 和所有更新版本上。 如需詳細資訊，請參閱 < [Certmgr.exe （憑證管理員工具）](http://msdn.microsoft.com/library/7e953b43-1374-4bbc-814f-53ca1b6b52bb)。  
+- CertMgr.exe，這是 Internet Explorer 的元件，因此存在於 Windows 98 和所有更新版本上。 如需詳細資訊，請參閱 < [Certmgr.exe （憑證管理員工具）](https://msdn.microsoft.com/library/7e953b43-1374-4bbc-814f-53ca1b6b52bb)。  
   
 ### <a name="create-a-clickonce-application"></a>建立 ClickOnce 應用程式  
  [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 應用程式是 [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] 用戶端應用程式，並結合描述應用程式及提供安裝參數的資訊清單檔案。 您可以使用 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 中的 [發行]  命令 ，將程式變成 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]應用程式。 或者，您可以使用 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 隨附的工具，產生 [!INCLUDE[winsdklong](../includes/winsdklong-md.md)]部署所需的所有檔案。 如需詳細步驟[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]部署，請參閱[逐步解說：手動部署 ClickOnce 應用程式](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)。  
@@ -88,12 +88,12 @@ ms.locfileid: "63427102"
  信任的應用程式部署是 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]所特有，並且僅能與 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 應用程式搭配使用。  
   
 ### <a name="sign-the-deployment"></a>簽署部署  
- 取得您的憑證之後，必須用它來簽署您的部署。 如果您使用 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 發行精靈來部署應用程式，精靈會自動產生測試憑證 (如果您未自行指定憑證的話)。 不過，您也可以使用 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 專案設計工具視窗，提供由 CA 所提供的憑證。  另請參閱[How to:發行 ClickOnce 應用程式使用發行精靈](http://msdn.microsoft.com/library/31kztyey\(v=vs.110\))或[How to:使用發佈精靈發佈 ClickOnce 應用程式](http://msdn.microsoft.com/library/31kztyey\(v=vs.110\))。  
+ 取得您的憑證之後，必須用它來簽署您的部署。 如果您使用 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 發行精靈來部署應用程式，精靈會自動產生測試憑證 (如果您未自行指定憑證的話)。 不過，您也可以使用 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 專案設計工具視窗，提供由 CA 所提供的憑證。  另請參閱[How to:發行 ClickOnce 應用程式使用發行精靈](https://msdn.microsoft.com/library/31kztyey\(v=vs.110\))或[How to:使用發佈精靈發佈 ClickOnce 應用程式](https://msdn.microsoft.com/library/31kztyey\(v=vs.110\))。  
   
 > [!CAUTION]
 > 我們不建議使用測試憑證來部署應用程式。  
   
- 您也可以使用 Mage.exe 或 MageUI.exe SDK 工具簽署應用程式。 如需詳細資訊，請參閱[逐步解說：手動部署 ClickOnce 應用程式](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)。 如需與部署簽署相關的命令列選項的完整清單，請參閱 < [Mage.exe （資訊清單產生和編輯工具）](http://msdn.microsoft.com/library/77dfe576-2962-407e-af13-82255df725a1)。  
+ 您也可以使用 Mage.exe 或 MageUI.exe SDK 工具簽署應用程式。 如需詳細資訊，請參閱[逐步解說：手動部署 ClickOnce 應用程式](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)。 如需與部署簽署相關的命令列選項的完整清單，請參閱 < [Mage.exe （資訊清單產生和編輯工具）](https://msdn.microsoft.com/library/77dfe576-2962-407e-af13-82255df725a1)。  
   
 ### <a name="publish-the-application"></a>發行應用程式  
  一旦您簽署了 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 資訊清單，應用程式便已準備好要發行到您的安裝位置。 安裝位置可以是 Web 伺服器、檔案共用或本機磁碟。 當用戶端存取第一次部署資訊清單時，信任管理員必須選擇是否已授與 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 應用程式權限，以便以已安裝之信任發行者的較高信任層級執行。 信任管理員會藉由比較用來簽署部署的憑證與儲存在用戶端信任的發行者存放區的憑證，來進行這項選擇。 如果信任管理員找到相符項目，應用程式會以高信任執行。  
@@ -105,5 +105,5 @@ ms.locfileid: "63427102"
  您可以使用信任的應用程式部署，授與提高的信任給透過 Web 或企業共用部署的 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 應用程式。 您不必針對在 CD 上散發的 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 應用程式使用信任的應用程式部署，因為依預設，這些應用程式便已被授與完全信任。  
   
 ## <a name="see-also"></a>另請參閱  
- [Mage.exe (資訊清單產生和編輯工具)](http://msdn.microsoft.com/library/77dfe576-2962-407e-af13-82255df725a1)   
+ [Mage.exe (資訊清單產生和編輯工具)](https://msdn.microsoft.com/library/77dfe576-2962-407e-af13-82255df725a1)   
  [逐步解說：手動部署 ClickOnce 應用程式](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)

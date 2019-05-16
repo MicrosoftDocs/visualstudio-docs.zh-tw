@@ -11,12 +11,12 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 19ffa241fdc1f58500c7065e2cee2a33340e33f8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ed47509467bd8691b6f81dbd52fac47cf21c3715
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62423300"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65698200"
 ---
 # <a name="visual-c-structures-in-class-designer"></a>類別設計工具中的 Visual C++ 結構
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ struct MyStructure
 };  
 ```  
   
- 如需使用 `struct` 類型的詳細資訊，請參閱 [struct](http://msdn.microsoft.com/library/3c6ba273-e248-4ff1-8c69-d2abcf1263c6)。  
+ 如需使用 `struct` 類型的詳細資訊，請參閱 [struct](https://msdn.microsoft.com/library/3c6ba273-e248-4ff1-8c69-d2abcf1263c6)。  
   
  類別圖表中的 C++ 結構圖形外觀和運作方式類似類別圖形，不同之處在於標籤會讀為 **Struct**，而且有方角而非圓角。  
   
@@ -42,5 +42,5 @@ struct MyStructure
   
 ## <a name="see-also"></a>請參閱  
  [使用 Visual C++ 程式碼 (類別設計工具)](../ide/working-with-visual-cpp-code-class-designer.md)   
- [類別和結構](http://msdn.microsoft.com/library/516dd496-13fb-4f17-845a-e9ca45437873)   
- [struct](http://msdn.microsoft.com/library/3c6ba273-e248-4ff1-8c69-d2abcf1263c6)
+ [類別和結構](https://msdn.microsoft.com/library/516dd496-13fb-4f17-845a-e9ca45437873)   
+ [struct](https://msdn.microsoft.com/library/3c6ba273-e248-4ff1-8c69-d2abcf1263c6)

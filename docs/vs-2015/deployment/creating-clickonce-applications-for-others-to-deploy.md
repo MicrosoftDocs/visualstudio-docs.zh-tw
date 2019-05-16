@@ -25,12 +25,12 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 049d557959a53c00be461a2b0e44338216c7e3a3
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: ff76fe46f07ef713cb3c0e529e8029730450f2a6
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58942329"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65675594"
 ---
 # <a name="creating-clickonce-applications-for-others-to-deploy"></a>建立 ClickOnce 應用程式供其他人部署
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -55,7 +55,7 @@ ms.locfileid: "58942329"
 ## <a name="creating-customer-deployments-by-using-application-manifest-for-trust"></a>使用信任的應用程式資訊清單建立客戶部署  
  .NET Framework 3.5 中的 ClickOnce 包含新的功能，可讓開發人員和客戶的新解決方案的案例是簽署資訊清單的方式。 ClickOnce 應用程式資訊清單支援新的項目，名為`<useManifestForTrust>`，可讓開發人員若要表示應用程式資訊清單的數位簽章是什麼應該用來進行信任決策。 開發人員使用 ClickOnce 封裝工具-Mage.exe、 MageUI.exe 等 Visual Studio，在應用程式資訊清單中，包含這個項目以及內嵌資訊清單中的發行者名稱與應用程式的名稱。  
   
- 當使用`<useManifestForTrust>`，不需要使用憑證授權單位所核發的 Authenticode 憑證來簽署部署資訊清單。 相反地，它可以使用所謂的自我簽署憑證簽署。 自我簽署的憑證是由客戶或開發人員產生使用標準的.NET Framework SDK 工具，，，然後使用標準的 ClickOnce 部署工具，以套用至部署資訊清單。 如需詳細資訊，請參閱 < [Makecert.exe （憑證建立工具）](http://msdn.microsoft.com/library/b0343f8e-9c41-4852-a85c-f8a0c408cf0d)。  
+ 當使用`<useManifestForTrust>`，不需要使用憑證授權單位所核發的 Authenticode 憑證來簽署部署資訊清單。 相反地，它可以使用所謂的自我簽署憑證簽署。 自我簽署的憑證是由客戶或開發人員產生使用標準的.NET Framework SDK 工具，，，然後使用標準的 ClickOnce 部署工具，以套用至部署資訊清單。 如需詳細資訊，請參閱 < [Makecert.exe （憑證建立工具）](https://msdn.microsoft.com/library/b0343f8e-9c41-4852-a85c-f8a0c408cf0d)。  
   
  使用自我簽署的憑證的部署資訊清單有幾個優點。 取得或建立自己的 Authenticode 憑證，客戶無須`<useManifestForTrust>`可簡化部署的客戶，同時讓開發人員維護自己的應用程式的商標身分識別。 結果是一組的帶正負號的部署更安全且具有唯一的應用程式身分識別。 這樣就不可能從同一個應用程式部署至多個客戶可能會發生的衝突。  
   

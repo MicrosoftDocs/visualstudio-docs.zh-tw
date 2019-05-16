@@ -13,12 +13,12 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 85fb8c1349590858391051b8df395c8e6a781a75
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: c17bbb0989df9bf186652335cee6f77b047854fb
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59669782"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65689479"
 ---
 # <a name="setting-language-specific-editor-options"></a>設定語言特定編輯器選項
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -44,10 +44,10 @@ ms.locfileid: "59669782"
  [IntelliSense、C#、文字編輯器、選項](../../ide/reference/options-text-editor-csharp-intellisense.md)  
  描述當您使用 C# 和 J# 程式碼執行工作時，指定 IntelliSense 完成清單行為的設定。  
   
- [驗證選項、CSS、文字編輯器、對話方塊](http://msdn.microsoft.com/library/5afe0808-16bb-420f-b620-7ca1a4d9f2cc)  
+ [驗證選項、CSS、文字編輯器、對話方塊](https://msdn.microsoft.com/library/5afe0808-16bb-420f-b620-7ca1a4d9f2cc)  
  描述階層式樣式表 (CSS) 的陳述式完成和錯誤修正設定。  
   
- [選項對話方塊、文字編輯器、HTML、驗證](http://msdn.microsoft.com/library/9c24ecfe-263e-4bf1-88de-d01be3992863)  
+ [選項對話方塊、文字編輯器、HTML、驗證](https://msdn.microsoft.com/library/9c24ecfe-263e-4bf1-88de-d01be3992863)  
  描述根據您選取的結構描述檢查 HTML 語法的設定。  
   
  [格式、XAML、文字編輯器、選項](../../ide/reference/options-text-editor-xaml-formatting.md)  
@@ -57,5 +57,5 @@ ms.locfileid: "59669782"
  [自訂編輯器](../../ide/customizing-the-editor.md)  
  提供說明您可設定的各種編輯器喜好設定的主題連結。  
   
- [Visual Studio 中的自訂開發設定](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)  
+ [Visual Studio 中的自訂開發設定](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)  
  提供說明如何自訂設定、按鍵繫結關係及其他整合式開發環境 (IDE) 功能的主題連結。

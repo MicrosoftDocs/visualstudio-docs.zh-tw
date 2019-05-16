@@ -9,12 +9,12 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 252b554542df23e2d3197dfe28100546a6d25b32
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 38831d0f647ce423dc62fb51823a6757a1ac0872
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63411457"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65695882"
 ---
 # <a name="t4-template-directive"></a>T4 範本指示詞
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,7 +36,7 @@ ms.locfileid: "63411457"
  `compilerOptions="optimize+"`  
   
  有效值：  
- 任何有效的編譯器選項。 如需詳細資訊，請參閱 < [C# 編譯器選項依分類列出](http://msdn.microsoft.com/library/96437ecc-6502-4cd3-b070-e9386a298e83)並[Visual Basic 編譯器依分類列出的選項](http://msdn.microsoft.com/library/fbe36f7a-7cfa-4f77-a8d4-2be5958568e3)。  
+ 任何有效的編譯器選項。 如需詳細資訊，請參閱 < [C# 編譯器選項依分類列出](https://msdn.microsoft.com/library/96437ecc-6502-4cd3-b070-e9386a298e83)並[Visual Basic 編譯器依分類列出的選項](https://msdn.microsoft.com/library/fbe36f7a-7cfa-4f77-a8d4-2be5958568e3)。  
   
  忽略執行階段 (前置處理過的) 範本。  
   
@@ -49,7 +49,7 @@ ms.locfileid: "63411457"
  有效值：  
  "" (不因文化特性而異)，此為預設值。  
   
- 以 xx-XX 字串形式表示的文化特性。 例如，en-US、ja-JP、de-CH、de-DE。 如需詳細資訊，請參閱<xref:System.Globalization.CultureInfo?displayProperty=fullName>。  
+ 以 xx-XX 字串形式表示的文化特性。 例如，en-US、ja-JP、de-CH、de-DE。 如需詳細資訊，請參閱 <xref:System.Globalization.CultureInfo?displayProperty=fullName>。  
   
  culture 屬性會指定當運算式區塊轉換為文字時所要使用的文化特性。  
   
@@ -83,7 +83,7 @@ hostspecific="true"
   
  由於這個屬性的類型依主應用程式的類型而定，因此只有在撰寫僅限搭配特定主應用程式使用的文字範本時才有用處。 它會適用於[設計階段範本](../modeling/design-time-code-generation-by-using-t4-text-templates.md)，而非[執行階段範本](../modeling/run-time-text-generation-with-t4-text-templates.md)。  
   
- 當 `hostspecific` 為 `true` 且您正在使用 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 時，可以將 `this.Host` 的類型轉換為 IServiceProvider 來存取 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 的功能。 您也可以使用 `Host.ResolvePath(filename)` 取得專案中檔案的絕對路徑。 例如:   
+ 當 `hostspecific` 為 `true` 且您正在使用 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 時，可以將 `this.Host` 的類型轉換為 IServiceProvider 來存取 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 的功能。 您也可以使用 `Host.ResolvePath(filename)` 取得專案中檔案的絕對路徑。 例如：  
   
 ```csharp  
 <#@ template debug="false" hostspecific="true" language="C#" #>  
@@ -118,7 +118,7 @@ Content of myFile is:
   
  [語言] 屬性指定的語言 ([!INCLUDE[vbprvb](../includes/vbprvb-md.md)]或[!INCLUDE[csprcs](../includes/csprcs-md.md)]) 要用於陳述式和運算式區塊中的原始程式碼。 從中產生輸出的中繼程式碼檔會使用這個語言。 這個語言與範本產生的語言無關，它可以是任何種類的文字。  
   
- 例如:   
+ 例如：  
   
 ```vb  
 <#@ template language="VB" #>  

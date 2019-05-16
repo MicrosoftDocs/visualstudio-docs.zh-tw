@@ -22,12 +22,12 @@ caps.latest.revision: 16
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 2d979b53f4bd5962a01fa5eb1b77cc7c81c68a4a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c8dcb8fa757f1cccf2f3aef6c2520e0c61da0b9f
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62538446"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65682686"
 ---
 # <a name="error-unable-to-automatically-step-into-the-server"></a>錯誤：無法自動逐步執行伺服器
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,7 +36,7 @@ ms.locfileid: "62538446"
   
  無法自動逐步執行至伺服器。 執行遠端程序之前，未通知偵錯工具。  
   
- 當您嘗試逐步執行 Web 服務 (請參閱 [逐步執行 XML Web Service](http://msdn.microsoft.com/8e67de38-bf5f-41cc-a457-1b88ce63d764)) 時，可能會發生這個錯誤。 一旦沒有正確設定 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] ，便可能會發生這個錯誤。  
+ 當您嘗試逐步執行 Web 服務 (請參閱 [逐步執行 XML Web Service](https://msdn.microsoft.com/8e67de38-bf5f-41cc-a457-1b88ce63d764)) 時，可能會發生這個錯誤。 一旦沒有正確設定 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] ，便可能會發生這個錯誤。  
   
  可能的原因包括：  
   

@@ -17,12 +17,12 @@ caps.latest.revision: 33
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: c5b8108f0751cbb8848a70b99f23dd3f204ccff2
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 6405a35068b7be7ac93eb91f4d9100e6a840b0bb
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58941700"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65702385"
 ---
 # <a name="client-side-script-debugging"></a>用戶端指令碼偵錯
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -60,11 +60,11 @@ Visual Studio 偵錯工具提供完整的偵錯環境，以找出並修正 ASP.N
 ## <a name="debugging-ajax-script-applications"></a>偵錯 AJAX 指令碼應用程式  
  啟用 AJAX 功能的 Web 應用程式會使用大量指令碼，在偵錯時特別困難。 如需 AJAX 偵錯技術的詳細資訊，請參閱  
   
- [Debugging and Tracing Ajax Applications Overview](http://msdn.microsoft.com/library/92684ea0-7bb4-4a34-9203-3aa6394ce375) 開啟任何指令碼文件。  
+ [Debugging and Tracing Ajax Applications Overview](https://msdn.microsoft.com/library/92684ea0-7bb4-4a34-9203-3aa6394ce375) 開啟任何指令碼文件。  
   
 ## <a name="see-also"></a>另請參閱  
  [對 ASP.NET 和 AJAX 應用程式進行偵錯](../debugger/debugging-aspnet-and-ajax-applications.md)   
  [指令碼偵錯的限制](../debugger/limitations-on-script-debugging.md)   
- [變數視窗](http://msdn.microsoft.com/library/ce0a67f6-2502-4b7a-ba45-cc32f8aeba3e)   
+ [變數視窗](https://msdn.microsoft.com/library/ce0a67f6-2502-4b7a-ba45-cc32f8aeba3e)   
  [即時運算視窗](../ide/reference/immediate-window.md)   
- [Debugging and Tracing Ajax Applications Overview](http://msdn.microsoft.com/library/92684ea0-7bb4-4a34-9203-3aa6394ce375)
+ [Debugging and Tracing Ajax Applications Overview](https://msdn.microsoft.com/library/92684ea0-7bb4-4a34-9203-3aa6394ce375)

@@ -11,12 +11,12 @@ caps.latest.revision: 15
 author: alexhomer1
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: dc9b13ce1de0464db353fa5935d14ad8c8b328d1
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 799e75dff8202ef041399cc6e0fcfb791dc7e868
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63442846"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65686539"
 ---
 # <a name="analyze-c-code-quality-of-store-apps-using-visual-studio-static-code-analysis"></a>使用 Visual Studio 靜態程式碼分析，分析市集應用程式的 C++ 程式碼品質
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,7 +26,7 @@ ms.locfileid: "63442846"
  Visual Studio Express Edition 中的程式碼分析工具會檢查您的程式碼是否有常見的問題，以及是否違反良好的程式設計作法。 程式碼分析警告與編譯器錯誤和警告不同，因為程式碼分析會搜尋有效的特定程式碼模式，但仍然可以為您或使用您程式碼的其他人建立問題。 程式碼分析也可以尋找難以透過測試發現的程式碼缺失。 在開發過程中定期執行程式碼分析工具，可以提升已完成應用程式的品質。
 
 > [!NOTE]
-> 在 Visual Studio Ultimate、Visual Studio Premium 及 Visual Studio Professional 中，您可以使用程式碼分析工具的完整功能。 請參閱 MSDN Library 中的[使用程式碼分析工具進行應用程式品質分析](http://msdn.microsoft.com/library/dd264897.aspx)。
+> 在 Visual Studio Ultimate、Visual Studio Premium 及 Visual Studio Professional 中，您可以使用程式碼分析工具的完整功能。 請參閱 MSDN Library 中的[使用程式碼分析工具進行應用程式品質分析](https://msdn.microsoft.com/library/dd264897.aspx)。
 
 ## <a name="BKMK_Run"></a> 執行程式碼分析
  在您的 Visual Studio 方案中執行程式碼分析：
@@ -116,7 +116,7 @@ ms.locfileid: "63442846"
 |                       [C6504](../code-quality/c6504.md)                        |                                              非指標上的 Null                                              |
 |                       [C6505](../code-quality/c6505.md)                        |                                               Void 上的 MustCheck                                               |
 |                       [C6506](../code-quality/c6506.md)                        |                                      非指標或陣列上的緩衝區大小                                      |
-| [C6507](http://msdn.microsoft.com/18f88cd1-d035-4403-a6a4-12dd0affcf21)        |                                       取值零時的 Null 不符                                       |
+| [C6507](https://msdn.microsoft.com/18f88cd1-d035-4403-a6a4-12dd0affcf21)        |                                       取值零時的 Null 不符                                       |
 |                       [C6508](../code-quality/c6508.md)                        |                                           寫入存取常數                                            |
 |                       [C6509](../code-quality/c6509.md)                        |                                          先前的條件所用的 Return                                          |
 |                       [C6510](../code-quality/c6510.md)                        |                                        非指標上的 Null Terminated                                         |
@@ -127,11 +127,11 @@ ms.locfileid: "63442846"
 |                       [C6516](../code-quality/c6516.md)                        |                                          屬性 (Attribute) 上沒有屬性 (Property)                                           |
 |                       [C6517](../code-quality/c6517.md)                        |                                       不能讀取的緩衝區上的有效大小                                       |
 |                       [C6518](../code-quality/c6518.md)                        |                                     不能寫入的緩衝區上的可寫入大小                                      |
-| [C6521](http://msdn.microsoft.com/e98d0ae3-6f13-47b2-9a15-15d4055af9ef)  |                                        無效的大小字串取值                                        |
+| [C6521](https://msdn.microsoft.com/e98d0ae3-6f13-47b2-9a15-15d4055af9ef)  |                                        無效的大小字串取值                                        |
 |                       [C6522](../code-quality/c6522.md)                        |                                           無效的大小字串類型                                            |
-| [C6523](http://msdn.microsoft.com/11397a31-b224-46b0-afb7-d49ca576a3bb)  |                                         無效的大小字串參數                                         |
+| [C6523](https://msdn.microsoft.com/11397a31-b224-46b0-afb7-d49ca576a3bb)  |                                         無效的大小字串參數                                         |
 |                       [C6525](../code-quality/c6525.md)                        |                                   無效的大小字串不可能執行到的位置                                    |
-| [C6526](http://msdn.microsoft.com/59c590c7-0098-4166-a1ac-87f324596002)  |                                        無效的大小字串緩衝區類型                                        |
+| [C6526](https://msdn.microsoft.com/59c590c7-0098-4166-a1ac-87f324596002)  |                                        無效的大小字串緩衝區類型                                        |
 |                       [C6527](../code-quality/c6527.md)                        |              無效的附註：'NeedsRelease' 屬性不能用於 void 類型的值               |
 |                       [C6530](../code-quality/c6530.md)                        |                                       無法辨認的格式字串樣式                                        |
 |                       [C6540](../code-quality/c6540.md)                        | 在這個函式上使用屬性註釋會使其所有現有的 __declspec 註釋無效。  |

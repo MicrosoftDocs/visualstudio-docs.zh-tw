@@ -22,12 +22,12 @@ caps.latest.revision: 23
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: ec2230511b9a058f1c35ce0c34dbe93a69317f4f
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 4b4d74a6a1c4f03951d93eaf2aa5e556762b9021
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58940521"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65702311"
 ---
 # <a name="com-and-activex-debugging"></a>偵錯 COM 和 ActiveX
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -50,6 +50,6 @@ ms.locfileid: "58940521"
   
 ## <a name="see-also"></a>另請參閱  
  [偵錯工具安全性](../debugger/debugger-security.md)   
- [COM 簡介](http://msdn.microsoft.com/library/120735d9-db71-4ad3-a730-ce576ea2354e)   
- [ActiveX 控制項](http://msdn.microsoft.com/library/52aaec4d-3889-402e-b57d-758078f8ac57)   
+ [COM 簡介](https://msdn.microsoft.com/library/120735d9-db71-4ad3-a730-ce576ea2354e)   
+ [ActiveX 控制項](https://msdn.microsoft.com/library/52aaec4d-3889-402e-b57d-758078f8ac57)   
  [SDI 伺服器應用程式](../debugger/sdi-server-applications.md)

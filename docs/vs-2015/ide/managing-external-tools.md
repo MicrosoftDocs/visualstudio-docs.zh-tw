@@ -57,12 +57,12 @@ caps.latest.revision: 41
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: d6dec053e1075865b51c14df951915308852f8a2
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: e568286a5e17b13b5009eccf01988d458fc9cd47
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63445436"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65686956"
 ---
 # <a name="managing-external-tools"></a>管理外部工具
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -74,7 +74,7 @@ ms.locfileid: "63445436"
   
 1. 建立 GUID：產生 GUID。  
   
-2. 錯誤查詢：從輸入的值取得錯誤訊息。 如需詳細資訊，請參閱 [ERRLOOK 參考](http://msdn.microsoft.com/library/6040ffc1-2355-4a45-8998-84cbcba4ca91)。  
+2. 錯誤查詢：從輸入的值取得錯誤訊息。 如需詳細資訊，請參閱 [ERRLOOK 參考](https://msdn.microsoft.com/library/6040ffc1-2355-4a45-8998-84cbcba4ca91)。  
   
 3. ATL/MFC 追蹤工具：顯示 ATL 與 MFC 來源中的偵錯追蹤訊息。  
   
@@ -85,7 +85,7 @@ ms.locfileid: "63445436"
 6. WCF 服務組態編輯器：可讓您建立和修改 WCF 服務的組態設定。  
   
 > [!WARNING]
-> 視您安裝的 Visual Studio 版本及套用的設定檔之不同，您看到的外部工具清單或許有些不同。 如需詳細資訊，請參閱 [在 Visual Studio 中自訂開發設定](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)  
+> 視您安裝的 Visual Studio 版本及套用的設定檔之不同，您看到的外部工具清單或許有些不同。 如需詳細資訊，請參閱 [在 Visual Studio 中自訂開發設定](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)  
   
 ## <a name="adding-new-tools"></a>加入新工具  
  您可將外部工具加入 [工具] 功能表。 開啟 [外部工具] 對話方塊，按一下 [加入]，然後填入資訊。 例如，下列輸入內容會讓 Windows 檔案總管的開啟位置，會是於 Visual Studio 中目前所開啟之檔案所在的目錄：  
@@ -122,4 +122,4 @@ ms.locfileid: "63445436"
 |方案檔名|$(SolutionFileName)|目前方案的檔案名稱 (磁碟機 + 路徑 + 檔案名稱)。|  
   
 ## <a name="see-also"></a>另請參閱  
- [C/C++ 建置工具](http://msdn.microsoft.com/library/48d9daf4-6bbf-473a-8ce2-bf2923b69f80)
+ [C/C++ 建置工具](https://msdn.microsoft.com/library/48d9daf4-6bbf-473a-8ce2-bf2923b69f80)

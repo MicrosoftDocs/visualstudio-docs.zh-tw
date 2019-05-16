@@ -26,12 +26,12 @@ caps.latest.revision: 67
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 84a630a679e95d8a6848592b183749c2ace3ea86
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 4985196feb8c2ddd5996c51210e39f9e503e953f
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63412299"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65675176"
 ---
 # <a name="javascript-intellisense"></a>JavaScript IntelliSense
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -157,7 +157,7 @@ IntelliSense 藉由在您撰寫程式碼的同時提供資訊，幫助您更快�
 </asp:ScriptManager>
 ```
 
- IntelliSense 也支援在 ASP.NET AJAX Web 應用程式內的組件中，內嵌為資源的指令碼檔。 如需內嵌指令碼資源的詳細資訊，請參閱[逐步解說：將 JavaScript 檔案內嵌為組件中的資源](http://msdn.microsoft.com/library/d8cb78cd-95a9-4dc6-92df-391866817e89)。
+ IntelliSense 也支援在 ASP.NET AJAX Web 應用程式內的組件中，內嵌為資源的指令碼檔。 如需內嵌指令碼資源的詳細資訊，請參閱[逐步解說：將 JavaScript 檔案內嵌為組件中的資源](https://msdn.microsoft.com/library/d8cb78cd-95a9-4dc6-92df-391866817e89)。
 
 #### <a name="ReferenceDirectives"></a> Reference 指示詞
  `reference` 指示詞可讓 [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] 在您目前正編輯的指令碼和其他指令碼之間，建立關聯性 (Relationship)。 `reference` 指令詞可讓您在目前指令碼檔的指令碼內容中包含指令碼檔。 如此可讓 IntelliSense 參考外部定義的函式、類型及欄位，將其當做您的程式碼使用。
@@ -284,5 +284,5 @@ IntelliSense 藉由在您撰寫程式碼的同時提供資訊，幫助您更快�
 - [識別項的陳述式完成](../ide/statement-completion-for-identifiers.md)
 - [XML 文件註解](../ide/xml-documentation-comments-javascript.md)
 - [關於 DHTML 物件模型](http://go.microsoft.com/fwlink/?LinkID=92344) \(英文\)
-- [列出成員](http://msdn.microsoft.com/1b9cc469-9cd4-4d42-9999-1f9479635ff8) \(機器翻譯\)
+- [列出成員](https://msdn.microsoft.com/1b9cc469-9cd4-4d42-9999-1f9479635ff8) \(機器翻譯\)
 - [SRC 屬性 &#124; src 屬性](http://go.microsoft.com/fwlink/?LinkId=92345)

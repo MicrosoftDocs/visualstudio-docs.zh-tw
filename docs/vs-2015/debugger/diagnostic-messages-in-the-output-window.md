@@ -29,12 +29,12 @@ caps.latest.revision: 19
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 6cf5025fdbb640b9f77e0782a7db77503fc618a4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 60f8da2430e1c84af3c26be31c6de561291c8c6e
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62428231"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65695301"
 ---
 # <a name="diagnostic-messages-in-the-output-window"></a>輸出視窗中的診斷訊息
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -63,7 +63,7 @@ ms.locfileid: "62428231"
 ## <a name="see-also"></a>另請參閱  
  [偵錯工具安全性](../debugger/debugger-security.md)   
  [輸出視窗](../ide/reference/output-window.md)   
- [追蹤和檢測應用程式](http://msdn.microsoft.com/library/773b6fc4-9013-4322-b728-5dec7a72e743)   
- [檢測和追蹤的簡介](http://msdn.microsoft.com/e924e57c-33cf-4b0e-9e7f-a45d13e38f2c)   
+ [追蹤和檢測應用程式](https://msdn.microsoft.com/library/773b6fc4-9013-4322-b728-5dec7a72e743)   
+ [檢測和追蹤的簡介](https://msdn.microsoft.com/e924e57c-33cf-4b0e-9e7f-a45d13e38f2c)   
  [C#、F# 和 Visual Basic 專案類型](../debugger/debugging-preparation-csharp-f-hash-and-visual-basic-project-types.md)   
  [偵錯 Managed 程式碼](../debugger/debugging-managed-code.md)

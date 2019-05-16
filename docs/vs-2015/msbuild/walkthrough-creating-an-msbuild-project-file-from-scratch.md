@@ -11,19 +11,19 @@ caps.latest.revision: 22
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: a77c390dd0934b0f02320080765765163a8afb93
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: eb49e6c51c1e51d002683099797d940cb2d24556
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63445608"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65682366"
 ---
 # <a name="walkthrough-creating-an-msbuild-project-file-from-scratch"></a>逐步解說：從頭開始建立 MSBuild 專案檔案
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 以 .NET Framework 為目標的程式設計語言，使用 MSBuild 專案檔描述及控制應用程式建置流程。 當您使用 Visual Studio 建立 MSBuild 專案檔時，系統會自動將適當的 XML 加入該檔案。 不過，您可能會發現，了解 XML 的組織方式，以及您如何對其進行變更以控制組建會非常有用。  
   
- 如需為 C++ 專案建立專案檔的相關資訊，請參閱 [MSBuild (Visual C++)](http://msdn.microsoft.com/library/7a1be7ff-0312-4669-adf2-5f5bf507d560)。  
+ 如需為 C++ 專案建立專案檔的相關資訊，請參閱 [MSBuild (Visual C++)](https://msdn.microsoft.com/library/7a1be7ff-0312-4669-adf2-5f5bf507d560)。  
   
  此逐步解說顯示如何僅使用文字編輯器以累加方式建立基本專案檔。 此逐步解說遵循下列步驟：  
   

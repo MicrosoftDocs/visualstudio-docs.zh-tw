@@ -15,12 +15,12 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 2a120bb5eaab49e2652715c2583f898949b506a3
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 56b08d1b842e65e1c1c29a7409813c314cbf014d
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60061498"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65687269"
 ---
 # <a name="ca2119-seal-methods-that-satisfy-private-interfaces"></a>CA2119:密封方法以滿足私用介面的要求
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -69,4 +69,4 @@ ms.locfileid: "60061498"
  [!code-vb[FxCop.Security.SealMethods2#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/FxCop.Security.SealMethods2/vb/FxCop.Security.SealMethods2.vb#1)]
 
 ## <a name="see-also"></a>另請參閱
- [介面](http://msdn.microsoft.com/library/2feda177-ce11-432d-81b4-d50f5f35fd37)[介面](http://msdn.microsoft.com/library/61b06674-12c9-430b-be68-cc67ecee1f5b)
+ [介面](https://msdn.microsoft.com/library/2feda177-ce11-432d-81b4-d50f5f35fd37)[介面](https://msdn.microsoft.com/library/61b06674-12c9-430b-be68-cc67ecee1f5b)

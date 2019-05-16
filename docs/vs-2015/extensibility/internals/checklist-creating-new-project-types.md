@@ -11,12 +11,12 @@ ms.assetid: 29eb9c3b-1933-4741-aa85-65a33f0825ba
 caps.latest.revision: 24
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 1699846c0a588a21ebd37a13f77dc45c2a695139
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 02edc5925109a31eebfd98c90bd116fb86eef276
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60101050"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65697232"
 ---
 # <a name="checklist-creating-new-project-types"></a>檢查清單：建立新的專案類型
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -35,7 +35,7 @@ ms.locfileid: "60101050"
   
     - Project factory，來管理建立新的專案，並開啟現有專案。 如需詳細資訊，請參閱 <<c0> [ 建立專案執行個體所使用 Project Factory](../../extensibility/internals/creating-project-instances-by-using-project-factories.md)。  
   
-    - 專案階層架構和命令處理。 如需詳細資訊，請參閱[不在組建中：使用 HierUtil7 專案類別來實作專案類型 (C++)](http://msdn.microsoft.com/a5c16a09-94a2-46ef-87b5-35b815e2f346)，[專案模型的項目](../../extensibility/internals/elements-of-a-project-model.md)，[專案模型的核心元件](../../extensibility/internals/project-model-core-components.md)並[Menucommand 對比。OleMenuCommands](../../misc/menucommands-vs-olemenucommands.md)。  
+    - 專案階層架構和命令處理。 如需詳細資訊，請參閱[不在組建中：使用 HierUtil7 專案類別來實作專案類型 (C++)](https://msdn.microsoft.com/a5c16a09-94a2-46ef-87b5-35b815e2f346)，[專案模型的項目](../../extensibility/internals/elements-of-a-project-model.md)，[專案模型的核心元件](../../extensibility/internals/project-model-core-components.md)並[Menucommand 對比。OleMenuCommands](../../misc/menucommands-vs-olemenucommands.md)。  
   
     - 專案項目管理，包括加入您的專案**新的專案** 對話方塊。 如需詳細資訊，請參閱 <<c0> [ 加入專案和專案項目範本](../../extensibility/internals/adding-project-and-project-item-templates.md)並[註冊專案和項目範本](../../extensibility/internals/registering-project-and-item-templates.md)。  
   

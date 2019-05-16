@@ -18,12 +18,12 @@ caps.latest.revision: 27
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: ca1b84990ed2747e530a1a83a17e17b99f36b116
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: f6e349dd5bea4e0d89c31864960a5438d1e2b13f
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58942450"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65684078"
 ---
 # <a name="using-debuggertypeproxy-attribute"></a>使用 DebuggerTypeProxy 屬性
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -57,7 +57,7 @@ DebuggerTypeProxyAttribute] (assetId:///T:System.Diagnostics.DebuggerTypeProxyAt
   
  如果您在 `DebuggerTypeProxy` 中使用泛型類型做為目標，就必須使用此語法。 `DebuggerTypeProxy` 機制會自動推斷型別參數。  
   
- 如需 C# 中的開放型和封閉類型詳細資訊，請參閱[C# 語言規格](http://msdn.microsoft.com/library/e5d5a5cc-636b-4bff-b9c8-a8edc6207c22)，區段 20.5.2 開啟和封閉類型。  
+ 如需 C# 中的開放型和封閉類型詳細資訊，請參閱[C# 語言規格](https://msdn.microsoft.com/library/e5d5a5cc-636b-4bff-b9c8-a8edc6207c22)，區段 20.5.2 開啟和封閉類型。  
   
  Visual Basic 沒有開放類型語法，因此無法在 Visual Basic 中執行相同的動作。 您必須改用開放類型名稱的字串表示。  
   
@@ -65,4 +65,4 @@ DebuggerTypeProxyAttribute] (assetId:///T:System.Diagnostics.DebuggerTypeProxyAt
   
 ## <a name="see-also"></a>另請參閱  
  [使用 DebuggerDisplay 屬性](../debugger/using-the-debuggerdisplay-attribute.md)   
-  [使用偵錯工具顯示屬性增強偵錯功能](http://msdn.microsoft.com/library/72bb7aa9-459b-42c4-9163-9312fab4c410)
+  [使用偵錯工具顯示屬性增強偵錯功能](https://msdn.microsoft.com/library/72bb7aa9-459b-42c4-9163-9312fab4c410)

@@ -9,17 +9,17 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 6d2a2311d0a8c1e9470b5053ac4f5f309a1a4d0c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: bcd32aef240732b67a2c490e3738c9b3d2921ffc
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58943800"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65698046"
 ---
 # <a name="invoking-text-transformation-in-a-vs-extension"></a>叫用 VS 擴充功能中的文字轉換
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-如果您正在撰寫[Visual Studio 擴充功能](http://msdn.microsoft.com/library/5b1b5db3-6005-44cf-83b0-e608d7764d14)例如功能表命令或[定義域專屬語言](../modeling/modeling-sdk-for-visual-studio-domain-specific-languages.md)，您可以使用文字範本化服務來轉換文字範本。 取得 <xref:Microsoft.VisualStudio.TextTemplating.VSHost.STextTemplating> 服務並將它轉換成  <xref:Microsoft.VisualStudio.TextTemplating.VSHost.ITextTemplating>。  
+如果您正在撰寫[Visual Studio 擴充功能](https://msdn.microsoft.com/library/5b1b5db3-6005-44cf-83b0-e608d7764d14)例如功能表命令或[定義域專屬語言](../modeling/modeling-sdk-for-visual-studio-domain-specific-languages.md)，您可以使用文字範本化服務來轉換文字範本。 取得 <xref:Microsoft.VisualStudio.TextTemplating.VSHost.STextTemplating> 服務並將它轉換成  <xref:Microsoft.VisualStudio.TextTemplating.VSHost.ITextTemplating>。  
   
 ## <a name="getting-the-text-templating-service"></a>取得文字範本化服務  
   

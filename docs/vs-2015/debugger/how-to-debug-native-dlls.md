@@ -23,18 +23,18 @@ caps.latest.revision: 20
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: ea2f40119425cc558b5486a9085b92b05ba81c97
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 16a533b27e619526edab71374d922e68baf0a4b0
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63426529"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65702672"
 ---
 # <a name="how-to-debug-native-dlls"></a>HOW TO：偵錯原生 Dll
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 > [!NOTE]
-> 根據您目前使用的設定或版本，您所看到的對話方塊與功能表命令可能會與 [說明] 中描述的不同。 若要變更設定，請從 [工具] 功能表中選擇 [匯入和匯出設定]。 如需詳細資訊，請參閱 [在 Visual Studio 中自訂開發設定](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)  
+> 根據您目前使用的設定或版本，您所看到的對話方塊與功能表命令可能會與 [說明] 中描述的不同。 若要變更設定，請從 [工具] 功能表中選擇 [匯入和匯出設定]。 如需詳細資訊，請參閱 [在 Visual Studio 中自訂開發設定](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)  
   
  當您要偵錯一個 DLL 時，您可以從下列地方開始偵錯：  
   
@@ -44,7 +44,7 @@ ms.locfileid: "63426529"
   
 - 從建立該 DLL 本身的專案。  
   
-  如果您是使用某專案來建立可執行檔，請從該專案開始偵錯。 您可以接著開啟該 DLL 的原始程式檔 (Source File)，並在該檔案中設定中斷點，即使這個檔案並不是屬於用來建立可執行檔的專案。 如需詳細資訊，請參閱[中斷點](http://msdn.microsoft.com/fe4eedc1-71aa-4928-962f-0912c334d583)。  
+  如果您是使用某專案來建立可執行檔，請從該專案開始偵錯。 您可以接著開啟該 DLL 的原始程式檔 (Source File)，並在該檔案中設定中斷點，即使這個檔案並不是屬於用來建立可執行檔的專案。 如需詳細資訊，請參閱[中斷點](https://msdn.microsoft.com/fe4eedc1-71aa-4928-962f-0912c334d583)。  
   
   如果您要從建立該 DLL 的專案開始偵錯，就必須指定您希望用來偵錯該 DLL 的可執行檔。  
   

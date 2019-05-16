@@ -17,12 +17,12 @@ caps.latest.revision: 26
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 945edb462b1ba849a3a1b9fd6797c8393b651163
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 64d4892080aaf0cf04e4b208b1a0bdb7a7a4480d
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63437675"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65693579"
 ---
 # <a name="view-dom-event-listeners"></a>檢視 DOM 事件接聽程式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -76,9 +76,9 @@ ms.locfileid: "63437675"
      **事件**索引標籤會顯示您的階層清單中選擇任何項目的事件接聽程式。
 
 ### <a name="Tips"></a> 解決問題的事件接聽程式的秘訣
- 在某些應用程式案例中，事件接聽程式必須明確地移除使用[removeEventListener](http://msdn.microsoft.com/library/ie/ff975250\(v=vs.85\).aspx)。 使用**事件**在 DOM 總管 中，若要測試是否事件接聽程式已從 DOM 項目中執行程式碼時的索引標籤。 以下是一些協助解決這些類型之問題的秘訣：
+ 在某些應用程式案例中，事件接聽程式必須明確地移除使用[removeEventListener](https://msdn.microsoft.com/library/ie/ff975250\(v=vs.85\).aspx)。 使用**事件**在 DOM 總管 中，若要測試是否事件接聽程式已從 DOM 項目中執行程式碼時的索引標籤。 以下是一些協助解決這些類型之問題的秘訣：
 
-- 使用單頁瀏覽模型的應用程式，顯示在 Visual Studio 中實作。[專案範本](http://msdn.microsoft.com/library/windows/apps/hh758331.aspx)，不是通常需要移除註冊的 DOM 項目，屬於頁面等物件的事件接聽程式。 在此情況下，DOM 項目和其相關聯的事件接聽程式會有相同的存留期，而且可以對其進行記憶體回收。
+- 使用單頁瀏覽模型的應用程式，顯示在 Visual Studio 中實作。[專案範本](https://msdn.microsoft.com/library/windows/apps/hh758331.aspx)，不是通常需要移除註冊的 DOM 項目，屬於頁面等物件的事件接聽程式。 在此情況下，DOM 項目和其相關聯的事件接聽程式會有相同的存留期，而且可以對其進行記憶體回收。
 
 - 如果 DOM 項目或物件的存留期與相關聯的事件接聽程式不同，則可能需要呼叫 `removeEventListener` 方法。 例如，如果您使用 `window.onresize` 事件，則在離開您已處理該事件的頁面時，可能需要移除事件接聽程式。
 

@@ -9,18 +9,18 @@ caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: e2eb9da0913b3ce77ea30fd58d5243d5a380d19f
-ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
+ms.openlocfilehash: c3691f782f317667b56f6bf3641c0f4c6a703eda
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "59000529"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65697564"
 ---
-# <a name="how-to-publish-a-wpf-application-with-visual-styles-enabled"></a>HOW TO：發行已啟用視覺樣式的 WPF 應用程式
+# <a name="how-to-publish-a-wpf-application-with-visual-styles-enabled"></a>作法：發行已啟用視覺樣式的 WPF 應用程式
 
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-視覺化樣式會啟用常見的控制項，以根據使用者選擇的佈景主題變更的外觀。 根據預設，已啟用視覺化樣式未針對 Windows Presentation Foundation (WPF) 應用程式，因此您必須手動啟用它們。 不過，啟用視覺化樣式的 WPF 應用程式，然後發佈方案會導致錯誤。 本主題說明如何解決此錯誤，發佈已啟用視覺化樣式的 WPF 應用程式的程序。 如需視覺化樣式的詳細資訊，請參閱[視覺化樣式概觀](http://msdn.microsoft.com/5b5d7bb6-684f-478d-bf5f-b8d18bbcff2e)。 如需詳細的錯誤訊息的詳細資訊，請參閱[疑難排解 ClickOnce 部署中的特定錯誤](../deployment/troubleshooting-specific-errors-in-clickonce-deployments.md)。
+視覺化樣式會啟用常見的控制項，以根據使用者選擇的佈景主題變更的外觀。 根據預設，已啟用視覺化樣式未針對 Windows Presentation Foundation (WPF) 應用程式，因此您必須手動啟用它們。 不過，啟用視覺化樣式的 WPF 應用程式，然後發佈方案會導致錯誤。 本主題說明如何解決此錯誤，發佈已啟用視覺化樣式的 WPF 應用程式的程序。 如需視覺化樣式的詳細資訊，請參閱[視覺化樣式概觀](https://msdn.microsoft.com/5b5d7bb6-684f-478d-bf5f-b8d18bbcff2e)。 如需詳細的錯誤訊息的詳細資訊，請參閱[疑難排解 ClickOnce 部署中的特定錯誤](../deployment/troubleshooting-specific-errors-in-clickonce-deployments.md)。
 
  若要解決此錯誤，並發行方案，您必須執行下列工作：
 
@@ -125,7 +125,7 @@ ms.locfileid: "59000529"
 
 1. 開啟**Visual Studio 命令提示字元**。
 
-    如需有關如何開啟**Visual Studio 命令提示字元**，請參閱[命令提示字元](http://msdn.microsoft.com/library/94fcf524-9045-4993-bfb2-e2d8bad44219)。
+    如需有關如何開啟**Visual Studio 命令提示字元**，請參閱[命令提示字元](https://msdn.microsoft.com/library/94fcf524-9045-4993-bfb2-e2d8bad44219)。
 
    > [!NOTE]
    > 其餘的步驟進行下列假設有關您的解決方案：
@@ -193,5 +193,5 @@ ms.locfileid: "59000529"
 ## <a name="see-also"></a>另請參閱
 
 [疑難排解 ClickOnce 部署中的特定錯誤](../deployment/troubleshooting-specific-errors-in-clickonce-deployments.md)
-[視覺化樣式概觀](http://msdn.microsoft.com/5b5d7bb6-684f-478d-bf5f-b8d18bbcff2e)
-[命令提示字元](http://msdn.microsoft.com/library/94fcf524-9045-4993-bfb2-e2d8bad44219)
+[視覺化樣式概觀](https://msdn.microsoft.com/5b5d7bb6-684f-478d-bf5f-b8d18bbcff2e)
+[命令提示字元](https://msdn.microsoft.com/library/94fcf524-9045-4993-bfb2-e2d8bad44219)

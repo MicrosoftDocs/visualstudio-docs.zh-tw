@@ -16,12 +16,12 @@ caps.latest.revision: 12
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: f9ae4de4f8dc044d578bb4f593dc9c6c77a7b0b6
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: fff1c56915fe4a06d66bdb08ce60219642933b1b
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60083890"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65682523"
 ---
 # <a name="error-unable-to-initiate-dcom-communication"></a>錯誤：無法起始 DCOM 通訊
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ ms.locfileid: "60083890"
   
 ### <a name="to-correct-this-error"></a>更正這個錯誤  
   
-- 如果遠端電腦已啟用的 Windows 防火牆，請參閱[設定 Up the Remote Tools 在裝置上](http://msdn.microsoft.com/library/90f45630-0d26-4698-8c1f-63f85a12db9c)如需有關如何設定防火牆以供進行本機偵錯的指示。  
+- 如果遠端電腦已啟用的 Windows 防火牆，請參閱[設定 Up the Remote Tools 在裝置上](https://msdn.microsoft.com/library/90f45630-0d26-4698-8c1f-63f85a12db9c)如需有關如何設定防火牆以供進行本機偵錯的指示。  
   
 - 若要還原 Windows 驗證，請嘗試重新啟動本機電腦和遠端電腦。 在本機和遠端機器上檢查 Kerberos 錯誤的事件日誌，並連絡網域系統管理員以瞭解已知的問題。  
   

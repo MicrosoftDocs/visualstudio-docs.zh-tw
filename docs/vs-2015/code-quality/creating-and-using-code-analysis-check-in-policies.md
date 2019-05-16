@@ -11,12 +11,12 @@ caps.latest.revision: 41
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 274aa497e004ddafee9a56b028f3001bb8deb630
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 3a8015eb672e87431a1d225221ff2321c41e041a
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63437090"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65697056"
 ---
 # <a name="creating-and-using-code-analysis-check-in-policies"></a>建立和使用程式碼分析簽入原則
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,6 +44,6 @@ ms.locfileid: "63437090"
  說明如何將字組和語彙基元新增至字典中的程式碼分析命名規則所參考。  
   
 ## <a name="related-sections"></a>相關章節  
- [品質嚴格把關](http://msdn.microsoft.com/library/bdc5666e-6cf0-45b2-a0a1-133c3f61e852)  
+ [品質嚴格把關](https://msdn.microsoft.com/library/bdc5666e-6cf0-45b2-a0a1-133c3f61e852)  
   
  [使用 Team 專案簽入原則強化程式碼品質](../code-quality/enhancing-code-quality-with-team-project-check-in-policies.md)

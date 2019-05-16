@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 3bac375d-8bd5-41be-a8de-32eb33c5cfac
 caps.latest.revision: 20
 manager: jillfra
-ms.openlocfilehash: b66724542d45aa6f57b7c2748c7c1cab1ec8c064
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 15a3896f8a2010a063393d3a11c1ed3453a008d5
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63436568"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65689089"
 ---
 # <a name="support-for-settings-categories"></a>設定類別的支援
-設定類別包含自訂整合式開發環境 (IDE) 的選項群組。 例如，設定可以控制 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 視窗的配置和功能表的內容。 如需詳細資訊，請參閱 [在 Visual Studio 中自訂開發設定](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)。  
+設定類別包含自訂整合式開發環境 (IDE) 的選項群組。 例如，設定可以控制 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 視窗的配置和功能表的內容。 如需詳細資訊，請參閱 [在 Visual Studio 中自訂開發設定](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)。  
   
  在 [工具]  功能表上，按一下 [匯入和匯出設定]  啟動 [匯入和匯出設定精靈] 。 此精靈提供三個選項︰匯出、匯入或重設您的設定。 選取 [匯出]，例如開啟精靈的 [選擇要匯出的設定]  頁面。  
   
@@ -64,4 +64,4 @@ ms.locfileid: "63436568"
  [建立選項頁](../extensibility/creating-an-options-page.md)   
  [VSSDK 範例](../misc/vssdk-samples.md)   
  [VSPackage 狀態](../misc/vspackage-state.md)   
- [Visual Studio 中的自訂開發設定](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)
+ [Visual Studio 中的自訂開發設定](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)

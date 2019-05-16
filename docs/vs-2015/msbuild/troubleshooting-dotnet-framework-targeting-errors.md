@@ -18,12 +18,12 @@ caps.latest.revision: 32
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 7795a5577a385542828a3d7c14670696f630544d
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: ae55e34f929acca6c708dfc39477f3bd6546f53f
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63430443"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65703778"
 ---
 # <a name="troubleshooting-net-framework-targeting-errors"></a>疑難排解 .NET Framework 目標錯誤
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -58,6 +58,6 @@ ms.locfileid: "63430443"
   
 ## <a name="see-also"></a>另請參閱  
  [如何：.NET Framework 版本為目標](../ide/how-to-target-a-version-of-the-dotnet-framework.md)   
- [.NET Framework Client Profile](http://msdn.microsoft.com/library/f0219919-1f02-4588-8704-327a62fd91f1)   
+ [.NET Framework Client Profile](https://msdn.microsoft.com/library/f0219919-1f02-4588-8704-327a62fd91f1)   
  [以特定的 .NET Framework 版本為目標](../ide/targeting-a-specific-dotnet-framework-version.md)   
  [多目標](../msbuild/msbuild-multitargeting-overview.md)

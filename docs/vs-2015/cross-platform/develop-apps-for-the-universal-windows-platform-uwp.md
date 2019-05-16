@@ -9,12 +9,12 @@ caps.latest.revision: 50
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 8a273e3422c1ab96a0c5fdba8330b218b4b7640f
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 8af5414b1c775a17421b87b9c18d58c34f544405
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59666763"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65698644"
 ---
 # <a name="develop-apps-for-the-universal-windows-platform-uwp"></a>開發適用於通用 Windows 平台 (UWP) 的應用程式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,7 +31,7 @@ ms.locfileid: "59666763"
   
  **通用 Windows 平台到底是什麼？**  
   
- 它不過是合約和版本的集合。 該集合可讓您設定要執行應用程式的目標。 您不會再以作業系統為目標。 現在您會將應用程式的目標設為一個或多個裝置系列。 如需詳細資訊，請參閱此 [平台指南](http://msdn.microsoft.com/library/windows/apps/dn894631.aspx)。  
+ 它不過是合約和版本的集合。 該集合可讓您設定要執行應用程式的目標。 您不會再以作業系統為目標。 現在您會將應用程式的目標設為一個或多個裝置系列。 如需詳細資訊，請參閱此 [平台指南](https://msdn.microsoft.com/library/windows/apps/dn894631.aspx)。  
   
 ## <a name="requirements"></a>需求  
  通用 Windows 應用程式開發工具隨附模擬器，可供您用來查看應用程式在不同裝置上的外觀。 如果您要使用這些模擬器，您需要在實體電腦上安裝這個軟體。 這部實體機器必須執行 Windows 8.1 (x64) Professional Edition (含) 以上版本，並具備支援用戶端 Hyper-V 和第二層位址轉譯 (SLAT) 的處理器。 如果在虛擬機器上安裝 Visual Studio，則無法使用模擬器。  
@@ -55,8 +55,8 @@ ms.locfileid: "59666763"
   如果您的開發平台為 Windows 10，則只能使用 XAML 設計工具。  
   
 ## <a name="universal-windows-apps"></a>通用 Windows 應用程式  
- 從 C#、Visual Basic、C++ 或 JavaScript 中，選擇您慣用的開發語言，以 [建立適用於 Windows 10 的通用 Windows 應用程式](http://msdn.microsoft.com/library/windows/apps/xaml/dn609832.aspx#target_win10)。 或觀賞 [此快速入門影片](http://channel9.msdn.com/Series/ConnectOn-Demand/229)。  
+ 從 C#、Visual Basic、C++ 或 JavaScript 中，選擇您慣用的開發語言，以 [建立適用於 Windows 10 的通用 Windows 應用程式](https://msdn.microsoft.com/library/windows/apps/xaml/dn609832.aspx#target_win10)。 或觀賞 [此快速入門影片](http://channel9.msdn.com/Series/ConnectOn-Demand/229)。  
   
- 若您現有的 Windows 市集 8.1 應用程式、Windows Phone 8.1 應用程式或通用 Windows 應用程式是以 Visual Studio 2015 RC 所建立，請 [移轉這些現有的應用程式](http://msdn.microsoft.com/library/windows/apps/xaml/mt238321.aspx) ，以使用最新版的通用 Windows 平台。  
+ 若您現有的 Windows 市集 8.1 應用程式、Windows Phone 8.1 應用程式或通用 Windows 應用程式是以 Visual Studio 2015 RC 所建立，請 [移轉這些現有的應用程式](https://msdn.microsoft.com/library/windows/apps/xaml/mt238321.aspx) ，以使用最新版的通用 Windows 平台。  
   
  建立通用 Windows 應用程式之後，您必須 [封裝您的應用程式](https://msdn.microsoft.com/library/windows/apps/hh454036.aspx) ，以在 Windows 10 裝置上進行安裝，或提交至 Windows 市集。

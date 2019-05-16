@@ -12,12 +12,12 @@ ms.assetid: 51f5f41b-a5a4-4df0-a703-41f3d1811d7f
 caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: c127bdb807b397060342bf7051c3c0de1251627f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: cd1781b133b4c3ee95b4207a0dd237e2dd7298a1
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62569217"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65685654"
 ---
 # <a name="idebugcoreserver3"></a>IDebugCoreServer3
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ IDebugCoreServer3 : IDebugCoreServer2
  Visual Studio 會實作這個介面。  
   
 ## <a name="notes-for-callers"></a>呼叫端資訊  
- 使用[QueryInterface](http://msdn.microsoft.com/library/62fce95e-aafa-4187-b50b-e6611b74c3b3)若要取得從這個介面[IDebugCoreServer2](../../../extensibility/debugger/reference/idebugcoreserver2.md)介面。 呼叫[GetServer](../../../extensibility/debugger/reference/idebugdefaultport2-getserver.md)也可以傳回此介面。 這個介面是最常使用之自訂的連接埠提供者來啟動伺服器 （本機或遠端） 上的程式。  
+ 使用[QueryInterface](https://msdn.microsoft.com/library/62fce95e-aafa-4187-b50b-e6611b74c3b3)若要取得從這個介面[IDebugCoreServer2](../../../extensibility/debugger/reference/idebugcoreserver2.md)介面。 呼叫[GetServer](../../../extensibility/debugger/reference/idebugdefaultport2-getserver.md)也可以傳回此介面。 這個介面是最常使用之自訂的連接埠提供者來啟動伺服器 （本機或遠端） 上的程式。  
   
 ## <a name="methods-in-vtable-order"></a>依照 Vtable 順序的方法  
  上的方法除了[IDebugCoreServer2](../../../extensibility/debugger/reference/idebugcoreserver2.md)介面，這個介面會實作下列方法：  

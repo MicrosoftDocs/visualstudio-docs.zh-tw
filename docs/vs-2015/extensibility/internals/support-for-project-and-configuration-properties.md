@@ -11,26 +11,26 @@ ms.assetid: 9fcfaa0f-7b41-4b68-82ec-7a151dca5d7e
 caps.latest.revision: 26
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 4b01b38510b11f5a9928e865b1511d0ea5639ea8
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: ae770d36c0f030a060eccfe86bc3939dad9622d8
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63408571"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65691876"
 ---
 # <a name="support-for-project-and-configuration-properties"></a>支援專案和組態屬性
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 **屬性** 視窗中的[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]整合式的開發環境 (IDE) 可以顯示專案和設定的屬性。 使用者可設定您的應用程式的屬性，您可以將屬性頁提供您自己的專案類型中。  
   
- 藉由選取中的專案節點**方案總管**，然後按一下**屬性**上**專案** 功能表中，您可以開啟包含專案和設定的對話方塊屬性。 在 [!INCLUDE[csprcs](../../includes/csprcs-md.md)]並[!INCLUDE[vbprvb](../../includes/vbprvb-md.md)]，和專案類型衍生自這些語言的索引標籤式頁面中會出現此對話方塊[一般、 環境、 選項對話方塊](../../ide/reference/general-environment-options-dialog-box.md)。 如需詳細資訊，請參閱[不在組建中：逐步解說：公開專案和組態屬性 (C#)](http://msdn.microsoft.com/d850d63b-25e2-4505-9f3d-eb038d7c1d0e)。  
+ 藉由選取中的專案節點**方案總管**，然後按一下**屬性**上**專案** 功能表中，您可以開啟包含專案和設定的對話方塊屬性。 在 [!INCLUDE[csprcs](../../includes/csprcs-md.md)]並[!INCLUDE[vbprvb](../../includes/vbprvb-md.md)]，和專案類型衍生自這些語言的索引標籤式頁面中會出現此對話方塊[一般、 環境、 選項對話方塊](../../ide/reference/general-environment-options-dialog-box.md)。 如需詳細資訊，請參閱[不在組建中：逐步解說：公開專案和組態屬性 (C#)](https://msdn.microsoft.com/d850d63b-25e2-4505-9f3d-eb038d7c1d0e)。  
   
  Managed Package Framework 中的專案 (MPFProj) 提供用於建立和管理新的專案系統的協助程式類別。 您可以找到來源的程式碼和編譯指示[專案-Visual Studio 2013 的 MPF](http://mpfproj12.codeplex.com/)。  
   
 ## <a name="persistence-of-project-and-configuration-properties"></a>持續性的專案和組態屬性  
- 專案和設定的屬性會保存在與專案類型，例如相關聯的檔案副檔名、.csproj、.vbproj、 和.myproj 的專案檔案。 語言專案通常會使用範本檔案來產生專案檔。 不過，有很多種實際專案類型和範本建立關聯。 如需詳細資訊，請參閱[NIB:Visual Studio 範本](http://msdn.microsoft.com/141fccaa-d68f-4155-822b-27f35dd94041)和[範本目錄描述 (。Vsdir) 檔案](../../extensibility/internals/template-directory-description-dot-vsdir-files.md)。  
+ 專案和設定的屬性會保存在與專案類型，例如相關聯的檔案副檔名、.csproj、.vbproj、 和.myproj 的專案檔案。 語言專案通常會使用範本檔案來產生專案檔。 不過，有很多種實際專案類型和範本建立關聯。 如需詳細資訊，請參閱[NIB:Visual Studio 範本](https://msdn.microsoft.com/141fccaa-d68f-4155-822b-27f35dd94041)和[範本目錄描述 (。Vsdir) 檔案](../../extensibility/internals/template-directory-description-dot-vsdir-files.md)。  
   
- 將項目加入至範本檔案會建立專案和設定的屬性。 這些屬性便可使用的專案類型，會使用此範本建立的任何專案。 [!INCLUDE[csprcs](../../includes/csprcs-md.md)] 專案和兩者都使用 MPFProj[不在組建中：MSBuild 概觀](http://msdn.microsoft.com/b588fd73-a45b-4706-908f-cc131bccfbde)範本檔案的結構描述。 這些檔案都有每個組態的 PropertyGroup 區段。 專案的屬性通常會保存在第一次的 PropertyGroup 區段有組態引數設定為 null 的字串。  
+ 將項目加入至範本檔案會建立專案和設定的屬性。 這些屬性便可使用的專案類型，會使用此範本建立的任何專案。 [!INCLUDE[csprcs](../../includes/csprcs-md.md)] 專案和兩者都使用 MPFProj[不在組建中：MSBuild 概觀](https://msdn.microsoft.com/b588fd73-a45b-4706-908f-cc131bccfbde)範本檔案的結構描述。 這些檔案都有每個組態的 PropertyGroup 區段。 專案的屬性通常會保存在第一次的 PropertyGroup 區段有組態引數設定為 null 的字串。  
   
  下列程式碼會顯示基本的 MSBuild 專案檔的開頭。  
   
@@ -93,9 +93,9 @@ ms.locfileid: "63408571"
  `MyConfigProp`組態屬性會出現在 [組態] 屬性頁面，為**我的組態屬性**在類別中， **My Category**。 如果選取此選項，則描述**我描述**，會出現在 [描述] 面板。  
   
 ## <a name="see-also"></a>另請參閱  
- [不在組建中：逐步解說：公開專案和組態屬性 (C#)](http://msdn.microsoft.com/d850d63b-25e2-4505-9f3d-eb038d7c1d0e)   
+ [不在組建中：逐步解說：公開專案和組態屬性 (C#)](https://msdn.microsoft.com/d850d63b-25e2-4505-9f3d-eb038d7c1d0e)   
  [新增和移除屬性頁](../../extensibility/adding-and-removing-property-pages.md)   
  [VSPackage 狀態](../../misc/vspackage-state.md)   
  [專案](../../extensibility/internals/projects.md)   
- [NIB：Visual Studio 範本](http://msdn.microsoft.com/141fccaa-d68f-4155-822b-27f35dd94041)   
+ [NIB：Visual Studio 範本](https://msdn.microsoft.com/141fccaa-d68f-4155-822b-27f35dd94041)   
  [範本目錄描述檔 (.Vsdir)](../../extensibility/internals/template-directory-description-dot-vsdir-files.md)

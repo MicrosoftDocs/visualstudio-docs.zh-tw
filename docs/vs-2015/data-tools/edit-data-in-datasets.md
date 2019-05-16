@@ -17,12 +17,12 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 9962bb1dbeef089d409cbe100daa37777b45e67d
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 7cbc9519c86b2bf4967e567b29355eb6d8a176a4
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63425379"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65699773"
 ---
 # <a name="edit-data-in-datasets"></a>編輯資料集中的資料
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,7 +45,7 @@ ms.locfileid: "63425379"
  [!code-vb[VbRaddataEditing#5](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataEditing/VB/Form1.vb#5)]  
   
 ## <a name="to-insert-new-rows-into-a-dataset"></a>將新的資料列插入資料集  
- 通常使用資料繫結控制項的應用程式新增新的記錄，透過**加入新**按鈕[BindingNavigator 控制項](http://msdn.microsoft.com/library/18c1e2a5-9834-40d3-9b2e-2b545e4e769e)。  
+ 通常使用資料繫結控制項的應用程式新增新的記錄，透過**加入新**按鈕[BindingNavigator 控制項](https://msdn.microsoft.com/library/18c1e2a5-9834-40d3-9b2e-2b545e4e769e)。  
   
  若要以手動方式加入資料集的新記錄，建立新的資料列在 DataTable 上呼叫方法。 然後新增至資料列<xref:System.Data.DataRow>集合 (<xref:System.Data.DataTable.Rows%2A>) 的<xref:System.Data.DataTable>:  
   
@@ -79,7 +79,7 @@ ms.locfileid: "63425379"
   
 - 每個已變更的資料列包含該資料列的多個版本 (<xref:System.Data.DataRowVersion>)，原始的版本 （在之前的變更） 和目前的版本 （在之後變更）。 情況下，變更已暫止的時期間 (當您可以回應的時間<xref:System.Data.DataTable.RowChanging>事件)、 第三個版本 — 建議的版本 — 也有提供。
   
-  <xref:System.Data.DataSet.HasChanges%2A>資料集的方法會傳回`true`如果已變更資料集內。 決定之後變更的資料列存在，您可以呼叫`GetChanges`方法<xref:System.Data.DataSet>或<xref:System.Data.DataTable>傳回一組已變更的資料列。 如需詳細資訊，請參閱[如何：擷取已變更的資料列](http://msdn.microsoft.com/library/6ff0cbd0-5253-48e7-888a-144d56c2e0a9)。  
+  <xref:System.Data.DataSet.HasChanges%2A>資料集的方法會傳回`true`如果已變更資料集內。 決定之後變更的資料列存在，您可以呼叫`GetChanges`方法<xref:System.Data.DataSet>或<xref:System.Data.DataTable>傳回一組已變更的資料列。 如需詳細資訊，請參閱[如何：擷取已變更的資料列](https://msdn.microsoft.com/library/6ff0cbd0-5253-48e7-888a-144d56c2e0a9)。  
   
 #### <a name="to-determine-if-changes-have-been-made-to-any-rows"></a>若要判斷是否已變更的所有資料列  
   

@@ -15,12 +15,12 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 0351304c2fd9ab2f581850e578828b2a297d72b3
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 1fb1968c6e2750f658f39f009c97fbab133cccab
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58942233"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65687401"
 ---
 # <a name="ca2106-secure-asserts"></a>CA2106:必須保護判斷提示
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,4 +45,4 @@ ms.locfileid: "58942233"
  隱藏這項規則只有在仔細的安全性檢閱之後的警告。
 
 ## <a name="see-also"></a>另請參閱
- <xref:System.Security.CodeAccessPermission.Assert%2A?displayProperty=fullName> [安全程式碼撰寫指導方針](http://msdn.microsoft.com/library/4f882d94-262b-4494-b0a6-ba9ba1f5f177)
+ <xref:System.Security.CodeAccessPermission.Assert%2A?displayProperty=fullName> [安全程式碼撰寫指導方針](https://msdn.microsoft.com/library/4f882d94-262b-4494-b0a6-ba9ba1f5f177)

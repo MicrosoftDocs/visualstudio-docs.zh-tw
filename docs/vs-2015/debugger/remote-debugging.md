@@ -19,12 +19,12 @@ caps.latest.revision: 81
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 41b3e662668967d07e2a304d589d498dd2c7b51d
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: e31d177a8bda5435c2201701241638cb919cf9ec
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63446099"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65687553"
 ---
 # <a name="remote-debugging"></a>Remote Debugging
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -283,7 +283,7 @@ ms.locfileid: "63446099"
  如需詳細資訊，請參閱遠端偵錯的說明 (請按**F1**中的遠端偵錯工具 視窗中或按一下**協助 / 使用量**)。 如需詳細資訊，請參閱 [Visual Studio 2012 和 2013 中的 .NET 遠端符號載入變更](http://blogs.msdn.com/b/visualstudioalm/archive/2013/10/16/net-remote-symbol-loading-changes-in-visual-studio-2012-and-2013.aspx)  
   
 ## <a name="bkmk_winstoreAzure"></a> 遠端偵錯 Windows 市集和 Azure 應用程式  
- 如需 Windows 市集應用程式的遠端偵錯資訊，請參閱[偵錯和測試 Windows 市集應用程式，在遠端裝置上從 Visual Studio](http://msdn.microsoft.com/library/windows/apps/hh441469.aspx)。  
+ 如需 Windows 市集應用程式的遠端偵錯資訊，請參閱[偵錯和測試 Windows 市集應用程式，在遠端裝置上從 Visual Studio](https://msdn.microsoft.com/library/windows/apps/hh441469.aspx)。  
   
  如需在 Azure 上偵錯資訊，請參閱其中一個主題：  
   
@@ -291,7 +291,7 @@ ms.locfileid: "63446099"
   
 - [偵錯在 Visual Studio 中的.NET 後端](http://blogs.msdn.com/b/azuremobile/archive/2014/03/14/debugging-net-backend-in-visual-studio.aspx)  
   
-- Azure 網站上的遠端偵錯簡介 ([第 1 部分](http://azure.microsoft.com/blog/2014/05/06/introduction-to-remote-debugging-on-azure-web-sites/)，[第 2 部分](http://azure.microsoft.com/blog/2014/05/07/introduction-to-remote-debugging-azure-web-sites-part-2-inside-remote-debugging/)，[第 3 部分](http://azure.microsoft.com/blog/2014/05/08/introduction-to-remote-debugging-on-azure-web-sites-part-3-multi-instance-environment-and-git/))。  
+- Azure 網站上的遠端偵錯簡介 ([第 1 部分](https://azure.microsoft.com/blog/2014/05/06/introduction-to-remote-debugging-on-azure-web-sites/)，[第 2 部分](https://azure.microsoft.com/blog/2014/05/07/introduction-to-remote-debugging-azure-web-sites-part-2-inside-remote-debugging/)，[第 3 部分](https://azure.microsoft.com/blog/2014/05/08/introduction-to-remote-debugging-on-azure-web-sites-part-3-multi-instance-environment-and-git/))。  
   
 ## <a name="see-also"></a>另請參閱  
  [Visual Studio 偵錯](../debugger/debugging-in-visual-studio.md)   

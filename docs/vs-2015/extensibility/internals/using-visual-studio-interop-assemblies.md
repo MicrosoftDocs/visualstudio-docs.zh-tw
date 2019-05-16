@@ -12,12 +12,12 @@ ms.assetid: 1043eb95-4f0d-4861-be21-2a25395b3b3c
 caps.latest.revision: 34
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 60ae3ad958ca97250ba74ac2c7aada7dddcf91d8
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 7df241773d06574f8d070285c2b45b662ccd6403
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63434801"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65675191"
 ---
 # <a name="using-visual-studio-interop-assemblies"></a>使用 Visual Studio Interop 組件
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -133,4 +133,4 @@ else
  呼叫此類型的介面的 managed 的方法應該提取從 [out] 陣列的第一個項目。 這個項目可以視為，就好像`retval`自對應的 COM 介面傳回的值。
 
 ## <a name="see-also"></a>另請參閱
- [與 Unmanaged 程式碼互通](http://msdn.microsoft.com/library/ccb68ce7-b0e9-4ffb-839d-03b1cd2c1258)
+ [與 Unmanaged 程式碼互通](https://msdn.microsoft.com/library/ccb68ce7-b0e9-4ffb-839d-03b1cd2c1258)

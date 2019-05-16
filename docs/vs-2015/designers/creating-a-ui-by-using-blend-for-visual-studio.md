@@ -11,17 +11,17 @@ caps.latest.revision: 33
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 78d4f63e2dbe84b878916757d1015e3c6d534258
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 7cd7f14158b7dee83767ee9295c8917cadd30fa5
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63436188"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65695927"
 ---
 # <a name="creating-a-ui-by-using-blend-for-visual-studio"></a>使用 Blend for Visual Studio 建立 UI
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Blend for Visual Studio 可協助您設計 XAML 型的 Windows 桌面、Web、[Windows Phone](http://msdn.microsoft.com/library/windowsphone/develop/jj683071.aspx) 及 [Windows 市集](http://msdn.microsoft.com/library/windows/apps/jj129478.aspx)應用程式。 它提供與 Visual Studio 相同的基本 XAML 設計體驗，並新增可處理動畫和表現方式等進階工作的視覺化設計工具。
+Blend for Visual Studio 可協助您設計 XAML 型的 Windows 桌面、Web、[Windows Phone](https://msdn.microsoft.com/library/windowsphone/develop/jj683071.aspx) 及 [Windows 市集](https://msdn.microsoft.com/library/windows/apps/jj129478.aspx)應用程式。 它提供與 Visual Studio 相同的基本 XAML 設計體驗，並新增可處理動畫和表現方式等進階工作的視覺化設計工具。
 
  由於 Visual Studio 已隨附 Blend for Visual Studio，所以您不需要下載。 然而，您必須在 Visual Studio 安裝程式中選取，才會安裝在您的系統上。
 

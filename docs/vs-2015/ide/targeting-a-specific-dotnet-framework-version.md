@@ -14,12 +14,12 @@ caps.latest.revision: 29
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 38a12f851bb99eb553856556608aaf029c91c40d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a11658e8cfe96da9c56b7cc1a63839510ed3c829
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62429232"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65679144"
 ---
 # <a name="targeting-a-specific-net-framework-version"></a>以特定的 .NET Framework 版本為目標
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,7 +36,7 @@ ms.locfileid: "62429232"
  詳細說明如何為 Visual Basic、Visual C# 或 Visual F# 專案指定特定的 [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]。  
   
 ## <a name="related-sections"></a>相關章節  
- [ASP.NET Web 專案的 .NET Framework 多目標](http://msdn.microsoft.com/library/8b8145a9-62f6-4fc4-8a83-47b0487cbe76)  
+ [ASP.NET Web 專案的 .NET Framework 多目標](https://msdn.microsoft.com/library/8b8145a9-62f6-4fc4-8a83-47b0487cbe76)  
  說明如何使用這一版 Visual Studio 來開發在舊版 .NET Framework 下執行的 Web 應用程式。  
   
  [專案設計工具，應用程式頁面 (C#)](../ide/reference/application-page-project-designer-csharp.md)  
@@ -45,5 +45,5 @@ ms.locfileid: "62429232"
  [專案設計工具、應用程式頁面 (Visual Basic)](../ide/reference/application-page-project-designer-visual-basic.md)  
  描述 [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] 專案之 [專案設計工具] 中的 [目標 Framework] 控制項。  
   
- [如何：修改目標 Framework 和平台工具組](http://msdn.microsoft.com/library/031b1d54-e6e1-4da7-9868-3e75a87d9ffe)  
+ [如何：修改目標 Framework 和平台工具組](https://msdn.microsoft.com/library/031b1d54-e6e1-4da7-9868-3e75a87d9ffe)  
  說明如何變更 Visual C++ 專案的設定，來設定不同的 .NET Framework 目標版本以及使用不同的平台工具組。

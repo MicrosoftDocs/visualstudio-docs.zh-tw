@@ -17,12 +17,12 @@ caps.latest.revision: 11
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: f2e5b19c26ff800b5edabd3bf21f57b21ed06bae
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b148ad1abc4a74482f3ec5786b953c0a2c6ace36
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62431819"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65682603"
 ---
 # <a name="error-unable-to-connect-to-sql-server-on-remote-machine"></a>錯誤：無法連線至遠端電腦上的 SQL Server
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,4 +34,4 @@ ms.locfileid: "62431819"
 - 請參閱[遠端偵錯](../debugger/remote-debugging.md)。  
   
 ## <a name="see-also"></a>另請參閱  
- [對 SQL 進行偵錯](http://msdn.microsoft.com/f27c17e6-1d90-49f2-9fc0-d02e6a27f109)
+ [對 SQL 進行偵錯](https://msdn.microsoft.com/f27c17e6-1d90-49f2-9fc0-d02e6a27f109)

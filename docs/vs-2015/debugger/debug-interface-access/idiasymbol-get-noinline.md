@@ -13,17 +13,17 @@ caps.latest.revision: 10
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: f25f14b1c8a05e21b5c627e550adecd8f50c3717
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: e6ee1e21b46e1906b4872e9598e75ac283b013ac
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63435785"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65698448"
 ---
 # <a name="idiasymbolgetnoinline"></a>IDiaSymbol::get_noInline
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-擷取指定的函式是否已標示為不在內嵌的旗標 (使用[noinline](http://msdn.microsoft.com/library/f259d55b-dec7-4bde-8cf9-14521e4fdc42)屬性)。  
+擷取指定的函式是否已標示為不在內嵌的旗標 (使用[noinline](https://msdn.microsoft.com/library/f259d55b-dec7-4bde-8cf9-14521e4fdc42)屬性)。  
   
 ## <a name="syntax"></a>語法  
   
@@ -52,4 +52,4 @@ HRESULT get_noInline(
   
 ## <a name="see-also"></a>另請參閱  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
- [noinline](http://msdn.microsoft.com/library/f259d55b-dec7-4bde-8cf9-14521e4fdc42)
+ [noinline](https://msdn.microsoft.com/library/f259d55b-dec7-4bde-8cf9-14521e4fdc42)

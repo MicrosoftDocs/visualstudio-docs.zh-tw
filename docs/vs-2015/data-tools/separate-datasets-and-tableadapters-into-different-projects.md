@@ -17,17 +17,17 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c90943f64166cfd5113032d14c2c66be1db858eb
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: bfd6cc62fc93ca3a535fb60c4ea5e1323c720558
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63425103"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65690240"
 ---
 # <a name="separate-datasets-and-tableadapters-into-different-projects"></a>將資料集和 TableAdapter 分成不同的專案
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-具類型資料集已經過加強，以便[TableAdapters](http://msdn.microsoft.com/library/09416de9-134c-4dc7-8262-6c8d81e3f364)和資料集類別產生為不同的專案。 這可讓您快速分隔應用程式層，並產生多層式架構資料應用程式。  
+具類型資料集已經過加強，以便[TableAdapters](https://msdn.microsoft.com/library/09416de9-134c-4dc7-8262-6c8d81e3f364)和資料集類別產生為不同的專案。 這可讓您快速分隔應用程式層，並產生多層式架構資料應用程式。  
   
  下列程序說明使用 Dataset 設計工具來產生資料集的程式碼到專案包含所產生的專案不同的程序`TableAdapter`程式碼。  
   
@@ -70,4 +70,4 @@ ms.locfileid: "63425103"
  [逐步解說：建立多層式架構資料應用程式](../data-tools/walkthrough-creating-an-n-tier-data-application.md)   
  [階層式更新](../data-tools/hierarchical-update.md)   
  [存取 Visual Studio 中的資料](../data-tools/accessing-data-in-visual-studio.md)   
- [ADO.NET](http://msdn.microsoft.com/library/5b96ed06-9759-4966-a797-a1d5f6ee50ca)
+ [ADO.NET](https://msdn.microsoft.com/library/5b96ed06-9759-4966-a797-a1d5f6ee50ca)

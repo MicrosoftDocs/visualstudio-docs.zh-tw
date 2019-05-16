@@ -12,12 +12,12 @@ ms.assetid: adecdd1c-b1b9-4027-92da-74cbe910636f
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: ab95443f611c9cc6a1e74b2b5120047344a9857a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 8bc18204d3cbe20635ab0680a50b4d1555dce2ce
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58942096"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65690298"
 ---
 # <a name="idebugfield"></a>IDebugField
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ IDebugField : IUnknown
  符號提供者會實作這個介面的基底類別的所有欄位。  
   
 ## <a name="notes-for-callers"></a>呼叫端資訊  
- 這個介面是基底類別的所有欄位。 傳回值為基礎[GetKind](../../../extensibility/debugger/reference/idebugfield-getkind.md)，此介面可能會傳回更具特製化的介面，藉由使用[QueryInterface](http://msdn.microsoft.com/library/62fce95e-aafa-4187-b50b-e6611b74c3b3)。 此外，許多介面傳回`IDebugField`從各種方法的物件。  
+ 這個介面是基底類別的所有欄位。 傳回值為基礎[GetKind](../../../extensibility/debugger/reference/idebugfield-getkind.md)，此介面可能會傳回更具特製化的介面，藉由使用[QueryInterface](https://msdn.microsoft.com/library/62fce95e-aafa-4187-b50b-e6611b74c3b3)。 此外，許多介面傳回`IDebugField`從各種方法的物件。  
   
 ## <a name="methods-in-vtable-order"></a>依照 Vtable 順序的方法  
  下表顯示的方法`IDebugField`。  
@@ -54,7 +54,7 @@ IDebugField : IUnknown
 ## <a name="remarks"></a>備註  
  類型相當於 C 語言`typedef`。  
   
- 在下列 c + + 語言範例中，`weather`是類別類型，並`sunny`和`stormy`符號：  
+ 在下列C++語言範例中，`weather`是類別類型，並`sunny`並`stormy`是符號：  
   
 ```cpp#  
 class weather;  

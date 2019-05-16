@@ -22,12 +22,12 @@ caps.latest.revision: 18
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 1b57f3de72272e8d1ecc567b150d073cd8d69611
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 3c29bd6a58d510d98f2a08c96d0cd0bc774e197e
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63443760"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65680010"
 ---
 # <a name="localizing-clickonce-applications"></a>當地語系化 ClickOnce 應用程式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -54,7 +54,7 @@ ms.locfileid: "63443760"
  這種方法的優點是會建立單一部署，並簡化了當地語系化部署的過程。 在執行階段，將會根據使用者 Windows 作業系統之預設文化特性而使用適當的附屬組件。 這種方法的缺點是不管應用程式要在用戶端電腦上安裝或更新，都會下載所有的附屬組件。 如果您的應用程式包含大量的字串，或是您的客戶使用慢速的網路連接，這種處理序可能會在應用程式更新期間影響效能。  
   
 > [!NOTE]
-> 這個方法假設您的應用程式會自動調整控制項的高度、寬度和位置，使其符合不同文化特性中的不同文字字串大小。 Windows Form 包含各種控制項和技術，讓您可用來設計方便進行當地語系化的表單，包括 <xref:System.Windows.Forms.FlowLayoutPanel> 和 <xref:System.Windows.Forms.TableLayoutPanel> 控制項以及 <xref:System.Windows.Forms.Control.AutoSize%2A> 屬性。  另請參閱[How to:支援使用 AutoSize 和 TableLayoutPanel 控制項的 Windows Form 的當地語系化](http://msdn.microsoft.com/library/1zkt8b33\(v=vs.110\))。  
+> 這個方法假設您的應用程式會自動調整控制項的高度、寬度和位置，使其符合不同文化特性中的不同文字字串大小。 Windows Form 包含各種控制項和技術，讓您可用來設計方便進行當地語系化的表單，包括 <xref:System.Windows.Forms.FlowLayoutPanel> 和 <xref:System.Windows.Forms.TableLayoutPanel> 控制項以及 <xref:System.Windows.Forms.Control.AutoSize%2A> 屬性。  另請參閱[How to:支援使用 AutoSize 和 TableLayoutPanel 控制項的 Windows Form 的當地語系化](https://msdn.microsoft.com/library/1zkt8b33\(v=vs.110\))。  
   
 ## <a name="generate-one-deployment-for-each-culture"></a>為每種文化特性產生一個部署  
  在這種部署策略中，您會產生多個部署。 在每個部署內，您只會加入特定文化特性所需的附屬組件，並且將部署標記為具有於該種文化特性。  
@@ -70,7 +70,7 @@ ms.locfileid: "63443760"
   
  視需要下載附屬組件與視需要下載其他類型的組件有些許的不同。 如需如何啟用此案例中使用更多的資訊和程式碼範例[!INCLUDE[winsdkshort](../includes/winsdkshort-md.md)]工具[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]，請參閱[逐步解說：下載依需求以 ClickOnce 部署 API 的附屬組件](../deployment/walkthrough-downloading-satellite-assemblies-on-demand-with-the-clickonce-deployment-api.md)。  
   
- 您也可以在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 內啟用這種案例。  另請參閱[逐步解說：下載附屬組件，依需求使用設計工具以 ClickOnce 部署 API](http://msdn.microsoft.com/library/ms366788\(v=vs.110\))或[逐步解說：下載依需求使用設計工具以 ClickOnce 部署 API 的附屬組件](http://msdn.microsoft.com/library/ms366788\(v=vs.120\))。  
+ 您也可以在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 內啟用這種案例。  另請參閱[逐步解說：下載附屬組件，依需求使用設計工具以 ClickOnce 部署 API](https://msdn.microsoft.com/library/ms366788\(v=vs.110\))或[逐步解說：下載依需求使用設計工具以 ClickOnce 部署 API 的附屬組件](https://msdn.microsoft.com/library/ms366788\(v=vs.120\))。  
   
 ## <a name="testing-localized-clickonce-applications-before-deployment"></a>在部署之前測試當地語系化的 ClickOnce 應用程式  
  只有當 Windows Forms 應用程式之主執行緒的 <xref:System.Threading.Thread.CurrentUICulture%2A> 屬性設定為附屬組件的文化特性時，才會將附屬組件用於此應用程式。 當地市場的客戶可能已經在執行文化特性設定為適當預設值的當地語系化 Windows 版本。  
@@ -84,4 +84,4 @@ ms.locfileid: "63443760"
 ## <a name="see-also"></a>另請參閱  
  [\<組件識別 > 項目](../deployment/assemblyidentity-element-clickonce-deployment.md)   
  [ClickOnce 安全性和部署](../deployment/clickonce-security-and-deployment.md)   
- [全球化 Windows Forms](http://msdn.microsoft.com/library/72f6cd92-83be-45ec-aa37-9cb8e3ebc3c5)
+ [全球化 Windows Forms](https://msdn.microsoft.com/library/72f6cd92-83be-45ec-aa37-9cb8e3ebc3c5)

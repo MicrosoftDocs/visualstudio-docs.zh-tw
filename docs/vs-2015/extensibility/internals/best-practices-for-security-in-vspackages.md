@@ -12,12 +12,12 @@ ms.assetid: 212a0504-cf6c-4e50-96b0-f2c1c575c0ff
 caps.latest.revision: 20
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 1db578f62e6fe42ba3d74df5870ca727bd884aaf
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 940644cd3950c38c6383371c1844b54b328acd0c
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58941510"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65697273"
 ---
 # <a name="best-practices-for-security-in-vspackages"></a>VSPackage 中安全性的最佳做法
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -30,8 +30,8 @@ ms.locfileid: "58941510"
   
  使用者應該確定在安裝 Vspackage，僅從信任的來源。 開發 VSPackages 的公司應該強式名稱，登入它們，以確保該竄改的使用者將無法。 開發 VSPackages 的公司應該檢查其外部的相依性，例如 web 服務和遠端安裝，評估，並更正任何安全性問題。  
   
- 如需詳細資訊，請參閱 < 安全程式碼撰寫方針適用於.NET Framework ([http://msdn.microsoft.com/library/d55zzx87.aspx](http://msdn.microsoft.com/library/d55zzx87.aspx))。  
+ 如需詳細資訊，請參閱 < 安全程式碼撰寫方針適用於.NET Framework ([https://msdn.microsoft.com/library/d55zzx87.aspx](https://msdn.microsoft.com/library/d55zzx87.aspx))。  
   
 ## <a name="see-also"></a>另請參閱  
- [增益集安全性](http://msdn.microsoft.com/library/44a5c651-6246-4310-b371-65378917c799)   
- [DDEX 安全性](http://msdn.microsoft.com/44a52a70-5c98-450e-993d-4a3b32f69ba8)
+ [增益集安全性](https://msdn.microsoft.com/library/44a5c651-6246-4310-b371-65378917c799)   
+ [DDEX 安全性](https://msdn.microsoft.com/44a52a70-5c98-450e-993d-4a3b32f69ba8)

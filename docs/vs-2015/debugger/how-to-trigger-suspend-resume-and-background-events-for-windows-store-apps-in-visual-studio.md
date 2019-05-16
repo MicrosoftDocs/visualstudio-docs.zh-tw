@@ -16,12 +16,12 @@ caps.latest.revision: 20
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: ecf43708b854ebee444d2117bc32df41907118a3
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: d341f0550cfa3c978e94152fb792c5b73c68cc74
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63442731"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65685935"
 ---
 # <a name="how-to-trigger-suspend-resume-and-background-events-for-windows-store-apps-in-visual-studio"></a>如何在 Visual Studio 中為 Windows 市集應用程式觸發、暫停和繼續事件，以及讓事件成為背景事件
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ ms.locfileid: "63442731"
 
  本主題也將說明如何對 **背景工作**偵錯。 背景工作可讓您在背景處理序中執行某些作業 (即使您的應用程式並未執行也無妨)。 您可以使用偵錯工具，將您的應用程式置於偵錯模式，接著無須啟動 UI，就能啟動背景工作並對其偵錯。
 
- 如需處理程序生命週期管理和背景工作的詳細資訊，請參閱 [Launching, resuming, and multitasking](http://msdn.microsoft.com/04307b1b-05af-46a6-b639-3f35e297f71b)。
+ 如需處理程序生命週期管理和背景工作的詳細資訊，請參閱 [Launching, resuming, and multitasking](https://msdn.microsoft.com/04307b1b-05af-46a6-b639-3f35e297f71b)。
 
 ## <a name="BKMK_In_this_topic"></a>本主題內容
  [觸發處理程序生命週期管理事件](#BKMK_Trigger_Process_Lifecycle_Management_events)
@@ -63,7 +63,7 @@ ms.locfileid: "63442731"
      請注意，[ **暫停和終止** ] 會關閉應用程式並結束偵錯工作階段。
 
 ## <a name="BKMK_Trigger_background_tasks"></a> 觸發背景工作
- 任何應用程式都可以登錄背景工作，以回應特定的系統事件 (即使應用程式並未執行)。 背景工作不能執行直接更新 UI 的程式碼，但它們可以透過動態磚更新、徽章更新和快顯通知，對使用者顯示資訊。 如需詳細資訊，請參閱 [Supporting your app with background tasks](http://msdn.microsoft.com/4c7bb148-eb1f-4640-865e-41f627a46e8e)。
+ 任何應用程式都可以登錄背景工作，以回應特定的系統事件 (即使應用程式並未執行)。 背景工作不能執行直接更新 UI 的程式碼，但它們可以透過動態磚更新、徽章更新和快顯通知，對使用者顯示資訊。 如需詳細資訊，請參閱 [Supporting your app with background tasks](https://msdn.microsoft.com/4c7bb148-eb1f-4640-865e-41f627a46e8e)。
 
  您可以從偵錯工具觸發事件，啟動應用程式的背景工作。
 
@@ -125,4 +125,4 @@ ms.locfileid: "63442731"
 4. 選擇 [ **診斷** ] 記錄檔。
 
 ## <a name="see-also"></a>另請參閱
- [測試市集應用程式，使用 Visual Studio](../test/testing-store-apps-with-visual-studio.md) [偵錯在 Visual Studio 中的應用程式](../debugger/debug-store-apps-in-visual-studio.md)[應用程式生命週期](http://msdn.microsoft.com/53cdc987-c547-49d1-a5a4-fd3f96b2259d) [Launching，resuming，與多工](http://msdn.microsoft.com/04307b1b-05af-46a6-b639-3f35e297f71b)
+ [測試市集應用程式，使用 Visual Studio](../test/testing-store-apps-with-visual-studio.md) [偵錯在 Visual Studio 中的應用程式](../debugger/debug-store-apps-in-visual-studio.md)[應用程式生命週期](https://msdn.microsoft.com/53cdc987-c547-49d1-a5a4-fd3f96b2259d) [Launching，resuming，與多工](https://msdn.microsoft.com/04307b1b-05af-46a6-b639-3f35e297f71b)

@@ -13,12 +13,12 @@ ms.assetid: 50234537-9e95-4b7e-9cb7-e5cf26d6e9d2
 caps.latest.revision: 38
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 604e5792c17e1458faccfd6518ab8cd5e7e303f2
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 60ac63be54c235187e66a85c541f925e1e34cafd
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60093731"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65689858"
 ---
 # <a name="adding-a-shortcut-menu-in-a-tool-window"></a>在工具視窗中新增捷徑功能表
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ ms.locfileid: "60093731"
   
  本逐步解說示範如何建立快顯功能表為 Visual Studio 功能表中，宣告在.vsct 檔案中，功能表項目，然後使用 Managed Package Framework 中定義工具視窗的類別中實作它們。 這種方法能存取 Visual Studio 命令、 UI 項目，以及自動化物件模型。  
   
- 或者，如果您的快顯功能表將不會存取 Visual Studio 功能，您可以使用<xref:System.Windows.FrameworkElement.ContextMenu%2A>使用者控制項中將 XAML 項目的屬性。 如需詳細資訊，請參閱 < [ContextMenu](http://msdn.microsoft.com/library/2f40b2bb-b702-4706-9fc4-10bcfd7cc35d)。  
+ 或者，如果您的快顯功能表將不會存取 Visual Studio 功能，您可以使用<xref:System.Windows.FrameworkElement.ContextMenu%2A>使用者控制項中將 XAML 項目的屬性。 如需詳細資訊，請參閱 < [ContextMenu](https://msdn.microsoft.com/library/2f40b2bb-b702-4706-9fc4-10bcfd7cc35d)。  
   
 ## <a name="prerequisites"></a>必要條件  
  從 Visual Studio 2015 中，從下載中心取得未安裝 Visual Studio SDK。 包含為 Visual Studio 安裝程式的選用功能。 您也可以在稍後安裝 VS SDK。 如需詳細資訊，請參閱 <<c0> [ 安裝 Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md)。  

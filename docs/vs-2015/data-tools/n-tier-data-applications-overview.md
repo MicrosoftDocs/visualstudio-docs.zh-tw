@@ -19,12 +19,12 @@ caps.latest.revision: 29
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: bc6bc7e6e7d11b1b5b77cd90b86a6a6167702872
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d54d69a9aeda76c79208c2685efde94eaaab1017
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62559816"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65693776"
 ---
 # <a name="n-tier-data-applications-overview"></a>多層式架構資料應用程式概觀
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,14 +39,14 @@ N-層 * 資料應用程式是指分隔成多個資料應用程式*層*。 也稱
   
 - [LINQ to SQL 工具，在 Visual Studio 中](../data-tools/linq-to-sql-tools-in-visual-studio2.md)提供用來產生不同的命名空間的 DataContext 和資料類別設定。 這可讓資料存取與資料實體層的邏輯分隔。  
   
-- [LINQ to SQL](http://msdn.microsoft.com/library/73d13345-eece-471a-af40-4cc7a2f11655)提供<xref:System.Data.Linq.Table%601.Attach%2A>方法可讓您將應用程式中的不同層級的結合在一起的 DataContext。 如需詳細資訊，請參閱 <<c0> [ 多層式架構和遠端的應用程式使用 LINQ to SQL](http://msdn.microsoft.com/library/854a1cdd-53cb-45f5-83ca-63962a9b3598)。  
+- [LINQ to SQL](https://msdn.microsoft.com/library/73d13345-eece-471a-af40-4cc7a2f11655)提供<xref:System.Data.Linq.Table%601.Attach%2A>方法可讓您將應用程式中的不同層級的結合在一起的 DataContext。 如需詳細資訊，請參閱 <<c0> [ 多層式架構和遠端的應用程式使用 LINQ to SQL](https://msdn.microsoft.com/library/854a1cdd-53cb-45f5-83ca-63962a9b3598)。  
   
 ## <a name="presentation-tier"></a>展示層  
  *展示層*是使用者與應用程式的互動的層。 它通常會包含其他的應用程式邏輯也。 典型的展示層元件包括下列各項：  
   
 - 資料繫結的元件，例如<xref:System.Windows.Forms.BindingSource>和<xref:System.Windows.Forms.BindingNavigator>。  
   
-- 物件表示的資料，例如[LINQ to SQL](http://msdn.microsoft.com/library/73d13345-eece-471a-af40-4cc7a2f11655)展示層中使用的實體類別。  
+- 物件表示的資料，例如[LINQ to SQL](https://msdn.microsoft.com/library/73d13345-eece-471a-af40-4cc7a2f11655)展示層中使用的實體類別。  
   
   展示層通常存取中介層使用的服務參考 (例如[Windows Communication Foundation 服務和 Visual Studio 中的 WCF Data Services](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md)應用程式)。 展示層不會直接存取資料層。 展示層會與資料層透過中介層的資料存取元件通訊。  
   
@@ -57,9 +57,9 @@ N-層 * 資料應用程式是指分隔成多個資料應用程式*層*。 也稱
   
 - 資料存取元件和邏輯，如下所示：  
   
-  - [TableAdapters](http://msdn.microsoft.com/library/09416de9-134c-4dc7-8262-6c8d81e3f364)並[Dataadapter 和 Datareader](http://msdn.microsoft.com/library/cc952ca2-ec19-46ab-9189-15174b52cb74)。  
+  - [TableAdapters](https://msdn.microsoft.com/library/09416de9-134c-4dc7-8262-6c8d81e3f364)並[Dataadapter 和 Datareader](https://msdn.microsoft.com/library/cc952ca2-ec19-46ab-9189-15174b52cb74)。  
   
-  - 物件表示的資料，例如[LINQ to SQL](http://msdn.microsoft.com/library/73d13345-eece-471a-af40-4cc7a2f11655)實體類別。  
+  - 物件表示的資料，例如[LINQ to SQL](https://msdn.microsoft.com/library/73d13345-eece-471a-af40-4cc7a2f11655)實體類別。  
   
   - 一般應用程式服務，例如驗證、 授權和個人化。  
   
@@ -87,9 +87,9 @@ N-層 * 資料應用程式是指分隔成多個資料應用程式*層*。 也稱
   
  [逐步解說：建立多層式架構 (N-Tier) 資料應用程式](../data-tools/walkthrough-creating-an-n-tier-data-application.md)  
   
- [逐步解說：將驗證新增至多層式架構資料應用程式](http://msdn.microsoft.com/library/b35d072c-31f0-49ba-a225-69177592c265)  
+ [逐步解說：將驗證新增至多層式架構資料應用程式](https://msdn.microsoft.com/library/b35d072c-31f0-49ba-a225-69177592c265)  
   
- [使用 LINQ to SQL 的多層式架構和遠端應用程式](http://msdn.microsoft.com/library/854a1cdd-53cb-45f5-83ca-63962a9b3598)  
+ [使用 LINQ to SQL 的多層式架構和遠端應用程式](https://msdn.microsoft.com/library/854a1cdd-53cb-45f5-83ca-63962a9b3598)  
   
 ## <a name="see-also"></a>另請參閱  
  <xref:System.Data.Linq.ITable.Attach%2A>   

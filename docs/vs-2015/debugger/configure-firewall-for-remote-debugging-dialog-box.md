@@ -21,12 +21,12 @@ caps.latest.revision: 14
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 91b0d7ee490b4e081a264c41b4fe85de07cb637b
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 26e2b1300feb8d2a15e63089ee9bddde5f2d1ef4
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63437814"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65702290"
 ---
 # <a name="configure-firewall-for-remote-debugging-dialog-box"></a>設定遠端偵錯防火牆對話方塊
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -48,5 +48,5 @@ ms.locfileid: "63437814"
   
 ## <a name="see-also"></a>另請參閱  
  [偵錯工具安全性](../debugger/debugger-security.md)   
- [設定裝置上的遠端工具](http://msdn.microsoft.com/library/90f45630-0d26-4698-8c1f-63f85a12db9c)   
+ [設定裝置上的遠端工具](https://msdn.microsoft.com/library/90f45630-0d26-4698-8c1f-63f85a12db9c)   
  [偵錯使用者介面參考](../debugger/debugging-user-interface-reference.md)

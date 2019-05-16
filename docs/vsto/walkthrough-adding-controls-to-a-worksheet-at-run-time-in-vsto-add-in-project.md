@@ -96,7 +96,7 @@ ms.locfileid: "62982108"
 
 1. 在 [功能區設計工具中，按兩下 **] 按鈕**。
 
-     <xref:Microsoft.Office.Tools.Ribbon.RibbonCheckBox.Click>事件處理常式** 按鈕**核取方塊便會開啟在程式碼編輯器。
+     <xref:Microsoft.Office.Tools.Ribbon.RibbonCheckBox.Click>事件處理常式 **按鈕** 核取方塊便會開啟在程式碼編輯器。
 
 2. 以下列程式碼取代 `Button_Click` 事件處理常式。
 

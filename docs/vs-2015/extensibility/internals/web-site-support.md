@@ -10,12 +10,12 @@ ms.assetid: ce9f4266-bb64-4c09-be88-4bd6413f60d0
 caps.latest.revision: 18
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 91deb6d2e3ec58533ac9339c8c94634db23ec996
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: f1a96504783de466551c6fb9d055b95ba38df760
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58946011"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65687686"
 ---
 # <a name="web-site-support"></a>網站支援
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -24,7 +24,7 @@ ms.locfileid: "58946011"
   
  網站專案系統會將範本和註冊屬性加入至現有的專案系統建立。 這些屬性的其中一個選取的語言的 IntelliSense 提供者。 IntelliSense 提供者實作會處理參考，並不會快取智慧網頁的要求時所呼叫的語言編譯器。  
   
- 用來編譯網頁的語言編譯器必須向[!INCLUDE[vstecasp](../../includes/vstecasp-md.md)]。 您可以使用[\<編譯器 > 項目](http://msdn.microsoft.com/library/7a151659-b803-4c27-b5ce-1c4aa0d5a823)在 Web.config 檔註冊的編譯器，如下列範例所示：  
+ 用來編譯網頁的語言編譯器必須向[!INCLUDE[vstecasp](../../includes/vstecasp-md.md)]。 您可以使用[\<編譯器 > 項目](https://msdn.microsoft.com/library/7a151659-b803-4c27-b5ce-1c4aa0d5a823)在 Web.config 檔註冊的編譯器，如下列範例所示：  
   
 ```  
 <system.codedom>  <compilers>    <compiler language="py;IronPython" extension=".py"       type="IronPython.CodeDom.PythonProvider, IronPython,       Version=1.0.2391.18146, Culture=neutral,       PublicKeyToken=b03f5f7f11d50a3a" />  </compilers></system.codedom>  

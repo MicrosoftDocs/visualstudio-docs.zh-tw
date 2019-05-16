@@ -12,12 +12,12 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 92dac82de96323e1d057991e6570715371c9b272
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 2bdcfc2f6a4b7655a6f4f2e335310e938e5acfed
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63438040"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65701973"
 ---
 # <a name="projects-and-solutions-options-dialog-box"></a>專案和方案、選項對話方塊
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -25,7 +25,7 @@ ms.locfileid: "63438040"
 隨著專案的開發和建置，設定 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 專案資料夾的預設路徑，並決定 [輸出] 視窗、[工作清單] 和方案總管的預設行為。 若要存取這個對話方塊，請按一下 [工具]/[選項]，並展開 [專案和方案]，然後按一下 [一般]。  
   
 > [!NOTE]
-> 根據您目前使用的設定或版本，您所看到的對話方塊可用選項，以及功能表命令的名稱和位置，可能會與 [說明] 中描述的有所不同。 撰寫這個說明網頁時，會考慮到 [一般開發設定]。 若要檢視或變更您的設定，請選擇 [工具] 功能表上的 [匯入和匯出設定]。 如需詳細資訊，請參閱 [在 Visual Studio 中自訂開發設定](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)  
+> 根據您目前使用的設定或版本，您所看到的對話方塊可用選項，以及功能表命令的名稱和位置，可能會與 [說明] 中描述的有所不同。 撰寫這個說明網頁時，會考慮到 [一般開發設定]。 若要檢視或變更您的設定，請選擇 [工具] 功能表上的 [匯入和匯出設定]。 如需詳細資訊，請參閱 [在 Visual Studio 中自訂開發設定](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)  
   
 ## <a name="settings"></a>設定  
  **專案位置**  
@@ -58,7 +58,7 @@ ms.locfileid: "63438040"
  如果您嘗試在未受完全信任的位置建立新專案或開啟現有專案 (例如，在 UNC 路徑或 HTTP 路徑上)，則會顯示訊息。 使用此選項，指定每當您在未受完全信任的位置嘗試建立或開啟專案時，是否要顯示訊息。  
   
  **建置開始時顯示輸出視窗**  
- 開始建置方案時，自動在 IDE 中顯示 [輸出] 視窗。 如需詳細資訊，請參閱[如何：控制輸出視窗](http://msdn.microsoft.com/library/91aebd15-8854-4a7a-9f7d-57376fb4e858)。 這個選項預設為啟用。  
+ 開始建置方案時，自動在 IDE 中顯示 [輸出] 視窗。 如需詳細資訊，請參閱[如何：控制輸出視窗](https://msdn.microsoft.com/library/91aebd15-8854-4a7a-9f7d-57376fb4e858)。 這個選項預設為啟用。  
   
  **重新命名檔案時提示符號重新命名**  
  選取此選項時，會顯示訊息方塊，詢問是否 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 也應重新命名專案中所有對程式碼元素的參考。  

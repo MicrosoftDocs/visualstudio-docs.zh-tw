@@ -23,12 +23,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 663adfbf1858a4da686330813c6fe3c5eed4d098
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: d2f581582acfed38d55a2cfef351856cc0caa945
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63407587"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65678913"
 ---
 # <a name="walkthrough-debugging-a-windows-form"></a>逐步解說：偵錯 Windows Form
 Windows 表單是其中一個最常見的受管理應用程式。 在 Windows Form 建立標準的 Windows 應用程式。 您可以完成此逐步解說使用 Visual Basic 中， C#，或C++。
@@ -165,23 +165,24 @@ Windows 表單是其中一個最常見的受管理應用程式。 在 Windows Fo
 
     ```cpp
     textBox1->Text = "Button was clicked!";
+    ```
 
-2. On the **Debug** menu, select **Start Without Debugging**.
+2. 在 **偵錯**功能表上，選取**啟動但不偵錯**。
 
-     The Windows Form starts running under Windows, just as if you had double-clicked its executable. The debugger is not attached.
+     Windows Form 會開始執行 Windows，就如同您必須按兩下可執行檔。 不附加偵錯工具。
 
-3. On the **Debug** menu, select **Attach to Process**. (This command is also available on the **Tools** menu.)
+3. 在 **偵錯**功能表上，選取**附加至處理序**。 (這個命令也是位於**工具**功能表。)
 
-     The **Attach to Process** dialog box appears.
+     [附加至處理序]  對話方塊隨即出現。
 
-4. In the **Available Processes** pane, find the process name (Walkthrough_SimpleDebug.exe) in the **Process** column and click it.
+4. 在 **可用的處理序**窗格中，尋找處理程序中的名稱 (Walkthrough_SimpleDebug.exe)**程序**資料行，然後按一下它。
 
-5. Click the **Attach** button.
+5. 按一下 [**附加**] 按鈕。
 
-6. In your Windows Form, click the one and only button.
+6. 在 Windows 表單中，按一下一個並只有 按鈕。
 
-     The debugger breaks execution of the Windows Form at the breakpoint.
+     偵錯工具在中斷點中斷執行的 Windows Form。
 
-## See Also
-- [Debugging Managed Code](../debugger/debugging-managed-code.md)
-- [Debugger Security](../debugger/debugger-security.md)
+## <a name="see-also"></a>另請參閱
+- [偵錯 Managed 程式碼](../debugger/debugging-managed-code.md)
+- [偵錯工具安全性](../debugger/debugger-security.md)

@@ -103,7 +103,7 @@ ms.locfileid: "62978441"
  如果您在 [Visual Studio 設計工具] 中開啟 Word 範本，就有可能看不到該範本上未與文字排列的控制項。 這是因為 Visual Studio 開啟 Word 範本**Normal**檢視。 若要檢視控制項，請按一下**檢視**功能表上，指向**Microsoft Office Word 檢視**，然後按一下 **整頁模式**。
 
 ### <a name="insert-clip-art-command-does-nothing-in-the-visual-studio-designer"></a>插入美工圖案命令沒有任何作用中 Visual Studio 設計工具
- 在 Visual Studio 設計工具中開啟 Excel 或 Word 時，按一下**美工圖案**按鈕**圖例**功能區中的索引標籤不會開啟**美工圖案**工作窗格。 若要加入美工圖案，您必須開啟活頁簿或文件中的主要專案資料夾的複本 (不是在複本*\bin*資料夾) 以外 Visual Studio 中，加入美工圖案，，然後將儲存的活頁簿或文件。
+ 在 Visual Studio 設計工具中開啟 Excel 或 Word 時，按一下**美工圖案**按鈕**圖例**功能區中的索引標籤不會開啟**美工圖案**工作窗格。 若要加入美工圖案，您必須開啟活頁簿或文件中的主要專案資料夾的複本 (不是在複本 *\bin* 資料夾) 以外 Visual Studio 中，加入美工圖案，，然後將儲存的活頁簿或文件。
 
 ## <a name="code"></a> 撰寫程式碼
  當您在 Office 專案中撰寫程式碼時，可能會遇到下列錯誤。

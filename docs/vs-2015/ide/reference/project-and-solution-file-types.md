@@ -30,12 +30,12 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 632c3027ccb8019e372abd6400dd3f2333742e05
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: ee25e9ab9145265119321053b5b8031f1b1ead80
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59658095"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65696017"
 ---
 # <a name="project-and-solution-file-types"></a>專案和方案檔類型
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -54,11 +54,11 @@ ms.locfileid: "59658095"
  [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 使用多種檔案格式來儲存專案的專屬資訊。 如需詳細資訊，請參閱下列說明主題：  
   
  [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)]  
- [為 Visual C++ 專案建立的檔案類型](http://msdn.microsoft.com/library/2b0ee2e0-ae81-4185-9bb9-11da3c99a283)  
+ [為 Visual C++ 專案建立的檔案類型](https://msdn.microsoft.com/library/2b0ee2e0-ae81-4185-9bb9-11da3c99a283)  
   
- [建立和管理 Visual C++ 專案](http://msdn.microsoft.com/library/11003cd8-9046-4630-a189-a32bf3b88047)  
+ [建立和管理 Visual C++ 專案](https://msdn.microsoft.com/library/11003cd8-9046-4630-a189-a32bf3b88047)  
   
- [Unicode](http://msdn.microsoft.com/library/1002004b-4113-4380-bf63-e1570934b793)  
+ [Unicode](https://msdn.microsoft.com/library/1002004b-4113-4380-bf63-e1570934b793)  
   
 ## <a name="see-also"></a>請參閱  
  [專案和方案](../../ide/solutions-and-projects-in-visual-studio.md)

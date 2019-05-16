@@ -12,14 +12,14 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 3d5e74a4384cff0a68764ffe09a37ab28460d58b
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: c71c0e7f8961b5f7c545fb59597cdd173230fc08
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63422826"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65680496"
 ---
-# <a name="how-to-create-a-nullable-type-class-designer"></a>HOW TO：建立可為 Null 的型別 (類別設計工具)
+# <a name="how-to-create-a-nullable-type-class-designer"></a>作法：建立可為 Null 的型別 (類別設計工具)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 特定實值型別不一定具有 (或需要) 定義的值。 這種情況在資料庫中為常見做法，其中的部分欄位不會指派任何值。 比方說，您可能將 null 值指派給資料庫欄位，以表示該欄位尚未指派值。  
@@ -36,7 +36,7 @@ ms.locfileid: "63422826"
   
   [類別設計工具] 針對可為 Null 型別的顯示方式，完全與顯示其基礎類型一樣。  
   
-  如需 Visual C# 可為 Null 型別的詳細資訊，請參閱[可為 Null 的型別](http://msdn.microsoft.com/library/e473cb01-28ca-42be-9cea-f717055d72c6)。 如需 Visual Basic 可為 Null 型別的詳細資訊，請參閱[可為 Null 的實值類型](http://msdn.microsoft.com/library/9ac3b602-6f96-4e6d-96f7-cd4e81c468a6)。  
+  如需 Visual C# 可為 Null 型別的詳細資訊，請參閱[可為 Null 的型別](https://msdn.microsoft.com/library/e473cb01-28ca-42be-9cea-f717055d72c6)。 如需 Visual Basic 可為 Null 型別的詳細資訊，請參閱[可為 Null 的實值類型](https://msdn.microsoft.com/library/9ac3b602-6f96-4e6d-96f7-cd4e81c468a6)。  
   
   [!INCLUDE[note_settings_general](../includes/note-settings-general-md.md)]  
   
@@ -83,7 +83,7 @@ ms.locfileid: "63422826"
   
 ## <a name="see-also"></a>另請參閱  
  <xref:System.Nullable%601>   
- [可為 Null 的型別](http://msdn.microsoft.com/library/e473cb01-28ca-42be-9cea-f717055d72c6)   
- [使用可為 Null 的型別](http://msdn.microsoft.com/library/0bacbe72-ce15-4b14-83e1-9c14e6380c28)   
- [如何：識別可為 Null 的型別](http://msdn.microsoft.com/library/d4b67ee2-66e8-40c1-ae9d-545d32c71387)   
- [可為 Null 的值類型](http://msdn.microsoft.com/library/9ac3b602-6f96-4e6d-96f7-cd4e81c468a6)
+ [可為 Null 的型別](https://msdn.microsoft.com/library/e473cb01-28ca-42be-9cea-f717055d72c6)   
+ [使用可為 Null 的型別](https://msdn.microsoft.com/library/0bacbe72-ce15-4b14-83e1-9c14e6380c28)   
+ [如何：識別可為 Null 的型別](https://msdn.microsoft.com/library/d4b67ee2-66e8-40c1-ae9d-545d32c71387)   
+ [可為 Null 的值類型](https://msdn.microsoft.com/library/9ac3b602-6f96-4e6d-96f7-cd4e81c468a6)

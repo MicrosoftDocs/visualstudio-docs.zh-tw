@@ -18,12 +18,12 @@ caps.latest.revision: 35
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 90772785297b84a12cc98d6ce21a2cd2e65743f9
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 8b8f81f22ffe566524e45a62330bc95c8ce00016
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63444980"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65686374"
 ---
 # <a name="server-and-client-configuration-issues-in-clickonce-deployments"></a>ClickOnce 部署中的伺服器和用戶端組態問題
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,7 +42,7 @@ ms.locfileid: "63444980"
   
 - .deploy  
   
-  不過，您可以停用此選項藉由清除**使用".deploy"副檔名**選項[發行選項 對話方塊中](http://msdn.microsoft.com/fd9baa1b-7311-4f9e-8ffb-ae50cf110592)，在此情況下，您必須設定網頁伺服器，以解除封鎖所有的檔案副檔名在應用程式中使用。  
+  不過，您可以停用此選項藉由清除**使用".deploy"副檔名**選項[發行選項 對話方塊中](https://msdn.microsoft.com/fd9baa1b-7311-4f9e-8ffb-ae50cf110592)，在此情況下，您必須設定網頁伺服器，以解除封鎖所有的檔案副檔名在應用程式中使用。  
   
   您必須設定.manifest、.application，以及使用.deploy，比方說，如果您使用未安裝了的 IIS [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]，或如果您使用另一部 Web 伺服器 (例如 Apache)。  
   
@@ -54,7 +54,7 @@ ms.locfileid: "63444980"
   
  您也可以套用 hotfix，若要啟用這項功能的.NET Framework 2.0。 如需詳細資訊，請參閱 http://go.microsoft.com/fwlink/?LinkId=158730。  
   
- 如需詳細資訊，請參閱 < [ \<defaultProxy > 項目 （網路設定）](http://msdn.microsoft.com/library/9d663c4b-07b4-4f6f-9b12-efbd3630354f)。  
+ 如需詳細資訊，請參閱 < [ \<defaultProxy > 項目 （網路設定）](https://msdn.microsoft.com/library/9d663c4b-07b4-4f6f-9b12-efbd3630354f)。  
   
 ## <a name="clickonce-and-web-browser-compatibility"></a>ClickOnce 和 Web 瀏覽器相容性  
  目前，[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]安裝使用 Internet Explorer 開啟部署資訊清單的 URL 時，才啟動。 只有當 Internet Explorer 設定為預設網頁瀏覽器，將會成功啟動其 URL 從另一個應用程式，例如 Microsoft Office Outlook、 啟動部署。  
@@ -92,7 +92,7 @@ ms.locfileid: "63444980"
 |`.msp`|`application/octet-stream`|  
   
 ## <a name="clickonce-and-mapped-drives"></a>ClickOnce 和對應的磁碟機  
- 如果您使用 Visual Studio 來發行 ClickOnce 應用程式時，您無法指定對應的磁碟機做為安裝位置。 不過，您可以修改 ClickOnce 應用程式，若要使用的資訊清單產生器和編輯器 （Mage.exe 和 MageUI.exe） 安裝的磁碟機。 如需詳細資訊，請參閱 < [Mage.exe （資訊清單產生和編輯工具）](http://msdn.microsoft.com/library/77dfe576-2962-407e-af13-82255df725a1)並[MageUI.exe (圖形用戶端、資訊清單產生和編輯工具)](http://msdn.microsoft.com/library/f9e130a6-8117-49c4-839c-c988f641dc14)。  
+ 如果您使用 Visual Studio 來發行 ClickOnce 應用程式時，您無法指定對應的磁碟機做為安裝位置。 不過，您可以修改 ClickOnce 應用程式，若要使用的資訊清單產生器和編輯器 （Mage.exe 和 MageUI.exe） 安裝的磁碟機。 如需詳細資訊，請參閱 < [Mage.exe （資訊清單產生和編輯工具）](https://msdn.microsoft.com/library/77dfe576-2962-407e-af13-82255df725a1)並[MageUI.exe (圖形用戶端、資訊清單產生和編輯工具)](https://msdn.microsoft.com/library/f9e130a6-8117-49c4-839c-c988f641dc14)。  
   
 ## <a name="ftp-protocol-not-supported-for-installing-applications"></a>FTP 通訊協定不支援如安裝應用程式  
  [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 從任何 HTTP 1.1 Web 伺服器或檔案伺服器安裝應用程式的支援。 FTP 檔案傳輸通訊協定不支援如安裝應用程式。 您可以使用 FTP 發行應用程式。 下表摘要說明這些差異：  

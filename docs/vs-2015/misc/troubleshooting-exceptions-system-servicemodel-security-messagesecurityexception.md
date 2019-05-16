@@ -12,12 +12,12 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 6852b12e8a3cbc902770a2825d12697c12fc1760
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: db8c0c092ad8bc1435f939c862cf3fa7fc52179e
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63436545"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65689141"
 ---
 # <a name="troubleshooting-exceptions-systemservicemodelsecuritymessagesecurityexception"></a>疑難排解例外狀況：System.ServiceModel.Security.MessageSecurityException
 A<xref:System.ServiceModel.Security.MessageSecurityException>例外狀況時擲回[!INCLUDE[vsindigo](../includes/vsindigo-md.md)]決定訊息未正確受到保護，或已遭竄改。 這個錯誤通常是在下列所有條件都成立時發生：  
@@ -86,4 +86,4 @@ A<xref:System.ServiceModel.Security.MessageSecurityException>例外狀況時擲�
   
 ## <a name="see-also"></a>另請參閱  
  <xref:System.ServiceModel.Security.MessageSecurityException>   
- [使用例外狀況助理](http://msdn.microsoft.com/library/e0a78c50-7318-4d54-af51-40c00aea8711)
+ [使用例外狀況助理](https://msdn.microsoft.com/library/e0a78c50-7318-4d54-af51-40c00aea8711)

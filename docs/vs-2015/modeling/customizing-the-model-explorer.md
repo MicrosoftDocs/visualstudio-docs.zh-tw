@@ -13,12 +13,12 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 1eb0b8b58d133a26c7970071b422e0c20f42c063
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 9206c4474b8ca3dc284aa474c645fddc3aecab18
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63433229"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65686729"
 ---
 # <a name="customizing-the-model-explorer"></a>自訂模型總管
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -116,4 +116,4 @@ ms.locfileid: "63433229"
      [總管] 中應該只會顯示**執行者**節點，而應該不會顯示**註解**節點。  
   
 ## <a name="see-also"></a>另請參閱  
- [Domain-Specific Language Tools Glossary](http://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa) (特定領域語言工具字彙表)
+ [Domain-Specific Language Tools Glossary](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa) (特定領域語言工具字彙表)

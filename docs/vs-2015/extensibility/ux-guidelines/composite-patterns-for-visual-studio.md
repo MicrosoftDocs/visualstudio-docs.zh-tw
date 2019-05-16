@@ -8,12 +8,12 @@ ms.assetid: e48ecfb2-f4b5-4d3a-b4a2-7a4d62fa4ec0
 caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 196fc4bddba0cfa6addb786148cd3876e1ec8260
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 55ba291135b41d534d8f91cae5d6257a26d4e34c
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63430013"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65686488"
 ---
 # <a name="composite-patterns-for-visual-studio"></a>適用於 Visual Studio 的複合模式
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -531,4 +531,4 @@ ms.locfileid: "63430013"
 |其他考量|||自訂螢幕小鍵盤|
 
 #### <a name="gestures"></a>軌跡
- 筆勢為使用者提供的捷徑命令，可能需要更複雜的互動。 參考以取得 Windows 指導方針[桌面應用程式的常見的觸控筆勢](http://msdn.microsoft.com/library/windows/desktop/dd940543\(v=vs.85\).aspx)，並遵循本指南中包括簡單的手勢，例如移動瀏覽和縮放的大部分筆勢。
+ 筆勢為使用者提供的捷徑命令，可能需要更複雜的互動。 參考以取得 Windows 指導方針[桌面應用程式的常見的觸控筆勢](https://msdn.microsoft.com/library/windows/desktop/dd940543\(v=vs.85\).aspx)，並遵循本指南中包括簡單的手勢，例如移動瀏覽和縮放的大部分筆勢。
