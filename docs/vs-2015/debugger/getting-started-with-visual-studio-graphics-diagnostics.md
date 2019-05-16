@@ -9,12 +9,12 @@ caps.latest.revision: 10
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: a69b6fd2f96f737d032676e5cd250a985bf69fb6
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: e9056fdae9d0eff55c572d8e38503d88269dbde3
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63446475"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65704711"
 ---
 # <a name="getting-started-with-visual-studio-graphics-diagnostics"></a>Visual Studio 圖形診斷快速入門
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -105,4 +105,4 @@ ms.locfileid: "63446475"
  若要深入了解如何搭配使用圖形分析器工具，請參閱[範例](../debugger/graphics-diagnostics-examples.md)。
 
 ## <a name="see-also"></a>另請參閱
- [Direct3D 12 圖形](http://msdn.microsoft.com/52094ae3-3b44-4689-9ee7-1ba1b3a779cb)
+ [Direct3D 12 圖形](https://msdn.microsoft.com/52094ae3-3b44-4689-9ee7-1ba1b3a779cb)

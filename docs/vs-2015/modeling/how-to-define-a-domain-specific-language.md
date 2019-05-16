@@ -18,12 +18,12 @@ caps.latest.revision: 45
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 9df436b51619211c1f79e7176479c7466f3de427
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 863daa41820b8a08f6cd9a6af26c6169fcda97db
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63441066"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65697253"
 ---
 # <a name="how-to-define-a-domain-specific-language"></a>如何定義網域指定的語言
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -214,7 +214,7 @@ ms.locfileid: "63441066"
   
 ##### <a name="to-test-the-new-domain-classes"></a>測試新的網域類別  
   
-1. **按一下 [轉換所有範本**] 工具列中的 [方案總管] 中，以產生 DSL 設計工具程式碼。 您可以自動化此步驟。 如需詳細資訊，請參閱 <<c0> [ 如何自動執行轉換的所有範本](http://msdn.microsoft.com/b63cfe20-fe5e-47cc-9506-59b29bca768a)。  
+1. **按一下 [轉換所有範本**] 工具列中的 [方案總管] 中，以產生 DSL 設計工具程式碼。 您可以自動化此步驟。 如需詳細資訊，請參閱 <<c0> [ 如何自動執行轉換的所有範本](https://msdn.microsoft.com/b63cfe20-fe5e-47cc-9506-59b29bca768a)。  
   
 2. **建置並執行 DSL。** 按 F5 或 ctrl+f5 以執行的新執行個體[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]在實驗模式中。 在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 的實驗執行個體中，開啟或建立具有您 DSL 之副檔名的檔案。  
   

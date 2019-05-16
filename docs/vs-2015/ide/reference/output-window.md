@@ -17,12 +17,12 @@ caps.latest.revision: 35
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 335058a6521f10313c94cbfbdd9657348cc90963
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 7173abd87a9e7345e7d7caee02d2bb333f507514
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63438069"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65696064"
 ---
 # <a name="output-window"></a>輸出視窗
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -61,14 +61,14 @@ ms.locfileid: "63438069"
   
  您也可以透過程式設計方式撰寫自己的應用程式，以在執行階段將診斷訊息寫入 [輸出] 窗格。 若要執行此工作，請使用 .NET Framework 類別庫 <xref:System.Diagnostics> 命名空間的 <xref:System.Diagnostics.Debug> 類別或 <xref:System.Diagnostics.Trace> 類別成員。 建置方案或專案的偵錯組態時，<xref:System.Diagnostics.Debug> 類別的成員會顯示輸出；建置偵錯或發行組態時，<xref:System.Diagnostics.Trace> 類別的成員會顯示輸出。 如需詳細資訊，請參閱[輸出視窗中的診斷訊息](../../debugger/diagnostic-messages-in-the-output-window.md)。  
   
- 在 [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)] 中，您可以建立自訂建置步驟和建置事件，而其警告和錯誤會顯示並計入 [輸出] 窗格中。 您可以在輸出行上按 F1，以顯示適當的說明主題。 如需詳細資訊，請參閱[格式化自訂建置步驟或建置事件的輸出](http://msdn.microsoft.com/library/92ad3e38-24d7-4b89-90e6-5a16f5f998da)。  
+ 在 [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)] 中，您可以建立自訂建置步驟和建置事件，而其警告和錯誤會顯示並計入 [輸出] 窗格中。 您可以在輸出行上按 F1，以顯示適當的說明主題。 如需詳細資訊，請參閱[格式化自訂建置步驟或建置事件的輸出](https://msdn.microsoft.com/library/92ad3e38-24d7-4b89-90e6-5a16f5f998da)。  
   
 ## <a name="scrolling-behavior"></a>捲動行為  
  如果您在 [輸出] 視窗中使用自動捲動，然後使用滑鼠或方向鍵進行巡覽，則會停止自動捲動。 若要繼續自動捲動，請按 CTRL+END。  
   
 ## <a name="see-also"></a>另請參閱  
  [輸出視窗中的診斷訊息](../../debugger/diagnostic-messages-in-the-output-window.md)   
- [如何：控制輸出視窗](http://msdn.microsoft.com/library/91aebd15-8854-4a7a-9f7d-57376fb4e858)   
+ [如何：控制輸出視窗](https://msdn.microsoft.com/library/91aebd15-8854-4a7a-9f7d-57376fb4e858)   
  [編譯和建置](../../ide/compiling-and-building-in-visual-studio.md)   
  [了解組建組態](../../ide/understanding-build-configurations.md)   
- [類別庫概觀](http://msdn.microsoft.com/library/7e4c5921-955d-4b06-8709-101873acf157)
+ [類別庫概觀](https://msdn.microsoft.com/library/7e4c5921-955d-4b06-8709-101873acf157)

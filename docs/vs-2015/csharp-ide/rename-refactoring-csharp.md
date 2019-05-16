@@ -16,12 +16,12 @@ caps.latest.revision: 45
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 971ca4e94f28016335483a03f4b0121de587f00d
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 3f1c31d858fbe7a5183456bfc7fcc1e602d4e051
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63439962"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65686044"
 ---
 # <a name="rename-refactoring-c"></a>重新命名重構 (C#)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -48,7 +48,7 @@ ms.locfileid: "63439962"
 |-----------------|----------------------|  
 |欄位|變更欄位的使用方式與宣告新的名稱。|  
 |本機變數|變更為新名稱的宣告和使用方式的變數。|  
-|方法|變更方法的名稱和該方法的所有參考新的名稱。 **注意：** 當您重新命名的擴充方法時，重新命名作業會傳播至所有執行個體的方法在範圍內，不論是否使用擴充方法作為靜態方法或執行個體方法中。 如需詳細資訊，請參閱[擴充方法](http://msdn.microsoft.com/library/175ce3ff-9bbf-4e64-8421-faeb81a0bb51)。|  
+|方法|變更方法的名稱和該方法的所有參考新的名稱。 **注意：** 當您重新命名的擴充方法時，重新命名作業會傳播至所有執行個體的方法在範圍內，不論是否使用擴充方法作為靜態方法或執行個體方法中。 如需詳細資訊，請參閱[擴充方法](https://msdn.microsoft.com/library/175ce3ff-9bbf-4e64-8421-faeb81a0bb51)。|  
 |命名空間|命名空間的名稱變更為新的名稱，在宣告中，所有`using`陳述式，以及完整限定的名稱。 **注意：** 重新命名的命名空間時[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]也會更新**預設命名空間**上的屬性**應用程式**頁面**專案設計工具**。 這個屬性不能重設，方法是選取**恢復**從**編輯**功能表。 若要重設**預設命名空間**屬性值，您必須修改中的屬性**專案設計工具**。 如需詳細資訊，請參閱 <<c0> [ 應用程式頁面](../ide/reference/application-page-project-designer-csharp.md)。|  
 |屬性|變更為新名稱的宣告和使用方式的屬性。|  
 |類型|變更為新的名稱，包括建構函式和解構函式的所有宣告和類型的所有使用方式。 針對部分類型，重新命名作業會傳播到所有的組件。|  
@@ -170,4 +170,4 @@ var orderIDs =
   
 ## <a name="see-also"></a>另請參閱  
  [重構 (C#)](../csharp-ide/refactoring-csharp.md)   
- [匿名類型](http://msdn.microsoft.com/library/59c9d7a4-3b0e-475e-b620-0ab86c088e9b)
+ [匿名類型](https://msdn.microsoft.com/library/59c9d7a4-3b0e-475e-b620-0ab86c088e9b)

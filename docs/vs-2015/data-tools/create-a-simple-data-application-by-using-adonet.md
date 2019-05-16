@@ -14,12 +14,12 @@ caps.latest.revision: 46
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 9b41d199ab634ef5eeb2a6baaef8401919870b63
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 70fca5b1329dc9091e0672b41de0798d93aba01a
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63436985"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65705174"
 ---
 # <a name="create-a-simple-data-application-by-using-adonet"></a>使用 ADO.NET 建立簡單的資料應用程式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -135,7 +135,7 @@ ms.locfileid: "63436985"
 5. 在 [**值**] 欄中，輸入您的連接字串 （不含任何外部引號括住），然後儲存變更。  
   
 > [!NOTE]
-> 在實際的應用程式中，您應該在連接字串安全地儲存中, 所述[連接字串和組態檔](http://msdn.microsoft.com/library/37df2641-661e-407a-a3fb-7bf9540f01e8)。  
+> 在實際的應用程式中，您應該在連接字串安全地儲存中, 所述[連接字串和組態檔](https://msdn.microsoft.com/library/37df2641-661e-407a-a3fb-7bf9540f01e8)。  
   
 ## <a name="BKMK_retrievetheconnectionstring"></a> 擷取連接字串  
   
@@ -726,7 +726,7 @@ End Namespace
 |NC-12|使用`ExecuteNonQuery`方法`cmdNewCustomer`執行`Sales.uspNewCustomer`預存程序。 這個預存程序執行`INSERT`陳述式中，不是查詢。|  
 |NC-13|會從資料庫傳回 `@CustomerID` 值做為 IDENTITY 值。 因為它是一個整數，您必須將它轉換成字串，它顯示在**客戶識別碼**文字方塊。<br /><br /> -您宣告`parsedCustomerID`在 nc-2。<br />-儲存`@CustomerID`中的值`parsedCustomerID`供稍後使用。<br />-將傳回的客戶 ID 轉換為字串，並將它插入`txtCustomerID.Text`。|  
 |NC-14|此範例中，加入簡單 （不實際執行品質） catch 子句。|  
-|NC-15|使用完畢之後一律關閉連接，讓它可以釋放至連接集區。 請參閱[SQL Server 連接共用 (ADO.NET)](http://msdn.microsoft.com/library/8xx3tyca\(l=en-us,v=VS.110\).aspx)。|  
+|NC-15|使用完畢之後一律關閉連接，讓它可以釋放至連接集區。 請參閱[SQL Server 連接共用 (ADO.NET)](https://msdn.microsoft.com/library/8xx3tyca\(l=en-us,v=VS.110\).aspx)。|  
 |NC-16|定義方法以驗證客戶名稱會顯示出來。<br /><br /> -如果文字方塊是空的顯示一則訊息，並傳回`false`，因為若要建立的帳戶必須有名稱。<br />-如果文字方塊不是空的則傳回`true`。|  
 |NC-17|為 `btnPlaceOrder` 按鈕將程式碼加入至 Click 事件處理常式。|  
 |NC-18|將呼叫包裝至 `btnPlaceOrder_Click` 事件程式碼周圍的 `isPlaceOrderReady`，讓 `uspPlaceNewOrder` 在必要的輸入未顯示時不執行。|  

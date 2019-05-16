@@ -35,7 +35,7 @@ HRESULT WINAPI SuspendTracking(void);
  如已暫停追蹤，則為 **HRESULT** 和已設定的 **SUCCEEDED** 位元。
 
 ## <a name="requirements"></a>需求
- **標頭：***FileTracker.h*
+ **標頭：**  *FileTracker.h*
 
 ## <a name="see-also"></a>另請參閱
 - [ResumeTracking](../msbuild/resumetracking.md)

@@ -15,12 +15,12 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 52950f138354a72f7c0e781d761aa466760e3ca0
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 0531a739ec00c3e6224ef5caa7b1c0bf71f0e4e4
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60054790"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65697942"
 ---
 # <a name="ca2233-operations-should-not-overflow"></a>CA2233:運算不應該發生溢位
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -114,4 +114,4 @@ End Sub
 3. 選取 **檢查算術溢位/反向溢位**然後按一下**確定**。
 
 ## <a name="see-also"></a>另請參閱
- <xref:System.OverflowException?displayProperty=fullName> [C# 運算子](http://msdn.microsoft.com/library/0301e31f-22ad-49af-ac3c-d5eae7f0ac43) [Checked 與 Unchecked](http://msdn.microsoft.com/library/a84bc877-2c7f-4396-8735-1ce97c42f35e)
+ <xref:System.OverflowException?displayProperty=fullName> [C# 運算子](https://msdn.microsoft.com/library/0301e31f-22ad-49af-ac3c-d5eae7f0ac43) [Checked 與 Unchecked](https://msdn.microsoft.com/library/a84bc877-2c7f-4396-8735-1ce97c42f35e)

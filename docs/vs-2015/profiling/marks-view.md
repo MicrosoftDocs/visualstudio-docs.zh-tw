@@ -14,12 +14,12 @@ caps.latest.revision: 23
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: fb5fb56a011355abb991d6e8da122461045af2b1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 77cf26d9746336a614b36d7dcd443b841afa06f7
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62562848"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65699755"
 ---
 # <a name="marks-view"></a>標記檢視
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -48,7 +48,7 @@ ms.locfileid: "62562848"
   
 ## <a name="see-also"></a>另請參閱  
  [效能報告概觀](../profiling/performance-report-overview.md)   
- [< PAVE_OVER > 如何：設定程式碼剖析標記](http://msdn.microsoft.com/library/65a23880-e5e8-4d5a-82b3-6498b9ef8975)   
- [< PAVE_OVER > 如何：在 Profiler 資料檔案中插入標記](http://msdn.microsoft.com/library/856bfc81-a60f-42e5-a9bc-71b986c1e09d)   
+ [< PAVE_OVER > 如何：設定程式碼剖析標記](https://msdn.microsoft.com/library/65a23880-e5e8-4d5a-82b3-6498b9ef8975)   
+ [< PAVE_OVER > 如何：在 Profiler 資料檔案中插入標記](https://msdn.microsoft.com/library/856bfc81-a60f-42e5-a9bc-71b986c1e09d)   
  [如何：收集 Windows 計數器資料](../profiling/how-to-collect-windows-counter-data.md)   
- [&#91;NIB&#93; 資料收集控制項視窗](http://msdn.microsoft.com/98d740d8-459f-4605-bf04-fb17aafaaa8f)
+ [&#91;NIB&#93; 資料收集控制項視窗](https://msdn.microsoft.com/98d740d8-459f-4605-bf04-fb17aafaaa8f)

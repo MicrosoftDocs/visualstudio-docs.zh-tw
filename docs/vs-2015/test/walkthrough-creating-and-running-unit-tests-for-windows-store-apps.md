@@ -13,12 +13,12 @@ ms.assetid: dd3e8a6a-b366-433e-a409-b9a9b89da89a
 caps.latest.revision: 23
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 7ff078649703eef438ff7f4b14a51e7f7d155231
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 1f74502472a72416d33bcf48e473977d694e545f
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63428204"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65695113"
 ---
 # <a name="walkthrough-creating-and-running-unit-tests-for-windows-store-apps"></a>逐步解說：建立和執行單元測試 Windows 市集應用程式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -86,7 +86,7 @@ Visual Studio 包含 Managed [!INCLUDE[win8_appname_long](../includes/win8-appna
     > [!NOTE]
     > 您選取的功能應該只包含讓 [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] 單元測試正常運作的功能。 這些功能沒有必要包含不屬於要測試之 [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)]應用程式的功能，並且通常應該是指定給受測 [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)]應用程式的其中一組功能。  
   
-     如需有關資訊清單設計工具的詳細資訊，請參閱[使用資訊清單設計工具設定 Windows 8.1 應用程式套件](http://msdn.microsoft.com/library/24c58b7f-9c6d-41c3-b385-c1e8497d5b2d)。  
+     如需有關資訊清單設計工具的詳細資訊，請參閱[使用資訊清單設計工具設定 Windows 8.1 應用程式套件](https://msdn.microsoft.com/library/24c58b7f-9c6d-41c3-b385-c1e8497d5b2d)。  
   
      ![單元測試資訊清單](../test/media/unit-test-win8.png "Unit_Test_Win8_")  
   
@@ -149,4 +149,4 @@ Visual Studio 包含 Managed [!INCLUDE[win8_appname_long](../includes/win8-appna
   
 ## <a name="see-also"></a>另請參閱  
  [使用 Visual Studio 測試市集應用程式](../test/testing-store-apps-with-visual-studio.md)   
- [使用 Team Foundation Build 建置和測試 Windows 市集應用程式](http://msdn.microsoft.com/library/d0ca17bb-deae-4f3d-a18d-1a99bebceaa9)
+ [使用 Team Foundation Build 建置和測試 Windows 市集應用程式](https://msdn.microsoft.com/library/d0ca17bb-deae-4f3d-a18d-1a99bebceaa9)

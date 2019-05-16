@@ -11,12 +11,12 @@ ms.assetid: db80aaf2-0652-4d3f-a8c5-2a98fd8502a2
 caps.latest.revision: 32
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c00023c7b8e624d5b97726720f0f7642a38c5a4f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 67ebbde52facf50eff534322d85a926968acdf0d
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60048771"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65705952"
 ---
 # <a name="sample-project-for-creating-unit-tests"></a>用於建立單元測試的範例專案
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,9 +25,9 @@ ms.locfileid: "60048771"
   
 - [逐步解說：Managed 程式碼建立和執行單元測試](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md)。 此逐步解說會引導您逐步完成建立及自訂單元測試、加以執行，以及檢查測試結果。  
   
-- [逐步解說：執行測試並檢視程式碼涵蓋範圍](http://msdn.microsoft.com/d4aab8e2-2140-4975-b4e3-41ef3fa944c8)。 此逐步解說將說明如何檢視程式碼涵蓋範圍資料，該資料會顯示專案程式碼中正在受測試的部分。  
+- [逐步解說：執行測試並檢視程式碼涵蓋範圍](https://msdn.microsoft.com/d4aab8e2-2140-4975-b4e3-41ef3fa944c8)。 此逐步解說將說明如何檢視程式碼涵蓋範圍資料，該資料會顯示專案程式碼中正在受測試的部分。  
   
-- [逐步解說：使用命令列測試公用程式](http://msdn.microsoft.com/library/52c11992-9e94-4067-a4b7-59f19d69d867)。 在此逐步解說中，您可以使用 MSTest.exe 命令列公用程式來執行測試及檢視結果。  
+- [逐步解說：使用命令列測試公用程式](https://msdn.microsoft.com/library/52c11992-9e94-4067-a4b7-59f19d69d867)。 在此逐步解說中，您可以使用 MSTest.exe 命令列公用程式來執行測試及檢視結果。  
   
 ## <a name="sample-code"></a>程式碼範例  
  此範例中唯一刻意設計的錯誤是在 Debit 方法 "m_balance += amount" 中，等號前面應該是減號，而不是加號。  
@@ -133,5 +133,5 @@ namespace BankAccountNS
   
 ## <a name="see-also"></a>另請參閱  
  [逐步解說：建立和執行 Managed 程式碼的單元測試](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md)   
- [逐步解說：執行測試並檢視程式碼涵蓋範圍](http://msdn.microsoft.com/d4aab8e2-2140-4975-b4e3-41ef3fa944c8)   
- [逐步解說：使用命令列測試公用程式](http://msdn.microsoft.com/library/52c11992-9e94-4067-a4b7-59f19d69d867)
+ [逐步解說：執行測試並檢視程式碼涵蓋範圍](https://msdn.microsoft.com/d4aab8e2-2140-4975-b4e3-41ef3fa944c8)   
+ [逐步解說：使用命令列測試公用程式](https://msdn.microsoft.com/library/52c11992-9e94-4067-a4b7-59f19d69d867)

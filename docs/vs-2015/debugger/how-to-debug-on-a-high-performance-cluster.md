@@ -1,5 +1,5 @@
 ---
-title: HOW TO：高效能叢集上偵錯 |Microsoft Docs
+title: 作法：高效能叢集上偵錯 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -17,21 +17,21 @@ caps.latest.revision: 27
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 4bb7245e57dedf6f94ce7766fcfae24ac930f608
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: f4487b168c3d405b2449bcfb9515e60f0ea67ed1
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60117540"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65702696"
 ---
-# <a name="how-to-debug-on-a-high-performance-cluster"></a>HOW TO：在高效能叢集上進行偵錯
+# <a name="how-to-debug-on-a-high-performance-cluster"></a>作法：在高效能叢集上進行偵錯
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 在高效能叢集上偵錯多重處理程式類似在遠端電腦上偵錯一般程式。 但是，還是有一些其他的考量。 如需一般的遠端安裝需求，請參閱[遠端偵錯](../debugger/remote-debugging.md)。  
   
  當您在高效能叢集上偵錯時，可以使用所有可用於遠端偵錯的 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 偵錯視窗和技術。 但是，因為是由遠端偵錯，所以無法使用外部主控台視窗。  
   
- [執行緒] 和 [處理序] 視窗對偵錯平行應用程式來說特別有用。 如需如何使用這些視窗的秘訣，請參閱[How to:使用處理序視窗](http://msdn.microsoft.com/0207ce2f-8ceb-4fe7-b2b5-4dd35b035ed7)和[How to:使用執行緒視窗](../debugger/how-to-use-the-threads-window.md)。  
+ [執行緒] 和 [處理序] 視窗對偵錯平行應用程式來說特別有用。 如需如何使用這些視窗的秘訣，請參閱[How to:使用處理序視窗](https://msdn.microsoft.com/0207ce2f-8ceb-4fe7-b2b5-4dd35b035ed7)和[How to:使用執行緒視窗](../debugger/how-to-use-the-threads-window.md)。  
   
  下列程序顯示在高效能叢集上偵錯時特別有用的一些技術。  
   
@@ -103,7 +103,7 @@ ms.locfileid: "60117540"
 ## <a name="see-also"></a>另請參閱  
  [對多執行緒應用程式進行偵錯](../debugger/debug-multithreaded-applications-in-visual-studio.md)   
  [遠端偵錯](../debugger/remote-debugging.md)   
- [如何：使用處理序視窗](http://msdn.microsoft.com/0207ce2f-8ceb-4fe7-b2b5-4dd35b035ed7)   
+ [如何：使用處理序視窗](https://msdn.microsoft.com/0207ce2f-8ceb-4fe7-b2b5-4dd35b035ed7)   
  [如何：使用執行緒視窗](../debugger/how-to-use-the-threads-window.md)   
- [執行緒和處理序](http://msdn.microsoft.com/73d87480-9af3-4d1b-baf5-397d5d876ae6)   
+ [執行緒和處理序](https://msdn.microsoft.com/73d87480-9af3-4d1b-baf5-397d5d876ae6)   
  [使用中斷點](../debugger/using-breakpoints.md)

@@ -10,12 +10,12 @@ ms.assetid: fbe84ad9-efe1-48b1-aba3-b50b90424d47
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 5b659560c7242fa691fe046b5e1628b1e47c2a2d
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 407dda2f203b7be20b19c0e296caa9ce1c95b32c
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60111594"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65696073"
 ---
 # <a name="service-essentials"></a>服務的基本資訊
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -40,7 +40,7 @@ ms.locfileid: "60111594"
   
 - 若要支援依需求載入，服務提供者註冊其全域服務與[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]。 如需詳細資訊，請參閱 <<c0> [ 登錄服務](../../misc/registering-services.md)。  
   
-- 取得服務之後，請使用[QueryInterface](http://msdn.microsoft.com/library/62fce95e-aafa-4187-b50b-e6611b74c3b3) (unmanaged 程式碼) 或轉型 （managed 程式碼） 來取得所需的介面，例如：  
+- 取得服務之後，請使用[QueryInterface](https://msdn.microsoft.com/library/62fce95e-aafa-4187-b50b-e6611b74c3b3) (unmanaged 程式碼) 或轉型 （managed 程式碼） 來取得所需的介面，例如：  
   
     ```vb  
     TryCast(GetService(GetType(SVsActivityLog)), IVsActivityLog)  
@@ -62,5 +62,5 @@ ms.locfileid: "60111594"
 ## <a name="see-also"></a>另請參閱  
  [可用服務清單](../../extensibility/internals/list-of-available-services.md)   
  [使用和提供服務](../../extensibility/using-and-providing-services.md)   
- [轉型和類型轉換](http://msdn.microsoft.com/library/568df58a-d292-4b55-93ba-601578722878)   
- [轉型](http://msdn.microsoft.com/library/3dbeb06e-2f4b-4693-832d-624bc8ec95de)
+ [轉型和類型轉換](https://msdn.microsoft.com/library/568df58a-d292-4b55-93ba-601578722878)   
+ [轉型](https://msdn.microsoft.com/library/3dbeb06e-2f4b-4693-832d-624bc8ec95de)

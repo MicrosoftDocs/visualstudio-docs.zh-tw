@@ -19,12 +19,12 @@ caps.latest.revision: 39
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 7d5c716d702716ffb0083279523668eab3e01685
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 1eb56d1334eb18dd5872457d032e5780a3f75eb3
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59650231"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65698712"
 ---
 # <a name="common-msbuild-project-properties"></a>一般 MSBuild 專案屬性
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -114,7 +114,7 @@ ms.locfileid: "59650231"
 |Satellite_Version|指定附屬組件的版本資訊。|  
 |Satellite_Win32Icon|將 .ico 圖示檔插入附屬組件。|  
 |Satellite_Win32Resource|將 Win32 資源 (.res 檔) 插入附屬組件。|  
-|SubsystemVersion|指定所產生的可執行檔能夠使用的最低子系統版本。 這個屬性相當於 `/subsystemversion` 編譯器參數。 如需這個屬性之預設值的資訊，請參閱 [/subsystemversion (Visual Basic)](http://msdn.microsoft.com/library/08be22b2-f447-4cd3-8203-120b1b920b54) 或 [/subsystemversion (C# 編譯器選項)](http://msdn.microsoft.com/library/a99fce81-9d92-4813-9874-bee777041445)。|  
+|SubsystemVersion|指定所產生的可執行檔能夠使用的最低子系統版本。 這個屬性相當於 `/subsystemversion` 編譯器參數。 如需這個屬性之預設值的資訊，請參閱 [/subsystemversion (Visual Basic)](https://msdn.microsoft.com/library/08be22b2-f447-4cd3-8203-120b1b920b54) 或 [/subsystemversion (C# 編譯器選項)](https://msdn.microsoft.com/library/a99fce81-9d92-4813-9874-bee777041445)。|  
 |TargetCompactFramework|執行您建置之應用程式所需的 .NET Compact Framework 版本。 指定這個屬性可讓您參考無法以其他方式參考的某些 Framework 組件。|  
 |TargetFrameworkVersion|執行您建置之應用程式所需的 [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] 版本。 指定這個屬性可讓您參考無法以其他方式參考的某些 Framework 組件。|  
 |TreatWarningsAsErrors|布林值參數，如果為 `true`，表示會將所有警告視為錯誤。 這個參數 (Parameter) 相當於 `/nowarn` 編譯器參數 (Switch)。|  

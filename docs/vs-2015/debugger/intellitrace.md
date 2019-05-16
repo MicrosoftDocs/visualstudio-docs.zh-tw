@@ -22,12 +22,12 @@ caps.latest.revision: 142
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: dfa2d0cb454dba07a036883a296d364cb3182afc
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 1ea7378e72d970bf53470b4434222aa4a1a4d9a1
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63440153"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65690526"
 ---
 # <a name="intellitrace"></a>IntelliTrace
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -48,8 +48,8 @@ ms.locfileid: "63440153"
   
 |||  
 |-|-|  
-|**使用 IntelliTrace 偵錯我的應用程式：**<br /><br /> -顯示過去的事件。<br />-顯示呼叫過去事件的資訊。<br />-儲存 IntelliTrace 工作階段。<br />控制 IntelliTrace 所收集的資料。|-   [逐步解說：使用 IntelliTrace](../debugger/walkthrough-using-intellitrace.md)<br />     [IntelliTrace 功能](../debugger/intellitrace-features.md)<br />-   [設定 IntelliTrace](http://msdn.microsoft.com/7657ecab-e07e-4b1b-872d-f05d966be37e)<br />-   [歷程偵錯](../debugger/historical-debugging.md)|  
-|**在 Test Manager 的測試工作階段期間收集 IntelliTrace 資料**|-   [在手動測試中收集更多診斷資料](http://msdn.microsoft.com/library/bb5a2cc0-84f5-4dfe-9560-ca3d313aefd2)|  
+|**使用 IntelliTrace 偵錯我的應用程式：**<br /><br /> -顯示過去的事件。<br />-顯示呼叫過去事件的資訊。<br />-儲存 IntelliTrace 工作階段。<br />控制 IntelliTrace 所收集的資料。|-   [逐步解說：使用 IntelliTrace](../debugger/walkthrough-using-intellitrace.md)<br />     [IntelliTrace 功能](../debugger/intellitrace-features.md)<br />-   [設定 IntelliTrace](https://msdn.microsoft.com/7657ecab-e07e-4b1b-872d-f05d966be37e)<br />-   [歷程偵錯](../debugger/historical-debugging.md)|  
+|**在 Test Manager 的測試工作階段期間收集 IntelliTrace 資料**|-   [在手動測試中收集更多診斷資料](https://msdn.microsoft.com/library/bb5a2cc0-84f5-4dfe-9560-ca3d313aefd2)|  
 |**從部署的應用程式中收集 IntelliTrace 資料**|-   [使用 IntelliTrace 獨立收集器](../debugger/using-the-intellitrace-stand-alone-collector.md)|  
 |**從 IntelliTrace 記錄檔 (.iTrace 檔案) 開始偵錯。**|-   [使用儲存的 IntelliTrace 資料](../debugger/using-saved-intellitrace-data.md)|  
   
@@ -57,7 +57,7 @@ ms.locfileid: "63440153"
   
 |||  
 |-|-|  
-|**支援**|-Visual Basic 和 Visual C# 應用程式使用.NET Framework 2.0 或更新版本。<br />     您可以偵錯大部分應用程式，包括 ASP.NET、Microsoft Azure、Windows Form、WCF、WPF、Windows Workflow、SharePoint 2010、SharePoint 2013 和 64 位元應用程式。<br />     若要偵錯 SharePoint 應用程式，使用 IntelliTrace，請參閱[逐步解說：使用 IntelliTrace 偵錯 SharePoint 應用程式](http://msdn.microsoft.com/library/4bd80d2f-f680-4bf4-81c3-f14e8185f6a4)。<br />     若要使用 IntelliTrace 的 Microsoft Azure 應用程式進行偵錯，請參閱[偵錯已發佈的雲端服務使用 IntelliTrace 和 Visual Studio](../azure/vs-azure-tools-intellitrace-debug-published-cloud-services.md)。|  
+|**支援**|-Visual Basic 和 Visual C# 應用程式使用.NET Framework 2.0 或更新版本。<br />     您可以偵錯大部分應用程式，包括 ASP.NET、Microsoft Azure、Windows Form、WCF、WPF、Windows Workflow、SharePoint 2010、SharePoint 2013 和 64 位元應用程式。<br />     若要偵錯 SharePoint 應用程式，使用 IntelliTrace，請參閱[逐步解說：使用 IntelliTrace 偵錯 SharePoint 應用程式](https://msdn.microsoft.com/library/4bd80d2f-f680-4bf4-81c3-f14e8185f6a4)。<br />     若要使用 IntelliTrace 的 Microsoft Azure 應用程式進行偵錯，請參閱[偵錯已發佈的雲端服務使用 IntelliTrace 和 Visual Studio](../azure/vs-azure-tools-intellitrace-debug-published-cloud-services.md)。|  
 |**有限支援**|-F#實驗基礎的應用程式<br />-Windows 市集應用程式支援僅適用於事件|  
 |**不支援**|- C++、 其他語言和指令碼<br />-Windows 服務、 Silverlight、 Xbox 或[!INCLUDE[winmobile](../includes/winmobile-md.md)]應用程式|  
   
@@ -77,7 +77,7 @@ ms.locfileid: "63440153"
   
 - Microsoft Test Manager 中的測試工作階段  
   
-- 如果是使用 Microsoft Monitoring Agent (獨立執行或搭配 System Center 2012 運作)，則為裝載於 IIS 上的 ASP.NET Web 應用程式或是在部署中執行的 SharePoint 2010 和 SharePoint 2013 應用程式。 請參閱[使用 IntelliTrace 獨立收集器](../debugger/using-the-intellitrace-stand-alone-collector.md)並[監視使用 Microsoft Monitoring Agent](http://technet.microsoft.com/library/dn465153.aspx)。  
+- 如果是使用 Microsoft Monitoring Agent (獨立執行或搭配 System Center 2012 運作)，則為裝載於 IIS 上的 ASP.NET Web 應用程式或是在部署中執行的 SharePoint 2010 和 SharePoint 2013 應用程式。 請參閱[使用 IntelliTrace 獨立收集器](../debugger/using-the-intellitrace-stand-alone-collector.md)並[監視使用 Microsoft Monitoring Agent](https://technet.microsoft.com/library/dn465153.aspx)。  
   
   下面是一些 IntelliTrace 如何協助您偵錯的範例：  
   
@@ -91,7 +91,7 @@ ms.locfileid: "63440153"
   
 - 您的應用程式在測試電腦上當機，但在開發電腦上卻執行得很順利。  
   
-   您可以從 Microsoft Test Manager 收集 IntelliTrace 資料，將資料儲存至 .iTrace 檔案，然後將這個檔案附加至 Team Foundation Server 工作項目供日後調查。 請參閱[收集詳細的診斷資料，在手動測試中](http://msdn.microsoft.com/library/bb5a2cc0-84f5-4dfe-9560-ca3d313aefd2)並[儲存的 IntelliTrace 資料的使用](../debugger/using-saved-intellitrace-data.md)。  
+   您可以從 Microsoft Test Manager 收集 IntelliTrace 資料，將資料儲存至 .iTrace 檔案，然後將這個檔案附加至 Team Foundation Server 工作項目供日後調查。 請參閱[收集詳細的診斷資料，在手動測試中](https://msdn.microsoft.com/library/bb5a2cc0-84f5-4dfe-9560-ca3d313aefd2)並[儲存的 IntelliTrace 資料的使用](../debugger/using-saved-intellitrace-data.md)。  
   
 - 在部署的應用程式中發生 Bug 或當機。  
   
@@ -104,7 +104,7 @@ ms.locfileid: "63440153"
 ## <a name="WhatData"></a> IntelliTrace 會收集哪些資料？  
  **收集事件資訊**  
   
- IntelliTrace 預設只會記錄 IntelliTrace 事件：偵錯工具事件、例外狀況、.NET Framework 事件，以及有助於偵錯的其他系統事件。 您可以選擇要收集的 IntelliTrace 事件種類 (除了偵錯工具事件和例外狀況外，這些項目一律會收集)。 請參閱[設定 IntelliTrace](http://msdn.microsoft.com/7657ecab-e07e-4b1b-872d-f05d966be37e)。  
+ IntelliTrace 預設只會記錄 IntelliTrace 事件：偵錯工具事件、例外狀況、.NET Framework 事件，以及有助於偵錯的其他系統事件。 您可以選擇要收集的 IntelliTrace 事件種類 (除了偵錯工具事件和例外狀況外，這些項目一律會收集)。 請參閱[設定 IntelliTrace](https://msdn.microsoft.com/7657ecab-e07e-4b1b-872d-f05d966be37e)。  
   
 - **偵錯工具事件**  
   
@@ -128,7 +128,7 @@ ms.locfileid: "63440153"
   
 - **.NET Framework 事件**  
   
-   根據預設，IntelliTrace 會記錄最常見的 .NET Framework 事件。 例如:   
+   根據預設，IntelliTrace 會記錄最常見的 .NET Framework 事件。 例如：  
   
   - 如果是檔案存取事件，IntelliTrace 會收集檔案名稱。  
   
@@ -146,7 +146,7 @@ ms.locfileid: "63440153"
   
   - [使用儲存的 IntelliTrace 資料](../debugger/using-saved-intellitrace-data.md)  
   
-  - [逐步解說：使用 IntelliTrace 偵錯 SharePoint 應用程式](http://msdn.microsoft.com/library/4bd80d2f-f680-4bf4-81c3-f14e8185f6a4)  
+  - [逐步解說：使用 IntelliTrace 偵錯 SharePoint 應用程式](https://msdn.microsoft.com/library/4bd80d2f-f680-4bf4-81c3-f14e8185f6a4)  
   
   **收集函式呼叫資訊**  
   
@@ -163,23 +163,23 @@ ms.locfileid: "63440153"
 > [!NOTE]
 > IntelliTrace 只會收集陣列中的前 256 個物件以及字串的前 256 個字元。  
   
- 請參閱[設定 IntelliTrace](http://msdn.microsoft.com/7657ecab-e07e-4b1b-872d-f05d966be37e)。  
+ 請參閱[設定 IntelliTrace](https://msdn.microsoft.com/7657ecab-e07e-4b1b-872d-f05d966be37e)。  
   
  **收集模組資訊**  
   
- 若要控制 IntelliTrace 收集呼叫資訊的數量，請僅指定您關心的模組。 這有助於改善應用程式在收集期間的效能。 請參閱[設定 IntelliTrace](http://msdn.microsoft.com/7657ecab-e07e-4b1b-872d-f05d966be37e)。  
+ 若要控制 IntelliTrace 收集呼叫資訊的數量，請僅指定您關心的模組。 這有助於改善應用程式在收集期間的效能。 請參閱[設定 IntelliTrace](https://msdn.microsoft.com/7657ecab-e07e-4b1b-872d-f05d966be37e)。  
   
 ## <a name="AffectPerformance"></a> IntelliTrace 是否會讓應用程式變慢？  
  根據預設，IntelliTrace 只會針對選取的 IntelliTrace 事件收集資料。 根據程式碼的結構和組織，這不一定會讓您的應用程式變慢。 例如，如果 IntelliTrace 時常記錄某個事件，這可能會讓應用程式變慢。 它也可能會讓您考慮重構應用程式。  
   
- 收集呼叫資訊可能會使應用程式明顯變慢， 也可能會增加要儲存至磁碟之任何 IntelliTrace 記錄檔 (.iTrace 檔案) 的大小。 若要將這些影響降至最低，請只針對您關注的那些模組收集呼叫資訊。  若要變更 .iTrace 檔案的大小上限，請移至 [工具]、[選項]、[IntelliTrace]、[進階]。 請參閱[設定 IntelliTrace](http://msdn.microsoft.com/7657ecab-e07e-4b1b-872d-f05d966be37e)。  
+ 收集呼叫資訊可能會使應用程式明顯變慢， 也可能會增加要儲存至磁碟之任何 IntelliTrace 記錄檔 (.iTrace 檔案) 的大小。 若要將這些影響降至最低，請只針對您關注的那些模組收集呼叫資訊。  若要變更 .iTrace 檔案的大小上限，請移至 [工具]、[選項]、[IntelliTrace]、[進階]。 請參閱[設定 IntelliTrace](https://msdn.microsoft.com/7657ecab-e07e-4b1b-872d-f05d966be37e)。  
   
 ## <a name="in-this-section"></a>本節內容  
  [IntelliTrace 功能](../debugger/intellitrace-features.md)  
   
- [設定 IntelliTrace](http://msdn.microsoft.com/7657ecab-e07e-4b1b-872d-f05d966be37e)  
+ [設定 IntelliTrace](https://msdn.microsoft.com/7657ecab-e07e-4b1b-872d-f05d966be37e)  
   
- [包含難以重現的 bug 的診斷追蹤資料](http://msdn.microsoft.com/library/944ae9af-5a55-4c58-b520-0108c03b3564)  
+ [包含難以重現的 bug 的診斷追蹤資料](https://msdn.microsoft.com/library/944ae9af-5a55-4c58-b520-0108c03b3564)  
   
  [於部署後診斷問題](../debugger/diagnose-problems-after-deployment.md)  
   

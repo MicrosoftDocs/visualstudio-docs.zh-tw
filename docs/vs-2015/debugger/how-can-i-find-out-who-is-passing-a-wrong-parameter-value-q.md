@@ -23,12 +23,12 @@ caps.latest.revision: 22
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: fa3f96cd6ee5ff3c4f78a3e9a9bc89b2037066fc
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: b0787a0d700859e7728762fd7846911fcd41e369
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60053828"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65704544"
 ---
 # <a name="how-can-i-find-out-who-is-passing-a-wrong-parameter-value"></a>如何發現誰傳錯參數值？
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -56,5 +56,5 @@ ms.locfileid: "60053828"
   
 ## <a name="see-also"></a>另請參閱  
  [對機器碼進行偵錯的常見問題集](../debugger/debugging-native-code-faqs.md)   
- [中斷點](http://msdn.microsoft.com/fe4eedc1-71aa-4928-962f-0912c334d583)   
+ [中斷點](https://msdn.microsoft.com/fe4eedc1-71aa-4928-962f-0912c334d583)   
  [偵錯機器碼](../debugger/debugging-native-code.md)

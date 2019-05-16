@@ -18,17 +18,17 @@ caps.latest.revision: 22
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: df364440f544df663eff294dfd53dcd671dea049
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: df764ac38f437be33b71e7a816709a46234f751e
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58944957"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65684145"
 ---
 # <a name="using-the-parallel-stacks-window"></a>使用平行堆疊視窗
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-**平行堆疊**視窗會很有用，當您偵錯多執行緒應用程式。 其**執行緒檢視**顯示您的應用程式中的所有執行緒的呼叫堆疊資訊。 這個檢視可讓您巡覽執行緒和其上的堆疊框架。 在 managed 程式碼 **[工作] 檢視**顯示呼叫堆疊的<xref:System.Threading.Tasks.Task?displayProperty=fullName>物件。 原生程式碼，在 **[工作] 檢視**顯示呼叫堆疊[工作群組](http://msdn.microsoft.com/library/42f05ac3-2098-494a-ba84-737fcdcad077)，[平行演算法](http://msdn.microsoft.com/library/045dca7b-4d73-4558-a44c-383b88a28473)，[非同步代理程式](http://msdn.microsoft.com/library/6cf6ccc6-87f1-4e14-af15-ea8ba58fef1a)，以及[輕量型工作](http://msdn.microsoft.com/library/9aba278c-e0c9-4ede-b7c6-fedf7a365d90)。  
+**平行堆疊**視窗會很有用，當您偵錯多執行緒應用程式。 其**執行緒檢視**顯示您的應用程式中的所有執行緒的呼叫堆疊資訊。 這個檢視可讓您巡覽執行緒和其上的堆疊框架。 在 managed 程式碼 **[工作] 檢視**顯示呼叫堆疊的<xref:System.Threading.Tasks.Task?displayProperty=fullName>物件。 原生程式碼，在 **[工作] 檢視**顯示呼叫堆疊[工作群組](https://msdn.microsoft.com/library/42f05ac3-2098-494a-ba84-737fcdcad077)，[平行演算法](https://msdn.microsoft.com/library/045dca7b-4d73-4558-a44c-383b88a28473)，[非同步代理程式](https://msdn.microsoft.com/library/6cf6ccc6-87f1-4e14-af15-ea8ba58fef1a)，以及[輕量型工作](https://msdn.microsoft.com/library/9aba278c-e0c9-4ede-b7c6-fedf7a365d90)。  
   
 ## <a name="threads-view"></a>執行緒檢視  
  下圖顯示的執行緒是從「主要」流到 A 再流到 B，然後再流到某個外部程式碼。 其他兩個執行緒是從某個外部程式碼開始，然後再流到 A，但是其中一個執行緒繼續流到 B，然後流到某個外部程式碼，而另一個執行緒則繼續流到 C，然後流到某個 AnonymousMethod。  
@@ -121,7 +121,7 @@ ms.locfileid: "58944957"
  [逐步解說：偵錯平行應用程式](../debugger/walkthrough-debugging-a-parallel-application.md)   
  [偵錯工具基礎](../debugger/debugger-basics.md)   
  [偵錯 Managed 程式碼](../debugger/debugging-managed-code.md)   
- [平行程式設計](http://msdn.microsoft.com/library/4d83c690-ad2d-489e-a2e0-b85b898a672d)   
+ [平行程式設計](https://msdn.microsoft.com/library/4d83c690-ad2d-489e-a2e0-b85b898a672d)   
  [使用工作視窗](../debugger/using-the-tasks-window.md)   
  [逐步解說：偵錯平行應用程式](../debugger/walkthrough-debugging-a-parallel-application.md)   
  [Task 類別](../extensibility/debugger/task-class-internal-members.md)

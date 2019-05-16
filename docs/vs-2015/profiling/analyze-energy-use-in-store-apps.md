@@ -14,12 +14,12 @@ caps.latest.revision: 39
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 67dd471808b938428d1c9e3f2d5b10c36f2bc914
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: c2b25d0fa57659b3081b54c51b7493621423188f
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63435109"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65696995"
 ---
 # <a name="analyze-energy-use-in-store-apps"></a>分析市集應用程式中的能源利用
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -55,12 +55,12 @@ Visual Studio [ **能源消耗** ] 分析工具可協助您分析 Windows 市集
   
  **將標記加入至 C#、Visual Basic、C++ 程式碼**  
   
- 若要將使用者標記新增至 C#、Visual Basic、C++ 程式碼，請先建立 [Windows.Foundation.Diagnostics LoggingChannel](http://msdn.microsoft.com/library/windows/apps/windows.foundation.diagnostics.loggingchannel.aspx) 物件。 接著，請在程式碼中您要標記的位置插入 [LoggingChannel.LogMessage](http://msdn.microsoft.com/library/windows/apps/dn264210.aspx) 方法的呼叫， 並在呼叫中使用 [LoggingLevel.Information](http://msdn.microsoft.com/library/windows/apps/windows.foundation.diagnostics.logginglevel.aspx) 。  
+ 若要將使用者標記新增至 C#、Visual Basic、C++ 程式碼，請先建立 [Windows.Foundation.Diagnostics LoggingChannel](https://msdn.microsoft.com/library/windows/apps/windows.foundation.diagnostics.loggingchannel.aspx) 物件。 接著，請在程式碼中您要標記的位置插入 [LoggingChannel.LogMessage](https://msdn.microsoft.com/library/windows/apps/dn264210.aspx) 方法的呼叫， 並在呼叫中使用 [LoggingLevel.Information](https://msdn.microsoft.com/library/windows/apps/windows.foundation.diagnostics.logginglevel.aspx) 。  
   
  當方法執行時，使用者標記就會與訊息一起加入至分析資料中。  
   
 > [!NOTE]
-> - Windows.Foundation.Diagnostics LoggingChannel 會實作 [Windows.Foundation.IClosable](http://msdn.microsoft.com/library/windows/apps/windows.foundation.iclosable.aspx) 介面 (等同於 C# 和 VB 中的 [System.IDisposable](http://msdn.microsoft.com/library/System.IDisposable.aspx))。為了避免作業系統資源流失，請在記錄頻道結束時呼叫 [LoggingChannel.Close](http://msdn.microsoft.com/library/windows/apps/windows.foundation.diagnostics.loggingchannel.close.aspx)() (等同於 C# 和 VB 中的Windows.Foundation.Diagnostics.LoggingChannel.Dispose())。  
+> - Windows.Foundation.Diagnostics LoggingChannel 會實作 [Windows.Foundation.IClosable](https://msdn.microsoft.com/library/windows/apps/windows.foundation.iclosable.aspx) 介面 (等同於 C# 和 VB 中的 [System.IDisposable](https://msdn.microsoft.com/library/System.IDisposable.aspx))。為了避免作業系統資源流失，請在記錄頻道結束時呼叫 [LoggingChannel.Close](https://msdn.microsoft.com/library/windows/apps/windows.foundation.diagnostics.loggingchannel.close.aspx)() (等同於 C# 和 VB 中的Windows.Foundation.Diagnostics.LoggingChannel.Dispose())。  
 >   - 每個開啟的記錄通道都必須具有唯一名稱。 嘗試使用與尚未處置的通道相同的名稱建立新記錄通道，將會造成例外狀況。  
   
  如需相關範例，請參閱 [LoggingSession 範例](http://code.msdn.microsoft.com/windowsapps/LoggingSession-Sample-ccd52336) 這個 Windows SDK 範例。  
@@ -148,7 +148,7 @@ if (performance && performance.mark) {
   
 ## <a name="BKMK_Other_resources"></a> 其他資源  
   
-- Windows 開發人員中心有關 **C#/VB/C++ 和 XAML** 和 [JavaScript 和 HTML](http://msdn.microsoft.com/0ee0b706-8432-4d49-9801-306ed90764e1) 的 [連線狀態和成本管理](http://msdn.microsoft.com/372afa6a-1c7c-4657-967d-03a77cd8e933) 章節中，描述了提供網路連線資訊的 Windows API，這些資訊可讓您的應用程式用來減少網路流量的成本。  
+- Windows 開發人員中心有關 **C#/VB/C++ 和 XAML** 和 [JavaScript 和 HTML](https://msdn.microsoft.com/0ee0b706-8432-4d49-9801-306ed90764e1) 的 [連線狀態和成本管理](https://msdn.microsoft.com/372afa6a-1c7c-4657-967d-03a77cd8e933) 章節中，描述了提供網路連線資訊的 Windows API，這些資訊可讓您的應用程式用來減少網路流量的成本。  
   
      Windows 市集應用程式適用的 Visual Studio 模擬器可讓您模擬網路資訊 API 的資料連接屬性。 請參閱 [Run Windows Store apps in the simulator](../debugger/run-windows-store-apps-in-the-simulator.md)  
   

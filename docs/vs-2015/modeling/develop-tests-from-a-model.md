@@ -11,12 +11,12 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 1cd9619eae1f0c74cb7b8096d6c51163157d934c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: dbc05ccbf78069b6c9d155274b471100a4966a10
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60042050"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65692272"
 ---
 # <a name="develop-tests-from-a-model"></a>透過模型開發測試
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,7 +36,7 @@ ms.locfileid: "60042050"
   
  子系統測試會將相同的準則套用到系統的主要元件。 每個元件都會與其他元件分開進行測試。 子系統測試著重在元件使用者介面或 API 上可見的行為。  
   
- 如需如何執行測試的詳細資訊，請參閱[測試應用程式](http://msdn.microsoft.com/library/796b7d6d-ad45-4772-9719-55eaf5490dac)。  
+ 如需如何執行測試的詳細資訊，請參閱[測試應用程式](https://msdn.microsoft.com/library/796b7d6d-ad45-4772-9719-55eaf5490dac)。  
   
 ## <a name="deriving-system-tests-from-a-requirements-model"></a>從需求模型衍生系統測試  
  您可以建立和維護系統測試與需求模型之間的關聯性。 若要建立此關聯性，請撰寫與需求模型主要項目對應的測試。 Visual Studio 透過讓您建立測試與模型各部分之間的連結，以協助您維護該關聯性。 如需需求模型的詳細資訊，請參閱 <<c0> [ 模型使用者需求](../modeling/model-user-requirements.md)。  
@@ -63,9 +63,9 @@ ms.locfileid: "60042050"
   
 ###### <a name="to-link-tests-to-a-use-case"></a>將測試連結至使用案例  
   
-1. 在 [!INCLUDE[TCMlong](../includes/tcmlong-md.md)] 中，建立需求，並以它為測試套件的基礎。 若要了解如何這麼做，請參閱[測試應用程式](http://msdn.microsoft.com/library/796b7d6d-ad45-4772-9719-55eaf5490dac)。  
+1. 在 [!INCLUDE[TCMlong](../includes/tcmlong-md.md)] 中，建立需求，並以它為測試套件的基礎。 若要了解如何這麼做，請參閱[測試應用程式](https://msdn.microsoft.com/library/796b7d6d-ad45-4772-9719-55eaf5490dac)。  
   
-    您所建立的需求是 [!INCLUDE[vstsTfsShort](../includes/vststfsshort-md.md)] 中的工作項目。 根據您的專案與 [!INCLUDE[esprfound](../includes/esprfound-md.md)] 搭配使用的流程範本，它可能是使用者劇本、需求或使用案例工作項目。 如需詳細資訊，請參閱 <<c0> [ 使用 Visual Studio Team Services 或 Team Foundation Server 追蹤工作](http://msdn.microsoft.com/library/52aa8bc9-fc7e-4fae-9946-2ab255ca7503)。  
+    您所建立的需求是 [!INCLUDE[vstsTfsShort](../includes/vststfsshort-md.md)] 中的工作項目。 根據您的專案與 [!INCLUDE[esprfound](../includes/esprfound-md.md)] 搭配使用的流程範本，它可能是使用者劇本、需求或使用案例工作項目。 如需詳細資訊，請參閱 <<c0> [ 使用 Visual Studio Team Services 或 Team Foundation Server 追蹤工作](https://msdn.microsoft.com/library/52aa8bc9-fc7e-4fae-9946-2ab255ca7503)。  
   
 2. 將需求工作項目連結至模型中的一個或多個使用案例。  
   
@@ -106,7 +106,7 @@ Assert (countAfter == countBefore = 1);
   
  許多存取子和更新程式都已經可以透過應用程式的一般 API 使用。 但是，可能需要撰寫一些額外函式，才能啟用測試。 這些額外的存取子和更新程式有時稱為「測試檢測」。 因為它們根據系統內部設計，所以系統開發人員負責提供它們，測試人員則根據需求模型撰寫測試的程式碼。  
   
- 撰寫自動化測試時，您可以使用一般測試來包裝存取子和更新程式。 如需詳細資訊，請參閱 <<c0> [ 可執行檔使用一般測試建立自動化測試的回合](http://msdn.microsoft.com/library/b8dadaf4-4473-49c5-a0d9-46eca9e65d52)。  
+ 撰寫自動化測試時，您可以使用一般測試來包裝存取子和更新程式。 如需詳細資訊，請參閱 <<c0> [ 可執行檔使用一般測試建立自動化測試的回合](https://msdn.microsoft.com/library/b8dadaf4-4473-49c5-a0d9-46eca9e65d52)。  
   
 ### <a name="tests-for-business-rules"></a>商務規則的測試  
  有些需求未與任何一個使用案例直接相關。 例如，DinnerNow 公司可讓客人從許多「菜單」( Menu) 中進行選擇，但是需要每筆「」 Order 中，所有選擇的「項目」(Item) 都應該來自單一「「菜單」( Menu)。 關於需求類別模型中「訂單」 (Order)、「菜單」(Menu) 與項目」(Item) 之間的關聯，這個商務規則可以表示為非變異。  
@@ -164,9 +164,9 @@ Assert (countAfter == countBefore = 1);
   
 #### <a name="to-link-tests-to-a-model-element-or-relationship"></a>將測試連結至模型項目或關聯性  
   
-1. 在 [!INCLUDE[TCMlong](../includes/tcmlong-md.md)] 中，建立需求，並以它為測試套件的基礎。 若要了解如何這麼做，請參閱[測試應用程式](http://msdn.microsoft.com/library/796b7d6d-ad45-4772-9719-55eaf5490dac)。  
+1. 在 [!INCLUDE[TCMlong](../includes/tcmlong-md.md)] 中，建立需求，並以它為測試套件的基礎。 若要了解如何這麼做，請參閱[測試應用程式](https://msdn.microsoft.com/library/796b7d6d-ad45-4772-9719-55eaf5490dac)。  
   
-     您所建立的需求是 [!INCLUDE[vstsTfsShort](../includes/vststfsshort-md.md)] 中的工作項目。 根據您的專案與 [!INCLUDE[esprfound](../includes/esprfound-md.md)] 搭配使用的流程範本，它可能是使用者劇本、需求或使用案例工作項目。 如需詳細資訊，請參閱 <<c0> [ 使用 Visual Studio Team Services 或 Team Foundation Server 追蹤工作](http://msdn.microsoft.com/library/52aa8bc9-fc7e-4fae-9946-2ab255ca7503)。  
+     您所建立的需求是 [!INCLUDE[vstsTfsShort](../includes/vststfsshort-md.md)] 中的工作項目。 根據您的專案與 [!INCLUDE[esprfound](../includes/esprfound-md.md)] 搭配使用的流程範本，它可能是使用者劇本、需求或使用案例工作項目。 如需詳細資訊，請參閱 <<c0> [ 使用 Visual Studio Team Services 或 Team Foundation Server 追蹤工作](https://msdn.microsoft.com/library/52aa8bc9-fc7e-4fae-9946-2ab255ca7503)。  
   
 2. 將需求工作項目連結至模型中的一個或多個項目。  
   
