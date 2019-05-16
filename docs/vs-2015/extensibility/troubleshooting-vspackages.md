@@ -11,12 +11,12 @@ ms.assetid: 274673e7-72e7-476f-a263-3411b5b874be
 caps.latest.revision: 23
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: eda92d27781ec26fd33cfd82d18257015b494236
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 62c1847e9ff476e364ed99cabc4b47a970c4c4da
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63430133"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65695497"
 ---
 # <a name="troubleshooting-vspackages"></a>針對 VSPackage 進行疑難排解
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -117,7 +117,7 @@ ms.locfileid: "63430133"
   
    2. 選取 [**參考**索引標籤中**屬性頁**] 對話方塊中，並確定所有路徑都是否正確。 或者，您可以使用**物件瀏覽器**瀏覽參考的物件。  
   
-        針對 managed 程式碼，您可以使用[Fuslogvw.exe （組件繫結記錄檔檢視器）](http://msdn.microsoft.com/library/e32fa443-0778-4cc3-bf36-5c8ea297d296)顯示失敗的組件載入的詳細資料。  
+        針對 managed 程式碼，您可以使用[Fuslogvw.exe （組件繫結記錄檔檢視器）](https://msdn.microsoft.com/library/e32fa443-0778-4cc3-bf36-5c8ea297d296)顯示失敗的組件載入的詳細資料。  
   
 2. 對於 unmanaged 程式碼，以找出在 VSPackage 的 CLSID [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] CLSID 登錄節點：  
   

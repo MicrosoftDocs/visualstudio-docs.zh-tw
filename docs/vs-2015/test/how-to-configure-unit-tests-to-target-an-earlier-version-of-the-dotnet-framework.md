@@ -1,5 +1,5 @@
 ---
-title: HOW TO：設定為以舊版.NET Framework 為目標的單元測試 |Microsoft Docs
+title: 作法：設定為以舊版.NET Framework 為目標的單元測試 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-test
@@ -8,14 +8,14 @@ ms.assetid: adb6c011-5abd-41d2-8ead-08cd7579bf37
 caps.latest.revision: 14
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 4e8b2c26050fd3e78e76b93e6372a03836916387
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: be8c468e8b6aac70d44485b1560a84524a4ef540
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63416351"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65686410"
 ---
-# <a name="how-to-configure-unit-tests-to-target-an-earlier-version-of-the-net-framework"></a>HOW TO：設定以舊版 .NET Framework 為目標的單元測試
+# <a name="how-to-configure-unit-tests-to-target-an-earlier-version-of-the-net-framework"></a>作法：設定以舊版 .NET Framework 為目標的單元測試
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 當您在 Microsoft Visual Studio 中建立測試專案時，預設會將目標設為最新版本的 .NET Framework。 此外，如果您升級舊版的 Visual Studio 測試專案，它們也會升級成以最新版本的 .NET Framework 為目標。 藉由編輯專案屬性，您可以明確地將專案目標重定為舊版的 .NET Framework。  
@@ -32,7 +32,7 @@ ms.locfileid: "63416351"
   
   **測試 SharePoint 應用程式**  
   
-  以上所列的功能同樣也能夠讓您使用 Visual Studio 撰寫 SharePoint 應用程式的單元測試和整合測試。 [!INCLUDE[crabout](../includes/crabout-md.md)] 若要了解如何使用 Visual Studio 開發 SharePoint 應用程式，請參閱[建立 SharePoint 方案](http://msdn.microsoft.com/library/4bfb1e59-97c9-4594-93f8-3068b4eb9631)、[建置和偵錯 SharePoint 方案](http://msdn.microsoft.com/library/c9e7c9ab-4eb3-40cd-a9b9-6c2a896f70ae)及[驗證及偵錯 SharePoint 程式碼](http://msdn.microsoft.com/library/b5f3bce2-6a51-41b1-a292-9e384bae420c)。  
+  以上所列的功能同樣也能夠讓您使用 Visual Studio 撰寫 SharePoint 應用程式的單元測試和整合測試。 [!INCLUDE[crabout](../includes/crabout-md.md)] 若要了解如何使用 Visual Studio 開發 SharePoint 應用程式，請參閱[建立 SharePoint 方案](https://msdn.microsoft.com/library/4bfb1e59-97c9-4594-93f8-3068b4eb9631)、[建置和偵錯 SharePoint 方案](https://msdn.microsoft.com/library/c9e7c9ab-4eb3-40cd-a9b9-6c2a896f70ae)及[驗證及偵錯 SharePoint 程式碼](https://msdn.microsoft.com/library/b5f3bce2-6a51-41b1-a292-9e384bae420c)。  
   
   **限制**  
   
@@ -126,7 +126,7 @@ ms.locfileid: "63416351"
 8. 在 [方案總管] 中，從新的 Visual C++ 測試專案的捷徑功能表選取 [重新載入專案]。  
   
 ## <a name="see-also"></a>另請參閱  
- [針對現有的程式碼建立和執行單元測試](http://msdn.microsoft.com/e8370b93-085b-41c9-8dec-655bd886f173)   
- [建立 SharePoint 方案](http://msdn.microsoft.com/library/4bfb1e59-97c9-4594-93f8-3068b4eb9631)   
- [建置和偵錯 SharePoint 方案](http://msdn.microsoft.com/library/c9e7c9ab-4eb3-40cd-a9b9-6c2a896f70ae)   
+ [針對現有的程式碼建立和執行單元測試](https://msdn.microsoft.com/e8370b93-085b-41c9-8dec-655bd886f173)   
+ [建立 SharePoint 方案](https://msdn.microsoft.com/library/4bfb1e59-97c9-4594-93f8-3068b4eb9631)   
+ [建置和偵錯 SharePoint 方案](https://msdn.microsoft.com/library/c9e7c9ab-4eb3-40cd-a9b9-6c2a896f70ae)   
  [進階編譯器設定對話方塊 (Visual Basic)](../ide/reference/advanced-compiler-settings-dialog-box-visual-basic.md)

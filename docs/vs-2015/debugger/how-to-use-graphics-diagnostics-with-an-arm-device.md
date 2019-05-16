@@ -1,5 +1,5 @@
 ---
-title: HOW TO：搭配 ARM 裝置使用圖形診斷 |Microsoft Docs
+title: 作法：搭配 ARM 裝置使用圖形診斷 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -9,14 +9,14 @@ caps.latest.revision: 12
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: f2a89344785f997f3b878df7d827db6e4732860b
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 5bbe12449849b656af2658c5bab667b0e611515e
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63384013"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65685867"
 ---
-# <a name="how-to-use-graphics-diagnostics-with-an-arm-device"></a>HOW TO：搭配 ARM 裝置使用圖形診斷
+# <a name="how-to-use-graphics-diagnostics-with-an-arm-device"></a>作法：搭配 ARM 裝置使用圖形診斷
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 圖形診斷支援遠端偵錯 ARM 裝置上的 Direct3D 應用程式，且 ARM 裝置執行 Windows RT 8.1 或 Windows Phone 8.1。 您可以從在裝置上執行的 Direct3D 應用程式擷取圖形資訊，或使用裝置做為先前擷取之圖形資訊的播放電腦。  
@@ -28,12 +28,12 @@ ms.locfileid: "63384013"
   
 #### <a name="to-enable-remote-debugging-on-your-arm-based-device"></a>在 ARM 裝置上啟用遠端偵錯  
   
-1. 安裝[ARM 套件原則](http://msdn.microsoft.com/windows/desktop/dn469188)ARM 型裝置上。  
+1. 安裝[ARM 套件原則](https://msdn.microsoft.com/windows/desktop/dn469188)ARM 型裝置上。  
   
 2. 安裝[遠端偵錯工具](https://my.visualstudio.com/Downloads?q=remote%20tools%20visual%20studio%202015)ARM 型裝置上。  
   
 > [!IMPORTANT]
-> 您可能需要針對 Windows Phone 8.1 裝置，註冊您的電話以進行開發。 若要這麼做，您必須是註冊的開發人員。 如需詳細資訊，請參閱 <<c0> [ 如何部署和執行應用程式，適用於 Windows Phone 8](http://msdn.microsoft.com/library/windowsphone/develop/ff402565.aspx)。  
+> 您可能需要針對 Windows Phone 8.1 裝置，註冊您的電話以進行開發。 若要這麼做，您必須是註冊的開發人員。 如需詳細資訊，請參閱 <<c0> [ 如何部署和執行應用程式，適用於 Windows Phone 8](https://msdn.microsoft.com/library/windowsphone/develop/ff402565.aspx)。  
   
  在裝置上啟用遠端偵錯之後，請將它設為偵錯目標，並啟動圖形診斷。  
   

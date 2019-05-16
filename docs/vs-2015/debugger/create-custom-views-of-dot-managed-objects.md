@@ -24,12 +24,12 @@ caps.latest.revision: 37
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: fbbfbe17fa5dfb9a10f530981643be7a0042d6fc
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: cb5b56404c7ddc99b7999b47cf3c2a899f915efd
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63440455"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65702423"
 ---
 # <a name="create-custom-views-of-managed-objects"></a>建立受管理物件的自訂檢視
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -50,10 +50,10 @@ ms.locfileid: "63440455"
 > [!CAUTION]
 > 這個檔案的結構和 autoexp 規則語法可能因 Visual Studio 發行版本不同而有所差異。  
   
- 您也可以透過撰寫運算式評估工具增益集來自訂原生型別檢視。 如需詳細資訊，請參閱[EEAddIn 範例：偵錯運算式評估工具增益集](http://msdn.microsoft.com/d4f6b068-c812-45bc-9ec0-7e0363c4bb9e)。  
+ 您也可以透過撰寫運算式評估工具增益集來自訂原生型別檢視。 如需詳細資訊，請參閱[EEAddIn 範例：偵錯運算式評估工具增益集](https://msdn.microsoft.com/d4f6b068-c812-45bc-9ec0-7e0363c4bb9e)。  
   
 ## <a name="see-also"></a>另請參閱  
  [使用 DebuggerTypeProxy 屬性](../debugger/using-debuggertypeproxy-attribute.md)   
  [使用 DebuggerDisplay 屬性](../debugger/using-the-debuggerdisplay-attribute.md)   
  [監看式及快速監看式視窗](../debugger/watch-and-quickwatch-windows.md)   
- [使用偵錯工具顯示屬性增強偵錯功能](http://msdn.microsoft.com/library/72bb7aa9-459b-42c4-9163-9312fab4c410)
+ [使用偵錯工具顯示屬性增強偵錯功能](https://msdn.microsoft.com/library/72bb7aa9-459b-42c4-9163-9312fab4c410)

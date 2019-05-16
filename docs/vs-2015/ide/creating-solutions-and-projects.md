@@ -18,12 +18,12 @@ caps.latest.revision: 49
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 7fd6d8c63d8b0b56af20ac1211802524336d06bc
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 91b8edcd371a5623d09334948e1db2889f60ae11
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63437573"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65701150"
 ---
 # <a name="creating-solutions-and-projects"></a>Creating Solutions and Projects
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,7 +31,7 @@ ms.locfileid: "63437573"
 專案是邏輯容器，以儲存建置您應用程式所需的所有檔案。 選擇主要功能表中的 [檔案] &#124; [新增] &#124; [專案] 來建立專案時，[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 會建立一個包含該專案的方案。 您接著可以視需要將更多新的或現有專案加入方案。 您可以從現有的程式碼檔案建立專案，而且您可以建立暫存專案 (僅限 .NET)，當專案完成後，將刪除暫存專案。  
   
 > [!NOTE]
-> 本主題中的描述以 Visual Studio Community 版本為基礎。 您看到的對話方塊與功能表命令，可能會依您的設定與 Visual Studio 版本而與此處描述的有所不同。 若要變更設定，請從 [ **工具** ] 功能表中選取 [ **匯入和匯出設定** ]。 如需詳細資訊，請參閱 [在 Visual Studio 中自訂開發設定](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)  
+> 本主題中的描述以 Visual Studio Community 版本為基礎。 您看到的對話方塊與功能表命令，可能會依您的設定與 Visual Studio 版本而與此處描述的有所不同。 若要變更設定，請從 [ **工具** ] 功能表中選取 [ **匯入和匯出設定** ]。 如需詳細資訊，請參閱 [在 Visual Studio 中自訂開發設定](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)  
   
 ## <a name="create-a-project-from-an-installed-project-template"></a>從已安裝的專案範本建立專案  
  從主要功能表中的 [檔案] &#124; [新增] &#124; [專案]，以顯示 [新增專案] 對話方塊。 在 [已安裝] &#124; [範本] 的左窗格中，選擇程式設計語言與平台或技術，然後從中間窗格的可用範本中進行選擇。  
@@ -95,4 +95,4 @@ ms.locfileid: "63437573"
   
 ## <a name="see-also"></a>請參閱  
  [專案和方案](../ide/solutions-and-projects-in-visual-studio.md)   
- [NIB 如何：建立多專案的方案](http://msdn.microsoft.com/02ecd6dd-0114-46fe-b335-ba9c5e3020d6)
+ [NIB 如何：建立多專案的方案](https://msdn.microsoft.com/02ecd6dd-0114-46fe-b335-ba9c5e3020d6)

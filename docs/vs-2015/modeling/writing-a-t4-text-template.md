@@ -13,12 +13,12 @@ caps.latest.revision: 45
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: b3517322087c940636be07f50a013fe79307f0b7
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 1e2f40421c2b59e61de1560619422491a37ed8d8
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63446713"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65684695"
 ---
 # <a name="writing-a-t4-text-template"></a>撰寫 T4 文字範本
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -161,7 +161,7 @@ private int Square(int i)
  如需有關控制區塊的詳細資訊，請參閱[文字範本控制區塊](../modeling/text-template-control-blocks.md)。  
   
 ### <a name="class-feature-blocks-can-contain-text-blocks"></a>類別功能區塊可以包含文字區塊。  
- 您可以撰寫可產生文字的方法。 例如:   
+ 您可以撰寫可產生文字的方法。 例如：  
   
 ```  
 List of Squares:  
@@ -191,13 +191,13 @@ private void WriteSquareLine(int i)
 <#@ assembly name="System.Xml" #>  
 ```  
   
- 您應該使用絕對路徑名稱，或在路徑名稱中使用標準巨集名稱。 例如：  
+ 您應該使用絕對路徑名稱，或在路徑名稱中使用標準巨集名稱。 例如:   
   
 ```  
 <#@ assembly name="$(SolutionDir)library\MyAssembly.dll" #>  
 ```  
   
- 如需巨集的清單，請參閱 <<c0> [ 建置命令和屬性的一般巨集](http://msdn.microsoft.com/library/239bd708-2ea9-4687-b264-043f1febf98b)。  
+ 如需巨集的清單，請參閱 <<c0> [ 建置命令和屬性的一般巨集](https://msdn.microsoft.com/library/239bd708-2ea9-4687-b264-043f1febf98b)。  
   
  Assembly 指示詞沒有任何作用[前置處理過的文字範本](../modeling/run-time-text-generation-with-t4-text-templates.md)。  
   
@@ -264,7 +264,7 @@ Content of MyFile.txt is:
   
 ```  
   
- 您也可以取得主機所提供的其他服務。 如需詳細資訊，請參閱 <<c0> [ 存取 Visual Studio 或從範本的其他主機](http://msdn.microsoft.com/0556f20c-fef4-41a9-9597-53afab4ab9e4)。  
+ 您也可以取得主機所提供的其他服務。 如需詳細資訊，請參閱 <<c0> [ 存取 Visual Studio 或從範本的其他主機](https://msdn.microsoft.com/0556f20c-fef4-41a9-9597-53afab4ab9e4)。  
   
 ### <a name="design-time-text-templates-run-in-a-separate-appdomain"></a>設計階段文字範本是在不同的 AppDomain 中執行  
  您應該注意可[設計階段文字範本](../modeling/design-time-code-generation-by-using-t4-text-templates.md)是獨立於主要應用程式的 AppDomain 中執行。 在大多數情況下，這並不重要，但是，您可能會發現特定複雜情況下的限制。 例如，如果您想要使用不同的服務，將資料傳入或傳出範本，則服務必須提供可序列化的 API   

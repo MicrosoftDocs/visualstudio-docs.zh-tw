@@ -22,12 +22,12 @@ caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 88a8d30b6eff7f4d7d2754ea383f7b544cc615ee
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: a84de037661992d1ee185bea2a70db74dac5e618
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63417059"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65686345"
 ---
 # <a name="walkthrough-downloading-satellite-assemblies-on-demand-with-the-clickonce-deployment-api"></a>逐步解說：依需求以 ClickOnce 部署 API 下載附屬組件
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,7 +36,7 @@ ms.locfileid: "63417059"
   
  中所述[當地語系化 ClickOnce 應用程式](../deployment/localizing-clickonce-applications.md)，您可以包含在相同的多個文化特性的多個附屬組件[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]部署。 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 預設會下載您部署中所有的附屬組件到用戶端電腦，儘管單一用戶可能只需要一個附屬組件。  
   
- 本逐步解說示範如何標示您的附屬組件為選擇性，並僅下載用戶端電腦目前文化特性所需要的附屬組件。 下列程序使用的工具可在 [!INCLUDE[winsdklong](../includes/winsdklong-md.md)]取得。 您也可以在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]執行這個工作。  另請參閱[逐步解說：下載附屬組件，依需求使用設計工具以 ClickOnce 部署 API](http://msdn.microsoft.com/library/ms366788\(v=vs.110\))或[逐步解說：下載依需求使用設計工具以 ClickOnce 部署 API 的附屬組件](http://msdn.microsoft.com/library/ms366788\(v=vs.120\))。  
+ 本逐步解說示範如何標示您的附屬組件為選擇性，並僅下載用戶端電腦目前文化特性所需要的附屬組件。 下列程序使用的工具可在 [!INCLUDE[winsdklong](../includes/winsdklong-md.md)]取得。 您也可以在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]執行這個工作。  另請參閱[逐步解說：下載附屬組件，依需求使用設計工具以 ClickOnce 部署 API](https://msdn.microsoft.com/library/ms366788\(v=vs.110\))或[逐步解說：下載依需求使用設計工具以 ClickOnce 部署 API 的附屬組件](https://msdn.microsoft.com/library/ms366788\(v=vs.120\))。  
   
 > [!NOTE]
 > 為了測試用途，下列程式碼範例以程式設計的方式設定文化特性為 `ja-JP`。 如需為生產環境調整程式碼的相關資訊，請參閱本主題＜後續步驟＞一節。  
@@ -51,9 +51,9 @@ ms.locfileid: "63417059"
      [!code-csharp[ClickOnce.SatelliteAssembliesSDK#1](../snippets/csharp/VS_Snippets_Winforms/ClickOnce.SatelliteAssembliesSDK/CS/Program.cs#1)]
      [!code-vb[ClickOnce.SatelliteAssembliesSDK#1](../snippets/visualbasic/VS_Snippets_Winforms/ClickOnce.SatelliteAssembliesSDK/VB/Form1.vb#1)]  
   
-2. 使用來產生您的應用程式的附屬組件[Resgen.exe （資源檔產生器）](http://msdn.microsoft.com/library/8ef159de-b660-4bec-9213-c3fbc4d1c6f4)或[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]。  
+2. 使用來產生您的應用程式的附屬組件[Resgen.exe （資源檔產生器）](https://msdn.microsoft.com/library/8ef159de-b660-4bec-9213-c3fbc4d1c6f4)或[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]。  
   
-3. 使用 MageUI.exe 產生應用程式資訊清單，或開啟現有的應用程式資訊清單。 如需有關這項工具的詳細資訊，請參閱 < [MageUI.exe (圖形用戶端、資訊清單產生和編輯工具)](http://msdn.microsoft.com/library/f9e130a6-8117-49c4-839c-c988f641dc14)。  
+3. 使用 MageUI.exe 產生應用程式資訊清單，或開啟現有的應用程式資訊清單。 如需有關這項工具的詳細資訊，請參閱 < [MageUI.exe (圖形用戶端、資訊清單產生和編輯工具)](https://msdn.microsoft.com/library/f9e130a6-8117-49c4-839c-c988f641dc14)。  
   
 4. 按一下 [檔案]  索引標籤。  
   

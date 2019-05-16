@@ -1,5 +1,5 @@
 ---
-title: HOW TO：啟用和停用編輯後繼續 |Microsoft Docs
+title: 作法：啟用和停用編輯後繼續 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -25,12 +25,12 @@ caps.latest.revision: 29
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 7d564162a92976037729c4ad638136d7c1e827c4
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 70914da9be4046589a0ca3b8e5fd4ae13210ca51
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63438294"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65689269"
 ---
 # <a name="how-to-enable-and-disable-edit-and-continue"></a>HOW TO：啟用和停用編輯後繼續
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -50,7 +50,7 @@ ms.locfileid: "63438294"
 3. 若要啟用，請選取**啟用編輯後繼續**核取方塊。 若要停用，請清除該核取方塊。  
   
    > [!NOTE]
-   > 如果已啟用 IntelliTrace，而且您同時收集 IntelliTrace 事件和呼叫資訊，則會停用 [編輯後繼續]。 如需詳細資訊，請參閱 <<c0> [ 設定 IntelliTrace](http://msdn.microsoft.com/7657ecab-e07e-4b1b-872d-f05d966be37e)。  
+   > 如果已啟用 IntelliTrace，而且您同時收集 IntelliTrace 事件和呼叫資訊，則會停用 [編輯後繼續]。 如需詳細資訊，請參閱 <<c0> [ 設定 IntelliTrace](https://msdn.microsoft.com/7657ecab-e07e-4b1b-872d-f05d966be37e)。  
   
 4. 按一下 [確定] 。  
   

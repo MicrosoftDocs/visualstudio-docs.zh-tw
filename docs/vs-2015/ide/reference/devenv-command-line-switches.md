@@ -21,12 +21,12 @@ caps.latest.revision: 36
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 0cb2d42db65c5eb77aae324d2c10c25010eb8b8f
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 48632a08b3ed59d65b7a551244c295b012bef665
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63444746"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65690984"
 ---
 # <a name="devenv-command-line-switches"></a>Devenv 命令列參數
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -76,7 +76,7 @@ Devenv 可讓您設定整合式開發環境 (IDE) 的各種選項，也可讓您
 |[/Log (devenv.exe)](../../ide/reference/log-devenv-exe.md)|啟動 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]，並將所有活動記錄至記錄檔。|  
 |[/Run (devenv.exe)](../../ide/reference/run-devenv-exe.md) or `/r`|編譯並執行指定的方案。|  
 |[/Runexit (devenv.exe)](../../ide/reference/runexit-devenv-exe.md)|編譯並執行指定的方案、執行方案時最小化 IDE，以及在方案完成執行之後關閉 IDE。|  
-|[/UseEnv (devenv.exe)](../../ide/reference/useenv-devenv-exe.md)|讓 IDE 使用 PATH、INCLUDE 和 LIB 環境變數進行 [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)] 編譯，而不是 [選項] 對話方塊之 [專案] 選項的 [VC++ 目錄] 區段中所指定的設定。 如需詳細資訊，請參閱[設定命令列建置的路徑和環境變數](http://msdn.microsoft.com/library/99389528-deb5-43b9-b99a-03c8773ebaf4)。|  
+|[/UseEnv (devenv.exe)](../../ide/reference/useenv-devenv-exe.md)|讓 IDE 使用 PATH、INCLUDE 和 LIB 環境變數進行 [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)] 編譯，而不是 [選項] 對話方塊之 [專案] 選項的 [VC++ 目錄] 區段中所指定的設定。 如需詳細資訊，請參閱[設定命令列建置的路徑和環境變數](https://msdn.microsoft.com/library/99389528-deb5-43b9-b99a-03c8773ebaf4)。|  
 |[/Edit (devenv.exe)](../../ide/reference/edit-devenv-exe.md)|在這個應用程式的作用中執行個體中開啟指定的檔案。 如果沒有作用中執行個體，則會以簡易視窗配置啟動新的執行個體。|  
 |[/ResetAddin (devenv.exe)](../../ide/reference/resetaddin-devenv-exe.md)|啟動 Visual Studio IDE 的執行個體，而不需要載入指定的增益集。|  
 |[/SafeMode (devenv.exe)](../../ide/reference/safemode-devenv-exe.md)|以安全模式啟動 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]，並且只載入預設環境和服務，以及隨附的協力廠商套件版本。|  

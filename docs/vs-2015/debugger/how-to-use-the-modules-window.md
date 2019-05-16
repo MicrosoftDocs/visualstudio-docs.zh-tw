@@ -27,14 +27,14 @@ caps.latest.revision: 41
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 7b19237b94ed3d53c49f248e22b86d3af8180625
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: b592515692e23dce49c125c7895bd158904b653f
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63445047"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65696132"
 ---
-# <a name="how-to-use-the-modules-window"></a>HOW TO：使用模組視窗
+# <a name="how-to-use-the-modules-window"></a>作法：使用模組視窗
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 注意]
@@ -78,6 +78,6 @@ ms.locfileid: "63445047"
 2. 指向**自動符號載入設定**，然後按一下**永遠手動載入**或是**預設**。 在重新啟動偵錯工作階段之前，變更不會生效。  
   
 ## <a name="see-also"></a>另請參閱  
- [中斷執行](http://msdn.microsoft.com/30fc4643-f337-4651-b1ff-f2de2c098d40)   
+ [中斷執行](https://msdn.microsoft.com/30fc4643-f337-4651-b1ff-f2de2c098d40)   
  [在偵錯工具中檢視資料](../debugger/viewing-data-in-the-debugger.md)   
  [指定符號 (.pdb) 和來源檔案](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)

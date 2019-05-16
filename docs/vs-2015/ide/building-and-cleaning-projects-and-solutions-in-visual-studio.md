@@ -23,12 +23,12 @@ caps.latest.revision: 37
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ef0bda55c42d384f9e7285b445e4cb3c19144289
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: d447d82815046aba6383c2467c2b44c5b7d0d0f0
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63408436"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65685709"
 ---
 # <a name="building-and-cleaning-projects-and-solutions-in-visual-studio"></a>在 Visual Studio 中建置和清除專案與方案
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,7 +36,7 @@ ms.locfileid: "63408436"
 您可以使用本主題中的程序來建置、重建或清除所有或部分專案，或方案中的專案項目。 如需逐步教學課程，請參閱[逐步解說：建置應用程式](../ide/walkthrough-building-an-application.md)。
 
 > [!NOTE]
-> 您 Visual Studio 版本中的 UI 可能不同於本主題所述，視您目前使用的設定而定。 若要變更設定，請開啟 [工具] 功能表，然後選擇 [匯入和匯出設定]。 如需詳細資訊，請參閱 [在 Visual Studio 中自訂開發設定](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)
+> 您 Visual Studio 版本中的 UI 可能不同於本主題所述，視您目前使用的設定而定。 若要變更設定，請開啟 [工具] 功能表，然後選擇 [匯入和匯出設定]。 如需詳細資訊，請參閱 [在 Visual Studio 中自訂開發設定](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)
 
 ## <a name="to-build-rebuild-or-clean-an-entire-solution"></a>建置、重建或清除整個方案
 
@@ -110,4 +110,4 @@ ms.locfileid: "63408436"
     - 選擇 Ctrl + Break 鍵。
 
 ## <a name="see-also"></a>另請參閱
- [如何：檢視、 儲存和設定組建記錄檔](../ide/how-to-view-save-and-configure-build-log-files.md)[取得組建記錄檔](../msbuild/obtaining-build-logs-with-msbuild.md)[編譯和建置](../ide/compiling-and-building-in-visual-studio.md)[了解組建組態](../ide/understanding-build-configurations.md) [偵錯和發行專案組態](http://msdn.microsoft.com/0440b300-0614-4511-901a-105b771b236e) [C /C++建置參考](http://msdn.microsoft.com/library/100b4ccf-572c-4d1f-970c-fa0bc0cc0d2d) [Devenv 命令列參數](../ide/reference/devenv-command-line-switches.md)[方案和專案](../ide/solutions-and-projects-in-visual-studio.md)
+ [如何：檢視、 儲存和設定組建記錄檔](../ide/how-to-view-save-and-configure-build-log-files.md)[取得組建記錄檔](../msbuild/obtaining-build-logs-with-msbuild.md)[編譯和建置](../ide/compiling-and-building-in-visual-studio.md)[了解組建組態](../ide/understanding-build-configurations.md) [偵錯和發行專案組態](https://msdn.microsoft.com/0440b300-0614-4511-901a-105b771b236e) [C /C++建置參考](https://msdn.microsoft.com/library/100b4ccf-572c-4d1f-970c-fa0bc0cc0d2d) [Devenv 命令列參數](../ide/reference/devenv-command-line-switches.md)[方案和專案](../ide/solutions-and-projects-in-visual-studio.md)

@@ -15,12 +15,12 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: a332139caec707c593614c7cf1b07733d533ac87
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 2d7bcaf5637be70174a3a337343d92b7b3705b46
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58943282"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65692034"
 ---
 # <a name="ca1411-com-registration-methods-should-not-be-visible"></a>CA1411:COM 註冊方法不應該為可見的
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -54,4 +54,4 @@ ms.locfileid: "58943282"
  [CA1410:應該和 COM 註冊方法對應](../code-quality/ca1410-com-registration-methods-should-be-matched.md)
 
 ## <a name="see-also"></a>另請參閱
- <xref:System.Runtime.InteropServices.RegistrationServices?displayProperty=fullName> [向 COM 註冊組件](http://msdn.microsoft.com/library/87925795-a3ae-4833-b138-125413478551) [Regasm.exe （組件登錄工具）](http://msdn.microsoft.com/library/e190e342-36ef-4651-a0b4-0e8c2c0281cb)
+ <xref:System.Runtime.InteropServices.RegistrationServices?displayProperty=fullName> [向 COM 註冊組件](https://msdn.microsoft.com/library/87925795-a3ae-4833-b138-125413478551) [Regasm.exe （組件登錄工具）](https://msdn.microsoft.com/library/e190e342-36ef-4651-a0b4-0e8c2c0281cb)

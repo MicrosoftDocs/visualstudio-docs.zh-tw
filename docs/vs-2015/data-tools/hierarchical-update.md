@@ -24,19 +24,19 @@ caps.latest.revision: 29
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 666b5acaae84a1b16c1b4bdfeb7cb1b8f4bcfb64
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 521f878c9d4fafa61f8c717f4c9752622ef339d9
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63386000"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65699816"
 ---
 # <a name="hierarchical-update"></a>階層式更新
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 階層式更新 * 是指儲存回資料庫的更新的資料 （從含有兩個或多個相關資料表的資料集），同時維護參考完整性規則的程序。 *參考完整性*指的是控制行為的插入、 更新和刪除相關的記錄在資料庫中的條件約束所提供的一致性規則。 比方說，就會強制執行允許該客戶的訂單建立之前建立的客戶記錄的參考完整性。  如需有關在資料集中的關聯性的詳細資訊，請參閱[集中的關聯性](../data-tools/relationships-in-datasets.md)  
   
- 階層式更新功能會使用`TableAdapterManager`來管理`TableAdapter`中具類型資料集。 `TableAdapterManager`元件[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]-產生類別，因此不屬於[!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]。 當您將資料表從資料來源視窗拖曳至 Windows Form 或 WPF 頁面時，Visual Studio 會將類型 TableAdapterManager 的變數加入至表單或頁面上，以及您在 元件匣中的設計工具中看到它。 如需詳細資訊`TableAdapterManager`類別，請參閱 TableAdapterManager 參考 > 一節[TableAdapterManager 概觀](http://msdn.microsoft.com/library/33076d42-6b41-491a-ac11-6c6339aea650)。  
+ 階層式更新功能會使用`TableAdapterManager`來管理`TableAdapter`中具類型資料集。 `TableAdapterManager`元件[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]-產生類別，因此不屬於[!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]。 當您將資料表從資料來源視窗拖曳至 Windows Form 或 WPF 頁面時，Visual Studio 會將類型 TableAdapterManager 的變數加入至表單或頁面上，以及您在 元件匣中的設計工具中看到它。 如需詳細資訊`TableAdapterManager`類別，請參閱 TableAdapterManager 參考 > 一節[TableAdapterManager 概觀](https://msdn.microsoft.com/library/33076d42-6b41-491a-ac11-6c6339aea650)。  
   
  根據預設，資料集視為相關的資料表 」，關聯性 」 表示它不會強制執行 foreign key 條件約束。 您可以修改這項設定在設計階段使用 Dataset 設計工具。 選取以顯示兩個資料表之間的關聯線**關聯** 對話方塊。 這裡所做的變更將會決定 TableAdapterManager 的運作方式當它傳回至資料庫傳送相關的資料表中所做的變更。  
   
@@ -55,7 +55,7 @@ ms.locfileid: "63386000"
   
  根據預設，資料集內的資料表產生關聯性 (<xref:System.Data.DataRelation>) 符合資料庫中的關聯性。 不過，在資料集中的關聯性不會產生做為外部索引鍵條件約束。 <xref:System.Data.DataRelation>設定為**僅關聯**而不需要<xref:System.Data.ForeignKeyConstraint.UpdateRule%2A>或<xref:System.Data.ForeignKeyConstraint.DeleteRule%2A>作用中。  
   
- 根據預設，階層式更新和串聯刪除為關閉狀態，即使資料庫關聯性設定串聯更新和/或串聯刪除。 例如，建立新的客戶和新的訂單，並再嘗試儲存資料可能會導致衝突資料庫所定義的外部索引鍵條件約束。 如需詳細資訊，請參閱[如何：設定資料集內的 Foreign Key 條件約束](http://msdn.microsoft.com/library/3954c388-e209-4a67-a34e-5ca106282f8e)。  
+ 根據預設，階層式更新和串聯刪除為關閉狀態，即使資料庫關聯性設定串聯更新和/或串聯刪除。 例如，建立新的客戶和新的訂單，並再嘗試儲存資料可能會導致衝突資料庫所定義的外部索引鍵條件約束。 如需詳細資訊，請參閱[如何：設定資料集內的 Foreign Key 條件約束](https://msdn.microsoft.com/library/3954c388-e209-4a67-a34e-5ca106282f8e)。  
   
 ## <a name="set-the-order-to-perform-updates"></a>設定以執行更新的順序  
  設定的順序來執行更新設定個別的順序插入、 更新和刪除，才能將修改過的所有資料都儲存在資料集的所有資料表。 啟用階層式更新時，插入第一次，執行，則更新，然後刪除。 `TableAdapterManager`提供`UpdateOrder`可以設為第一次，執行更新，然後插入和刪除的屬性。  
@@ -63,7 +63,7 @@ ms.locfileid: "63386000"
 > [!NOTE]
 > 請務必了解的是包含所有更新的順序。 也就是，當執行更新時，插入，然後按一下 刪除執行中的資料集的所有資料表。  
   
- 若要設定`UpdateOrder`屬性中的，拖曳項目之後[資料來源視窗](http://msdn.microsoft.com/library/0d20f699-cc95-45b3-8ecb-c7edf1f67992)到表單上，選取`TableAdapterManager`在元件匣，然後將設定`UpdateOrder`中的屬性**屬性**  視窗。 如需詳細資訊，請參閱[如何：執行階層式更新時設定的順序](http://msdn.microsoft.com/library/a0734935-78dd-4c0b-80d7-5e7925789c83)。  
+ 若要設定`UpdateOrder`屬性中的，拖曳項目之後[資料來源視窗](https://msdn.microsoft.com/library/0d20f699-cc95-45b3-8ecb-c7edf1f67992)到表單上，選取`TableAdapterManager`在元件匣，然後將設定`UpdateOrder`中的屬性**屬性**  視窗。 如需詳細資訊，請參閱[如何：執行階層式更新時設定的順序](https://msdn.microsoft.com/library/a0734935-78dd-4c0b-80d7-5e7925789c83)。  
   
 ## <a name="create-a-backup-copy-of-a-dataset-before-performing-a-hierarchical-update"></a>建立資料集的備份副本，然後再執行階層式更新  
  當您儲存資料時 (藉由呼叫`TableAdapterManager.UpdateAll()`方法)，則`TableAdapterManager`嘗試更新單一交易中每個資料表的資料。 如果任何資料表更新的任何部分失敗時，會回復整個交易。 在大部分情況下，復原會傳回您的應用程式，為其原始狀態。  
@@ -120,7 +120,7 @@ ms.locfileid: "63386000"
 |`UpdateAll` 方法|所有資料表的資料會儲存所有資料。|  
 |`BackUpDataSetBeforeUpdate` 屬性|決定是否要建立資料集的備份副本，然後再執行`TableAdapterManager.UpdateAll`方法。布林值。|  
 |*tableName* `TableAdapter`屬性|代表`TableAdapter`。 產生`TableAdapterManager`包含每個屬性`TableAdapter`其所管理。 例如，Customers 和 Orders 資料表的資料集就會產生含有`TableAdapterManager`，其中包含`CustomersTableAdapter`和`OrdersTableAdapter`屬性。|  
-|`UpdateOrder` 屬性|控制個別的 insert、 update 和 delete 命令的順序。 將此設定中的值的其中一個`TableAdapterManager.UpdateOrderOption`列舉型別。<br /><br /> 根據預設，`UpdateOrder`設定為**InsertUpdateDelete**。 這表示插入、 更新，然後再刪除將會在資料集中的所有資料表。 如需詳細資訊，請參閱[如何：執行階層式更新時設定的順序](http://msdn.microsoft.com/library/a0734935-78dd-4c0b-80d7-5e7925789c83)。|  
+|`UpdateOrder` 屬性|控制個別的 insert、 update 和 delete 命令的順序。 將此設定中的值的其中一個`TableAdapterManager.UpdateOrderOption`列舉型別。<br /><br /> 根據預設，`UpdateOrder`設定為**InsertUpdateDelete**。 這表示插入、 更新，然後再刪除將會在資料集中的所有資料表。 如需詳細資訊，請參閱[如何：執行階層式更新時設定的順序](https://msdn.microsoft.com/library/a0734935-78dd-4c0b-80d7-5e7925789c83)。|  
   
 ## <a name="see-also"></a>另請參閱  
  [將資料儲存回資料庫](../data-tools/save-data-back-to-the-database.md)

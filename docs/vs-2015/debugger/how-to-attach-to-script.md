@@ -1,5 +1,5 @@
 ---
-title: HOW TO：附加至指令碼 |Microsoft Docs
+title: 作法：附加至指令碼 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -19,12 +19,12 @@ caps.latest.revision: 26
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: db5f46fdea66647131557b3d2cff2619e99aabc7
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 719654916087e7c7f4249ff52abbed628a2c56a2
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63437336"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65704500"
 ---
 # <a name="how-to-attach-to-script"></a>HOW TO：附加至指令碼
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,7 +37,7 @@ ms.locfileid: "63437336"
   
 2. 請在 [附加至處理序] 對話方塊中查看 [可使用的處理序] 清單，並且尋找您要附加的指令碼處理序。 您可經由查看 [類型] 資料行識別指令碼處理序。  
   
-   1. 如果您要偵錯的處理序正執行於另一台電腦上，您必須先選取該遠端電腦。 如需詳細資訊，請參閱[如何：選取遠端電腦](http://msdn.microsoft.com/4332ba8e-2f0b-4f62-b96a-e762b9f3c3ba)。  
+   1. 如果您要偵錯的處理序正執行於另一台電腦上，您必須先選取該遠端電腦。 如需詳細資訊，請參閱[如何：選取遠端電腦](https://msdn.microsoft.com/4332ba8e-2f0b-4f62-b96a-e762b9f3c3ba)。  
   
    2. 如果該處理序正在不同的使用者帳戶下執行，請選取 [顯示所有使用者的處理序]  核取方塊。  
   
@@ -59,7 +59,7 @@ ms.locfileid: "63437336"
   
    [可使用的處理序]  清單會在您開啟 [處理序]  對話方塊時自動顯示。 當對話方塊開啟時，處理序可以在背景中啟動和停止。 所以，內容不一定是最新的。 您可以隨時按 [重新整理] 按鈕重新整理該清單，以查看目前的處理序清單。  
   
-   偵錯時，您可以附加至多個程式，但是無論在任何時間，偵錯工具一次只能有一個使用中程式。 您可在 [偵錯位置] 工具列中設定使用中程式。 如需詳細資訊，請參閱[如何：設定目前的處理序](http://msdn.microsoft.com/7e1d7fa5-0e40-44cf-8c41-d3dba31c969e)。  
+   偵錯時，您可以附加至多個程式，但是無論在任何時間，偵錯工具一次只能有一個使用中程式。 您可在 [偵錯位置] 工具列中設定使用中程式。 如需詳細資訊，請參閱[如何：設定目前的處理序](https://msdn.microsoft.com/7e1d7fa5-0e40-44cf-8c41-d3dba31c969e)。  
   
    所有 [偵錯] 功能表的執行命令都會影響使用中的程式。 您可以從處理序 對話方塊中斷任何偵錯的程式。請參閱[使用中斷點](../debugger/using-breakpoints.md)。  
   

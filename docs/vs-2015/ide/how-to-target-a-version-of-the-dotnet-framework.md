@@ -12,20 +12,20 @@ caps.latest.revision: 53
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a815a7ee13b415220c41189b6b060d893e8ef8e8
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: a1d3d9ca1af5e2c96c497e6c677051c587047097
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63435149"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65695369"
 ---
-# <a name="how-to-target-a-version-of-the-net-framework"></a>HOW TO：以一個 .NET Framework 版本為目標
+# <a name="how-to-target-a-version-of-the-net-framework"></a>作法：以一個 .NET Framework 版本為目標
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 本文件說明如何在建立專案時以某個 .NET Framework 版本為目標，以及如何變更現有 Visual Basic、Visual C# 或 Visual F# 專案的目標版本。  
   
 > [!IMPORTANT]
-> 如需如何變更 C++ 專案目標版本的資訊，請參閱[如何：修改目標 Framework 和平台工具組](http://msdn.microsoft.com/library/031b1d54-e6e1-4da7-9868-3e75a87d9ffe)。  
+> 如需如何變更 C++ 專案目標版本的資訊，請參閱[如何：修改目標 Framework 和平台工具組](https://msdn.microsoft.com/library/031b1d54-e6e1-4da7-9868-3e75a87d9ffe)。  
   
  **本主題內容**  
   
@@ -62,7 +62,7 @@ ms.locfileid: "63435149"
      ![Visual Studio 方案總管的 [屬性]](../ide/media/vs-slnexplorer-properties.png "vs_slnExplorer_Properties")  
   
     > [!IMPORTANT]
-    > 如需如何變更 C++ 專案目標版本的資訊，請參閱[如何：修改目標 Framework 和平台工具組](http://msdn.microsoft.com/library/031b1d54-e6e1-4da7-9868-3e75a87d9ffe)。  
+    > 如需如何變更 C++ 專案目標版本的資訊，請參閱[如何：修改目標 Framework 和平台工具組](https://msdn.microsoft.com/library/031b1d54-e6e1-4da7-9868-3e75a87d9ffe)。  
   
 2. 在 [屬性] 視窗的左欄中，選擇 **[應用程式]** 索引標籤。  
   
@@ -82,9 +82,9 @@ ms.locfileid: "63435149"
   
 ## <a name="see-also"></a>另請參閱  
  [Visual Studio 多目標概觀](../ide/visual-studio-multi-targeting-overview.md)   
- [ASP.NET Web 專案的 .NET Framework 多目標](http://msdn.microsoft.com/library/8b8145a9-62f6-4fc4-8a83-47b0487cbe76)   
+ [ASP.NET Web 專案的 .NET Framework 多目標](https://msdn.microsoft.com/library/8b8145a9-62f6-4fc4-8a83-47b0487cbe76)   
  [針對 .NET Framework 目標錯誤進行疑難排解](../msbuild/troubleshooting-dotnet-framework-targeting-errors.md)   
  [專案設計工具，應用程式頁面 (C#)](../ide/reference/application-page-project-designer-csharp.md)   
  [Application Page, Project Designer (Visual Basic)](../ide/reference/application-page-project-designer-visual-basic.md)   
- [設定專案](http://msdn.microsoft.com/library/a1489abb-6294-4f8f-b71f-2cb126393526)   
- [如何：修改目標 Framework 和平台工具組](http://msdn.microsoft.com/library/031b1d54-e6e1-4da7-9868-3e75a87d9ffe)
+ [設定專案](https://msdn.microsoft.com/library/a1489abb-6294-4f8f-b71f-2cb126393526)   
+ [如何：修改目標 Framework 和平台工具組](https://msdn.microsoft.com/library/031b1d54-e6e1-4da7-9868-3e75a87d9ffe)

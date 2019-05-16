@@ -18,12 +18,12 @@ caps.latest.revision: 37
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 7f50c5897f68e43071d4920f85f1a694cacbf655
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: f135221564583d2d9726bb9fa153840b1328e96f
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63441314"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65701820"
 ---
 # <a name="publish-page-project-designer"></a>專案設計工具、發行頁
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -50,16 +50,16 @@ ms.locfileid: "63441314"
  針對 WPF Web 瀏覽器應用程式，停用 [應用程式也可以在離線時使用]  選項，因為這類應用程式只能在上線時使用。  
   
  **應用程式檔案**  
- 開啟 [[應用程式檔案] 對話方塊](http://msdn.microsoft.com/b06dff3a-b87a-4caf-996b-7a4acf8137a8)，以用來指定個別檔案的安裝方式和位置。  
+ 開啟 [[應用程式檔案] 對話方塊](https://msdn.microsoft.com/b06dff3a-b87a-4caf-996b-7a4acf8137a8)，以用來指定個別檔案的安裝方式和位置。  
   
  **必要條件**  
  開啟 [[必要條件] 對話方塊](../../ide/reference/prerequisites-dialog-box.md)，以用來指定將必備元件 (例如 .NET Framework) 和應用程式安裝在一起。  
   
  **更新**  
- 開啟 [[應用程式更新] 對話方塊](http://msdn.microsoft.com/8eca8743-8e68-4d04-bfd5-4dc0a9b2934f)，以用來指定應用程式的更新行為。 選取 [應用程式只能在線上時使用]  時無法使用。  
+ 開啟 [[應用程式更新] 對話方塊](https://msdn.microsoft.com/8eca8743-8e68-4d04-bfd5-4dc0a9b2934f)，以用來指定應用程式的更新行為。 選取 [應用程式只能在線上時使用]  時無法使用。  
   
  **選項**  
- 開啟 [[發行選項] 對話方塊](http://msdn.microsoft.com/fd9baa1b-7311-4f9e-8ffb-ae50cf110592)，以用來指定其他進階發行選項。  
+ 開啟 [[發行選項] 對話方塊](https://msdn.microsoft.com/fd9baa1b-7311-4f9e-8ffb-ae50cf110592)，以用來指定其他進階發行選項。  
   
  **發行版本**  
  設定應用程式的發行版本號碼；當版本號碼變更時，會以更新形式發行應用程式。 發行版本的每個部分 (**主要**、**次要**、**組建**、**修訂**) 最大值可以是 65355 (<xref:System.UInt16.MaxValue>)，這是 <xref:System.Version> 允許的最大值。  
@@ -70,7 +70,7 @@ ms.locfileid: "63441314"
  選擇性。 選取此選項時 (預設)，每次發行應用程式時，發行版本號碼的 [修訂]  部分都會加一。 這樣會以更新形式發行應用程式。  
   
  **發行精靈**  
- 開啟 [[發行精靈]](http://msdn.microsoft.com/fc6abebd-13d6-48e4-a567-fbc52dad0872)。 完成 [發行精靈] 的效果，與執行 [建置]  功能表上的 [發行]  命令相同。  
+ 開啟 [[發行精靈]](https://msdn.microsoft.com/fc6abebd-13d6-48e4-a567-fbc52dad0872)。 完成 [發行精靈] 的效果，與執行 [建置]  功能表上的 [發行]  命令相同。  
   
  **立即發行**  
  使用目前的設定發行應用程式。 這相當於 [發行精靈] 中的 [完成] 按鈕。  

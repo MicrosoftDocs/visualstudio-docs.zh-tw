@@ -15,12 +15,12 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: c9e0024ae6db5af3f1cf23c07fe29fbac8e4827d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: b1a360ee4ad35fd48a46f6d866912a05a584a54c
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58944001"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65687308"
 ---
 # <a name="ca2114-method-security-should-be-a-superset-of-type"></a>CA2114:方法安全性應該是類型的超集
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ ms.locfileid: "58944001"
 |中斷變更|中斷|
 
 ## <a name="cause"></a>原因
- 型別具有宣告式安全性和其中一個方法具有相同的安全性動作的宣告式安全性的安全性動作不是[連結要求](http://msdn.microsoft.com/library/a33fd5f9-2de9-4653-a4f0-d9df25082c4d)或是[繼承要求](http://msdn.microsoft.com/28b9adbb-8f08-4f10-b856-dbf59eb932d9)，以及權限檢查由型別不是方法所檢查的權限的子集。
+ 型別具有宣告式安全性和其中一個方法具有相同的安全性動作的宣告式安全性的安全性動作不是[連結要求](https://msdn.microsoft.com/library/a33fd5f9-2de9-4653-a4f0-d9df25082c4d)或是[繼承要求](https://msdn.microsoft.com/28b9adbb-8f08-4f10-b856-dbf59eb932d9)，以及權限檢查由型別不是方法所檢查的權限的子集。
 
 ## <a name="rule-description"></a>規則描述
  方法不應該已經在兩個相同的動作方法層級和類型層級宣告式安全性。 不會合併兩個檢查;套用方法層級需求。 例如，如果型別要求的權限`X`，和其中一個方法會要求權限`Y`，不需要具有權限的程式碼`X`執行方法。
@@ -62,4 +62,4 @@ ms.locfileid: "58944001"
  **[（型別所要求） 沒有的寫入權限] 的個人資訊：6/16/1964年 12:00: 00AM**
  **[（方法要求） 沒有讀取權限] 無法存取個人資訊：要求失敗。**
 ## <a name="see-also"></a>另請參閱
- [安全程式碼撰寫指導方針](http://msdn.microsoft.com/library/4f882d94-262b-4494-b0a6-ba9ba1f5f177)[繼承要求](http://msdn.microsoft.com/28b9adbb-8f08-4f10-b856-dbf59eb932d9)[連結要求](http://msdn.microsoft.com/library/a33fd5f9-2de9-4653-a4f0-d9df25082c4d)[資料與模型化](http://msdn.microsoft.com/library/8c37635d-e2c1-4b64-a258-61d9e87405e6)
+ [安全程式碼撰寫指導方針](https://msdn.microsoft.com/library/4f882d94-262b-4494-b0a6-ba9ba1f5f177)[繼承要求](https://msdn.microsoft.com/28b9adbb-8f08-4f10-b856-dbf59eb932d9)[連結要求](https://msdn.microsoft.com/library/a33fd5f9-2de9-4653-a4f0-d9df25082c4d)[資料與模型化](https://msdn.microsoft.com/library/8c37635d-e2c1-4b64-a258-61d9e87405e6)

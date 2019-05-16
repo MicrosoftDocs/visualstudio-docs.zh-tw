@@ -14,12 +14,12 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e10279740d590b63bb3781afd3486f7952123664
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: da608c7f937a09d56b25b87625580e5047d560cc
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63431929"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65705039"
 ---
 # <a name="entity-data-model-tools-in-visual-studio"></a>在 Visual Studio 中的實體資料模型工具
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -53,8 +53,8 @@ Entity Framework 是一種物件關聯式對應技術，可讓.NET 開發人員�
 
 |標題|描述|
 |-----------|-----------------|
-|[ADO.NET Entity Framework](http://msdn.microsoft.com/library/a437041f-6899-4ae7-96ce-aabf528d7205)|描述如何使用[!INCLUDE[adonet_edm](../includes/adonet-edm-md.md)]工具，其中[!INCLUDE[adonet_ef](../includes/adonet-ef-md.md)]提供，若要建立應用程式。|
-|[實體資料模型](http://msdn.microsoft.com/library/2dda3d5b-4582-4ba0-a91d-fcd7a1498137)|提供用於處理資料所建置的應用程式使用的資訊和連結[!INCLUDE[adonet_ef](../includes/adonet-ef-md.md)]。|
+|[ADO.NET Entity Framework](https://msdn.microsoft.com/library/a437041f-6899-4ae7-96ce-aabf528d7205)|描述如何使用[!INCLUDE[adonet_edm](../includes/adonet-edm-md.md)]工具，其中[!INCLUDE[adonet_ef](../includes/adonet-ef-md.md)]提供，若要建立應用程式。|
+|[實體資料模型](https://msdn.microsoft.com/library/2dda3d5b-4582-4ba0-a91d-fcd7a1498137)|提供用於處理資料所建置的應用程式使用的資訊和連結[!INCLUDE[adonet_ef](../includes/adonet-ef-md.md)]。|
 |[使用者入門 （主控台、 WinForms、 WPF 等等） 的完整.NET](/ef/ef6/get-started)|提供有關如何建立使用 Entity Framework 7 的.NET 桌面應用程式的教學課程。|
 |[ASP.NET 5 應用程式到新的資料庫](https://docs.efproject.net/en/latest/platforms/aspnetcore/new-db.html)|描述如何使用 Entity Framework 7 以建立新的 ASP.NET 5 應用程式。|
 

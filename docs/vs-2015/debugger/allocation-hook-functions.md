@@ -24,17 +24,17 @@ caps.latest.revision: 17
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: b617f0c154c14113370fff257c6837ce8314134a
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 81135546ffa208a4efb96569cd7968dfe560cdf9
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63439945"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65702517"
 ---
 # <a name="allocation-hook-functions"></a>配置攔截函式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-配置攔截函式，使用安裝[_CrtSetAllocHook](http://msdn.microsoft.com/library/405df37b-2fd1-42c8-83bc-90887f17f29d)，稱為每次配置、 重新配置或釋放記憶體。 這種類型的攔截 (Hook) 可以用於許多不同的用途。 例如，可以使用它來測試應用程式處理記憶體不足的方式、檢查配置模式或記錄供稍後分析的配置資訊。  
+配置攔截函式，使用安裝[_CrtSetAllocHook](https://msdn.microsoft.com/library/405df37b-2fd1-42c8-83bc-90887f17f29d)，稱為每次配置、 重新配置或釋放記憶體。 這種類型的攔截 (Hook) 可以用於許多不同的用途。 例如，可以使用它來測試應用程式處理記憶體不足的方式、檢查配置模式或記錄供稍後分析的配置資訊。  
   
 > [!NOTE]
 > 請留意在配置攔截函式中使用 C 執行階段程式庫功能的相關限制，如[配置攔截和 C 執行階段記憶體配置](../debugger/allocation-hooks-and-c-run-time-memory-allocations.md)所述。  
@@ -47,7 +47,7 @@ int YourAllocHook(int nAllocType, void *pvData,
         const unsigned char * szFileName, int nLine )  
 ```  
   
- 您傳入至 [_CrtSetAllocHook](http://msdn.microsoft.com/library/405df37b-2fd1-42c8-83bc-90887f17f29d) 的指標是在 CRTDBG.H 中定義的 **_CRT_ALLOC_HOOK** 類型：  
+ 您傳入至 [_CrtSetAllocHook](https://msdn.microsoft.com/library/405df37b-2fd1-42c8-83bc-90887f17f29d) 的指標是在 CRTDBG.H 中定義的 **_CRT_ALLOC_HOOK** 類型：  
   
 ```  
 typedef int (__cdecl * _CRT_ALLOC_HOOK)  
@@ -59,4 +59,4 @@ typedef int (__cdecl * _CRT_ALLOC_HOOK)
 ## <a name="see-also"></a>另請參閱  
  [配置攔截和 C 執行階段記憶體配置](../debugger/allocation-hooks-and-c-run-time-memory-allocations.md)   
  [撰寫偵錯攔截函式](../debugger/debug-hook-function-writing.md)   
- [crt_dbg2 範例](http://msdn.microsoft.com/21e1346a-6a17-4f57-b275-c76813089167)
+ [crt_dbg2 範例](https://msdn.microsoft.com/21e1346a-6a17-4f57-b275-c76813089167)

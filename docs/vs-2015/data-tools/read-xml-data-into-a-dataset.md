@@ -23,12 +23,12 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: dea8565810a904ff80a0790a9b219f3744b1e156
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 5f9968b14eaf74a00a66d8fb7c86890938ddfa4b
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63425393"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65692546"
 ---
 # <a name="read-xml-data-into-a-dataset"></a>將 XML 資料讀入資料集
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -48,7 +48,7 @@ ADO.NET 提供簡單的方法來處理 XML 資料。 在此逐步解說中，您
 5. 加入程式碼來顯示 XML 結構描述中的 XML 檔案中根據<xref:System.Windows.Forms.TextBox>控制項  
   
 > [!NOTE]
-> 對話方塊和功能表命令，您會看到 [說明] 中所述，根據您目前使用的設定或版本可能會有所不同，您正在使用。 若要變更您的設定，在**工具**功能表上，選取**匯入和匯出設定**。 如需詳細資訊，請參閱 [在 Visual Studio 中自訂開發設定](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)  
+> 對話方塊和功能表命令，您會看到 [說明] 中所述，根據您目前使用的設定或版本可能會有所不同，您正在使用。 若要變更您的設定，在**工具**功能表上，選取**匯入和匯出設定**。 如需詳細資訊，請參閱 [在 Visual Studio 中自訂開發設定](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)  
   
 ## <a name="create-a-new-project"></a>建立新專案  
  在此步驟中，您可以建立 Visual Basic 或 Visual C# 的專案包含本逐步解說。  
@@ -59,7 +59,7 @@ ADO.NET 提供簡單的方法來處理 XML 資料。 在此逐步解說中，您
   
 2. 將專案命名為 `ReadingXML`。  
   
-3. 選取  **Windows 應用程式**，然後選取**確定**。 如需詳細資訊，請參閱 <<c0> [ 用戶端應用程式](http://msdn.microsoft.com/library/2dfb50b7-5af2-4e12-9bbb-c5ade0e39a68)。  
+3. 選取  **Windows 應用程式**，然後選取**確定**。 如需詳細資訊，請參閱 <<c0> [ 用戶端應用程式](https://msdn.microsoft.com/library/2dfb50b7-5af2-4e12-9bbb-c5ade0e39a68)。  
   
      **ReadingXML**建立專案並將其加入至**方案總管 中**。  
   
@@ -241,12 +241,12 @@ ADO.NET 提供簡單的方法來處理 XML 資料。 在此逐步解說中，您
 
 本逐步解說會說明 XML 檔案讀入資料集，以及建立結構描述的 XML 檔案的內容為基礎的基本概念。 以下是接下來，您可能會執行一些工作：  
   
-- 編輯資料集並將它寫回為 XML 中的資料。 如需詳細資訊，請參閱<xref:System.Data.DataSet.WriteXml%2A>。  
+- 編輯資料集並將它寫回為 XML 中的資料。 如需詳細資訊，請參閱 <xref:System.Data.DataSet.WriteXml%2A>。  
   
 - 編輯資料集中的資料，並寫出至資料庫。
   
 ## <a name="see-also"></a>另請參閱  
- [資料逐步解說](http://msdn.microsoft.com/library/15a88fb8-3bee-4962-914d-7a1f8bd40ec4)  \(機器翻譯\)  
+ [資料逐步解說](https://msdn.microsoft.com/library/15a88fb8-3bee-4962-914d-7a1f8bd40ec4)  \(機器翻譯\)  
  [存取 Visual Studio 中的資料](../data-tools/accessing-data-in-visual-studio.md)   
- [準備您的應用程式以接收資料](http://msdn.microsoft.com/library/c17bdb7e-c234-4f2f-9582-5e55c27356ad)  \(機器翻譯\)  
+ [準備您的應用程式以接收資料](https://msdn.microsoft.com/library/c17bdb7e-c234-4f2f-9582-5e55c27356ad)  \(機器翻譯\)  
  [Visual Studio 中的 XML 工具](../xml-tools/xml-tools-in-visual-studio.md)

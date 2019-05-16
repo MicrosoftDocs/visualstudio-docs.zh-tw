@@ -9,12 +9,12 @@ caps.latest.revision: 40
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 39669408402a12ce8010865606e2a2ec3929569b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a510ad25e741fc5924597d4b26841518c63f83a1
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62537598"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65690967"
 ---
 # <a name="general-user-interface-elements-visual-studio"></a>一般使用者介面項目 (Visual Studio)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -69,6 +69,6 @@ ms.locfileid: "62537598"
 
  [HTML 索引標籤、 工具箱](../../ide/reference/toolbox-html-tab.md)可讓您將 html 標記加入至設計介面。
 
- [CSS、 文字編輯器、 選項對話方塊、 一般](http://msdn.microsoft.com/library/b33a7617-e69d-4a11-938e-2e218a34a10c)可讓您指定 CSS 檔案的選項。
+ [CSS、 文字編輯器、 選項對話方塊、 一般](https://msdn.microsoft.com/library/b33a7617-e69d-4a11-938e-2e218a34a10c)可讓您指定 CSS 檔案的選項。
 
- [驗證、 HTML、 文字編輯器、 選項對話方塊](http://msdn.microsoft.com/library/9c24ecfe-263e-4bf1-88de-d01be3992863)可讓您指定的 HTML 網頁的選項。
+ [驗證、 HTML、 文字編輯器、 選項對話方塊](https://msdn.microsoft.com/library/9c24ecfe-263e-4bf1-88de-d01be3992863)可讓您指定的 HTML 網頁的選項。

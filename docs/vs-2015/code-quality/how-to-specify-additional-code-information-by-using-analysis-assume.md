@@ -13,14 +13,14 @@ caps.latest.revision: 12
 author: mikeblome
 ms.author: mblome
 manager: jillfra
-ms.openlocfilehash: e130f2248ae6715b3248226c780bc162e1ff01ef
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: dfae7d858dbb462ec6a93de9eb63b1b3b2a711ab
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63426633"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65685812"
 ---
-# <a name="how-to-specify-additional-code-information-by-using-analysisassume"></a>HOW TO：使用 _analysis_assume 來指定其他程式碼資訊
+# <a name="how-to-specify-additional-code-information-by-using-analysisassume"></a>作法：使用 _analysis_assume 來指定其他程式碼資訊
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 您可以提供提示給程式碼分析工具，適用於 C /C++可協助分析處理，並減少警告的程式碼。 若要提供其他資訊，請使用下列函式：  
@@ -59,4 +59,4 @@ void test( )
 ```  
   
 ## <a name="see-also"></a>另請參閱  
- [__assume](http://msdn.microsoft.com/library/d8565123-b132-44b1-8235-5a8c8bff85a7)
+ [__assume](https://msdn.microsoft.com/library/d8565123-b132-44b1-8235-5a8c8bff85a7)

@@ -9,17 +9,17 @@ caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 69ca24f45384ef650c4a692a8ec0afc079f19bac
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: f2081b302bfb288b08119913081154b970fadcda
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63425364"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65692584"
 ---
 # <a name="query-datasets"></a>查詢資料集
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-若要搜尋的資料集內的特定記錄，使用 FindBy 方法 datatable、 撰寫您自己的 foreach 迴圈，對資料表的資料列集合，或使用[LINQ to DataSet](http://msdn.microsoft.com/library/743e3755-3ecb-45a2-8d9b-9ed41f0dcf17)。 LINQ to DataSet。  
+若要搜尋的資料集內的特定記錄，使用 FindBy 方法 datatable、 撰寫您自己的 foreach 迴圈，對資料表的資料列集合，或使用[LINQ to DataSet](https://msdn.microsoft.com/library/743e3755-3ecb-45a2-8d9b-9ed41f0dcf17)。 LINQ to DataSet。  
   
 ## <a name="dataset-case-sensitivity"></a>資料集區分大小寫  
  資料集，資料表和資料行名稱會依預設不區分大小寫 — 也就是資料集稱為 「 客戶 」 資料表可以也稱為 「 客戶 」。 這符合多個資料庫，包括 SQL 伺服器的 SQL Server 中的命名慣例，預設行為是資料元素的名稱不能進行區分大小寫。  
@@ -65,7 +65,7 @@ ms.locfileid: "63425364"
   
  您可以使用<xref:System.Data.DataRelation>物件，以找出相關的記錄，藉由呼叫<xref:System.Data.DataRow.GetChildRows%2A>方法<xref:System.Data.DataRow>父資料表中。這個方法會傳回相關的子記錄的陣列。 您也可以呼叫<xref:System.Data.DataRow.GetParentRow%2A>方法的<xref:System.Data.DataRow>子資料表中。這個方法會傳回單一<xref:System.Data.DataRow>父資料表中。  
   
- 此頁面提供使用具類型資料集的範例。 瀏覽關聯性中不具類型資料集的相關資訊，請參閱[巡覽 Datarelation](http://msdn.microsoft.com/library/e5e673f4-9b44-45ae-aaea-c504d1cc5d3e)。  
+ 此頁面提供使用具類型資料集的範例。 瀏覽關聯性中不具類型資料集的相關資訊，請參閱[巡覽 Datarelation](https://msdn.microsoft.com/library/e5e673f4-9b44-45ae-aaea-c504d1cc5d3e)。  
   
 > [!NOTE]
 > 如果您是在 Windows Forms 應用程式中，而且顯示的資料使用的資料繫結功能，設計工具所產生的表單可能會提供足夠的功能，您的應用程式。 如需詳細資訊，請參閱 <<c0> [ 控制項繫結至 Visual Studio 中的資料](../data-tools/bind-controls-to-data-in-visual-studio.md)。  

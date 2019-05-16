@@ -22,12 +22,12 @@ caps.latest.revision: 13
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 2d5fbd50ec56173d0871aa1096825eabf87cf42e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 337341547891d87b577756350cbb71e13dd230ae
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58940583"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65691189"
 ---
 # <a name="debugging-errors-and-warning-dialog-boxes"></a>偵錯錯誤和警告對話方塊
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,7 +49,7 @@ ms.locfileid: "58940583"
   
  [[目前位置沒有可用的原始程式碼] 對話方塊](../debugger/no-source-available.md)  
   
- [[沒有符號資訊] 對話方塊](http://msdn.microsoft.com/18de4888-9cca-4059-a165-48b135fee4c9)  
+ [[沒有符號資訊] 對話方塊](https://msdn.microsoft.com/18de4888-9cca-4059-a165-48b135fee4c9)  
   
  [解決語意模糊對話方塊](../debugger/resolve-ambiguity-dialog-box.md)  
   
@@ -64,9 +64,9 @@ ms.locfileid: "58940583"
   
  [遠端偵錯錯誤](../debugger/remote-debugging-errors-and-troubleshooting.md)  
   
- [附加錯誤](http://msdn.microsoft.com/2820d904-a068-4fcb-bbfb-bbbe5195d6ae)  
+ [附加錯誤](https://msdn.microsoft.com/2820d904-a068-4fcb-bbfb-bbbe5195d6ae)  
   
- [針對 SQL 偵錯安裝程式進行疑難排解](http://msdn.microsoft.com/b3ec8303-4c0d-449c-8d19-4932c1d820a7)  
+ [針對 SQL 偵錯安裝程式進行疑難排解](https://msdn.microsoft.com/b3ec8303-4c0d-449c-8d19-4932c1d820a7)  
   
  [偵錯 Visual C++ 常見問題集](../debugger/debugging-native-code-faqs.md)  
   

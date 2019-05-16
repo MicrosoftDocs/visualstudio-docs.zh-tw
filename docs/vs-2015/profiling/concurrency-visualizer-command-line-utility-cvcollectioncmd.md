@@ -11,12 +11,12 @@ caps.latest.revision: 26
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 4282b865bbe85a70e1565e17987600da5c7960e5
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 5f664b1bf2af89d8c3f6e06792039571f4211236
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63444049"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65692750"
 ---
 # <a name="concurrency-visualizer-command-line-utility-cvcollectioncmd"></a>並行視覺化檢視命令列公用程式 (CVCollectionCmd)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,7 +43,7 @@ ms.locfileid: "63444049"
   
 |選項|描述|參數|傳回值|  
 |------------|-----------------|----------------|-------------------|  
-|查詢|傳回是否可以開始收集。|None|0，表示準備開始收集。<br /><br /> 1，表示收集已在進行中。<br /><br /> 2，表示收集不在進行中，但已啟用一個或多個所需的 [ETW](http://msdn.microsoft.com/library/ac99a063-e2d2-40cc-b659-d23c2f783f92) 工作階段。|  
+|查詢|傳回是否可以開始收集。|None|0，表示準備開始收集。<br /><br /> 1，表示收集已在進行中。<br /><br /> 2，表示收集不在進行中，但已啟用一個或多個所需的 [ETW](https://msdn.microsoft.com/library/ac99a063-e2d2-40cc-b659-d23c2f783f92) 工作階段。|  
 |啟動|在並行視覺化檢視下執行指定的處理序。|可執行檔的路徑。|0，表示執行成功。<br /><br /> 1，表示執行失敗，因為無法啟動目標應用程式。<br /><br /> 13，表示執行失敗，因為 CVCollectionCmd 沒有足夠的權限可寫入指定的輸出目錄。|  
 |附加|開始收集系統範圍追蹤；如果指定處理序，則附加至該處理序。|無。|0，表示附加成功。<br /><br /> 1，表示附加失敗，因為指定的處理序無效或模稜兩可。<br /><br /> 13，表示附加失敗，因為 CVCollectionCmd 沒有足夠的權限可寫入指定的輸出目錄。|  
 |中斷連結|停止收集。|無。|0，表示中斷連結成功。<br /><br /> 1，表示中斷連結失敗，因為目前正在收集。<br /><br /> 2，表示中斷連結失敗，因為無法停止收集。|  

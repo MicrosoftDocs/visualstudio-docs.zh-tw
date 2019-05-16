@@ -23,17 +23,17 @@ caps.latest.revision: 31
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 4574c5ec455f37813e4831cbf098ca4ba6c3c1ba
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 5b11855fbd19dc464f92b4339684ef8346556c21
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58945399"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65691154"
 ---
 # <a name="debugging-preparation-windows-forms-applications"></a>偵錯準備：Windows Forms 應用程式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Windows Form 專案範本會建立 Windows Forms 應用程式。 在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 中可以直接偵錯這種類型的應用程式。 如需詳細資訊，請參閱 <<c0> [ 建立 Windows 應用程式專案](http://msdn.microsoft.com/b2f93fed-c635-4705-8d0e-cf079a264efa)。  
+Windows Form 專案範本會建立 Windows Forms 應用程式。 在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 中可以直接偵錯這種類型的應用程式。 如需詳細資訊，請參閱 <<c0> [ 建立 Windows 應用程式專案](https://msdn.microsoft.com/b2f93fed-c635-4705-8d0e-cf079a264efa)。  
   
  當您以專案範本建立 Windows Form 專案時，[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 會自動建立偵錯和發行組態所需要的設定。 若有需要，您可以變更這些設定。 這些設定可以在 [\<專案名稱> 屬性頁] 對話方塊 (在 Visual Basic 中為 [我的專案]) 中進行變更。  
   
@@ -63,7 +63,7 @@ Windows Form 專案範本會建立 Windows Forms 應用程式。 在 [!INCLUDE[v
   
    3. 焦點和驗證事件。  
   
-      如需詳細資訊，請參閱[在 Windows Forms 中建立事件處理常式](http://msdn.microsoft.com/library/6514e530-c6b8-489c-a8d2-eda7b7072701)。  
+      如需詳細資訊，請參閱[在 Windows Forms 中建立事件處理常式](https://msdn.microsoft.com/library/6514e530-c6b8-489c-a8d2-eda7b7072701)。  
   
 3. 按一下 [偵錯] 功能表上的 [開始]。  
   
@@ -76,4 +76,4 @@ Windows Form 專案範本會建立 Windows Forms 應用程式。 在 [!INCLUDE[v
  [C# 偵錯設定的專案設定](../debugger/project-settings-for-csharp-debug-configurations.md)   
  [Visual Basic 偵錯設定的專案設定](../debugger/project-settings-for-a-visual-basic-debug-configuration.md)   
  [附加到執行中的處理序](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)   
- [Windows Forms](http://msdn.microsoft.com/library/627df1e9-b254-41af-bbac-9a4f02810c54)
+ [Windows Forms](https://msdn.microsoft.com/library/627df1e9-b254-41af-bbac-9a4f02810c54)

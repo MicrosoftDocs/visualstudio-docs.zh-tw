@@ -18,12 +18,12 @@ caps.latest.revision: 35
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 80233f0786018bf1b4b18dbfa990a143d298f559
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 5231e37b7dd4881deaa6c85c8aa0e33d15bfcc0e
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63439516"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65674007"
 ---
 # <a name="bind-wpf-controls-to-a-dataset"></a>將 WPF 控制項繫結至資料集
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -53,9 +53,9 @@ ms.locfileid: "63439516"
   
 - 資料集和 TableAdapter。 如需詳細資訊，請參閱 < [Visual Studio 中的資料集工具](../data-tools/dataset-tools-in-visual-studio.md)。  
   
-- 使用 WPF 設計工具。 如需詳細資訊，請參閱 < [WPF 和 Silverlight Designer 概觀](http://msdn.microsoft.com/570b7a5c-0c86-4326-a371-c9b63378fc62)。  
+- 使用 WPF 設計工具。 如需詳細資訊，請參閱 < [WPF 和 Silverlight Designer 概觀](https://msdn.microsoft.com/570b7a5c-0c86-4326-a371-c9b63378fc62)。  
   
-- WPF 資料繫結。 如需詳細資訊，請參閱 [資料繫結概觀](http://msdn.microsoft.com/library/c707c95f-7811-401d-956e-2fffd019a211)。  
+- WPF 資料繫結。 如需詳細資訊，請參閱 [資料繫結概觀](https://msdn.microsoft.com/library/c707c95f-7811-401d-956e-2fffd019a211)。  
   
 ## <a name="create-the-project"></a>建立專案  
  建立新的 WPF 專案。 此專案將顯示產品記錄。  
@@ -226,7 +226,7 @@ ms.locfileid: "63439516"
      [!code-vb[Data_WPFDATASET#4](../snippets/visualbasic/VS_Snippets_ProTools/data_wpfdataset/vb/mainwindow.xaml.vb#4)]  
   
     > [!NOTE]
-    > 此範例使用 `Save` 的 `TableAdapter` 方法來儲存變更。 在此逐步解說中，這是適當的方法，因為只會變更一個資料表。 若您必須將變更儲存至多個資料表，可以改用 Visual Studio 以您的資料集所產生之 `UpdateAll` 的 `TableAdapterManager` 方法。 如需詳細資訊，請參閱 < [TableAdapterManager 概觀](http://msdn.microsoft.com/library/33076d42-6b41-491a-ac11-6c6339aea650)。  
+    > 此範例使用 `Save` 的 `TableAdapter` 方法來儲存變更。 在此逐步解說中，這是適當的方法，因為只會變更一個資料表。 若您必須將變更儲存至多個資料表，可以改用 Visual Studio 以您的資料集所產生之 `UpdateAll` 的 `TableAdapterManager` 方法。 如需詳細資訊，請參閱 < [TableAdapterManager 概觀](https://msdn.microsoft.com/library/33076d42-6b41-491a-ac11-6c6339aea650)。  
   
 ## <a name="test-the-application"></a>測試應用程式  
  建置並執行應用程式。 驗證您是否可以檢視及更新產品記錄。  
@@ -260,5 +260,5 @@ ms.locfileid: "63439516"
  [將 WPF 控制項繫結至 Visual Studio 中的資料](../data-tools/bind-wpf-controls-to-data-in-visual-studio1.md)   
  [將 WPF 控制項繫結至 Visual Studio 中的資料](../data-tools/bind-wpf-controls-to-data-in-visual-studio2.md)   
  [Visual Studio 中的資料集工具](../data-tools/dataset-tools-in-visual-studio.md)   
- [WPF 和 Silverlight Designer 概觀](http://msdn.microsoft.com/570b7a5c-0c86-4326-a371-c9b63378fc62)   
- [資料繫結概觀](http://msdn.microsoft.com/library/c707c95f-7811-401d-956e-2fffd019a211)
+ [WPF 和 Silverlight Designer 概觀](https://msdn.microsoft.com/570b7a5c-0c86-4326-a371-c9b63378fc62)   
+ [資料繫結概觀](https://msdn.microsoft.com/library/c707c95f-7811-401d-956e-2fffd019a211)

@@ -18,12 +18,12 @@ caps.latest.revision: 28
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 3fd223b0a5891bc28cdef18dcd64312812607422
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 752454f9a52807766d6eef5b2563a7b70ca0f4dd
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62428460"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65697387"
 ---
 # <a name="edit-and-continue-visual-c"></a>Edit and Continue (Visual C++)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ ms.locfileid: "62428460"
   
  其他 Update 1 改進功能包括新的可取消等待對話方塊，以及當檔案不支援 [編輯後繼續] 時的通知。 如需有關 Update 1 改進功能的詳細資訊，請參閱[改進C++編輯後繼續在 Visual Studio 2015 Update 1 中](http://blogs.msdn.com/b/vcblog/archive/2015/11/30/improvements-for-c-edit-and-continue-in-visual-studio-2015-update-1.aspx)。  
   
- 在 Visual Studio 2013 Update 3 中推出的 [/Zo (增強最佳化偵錯)](http://msdn.microsoft.com/library/eea8d89a-7fe0-4fe1-86b2-7689bbebbd7f) 編譯器選項會將額外資訊新增至不使用 [/Od (停用 (偵錯))](http://msdn.microsoft.com/library/aafb762y.aspx) 選項編譯之二進位碼檔案的 .pdb (符號) 檔案。  
+ 在 Visual Studio 2013 Update 3 中推出的 [/Zo (增強最佳化偵錯)](https://msdn.microsoft.com/library/eea8d89a-7fe0-4fe1-86b2-7689bbebbd7f) 編譯器選項會將額外資訊新增至不使用 [/Od (停用 (偵錯))](https://msdn.microsoft.com/library/aafb762y.aspx) 選項編譯之二進位碼檔案的 .pdb (符號) 檔案。  
   
  **/Zo**會停用編輯後繼續。 請參閱[如何：對最佳化程式碼進行偵錯](../debugger/how-to-debug-optimized-code.md)。  
   
@@ -70,7 +70,7 @@ ms.locfileid: "62428460"
 ## <a name="BKMK_How_to_reset_the_point_of_execution"></a> 如何重設執行點  
  某些程式碼變更會在 [編輯後繼續] 套用該變更時，造成執行點移至新位置。 [編輯後繼續] 會盡量精確地放置執行點，但有時結果未必完全正確。  
   
- 在 Visual C++ 中，當執行點變更時，會出現一個對話方塊通知您。 您應該先確認位置是否正確，再繼續偵錯。 如果位置不正確，請使用 [ **設定下一個陳述式** ] 命令。 如需詳細資訊，請參閱 [設定下一個要執行的陳述式](http://msdn.microsoft.com/library/y740d9d3.aspx#BKMK_Set_the_next_statement_to_execute)。  
+ 在 Visual C++ 中，當執行點變更時，會出現一個對話方塊通知您。 您應該先確認位置是否正確，再繼續偵錯。 如果位置不正確，請使用 [ **設定下一個陳述式** ] 命令。 如需詳細資訊，請參閱 [設定下一個要執行的陳述式](https://msdn.microsoft.com/library/y740d9d3.aspx#BKMK_Set_the_next_statement_to_execute)。  
   
 ## <a name="BKMK_How_to_work_with_stale_code"></a> 如何使用過時程式碼  
  在某些情況下，[編輯後繼續] 不能立即將程式碼變更套用至執行檔，但是如果您繼續偵錯或許能在稍後套用程式碼變更。 如果您編輯呼叫目前函式的函式，或將 64 位元組以上的新變數加入至呼叫堆疊上的某個函式時，就會發生這種情況。  

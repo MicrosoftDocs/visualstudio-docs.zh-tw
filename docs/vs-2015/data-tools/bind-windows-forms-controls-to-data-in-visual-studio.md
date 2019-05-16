@@ -23,12 +23,12 @@ caps.latest.revision: 40
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 0f2bd51570c8ad1976b6fc9eb5674177f9342833
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 07c5853b673657c3ce8e90467a13bbac3f430b6e
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62556551"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65698992"
 ---
 # <a name="bind-windows-forms-controls-to-data-in-visual-studio"></a>將 Windows Forms 控制項繫結至 Visual Studio 中的資料
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,7 +37,7 @@ ms.locfileid: "62556551"
 
  ![資料來源拖曳作業](../data-tools/media/raddata-data-source-drag-operation.png "raddata 資料來源拖曳作業")
 
- 如需如何在 Visual Studio 中建立資料繫結控制項的一般資訊，請參閱[控制項繫結至 Visual Studio 中的資料](../data-tools/bind-controls-to-data-in-visual-studio.md)。 如需有關在 Windows Form 中的資料繫結的詳細資訊，請參閱[Windows Form 資料繫結](http://msdn.microsoft.com/library/c3826d8e-ea25-4ad4-a669-45bfb19192aa)。
+ 如需如何在 Visual Studio 中建立資料繫結控制項的一般資訊，請參閱[控制項繫結至 Visual Studio 中的資料](../data-tools/bind-controls-to-data-in-visual-studio.md)。 如需有關在 Windows Form 中的資料繫結的詳細資訊，請參閱[Windows Form 資料繫結](https://msdn.microsoft.com/library/c3826d8e-ea25-4ad4-a669-45bfb19192aa)。
 
 ## <a name="in-this-section"></a>本節內容
 
@@ -64,17 +64,17 @@ ms.locfileid: "62556551"
 
  如需詳細資訊<xref:System.Windows.Forms.BindingSource>元件，請參閱：
 
-- [BindingSource 元件](http://msdn.microsoft.com/library/3e2faf4c-f5b8-4fa6-9fbc-f59c37ec2fb9)
+- [BindingSource 元件](https://msdn.microsoft.com/library/3e2faf4c-f5b8-4fa6-9fbc-f59c37ec2fb9)
 
-- [BindingSource 元件概觀](http://msdn.microsoft.com/library/be838caf-fcb0-4b68-827f-58b2c04b747f)
+- [BindingSource 元件概觀](https://msdn.microsoft.com/library/be838caf-fcb0-4b68-827f-58b2c04b747f)
 
-- [BindingSource 元件架構](http://msdn.microsoft.com/library/7bc69c90-8a11-48b1-9336-3adab5b41591)
+- [BindingSource 元件架構](https://msdn.microsoft.com/library/7bc69c90-8a11-48b1-9336-3adab5b41591)
 
 ## <a name="bindingnavigator-control"></a>BindingNavigator 控制項
- 此元件提供使用者介面瀏覽 Windows 應用程式顯示的資料。 如需詳細資訊，請參閱 [BindingNavigator 控制項](http://msdn.microsoft.com/library/18c1e2a5-9834-40d3-9b2e-2b545e4e769e)。
+ 此元件提供使用者介面瀏覽 Windows 應用程式顯示的資料。 如需詳細資訊，請參閱 [BindingNavigator 控制項](https://msdn.microsoft.com/library/18c1e2a5-9834-40d3-9b2e-2b545e4e769e)。
 
 ## <a name="datagridview-control"></a>DataGridView 控制項
- 若要顯示和編輯表格式資料從許多不同種類的資料來源，使用<xref:System.Windows.Forms.DataGridView>控制項。 您可以將資料繫結<xref:System.Windows.Forms.DataGridView>使用<xref:System.Windows.Forms.DataGridView.DataSource%2A>屬性。 如需詳細資訊，請參閱 < [DataGridView 控制項概觀](http://msdn.microsoft.com/library/0a45c661-89dc-4390-9cc6-c47eee501488)。
+ 若要顯示和編輯表格式資料從許多不同種類的資料來源，使用<xref:System.Windows.Forms.DataGridView>控制項。 您可以將資料繫結<xref:System.Windows.Forms.DataGridView>使用<xref:System.Windows.Forms.DataGridView.DataSource%2A>屬性。 如需詳細資訊，請參閱 < [DataGridView 控制項概觀](https://msdn.microsoft.com/library/0a45c661-89dc-4390-9cc6-c47eee501488)。
 
 ## <a name="see-also"></a>另請參閱
  [將控制項繫結至 Visual Studio 中的資料](../data-tools/bind-controls-to-data-in-visual-studio.md)

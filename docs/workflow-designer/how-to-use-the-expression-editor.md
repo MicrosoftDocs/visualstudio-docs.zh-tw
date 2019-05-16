@@ -45,7 +45,7 @@ ms.locfileid: "62949535"
 
 3. 在 <xref:System.Activities.Statements.Assign> 活動的活動設計工具中，按一下左方的運算式編輯器。
 
-     灰色浮水印字串**\<至 >** 並**\<輸入 VB 運算式 >** 是預設值的文字字串中的運算式編輯器<xref:System.Activities.Statements.Assign>活動。
+     灰色浮水印字串 **\<至>** 並 **\<輸入VB運算式>** 是預設值的文字字串中的運算式編輯器<xref:System.Activities.Statements.Assign>活動。
 
 4. 輸入您的運算式。 如果您輸入字串，請務必以引號包圍字串。 如果您選擇將運算式引數繫結至某個變數，請勿加引號。
 

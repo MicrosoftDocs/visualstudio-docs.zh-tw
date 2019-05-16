@@ -10,12 +10,12 @@ helpviewer_keywords:
 ms.assetid: 0795ee94-17a8-4327-bf57-27cd5e312a4c
 caps.latest.revision: 29
 manager: jillfra
-ms.openlocfilehash: 53ff7b49414e3473c74a41008f381bb207e45fd0
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 4f80b575656c2d8b1740f217f2e144f89f254078
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63414666"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65681638"
 ---
 # <a name="hresult-information-in-managed-code"></a>在 Managed 程式碼的 HRESULT 資訊
 遇到 HRESULT 傳回值時，Managed 程式碼與 COM 之間的互動可能會造成問題。  
@@ -64,7 +64,7 @@ ms.locfileid: "63414666"
   
 ## <a name="see-also"></a>另請參閱  
  [Managed 的 Vspackage](../misc/managed-vspackages.md)   
- [與 Unmanaged 程式碼互通](http://msdn.microsoft.com/library/ccb68ce7-b0e9-4ffb-839d-03b1cd2c1258)   
- [如何：對應 Hresult 和例外狀況](http://msdn.microsoft.com/library/610b364b-2761-429d-9c4a-afbc3e66f1b9)   
- [建置 COM 元件的互通性](http://msdn.microsoft.com/7a2c657a-cfef-40f0-bed3-7c2c0ac4abdf)   
+ [與 Unmanaged 程式碼互通](https://msdn.microsoft.com/library/ccb68ce7-b0e9-4ffb-839d-03b1cd2c1258)   
+ [如何：對應 Hresult 和例外狀況](https://msdn.microsoft.com/library/610b364b-2761-429d-9c4a-afbc3e66f1b9)   
+ [建置 COM 元件的互通性](https://msdn.microsoft.com/7a2c657a-cfef-40f0-bed3-7c2c0ac4abdf)   
  [Managed VSPackages](../misc/managed-vspackages.md)

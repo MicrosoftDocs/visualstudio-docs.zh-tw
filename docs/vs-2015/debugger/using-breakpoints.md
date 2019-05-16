@@ -41,12 +41,12 @@ caps.latest.revision: 63
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: fa7f571a797df6ecd7a2967ba1cefa3d99a0463b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: cadaf069bb53c9d212e6de5ebd6ea2cf9efe7bb1
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60064566"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65684505"
 ---
 # <a name="using-breakpoints"></a>使用中斷點
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -167,7 +167,7 @@ ms.locfileid: "60064566"
    這個條件可以是偵錯工具所能辨識的任何有效運算式。 如需有效運算式的詳細資訊，請參閱 [Expressions in the Debugger](../debugger/expressions-in-the-debugger.md)。  
   
 ## <a name="using-object-ids-in-breakpoint-conditions-c-and-f"></a>在中斷點條件中使用物件 ID (C# 和 F#)  
- 有時候您可能需要觀察特定物件的行為，例如，您可能想要了解為什麼在集合中多次插入物件。 在 C# 和 F# 中，您可以針對 [參考類型](http://msdn.microsoft.com/library/801cf030-6e2d-4a0d-9daf-1431b0c31f47) 的特定執行個體建立物件 ID，並在中斷點條件中使用它們。 物件 ID 是由 Common Language Runtime (CLR) 偵錯服務所產生並與物件相關聯。  若要建立物件 ID，請執行下列動作：  
+ 有時候您可能需要觀察特定物件的行為，例如，您可能想要了解為什麼在集合中多次插入物件。 在 C# 和 F# 中，您可以針對 [參考類型](https://msdn.microsoft.com/library/801cf030-6e2d-4a0d-9daf-1431b0c31f47) 的特定執行個體建立物件 ID，並在中斷點條件中使用它們。 物件 ID 是由 Common Language Runtime (CLR) 偵錯服務所產生並與物件相關聯。  若要建立物件 ID，請執行下列動作：  
   
 1. 當物件已建立一段時間之後，於程式碼中設定中斷點。  
   

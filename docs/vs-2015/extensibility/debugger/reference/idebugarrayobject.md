@@ -12,12 +12,12 @@ ms.assetid: a1c8e77e-dee1-4748-a516-6ab032a8f54f
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: ed58467351c3e23ea22736dec64314aa1594a2f2
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 8f8ec4c883078663d0e252d6a04ae7441f12f31d
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63440717"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65686993"
 ---
 # <a name="idebugarrayobject"></a>IDebugArrayObject
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -37,7 +37,7 @@ IDebugArrayObject : IDebugObject
  運算式評估工具會實作這個介面來代表陣列。  
   
 ## <a name="notes-for-callers"></a>呼叫端資訊  
- [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)介面可以使用，取得這個介面[QueryInterface](http://msdn.microsoft.com/library/62fce95e-aafa-4187-b50b-e6611b74c3b3)如果物件表示的陣列。  
+ [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)介面可以使用，取得這個介面[QueryInterface](https://msdn.microsoft.com/library/62fce95e-aafa-4187-b50b-e6611b74c3b3)如果物件表示的陣列。  
   
 ## <a name="methods-in-vtable-order"></a>依照 Vtable 順序的方法  
  上的方法除了`IDebugObject`介面上實作下列方法`IDebugArrayObject`介面。  

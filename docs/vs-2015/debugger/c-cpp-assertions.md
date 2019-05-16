@@ -29,12 +29,12 @@ caps.latest.revision: 25
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 759376a6682287cbe41d4d1dc13666c5a540f8e9
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 9c26cc17d00881a72928806089a4c2880fdbce2f
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60050553"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65702346"
 ---
 # <a name="cc-assertions"></a>C/C++ 判斷提示
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,11 +45,11 @@ ms.locfileid: "60050553"
 
 - MFC 程式的 MFC 判斷提示。  
 
-- [ATLASSERT](http://msdn.microsoft.com/library/98e3e0fc-77e2-499b-a6f6-b17a21c6fbd3)使用 ATL 的程式  
+- [ATLASSERT](https://msdn.microsoft.com/library/98e3e0fc-77e2-499b-a6f6-b17a21c6fbd3)使用 ATL 的程式  
 
 - 使用 C 執行階段程式庫的程式的 CRT 判斷提示。  
 
-- ANSI [assert 函式](http://msdn.microsoft.com/library/a9ca031a-648b-47a6-bdf1-65fc7399dd40)適用於其他 C /C++程式。  
+- ANSI [assert 函式](https://msdn.microsoft.com/library/a9ca031a-648b-47a6-bdf1-65fc7399dd40)適用於其他 C /C++程式。  
 
   若要攔截邏輯錯誤，檢查作業的結果及測試應該已處理的錯誤狀況，您可以使用判斷提示。  
 
@@ -94,7 +94,7 @@ ASSERT(nM++ > 0); // Don't do this!
 
 ```  
 
- 因為`ASSERT`不會在您的程式的發行版本中評估運算式`nM`將偵錯和發行版本中有不同的值。 若要避免這個問題，在 MFC 中的，您可以使用[VERIFY](http://msdn.microsoft.com/library/3e1ab4ee-cbc7-4290-a777-c92f42ce7b96)巨集，而不是`ASSERT`。  `VERIFY` 評估所有版本中的運算式，但不會檢查發行版本中的結果。  
+ 因為`ASSERT`不會在您的程式的發行版本中評估運算式`nM`將偵錯和發行版本中有不同的值。 若要避免這個問題，在 MFC 中的，您可以使用[VERIFY](https://msdn.microsoft.com/library/3e1ab4ee-cbc7-4290-a777-c92f42ce7b96)巨集，而不是`ASSERT`。  `VERIFY` 評估所有版本中的運算式，但不會檢查發行版本中的結果。  
 
  要特別小心使用判斷提示陳述式中的函式呼叫的相關，因為評估函式可以有未預期的副作用。  
 
@@ -108,7 +108,7 @@ VERIFY ( myFnctn(0)==1 ) // safe
  [本主題內容](#BKMK_In_this_topic)  
 
 ## <a name="BKMK_CRT_assertions"></a> CRT 的判斷提示  
- CRTDBG。H 標頭檔會定義[_ASSERT 和 _ASSERTE 巨集](http://msdn.microsoft.com/library/e98fd2a6-7f5e-4aa8-8fe8-e93490deba36)判斷提示檢查。  
+ CRTDBG。H 標頭檔會定義[_ASSERT 和 _ASSERTE 巨集](https://msdn.microsoft.com/library/e98fd2a6-7f5e-4aa8-8fe8-e93490deba36)判斷提示檢查。  
 
 |   巨集    |                                             結果                                              |
 |------------|-------------------------------------------------------------------------------------------------|
@@ -128,30 +128,30 @@ VERIFY ( myFnctn(0)==1 ) // safe
    } while (0)  
 ```  
 
- 如果判斷提示的運算式評估為 FALSE 時， [_CrtDbgReport](http://msdn.microsoft.com/library/6e581fb6-f7fb-4716-9432-f0145d639ecc)呼叫以報告 （依預設使用訊息對話方塊） 判斷提示失敗。 如果您選擇**重試**[訊息] 對話方塊中，在`_CrtDbgReport`會傳回 1 和`_CrtDbgBreak`呼叫偵錯工具，透過`DebugBreak`。  
+ 如果判斷提示的運算式評估為 FALSE 時， [_CrtDbgReport](https://msdn.microsoft.com/library/6e581fb6-f7fb-4716-9432-f0145d639ecc)呼叫以報告 （依預設使用訊息對話方塊） 判斷提示失敗。 如果您選擇**重試**[訊息] 對話方塊中，在`_CrtDbgReport`會傳回 1 和`_CrtDbgBreak`呼叫偵錯工具，透過`DebugBreak`。  
 
 ### <a name="checking-for-heap-corruption"></a>檢查堆積損毀  
- 下列範例會使用[_CrtCheckMemory](http://msdn.microsoft.com/library/457cc72e-60fd-4177-ab5c-6ae26a420765)檢查堆積損毀：  
+ 下列範例會使用[_CrtCheckMemory](https://msdn.microsoft.com/library/457cc72e-60fd-4177-ab5c-6ae26a420765)檢查堆積損毀：  
 
 ```  
 _ASSERTE(_CrtCheckMemory());  
 ```  
 
 ### <a name="checking-pointer-validity"></a>檢查指標有效性  
- 下列範例會使用[_CrtIsValidPointer](http://msdn.microsoft.com/library/91c35590-ea5e-450f-a15d-ad8d62ade1fa)來檢查指定的記憶體範圍是否有效用於讀取或寫入。  
+ 下列範例會使用[_CrtIsValidPointer](https://msdn.microsoft.com/library/91c35590-ea5e-450f-a15d-ad8d62ade1fa)來檢查指定的記憶體範圍是否有效用於讀取或寫入。  
 
 ```  
 _ASSERTE(_CrtIsValidPointer( address, size, TRUE );  
 ```  
 
- 下列範例會使用[_CrtIsValidHeapPointer](http://msdn.microsoft.com/library/caf597ce-1b05-4764-9f37-0197a982bec5)驗證指標會指向本機堆積中的記憶體 (堆積所建立和管理這個執行個體的 C 執行階段程式庫 — DLL 可以有自己的執行個體的程式庫，以及因此其專屬堆積，外部應用程式堆積）。 這個判斷提示會攔截不只為 null 或超出範圍的位址，但也要靜態變數、 堆疊變數和任何其他非本機記憶體的指標。  
+ 下列範例會使用[_CrtIsValidHeapPointer](https://msdn.microsoft.com/library/caf597ce-1b05-4764-9f37-0197a982bec5)驗證指標會指向本機堆積中的記憶體 (堆積所建立和管理這個執行個體的 C 執行階段程式庫 — DLL 可以有自己的執行個體的程式庫，以及因此其專屬堆積，外部應用程式堆積）。 這個判斷提示會攔截不只為 null 或超出範圍的位址，但也要靜態變數、 堆疊變數和任何其他非本機記憶體的指標。  
 
 ```  
 _ASSERTE(_CrtIsValidPointer( myData );  
 ```  
 
 ### <a name="checking-a-memory-block"></a>檢查記憶體區塊  
- 下列範例會使用[_CrtIsMemoryBlock](http://msdn.microsoft.com/library/f7cbbc60-3690-4da0-a07b-68fd7f250273)以確認記憶體區塊位於本機堆積，且具有有效的區塊類型。  
+ 下列範例會使用[_CrtIsMemoryBlock](https://msdn.microsoft.com/library/f7cbbc60-3690-4da0-a07b-68fd7f250273)以確認記憶體區塊位於本機堆積，且具有有效的區塊類型。  
 
 ```  
 _ASSERTE(_CrtIsMemoryBlock (myData, size, &requestNumber, &filename, &linenumber));  
@@ -160,11 +160,11 @@ _ASSERTE(_CrtIsMemoryBlock (myData, size, &requestNumber, &filename, &linenumber
  [本主題內容](#BKMK_In_this_topic)  
 
 ## <a name="BKMK_MFC_assertions"></a> MFC 判斷提示  
- 定義 MFC [ASSERT](http://msdn.microsoft.com/library/1e70902d-d58c-4e7b-9f69-2aeb6cbe476c)巨集來判斷提示檢查。 它也會定義`MFC ASSERT_VALID`並`CObject::AssertValid`方法來檢查的內部狀態`CObject`-衍生物件。  
+ 定義 MFC [ASSERT](https://msdn.microsoft.com/library/1e70902d-d58c-4e7b-9f69-2aeb6cbe476c)巨集來判斷提示檢查。 它也會定義`MFC ASSERT_VALID`並`CObject::AssertValid`方法來檢查的內部狀態`CObject`-衍生物件。  
 
  如果引數的 MFC`ASSERT`巨集判斷值為零或為 false，巨集終止程式執行並警告使用者; 否則會繼續執行。  
 
- 當判斷提示失敗時，[訊息] 對話方塊中顯示的原始程式檔和行號的判斷提示的名稱。 如果您在對話方塊中選擇 [重試] 方塊中，呼叫[AfxDebugBreak](http://msdn.microsoft.com/library/c4cd79b9-9327-4db5-a9d6-c4004a92aa30)會中斷偵錯工具執行。 此時，您可以檢查呼叫堆疊，並使用其他偵錯工具設施判斷判斷提示失敗的原因。 如果您已啟用[時間只要偵錯](../debugger/just-in-time-debugging-in-visual-studio.md)，偵錯工具已不在執行，對話方塊可以啟動偵錯工具。  
+ 當判斷提示失敗時，[訊息] 對話方塊中顯示的原始程式檔和行號的判斷提示的名稱。 如果您在對話方塊中選擇 [重試] 方塊中，呼叫[AfxDebugBreak](https://msdn.microsoft.com/library/c4cd79b9-9327-4db5-a9d6-c4004a92aa30)會中斷偵錯工具執行。 此時，您可以檢查呼叫堆疊，並使用其他偵錯工具設施判斷判斷提示失敗的原因。 如果您已啟用[時間只要偵錯](../debugger/just-in-time-debugging-in-visual-studio.md)，偵錯工具已不在執行，對話方塊可以啟動偵錯工具。  
 
  下列範例示範如何使用`ASSERT`檢查函式的傳回值：  
 
@@ -173,16 +173,16 @@ int x = SomeFunc(y);
 ASSERT(x >= 0);   //  Assertion fails if x is negative  
 ```  
 
- 您可以使用與判斷提示[IsKindOf](http://msdn.microsoft.com/library/7c87c748-b7e0-4c6d-9694-6035e62fdfd6)提供類型檢查函數的引數的函式：  
+ 您可以使用與判斷提示[IsKindOf](https://msdn.microsoft.com/library/7c87c748-b7e0-4c6d-9694-6035e62fdfd6)提供類型檢查函數的引數的函式：  
 
 ```  
 ASSERT( pObject1->IsKindOf( RUNTIME_CLASS( CPerson ) ) );  
 ```  
 
- `ASSERT`巨集產生的發行版本中的任何程式碼。 如果您要評估的運算式中的發行版本，請使用[確認](http://msdn.microsoft.com/library/3e1ab4ee-cbc7-4290-a777-c92f42ce7b96)取代 ASSERT 巨集。  
+ `ASSERT`巨集產生的發行版本中的任何程式碼。 如果您要評估的運算式中的發行版本，請使用[確認](https://msdn.microsoft.com/library/3e1ab4ee-cbc7-4290-a777-c92f42ce7b96)取代 ASSERT 巨集。  
 
 ### <a name="BKMK_MFC_ASSERT_VALID_and_CObject__AssertValid"></a> MFC ASSERT_VALID 和 CObject::AssertValid  
- [CObject::AssertValid](http://msdn.microsoft.com/library/534a0744-4ab6-423d-b492-b4058b3d5157)方法可讓您提供執行階段檢查物件的內部狀態。 雖然您不需要覆寫`AssertValid`當您衍生您的類別，從`CObject`，您可以讓您的類別更可靠的執行此動作。 `AssertValid` 應該在所有物件的成員變數，以確認它們包含有效的值上都執行判斷提示。 比方說，它應該檢查指標成員變數不是 NULL。  
+ [CObject::AssertValid](https://msdn.microsoft.com/library/534a0744-4ab6-423d-b492-b4058b3d5157)方法可讓您提供執行階段檢查物件的內部狀態。 雖然您不需要覆寫`AssertValid`當您衍生您的類別，從`CObject`，您可以讓您的類別更可靠的執行此動作。 `AssertValid` 應該在所有物件的成員變數，以確認它們包含有效的值上都執行判斷提示。 比方說，它應該檢查指標成員變數不是 NULL。  
 
  下列範例示範如何宣告`AssertValid`函式：  
 
@@ -223,7 +223,7 @@ void CPerson::AssertValid() const
 
  如果任何成員變數儲存物件時，您可以使用`ASSERT_VALID`巨集來測試其內部有效性 (如果它們的類別覆寫`AssertValid`)。  
 
- 例如，假設類別`CMyData`，哪些存放區[CObList](http://msdn.microsoft.com/library/80699c93-33d8-4f8b-b8cf-7b58aeab64ca)其中一種其成員變數。 `CObList`變數`m_DataList`，會儲存一組`CPerson`物件。 縮寫的 deklarace`CMyData`看起來像這樣：  
+ 例如，假設類別`CMyData`，哪些存放區[CObList](https://msdn.microsoft.com/library/80699c93-33d8-4f8b-b8cf-7b58aeab64ca)其中一種其成員變數。 `CObList`變數`m_DataList`，會儲存一組`CPerson`物件。 縮寫的 deklarace`CMyData`看起來像這樣：  
 
 ```  
 class CMyData : public CObject  

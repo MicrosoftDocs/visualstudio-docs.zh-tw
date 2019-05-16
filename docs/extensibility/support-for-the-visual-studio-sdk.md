@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 941ba0a890e854f449647977162183cbcac1bab8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c7e65f7e01971e6cf27bfad75e1536e83b833bd3
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62432430"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65680793"
 ---
 # <a name="support-for-the-visual-studio-sdk"></a>支援 Visual Studio SDK
 數個支援選項可供客戶有關於如何擴充 Visual Studio 整合式的開發環境 (IDE) 的問題。
@@ -45,7 +45,7 @@ ms.locfileid: "62432430"
 ## <a name="included-support"></a>包含的支援
 
 ### <a name="visual-studio-product-support"></a>Visual Studio 產品支援
- 一些支援隨附購買[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]產品。 如需詳細資訊，請參閱 < [Visual Studio 支援](http://msdn.microsoft.com/vstudio/cc136615.aspx)。 Microsoft 會維護專屬的支援小組來回答有關[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]擴充性。
+ 一些支援隨附購買[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]產品。 如需詳細資訊，請參閱 < [Visual Studio 支援](https://msdn.microsoft.com/vstudio/cc136615.aspx)。 Microsoft 會維護專屬的支援小組來回答有關[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]擴充性。
 
 ### <a name="msdn-subscription-support"></a>MSDN 訂用帳戶支援
  MSDN 訂用帳戶的套件可能也會包含某些支援。 如需詳細資訊，請參閱 < [MSDN 訂閱者支援](https://msdn.microsoft.com/subscriptions/aa718661.aspx)。
@@ -67,4 +67,4 @@ ms.locfileid: "62432430"
 
 ## <a name="see-also"></a>另請參閱
 
-- [告訴我們](../ide/talk-to-us.md)
+- [告訴我們](../ide/feedback-options.md)

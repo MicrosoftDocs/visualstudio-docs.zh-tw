@@ -19,12 +19,12 @@ caps.latest.revision: 20
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 0732a5f867b357bddf3ff9f9d83bcfd7dd1f0573
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 7938940cc1a9e672ee831165ecc55e2897c3a9fe
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60089077"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65697356"
 ---
 # <a name="clickonce-and-authenticode"></a>ClickOnce 和 Authenticode
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -51,7 +51,7 @@ Authenticode * 是一種 Microsoft 技術，使用業界標準密碼編譯簽署
   
  相反地，來自 CA 的憑證，例如，憑證廠商或貴企業內部的部門，能為您的使用者提供更高的安全性。 它不只會識別簽署軟體的發行者，還會檢查簽署的 CA 驗證身分識別。 如果 CA 不是根授權單位，Authenticode 也會「鏈結」回根授權單位，確認 CA 有權發行憑證。 為了更高的安全性，您應該盡可能使用 CA 發出的憑證。  
   
- 如需有關如何產生自助憑證的詳細資訊，請參閱 < [Makecert.exe （憑證建立工具）](http://msdn.microsoft.com/library/b0343f8e-9c41-4852-a85c-f8a0c408cf0d)。  
+ 如需有關如何產生自助憑證的詳細資訊，請參閱 < [Makecert.exe （憑證建立工具）](https://msdn.microsoft.com/library/b0343f8e-9c41-4852-a85c-f8a0c408cf0d)。  
   
 ### <a name="timestamps"></a>時間戳記  
  簽署 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 應用程式所用的憑證會在一定時間後過期，通常是十二個月。 為免經常需要使用新憑證重新簽署應用程式， [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 支援時間戳記。 使用時間戳記簽署應用程式後，只要時間戳記有效，憑證即使到期仍被接受。 這可讓使用過期憑證，但時間戳記有效的 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 應用程式，能夠下載並執行。 它也允許使用過期憑證的已安裝應用程式，能夠繼續下載並安裝更新。  
@@ -75,4 +75,4 @@ Authenticode * 是一種 Microsoft 技術，使用業界標準密碼編譯簽署
  [ClickOnce 安全性和部署](../deployment/clickonce-security-and-deployment.md)   
  [保護 ClickOnce 應用程式](../deployment/securing-clickonce-applications.md)   
  [受信任的應用程式部署概觀](../deployment/trusted-application-deployment-overview.md)   
- [Mage.exe (資訊清單產生和編輯工具)](http://msdn.microsoft.com/library/77dfe576-2962-407e-af13-82255df725a1)
+ [Mage.exe (資訊清單產生和編輯工具)](https://msdn.microsoft.com/library/77dfe576-2962-407e-af13-82255df725a1)

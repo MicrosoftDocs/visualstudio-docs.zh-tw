@@ -29,12 +29,12 @@ caps.latest.revision: 245
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 1d74fc577044cd11ca161f099e2432fd03ecfad2
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: cb62c82722cbfc76264e760e117c828a6dc3bef0
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63440959"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65687151"
 ---
 # <a name="map-dependencies-across-your-solutions"></a>對應方案之間的相依性
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -284,7 +284,7 @@ ms.locfileid: "63440959"
      ![使用 [篩選] 窗格來簡化顯示](../modeling/media/almcodemapfilterpane.png "ALMCodeMapFilterPane")  
   
 ## <a name="SeeSourceHeader"></a> 查看 C 與 C++ 原始程式檔與標頭檔之間的相依性  
- 如果要為 C++ 專案建立更完整的對應，請在這些專案上設定瀏覽資訊編譯器選項 (**/FR**)。 請參閱 [/FR, /Fr (Create .Sbr File)](http://msdn.microsoft.com/library/3fd8f88b-3924-4feb-9393-287036a28896)。 否則會出現訊息並提示您設定此選項。 如果選取 [確定] ，則只會為目前的對應設定這個選項。 您可以選擇隱藏所有之後對應的訊息。 如果隱藏這個訊息，之後可以讓它再次出現。 請將下列登錄機碼設定為 `0` ，或刪除該機碼：  
+ 如果要為 C++ 專案建立更完整的對應，請在這些專案上設定瀏覽資訊編譯器選項 (**/FR**)。 請參閱 [/FR, /Fr (Create .Sbr File)](https://msdn.microsoft.com/library/3fd8f88b-3924-4feb-9393-287036a28896)。 否則會出現訊息並提示您設定此選項。 如果選取 [確定] ，則只會為目前的對應設定這個選項。 您可以選擇隱藏所有之後對應的訊息。 如果隱藏這個訊息，之後可以讓它再次出現。 請將下列登錄機碼設定為 `0` ，或刪除該機碼：  
   
  **HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\14.0\NativeProvider:AutoEnableSbr**  
   
@@ -312,11 +312,11 @@ ms.locfileid: "63440959"
 |無法產生 Code Map。|方案中沒有成功建立的專案。|修正發生的建置錯誤，然後重新產生對應。|  
 |當您嘗試從 [架構][!INCLUDE[vsprvs](../includes/vsprvs-md.md)]  **功能表產生 Code Map 時，** 會變得沒有回應。|程式資料庫 (.pdb) 檔案可能會損毀。<br /><br /> .pdb 檔案會儲存偵錯資訊，例如類型、方法和原始程式檔資訊。|重建方案後再試一次。|  
 |IntelliSense 瀏覽資料庫的某些設定已停用。|某些 IntelliSense 設定可能已在  [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 對話方塊中停用。|開啟這些設定來加以啟用。<br /><br /> 請參閱[選項、 文字編輯器、 C /C++進階](../ide/reference/options-text-editor-c-cpp-advanced.md)。|  
-|[未知方法]  訊息出現在方法節點上。<br /><br /> 發生這個問題是因為無法解析方法的名稱。|二進位檔可能沒有基底重新配置表格。|在連結器中開啟 **/FIXED:NO** 選項。<br /><br /> 請參閱 [/FIXED (Fixed Base Address)](http://msdn.microsoft.com/library/929bba5e-b7d8-40ed-943e-056aa3710fc5)。|  
-||程式資料庫 (.pdb) 檔案可能無法建置。<br /><br /> .pdb 檔案會儲存偵錯資訊，例如類型、方法和原始程式檔資訊。|在連結器中開啟 **/DEBUG** 選項。<br /><br /> 請參閱 [/DEBUG (Generate Debug Info)](http://msdn.microsoft.com/library/1af389ae-3f8b-4d76-a087-1cdf861e9103)。|  
+|[未知方法]  訊息出現在方法節點上。<br /><br /> 發生這個問題是因為無法解析方法的名稱。|二進位檔可能沒有基底重新配置表格。|在連結器中開啟 **/FIXED:NO** 選項。<br /><br /> 請參閱 [/FIXED (Fixed Base Address)](https://msdn.microsoft.com/library/929bba5e-b7d8-40ed-943e-056aa3710fc5)。|  
+||程式資料庫 (.pdb) 檔案可能無法建置。<br /><br /> .pdb 檔案會儲存偵錯資訊，例如類型、方法和原始程式檔資訊。|在連結器中開啟 **/DEBUG** 選項。<br /><br /> 請參閱 [/DEBUG (Generate Debug Info)](https://msdn.microsoft.com/library/1af389ae-3f8b-4d76-a087-1cdf861e9103)。|  
 ||無法在預期的位置中開啟或找到 .pdb 檔案。|請確定預期的位置中有 .pdb 檔案存在。|  
-||已從 .pdb 檔案中移除偵錯資訊。|如果在連結器中使用 **/PDBSTRIPPED** 選項，請改為包含完整的 .pdb 檔案。<br /><br /> 請參閱 [/PDBSTRIPPED (Strip Private Symbols)](http://msdn.microsoft.com/library/9b9e0070-6a13-4142-8180-19c003fbbd55)。|  
-||呼叫端不是函式，而且為二進位檔案中的 Thunk 或資料區段中的指標。|當呼叫端為 Thunk 時，請嘗試使用 `_declspec(dllimport)` 來避免 Thunk。<br /><br /> 請參閱：<br /><br /> -   [一般規則和限制](http://msdn.microsoft.com/library/6c48902d-4259-4761-95d4-e421d69aa050)<br />-   [匯入函式呼叫使用 __declspec （dllimport）](http://msdn.microsoft.com/library/6b53c616-0c6d-419a-8e2a-d2fff20510b3)<br />-   [dllexport、 dllimport](http://msdn.microsoft.com/library/ff95b645-ef55-4e72-b848-df44657b3208)|  
+||已從 .pdb 檔案中移除偵錯資訊。|如果在連結器中使用 **/PDBSTRIPPED** 選項，請改為包含完整的 .pdb 檔案。<br /><br /> 請參閱 [/PDBSTRIPPED (Strip Private Symbols)](https://msdn.microsoft.com/library/9b9e0070-6a13-4142-8180-19c003fbbd55)。|  
+||呼叫端不是函式，而且為二進位檔案中的 Thunk 或資料區段中的指標。|當呼叫端為 Thunk 時，請嘗試使用 `_declspec(dllimport)` 來避免 Thunk。<br /><br /> 請參閱：<br /><br /> -   [一般規則和限制](https://msdn.microsoft.com/library/6c48902d-4259-4761-95d4-e421d69aa050)<br />-   [匯入函式呼叫使用 __declspec （dllimport）](https://msdn.microsoft.com/library/6b53c616-0c6d-419a-8e2a-d2fff20510b3)<br />-   [dllexport、 dllimport](https://msdn.microsoft.com/library/ff95b645-ef55-4e72-b848-df44657b3208)|  
   
 ## <a name="RenderMoreQuickly"></a> 使 Code Map 更快速地轉譯  
  當您第一次產生對應時，Visual Studio 會為所有找到的相依性編製索引。 此程序可能需要一些時間 (尤其是大型方案)，但這可以改善之後的效能。 如果程式碼變更，則 Visual Studio 只會重新編製更新過的程式碼索引。 若要將完成轉譯對應所花費的時間降到最低，請考慮下列各項：  

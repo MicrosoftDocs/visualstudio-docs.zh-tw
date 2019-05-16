@@ -8,12 +8,12 @@ ms.assetid: 8202717a-e990-45cf-b092-438651ccb38a
 caps.latest.revision: 66
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: 01b767e4b2aceeb50ca72ef6852934f4b0502b98
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 51edddcbac3815c450b2b0db7166fc7d5c593dbd
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60114310"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65698838"
 ---
 # <a name="cross-platform-mobile-development-in-visual-studio"></a>Visual Studio 中的跨平台行動裝置應用程式開發
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -76,7 +76,7 @@ ms.locfileid: "60114310"
 
 |**進一步了解**|
 |--------------------|
-|選擇是否使用共用專案和 (或) 可攜式類別庫專案，來共用程式碼。<br /><br /> [跨平台共用程式碼](http://blogs.msdn.com/b/dotnet/archive/2014/04/21/sharing-code-across-platforms.aspx) (.NET Framework 部落格)<br /><br /> [共用程式碼選項 (英文)](http://developer.xamarin.com/guides/cross-platform/application_fundamentals/building_cross_platform_applications/sharing_code_options/) (Xamarin)<br /><br /> [使用 .NET Framework 時的程式碼共用選項](http://msdn.microsoft.com/library/dn720832.aspx) (MSDN Library)|
+|選擇是否使用共用專案和 (或) 可攜式類別庫專案，來共用程式碼。<br /><br /> [跨平台共用程式碼](http://blogs.msdn.com/b/dotnet/archive/2014/04/21/sharing-code-across-platforms.aspx) (.NET Framework 部落格)<br /><br /> [共用程式碼選項 (英文)](http://developer.xamarin.com/guides/cross-platform/application_fundamentals/building_cross_platform_applications/sharing_code_options/) (Xamarin)<br /><br /> [使用 .NET Framework 時的程式碼共用選項](https://msdn.microsoft.com/library/dn720832.aspx) (MSDN Library)|
 
 ### <a name="WindowsHTML"></a> 以 Windows 10 裝置為目標
  ![Windows 裝置](../cross-platform/media/windowsdevices.png "WindowsDevices")
@@ -90,7 +90,7 @@ ms.locfileid: "60114310"
 |**進一步了解**|
 |--------------------|
 |[了解通用 Windows 應用程式](https://msdn.microsoft.com/library/windows/apps/dn894631.aspx) (Windows 開發人員中心)|
-|[建置您的第一個應用程式](http://msdn.microsoft.com/library/windows/apps/dn609832.aspx) (Windows 開發人員中心)|
+|[建置您的第一個應用程式](https://msdn.microsoft.com/library/windows/apps/dn609832.aspx) (Windows 開發人員中心)|
 |[開發適用於通用 Windows 平台 (UWP) 的應用程式](../cross-platform/develop-apps-for-the-universal-windows-platform-uwp.md)|
 |[將應用程式移轉至通用 Windows 平台 (UWP)](../misc/migrate-apps-to-the-universal-windows-platform-uwp.md)|
 
@@ -171,6 +171,6 @@ ms.locfileid: "60114310"
 
 ## <a name="see-also"></a>另請參閱
 
-- [將 Office 365 API 加入 Visual Studio 專案中](http://msdn.microsoft.com/library/office/dn605899\(v=office.15\).aspx)
-- [Azure 行動服務](http://msdn.microsoft.com/library/dn720832\(v=vs.110\).aspx)
+- [將 Office 365 API 加入 Visual Studio 專案中](https://msdn.microsoft.com/library/office/dn605899\(v=office.15\).aspx)
+- [Azure 行動服務](https://msdn.microsoft.com/library/dn720832\(v=vs.110\).aspx)
 - [Application Insights](/azure/application-insights/app-insights-overview)

@@ -15,12 +15,12 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 11e1d9614c4f2a512c56f84117d28363e80c6b90
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 93bf7f17f77008ce8e9898c1871926edf2e8439f
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60048097"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65694777"
 ---
 # <a name="ca1305-specify-iformatprovider"></a>CA1305:必須指定 IFormatProvider
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -78,4 +78,4 @@ ms.locfileid: "60048097"
  [CA1304:指定 CultureInfo](../code-quality/ca1304-specify-cultureinfo.md)
 
 ## <a name="see-also"></a>另請參閱
- [NIB：使用 CultureInfo 類別](http://msdn.microsoft.com/d4329e34-64c3-4d1e-8c73-5b0ee626ba7a)
+ [NIB：使用 CultureInfo 類別](https://msdn.microsoft.com/d4329e34-64c3-4d1e-8c73-5b0ee626ba7a)

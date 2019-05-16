@@ -11,12 +11,12 @@ caps.latest.revision: 37
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: d4381edb42e2aef53c00aea619eea34ee20060d5
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 1809072ca0a01362e6434254b6e70a4bf4db4762
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63424335"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65698105"
 ---
 # <a name="understanding-models-classes-and-relationships"></a>了解模型、類別和關聯性
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -154,4 +154,4 @@ ms.locfileid: "63424335"
   
 ## <a name="see-also"></a>另請參閱  
  [產生的 API 中的網域關聯性](../misc/domain-relationships-in-the-generated-api.md)   
- [Domain-Specific Language Tools Glossary](http://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa) (特定領域語言工具字彙表)
+ [Domain-Specific Language Tools Glossary](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa) (特定領域語言工具字彙表)

@@ -11,12 +11,12 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 804236cadf97dda0b21cf145a4cd4c932e08b097
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 77f0a384797217440600d1ba5db0f190f4bdafa3
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58945097"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65685368"
 ---
 # <a name="properties-of-a-dsl-definition"></a>DSL 定義的屬性
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,4 +47,4 @@ DslDefinition 屬性會定義*定義域專屬語言*定義屬性，例如版本�
 |修訂|累加修訂建置這個特定領域語言定義的數字。|0|  
   
 ## <a name="see-also"></a>另請參閱  
- [Domain-Specific Language Tools Glossary](http://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa) (特定領域語言工具字彙表)
+ [Domain-Specific Language Tools Glossary](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa) (特定領域語言工具字彙表)

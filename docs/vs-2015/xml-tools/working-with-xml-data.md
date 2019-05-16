@@ -9,12 +9,12 @@ caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: aef35ff50080e9b596cc63915da77851b549bc3f
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 4c9b653451a467cc6ac7d48ad08d937f8f8462a5
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63438867"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65703221"
 ---
 # <a name="working-with-xml-data"></a>使用 XML 資料
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -58,10 +58,10 @@ ms.locfileid: "63438867"
  [偵錯 XSLT](../xml-tools/debugging-xslt.md)  
  討論如何使用 Visual Studio 偵錯工具偵錯樣式表。  
   
- [XML 標準參考](http://msdn.microsoft.com/79c78508-c9d0-423a-a00f-672e855de401)  
+ [XML 標準參考](https://msdn.microsoft.com/79c78508-c9d0-423a-a00f-672e855de401)  
  提供 XML 技術的資訊，包括 XML、文件類型定義 (DTD)、XML 結構描述定義語言 (XSD) 和 XSLT。
   
- [在 Managed 程式碼中的 XML Web Service](http://msdn.microsoft.com/c9a7dc25-3e68-4723-bfb7-de4320830196)  
+ [在 Managed 程式碼中的 XML Web Service](https://msdn.microsoft.com/c9a7dc25-3e68-4723-bfb7-de4320830196)  
  討論如何建立及部署 XML Web 服務，以及如何存取 XML Web 服務。  
   
 ## <a name="see-also"></a>另請參閱  

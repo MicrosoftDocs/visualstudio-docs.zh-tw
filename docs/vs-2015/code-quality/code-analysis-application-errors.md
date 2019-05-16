@@ -14,12 +14,12 @@ caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 25ee5a4e9a84201f93783bcef64f92ec74206fc6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1af00ebc2f6fdc1bc32a5a6784b88068d4e3ffb2
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62422743"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65693388"
 ---
 # <a name="code-analysis-application-errors"></a>程式碼分析應用程式錯誤
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -59,6 +59,6 @@ ms.locfileid: "62422743"
 
 ## <a name="related-sections"></a>相關章節
 
-- [撰寫安全程式碼的指導方針](http://msdn.microsoft.com/9892fd19-45cd-44b6-9fa8-10f1b5cb6ea4)
+- [撰寫安全程式碼的指導方針](https://msdn.microsoft.com/9892fd19-45cd-44b6-9fa8-10f1b5cb6ea4)
 - [分析 Managed 程式碼品質](../code-quality/analyzing-managed-code-quality-by-using-code-analysis.md)
-- [應用程式生命週期管理工具 中的錯誤疑難排解資源](http://msdn.microsoft.com/library/76ca8f76-1e2d-4b55-89e2-bd59e4abe74c)
+- [應用程式生命週期管理工具 中的錯誤疑難排解資源](https://msdn.microsoft.com/library/76ca8f76-1e2d-4b55-89e2-bd59e4abe74c)

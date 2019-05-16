@@ -8,12 +8,12 @@ ms.assetid: 41981ad6-673e-492e-b739-9863b14157b1
 caps.latest.revision: 26
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 036c0ced92fd4da85989883ab5725455ed172db4
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 8c0158370ceb101e8c6934f92e2dd3e8689254c5
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63416291"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65686306"
 ---
 # <a name="making-coded-ui-tests-wait-for-specific-events-during-playback"></a>讓自動程式化 UI 測試在播放期間等候特定事件
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,7 +25,7 @@ ms.locfileid: "63416291"
  Visual Studio 企業版  
   
 > [!TIP]
-> 您也可以使用自動程式化 UI 測試編輯器，以新增動作之前的延遲。 如需詳細資訊，請參閱[如何：使用自動程式化的 UI 測試編輯器，在 UI 動作前插入延遲](http://msdn.microsoft.com/library/509f8ef7-e105-4049-b11b-d64549e055b0)。  
+> 您也可以使用自動程式化 UI 測試編輯器，以新增動作之前的延遲。 如需詳細資訊，請參閱[如何：使用自動程式化的 UI 測試編輯器，在 UI 動作前插入延遲](https://msdn.microsoft.com/library/509f8ef7-e105-4049-b11b-d64549e055b0)。  
   
  **UITestControl.WaitForControlXXX() 方法**  
   
@@ -117,4 +117,4 @@ UITestControl.WaitForCondition<UITestControl[]>(new UITestControl[] { statusText
  [逐步解說：建立、 編輯和維護自動程式化的 UI 測試](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md)   
  [自動程式化 UI 測試的結構](../test/anatomy-of-a-coded-ui-test.md)   
  [自動程式化 UI 測試和動作記錄的支援組態和平台](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)   
- [如何：使用自動程式化的 UI 測試編輯器，在 UI 動作前插入延遲](http://msdn.microsoft.com/library/509f8ef7-e105-4049-b11b-d64549e055b0)
+ [如何：使用自動程式化的 UI 測試編輯器，在 UI 動作前插入延遲](https://msdn.microsoft.com/library/509f8ef7-e105-4049-b11b-d64549e055b0)

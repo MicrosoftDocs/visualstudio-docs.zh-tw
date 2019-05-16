@@ -23,12 +23,12 @@ caps.latest.revision: 34
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 56a11c24ad8a38cc837659ac063987573c0ba492
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: e46169728c10d696f8dd99eb6459b9fcf081cb45
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63444316"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65704925"
 ---
 # <a name="walkthrough-debugging-a-web-form"></a>逐步解說：偵錯 Web 表單
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,7 +38,7 @@ ms.locfileid: "63444316"
 > [!NOTE]
 > 若要完成本逐步解說，您在伺服器電腦中必須具有系統管理員權限。 根據預設，[!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 處理序 aspnet_wp.exe 或 w3wp.exe 會做為 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 處理序執行。 若要對 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 進行偵錯，您必須在 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 執行的電腦上具有系統管理員權限。 如需詳細資訊，請參閱 [System Requirements](../debugger/aspnet-debugging-system-requirements.md)。  
   
- 根據目前使用的設定與版本，您所看到的對話方塊與功能表命令可能會與 [說明] 中所描述的不同。 若要變更設定，請從 [ **工具** ] 功能表中選取 [ **匯入和匯出設定** ]。 如需詳細資訊，請參閱 [在 Visual Studio 中自訂開發設定](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)  
+ 根據目前使用的設定與版本，您所看到的對話方塊與功能表命令可能會與 [說明] 中所描述的不同。 若要變更設定，請從 [ **工具** ] 功能表中選取 [ **匯入和匯出設定** ]。 如需詳細資訊，請參閱 [在 Visual Studio 中自訂開發設定](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)  
   
 ### <a name="to-create-the-web-form"></a>若要建立 Web Form  
   
@@ -100,7 +100,7 @@ ms.locfileid: "63444316"
     textBox1.Text = "Button was clicked!";  
     ```  
   
-     會出現一個紅點，並且該行上的文字會以紅色反白顯示。 紅點表示中斷點。 當您在偵錯工具下執行應用程式時，偵錯工具會在遇到程式碼的位置中斷執行。 接著您就可以檢視應用程式的狀態並對它進行偵錯。 如需詳細資訊，請參閱[中斷點](http://msdn.microsoft.com/fe4eedc1-71aa-4928-962f-0912c334d583)。  
+     會出現一個紅點，並且該行上的文字會以紅色反白顯示。 紅點表示中斷點。 當您在偵錯工具下執行應用程式時，偵錯工具會在遇到程式碼的位置中斷執行。 接著您就可以檢視應用程式的狀態並對它進行偵錯。 如需詳細資訊，請參閱[中斷點](https://msdn.microsoft.com/fe4eedc1-71aa-4928-962f-0912c334d583)。  
   
 2. 按一下 [偵錯] 功能表上的 [開始偵錯]。  
   

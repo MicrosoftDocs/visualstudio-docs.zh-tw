@@ -8,17 +8,17 @@ ms.assetid: 47926aa1-3b41-410d-bca8-f77fc950cbe7
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: d5e45c91e9dadb0f457e3a2ecfa2e5484fbe0e78
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 08d88ce08c6c91cbf46bcc6d15cbf098d61e604d
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63412325"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65679935"
 ---
 # <a name="managing-universal-windows-projects"></a>管理通用 Windows 專案
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-通用 Windows 應用程式是以 Windows 8.1 和 Windows Phone 8.1，讓開發人員可以使用兩種平台的程式碼和其他資產為目標的應用程式。 共用程式碼和資源會保留在共用的專案，而平台特定程式碼和資源會保留在不同的專案，一個用於 Windows，另一個則用於 Windows Phone。 如需通用 Windows 應用程式的詳細資訊，請參閱[通用 Windows 應用程式](http://msdn.microsoft.com/library/windows/apps/dn609832.aspx)。 管理專案的 visual Studio 擴充功能應該要知道通用 Windows 應用程式專案具有不同於單一平台應用程式的結構。 本逐步解說會示範如何瀏覽共用的專案和管理共用的項目。  
+通用 Windows 應用程式是以 Windows 8.1 和 Windows Phone 8.1，讓開發人員可以使用兩種平台的程式碼和其他資產為目標的應用程式。 共用程式碼和資源會保留在共用的專案，而平台特定程式碼和資源會保留在不同的專案，一個用於 Windows，另一個則用於 Windows Phone。 如需通用 Windows 應用程式的詳細資訊，請參閱[通用 Windows 應用程式](https://msdn.microsoft.com/library/windows/apps/dn609832.aspx)。 管理專案的 visual Studio 擴充功能應該要知道通用 Windows 應用程式專案具有不同於單一平台應用程式的結構。 本逐步解說會示範如何瀏覽共用的專案和管理共用的項目。  
   
 ## <a name="prerequisites"></a>必要條件  
  從 Visual Studio 2015 中，從下載中心取得未安裝 Visual Studio SDK。 包含為 Visual Studio 安裝程式的選用功能。 您也可以在稍後安裝 VS SDK。 如需詳細資訊，請參閱 <<c0> [ 安裝 Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md)。  

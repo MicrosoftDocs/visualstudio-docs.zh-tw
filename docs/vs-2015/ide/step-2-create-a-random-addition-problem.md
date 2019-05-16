@@ -9,12 +9,12 @@ caps.latest.revision: 29
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 07e5c91038013f51199212a3215490bbfdf34257
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: b36897236b71617c6eb36949d307e6b3e1d0204b
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63442619"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65693965"
 ---
 # <a name="step-2-create-a-random-addition-problem"></a>步驟 2：建立隨機加法問題
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,7 +41,7 @@ ms.locfileid: "63442619"
   
      `Random` 稱為物件。 您以前或許聽過這個名詞，在接下來的教學課程中，您將進一步了解它對程式設計的意義。 現在只要記得您可以使用 `new` 陳述式建立按鈕、標籤、面板、OpenFileDialogs、ColorDialogs、SoundPlayers、Randoms，甚至表單，而這些項目都稱為物件。 當您執行程式時，表單就會啟動，而表單的後置程式碼會建立 `Random` 物件並將它命名為 **randomizer**。  
   
-     您很快就要建置檢查答案的方法，因此您的測驗必須使用變數來儲存為每個問題產生的隨機數字。 請參閱[變數](http://msdn.microsoft.com/library/4cfaa06d-4ae3-4307-897b-cf599dc24caa)或[類型](http://msdn.microsoft.com/library/f782d7cc-035e-4500-b1b1-36a9881130ad)。 若要正確使用變數，您必須宣告變數，這表示將它們的名稱和資料類型列出。  
+     您很快就要建置檢查答案的方法，因此您的測驗必須使用變數來儲存為每個問題產生的隨機數字。 請參閱[變數](https://msdn.microsoft.com/library/4cfaa06d-4ae3-4307-897b-cf599dc24caa)或[類型](https://msdn.microsoft.com/library/f782d7cc-035e-4500-b1b1-36a9881130ad)。 若要正確使用變數，您必須宣告變數，這表示將它們的名稱和資料類型列出。  
   
 4. 將兩個整數變數加入至表單，並命名為 **addend1** 和 **addend2**。  
   

@@ -9,12 +9,12 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 3e0f962440d722a881d7a8de4ed2e7c9a9c7755f
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: b912708e7cc2f811e9cd18a24096ef66e128c375
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54795906"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65690075"
 ---
 # <a name="working-with-shaders"></a>使用著色器
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,11 +31,11 @@ ms.locfileid: "54795906"
 ## <a name="dgsl-documents"></a>DGSL 文件  
  「著色器設計工具」會以「有向圖形著色器語言」(DGSL) 格式儲存著色器，這是一種以「有向圖形標記語言」(DGML) 為基礎的 XML 格式。 您可以在「模型編輯器」中將 DGSL 著色器直接套用至 3D 模型。 不過，您必須先將 DGSL 著色器以 DirectX 了解的格式 (例如 HLSL) 匯出，然後才能在您的應用程式中使用該著色器。  
   
- 由於 DGSL 與 DGML 相容，因此您可以使用專為分析 DGML 文件而設計的工具來分析您的 DGSL 著色器。 如需有關 DGML 的資訊，請參閱[了解有向圖形標記語言 (DGML)](http://msdn.microsoft.com/library/ee842619.aspx)。  
+ 由於 DGSL 與 DGML 相容，因此您可以使用專為分析 DGML 文件而設計的工具來分析您的 DGSL 著色器。 如需有關 DGML 的資訊，請參閱[了解有向圖形標記語言 (DGML)](https://msdn.microsoft.com/library/ee842619.aspx)。  
   
 ## <a name="related-topics"></a>相關主題  
   
-|標題|說明|  
+|標題|描述|  
 |-----------|-----------------|  
 |[著色器設計工具](../designers/shader-designer.md)|說明如何使用 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 著色器設計工具，搭配著色器一起運作。|  
 |[著色器設計工具節點](../designers/shader-designer-nodes.md)|探討您可用來達成圖形效果的「著色器設計工具」節點類型。|  

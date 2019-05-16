@@ -11,17 +11,17 @@ caps.latest.revision: 32
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 4c29b7e3279513e2876396abd5083c3ddefa0baf
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 55142e000a22b6e45543c6fc14594a12c93f4f92
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63440925"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65680295"
 ---
 # <a name="manage-models-and-diagrams-under-version-control"></a>在版本控制下管理模型與圖表
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-藉助 [使用 Team Foundation 版本控制或 Git](http://msdn.microsoft.com/library/33267cee-fe5f-4aa3-b2cd-6d22ceace314)，管理不同版本的模型專案和圖表，包含 Code Map (.dgml 檔案)；可搭配內部部署的 Team Foundation Server 或搭配 Visual Studio Team Services 在雲端使用。  
+藉助 [使用 Team Foundation 版本控制或 Git](https://msdn.microsoft.com/library/33267cee-fe5f-4aa3-b2cd-6d22ceace314)，管理不同版本的模型專案和圖表，包含 Code Map (.dgml 檔案)；可搭配內部部署的 Team Foundation Server 或搭配 Visual Studio Team Services 在雲端使用。  
   
  若要查看哪些 Visual Studio 版本支援這項功能，請參閱 [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)。  
   
@@ -77,7 +77,7 @@ ms.locfileid: "63440925"
   
 - 變更跨套件範圍的關聯性屬性。  
   
-- 如需了解「簽出」鎖定，請參閱 [簽出和編輯檔案](http://msdn.microsoft.com/library/eb404d63-c448-4994-9416-3e6d50ec554a)。  
+- 如需了解「簽出」鎖定，請參閱 [簽出和編輯檔案](https://msdn.microsoft.com/library/eb404d63-c448-4994-9416-3e6d50ec554a)。  
   
 ##### <a name="to-move-a-diagram-file-in-or-out-of-a-project-folder"></a>在專案資料夾中移入或移出圖表檔  
   

@@ -9,12 +9,12 @@ caps.latest.revision: 33
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e2b2d4ee5feb0bed25ad41931f151e81db6edd3c
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: d65d1a758523aaf7652f2d47bec50aa9fdb91884
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63442589"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65694003"
 ---
 # <a name="step-3-assign-a-random-icon-to-each-label"></a>步驟 3：將隨機圖示指派給每一個標籤
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,9 +47,9 @@ ms.locfileid: "63442589"
   
      第一行將 `control` 變數轉換為名為 `iconLabel` 的 Label。 下一行為 `if` 陳述式，會檢查以確定轉換是否成功。 如果轉換成功，則會執行 `if` 陳述式中的陳述式。 (您可以回想一下上一個教學課程中，其中 `if` 陳述式是用來評估您所指定的任何條件)。`if` 陳述式中的第一行會建立名稱為 `randomNumber` 的變數，其中包含亂數，對應到圖示清單中的其中一個項目。 若要這樣做，該行使用您先前建立之 `Next` 物件的 `Random` 方法。 `Next` 方法會傳回亂數。 這一行也使用 `Count` 清單的 `icons` 屬性，決定從中選擇亂數的範圍。 下一行將圖示清單的其中一個項目指定至標籤的 `Text` 屬性。 註解行在本主題稍後加以說明。 最後，`if` 陳述式中的最後一行從清單中移除已加入至表單的圖示。  
   
-     請記住，如果您不確定程式碼某些部分所執行的動作，可以將滑鼠指標放在程式碼項目上並檢閱顯示的工具提示。 使用 Visual Studio 偵錯工具時，您也可以在程式執行時對每一行程式碼進行逐步執行。 請參閱[How Do i:在 Visual Studio 中偵錯工具的步驟嗎？](http://msdn.microsoft.com/vstudio/ee672313.aspx)或是[使用 偵錯工具巡覽程式碼](../debugger/navigating-through-code-with-the-debugger.md)如需詳細資訊。  
+     請記住，如果您不確定程式碼某些部分所執行的動作，可以將滑鼠指標放在程式碼項目上並檢閱顯示的工具提示。 使用 Visual Studio 偵錯工具時，您也可以在程式執行時對每一行程式碼進行逐步執行。 請參閱[How Do i:在 Visual Studio 中偵錯工具的步驟嗎？](https://msdn.microsoft.com/vstudio/ee672313.aspx)或是[使用 偵錯工具巡覽程式碼](../debugger/navigating-through-code-with-the-debugger.md)如需詳細資訊。  
   
-3. 若要在程式啟動時使用圖示填滿遊戲面板，您必須呼叫 `AssignIconsToSquares()` 方法。 如果您使用的是 Visual C#，請在 `Form1` 建構函式中將陳述式新增至對 `InitializeComponent()` 方法的呼叫正下方，如此您的表單會呼叫新方法，在表單顯示之前自行設定。 當您建立新的物件 (例如類別或結構) 時會呼叫建構函式。 如需詳細資訊，請參閱[建構函式 (C# 程式設計手冊)](http://msdn.microsoft.com/library/ace5hbzh.aspx)，若是在 Visual Basic 中，則請參閱[使用建構函式和解構函式](http://msdn.microsoft.com/library/2z08e49e%28v=vs.90%29.aspx)。  
+3. 若要在程式啟動時使用圖示填滿遊戲面板，您必須呼叫 `AssignIconsToSquares()` 方法。 如果您使用的是 Visual C#，請在 `Form1` 建構函式中將陳述式新增至對 `InitializeComponent()` 方法的呼叫正下方，如此您的表單會呼叫新方法，在表單顯示之前自行設定。 當您建立新的物件 (例如類別或結構) 時會呼叫建構函式。 如需詳細資訊，請參閱[建構函式 (C# 程式設計手冊)](https://msdn.microsoft.com/library/ace5hbzh.aspx)，若是在 Visual Basic 中，則請參閱[使用建構函式和解構函式](https://msdn.microsoft.com/library/2z08e49e%28v=vs.90%29.aspx)。  
   
      [!code-csharp[VbExpressTutorial4Step2_3_4#13](../snippets/csharp/VS_Snippets_VBCSharp/vbexpresstutorial4step2_3_4/cs/form1.cs#13)]  
   

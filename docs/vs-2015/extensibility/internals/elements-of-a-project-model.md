@@ -12,12 +12,12 @@ ms.assetid: a1dbe0dc-68da-45d7-8704-5b43ff7e4fc4
 caps.latest.revision: 19
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: d4e47712df1f76556ced8c69abb8bf5af085d01e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 0f3b07068939e34b5c9e9487761177c0e12f5654
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58930714"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65700127"
 ---
 # <a name="elements-of-a-project-model"></a>專案模型的項目
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ ms.locfileid: "58930714"
   
 - 每個專案都必須有範本檔案或初始化新的專案檔案，當使用者建立新的專案，透過精靈[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]UI。 比方說，[!INCLUDE[vcprvc](../../includes/vcprvc-md.md)]範本初始化項目最後會變成.vcproj 檔案。  
   
-  下圖顯示主要的介面、 服務和 compose 的典型專案中實作的物件。 您可以使用應用程式協助程式，HierUtil7，若要建立的基礎物件和其他程式設計的重複使用。 如需有關 HierUtil7 應用程式協助程式的詳細資訊，請參閱[不在組建中：使用 HierUtil7 專案類別來實作專案類型 （c + +）](http://msdn.microsoft.com/a5c16a09-94a2-46ef-87b5-35b815e2f346)。  
+  下圖顯示主要的介面、 服務和 compose 的典型專案中實作的物件。 您可以使用應用程式協助程式，HierUtil7，若要建立的基礎物件和其他程式設計的重複使用。 如需有關 HierUtil7 應用程式協助程式的詳細資訊，請參閱[不在組建中：使用 HierUtil7 專案類別來實作專案類型 (C++)](https://msdn.microsoft.com/a5c16a09-94a2-46ef-87b5-35b815e2f346)。  
   
   ![Visual Studio 專案模型圖形](../../extensibility/internals/media/vsprojectmodel.gif "vsProjectModel")  
   專案模型  
@@ -45,7 +45,7 @@ ms.locfileid: "58930714"
   
 ## <a name="see-also"></a>另請參閱  
  [檢查清單：建立新的專案類型](../../extensibility/internals/checklist-creating-new-project-types.md)   
- [不在組建中：使用 HierUtil7 專案類別來實作專案類型 （c + +）](http://msdn.microsoft.com/a5c16a09-94a2-46ef-87b5-35b815e2f346)   
+ [不在組建中：使用 HierUtil7 專案類別來實作專案類型 (C++)](https://msdn.microsoft.com/a5c16a09-94a2-46ef-87b5-35b815e2f346)   
  [專案模型的核心元件](../../extensibility/internals/project-model-core-components.md)   
  [使用 Project Factory 建立專案執行個體](../../extensibility/internals/creating-project-instances-by-using-project-factories.md)   
  [如何：取得服務](../../extensibility/how-to-get-a-service.md)   

@@ -13,14 +13,14 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a94fbfd319489df0ac3bcbaf474c6a58cef66868
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 9baa358c3728c6cbedc5f8768b29ba7efe64b399
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63432380"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65703284"
 ---
-# <a name="how-to-create-a-workflow-activity-library-legacy"></a>HOW TO：建立工作流程活動程式庫 (舊版)
+# <a name="how-to-create-a-workflow-activity-library-legacy"></a>作法：建立工作流程活動程式庫 (舊版)
 依照下列步驟使用 [!INCLUDE[wfd1](../includes/wfd1-md.md)] 提供的舊版 [!INCLUDE[vs2010](../includes/vs2010-md.md)] 來建立工作流程活動程式庫專案。 當您需要以 [!INCLUDE[wfd2](../includes/wfd2-md.md)] 或 [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] 為目標時，請使用舊版 [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)]。  
   
 ### <a name="to-create-a-workflow-activity-library-project"></a>若要建立工作流程活動程式庫專案  
@@ -52,5 +52,5 @@ ms.locfileid: "63432380"
  [建立舊版工作流程專案](../workflow-designer/creating-legacy-workflow-projects.md)   
  [使用舊版活動設計工具](../workflow-designer/using-the-legacy-activity-designer.md)   
  [舊版工作流程活動](../workflow-designer/legacy-workflow-activities.md)   
- [開發工作流程活動](http://msdn.microsoft.com/19876dfc-dfa5-4d52-b1f5-1d087474cc52)   
- [Windows Workflow Foundation 活動](http://msdn.microsoft.com/192c4c1e-afb6-4f58-ab11-2b5bbbc2d2c0)
+ [開發工作流程活動](https://msdn.microsoft.com/19876dfc-dfa5-4d52-b1f5-1d087474cc52)   
+ [Windows Workflow Foundation 活動](https://msdn.microsoft.com/192c4c1e-afb6-4f58-ab11-2b5bbbc2d2c0)

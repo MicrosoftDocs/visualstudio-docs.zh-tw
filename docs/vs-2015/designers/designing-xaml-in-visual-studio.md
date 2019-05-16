@@ -9,17 +9,17 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: bca0b07922d1b0b0d1a218fcccfa51e68a64e7e8
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 437c6cc7af2b0337b362e14db19deb9584a3d412
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60114778"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65695511"
 ---
 # <a name="designing-xaml-in-visual-studio"></a>在 Visual Studio 中設計 XAML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Visual Studio 和 Blend for Visual Studio 都提供視覺化工具，用於為 XAML 型 Windows 桌面、Web、 [Windows Phone](http://msdn.microsoft.com/library/windowsphone/develop/jj683071.aspx)和 [Windows 市集](http://msdn.microsoft.com/library/windows/apps/jj129478.aspx) 應用程式建立更吸引人的使用者介面和豐富的媒體體驗。 兩者共用一組常用的設計和工具視窗以及 XAML 編輯器，但是 Blend for Visual Studio 提供更進階工作的其他設計工具，例如動畫和行為。
+Visual Studio 和 Blend for Visual Studio 都提供視覺化工具，用於為 XAML 型 Windows 桌面、Web、 [Windows Phone](https://msdn.microsoft.com/library/windowsphone/develop/jj683071.aspx)和 [Windows 市集](https://msdn.microsoft.com/library/windows/apps/jj129478.aspx) 應用程式建立更吸引人的使用者介面和豐富的媒體體驗。 兩者共用一組常用的設計和工具視窗以及 XAML 編輯器，但是 Blend for Visual Studio 提供更進階工作的其他設計工具，例如動畫和行為。
 
 ## <a name="choosing-the-right-tool"></a>選擇正確的工具
  您多半是取決於您的技能組合選擇設計工具。 如果您偏向於程式碼導向，可以在 Visual Studio 中撰寫 XAML 程式碼來完成更進階的設計工作。 如果您偏向於設計導向，Blend for Visual Studio 可讓您無須撰寫程式碼也能執行進階的工作。
@@ -41,11 +41,11 @@ Visual Studio 和 Blend for Visual Studio 都提供視覺化工具，用於為 X
 
      ![檔案重新載入體驗](../designers/media/blendfilereload.png "BlendFileReload")
 
-- **同步處理的配置和設定：** 自訂配置可讓您儲存並套用工具視窗配置的自訂項目。 當您使用相同的 Microsoft 帳戶登入時，Visual Studio 會跨電腦同步處理 Visual Studio 和 Blend for Visual Studio 的這些自訂項目和偏好設定。 請參閱 [Visual Studio 中的自訂開發設定](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)。
+- **同步處理的配置和設定：** 自訂配置可讓您儲存並套用工具視窗配置的自訂項目。 當您使用相同的 Microsoft 帳戶登入時，Visual Studio 會跨電腦同步處理 Visual Studio 和 Blend for Visual Studio 的這些自訂項目和偏好設定。 請參閱 [Visual Studio 中的自訂開發設定](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)。
 
 - **常見的 [方案總管]：**[方案總管] 會提供您專案及其檔案的組織化檢視，而且也已準備好存取與其建立關聯的命令。 使用 [方案總管]，使用大型企業專案更加輕鬆。 請參閱[解決方案和專案](../ide/solutions-and-projects-in-visual-studio.md)。
 
-- **Team Explorer：** 您可以使用 Team Explorer 管理您具有 GIT 或 TFS 存放庫的專案，有助於小組共同作業。 請參閱 [在 Team Explorer 中工作](http://msdn.microsoft.com/library/fd7a5cf7-7916-4fa0-b5e6-5a83cf377a02)。
+- **Team Explorer：** 您可以使用 Team Explorer 管理您具有 GIT 或 TFS 存放庫的專案，有助於小組共同作業。 請參閱 [在 Team Explorer 中工作](https://msdn.microsoft.com/library/fd7a5cf7-7916-4fa0-b5e6-5a83cf377a02)。
 
 - **NuGet：** 您可以管理在 Visual Studio 和 Blend for Visual Studio 中的 NuGet 套件。 NuGet 是 .NET Framework 的封裝管理員，簡化了從方案安裝與移除封裝。
 

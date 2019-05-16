@@ -10,12 +10,12 @@ ms.assetid: 800fc739-acd2-4242-84cb-1d83b4d82cf9
 caps.latest.revision: 38
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: f539fd0a20bf852b04b5a41aff829cdcf0e52cf3
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: d0aa4646bd9d3295aaa2a9da49cc4ed6f057d91a
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63445920"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65695171"
 ---
 # <a name="using-code-coverage-to-determine-how-much-code-is-being-tested"></a>使用程式碼涵蓋範圍來決定所測試的程式碼數量
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -248,7 +248,7 @@ ExcludeSourceFromCodeCoverage(Exclusion4, L"*\\unittest1.cpp");
  您可以撰寫 .runsettings 檔案進一步控制執行程式碼範圍分析時選取的組件和項目。 例如，您可以排除特定種類的組件，而不需要在其類別中加入屬性。 如需詳細資訊，請參閱[自訂程式碼涵蓋範圍分析](../test/customizing-code-coverage-analysis.md)。  
   
 ## <a name="analyzing-code-coverage-in-the-build-service"></a>在組建服務中分析程式碼涵蓋範圍  
- 當您檢查程式碼時，您的測試會在組建伺服器上與其他小組成員的所有其他測試一起執行。 (如果您尚未設定此功能，請參閱[在組建流程中執行測試](http://msdn.microsoft.com/library/d05743a1-c5cf-447e-bed9-bed3cb595e38)。)由於在組建服務分析程式碼覆蓋範圍可以針對整個專案的覆蓋範圍提供最新、最完整的分析結果，因此是非常有用的方法。 這項分析也包含自動化系統測試，和通常不會在開發電腦上執行的其他自動程式碼測試。  
+ 當您檢查程式碼時，您的測試會在組建伺服器上與其他小組成員的所有其他測試一起執行。 (如果您尚未設定此功能，請參閱[在組建流程中執行測試](https://msdn.microsoft.com/library/d05743a1-c5cf-447e-bed9-bed3cb595e38)。)由於在組建服務分析程式碼覆蓋範圍可以針對整個專案的覆蓋範圍提供最新、最完整的分析結果，因此是非常有用的方法。 這項分析也包含自動化系統測試，和通常不會在開發電腦上執行的其他自動程式碼測試。  
   
 1. 在 Team Explorer 中開啟 [組建]，然後新增或編輯組建定義。  
   
@@ -265,7 +265,7 @@ ExcludeSourceFromCodeCoverage(Exclusion4, L"*\\unittest1.cpp");
    組建執行後會將程式碼涵蓋範圍結果附加至測試回合，而且結果會出現在組建摘要。  
   
 ## <a name="analyzing-code-coverage-in-a-command-line"></a>在命令列中分析程式碼涵蓋範圍  
- 若要從命令列執行測試，請使用 vstest.console.exe。 程式碼涵蓋範圍是此公用程式的選項。 如需詳細資訊，請參閱 [VSTest.Console.exe 命令列選項](http://msdn.microsoft.com/library/52e1689d-b1a8-4589-bd98-99a55acd0a11)。  
+ 若要從命令列執行測試，請使用 vstest.console.exe。 程式碼涵蓋範圍是此公用程式的選項。 如需詳細資訊，請參閱 [VSTest.Console.exe 命令列選項](https://msdn.microsoft.com/library/52e1689d-b1a8-4589-bd98-99a55acd0a11)。  
   
 1. 啟動 Visual Studio Developer 命令提示字元：  
   

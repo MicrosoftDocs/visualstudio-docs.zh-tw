@@ -10,19 +10,19 @@ ms.assetid: 2cd52d1a-4c35-43ca-8a84-9c79dabd907f
 caps.latest.revision: 18
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 30ba0d48676438f19581e93a3af3c900569f5d5d
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 8588efe9ce460a34fc71f44bc0116b5977afe7aa
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60112218"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65705944"
 ---
 # <a name="sample-excel-add-in-for-coded-ui-testing"></a>自動程式化 UI 測試的範例 Excel 增益集
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 [!INCLUDE[ofprexcel](../includes/ofprexcel-md.md)] 的此範例增益集是特別設計來支援 Excel 工作表的自動程式碼 UI 測試，在 Visual Studio 企業版中記錄及執行 增益集是使用 Visual Studio Tools for Office 所建立的。  
   
- 如需如何建立 Excel 增益集的詳細資訊，請參閱[逐步解說：建立您的第一個 VSTO 增益集適用於 Excel](http://msdn.microsoft.com/library/a855e2be-3ecf-4112-a7f5-ec0f7fad3b5f)或搜尋 MSDN 中的 「 Excel 增益集 」。  
+ 如需如何建立 Excel 增益集的詳細資訊，請參閱[逐步解說：建立您的第一個 VSTO 增益集適用於 Excel](https://msdn.microsoft.com/library/a855e2be-3ecf-4112-a7f5-ec0f7fad3b5f)或搜尋 MSDN 中的 「 Excel 增益集 」。  
   
  雖然「Excel 增益集」不是適用於 Excel 的自動程式化 UI 測試延伸模組這份文件的主要主題，但是一些註解可能很有用。  
   
@@ -47,5 +47,5 @@ ms.locfileid: "60112218"
   
 ## <a name="see-also"></a>另請參閱  
  [擴充自動程式化 UI 測試和動作記錄以支援 Microsoft Excel](../test/extending-coded-ui-tests-and-action-recordings-to-support-microsoft-excel.md)   
- [逐步解說：建立 Excel 的第一個 VSTO 增益集](http://msdn.microsoft.com/library/a855e2be-3ecf-4112-a7f5-ec0f7fad3b5f)   
- [Office 和 SharePoint 開發](http://msdn.microsoft.com/library/2ddec047-263a-4901-a54c-a15fc8472329)
+ [逐步解說：建立 Excel 的第一個 VSTO 增益集](https://msdn.microsoft.com/library/a855e2be-3ecf-4112-a7f5-ec0f7fad3b5f)   
+ [Office 和 SharePoint 開發](https://msdn.microsoft.com/library/2ddec047-263a-4901-a54c-a15fc8472329)

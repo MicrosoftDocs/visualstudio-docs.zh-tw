@@ -1,5 +1,5 @@
 ---
-title: HOW TO：使用 [呼叫堆疊] 視窗 |Microsoft Docs
+title: 作法：使用 [呼叫堆疊] 視窗 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -29,14 +29,14 @@ caps.latest.revision: 45
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 65dafa09035e937e9ee48005c4f29c441d983c37
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 84c0bfead1633da13b4284cad04ace674045b057
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63430291"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65697479"
 ---
-# <a name="how-to-use-the-call-stack-window"></a>HOW TO：使用 [呼叫堆疊] 視窗
+# <a name="how-to-use-the-call-stack-window"></a>作法：使用 [呼叫堆疊] 視窗
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 您可以使用 [呼叫堆疊] 視窗來檢視目前堆疊上的函式或程序呼叫。  
@@ -58,7 +58,7 @@ ms.locfileid: "63430291"
  您可以使用捷徑功能表選擇是否要檢視執行緒之間的呼叫。  
   
 > [!NOTE]
-> 根據目前使用的設定與版本，您所看到的對話方塊與功能表命令可能會與 [說明] 中所描述的不同。 若要變更設定，請選取 [工具] 功能表上的 [匯入和匯出設定]。 如需詳細資訊，請參閱 [在 Visual Studio 中自訂開發設定](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)  
+> 根據目前使用的設定與版本，您所看到的對話方塊與功能表命令可能會與 [說明] 中所描述的不同。 若要變更設定，請選取 [工具] 功能表上的 [匯入和匯出設定]。 如需詳細資訊，請參閱 [在 Visual Studio 中自訂開發設定](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)  
   
 ### <a name="to-display-the-call-stack-window-in-break-mode-or-in-run-mode"></a>在中斷模式或執行模式中顯示呼叫堆疊視窗  
   
@@ -139,7 +139,7 @@ ms.locfileid: "63430291"
   
 ## <a name="see-also"></a>另請參閱  
  [混合程式碼和遺失的資訊，在 [呼叫堆疊] 視窗](../debugger/mixed-code-and-missing-information-in-the-call-stack-window.md)   
- [如何：變更 Windows 偵錯工具的數字格式](http://msdn.microsoft.com/library/cd593847-a625-411d-a430-b798346ef18f)   
+ [如何：變更 Windows 偵錯工具的數字格式](https://msdn.microsoft.com/library/cd593847-a625-411d-a430-b798346ef18f)   
  [在偵錯工具中檢視資料](../debugger/viewing-data-in-the-debugger.md)   
  [指定符號 (.pdb) 和來源檔案](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)   
  [使用中斷點](../debugger/using-breakpoints.md)

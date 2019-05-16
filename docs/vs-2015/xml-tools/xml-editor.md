@@ -9,12 +9,12 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 5dd1834593be7638a56eb31c70677ea9be146b8b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: cadd0bded176a44d3eb977382778dd20b68a95a2
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60112171"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65703161"
 ---
 # <a name="xml-editor"></a>XML 編輯器
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -74,10 +74,10 @@ XML 編輯器以 [!INCLUDE[msCoName](../includes/msconame-md.md)] Visual Studio 
  說明 XML 編輯器使用者介面元件。  
   
 ## <a name="related-sections"></a>相關章節  
- [編輯文字、 程式碼和標記](http://msdn.microsoft.com/0d9c00d7-5df4-48a3-b185-2a265f055439)  
+ [編輯文字、 程式碼和標記](https://msdn.microsoft.com/0d9c00d7-5df4-48a3-b185-2a265f055439)  
  提供文字編輯器的相關資訊。  
   
- [XML 標準參考](http://msdn.microsoft.com/79c78508-c9d0-423a-a00f-672e855de401)  
+ [XML 標準參考](https://msdn.microsoft.com/79c78508-c9d0-423a-a00f-672e855de401)  
  提供 XML 技術的資訊，包括 XML、文件類型定義 (DTD)、XML 結構描述定義語言 (XSD) 和 XSLT。  
   
 ## <a name="see-also"></a>另請參閱  

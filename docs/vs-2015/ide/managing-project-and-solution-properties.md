@@ -9,12 +9,12 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: dd20552a72775723c4ad006708ce1fb7f18d4181
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: dc27bd0cb93ab142d2a82758c72b27d14032d04e
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63424623"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65674970"
 ---
 # <a name="managing-project-and-solution-properties"></a>管理專案和方案屬性
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,7 +45,7 @@ ms.locfileid: "63424623"
   
  ![Visual C&#43;&#43; 專案屬性](../ide/media/vs2015-projprops-cpp.png "VS2015_ProjProps_cpp")  
   
- 如需 C++ 專案屬性的資訊，請參閱[使用專案屬性](http://msdn.microsoft.com/library/9b0d6f8b-7d4e-4e61-aa75-7d14944816cd)。 如需 JavaScript 屬性的詳細資訊，請參閱 [JavaScript、屬性頁](../ide/reference/property-pages-javascript.md)。  
+ 如需 C++ 專案屬性的資訊，請參閱[使用專案屬性](https://msdn.microsoft.com/library/9b0d6f8b-7d4e-4e61-aa75-7d14944816cd)。 如需 JavaScript 屬性的詳細資訊，請參閱 [JavaScript、屬性頁](../ide/reference/property-pages-javascript.md)。  
   
 ## <a name="solution-properties"></a>方案屬性  
  若要存取方案上的屬性，請以滑鼠右鍵按一下方案總管中的方案節點，然後選擇 [屬性]。 在對話方塊中，您可以設定偵錯或發行組建的專案組態、在按 F5 時選擇哪些專案應該要當成啟始專案，以及設定程式碼分析選項。  

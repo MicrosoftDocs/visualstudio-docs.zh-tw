@@ -18,12 +18,12 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 539b27c914555dad88442fd4d65e1bf8416dae3c
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: e4b039f514c7d43e768becca8532a05fb14785b3
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63422871"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65680368"
 ---
 # <a name="how-to-create-and-remove-project-dependencies"></a>如何：建立和移除專案相依性
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -66,4 +66,4 @@ ms.locfileid: "63422871"
  [在 Visual Studio 中建置和清除專案與方案](../ide/building-and-cleaning-projects-and-solutions-in-visual-studio.md)   
  [編譯和建置](../ide/compiling-and-building-in-visual-studio.md)   
  [了解組建組態](../ide/understanding-build-configurations.md)   
- [NIB 如何：修改專案屬性和組態設定](http://msdn.microsoft.com/e7184bc5-2f2b-4b4f-aa9a-3ecfcbc48b67)
+ [NIB 如何：修改專案屬性和組態設定](https://msdn.microsoft.com/e7184bc5-2f2b-4b4f-aa9a-3ecfcbc48b67)

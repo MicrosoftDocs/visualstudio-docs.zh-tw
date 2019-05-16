@@ -12,12 +12,12 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: f0967f50c9dce325ff1595fec9d50138aa0a8d74
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 7969ca0a5900ae08d1aac6634f961d45bbfac564
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63438131"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65674159"
 ---
 # <a name="walkthrough-creating-a-multiple-computer-build-environment"></a>逐步解說：建立多電腦建置環境
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -197,7 +197,7 @@ ms.locfileid: "63438131"
   
    - \Microsoft.VC110.OPENMP\vcomp110.dll  
   
-5. 只將下列檔案從 \Debug_NonRedist\x86\ 或 \Debug_NonRedist\x64\ 資料夾複製到組建電腦，如[準備測試電腦以執行偵錯可執行檔](http://msdn.microsoft.com/library/f0400989-cc2e-4dce-9788-6bdbe91c6f5a)中所述。 不會複製其他任何檔案。  
+5. 只將下列檔案從 \Debug_NonRedist\x86\ 或 \Debug_NonRedist\x64\ 資料夾複製到組建電腦，如[準備測試電腦以執行偵錯可執行檔](https://msdn.microsoft.com/library/f0400989-cc2e-4dce-9788-6bdbe91c6f5a)中所述。 不會複製其他任何檔案。  
   
    - \Microsoft.VC110.DebugCRT\msvcp110d.dll  
   
@@ -424,5 +424,5 @@ ms.locfileid: "63438131"
          如需原生 64 位元建置，請指向 64 位元 MSBuild。  
   
 ## <a name="see-also"></a>請參閱  
- [準備測試電腦以執行偵錯可執行檔](http://msdn.microsoft.com/library/f0400989-cc2e-4dce-9788-6bdbe91c6f5a)   
+ [準備測試電腦以執行偵錯可執行檔](https://msdn.microsoft.com/library/f0400989-cc2e-4dce-9788-6bdbe91c6f5a)   
  [命令列參考](../msbuild/msbuild-command-line-reference.md)

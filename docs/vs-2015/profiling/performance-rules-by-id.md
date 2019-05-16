@@ -9,17 +9,17 @@ caps.latest.revision: 14
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 021927c9ff109e74956507b993c1c7192d109852
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 3dd28cad3036aaca1445cba7b4531580a2a44812
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54756487"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65691690"
 ---
 # <a name="performance-rules-by-id"></a>依 ID 排序的效能規則
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-警告|說明|  
+警告|描述|  
 |-------------|-----------------|  
 |[DA0001：使用 StringBuilder 來進行串連](../profiling/da0001-use-stringbuilder-for-concatenations.md)|對 System.String.Concat 的呼叫大部分是分析資料。 請考慮使用 <xref:System.Text.StringBuilder> 類別，從多個區段建構字串。|  
 |[DA0002：遺漏 VSPerfCorProf.dll](../profiling/da0002-vsperfcorprof-dll-is-missing.md)|分析工具在分析回合期間找不到 VSPerfCorProf.dll。 如果使用收集分析工具資料的命令列工具，而未使用 VSPerfCLREnv.cmd 工具來初始化所需的環境變數，則會發生此警告。|  
@@ -29,7 +29,7 @@ ms.locfileid: "54756487"
 |[DA0006：覆寫實值型別的 Equals()。](../profiling/da0006-override-equals-parens-for-value-types.md)|Equals 方法呼叫或公用實值型別的相等運算子大部分是分析資料。 請考慮實作更有效率的方法。|  
 |[DA0007：避免使用例外狀況進行控制流程](../profiling/da0007-avoid-using-exceptions-for-control-flow.md)|在分析資料中呼叫高比率的 .NET Framework 例外處理常式。 請考慮使用其他控制流程邏輯，以減少擲回的例外狀況數量。|  
 |[DA0008：收集的樣本少](../profiling/da0008-few-samples-collected.md)|在分析回合中只會收集到少量樣本。 請考慮執行較長時間或較快速的取樣率，以取得較大量的結果。|  
-|[DA0009：高 JIT 時間百分比](http://msdn.microsoft.com/b60c1767-515c-41d9-81c2-c70d0b7024fd)|應用程式執行時間的大量百分比花在 Just In Time (JIT) 編譯器中。|  
+|[DA0009：高 JIT 時間百分比](https://msdn.microsoft.com/b60c1767-515c-41d9-81c2-c70d0b7024fd)|應用程式執行時間的大量百分比花在 Just In Time (JIT) 編譯器中。|  
 |[DA0010：GetHashCode 高度耗費資源](../profiling/da0010-expensive-gethashcode.md)|類型的 GetHashCode 方法呼叫大部分是分析資料，或方法會配置記憶體。|  
 |[DA0011：CompareTo 高度耗費資源](../profiling/da0011-expensive-compareto.md)|類型的 CompareTo 方法高度耗費資源，或配置記憶體。|  
 |[DA0012：大量的反射](../profiling/da0012-significant-amount-of-reflection.md)|對 System.Reflection 方法 (例如 InvokeMember 和 GetMember) 或 Type 方法 (例如 MemberInvoke) 的呼叫大部分是分析資料。 可以的話，請考慮將這些方法取代為相依組件方法的早期繫結。|  

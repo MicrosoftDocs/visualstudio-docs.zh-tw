@@ -12,12 +12,12 @@ ms.assetid: a7a32ad4-3a0a-4eb8-a6ac-491c42885639
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 2db026367e43c1092cf9744817449ce51556a4a6
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: f4d6c0e163b751f1873fdb941e85c273dcc4fde5
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63436318"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65691196"
 ---
 # <a name="exposing-types-to-visual-designers"></a>將類型公開至視覺化設計工具
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -46,7 +46,7 @@ ms.locfileid: "63436318"
      Temporary PE 編譯時，只提供給編譯器的原始程式檔就會是自訂工具輸出。 因此，使用暫存的 PE 的自訂工具必須產生可以獨立於其他檔案專案中編譯的輸出檔。  
   
 ## <a name="see-also"></a>另請參閱  
- [BuildManager 物件簡介](http://msdn.microsoft.com/50080ec2-c1c9-412c-98ef-18d7f895e7fa)   
+ [BuildManager 物件簡介](https://msdn.microsoft.com/50080ec2-c1c9-412c-98ef-18d7f895e7fa)   
  [實作單一檔案產生器](../../extensibility/internals/implementing-single-file-generators.md)   
  [判斷專案的預設命名空間](../../misc/determining-the-default-namespace-of-a-project.md)   
  [註冊單一檔案產生器](../../extensibility/internals/registering-single-file-generators.md)

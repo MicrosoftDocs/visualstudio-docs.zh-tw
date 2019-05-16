@@ -12,12 +12,12 @@ ms.assetid: c4575ac7-82da-4af8-a375-ea756a101fbf
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 6175b89db774598463d1f8ffaa03057ecb50a69b
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 9a309779850dd33b77b426beb5627f61c40c2c4f
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63441191"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65675234"
 ---
 # <a name="uninstalling-a-vspackage-with-windows-installer"></a>使用 Windows Installer 解除安裝 VSPackage
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -41,5 +41,5 @@ ms.locfileid: "63441191"
 > `Installed` 是 Windows 安裝程式設定在偵測到 VSPackage，已經安裝在系統上的屬性。  
   
 ## <a name="see-also"></a>另請參閱  
- [Windows 安裝程式](http://msdn.microsoft.com/187d8965-c79d-4ecb-8689-10930fa8b3b5)   
+ [Windows 安裝程式](https://msdn.microsoft.com/187d8965-c79d-4ecb-8689-10930fa8b3b5)   
  [偵測系統需求](../../extensibility/internals/detecting-system-requirements.md)

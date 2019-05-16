@@ -13,12 +13,12 @@ ms.assetid: 78272ddc-9718-4c65-a94e-a44a2e8d54f4
 caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: e8ed14761b77e3469b2c19d0e9fd2ff3732bb72d
-ms.sourcegitcommit: 447f2174bdecdd471d8a8e11c19554977db620a0
+ms.openlocfilehash: 22e4d4cdf1e5ca610dbdb067f8195fb730139c3d
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/28/2019
-ms.locfileid: "59000464"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65690691"
 ---
 # <a name="vstextview-object"></a>VSTextView 物件
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,6 +40,6 @@ ms.locfileid: "59000464"
 |<xref:Microsoft.VisualStudio.TextManager.Interop.IVsThreadSafeTextView>|從不同的執行緒中執行檢視上的作業。|  
   
 ## <a name="see-also"></a>另請參閱  
- [圖形編輯](http://msdn.microsoft.com/f08872bd-fd9c-4e36-8cf2-a2a2622ef986)   
+ [圖形編輯](https://msdn.microsoft.com/f08872bd-fd9c-4e36-8cf2-a2a2622ef986)   
  [VSTextBuffer 物件](../extensibility/vstextbuffer-object.md)   
  [使用舊版 API 存取文字檢視](../extensibility/accessing-thetext-view-by-using-the-legacy-api.md)

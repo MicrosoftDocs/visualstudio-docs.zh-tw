@@ -9,12 +9,12 @@ caps.latest.revision: 32
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 671b9f9f851ee1c326f9d8cc2ea50d1f542ec00f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f43187faf1dd53cc9daf45da1191e1e944a43c8a
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62540275"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65696298"
 ---
 # <a name="productivity-tips-for-visual-studio"></a>使用 Visual Studio 提高產能的秘訣
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -124,7 +124,7 @@ ms.locfileid: "62540275"
 ## <a name="BKMK_Debugging"></a> 偵錯程式碼
  偵錯可能會耗用大量的時間，但是下列的技巧可協助您加快處理它們。
 
-- **在不同瀏覽器中測試相同頁面、應用程式或網站**。 當您偵錯程式碼時，可以輕鬆地切換包括 [Page Inspector (Visual Studio)](http://msdn.microsoft.com/library/65880969-1ad2-47be-85b9-bb12c81bf209) 在內的已安裝網頁瀏覽器，而不需要開啟 [瀏覽方式] 對話方塊。 您可以使用 [偵錯目標] 清單 (位於 [開始偵錯] 按鈕旁的 [標準] 工具列)，快速確認您偵錯或檢視頁面時所使用的瀏覽器。
+- **在不同瀏覽器中測試相同頁面、應用程式或網站**。 當您偵錯程式碼時，可以輕鬆地切換包括 [Page Inspector (Visual Studio)](https://msdn.microsoft.com/library/65880969-1ad2-47be-85b9-bb12c81bf209) 在內的已安裝網頁瀏覽器，而不需要開啟 [瀏覽方式] 對話方塊。 您可以使用 [偵錯目標] 清單 (位於 [開始偵錯] 按鈕旁的 [標準] 工具列)，快速確認您偵錯或檢視頁面時所使用的瀏覽器。
 
      ![選取網頁瀏覽器偵錯選項](../ide/media/webbrowserdropdowntoolbar.png "WebBrowserDropDownToolbar")
 

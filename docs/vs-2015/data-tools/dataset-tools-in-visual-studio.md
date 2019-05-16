@@ -53,12 +53,12 @@ caps.latest.revision: 53
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 0dc80bd821a85c475adba7fbbc264ab6b5a76a9b
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: df415b9ad56e8e9b740da57709d039737f1bd24a
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63431131"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65697910"
 ---
 # <a name="dataset-tools-in-visual-studio"></a>Visual Studio 中的資料集工具
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -68,7 +68,7 @@ ms.locfileid: "63431131"
 
  基本上是小型資料庫的記憶體中物件的資料集物件。 它包含在其中，您可以儲存並修改一或多個資料庫中的資料，而不需要維護的開啟連接的 DataTable、 DataColumn 和 DataRow 物件。 資料集會維護其資料，變更的相關資訊，因此更新可以追蹤與您的應用程式變得重新連線時，傳送回資料庫。
 
- .NET Framework 類別庫中的 System.Data 命名空間中定義資料集和相關的類別。 您可以建立及修改動態程式碼中的資料集。 如需如何執行該動作的詳細資訊，請參閱 ADO.NET。 在本節中的文件會示範如何使用 Visual Studio 設計工具使用資料集。 若要知道一件事： 設計工具來進行的資料集使用 TableAdapter 物件來與資料庫互動而以程式設計方式進行的資料集使用資料配接器物件。 如需以程式設計方式建立資料集的資訊，請參閱[Dataadapter 和 Datareader](http://msdn.microsoft.com/library/cc952ca2-ec19-46ab-9189-15174b52cb74)。
+ .NET Framework 類別庫中的 System.Data 命名空間中定義資料集和相關的類別。 您可以建立及修改動態程式碼中的資料集。 如需如何執行該動作的詳細資訊，請參閱 ADO.NET。 在本節中的文件會示範如何使用 Visual Studio 設計工具使用資料集。 若要知道一件事： 設計工具來進行的資料集使用 TableAdapter 物件來與資料庫互動而以程式設計方式進行的資料集使用資料配接器物件。 如需以程式設計方式建立資料集的資訊，請參閱[Dataadapter 和 Datareader](https://msdn.microsoft.com/library/cc952ca2-ec19-46ab-9189-15174b52cb74)。
 
  如果您的應用程式必須只從資料庫讀取資料，並不會執行更新、 新增，或刪除，您通常可以在使用 DataReader 物件來擷取資料並放入一個泛型 List 物件或另一個集合物件，取得更佳的效能。 如果您要顯示的資料，您可以資料繫結的使用者介面的集合。
 
@@ -89,7 +89,7 @@ ms.locfileid: "63431131"
 
     - [將資料儲存回資料庫](../data-tools/save-data-back-to-the-database.md)
 
-- 查詢，並在資料集中搜尋的資料。 如需詳細資訊，請參閱 <<c0> [ 查詢資料集](../data-tools/query-datasets.md)。 [!INCLUDE[linq_dataset](../includes/linq-dataset-md.md)] 可讓[LINQ (Language-Integrated Query)](http://msdn.microsoft.com/library/a73c4aec-5d15-4e98-b962-1274021ea93d)中的資料<xref:System.Data.DataSet>物件。 如需詳細資訊，請參閱 [LINQ to DataSet](http://msdn.microsoft.com/library/743e3755-3ecb-45a2-8d9b-9ed41f0dcf17)。
+- 查詢，並在資料集中搜尋的資料。 如需詳細資訊，請參閱 <<c0> [ 查詢資料集](../data-tools/query-datasets.md)。 [!INCLUDE[linq_dataset](../includes/linq-dataset-md.md)] 可讓[LINQ (Language-Integrated Query)](https://msdn.microsoft.com/library/a73c4aec-5d15-4e98-b962-1274021ea93d)中的資料<xref:System.Data.DataSet>物件。 如需詳細資訊，請參閱 [LINQ to DataSet](https://msdn.microsoft.com/library/743e3755-3ecb-45a2-8d9b-9ed41f0dcf17)。
 
 - 使用**Zdroje dat**使用者介面控制項繫結至資料集或其個別的資料行，並指定哪些資料行是使用者可編輯 視窗。 如需詳細資訊，請參閱 <<c0> [ 控制項繫結至 Visual Studio 中的資料](../data-tools/bind-controls-to-data-in-visual-studio.md)。
 

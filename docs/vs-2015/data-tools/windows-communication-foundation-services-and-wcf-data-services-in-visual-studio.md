@@ -33,17 +33,17 @@ caps.latest.revision: 29
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 55ef0a3528afca626c0a1cbf5c10735c9e83fcb4
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 68f2b400cc92673131dea2fc281b830df86019f7
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63443871"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65704376"
 ---
 # <a name="windows-communication-foundation-services-and-wcf-data-services-in-visual-studio"></a>Visual Studio 中的 Windows Communication Foundation 服務和 WCF 資料服務
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Visual Studio 提供使用與 Windows Communication Foundation (WCF) 工具和[!INCLUDE[ssAstoria](../includes/ssastoria-md.md)]，Microsoft 技術，用於建立分散式應用程式。 本主題提供簡介服務[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]觀點來看。 如需完整的文件，請參閱[WCF Data Services 4.5](http://msdn.microsoft.com/library/73d2bec3-7c92-4110-b905-11bb0462357a)。
+Visual Studio 提供使用與 Windows Communication Foundation (WCF) 工具和[!INCLUDE[ssAstoria](../includes/ssastoria-md.md)]，Microsoft 技術，用於建立分散式應用程式。 本主題提供簡介服務[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]觀點來看。 如需完整的文件，請參閱[WCF Data Services 4.5](https://msdn.microsoft.com/library/73d2bec3-7c92-4110-b905-11bb0462357a)。
 
 ## <a name="what-is-wcf"></a>WCF 是什麼？
  [!INCLUDE[vsindigo](../includes/vsindigo-md.md)] 是用來建立安全、 可靠、 交易，且可互通的分散式應用程式的統一的架構。 它會取代較舊的處理序間通訊技術，例如 ASMX Web 服務、.NET 遠端處理、 Enterprise Services (DCOM) 及 MSMQ。 WCF 結合了統一的程式設計模型下的所有這些技術的功能。 這可簡化開發分散式應用程式的體驗。
@@ -92,21 +92,21 @@ Visual Studio 提供使用與 Windows Communication Foundation (WCF) 工具和[!
 
  當您選取範本時，就會將檔案新增的服務合約、 服務實作中，和服務組態。 已加入所有必要的屬性，建立服務的簡單"Hello World"型別，您不需要撰寫任何程式碼。 您當然會想要加入程式碼來提供函式和方法，為您實際的服務，但範本提供基本的基礎。
 
- 若要深入了解 WCF 範本，請參閱[WCF Visual Studio 範本](http://msdn.microsoft.com/library/6a608575-3535-4190-89da-911e24c8374f)。
+ 若要深入了解 WCF 範本，請參閱[WCF Visual Studio 範本](https://msdn.microsoft.com/library/6a608575-3535-4190-89da-911e24c8374f)。
 
 #### <a name="wcf-service-host"></a>WCF 服務主機
  當您啟動[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]（藉由按下 F5） 為 WCF 服務專案，WCF 服務主機工具會自動啟動來裝載服務在本機偵錯工具。 WCF 服務主機列舉中的 WCF 服務專案的服務、 載入專案的組態，並具現化每個找到的服務主機。
 
  藉由使用 WCF 服務主機，您可以測試 WCF 服務，而不需要撰寫額外程式碼或認可特定主機在開發期間。
 
- 若要深入了解 WCF 服務主機，請參閱[WCF 服務主機 (WcfSvcHost.exe)](http://msdn.microsoft.com/library/8643a63d-a357-4c39-bd6c-cdfdf71e370e)。
+ 若要深入了解 WCF 服務主機，請參閱[WCF 服務主機 (WcfSvcHost.exe)](https://msdn.microsoft.com/library/8643a63d-a357-4c39-bd6c-cdfdf71e370e)。
 
 #### <a name="wcf-test-client"></a>WCF 測試用戶端
  WCF 測試用戶端工具可讓您輸入測試參數時，提交輸入至 WCF 服務，並檢視服務傳回的回應。 它提供便利的服務測試經驗，當您將其與 WCF 服務主機。 此工具可在 \Common7\IDE 資料夾中，Visual Studio 2015 安裝在磁碟機 c： 已正式推出：**C:\Program Files (x86)\Microsoft Visual Studio 14.0\Common7\IDE\\**.
 
  當您按 F5 以偵錯 WCF 服務專案時，WCF 測試用戶端就會開啟，並顯示組態檔中所定義的服務端點的清單。 您可以測試參數並啟動服務，並重複此程序，以持續測試及驗證您的服務。
 
- 若要深入了解 WCF 測試用戶端，請參閱[WCF 測試用戶端 (WcfTestClient.exe)](http://msdn.microsoft.com/library/d4302855-677f-4640-aa90-c5d785d72fb7)。
+ 若要深入了解 WCF 測試用戶端，請參閱[WCF 測試用戶端 (WcfTestClient.exe)](https://msdn.microsoft.com/library/d4302855-677f-4640-aa90-c5d785d72fb7)。
 
 ### <a name="accessing-wcf-services-in-visual-studio"></a>存取 Visual Studio 中的 WCF 服務
  [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 可簡化建立 WCF 用戶端，會自動產生 proxy 和您使用新增的服務端點的工作**加入服務參考** 對話方塊。 所有的必要的組態資訊會新增至 app.config 檔案中。 大部分的情況下，您必須執行的所有已具現化服務才能使用它。
@@ -115,7 +115,7 @@ Visual Studio 提供使用與 Windows Communication Foundation (WCF) 工具和[!
 
  **設定服務參考**對話方塊可讓您自訂服務的組態。 您可以變更服務的位址、 指定存取層級、 非同步行為，以及訊息合約型別，以及設定型別重複使用。
 
-## <a name="how-to-select-a-service-endpoint"></a>HOW TO：選取服務端點
+## <a name="how-to-select-a-service-endpoint"></a>作法：選取服務端點
  某些 Windows Communication Foundation (WCF) 服務會公開透過該用戶端可能會與服務通訊的多個端點。 例如，服務可能會公開一個端點使用 HTTP 繫結和使用者名稱 / 密碼安全性和使用 FTP 和 Windows 驗證的第二個端點。 可能會存取服務的外部防火牆的應用程式所用的第一個端點，而第二個可能會使用內部網路上。
 
  在此情況下，您可以指定`endpointConfigurationName`做為服務參考的建構函式的參數。
@@ -176,7 +176,7 @@ Visual Studio 提供使用與 Windows Communication Foundation (WCF) 工具和[!
 
 3. 在 **設定服務參考**對話方塊中，選取**產生非同步作業**核取方塊。
 
-## <a name="how-to-bind-data-returned-by-a-service"></a>HOW TO：將服務所傳回的資料繫結
+## <a name="how-to-bind-data-returned-by-a-service"></a>作法：將服務所傳回的資料繫結
  您可以繫結一樣，您可以將任何其他資料來源繫結至控制項，Windows Communication Foundation (WCF) 服務所傳回的控制項的資料。 當您新增 WCF 服務的參考，如果服務包含傳回資料的複合類型時，它們會自動加入**Zdroje dat**視窗。
 
 #### <a name="to-bind-a-control-to-single-data-field-returned-by-a-wcf-service"></a>將控制項繫結至 WCF 服務所傳回的單一資料欄位
@@ -207,7 +207,7 @@ Visual Studio 提供使用與 Windows Communication Foundation (WCF) 工具和[!
 
 5. 將節點拖曳至表單。 會將控制項加入至表單，並搭配<xref:System.Windows.Forms.BindingSource>元件和<xref:System.Windows.Forms.BindingNavigator>元件。
 
-## <a name="how-to-configure-a-service-to-reuse-existing-types"></a>HOW TO：設定服務，以重複使用現有的類型
+## <a name="how-to-configure-a-service-to-reuse-existing-types"></a>作法：設定服務，以重複使用現有的類型
  當服務參考加入至專案時，在服務中定義的任何型別會產生在本機專案中。 在許多情況下，這會建立重複的型別時服務會使用常見[!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]類型共用的文件庫中已定義。
 
  若要避免這個問題，預設為共用參考的組件中的型別。 如果您想要停用共用的一或多個組件的型別，則可以在**設定服務參考** 對話方塊。
@@ -236,12 +236,12 @@ Visual Studio 提供使用與 Windows Communication Foundation (WCF) 工具和[!
 |-----------|-----------------|
 |[逐步解說：在 Windows Forms 中建立簡單的 WCF 服務](../data-tools/walkthrough-creating-a-simple-wcf-service-in-windows-forms.md)|提供建立和使用中的 WCF 服務的逐步示範[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]。|
 |[逐步解說：使用 WPF 和 Entity Framework 建立 WCF 資料服務](../data-tools/walkthrough-creating-a-wcf-data-service-with-wpf-and-entity-framework.md)|提供建立和使用方式的逐步示範[!INCLUDE[ssAstoria](../includes/ssastoria-md.md)]在[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]。|
-|[使用 WCF 開發工具](http://msdn.microsoft.com/library/054adb87-c244-4d5a-83d1-0b2b44bd454b)|討論如何建立和測試中的 WCF 服務[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]。|
-|[如何：新增、 更新或移除服務參考](http://msdn.microsoft.com/library/cacc14bd-4455-4a44-be78-d2ac16113dd9)|描述如何新增、 更新或移除專案中的 WCF 服務。|
+|[使用 WCF 開發工具](https://msdn.microsoft.com/library/054adb87-c244-4d5a-83d1-0b2b44bd454b)|討論如何建立和測試中的 WCF 服務[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]。|
+|[如何：新增、 更新或移除服務參考](https://msdn.microsoft.com/library/cacc14bd-4455-4a44-be78-d2ac16113dd9)|描述如何新增、 更新或移除專案中的 WCF 服務。|
 |[如何：新增、更新或移除 WCF 資料服務參考](../data-tools/how-to-add-update-or-remove-a-wcf-data-service-reference.md)|討論如何參考，並使用[!INCLUDE[ssAstoria](../includes/ssastoria-md.md)]在[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]。|
 |[服務參考的疑難排解](../data-tools/troubleshooting-service-references.md)|提供服務的參考，以及如何避免它們可能會發生的一些常見錯誤。|
 |[偵錯 WCF 服務](../debugger/debugging-wcf-services.md)|描述常見的偵錯問題和偵錯 WCF 服務時，可能會遇到的技術。|
-|[Windows Communication Foundation 的驗證服務概觀](http://msdn.microsoft.com/library/6e121a28-89e8-4974-88a8-70aaa6a7d52b)|描述如何使用 WCF 來提供網站的角色服務。|
+|[Windows Communication Foundation 的驗證服務概觀](https://msdn.microsoft.com/library/6e121a28-89e8-4974-88a8-70aaa6a7d52b)|描述如何使用 WCF 來提供網站的角色服務。|
 |[逐步解說：建立多層式架構 (N-Tier) 資料應用程式](../data-tools/walkthrough-creating-an-n-tier-data-application.md)|提供用於建立具類型資料集以及將 TableAdapter 和資料集程式碼分成多個專案的逐步指示。|
 |[設定服務參考對話方塊](../data-tools/configure-service-reference-dialog-box.md)|描述使用者介面項目**設定服務參考** 對話方塊。|
 

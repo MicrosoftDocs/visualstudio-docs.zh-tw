@@ -15,12 +15,12 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 6b8bafb021e2a73b0a5bed7feba21fbb38fff8ce
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: f6a17bf57f00923cfd31bd477f211ba66169672a
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58943240"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65687359"
 ---
 # <a name="ca2108-review-declarative-security-on-value-types"></a>CA2108:必須檢閱實值類型上的宣告式安全性
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ ms.locfileid: "58943240"
 |中斷變更|非中斷|
 
 ## <a name="cause"></a>原因
- 公用或受保護的實值型別會受到[資料與模型化](http://msdn.microsoft.com/library/8c37635d-e2c1-4b64-a258-61d9e87405e6)或是[連結要求](http://msdn.microsoft.com/library/a33fd5f9-2de9-4653-a4f0-d9df25082c4d)。
+ 公用或受保護的實值型別會受到[資料與模型化](https://msdn.microsoft.com/library/8c37635d-e2c1-4b64-a258-61d9e87405e6)或是[連結要求](https://msdn.microsoft.com/library/a33fd5f9-2de9-4653-a4f0-d9df25082c4d)。
 
 ## <a name="rule-description"></a>規則描述
  配置及其他建構函式執行之前，其預設建構函式來初始化實值型別。 如果實值型別會受到 Demand 或 LinkDemand 的比較，而且呼叫端沒有滿足安全性檢查，而任何建構函式以外的權限預設值將會失敗，並將擲回安全性例外狀況。 實值型別不會取消配置;它會處於其預設建構函式所設定的狀態。 請勿假設呼叫端傳遞實值型別的執行個體具有建立或存取執行個體的權限。
@@ -60,4 +60,4 @@ ms.locfileid: "58943240"
 **新值 SecuredTypeStructure 100 100**
 **新值 SecuredTypeStructure 200 200**
 ## <a name="see-also"></a>另請參閱
- [連結要求](http://msdn.microsoft.com/library/a33fd5f9-2de9-4653-a4f0-d9df25082c4d)[資料與模型化](http://msdn.microsoft.com/library/8c37635d-e2c1-4b64-a258-61d9e87405e6)
+ [連結要求](https://msdn.microsoft.com/library/a33fd5f9-2de9-4653-a4f0-d9df25082c4d)[資料與模型化](https://msdn.microsoft.com/library/8c37635d-e2c1-4b64-a258-61d9e87405e6)

@@ -19,12 +19,12 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: d794e135c38858522c19c6842573445ab9fb669f
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 132aa0f37cc63e6afe2eff61a6d0f6dec5b200b5
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63425025"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65692454"
 ---
 # <a name="save-data-to-a-database-multiple-tables"></a>將資料儲存至資料庫 (多個資料表)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,15 +34,15 @@ ms.locfileid: "63425025"
  您可以透過呼叫 TableAdapter 的 `Update` 方法，將應用程式的資料存回資料庫。 當您將資料表從**Zdroje dat**視窗拖曳到表單時，必須先儲存資料的程式碼會自動加入。加入至表單的任何其他資料表都需要手動加入此程式碼。 此逐步解說會示範如何加入程式碼，以儲存多個資料表的更新。  
   
 > [!NOTE]
-> 對話方塊和功能表命令，您會看到，可能會有所不同說明中所述取決於您使用的設定或您使用的版本不同。 若要變更設定，請從 [ **工具** ] 功能表中選取 [ **匯入和匯出設定** ]。 如需詳細資訊，請參閱 [在 Visual Studio 中自訂開發設定](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)  
+> 對話方塊和功能表命令，您會看到，可能會有所不同說明中所述取決於您使用的設定或您使用的版本不同。 若要變更設定，請從 [ **工具** ] 功能表中選取 [ **匯入和匯出設定** ]。 如需詳細資訊，請參閱 [在 Visual Studio 中自訂開發設定](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)  
   
  這個逐步解說中所述的工作包括：  
   
 - 建立新**Windows 應用程式**專案。  
   
-- 建立及設定您的應用程式中的資料來源[資料來源組態精靈](http://msdn.microsoft.com/library/c4df7de5-5da0-4064-940c-761dd6d9e28f)。  
+- 建立及設定您的應用程式中的資料來源[資料來源組態精靈](https://msdn.microsoft.com/library/c4df7de5-5da0-4064-940c-761dd6d9e28f)。  
   
-- 設定控制項中項目的[資料來源視窗](http://msdn.microsoft.com/library/0d20f699-cc95-45b3-8ecb-c7edf1f67992)。 如需詳細資訊，請參閱 <<c0> [ 設定要從資料來源視窗拖曳時要建立的控制項](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md)。  
+- 設定控制項中項目的[資料來源視窗](https://msdn.microsoft.com/library/0d20f699-cc95-45b3-8ecb-c7edf1f67992)。 如需詳細資訊，請參閱 <<c0> [ 設定要從資料來源視窗拖曳時要建立的控制項](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md)。  
   
 - 從 [資料來源] 視窗將項目拖曳至表單，以建立資料繫結控制項。  
   
@@ -64,7 +64,7 @@ ms.locfileid: "63425025"
   
 2. 將專案命名為 `UpdateMultipleTablesWalkthrough`。  
   
-3. 選取  **Windows 應用程式**，然後選取**確定**。 如需詳細資訊，請參閱 <<c0> [ 用戶端應用程式](http://msdn.microsoft.com/library/2dfb50b7-5af2-4e12-9bbb-c5ade0e39a68)。  
+3. 選取  **Windows 應用程式**，然後選取**確定**。 如需詳細資訊，請參閱 <<c0> [ 用戶端應用程式](https://msdn.microsoft.com/library/2dfb50b7-5af2-4e12-9bbb-c5ade0e39a68)。  
   
      隨即建立 **UpdateMultipleTablesWalkthrough** 專案，並將其新增至 [方案總管]。  
   
@@ -126,7 +126,7 @@ ms.locfileid: "63425025"
  您可以藉由呼叫 [Customers] 和 [Orders] TableAdapters 的 `Update` 方法以更新資料庫。 根據預設，事件處理常式**儲存**按鈕<xref:System.Windows.Forms.BindingNavigator>新增至表單的程式碼，以將更新傳送至資料庫。 此程序修改程式碼，以將更新傳送正確的順序。這會排除參考完整性錯誤提高的可能性。 程式碼也會藉由將 try-catch 區塊中的更新呼叫換行，以實作錯誤處理。 您可以修改程式碼，使其符合應用程式的需求。  
   
 > [!NOTE]
-> 為了清楚起見，本逐步解說中所使用的交易。不過，如果您正在更新兩個或多個相關資料表，包含在交易內的所有更新邏輯。 交易是確保對資料庫的所有相關的變更都成功，認可任何變更之前的程序。 如需詳細資訊，請參閱 <<c0> [ 異動和並行存取](http://msdn.microsoft.com/library/f46570de-9e50-4fe6-8710-a8c31fa8569b)。  
+> 為了清楚起見，本逐步解說中所使用的交易。不過，如果您正在更新兩個或多個相關資料表，包含在交易內的所有更新邏輯。 交易是確保對資料庫的所有相關的變更都成功，認可任何變更之前的程序。 如需詳細資訊，請參閱 <<c0> [ 異動和並行存取](https://msdn.microsoft.com/library/f46570de-9e50-4fe6-8710-a8c31fa8569b)。  
   
 #### <a name="to-add-update-logic-to-the-application"></a>將更新邏輯加入至應用程式  
   
@@ -152,9 +152,9 @@ ms.locfileid: "63425025"
 ## <a name="next-steps"></a>後續步驟  
  根據您的應用程式的需求，有幾個步驟，您可能想要在 Windows 應用程式中建立資料繫結表單之後執行。 一些您可以加強這個逐步解說的部分包括：  
   
-- 將搜尋功能加入至表單。 如需詳細資訊，請參閱[如何：參數化的查詢的 Windows Form 應用程式中加入](http://msdn.microsoft.com/library/13db4ad3-56b9-4a0b-b3a5-6a4ff84d4416)。  
+- 將搜尋功能加入至表單。 如需詳細資訊，請參閱[如何：參數化的查詢的 Windows Form 應用程式中加入](https://msdn.microsoft.com/library/13db4ad3-56b9-4a0b-b3a5-6a4ff84d4416)。  
   
-- 編輯資料來源，以加入或移除資料庫物件。 如需詳細資訊，請參閱[如何：編輯資料集](http://msdn.microsoft.com/library/f2dade5f-9c7a-4ddb-96a8-e0a39e50bfd3)。  
+- 編輯資料來源，以加入或移除資料庫物件。 如需詳細資訊，請參閱[如何：編輯資料集](https://msdn.microsoft.com/library/f2dade5f-9c7a-4ddb-96a8-e0a39e50bfd3)。  
   
 ## <a name="see-also"></a>另請參閱  
  [將資料儲存回資料庫](../data-tools/save-data-back-to-the-database.md)

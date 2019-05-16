@@ -12,12 +12,12 @@ ms.assetid: 7490325b-acee-4c2d-ac56-1cd5db1a1083
 caps.latest.revision: 29
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: e3fa0eaa6a0b301914f0ea908ef1222d1b342f5c
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 33218dd8fe7cee4a6700dcb289719ffae932bbe0
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63408457"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65691780"
 ---
 # <a name="support-for-code-snippets-in-a-legacy-language-service"></a>舊版語言服務中對程式碼片段的支援
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -117,7 +117,7 @@ ms.locfileid: "63408457"
 ### <a name="inserting-a-code-snippet-by-using-a-menu-command"></a>使用功能表命令插入程式碼片段  
  若要使用的功能表命令，以顯示程式碼片段瀏覽器，您需要加入功能表命令，然後呼叫<xref:Microsoft.VisualStudio.Package.ExpansionProvider.DisplayExpansionBrowser%2A>方法中的<xref:Microsoft.VisualStudio.Package.ExpansionProvider>該功能表命令的回應中的介面。  
   
-1. 加入.vsct 檔的命令和按鈕。 您可以找到在執行動作的指示[逐步解說：使用 Visual Studio Package 範本建立功能表命令](http://msdn.microsoft.com/library/1985fa7d-aad4-4866-b356-a125b6a246de)。  
+1. 加入.vsct 檔的命令和按鈕。 您可以找到在執行動作的指示[逐步解說：使用 Visual Studio Package 範本建立功能表命令](https://msdn.microsoft.com/library/1985fa7d-aad4-4866-b356-a125b6a246de)。  
   
 2. 衍生的類別<xref:Microsoft.VisualStudio.Package.ViewFilter>類別並覆寫<xref:Microsoft.VisualStudio.Package.ViewFilter.QueryCommandStatus%2A>方法，以指示新的功能表命令的支援。 這個範例中永遠啟用功能表命令。  
   

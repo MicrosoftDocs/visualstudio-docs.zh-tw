@@ -9,12 +9,12 @@ caps.latest.revision: 4
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 6fce9bca76b604413dc5bd4962760ee4ce08a6ea
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 1aed85754eb1238528af9b5d74f2369b2548edc0
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54790609"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65687176"
 ---
 # <a name="linq-to-xml-dynamic-properties"></a>LINQ to XML 動態屬性
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,11 +29,11 @@ ms.locfileid: "54790609"
   
 - 索引值 (例如 <xref:System.Xml.Linq.XElement> 的 [Elements](../designers/elements-xelement-dynamic-property.md) 和 [Descendants](../designers/descendants-xelement-dynamic-property.md) 屬性)，可解析為索引子類型。 對於要解析為所需數值或集合的索引子型別，必須將擴充名稱參數傳遞給它們。  
   
-  傳回 <xref:System.Collections.Generic.IEnumerable%601> 型別之索引值的所有動態屬性都使用延緩執行。 如需延後執行的詳細資訊，請參閱 [LINQ 查詢簡介 (C#)](http://msdn.microsoft.com/library/37895c02-268c-41d5-be39-f7d936fa88a8)。  
+  傳回 <xref:System.Collections.Generic.IEnumerable%601> 型別之索引值的所有動態屬性都使用延緩執行。 如需延後執行的詳細資訊，請參閱 [LINQ 查詢簡介 (C#)](https://msdn.microsoft.com/library/37895c02-268c-41d5-be39-f7d936fa88a8)。  
   
 ## <a name="in-this-section"></a>本節內容  
   
-|主題|說明|  
+|主題|描述|  
 |-----------|-----------------|  
 |[XAttribute 類別動態屬性](../designers/xattribute-class-dynamic-properties.md)|提供由 <xref:System.Xml.Linq.XAttribute> 類別公開之動態屬性的詳細資料。|  
 |[XElement 類別動態屬性](../designers/xelement-class-dynamic-properties.md)|提供由 <xref:System.Xml.Linq.XElement> 類別公開之動態屬性的詳細資料。|  
@@ -45,7 +45,7 @@ ms.locfileid: "54790609"
   
  <xref:System.Xml.Linq.XAttribute?displayProperty=fullName>  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [使用 LINQ to XML 進行 WPF 資料繫結](../designers/wpf-data-binding-with-linq-to-xml.md)   
  [WPF 資料繫結與 LINQ to XML 概觀](../designers/wpf-data-binding-with-linq-to-xml-overview.md)   
- [LINQ 查詢簡介 (C#)](http://msdn.microsoft.com/library/37895c02-268c-41d5-be39-f7d936fa88a8)
+ [LINQ 查詢簡介 (C#)](https://msdn.microsoft.com/library/37895c02-268c-41d5-be39-f7d936fa88a8)

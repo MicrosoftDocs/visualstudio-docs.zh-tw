@@ -9,12 +9,12 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e949dd566a065b266bfdbf8eae36a099fa229ef7
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 78f6a0490b13c4061194390fedbefebfba60860a
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63403421"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65689892"
 ---
 # <a name="wpf-data-binding-with-linq-to-xml-overview"></a>WPF 資料繫結與 LINQ to XML 概觀
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,7 +42,7 @@ ms.locfileid: "63403421"
 |繫結來源|一或多個值的來源物件，這些值會提供給 UI 項目進行顯示。 WPF 會自動支援下列類型做為繫結來源：CLR 物件、ADO.NET 資料物件、XML 資料 (來自 XPath 或 LINQ to XML 查詢)，或其他 <xref:System.Windows.DependencyObject>。|  
 |來源路徑|繫結來源的屬性，可解析要繫結的值或值集合。|  
   
- 相依性屬性為 WPF 專屬的概念，代表 UI 項目動態計算的屬性。 例如，相依性屬性通常具有父項目提供的預設值或值。 這些特殊的屬性是由 <xref:System.Windows.DependencyProperty> 類別 (而非具有標準屬性的欄位) 的執行個體所支援。 如需詳細資訊，請參閱[相依性屬性概觀](http://msdn.microsoft.com/library/d119d00c-3afb-48d6-87a0-c4da4f83dee5)。  
+ 相依性屬性為 WPF 專屬的概念，代表 UI 項目動態計算的屬性。 例如，相依性屬性通常具有父項目提供的預設值或值。 這些特殊的屬性是由 <xref:System.Windows.DependencyProperty> 類別 (而非具有標準屬性的欄位) 的執行個體所支援。 如需詳細資訊，請參閱[相依性屬性概觀](https://msdn.microsoft.com/library/d119d00c-3afb-48d6-87a0-c4da4f83dee5)。  
   
 ### <a name="dynamic-data-binding-in-wpf"></a>WPF 中的動態資料繫結  
  根據預設，只有在初始化目標 UI 項目後，才會發生資料繫結。 這稱為「單次」繫結。 就大部分的用途而言，這還不足夠；資料繫結解決方案通常需要在執行階段，使用下列其中一項，動態傳播這些變更：  
@@ -53,7 +53,7 @@ ms.locfileid: "63403421"
   
   若要讓單向或雙向繫結發生，來源必須實作變更通知機制，例如，藉由針對支援的每個屬性實作 <xref:System.ComponentModel.INotifyPropertyChanged> 介面或使用 *PropertyNameChanged* 模式。  
   
-  如需有關 WPF 中資料繫結的詳細資訊，請參閱[資料繫結 (WPF)](http://msdn.microsoft.com/library/90f79b97-17e7-40d1-abf0-3ba600ad1d7e)。  
+  如需有關 WPF 中資料繫結的詳細資訊，請參閱[資料繫結 (WPF)](https://msdn.microsoft.com/library/90f79b97-17e7-40d1-abf0-3ba600ad1d7e)。  
   
 ## <a name="dynamic-properties-in-linq-to-xml-classes"></a>LINQ to XML 類別中的動態屬性  
  多數的 LINQ to XML 類別不會限定為適當的 WPF 動態資料來源：某些最實用的資訊僅能透過方法 (而非屬性) 取得，而且這些類別中的屬性不會實作變更通知。 為了支援 WPF 資料繫結，LINQ to XML 會公開一組「動態屬性」。  
@@ -91,6 +91,6 @@ ms.locfileid: "63403421"
 ## <a name="see-also"></a>另請參閱  
  [使用 LINQ to XML 進行 WPF 資料繫結](../designers/wpf-data-binding-with-linq-to-xml.md)   
  [LINQ to XML 動態屬性](../designers/linq-to-xml-dynamic-properties.md)   
- [WPF 中的 XAML](http://msdn.microsoft.com/library/5d858575-a83b-42df-ad3f-047ed2d6e3c8)   
- [資料繫結 (WPF)](http://msdn.microsoft.com/library/90f79b97-17e7-40d1-abf0-3ba600ad1d7e)   
+ [WPF 中的 XAML](https://msdn.microsoft.com/library/5d858575-a83b-42df-ad3f-047ed2d6e3c8)   
+ [資料繫結 (WPF)](https://msdn.microsoft.com/library/90f79b97-17e7-40d1-abf0-3ba600ad1d7e)   
  [使用工作流程標記](http://go.microsoft.com/fwlink/?LinkId=98685)

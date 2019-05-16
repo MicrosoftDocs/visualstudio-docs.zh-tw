@@ -25,18 +25,18 @@ caps.latest.revision: 19
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 3db776586a74fc1063a0553bb1dcf9ac62537965
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 9524ab08ab955609f29f437e8a1576af02738aa1
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63444800"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65704456"
 ---
-# <a name="how-to-debug-an-activex-control"></a>HOW TO：對 ActiveX 控制項進行偵錯
+# <a name="how-to-debug-an-activex-control"></a>作法：對 ActiveX 控制項進行偵錯
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 注意]
-> 根據您目前使用的設定或版本，您所看到的對話方塊與功能表命令可能會與 [說明] 中描述的不同。 若要變更設定，請從 [工具] 功能表中選擇 [匯入和匯出設定]。 如需詳細資訊，請參閱 [在 Visual Studio 中自訂開發設定](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)  
+> 根據您目前使用的設定或版本，您所看到的對話方塊與功能表命令可能會與 [說明] 中描述的不同。 若要變更設定，請從 [工具] 功能表中選擇 [匯入和匯出設定]。 如需詳細資訊，請參閱 [在 Visual Studio 中自訂開發設定](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)  
   
  若要偵錯您的 ActiveX 控制項，您必須指定容器 (可執行檔)，讓控制項在其中執行。  
   
@@ -59,7 +59,7 @@ ms.locfileid: "63444800"
      若您未在 [專案屬性頁] 對話方塊中指定容器，您也可以在開始偵錯時指定容器。 當您選取執行命令以開始偵錯時，將會出現[偵錯工作階段的可執行檔對話方塊](../debugger/executable-for-debugging-session-dialog-box.md)。 在對話方塊中指定容器的路徑名稱。  
   
 ## <a name="see-also"></a>另請參閱  
- [ActiveX 控制項](http://msdn.microsoft.com/library/52aaec4d-3889-402e-b57d-758078f8ac57)   
- [使用測試容器測試屬性和事件](http://msdn.microsoft.com/library/626867cf-fe53-4c30-8973-55bb93ef3917)   
+ [ActiveX 控制項](https://msdn.microsoft.com/library/52aaec4d-3889-402e-b57d-758078f8ac57)   
+ [使用測試容器測試屬性和事件](https://msdn.microsoft.com/library/626867cf-fe53-4c30-8973-55bb93ef3917)   
  [對 COM 和 ActiveX 進行偵錯](../debugger/com-and-activex-debugging.md)   
  [Visual Studio 偵錯](../debugger/debugging-in-visual-studio.md)

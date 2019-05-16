@@ -19,12 +19,12 @@ caps.latest.revision: 60
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 77b962d9ab4594bba5be42100a46e67e1c861384
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: c9f6b7334c7032414bfd0fbf7ecf9ad48b414cb9
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63445760"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65701037"
 ---
 # <a name="add-new-data-sources"></a>新增新資料來源
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -77,7 +77,7 @@ ms.locfileid: "63445760"
   
  您可以從下列服務類型來建立資料來源：  
   
-- WCF 資料服務。 如需詳細資訊，請參閱 <<c0> [ 概觀](http://msdn.microsoft.com/library/7924cf94-c9a6-4015-afc9-f5d22b1743bb)。  
+- WCF 資料服務。 如需詳細資訊，請參閱 <<c0> [ 概觀](https://msdn.microsoft.com/library/7924cf94-c9a6-4015-afc9-f5d22b1743bb)。  
   
 - WCF 資料服務。 如需詳細資訊，請參閱 < [Windows Communication Foundation 服務和 Visual Studio 中的 WCF Data Services](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md)。  
   

@@ -13,12 +13,12 @@ ms.assetid: f68671fe-fd7a-4e56-a0b5-330b0f1fedb1
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 323fbbc48953537dbcad4a13d2774fefec65dd52
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: cd26e08ab153e96fc601e89788008cb0e9ca38c8
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58944470"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65704088"
 ---
 # <a name="project-type-design-decisions"></a>專案類型的設計決策
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ ms.locfileid: "58944470"
   
  在專案中的項目可以是檔案，或它們可以跨網際網路更抽象的物件，例如在資料庫中的存放庫或資料連線 中的物件。 如果項目是檔案、 專案可以參考為基礎或 directory 為基礎的專案。  
   
- 在參考為基礎的專案中，項目可以出現在多個專案。 不過，實際項目表示的檔案位於中只有一個目錄。 在目錄型專案中，所有專案項目會存都在於目錄結構中。 如需詳細資訊，請參閱 <<c0> [ 專案中的項目 NIB： 管理](http://msdn.microsoft.com/762e606b-7f44-4b66-97a1-e30a703654a0)。  
+ 在參考為基礎的專案中，項目可以出現在多個專案。 不過，實際項目表示的檔案位於中只有一個目錄。 在目錄型專案中，所有專案項目會存都在於目錄結構中。 如需詳細資訊，請參閱 <<c0> [ 專案中的項目 NIB： 管理](https://msdn.microsoft.com/762e606b-7f44-4b66-97a1-e30a703654a0)。  
   
  本機項目會儲存應用程式安裝所在的同一部電腦上。 遠端的項目可以儲存在本機網路中，不同的伺服器上或在網際網路上其他位置。  
   
@@ -60,7 +60,7 @@ ms.locfileid: "58944470"
   
 ## <a name="see-also"></a>另請參閱  
  [檢查清單：建立新的專案類型](../../extensibility/internals/checklist-creating-new-project-types.md)   
- [NIB： 項目管理專案中](http://msdn.microsoft.com/762e606b-7f44-4b66-97a1-e30a703654a0)   
+ [NIB： 項目管理專案中](https://msdn.microsoft.com/762e606b-7f44-4b66-97a1-e30a703654a0)   
  [開啟和儲存專案項目](../../extensibility/internals/opening-and-saving-project-items.md)   
  [專案持續性](../../extensibility/internals/project-persistence.md)   
  [專案模型的項目](../../extensibility/internals/elements-of-a-project-model.md)   

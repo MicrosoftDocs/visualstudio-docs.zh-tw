@@ -13,12 +13,12 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: f9fa341b781028db1836e963c99ae5069ce8fe18
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: f16d21889421a00fc2723412f34b426f75847822
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63433602"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65701614"
 ---
 # <a name="codeindex-command"></a>CodeIndex 命令
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,7 +27,7 @@ ms.locfileid: "63433602"
   
  **必要權限**  
   
- 您必須是 **Team Foundation Administrators** 安全性群組的成員，才能使用 **CodeIndex** 命令。 請參閱 [Team Foundation Server 的權限參考](http://msdn.microsoft.com/library/39997de5-b7fb-4777-b779-07de0543abe6)。  
+ 您必須是 **Team Foundation Administrators** 安全性群組的成員，才能使用 **CodeIndex** 命令。 請參閱 [Team Foundation Server 的權限參考](https://msdn.microsoft.com/library/39997de5-b7fb-4777-b779-07de0543abe6)。  
   
 > [!NOTE]
 > 即使使用系統管理認證登入，您依然必須開啟更高權限的命令提示字元視窗才能執行此命令。 您也必須從 Team Foundation 應用程式層執行這個命令。  
@@ -125,5 +125,5 @@ TFSConfig CodeIndex /destroyCodeIndex /collectionName:"Fabrikam Web Site"
 ```  
   
 ## <a name="see-also"></a>請參閱  
- [使用 TFSConfig 管理伺服器組態](http://msdn.microsoft.com/94424190-3b6b-4f33-a6b6-5807f4225b62)   
- [命令列工具 (適用於 TFS)](http://msdn.microsoft.com/be8c997a-b97b-4e59-97f5-04db0a601a6c)
+ [使用 TFSConfig 管理伺服器組態](https://msdn.microsoft.com/94424190-3b6b-4f33-a6b6-5807f4225b62)   
+ [命令列工具 (適用於 TFS)](https://msdn.microsoft.com/be8c997a-b97b-4e59-97f5-04db0a601a6c)

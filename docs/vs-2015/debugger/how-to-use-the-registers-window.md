@@ -1,5 +1,5 @@
 ---
-title: HOW TO：使用暫存器視窗 |Microsoft Docs
+title: 作法：使用暫存器視窗 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -27,12 +27,12 @@ caps.latest.revision: 42
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 506425f4de218e258ca9a86bfad5154cbda5c223
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 233092af638824c462a6d9a47865a1c6f5fd9397
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63445039"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65697471"
 ---
 # <a name="how-to-use-the-registers-window"></a>HOW TO：使用暫存器視窗
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,7 +46,7 @@ ms.locfileid: "63445039"
  暫存器和暫存器視窗的基本概念的高階介紹，請參閱[偵錯基本概念：暫存器視窗](../debugger/debugging-basics-registers-window.md)。  
   
 > [!NOTE]
-> 根據您目前使用的設定或版本，您所看到的對話方塊與功能表命令可能會與 [說明] 中描述的不同。 若要變更設定，請從 [ **工具** ] 功能表中選取 [ **匯入和匯出設定** ]。 如需詳細資訊，請參閱 [在 Visual Studio 中自訂開發設定](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)  
+> 根據您目前使用的設定或版本，您所看到的對話方塊與功能表命令可能會與 [說明] 中描述的不同。 若要變更設定，請從 [ **工具** ] 功能表中選取 [ **匯入和匯出設定** ]。 如需詳細資訊，請參閱 [在 Visual Studio 中自訂開發設定](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)  
   
 ### <a name="to-display-the-registers-window"></a>若要顯示暫存器視窗  
   

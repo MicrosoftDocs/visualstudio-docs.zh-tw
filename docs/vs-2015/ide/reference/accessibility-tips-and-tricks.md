@@ -11,12 +11,12 @@ caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c375a015576202ff8e5d0f9815d534a81aa7b185
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 7e8de7cf7cbdc58e14cfc72c5317a765f46e67ae
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63441114"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65674801"
 ---
 # <a name="accessibility-tips-and-tricks"></a>協助工具秘訣和訣竅
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -24,10 +24,10 @@ ms.locfileid: "63441114"
 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 包括內建協助工具功能，可讓您透過鍵盤輕鬆工作，以及使用螢幕助讀程式或其他輔助技術裝置。 本主題包括針對協助工具最佳化 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 的一些建議，以及一些實用快速鍵組合。  
   
 > [!NOTE]
-> 根據您目前使用的設定或版本，您所看到的對話方塊與功能表命令可能會與 [說明] 中描述的不同。 若要變更設定，請從 [ **工具** ] 功能表中選取 [ **匯入和匯出設定** ]。 如需詳細資訊，請參閱 [在 Visual Studio 中自訂開發設定](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)  
+> 根據您目前使用的設定或版本，您所看到的對話方塊與功能表命令可能會與 [說明] 中描述的不同。 若要變更設定，請從 [ **工具** ] 功能表中選取 [ **匯入和匯出設定** ]。 如需詳細資訊，請參閱 [在 Visual Studio 中自訂開發設定](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)  
   
 ## <a name="save-your-ide-settings"></a>儲存 IDE 設定  
- 您可以儲存視窗配置、鍵盤對應配置和其他喜好設定，來自訂 IDE 體驗。 如需詳細資訊，請參閱 [在 Visual Studio 中自訂開發設定](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)  
+ 您可以儲存視窗配置、鍵盤對應配置和其他喜好設定，來自訂 IDE 體驗。 如需詳細資訊，請參閱 [在 Visual Studio 中自訂開發設定](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)  
   
 ## <a name="common-windows-shortcut-key-combinations"></a>通用 Windows 快速鍵組合  
  您可以使用許多標準 Windows 快速鍵組合，在 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 內執行工作。 其中一些快速鍵組合包括：  

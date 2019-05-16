@@ -19,12 +19,12 @@ caps.latest.revision: 23
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 081899efb202917f1ebeac97a58dd89cf5a04f53
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 08db6a5d22cacc348a9ef36fd9e9857d5b55642a
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63444392"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65703728"
 ---
 # <a name="signfile-task"></a>SignFile 工作
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -70,7 +70,7 @@ ms.locfileid: "63444392"
 ```  
   
 > [!NOTE]
-> 憑證指紋是憑證的 SHA-1 雜湊。 如需詳細資訊，請參閱[取得受信任的根 CA 憑證的 SHA-1 雜湊](http://msdn.microsoft.com/dd641990-9a88-4228-a245-017797131a87)。  
+> 憑證指紋是憑證的 SHA-1 雜湊。 如需詳細資訊，請參閱[取得受信任的根 CA 憑證的 SHA-1 雜湊](https://msdn.microsoft.com/dd641990-9a88-4228-a245-017797131a87)。  
   
 ## <a name="example"></a>範例  
  下列範例使用 `Exec` 工作來簽署 `FilesToSign` 項目集合中指定的檔案，並使用 `Certificate` 屬性所指定的憑證。 您可以使用這個在建置程序期間簽署 Windows 安裝程式檔案。  

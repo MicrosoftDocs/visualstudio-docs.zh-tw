@@ -1,5 +1,5 @@
 ---
-title: HOW TO：原生框架遺失於呼叫堆疊視窗時跳離 Managed 程式碼 |Microsoft Docs
+title: 作法：原生框架遺失於呼叫堆疊視窗時跳離 Managed 程式碼 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -25,20 +25,20 @@ caps.latest.revision: 24
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 1672ba8e6bcf66973a5cd32be3fb03821750e3f2
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 63bd55fd254dd263540a9161e8579ea6600e97f1
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63442740"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65690093"
 ---
-# <a name="how-to-step-out-of-managed-code-when-native-frames-are-missing-from-the-call-stack-window"></a>HOW TO：在原生框架從呼叫堆疊視窗遺失時跳離受控程式碼
+# <a name="how-to-step-out-of-managed-code-when-native-frames-are-missing-from-the-call-stack-window"></a>作法：在原生框架從呼叫堆疊視窗遺失時跳離受控程式碼
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 如果程式碼擁有在 [呼叫堆疊] 視窗中不可見的原生框架，跳離受控程式碼函式可以產生未預期的結果。 您可使用中斷點，而不要使用 [跳離函式]，便可解決這個問題。  
   
 > [!NOTE]
-> 根據您目前使用的設定或版本，您所看到的對話方塊與功能表命令可能會與 [說明] 中描述的不同。 若要變更設定，請從 [ **工具** ] 功能表中選取 [ **匯入和匯出設定** ]。 如需詳細資訊，請參閱 [在 Visual Studio 中自訂開發設定](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)  
+> 根據您目前使用的設定或版本，您所看到的對話方塊與功能表命令可能會與 [說明] 中描述的不同。 若要變更設定，請從 [ **工具** ] 功能表中選取 [ **匯入和匯出設定** ]。 如需詳細資訊，請參閱 [在 Visual Studio 中自訂開發設定](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)  
   
 ### <a name="to-step-out-of-managed-code-when-native-frames-are-missing-from-the-call-stack-display"></a>若要在原生框架遺失於呼叫堆疊顯示時跳離 Managed 程式碼  
   

@@ -9,12 +9,12 @@ caps.latest.revision: 10
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: fc52b883388640ef0e24478a08202bd2991375fc
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 78a81b2392959b968e8905ae33a6f0751e73f2ff
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58944891"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65686762"
 ---
 # <a name="debugger-windows"></a>偵錯工具視窗
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,10 +33,10 @@ ms.locfileid: "58944891"
 |平行監看式|CTR:+SHIFT+D, (1, 2, 3, 4)|[使用平行堆疊視窗](../debugger/using-the-parallel-stacks-window.md)|  
 |監看式|CTRL+ALT+W, (1, 2, 3, 4)|[監看式及快速監看式視窗](../debugger/watch-and-quickwatch-windows.md)|  
 |快速監看式|SHIFT+F9|[監看式及快速監看式視窗](../debugger/watch-and-quickwatch-windows.md)|  
-|自動|CTRL+ALT+V, A|[變數視窗](http://msdn.microsoft.com/library/ce0a67f6-2502-4b7a-ba45-cc32f8aeba3e)|  
-|區域變數|CTRL+ALT+V, L|[變數視窗](http://msdn.microsoft.com/library/ce0a67f6-2502-4b7a-ba45-cc32f8aeba3e)|  
+|自動|CTRL+ALT+V, A|[變數視窗](https://msdn.microsoft.com/library/ce0a67f6-2502-4b7a-ba45-cc32f8aeba3e)|  
+|區域變數|CTRL+ALT+V, L|[變數視窗](https://msdn.microsoft.com/library/ce0a67f6-2502-4b7a-ba45-cc32f8aeba3e)|  
 |即時運算|CTRL+ALT+I|[即時運算視窗](../ide/reference/immediate-window.md)|  
-|Python 互動式偵錯|SHIFT+ALT+I|[Ptvs 快速入門：Interactive Python](../python/getting-started-with-ptvs-interactive-python.md)|  
+|Python 互動式偵錯|SHIFT+ALT+I|[PTVS 入門：互動式 Python](../python/getting-started-with-ptvs-interactive-python.md)|  
 |JavaScript 主控台|CTRL+ALT+V, C|[快速入門：針對 JavaScript 進行偵錯](../debugger/quickstart-debug-javascript-using-the-console.md)|  
 |DOM 總管|CTRL+ALT+V, D|[使用 DOM 總管偵錯配置](../debugger/debug-layout-using-dom-explorer.md)|  
 |即時視覺化樹狀結構|-|[在偵錯時檢查 XAML 屬性](../debugger/inspect-xaml-properties-while-debugging.md)|  

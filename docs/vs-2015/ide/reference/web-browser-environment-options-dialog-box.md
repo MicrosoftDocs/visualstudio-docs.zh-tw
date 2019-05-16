@@ -24,12 +24,12 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: df33215bab20be8744ed2455ef87f1a037871f95
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 6cc3f5d49844509f5b0cb5fa7c439a6ce7c69e18
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63419709"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65698697"
 ---
 # <a name="web-browser-environment-options-dialog-box"></a>選項對話方塊、環境、Web 瀏覽器
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -37,7 +37,7 @@ ms.locfileid: "63419709"
 設定內部網頁瀏覽器和 Internet Explorer 的選項。 若要存取這個對話方塊，請按一下 [工具] 功能表中的 [選項]，展開 [環境] 資料夾，然後選取 [網頁瀏覽器]。  
   
 > [!NOTE]
-> 根據您目前使用的設定或版本，您所看到的對話方塊與功能表命令可能會與 [說明] 中描述的不同。 若要變更設定，請從 [工具] 功能表中選擇 [匯入和匯出設定]。 如需詳細資訊，請參閱 [在 Visual Studio 中自訂開發設定](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)  
+> 根據您目前使用的設定或版本，您所看到的對話方塊與功能表命令可能會與 [說明] 中描述的不同。 若要變更設定，請從 [工具] 功能表中選擇 [匯入和匯出設定]。 如需詳細資訊，請參閱 [在 Visual Studio 中自訂開發設定](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)  
   
 > [!IMPORTANT]
 > 從 Web 開啟特定檔案或元件可能會在您的電腦上執行程式碼。  
@@ -53,7 +53,7 @@ ms.locfileid: "63419709"
   
 - **原始檔編輯器**：選取即可在[撰寫程式碼](../../ide/writing-code-in-the-code-and-text-editor.md)時檢視原始檔。  
   
-- **HTML 編輯器**：選取即可在 [HTML 設計工具](http://msdn.microsoft.com/library/640043cc-3657-4677-a091-bc315e636477)中檢視原始檔。 使用此選項可在下列兩種檢視之一編輯網頁：設計檢視或標準文字原始檔檢視。  
+- **HTML 編輯器**：選取即可在 [HTML 設計工具](https://msdn.microsoft.com/library/640043cc-3657-4677-a091-bc315e636477)中檢視原始檔。 使用此選項可在下列兩種檢視之一編輯網頁：設計檢視或標準文字原始檔檢視。  
   
 - **外部編輯器**：選取即可在其他編輯器中檢視原始檔。 請指定您選擇的任何編輯器路徑，例如 Notepad.exe。  
   
@@ -66,4 +66,4 @@ ms.locfileid: "63419709"
 ## <a name="see-also"></a>請參閱  
  [環境選項對話方塊](../../ide/reference/environment-options-dialog-box.md)   
  [選項對話方塊、環境、一般](../../ide/reference/general-environment-options-dialog-box.md)   
- [HTML 設計工具](http://msdn.microsoft.com/library/640043cc-3657-4677-a091-bc315e636477)
+ [HTML 設計工具](https://msdn.microsoft.com/library/640043cc-3657-4677-a091-bc315e636477)

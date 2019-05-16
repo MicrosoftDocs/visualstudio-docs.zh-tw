@@ -23,12 +23,12 @@ caps.latest.revision: 15
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: b4075340f87b46fd8316b5e30317e9d90108b914
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 5019547d2e06684b51f1513445521eca0e5143e1
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58942652"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65702868"
 ---
 # <a name="exception-assistant-dialog-box"></a>例外狀況助理對話方塊
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -60,6 +60,6 @@ ms.locfileid: "58942652"
   
 ## <a name="see-also"></a>另請參閱  
  [偵錯工具安全性](../debugger/debugger-security.md)   
- [使用例外狀況助理](http://msdn.microsoft.com/library/e0a78c50-7318-4d54-af51-40c00aea8711)   
- [如何：與例外狀況助理修正執行階段錯誤](http://msdn.microsoft.com/library/23b08d45-7b20-42c9-bdc9-fb3157ad823b)   
- [錯誤類型](http://msdn.microsoft.com/library/3048aabf-8c97-4e13-9150-853769cb5f6f)
+ [使用例外狀況助理](https://msdn.microsoft.com/library/e0a78c50-7318-4d54-af51-40c00aea8711)   
+ [如何：與例外狀況助理修正執行階段錯誤](https://msdn.microsoft.com/library/23b08d45-7b20-42c9-bdc9-fb3157ad823b)   
+ [錯誤類型](https://msdn.microsoft.com/library/3048aabf-8c97-4e13-9150-853769cb5f6f)

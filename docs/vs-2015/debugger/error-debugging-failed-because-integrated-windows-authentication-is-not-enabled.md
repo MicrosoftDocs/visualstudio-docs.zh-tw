@@ -19,12 +19,12 @@ caps.latest.revision: 22
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 73fcc686b242109a65fce6befbbca5e2a357a25e
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 074c6c1cace31797e46a192ec0891f1e13dac22b
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60049317"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65684266"
 ---
 # <a name="error-debugging-failed-because-integrated-windows-authentication-is-not-enabled"></a>錯誤：偵錯失敗，原因是未啟用整合式 Windows 驗證
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -120,4 +120,4 @@ ms.locfileid: "60049317"
 ## <a name="see-also"></a>另請參閱  
  [偵錯 Web 應用程式：錯誤和疑難排解](../debugger/debugging-web-applications-errors-and-troubleshooting.md)   
  [Microsoft 摘要式驗證](http://go.microsoft.com/fwlink/?LinkId=77938)   
- [執行 Windows Vista 與 IIS 7.0 上的 Web 應用程式與 Visual Studio](http://msdn.microsoft.com/library/262a82ac-dd0e-4096-86c6-fb463e88be66)
+ [執行 Windows Vista 與 IIS 7.0 上的 Web 應用程式與 Visual Studio](https://msdn.microsoft.com/library/262a82ac-dd0e-4096-86c6-fb463e88be66)

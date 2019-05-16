@@ -13,12 +13,12 @@ caps.latest.revision: 44
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 9fbdaf845d780935b238bac2ba2c2e7cb0c53b59
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 1b78492ccd5c2666da5ffc503cdf126842431478
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63437820"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65702545"
 ---
 # <a name="capturing-graphics-information"></a>擷取圖形資訊
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -79,7 +79,7 @@ ms.locfileid: "63437820"
 ## <a name="capturing-graphics-information-remotely"></a>從遠端擷取圖形資訊  
  圖形資訊可以從執行於本機電腦、遠端電腦或裝置的應用程式進行擷取。 [!INCLUDE[winblue_client_2](../includes/winblue-client-2-md.md)] 電腦和 [!INCLUDE[winblue_winrt_2](../includes/winblue-winrt-2-md.md)] 裝置支援遠端擷取。 若要從遠端執行的應用程式擷取圖形資訊，請將專案設定為從遠端偵錯，並依先前所述在 [圖形診斷] 下執行應用程式。 應用程式會在遠端電腦上執行，而擷取的圖形資訊會記錄在您的開發電腦上。  
   
- 如何將專案設定為從遠端偵錯，取決於您所開發的應用程式種類，以及您所使用的程式語言。 如需有關如何設定遠端偵錯 Windows 市集應用程式的資訊，請參閱 <<c0> [ 在遠端電腦上的執行 Windows 市集應用程式](../debugger/run-windows-store-apps-on-a-remote-machine.md)。 如需有關如何設定遠端偵錯 Windows 傳統型應用程式的資訊，請參閱[設定遠端偵錯 Visual Studio 專案](http://msdn.microsoft.com/library/ec332dc4-400a-498b-a0e6-c8dcf10fef8a)。  
+ 如何將專案設定為從遠端偵錯，取決於您所開發的應用程式種類，以及您所使用的程式語言。 如需有關如何設定遠端偵錯 Windows 市集應用程式的資訊，請參閱 <<c0> [ 在遠端電腦上的執行 Windows 市集應用程式](../debugger/run-windows-store-apps-on-a-remote-machine.md)。 如需有關如何設定遠端偵錯 Windows 傳統型應用程式的資訊，請參閱[設定遠端偵錯 Visual Studio 專案](https://msdn.microsoft.com/library/ec332dc4-400a-498b-a0e6-c8dcf10fef8a)。  
   
  之後，您就可以使用遠端電腦或裝置播放圖形資訊，而不管是從何處擷取的資訊。 如需詳細資訊，請參閱[如何：變更圖形診斷播放電腦](../debugger/how-to-change-the-graphics-diagnostics-playback-machine.md)。  
   

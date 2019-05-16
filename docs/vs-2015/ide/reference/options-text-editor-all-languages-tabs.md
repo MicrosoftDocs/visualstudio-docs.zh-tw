@@ -21,12 +21,12 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 42fb2e9e91698c276e2b14b3acff9068581a1e9b
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 6d3a031c8e7837d76b5d2c7ab91c5702f59598a0
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63432047"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65693741"
 ---
 # <a name="options-text-editor-all-languages-tabs"></a>索引標籤、所有語言、文字編輯器、選項
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -39,7 +39,7 @@ ms.locfileid: "63432047"
  如果在特定程式設計語言的 [定位點] 頁面上選取不同的設定，則針對不同的 [縮排] 選項會顯示「個別文字格式的縮排設定彼此衝突」訊息，並且針對不同的 [定位點] 選項會顯示「個別文字格式的定位點設定彼此衝突」訊息。 例如，如果針對 Visual Basic 選取了 [智慧縮排] 選項，但針對 Visual C++ 選取 [區塊縮排]。  
   
 > [!NOTE]
-> 根據您目前使用的設定或版本，您所看到的對話方塊與功能表命令可能會與 [說明] 中描述的不同。 若要變更設定，請從 [ **工具** ] 功能表中選取 [ **匯入和匯出設定** ]。 如需詳細資訊，請參閱 [在 Visual Studio 中自訂開發設定](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)  
+> 根據您目前使用的設定或版本，您所看到的對話方塊與功能表命令可能會與 [說明] 中描述的不同。 若要變更設定，請從 [ **工具** ] 功能表中選取 [ **匯入和匯出設定** ]。 如需詳細資訊，請參閱 [在 Visual Studio 中自訂開發設定](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)  
   
 ## <a name="indenting"></a>縮排  
  無  

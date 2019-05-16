@@ -1,5 +1,5 @@
 ---
-title: HOW TO：使用 ClickOnce 部署可在多個.NET Framework 版本執行的應用程式 |Microsoft Docs
+title: 作法：使用 ClickOnce 部署可在多個.NET Framework 版本執行的應用程式 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-deployment
@@ -17,14 +17,14 @@ caps.latest.revision: 19
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 10243821a665d473983dfb729b53186e8ed38244
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 164fe64f360e41c06ef3f7bfd2d8091a6ebefecd
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63432928"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65679939"
 ---
-# <a name="how-to-use-clickonce-to-deploy-applications-that-can-run-on-multiple-versions-of-the-net-framework"></a>HOW TO：使用 ClickOnce 部署可在多個.NET Framework 版本執行的應用程式
+# <a name="how-to-use-clickonce-to-deploy-applications-that-can-run-on-multiple-versions-of-the-net-framework"></a>作法：使用 ClickOnce 部署可在多個.NET Framework 版本執行的應用程式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 您可以部署目標使用 ClickOnce 部署技術的多個版本的.NET framework 的應用程式。 這需要您產生，並更新應用程式和部署資訊清單。  
@@ -110,4 +110,4 @@ ms.locfileid: "63432928"
  [\<compatibleFrameworks > 項目](../deployment/compatibleframeworks-element-clickonce-deployment.md)   
  [\<相依性 > 項目](../deployment/dependency-element-clickonce-application.md)   
  [ClickOnce 部署資訊清單](../deployment/clickonce-deployment-manifest.md)   
- [組態檔結構描述](http://msdn.microsoft.com/library/69003d39-dc8a-460c-a6be-e6d93e690b38)
+ [組態檔結構描述](https://msdn.microsoft.com/library/69003d39-dc8a-460c-a6be-e6d93e690b38)

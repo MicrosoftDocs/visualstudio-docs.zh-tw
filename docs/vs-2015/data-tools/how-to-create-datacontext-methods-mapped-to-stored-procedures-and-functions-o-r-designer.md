@@ -1,5 +1,5 @@
 ---
-title: HOW TO：建立對應至預存程序和函式 （O-R 設計工具） 的 DataContext 方法 |Microsoft Docs
+title: 作法：建立對應至預存程序和函式 （O-R 設計工具） 的 DataContext 方法 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-data-tools
@@ -9,14 +9,14 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 33791123681cc16f3568416e38b27e689324cf0d
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: fa770c631e58fef47b6b44c33026ab9f27954238
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63386197"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65685834"
 ---
-# <a name="how-to-create-datacontext-methods-mapped-to-stored-procedures-and-functions-or-designer"></a>HOW TO：建立對應至預存程序和函式的 DataContext 方法 (O/R 設計工具)
+# <a name="how-to-create-datacontext-methods-mapped-to-stored-procedures-and-functions-or-designer"></a>作法：建立對應至預存程序和函式的 DataContext 方法 (O/R 設計工具)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 預存程序和函式可以加入至[!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]做為<xref:System.Data.Linq.DataContext>方法。 只要呼叫這個方法並傳入必要參數，就會在資料庫上執行預存程序或函式，並以 <xref:System.Data.Linq.DataContext> 方法的傳回型別傳回資料。 如需詳細資訊<xref:System.Data.Linq.DataContext>方法，請參閱[DataContext 方法 （O/R 設計工具）](../data-tools/datacontext-methods-o-r-designer.md)。  
@@ -54,7 +54,7 @@ ms.locfileid: "63386197"
 ## <a name="see-also"></a>另請參閱  
  [LINQ to SQL 工具，在 Visual Studio 中](../data-tools/linq-to-sql-tools-in-visual-studio2.md)   
  [DataContext 方法 （O/R 設計工具）](../data-tools/datacontext-methods-o-r-designer.md)   
- [逐步解說：建立 LINQ to SQL 類別 （O-R 設計工具）](http://msdn.microsoft.com/library/35aad4a4-2e8a-46e2-ae09-5fbfd333c233)   
- [LINQ to SQL](http://msdn.microsoft.com/library/73d13345-eece-471a-af40-4cc7a2f11655)   
- [Visual Basic 中的 LINQ 簡介](http://msdn.microsoft.com/library/3047d86e-0d49-40e2-928b-dc02e46c7984)   
- [如何：撰寫 LINQ 查詢C#](http://msdn.microsoft.com/library/45e47fcc-cfa1-4b72-b161-d038ae87bd23)
+ [逐步解說：建立 LINQ to SQL 類別 （O-R 設計工具）](https://msdn.microsoft.com/library/35aad4a4-2e8a-46e2-ae09-5fbfd333c233)   
+ [LINQ to SQL](https://msdn.microsoft.com/library/73d13345-eece-471a-af40-4cc7a2f11655)   
+ [Visual Basic 中的 LINQ 簡介](https://msdn.microsoft.com/library/3047d86e-0d49-40e2-928b-dc02e46c7984)   
+ [如何：撰寫 LINQ 查詢C#](https://msdn.microsoft.com/library/45e47fcc-cfa1-4b72-b161-d038ae87bd23)

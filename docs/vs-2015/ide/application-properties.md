@@ -13,12 +13,12 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: b159e448ae23e67cc2ed1c066cf4b7884ed83a6e
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: dfb0cd2931c7e07644b62993811ea1aaf0a8e99e
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54757654"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65685704"
 ---
 # <a name="application-properties"></a>Application Properties
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -59,10 +59,10 @@ ms.locfileid: "54757654"
 ## <a name="see-also"></a>請參閱  
  [Application Page, Project Designer (Visual Basic)](../ide/reference/application-page-project-designer-visual-basic.md)   
  [專案設計工具，應用程式頁面 (C#)](../ide/reference/application-page-project-designer-csharp.md)   
- [專案設計工具簡介](http://msdn.microsoft.com/898dd854-c98d-430c-ba1b-a913ce3c73d7)   
+ [專案設計工具簡介](https://msdn.microsoft.com/898dd854-c98d-430c-ba1b-a913ce3c73d7)   
  [發佈 ClickOnce 應用程式](../deployment/publishing-clickonce-applications.md)   
  [保護 ClickOnce 應用程式](../deployment/securing-clickonce-applications.md)   
- [管理偵錯屬性](http://msdn.microsoft.com/92474d16-e7fe-4fac-9287-6bd6b3a7eb68)   
- [管理編譯屬性](http://msdn.microsoft.com/94308881-f10f-4caf-a729-f1028e596a2c)   
+ [管理偵錯屬性](https://msdn.microsoft.com/92474d16-e7fe-4fac-9287-6bd6b3a7eb68)   
+ [管理編譯屬性](https://msdn.microsoft.com/94308881-f10f-4caf-a729-f1028e596a2c)   
  [管理應用程式資源 (.NET)](../ide/managing-application-resources-dotnet.md)   
  [管理應用程式設定 (.NET)](../ide/managing-application-settings-dotnet.md)

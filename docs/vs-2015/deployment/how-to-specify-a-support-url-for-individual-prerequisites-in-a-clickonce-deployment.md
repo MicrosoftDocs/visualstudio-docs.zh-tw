@@ -1,5 +1,5 @@
 ---
-title: HOW TO：指定在 ClickOnce 部署中的個別必要條件的支援 URL |Microsoft Docs
+title: 作法：指定在 ClickOnce 部署中的個別必要條件的支援 URL |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-deployment
@@ -16,14 +16,14 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: f272f1b7a8fc970ab616ba1c02e815cbb6ecb568
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 1907b619bcc616c73d9b9e37af30722c02bf100e
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60059132"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65679963"
 ---
-# <a name="how-to-specify-a-support-url-for-individual-prerequisites-in-a-clickonce-deployment"></a>HOW TO：指定在 ClickOnce 部署中的個別必要條件的支援 URL
+# <a name="how-to-specify-a-support-url-for-individual-prerequisites-in-a-clickonce-deployment"></a>作法：指定在 ClickOnce 部署中的個別必要條件的支援 URL
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 A[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]部署可以測試數目的用戶端電腦必須要有的必要條件[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]執行的應用程式。 其中包括所需的最低版本的[!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]，作業系統和必須預先安裝在全域組件快取 (GAC) 中的任何組件的版本。 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]不過，無法安裝任何必要條件本身;如果找不到必要元件，它只是中止安裝，並顯示對話方塊，說明安裝失敗的原因。  
@@ -85,7 +85,7 @@ A[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]部署可以測試數目�
  支援 URL 不會顯示在對話方塊中，如果應用程式標記為在部分信任中執行。  
   
 ## <a name="see-also"></a>另請參閱  
- [Mage.exe (資訊清單產生和編輯工具)](http://msdn.microsoft.com/library/77dfe576-2962-407e-af13-82255df725a1)   
+ [Mage.exe (資訊清單產生和編輯工具)](https://msdn.microsoft.com/library/77dfe576-2962-407e-af13-82255df725a1)   
  [逐步解說：手動部署 ClickOnce 應用程式](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)   
  [\<compatibleFrameworks > 項目](../deployment/compatibleframeworks-element-clickonce-deployment.md)   
  [ClickOnce 和 Authenticode](../deployment/clickonce-and-authenticode.md)   

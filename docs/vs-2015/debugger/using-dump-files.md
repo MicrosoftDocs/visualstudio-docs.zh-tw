@@ -25,12 +25,12 @@ caps.latest.revision: 56
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 11a3dc0e144ef49f6dcfbe6d8ea0c6dfbc4bca40
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 3a316006ba8983e00906e041d243d8f7c82d6277
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60071768"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65684287"
 ---
 # <a name="using-dump-files"></a>使用傾印檔案
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -76,11 +76,11 @@ ms.locfileid: "60071768"
   
 - Visual Studio 可以對來自 ARM 裝置的原生應用程式傾印檔案進行偵錯。 Visual Studio 也可以對來自 ARM 裝置之 Managed 應用程式的應用程式傾印檔案進行偵錯，不過只能使用原生偵錯工具。  
   
-- 若要偵錯[核心模式](http://msdn.microsoft.com/library/windows/hardware/ff551880.aspx)傾印檔案，在 Visual Studio 2013，請下載[Windows 8.1 版的偵錯工具針對 Windows](http://msdn.microsoft.com/windows/hardware/gg463009)。 請參閱[在 Visual Studio 中的核心偵錯](http://msdn.microsoft.com/library/windows/hardware/jj149675.aspx)。  
+- 若要偵錯[核心模式](https://msdn.microsoft.com/library/windows/hardware/ff551880.aspx)傾印檔案，在 Visual Studio 2013，請下載[Windows 8.1 版的偵錯工具針對 Windows](https://msdn.microsoft.com/windows/hardware/gg463009)。 請參閱[在 Visual Studio 中的核心偵錯](https://msdn.microsoft.com/library/windows/hardware/jj149675.aspx)。  
   
 - Visual Studio 無法偵錯傾印檔案儲存在較舊的傾印格式，稱為[完整使用者模式傾印](/windows-hardware/drivers/debugger/user-mode-dump-files#full)。 請注意，完整使用者模式傾印與含有堆積的傾印並不相同。  
   
-- 若要使用偵錯[SOS.dll （SOS 偵錯的擴充功能）](http://msdn.microsoft.com/library/9ac1b522-77ab-4cdc-852a-20fcdc9ae498)在 Visual Studio 中，您必須安裝偵錯工具針對 Windows，屬於 Windows Driver Kit (WDK)。 請參閱[Windows 8.1 Preview:下載套件、 位元，以及工具](http://msdn.microsoft.com/library/windows/hardware/bg127147.aspx)。  
+- 若要使用偵錯[SOS.dll （SOS 偵錯的擴充功能）](https://msdn.microsoft.com/library/9ac1b522-77ab-4cdc-852a-20fcdc9ae498)在 Visual Studio 中，您必須安裝偵錯工具針對 Windows，屬於 Windows Driver Kit (WDK)。 請參閱[Windows 8.1 Preview:下載套件、 位元，以及工具](https://msdn.microsoft.com/library/windows/hardware/bg127147.aspx)。  
   
   ![回到頁首](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [內容](#BKMK_Contents)  
   
@@ -91,7 +91,7 @@ ms.locfileid: "60071768"
   
 - 具有[Just-In-Time 偵錯](../debugger/just-in-time-debugging-in-visual-studio.md)啟用，您可以將偵錯工具附加至偵錯工具外部執行的損毀處理序，然後儲存傾印檔案。 請參閱[附加至執行中處理程序](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)  
   
-  您也可以使用任何支援 Windows 小型傾印格式的程式建立傾印檔案。 例如， **Procdump**命令列公用程式[Windows Sysinternals](http://technet.microsoft.com/sysinternals/default)可以建立根據觸發程序或視需要處理序損毀傾印檔案。 請參閱[需求和限制](../debugger/using-dump-files.md#BKMK_Requirements_and_limitations)本主題，如需有關使用其他工具建立傾印檔案的詳細資訊。  
+  您也可以使用任何支援 Windows 小型傾印格式的程式建立傾印檔案。 例如， **Procdump**命令列公用程式[Windows Sysinternals](https://technet.microsoft.com/sysinternals/default)可以建立根據觸發程序或視需要處理序損毀傾印檔案。 請參閱[需求和限制](../debugger/using-dump-files.md#BKMK_Requirements_and_limitations)本主題，如需有關使用其他工具建立傾印檔案的詳細資訊。  
   
   ![回到頁首](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [內容](#BKMK_Contents)  
   

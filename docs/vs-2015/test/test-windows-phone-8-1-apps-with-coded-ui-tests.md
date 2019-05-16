@@ -8,12 +8,12 @@ ms.assetid: 7b866776-f2d5-4823-8d15-919f889db26f
 caps.latest.revision: 31
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 9e27478255ccd8f3d5c2786fdfc806fa4f5c0a15
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: a862b01eb4fdbb654ce31419742c07ba22194ffa
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63387020"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65705974"
 ---
 # <a name="test-windows-uwp-and-81-phone-apps-with-coded-ui-tests"></a>使用自動程式碼 UI 測試來測試 Windows UWP 和 8.1 Phone 應用程式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -351,7 +351,7 @@ public void DataDrivingDemo_MyTestMethod(int x, int y)
  **答**：每次您使用 [UIMap - 自動程式碼 UI 測試產生器] 產生程式碼時，對 UIMapDesigner.cs 檔案中的程式碼所做的變更都會被覆寫。 如果您需要修改錄製的方法，必須將它複製到 UIMap.cs 檔案並重新命名。 UIMap.cs 檔案可用來覆寫 UIMapDesigner.cs 檔案中的方法和屬性。 您必須移除 Coded UITest.cs 檔案中原始方法的參考，並將它取代為重新命名的方法名稱。  
   
 ### <a name="q-can-i-run-a-coded-ui-test-on-my-windows-phone-app-from-the-command-line"></a>問：我可以從命令列我的 Windows Phone 應用程式中執行的自動程式化的 UI 測試嗎？  
- **答**：是，您可以使用 runsettings 檔案指定測試執行的目標裝置。 例如：  
+ **答**：是，您可以使用 runsettings 檔案指定測試執行的目標裝置。 例如:   
   
  **vstest.console.exe “pathToYourCodedUITestDll” /settings:devicetarget.runsettings**  
   
@@ -374,7 +374,7 @@ public void DataDrivingDemo_MyTestMethod(int x, int y)
   
 |功能|Windows 市集應用程式|Windows Phone 應用程式|  
 |-------------|------------------------|------------------------|  
-|執行測試的目標|本機或遠端電腦。 當您使用自動化測試案例執行測試時，可指定遠端電腦。 請參閱[在 Microsoft Test Manager 中自動化測試案例](http://msdn.microsoft.com/library/4e02568b-9cde-47cc-b41c-82726c177e42)。|模擬器或裝置。 請參閱，[問：執行測試，在模擬器上或我也可以使用實體裝置？](#TestingPhoneAppsCodedUI_EmulatorDevice)本主題中。|  
+|執行測試的目標|本機或遠端電腦。 當您使用自動化測試案例執行測試時，可指定遠端電腦。 請參閱[在 Microsoft Test Manager 中自動化測試案例](https://msdn.microsoft.com/library/4e02568b-9cde-47cc-b41c-82726c177e42)。|模擬器或裝置。 請參閱，[問：執行測試，在模擬器上或我也可以使用實體裝置？](#TestingPhoneAppsCodedUI_EmulatorDevice)本主題中。|  
 |從命令列執行|不需要使用設定檔案來指定目標。|不需要使用 Runsettings 檔案來指定目標。|  
 |殼層控制項的特製化類別|<xref:Microsoft.VisualStudio.TestTools.UITesting.DirectUIControls.DirectUIControl>|<xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl>|  
 |XAML 應用程式中的 WebView 控制項|如果使用 Html* 特製化類別與 HTML 項目互動，則支援。 請參閱 <xref:Microsoft.VisualStudio.TestTools.UITesting.HtmlControls>。|不支援。|  

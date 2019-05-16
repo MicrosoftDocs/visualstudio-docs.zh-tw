@@ -13,12 +13,12 @@ caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 8de573e8d5f46988868f18114fdabb07f62690e0
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 6b1af6a2900a579e7490f47f2e8ee4983310e19e
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63443170"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65698212"
 ---
 # <a name="visual-c-intellisense"></a>Visual C# IntelliSense
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,10 +41,10 @@ ms.locfileid: "63443170"
   C# 中的完成清單也十分聰明，可以篩選掉不相關的語彙基元，並根據內容預先選取語彙基元。 如需詳細資訊，請參閱 [C# 中已篩選的完成清單](../misc/filtered-completion-lists-in-csharp.md)和 [C# 中預先選取的完成清單項目](../misc/pre-selected-completion-list-items-in-csharp.md)。  
   
 ### <a name="CodeSnippets"></a> 完成清單中的程式碼片段  
- Visual C# 完成清單包含程式碼片段，可以協助您在程式中輕鬆地插入預先定義的程式碼主體。 在完成清單中，程式碼片段會顯示為片段的 [Shortcut 項目 (IntelliSense 程式碼片段)](http://msdn.microsoft.com/052cc97a-5c70-42f8-b398-4c3adf670cfa)。  如需 Visual C# 中所提供之預設程式碼片段的詳細資訊，請參閱 [Visual C# 程式碼片段](../ide/visual-csharp-code-snippets.md)。  
+ Visual C# 完成清單包含程式碼片段，可以協助您在程式中輕鬆地插入預先定義的程式碼主體。 在完成清單中，程式碼片段會顯示為片段的 [Shortcut 項目 (IntelliSense 程式碼片段)](https://msdn.microsoft.com/052cc97a-5c70-42f8-b398-4c3adf670cfa)。  如需 Visual C# 中所提供之預設程式碼片段的詳細資訊，請參閱 [Visual C# 程式碼片段](../ide/visual-csharp-code-snippets.md)。  
   
 ### <a name="Keywords"></a> 完成清單中的語言關鍵字  
- Visual C# 的完成清單也包含語言關鍵字。 如需 C# 語言關鍵字的詳細資訊，請參閱 [C# 關鍵字](http://msdn.microsoft.com/library/e929b0f2-4b92-4d37-8060-23d323b098ad)。  
+ Visual C# 的完成清單也包含語言關鍵字。 如需 C# 語言關鍵字的詳細資訊，請參閱 [C# 關鍵字](https://msdn.microsoft.com/library/e929b0f2-4b92-4d37-8060-23d323b098ad)。  
   
 ### <a name="ExtensionMethods"></a> 完成清單中的擴充方法  
  Visual C# 的完成清單包含範圍內的擴充方法。  
@@ -81,7 +81,7 @@ ms.locfileid: "63443170"
  IntelliSense 會記住您最近在 [[列出成員]](../ide/using-intellisense.md) 快顯方塊中選取的成員，自動完成物件名稱。 下次使用 [成員] 清單時，最近使用過的成員就會顯示在頂端。 IDE 會在每個工作階段之間，清除最近使用過的成員記錄。  
   
 ## <a name="override"></a>override  
- 當您鍵入 [override](http://msdn.microsoft.com/library/dd1907a8-acf8-46d3-80b9-c2ca4febada8)，然後按下空格鍵時，IntelliSense 即會在快顯清單方塊中顯示所有您可以覆寫的有效基底類別成員。 在 `override` 之後輸入方法的傳回類型，可提示 IntelliSense 僅顯示會傳回相同類型的方法。 當 IntelliSense 找不到任何相符項目時，它會顯示所有基底類別成員。  
+ 當您鍵入 [override](https://msdn.microsoft.com/library/dd1907a8-acf8-46d3-80b9-c2ca4febada8)，然後按下空格鍵時，IntelliSense 即會在快顯清單方塊中顯示所有您可以覆寫的有效基底類別成員。 在 `override` 之後輸入方法的傳回類型，可提示 IntelliSense 僅顯示會傳回相同類型的方法。 當 IntelliSense 找不到任何相符項目時，它會顯示所有基底類別成員。  
   
 ## <a name="automatic-code-generation"></a>自動產生程式碼  
   
@@ -102,7 +102,7 @@ ms.locfileid: "63443170"
  若要查看 Visual Studio IDE 中的可用選項，請在 [編輯] 功能表上，指向 [IntelliSense]，然後指向 [組合管理 Using]。 IDE 提供下列選項來組合管理和移除 `usings` 指示詞：  
   
 ### <a name="implement-interface"></a>實作介面  
- 在程式碼編輯器中工作時，IntelliSense 可提供協助您實作[介面](http://msdn.microsoft.com/library/7da38e81-4f99-4bc5-b07d-c986b687eeba)的選項。 一般來說，若要正確地實作介面，必須為類別中介面的每位成員建立方法宣告。 使用 IntelliSense 會在您於類別宣告中輸入介面名稱後，顯示智慧標籤。 您可利用智慧標籤，選擇要使用明確或隱含命名的方式進行自動實作介面。 在明確命名的情況下，方法宣告會使用介面的名稱; 而在隱含命名的情況下，方法宣告則不會指出其所屬的介面。 明確命名的介面方法只可透過介面執行個體而不是透過類別執行個體加以存取。 如需詳細資訊，請參閱[明確介面實作](http://msdn.microsoft.com/library/181c901f-0d4c-4f29-97fc-895079617bf2)。  
+ 在程式碼編輯器中工作時，IntelliSense 可提供協助您實作[介面](https://msdn.microsoft.com/library/7da38e81-4f99-4bc5-b07d-c986b687eeba)的選項。 一般來說，若要正確地實作介面，必須為類別中介面的每位成員建立方法宣告。 使用 IntelliSense 會在您於類別宣告中輸入介面名稱後，顯示智慧標籤。 您可利用智慧標籤，選擇要使用明確或隱含命名的方式進行自動實作介面。 在明確命名的情況下，方法宣告會使用介面的名稱; 而在隱含命名的情況下，方法宣告則不會指出其所屬的介面。 明確命名的介面方法只可透過介面執行個體而不是透過類別執行個體加以存取。 如需詳細資訊，請參閱[明確介面實作](https://msdn.microsoft.com/library/181c901f-0d4c-4f29-97fc-895079617bf2)。  
   
  實作介面將會產生最少數目的滿足介面之方法虛設常式。 如果基礎類別實作部分的介面，則不會重新產生這些虛設常式。  
   

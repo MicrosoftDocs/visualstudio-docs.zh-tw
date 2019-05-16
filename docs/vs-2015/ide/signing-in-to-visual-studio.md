@@ -10,12 +10,12 @@ caps.latest.revision: 34
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 6e655cf78db50f4fbd590c16dfa6561cbe376b83
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 96676ee8021e09a5e7d0a9808cea1e615f58717a
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60083955"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65679820"
 ---
 # <a name="signing-in-to-visual-studio"></a>登入 Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,7 +27,7 @@ ms.locfileid: "60083955"
 
 - 從 Visual Studio Dev Essentials 方案**存取各種權益** ，包括免費軟體、訓練、支援和更多。 如需詳細資訊，請查看 [Visual Studio Dev Essentials](https://aka.ms/vsdevhelp) 。
 
-- **同步處理您的 Visual Studio 設定** – 您自訂的設定，例如金鑰繫結、視窗配置和色彩佈景主題，會在您從任何裝置登入 Visual Studio 時立即套用。 請參閱 [Visual Studio 中的同步設定](http://msdn.microsoft.com/library/dn135229%28v=vs.120%29.aspx)。
+- **同步處理您的 Visual Studio 設定** – 您自訂的設定，例如金鑰繫結、視窗配置和色彩佈景主題，會在您從任何裝置登入 Visual Studio 時立即套用。 請參閱 [Visual Studio 中的同步設定](https://msdn.microsoft.com/library/dn135229%28v=vs.120%29.aspx)。
 
 - **永久地解除鎖定 Visual Studio Express 版本** – 只要您需要，即可以使用 Visual Studio Express 的任何版本，而不受限於 30 天的試用期。
 

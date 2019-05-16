@@ -11,12 +11,12 @@ caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 54d7bac2db7b1fb2a0a9e8b830a13646acd5300d
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 4c5713adc98a0b6ed3f57e604e2e1874b3d95f0a
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63428273"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65678868"
 ---
 # <a name="synchronized-settings-in-visual-studio"></a>Visual Studio 中的同步處理設定
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,7 +26,7 @@ ms.locfileid: "63428273"
 ## <a name="synchronized-settings"></a>同步設定
  預設會同步處理下列設定。
 
-- 開發設定 (您必須在第一次執行 Visual Studio 時選取一組設定，但是可以隨時變更選取範圍。 如需詳細資訊，請參閱 [Visual Studio 中的自訂開發設定](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3))。
+- 開發設定 (您必須在第一次執行 Visual Studio 時選取一組設定，但是可以隨時變更選取範圍。 如需詳細資訊，請參閱 [Visual Studio 中的自訂開發設定](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3))。
 
 - [工具] &#124; [選項] 頁面中的下列選項：
 

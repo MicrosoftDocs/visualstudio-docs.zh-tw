@@ -12,12 +12,12 @@ ms.assetid: 72e1d0f3-eef1-455e-b803-96827f030f50
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: db58e5d4b747c71e4b1394e5fc38a48391bee71e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: ab1adde4c7018f136f47769e16a8ce2fedf72c93
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58944942"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65687670"
 ---
 # <a name="wizard-vsz-file"></a>精靈檔 (.Vsz)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -43,7 +43,7 @@ Param="WIZARDUI = FALSE"
 |精靈|此欄位會包含 OLE ProgID 的精靈中，或者 cocreated ide 在精靈的 CLSID 的 GUID 字串表示。|  
 |參數|這些組件是選擇性的。 您可以新增所需數目。|  
   
- 參數可讓將額外的自訂參數傳遞給精靈.vsz 檔案。 每個值被當做 variant 的陣列中的字串項目精靈。 如需詳細資訊，請參閱 <<c0> [ 自訂參數](../../extensibility/internals/custom-parameters.md)。 如需如何使用在開發自訂精靈.vsz 檔案資訊，請參閱[。在 Vsz 檔案 （專案控制）](http://msdn.microsoft.com/library/b8678fee-6795-46d1-9338-48b22d5e9207)  
+ 參數可讓將額外的自訂參數傳遞給精靈.vsz 檔案。 每個值被當做 variant 的陣列中的字串項目精靈。 如需詳細資訊，請參閱 <<c0> [ 自訂參數](../../extensibility/internals/custom-parameters.md)。 如需如何使用在開發自訂精靈.vsz 檔案資訊，請參閱[。在 Vsz 檔案 （專案控制）](https://msdn.microsoft.com/library/b8678fee-6795-46d1-9338-48b22d5e9207)  
   
  若要加入.vsz 檔案中的預設地區設定識別碼，請指定`FALLBACK_LCID`= 的 xxxx，其中 xxxx 會是地區設定識別碼，例如，1033，代表英文。 當`FALLBACK_LCID`參數定義中，精靈會使用提供的後援地區設定識別碼，如果找不到目前的識別碼。  
   

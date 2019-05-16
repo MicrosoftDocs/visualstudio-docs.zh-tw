@@ -16,12 +16,12 @@ caps.latest.revision: 36
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 924e4414d668f4cb3a12f5d27b915117da0a7119
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 1d481bbc71019639588c793fee64acd34d5739e8
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63437221"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65680155"
 ---
 # <a name="error-list-window"></a>錯誤清單視窗
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -50,7 +50,7 @@ ms.locfileid: "63437221"
   若要排序清單，請按一下任何資料行標頭。 若要以另一個資料行來重新排序，請按住 SHIFT 鍵，然後按一下其他的資料行標頭。 若要選取要顯示和隱藏的資料行，請從捷徑功能表中選擇 [顯示行]。 若要變更已顯示的資料行順序，請將任一資料行標頭拖曳到左邊或右邊。  
   
 > [!NOTE]
-> 根據您目前使用的設定或版本，您所看到的對話方塊與功能表命令可能會與此處所描述的不同。 如果要變更設定，請按一下 [工具]/[匯入和匯出設定]。 如需詳細資訊，請參閱 [在 Visual Studio 中自訂開發設定](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)  
+> 根據您目前使用的設定或版本，您所看到的對話方塊與功能表命令可能會與此處所描述的不同。 如果要變更設定，請按一下 [工具]/[匯入和匯出設定]。 如需詳細資訊，請參閱 [在 Visual Studio 中自訂開發設定](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)  
   
 ## <a name="error-list-filters"></a>錯誤清單篩選條件  
  在兩個下拉式方塊中有兩種篩選型別，一個位於工具列的右邊，一個位於工具列的左邊。 位於工具列左邊的下拉式清單會指定一組可使用的程式碼檔案 ([整個解決方案]、[開啟的文件]、[目前專案] 和 [目前文件])。  

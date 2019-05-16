@@ -1,5 +1,5 @@
 ---
-title: HOW TO：建立活動設計工具程式庫 |Microsoft Docs
+title: 作法：建立活動設計工具程式庫 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-workflow-designer
@@ -9,12 +9,12 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a27dac0c82b2784eac84b174f5cb67719093aace
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: a51b4cdb67590b908bc406b78c04ddf0c5aa3e2f
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63444641"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65694548"
 ---
 # <a name="how-to-create-an-activity-designer-library"></a>HOW TO：建立活動設計工具程式庫
 自訂活動設計工具可讓您建立標準或自訂活動的使用者介面。 您可以控制使用者介面的複雜性，並且能為活動建立多個設計工具。 這個案例可讓您建立專為多個對象量身訂做的設計工具。  
@@ -40,7 +40,7 @@ ms.locfileid: "63444641"
   
 8. 專案範本是以 XAML 建立活動設計工具定義，以及使用原始程式碼建立程式碼後置實作檔案。 [!INCLUDE[wfd1](../includes/wfd1-md.md)] 會開啟並顯示活動設計工具的畫布。  
   
-9. 拖曳[!INCLUDE[avalon1](../includes/avalon1-md.md)]控制項從**工具箱**至設計介面，以在您的自訂活動設計工具中使用它們。  如需如何實作自訂活動設計工具的範例，請參閱[How to:建立自訂活動設計工具](http://msdn.microsoft.com/library/2f3aade6-facc-44ef-9657-a407ef8b9b31)。  
+9. 拖曳[!INCLUDE[avalon1](../includes/avalon1-md.md)]控制項從**工具箱**至設計介面，以在您的自訂活動設計工具中使用它們。  如需如何實作自訂活動設計工具的範例，請參閱[How to:建立自訂活動設計工具](https://msdn.microsoft.com/library/2f3aade6-facc-44ef-9657-a407ef8b9b31)。  
   
     > [!WARNING]
     > 自訂活動設計工具可以用於自訂活動，也可用於預設[!INCLUDE[netfx40_short](../includes/netfx40-short-md.md)]活動。  

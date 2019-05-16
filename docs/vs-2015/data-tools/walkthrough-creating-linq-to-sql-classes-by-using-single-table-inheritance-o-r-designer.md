@@ -9,12 +9,12 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 2dac656f9a765875fc552739b814538582200cc8
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: aa33d13623e1f7222eb831571d60d25404465dc4
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63424691"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65702972"
 ---
 # <a name="walkthrough-creating-linq-to-sql-classes-by-using-single-table-inheritance-or-designer"></a>逐步解說：使用單一資料表繼承 （O/R 設計工具） 中建立 LINQ to SQL 類別
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -98,7 +98,7 @@ ms.locfileid: "63424691"
     > [!NOTE]
     > Visual Basic 和 C# 專案都支援 [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]。 請使用下列其中一種語言，來建立新的專案。  
   
-3. 按一下  **Windows Forms 應用程式**範本，然後按一下 **確定**。 如需詳細資訊，請參閱 <<c0> [ 用戶端應用程式](http://msdn.microsoft.com/library/2dfb50b7-5af2-4e12-9bbb-c5ade0e39a68)。  
+3. 按一下  **Windows Forms 應用程式**範本，然後按一下 **確定**。 如需詳細資訊，請參閱 <<c0> [ 用戶端應用程式](https://msdn.microsoft.com/library/2dfb50b7-5af2-4e12-9bbb-c5ade0e39a68)。  
   
 4. InheritanceWalkthrough 專案已建立並加入**方案總管 中**。  
   
@@ -188,8 +188,8 @@ ms.locfileid: "63424691"
   
 ## <a name="see-also"></a>另請參閱  
  [LINQ to SQL 工具，在 Visual Studio 中](../data-tools/linq-to-sql-tools-in-visual-studio2.md)   
- [如何：加入 LINQ to SQL 類別加入專案 （O-R 設計工具）](http://msdn.microsoft.com/library/7bb184ab-ec54-4cda-b706-604b2b4a3ed6)   
- [逐步解說：建立 LINQ to SQL 類別 （O-R 設計工具）](http://msdn.microsoft.com/library/35aad4a4-2e8a-46e2-ae09-5fbfd333c233)   
+ [如何：加入 LINQ to SQL 類別加入專案 （O-R 設計工具）](https://msdn.microsoft.com/library/7bb184ab-ec54-4cda-b706-604b2b4a3ed6)   
+ [逐步解說：建立 LINQ to SQL 類別 （O-R 設計工具）](https://msdn.microsoft.com/library/35aad4a4-2e8a-46e2-ae09-5fbfd333c233)   
  [如何：指定預存程序，以執行更新、 插入和刪除 （O/R 設計工具）](../data-tools/how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-o-r-designer.md)   
- [LINQ to SQL](http://msdn.microsoft.com/library/73d13345-eece-471a-af40-4cc7a2f11655)   
- [如何：以 Visual Basic 或 C# 產生物件模型](http://msdn.microsoft.com/library/a0c73b33-5650-420c-b9dc-f49310c201ee)
+ [LINQ to SQL](https://msdn.microsoft.com/library/73d13345-eece-471a-af40-4cc7a2f11655)   
+ [如何：以 Visual Basic 或 C# 產生物件模型](https://msdn.microsoft.com/library/a0c73b33-5650-420c-b9dc-f49310c201ee)

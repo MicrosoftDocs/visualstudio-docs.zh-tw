@@ -17,12 +17,12 @@ caps.latest.revision: 51
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: b6c4ae0082d76b4eb9e58561daec48d196438bac
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 57a370dd8fd243deba8db9b9a928202d25c7836d
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63424752"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65675620"
 ---
 # <a name="walkthrough-creating-an-n-tier-data-application"></a>逐步解說：建立多層式架構 (N-Tier) 資料應用程式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,7 +41,7 @@ N-層 * 資料應用程式是應用程式存取資料而且分成多個邏輯層
   
 - 使用 [資料來源組態精靈]，以建立具類型資料集。  
   
-- 將產生[TableAdapters](http://msdn.microsoft.com/library/09416de9-134c-4dc7-8262-6c8d81e3f364)和資料集的程式碼分成離散專案。  
+- 將產生[TableAdapters](https://msdn.microsoft.com/library/09416de9-134c-4dc7-8262-6c8d81e3f364)和資料集的程式碼分成離散專案。  
   
 - 建立要呼叫到資料存取層的 Windows Communication Foundation (WCF) 服務。  
   
@@ -361,7 +361,7 @@ N-層 * 資料應用程式是應用程式存取資料而且分成多個邏輯層
  因為服務會傳回來自 Customers 和 Orders 資料表的資料，所以 maxReceivedMessageSize 的預設值不足以保留資料，因此必須予以增加。 在這個逐步解說中，您會將此值變更為 6553600。 您將在用戶端上變更此值，而這樣會自動更新服務參考。  
   
 > [!NOTE]
-> 較小的預設大小是要限制拒絕服務 (DoS) 攻擊的機率。 如需詳細資訊，請參閱<xref:System.ServiceModel.WSHttpBindingBase.MaxReceivedMessageSize%2A>。  
+> 較小的預設大小是要限制拒絕服務 (DoS) 攻擊的機率。 如需詳細資訊，請參閱 <xref:System.ServiceModel.WSHttpBindingBase.MaxReceivedMessageSize%2A>。  
   
 #### <a name="to-increase-the-maxreceivedmessagesize-value"></a>增加 maxReceivedMessageSize 值  
   
@@ -381,7 +381,7 @@ N-層 * 資料應用程式是應用程式存取資料而且分成多個邏輯層
 ## <a name="next-steps"></a>後續步驟  
  視應用程式的需求而定，在您儲存 Windows 應用程式中的關聯資料後，可能還要執行幾個步驟。 例如，您可以對此應用程式進行下列增強：  
   
-- 將驗證加入至資料集。 如需資訊，請參閱[逐步解說：將驗證新增至多層式架構資料應用程式](http://msdn.microsoft.com/library/b35d072c-31f0-49ba-a225-69177592c265)。  
+- 將驗證加入至資料集。 如需資訊，請參閱[逐步解說：將驗證新增至多層式架構資料應用程式](https://msdn.microsoft.com/library/b35d072c-31f0-49ba-a225-69177592c265)。  
   
 - 將其他方法加入至服務，以將資料更新回資料庫。  
   

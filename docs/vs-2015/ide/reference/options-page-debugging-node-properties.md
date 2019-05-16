@@ -9,12 +9,12 @@ caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a9ebedd1a764098d8e4a4866a9645d10aa999062
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: bd02ae0c3cd9f05e817e335b942a76c849655e44
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59670182"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65674734"
 ---
 # <a name="options-page-debugging-node-properties"></a>偵錯節點屬性、選項頁
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -81,10 +81,10 @@ ms.locfileid: "59670182"
 |EnableRPC|Get/Set (布林值)|決定偵錯工具是否可以逐步執行至 COM 遠端程序呼叫。|  
   
 ## <a name="see-also"></a>請參閱  
- [控制選項設定](http://msdn.microsoft.com/library/a09ed242-7494-4cde-bbd1-7a8ec617965d)   
- [在選項頁中決定屬性項目的名稱](http://msdn.microsoft.com/library/d450422d-47c7-4eeb-9f9f-3286264bc5aa)   
+ [控制選項設定](https://msdn.microsoft.com/library/a09ed242-7494-4cde-bbd1-7a8ec617965d)   
+ [在選項頁中決定屬性項目的名稱](https://msdn.microsoft.com/library/d450422d-47c7-4eeb-9f9f-3286264bc5aa)   
  [字型和色彩節點屬性、選項頁](../../ide/reference/options-page-fonts-and-colors-node-properties.md)   
  [文字編輯器節點屬性、選項頁](../../ide/reference/options-page-text-editor-node-properties.md)   
  [選項對話方塊、偵錯、一般](../../debugger/general-debugging-options-dialog-box.md)   
- [選項對話方塊、偵錯、編輯後繼續](http://msdn.microsoft.com/library/009d225f-ef65-463f-a146-e4c518f86103)   
+ [選項對話方塊、偵錯、編輯後繼續](https://msdn.microsoft.com/library/009d225f-ef65-463f-a146-e4c518f86103)   
  [選項對話方塊、偵錯、Just-In-Time](../../debugger/just-in-time-debugging-options-dialog-box.md)

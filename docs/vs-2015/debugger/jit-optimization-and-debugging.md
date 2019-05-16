@@ -17,12 +17,12 @@ caps.latest.revision: 16
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: b4a0cf53dcc9870b5d0c93d2fcaaf2d942fd9959
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 56b010a01ccd7e40e696653e13dd7c972c97a9cb
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58940818"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65690543"
 ---
 # <a name="jit-optimization-and-debugging"></a>JIT 最佳化和偵錯
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,4 +41,4 @@ ms.locfileid: "58940818"
  [偵錯 Managed 程式碼](../debugger/debugging-managed-code.md)   
  [使用偵錯工具巡覽程式碼](../debugger/navigating-through-code-with-the-debugger.md)   
  [附加到執行中的處理序](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)   
- [Managed 執行程序](http://msdn.microsoft.com/library/476b03dc-2b12-49a7-b067-41caeaa2f533)
+ [Managed 執行程序](https://msdn.microsoft.com/library/476b03dc-2b12-49a7-b067-41caeaa2f533)

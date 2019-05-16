@@ -1,5 +1,5 @@
 ---
-title: HOW TO：包含 ClickOnce 應用程式的必要條件 |Microsoft Docs
+title: 作法：包含 ClickOnce 應用程式的必要條件 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-deployment
@@ -9,20 +9,20 @@ caps.latest.revision: 18
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 1c2f3bfe9fc40aa21e02268bb403d7497ac41529
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: cdeb1b847b746807c80509f4390daf445f65d90f
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63433831"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65697661"
 ---
-# <a name="how-to-include-prerequisites-with-a-clickonce-application"></a>HOW TO：與 ClickOnce 應用程式一起納入必要軟體
+# <a name="how-to-include-prerequisites-with-a-clickonce-application"></a>作法：與 ClickOnce 應用程式一起納入必要軟體
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 在您隨 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 應用程式散發必要條件軟體之前，必須先將這些必要條件的安裝程式套件下載到您的開發電腦。 當您發行應用程式，並選擇**從我的應用程式的相同位置下載必要條件**，會發生錯誤，如果安裝程式套件不在**封裝**資料夾。  
   
 > [!NOTE]
-> 若要加入.NET Framework 的安裝程式套件，請參閱[適用於開發人員的.NET Framework 部署指南](http://msdn.microsoft.com/library/ee942965\(v=vs.110\).aspx)。  
+> 若要加入.NET Framework 的安裝程式套件，請參閱[適用於開發人員的.NET Framework 部署指南](https://msdn.microsoft.com/library/ee942965\(v=vs.110\).aspx)。  
   
 ## <a name="Package"></a> 若要使用 Package.xml 新增安裝程式套件  
   

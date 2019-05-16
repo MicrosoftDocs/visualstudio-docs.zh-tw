@@ -12,18 +12,18 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e9d8c539d91c95b03f4946e256de7a825a6df7ba
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: fb155cc7bbf4efbda54666f91f2db3f92e6c378c
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62976604"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65697080"
 ---
 # <a name="trycatch-activity-designer"></a>TryCatch 活動設計工具
 **TryCatch**活動設計工具會用來建立及設定<xref:System.Activities.Statements.TryCatch>活動。  
   
 ## <a name="the-trycatch-activity"></a>TryCatch 活動  
- <xref:System.Activities.Statements.TryCatch>活動包含<xref:System.Activities.Statements.TryCatch.Try%2A>活動，集合**攔截\<TException >** 和<xref:System.Activities.Statements.TryCatch.Finally%2A>活動。 A<xref:System.Activities.Statements.Catch%601>型別的**TException**包含<xref:System.Activities.Statements.Catch%601.ExceptionType%2A>和<xref:System.Activities.Statements.Catch%601.Action%2A>。 它們會共同用來實作一般例外狀況式錯誤處理機制。 <xref:System.Activities.Statements.TryCatch> 活動會嘗試執行其 <xref:System.Activities.Statements.TryCatch.Try%2A> 活動。 如果<xref:System.Activities.Statements.TryCatch.Try%2A>活動會擲回任何例外狀況<xref:System.Activities.Statements.TryCatch>活動會使用其**攔截 < TException\>** 集合以符合例外狀況。 如果沒有相符項目，則<xref:System.Activities.Statements.Catch%601.Action%2A>對應**攔截\<TException >** 執行時，做為錯誤處理邏輯的例外狀況。 如果 <xref:System.Activities.Statements.TryCatch.Try%2A> 區段中的活動順利完成，或 <xref:System.Activities.Statements.TryCatch.Catches%2A> 中的活動順利完成，則 <xref:System.Activities.Statements.TryCatch> 活動會執行它的 <xref:System.Activities.Statements.TryCatch.Finally%2A> 活動。 [!INCLUDE[crdefault](../includes/crdefault-md.md)][例外狀況](http://msdn.microsoft.com/library/065205cc-52dd-4f30-9578-b17d8d113136)。  
+ <xref:System.Activities.Statements.TryCatch>活動包含<xref:System.Activities.Statements.TryCatch.Try%2A>活動，集合**攔截\<TException >** 和<xref:System.Activities.Statements.TryCatch.Finally%2A>活動。 A<xref:System.Activities.Statements.Catch%601>型別的**TException**包含<xref:System.Activities.Statements.Catch%601.ExceptionType%2A>和<xref:System.Activities.Statements.Catch%601.Action%2A>。 它們會共同用來實作一般例外狀況式錯誤處理機制。 <xref:System.Activities.Statements.TryCatch> 活動會嘗試執行其 <xref:System.Activities.Statements.TryCatch.Try%2A> 活動。 如果<xref:System.Activities.Statements.TryCatch.Try%2A>活動會擲回任何例外狀況<xref:System.Activities.Statements.TryCatch>活動會使用其**攔截 < TException\>** 集合以符合例外狀況。 如果沒有相符項目，則<xref:System.Activities.Statements.Catch%601.Action%2A>對應**攔截\<TException >** 執行時，做為錯誤處理邏輯的例外狀況。 如果 <xref:System.Activities.Statements.TryCatch.Try%2A> 區段中的活動順利完成，或 <xref:System.Activities.Statements.TryCatch.Catches%2A> 中的活動順利完成，則 <xref:System.Activities.Statements.TryCatch> 活動會執行它的 <xref:System.Activities.Statements.TryCatch.Finally%2A> 活動。 [!INCLUDE[crdefault](../includes/crdefault-md.md)][例外狀況](https://msdn.microsoft.com/library/065205cc-52dd-4f30-9578-b17d8d113136)。  
   
 ### <a name="using-the-trycatch-activity-designer"></a>使用 TryCatch 活動設計工具  
  **TryCatch**活動設計工具可在**錯誤處理**分類**工具箱**，即可存取的哪一個**工具箱**  索引標籤上的左側[!INCLUDE[wfd2](../includes/wfd2-md.md)](或者，選取**工具列**從**檢視**功能表或 CTLR + ALT + X。)  

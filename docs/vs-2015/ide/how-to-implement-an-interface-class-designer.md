@@ -12,12 +12,12 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ee9289ebaeb12318ef83694f5dfb74b2930b8df1
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 1b437fb34902783002baedee992a21ee61a86c2e
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63416751"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65685629"
 ---
 # <a name="how-to-implement-an-interface-class-designer"></a>HOW TO：實作介面 (類別設計工具)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,7 +44,7 @@ ms.locfileid: "63416751"
 2. 開啟 [類別檢視]，並找出此介面。  
   
     > [!TIP]
-    > 如果未開啟 [類別檢視]，請從 [檢視] 功能表將其開啟。 如需類別檢視的詳細資訊，請參閱[檢視類別和其成員](http://msdn.microsoft.com/71e9e8f3-261a-4e0c-87bf-5ec48b8bf333)。  
+    > 如果未開啟 [類別檢視]，請從 [檢視] 功能表將其開啟。 如需類別檢視的詳細資訊，請參閱[檢視類別和其成員](https://msdn.microsoft.com/71e9e8f3-261a-4e0c-87bf-5ec48b8bf333)。  
   
 3. 將介面節點拖曳到圖表上的類別圖形。  
   

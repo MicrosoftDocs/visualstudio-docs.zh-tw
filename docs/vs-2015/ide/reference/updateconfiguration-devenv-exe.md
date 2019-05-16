@@ -13,12 +13,12 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 9ffc9410d64f58fff771a0e9b251ee1131eaea5e
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 2f20463cd91148143a1d3fb7f7de5cc1649d683c
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59670026"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65689343"
 ---
 # <a name="updateconfiguration-devenvexe"></a>/Updateconfiguration (devenv.exe)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -42,5 +42,5 @@ Devenv.exe /updateconfiguration
 ```  
   
 ## <a name="see-also"></a>請參閱  
- [在 Visual Studio 中自訂開發設定](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)   
+ [在 Visual Studio 中自訂開發設定](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)   
  [Devenv 命令列參數](../../ide/reference/devenv-command-line-switches.md)

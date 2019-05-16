@@ -10,12 +10,12 @@ ms.assetid: 24d2bffd-a35c-46db-8515-fd60b884b7fb
 caps.latest.revision: 30
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: c791d991f797a9ccc581fa6d79b0400c17c84e0e
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 14296aa335ba6710d4d9eac8e5338af7463c0aac
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63442265"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65687641"
 ---
 # <a name="walkthrough-creating-a-core-editor-and-registering-an-editor-file-type"></a>逐步解說：建立核心編輯器和註冊編輯器檔案類型
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,7 +36,7 @@ ms.locfileid: "63442265"
   
 ### <a name="to-create-the-vspackage"></a>若要建立 VSPackage  
   
-- 開始[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]並建立[!INCLUDE[csprcs](../includes/csprcs-md.md)]名為 VSPackage`MyPackage`中所述，[逐步解說：建立功能表命令的 VSPackage](http://msdn.microsoft.com/d699c149-5d1e-47ff-94c7-e1222af02c32)。  
+- 開始[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]並建立[!INCLUDE[csprcs](../includes/csprcs-md.md)]名為 VSPackage`MyPackage`中所述，[逐步解說：建立功能表命令的 VSPackage](https://msdn.microsoft.com/d699c149-5d1e-47ff-94c7-e1222af02c32)。  
   
 ### <a name="to-add-the-editor-factory"></a>若要加入編輯器 factory  
   

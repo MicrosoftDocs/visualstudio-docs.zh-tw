@@ -22,19 +22,19 @@ caps.latest.revision: 39
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 16a3868f564f39d4908adf74a6b1a44ae83ebc9d
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: b9bfa51dae4ab9ab08abf3493c747a471b924de1
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63437063"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65675907"
 ---
 # <a name="bind-wpf-controls-to-data-in-visual-studio"></a>將 WPF 控制項繫結至 Visual Studio 中的資料
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 您可以透過將資料繫結至 [!INCLUDE[TLA#tla_titlewinclient](../includes/tlasharptla-titlewinclient-md.md)] 控制項，對應用程式的使用者顯示資料。 若要建立這些資料繫結控制項，您可以將項目從**資料來源**視窗拖曳至[!INCLUDE[wpfdesigner_current_short](../includes/wpfdesigner-current-short-md.md)]在[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]。 本主題描述可用來建立資料繫結 [!INCLUDE[TLA#tla_titlewinclient](../includes/tlasharptla-titlewinclient-md.md)] 應用程式的一些最常用工作、工具和類別。
 
- 如需如何建立資料繫結控制項中的一般資訊[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]，請參閱 <<c2> [ 控制項繫結至 Visual Studio 中的資料](../data-tools/bind-controls-to-data-in-visual-studio.md)。 如需 [!INCLUDE[TLA#tla_titlewinclient](../includes/tlasharptla-titlewinclient-md.md)] 資料繫結的詳細資訊，請參閱[資料繫結概觀](http://msdn.microsoft.com/library/c707c95f-7811-401d-956e-2fffd019a211)。
+ 如需如何建立資料繫結控制項中的一般資訊[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]，請參閱 <<c2> [ 控制項繫結至 Visual Studio 中的資料](../data-tools/bind-controls-to-data-in-visual-studio.md)。 如需 [!INCLUDE[TLA#tla_titlewinclient](../includes/tlasharptla-titlewinclient-md.md)] 資料繫結的詳細資訊，請參閱[資料繫結概觀](https://msdn.microsoft.com/library/c707c95f-7811-401d-956e-2fffd019a211)。
 
 ## <a name="tasks-involved-in-binding-wpf-controls-to-data"></a>將 WPF 控制項繫結至資料的工作
  下表列出可透過從 [資料來源] 視窗將項目拖曳至 [!INCLUDE[wpfdesigner_current_short](../includes/wpfdesigner-current-short-md.md)] 所完成的工作。
@@ -98,7 +98,7 @@ ms.locfileid: "63437063"
  當您將物件或屬性從**資料來源**設計工具中，視窗[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]會產生[!INCLUDE[TLA#tla_titlexaml](../includes/tlasharptla-titlexaml-md.md)]建立資料繫結控制項 （或將現有控制項繫結至物件或屬性）。 不過，[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 不會產生可將資料填入物件的程式碼。 您必須自行撰寫此程式碼。
 
 > [!NOTE]
-> 自訂類別必須是公用的和，根據預設，具有不含參數的建構函式。 它們不能有 「 點 」，其語法中的巢狀的類別。 如需詳細資訊，請參閱 < [XAML 和自訂類別，如 WPF](http://msdn.microsoft.com/library/e7313137-581e-4a64-8453-d44e15a6164a)。
+> 自訂類別必須是公用的和，根據預設，具有不含參數的建構函式。 它們不能有 「 點 」，其語法中的巢狀的類別。 如需詳細資訊，請參閱 < [XAML 和自訂類別，如 WPF](https://msdn.microsoft.com/library/e7313137-581e-4a64-8453-d44e15a6164a)。
 
  [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 會產生[!INCLUDE[TLA#tla_titlexaml](../includes/tlasharptla-titlexaml-md.md)]，會進行下列作業：
 

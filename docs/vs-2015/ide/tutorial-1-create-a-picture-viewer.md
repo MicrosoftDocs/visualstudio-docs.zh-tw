@@ -9,12 +9,12 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 5044d499e4568dba73c6db0865f92edcf02be4ca
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: c382ff2a16e47f52a33e5c6728f0c57d57e4315b
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63443246"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65703057"
 ---
 # <a name="tutorial-1-create-a-picture-viewer"></a>教學課程 1：建立圖片檢視器
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,7 +49,7 @@ ms.locfileid: "63443246"
 >   
 > 若要查看 Visual Basic 程式碼，請選擇程式碼區塊頂端的 [VB] 索引標籤，若要查看 Visual C# 程式碼，請選擇 [C#] 索引標籤。如果您有興趣了解 Visual C++，請參閱[使用者入門](../misc/getting-started-with-visual-cpp-in-visual-studio-2015.md)和 [C++ 語言教學課程](http://www.cplusplus.com/doc/tutorial/)。  
 >   
-> 如果您有興趣了解如何撰寫 Windows 市集的 Visual C# 或 Visual Basic 應用程式，請參閱[使用 C# 或 Visual Basic 建立您的第一個 Windows 市集應用程式](http://msdn.microsoft.com/library/windows/apps/hh974581.aspx)。 如需建立適用於 Windows 市集之 JavaScript 應用程式的資訊，請參閱[使用 JavaScript 建立您的第一個 Windows 市集應用程式](http://msdn.microsoft.com/library/windows/apps/br211385.aspx)。  
+> 如果您有興趣了解如何撰寫 Windows 市集的 Visual C# 或 Visual Basic 應用程式，請參閱[使用 C# 或 Visual Basic 建立您的第一個 Windows 市集應用程式](https://msdn.microsoft.com/library/windows/apps/hh974581.aspx)。 如需建立適用於 Windows 市集之 JavaScript 應用程式的資訊，請參閱[使用 JavaScript 建立您的第一個 Windows 市集應用程式](https://msdn.microsoft.com/library/windows/apps/br211385.aspx)。  
   
 ## <a name="related-topics"></a>相關主題  
   

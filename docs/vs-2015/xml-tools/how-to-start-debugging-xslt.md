@@ -1,5 +1,5 @@
 ---
-title: HOW TO：開始偵錯 XSLT |Microsoft Docs
+title: 作法：開始偵錯 XSLT |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-xml-tools
@@ -9,12 +9,12 @@ caps.latest.revision: 4
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e3067b86c7474858379a26803e6809b1c21f8d21
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 9811963b6130c3b0c144feee928de915a4bd9ba9
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63433098"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65697013"
 ---
 # <a name="how-to-start-debugging-xslt"></a>HOW TO：開始偵錯 XSLT
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -89,4 +89,4 @@ namespace ConsoleApplication
   
 ## <a name="see-also"></a>另請參閱  
  [逐步解說：偵錯 XSLT 樣式表](../xml-tools/walkthrough-debug-an-xslt-style-sheet.md)   
- [程式碼逐步偵錯概觀](http://msdn.microsoft.com/8791dac9-64d1-4bb9-b59e-8d59af1833f9)
+ [程式碼逐步偵錯概觀](https://msdn.microsoft.com/8791dac9-64d1-4bb9-b59e-8d59af1833f9)

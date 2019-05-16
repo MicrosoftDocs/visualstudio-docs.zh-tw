@@ -12,12 +12,12 @@ ms.assetid: 8a042beb-b319-48e3-b3c8-9c8336ab371b
 caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 676251db2116e6d9101a0dcb6815f17a4e225192
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 50ea30c736a4606a7745e52057f2ca8f9afd2c5f
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58943168"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65673769"
 ---
 # <a name="idebugbreakpointrequest3"></a>IDebugBreakpointRequest3
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ IDebugBreakpointRequest3 : IDebugBreakpointRequest2
  工作階段的偵錯管理員 (SDM) 通常會實作這個介面。  
   
 ## <a name="notes-for-callers"></a>呼叫端資訊  
- 偵錯引擎 (DE) 存取這個介面，藉由呼叫[QueryInterface](http://msdn.microsoft.com/library/62fce95e-aafa-4187-b50b-e6611b74c3b3) IDebugBreakpointRequest2 介面的呼叫中收到[CreatePendingBreakpoint](../../../extensibility/debugger/reference/idebugengine2-creatependingbreakpoint.md)。  
+ 偵錯引擎 (DE) 存取這個介面，藉由呼叫[QueryInterface](https://msdn.microsoft.com/library/62fce95e-aafa-4187-b50b-e6611b74c3b3) IDebugBreakpointRequest2 介面的呼叫中收到[CreatePendingBreakpoint](../../../extensibility/debugger/reference/idebugengine2-creatependingbreakpoint.md)。  
   
 ## <a name="methods-in-vtable-order"></a>依照 Vtable 順序的方法  
  除了繼承自方法[IDebugBreakpointRequest2](../../../extensibility/debugger/reference/idebugbreakpointrequest2.md)，則`IDebugBreakpointRequest3`介面會公開下列方法。  

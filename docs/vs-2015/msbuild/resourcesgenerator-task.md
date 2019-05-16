@@ -18,12 +18,12 @@ caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 82a9df8d7d3fae774e27e29e659d02aec35c7593
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: fa8b438727160bb5a752643f7ef9791ca5e09245
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59662149"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65682143"
 ---
 # <a name="resourcesgenerator-task"></a>ResourcesGenerator 工作
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -60,4 +60,4 @@ ms.locfileid: "59662149"
  [工作參考](../msbuild/wpf-msbuild-task-reference.md)   
  [MSBuild 參考](../msbuild/msbuild-reference.md)   
  [工作參考](../msbuild/msbuild-task-reference.md)   
- [建置 WPF 應用程式 (WPF)](http://msdn.microsoft.com/library/a58696fd-bdad-4b55-9759-136dfdf8b91c)
+ [建置 WPF 應用程式 (WPF)](https://msdn.microsoft.com/library/a58696fd-bdad-4b55-9759-136dfdf8b91c)

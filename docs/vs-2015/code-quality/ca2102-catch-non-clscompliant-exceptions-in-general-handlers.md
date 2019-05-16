@@ -14,12 +14,12 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: fd018c927981c4a067e4dd0d52ef699490caa3fc
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 3fc0803e4ad73b08e99a05fa62930e039e1b7534
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58940681"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65687432"
 ---
 # <a name="ca2102-catch-non-clscompliant-exceptions-in-general-handlers"></a>CA2102:必須使用一般處理常式攔截非 CLSCompliant 例外狀況
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,7 +39,7 @@ ms.locfileid: "58940681"
 
 - C#: `catch {}`
 
-- C + +:`catch(...) {}`或 `catch(Object^) {}`
+- C++:`catch(...) {}`或 `catch(Object^) {}`
 
   在 catch 區塊中移除先前允許的權限時，未處理的非符合 CLS 規範的例外狀況就會成為安全性問題。 因為系統不會攔截非 CLS 標準的例外狀況，擲回不符合 CLS 規範的例外狀況的惡意方法可以執行以提高權限。
 
@@ -82,4 +82,4 @@ csc /r:ThrowNonClsCompliantException.dll CatchNonClsCompliantException.cs
  [CA1031:不要攔截一般例外狀況類型](../code-quality/ca1031-do-not-catch-general-exception-types.md)
 
 ## <a name="see-also"></a>另請參閱
- [例外狀況和例外狀況處理](http://msdn.microsoft.com/library/0001887f-4fa2-47e2-8034-2819477e2344) [Ilasm.exe （IL 組譯工具）](http://msdn.microsoft.com/library/4ca3a4f0-4400-47ce-8936-8e219961c76f) [覆寫安全性檢查](http://msdn.microsoft.com/4acdeff5-fc05-41bf-8505-7387cdbfca28)[語言獨立性以及與語言無關的元件](http://msdn.microsoft.com/library/4f0b77d0-4844-464f-af73-6e06bedeafc6)
+ [例外狀況和例外狀況處理](https://msdn.microsoft.com/library/0001887f-4fa2-47e2-8034-2819477e2344) [Ilasm.exe （IL 組譯工具）](https://msdn.microsoft.com/library/4ca3a4f0-4400-47ce-8936-8e219961c76f) [覆寫安全性檢查](https://msdn.microsoft.com/4acdeff5-fc05-41bf-8505-7387cdbfca28)[語言獨立性以及與語言無關的元件](https://msdn.microsoft.com/library/4f0b77d0-4844-464f-af73-6e06bedeafc6)

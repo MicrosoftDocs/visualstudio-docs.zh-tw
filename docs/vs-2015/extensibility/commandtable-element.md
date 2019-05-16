@@ -13,12 +13,12 @@ ms.assetid: 15c38159-660a-4ef4-9643-aa6fcfca82a9
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 538de61fed22f4bcfcb38022b41a81d1239f5f4e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 22cbe4fc34ae41f89709d5b20f2c1188edcd0de3
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58940685"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65685292"
 ---
 # <a name="commandtable-element"></a>CommandTable 項目
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -63,7 +63,7 @@ CommandTable 是.vsct 檔的根項目。 這是定義 VSPackage 提供給 IDE �
 |[VisibilityConstraints 元素](../extensibility/visibilityconstraints-element.md)|選擇性。 決定命令和工具列的靜態可見。|  
 |[KeyBindings 元素](../extensibility/keybindings-element.md)|選擇性。 如果有任何命令，請指定的快速鍵組合。|  
 |[UsedCommands 元素](../extensibility/usedcommands-element.md)|選擇性。 可讓 VSPackage 也可以選擇性地實作自己的版本，其他 Vspackage 原本支援的功能。|  
-|[Symbols 元素](http://msdn.microsoft.com/f2ddd0aa-c3dd-439e-834d-28f136a27ffa)|選擇性。 包含的所有符號資料-Guid、 識別碼和其他等等-編譯器。|  
+|[Symbols 元素](https://msdn.microsoft.com/f2ddd0aa-c3dd-439e-834d-28f136a27ffa)|選擇性。 包含的所有符號資料-Guid、 識別碼和其他等等-編譯器。|  
   
 ### <a name="parent-elements"></a>父項目  
   

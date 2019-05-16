@@ -11,17 +11,17 @@ ms.assetid: ffc89814-a7df-44fc-aef5-dd3dfeb28a9b
 caps.latest.revision: 49
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 6c93851445ff5c2c85bdfd18bf3a23270fdbc4a6
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 6132da236498867865717ccc7d1f470e2b990a86
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63445948"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65695122"
 ---
 # <a name="unit-tests-for-generic-methods"></a>泛型方法的單元測試
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-您可以產生泛型方法的單元測試跟您一樣的其他方法，如中所述[How to:建立和執行單元測試](http://msdn.microsoft.com/5e0f43cf-5e51-48e2-9c98-0eb9324bdc48)。 下列章節提供建立泛型方法之單元測試的相關資訊與範例。  
+您可以產生泛型方法的單元測試跟您一樣的其他方法，如中所述[How to:建立和執行單元測試](https://msdn.microsoft.com/5e0f43cf-5e51-48e2-9c98-0eb9324bdc48)。 下列章節提供建立泛型方法之單元測試的相關資訊與範例。  
   
 ## <a name="type-arguments-and-type-constraints"></a>類型引數和類型條件約束  
  在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 產生泛型類別 (例如 `MyList<T>`) 的單元測試時，會產生兩個方法：一個泛型協助程式方法和一個測試方法。 如果 `MyList<T>` 具有一個或多個類型條件約束，則此類型引數必須滿足所有類型條件約束。 為了確定待測泛型程式碼是否如預期般適用於允許的所有輸入，測試方法會使用您想測試的所有條件約束來呼叫泛型協助程式方法。  
@@ -117,7 +117,7 @@ public void SizeOfLinkedListTest()
 ```  
   
 > [!NOTE]
-> 每次 SizeOfLinkedListTest 測試執行時，都會呼叫其 TestHelper 方法兩次。 Assert 陳述式的計算結果每次都必須為 true，測試才會通過。 如果測試失敗，可能無法確定造成失敗的是指定 `<int>` 的呼叫，還是指定 `<char>` 的呼叫。 如果要找出答案，您可以檢查呼叫堆疊，也可以在測試方法中設定中斷點，然後在執行測試時同時進行偵錯。 如需詳細資訊，請參閱[如何：在 ASP.NET 方案中執行測試時偵錯](http://msdn.microsoft.com/library/de4d7aa1-4a1e-467e-a19b-4a85ec245b8b)。  
+> 每次 SizeOfLinkedListTest 測試執行時，都會呼叫其 TestHelper 方法兩次。 Assert 陳述式的計算結果每次都必須為 true，測試才會通過。 如果測試失敗，可能無法確定造成失敗的是指定 `<int>` 的呼叫，還是指定 `<char>` 的呼叫。 如果要找出答案，您可以檢查呼叫堆疊，也可以在測試方法中設定中斷點，然後在執行測試時同時進行偵錯。 如需詳細資訊，請參閱[如何：在 ASP.NET 方案中執行測試時偵錯](https://msdn.microsoft.com/library/de4d7aa1-4a1e-467e-a19b-4a85ec245b8b)。  
   
 ### <a name="TypeConstraintNotSatisfied"></a> 範例 2：使用類型條件約束  
  本範例示範泛型方法的單元測試，而該泛型方法使用了未能滿足的類型條件約束。 第一個區段顯示來自待測程式碼專案的程式碼。 其中的類型條件約束以反白顯示。  
@@ -198,5 +198,5 @@ namespace ClassLibrary2
 ```  
   
 ## <a name="see-also"></a>另請參閱  
- [單元測試的結構](http://msdn.microsoft.com/a03d1ee7-9999-4e7c-85df-7d9073976144)   
+ [單元測試的結構](https://msdn.microsoft.com/a03d1ee7-9999-4e7c-85df-7d9073976144)   
  [對程式碼進行單元測試](../test/unit-test-your-code.md)

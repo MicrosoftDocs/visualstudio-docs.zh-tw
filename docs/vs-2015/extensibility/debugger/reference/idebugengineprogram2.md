@@ -12,12 +12,12 @@ ms.assetid: 151003a9-2e4d-4acf-9f4d-365dfa6b9596
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: d16f5d74515bb79c082f2cd4560029d5d5196bb5
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 2c265cbfc89d0b637b1d2f37a3e3b9e948a8dd8f
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58943915"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65687792"
 ---
 # <a name="idebugengineprogram2"></a>IDebugEngineProgram2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ IDebugEngineProgram2 : IUnknown
  偵錯引擎會實作這個介面來支援多個執行緒同時進行偵錯。 這個介面實作的相同物件上實作[IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)介面。  
   
 ## <a name="notes-for-callers"></a>呼叫端資訊  
- 使用[QueryInterface](http://msdn.microsoft.com/library/62fce95e-aafa-4187-b50b-e6611b74c3b3)若要取得從這個介面`IDebugProgram2`介面。  
+ 使用[QueryInterface](https://msdn.microsoft.com/library/62fce95e-aafa-4187-b50b-e6611b74c3b3)若要取得從這個介面`IDebugProgram2`介面。  
   
 ## <a name="methods-in-vtable-order"></a>依照 Vtable 順序的方法  
  下表顯示的方法`IDebugEngineProgram2`。  

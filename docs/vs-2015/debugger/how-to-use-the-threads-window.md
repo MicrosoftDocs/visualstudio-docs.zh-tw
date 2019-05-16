@@ -1,5 +1,5 @@
 ---
-title: HOW TO：使用執行緒視窗 |Microsoft Docs
+title: 作法：使用執行緒視窗 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -24,14 +24,14 @@ caps.latest.revision: 48
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 280160127cc147cddd91a79c4290f80a311ee792
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 835843d2328d9d17ac899fc12c97251b7e6b4659
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63434866"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65685327"
 ---
-# <a name="how-to-use-the-threads-window"></a>HOW TO：使用執行緒視窗
+# <a name="how-to-use-the-threads-window"></a>作法：使用執行緒視窗
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 在 [**執行緒**] 視窗中，您可以檢查及使用您正在偵錯的應用程式中的執行緒。  
@@ -127,7 +127,7 @@ ms.locfileid: "63434866"
 ## <a name="freezing-and-thawing-threads"></a>凍結和解除凍結執行緒  
  當您凍結執行緒時，即使有可用的資源，系統還是不會開始執行執行緒。  
   
- 原生程式碼，您可以暫停或繼續執行緒，藉由呼叫 Windows 函式`SuspendThread`並`ResumeThread`或 MFC 函式[CWinThread::SuspendThread](http://msdn.microsoft.com/library/57189c7e-fd71-42e5-bc4b-3de7cd373d28)和[cwinthread:: Resumethread](http://msdn.microsoft.com/library/d6f97a2f-5c9f-4ee1-b978-d74938784db5). 如果您呼叫`SuspendThread`或是`ResumeThread`，您將變更*暫停計數*，會出現在**執行緒**視窗。 不過，如果您凍結或解除凍結原生執行緒，則不會變更暫停計數。 在機器碼中，除非將執行緒解除凍結，而且其暫停計數為零，否則無法執行執行緒。  
+ 原生程式碼，您可以暫停或繼續執行緒，藉由呼叫 Windows 函式`SuspendThread`並`ResumeThread`或 MFC 函式[CWinThread::SuspendThread](https://msdn.microsoft.com/library/57189c7e-fd71-42e5-bc4b-3de7cd373d28)和[cwinthread:: Resumethread](https://msdn.microsoft.com/library/d6f97a2f-5c9f-4ee1-b978-d74938784db5). 如果您呼叫`SuspendThread`或是`ResumeThread`，您將變更*暫停計數*，會出現在**執行緒**視窗。 不過，如果您凍結或解除凍結原生執行緒，則不會變更暫停計數。 在機器碼中，除非將執行緒解除凍結，而且其暫停計數為零，否則無法執行執行緒。  
   
  在 Managed 程式碼中，凍結或解除凍結執行緒並不會變更暫停計數。 在 Managed 程式碼中，已凍結執行緒的暫停計數為 1。 在機器碼中，除非透過 `SuspendThread` 呼叫暫停執行緒，否則已凍結執行緒的暫停計數為 0。  
   

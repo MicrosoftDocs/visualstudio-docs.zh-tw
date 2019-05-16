@@ -1,5 +1,5 @@
 ---
-title: HOW TO：尋找 ASP.NET 處理序的名稱 |Microsoft Docs
+title: 作法：尋找 ASP.NET 處理序的名稱 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -17,12 +17,12 @@ caps.latest.revision: 32
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: cc6d1ac72ef425a137f2a673b70b1c3215ed8001
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 53072013c1665687262d30f4a0c2720641c920be
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63438260"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65685948"
 ---
 # <a name="how-to-find-the-name-of-the-aspnet-process"></a>HOW TO：尋找 ASP.NET 處理序的名稱
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,7 +38,7 @@ ms.locfileid: "63438260"
   舊版 ASP 應用程式會在它們以同處理序 (In-Process) 方式執行時，於 IIS 處理序 inetinfo.exe 中執行。  
   
 > [!NOTE]
-> 根據您目前使用的設定或版本，您所看到的對話方塊與功能表命令可能會與 [說明] 中描述的不同。 若要變更設定，請從 [ **工具** ] 功能表中選取 [ **匯入和匯出設定** ]。 如需詳細資訊，請參閱 [在 Visual Studio 中自訂開發設定](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)  
+> 根據您目前使用的設定或版本，您所看到的對話方塊與功能表命令可能會與 [說明] 中描述的不同。 若要變更設定，請從 [ **工具** ] 功能表中選取 [ **匯入和匯出設定** ]。 如需詳細資訊，請參閱 [在 Visual Studio 中自訂開發設定](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)  
   
 ### <a name="to-determine-whether-project-code-resides-on-the-file-system-or-iis"></a>若要判斷專案程式碼是位於檔案系統或 IIS 上  
   

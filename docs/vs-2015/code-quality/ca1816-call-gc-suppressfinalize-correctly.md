@@ -15,12 +15,12 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 50375390b3a09ec18fcccd45e4eaee7e9fe102e2
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 031003e4989e6018a250045f5fa8550a7ec2033a
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60094784"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65683025"
 ---
 # <a name="ca1816-call-gcsuppressfinalize-correctly"></a>CA1816:正確呼叫 GC.SuppressFinalize
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -75,4 +75,4 @@ ms.locfileid: "60094784"
  [CA2216:可處置類型應該宣告完成項](../code-quality/ca2216-disposable-types-should-declare-finalizer.md)
 
 ## <a name="see-also"></a>另請參閱
- [Dispose 模式](http://msdn.microsoft.com/library/31a6c13b-d6a2-492b-9a9f-e5238c983bcb)
+ [Dispose 模式](https://msdn.microsoft.com/library/31a6c13b-d6a2-492b-9a9f-e5238c983bcb)

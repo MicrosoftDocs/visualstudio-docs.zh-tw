@@ -33,12 +33,12 @@ caps.latest.revision: 40
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 6e50f19c4889e5f15c7dc3d458d1347912ecbc1d
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: be15b683a6e173d813ea13eaa0cc400a40e68206
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63439181"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65690513"
 ---
 # <a name="managing-exceptions-with-the-debugger"></a>使用偵錯工具管理例外狀況
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -186,5 +186,5 @@ public class GenericException<T> : Exception
  [如何：在 例外狀況後檢查系統程式碼](../debugger/how-to-examine-system-code-after-an-exception.md)   
  [如何：使用原生執行階段檢查](../debugger/how-to-use-native-run-time-checks.md)   
  [使用執行階段檢查時不使用 C 執行階段程式庫](../debugger/using-run-time-checks-without-the-c-run-time-library.md)   
- [例外狀況助理](http://msdn.microsoft.com/library/992892ac-9d52-44cc-bf09-b44bfc5befeb)   
+ [例外狀況助理](https://msdn.microsoft.com/library/992892ac-9d52-44cc-bf09-b44bfc5befeb)   
  [偵錯工具基礎](../debugger/debugger-basics.md)

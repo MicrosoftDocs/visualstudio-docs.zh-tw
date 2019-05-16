@@ -11,22 +11,22 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 5df1a0a6c3500da646d499ffacc3bb9827408c24
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: f6e9fb8731c50080e30dfe6686d69bd57fa14a3c
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63433666"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65674489"
 ---
 # <a name="options-dialog-box-projects-and-solutions-web-projects"></a>選項對話方塊、專案和方案、Web 專案
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 設定 Web 專案將用來在 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 內進行開發的 Web 伺服器。 若要存取此對話方塊，請按一下 [工具選項]。 展開 [專案和方案]，然後按一下 [Web 專案]。  
   
- 根據預設，當您在 Visual Studio 中執行 Web 專案時 (例如，使用 F5 或 Ctrl+F5)，Visual Studio 會使用 Visual Studio 程式開發伺服器。 如需詳細資訊，請參閱 [Visual Studio 中 ASP.NET Web 專案的 Web 伺服器](http://msdn.microsoft.com/31d4f588-df59-4b7e-b9ea-e1f2dd204328)。  
+ 根據預設，當您在 Visual Studio 中執行 Web 專案時 (例如，使用 F5 或 Ctrl+F5)，Visual Studio 會使用 Visual Studio 程式開發伺服器。 如需詳細資訊，請參閱 [Visual Studio 中 ASP.NET Web 專案的 Web 伺服器](https://msdn.microsoft.com/31d4f588-df59-4b7e-b9ea-e1f2dd204328)。  
   
 > [!NOTE]
-> 根據您目前使用的設定或版本，您所看到的對話方塊可用選項，以及功能表命令的名稱和位置，可能會與 [說明] 中描述的有所不同。 撰寫此說明頁時，主要是以 [Web 設定] 為考量。 若要檢視或變更您的設定，請選擇 [工具] 功能表上的 [匯入和匯出設定]。 如需詳細資訊，請參閱 [在 Visual Studio 中自訂開發設定](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)  
+> 根據您目前使用的設定或版本，您所看到的對話方塊可用選項，以及功能表命令的名稱和位置，可能會與 [說明] 中描述的有所不同。 撰寫此說明頁時，主要是以 [Web 設定] 為考量。 若要檢視或變更您的設定，請選擇 [工具] 功能表上的 [匯入和匯出設定]。 如需詳細資訊，請參閱 [在 Visual Studio 中自訂開發設定](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)  
   
 ## <a name="settings"></a>設定  
  **將 64 位元版本的 IIS Express 用於網站和專案**  

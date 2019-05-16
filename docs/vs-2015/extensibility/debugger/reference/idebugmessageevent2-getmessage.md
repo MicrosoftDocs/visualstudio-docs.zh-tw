@@ -13,12 +13,12 @@ ms.assetid: 9fca7285-f7f1-422d-8565-92bf0e0db60a
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: e571a7ba2116c093f8d4e4afd78fffc5014ae906
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 14eb540962db3a806273d5c76facb7f9bf25dee7
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58939362"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65685901"
 ---
 # <a name="idebugmessageevent2getmessage"></a>IDebugMessageEvent2::GetMessage
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -55,10 +55,10 @@ int GetMessage( 
  [out]傳回訊息。  
   
  `pdwType`  
- [out]傳回的訊息，並使用 Win32 的慣例類型`MessageBox`函式。 請參閱[AfxMessageBox](http://msdn.microsoft.com/library/d66d0328-cdcc-48f6-96a4-badf089099c8)函式，如需詳細資訊。  
+ [out]傳回的訊息，並使用 Win32 的慣例類型`MessageBox`函式。 請參閱[AfxMessageBox](https://msdn.microsoft.com/library/d66d0328-cdcc-48f6-96a4-badf089099c8)函式，如需詳細資訊。  
   
  `pbstrHelpFileName`  
- [in、 out]傳回說明檔名稱。 可能是 null （c + +） 或空值 (C#)，如果沒有說明檔。  
+ [in、 out]傳回說明檔名稱。 可能是 null (C++) 或空白 (C#) 值，如果沒有說明檔。  
   
  `pdwHelpId`  
  [in、 out]傳回的說明識別碼。 可能是 0，如果沒有說明關聯與此訊息。  
@@ -69,4 +69,4 @@ int GetMessage( 
 ## <a name="see-also"></a>另請參閱  
  [IDebugMessageEvent2](../../../extensibility/debugger/reference/idebugmessageevent2.md)   
  [MESSAGETYPE](../../../extensibility/debugger/reference/messagetype.md)   
- [AfxMessageBox](http://msdn.microsoft.com/library/d66d0328-cdcc-48f6-96a4-badf089099c8)
+ [AfxMessageBox](https://msdn.microsoft.com/library/d66d0328-cdcc-48f6-96a4-badf089099c8)

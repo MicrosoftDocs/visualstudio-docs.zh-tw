@@ -19,12 +19,12 @@ caps.latest.revision: 26
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: e8a2bd058faa2c3ef9d17a82ad08dd3ad28842a8
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 6a1dbe6d96dd9e35b1bfac4a84fb1006c2b99c69
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63445633"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65683841"
 ---
 # <a name="visual-studio-integration-msbuild"></a>Visual Studio 整合 (MSBuild)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -55,7 +55,7 @@ Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' 
  [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 會查看 `PropertyGroup`、`ItemGroup`、`Import`、屬性和項目的條件，以便建立這份清單。  
   
 ## <a name="additional-build-actions"></a>其他建置動作  
- [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 可讓您使用[檔案屬性](http://msdn.microsoft.com/013c4aed-08d6-4dce-a124-ca807ca08959)視窗的 [建置動作] 屬性，來變更專案中檔案的項目類型名稱。 `Compile`、 `EmbeddedResource`、 `Content`和 `None` 等項目類型名稱會一直列在這個功能表中，另外還會列出專案中既有的其他項目類型名稱。 若要確保自訂的項目類型名稱都會一直列在這個功能表中，您可以將其名稱加入至名為 `AvailableItemName`的項目類型中。 例如，如果在專案檔中加入下列程式碼，就會將自訂類型 `JScript` 加入至所有會匯入此類型之專案的這個功能表中：  
+ [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 可讓您使用[檔案屬性](https://msdn.microsoft.com/013c4aed-08d6-4dce-a124-ca807ca08959)視窗的 [建置動作] 屬性，來變更專案中檔案的項目類型名稱。 `Compile`、 `EmbeddedResource`、 `Content`和 `None` 等項目類型名稱會一直列在這個功能表中，另外還會列出專案中既有的其他項目類型名稱。 若要確保自訂的項目類型名稱都會一直列在這個功能表中，您可以將其名稱加入至名為 `AvailableItemName`的項目類型中。 例如，如果在專案檔中加入下列程式碼，就會將自訂類型 `JScript` 加入至所有會匯入此類型之專案的這個功能表中：  
   
 ```  
 <ItemGroup>  

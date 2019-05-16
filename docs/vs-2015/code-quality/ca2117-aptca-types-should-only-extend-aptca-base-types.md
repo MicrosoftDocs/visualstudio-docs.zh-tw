@@ -15,12 +15,12 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 345a8649561eaadc88616b699fcb9873cfadf292
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 078b7f5535dc80261917ef662b3a2f0069cb33a8
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58943663"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65687305"
 ---
 # <a name="ca2117-aptca-types-should-only-extend-aptca-base-types"></a>CA2117:APTCA 類型應該只擴充 APTCA 基底類型
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,7 +36,7 @@ ms.locfileid: "58943663"
  公用或受保護的類型與組件中<xref:System.Security.AllowPartiallyTrustedCallersAttribute?displayProperty=fullName>屬性繼承自沒有屬性的組件中宣告的型別。
 
 ## <a name="rule-description"></a>規則描述
- 根據預設，使用強式名稱的組件中的公用或受保護的類型隱含地受到[繼承要求](http://msdn.microsoft.com/28b9adbb-8f08-4f10-b856-dbf59eb932d9)完全信任。 強式名稱組件標示<xref:System.Security.AllowPartiallyTrustedCallersAttribute>(APTCA) 屬性並沒有這項保護。 屬性會停用繼承要求。 這可讓組件中宣告可繼承公開型別並未受完全信任的類型。
+ 根據預設，使用強式名稱的組件中的公用或受保護的類型隱含地受到[繼承要求](https://msdn.microsoft.com/28b9adbb-8f08-4f10-b856-dbf59eb932d9)完全信任。 強式名稱組件標示<xref:System.Security.AllowPartiallyTrustedCallersAttribute>(APTCA) 屬性並沒有這項保護。 屬性會停用繼承要求。 這可讓組件中宣告可繼承公開型別並未受完全信任的類型。
 
  APTCA 屬性存在於上是完全受信任的組件，組件中的型別繼承自不允許部分信任呼叫端的類型，產生安全性弱點時，可能。 如果兩種型別`T1`並`T2`符合下列條件，惡意呼叫端可以使用型別`T1`略過隱含的完全信任的繼承要求保護`T2`:
 
@@ -84,4 +84,4 @@ ms.locfileid: "58943663"
  [CA2116:APTCA 方法應該只呼叫 APTCA 方法](../code-quality/ca2116-aptca-methods-should-only-call-aptca-methods.md)
 
 ## <a name="see-also"></a>另請參閱
- [安全程式碼撰寫指導方針](http://msdn.microsoft.com/library/4f882d94-262b-4494-b0a6-ba9ba1f5f177) [.NET Framework 組件可由呼叫部分信任程式碼](http://msdn.microsoft.com/a417fcd4-d3ca-4884-a308-3a1a080eac8d)[使用程式庫，從部分信任的程式碼](http://msdn.microsoft.com/library/dd66cd4c-b087-415f-9c3e-94e3a1835f74)[繼承要求](http://msdn.microsoft.com/28b9adbb-8f08-4f10-b856-dbf59eb932d9)
+ [安全程式碼撰寫指導方針](https://msdn.microsoft.com/library/4f882d94-262b-4494-b0a6-ba9ba1f5f177) [.NET Framework 組件可由呼叫部分信任程式碼](https://msdn.microsoft.com/a417fcd4-d3ca-4884-a308-3a1a080eac8d)[使用程式庫，從部分信任的程式碼](https://msdn.microsoft.com/library/dd66cd4c-b087-415f-9c3e-94e3a1835f74)[繼承要求](https://msdn.microsoft.com/28b9adbb-8f08-4f10-b856-dbf59eb932d9)

@@ -8,12 +8,12 @@ ms.assetid: 11232a83-73ea-46bd-bc0c-46f74f6e3a42
 caps.latest.revision: 35
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 42db6024353e3b26ddcaf6b5fa838ff791d964f4
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 4ab38f4fc7e0269c1073e71fae9975b240da33f2
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63445903"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65695095"
 ---
 # <a name="upgrading-coded-ui-tests-from-visual-studio-2010"></a>升級 Visual Studio 2010 的自動程式化 UI 測試
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,7 +25,7 @@ ms.locfileid: "63445903"
 - Visual Studio 企業版
 
 > [!NOTE]
-> Visual Studio 包含一個以上的測試專案類型。 如果您要建立新的自動程式碼 UI 測試，則必須在自動程式碼 UI 測試專案類型中建立。 如需詳細資訊，請參閱 [從舊版 Visual Studio 升級測試](http://msdn.microsoft.com/e9c8b7f6-bd72-448e-8edb-d090dcc5cf52)。
+> Visual Studio 包含一個以上的測試專案類型。 如果您要建立新的自動程式碼 UI 測試，則必須在自動程式碼 UI 測試專案類型中建立。 如需詳細資訊，請參閱 [從舊版 Visual Studio 升級測試](https://msdn.microsoft.com/e9c8b7f6-bd72-448e-8edb-d090dcc5cf52)。
 
 > [!WARNING]
 > 當您在[!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)] 或 [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] 連同 [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)] 中開啟測試專案，則必須重建包含自動程式碼 UI 測試的 [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)]個測試專案。
@@ -64,4 +64,4 @@ ms.locfileid: "63445903"
 - **負載測試：** 當您執行負載測試，而網路類型並非區域網路 (LAN) 設定檔的電腦上執行 Windows 8 時，網路模擬器驅動程式會導致作業系統當機。 如需詳細資訊，請參閱 [知識庫文件 2736182](http://support.microsoft.com/kb/2736182)。
 
 ## <a name="see-also"></a>另請參閱
- [移植、 移轉和升級 Visual Studio 專案](../porting/porting-migrating-and-upgrading-visual-studio-projects.md)[從舊版的 Visual Studio 升級測試](http://msdn.microsoft.com/e9c8b7f6-bd72-448e-8edb-d090dcc5cf52)[使用 UI 自動化來測試您的程式碼](../test/use-ui-automation-to-test-your-code.md)[產生自動程式化 UI 測試，從現有的動作錄影](http://msdn.microsoft.com/library/56736963-9027-493b-b5c4-2d4e86d1d497)[支援組態和平台自動程式化的 UI 測試和動作記錄](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)
+ [移植、 移轉和升級 Visual Studio 專案](../porting/porting-migrating-and-upgrading-visual-studio-projects.md)[從舊版的 Visual Studio 升級測試](https://msdn.microsoft.com/e9c8b7f6-bd72-448e-8edb-d090dcc5cf52)[使用 UI 自動化來測試您的程式碼](../test/use-ui-automation-to-test-your-code.md)[產生自動程式化 UI 測試，從現有的動作錄影](https://msdn.microsoft.com/library/56736963-9027-493b-b5c4-2d4e86d1d497)[支援組態和平台自動程式化的 UI 測試和動作記錄](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)

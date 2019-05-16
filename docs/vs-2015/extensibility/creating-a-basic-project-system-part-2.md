@@ -12,12 +12,12 @@ ms.assetid: aee48fc6-a15f-4fd5-8420-7f18824de220
 caps.latest.revision: 24
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: b4709cc5f011dd55445583c46dd96894b979647c
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: b6d44e99b584ec347abd407753f965170658969b
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63435543"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65685417"
 ---
 # <a name="creating-a-basic-project-system-part-2"></a>建立基本的專案系統，第 2 部分
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -281,7 +281,7 @@ ZipProjects:
   
 - $safeprojectname$ 是中的使用者所提供的名稱**新的專案**對話方塊中，修改以移除所有 unsafe 字元和空格。  
   
-  如需完整的範本參數清單，請參閱[範本參數](../ide/template-parameters.md)。  如果您想要建立您自己的自訂範本參數，請參閱[NIB:HOW TO：將自訂參數傳遞至範本](http://msdn.microsoft.com/5bc2ad11-84c7-4683-a276-e5e00d85d8fb)。  
+  如需完整的範本參數清單，請參閱[範本參數](../ide/template-parameters.md)。  如果您想要建立您自己的自訂範本參數，請參閱[NIB:作法：將自訂參數傳遞至範本](https://msdn.microsoft.com/5bc2ad11-84c7-4683-a276-e5e00d85d8fb)。  
   
 #### <a name="to-substitute-project-template-parameters"></a>若要替代專案範本的參數  
   

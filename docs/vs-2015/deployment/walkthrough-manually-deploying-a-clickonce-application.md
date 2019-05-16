@@ -21,12 +21,12 @@ caps.latest.revision: 51
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: baa62dc48b329cd3639c0623fccfdbe2325cf9e3
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 239fdcea9b8b9613bcdaa2419aba211c2a2a98f4
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63429129"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65686331"
 ---
 # <a name="walkthrough-manually-deploying-a-clickonce-application"></a>逐步解說：手動部署 ClickOnce 應用程式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -206,8 +206,8 @@ ms.locfileid: "63429129"
  當您需要部署新版本的應用程式時，建立新的版本命名的新目錄 — 比方說，1.0.0.1—and 將新的應用程式檔案複製到新的目錄。 接著，您必須遵循上述步驟來建立和簽署新的應用程式資訊清單中，並更新和部署資訊清單簽章。 請務必指定相同的更高版本中這兩個 Mage.exe`-New`和`–Update`呼叫，做為[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]只更新較高的版本中，最重要的最左邊的整數。 如果您使用 MageUI.exe 時，您可以更新部署資訊清單開啟它，選取**應用程式參考**索引標籤上，按一下**選取 資訊清單**按鈕，然後再選取 已更新應用程式資訊清單。  
   
 ## <a name="see-also"></a>另請參閱  
- [Mage.exe (資訊清單產生和編輯工具)](http://msdn.microsoft.com/library/77dfe576-2962-407e-af13-82255df725a1)   
- [MageUI.exe (圖形用戶端、資訊清單產生和編輯工具)](http://msdn.microsoft.com/library/f9e130a6-8117-49c4-839c-c988f641dc14)   
+ [Mage.exe (資訊清單產生和編輯工具)](https://msdn.microsoft.com/library/77dfe576-2962-407e-af13-82255df725a1)   
+ [MageUI.exe (圖形用戶端、資訊清單產生和編輯工具)](https://msdn.microsoft.com/library/f9e130a6-8117-49c4-839c-c988f641dc14)   
  [發佈 ClickOnce 應用程式](../deployment/publishing-clickonce-applications.md)   
  [ClickOnce 部署資訊清單](../deployment/clickonce-deployment-manifest.md)   
  [ndptecclick](../deployment/clickonce-application-manifest.md)

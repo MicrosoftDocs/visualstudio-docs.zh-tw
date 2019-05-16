@@ -9,12 +9,12 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 1f02018ed9ddb6f91f965d28767cde55e4c3e524
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 7b4061a5bc253782e7ca28478259efb4027c61f9
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63437299"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65674747"
 ---
 # <a name="introduction-to-wpf"></a>WPF 簡介
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -146,7 +146,7 @@ End Namespace
 ## <a name="Controls"></a> 控制項  
  應用程式模型所傳遞的使用者體驗是已建構的控制項。 在 WPF 中，「控制項」是一個籠統的名詞，泛指裝載於視窗或頁面上之具有使用者介面並實作一些行為的某種 WPF 類別。  
   
- 如需詳細資訊，請參閱 [控制項](http://msdn.microsoft.com/library/3f255a8a-35a8-4712-9065-472ff7d75599)。  
+ 如需詳細資訊，請參閱 [控制項](https://msdn.microsoft.com/library/3f255a8a-35a8-4712-9065-472ff7d75599)。  
   
 ### <a name="wpf-controls-by-function"></a>依功能列出 WPF 控制項  
  以下列出內建 WPF 控制項。  

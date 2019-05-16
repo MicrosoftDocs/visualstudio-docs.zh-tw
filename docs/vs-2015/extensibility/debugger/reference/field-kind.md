@@ -12,12 +12,12 @@ ms.assetid: fd522b9c-52e2-42fa-939d-343347d5c3b1
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: d18d032043370a266fdccdcf56e68d574913f3ce
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: ab972df2cf1b382498d2e57a5ae2e978c7230a34
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58942893"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65692882"
 ---
 # <a name="fieldkind"></a>FIELD_KIND
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -226,7 +226,7 @@ public enum enum_FIELD_KIND {
 ## <a name="remarks"></a>備註  
  從呼叫傳回[GetKind](../../../extensibility/debugger/reference/idebugfield-getkind.md)方法。  
   
- 欄位中，視[QueryInterface](http://msdn.microsoft.com/library/62fce95e-aafa-4187-b50b-e6611b74c3b3)上可呼叫[IDebugField](../../../extensibility/debugger/reference/idebugfield.md)更特定形式的介面的介面。 比方說，如果[GetKind](../../../extensibility/debugger/reference/idebugfield-getkind.md)會傳回`FIELD_TYPE_METHOD`，然後您可以呼叫`QueryInterface`上我`DebugField`取得[IDebugMethodField](../../../extensibility/debugger/reference/idebugmethodfield.md)介面。  
+ 欄位中，視[QueryInterface](https://msdn.microsoft.com/library/62fce95e-aafa-4187-b50b-e6611b74c3b3)上可呼叫[IDebugField](../../../extensibility/debugger/reference/idebugfield.md)更特定形式的介面的介面。 比方說，如果[GetKind](../../../extensibility/debugger/reference/idebugfield-getkind.md)會傳回`FIELD_TYPE_METHOD`，然後您可以呼叫`QueryInterface`上我`DebugField`取得[IDebugMethodField](../../../extensibility/debugger/reference/idebugmethodfield.md)介面。  
   
 ## <a name="requirements"></a>需求  
  標頭： sh.h  

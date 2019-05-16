@@ -9,12 +9,12 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 126aa1ad57aa5f8961803b8443365c208f5623ff
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: c3f1533df24af802ae0c9950d4765ea0a0bf04da
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63421256"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65693538"
 ---
 # <a name="walkthrough-create-a-wpf-desktop-application-connected-to-an-azure-mobile-service"></a>逐步解說：建立連接至 Azure 行動服務的 WPF 桌面應用程式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,7 +28,7 @@ ms.locfileid: "63421256"
   
 - 使用中的 Microsoft Azure 帳戶。  
   
-    - 您可以在 [這裡](http://azure.microsoft.com/pricing/free-trial/)註冊免費試用帳戶。  
+    - 您可以在 [這裡](https://azure.microsoft.com/pricing/free-trial/)註冊免費試用帳戶。  
   
     - 您可以啟動 [MSDN 訂閱者權益](https://azure.microsoft.com/pricing/member-offers/msdn-benefits-details/?WT.mc_id=A261C142F)。 MSDN 訂閱可每月提供信用額度，讓您使用付費型 Azure 服務。  
   
@@ -566,7 +566,7 @@ ms.locfileid: "63421256"
   
  您可以加入色彩、圖案、圖形甚至動畫，讓使用者介面更吸引人。 請參閱[在 Visual Studio 和 Blend for Visual Studio 中設計 XAML](../designers/designing-xaml-in-visual-studio.md)。  
   
- 您可以連接到現有的 SQL 資料庫或其他使用 Azure 行動服務的資料來源。 請參閱 [行動服務文件](http://azure.microsoft.com/services/app-service/mobile/)。  
+ 您可以連接到現有的 SQL 資料庫或其他使用 Azure 行動服務的資料來源。 請參閱 [行動服務文件](https://azure.microsoft.com/services/app-service/mobile/)。  
   
 ## <a name="see-also"></a>另請參閱  
  [逐步解說：我第一個 WPF 桌面應用程式](../designers/walkthrough-my-first-wpf-desktop-application2.md)   

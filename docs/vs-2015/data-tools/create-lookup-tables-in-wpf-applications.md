@@ -22,12 +22,12 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 8401a41c479dea70289cd0ebf072fc3b57eff78d
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: cd92d75e297055b65d05bef42d497e65c2a996d6
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63434515"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65697916"
 ---
 # <a name="create-lookup-tables-in-wpf-applications"></a>在 WPF 應用程式中建立查閱資料表
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,7 +44,7 @@ ms.locfileid: "63434515"
 
     - WCF 資料服務，WCF 服務或 Web 服務。 如需詳細資訊，請參閱[如何：連線至服務中的資料](../data-tools/how-to-connect-to-data-in-a-service.md)。  
   
-    - 物件。 如需詳細資訊，請參閱[如何：連接到資料物件中](http://msdn.microsoft.com/library/862fd351-0f4d-4220-9743-6103b87dc24b)。  
+    - 物件。 如需詳細資訊，請參閱[如何：連接到資料物件中](https://msdn.microsoft.com/library/862fd351-0f4d-4220-9743-6103b87dc24b)。  
   
     > [!NOTE]
     > 您可以建立查閱資料表之前，必須存在兩個相關的資料表或物件當做專案資料來源。  

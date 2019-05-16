@@ -15,12 +15,12 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 35c5b1275ced5eb7f2fee85c0592be2b5ed94533
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 7639225229aeaa37cd682307239d3097be313b66
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63419750"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65689919"
 ---
 # <a name="toolbox-html-tab"></a>HTML 索引標籤、工具箱
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -31,9 +31,9 @@ ms.locfileid: "63419750"
   
 ## <a name="tasks"></a>工作  
   
-- [如何：管理工具箱視窗](http://msdn.microsoft.com/a022c3fe-298c-4a59-a48f-b050da90ebc2)  
+- [如何：管理工具箱視窗](https://msdn.microsoft.com/a022c3fe-298c-4a59-a48f-b050da90ebc2)  
   
-- [如何：操作工具箱索引標籤](http://msdn.microsoft.com/21285050-cadd-455a-b1f5-a2289a89c4db)  
+- [如何：操作工具箱索引標籤](https://msdn.microsoft.com/21285050-cadd-455a-b1f5-a2289a89c4db)  
   
 ## <a name="ui-elements"></a>UI 項目  
  [HTML] 索引標籤上預設會有下列工具。  
@@ -41,7 +41,7 @@ ms.locfileid: "63419750"
  **指標**  
  ![ASP.NET Mobile 設計工具 HTML 網頁指標](../../ide/reference/media/vxpointer.gif "vxPointer")  
   
- 任何 [工具箱] 索引標籤開啟時，根據預設都會選取這個工具。 它無法予以刪除。 指標可讓您將物件拖曳至 [設計] 檢視介面、重新調整其大小，以及將它們重新置入頁面或表單上。 如需詳細資訊，請參閱[如何：管理工具箱視窗](http://msdn.microsoft.com/a022c3fe-298c-4a59-a48f-b050da90ebc2)和[如何：操作工具箱索引標籤](http://msdn.microsoft.com/21285050-cadd-455a-b1f5-a2289a89c4db)。  
+ 任何 [工具箱] 索引標籤開啟時，根據預設都會選取這個工具。 它無法予以刪除。 指標可讓您將物件拖曳至 [設計] 檢視介面、重新調整其大小，以及將它們重新置入頁面或表單上。 如需詳細資訊，請參閱[如何：管理工具箱視窗](https://msdn.microsoft.com/a022c3fe-298c-4a59-a48f-b050da90ebc2)和[如何：操作工具箱索引標籤](https://msdn.microsoft.com/21285050-cadd-455a-b1f5-a2289a89c4db)。  
   
  **輸入 (按鈕)**  
  ![HTML 網頁按鈕](../../ide/reference/media/vxbutton.gif "vxButton")  
@@ -54,7 +54,7 @@ ms.locfileid: "63419750"
 <input id="Button1" type="button" value="Button" name="Button1">  
 ```  
   
- 如需詳細資訊，請參閱 [HTML Input 控制項](http://msdn.microsoft.com/library/2ba82c6b-dff7-4b73-b1c2-9e76a48a69de) \(英文\)、[HtmlInputButton 伺服器控制項宣告式語法](http://msdn.microsoft.com/99ccf7fb-7e2a-4ba1-bcd9-981b619a16aa) \(機器翻譯\)、[NIB：如何：建立指令碼和編輯事件處理常式](http://msdn.microsoft.com/69d71d13-c68b-4ecd-869b-a42edf6d1f6d) \(英文\)、[Button Web 伺服器控制項概觀](http://msdn.microsoft.com/library/66b3ce28-3b93-4f0a-951f-42fb5bb5fddf) \(英文\)、<xref:System.Web.UI.HtmlControls.HtmlInputButton>、<xref:System.Web.UI.HtmlControls.HtmlButton> 與 <xref:System.Web.UI.WebControls.Button>。  
+ 如需詳細資訊，請參閱 [HTML Input 控制項](https://msdn.microsoft.com/library/2ba82c6b-dff7-4b73-b1c2-9e76a48a69de) \(英文\)、[HtmlInputButton 伺服器控制項宣告式語法](https://msdn.microsoft.com/99ccf7fb-7e2a-4ba1-bcd9-981b619a16aa) \(機器翻譯\)、[NIB：如何：建立指令碼和編輯事件處理常式](https://msdn.microsoft.com/69d71d13-c68b-4ecd-869b-a42edf6d1f6d) \(英文\)、[Button Web 伺服器控制項概觀](https://msdn.microsoft.com/library/66b3ce28-3b93-4f0a-951f-42fb5bb5fddf) \(英文\)、<xref:System.Web.UI.HtmlControls.HtmlInputButton>、<xref:System.Web.UI.HtmlControls.HtmlButton> 與 <xref:System.Web.UI.WebControls.Button>。  
   
  **輸入 (重設)**  
  ![HTMLpageResetButton 螢幕擷取畫面](../../ide/reference/media/vxreset.gif "vxReset")  
@@ -67,7 +67,7 @@ ms.locfileid: "63419750"
 <input id="Reset1" type="reset" value="Reset" name="Reset1">  
 ```  
   
- 如需詳細資訊，請參閱 [HTML Input 控制項](http://msdn.microsoft.com/library/2ba82c6b-dff7-4b73-b1c2-9e76a48a69de) \(英文\)、[HtmlInputReset 伺服器控制項宣告式語法](http://msdn.microsoft.com/cfc1f1fb-d33a-464d-9bb5-204e66174979) \(機器翻譯\)、<xref:System.Web.UI.HtmlControls.HtmlInputButton> 與 <xref:System.Web.UI.WebControls.Button>。  
+ 如需詳細資訊，請參閱 [HTML Input 控制項](https://msdn.microsoft.com/library/2ba82c6b-dff7-4b73-b1c2-9e76a48a69de) \(英文\)、[HtmlInputReset 伺服器控制項宣告式語法](https://msdn.microsoft.com/cfc1f1fb-d33a-464d-9bb5-204e66174979) \(機器翻譯\)、<xref:System.Web.UI.HtmlControls.HtmlInputButton> 與 <xref:System.Web.UI.WebControls.Button>。  
   
  **輸入 (送出)**  
  ![HTMLpageToolbarSubmitButton 螢幕擷取畫面](../../ide/reference/media/vxsubmit.gif "vxSubmit")  
@@ -80,7 +80,7 @@ ms.locfileid: "63419750"
 <input id="Submit1" type="submit" value="Submit" name="Submit1">  
 ```  
   
- 如需詳細資訊，請參閱 [HTML Input 控制項](http://msdn.microsoft.com/library/2ba82c6b-dff7-4b73-b1c2-9e76a48a69de) \(英文\)、[HtmlInputSubmit 伺服器控制項宣告式語法](http://msdn.microsoft.com/eef2a157-f184-4ce9-b256-d1eacc7930f2) \(機器翻譯\)、<xref:System.Web.UI.HtmlControls.HtmlInputButton> 與 <xref:System.Web.UI.WebControls.Button>。  
+ 如需詳細資訊，請參閱 [HTML Input 控制項](https://msdn.microsoft.com/library/2ba82c6b-dff7-4b73-b1c2-9e76a48a69de) \(英文\)、[HtmlInputSubmit 伺服器控制項宣告式語法](https://msdn.microsoft.com/eef2a157-f184-4ce9-b256-d1eacc7930f2) \(機器翻譯\)、<xref:System.Web.UI.HtmlControls.HtmlInputButton> 與 <xref:System.Web.UI.WebControls.Button>。  
   
  **輸入 (文字)**  
  ![HTMLpageToolbarTextField 螢幕擷取畫面](../../ide/reference/media/vxtextfield.gif "vxTextfield")  
@@ -93,10 +93,10 @@ ms.locfileid: "63419750"
 <input id="Text1" TYPE="text" value="Text Field" name="Text1">  
 ```  
   
- 如需詳細資訊，請參閱 [HTML Input 控制項](http://msdn.microsoft.com/library/2ba82c6b-dff7-4b73-b1c2-9e76a48a69de) \(英文\)、[HtmlInputText 伺服器控制項宣告式語法](http://msdn.microsoft.com/87060d90-a11c-434d-9fc9-b03a8487041e) \(機器翻譯\)、[TextBox Web 伺服器控制項概觀](http://msdn.microsoft.com/library/ab354bc1-f23a-48fc-93d8-d4d7c1b7396f) \(英文\)、<xref:System.Web.UI.HtmlControls.HtmlInputText> 與 <xref:System.Web.UI.WebControls.TextBox>。  
+ 如需詳細資訊，請參閱 [HTML Input 控制項](https://msdn.microsoft.com/library/2ba82c6b-dff7-4b73-b1c2-9e76a48a69de) \(英文\)、[HtmlInputText 伺服器控制項宣告式語法](https://msdn.microsoft.com/87060d90-a11c-434d-9fc9-b03a8487041e) \(機器翻譯\)、[TextBox Web 伺服器控制項概觀](https://msdn.microsoft.com/library/ab354bc1-f23a-48fc-93d8-d4d7c1b7396f) \(英文\)、<xref:System.Web.UI.HtmlControls.HtmlInputText> 與 <xref:System.Web.UI.WebControls.TextBox>。  
   
 > [!IMPORTANT]
-> 建議驗證所有使用者輸入。 如需詳細資訊，請參閱[驗證 ASP.NET 網頁中的使用者輸入](http://msdn.microsoft.com/library/4ad3dacb-89e0-4cee-89ac-40a3f2a85461)。  
+> 建議驗證所有使用者輸入。 如需詳細資訊，請參閱[驗證 ASP.NET 網頁中的使用者輸入](https://msdn.microsoft.com/library/4ad3dacb-89e0-4cee-89ac-40a3f2a85461)。  
   
  **輸入 (檔案)**  
  ![HTML 網頁檔案欄位](../../ide/reference/media/vxfilefield.gif "vxFilefield")  
@@ -109,10 +109,10 @@ ms.locfileid: "63419750"
 <input id="File1" type="file" name="File1">  
 ```  
   
- 如需詳細資訊，請參閱 [HTML Input 控制項](http://msdn.microsoft.com/library/2ba82c6b-dff7-4b73-b1c2-9e76a48a69de) \(英文\)、[HtmlInputFile 伺服器控制項宣告式語法](http://msdn.microsoft.com/a817b4a0-056f-4c17-a696-b9fdcde43db6) \(機器翻譯\) 與 <xref:System.Web.UI.HtmlControls.HtmlInputFile>。  
+ 如需詳細資訊，請參閱 [HTML Input 控制項](https://msdn.microsoft.com/library/2ba82c6b-dff7-4b73-b1c2-9e76a48a69de) \(英文\)、[HtmlInputFile 伺服器控制項宣告式語法](https://msdn.microsoft.com/a817b4a0-056f-4c17-a696-b9fdcde43db6) \(機器翻譯\) 與 <xref:System.Web.UI.HtmlControls.HtmlInputFile>。  
   
 > [!IMPORTANT]
-> 建議驗證所有使用者輸入。 如需詳細資訊，請參閱[驗證 ASP.NET 網頁中的使用者輸入](http://msdn.microsoft.com/library/4ad3dacb-89e0-4cee-89ac-40a3f2a85461)。  
+> 建議驗證所有使用者輸入。 如需詳細資訊，請參閱[驗證 ASP.NET 網頁中的使用者輸入](https://msdn.microsoft.com/library/4ad3dacb-89e0-4cee-89ac-40a3f2a85461)。  
   
  **輸入 (密碼)**  
  ![Visual Studio 密碼欄位](../../ide/reference/media/vxpassword.gif "vxPassword")  
@@ -125,10 +125,10 @@ ms.locfileid: "63419750"
 <input id="Password1" type="password" name="Password1">  
 ```  
   
- 如需詳細資訊，請參閱 [HTML Input 控制項](http://msdn.microsoft.com/library/2ba82c6b-dff7-4b73-b1c2-9e76a48a69de)、[HtmlInputPassword 伺服器控制項宣告式語法](http://msdn.microsoft.com/df703dd0-1624-4e5a-a547-c97f2f331b9f)、[如何：為密碼輸入設定 TextBox Web 伺服器控制項](http://msdn.microsoft.com/library/5b5069f3-64a1-435a-aee6-da263f4e6310)和[逐步解說：驗證 Web Forms 網頁中的使用者輸入](http://msdn.microsoft.com/library/7141d6ba-34f3-410b-b5cd-2102a24cb436)。  
+ 如需詳細資訊，請參閱 [HTML Input 控制項](https://msdn.microsoft.com/library/2ba82c6b-dff7-4b73-b1c2-9e76a48a69de)、[HtmlInputPassword 伺服器控制項宣告式語法](https://msdn.microsoft.com/df703dd0-1624-4e5a-a547-c97f2f331b9f)、[如何：為密碼輸入設定 TextBox Web 伺服器控制項](https://msdn.microsoft.com/library/5b5069f3-64a1-435a-aee6-da263f4e6310)和[逐步解說：驗證 Web Forms 網頁中的使用者輸入](https://msdn.microsoft.com/library/7141d6ba-34f3-410b-b5cd-2102a24cb436)。  
   
 > [!IMPORTANT]
-> 如果您的應用程式傳輸使用者名稱和密碼，您應該設定網站使用安全通訊端層 (SSL) 來加密傳輸。 如需詳細資訊，請參閱 [IIS Operations Guide](http://go.microsoft.com/fwlink/?linkid=47856) (IIS 作業手冊) 中的 "Securing Connections with SSL" (保護與 SSL 的連線)。 此外，建議驗證所有使用者輸入。 如需詳細資訊，請參閱[驗證 ASP.NET 網頁中的使用者輸入](http://msdn.microsoft.com/library/4ad3dacb-89e0-4cee-89ac-40a3f2a85461)。  
+> 如果您的應用程式傳輸使用者名稱和密碼，您應該設定網站使用安全通訊端層 (SSL) 來加密傳輸。 如需詳細資訊，請參閱 [IIS Operations Guide](http://go.microsoft.com/fwlink/?linkid=47856) (IIS 作業手冊) 中的 "Securing Connections with SSL" (保護與 SSL 的連線)。 此外，建議驗證所有使用者輸入。 如需詳細資訊，請參閱[驗證 ASP.NET 網頁中的使用者輸入](https://msdn.microsoft.com/library/4ad3dacb-89e0-4cee-89ac-40a3f2a85461)。  
   
  **輸入 (核取方塊)**  
  ![HTML 網頁工具箱核取方塊選項](../../ide/reference/media/vxcheckbox.gif "vxCheckbox")  
@@ -141,7 +141,7 @@ ms.locfileid: "63419750"
 <input id="Checkbox1" type="checkbox" name="Checkbox1">   
 ```  
   
- 如需詳細資訊，請參閱 [HTML Input 控制項](http://msdn.microsoft.com/library/2ba82c6b-dff7-4b73-b1c2-9e76a48a69de) \(英文\)、[HtmlInputCheckBox 伺服器控制項宣告式語法](http://msdn.microsoft.com/4a509586-89d8-4ccf-a0b8-b9160ce6e4a6) \(機器翻譯\)、[CheckBox 和 CheckBoxList Web 伺服器控制項概觀](http://msdn.microsoft.com/library/3028dfd3-e2c5-451d-9150-d02c8ffb92bf) \(英文\)、<xref:System.Web.UI.HtmlControls.HtmlInputCheckBox> 與 <xref:System.Web.UI.WebControls.CheckBox>。  
+ 如需詳細資訊，請參閱 [HTML Input 控制項](https://msdn.microsoft.com/library/2ba82c6b-dff7-4b73-b1c2-9e76a48a69de) \(英文\)、[HtmlInputCheckBox 伺服器控制項宣告式語法](https://msdn.microsoft.com/4a509586-89d8-4ccf-a0b8-b9160ce6e4a6) \(機器翻譯\)、[CheckBox 和 CheckBoxList Web 伺服器控制項概觀](https://msdn.microsoft.com/library/3028dfd3-e2c5-451d-9150-d02c8ffb92bf) \(英文\)、<xref:System.Web.UI.HtmlControls.HtmlInputCheckBox> 與 <xref:System.Web.UI.WebControls.CheckBox>。  
   
  **輸入 (選項按鈕)**  
  ![VisualStudioHTMLpageRadioButton 螢幕擷取畫面](../../ide/reference/media/vxradio.gif "vxRadio")  
@@ -154,7 +154,7 @@ ms.locfileid: "63419750"
 <input id="Radio1" type="radio" name="Radio1">  
 ```  
   
- 如需詳細資訊，請參閱 [HTML Input 控制項](http://msdn.microsoft.com/library/2ba82c6b-dff7-4b73-b1c2-9e76a48a69de) \(英文\)、[HtmlInputRadioButton 伺服器控制項宣告式語法](http://msdn.microsoft.com/6e60ff63-cc57-46ef-bf96-e829e204ba33) \(機器翻譯\)、[RadioButton 和 RadioButtonList Web 伺服器控制項概觀](http://msdn.microsoft.com/library/20eb383c-4b59-432b-bba3-e9d785107747) \(英文\)、<xref:System.Web.UI.HtmlControls.HtmlInputRadioButton> 與 <xref:System.Web.UI.WebControls.RadioButton>。  
+ 如需詳細資訊，請參閱 [HTML Input 控制項](https://msdn.microsoft.com/library/2ba82c6b-dff7-4b73-b1c2-9e76a48a69de) \(英文\)、[HtmlInputRadioButton 伺服器控制項宣告式語法](https://msdn.microsoft.com/6e60ff63-cc57-46ef-bf96-e829e204ba33) \(機器翻譯\)、[RadioButton 和 RadioButtonList Web 伺服器控制項概觀](https://msdn.microsoft.com/library/20eb383c-4b59-432b-bba3-e9d785107747) \(英文\)、<xref:System.Web.UI.HtmlControls.HtmlInputRadioButton> 與 <xref:System.Web.UI.WebControls.RadioButton>。  
   
  **輸入 (隱藏)**  
  ![HTML 網頁隱藏項目](../../ide/reference/media/vxhidden.gif "vxhidden")  
@@ -167,7 +167,7 @@ ms.locfileid: "63419750"
 <input id="Hidden1" type="hidden" name="Hidden1">   
 ```  
   
- 如需詳細資訊，請參閱 [HTML Input 控制項](http://msdn.microsoft.com/library/2ba82c6b-dff7-4b73-b1c2-9e76a48a69de) \(英文\)、[HtmlInputHidden 伺服器控制項宣告式語法](http://msdn.microsoft.com/4194e44d-1d74-4bfc-9cc7-743a2e1ea5f9) \(機器翻譯\) 與 <xref:System.Web.UI.HtmlControls.HtmlInputHidden>。  
+ 如需詳細資訊，請參閱 [HTML Input 控制項](https://msdn.microsoft.com/library/2ba82c6b-dff7-4b73-b1c2-9e76a48a69de) \(英文\)、[HtmlInputHidden 伺服器控制項宣告式語法](https://msdn.microsoft.com/4194e44d-1d74-4bfc-9cc7-743a2e1ea5f9) \(機器翻譯\) 與 <xref:System.Web.UI.HtmlControls.HtmlInputHidden>。  
   
  **文字區域**  
  ![HTML 網頁工具列文字區域](../../ide/reference/media/vxtextarea.gif "vxTextarea")  
@@ -180,10 +180,10 @@ ms.locfileid: "63419750"
 <textarea id=" textarea 1 name=" textarea 1" rows=2 cols=20></textarea>   
 ```  
   
- 如需詳細資訊，請參閱 [HtmlTextArea 伺服器控制項](http://msdn.microsoft.com/5a103ffa-235b-4452-ba2b-a4fb8ba8cb87) \(英文\)、<xref:System.Web.UI.HtmlControls.HtmlTextArea> 與 <xref:System.Web.UI.WebControls.TextBox>。  
+ 如需詳細資訊，請參閱 [HtmlTextArea 伺服器控制項](https://msdn.microsoft.com/5a103ffa-235b-4452-ba2b-a4fb8ba8cb87) \(英文\)、<xref:System.Web.UI.HtmlControls.HtmlTextArea> 與 <xref:System.Web.UI.WebControls.TextBox>。  
   
 > [!IMPORTANT]
-> 建議驗證所有使用者輸入。 如需詳細資訊，請參閱[驗證 ASP.NET 網頁中的使用者輸入](http://msdn.microsoft.com/library/4ad3dacb-89e0-4cee-89ac-40a3f2a85461)。  
+> 建議驗證所有使用者輸入。 如需詳細資訊，請參閱[驗證 ASP.NET 網頁中的使用者輸入](https://msdn.microsoft.com/library/4ad3dacb-89e0-4cee-89ac-40a3f2a85461)。  
   
  **資料表**  
  ![HTMLpageToolbarTable 螢幕擷取畫面](../../ide/reference/media/vxtable.gif "vxTable")  
@@ -196,7 +196,7 @@ ms.locfileid: "63419750"
 <table cellspacing="1" width="75%" border=1> <tr><td></td></tr></table>   
 ```  
   
- 如需詳細資訊，請參閱 [HtmlTable 伺服器控制項宣告式語法](http://msdn.microsoft.com/625b06d8-0f69-4112-a1d4-8ef2a9fbcda9) \(機器翻譯\)、[Table、TableRow 和 TableCell Web 伺服器控制項概觀](http://msdn.microsoft.com/library/2fbd0582-cf69-4c8d-9e35-21f35e2cee1a) \(英文\)、<xref:System.Web.UI.HtmlControls.HtmlTable> 與 <xref:System.Web.UI.WebControls.Table>。  
+ 如需詳細資訊，請參閱 [HtmlTable 伺服器控制項宣告式語法](https://msdn.microsoft.com/625b06d8-0f69-4112-a1d4-8ef2a9fbcda9) \(機器翻譯\)、[Table、TableRow 和 TableCell Web 伺服器控制項概觀](https://msdn.microsoft.com/library/2fbd0582-cf69-4c8d-9e35-21f35e2cee1a) \(英文\)、<xref:System.Web.UI.HtmlControls.HtmlTable> 與 <xref:System.Web.UI.WebControls.Table>。  
   
  **影像**  
  ![HTML 網頁影像項目](../../ide/reference/media/vximage.gif "vxImage")  
@@ -209,7 +209,7 @@ ms.locfileid: "63419750"
 <img alt="" src="">  
 ```  
   
- 如需詳細資訊，請參閱 [HtmlImage 伺服器控制項宣告式語法](http://msdn.microsoft.com/528430e8-ced1-47d1-8db2-942e734a61f6) \(機器翻譯\)、[Image Web 伺服器控制項概觀](http://msdn.microsoft.com/library/096a8d8d-58ee-4ee8-ab82-6594a0f3a0a9) \(英文\)、<xref:System.Web.UI.HtmlControls.HtmlImage>、<xref:System.Web.UI.HtmlControls.HtmlInputImage> 與 <xref:System.Web.UI.WebControls.Image>。  
+ 如需詳細資訊，請參閱 [HtmlImage 伺服器控制項宣告式語法](https://msdn.microsoft.com/528430e8-ced1-47d1-8db2-942e734a61f6) \(機器翻譯\)、[Image Web 伺服器控制項概觀](https://msdn.microsoft.com/library/096a8d8d-58ee-4ee8-ab82-6594a0f3a0a9) \(英文\)、<xref:System.Web.UI.HtmlControls.HtmlImage>、<xref:System.Web.UI.HtmlControls.HtmlInputImage> 與 <xref:System.Web.UI.WebControls.Image>。  
   
  **選取**  
  ![HTML 網頁工具箱下拉式清單](../../ide/reference/media/vxdropdown.gif "vxDropdown")  
@@ -224,7 +224,7 @@ ms.locfileid: "63419750"
   
  您可以增加 size 屬性的值來建立多行 `select` 項目。  
   
- 如需詳細資訊，請參閱 [HtmlSelect 伺服器控制項宣告式語法](http://msdn.microsoft.com/ee93bdec-b343-441a-a8ff-56ffcafe9ae5) \(機器翻譯\)、[NIB：如何：建立指令碼和編輯事件處理常式](http://msdn.microsoft.com/69d71d13-c68b-4ecd-869b-a42edf6d1f6d) \(英文\)、[DropDownList Web 伺服器控制項概觀](http://msdn.microsoft.com/library/517dd1a4-8df3-4c9f-8c89-1549a1aee608) \(英文\)、[ListBox Web 伺服器控制項概觀](http://msdn.microsoft.com/library/c08ee025-787a-408d-858e-a4a5fdb61d97) \(英文\)、<xref:System.Web.UI.HtmlControls.HtmlSelect> 與 <xref:System.Web.UI.WebControls.DropDownList>。  
+ 如需詳細資訊，請參閱 [HtmlSelect 伺服器控制項宣告式語法](https://msdn.microsoft.com/ee93bdec-b343-441a-a8ff-56ffcafe9ae5) \(機器翻譯\)、[NIB：如何：建立指令碼和編輯事件處理常式](https://msdn.microsoft.com/69d71d13-c68b-4ecd-869b-a42edf6d1f6d) \(英文\)、[DropDownList Web 伺服器控制項概觀](https://msdn.microsoft.com/library/517dd1a4-8df3-4c9f-8c89-1549a1aee608) \(英文\)、[ListBox Web 伺服器控制項概觀](https://msdn.microsoft.com/library/c08ee025-787a-408d-858e-a4a5fdb61d97) \(英文\)、<xref:System.Web.UI.HtmlControls.HtmlSelect> 與 <xref:System.Web.UI.WebControls.DropDownList>。  
   
  **水平尺規**  
  ![HTML 網頁水平尺規項目](../../ide/reference/media/vxhorizontal.gif "vxHorizontal")  
@@ -237,7 +237,7 @@ ms.locfileid: "63419750"
 <hr width="100%" size=1>   
 ```  
   
- 如需詳細資訊，請參閱 [HTML Horizontal Rule 控制項](http://msdn.microsoft.com/library/bf6df0a8-9844-404d-8a9a-3455b0180f2f)。  
+ 如需詳細資訊，請參閱 [HTML Horizontal Rule 控制項](https://msdn.microsoft.com/library/bf6df0a8-9844-404d-8a9a-3455b0180f2f)。  
   
  **Div**  
  ![HTML 網頁標籤](../../ide/reference/media/vxlabel.gif "vxLabel")  
@@ -250,9 +250,9 @@ ms.locfileid: "63419750"
 <div ms_positioning="FlowLayout" style="width: 70px; position: relative; height: 15px">Label</div>  
 ```  
   
- 如需詳細資訊，請參閱 [HTML Div 控制項](http://msdn.microsoft.com/library/585fa702-4408-4af1-a92b-68d77ee5e995) \(英文\)、[Label Web 伺服器控制項概觀](http://msdn.microsoft.com/library/990558d1-4b22-4f28-b100-78a434b3c5ac) \(英文\) 與 <xref:System.Web.UI.WebControls.Label>。  
+ 如需詳細資訊，請參閱 [HTML Div 控制項](https://msdn.microsoft.com/library/585fa702-4408-4af1-a92b-68d77ee5e995) \(英文\)、[Label Web 伺服器控制項概觀](https://msdn.microsoft.com/library/990558d1-4b22-4f28-b100-78a434b3c5ac) \(英文\) 與 <xref:System.Web.UI.WebControls.Label>。  
   
 ## <a name="see-also"></a>請參閱  
  [工具箱](../../ide/reference/toolbox.md)   
- [工具箱、標準索引標籤](http://msdn.microsoft.com/library/35e9320d-fcbd-474b-8b8f-55705e9a1870)   
- [HTML 控制項](http://msdn.microsoft.com/library/83bc6f7e-a2b5-4fe9-9a34-eb34aef673be)
+ [工具箱、標準索引標籤](https://msdn.microsoft.com/library/35e9320d-fcbd-474b-8b8f-55705e9a1870)   
+ [HTML 控制項](https://msdn.microsoft.com/library/83bc6f7e-a2b5-4fe9-9a34-eb34aef673be)

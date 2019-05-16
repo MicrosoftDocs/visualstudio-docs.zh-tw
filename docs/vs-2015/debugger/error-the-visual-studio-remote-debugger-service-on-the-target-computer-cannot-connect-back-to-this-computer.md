@@ -16,12 +16,12 @@ caps.latest.revision: 15
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 7e828d0150e3519e588702be95111126fd1e2c04
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 8f598d765e45b1f97d6a3e95d1ad57c325ea38fe
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60069233"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65697352"
 ---
 # <a name="error-the-visual-studio-remote-debugger-service-on-the-target-computer-cannot-connect-back-to-this-computer"></a>錯誤：目標電腦上的 Visual Studio 遠端偵錯工具服務無法連回這部電腦
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -48,7 +48,7 @@ ms.locfileid: "60069233"
   
 ### <a name="to-correct-this-error"></a>更正這個錯誤  
   
-1. 請確定已在遠端電腦上正確設定 Visual Studio 遠端偵錯工具服務。 如需詳細資訊，請參閱 <<c0> [ 設定 Up the Remote Tools 在裝置上](http://msdn.microsoft.com/library/90f45630-0d26-4698-8c1f-63f85a12db9c)。  
+1. 請確定已在遠端電腦上正確設定 Visual Studio 遠端偵錯工具服務。 如需詳細資訊，請參閱 <<c0> [ 設定 Up the Remote Tools 在裝置上](https://msdn.microsoft.com/library/90f45630-0d26-4698-8c1f-63f85a12db9c)。  
   
 2. 在可以存取偵錯工具主機電腦的帳戶下執行遠端偵錯工具服務，如上表所示。  
   

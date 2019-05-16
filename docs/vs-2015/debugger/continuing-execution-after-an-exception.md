@@ -29,17 +29,17 @@ caps.latest.revision: 30
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: a43983846263fa49a7ff501b0d87c460990e8a37
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 6ae74c51f0f738bc596fbe5c789011630927707c
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60105463"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65702260"
 ---
 # <a name="continuing-execution-after-an-exception"></a>例外狀況之後繼續執行
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-當偵錯工具因為例外狀況而中斷執行時，對話方塊隨即出現。 若是 Visual Basic 或 C#，您會看到[例外狀況助理](http://msdn.microsoft.com/library/992892ac-9d52-44cc-bf09-b44bfc5befeb)對話方塊中，依預設。 針對C++，您會看到舊版**例外狀況** 對話方塊。 如果您使用 Visual Basic 或 C#，但已停用**例外狀況助理**中**選項** 對話方塊中，您會看到**例外狀況** 對話方塊。  
+當偵錯工具因為例外狀況而中斷執行時，對話方塊隨即出現。 若是 Visual Basic 或 C#，您會看到[例外狀況助理](https://msdn.microsoft.com/library/992892ac-9d52-44cc-bf09-b44bfc5befeb)對話方塊中，依預設。 針對C++，您會看到舊版**例外狀況** 對話方塊。 如果您使用 Visual Basic 或 C#，但已停用**例外狀況助理**中**選項** 對話方塊中，您會看到**例外狀況** 對話方塊。  
   
  當**例外狀況助理**或是**例外狀況**對話方塊隨即出現，您可以嘗試修正造成例外狀況的問題。  
   

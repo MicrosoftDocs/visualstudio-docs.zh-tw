@@ -9,12 +9,12 @@ caps.latest.revision: 15
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: ffbd5568d35b59e262577102a9368089fdcac6be
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: a8cd0f0e5a420155cfc6786e4a8542bc59f93ece
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63431097"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65690209"
 ---
 # <a name="visualizing-eventsource-events-as-markers"></a>將 EventSource 事件顯示為標記
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,9 +26,9 @@ ms.locfileid: "63431097"
   
 ### <a name="marker-type"></a>標記類型  
   
-1. 有[作業碼 (Opcode)](http://msdn.microsoft.com/d97953df-669b-4c55-b1a8-925022b339b7) win:Start 或 win:Stop 的事件會分別視為延伸範圍的開始或結束。  無法顯示巢狀或重疊的延伸範圍。 無法顯示在一個執行緒開始但在另一個執行序結束的事件組合。  
+1. 有[作業碼 (Opcode)](https://msdn.microsoft.com/d97953df-669b-4c55-b1a8-925022b339b7) win:Start 或 win:Stop 的事件會分別視為延伸範圍的開始或結束。  無法顯示巢狀或重疊的延伸範圍。 無法顯示在一個執行緒開始但在另一個執行序結束的事件組合。  
   
-2. 其作業碼不是 win:Start，也非 win:Stop 的事件會視為標記旗標，除非其[層級 (Level)](http://msdn.microsoft.com/dfa4e0a9-4d89-4f50-aef9-1dae0dc11726) (EVENT_RECORD.EVENT_HEADER.EVENT_DESCRIPTOR 的欄位) 是 win:Verbose 或更高。  
+2. 其作業碼不是 win:Start，也非 win:Stop 的事件會視為標記旗標，除非其[層級 (Level)](https://msdn.microsoft.com/dfa4e0a9-4d89-4f50-aef9-1dae0dc11726) (EVENT_RECORD.EVENT_HEADER.EVENT_DESCRIPTOR 的欄位) 是 win:Verbose 或更高。  
   
 3. 在其他情況下，會將該事件視為一則訊息。  
   

@@ -9,19 +9,19 @@ caps.latest.revision: 18
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: b9005b6cf7f23639481505a4727f8faa08241684
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 700417e0cf6bb93c96c0826a7d49d4d0deb7395f
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63433478"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65705780"
 ---
 # <a name="javascript-in-visual-studio"></a>Visual Studio 中的 JavaScript
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 JavaScript 是在 Visual Studio 中的第一級語言。 當您在 Visual Studio IDE 中撰寫 JavaScript 程式碼時，可以使用大部分或所有標準編輯輔助，包括程式碼片段、IntelliSense 等等。 您可以為許多應用程式類型和服務撰寫 JavaScript 程式碼。
 
- 如需 JavaScript 語言參考文件，請參閱 [JavaScript](http://msdn.microsoft.com/library/d1et7k7c\(v=vs.94\).aspx)。
+ 如需 JavaScript 語言參考文件，請參閱 [JavaScript](https://msdn.microsoft.com/library/d1et7k7c\(v=vs.94\).aspx)。
 
  可能需要特定版本的 Visual Studio 或特定的 Visual Studio 擴充功能，才能開發特定應用程式類型和使用 HTML 和 JavaScript 的服務。 下列清單中有詳細資訊的連結。
 
@@ -29,7 +29,7 @@ JavaScript 是在 Visual Studio 中的第一級語言。 當您在 Visual Studio
 
 - 若要建立 [Windows 市集](http://dev.windows.com/develop)、[Windows Phone](http://dev.windows.com/develop) 及通用應用程式 (支援這兩種平台)，請[取得工具](https://developer.microsoft.com/windows/downloads)。
 
-- 若要建立雲端式服務，請參閱 [Microsoft Azure 網站](http://azure.microsoft.com/documentation/)。
+- 若要建立雲端式服務，請參閱 [Microsoft Azure 網站](https://azure.microsoft.com/documentation/)。
 
 - 若要建立網站和 Web 應用程式，請參閱 [ASP.NET 網站](http://www.asp.net/get-started/websites)。
 

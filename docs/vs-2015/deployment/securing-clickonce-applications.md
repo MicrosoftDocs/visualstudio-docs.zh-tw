@@ -17,12 +17,12 @@ caps.latest.revision: 47
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: cfc486401792afc7d2c6295cacca843aa6c5b11b
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 2a2610c1fef92bb77d150dad7972bb991b6ef4a4
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63445032"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65686015"
 ---
 # <a name="securing-clickonce-applications"></a>保護 ClickOnce 應用程式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -81,7 +81,7 @@ ms.locfileid: "63445032"
   
 1. 使用 Dotfuscator 執行模糊化。  
   
-2. 使用 Mage.exe 或 MageUI.exe 產生 ClickOnce 資訊清單並加以簽署。 如需詳細資訊，請參閱 < [Mage.exe （資訊清單產生和編輯工具）](http://msdn.microsoft.com/library/77dfe576-2962-407e-af13-82255df725a1)並[MageUI.exe (圖形用戶端、資訊清單產生和編輯工具)](http://msdn.microsoft.com/library/f9e130a6-8117-49c4-839c-c988f641dc14)。  
+2. 使用 Mage.exe 或 MageUI.exe 產生 ClickOnce 資訊清單並加以簽署。 如需詳細資訊，請參閱 < [Mage.exe （資訊清單產生和編輯工具）](https://msdn.microsoft.com/library/77dfe576-2962-407e-af13-82255df725a1)並[MageUI.exe (圖形用戶端、資訊清單產生和編輯工具)](https://msdn.microsoft.com/library/f9e130a6-8117-49c4-839c-c988f641dc14)。  
   
 3. 手動發行 (複製) 檔案到部署的來源位置 (Web 伺服器、UNC 共用或 CD-ROM)。  
   

@@ -50,12 +50,12 @@ caps.latest.revision: 41
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: cd93fdc527e38b820bc7df6387ca6f8e9078bfd6
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 340fe819086d3cc18cb9c2dd6a4ca14129c6d8ad
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60045325"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65679892"
 ---
 # <a name="solutions-and-projects-in-visual-studio"></a>Visual Studio 中的方案和專案
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -75,7 +75,7 @@ ms.locfileid: "60045325"
  您也可以建立自訂專案與項目範本。 如需詳細資訊，請參閱[建立專案和項目範本](../ide/creating-project-and-item-templates.md)。
 
 ## <a name="creating-new-projects"></a>建立新專案
- 建立新專案最簡單的方式是從預先定義的專案範本開始，它們是由預先產生的程式碼檔案、組態檔、資產與設定的基本集合所組成，可讓您開始以特定的程式設計語言來建立特定類型的應用程式或網站。 當您從主功能表選擇 [檔案] &#124; [新增] &#124; [專案] 或 [檔案] &#124; [新增] &#124; [網站] 並巡覽時，可以在 [新增專案] 對話方塊中看到這些範本。 如需詳細資訊，請參閱[建立方案和專案](../ide/creating-solutions-and-projects.md)和 [NIB 根據範本建立專案](http://msdn.microsoft.com/7c36d86a-6b79-4480-8228-0f925f1204b2)。
+ 建立新專案最簡單的方式是從預先定義的專案範本開始，它們是由預先產生的程式碼檔案、組態檔、資產與設定的基本集合所組成，可讓您開始以特定的程式設計語言來建立特定類型的應用程式或網站。 當您從主功能表選擇 [檔案] &#124; [新增] &#124; [專案] 或 [檔案] &#124; [新增] &#124; [網站] 並巡覽時，可以在 [新增專案] 對話方塊中看到這些範本。 如需詳細資訊，請參閱[建立方案和專案](../ide/creating-solutions-and-projects.md)和 [NIB 根據範本建立專案](https://msdn.microsoft.com/7c36d86a-6b79-4480-8228-0f925f1204b2)。
 
 ## <a name="managing-projects-in-solution-explorer"></a>管理 [方案總管] 中的專案
  建立新專案之後，您可以使用 [方案總管]  來檢視及管理專案與方案，以及關聯的項目。 下圖顯示 [伺服器總管] 與包含兩個專案的 C# 方案。

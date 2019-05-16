@@ -10,17 +10,17 @@ helpviewer_keywords:
 ms.assetid: 3b052047-f6db-46dd-b3bf-da1c348ee410
 caps.latest.revision: 33
 manager: jillfra
-ms.openlocfilehash: ba4b166cc409dd2c50c258a9b82ee34c22e9b084
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5eeb5d06b0e689391f450fec8744fa58a41f4508
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62838671"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65681547"
 ---
 # <a name="managing-the-toolbox"></a>Managing the Toolbox
 [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] 可讓 VSPackage (例如編輯器或設計工具) 管理 [工具箱] 的成員資格和外觀。  
   
- 此外，[工具箱]  本身可以使用自動化進行管理。 如需有關如何透過自動化管理工具箱的詳細資訊，請參閱[How to:Control the Toolbox](http://msdn.microsoft.com/library/c9d8a18a-d2bc-43d4-a803-601bfc6a6599)。  
+ 此外，[工具箱]  本身可以使用自動化進行管理。 如需有關如何透過自動化管理工具箱的詳細資訊，請參閱[How to:Control the Toolbox](https://msdn.microsoft.com/library/c9d8a18a-d2bc-43d4-a803-601bfc6a6599)。  
   
 ## <a name="automatic-toolbox-tab-selection"></a>自動工具箱索引標籤選取  
  只有特定 [工具箱]  索引標籤或類別才能根據編輯器或設計工具目前哪個為使用中而自動成為使用中。 例如，如果已啟動表單設計工具，您可能會想要選取 [所有 Windows Forms]  索引標籤。  
@@ -51,7 +51,7 @@ ms.locfileid: "62838671"
   
 - VSPackage 必須使用 <xref:Microsoft.VisualStudio.Shell.Interop.IVsToolbox2> 來加入控制項，或是將控制項裝載在衍生自 <xref:System.Windows.Forms.AxHost> 的包裝函式控制項中。  
   
-   Visual Studio 提供 `Aximp.exe` 工具，來自動化在衍生自 <xref:System.Windows.Forms.AxHost> 之控制項中的 ActiveX 控制項包裝。 如需詳細資訊，請參閱 < [Aximp.exe （Windows Form ActiveX 控制項匯入工具）](http://msdn.microsoft.com/library/482c0d83-7144-4497-b626-87d2351b78d0)。  
+   Visual Studio 提供 `Aximp.exe` 工具，來自動化在衍生自 <xref:System.Windows.Forms.AxHost> 之控制項中的 ActiveX 控制項包裝。 如需詳細資訊，請參閱 < [Aximp.exe （Windows Form ActiveX 控制項匯入工具）](https://msdn.microsoft.com/library/482c0d83-7144-4497-b626-87d2351b78d0)。  
   
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsToolbox>、<xref:Microsoft.VisualStudio.Shell.Interop.IVsToolbox2> 和 <xref:Microsoft.VisualStudio.Shell.Interop.IVsToolbox3> 是可透過 Interop 組件使用的 COM 型介面。  
   

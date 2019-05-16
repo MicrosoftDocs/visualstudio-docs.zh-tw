@@ -15,12 +15,12 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 874541972df030d55721b78f115b730e625a7b02
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 96e518977e12f2ae061d5ab73803d51dad733149
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58940503"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65686813"
 ---
 # <a name="ca1051-do-not-declare-visible-instance-fields"></a>CA1051:不要宣告可見的執行個體欄位
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,7 +44,7 @@ ms.locfileid: "58940503"
  若要修正此規則的違規情形，將欄位設`private`或`internal`並將它公開使用的外部可見的屬性。
 
 ## <a name="when-to-suppress-warnings"></a>隱藏警告的時機
- 請勿隱藏此規則的警告。 外部可見的欄位不會提供屬性無法使用的任何權益。 此外，公用欄位不能受到[連結要求](http://msdn.microsoft.com/library/a33fd5f9-2de9-4653-a4f0-d9df25082c4d)。 請參閱[CA2112:受保護的類型不應該公開欄位](../code-quality/ca2112-secured-types-should-not-expose-fields.md)。
+ 請勿隱藏此規則的警告。 外部可見的欄位不會提供屬性無法使用的任何權益。 此外，公用欄位不能受到[連結要求](https://msdn.microsoft.com/library/a33fd5f9-2de9-4653-a4f0-d9df25082c4d)。 請參閱[CA2112:受保護的類型不應該公開欄位](../code-quality/ca2112-secured-types-should-not-expose-fields.md)。
 
 ## <a name="example"></a>範例
  下列範例顯示型別 (`BadPublicInstanceFields`)，違反這項規則。 `GoodPublicInstanceFields` 顯示更正的程式碼。
@@ -55,4 +55,4 @@ ms.locfileid: "58940503"
  [CA2112:受保護的類型不應該公開欄位](../code-quality/ca2112-secured-types-should-not-expose-fields.md)
 
 ## <a name="see-also"></a>另請參閱
- [連結要求](http://msdn.microsoft.com/library/a33fd5f9-2de9-4653-a4f0-d9df25082c4d)
+ [連結要求](https://msdn.microsoft.com/library/a33fd5f9-2de9-4653-a4f0-d9df25082c4d)

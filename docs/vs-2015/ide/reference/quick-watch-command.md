@@ -14,17 +14,17 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 0a4bc73046ca32645ffcdc8c3f2978c9245aaec6
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: c9ac805ebea19604343d561bf553448fff2ca575
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59668063"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65701740"
 ---
 # <a name="quick-watch-command"></a>快速監看式命令
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-顯示 [[快速監看式] 對話方塊](http://msdn.microsoft.com/library/ffaee1dd-e5ce-4ef2-9401-d28329398867)的 [運算式] 欄位中所選取或指定的文字。 您可以使用此對話方塊來計算偵錯工具辨識的變數或運算式目前的值，或暫存器的內容。 此外，您可以變更任何非 const 變數的值或任何暫存器的內容。  
+顯示 [[快速監看式] 對話方塊](https://msdn.microsoft.com/library/ffaee1dd-e5ce-4ef2-9401-d28329398867)的 [運算式] 欄位中所選取或指定的文字。 您可以使用此對話方塊來計算偵錯工具辨識的變數或運算式目前的值，或暫存器的內容。 此外，您可以變更任何非 const 變數的值或任何暫存器的內容。  
   
 ## <a name="syntax"></a>語法  
   
@@ -45,8 +45,8 @@ Debug.QuickWatchq [text]
 >Debug.QuickWatch  
 ```  
   
-## <a name="see-also"></a>另請參閱  
- [如何：使用快速監看式對話方塊](http://msdn.microsoft.com/library/ffaee1dd-e5ce-4ef2-9401-d28329398867)   
+## <a name="see-also"></a>請參閱  
+ [如何：使用快速監看式對話方塊](https://msdn.microsoft.com/library/ffaee1dd-e5ce-4ef2-9401-d28329398867)   
  [Visual Studio 命令](../../ide/reference/visual-studio-commands.md)   
  [命令視窗](../../ide/reference/command-window.md)   
  [尋找/命令方塊](../../ide/find-command-box.md)   

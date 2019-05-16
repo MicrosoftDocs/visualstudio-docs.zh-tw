@@ -1,5 +1,5 @@
 ---
-title: HOW TO：隱藏編譯器警告 |Microsoft Docs
+title: 作法：隱藏編譯器警告 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -9,12 +9,12 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 27eeecc4330f772a2e1e8e065f927a8b17c03020
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 994b29fb4592d55a04389896ee9db8848dceda67
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60064306"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65695387"
 ---
 # <a name="how-to-suppress-compiler-warnings"></a>HOW TO：隱藏編譯器警告
 
@@ -106,7 +106,7 @@ ms.locfileid: "60064306"
 
     [輸出] 視窗不會再顯示您所指定的警告。
 
-   如需詳細資訊，請參閱 [/nowarn](http://msdn.microsoft.com/library/7ebf2106-0652-4fdc-bf60-70fc86465d83)。
+   如需詳細資訊，請參閱 [/nowarn](https://msdn.microsoft.com/library/7ebf2106-0652-4fdc-bf60-70fc86465d83)。
 
 ## <a name="see-also"></a>另請參閱
 

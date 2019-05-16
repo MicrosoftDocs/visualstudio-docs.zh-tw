@@ -8,12 +8,12 @@ ms.assetid: f7e9e4a2-5d01-4f78-b408-5be3892bd162
 caps.latest.revision: 28
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e01165f12bcf3b41e4ef1279d12ce99bf8f6598f
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 2a1eae79e90a7d20419aaf25c1679aae885e3e92
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63442786"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65686423"
 ---
 # <a name="configure-unit-tests-by-using-a-runsettings-file"></a>使用 .runsettings 檔案設定單元測試
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,7 +25,7 @@ ms.locfileid: "63442786"
 > [!NOTE]
 > **.runsettings 和 .testsettings**  
 >   
-> 有兩種類型的檔案可用來設定測試。 *.runsettings 是用於單元測試。 而 \*.testsettings 是針對[實驗室環境測試](http://msdn.microsoft.com/library/0c15317e-80c6-4317-aed3-82b8e15e3901)、Web 效能和負載測試以及用於自訂一些類型的診斷資料配接器 (例如 IntelliTrace 和事件記錄配接器)。  
+> 有兩種類型的檔案可用來設定測試。 *.runsettings 是用於單元測試。 而 \*.testsettings 是針對[實驗室環境測試](https://msdn.microsoft.com/library/0c15317e-80c6-4317-aed3-82b8e15e3901)、Web 效能和負載測試以及用於自訂一些類型的診斷資料配接器 (例如 IntelliTrace 和事件記錄配接器)。  
 >   
 > 在舊版 Visual Studio 到 2010 中，也是使用 *.testsettings 檔案來自訂單元測試。 您還是可以這麼做，但是測試的執行速度比使用 \*.runsettings 檔案中的對等組態還要慢。  
   
@@ -141,7 +141,7 @@ ms.locfileid: "63442786"
 #### <a name="other-diagnostic-data-adapters"></a>其他診斷資料配接器  
  程式碼涵蓋範圍配接器是目前唯一可透過使用回合設定檔來自訂的配接器。  
   
- 若要自訂任何其他類型的診斷資料配接器，您必須使用測試設定檔。 如需詳細資訊，請參閱[指定 Visual Studio 測試的測試設定](http://msdn.microsoft.com/library/0c15317e-80c6-4317-aed3-82b8e15e3901)。  
+ 若要自訂任何其他類型的診斷資料配接器，您必須使用測試設定檔。 如需詳細資訊，請參閱[指定 Visual Studio 測試的測試設定](https://msdn.microsoft.com/library/0c15317e-80c6-4317-aed3-82b8e15e3901)。  
   
 #### <a name="testrunparameters"></a>TestRunParameters  
  TestRunParameters 提供可供在執行階段的測試使用之定義變數和值的方式。  
@@ -152,7 +152,7 @@ ms.locfileid: "63442786"
 |組態|預設|值|  
 |-------------------|-------------|------------|  
 |ForcedLegacyMode|False|Visual Studio 2012 中的 MSTest 配接器已進行過最佳化，因此更快速且更具延展性。 某些行為 (例如測試執行順序) 可能與舊版 Visual Studio 稍有出入。 將此值設為 `true` 即可使用舊的測試配接器。<br /><br /> 例如，如果您為單元測試指定 app.config 檔案，則可以使用此方式。<br /><br /> 建議您考慮重構測試，以便使用較新的配接器。|  
-|IgnoreTestImpact|False|在 MSTest 或 Microsoft Test Manager 中執行時，測試影響功能會為最近變更所影響的測試設定優先權。 這項設定會停用該功能。 如需詳細資訊，請參閱[How to:收集資料以檢查其測試應該要執行程式碼變更後](http://msdn.microsoft.com/library/2f921ea1-9bb0-4870-a30f-0521fc22cb47)。|  
+|IgnoreTestImpact|False|在 MSTest 或 Microsoft Test Manager 中執行時，測試影響功能會為最近變更所影響的測試設定優先權。 這項設定會停用該功能。 如需詳細資訊，請參閱[How to:收集資料以檢查其測試應該要執行程式碼變更後](https://msdn.microsoft.com/library/2f921ea1-9bb0-4870-a30f-0521fc22cb47)。|  
 |SettingsFile||您可以指定與此處的 MS 測試配接器一起使用的測試設定檔。 您也可以使用 [測試] 功能表、[測試設定] 、[選取測試設定檔] 來指定測試設定檔。<br /><br /> 如果您指定這個值，也必須將 [ **ForcedlegacyMode** ] 設定為 [ **true**]。<br /><br /> `<RunSettings>   <MSTest>     <SettingsFile>my.testsettings</SettingsFile>      <ForcedLegacyMode>true</ForcedLegacyMode>    </MSTest> </RunSettings>`|  
 |KeepExecutorAliveAfterLegacyRun|False|測試回合完成後，會關閉 MSTest。 此時也會終止所有在測試過程中啟動的處理序。 如果您想要讓測試執行程式保持運作，請將這個組態設為 true。<br /><br /> 例如，您可以使用此方式讓瀏覽器在不同的自動程式碼 UI 測試之間保持執行。|  
 |DeploymentEnabled|true|如果將此設定為 false，就不會將您在測試方法中指定的部署項目複製到部署目錄中。|  
@@ -164,4 +164,4 @@ ms.locfileid: "63442786"
   
 ## <a name="see-also"></a>另請參閱  
  [自訂程式碼涵蓋範圍分析](../test/customizing-code-coverage-analysis.md)   
- [指定 Visual Studio 測試的測試設定](http://msdn.microsoft.com/library/0c15317e-80c6-4317-aed3-82b8e15e3901)
+ [指定 Visual Studio 測試的測試設定](https://msdn.microsoft.com/library/0c15317e-80c6-4317-aed3-82b8e15e3901)
