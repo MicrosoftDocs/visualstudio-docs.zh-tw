@@ -16,12 +16,12 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 1576dfc54622f42e87ff2e9a951eed321300b1e4
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 1da058cbbdda71758e9a158cfd6778a044797093
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60039284"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65703820"
 ---
 # <a name="create-parameterized-tableadapter-queries"></a>建立參數型 TableAdapter 查詢
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ ms.locfileid: "60039284"
 > 當建構參數化的查詢時，使用參數標記法的特定資料庫正在編寫。 例如，Access 和 OleDb 資料來源使用問號 '?' 代表參數，所以 WHERE 子句應該類似：`WHERE City = ?`。  
   
 > [!NOTE]
-> 對話方塊和功能表命令，您會看到，可能會有所不同說明中所述，根據您目前使用的設定或您使用的版本不同。 若要變更您的設定，請前往**工具**功能表，然後選取**匯入和匯出設定**。 如需詳細資訊，請參閱 [在 Visual Studio 中自訂開發設定](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)  
+> 對話方塊和功能表命令，您會看到，可能會有所不同說明中所述，根據您目前使用的設定或您使用的版本不同。 若要變更您的設定，請前往**工具**功能表，然後選取**匯入和匯出設定**。 如需詳細資訊，請參閱 [在 Visual Studio 中自訂開發設定](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)  
   
 ## <a name="create-a-parameterized-tableadapter-query"></a>建立參數型的 TableAdapter 查詢 
   

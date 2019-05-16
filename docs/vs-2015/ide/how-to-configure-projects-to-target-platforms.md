@@ -18,17 +18,17 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 33c466d3c7a619de87baccd2713c9a595283d5ac
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 4cba42203cb5d42e2518d2f1ead7fb998d9b6425
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63422792"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65680646"
 ---
 # <a name="how-to-configure-projects-to-target-platforms"></a>如何：將專案設定成以平台為目標
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 可讓您將應用程式的目標設定為不同的平台，包括 64 位元的平台。 如需 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 中 64 位元平台支援的詳細資訊，請參閱 [64 位元應用程式](http://msdn.microsoft.com/library/fd4026bc-2c3d-4b27-86dc-ec5e96018181)。  
+[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 可讓您將應用程式的目標設定為不同的平台，包括 64 位元的平台。 如需 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 中 64 位元平台支援的詳細資訊，請參閱 [64 位元應用程式](https://msdn.microsoft.com/library/fd4026bc-2c3d-4b27-86dc-ec5e96018181)。  
   
 ## <a name="targeting-platforms-with-the-configuration-manager"></a>利用組態管理員設定平台的目標  
  [組態管理員] 可讓您快速加入新平台，以成為專案的目標。 如果您選取 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 隨附的其中一個平台，您的專案屬性會經過修改，以針對選取的平台建置專案。  
@@ -57,14 +57,14 @@ ms.locfileid: "63422792"
   
  根據您所使用的程式設計語言而定，此工作的執行會有所不同。 請參閱下列連結以取得詳細資訊：  
   
-- 若是 [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] 專案，請參閱 [/platform (Visual Basic)](http://msdn.microsoft.com/library/f9bc61e6-e854-4ae1-87b9-d6244de23fd1)。  
+- 若是 [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] 專案，請參閱 [/platform (Visual Basic)](https://msdn.microsoft.com/library/f9bc61e6-e854-4ae1-87b9-d6244de23fd1)。  
   
 - 若是 [!INCLUDE[csprcs](../includes/csprcs-md.md)] 專案，請參閱[專案設計工具、建置頁 (C#)](../ide/reference/build-page-project-designer-csharp.md)。  
   
-- 若是 [!INCLUDE[vcprvc](../includes/vcprvc-md.md)] 專案，請參閱 [/clr (Common Language Runtime 編譯)](http://msdn.microsoft.com/library/fec5a8c0-40ec-484c-a213-8dec918c1d6c)。  
+- 若是 [!INCLUDE[vcprvc](../includes/vcprvc-md.md)] 專案，請參閱 [/clr (Common Language Runtime 編譯)](https://msdn.microsoft.com/library/fec5a8c0-40ec-484c-a213-8dec918c1d6c)。  
   
 ## <a name="see-also"></a>請參閱  
  [了解組建平台](../ide/understanding-build-platforms.md)   
- [/platform (C# 編譯器選項)](http://msdn.microsoft.com/library/c290ff5e-47f4-4a85-9bb3-9c2525b0be04)   
- [64 位元應用程式](http://msdn.microsoft.com/library/fd4026bc-2c3d-4b27-86dc-ec5e96018181)   
+ [/platform (C# 編譯器選項)](https://msdn.microsoft.com/library/c290ff5e-47f4-4a85-9bb3-9c2525b0be04)   
+ [64 位元應用程式](https://msdn.microsoft.com/library/fd4026bc-2c3d-4b27-86dc-ec5e96018181)   
  [Visual Studio IDE 64 位元支援](../ide/visual-studio-ide-64-bit-support.md)

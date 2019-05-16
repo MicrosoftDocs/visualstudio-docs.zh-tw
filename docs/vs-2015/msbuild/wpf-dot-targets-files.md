@@ -18,12 +18,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 760df73b35f45b983740f6dda5e6fe58dc2493ae
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 2839cce2a49eb4be8e72f370fe60be3d81529da1
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59658432"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65687120"
 ---
 # <a name="wpf-targets-files"></a>WPF .Targets 檔案
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,4 +33,4 @@ ms.locfileid: "59658432"
 ## <a name="see-also"></a>請參閱  
  [.Targets 檔案](../msbuild/msbuild-dot-targets-files.md)   
  [MSBuild 參考](../msbuild/msbuild-reference.md)   
- [建置 WPF 應用程式 (WPF)](http://msdn.microsoft.com/library/a58696fd-bdad-4b55-9759-136dfdf8b91c)
+ [建置 WPF 應用程式 (WPF)](https://msdn.microsoft.com/library/a58696fd-bdad-4b55-9759-136dfdf8b91c)

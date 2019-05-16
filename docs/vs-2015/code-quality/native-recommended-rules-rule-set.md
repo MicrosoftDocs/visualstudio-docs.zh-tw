@@ -9,12 +9,12 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 2af02842ffc5c498d27578bcff2cb9fdfa0f6e07
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: a0b2dd8f7e48ea9fe1c1a46daf99302b3c29081f
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59658847"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65703179"
 ---
 # <a name="native-recommended-rules-rule-set"></a>原生建議規則規則集
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -116,7 +116,7 @@ ms.locfileid: "59658847"
 |                       [C6504](../code-quality/c6504.md)                        |                                                         非指標上的 Null                                                         |
 |                       [C6505](../code-quality/c6505.md)                        |                                                          Void 上的 MustCheck                                                          |
 |                       [C6506](../code-quality/c6506.md)                        |                                                 非指標或陣列上的緩衝區大小                                                 |
-| [C6507](http://msdn.microsoft.com/18f88cd1-d035-4403-a6a4-12dd0affcf21)  |                                                  取值零時的 Null 不符                                                  |
+| [C6507](https://msdn.microsoft.com/18f88cd1-d035-4403-a6a4-12dd0affcf21)  |                                                  取值零時的 Null 不符                                                  |
 |                       [C6508](../code-quality/c6508.md)                        |                                                      寫入存取常數                                                       |
 |                       [C6509](../code-quality/c6509.md)                        |                                                     先前的條件所用的 Return                                                     |
 |                       [C6510](../code-quality/c6510.md)                        |                                                   非指標上的 Null Terminated                                                    |
@@ -127,11 +127,11 @@ ms.locfileid: "59658847"
 |                       [C6516](../code-quality/c6516.md)                        |                                                     屬性 (Attribute) 上沒有屬性 (Property)                                                      |
 |                       [C6517](../code-quality/c6517.md)                        |                                                  不能讀取的緩衝區上的有效大小                                                  |
 |                       [C6518](../code-quality/c6518.md)                        |                                                不能寫入的緩衝區上的可寫入大小                                                 |
-| [C6521](http://msdn.microsoft.com/e98d0ae3-6f13-47b2-9a15-15d4055af9ef)  |                                                   無效的大小字串取值                                                   |
+| [C6521](https://msdn.microsoft.com/e98d0ae3-6f13-47b2-9a15-15d4055af9ef)  |                                                   無效的大小字串取值                                                   |
 |                       [C6522](../code-quality/c6522.md)                        |                                                      無效的大小字串類型                                                       |
-| [C6523](http://msdn.microsoft.com/11397a31-b224-46b0-afb7-d49ca576a3bb)  |                                                    無效的大小字串參數                                                    |
+| [C6523](https://msdn.microsoft.com/11397a31-b224-46b0-afb7-d49ca576a3bb)  |                                                    無效的大小字串參數                                                    |
 |                       [C6525](../code-quality/c6525.md)                        |                                              無效的大小字串不可能執行到的位置                                               |
-| [C6526](http://msdn.microsoft.com/59c590c7-0098-4166-a1ac-87f324596002)  |                                                   無效的大小字串緩衝區類型                                                   |
+| [C6526](https://msdn.microsoft.com/59c590c7-0098-4166-a1ac-87f324596002)  |                                                   無效的大小字串緩衝區類型                                                   |
 |                       [C6527](../code-quality/c6527.md)                        |                         無效的附註：'NeedsRelease' 屬性不能用於 void 類型的值                          |
 |                       [C6530](../code-quality/c6530.md)                        |                                                  無法辨認的格式字串樣式                                                   |
 |                       [C6540](../code-quality/c6540.md)                        |            在這個函式上使用屬性註釋會使其所有現有的 __declspec 註釋無效。             |

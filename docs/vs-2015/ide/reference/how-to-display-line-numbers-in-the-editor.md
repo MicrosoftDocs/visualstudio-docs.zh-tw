@@ -14,12 +14,12 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 33dfcd989a71785918cf4d121e2a2624654a5101
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: a2d6d3bd1d0a27a12194005422910236ea0fd02c
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63405659"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65704402"
 ---
 # <a name="how-to-display-line-numbers-in-the-editor"></a>如何：顯示編輯器中的行號
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -27,7 +27,7 @@ ms.locfileid: "63405659"
 您可以在程式碼中顯示或隱藏行號。  
   
 > [!NOTE]
-> 根據您目前使用的設定，出現的對話方塊與功能表命令可能不同於本文所述。 若要變更設定，請開啟 [工具]/[匯入和匯出設定]。 如需詳細資訊，請參閱 [在 Visual Studio 中自訂開發設定](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)  
+> 根據您目前使用的設定，出現的對話方塊與功能表命令可能不同於本文所述。 若要變更設定，請開啟 [工具]/[匯入和匯出設定]。 如需詳細資訊，請參閱 [在 Visual Studio 中自訂開發設定](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)  
   
 ## <a name="display-line-numbers-in-code"></a>顯示程式碼行號  
  行號並未加入至程式碼中，只是當做參考而已。 若要列印行號，請在 [列印] 對話方塊中選取 [包含行號] 核取方塊。  

@@ -14,12 +14,12 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 0d8ba826e332141a3ee53a70185f0e8e18e465f4
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 8bc4920c32d781d31a6aed88699efccf8be6b774
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63443224"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65703996"
 ---
 # <a name="user-permissions-and-visual-studio"></a>使用者權限和 Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,17 +36,17 @@ ms.locfileid: "63443224"
 |安裝|安裝 Visual Studio。|[安裝 Visual Studio 2015](../install/install-visual-studio-2015.md)|
 ||從 Visual Studio 試用版升級。|[如何：從 Visual Studio 試用版升級](../install/how-to-upgrade-from-a-trial-edition-of-visual-studio.md)|
 ||安裝、更新或移除本機說明內容。|[安裝與管理本機內容](../ide/install-and-manage-local-content.md)|
-|應用程式類型|開發 SharePoint 2010 方案。|[開發 SharePoint 方案的需求](http://msdn.microsoft.com/library/ae8ff69d-4540-4380-ab0b-845f7108e89c)|
+|應用程式類型|開發 SharePoint 2010 方案。|[開發 SharePoint 方案的需求](https://msdn.microsoft.com/library/ae8ff69d-4540-4380-ab0b-845f7108e89c)|
 ||取得 [!INCLUDE[win8_appstore_long](../includes/win8-appstore-long-md.md)]的開發人員授權。|[取得開發人員授權 (Windows 市集應用程式)](http://go.microsoft.com/fwlink/?LinkID=241313)|
 |工具箱|將傳統 COM 控制項新增至 [工具箱]。|[使用工具箱](../ide/using-the-toolbox.md)|
-|增益集|安裝及使用在 IDE 中使用傳統 COM 撰寫的增益集。|[建立增益集和精靈](http://msdn.microsoft.com/library/c5a47c21-6668-4de3-898d-afa969317e73)|
-|建置|使用註冊元件的建置後事件。|[了解自訂建置步驟和建置事件](http://msdn.microsoft.com/library/beb2f017-3e9f-4b2c-9b57-2572fd2628e4)|
-||包含當您建立 C++ 專案時的註冊步驟。|[了解自訂建置步驟和建置事件](http://msdn.microsoft.com/library/beb2f017-3e9f-4b2c-9b57-2572fd2628e4)|
+|增益集|安裝及使用在 IDE 中使用傳統 COM 撰寫的增益集。|[建立增益集和精靈](https://msdn.microsoft.com/library/c5a47c21-6668-4de3-898d-afa969317e73)|
+|建置|使用註冊元件的建置後事件。|[了解自訂建置步驟和建置事件](https://msdn.microsoft.com/library/beb2f017-3e9f-4b2c-9b57-2572fd2628e4)|
+||包含當您建立 C++ 專案時的註冊步驟。|[了解自訂建置步驟和建置事件](https://msdn.microsoft.com/library/beb2f017-3e9f-4b2c-9b57-2572fd2628e4)|
 |偵錯|偵錯以更高權限執行的應用程式。|[偵錯設定和準備](../debugger/debugger-settings-and-preparation.md)|
 ||偵錯在不同使用者帳戶下執行的應用程式，例如 ASP.NET 網站。|[偵錯 ASP.NET 和 AJAX 應用程式](../debugger/debugging-aspnet-and-ajax-applications.md)|
-||在 XAML 瀏覽器應用程式的區域 (XBAP) 中進行偵錯。|[WPF 主應用程式 (PresentationHost.exe)](http://msdn.microsoft.com/library/3215bfa1-722c-4ac8-a7c5-bdd02d30afbd)|
+||在 XAML 瀏覽器應用程式的區域 (XBAP) 中進行偵錯。|[WPF 主應用程式 (PresentationHost.exe)](https://msdn.microsoft.com/library/3215bfa1-722c-4ac8-a7c5-bdd02d30afbd)|
 ||使用模擬器來偵錯 Microsoft Azure 雲端服務專案。|[在 Visual Studio 中偵錯雲端服務](http://go.microsoft.com/fwlink/?LinkId=266725)|
-||設定遠端偵錯的防火牆。|[在裝置上設定遠端工具](http://msdn.microsoft.com/library/90f45630-0d26-4698-8c1f-63f85a12db9c)|
+||設定遠端偵錯的防火牆。|[在裝置上設定遠端工具](https://msdn.microsoft.com/library/90f45630-0d26-4698-8c1f-63f85a12db9c)|
 |效能工具|對應用程式進行程式碼剖析。|[效能分析的初級開發人員指南](../profiling/beginners-guide-to-performance-profiling.md)|
 |部署|將 Web 應用程式部署在本機電腦上的 Internet Information Services (IIS)。|[Deploying an ASP.NET Web Application to a Hosting Provider using Visual Studio or Visual Web Developer: Deploying to IIS as a Test Environment](http://go.microsoft.com/fwlink/?LinkId=266478) (使用 Visual Studio 或 Visual Web Developer 將 ASP.NET Web 應用程式部署至主機服務提供者：部署至 IIS 作為測試環境)|
 |提供意見給 Microsoft|變更您參與 Visual Studio 客戶經驗改進計畫的方式。|[如何：傳送意見回應](../misc/how-to-send-feedback-about-visual-studio.md)|

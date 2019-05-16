@@ -23,12 +23,12 @@ caps.latest.revision: 54
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 816db8b2bc5d78541dc089d75ff155b98231ffd5
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 5169f59ec12482fd35e09d4eb226277b7fb01455
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63435658"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65704540"
 ---
 # <a name="javascript-memory"></a>JavaScript 記憶體
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -382,15 +382,15 @@ if (performance && performance.mark) {
   
 - 尋找使用者巡覽至新頁面之後在記憶體中不慎保留的物件，這些物件是造成記憶體問題的常見原因。 例如：  
   
-    - 使用 [URL.CreateObjectUrl](http://msdn.microsoft.com/library/windows/apps/hh453196.aspx) 函式不正確，可能會造成此問題。  
+    - 使用 [URL.CreateObjectUrl](https://msdn.microsoft.com/library/windows/apps/hh453196.aspx) 函式不正確，可能會造成此問題。  
   
-    - 部分物件可能會提供 `dispose` 方法和建議以供使用。 例如，當您呼叫清單的 `dispose` 方法時，應在 [WinJS.Binding.List](http://msdn.microsoft.com/library/windows/apps/Hh700774.aspx) 上呼叫 `createFiltered` ，然後離開頁面。  
+    - 部分物件可能會提供 `dispose` 方法和建議以供使用。 例如，當您呼叫清單的 `dispose` 方法時，應在 [WinJS.Binding.List](https://msdn.microsoft.com/library/windows/apps/Hh700774.aspx) 上呼叫 `createFiltered` ，然後離開頁面。  
   
     - 您可能需要移除一個或多個事件接聽程式。 如需詳細資訊，請參閱 [View DOM event listeners](../debugger/view-dom-event-listeners.md)。  
   
 - 請觀賞 Build 2013 大會中關於 JavaScript 記憶體分析器的 [影片](http://channel9.msdn.com/Events/Build/2013/3-316) 。  
   
-- 閱讀 [管理 Windows 市集應用程式中的記憶體](http://msdn.microsoft.com/magazine/jj651575.aspx)(機器譯文)。  
+- 閱讀 [管理 Windows 市集應用程式中的記憶體](https://msdn.microsoft.com/magazine/jj651575.aspx)(機器譯文)。  
   
 - 考慮暫時修改程式碼來隔離問題。 例如，您可能要：  
   

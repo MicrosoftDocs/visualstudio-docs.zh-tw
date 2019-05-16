@@ -14,12 +14,12 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 90fb5b1c9a388d64e191915bbcbbe3de65f6aa99
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 9fba6ff1b4c56243a47c8b136a25d6f9d593d8e3
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63437631"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65701251"
 ---
 # <a name="create-xml-documentation-comments-for-javascript-intellisense"></a>建立 JavaScript IntelliSense 的 XML 文件註解
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -159,4 +159,4 @@ ms.locfileid: "63437631"
 ## <a name="see-also"></a>另請參閱  
  [JavaScript IntelliSense](../ide/javascript-intellisense.md)   
  [XML 文件註解](../ide/xml-documentation-comments-javascript.md)   
- [NIB：逐步解說：在 ASP.NET 中的 JavaScript IntelliSense](http://msdn.microsoft.com/4f6e0cc2-7f48-4dbf-abb0-7fb743a2d05b)
+ [NIB：逐步解說：在 ASP.NET 中的 JavaScript IntelliSense](https://msdn.microsoft.com/4f6e0cc2-7f48-4dbf-abb0-7fb743a2d05b)

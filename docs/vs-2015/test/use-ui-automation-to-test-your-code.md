@@ -17,12 +17,12 @@ ms.assetid: ad9e3eaa-ab86-436e-95b8-dc20eb1f8b2a
 caps.latest.revision: 87
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: f9a7d4288258ab3e90a7eec6ba3de7ac6892ee93
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 329b3abc06cbe212215b8e4981aacb79f668e6c4
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63442897"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65695310"
 ---
 # <a name="use-ui-automation-to-test-your-code"></a>使用 UI 自動化來測試您的程式碼
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -445,19 +445,19 @@ Mouse.Hover(uIItem1Text, new Point(87, 9));
 ## <a name="VerifyCodeUsingCUITWhatsNext"></a> 後續步驟
  **執行自動程式化 UI 測試的其他選項：** 您可以直接從 Visual Studio 執行自動程式化 UI 測試 (如本主題前面所述)。 此外，您可以從 [!INCLUDE[TCMext](../includes/tcmext-md.md)] 或 [!INCLUDE[esprbuild](../includes/esprbuild-md.md)] 執行自動化 UI 測試。 與其他自動化測試不同，如果自動化自動程式化 UI 測試，則在您執行程式碼 UI 測試時，其必須與桌面進行互動。
 
-- [如何：從 Microsoft Visual Studio 執行測試](http://msdn.microsoft.com/library/1a1207a9-2a33-4a1e-a1e3-ddf0181b1046) \(英文\)
+- [如何：從 Microsoft Visual Studio 執行測試](https://msdn.microsoft.com/library/1a1207a9-2a33-4a1e-a1e3-ddf0181b1046) \(英文\)
 
-- [在 Microsoft Test Manager 中執行自動化測試](http://msdn.microsoft.com/0632f265-63fe-4859-a413-9bb934c66835)
+- [在 Microsoft Test Manager 中執行自動化測試](https://msdn.microsoft.com/0632f265-63fe-4859-a413-9bb934c66835)
 
-- [如何：設定和執行已排程的測試在建置您的應用程式之後](http://msdn.microsoft.com/32acfeb1-b1aa-4afb-8cfe-cc209e6183fd)
+- [如何：設定和執行已排程的測試在建置您的應用程式之後](https://msdn.microsoft.com/32acfeb1-b1aa-4afb-8cfe-cc209e6183fd)
 
-- [在建置流程中執行測試](http://msdn.microsoft.com/library/d05743a1-c5cf-447e-bed9-bed3cb595e38)
+- [在建置流程中執行測試](https://msdn.microsoft.com/library/d05743a1-c5cf-447e-bed9-bed3cb595e38)
 
-- [從命令列執行自動化測試](http://msdn.microsoft.com/library/f18179c6-b688-4e41-9898-8aca130c4fc3)
+- [從命令列執行自動化測試](https://msdn.microsoft.com/library/f18179c6-b688-4e41-9898-8aca130c4fc3)
 
 - [如何：將測試代理程式設定為執行與桌面互動的測試](/visualstudio/test/how-to-set-up-your-test-agent-to-run-tests-that-interact-with-the-desktop?view=vs-2015)
 
-- [&#91;已停用&#93;在負載測試中使用自動程式化 UI 測試](http://msdn.microsoft.com/library/704339ff-7da7-4d5f-acb3-c3b23f4acb43)
+- [&#91;已停用&#93;在負載測試中使用自動程式化 UI 測試](https://msdn.microsoft.com/library/704339ff-7da7-4d5f-acb3-c3b23f4acb43)
 
   **新增自訂控制項的支援：** 自動程式化 UI 測試架構不支援每個可能的 UI，而且可能不支援您要測試的 UI。 例如，您無法立即為 [!INCLUDE[ofprexcel](../includes/ofprexcel-md.md)] 的 UI 建立自動程式碼 UI 測試。 不過，您可以建立自動程式化 UI 測試架構的擴充功能，以支援自訂控制項。
 
@@ -465,7 +465,7 @@ Mouse.Hover(uIItem1Text, new Point(87, 9));
 
 - [擴充自動程式化 UI 測試和動作記錄以支援 Microsoft Excel](../test/extending-coded-ui-tests-and-action-recordings-to-support-microsoft-excel.md)
 
-  自動程式化 UI 測試經常用來自動化手動測試。 如需其他指引，請參閱[Testing for Continuous Delivery with Visual Studio 2012 – 第 5 章：自動化系統測試](http://go.microsoft.com/fwlink/?LinkID=255196)。 如需手動測試的詳細資訊，請參閱[&#91;已停用&#93;使用 Microsoft Test Manager 建立手動測試案例](http://msdn.microsoft.com/library/9989e184-c8e4-444b-998d-a1a5ec94461e)。 如需自動化系統測試的詳細資訊，請參閱[使用 Microsoft Test Manager 建立自動化測試](http://msdn.microsoft.com/7b5075ee-ddfe-411d-b1d4-94283550a5d0)。
+  自動程式化 UI 測試經常用來自動化手動測試。 如需其他指引，請參閱[Testing for Continuous Delivery with Visual Studio 2012 – 第 5 章：自動化系統測試](http://go.microsoft.com/fwlink/?LinkID=255196)。 如需手動測試的詳細資訊，請參閱[&#91;已停用&#93;使用 Microsoft Test Manager 建立手動測試案例](https://msdn.microsoft.com/library/9989e184-c8e4-444b-998d-a1a5ec94461e)。 如需自動化系統測試的詳細資訊，請參閱[使用 Microsoft Test Manager 建立自動化測試](https://msdn.microsoft.com/7b5075ee-ddfe-411d-b1d4-94283550a5d0)。
 
 ## <a name="external-resources"></a>外部資源
 
@@ -486,7 +486,7 @@ Mouse.Hover(uIItem1Text, new Point(87, 9));
 
 - <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UIMap.UIMap>
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert>
-- [改善程式碼品質](http://msdn.microsoft.com/library/73baa961-c21f-43fe-bb92-3f59ae9b5945)
+- [改善程式碼品質](https://msdn.microsoft.com/library/73baa961-c21f-43fe-bb92-3f59ae9b5945)
 - [逐步解說：建立、編輯及維護自動程式化 UI 測試](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md)
 - [自動程式化 UI 測試的結構](../test/anatomy-of-a-coded-ui-test.md)
 - [自動程式化 UI 測試的最佳做法](../test/best-practices-for-coded-ui-tests.md)
@@ -494,4 +494,4 @@ Mouse.Hover(uIItem1Text, new Point(87, 9));
 - [使用自動程式化 UI 測試編輯器來編輯自動程式化 UI 測試](../test/editing-coded-ui-tests-using-the-coded-ui-test-editor.md)
 - [自動程式化 UI 測試和動作記錄的支援組態和平台](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)
 - [升級 Visual Studio 2010 的自動程式化 UI 測試](../test/upgrading-coded-ui-tests-from-visual-studio-2010.md)
-- [從現有的動作記錄產生自動程式碼 UI 測試](http://msdn.microsoft.com/library/56736963-9027-493b-b5c4-2d4e86d1d497)
+- [從現有的動作記錄產生自動程式碼 UI 測試](https://msdn.microsoft.com/library/56736963-9027-493b-b5c4-2d4e86d1d497)

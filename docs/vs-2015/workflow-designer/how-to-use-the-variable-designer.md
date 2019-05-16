@@ -1,5 +1,5 @@
 ---
-title: HOW TO：使用變數設計工具 |Microsoft Docs
+title: 作法：使用變數設計工具 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-workflow-designer
@@ -11,15 +11,15 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 0db5cba76f464e559f46963afd0be6b663ad6d6f
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 9ebfcf53ce4d03f676930bd905baa0723c17e481
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63407878"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65697083"
 ---
 # <a name="how-to-use-the-variable-designer"></a>HOW TO：使用變數設計工具
-變數設計工具適用於建立變數，以用於資料繫結的狀況以及條件陳述式。 按一下即可存取設計工具**變數**設計畫布左下角的按鈕。 設計工具會包含一份變數出現在表格式的格式，而且可依每個資料行標頭中，除了**預設**資料行。 每個變數都會包含名稱、變數型別、範圍與預設值 (如果有的話)。 名稱和預設值都是可編輯的文字欄位，而型別和範圍都可從下拉式清單中選取。 範圍是叫用變數設計工具時選取的活動。 如果無法在選取範圍內建立變數，則範圍會預設為離選取最近的祖系活動，以便在其範圍內建立變數。 [!INCLUDE[crabout](../includes/crabout-md.md)] 變數，請參閱[變數和引數](http://msdn.microsoft.com/library/d03dbe34-5b2e-4f21-8b57-693ee49611b8)。  
+變數設計工具適用於建立變數，以用於資料繫結的狀況以及條件陳述式。 按一下即可存取設計工具**變數**設計畫布左下角的按鈕。 設計工具會包含一份變數出現在表格式的格式，而且可依每個資料行標頭中，除了**預設**資料行。 每個變數都會包含名稱、變數型別、範圍與預設值 (如果有的話)。 名稱和預設值都是可編輯的文字欄位，而型別和範圍都可從下拉式清單中選取。 範圍是叫用變數設計工具時選取的活動。 如果無法在選取範圍內建立變數，則範圍會預設為離選取最近的祖系活動，以便在其範圍內建立變數。 [!INCLUDE[crabout](../includes/crabout-md.md)] 變數，請參閱[變數和引數](https://msdn.microsoft.com/library/d03dbe34-5b2e-4f21-8b57-693ee49611b8)。  
   
  直到使用者明確使用其中一種排序控制項、關閉與重新開啟變數設計工具，或建立其他變數為止，排序不會套用。  
   
@@ -38,5 +38,5 @@ ms.locfileid: "63407878"
   
 ## <a name="see-also"></a>另請參閱  
  [使用工作流程設計工具](../workflow-designer/using-the-workflow-designer.md)   
- [變數和引數](http://msdn.microsoft.com/library/d03dbe34-5b2e-4f21-8b57-693ee49611b8)   
+ [變數和引數](https://msdn.microsoft.com/library/d03dbe34-5b2e-4f21-8b57-693ee49611b8)   
  [如何：使用引數設計工具](../workflow-designer/how-to-use-the-argument-designer.md)

@@ -12,12 +12,12 @@ caps.latest.revision: 76
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 438dd372cc2d70ecb8d1d41602751b6ce0cdf821
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 325a0c594c142ab62aba47e5c721da5ade6f179f
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63446758"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65704056"
 ---
 # <a name="walkthrough-creating-a-custom-directive-processor"></a>逐步解說：建立自訂指示詞處理器
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -678,7 +678,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VisualStudio\*.0\TextTemplatin
 ## <a name="testing-the-directive-processor"></a>測試指示詞處理器  
  若要測試指示詞處理器，您必須撰寫呼叫該處理器的文字範本。  
 
- 在本範例中，文字範本會呼叫指示詞，並傳入 XML 檔 (包含類別檔案的文件) 的名稱。 如需詳細資訊，請參閱 < [XML 文件註解](http://msdn.microsoft.com/library/803b7f7b-7428-4725-b5db-9a6cff273199)。  
+ 在本範例中，文字範本會呼叫指示詞，並傳入 XML 檔 (包含類別檔案的文件) 的名稱。 如需詳細資訊，請參閱 < [XML 文件註解](https://msdn.microsoft.com/library/803b7f7b-7428-4725-b5db-9a6cff273199)。  
 
  文字範本接著使用指示詞建立的 <xref:System.Xml.XmlDocument> 屬性，巡覽 XML 並印出文件註解。  
 

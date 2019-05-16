@@ -16,12 +16,12 @@ caps.latest.revision: 13
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: eb963afb4a1cbc029ee8490a9c35d1b09e8c3338
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: db13165c584399952dc491cf714ac84ee4de7598
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63447333"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65697433"
 ---
 # <a name="error-firewall-no-authentication"></a>錯誤：防火牆無任何驗證
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,4 +31,4 @@ ms.locfileid: "63447333"
 > [!NOTE]
 > 遠端偵錯工具可以自動設定 Windows 防火牆。 當使用 Windows 防火牆以外的防火牆 (例如，協力廠商軟體防火牆或硬體防火牆) 時，必須手動設定防火牆允許遠端偵錯。 若要執行這項操作，請允許 msvsmon.exe 接聽所在的 TCP/IP 通訊埠上的流量。 根據預設，這些通訊埠為 4018 和 4019，其中 4018 會在所有作業系統上使用，而 4019 僅在 Windows x64 上用來允許對 x86 處理序進行偵錯。  
   
- 如需詳細資訊，請參閱 <<c0> [ 設定 Up the Remote Tools 在裝置上](http://msdn.microsoft.com/library/90f45630-0d26-4698-8c1f-63f85a12db9c)。
+ 如需詳細資訊，請參閱 <<c0> [ 設定 Up the Remote Tools 在裝置上](https://msdn.microsoft.com/library/90f45630-0d26-4698-8c1f-63f85a12db9c)。

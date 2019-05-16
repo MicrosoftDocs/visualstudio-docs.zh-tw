@@ -22,12 +22,12 @@ caps.latest.revision: 21
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: ff2031aa5e690829967ccc41ca35c67df23d325b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 416e17c95290643873f52f71ec892514d183b6d0
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58943549"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65704566"
 ---
 # <a name="how-can-i-keep-focus-when-stepping-through-my-program"></a>逐步執行我的程式時，如何保持焦點？
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,7 +36,7 @@ ms.locfileid: "58943549"
  我的程式有視窗啟動的問題。 要重現問題時，以偵錯工具逐步執行程式會帶來干擾，因為程式會一直失焦。 有什麼方法可以避免這個問題嗎？  
   
 ## <a name="solution"></a>方案  
- 如果您有第二台電腦，使用遠端偵錯。 當您在本機上執行偵錯工具時，您可以在遠端電腦上操作程式。 如需詳細資訊，請參閱[如何：選取遠端電腦](http://msdn.microsoft.com/4332ba8e-2f0b-4f62-b96a-e762b9f3c3ba)。  
+ 如果您有第二台電腦，使用遠端偵錯。 當您在本機上執行偵錯工具時，您可以在遠端電腦上操作程式。 如需詳細資訊，請參閱[如何：選取遠端電腦](https://msdn.microsoft.com/4332ba8e-2f0b-4f62-b96a-e762b9f3c3ba)。  
   
 ## <a name="see-also"></a>另請參閱  
  [對機器碼進行偵錯的常見問題集](../debugger/debugging-native-code-faqs.md)   

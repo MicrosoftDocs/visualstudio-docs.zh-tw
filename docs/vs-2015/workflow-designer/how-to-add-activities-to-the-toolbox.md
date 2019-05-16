@@ -1,5 +1,5 @@
 ---
-title: HOW TO：將活動新增至工具箱 |Microsoft Docs
+title: 作法：將活動新增至工具箱 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-workflow-designer
@@ -9,12 +9,12 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: af470bbbebbf10fdfcf906c905171e86b0c100ba
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 0aa6a76555a18c142acb8759b1bc71d56e9d7dcd
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63433540"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65690946"
 ---
 # <a name="how-to-add-activities-to-the-toolbox"></a>HOW TO：將活動新增至工具箱
 活動可以加入至**工具箱**方案中有好幾種方式。 您可以從目前的專案內部加入活動、從不同的專案參考活動，或是從不同的組件參考活動。  
@@ -34,7 +34,7 @@ ms.locfileid: "63433540"
     > 在工具箱中，針對一個活動名稱只能顯示一個活動。 如果有兩個活動來自不同的組件但類別名稱相同，就只能顯示其中一個。  
   
     > [!NOTE]
-    > 應用程式定義域在編輯器執行個體間共用，如果使用靜態變數，則它們也會在編輯器執行個體間共用。 如果這不是想要的行為，應該使用服務來追蹤變數執行個體。 請參閱[使用 ModelItem 編輯內容](http://msdn.microsoft.com/library/7f9f1ea5-0147-4079-8eca-be94f00d3aa1)如需使用設計工具內的服務。  
+    > 應用程式定義域在編輯器執行個體間共用，如果使用靜態變數，則它們也會在編輯器執行個體間共用。 如果這不是想要的行為，應該使用服務來追蹤變數執行個體。 請參閱[使用 ModelItem 編輯內容](https://msdn.microsoft.com/library/7f9f1ea5-0147-4079-8eca-be94f00d3aa1)如需使用設計工具內的服務。  
   
 ### <a name="to-add-an-activity-from-within-a-different-project"></a>若要從不同的專案內部加入活動  
   

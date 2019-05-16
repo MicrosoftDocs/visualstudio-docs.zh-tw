@@ -11,23 +11,23 @@ ms.assetid: 303cd399-e29d-4ea1-8abe-5e0b59c12a0c
 caps.latest.revision: 20
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 8cfb8b493190429f6f3a0a6295d65db2c151639c
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 9d2822e9eef36806f5c251813925fb4244242519
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63436617"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65705806"
 ---
 # <a name="registering-interop-assembly-command-handlers"></a>註冊 Interop 組件命令處理常式
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 VSPackage 必須向[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]以便整合式的開發環境 (IDE) 正確地路由傳送它的命令。  
   
- 您可以更新登錄，手動編輯，或使用登錄器 (.rgs) 檔案。 如需詳細資訊，請參閱 [Creating Registrar Scripts](http://msdn.microsoft.com/library/cbd5024b-8061-4a71-be65-7fee90374a35)。  
+ 您可以更新登錄，手動編輯，或使用登錄器 (.rgs) 檔案。 如需詳細資訊，請參閱 [Creating Registrar Scripts](https://msdn.microsoft.com/library/cbd5024b-8061-4a71-be65-7fee90374a35)。  
   
  Managed Package Framework (MPF) 提供這項功能透過<xref:Microsoft.VisualStudio.Shell.ProvideMenuResourceAttribute>類別。  
   
- [命令資料表格式參考](http://msdn.microsoft.com/09e9c6ef-9863-48de-9483-d45b7b7c798f)資源位於未受管理的附屬 UI 的 dll。  
+ [命令資料表格式參考](https://msdn.microsoft.com/09e9c6ef-9863-48de-9483-d45b7b7c798f)資源位於未受管理的附屬 UI 的 dll。  
   
 ## <a name="command-handler-registration-of-a-vspackage"></a>VSPackage 的命令處理常式註冊  
  VSPackage，做為使用者介面 (UI) 的處理常式為基礎的命令需要命名 VSPackage 的登錄項目`GUID`。 此登錄項目指定 VSPackage 的 UI 資源檔和該檔案中的功能表資源的位置。 登錄項目本身位於 hkey_local_machine\software\microsoft\visualstudio \\\*\<版本 >* \Menus，其中*\<版本 >* 是的新版[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]，例如 9.0。  

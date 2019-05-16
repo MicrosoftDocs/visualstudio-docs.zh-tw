@@ -15,12 +15,12 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 165ad365ea094a9f0b5771490e14e889160f3f96
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: d973d7ff5464b76228e917c83b3e62116e115718
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58941171"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65693794"
 ---
 # <a name="ca1052-static-holder-types-should-be-sealed"></a>CA1052:靜態預留位置類型應該為密封的
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ ms.locfileid: "58941171"
 |中斷變更|中斷|
 
 ## <a name="cause"></a>原因
- 公用或受保護的類型只包含靜態成員，並不以宣告[密封](http://msdn.microsoft.com/library/8e4ed5d3-10be-47db-9488-0da2008e6f3f)([NotInheritable](http://msdn.microsoft.com/library/5c4da7c9-9562-4653-a947-1972e992f9f9)) 修飾詞。
+ 公用或受保護的類型只包含靜態成員，並不以宣告[密封](https://msdn.microsoft.com/library/8e4ed5d3-10be-47db-9488-0da2008e6f3f)([NotInheritable](https://msdn.microsoft.com/library/5c4da7c9-9562-4653-a947-1972e992f9f9)) 修飾詞。
 
 ## <a name="rule-description"></a>規則描述
  這項規則假設，只包含靜態成員的型別不是繼承，因為類型不提供任何功能，您可以覆寫衍生型別。 不是繼承的型別應該用來標記`sealed`修飾詞，以禁止其使用的基底類型。

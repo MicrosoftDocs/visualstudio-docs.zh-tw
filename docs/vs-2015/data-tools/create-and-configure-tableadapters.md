@@ -20,12 +20,12 @@ caps.latest.revision: 33
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 759cf18033adb962a6ccb97a31802963e12ba5c4
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: ab802e36a527952a0f0b789445bbdee8224af9d2
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63431209"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65705024"
 ---
 # <a name="create-and-configure-tableadapters"></a>建立和設定 TableAdapter
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,9 +34,9 @@ Tableadapter 會提供您的應用程式與資料庫之間的通訊。 它們連
   
  Tableadapter 會為您建立的當您執行下列動作之一：  
   
-- 執行[資料來源組態精靈](http://msdn.microsoft.com/library/c4df7de5-5da0-4064-940c-761dd6d9e28f)，然後選取**資料庫**或是**Web 服務**資料來源類型。  
+- 執行[資料來源組態精靈](https://msdn.microsoft.com/library/c4df7de5-5da0-4064-940c-761dd6d9e28f)，然後選取**資料庫**或是**Web 服務**資料來源類型。  
   
-- 將資料庫物件從拖曳[伺服器總管](http://msdn.microsoft.com/library/4ea29b3b-bbb2-45e4-9082-eaf635c41c4d)成**Dataset 設計工具**。  
+- 將資料庫物件從拖曳[伺服器總管](https://msdn.microsoft.com/library/4ea29b3b-bbb2-45e4-9082-eaf635c41c4d)成**Dataset 設計工具**。  
   
   您可以建立新的 TableAdapter，並設定將 TableAdapter 從 [工具箱] 拖曳至空白區域中的資料來源**Dataset 設計工具**介面。  
   

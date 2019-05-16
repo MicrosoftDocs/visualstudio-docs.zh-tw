@@ -1,5 +1,5 @@
 ---
-title: HOW TO：偵錯部分信任應用程式 |Microsoft Docs
+title: 作法：偵錯部分信任應用程式 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -18,19 +18,19 @@ caps.latest.revision: 28
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 61b5a5d04e9c59d9c4034cb97c8ec0fd79264d48
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 030fef750cc1e0f0932de32fca1a0ffef56bc8f3
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63437311"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65704491"
 ---
 # <a name="how-to-debug-a-partial-trust-application"></a>HOW TO：偵錯部分信任應用程式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 適用於 Windows 和主控台應用程式。  
   
- [ClickOnce 安全性和部署](../deployment/clickonce-security-and-deployment.md)輕鬆地部署部分信任應用程式，善用[程式碼存取安全性](http://msdn.microsoft.com/library/859af632-c80d-4736-8d6f-1e01b09ce127)限制存取權的電腦上的資源。  
+ [ClickOnce 安全性和部署](../deployment/clickonce-security-and-deployment.md)輕鬆地部署部分信任應用程式，善用[程式碼存取安全性](https://msdn.microsoft.com/library/859af632-c80d-4736-8d6f-1e01b09ce127)限制存取權的電腦上的資源。  
   
  偵錯部分信任的應用程式頗具挑戰性，因為根據進行安裝的來源位置不同，部分信任的應用程式也會有不同的安全性權限 (因此行為也不同)。 如果是從網際網路進行安裝，則部分信任的應用程式會具有較少使用權限。 如果是從近端內部網路進行安裝，則會擁有較多的使用權限。如果是從本機電腦進行安裝，則具有完整的使用權限  您可能也擁有自訂區域，這會具有自訂使用權限。 您可能必須在上述任何或所有條件下，才能偵錯部分信任的應用程式。 幸運的是，Visual Studio 也能讓這類偵錯變得更簡單。  
   

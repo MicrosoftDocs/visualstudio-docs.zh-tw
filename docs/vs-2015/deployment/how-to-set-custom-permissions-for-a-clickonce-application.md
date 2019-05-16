@@ -1,5 +1,5 @@
 ---
-title: HOW TO：設定 ClickOnce 應用程式的自訂權限 |Microsoft Docs
+title: 作法：設定 ClickOnce 應用程式的自訂權限 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-deployment
@@ -16,14 +16,14 @@ caps.latest.revision: 19
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 502560791295bed256834f8a00bfb55ce5aa448a
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 6739f38e91ce998441c4cfa62453d485a5d370e3
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63424612"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65697539"
 ---
-# <a name="how-to-set-custom-permissions-for-a-clickonce-application"></a>HOW TO：設定 ClickOnce 應用程式的自訂權限
+# <a name="how-to-set-custom-permissions-for-a-clickonce-application"></a>作法：設定 ClickOnce 應用程式的自訂權限
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 您可以部署對網際網路或近端內部網路區域使用預設權限的 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 應用程式。 或者，您可以建立應用程式所需特定權限的自訂區域。 做法是在 [專案設計工具]  的 [安全性] 頁面上自訂安全性權限。  
@@ -49,7 +49,7 @@ ms.locfileid: "63424612"
 7. 在 `</applicationRequestMinimum>` 項目之前，新增應用程式所需權限的 XML 程式碼。  
   
     > [!NOTE]
-    > 您可以使用權限集的 `ToXml` 方法，產生應用程式資訊清單的 XML 程式碼。 例如，若要產生 <xref:System.Security.Permissions.EnvironmentPermission> 權限集的 XML，請呼叫 <xref:System.Security.Permissions.EnvironmentPermission.ToXml%2A> 方法。 如需結構的權限的詳細資訊設定的 XML，請參閱[NIB:HOW TO：匯入的權限集所使用的 XML 檔](http://msdn.microsoft.com/dea16b54-c108-408a-ac36-cdc05f746236)。  
+    > 您可以使用權限集的 `ToXml` 方法，產生應用程式資訊清單的 XML 程式碼。 例如，若要產生 <xref:System.Security.Permissions.EnvironmentPermission> 權限集的 XML，請呼叫 <xref:System.Security.Permissions.EnvironmentPermission.ToXml%2A> 方法。 如需結構的權限的詳細資訊設定的 XML，請參閱[NIB:作法：匯入的權限集所使用的 XML 檔](https://msdn.microsoft.com/dea16b54-c108-408a-ac36-cdc05f746236)。  
   
 ## <a name="see-also"></a>另請參閱  
  [保護 ClickOnce 應用程式](../deployment/securing-clickonce-applications.md)   

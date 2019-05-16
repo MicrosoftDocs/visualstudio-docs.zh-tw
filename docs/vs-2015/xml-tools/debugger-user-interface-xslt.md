@@ -9,12 +9,12 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: f2920f73560e622c4336a1eedc23e5034fa8ff91
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: f7ffc67bd1175a84bf5708c613661a169c093dbd
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63417442"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65697018"
 ---
 # <a name="debugger-user-interface-xslt"></a>偵錯工具使用者介面 (XSLT)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,7 +43,7 @@ ms.locfileid: "63417442"
 |`position()`|內容節點的位置或索引編號 (相對於內容大小)。|  
 |`self::node()`|內容節點的值。|  
   
- 如需詳細資訊，請參閱[如何：變更偵錯工具內容](http://msdn.microsoft.com/library/8a69ea63-2ef0-4b4f-9521-cf8ad2e3ec5e)。  
+ 如需詳細資訊，請參閱[如何：變更偵錯工具內容](https://msdn.microsoft.com/library/8a69ea63-2ef0-4b4f-9521-cf8ad2e3ec5e)。  
   
 ## <a name="output-window"></a>輸出視窗  
  [輸出] 視窗會顯示偵錯時發生的任何錯誤訊息或安全性例外狀況。  
@@ -101,4 +101,4 @@ ms.locfileid: "63417442"
 ## <a name="see-also"></a>另請參閱  
  [偵錯 XSLT](../xml-tools/debugging-xslt.md)   
  [偵錯工具基礎](../debugger/debugger-basics.md)   
- [變數視窗](http://msdn.microsoft.com/library/ce0a67f6-2502-4b7a-ba45-cc32f8aeba3e)
+ [變數視窗](https://msdn.microsoft.com/library/ce0a67f6-2502-4b7a-ba45-cc32f8aeba3e)

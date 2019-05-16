@@ -9,14 +9,14 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: d8aa3ecd29180e01a7d6f254303d42ac328aceaa
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 532a6bbba1cf2d8e02fda8cb5356dce51dbd5cb4
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63385301"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65704966"
 ---
-# <a name="how-to-extend-code-generated-by-the-or-designer"></a>HOW TO：擴充 O/R 設計工具產生的程式碼
+# <a name="how-to-extend-code-generated-by-the-or-designer"></a>作法：擴充 O/R 設計工具產生的程式碼
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 變更設計工具介面上的實體 (Entity) 類別 (Class) 和其他物件時，系統會重新產生 [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]所產生的程式碼。 因為有這項重新產生作業，所以當設計工具重新產生程式碼時，您之前加入至所產生程式碼的程式碼，通常都會遭覆寫。 [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]可以產生部分類別檔案，您可以在其中加入不要覆寫的程式碼。 需要將自訂程式碼加入至 [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]所產生程式碼的其中一個範例，就是將資料驗證加入至 LINQ to SQL (實體) 類別。 如需相關資訊，請參閱[如何：將驗證新增至實體類別](../data-tools/how-to-add-validation-to-entity-classes.md)。  
@@ -49,6 +49,6 @@ ms.locfileid: "63385301"
   
 ## <a name="see-also"></a>另請參閱  
  [LINQ to SQL 工具，在 Visual Studio 中](../data-tools/linq-to-sql-tools-in-visual-studio2.md)   
- [逐步解說：建立 LINQ to SQL 類別 （O-R 設計工具）](http://msdn.microsoft.com/library/35aad4a4-2e8a-46e2-ae09-5fbfd333c233)   
- [LINQ to SQL](http://msdn.microsoft.com/library/73d13345-eece-471a-af40-4cc7a2f11655)   
- [逐步解說：將驗證新增至實體類別](http://msdn.microsoft.com/library/85b06a02-b2e3-4534-95b8-d077c8d4c1d7)
+ [逐步解說：建立 LINQ to SQL 類別 （O-R 設計工具）](https://msdn.microsoft.com/library/35aad4a4-2e8a-46e2-ae09-5fbfd333c233)   
+ [LINQ to SQL](https://msdn.microsoft.com/library/73d13345-eece-471a-af40-4cc7a2f11655)   
+ [逐步解說：將驗證新增至實體類別](https://msdn.microsoft.com/library/85b06a02-b2e3-4534-95b8-d077c8d4c1d7)

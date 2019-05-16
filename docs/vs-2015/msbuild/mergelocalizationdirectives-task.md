@@ -19,12 +19,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 2001a3278037eb1c2dc1866c9508bb8623af3370
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 2d6c2aa6cea687119e69b565da5468e8fa723641
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59652463"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65703401"
 ---
 # <a name="mergelocalizationdirectives-task"></a>MergeLocalizationDirectives 工作
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,7 +39,7 @@ ms.locfileid: "59652463"
 |`OutputFile`|必要的 **String** 輸出參數。<br /><br /> 指定編譯的當地語系化指示詞組件的輸出路徑。|  
   
 ## <a name="remarks"></a>備註  
- 您可以將當地語系化屬性和註解加入至 [!INCLUDE[TLA#tla_xaml](../includes/tlasharptla-xaml-md.md)] 內容中。 透過 [!INCLUDE[TLA#tla_wpf](../includes/tlasharptla-wpf-md.md)] 當地語系化支援，您可以取出當地語系化屬性和註解，然後將它們放入有別於產生組件的 .loc 檔案中。 您可以使用 **LocalizationPropertyStorage** 屬性來執行此動作。 如需當地語系化屬性和註解，以及 **LocalizationPropertyStorage** 的詳細資訊，請參閱[當地語系化屬性和註解](http://msdn.microsoft.com/library/ead2d9ac-b709-4ec1-a924-39927a29d02f)。  
+ 您可以將當地語系化屬性和註解加入至 [!INCLUDE[TLA#tla_xaml](../includes/tlasharptla-xaml-md.md)] 內容中。 透過 [!INCLUDE[TLA#tla_wpf](../includes/tlasharptla-wpf-md.md)] 當地語系化支援，您可以取出當地語系化屬性和註解，然後將它們放入有別於產生組件的 .loc 檔案中。 您可以使用 **LocalizationPropertyStorage** 屬性來執行此動作。 如需當地語系化屬性和註解，以及 **LocalizationPropertyStorage** 的詳細資訊，請參閱[當地語系化屬性和註解](https://msdn.microsoft.com/library/ead2d9ac-b709-4ec1-a924-39927a29d02f)。  
   
 ## <a name="example"></a>範例  
  下列範例會將數個 [!INCLUDE[TLA2#tla_xaml](../includes/tla2sharptla-xaml-md.md)] 二進位格式檔案的當地語系化註解合併到單一 .loc 檔案。  
@@ -62,4 +62,4 @@ ms.locfileid: "59652463"
  [工作參考](../msbuild/wpf-msbuild-task-reference.md)   
  [MSBuild 參考](../msbuild/msbuild-reference.md)   
  [工作參考](../msbuild/msbuild-task-reference.md)   
- [建置 WPF 應用程式 (WPF)](http://msdn.microsoft.com/library/a58696fd-bdad-4b55-9759-136dfdf8b91c)
+ [建置 WPF 應用程式 (WPF)](https://msdn.microsoft.com/library/a58696fd-bdad-4b55-9759-136dfdf8b91c)

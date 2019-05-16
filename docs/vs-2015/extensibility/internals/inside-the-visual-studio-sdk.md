@@ -12,12 +12,12 @@ ms.assetid: 9118eaa4-0453-4dc5-9e16-c7062d254869
 caps.latest.revision: 31
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 3c6c7bb6d149281048d281cb7af13fe51d75ffd5
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 3bdc65a145b64071087d72fce9967c67cc2f8426
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63443892"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65687539"
 ---
 # <a name="inside-the-visual-studio-sdk"></a>深入探索 Visual Studio SDK
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -98,7 +98,7 @@ Visual Studio 架構一般化的檢視
  範本包含的專案結構和基本建置特定類型的應用程式、 控制項、 程式庫或類別所需的檔案。 當您想要開發的軟體，類似於其中一個範本時，建立以範本為基礎的專案，然後修改 該專案中的檔案。  
   
 > [!NOTE]
-> 此範本架構不支援[!INCLUDE[vcprvc](../../includes/vcprvc-md.md)]專案。 如需有關如何建立資訊[!INCLUDE[vcprvc](../../includes/vcprvc-md.md)]專案範本，請參閱 <<c2> [ 設計精靈](http://msdn.microsoft.com/library/a7c0be7e-9297-4fed-83e3-5645c896d56b)。  
+> 此範本架構不支援[!INCLUDE[vcprvc](../../includes/vcprvc-md.md)]專案。 如需有關如何建立資訊[!INCLUDE[vcprvc](../../includes/vcprvc-md.md)]專案範本，請參閱 <<c2> [ 設計精靈](https://msdn.microsoft.com/library/a7c0be7e-9297-4fed-83e3-5645c896d56b)。  
   
  如需詳細資訊，請參閱 <<c0> [ 加入專案和專案項目範本](../../extensibility/internals/adding-project-and-project-item-templates.md)。  
   

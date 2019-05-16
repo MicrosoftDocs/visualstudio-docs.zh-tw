@@ -13,12 +13,12 @@ caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c45f3ac7cfec727eb0a27fc79e5fe09237e8f8c3
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 05300d33ae10cd899a40bf95596ea4eb19dea49d
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63437584"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65701187"
 ---
 # <a name="creating-applications-in-bi-directional-languages"></a>使用雙向語言建立應用程式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,9 +30,9 @@ ms.locfileid: "63437584"
   
 ## <a name="types-of-application-that-support-bi-directional-languages"></a>支援雙向語言的應用程式類型  
   
-1. Windows 應用程式： 您可以建立完整的雙向應用程式，以支援雙向文字、由右至左讀取順序及鏡像功能 (將視窗、功能表、對話方塊等配置反轉)。 除了鏡像功能以外，這些功能皆為預設提供或以屬性設定形式提供。 某些功能 (例如訊息方塊) 本身就支援鏡像， 但若為其他情況，則必須在程式碼中實作鏡像。 如需詳細資訊，請參閱[對 Windows Forms 應用程式的雙向支援](http://msdn.microsoft.com/library/7b622fa4-f390-4e4d-b624-83a1917cccf2)。  
+1. Windows 應用程式： 您可以建立完整的雙向應用程式，以支援雙向文字、由右至左讀取順序及鏡像功能 (將視窗、功能表、對話方塊等配置反轉)。 除了鏡像功能以外，這些功能皆為預設提供或以屬性設定形式提供。 某些功能 (例如訊息方塊) 本身就支援鏡像， 但若為其他情況，則必須在程式碼中實作鏡像。 如需詳細資訊，請參閱[對 Windows Forms 應用程式的雙向支援](https://msdn.microsoft.com/library/7b622fa4-f390-4e4d-b624-83a1917cccf2)。  
   
-2. Web 應用程式： Web 服務可支援 UTF-8 和 Unicode 文字的接收與傳送作業，因此非常適合使用雙向語言的應用程式。 Web 用戶端應用程式的使用者介面需仰賴瀏覽器，因此，Web 應用程式的雙向支援程度與使用者瀏覽器對這些雙向功能的支援程度息息相關。 在 Visual Studio 中，您可以建立支援阿拉伯文或希伯來文文字、由右至左的讀取順序、檔案編碼方式及當地文化特性設定的應用程式。 如需詳細資訊，請參閱 [ASP.NET Web 應用程式的雙向支援](http://msdn.microsoft.com/library/5576f9b1-9b86-41ef-8354-092d366bcd03)。  
+2. Web 應用程式： Web 服務可支援 UTF-8 和 Unicode 文字的接收與傳送作業，因此非常適合使用雙向語言的應用程式。 Web 用戶端應用程式的使用者介面需仰賴瀏覽器，因此，Web 應用程式的雙向支援程度與使用者瀏覽器對這些雙向功能的支援程度息息相關。 在 Visual Studio 中，您可以建立支援阿拉伯文或希伯來文文字、由右至左的讀取順序、檔案編碼方式及當地文化特性設定的應用程式。 如需詳細資訊，請參閱 [ASP.NET Web 應用程式的雙向支援](https://msdn.microsoft.com/library/5576f9b1-9b86-41ef-8354-092d366bcd03)。  
   
 3. 主控台應用程式 主控台應用程式不支援雙向語言的文字。 這是搭配使用 Windows 與主控台應用程式產生的後果。  
   
@@ -79,7 +79,7 @@ ms.locfileid: "63437584"
 - 程式碼和常值文字。 在程式碼編輯器 (亦即文字編輯器) 中，您可以使用阿拉伯文或希伯來文命名類別、函式、變數、屬性、字串常值、屬性等等。 不過，編輯器不支援由右至左的讀取順序；文字一律從左邊界開始。  
   
     > [!TIP]
-    > 建議您將字串常值放在資源檔中，而不要在您的程式中直接撰寫 (硬式編碼)。 如需詳細資訊，請參閱[逐步解說：將 Windows Form 當地語系化](http://msdn.microsoft.com/9a96220d-a19b-4de0-9f48-01e5d82679e5)。  
+    > 建議您將字串常值放在資源檔中，而不要在您的程式中直接撰寫 (硬式編碼)。 如需詳細資訊，請參閱[逐步解說：將 Windows Form 當地語系化](https://msdn.microsoft.com/9a96220d-a19b-4de0-9f48-01e5d82679e5)。  
   
     > [!NOTE]
     > 您必須使用一致的方式來參考以這些語言物名的物件。 例如，若您使用 Kashida 來命名阿拉伯文的變數，則在參考該變數時，您必須一律使用 Kashida，否則會產生錯誤。  
@@ -87,7 +87,7 @@ ms.locfileid: "63437584"
 - 程式碼註解。 您可以使用阿拉伯文或希伯來文建立註解。 您也可以在註解產生器工具中使用這些語言。  
   
 ## <a name="see-also"></a>另請參閱  
- [對 Windows Forms 應用程式的雙向支援](http://msdn.microsoft.com/library/7b622fa4-f390-4e4d-b624-83a1917cccf2)   
- [ASP.NET Web 應用程式的雙向支援](http://msdn.microsoft.com/library/5576f9b1-9b86-41ef-8354-092d366bcd03)   
+ [對 Windows Forms 應用程式的雙向支援](https://msdn.microsoft.com/library/7b622fa4-f390-4e4d-b624-83a1917cccf2)   
+ [ASP.NET Web 應用程式的雙向支援](https://msdn.microsoft.com/library/5576f9b1-9b86-41ef-8354-092d366bcd03)   
  [全球化應用程式](../ide/globalizing-applications.md)   
  [當地語系化應用程式](../ide/localizing-applications.md)

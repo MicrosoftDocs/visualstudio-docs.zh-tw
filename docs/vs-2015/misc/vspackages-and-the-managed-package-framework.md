@@ -11,12 +11,12 @@ helpviewer_keywords:
 ms.assetid: e8d80e0f-6b5b-4baf-a7df-59fd808c60cd
 caps.latest.revision: 16
 manager: jillfra
-ms.openlocfilehash: 0b04692ed30e69e8904919748a6db0d0eff49f54
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5b72b2c3bd6b03d1d3f3e50135c2ddf4758a4bd9
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63002113"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65683051"
 ---
 # <a name="vspackages-and-the-managed-package-framework"></a>VSPackage 和 Managed 封裝架構
 您可以建立 VSPackage 使用 managed 封裝架構 (MPF) 類別，而不是使用 COM interop 的類別，以減少開發時間。  
@@ -25,7 +25,7 @@ ms.locfileid: "63002113"
   
 - 使用[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]Package 專案範本  
   
-     如需詳細資訊，請參閱[逐步解說：使用 Visual Studio Package 範本建立功能表命令](http://msdn.microsoft.com/library/1985fa7d-aad4-4866-b356-a125b6a246de)。  
+     如需詳細資訊，請參閱[逐步解說：使用 Visual Studio Package 範本建立功能表命令](https://msdn.microsoft.com/library/1985fa7d-aad4-4866-b356-a125b6a246de)。  
   
 - 建立不含 VSPackage [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Package 專案範本  
   
@@ -36,7 +36,7 @@ ms.locfileid: "63002113"
  描述並列出 MPF 類別命名空間和 DLL 檔案。  
   
 ## <a name="related-sections"></a>相關章節  
- [逐步解說：使用 Visual Studio Package 範本建立功能表命令](http://msdn.microsoft.com/library/1985fa7d-aad4-4866-b356-a125b6a246de)  
+ [逐步解說：使用 Visual Studio Package 範本建立功能表命令](https://msdn.microsoft.com/library/1985fa7d-aad4-4866-b356-a125b6a246de)  
  說明如何建立 managed 的 VSPackage。  
   
  [Managed VSPackages](../misc/managed-vspackages.md)  

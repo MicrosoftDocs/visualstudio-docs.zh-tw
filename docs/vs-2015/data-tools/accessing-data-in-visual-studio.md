@@ -22,12 +22,12 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 robots: noindex,nofollow
-ms.openlocfilehash: f0dd471e156f7a76462ac093c9ca54684f7dbc68
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 7f13a97adbec1da1bd0f279e14cf510532b9c62f
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63444487"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65688629"
 ---
 # <a name="accessing-data-in-visual-studio"></a>在 Visual Studio 中存取資料
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -98,7 +98,7 @@ ms.locfileid: "63444487"
  沒有使用任何這些技術的需求。 在某些情況下，尤其是效能非常重要，您可以只使用 DataReader 物件從資料庫讀取，並將您所需要的值複製到集合物件，例如清單\<T >。
 
 ### <a name="native-c"></a>原生 C++
- C++連接到 SQL Server 的應用程式應使用[SQL Server Native Client](https://msdn.microsoft.com/sqlserver/aa937733.aspx)。 您可以使用來存取其他資料庫[ODBC](https://msdn.microsoft.com/library/ms710252\(v=vs.85\).aspx)或直接 OLE DB 驅動程式。 ODBC 是目前的標準資料庫介面，但大部分資料庫系統提供無法透過 ODBC 介面存取的自訂功能。  OLE DB 是舊的 COM 資料存取技術，仍然受到支援，但不是建議用於新的應用程式。  如需詳細資訊，請參閱 <<c0> [ 資料存取](http://msdn.microsoft.com/library/a9455752-39c4-4457-b14e-197772d3df0b)。
+ C++連接到 SQL Server 的應用程式應使用[SQL Server Native Client](https://msdn.microsoft.com/sqlserver/aa937733.aspx)。 您可以使用來存取其他資料庫[ODBC](https://msdn.microsoft.com/library/ms710252\(v=vs.85\).aspx)或直接 OLE DB 驅動程式。 ODBC 是目前的標準資料庫介面，但大部分資料庫系統提供無法透過 ODBC 介面存取的自訂功能。  OLE DB 是舊的 COM 資料存取技術，仍然受到支援，但不是建議用於新的應用程式。  如需詳細資訊，請參閱 <<c0> [ 資料存取](https://msdn.microsoft.com/library/a9455752-39c4-4457-b14e-197772d3df0b)。
 
  C++使用 REST 服務的程式可以使用[ C++ REST SDK](https://github.com/Microsoft/cpprestsdk)。
 
@@ -107,7 +107,7 @@ ms.locfileid: "63444487"
 #### <a name="data-modeling"></a>資料模型化
  Visual Studio 不提供的 ORM 層C++。  [ODB](http://www.codesynthesis.com/products/odb/)是熱門的開放原始碼 ORM，如C++。
 
- 如需有關舊版視覺效果C++資料存取技術，請參閱[資料存取](http://msdn.microsoft.com/library/a9455752-39c4-4457-b14e-197772d3df0b)
+ 如需有關舊版視覺效果C++資料存取技術，請參閱[資料存取](https://msdn.microsoft.com/library/a9455752-39c4-4457-b14e-197772d3df0b)
 
 ### <a name="javascript"></a>JavaScript
  [Visual Studio 中的 JavaScript](https://msdn.microsoft.com/library/hh334522.aspx)是第一級語言建置跨平台應用程式、 UWP 應用程式、 雲端服務、 網站及 web 應用程式。 您可以使用 Bower、 Grunt、 Gulp、 npm 及 Visual Studio 中的從 NuGet 安裝您最愛的 JavaScript 程式庫和資料庫產品。 下載 Sdk 從連線到 Azure 儲存體和服務[Azure 網站](https://azure.microsoft.com/)。  Edge.js 是連接至 ADO.NET 資料來源的伺服器端 JavaScript (Node.js) 程式庫。
@@ -118,7 +118,7 @@ ms.locfileid: "63444487"
 ## <a name="in-this-section"></a>本節內容
  [安裝資料庫系統、 工具和範例](../data-tools/installing-database-systems-tools-and-samples.md)討論濆爧髍孮資料庫產品和 Visual Studio 擴充功能或驅動程式支援，以及何處尋找範例資料庫的實驗和學習之用。
 
- [適用於.NET 的 visual Studio 資料工具](http://msdn.microsoft.com/6b145922-2f00-47db-befc-bf351b4809a1)描述如何使用 Visual Studio 工具視窗來連接到資料來源、 建立資料集或 Entity Framework 模型，以及將資料繫結至使用者介面控制項。
+ [適用於.NET 的 visual Studio 資料工具](https://msdn.microsoft.com/6b145922-2f00-47db-befc-bf351b4809a1)描述如何使用 Visual Studio 工具視窗來連接到資料來源、 建立資料集或 Entity Framework 模型，以及將資料繫結至使用者介面控制項。
 
 ## <a name="related-topics"></a>相關主題
  [資料、 裝置和分析](https://msdn.microsoft.com/data-and-devices)介紹 Microsoft 的智慧型雲端，包括 Cortana Analytics Suite 和物聯網的支援。
@@ -129,16 +129,16 @@ ms.locfileid: "63444487"
 
  [SQL Server Data Tools](https://msdn.microsoft.com/library/hh272686\(v=vs.103\).aspx)說明的工具，可簡化設計中，瀏覽、 測試及部署的資料連接的應用程式和資料庫。
 
- [ADO.NET](http://msdn.microsoft.com/library/5b96ed06-9759-4966-a797-a1d5f6ee50ca)描述 ADO.NET 架構以及如何使用 ADO.NET 類別來管理應用程式資料並與其互動的資料來源和 XML。
+ [ADO.NET](https://msdn.microsoft.com/library/5b96ed06-9759-4966-a797-a1d5f6ee50ca)描述 ADO.NET 架構以及如何使用 ADO.NET 類別來管理應用程式資料並與其互動的資料來源和 XML。
 
  [ADO.NET Entity Framework](https://msdn.microsoft.com/data/ef)說明如何建立資料應用程式可讓開發人員針對概念模型而不是直接針對關聯式資料庫設計程式。
 
- [WCF Data Services 4.5](http://msdn.microsoft.com/library/73d2bec3-7c92-4110-b905-11bb0462357a)描述如何使用[!INCLUDE[ssAstoria](../includes/ssastoria-md.md)]部署在 web 或內部網路上的資料服務可實作[開放式資料通訊協定 (OData)](http://go.microsoft.com/fwlink/?LinkID=182204)。
+ [WCF Data Services 4.5](https://msdn.microsoft.com/library/73d2bec3-7c92-4110-b905-11bb0462357a)描述如何使用[!INCLUDE[ssAstoria](../includes/ssastoria-md.md)]部署在 web 或內部網路上的資料服務可實作[開放式資料通訊協定 (OData)](http://go.microsoft.com/fwlink/?LinkID=182204)。
 
- [在 Office 方案中的資料](http://msdn.microsoft.com/library/8478c095-864b-4ed3-8a70-1fc19b411c6a)包含說明資料在 Office 方案中的運作方式的主題連結。 這包括有關結構描述導向程式設計、 資料快取，以及伺服器端資料存取的資訊。
+ [在 Office 方案中的資料](https://msdn.microsoft.com/library/8478c095-864b-4ed3-8a70-1fc19b411c6a)包含說明資料在 Office 方案中的運作方式的主題連結。 這包括有關結構描述導向程式設計、 資料快取，以及伺服器端資料存取的資訊。
 
- [LINQ (Language-Integrated Query)](http://msdn.microsoft.com/library/a73c4aec-5d15-4e98-b962-1274021ea93d)告訴您，內建的查詢功能C#和 Visual Basic 和查詢關聯式資料庫、 XML 文件、 資料集和記憶體中集合的一般模型。
+ [LINQ (Language-Integrated Query)](https://msdn.microsoft.com/library/a73c4aec-5d15-4e98-b962-1274021ea93d)告訴您，內建的查詢功能C#和 Visual Basic 和查詢關聯式資料庫、 XML 文件、 資料集和記憶體中集合的一般模型。
 
  [Visual Studio 中的 XML 工具](../xml-tools/xml-tools-in-visual-studio.md)討論使用 XML 資料、 偵錯 XSLT，.NET Framework 的 XML 功能，以及 XML 查詢的架構。
 
- [XML 文件和資料](http://msdn.microsoft.com/library/e695047f-3c0f-4045-8708-5baea91cc380)提供一組完整且整合式的類別處理 XML 文件和.NET Framework 中的資料的概觀。
+ [XML 文件和資料](https://msdn.microsoft.com/library/e695047f-3c0f-4045-8708-5baea91cc380)提供一組完整且整合式的類別處理 XML 文件和.NET Framework 中的資料的概觀。

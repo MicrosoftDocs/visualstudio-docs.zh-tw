@@ -6,12 +6,12 @@ ms.assetid: 34990c37-ae98-4140-9b1e-a91c192220d9
 caps.latest.revision: 38
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: bbeef5aba667f26c1297dfe02556ee192dd53a4b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 2d92aea4a92e7032a5d7008475b232d532b053ee
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60072157"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65687764"
 ---
 # <a name="image-service-and-catalog"></a>影像服務與資料庫目錄
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -164,7 +164,7 @@ ms.locfileid: "60072157"
 |               |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
 |---------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **屬性** |                                                                                                                                                                                                                                                                                                                                                                                                                                                                            **定義**                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
-|      URI      |                                                                                                                                                                                                                                                                                                               [必要]定義從何處可以載入映像的 URI。 它可以是下列其中一項：<br /><br /> -A [Pack URI](http://msdn.microsoft.com/library/aa970069\(v=vs.100\).aspx)使用應用程式: / / 授權單位<br />-絕對元件資源參考<br />-包含原生資源的檔案路徑                                                                                                                                                                                                                                                                                                               |
+|      URI      |                                                                                                                                                                                                                                                                                                               [必要]定義從何處可以載入映像的 URI。 它可以是下列其中一項：<br /><br /> -A [Pack URI](https://msdn.microsoft.com/library/aa970069\(v=vs.100\).aspx)使用應用程式: / / 授權單位<br />-絕對元件資源參考<br />-包含原生資源的檔案路徑                                                                                                                                                                                                                                                                                                               |
 |  背景   | [選用]指出哪些類型的來源要使用的背景。<br /><br /> 它可以是下列其中一項：<br /><br /> *Light:* 淺色背景上可用的來源。<br /><br /> <em>暗色調：</em>來源可以使用深色背景上。<br /><br /> *HighContrast:* 高對比模式中的任何背景上可用的來源。<br /><br /> *HighContrastLight:* 高對比模式中的淺色背景上可用的來源。<br /><br /> *HighContrastDark:* 在高對比模式中使用深色背景上可用的來源。<br /><br /> 如果省略背景屬性，則來源可用的任何背景。<br /><br /> 如果背景*Light*，*深色*， *HighContrastLight*，或*HighContrastDark*，永遠不會反轉來源的色彩。 如果省略或設為背景*高對比*，反轉的來源的色彩由映像的控制**AllowColorInversion**屬性。 |
 |               |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
 
@@ -650,7 +650,7 @@ b714fcf7-855e-4e4c-802a-1fd87144ccad,2,fda30684-682d-421c-8be4-650a2967058e,200
 3. 更新您的程式碼，使用映像服務要求透過更新對應的 moniker。 (這可能表示更新至**CrispImages**的 managed 程式碼，或從映像服務要求 HBITMAPs 或 HICONs 和將它們傳遞原生程式碼。)  
 
 ## <a name="testing-your-images"></a>測試您的映像  
- 您可以使用影像庫檢視器工具來測試您的映像資訊清單，請確定已正確撰寫的所有項目。 您可以找到中的工具[Visual Studio 2015 SDK](http://msdn.microsoft.com/library/bb166441.aspx)。 您可以找到這項工具和其他文件[此處](https://aka.ms/VSImageThemeTools)。  
+ 您可以使用影像庫檢視器工具來測試您的映像資訊清單，請確定已正確撰寫的所有項目。 您可以找到中的工具[Visual Studio 2015 SDK](https://msdn.microsoft.com/library/bb166441.aspx)。 您可以找到這項工具和其他文件[此處](https://aka.ms/VSImageThemeTools)。  
 
 ## <a name="additional-resources"></a>其他資源  
 
@@ -660,7 +660,7 @@ b714fcf7-855e-4e4c-802a-1fd87144ccad,2,fda30684-682d-421c-8be4-650a2967058e,200
  請檢查[ http://github.com/Microsoft/VSSDK-Extensibility-Samples ](http://github.com/Microsoft/VSSDK-Extensibility-Samples)的最新的範例。  
 
 ### <a name="tooling"></a>Tooling  
- 建立一組映像服務的支援工具以協助建立/更新映像服務與搭配運作的 UI。 如需有關每個工具的詳細資訊，請查閱文件隨附的工具。 工具會併入[Visual Studio 2015 SDK。](http://msdn.microsoft.com/library/bb166441.aspx)  
+ 建立一組映像服務的支援工具以協助建立/更新映像服務與搭配運作的 UI。 如需有關每個工具的詳細資訊，請查閱文件隨附的工具。 工具會併入[Visual Studio 2015 SDK。](https://msdn.microsoft.com/library/bb166441.aspx)  
 
  **ManifestFromResources**  
 

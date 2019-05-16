@@ -13,12 +13,12 @@ caps.latest.revision: 52
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: acf49209927d2d27d717c797d0abd729795a2c20
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 4f98d2209ca3a2869e4be69a9c46faa5c4755a06
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63441128"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65699916"
 ---
 # <a name="advanced-compiler-settings-dialog-box-visual-basic"></a>進階編譯器設定對話方塊 (Visual Basic)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -31,7 +31,7 @@ ms.locfileid: "63441128"
   
 2. 在 [專案] 功能表上，按一下 [屬性]。 [專案設計工具] 出現時，請按一下 [編譯] 索引標籤。  
   
-3. 在[專案設計工具、編譯頁 (Visual Basic)](../../ide/reference/compile-page-project-designer-visual-basic.md)，選取 [設定] 和 [平台]。 在簡化的組建設定中，不會顯示 [設定] 和 [平台] 清單。 如需詳細資訊，請參閱[偵錯和發行專案組態](http://msdn.microsoft.com/0440b300-0614-4511-901a-105b771b236e)。  
+3. 在[專案設計工具、編譯頁 (Visual Basic)](../../ide/reference/compile-page-project-designer-visual-basic.md)，選取 [設定] 和 [平台]。 在簡化的組建設定中，不會顯示 [設定] 和 [平台] 清單。 如需詳細資訊，請參閱[偵錯和發行專案組態](https://msdn.microsoft.com/0440b300-0614-4511-901a-105b771b236e)。  
   
 4. 按一下 [進階編譯選項]。  
   
@@ -55,7 +55,7 @@ ms.locfileid: "63441128"
  從清單中選取 [無]、[完整] 或 [僅限 pdb]。 [無] 會指定不產生任何偵錯資訊。 [完整] 指定要產生完整的偵錯資訊，而 [僅限 pdb] 則指定只要產生 PDB 偵錯資訊。 根據預設，這個選項會設為 [完整]。  
   
 ## <a name="compilation-constants"></a>編譯常數  
- 條件式編譯的常數有一個類似在原始程式檔中使用 [#Const](http://msdn.microsoft.com/library/707669e5-23f9-4f17-8622-a0d534429386) 前置處理器指示詞的效果，只除了定義的常數是公開的，且適用於專案中的所有檔案。 您可以使用條件式編譯常數，並搭配 [#If...Then...#Else](http://msdn.microsoft.com/library/10bba104-e3fd-451b-b672-faa472530502) 指示詞有條件地編譯原始程式檔。 請參閱[條件式編譯](http://msdn.microsoft.com/library/9c35e55e-7eee-44fb-a586-dad1f1884848)。  
+ 條件式編譯的常數有一個類似在原始程式檔中使用 [#Const](https://msdn.microsoft.com/library/707669e5-23f9-4f17-8622-a0d534429386) 前置處理器指示詞的效果，只除了定義的常數是公開的，且適用於專案中的所有檔案。 您可以使用條件式編譯常數，並搭配 [#If...Then...#Else](https://msdn.microsoft.com/library/10bba104-e3fd-451b-b672-faa472530502) 指示詞有條件地編譯原始程式檔。 請參閱[條件式編譯](https://msdn.microsoft.com/library/9c35e55e-7eee-44fb-a586-dad1f1884848)。  
   
  **定義 DEBUG 常數**  
  根據預設，會選取此核取方塊，指定將設定 DEBUG 常數。  

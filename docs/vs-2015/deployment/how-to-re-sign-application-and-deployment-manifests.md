@@ -1,5 +1,5 @@
 ---
-title: HOW TO：重新簽署應用程式和部署資訊清單 |Microsoft Docs
+title: 作法：重新簽署應用程式和部署資訊清單 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-deployment
@@ -19,12 +19,12 @@ caps.latest.revision: 19
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: adc2347e6928a841a0a2c24d1d786be8edcbc4ac
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: d5956ad23fe22c7c36b712fac61df268586142df
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60045773"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65697553"
 ---
 # <a name="how-to-re-sign-application-and-deployment-manifests"></a>HOW TO：重新簽署應用程式和部署資訊清單
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ ms.locfileid: "60045773"
  可能會重新簽署資訊清單的另一個案例是當您的客戶想要簽署應用程式和部署資訊清單與他們自己的憑證。  
   
 ## <a name="re-signing-the-application-and-deployment-manifests"></a>重新簽署應用程式和部署資訊清單  
- 此程序假設您已經有進行變更您的應用程式資訊清單檔案 (.manifest)。 如需詳細資訊，請參閱[如何：變更部署屬性](http://msdn.microsoft.com/66052a3a-8127-4964-8147-2477ef5d1472)。  
+ 此程序假設您已經有進行變更您的應用程式資訊清單檔案 (.manifest)。 如需詳細資訊，請參閱[如何：變更部署屬性](https://msdn.microsoft.com/66052a3a-8127-4964-8147-2477ef5d1472)。  
   
 #### <a name="to-re-sign-the-application-and-deployment-manifests-with-mageexe"></a>若要重新簽署應用程式和部署資訊清單使用 Mage.exe  
   

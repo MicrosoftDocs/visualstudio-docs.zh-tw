@@ -11,12 +11,12 @@ caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 372e19b9ebb1253bda28b4c7723a2366c90b7441
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: b9bd974da022a8407c1249b4a84eac3ef6f61aec
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63412135"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65701895"
 ---
 # <a name="properties-of-domain-properties"></a>網域屬性的屬性
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -53,4 +53,4 @@ A*定義域屬性*是模型項目，可保存值的功能。 例如，`Person` �
 |**Type**|屬性的類型。 若要新增至可用的型別清單，以滑鼠右鍵按一下 [DSL 總管] 中的 dsl 根，然後按一下**加入外部類型**。|`String`|  
   
 ## <a name="see-also"></a>另請參閱  
- [Domain-Specific Language Tools Glossary](http://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa) (特定領域語言工具字彙表)
+ [Domain-Specific Language Tools Glossary](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa) (特定領域語言工具字彙表)

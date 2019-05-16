@@ -1,5 +1,5 @@
 ---
-title: HOW TO：使用 GPU 執行緒視窗 |Microsoft Docs
+title: 作法：使用 GPU 執行緒視窗 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -19,17 +19,17 @@ caps.latest.revision: 16
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: dcb55ee2128d237c2be6f57da828ec3c5877cfdd
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: c7b97c346cc933e14292fbb1198bfb69ecf59717
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63445081"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65696168"
 ---
-# <a name="how-to-use-the-gpu-threads-window"></a>HOW TO：使用 GPU 執行緒視窗
+# <a name="how-to-use-the-gpu-threads-window"></a>作法：使用 GPU 執行緒視窗
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-在 [GPU 執行緒] 視窗中，您可以檢查和處理正在偵錯的應用程式中，於 GPU 上執行的執行緒。 如需有關在 GPU 執行的應用程式的詳細資訊，請參閱[ C++ AMP 概觀](http://msdn.microsoft.com/library/9e593b06-6e3c-43e9-8bae-6d89efdd39fc)。  
+在 [GPU 執行緒] 視窗中，您可以檢查和處理正在偵錯的應用程式中，於 GPU 上執行的執行緒。 如需有關在 GPU 執行的應用程式的詳細資訊，請參閱[ C++ AMP 概觀](https://msdn.microsoft.com/library/9e593b06-6e3c-43e9-8bae-6d89efdd39fc)。  
   
  [GPU 執行緒] 視窗包含一個資料表，其中每一個資料列代表一組在所有資料行中具有相同值的 GPU 執行緒。 您可以將資料行中的項目排序、重新排列、移除和設為群組。 您可以從 [GPU 執行緒] 視窗將執行緒加上旗標、取消旗標、凍結 (暫止) 和解除凍結 (繼續)。 下列各資料行會在 [GPU 執行緒] 視窗中顯示：  
   
@@ -108,4 +108,4 @@ ms.locfileid: "63445081"
 ## <a name="see-also"></a>另請參閱  
  [對多執行緒應用程式進行偵錯](../debugger/debug-multithreaded-applications-in-visual-studio.md)   
  [如何：使用平行監看式視窗](../debugger/how-to-use-the-parallel-watch-window.md)   
- [逐步解說：針對 C++ AMP 應用程式進行偵錯](http://msdn.microsoft.com/library/40e92ecc-f6ba-411c-960c-b3047b854fb5)
+ [逐步解說：針對 C++ AMP 應用程式進行偵錯](https://msdn.microsoft.com/library/40e92ecc-f6ba-411c-960c-b3047b854fb5)

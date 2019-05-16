@@ -17,19 +17,19 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: adea3666c3f8b8d78c37b32a1a42f7f8b270369c
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: af9777667bef466dc97ea3a3d239f83f766816da
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63431162"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65693958"
 ---
 # <a name="create-lookup-tables-in-windows-forms-applications"></a>在 Windows Forms 應用程式中建立查閱資料表
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 詞彙*查閱資料表*描述繫結至兩個相關的資料表的控制項。 這些查閱控制項顯示從第二個資料表中選取的值為基礎的第一個資料表的資料。  
   
- 您可以藉由拖曳父資料表的主要節點建立查閱資料表 (從[資料來源視窗](http://msdn.microsoft.com/library/0d20f699-cc95-45b3-8ecb-c7edf1f67992)) 拖曳至表單中的相關的子資料表的資料行已繫結的控制項。  
+ 您可以藉由拖曳父資料表的主要節點建立查閱資料表 (從[資料來源視窗](https://msdn.microsoft.com/library/0d20f699-cc95-45b3-8ecb-c7edf1f67992)) 拖曳至表單中的相關的子資料表的資料行已繫結的控制項。  
   
  例如，假設資料表的`Orders`銷售資料庫中。 在每一筆記錄`Orders`資料表包含`CustomerID`，指出哪些客戶下過訂單。 `CustomerID`指向中的客戶記錄為外部索引鍵`Customers`資料表。 在此案例中，您會擴充`Orders`資料表中**資料來源** 視窗並將主節點設定為**詳細資料**。 然後設定`CustomerID`若要使用的資料行<xref:System.Windows.Forms.ComboBox>（或任何其他支援查閱繫結的控制項），並將拖曳`Orders`節點拖曳至表單。 最後，拖曳`Customers`節點拖曳至控制項繫結至相關的資料行，在此情況下，<xref:System.Windows.Forms.ComboBox>繫結至`CustomerID`資料行。  
   

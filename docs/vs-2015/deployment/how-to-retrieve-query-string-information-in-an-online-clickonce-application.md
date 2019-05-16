@@ -16,12 +16,12 @@ caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: d8239b0ccbedfdb2965d8dc5f7738c50f9548e94
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 588ff95f90c6d85526dfe931e8f0b8ab439d9b94
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63431522"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65697585"
 ---
 # <a name="how-to-retrieve-query-string-information-in-an-online-clickonce-application"></a>HOW TO：在線上 ClickOnce 應用程式中擷取查詢字串資訊
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -79,7 +79,7 @@ ms.locfileid: "63431522"
  如果您的應用程式只能在線上時使用，則一律會透過 URL 予以啟用。 不過，如果查詢字串參數遺失或損毀，則即使在此情況下，您的應用程式還是必須寫入才能正常運作。  
   
 ## <a name="net-framework-security"></a>.NET Framework 安全性  
- 只有在使用之前想要清理任何惡意字元的輸入時，才允許將 URL 參數傳入 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 應用程式。 例如，如果在資料庫的 SQL 查詢中未進行篩選，則內嵌引號、斜線或分號的字串可能會執行任意資料作業。 如需查詢字串安全性的詳細資訊，請參閱 [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07)。  
+ 只有在使用之前想要清理任何惡意字元的輸入時，才允許將 URL 參數傳入 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 應用程式。 例如，如果在資料庫的 SQL 查詢中未進行篩選，則內嵌引號、斜線或分號的字串可能會執行任意資料作業。 如需查詢字串安全性的詳細資訊，請參閱 [Script Exploits Overview](https://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07)。  
   
 ## <a name="see-also"></a>另請參閱  
  [保護 ClickOnce 應用程式](../deployment/securing-clickonce-applications.md)

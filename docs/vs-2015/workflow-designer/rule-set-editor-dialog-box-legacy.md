@@ -13,12 +13,12 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: d3827ef20ae5eb67c1052b6c7f6147d736013490
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 862842bd41762b15a38254c9d5e21bf06cdca10a
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63438892"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65703200"
 ---
 # <a name="rule-set-editor-dialog-box-legacy"></a>規則集編輯器對話方塊 (舊版)
 本主題描述如何使用**規則集編輯器**對話方塊中，在舊版[!INCLUDE[wfd1](../includes/wfd1-md.md)]。 當您需要以 [!INCLUDE[wfd2](../includes/wfd2-md.md)] 或 [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] 為目標時，請使用舊版 [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)]。  
@@ -76,7 +76,7 @@ ms.locfileid: "63438892"
   
   運算式運算子的優先順序是按照 C# 運算子優先順序規則。  
   
-  如需有關條件的詳細資訊，請參閱[在工作流程中使用條件](http://msdn.microsoft.com/541211f5-d382-4810-894f-71f00b34fa77)。  
+  如需有關條件的詳細資訊，請參閱[在工作流程中使用條件](https://msdn.microsoft.com/541211f5-d382-4810-894f-71f00b34fa77)。  
   
 ### <a name="halt-and-update-functions"></a>暫止和更新函式  
  **Then 動作：** 並**Else 動作：** 運算式支援**暫止**並**更新**函式。 若要使用**暫止**函式中，輸入**暫止**成**Then 動作：** 或**Else 動作：** 文字方塊。 **暫止**動作造成規則集執行立即停止，且控制項會傳回至呼叫的程式碼。 您使用**更新**函式與向前鏈結。  
