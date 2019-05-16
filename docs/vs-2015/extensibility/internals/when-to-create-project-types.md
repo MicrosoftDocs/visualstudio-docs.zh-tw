@@ -10,12 +10,12 @@ ms.assetid: 26adc860-ee4a-4f5c-95e1-e41b207dd7e6
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 1744801b7efe591c449e74796c3c7d297dc3f982
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 5b5bc2bacb53973bd552b983b742e4f9e68fe31b
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60061706"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65687704"
 ---
 # <a name="when-to-create-project-types"></a>建立專案類型的時機
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -52,7 +52,7 @@ ms.locfileid: "60061706"
 |工作|描述|  
 |----------|-----------------|  
 |處理命令|任何的 VSPackage 可以處理命令。|  
-|建置編輯器|您可以註冊自訂編輯器。 如需詳細資訊，請參閱 <<c0> [ 文件的 Windows 和編輯器](http://msdn.microsoft.com/603625e1-62b6-413a-bc44-089346e166bc)。|  
+|建置編輯器|您可以註冊自訂編輯器。 如需詳細資訊，請參閱 <<c0> [ 文件的 Windows 和編輯器](https://msdn.microsoft.com/603625e1-62b6-413a-bc44-089346e166bc)。|  
 |擁有 windows|您可以建立工具和文件視窗，而不會增加新的專案類型。|  
 |在 [屬性] 視窗中公開的屬性|所有物件都可以都公開屬性。|  
   
@@ -60,6 +60,6 @@ ms.locfileid: "60061706"
  您可以使用專案子類型，來擴充受管理的專案類型，而不需要建立新的專案類型。 專案子類型來擴充 Microsoft 以撰寫的 managed 的專案中使用 COM 彙總[!INCLUDE[vbprvb](../../includes/vbprvb-md.md)]或[!INCLUDE[csprcs](../../includes/csprcs-md.md)]。 COM 彙總，您可以重複使用大部分的 managed 的專案系統實作，並仍然透過彙總，以及使用支援的介面的特定案例自訂。 如需有關專案子類型的詳細資訊，請參閱[專案子類型](../../extensibility/internals/project-subtypes.md)。  
   
 ## <a name="see-also"></a>另請參閱  
- [文件的 Windows 和編輯器](http://msdn.microsoft.com/603625e1-62b6-413a-bc44-089346e166bc)   
+ [文件的 Windows 和編輯器](https://msdn.microsoft.com/603625e1-62b6-413a-bc44-089346e166bc)   
  [檢查清單：建立新的專案類型](../../extensibility/internals/checklist-creating-new-project-types.md)   
  [Visual Studio 中的階層](../../extensibility/internals/hierarchies-in-visual-studio.md)

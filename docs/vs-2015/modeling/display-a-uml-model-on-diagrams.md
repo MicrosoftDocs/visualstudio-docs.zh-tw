@@ -11,12 +11,12 @@ caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 694b4dd1531dc196d06ba46eb8c5b77f66052bc2
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: c1d3fc6cee9a4149e378a5886b33322ab85c9cf8
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63436221"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65699456"
 ---
 # <a name="display-a-uml-model-on-diagrams"></a>在圖表上顯示 UML 模型
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -183,21 +183,21 @@ namespace AlignCommand
   // This command will straighten them up.  
   
   // Place this file in a menu command extension project.  
-  // See http://msdn.microsoft.com/library/ee329481.aspx  
+  // See https://msdn.microsoft.com/library/ee329481.aspx  
   
   [Export(typeof(ICommandExtension))]  
   [ClassDesignerExtension] // TODO: Add other diagram types if needed  
   class CommandExtension : ICommandExtension  
   {  
     /// <summary>  
-    /// See http://msdn.microsoft.com/library/ee329481.aspx  
+    /// See https://msdn.microsoft.com/library/ee329481.aspx  
     /// </summary>  
     [Import]  
     IDiagramContext context { get; set; }  
   
     /// <summary>  
     /// Transaction context.  
-    /// See http://msdn.microsoft.com/library/ee330926.aspx  
+    /// See https://msdn.microsoft.com/library/ee330926.aspx  
     /// </summary>  
     [Import]  
     ILinkedUndoContext linkedUndo { get; set; }  

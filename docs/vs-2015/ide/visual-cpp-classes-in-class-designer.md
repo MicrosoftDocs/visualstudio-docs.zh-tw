@@ -13,12 +13,12 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c1fb81261f52fa5aaf73c30579332779ae5bfa17
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 5e772d5dddcdde2306212e8a8fc48b9e39ae47a8
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63443185"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65696394"
 ---
 # <a name="visual-c-classes-in-class-designer"></a>類別設計工具中的 Visual C++ 類別
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -54,7 +54,7 @@ class Penguin : public Bird, public Swimmer {};
 > [!NOTE]
 > [顯示衍生類別] 命令不支援用於 C++ 程式碼。 您可以移至 [類別檢視]、展開類型節點、展開 [衍生類型] 子資料夾，然後將這些類型拖曳至類別圖表，以顯示衍生類別。  
   
- 如需多重類別繼承的詳細資訊，請參閱 [(NOTINBUILD) 多重繼承](http://msdn.microsoft.com/3b74185e-2beb-4e29-8684-441e51d2a2ca)和[多重基底類別](http://msdn.microsoft.com/library/a30c69fe-401c-4a87-96a0-e0da70c7c740)。  
+ 如需多重類別繼承的詳細資訊，請參閱 [(NOTINBUILD) 多重繼承](https://msdn.microsoft.com/3b74185e-2beb-4e29-8684-441e51d2a2ca)和[多重基底類別](https://msdn.microsoft.com/library/a30c69fe-401c-4a87-96a0-e0da70c7c740)。  
   
 ## <a name="abstract-classes"></a>抽象類別  
  類別設計工具支援抽象類別 (也稱為「抽象基底類別」)。 這些是您永遠不會具現化的類別，而是從中衍生其他類別的類別。 使用本文件稍早＜多重繼承＞中的範例，您可能會將 `Bird` 類別具現化為個別物件，如下所示︰  
@@ -121,7 +121,7 @@ typedef struct
   
  結構也可以是匿名的。 類別設計工具顯示匿名類別和結構的方式，與顯示對應類型相同。 雖然您可以宣告和顯示匿名類別和結構，但是類別設計工具不會使用您指定的標記名稱。 它會使用類別檢視所產生的名稱。 在類別檢視和類別設計工具中，類別或結構會顯示為稱為 **__unnamed** 的項目。  
   
- 如需匿名類別的詳細資訊，請參閱[匿名類別類型](http://msdn.microsoft.com/library/9ba667b2-8c2a-4c29-82a6-fa120b9233c8)。  
+ 如需匿名類別的詳細資訊，請參閱[匿名類別類型](https://msdn.microsoft.com/library/9ba667b2-8c2a-4c29-82a6-fa120b9233c8)。  
   
 ## <a name="template-classes"></a>範本類別  
  類別設計工具支援範本類別的視覺效果。 支援巢狀宣告。 下表顯示一些典型宣告。  
@@ -171,8 +171,8 @@ typedef struct
   
 ## <a name="see-also"></a>請參閱  
  [使用 Visual C++ 程式碼 (類別設計工具)](../ide/working-with-visual-cpp-code-class-designer.md)   
- [類別和結構](http://msdn.microsoft.com/library/516dd496-13fb-4f17-845a-e9ca45437873)   
- [匿名類別類型](http://msdn.microsoft.com/library/9ba667b2-8c2a-4c29-82a6-fa120b9233c8)   
- [(NOTINBUILD) 多重繼承](http://msdn.microsoft.com/3b74185e-2beb-4e29-8684-441e51d2a2ca)   
- [多重基底類別](http://msdn.microsoft.com/library/a30c69fe-401c-4a87-96a0-e0da70c7c740)   
- [範本](http://msdn.microsoft.com/library/90fcc14a-2092-47af-9d2e-dba26d25b872)
+ [類別和結構](https://msdn.microsoft.com/library/516dd496-13fb-4f17-845a-e9ca45437873)   
+ [匿名類別類型](https://msdn.microsoft.com/library/9ba667b2-8c2a-4c29-82a6-fa120b9233c8)   
+ [(NOTINBUILD) 多重繼承](https://msdn.microsoft.com/3b74185e-2beb-4e29-8684-441e51d2a2ca)   
+ [多重基底類別](https://msdn.microsoft.com/library/a30c69fe-401c-4a87-96a0-e0da70c7c740)   
+ [範本](https://msdn.microsoft.com/library/90fcc14a-2092-47af-9d2e-dba26d25b872)

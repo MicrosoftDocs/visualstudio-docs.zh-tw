@@ -12,12 +12,12 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: c2e6db11220c2cc7f14bc2f0f05912e7855646c1
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 9d406d200864a3c79dcd568b3c9411a1635ce116
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60045978"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65704028"
 ---
 # <a name="automatic-feature-suspension"></a>自動功能暫停
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,7 +31,7 @@ ms.locfileid: "60045978"
 
 - 針對 Visual C# 和 Visual Basic 的完整解決方案分析已停用。
 
-- [記憶體回收](http://msdn.microsoft.com/library/22b6cb97-0c80-4eeb-a2cf-5ed7655e37f9)(GC) Visual C# 和 Visual Basic 的低延遲模式已停用。
+- [記憶體回收](https://msdn.microsoft.com/library/22b6cb97-0c80-4eeb-a2cf-5ed7655e37f9)(GC) Visual C# 和 Visual Basic 的低延遲模式已停用。
 
 - Visual Studio 將快取清除。
 
@@ -42,7 +42,7 @@ ms.locfileid: "60045978"
  根據預設，是針對 Visual Basic 啟用完整解決方案分析，並將其停用 Visual C# 中。 不過，在記憶體不足情況下，完整解決方案分析會自動停用 Visual Basic 和 Visual C# 中，不論其在 [選項] 對話方塊中的設定為何。 不過，您可以重新啟用完整解決方案分析選擇**重新啟用**中的資訊列出現時，藉由選取按鈕**啟用完整解決方案分析**核取方塊，在 [選項] 對話方塊中，或重新啟動 Visual Studio。 [選項] 對話方塊中一律會顯示目前的完整解決方案分析設定。 如需詳細資訊，請參閱[如何：啟用和停用完整解決方案分析](../code-quality/how-to-enable-and-disable-full-solution-analysis-for-managed-code.md)。
 
 ## <a name="gc-low-latency-disabled"></a>GC 低度延遲停用
- 若要重新啟用 GC 低延遲模式，請重新啟動 Visual Studio。  根據預設，Visual Studio 可讓 GC 低延遲模式，只要您輸入以確保您輸入的內容不會封鎖任何 GC 作業。 不過，如果記憶體不足的情況會導致 Visual Studio 顯示自動暫止警告，GC 低延遲模式已停用該工作階段中。 重新啟動 Visual Studio 會重新啟用預設的 GC 行為。 如需詳細資訊，請參閱<xref:System.Runtime.GCLatencyMode>。
+ 若要重新啟用 GC 低延遲模式，請重新啟動 Visual Studio。  根據預設，Visual Studio 可讓 GC 低延遲模式，只要您輸入以確保您輸入的內容不會封鎖任何 GC 作業。 不過，如果記憶體不足的情況會導致 Visual Studio 顯示自動暫止警告，GC 低延遲模式已停用該工作階段中。 重新啟動 Visual Studio 會重新啟用預設的 GC 行為。 如需詳細資訊，請參閱 <xref:System.Runtime.GCLatencyMode>。
 
 ## <a name="visual-studio-caches-flushed"></a>Visual Studio 快取排清
 
@@ -62,5 +62,5 @@ Visual Studio 的所有快取會立即清空，但重新擴展，如果您繼續
 ## <a name="see-also"></a>另請參閱
 
 - [如何：啟用和停用完整解決方案分析](../code-quality/how-to-enable-and-disable-full-solution-analysis-for-managed-code.md)
-- [記憶體回收的基本概念](http://msdn.microsoft.com/library/67c5a20d-1be1-4ea7-8a9a-92b0b08658d2)
+- [記憶體回收的基本概念](https://msdn.microsoft.com/library/67c5a20d-1be1-4ea7-8a9a-92b0b08658d2)
 - [大型解決方案的效能考量](https://github.com/dotnet/roslyn/wiki/Performance-considerations-for-large-solutions)

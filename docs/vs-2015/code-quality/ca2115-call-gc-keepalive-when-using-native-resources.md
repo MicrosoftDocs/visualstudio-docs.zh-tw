@@ -15,12 +15,12 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 0eadff91e8762349ec95c2d9f3bf5717bfecaa4a
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: c035c05480279012fba1101c3a60b020d34b1890
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63435026"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65687333"
 ---
 # <a name="ca2115-call-gckeepalive-when-using-native-resources"></a>CA2115:使用原生資源時必須呼叫 GC.KeepAlive
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -64,4 +64,4 @@ ms.locfileid: "63435026"
  <xref:System.GC.KeepAlive%2A?displayProperty=fullName> <xref:System.IntPtr?displayProperty=fullName>
  <xref:System.Object.Finalize%2A?displayProperty=fullName>
  <xref:System.UIntPtr?displayProperty=fullName>
- [Dispose 模式](http://msdn.microsoft.com/library/31a6c13b-d6a2-492b-9a9f-e5238c983bcb)
+ [Dispose 模式](https://msdn.microsoft.com/library/31a6c13b-d6a2-492b-9a9f-e5238c983bcb)

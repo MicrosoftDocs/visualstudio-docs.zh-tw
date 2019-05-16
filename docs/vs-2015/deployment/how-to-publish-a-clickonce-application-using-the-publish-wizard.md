@@ -1,5 +1,5 @@
 ---
-title: HOW TO：發行 ClickOnce 應用程式使用發行精靈 |Microsoft Docs
+title: 作法：發行 ClickOnce 應用程式使用發行精靈 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-deployment
@@ -18,14 +18,14 @@ caps.latest.revision: 27
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 430154b1f9b9f652052dc828c921d3ded16a3787
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 7ff519416d874462a86f7e615822d15139fc4726
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63442693"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65697640"
 ---
-# <a name="how-to-publish-a-clickonce-application-using-the-publish-wizard"></a>HOW TO：使用發行精靈發行 ClickOnce 應用程式
+# <a name="how-to-publish-a-clickonce-application-using-the-publish-wizard"></a>作法：使用發行精靈發行 ClickOnce 應用程式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 若要讓使用者可以使用 ClickOnce 應用程式，您必須將它發行至檔案共用或路徑、FTP 伺服器或卸除式媒體。 您可以使用 [發佈精靈] 發佈應用程式；[專案設計工具] 的 [發佈] 頁面上也有提供與發佈相關的其他屬性。 如需詳細資訊，請參閱 <<c0> [ 發行 ClickOnce 應用程式](../deployment/publishing-clickonce-applications.md)。  
@@ -36,7 +36,7 @@ ms.locfileid: "63442693"
 > 當您使用 ClickOnce 安裝多個版本的應用程式時，安裝會將舊版應用程式移至您指定之發行位置中名為 Archive 的資料夾。 以這種方式封存先前的版本可將安裝目錄與舊版的資料夾分開。  
   
 > [!NOTE]
-> 根據目前使用的設定與版本，您所看到的對話方塊與功能表命令可能會與 [說明] 中所描述的不同。 若要變更設定，請在 [工具]  功能表上按一下 [匯入和匯出設定]  。 如需詳細資訊，請參閱 [在 Visual Studio 中自訂開發設定](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)  
+> 根據目前使用的設定與版本，您所看到的對話方塊與功能表命令可能會與 [說明] 中所描述的不同。 若要變更設定，請在 [工具]  功能表上按一下 [匯入和匯出設定]  。 如需詳細資訊，請參閱 [在 Visual Studio 中自訂開發設定](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)  
   
 ### <a name="to-publish-to-a-file-share-or-path"></a>發行至檔案共用或路徑  
   
@@ -103,4 +103,4 @@ ms.locfileid: "63442693"
 ## <a name="see-also"></a>另請參閱  
  [ClickOnce 安全性和部署](../deployment/clickonce-security-and-deployment.md)   
  [保護 ClickOnce 應用程式](../deployment/securing-clickonce-applications.md)   
- [使用 ClickOnce 部署 Office 方案](http://msdn.microsoft.com/library/feb516b3-5e4d-449a-9fd2-347d08d90252)
+ [使用 ClickOnce 部署 Office 方案](https://msdn.microsoft.com/library/feb516b3-5e4d-449a-9fd2-347d08d90252)

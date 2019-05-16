@@ -22,12 +22,12 @@ caps.latest.revision: 29
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 5c1733d6d4e60aad10896dbd2fcad16406830b83
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: e37d17cbe67bd1e4e64e306831f38996a7f93c80
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63437046"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65697963"
 ---
 # <a name="bind-wpf-controls-to-data-in-visual-studio"></a>將 WPF 控制項繫結至 Visual Studio 中的資料
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -58,7 +58,7 @@ ms.locfileid: "63437046"
 
 #### <a name="to-create-a-control-that-is-bound-to-a-single-field-of-data"></a>建立繫結至資料的單一欄位的控制項
 
-1. 在 [ **Zdroje dat** ] 視窗中，展開代表資料表或物件的項目。 找出代表您想要與之繫結的資料行或屬性的子項目。 如需圖解示範，請參閱 <<c0> [ 資料來源視窗](http://msdn.microsoft.com/library/0d20f699-cc95-45b3-8ecb-c7edf1f67992)。
+1. 在 [ **Zdroje dat** ] 視窗中，展開代表資料表或物件的項目。 找出代表您想要與之繫結的資料行或屬性的子項目。 如需圖解示範，請參閱 <<c0> [ 資料來源視窗](https://msdn.microsoft.com/library/0d20f699-cc95-45b3-8ecb-c7edf1f67992)。
 
 2. 或者，選取要建立的控制項。 在每個項目**Zdroje dat**視窗有當您將項目拖曳至設計工具會建立一個預設控制項。 預設控制項會根據項目的基礎資料類型而有所不同。
 
@@ -73,7 +73,7 @@ ms.locfileid: "63437046"
 
 #### <a name="to-create-a-control-that-is-bound-to-multiple-fields-of-data"></a>建立繫結至資料的多個欄位的控制項
 
-1. 在 [ **Zdroje dat** ] 視窗中，選取代表資料表或物件的項目。 如需圖解示範，請參閱 <<c0> [ 資料來源視窗](http://msdn.microsoft.com/library/0d20f699-cc95-45b3-8ecb-c7edf1f67992)。
+1. 在 [ **Zdroje dat** ] 視窗中，選取代表資料表或物件的項目。 如需圖解示範，請參閱 <<c0> [ 資料來源視窗](https://msdn.microsoft.com/library/0d20f699-cc95-45b3-8ecb-c7edf1f67992)。
 
 2. 或者，選取要建立的控制項。 根據預設，每個項目**資料來源**代表資料表或物件的範圍設定為建立<xref:System.Windows.Controls.DataGrid>（如果您的專案目標.NET Framework 4） 或<xref:System.Windows.Controls.ListView>（適用於舊版的.NET framework 中）。
 
@@ -91,7 +91,7 @@ ms.locfileid: "63437046"
 
 #### <a name="to-create-a-set-of-controls-that-are-bound-to-multiple-fields-of-data"></a>建立一組繫結至資料的多個欄位的控制項
 
-1. 在 [ **Zdroje dat** ] 視窗中，選取代表資料表或物件的項目。 如需圖解示範，請參閱 <<c0> [ 資料來源視窗](http://msdn.microsoft.com/library/0d20f699-cc95-45b3-8ecb-c7edf1f67992)。
+1. 在 [ **Zdroje dat** ] 視窗中，選取代表資料表或物件的項目。 如需圖解示範，請參閱 <<c0> [ 資料來源視窗](https://msdn.microsoft.com/library/0d20f699-cc95-45b3-8ecb-c7edf1f67992)。
 
 2. 按一下下拉式清單旁的箭號的項目並選取**詳細資料**。
 

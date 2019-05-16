@@ -9,12 +9,12 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ec0071cb8bf990974c700ce296ebeb86b5ad8c17
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: a7b3921d9ef11ba01cad6d25f69f3a484e27c929
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60045469"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65698245"
 ---
 # <a name="walkthrough-building-an-application"></a>逐步解說：建置應用程式
 
@@ -78,7 +78,7 @@ ms.locfileid: "60045469"
 
 ## <a name="BKMK_CreateBuildConfig"></a> 建立自訂組建組態
 
-當您建立方案時，系統會自動為方案定義偵錯和發行組建組態以及其預設平台目標。 之後，您可以自訂這些組態或建立您自己的組態。 組建組態指定組建類型。 組建平台指定應用程式針對該組態的目標作業系統。 如需詳細資訊，請參閱[了解組建組態](../ide/understanding-build-configurations.md)、[了解組建平台](../ide/understanding-build-platforms.md)和 [Debug and Release Project Configurations](http://msdn.microsoft.com/0440b300-0614-4511-901a-105b771b236e) (偵錯和發行專案組態)。
+當您建立方案時，系統會自動為方案定義偵錯和發行組建組態以及其預設平台目標。 之後，您可以自訂這些組態或建立您自己的組態。 組建組態指定組建類型。 組建平台指定應用程式針對該組態的目標作業系統。 如需詳細資訊，請參閱[了解組建組態](../ide/understanding-build-configurations.md)、[了解組建平台](../ide/understanding-build-platforms.md)和 [Debug and Release Project Configurations](https://msdn.microsoft.com/0440b300-0614-4511-901a-105b771b236e) (偵錯和發行專案組態)。
 
 您可以使用 [組態管理員] 對話方塊變更或建立組態和平台設定。 在此程序中，您將建立要測試的組建組態。
 
@@ -197,9 +197,9 @@ ms.locfileid: "60045469"
 
     組建資訊包含組建的開始時間 (位於開頭)、檔案的處理順序，以及完成處理所需的時間 (位於結尾)。 這項資訊也包含 Visual Studio 在建置期間執行的實際編譯器語法。
 
-    例如，在 Visual C# 組建中，[/nowarn](http://msdn.microsoft.com/library/7ebf2106-0652-4fdc-bf60-70fc86465d83) 選項會列出您稍早在本主題中所指定的警告碼 1762，以及其他三個警告。
+    例如，在 Visual C# 組建中，[/nowarn](https://msdn.microsoft.com/library/7ebf2106-0652-4fdc-bf60-70fc86465d83) 選項會列出您稍早在本主題中所指定的警告碼 1762，以及其他三個警告。
 
-    在 Visual Basic 組建中，[/nowarn](http://msdn.microsoft.com/library/7ebf2106-0652-4fdc-bf60-70fc86465d83) 不包含要排除的特定警告，因此會不出現任何警告。
+    在 Visual Basic 組建中，[/nowarn](https://msdn.microsoft.com/library/7ebf2106-0652-4fdc-bf60-70fc86465d83) 不包含要排除的特定警告，因此會不出現任何警告。
 
    > [!TIP]
    > 如果您選擇 Ctrl+F 鍵顯示 [尋找] 對話方塊，即可搜尋 [輸出] 視窗的內容。
@@ -264,6 +264,6 @@ ms.locfileid: "60045469"
 
 ## <a name="see-also"></a>另請參閱
 
-- [逐步解說：建置專案 (C++)](http://msdn.microsoft.com/library/d459bc03-88ef-48d0-9f9a-82d17f0b6a4d)
-- [ASP.NET Web 應用程式專案先行編譯概觀](http://msdn.microsoft.com/b940abbd-178d-4570-b441-52914fa7b887)
+- [逐步解說：建置專案 (C++)](https://msdn.microsoft.com/library/d459bc03-88ef-48d0-9f9a-82d17f0b6a4d)
+- [ASP.NET Web 應用程式專案先行編譯概觀](https://msdn.microsoft.com/b940abbd-178d-4570-b441-52914fa7b887)
 - [逐步解說：使用 MSBuild](../msbuild/walkthrough-using-msbuild.md)

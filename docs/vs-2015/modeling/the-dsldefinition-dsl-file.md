@@ -11,12 +11,12 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c7294a0a835b4797424d1f736405a0488db28587
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 610d371fe288a6582cdf9e6460c339347f60c81a
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60070182"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65680830"
 ---
 # <a name="the-dsldefinitiondsl-file"></a>DslDefinition.dsl 檔
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -549,6 +549,6 @@ ComponentHasPorts . Component / ! Component /    ComponentModelHasComponents . C
  連接器對應也可以包含裝飾項目對應。  
   
 ## <a name="see-also"></a>另請參閱  
- [Domain-Specific Language Tools Glossary](http://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa) (特定領域語言工具字彙表)   
+ [Domain-Specific Language Tools Glossary](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa) (特定領域語言工具字彙表)   
  [如何定義特定領域語言](../modeling/how-to-define-a-domain-specific-language.md)   
  [了解模型、類別和關聯性](../modeling/understanding-models-classes-and-relationships.md)

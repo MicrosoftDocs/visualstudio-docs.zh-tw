@@ -9,12 +9,12 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: fab67780f113c2348fa30e80c4174d1f26f130f6
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 448396ebf8bf6318a22d7c6b05037d3ea43b0fd5
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60109041"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65697134"
 ---
 # <a name="security-considerations-when-working-with-xml-data"></a>使用 XML 資料時的安全性考量
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,4 +42,4 @@ ms.locfileid: "60109041"
 - Managed 偵錯引擎會載入 XSLT 運算式評估工具。 Managed 偵錯引擎會假設所有的程式碼都是從使用者的本機電腦上執行。 相應地，<xref:System.Xml.Xsl.XslCompiledTransform> 類別會將 XSLT 檔案下載到使用者的本機電腦。 藉由使用限制的使用權限在新的應用程式定義域中執行所有的 XSLT 轉換，可降低執行權限提升的可能性。  
   
 ## <a name="see-also"></a>另請參閱  
- [應用程式定義域](http://msdn.microsoft.com/39e57d07-a740-4cd4-ae82-e119ea3856c1)
+ [應用程式定義域](https://msdn.microsoft.com/39e57d07-a740-4cd4-ae82-e119ea3856c1)

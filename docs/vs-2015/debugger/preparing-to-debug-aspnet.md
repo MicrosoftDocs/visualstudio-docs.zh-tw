@@ -16,12 +16,12 @@ caps.latest.revision: 32
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: c0e5eb3173a90478266e1a5a5b7c9eb19243278d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 3b8ddc642fda143743e312fa1915087d553938a7
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58942395"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65696116"
 ---
 # <a name="preparing-to-debug-aspnet"></a>準備偵錯 ASP.NET
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,7 +41,7 @@ ms.locfileid: "58942395"
  [Web 應用程式遠端偵錯的必要條件](../debugger/prerequistes-for-remote-debugging-web-applications.md)  
  列出在遠端伺服器偵錯 Web 應用程式的先決條件。  
   
- [如何：Windows Server 2003 上設定 IIS](http://msdn.microsoft.com/23d557c5-ffcb-4fb2-be7c-5901d5f72ea1)  
+ [如何：Windows Server 2003 上設定 IIS](https://msdn.microsoft.com/23d557c5-ffcb-4fb2-be7c-5901d5f72ea1)  
  討論在 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 中偵錯 [!INCLUDE[WinXPSvr](../includes/winxpsvr-md.md)] 之偵錯系統需求所需的特殊組態步驟。  
   
  [如何：針對自我裝載的 WCF 服務進行偵錯](../debugger/how-to-debug-a-self-hosted-wcf-service.md)  
@@ -56,4 +56,4 @@ ms.locfileid: "58942395"
  [偵錯工具基礎](../debugger/debugger-basics.md)   
  [偵錯設定和準備](../debugger/debugger-settings-and-preparation.md)   
  [Visual Studio 偵錯](../debugger/debugging-in-visual-studio.md)   
- [ASP.NET 和 IIS 組態](http://msdn.microsoft.com/library/47ebf3b5-98de-4d31-a335-57e2ccd974b8)
+ [ASP.NET 和 IIS 組態](https://msdn.microsoft.com/library/47ebf3b5-98de-4d31-a335-57e2ccd974b8)

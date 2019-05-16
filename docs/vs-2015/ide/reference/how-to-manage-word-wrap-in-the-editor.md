@@ -1,5 +1,5 @@
 ---
-title: HOW TO：管理編輯器 中的自動換行 |Microsoft Docs
+title: 作法：管理編輯器 中的自動換行 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -13,22 +13,22 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 07dda6011b25df1cfcd4d17e46c2591f87ab7413
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 3b24e14fe1f1d740732bdb5f9d8d32a12aab0055
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63437154"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65703890"
 ---
 # <a name="how-to-manage-word-wrap-in-the-editor"></a>HOW TO：管理編輯器 中的自動換行
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 您可以設定和清除 [自動換行] 選項。 設定這個選項時，過長的行超出目前程式碼編輯器視窗寬度的部分會顯示在下一行。 清除這個選項時，例如，為了方便使用行號，您可以捲動到右邊以看到過長行的結尾。  
   
- 如需詳細資訊，請參閱[如何：設定一般編輯器選項](http://msdn.microsoft.com/704e4a7b-2162-4bed-8a47-f4f6ffec98c2)。  
+ 如需詳細資訊，請參閱[如何：設定一般編輯器選項](https://msdn.microsoft.com/704e4a7b-2162-4bed-8a47-f4f6ffec98c2)。  
   
 > [!NOTE]
-> 根據您目前使用的設定或版本，您所看到的對話方塊與功能表命令可能會與 [說明] 中描述的不同。 若要變更設定，請從 [ **工具** ] 功能表中選取 [ **匯入和匯出設定** ]。 如需詳細資訊，請參閱 [在 Visual Studio 中自訂開發設定](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)  
+> 根據您目前使用的設定或版本，您所看到的對話方塊與功能表命令可能會與 [說明] 中描述的不同。 若要變更設定，請從 [ **工具** ] 功能表中選取 [ **匯入和匯出設定** ]。 如需詳細資訊，請參閱 [在 Visual Studio 中自訂開發設定](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)  
   
 ## <a name="procedure"></a>程序  
   

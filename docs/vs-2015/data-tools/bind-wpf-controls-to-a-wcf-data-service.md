@@ -18,12 +18,12 @@ caps.latest.revision: 44
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: aa0735f25b7e6b0007172c8c42eb06222a0425fb
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: fb08a016261ac0836ba6dd2dde5d8b0812aab806
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63439464"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65704909"
 ---
 # <a name="bind-wpf-controls-to-a-wcf-data-service"></a>將 WPF 控制項繫結至 WCF 資料服務
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -53,15 +53,15 @@ ms.locfileid: "63439464"
   
   預先了解下列概念也有助於完成此逐步解說 (但非必要)：  
   
-- WCF 資料服務。 如需詳細資訊，請參閱 <<c0> [ 概觀](http://msdn.microsoft.com/library/7924cf94-c9a6-4015-afc9-f5d22b1743bb)。  
+- WCF 資料服務。 如需詳細資訊，請參閱 <<c0> [ 概觀](https://msdn.microsoft.com/library/7924cf94-c9a6-4015-afc9-f5d22b1743bb)。  
   
 - [!INCLUDE[ssAstoria](../includes/ssastoria-md.md)]中的資料模型。  
   
-- 實體資料模型及 ADO.NET Entity Framework。 如需詳細資訊，請參閱 < [Entity Framework 概觀](http://msdn.microsoft.com/library/a2166b3d-d8ba-4a0a-8552-6ba1e3eaaee0)。  
+- 實體資料模型及 ADO.NET Entity Framework。 如需詳細資訊，請參閱 < [Entity Framework 概觀](https://msdn.microsoft.com/library/a2166b3d-d8ba-4a0a-8552-6ba1e3eaaee0)。  
   
-- 使用 WPF 設計工具。 如需詳細資訊，請參閱 < [WPF 和 Silverlight Designer 概觀](http://msdn.microsoft.com/570b7a5c-0c86-4326-a371-c9b63378fc62)。  
+- 使用 WPF 設計工具。 如需詳細資訊，請參閱 < [WPF 和 Silverlight Designer 概觀](https://msdn.microsoft.com/570b7a5c-0c86-4326-a371-c9b63378fc62)。  
   
-- WPF 資料繫結。 如需詳細資訊，請參閱 [資料繫結概觀](http://msdn.microsoft.com/library/c707c95f-7811-401d-956e-2fffd019a211)。  
+- WPF 資料繫結。 如需詳細資訊，請參閱 [資料繫結概觀](https://msdn.microsoft.com/library/c707c95f-7811-401d-956e-2fffd019a211)。  
   
 ## <a name="create-the-service-project"></a>建立服務專案  
  建立 [!INCLUDE[ss_data_service](../includes/ss-data-service-md.md)]的專案以開始此逐步解說。  
@@ -326,7 +326,7 @@ ms.locfileid: "63439464"
  [將 WPF 控制項繫結至 Visual Studio 中的資料](../data-tools/bind-wpf-controls-to-data-in-visual-studio1.md)   
  [將 WPF 控制項繫結至 Visual Studio 中的資料](../data-tools/bind-wpf-controls-to-data-in-visual-studio2.md)   
  [將 WPF 控制項繫結至資料集](../data-tools/bind-wpf-controls-to-a-dataset.md)   
- [概觀](http://msdn.microsoft.com/library/7924cf94-c9a6-4015-afc9-f5d22b1743bb)   
- [Entity Framework 概觀](http://msdn.microsoft.com/library/a2166b3d-d8ba-4a0a-8552-6ba1e3eaaee0)   
- [WPF 和 Silverlight Designer 概觀](http://msdn.microsoft.com/570b7a5c-0c86-4326-a371-c9b63378fc62)   
- [資料繫結概觀](http://msdn.microsoft.com/library/c707c95f-7811-401d-956e-2fffd019a211)
+ [概觀](https://msdn.microsoft.com/library/7924cf94-c9a6-4015-afc9-f5d22b1743bb)   
+ [Entity Framework 概觀](https://msdn.microsoft.com/library/a2166b3d-d8ba-4a0a-8552-6ba1e3eaaee0)   
+ [WPF 和 Silverlight Designer 概觀](https://msdn.microsoft.com/570b7a5c-0c86-4326-a371-c9b63378fc62)   
+ [資料繫結概觀](https://msdn.microsoft.com/library/c707c95f-7811-401d-956e-2fffd019a211)

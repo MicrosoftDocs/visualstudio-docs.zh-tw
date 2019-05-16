@@ -9,12 +9,12 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 597ed598a9d75e35f552b240f7bbfc1dcb0203e2
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: bbac0801e966c1ed338ad0b84b159d786d82f624
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60094868"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65705025"
 ---
 # <a name="could-not-retrieve-schema-information-for-database-object-ltobject-namegt"></a>無法擷取資料庫物件的結構描述資訊&lt;物件名稱&gt;
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,5 +27,5 @@ ms.locfileid: "60094868"
   
 ## <a name="see-also"></a>另請參閱  
  [LINQ to SQL 工具，在 Visual Studio 中](../data-tools/linq-to-sql-tools-in-visual-studio2.md)   
- [逐步解說：建立 LINQ to SQL 類別 （O-R 設計工具）](http://msdn.microsoft.com/library/35aad4a4-2e8a-46e2-ae09-5fbfd333c233)   
- [LINQ to SQL](http://msdn.microsoft.com/library/73d13345-eece-471a-af40-4cc7a2f11655)
+ [逐步解說：建立 LINQ to SQL 類別 （O-R 設計工具）](https://msdn.microsoft.com/library/35aad4a4-2e8a-46e2-ae09-5fbfd333c233)   
+ [LINQ to SQL](https://msdn.microsoft.com/library/73d13345-eece-471a-af40-4cc7a2f11655)

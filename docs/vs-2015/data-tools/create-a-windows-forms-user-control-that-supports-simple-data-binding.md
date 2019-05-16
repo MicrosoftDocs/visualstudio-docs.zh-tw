@@ -17,19 +17,19 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: edec23d840723e37ecb469aadc412e5659e95007
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 0ac931dfcf7b56619707a2bd42a32f5a369b04d9
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60071014"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65704997"
 ---
 # <a name="create-a-windows-forms-user-control-that-supports-simple-data-binding"></a>建立支援簡單資料繫結的 Windows Forms 使用者控制項
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 在 Windows 應用程式的表單上顯示資料時，您可以從 [工具箱] 中選擇現有控制項；或者，如果應用程式需要標準控制項中未提供的功能，您也可以撰寫自訂控制項。 這個逐步解說顯示如何建立可實作 <xref:System.ComponentModel.DefaultBindingPropertyAttribute> 的控制項。 可實作 <xref:System.ComponentModel.DefaultBindingPropertyAttribute> 的控制項可以包含一個可繫結至資料的屬性。 這類控制項類似 <xref:System.Windows.Forms.TextBox> 或 <xref:System.Windows.Forms.CheckBox>。  
   
- 如需控制項製作的詳細資訊，請參閱[在設計階段開發 Windows Forms 控制項](http://msdn.microsoft.com/library/e5a8e088-7ec8-4fd9-bcb3-9078fd134829)。  
+ 如需控制項製作的詳細資訊，請參閱[在設計階段開發 Windows Forms 控制項](https://msdn.microsoft.com/library/e5a8e088-7ec8-4fd9-bcb3-9078fd134829)。  
   
  當製作控制項以用於資料繫結案例，您應該實作下列的資料繫結屬性的其中之一：  
   
@@ -71,7 +71,7 @@ ms.locfileid: "60071014"
   
 2. 將專案命名為**SimpleControlWalkthrough**。  
   
-3. 選取  **Windows 應用程式**然後按一下**確定**。 如需詳細資訊，請參閱 <<c0> [ 用戶端應用程式](http://msdn.microsoft.com/library/2dfb50b7-5af2-4e12-9bbb-c5ade0e39a68)。  
+3. 選取  **Windows 應用程式**然後按一下**確定**。 如需詳細資訊，請參閱 <<c0> [ 用戶端應用程式](https://msdn.microsoft.com/library/2dfb50b7-5af2-4e12-9bbb-c5ade0e39a68)。  
   
      隨即建立 **SimpleControlWalkthrough** 專案，並將其新增至 [方案總管]。  
   

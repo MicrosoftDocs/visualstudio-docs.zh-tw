@@ -10,12 +10,12 @@ ms.assetid: 43341928-9930-48cf-a57f-ddcc3984b787
 caps.latest.revision: 9
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: e78cefa9778e2889130f865e4c61cc8a97014db7
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 885f96a4e1e43fe422c6fd9cfaa414fe5871bce1
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63444664"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65688579"
 ---
 # <a name="analyze-net-framework-memory-issues"></a>分析 .NET Framework 記憶體問題
 使用 Visual Studio Managed 記憶體分析器，找出 .NET Framework 程式碼中記憶體流失和記憶體使用沒有效率的問題。 目標程式碼的最小 .NET Framework 版本是 .NET Framework 4.5。  
@@ -47,7 +47,7 @@ ms.locfileid: "63444664"
  ![回到頁首](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [內容](#BKMK_Contents)  
   
 ## <a name="BKMK_Identify_a_memory_issue_in_an_app"></a> 識別應用程式中的記憶體問題  
- 應用程式效能是記憶體問題的最明顯徵兆，特別是效能隨著時間逐漸降低時。 如果您的應用程式執行期間有其他應用程式的效能降低，也表示發生記憶體問題。 如果您懷疑發生記憶體問題，請使用 工作管理員等工具或[Windows 效能監視器](http://technet.microsoft.com/library/cc749249.aspx)進一步調查。 例如，尋找您無法解釋的記憶體大小總計成長量，當做記憶體流失的可能來源：  
+ 應用程式效能是記憶體問題的最明顯徵兆，特別是效能隨著時間逐漸降低時。 如果您的應用程式執行期間有其他應用程式的效能降低，也表示發生記憶體問題。 如果您懷疑發生記憶體問題，請使用 工作管理員等工具或[Windows 效能監視器](https://technet.microsoft.com/library/cc749249.aspx)進一步調查。 例如，尋找您無法解釋的記憶體大小總計成長量，當做記憶體流失的可能來源：  
   
  ![資源監視器中一致的記憶體成長](../misc/media/mngdmem-resourcemanagerconsistentgrowth.png "MNGDMEM_ResourceManagerConsistentGrowth")  
   
@@ -56,7 +56,7 @@ ms.locfileid: "63444664"
  ![在 Resource Manager 中的記憶體尖峰](../misc/media/mngdmem-resourcemanagerspikes.png "MNGDMEM_ResourceManagerSpikes")  
   
 ## <a name="BKMK_Collect_memory_snapshots"></a> 收集記憶體快照  
- 記憶體分析工具會分析中的資訊*傾印檔案*包含堆積資訊。 您可以在 Visual Studio 中建立傾印檔案，或者您可以使用之類的工具[ProcDump](http://technet.microsoft.com/sysinternals/dd996900.aspx)從[Windows Sysinternals](http://technet.microsoft.com/sysinternals)。 請參閱[什麼是傾印，以及如何建立一個？](http://blogs.msdn.com/b/debugger/archive/2009/12/30/what-is-a-dump-and-how-do-i-create-one.aspx) Visual Studio 偵錯工具團隊部落格上。  
+ 記憶體分析工具會分析中的資訊*傾印檔案*包含堆積資訊。 您可以在 Visual Studio 中建立傾印檔案，或者您可以使用之類的工具[ProcDump](https://technet.microsoft.com/sysinternals/dd996900.aspx)從[Windows Sysinternals](https://technet.microsoft.com/sysinternals)。 請參閱[什麼是傾印，以及如何建立一個？](http://blogs.msdn.com/b/debugger/archive/2009/12/30/what-is-a-dump-and-how-do-i-create-one.aspx) Visual Studio 偵錯工具團隊部落格上。  
   
 > [!NOTE]
 > 大多數工具都可以收集含有或不含堆積記憶體資料的傾印資訊。 Visual Studio 記憶體分析器需要完整的堆積資訊。  

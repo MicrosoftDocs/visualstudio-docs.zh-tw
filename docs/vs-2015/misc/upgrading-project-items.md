@@ -11,12 +11,12 @@ helpviewer_keywords:
 ms.assetid: 8af29dd4-eaf1-4b3c-b602-198e1a3dff23
 caps.latest.revision: 14
 manager: jillfra
-ms.openlocfilehash: c07f8f62fb7ae84b5f3ee6140cccecf744c759e5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: eb3619e187c7856cf03ee60c8a04cbe527bf0a69
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62434172"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65698690"
 ---
 # <a name="upgrading-project-items"></a>升級專案項目
 如果您新增或管理您不會實作的專案系統內的項目時，您可能需要參與專案的升級程序。 Crystal Reports 是可以加入至專案系統的項目範例。  
@@ -38,5 +38,5 @@ ms.locfileid: "62434172"
 2. 在您的專案項目取得的專案升級時，通知**Visual Studio 轉換精靈**仍會顯示。 因此，您應該使用的方法<xref:Microsoft.VisualStudio.Shell.Interop.IVsUpgradeLogger>介面，以提供精靈使用者介面升級的訊息。  
   
 ## <a name="see-also"></a>另請參閱  
- [Visual Studio 轉換精靈](http://msdn.microsoft.com/4acfd30e-c192-4184-a86f-2da5e4c3d83c)   
+ [Visual Studio 轉換精靈](https://msdn.microsoft.com/4acfd30e-c192-4184-a86f-2da5e4c3d83c)   
  [升級自訂專案](../misc/upgrading-custom-projects.md)

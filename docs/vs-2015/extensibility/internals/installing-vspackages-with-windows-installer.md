@@ -11,19 +11,19 @@ ms.assetid: 41d2c72c-0a97-4fcd-b3aa-33a8d3aa962a
 caps.latest.revision: 31
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 8d5b22479996bca6ee69c1334d79f012024b865d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 35942f6babf18967e11f268ef0412acb4cc8edf7
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58942966"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65687471"
 ---
 # <a name="installing-vspackages-with-windows-installer"></a>使用 Windows Installer 安裝 VSPackage
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 整合到 VSPackage[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]需要不只將檔案複製到使用者的電腦。 VSPackage 的安裝程式必須安裝 VSPackage 和其相依的檔案，並註冊及整合到[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]。 VSPackage 可以利用整合功能，例如上顯示圖示[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]啟動顯示畫面和 [關於] 對話方塊。  
   
- Microsoft Windows Installer 檔案的建議方式是將您的 Vspackage。 方便使用 Windows Installer 封裝可以在 支援的任何 Windows 作業系統上執行[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]。 如需詳細資訊，請參閱 < [Windows Installer](http://msdn.microsoft.com/121be21b-b916-43e2-8f10-8b080516d2a0)。  
+ Microsoft Windows Installer 檔案的建議方式是將您的 Vspackage。 方便使用 Windows Installer 封裝可以在 支援的任何 Windows 作業系統上執行[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]。 如需詳細資訊，請參閱 < [Windows Installer](https://msdn.microsoft.com/121be21b-b916-43e2-8f10-8b080516d2a0)。  
   
 ## <a name="in-this-section"></a>本節內容  
  [Windows Installer 基本概念](../../extensibility/internals/windows-installer-basics.md)  

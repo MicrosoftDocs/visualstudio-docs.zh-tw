@@ -20,12 +20,12 @@ caps.latest.revision: 52
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 91e2c0f91d3234dd9f96a29cc914ae9e4d3847b6
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: a41c0c48eea4b766a9166922b2a89dfa1740e8bd
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63438377"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65697617"
 ---
 # <a name="html-ui-responsiveness"></a>HTML UI 回應性
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -324,7 +324,7 @@ if (performance.mark && performance.measure) {
   
 - **影像解碼中：** 指出花在解壓縮及解碼影像的時間。  
   
-  對於指令碼和樣式分類，UI 回應性分析工具可能會在時間軸詳細資料圖形中提供您可採取動作的資料。 如果您將指令碼問題識別為問題，可以搭配 UI 回應性分析工具來執行 CPU 取樣分析工具。 或者，您也可以使用 Visual Studio 函式分析工具取得詳細資料。 如需詳細資訊，請參閱[分析 JavaScript 函式計時資料](http://msdn.microsoft.com/library/b5aea8d8-36df-47ba-a7ca-95406700ca9b)。  
+  對於指令碼和樣式分類，UI 回應性分析工具可能會在時間軸詳細資料圖形中提供您可採取動作的資料。 如果您將指令碼問題識別為問題，可以搭配 UI 回應性分析工具來執行 CPU 取樣分析工具。 或者，您也可以使用 Visual Studio 函式分析工具取得詳細資料。 如需詳細資訊，請參閱[分析 JavaScript 函式計時資料](https://msdn.microsoft.com/library/b5aea8d8-36df-47ba-a7ca-95406700ca9b)。  
   
   對於其他事件分類，您可以識別因在應用程式加入功能所導致的平台副作用，但是在這種情況下無法使用 UI 回應性分析工具來解決特定效能問題。  
   
@@ -358,9 +358,9 @@ if (performance.mark && performance.measure) {
   
 - 請觀賞 Build 2013 大會中關於 UI 回應性分析工具的 [影片](http://channel9.msdn.com/Events/Build/2013/3-316) 。  
   
-- 讀取有關使用 JavaScript 針對 Windows 建置的 Windows 市集應用程式的效能提示。 如需詳細資訊，請參閱 [使用 JavaScript 的 Windows 市集應用程式的效能最佳做法](http://msdn.microsoft.com/library/windows/apps/hh465194.aspx)。  
+- 讀取有關使用 JavaScript 針對 Windows 建置的 Windows 市集應用程式的效能提示。 如需詳細資訊，請參閱 [使用 JavaScript 的 Windows 市集應用程式的效能最佳做法](https://msdn.microsoft.com/library/windows/apps/hh465194.aspx)。  
   
-- 如需單執行緒程式碼執行模型和效能的相關資訊，請參閱 [執行程式碼](http://msdn.microsoft.com/library/windows/apps/hh781217.aspx)。  
+- 如需單執行緒程式碼執行模型和效能的相關資訊，請參閱 [執行程式碼](https://msdn.microsoft.com/library/windows/apps/hh781217.aspx)。  
   
 ## <a name="see-also"></a>請參閱  
- [分析應用程式效能](http://msdn.microsoft.com/library/58acb30b-8428-41a6-b195-b0fdedb89575)
+ [分析應用程式效能](https://msdn.microsoft.com/library/58acb30b-8428-41a6-b195-b0fdedb89575)

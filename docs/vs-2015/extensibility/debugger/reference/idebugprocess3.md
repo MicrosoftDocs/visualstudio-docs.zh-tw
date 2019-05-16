@@ -12,12 +12,12 @@ ms.assetid: 7bd6b952-cf34-4e66-b8f6-d472dac3748f
 caps.latest.revision: 25
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 706feb470dc32992d9c0802f62182ca4eb1cabbf
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 490d1e5f8048188e442f0113f8cf91bafe2344ed
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63444850"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65675394"
 ---
 # <a name="idebugprocess3"></a>IDebugProcess3
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -39,7 +39,7 @@ IDebugProcess3 : IDebugProcess2
 ## <a name="notes-for-callers"></a>呼叫端資訊  
  此介面稱為主要是由工作階段的偵錯管理員 (SDM) 來進行互動的程式識別在這個程序中的群組。  
   
- 呼叫[QueryInterface](http://msdn.microsoft.com/library/62fce95e-aafa-4187-b50b-e6611b74c3b3)上[IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md)介面，以取得此介面。  
+ 呼叫[QueryInterface](https://msdn.microsoft.com/library/62fce95e-aafa-4187-b50b-e6611b74c3b3)上[IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md)介面，以取得此介面。  
   
 ## <a name="methods-in-vtable-order"></a>依照 Vtable 順序的方法  
  除了繼承自方法[IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md)，`IDebugProcess3`實作下列方法。  

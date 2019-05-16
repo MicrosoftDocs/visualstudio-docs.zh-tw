@@ -19,12 +19,12 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: baa86408ca681d65266cb5dae3fe2bf9fca8f97c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 02f136fa0daa23484e31deab8f138a02b8a0b592
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62584582"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65704336"
 ---
 # <a name="hierarchical-organization-of-resources-for-localization"></a>階層式組織當地語系化的資源
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -54,5 +54,5 @@ ms.locfileid: "62584582"
  [安全性和當地語系化附屬組件](../ide/security-and-localized-satellite-assemblies.md)   
  [當地語系化應用程式](../ide/localizing-applications.md)   
  [全球化和當地語系化應用程式](../ide/globalizing-and-localizing-applications.md)   
- [如何：設定 Windows Form 全球化的文化特性和 UI 文化特性](http://msdn.microsoft.com/694e049f-0b91-474a-9789-d35124f248f0)   
- [如何：ASP.NET Web 網頁全球化設定文化特性和 UI 文化特性](http://msdn.microsoft.com/library/76091f86-f967-4687-a40f-de87bd8cc9a0)
+ [如何：設定 Windows Form 全球化的文化特性和 UI 文化特性](https://msdn.microsoft.com/694e049f-0b91-474a-9789-d35124f248f0)   
+ [如何：ASP.NET Web 網頁全球化設定文化特性和 UI 文化特性](https://msdn.microsoft.com/library/76091f86-f967-4687-a40f-de87bd8cc9a0)

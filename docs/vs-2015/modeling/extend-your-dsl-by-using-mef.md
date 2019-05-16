@@ -9,12 +9,12 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 409021e9a88f5bedfcab9ec172f7f962c7623d3a
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: be514104ebc3cd908cd9469c6b674a22f9dad401
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63442251"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65696193"
 ---
 # <a name="extend-your-dsl-by-using-mef"></a>使用 MEF 擴充您的 DSL
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,7 +23,7 @@ ms.locfileid: "63442251"
   
  此外，當您啟用 MEF DSL 中，它可以是您更輕鬆地撰寫您的 DSL 的功能即使它們皆已內建與 DSL。  
   
- 如需 MEF 的詳細資訊，請參閱[Managed Extensibility Framework (MEF)](http://msdn.microsoft.com/library/6c61b4ec-c6df-4651-80f1-4854f8b14dde)。  
+ 如需 MEF 的詳細資訊，請參閱[Managed Extensibility Framework (MEF)](https://msdn.microsoft.com/library/6c61b4ec-c6df-4651-80f1-4854f8b14dde)。  
   
 ### <a name="to-enable-your-dsl-to-be-extended-by-mef"></a>若要啟用以 MEF 擴充您的 DSL  
   
@@ -376,6 +376,6 @@ namespace MefExtension
   
 ## <a name="see-also"></a>另請參閱  
  [推出 Visual Studio 擴充功能](../extensibility/shipping-visual-studio-extensions.md)   
- [Managed 的 Extensibility Framework (MEF)](http://msdn.microsoft.com/library/6c61b4ec-c6df-4651-80f1-4854f8b14dde)   
+ [Managed 的 Extensibility Framework (MEF)](https://msdn.microsoft.com/library/6c61b4ec-c6df-4651-80f1-4854f8b14dde)   
  [如何：新增拖放處理常式](../modeling/how-to-add-a-drag-and-drop-handler.md)   
  [特定領域語言中的驗證](../modeling/validation-in-a-domain-specific-language.md)

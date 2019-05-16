@@ -26,12 +26,12 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: dbbb730af965b414a907bb230a58291ec53084a3
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 2882434f0638d565133efd9744a94d224d39d121
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63425340"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65692541"
 ---
 # <a name="save-data-back-to-the-database"></a>將資料儲存回資料庫
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -166,7 +166,7 @@ ms.locfileid: "63425340"
   
  `GetChanges` 本身會傳回所有已變更的記錄。 相反地，藉由傳遞所需<xref:System.Data.DataRowState>做為參數`GetChanges`方法中，您可以指定您想要變更的資料錄的哪些子集： 新加入的記錄，記錄會標示為刪除，卸離的記錄，或修改記錄。  
   
- 取得已變更的記錄的子集時，您想要將記錄傳送至另一個元件進行處理。 而不是傳送整個資料集，您可以減少取得元件所需的記錄與其他元件通訊額外的負荷。 如需詳細資訊，請參閱[如何：擷取已變更的資料列](http://msdn.microsoft.com/library/6ff0cbd0-5253-48e7-888a-144d56c2e0a9)。  
+ 取得已變更的記錄的子集時，您想要將記錄傳送至另一個元件進行處理。 而不是傳送整個資料集，您可以減少取得元件所需的記錄與其他元件通訊額外的負荷。 如需詳細資訊，請參閱[如何：擷取已變更的資料列](https://msdn.microsoft.com/library/6ff0cbd0-5253-48e7-888a-144d56c2e0a9)。  
   
 ## <a name="committing-changes-in-the-dataset"></a>認可資料集中的變更  
  如果進行變更時，資料集中<xref:System.Data.DataRow.RowState%2A>屬性已變更的資料列的設定。 建立、 維護，而且可供您的資料錄的原始和目前版本<xref:System.Data.DataRowView.RowVersion%2A>屬性。 必須將正確的更新傳送至資料來源的中繼資料會儲存在這些變更的資料列的屬性。  
@@ -219,12 +219,12 @@ ms.locfileid: "63425340"
   
 - 在商務層中，將程式碼加入至您的應用程式，以驗證資料。 資料集是執行這項操作的一個位置。 DataSet 設計工具提供了一些後端驗證的優點，例如能夠驗證變更，因為資料行和資料列的值變更。 如需詳細資訊，請參閱 <<c0> [ 驗證資料集中](../data-tools/validate-data-in-datasets.md)。  
   
-- 在 將驗證新增至表單的展示層。 如需詳細資訊，請參閱 <<c0> [ 在 Windows Form 中驗證使用者輸入](http://msdn.microsoft.com/library/4ec07681-1dee-4bf9-be5e-718f635a33a1)。  
+- 在 將驗證新增至表單的展示層。 如需詳細資訊，請參閱 <<c0> [ 在 Windows Form 中驗證使用者輸入](https://msdn.microsoft.com/library/4ec07681-1dee-4bf9-be5e-718f635a33a1)。  
   
 - 在資料後端，將資料傳送至資料來源 — 比方說，資料庫，並讓它接受或拒絕資料。 如果您正在使用的資料庫，具有複雜的驗證資料，以及提供錯誤資訊的設備，這可能是實用的方法，因為您可以驗證的資料，不論其來自何處。 不過，這種方法可能不會配合特定應用程式的驗證需求。 此外，驗證資料的資料來源可能會導致許多往返到資料來源，取決於您的應用程式可由後端所引發的驗證錯誤的解析的協助。  
   
   > [!IMPORTANT]
-  > 使用資料命令時<xref:System.Data.SqlClient.SqlCommand.CommandType%2A>屬性設為<xref:System.Data.CommandType>，仔細檢查，然後將它傳遞到您的資料庫用戶端傳來的資訊。 惡意的使用者可能會嘗試傳送 (插入) 修改過或額外的 SQL 陳述式，以獲得未授權的存取權或藉此破壞資料庫。 傳送至資料庫的使用者輸入之前，請務必確認資訊有效。 最好一律使用參數化的查詢或預存程序，可能的話。 如需詳細資訊，請參閱 [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07) (指令碼攻擊概觀)。  
+  > 使用資料命令時<xref:System.Data.SqlClient.SqlCommand.CommandType%2A>屬性設為<xref:System.Data.CommandType>，仔細檢查，然後將它傳遞到您的資料庫用戶端傳來的資訊。 惡意的使用者可能會嘗試傳送 (插入) 修改過或額外的 SQL 陳述式，以獲得未授權的存取權或藉此破壞資料庫。 傳送至資料庫的使用者輸入之前，請務必確認資訊有效。 最好一律使用參數化的查詢或預存程序，可能的話。 如需詳細資訊，請參閱 [Script Exploits Overview](https://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07) (指令碼攻擊概觀)。  
   
   集中進行完變更之後，您可以將變更傳送至資料來源。 大多數情況下，您可以呼叫`Update`TableAdapter （或資料配接器） 的方法。 方法會迴圈每一筆記錄資料表中的資料，判斷需要該類型的更新 （更新、 插入或刪除），如果有的話，然後再執行適當的命令。  
   
@@ -272,6 +272,6 @@ ms.locfileid: "63425340"
   
 ## <a name="see-also"></a>另請參閱  
  [使用 TableAdapter 更新資料](../data-tools/update-data-by-using-a-tableadapter.md)   
- [準備您的應用程式以接收資料](http://msdn.microsoft.com/library/c17bdb7e-c234-4f2f-9582-5e55c27356ad)  \(機器翻譯\)  
+ [準備您的應用程式以接收資料](https://msdn.microsoft.com/library/c17bdb7e-c234-4f2f-9582-5e55c27356ad)  \(機器翻譯\)  
  [將控制項繫結至 Visual Studio 中的資料](../data-tools/bind-controls-to-data-in-visual-studio.md)   
- [驗證資料](http://msdn.microsoft.com/library/b3a9ee4e-5d4d-4411-9c56-c811f2b4ee7e) \(機器翻譯\)   
+ [驗證資料](https://msdn.microsoft.com/library/b3a9ee4e-5d4d-4411-9c56-c811f2b4ee7e) \(機器翻譯\)   

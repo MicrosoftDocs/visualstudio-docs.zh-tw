@@ -18,12 +18,12 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: db6ea3e2b19b655c3a1ec8dedf60409b8706f3cd
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 7e14acedeab457df10cc011a94f96d7202972eea
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60059028"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65697901"
 ---
 # <a name="extend-the-functionality-of-a-tableadapter"></a>擴充 TableAdapter 的功能
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ ms.locfileid: "60059028"
   
  定義 TableAdapter 的程式碼在 TableAdapter 中對任何變更時重新產生**Dataset 設計工具**，或當精靈修改 TableAdapter 的組態。 若要避免您的程式碼在 TableAdapter 的重新產生期間遭到刪除，請在 TableAdapter 的部分類別檔案中加入程式碼。  
   
- 部分類別可讓多個實體檔案分割為特定類別的程式碼。 如需詳細資訊，請參閱 <<c0> [ 部分](http://msdn.microsoft.com/library/7adaef80-f435-46e1-970a-269fff63b448)或是[partial （類型）](http://msdn.microsoft.com/library/27320743-a22e-4c7b-b0b3-53afe3607334)。  
+ 部分類別可讓多個實體檔案分割為特定類別的程式碼。 如需詳細資訊，請參閱 <<c0> [ 部分](https://msdn.microsoft.com/library/7adaef80-f435-46e1-970a-269fff63b448)或是[partial （類型）](https://msdn.microsoft.com/library/27320743-a22e-4c7b-b0b3-53afe3607334)。  
   
 ## <a name="locate-tableadapters-in-code"></a>在程式碼中找出 Tableadapter  
  雖然 TableAdapters 的設計是以**Dataset 設計工具**，產生的 TableAdapter 類別不是巢狀的類別的<xref:System.Data.DataSet>。 Tableadapter 都位於與 TableAdapter 相關聯的資料集的名稱為基礎的命名空間。 例如，如果您的應用程式包含名為資料集`HRDataSet`，將位於 TableAdapters`HRDataSetTableAdapters`命名空間。 (命名慣例會遵循這個模式：*DatasetName* + `TableAdapters`)。  

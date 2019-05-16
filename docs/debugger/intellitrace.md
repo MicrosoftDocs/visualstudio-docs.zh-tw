@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5f17be088d27e473af0c45a950541fe0f5b77085
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: cf491eae46c22d0804c66ab51071740e42de631c
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62905683"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65678814"
 ---
 # <a name="intellitrace-for-visual-studio-enterprise-c-visual-basic-c"></a>Visual Studio enterprise 的 IntelliTrace (C#，Visual Basic 中， C++)
 
@@ -73,7 +73,7 @@ IntelliTrace 也可協助您偵錯難以重現或在部署中發生的錯誤。 
 
 - Microsoft Test Manager 中的測試工作階段
 
-- 如果是使用 Microsoft Monitoring Agent (獨立執行或搭配 System Center 2012 運作)，則為裝載於 IIS 上的 ASP.NET Web 應用程式或是在部署中執行的 SharePoint 2010 和 SharePoint 2013 應用程式。 請參閱[使用 IntelliTrace 獨立收集器](../debugger/using-the-intellitrace-stand-alone-collector.md)並[監視使用 Microsoft Monitoring Agent](http://technet.microsoft.com/library/dn465153.aspx)。
+- 如果是使用 Microsoft Monitoring Agent (獨立執行或搭配 System Center 2012 運作)，則為裝載於 IIS 上的 ASP.NET Web 應用程式或是在部署中執行的 SharePoint 2010 和 SharePoint 2013 應用程式。 請參閱[使用 IntelliTrace 獨立收集器](../debugger/using-the-intellitrace-stand-alone-collector.md)並[監視使用 Microsoft Monitoring Agent](https://technet.microsoft.com/library/dn465153.aspx)。
 
 下面是一些 IntelliTrace 如何協助您偵錯的範例：
 

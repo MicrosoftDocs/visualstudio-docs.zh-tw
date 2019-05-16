@@ -20,12 +20,12 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: fcac3461d0c6dc1c05671eed1ac641c7da6790ef
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 08480e46ab492acb1c7ab10c8514897721708aba
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62559194"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65692460"
 ---
 # <a name="save-data-in-a-transaction"></a>儲存異動中的資料
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,12 +44,12 @@ ms.locfileid: "62559194"
   
 2. 將專案命名為**SavingDataInATransactionWalkthrough**。  
   
-3. 選取  **Windows 應用程式**，然後選取**確定**。 如需詳細資訊，請參閱 <<c0> [ 用戶端應用程式](http://msdn.microsoft.com/library/2dfb50b7-5af2-4e12-9bbb-c5ade0e39a68)。  
+3. 選取  **Windows 應用程式**，然後選取**確定**。 如需詳細資訊，請參閱 <<c0> [ 用戶端應用程式](https://msdn.microsoft.com/library/2dfb50b7-5af2-4e12-9bbb-c5ade0e39a68)。  
   
      隨即建立 **SavingDataInATransactionWalkthrough** 專案，並將其新增至 [方案總管]。  
   
 ## <a name="create-a-database-data-source"></a>建立資料庫資料來源  
- 此步驟中使用[資料來源組態精靈](http://msdn.microsoft.com/library/c4df7de5-5da0-4064-940c-761dd6d9e28f)來建立資料來源，根據`Customers`和`Orders`Northwind 範例資料庫中的資料表。  
+ 此步驟中使用[資料來源組態精靈](https://msdn.microsoft.com/library/c4df7de5-5da0-4064-940c-761dd6d9e28f)來建立資料來源，根據`Customers`和`Orders`Northwind 範例資料庫中的資料表。  
   
 #### <a name="to-create-the-data-source"></a>若要建立資料來源  
   

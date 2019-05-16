@@ -15,12 +15,12 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: b5543b2d968e96cbd5bf8c9f6dd015b2acf31b4c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c2d9e301b842e0cbd84e23b58310c6afad276b4a
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62536047"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65696759"
 ---
 # <a name="ca1046-do-not-overload-operator-equals-on-reference-types"></a>CA1046:不要多載參考類型上的等號比較運算子
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -64,4 +64,4 @@ ms.locfileid: "62536047"
  [CA1013:多載運算子等於多載加號和減號](../code-quality/ca1013-overload-operator-equals-on-overloading-add-and-subtract.md)
 
 ## <a name="see-also"></a>另請參閱
- <xref:System.Object.Equals%2A?displayProperty=fullName> [等號比較運算子](http://msdn.microsoft.com/library/bc496a91-fefb-4ce0-ab4c-61f09964119a)
+ <xref:System.Object.Equals%2A?displayProperty=fullName> [等號比較運算子](https://msdn.microsoft.com/library/bc496a91-fefb-4ce0-ab4c-61f09964119a)

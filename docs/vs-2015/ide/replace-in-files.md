@@ -16,12 +16,12 @@ caps.latest.revision: 33
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 20e2b63e98969241dc91a24da81d4c170ef98b47
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 72a20b0271542dd914aeb592dda3f0cb446a0000
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63419730"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65698677"
 ---
 # <a name="replace-in-files"></a>檔案中取代
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ ms.locfileid: "63419730"
 [檔案中取代]** 可讓您在一組指定檔案中搜尋程式碼的字串或運算式，並變更部分或所有找到的相符項目。 在 [結果選項] 內選取的 [尋找結果] 視窗中，會列出找到的相符項目與所採取的動作。  
   
 > [!NOTE]
-> 根據您目前使用的設定或版本，您所看到的對話方塊與功能表命令可能會與 [說明] 中描述的不同。 若要變更設定，請從 [工具] 功能表中選擇 [匯入和匯出設定]。 如需詳細資訊，請參閱 [在 Visual Studio 中自訂開發設定](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)  
+> 根據您目前使用的設定或版本，您所看到的對話方塊與功能表命令可能會與 [說明] 中描述的不同。 若要變更設定，請從 [工具] 功能表中選擇 [匯入和匯出設定]。 如需詳細資訊，請參閱 [在 Visual Studio 中自訂開發設定](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)  
   
  您可以使用下列方法之一，在 [檔案中尋找] 視窗中顯示 [檔案中取代]。  
   

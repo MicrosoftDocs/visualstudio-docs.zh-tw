@@ -22,17 +22,17 @@ caps.latest.revision: 31
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 3e2140f15000b3ba270605af29ee36665c0137ee
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: ad496bb55bae8d9e08035408059e454430ab4e39
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60092970"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65705542"
 ---
 # <a name="walkthrough-debugging-a-parallel-application"></a>逐步解說：偵錯平行應用程式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本逐步解說顯示如何使用 [平行工作] 和 [平行堆疊] 視窗來偵錯平行應用程式。 這些視窗可協助您了解，並確認使用的程式碼的執行階段行為[Task Parallel Library (TPL)](http://msdn.microsoft.com/library/b8f99f43-9104-45fd-9bff-385a20488a23)或[並行執行階段](http://msdn.microsoft.com/library/874bc58f-8dce-483e-a3a1-4dcc9e52ed2c)。 本逐步解說提供具有內建中斷點的範例程式碼。 在程式碼中斷之後，本逐步解說會顯示如何使用 [平行工作] 和 [平行堆疊] 視窗來檢查程式碼。  
+本逐步解說顯示如何使用 [平行工作] 和 [平行堆疊] 視窗來偵錯平行應用程式。 這些視窗可協助您了解，並確認使用的程式碼的執行階段行為[Task Parallel Library (TPL)](https://msdn.microsoft.com/library/b8f99f43-9104-45fd-9bff-385a20488a23)或[並行執行階段](https://msdn.microsoft.com/library/874bc58f-8dce-483e-a3a1-4dcc9e52ed2c)。 本逐步解說提供具有內建中斷點的範例程式碼。 在程式碼中斷之後，本逐步解說會顯示如何使用 [平行工作] 和 [平行堆疊] 視窗來檢查程式碼。  
   
  本逐步解說教導下列工作：  
   
@@ -308,7 +308,7 @@ ms.locfileid: "60092970"
  [偵錯多執行緒應用程式](../debugger/walkthrough-debugging-a-parallel-application.md)   
  [偵錯工具基礎](../debugger/debugger-basics.md)   
  [偵錯 Managed 程式碼](../debugger/debugging-managed-code.md)   
- [平行程式設計](http://msdn.microsoft.com/library/4d83c690-ad2d-489e-a2e0-b85b898a672d)   
- [並行執行階段](http://msdn.microsoft.com/library/874bc58f-8dce-483e-a3a1-4dcc9e52ed2c)   
+ [平行程式設計](https://msdn.microsoft.com/library/4d83c690-ad2d-489e-a2e0-b85b898a672d)   
+ [並行執行階段](https://msdn.microsoft.com/library/874bc58f-8dce-483e-a3a1-4dcc9e52ed2c)   
  [使用平行堆疊視窗](../debugger/using-the-parallel-stacks-window.md)   
  [使用工作視窗](../debugger/using-the-tasks-window.md)

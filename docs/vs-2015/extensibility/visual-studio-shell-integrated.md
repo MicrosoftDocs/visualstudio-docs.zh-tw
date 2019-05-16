@@ -11,12 +11,12 @@ ms.assetid: 0b40d495-f17f-4bb9-ace8-b365a7172784
 caps.latest.revision: 26
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 736031f1de24144f7b5f68ed44710e0c894df41a
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 664363740737eb72213b4818b104aa14c3667a14
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63445734"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65690933"
 ---
 # <a name="visual-studio-shell-integrated"></a>Visual Studio Shell （整合模式）
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -79,4 +79,4 @@ Visual Studio 整合式 shell 包含整合式的開發環境 (IDE)、 偵錯工�
 - 沒有 Visual Studio 語言，或其相關聯的專案範本或專案項目範本，會包含在整合式 shell 中。 任何特定語言的實作其他功能不會包含，範例 Visual Basic 程式碼片段。  
   
 ## <a name="see-also"></a>另請參閱  
- [擴充 Visual Studio 概觀](http://msdn.microsoft.com/library/3e9078d7-2763-4cc4-8e20-fac69d747f59)
+ [擴充 Visual Studio 概觀](https://msdn.microsoft.com/library/3e9078d7-2763-4cc4-8e20-fac69d747f59)

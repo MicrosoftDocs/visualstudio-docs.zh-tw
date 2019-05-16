@@ -13,12 +13,12 @@ caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 69fac0b8ef5c17a8d66d32730e189f2813aa1158
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 9176fe7bc7f9824610b7a77f1e1ef3b374b69ef3
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58939585"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65701719"
 ---
 # <a name="properties-of-compartment-shapes"></a>區間圖案的屬性
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -60,4 +60,4 @@ ms.locfileid: "58939585"
 |說明關鍵字|用來編製索引為此圖形的 F1 說明關鍵字。|\<無>|  
   
 ## <a name="see-also"></a>另請參閱  
- [Domain-Specific Language Tools Glossary](http://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa) (特定領域語言工具字彙表)
+ [Domain-Specific Language Tools Glossary](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa) (特定領域語言工具字彙表)

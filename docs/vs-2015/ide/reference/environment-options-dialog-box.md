@@ -12,12 +12,12 @@ caps.latest.revision: 33
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: dcfc73feb762ecc50412ca2dc67818e2fb60a64d
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 5880dbeb9f3f49f990a923fd48c27dd6167d59c8
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63441718"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65692204"
 ---
 # <a name="environment-options-dialog-box"></a>環境選項對話方塊
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -25,12 +25,12 @@ ms.locfileid: "63441718"
 您可以使用 [選項] 對話方塊之 [環境] 資料夾內的頁面，設定整合式開發環境 (IDE) 會如何顯示及作用某些項目。 您可以在功能表列上依序選擇 [工具] 和 [選項]，然後選取 [環境]，以存取 [環境] 頁面。  
   
 > [!NOTE]
-> 根據您目前使用的設定和 Visual Studio 版本而定，出現在電腦上的對話方塊和功能表命令可能會與 [說明] 中所描述的不相同。 若要變更設定，請從 [ **工具** ] 功能表中選取 [ **匯入和匯出設定** ]。 如需詳細資訊，請參閱 [在 Visual Studio 中自訂開發設定](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)  
+> 根據您目前使用的設定和 Visual Studio 版本而定，出現在電腦上的對話方塊和功能表命令可能會與 [說明] 中所描述的不相同。 若要變更設定，請從 [ **工具** ] 功能表中選取 [ **匯入和匯出設定** ]。 如需詳細資訊，請參閱 [在 Visual Studio 中自訂開發設定](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)  
   
 |如需各項作業的詳細資訊，|請參閱|  
 |----------------------------------|---------|  
 |自訂視窗、功能表和其他 IDE 項目的外觀和行為。|[選項對話方塊、環境、一般](../../ide/reference/general-environment-options-dialog-box.md)|  
-|指定增益集的安全性。|[增益集安全性、環境、選項對話方塊](http://msdn.microsoft.com/library/f95aa7af-70a5-4323-abe5-91bd6d264f4e)|  
+|指定增益集的安全性。|[增益集安全性、環境、選項對話方塊](https://msdn.microsoft.com/library/f95aa7af-70a5-4323-abe5-91bd6d264f4e)|  
 |變更檔案自動儲存和還原的設定值。|[選項對話方塊、環境、自動回復](../../ide/reference/autorecover-environment-options-dialog-box.md)|  
 |建立包括其他檔案行為的文件顯示和管理設定。|[選項對話方塊、環境、文件](../../ide/reference/documents-environment-options-dialog-box.md)|  
 |自訂更新如何發生，以及如何管理擴充功能。|[選項對話方塊、環境、延伸模組和更新](../../ide/reference/extensions-and-updates-environment-options-dialog-box.md)|  

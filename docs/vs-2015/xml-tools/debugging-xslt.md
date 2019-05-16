@@ -9,12 +9,12 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 3e190af751e125a65e4e6e3ed56166aa39f631c1
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 4ba095b9af87a36a1957ec94496f4445f0ed2bb7
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "59000730"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65697042"
 ---
 # <a name="debug-xslt"></a>偵錯 XSLT
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -54,5 +54,5 @@ ms.locfileid: "59000730"
  [Visual Studio 偵錯](../debugger/debugging-in-visual-studio.md)  
  簡介 Visual Studio 偵錯工具。  
   
- [XSLT 參考](http://msdn.microsoft.com/678bcd68-cbbb-4be5-9dd2-40f94488a1cf)  
+ [XSLT 參考](https://msdn.microsoft.com/678bcd68-cbbb-4be5-9dd2-40f94488a1cf)  
  提供 XSLT 項目及函數的參考材料。

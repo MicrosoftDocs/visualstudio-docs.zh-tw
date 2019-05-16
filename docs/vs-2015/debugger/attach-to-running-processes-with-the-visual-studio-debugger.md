@@ -29,12 +29,12 @@ caps.latest.revision: 62
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: c7e352dcaccd328b4794389726277701014da7be
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 083c866b10fac257cacf954dfccbcb3875aec53a
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63436816"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65702633"
 ---
 # <a name="attach-to-running-processes-with-the-visual-studio-debugger"></a>使用 Visual Studio Debugger 附加至執行中處理序
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -72,7 +72,7 @@ ms.locfileid: "63436816"
 ## <a name="BKMK_Attach_to_a_process_on_a_remote_computer"></a> 附加至遠端電腦上的處理序
  若要附加至處理序，您必須知道處理序名稱 (請參閱[常見偵錯案例](#BKMK_Scenarios)的幾個常見的程序名稱)。 如需更完整的已部署至 IIS 的 ASP.NET 應用程式的詳細指引，請參閱[在執行 IIS 的遠端電腦上的遠端偵錯 ASP.NET](../debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md)。 若為其他應用程式，您或許可在 [工作管理員] 中找到處理序名稱。
 
- 使用 [附加至處理序]  對話方塊時，您可以選取已針對遠端偵錯設定的其他電腦。 如需詳細資訊，請參閱 <<c0> [ 遠端偵錯](http://msdn.microsoft.com/library/90f45630-0d26-4698-8c1f-63f85a12db9c)。 當您選取了遠端電腦時，您可以檢視該電腦上正在執行的可使用處理序清單，並附加至其中一個或多個處理序進行偵錯。
+ 使用 [附加至處理序]  對話方塊時，您可以選取已針對遠端偵錯設定的其他電腦。 如需詳細資訊，請參閱 <<c0> [ 遠端偵錯](https://msdn.microsoft.com/library/90f45630-0d26-4698-8c1f-63f85a12db9c)。 當您選取了遠端電腦時，您可以檢視該電腦上正在執行的可使用處理序清單，並附加至其中一個或多個處理序進行偵錯。
 
  **若要選取遠端電腦：**
 
@@ -106,7 +106,7 @@ ms.locfileid: "63436816"
 
 ## <a name="additional-info"></a>其他資訊
 
-偵錯時，您可以附加至多個程式，但是無論在任何時間，偵錯工具一次只能有一個使用中程式。 您可以在 [偵錯位置]  工具列或 [處理序]  視窗中設定使用中的程式。 如需詳細資訊，請參閱[如何：設定目前的處理序](http://msdn.microsoft.com/7e1d7fa5-0e40-44cf-8c41-d3dba31c969e)。
+偵錯時，您可以附加至多個程式，但是無論在任何時間，偵錯工具一次只能有一個使用中程式。 您可以在 [偵錯位置]  工具列或 [處理序]  視窗中設定使用中的程式。 如需詳細資訊，請參閱[如何：設定目前的處理序](https://msdn.microsoft.com/7e1d7fa5-0e40-44cf-8c41-d3dba31c969e)。
 
 如果您嘗試附加至未受信任的使用者帳戶所擁有的處理序，會出現安全性警告對話方塊確認訊息。 如需詳細資訊，請參閱[安全性警告：附加至未受信任的使用者所擁有的處理序可能會造成危險。如果下列資訊看起來有問題，或您不確定，不會附加至這個處理序](/visualstudio/debugger/security-warning-attaching-to-a-process-owned-by-an-untrusted-user?view=vs-2015)。
 
@@ -136,7 +136,7 @@ ms.locfileid: "63436816"
 > 若要附加至以 JavaScript 撰寫的 Windows 通用應用程式，您必須先啟用應用程式的偵錯功能。 請參閱 Windows 開發人員中心的 [Attach the debugger](../debugger/start-a-debugging-session-for-store-apps-in-visual-studio-javascript.md#BKMK_Attach_the_debugger) 。
 
 > [!NOTE]
-> 偵錯工具若要附加至以 C++ 撰寫的程式碼，該程式碼必須發出 `DebuggableAttribute`。 您可以使用 [/ASSEMBLYDEBUG](http://msdn.microsoft.com/library/94443af3-470c-41d7-83a0-7434563d7982) 連結器選項連結，將其自動加入程式碼。
+> 偵錯工具若要附加至以 C++ 撰寫的程式碼，該程式碼必須發出 `DebuggableAttribute`。 您可以使用 [/ASSEMBLYDEBUG](https://msdn.microsoft.com/library/94443af3-470c-41d7-83a0-7434563d7982) 連結器選項連結，將其自動加入程式碼。
 
 ## <a name="what-debugger-features-can-i-use"></a>可以使用哪些偵錯工具功能？
 

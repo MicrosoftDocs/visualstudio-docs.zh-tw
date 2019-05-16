@@ -17,12 +17,12 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 70d640b97bae15575689d41c38bd774507276906
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: dc0cf5d488c81b119d5a50464ae60ef44f233d7a
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63436881"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65701779"
 ---
 # <a name="property-pages-javascript"></a>JavaScript、屬性頁
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -39,10 +39,10 @@ ms.locfileid: "63436881"
  您可以使用下列選項，來選取要顯示或修改的組態和平台。  
   
  **組態**  
- 指定要顯示或修改的組態設定。 這些設定包括 [偵錯]\(預設值)、[發行]、[所有組態] 或使用者定義的組態。 如需詳細資訊，請參閱[偵錯和發行專案組態](http://msdn.microsoft.com/0440b300-0614-4511-901a-105b771b236e)。  
+ 指定要顯示或修改的組態設定。 這些設定包括 [偵錯]\(預設值)、[發行]、[所有組態] 或使用者定義的組態。 如需詳細資訊，請參閱[偵錯和發行專案組態](https://msdn.microsoft.com/0440b300-0614-4511-901a-105b771b236e)。  
   
  **平台**  
- 指定要顯示或修改的平台設定。 這些設定包括 [任何 CPU]\([!INCLUDE[win8_appname_long](../../includes/win8-appname-long-md.md)] 應用程式的預設值)、[x64]、[ARM]、[x86] 或使用者定義的平台。 如需詳細資訊，請參閱[偵錯和發行專案組態](http://msdn.microsoft.com/0440b300-0614-4511-901a-105b771b236e)。  
+ 指定要顯示或修改的平台設定。 這些設定包括 [任何 CPU]\([!INCLUDE[win8_appname_long](../../includes/win8-appname-long-md.md)] 應用程式的預設值)、[x64]、[ARM]、[x86] 或使用者定義的平台。 如需詳細資訊，請參閱[偵錯和發行專案組態](https://msdn.microsoft.com/0440b300-0614-4511-901a-105b771b236e)。  
   
 ## <a name="general-page"></a>一般頁面  
  您可以使用下列選項，來設定專案的一般屬性。  
@@ -53,7 +53,7 @@ ms.locfileid: "63436881"
  **輸出路徑**  
  指定專案組態的輸出檔位置。 路徑是相對的；如果您輸入絕對路徑，則會在專案中儲存絕對路徑。 預設路徑為 bin\Debug。  
   
- 當您使用簡化的組建組態時，專案系統會決定要建置偵錯或發行版本。 不論您指定的 [輸出路徑] 為何，按一下 [偵錯]、[開始偵錯] (或按 F5) 時，組建均會放在偵錯位置。 但是，[建置] 功能表上的 [建置方案] 命令卻會將其放在您指定的位置。 若要啟用進階組建組態，請在功能表列上選擇 [工具]、[選項]。 在 [選項] 對話方塊中，展開 [專案和方案]，選取 [一般]，然後清除 [顯示進階組建組態] 核取方塊。 這麼做可以讓您手動控制所有組態值，以及建置的是偵錯或發行版本。 如需詳細資訊，請參閱[NIB:一般、 專案和方案、 選項對話方塊](http://msdn.microsoft.com/8f8e37e8-b28d-4b13-bfeb-ea4d3312aeca)。  
+ 當您使用簡化的組建組態時，專案系統會決定要建置偵錯或發行版本。 不論您指定的 [輸出路徑] 為何，按一下 [偵錯]、[開始偵錯] (或按 F5) 時，組建均會放在偵錯位置。 但是，[建置] 功能表上的 [建置方案] 命令卻會將其放在您指定的位置。 若要啟用進階組建組態，請在功能表列上選擇 [工具]、[選項]。 在 [選項] 對話方塊中，展開 [專案和方案]，選取 [一般]，然後清除 [顯示進階組建組態] 核取方塊。 這麼做可以讓您手動控制所有組態值，以及建置的是偵錯或發行版本。 如需詳細資訊，請參閱[NIB:一般、 專案和方案、 選項對話方塊](https://msdn.microsoft.com/8f8e37e8-b28d-4b13-bfeb-ea4d3312aeca)。  
   
  **預設語言**  
  指定專案的預設語言。 系統會將使用者的慣用語言指定為控制台 [時鐘、語言和區域] 中選取的語言。 藉由指定專案預設語言，可確保當使用者的慣用語言不符合應用程式所提供的語言資源時，會使用指定的預設語言資源。  

@@ -11,17 +11,17 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a7a27b2744247bba78575b0387a958bda5990d8c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: c839350dd37f71d4f3368e077f4d9afe1b2bb2f4
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60071612"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65701942"
 ---
 # <a name="walkthrough-binding-to-data-in-xaml-designer"></a>逐步解說：繫結至 XAML 設計工具中的資料
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-在 XAML 設計工具中，您可以使用畫板和 [屬性] 視窗，設定資料繫結屬性。 本逐步解說中的範例示範如何將資料繫結至控制項。 具體來說，本逐步解說示範如何建立具有 [DependencyProperty](http://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.dependencyproperty.aspx) 且名為 `ItemCount` 的簡單購物車類別，然後將 `ItemCount` 屬性繫結至 [TextBlock](http://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.controls.textblock.aspx) 控制項的 **Text** 屬性。  
+在 XAML 設計工具中，您可以使用畫板和 [屬性] 視窗，設定資料繫結屬性。 本逐步解說中的範例示範如何將資料繫結至控制項。 具體來說，本逐步解說示範如何建立具有 [DependencyProperty](https://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.dependencyproperty.aspx) 且名為 `ItemCount` 的簡單購物車類別，然後將 `ItemCount` 屬性繫結至 [TextBlock](https://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.controls.textblock.aspx) 控制項的 **Text** 屬性。  
   
 ### <a name="to-create-a-class-to-use-as-a-data-source"></a>若要建立類別以做為資料來源  
   
@@ -66,7 +66,7 @@ ms.locfileid: "60071612"
     End Class  
     ```  
   
-     上述程式碼會使用 [PropertyMetadata](http://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.propertymetadata.aspx) 物件將預設項目計數的值設為 0。  
+     上述程式碼會使用 [PropertyMetadata](https://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.propertymetadata.aspx) 物件將預設項目計數的值設為 0。  
   
 5. 在 [檔案] 功能表上，依序選擇 [建置] 和 [建置方案]。  
   
@@ -74,7 +74,7 @@ ms.locfileid: "60071612"
   
 1. 在方案總管中，開啟 MainWindow.xaml 的捷徑功能表，然後選擇 [設計工具檢視]。  
   
-2. 在 [工具箱] 中，選擇 [Grid](http://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.controls.grid.aspx) 控制項，以將它新增至表單。  
+2. 在 [工具箱] 中，選擇 [Grid](https://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.controls.grid.aspx) 控制項，以將它新增至表單。  
   
 3. 選取 `Grid`，然後在 [屬性] 視窗中，選擇 **DataContext** 屬性旁邊的 [新增] 按鈕。  
   
@@ -100,4 +100,4 @@ ms.locfileid: "60071612"
   
 ## <a name="see-also"></a>另請參閱  
  [使用 XAML 設計工具建立 UI](../designers/creating-a-ui-by-using-xaml-designer-in-visual-studio.md)   
- [NIB：加入值轉換器對話方塊](http://msdn.microsoft.com/c5f3d110-a541-4b55-8bca-928f77778af8)
+ [NIB：加入值轉換器對話方塊](https://msdn.microsoft.com/c5f3d110-a541-4b55-8bca-928f77778af8)

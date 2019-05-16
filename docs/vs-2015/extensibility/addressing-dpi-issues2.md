@@ -6,12 +6,12 @@ ms.assetid: 359184aa-f5b6-4b6c-99fe-104655b3a494
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 70b20a463563c54ce0b8ac81b9acab042b0389eb
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 9b8bc5963ba9263d72800cc473cfa56324884ace
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63443957"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65699261"
 ---
 # <a name="addressing-dpi-issues"></a>處理 DPI 問題
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,7 +28,7 @@ ms.locfileid: "63443957"
   
 - 在超過 280 ppi （從 Windows 8.1 S14) 的新裝置上 Windows 可以自動調整設定為 250%內容。  
   
-  Windows 具有處理向上調整 UI 的方式，利用增加的像素計數。 應用程式選擇加入此系統本身宣告為 「 系統 DPI 感知 」。 請不要這樣的應用程式系統相應增加。 這會導致整個應用程式是一致的像素延伸了 「 模糊 」 的使用者體驗。 例如:   
+  Windows 具有處理向上調整 UI 的方式，利用增加的像素計數。 應用程式選擇加入此系統本身宣告為 「 系統 DPI 感知 」。 請不要這樣的應用程式系統相應增加。 這會導致整個應用程式是一致的像素延伸了 「 模糊 」 的使用者體驗。 例如：  
   
   ![DPI 問題模糊](../extensibility/media/dpi-issues-fuzzy.png "DPI 問題模糊")  
   
@@ -175,7 +175,7 @@ xmlns:vsui="clr-namespace:Microsoft.VisualStudio.PlatformUI;assembly=Microsoft.V
   
  步驟 1：Prescale 200%、 300%，並使用 NearestNeighbor 等等的映像。  
   
- Prescale 使用任一個套用的繫結，或使用 XAML 標記延伸的轉換子的映像。 例如：  
+ Prescale 使用任一個套用的繫結，或使用 XAML 標記延伸的轉換子的映像。 例如:   
   
 ```xaml  
 <vsui:DpiPrescaleImageSourceConverter x:Key="DpiPrescaleImageSourceConverter" />  
@@ -228,7 +228,7 @@ xmlns:vsui="clr-namespace:Microsoft.VisualStudio.PlatformUI;assembly=Microsoft.V
 ## <a name="enabling-hdpi-support-to-the-weboc"></a>啟用以 WebOC 的 HDPI 支援  
  根據預設，HDPI 偵測和支援功能，請勿啟用 WebOC 控制項 （例如在 WPF 中或 IWebBrowser2 介面 WebBrowser 控制項）。 結果會是內嵌的控制項與太小而高解析度的顯示器上顯示內容。 以下說明如何啟用特定 web WebOC 執行個體的高 DPI 支援。  
   
- 實作 IDocHostUIHandler 介面 (請參閱 MSDN 文章[IDocHostUIHandler](http://msdn.microsoft.com/library/aa753260.aspx)介面):  
+ 實作 IDocHostUIHandler 介面 (請參閱 MSDN 文章[IDocHostUIHandler](https://msdn.microsoft.com/library/aa753260.aspx)介面):  
   
 ```idl  
 [ComImport, InterfaceType(ComInterfaceType.InterfaceIsIUnknown),  
@@ -307,7 +307,7 @@ public interface IDocHostUIHandler
     }   
 ```  
   
- （選擇性） 實作 ICustomDoc 介面 (請參閱 MSDN 文章[ICustomDoc](http://msdn.microsoft.com/library/aa753272.aspx)介面):  
+ （選擇性） 實作 ICustomDoc 介面 (請參閱 MSDN 文章[ICustomDoc](https://msdn.microsoft.com/library/aa753272.aspx)介面):  
   
 ```idl  
 [InterfaceType(ComInterfaceType.InterfaceIsIUnknown),  

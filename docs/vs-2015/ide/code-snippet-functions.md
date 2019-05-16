@@ -13,22 +13,22 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 95ee6a99a069f81a2e63c5bbe11186afaf773423
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 5a7a7522d0c3ddab224e19150f47120b92b2dd32
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54790003"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65701532"
 ---
 # <a name="code-snippet-functions"></a>程式碼片段函式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-有三個函式可用來與 [!INCLUDE[csprcs](../includes/csprcs-md.md)] 程式碼片段搭配使用。 函式指定於程式碼片段的 [Function](http://msdn.microsoft.com/572c5549-5821-4e15-8ecd-0fa86c1c65df) 項目中。 如需建立程式碼片段的資訊，請參閱[程式碼片段](../ide/code-snippets.md)。  
+有三個函式可用來與 [!INCLUDE[csprcs](../includes/csprcs-md.md)] 程式碼片段搭配使用。 函式指定於程式碼片段的 [Function](https://msdn.microsoft.com/572c5549-5821-4e15-8ecd-0fa86c1c65df) 項目中。 如需建立程式碼片段的資訊，請參閱[程式碼片段](../ide/code-snippets.md)。  
   
 ## <a name="functions"></a>函式  
  下表描述可用於與程式碼片段中的 `Function` 項目搭配使用的函式。  
   
-|功能|描述|語言|  
+|功能|說明|語言|  
 |--------------|-----------------|--------------|  
 |`GenerateSwitchCases(` `EnumerationLiteral` `)`|針對 `EnumerationLiteral` 參數所指定列舉的成員，產生 switch 陳述式和一組 case 陳述式。 `EnumerationLiteral` 參數必須是列舉常值或列舉類型的參考。|[!INCLUDE[csprcs](../includes/csprcs-md.md)]|  
 |`ClassName()`|傳回包含已插入程式碼片段的類別名稱。|[!INCLUDE[csprcs](../includes/csprcs-md.md)]|  
@@ -154,5 +154,5 @@ ms.locfileid: "54790003"
 ```  
   
 ## <a name="see-also"></a>請參閱  
- [Function 項目 (Intellisense 程式碼片段)](http://msdn.microsoft.com/572c5549-5821-4e15-8ecd-0fa86c1c65df)   
+ [Function 項目 (Intellisense 程式碼片段)](https://msdn.microsoft.com/572c5549-5821-4e15-8ecd-0fa86c1c65df)   
  [程式碼片段結構描述參考](../ide/code-snippets-schema-reference.md)

@@ -15,12 +15,12 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: e444519c5a6d6d1547b782006d063e90d4a3b976
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 8df0404657b6740c27544292dc101a6030a6563f
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58944663"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65691921"
 ---
 # <a name="ca1414-mark-boolean-pinvoke-arguments-with-marshalas"></a>CA1414:以 MarshalAs 標記布林 P/Invoke 引數
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,7 +38,7 @@ ms.locfileid: "58944663"
 ## <a name="rule-description"></a>規則描述
  平台叫用方法存取 unmanaged 程式碼，並使用定義`Declare`中的關鍵字[!INCLUDE[vbprvb](../includes/vbprvb-md.md)]或<xref:System.Runtime.InteropServices.DllImportAttribute?displayProperty=fullName>。 <xref:System.Runtime.InteropServices.MarshalAsAttribute> 指定用來轉換資料類型，managed 和 unmanaged 程式碼之間封送處理行為。 許多簡單的資料類型，例如<xref:System.Byte?displayProperty=fullName>和<xref:System.Int32?displayProperty=fullName>、 unmanaged 程式碼中有單一的表示法，並不需要指定其封送處理行為; common language runtime 會自動提供正確的行為。
 
- <xref:System.Boolean>資料類型在 unmanaged 程式碼中有多種表示。 當<xref:System.Runtime.InteropServices.MarshalAsAttribute>未指定，預設值封送處理行為<xref:System.Boolean>資料類型是<xref:System.Runtime.InteropServices.UnmanagedType?displayProperty=fullName>。 這是 32 位元整數，也就是不適合所有情況。 Unmanaged 方法需要布林值表示應該決定，並對應到適當<xref:System.Runtime.InteropServices.UnmanagedType?displayProperty=fullName>。 UnmanagedType.Bool 是 Win32 BOOL 類型，這一律是 4 個位元組。 應該使用 c + + 的 UnmanagedType.U1`bool`或其他 1 個位元組類型。 如需詳細資訊，請參閱 <<c0> [ 預設為布林值類型封送處理](http://msdn.microsoft.com/d4c00537-70f7-4ca6-8197-bfc1ec037ff9)。
+ <xref:System.Boolean>資料類型在 unmanaged 程式碼中有多種表示。 當<xref:System.Runtime.InteropServices.MarshalAsAttribute>未指定，預設值封送處理行為<xref:System.Boolean>資料類型是<xref:System.Runtime.InteropServices.UnmanagedType?displayProperty=fullName>。 這是 32 位元整數，也就是不適合所有情況。 Unmanaged 方法需要布林值表示應該決定，並對應到適當<xref:System.Runtime.InteropServices.UnmanagedType?displayProperty=fullName>。 UnmanagedType.Bool 是 Win32 BOOL 類型，這一律是 4 個位元組。 應該用於 UnmanagedType.U1 C++ `bool`或其他 1 個位元組類型。 如需詳細資訊，請參閱 <<c0> [ 預設為布林值類型封送處理](https://msdn.microsoft.com/d4c00537-70f7-4ca6-8197-bfc1ec037ff9)。
 
 ## <a name="how-to-fix-violations"></a>如何修正違規
  若要修正此規則的違規情形，套用<xref:System.Runtime.InteropServices.MarshalAsAttribute>至<xref:System.Boolean>參數或傳回值。 將屬性的值設定為適當<xref:System.Runtime.InteropServices.UnmanagedType>。
@@ -59,4 +59,4 @@ ms.locfileid: "58944663"
  [CA2101： 必須指定的 P/Invoke 字串引數封送處理](../code-quality/ca2101-specify-marshaling-for-p-invoke-string-arguments.md)
 
 ## <a name="see-also"></a>另請參閱
- <xref:System.Runtime.InteropServices.UnmanagedType?displayProperty=fullName> [預設值的布林值類型封送處理](http://msdn.microsoft.com/d4c00537-70f7-4ca6-8197-bfc1ec037ff9)[與相互操作 Unmanaged 程式碼](http://msdn.microsoft.com/library/ccb68ce7-b0e9-4ffb-839d-03b1cd2c1258)
+ <xref:System.Runtime.InteropServices.UnmanagedType?displayProperty=fullName> [預設值的布林值類型封送處理](https://msdn.microsoft.com/d4c00537-70f7-4ca6-8197-bfc1ec037ff9)[與相互操作 Unmanaged 程式碼](https://msdn.microsoft.com/library/ccb68ce7-b0e9-4ffb-839d-03b1cd2c1258)

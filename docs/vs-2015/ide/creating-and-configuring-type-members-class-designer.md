@@ -30,12 +30,12 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: d443a38750904df26fdfffc65104bcde31c8d6fc
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 93d001af54a84bdb2cd2ec00f3e8fb80174c6436
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63437597"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65701217"
 ---
 # <a name="creating-and-configuring-type-members-class-designer"></a>建立和設定類型成員 (類別設計工具)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -53,7 +53,7 @@ ms.locfileid: "63437597"
 |模組 (僅限 VB)|方法、屬性、欄位、事件、建構函式、常數|  
   
 > [!NOTE]
-> 使用自動實作屬性 (僅限 C#) 可在屬性的 get 與 set 存取子不需要額外邏輯時，讓屬性宣告更為簡明。 若要顯示完整簽章，請從 [類別圖表] 功能表中依序選擇 [變更成員格式] 和 [顯示完整簽章]。 如需自動實作屬性的詳細資訊，請參閱[自動實作的屬性](http://msdn.microsoft.com/library/aa55fa97-ccec-431f-b5e9-5ac789fd32b7)。  
+> 使用自動實作屬性 (僅限 C#) 可在屬性的 get 與 set 存取子不需要額外邏輯時，讓屬性宣告更為簡明。 若要顯示完整簽章，請從 [類別圖表] 功能表中依序選擇 [變更成員格式] 和 [顯示完整簽章]。 如需自動實作屬性的詳細資訊，請參閱[自動實作的屬性](https://msdn.microsoft.com/library/aa55fa97-ccec-431f-b5e9-5ac789fd32b7)。  
   
 ## <a name="common-tasks"></a>一般工作  
   
@@ -131,7 +131,7 @@ ms.locfileid: "63437597"
      **注意：** 您也可以使用鍵盤快速鍵來建立成員。 如需詳細資訊，請參閱[類別圖表和類別細節視窗中的鍵盤和滑鼠捷徑 (類別設計工具)](../ide/keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window-class-designer.md)。  
   
 ## <a name="ModifyTypeMembers"></a> 修改類型成員  
- [類別設計工具] 可讓您修改圖表中所顯示類型的成員。 只要在類別圖中顯示的類型並非唯讀，您都可以修改其成員。 (請參閱[顯示唯讀資訊 (類別設計工具)](http://msdn.microsoft.com/33e2d3a9-1668-4d10-ae56-fa09b3156e0a)。)您可以在設計介面、[屬性] 視窗和 [類別細節] 視窗上使用就地編輯，以修改類型成員。  
+ [類別設計工具] 可讓您修改圖表中所顯示類型的成員。 只要在類別圖中顯示的類型並非唯讀，您都可以修改其成員。 (請參閱[顯示唯讀資訊 (類別設計工具)](https://msdn.microsoft.com/33e2d3a9-1668-4d10-ae56-fa09b3156e0a)。)您可以在設計介面、[屬性] 視窗和 [類別細節] 視窗上使用就地編輯，以修改類型成員。  
   
  所有在 [類別細節] 視窗中顯示的成員，都代表在類別圖中的類型成員。 成員分成四種類型：方法、屬性、欄位和事件。  
   
@@ -263,7 +263,7 @@ ms.locfileid: "63437597"
   
  [類別細節] 視窗中的儲存格幾乎全部都可以編輯，只有少數例外：  
   
-- 例如，當類型位於參考組件中時，整個類型會處於唯讀狀態 (請參閱[顯示唯讀資訊 (類別設計工具)](http://msdn.microsoft.com/33e2d3a9-1668-4d10-ae56-fa09b3156e0a))。當您在 [類別細節] 中選擇圖案時，[類別細節] 視窗會以唯讀狀態顯示圖案的詳細資訊。  
+- 例如，當類型位於參考組件中時，整個類型會處於唯讀狀態 (請參閱[顯示唯讀資訊 (類別設計工具)](https://msdn.microsoft.com/33e2d3a9-1668-4d10-ae56-fa09b3156e0a))。當您在 [類別細節] 中選擇圖案時，[類別細節] 視窗會以唯讀狀態顯示圖案的詳細資訊。  
   
 - 索引子 (Indexer) 的名稱會是唯讀的，而其他項目 (類型、修飾詞 (Modifier)、摘要) 都可以編輯。  
   

@@ -13,12 +13,12 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 287e9362162c00a5292815ebacfb8047b2a0bb7b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 7d669d01339b92c64cfe03ccb3ae897a1816aeac
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58945584"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65701752"
 ---
 # <a name="properties-of-diagrams"></a>圖表的屬性
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -50,4 +50,4 @@ ms.locfileid: "58945584"
 |說明關鍵字|用來編製索引的這個圖表 F1 說明關鍵字。|\<無>|  
   
 ## <a name="see-also"></a>另請參閱  
- [Domain-Specific Language Tools Glossary](http://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa) (特定領域語言工具字彙表)
+ [Domain-Specific Language Tools Glossary](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa) (特定領域語言工具字彙表)

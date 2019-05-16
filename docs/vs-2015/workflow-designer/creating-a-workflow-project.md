@@ -13,12 +13,12 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: cdf4d9657832c2dc1e7691eed5c334e770de5700
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d91d84b6a763dd3fecfac8a030f8514c91e5ac61
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62976990"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65704720"
 ---
 # <a name="creating-a-workflow-project"></a>建立工作流程專案
 工作流程、[!INCLUDE[indigo1](../includes/indigo1-md.md)]、工作流程服務、自訂活動與自訂活動設計工具都可使用 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 專案範本建立。 本節描述如何使用 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 中提供的專案範本來建立程式庫和應用程式。  
@@ -44,7 +44,7 @@ ms.locfileid: "62976990"
  描述如何將其他工作流程活動或設計工具以及其他 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 項目 (如程式碼活動) 加入至現有的專案。  
   
 ## <a name="related-sections"></a>相關章節  
- [設計工作流程](http://msdn.microsoft.com/library/41f727b5-b142-4c1b-b046-492b96135ae6)  
+ [設計工作流程](https://msdn.microsoft.com/library/41f727b5-b142-4c1b-b046-492b96135ae6)  
   
 ## <a name="see-also"></a>另請參閱  
  [使用工作流程設計工具](../workflow-designer/using-the-workflow-designer.md)

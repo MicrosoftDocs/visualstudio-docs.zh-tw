@@ -9,12 +9,12 @@ caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 25c11d0ab2a136c82956ffa1ed0f90da534acb87
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 2754a8ea663d888bb8ba2e2ff0276911976ff0af
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54802625"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65696628"
 ---
 # <a name="visual-c-intellisense"></a>Visual C++ Intellisense
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -87,7 +87,7 @@ ms.locfileid: "54802625"
 - 第 12 行會在識別碼 BYE 具有紫色波浪線；此識別項不會在目前選取的非使用中 Android.NativeActivity 專案中定義。  
   
 ## <a name="single-file-intellisense"></a>單一檔案 IntelliSense  
- 當您開啟任何專案以外的單一檔案時，仍可使用 IntelliSense。 您可以移至 [文字編輯器]、[C/C++]、[進階] 開啟或關閉 IntelliSense 功能，以便啟用或停用特定功能。 若要針對不是專案一部分的單一檔案設定 IntelliSense，請尋找 [進階] 區段中的 [非專案檔案的 IntelliSense 及瀏覽功能]。 請參閱 [Visual C++ 導覽](http://msdn.microsoft.com/499cb66f-7df1-45d6-8b6b-33d94fd1f17c)。  
+ 當您開啟任何專案以外的單一檔案時，仍可使用 IntelliSense。 您可以移至 [文字編輯器]、[C/C++]、[進階] 開啟或關閉 IntelliSense 功能，以便啟用或停用特定功能。 若要針對不是專案一部分的單一檔案設定 IntelliSense，請尋找 [進階] 區段中的 [非專案檔案的 IntelliSense 及瀏覽功能]。 請參閱 [Visual C++ 導覽](https://msdn.microsoft.com/499cb66f-7df1-45d6-8b6b-33d94fd1f17c)。  
   
  ![Visual C&#43;&#43; 單一檔案 IntelliSense](../ide/media/vs2015-cpp-single-file-intellisense.png "vs2015_cpp_single_file_intellisense")  
   
@@ -95,5 +95,5 @@ ms.locfileid: "54802625"
   
  ![將路徑新增至標頭檔](../ide/media/intellisensedebugyourcode.jpg "IntelliSenseDebugYourCode")  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [使用 IntelliSense](../ide/using-intellisense.md)
