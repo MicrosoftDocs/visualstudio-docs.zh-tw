@@ -21,12 +21,12 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 421360421a732935d452053630c17cda319f4b0d
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 5269ec74388fa9b09a4cceabad364d19409470df
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63434490"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65699740"
 ---
 # <a name="handle-a-concurrency-exception"></a>處理並行例外狀況
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,7 +43,7 @@ ms.locfileid: "63434490"
   
 4. 中的資料填入資料集`Customers`Northwind 資料庫中的資料表。  
   
-5. 使用[Visual Database Tools](http://msdn.microsoft.com/6b145922-2f00-47db-befc-bf351b4809a1)在 Visual Studio 中直接存取`Customers`資料資料表和變更記錄。  
+5. 使用[Visual Database Tools](https://msdn.microsoft.com/6b145922-2f00-47db-befc-bf351b4809a1)在 Visual Studio 中直接存取`Customers`資料資料表和變更記錄。  
   
 6. 變更同一筆記錄到不同的值，更新資料集，並嘗試將變更寫入資料庫中，會導致引發並行處理錯誤。  
   
@@ -55,7 +55,7 @@ ms.locfileid: "63434490"
 - Northwind 範例資料庫，以執行更新的權限的存取。
   
 > [!NOTE]
-> 對話方塊和功能表命令，您會看到，可能會有所不同說明中所述取決於您使用的設定或您使用的版本不同。 若要變更設定，請從 [ **工具** ] 功能表中選取 [ **匯入和匯出設定** ]。 如需詳細資訊，請參閱 [在 Visual Studio 中自訂開發設定](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)  
+> 對話方塊和功能表命令，您會看到，可能會有所不同說明中所述取決於您使用的設定或您使用的版本不同。 若要變更設定，請從 [ **工具** ] 功能表中選取 [ **匯入和匯出設定** ]。 如需詳細資訊，請參閱 [在 Visual Studio 中自訂開發設定](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)  
   
 ## <a name="create-a-new-project"></a>建立新專案  
  您可以建立新的 Windows 應用程式，以開始您逐步解說。  
@@ -79,7 +79,7 @@ ms.locfileid: "63434490"
   
 1. 在 **資料**功能表上，選擇**加入新的資料來源**。  
   
-     [資料來源組態精靈][](http://msdn.microsoft.com/library/c4df7de5-5da0-4064-940c-761dd6d9e28f) 隨即開啟。  
+     [資料來源組態精靈][](https://msdn.microsoft.com/library/c4df7de5-5da0-4064-940c-761dd6d9e28f) 隨即開啟。  
   
 2. 在 **選擇資料來源類型**畫面上，選取**資料庫**。  
   
