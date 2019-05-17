@@ -16,12 +16,12 @@ caps.latest.revision: 51
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 3e78e23d7e176dffef1531da1af28d318253d9d1
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: ad2814dffa75809a318dc7cebe7831b5ecec7d29
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63431435"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65690600"
 ---
 # <a name="just-in-time-debugging-in-visual-studio"></a>Visual Studio 中的 Just-In-Time 偵錯
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -110,7 +110,7 @@ ms.locfileid: "63431435"
     </configuration>
     ```
 
-3. 在 C++ Windows Form 應用程式中，您也必須在 .config 檔或您的程式碼中設定 `DebuggableAttribute`。 如果您使用 [/Zi](http://msdn.microsoft.com/library/ce9fa7e1-0c9b-47e3-98ea-26d1a16257c8) 而且未使用 [/Og](http://msdn.microsoft.com/library/d10630cc-b9cf-4e97-bde3-8d7ee79e9435) 進行編譯，則編譯器將會設定這個屬性 (Attribute)。 然而，如果您要對非最佳化的發行組建進行偵錯，則必須自行完成此設定。 若要這樣做，您可以將下面這行程式碼加入至應用程式的 AssemblyInfo.cpp 檔案。
+3. 在 C++ Windows Form 應用程式中，您也必須在 .config 檔或您的程式碼中設定 `DebuggableAttribute`。 如果您使用 [/Zi](https://msdn.microsoft.com/library/ce9fa7e1-0c9b-47e3-98ea-26d1a16257c8) 而且未使用 [/Og](https://msdn.microsoft.com/library/d10630cc-b9cf-4e97-bde3-8d7ee79e9435) 進行編譯，則編譯器將會設定這個屬性 (Attribute)。 然而，如果您要對非最佳化的發行組建進行偵錯，則必須自行完成此設定。 若要這樣做，您可以將下面這行程式碼加入至應用程式的 AssemblyInfo.cpp 檔案。
 
     ```
     [assembly:System::Diagnostics::DebuggableAttribute(true, true)];

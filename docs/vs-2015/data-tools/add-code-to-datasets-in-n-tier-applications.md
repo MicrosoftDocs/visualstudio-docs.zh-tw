@@ -14,17 +14,17 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 078230c2b80d364b68fb127f18fc21a0b931cbce
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 6c788e422ea8613b77d7d0c0460d7c026916baa3
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60106666"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65697159"
 ---
 # <a name="add-code-to-datasets-in-n-tier-applications"></a>將程式碼新增至多層式架構 (N-Tier) 應用程式中的資料集
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-您可以藉由建立資料集的部分類別檔案，並新增程式碼來擴充資料集的功能 (而不是將程式碼加入*DatasetName*。Dataset.Designer 檔案）。 部分類別可讓多個實體檔案分割為特定類別的程式碼。 如需詳細資訊，請參閱 <<c0> [ 部分](http://msdn.microsoft.com/library/7adaef80-f435-46e1-970a-269fff63b448)或是[部分類別和方法](http://msdn.microsoft.com/library/804cecb7-62db-4f97-a99f-60975bd59fa1)。
+您可以藉由建立資料集的部分類別檔案，並新增程式碼來擴充資料集的功能 (而不是將程式碼加入*DatasetName*。Dataset.Designer 檔案）。 部分類別可讓多個實體檔案分割為特定類別的程式碼。 如需詳細資訊，請參閱 <<c0> [ 部分](https://msdn.microsoft.com/library/7adaef80-f435-46e1-970a-269fff63b448)或是[部分類別和方法](https://msdn.microsoft.com/library/804cecb7-62db-4f97-a99f-60975bd59fa1)。
 
 定義資料集的程式碼會產生每次變更的資料集定義。 當您進行任何修改的資料集組態的精靈執行期間的變更，也會產生此程式碼。 若要避免您的程式碼正在刪除在資料集的重新產生期間，加入資料集的部分類別檔案中的程式碼。
 
@@ -69,7 +69,7 @@ ms.locfileid: "60106666"
 
 - [多層式架構 (N-Tier) 資料應用程式概觀](../data-tools/n-tier-data-applications-overview.md)
 - [將程式碼新增至多層式架構 (N-Tier) 應用程式中的 TableAdapter](../data-tools/add-code-to-tableadapters-in-n-tier-applications.md)
-- [TableAdapters](http://msdn.microsoft.com/library/09416de9-134c-4dc7-8262-6c8d81e3f364)
-- [TableAdapterManager 概觀](http://msdn.microsoft.com/library/33076d42-6b41-491a-ac11-6c6339aea650)
-- [階層式更新概觀](http://msdn.microsoft.com/library/c4f8e8b9-e4a5-4a02-8462-d03d1e8222d6)
+- [TableAdapters](https://msdn.microsoft.com/library/09416de9-134c-4dc7-8262-6c8d81e3f364)
+- [TableAdapterManager 概觀](https://msdn.microsoft.com/library/33076d42-6b41-491a-ac11-6c6339aea650)
+- [階層式更新概觀](https://msdn.microsoft.com/library/c4f8e8b9-e4a5-4a02-8462-d03d1e8222d6)
 - [Visual Studio 中的資料集工具](../data-tools/dataset-tools-in-visual-studio.md)
