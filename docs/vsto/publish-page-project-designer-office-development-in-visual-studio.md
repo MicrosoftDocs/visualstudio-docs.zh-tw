@@ -38,7 +38,7 @@ ms.locfileid: "63447010"
 
  選項包括本機電腦、UNC 檔案共用或 HTTP/HTTPS 網站。 路徑可以是本機 (*c:\foldername\publishfolder*)，相對於 (*發佈\\*)，或完整限定的位置 (*\\\servername\foldername*或 http://<em>servername/foldername</em>)。
 
- 根據預設，發行位置是*http://localhost/projectname/* 如果您有安裝了 IIS，則*發行\\*目錄，如果您不需要安裝 IIS。
+ 根據預設，發行位置是 *http://localhost/projectname/* 如果您有安裝了 IIS，則*發行\\*目錄，如果您不需要安裝 IIS。
 
  **安裝資料夾 URL**選擇性。
 
