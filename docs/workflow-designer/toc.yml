@@ -1,8 +1,8 @@
 - name: 使用工作流程設計工具開發應用程式
   items:
-    - name: 使用工作流程設計工具開發應用程式
+    - name: 概觀和必要條件
       href: developing-applications-with-the-workflow-designer.md
-    - name: 建立工作流程專案
+    - name: 工作流程專案
       items:
         - name: 建立工作流程專案
           href: creating-a-workflow-project.md
@@ -28,11 +28,10 @@
       href: how-to-add-comments-to-a-workflow-in-the-workflow-designer.md
     - name: 活動設計工具
       items:
-        - name: 活動設計工具
-          href: using-the-activity-designers.md
         - name: Control Flow 活動設計工具
           items:
-            - name: Control Flow 活動設計工具
+            - name: 概觀和參考
+              displayName: Control flow activity designers
               href: control-flow-activity-designers.md
             - name: DoWhile 活動設計工具
               href: dowhile-activity-designer.md
@@ -56,7 +55,8 @@
               href: while-activity-designer.md
         - name: Flowchart 活動設計工具
           items:
-            - name: Flowchart 活動設計工具
+            - name: 概觀和參考
+              displayName: Flow chart activity designers
               href: flowchart-activity-designers.md
             - name: Flowchart 活動設計工具
               href: flowchart-activity-designer.md
@@ -66,7 +66,8 @@
               href: flowswitch-t-activity-designer.md
         - name: 狀態機器活動設計工具
           items:
-            - name: 狀態機器活動設計工具
+            - name: 概觀和參考
+              displayName: State machine activity designers
               href: state-machine-activity-designers.md
             - name: StateMachine 活動設計工具
               href: statemachine-activity-designer.md
@@ -78,7 +79,8 @@
               href: transition-activity-designer.md
         - name: Messaging 活動設計工具
           items:
-            - name: Messaging 活動設計工具
+            - name: 概觀和參考
+              displayName: Messaging activity designers
               href: messaging-activity-designers.md
             - name: CorrelationScope 活動設計工具
               href: correlationscope-activity-designer.md
@@ -96,7 +98,8 @@
               href: transactedreceivescope-activity-designer.md
         - name: Runtime 活動設計工具
           items:
-            - name: Runtime 活動設計工具
+            - name: 概觀和參考
+              displayName: Run-time activity designers
               href: runtime-activity-designers.md
             - name: Persist 活動設計工具
               href: persist-activity-designer.md
@@ -104,7 +107,8 @@
               href: terminateworkflow-activity-designer.md
         - name: 基本活動設計工具
           items:
-            - name: 基本活動設計工具
+            - name: 概觀和參考
+              displayName: Primitives activity designers
               href: primitives-activity-designers.md
             - name: Assign 活動設計工具
               href: assign-activity-designer.md
@@ -118,7 +122,8 @@
               href: writeline-activity-designer.md
         - name: Transaction 活動設計工具
           items:
-            - name: Transaction 活動設計工具
+            - name: 概觀和參考
+              displayName: Transaction activity designers
               href: transaction-activity-designers.md
             - name: CancellationScope 活動設計工具
               href: cancellationscope-activity-designer.md
@@ -132,7 +137,8 @@
               href: transactionscope-activity-designer.md
         - name: Collection 活動設計工具
           items:
-            - name: Collection 活動設計工具
+            - name: 概觀和參考
+              displayName: Collection activity designers
               href: collection-activity-designers.md
             - name: AddToCollection<T> 活動設計工具
               href: addtocollection-t-activity-designer.md
@@ -144,7 +150,8 @@
               href: removefromcollection-t-activity-designer.md
         - name: Error Handling 活動設計工具
           items:
-            - name: Error Handling 活動設計工具
+            - name: 概觀和參考
+              displayName: Error handling activity designers
               href: error-handling-activity-designers.md
             - name: Rethrow 活動設計工具
               href: rethrow-activity-designer.md
@@ -154,11 +161,12 @@
               href: trycatch-activity-designer.md
         - name: Migration 活動設計工具
           items:
-            - name: Migration 活動設計工具
+            - name: 概觀和參考
+              displayName: Migration activity designers
               href: migration-activity-designers.md
             - name: Interop 活動設計工具
               href: interop-activity-designer.md
-    - name: 偵錯工作流程
+    - name: 偵錯
       items:
         - name: 偵錯工作流程
           href: debugging-workflows-with-the-workflow-designer.md
@@ -170,8 +178,6 @@
           href: unsupported-debugging-scenarios-in-the-workflow-designer.md
     - name: UI 參考
       items:
-        - name: UI 參考
-          href: workflow-designer-ui-help.md
         - name: 瀏覽並選取 .NET 類型對話方塊
           href: browse-and-select-a-dotnet-type-dialog-box.md
         - name: CorrelatesOn 定義對話方塊

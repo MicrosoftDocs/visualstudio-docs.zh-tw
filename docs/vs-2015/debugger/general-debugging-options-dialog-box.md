@@ -22,12 +22,12 @@ caps.latest.revision: 50
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: cf4a3b699d3854ef2a502fb1bf1d7fb2d6204acb
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 2dd7d3f41790fac7a37fc3a98d728757f5bad967
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63446488"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65704682"
 ---
 # <a name="general-debugging-options-dialog-box"></a>選項對話方塊、偵錯、一般
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,11 +43,11 @@ ms.locfileid: "63446488"
  **例外狀況為跨 AppDomain 或 managed/原生界限時中斷**  
  在 Managed 或混合模式偵錯中，當符合下列條件，Common Language Runtime 就可以攔截跨應用程式定義域界限或 Managed/原生界限的例外狀況：  
   
- 1\)當原生程式碼使用 COM Interop 呼叫 managed 程式碼和 managed 程式碼會擲回的例外狀況。 請參閱 [COM Interop 簡介](http://msdn.microsoft.com/library/8bd62e68-383d-407f-998b-29aa0ce0fd67)。  
+ 1\)當原生程式碼使用 COM Interop 呼叫 managed 程式碼和 managed 程式碼會擲回的例外狀況。 請參閱 [COM Interop 簡介](https://msdn.microsoft.com/library/8bd62e68-383d-407f-998b-29aa0ce0fd67)。  
   
- 2\)當應用程式定義域 1 中執行的 managed 程式碼會呼叫 managed 程式碼應用程式定義域 2 中，且應用程式定義域 2 中的程式碼擲回例外狀況。 請參閱[Programming with Application Domains](http://msdn.microsoft.com/bd36055b-56bd-43eb-b4d8-820c37172131)。  
+ 2\)當應用程式定義域 1 中執行的 managed 程式碼會呼叫 managed 程式碼應用程式定義域 2 中，且應用程式定義域 2 中的程式碼擲回例外狀況。 請參閱[Programming with Application Domains](https://msdn.microsoft.com/bd36055b-56bd-43eb-b4d8-820c37172131)。  
   
- 3\)當程式碼使用反映，呼叫的函式和函式會擲回的例外狀況。 請參閱[反映](http://msdn.microsoft.com/library/d1a58e7f-fb39-4d50-bf84-e3b8f9bf9775)。  
+ 3\)當程式碼使用反映，呼叫的函式和函式會擲回的例外狀況。 請參閱[反映](https://msdn.microsoft.com/library/d1a58e7f-fb39-4d50-bf84-e3b8f9bf9775)。  
   
  在 2) 和 3) 中的例外狀況有時會被 `mscorlib` 中的 Managed 程式碼攔截，而非被 Common Language Runtime 攔截。 這個選項不會影響被 `mscorlib` 攔截之例外狀況的中斷。  
   
@@ -61,7 +61,7 @@ ms.locfileid: "63446488"
  可讓您設定中斷點的篩選條件，讓中斷點只會影響特定處理序、執行緒或電腦。  
   
  **啟用例外狀況助理**  
- 僅適用於 Managed 程式碼。 Managed 例外狀況會開啟例外狀況助理對話方塊。  請參閱[例外狀況助理](http://msdn.microsoft.com/library/992892ac-9d52-44cc-bf09-b44bfc5befeb)。  
+ 僅適用於 Managed 程式碼。 Managed 例外狀況會開啟例外狀況助理對話方塊。  請參閱[例外狀況助理](https://msdn.microsoft.com/library/992892ac-9d52-44cc-bf09-b44bfc5befeb)。  
   
  **回溯呼叫堆疊上未處理例外狀況**  
  導致 [呼叫堆疊] 視窗將呼叫堆疊復原到無法處理的例外狀況發生之前。  
@@ -123,7 +123,7 @@ ms.locfileid: "63446488"
  **載入 dll 匯出**  
  載入 dll 匯出資料表。 若您使用 Windows 訊息、Windows 程序 (WindowProc)、COM 物件、封送處理或是任何您沒有其符號的 dll，則 dll 匯出資料表的符號資訊會很有幫助。 讀取 dll 匯出資訊會產生一些額外負荷。 因此，這項功能預設為關閉。  
   
- 若您想知道 dll 匯出表中可使用的符號，請使用 `dumpbin /exports`。 這些符號適用於任何 32 位元系統 dll。 讀取 `dumpbin /exports` 輸出時，您可以看到確實的函式名稱，包含非英數字元。 這對設定函式的中斷點來說很有幫助。 dll 匯出表中的函式名稱在偵錯工具中的其他位置可能會顯示為已被截斷。 這些呼叫都按呼叫順序列出，目前的函式 (巢狀最深處) 列在頂端。 如需詳細資訊，請參閱 [dumpbin /exports](http://msdn.microsoft.com/library/2971ab7e-4ee6-478b-9c85-cda42a4ce1bf)。  
+ 若您想知道 dll 匯出表中可使用的符號，請使用 `dumpbin /exports`。 這些符號適用於任何 32 位元系統 dll。 讀取 `dumpbin /exports` 輸出時，您可以看到確實的函式名稱，包含非英數字元。 這對設定函式的中斷點來說很有幫助。 dll 匯出表中的函式名稱在偵錯工具中的其他位置可能會顯示為已被截斷。 這些呼叫都按呼叫順序列出，目前的函式 (巢狀最深處) 列在頂端。 如需詳細資訊，請參閱 [dumpbin /exports](https://msdn.microsoft.com/library/2971ab7e-4ee6-478b-9c85-cda42a4ce1bf)。  
   
  **顯示平行堆疊圖表的由下往上**  
  控制堆疊在 [平行堆疊] 視窗中顯示的方向。  
@@ -164,7 +164,7 @@ ms.locfileid: "63446488"
   顯示**即時視覺化樹狀結構**在主視窗的 XAML 應用程式進行偵錯工具列中的命令。 在 Visual Studio 2015 Update 2 中引進了此選項。  
   
   **偵錯時啟用診斷工具**  
-  [診斷工具] 視窗會在偵錯期間出現。 如需詳細資訊，請參閱 <<c0> [ 偵錯工具整合程式碼剖析](http://msdn.microsoft.com/library/a1f40370-7b61-42c2-afc4-0e13eba98859)。  
+  [診斷工具] 視窗會在偵錯期間出現。 如需詳細資訊，請參閱 <<c0> [ 偵錯工具整合程式碼剖析](https://msdn.microsoft.com/library/a1f40370-7b61-42c2-afc4-0e13eba98859)。  
   
   **偵錯時顯示經歷時間 PerfTip**  
   在您偵錯時，[程式碼] 視窗中會顯示指定之方法呼叫的已耗用時間。  

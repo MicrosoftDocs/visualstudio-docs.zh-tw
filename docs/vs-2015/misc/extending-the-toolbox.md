@@ -10,12 +10,12 @@ helpviewer_keywords:
 ms.assetid: bb84a79e-cd4c-4a58-8871-2513e7119b6e
 caps.latest.revision: 38
 manager: jillfra
-ms.openlocfilehash: 54026b770a0de7780e950a3e30e649cb67ce1d3b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ddf67fba3ae603dbd31d4628c61a6f14cc2441c4
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62822545"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65686939"
 ---
 # <a name="extending-the-toolbox"></a>擴充工具箱
  [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] **工具箱** 提供物件集合，以透過 IDE 的拖放機制，來為編輯器和設計工具提供功能。  
@@ -37,10 +37,10 @@ ms.locfileid: "62822545"
  描述 VSPackage 如何管理 **工具箱**的內容和外觀。  
   
 ## <a name="related-sections"></a>相關章節  
- [如何：Manage the Toolbox Window](http://msdn.microsoft.com/a022c3fe-298c-4a59-a48f-b050da90ebc2) (如何：管理工具箱視窗)  
+ [如何：Manage the Toolbox Window](https://msdn.microsoft.com/a022c3fe-298c-4a59-a48f-b050da90ebc2) (如何：管理工具箱視窗)  
  描述如何在 **整合式開發環境 (IDE) 中使用** 工具箱 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 。  
   
- [如何：控制工具箱](http://msdn.microsoft.com/library/c9d8a18a-d2bc-43d4-a803-601bfc6a6599)  
+ [如何：控制工具箱](https://msdn.microsoft.com/library/c9d8a18a-d2bc-43d4-a803-601bfc6a6599)  
  描述如何使用自動化程式設計模型管理 **工具箱** 。  
   
  [擴充 Visual Studio 的其他部分](../extensibility/extending-other-parts-of-visual-studio.md)  

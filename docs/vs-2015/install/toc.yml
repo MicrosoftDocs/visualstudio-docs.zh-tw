@@ -1,0 +1,34 @@
+- name: 安裝 Visual Studio 2015
+  items:
+    - name: 安裝 Visual Studio 2015
+      href: install-visual-studio-2015.md
+    - name: 建立 Visual Studio 的離線安裝
+      href: create-an-offline-installation-of-visual-studio.md
+    - name: 並存安裝 Visual Studio 版本
+      href: install-visual-studio-versions-side-by-side.md
+    - name: 使用命令列參數來安裝 Visual Studio
+      href: use-command-line-parameters-to-install-visual-studio.md
+    - name: 解除安裝 Visual Studio
+      href: uninstall-visual-studio.md
+    - name: Visual Studio Administrator Guide
+      items:
+        - name: Visual Studio Administrator Guide
+          href: visual-studio-administrator-guide.md
+        - name: 安裝特定版本的 Visual Studio
+          href: how-to-install-a-specific-release-of-visual-studio.md
+        - name: 建立和執行 Visual Studio 的自動安裝
+          href: how-to-create-and-run-an-unattended-installation-of-visual-studio.md
+        - name: 在部署 Visual Studio 時自動套用產品金鑰
+          href: how-to-automatically-apply-product-keys-when-deploying-visual-studio.md
+    - name: 安裝多個語言版本的 Visual Studio
+      items:
+        - name: 安裝多個語言版本的 Visual Studio
+          href: install-multiple-language-versions-of-visual-studio.md
+        - name: Microsoft 語言介面套件 (LIP) 和 Visual Studio
+          href: microsoft-language-interface-packs-lips-and-visual-studio.md
+    - name: 從 Visual Studio 試用版升級
+      href: how-to-upgrade-from-a-trial-edition-of-visual-studio.md
+    - name: 找出 Visual Studio 產品金鑰
+      href: how-to-locate-the-visual-studio-product-key.md
+    - name: Visual Studio 週期原則例外
+      href: visual-studio-lifecycle-policy-exceptions.md

@@ -1,0 +1,258 @@
+- name: 存取 Visual Studio 中的資料
+  items:
+    - name: 存取 Visual Studio 中的資料
+      href: accessing-data-in-visual-studio.md
+    - name: 安裝資料庫系統、工具和範例
+      items:
+        - name: 安裝資料庫系統、工具和範例
+          href: installing-database-systems-tools-and-samples.md
+        - name: 安裝 SQL Server 範例資料庫
+          href: install-sql-server-sample-databases.md
+        - name: 使用指令碼建立 SQL 資料庫
+          href: create-a-sql-database-by-using-a-script.md
+        - name: 使用設計工具建立 SQL 資料庫
+          href: create-a-sql-database-by-using-a-designer.md
+        - name: 升級 .mdf 檔案
+          href: upgrade-dot-mdf-files.md
+    - name: 適用於 .NET 的 Visual Studio Data Tools
+      items:
+        - name: 適用於 .NET 的 Visual Studio Data Tools
+          href: visual-studio-data-tools-for-dotnet.md
+        - name: 使用 ADO.NET 建立簡單的資料應用程式
+          href: create-a-simple-data-application-by-using-adonet.md
+        - name: 使用 WPF 和 Entity Framework 6 建立簡單的資料應用程式
+          href: create-a-simple-data-application-with-wpf-and-entity-framework-6.md
+        - name: 新增連線
+          items:
+            - name: 新增連線
+              href: add-new-connections.md
+            - name: 連線至 Access 資料庫中的資料 (Windows Forms)
+              href: connect-to-data-in-an-access-database-windows-forms.md
+        - name: 新增新資料來源
+          href: add-new-data-sources.md
+        - name: Visual Studio 中的實體資料模型工具
+          href: entity-data-model-tools-in-visual-studio.md
+        - name: Visual Studio 中的資料集工具
+          items:
+            - name: Visual Studio 中的資料集工具
+              href: dataset-tools-in-visual-studio.md
+            - name: 建立和設定資料集
+              items:
+                - name: 建立和設定資料集
+                  href: create-and-configure-datasets-in-visual-studio.md
+                - name: 具類型資料集與不具類型資料集的比較
+                  href: typed-vs-untyped-datasets.md
+                - name: 資料集中的關聯性
+                  href: relationships-in-datasets.md
+            - name: 使用 TableAdapter 填入資料集
+              items:
+                - name: 使用 TableAdapter 填入資料集
+                  href: fill-datasets-by-using-tableadapters.md
+                - name: 建立和設定 TableAdapter
+                  href: create-and-configure-tableadapters.md
+                - name: 建立參數型 TableAdapter 查詢
+                  href: create-parameterized-tableadapter-queries.md
+                - name: 以 TableAdapter 直接存取資料庫
+                  href: directly-access-the-database-with-a-tableadapter.md
+                - name: 填入資料集時關閉條件約束
+                  href: turn-off-constraints-while-filling-a-dataset.md
+                - name: 擴充 TableAdapter 的功能
+                  href: extend-the-functionality-of-a-tableadapter.md
+                - name: 將 XML 資料讀入資料集
+                  href: read-xml-data-into-a-dataset.md
+            - name: 編輯資料集中的資料
+              href: edit-data-in-datasets.md
+            - name: 驗證資料集中的資料
+              href: validate-data-in-datasets.md
+            - name: 將資料儲存回資料庫
+              items:
+                - name: 將資料儲存回資料庫
+                  href: save-data-back-to-the-database.md
+                - name: 在資料庫中插入新的記錄
+                  href: insert-new-records-into-a-database.md
+                - name: 使用 TableAdapter 更新資料
+                  href: update-data-by-using-a-tableadapter.md
+                - name: 階層式更新
+                  href: hierarchical-update.md
+                - name: 處理並行例外狀況
+                  href: handle-a-concurrency-exception.md
+                - name: 使用異動儲存資料
+                  href: save-data-by-using-a-transaction.md
+                - name: 儲存異動中的資料
+                  href: save-data-in-a-transaction.md
+                - name: 將資料儲存至資料庫 (多個資料表)
+                  href: save-data-to-a-database-multiple-tables.md
+                - name: 從物件中將資料儲存至資料庫
+                  href: save-data-from-an-object-to-a-database.md
+                - name: 使用 TableAdapter DBDirect 方法儲存資料
+                  href: save-data-with-the-tableadapter-dbdirect-methods.md
+                - name: 將資料集儲存為 XML
+                  href: save-a-dataset-as-xml.md
+            - name: 查詢資料集
+              href: query-datasets.md
+            - name: 使用多層式架構 (N-Tier) 應用程式中的資料集
+              items:
+                - name: 使用多層式架構 (N-Tier) 應用程式中的資料集
+                  href: work-with-datasets-in-n-tier-applications.md
+                - name: 將驗證新增至多層式架構 (N-Tier) 資料集
+                  href: add-validation-to-an-n-tier-dataset.md
+                - name: 將程式碼新增至多層式架構 (N-Tier) 應用程式中的資料集
+                  href: add-code-to-datasets-in-n-tier-applications.md
+                - name: 將程式碼新增至多層式架構 (N-Tier) 應用程式中的 TableAdapter
+                  href: add-code-to-tableadapters-in-n-tier-applications.md
+                - name: 將資料集和 TableAdapter 分成不同的專案
+                  href: separate-datasets-and-tableadapters-into-different-projects.md
+        - name: Visual Studio 中的 LINQ to SQL 工具
+          items:
+            - name: Visual Studio 中的 LINQ to SQL 工具
+              href: linq-to-sql-tools-in-visual-studio2.md
+            - name: DataContext 方法 (O/R 設計工具)
+              items:
+                - name: DataContext 方法 (O/R 設計工具)
+                  href: datacontext-methods-o-r-designer.md
+                - name: 變更 DataContext 方法的傳回型別 (O/R 設計工具)
+                  href: how-to-change-the-return-type-of-a-datacontext-method-o-r-designer.md
+                - name: 建立對應至預存程序和函式的 DataContext 方法 (O/R 設計工具)
+                  href: how-to-create-datacontext-methods-mapped-to-stored-procedures-and-functions-o-r-designer.md
+            - name: 資料類別繼承 (O/R 設計工具)
+              items:
+                - name: 資料類別繼承 (O/R 設計工具)
+                  href: data-class-inheritance-o-r-designer.md
+                - name: 使用 O/R 設計工具設定繼承
+                  href: how-to-configure-inheritance-by-using-the-o-r-designer.md
+                - name: 使用單一資料表繼承建立 LINQ to SQL 類別 (O/R 設計工具)
+                  href: walkthrough-creating-linq-to-sql-classes-by-using-single-table-inheritance-o-r-designer.md
+            - name: 建立對應至資料表和檢視的 LINQ to SQL 類別 (O/R 設計工具)
+              href: how-to-create-linq-to-sql-classes-mapped-to-tables-and-views-o-r-designer.md
+            - name: 擴充 O/R 設計工具產生的程式碼
+              href: how-to-extend-code-generated-by-the-o-r-designer.md
+            - name: 建立 LINQ to SQL 類別之間的關聯 (關聯性) (O/R 設計工具)
+              href: how-to-create-an-association-relationship-between-linq-to-sql-classes-o-r-designer.md
+            - name: 將驗證新增至實體類別
+              href: how-to-add-validation-to-entity-classes.md
+            - name: 自訂實體類別的插入、更新和刪除行為
+              href: walkthrough-customizing-the-insert-update-and-delete-behavior-of-entity-classes.md
+            - name: 指派用來執行更新、插入和刪除的預存程序 (O/R 設計工具)
+              href: how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-o-r-designer.md
+            - name: 開啟和關閉複數表示 (O/R 設計工具)
+              href: how-to-turn-pluralization-on-and-off-o-r-designer.md
+            - name: O/R 設計工具訊息
+              items:
+                - name: O/R 設計工具訊息
+                  href: o-r-designer-messages.md
+                - name: 無法刪除所選取的類別，因為它是用來當做一或多個 DataContext 方法的傳回類型。
+                  href: the-selected-class-cannot-be-deleted-because-it-is-used-as-a-return-type-for-one-or-more-datacontext-methods.md
+                - name: 連接字串包含具有純文字密碼的認證，並且不使用整合式安全性
+                  href: the-connection-string-contains-credentials-with-a-clear-text-password-and-is-not-using-integrated-security.md
+                - name: 因為屬性 <屬性名稱\> 參與了關聯 <關聯名稱\>，所以無法刪除該屬性
+                  href: the-property-property-name-cannot-be-deleted-because-it-is-participating-in-the-association-association-name.md
+                - name: 無法刪除屬性 <屬性名稱\>
+                  href: the-property-property-name-cannot-be-deleted.md
+                - name: 應用程式設定檔中的連接屬性遺漏或不正確
+                  href: the-connection-property-in-the-application-settings-file-is-missing-or-incorrect.md
+                - name: 您已從不支援的資料提供者選取資料庫物件
+                  href: you-have-selected-a-database-object-from-an-unsupported-database-provider.md
+                - name: 無法建立關聯 <關聯名稱\> - 屬性類型不符
+                  href: cannot-create-an-association-association-name-property-types-do-not-match.md
+                - name: 警告。 尚未套用的設定行為對話方塊已經變更了
+                  href: warning-changes-have-been-made-to-the-configure-behavior-dialog-box-that-have-not-been-applied.md
+                - name: 此關聯方法是下列預設插入、更新或刪除方法的支援方法
+                  href: this-related-method-is-the-backing-method-for-the-following-default-insert-update-or-delete-methods.md
+                - name: 一個或多個選取的項目包含設計工具不支援的資料類型
+                  href: one-or-more-selected-items-contain-a-data-type-that-is-not-supported-by-the-designer.md
+                - name: 如果變更 DataContext 方法的傳回類型，將無法復原
+                  href: changing-the-return-type-of-a-datacontext-method-cannot-be-undone.md
+                - name: 偵錯期間無法修改設計工具
+                  href: the-designer-cannot-be-modified-while-debugging.md
+                - name: 選取的連接使用不支援的資料提供者
+                  href: the-selected-connection-uses-an-unsupported-database-provider.md
+                - name: 您要加入至設計工具的物件使用與設計工具所用的不同資料連接
+                  href: the-objects-you-are-adding-to-the-designer-use-a-different-data-connection-than-the-designer-is-currently-using.md
+                - name: 無法建立關聯 <關聯名稱\> - 屬性列出了兩次
+                  href: cannot-create-an-association-association-name-property-listed-twice.md
+                - name: 無法擷取資料庫物件 <物件名稱\> 的結構描述資訊
+                  href: could-not-retrieve-schema-information-for-database-object-object-name.md
+                - name: 一個或多個選取的資料庫物件傳回與目標類別之結構描述不符的結構描述
+                  href: one-or-more-selected-database-objects-return-a-schema-that-does-not-match-the-schema-of-the-target-class.md
+        - name: 將控制項繫結至 Visual Studio 中的資料
+          items:
+            - name: 將控制項繫結至 Visual Studio 中的資料
+              href: bind-controls-to-data-in-visual-studio.md
+            - name: '設定從 [資料來源] 視窗拖曳時要建立的控制項'
+              href: set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md
+            - name: '將自訂控制項加入 [資料來源] 視窗'
+              href: add-custom-controls-to-the-data-sources-window.md
+            - name: 在 Windows Forms 應用程式中篩選和排序資料
+              href: filter-and-sort-data-in-a-windows-forms-application.md
+            - name: 將 WPF 控制項繫結至 Visual Studio 中的資料
+              items:
+                - name: 將 WPF 控制項繫結至 Visual Studio 中的資料
+                  href: bind-wpf-controls-to-data-in-visual-studio1.md
+                - name: 將 WPF 控制項繫結至資料集
+                  href: bind-wpf-controls-to-a-dataset.md
+                - name: 將 WPF 控制項繫結至 Visual Studio 中的資料
+                  href: bind-wpf-controls-to-data-in-visual-studio2.md
+                - name: 將 WPF 控制項繫結至 WCF 資料服務
+                  href: bind-wpf-controls-to-a-wcf-data-service.md
+                - name: 在 WPF 應用程式中建立查閱資料表
+                  href: create-lookup-tables-in-wpf-applications.md
+                - name: 在 WPF 應用程式中顯示相關資料
+                  href: display-related-data-in-wpf-applications.md
+                - name: 在 WPF 應用程式中顯示相關資料
+                  href: walkthrough-displaying-related-data-in-a-wpf-application.md
+                - name: 從資料庫將控制項繫結至圖片
+                  href: bind-controls-to-pictures-from-a-database.md
+            - name: 將 Windows Forms 控制項繫結至 Visual Studio 中的資料
+              items:
+                - name: 將 Windows Forms 控制項繫結至 Visual Studio 中的資料
+                  href: bind-windows-forms-controls-to-data-in-visual-studio.md
+                - name: 將 Windows Forms 控制項繫結至資料
+                  href: bind-windows-forms-controls-to-data.md
+                - name: 儲存資料前先認可資料繫結控制項上的同處理序編輯
+                  href: commit-in-process-edits-on-data-bound-controls-before-saving-data.md
+                - name: 在 Windows Forms 應用程式中建立查閱資料表
+                  href: create-lookup-tables-in-windows-forms-applications.md
+                - name: 建立 Windows Form 以搜尋資料
+                  href: create-a-windows-form-to-search-data.md
+                - name: 建立支援簡單資料繫結的 Windows Forms 使用者控制項
+                  href: create-a-windows-forms-user-control-that-supports-simple-data-binding.md
+                - name: 建立支援複雜資料繫結的 Windows Forms 使用者控制項
+                  href: create-a-windows-forms-user-control-that-supports-complex-data-binding.md
+                - name: 建立支援查閱資料繫結的 Windows Forms 使用者控制項
+                  href: create-a-windows-forms-user-control-that-supports-lookup-data-binding.md
+                - name: 在表單之間傳遞資料
+                  href: pass-data-between-forms.md
+            - name: 繫結 Visual Studio 中的物件
+              href: bind-objects-in-visual-studio.md
+            - name: 自訂 Visual Studio 為資料繫結的控制項建立標題的方式
+              href: customize-how-visual-studio-creates-captions-for-data-bound-controls.md
+        - name: Visual Studio 中的 Windows Communication Foundation 服務和 WCF 資料服務
+          items:
+            - name: Visual Studio 中的 Windows Communication Foundation 服務和 WCF 資料服務
+              href: windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md
+            - name: 連線至服務中的資料
+              href: how-to-connect-to-data-in-a-service.md
+            - name: 在 Windows Forms 中建立簡單的 WCF 服務
+              href: walkthrough-creating-a-simple-wcf-service-in-windows-forms.md
+            - name: 使用 WPF 和 Entity Framework 建立 WCF 資料服務
+              href: walkthrough-creating-a-wcf-data-service-with-wpf-and-entity-framework.md
+            - name: 使用概念模型
+              href: working-with-a-conceptual-model-wcf-data-services.md
+            - name: 服務參考的疑難排解
+              href: troubleshooting-service-references.md
+            - name: 設定服務參考對話方塊
+              href: configure-service-reference-dialog-box.md
+            - name: 新增、更新或移除 WCF 資料服務參考
+              href: how-to-add-update-or-remove-a-wcf-data-service-reference.md
+        - name: 在 Visual Studio 中建立和管理資料庫與資料層應用程式
+          items:
+            - name: 在 Visual Studio 中建立和管理資料庫與資料層應用程式
+              href: creating-and-managing-databases-and-data-tier-applications-in-visual-studio.md
+            - name: 建立多層式架構 (N-Tier) 資料應用程式
+              href: walkthrough-creating-an-n-tier-data-application.md
+            - name: 多層式架構資料應用程式概觀
+              href: n-tier-data-applications-overview.md
+        - name: 用來對資料存取錯誤進行疑難排解的其他資源
+          href: additional-resources-for-troubleshooting-data-access-errors.md
+    - name: 適用於 C++ 的 Visual Studio 資料工具
+      href: visual-studio-data-tools-for-cpp.md

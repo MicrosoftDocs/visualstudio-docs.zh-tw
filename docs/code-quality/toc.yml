@@ -20,8 +20,9 @@
     - name: 分析受控碼的程式碼缺失
       href: walkthrough-analyzing-managed-code-for-code-defects.md
     - name: 分析 C/C++ 程式碼的缺失
-      href: walkthrough-analyzing-c-cpp-code-for-defects.md
       items:
+        - name: 分析 C/C++ 程式碼的缺失
+          href: walkthrough-analyzing-c-cpp-code-for-defects.md
         - name: 示範範例
           href: demo-sample.md
 - name: 作法指南
@@ -35,8 +36,9 @@
             - name: 安裝
               href: install-fxcop-analyzers.md
             - name: 設定
-              href: configure-fxcop-analyzers.md
               items:
+                - name: 設定
+                  href: configure-fxcop-analyzers.md
                 - name: 組態選項
                   href: fxcop-analyzer-options.md
             - name: 從靜態程式碼分析移轉
@@ -56,8 +58,9 @@
         - name: 手動執行程式碼分析
           href: how-to-run-code-analysis-manually-for-managed-code.md
         - name: 隱藏警告
-          href: in-source-suppression-overview.md
           items:
+            - name: 隱藏警告
+              href: in-source-suppression-overview.md
             - name: 隱藏所產生之程式碼的程式碼分析警告
               href: how-to-suppress-code-analysis-warnings-for-generated-code.md
         - name: 自訂程式碼分析字典
@@ -73,8 +76,9 @@
         - name: 設定程式碼分析屬性
           href: how-to-set-code-analysis-properties-for-c-cpp-projects.md
         - name: 使用 SAL 註釋以減少程式碼的缺失
-          href: using-sal-annotations-to-reduce-c-cpp-code-defects.md
           items:
+            - name: 使用 SAL 註釋以減少程式碼的缺失
+              href: using-sal-annotations-to-reduce-c-cpp-code-defects.md
             - name: 了解 SAL
               href: understanding-sal.md
             - name: 標註函式參數和傳回值
@@ -94,13 +98,15 @@
         - name: 使用 _Analysis_assume 來指定其他程式碼資訊
           href: how-to-specify-additional-code-information-by-using-analysis-assume.md
     - name: 規則集
-      href: using-rule-sets-to-group-code-analysis-rules.md
       items:
+        - name: 規則集
+          href: using-rule-sets-to-group-code-analysis-rules.md
         - name: 分析器套件的規則集
           href: analyzer-rule-sets.md
         - name: 受控碼的規則集
-          href: how-to-configure-code-analysis-for-a-managed-code-project.md
           items:
+            - name: 受控碼的規則集
+              href: how-to-configure-code-analysis-for-a-managed-code-project.md
             - name: 設定 ASP.NET Web 應用程式的程式碼分析
               href: how-to-configure-code-analysis-for-an-aspnet-web-application.md
         - name: C++ 程式碼的規則集
@@ -110,8 +116,9 @@
         - name: 使用規則集編輯器
           href: working-in-the-code-analysis-rule-set-editor.md
     - name: 簽入原則
-      href: how-to-create-or-update-standard-code-analysis-check-in-policies.md
       items:
+        - name: 簽入原則
+          href: how-to-create-or-update-standard-code-analysis-check-in-policies.md
         - name: 為受控碼實作自訂程式碼分析簽入原則
           href: implementing-custom-code-analysis-check-in-policies-for-managed-code.md
         - name: 強制執行容易維護的程式碼
@@ -129,8 +136,9 @@
 - name: 參考資料
   items:
     - name: 規則集
-      href: rule-set-reference.md
       items:
+        - name: 規則集
+          href: rule-set-reference.md
         - name: 所有規則規則集
           href: all-rules-rule-set.md
         - name: 適用於 Managed 程式碼的基本正確性規則規則集
@@ -158,20 +166,23 @@
         - name: 適用於 Managed 程式碼的安全性規則規則集
           href: security-rules-rule-set-for-managed-code.md
     - name: 受控碼的程式碼分析警告
-      href: code-analysis-for-managed-code-warnings.md
       items:
+        - name: 受控碼的程式碼分析警告
+          href: code-analysis-for-managed-code-warnings.md
         - name: 依據 CheckId 列出受控程式碼的程式碼分析警告
           href: code-analysis-warnings-for-managed-code-by-checkid.md
         - name: 密碼編譯警告
-          href: cryptography-warnings.md
           items:
+            - name: 密碼編譯警告
+              href: cryptography-warnings.md
             - name: CA5350：請勿使用弱式密碼編譯演算法
               href: ca5350-do-not-use-weak-cryptographic-algorithms.md
             - name: CA5351 不要使用中斷的密碼編譯演算法
               href: ca5351-do-not-use-broken-cryptographic-algorithms.md
         - name: 設計警告
-          href: design-warnings.md
           items:
+            - name: 設計警告
+              href: design-warnings.md
             - name: CA1000：不要在泛型類型上宣告靜態成員
               href: ca1000-do-not-declare-static-members-on-generic-types.md
             - name: CA1001：具有可處置欄位的類型應該為可處置
@@ -297,8 +308,9 @@
             - name: 'CA2210:組件應該具備有效的強式名稱'
               href: ca2210-assemblies-should-have-valid-strong-names.md
         - name: 全球化警告
-          href: globalization-warnings.md
           items:
+            - name: 全球化警告
+              href: globalization-warnings.md
             - name: 'CA1300:必須指定 MessageBoxOptions'
               href: ca1300-specify-messageboxoptions.md
             - name: 'CA1301:避免使用重複的快速鍵'
@@ -322,8 +334,9 @@
             - name: 'CA2101:必須指定 P-Invoke 字串引數的封送處理'
               href: ca2101-specify-marshaling-for-p-invoke-string-arguments.md
         - name: 互通性警告
-          href: interoperability-warnings.md
           items:
+            - name: 互通性警告
+              href: interoperability-warnings.md
             - name: 'CA1400:P-Invoke 進入點應該要存在'
               href: ca1400-p-invoke-entry-points-should-exist.md
             - name: 'CA1401:P-Invokes 不應該為可見的'
@@ -357,8 +370,9 @@
             - name: 'CA1415:P-Invokes 必須正確宣告。'
               href: ca1415-declare-p-invokes-correctly.md
         - name: 維護性警告
-          href: maintainability-warnings.md
           items:
+            - name: 維護性警告
+              href: maintainability-warnings.md
             - name: 'CA1500:變數名稱不應該與欄位名稱相符'
               href: ca1500-variable-names-should-not-match-field-names.md
             - name: 'CA1501:避免在物件間過度繼承'
@@ -372,15 +386,17 @@
             - name: 'CA1506:應避免使用結合過度的類別'
               href: ca1506-avoid-excessive-class-coupling.md
         - name: 行動性警告
-          href: mobility-warnings.md
           items:
+            - name: 行動性警告
+              href: mobility-warnings.md
             - name: 'CA1600:不要使用 Idle 處理序優先順序'
               href: ca1600-do-not-use-idle-process-priority.md
             - name: 'CA1601:不要使用會妨礙電源狀態變更的計時器'
               href: ca1601-do-not-use-timers-that-prevent-power-state-changes.md
         - name: 命名警告
-          href: naming-warnings.md
           items:
+            - name: 命名警告
+              href: naming-warnings.md
             - name: 'CA1700:不要在列舉值名稱中包含 ''Reserved'''
               href: ca1700-do-not-name-enum-values-reserved.md
             - name: 'CA1701:資源字串複合字應該使用正確的大小寫'
@@ -428,8 +444,9 @@
             - name: 'CA1726:建議使用慣用詞彙'
               href: ca1726-use-preferred-terms.md
         - name: 效能警告
-          href: performance-warnings.md
           items:
+            - name: 效能警告
+              href: performance-warnings.md
             - name: 'CA1800:不要執行不必要的轉換'
               href: ca1800-do-not-cast-unnecessarily.md
             - name: 'CA1802:建議在適當時使用常值'
@@ -463,8 +480,9 @@
             - name: 'CA1824:組件必須標記 NeutralResourcesLanguageAttribute'
               href: ca1824-mark-assemblies-with-neutralresourceslanguageattribute.md
         - name: 可攜性警告
-          href: portability-warnings.md
           items:
+            - name: 可攜性警告
+              href: portability-warnings.md
             - name: 'CA1900:實值類型欄位應該為可移植的'
               href: ca1900-value-type-fields-should-be-portable.md
             - name: 'CA1901:P-Invoke 宣告應該為可移植的'
@@ -472,8 +490,9 @@
             - name: 'CA1903:只使用來自目標架構的 API'
               href: ca1903-use-only-api-from-targeted-framework.md
         - name: 可靠性警告
-          href: reliability-warnings.md
           items:
+            - name: 可靠性警告
+              href: reliability-warnings.md
             - name: 'CA2000:必須在超出範圍前處置物件'
               href: ca2000-dispose-objects-before-losing-scope.md
             - name: 'CA2001:避免呼叫有問題的方法'
@@ -489,8 +508,9 @@
             - name: 'CA2007:不直接等候工作'
               href: ca2007-do-not-directly-await-task.md
         - name: 安全性警告
-          href: security-warnings.md
           items:
+            - name: 安全性警告
+              href: security-warnings.md
             - name: 'CA2100:必須檢閱 SQL 查詢中是否有安全性弱點'
               href: ca2100-review-sql-queries-for-security-vulnerabilities.md
             - name: 'CA2102:必須使用一般處理常式攔截非 CLSCompliant 例外狀況'
@@ -587,6 +607,20 @@
               href: ca2301-do-not-call-binaryformatter-deserialize-without-first-setting-binaryformatter-binder.md
             - name: CA2302：呼叫 BinaryFormatter.Deserialize 之前，請務必先設定 BinaryFormatter.Binder
               href: ca2302-ensure-binaryformatter-binder-is-set-before-calling-binaryformatter-deserialize.md
+            - name: CA2305：請勿使用不安全的還原序列化程式 LosFormatter
+              href: ca2305-do-not-use-insecure-deserializer-losformatter.md
+            - name: CA2310：請勿使用不安全的還原序列化程式 NetDataContractSerializer
+              href: ca2310-do-not-use-insecure-deserializer-netdatacontractserializer.md
+            - name: CA2311：未先設定 NetDataContractSerializer.Binder 之前，請勿還原序列化
+              href: ca2311-do-not-deserialize-without-first-setting-netdatacontractserializer-binder.md
+            - name: CA2312：還原序列化之前，請務必先設定 NetDataContractSerializer.Binder
+              href: ca2312-ensure-netdatacontractserializer-binder-is-set-before-deserializing.md
+            - name: CA2315：請勿使用不安全的還原序列化程式 ObjectStateFormatter
+              href: ca2315-do-not-use-insecure-deserializer-objectstateformatter.md
+            - name: CA2321：請勿使用 SimpleTypeResolver 搭配 JavaScriptSerializer 來還原序列化
+              href: ca2321.md
+            - name: CA2322：還原序列化之前，請確定不會使用 SimpleTypeResolver 來將 JavaScriptSerializer 初始化
+              href: ca2322.md
             - name: CA3001：檢閱程式碼是否有 SQL 插入式攻擊弱點
               href: ca3001-review-code-for-sql-injection-vulnerabilities.md
             - name: CA3002：檢閱程式碼是否有 XSS 弱點
@@ -620,8 +654,9 @@
             - name: 'CA3147:使用 ValidateAntiForgeryToken 標示動詞處理常式'
               href: ca3147-mark-verb-handlers-with-validateantiforgerytoken.md
         - name: 用法警告
-          href: usage-warnings.md
           items:
+            - name: 用法警告
+              href: usage-warnings.md
             - name: 'CA1801:必須檢閱未使用的參數'
               href: ca1801-review-unused-parameters.md
             - name: 'CA1806:不要忽略方法的結果'
@@ -711,8 +746,9 @@
         - name: 程式碼分析原則錯誤
           href: code-analysis-policy-errors.md
     - name: C++ Core Guidelines 檢查工具警告
-      href: code-analysis-for-cpp-corecheck.md
       items:
+        - name: C++ Core Guidelines 檢查工具警告
+          href: code-analysis-for-cpp-corecheck.md
         - name: C26400
           href: C26400.md
         - name: C26401
@@ -868,8 +904,9 @@
         - name: C26498
           href: C26498.md
     - name: C/C++ 程式碼分析警告
-      href: code-analysis-for-c-cpp-warnings.md
       items:
+        - name: C/C++ 程式碼分析警告
+          href: code-analysis-for-c-cpp-warnings.md
         - name: C1250
           href: c1250.md
         - name: C1251
@@ -1451,8 +1488,9 @@
         - name: C28351
           href: c28351.md
     - name: 程式碼分析應用程式錯誤
-      href: code-analysis-application-errors.md
       items:
+        - name: 程式碼分析應用程式錯誤
+          href: code-analysis-application-errors.md
         - name: CA0001
           href: ca0001.md
         - name: CA0051

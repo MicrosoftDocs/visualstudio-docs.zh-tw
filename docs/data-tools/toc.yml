@@ -20,9 +20,10 @@
       href: visual-studio-data-tools-for-dotnet.md
     - name: Entity Framework 工具
       href: entity-data-model-tools-in-visual-studio.md
-    - name: 資料集工具
-      href: dataset-tools-in-visual-studio.md
+    - name: 資料集
       items:
+        - name: 資料集工具
+          href: dataset-tools-in-visual-studio.md
         - name: 具類型資料集與不具類型資料集的比較
           href: typed-vs-untyped-datasets.md
         - name: TableAdapter 概觀
@@ -37,18 +38,21 @@
   items:
     - name: 建立資料庫
       href: create-a-sql-database-by-using-a-designer.md
-    - name: 新增連線
-      href: add-new-connections.md
+    - name: 連接
       items:
+        - name: 新增連線
+          href: add-new-connections.md
         - name: 儲存和編輯連接字串
           href: how-to-save-and-edit-connection-strings.md
         - name: 連線至 Access 資料庫中的資料
           href: connect-to-data-in-an-access-database-windows-forms.md
     - name: 新增 .NET 資料來源
       href: add-new-data-sources.md
-    - name: 使用 LINQ to SQL 工具
-      href: linq-to-sql-tools-in-visual-studio2.md
+    - name: LINQ to SQL 工具
       items:
+        - name: 總覽
+          displayName: LINQ to SQL tools
+          href: linq-to-sql-tools-in-visual-studio2.md
         - name: 變更 DataContext 方法的傳回類型
           href: how-to-change-the-return-type-of-a-datacontext-method-o-r-designer.md
         - name: 建立對應至預存程序的 DataContext 方法
@@ -71,16 +75,17 @@
           href: how-to-turn-pluralization-on-and-off-o-r-designer.md
     - name: 使用資料集工具
       items:
-        - name: 在 Visual Studio 中建立和設定資料集
-          href: create-and-configure-datasets-in-visual-studio.md
+        - name: 建立資料集
           items:
+            - name: 建立和設定資料集
+              href: create-and-configure-datasets-in-visual-studio.md
             - name: 建立資料集之間的關聯性
               href: relationships-in-datasets.md
-            - name: 使用 DataSet 設計工具建立 DataSet
+            - name: 使用 DataSet 設計工具建立資料集
               href: walkthrough-creating-a-dataset-with-the-dataset-designer.md
             - name: 使用 DataSet 設計工具建立 DataTable
               href: walkthrough-creating-a-datatable-in-the-dataset-designer.md
-        - name: TableAdapter
+        - name: 設定 TableAdapter
           items:
             - name: 建立和設定 TableAdapter
               href: create-and-configure-tableadapters.md
@@ -99,8 +104,10 @@
         - name: 驗證資料集中的資料
           href: validate-data-in-datasets.md
         - name: 將資料儲存回資料庫
-          href: save-data-back-to-the-database.md
           items:
+            - name: 總覽
+              displayName: Save data to database
+              href: save-data-back-to-the-database.md
             - name: 在資料庫中插入新的記錄
               href: insert-new-records-into-a-database.md
             - name: 使用 TableAdapter 更新資料
@@ -109,9 +116,10 @@
               href: hierarchical-update.md
             - name: 處理並行例外狀況
               href: handle-a-concurrency-exception.md
-            - name: 使用異動儲存資料
-              href: save-data-by-using-a-transaction.md
+            - name: 異動
               items:
+                - name: 使用異動儲存資料
+                  href: save-data-by-using-a-transaction.md
                 - name: 逐步解說：儲存異動中的資料
                   href: save-data-in-a-transaction.md
             - name: 將資料儲存至資料庫 (多個資料表)
@@ -134,16 +142,18 @@
               href: add-code-to-tableadapters-in-n-tier-applications.md
             - name: 將資料集和 TableAdapter 分成不同的專案
               href: separate-datasets-and-tableadapters-into-different-projects.md
-    - name: 將控制項繫結至資料來源
-      href: bind-controls-to-data-in-visual-studio.md
+    - name: 控制項
       items:
+        - name: 將控制項繫結至資料來源
+          href: bind-controls-to-data-in-visual-studio.md
         - name: '設定從 [資料來源] 視窗拖曳時要建立的控制項'
           href: set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md
         - name: '將自訂控制項加入 [資料來源] 視窗'
           href: add-custom-controls-to-the-data-sources-window.md
-        - name: 將 WPF 控制項繫結至資料
-          href: bind-wpf-controls-to-data-in-visual-studio.md
+        - name: WPF 控制項
           items:
+            - name: 將 WPF 控制項繫結至資料
+              href: bind-wpf-controls-to-data-in-visual-studio.md
             - name: 將 WPF 控制項繫結至資料集
               href: bind-wpf-controls-to-a-dataset.md
             - name: 將 WPF 控制項繫結至 WCF 資料服務
@@ -154,9 +164,10 @@
               href: display-related-data-in-wpf-applications.md
             - name: 從資料庫將控制項繫結至圖片
               href: bind-controls-to-pictures-from-a-database.md
-        - name: 將 Windows Forms 控制項繫結至資料
-          href: bind-windows-forms-controls-to-data-in-visual-studio.md
+        - name: Windows Forms 控制項
           items:
+            - name: 將 Windows Forms 控制項繫結至資料
+              href: bind-windows-forms-controls-to-data-in-visual-studio.md
             - name: 在 Windows Forms 應用程式中篩選和排序資料
               href: filter-and-sort-data-in-a-windows-forms-application.md
             - name: 儲存資料前先認可資料繫結控制項上的同處理序編輯
@@ -178,8 +189,10 @@
         - name: 自訂 Visual Studio 為資料繫結的控制項建立標題的方式
           href: customize-how-visual-studio-creates-captions-for-data-bound-controls.md
     - name: Windows Communication Foundation 服務和 WCF 資料服務
-      href: windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md
       items:
+        - name: Visual Studio 中的 WCF 概觀
+          displayName: Windows Communication Foundation Services and WCF Data Services
+          href: windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md
         - name: 使用概念模型
           href: working-with-a-conceptual-model-wcf-data-services.md
         - name: 連線至服務中的資料
@@ -207,9 +220,9 @@
         - name: 資料類別繼承
           href: data-class-inheritance-o-r-designer.md
         - name: O/R 設計工具訊息
-          href: o-r-designer-messages.md
           items:
             - name: 無法刪除所選取的類別，因為它是用來當做一或多個 DataContext 方法的傳回類型。
+              displayName: O/R Designer messages
               href: the-selected-class-cannot-be-deleted-because-it-is-used-as-a-return-type-for-one-or-more-datacontext-methods.md
             - name: 連接字串包含具有純文字密碼的認證，並且不使用整合式安全性
               href: the-connection-string-contains-credentials-with-a-clear-text-password-and-is-not-using-integrated-security.md

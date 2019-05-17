@@ -1,0 +1,438 @@
+- name: MSBuild
+  items:
+    - name: MSBuild
+      href: msbuild.md
+    - name: MSBuild 12.0 的新功能
+      href: what-s-new-in-msbuild-12-0.md
+    - name: MSBuild 概念
+      items:
+        - name: MSBuild 概念
+          href: msbuild-concepts.md
+        - name: 屬性
+          items:
+            - name: 屬性
+              href: msbuild-properties1.md
+            - name: 在組建中使用環境變數
+              href: how-to-use-environment-variables-in-a-build.md
+            - name: 參考專案檔的名稱或位置
+              href: how-to-reference-the-name-or-location-of-the-project-file.md
+            - name: 使用不同選項來建置相同的原始程式檔
+              href: how-to-build-the-same-source-files-with-different-options.md
+            - name: 屬性函式
+              href: property-functions.md
+        - name: 項目
+          items:
+            - name: 項目
+              href: msbuild-items.md
+            - name: 選取要建置的檔案
+              href: how-to-select-the-files-to-build.md
+            - name: 從組建中排除檔案
+              href: how-to-exclude-files-from-the-build.md
+            - name: 顯示以逗號分隔的項目清單
+              href: how-to-display-an-item-list-separated-with-commas.md
+            - name: 項目定義
+              href: item-definitions.md
+            - name: Item 函式
+              href: item-functions.md
+            - name: 檔案追蹤
+              items:
+                - name: 檔案追蹤
+                  href: file-tracking.md
+                - name: EndTrackingContext
+                  href: endtrackingcontext.md
+                - name: ResumeTracking
+                  href: resumetracking.md
+                - name: SetThreadCount
+                  href: setthreadcount.md
+                - name: StartTrackingContext
+                  href: starttrackingcontext.md
+                - name: StartTrackingContextWithRoot
+                  href: starttrackingcontextwithroot.md
+                - name: StopTrackingAndCleanup
+                  href: stoptrackingandcleanup.md
+                - name: SuspendTracking
+                  href: suspendtracking.md
+                - name: WriteAllTLogs
+                  href: writealltlogs.md
+                - name: WriteContextTLogs
+                  href: writecontexttlogs.md
+        - name: 目標
+          items:
+            - name: 目標
+              href: msbuild-targets.md
+            - name: 目標建置順序
+              href: target-build-order.md
+            - name: 累加建置
+              href: incremental-builds.md
+            - name: 指定要優先建置的目標
+              href: how-to-specify-which-target-to-build-first.md
+            - name: 在多個專案檔中使用相同的目標
+              href: how-to-use-the-same-target-in-multiple-project-files.md
+            - name: 使用 MSBuild.exe 在方案中建置特定目標
+              href: how-to-build-specific-targets-in-solutions-by-using-msbuild-exe.md
+            - name: 以累加方式建置
+              href: how-to-build-incrementally.md
+            - name: 清除組建
+              href: how-to-clean-a-build.md
+        - name: 工作
+          items:
+            - name: 工作
+              href: msbuild-tasks.md
+            - name: 工作撰寫
+              href: task-writing.md
+            - name: 忽略工作中的錯誤
+              href: how-to-ignore-errors-in-tasks.md
+            - name: 建置包含資源的專案
+              href: how-to-build-a-project-that-has-resources.md
+            - name: 內嵌工作
+              items:
+                - name: 內嵌工作
+                  href: msbuild-inline-tasks.md
+                - name: 建立內嵌工作
+                  href: walkthrough-creating-an-inline-task.md
+        - name: 比較屬性和項目
+          href: comparing-properties-and-items.md
+        - name: MSBuild 特殊字元
+          items:
+            - name: MSBuild 特殊字元
+              href: msbuild-special-characters.md
+            - name: 在 MSBuild 中逸出特殊字元
+              href: how-to-escape-special-characters-in-msbuild.md
+            - name: 在專案檔中使用保留的 XML 字元
+              href: how-to-use-reserved-xml-characters-in-project-files.md
+    - name: 進階概念
+      items:
+        - name: 進階概念
+          href: msbuild-advanced-concepts.md
+        - name: 批次處理
+          items:
+            - name: 批次處理
+              href: msbuild-batching.md
+            - name: 工作批次處理中的項目中繼資料
+              href: item-metadata-in-task-batching.md
+            - name: 目標批次處理中的項目中繼資料
+              href: item-metadata-in-target-batching.md
+        - name: 轉換
+          href: msbuild-transforms.md
+        - name: Visual Studio 整合
+          items:
+            - name: Visual Studio 整合
+              href: visual-studio-integration-msbuild.md
+            - name: 延伸 Visual Studio 建置流程
+              href: how-to-extend-the-visual-studio-build-process.md
+            - name: 從 IDE 中啟動組建
+              href: starting-a-build-from-within-the-ide.md
+            - name: 註冊 .NET Framework 的擴充功能
+              href: registering-extensions-of-the-dotnet-framework.md
+        - name: 以平行方式建置多個專案
+          items:
+            - name: 以平行方式建置多個專案
+              href: building-multiple-projects-in-parallel-with-msbuild.md
+            - name: 使用多個處理器來建置專案
+              href: using-multiple-processors-to-build-projects.md
+            - name: 在建置大型專案時有效使用記憶體
+              href: using-memory-efficiently-when-you-build-large-projects.md
+        - name: 多目標
+          items:
+            - name: 多目標
+              href: msbuild-multitargeting-overview.md
+            - name: Toolset (ToolsVersion)
+              items:
+                - name: Toolset (ToolsVersion)
+                  href: msbuild-toolset-toolsversion.md
+                - name: 標準和自訂工具組的組態
+                  href: standard-and-custom-toolset-configurations.md
+                - name: 覆寫 ToolsVersion 設定
+                  href: overriding-toolsversion-settings.md
+            - name: 目標 Framework 和目標平台
+              href: msbuild-target-framework-and-target-platform.md
+            - name: 在設計階段時解析組件
+              href: resolving-assemblies-at-design-time.md
+            - name: 設定目標和工作
+              items:
+                - name: 設定目標和工作
+                  href: configuring-targets-and-tasks.md
+                - name: 設定目標和工作
+                  href: how-to-configure-targets-and-tasks.md
+            - name: 疑難排解 .NET Framework 目標錯誤
+              href: troubleshooting-dotnet-framework-targeting-errors.md
+        - name: 最佳作法
+          href: msbuild-best-practices.md
+    - name: MSBuild 中的記錄
+      items:
+        - name: MSBuild 中的記錄
+          href: logging-in-msbuild.md
+        - name: 取得組建記錄檔
+          href: obtaining-build-logs-with-msbuild.md
+        - name: 組建記錄器
+          href: build-loggers.md
+        - name: 在多處理器環境中記錄
+          href: logging-in-a-multi-processor-environment.md
+        - name: 撰寫能夠辨識多處理器的記錄器
+          href: writing-multi-processor-aware-loggers.md
+        - name: 建立轉送記錄器
+          href: creating-forwarding-loggers.md
+    - name: 使用 MSBuild
+      href: walkthrough-using-msbuild.md
+    - name: 從頭建立 MSBuild 專案檔案
+      href: walkthrough-creating-an-msbuild-project-file-from-scratch.md
+    - name: MSBuild 參考
+      items:
+        - name: MSBuild 參考
+          href: msbuild-reference.md
+        - name: 專案檔結構描述參考
+          items:
+            - name: 專案檔結構描述參考
+              href: msbuild-project-file-schema-reference.md
+            - name: Choose 項目 (MSBuild)
+              href: choose-element-msbuild.md
+            - name: Import 項目 (MSBuild)
+              href: import-element-msbuild.md
+            - name: ImportGroup 元素
+              href: importgroup-element.md
+            - name: Item 項目 (MSBuild)
+              href: item-element-msbuild.md
+            - name: ItemDefinitionGroup 項目 (MSBuild)
+              href: itemdefinitiongroup-element-msbuild.md
+            - name: ItemGroup 項目 (MSBuild)
+              href: itemgroup-element-msbuild.md
+            - name: ItemMetadata 項目 (MSBuild)
+              href: itemmetadata-element-msbuild.md
+            - name: OnError 項目 (MSBuild)
+              href: onerror-element-msbuild.md
+            - name: Otherwise 項目 (MSBuild)
+              href: otherwise-element-msbuild.md
+            - name: Output 元素 (MSBuild)
+              href: output-element-msbuild.md
+            - name: Parameter 元素
+              href: parameter-element.md
+            - name: ParameterGroup 項目
+              href: parametergroup-element.md
+            - name: Project 項目 (MSBuild)
+              href: project-element-msbuild.md
+            - name: ProjectExtensions 項目 (MSBuild)
+              href: projectextensions-element-msbuild.md
+            - name: Property 項目 (MSBuild)
+              href: property-element-msbuild.md
+            - name: PropertyGroup 項目 (MSBuild)
+              href: propertygroup-element-msbuild.md
+            - name: 目標項目 (MSBuild)
+              href: target-element-msbuild.md
+            - name: Task 項目 (MSBuild)
+              href: task-element-msbuild.md
+            - name: TaskBody 項目 (MSBuild)
+              href: taskbody-element-msbuild.md
+            - name: UsingTask 項目 (MSBuild)
+              href: usingtask-element-msbuild.md
+            - name: When 元素 (MSBuild)
+              href: when-element-msbuild.md
+        - name: 工作參考
+          items:
+            - name: 工作參考
+              href: msbuild-task-reference.md
+            - name: Visual C++ 工作
+              items:
+                - name: Visual C++ 工作
+                  href: msbuild-tasks-specific-to-visual-cpp.md
+                - name: BscMake 工作
+                  href: bscmake-task.md
+                - name: CL 工作
+                  href: cl-task.md
+                - name: CPPClean 工作
+                  href: cppclean-task.md
+                - name: LIB 工作
+                  href: lib-task.md
+                - name: Link 工作
+                  href: link-task.md
+                - name: MIDL 工作
+                  href: midl-task.md
+                - name: MT 工作
+                  href: mt-task.md
+                - name: RC 工作
+                  href: rc-task.md
+                - name: SetEnv 工作
+                  href: setenv-task.md
+                - name: VCMessage 工作
+                  href: vcmessage-task.md
+                - name: XDCMake 工作
+                  href: xdcmake-task.md
+                - name: XSD 工作
+                  href: xsd-task.md
+            - name: 工作基底類別
+              href: task-base-class.md
+            - name: TaskExtension 基底類別
+              href: taskextension-base-class.md
+            - name: ToolTaskExtension 基底類別
+              href: tooltaskextension-base-class.md
+            - name: AL (組件連結器) 工作
+              href: al-assembly-linker-task.md
+            - name: AspNetCompiler 工作
+              href: aspnetcompiler-task.md
+            - name: AssignCulture 工作
+              href: assignculture-task.md
+            - name: AssignProjectConfiguration 工作
+              href: assignprojectconfiguration-task.md
+            - name: AssignTargetPath 工作
+              href: assigntargetpath-task.md
+            - name: CallTarget 工作
+              href: calltarget-task.md
+            - name: CombinePath 工作
+              href: combinepath-task.md
+            - name: ConvertToAbsolutePath 工作
+              href: converttoabsolutepath-task.md
+            - name: Copy 工作
+              href: copy-task.md
+            - name: CreateCSharpManifestResourceName 工作
+              href: createcsharpmanifestresourcename-task.md
+            - name: CreateItem 工作
+              href: createitem-task.md
+            - name: CreateProperty 工作
+              href: createproperty-task.md
+            - name: CreateVisualBasicManifestResourceName 工作
+              href: createvisualbasicmanifestresourcename-task.md
+            - name: Csc 工作
+              href: csc-task.md
+            - name: Delete 工作
+              href: delete-task.md
+            - name: Error 工作
+              href: error-task.md
+            - name: Exec 工作
+              href: exec-task.md
+            - name: FindAppConfigFile 工作
+              href: findappconfigfile-task.md
+            - name: FindInList 工作
+              href: findinlist-task.md
+            - name: FindUnderPath 工作
+              href: findunderpath-task.md
+            - name: FormatUrl 工作
+              href: formaturl-task.md
+            - name: FormatVersion 工作
+              href: formatversion-task.md
+            - name: GenerateApplicationManifest 工作
+              href: generateapplicationmanifest-task.md
+            - name: GenerateBootstrapper 工作
+              href: generatebootstrapper-task.md
+            - name: GenerateDeploymentManifest 工作
+              href: generatedeploymentmanifest-task.md
+            - name: GenerateResource 工作
+              href: generateresource-task.md
+            - name: GenerateTrustInfo 工作
+              href: generatetrustinfo-task.md
+            - name: GetAssemblyIdentity 工作
+              href: getassemblyidentity-task.md
+            - name: GetFrameworkPath 工作
+              href: getframeworkpath-task.md
+            - name: GetFrameworkSdkPath 工作
+              href: getframeworksdkpath-task.md
+            - name: GetReferenceAssemblyPaths 工作
+              href: getreferenceassemblypaths-task.md
+            - name: LC 工作
+              href: lc-task.md
+            - name: MakeDir 工作
+              href: makedir-task.md
+            - name: 訊息工作
+              href: message-task.md
+            - name: Move 工作
+              href: move-task.md
+            - name: MSBuild 工作
+              href: msbuild-task.md
+            - name: ReadLinesFromFile 工作
+              href: readlinesfromfile-task.md
+            - name: RegisterAssembly 工作
+              href: registerassembly-task.md
+            - name: RemoveDir 工作
+              href: removedir-task.md
+            - name: RemoveDuplicates 工作
+              href: removeduplicates-task.md
+            - name: RequiresFramework35SP1Assembly 工作
+              href: requiresframework35sp1assembly-task.md
+            - name: ResolveAssemblyReference 工作
+              href: resolveassemblyreference-task.md
+            - name: ResolveComReference 工作
+              href: resolvecomreference-task.md
+            - name: ResolveKeySource 工作
+              href: resolvekeysource-task.md
+            - name: ResolveManifestFiles 工作
+              href: resolvemanifestfiles-task.md
+            - name: ResolveNativeReference 工作
+              href: resolvenativereference-task.md
+            - name: ResolveNonMSBuildProjectOutput 工作
+              href: resolvenonmsbuildprojectoutput-task.md
+            - name: SGen 工作
+              href: sgen-task.md
+            - name: SignFile 工作
+              href: signfile-task.md
+            - name: Touch 工作
+              href: touch-task.md
+            - name: UnregisterAssembly 工作
+              href: unregisterassembly-task.md
+            - name: UpdateManifest 工作
+              href: updatemanifest-task.md
+            - name: Vbc 工作
+              href: vbc-task.md
+            - name: 警告工作
+              href: warning-task.md
+            - name: WriteCodeFragment 工作
+              href: writecodefragment-task.md
+            - name: WriteLinesToFile 工作
+              href: writelinestofile-task.md
+            - name: XmlPeek 工作
+              href: xmlpeek-task.md
+            - name: XmlPoke 工作
+              href: xmlpoke-task.md
+            - name: XslTransformation 工作
+              href: xsltransformation-task.md
+        - name: Conditions
+          href: msbuild-conditions.md
+        - name: 條件式建構
+          href: msbuild-conditional-constructs.md
+        - name: 保留和已知屬性
+          href: msbuild-reserved-and-well-known-properties.md
+        - name: 一般 MSBuild 專案屬性
+          href: common-msbuild-project-properties.md
+        - name: 一般 MSBuild 專案項目
+          href: common-msbuild-project-items.md
+        - name: 命令列參考
+          href: msbuild-command-line-reference.md
+        - name: .Targets 檔案
+          href: msbuild-dot-targets-files.md
+        - name: 已知的項目中繼資料
+          href: msbuild-well-known-item-metadata.md
+        - name: 回應檔
+          href: msbuild-response-files.md
+        - name: 其他資源
+          href: additional-resources-for-msbuild.md
+        - name: WPF MSBuild 參考
+          items:
+            - name: WPF MSBuild 參考
+              href: wpf-msbuild-reference.md
+            - name: .Targets 檔案
+              href: wpf-dot-targets-files.md
+            - name: 工作參考
+              items:
+                - name: 工作參考
+                  href: wpf-msbuild-task-reference.md
+                - name: FileClassifier
+                  href: fileclassifier-task.md
+                - name: GenerateTemporaryTargetAssembly
+                  href: generatetemporarytargetassembly-task.md
+                - name: GetWinFXPath
+                  href: getwinfxpath-task.md
+                - name: MarkupCompilePass1
+                  href: markupcompilepass1-task.md
+                - name: MarkupCompilePass2
+                  href: markupcompilepass2-task.md
+                - name: MergeLocalizationDirectives
+                  href: mergelocalizationdirectives-task.md
+                - name: ResourcesGenerator
+                  href: resourcesgenerator-task.md
+                - name: UidManager
+                  href: uidmanager-task.md
+                - name: UpdateManifestForBrowserApplication
+                  href: updatemanifestforbrowserapplication-task.md
+        - name: 要逸出的特殊字元
+          href: special-characters-to-escape.md
+    - name: 字彙表
+      href: msbuild-glossary1.md
+    - name: 其他資源
+      href: additional-msbuild-resources.md
