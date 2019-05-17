@@ -9,12 +9,12 @@ caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 2f162f827fa1866b5ca241bd9aaae2aadffb56e6
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: ef4d1221b59e6f1e5ed3de94f91742bbea778462
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63428601"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65679333"
 ---
 # <a name="step-8-write-code-for-the-show-a-picture-button-event-handler"></a>步驟 8：為顯示圖片按鈕事件處理常式撰寫程式碼
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,7 +49,7 @@ Visual C# 程式碼
   
     2. [IntelliSense] 視窗隨即開啟並顯示 [openFileDialog1]。 選擇 TAB 鍵加以選取。 (在 Visual Basic 中，它的開頭是大寫，因此您會看到 [OpenFileDialog1]。 確定已選取 [OpenFileDialog1])。  
   
-         若要深入了解 `OpenFileDialog`，請參閱 [OpenFileDialog](http://msdn.microsoft.com/library/system.windows.forms.openfiledialog.aspx)。  
+         若要深入了解 `OpenFileDialog`，請參閱 [OpenFileDialog](https://msdn.microsoft.com/library/system.windows.forms.openfiledialog.aspx)。  
   
     3. 鍵入句號 (`.`) (許多程式設計人員會說是一個點)。因為您在 **openFileDialog1** 後面鍵入一個點，所以 [IntelliSense] 視窗隨即開啟並填入 **OpenFileDialog** 元件的所有屬性和方法。 當您在 [Windows Forms 設計工具] 中選擇該元件時，[屬性] 視窗中也會顯示相同的屬性。 您也可以選擇指示元件執行動作 (例如開啟對話方塊) 的方法。  
   
@@ -67,7 +67,7 @@ Visual C# 程式碼
   
     4. 開始鍵入 `ShowDialog` (大小寫對 IntelliSense 而言不重要)。 `ShowDialog()` 方法會顯示 [開啟檔案] 對話方塊。 視窗反白顯示 **ShowDialog** 後，請選擇 TAB 鍵。 您也可以反白顯示「ShowDialog」和選取 F1 鍵取得其說明。  
   
-         若要深入了解 `ShowDialog()` 方法，請參閱 [ShowDialog 方法](http://msdn.microsoft.com/library/c7ykbedk.aspx)。  
+         若要深入了解 `ShowDialog()` 方法，請參閱 [ShowDialog 方法](https://msdn.microsoft.com/library/c7ykbedk.aspx)。  
   
     5. 當您在控制項或元件上使用方法時 (稱為「呼叫方法」)，需要新增括號。 因此，在 `ShowDialog` 中緊接 "g" 之後輸入左括弧和右括弧：`()`。現在這應該看起來像 "openFileDialog1.ShowDialog()"。  
   
@@ -83,7 +83,7 @@ Visual C# 程式碼
   
     8. 鍵入一個點來開啟 DialogResult 值 [IntelliSense] 視窗。 輸入字母 `O`，然後選擇 TAB 鍵插入 **OK**。  
   
-         若要深入了解 `DialogResult`，請參閱 [DialogResult](http://msdn.microsoft.com/library/system.windows.forms.dialogresult.aspx)。  
+         若要深入了解 `DialogResult`，請參閱 [DialogResult](https://msdn.microsoft.com/library/system.windows.forms.dialogresult.aspx)。  
   
         > [!NOTE]
         > 第一行程式碼應該就完成。 在 Visual C# 中，程式碼應該如下所示。  
