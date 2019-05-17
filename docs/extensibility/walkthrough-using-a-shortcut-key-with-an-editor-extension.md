@@ -272,7 +272,7 @@ public AdornmentLayerDefinition editorAdornmentLayer;
 
 ## <a name="make-the-adornment-appear-on-every-line"></a>請在每一行顯示裝飾
 
-原始的裝飾出現在每個字元 'a' 文字檔案中。 既然我們已變更的程式碼，以在回應中加入 adornment **+** 字元，它只在一行上新增 adornment 位置**+** 輸入字元。 我們可以變更 adornment 程式碼，就會出現一次的裝飾每個 'a'。
+原始的裝飾出現在每個字元 'a' 文字檔案中。 既然我們已變更的程式碼，以在回應中加入 adornment **+** 字元，它只在一行上新增 adornment 位置 **+** 輸入字元。 我們可以變更 adornment 程式碼，就會出現一次的裝飾每個 'a'。
 
 在  *KeyBindingTest.cs*檔案中，變更`CreateVisuals()`方法來逐一查看要裝飾 'a' 字元的檢視中的所有行。
 
