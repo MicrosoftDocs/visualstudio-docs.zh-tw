@@ -61,7 +61,7 @@ Managed Extension Framework (MEF) 提供在圖表功能表上定義功能表命�
 
 1. 在 **方案總管**下方**DslPackage**專案中，開啟 Commands.vsct。
 
-2. 在 `Commands` 項目中，定義一或多個按鈕和群組。 A * 按鈕*是功能表中的項目。 A*群組*是功能表中的區段。 若要定義這些項目，請加入下列項目：
+2. 在 `Commands` 項目中，定義一或多個按鈕和群組。 A *按鈕* 是功能表中的項目。 A*群組*是功能表中的區段。 若要定義這些項目，請加入下列項目：
 
     ```xml
     <!-- Define a group - a section in the menu -->
