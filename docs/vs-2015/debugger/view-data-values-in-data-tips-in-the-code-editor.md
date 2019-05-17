@@ -68,18 +68,18 @@ ms.locfileid: "65700100"
   
 ### <a name="to-close-all-datatips"></a>若要關閉所有資料提示方塊  
   
-- 在 **偵錯**功能表上，按一下**清除所有 DataTips**。  
+- 在 **偵錯**功能表上，按一下 **清除所有 DataTips** 。  
   
 ### <a name="to-close-all-datatips-for-a-specific-file"></a>若要關閉特定檔案的所有資料提示方塊  
   
-- 在 **偵錯**功能表上，按一下**清除所有 DataTips 釘選到***檔案*。  
+- 在 **偵錯**功能表上，按一下 **清除所有 DataTips 釘選到** *檔案*。  
   
 ## <a name="expanding-and-editing-information"></a>展開和編輯資訊  
  您可以使用資料提示方塊展開陣列、結構或物件，以便檢視其成員。 也可以從資料提示方塊編輯變數值。  
   
 #### <a name="to-expand-a-variable-to-see-its-elements"></a>若要展開變數以檢視項目  
   
-- 在資料提示方塊中，將滑鼠指標放**+** 前面的變數名稱的符號。  
+- 在資料提示方塊中，將滑鼠指標放 **+** 前面的變數名稱的符號。  
   
      變數就會展開並以樹狀目錄格式來顯示項目。  
   
