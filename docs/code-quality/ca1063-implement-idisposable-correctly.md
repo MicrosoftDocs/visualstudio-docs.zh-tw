@@ -16,12 +16,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: 22ecfcdd6dc20f5837622ec2cc3469f11c7efa8c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f1b2c5b447d796ddd2098a6500b6094478fcd8b9
+ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62788551"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "65842001"
 ---
 # <a name="ca1063-implement-idisposable-correctly"></a>CA1063:必須正確實作 IDisposable
 
@@ -90,7 +90,7 @@ ms.locfileid: "62788551"
 
 如果您執行這項規則，從[FxCop 分析器](install-fxcop-analyzers.md)（而不是透過靜態程式碼分析），您可以設定的哪些部分您程式碼基底上執行這項規則，根據其存取範圍。 比方說，若要指定執行規則時，應該只針對非公用 API 介面，將下列索引鍵 / 值組新增至專案中的.editorconfig 檔案：
 
-```
+```ini
 dotnet_code_quality.ca1063.api_surface = private, internal
 ```
 

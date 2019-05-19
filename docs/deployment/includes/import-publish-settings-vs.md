@@ -1,10 +1,10 @@
 ---
 ms.openlocfilehash: 8adac174fbc78778e7154a205088fb9e9a57ae4a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62899163"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "65846450"
 ---
 
 1. 在您已於 Visual Studio 中開啟 ASP.NET 專案的電腦上，以滑鼠右鍵按一下 [方案總管] 中的專案，然後選擇 [發行]。

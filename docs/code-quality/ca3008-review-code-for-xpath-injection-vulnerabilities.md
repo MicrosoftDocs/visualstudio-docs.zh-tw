@@ -10,12 +10,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: e66b75160df0e8ecf9d33601ee383ec71cd62c4d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5a4b80b8ede1ab2b8d858ed7378f318f2eebe5fa
+ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62806450"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "65841529"
 ---
 # <a name="ca3008-review-code-for-xpath-injection-vulnerabilities"></a>CA3008：檢閱程式碼是否有 XPath 插入式攻擊弱點
 
@@ -32,7 +32,7 @@ ms.locfileid: "62806450"
 
 ## <a name="rule-description"></a>規則描述
 
-當使用不受信任的輸入，留意 XPath 資料隱碼攻擊。 建構使用不受信任的輸入 XPath 查詢，可能會讓攻擊者惡意地操作傳回非預期的結果，查詢，並可能是公開的查詢的 XML 內容。 
+當使用不受信任的輸入，留意 XPath 資料隱碼攻擊。 建構使用不受信任的輸入 XPath 查詢，可能會讓攻擊者惡意地操作傳回非預期的結果，查詢，並可能是公開的查詢的 XML 內容。
 
 此規則會嘗試尋找 HTTP 要求到達的 XPath 運算式中的輸入。
 
@@ -40,7 +40,7 @@ ms.locfileid: "62806450"
 > 此規則無法追蹤多個組件的資料。 比方說，如果一個組件會讀取 HTTP 要求輸入，然後將它傳遞給另一個組件會執行 XPath 查詢，此規則將不會產生警告。
 
 > [!NOTE]
-> 沒有可設定的限制，深度此規則會分析資料流不同的方法呼叫。 請參閱[分析器組態](https://github.com/dotnet/roslyn-analyzers/blob/master/docs/Analyzer%20Configuration.md#dataflow-analysis)如何設定中的限制`.editorconfig`檔案。
+> 沒有可設定的限制，深度此規則會分析資料流不同的方法呼叫。 請參閱[分析器組態](https://github.com/dotnet/roslyn-analyzers/blob/master/docs/Analyzer%20Configuration.md#dataflow-analysis)如何 EditorConfig 檔案中設定限制。
 
 ## <a name="how-to-fix-violations"></a>如何修正違規
 
@@ -92,7 +92,7 @@ Partial Public Class WebForm
 
     Protected Sub Page_Load(sender As Object, e As EventArgs)
         Dim operation As String = Me.Request.Form("operation")
-        
+
         ' If an attacker uses this for input:
         '     ' or 'a' = 'a
         ' Then the XPath query will be:
