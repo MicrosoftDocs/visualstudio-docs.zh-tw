@@ -1,10 +1,10 @@
 ---
 ms.openlocfilehash: 983e25e65600a4174c305557b2a58e20b91f63f1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62927600"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "65846376"
 ---
 ## <a name="prerequisites"></a>必要條件
 
