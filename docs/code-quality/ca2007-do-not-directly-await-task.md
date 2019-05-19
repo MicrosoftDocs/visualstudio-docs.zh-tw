@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: jillfra
 dev_langs:
 - CSharp
-ms.openlocfilehash: bf3e13697f39f7d0f531549d4c018b9f42872596
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3f35e450f17a671b800d003b94ceb5ebc2321c90
+ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62545224"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "65841411"
 ---
 # <a name="ca2007-do-not-directly-await-a-task"></a>CA2007:不直接等候工作
 
@@ -76,7 +76,7 @@ public async Task Execute()
 
 您可以設定是否要排除不傳回值的這項規則的非同步方法。 若要排除這類方法，加入專案中的.editorconfig 檔案中的下列索引鍵 / 值組：
 
-```
+```ini
 # Package version 2.9.0 and later
 dotnet_code_quality.CA2007.exclude_async_void_methods = true
 
@@ -86,7 +86,7 @@ dotnet_code_quality.CA2007.skip_async_void_methods = true
 
 您也可以設定哪一種輸出組件類型，要套用此規則。 比方說，為只套用此規則會產生一個主控台應用程式或動態連結程式庫 （亦即，沒有 UI 應用程式） 的程式碼，將下列索引鍵 / 值組新增至專案中的.editorconfig 檔案：
 
-```
+```ini
 dotnet_code_quality.CA2007.output_kind = ConsoleApplication, DynamicallyLinkedLibrary
 ```
 
