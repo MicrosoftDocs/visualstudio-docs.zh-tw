@@ -112,12 +112,12 @@ caps.latest.revision: 52
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 87b8913a95203d082a76e8b18a92d2f509cace16
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: ca9ff0678ba2c7abafa0d988efa09437ccd27dca
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63446171"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65687562"
 ---
 # <a name="project-settings-for-a-c-debug-configuration"></a>C++ 偵錯組態的專案設定
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -141,7 +141,7 @@ ms.locfileid: "63446171"
 |**命令引數** (本機 Windows 偵錯工具和遠端 Windows 偵錯工具)|- 指定先前指定之命令的引數。<br /><br /> 您可以在這個方塊中使用下列重新導向運算子：<br /><br /> < `file`<br /> 從檔案讀取 stdin。<br /><br /> > `file`<br /> 將 stdout 寫入檔案。<br /><br /> >> `file`<br /> 將 stdout 附加至檔案。<br /><br /> 2> `file`<br /> 將 stderr 寫入檔案。<br /><br /> 2>> `file`<br /> 將 stderr 附加至檔案。<br /><br /> 2> &1<br /> 將 stderr (2) 輸出傳送到與 stdout (1) 相同的位置。<br /><br /> 1> &2<br /> 將 stdout (1) 輸出傳送到與 stderr (2) 相同的位置。<br /><br /> 在大多數情況下，這些運算子只適用於主控台應用程式。|  
 |**工作目錄**|指定要進行偵錯之程式的工作目錄 (相對於您的 EXE 所在的專案目錄)。 如果您將這個項目保持空白，工作目錄就會是專案目錄。 若為遠端偵錯，專案目錄將會在遠端伺服器上。|  
 |**附加** (本機 Windows 偵錯工具和遠端 Windows 偵錯工具)|指定是否要啟動或附加至應用程式。 預設設定為 [否]。|  
-|**遠端伺服器名稱** (遠端 Windows 偵錯工具)|指定要用於應用程式偵錯的電腦名稱 (並非您的電腦)。<br /><br /> RemoteMachine 建置巨集會設定為這個屬性的值；如需詳細資訊，請參閱[建置命令和屬性的巨集](http://msdn.microsoft.com/library/239bd708-2ea9-4687-b264-043f1febf98b)。|  
+|**遠端伺服器名稱** (遠端 Windows 偵錯工具)|指定要用於應用程式偵錯的電腦名稱 (並非您的電腦)。<br /><br /> RemoteMachine 建置巨集會設定為這個屬性的值；如需詳細資訊，請參閱[建置命令和屬性的巨集](https://msdn.microsoft.com/library/239bd708-2ea9-4687-b264-043f1febf98b)。|  
 |**連線** (遠端 Windows 偵錯工具)|可讓您在標準和無驗證連線類型之間切換，以進行遠端偵錯。 在 [遠端伺服器名稱] 方塊中指定遠端電腦名稱。 連線類型如下：<br /><br /> -   **遠端使用 Windows 驗證**<br />-   **遠端未使用驗證 (僅限原生)**<br /><br /> **注意**：[遠端未使用驗證] 可能容易使遠端電腦因為安全性違規而受到損害。 Windows 驗證模式較為安全。<br /><br /> 如需詳細資訊，請參閱[遠端偵錯設定](../debugger/remote-debugging.md)。|  
 |**HTTP URL** (Web 服務偵錯工具和網頁瀏覽器偵錯工具)|指定要偵錯之專案所在的 URL。|  
 |**偵錯工具類型**|指定要使用的偵錯程式類型：**僅限原生**、**僅限受控**、**僅限 GPU**、**已混合**、**自動** (預設值) 或**指令碼**。<br /><br /> -   **僅限原生**適用於非受控 C++ 程式碼。<br />-   **僅限受控**適用於通用語言執行平台 (受控碼) 下執行的程式碼。<br />-   **混合**會針對受控和非受控程式碼叫用偵錯工具。<br />-   **自動**會根據編譯器和 EXE 資訊判斷偵錯工具類型。<br />-   **指令碼**會針對指令碼叫用偵錯工具。<br />-   **僅限 GPU** 適用於 GPU 裝置或 DirectX 參考轉譯器上執行的 C++ AMP 程式碼。 請參閱[偵錯 GPU 程式碼](../debugger/debugging-gpu-code.md)。|  
@@ -157,33 +157,33 @@ ms.locfileid: "63446171"
   
 ### <a name="cc-folder-general-category"></a>C/C++ 資料夾 (一般分類)  
   
-|設定|說明|  
+|設定|描述|  
 |-------------|-----------------|  
-|**偵錯資訊格式** ([/Z7、/Zd、Zi、/ZI](http://msdn.microsoft.com/library/ce9fa7e1-0c9b-47e3-98ea-26d1a16257c8))|指定要為專案建立的偵錯資訊類型。<br /><br /> 預設選項 (/ZI) 會以 [編輯後繼續] 相容格式建立程式資料庫 (PDB)。 如需詳細資訊，請參閱 [/Z7、/Zd、/Zi、/ZI (偵錯資訊格式)](http://msdn.microsoft.com/library/ce9fa7e1-0c9b-47e3-98ea-26d1a16257c8) \(機器翻譯\)。|  
+|**偵錯資訊格式** ([/Z7、/Zd、Zi、/ZI](https://msdn.microsoft.com/library/ce9fa7e1-0c9b-47e3-98ea-26d1a16257c8))|指定要為專案建立的偵錯資訊類型。<br /><br /> 預設選項 (/ZI) 會以 [編輯後繼續] 相容格式建立程式資料庫 (PDB)。 如需詳細資訊，請參閱 [/Z7、/Zd、/Zi、/ZI (偵錯資訊格式)](https://msdn.microsoft.com/library/ce9fa7e1-0c9b-47e3-98ea-26d1a16257c8) \(機器翻譯\)。|  
   
 ### <a name="cc-folder-optimization-category"></a>C/C++ 資料夾 (最佳化分類)  
   
-|設定|說明|  
+|設定|描述|  
 |-------------|-----------------|  
-|**Optimization**|指定編譯器是否應該將它所產生的程式碼最佳化。 最佳化會變更執行的程式碼。 最佳化的程式碼將不再符合原始程式碼， 因此不容易進行偵錯。<br /><br /> 預設選項 (**停用 (/0d**) 會隱藏最佳化。 您可以在隱藏最佳化的情況下進行開發，然後在建立程式碼的生產環境版本時再將此功能開啟。|  
+|**Optimization**|指定編譯器是否應該將它所產生的程式碼最佳化。 最佳化會變更執行的程式碼。 最佳化的程式碼將不再符合原始程式碼， 因此不容易進行偵錯。<br /><br /> 預設選項 ([停用 (/0d **]) 會隱藏最佳化。 您可以在隱藏最佳化的情況下進行開發，然後在建立程式碼的生產環境版本時再將此功能開啟。|  
   
 ### <a name="linker-folder-debugging-category"></a>連結器資料夾 (偵錯分類)  
   
-|設定|說明|  
+|設定|描述|  
 |-------------|-----------------|  
-|**產生偵錯資訊** ([/DEBUG](http://msdn.microsoft.com/library/1af389ae-3f8b-4d76-a087-1cdf861e9103))|通知連結器要包含偵錯資訊，資訊的格式是由 /Z7、/Zd、Zi 或 /ZI 所指定。|  
-|**產生程式資料庫檔案** ([/PDB:name](http://msdn.microsoft.com/library/d23db0ce-10cb-427a-bc60-d6b2a852723d))|在這個方塊中指定 PDB 檔的名稱。 您必須選取 ZI 或 /Zi 以指定 [偵錯資訊格式]。|  
-|**移除專用符號** ([/PDBSTRIPPED:filename](http://msdn.microsoft.com/library/9b9e0070-6a13-4142-8180-19c003fbbd55))|如果您不想要在 PDB 檔中包含專用符號，請在這個方塊中指定 PDB 檔的名稱。 當您以任何會產生 PDB 檔的編譯器或連結器選項建置程式映像時，這個選項就會建立第二個程式資料庫 (PDB) 檔 (這些選項包括 /DEBUG、/Z7、/Zd  或 /Zi)。 第二個 PDB 檔會省略您不想要出貨給客戶的符號。 如需詳細資訊，請參閱 [/PDBSTRIPPED (移除專用符號)](http://msdn.microsoft.com/library/9b9e0070-6a13-4142-8180-19c003fbbd55)。|  
-|**產生對應檔案** ([/MAP](http://msdn.microsoft.com/library/9ccce53d-4e36-43da-87b0-7603ddfdea63))|通知連結器在連結期間產生對應檔。 預設設定為 [否]。 如需詳細資訊，請參閱 [/MAP (產生對應檔)](http://msdn.microsoft.com/library/9ccce53d-4e36-43da-87b0-7603ddfdea63)。|  
-|**對應檔名稱** ([/MAP:](http://msdn.microsoft.com/library/9ccce53d-4e36-43da-87b0-7603ddfdea63)*name*)|如果您選擇 [產生對應檔]，就可以在這個方塊中指定對應檔。 如需詳細資訊，請參閱 [/MAP (產生對應檔)](http://msdn.microsoft.com/library/9ccce53d-4e36-43da-87b0-7603ddfdea63)。|  
-|**對應匯出** ([/MAPINFO:EXPORTS](http://msdn.microsoft.com/library/533d2bce-f9b7-4fea-ae1c-0b4864c9d10b))|在對應檔中包含匯出函式。 預設設定為 [否]。 如需詳細資訊，請參閱 [/MAPINFO (將資訊包括在對應檔中)](http://msdn.microsoft.com/library/533d2bce-f9b7-4fea-ae1c-0b4864c9d10b) \(機器翻譯\)。|  
-|**可偵錯組件** ([/ASSEMBLYDEBUG](http://msdn.microsoft.com/library/533d2bce-f9b7-4fea-ae1c-0b4864c9d10b))|指定連結器 /ASSEMBLYDEBUG 選項的設定。 可能的值如下：<br /><br /> -   **未發出可偵錯屬性**。<br />-   **正在進行執行階段追蹤並停用最佳化 (/ASSEMBLYDEBUG)**。 這是預設設定。<br />-   **沒有執行階段追蹤並啟用最佳化 (/ASSEMBLYDEBUG:DISABLE)**。<br />-   **\<從父代或專案預設值繼承>**。<br />- 如需詳細資訊，請參閱 [/ASSEMBLYDEBUG (新增 DebuggableAttribute)](http://msdn.microsoft.com/library/94443af3-470c-41d7-83a0-7434563d7982)。|  
+|**產生偵錯資訊** ([/DEBUG](https://msdn.microsoft.com/library/1af389ae-3f8b-4d76-a087-1cdf861e9103))|通知連結器要包含偵錯資訊，資訊的格式是由 /Z7、/Zd、Zi 或 /ZI 所指定。|  
+|**產生程式資料庫檔案** ([/PDB:name](https://msdn.microsoft.com/library/d23db0ce-10cb-427a-bc60-d6b2a852723d))|在這個方塊中指定 PDB 檔的名稱。 您必須選取 ZI 或 /Zi 以指定 [偵錯資訊格式]。|  
+|**移除專用符號** ([/PDBSTRIPPED:filename](https://msdn.microsoft.com/library/9b9e0070-6a13-4142-8180-19c003fbbd55))|如果您不想要在 PDB 檔中包含專用符號，請在這個方塊中指定 PDB 檔的名稱。 當您以任何會產生 PDB 檔的編譯器或連結器選項建置程式映像時，這個選項就會建立第二個程式資料庫 (PDB) 檔 (這些選項包括 /DEBUG、/Z7、/Zd  或 /Zi)。 第二個 PDB 檔會省略您不想要出貨給客戶的符號。 如需詳細資訊，請參閱 [/PDBSTRIPPED (移除專用符號)](https://msdn.microsoft.com/library/9b9e0070-6a13-4142-8180-19c003fbbd55)。|  
+|**產生對應檔案** ([/MAP](https://msdn.microsoft.com/library/9ccce53d-4e36-43da-87b0-7603ddfdea63))|通知連結器在連結期間產生對應檔。 預設設定為 [否]。 如需詳細資訊，請參閱 [/MAP (產生對應檔)](https://msdn.microsoft.com/library/9ccce53d-4e36-43da-87b0-7603ddfdea63)。|  
+|**對應檔名稱** ([/MAP:](https://msdn.microsoft.com/library/9ccce53d-4e36-43da-87b0-7603ddfdea63)*name*)|如果您選擇 [產生對應檔]，就可以在這個方塊中指定對應檔。 如需詳細資訊，請參閱 [/MAP (產生對應檔)](https://msdn.microsoft.com/library/9ccce53d-4e36-43da-87b0-7603ddfdea63)。|  
+|**對應匯出** ([/MAPINFO:EXPORTS](https://msdn.microsoft.com/library/533d2bce-f9b7-4fea-ae1c-0b4864c9d10b))|在對應檔中包含匯出函式。 預設設定為 [否]。 如需詳細資訊，請參閱 [/MAPINFO (將資訊包括在對應檔中)](https://msdn.microsoft.com/library/533d2bce-f9b7-4fea-ae1c-0b4864c9d10b) \(機器翻譯\)。|  
+|**可偵錯組件** ([/ASSEMBLYDEBUG](https://msdn.microsoft.com/library/533d2bce-f9b7-4fea-ae1c-0b4864c9d10b))|指定連結器 /ASSEMBLYDEBUG 選項的設定。 可能的值如下：<br /><br /> -   **未發出可偵錯屬性**。<br />-   **正在進行執行階段追蹤並停用最佳化 (/ASSEMBLYDEBUG)**。 這是預設設定。<br />-   **沒有執行階段追蹤並啟用最佳化 (/ASSEMBLYDEBUG:DISABLE)**。<br />-   **\<從父代或專案預設值繼承>**。<br />- 如需詳細資訊，請參閱 [/ASSEMBLYDEBUG (新增 DebuggableAttribute)](https://msdn.microsoft.com/library/94443af3-470c-41d7-83a0-7434563d7982)。|  
   
- 您可以使用 Microsoft.VisualStudio.VCProjectEngine.VCDebugSettings 介面，以程式設計的方式在 [組態屬性] 資料夾 ([偵錯] 分類) 中變更這些設定。 如需詳細資訊，請參閱<xref:Microsoft.VisualStudio.VCProjectEngine.VCDebugSettings>。  
+ 您可以使用 Microsoft.VisualStudio.VCProjectEngine.VCDebugSettings 介面，以程式設計的方式在 [組態屬性] 資料夾 ([偵錯] 分類) 中變更這些設定。 如需詳細資訊，請參閱 <xref:Microsoft.VisualStudio.VCProjectEngine.VCDebugSettings>。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [偵錯機器碼](../debugger/debugging-native-code.md)   
  [偵錯設定和準備](../debugger/debugger-settings-and-preparation.md)   
- [建立和管理 Visual C++ 專案](http://msdn.microsoft.com/library/11003cd8-9046-4630-a189-a32bf3b88047)   
- [/ASSEMBLYDEBUG (新增 DebuggableAttribute)](http://msdn.microsoft.com/library/94443af3-470c-41d7-83a0-7434563d7982)   
- [建置命令和屬性的一般巨集](http://msdn.microsoft.com/library/239bd708-2ea9-4687-b264-043f1febf98b)
+ [建立和管理 Visual C++ 專案](https://msdn.microsoft.com/library/11003cd8-9046-4630-a189-a32bf3b88047)   
+ [/ASSEMBLYDEBUG (新增 DebuggableAttribute)](https://msdn.microsoft.com/library/94443af3-470c-41d7-83a0-7434563d7982)   
+ [建置命令和屬性的一般巨集](https://msdn.microsoft.com/library/239bd708-2ea9-4687-b264-043f1febf98b)
