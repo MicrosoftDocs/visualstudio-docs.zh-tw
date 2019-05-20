@@ -12,7 +12,7 @@ ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: cc3f461c9e7dbdea1fd8481594292a0a247d2173
 ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/22/2019
 ms.locfileid: "60038662"
@@ -35,7 +35,7 @@ ms.locfileid: "60038662"
   
     2. 按一下 [檔案] 功能表上的 [匯出範本]。 完成精靈的步驟。  
   
-         %USERPROFILE%\My Documents\Visual Studio 中建立的.zip 檔案*\<版本 >* \My Exported Templates\\。  
+         %USERPROFILE%\My Documents\Visual Studio 中建立的.zip 檔案 *\<版本>* \My Exported Templates\\。  
   
 2. 建立空的 VSIX 專案。  
   

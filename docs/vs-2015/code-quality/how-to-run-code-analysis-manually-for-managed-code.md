@@ -13,7 +13,7 @@ ms.author: gewarren
 manager: wpickett
 ms.openlocfilehash: b9b38288b081d4fb856b433255bf355c13f819ac
 ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/22/2019
 ms.locfileid: "60053855"
@@ -27,4 +27,4 @@ ms.locfileid: "60053855"
   
 1. 在 [**方案總管] 中**，按一下 [專案]。  
   
-2. 在 [**分析**] 功能表中，按一下**上執行程式碼分析***專案名稱*。
+2. 在 [**分析**] 功能表中，按一下**上執行程式碼分析** *專案名稱*。

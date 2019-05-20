@@ -58,7 +58,7 @@ ms.locfileid: "62538134"
 
      所顯示的前面加上 '&' 字元功能表項目名稱中的字元加底線。 不過，.vsct 檔案以 XML 撰寫，會使用 '&' 字元來表示特殊字元，且需要顯示連字號，必須拼出為&amp;'。 因此，在.vsct 檔案中，**列印**命令會顯示為 '&amp;列印 '。
 
-- 命令，例如具有動態的文字**儲存***目前的檔名*，和動態產生功能表項目，例如項目**最近使用的檔案**清單。
+- 命令，例如具有動態的文字**儲存** *目前的檔名*，和動態產生功能表項目，例如項目**最近使用的檔案**清單。
 
      沒有任何可靠的方法，以進行動態文字搜尋。 相反地，尋找 群組可裝載所需的命令諮詢[Guid 和 Id 的 Visual Studio 功能表](../../extensibility/internals/guids-and-ids-of-visual-studio-menus.md)或[Guid 和 Id 的 Visual Studio 工具列](../../extensibility/internals/guids-and-ids-of-visual-studio-toolbars.md)，並搜尋該群組的識別碼。 如果命令不需要定義群組做為其[父元素](../../extensibility/parent-element.md)，搜尋 SharedCmdPlace.vsct 並 ShellCmdPlace.vsct （或偵錯工具命令 VsDbgCmdPlace.vsct）`<CommandPlacement>`設定的父代的項目命令。 SharedCmdPlace.vsct，ShellCmdPlace.vsct，andVsDbgCmdPlace.vsct 處於*Visual Studio SDK 安裝路徑*\VisualStudioIntegration\Common\Inc\ 資料夾。
 

@@ -68,7 +68,7 @@ ms.locfileid: "63417182"
 
 1. 建立具有功能表命令的 VSPackage。 (如需詳細資訊，請參閱 <<c0> [ 建立具有功能表命令的延伸模組](../extensibility/creating-an-extension-with-a-menu-command.md)。)
 
-2. 開啟包含 VSPackage 之定義的檔案。 (在 C# 專案中，它有*\<您的專案名稱 > Package.cs*。)
+2. 開啟包含 VSPackage 之定義的檔案。 (在 C# 專案中，它有*\<您的專案名稱>Package.cs*。)
 
 3. 將下列 `using` 陳述式加入檔案中：
 
@@ -162,7 +162,7 @@ ms.locfileid: "63417182"
 
 1. 建立具有功能表命令，為 VSPackage[如何開始開發的 VSIX 擴充功能？](../extensibility/faq-converting-add-ins-to-vspackage-extensions.md#BKMK_StartDeveloping)一節。
 
-2. 開啟包含 VSPackage 之定義的檔案。 (在 C# 專案中，它有*\<您的專案名稱 > Package.cs*。)
+2. 開啟包含 VSPackage 之定義的檔案。 (在 C# 專案中，它有*\<您的專案名稱>Package.cs*。)
 
 3. 加入以下 `using` 陳述式：
 
@@ -210,7 +210,7 @@ ms.locfileid: "63417182"
 
 1. 建立具有功能表命令，為 VSPackage[如何開始開發的 VSIX 擴充功能？](../extensibility/faq-converting-add-ins-to-vspackage-extensions.md#BKMK_StartDeveloping)一節。
 
-2. 開啟包含 VSPackage 之定義的檔案。 (在 C# 專案中，它有*\<您的專案名稱 > Package.cs*。)
+2. 開啟包含 VSPackage 之定義的檔案。 (在 C# 專案中，它有*\<您的專案名稱>Package.cs*。)
 
 3. 加入以下 `using` 陳述式：
 
