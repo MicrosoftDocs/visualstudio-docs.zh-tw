@@ -102,7 +102,7 @@ ms.locfileid: "65690600"
 
      若要啟用 Just In Time 偵錯 Windows Form 應用程式，您必須執行下列額外步驟：
 
-2. 設定`jitDebugging`值加入`true`中`system.windows.form`machine.config 區段或*\<應用程式名稱 >*.exe.config 檔案：
+2. 設定`jitDebugging`值加入`true`中`system.windows.form`machine.config 區段或 *\<應用程式名稱>* .exe.config 檔案：
 
     ```
     <configuration>
