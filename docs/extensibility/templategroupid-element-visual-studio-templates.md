@@ -55,7 +55,7 @@ ms.locfileid: "62432144"
 ## <a name="remarks"></a>備註
  `TemplateGroupID` 是元素。
 
- 值`TemplateGroupID`項目搭配專案系統登錄 (hkey_local_machine\software\microsoft\visualstudio \\\*\<版本號碼 >* \Projects\\)會出現在篩選器範本**加入新項目** 對話方塊。
+ 值`TemplateGroupID`項目搭配專案系統登錄 (hkey_local_machine\software\microsoft\visualstudio\\*\<版本號碼>* \Projects\\)會出現在篩選器範本 **加入新項目** 對話方塊。
 
 |Visual C++ 值|意義|
 |------------------------|-------------|

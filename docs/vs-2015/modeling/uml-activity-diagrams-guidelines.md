@@ -220,7 +220,7 @@ ms.locfileid: "63439730"
 - 設定**上限**屬性來指定緩衝區中的物件可以包含最大數目。 預設值為 *。 這表示沒有任何限制。  
   
 ### <a name="describing-data-flow-with-input-and-output-pins"></a>使用輸入和輸出連接描述資料流程  
- 使用** 輸出接點**並**輸入 pin 碼**分別描述一個動作到另一個輸入與輸出。  
+ 使用 **輸出接點** 並 **輸入 pin 碼** 分別描述一個動作到另一個輸入與輸出。  
   
  ![輸入和輸出連接都是動作參數](../modeling/media/uml-actguidepins.png "UML_ActGuidePins")  
   

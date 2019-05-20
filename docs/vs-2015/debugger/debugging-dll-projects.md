@@ -79,7 +79,7 @@ ms.locfileid: "65691390"
  若要將偵錯工具附加至以 C++ 撰寫的程式碼，該程式碼必須發出 `DebuggableAttribute`。 您可以使用 [/ASSEMBLYDEBUG](https://msdn.microsoft.com/library/94443af3-470c-41d7-83a0-7434563d7982) 連結器選項連結，將其自動加入程式碼。  
   
 ## <a name="vxtskdebuggingdllprojectsmixedmodedebugging"></a> Mixed-Mode Debugging  
- 呼叫 DLL 的呼叫應用程式可以用 Managed 程式碼或機器碼撰寫。 如果您的 Managed DLL 是由機器碼呼叫，而您要偵錯 Managed 程式碼和機器碼，則 Managed 偵錯工具和原生偵錯工具皆必須啟用。 您可以選取這**\<專案 > 屬性頁**對話方塊或視窗。 不同的做法是取決於您是由 DLL 專案啟動偵錯，或者由呼叫應用程式專案啟動偵錯。 如需詳細資訊，請參閱[如何：在混合模式偵錯](../debugger/how-to-debug-in-mixed-mode.md)。  
+ 呼叫 DLL 的呼叫應用程式可以用 Managed 程式碼或機器碼撰寫。 如果您的 Managed DLL 是由機器碼呼叫，而您要偵錯 Managed 程式碼和機器碼，則 Managed 偵錯工具和原生偵錯工具皆必須啟用。 您可以選取這 **\<專案>屬性頁** 對話方塊或視窗。 不同的做法是取決於您是由 DLL 專案啟動偵錯，或者由呼叫應用程式專案啟動偵錯。 如需詳細資訊，請參閱[如何：在混合模式偵錯](../debugger/how-to-debug-in-mixed-mode.md)。  
   
 ## <a name="vxtskdebuggingdllprojectschangingdefaultconfigurations"></a> Changing Default Configurations  
  當您以專案範本建立主控台應用程式專案時， [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 會自動建立偵錯和發行組態所需要的設定。 若有需要，您可以變更這些設定。 如需詳細資訊，請參閱 <<c0> [ 的專案設定C++偵錯組態](../debugger/project-settings-for-a-cpp-debug-configuration.md)，[的專案設定C#偵錯組態](../debugger/project-settings-for-csharp-debug-configurations.md)， [Visual Basic 偵錯的專案設定組態](../debugger/project-settings-for-a-visual-basic-debug-configuration.md)，和[How to:</c0>設定偵錯和發行組態](../debugger/how-to-set-debug-and-release-configurations.md)。  

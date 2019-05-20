@@ -41,7 +41,7 @@ ms.locfileid: "63426961"
   
  建議您檢查產生的程式碼，以協助您了解 DSL。 若要查看產生的檔案，請展開 [方案總管] 中的 *.tt 檔。  
   
- \*.Tt 檔包含很少的產生程式碼。 相反地，這些檔案使用 `<#include>` 指示詞來包含共用範本檔案。 共用的檔案可在**\Program Files\Microsoft Visual Studio 10.0\Common7\IDE\Extensions\Microsoft\DSL SDK\DSL Designer\11.0\TextTemplates**  
+ \*.Tt 檔包含很少的產生程式碼。 相反地，這些檔案使用 `<#include>` 指示詞來包含共用範本檔案。 共用的檔案可在 **\Program Files\Microsoft Visual Studio 10.0\Common7\IDE\Extensions\Microsoft\DSL SDK\DSL Designer\11.0\TextTemplates**   
   
  當您將自己的程式碼加入至 DSL 方案時，請將此程式碼加入至 Generated Code 資料夾外部的其他檔案中。 您可能想要建立**自訂程式碼**資料夾。 (當您將新的程式碼檔案加入至自訂資料夾時，請記得修正初始程式碼基本架構中的命名空間)。  
   
@@ -62,7 +62,7 @@ ms.locfileid: "63426961"
   
  *YourDsl* `Schema.xsd`  
   
- 包含您的 DSL 執行個體的檔案結構描述。 這個檔案複製到編譯 (**bin**) 目錄。 當您安裝 DSL 時，您可以複製這個檔案來**\Program Files\Microsoft Visual Studio 11.0\Xml\Schemas**以驗證模型檔案。 如需詳細資訊，請參閱[部署特定領域語言方案](../modeling/deploying-domain-specific-language-solutions.md)。  
+ 包含您的 DSL 執行個體的檔案結構描述。 這個檔案複製到編譯 (**bin**) 目錄。 當您安裝 DSL 時，您可以複製這個檔案來 **\Program Files\Microsoft Visual Studio 11.0\Xml\Schemas** 以驗證模型檔案。 如需詳細資訊，請參閱[部署特定領域語言方案](../modeling/deploying-domain-specific-language-solutions.md)。  
   
  如果透過設定 [DSL 總管] 中的選項來自訂序列化，此結構描述會據以變更。 但是，如果您撰寫自己的序列化程式碼，這個檔案可能不再表示實際的結構描述。 如需詳細資訊，請參閱 <<c0> [ 自訂檔案儲存體和 XML 序列化](../modeling/customizing-file-storage-and-xml-serialization.md)。  
   

@@ -126,7 +126,7 @@ ms.locfileid: "65689996"
   
     ```  
   
-     XML 參考文件放在一起的參考檔案。 例如，XML 參考文件**\References\\< 組態\>\\< a c h\>\sample.dll**組件是**\References\\< 組態\>\\< a c h\>\sample.xml**，，文件的當地語系化的版本，而且**\References\\< 組態\>\\<arch\>\\< 地區設定\>\sample.xml**。  
+     XML 參考文件放在一起的參考檔案。 例如，XML 參考文件 **\References\\<組態\>\\<a c h\>\sample.dll**組件是**\References\\<組態\>\\<a c h\>\sample.xml**，，文件的當地語系化的版本，而且**\References\\<組態\>\\<arch\>\\< 地區設定\>\sample.xml**。  
   
 5. 設定資料夾： 三個子資料夾：偵錯、 零售版和 CommonConfiguration。 相同的 SDK 檔案集應該取用，不論目標 SDK 取用者的組態時，SDK 作者可以放置在 CommonConfiguration 檔案。  
   

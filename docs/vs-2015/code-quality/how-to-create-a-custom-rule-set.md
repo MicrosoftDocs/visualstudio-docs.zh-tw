@@ -15,7 +15,7 @@ ms.author: gewarren
 manager: wpickett
 ms.openlocfilehash: 909242aaf8dd4caaee7af75e40554aaff648df68
 ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/22/2019
 ms.locfileid: "60045651"
@@ -97,7 +97,7 @@ ms.locfileid: "60045651"
   
 - 若要摺疊所有群組中的規則，請按一下**全部摺疊**。  
   
-- 若要變更規則依據該欄位，選取 從欄位**Group By**清單。 若要顯示未分組的規則，請選取**\<無 >**。  
+- 若要變更規則依據該欄位，選取 從欄位**Group By**清單。 若要顯示未分組的規則，請選取 **\<無>** 。  
   
 - 若要新增或移除欄位規則的資料行中，按一下**資料行選項**。  
   
