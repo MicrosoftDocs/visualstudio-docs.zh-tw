@@ -12,12 +12,12 @@ ms.assetid: 76435c4b-593e-43a3-a9fe-709a7f9f5e0f
 caps.latest.revision: 42
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 2cb53bfc500edbf46f277dd86e2c035461d9f9af
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 5ca980b9f51b5c66b5ddfde18c0fb464c73faf99
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63416510"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65686578"
 ---
 # <a name="editing-coded-ui-tests-using-the-coded-ui-test-editor"></a>使用自動程式化 UI 測試編輯器，編輯自動程式化 UI 測試
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -75,7 +75,7 @@ ms.locfileid: "63416510"
   
  若要修改 UI 動作的屬性，請在 [ **UI 動作** ] 窗格中，展開包含您想要編輯其屬性之 UI 動作的測試方法，選取 UI 動作，然後使用 [屬性] 視窗修改屬性。  
   
- 比方說，如果伺服器無法使用，且您有一個與網頁瀏覽器建立關聯的 UI 動作，其說明**移至網頁 ‘<http://Contoso1/default.aspx’>**，則可以將 URL 變更為 `‘ http://Contoso2/default.aspx’`。  
+ 比方說，如果伺服器無法使用，且您有一個與網頁瀏覽器建立關聯的 UI 動作，其說明**移至網頁 ‘<http://Contoso1/default.aspx’>**，則可以將 URL 變更為 `‘http://Contoso2/default.aspx’`。  
   
  ![控制項屬性](../test/media/codeduitestcontrolprop.png "CodedUITestControlProp")  
 編輯控制項屬性  
@@ -219,5 +219,5 @@ ms.locfileid: "63416510"
  [使用使用者介面自動化來測試您的程式碼](../test/use-ui-automation-to-test-your-code.md)   
  [建立自動程式化 UI 測試](../test/use-ui-automation-to-test-your-code.md#VerifyingCodeUsingCUITCreate)   
  [建立資料驅動自動程式碼 UI 測試](../test/creating-a-data-driven-coded-ui-test.md)   
- [從現有的動作記錄產生自動程式碼 UI 測試](http://msdn.microsoft.com/library/56736963-9027-493b-b5c4-2d4e86d1d497)   
+ [從現有的動作記錄產生自動程式碼 UI 測試](https://msdn.microsoft.com/library/56736963-9027-493b-b5c4-2d4e86d1d497)   
  [逐步解說：建立、編輯及維護自動程式化 UI 測試](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md)
