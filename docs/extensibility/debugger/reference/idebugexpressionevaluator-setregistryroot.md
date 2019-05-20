@@ -45,7 +45,7 @@ int SetRegistryRoot(
  如果成功，則傳回`S_OK`; 否則傳回錯誤碼。
 
 ## <a name="remarks"></a>備註
- 運算式評估工具會先具現化，並點時，通常設定指定的登錄根登錄機碼的 Visual Studio 特定版本 (hkey_local_machine\software\microsoft\visualstudio \\\*X.Y*，其中 *X.Y* 是版本號碼)。
+ 運算式評估工具會先具現化，並點時，通常設定指定的登錄根登錄機碼的 Visual Studio 特定版本 (hkey_local_machine\software\microsoft\visualstudio\\\*X.Y*，其中 *X.Y* 是版本號碼)。
 
 ## <a name="see-also"></a>另請參閱
 - [IDebugExpressionEvaluator](../../../extensibility/debugger/reference/idebugexpressionevaluator.md)
