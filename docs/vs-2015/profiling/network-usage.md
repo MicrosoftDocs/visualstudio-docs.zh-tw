@@ -9,12 +9,12 @@ caps.latest.revision: 12
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 33e5dbeced93ddfd1a1eec817d205a7be80d0e60
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: d85b71c2ed54a8ab8bc85c93ce61e3ed274d86e0
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63441889"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65673813"
 ---
 # <a name="network-usage"></a>網路使用量
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -74,6 +74,6 @@ Visual Studio 的 [網路] 診斷工具會收集使用 [Windows.Web.Http 應用�
 3. 回應美化顯示按鈕 (在主體索引標籤內) 可協助您藉由增加內容可讀性來剖析 JSON、XML、HTML、CSS、JavaScript 和 TypeScript 的回應裝載。  
   
 ## <a name="see-also"></a>另請參閱  
- [執行但不偵錯程式碼剖析工具](http://msdn.microsoft.com/library/e97ce1a4-62d6-4b8e-a2f7-61576437ff01)   
+ [執行但不偵錯程式碼剖析工具](https://msdn.microsoft.com/library/e97ce1a4-62d6-4b8e-a2f7-61576437ff01)   
  [Visual Studio 部落格：簡介 Visual Studio 的網路偵測器](http://go.microsoft.com/fwlink/?LinkId=535022)   
  [Channel 9 影片：VS 診斷工具-新的網路 Profiler](http://channel9.msdn.com/Series/ConnectOn-Demand/206)

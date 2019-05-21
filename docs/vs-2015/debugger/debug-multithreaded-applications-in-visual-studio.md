@@ -22,12 +22,12 @@ caps.latest.revision: 28
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 8315a797aec5fcedbf33df6ca96f41879b57d971
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: HT
+ms.openlocfilehash: 8cb43c9a32f3dfd0a6383d466f7cd283acf0ab3a
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60054296"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65691273"
 ---
 # <a name="debug-multithreaded-applications-in-visual-studio"></a>在 Visual Studio 中偵錯多執行緒應用程式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,7 +38,7 @@ ms.locfileid: "60054296"
 
  除此之外，多執行緒也帶來一些新類型的潛在錯誤。 舉例來說，常常有兩個以上的執行緒必須存取相同資源，但同時間只有一個執行緒能夠安全存取該資源。 所以某些形式的互斥是必要的，才能確保同時間只有一個執行緒在存取該資源。 如果執行互斥的方式不正確，就可以建立*死結*條件沒有任何執行緒可以執行的位置。 在偵錯時死結可能會是個特別難處理的問題。
 
- Visual Studio 提供**執行緒**視窗、 [GPU 執行緒] 視窗、 [平行監看式] 視窗中和其他功能可讓多執行緒偵錯更容易。 了解執行緒功能最好的方式，就是執行逐步解說。 請參閱[逐步解說：偵錯多執行緒應用程式](../debugger/walkthrough-debugging-a-multithreaded-application.md)和[逐步解說：偵錯C++AMP 應用程式](http://msdn.microsoft.com/library/40e92ecc-f6ba-411c-960c-b3047b854fb5)。
+ Visual Studio 提供**執行緒**視窗、 [GPU 執行緒] 視窗、 [平行監看式] 視窗中和其他功能可讓多執行緒偵錯更容易。 了解執行緒功能最好的方式，就是執行逐步解說。 請參閱[逐步解說：偵錯多執行緒應用程式](../debugger/walkthrough-debugging-a-multithreaded-application.md)和[逐步解說：偵錯C++AMP 應用程式](https://msdn.microsoft.com/library/40e92ecc-f6ba-411c-960c-b3047b854fb5)。
 
  Visual Studio 同樣提供強大的中斷點和追蹤點，這在您對多執行緒應用程式進行偵錯時非常實用。 您可以使用中斷點篩選條件，將中斷點放置在個別執行緒上。 請參閱[使用中斷點](../debugger/using-breakpoints.md)
 
@@ -70,7 +70,7 @@ ms.locfileid: "60054296"
 
  [使用平行堆疊視窗](../debugger/using-the-parallel-stacks-window.md)顯示呼叫堆疊的多個執行緒 （或工作） 中的單一檢視，而且也聯合共有的執行緒 （或工作） 的堆疊區段。
 
- [逐步解說：偵錯平行應用程式](../debugger/walkthrough-debugging-a-parallel-application.md)逐步解說，示範如何使用 [平行工作] 和 [平行堆疊視窗。
+ [逐步解說：偵錯平行應用程式](../debugger/walkthrough-debugging-a-parallel-application.md)逐步解說，示範如何使用 [平行工作] 和 平行堆疊視窗。
 
  [如何：使用平行監看式視窗](../debugger/how-to-use-the-parallel-watch-window.md)跨多個執行緒檢查值和運算式。
 
@@ -83,11 +83,11 @@ ms.locfileid: "60054296"
 
 - 追蹤點可以讓您追蹤程式的執行，而不會中斷程式。 在研究死結這類的問題時非常好用。
 
-  [執行緒](http://msdn.microsoft.com/library/7b46a7d9-c6f1-46d1-a947-ae97471bba87)中的執行緒概念[!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]程式設計，包括範例程式碼。
+  [執行緒](https://msdn.microsoft.com/library/7b46a7d9-c6f1-46d1-a947-ae97471bba87)中的執行緒概念[!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]程式設計，包括範例程式碼。
 
-  [元件中的多執行緒](http://msdn.microsoft.com/library/2fc31e68-fb71-4544-b654-0ce720478779)如何使用中的多執行緒[!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]元件。
+  [元件中的多執行緒](https://msdn.microsoft.com/library/2fc31e68-fb71-4544-b654-0ce720478779)如何使用中的多執行緒[!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]元件。
 
-  [舊版程式碼的多執行緒支援 (Visual C++)](http://msdn.microsoft.com/library/24425b1f-5031-4c6b-aac7-017115a40e7c)的執行緒概念和程式碼範例C++使用 MFC 的程式設計人員。
+  [舊版程式碼的多執行緒支援 (Visual C++)](https://msdn.microsoft.com/library/24425b1f-5031-4c6b-aac7-017115a40e7c)的執行緒概念和程式碼範例C++使用 MFC 的程式設計人員。
 
 ## <a name="see-also"></a>另請參閱
  [偵錯執行緒和處理程序](../debugger/debug-threads-and-processes.md)[遠端偵錯](../debugger/remote-debugging.md)
