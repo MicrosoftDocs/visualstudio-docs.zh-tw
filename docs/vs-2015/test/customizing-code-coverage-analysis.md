@@ -8,12 +8,12 @@ ms.assetid: f6337c35-acae-4c5f-b5d9-ac5ff687ef18
 caps.latest.revision: 18
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ef0a8d1867114cd655f1e361cf0401dab6bce1a5
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 15093cc6af6e61384c393b1c3e435df3840a2811
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63416649"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65686444"
 ---
 # <a name="customizing-code-coverage-analysis"></a>自訂程式碼涵蓋範圍分析
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -181,7 +181,7 @@ ms.locfileid: "63416649"
  依序選擇 [測試]、[測試設定] 和 [選取測試設定檔]，然後選取 .runsettings 檔案。 該檔案隨即出現在 [測試設定 ]功能表中，您可以加以選取或取消。 選取該檔案時，無論何時只要使用 [分析程式碼涵蓋範圍] 就會套用您的 runsettings 檔案。  
   
 ### <a name="to-customize-run-settings-in-a-command-line-test"></a>自訂命令列測試中的回合設定  
- 若要從命令列執行測試，請使用 vstest.console.exe。 設定檔案是此公用程式的參數。 如需詳細資訊，請參閱[從命令列使用 VSTest.console](http://msdn.microsoft.com/library/852812d8-b3bb-407e-bc43-04d511fcb27a)。  
+ 若要從命令列執行測試，請使用 vstest.console.exe。 設定檔案是此公用程式的參數。 如需詳細資訊，請參閱[從命令列使用 VSTest.console](https://msdn.microsoft.com/library/852812d8-b3bb-407e-bc43-04d511fcb27a)。  
   
 1. 啟動 Visual Studio Developer 命令提示字元：  
   
@@ -202,7 +202,7 @@ ms.locfileid: "63416649"
   
 3. 在 [流程] 頁面上，展開 [自動化測試]、[測試來源]、[回合設定]。 選取 **.runsettings** 檔案。  
   
-   - <em>但是會出現 [測試組件] 而非 [測試來源]。當我嘗試設定 [回合設定]** 欄位時，我只能選取 .testsettings 檔案。*  
+   - <em>但是會出現 [測試組件] 而非 [測試來源]。當我嘗試設定 [回合設定] 欄位時，我只能選取 .testsettings 檔案。*  
   
       在 [自動化測試] 下選取 [測試組件]，然後選擇該行結尾的 [...]。 在 [新增/編輯測試回合] 對話方塊中，將 [測試執行器] 設為 [Visual Studio 測試執行器]。  
   
@@ -237,7 +237,7 @@ Note that searching for symbols increases code coverage runtime. So keep this sm
 <!--  
 About include/exclude lists:  
 Empty "Include" clauses imply all; empty "Exclude" clauses imply none.  
-Each element in the list is a regular expression (ECMAScript syntax). See http://msdn.microsoft.com/library/2k3te2cs.aspx.  
+Each element in the list is a regular expression (ECMAScript syntax). See https://msdn.microsoft.com/library/2k3te2cs.aspx.  
 An item must first match at least one entry in the include list to be included.  
 Included items must then not match any entries in the exclude list to remain included.  
 -->  

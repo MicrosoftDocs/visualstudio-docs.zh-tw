@@ -23,14 +23,14 @@ caps.latest.revision: 48
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 8d7d4524f1839179ac253265d95f191caf1c50af
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 54d64fd59e71b582548aa5efade8d45a24ddb560
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63445681"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65701161"
 ---
-# <a name="how-to-add-or-remove-references-by-using-the-reference-manager"></a>HOW TO：新增或移除參考，可以使用 參考管理員
+# <a name="how-to-add-or-remove-references-by-using-the-reference-manager"></a>作法：新增或移除參考，可以使用 參考管理員
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 針對由您本身、Microsoft 或其他公司所開發的元件，您可以使用 [參考管理員] 對話方塊新增並管理這些元件的參考。 如果您正在開發通用 Windows app，您的專案會自動參考所有正確的 Windows SDK DLL。 如果您正在開發 .NET 應用程式，您的專案會自動參考 mscorlib.dll。 某些 .NET API 是在您手動加入的元件中公開。 您必須手動加入對 COM 元件或自訂元件的參考。  
@@ -94,7 +94,7 @@ ms.locfileid: "63445681"
   
 - 使用 [!INCLUDE[net_v40_short](../includes/net-v40-short-md.md)] 的元件與目標針對 [!INCLUDE[net_v45](../includes/net-v45-md.md)] 的專案不相容。  
   
-     當您建立新的應用程式時，有些專案預設會以 [!INCLUDE[net_v45](../includes/net-v45-md.md)] 為目標。 如需詳細資訊，請參閱 [.NET Framework Client Profile](http://msdn.microsoft.com/library/f0219919-1f02-4588-8704-327a62fd91f1)。  
+     當您建立新的應用程式時，有些專案預設會以 [!INCLUDE[net_v45](../includes/net-v45-md.md)] 為目標。 如需詳細資訊，請參閱 [.NET Framework Client Profile](https://msdn.microsoft.com/library/f0219919-1f02-4588-8704-327a62fd91f1)。  
   
 - 您應該避免將檔案參考加入至同一方案中的其他專案輸出，因為這麼做可能會造成編譯錯誤。 請改用 [加入參考] 對話方塊中的 [專案] 索引標籤，來建立專案對專案間的參考。 這樣一來就能夠更有效的管理在專案中所建立的類別庫，使得小組開發更為容易。 如需詳細資訊，請參閱[針對中斷參考進行疑難排解](../ide/troubleshooting-broken-references.md)。  
   
@@ -163,7 +163,7 @@ ms.locfileid: "63445681"
 ### <a name="core-subgroup"></a>核心子群組  
  [核心] 子群組會列出目標版本 Windows 的 SDK 中所有的 WinMD (針對 Windows 執行階段項目)。  
   
- [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] 應用程式專案預設包含專案建立時，[!INCLUDE[win8](../includes/win8-md.md)] SDK 中的所有 WinMD 參考。 在 Managed 專案中，方案總管 [參考] 資料夾下的唯讀節點表示整個 [!INCLUDE[win8](../includes/win8-md.md)] 的參考。 因此，在參考管理員] 中的 [核心] 子群組不會列舉任何組件從[!INCLUDE[win8](../includes/win8-md.md)]SDK，並改為顯示一則訊息：「 Windows SDK 已經被參考。 請使用物件瀏覽器瀏覽 Windows SDK 中的參考」。  
+ [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] 應用程式專案預設包含專案建立時，[!INCLUDE[win8](../includes/win8-md.md)] SDK 中的所有 WinMD 參考。 在 Managed 專案中，方案總管 [參考] 資料夾下的唯讀節點表示整個 [!INCLUDE[win8](../includes/win8-md.md)] 的參考。 因此，在參考管理員 中的 [核心] 子群組不會列舉任何組件從[!INCLUDE[win8](../includes/win8-md.md)]SDK，並改為顯示一則訊息：「 Windows SDK 已經被參考。 請使用物件瀏覽器瀏覽 Windows SDK 中的參考」。  
   
  根據預設，在傳統型專案中，[核心] 子群組不會出現。 您可以開啟專案節點的捷徑功能表、選擇 [卸載專案]、加入下列程式碼片段，然後重新開啟專案 (在專案節點上選擇 [重新載入專案])，即可新增 Windows 執行階段。 當您叫用 [參考管理員] 對話方塊時，[核心] 子群組隨即出現。  
   
@@ -173,7 +173,7 @@ ms.locfileid: "63445681"
 </PropertyGroup>  
 ```  
   
- 確定已在這個子群組上選取 [Windows] 核取方塊。 接著您應該就能使用 Windows 執行階段項目。 不過，您可能也會想要加入 System.Runtime，讓 Windows 執行階段定義一些標準類別和介面，例如 IEnumerable，以便在整個 Windows 執行階段程式庫中使用。 如需如何加入 System.Runtime 的詳細資訊，請參閱[受管理的傳統型應用程式與 Windows 執行階段](http://msdn.microsoft.com/library/windows/apps/jj856306.aspx#consuming_standard_windows_runtime_types)。  
+ 確定已在這個子群組上選取 [Windows] 核取方塊。 接著您應該就能使用 Windows 執行階段項目。 不過，您可能也會想要加入 System.Runtime，讓 Windows 執行階段定義一些標準類別和介面，例如 IEnumerable，以便在整個 Windows 執行階段程式庫中使用。 如需如何加入 System.Runtime 的詳細資訊，請參閱[受管理的傳統型應用程式與 Windows 執行階段](https://msdn.microsoft.com/library/windows/apps/jj856306.aspx#consuming_standard_windows_runtime_types)。  
   
 ### <a name="extensions-subgroup"></a>擴充功能子群組  
  [擴充功能] 會列出擴充目標 Windows 平台的使用者 SDK。 這個索引標籤只會針對 [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] 應用程式專案顯示。 傳統型專案不會顯示這個索引標籤，因為這類專案只能使用第一方 .winmd 檔案。  
@@ -216,5 +216,5 @@ ms.locfileid: "63445681"
  [參考管理員] 對話方塊中的搜尋列會在成為焦點的索引標籤上運作。 好比說，如果使用者在 [方案] 索引標籤成為焦點時於搜尋列中鍵入 "System"，除非方案擁有包含 "System" 的專案名稱，否則搜尋不會傳回任何結果。  
   
 ## <a name="see-also"></a>另請參閱  
- [NIB 如何：新增或移除參考使用加入參考對話方塊](http://msdn.microsoft.com/3bd75d61-f00c-47c0-86a2-dd1f20e231c9)   
+ [NIB 如何：新增或移除參考使用加入參考對話方塊](https://msdn.microsoft.com/3bd75d61-f00c-47c0-86a2-dd1f20e231c9)   
  [管理專案中的參考](../ide/managing-references-in-a-project.md)

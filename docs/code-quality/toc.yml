@@ -103,12 +103,10 @@
           href: using-rule-sets-to-group-code-analysis-rules.md
         - name: 分析器套件的規則集
           href: analyzer-rule-sets.md
-        - name: 受控碼的規則集
-          items:
-            - name: 受控碼的規則集
-              href: how-to-configure-code-analysis-for-a-managed-code-project.md
-            - name: 設定 ASP.NET Web 應用程式的程式碼分析
-              href: how-to-configure-code-analysis-for-an-aspnet-web-application.md
+        - name: 設定靜態程式碼分析的規則集
+          href: how-to-configure-code-analysis-for-a-managed-code-project.md
+        - name: 設定 ASP.NET Web 應用程式的程式碼分析
+          href: how-to-configure-code-analysis-for-an-aspnet-web-application.md
         - name: C++ 程式碼的規則集
           href: using-rule-sets-to-specify-the-cpp-rules-to-run.md
         - name: 建立自訂規則集
