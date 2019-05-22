@@ -11,12 +11,12 @@ caps.latest.revision: 56
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: d36b2cb0c4e8e7ddf9016302c9efcfae0710097c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 2957cb0a45b0cec6f50ef6228b798ce8279f456c
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62568352"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65685395"
 ---
 # <a name="overview-of-domain-specific-language-tools"></a>Domain-Specific Language Tools 概觀
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -80,4 +80,4 @@ ms.locfileid: "62568352"
   
 ## <a name="see-also"></a>請參閱  
  [實驗執行個體](../extensibility/the-experimental-instance.md)   
- [Domain-Specific Language Tools Glossary](http://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa) (特定領域語言工具字彙表)
+ [Domain-Specific Language Tools Glossary](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa) (特定領域語言工具字彙表)

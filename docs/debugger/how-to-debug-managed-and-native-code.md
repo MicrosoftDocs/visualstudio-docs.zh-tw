@@ -15,12 +15,12 @@ manager: jillfra
 ms.workload:
 - dotnet
 - cplusplus
-ms.openlocfilehash: d1fefda9d8d639bf8d360bbd6b869b75b7dae903
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3dfdc230a4dc873cc9a068e2f641da022018aff3
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62847891"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65679402"
 ---
 # <a name="tutorial-debug-c-and-c-in-the-same-debugging-session"></a>教學課程：在同一個偵錯工作階段中進行 C# 和 C++ 偵錯
 

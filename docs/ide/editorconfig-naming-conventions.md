@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bb72f491046d16f028561c19995a27a6ab64a830
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 4385ad73b29f1266bb368a781da11279f887942b
+ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62557296"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "65847366"
 ---
 # <a name="net-naming-conventions-for-editorconfig"></a>EditorConfig 的 .NET 命名慣例
 
@@ -179,7 +179,7 @@ error | 當未遵循此樣式時，在 [錯誤清單] 中顯示編譯器錯誤�
 
 下列 .editorconfig 檔案所包含的命名慣例指定公用屬性、方法、欄位、事件及委派必須為大寫。 請注意，此命名慣例指定了多種要套用規則的符號類型，並使用逗號分隔值。
 
-```EditorConfig
+```ini
 # Public members must be capitalized (public_members_must_be_capitalized)
 [*.{cs,vb}]
 dotnet_naming_rule.public_members_must_be_capitalized.symbols   = public_symbols
@@ -199,7 +199,7 @@ dotnet_naming_rule.public_members_must_be_capitalized.severity = suggestion
 
 現在讓我們將違規嚴重性變更為 `warning`：
 
-```EditorConfig
+```ini
 dotnet_naming_rule.public_members_must_be_capitalized.severity = warning
 ```
 

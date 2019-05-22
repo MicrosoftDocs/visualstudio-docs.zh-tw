@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - aspnet
-ms.openlocfilehash: 2026767778f1e060ccff4a05af2649a40c1d984f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 65d6dbd67debc4673173af29e0c92aa57b58c865
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62810085"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65703880"
 ---
 # <a name="quickstart-analyze-cpu-usage-data-in-visual-studio-aspnet"></a>快速入門：在 Visual Studio 中分析 CPU 使用量資料 (ASP.NET)
 

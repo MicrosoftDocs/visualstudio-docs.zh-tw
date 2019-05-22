@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: a5e39778a2d503470629f6c8b7c9243b9dc69cf3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e5495bb1f531db00d43e04cce9f5f771c88cc1a7
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62903793"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65679196"
 ---
 # <a name="quickstart-debug-with-c-or-visual-basic-using-the-visual-studio-debugger"></a>快速入門：使用 Visual Studio 偵錯工具對 C# 或 Visual Basic 進行偵錯
 

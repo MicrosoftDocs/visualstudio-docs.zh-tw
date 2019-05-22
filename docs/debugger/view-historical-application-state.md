@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 78b755991bd90684c08c7126cb17fd169db7e57c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 6249a5ab4a8beef8ff8af766d4bac5a0e110ad66
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62901673"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65676582"
 ---
 # <a name="inspect-previous-app-states-using-intellitrace-step-back-in-visual-studio-visual-studio-enterprise"></a>使用 Visual Studio 中的 IntelliTrace 回溯，檢查先前的應用程式狀態 (Visual Studio Enterprise)
 

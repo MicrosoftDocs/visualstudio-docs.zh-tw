@@ -7,12 +7,12 @@ ms.date: 12/19/2018
 ms.topic: conceptual
 description: 了解如何啟用 Visual Studio 訂用帳戶所含的 Azure 權益。
 searchscope: VS Subscription
-ms.openlocfilehash: 2c78f4d88cf42197691fa798af115c16227bd2a1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c47012e0a06c4e4b44833b0f6727d3c7a79fd13c
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62948444"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65685928"
 ---
 # <a name="use-microsoft-azure-in-visual-studio-subscriptions"></a>在 Visual Studio 訂用帳戶中使用 Microsoft Azure
 
@@ -102,7 +102,7 @@ ms.locfileid: "62948444"
 
 如果您的訂用帳戶具有消費限制，而您在它過期之前未採取任何動作，則會停用您的 Azure 訂用帳戶。 若要將它轉換為預付型供應項目並繼續使用它，請新增付款方式並[移除您的消費限制](/azure/billing/billing-spending-limit/)。
 
-如果您不想繼續此 Visual Studio Azure 訂用帳戶，便可以將您的資源 (例如虛擬機器和資料庫) 移轉到另一個 Azure 訂用帳戶，並可隨時[取消](http://azure.microsoft.com/support/cancel-account/)此訂用帳戶。
+如果您不想繼續此 Visual Studio Azure 訂用帳戶，便可以將您的資源 (例如虛擬機器和資料庫) 移轉到另一個 Azure 訂用帳戶，並可隨時[取消](https://azure.microsoft.com/support/cancel-account/)此訂用帳戶。
 
 如果您確信不應該收到這封電子郵件，請連絡 [Azure 客戶支援](https://portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade)。
 
