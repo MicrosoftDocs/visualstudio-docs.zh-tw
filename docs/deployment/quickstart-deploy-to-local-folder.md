@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5627cd0f5ad37a7f92408e887b87d5eda14706eb
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5335221c1234a48d093658bc06ad4cc7611f4d44
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62927601"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65679284"
 ---
 # <a name="deploy-an-app-to-a-local-folder-using-visual-studio"></a>使用 Visual Studio 將應用程式部署到本機資料夾
 

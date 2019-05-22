@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 505678b52253d1efb21b06a2fb39d5250311167c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3f5cfe112aff36910ca4b4861d3a65cc7ea61655
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62852598"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65679377"
 ---
 # <a name="how-to-debug-for-absolute-beginners"></a>完全初學者如何偵錯
 

@@ -11,11 +11,11 @@ ms.prod: visual-studio-windows
 ms.technology: vs-installation
 ms.topic: include
 ms.openlocfilehash: 3543953495c35748d41f1eb5c8d52e66eb470285
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62962377"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "65848894"
 ---
 ## <a name="visual-studio-core-editor-included-with-visual-studio-team-explorer-2019"></a>Visual Studio 核心編輯器 (隨附於 Visual Studio Team Explorer 2019)
 
