@@ -101,6 +101,7 @@ f1_keywords:
 - CA1504
 - CA1505
 - CA1506
+- CA1507
 - CA1600
 - CA1601
 - CA1700
@@ -259,12 +260,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: ad553cc46f9681ba5a13437960e77b221d330e36
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: fabb7a7d0e13218532da40ce15d0f2661875b15e
+ms.sourcegitcommit: 92a04c57ac0a49f304fa2ea5043436f30068c3cd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62809438"
+ms.lasthandoff: 05/21/2019
+ms.locfileid: "65976180"
 ---
 # <a name="code-analysis-warnings-for-managed-code-by-checkid"></a>依據 checkid 列出 managed 程式碼的程式碼分析警告
 
