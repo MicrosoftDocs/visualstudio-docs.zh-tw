@@ -16,12 +16,12 @@ manager: jillfra
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: 3cdd9f0b46c578f713b7f2af2940f4d7742df19a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a5778764bb065ae6da53016c2c9bbb557db20c51
+ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62557212"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "65847383"
 ---
 # <a name="net-coding-convention-settings-for-editorconfig"></a>EditorConfig 的 .NET 編碼慣例設定
 
@@ -29,7 +29,7 @@ ms.locfileid: "62557212"
 
 > [!TIP]
 > - 當您在 .editorconfig 檔案中定義編碼慣例時，需設定您希望 Visual Studio 內建的[程式碼樣式分析器](../code-quality/roslyn-analyzers-overview.md)用來分析程式碼的方式。 .editorconfig 檔案為適用於這些分析器的設定檔。
-> - 您也可以在[文字編輯器的 [選項]](code-styles-and-quick-actions.md) 對話方塊中，設定適用於 Visual Studio 的程式碼樣式喜好設定。 不過，.editorconfig 設定具有較高的優先順序，而您在 [選項] 中設定的喜好設定不會與特定專案建立關聯。
+> - 您也可以在[文字編輯器的 [選項]](code-styles-and-code-cleanup.md) 對話方塊中，設定適用於 Visual Studio 的程式碼樣式喜好設定。 不過，.editorconfig 設定具有較高的優先順序，而您在 [選項] 中設定的喜好設定不會與特定專案建立關聯。
 
 此文章結尾包含[範例 .editorconfig 檔案](#example-editorconfig-file)。
 
@@ -239,7 +239,7 @@ AddHandler Elapsed, AddressOf Handler
 
 這些規則可能會出現在 .editorconfig 檔案中，如下所示：
 
-```EditorConfig
+```ini
 # CSharp and Visual Basic code style settings:
 [*.{cs,vb}]
 dotnet_style_qualification_for_field = false:suggestion
@@ -307,7 +307,7 @@ Dim local = Int32.MaxValue
 
 這些規則可能會出現在 .editorconfig 檔案中，如下所示：
 
-```EditorConfig
+```ini
 # CSharp and Visual Basic code style settings:
 [*.{cs,vb}]
 dotnet_style_predefined_type_for_locals_parameters_members = true:suggestion
@@ -408,7 +408,7 @@ End Class
 
 這些規則可能會出現在 .editorconfig 檔案中，如下所示：
 
-```EditorConfig
+```ini
 # CSharp and Visual Basic code style settings:
 [*.{cs,vb}]
 dotnet_style_require_accessibility_modifiers = always:suggestion
@@ -530,7 +530,7 @@ Dim v = a.b.Length
 
 這些規則可能會出現在 .editorconfig 檔案中，如下所示：
 
-```EditorConfig
+```ini
 # CSharp and Visual Basic code style settings:
 [*.{cs,vb}]
 dotnet_style_parentheses_in_arithmetic_binary_operators = always_for_clarity:silent
@@ -822,7 +822,7 @@ End If
 
 這些規則可能會出現在 .editorconfig 檔案中，如下所示：
 
-```EditorConfig
+```ini
 # CSharp and Visual Basic code style settings:
 [*.{cs,vb}]
 dotnet_style_object_initializer = true:suggestion
@@ -898,7 +898,7 @@ Dim v = If(o IsNot Nothing, o.ToString(), Nothing)
 
 這些規則可能會出現在 .editorconfig 檔案中，如下所示：
 
-```EditorConfig
+```ini
 # CSharp and Visual Basic code style settings:
 [*.{cs,vb}]
 dotnet_style_coalesce_expression = true:suggestion
@@ -968,7 +968,7 @@ bool f = this.Init();
 
 Editorconfig 檔案範例︰
 
-```EditorConfig
+```ini
 # CSharp code style settings:
 [*.cs]
 csharp_style_var_for_built_in_types = true:suggestion
@@ -1115,7 +1115,7 @@ public int Age { get { return _age; } set { _age = value; } }
 
 Editorconfig 檔案範例︰
 
-```EditorConfig
+```ini
 # CSharp code style settings:
 [*.cs]
 csharp_style_expression_bodied_methods = false:silent
@@ -1170,7 +1170,7 @@ if (s != null) {...}
 
 Editorconfig 檔案範例︰
 
-```EditorConfig
+```ini
 # CSharp code style settings:
 [*.cs]
 csharp_style_pattern_matching_over_is_with_cast_check = true:suggestion
@@ -1205,7 +1205,7 @@ if (int.TryParse(value, out i) {...}
 
 Editorconfig 檔案範例︰
 
-```EditorConfig
+```ini
 # CSharp code style settings:
 [*.cs]
 csharp_style_inlined_variable_declaration = true:suggestion
@@ -1287,7 +1287,7 @@ fibonacci = (int n) =>
 
 Editorconfig 檔案範例︰
 
-```EditorConfig
+```ini
 # CSharp code style settings:
 [*.cs]
 csharp_prefer_simple_default_expression = true:suggestion
@@ -1339,7 +1339,7 @@ if (func != null) { func(args); }
 
 Editorconfig 檔案範例︰
 
-```EditorConfig
+```ini
 # CSharp code style settings:
 [*.cs]
 csharp_style_throw_expression = true:suggestion
@@ -1373,7 +1373,7 @@ if (test) this.Display();
 
 Editorconfig 檔案範例︰
 
-```EditorConfig
+```ini
 # CSharp code style settings:
 [*.cs]
 csharp_prefer_braces = true:silent
@@ -1458,7 +1458,7 @@ using System.Threading.Tasks;
 
 Editorconfig 檔案範例︰
 
-```EditorConfig
+```ini
 # .NET formatting settings:
 [*.{cs,vb}]
 dotnet_sort_system_directives_first = true
@@ -1486,7 +1486,7 @@ using Octokit;
 
 Editorconfig 檔案範例︰
 
-```EditorConfig
+```ini
 # .NET formatting settings:
 [*.{cs,vb}]
 dotnet_separate_import_directive_groups = true
@@ -1683,7 +1683,7 @@ var q = from a in e from b in e
 
 Editorconfig 檔案範例︰
 
-```EditorConfig
+```ini
 # CSharp formatting settings:
 [*.cs]
 csharp_new_line_before_open_brace = methods, properties, control_blocks, types
@@ -1832,7 +1832,7 @@ class C
 
 Editorconfig 檔案範例︰
 
-```EditorConfig
+```ini
 # CSharp formatting settings:
 [*.cs]
 csharp_indent_case_contents = true
@@ -2127,7 +2127,7 @@ void Goo(int x)
 
 Editorconfig 檔案範例︰
 
-```EditorConfig
+```ini
 # CSharp formatting settings:
 [*.cs]
 csharp_space_after_cast = true
@@ -2190,7 +2190,7 @@ public int MyProperty
 
 Editorconfig 檔案範例︰
 
-```EditorConfig
+```ini
 # CSharp formatting settings:
 [*.cs]
 csharp_preserve_single_line_statements = true
@@ -2201,7 +2201,7 @@ csharp_preserve_single_line_blocks = true
 
 為了協助您開始使用，以下是含有預設選項的 *.editorconfig* 檔案範例：
 
-```EditorConfig
+```ini
 ###############################
 # Core EditorConfig Options   #
 ###############################

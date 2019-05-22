@@ -7,12 +7,12 @@ ms.date: 10/03/2017
 ms.topic: conceptual
 description: 了解如何尋找及下載隨附於 Visual Studio 訂用帳戶的 Microsoft 產品。
 searchscope: VS Subscription
-ms.openlocfilehash: 5aec4ca179f5adc77a01538807ae3498c69964ae
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b0808da563ca37b675bb5f79841db25c40ecf5f7
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62953697"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65697775"
 ---
 # <a name="using-subscriber-downloads-in-visual-studio-subscriptions"></a>使用 Visual Studio 訂用帳戶的訂閱者下載
 您可以存取各種下載軟體，這是訂閱者權益的一部分。
@@ -31,7 +31,7 @@ ms.locfileid: "62953697"
 - **重複的軟體。** 包含 Office 的訂用帳戶中不再提供選定的 Office 套件和獨立的 Office 下載及產品金鑰。 提供對應的同版最高 Office 套件的下載和產品金鑰。  例如，如果您搜尋 PowerPoint 2010，則搜尋不會產生任何結果。  不過，您可以搜尋 Office 2010 (包含 PowerPoint 2010 的 Office 套件)，並下載套件。
 
 ## <a name="what-do-i-get"></a>該怎麼做？
-下載的數量及類型取決於您的訂用帳戶層級和方案成員資格。  例如，使用 Visual Studio Enterprise 標準訂用帳戶的訂閱者，和透過 Microsoft 合作夥伴網路或 BizSpark 方案訂用帳戶的訂閱者，兩者能取得的下載不同。  若要深入了解各訂用帳戶層級有哪些下載可用，請下載[依權益層級排序的產品](https://download.microsoft.com/download/1/5/4/15454442-CF17-47B9-A65D-DF84EF88511B/Products_by_Benefit_Level.xlsx)清單。
+下載的數量及類型取決於您的訂用帳戶層級和方案成員資格。  例如，使用 Visual Studio Enterprise 標準訂用帳戶的訂閱者，和透過 Microsoft 合作夥伴網路或 BizSpark 方案訂用帳戶的訂閱者，兩者能取得的下載不同。  若要深入了解各訂用帳戶層級有哪些下載可用，請下載[依權益層級排序的產品](http://download.microsoft.com/download/1/5/4/15454442-CF17-47B9-A65D-DF84EF88511B/Visual_Studio_by_Subscription_Level.xlsx)清單。
 
 不確定您使用哪一個訂用帳戶？  連線到 [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) 以查看指派給您的電子郵件地址的所有訂用帳戶。 若沒有看到您的所有訂用帳戶，可能有一或多個訂用帳戶是指派到不同的電子郵件地址。  您必須以該電子郵件地址登入才能查看對應的訂用帳戶。
 
