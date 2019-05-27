@@ -7,12 +7,12 @@ ms.date: 12/19/2018
 ms.topic: conceptual
 description: 有關提供哪些訂用帳戶、套用哪些規則，以及 MPN 中提供多少訂用帳戶的詳細資料。
 searchscope: VS Subscription
-ms.openlocfilehash: c7e58cd53ccbab31e90f2fc73a07b1011473777e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a91dc4954a7455505867027a365f5a23a3ef0a46
+ms.sourcegitcommit: 283f2dbce044a18e9f6ac6398f6fc78e074ec1ed
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62945397"
+ms.lasthandoff: 05/16/2019
+ms.locfileid: "65805298"
 ---
 # <a name="visual-studio-subscriptions-offered-to-partners-in-the-microsoft-partner-network-mpn"></a>Microsoft 合作夥伴網路 (MPN) 中提供的 Visual Studio 訂用帳戶
 擁有專長認證或購買 MPN 行動套件的合作夥伴，有資格使用 Visual Studio 訂用帳戶。 這些訂用帳戶是依每位使用者授權，而且只有在指派給為合作夥伴工作的特定具名使用者時才有效。
@@ -52,7 +52,7 @@ ms.locfileid: "62945397"
 - Windows 企業版 -- 僅限最新版本，僅供開發和測試之用
 - Windows Server -- 僅限最新版本，僅供開發和測試之用
 
-Visual Studio Professional (MPN) 訂閱者也可以下載並使用免費的軟體進行開發，包括 SQL Server Developer Edition。
+Visual Studio Professional (MPN) 訂閱者也可以下載並使用軟體進行開發，包括 SQL Server Developer Edition。
 
 Visual Studio Professional (MPN) 訂用帳戶不包括 Azure DevOps Services 權益、每月 Azure 點數、技術支援、訓練，或 Visual Studio 訂用帳戶提供的市售其他訂閱者權益。
 

@@ -7,16 +7,16 @@ ms.date: 12/19/2018
 ms.topic: conceptual
 description: 了解 Visual Studio 訂用帳戶中所含的 Office 365 開發人員權益。
 searchscope: VS Subscription
-ms.openlocfilehash: 31dae1adaaa4fd500357988471718f6ea074a40c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3ae71e50ab93cbc17cdf6f4cd4e550a627b0f600
+ms.sourcegitcommit: 0ef51e3517436a85cfb85bf492722d566ce602c4
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62947169"
+ms.lasthandoff: 05/20/2019
+ms.locfileid: "65934594"
 ---
 # <a name="the-office-365-developer-subscription-benefit-in-visual-studio-subscriptions"></a>Visual Studio 訂用帳戶的 Office 365 開發人員訂用帳戶權益
 
-使用選取之 Visual Studio Enterprise 訂用帳戶的訂閱者，會收到 Office 365 開發人員訂用帳戶權益。  Office 365 開發人員訂用帳戶可讓您開發、測試及部署適用於 Microsoft Office 和 Microsoft SharePoint 的增益集。  這項權益可提供給一個租用戶及最多 25 名使用者。
+使用所選 Visual Studio 訂用帳戶的訂閱者，會收到 Office 365 開發人員訂用帳戶權益。  Office 365 開發人員訂用帳戶可讓您開發、測試及部署適用於 Microsoft Office 和 Microsoft SharePoint 的增益集。  這項權益可提供給一個租用戶及最多 25 名使用者。
 
 ## <a name="activation-steps"></a>啟用步驟
 
@@ -67,7 +67,7 @@ ms.locfileid: "62947169"
 | 訂用帳戶層級                                                 |     通道                                            | 優勢                                                          | 可續約？    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
 | Visual Studio Enterprise (Standard)   | VL, Azure, 零售, 選取的 NFR<sup>1</sup> | 包含      |  是          |
-| Visual Studio Professional (Standard) | VL, Azure, 零售                                       | 無法使用                                                            |NA         |
+| Visual Studio Professional (Standard) | VL, Azure, 零售                                       | 包含                                                            |是         |
 | Visual Studio Test Professional (標準訂用帳戶)                         | VL, 零售                                              | 無法使用                                             |  NA         |
 | MSDN 平台 (標準)                                          | VL, 零售                                              | 無法使用                                              | NA         |
 | Visual Studio Dev Essentials | NA  | 無法使用 |NA |

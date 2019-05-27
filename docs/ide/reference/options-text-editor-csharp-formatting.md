@@ -18,18 +18,23 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: ec1847f30f5c04bd32ddea85ff95a0808daa8aa7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a11fa7913828ef557c87ec50184c9de35a9e5bc4
+ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62817810"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "65847436"
 ---
-# <a name="options-text-editor-c-code-style-formatting"></a>選項、文字編輯器、C#、程式碼樣式、格式化
+# <a name="options-dialog-box-text-editor--c--code-style--formatting"></a>選項對話方塊：[文字編輯器] \> [C#] \> [程式碼樣式] \> [格式化]
 
-使用 [格式化] 選項頁面，可設定在程式碼編輯器中用於程式碼格式化的選項。 若要存取此選項頁面，請選擇 [工具] > [選項]。 在 [選項] 對話方塊中，選擇 [文字編輯器] > [C#] > [程式碼樣式] > [格式化]。
+若要設定程式碼編輯器中的程式碼格式化選項，請使用 [格式化] 選項頁面和它的子頁面 ([[縮排]](#indentation-page)、[新行]、[間距] 與 [換行])。
 
-## <a name="general-page"></a>[一般] 頁面
+若要存取此 [選項] 頁面，請從功能表列選擇 [工具] > [選項]。 在 [選項] 對話方塊中，選擇 [文字編輯器] > [C#] > [程式碼樣式] > [格式化]。
+
+> [!TIP]
+> [縮排]、[新行]、[間距] 和 [換行] 子頁面都會在底部顯示預覽視窗，以顯示每個選項的效果。 若要使用預覽視窗，請選取一個格式化選項。 預覽視窗會呈現所選選項的範例。 當您選取選項按鈕或核取方塊以變更設定時，預覽視窗會更新以顯示新設定的影響。
+
+## <a name="formatting-general-page"></a>格式化 (一般) 頁面
 
 ### <a name="general-settings"></a>一般設定
 
@@ -43,9 +48,17 @@ ms.locfileid: "62817810"
 |**在傳回時自動格式化**|選取時，會在按下 **Enter** 時將文字格式化，使其符合為編輯器選取的格式化選項。|
 |**貼上時自動格式化**|選取時，系統會將貼入編輯器的文字格式化，使其符合為編輯器選取的格式化選項。|
 
+::: moniker range="vs-2019"
+
+如果您先前是使用 Visual Studio 2017 中的 [格式化文件] 命令，對 C# 檔案套用程式碼樣式設定，該功能現在已改為 [[程式碼清除]](../code-styles-and-code-cleanup.md#apply-code-styles)。
+
+::: moniker-end
+
+::: moniker range="vs-2017"
+
 ### <a name="format-document-settings"></a>將文件格式化的設定
 
-這些設定會設定**將文件格式化**的命令，以在檔案執行額外的程式碼清理。 如需這些設定的套用方式詳細資訊，請參閱[將文件格式化的命令](../code-styles-and-quick-actions.md#format-document-command)。
+這些設定會設定**將文件格式化**的命令，以在檔案執行額外的程式碼清理。 如需這些設定的套用方式詳細資訊，請參閱[將文件格式化的命令](../code-styles-and-code-cleanup.md#apply-code-styles)。
 
 |標籤|說明|對應的 EditorConfig 與 [工具] > [選項] 規則|
 |-----------|-----------------|-----------------|-----------------|
@@ -68,13 +81,18 @@ ms.locfileid: "62817810"
 
 ![Visual Studio 中 C# 的程式碼清理設定](media/format-document-settings.png)
 
-## <a name="preview-windows"></a>預覽視窗
+::: moniker-end
 
-[縮排]、[新行]、[間距] 和 [換行] 子頁面都會在底部顯示預覽視窗。 預覽視窗會呈現每個選項的效果。 若要使用預覽視窗，請選取一個格式化選項。 預覽視窗會呈現所選選項的範例。 當您選取選項按鈕或核取方塊以變更設定時，預覽視窗會更新以顯示新設定的影響。
+## <a name="indentation-page"></a>縮排頁面
 
-## <a name="indentation-remarks"></a>縮排備註
+此頁面的縮排選項適用於自動格式化程式碼的情況。 例如，當您將程式碼貼入檔案，同時選取 [貼上時自動格式化] 時。 ([貼上時自動格式化] 選項位於 [格式化] > [一般] 下方)。
 
-針對每種語言，[定位] 頁面上的縮排選項只會決定當您在行末按下 **Enter** 時，程式碼編輯器會在哪裡放置游標。 [格式化] 下方的 [縮排] 選項會在自動格式化程式碼時套用，例如：當您將程式碼貼入至檔案，同時選取 [貼上時自動格式化] 時，以及以手動方式輸入要格式化的區塊時。
+![Visual Studio 中 C# 文字編輯器的縮排選項](media/csharp-indentation-options.png)
+
+> [!TIP]
+> 此外，還有 [文字編輯器] > [C#] > [索引標籤] 選項頁面上的縮排選項。 這些選項只會決定當您在行末按下 **Enter** 時，程式碼編輯器會在哪裡放置游標。
+>
+> ![Visual Studio 中 C# 文字編輯器的 [索引標籤] 選項](media/csharp-tabs-options.png)
 
 ## <a name="see-also"></a>另請參閱
 

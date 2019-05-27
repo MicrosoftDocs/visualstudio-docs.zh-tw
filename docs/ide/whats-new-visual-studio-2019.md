@@ -2,7 +2,7 @@
 title: Visual Studio 2019 的新功能
 titleSuffix: ''
 description: 了解 Visual Studio 2019 中的新功能。
-ms.date: 04/23/2019
+ms.date: 05/22/2019
 helpviewer_keywords:
 - Visual Studio, what's new
 - what's new [Visual Studio]
@@ -15,16 +15,16 @@ ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: 3093641ad07ad3ae0f4796c2064c3e6901ae03ba
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: e22463ad6a50270412652b2797628010e169b1ba
+ms.sourcegitcommit: 92a04c57ac0a49f304fa2ea5043436f30068c3cd
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63432024"
+ms.lasthandoff: 05/21/2019
+ms.locfileid: "65976241"
 ---
 # <a name="whats-new-in-visual-studio-2019"></a>Visual Studio 2019 的新功能
 
-已針對 [16.0 版](/visualstudio/releases/2019/release-notes/)更新
+已針對 [16.1 版](/visualstudio/releases/2019/release-notes/)更新
 
 >[!div class="button"]
 >[下載 Visual Studio 2019](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2019)
@@ -59,11 +59,11 @@ C# 中有許多全新且非常有用的重構，讓您輕鬆就能組織您的�
 
    ![Visual Studio 2019 中的重構體驗動畫](media/vs-2019/refactorings.gif)
 
-只要按下 **Ctrl+.**，來叫用重構 然後選取您想要採取的動作。
+只要按下 **Ctrl+.** ，來叫用重構 然後選取您想要採取的動作。
 
 ### <a name="intellicode"></a>IntelliCode
 
-[Visual Studio IntelliCode](/visualstudio/intellicode/) 是使用人工智慧 (AI) 以改善軟體開發工作的延伸模組。 IntelliCode 在 GitHub 上的 2,000 個開放原始碼專案中訓練 (每個專案各有超過 100 顆星) 以產生建議。
+[Visual Studio IntelliCode](/visualstudio/intellicode/) 可使用人工智慧 (AI) 來強化您的軟體開發工作。 IntelliCode 在 GitHub 上的 2,000 個開放原始碼專案中訓練 (每個專案各有超過 100 顆星) 以產生建議。
 
  ![Visual Studio 2019 中的 IntelliCode 動畫](media/vs-2019/IntelliCode.gif)
 
@@ -74,23 +74,33 @@ C# 中有許多全新且非常有用的重構，讓您輕鬆就能組織您的�
 * 找出難以捕捉的程式碼問題
 * 將注意力放在真正重要的區域，專注在程式碼檢閱上
 
-當我們最初預覽適用於 Visual Studio 的 IntelliCode 延伸模組時，最早僅支援 C#。 現在，我們也在 Visual Studio 中新增了對 C++ 和 XAML 的支援。
+一開始以 Visual Studio 的延伸模組形式提供 IntelliCode 預覽時，我們僅支援 C#。 現在，我們也新增了對 C++ 和 XAML 的「內建」支援，以作為 **16.1 版的新功能** (不過，對 C++ 和 TypeScript/JavaScript 的支援目前仍為預覽狀態)。
 
 如果您使用 C#，我們也新增了以您的程式碼訓練自訂模型的能力。
 
-如需 IntelliCode 的詳細資訊，請參閱[使用 Visual Studio IntelliCode 編寫更多程式碼、捲動更少](https://devblogs.microsoft.com/visualstudio/code-more-scroll-less-with-visual-studio-intellicode/) \(英文\) 部落格文章。
+如需 IntelliCode 的詳細資訊，請參閱 [Announcing the general availability of IntelliCode plus a sneak peek](https://devblogs.microsoft.com/visualstudio/announcing-the-general-availability-of-intellicode-plus-a-sneak-peek/) (宣告 IntelliCode 正式運作與搶先預覽) 以及 [Code more, scroll less with Visual Studio IntelliCode](https://devblogs.microsoft.com/visualstudio/code-more-scroll-less-with-visual-studio-intellicode/) (使用 Visual Studio IntelliCode 撰寫更多程式碼並捲動更少) 部落格文章。
 
 ### <a name="code-cleanup"></a>程式碼清除
 
 新的程式碼清除命令會與新文件健康狀態指標搭配。 您可以使用這個新的命令來找出警告與建議，並透過按一下按鈕進行修正。
 
-清除作業會設定程式碼格式，並套用由[目前的設定](code-styles-and-quick-actions.md)和 [.editorconfig 檔案](create-portable-custom-editor-options.md)所建議的任何程式碼修正。
+清除作業會設定程式碼格式，並套用由[目前的設定](code-styles-and-code-cleanup.md)和 [.editorconfig 檔案](create-portable-custom-editor-options.md)所建議的任何程式碼修正。
 
    ![Visual Studio 2019 中的新程式碼清除控制項螢幕擷取畫面](media/vs-2019/code-cleanup-profile.png)
 
 您也可以將修正程式集合儲存為設定檔。 例如，如果您有一組較少的目標修正程式經常在編寫程式碼時套用，然後在程式碼檢閱之前會套用另一組完整的修正程式，您可以將設定檔設定為處理這些不同的工作。
 
    ![Visual Studio 2019 中的新程式碼清除控制項螢幕擷取畫面](media/vs-2019/code-cleanup-profile-configure.png)
+
+### <a name="per-monitor-aware-pma-rendering"></a>個別監視器感知 (PMA) 轉譯
+
+如果您以不同顯示比例因素設定監視器，或從遠端連線到具有不同於您主要裝置顯示比例因素的機器，您可能會發現 Visual Studio 的顯示模糊，或以錯誤的比例轉譯。
+
+Visual Studio 2019 的發行，代表我們正著手將 Visual Studio 調整為個別監視器感知 (PMA) 應用程式。 現在，不論您使用的顯示縮放比例為何，Visual Studio 均可正確轉譯。
+
+   ![Visual Studio 2019 中的個別監視器感知 (PMA) 轉譯](media/vs-2019/pma-dpi-scaling.png)
+
+如需詳細資訊，請參閱[使用 Visual Studio 2019 獲得更好的多監視器體驗](https://devblogs.microsoft.com/visualstudio/a-better-multi-monitor-experience-with-visual-studio-2019/) \(英文\) 部落格文章。
 
 ## <a name="collaborate"></a>共同作業
 
@@ -104,7 +114,7 @@ C# 中有許多全新且非常有用的重構，讓您輕鬆就能組織您的�
 
    ![Visual Studio 2019 中的新開始視窗螢幕擷取畫面](media/vs-2019/start-window-dark.png)
 
-開始視窗會顯示數個選項，協助您快速編寫程式碼。 我們放置的選項可先複製，或從存放庫中簽出程式碼。  
+開始視窗會顯示數個選項，協助您快速編寫程式碼。 我們放置的選項可先複製，或從存放庫中簽出程式碼。
 
    ![Visual Studio 2019 中的「Git 優先」體驗動畫](media/vs-2019/git-first.gif)
 
@@ -128,7 +138,7 @@ Visual Studio 2019 預設會安裝這項服務。
 
    ![Visual Studio 2019 中的新開始視窗螢幕擷取畫面](media/vs-2019/pr-experience.png)
 
-若要立即開始，您可以從 Visual Studio Marketplace 下載[適用於 Visual Studio 的提取要求](https://aka.ms/pr4vs)延伸模組。
+如需詳細資訊，請參閱 [Code reviews using the Visual Studio Pull Requests extension](https://devblogs.microsoft.com/visualstudio/code-reviews-using-the-visual-studio-pull-requests-extension/) (使用 Visual Studio 提取要求延伸模組檢閱程式碼) 部落格文章。
 
 ## <a name="debug"></a>偵錯
 
@@ -170,7 +180,7 @@ Visual Studio 2019 預設會安裝這項服務。
 
 ## <a name="whats-next"></a>後續步驟
 
-我們對 Visual Studio 2019 的更新通常附帶可大幅改善您開發體驗的新功能。 若要深入了解有關我們最新的創新功能，請參閱 [Visual Studio 部落格](https://devblogs.microsoft.com/visualstudio/)。 有關我們迄今為止在預覽中發行之內容的記錄，請查看[預覽版本資訊](/visualstudio/releases/2019/release-notes-preview/)。
+我們對 Visual Studio 2019 的更新通常附帶可大幅改善您開發體驗的新功能。 若要深入了解我們最新的創新功能，請參閱 [Visual Studio 部落格](https://devblogs.microsoft.com/visualstudio/)。 有關我們迄今為止在預覽中發行之內容的記錄，請查看[預覽版本資訊](/visualstudio/releases/2019/release-notes-preview/)。
 
 想深入了解 Visual Studio 2019 中還包含哪些內容嗎？ 請參閱 [Visual Studio 藍圖](/visualstudio/productinfo/vs-roadmap/)。
 
@@ -178,9 +188,9 @@ Visual Studio 2019 預設會安裝這項服務。
 
 為什麼要傳送意見反應給 Visual Studio 小組？ 我們極為重視客戶的意見反應。 它們是我們進步的動力。
 
-* 如果您想要提出改善 Visual Studio 的建議，可以使用[提供建議](talk-to-us.md#i-want-to-make-a-suggestion-about-visual-studio-features)工具。
+* 如果您想要提出改善 Visual Studio 的建議，可以使用[建議功能](suggest-a-feature.md)工具。
 
-* 如果您遇到停止回應、當機或其他效能問題，則可以使用[回報問題](talk-to-us.md#i-want-to-report-a-problem-with-visual-studio)工具，輕鬆地與我們分享重現步驟和支援檔案。
+* 如果您遇到停止回應、當機或其他效能問題，則可以使用[回報問題](how-to-report-a-problem-with-visual-studio.md)工具，輕鬆地與我們分享重現步驟和支援檔案。
 
 ## <a name="see-also"></a>另請參閱
 
@@ -188,4 +198,5 @@ Visual Studio 2019 預設會安裝這項服務。
 * [Visual Studio 2019 版本資訊](/visualstudio/releases/2019/release-notes/)
 * [Visual Studio 2019 SDK 的新功能](../extensibility/whats-new-visual-studio-2019-sdk.md)
 * [Visual Studio 2019 for Mac 現已推出](https://devblogs.microsoft.com/visualstudio/visual-studio-2019-for-mac-is-now-available/)
+* [Microsoft Build 2019 會議](https://www.microsoft.com/build)
 * [Microsoft Connect(); 2018 會議](https://www.microsoft.com/connectevent)

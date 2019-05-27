@@ -20,12 +20,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 0d4ad3767e8ee6076f45deefa5c532b62175520f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3ec34dc0f4f2794f853b8e70670d4d3f59e7bae3
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62974859"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65692313"
 ---
 # <a name="install-visual-studio"></a>安裝 Visual Studio
 
@@ -203,11 +203,11 @@ ms.locfileid: "62974859"
 
 另一個變更預設語言的方法，便是從命令列執行安裝程式。 例如，您可以使用下列命令來強制安裝程式以英文執行：`vs_installer.exe --locale en-US`。 下次執行安裝程式時，它會記住這項設定。 安裝程式支援下列語言權杖：zh-cn、zh-tw、cs-cz、en-us、es-es、fr-fr、de-de、it-it、ja-jp、ko-kr、pl-pl、pt-br、ru-ru 和 tr-tr。
 
-## <a name="step-7---change-the-installation-location-optional"></a>步驟 7 - 變更安裝位置 (選擇性)
+## <a name="step-7---select-the-installation-location-optional"></a>步驟 7 - 選取安裝位置 (選擇性)
 
 ::: moniker range="vs-2017"
 
-**15.7 版中的新功能**：現在您可以減少 Visual Studio 在系統磁碟機上的安裝磁碟使用量。 您可以選擇將快取、共用元件、SDK 和工具下載至不同的磁碟機，並將 Visual Studio 保留在以最快速度執行它的磁碟機上。
+**15.7 中的新功能**：現在您可以減少 Visual Studio 在系統磁碟機上的安裝磁碟使用量。 您可以選擇將快取、共用元件、SDK 和工具下載至不同的磁碟機，並將 Visual Studio 保留在以最快速度執行它的磁碟機上。
 
   ![Visual Studio 2017 - 變更安裝位置](media/installation-options-by-location.png "變更安裝位置")
 
@@ -217,7 +217,7 @@ ms.locfileid: "62974859"
 
 您可以減少系統磁碟機上的 Visual Studio 安裝磁碟使用量。 您可以選擇將快取、共用元件、SDK 和工具下載至不同的磁碟機，並將 Visual Studio 保留在以最快速度執行它的磁碟機上。
 
-  ![Visual Studio 2019 - 變更安裝位置](media/vs-2019/vs-installer-installation-locations.png "變更安裝位置")
+  ![Visual Studio 2019 - 選取安裝位置](media/vs-2019/vs-installer-installation-locations.png "選取安裝位置")
 
 ::: moniker-end
 

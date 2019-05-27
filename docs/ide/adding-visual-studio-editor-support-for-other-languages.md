@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3c87339e26e5b08fbcbdcde94d43c9f0009e1a22
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7ae0b2f606b4fe04ad390712f48ac1e06ff9bb86
+ms.sourcegitcommit: 283f2dbce044a18e9f6ac6398f6fc78e074ec1ed
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62975676"
+ms.lasthandoff: 05/16/2019
+ms.locfileid: "65805333"
 ---
 # <a name="add-visual-studio-editor-support-for-other-languages"></a>新增其他語言的 Visual Studio 編輯器支援
 
@@ -33,7 +33,7 @@ Visual Studio 編輯器中的語法顏色標示、陳述式完成 (也稱為 Int
 
 ![Perl 指令碼中的語法顏色標示](../ide/media/vside_perledit.png)
 
-Visual Studio 目前使用 [TextMate 文法](https://manual.macromates.com/en/language_grammars)，提供下列語言版本之語法顏色標示和基本陳述式完成的支援。 不過，如果您偏好的語言不在資料表中，不用擔心 - 您可以新增它。
+Visual Studio 目前使用 [TextMate 文法](https://manual.macromates.com/en/language_grammars)，提供下列語言版本之語法顏色標示和基本陳述式完成的支援。 不過，如果您偏好的語言不在資料表中，不用擔心&mdash;您可以新增它。
 
 |||||||
 |-|-|-|-|-|-|
@@ -46,21 +46,21 @@ Visual Studio 目前使用 [TextMate 文法](https://manual.macromates.com/en/la
 
 除了語法顏色標示和基本陳述式完成之外，Visual Studio 也有一項稱為 [「巡覽至」](https://blogs.msdn.microsoft.com/benwilli/2015/04/09/visual-studio-tip-3-use-navigate-to/)的功能。 這項功能可讓您快速搜尋程式碼檔案、檔案路徑和程式碼符號。 Visual Studio 提供下列語言版本的「巡覽至」支援。
 
+- C#
+
+- C++
+
+- TypeScript
+
+- JavaScript
+
+- Visual Basic
+
 - 移至
 
 - Java
 
-- JavaScript
-
 - PHP
-
-- TypeScript
-
-- Visual Basic
-
-- Visual C++
-
-- C#
 
 這些檔案類型全都有稍早描述的功能，即使尚未安裝指定語言的支援亦然。 安裝某些語言的特殊支援，也可能提供其他語言支援，例如 IntelliSense 或燈泡這樣的其他進階語言功能。
 
@@ -89,5 +89,6 @@ Visual Studio 藉由使用 [TextMate 文法](https://manual.macromates.com/en/la
 
 ## <a name="see-also"></a>另請參閱
 
+- [新增語言伺服器通訊協定延伸模組](../extensibility/adding-an-lsp-extension.md)
 - [逐步解說：建立程式碼片段](../ide/walkthrough-creating-a-code-snippet.md)
 - [逐步解說：顯示陳述式完成](../extensibility/walkthrough-displaying-statement-completion.md)

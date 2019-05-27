@@ -1,7 +1,7 @@
 ---
 title: 在防火牆或 Proxy 伺服器後方安裝及使用
-description: 如果您的組織使用防火牆或 Proxy 伺服器，請檢閱您可能想要列入允許清單或開啟的網域 URL、連接埠及通訊協定
-ms.date: 03/30/2019
+description: 如果您的組織使用防火牆或 Proxy 伺服器，請檢閱建議新增至允許清單或開啟的網域 URL、連接埠及通訊協定
+ms.date: 05/22/2019
 ms.custom: seodec18
 ms.topic: conceptual
 helpviewer_keywords:
@@ -17,29 +17,29 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 227525b08e45832041b573fbb7cf3719484d1b8e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 38a243c965199e75622ceff43e742424d3e4977a
+ms.sourcegitcommit: 92a04c57ac0a49f304fa2ea5043436f30068c3cd
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62974705"
+ms.lasthandoff: 05/21/2019
+ms.locfileid: "65976208"
 ---
 # <a name="install-and-use-visual-studio-and-azure-services-behind-a-firewall-or-proxy-server"></a>在防火牆或 Proxy 伺服器後方安裝並使用 Visual Studio 和 Azure 服務
 
-如果您或您的組織使用防火牆或 Proxy 伺服器等安全性措施，則您應該將部分網域 URL 加入允許清單，並開啟某些連接埠和通訊協定，以在安裝及使用 Visual Studio 及 Azure 服務時取得最佳體驗。
+如果您或組織使用防火牆或 Proxy 伺服器等安全性措施，建議您將部分網域 URL 新增至「允許清單」，並開啟某些連接埠和通訊協定，以在安裝及使用 Visual Studio 及 Azure 服務時取得最佳體驗。
 
-* **[安裝 Visual Studio](#install-visual-studio)**：這些表格包含需加入白名單的網域 URL，使您可以存取所有所需的元件和工作負載。
+* **[安裝 Visual Studio](#install-visual-studio)**：這些表格包含要新增至允許清單的網域 URL，以便您存取所需的所有元件和工作負載。
 
-* **[使用 Visual Studio 和 Azure 服務](#use-visual-studio-and-azure-services)**：此表格包含需加入允許清單的網域 URL，以及需開啟的連接埠和通訊協定，使您可以存取所需的所有功能和服務。
+* **[使用 Visual Studio 和 Azure 服務](#use-visual-studio-and-azure-services)**：此表格包含要新增至允許清單的網域 URL，以及要開啟的連接埠和通訊協定，以便您存取所需的所有功能和服務。
 
 > [!NOTE]
 > 本文針對 Windows 上的 Visual Studio 撰寫，但特定資訊也適用於在防火牆或 Proxy 伺服器後方[安裝 Visual Studio for Mac](/visualstudio/mac/install-behind-a-firewall-or-proxy-server)。
 
 ## <a name="install-visual-studio"></a>安裝 Visual Studio
 
-### <a name="urls-to-whitelist"></a>應加入允許清單的 URL
+### <a name="urls-to-add-to-an-allow-list"></a>應新增至允許清單的 URL
 
-由於 Visual Studio 安裝程式會從各種不同的網域及其下載伺服器下載檔案，以下是您應該在 UI 或部署指令碼中作為受信任 URL 加入允許清單的網域 URL。
+由於 Visual Studio 安裝程式會從各種不同網域與這些網域的下載伺服器下載檔案，因此下列是建議您在 UI 或部署指令碼中作為受信任 URL 新增至允許清單的網域 URL。
 
 #### <a name="microsoft-domains"></a>Microsoft 網域
 
@@ -79,9 +79,9 @@ ms.locfileid: "62974705"
 
 ## <a name="use-visual-studio-and-azure-services"></a>使用 Visual Studio 和 Azure 服務
 
-### <a name="urls-to-whitelist-and-ports-and-protocols-to-open"></a>應加入允許清單的 URL 及應開啟的連接埠和通訊協定
+### <a name="urls-to-add-to-an-allow-list-and-ports-and-protocols-to-open"></a>應新增至允許清單的 URL，以及應開啟的連接埠和通訊協定
 
-為了確保您在防火牆或 Proxy 伺服器後方使用 Visual 或 Azure 服務時能存取所有所需的服務，以下是您應該加入允許清單的 URL，以及建議開啟的連接埠和通訊協定。
+為了確保您在防火牆或 Proxy 伺服器後方使用 Visual 或 Azure 服務時，能存取所需的所有服務，以下是您應該新增至允許清單的 URL，以及建議開啟的連接埠和通訊協定。
 
 | 服務或案例 | DNS 端點 | 通訊協定 | 連接埠 | 說明 |
 | - | - | - | - | - |

@@ -1,6 +1,6 @@
 ---
-title: 針對受控碼建立和執行單元測試
-ms.date: 11/04/2016
+title: C# 單元測試教學課程
+ms.date: 05/14/2019
 ms.topic: conceptual
 helpviewer_keywords:
 - unit tests, walkthrough
@@ -13,25 +13,16 @@ manager: jillfra
 ms.workload:
 - dotnet
 author: gewarren
-ms.openlocfilehash: d951c6171abd0e8cad42554c49a40cb42542fb62
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 173cc6711f46d7fddad92c3ac871809dda100f36
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62976225"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65704672"
 ---
 # <a name="walkthrough-create-and-run-unit-tests-for-managed-code"></a>逐步解說：針對受控碼建立和執行單元測試
 
-本文會引導您使用適用於受控碼的 Microsoft 單元測試架構和 Visual Studio [測試總管]，來建立、執行和自訂一系列的單元測試。 您可以從開發中的 C# 專案開始，建立執行其程式碼的測試、執行測試，並檢查結果。 然後，您可以變更專案程式碼並重新執行測試。
-
-> [!NOTE]
-> 本逐步解說會使用適用於 Managed 程式碼的 Microsoft 單元測試架構。 [測試總管] 也可以從已安裝 [測試總管] 配接器的協力廠商單元測試架構來執行測試。 如需詳細資訊，請參閱[安裝協力廠商單元測試架構](../test/install-third-party-unit-test-frameworks.md)
-
-如需如何從命令列執行測試的資訊，請參閱 [VSTest.Console.exe 命令列選項](vstest-console-options.md)。
-
-## <a name="prerequisites"></a>必要條件
-
-- Bank 專案。 請參閱[用於建立單元測試的範例專案](../test/sample-project-for-creating-unit-tests.md)。
+本文會引導您使用適用於受控碼的 Microsoft 單元測試架構和 Visual Studio [測試總管]，來建立、執行和自訂一系列的單元測試。 您可以從開發中的 C# 專案開始，建立執行其程式碼的測試、執行測試，並檢查結果。 然後，變更專案程式碼並重新執行測試。
 
 ## <a name="create-a-project-to-test"></a>建立要測試的專案
 
@@ -43,14 +34,14 @@ ms.locfileid: "62976225"
 
    [ **新增專案** ] 對話方塊隨即出現。
 
-3. 選擇 C# [類別庫] 專案範本。
+3. 在 [Visual C#] > [.NET Core] 類別下方，選擇 [主控台應用程式 (.NET Core)] 專案範本。
 
 4. 將專案命名為 **Bank**，然後按一下 [確定]。
 
-   就會建立 Bank 專案並顯示在 [方案總管] 中，並於程式碼編輯器中開啟 *Class1.cs* 檔案。
+   即會建立 Bank 專案並顯示在 [方案總管] 中，並於程式碼編輯器中開啟 *Program.cs* 檔案。
 
    > [!NOTE]
-   > 如果 *Class1.cs* 檔案並未在程式碼編輯器中開啟，請在 [方案總管] 中按兩下 *Class1.cs* 檔案加以開啟。
+   > 如果 *Program.cs* 檔案並未在編輯器中開啟，請在 [方案總管] 中按兩下 *Program.cs* 檔案來開啟。
 
 ::: moniker-end
 
@@ -60,42 +51,92 @@ ms.locfileid: "62976225"
 
 2. 在開始視窗中，選擇 [建立新專案]。
 
-3. 搜尋並選取 C# [類別庫] 專案範本，然後按一下 [下一步]。
+3. 搜尋並選取 C# [主控台應用程式 (.NET Core)] 專案範本，然後按一下 [下一步]。
 
 4. 將專案命名為 **Bank**，然後按一下 [建立]。
 
-   就會建立 Bank 專案並顯示在 [方案總管] 中，並於程式碼編輯器中開啟 *Class1.cs* 檔案。
+   即會建立 Bank 專案並顯示在 [方案總管] 中，並於程式碼編輯器中開啟 *Program.cs* 檔案。
 
    > [!NOTE]
-   > 如果 *Class1.cs* 檔案並未在程式碼編輯器中開啟，請在 [方案總管] 中按兩下 *Class1.cs* 檔案加以開啟。
+   > 如果 *Program.cs* 檔案並未在編輯器中開啟，請在 [方案總管] 中按兩下 *Program.cs* 檔案來開啟。
 
 ::: moniker-end
 
-5. 從[用於建立單元測試的範例專案](../test/sample-project-for-creating-unit-tests.md)複製原始程式碼，並以複製的程式碼取代 *Class1.cs* 的原始內容。
+5. 使用下列會定義 *BankAccount* 類別的 C# 程式碼取代 *Program.cs* 內容：
 
-6. 另存新檔成 *BankAccount.cs* 檔案。
+   ```csharp
+   using System;
+
+   namespace BankAccountNS
+   {
+       /// <summary>
+       /// Bank account demo class.
+       /// </summary>
+       public class BankAccount
+       {
+           private readonly string m_customerName;
+           private double m_balance;
+
+           private BankAccount() { }
+
+           public BankAccount(string customerName, double balance)
+           {
+               m_customerName = customerName;
+               m_balance = balance;
+           }
+
+           public string CustomerName
+           {
+               get { return m_customerName; }
+           }
+
+           public double Balance
+           {
+               get { return m_balance; }
+           }
+
+           public void Debit(double amount)
+           {
+               if (amount > m_balance)
+               {
+                   throw new ArgumentOutOfRangeException("amount");
+               }
+
+               if (amount < 0)
+               {
+                   throw new ArgumentOutOfRangeException("amount");
+               }
+
+               m_balance += amount; // intentionally incorrect code
+           }
+
+           public void Credit(double amount)
+           {
+               if (amount < 0)
+               {
+                   throw new ArgumentOutOfRangeException("amount");
+               }
+
+               m_balance += amount;
+           }
+
+           public static void Main()
+           {
+               BankAccount ba = new BankAccount("Mr. Bryan Walton", 11.99);
+
+               ba.Credit(5.77);
+               ba.Debit(11.22);
+               Console.WriteLine("Current balance is ${0}", ba.Balance);
+           }
+       }
+   }
+   ```
+
+6. 按一下滑鼠右鍵，選擇 [方案總管] 中的 [重新命名]，將檔案重新命名為 *BankAccount.cs*。
 
 7. 在 [ **建置** ] 功能表上，按一下 [ **建置方案**]。
 
-現在您已經有一個名為 Bank 的專案。 其中包含要測試的原始程式碼和用來測試它的工具。 Bank 的命名空間 BankAccountNS，包含公用類別 BankAccount，您將會在下列程序中測試其方法。
-
-在本文中，測試著重在 Debit 方法。 從帳戶中提領金額時，就會呼叫 Debit 方法。 以下是方法定義：
-
-```csharp
-// Method to be tested.
-public void Debit(double amount)
-{
-    if(amount > m_balance)
-    {
-        throw new ArgumentOutOfRangeException("amount");
-    }
-    if (amount < 0)
-    {
-        throw new ArgumentOutOfRangeException("amount");
-    }
-    m_balance += amount;
-}
-```
+您現在已擁有具備測試方法的專案。 本文中的測試著重於 `Debit` 方法。 從帳戶中提領貨幣時，會呼叫 `Debit` 方法。
 
 ## <a name="create-a-unit-test-project"></a>建立單元測試專案
 
@@ -108,7 +149,7 @@ public void Debit(double amount)
 
 2. 在 [新增專案] 對話方塊中，依序展開 [已安裝的]、[Visual C#]，然後選擇 [測試]。
 
-3. 在範本清單中選擇 [ **單元測試專案**]。
+3. 從範本清單中選取 [MSTest 測試專案 (.NET Core)]。
 
 4. 在 [名稱] 文字方塊中，輸入 `BankTests`，然後選取 [確定]。
 
@@ -118,9 +159,9 @@ public void Debit(double amount)
 
 ::: moniker range=">=vs-2019"
 
-2. 搜尋並選取C# [單元測試專案] 專案範本，然後按一下 [下一步]。
+2. 搜尋並選取 C# [MSTest 測試專案 (.NET Core)] 專案範本，然後按一下 [下一步]。
 
-3. 將專案命名為 `BankTests`。
+3. 將專案命名為 **BankTests**。
 
 4. 按一下 [建立] 。
 
@@ -130,22 +171,31 @@ public void Debit(double amount)
 
 5. 在 **BankTests** 專案中，新增 **Bank** 專案的參考。
 
-   在 [方案總管] 中，選取 **BankTests** 專案中的 [參考]，然後從右鍵功能表選擇 [新增參考]。
+   在 [方案總管] 中，選取 **BankTests** 專案下方的 [相依性]，然後從右鍵功能表選擇 [新增參考]。
 
-6. 在 [參考管理員] 對話方塊中，展開 [方案]，然後檢查 [Bank] 項目。
+6. 在 [參考管理員] 對話方塊中，展開 [專案] 並選取 [方案]，然後選取 [Bank] 項目。
+
+7. 選擇 [確定] 。
 
 ## <a name="create-the-test-class"></a>建立測試類別
 
 建立測試類別，以確認 `BankAccount` 類別。 您可以使用由專案範本所產生的 *UnitTest1.cs* 檔案；不過，請使用更具有描述性的名稱來命名檔案和類別。 在 [方案總管] 中重新命名檔案，就能以一個步驟達成目的。
 
-### <a name="rename-a-class-file"></a>重新命名類別檔案
+### <a name="rename-a-file-and-class"></a>重新命名檔案和類別
 
-在 [方案總管] 中，選取 BankTests 專案中的 *UnitTest1.cs* 檔案。 從右鍵功能表中，選擇 [重新命名]，然後將檔案重新命名為 *BankAccountTests.cs*。 在詢問您是否要重新命名專案中程式碼項目 `UnitTest1` 的所有參考的對話方塊上，選擇 [是]。
+1. 若要重新命名檔案，請在 [方案總管] 中選取 BankTests 專案中的 *UnitTest1.cs* 檔案。 從右鍵功能表中，選擇 [重新命名]，然後將檔案重新命名為 *BankAccountTests.cs*。
 
-此步驟會將類別名稱變更為 `BankAccountTests`。 *BankAccountTests.cs* 檔案現在會包含下面程式碼：
+   ::: moniker range="vs-2017"
+
+   在彈出的對話方塊中選擇 [否]。
+
+   ::: moniker-end
+
+2. 若要重新命名類別，請將游標放在程式碼編輯器中的 `UnitTest1`，然後按 **F2** (或按一下滑鼠右鍵，然後選擇 [重新命名])。 鍵入 **BankAccountTests**，然後按下 **Enter**。
+
+*BankAccountTests.cs* 檔案現在會包含下面程式碼：
 
 ```csharp
-using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace BankTests
@@ -161,9 +211,9 @@ namespace BankTests
 }
 ```
 
-### <a name="add-a-using-statement-to-the-project-under-test"></a>將 using 陳述式加入至受測專案
+### <a name="add-a-using-statement"></a>新增 using 陳述式
 
-您也可以將 `using` 陳述式新增至類別，以便能夠呼叫受測專案，而不需使用完整名稱。 在類別檔案的頂端，加入：
+將 [`using` 陳述式](/dotnet/csharp/language-reference/keywords/using-statement)新增至測試類別，以便能夠呼叫受測專案，而不需使用完整限定名稱。 在類別檔案的頂端，加入：
 
 ```csharp
 using BankAccountNS;
@@ -173,15 +223,15 @@ using BankAccountNS;
 
 測試類別的最低需求如下：
 
-- 在適用於 Managed 程式碼的 Microsoft 單元測試架構中，對於包含要在 [測試總管] 中執行的單元測試方法的任何類別而言， `[TestClass]` 屬性是必要的。
+- 對於包含要在 [測試總管] 中執行之單元測試方法的任何類別而言，`[TestClass]` 屬性是必要的。
 
-- 您要讓 [測試總管] 執行的每個測試方法都必須具有 `[TestMethod]` 屬性。
+- 您要讓 [測試總管] 辨識的每個測試方法都必須具有 `[TestMethod]` 屬性。
 
-單元測試專案中可以含有不具有 `[TestClass]` 屬性的其他類別，而測試類別中也可以含有不具有 `[TestMethod]` 屬性的其他方法。 您可以在測試方法中使用這些其他類別和方法。
+單元測試專案中可以含有不具有 `[TestClass]` 屬性的其他類別，而測試類別中也可以含有不具有 `[TestMethod]` 屬性的其他方法。 您可以從您的測試方法中呼叫這些其他類別和方法。
 
 ## <a name="create-the-first-test-method"></a>建立第一個測試方法
 
-在這個程序中，您會撰寫單元測試方法以驗證 `BankAccount` 類別之 `Debit` 方法的行為。 `Debit` 方法先前已在本文中顯示。
+在這個程序中，您會撰寫單元測試方法以驗證 `BankAccount` 類別之 `Debit` 方法的行為。
 
 至少有三項需要檢查的行為：
 
@@ -217,7 +267,7 @@ public void Debit_WithValidAmount_UpdatesBalance()
 }
 ```
 
-該方法非常簡單：它會設定一開始就有餘額的新 `BankAccount` 物件，然後提領有效的金額。 它會使用 <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.AreEqual%2A> 方法，以確認結尾餘額如預期。
+此方法很直接：會設定具有初始餘額的新 `BankAccount` 物件，然後提領有效的金額。 它會使用 <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.AreEqual%2A?displayProperty=nameWithType> 方法，以確認結尾餘額如預期。
 
 ### <a name="test-method-requirements"></a>測試方法需求
 
@@ -233,26 +283,25 @@ public void Debit_WithValidAmount_UpdatesBalance()
 
 1. 在 [ **建置** ] 功能表上，選擇 [ **建置方案**]。
 
-   如果沒有發生錯誤，則 [測試總管] 視窗隨即出現，並在 [未執行的測試] 群組中列出 **Debit_WithValidAmount_UpdatesBalance**。
+2. 如果 [測試總管] 未開啟，請從頂端功能表列選擇 [測試] > [Windows] > [測試總管] 來開啟。
 
-   > [!TIP]
-   > 如果順利完成建置後，[測試總管] 沒有出現，請選擇功能表上的 [測試]，然後依序選擇 [視窗]和 [測試總管]
+3. 選擇 [ **全部執行** ] 以執行測試。
 
-2. 選擇 [ **全部執行** ] 以執行測試。 當測試在執行時，視窗頂端的狀態列會顯示動畫效果。 在測試回合結束時，如果所有的測試方法都成功，狀態列會變成綠色，如果有任何測試失敗則變成紅色。
+   執行測試時，[測試總管] 視窗頂端的狀態列會顯示動畫效果。 在測試回合結束時，如果所有的測試方法都成功，狀態列會變成綠色，如果有任何測試失敗則變成紅色。
 
-3. 在本案例中，測試會失敗。 測試方法會移至 [失敗的測試] 群組。 在 [測試總管] 中選取該方法，以在視窗底部檢視詳細資料。
+   在本案例中，測試會失敗。
+
+4. 在 [測試總管] 中選取該方法，以在視窗底部檢視詳細資料。
 
 ## <a name="fix-your-code-and-rerun-your-tests"></a>修正程式碼並重新執行測試
 
-### <a name="analyze-the-test-results"></a>分析測試結果
-
-測試結果會包含說明失敗的訊息。 如果是 `AreEqual` 方法，訊息會顯示預期的參數 (**Expected\<值>** 參數) 和實際收到的參數 (**Actual\<值>** 參數)。 您預期餘額會減少，但它增加了提領的金額。
+測試結果會包含說明失敗的訊息。 針對 `AreEqual` 方法，訊息會顯示預期項目和實際收到的項目。 您預期餘額會減少，但它增加了提領的金額。
 
 單元測試發現了一個錯誤：提領的金額應該從帳戶餘額「減去」，但卻被「加入」至帳戶餘額。
 
 ### <a name="correct-the-bug"></a>修正 Bug
 
-若要更正這個錯誤，請將這一行：
+若要更正錯誤，請在 *BankAccount.cs* 檔案中取代這一行：
 
 ```csharp
 m_balance += amount;
@@ -266,7 +315,9 @@ m_balance -= amount;
 
 ### <a name="rerun-the-test"></a>重新執行測試
 
-在 [測試總管] 中，選擇 [全部執行] 以重新執行測試。 紅色/綠色狀態列會轉成綠色，表示通過測試，且測試會移至 [成功的測試] 群組。
+在 [測試總管] 中，選擇 [全部執行] 以重新執行測試。 紅色/綠色狀態列會變成綠色，表示測試已通過。
+
+![Visual Studio 2019 的 [測試總管] 顯示已通過測試](media/test-explorer-banktests-passed.png)
 
 ## <a name="use-unit-tests-to-improve-your-code"></a>使用單元測試改善您的程式碼
 
@@ -279,7 +330,7 @@ m_balance -= amount;
 - 大於餘額，或
 - 小於零。
 
-### <a name="create-the-test-methods"></a>建立測試方法
+### <a name="create-and-run-new-test-methods"></a>建立並執行新的測試方法
 
 建立測試方法，以確認付款金額小於零時的正確行為：
 
@@ -310,8 +361,6 @@ public void Debit_WhenAmountIsLessThanZero_ShouldThrowArgumentOutOfRange()
 
 3. 將 `debitAmount` 設定為大於餘額的數字。
 
-### <a name="run-the-tests"></a>執行測試
-
 執行兩個測試方法可示範如何正確運作測試。
 
 ### <a name="continue-the-analysis"></a>繼續分析
@@ -328,7 +377,7 @@ throw new ArgumentOutOfRangeException("amount");
 
 ### <a name="refactor-the-code-under-test"></a>重構受測程式碼
 
-首先，在類別範圍定義錯誤訊息的兩個常數。 將這些常數放入受測類別 BankAccount 中：
+首先，在類別範圍定義錯誤訊息的兩個常數。 將這些常數放入受測類別 `BankAccount` 中：
 
 ```csharp
 public const string DebitAmountExceedsBalanceMessage = "Debit amount exceeds balance";
@@ -379,11 +428,11 @@ public void Debit_WhenAmountIsMoreThanBalance_ShouldThrowArgumentOutOfRange()
 
 ### <a name="retest-rewrite-and-reanalyze"></a>重新測試、重新撰寫和重新分析
 
-假設受測方法中有一個錯誤，因此 `Debit` 方法不僅不會「擲回」<xref:System.ArgumentOutOfRangeException>，更不會輸出包含例外狀況的正確訊息。 目前，測試方法不會處理這種情況。 如果 `debitAmount` 值有效 (也就是說，小於餘額但大於零)，則不會攔截到任何例外狀況，因此永遠不會引發判斷提示。 然而，測試方法會成功。 這樣就不好了，因為您要的是測試方法在未擲回例外狀況時失敗。
+假設受測方法中有 Bug，導致 `Debit` 方法不僅不會擲回 <xref:System.ArgumentOutOfRangeException>，更不會輸出具有例外狀況的正確訊息。 目前，測試方法不會處理這種情況。 如果 `debitAmount` 值有效 (也就是說，小於餘額但大於零)，則不會攔截到任何例外狀況，因此永遠不會引發判斷提示。 然而，測試方法會成功。 這樣就不好了，因為您要的是測試方法在未擲回例外狀況時失敗。
 
 這是測試方法中的錯誤。 若要解決這個問題，請在測試方法的結尾新增 <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.Fail%2A> 判斷提示，以處理未擲回例外狀況的情況。
 
-但是重新執行測試後顯示，測試現在會因為攔截到正確的例外狀況而「失敗」。 `catch` 區塊會攔截例外狀況，但是該方法會繼續執行，並且會在新的 <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.Fail%2A> 判斷提示處失敗。 爲了解決此問題，請在 `catch` 區塊的 `StringAssert` 之後新增 `return` 陳述式。 重新執行測試即可確認您已修正這個問題。 `Debit_WhenAmountIsMoreThanBalance_ShouldThrowArgumentOutOfRange` 的最終版本看起來像這樣：
+重新執行測試後顯示，測試現在會因為攔截到正確的例外狀況而「失敗」。 `catch` 區塊會攔截例外狀況，但是該方法會繼續執行，並且會在新的 <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.Fail%2A> 判斷提示處失敗。 爲了解決此問題，請在 `catch` 區塊的 `StringAssert` 之後新增 `return` 陳述式。 重新執行測試即可確認您已修正這個問題。 `Debit_WhenAmountIsMoreThanBalance_ShouldThrowArgumentOutOfRange` 的最終版本看起來像這樣：
 
 ```csharp
 [TestMethod]
@@ -410,4 +459,13 @@ public void Debit_WhenAmountIsMoreThanBalance_ShouldThrowArgumentOutOfRange()
 }
 ```
 
+### <a name="conclusion"></a>結論
+
 測試程式碼的改善帶來了更穩固、包含更多資訊的測試方法。 但是更重要的是，它們也改善了受測程式碼。
+
+> [!TIP]
+> 本逐步解說會使用適用於 Managed 程式碼的 Microsoft 單元測試架構。 [測試總管] 也可以從已安裝 [測試總管] 配接器的協力廠商單元測試架構來執行測試。 如需詳細資訊，請參閱[安裝協力廠商單元測試架構](../test/install-third-party-unit-test-frameworks.md)
+
+## <a name="see-also"></a>另請參閱
+
+如需如何從命令列執行測試的資訊，請參閱 [VSTest.Console.exe 命令列選項](vstest-console-options.md)。

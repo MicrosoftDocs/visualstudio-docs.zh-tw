@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fa24dedd776a0866d5de23fbacd31b32c2d55145
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f151b722b1425024ac2abe81f6d873bf10b01628
+ms.sourcegitcommit: 0ef51e3517436a85cfb85bf492722d566ce602c4
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62946002"
+ms.lasthandoff: 05/20/2019
+ms.locfileid: "65934502"
 ---
 # <a name="run-unit-tests-with-test-explorer"></a>使用測試總管執行單元測試
 
@@ -58,7 +58,7 @@ Visual Studio 2015 包含 Managed 程式碼和機器碼皆適用的 Microsoft �
 |![建置後執行](../test/media/ute_runafterbuild_btn.png)|若要在每次本機建置之後執行單元測試，請在標準功能表中選擇 [測試]，然後選擇 [測試總管] 工具列上的 [建置之後執行測試]。|
 
 > [!NOTE]
-> 只有 Visual Studio Enterprise 版本支援在每次建置後執行單元測試。
+> 若要在每次建置後執行單元測試，必須具備 Visual Studio 2017 Enterprise 或 Visual Studio 2019。 Visual Studio 2019 的 Community、Professional 和 Enterprise 版均隨附此功能。
 
 ## <a name="view-test-results"></a>檢視測試結果
 
@@ -200,7 +200,7 @@ FilterName:"Criteria" -FilterName:"SubsetCriteria"
 
 若要在方案中執行測試方法的程式碼涵蓋範圍：
 
-1. 選擇 Visual Studio 功能表上的 [測試]  ，然後選擇 [分析程式碼涵蓋範圍] 。
+1. 選擇頂端功能表列上的 [測試]，然後選擇 [分析程式碼涵蓋範圍]。
 
 2. 從子功能表選擇下列其中一個命令：
 

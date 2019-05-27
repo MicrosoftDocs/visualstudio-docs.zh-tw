@@ -7,12 +7,12 @@ ms.date: 12/19/2018
 ms.topic: conceptual
 description: 了解所選 Visual Studio 訂用帳戶中所含的 CAST Highlight 權益
 searchscope: VS Subscription
-ms.openlocfilehash: a96b314a22bf3036167b0d7b1bb6077edee01f59
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 852327a7bcedb93a9ac7d2644ee5e9ab1e182e42
+ms.sourcegitcommit: 283f2dbce044a18e9f6ac6398f6fc78e074ec1ed
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62947888"
+ms.lasthandoff: 05/16/2019
+ms.locfileid: "65805335"
 ---
 # <a name="the-cast-highlight-benefit-in-visual-studio-subscriptions"></a>Visual Studio 訂用帳戶中的 CAST Highlight 權益
 
@@ -52,7 +52,7 @@ Visual Studio Enterprise 訂閱者可以取得免費一個月的 CAST Highlight 
    >
    > *我們目前正在檢閱您對啟用和存取 CAST Highlight 的要求。您將在 48 小時內得到回覆。*
    >
-   > *敬祝商祺，*
+   > *敬祝商祺，* 
    > *Greg*
 
 要求核准之後，您會收到第二封電子郵件，其中確認已成功建立您的帳戶，並要求您按一下啟用連結以完成啟用程序。
@@ -72,7 +72,7 @@ Visual Studio Enterprise 訂閱者可以取得免費一個月的 CAST Highlight 
    > - 影片教學課程 - [配置您的投資組合](https://www.youtube.com/watch?v=MDm8ln4vuGE)
    > - 影片教學課程 - [應用程式上架](https://www.youtube.com/watch?v=x-7Dsn3Rmw4)
    >
-   > *敬祝商祺，*
+   > *敬祝商祺，* 
    > *Greg*
 
    > [!NOTE]

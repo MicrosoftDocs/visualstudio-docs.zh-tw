@@ -17,16 +17,17 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - multiple
-ms.openlocfilehash: 197128fadb660ab06686d13ec304a5d9d1698070
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 6d466dec85a0bdf242120ef5e88a0d5f5d2ac48e
+ms.sourcegitcommit: 0ef51e3517436a85cfb85bf492722d566ce602c4
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62778133"
+ms.lasthandoff: 05/20/2019
+ms.locfileid: "65934510"
 ---
 # <a name="custombuild-task"></a>CustomBuild 工作
 
-包裝 Visual C++ 編譯器工具 (cmd.exe)。
+包裝 Visual C++ 編譯器工具 (cmd.exe)。 此類別衍生自 [TrackedVCToolTask](../msbuild/trackedvctooltask-base-class.md)，但不會使用檔案追蹤功能來探索檔案相依性。 所有的相依性應該明確指定為 AdditionalDependencies，以確保累加建置運作正常。
+
 
 ## <a name="parameters"></a>參數
 
