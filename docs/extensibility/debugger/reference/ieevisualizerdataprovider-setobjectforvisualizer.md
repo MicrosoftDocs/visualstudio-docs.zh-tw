@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: cd7bd4bfd113da8cfd311d1022967d8c99f915b5
-ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
+ms.openlocfilehash: 31bc89e248d609e8b828d4cc5b9ac41c8e15c70c
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65223956"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66203697"
 ---
 # <a name="ieevisualizerdataprovidersetobjectforvisualizer"></a>IEEVisualizerDataProvider::SetObjectForVisualizer
 這個方法會變更視覺化檢視表示的物件。
@@ -44,17 +44,14 @@ int SetObjectForVisualizer(
 ```
 
 ## <a name="parameters"></a>參數
- `pNewObject`\
+`pNewObject`\
+[in]要設定的物件。
 
- [in]要設定的物件。
+`error`\
+[out]如果將物件設定時發生錯誤，這個字串會保留錯誤訊息。
 
- `error`\
-
- [out]如果將物件設定時發生錯誤，這個字串會保留錯誤訊息。
-
- `pException`\
-
- [out]如果發生錯誤，此物件會保存的例外狀況資訊。
+`pException`\
+[out]如果發生錯誤，此物件會保存的例外狀況資訊。
 
 ## <a name="return-value"></a>傳回值
  如果成功，則傳回`S_OK`; 否則傳回錯誤碼。

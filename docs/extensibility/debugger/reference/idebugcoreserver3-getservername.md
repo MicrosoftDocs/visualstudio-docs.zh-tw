@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a272476abec316eeb7d919993ca540b135680b87
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 3f7cbe4e4d7fb3dc40ab3960649ceb62c93dd170
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63413992"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66205455"
 ---
 # <a name="idebugcoreserver3getservername"></a>IDebugCoreServer3::GetServerName
 擷取伺服器的名稱。
@@ -36,10 +39,9 @@ int GetServerName(
 );
 ```
 
-#### <a name="parameters"></a>參數
- `pbstrName`
-
- [out]傳回伺服器的名稱。
+## <a name="parameters"></a>參數
+`pbstrName`\
+[out]傳回伺服器的名稱。
 
 > [!NOTE]
 > 呼叫端負責釋放字串。

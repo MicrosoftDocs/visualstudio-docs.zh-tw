@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 6d806b5dc129e2d82c0b6a1aa49fc1f26a2dd393
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: 2549793df7799c86d610bb65871746516c6a66d4
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65457917"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66211518"
 ---
 # <a name="idebugproperty2getmemorycontext"></a>IDebugProperty2::GetMemoryContext
 取得屬性值的記憶體內容。
@@ -40,9 +40,8 @@ int GetMemoryContext(
 ```
 
 ## <a name="parameters"></a>參數
- `ppMemory`\
-
- [out]傳回[IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md)物件，表示此屬性相關聯的記憶體。
+`ppMemory`\
+[out]傳回[IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md)物件，表示此屬性相關聯的記憶體。
 
 ## <a name="return-value"></a>傳回值
  如果成功，則傳回`S_OK`; 否則會傳回錯誤碼。 傳回`S_GETMEMORYCONTEXT_NO_MEMORY_CONTEXT`如果沒有要擷取記憶體內容。

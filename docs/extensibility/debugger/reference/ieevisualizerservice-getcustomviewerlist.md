@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: c2714a038c2cede4b351de92454bb74a5052805c
-ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
+ms.openlocfilehash: 5b78afc3ace3764856fd0a83899be2eae597239e
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65223571"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66203668"
 ---
 # <a name="ieevisualizerservicegetcustomviewerlist"></a>IEEVisualizerService::GetCustomViewerList
 這個方法會傳回一份此服務所知的類型視覺化檢視。
@@ -46,21 +46,17 @@ int GetCustomViewerList(
 ```
 
 ## <a name="parameters"></a>參數
- `celtSkip`\
+`celtSkip`\
+[in]略過的視覺化檢視的數目。
 
- [in]略過的視覺化檢視的數目。
+`celRequested`\
+[in]要擷取的視覺化檢視的數目 (也會指定大小`rgViewers`陣列)。
 
- `celRequested`\
+`rgViewers`\
+[in、 out]陣列[DEBUG_CUSTOM_VIEWER](../../../extensibility/debugger/reference/debug-custom-viewer.md)来填入結構。
 
- [in]要擷取的視覺化檢視的數目 (也會指定大小`rgViewers`陣列)。
-
- `rgViewers`\
-
- [in、 out]陣列[DEBUG_CUSTOM_VIEWER](../../../extensibility/debugger/reference/debug-custom-viewer.md)来填入結構。
-
- `pceltFetched`\
-
- [out]實際擷取的視覺化檢視的數目。
+`pceltFetched`\
+[out]實際擷取的視覺化檢視的數目。
 
 ## <a name="return-value"></a>傳回值
  如果成功，則傳回`S_OK`; 否則傳回錯誤碼。

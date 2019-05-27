@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 8936ab07f4df7b2e2295fae4192bca79205429ac
-ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
+ms.openlocfilehash: 3a0d128666d3836495dd3169720bc6e58f6ef11e
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65224153"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66207263"
 ---
 # <a name="idebugsymbolprovidergetcontainerfield"></a>IDebugSymbolProvider::GetContainerField
 這個方法會取得包含偵錯位址的欄位。
@@ -42,13 +42,11 @@ int GetContainerField(
 ```
 
 ## <a name="parameters"></a>參數
- `pAddress`\
+`pAddress`\
+[in]表示的地址[IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md)介面。
 
- [in]表示的地址[IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md)介面。
-
- `ppContainerField`\
-
- [out]傳回由容器欄位[IDebugContainerField](../../../extensibility/debugger/reference/idebugcontainerfield.md)介面。
+`ppContainerField`\
+[out]傳回由容器欄位[IDebugContainerField](../../../extensibility/debugger/reference/idebugcontainerfield.md)介面。
 
 ## <a name="return-value"></a>傳回值
  如果成功，則傳回`S_OK`; 否則傳回錯誤碼。

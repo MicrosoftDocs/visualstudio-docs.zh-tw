@@ -13,12 +13,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: b9cdf108aa196e899da6188212708bacb3e147ff
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: b26646df5958bd6070ee0c30dbe574070cd1127a
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65458626"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66212154"
 ---
 # <a name="idebugsettingscallback2geteelocalobject"></a>IDebugSettingsCallback2::GetEELocalObject
 擷取給定的計量名稱的運算式的評估工具本機物件。
@@ -44,21 +44,17 @@ private int GetEELocalObject(
 ```
 
 ## <a name="parameters"></a>參數
- `guidLang`\
+`guidLang`\
+[in]程式設計語言的唯一識別碼。
 
- [in]程式設計語言的唯一識別碼。
+`guidVendor`\
+[in]供應商的唯一識別碼。
 
- `guidVendor`\
+`pszMetric`\
+[in]計量名稱。
 
- [in]供應商的唯一識別碼。
-
- `pszMetric`\
-
- [in]計量名稱。
-
- `ppUnk`\
-
- [out]傳回的運算式評估工具的本機物件。
+`ppUnk`\
+[out]傳回的運算式評估工具的本機物件。
 
 ## <a name="return-value"></a>傳回值
  如果成功，則傳回`S_OK`; 否則傳回錯誤碼。

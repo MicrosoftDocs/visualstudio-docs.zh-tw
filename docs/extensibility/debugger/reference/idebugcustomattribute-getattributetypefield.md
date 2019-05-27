@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: cbbf0d91b344f1a45eb09d480eb631ac1a159046
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 4e56553a8598bb885f6752332f795ca8fe2a7484
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62875915"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66205386"
 ---
 # <a name="idebugcustomattributegetattributetypefield"></a>IDebugCustomAttribute::GetAttributeTypeField
 取得自訂屬性的類別型別。
@@ -36,10 +39,9 @@ int GetAttributeTypeField(
 );
 ```
 
-#### <a name="parameters"></a>參數
- `ppCAType`
-
- [out]傳回[IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md)物件，表示自訂屬性的執行個體的類別。
+## <a name="parameters"></a>參數
+`ppCAType`\
+[out]傳回[IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md)物件，表示自訂屬性的執行個體的類別。
 
 ## <a name="return-value"></a>傳回值
  如果成功，會傳回 S_OK;否則，傳回錯誤碼。

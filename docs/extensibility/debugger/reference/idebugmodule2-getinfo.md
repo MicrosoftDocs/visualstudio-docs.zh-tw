@@ -13,12 +13,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a0a5ad3d7651e89c2ef864a184155e8b0a430d79
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: ffc9dc5e7383c17dbcf55e514da9dfb2c452f81d
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62872727"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66203119"
 ---
 # <a name="idebugmodule2getinfo"></a>IDebugModule2::GetInfo
 取得此模組的相關資訊。
@@ -39,14 +42,12 @@ int GetInfo( 
 );
 ```
 
-#### <a name="parameters"></a>參數
- `dwFields`
+## <a name="parameters"></a>參數
+`dwFields`\
+[in]從旗標的組合[MODULE_INFO_FIELDS](../../../extensibility/debugger/reference/module-info-fields.md)列舉，指定哪些欄位`pInfo`要填寫。
 
- [in]從旗標的組合[MODULE_INFO_FIELDS](../../../extensibility/debugger/reference/module-info-fields.md)列舉，指定哪些欄位`pInfo`要填寫。
-
- `pInfo`
-
- [in、 out]A [MODULE_INFO](../../../extensibility/debugger/reference/module-info.md)結構，其中會填入模組的描述。
+`pInfo`\
+[in、 out]A [MODULE_INFO](../../../extensibility/debugger/reference/module-info.md)結構，其中會填入模組的描述。
 
 ## <a name="return-value"></a>傳回值
  如果成功，則傳回`S_OK`; 否則傳回錯誤碼。

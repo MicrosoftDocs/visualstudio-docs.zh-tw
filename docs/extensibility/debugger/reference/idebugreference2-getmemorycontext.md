@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: f439928d253aa5e8b500a489ca1a2d184ecbd507
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: ec0c2b91162a88cfbc43525408fef2294ec32102
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65457691"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66207926"
 ---
 # <a name="idebugreference2getmemorycontext"></a>IDebugReference2::GetMemoryContext
 取得參考的記憶體內容。 保留供未來使用。
@@ -40,9 +40,8 @@ int GetMemoryContext ( 
 ```
 
 ## <a name="parameters"></a>參數
- `ppMemory`\
-
- [out]傳回[IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md)物件，表示參考的值相關聯的記憶體。
+`ppMemory`\
+[out]傳回[IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md)物件，表示參考的值相關聯的記憶體。
 
 ## <a name="return-value"></a>傳回值
  一律傳回 `E_NOTIMPL`。

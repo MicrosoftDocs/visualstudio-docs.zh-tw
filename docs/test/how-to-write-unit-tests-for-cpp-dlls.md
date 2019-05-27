@@ -1,18 +1,18 @@
 ---
 title: 撰寫 C++ DLL 的單元測試
-ms.date: 11/04/2017
+ms.date: 05/01/2019
 ms.topic: conceptual
 ms.author: mblome
-manager: jillfra
+manager: markl
 ms.workload:
 - cplusplus
 author: mikeblome
-ms.openlocfilehash: 7606f9f9b521d4bc752b99ad70237ef4ac6bc30e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ecd26aeae5e0a236bf776477ab3dca0e528e8200
+ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62821041"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65226089"
 ---
 # <a name="write-unit-tests-for-c-dlls-in-visual-studio"></a>在 Visual Studio 中撰寫 C++ DLL 的單元測試
 
@@ -56,7 +56,17 @@ ms.locfileid: "62821041"
 
   1. 建立原生單元測試專案。
 
+      ::: moniker range="vs-2019"
+
+      1. 在 [檔案] 功能表上，選擇 [新增] > [專案]。 在 [新增專案] 對話方塊中，將 [語言] 設為 C++，並在搜尋方塊中鍵入 "test"。 然後選擇 [原生單元測試專案]。
+
+      ::: moniker-end
+
+      ::: moniker range="vs-2017"
+
       1. 在 [檔案] 功能表上，選擇 [新增] > [專案] > [Visual C++] > [測試] > [C++ 單元測試專案]。
+
+      ::: moniker-end
 
   2. 在**方案總管**中，於測試專案的捷徑功能表上，選擇 [參考]。 專案的 [屬性] 視窗便會開啟。
 
@@ -80,7 +90,17 @@ ms.locfileid: "62821041"
 
   1. 建立原生單元測試專案。
 
-      1. 在 [檔案] 功能表上，選擇 [新增] > [專案] > [Visual C++] > [測試] > [原生單元測試專案]。
+      ::: moniker range="vs-2019"
+
+      1. 在 [檔案] 功能表上，選擇 [新增] > [專案]。 在 [新增專案] 對話方塊中，將 [語言] 設為 C++，並在搜尋方塊中鍵入 "test"。 然後選擇 [原生單元測試專案]。
+
+      ::: moniker-end
+      
+      ::: moniker range="vs-2017"
+
+      1. 在 [檔案] 功能表上，選擇 [新增] > [專案] > [Visual C++] > [測試] > [C++ 單元測試專案]。
+
+      ::: moniker-end
 
   2. 在**方案總管**中，於測試專案的捷徑功能表上，選擇 [屬性]。
 

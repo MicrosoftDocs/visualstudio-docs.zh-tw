@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 1db085059b93eac4afd9f03ed17b5e267411a373
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: 71bb25e93cc1a3f97e61e269270cd87a0bc36558
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65458541"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66209958"
 ---
 # <a name="idebugstackframe2getinfo"></a>IDebugStackFrame2::GetInfo
 取得堆疊框架的描述。
@@ -44,17 +44,14 @@ int GetInfo ( 
 ```
 
 ## <a name="parameters"></a>參數
- `dwFieldSpec`\
+`dwFieldSpec`\
+[in]從旗標的組合[FRAMEINFO_FLAGS](../../../extensibility/debugger/reference/frameinfo-flags.md)列舉，指定哪些欄位`pFrameInfo`參數是要填入。
 
- [in]從旗標的組合[FRAMEINFO_FLAGS](../../../extensibility/debugger/reference/frameinfo-flags.md)列舉，指定哪些欄位`pFrameInfo`參數是要填入。
+`nRadix`\
+[in]要用於格式化數字的任何資訊基數。
 
- `nRadix`\
-
- [in]要用於格式化數字的任何資訊基數。
-
- `pFrameInfo`\
-
- [out]A [FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md)結構，其中會填入的堆疊框架的描述。
+`pFrameInfo`\
+[out]A [FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md)結構，其中會填入的堆疊框架的描述。
 
 ## <a name="return-value"></a>傳回值
  如果成功，則傳回`S_OK`; 否則傳回錯誤碼。

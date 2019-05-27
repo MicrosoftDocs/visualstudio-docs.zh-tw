@@ -1,5 +1,5 @@
 ---
-title: HOW TO：執行窗格加入 Word 文件或 Excel 活頁簿
+title: 執行窗格加入 Word 文件或 Excel 活頁簿
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -15,14 +15,14 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f9696640358626c254f1792fc29a31a41d4bafb3
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: aed3ace3765bb9f160117503deb7373e12e510ad
+ms.sourcegitcommit: 13ab9a5ab039b070b9cd9251d0b83dd216477203
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63427899"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66177779"
 ---
-# <a name="how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks"></a>HOW TO：將執行窗格新增至 Word 文件或 Excel 活頁簿
+# <a name="how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks"></a>作法：將執行窗格新增至 Word 文件或 Excel 活頁簿
   若要加入 Microsoft Office Word 文件或 Microsoft Excel 活頁簿的 [動作] 窗格，請先建立 Windows Forms 使用者控制項。 然後，將使用者控制項加入<xref:Microsoft.Office.Tools.ActionsPane.Controls%2A>的屬性`ThisDocument.ActionsPane`欄位 (Word) 或`ThisWorkbook.ActionsPane`專案中的欄位 (Excel)。
 
  [!INCLUDE[appliesto_alldoc](../vsto/includes/appliesto-alldoc-md.md)]

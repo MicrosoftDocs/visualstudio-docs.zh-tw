@@ -23,12 +23,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9d8373f13d3a7fc4280b383c534d0adba0b02a53
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 0116a8c4fa6326a1176c132aef59a789daabffca
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62979639"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65461526"
 ---
 # <a name="solutions-and-projects-in-visual-studio"></a>Visual Studio 中的方案和專案
 
@@ -67,6 +67,8 @@ Visual Studio 使用兩種檔案類型 (*.sln* 和 *.suo*) 來儲存方案的設
 建立新專案的最簡單方式是從特定類型的應用程式或網站的專案範本開始。 專案範本是由一組基本預先產生的程式碼檔案、組態檔、資產和設定所組成。 這些範本可在您建立新專案的對話方塊中使用 ([檔案] > [新增] > [專案])。 如需詳細資訊，請參閱[建立方案和專案](../ide/creating-solutions-and-projects.md)。
 
 您也可以建立自訂專案與項目範本。 如需詳細資訊，請參閱[建立專案與項目範本](../ide/creating-project-and-item-templates.md)。
+
+當您建立新專案時，根據預設它會儲存在 *%USERPROFILE%\source\repos*。 您可以在 [工具] > [選項] > [專案和方案] > [位置] 下的 [專案位置] 中自訂此位置。 如需詳細資訊，請參閱 [[選項] 對話方塊，[專案和方案] 頁面](../ide/reference/projects-and-solutions-options-dialog-box.md)。
 
 ## <a name="manage-projects-in-solution-explorer"></a>管理 [方案總管] 中的專案
 

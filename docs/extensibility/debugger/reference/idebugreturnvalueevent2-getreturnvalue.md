@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: db7199a4e589d4839e2a9171350063d2bb4f9f68
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: 2d21fc4adbeb283fc6274dfbed5902153c7e84e9
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65457440"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66198994"
 ---
 # <a name="idebugreturnvalueevent2getreturnvalue"></a>IDebugReturnValueEvent2::GetReturnValue
 取得上逐步執行出或函式傳回的值。
@@ -40,9 +40,8 @@ int GetReturnValue ( 
 ```
 
 ## <a name="parameters"></a>參數
- `ppReturnValue`\
-
- [out]傳回[IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)物件，表示要擷取的值。
+`ppReturnValue`\
+[out]傳回[IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)物件，表示要擷取的值。
 
 ## <a name="return-value"></a>傳回值
  如果成功，則傳回`S_OK`; 否則傳回錯誤碼。

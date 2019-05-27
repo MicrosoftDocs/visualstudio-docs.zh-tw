@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e54a7f38eed85ffe2757b373de1af59e1aaa126b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 5b574e28ac0b42f065bfbf056188c655797e542b
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62842713"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66209335"
 ---
 # <a name="idebugpointerobjectsetbytes"></a>IDebugPointerObject::SetBytes
 設定從一系列的連續位元組所指向的值。
@@ -42,22 +45,18 @@ int SetBytes(
 );
 ```
 
-#### <a name="parameters"></a>參數
- `dwStart`
+## <a name="parameters"></a>參數
+`dwStart`\
+[in]以位元組為單位，從所指向之物件的開始位移。
 
- [in]以位元組為單位，從所指向之物件的開始位移。
+`dwCount`\
+[in]若要設定的位元組數目。
 
- `dwCount`
+`pBytes`\
+[in]代表新值的位元組陣列。 這個值會儲存成物件，指定位移處開始。
 
- [in]若要設定的位元組數目。
-
- `pBytes`
-
- [in]代表新值的位元組陣列。 這個值會儲存成物件，指定位移處開始。
-
- `pdwBytes`
-
- [out]傳回的位元組數目可實際設定。
+`pdwBytes`\
+[out]傳回的位元組數目可實際設定。
 
 ## <a name="return-value"></a>傳回值
  如果成功，會傳回 S_OK;否則，傳回錯誤碼。

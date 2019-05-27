@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 947bfd84c446b701c269a5c4719cb66783e68940
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: 68b36e9906cfc7de583bd6a69654a1233160dc7c
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65458183"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66210127"
 ---
 # <a name="ienumdebugthreads2clone"></a>IEnumDebugThreads2::Clone
 傳回一份目前的列舉，為個別的物件。
@@ -40,9 +40,8 @@ int Clone(
 ```
 
 ## <a name="parameters"></a>參數
- `ppEnum`\
-
- [out]傳回這個列舉型別為個別物件的複本。
+`ppEnum`\
+[out]傳回這個列舉型別為個別物件的複本。
 
 ## <a name="return-value"></a>傳回值
  如果成功，則傳回`S_OK`; 否則傳回錯誤碼。

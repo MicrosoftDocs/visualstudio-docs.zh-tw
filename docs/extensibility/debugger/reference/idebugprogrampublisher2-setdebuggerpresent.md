@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 6226463ff16cc1415b99c3b06973ae8f580688a1
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: daac325e80e91423ed641d486598ed95d0e76b6f
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65458970"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66211648"
 ---
 # <a name="idebugprogrampublisher2setdebuggerpresent"></a>IDebugProgramPublisher2::SetDebuggerPresent
 告知偵錯工具存在並在執行計劃發行者。
@@ -40,9 +40,8 @@ int SetDebuggerPresent(
 ```
 
 ## <a name="parameters"></a>參數
- `fDebuggerPresent`\
-
- [in]非零 (`TRUE`) 如果偵錯工具，則為零 (`FALSE`) 如果不是。
+`fDebuggerPresent`\
+[in]非零 (`TRUE`) 如果偵錯工具，則為零 (`FALSE`) 如果不是。
 
 ## <a name="return-value"></a>傳回值
  如果成功，則傳回`S_OK`; 否則傳回錯誤碼。

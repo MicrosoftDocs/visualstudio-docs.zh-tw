@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a39725f316e63b8c6768471164b69feb47c05728
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 34ab8274dc8831cabc4ac8d82627cd5e4560827c
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62867234"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66208071"
 ---
 # <a name="ienumdebugfieldsnext"></a>IEnumDebugFields::Next
 這個方法會傳回下的一個項目集的列舉型別。
@@ -40,18 +43,15 @@ int Next(
 );
 ```
 
-#### <a name="parameters"></a>參數
- `celt`
+## <a name="parameters"></a>參數
+`celt`\
+[in]若要擷取的元素數目。 也會指定的大小上限`rgelt`陣列。
 
- [in]若要擷取的元素數目。 也會指定的大小上限`rgelt`陣列。
+`rgelt`\
+[in、 out]陣列[IDebugField](../../../extensibility/debugger/reference/idebugfield.md)来填入的項目。
 
- `rgelt`
-
- [in、 out]陣列[IDebugField](../../../extensibility/debugger/reference/idebugfield.md)来填入的項目。
-
- `pceltFetched`
-
- [out]傳回的項目數中實際傳回`rgelt`。
+`pceltFetched`\
+[out]傳回的項目數中實際傳回`rgelt`。
 
 ## <a name="return-value"></a>傳回值
  如果成功，會傳回 `S_OK`。 傳回`S_FALSE`更少的項目要求的數目可能會傳回; 否則會傳回錯誤碼。

@@ -1,6 +1,6 @@
 ---
 title: 寫入使用者設定存放區 |Microsoft Docs
-ms.date: 11/04/2016
+ms.date: 05/23/2019
 ms.topic: conceptual
 ms.assetid: efd27f00-7fe5-45f8-9b97-371af732be97
 author: gregvanl
@@ -8,36 +8,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5741b286af454493f543b2c39c894341c87df1b1
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: fe8187fe11f4818433aed847a7bc67d4a889ad3a
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63444906"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66206888"
 ---
 # <a name="writing-to-the-user-settings-store"></a>寫入使用者設定存放區
 使用者設定為可寫入的設定，在像是**工具 / 選項**對話方塊中，屬性 視窗中，然後某些其他對話方塊。 Visual Studio 擴充功能可能會使用這些來儲存少量資料。 本逐步解說示範如何將 「 記事本 」 加入 Visual Studio 是以外部工具讀取和寫入使用者設定存放區。
-
-### <a name="backing-up-your-user-settings"></a>備份您的使用者設定
-
-1. 您必須能夠重設的外部工具設定，以便您可以偵錯，並重複此程序。 若要這樣做，您必須儲存原始設定，以便您可以視需要進行還原。
-
-2. 開啟 Regedit.exe。
-
-3. 瀏覽至 HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\14.0Exp\External 工具\\。
-
-    > [!NOTE]
-    > 請確定您正在查看該索引鍵包含 \14.0Exp\ 和不 \14.0\\。 當您執行 Visual Studio 的實驗執行個體時，您的使用者設定是在登錄區 「 14.0Exp"。
-
-4. \External Tools\ 子機碼，以滑鼠右鍵按一下，然後按一下**匯出**。 請確定**選取分支**已選取。
-
-5. 儲存產生的外部 Tools.reg 檔案。
-
-6. 稍後，當您想要重設外部工具設定，選取 HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\14.0Exp\External Tools\ 登錄機碼，然後按一下**刪除**的操作功能表上。
-
-7. 當**確認機碼刪除** 對話方塊出現時，按一下**是**。
-
-8. 以滑鼠右鍵按一下您稍早儲存的外部 Tools.reg 檔案中，按一下**以開啟**，然後按一下**登錄編輯程式**。
 
 ## <a name="writing-to-the-user-settings-store"></a>寫入使用者設定存放區
 

@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c7b1d6fd8bb959bc789f52a2955abb13ee4f1165
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 64c18794e638c9f6af34ab670400662cb89df93c
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62874171"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66211773"
 ---
 # <a name="idebugexpressionevaluatorsetregistryroot"></a>IDebugExpressionEvaluator::SetRegistryRoot
 這個方法設定的登錄根目錄。 用於並排顯示偵錯。
@@ -36,10 +39,9 @@ int SetRegistryRoot(
 );
 ```
 
-#### <a name="parameters"></a>參數
- `ustrRegistryRoot`
-
- [in]新的登錄根目錄。
+## <a name="parameters"></a>參數
+`ustrRegistryRoot`\
+[in]新的登錄根目錄。
 
 ## <a name="return-value"></a>傳回值
  如果成功，則傳回`S_OK`; 否則傳回錯誤碼。

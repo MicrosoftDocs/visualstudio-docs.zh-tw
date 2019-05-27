@@ -11,12 +11,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6f29a1d77e4bb56608750c1f277fc6d58b81c255
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 694732dd5e308ed1db13d70d0f8845b32794eae3
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62921132"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66207833"
 ---
 # <a name="idebugdynamicfieldcomplusgettypefromprimitive"></a>IDebugDynamicFieldCOMPlus::GetTypeFromPrimitive
 擷取給定其基本類型的類型。
@@ -37,14 +40,12 @@ int GetTypeFromPrimitive(
 );
 ```
 
-#### <a name="parameters"></a>參數
- `dwCorElementType`
+## <a name="parameters"></a>參數
+`dwCorElementType`\
+[in]值從[CorElementType 列舉](/dotnet/framework/unmanaged-api/metadata/corelementtype-enumeration)表示基本類型。
 
- [in]值從[CorElementType 列舉](/dotnet/framework/unmanaged-api/metadata/corelementtype-enumeration)表示基本類型。
-
- `ppType`
-
- [out]傳回[IDebugField](../../../extensibility/debugger/reference/idebugfield.md)表示的型別。
+`ppType`\
+[out]傳回[IDebugField](../../../extensibility/debugger/reference/idebugfield.md)表示的型別。
 
 ## <a name="return-value"></a>傳回值
  如果成功，則傳回`S_OK`; 否則傳回錯誤碼。

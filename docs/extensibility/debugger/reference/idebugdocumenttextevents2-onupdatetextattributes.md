@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7b3e76c1eaf82763f461eb1a0b198a7653465970
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 4991b637fbc6720580856c9120a1c1d68a9769df
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62875212"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66207852"
 ---
 # <a name="idebugdocumenttextevents2onupdatetextattributes"></a>IDebugDocumentTextEvents2::onUpdateTextAttributes
 文件中，已更新文字屬性會告知偵錯封裝。
@@ -38,14 +41,12 @@ int onUpdateTextAttributes( 
 );
 ```
 
-#### <a name="parameters"></a>參數
- `pos`
+## <a name="parameters"></a>參數
+`pos`\
+[in]A [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md)結構，表示文字屬性已更新的位置。
 
- [in]A [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md)結構，表示文字屬性已更新的位置。
-
- `dwNumToUpdate`
-
- [in]指定文字的已更新的字元數目。
+`dwNumToUpdate`\
+[in]指定文字的已更新的字元數目。
 
 ## <a name="return-value"></a>傳回值
  如果成功，則傳回`S_OK`; 否則傳回錯誤碼。

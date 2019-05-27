@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 90d56149d4e942c8fe5206fad3ce740f510a451d
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: 8ce275d0875970fe23ed20d624df6d3b94489757
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65458936"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66211664"
 ---
 # <a name="idebugprogrampublisher2unpublishprogram"></a>IDebugProgramPublisher2::UnpublishProgram
 可讓無法用來進行偵錯的程式。
@@ -40,9 +40,8 @@ int UnpublishProgram(
 ```
 
 ## <a name="parameters"></a>參數
- `pDebuggeeInterface`\
-
- [in]`IUnknown`程式的介面。 這是相同的值提供給[PublishProgram](../../../extensibility/debugger/reference/idebugprogrampublisher2-publishprogram.md)方法和唯一識別要移除的程式 （也就是它會使用以 cookie）。
+`pDebuggeeInterface`\
+[in]`IUnknown`程式的介面。 這是相同的值提供給[PublishProgram](../../../extensibility/debugger/reference/idebugprogrampublisher2-publishprogram.md)方法和唯一識別要移除的程式 （也就是它會使用以 cookie）。
 
 ## <a name="return-value"></a>傳回值
  如果成功，則傳回`S_OK`; 否則傳回錯誤碼。

@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: f63b43c1e7e8035320c6d4c7b527e069904191a5
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: dc0884597454cf50cb5540d61b865dfe7686c25f
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65459001"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66203771"
 ---
 # <a name="idebugprogramprovider2getproviderprocessdata"></a>IDebugProgramProvider2::GetProviderProcessData
 擷取從指定的處理序中執行程式的清單。
@@ -48,9 +48,8 @@ int GetProviderProcessData(
 ```
 
 ## <a name="parameters"></a>參數
- `Flags`\
-
- [in]從旗標的組合[PROVIDER_FLAGS](../../../extensibility/debugger/reference/provider-flags.md)列舉型別。 此呼叫一般會在下列旗標：
+`Flags`\
+[in]從旗標的組合[PROVIDER_FLAGS](../../../extensibility/debugger/reference/provider-flags.md)列舉型別。 此呼叫一般會在下列旗標：
 
 |旗標|描述|
 |----------|-----------------|
@@ -59,21 +58,17 @@ int GetProviderProcessData(
 |`PFLAG_ATTACHED_TO_DEBUGGEE`|已附加至呼叫端，但不是啟動偵錯工具。|
 |`PFLAG_GET_PROGRAM_NODES`|呼叫端要求輸入程式節點的清單傳回。|
 
- `pPort`\
+`pPort`\
+[in]呼叫處理序的連接埠上執行。
 
- [in]呼叫處理序的連接埠上執行。
+`processId`\
+[in][AD_PROCESS_ID](../../../extensibility/debugger/reference/ad-process-id.md)結構包含該程式處理序的識別碼有問題。
 
- `processId`\
+`EngineFilter`\
+[in]指派給此程序 （這些會用來篩選實際上還會傳回根據提供的引擎的支援; 如果未不指定任何引擎，則會傳回所有程式的程式） 進行偵錯的偵錯引擎 Guid 的陣列。
 
- [in][AD_PROCESS_ID](../../../extensibility/debugger/reference/ad-process-id.md)結構包含該程式處理序的識別碼有問題。
-
- `EngineFilter`\
-
- [in]指派給此程序 （這些會用來篩選實際上還會傳回根據提供的引擎的支援; 如果未不指定任何引擎，則會傳回所有程式的程式） 進行偵錯的偵錯引擎 Guid 的陣列。
-
- `pProcess`\
-
- [out]A [PROVIDER_PROCESS_DATA](../../../extensibility/debugger/reference/provider-process-data.md)結構，其中會填入所要求的資訊。
+`pProcess`\
+[out]A [PROVIDER_PROCESS_DATA](../../../extensibility/debugger/reference/provider-process-data.md)結構，其中會填入所要求的資訊。
 
 ## <a name="return-value"></a>傳回值
  如果成功，則傳回`S_OK`; 否則傳回錯誤碼。

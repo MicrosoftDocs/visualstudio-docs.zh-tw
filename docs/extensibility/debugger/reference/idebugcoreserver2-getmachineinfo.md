@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c23e399a2debac06df239fe69ced6589d00f7774
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: aa93ab76f8d4a7b5be56e49f3c226a1c8576d6dd
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62876340"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66205716"
 ---
 # <a name="idebugcoreserver2getmachineinfo"></a>IDebugCoreServer2::GetMachineInfo
 擷取的機器執行的核心伺服器的描述。
@@ -38,12 +41,11 @@ int GetMachineInfo( 
 );
 ```
 
-#### <a name="parameters"></a>參數
- `Fields`
+## <a name="parameters"></a>參數
+`Fields`\
+[in]從旗標的組合[MACHINE_INFO_FIELDS](../../../extensibility/debugger/reference/machine-info-fields.md)列舉，指定哪些欄位`pMachineInfo`要填寫。
 
- [in]從旗標的組合[MACHINE_INFO_FIELDS](../../../extensibility/debugger/reference/machine-info-fields.md)列舉，指定哪些欄位`pMachineInfo`要填寫。
-
- `pMachineInfo`
+ `pMachineInfo`\
 
  [in、 out]A [MACHINE_INFO](../../../extensibility/debugger/reference/machine-info.md)結構，其中會填入電腦的描述。
 

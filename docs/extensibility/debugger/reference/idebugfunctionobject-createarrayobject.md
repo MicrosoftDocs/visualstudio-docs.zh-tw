@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a7ee5d4a59442238b461361522b06087650547b3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 2f35c63310abe227dd50428d34122787ed0fb292
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62873952"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66212617"
 ---
 # <a name="idebugfunctionobjectcreatearrayobject"></a>IDebugFunctionObject::CreateArrayObject
 建立的陣列物件。 此陣列可以包含任一個基本型別或物件執行個體的值。
@@ -46,30 +49,24 @@ int CreateArrayObject(
 );
 ```
 
-#### <a name="parameters"></a>參數
- `ot`
+## <a name="parameters"></a>參數
+`ot`\
+[in]指定的值從[OBJECT_TYPE](../../../extensibility/debugger/reference/object-type.md)列舉，指出新的陣列物件的類型。
 
- [in]指定的值從[OBJECT_TYPE](../../../extensibility/debugger/reference/object-type.md)列舉，指出新的陣列物件的類型。
+`pClassField`\
+[in][IDebugField](../../../extensibility/debugger/reference/idebugfield.md)物件，表示類別的物件，如果正在建立物件的陣列執行個體的值。 如果建立基本物件的陣列，這個參數為 null 值。
 
- `pClassField`
+`dwRank`\
+[in]陣序規範或陣列的維度數目。
 
- [in][IDebugField](../../../extensibility/debugger/reference/idebugfield.md)物件，表示類別的物件，如果正在建立物件的陣列執行個體的值。 如果建立基本物件的陣列，這個參數為 null 值。
+`dwDims`\
+[in]陣列的每個維度大小。
 
- `dwRank`
+`dwLowBounds`\
+[in]每個維度的來源 （通常是 0 或 1）。
 
- [in]陣序規範或陣列的維度數目。
-
- `dwDims`
-
- [in]陣列的每個維度大小。
-
- `dwLowBounds`
-
- [in]每個維度的來源 （通常是 0 或 1）。
-
- `ppObject`
-
- [out]傳回[IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)物件，代表新建立的陣列。 這是實際[IDebugArrayObject](../../../extensibility/debugger/reference/idebugarrayobject.md)物件。
+`ppObject`\
+[out]傳回[IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)物件，代表新建立的陣列。 這是實際[IDebugArrayObject](../../../extensibility/debugger/reference/idebugarrayobject.md)物件。
 
 ## <a name="return-value"></a>傳回值
  如果成功，會傳回 S_OK;否則，傳回錯誤碼。

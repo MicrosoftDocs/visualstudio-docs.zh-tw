@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 158887e9f2d7d7b250b435570d6780e460508816
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: a6bdb5daee7fa0c2b8dc5228998a8ac0fd22fec0
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62921655"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66205325"
 ---
 # <a name="idebugcustomattributegetparentfield"></a>IDebugCustomAttribute::GetParentField
 取得要附加自訂屬性的欄位。
@@ -36,10 +39,9 @@ int GetParentField(
 );
 ```
 
-#### <a name="parameters"></a>參數
- `ppField`
-
- [out]傳回[IDebugField](../../../extensibility/debugger/reference/idebugfield.md)物件，表示要附加自訂屬性的欄位。
+## <a name="parameters"></a>參數
+`ppField`\
+[out]傳回[IDebugField](../../../extensibility/debugger/reference/idebugfield.md)物件，表示要附加自訂屬性的欄位。
 
 ## <a name="return-value"></a>傳回值
  如果成功，會傳回 S_OK;否則，傳回錯誤碼。

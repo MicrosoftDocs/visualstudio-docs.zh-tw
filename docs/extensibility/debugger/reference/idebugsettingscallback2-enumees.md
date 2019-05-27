@@ -13,12 +13,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 12005f27e533d491451695925253137fb172ccd6
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: 5205cfbda0420e45fc1e22dac678d97975f937a8
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65457617"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66212157"
 ---
 # <a name="idebugsettingscallback2enumees"></a>IDebugSettingsCallback2::EnumEEs
 列舉可用的運算式評估工具提供的語言和廠商識別碼。
@@ -44,21 +44,17 @@ public int EnumEEs(
 ```
 
 ## <a name="parameters"></a>參數
- `celtBuffer`\
+`celtBuffer`\
+[in]中的項目數`pceltEEs`緩衝區。
 
- [in]中的項目數`pceltEEs`緩衝區。
+`rgguidLang`\
+[in、 out]程式設計語言的唯一識別碼。
 
- `rgguidLang`\
+`rgguidVendor`\
+[in、 out]廠商的唯一識別碼。
 
- [in、 out]程式設計語言的唯一識別碼。
-
- `rgguidVendor`\
-
- [in、 out]廠商的唯一識別碼。
-
- `pceltEEs`\
-
- [in、 out]運算式評估工具的陣列。
+`pceltEEs`\
+[in、 out]運算式評估工具的陣列。
 
 ## <a name="return-value"></a>傳回值
  如果成功，則傳回`S_OK`; 否則傳回錯誤碼。

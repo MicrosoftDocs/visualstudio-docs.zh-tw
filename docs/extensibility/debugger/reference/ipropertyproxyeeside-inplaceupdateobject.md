@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: a233a37f83ff3f75b5cf0ec103e59da91f1473bd
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: a083b3d2eeb05a07837b826b5cb35ccedb0c1722
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65458468"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66198714"
 ---
 # <a name="ipropertyproxyeesideinplaceupdateobject"></a>IPropertyProxyEESide::InPlaceUpdateObject
 使用指定的資料物件更新物件的資料，並傳回新的資料物件，表示物件的新資料。
@@ -42,13 +42,11 @@ int InPlaceUpdateObject(
 ```
 
 ## <a name="parameters"></a>參數
- `dataIn`\
+`dataIn`\
+[in][IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md)物件，包含新的資料。
 
- [in][IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md)物件，包含新的資料。
-
- `dataOut`\
-
- [out]傳回新`IEEDataStorage`物件，其中包含被取代的資料。
+`dataOut`\
+[out]傳回新`IEEDataStorage`物件，其中包含被取代的資料。
 
 ## <a name="return-value"></a>傳回值
  如果成功，則傳回`S_OK`; 否則傳回錯誤碼。

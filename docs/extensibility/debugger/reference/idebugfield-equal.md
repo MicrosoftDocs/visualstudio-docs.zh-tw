@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ed978355aa752730cfb43390b3e4b6f80d327f83
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: bfee65537512398cad2f4b86d51ebefac230fb1c
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62919461"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66212231"
 ---
 # <a name="idebugfieldequal"></a>IDebugField::Equal
 這個方法會比較此欄位與指定欄位相等。
@@ -36,10 +39,9 @@ int Equal(
 );
 ```
 
-#### <a name="parameters"></a>參數
- `pField`
-
- [in]要與這個比較的欄位。
+## <a name="parameters"></a>參數
+`pField`\
+[in]要與這個比較的欄位。
 
 ## <a name="return-value"></a>傳回值
  如果欄位是相同時，會傳回`S_OK`。 如果欄位不相同，就會傳回`S_FALSE.`否則會傳回錯誤碼。

@@ -14,12 +14,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 76bec7cb621605933f8cc0b15ff6cb6e4dd6d70e
-ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
+ms.openlocfilehash: 65bc4e95fbf73517e4f247a60404eff9e6747ef7
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65224006"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66206942"
 ---
 # <a name="idebugsymbolproviderdirectgetmethodfromaddress"></a>IDebugSymbolProviderDirect::GetMethodFromAddress
 擷取在指定的偵錯位址之方法的相關資訊。
@@ -51,33 +51,26 @@ int GetMethodFromAddress(
 ```
 
 ## <a name="parameters"></a>參數
- `pAddress`\
+`pAddress`\
+[in]偵錯所表示的地址[IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md)介面。
 
- [in]偵錯所表示的地址[IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md)介面。
+`pGuid`\
+[out]模組的唯一識別碼。
 
- `pGuid`\
+`pAppID`\
+[out]應用程式定義域的識別項。
 
- [out]模組的唯一識別碼。
+`pTokenClass`\
+[out]語彙基元，表示包含的類別。
 
- `pAppID`\
+`pTokenMethod`\
+[out]語彙基元，表示模組。
 
- [out]應用程式定義域的識別項。
+`pdwOffset`\
+[out]以位元組為單位從開頭的位移`pAddress`參數。
 
- `pTokenClass`\
-
- [out]語彙基元，表示包含的類別。
-
- `pTokenMethod`\
-
- [out]語彙基元，表示模組。
-
- `pdwOffset`\
-
- [out]以位元組為單位從開頭的位移`pAddress`參數。
-
- `pdwVersion`\
-
- [out]版本號碼的方法。
+`pdwVersion`\
+[out]版本號碼的方法。
 
 ## <a name="return-value"></a>傳回值
  如果成功，則傳回`S_OK`; 否則傳回錯誤碼。

@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 95b94dca9ef948a07b5c6458a9c8c53c8612eddd
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 55c36c6649b8ff2b1b0bebc57012970625a964b8
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62920154"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66199947"
 ---
 # <a name="idebugerrorevent2geterrormessage"></a>IDebugErrorEvent2::GetErrorMessage
 傳回可讓人類看得懂的錯誤訊息建構的資訊。
@@ -46,30 +49,24 @@ int GetErrorMessage(
 );
 ```
 
-#### <a name="parameters"></a>參數
- `pMessageType`
+## <a name="parameters"></a>參數
+`pMessageType`\
+[out]傳回值，以從[MESSAGETYPE](../../../extensibility/debugger/reference/messagetype.md)描述的訊息類型的列舉。
 
- [out]傳回值，以從[MESSAGETYPE](../../../extensibility/debugger/reference/messagetype.md)描述的訊息類型的列舉。
+`pbstrErrorFormat`\
+[out]使用者的最後一個訊息的格式 （如需詳細資訊，請參閱 < 備註 >）。
 
- `pbstrErrorFormat`
+`hrErrorReason`\
+[out]錯誤碼訊息是關於。
 
- [out]使用者的最後一個訊息的格式 （如需詳細資訊，請參閱 < 備註 >）。
+`pdwType`\
+[out]錯誤的嚴重性 (使用如 MB_XXX 常數`MessageBox`; 例如，`MB_EXCLAMATION`或`MB_WARNING`)。
 
- `hrErrorReason`
+`pbstrHelpFileName`\
+[out]說明檔 （設為 null 值，如果沒有說明檔） 的路徑。
 
- [out]錯誤碼訊息是關於。
-
- `pdwType`
-
- [out]錯誤的嚴重性 (使用如 MB_XXX 常數`MessageBox`; 例如，`MB_EXCLAMATION`或`MB_WARNING`)。
-
- `pbstrHelpFileName`
-
- [out]說明檔 （設為 null 值，如果沒有說明檔） 的路徑。
-
- `pdwHelpId`
-
- [out][說明] 主題的顯示 （設為 0，如果沒有任何 [說明] 主題） 的識別碼。
+`pdwHelpId`\
+[out][說明] 主題的顯示 （設為 0，如果沒有任何 [說明] 主題） 的識別碼。
 
 ## <a name="return-value"></a>傳回值
  如果成功，則傳回`S_OK`; 否則傳回錯誤碼。

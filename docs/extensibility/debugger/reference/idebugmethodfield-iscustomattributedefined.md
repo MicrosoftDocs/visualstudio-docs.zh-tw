@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 08534abc468ac358d7c5eeba25129d9752f84e5a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 0dfbe855f5bdcbfda384e7a9a180fc8f86595b85
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62872824"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66211942"
 ---
 # <a name="idebugmethodfieldiscustomattributedefined"></a>IDebugMethodField::IsCustomAttributeDefined
 判斷是否已定義特定的自訂屬性。
@@ -36,10 +39,9 @@ int IsCustomAttributeDefined(
 );
 ```
 
-#### <a name="parameters"></a>參數
- `pszCustomAttributeName`
-
- [in]字串，包含要尋找的自訂屬性的名稱。
+## <a name="parameters"></a>參數
+`pszCustomAttributeName`\
+[in]字串，包含要尋找的自訂屬性的名稱。
 
 ## <a name="return-value"></a>傳回值
  會傳回 S_OK 如果自訂屬性定義在此方法，否則會傳回 S_FALSE。

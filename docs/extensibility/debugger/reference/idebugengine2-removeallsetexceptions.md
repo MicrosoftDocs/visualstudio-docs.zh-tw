@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8f5eb2542fa16d86dd342ae0e2783ac03ca69ee4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 7ecb0935d0589a8473a256650dde39c297d87c0a
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62920950"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66207632"
 ---
 # <a name="idebugengine2removeallsetexceptions"></a>IDebugEngine2::RemoveAllSetExceptions
 移除 IDE 已設定特定的執行階段架構或語言的例外狀況的清單。
@@ -36,10 +39,9 @@ int RemoveAllSetExceptions( 
 );
 ```
 
-#### <a name="parameters"></a>參數
- `guidType`
-
- [in]語言 GUID 或執行階段架構特有的偵錯引擎的 GUID。
+## <a name="parameters"></a>參數
+`guidType`\
+[in]語言 GUID 或執行階段架構特有的偵錯引擎的 GUID。
 
 ## <a name="return-value"></a>傳回值
  如果成功，則傳回`S_OK`; 否則傳回錯誤碼。

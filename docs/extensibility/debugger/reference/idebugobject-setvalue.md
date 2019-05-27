@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ccfea65f7f24b3d48fc5ec5d68028c72b9b4eece
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: fec036357fb92563eba81c919ab32fea2e58c3b3
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62872446"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66211271"
 ---
 # <a name="idebugobjectsetvalue"></a>IDebugObject::SetValue
 設定物件的值從一系列連續的位元組。
@@ -38,14 +41,12 @@ int SetValue(
 );
 ```
 
-#### <a name="parameters"></a>參數
- `pValue`
+## <a name="parameters"></a>參數
+`pValue`\
+[in]代表新值的位元組陣列。
 
- [in]代表新值的位元組陣列。
-
- `nSize`
-
- [in]值，以位元組為單位的大小。
+`nSize`\
+[in]值，以位元組為單位的大小。
 
 ## <a name="return-value"></a>傳回值
  如果成功，會傳回 S_OK;否則，傳回錯誤碼。

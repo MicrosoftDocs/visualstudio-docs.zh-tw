@@ -43,6 +43,8 @@
                   href: fxcop-analyzer-options.md
             - name: 從靜態程式碼分析移轉
               href: fxcop-analyzers.yml
+            - name: 移植的規則
+              href: fxcop-rule-port-status.md
         - name: 分析器常見問題集
           href: analyzers-faq.md
         - name: 安裝 Roslyn 分析器

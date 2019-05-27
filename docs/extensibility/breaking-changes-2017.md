@@ -9,13 +9,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-monikerRange: vs-2017
-ms.openlocfilehash: e7363a0779721e4fb36106d6ee77324c341517ba
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 26f0facec34c04e5b228e346d1559ffe4f179fa1
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62926831"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66212245"
 ---
 # <a name="changes-in-visual-studio-2017-extensibility"></a>在 Visual Studio 2017 擴充性的變更
 
@@ -106,8 +105,8 @@ VSIX v3 中的資訊清單格式工具來撰寫新的設計工具位於 Visual S
 
 * 之前，Visual Studio 安裝到系統的許多的登錄機碼**HKEY_LOCAL_MACHINE**並**HKEY_CURRENT_USER** hive Visual Studio 特定機碼下：
 
-  * **HKLM\Software\Microsoft\VisualStudio\{版本}**:MSI 安裝程式和每個機器擴充功能所建立的登錄機碼。
-  * **HKCU\Software\Microsoft\VisualStudio\{版本}**:Visual Studio 來儲存使用者專屬設定所建立的登錄機碼。
+  * **HKLM\Software\Microsoft\VisualStudio\{版本}** :MSI 安裝程式和每個機器擴充功能所建立的登錄機碼。
+  * **HKCU\Software\Microsoft\VisualStudio\{版本}** :Visual Studio 來儲存使用者專屬設定所建立的登錄機碼。
   * **HKCU\Software\Microsoft\VisualStudio\{版本} _Config**:從一份 Visual Studio HKLM 索引鍵，再加上的登錄機碼合併 *.pkgdef*延伸模組的檔案。
 
 * 若要減少對登錄的影響，Visual Studio 現在會使用[RegLoadAppKey](/windows/desktop/api/winreg/nf-winreg-regloadappkeya)將登錄機碼下的私用二進位檔案中的函式 *[VSAPPDATA]\privateregistry.bin*。 只有非常少數的 Visual Studio 特定索引鍵會保留在系統登錄中。

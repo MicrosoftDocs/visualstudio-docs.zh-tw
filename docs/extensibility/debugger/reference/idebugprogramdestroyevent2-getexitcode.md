@@ -1,49 +1,50 @@
 ---
 title: IDebugProgramDestroyEvent2::GetExitCode | Microsoft Docs
-ms.date: 11/15/2016
-ms.prod: visual-studio-dev14
-ms.technology: vs-ide-sdk
+ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
 - IDebugProgramDestroyEvent2::GetExitCode
 helpviewer_keywords:
 - IDebugProgramDestroyEvent2::GetExitCode
 ms.assetid: 7f540cf6-e2d1-42b0-913e-a26d654b7659
-caps.latest.revision: 11
+author: gregvanl
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: d52a45d2d192a7ee9b3918a21a03250c5b0f0d0e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.workload:
+- vssdk
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 627f8a4a21663521fe757026da9b3ac177151e0d
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62917015"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66212535"
 ---
 # <a name="idebugprogramdestroyevent2getexitcode"></a>IDebugProgramDestroyEvent2::GetExitCode
-[!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
+取得程式的結束代碼。
 
-取得程式的結束代碼。  
-  
-## <a name="syntax"></a>語法  
-  
-```cpp#  
-HRESULT GetExitCode(   
-   DWORD* pdwExit  
-);  
-```  
-  
-```csharp  
-int GetExitCode(   
-   out uint pdwExit  
-);  
-```  
-  
-#### <a name="parameters"></a>參數  
- `pdwExit`  
- [out]傳回程式的結束代碼。  
-  
-## <a name="return-value"></a>傳回值  
- 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。  
-  
-## <a name="see-also"></a>另請參閱  
- [IDebugProgramDestroyEvent2](../../../extensibility/debugger/reference/idebugprogramdestroyevent2.md)
+## <a name="syntax"></a>語法
+
+```cpp
+HRESULT GetExitCode( 
+   DWORD* pdwExit
+);
+```
+
+```csharp
+int GetExitCode( 
+   out uint pdwExit
+);
+```
+
+## <a name="parameters"></a>參數
+`pdwExit`\
+[out]傳回程式的結束代碼。
+
+## <a name="return-value"></a>傳回值
+ 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。
+
+## <a name="see-also"></a>另請參閱
+- [IDebugProgramDestroyEvent2](../../../extensibility/debugger/reference/idebugprogramdestroyevent2.md)

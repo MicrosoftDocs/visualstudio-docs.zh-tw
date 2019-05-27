@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 400f0c6785a9cf9096caba9403886a2009905859
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 56f33dca4110377959570283f573de2344769ed9
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62919010"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66211234"
 ---
 # <a name="idebuginterceptexceptioncompleteevent2getinterceptcookie"></a>IDebugInterceptExceptionCompleteEvent2::GetInterceptCookie
 攔截到例外狀況處理完成時呼叫。
@@ -36,10 +39,9 @@ int GetInterceptCookie(
 );
 ```
 
-#### <a name="parameters"></a>參數
- `pqwCookie`
-
- [out]攔截到例外狀況相關聯的唯一值。
+## <a name="parameters"></a>參數
+`pqwCookie`\
+[out]攔截到例外狀況相關聯的唯一值。
 
 ## <a name="return-value"></a>傳回值
  如果成功，則傳回`S_OK`; 否則會傳回錯誤碼。
