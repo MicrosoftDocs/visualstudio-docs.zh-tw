@@ -13,12 +13,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: bc5455424070d475d3c26f91a18ffebf0cc6747d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 59f8f0d499b681b5ccda9e748af4b8ecac67daad
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62872155"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66209530"
 ---
 # <a name="idebugpendingbreakpoint2getstate"></a>IDebugPendingBreakpoint2::GetState
 取得暫止中斷點的狀態。
@@ -37,10 +40,9 @@ int GetState( 
 );
 ```
 
-#### <a name="parameters"></a>參數
- `pState`
-
- [in、 out]A [PENDING_BP_STATE_INFO](../../../extensibility/debugger/reference/pending-bp-state-info.md)結構，其中會填入這個暫止中斷點的描述。
+## <a name="parameters"></a>參數
+`pState`\
+[in、 out]A [PENDING_BP_STATE_INFO](../../../extensibility/debugger/reference/pending-bp-state-info.md)結構，其中會填入這個暫止中斷點的描述。
 
 ## <a name="return-value"></a>傳回值
  如果成功，則傳回`S_OK`; 否則傳回錯誤碼。

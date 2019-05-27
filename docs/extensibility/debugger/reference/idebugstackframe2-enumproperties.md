@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: fecff3d6a992360f2fec385e93d88a65b368db9f
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: 427e76036329eef95398787a87d795538c480ba7
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65457518"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66208722"
 ---
 # <a name="idebugstackframe2enumproperties"></a>IDebugStackFrame2::EnumProperties
 建立堆疊框架，例如本機變數與相關聯屬性的列舉值。
@@ -50,29 +50,23 @@ int EnumProperties ( 
 ```
 
 ## <a name="parameters"></a>參數
- `dwFieldSpec`\
+`dwFieldSpec`\
+[in]從旗標的組合[DEBUGPROP_INFO_FLAGS](../../../extensibility/debugger/reference/debugprop-info-flags.md)列舉，指定哪些欄位中列舉[DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md)結構要進行填寫。
 
- [in]從旗標的組合[DEBUGPROP_INFO_FLAGS](../../../extensibility/debugger/reference/debugprop-info-flags.md)列舉，指定哪些欄位中列舉[DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md)結構要進行填寫。
+`nRadix`\
+[in]要用於格式化數字的任何資訊基數。
 
- `nRadix`\
+`refiid`\
+[in]使用選取之篩選的 GUID [DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md)結構的列舉，例如`guidFilterLocals`。
 
- [in]要用於格式化數字的任何資訊基數。
+`dwTimeout`\
+[in]最大時間 （毫秒），這個方法返回之前等候。 使用`INFINITE`無限期等候。
 
- `refiid`\
+`pcelt`\
+[out]傳回列舉的屬性數目。 這等同於呼叫[GetCount](../../../extensibility/debugger/reference/ienumdebugpropertyinfo2-getcount.md)方法。
 
- [in]使用選取之篩選的 GUID [DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md)結構的列舉，例如`guidFilterLocals`。
-
- `dwTimeout`\
-
- [in]最大時間 （毫秒），這個方法返回之前等候。 使用`INFINITE`無限期等候。
-
- `pcelt`\
-
- [out]傳回列舉的屬性數目。 這等同於呼叫[GetCount](../../../extensibility/debugger/reference/ienumdebugpropertyinfo2-getcount.md)方法。
-
- `ppEnum`\
-
- [out]傳回[IEnumDebugPropertyInfo2](../../../extensibility/debugger/reference/ienumdebugpropertyinfo2.md)物件，其中包含所需的屬性清單。
+`ppEnum`\
+[out]傳回[IEnumDebugPropertyInfo2](../../../extensibility/debugger/reference/ienumdebugpropertyinfo2.md)物件，其中包含所需的屬性清單。
 
 ## <a name="return-value"></a>傳回值
  如果成功，則傳回`S_OK`; 否則傳回錯誤碼。

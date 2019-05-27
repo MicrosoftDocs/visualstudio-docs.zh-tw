@@ -1,18 +1,19 @@
 ---
 title: 撰寫 C/C++ 的單元測試
-ms.date: 10/09/2018
+description: 使用各種測試架構 (包括 CTest、Boost.Test 和 Google Test) 來在 Visual Studio 中撰寫 C++ 單元測試。
+ms.date: 05/06/2019
 ms.topic: conceptual
 ms.author: mblome
-manager: wpickett
+manager: markl
 ms.workload:
 - cplusplus
 author: mikeblome
-ms.openlocfilehash: e78d5b983031a3589c46bbceeaeee87d125eace3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 308478bc47d62731494616a30ce320b3662de735
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62945265"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65461599"
 ---
 # <a name="write-unit-tests-for-cc-in-visual-studio"></a>在 Visual Studio 中撰寫 C/C++ 的單元測試
 
@@ -30,11 +31,11 @@ Visual Studio 隨附這些 C++ 測試架構，不需另外下載：
 
 除了已安裝的架構之外，您也可以針對想要用於 Visual Studio 的任何架構撰寫自己的測試配接器。 測試配接器可以將單元測試與**測試總管**視窗整合。 [Visual Studio Marketplace](https://marketplace.visualstudio.com) 上提供幾個協力廠商配接器。 如需詳細資訊，請參閱[安裝協力廠商單元測試架構](install-third-party-unit-test-frameworks.md)。
 
-**Visual Studio 2017 15.7 版和更新版本 (Professional 與 Enterprise)**
+**Visual Studio 2017 和更新版本 (Professional 與 Enterprise)**
 
 C++ 單元測試專案支援 [CodeLens](../ide/find-code-changes-and-other-history-with-codelens.md)。
 
-**Visual Studio 2017 15.5 版和更新版本**
+**Visual Studio 2017 及更新版本 (所有版本)**
 
 - **Google Test 配接器**隨附作為 [使用 C++ 的桌面開發] 工作負載的預設元件。 它具有可透過 [方案總管] 中方案節點上的 [加入新的專案] 右鍵功能表新增至方案的專案範本，以及可透過 [工具] > [選項] 來設定的選項。 如需詳細資訊，請參閱[如何：在 Visual Studio 中使用 Google Test](how-to-use-google-test-for-cpp.md)。
 
@@ -50,17 +51,35 @@ C++ 單元測試專案支援 [CodeLens](../ide/find-code-changes-and-other-histo
 
 下列各節說明協助您開始使用 C++ 單元測試的基本步驟。 Microsoft 和 Google Test 架構的基本組態非常類似。 Boost.Test 需要您手動建立測試專案。
 
-### <a name="create-a-test-project"></a>建立測試專案
+::: moniker range="vs-2019"
+
+### <a name="create-a-test-project-in-visual-studio-2019"></a>在 Visual Studio 2019 中建立測試專案
+
+您會在一或多個測試專案中定義及執行測試，且這些專案與您要測試的程式碼位於相同的方案中。 若要將新的測試專案新增至現有的方案，請在 [方案總管] 中，以滑鼠右鍵按一下方案節點，然後選擇 [加入] > [新增專案]。 將 [語言] 設為 C++，然後在搜尋方塊中鍵入 "test"。 下圖顯示安裝 [使用 C++ 進行桌面開發] 及 [UWP 開發] 工作負載後，可使用的測試專案：
+
+![Visual Studio 2019 中的 C++ 測試專案](media/vs-2019/cpp-new-test-project-vs2019.png)
+
+::: moniker-end
+
+::: moniker range="vs-2017"
+
+### <a name="create-a-test-project-in-visual-studio-2017"></a>在 Visual Studio 2017 中建立測試專案
 
 您會在一或多個測試專案中定義及執行測試，且這些專案與您要測試的程式碼位於相同的方案中。 若要將新的測試專案新增至現有的方案，請在 [方案總管] 中，以滑鼠右鍵按一下方案節點，然後選擇 [加入] > [新增專案]。 然後在左窗格中選擇 [Visual C++] 和 [測試]，並從中間窗格選擇其中一個專案類型。 下圖顯示安裝 [使用 C++ 的桌面開發] 工作負載時可用的測試專案：
 
 ![C++ 測試專案](media/cpp-new-test-project.png)
+
+::: moniker-end
 
 ### <a name="create-references-to-other-projects-in-the-solution"></a>在方案中建立其他專案的參考
 
 若要讓您的測試程式碼存取要測試之專案中的函式，請在測試專案中新增專案的參考。 在 [方案總管] 中，以滑鼠右鍵按一下測試專案節點，然後選擇 [加入] > [參考]。 然後在對話方塊中選擇您要測試的專案。
 
 ![加入參考](media/cpp-add-ref-test-project.png)
+
+### <a name="link-to-object-or-library-files"></a>連結至物件或程式庫檔案
+
+若測試程式碼沒有匯出您要測試的函式，您可以將輸出 .obj 或 .lib 檔案新增至測試專案的相依性。 請參閱[將測試連結至物件或程式庫檔案](https://docs.microsoft.com/visualstudio/test/unit-testing-existing-cpp-applications-with-test-explorer?view=vs-2015#objectRef)。
 
 ### <a name="add-include-directives-for-header-files"></a>針對標頭檔新增 #include 指示詞
 
@@ -117,7 +136,7 @@ TEST_METHOD(TestClassInit)
 
 ## <a name="use-codelens"></a>使用 CodeLens
 
-**Visual Studio 2017 15.7 版和更新版本 (僅限 Professional 與 Enterprise Edition)**
+**Visual Studio 2017 和更新版本 (Professional 與 Enterprise 版)**
 
 [CodeLens](../ide/find-code-changes-and-other-history-with-codelens.md) 可讓您快速查看單元測試的狀態，而不用離開程式碼編輯器。 您可以採用下列任何一種方式為 C++ 單元測試專案初始化 CodeLens：
 

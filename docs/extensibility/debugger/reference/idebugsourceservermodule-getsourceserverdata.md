@@ -13,12 +13,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: ee55c7637272da536830f00607719fae9f234b4d
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: 73b5dd57a9e4c4de917e0fca744388b02345f0bb
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65457555"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66208755"
 ---
 # <a name="idebugsourceservermodulegetsourceserverdata"></a>IDebugSourceServerModule::GetSourceServerData
 擷取來源伺服器資訊的陣列。
@@ -41,12 +41,10 @@ public int GetSourceServerData(
 
 ## <a name="parameters"></a>參數
 `pDataByteCount`\
-
- [out]中的資料陣列的位元組數目。
+[out]中的資料陣列的位元組數目。
 
 `ppData`\
-
- [out]參考的資料陣列。
+[out]參考的資料陣列。
 
 ## <a name="return-value"></a>傳回值
 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。

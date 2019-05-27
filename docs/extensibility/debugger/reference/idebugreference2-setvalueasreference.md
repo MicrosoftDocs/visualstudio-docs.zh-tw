@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 0fc6e2fee354d6dcc76676bf02d4ed88e1799f26
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: 203e9741afa832ba0515a06b21ba1899e1355e1c
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65458637"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66211877"
 ---
 # <a name="idebugreference2setvalueasreference"></a>IDebugReference2::SetValueAsReference
 設定參考，以從另一個參考的值。 保留供未來使用。
@@ -46,21 +46,17 @@ int SetValueAsReference ( 
 ```
 
 ## <a name="parameters"></a>參數
- `rgpArgs`\
+`rgpArgs`\
+[in]陣列[IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md)用來判斷如何設定參考值的物件。
 
- [in]陣列[IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md)用來判斷如何設定參考值的物件。
+`dwArgCount`\
+[in]陣列中的參考數目。
 
- `dwArgCount`\
+`pValue`\
+[in][IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md)從中設定屬性值的物件。
 
- [in]陣列中的參考數目。
-
- `pValue`\
-
- [in][IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md)從中設定屬性值的物件。
-
- `dwTimeout`\
-
- [in]最大時間 （毫秒），這個方法返回之前等候。 使用`INFINITE`無限期等候。
+`dwTimeout`\
+[in]最大時間 （毫秒），這個方法返回之前等候。 使用`INFINITE`無限期等候。
 
 ## <a name="return-value"></a>傳回值
  一律傳回 `E_NOTIMPL`。

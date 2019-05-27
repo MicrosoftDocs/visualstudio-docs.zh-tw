@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 4f6f0aa96186557eba8549d899beed283558c1e7
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: a0e0b4995a6c7e01af955d672040ab81183c0f47
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65458727"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66198803"
 ---
 # <a name="idebugreference2getparent"></a>IDebugReference2::GetParent
 取得參考的父代參考。 保留供未來使用。
@@ -40,9 +40,8 @@ int GetParent ( 
 ```
 
 ## <a name="parameters"></a>參數
- `ppParent`\
-
- [out]傳回[IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md)物件，表示此屬性的父代。
+`ppParent`\
+[out]傳回[IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md)物件，表示此屬性的父代。
 
 ## <a name="return-value"></a>傳回值
  一律傳回 `E_NOTIMPL`。

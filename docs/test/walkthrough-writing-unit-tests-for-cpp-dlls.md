@@ -1,20 +1,20 @@
 ---
-title: HOW TO：撰寫 C++ DLL 的單元測試
-ms.date: 11/04/2017
+title: 作法：撰寫 C++ DLL 的單元測試
+ms.date: 05/01/2019
 ms.topic: conceptual
 ms.author: mblome
-manager: jillfra
+manager: markl
 ms.workload:
 - cplusplus
 author: mikeblome
-ms.openlocfilehash: 960eb242a8b03b863f1b4e38e0cb8cae53eed469
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 427b481da6feca902fda0e3058974034c72fe6f4
+ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62819681"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65226291"
 ---
-# <a name="how-to-write-unit-tests-for-c-dlls"></a>HOW TO：撰寫 C++ DLL 的單元測試
+# <a name="how-to-write-unit-tests-for-c-dlls"></a>作法：撰寫 C++ DLL 的單元測試
 
 本逐步解說描述如何使用測試先行方法來開發原生 C++ DLL。 基本步驟如下：
 
@@ -38,13 +38,12 @@ ms.locfileid: "62819681"
 
 1. 在 [檔案] 功能表上，選擇 [新增] > [專案]。
 
-     在對話方塊中，依序展開 [已安裝] > [範本] > [Visual C++] > [測試]。
+     **Visual Studio 2017 和更早版本**：依序展開 [已安裝] > [範本] > [Visual C++] > [測試]。
+     **Visual Studio 2019**：將 [語言] 設為 C++，然後在搜尋方塊中鍵入 "test"。
 
      選擇 [原生單元測試專案] 範本，或您偏好的任何已安裝架構。 如果您選擇其他範本 (例如 Google Test 或 Boost.Test)，基本原則相同，但有些細節則不同。
 
      在此逐步解說中，測試專案名為 `NativeRooterTest`。
-
-     ![建立 C++ 單元測試專案](../test/media/utecpp01.png)
 
 2. 在新的專案中，檢查 **unittest1.cpp**
 
@@ -85,11 +84,45 @@ ms.locfileid: "62819681"
 
 ## <a name="create_dll_project"></a> 建立 DLL 專案
 
-1. 使用 **Win32 Project** 範本來建立 **Visual C++** 專案。
+::: moniker range="vs-2019"
+
+下列步驟會示範如何在 Visual Studio 2019 中建立 DLL 專案。
+
+1. 使用 [Windows 傳統式精靈] 建立 C++ 專案：以滑鼠右鍵按一下 [方案總管] 中的解決方案名稱，然後選擇 [新增] > [新增專案]。 將 [語言] 設為 C++，然後在搜尋方塊中鍵入 "windows"。 從結果清單中選擇 [Windows 傳統式精靈]。 
 
      在此逐步解說中，專案名為 `RootFinder`。
 
-     ![建立 C++ Win32 專案](../test/media/utecpp05.png)
+2. 按下 [建立]。 在下一個對話方塊中，於 [應用程式類型] 下方，選擇 [動態連結程式庫 (dll)]，然後選取 [匯出符號]。
+
+     [匯出符號]  選項會產生方便的巨集，可讓您用來宣告匯出的方法。
+
+     ![已選取 [DLL] 和 [匯出符號] 的 C++ 專案精靈設定](../test/media/vs-2019/windows-desktop-project-dll.png)
+
+3. 在主體 *.h* 檔案中宣告匯出的函式：
+
+     ![新的 DLL 程式碼專案以及包含 API 巨集的 .h 檔案](../test/media/utecpp07.png)
+
+     宣告子 `__declspec(dllexport)` 會使類別的 public 和 protected 成員顯示在 DLL 外部。 如需詳細資訊，請參閱 [Using dllimport and dllexport in C++ Classes](/cpp/cpp/using-dllimport-and-dllexport-in-cpp-classes)。
+
+4. 在主體 *.cpp* 檔案中，新增函式的最小主體：
+
+    ```cpp
+        // Find the square root of a number.
+        double CRootFinder::SquareRoot(double v)
+        {
+            return 0.0;
+        }
+    ```
+
+::: moniker-end
+
+::: moniker range="vs-2017"
+
+下列步驟會示範如何在 Visual Studio 2017 中建立 DLL 專案。
+
+1. 使用 [Win32 專案] 範本建立 C++ 專案。
+
+     在此逐步解說中，專案名為 `RootFinder`。
 
 2. 在 [Win32 應用程式精靈] 中選取 [DLL]  和 [匯出符號]  。
 
@@ -112,6 +145,8 @@ ms.locfileid: "62819681"
             return 0.0;
         }
     ```
+
+::: moniker-end
 
 ## <a name="make_functions_visible"></a> 將測試專案結合至 DLL 專案
 

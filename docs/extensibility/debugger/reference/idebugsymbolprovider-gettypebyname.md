@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: b1bf9ac39628ff9615e158511a8a1afa0af46c3c
-ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
+ms.openlocfilehash: 0ec98b9c206975b122511648017f920a28905b09
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65226389"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66207106"
 ---
 # <a name="idebugsymbolprovidergettypebyname"></a>IDebugSymbolProvider::GetTypeByName
 這個方法會對應至符號類型的符號名稱。
@@ -44,17 +44,14 @@ int GetTypeByName(
 ```
 
 ## <a name="parameters"></a>參數
- `pszClassName`\
+`pszClassName`\
+[in]符號名稱。
 
- [in]符號名稱。
+`nameMatch`\
+[in]選取類型的相符項目，例如，區分大小寫。 值，以從[NAME_MATCH](../../../extensibility/debugger/reference/name-match.md)列舉型別。
 
- `nameMatch`\
-
- [in]選取類型的相符項目，例如，區分大小寫。 值，以從[NAME_MATCH](../../../extensibility/debugger/reference/name-match.md)列舉型別。
-
- `ppField`\
-
- [out]傳回與符號類型[IDebugField](../../../extensibility/debugger/reference/idebugfield.md)物件。
+`ppField`\
+[out]傳回與符號類型[IDebugField](../../../extensibility/debugger/reference/idebugfield.md)物件。
 
 ## <a name="return-value"></a>傳回值
  如果成功，則傳回`S_OK`; 否則傳回錯誤碼。

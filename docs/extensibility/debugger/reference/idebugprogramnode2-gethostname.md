@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 7fcf99f290938a6f51ce1e59ac1e14966206ee5b
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: 8eb68be0164b7fd558c5f5a02c476db9e641d574
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65459065"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66199010"
 ---
 # <a name="idebugprogramnode2gethostname"></a>IDebugProgramNode2::GetHostName
 取得裝載程式的處理序名稱。
@@ -43,12 +43,10 @@ int GetHostName (
 
 ## <a name="parameters"></a>參數
 `dwHostNameType`\
-
- [in]值，以從[GETHOSTNAME_TYPE](../../../extensibility/debugger/reference/gethostname-type.md)列舉，指定要傳回名稱的類型。
+[in]值，以從[GETHOSTNAME_TYPE](../../../extensibility/debugger/reference/gethostname-type.md)列舉，指定要傳回名稱的類型。
 
 `pbstrHostName`\
-
- [out]傳回裝載處理序名稱。
+[out]傳回裝載處理序名稱。
 
 ## <a name="return-value"></a>傳回值
 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。

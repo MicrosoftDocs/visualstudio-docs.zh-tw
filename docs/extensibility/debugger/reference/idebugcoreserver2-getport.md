@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 44e801318a2a997e7c1ab2f863b737c4d6693e14
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 578826eba2cd89ba045590ae110f57949e572064
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62922263"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66205643"
 ---
 # <a name="idebugcoreserver2getport"></a>IDebugCoreServer2::GetPort
 擷取特定的連接埠。
@@ -38,14 +41,12 @@ int GetPort( 
 );
 ```
 
-#### <a name="parameters"></a>參數
- `guidPort`
+## <a name="parameters"></a>參數
+`guidPort`\
+[in]要擷取之連接埠的 GUID。
 
- [in]要擷取之連接埠的 GUID。
-
- `ppPort`
-
- [out]傳回[IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md)物件，表示所需的連接埠。
+`ppPort`\
+[out]傳回[IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md)物件，表示所需的連接埠。
 
 ## <a name="return-value"></a>傳回值
  如果成功，則傳回`S_OK`; 否則傳回錯誤碼。 傳回`E_PORTSUPPLIER_NO_PORT`如果沒有指定的識別項與連接埠。

@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 461c2487c18cb6edc5601868c0f9644d7b8eeac1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: a947f473fe7dc1fcf3e7b5b2b96d13edc3098218
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62874610"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66201152"
 ---
 # <a name="idebugeventcallback2event"></a>IDebugEventCallback2::Event
 傳送通知的偵錯事件。
@@ -48,34 +51,27 @@ int Event( 
 );
 ```
 
-#### <a name="parameters"></a>參數
- `pEngine`
+## <a name="parameters"></a>參數
+`pEngine`\
+[in][IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md)物件，表示正在傳送這個事件的偵錯引擎 (DE)。 規定，才能填入此參數。
 
- [in][IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md)物件，表示正在傳送這個事件的偵錯引擎 (DE)。 規定，才能填入此參數。
+`pProcess`\
+[in][IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md)物件，表示發生事件的程序。 此參數會填入工作階段的偵錯管理員 (SDM)。 DE 一律會傳遞此參數的 null 值。
 
- `pProcess`
+`pProgram`\
+[in][IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)物件，表示的程式發生此事件。 對於大多數事件，此參數不是 null 的值。
 
- [in][IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md)物件，表示發生事件的程序。 此參數會填入工作階段的偵錯管理員 (SDM)。 DE 一律會傳遞此參數的 null 值。
+`pThread`\
+[in][IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)物件，表示發生此事件的執行緒。 停止事件，此參數不能堆疊框架取自此參數為 null 值。
 
- `pProgram`
+`pEvent`\
+[in][IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md)物件，代表偵錯事件。
 
- [in][IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)物件，表示的程式發生此事件。 對於大多數事件，此參數不是 null 的值。
+`riidEvent`\
+[in]GUID，識別哪些事件介面，以取得從`pEvent`參數。
 
- `pThread`
-
- [in][IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)物件，表示發生此事件的執行緒。 停止事件，此參數不能堆疊框架取自此參數為 null 值。
-
- `pEvent`
-
- [in][IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md)物件，代表偵錯事件。
-
- `riidEvent`
-
- [in]GUID，識別哪些事件介面，以取得從`pEvent`參數。
-
- `dwAttrib`
-
- [in]從旗標的組合[EVENTATTRIBUTES](../../../extensibility/debugger/reference/eventattributes.md)列舉型別。
+`dwAttrib`\
+[in]從旗標的組合[EVENTATTRIBUTES](../../../extensibility/debugger/reference/eventattributes.md)列舉型別。
 
 ## <a name="return-value"></a>傳回值
  如果成功，則傳回`S_OK`; 否則傳回錯誤碼。

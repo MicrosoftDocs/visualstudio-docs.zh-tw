@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 95a06a283b417432fd755f100f8c2e68a0325571
-ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
+ms.openlocfilehash: bb1121786c07be83dac480474a5b3b934779beec
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65225896"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66198859"
 ---
 # <a name="ieevisualizerdataprovidergetnewobjectforvisualizer"></a>IEEVisualizerDataProvider::GetNewObjectForVisualizer
 這個方法會取得新物件的視覺化檢視。 這個方法一律會建立新的物件，從現有的物件。
@@ -40,9 +40,8 @@ int GetNewObjectForVisualizer(
 ```
 
 ## <a name="parameters"></a>參數
- `ppObject`\
-
- [out]新的物件。
+`ppObject`\
+[out]新的物件。
 
 ## <a name="return-value"></a>傳回值
  如果成功，則傳回`S_OK`; 否則傳回錯誤碼。

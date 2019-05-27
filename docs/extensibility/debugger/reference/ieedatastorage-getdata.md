@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 8d9c00f21ab39d5785acb0090b16b5b1fc193699
-ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
+ms.openlocfilehash: 7edce84f512dd31963f38215e0d86e24c3d73b37
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65224184"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66199274"
 ---
 # <a name="ieedatastoragegetdata"></a>IEEDataStorage::GetData
 從物件擷取指定的位元組數目。
@@ -44,17 +44,14 @@ int GetData(
 ```
 
 ## <a name="parameters"></a>參數
- `dataSize`\
+`dataSize`\
+[in]要擷取的位元組數目 (`data`陣列必須具有至少下列數量之位元組為單位)。
 
- [in]要擷取的位元組數目 (`data`陣列必須具有至少下列數量之位元組為單位)。
+`sizeGotten`\
+[out]傳回實際擷取的位元組的數目。
 
- `sizeGotten`\
-
- [out]傳回實際擷取的位元組的數目。
-
- `data`\
-
- [in、 out]要求的資料填入的陣列。
+`data`\
+[in、 out]要求的資料填入的陣列。
 
 ## <a name="return-value"></a>傳回值
  如果成功，則傳回`S_OK`; 否則傳回錯誤碼。

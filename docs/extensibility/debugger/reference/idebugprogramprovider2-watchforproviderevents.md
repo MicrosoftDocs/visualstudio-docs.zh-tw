@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 9048dc633dd9cc74a9d27c54ff9b0fba16cc7ac1
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: c9e660e27397c530d4ef06c8ddfa3312ee4888cb
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65458986"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66203719"
 ---
 # <a name="idebugprogramprovider2watchforproviderevents"></a>IDebugProgramProvider2::WatchForProviderEvents
 允許的連接埠事件通知程序。
@@ -50,9 +50,8 @@ int WatchForProviderEvents(
 ```
 
 ## <a name="parameters"></a>參數
- `Flags`\
-
- [in]從旗標的組合[PROVIDER_FLAGS](../../../extensibility/debugger/reference/provider-flags.md)列舉型別。 此呼叫一般會在下列旗標：
+`Flags`\
+[in]從旗標的組合[PROVIDER_FLAGS](../../../extensibility/debugger/reference/provider-flags.md)列舉型別。 此呼叫一般會在下列旗標：
 
 |旗標|描述|
 |----------|-----------------|
@@ -61,25 +60,20 @@ int WatchForProviderEvents(
 |`PFLAG_ATTACHED_TO_DEBUGGEE`|已附加至呼叫端，但不是啟動偵錯工具。|
 |`PFLAG_REASON_WATCH`|呼叫端想要監看事件。 如果未設定此旗標。 然後會移除回呼事件和呼叫端不會再收到通知。|
 
- `pPort`\
+`pPort`\
+[in]呼叫處理序的連接埠上執行。
 
- [in]呼叫處理序的連接埠上執行。
+`processId`\
+[in][AD_PROCESS_ID](../../../extensibility/debugger/reference/ad-process-id.md)結構包含該程式處理序的識別碼有問題。
 
- `processId`\
+`EngineFilter`\
+[in]偵錯引擎處理序相關聯的 Guid 的陣列。
 
- [in][AD_PROCESS_ID](../../../extensibility/debugger/reference/ad-process-id.md)結構包含該程式處理序的識別碼有問題。
+`guidLaunchingEngine`\
+[in]（如果有的話），請啟動此程序的偵錯引擎的 GUID。
 
- `EngineFilter`\
-
- [in]偵錯引擎處理序相關聯的 Guid 的陣列。
-
- `guidLaunchingEngine`\
-
- [in]（如果有的話），請啟動此程序的偵錯引擎的 GUID。
-
- `pEventCallback`\
-
- [in][IDebugPortNotify2](../../../extensibility/debugger/reference/idebugportnotify2.md)接收事件通知的物件。
+`pEventCallback`\
+[in][IDebugPortNotify2](../../../extensibility/debugger/reference/idebugportnotify2.md)接收事件通知的物件。
 
 ## <a name="return-value"></a>傳回值
  如果成功，則傳回`S_OK`; 否則傳回錯誤碼。

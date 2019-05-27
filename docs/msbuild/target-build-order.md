@@ -1,6 +1,6 @@
 ---
 title: 目標建置順序 | Microsoft Docs
-ms.date: 09/04/2018
+ms.date: 05/02/2019
 ms.topic: conceptual
 helpviewer_keywords:
 - msbuild, build order
@@ -10,14 +10,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e6784ab59580df898e2f5f705984f13a3f94f73a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 502cc7d5f1124ef815455193f00c3f30e77c59a8
+ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62939153"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65225949"
 ---
 # <a name="target-build-order"></a>目標組建順序
+
 如果某一個目標的輸入相依於另一個目標的輸出，則必須排序目標。 您可以使用這些屬性來指定執行目標的順序：
 
 - `InitialTargets`. 這個 `Project` 屬性會指定優先執行的目標，即使已在命令列上或 `DefaultTargets` 屬性中指定目標也一樣。
@@ -33,6 +34,7 @@ ms.locfileid: "62939153"
   目標可能會有 `Condition` 屬性。 如果指定的條件評估為 `false`，則不會執行目標，且不會對組建產生任何作用。 如需條件的詳細資訊，請參閱[條件](../msbuild/msbuild-conditions.md)。
 
 ## <a name="initial-targets"></a>初始目標
+
  [Project](../msbuild/project-element-msbuild.md) 項目的 `InitialTargets` 屬性會指定優先執行的目標，即使已在命令列上或 `DefaultTargets` 屬性中指定目標也一樣。 初始目標通常用於錯誤檢查。
 
  `InitialTargets` 屬性的值可以是以分號分隔且已排序的目標清單。 下列範例會指定 `Warm` 目標執行，然後 `Eject` 目標執行。
@@ -46,6 +48,7 @@ ms.locfileid: "62939153"
  如需詳細資訊，請參閱[如何：指定要優先建置的目標](../msbuild/how-to-specify-which-target-to-build-first.md)。
 
 ## <a name="default-targets"></a>預設目標
+
  如果未在命令列上明確指定目標，則 [Project](../msbuild/project-element-msbuild.md) 項目的 `DefaultTargets` 屬性會指定要建置哪些目標。
 
  `DefaultTargets` 屬性的值可以是以分號分隔且已排序的預設目標清單。 下列範例會指定 `Clean` 目標執行，然後 `Build` 目標執行。
@@ -65,9 +68,11 @@ ms.locfileid: "62939153"
  如需詳細資訊，請參閱[如何：指定要優先建置的目標](../msbuild/how-to-specify-which-target-to-build-first.md)。
 
 ## <a name="first-target"></a>第一個目標
+
  如果沒有初始目標、預設目標或命令列目標，則 MSBuild 會執行它在專案檔或任何匯入的專案檔中遇到的第一個目標。
 
 ## <a name="target-dependencies"></a>目標相依性
+
  目標可以說明彼此間的相依性關係。 `DependsOnTargets` 屬性會指出某一個目標相依於其他目標。 例如，套用至物件的
 
 ```xml
@@ -77,6 +82,7 @@ ms.locfileid: "62939153"
  告知 MSBuild，`Serve` 目標相依於 `Chop` 目標和 `Cook` 目標。 MSBuild 會執行 `Chop` 目標，然後在執行 `Serve` 目標之前先執行 `Cook` 目標。
 
 ## <a name="beforetargets-and-aftertargets"></a>BeforeTargets 和 AfterTargets
+
  在 MSBuild 4.0 中，您可以使用 `BeforeTargets` 和 `AfterTargets` 屬性來指定目標順序。
 
  請考慮下列指令碼。
@@ -102,6 +108,7 @@ ms.locfileid: "62939153"
 ```
 
 ## <a name="determine-the-target-build-order"></a>判斷目標建置順序
+
  MSBuild 會以如下方式判斷目標建置順序：
 
 1. 執行 `InitialTargets` 目標。
@@ -110,15 +117,19 @@ ms.locfileid: "62939153"
 
 3. 評估目標的 `Condition` 屬性。 如果 `Condition` 屬性存在且評估為 `false`，則不會執行目標，且不會對組建產生任何進一步的作用。
 
-    列出 `BeforeTargets` 或 `AfterTargets` 中之條件式目標的目標，仍然會以指定的順序執行
+    其他列出 `BeforeTargets` 或 `AfterTargets` 中條件式目標的目標，仍會根據指定的順序執行。
 
-4. 執行或略過目標之前，如果它的 `Condition` 屬性不存在，或未評估為 `false`，則會執行其 `DependsOnTargets` 目標。
+4. 在執行或跳過目標前，其 `DependsOnTargets` 目標仍會執行，除非 `Condition` 屬性已套用到目標，並評估為 `false`。
 
-5. 執行或略過目標之前，就會執行在 `BeforeTargets` 屬性中列出它的任何目標。
+   > [!NOTE]
+   > 若沒有執行，則會將目標視為跳過，因為其輸出項目已是最新狀態 (請參閱[累加建置](../msbuild/incremental-builds.md))。 這項檢查會在於目標內部執行工作前完成，且不會影響目標的執行順序。
 
-6. 執行目標之前，會將它的 `Inputs` 屬性和 `Outputs` 屬性進行比較。 如果 MSBuild 判斷有任何與一或多個對應輸入檔相關的輸出檔過時，則 MSBuild 會執行目標。 否則，MSBuild 會略過目標。
+5. 在執行或跳過目標前，任何在 `BeforeTargets` 屬性中列出目標的其他目標都會執行。
 
-7. 執行或略過目標之後，就會執行在 `AfterTargets` 屬性中列出它的任何目標。
+6. 在執行目標前，會先比較它的 `Inputs` 屬性和 `Outputs` 屬性。 如果 MSBuild 判斷有任何與一或多個對應輸入檔相關的輸出檔過時，則 MSBuild 會執行目標。 否則，MSBuild 會略過目標。
+
+7. 在執行或跳過目標後，任何在 `AfterTargets` 屬性中列出它的其他目標都會執行。
 
 ## <a name="see-also"></a>另請參閱
+
 - [目標](../msbuild/msbuild-targets.md)

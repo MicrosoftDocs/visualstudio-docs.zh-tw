@@ -1,7 +1,7 @@
 ---
 title: FxCop 程式碼分析和 FxCop 分析器
 ms.date: 09/06/2018
-ms.topic: overview
+ms.topic: conceptual
 helpviewer_keywords:
 - code analysis FAQ
 author: gewarren
@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 6d8e3f3288c6a64b35a1de59fe0f317b6283b805
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 0415617c5e4106b72cc713f4296b48e94427e6e5
+ms.sourcegitcommit: cd21b38eefdea2cdefb53e68e7a30b868e78dd6b
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62816419"
+ms.lasthandoff: 05/22/2019
+ms.locfileid: "66037256"
 ---
 # <a name="frequently-asked-questions-about-fxcop-and-fxcop-analyzers"></a>FxCop 和 FxCop 分析器的相關常見問題
 
@@ -43,11 +43,15 @@ FxCop 分析器是以 .NET Compiler Platform ("Roslyn") 為基礎。 您可以[�
 
 ## <a name="i-get-warning-ca0507-even-after-ive-installed-the-fxcop-analyzers-nuget-package"></a>即使我安裝了 FxCop 分析器 NuGet 套件，我也會收到警告 CA0507
 
-如果您已經安裝了 FxCop 分析器但仍然收到警告 CA0507 **[執行程式碼分析] 已淘汰，以利在建置期間執行的 FxCop 分析器**，您可能需要將專案檔中的 **RunCodeAnalysis** msbuild 屬性設定為 **false**。 否則，靜態程式碼分析將在每次建置之後執行。
+如果您已經安裝了 FxCop 分析器但仍然收到警告 CA0507 **[執行程式碼分析] 已淘汰，請改為使用 FxCop 分析器**，您可能需要將專案檔中的 **RunCodeAnalysis** msbuild 屬性設為 **false**。 否則，靜態程式碼分析將在每次建置之後執行。
 
 ```xml
 <RunCodeAnalysis>false</RunCodeAnalysis>
 ```
+
+## <a name="which-rules-have-been-ported-to-fxcop-analyzers"></a>哪些規則已移植到 FxCop 分析器？
+
+如需哪些靜態程式碼分析規則已移植到的資訊[FxCop 分析器](install-fxcop-analyzers.md)，請參閱[Fxcop 規則連接埠狀態](fxcop-rule-port-status.md)。
 
 ## <a name="see-also"></a>另請參閱
 

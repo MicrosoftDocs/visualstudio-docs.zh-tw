@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2761a8509958c60746f7e5312fa5f5e13631acc7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: d469dff028b0139c225b89e256896e6815f5e4fc
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62875436"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66207470"
 ---
 # <a name="idebugengine2setregistryroot"></a>IDebugEngine2::SetRegistryRoot
 設定偵錯引擎 (DE) 的登錄根目錄。
@@ -36,10 +39,9 @@ int SetRegistryRoot( 
 );
 ```
 
-#### <a name="parameters"></a>參數
- `pszRegistryRoot`
-
- [in]若要使用的登錄根目錄。
+## <a name="parameters"></a>參數
+`pszRegistryRoot`\
+[in]若要使用的登錄根目錄。
 
 ## <a name="return-value"></a>傳回值
  如果成功，則傳回`S_OK`; 否則傳回錯誤碼。

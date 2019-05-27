@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: fa66f61c7e72f1c629fe664baf2c2a5dcc9631e2
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: 7d9e2ff4b853baec5da19b4c62cffe4e86102736
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65458895"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66211607"
 ---
 # <a name="idebugproperty2getextendedinfo"></a>IDebugProperty2::GetExtendedInfo
 取得擴充屬性的資訊。
@@ -42,13 +42,11 @@ int GetExtendedInfo ( 
 ```
 
 ## <a name="parameters"></a>參數
- `guidExtendedInfo`\
+`guidExtendedInfo`\
+[in]決定要擷取的擴充資訊的類型的 GUID。 如需詳細資訊，請參閱 < 備註 >。
 
- [in]決定要擷取的擴充資訊的類型的 GUID。 如需詳細資訊，請參閱 < 備註 >。
-
- `pExtendedInfo`\
-
- [out]傳回`VARIANT`(C++) 或物件 (C#)，可用來擷取擴充的屬性的資訊。 比方說，這個參數可能會傳回`IUnknown`介面，可以查詢[IDebugDocumentText2](../../../extensibility/debugger/reference/idebugdocumenttext2.md)介面。 如需詳細資訊，請參閱 < 備註 >。
+`pExtendedInfo`\
+[out]傳回`VARIANT`(C++) 或物件 (C#)，可用來擷取擴充的屬性的資訊。 比方說，這個參數可能會傳回`IUnknown`介面，可以查詢[IDebugDocumentText2](../../../extensibility/debugger/reference/idebugdocumenttext2.md)介面。 如需詳細資訊，請參閱 < 備註 >。
 
 ## <a name="return-value"></a>傳回值
  如果成功，則傳回`S_OK`; 否則會傳回錯誤碼。 傳回`S_GETEXTENDEDINFO_NO_EXTENDEDINFO`如果擷取沒有延伸資訊。

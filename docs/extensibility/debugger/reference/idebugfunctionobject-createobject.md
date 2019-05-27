@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 54d1e6c21cdf4e16db69cbad0947e864e7c1847e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 5877f43402d2bac8284be8d24d0c94cd2052a313
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62919406"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66200849"
 ---
 # <a name="idebugfunctionobjectcreateobject"></a>IDebugFunctionObject::CreateObject
 建立使用建構函式的物件。
@@ -42,22 +45,18 @@ int CreateObject(
 );
 ```
 
-#### <a name="parameters"></a>參數
- `pConstructor`
+## <a name="parameters"></a>參數
+`pConstructor`\
+[in][IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md)物件，表示要建立之物件的建構函式。
 
- [in][IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md)物件，表示要建立之物件的建構函式。
+`dwArgs`\
+[in]中的參數數目`pArg`陣列。 表示傳遞至建構函式的參數數目。
 
- `dwArgs`
+`pArg`\
+[in]陣列[IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)物件代表的參數傳遞至建構函式。
 
- [in]中的參數數目`pArg`陣列。 表示傳遞至建構函式的參數數目。
-
- `pArg`
-
- [in]陣列[IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)物件代表的參數傳遞至建構函式。
-
- `ppObject`
-
- [out]傳回`IDebugObject`代表新建立的物件。
+`ppObject`\
+[out]傳回`IDebugObject`代表新建立的物件。
 
 ## <a name="return-value"></a>傳回值
  如果成功，會傳回 S_OK;否則，傳回錯誤碼。

@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ab1ea05511369d36b881afcaf7c161f796fd4925
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 29f9b8ce9e235fc25a1c52930bbf31ec8d8cf557
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62875307"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66207785"
 ---
 # <a name="idebugengine2attach"></a>IDebugEngine2::Attach
 將偵錯引擎 (DE) 附加至程式或程式。 執行同處理序以 SDM DE 時，由工作階段的偵錯管理員 (SDM) 呼叫。
@@ -44,26 +47,21 @@ int Attach( 
 );
 ```
 
-#### <a name="parameters"></a>參數
- `pProgram`
+## <a name="parameters"></a>參數
+`pProgram`\
+[in]陣列[IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)代表要附加至程式的物件。 這些是連接埠的程式。
 
- [in]陣列[IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)代表要附加至程式的物件。 這些是連接埠的程式。
+`rgpProgramNodes`\
+[in]陣列[IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md)代表程式節點，一個用於每個程式的物件。 此陣列中的程式節點代表相同的程式中`pProgram`。 程式節點會提供，以供 DE 識別所要附加至的程式。
 
- `rgpProgramNodes`
+`celtPrograms`\
+[in]程式和/或程式中的節點數目`pProgram`和`rgpProgramNodes`陣列。
 
- [in]陣列[IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md)代表程式節點，一個用於每個程式的物件。 此陣列中的程式節點代表相同的程式中`pProgram`。 程式節點會提供，以供 DE 識別所要附加至的程式。
+`pCallback`\
+[in][IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md)来用來將偵錯事件傳送到 SDM 物件。
 
- `celtPrograms`
-
- [in]程式和/或程式中的節點數目`pProgram`和`rgpProgramNodes`陣列。
-
- `pCallback`
-
- [in][IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md)来用來將偵錯事件傳送到 SDM 物件。
-
- `dwReason`
-
- [in]值，以從[ATTACH_REASON](../../../extensibility/debugger/reference/attach-reason.md)列舉，指定附加這些程式的原因。 如需詳細資訊，請參閱＜備註＞一節。
+`dwReason`\
+[in]值，以從[ATTACH_REASON](../../../extensibility/debugger/reference/attach-reason.md)列舉，指定附加這些程式的原因。 如需詳細資訊，請參閱＜備註＞一節。
 
 ## <a name="return-value"></a>傳回值
  如果成功，則傳回`S_OK`; 否則傳回錯誤碼。

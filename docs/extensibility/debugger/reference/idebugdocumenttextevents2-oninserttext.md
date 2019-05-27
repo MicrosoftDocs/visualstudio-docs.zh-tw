@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a8eee7a9225a54bb5ca965845b66aaa9adcdbe05
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 3a9c10449d324b33d601840ed24d5f8db9a4b1ae
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62875294"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66199150"
 ---
 # <a name="idebugdocumenttextevents2oninserttext"></a>IDebugDocumentTextEvents2::onInsertText
 已插入文件插入文字會告知偵錯封裝。
@@ -38,14 +41,12 @@ int onInsert( 
 );
 ```
 
-#### <a name="parameters"></a>參數
- `pos`
+## <a name="parameters"></a>參數
+`pos`\
+[in]A [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md)結構，表示文字插入的位置。
 
- [in]A [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md)結構，表示文字插入的位置。
-
- `dwNumToInsert`
-
- [in]指定的文字插入的字元數目。
+`dwNumToInsert`\
+[in]指定的文字插入的字元數目。
 
 ## <a name="return-value"></a>傳回值
  如果成功，則傳回`S_OK`; 否則傳回錯誤碼。

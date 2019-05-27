@@ -21,12 +21,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8579504f549cb078fee178127c7396896fce5313
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 80fc504752e181ec75da32f2d1da5dcbf902daf7
+ms.sourcegitcommit: cd21b38eefdea2cdefb53e68e7a30b868e78dd6b
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63399414"
+ms.lasthandoff: 05/22/2019
+ms.locfileid: "66037393"
 ---
 # <a name="general-debugging-options"></a>一般偵錯選項
 
@@ -136,7 +136,7 @@ ms.locfileid: "63399414"
 
 - **在應用程式中顯示執行階段工具**：顯示**即時視覺化樹狀結構**在主視窗的 XAML 應用程式進行偵錯工具列中的命令。 在 Visual Studio 2015 Update 2 中引進了此選項。
 
-- **啟用 XAML 編輯後繼續**： 可讓您使用 編輯後繼續使用 XAML 程式碼的功能。
+- **啟用 XAML 熱重新載入**:可讓您使用 XAML 熱重新載入功能搭配 XAML 程式碼上，執行您的應用程式時。 （這項功能先前稱為 「 XAML 編輯後繼續）
 
 **偵錯時啟用診斷工具**：[診斷工具] 視窗會在偵錯期間出現。
 

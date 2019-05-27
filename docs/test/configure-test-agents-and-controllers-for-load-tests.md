@@ -7,14 +7,14 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: fca2436b99f97e18801f8adffdc27fd348fc8123
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 889195101123e98207b0b25f05b0aa24355abc95
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62783920"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65461622"
 ---
-# <a name="configure-test-agents-and-test-controllers-for-running-load-tests"></a>設定用於執行負載測試的測試代理程式和測試控制器
+# <a name="overview-of-test-agents-and-test-controllers-for-running-load-tests"></a>用於執行負載測試的測試代理程式和測試控制器概觀
 
 Visual Studio 可以使用實體或虛擬機器產生應用程式適用的模擬負載。 這些機器必須設為單一測試控制器和一個或多個測試代理程式。 測試控制器和測試代理程式可以用來產生單一電腦無法產生的多個負載。
 

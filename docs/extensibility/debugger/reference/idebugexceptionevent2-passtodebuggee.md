@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: cae097b5ce02993fc125aafaffded32a35dde0a5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: bba8147c79ef00ede0a0aac0f0841053c7f2ef43
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62874576"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66201104"
 ---
 # <a name="idebugexceptionevent2passtodebuggee"></a>IDebugExceptionEvent2::PassToDebuggee
 指定例外狀況應該傳遞給正在偵錯程式時繼續執行，或如果例外狀況應予捨棄。
@@ -36,10 +39,9 @@ int PassToDebuggee(
 );
 ```
 
-#### <a name="parameters"></a>參數
- `fPass`
-
- [in]非零值 (`TRUE`) 如果例外狀況應該傳遞給正在偵錯程式時繼續執行，則為零 (`FALSE`) 如果例外狀況應予捨棄。
+## <a name="parameters"></a>參數
+`fPass`\
+[in]非零值 (`TRUE`) 如果例外狀況應該傳遞給正在偵錯程式時繼續執行，則為零 (`FALSE`) 如果例外狀況應予捨棄。
 
 ## <a name="return-value"></a>傳回值
  如果成功，則傳回`S_OK`; 否則傳回錯誤碼。

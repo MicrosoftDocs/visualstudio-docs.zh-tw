@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 8903e6634086a16462f7c8c285df7f9e56f21aff
-ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
+ms.openlocfilehash: f6288ca3f7fbb2ba05b16f7493f395c914c6b073
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65225651"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66203446"
 ---
 # <a name="ienumdebugports2getcount"></a>IEnumDebugPorts2::GetCount
 列舉中傳回的項目數。
@@ -40,9 +40,8 @@ int GetCount(
 ```
 
 ## <a name="parameters"></a>參數
- `pcelt`\
-
- [out]列舉中傳回的項目數。
+`pcelt`\
+[out]列舉中傳回的項目數。
 
 ## <a name="return-value"></a>傳回值
  如果成功，則傳回`S_OK`; 否則傳回錯誤碼。

@@ -11,12 +11,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 360ee8cb970dd4a1c181061e4ed99d9c6e06b452
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: c96d8b94142f9751412df90d3e46240631aa96f9
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62876483"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66205945"
 ---
 # <a name="idebugcomplussymbolprovider2gettypefromtoken"></a>IDebugComPlusSymbolProvider2::GetTypeFromToken
 擷取給定其語彙基元型別。
@@ -41,22 +44,18 @@ int GetTypeFromToken(
 );
 ```
 
-#### <a name="parameters"></a>參數
-`appDomain`
+## <a name="parameters"></a>參數
+`appDomain`\
+[in]應用程式定義域的識別項。
 
- [in]應用程式定義域的識別項。
+`guidModule`\
+[in]模組的唯一識別碼。
 
-`guidModule`
+`tdToken`\
+[in]要擷取之型別的權杖。
 
- [in]模組的唯一識別碼。
-
-`tdToken`
-
- [in]要擷取之型別的權杖。
-
-`ppField`
-
- [out]傳回所表示的型別[IDebugField](../../../extensibility/debugger/reference/idebugfield.md)。
+`ppField`\
+[out]傳回所表示的型別[IDebugField](../../../extensibility/debugger/reference/idebugfield.md)。
 
 ## <a name="return-value"></a>傳回值
 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。

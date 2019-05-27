@@ -1,5 +1,5 @@
 ---
-title: HOW TO：使用累加式變更資料，以程式設計的方式自動填滿範圍
+title: 以累加方式以程式設計方式變更資料範圍的自動填滿
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -15,14 +15,14 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: edb3a1bfaad8d662fb51a8527da6bef183fd05c4
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: a514f83d12cd00c4a7792ae0bf2483fdd916897a
+ms.sourcegitcommit: 13ab9a5ab039b070b9cd9251d0b83dd216477203
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63428175"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66177694"
 ---
-# <a name="how-to-programmatically-automatically-fill-ranges-with-incrementally-changing-data"></a>HOW TO：使用累加式變更資料，以程式設計的方式自動填滿範圍
+# <a name="how-to-programmatically-automatically-fill-ranges-with-incrementally-changing-data"></a>作法：使用累加式變更資料，以程式設計的方式自動填滿範圍
   <xref:Microsoft.Office.Interop.Excel.Range.AutoFill%2A>方法的<xref:Microsoft.Office.Interop.Excel.Range>物件可讓您將會自動填入值的工作表中的範圍。 大多數情況下，<xref:Microsoft.Office.Interop.Excel.Range.AutoFill%2A>方法用來儲存以累加方式增加或減少的範圍內的值。 您可以藉由提供選擇性的常數，從指定的行為<xref:Microsoft.Office.Interop.Excel.XlAutoFillType>列舉型別。
 
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]

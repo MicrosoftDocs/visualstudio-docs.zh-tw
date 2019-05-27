@@ -1,5 +1,5 @@
 ---
-title: 提供封裝和專案項目中的部署資訊 |Microsoft Docs
+title: 專案項目中的封裝和部署資訊
 ms.date: 02/02/2017
 ms.topic: conceptual
 f1_keywords:
@@ -24,12 +24,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 4b2bf1fc1b011b79fdd8123218a78ac91a14579b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a9af945ff377b30925a51875db205bcd882f4585
+ms.sourcegitcommit: 13ab9a5ab039b070b9cd9251d0b83dd216477203
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62550477"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66177706"
 ---
 # <a name="provide-packaging-and-deployment-information-in-project-items"></a>提供專案項目中的封裝和部署資訊
   中的所有 SharePoint 專案項目[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]有屬性，您可以使用專案部署到 SharePoint 時，提供額外的資料。 這些屬性如下所示：
@@ -57,7 +57,7 @@ ms.locfileid: "62550477"
 
  從所有的專案項目相同的功能屬性值會合併在一起的功能資訊清單中。 不過，如果兩個不同的專案項目指定相同的功能屬性索引鍵不相符的值，就會發生驗證錯誤。
 
- 功能屬性將直接加入至功能檔案 (*.feature*)，呼叫[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]SharePoint 物件模型方法<xref:Microsoft.VisualStudio.SharePoint.Features.IPropertyCollection.Add%2A>。 如果您使用這個方法時，請注意有關在功能屬性中新增相同的功能屬性值相同的規則也適用於直接加入的功能檔案的屬性。
+ 功能屬性將直接加入至功能檔案 ( *.feature*)，呼叫[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]SharePoint 物件模型方法<xref:Microsoft.VisualStudio.SharePoint.Features.IPropertyCollection.Add%2A>。 如果您使用這個方法時，請注意有關在功能屬性中新增相同的功能屬性值相同的規則也適用於直接加入的功能檔案的屬性。
 
 ## <a name="feature-receiver"></a>功能接收器
  功能接收器，則當專案項目中發生特定事件時執行的程式碼所含的功能。 例如，您可以定義功能安裝、 啟動，或升級時執行的功能接收器。 其中一種方式新增的功能接收器會將它直接加入一項功能，如中所述[逐步解說：新增功能事件接收器](../sharepoint/walkthrough-add-feature-event-receivers.md)。 另一個方法是參考功能接收器類別名稱和組件中的**功能接收器**屬性。
@@ -68,7 +68,7 @@ ms.locfileid: "62550477"
 ### <a name="reference-method"></a>Reference 方法
  若要新增的功能接收器的另一個方法是使用**功能接收器**屬性來參考功能接收器組件的專案項目。 功能接收器屬性值具有兩個子屬性：**組件**並**類別名稱**。 組件必須使用其完整，「 強式 」 的名稱和類別名稱必須是完整類型名稱。 如需詳細資訊，請參閱[強式名稱的組件](http://go.microsoft.com/fwlink/?LinkID=169573)。 之後將解決方案部署至 SharePoint 中，功能會使用參考的功能接收器，以處理功能的事件。
 
- 在方案建置時間，此功能功能中的接收器屬性值和其專案合併在一起設定 ReceiverAssembly 和 ReceiverClass 屬性功能項目的 SharePoint 方案的功能資訊清單中 (*.wsp*) 檔案。 因此，如果同時指定專案項目和功能的組件和類別名稱的屬性值，必須符合專案項目和功能屬性值。 如果值不相符，您會收到驗證錯誤。 如果您想要的專案項目參考的功能接收器組件不是使用其功能，將它移到另一項功能。
+ 在方案建置時間，此功能功能中的接收器屬性值和其專案合併在一起設定 ReceiverAssembly 和 ReceiverClass 屬性功能項目的 SharePoint 方案的功能資訊清單中 ( *.wsp*) 檔案。 因此，如果同時指定專案項目和功能的組件和類別名稱的屬性值，必須符合專案項目和功能屬性值。 如果值不相符，您會收到驗證錯誤。 如果您想要的專案項目參考的功能接收器組件不是使用其功能，將它移到另一項功能。
 
  如果您參考尚未在伺服器的功能接收器組件時，您也必須包含組件檔案本身在封裝中;[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]不會為您新增。 當您部署此功能時，組件檔會複製到其中一個系統[!INCLUDE[TLA#tla_gac](../sharepoint/includes/tlasharptla-gac-md.md)]或在 SharePoint 實體目錄的 Bin 資料夾。 如需詳細資訊，請參閱 < 如何：[如何：新增和移除其他組件](../sharepoint/how-to-add-and-remove-additional-assemblies.md)。
 

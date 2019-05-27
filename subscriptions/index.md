@@ -8,12 +8,12 @@ Ms.date: 06/25/2018
 Ms.topic: landing-page
 Description: 歡迎使用 Visual Studio 訂閱
 Searchscope: VS Subscription
-ms.openlocfilehash: bac5cbd1ae0da5d4607b566af898c28efc0876ad
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 939922aa418ee94d3018ac5f5743c31181e5e875
+ms.sourcegitcommit: 92a04c57ac0a49f304fa2ea5043436f30068c3cd
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62579938"
+ms.lasthandoff: 05/21/2019
+ms.locfileid: "65976115"
 ---
 # <a name="visual-studio-subscriptions"></a>Visual Studio 訂閱
 
@@ -169,7 +169,7 @@ Visual Studio 訂用帳戶是一組全方位資源，可供您在 Windows、iOS�
                 <div class="card">
                     <div class="cardText">
                         <h3>雲端服務</h3>
-                        <p>透過 Visual Studio 訂用帳戶，您可以                         收到每月 Azure 點數和 Azure 服務的                         免費存取，加上優惠的開發與測試費率，                         以及訂閱者獨家享有的圖像藝廊與                         預先設定的虛擬機器。 取決於您的訂用帳戶，                               雲端服務可能包括：</p>
+                        <p>透過 Visual Studio 訂用帳戶，您可以                         收到每月 Azure 點數來                         存取 Azure 服務，加上優惠的開發與測試費率，                         以及訂閱者獨家享有的圖像藝廊與                         預先設定的虛擬機器。 取決於您的訂用帳戶，                               雲端服務可能包括：</p>
                         <ul>
                             <li><a href="/visualstudio/subscriptions/vs-azure">Azure</a></li>
                             <li><a href="/visualstudio/subscriptions/vs-visual-studio-app-center">Visual Studio App Center</a></li>

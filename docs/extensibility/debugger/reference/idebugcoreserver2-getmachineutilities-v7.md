@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2929ed704d8b9642d30b9a7951a707db0635b319
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 0aff4ccea937536530d74dde13a5ba8a7b14bca7
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63414044"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66205677"
 ---
 # <a name="idebugcoreserver2getmachineutilitiesv7"></a>IDebugCoreServer2::GetMachineUtilities_V7
 這個方法會取得伺服器的機器的公用程式。
@@ -39,10 +42,9 @@ int GetMachineUtilities_V7(
 );
 ```
 
-#### <a name="parameters"></a>參數
- `ppUtil`
-
- [out]傳回`IDebugMDMUtil2_V7`表示機器的公用程式資訊的介面。
+## <a name="parameters"></a>參數
+`ppUtil`\
+[out]傳回`IDebugMDMUtil2_V7`表示機器的公用程式資訊的介面。
 
 ## <a name="return-value"></a>傳回值
  一律會傳回`E_NOTIMPL`，指出，該方法尚未實作。

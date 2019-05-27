@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c424dca7b20e6abe1afd419e9c156a400583b5cb
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 76e095c5c5b478c9901d90f0614cc4796ad028af
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62875446"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66207686"
 ---
 # <a name="idebugengine2enumprograms"></a>IDebugEngine2::EnumPrograms
 擷取一份所有正在偵錯的程式偵錯引擎 (DE)。
@@ -36,10 +39,9 @@ int EnumPrograms( 
 );
 ```
 
-#### <a name="parameters"></a>參數
- `ppEnum`
-
- [out]傳回[IEnumDebugPrograms2](../../../extensibility/debugger/reference/ienumdebugprograms2.md)物件，其中包含一份所有正在偵錯所規定的程式。
+## <a name="parameters"></a>參數
+`ppEnum`\
+[out]傳回[IEnumDebugPrograms2](../../../extensibility/debugger/reference/ienumdebugprograms2.md)物件，其中包含一份所有正在偵錯所規定的程式。
 
 ## <a name="return-value"></a>傳回值
  如果成功，則傳回`S_OK`; 否則傳回錯誤碼。

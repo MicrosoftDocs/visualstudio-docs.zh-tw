@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4f253fc622beb6eee3490b77a1531b0b2096f14a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: e1bfc8b813f1016f3c040d47120675f881b92020
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62877038"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66203145"
 ---
 # <a name="idebugcanstopevent2getreason"></a>IDebugCanStopEvent2::GetReason
 取得偵錯引擎 (DE) 為何想要停止的原因。
@@ -36,10 +39,9 @@ int GetReason( 
 );
 ```
 
-#### <a name="parameters"></a>參數
- `pcr`
-
- [out]傳回值，以從[CANSTOP_REASON](../../../extensibility/debugger/reference/canstop-reason.md)列舉，描述這個事件的原因。
+## <a name="parameters"></a>參數
+`pcr`\
+[out]傳回值，以從[CANSTOP_REASON](../../../extensibility/debugger/reference/canstop-reason.md)列舉，描述這個事件的原因。
 
 ## <a name="return-value"></a>傳回值
  如果成功，則傳回`S_OK`; 否則傳回錯誤碼。

@@ -11,12 +11,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ba458d72fe12ce402129f60059347cb28b102686
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 9835275df1f332e69b13d886ab79d68588699e9d
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62876378"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66205835"
 ---
 # <a name="idebugcomplussymbolprovider2loadsymbolswithcormodule"></a>IDebugComPlusSymbolProvider2::LoadSymbolsWithCorModule
 載入偵錯符號**ICorDebugModule**物件。
@@ -47,34 +50,27 @@ int LoadSymbolsWithCorModule(
 );
 ```
 
-#### <a name="parameters"></a>參數
-`ulAppDomainID`
+## <a name="parameters"></a>參數
+`ulAppDomainID`\
+[in]應用程式定義域的識別項。
 
- [in]應用程式定義域的識別項。
+`guidModule`\
+[in]模組的唯一識別碼。
 
-`guidModule`
+`baseAddress`\
+[in]基底的記憶體位址。
 
- [in]模組的唯一識別碼。
+`pUnkMetadataImport`\
+[in]包含偵錯符號的中繼資料的物件。
 
-`baseAddress`
+`pUnkCorDebugModule`\
+[in]物件，可實作[ICorDebugModule 介面](/dotnet/framework/unmanaged-api/debugging/icordebugmodule-interface)。
 
- [in]基底的記憶體位址。
+`bstrModuleName`\
+[in]模組的名稱。
 
-`pUnkMetadataImport`
-
- [in]包含偵錯符號的中繼資料的物件。
-
-`pUnkCorDebugModule`
-
- [in]物件，可實作[ICorDebugModule 介面](/dotnet/framework/unmanaged-api/debugging/icordebugmodule-interface)。
-
-`bstrModuleName`
-
- [in]模組的名稱。
-
-`bstrSymSearchPath`
-
- [in]若要搜尋符號檔案的路徑。
+`bstrSymSearchPath`\
+[in]若要搜尋符號檔案的路徑。
 
 ## <a name="return-value"></a>傳回值
 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。

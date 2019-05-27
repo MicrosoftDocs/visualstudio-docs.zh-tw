@@ -1,5 +1,5 @@
 ---
-title: 使用 WPF 和 Entity Framework 6 建立簡單的資料應用程式
+title: 使用 WPF 和 Entity Framework 6 的簡單資料應用程式
 ms.date: 08/22/2017
 ms.topic: conceptual
 dev_langs:
@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: f5d65ff675329fdc714026ce6fe04ee3bd93086f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d67ca69856f48ec916f27498798cbb58efb3e5ac
+ms.sourcegitcommit: 13ab9a5ab039b070b9cd9251d0b83dd216477203
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62568590"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66177376"
 ---
 # <a name="create-a-simple-data-application-with-wpf-and-entity-framework-6"></a>使用 WPF 和 Entity Framework 6 建立簡單的資料應用程式
 
@@ -62,11 +62,11 @@ ms.locfileid: "62568590"
 
    ![Entity Framework 模型新項目](../data-tools/media/raddata-ef-new-project-item.png)
 
-2. 呼叫模型`Northwind_model`，然後選擇  **確定**。 [實體資料模型精靈] 隨即開啟。 選擇**資料庫的 EF Designer** ，然後按一下**下一步**。
+2. 呼叫模型`Northwind_model`，然後選擇  **確定** 。 [實體資料模型精靈] 隨即開啟。 選擇**資料庫的 EF Designer** ，然後按一下**下一步** 。
 
    ![從資料庫的 EF 模型](../data-tools/media/raddata-ef-model-from-database.png)
 
-3. 在下一個畫面中，選擇您的 LocalDB Northwind 連接，然後按一下 [**下一步]**。
+3. 在下一個畫面中，選擇您的 LocalDB Northwind 連接，然後按一下 [**下一步]** 。
 
 4. 在精靈的下一個頁面中，選擇哪些資料表、 預存程序，以及要包含在 Entity Framework 模型中其他資料庫物件。 展開樹狀檢視中的 [dbo] 節點，然後選擇**客戶**，**訂單**，並**Order Details**。 保留選取預設值，然後按一下**完成**。
 

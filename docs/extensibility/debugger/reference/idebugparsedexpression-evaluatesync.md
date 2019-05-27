@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ea659b847149a6abb2c3a5ba7cc947a59c7ae41c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 1161b97c642b7dc28f2b27037ef3253adf9f6eda
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62842915"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66209725"
 ---
 # <a name="idebugparsedexpressionevaluatesync"></a>IDebugParsedExpression::EvaluateSync
 這個方法會評估剖析的運算式，並選擇性地將轉換成另一個資料類型的結果。
@@ -48,34 +51,27 @@ int EvaluateSync(
 );
 ```
 
-#### <a name="parameters"></a>參數
- `dwEvalFlags`
+## <a name="parameters"></a>參數
+`dwEvalFlags`\
+[in]組合[EVALFLAGS](../../../extensibility/debugger/reference/evalflags.md)控制要如何評估運算式的常數。
 
- [in]組合[EVALFLAGS](../../../extensibility/debugger/reference/evalflags.md)控制要如何評估運算式的常數。
+`dwTimeout`\
+[in]指定的時間上限，以毫秒為單位，從這個方法返回之前等候。 使用`INFINITE`無限期等候。
 
- `dwTimeout`
+`pSymbolProvider`\
+[in]符號提供者，以表示[IDebugSymbolProvider](../../../extensibility/debugger/reference/idebugsymbolprovider.md)介面。
 
- [in]指定的時間上限，以毫秒為單位，從這個方法返回之前等候。 使用`INFINITE`無限期等候。
+`pAddress`\
+[in]在方法中，以表示目前的執行位置[IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md)介面。
 
- `pSymbolProvider`
+`pBinder`\
+[in]繫結器，以表示[IDebugBinder](../../../extensibility/debugger/reference/idebugbinder.md)介面。
 
- [in]符號提供者，以表示[IDebugSymbolProvider](../../../extensibility/debugger/reference/idebugsymbolprovider.md)介面。
+`bstrResultType`\
+[in]結果的類型應該轉換成。 這個引數可以是 null 值。
 
- `pAddress`
-
- [in]在方法中，以表示目前的執行位置[IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md)介面。
-
- `pBinder`
-
- [in]繫結器，以表示[IDebugBinder](../../../extensibility/debugger/reference/idebugbinder.md)介面。
-
- `bstrResultType`
-
- [in]結果的類型應該轉換成。 這個引數可以是 null 值。
-
- `ppResult`
-
- [out]傳回[IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)介面，表示評估的結果。
+`ppResult`\
+[out]傳回[IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)介面，表示評估的結果。
 
 ## <a name="return-value"></a>傳回值
  如果成功，則傳回`S_OK`; 否則傳回錯誤碼。

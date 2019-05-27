@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 72719a2dc6d424487c0fdd6b5850ff7f1d1e29aa
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: b45571e1d2d796c0b37c592cf1461b60e0f28186
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62920898"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66207697"
 ---
 # <a name="idebugengine2creatependingbreakpoint"></a>IDebugEngine2::CreatePendingBreakpoint
 在偵錯引擎 (DE) 中建立暫止中斷點。
@@ -38,14 +41,12 @@ int CreatePendingBreakpoint(
 );
 ```
 
-#### <a name="parameters"></a>參數
-`pBPRequest`
+## <a name="parameters"></a>參數
+`pBPRequest`\
+[in][IDebugBreakpointRequest2](../../../extensibility/debugger/reference/idebugbreakpointrequest2.md)描述若要建立的暫止中斷點的物件。
 
- [in][IDebugBreakpointRequest2](../../../extensibility/debugger/reference/idebugbreakpointrequest2.md)描述若要建立的暫止中斷點的物件。
-
-`ppPendingBP`
-
- [out]傳回[IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md)表示暫止中斷點的物件。
+`ppPendingBP`\
+[out]傳回[IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md)表示暫止中斷點的物件。
 
 ## <a name="return-value"></a>傳回值
 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。 通常會傳回`E_FAIL`如果`pBPRequest`參數不符合任何支援的語言的 if DE`pBPRequest`參數是無效或不完整。

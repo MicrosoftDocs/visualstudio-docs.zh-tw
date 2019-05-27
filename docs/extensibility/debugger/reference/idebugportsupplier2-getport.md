@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 65b2d8264ef75c46de32ee65d994794d526c7ddb
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 8ed00f3e4e6dbdb61e7a9ca39974e73f25246724
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62871418"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66204441"
 ---
 # <a name="idebugportsupplier2getport"></a>IDebugPortSupplier2::GetPort
 從連接埠提供者取得的連接埠。
@@ -38,14 +41,12 @@ int GetPort( 
 );
 ```
 
-#### <a name="parameters"></a>參數
- `guidPort`
+## <a name="parameters"></a>參數
+`guidPort`\
+[in]連接埠的全域唯一識別碼 (GUID)。
 
- [in]連接埠的全域唯一識別碼 (GUID)。
-
- `ppPort`
-
- [out]傳回[IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md)物件，表示連接埠。
+`ppPort`\
+[out]傳回[IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md)物件，表示連接埠。
 
 ## <a name="return-value"></a>傳回值
  如果成功，則傳回`S_OK`; 否則傳回錯誤碼。 傳回`E_PORTSUPPLIER_NO_PORT`如果沒有連接埠存在具有指定識別項。

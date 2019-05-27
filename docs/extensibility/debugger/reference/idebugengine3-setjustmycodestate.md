@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 82c2834e7c368776f0ae91cf9106ec6331eed997
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: fff1334c29ad4da5edb90c9a3b289582a8f616d8
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62920900"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66212507"
 ---
 # <a name="idebugengine3setjustmycodestate"></a>IDebugEngine3::SetJustMyCodeState
 這個方法會告知偵錯引擎的 JustMyCode 狀態資訊。
@@ -40,18 +43,15 @@ int SetJustMyCodeState(
 );
 ```
 
-#### <a name="parameters"></a>參數
- `fUpdate`
+## <a name="parameters"></a>參數
+`fUpdate`\
+[in]非零值 (`TRUE`) 來更新目前的資訊，請為零 (`FALSE`) 重設 （忽略任何先前設定） 的所有資訊。
 
- [in]非零值 (`TRUE`) 來更新目前的資訊，請為零 (`FALSE`) 重設 （忽略任何先前設定） 的所有資訊。
+`dwModules`\
+[in]中的資訊結構數目 `rgJMCSpec.`
 
- `dwModules`
-
- [in]中的資訊結構數目 `rgJMCSpec.`
-
- `rgJMCSpec`
-
- [in]陣列[JMC_CODE_SPEC](../../../extensibility/debugger/reference/jmc-code-spec.md)若要使用的結構。
+`rgJMCSpec`\
+[in]陣列[JMC_CODE_SPEC](../../../extensibility/debugger/reference/jmc-code-spec.md)若要使用的結構。
 
 ## <a name="return-value"></a>傳回值
  如果成功，則傳回`S_OK`，否則會傳回錯誤碼。

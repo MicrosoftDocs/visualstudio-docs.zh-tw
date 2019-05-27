@@ -11,12 +11,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 900492cf7a4e617a044ca60b3b72d9891bdaa15b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5682d752ba2c1430d8ab708e3dadda754a1ba757
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62788469"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65461388"
 ---
 # <a name="unit-test-your-code"></a>對程式碼進行單元測試
 
@@ -24,7 +24,7 @@ ms.locfileid: "62788469"
 
 單元測試工具包括：
 
-* **測試總管**&mdash;您可以執行單元測試，並在 [測試總管] 中查看其結果。 您可以使用任何具有 [測試總管] 配接器的單元測試架構，包括協力廠商架構。
+* **測試總管**&mdash;您可以在 [測試總管] 中執行單元測試及查看結果。 您可以使用任何具有 [測試總管] 配接器的單元測試架構，包括協力廠商架構。
 
 * **適用於受控碼的 Microsoft 單元測試架構**&mdash;適用於受控碼的 Microsoft 單元測試架構是與 Visual Studio 一起安裝的，可提供用於測試 .NET 程式碼的架構。
 
@@ -38,18 +38,18 @@ ms.locfileid: "62788469"
 
 ## <a name="key-tasks"></a>主要工作
 
-下列主題可協助您了解及建立單元測試：
+下列文章可協助您了解及建立單元測試：
 
 |工作|相關主題|
 |-|-----------------------|
-|**快速入門和逐步解說：** 使用下列主題從程式碼範例來了解 Visual Studio 中的單元測試。|-   [逐步解說：針對受控碼建立和執行單元測試](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md)<br />-   [快速入門：搭配 [測試總管] 進行以測試為導向的開發工作](../test/quick-start-test-driven-development-with-test-explorer.md)<br />-   [將單元測試新增至現有的 C++ 應用程式](../test/how-to-use-microsoft-test-framework-for-cpp.md)|
-|**使用 [測試總管] 進行單元測試：** 了解 [測試總管] 如何協助建立更具生產力且更有效率的單元測試。|-   [單元測試基本概念](../test/unit-test-basics.md)<br />-   [建立單元測試專案](../test/create-a-unit-test-project.md)<br />-   [使用測試總管執行單元測試](../test/run-unit-tests-with-test-explorer.md)<br />-   [安裝協力廠商單元測試架構](../test/install-third-party-unit-test-frameworks.md)|
-|**對 C++ 程式碼進行單元測試**|-   [使用適用於 C++ 的 Microsoft 單元測試架構撰寫適用於 C/C++ 的單元測試](../test/writing-unit-tests-for-c-cpp.md)|
-|**隔離單元測試**|-   [使用 Microsoft Fakes 隔離測試中的程式碼](../test/isolating-code-under-test-with-microsoft-fakes.md)|
-|**使用程式碼涵蓋範圍來識別測試專案程式碼的哪個部分：** 了解 Visual Studio 測試工具的程式碼涵蓋範圍功能。|-   [使用程式碼涵蓋範圍來決定所測試的程式碼數量](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md)|
-|**使用負載測試來執行壓力與效能分析：** 您可以建立負載測試，並將單元測試新增至其中，以便找出應用程式中的效能與壓力問題。|-   [負載測試 (Azure Test Plans 和 TFS)](/azure/devops/test/load-test/index?view=vsts)|
-|**設定品質閘門：** 您可以建立品質閘門，確定程式碼在簽入或合併前都必須先經過測試，以確保程式碼的品質。|-   [簽入原則 (Azure Repos TFVC)](/azure/devops/repos/tfvc/add-check-policies?view=vsts)|
-|**設定測試選項：** 例如，您可以指定儲存測試結果的位置。|[使用 .runsettings 檔案設定單元測試](../test/configure-unit-tests-by-using-a-dot-runsettings-file.md)|
+|**快速入門和逐步解說：** 從程式碼範例了解 Visual Studio 中的單元測試。|- [逐步解說：針對受控碼建立和執行單元測試](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md)<br />- [快速入門：搭配 [測試總管] 進行以測試為導向的開發工作](../test/quick-start-test-driven-development-with-test-explorer.md)<br />- [如何：將單元測試新增到 C++ 應用程式](../test/how-to-use-microsoft-test-framework-for-cpp.md)|
+|**使用 [測試總管] 進行單元測試：** 了解 [測試總管] 如何協助建立更具生產力且更有效率的單元測試。|- [單元測試基本概念](../test/unit-test-basics.md)<br />- [建立單元測試專案](../test/create-a-unit-test-project.md)<br />- [使用測試總管執行單元測試](../test/run-unit-tests-with-test-explorer.md)<br />- [安裝協力廠商單元測試架構](../test/install-third-party-unit-test-frameworks.md)|
+|**對 C++ 程式碼進行單元測試**|- [撰寫 C/C++ 的單元測試](../test/writing-unit-tests-for-c-cpp.md)|
+|**隔離單元測試**|- [使用 Microsoft Fakes 隔離測試中的程式碼](../test/isolating-code-under-test-with-microsoft-fakes.md)|
+|**使用程式碼涵蓋範圍來識別測試專案程式碼的哪個部分：** 了解 Visual Studio 測試工具的程式碼涵蓋範圍功能。|- [使用程式碼涵蓋範圍來決定所測試的程式碼數量](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md)|
+|**使用負載測試來執行壓力與效能分析：** 了解如何建立負載測試來協助您應用程式中的效能及壓力問題。|- [快速入門：建立負載測試專案](../test/quickstart-create-a-load-test-project.md)<br />- [負載測試 (Azure Test Plans 和 TFS)](/azure/devops/test/load-test/index?view=vsts)|
+|**設定品質閘門：** 了解如何建立品質閘門，強制在簽入或合併程式碼前執行測試。|- [簽入原則 (Azure Repos TFVC)](/azure/devops/repos/tfvc/add-check-policies?view=vsts)|
+|**設定測試選項：** 了解如何設定測試選項，例如儲存測試結果的位置。|[使用 .runsettings 檔案設定單元測試](../test/configure-unit-tests-by-using-a-dot-runsettings-file.md)|
 
 ## <a name="api-reference-documentation"></a>API 參考文件
 

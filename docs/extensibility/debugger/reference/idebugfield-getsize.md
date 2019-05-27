@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: fa10836b91306a99629e80b6869880f018878c38
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: e6b2e48d83919de37bdc2c668d3e7f8e3e1d71a9
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62919363"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66212677"
 ---
 # <a name="idebugfieldgetsize"></a>IDebugField::GetSize
 這個方法會取得一個欄位，以位元組為單位的大小。
@@ -36,10 +39,9 @@ int GetSize(
 );
 ```
 
-#### <a name="parameters"></a>參數
- `pdwSize`
-
- [out]傳回的大小。
+## <a name="parameters"></a>參數
+`pdwSize`\
+[out]傳回的大小。
 
 ## <a name="return-value"></a>傳回值
  如果成功，則傳回`S_OK`; 否則傳回錯誤碼。

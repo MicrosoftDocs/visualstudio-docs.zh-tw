@@ -10,12 +10,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e8b309af47aed94c45eca418b390be041f66f609
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: c86b97fd2437f19e280d9cf9e81454cceee9e47f
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62921197"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66199169"
 ---
 # <a name="idebugdocumentpositionoffset2getrange"></a>IDebugDocumentPositionOffset2::GetRange
 擷取目前的文件位置的範圍。
@@ -36,14 +39,12 @@ public int GetRange(
 );
 ```
 
-#### <a name="parameters"></a>參數
- `pdwBegOffset`
+## <a name="parameters"></a>參數
+`pdwBegOffset`\
+[in、 out]範圍的起始位置的位移。 如果不需要這項資訊，請設定此參數為 null 值。
 
- [in、 out]範圍的起始位置的位移。 如果不需要這項資訊，請設定此參數為 null 值。
-
- `pdwEndOffset`
-
- [in、 out]範圍的結束位置的位移。 如果不需要這項資訊，請設定此參數為 null 值。
+`pdwEndOffset`\
+[in、 out]範圍的結束位置的位移。 如果不需要這項資訊，請設定此參數為 null 值。
 
 ## <a name="return-value"></a>傳回值
  如果成功，則傳回`S_OK`; 否則傳回錯誤碼。

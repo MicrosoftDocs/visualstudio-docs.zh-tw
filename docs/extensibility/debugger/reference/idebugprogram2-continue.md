@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: fd13d67917a395eb33e26a53e0db1fed7340c9c6
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: b0b92f5b3c1e60c58bebb21fde5612e4fffc0340
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63412844"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66200420"
 ---
 # <a name="idebugprogram2continue"></a>IDebugProgram2::Continue
 會繼續執行此程式從已停止的狀態。 會保留任何先前的執行狀態 （例如在步驟），並在程式啟動重新執行。
@@ -39,10 +42,8 @@ int Continue( 
 );
 ```
 
-#### <a name="parameters"></a>參數
- `pThread`
-
- [in][IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)物件，表示執行緒。
+## <a name="parameters"></a>參數
+`pThread` [in][IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)物件，表示執行緒。
 
 ## <a name="return-value"></a>傳回值
  如果成功，則傳回`S_OK`; 否則傳回錯誤碼。

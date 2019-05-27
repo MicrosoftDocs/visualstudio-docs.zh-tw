@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: df878cc59a47a8d3cc7079f8b919f87d9bb60f43
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: e5d1f1f4b31317e79c497e1b13dcd7e218ecd16b
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65457455"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66212988"
 ---
 # <a name="idebugreference2compare"></a>IDebugReference2::Compare
 比較到另一個參考。 保留供未來使用。
@@ -42,13 +42,11 @@ int Compare ( 
 ```
 
 ## <a name="parameters"></a>參數
- `dwCompare`\
+`dwCompare`\
+[in]值，以從[REFERENCE_COMPARE](../../../extensibility/debugger/reference/reference-compare.md)列舉，指定的比較作業，例如，等於、 小於或大於。
 
- [in]值，以從[REFERENCE_COMPARE](../../../extensibility/debugger/reference/reference-compare.md)列舉，指定的比較作業，例如，等於、 小於或大於。
-
- `pReference`\
-
- [in][IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md)物件，表示要比較的參考。
+`pReference`\
+[in][IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md)物件，表示要比較的參考。
 
 ## <a name="return-value"></a>傳回值
  一律傳回 `E_NOTIMPL`。

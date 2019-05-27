@@ -16,10 +16,10 @@
   items:
     - name: 安裝 Visual Studio
       href: install/install-visual-studio.md
-    - name: 帳戶
+    - name: 個人化帳戶
       items:
         - name: 登入 Visual Studio
-          displayName: peronalization accounts
+          displayName: personalization accounts
           href: ide/signing-in-to-visual-studio.md
         - name: Work with multiple user accounts
           href: ide/work-with-multiple-user-accounts.md
@@ -43,15 +43,13 @@
       href: install/update-visual-studio.md
     - name: 修改 Visual Studio 2017
       href: install/modify-visual-studio.md
-    - name: 安裝說明檢視器
-      href: help-viewer/installation.md
     - name: 修復 Visual Studio
       href: install/repair-visual-studio.md
     - name: 解除安裝 Visual Studio
       href: install/uninstall-visual-studio.md
     - name: Visual Studio 系統管理員指南
       items:
-        - name: 系統管理員指南
+        - name: 總覽
           href: install/visual-studio-administrator-guide.md
         - name: 使用命令列
           items:
@@ -138,6 +136,8 @@
           href: install/advanced-build-tools-container.md
         - name: 容器的已知問題
           href: install/build-tools-container-issues.md
+    - name: 安裝說明檢視器
+      href: help-viewer/installation.md
 - name: 快速入門
   items:
     - name: Visual Studio 簡介
@@ -231,6 +231,8 @@
               items:
                 - name: 建立專案與項目範本
                   href: ide/creating-project-and-item-templates.md
+                - name: 新增標籤至範本
+                  href: ide/template-tags.md
                 - name: 建立專案範本
                   href: ide/how-to-create-project-templates.md
                 - name: 建立多重專案範本

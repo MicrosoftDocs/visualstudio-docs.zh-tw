@@ -13,12 +13,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f787ad06b4e7d612007b6448287b5062ae1b0efd
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: a8b93aa895588f743f4cc7c6b6adfa207590936d
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62873307"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66210563"
 ---
 # <a name="idebugmemorybytes2readat"></a>IDebugMemoryBytes2::ReadAt
 讀取指定的位置開始的位元組序列。
@@ -45,26 +48,21 @@ int ReadAt(
 );
 ```
 
-#### <a name="parameters"></a>參數
- `pStartContext`
+## <a name="parameters"></a>參數
+`pStartContext`\
+[in][IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md)物件，指定要從何處開始讀取的位元組。
 
- [in][IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md)物件，指定要從何處開始讀取的位元組。
+`dwCount`\
+[in]要讀取的位元組數目。 也會指定的長度`rgbMemory`陣列。
 
- `dwCount`
+`rgbMemory`\
+[in、 out]實際讀取的位元組填入的陣列。
 
- [in]要讀取的位元組數目。 也會指定的長度`rgbMemory`陣列。
+`pdwRead`\
+[out]傳回實際讀取的連續位元組數目。
 
- `rgbMemory`
-
- [in、 out]實際讀取的位元組填入的陣列。
-
- `pdwRead`
-
- [out]傳回實際讀取的連續位元組數目。
-
- `pdwUnreadable`
-
- [in、 out]傳回無法讀取的位元組數目。 可能是 null 值，如果用戶端不願就無法讀取的位元組數目。
+`pdwUnreadable`\
+[in、 out]傳回無法讀取的位元組數目。 可能是 null 值，如果用戶端不願就無法讀取的位元組數目。
 
 ## <a name="return-value"></a>傳回值
  如果成功，會傳回 S_OK;否則，傳回錯誤碼。

@@ -10,12 +10,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ca63b2941fc0c607af93772c21ca874b3d6b9031
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 0e92ee346a5d503c004279df84bdd8aacc429337
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62871384"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66204242"
 ---
 # <a name="idebugportsupplierex2setserver"></a>IDebugPortSupplierEx2::SetServer
 設定核心伺服器連接埠提供者。
@@ -34,8 +37,9 @@ int SetServer(
 );
 ```
 
-#### <a name="parameters"></a>參數
- `pServer` 若要設定連接埠提供者的核心伺服器。
+## <a name="parameters"></a>參數
+`pServer`\
+若要設定連接埠提供者的核心伺服器。
 
 ## <a name="return-value"></a>傳回值
  如果成功，則傳回`S_OK`; 否則傳回錯誤碼。

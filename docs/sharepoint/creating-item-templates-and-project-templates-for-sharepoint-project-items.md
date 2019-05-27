@@ -1,5 +1,5 @@
 ---
-title: 建立項目範本和專案範本的 SharePoint 專案項目 |Microsoft Docs
+title: 項目範本/專案範本，適用於 SharePoint 專案項目
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 1f8332b12b05c1d5db1f09afabacbba5e8ba83e9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 8f41783689e572ca823788e1a8dbcf772f07e924
+ms.sourcegitcommit: 13ab9a5ab039b070b9cd9251d0b83dd216477203
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62952683"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66177611"
 ---
 # <a name="create-item-templates-and-project-templates-for-sharepoint-project-items"></a>建立項目範本和專案範本，為 SharePoint 專案項目
 
@@ -66,7 +66,7 @@ ms.locfileid: "62952683"
 |A *.vstemplate*檔案|此檔案會提供 Visual Studio 中顯示範本中的所需的資訊**新的專案** 對話方塊中，並從範本建立專案。 如需詳細資訊，請參閱 < [Visual Studio 範本中繼資料檔案](/previous-versions/visualstudio/visual-studio-2010/xsxc3ete\(v\=vs.100\))。|
 |A *.csproj*或是 *.vbproj*檔案|這是專案檔。 它會定義的內容和專案的組態設定。|
 |*Package.package*|此檔案會定義專案的部署套件。 當您使用封裝設計工具自訂專案的方案套件時，Visual Studio 會儲存此檔案中的方案套件的相關資料。<br /><br /> 當您建立自訂的 SharePoint 專案範本時，我們建議您加入只有最小必要的內容中*封裝*檔案，以及您在使用中的 Api 來設定的方案套件<xref:Microsoft.VisualStudio.SharePoint.Packages>在專案範本與相關聯的擴充功能中的命名空間。 如果您這麼做，您的專案範本受到未來變更的結構*封裝*檔案。 如需範例，示範如何建立*封裝*檔案只需要最少內容，請參閱[逐步解說：使用專案範本，第 1 部分建立網站資料行專案項目](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-1.md)。<br /><br /> 如果您想要修改*封裝*直接檔案中，您可以使用之結構描述，以確認內容 *%Program Files (x86)%\Microsoft Visual Studio 11.0\Xml\Schemas\PackageModelSchema.xsd*.|
-|*Package.Template.xml*|這個檔案提供的基礎方案的資訊清單檔案 (*manifest.xml*) 的 SharePoint 方案套件 (*.wsp*)，從專案中產生。 如果您想要指定某些不是要變更您的專案類型的使用者的行為，您可以將內容到這個檔案。 如需詳細資訊，請參閱[建置組塊：解決方案](http://go.microsoft.com/fwlink/?LinkId=169186)並[方案的結構描述](http://go.microsoft.com/fwlink/?LinkId=177794)。<br /><br /> 當您建置專案的方案套件時，Visual Studio 會將合併的內容*封裝*並*Package.Template.xml*到解決方案的檔案資訊清單檔案。 如需有關建置方案套件的詳細資訊，請參閱[How to:使用 MSBuild 工作建立 SharePoint 方案套件](../sharepoint/how-to-create-a-sharepoint-solution-package-by-using-msbuild-tasks.md)。|
+|*Package.Template.xml*|這個檔案提供的基礎方案的資訊清單檔案 (*manifest.xml*) 的 SharePoint 方案套件 ( *.wsp*)，從專案中產生。 如果您想要指定某些不是要變更您的專案類型的使用者的行為，您可以將內容到這個檔案。 如需詳細資訊，請參閱[建置組塊：解決方案](http://go.microsoft.com/fwlink/?LinkId=169186)並[方案的結構描述](http://go.microsoft.com/fwlink/?LinkId=177794)。<br /><br /> 當您建置專案的方案套件時，Visual Studio 會將合併的內容*封裝*並*Package.Template.xml*到解決方案的檔案資訊清單檔案。 如需有關建置方案套件的詳細資訊，請參閱[How to:使用 MSBuild 工作建立 SharePoint 方案套件](../sharepoint/how-to-create-a-sharepoint-solution-package-by-using-msbuild-tasks.md)。|
 
  下表列出可以包含在專案範本的選擇性檔案。
 

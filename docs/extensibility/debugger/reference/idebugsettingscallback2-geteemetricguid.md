@@ -13,12 +13,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 75d934b4896614655a2043e1f6ba549d72f99e2d
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: d8829afadbd2f02b9b87f2beb84088aeeb447e66
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65457454"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66212120"
 ---
 # <a name="idebugsettingscallback2geteemetricguid"></a>IDebugSettingsCallback2::GetEEMetricGuid
 擷取指定其名稱的運算式評估工具計量的唯一識別碼。
@@ -44,21 +44,17 @@ HRESULT GetEEMetricGuid(
 ```
 
 ## <a name="parameters"></a>參數
- `guidLang`\
+`guidLang`\
+[in]程式設計語言的唯一識別碼。
 
- [in]程式設計語言的唯一識別碼。
+`guidVendor`\
+[in]供應商的唯一識別碼。
 
- `guidVendor`\
+`pszMetric`\
+[in]計量名稱。
 
- [in]供應商的唯一識別碼。
-
- `pszMetric`\
-
- [in]計量名稱。
-
- `pguidValue`\
-
- [out]傳回度量的唯一識別碼。
+`pguidValue`\
+[out]傳回度量的唯一識別碼。
 
 ## <a name="return-value"></a>傳回值
  如果成功，則傳回`S_OK`; 否則傳回錯誤碼。

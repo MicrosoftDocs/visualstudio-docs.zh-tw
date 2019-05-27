@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2212738a2d2d14ec454cfd42db44f812f72a035a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 55037d4a7dbc25cb422929020cf674eb41fbfe93
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62920176"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66204134"
 ---
 # <a name="idebugexpression2evaluateasync"></a>IDebugExpression2::EvaluateAsync
 這個方法會以非同步方式評估的運算式。
@@ -38,14 +41,12 @@ int EvaluateAsync(
 );
 ```
 
-#### <a name="parameters"></a>參數
-`dwFlags`
+## <a name="parameters"></a>參數
+`dwFlags`\
+[in]從旗標的組合[EVALFLAGS](../../../extensibility/debugger/reference/evalflags.md)控制運算式評估的列舉型別。
 
- [in]從旗標的組合[EVALFLAGS](../../../extensibility/debugger/reference/evalflags.md)控制運算式評估的列舉型別。
-
-`pExprCallback`
-
- [in]此參數一律為 null 值。
+`pExprCallback`\
+[in]此參數一律為 null 值。
 
 ## <a name="return-value"></a>傳回值
 如果成功，則傳回`S_OK`; 否則會傳回錯誤碼。 典型的錯誤碼是：

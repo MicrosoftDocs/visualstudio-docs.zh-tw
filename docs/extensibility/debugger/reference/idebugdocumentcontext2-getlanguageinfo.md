@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0eb1106bce363bcf1b817853cafc77d192adad86
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 3c1f4ae2284c1933e7cc3d63ce0079fe3db4f7d7
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62921830"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66204657"
 ---
 # <a name="idebugdocumentcontext2getlanguageinfo"></a>IDebugDocumentContext2::GetLanguageInfo
 取得與此文件內容相關聯的語言。
@@ -38,14 +41,12 @@ int GetLanguageInfo(
 );
 ```
 
-#### <a name="parameters"></a>參數
-`pbstrLanguage`
+## <a name="parameters"></a>參數
+`pbstrLanguage`\
+[out]傳回實作此文件內容的程式碼的語言名稱。
 
- [out]傳回實作此文件內容的程式碼的語言名稱。
-
-`pguidLanguage`
-
- [out]傳回可實作此文件內容的程式碼語言的 GUID。 例如，`guidVBScriptLang` 或 `guidCPPLang`。 此 GUID 並不限於所提供的語言[!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)]。
+`pguidLanguage`\
+[out]傳回可實作此文件內容的程式碼語言的 GUID。 例如，`guidVBScriptLang` 或 `guidCPPLang`。 此 GUID 並不限於所提供的語言[!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)]。
 
 ## <a name="return-value"></a>傳回值
 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。

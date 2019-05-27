@@ -11,12 +11,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d758d6c34563a2915e295514380cf07c847d86c4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 046064aedf82a1f0babf50971a0d28fdcc826ada
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62919742"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66211737"
 ---
 # <a name="idebugexpressionevaluator2setcallback"></a>IDebugExpressionEvaluator2::SetCallback
 可讓運算式評估工具 (EE)，指定偵錯工具引擎 (DE) 將用來讀取計量設定的回呼介面。
@@ -35,10 +38,9 @@ int SetCallback (
 );
 ```
 
-#### <a name="parameters"></a>參數
-`pCallback`
-
- [in]要用於設定回呼介面。
+## <a name="parameters"></a>參數
+`pCallback`\
+[in]要用於設定回呼介面。
 
 ## <a name="return-value"></a>傳回值
 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。

@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d6656ab3c8fc164a114e624aa5a7449bef3cc10e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: a9dc3d0b59c507743d78fd6954b8c98342fb4a0b
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62920585"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66212454"
 ---
 # <a name="idebugenginelaunch2resumeprocess"></a>IDebugEngineLaunch2::ResumeProcess
 繼續處理序執行。
@@ -36,10 +39,9 @@ int ResumeProcess ( 
 );
 ```
 
-#### <a name="parameters"></a>參數
- `pProcess`
-
- [in][IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md)物件，表示繼續處理程序。
+## <a name="parameters"></a>參數
+`pProcess`\
+[in][IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md)物件，表示繼續處理程序。
 
 ## <a name="return-value"></a>傳回值
  如果成功，則傳回`S_OK`; 否則會傳回錯誤碼。

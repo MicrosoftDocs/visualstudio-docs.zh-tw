@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 14debc141236558090116ff40f3f515c189b70ef
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: f0f11c3b1770ca32b34f7a5480d5d56acc2b2478
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62919990"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66201052"
 ---
 # <a name="idebugexpressioncontext2parsetext"></a>IDebugExpressionContext2::ParseText
 剖析文字格式，供稍後評估的運算式。
@@ -46,30 +49,24 @@ int ParseText(
 );
 ```
 
-#### <a name="parameters"></a>參數
-`pszCode`
+## <a name="parameters"></a>參數
+`pszCode`\
+[in]要剖析的運算式。
 
- [in]要剖析的運算式。
+`dwFlags`\
+[in]從旗標的組合[PARSEFLAGS](../../../extensibility/debugger/reference/parseflags.md)控制剖析的列舉型別。
 
-`dwFlags`
+`nRadix`\
+[in]要用於剖析中的任何數字資訊基數`pszCode`。
 
- [in]從旗標的組合[PARSEFLAGS](../../../extensibility/debugger/reference/parseflags.md)控制剖析的列舉型別。
+`ppExpr`\
+[out]傳回[IDebugExpression2](../../../extensibility/debugger/reference/idebugexpression2.md)物件，表示剖析的運算式，可供繫結和評估。
 
-`nRadix`
+`pbstrError`\
+[out]如果運算式包含錯誤，則傳回錯誤訊息。
 
- [in]要用於剖析中的任何數字資訊基數`pszCode`。
-
-`ppExpr`
-
- [out]傳回[IDebugExpression2](../../../extensibility/debugger/reference/idebugexpression2.md)物件，表示剖析的運算式，可供繫結和評估。
-
-`pbstrError`
-
- [out]如果運算式包含錯誤，則傳回錯誤訊息。
-
-`pichError`
-
- [out]傳回字元的索引中的錯誤`pszCode`如果運算式包含錯誤。
+`pichError`\
+[out]傳回字元的索引中的錯誤`pszCode`如果運算式包含錯誤。
 
 ## <a name="return-value"></a>傳回值
 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。

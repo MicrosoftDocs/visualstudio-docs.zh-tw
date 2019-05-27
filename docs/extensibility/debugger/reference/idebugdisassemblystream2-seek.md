@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f0763a4191f011748c6c5145a250459c4b9b4cf8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: e27d69f89ad29121dbafaca1787bdd870fa75634
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62921714"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66204876"
 ---
 # <a name="idebugdisassemblystream2seek"></a>IDebugDisassemblyStream2::Seek
 反組譯碼資料流指定數目的相對於指定位置的指示中移動讀取的指標。
@@ -42,22 +45,18 @@ int Seek( 
 );
 ```
 
-#### <a name="parameters"></a>參數
- `dwSeekStart`
+## <a name="parameters"></a>參數
+`dwSeekStart`\
+[in]值，以從[SEEK_START](../../../extensibility/debugger/reference/seek-start.md)列舉，指定 開始搜尋程序的相對位置。
 
- [in]值，以從[SEEK_START](../../../extensibility/debugger/reference/seek-start.md)列舉，指定 開始搜尋程序的相對位置。
+`pCodeContext`\
+[in][IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md)物件，表示相對於搜尋作業的程式碼內容。 使用這個參數才`dwSeekStart`  =  `SEEK_START_CODECONTEXT`，否則會忽略此參數，而且可以是 null 的值。
 
- `pCodeContext`
+`uCodeLocationId`\
+[in]搜尋作業的相對之程式碼位置識別碼。 如果使用這個參數`dwSeekStart`  =  `SEEK_START_CODELOCID`，否則會忽略這個參數，而且可以設定為 0。 請參閱 < 備註 > 一節[GetCodeLocationId](../../../extensibility/debugger/reference/idebugdisassemblystream2-getcodelocationid.md)方法的程式碼的位置識別項的描述。
 
- [in][IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md)物件，表示相對於搜尋作業的程式碼內容。 使用這個參數才`dwSeekStart`  =  `SEEK_START_CODECONTEXT`，否則會忽略此參數，而且可以是 null 的值。
-
- `uCodeLocationId`
-
- [in]搜尋作業的相對之程式碼位置識別碼。 如果使用這個參數`dwSeekStart`  =  `SEEK_START_CODELOCID`，否則會忽略這個參數，而且可以設定為 0。 請參閱 < 備註 > 一節[GetCodeLocationId](../../../extensibility/debugger/reference/idebugdisassemblystream2-getcodelocationid.md)方法的程式碼的位置識別項的描述。
-
- `iInstructions`
-
- [in]將相對於位置中指定的指令數目`dwSeekStart`。 這個值可以是負數以向後移動。
+`iInstructions`\
+[in]將相對於位置中指定的指令數目`dwSeekStart`。 這個值可以是負數以向後移動。
 
 ## <a name="return-value"></a>傳回值
  如果成功，會傳回 `S_OK`。 傳回`S_FALSE`如果搜尋位置是要提供的指示清單以外的點。 否則會傳回錯誤碼。

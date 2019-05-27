@@ -1,5 +1,5 @@
 ---
-title: HOW TO：匯出紋理以與 Direct2D 或 Javascipt 應用程式搭配使用
+title: 匯出紋理以用於 Direct2D 和 JavaScript 應用程式
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 241c25fe-764e-4e1b-ad32-b1377dcbb605
@@ -8,14 +8,14 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 803129ea758a6648c0caa8303e1d191c0e8a74f5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c878d898aa12644cc7a53ee9f12b351cd54c9d8d
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62844380"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65459196"
 ---
-# <a name="how-to-export-a-texture-for-use-with-direct2d-or-javascipt-apps"></a>HOW TO：匯出紋理以搭配 Direct2D 或 Javascipt 應用程式使用
+# <a name="how-to-export-a-texture-for-use-with-direct2d-or-javascript-apps"></a>作法：匯出紋理，以和 Direct2D 或 JavaScript 應用程式搭配使用
 
 「影像內容管線」能夠產生可與 Direct2D 的內部轉譯慣例相容的材質。 這種類型的紋理適合在使用 Direct2D 的應用程式中使用，以及在使用 JavaScript 建立的 UWP 應用程式中使用。
 
@@ -39,11 +39,11 @@ ms.locfileid: "62844380"
 
 - 提供材質時，必須使用下列其中一種區塊壓縮格式，以 .dds 格式提供：
 
-    - BC1_UNORM 壓縮
+   - BC1_UNORM 壓縮
 
-    - BC2_UNORM 壓縮
+   - BC2_UNORM 壓縮
 
-    - BC3_UNORM 壓縮
+   - BC3_UNORM 壓縮
 
 - 不支援 Mipmap。
 

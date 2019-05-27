@@ -13,12 +13,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 9d077c50c19a64eed7fc904a8f7986f95a75d1d1
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: 5a0241265f05f616b8810f84c1a82689a8604237
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65460755"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66212739"
 ---
 # <a name="portsupplierdescriptionflags"></a>PORT_SUPPLIER_DESCRIPTION_FLAGS
 
@@ -44,7 +44,6 @@ public enum enum_PORT_SUPPLIER_DESCRIPTION_FLAGS
 ## <a name="fields"></a>欄位
 
 `PSDFLAG_SHOW_WARNING_ICON`\
-
 如果選取，警告圖示將會顯示在 UI 中。
 
 ## <a name="remarks"></a>備註

@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: acaa43d4a9afe1084502c44f5221bc8518a9bd3e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 371766c1aaffbbd82cd4a5da8876a65eccc96363
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62917928"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66202611"
 ---
 # <a name="idebugprocess2getname"></a>IDebugProcess2::GetName
 取得標題、 易記名稱或處理序檔案名稱。
@@ -38,14 +41,12 @@ int GetName( 
 );
 ```
 
-#### <a name="parameters"></a>參數
- `gnType`
+## <a name="parameters"></a>參數
+`gnType`\
+[in]值，以從[GETNAME_TYPE](../../../extensibility/debugger/reference/getname-type.md)列舉，指定要傳回名稱的類型。
 
- [in]值，以從[GETNAME_TYPE](../../../extensibility/debugger/reference/getname-type.md)列舉，指定要傳回名稱的類型。
-
- `pbstrName`
-
- [out]傳回處理序的名稱。
+`pbstrName`\
+[out]傳回處理序的名稱。
 
 ## <a name="return-value"></a>傳回值
  如果成功，則傳回`S_OK`; 否則傳回錯誤碼。

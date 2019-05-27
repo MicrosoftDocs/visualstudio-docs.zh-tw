@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c570c7afe8721c757bae9352f70361d5b6cf392a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: c884d9ac404aecfa2edaadb2949ce0556da01bfe
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62921984"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66205589"
 ---
 # <a name="idebugcoreserver3createinstanceinserver"></a>IDebugCoreServer3::CreateInstanceInServer
 在伺服器上建立偵錯引擎執行的個體。
@@ -44,26 +47,21 @@ int CreateInstanceInServer(
 );
 ```
 
-#### <a name="parameters"></a>參數
- `szDll`
+## <a name="parameters"></a>參數
+`szDll`\
+[in]實作中指定的 CLSID 的 dll 路徑`clsidObject`參數。 如果是這`NULL`，然後 COM 的`CoCreateInstance`呼叫函式。
 
- [in]實作中指定的 CLSID 的 dll 路徑`clsidObject`參數。 如果是這`NULL`，然後 COM 的`CoCreateInstance`呼叫函式。
+`wLangId`\
+[in]偵錯引擎的地區設定。 這可以是 0，如果[SetLocale](../../../extensibility/debugger/reference/idebugengine2-setlocale.md)不應該呼叫方法。
 
- `wLangId`
+`clsidObject`\
+[in]若要建立偵錯引擎的 CLSID。
 
- [in]偵錯引擎的地區設定。 這可以是 0，如果[SetLocale](../../../extensibility/debugger/reference/idebugengine2-setlocale.md)不應該呼叫方法。
+`riid`\
+[in]特定介面的介面識別碼來擷取類別物件。
 
- `clsidObject`
-
- [in]若要建立偵錯引擎的 CLSID。
-
- `riid`
-
- [in]特定介面的介面識別碼來擷取類別物件。
-
- `ppvObject`
-
- [out]`IUnknown`介面具現化物件。 轉型或封送處理這個物件所需的介面。
+`ppvObject`\
+[out]`IUnknown`介面具現化物件。 轉型或封送處理這個物件所需的介面。
 
 ## <a name="return-value"></a>傳回值
  如果成功，則傳回`S_OK`; 否則傳回錯誤碼。

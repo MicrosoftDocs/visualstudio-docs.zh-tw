@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e8de1f98cb6953ba713796e1dbd74de849a0aaf7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 68ccc490476fcb8ccf3cc135493f5d95253f1018
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62917301"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66200310"
 ---
 # <a name="idebugprogram2enummodules"></a>IDebugProgram2::EnumModules
 擷取此程式已載入，並且正在執行的模組清單。
@@ -36,10 +39,9 @@ int EnumModules( 
 );
 ```
 
-#### <a name="parameters"></a>參數
- `ppEnum`
-
- [out]傳回[IEnumDebugModules2](../../../extensibility/debugger/reference/ienumdebugmodules2.md)物件，其中包含的模組清單。
+## <a name="parameters"></a>參數
+`ppEnum`\
+[out]傳回[IEnumDebugModules2](../../../extensibility/debugger/reference/ienumdebugmodules2.md)物件，其中包含的模組清單。
 
 ## <a name="return-value"></a>傳回值
  如果成功，則傳回`S_OK`; 否則傳回錯誤碼。
