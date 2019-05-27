@@ -7,12 +7,12 @@ ms.date: 12/19/2018
 ms.topic: conceptual
 description: 每月或每年租 Visual Studio Professional 或 Visual Studio Enterprise，沒有長期合約。
 searchscope: VS Subscription
-ms.openlocfilehash: 0f20db92099dfadadf710e9f3da24846b10406ac
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5927078aaf4001f569af9aafbc57575cf92fc980
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62978827"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65679320"
 ---
 # <a name="buy-visual-studio-professional-and-visual-studio-enterprise-cloud-subscriptions"></a>購買 Visual Studio Professional 和 Visual Studio Enterprise 雲端訂用帳戶
 
@@ -113,10 +113,10 @@ ms.locfileid: "62978827"
 答：現有客戶不會受到影響。 新的客戶必須決定要購買 Visual Studio 每月訂用帳戶，還是前往其他通路 (例如大量授權) 購買 Visual Studio 訂用帳戶。
 
 #### <a name="q-what-if-i-want-to-increase-the-number-of-subscriptions-for-my-customers"></a>問：如果我想要增加客戶的訂用帳戶數目，該怎麼辦？
-答：您的系統管理員仍可增加訂用帳戶數目，只要瀏覽 [https://manage.visualstudio.com](https://manage.visualstudio.com) 並遵循這篇文章中的指示增加訂用帳戶計數。
+答：對於在指定月份購買的年度訂用帳戶，我們會立即收取全年的費用，有效期為一整年。 基於此原因，您的系統管理員只能在目前購買月份修改授權數目 (有效期為 1 年，並收取 1 年的費用)。 過了購買月份後，即無法再增加訂用帳戶數目。
 
 #### <a name="q-what-if-i-want-to-decrease-the-number-of-subscriptions-for-my-customers"></a>問：如果我想要減少客戶的訂用帳戶數目，該怎麼辦？
-答：您的系統管理員仍可減少訂用帳戶數目，只要瀏覽 [https://manage.visualstudio.com](https://manage.visualstudio.com) 並遵循這篇文章中的指示減少訂用帳戶計數。
+答：您的系統管理員仍可減少訂用帳戶數目，只要瀏覽 [https://manage.visualstudio.com](https://manage.visualstudio.com) 並遵循這篇文章中的指示減少訂用帳戶計數。 系統將**不會**產生按比例計算的信用額度。 如需辦理退款，您必須連絡 Azure 帳單小組。
 
 #### <a name="q-if-my-customers-cancel-their-subscriptions-will-they-be-able-to-buy-more-annual-cloud-subscriptions-later"></a>問：如果我的客戶取消訂用帳戶，稍後是否可以購買其他年度雲端訂用帳戶？
 答：雖然他們無法購買其他年度雲端訂用帳戶，但還有許多購買 Visual Studio 訂用帳戶的選項。  若要深入了解，請參閱 [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/)。

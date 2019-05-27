@@ -1,7 +1,7 @@
 ---
 title: 針對網路或 Proxy 錯誤進行疑難排解
 description: 針對您在使用防火牆或 Proxy 伺服器的情況下安裝或使用 Visual Studio 時可能會遇到的網路或 Proxy 相關錯誤，尋找解決方案。
-ms.date: 03/30/2019
+ms.date: 05/22/2019
 ms.topic: troubleshooting
 helpviewer_keywords:
 - network installation, Visual Studio
@@ -17,12 +17,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: e98f06a2dabd6627fbc70b1d072d0e34924c6691
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 719922f8cfcae78f5c082e838528a77bbd66d073
+ms.sourcegitcommit: 92a04c57ac0a49f304fa2ea5043436f30068c3cd
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62968128"
+ms.lasthandoff: 05/21/2019
+ms.locfileid: "65976224"
 ---
 # <a name="troubleshooting-network-related-errors-when-you-install-or-use-visual-studio"></a>對安裝或使用 Visual Studio 時所發生的網路相關錯誤進行疑難排解
 
@@ -36,19 +36,19 @@ ms.locfileid: "62968128"
 
 - 重新啟動 Visual Studio。 應該會出現 [Proxy 驗證] 對話方塊。 在對話方塊中依提示輸入您的認證。
 
-- 如果重新啟動 Visual Studio 無法解決問題，這可能是因為您的 Proxy 伺服器並未提示輸入 http:&#47;&#47;go.microsoft.com 位址的認證，而是提示輸入 &#42;.visualStudio.com 位址的認證。 對於這些伺服器，請考慮將下列 URL 列於白名單上，以解除封鎖 Visual Studio 中的所有登入案例：
+- 如果重新啟動 Visual Studio 無法解決問題，這可能是因為您的 Proxy 伺服器並未提示輸入 http:&#47;&#47;go.microsoft.com 位址的認證，而是提示輸入 &#42;.visualStudio.microsoft.com 位址的認證。 針對這些伺服器，請考慮將下列 URL 新增至允許清單上，以解除封鎖 Visual Studio 中的所有登入案例：
 
     - &#42;.windows.net
 
     - &#42;.microsoftonline.com
 
-    - &#42;.visualstudio.com
+    - &#42;.visualstudio.microsoft.com
 
     - &#42;.microsoft.com
 
     - &#42;.live.com
 
-- 否則您可以從白清單中移除 http:&#47;&#47;go.microsoft.com 位址，這樣 Proxy 驗證對話方塊在 Visual Studio 重新啟動時，就會同時針對 http:&#47;&#47;go.microsoft.com 位址及伺服器端點顯示。
+- 您也可以從允許清單中移除 http:&#47;&#47;go.microsoft.com 位址，如此一來，當 Visual Studio 重新啟動時，就會同時針對 http:&#47;&#47;go.microsoft.com 位址及伺服器端點顯示 Proxy 驗證對話方塊。
 
   -或-
 
@@ -75,7 +75,7 @@ ms.locfileid: "62968128"
 
 ::: moniker range="vs-2019"
 
-  1. 在下列位置尋找 **devenv.exe.config** (devenv.exe configuration 檔案)：**%ProgramFiles%\Microsoft Visual Studio\2019\Enterprise\Common7\IDE** 或 **%ProgramFiles(x86)%\Microsoft Visual Studio\2019\Enterprise\Common7\IDE**。
+  1. 在下列位置尋找 **devenv.exe.config** (devenv.exe configuration 檔案)： **%ProgramFiles%\Microsoft Visual Studio\2019\Enterprise\Common7\IDE** 或 **%ProgramFiles(x86)%\Microsoft Visual Studio\2019\Enterprise\Common7\IDE**。
 
   2. 在設定檔中，找出 `<system.net>` 區塊，並加入下列程式碼：
 
@@ -120,7 +120,7 @@ Visual Studio 使用傳輸層安全性 (TLS) 1.2 通訊協定連線到網路資�
 
 - &#42;.azurewebsites.net (適用於 Azure 連線)
 
-- &#42;.visualstudio.com
+- &#42;.visualstudio.microsoft.com
 
 - cdn.vsassets.io (主機內容傳遞網路 (又稱 CDN) 內容)
 

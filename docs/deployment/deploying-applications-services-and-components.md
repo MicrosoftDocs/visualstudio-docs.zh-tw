@@ -23,12 +23,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 265b30e8a9b3e223b9007c85082113232d76ab09
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e66eb7fc2915514b91135e8c89843a0d979abf4a
+ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62929042"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "65845900"
 ---
 # <a name="first-look-at-deployment-in-visual-studio"></a>Visual Studio 中的部署簡介
 
@@ -40,7 +40,7 @@ ms.locfileid: "62929042"
 
 部署至本機資料夾通常用於測試，或是用來開始使用另一個工具進行最終部署的分段部署。
 
-- **ASP.NET**、**ASP.NET Core**、**Node.js**、**Python** 及 .**NET Core**：使用發行工具部署至本機資料夾。 確切的可用選項取決於您的應用程式類型。 在 [方案總管] 中，以滑鼠右鍵按一下專案，然後選擇 [發行] (如果您之前已設定任何發行設定檔，則必須按一下 [建立新設定檔])。接下來，選擇 [資料夾]。 如需詳細資訊，請參閱[部署至本機資料夾](quickstart-deploy-to-local-folder.md)。
+- **ASP.NET**、**ASP.NET Core**、**Node.js**、**Python** 及 .**NET Core**：使用發行工具部署至本機資料夾。 確切的可用選項取決於您的應用程式類型。 在 [方案總管] 中，以滑鼠右鍵按一下專案，然後選擇 [發行] (如果您之前尚未設定任何發佈設定檔，則必須按一下 [建立新設定檔])。接下來，選擇 [資料夾]。 如需詳細資訊，請參閱[部署至本機資料夾](quickstart-deploy-to-local-folder.md)。
 
     ![選擇 [發行]](../deployment/media/quickstart-publish.png)
 
