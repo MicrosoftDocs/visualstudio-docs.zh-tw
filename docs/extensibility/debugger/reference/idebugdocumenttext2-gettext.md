@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3eb4eae82dd11d58734ed114886c9ec121b60b69
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 62ee27d9780ba1bb3941320604ade1d3cf16e5fc
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62875178"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66203326"
 ---
 # <a name="idebugdocumenttext2gettext"></a>IDebugDocumentText2::GetText
 從指定之位置的文件中擷取的文字。
@@ -42,22 +45,18 @@ int GetText(
 );
 ```
 
-#### <a name="parameters"></a>參數
-`pos`
+## <a name="parameters"></a>參數
+`pos`\
+[in]A [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md)結構，表示要擷取文字的位置。
 
- [in]A [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md)結構，表示要擷取文字的位置。
+`cMaxChars`\
+[in]要擷取的文字字元的數目上限。
 
-`cMaxChars`
+`pText`\
+[in、 out]要被填入所需的文字緩衝區的指標。 這個緩衝區必須至少包含`cMaxChars`寬字元數。
 
- [in]要擷取的文字字元的數目上限。
-
-`pText`
-
- [in、 out]要被填入所需的文字緩衝區的指標。 這個緩衝區必須至少包含`cMaxChars`寬字元數。
-
-`pcNumChars`
-
- [out]傳回實際擷取的字元的數。
+`pcNumChars`\
+[out]傳回實際擷取的字元的數。
 
 ## <a name="return-value"></a>傳回值
 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。

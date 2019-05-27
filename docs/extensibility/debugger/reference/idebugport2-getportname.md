@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 412e1565c62a623e20c250b6d0937cd8ff58d67f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: ae2d9ebdf739236ddbd6eaae941dbc6b8cd53fc3
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62871773"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66209216"
 ---
 # <a name="idebugport2getportname"></a>IDebugPort2::GetPortName
 取得的連接埠名稱。
@@ -40,9 +40,8 @@ int GetPortName( 
 ```
 
 ## <a name="parameters"></a>參數
- `pbstrName`\
-
- [out]傳回的連接埠的名稱。
+`pbstrName`\
+[out]傳回的連接埠的名稱。
 
 ## <a name="return-value"></a>傳回值
  如果成功，則傳回`S_OK`; 否則傳回錯誤碼。

@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 283e23a70b95e3882569dbb18dda7ba365b8b765
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 08ce207a4961ed9345c46ca7d19390647dc514b1
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62919494"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66212280"
 ---
 # <a name="idebugfieldgetcontainer"></a>IDebugField::GetContainer
 這個方法會取得容器的欄位。
@@ -36,10 +39,9 @@ int GetContainer(
 );
 ```
 
-#### <a name="parameters"></a>參數
- `ppContainerField`
-
- [out]表示所傳回的容器[IDebugContainerField](../../../extensibility/debugger/reference/idebugcontainerfield.md)介面。
+## <a name="parameters"></a>參數
+`ppContainerField`\
+[out]表示所傳回的容器[IDebugContainerField](../../../extensibility/debugger/reference/idebugcontainerfield.md)介面。
 
 ## <a name="return-value"></a>傳回值
  如果成功，則傳回`S_OK`; 否則傳回錯誤碼。

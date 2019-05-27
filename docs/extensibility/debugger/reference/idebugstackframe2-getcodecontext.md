@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 12ad4db6583c702115f5c97b2fa2c4485c891298
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: cce3c1b2fbe4c97de8a61355b6b2d7098512df12
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65458583"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66208648"
 ---
 # <a name="idebugstackframe2getcodecontext"></a>IDebugStackFrame2::GetCodeContext
 取得此堆疊框架的程式碼內容。
@@ -40,9 +40,8 @@ int GetCodeContext ( 
 ```
 
 ## <a name="parameters"></a>參數
- `ppCodeCxt`\
-
- [out]傳回[IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md)物件，代表目前指令指標在此堆疊框架。
+`ppCodeCxt`\
+[out]傳回[IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md)物件，代表目前指令指標在此堆疊框架。
 
 ## <a name="return-value"></a>傳回值
  如果成功，則傳回`S_OK`; 否則傳回錯誤碼。

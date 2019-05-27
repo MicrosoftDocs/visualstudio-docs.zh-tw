@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 05044241a1e5b708bffaa73fedd674cea7618715
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: 8b6ed3f14bb916074455590699934c6d757ed049
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65458156"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66210832"
 ---
 # <a name="ienumdebugthreads2next"></a>IEnumDebugThreads2::Next
 從列舉中傳回下的一個項目集。
@@ -44,17 +44,14 @@ int Next(
 ```
 
 ## <a name="parameters"></a>參數
- `celt`\
+`celt`\
+[in]若要擷取的元素數目。 也會指定的大小上限`rgelt`陣列。
 
- [in]若要擷取的元素數目。 也會指定的大小上限`rgelt`陣列。
+`rgelt`\
+[in、 out]陣列[IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)来填入的項目。
 
- `rgelt`\
-
- [in、 out]陣列[IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)来填入的項目。
-
- `pceltFetched`\
-
- [out]傳回的項目數中實際傳回`rgelt`。
+`pceltFetched`\
+[out]傳回的項目數中實際傳回`rgelt`。
 
 ## <a name="return-value"></a>傳回值
  如果成功，會傳回 `S_OK`。 傳回`S_FALSE`更少的項目要求的數目可能會傳回; 否則會傳回錯誤碼。

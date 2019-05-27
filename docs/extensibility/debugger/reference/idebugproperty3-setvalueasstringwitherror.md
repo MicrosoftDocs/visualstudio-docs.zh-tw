@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: c71691befc9c0521c935dade9ebdacbb9921173e
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: 84ef9df62bab7f5a37bc0126ef062f8e6a2306bd
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65458809"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66212263"
 ---
 # <a name="idebugproperty3setvalueasstringwitherror"></a>IDebugProperty3::SetValueAsStringWithError
 設定這個屬性的值，並傳回錯誤訊息，如有必要。
@@ -47,20 +47,16 @@ int SetValueAsStringWithError(
 
 ## <a name="parameters"></a>參數
 `pszValue`\
-
- [in]若要設定的值。
+[in]若要設定的值。
 
 `dwRadix`\
-
- [in]所設定的值的基數。
+[in]所設定的值的基數。
 
 `dwTimeout`\
-
- [in]要設定之值的等待時間長度 (`INFINITE`表示永遠等待)。
+[in]要設定之值的等待時間長度 (`INFINITE`表示永遠等待)。
 
 `errorString`\
-
- [out]如果設定值時發生錯誤，這會保留失敗的原因。
+[out]如果設定值時發生錯誤，這會保留失敗的原因。
 
 ## <a name="return-value"></a>傳回值
 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。

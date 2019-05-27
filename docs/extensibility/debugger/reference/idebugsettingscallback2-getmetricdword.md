@@ -13,12 +13,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: f52205cd530e638146abe423890d6477fe62b45d
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: 524598a4fdac3e9b06a91623d6ff2d37a1919ffa
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65457324"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66212077"
 ---
 # <a name="idebugsettingscallback2getmetricdword"></a>IDebugSettingsCallback2::GetMetricDword
 擷取值，指定其名稱的度量資訊。
@@ -44,21 +44,17 @@ private int GetMetricDword(
 ```
 
 ## <a name="parameters"></a>參數
- `pszType`\
+`pszType`\
+[in]度量的類型。
 
- [in]度量的類型。
+`guidSection`\
+[in]區段的唯一識別碼。
 
- `guidSection`\
+`pszMetric`\
+[in]計量名稱。
 
- [in]區段的唯一識別碼。
-
- `pszMetric`\
-
- [in]計量名稱。
-
- `pdwValue`\
-
- [out]傳回的度量值。
+`pdwValue`\
+[out]傳回的度量值。
 
 ## <a name="return-value"></a>傳回值
  如果成功，則傳回`S_OK`; 否則傳回錯誤碼。

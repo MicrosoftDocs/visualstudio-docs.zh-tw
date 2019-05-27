@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 9f088bcfeebb570be911fbc8e37bed5995767ac9
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: cefde77199f4348cb93fd387291f3a991bf4d50c
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65457727"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66211467"
 ---
 # <a name="idebugproperty2getpropertyinfo"></a>IDebugProperty2::GetPropertyInfo
 取得[DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md)結構描述的屬性。
@@ -50,29 +50,23 @@ int GetPropertyInfo ( 
 ```
 
 ## <a name="parameters"></a>參數
- `dwFields`\
+`dwFields`\
+[in]從值的組合[DEBUGPROP_INFO_FLAGS](../../../extensibility/debugger/reference/debugprop-info-flags.md)列舉，指定哪些欄位是填寫`pPropertyInfo`結構。
 
- [in]從值的組合[DEBUGPROP_INFO_FLAGS](../../../extensibility/debugger/reference/debugprop-info-flags.md)列舉，指定哪些欄位是填寫`pPropertyInfo`結構。
+`nRadix`\
+[in]要用於格式化數字的任何資訊的基數。
 
- `nRadix`\
+`dwTimeout`\
+[in]指定的時間上限，以毫秒為單位，從這個方法返回之前等候。 使用`INFINITE`無限期等候。
 
- [in]要用於格式化數字的任何資訊的基數。
+`rgpArgs`\
+[in、 out]保留供未來使用;設定為 null 的值。
 
- `dwTimeout`\
+`dwArgCount`\
+[in]保留供未來使用;設定為零。
 
- [in]指定的時間上限，以毫秒為單位，從這個方法返回之前等候。 使用`INFINITE`無限期等候。
-
- `rgpArgs`\
-
- [in、 out]保留供未來使用;設定為 null 的值。
-
- `dwArgCount`\
-
- [in]保留供未來使用;設定為零。
-
- `pPropertyInfo`\
-
- [out]A [DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md)會填入的屬性描述的結構。
+`pPropertyInfo`\
+[out]A [DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md)會填入的屬性描述的結構。
 
 ## <a name="return-value"></a>傳回值
  如果成功，則傳回`S_OK`; 否則會傳回錯誤碼。

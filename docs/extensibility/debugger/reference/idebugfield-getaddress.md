@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 417e19eb9c7d014b6c1ca353147f6a8ac96f222e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: e44e23dc1573a0eb57be0da7272e185b66576873
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62873880"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66212324"
 ---
 # <a name="idebugfieldgetaddress"></a>IDebugField::GetAddress
 這個方法會取得欄位的偵錯位址。
@@ -36,10 +39,9 @@ int GetAddress(
 );
 ```
 
-#### <a name="parameters"></a>參數
- `ppAddress`
-
- [out]傳回做為位址[IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md)物件。
+## <a name="parameters"></a>參數
+`ppAddress`\
+[out]傳回做為位址[IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md)物件。
 
 ## <a name="return-value"></a>傳回值
  如果成功，則傳回`S_OK`; 否則傳回錯誤碼。

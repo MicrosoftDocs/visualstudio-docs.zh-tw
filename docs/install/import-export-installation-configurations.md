@@ -1,8 +1,8 @@
 ---
 title: 匯入或匯出安裝組態
 titleSuffix: ''
-description: 了解如何在 Visual Studio 中使用匯入/匯出設定功能
-ms.date: 04/19/2019
+description: 了解如何將安裝設定匯出為 .vsconfig 檔案以和其他人共用，以及如何將它匯入以進行複製。
+ms.date: 05/18/2019
 ms.topic: conceptual
 f1_keywords:
 - vs.about
@@ -18,16 +18,16 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: cd932b1748d5c400c6ab64a56b16d1b6a1458c71
-ms.sourcegitcommit: 3fe6bed9ef8fb1478106645f655c7472009ae43a
+ms.openlocfilehash: 8150aa3369eb385ebad865d261f9e8c2d71d7dbe
+ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "64850758"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "65849027"
 ---
 # <a name="import-or-export-installation-configurations"></a>匯入或匯出安裝組態
 
-您可以使用安裝設定檔，在整個組織中設定 Visual Studio。 若要這樣做，只需使用 Visual Studio 安裝程式將工作負載和元件資訊匯出到 .vsconfig 檔案即可。 然後，您可以將設定匯入新的安裝或現有的安裝。
+您可以使用安裝設定檔來跨整個組織設定 Visual Studio。 若要這樣做，只需使用 Visual Studio 安裝程式將工作負載和元件資訊匯出到 .vsconfig 檔案即可。 然後，您可以將設定匯入新的安裝或現有的安裝，以及與其他人共用。
 
 方式如下：
 

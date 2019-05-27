@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e92dd0c3bf56710b387535f8b5e3984bff930186
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: a443d7f17397526ae0f990627314d8feedad48d4
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62870150"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66212571"
 ---
 # <a name="idebugprogram2getprocess"></a>IDebugProgram2::GetProcess
 取得此程式正在執行中的程序。
@@ -36,10 +39,9 @@ int GetProcess(
 );
 ```
 
-#### <a name="parameters"></a>參數
- `ppProcess`
-
- [out]傳回[IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md)代表程序的介面。
+## <a name="parameters"></a>參數
+`ppProcess`\
+[out]傳回[IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md)代表程序的介面。
 
 ## <a name="return-value"></a>傳回值
  如果成功，則傳回`S_OK`; 否則傳回錯誤碼。

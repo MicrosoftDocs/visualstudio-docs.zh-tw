@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 04c63a2a18f04301e16dd0e8137ab8ba4b824c57
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: fb2fc0da42bf3895f6eefac96441dde2fa6eede9
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65457867"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66203713"
 ---
 # <a name="idebugprogrampublisher2publishprogram"></a>IDebugProgramPublisher2::PublishProgram
 這個方法可供偵錯引擎 (DEs) 的程式和工作階段的偵錯管理員。
@@ -44,17 +44,14 @@ int PublishProgram(
 ```
 
 ## <a name="parameters"></a>參數
- `Engines`\
+`Engines`\
+[in]針對 DEs，可以啟動或附加至這個程式的 Guid 的陣列。
 
- [in]針對 DEs，可以啟動或附加至這個程式的 Guid 的陣列。
+`szFriendlyName`\
+[in]（這會出現在功能表或對話方塊向使用者顯示） 之程式的易記名稱。
 
- `szFriendlyName`\
-
- [in]（這會出現在功能表或對話方塊向使用者顯示） 之程式的易記名稱。
-
- `pDebuggeeInterface`\
-
- [in]`IUnknown`程式介面 （來唯一識別該程式使用此值作為 cookie; 此相同的值用來 「 取消發行 」 計畫）
+`pDebuggeeInterface`\
+[in]`IUnknown`程式介面 （來唯一識別該程式使用此值作為 cookie; 此相同的值用來 「 取消發行 」 計畫）
 
 ## <a name="return-value"></a>傳回值
  如果成功，則傳回`S_OK`; 否則傳回錯誤碼。

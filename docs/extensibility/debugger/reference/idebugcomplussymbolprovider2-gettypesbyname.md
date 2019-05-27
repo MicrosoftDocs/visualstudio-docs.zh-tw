@@ -11,12 +11,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: be32b39df6da618e38dc9e62264412fce8c29e20
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 24cce091d1381d97d70ce9c42baecc38bcf92393
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62922420"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66205931"
 ---
 # <a name="idebugcomplussymbolprovider2gettypesbyname"></a>IDebugComPlusSymbolProvider2::GetTypesByName
 擷取指定其名稱的類型。
@@ -39,18 +42,15 @@ int GetTypesByName(
 );
 ```
 
-#### <a name="parameters"></a>參數
-`pszClassName`
+## <a name="parameters"></a>參數
+`pszClassName`\
+[in]型別的名稱。
 
- [in]型別的名稱。
+`nameMatch`\
+[in]選取類型的相符項目，例如，區分大小寫。 值，以從[NAME_MATCH](../../../extensibility/debugger/reference/name-match.md)列舉型別。
 
-`nameMatch`
-
- [in]選取類型的相符項目，例如，區分大小寫。 值，以從[NAME_MATCH](../../../extensibility/debugger/reference/name-match.md)列舉型別。
-
-`ppEnum`
-
- [out]列舉值，其中包含具有指定名稱的類型。
+`ppEnum`\
+[out]列舉值，其中包含具有指定名稱的類型。
 
 ## <a name="return-value"></a>傳回值
 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。

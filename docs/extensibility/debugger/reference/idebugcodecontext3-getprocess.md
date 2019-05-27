@@ -10,12 +10,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 81ee68246aa999c8ac610b9590f914388e6fbbf2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 598bb33739a31bd09c733dddb3279d043cd68c81
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62876935"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66206643"
 ---
 # <a name="idebugcodecontext3getprocess"></a>IDebugCodeContext3::GetProcess
 擷取偵錯處理序的介面的參考。
@@ -34,10 +37,9 @@ public int GetProcess(
 );
 ```
 
-#### <a name="parameters"></a>參數
-`ppProcess`
-
- [out]偵錯程序介面參考。
+## <a name="parameters"></a>參數
+`ppProcess`\
+[out]偵錯程序介面參考。
 
 ## <a name="return-value"></a>傳回值
 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。

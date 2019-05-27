@@ -13,12 +13,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6214d9240b51878d175496994831d767aa83375d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 00f0a1524a6c24b21dc9a167a7df286f60f48873
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62918743"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66210372"
 ---
 # <a name="idebugmessageevent2getmessage"></a>IDebugMessageEvent2::GetMessage
 取得要顯示的訊息。
@@ -45,26 +48,21 @@ int GetMessage( 
 );
 ```
 
-#### <a name="parameters"></a>參數
- `pMessageType`
+## <a name="parameters"></a>參數
+`pMessageType`\
+[out]傳回值，以從[MESSAGETYPE](../../../extensibility/debugger/reference/messagetype.md)描述訊息類型的列舉型別。
 
- [out]傳回值，以從[MESSAGETYPE](../../../extensibility/debugger/reference/messagetype.md)描述訊息類型的列舉型別。
+`pbstrMessage`\
+[out]傳回訊息。
 
- `pbstrMessage`
+`pdwType`\
+[out]傳回的訊息，並使用 Win32 的慣例類型`MessageBox`函式。 請參閱[AfxMessageBox](/cpp/mfc/reference/cstring-formatting-and-message-box-display#afxmessagebox)函式，如需詳細資訊。
 
- [out]傳回訊息。
+`pbstrHelpFileName`\
+[in、 out]傳回說明檔名稱。 可能是 null (C++) 或空白 (C#) 值，如果沒有說明檔。
 
- `pdwType`
-
- [out]傳回的訊息，並使用 Win32 的慣例類型`MessageBox`函式。 請參閱[AfxMessageBox](/cpp/mfc/reference/cstring-formatting-and-message-box-display#afxmessagebox)函式，如需詳細資訊。
-
- `pbstrHelpFileName`
-
- [in、 out]傳回說明檔名稱。 可能是 null (C++) 或空白 (C#) 值，如果沒有說明檔。
-
- `pdwHelpId`
-
- [in、 out]傳回的說明識別碼。 可能是 0，如果沒有說明關聯與此訊息。
+`pdwHelpId`\
+[in、 out]傳回的說明識別碼。 可能是 0，如果沒有說明關聯與此訊息。
 
 ## <a name="return-value"></a>傳回值
  如果成功，則傳回`S_OK`; 否則傳回錯誤碼。

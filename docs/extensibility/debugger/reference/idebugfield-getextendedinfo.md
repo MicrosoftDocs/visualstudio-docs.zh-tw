@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0321dfbdc719d8e155bb1ee035032e2862bb90e0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: fc37cd9cff4956d000441a632f84a6155f9b9586
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62873866"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66212207"
 ---
 # <a name="idebugfieldgetextendedinfo"></a>IDebugField::GetExtendedInfo
 這個方法取得擴充欄位的相關資訊。
@@ -40,23 +43,20 @@ int GetExtendedInfo(
 );
 ```
 
-#### <a name="parameters"></a>參數
- `guidExtendedInfo`
-
- [in]選取要傳回的資訊。 有效值為：
+## <a name="parameters"></a>參數
+`guidExtendedInfo`\
+[in]選取要傳回的資訊。 有效值為：
 
 |值|描述|
 |-----------|-----------------|
 |`guidConstantValue`|以一連串的位元組值。|
 |`guidConstantType`|做為型別簽章類型。|
 
- `prgBuffer`
+`prgBuffer`\
+[out]傳回擴充的資訊。
 
- [out]傳回擴充的資訊。
-
- `pdwLen`
-
- [in、 out]會傳回大小的擴充的資訊，以位元組為單位。
+`pdwLen`\
+[in、 out]會傳回大小的擴充的資訊，以位元組為單位。
 
 ## <a name="return-value"></a>傳回值
  如果成功，則傳回`S_OK`; 否則傳回錯誤碼。

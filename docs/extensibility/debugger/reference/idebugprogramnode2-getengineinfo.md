@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: c31d3a858af2886a27a51e22e131cb89b2234d6e
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: 7ef0ce265bc63ce9a00fd748c50a338d52294557
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65459073"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66211691"
 ---
 # <a name="idebugprogramnode2getengineinfo"></a>IDebugProgramNode2::GetEngineInfo
 取得名稱和執行程式的偵錯引擎 (DE) 的識別碼。
@@ -42,13 +42,11 @@ int GetEngineInfo(
 ```
 
 ## <a name="parameters"></a>參數
- `pbstrEngine`\
+`pbstrEngine`\
+[out]傳回的執行程式的預設名稱 (C++-特定： 這可以是 null 指標，指出呼叫端不想在引擎的名稱)。
 
- [out]傳回的執行程式的預設名稱 (C++-特定： 這可以是 null 指標，指出呼叫端不想在引擎的名稱)。
-
- `pguidEngine`\
-
- [out]傳回執行程式 DE 的全域唯一識別碼 (C++-特定： 這可以是 null 指標，表示呼叫端不感興趣的引擎 GUID)。
+`pguidEngine`\
+[out]傳回執行程式 DE 的全域唯一識別碼 (C++-特定： 這可以是 null 指標，表示呼叫端不感興趣的引擎 GUID)。
 
 ## <a name="return-value"></a>傳回值
  如果成功，則傳回`S_OK`; 否則傳回錯誤碼。

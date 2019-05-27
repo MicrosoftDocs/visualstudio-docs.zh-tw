@@ -13,12 +13,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: e800d8d57d34c0ed99cb3cfa9a3f6a7b871a034d
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: 4a6b6a516e9827a05eb7eb2c36bee408ad3a5587
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65458612"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66212104"
 ---
 # <a name="idebugsettingscallback2geteemetricfile"></a>IDebugSettingsCallback2::GetEEMetricFile
 擷取運算式評估工具計量提供檔案名稱或計量。
@@ -44,21 +44,17 @@ private int GetEEMetricFile(
 ```
 
 ## <a name="parameters"></a>參數
- `guidLang`\
+`guidLang`\
+[in]程式設計語言的唯一識別碼。
 
- [in]程式設計語言的唯一識別碼。
+`guidVendor`\
+[in]供應商的唯一識別碼。
 
- `guidVendor`\
+`pszMetric`\
+[in]計量名稱。
 
- [in]供應商的唯一識別碼。
-
- `pszMetric`\
-
- [in]計量名稱。
-
- `pbstrValue`\
-
- [out]以字串傳回計量檔案的內容。
+`pbstrValue`\
+[out]以字串傳回計量檔案的內容。
 
 ## <a name="return-value"></a>傳回值
  如果成功，則傳回`S_OK`; 否則傳回錯誤碼。

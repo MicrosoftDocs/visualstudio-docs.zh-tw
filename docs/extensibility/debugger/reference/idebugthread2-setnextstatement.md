@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 0b6aca1ef95a8ae88301181955828f08c7c38bed
-ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
+ms.openlocfilehash: 918b61856577ae730ca72f180e614ee3982c917b
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65226714"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66199491"
 ---
 # <a name="idebugthread2setnextstatement"></a>IDebugThread2::SetNextStatement
 設定目前的指令指標至指定的程式碼內容。
@@ -42,12 +42,11 @@ int SetNextStatement ( 
 ```
 
 ## <a name="parameters"></a>參數
- `pStackFrame`\
- 保留供未來使用;設定為 null 的值。
+`pStackFrame`\
+保留供未來使用;設定為 null 的值。
 
- `pCodeContext`\
-
- [in][IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md)描述將要執行的程式碼位置的物件和其內容。
+`pCodeContext`\
+[in][IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md)描述將要執行的程式碼位置的物件和其內容。
 
 ## <a name="return-value"></a>傳回值
  如果成功，則傳回`S_OK`; 否則傳回錯誤碼。 下表顯示其他可能的值。

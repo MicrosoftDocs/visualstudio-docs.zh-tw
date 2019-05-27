@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 2bac4bbda5c1a9e98f52ec6de83953735d0647db
-ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
+ms.openlocfilehash: 1783f5f55de8c103b8fb872bb757910f3d49165b
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65226637"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66208263"
 ---
 # <a name="ienumdebugcustomattributesskip"></a>IEnumDebugCustomAttributes::Skip
 略過指定的數目的列舉型別序列中的自訂屬性。
@@ -40,9 +40,8 @@ int Skip(
 ```
 
 ## <a name="parameters"></a>參數
- `celt`\
-
- [in]略過的項目數目。
+`celt`\
+[in]略過的項目數目。
 
 ## <a name="return-value"></a>傳回值
  如果成功，會傳回 `S_OK`。 會傳回`S_FALSE`如果`celt`大於其餘項目數目，否則會傳回錯誤碼。

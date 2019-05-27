@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6cfdfb05d45996e87ea749dffa89915a175d9274
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 0ad964c4f9759368d6d687386274e221bb7cf73a
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62920710"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66212476"
 ---
 # <a name="idebugenginelaunch2launchsuspended"></a>IDebugEngineLaunch2::LaunchSuspended
 這個方法會啟動處理序，透過 偵錯引擎 (DE)。
@@ -60,58 +63,45 @@ int LaunchSuspended(
 );
 ```
 
-#### <a name="parameters"></a>參數
- `pszMachine`
+## <a name="parameters"></a>參數
+`pszMachine`\
+[in]用來啟動處理序中的機器名稱。 若要指定本機電腦中使用 null 值。
 
- [in]用來啟動處理序中的機器名稱。 若要指定本機電腦中使用 null 值。
+`pPort`\
+[in][IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md)介面，表示程式將執行中的連接埠。
 
- `pPort`
+`pszExe`\
+[in]若要啟動的可執行檔名稱。
 
- [in][IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md)介面，表示程式將執行中的連接埠。
+`pszArgs`\
+[in]要傳遞至可執行檔的引數。 如果不有任何引數，則可能是 null 值。
 
- `pszExe`
+`pszDir`\
+[in]可執行檔所使用的工作目錄名稱。 可能是 null 值，如果所沒有的工作目錄。
 
- [in]若要啟動的可執行檔名稱。
+`bstrEnv`\
+[in]NULL 終止的字串，後面接著其他的 NULL 結束字元的環境區塊。
 
- `pszArgs`
+`pszOptions`\
+[in]可執行檔的選項。
 
- [in]要傳遞至可執行檔的引數。 如果不有任何引數，則可能是 null 值。
+`dwLaunchFlags`\
+[in]指定[LAUNCH_FLAGS](../../../extensibility/debugger/reference/launch-flags.md)工作階段。
 
- `pszDir`
+`hStdInput`\
+[in]替代的輸入資料流的控制代碼。 如果不需要重新導向，則可能是 0。
 
- [in]可執行檔所使用的工作目錄名稱。 可能是 null 值，如果所沒有的工作目錄。
+`hStdOutput`\
+[in]替代的輸出資料流的控制代碼。 如果不需要重新導向，則可能是 0。
 
- `bstrEnv`
+`hStdError`\
+[in]替代錯誤輸出資料流的控制代碼。 如果不需要重新導向，則可能是 0。
 
- [in]NULL 終止的字串，後面接著其他的 NULL 結束字元的環境區塊。
+`pCallback`\
+[in][IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md)接收偵錯工具事件的物件。
 
- `pszOptions`
-
- [in]可執行檔的選項。
-
- `dwLaunchFlags`
-
- [in]指定[LAUNCH_FLAGS](../../../extensibility/debugger/reference/launch-flags.md)工作階段。
-
- `hStdInput`
-
- [in]替代的輸入資料流的控制代碼。 如果不需要重新導向，則可能是 0。
-
- `hStdOutput`
-
- [in]替代的輸出資料流的控制代碼。 如果不需要重新導向，則可能是 0。
-
- `hStdError`
-
- [in]替代錯誤輸出資料流的控制代碼。 如果不需要重新導向，則可能是 0。
-
- `pCallback`
-
- [in][IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md)接收偵錯工具事件的物件。
-
- `ppDebugProcess`
-
- [out]傳回產生[IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md)物件，表示啟動的程序。
+`ppDebugProcess`\
+[out]傳回產生[IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md)物件，表示啟動的程序。
 
 ## <a name="return-value"></a>傳回值
  如果成功，則傳回`S_OK`; 否則傳回錯誤碼。

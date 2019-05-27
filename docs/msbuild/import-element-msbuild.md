@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ec4e48bdd1a7f8701f46ed84296f7aad4490d08a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 0dce682aad7ab0d049488a6da9b8ab4f3b444d88
+ms.sourcegitcommit: 614d5b99576ea27a41957cd94062dc95cbd29c1c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62977396"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65531699"
 ---
 # <a name="import-element-msbuild"></a>Import 項目 (MSBuild)
 將某個專案檔的內容匯入至另一個專案檔。
@@ -46,6 +46,7 @@ ms.locfileid: "62977396"
 |---------------|-----------------|
 |`Project`|必要屬性。<br /><br /> 要匯入之專案檔的路徑。 路徑可以包含萬用字元。 相符的檔案會依排序的順序進行匯入。 使用這項功能，只要將程式碼檔案新增至目錄，就可以將程式碼新增至專案。|
 |`Condition`|選擇性屬性。<br /><br /> 要評估的條件。 如需詳細資訊，請參閱[條件](../msbuild/msbuild-conditions.md)。|
+|`Sdk`| 選擇性屬性。<br /><br /> 參考專案 SDK。|
 
 ### <a name="child-elements"></a>子元素
  無

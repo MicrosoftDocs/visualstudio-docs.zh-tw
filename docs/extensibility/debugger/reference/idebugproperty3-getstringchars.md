@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 21ae1d4c16ce422d2baed2bd71ab5d0aa8b92e0c
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: b087997fab72e71abf4380df6d5c03910d1a57eb
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65457673"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66212247"
 ---
 # <a name="idebugproperty3getstringchars"></a>IDebugProperty3::GetStringChars
 擷取此屬性相關聯的字串，並將它儲存在使用者提供的緩衝區。
@@ -45,18 +45,15 @@ int GetStringChars(
 
 ## <a name="parameters"></a>參數
 `buflen`\
-
- [in]使用者提供的緩衝區可容納的字元數上限。
+[in]使用者提供的緩衝區可容納的字元數上限。
 
 `rgString`\
-
- [out]傳回的字串。
+[out]傳回的字串。
 
  [C++只]，`rgString`是接收之字串的 Unicode 字元的緩衝區的指標。 這個緩衝區必須至少是`buflen`字元 （而不是個位元組） 的大小。
 
 `pceltFetched`\
-
- [out]傳回的實際儲存在緩衝區中的字元數的位置。 (可以是`NULL`在C++。)
+[out]傳回的實際儲存在緩衝區中的字元數的位置。 (可以是`NULL`在C++。)
 
 ## <a name="return-value"></a>傳回值
 如果成功，則傳回`S_OK`; 否則會傳回錯誤碼。

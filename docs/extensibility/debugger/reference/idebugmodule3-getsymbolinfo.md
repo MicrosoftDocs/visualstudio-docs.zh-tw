@@ -13,12 +13,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c5fedebe6a8e411e09b527841bd0ded3854749ae
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 54aaa85909522122b97624ee7d65d4cbb0b51ddb
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62918857"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66203052"
 ---
 # <a name="idebugmodule3getsymbolinfo"></a>IDebugModule3::GetSymbolInfo
 擷取符號，以及每個路徑中搜尋結果中搜尋的路徑的清單。
@@ -39,14 +42,12 @@ int GetSymbolInfo(
 );
 ```
 
-#### <a name="parameters"></a>參數
-`dwFields`
+## <a name="parameters"></a>參數
+`dwFields`\
+[in]從旗標的組合[SYMBOL_SEARCH_INFO_FIELDS](../../../extensibility/debugger/reference/symbol-search-info-fields.md)列舉型別指定的哪些欄位`pInfo`是要填入。
 
- [in]從旗標的組合[SYMBOL_SEARCH_INFO_FIELDS](../../../extensibility/debugger/reference/symbol-search-info-fields.md)列舉型別指定的哪些欄位`pInfo`是要填入。
-
-`pInfo`
-
- [out]A [MODULE_SYMBOL_SEARCH_INFO](../../../extensibility/debugger/reference/module-symbol-search-info.md)其成員的指定資訊填入的結構。 如果這會是 null 值，則這個方法會傳回`E_INVALIDARG`。
+`pInfo`\
+[out]A [MODULE_SYMBOL_SEARCH_INFO](../../../extensibility/debugger/reference/module-symbol-search-info.md)其成員的指定資訊填入的結構。 如果這會是 null 值，則這個方法會傳回`E_INVALIDARG`。
 
 ## <a name="return-value"></a>傳回值
 如果方法成功，它會傳回`S_OK`; 否則它會傳回錯誤碼。

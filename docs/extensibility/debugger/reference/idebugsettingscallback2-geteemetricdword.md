@@ -13,12 +13,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: b3c8349b8a7f7b823d4596f167889a227b166b7a
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: e3661186357e82170cc67f6e3744e8662ebae76c
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65457374"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66212133"
 ---
 # <a name="idebugsettingscallback2geteemetricdword"></a>IDebugSettingsCallback2::GetEEMetricDword
 擷取對應至的運算式評估工具的指定計量的值。
@@ -44,21 +44,17 @@ private int GetEEMetricDword(
 ```
 
 ## <a name="parameters"></a>參數
- `guidLang`\
+`guidLang`\
+[in]程式設計語言的唯一識別碼。
 
- [in]程式設計語言的唯一識別碼。
+`guidVendor`\
+[in]供應商的唯一識別碼。
 
- `guidVendor`\
+`pszMetric`\
+[in]計量名稱。
 
- [in]供應商的唯一識別碼。
-
- `pszMetric`\
-
- [in]計量名稱。
-
- `pdwValue`\
-
- [out]傳回度量的字串對應的值。
+`pdwValue`\
+[out]傳回度量的字串對應的值。
 
 ## <a name="return-value"></a>傳回值
  如果成功，則傳回`S_OK`; 否則傳回錯誤碼。

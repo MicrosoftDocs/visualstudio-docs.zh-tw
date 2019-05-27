@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: e1c6c70bf93d21953048f2a7e63ec051e5ae2b40
-ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
+ms.openlocfilehash: 39214e2e0b1f025bddd052737d9914dd3a164fd2
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65226688"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66207176"
 ---
 # <a name="idebugsymbolprovidergetmethodfieldsbyname"></a>IDebugSymbolProvider::GetMethodFieldsByName
 這個方法會取得代表完整的方法名稱的欄位。
@@ -44,17 +44,14 @@ int GetMethodFieldsByName(
 ```
 
 ## <a name="parameters"></a>參數
- `pszFullName`\
+`pszFullName`\
+[in]方法名稱。
 
- [in]方法名稱。
+`nameMatch`\
+[in]選取類型的相符項目，例如，區分大小寫。
 
- `nameMatch`\
-
- [in]選取類型的相符項目，例如，區分大小寫。
-
- `ppEnum`\
-
- [out]傳回[IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md)列舉值，這個方法相關聯的欄位。
+`ppEnum`\
+[out]傳回[IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md)列舉值，這個方法相關聯的欄位。
 
 ## <a name="return-value"></a>傳回值
  如果成功，則傳回`S_OK`; 否則傳回錯誤碼。

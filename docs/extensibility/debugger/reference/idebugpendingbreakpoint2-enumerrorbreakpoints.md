@@ -13,12 +13,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3030eb1a272b7142d942c05d3320c67c51f2bd90
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 7839a5f665f5d8869f71417ccd4b582c315b6acc
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62872178"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66209581"
 ---
 # <a name="idebugpendingbreakpoint2enumerrorbreakpoints"></a>IDebugPendingBreakpoint2::EnumErrorBreakpoints
 取得產生這個暫止中斷點的所有錯誤中斷點的清單。
@@ -39,14 +42,12 @@ int EnumErrorBreakpoints( 
 );
 ```
 
-#### <a name="parameters"></a>參數
- `bpErrorType`
+## <a name="parameters"></a>參數
+`bpErrorType`\
+[in]從值的組合[BP_ERROR_TYPE](../../../extensibility/debugger/reference/bp-error-type.md)選取要列舉的錯誤類型的列舉型別。
 
- [in]從值的組合[BP_ERROR_TYPE](../../../extensibility/debugger/reference/bp-error-type.md)選取要列舉的錯誤類型的列舉型別。
-
- `ppEnum`
-
- [out]傳回[IEnumDebugErrorBreakpoints2](../../../extensibility/debugger/reference/ienumdebugerrorbreakpoints2.md)物件，其中包含一份[IDebugErrorBreakpoint2](../../../extensibility/debugger/reference/idebugerrorbreakpoint2.md)物件。
+`ppEnum`\
+[out]傳回[IEnumDebugErrorBreakpoints2](../../../extensibility/debugger/reference/ienumdebugerrorbreakpoints2.md)物件，其中包含一份[IDebugErrorBreakpoint2](../../../extensibility/debugger/reference/idebugerrorbreakpoint2.md)物件。
 
 ## <a name="return-value"></a>傳回值
  如果成功，則傳回`S_OK`; 否則傳回錯誤碼。 傳回`E_BP_DELETED`如果中斷點已遭刪除。

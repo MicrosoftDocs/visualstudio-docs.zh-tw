@@ -1,7 +1,7 @@
 ---
-title: 啟用存取權建立或開啟 Visual Studio Tools for the Microsoft Office system 專案的 VBA
+title: 建立/開啟 VSTO system 專案 VBA 存取
 decsprition: You must explicitly enable access to the Office VBA project system before you can create or open a Visual Studio Tools for Office system project
-titleSuffix: ''
+titleSuffix: Visual Studio Tools for Microsoft Office
 ms.custom: seodec18
 ms.date: 02/02/2017
 ms.topic: conceptual
@@ -19,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 10dc439946cb209c9a8d8e0c5ff50a7e8cfe5363
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c85a907b057118c28ea35b8a920337ecdad5ad01
+ms.sourcegitcommit: 13ab9a5ab039b070b9cd9251d0b83dd216477203
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62797663"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66177650"
 ---
 # <a name="enable-access-to-vba-to-create-or-open-a-visual-studio-tools-for-the-microsoft-office-system-project"></a>啟用存取權建立或開啟 Visual Studio Tools for the Microsoft Office system 專案的 VBA
 
@@ -101,7 +101,7 @@ ms.locfileid: "62797663"
 
 4. 選取 **新增或移除的功能**，然後按一下**繼續**。
 
-5. 選取 [**選擇進階的應用程式的自訂**，然後按一下**下一步]**。
+5. 選取 [**選擇進階的應用程式的自訂**，然後按一下**下一步]** 。
 
 6. 依序展開**Office 共用功能**中**應用程式和工具的選擇更新選項**清單。
 
@@ -119,7 +119,7 @@ ms.locfileid: "62797663"
 
 3. 按一下 [ **變更**]。
 
-4. 選取 [**重新安裝或修復**，然後按一下**下一步]**。
+4. 選取 [**重新安裝或修復**，然後按一下**下一步]** 。
 
 5. 選取 **偵測並修復 Office 中的安裝錯誤**，然後按一下**安裝**。
 

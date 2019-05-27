@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 23c00147b0d42c848d01e0e2a08df80672750e71
-ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
+ms.openlocfilehash: 3a4672d0cb7548417ed2d1de923e52d43e6242ba
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65226417"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66207318"
 ---
 # <a name="idebugsymbolprovidergetclasstypebyname"></a>IDebugSymbolProvider::GetClassTypeByName
 這個方法會取得代表完整的類別名稱的類別欄位型別。
@@ -44,17 +44,14 @@ int GetClassTypeByName(
 ```
 
 ## <a name="parameters"></a>參數
- `pszClassName`\
+`pszClassName`\
+[in]類別名稱。
 
- [in]類別名稱。
+`nameMatch`\
+[in]選取類型的相符項目，例如，區分大小寫。 值，以從[NAME_MATCH](../../../extensibility/debugger/reference/name-match.md)列舉型別。
 
- `nameMatch`\
-
- [in]選取類型的相符項目，例如，區分大小寫。 值，以從[NAME_MATCH](../../../extensibility/debugger/reference/name-match.md)列舉型別。
-
- `ppField`\
-
- [out]傳回所代表的類別型別[IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md)介面。
+`ppField`\
+[out]傳回所代表的類別型別[IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md)介面。
 
 ## <a name="return-value"></a>傳回值
  如果成功，則傳回`S_OK`; 否則傳回錯誤碼。

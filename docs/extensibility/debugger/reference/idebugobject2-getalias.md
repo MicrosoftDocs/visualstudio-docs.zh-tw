@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7d08d9108ed4a433bcbcb17d6d4587532542b303
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 7e9a40db04342bcf75f6099c9143c38bf8b83482
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62872459"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66210043"
 ---
 # <a name="idebugobject2getalias"></a>IDebugObject2::GetAlias
 如果有的話，請取得與這個物件相關聯的別名。
@@ -36,10 +39,9 @@ int GetAlias(
 );
 ```
 
-#### <a name="parameters"></a>參數
- `ppAlias`
-
- [out]會傳回[IDebugAlias](../../../extensibility/debugger/reference/idebugalias.md)物件，表示這個物件的別名，否則會傳回 null 值。
+## <a name="parameters"></a>參數
+`ppAlias`\
+[out]會傳回[IDebugAlias](../../../extensibility/debugger/reference/idebugalias.md)物件，表示這個物件的別名，否則會傳回 null 值。
 
 ## <a name="return-value"></a>傳回值
  如果成功，會傳回 S_OK;否則，傳回錯誤碼。

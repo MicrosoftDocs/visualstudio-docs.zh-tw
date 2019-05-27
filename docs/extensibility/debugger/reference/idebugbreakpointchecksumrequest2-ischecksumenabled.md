@@ -10,12 +10,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7bf2bf2807d6433011005b87c40fed22a5c434bd
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 9ffcf1e576efe371a848061e0b5e5828943c6ed9
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62877077"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66210843"
 ---
 # <a name="idebugbreakpointchecksumrequest2ischecksumenabled"></a>IDebugBreakpointChecksumRequest2::IsChecksumEnabled
 判斷是否啟用這份文件的總和檢查碼。
@@ -34,10 +37,9 @@ public int IsChecksumEnabled(
 );
 ```
 
-#### <a name="parameters"></a>參數
- `pfChecksumEnabled`
-
- [out]如果啟用總和檢查碼，則為 true，則傳回否則，會傳回 FALSE。
+## <a name="parameters"></a>參數
+`pfChecksumEnabled`\
+[out]如果啟用總和檢查碼，則為 true，則傳回否則，會傳回 FALSE。
 
 ## <a name="return-value"></a>傳回值
  如果成功，則傳回`S_OK`; 否則傳回錯誤碼。

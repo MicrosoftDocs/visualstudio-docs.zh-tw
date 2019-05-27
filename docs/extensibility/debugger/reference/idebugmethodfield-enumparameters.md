@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1f9894d7076ef992854a2acc2ac7a7a519b26109
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: a9bc7a2049f98c06b83907061cfbee063c810baf
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62918809"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66210325"
 ---
 # <a name="idebugmethodfieldenumparameters"></a>IDebugMethodField::EnumParameters
 建立的列舉程式方法的參數。
@@ -36,10 +39,9 @@ int EnumParameters(
 );
 ```
 
-#### <a name="parameters"></a>參數
- `ppParams`
-
- [out]會傳回[IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md)方法表示的參數清單的物件; 如果沒有任何參數，否則會傳回 null 值。
+## <a name="parameters"></a>參數
+`ppParams`\
+[out]會傳回[IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md)方法表示的參數清單的物件; 如果沒有任何參數，否則會傳回 null 值。
 
 ## <a name="return-value"></a>傳回值
  如果成功，會傳回 S_OK，或如果沒有任何參數，則傳回 S_FALSE。 否則會傳回錯誤碼。
