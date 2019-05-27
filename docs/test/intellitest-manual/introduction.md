@@ -9,12 +9,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 94a52d81dd5e3b15340a2d58702600388b150001
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5aa67bd32f6895e4e1dfc4e7c558bc3bc0d8001b
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62999769"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65461484"
 ---
 # <a name="overview-of-microsoft-intellitest"></a>Microsoft IntelliTest 的概觀
 
@@ -115,8 +115,7 @@ IntelliTest 可控制提供給[參數化單元測試](test-generation.md#paramet
 
 此外，如果在重新執行程式時來自外部來源的值變更，則程式也會被視為不具決定性。 在這種情況下，IntelliTest 會失去對程式執行的控制權，因此其搜尋變得沒有效率。
 
-有時候此發生狀況並不明顯。
-請參考下列範例：
+有時候此發生狀況並不明顯。 請參考下列範例：
 
 * **GetHashCode()** 方法的結果是由 Unmanaged 程式碼提供，而且無法預測。
 * **System.Random** 類別會使用目前的系統時間來提供真正的隨機值。

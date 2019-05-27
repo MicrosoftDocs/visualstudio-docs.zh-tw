@@ -1,6 +1,6 @@
 ---
 title: -DoNotLoadProjects (devenv.exe)
-ms.date: 03/11/2019
+ms.date: 04/30/2019
 ms.topic: reference
 helpviewer_keywords:
 - Devenv, /DoNotLoadProjects switch
@@ -11,14 +11,16 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: de757e7022339b11f6d7c04ea7315abf685da24c
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: a414fde4dee401016e997fa5d6890da2ae8d9d53
+ms.sourcegitcommit: db30651dc0ce4d0b274479b23a6bd102a5559098
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63428050"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65083937"
 ---
 # <a name="donotloadprojects-devenvexe"></a>/DoNotLoadProjects (devenv.exe)
+
+**Visual Studio 2019 版本 16.1 的新功能**
 
 開啟指定的解決方案，而不載入任何專案。 如需詳細資訊，請參閱 [Visual Studio 中已篩選的方案](../filtered-solutions.md)。
 

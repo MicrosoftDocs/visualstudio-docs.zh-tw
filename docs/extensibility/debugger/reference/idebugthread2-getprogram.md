@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 44f673690341c6a20b250f401265fe2db9fd5727
-ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
+ms.openlocfilehash: 962a73c20e324b28a27b7cadb2459d3000fed2b7
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65224090"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66199619"
 ---
 # <a name="idebugthread2getprogram"></a>IDebugThread2::GetProgram
 取得執行緒正在執行的程式。
@@ -40,9 +40,8 @@ int GetProgram ( 
 ```
 
 ## <a name="parameters"></a>參數
- `ppProgram`\
-
- [out]傳回[IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)物件，表示這個執行緒正在執行中的程式。
+`ppProgram`\
+[out]傳回[IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)物件，表示這個執行緒正在執行中的程式。
 
 ## <a name="return-value"></a>傳回值
  如果成功，則傳回`S_OK`; 否則傳回錯誤碼。

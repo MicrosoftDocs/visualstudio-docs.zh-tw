@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 188cc4e8b1c58a7fd8f9f1c99b8d5f544710ef8c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 02bc1245026480f97bcc21f1af086f87284022df
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62875843"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66205416"
 ---
 # <a name="idebugcustomattributegetattributebytes"></a>IDebugCustomAttribute::GetAttributeBytes
 取得屬性資訊為 blob (位元組）。
@@ -38,14 +41,12 @@ int GetAttributeBytes(
 );
 ```
 
-#### <a name="parameters"></a>參數
- `ppBlob`
+## <a name="parameters"></a>參數
+`ppBlob`\
+[in、 out]陣列，其中會填入屬性的位元組。
 
- [in、 out]陣列，其中會填入屬性的位元組。
-
- `pdwLen`
-
- [in、 out]指定要傳回的位元組數目上限`ppBlob`陣列並傳回實際寫入至陣列的位元組數目。
+`pdwLen`\
+[in、 out]指定要傳回的位元組數目上限`ppBlob`陣列並傳回實際寫入至陣列的位元組數目。
 
 ## <a name="return-value"></a>傳回值
  如果成功，會傳回 S_OK;否則，傳回錯誤碼。

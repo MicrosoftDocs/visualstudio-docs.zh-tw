@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: eb204ccb98d0c7f5a6f5eeac9ccbc5ea07dfae16
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: bd186a8e25d51fa4e9f728ac132a792412f667c8
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62875807"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66204913"
 ---
 # <a name="idebugdisassemblystream2read"></a>IDebugDisassemblyStream2::Read
 讀取從目前的位置，在反組譯碼資料流中的指示。
@@ -42,22 +45,18 @@ int Read( 
 );
 ```
 
-#### <a name="parameters"></a>參數
- `dwInstructions`
+## <a name="parameters"></a>參數
+`dwInstructions`\
+[in]反組譯的指令數目。 此值也是最大長度`prgDisassembly`陣列。
 
- [in]反組譯的指令數目。 此值也是最大長度`prgDisassembly`陣列。
+`dwFields`\
+[in]從旗標的組合[DISASSEMBLY_STREAM_FIELDS](../../../extensibility/debugger/reference/disassembly-stream-fields.md)列舉，指出欄位`prgDisassembly`要填寫。
 
- `dwFields`
+`pdwInstructionsRead`\
+[out]傳回實際解譯的指令的數目。
 
- [in]從旗標的組合[DISASSEMBLY_STREAM_FIELDS](../../../extensibility/debugger/reference/disassembly-stream-fields.md)列舉，指出欄位`prgDisassembly`要填寫。
-
- `pdwInstructionsRead`
-
- [out]傳回實際解譯的指令的數目。
-
- `prgDisassembly`
-
- [out]陣列[DisassemblyData](../../../extensibility/debugger/reference/disassemblydata.md)會填入反組譯碼中，反組譯指示每一個結構的結構。 這個陣列的長度取決於`dwInstructions`參數。
+`prgDisassembly`\
+[out]陣列[DisassemblyData](../../../extensibility/debugger/reference/disassemblydata.md)會填入反組譯碼中，反組譯指示每一個結構的結構。 這個陣列的長度取決於`dwInstructions`參數。
 
 ## <a name="return-value"></a>傳回值
  如果成功，則傳回`S_OK`; 否則傳回錯誤碼。

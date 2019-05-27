@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: ad712371049151b18daf3b70abd5063e6421efba
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: b0977c537984d091e550329298367f5e02a360ed
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65458567"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66198688"
 ---
 # <a name="idebugstackframe2getthread"></a>IDebugStackFrame2::GetThread
 取得與堆疊框架相關聯的執行緒。
@@ -40,9 +40,8 @@ int GetThread ( 
 ```
 
 ## <a name="parameters"></a>參數
- `ppThread`\
-
- [out]傳回[IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)物件，表示執行緒。
+`ppThread`\
+[out]傳回[IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)物件，表示執行緒。
 
 ## <a name="return-value"></a>傳回值
  如果成功，則傳回`S_OK`; 否則傳回錯誤碼。

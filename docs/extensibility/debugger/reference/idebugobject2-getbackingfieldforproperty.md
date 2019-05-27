@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 080af74ee83c5a2816cc5e7a89f29c59d2b75c7c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: ac19bd3ed139b15744e408b7114c6879a17e2c61
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62842991"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66199858"
 ---
 # <a name="idebugobject2getbackingfieldforproperty"></a>IDebugObject2::GetBackingFieldForProperty
 取得變數的欄位 （如果有的話），可能會支援這個物件所表示的屬性。
@@ -36,10 +39,9 @@ int GetBackingFieldForProperty(
 );
 ```
 
-#### <a name="parameters"></a>參數
- `ppObject`
-
- [out][IDebugObject2](../../../extensibility/debugger/reference/idebugobject2.md)物件，描述支援欄位。
+## <a name="parameters"></a>參數
+`ppObject`\
+[out][IDebugObject2](../../../extensibility/debugger/reference/idebugobject2.md)物件，描述支援欄位。
 
 ## <a name="return-value"></a>傳回值
  如果成功，會傳回 S_OK;否則，傳回錯誤碼。

@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 071dac72e39a3cce5b0b17dc9e401b9072efda6a
-ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
+ms.openlocfilehash: 86429e4ffe46fc182ea923f249bd5492dd433812
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65224063"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66207201"
 ---
 # <a name="idebugsymbolprovidergetlanguage"></a>IDebugSymbolProvider::GetLanguage
 這個方法會取得已編譯程式碼在偵錯位址使用的語言。
@@ -44,17 +44,14 @@ int GetLanguage(
 ```
 
 ## <a name="parameters"></a>參數
- `pAddress`\
+`pAddress`\
+[in]位址物件，表示所[IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md)介面。
 
- [in]位址物件，表示所[IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md)介面。
+`pguidLanguage`\
+[out]傳回`GUID`所指定的語言。
 
- `pguidLanguage`\
-
- [out]傳回`GUID`所指定的語言。
-
- `pguidLanguageVendor`\
-
- [out]傳回`GUID`，指定的語言廠商。
+`pguidLanguageVendor`\
+[out]傳回`GUID`，指定的語言廠商。
 
 ## <a name="return-value"></a>傳回值
  如果成功，則傳回`S_OK`; 否則傳回錯誤碼。

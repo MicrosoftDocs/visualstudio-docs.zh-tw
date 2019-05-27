@@ -11,12 +11,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ac6f73e31e7e15a2ffd86e2d969f98a686fbd004
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: b775963f9ab708e92a37cda9a3ff50bc67c9b2cf
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62842928"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66211753"
 ---
 # <a name="idebugexpressionevaluator2getservice"></a>IDebugExpressionEvaluator2::GetService
 擷取服務物件指定的唯一識別碼。
@@ -37,14 +40,12 @@ int GetService (
 );
 ```
 
-#### <a name="parameters"></a>參數
- `uid`
+## <a name="parameters"></a>參數
+`uid`\
+[in]要擷取之服務的唯一識別碼。
 
- [in]要擷取之服務的唯一識別碼。
-
- `ppService`
-
- [out]傳回代表服務的物件。
+`ppService`\
+[out]傳回代表服務的物件。
 
 ## <a name="return-value"></a>傳回值
  如果成功，則傳回`S_OK`; 否則傳回錯誤碼。

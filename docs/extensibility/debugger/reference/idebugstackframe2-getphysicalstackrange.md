@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 341a4d2da740d2907172fb7761dc0c18d13d1456
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: ac507c2eac00d025a36bed3e4c3461a6b3fab2f0
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65457273"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66212869"
 ---
 # <a name="idebugstackframe2getphysicalstackrange"></a>IDebugStackFrame2::GetPhysicalStackRange
 取得的堆疊框架相關聯的實體位址範圍的電腦相關表示法。
@@ -42,13 +42,11 @@ int GetPhysicalStackRange ( 
 ```
 
 ## <a name="parameters"></a>參數
- `paddrMin`\
+`paddrMin`\
+[out]傳回此堆疊框架相關聯的最小實體位址。
 
- [out]傳回此堆疊框架相關聯的最小實體位址。
-
- `paddrMax`\
-
- [out]傳回此堆疊框架相關聯的最高的實體位址。
+`paddrMax`\
+[out]傳回此堆疊框架相關聯的最高的實體位址。
 
 ## <a name="return-value"></a>傳回值
  如果成功，則傳回`S_OK`; 否則傳回錯誤碼。

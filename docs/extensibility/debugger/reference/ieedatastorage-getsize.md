@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: e5bcbfe60284cb254054e66b9e03b5e0e31ce4b1
-ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
+ms.openlocfilehash: 87818a12945e76f68ba3b96a7f90c38640a0aa39
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65224132"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66199259"
 ---
 # <a name="ieedatastoragegetsize"></a>IEEDataStorage::GetSize
 傳回此物件包含的位元組數目。
@@ -40,9 +40,8 @@ int GetSize(
 ```
 
 ## <a name="parameters"></a>參數
- `size`\
-
- [out]此物件包含的位元組數目。
+`size`\
+[out]此物件包含的位元組數目。
 
 ## <a name="return-value"></a>傳回值
  如果成功，則傳回`S_OK`; 否則傳回錯誤碼。

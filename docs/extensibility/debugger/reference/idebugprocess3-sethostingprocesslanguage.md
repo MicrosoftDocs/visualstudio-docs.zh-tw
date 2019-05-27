@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0e10c77fb7e4fd3e7a679e9954140760c282952b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: b7caebed7f3f9375a7b41fd68e43e6dbb6d21f37
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62917649"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66208787"
 ---
 # <a name="idebugprocess3sethostingprocesslanguage"></a>IDebugProcess3::SetHostingProcessLanguage
 這個方法會設定程序會裝載下的語言。 然後偵錯引擎 (DE) 載入適當的運算式評估工具使用此語言。
@@ -36,10 +39,9 @@ int SetHostingProcessLanguage(
 );
 ```
 
-#### <a name="parameters"></a>參數
- `guidLang`
-
- [in]`GUID` DE 應該使用的語言。 指定`GUID_NULL`(C++) 或`Guid.Empty`(C#) 能夠使用預設的語言 DE。
+## <a name="parameters"></a>參數
+`guidLang`\
+[in]`GUID` DE 應該使用的語言。 指定`GUID_NULL`(C++) 或`Guid.Empty`(C#) 能夠使用預設的語言 DE。
 
 ## <a name="return-value"></a>傳回值
  如果成功，則傳回`S_OK`，否則會傳回錯誤碼。

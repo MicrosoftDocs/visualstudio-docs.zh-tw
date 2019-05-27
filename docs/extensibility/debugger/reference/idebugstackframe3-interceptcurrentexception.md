@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: c38d8c1c2f06701d1e0a34560b674aa62292a803
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: 4341542c48465af026280d5b7b13a8e10bafe40a
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65457403"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66203254"
 ---
 # <a name="idebugstackframe3interceptcurrentexception"></a>IDebugStackFrame3::InterceptCurrentException
 何時要攔截目前的例外狀況，請呼叫目前的堆疊框架上偵錯工具。
@@ -42,13 +42,11 @@ int InterceptCurrentException(
 ```
 
 ## <a name="parameters"></a>參數
- `dwFlags`\
+`dwFlags`\
+[in]指定不同的動作。 目前，只有[INTERCEPT_EXCEPTION_ACTION](../../../extensibility/debugger/reference/intercept-exception-action.md)值`IEA_INTERCEPT`支援，而且必須加以指定。
 
- [in]指定不同的動作。 目前，只有[INTERCEPT_EXCEPTION_ACTION](../../../extensibility/debugger/reference/intercept-exception-action.md)值`IEA_INTERCEPT`支援，而且必須加以指定。
-
- `pqwCookie`\
-
- [out]識別特定的例外狀況的唯一值。
+`pqwCookie`\
+[out]識別特定的例外狀況的唯一值。
 
 ## <a name="return-value"></a>傳回值
  如果成功，會傳回 S_OK;否則，傳回錯誤碼。

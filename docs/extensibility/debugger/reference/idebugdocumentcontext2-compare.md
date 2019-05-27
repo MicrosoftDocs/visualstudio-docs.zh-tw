@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1416092661ee26bff773ea1a439c241a0f5c5fc6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 037dc4232753bbae8e15a0a2cf4bd42781910cb9
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62921510"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66204720"
 ---
 # <a name="idebugdocumentcontext2compare"></a>IDebugDocumentContext2::Compare
 比較此文件內容，給定文件內容的陣列。
@@ -42,22 +45,18 @@ int Compare( 
 );
 ```
 
-#### <a name="parameters"></a>參數
- `compare`
+## <a name="parameters"></a>參數
+`compare`\
+[in]值，以從[DOCCONTEXT_COMPARE](../../../extensibility/debugger/reference/doccontext-compare.md)列舉，指定的比較類型。
 
- [in]值，以從[DOCCONTEXT_COMPARE](../../../extensibility/debugger/reference/doccontext-compare.md)列舉，指定的比較類型。
+`rgpDocContextSet`\
+[in]陣列[IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md)代表所要比較的文件內容的物件。
 
- `rgpDocContextSet`
+`dwDocContextSetLen`\
+[in]要比較的文件內容的陣列的長度。
 
- [in]陣列[IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md)代表所要比較的文件內容的物件。
-
- `dwDocContextSetLen`
-
- [in]要比較的文件內容的陣列的長度。
-
- `pdwDocContext`
-
- [out]傳回索引至`rgpDocContextSet`符合比較的第一個文件內容的陣列。
+`pdwDocContext`\
+[out]傳回索引至`rgpDocContextSet`符合比較的第一個文件內容的陣列。
 
 ## <a name="return-value"></a>傳回值
  傳回`S_OK`如果找不到相符項目。 傳回`S_FALSE`如果找不到相符項目。 否則會傳回錯誤碼。

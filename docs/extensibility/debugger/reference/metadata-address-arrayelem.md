@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: cb0ad7c73d2e4233ad919ffe48515bbade031fd8
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: c2e78efb77bdd2bfaf2a7ef2b253110133b24934
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65461137"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66212831"
 ---
 # <a name="metadataaddressarrayelem"></a>METADATA_ADDRESS_ARRAYELEM
 
@@ -45,13 +45,11 @@ public struct METADATA_ADDRESS_ARRAYELEM {
 ## <a name="members"></a>成員
 
 `tokMethod`\
-
 識別碼陣列的這個項目是的一部分。
 
 [C++]`_mdToken`是`typedef`適用於 32 位元`int`。
 
 `dwIndex`\
-
 陣列中這個項目的索引。
 
 ## <a name="remarks"></a>備註

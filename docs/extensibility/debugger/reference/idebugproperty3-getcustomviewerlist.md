@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 82b2e6da51b695bdc6fd2fd031a1f9decf484daa
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: 78060933846d60d1e8721cda676ac837ea2bff06
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65457649"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66200186"
 ---
 # <a name="idebugproperty3getcustomviewerlist"></a>IDebugProperty3::GetCustomViewerList
 取得與這個屬性相關聯的自訂檢視器的清單。
@@ -47,20 +47,16 @@ int GetCustomViewerList(
 
 ## <a name="parameters"></a>參數
 `celtSkip`\
-
- [in]略過的檢視器的數目。
+[in]略過的檢視器的數目。
 
 `celtRequested`\
-
- [in]若要擷取的檢視器的數目 (也會指定的大小`rgViewers`陣列)。
+[in]若要擷取的檢視器的數目 (也會指定的大小`rgViewers`陣列)。
 
 `rgViewers`\
-
- [in、 out]陣列[DEBUG_CUSTOM_VIEWER](../../../extensibility/debugger/reference/debug-custom-viewer.md)来填入結構。
+[in、 out]陣列[DEBUG_CUSTOM_VIEWER](../../../extensibility/debugger/reference/debug-custom-viewer.md)来填入結構。
 
 `pceltFetched`\
-
- [out]傳回的檢視器的實際數目。
+[out]傳回的檢視器的實際數目。
 
 ## <a name="return-value"></a>傳回值
 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。

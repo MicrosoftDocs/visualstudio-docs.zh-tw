@@ -18,12 +18,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: facbbf5903d683ea3a13bdd875dfe2b6c63b6367
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: cd932b1748d5c400c6ab64a56b16d1b6a1458c71
+ms.sourcegitcommit: 3fe6bed9ef8fb1478106645f655c7472009ae43a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62786374"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "64850758"
 ---
 # <a name="import-or-export-installation-configurations"></a>匯入或匯出安裝組態
 
@@ -48,7 +48,7 @@ ms.locfileid: "62786374"
 
    ![從 Visual Studio 安裝程式中的產品卡匯出設定](../install/media/vs-2019/vs-installer-export-config.png)
 
-1. 瀏覽至或輸入要儲存 .vconfig 檔案的位置，然後選擇 [檢閱詳細資料]。
+1. 瀏覽至或鍵入您要儲存 .vsconfig 檔案的位置，然後選擇 [檢閱詳細資料]。
 
    ![從 Visual Studio 安裝程式匯出設定](../install/media/vs-2019/export-configuration-confirmation.png)
 
@@ -62,7 +62,7 @@ ms.locfileid: "62786374"
 
 1. 在產品卡上，選擇 [更多] 按鈕，然後再選取 [匯入設定]。
 
-1. 找出要匯入的 .vconfig 檔案，然後選擇 [檢閱詳細資料]。
+1. 找出要匯入的 .vsconfig 檔案，然後選擇 [檢閱詳細資料]。
 
 1. 請確定您已獲得所需的工作負載和元件，然後選擇 [關閉]。
 

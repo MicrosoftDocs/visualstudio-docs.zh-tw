@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6e8c39adaca6c394b631542d57d74ed4818501b4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 5a99fb1e0b8b32f98d06f34ac39b8dfd781cdc62
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62872920"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66211985"
 ---
 # <a name="idebugmethodfieldenumlocals"></a>IDebugMethodField::EnumLocals
 建立選取的本機變數之方法的列舉值。
@@ -38,14 +41,12 @@ int EnumLocals(
 );
 ```
 
-#### <a name="parameters"></a>參數
-`pAddress`
+## <a name="parameters"></a>參數
+`pAddress`\
+[in][IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md)物件，表示選取的內容或範圍，從中取得區域變數的偵錯位址。
 
- [in][IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md)物件，表示選取的內容或範圍，從中取得區域變數的偵錯位址。
-
-`ppLocals`
-
- [out]會傳回[IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md)物件，表示區域變數的清單; 如果沒有任何區域變數，否則會傳回 null 值。
+`ppLocals`\
+[out]會傳回[IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md)物件，表示區域變數的清單; 如果沒有任何區域變數，否則會傳回 null 值。
 
 ## <a name="return-value"></a>傳回值
 如果成功，會傳回 S_OK，或如果沒有任何區域變數，則傳回 S_FALSE。 否則會傳回錯誤碼。

@@ -15,14 +15,14 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0cb6b6d7969742f4cd1c155e800464a6f645649d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c595f4c8f344cfb9e8678d8f9c425a564baa9e4b
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62892901"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65459105"
 ---
-# <a name="use-3d-assets-in-your-game-or-app"></a>在遊戲或應用程式中使用 3D 資產
+# <a name="how-to-use-3d-assets-in-your-game-or-app"></a>作法：在遊戲或應用程式中使用 3D 資產
 
 本文描述如何使用 Visual Studio 處理 3D 資產，並將它們包括在您的組建中。
 
@@ -34,7 +34,9 @@ Visual Studio 必須先知道有關您要部署的資產類型，才能在建置
 
 ### <a name="to-add-the-build-customizations-to-your-project"></a>將組建自訂加入至專案
 
-1. 在 [方案總管] 中，開啟專案的捷徑功能表，然後選擇 [組建相依性] > [組建自訂]。 [Visual C++ 組建自訂檔] 對話方塊隨即出現。
+1. 在 [方案總管] 中，開啟專案的捷徑功能表，然後選擇 [組建相依性] > [組建自訂]。
+
+   [Visual C++ 組建自訂檔] 對話方塊隨即出現。
 
 2. 在 [可用的組建自訂檔] 下，選取對應至您要用於專案之資產類型的核取方塊，如下表所述：
 
@@ -47,11 +49,14 @@ Visual Studio 必須先知道有關您要部署的資產類型，才能在建置
 3. 選擇 [確定]  按鈕。
 
 ## <a name="include-assets-in-your-build"></a>在組建中包括資產
- 現在，您的專案知道您要使用的不同類型 3D 資產，下一步是告訴它哪些檔案是 3D 資產，以及它們是哪些類型的資產。
+
+現在，專案知道您要使用的不同類型 3D 資產，下一步是告訴它哪些檔案是 3D 資產，以及它們是哪些類型的資產。
 
 ### <a name="to-add-an-asset-to-your-build"></a>將資產加入至組建
 
-1. 在方案總管中，於專案中，開啟資產的捷徑功能表，然後選擇 [屬性]。 資產的 [屬性頁] 對話方塊隨即出現。
+1. 在方案總管中，於專案中，開啟資產的捷徑功能表，然後選擇 [屬性]。
+
+   資產的 [屬性頁] 對話方塊隨即出現。
 
 2. 請確定 [組態] 和 [平台] 屬性設定為您要套用變更的值。
 
@@ -76,11 +81,13 @@ Visual Studio 必須先知道有關您要部署的資產類型，才能在建置
 
 ### <a name="to-configure-content-pipeline-properties"></a>設定內容管線屬性
 
-1. 在方案總管中，於專案中，開啟資產檔案的捷徑功能表，然後選擇 [屬性]。 資產的 [屬性頁] 對話方塊隨即出現。
+1. 在方案總管中，於專案中，開啟資產檔案的捷徑功能表，然後選擇 [屬性]。
+
+   資產的 [屬性頁] 對話方塊隨即出現。
 
 2. 請確定 [組態] 和 [平台] 屬性設定為您要套用變更的值。
 
-3. 在 [組態屬性] 下，選擇內容管線節點 (例如，紋理和影像資產的 [影像內容管線])，然後在屬性格線中，將屬性設定為適當的值。 例如，若要在建置時產生紋理資產的 MIP 對應，請將 [產生 Mips] 屬性設定為 [是]。
+3. 在 [組態屬性] 下，選擇內容管線節點 (例如，針對紋理和影像資產選擇 [影像內容管線])，然後在屬性方格中，將屬性設定為適當的值。 例如，若要在建置時產生紋理資產的 MIP 對應，請將 [產生 Mips] 屬性設定為 [是]。
 
 4. 選擇 [確定]  按鈕。
 
@@ -208,6 +215,6 @@ cbuffer MiscVars : register(b3)
 |-----------|-----------------|
 |[如何：匯出包含 Mipmap 的紋理](../designers/how-to-export-a-texture-that-contains-mipmaps.md)|描述如何使用影像內容管線，匯出含有預先計算之 MIP 對應的紋理。|
 |[如何：匯出包含預乘 Alpha 的紋理](../designers/how-to-export-a-texture-that-has-premultiplied-alpha.md)|描述如何使用影像內容管線，匯出含有預乘的 Alpha 值的紋理。|
-|[如何：匯出紋理以與 Direct2D 或 JavaScript 應用程式搭配使用](../designers/how-to-export-a-texture-for-use-with-direct2d-or-javascipt-apps.md)|描述如何使用影像內容管線，匯出可用於 Direct2D 或 JavaScript 應用程式的紋理。|
+|[如何：匯出紋理，以和 Direct2D 或 JavaScript 應用程式搭配使用](../designers/how-to-export-a-texture-for-use-with-direct2d-or-javascipt-apps.md)|描述如何使用影像內容管線，匯出可用於 Direct2D 或 JavaScript 應用程式的紋理。|
 |[使用 3D 資產來打造遊戲和應用程式](../designers/working-with-3-d-assets-for-games-and-apps.md)|描述 Visual Studio 提供用於建立和管理 3D 資產 (包括紋理和影像)、3D 模型和著色器的編輯工具。|
 |[如何：匯出著色器](../designers/how-to-export-a-shader.md)|描述如何從著色器設計工具匯出著色器。|

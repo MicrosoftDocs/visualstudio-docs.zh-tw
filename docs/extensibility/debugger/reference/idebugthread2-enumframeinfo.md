@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 466d50f81fe73e0d67e01142568d20cd757ebeea
-ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
+ms.openlocfilehash: 1954a66c5104ec96b9b941e8bd1171c1fba88003
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65225984"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66199705"
 ---
 # <a name="idebugthread2enumframeinfo"></a>IDebugThread2::EnumFrameInfo
 擷取一份此執行緒的堆疊框架。
@@ -44,17 +44,14 @@ int EnumFrameInfo ( 
 ```
 
 ## <a name="parameters"></a>參數
- `dwFieldSpec`\
+`dwFieldSpec`\
+[in]從旗標的組合[FRAMEINFO_FLAGS](../../../extensibility/debugger/reference/frameinfo-flags.md)列舉，指定哪些欄位[FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md)結構是填寫。指定`FIF_FUNCNAME_FORMAT`格式化成單一字串的函式名稱的旗標。
 
- [in]從旗標的組合[FRAMEINFO_FLAGS](../../../extensibility/debugger/reference/frameinfo-flags.md)列舉，指定哪些欄位[FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md)結構是填寫。指定`FIF_FUNCNAME_FORMAT`格式化成單一字串的函式名稱的旗標。
+`nRadix`\
+[in]格式化數值列舉值中的資訊使用的基數。
 
- `nRadix`\
-
- [in]格式化數值列舉值中的資訊使用的基數。
-
- `ppEnum`\
-
- [out]傳回[IEnumDebugFrameInfo2](../../../extensibility/debugger/reference/ienumdebugframeinfo2.md)物件，其中包含一份[FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md)結構描述的堆疊框架。
+`ppEnum`\
+[out]傳回[IEnumDebugFrameInfo2](../../../extensibility/debugger/reference/ienumdebugframeinfo2.md)物件，其中包含一份[FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md)結構描述的堆疊框架。
 
 ## <a name="return-value"></a>傳回值
  如果成功，則傳回`S_OK`; 否則傳回錯誤碼。

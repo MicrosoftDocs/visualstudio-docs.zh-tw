@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: df0504515d8ddacb4e21918cefffe76f8e96d6a1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 8fc140330330a278e29c84b8e146fda20eeed399
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62875282"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66203304"
 ---
 # <a name="idebugdocumenttextevents2onremovetext"></a>IDebugDocumentTextEvents2::onRemoveText
 告知偵錯封裝文字具有從文件中移除。
@@ -38,14 +41,12 @@ int onRemoveText( 
 );
 ```
 
-#### <a name="parameters"></a>參數
- `pos`
+## <a name="parameters"></a>參數
+`pos`\
+[in]A [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md)結構，表示已移除文字的位置。
 
- [in]A [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md)結構，表示已移除文字的位置。
-
- `dwNumToRemove`
-
- [in]指定文字的已移除的字元數目。
+`dwNumToRemove`\
+[in]指定文字的已移除的字元數目。
 
 ## <a name="return-value"></a>傳回值
  如果成功，則傳回`S_OK`; 否則傳回錯誤碼。

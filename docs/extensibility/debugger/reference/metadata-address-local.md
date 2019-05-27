@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 10e94460dfd65294536fcb116099ba10c357d845
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: 42112f1956ebc2d8c4727bd68f627ad06cf3ee4a
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65461129"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66212792"
 ---
 # <a name="metadataaddresslocal"></a>METADATA_ADDRESS_LOCAL
 
@@ -47,17 +47,14 @@ public struct METADATA_ADDRESS_LOCAL {
 ## <a name="members"></a>成員
 
 `tokMethod`\
-
 方法或函式識別碼的本機變數是的一部分。
 
 [C++]`_mdToken`是`typedef`適用於 32 位元`int`。
 
 `pLocal`\
-
 這個結構是表示其位址之語彙基元。
 
 `dwIndex`\
-
 可以是方法或函式或其他值 （語言特有） 中的這個本機變數的索引。
 
 ## <a name="remarks"></a>備註

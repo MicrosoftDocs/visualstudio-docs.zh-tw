@@ -1,5 +1,5 @@
 ---
-title: 逐步解說：使用專案範本建立網站資料行專案項目，第 1 部分 |Microsoft Docs
+title: 使用專案範本，第 1 部分中建立網站資料行專案項目
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 34808d70a7df1bf5d030e4205de34ff3ec4d03b2
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 60e4f4e035b381b8bfda8e14ee705471b0fad2b8
+ms.sourcegitcommit: 13ab9a5ab039b070b9cd9251d0b83dd216477203
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63430396"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66177557"
 ---
 # <a name="walkthrough-create-a-site-column-project-item-with-a-project-template-part-1"></a>逐步解說：使用專案範本，第 1 部分建立網站資料行專案項目
   SharePoint 專案的一或多個 SharePoint 專案項目的容器。 您可以擴充 SharePoint 專案系統，在 Visual Studio 中的建立您自己的 SharePoint 專案項目類型，然後再將它們關聯的專案範本。 在本逐步解說中，您將建立網站資料行定義的專案項目類型，然後會建立專案範本，可用來建立新的專案，其中包含網站資料行專案項目。
@@ -170,7 +170,7 @@ ms.locfileid: "63430396"
 
 5. 執行個體中[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]，已 SiteColumnProjectItem 方案開啟，在**方案總管**，開啟捷徑功能表**SiteColumnProjectTemplate**專案節點，選擇**新增**，然後選擇**現有的項目**。
 
-6. 在 [**加入現有項目**] 對話方塊中，開啟的檔案副檔名清單，然後選擇**的所有檔案 (\*。\*)**.
+6. 在 [**加入現有項目**] 對話方塊中，開啟的檔案副檔名清單，然後選擇**的所有檔案 (\*。\*)** .
 
 7. 在包含 BaseSharePointProject 專案目錄中，選取 key.snk 檔案，然後再選擇**新增** 按鈕。
 

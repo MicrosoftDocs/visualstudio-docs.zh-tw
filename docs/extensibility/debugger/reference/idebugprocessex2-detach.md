@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e736c14b1a87188f45658a51cff0c123553332e9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 58480e52e86fc4603648d9f534cb03e944a8dde8
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62917498"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66212891"
 ---
 # <a name="idebugprocessex2detach"></a>IDebugProcessEx2::Detach
 這個方法會通知程序工作階段不會再偵錯程序。
@@ -36,10 +39,9 @@ int Detach(
 );
 ```
 
-#### <a name="parameters"></a>參數
- `pSession`
-
- [in]值，這個值可唯一識別要卸離此程序的工作階段。
+## <a name="parameters"></a>參數
+`pSession`\
+[in]值，這個值可唯一識別要卸離此程序的工作階段。
 
 ## <a name="return-value"></a>傳回值
  如果成功，則傳回`S_OK`; 否則傳回錯誤碼。

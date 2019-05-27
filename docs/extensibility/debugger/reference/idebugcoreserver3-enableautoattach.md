@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e6c1bf5f210d9b37b35d43a393a25b1c9df44a7e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 8a1b714856811ccd9b8e95d074cfc95740e27e5f
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62875876"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66205524"
 ---
 # <a name="idebugcoreserver3enableautoattach"></a>IDebugCoreServer3::EnableAutoAttach
 可讓自動附加指定的偵錯引擎。
@@ -42,22 +45,18 @@ int EnableAutoAttach(
 );
 ```
 
-#### <a name="parameters"></a>參數
- `rgguidSpecificEngines`
+## <a name="parameters"></a>參數
+`rgguidSpecificEngines`\
+[in]每個偵錯引擎將標示為自動附加 Guid 的陣列。
 
- [in]每個偵錯引擎將標示為自動附加 Guid 的陣列。
+`celtSpecificEngines`\
+[in]中指定的引擎數`rgguidSpecificEngines`。
 
- `celtSpecificEngines`
+`pszStartPageUrl`\
+[in]若要使用自動附加時起始的 URL。
 
- [in]中指定的引擎數`rgguidSpecificEngines`。
-
- `pszStartPageUrl`
-
- [in]若要使用自動附加時起始的 URL。
-
- `pbstrSessionID`
-
- [out]已自動附加的工作階段識別碼。
+`pbstrSessionID`\
+[out]已自動附加的工作階段識別碼。
 
 ## <a name="return-value"></a>傳回值
  如果成功，則傳回`S_OK`; 否則會傳回錯誤碼。 一個錯誤碼是`E_AUTO_ATTACH_NOT_REGISTERED`，這表示尚未註冊 auto-attach class factory。

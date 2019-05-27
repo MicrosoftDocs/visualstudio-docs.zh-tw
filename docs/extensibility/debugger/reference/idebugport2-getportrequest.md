@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e8a103316a292c444a35b8c819968d98cda777b6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: a25863ab07c4f68f0c961692981d4125c213818b
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62871799"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66209203"
 ---
 # <a name="idebugport2getportrequest"></a>IDebugPort2::GetPortRequest
 取得先前用來建立連接埠 （如果有的話） 的連接埠的描述。
@@ -36,10 +39,9 @@ int GetPortRequest( 
 );
 ```
 
-#### <a name="parameters"></a>參數
- `ppRequest`
-
- [out]傳回[IDebugPortRequest2](../../../extensibility/debugger/reference/idebugportrequest2.md)物件，表示用來建立連接埠的要求。
+## <a name="parameters"></a>參數
+`ppRequest`\
+[out]傳回[IDebugPortRequest2](../../../extensibility/debugger/reference/idebugportrequest2.md)物件，表示用來建立連接埠的要求。
 
 ## <a name="return-value"></a>傳回值
  如果成功，則傳回`S_OK`; 否則傳回錯誤碼。  傳回`E_PORT_NO_REQUEST`如果使用未建立連接埠[IDebugPortRequest2](../../../extensibility/debugger/reference/idebugportrequest2.md)連接埠要求。

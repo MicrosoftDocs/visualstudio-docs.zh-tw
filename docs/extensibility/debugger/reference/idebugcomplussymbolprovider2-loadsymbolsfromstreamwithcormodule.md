@@ -11,12 +11,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 472a83212bdd71bd1747fa54e4bf3d2bda51434e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 487f98f992a1b6caf2d4359c9840fd568b023805
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62876345"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66205893"
 ---
 # <a name="idebugcomplussymbolprovider2loadsymbolsfromstreamwithcormodule"></a>IDebugComPlusSymbolProvider2::LoadSymbolsFromStreamWithCorModule
 從指定的資料流載入偵錯符號**ICorDebugModule**物件。
@@ -45,30 +48,24 @@ int LoadSymbolsFromStreamWithCorModule(
 );
 ```
 
-#### <a name="parameters"></a>參數
-`ulAppDomainID`
+## <a name="parameters"></a>參數
+`ulAppDomainID`\
+[in]應用程式定義域的識別項。
 
- [in]應用程式定義域的識別項。
+`guidModule`\
+[in]模組的唯一識別碼。
 
-`guidModule`
+`baseAddress`\
+[in]基底的記憶體位址。
 
- [in]模組的唯一識別碼。
+`pUnkMetadataImport`\
+[in]包含符號的中繼資料的物件。
 
-`baseAddress`
+`pUnkCorDebugModule`\
+[in]物件，可實作[ICorDebugModule 介面](/dotnet/framework/unmanaged-api/debugging/icordebugmodule-interface)。
 
- [in]基底的記憶體位址。
-
-`pUnkMetadataImport`
-
- [in]包含符號的中繼資料的物件。
-
-`pUnkCorDebugModule`
-
- [in]物件，可實作[ICorDebugModule 介面](/dotnet/framework/unmanaged-api/debugging/icordebugmodule-interface)。
-
-`pStream`
-
- [in]包含要載入的偵錯符號的資料流。
+`pStream`\
+[in]包含要載入的偵錯符號的資料流。
 
 ## <a name="return-value"></a>傳回值
 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。

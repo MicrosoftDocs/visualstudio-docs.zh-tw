@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 3541181e0141e20381be7cdd24a45d7c7a0704ec
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: 72434834af748ae9c11b9ac8a43d1f71848aca81
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65458048"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66212779"
 ---
 # <a name="metadatatype"></a>METADATA_TYPE
 此結構會指定取自中繼資料的欄位類型的相關資訊。
@@ -45,15 +45,12 @@ public struct METADATA_TYPE {
 
 ## <a name="parameters"></a>參數
  `ulAppDomainID`\
-
  符號所來自的應用程式的識別碼。 這用來唯一識別應用程式的執行個體。
 
  `guidModule`\
-
  模組包含此欄位的 GUID。
 
  `tokClass`\
-
  此類型的中繼資料語彙基元的識別碼。
 
  [C++]`_mdToken`是`typedef`適用於 32 位元`int`。

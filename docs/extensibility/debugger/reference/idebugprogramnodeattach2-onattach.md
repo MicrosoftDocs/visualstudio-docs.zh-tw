@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 4deb573ece9ed2678e617ee74772184d4327551a
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: ce1b5635685971b3a9390533589975ff0f323021
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65459031"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66203783"
 ---
 # <a name="idebugprogramnodeattach2onattach"></a>IDebugProgramNodeAttach2::OnAttach
 將附加至相關聯的程式，或是遵照的附加程序[附加](../../../extensibility/debugger/reference/idebugengine2-attach.md)方法。
@@ -40,9 +40,8 @@ int OnAttach(
 ```
 
 ## <a name="parameters"></a>參數
- `guidProgramId`\
-
- [in]`GUID`要指派給相關聯的程式。
+`guidProgramId`\
+[in]`GUID`要指派給相關聯的程式。
 
 ## <a name="return-value"></a>傳回值
  如果成功，會傳回 `S_OK`。 傳回`S_FALSE`如果[附加](../../../extensibility/debugger/reference/idebugengine2-attach.md)不應該呼叫方法。 否則會傳回錯誤碼。

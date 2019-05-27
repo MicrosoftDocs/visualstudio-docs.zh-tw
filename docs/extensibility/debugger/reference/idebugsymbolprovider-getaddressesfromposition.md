@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 1276a1c1a076c624ffcfd78c3b7f9d09df2a6e01
-ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
+ms.openlocfilehash: b354c7c31f4633fd307f54954c5d5115436097d0
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65224021"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66207353"
 ---
 # <a name="idebugsymbolprovidergetaddressesfromposition"></a>IDebugSymbolProvider::GetAddressesFromPosition
 這個方法會對應到陣列的文件位置的偵錯位址。
@@ -46,21 +46,17 @@ int GetAddressesFromPosition( 
 ```
 
 ## <a name="parameters"></a>參數
- `pDocPos`\
+`pDocPos`\
+[in]文件位置。
 
- [in]文件位置。
+`fStatmentOnly`\
+[in]如果為 TRUE，會限制單一陳述式的偵錯位址。
 
- `fStatmentOnly`\
+`ppEnumBegAddresses`\
+[out]傳回與這個陳述式或列關聯的開始偵錯位址的列舉值。
 
- [in]如果為 TRUE，會限制單一陳述式的偵錯位址。
-
- `ppEnumBegAddresses`\
-
- [out]傳回與這個陳述式或列關聯的開始偵錯位址的列舉值。
-
- `ppEnumEndAddresses`\
-
- [out]傳回[IEnumDebugAddresses](../../../extensibility/debugger/reference/ienumdebugaddresses.md)結束此陳述式或列相關聯的偵錯地址的列舉值。
+`ppEnumEndAddresses`\
+[out]傳回[IEnumDebugAddresses](../../../extensibility/debugger/reference/ienumdebugaddresses.md)結束此陳述式或列相關聯的偵錯地址的列舉值。
 
 ## <a name="return-value"></a>傳回值
  如果成功，則傳回`S_OK`; 否則傳回錯誤碼。

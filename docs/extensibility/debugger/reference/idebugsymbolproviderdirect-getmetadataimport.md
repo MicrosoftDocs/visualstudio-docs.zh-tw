@@ -14,12 +14,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 17ba4ac3deb72185094c0f943adf5a2ae235fa95
-ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
+ms.openlocfilehash: c2b6a97dd00edc66699fbf815ed56031ed74ac3b
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65224064"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66207044"
 ---
 # <a name="idebugsymbolproviderdirectgetmetadataimport"></a>IDebugSymbolProviderDirect::GetMetaDataImport
 擷取中繼資料匯入資訊。
@@ -43,17 +43,14 @@ int GetMetaDataImport (
 ```
 
 ## <a name="parameters"></a>參數
- `guid`\
+`guid`\
+[in]模組的唯一識別碼。
 
- [in]模組的唯一識別碼。
+`appID`\
+[in]應用程式定義域的識別項。
 
- `appID`\
-
- [in]應用程式定義域的識別項。
-
- `ppImport`\
-
- [out]傳回物件，包含中繼資料匯入資訊。
+`ppImport`\
+[out]傳回物件，包含中繼資料匯入資訊。
 
 ## <a name="return-value"></a>傳回值
  如果成功，則傳回`S_OK`; 否則傳回錯誤碼。

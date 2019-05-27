@@ -13,12 +13,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: d28126c84312c13b04de6739340d2cfb6337a066
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 28e86068b2255d1796363405c0231c1fb6bdd480
+ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62840536"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65226485"
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-vuejs-app"></a>快速入門：使用 Visual Studio 建立您的第一個 Vue.js 應用程式
 
@@ -59,12 +59,12 @@ ms.locfileid: "62840536"
 1. 建立新的專案。
 
     ::: moniker range=">=vs-2019"
-    按 **Esc** 關閉開始視窗。 鍵入 **Ctrl + Q** 來開啟搜尋方塊，再鍵入**基本 Vue.js**，然後選擇 [基本 Vue.js Web 應用程式] (JavaScript 或 TypeScript)。 在出現的對話方塊中選擇 [建立]。
+    按 **Esc** 關閉開始視窗。 鍵入 **Ctrl + Q** 來開啟搜尋方塊，再鍵入**基本 Vue.js**，然後選擇 [基本 Vue.js Web 應用程式] (JavaScript 或 TypeScript)。 在出現的對話方塊中，鍵入名稱 **basic-vuejs**，然後選擇 [建立]。
 
     ![Vue.js 範本](../javascript/media/vs-2019/vuejs-template.png)
     ::: moniker-end
     ::: moniker range="vs-2017"
-    從頂端功能表列中，選擇 [檔案] > [新增] > [專案]。 在 [新增專案] 對話方塊的左窗格中，展開 **JavaScript** 或 **TypeScript**，然後選擇 **Node.js**。 在中間窗格中，選擇 [基本 Vue.js Web 應用程式]，然後選擇 [確定]。
+    從頂端功能表列中，選擇 [檔案] > [新增] > [專案]。 在 [新增專案] 對話方塊的左窗格中，展開 **JavaScript** 或 **TypeScript**，然後選擇 **Node.js**。 在中間窗格中，選擇 [基本 Vue.js Web 應用程式]，鍵入名稱 **basic-vuejs**，然後選擇 [確定]。
 
     ![Vue.js 範本](../javascript/media/vuejs-template.png)
     ::: moniker-end

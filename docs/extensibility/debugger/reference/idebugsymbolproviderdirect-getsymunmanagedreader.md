@@ -14,12 +14,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 452866f885bb438589474bbb82e88e10300d988d
-ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
+ms.openlocfilehash: d73e04572a122c0bc6b3d3885b9806c54077fa83
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65224159"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66206937"
 ---
 # <a name="idebugsymbolproviderdirectgetsymunmanagedreader"></a>IDebugSymbolProviderDirect::GetSymUnmanagedReader
 擷取未受管理的程式碼的符號讀取器。
@@ -43,17 +43,14 @@ int GetSymUnmanagedReader (
 ```
 
 ## <a name="parameters"></a>參數
- `ulAppDomainID`\
+`ulAppDomainID`\
+[in]應用程式定義域的識別項。
 
- [in]應用程式定義域的識別項。
+`guidModule`\
+[in]模組的唯一識別碼。
 
- `guidModule`\
-
- [in]模組的唯一識別碼。
-
- `ppSymUnmanagedReader`\
-
- [out]傳回物件，表示 unmanaged 程式碼的符號讀取器。
+`ppSymUnmanagedReader`\
+[out]傳回物件，表示 unmanaged 程式碼的符號讀取器。
 
 ## <a name="return-value"></a>傳回值
  如果成功，則傳回`S_OK`; 否則傳回錯誤碼。

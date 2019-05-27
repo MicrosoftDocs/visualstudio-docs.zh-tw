@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 2ac7e834b948d663ea9b537b36720864f25fe94c
-ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
+ms.openlocfilehash: ff2e7583577f8626ed4cd1ad71e2c5a83d30eb00
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65225967"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66199588"
 ---
 # <a name="idebugthread2getthreadid"></a>IDebugThread2::GetThreadId
 取得系統執行緒識別碼。
@@ -41,8 +41,7 @@ int GetThreadId (
 
 ## <a name="parameters"></a>參數
 `pdwThreadId`\
-
- [out]傳回系統執行緒識別碼。
+[out]傳回系統執行緒識別碼。
 
 ## <a name="return-value"></a>傳回值
 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。

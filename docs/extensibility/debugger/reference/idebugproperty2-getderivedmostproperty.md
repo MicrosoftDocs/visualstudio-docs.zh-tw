@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: e4c109906ca586d58753c6471f20ed05adc08de4
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: 2cbb9d993b5149400fbb974373193c59041cf969
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65457751"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66211617"
 ---
 # <a name="idebugproperty2getderivedmostproperty"></a>IDebugProperty2::GetDerivedMostProperty
 取得屬性的最具衍生性屬性。
@@ -40,9 +40,8 @@ int GetDerivedMostProperty ( 
 ```
 
 ## <a name="parameters"></a>參數
- `ppDerivedMost`\
-
- [out]傳回[IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)物件，表示最具衍生性的屬性。
+`ppDerivedMost`\
+[out]傳回[IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)物件，表示最具衍生性的屬性。
 
 ## <a name="return-value"></a>傳回值
  如果成功，則傳回`S_OK`; 否則會傳回錯誤碼。 傳回`S_GETDERIVEDMOST_NO_DERIVED_MOST`若未最具衍生性的屬性來擷取。

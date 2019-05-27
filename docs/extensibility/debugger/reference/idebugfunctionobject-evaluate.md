@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9deaf32a88d476895feab006cbe3b818d11b97ca
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: d56d80a10967f2ed0da82ad79905914874e73df1
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62873942"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66200754"
 ---
 # <a name="idebugfunctionobjectevaluate"></a>IDebugFunctionObject::Evaluate
 呼叫函式，並傳回產生的值當做物件。
@@ -42,22 +45,18 @@ int Evaluate(
 );
 ```
 
-#### <a name="parameters"></a>參數
- `ppParams`
+## <a name="parameters"></a>參數
+`ppParams`\
+[in]陣列[IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)代表輸入的參數的物件。 每個參數經由之一`Create`中的方法[IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md)介面。
 
- [in]陣列[IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)代表輸入的參數的物件。 每個參數經由之一`Create`中的方法[IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md)介面。
+`dwParams`\
+[in]中的參數數目`ppParams`陣列。
 
- `dwParams`
+`dwTimeout`\
+[in]指定的時間上限，以毫秒為單位，從這個方法返回之前等候。 使用`INFINITE`無限期等候。
 
- [in]中的參數數目`ppParams`陣列。
-
- `dwTimeout`
-
- [in]指定的時間上限，以毫秒為單位，從這個方法返回之前等候。 使用`INFINITE`無限期等候。
-
- `ppResult`
-
- [out]傳回[IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)表示函式物件的值。
+`ppResult`\
+[out]傳回[IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)表示函式物件的值。
 
 ## <a name="return-value"></a>傳回值
  如果成功，會傳回 S_OK;否則，傳回錯誤碼。

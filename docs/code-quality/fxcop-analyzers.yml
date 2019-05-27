@@ -59,7 +59,7 @@ sections:
         columns: 2
         items:
           - href: 'roslyn-analyzers-overview.md#roslyn-analyzers-vs-static-code-analysis'
-            html: <p>了解靜態 (FxCop) 和分析器套件程式碼分析之間的差異。</p>
+            html: <p>了解靜態 (FxCop) 和分析程式碼分析之間的差異。</p>
             image:
               src: 'https://docs.microsoft.com/media/common/i_learn-about.svg'
             title: 有何不同？
@@ -68,6 +68,11 @@ sections:
             image:
               src: 'https://docs.microsoft.com/media/common/i_setup.svg'
             title: 安裝 FxCop 分析器
+          - href: fxcop-rule-port-status.md
+            html: <p>列出已移植到 FxCop 分析器的靜態程式碼分析 FxCop 規則。</p>
+            image:
+              src: 'https://docs.microsoft.com/media/common/i_upgrade.svg'
+            title: 移植和 unported license 規則
           - href: 'use-roslyn-analyzers.md#command-line-usage'
             html: <p>如果您通常會從命令列執行程式碼分析，了解如何使用從命令列分析器。</p>
             image:

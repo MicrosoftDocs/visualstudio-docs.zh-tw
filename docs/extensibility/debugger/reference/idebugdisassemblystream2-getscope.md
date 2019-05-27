@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 07d933562feb3a349fda8533d1d25cd46ec84b4d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 4a9da518d36c570bd53fa44118972366f9bf6ab4
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62875993"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66204948"
 ---
 # <a name="idebugdisassemblystream2getscope"></a>IDebugDisassemblyStream2::GetScope
 取得反組譯碼資料流的範圍。
@@ -36,10 +39,9 @@ int GetScope( 
 );
 ```
 
-#### <a name="parameters"></a>參數
- `pdwScope`
-
- [out]傳回值，以從[DISASSEMBLY_STREAM_SCOPE](../../../extensibility/debugger/reference/disassembly-stream-scope.md)列舉，描述這個反組譯碼資料流的範圍。
+## <a name="parameters"></a>參數
+`pdwScope`\
+[out]傳回值，以從[DISASSEMBLY_STREAM_SCOPE](../../../extensibility/debugger/reference/disassembly-stream-scope.md)列舉，描述這個反組譯碼資料流的範圍。
 
 ## <a name="return-value"></a>傳回值
  如果成功，則傳回`S_OK`; 否則傳回錯誤碼。

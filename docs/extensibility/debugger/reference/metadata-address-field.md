@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: d958c535cc93e140f61e6681130f16c8d49d8fc0
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: 3bce2917af3d6ee2090bd2006fe843f2bcc292da
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65458066"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66212827"
 ---
 # <a name="metadataaddressfield"></a>METADATA_ADDRESS_FIELD
 
@@ -43,7 +43,6 @@ public struct METADATA_ADDRESS_FIELD {
 ## <a name="members"></a>成員
 
 `tokField`\
-
 欄位 token 的識別碼。
 
 [C++]`_mdToken`是`typedef`適用於 32 位元`int`。

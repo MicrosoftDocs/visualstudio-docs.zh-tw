@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 310d2e3cd8c7f1caea4e245c7c591cd402afdaf4
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: ba8a7ab97c9b2fc405e10eb70246a049b4083993
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65458878"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66200210"
 ---
 # <a name="idebugproperty2setvalueasstring"></a>IDebugProperty2::SetValueAsString
 從指定的字串中設定屬性的值。
@@ -44,17 +44,14 @@ int SetValueAsString ( 
 ```
 
 ## <a name="parameters"></a>參數
- `pszValue`\
+`pszValue`\
+[in]字串，包含要設定的值。
 
- [in]字串，包含要設定的值。
+`nRadix`\
+[in]用於解譯任何數字資訊基數。 這可以是 0，以嘗試自動判斷基數。
 
- `nRadix`\
-
- [in]用於解譯任何數字資訊基數。 這可以是 0，以嘗試自動判斷基數。
-
- `dwTimeout`\
-
- [in]指定的時間上限，以毫秒為單位，從這個方法返回之前等候。 使用`INFINITE`無限期等候。
+`dwTimeout`\
+[in]指定的時間上限，以毫秒為單位，從這個方法返回之前等候。 使用`INFINITE`無限期等候。
 
 ## <a name="return-value"></a>傳回值
  如果成功，則傳回`S_OK`; 否則會傳回錯誤碼。 下表顯示其他可能的值。

@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e01e73b3f68247d3193d50acb87a96074f72ce3f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 8c6a683aacf0de18ee4ce0b00f5f12c2104ce333
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62869946"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66211114"
 ---
 # <a name="idebugprogramex2getprogramnode"></a>IDebugProgramEx2::GetProgramNode
 取得與程式相關聯的方案節點。
@@ -36,10 +39,9 @@ int GetProgramNode( 
 );
 ```
 
-#### <a name="parameters"></a>參數
- `ppProgramNode`
-
- [out]傳回[IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md)物件，表示與此方案相關聯的 [程式] 節點。
+## <a name="parameters"></a>參數
+`ppProgramNode`\
+[out]傳回[IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md)物件，表示與此方案相關聯的 [程式] 節點。
 
 ## <a name="return-value"></a>傳回值
  如果成功，則傳回`S_OK`; 否則傳回錯誤碼。

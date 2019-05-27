@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: fc32ea0d07779f82bb741b99632ec16a950e5da2
-ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
+ms.openlocfilehash: fe8f9dafa4543148ed373295f9c694e7678491a9
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65223969"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66207171"
 ---
 # <a name="idebugsymbolprovidergetnamespacesusedataddress"></a>IDebugSymbolProvider::GetNamespacesUsedAtAddress
 這個方法會建立偵錯位址相關聯的命名空間的列舉值。
@@ -42,13 +42,11 @@ int GetNamespacesUsedAtAddress(
 ```
 
 ## <a name="parameters"></a>參數
- `pAddress`\
+`pAddress`\
+[in]偵錯位址。
 
- [in]偵錯位址。
-
- `ppEnum`\
-
- [out]傳回[IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md)命名空間的列舉值。
+`ppEnum`\
+[out]傳回[IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md)命名空間的列舉值。
 
 ## <a name="return-value"></a>傳回值
  如果成功，則傳回`S_OK`; 否則傳回錯誤碼。

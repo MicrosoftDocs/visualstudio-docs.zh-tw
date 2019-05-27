@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 2a05a903578e49b1b8ffefe0b0bb13fb693c993c
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: 958b3571a5bfabbd609e3ca62bcdfe9b5a6171ca
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65458101"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66212847"
 ---
 # <a name="ipropertyproxyprovidergetpropertyproxy"></a>IPropertyProxyProvider::GetPropertyProxy
 擷取的屬性 proxy 介面做為指定之 proxy 識別碼。
@@ -42,13 +42,11 @@ int GetPropertyProxy(
 ```
 
 ## <a name="parameters"></a>參數
- `dwID`\
+`dwID`\
+[in]所需的屬性 proxy 的識別碼。
 
- [in]所需的屬性 proxy 的識別碼。
-
- `proxy`\
-
- [out]傳回[IPropertyProxyEESide](../../../extensibility/debugger/reference/ipropertyproxyeeside.md)物件。
+`proxy`\
+[out]傳回[IPropertyProxyEESide](../../../extensibility/debugger/reference/ipropertyproxyeeside.md)物件。
 
 ## <a name="return-value"></a>傳回值
  如果成功，則傳回`S_OK`; 否則傳回錯誤碼。

@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 12f8ad884045939c13f56e6a527643837be94d09
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: bf3f68ef2b6e8ed444f090bee9ac6918652b8b1c
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62871747"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66209095"
 ---
 # <a name="idebugportex2canterminateprocess"></a>IDebugPortEx2::CanTerminateProcess
 判斷是否可以終止處理程序。
@@ -36,10 +39,9 @@ HRESULT CanTerminateProcess( 
 );
 ```
 
-#### <a name="parameters"></a>參數
- `pPortProcess`
-
- [in][IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md)物件，表示終止程序。
+## <a name="parameters"></a>參數
+`pPortProcess`\
+[in][IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md)物件，表示終止程序。
 
 ## <a name="return-value"></a>傳回值
  會傳回`S_OK`可以結束處理序; 否則會傳回`S_FALSE`。

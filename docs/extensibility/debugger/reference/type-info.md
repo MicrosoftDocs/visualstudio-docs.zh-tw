@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: bbb64acfd71a6208fde3a5c3f84d6c5886ece72f
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: 9edb111c15c83fc6da8df2cea1eed96aed9252b0
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65460730"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66212693"
 ---
 # <a name="typeinfo"></a>TYPE_INFO
 此結構指定的各種欄位的類型的相關資訊。
@@ -51,15 +51,12 @@ public struct TYPE_INFO {
  值，以從[dwTYPE_KIND](../../../extensibility/debugger/reference/dwtype-kind.md)列舉，決定如何解譯聯集。
 
  `type.typeMeta`\
-
  [C++只]包含[METADATA_TYPE](../../../extensibility/debugger/reference/metadata-type.md)結構，如果`dwKind`是`TYPE_KIND_METADATA`。
 
  `type.typePdb`\
-
  [C++只]包含[PDB_TYPE](../../../extensibility/debugger/reference/pdb-type.md)結構，如果`dwKind`是`TYPE_KIND_PDB`。
 
  `type.typeBuilt`\
-
  [C++只]包含[BUILT_TYPE](../../../extensibility/debugger/reference/built-type.md)結構，如果`dwKind`是`TYPE_KIND_BUILT`。
 
  `type.unused`\
@@ -69,7 +66,6 @@ public struct TYPE_INFO {
  聯集的名稱。
 
  `unionmember`\
-
  [C#只]封送處理為適當的結構類型根據`dwKind`。
 
 ## <a name="remarks"></a>備註

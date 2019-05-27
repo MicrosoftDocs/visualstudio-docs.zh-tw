@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 226d584a2773a342b8247ff337e686be2da6bf9b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: b2463095269103bcc6d2387451b4474af70698d9
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62843031"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66202378"
 ---
 # <a name="idebugobject2createalias"></a>IDebugObject2::CreateAlias
 建立唯一的 「 識別碼 」 或 「 這個物件的別名，或傳回現有的別名。
@@ -36,10 +39,9 @@ int CreateAlias(
 );
 ```
 
-#### <a name="parameters"></a>參數
- `ppAlias`
-
- [out]新的 （或現有的） 的別名。
+## <a name="parameters"></a>參數
+`ppAlias`\
+[out]新的 （或現有的） 的別名。
 
 ## <a name="return-value"></a>傳回值
  如果成功，會傳回 S_OK;否則，傳回錯誤碼。

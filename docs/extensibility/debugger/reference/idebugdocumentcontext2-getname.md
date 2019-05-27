@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2c770c339399aaf01fee9598318c94266a391c55
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: ec18ff6e906dd62383a7ff72dbb4502c7f8ba301
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62921465"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66204652"
 ---
 # <a name="idebugdocumentcontext2getname"></a>IDebugDocumentContext2::GetName
 取得包含這個文件內容的文件可顯示名稱。
@@ -38,14 +41,12 @@ int GetName(
 );
 ```
 
-#### <a name="parameters"></a>參數
-`gnType`
+## <a name="parameters"></a>參數
+`gnType`\
+[in]值，以從[GETNAME_TYPE](../../../extensibility/debugger/reference/getname-type.md)列舉，指定要傳回名稱的類型。
 
- [in]值，以從[GETNAME_TYPE](../../../extensibility/debugger/reference/getname-type.md)列舉，指定要傳回名稱的類型。
-
-`pbstrFileName`
-
- [out]傳回檔案的名稱。
+`pbstrFileName`\
+[out]傳回檔案的名稱。
 
 ## <a name="return-value"></a>傳回值
 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。

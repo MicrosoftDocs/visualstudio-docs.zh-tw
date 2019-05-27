@@ -11,12 +11,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8a907d6460a9bf31e501ed4c2239cb31112a39f5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: d3afa7f2500d891de314df20fc0ed034c62dfe1a
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62876033"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66205239"
 ---
 # <a name="idebugcustomattributequeryiscustomattributedefined"></a>IDebugCustomAttributeQuery::IsCustomAttributeDefined
 判斷是否已定義指定之自訂屬性。
@@ -35,10 +38,9 @@ int IsCustomAttributeDefined(
 );
 ```
 
-#### <a name="parameters"></a>參數
-`pszCustomAttributeName`
-
- [in]自訂屬性的名稱。
+## <a name="parameters"></a>參數
+`pszCustomAttributeName`\
+[in]自訂屬性的名稱。
 
 ## <a name="return-value"></a>傳回值
 如果定義自訂屬性，則會傳回`S_OK`; 否則傳回`S_FALSE`。

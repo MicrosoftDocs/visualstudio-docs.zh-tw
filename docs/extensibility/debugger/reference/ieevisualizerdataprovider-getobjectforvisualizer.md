@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 08fd3c2d82e3e2bef3098770fdfbcf7cdfe95f7c
-ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
+ms.openlocfilehash: a7818e6f8d56faf0a242b8dddf68fe7bffa24d0a
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65224037"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66212986"
 ---
 # <a name="ieevisualizerdataprovidergetobjectforvisualizer"></a>IEEVisualizerDataProvider::GetObjectForVisualizer
 這個方法會取得這個視覺化檢視表示的物件。
@@ -40,9 +40,8 @@ int GetObjectForVisualizer(
 ```
 
 ## <a name="parameters"></a>參數
- `ppObject`\
-
- [out]這個視覺化檢視所要表示的物件
+`ppObject`\
+[out]這個視覺化檢視所要表示的物件
 
 ## <a name="return-value"></a>傳回值
  如果成功，則傳回`S_OK`; 否則傳回錯誤碼。
