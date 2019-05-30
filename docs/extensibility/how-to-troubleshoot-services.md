@@ -1,23 +1,23 @@
 ---
-title: HOW TO：針對服務進行疑難排解 |Microsoft Docs
+title: 作法：針對服務進行疑難排解 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - services, troubleshooting
 ms.assetid: 001551da-4847-4f59-a0b2-fcd327d7f5ca
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 681564b2148fb9554e80105c2e18b1d220bb37ea
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 669b8880e3fe378b05cc258bf473d74d0e5401b6
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62862837"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66324821"
 ---
-# <a name="how-to-troubleshoot-services"></a>HOW TO：針對服務進行疑難排解
+# <a name="how-to-troubleshoot-services"></a>作法：針對服務進行疑難排解
 有數個常見的問題，當您嘗試取得服務時，可能會發生：
 
 - 服務未向[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]。

@@ -8,20 +8,20 @@ helpviewer_keywords:
 - IDebugPendingBreakpoint2::GetBreakpointRequest method
 - GetBreakpointRequest method
 ms.assetid: cb1e36aa-4302-455c-98fb-6638a1ef5c46
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: c753df9d2acb24dbb0950158ebf2dd399b8d24a9
-ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.openlocfilehash: 37bc4fb6421aa0c04afcf91d690e354e368c4055
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/24/2019
-ms.locfileid: "66209568"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66347830"
 ---
 # <a name="idebugpendingbreakpoint2getbreakpointrequest"></a>IDebugPendingBreakpoint2::GetBreakpointRequest
 取得用來建立這個暫止中斷點的中斷點要求。

@@ -6,17 +6,17 @@ helpviewer_keywords:
 - Combos element (VSCT XML schema)
 - VSCT XML schema elements, Combos
 ms.assetid: 392e3063-f0a0-4130-9583-23bd2aa3fa36
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7cfce045531a871e4630a6175d2fc24f4a50ebd8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 9a97163f1f7dc2a1152bc22f4bc3a68ed32b3cfe
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62926614"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66334900"
 ---
 # <a name="combo-element"></a>Combo 元素
 定義會出現在下拉式方塊中的命令。 有四種下拉式方塊，如下所示：下拉式組合、 DynamicCombo、 IndexCombo 和 MRUCombo。

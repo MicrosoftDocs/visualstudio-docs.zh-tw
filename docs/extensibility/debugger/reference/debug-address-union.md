@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - DEBUG_ADDRESS_UNION union
 ms.assetid: e3d11aab-de0d-4109-b5dc-11e07e64382d
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: fddd1fdc0aef74f637c058cd440f6e8309fe3432
-ms.sourcegitcommit: 77b4ca625674658d5c5766e684fa0e2a07cad4da
+ms.openlocfilehash: 3dbd114fb06bfd688c720744dbbad69bd0dae6aa
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/14/2019
-ms.locfileid: "65615294"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66346276"
 ---
 # <a name="debugaddressunion"></a>DEBUG_ADDRESS_UNION
 說明不同類型的位址。

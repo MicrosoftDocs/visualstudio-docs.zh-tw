@@ -3,17 +3,17 @@ title: 在 Visual Studio 中的擴充性 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 81b0dbe6-ddf3-4899-b09c-a3837037231d
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 426ffcd5d764cf5141fede28ccee74326311a618
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 0267aab863ad653074a597fff513db36870a75c2
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62863099"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66342752"
 ---
 # <a name="extensibility-in-visual-studio"></a>Visual Studio 的擴充性
 Visual Studio 提供許多擴充性選項。 您可以建立您自己的 Sdk、 Windows、 Windows Phone 和 Azure Sdk （這會安裝為 Visual Studio 的一部分），使用和擴充 Visual Studio 本身。

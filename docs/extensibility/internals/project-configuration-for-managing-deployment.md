@@ -6,17 +6,17 @@ helpviewer_keywords:
 - project configurations, managing deployment
 - projects [Visual Studio SDK], configuration for managing deployment
 ms.assetid: bd5940d9-d94d-4944-beda-4ec1ab2bbde5
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6c9bf9dd71007e3a33a217a7ec30b357cd211b00
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f8dfaf2f802a0470270c7630ccee3a8be583b250
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62909347"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66328460"
 ---
 # <a name="project-configuration-for-managing-deployment"></a>管理部署的專案組態
 部署是指實際將從建置程序的輸出項目移至 偵錯和安裝的預期位置。 比方說，Web 應用程式可能會在本機電腦上建置，然後放在伺服器上。
