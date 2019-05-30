@@ -1,5 +1,5 @@
 ---
-title: 逐步解說：自訂實體類別的插入、更新和刪除行為
+title: 自訂實體類別的插入/更新/刪除行為
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: e869ae13c9d7ec82cb4d70fb5f3c5fce355691d5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 189516fe90863d80467dc3070dcc6b44a4a492a0
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62565403"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66262898"
 ---
 # <a name="walkthrough-customize-the-insert-update-and-delete-behavior-of-entity-classes"></a>逐步解說：自訂實體類別的插入、更新和刪除行為
 
@@ -79,13 +79,13 @@ ms.locfileid: "62565403"
 
 4. 將專案命名為**UpdatingWithSProcsWalkthrough**，然後選擇**確定**。
 
-     **UpdatingWithSProcsWalkthrough** 專案已建立並新增至 [方案總管] 中。
+     **UpdatingWithSProcsWalkthrough** 專案已建立並新增至 [方案總管]  中。
 
-4. 在 [專案]  功能表中，按一下 [加入新項目] 。
+4. 在 [專案]  功能表中，按一下 [加入新項目]  。
 
-5. 按一下 [LINQ to SQL 類別] 範本，並在 [名稱] 方塊中鍵入 **Northwind.dbml**。
+5. 按一下 [LINQ to SQL 類別]  範本，並在 [名稱]  方塊中鍵入 **Northwind.dbml**。
 
-6. 按一下 [加入] 。
+6. 按一下 [加入]  。
 
      空的 LINQ to SQL 類別檔案 (**Northwind.dbml**) 會加入至專案，而**O/R Designer**隨即開啟。
 
@@ -102,21 +102,21 @@ ms.locfileid: "62565403"
      會建立名為 **Customer** 的實體類別。 它的屬性會對應至 Customers 資料表中的各資料行。 因為這個實體類別代表 Customers 資料表中的單一客戶，所以其名稱為 **Customer** (而非 **Customers**)。
 
     > [!NOTE]
-    > 此重新命名的行為稱為「複數表示」。 它可以開啟或關閉在中開啟[[選項] 對話方塊](../ide/reference/options-dialog-box-visual-studio.md)。 如需詳細資訊，請參閱[如何：開啟和關閉複數表示 (O/R 設計工具)](../data-tools/how-to-turn-pluralization-on-and-off-o-r-designer.md)。
+    > 此重新命名的行為稱為「複數表示」  。 它可以開啟或關閉在中開啟[[選項] 對話方塊](../ide/reference/options-dialog-box-visual-studio.md)。 如需詳細資訊，請參閱[如何：開啟和關閉複數表示 (O/R 設計工具)](../data-tools/how-to-turn-pluralization-on-and-off-o-r-designer.md)。
 
-3. 按一下 [建置] 功能表上的 [建置 UpdatingwithSProcsWalkthrough] 以建置專案。
+3. 按一下 [建置]  功能表上的 [建置 UpdatingwithSProcsWalkthrough]  以建置專案。
 
 4. 若要開啟 **資料來源** 視窗，請在**資料**功能表上，按一下 **顯示資料來源**。
 
 5. 在 [ **資料來源** ] 視窗中，按一下 [ **加入新資料來源**]。
 
-6. 按一下 [選擇資料來源類型] 頁面上的 [物件]，然後按一下 [下一步]。
+6. 按一下 [選擇資料來源類型]  頁面上的 [物件]  ，然後按一下 [下一步]  。
 
-7. 展開 [UpdatingwithSProcsWalkthrough] 節點，然後尋找並選取 [Customer] 類別。
+7. 展開 [UpdatingwithSProcsWalkthrough]  節點，然後尋找並選取 [Customer]  類別。
 
     > [!NOTE]
     > 如果**客戶**類別無法使用，請取消精靈、建置專案，然後再次執行精靈。
-8. 按一下 [完成] 以建立資料來源，然後將 [客戶] 實體類別新增至 [資料來源] 視窗。
+8. 按一下 [完成]  以建立資料來源，然後將 [客戶]  實體類別新增至 [資料來源]  視窗。
 
 ## <a name="create-a-datagridview-to-display-the-customer-data-on-a-windows-form"></a>建立 DataGridView 以便在 Windows Form 上顯示的客戶資料
 
@@ -124,14 +124,14 @@ ms.locfileid: "62565403"
 
 ### <a name="to-add-controls-that-are-bound-to-the-entity-classes"></a>若要加入繫結至實體類別的控制項
 
-1. 在設計檢視中開啟 [Form1]。
+1. 在設計檢視中開啟 [Form1]  。
 
-2. 將 [Customer] 節點從 [資料來源] 視窗拖曳至 [Form1]。
+2. 將 [Customer]  節點從 [資料來源]  視窗拖曳至 [Form1]  。
 
     > [!NOTE]
-    > 若要顯示 [資料來源] 視窗，請按一下 [資料] 功能表上的 [顯示資料來源]。
+    > 若要顯示 [資料來源]  視窗，請按一下 [資料]  功能表上的 [顯示資料來源]  。
 
-3. 在 [程式碼編輯器] 中開啟 [Form1]。
+3. 在 [程式碼編輯器] 中開啟 [Form1]  。
 
 4. 將下列程式碼加入至表單，通用的表單中，任何特定的方法之外，但內部`Form1`類別：
 
@@ -161,11 +161,11 @@ ms.locfileid: "62565403"
 
 ### <a name="to-implement-save-functionality"></a>若要實作儲存功能
 
-1. 在設計檢視中開啟 [Form1]。
+1. 在設計檢視中開啟 [Form1]  。
 
 2. 選取 **CustomerBindingNavigator** 上的儲存按鈕 (具有磁碟片圖示的按鈕)。
 
-3. 在 [屬性] 視窗中，將 [Enabled] 屬性設定為 [True]。
+3. 在 [屬性]  視窗中，將 [Enabled]  屬性設定為 [True]  。
 
 4. 按兩下儲存按鈕以建立事件處理常式，並切換至 [色彩編輯器]。
 
@@ -183,9 +183,9 @@ ms.locfileid: "62565403"
 
 ### <a name="to-override-the-default-update-behavior"></a>若要覆寫預設更新行為
 
-1. 開啟 LINQ to SQL 中的檔案**O/R Designer**。 (按兩下 [方案總管] 中的 **Northwind.dbml** 檔案。)
+1. 開啟 LINQ to SQL 中的檔案**O/R Designer**。 (按兩下 [方案總管]  中的 **Northwind.dbml** 檔案。)
 
-2. 在 [伺服器總管] 或 [資料庫總管] 中展開 Northwind 資料庫的 [預存程序] 節點，找到 **InsertCustomers**、**UpdateCustomers** 和 **DeleteCustomers** 預存程序。
+2. 在 [伺服器總管]  或 [資料庫總管]  中展開 Northwind 資料庫的 [預存程序]  節點，找到 **InsertCustomers**、**UpdateCustomers** 和 **DeleteCustomers** 預存程序。
 
 3. 將所有三個預存程序拖曳至**O/R Designer**。
 
@@ -193,43 +193,43 @@ ms.locfileid: "62565403"
 
 4. 選取 **客戶**中的實體類別**O/R Designer**。
 
-5. 選取 [屬性] 視窗中的 [Insert] 屬性。
+5. 選取 [屬性]  視窗中的 [Insert]  屬性。
 
-6. 按一下 [使用執行階段] 旁邊的省略符號 (**...**)，以開啟 [設定行為] 對話方塊。
+6. 按一下 [使用執行階段]  旁邊的省略符號 ( **...** )，以開啟 [設定行為]  對話方塊。
 
-7. 選取 [自訂]。
+7. 選取 [自訂]  。
 
-8. 選取 [自訂] 清單中的 [InsertCustomers] 方法。
+8. 選取 [自訂]  清單中的 [InsertCustomers]  方法。
 
-9. 按一下 [套用] 儲存所選取類別和行為的設定。
-
-    > [!NOTE]
-    > 完成每一項變更後按一下 [套用]，即可繼續設定每個類別/行為組合的行為。 如果您變更了類別或行為再按一下 **套用**、 提供讓您套用任何變更會出現警告對話方塊。
-
-10. 選取 [行為] 清單中的 [更新]。
-
-11. 選取 [自訂]。
-
-12. 選取 [自訂] 清單中的 [UpdateCustomers] 方法。
-
-     檢查 [方法引數] 和 [類別屬性] 清單會發現資料表的某些資料行會有兩個 [方法引數] 和兩個 [類別屬性]。 這樣可以更容易追蹤變更，並建立陳述式來檢查並行違規。
-
-13. 將 [Original_CustomerID] 方法引數對應至 [CustomerID (Original)] 類別屬性。
+9. 按一下 [套用]  儲存所選取類別和行為的設定。
 
     > [!NOTE]
-    > 根據預設，方法引數會對應至同名的類別屬性。 如果屬性名稱變更，使得資料表與實體類別之間不再對應，則您可能需要選取當 **O/R 設計工具**無法判斷正確的對應時，所要對應的對等類別屬性。 此外，如果方法引數沒有可對應的有效類別屬性，可以將 [類別屬性] 值設定為 [(無)]。
+    > 完成每一項變更後按一下 [套用]  ，即可繼續設定每個類別/行為組合的行為。 如果您變更了類別或行為再按一下 **套用**、 提供讓您套用任何變更會出現警告對話方塊。
 
-14. 按一下 [套用] 儲存所選類別和行為的設定。
+10. 選取 [行為]  清單中的 [更新]  。
 
-15. 選取 [行為] 清單中的 [刪除]。
+11. 選取 [自訂]  。
 
-16. 選取 [自訂]。
+12. 選取 [自訂]  清單中的 [UpdateCustomers]  方法。
 
-17. 選取 [自訂] 清單中的 [DeleteCustomers] 方法。
+     檢查 [方法引數]  和 [類別屬性]  清單會發現資料表的某些資料行會有兩個 [方法引數]  和兩個 [類別屬性]  。 這樣可以更容易追蹤變更，並建立陳述式來檢查並行違規。
 
-18. 將 [Original_CustomerID] 方法引數對應至 [CustomerID (Original)] 類別屬性。
+13. 將 [Original_CustomerID]  方法引數對應至 [CustomerID (Original)]  類別屬性。
 
-19. 按一下 [確定] 。
+    > [!NOTE]
+    > 根據預設，方法引數會對應至同名的類別屬性。 如果屬性名稱變更，使得資料表與實體類別之間不再對應，則您可能需要選取當 **O/R 設計工具**無法判斷正確的對應時，所要對應的對等類別屬性。 此外，如果方法引數沒有可對應的有效類別屬性，可以將 [類別屬性]  值設定為 [(無)]  。
+
+14. 按一下 [套用]  儲存所選類別和行為的設定。
+
+15. 選取 [行為]  清單中的 [刪除]  。
+
+16. 選取 [自訂]  。
+
+17. 選取 [自訂]  清單中的 [DeleteCustomers]  方法。
+
+18. 將 [Original_CustomerID]  方法引數對應至 [CustomerID (Original)]  類別屬性。
+
+19. 按一下 [確定]  。
 
 > [!NOTE]
 > 雖然它不是本特定逐步解說的問題，值得注意的是，LINQ to SQL 會在插入期間處理資料庫產生的值，會自動針對識別 （自動遞增）、 rowguidcol (資料庫產生的 GUID) 和時間戳記資料行和更新。 其他資料行型別的資料庫產生值將非預期地產生 null 值。 若要傳回資料庫產生的值，您應該手動設定<xref:System.Data.Linq.Mapping.ColumnAttribute.IsDbGenerated%2A>要`true`和<xref:System.Data.Linq.Mapping.ColumnAttribute.AutoSync%2A>至下列其中之一：[AutoSync.Always](<xref:System.Data.Linq.Mapping.AutoSync.Always>)， [AutoSync.OnInsert](<xref:System.Data.Linq.Mapping.AutoSync.OnInsert>)，或[AutoSync.OnUpdate](<xref:System.Data.Linq.Mapping.AutoSync.OnUpdate>)。
@@ -259,7 +259,7 @@ ms.locfileid: "62565403"
 10. 按 **F5** 並確認已從資料庫中移除刪除的記錄。
 
     > [!NOTE]
-    > 如果應用程式使用 SQL Server Express Edition，則根據資料庫檔案 [複製到輸出目錄] 屬性值的不同，在步驟 10 按 **F5** 時，變更可能不會出現。
+    > 如果應用程式使用 SQL Server Express Edition，則根據資料庫檔案 [複製到輸出目錄]  屬性值的不同，在步驟 10 按 **F5** 時，變更可能不會出現。
 
 ## <a name="next-steps"></a>後續步驟
 

@@ -3,20 +3,20 @@ title: 逐步解說：使用 SDK 建立C#或 Visual Basic |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: ef96a249-5eef-402a-a8d5-d74cb49239bd
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CSharp
 - VB
-ms.openlocfilehash: 007da4e5e534ce6f9d8563011c0284432e4d9c19
-ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
+ms.openlocfilehash: 6bb9ae53dfb2e849c35c05fe5187cddcf301622c
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65226118"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66312646"
 ---
 # <a name="walkthrough-create-an-sdk-using-c-or-visual-basic"></a>逐步解說：使用 SDK 建立C#或 Visual Basic
 在本逐步解說中，您將了解如何使用 Visual C# 來建立簡單的數學程式庫 SDK，然後再封裝 SDK 作為 Visual Studio 擴充功能 (VSIX)。 您會完成下列程序：
@@ -31,7 +31,7 @@ ms.locfileid: "65226118"
 
 ## <a name="createClassLibrary"></a> 若要建立 SimpleMath Windows 執行階段元件
 
-1. 在功能表列上，選擇 [檔案] > [新增] > [專案]。
+1. 在功能表列上，選擇 [檔案]   > [新增]   > [專案]  。
 
 2. 在範本清單中，依序展開**Visual C#** 或**Visual Basic**，選擇  **Windows 市集** 節點，然後選擇  **Windows 執行階段元件**範本。
 
@@ -67,7 +67,7 @@ ms.locfileid: "65226118"
 
 4. 在 **方案總管**，選擇**source.extension.vsixmanifest**項目。
 
-5. 在功能表列上依序選擇 [檢視] > [程式碼]。
+5. 在功能表列上依序選擇 [檢視]   > [程式碼]  。
 
 6. 以下列 XML 取代現有的 XML:
 
@@ -75,7 +75,7 @@ ms.locfileid: "65226118"
 
 7. 在 **方案總管**，選擇**SimpleMathVSIX**專案。
 
-8. 在功能表列中，選擇 [專案] > [加入新項目]。
+8. 在功能表列中，選擇 [專案]   > [加入新項目]  。
 
 9. 在這份**常見的項目**，展開**資料**，，然後選擇  **XML 檔案**。
 
@@ -156,7 +156,7 @@ ms.locfileid: "65226118"
 
 ## <a name="createSample"></a> 若要建立範例應用程式使用的類別庫
 
-1. 在功能表列上，選擇 [檔案] > [新增] > [專案]。
+1. 在功能表列上，選擇 [檔案]   > [新增]   > [專案]  。
 
 2. 在範本清單中，依序展開**Visual C#** 或是**Visual Basic**，然後選擇  **Windows 市集**節點。
 

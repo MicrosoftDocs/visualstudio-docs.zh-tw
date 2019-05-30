@@ -1,29 +1,29 @@
 ---
-title: HOW TO：使用內建可設定色彩的項目 |Microsoft Docs
+title: 作法：使用內建可設定色彩的項目 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - colorable items
 - language services, built-in colorable items
 ms.assetid: 5e5f3436-6bad-4fd2-8823-6a30353ba648
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8d8994270ece639cc7d22a27af6339d525ff3618
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: ae1c327c14ed2b349ee02566c5cdfd38b9a07859
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63420514"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66311970"
 ---
-# <a name="how-to-use-built-in-colorable-items"></a>HOW TO：使用內建可設定色彩的項目
+# <a name="how-to-use-built-in-colorable-items"></a>作法：使用內建可設定色彩的項目
 使用內建可設定色彩的項目之前，您必須先通知整合式的開發環境 (IDE)，您不會提供您自己自訂色彩項目，在此情況下會<xref:Microsoft.VisualStudio.TextManager.Interop.IVsProvideColorableItems>物件。 您可以設定語言服務的登錄項目。
 
 ## <a name="to-use-built-in-colorable-items"></a>若要使用內建可設定色彩的項目
 
-1. 底下**HKEY_LOCAL_MACHINE\VisualStudio\\< X.Y > \Languages\Language Services\\< 語言名稱\>**，其中\<X.Y > 版本[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]和\<語言名稱 > 是名稱的語言，建立 DWORD 登錄項目值呼叫**RequestStockColors**。
+1. 底下**HKEY_LOCAL_MACHINE\VisualStudio\\< X.Y > \Languages\Language Services\\< 語言名稱\>** ，其中\<X.Y > 版本[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]和\<語言名稱 > 是名稱的語言，建立 DWORD 登錄項目值呼叫**RequestStockColors**。
 
 2. 設定**RequestStockColors**登錄項目值要*1*。
 

@@ -6,17 +6,17 @@ helpviewer_keywords:
 - colorable items
 - language services, custom colorable items
 ms.assetid: b4d0ddee-c04b-48dc-ba82-f6068570cef0
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 35a3b7a82431354345c7a7b583b35891657350f3
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: fd1d18a6fe142a3b405742dd9e74c1376e713687
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63415177"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66312908"
 ---
 # <a name="custom-colorable-items"></a>自訂色彩的項目
 您可以覆寫型別的清單標示色彩，例如關鍵字和註解，以及在您的語言服務中實作自訂色彩的項目。

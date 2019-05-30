@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - tool windows, adding search
 ms.assetid: f78c4892-8060-49c4-8ecd-4360f1b4d133
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e1d424b7af82a423b4d227b77cd77a63eba2559c
-ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
-ms.translationtype: HT
+ms.openlocfilehash: 6ab733e42e883816e5f9a6e8fb513bfd6267a9b5
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66261311"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66309906"
 ---
 # <a name="add-search-to-a-tool-window"></a>將搜尋新增至 工具視窗
 當您建立或更新您的延伸模組中的工具視窗時，您可以在 Visual Studio 中新增其他地方出現的相同搜尋功能。 這項功能包含下列功能：

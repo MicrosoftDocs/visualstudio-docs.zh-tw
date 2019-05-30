@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - statement completion
 ms.assetid: f3152c4e-7673-4047-a079-2326941d1c83
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d4529fa9cd52c1e9e54049386d39e85ea8efcbe5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f117209c8e1d57c64ab53df608fe55ae27f0cff0
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62965189"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66312400"
 ---
 # <a name="walkthrough-display-statement-completion"></a>逐步解說：顯示陳述式完成
 您可以定義您要提供完成的識別碼，並接著觸發完成工作階段，以實作語言為基礎的陳述式完成。 您可以定義的語言服務內容中的陳述式完成、 定義您自己的副檔名和內容類型，然後顯示該型別的完成。 或者，您可以觸發完成針對現有的內容類型 — 比方說，「 純文字 」。 本逐步解說示範如何觸發 「 純文字 」 內容類型，也就是文字檔案的內容類型的陳述式完成。 「 文字 」 內容類型是所有其他內容類型，包括程式碼和 XML 檔案的上階。

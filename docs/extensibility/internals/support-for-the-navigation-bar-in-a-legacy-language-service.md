@@ -6,17 +6,17 @@ helpviewer_keywords:
 - Navigation bar, supporting in language services [managed package framework]
 - language services [managed package framework], Navigation bar
 ms.assetid: 2d301ee6-4523-4b82-aedb-be43f352978e
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: eccbf178b3515cd23695d899749beb478e942ff7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: cccfd98bdd126c69baeddaf5151c7ece3f6ec331
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62858122"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66309774"
 ---
 # <a name="support-for-the-navigation-bar-in-a-legacy-language-service"></a>舊版語言服務中對巡覽列的支援
 導覽列頂端的 [編輯器] 檢視會顯示檔案中的類型和成員。 左側下拉式清單中，會顯示類型和成員會顯示在右側下拉式清單。 當使用者選取的型別時，插入號會放在類型的第一行中。 當使用者選取的成員時，則會將插入號放在成員的定義。 下拉式清單方塊會更新以反映目前的插入號位置。
