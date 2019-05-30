@@ -1,23 +1,23 @@
 ---
-title: HOW TO：登錄編輯程式檔案類型 |Microsoft Docs
+title: 作法：登錄編輯程式檔案類型 |Microsoft Docs
 ms.date: 03/22/2018
 ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - register file types
 ms.assetid: 54846779-8290-48de-90ab-81011559d9a5
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8f4aad26418c61ea450d697e294203b7f844577f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b40bdb51a1238bc87ca19ab4896396fe26f7d766
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62862923"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66340771"
 ---
-# <a name="how-to-register-editor-file-types"></a>HOW TO：登錄編輯程式檔案類型
+# <a name="how-to-register-editor-file-types"></a>作法：登錄編輯程式檔案類型
 登錄編輯程式檔案類型的最簡單方式是使用隨附的登錄屬性[!INCLUDE[vsipsdk](../extensibility/includes/vsipsdk_md.md)]managed 封裝架構 (MPF) 類別。 如果您要實作您的套件，以原生[!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)]，您也可以撰寫會註冊您的編輯器和相關聯的延伸模組的登錄指令碼。
 
 ## <a name="registration-using-mpf-classes"></a>註冊使用 MPF 類別

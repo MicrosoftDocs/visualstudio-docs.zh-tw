@@ -5,19 +5,19 @@ ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - standard text markers
 ms.assetid: a39fca69-0014-474c-933f-51f0e9b9617e
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 53aece13887fc727e7b0b1497f9546ee7a2fe63b
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 91e49b8f2b0cdccbf4c6acfab0c8b68b0f3ad1a5
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63415500"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66340961"
 ---
-# <a name="how-to-add-standard-text-markers"></a>HOW TO：新增標準文字標記
+# <a name="how-to-add-standard-text-markers"></a>作法：新增標準文字標記
 使用下列程序建立隨附的預設文字標記類型的其中一個[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]核心編輯器。
 
 ## <a name="to-create-a-text-marker"></a>若要建立文字標記
