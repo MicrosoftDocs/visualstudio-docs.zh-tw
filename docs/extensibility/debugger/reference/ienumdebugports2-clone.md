@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IEnumDebugPorts2::Clone
 ms.assetid: d5ce77e8-bb99-409a-98fa-20fe5a0de25e
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 832d78812916f86f9d8bb5a9a4bb0e0db8efddd5
-ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.openlocfilehash: 66466e474912aa2f897a43dca72cf1dc2c7faa8e
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/24/2019
-ms.locfileid: "66203466"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66339451"
 ---
 # <a name="ienumdebugports2clone"></a>IEnumDebugPorts2::Clone
 傳回一份目前的列舉，為個別的物件。

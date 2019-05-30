@@ -7,17 +7,17 @@ f1_keywords:
 helpviewer_keywords:
 - IEnumDebugProcesses2
 ms.assetid: 06a1368f-10f0-44eb-af61-e388c2327111
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: cad26ea3c510a3aceb769da85e49b14919374ebc
-ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
+ms.openlocfilehash: 0b32d2469c42931fa3dead4c5078e7d5b44b5d60
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65225583"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66334927"
 ---
 # <a name="ienumdebugprocesses2"></a>IEnumDebugProcesses2
 這個介面會列舉在偵錯連接埠上執行的處理程序。

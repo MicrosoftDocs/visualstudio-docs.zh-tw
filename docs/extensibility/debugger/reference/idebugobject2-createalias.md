@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugObject2::CreateAlias method
 ms.assetid: 54a05920-5d13-4f67-962b-d1a7f013dff9
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: b2463095269103bcc6d2387451b4474af70698d9
-ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.openlocfilehash: efab749b7850cc3c7e3a29a62240ce9502f99843
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/24/2019
-ms.locfileid: "66202378"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66317403"
 ---
 # <a name="idebugobject2createalias"></a>IDebugObject2::CreateAlias
 建立唯一的 「 識別碼 」 或 「 這個物件的別名，或傳回現有的別名。

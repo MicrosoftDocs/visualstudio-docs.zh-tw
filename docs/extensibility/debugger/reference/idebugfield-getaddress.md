@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugField::GetAddress method
 ms.assetid: 6981bf03-66ef-4bf9-87ea-f6c9624486cb
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: e44e23dc1573a0eb57be0da7272e185b66576873
-ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.openlocfilehash: d0524121d17158471b3e5aa81945a8e11db5ec58
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/24/2019
-ms.locfileid: "66212324"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66352643"
 ---
 # <a name="idebugfieldgetaddress"></a>IDebugField::GetAddress
 這個方法會取得欄位的偵錯位址。

@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - outlining
 ms.assetid: d75a44aa-265a-44d4-9c28-457f59c4ff9f
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 908b2f2b7a0dc055065abd96df3eb4495ad30ce8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: df269c3018d850ed2d5ae7435b82eb4f3aee4e1a
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62965050"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66320615"
 ---
 # <a name="walkthrough-outlining"></a>逐步解說：大綱
 設定語言為基礎的功能，例如藉由定義的類型，您想要展開或摺疊的文字區域的大綱。 您可以定義區域中的內容語言服務，或定義您自己的檔案名稱副檔名和內容類型和區定義套用至該類型，或套用至現有的內容類型 （例如 「 文字 」） 的區域定義。 本逐步解說示範如何定義及顯示大綱區域。
@@ -34,9 +34,9 @@ ms.locfileid: "62965050"
 3. 刪除現有類別檔案。
 
 ## <a name="implement-an-outlining-tagger"></a>實作大綱的標記者
- 一種標記標示大綱區域 (<xref:Microsoft.VisualStudio.Text.Tagging.OutliningRegionTag>)。 此標記會提供標準大綱行為。 可以展開或摺疊的外框的區域。 標示外框的區域將以加號 (**+**) 如果已摺疊或減號 (**-**) 如果已展開，並展開的區域由一條垂直線 demarcated。
+ 一種標記標示大綱區域 (<xref:Microsoft.VisualStudio.Text.Tagging.OutliningRegionTag>)。 此標記會提供標準大綱行為。 可以展開或摺疊的外框的區域。 標示外框的區域將以加號 ( **+** ) 如果已摺疊或減號 ( **-** ) 如果已展開，並展開的區域由一條垂直線 demarcated。
 
- 下列步驟示範如何定義會建立以括弧分隔的所有區域的大綱區域的標記者 (**[**，**]**)。
+ 下列步驟示範如何定義會建立以括弧分隔的所有區域的大綱區域的標記者 ( **[** ， **]** )。
 
 ### <a name="to-implement-an-outlining-tagger"></a>若要實作大綱的標記者
 
@@ -129,7 +129,7 @@ ms.locfileid: "62965050"
     ]
     ```
 
-4. 應該包含這兩個方括號的大綱區域。 您應該能夠按一下減號左邊的左括號來摺疊大綱區域。 當區域已摺疊，省略符號 (*...*) 應該已摺疊的區域，並包含文字的快顯視窗的左邊會出現**暫留文字**當您移動滑鼠指標的省略符號時，應該會出現。
+4. 應該包含這兩個方括號的大綱區域。 您應該能夠按一下減號左邊的左括號來摺疊大綱區域。 當區域已摺疊，省略符號 ( *...* ) 應該已摺疊的區域，並包含文字的快顯視窗的左邊會出現**暫留文字**當您移動滑鼠指標的省略符號時，應該會出現。
 
 ## <a name="see-also"></a>另請參閱
 - [逐步解說：將內容類型連結至副檔名](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)

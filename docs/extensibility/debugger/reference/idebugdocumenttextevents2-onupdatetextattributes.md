@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugDocumentTextEvents2::onUpdateTextAttributes
 ms.assetid: eb68d69a-1ad9-4ce4-84e1-40979ef16634
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 4991b637fbc6720580856c9120a1c1d68a9769df
-ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.openlocfilehash: 3a1eb8d6d9f14fcad5358b4a358673e08f3395ff
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/24/2019
-ms.locfileid: "66207852"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66351360"
 ---
 # <a name="idebugdocumenttextevents2onupdatetextattributes"></a>IDebugDocumentTextEvents2::onUpdateTextAttributes
 文件中，已更新文字屬性會告知偵錯封裝。

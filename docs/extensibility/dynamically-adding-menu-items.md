@@ -7,20 +7,20 @@ helpviewer_keywords:
 - menu items, adding dynamically
 - menus, adding dynamic items
 ms.assetid: d281e9c9-b289-4d64-8d0a-094bac6c333c
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 18c2100341a62abd0f8f12bd4b459c7e271a15bc
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 619c06d23e3bc1abfce1473627fb483612766728
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62912516"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66353393"
 ---
 # <a name="dynamically-add-menu-items"></a>以動態方式加入功能表項目
-您可以在執行階段加入功能表項目，藉由指定`DynamicItemStart`命令在 Visual Studio 命令表中的預留位置按鈕定義的旗標 (*.vsct*) 檔案，則定義 （在程式碼） 來顯示的功能表項目數目和處理命令。 當載入 VSPackage 時，動態功能表項目會取代預留位置。
+您可以在執行階段加入功能表項目，藉由指定`DynamicItemStart`命令在 Visual Studio 命令表中的預留位置按鈕定義的旗標 ( *.vsct*) 檔案，則定義 （在程式碼） 來顯示的功能表項目數目和處理命令。 當載入 VSPackage 時，動態功能表項目會取代預留位置。
 
  Visual Studio 會使用中的動態清單**最近使用**(MRU) 清單，會顯示最近開啟的文件的名稱，而**Windows**清單中顯示的 windows 名稱目前已開啟。   `DynamicItemStart`命令定義的旗標會指定當命令開啟 VSPackage 時才會是一個預留位置。 當開啟 VSPackage 時，將會取代預留位置 0 或更多命令，都會在執行階段建立並新增至動態清單。 您可能無法開啟 VSPackage 時才動態清單隨即出現的功能表上看到的位置。  若要填入動態清單，Visual Studio 會詢問要尋找其第一個字元是預留位置的 ID 相同識別碼的命令的 VSPackage。 當 Visual Studio 找到相符的命令時，它會將命令的名稱加入至動態清單中。 然後它會遞增的識別碼，並尋找另一個相符的命令，以加入動態的清單，直到沒有其他動態命令。
 

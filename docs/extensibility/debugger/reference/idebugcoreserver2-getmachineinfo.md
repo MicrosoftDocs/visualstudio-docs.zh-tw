@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugCoreServer2::GetInfo
 ms.assetid: 8fa1a1d3-9fcb-4fb3-bf4e-e7172ac08d77
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: aa93ab76f8d4a7b5be56e49f3c226a1c8576d6dd
-ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.openlocfilehash: a80ee7bfa6e9e17135683fede9de24f110b7ca6c
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/24/2019
-ms.locfileid: "66205716"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66317891"
 ---
 # <a name="idebugcoreserver2getmachineinfo"></a>IDebugCoreServer2::GetMachineInfo
 擷取的機器執行的核心伺服器的描述。

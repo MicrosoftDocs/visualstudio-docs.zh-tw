@@ -7,17 +7,17 @@ f1_keywords:
 helpviewer_keywords:
 - SccHistory function
 ms.assetid: a636d9d3-47c1-4b48-ac6b-bcfde19d6cf9
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d84de96181018858515bd74156f844ed6022f0a9
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: bad55b0fce5f4bec27ec707a4f9578c627a07363
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63434618"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66353608"
 ---
 # <a name="scchistory-function"></a>SccHistory 函式
 此函式會顯示指定的檔案歷程記錄。

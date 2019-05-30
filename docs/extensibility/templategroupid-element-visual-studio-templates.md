@@ -9,17 +9,17 @@ helpviewer_keywords:
 - TemplateGroupID element [Visual Studio Templates]
 - <TemplateGroupID> element [Visual Studio Templates]
 ms.assetid: bce7b49a-90bc-4691-aff3-a87e209f6d83
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f9219b764125727509807cc6f2b9fdf6400e97f2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 4b4e0ccae38b79cf8efb4b7b426fb65ae909c5d5
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62432144"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66316597"
 ---
 # <a name="templategroupid-element-visual-studio-templates"></a>TemplateGroupID 項目 (Visual Studio 範本)
 指定要顯示哪一種專案項目範本。 這個項目時，重要[ShowByDefault （Visual Studio 範本）](../extensibility/showbydefault-visual-studio-templates.md)設定為`false`。 當[ShowByDefault （Visual Studio 範本）](../extensibility/showbydefault-visual-studio-templates.md)設定為`true`，則項目範本會提供在所有專案類型。
@@ -55,7 +55,7 @@ ms.locfileid: "62432144"
 ## <a name="remarks"></a>備註
  `TemplateGroupID` 是元素。
 
- 值`TemplateGroupID`項目搭配專案系統登錄 (hkey_local_machine\software\microsoft\visualstudio\\*\<版本號碼>* \Projects\\)會出現在篩選器範本 **加入新項目** 對話方塊。
+ 值`TemplateGroupID`項目搭配專案系統登錄 (hkey_local_machine\software\microsoft\visualstudio\\ *\<版本號碼>* \Projects\\)會出現在篩選器範本 **加入新項目** 對話方塊。
 
 |Visual C++ 值|意義|
 |------------------------|-------------|

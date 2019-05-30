@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - BP_REQUEST_INFO2 structure
 ms.assetid: 008c87f7-a76e-43d3-8904-11b225d6a9a5
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 81028ef1d4096a9aa434f6a402ee57124100bf9c
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 8f9c601cf1620d002bd86b8bc110d28bdb533e61
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56695345"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66352953"
 ---
 # <a name="bprequestinfo2"></a>BP_REQUEST_INFO2
 包含實作中斷點的行，包括廠商 GUID、 條件約束和追蹤點所需的資訊。
@@ -61,31 +64,44 @@ public struct BP_REQUEST_INFO2 {
 ```
 
 ## <a name="members"></a>成員
-`dwFields` 從旗標的組合[BPREQI_FIELDS](../../../extensibility/debugger/reference/bpreqi-fields.md)列舉，指定哪些欄位都已填寫。
+`dwFields`\
+從旗標的組合[BPREQI_FIELDS](../../../extensibility/debugger/reference/bpreqi-fields.md)列舉，指定哪些欄位都已填寫。
 
-`guidLanguage` 語言 GUID。
+`guidLanguage`\
+語言 GUID。
 
-`bpLocation` [BP_LOCATION](../../../extensibility/debugger/reference/bp-location.md)結構，指定之中斷點位置的類型。
+`bpLocation`\
+[BP_LOCATION](../../../extensibility/debugger/reference/bp-location.md)結構，指定之中斷點位置的類型。
 
-`pProgram` [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)物件，表示中斷點發生的應用程式。
+`pProgram`\
+[IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)物件，表示中斷點發生的應用程式。
 
-`bstrProgramName` 中斷點會發生在應用程式的名稱。
+`bstrProgramName`\
+中斷點會發生在應用程式的名稱。
 
-`pThread` [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)物件，表示中斷點發生的執行緒。
+`pThread`\
+[IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)物件，表示中斷點發生的執行緒。
 
-`bstrThreadName` 中斷點會發生執行緒的名稱。
+`bstrThreadName`\
+中斷點會發生執行緒的名稱。
 
-`bpCondition` [BP_CONDITION](../../../extensibility/debugger/reference/bp-condition.md)結構，描述在其下會引發中斷點的條件。
+`bpCondition`\
+[BP_CONDITION](../../../extensibility/debugger/reference/bp-condition.md)結構，描述在其下會引發中斷點的條件。
 
-`bpPassCount` [BP_PASSCOUNT](../../../extensibility/debugger/reference/bp-passcount.md)結構，其中包含中斷點的傳遞計數資訊。
+`bpPassCount`\
+[BP_PASSCOUNT](../../../extensibility/debugger/reference/bp-passcount.md)結構，其中包含中斷點的傳遞計數資訊。
 
-`dwFlags` 從旗標的組合[BP_FLAGS](../../../extensibility/debugger/reference/bp-flags.md)指定要求之中斷點的旗標的列舉型別。
+`dwFlags`\
+從旗標的組合[BP_FLAGS](../../../extensibility/debugger/reference/bp-flags.md)指定要求之中斷點的旗標的列舉型別。
 
-`guidVendor` 供應商的 GUID。 可能是 null 值。
+`guidVendor`\
+供應商的 GUID。 可能是 null 值。
 
-`bstrConstraint` 中斷點條件約束的名稱。 可能是 null 值。
+`bstrConstraint`\
+中斷點條件約束的名稱。 可能是 null 值。
 
-`bstrTracepoint` 追蹤點的名稱。 可能是 null 值。
+`bstrTracepoint`\
+追蹤點的名稱。 可能是 null 值。
 
 ## <a name="remarks"></a>備註
 此結構由[GetRequestInfo2](../../../extensibility/debugger/reference/idebugbreakpointrequest3-getrequestinfo2.md)方法。

@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugObject2::GetField method
 ms.assetid: add6a6b5-e752-47dd-9613-29206ea809b0
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 829ee652ce1d1d2ebb713d4b52e1ea255624f07d
-ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.openlocfilehash: e491d98219f1cbb105af653dee15f25bb246c2d7
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/24/2019
-ms.locfileid: "66209852"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66317318"
 ---
 # <a name="idebugobject2getfield"></a>IDebugObject2::GetField
 取得這個物件的型別。

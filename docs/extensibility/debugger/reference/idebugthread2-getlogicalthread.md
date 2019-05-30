@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugThread2::GetLogicalThread
 ms.assetid: bce6230e-41d4-49b7-a050-2dde5efb6805
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: d4273d1c8bff6f07fdcf12b5b324d8d42eb08799
-ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.openlocfilehash: 1e8c1543383b3d0df0166b50359caf0f80a8b3ef
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/24/2019
-ms.locfileid: "66199728"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66320228"
 ---
 # <a name="idebugthread2getlogicalthread"></a>IDebugThread2::GetLogicalThread
 偵錯引擎不會實作這個方法。

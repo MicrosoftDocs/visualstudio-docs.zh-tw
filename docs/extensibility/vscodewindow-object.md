@@ -8,17 +8,17 @@ helpviewer_keywords:
 - views [Visual Studio SDK], VSCodeWindow object
 - VsCodeWindow object
 ms.assetid: cf5fe926-e784-4098-bc01-cac49c7c55c6
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8b1a3c19d349b84b10e0f36aca57a24aaac0d521
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 165855fc6f8e63c6c7ad84cb8432419258b7ba4e
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62953123"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66322370"
 ---
 # <a name="vscodewindow-object"></a>VSCodeWindow 物件
 程式碼視窗是一種特殊的文件視窗，通常可以包含一或多個文字檢視，<xref:Microsoft.VisualStudio.TextManager.Interop.VsTextView>物件。

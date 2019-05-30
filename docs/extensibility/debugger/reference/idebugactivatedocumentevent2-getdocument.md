@@ -8,20 +8,20 @@ helpviewer_keywords:
 - GetDocument method
 - IDebugActivateDocumentEvent2::GetDocument method
 ms.assetid: b3c32f1b-f3de-409d-920d-ba7b3fa84fcd
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 1ba06a44f24a6cd33c42b82bdf39aa4e4dfd799a
-ms.sourcegitcommit: 77b4ca625674658d5c5766e684fa0e2a07cad4da
+ms.openlocfilehash: 708ed4e42abe38baafee2eff492a64b64e297968
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/14/2019
-ms.locfileid: "65615303"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66318056"
 ---
 # <a name="idebugactivatedocumentevent2getdocument"></a>IDebugActivateDocumentEvent2::GetDocument
 取得要啟動的文件。

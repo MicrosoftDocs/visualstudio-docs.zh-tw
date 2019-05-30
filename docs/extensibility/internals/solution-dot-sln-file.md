@@ -7,17 +7,17 @@ helpviewer_keywords:
 - solutions, .sln files
 - .sln files, VSPackages
 ms.assetid: 7d7ef539-2e4b-4637-b853-8ec7626609df
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ee1a66cee2d42c0ef23b4d4b8441a3c0cda125c4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 30b0e0b09b12dca964958d5d7b35c6b0d83906fa
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62908742"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66322604"
 ---
 # <a name="solution-sln-file"></a>方案 (.sln) 檔案
 

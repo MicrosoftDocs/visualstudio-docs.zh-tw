@@ -1,21 +1,21 @@
 ---
-title: HOW TO：註冊使用舊版 API 的文字緩衝區事件 |Microsoft Docs
+title: 作法：註冊使用舊版 API 的文字緩衝區事件 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - register for text buffer events
 ms.assetid: 5fc00ced-882c-4b48-b46c-1fa5a2469f94
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8ec5c271c023483ea64ddbabb83129ea9a44e4c2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 10f1dbbc50535c1b0fd297f99c359ea8b0511c68
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62911610"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66321451"
 ---
 # <a name="how-to-register-for-text-buffer-events-with-the-legacy-api"></a>HOW TO：註冊使用舊版 API 的文字緩衝區事件
 如果您使用舊版 API 存取的文字緩衝區，您應該註冊文字緩衝區事件，如下列程序中所示。

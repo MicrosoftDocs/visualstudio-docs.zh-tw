@@ -7,17 +7,17 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugObject2 interface
 ms.assetid: ef640967-8adb-4793-994d-ae1736510891
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: fe7d6a29f3c94aa0f7c9afd79826cc332d11ebfe
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: d3f027fd08c38433d5f1357e56d90df96e223854
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63413621"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66317255"
 ---
 # <a name="idebugobject2"></a>IDebugObject2
 > [!IMPORTANT]

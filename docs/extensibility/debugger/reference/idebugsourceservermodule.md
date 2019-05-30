@@ -5,17 +5,17 @@ ms.topic: reference
 helpviewer_keywords:
 - IDebugSourceServerModule interface
 ms.assetid: 38213060-451d-46e6-8b4a-efc123e01a2c
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c40a2da886b4e999649349d4af306295c87863ff
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5bb686ff492ca836d35b21d54298876314ecb8d5
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62916073"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66321918"
 ---
 # <a name="idebugsourceservermodule"></a>IDebugSourceServerModule
 表示包含在 PDB 檔案中的來源伺服器資訊。

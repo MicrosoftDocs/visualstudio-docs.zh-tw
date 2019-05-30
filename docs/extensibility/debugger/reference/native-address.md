@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - NATIVE_ADDRESS structure
 ms.assetid: 7a0cd085-bfc8-45cc-a3d4-4459070e207a
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 311e7b333891a29dcee7cf32f198047a75dcbf80
-ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.openlocfilehash: 02a44369a68c669273207ba2f32902a0d406c61d
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/24/2019
-ms.locfileid: "66212760"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66339007"
 ---
 # <a name="nativeaddress"></a>NATIVE_ADDRESS
 

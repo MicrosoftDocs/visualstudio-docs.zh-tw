@@ -8,17 +8,17 @@ helpviewer_keywords:
 - Commands element (VSCT XML schema)
 - VSCT XML schema elements, Commands
 ms.assetid: 47cf16a5-d78b-452e-86f6-b5893856dddf
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 823a91f15ef1dca47e8fd58db0646cd5248cfb1f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ab8629fb3ef83277f1366a5141c400b8eeea70e3
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62891248"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66341906"
 ---
 # <a name="commands-element"></a>Commands 元素
 表示 [VSPackage] 工具列上的命令的集合。 集合可以有最多五個小節中，如下： 功能表、 群組、 按鈕、 combos，與點陣圖。

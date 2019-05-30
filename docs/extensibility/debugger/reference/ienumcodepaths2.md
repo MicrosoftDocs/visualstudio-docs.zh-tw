@@ -7,17 +7,17 @@ f1_keywords:
 helpviewer_keywords:
 - IEnumCodePaths2 interface
 ms.assetid: 17ec9f9e-dc06-4532-b5db-da52efcc8630
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3fd34b88324fa2e2121fa46b637cb0ec0d26d35a
-ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
+ms.openlocfilehash: d5ad1f7a3f954116350e8accbdc9db02d0ac920d
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65223394"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66319600"
 ---
 # <a name="ienumcodepaths2"></a>IEnumCodePaths2
 此介面代表程式碼路徑的清單。
