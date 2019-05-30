@@ -1,5 +1,5 @@
 ---
-title: HOW TO：以程式碼分析簽入原則來強制程式碼的可維護性
+title: 使用程式碼分析簽入原則
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,14 +10,14 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7139c952b40957a564fcd4074b1c931817dfb851
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 0924d3c7b6f39e4ec026a77ee8e0418361e311ba
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62815814"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66260915"
 ---
-# <a name="how-to-enforce-maintainable-code-with-a-code-analysis-check-in-policy"></a>HOW TO：強制維護的程式碼的程式碼分析簽入原則
+# <a name="how-to-enforce-maintainable-code-with-a-code-analysis-check-in-policy"></a>作法：強制維護的程式碼的程式碼分析簽入原則
 
 開發人員可以使用程式碼度量資訊工具來測量的複雜度和維護的程式碼，但您無法簽入原則的一部分叫用程式碼度量資訊。 不過，您可以啟用驗證的程式碼度量資訊的標準，符合您的程式碼的程式碼分析規則，並強制執行透過簽入原則的規則。 如需程式碼度量的詳細資訊，請參閱[程式碼度量值](../code-quality/code-metrics-values.md)。
 
@@ -55,7 +55,7 @@ Team foundation 版本控制的系統管理員可以將程式碼分析可維護�
 
      此外，如果您想避免成功的組建將規則違規時，請選取**將警告視為錯誤**規則描述旁邊的核取方塊。
 
-3. 按一下 [確定] 。 新的簽入原則現在適用於未來的簽入。
+3. 按一下 [確定]  。 新的簽入原則現在適用於未來的簽入。
 
 ## <a name="see-also"></a>另請參閱
 

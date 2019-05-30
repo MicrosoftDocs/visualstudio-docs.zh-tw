@@ -1,5 +1,5 @@
 ---
-title: HOW TO：使用 _Analysis_assume 來指定其他程式碼資訊
+title: 使用 _analysis_assume 來針對程式碼分析提示
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -12,12 +12,12 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - multiple
-ms.openlocfilehash: 25ce2a97acd248e546fdfab1a1b5c3f22e085f0c
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 09db0ff784c7d8fa5a9889487f6090ad9afbfea0
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63403111"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66260874"
 ---
 # <a name="how-to-specify-additional-code-information-by-using-analysisassume"></a>HOW TO：使用 _Analysis_assume 來指定其他程式碼資訊
 您可以提供提示給程式碼分析工具，適用於 C /C++可協助分析處理，並減少警告的程式碼。 若要提供其他資訊，請使用下列函式：

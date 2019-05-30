@@ -1,5 +1,5 @@
 ---
-title: HOW TO：變更發行 ClickOnce 應用程式的語言 |Microsoft Docs
+title: 變更發行 ClickOnce 應用程式的語言
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -16,14 +16,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 88114080b8de02b3aaba52b0a48fd09d58ec5818
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: e80a65b65d75d925decdf60b633a7d51ea9bafce
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63406647"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66263181"
 ---
-# <a name="how-to-change-the-publish-language-for-a-clickonce-application"></a>HOW TO：變更 ClickOnce 應用程式的發佈語言
+# <a name="how-to-change-the-publish-language-for-a-clickonce-application"></a>作法：變更 ClickOnce 應用程式的發佈語言
 
 發佈時[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]應用程式，在安裝語言與您的開發電腦的文化特性的預設值時顯示的使用者介面。 如果您要發行當地語系化的應用程式，您必須指定語言和文化特性，以符合當地語系化的版本。 這取決於`Publish language`專案的屬性。
 
@@ -34,9 +34,9 @@ ms.locfileid: "63406647"
 
 ## <a name="to-change-the-publish-language"></a>若要變更的發行語言
 
-1. 在方案總管 中選取專案之後，按一下 [專案]  功能表中 [屬性] 。
+1. 在方案總管  中選取專案之後，按一下 [專案]  功能表中 [屬性]  。
 
-2. 按一下 [發佈] 索引標籤。
+2. 按一下 [發佈]  索引標籤。
 
 3. 按一下 **選項** 按鈕以開啟**發行選項** 對話方塊。
 

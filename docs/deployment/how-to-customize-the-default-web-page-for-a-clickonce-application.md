@@ -1,5 +1,5 @@
 ---
-title: HOW TO：自訂 ClickOnce 應用程式的預設網頁 |Microsoft Docs
+title: 自訂 ClickOnce 應用程式的預設 web 網頁
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e132ea3592f18aad9b7b96bb32e8d7b6dac712cf
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 66d304be4e2435b6ec1ecafe8aeb473b83fa1033
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63406972"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66263337"
 ---
 # <a name="how-to-customize-the-default-web-page-for-a-clickonce-application"></a>HOW TO：自訂 ClickOnce 應用程式的預設網頁
 發行 ClickOnce 應用程式到 Web，當網頁自動產生及發行以及應用程式。 預設的網頁包含應用程式和安裝應用程式、 安裝必要元件，或存取 MSDN 上的說明連結的名稱。

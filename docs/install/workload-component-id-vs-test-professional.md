@@ -5,7 +5,7 @@ description: 使用 Visual Studio 工作負載和元件識別碼為通用測試�
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.date: 03/01/2019
+ms.date: 05/22/2019
 ms.topic: reference
 helpviewer_keywords:
 - workload ID, Visual Studio
@@ -15,12 +15,12 @@ ms.assetid: 70c03438-8434-4921-ada0-c172519af431
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 monikerRange: vs-2017
-ms.openlocfilehash: 354fce02944b62e1ea9ea96e66f6fa34af8616fc
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: cbda03d7a302de04af3f66537afeefc2073d158f
+ms.sourcegitcommit: cd21b38eefdea2cdefb53e68e7a30b868e78dd6b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62960670"
+ms.lasthandoff: 05/22/2019
+ms.locfileid: "66037355"
 ---
 # <a name="visual-studio-test-professional-component-directory"></a>Visual Studio Test Professional 元件目錄
 

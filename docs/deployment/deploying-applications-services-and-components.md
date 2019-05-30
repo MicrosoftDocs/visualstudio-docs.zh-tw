@@ -23,12 +23,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e66eb7fc2915514b91135e8c89843a0d979abf4a
-ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
+ms.openlocfilehash: ae70551fdb223856774f7e2afa0d85f915f27a0c
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "65845900"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66261977"
 ---
 # <a name="first-look-at-deployment-in-visual-studio"></a>Visual Studio 中的部署簡介
 
@@ -44,7 +44,7 @@ ms.locfileid: "65845900"
 
     ![選擇 [發行]](../deployment/media/quickstart-publish.png)
 
-- **Windows 傳統型**：使用 ClickOnce 部署可以將 Windows 傳統型應用程式發行至資料夾。 使用者只要按一下，就可以安裝應用程式。 如需詳細資訊，請參閱[使用 ClickOnce 部署傳統型應用程式](how-to-publish-a-clickonce-application-using-the-publish-wizard.md) (C# 和 Visual Basic)。 針對 C++/CLR，請參閱[使用 ClickOnce 部署原生應用程式](/cpp/ide/clickonce-deployment-for-visual-cpp-applications)，針對 C/C++，請參閱[使用安裝專案部署原生應用程式](/cpp/ide/walkthrough-deploying-a-visual-cpp-application-by-using-a-setup-project)。
+- **Windows 傳統型**：使用 ClickOnce 部署可以將 Windows 傳統型應用程式發行至資料夾。 使用者只要按一下，就可以安裝應用程式。 如需詳細資訊，請參閱[使用 ClickOnce 部署傳統型應用程式](how-to-publish-a-clickonce-application-using-the-publish-wizard.md) (C# 和 Visual Basic)。 針對 C++/CLR，請參閱[使用 ClickOnce 部署原生應用程式](/cpp/windows/clickonce-deployment-for-visual-cpp-applications)，針對 C/C++，請參閱[使用安裝專案部署原生應用程式](/cpp/windows/walkthrough-deploying-a-visual-cpp-application-by-using-a-setup-project)。
 
 ## <a name="publish-to-azure"></a>發佈至 Azure
 
@@ -83,7 +83,7 @@ ms.locfileid: "65845900"
 
     您也可以使用許多其他方式來部署 ASP.NET 應用程式和服務。 如需詳細資訊，請參閱[部署 ASP.NET Web 應用程式和服務](http://www.asp.net/aspnet/overview/deployment)。
 
-- **Windows 傳統型**：使用 ClickOnce 部署可以將 Windows 傳統型應用程式發行至 Web 伺服器或網路檔案共用。 使用者只要按一下，就可以安裝應用程式。 如需詳細資訊，請參閱[使用 ClickOnce 部署傳統型應用程式](how-to-publish-a-clickonce-application-using-the-publish-wizard.md) (C# 和 Visual Basic)。 針對 C++/CLR，請參閱[使用 ClickOnce 部署原生應用程式](/cpp/ide/clickonce-deployment-for-visual-cpp-applications)，針對 C/C++，請參閱[使用安裝專案部署原生應用程式](/cpp/ide/walkthrough-deploying-a-visual-cpp-application-by-using-a-setup-project)。
+- **Windows 傳統型**：使用 ClickOnce 部署可以將 Windows 傳統型應用程式發行至 Web 伺服器或網路檔案共用。 使用者只要按一下，就可以安裝應用程式。 如需詳細資訊，請參閱[使用 ClickOnce 部署傳統型應用程式](how-to-publish-a-clickonce-application-using-the-publish-wizard.md) (C# 和 Visual Basic)。 針對 C++/CLR，請參閱[使用 ClickOnce 部署原生應用程式](/cpp/windows/clickonce-deployment-for-visual-cpp-applications)，針對 C/C++，請參閱[使用安裝專案部署原生應用程式](/cpp/windows/walkthrough-deploying-a-visual-cpp-application-by-using-a-setup-project)。
 
 ## <a name="publish-to-microsoft-store"></a>發行至 Microsoft Store
 

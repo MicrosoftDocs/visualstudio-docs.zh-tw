@@ -8,12 +8,12 @@ ms.assetid: 5161b533-2127-4172-b473-d4ffc76ff05b
 caps.latest.revision: 17
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 4b3c709c2d7a83e4b144232a491dabf205ea46f7
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 9e1ac0eb389a6f1747ef713cd99f9bb3006ff6b9
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63446191"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66261639"
 ---
 # <a name="quick-start-test-driven-development-with-test-explorer"></a>快速入門：搭配 [測試總管] 進行以測試為導向的開發工作
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,7 +39,7 @@ ms.locfileid: "63446191"
   
    1. 建立測試專案。  
   
-        在 [ **新增專案** ] 對話方塊中，展開 [ **Visual Basic**]、[ **Visual C#**] 或 [ **Visual C++**]，然後選擇 [ **測試**]。  
+        在 [ **新增專案** ] 對話方塊中，展開 [ **Visual Basic**]、[ **Visual C#** ] 或 [ **Visual C++** ]，然後選擇 [ **測試**]。  
   
         選取 [ **單元測試專案**]。  
   
@@ -53,22 +53,22 @@ ms.locfileid: "63446191"
   
     [測試總管] 會開啟並顯示測試結果的摘要。  
   
-   **若要查看完整的測試清單：** 請選擇任何分類中的 [全部顯示]。  
+   **若要查看完整的測試清單：** 請選擇任何分類中的 [全部顯示]  。  
   
    **若要查看測試結果的詳細資料：** 請在 [測試總管] 中選取測試，以便在詳細資料窗格中檢視詳細資料 (例如例外狀況訊息)。  
   
-   **若要巡覽至測試的程式碼：** 請在 [測試總管] 中按兩下測試，或在捷徑功能表上選擇 [開啟測試]。  
+   **若要巡覽至測試的程式碼：** 請在 [測試總管] 中按兩下測試，或在捷徑功能表上選擇 [開啟測試]  。  
   
-   **若要偵錯測試：** 請開啟一或多個測試的捷徑功能表，然後選擇 [偵測選取的測試]。  
+   **若要偵錯測試：** 請開啟一或多個測試的捷徑功能表，然後選擇 [偵測選取的測試]  。  
   
 > [!IMPORTANT]
 > 顯示的結果是最近執行的結果。 有顏色的結果列只會顯示已執行的測試結果。 例如，如果您執行許多測試，但是有些失敗了，接著只執行成功的測試，然後結果列就會全部顯示綠色。  
   
 > [!NOTE]
-> 如果未出現任何測試，請確定已安裝配接器將 [測試總管] 連接至您使用的測試架構。 如需詳細資訊，請參閱 <<c0> [ 使用不同的測試架構](/visualstudio/test/getting-started-with-unit-testing#use-a-different-unit-test-framework)。  
+> 如果未出現任何測試，請確定已安裝配接器將 [測試總管] 連接至您使用的測試架構。 如需詳細資訊，請參閱 <<c0> [ 使用不同的測試架構](/visualstudio/test/getting-started-with-unit-testing#use-a-third-party-test-framework)。  
   
 ## <a name="walkthrough"></a> 逐步解說：使用單元測試來開發方法  
- 本逐步解說示範如何使用 Microsoft 單元測試架構以 C# 來開發受測方法。 您可以輕鬆地將它改寫成其他語言，並使用其他測試架構 (例如 NUnit)。 如需詳細資訊，請參閱 < [Usa 不同的測試架構](/visualstudio/test/getting-started-with-unit-testing#use-a-different-unit-test-framework)。  
+ 本逐步解說示範如何使用 Microsoft 單元測試架構以 C# 來開發受測方法。 您可以輕鬆地將它改寫成其他語言，並使用其他測試架構 (例如 NUnit)。 如需詳細資訊，請參閱 <<c0> [ 使用不同的測試架構](/visualstudio/test/getting-started-with-unit-testing#use-a-third-party-test-framework)。  
   
 #### <a name="creating-the-test-and-method"></a>建立測試和方法  
   
@@ -76,7 +76,7 @@ ms.locfileid: "63446191"
   
 2. 建立測試專案。  
   
-   - 在 [ **新增專案** ] 對話方塊中，選擇 [ **Visual C#**]、[ **測試** ]，然後選擇 [ **單元測試專案**]。  
+   - 在 [ **新增專案** ] 對話方塊中，選擇 [ **Visual C#** ]、[ **測試** ]，然後選擇 [ **單元測試專案**]。  
   
         ![新程式碼和測試專案](../test/media/unittestexplorerwalk1.png "UnitTestExplorerWalk1")  
   

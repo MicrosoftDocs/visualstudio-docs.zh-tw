@@ -1,5 +1,5 @@
 ---
-title: HOW TO：建立對應至資料表和檢視的 LINQ to SQL 類別 (O-R 設計工具)
+title: 對應 LINQ to SQL 類別，以資料表/檢視表 （O-R 設計工具）
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 0fb78bbc-7a78-4ab4-b32f-85ece912e660
@@ -8,14 +8,14 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 1b9fb62fe3b6d92c617fc89f083aadcd262579e4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b4a923dd102d93aaf7ed545c022f5f12087f8a6b
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62567005"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66260590"
 ---
-# <a name="how-to-create-linq-to-sql-classes-mapped-to-tables-and-views-or-designer"></a>HOW TO：建立對應至資料表和檢視的 LINQ to SQL 類別 (O/R 設計工具)
+# <a name="how-to-create-linq-to-sql-classes-mapped-to-tables-and-views-or-designer"></a>作法：建立對應至資料表和檢視的 LINQ to SQL 類別 (O/R 設計工具)
 
 [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] 會對應至資料庫資料表和檢視表的類別稱為*實體類別*。 實體類別對應至記錄，而實體類別的個別屬性對應至組成記錄的個別資料行。 建立實體類別為基礎的資料庫資料表或檢視表拖曳資料表或檢視表，從**伺服器總管**或是**資料庫總管**拖曳至[LINQ to SQL 工具在 Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md). **O/R Designer**產生的類別，並套用特定[!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)]屬性，可讓[!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)]功能 (資料通訊和編輯功能<xref:System.Data.Linq.DataContext>)。 如需詳細資訊[!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)]類別，請參閱[LINQ to SQL 物件模型](/dotnet/framework/data/adonet/sql/linq/the-linq-to-sql-object-model)。
 
@@ -32,7 +32,7 @@ ms.locfileid: "62567005"
 
 ### <a name="to-create-linq-to-sql-classes-that-are-mapped-to-database-tables-or-views"></a>若要建立會對應至資料庫資料表或檢視的 LINQ to SQL 類別
 
-1. 在 [伺服器] 或 [資料庫總管] 中，展開 [資料表] 或 [檢視]，並尋找您希望在應用程式中使用的資料庫資料表或檢視。
+1. 在 [伺服器]  或 [資料庫總管]  中，展開 [資料表]  或 [檢視]  ，並尋找您希望在應用程式中使用的資料庫資料表或檢視。
 
 2. 將資料表或檢視拖曳至**O/R Designer**。
 
@@ -44,22 +44,22 @@ ms.locfileid: "62567005"
 
 ### <a name="to-create-an-object-data-source-based-on-linq-to-sql-entity-classes"></a>若要根據 LINQ to SQL 實體類別來建立物件資料來源
 
-1. 按一下 [建置] 功能表上的 [建置方案] 來建置您的專案。
+1. 按一下 [建置]  功能表上的 [建置方案]  來建置您的專案。
 
 2. 若要開啟 **資料來源** 視窗，請在**資料**功能表上，按一下 **顯示資料來源**。
 
 3. 在 [ **資料來源** ] 視窗中，按一下 [ **加入新資料來源**]。
 
-4. 按一下 [選擇資料來源類型] 頁面上的 [物件]，然後按一下 [下一步]。
+4. 按一下 [選擇資料來源類型]  頁面上的 [物件]  ，然後按一下 [下一步]  。
 
 5. 展開節點，並尋找和選取類別。
 
     > [!NOTE]
     > 如果**客戶**類別無法使用，請取消精靈、建置專案，然後再次執行精靈。
 
-6. 按一下 [完成] 以建立資料來源，然後將 [客戶] 實體類別新增至 [資料來源] 視窗。
+6. 按一下 [完成]  以建立資料來源，然後將 [客戶]  實體類別新增至 [資料來源]  視窗。
 
-7. 將項目從 [資料來源] 視窗拖曳至表單。
+7. 將項目從 [資料來源]  視窗拖曳至表單。
 
 ## <a name="see-also"></a>另請參閱
 

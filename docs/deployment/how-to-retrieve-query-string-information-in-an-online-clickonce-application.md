@@ -1,5 +1,5 @@
 ---
-title: HOW TO：擷取在線上 ClickOnce 應用程式中的查詢字串資訊 |Microsoft Docs
+title: 擷取在線上 ClickOnce 應用程式中的查詢字串資訊
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -15,14 +15,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 38a3ad3a3ef4d93c8fb5567b385aa430e651a3f9
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 671bbe6e0541e0ef9c9ebc43ff1f5a2a4919c10e
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63406812"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66263254"
 ---
-# <a name="how-to-retrieve-query-string-information-in-an-online-clickonce-application"></a>HOW TO：在線上 ClickOnce 應用程式中擷取查詢字串資訊
+# <a name="how-to-retrieve-query-string-information-in-an-online-clickonce-application"></a>作法：在線上 ClickOnce 應用程式中擷取查詢字串資訊
 *「查詢字串」* (query string) 是開頭為句號 (?) 之 URL 的部分，內含 *name=value*格式的任意資訊。 假設您有裝載於 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 且名為 `WindowsApp1` 的 `servername`應用程式，而且想要在啟動應用程式時傳入變數 `username` 的值。 URL 可能如下所示：
 
  `http://servername/WindowsApp1.application?username=joeuser`
@@ -61,14 +61,14 @@ ms.locfileid: "63406812"
    MageUI
    ```
 
-2. 從 [檔案]  功能表中，選取 [開啟] ，然後開啟您 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 應用程式的部署資訊清單，這是 `.application` 擴充功能中的檔案結尾。
+2. 從 [檔案]  功能表中，選取 [開啟]  ，然後開啟您 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 應用程式的部署資訊清單，這是 `.application` 擴充功能中的檔案結尾。
 
 3. 選取左導覽視窗中的 [部署選項]  面板，然後選取 [允許傳遞 URL 參數至應用程式]  核取方塊。
 
-4. 從 [檔案]  功能表中，選取 [儲存] 。
+4. 從 [檔案]  功能表中，選取 [儲存]  。
 
 > [!NOTE]
-> 或者，您可以在 [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)]中啟用查詢字串傳遞。 選取 [允許傳遞 URL 參數至應用程式]  核取方塊，藉由開啟 [專案屬性] 、選取 [發行]  索引標籤、按一下 [選項]  按鈕，然後選取 [資訊清單] 即可找到此核取方塊。
+> 或者，您可以在 [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)]中啟用查詢字串傳遞。 選取 [允許傳遞 URL 參數至應用程式]  核取方塊，藉由開啟 [專案屬性]  、選取 [發行]  索引標籤、按一下 [選項]  按鈕，然後選取 [資訊清單]  即可找到此核取方塊。
 
 ## <a name="robust-programming"></a>穩固程式設計
  當您使用查詢字串參數時，必須仔細考慮要如何安裝和啟用應用程式。 如果您的應用程式設定成從 Web 或網路共用安裝在使用者的電腦上，則使用者可能只會透過 URL 啟用應用程式一次。 之後，使用者通常會使用 [開始]  功能表中的捷徑來啟用您的應用程式。 因此，保證您的應用程式只會在其存留期間接收到查詢字串引數一次。 如果您選擇將這些引數儲存在使用者的電腦上供日後使用，則必須負責以安全的方式儲存它們。

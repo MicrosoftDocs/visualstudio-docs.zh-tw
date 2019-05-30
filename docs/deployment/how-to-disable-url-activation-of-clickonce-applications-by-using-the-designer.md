@@ -1,5 +1,5 @@
 ---
-title: HOW TO：使用設計工具停用 ClickOnce 應用程式的 URL 啟動 |Microsoft Docs
+title: 停用的 URL 啟動過程使用設計工具的 ClickOnce 應用程式
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -16,14 +16,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c4da1ba726253891ef7df2ccfde8a667ac11ad8d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b8296f08c29b3259c19393a860ee34f6c3f05a42
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62928591"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66263281"
 ---
-# <a name="how-to-disable-url-activation-of-clickonce-applications-by-using-the-designer"></a>HOW TO：使用設計工具停用 ClickOnce 應用程式的 URL 啟動
+# <a name="how-to-disable-url-activation-of-clickonce-applications-by-using-the-designer"></a>作法：使用設計工具停用 ClickOnce 應用程式的 URL 啟動
 一般而言，[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]緊接著安裝從 Web 伺服器之後，將會自動啟動 「 應用程式。 基於安全性理由，您可能決定要停用此行為，並告知使用者啟動應用程式**啟動**功能表改。 下列程序描述如何停用 URL 啟用。
 
  這項技術僅適用於安裝在使用者電腦上的 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 應用程式，其來自 Web 伺服器。 它不能用於線上專用的應用程式，可以開始只能透過其 URL。 如需有關線上專用和已安裝的應用程式之間的差異的詳細資訊，請參閱[選擇 ClickOnce 部署策略](../deployment/choosing-a-clickonce-deployment-strategy.md)。
@@ -38,7 +38,7 @@ ms.locfileid: "62928591"
 
 2. 在 [**屬性**頁面上，按一下**發佈**] 索引標籤。
 
-3. 按一下 [選項] 。
+3. 按一下 [選項]  。
 
 4. 按一下 **資訊清單**。
 

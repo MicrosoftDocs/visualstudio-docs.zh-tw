@@ -1,5 +1,5 @@
 ---
-title: 逐步解說：發行 Visual Studio 擴充功能，透過命令列 |Microsoft Docs
+title: 發行延伸模組使用命令列
 ms.date: 07/12/2018
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a2d68554ed982313e631938401f855a47dd9a35a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MT
+ms.openlocfilehash: be9585158235dadb6e415e88e42e2d324ba8fcbe
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62966262"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66261672"
 ---
 # <a name="walkthrough-publishing-a-visual-studio-extension-via-command-line"></a>逐步解說：發行的 Visual Studio 擴充功能，透過命令列
 
@@ -218,7 +218,7 @@ This is test extension.
 
 1. 在 Visual Studio 中開始偵錯。 若要開啟 Visual Studio 的實驗執行個體。
 
-2. 在實驗執行個體中，移至**工具**功能表，然後按一下**擴充功能和更新...**.TestPublish 擴充功能應該會出現在中間窗格中，並啟用。
+2. 在實驗執行個體中，移至**工具**功能表，然後按一下**擴充功能和更新...** .TestPublish 擴充功能應該會出現在中間窗格中，並啟用。
 
 3. 在 [**工具**] 功能表中，請確定您看到 [測試] 命令。
 
@@ -262,7 +262,7 @@ This is test extension.
 
 現在，發佈擴充功能時，將它安裝在 Visual Studio，並測試其存在。
 
-1. 在 Visual Studio 中，在**工具**功能表上，按一下 **擴充功能和更新...**.
+1. 在 Visual Studio 中，在**工具**功能表上，按一下 **擴充功能和更新...** .
 
 2. 按一下  **Online** TestPublish 然後搜尋。
 

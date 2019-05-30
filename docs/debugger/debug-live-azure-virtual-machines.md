@@ -1,6 +1,6 @@
 ---
-title: 針對即時 ASP.NET Azure 虛擬機器和 Azure 虛擬機器擴展集進行偵錯
-description: 了解如何設定快照集，以及使用快照偵錯工具檢視快照集。
+title: 偵錯即時 ASP.NET Azure 虛擬機器和擴展集
+description: 了解如何使用快照偵錯工具設定快照點及檢視快照集。
 ms.custom: ''
 ms.date: 02/06/2019
 ms.topic: conceptual
@@ -13,12 +13,12 @@ monikerRange: '>= vs-2019'
 ms.workload:
 - aspnet
 - azure
-ms.openlocfilehash: 2880b8bee25a79f5f182043ffed5c50c4512d033
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 38cf8b5c2af174b026c507fc5c668f826707adf3
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63399427"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66263351"
 ---
 # <a name="debug-live-aspnet-apps-on-azure-virtual-machines-and-azure-virtual-machine-scale-sets-using-the-snapshot-debugger"></a>使用快照偵錯工具針對 Azure 虛擬機器上的即時 ASP.NET 應用程式和 Azure 虛擬機器擴展集進行偵錯
 
@@ -35,7 +35,7 @@ ms.locfileid: "63399427"
 
 ## <a name="prerequisites"></a>必要條件
 
-* Azure 虛擬機器 (VM) 和 Azure 虛擬機器擴展集的快照集偵錯工具僅適用於 Visual Studio 2019 企業版或更高版本**Azure 開發工作負載**。 (您可以在 [個別元件] 索引標籤下的 [偵錯和測試] > [快照偵錯工具]底下找到它。)
+* Azure 虛擬機器 (VM) 和 Azure 虛擬機器擴展集的快照集偵錯工具僅適用於 Visual Studio 2019 企業版或更高版本**Azure 開發工作負載**。 (您可以在 [個別元件]  索引標籤下的 [偵錯和測試]   > [快照偵錯工具]  底下找到它。)
 
     如果尚未安裝，安裝[Visual Studio 2019 Enterprise](https://visualstudio.microsoft.com/vs/)。
 
@@ -50,17 +50,17 @@ ms.locfileid: "63399427"
     > [!IMPORTANT]
     > 快照集偵錯，您需要開啟*相同版本的原始程式碼*發行到您 Azure 虛擬 Machine\Virtual 機器擴展集的服務。
 
-1. 選擇 [偵錯] > [附加快照偵錯工具]。選取 Azure 虛擬 Machine\Virtual 機器擴展集部署至您的 web 應用程式和 Azure 儲存體帳戶，然後再按一下**附加**。
+1. 選擇 [偵錯] > [附加快照偵錯工具]  。選取 Azure 虛擬 Machine\Virtual 機器擴展集部署至您的 web 應用程式和 Azure 儲存體帳戶，然後再按一下**附加**。
 
       ![從 [偵錯] 功能表啟動快照偵錯工具](../debugger/media/snapshot-debug-menu-attach.png)
 
       ![選取 Azure 資源](../debugger/media/snapshot-select-azure-resource-vm.png) 
 
     > [!IMPORTANT]
-    > 第一次為 VM 選取 [附加快照偵錯工具] 時，IIS 會自動重新啟動。
+    > 第一次為 VM 選取 [附加快照偵錯工具]  時，IIS 會自動重新啟動。
     > 您選取的第一次**附加快照偵錯工具**虛擬機器擴展集，需要手動升級每個虛擬機器擴展集執行個體。
 
-    **模組**的中繼資料將不會一開始就啟動，請瀏覽至 Web 應用程式，[開始收集] 按鈕會變成作用中。 Visual Studio 現在已經處於快照集偵錯模式。
+    **模組**的中繼資料將不會一開始就啟動，請瀏覽至 Web 應用程式，[開始收集]  按鈕會變成作用中。 Visual Studio 現在已經處於快照集偵錯模式。
 
    ![快照集偵錯模式](../debugger/media/snapshot-message.png)
 
@@ -78,7 +78,7 @@ ms.locfileid: "63399427"
 
    ![設定快照點](../debugger/media/snapshot-set-snappoint.png)
 
-1. 按一下 [開始收集] 以開啟快照點。
+1. 按一下 [開始收集]  以開啟快照點。
 
    ![開啟快照點](../debugger/media/snapshot-start-collection.png)
 
@@ -91,7 +91,7 @@ ms.locfileid: "63399427"
 
 ## <a name="inspect-snapshot-data"></a>檢查快照集資料
 
-1. 叫用快照點時，[診斷工具] 視窗中會顯示快照點。 若要開啟此視窗，請選擇 [偵錯] > [Windows] > [顯示診斷工具]。
+1. 叫用快照點時，[診斷工具] 視窗中會顯示快照點。 若要開啟此視窗，請選擇 [偵錯] > [Windows] > [顯示診斷工具]  。
 
    ![開啟快照點](../debugger/media/snapshot-diagsession-window.png)
 
@@ -99,11 +99,11 @@ ms.locfileid: "63399427"
 
    ![檢查快照集資料](../debugger/media/snapshot-inspect-data.png)
 
-   您可以從這個檢視，將滑鼠移至變數上方以檢視 DataTips、使用 [區域]、[監看式]，以及 [呼叫堆疊] 視窗，也可以評估運算式。
+   您可以從這個檢視，將滑鼠移至變數上方以檢視 DataTips、使用 [區域]  、[監看式]  ，以及 [呼叫堆疊]  視窗，也可以評估運算式。
 
-    網站本身是仍然是即時的且使用者不會受到影響。 每個快照點預設只會擷取一個快照集：擷取快照集之後，快照點就會關閉。 如果想要在快照點擷取另一個快照集，可以按一下 [更新集合] 以重新開啟快照點。
+    網站本身是仍然是即時的且使用者不會受到影響。 每個快照點預設只會擷取一個快照集：擷取快照集之後，快照點就會關閉。 如果想要在快照點擷取另一個快照集，可以按一下 [更新集合]  以重新開啟快照點。
 
-您也可以將更多快照點新增至應用程式，並使用 [更新集合] 按鈕將它們開啟。
+您也可以將更多快照點新增至應用程式，並使用 [更新集合]  按鈕將它們開啟。
 
 **需要協助嗎？** 請參閱[疑難排解和已知問題](../debugger/debug-live-azure-apps-troubleshooting.md)與[快照集偵錯的常見問題集](../debugger/debug-live-azure-apps-faq.md)頁面。
 
@@ -113,7 +113,7 @@ ms.locfileid: "63399427"
 
 #### <a name="to-create-a-conditional-snappoint"></a>建立條件式快照點
 
-1. 以滑鼠右鍵按一下快照點圖示 (空心球) 並選擇 [設定]。
+1. 以滑鼠右鍵按一下快照點圖示 (空心球) 並選擇 [設定]  。
 
    ![選擇設定](../debugger/media/snapshot-snappoint-settings.png)
 
@@ -129,19 +129,19 @@ ms.locfileid: "63399427"
 
 #### <a name="to-create-a-logpoint"></a>建立記錄點
 
-1. 以滑鼠右鍵按一下快照點圖示 (藍色六邊形) 並選擇 [設定]。
+1. 以滑鼠右鍵按一下快照點圖示 (藍色六邊形) 並選擇 [設定]  。
 
-1. 在快照點設定視窗中選取 [動作]。
+1. 在快照點設定視窗中選取 [動作]  。
 
     ![建立記錄點](../debugger/media/snapshot-logpoint.png)
 
-1. 您可以在 [訊息] 欄位中輸入想要記錄的新記錄訊息。 也可以在記錄訊息中變數的前後加上大括號，以評估它們。
+1. 您可以在 [訊息]  欄位中輸入想要記錄的新記錄訊息。 也可以在記錄訊息中變數的前後加上大括號，以評估它們。
 
-    如果您選擇 [傳送到輸出視窗]，當叫用記錄點時，訊息會出現在 [診斷工具] 視窗中。
+    如果您選擇 [傳送到輸出視窗]  ，當叫用記錄點時，訊息會出現在 [診斷工具] 視窗中。
 
     ![[診斷工具] 視窗中的記錄點資料](../debugger/media/snapshot-logpoint-output.png)
 
-    如果您選擇 [傳送到應用程式記錄檔]，當叫用記錄點時，只要可以看到來自 `System.Diagnostics.Trace` (或在 .NET Core 中為 `ILogger`) (例如[應用程式深入解析](/azure/application-insights/app-insights-asp-net-trace-logs)) 之訊息的位置，就會顯示訊息。
+    如果您選擇 [傳送到應用程式記錄檔]  ，當叫用記錄點時，只要可以看到來自 `System.Diagnostics.Trace` (或在 .NET Core 中為 `ILogger`) (例如[應用程式深入解析](/azure/application-insights/app-insights-asp-net-trace-logs)) 之訊息的位置，就會顯示訊息。
 
 ## <a name="next-steps"></a>後續步驟
 

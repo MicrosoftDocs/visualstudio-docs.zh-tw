@@ -1,5 +1,5 @@
 ---
-title: IDebugComPlusSymbolProvider2::LoadSymbolsFromStreamWithCorModule |Microsoft Docs
+title: IDebugComPlusSymbolProvider2::LoadSymbolsFromStreamWithCorModule
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -14,12 +14,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 487f98f992a1b6caf2d4359c9840fd568b023805
-ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
-ms.translationtype: MT
+ms.openlocfilehash: 6d801cffa3985092abe0c2ff344f1528b67a3c89
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/24/2019
-ms.locfileid: "66205893"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66263588"
 ---
 # <a name="idebugcomplussymbolprovider2loadsymbolsfromstreamwithcormodule"></a>IDebugComPlusSymbolProvider2::LoadSymbolsFromStreamWithCorModule
 從指定的資料流載入偵錯符號**ICorDebugModule**物件。

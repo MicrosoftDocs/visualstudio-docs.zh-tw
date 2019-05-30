@@ -1,5 +1,5 @@
 ---
-title: 逐步解說：下載依需求以 ClickOnce 部署 API 的附屬組件 |Microsoft Docs
+title: 下載依需求以 ClickOnce 部署 API 的附屬組件
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -21,12 +21,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8a1aa828f0f4a84f1a8dce3055f3719a3c11520e
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 34cde3a2444525e48455e445894fd5ab1c66fab8
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63405931"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66262961"
 ---
 # <a name="walkthrough-download-satellite-assemblies-on-demand-with-the-clickonce-deployment-api"></a>逐步解說：下載依需求以 ClickOnce 部署 API 的附屬組件
 透過使用附屬組件，Windows Forms 應用程式可以設定為適用多個文化特性。 *「附屬組件」* (Satellite Assembly) 為包含文化特性 (除了應用程式的預設文化特性以外) 之應用程式資源的組件。
@@ -54,7 +54,7 @@ ms.locfileid: "63405931"
 
 4. 按一下 [檔案]  索引標籤。
 
-5. 按一下**省略符號**按鈕 (**...**)，然後選取所有應用程式之附屬組件與檔案的所在目錄，包括您使用 *Resgen.exe* 產生的附屬組件 (附屬組件的名稱形式為 *\<isoCode>\ApplicationName.resources.dll*；其中 \<isoCode> 是 RFC 1766 格式的語言識別碼)。
+5. 按一下**省略符號**按鈕 ( **...** )，然後選取所有應用程式之附屬組件與檔案的所在目錄，包括您使用 *Resgen.exe* 產生的附屬組件 (附屬組件的名稱形式為 *\<isoCode>\ApplicationName.resources.dll*；其中 \<isoCode> 是 RFC 1766 格式的語言識別碼)。
 
 6. 按一下 [填入]  將檔案加入您的部署。
 

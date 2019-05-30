@@ -10,12 +10,12 @@ ms.author: crdun
 manager: crdun
 ms.workload:
 - multiple
-ms.openlocfilehash: 55b863d1bff16fb0170e749d00ebb212588b2dd3
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: ebbbd2eb0cf47763868a6c23ef2637bdd4009b2e
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63403033"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66261059"
 ---
 # <a name="troubleshoot-the-visual-studio-emulator-for-android"></a>針對 Visual Studio 的 Android 模擬器進行疑難排解
 本主題所包含的資訊，可協助您解決使用 Visual Studio 的 Android 模擬器時可能遇到的問題。
@@ -143,7 +143,7 @@ ms.locfileid: "63403033"
 
 - 確定符合最低硬體需求且 BIOS 設定正確無誤。
 
-   模擬器和 Windows 8 Hyper-V 需要支援第二層位址轉譯 (SLAT) 的 64 位元處理器。 針對 Intel，您基本上需要 Core i3、i5 或 i7 處理器 (或多個 Xeon 中的其中一個)。 AMD 晶片清單可在 [這裡](http://support.amd.com/en-us)取得。
+   模擬器和 Windows 8 Hyper-V 需要支援第二層位址轉譯 (SLAT) 的 64 位元處理器。 針對 Intel，您基本上需要 Core i3、i5 或 i7 處理器 (或多個 Xeon 中的其中一個)。 AMD 晶片清單可在 [這裡](https://www.amd.com/en/support)取得。
 
   1. 確定您的電腦符合 [系統需求](../cross-platform/system-requirements-for-the-visual-studio-emulator-for-android.md)。
 

@@ -1,5 +1,5 @@
 ---
-title: 為 Managed 程式碼實作自訂程式碼分析簽入原則
+title: 自訂程式碼分析簽入原則，針對 managed 程式碼
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: c32164ef319199171b75379823dc021cfd886d74
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 6619e3bb988a555fba5718f609ff3a5f0584063b
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62815786"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66260833"
 ---
 # <a name="implement-custom-code-analysis-check-in-policies-for-managed-code"></a>為受控碼實作自訂程式碼分析簽入原則
 
@@ -79,7 +79,7 @@ ms.locfileid: "62815786"
 
 3. 在 **簽入原則**清單中，按兩下**程式碼分析**，並確定**強制執行 Managed 程式碼的程式碼分析**選取核取方塊。
 
-4. 在 **執行此規則集**清單中，按一下**\<從原始檔控制選取規則集 >**。
+4. 在 **執行此規則集**清單中，按一下 **\<從原始檔控制選取規則集>** 。
 
 5. 在版本控制中，輸入簽入原則的規則集檔案的路徑。
 
@@ -114,6 +114,6 @@ ms.locfileid: "62815786"
 
 6. 若要忽略來自其他公司元件中的程式碼，請選取**隱藏所產生的程式碼的結果** 核取方塊。
 
-7. 在 [**執行此規則集**清單中，按一下**\<瀏覽] >**。
+7. 在 [**執行此規則集**清單中，按一下 **\<瀏覽]>** 。
 
 8. 指定簽入原則的規則集檔案的本機版本。
