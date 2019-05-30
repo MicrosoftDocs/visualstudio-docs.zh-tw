@@ -6,17 +6,17 @@ helpviewer_keywords:
 - debugging [Debugging SDK], threads
 - threading [Debugging SDK]
 ms.assetid: 2243d24a-c3d2-41d1-abbb-6db21a2db9ee
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5d931568258099fa4a8fe8f3b82d3fe50d5a3e35
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e9759536e1b27018a3361bbb723b4cde0f88269e
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62912709"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66333664"
 ---
 # <a name="threads"></a>執行緒
 在偵錯工具架構中，*執行緒*:

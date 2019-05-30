@@ -3,17 +3,17 @@ title: VSIX 色彩編輯器 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 70879c5d-e0f0-4845-993c-2f4229869706
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1578db2775a076258023b05ec9d3f010ba6222a4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 6f9c6dbcc47e4bbac4203d7ec49f563f2a85ba32
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62858013"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66332922"
 ---
 # <a name="vsix-color-editor"></a>VSIX 色彩編輯器
 Visual Studio 擴充功能色彩編輯器工具可以建立和編輯 Visual Studio 自訂色彩。 如此可以在程式碼中使用的色彩，此工具也可以產生佈景主題資源的索引鍵。 這項工具可用於讓 Visual Studio 延伸模組支援佈景主題色彩。 這項工具可以開啟.pkgdef 和.xml 檔案。 Visual Studio 佈景主題 （.vstheme 檔案） 可供使用 Visual Studio 擴充功能色彩編輯器將副檔名變更為.xml。 此外，您還可以.vstheme 檔案匯入目前的.xml 檔案。
@@ -55,7 +55,7 @@ Visual Studio 擴充功能色彩編輯器工具可以建立和編輯 Visual Stud
 
    **步驟 1：判斷新的色彩語彙基元的分類和語彙基元名稱。**
 
-   慣用的命名配置為 VSColor **[Category] [UI 型別] [State]**。 請勿 VSColor 名稱中使用"color"這個字，因為它是多餘。
+   慣用的命名配置為 VSColor **[Category] [UI 型別] [State]** 。 請勿 VSColor 名稱中使用"color"這個字，因為它是多餘。
 
    類別目錄名稱提供邏輯分組，並應定義為窄越好。 比方說，單一工具視窗的名稱可能是類別名稱，但不是整個商務單位或專案小組名稱。 群組項目類別，可協助避免混淆之間具有相同名稱的色彩。
 

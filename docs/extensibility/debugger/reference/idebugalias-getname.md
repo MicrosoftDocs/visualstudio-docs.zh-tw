@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugAlias::GetName method
 ms.assetid: ac2d8891-56b5-40ef-9866-ed74f18bb043
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: b04e5d87d917b150e351d5a63ea3c0c4f951394b
-ms.sourcegitcommit: 77b4ca625674658d5c5766e684fa0e2a07cad4da
+ms.openlocfilehash: 037861ac9d4c1cfbf09b9fa45cd24e08318c036e
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/14/2019
-ms.locfileid: "65615277"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66338241"
 ---
 # <a name="idebugaliasgetname"></a>IDebugAlias::GetName
 取得這個別名的名稱。

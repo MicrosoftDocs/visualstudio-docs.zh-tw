@@ -1,23 +1,23 @@
 ---
-title: HOW TO：更新狀態列 |Microsoft Docs
+title: 作法：更新狀態列 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - update status bar
 ms.assetid: 7500c8a7-4913-4818-a88b-bfd1b9887cb6
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 94ee2d0585892730659943b6dc826ca1b8947510
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 6f1ba62fc5147eb679e6d6a64685b367aafacae4
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63415459"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66324787"
 ---
-# <a name="how-to-update-the-status-bar"></a>HOW TO：更新狀態列
+# <a name="how-to-update-the-status-bar"></a>作法：更新狀態列
 **狀態列**一種控制列位於底部的許多應用程式視窗，其中包含一或多個狀態的文字行或指標。
 
 ## <a name="to-update-the-status-bar"></a>若要更新狀態列

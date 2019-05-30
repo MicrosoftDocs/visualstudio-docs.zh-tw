@@ -1,25 +1,25 @@
 ---
-title: HOW TO：建立。Vsct 檔案 |Microsoft Docs
+title: 作法：建立。Vsct 檔案 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - VSCT files, creating
 ms.assetid: b955f51c-f9f9-49c3-a8e4-63b6eb0e0341
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2c671467f220e61de5ca9de56a2515a2e4836020
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 95b085975a86db248517751fde7bd88c8bc2e35e
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63418473"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66328752"
 ---
-# <a name="how-to-create-a-vsct-file"></a>HOW TO：建立.vsct 檔
+# <a name="how-to-create-a-vsct-file"></a>作法：建立.vsct 檔
 
-有數種方式可建立以 XML 為基礎的 Visual Studio 命令資料表設定 (*.vsct*) 檔案。
+有數種方式可建立以 XML 為基礎的 Visual Studio 命令資料表設定 ( *.vsct*) 檔案。
 
 - 您可以建立新的 VSPackage 中[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]封裝範本。
 
@@ -45,7 +45,7 @@ ms.locfileid: "63418473"
 
 6. 在 XSD 結構描述的清單中，選取*vsct.xsd*結構描述。 如果它不在清單中，按一下**新增**，然後尋找 本機磁碟機上的檔案。 按一下 **確定**完畢時。
 
-7. 在 XML 檔案中，輸入 *< CommandTable* ，然後按** 索引標籤**。輸入關閉標記*>*。
+7. 在 XML 檔案中，輸入 *< CommandTable* ，然後按 **索引標籤**。輸入關閉標記 *>* 。
 
     此動作會建立基本 *.vsct*檔案。
 
@@ -53,7 +53,7 @@ ms.locfileid: "63418473"
 
 <a name="how-to-create-a-dot-vsct-file-from-an-existing-dot-ctc-file"></a>
 
-## <a name="how-to-create-a-vsct-file-from-an-existing-ctc-file"></a>HOW TO：從現有的.ctc 檔建立.vsct 檔
+## <a name="how-to-create-a-vsct-file-from-an-existing-ctc-file"></a>作法：從現有的.ctc 檔建立.vsct 檔
 
 您可以建立以 XML 為基礎 *.vsct*現有命令資料表中的檔案 *.ctc*原始程式檔。 這樣做，您可以充分利用新的 XML [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 命令資料表 (VSCT) 編譯器格式。
 

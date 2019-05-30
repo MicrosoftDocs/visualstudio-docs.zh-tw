@@ -6,17 +6,17 @@ helpviewer_keywords:
 - registration, VSPackages
 - VSPackages, registering
 ms.assetid: ecd20da8-b04b-4141-a8f4-a2ef91dd597a
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f9fc6bf6b096cfc5f961164abeb4703e2a18f1d2
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 92c7907ba7f7fa96714f23ad85628c75aef36bf6
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63429533"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66332891"
 ---
 # <a name="vspackage-registration"></a>VSPackage 註冊
 Vspackage 必須告知[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]它們已安裝，且應該會載入。 此程序，即可將資訊寫入登錄中。 這是典型的工作，安裝程式。

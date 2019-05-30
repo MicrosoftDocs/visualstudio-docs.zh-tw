@@ -1,20 +1,20 @@
 ---
-title: HOW TO：使用 Visual Studio 擴充功能的規則為基礎的 UI 內容 |Microsoft Docs
+title: 作法：使用 Visual Studio 擴充功能的規則為基礎的 UI 內容 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 8dd2cd1d-d8ba-49b9-870a-45acf3a3259d
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 51c7ae179cc7ba1a62ee1937f7b8f113a3263b8a
-ms.sourcegitcommit: 62f42113ae4dae1ddfff1c4e02445acc09913445
+ms.openlocfilehash: d9136268bf1bfb7ccebf79de035fb19f40223002
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/29/2019
-ms.locfileid: "64878246"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66324703"
 ---
-# <a name="how-to-use-rule-based-ui-context-for-visual-studio-extensions"></a>HOW TO：使用 Visual Studio 擴充功能的規則為基礎的 UI 內容
+# <a name="how-to-use-rule-based-ui-context-for-visual-studio-extensions"></a>作法：使用 Visual Studio 擴充功能的規則為基礎的 UI 內容
 
 Visual Studio 可讓載入 Vspackage 時有特定已知<xref:Microsoft.VisualStudio.Shell.UIContext>s 會啟動。 不過，這些 UI 內容不正常精細，延伸模組作者，讓任何選擇，但選擇可用的 UI 內容，就會啟動點之前，他們其實想要載入 VSPackage。 如需已知的 UI 內容，請參閱<xref:Microsoft.VisualStudio.Shell.KnownUIContexts>。
 

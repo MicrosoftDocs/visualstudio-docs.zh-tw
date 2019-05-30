@@ -7,17 +7,17 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugBreakpointRequest2 interface
 ms.assetid: 784bd5b1-4a3f-4455-b313-c4c9a82555a5
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 012440e03208fab6bc2cde8814781f7b3a64f79d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: ab364b426005c838072fabc1a3c7ed2f7d64ac6a
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62922995"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66337334"
 ---
 # <a name="idebugcanstopevent2"></a>IDebugCanStopEvent2
 此介面用來要求工作階段的偵錯管理員 (SDM) 是否停止在目前的程式碼位置。

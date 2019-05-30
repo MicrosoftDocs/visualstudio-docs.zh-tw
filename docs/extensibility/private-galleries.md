@@ -6,17 +6,17 @@ helpviewer_keywords:
 - VSIX galleries, private
 - private galleries, VSIX
 ms.assetid: b6b3dee7-91c5-4556-9f69-0d56b675e83b
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 027181d16024964d5487be2b3eb0b4ca261f98e0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 115fa08bea2716d4d16ba1bc04ac2fafa82154ec
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62433572"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66336104"
 ---
 # <a name="private-galleries"></a>私用組件庫
 您可以共用控制項、 範本和工具，您藉由公佈到開發*私用組件庫*內部為您的組織，如下所示：
@@ -32,7 +32,7 @@ ms.locfileid: "62433572"
 
 ### <a name="to-add-a-private-gallery-to-extensions-and-updates"></a>將私用資源庫新增至擴充功能和更新
 
-1. 在功能表列上選擇 [工具] > [選項]。
+1. 在功能表列上選擇 [工具]   > [選項]  。
 
 2. 在 **環境**節點中，選取**擴充功能和更新**。
 

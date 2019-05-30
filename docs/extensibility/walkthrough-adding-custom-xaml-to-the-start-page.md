@@ -6,18 +6,18 @@ helpviewer_keywords:
 - custom start page
 - xaml start page
 ms.assetid: 9af4d5f9-1cfc-4221-aea7-c8cd3f7571a6
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
 monikerRange: vs-2017
-ms.openlocfilehash: 2ee368224eb4991a2f1f167d565bd2b07f85d4c6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 543faf9cf122e77cce6242f95008b777cd5666b2
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62953071"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66322771"
 ---
 # <a name="walkthrough-add-custom-xaml-to-the-start-page"></a>逐步解說：將自訂的 XAML 加入至 [開始] 頁面
 
@@ -69,7 +69,7 @@ ms.locfileid: "62953071"
 
 3. 選取 **啟動**。 在 **自訂起始頁**清單中，選取您 *.xaml*檔案，然後按一下**確定**。
 
-4. 在 [檢視]  功能表上，按一下 [起始頁] 。
+4. 在 [檢視]  功能表上，按一下 [起始頁]  。
 
 5. 按一下 [ **Bing** ] 索引標籤。
 

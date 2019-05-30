@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - language service context
 ms.assetid: daa2df22-9181-4bad-b007-a7d40302bce1
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 66e8da821657dc1aefd8563f3826891cb75e1792
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3cdb7c2ff3d759581569d0f3681ce1b2f9cef39c
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62805960"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66334427"
 ---
 # <a name="provide-a-language-service-context-by-using-the-legacy-api"></a>使用舊版 API 提供的語言服務內容
 有兩個選項，以提供使用者內容中使用的語言服務[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]核心編輯器： 提供文字標記的內容，或提供所有的使用者內容。 此處所述的每個之間的差異。
@@ -28,7 +28,7 @@ ms.locfileid: "62805960"
 ## <a name="provide-all-user-context-to-the-editor"></a>提供所有的使用者內容編輯器
  如果您要建立語言服務，並使用[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]核心編輯器中，則您可以實作<xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageContextProvider>介面，以針對您的語言服務提供的內容。
 
- 實作的`IVsLanguageContextProvider`，內容封包 （集合） 會附加至編輯器中，也就是負責更新的內容封包。 當**動態說明**視窗呼叫<xref:Microsoft.VisualStudio.Shell.Interop.IVsUserContext.Update%2A>介面上的閒置時間，內容包在此內容包查詢更新的編輯器。 編輯器會在它應該更新編輯器，並將指標傳遞至內容包，然後通知語言服務。 這是藉由呼叫<xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageContextProvider.UpdateLanguageContext%2A>編輯器語言服務的方法。 使用的內容封包的指標，語言服務現在新增和移除屬性和關鍵字。 如需詳細資訊，請參閱<xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageContextProvider>。
+ 實作的`IVsLanguageContextProvider`，內容封包 （集合） 會附加至編輯器中，也就是負責更新的內容封包。 當**動態說明**視窗呼叫<xref:Microsoft.VisualStudio.Shell.Interop.IVsUserContext.Update%2A>介面上的閒置時間，內容包在此內容包查詢更新的編輯器。 編輯器會在它應該更新編輯器，並將指標傳遞至內容包，然後通知語言服務。 這是藉由呼叫<xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageContextProvider.UpdateLanguageContext%2A>編輯器語言服務的方法。 使用的內容封包的指標，語言服務現在新增和移除屬性和關鍵字。 如需詳細資訊，請參閱 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageContextProvider>。
 
  有兩種不同的方式來實作`IVsLanguageContextProvider`:
 
