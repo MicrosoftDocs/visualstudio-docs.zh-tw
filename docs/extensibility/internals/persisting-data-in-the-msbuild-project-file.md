@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - project files, persisting data in
 ms.assetid: 6a920cb7-453d-4ffd-af1c-6f3084bd03f7
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 307e8e5285dd0023d30772c5eac7a4e351287aa5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c2f09d84d61464b22b9bbe01478f35410bdd0904
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62909175"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66328506"
 ---
 # <a name="persisting-data-in-the-msbuild-project-file"></a>在 MSBuild 專案檔中保存資料
 專案子類型可能需要將子類型特定的資料保存在專案檔，以供稍後使用。 專案子類型會使用專案檔案持續性，以符合下列需求：

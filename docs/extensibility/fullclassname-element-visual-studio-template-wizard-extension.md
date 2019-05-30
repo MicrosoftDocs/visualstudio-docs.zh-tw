@@ -8,17 +8,17 @@ f1_keywords:
 helpviewer_keywords:
 - FullClassName element [Visual Studio project template]
 ms.assetid: 651e1010-d529-4856-85ff-c77ceca5d2ed
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3cf84842ab16a072484fe7665a3318960c6f4e3c
-ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
-ms.translationtype: HT
+ms.openlocfilehash: 63b7e480944e8f5519db1c9cfd123c07a0cf6208
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66263645"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66342633"
 ---
 # <a name="fullclassname-element-visual-studio-template-wizard-extension"></a>FullClassName 項目 （Visual Studio 範本精靈擴充）
 實作的類別完整的名稱`IWizard`介面。

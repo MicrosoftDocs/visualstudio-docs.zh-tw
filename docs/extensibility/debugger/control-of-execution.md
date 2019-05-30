@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - debugging [Debugging SDK], control of execution
 ms.assetid: 97071846-007e-450f-95a6-f072d0f5e61e
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 649db74d7bfc727868ee9d568aba811736a24cc6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 0d7594b91c67fb77d02e238a9336beb8d939714e
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62925902"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66345529"
 ---
 # <a name="control-of-execution"></a>控制執行
 偵錯引擎 (DE) 通常會傳送下列事件的其中一個做為最後一個啟動事件：

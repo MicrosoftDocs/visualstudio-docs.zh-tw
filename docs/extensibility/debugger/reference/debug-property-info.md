@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - DEBUG_PROPERTY_INFO structure
 ms.assetid: 5a085d18-62c6-4740-b9e9-3f5db6bfdf7f
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 11facd5b7de76aa407ef28366b789870cdad03c4
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 7804cfad48d5029e16619b5ae524fa6e761f11b4
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56710054"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66346173"
 ---
 # <a name="debugpropertyinfo"></a>DEBUG_PROPERTY_INFO
 包含偵錯屬性的相關資訊。
@@ -49,19 +52,26 @@ public struct DEBUG_PROPERTY_INFO {
 ```
 
 ## <a name="members"></a>成員
-dwValidFields A 中的旗標的組合[DEBUGPROP_INFO_FLAGS](../../../extensibility/debugger/reference/debugprop-info-flags.md)列舉，指定哪些欄位會填入。
+`dwValidFields`\
+從旗標的組合[DEBUGPROP_INFO_FLAGS](../../../extensibility/debugger/reference/debugprop-info-flags.md)列舉，指定哪些欄位會填入。
 
-bstrFullName 屬性的完整名稱。
+`bstrFullName`\
+屬性的完整名稱。
 
-bstrName 在內容中的屬性名稱。
+`bstrName`\
+在內容屬性名稱。
 
-以格式化的字串方式輸入 bstrType 屬性。
+`bstrType`\
+為格式化的字串屬性型別。
 
-bstrValue 屬性值，做為格式化的字串。
+`bstrValue`\
+為格式化的字串屬性值。
 
-屬性[IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)這個結構所描述的物件。
+`pProperty`\
+[IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)這個結構所描述的物件。
 
-dwAttrib A 中的旗標的組合[DBG_ATTRIB_FLAGS](../../../extensibility/debugger/reference/dbg-attrib-flags.md)列舉，描述這個屬性的屬性。
+`dwAttrib`\
+從旗標的組合[DBG_ATTRIB_FLAGS](../../../extensibility/debugger/reference/dbg-attrib-flags.md)列舉，描述這個屬性的屬性。
 
 ## <a name="remarks"></a>備註
 屬性是階層式本質上具有名稱、 類型和值的物件。 比方說，本機變數、 參數、 監看變數和運算式和暫存器，可描述屬性。

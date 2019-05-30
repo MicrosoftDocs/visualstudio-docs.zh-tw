@@ -1,21 +1,21 @@
 ---
-title: HOW TO：建立自訂文字標記 |Microsoft Docs
+title: 作法：建立自訂文字標記 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - custom text markers
 ms.assetid: 6e32ed81-c604-4a32-9012-8db3bec7c846
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 717badcc52088568ae348dbb1b712b2202cc7a72
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 378560e078a4635c43375e1e6c2dfbe898f2b311
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63415551"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66340835"
 ---
 # <a name="how-to-create-custom-text-markers"></a>HOW TO：建立自訂文字標記
 如果您想要建立自訂文字標記，以強調或組織程式碼，您必須採取下列步驟：

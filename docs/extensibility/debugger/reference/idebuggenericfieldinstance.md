@@ -5,17 +5,17 @@ ms.topic: reference
 helpviewer_keywords:
 - IDebugGenericFieldInstance interface
 ms.assetid: f68b4761-be8b-4801-9d4b-cde90e01d95e
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b9da35f705f066e32c91a0dfc955d9f98104e8ab
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 189d670892b50958edff3b256874441aebd72be5
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62919107"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66330494"
 ---
 # <a name="idebuggenericfieldinstance"></a>IDebugGenericFieldInstance
 表示欄位的 managed 程式碼的泛型型別執行個體。

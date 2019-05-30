@@ -3,32 +3,32 @@ title: Visual Studio 範本資訊清單結構描述參考 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: bc7d0a81-0df5-41a9-a912-1b30e5da1d13
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b447225580505959697e14f0c85855452906aa18
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 52a421986e076d2badc6dc7eb76247d243da155b
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60108850"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66323018"
 ---
 # <a name="visual-studio-template-manifest-schema-reference"></a>Visual Studio 範本資訊清單結構描述參考
-此結構描述會描述 Visual Studio 範本資訊清單的格式 (*.vstman*) Visual Studio 專案或項目範本所產生的檔案。 結構描述也會說明的位置和範本的其他相關資訊。
+此結構描述會描述 Visual Studio 範本資訊清單的格式 ( *.vstman*) Visual Studio 專案或項目範本所產生的檔案。 結構描述也會說明的位置和範本的其他相關資訊。
 
  :因為有個別的項目和專案範本目錄中，資訊清單應該永遠不會有混合的項目和專案範本。
 
 > [!IMPORTANT]
->  使用 Visual Studio 2017 中啟動此資訊清單。
+> 使用 Visual Studio 2017 中啟動此資訊清單。
 
 ## <a name="vstemplatemanifest-element"></a>VSTemplateManifest 項目
  資訊清單的根項目。
 
 ### <a name="attributes"></a>屬性
 
-- **版本**:字串，表示範本資訊清單版本。 必要項。
+- **版本**：字串，表示範本資訊清單版本。 必要項。
 
 - **地區設定**:字串，表示範本資訊清單的地區設定的地區設定。 地區設定值套用至所有範本。 您必須使用不同的資訊清單，每個地區設定。 選擇性。
 
@@ -122,7 +122,7 @@ ms.locfileid: "60108850"
  下列程式碼是項目範本的範例 *.vstman*檔案。
 
 ```xml
-VSTemplateManifest Version="1.0" Locale="1033" xmlns="http://schemas.microsoft.com/developer/vstemplatemanifest/2015">
+<VSTemplateManifest Version="1.0" Locale="1033" xmlns="http://schemas.microsoft.com/developer/vstemplatemanifest/2015">
   <VSTemplateContainer TemplateType="Item">
     <RelativePathOnDisk>CSharp\1033\ItemTemplate1</RelativePathOnDisk>
     <TemplateFileName>ItemTemplate1.vstemplate</TemplateFileName>

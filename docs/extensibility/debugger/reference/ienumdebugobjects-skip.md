@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IEnumDebugObjects::Skip method
 ms.assetid: 957cead8-0a9c-4403-b190-b9fbadc49d42
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 61c5da18ebbf3a2db1fbbaad05691386f37c68bf
-ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.openlocfilehash: 7c596745f95114026c59931daec25b2272f1e610
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/24/2019
-ms.locfileid: "66203483"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66339584"
 ---
 # <a name="ienumdebugobjectsskip"></a>IEnumDebugObjects::Skip
 這個方法會略過指定的元素數目。

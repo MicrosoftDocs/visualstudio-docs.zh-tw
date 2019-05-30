@@ -6,17 +6,17 @@ helpviewer_keywords:
 - source control [Visual Studio SDK], sharing items
 - source control plug-ins, sharing items
 ms.assetid: 6ec4780a-bda4-4327-bb3e-c6c9e7eabf35
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4c0792871835d8adea52c1e4adfdfd2c38f7d617
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7b117bcf78d4644533f8931296e6f726281fe14e
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62857783"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66327849"
 ---
 # <a name="test-area-7-share"></a>測試區域 7：共用
 這個測試部分涵蓋透過位置之間的共用項目**共用**命令。

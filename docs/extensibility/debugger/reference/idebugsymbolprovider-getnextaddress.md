@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugSymbolProvider::GetNextAddress method
 ms.assetid: 704eeb94-cb13-49d1-82b6-7d83ed0f19c0
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: df6c1418b49745a089b55f7d66067a54360e88fd
-ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.openlocfilehash: f358abe84987b9c7c1a5a1df36fdf480f62ee64b
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/24/2019
-ms.locfileid: "66207128"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66347534"
 ---
 # <a name="idebugsymbolprovidergetnextaddress"></a>IDebugSymbolProvider::GetNextAddress
 取得會遵循在方法中的指定偵錯位址的偵錯位址。

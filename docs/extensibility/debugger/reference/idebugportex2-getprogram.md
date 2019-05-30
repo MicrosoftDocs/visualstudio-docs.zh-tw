@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugPortEx2::GetProgram
 ms.assetid: cd83a111-bfd5-4eae-b576-526466c6b6ec
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 2fc8787d66e7ee29cd062cc757eed35d1a8ae227
-ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.openlocfilehash: 505823a6399cc605d8784a4dba88f2fa27ad6d72
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/24/2019
-ms.locfileid: "66209051"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66311192"
 ---
 # <a name="idebugportex2getprogram"></a>IDebugPortEx2::GetProgram
 取得與程式節點相關聯的程式。

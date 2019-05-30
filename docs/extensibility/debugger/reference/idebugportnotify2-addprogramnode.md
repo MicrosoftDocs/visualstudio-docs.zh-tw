@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugPortNotify2::AddProgramNode
 ms.assetid: 34c0e949-1eb9-4108-9cb8-a3eb87fcf190
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 225fb622507ea1ea6473a97c379bc1026cc9fcb6
-ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.openlocfilehash: f0afd0b2ae50555e29a75159edb8f52635730a56
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/24/2019
-ms.locfileid: "66208955"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66319470"
 ---
 # <a name="idebugportnotify2addprogramnode"></a>IDebugPortNotify2::AddProgramNode
 可以進行偵錯的程式會向其執行的連接埠。

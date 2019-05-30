@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugModule2::ReloadSymbols method
 ms.assetid: 0f9f0133-7d58-4cd9-a6ca-1141e095749d
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: c2e12ecc097c2839bba43da04c88dec3fe3d7298
-ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.openlocfilehash: 635e305c0dd88d72017048da6353f813fcc46406
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/24/2019
-ms.locfileid: "66203094"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66323966"
 ---
 # <a name="idebugmodule2reloadsymbolsdeprecated"></a>IDebugModule2::ReloadSymbols_Deprecated
 已過時。 請勿使用。 重新載入此模組的符號。

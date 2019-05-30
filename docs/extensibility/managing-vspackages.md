@@ -8,17 +8,17 @@ helpviewer_keywords:
 - delay loading
 - VSPackages, loading
 ms.assetid: 386e0ce5-4107-4164-b0cd-1cf43eb5e7cf
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a316d2af6ecb76c573cfb43e1334df1933a2989b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b622901ce90187ff8230a8e23a11110e0795b0b5
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62856216"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66340491"
 ---
 # <a name="manage-vspackages"></a>管理 VSPackages
 在大部分情況下，您不必擔心管理 Vspackage，因為專案和項目範本註冊，並自動載入封裝。 不過，在某些情況下，您可能需要了解更多的資訊，以管理您的封裝。

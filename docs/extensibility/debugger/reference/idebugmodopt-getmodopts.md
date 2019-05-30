@@ -6,20 +6,20 @@ helpviewer_keywords:
 - IDebugModOpt::GetModOpts
 - GetModOpts
 ms.assetid: cb513fa9-d521-4a65-b968-f55f53a368df
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 1c27c8a2a0e755fda5afa806657e918c7e7c0109
-ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.openlocfilehash: f5ebced053b80af8dce81d41e6614e89e4ffbf3a
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/24/2019
-ms.locfileid: "66203124"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66324014"
 ---
 # <a name="idebugmodoptgetmodopts"></a>IDebugModOpt::GetModOpts
 擷取一份選擇性修飾詞。

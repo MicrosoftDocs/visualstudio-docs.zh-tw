@@ -6,17 +6,17 @@ helpviewer_keywords:
 - debugging [Debugging SDK], custom viewer
 - debugging [Debugging SDK], type visualizer
 ms.assetid: abef18c0-8272-4451-b82a-b4624edaba7d
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d9705555ad76663e1fb1bc402d5b050649d934ec
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 0f7e977df6236ea8c3310312114ba4fa30d5003a
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63411189"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66344207"
 ---
 # <a name="implement-type-visualizers-and-custom-viewers"></a>實作類型視覺化檢視和自訂檢視器
 > [!IMPORTANT]

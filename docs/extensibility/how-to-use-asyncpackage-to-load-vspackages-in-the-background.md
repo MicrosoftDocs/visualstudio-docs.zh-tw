@@ -1,20 +1,20 @@
 ---
-title: HOW TO：使用 AsyncPackage 載入 Vspackage 在背景中的 |Microsoft Docs
+title: 作法：使用 AsyncPackage 載入 Vspackage 在背景中的 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: dedf0173-197e-4258-ae5a-807eb3abc952
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 99b23c223d91678f03a52910ed4516be0839a338
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 64514a6d43d580fbda142dfa65bb3a2d384dff4e
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62862566"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66324774"
 ---
-# <a name="how-to-use-asyncpackage-to-load-vspackages-in-the-background"></a>HOW TO：使用 AsyncPackage 載入 Vspackage 在背景中
+# <a name="how-to-use-asyncpackage-to-load-vspackages-in-the-background"></a>作法：使用 AsyncPackage 載入 Vspackage 在背景中
 正在載入和初始化的 VS 套件可能會導致磁碟 I/O。 如果這類的 I/O 會發生在 UI 執行緒上，它可能會導致回應性問題。 為了解決這個問題，Visual Studio 2015 導入了<xref:Microsoft.VisualStudio.Shell.AsyncPackage>類別，可讓背景執行緒上的封裝載入。
 
 ## <a name="create-an-asyncpackage"></a>建立 AsyncPackage

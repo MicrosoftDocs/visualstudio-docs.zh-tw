@@ -8,20 +8,20 @@ helpviewer_keywords:
 - IDebugMemoryContext2::Compare method
 - Compare method
 ms.assetid: c51b5128-848e-4d8e-b2e9-1161339763c3
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: f04000d3e2675f766ae343836320aa7433ade87d
-ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.openlocfilehash: 9994f99759d570780729fe1c62e6604786e4eb90
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/24/2019
-ms.locfileid: "66211987"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66347035"
 ---
 # <a name="idebugmemorycontext2compare"></a>IDebugMemoryContext2::Compare
 比較每個內容中的比較旗標，傳回的第一個符合之內容的索引所指示的方式在給定陣列中的記憶體內容。

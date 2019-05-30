@@ -1,21 +1,21 @@
 ---
-title: HOW TO：管理多個執行緒在 Managed 程式碼 |Microsoft Docs
+title: 作法：管理多個執行緒在 Managed 程式碼 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 59730063-cc29-4dae-baff-2234ad8d0c8f
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b5c3f8995d5bfbbbfe890100b0ec1a1230450bb6
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 307ee61380b137cc7426c641a85844934ff0377a
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63431326"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66340582"
 ---
-# <a name="how-to-manage-multiple-threads-in-managed-code"></a>HOW TO：管理多個執行緒以 managed 程式碼
+# <a name="how-to-manage-multiple-threads-in-managed-code"></a>作法：管理多個執行緒以 managed 程式碼
 如果您有受管理的 VSPackage 擴充功能呼叫非同步方法或在 Visual Studio UI 執行緒以外之執行緒執行的作業，您應該遵循以下的指導方針。 您可以讓 UI 執行緒有回應，因為它不需要等候工作完成的另一個執行緒上。 您可以讓您的程式碼更有效率，因為您不需要額外的執行緒所佔用的堆疊空間，並可以先讓更可靠且更輕鬆地偵錯，因為您避免死結和懸置。
 
  一般情況下，您可以從 UI 執行緒切換至不同的執行緒，或反之亦然。 方法傳回時，目前的執行緒就會是從其中所初次呼叫的執行緒。

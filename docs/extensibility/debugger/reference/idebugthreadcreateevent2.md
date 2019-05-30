@@ -7,17 +7,17 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugThreadCreateEvent2
 ms.assetid: aee34a14-4f9c-4ad3-845f-c96ee938cefd
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9b9003ebe3ec38d85322c9c856f9c60916c32a57
-ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
+ms.openlocfilehash: c2bff87f7d8bef0c548b973492c15a549430c1e1
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65226058"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66320022"
 ---
 # <a name="idebugthreadcreateevent2"></a>IDebugThreadCreateEvent2
 這個介面會傳送偵錯引擎 (DE) 工作階段的偵錯管理員 (SDM) 時進行偵錯程式中會建立一個執行緒。

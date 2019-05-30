@@ -3,17 +3,17 @@ title: 管理通用 Windows 專案 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 47926aa1-3b41-410d-bca8-f77fc950cbe7
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 28f6cf6424799cfbe68734d8fa077eea3c2b2c1a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 39ab595bd607f8530f899ca803a0dfeaa5178542
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62907039"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66340550"
 ---
 # <a name="manage-universal-windows-projects"></a>管理通用 Windows 專案
 
@@ -293,7 +293,7 @@ ms.locfileid: "62907039"
     output.OutputStringThreadSafe("set active project: " + platformCaption +'\n');
     ```
 
-16. 現在試試看。按下 F5 來啟動實驗執行個體。 在實驗執行個體中建立 C# 通用中樞應用程式專案 (在**新的專案** 對話方塊中， **Visual C#** > **Windows**  >  **Windows 8** > **通用** > **中樞應用程式**)。 載入方案之後，請前往**工具**功能表，然後按一下**叫用 TestUniversalProject**，然後簽入的 文字**輸出**窗格。 您應該會看到類似下列的畫面：
+16. 現在試試看。按下 F5 來啟動實驗執行個體。 在實驗執行個體中建立 C# 通用中樞應用程式專案 (在**新的專案** 對話方塊中， **Visual C#**  > **Windows**  >  **Windows 8** > **通用** > **中樞應用程式**)。 載入方案之後，請前往**工具**功能表，然後按一下**叫用 TestUniversalProject**，然後簽入的 文字**輸出**窗格。 您應該會看到類似下列的畫面：
 
     ```
     Found shared project: HubApp.Shared

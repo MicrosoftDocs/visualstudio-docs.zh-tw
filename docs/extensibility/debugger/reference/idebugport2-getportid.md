@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugPort2::GetPortId
 ms.assetid: 837cb924-c113-4224-aa86-3e02b33dfa70
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: aa07d9b77706e2f4f8dbd754622dd14fc90c1000
-ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.openlocfilehash: bc118bae5de4cc0b68498219b025f4144e4c5c82
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/24/2019
-ms.locfileid: "66209250"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66343752"
 ---
 # <a name="idebugport2getportid"></a>IDebugPort2::GetPortId
 取得通訊埠識別碼。

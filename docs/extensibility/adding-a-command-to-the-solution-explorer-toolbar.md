@@ -7,17 +7,17 @@ helpviewer_keywords:
 - buttons [Visual Studio], adding to Solution Explorer
 - Solution Explorer, adding buttons
 ms.assetid: f6411557-2f4b-4e9f-b02e-fce12a6ac7e9
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 50b782beeb0496d781bcb6e9bd15f70278c4db73
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 2cb5c0a8aac049b7d5ff0e79843724b87e4999e4
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63410157"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66313535"
 ---
 # <a name="add-a-command-to-the-solution-explorer-toolbar"></a>將命令加入至 [方案總管] 工具列
 本逐步解說示範如何加入一個按鈕來**方案總管 中**工具列。
@@ -27,7 +27,7 @@ ms.locfileid: "63410157"
  如需功能表、 工具列命令，並 *.vsct*檔，請參閱[命令、 功能表和工具列](../extensibility/internals/commands-menus-and-toolbars.md)。
 
 > [!NOTE]
-> 使用 XML 命令資料表 (*.vsct*) 而非命令資料表設定的檔案 (*.ctc*) 檔案，用於定義在您的 Vspackage 中顯示功能表和命令的方式。 如需詳細資訊，請參閱[Visual Studio Command Table (。Vsct) 檔案](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)。
+> 使用 XML 命令資料表 ( *.vsct*) 而非命令資料表設定的檔案 ( *.ctc*) 檔案，用於定義在您的 Vspackage 中顯示功能表和命令的方式。 如需詳細資訊，請參閱[Visual Studio Command Table (。Vsct) 檔案](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)。
 
 ## <a name="prerequisites"></a>必要條件
  從 Visual Studio 2015 中，從下載中心取得未安裝 Visual Studio SDK。 包含為 Visual Studio 安裝程式的選用功能。 您也可以在稍後安裝 VS SDK。 如需詳細資訊，請參閱 <<c0> [ 安裝 Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md)。

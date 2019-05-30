@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugClassField::EnumInterfacesImplemented method
 ms.assetid: e5523e45-d350-491e-a92c-fe0ca97d2052
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 74a1de38344b8570df0b5381842be508e45c5fdb
-ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.openlocfilehash: a5c951ac4f6f33495dad4136a1a09c11e639e029
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/24/2019
-ms.locfileid: "66203203"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66335358"
 ---
 # <a name="idebugclassfieldenuminterfacesimplemented"></a>IDebugClassField::EnumInterfacesImplemented
 建立這個類別所實作之介面的列舉值。

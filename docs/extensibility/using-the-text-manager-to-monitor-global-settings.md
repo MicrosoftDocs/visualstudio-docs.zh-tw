@@ -6,17 +6,17 @@ helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - monitor global settings
 - editors [Visual Studio SDK], legacy - text manager
 ms.assetid: 023e7671-cf65-419c-9bc1-3c4ee92aa436
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f57ffcd4cb6a9765b61d288220cae69410c5f83f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 494e61c7239eb2caacd3facdddbe2cd26b3d0a73
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62432029"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66336985"
 ---
 # <a name="use-the-text-manager-to-monitor-global-settings"></a>使用文字管理員監視全域設定
 如果您實作核心編輯器，您必須監控全域設定，所做的變更，因為這些變更可能會影響您的編輯器執行個體。 您可以藉由接聽文字管理員所引發的事件追蹤所做的變更。 例如，核心編輯器，例如其文件資料物件中指定的外觀或元件的行為全域喜好設定時文字管理員將此資訊儲存，並與所有受影響的用戶端。

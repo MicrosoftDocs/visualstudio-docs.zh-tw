@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IEEDataStorage::GetData
 ms.assetid: 4d384039-73d4-40b4-ace6-a2474c546397
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 7edce84f512dd31963f38215e0d86e24c3d73b37
-ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.openlocfilehash: f8859b019559f21797e23fa9a568b0ad7d649454
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/24/2019
-ms.locfileid: "66199274"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66319641"
 ---
 # <a name="ieedatastoragegetdata"></a>IEEDataStorage::GetData
 從物件擷取指定的位元組數目。
