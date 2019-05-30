@@ -7,17 +7,17 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugReference2 interface
 ms.assetid: 3cfed312-f532-4bce-84a5-1677c14567d7
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: fe49341bf485068701d3fb06842c5ef65359a9bf
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: 66d35b636516df1052ffa2a70c25da79851dd833
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65458670"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66329660"
 ---
 # <a name="idebugreference2"></a>IDebugReference2
 此介面代表堆疊框架屬性或其他某個屬性的參考。

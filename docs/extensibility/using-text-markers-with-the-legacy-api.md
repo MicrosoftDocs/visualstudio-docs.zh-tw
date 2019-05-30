@@ -5,19 +5,19 @@ ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - text markers
 ms.assetid: 937a0b19-1216-45d5-a7ad-4fe1d6f73097
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b443c4530a71897d11731c023af57215eac8706a
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: b6f3662b5107d517f19b4803a37de4ebcf235bc9
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63434195"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66353477"
 ---
-# <a name="using-text-markers-with-the-legacy-api"></a>使用舊版 API 中的文字標記
+# <a name="using-text-markers-with-the-legacy-api"></a>以舊版 API 使用文字標記
 文字標記是文字的浮動的一組可能會影響顯示的緩衝區中和文字的區域的行為。 標記包含中斷點、 書籤、 波浪底線和唯讀區域。 文字標記是基本上不同於語法著色。 語法著色是文字的快速的方式進行通訊區域相關聯的語言語法。 當 Windows 在速度都很重要時，會重新繪製畫面中，通常要求語法著色。 語法標色變更文字的色彩。 文字標記可以變更許多其他的文字內容。 文字標記可以 「 浮動 」，並套用特殊的行為和著色。
 
  由於文字標記相關聯的效能額外負荷的情況下，不會建立許多標記文字緩衝區。 每次使用者編輯緩衝區的內容時，就會更新每個標記。

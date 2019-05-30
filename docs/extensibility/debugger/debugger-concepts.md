@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - debugging [Debugging SDK]
 ms.assetid: 2d371d38-f1a0-4a9a-8ea3-100e8c0149b7
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7e3a9043215c5242246e54dc3e1eb2e85cd26c91
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f1d9905281c83287b8b54f57a233c2056462226f
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62925889"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66345926"
 ---
 # <a name="debugger-concepts"></a>偵錯工具概念
 若要建置 Visual Studio 偵錯封裝，您需要先熟悉中設計封裝所使用的架構概念。

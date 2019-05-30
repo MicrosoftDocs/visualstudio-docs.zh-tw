@@ -5,20 +5,20 @@ ms.topic: conceptual
 helpviewer_keywords:
 - VSCT files, designing
 ms.assetid: bb87a322-bac4-4258-92bc-9a876f05d653
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1e70a64e01e388af61127fd76f4a2fcee8e5a9b9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: bc088ac5c534e77de2aae919019396ccf2c344e2
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62910674"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66312109"
 ---
 # <a name="design-xml-command-table-vsct-files"></a>設計 XML 命令表檔案 (.vsct)
-XML 命令資料表 (*.vsct*) 檔案描述的版面配置和外觀 VSPackage 的命令項目。 命令的項目包括按鈕、 下拉式方塊、 功能表、 工具列和命令項目的群組。 本文說明 XML 命令表檔案、 它們如何影響命令的項目和功能表，以及如何加以建立。
+XML 命令資料表 ( *.vsct*) 檔案描述的版面配置和外觀 VSPackage 的命令項目。 命令的項目包括按鈕、 下拉式方塊、 功能表、 工具列和命令項目的群組。 本文說明 XML 命令表檔案、 它們如何影響命令的項目和功能表，以及如何加以建立。
 
 ## <a name="commands-menus-groups-and-the-vsct-file"></a>命令、 功能表、 群組和.vsct 檔
  *.Vsct*周圍命令、 功能表和命令群組來組織檔案。 在 XML 標記 *.vsct*檔案的代表每個項目，以及其他相關聯的項目，例如命令按鈕、 命令位置與點陣圖。
@@ -32,11 +32,11 @@ XML 命令資料表 (*.vsct*) 檔案描述的版面配置和外觀 VSPackage 的
 
 - 新 **\<extern>** 標記是您參考其他 *.h*檔案進行編譯，例如那些檔案進行[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]工具列。
 
-- 雖然 *.vsct*檔案支援 **/include**陳述式，作為 *.ctc*檔案，也提供新**\<匯入>** 項目。 差異在於， **/include**帶入*所有*的資訊，而**\<匯入>** 帶入只有名稱。
+- 雖然 *.vsct*檔案支援 **/include**陳述式，作為 *.ctc*檔案，也提供新 **\<匯入>** 項目。 差異在於， **/include**帶入*所有*的資訊，而 **\<匯入>** 帶入只有名稱。
 
-- 雖然 *.ctc*檔案需要您在其中定義您的前置處理器指示詞的標頭檔，並不需要 *.vsct*檔案。 相反地，將您的指示詞放在符號表中，位於**\<符號>** 項目，位於底部 *.vsct*檔案。
+- 雖然 *.ctc*檔案需要您在其中定義您的前置處理器指示詞的標頭檔，並不需要 *.vsct*檔案。 相反地，將您的指示詞放在符號表中，位於 **\<符號>** 項目，位於底部 *.vsct*檔案。
 
-- *.vsct*檔案的功能**\<註釋>** 標記，可讓您內嵌任何您喜歡，例如資訊或甚至是圖片的資訊。
+- *.vsct*檔案的功能 **\<註釋>** 標記，可讓您內嵌任何您喜歡，例如資訊或甚至是圖片的資訊。
 
 - 值會儲存為項目上的屬性。
 

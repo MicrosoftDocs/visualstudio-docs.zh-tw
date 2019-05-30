@@ -3,17 +3,17 @@ title: 適用於 Visual Studio 的評估工具 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 94e0e9a3-440c-4943-ad7b-772ed742e034
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 11856141a6c3f5ca186428d67edf10fdbd35787b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 77e6dca01f728ae4a5a3f0a5f12f50ab581948c6
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62798387"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66335390"
 ---
 # <a name="evaluation-tools-for-visual-studio"></a>適用於 Visual Studio 的評估工具
 ## <a name="craftsmanship-checklist-for-visual-studio"></a>適用於 Visual Studio 而成檢查清單
@@ -47,7 +47,7 @@ ms.locfileid: "62798387"
 
 - 請確認群組標頭和按鈕以外的所有標籤結尾的冒號，而且在與其配對的控制項。
 
-- 請確認以省略符號按鈕、 命令和命令連結來啟動 UI 以擷取使用者輸入結尾 **[...]**.
+- 請確認以省略符號按鈕、 命令和命令連結來啟動 UI 以擷取使用者輸入結尾 **[...]** .
 
      例如：
 
@@ -157,11 +157,11 @@ ms.locfileid: "62798387"
 
 - 它可接受使用小的方形按鈕，以省略符號 **[...]** 上，而不是 **[瀏覽...]** 按鈕 （或類似的功能）。 如果使用，請確認按鈕為 23 x 23 的大小。
 
-- 如果有一個以上 **[瀏覽...]** 按鈕在對話方塊中，然後確認簡短的版本 (僅限省略符號 **[...]**) 用於所有。
+- 如果有一個以上 **[瀏覽...]** 按鈕在對話方塊中，然後確認簡短的版本 (僅限省略符號 **[...]** ) 用於所有。
 
 - 請確認該省略符號 **[...]** 按鈕不會有助憶鍵。 旁邊的輸入控制項焦點時，有一個索引標籤應該將焦點移至 省略符號按鈕。
 
-- 確認按鈕、 命令和命令連結來啟動第二個 UI 可擷取更多的使用者輸入必須以省略符號結尾 **[...]**.
+- 確認按鈕、 命令和命令連結來啟動第二個 UI 可擷取更多的使用者輸入必須以省略符號結尾 **[...]** .
 
 #### <a name="hyperlinks"></a>超連結
 

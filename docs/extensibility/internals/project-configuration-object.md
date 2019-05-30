@@ -6,17 +6,17 @@ helpviewer_keywords:
 - project configurations, object
 - objects, project configuration
 ms.assetid: 877756c9-4261-43d9-9f32-51bf06b4219f
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d96766918f554e2b99dd8abc5faea9badaf69b5e
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 9460a30e63a7d2c282bf537517016dfa5f790a1e
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63423089"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66328428"
 ---
 # <a name="project-configuration-object"></a>專案組態物件
 專案組態物件管理 ui 的組態資訊的顯示。

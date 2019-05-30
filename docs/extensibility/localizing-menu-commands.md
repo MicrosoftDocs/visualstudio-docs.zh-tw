@@ -10,17 +10,17 @@ helpviewer_keywords:
 - localize visual studio
 - localize vsct
 ms.assetid: b04ee0f6-82ea-47e6-853a-72382267d6da
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 648bf8baebc8a0a2f42c69bc698d9f2edd729615
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 62c6011d1a04b60d1bd0cc538e9560d8977f9799
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62907361"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66344663"
 ---
 # <a name="localize-menu-commands"></a>將功能表命令當地語系化
 您也可以建立當地語系化的功能表和工具列命令提供當地語系化的文字 *.vsct*檔案，與當地語系化 *.resx*的 VSPackage，然後更新專案檔以納入的檔案變更。
@@ -74,7 +74,7 @@ ms.locfileid: "62907361"
    ```
 
 ## <a name="localize-other-text-resources"></a>當地語系化的文字中的其他資源
- 文字命令名稱以外的資源定義中資源 (*.resx*) 檔案。
+ 文字命令名稱以外的資源定義中資源 ( *.resx*) 檔案。
 
 1. 重新命名*VSPackage.resx*要*VSPackage.en US.resx*。
 

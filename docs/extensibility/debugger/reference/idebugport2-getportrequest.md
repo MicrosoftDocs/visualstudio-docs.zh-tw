@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugPort2::GetPortRequest
 ms.assetid: 14abf847-0675-4fa8-872e-971e00c84224
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: a25863ab07c4f68f0c961692981d4125c213818b
-ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.openlocfilehash: feaebf01b30876572ec0cbcf2bd33c141978fb26
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/24/2019
-ms.locfileid: "66209203"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66343738"
 ---
 # <a name="idebugport2getportrequest"></a>IDebugPort2::GetPortRequest
 取得先前用來建立連接埠 （如果有的話） 的連接埠的描述。

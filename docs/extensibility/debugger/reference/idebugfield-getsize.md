@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugField::GetSize method
 ms.assetid: 73329924-3751-4f44-af54-5986b7943374
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: e6b2e48d83919de37bdc2c668d3e7f8e3e1d71a9
-ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.openlocfilehash: db4ef8a41ec6759194cc35203b6458c7688f4322
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/24/2019
-ms.locfileid: "66212677"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66333209"
 ---
 # <a name="idebugfieldgetsize"></a>IDebugField::GetSize
 這個方法會取得一個欄位，以位元組為單位的大小。

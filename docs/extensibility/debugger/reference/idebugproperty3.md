@@ -7,17 +7,17 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProperty3 interface
 ms.assetid: 8f9be68d-4490-4eca-8f6b-8a10ed77e226
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4f999d19ecee85d9664793a3d8e3ecc48fedbbdf
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: 8581e8163ab95eac7d49c5deca70c339804aac64
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65457600"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66348693"
 ---
 # <a name="idebugproperty3"></a>IDebugProperty3
 此介面可讓您：

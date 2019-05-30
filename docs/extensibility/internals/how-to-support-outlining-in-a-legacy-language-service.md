@@ -1,5 +1,5 @@
 ---
-title: HOW TO：支援舊版語言服務中的大綱 |Microsoft Docs
+title: 作法：支援舊版語言服務中的大綱 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -7,19 +7,19 @@ helpviewer_keywords:
 - language services, supporting Collapse to Definitions command
 - hidden text, Collapse to Definitions command
 ms.assetid: bb6e74c3-93e4-4ef7-afc7-1c9b342f083b
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3181f7ab2e69dd04a21f5f81ca470f849c268e03
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 6f79f98ede5c28f8e3acb682ebe8f23e4dc4f72e
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63418393"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66312044"
 ---
-# <a name="how-to-support-outlining-in-a-legacy-language-service"></a>HOW TO：支援舊版語言服務中的大綱
+# <a name="how-to-support-outlining-in-a-legacy-language-service"></a>作法：支援舊版語言服務中的大綱
 大綱來展開或摺疊文字的不同區域。 方式大綱用定義不同的語言不同。 如需詳細資訊，請參閱[大綱](../../ide/outlining.md)。
 
  舊版語言服務會實作成 VSPackage 的一部分，但實作語言服務功能的較新的方式是使用 MEF 擴充功能。 若要深入了解實作大綱的新方式，請參閱[逐步解說：大綱](../../extensibility/walkthrough-outlining.md)。
