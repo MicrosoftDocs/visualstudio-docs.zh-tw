@@ -7,17 +7,17 @@ helpviewer_keywords:
 - editors [Visual Studio SDK], hidden text
 - language services, implementing hidden text regions
 ms.assetid: 1c1dce9f-bbe2-4fc3-a736-5f78a237f4cc
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c228f74ea98286f7a4692eafdde67ecc15ecdea9
-ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
-ms.translationtype: HT
+ms.openlocfilehash: c3d1088399256a4d5b16fa269ce022800ed645b1
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66263606"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66351020"
 ---
 # <a name="how-to-provide-hidden-text-support-in-a-legacy-language-service"></a>作法：可在舊版語言服務中的隱藏的文字
 您可以建立大綱區域除了隱藏的文字區域。 用戶端控制或編輯器控制，可以是隱藏的文字區域，並用來完全隱藏的文字區域。 編輯器會顯示為水平線的隱藏的區域。 舉例來說，這**僅限指令碼**HTML 編輯器中的檢視。

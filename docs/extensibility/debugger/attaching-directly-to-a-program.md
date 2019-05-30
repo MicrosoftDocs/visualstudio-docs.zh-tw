@@ -5,24 +5,24 @@ ms.topic: conceptual
 helpviewer_keywords:
 - debug engines, attaching to programs
 ms.assetid: ad2b7db8-821c-440c-ba07-c55c6a395e0f
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 70e8caea5cb15f614f20faafc92785e9a2da8fae
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d4bf703544bbe1932608db17addba672bfd91a70
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62926037"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66350902"
 ---
 # <a name="attach-directly-to-a-program"></a>直接附加到程式
 想要偵錯程式已在通常執行的處理序中的使用者，請遵循此程序：
 
 1. 在 IDE 中，選擇**偵錯的處理程序**命令**工具**功能表。
 
-    [處理序] 對話方塊隨即出現。
+    [處理序]  對話方塊隨即出現。
 
 2. 選擇處理程序，然後按一下**附加** 按鈕。
 

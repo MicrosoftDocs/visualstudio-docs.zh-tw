@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - using MEF for extensions
 ms.assetid: 3f59a285-6c33-4ae3-a4fb-ec1f5aa21bd1
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 708d9c7e41a3be24f9eaf28d86da94d47b187a93
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 65731a905c157737ca4c01416f9d76fdecba30d0
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62907236"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66351036"
 ---
 # <a name="managed-extensibility-framework-in-the-editor"></a>在編輯器中 managed Extensibility Framework
 編輯器是使用 Managed Extensibility Framework (MEF) 元件所建置。 您可以建置自己的 MEF 元件來擴充編輯器 中，和您的程式碼可以使用編輯器元件以及。

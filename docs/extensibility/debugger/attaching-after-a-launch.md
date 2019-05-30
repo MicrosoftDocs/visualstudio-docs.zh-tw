@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - debug engines, attaching to programs
 ms.assetid: 5a3600a1-dc20-4e55-b2a4-809736a6ae65
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1b0a34505cf32e0e3fd4dc18bfeab4588856dba4
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: d7a1ff749d340110707296c9d4958d13a3faa952
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63409954"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66350924"
 ---
 # <a name="attach-after-a-launch"></a>在啟動後附加
 程式啟動之後，偵錯工作階段已附加偵錯引擎 (DE) 至前述的程式。

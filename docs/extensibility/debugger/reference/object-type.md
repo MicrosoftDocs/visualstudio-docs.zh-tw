@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - OBJECT_TYPE enumeration
 ms.assetid: c4d246f9-8a98-44ec-b2bb-ff5c684f668e
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 08d50e3d3ddda55a7ff0f3fea333c5408b02878a
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: 726e4978ac2c474b1f23b90f409f25b8a58aceab
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65461035"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66349923"
 ---
 # <a name="objecttype"></a>OBJECT_TYPE
 指定運算式評估工具中的物件的類型。
