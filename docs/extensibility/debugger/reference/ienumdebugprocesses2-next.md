@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IEnumDebugProcesses2::Next
 ms.assetid: abef89eb-198b-49cd-a4c9-17bce6cac0e1
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 508c65ce211fcf9a187af0d41576276fc6ce6541
-ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.openlocfilehash: 734be605517adf4e127a7f1f936fb799449ce467
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/24/2019
-ms.locfileid: "66203336"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66326189"
 ---
 # <a name="ienumdebugprocesses2next"></a>IEnumDebugProcesses2::Next
 從列舉中傳回下的一個項目集。

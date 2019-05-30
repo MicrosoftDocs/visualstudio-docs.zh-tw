@@ -7,17 +7,17 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugPropertyDestroyEvent2 interface
 ms.assetid: 301b7a75-ecfa-46f1-9131-66cf3e4be147
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 80f345d7c6f3ed83d9f33206631a5a5327131a76
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: a52e9a1a3723566dd7a2dbdfc3cfe1a4d41261ed
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65457532"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66322749"
 ---
 # <a name="idebugpropertydestroyevent2"></a>IDebugPropertyDestroyEvent2
 這個介面會傳送偵錯引擎 (DE) 工作階段的偵錯管理員 (SDM) 與特定文件相關聯的屬性時即將終結。

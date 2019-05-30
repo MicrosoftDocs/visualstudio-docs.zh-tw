@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - solutions, about solutions
 ms.assetid: 3b21e3a1-170a-4485-941e-6b04b7b27886
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6fe348d3e6b5c896ff4c76965b918d41dfe00328
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 9405177e193349eeb6e7767b70af0ef82208cc4c
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62859324"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66322597"
 ---
 # <a name="solutions-overview"></a>解決方案概觀
 

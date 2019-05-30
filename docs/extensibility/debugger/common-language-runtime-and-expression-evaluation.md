@@ -6,17 +6,17 @@ helpviewer_keywords:
 - debugging [Debugging SDK], expression evaluation
 - expression evaluation, and common language runtime
 ms.assetid: b36c1eb5-1aaf-48a6-b287-ee7a273d2b1c
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e6fdbdcdf292d90fc63758c2b7d183225e63a850
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 803dbb75a5cc9ad2b4fc81310c3b564994fea734
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63411322"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66351301"
 ---
 # <a name="common-language-runtime-and-expression-evaluation"></a>Common language runtime 和運算式評估
 > [!IMPORTANT]
@@ -29,7 +29,7 @@ ms.locfileid: "63411322"
 
  一旦已剖析運算式，會呼叫的符號提供者 (SP) 可評估每個資料物件。 例如，如果"A"定義同時在多個方法中，問題"的 A？" 必須回答才能確定的值。 預存程序所傳回的答案是類似 「 第五個堆疊框架上第三個項目 」 或者 「 超過開頭的靜態記憶體的 50 個位元組的配置給這個方法 」。
 
- 除了產生 MSIL 的程式本身，CLR 編譯器也可以產生相當的描述性寫入程式資料庫的偵錯資訊 (*.pdb*) 檔案。 只要專屬語言編譯器會產生與 CLR 編譯器相同的格式中的偵錯資訊，在 CLR 預存程序是無法識別語言的具名資料物件。 一旦已識別的具名的資料物件，EE 使用繫結器物件建立關聯 （或繫結） 的資料物件會保留該物件的值之記憶體區域。 DE 然後可以取得或設定新的資料物件的值。
+ 除了產生 MSIL 的程式本身，CLR 編譯器也可以產生相當的描述性寫入程式資料庫的偵錯資訊 ( *.pdb*) 檔案。 只要專屬語言編譯器會產生與 CLR 編譯器相同的格式中的偵錯資訊，在 CLR 預存程序是無法識別語言的具名資料物件。 一旦已識別的具名的資料物件，EE 使用繫結器物件建立關聯 （或繫結） 的資料物件會保留該物件的值之記憶體區域。 DE 然後可以取得或設定新的資料物件的值。
 
  專利的編譯器可以提供偵錯資訊，藉由呼叫的 CLR`ISymbolWriter`介面 (定義於.NET Framework 命名空間中`System.Diagnostics.SymbolStore`)。 專利的編譯器編譯為 MSIL，並寫入偵錯資訊，透過這些介面，可以使用 CLR DE 和 SP 這可大幅簡化將專屬的語言整合到 Visual Studio IDE。
 

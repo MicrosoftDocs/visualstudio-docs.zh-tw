@@ -7,17 +7,17 @@ helpviewer_keywords:
 - language services, registry information
 - registry, language services
 ms.assetid: ca312aa3-f9f1-4572-8553-89bf3a724deb
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 77a7138e436002a0fda4e9ab72222821d2c9809e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 6747695c92d44b87ed4acc34f234b8ff06fd307e
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62909036"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66353360"
 ---
 # <a name="registering-a-legacy-language-service"></a>註冊舊版語言服務
 下列各節提供的登錄項目清單的各種語言中可用的服務選項[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]。
@@ -27,7 +27,7 @@ ms.locfileid: "62909036"
 ## <a name="registry-entries-for-language-service-options"></a>語言服務選項的登錄項目
  *VS Reg 根*\Languages\Language Services\\*語言名稱*索引鍵可以包含下列值。
 
-|名稱|類型|範圍|描述|
+|名稱|類型|Range|描述|
 |----------|----------|-----------|-----------------|
 |(預設值)|REG_SZ|*\<GUID>*|語言服務的 GUID。|
 |LangResID|REG_DWORD|0x0-0xffff|字串資源識別項 (ResID) 語言的當地語系化的文字名稱。|
@@ -64,7 +64,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp\
 ## <a name="registry-entries-for-debugger-languages-options"></a>如需偵錯工具的語言選項的登錄項目
  *VS Reg 根*\Languages\Language Services\\*語言名稱*\Debugger 語言\\*GUID*\ 索引鍵可以包含下列項目值。
 
-|名稱|類型|範圍|描述|
+|名稱|類型|Range|描述|
 |----------|----------|-----------|-----------------|
 |(預設值)|REG_SZ|文字|預設值可以用於文件的語言名稱。 此索引鍵的名稱會有對應的項目中的運算式評估工具的 GUID  *\<VS Reg 根 >* \AD7Metrics\Expression 評估工具。|
 
@@ -83,7 +83,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp\
 ## <a name="registry-entries-for-editor-tools-options"></a>編輯器工具選項的登錄項目
  您可以新增 EditorToolsOptions 機碼下的登錄機碼的屬性頁和屬性節點。 這些索引鍵和其值會識別中的屬性頁**選項** 對話方塊中 (在**工具**功能表)，用來設定語言服務。 在下列範例中，*頁面名稱*的 屬性 頁面中，名稱並*節點名稱*位於樹狀結構中節點的名稱**選項** 對話方塊。 必須個別指定，分頁項目和節點的項目。
 
-|名稱|類型|範圍|描述|
+|名稱|類型|Range|描述|
 |----------|----------|-----------|-----------------|
 |(預設值)|REG_SZ|ResID|此選項 頁面的當地語系化的顯示名稱。 名稱可以是常值文字或 #`nnn`，其中`nnn`附屬 DLL 的指定 VSPackage 中的字串資源 id。|
 |套件|REG_SZ|*GUID*|實作此選項頁面的 VSPackage 的 GUID。|
@@ -117,7 +117,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp\
 ## <a name="registry-entries-for-file-name-extension-options"></a>檔案名稱副檔名選項的登錄項目
  副檔名的項目應該包含前置的句點，例如".myext 」。
 
-|名稱|類型|範圍|描述|
+|名稱|類型|Range|描述|
 |----------|----------|-----------|-----------------|
 |(預設值)|REG_SZ|*GUID*|此檔案名稱副檔名類型的預設語言服務的服務 GUID。|
 
@@ -134,7 +134,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp\
 ## <a name="registry-entries-for-editor-options"></a>編輯器選項的登錄項目
  *VS Reg 根*\Editors 索引鍵可以包含下列值：
 
-|名稱|類型|範圍|描述|
+|名稱|類型|Range|描述|
 |----------|----------|-----------|-----------------|
 |(預設值)|REG_SZ|""|未使用;您可以將您的名稱如文件。|
 |DefaultToolboxTab|REG_SZ|""|若要將預設值，當編輯器是使用中的 [工具箱] 索引標籤的名稱。|
@@ -159,7 +159,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp\
 ## <a name="registry-entries-for-logical-view-options"></a>如需邏輯檢視選項的登錄項目
  *VS Reg 根*\Editors\\*編輯器 GUI >* \LogicalViews 索引鍵可以包含下列值。
 
-|名稱|類型|範圍|描述|
+|名稱|類型|Range|描述|
 |----------|----------|-----------|-----------------|
 |(預設值)|REG_SZ||未使用。|
 |*\<GUID>*|REG_SZ|""|若要支援的邏輯檢視的索引鍵。 視需要您可以有許多種。 登錄項目的名稱是什麼是重要的是，不是值，這一律是空字串。|
@@ -181,7 +181,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp\
 ## <a name="registry-entries-for-editor-extension-options"></a>如需編輯器延伸模組選項的登錄項目
  *VS Reg 根*\Editors\\*編輯器 GUID*\Extensions 索引鍵可以包含下列值。 檔案名稱的副檔名不包括前置的句點。
 
-|名稱|類型|範圍|描述|
+|名稱|類型|Range|描述|
 |----------|----------|-----------|-----------------|
 |(預設值)|REG_SZ||未使用。|
 |*\<ext>*|REG_DWORD|0-0xffffffff|擴充功能的相對優先權。 如果兩個或多個語言都共用同一個延伸模組，則會選擇較高優先順序的語言。|
@@ -207,7 +207,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\9.0\
 
  這些登錄項目透過存取<xref:Microsoft.VisualStudio.Package.LanguagePreferences>類別。
 
-|名稱|類型|範圍|描述|
+|名稱|類型|Range|描述|
 |----------|----------|-----------|-----------------|
 |CodeSense|REG_DWORD|0-1|IntelliSense 作業的支援。|
 |MatchBraces|REG_DWORD|0-1|成對大括號、 括號和方括號等的語言支援。|

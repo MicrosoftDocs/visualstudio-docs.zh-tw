@@ -4,17 +4,17 @@ ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
 ms.assetid: 8fb1334b-d78c-405f-98b4-786e9f6b58d7
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f14924ac9464cc6239564f775a122551a9d94c15
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 33288876d1a9101d96d4d2c0c0c7beb5e6f1ac72
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62843641"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66352246"
 ---
 # <a name="appliesto-element-visual-studio-templates"></a>AppliesTo 元素 （Visual Studio 範本）
 

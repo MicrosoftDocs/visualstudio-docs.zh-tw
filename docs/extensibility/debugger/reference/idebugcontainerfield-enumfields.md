@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugContainerField::EnumFields method
 ms.assetid: 9e5e681b-ad49-4c62-bd95-4afa11d61a57
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 368b076f592cff44e95e7156265c049a143fe1a3
-ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.openlocfilehash: a6d3edeb677af728b1a0fd0e9cf8685e7919d79e
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/24/2019
-ms.locfileid: "66205819"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66317936"
 ---
 # <a name="idebugcontainerfieldenumfields"></a>IDebugContainerField::EnumFields
 建立容器的欄位的列舉值。

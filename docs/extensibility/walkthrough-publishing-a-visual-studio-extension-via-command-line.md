@@ -6,17 +6,17 @@ helpviewer_keywords:
 - publishing extensions
 - extension, publishing
 ms.assetid: 6ff9efc4-919d-4071-a80d-6dbdd2ceb2f8
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: be9585158235dadb6e415e88e42e2d324ba8fcbe
-ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
-ms.translationtype: HT
+ms.openlocfilehash: 8a6b5531bc5dc138f2f90a0a67da39f9583bc4b0
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66261672"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66320642"
 ---
 # <a name="walkthrough-publishing-a-visual-studio-extension-via-command-line"></a>逐步解說：發行的 Visual Studio 擴充功能，透過命令列
 

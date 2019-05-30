@@ -9,17 +9,17 @@ helpviewer_keywords:
 - keyboard shortcuts
 - menu items
 ms.assetid: 19f483b6-4d3e-424e-9d68-dc129c788e47
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8dc28a64d42d2184734142c68aef95cbc3b1d245
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: c9bfcf3a94a5615df892ab0ad88dca44c16e97b8
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63410127"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66352177"
 ---
 # <a name="bind-keyboard-shortcuts-to-menu-items"></a>將鍵盤快速鍵繫結至功能表項目
 若要將鍵盤快速鍵繫結至自訂功能表命令，請加入一個項目 *.vsct*封裝檔案。 本主題說明如何將鍵盤快速鍵對應至自訂的按鈕、 功能表項目或工具列命令，以及如何套用的預設編輯器中的鍵盤對應或將它限制成自訂編輯器。

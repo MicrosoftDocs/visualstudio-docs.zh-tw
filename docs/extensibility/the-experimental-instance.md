@@ -7,17 +7,17 @@ helpviewer_keywords:
 - VSPackages, experimental builds
 - VSIP, experimental builds
 ms.assetid: ead0df4e-6f88-4b42-9297-581b7902f050
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 493ab672322db2826f8f7e7675decdda0a531538
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 773581e7cf9e0f12f507dcd3c768d88724da9f80
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63435063"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66316423"
 ---
 # <a name="the-experimental-instance"></a>實驗執行個體
 為了確保您的 Visual Studio 開發環境，從未經測試的應用程式可能會變更，請 VSSDK 提供實驗性的空間，可供您實驗。 像往常一樣，使用 Visual Studio 開發新的應用程式，但您使用此實驗的執行個體執行。
@@ -26,7 +26,7 @@ ms.locfileid: "63435063"
 
  如果您想要開始在特定的方案之外的 Visual Studio 實驗執行個體，請在命令視窗執行下列命令：
 
- "*\<Visual studio installation path>* \Common7\IDE\devenv.exe" /RootSuffix Exp
+ " *\<Visual studio installation path>* \Common7\IDE\devenv.exe" /RootSuffix Exp
 
 > [!NOTE]
 > 實驗性的執行個體底下的登錄寫入`<version number>Exp`和`<version number>Exp_Config`節點。 例如 Visual Studio 2015 實驗登錄區是

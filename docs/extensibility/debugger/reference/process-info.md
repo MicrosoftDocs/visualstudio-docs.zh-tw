@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - PROCESS_INFO structure
 ms.assetid: 260c33cc-a05e-4645-84b6-536d0b3b0537
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 3a3418aaa9c2e14454d71d26c0e364ae04244127
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: 2f8333dd697f265480c46ed7edbfbea1a48970ae
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65457961"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66309334"
 ---
 # <a name="processinfo"></a>PROCESS_INFO
 包含處理序的相關資訊。

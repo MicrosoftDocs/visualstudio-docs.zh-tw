@@ -8,17 +8,17 @@ helpviewer_keywords:
 - UsedCommands element (VSCT XML schema)
 - VSCT XML schema elements, UsedCommands
 ms.assetid: 5e000ee0-a919-46e9-9277-2a0659f1eb78
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e951776df807cae1b66cbc3564b9ee7a3d0165ae
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e43834517855f72dd32c024c222089cf42c7c3ac
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62432030"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66316289"
 ---
 # <a name="usedcommands-element"></a>UsedCommands 項目
 UsedCommands 元素分組 UsedCommand 元素和其他 UsedCommands 分組。

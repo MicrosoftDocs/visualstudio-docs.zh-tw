@@ -7,17 +7,17 @@ f1_keywords:
 helpviewer_keywords:
 - IEnumDebugCustomAttributes interface
 ms.assetid: 11aa768d-1852-44d6-9de3-17f9bafaded2
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c3c93bde1395a1eec960085c640463e70dee3397
-ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
+ms.openlocfilehash: e706999595033ac76508eaa5e3b3f995839ceaea
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65225849"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66321549"
 ---
 # <a name="ienumdebugcustomattributes"></a>IEnumDebugCustomAttributes
 列舉自訂屬性。

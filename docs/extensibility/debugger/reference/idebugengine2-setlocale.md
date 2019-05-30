@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugEngine2::SetLocale
 ms.assetid: cd0d2cf1-2aac-43da-a830-4bb3d696c219
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: e0434904b71ff1858cc784396fbafa40096d7669
-ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.openlocfilehash: 62330b3002486969af563413cf6f7893c9d7881d
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/24/2019
-ms.locfileid: "66207503"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66322389"
 ---
 # <a name="idebugengine2setlocale"></a>IDebugEngine2::SetLocale
 設定偵錯引擎 (DE) 的地區設定。

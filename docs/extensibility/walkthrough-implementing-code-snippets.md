@@ -3,17 +3,17 @@ title: 逐步解說：實作程式碼片段 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: adbc5382-d170-441c-9fd0-80faa1816478
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8ae22475fa488d93ac4660fdc0cf567f50b32029
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 2e4b6d0346ce10c780254b26a4f2c710ed171ef5
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62965150"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66320742"
 ---
 # <a name="walkthrough-implement-code-snippets"></a>逐步解說：實作程式碼片段
 您可以建立程式碼片段，並將它們包含在編輯器擴充功能，以便延伸模組的使用者可以將它們加入自己的程式碼。
@@ -157,7 +157,7 @@ ms.locfileid: "62965150"
 2. 建置並執行專案。 在實驗執行個體中，開啟檔案具有 *.zzz*檔案副檔名，然後再以滑鼠右鍵按一下任何位置中。 **插入程式碼片段**命令應該會出現快顯功能表。
 
 ## <a name="implement-snippet-expansion-in-the-snippet-picker-ui"></a>在程式碼片段選擇器 UI 中的實作程式碼片段展開
- 本節說明如何實作程式碼程式碼片段展開，使程式碼片段選擇器 UI 顯示何時**插入程式碼片段**快顯功能表上按一下。 使用者類型的程式碼片段捷徑，然後按下時，也會展開程式碼片段** 索引標籤**。
+ 本節說明如何實作程式碼程式碼片段展開，使程式碼片段選擇器 UI 顯示何時**插入程式碼片段**快顯功能表上按一下。 使用者類型的程式碼片段捷徑，然後按下時，也會展開程式碼片段 **索引標籤**。
 
  若要顯示程式碼片段選擇器 UI，並啟用導覽和接受後插入程式碼片段，使用<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.Exec%2A>方法。 插入本身由<xref:Microsoft.VisualStudio.TextManager.Interop.IVsExpansionClient.OnItemChosen%2A>方法。
 
@@ -200,7 +200,7 @@ ms.locfileid: "62965150"
      [!code-csharp[VSSDKCompletionTest#32](../extensibility/codesnippet/CSharp/walkthrough-implementing-code-snippets_11.cs)]
      [!code-vb[VSSDKCompletionTest#32](../extensibility/codesnippet/VisualBasic/walkthrough-implementing-code-snippets_11.vb)]
 
-8. 若要在使用者型別對應的捷徑，然後按下時插入程式碼片段** 索引標籤**，將程式碼加入<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.Exec%2A>方法。 私用方法，將程式碼片段會顯示在稍後的步驟。 您在上一個步驟中新增的瀏覽程式碼之後新增下列程式碼。
+8. 若要在使用者型別對應的捷徑，然後按下時插入程式碼片段 **索引標籤**，將程式碼加入<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.Exec%2A>方法。 私用方法，將程式碼片段會顯示在稍後的步驟。 您在上一個步驟中新增的瀏覽程式碼之後新增下列程式碼。
 
      [!code-csharp[VSSDKCompletionTest#33](../extensibility/codesnippet/CSharp/walkthrough-implementing-code-snippets_12.cs)]
      [!code-vb[VSSDKCompletionTest#33](../extensibility/codesnippet/VisualBasic/walkthrough-implementing-code-snippets_12.vb)]
@@ -240,10 +240,10 @@ ms.locfileid: "62965150"
 
      請勿按**Enter**或是**Esc**。
 
-5. 按下** 索引標籤**並**Shift**+**索引標籤**"first"和 「 秒 」 之間切換。
+5. 按下 **索引標籤**並**Shift**+**索引標籤**"first"和 「 秒 」 之間切換。
 
 6. 藉由按下其中一個接受插入**Enter**或是**Esc**。
 
-7. 在文字的不同部分中，輸入 「 測試 」，然後按** 索引標籤**。由於 「 測試 」 程式碼片段捷徑，應該再次插入程式碼片段。
+7. 在文字的不同部分中，輸入 「 測試 」，然後按 **索引標籤**。由於 「 測試 」 程式碼片段捷徑，應該再次插入程式碼片段。
 
 ## <a name="next-steps"></a>後續步驟

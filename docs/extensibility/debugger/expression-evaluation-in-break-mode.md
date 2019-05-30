@@ -7,17 +7,17 @@ helpviewer_keywords:
 - debugging [Debugging SDK], expression evaluation
 - expression evaluation, break mode
 ms.assetid: 34fe5b58-15d5-4387-a266-72120f90a4b6
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a31bc56673ec9e82206a8829aaf89328eb9198d6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: af231333981697705ba58fe505b0bf55304b8287
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62925677"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66353831"
 ---
 # <a name="expression-evaluation-in-break-mode"></a>在中斷模式中的運算式評估
 下一節說明偵錯工具處於中斷模式，以及必須進行運算式評估時所發生的程序。

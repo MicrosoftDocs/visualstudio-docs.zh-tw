@@ -6,20 +6,20 @@ helpviewer_keywords:
 - IDebugExpressionEvaluator2::GetService
 - GetService
 ms.assetid: f8988a9e-9d18-42af-84a7-55f41e9adf63
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: b775963f9ab708e92a37cda9a3ff50bc67c9b2cf
-ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.openlocfilehash: 42a4027b4153f262eb8164a915f229f04c7cbed4
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/24/2019
-ms.locfileid: "66211753"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66325556"
 ---
 # <a name="idebugexpressionevaluator2getservice"></a>IDebugExpressionEvaluator2::GetService
 擷取服務物件指定的唯一識別碼。

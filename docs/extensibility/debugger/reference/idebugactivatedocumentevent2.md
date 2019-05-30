@@ -7,17 +7,17 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugActivateDocumentEvent2 interface
 ms.assetid: 6f37edd7-a48c-4b41-b160-dff9be63a284
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: fd113dec63d98e54e72cc68c333d009db4e35a04
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: f4f473c7fd13e51de608684fc44466b7bdeac2b1
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56677835"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66317975"
 ---
 # <a name="idebugactivatedocumentevent2"></a>IDebugActivateDocumentEvent2
 偵錯引擎 (DE) 會使用此介面來要求要載入的文件。

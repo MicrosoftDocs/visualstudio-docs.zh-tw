@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - BP_RESOLUTION_LOCATION structure
 ms.assetid: 21dc5246-69c1-43e3-855c-9cd4e596c0e6
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: ea1e70c40846b382364067eae473ec27777b5526
-ms.sourcegitcommit: 77b4ca625674658d5c5766e684fa0e2a07cad4da
+ms.openlocfilehash: ed287f2d90e1ee92c7e0fd4ae685fbb9f38854f4
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/14/2019
-ms.locfileid: "65615364"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66350589"
 ---
 # <a name="bpresolutionlocation"></a>BP_RESOLUTION_LOCATION
 指定的中斷點解析位置的結構。

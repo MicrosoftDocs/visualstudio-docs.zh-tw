@@ -6,17 +6,17 @@ helpviewer_keywords:
 - debugging [Debugging SDK], enumerating locals
 - expression evaluation, enumerating locals
 ms.assetid: 254a88e7-d3a7-447a-bd0c-8985e73d85cf
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: df5db60d81d6cb814764e935d5ead909c4c7c476
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 32700d32b65503cf696b180793e0d9d471571b0a
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62889729"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66315465"
 ---
 # <a name="enumerate-locals"></a>列舉區域變數
 > [!IMPORTANT]

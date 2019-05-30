@@ -6,17 +6,17 @@ helpviewer_keywords:
 - expression evaluators
 - debugging [Debugging SDK], expression evaluators
 ms.assetid: e9ada7be-845e-4baa-bf8f-e4890e7ba490
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e468c24690926cef62ba56e7b58a178580f90490
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 66a1a0cb78036982923d20e39a3a4c32b288e459
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63411248"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66326200"
 ---
 # <a name="implement-an-expression-evaluator"></a>實作運算式評估工具
 > [!IMPORTANT]

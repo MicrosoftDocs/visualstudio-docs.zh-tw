@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugObject2::IsEncOutdated method
 ms.assetid: d3a8c02d-895b-478c-9957-d663130f308e
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 3ca5b4818f66363159dacf950766c6104aab4a34
-ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.openlocfilehash: 9b2d26b49f3d2597e12e11a323a9281bd5c676fa
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/24/2019
-ms.locfileid: "66209802"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66317408"
 ---
 # <a name="idebugobject2isencoutdated"></a>IDebugObject2::IsEncOutdated
 這個方法會決定 編輯後繼續狀態，這個物件或父容器是否已過期。 自訂運算式評估工具不會實作這個方法，一律會傳回`E_NOTIMPL`。

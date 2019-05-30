@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - debug engines, modes
 ms.assetid: f69972d0-809d-40df-9da3-04738791391c
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b06b073fc915e29e911ebd5eb4947383e1bb4c9e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 81011a6962bc874188aa04b6b1bb8ea538f3db49
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62889460"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66351527"
 ---
 # <a name="operational-modes"></a>作業模式
 有三種模式，在其中 IDE 可以操作，如下所示：

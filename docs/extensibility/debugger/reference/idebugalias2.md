@@ -5,17 +5,17 @@ ms.topic: reference
 helpviewer_keywords:
 - IDebugAlias2 interface
 ms.assetid: 5252dcbb-8bfe-4d8a-a8e5-b022b194df19
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: fda0b686f06bc16b13832d300711ac96a3a19785
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: abd220cd8c67318981fda79d3be8a0014ab61de1
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63414096"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66321718"
 ---
 # <a name="idebugalias2"></a>IDebugAlias2
 > [!IMPORTANT]

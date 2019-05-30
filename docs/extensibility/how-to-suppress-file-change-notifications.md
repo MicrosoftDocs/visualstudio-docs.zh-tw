@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - suppress file change notification
 ms.assetid: 891c1eb4-f6d0-4073-8df0-2859dbd417ca
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 47647910b53b5f86b828ec87c62019b76204f124
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 2d7acfb4a5a680aa4be6e93187560cd66b68fa3b
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62911557"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66324916"
 ---
 # <a name="how-to-suppress-file-change-notifications"></a>HOW TO：隱藏檔案變更通知
 當已變更之實體的檔案，表示文字緩衝區時，對話方塊會顯示與訊息**您要儲存下列項目的變更嗎？** 這就是檔案變更通知。 如果檔案要許多變更，不過，不斷地顯示此對話方塊中可能很快就會造成困擾。

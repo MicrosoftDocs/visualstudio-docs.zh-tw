@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - editorconfig [extensibility]
 - editorconfig, supporting in a language service
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: be9502569fd57da630da949ba14bbfc5e9045a22
-ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
-ms.translationtype: HT
+ms.openlocfilehash: 5c6974c7943a751f50cafb0b141ba9c1dfc85677
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66261807"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66353500"
 ---
 # <a name="supporting-editorconfig-for-your-language-service"></a>支援 EditorConfig 語言服務
 

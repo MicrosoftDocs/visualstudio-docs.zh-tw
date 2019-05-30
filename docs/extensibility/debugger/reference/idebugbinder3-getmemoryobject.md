@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugBinder3::GetMemoryObject method
 ms.assetid: 71d959c7-45df-485f-b0ee-f1c0439d54fb
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 7741ad4f7b587cbd31888e643557c744ca4200e2
-ms.sourcegitcommit: 77b4ca625674658d5c5766e684fa0e2a07cad4da
+ms.openlocfilehash: b5386d6b4d32b34b708b7d213cf1a6e96ec0651a
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/14/2019
-ms.locfileid: "65614949"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66327039"
 ---
 # <a name="idebugbinder3getmemoryobject"></a>IDebugBinder3::GetMemoryObject
 這個方法會擷取表示這個物件會繫結至記憶體的記憶體物件。

@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugObject2::GetAlias method
 ms.assetid: aa6824d5-c932-42ba-8713-950e7d1fb42f
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 7e9a40db04342bcf75f6099c9143c38bf8b83482
-ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.openlocfilehash: db9156e01843e859a2279e43f73c00bee21b3e9c
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/24/2019
-ms.locfileid: "66210043"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66308734"
 ---
 # <a name="idebugobject2getalias"></a>IDebugObject2::GetAlias
 如果有的話，請取得與這個物件相關聯的別名。
