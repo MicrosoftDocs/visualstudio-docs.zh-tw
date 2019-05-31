@@ -6,17 +6,17 @@ helpviewer_keywords:
 - services, Visual Studio
 - Visual Studio, services
 ms.assetid: 724eb24b-b87c-4971-a2e7-adee7afc03b2
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 87a2b604b27b58c40f1ba1ad8628fe2be06701e5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 6bd7aea3adbb3a732b83736e5824d775824cccdb
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62860355"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66344846"
 ---
 # <a name="list-of-available-services"></a>可用服務清單
 

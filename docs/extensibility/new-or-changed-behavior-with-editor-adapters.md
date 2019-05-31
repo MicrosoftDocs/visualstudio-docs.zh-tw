@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - adapter behavior
 ms.assetid: 5555b116-cfdb-4773-ba62-af80fda64abd
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 63c04e808228898e7542f67ec72bf9d36203547d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 0cefa9cfaa0d40ecc0491068c0c89be5910bfc27
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62433652"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66344060"
 ---
 # <a name="new-or-changed-behavior-with-editor-adapters"></a>新增或變更的行為，與編輯器的介面卡
 如果您要更新舊版的 Visual Studio 核心編輯器中，針對已撰寫的程式碼，而且您想要使用的編輯器介面卡 （或填充碼），而不是使用新的 API，您應留意下列差異編輯器配接器的行為相對於前一個核心編輯器中。

@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - PROGRAM_NODE_ARRAY structure
 ms.assetid: 8eeea600-eda5-4b7c-868a-0b86d177b0a5
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: ac5a891912d84a719a8bf475724f0b1cb7d685d4
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: b4b2cbda4bce24c08297734e9b50a004ea9a67dc
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65457935"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66309259"
 ---
 # <a name="programnodearray"></a>PROGRAM_NODE_ARRAY
 包含描述感興趣的程式物件的陣列。

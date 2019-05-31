@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - web projects, essentials
 ms.assetid: ca2f4e43-322c-4431-8680-52da846940bc
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 30ffd684eb6527ee73e54cc590dc3e4b1d3c51d3
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 3ddc8bcef8612459ce9816e79250ba8b93194292
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63429345"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66323304"
 ---
 # <a name="web-project-essentials"></a>Web 專案的基本資訊
 Web 專案建立 Web 應用程式。 您可以使用 Web 專案來建立智慧型 Web 網頁的 Web 應用程式。 智慧型的網頁上具有呈現網頁上，依需求的伺服器端程式碼。
@@ -32,7 +32,7 @@ Web 專案建立 Web 應用程式。 您可以使用 Web 專案來建立智慧�
 
   - Web 應用程式專案 (WAP) 會產生單一的可執行檔的所有智慧網頁，以及在 /App_Code 資料夾中的所有原始程式檔中結合程式碼。
 
-- Web 專案的方案檔位於與網站本身分開。 根據預設，方案檔會位於 \Documents and 設定\\*YourAccount*\My 文件\\*\<Visual Studio # # # >* \Projects\\ *YourWebSite*。
+- Web 專案的方案檔位於與網站本身分開。 根據預設，方案檔會位於 \Documents and 設定\\*YourAccount*\My 文件\\ *\<Visual Studio # # # >* \Projects\\ *YourWebSite*。
 
   > [!NOTE]
   > 如果您想要保留與網站的方案檔，只要那里移動，並重新開啟它。

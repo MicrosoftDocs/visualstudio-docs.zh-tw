@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - METADATA_ADDRESS_PARAM structure
 ms.assetid: 90904f19-0e71-4cb3-a56e-6a2e92f66dfc
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: d978f8108d35ab999c8ac2aea6fc068d889d3a95
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: 066b6da356a3f9a2047d010f1308ab1f90be65a2
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65460978"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66347263"
 ---
 # <a name="metadataaddressparam"></a>METADATA_ADDRESS_PARAM
 此結構表示的方法或函式的參數。

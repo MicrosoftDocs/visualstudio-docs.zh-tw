@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - JMC_CODE_SPEC structure
 ms.assetid: d89498f1-4234-46d9-b4e2-abbcbca5068a
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 4fe0a804922296e26846b9b477091883c742253e
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: b9bc6d5c57c3d3c53b043f1ff5140beb8055a8c0
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65458088"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66339267"
 ---
 # <a name="jmccodespec"></a>JMC_CODE_SPEC
 此結構用來設定模組的 JustMyCode 資訊。

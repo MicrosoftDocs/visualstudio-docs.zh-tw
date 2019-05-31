@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - getting the DTE object
 ms.assetid: c1f40bab-c6ec-45b0-8333-ea5ceb02a39d
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9c3e21ea3d05350a59d62fc9da9e0387f072ec16
-ms.sourcegitcommit: 62f42113ae4dae1ddfff1c4e02445acc09913445
+ms.openlocfilehash: 1fb22793c3bfa805fae11c8bbea7f07c06fd5a85
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/29/2019
-ms.locfileid: "64878205"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66322796"
 ---
 # <a name="walkthrough-access-the-dte-object-from-an-editor-extension"></a>逐步解說：從編輯器擴充功能存取 DTE 物件
 

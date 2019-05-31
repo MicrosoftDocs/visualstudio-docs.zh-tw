@@ -7,17 +7,17 @@ helpviewer_keywords:
 - editors [Visual Studio SDK], colorizing text
 - text, colorizing in editors
 ms.assetid: 96e762ca-efd0-41e7-8958-fda4897c8c7a
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 15659cc8061601776e3a3197a49f14e2c824aa7b
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 3f577f4cf21110a1b40680059b385d413c9c6902
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63420433"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66324228"
 ---
 # <a name="implementing-syntax-coloring"></a>實作語法著色
 當語言服務會提供語法顏色標示時、 剖析器將一行文字轉換成陣列的可設定色彩的項目，並傳回語彙基元的型別對應至這些色彩的項目。 剖析器應該會傳回屬於可設定色彩的項目清單的語彙基元型別。 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 根據色彩標示器物件指派給適當的語彙基元型別屬性的程式碼 視窗中顯示每個可設定色彩的項目。

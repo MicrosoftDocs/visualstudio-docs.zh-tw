@@ -5,20 +5,17 @@ ms.topic: reference
 helpviewer_keywords:
 - IDebugArrayObject2 interface
 ms.assetid: be6e504d-4ab3-4141-a61b-0953ee0e038e
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-dev_langs:
-- CPP
-- CSharp
-ms.openlocfilehash: fb66f52cc6fb5e9dfd370f45388218b3eda34eb5
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: e35e012139b7df261f25ea524d0b13abf63b555e
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63414145"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66349683"
 ---
 # <a name="idebugarrayobject2"></a>IDebugArrayObject2
 > [!IMPORTANT]

@@ -6,17 +6,17 @@ helpviewer_keywords:
 - GetMethodProperty method
 - IDebugExpressionEvaluator2 property
 ms.assetid: 6305874f-a2c4-4432-834c-07530ea84bff
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: fa0ef14b64f3d7bf89e103d8a262af174475fdff
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f802733f74677a0426a99fb662302d816ad34721
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62925482"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66344286"
 ---
 # <a name="implement-getmethodproperty"></a>實作 GetMethodProperty
 > [!IMPORTANT]

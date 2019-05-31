@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - FIELD_INFO structure
 ms.assetid: bfafef6d-0c83-43d7-a779-1f0d24b166a1
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 83cdacae192ad1286203139432a0eacd632b8511
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 352e4bdf6c79dc67f0bf396cb1164e96e80fbf5f
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56694223"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66337707"
 ---
 # <a name="fieldinfo"></a>FIELD_INFO
 此結構描述的本機變數、 參數或其他欄位。
@@ -45,15 +48,20 @@ public struct FIELD_INFO {
 ```
 
 ## <a name="members"></a>成員
-dwFields A 中的旗標的組合[FIELD_INFO_FIELDS](../../../extensibility/debugger/reference/field-info-fields.md)列舉，指定哪些成員會填入。
+`dwFields`\
+從旗標的組合[FIELD_INFO_FIELDS](../../../extensibility/debugger/reference/field-info-fields.md)列舉，指定哪些成員會填入。
 
-bstrFullName 欄位的完整名稱。
+`bstrFullName`\
+欄位的完整名稱。
 
-bstrName 欄位的簡短名稱。
+`bstrName`\
+欄位的簡短名稱。
 
-bstrType 欄位的型別。
+`bstrType`\
+欄位類型。
 
-dwModifiers A 中的旗標的組合[FIELD_MODIFIERS](../../../extensibility/debugger/reference/field-modifiers.md)描述欄位的列舉型別。
+`dwModifiers`\
+從旗標的組合[FIELD_MODIFIERS](../../../extensibility/debugger/reference/field-modifiers.md)描述欄位的列舉型別。
 
 ## <a name="remarks"></a>備註
 此結構會傳遞至[GetInfo](../../../extensibility/debugger/reference/idebugfield-getinfo.md)填滿其中的方法。

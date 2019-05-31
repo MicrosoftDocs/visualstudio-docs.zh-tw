@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - highlight text
 ms.assetid: 64b772ad-4392-42e9-a237-5137f0384bf0
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 085d2aff138be1d6beecc5e0895437e92d88da87
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: e7ae97c500ced1da67013fd6f12307edc0828dbf
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63444999"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66312473"
 ---
 # <a name="walkthrough-highlight-text"></a>逐步解說：反白顯示文字
 您可以新增至編輯器的不同視覺效果，藉由建立 Managed Extensibility Framework (MEF) 元件組件。 本逐步解說示範如何以反白顯示目前的文字在文字檔中的每個相符項目。 如果在單字出現超過一次在文字檔案中，您將插入號放一次，每個相符項目會反白顯示。

@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugAlias::Dispose method
 ms.assetid: e84909a4-d378-4f48-bf25-2c014c77c8e3
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d35b5819aa0354581721f02a931aa7bdf679b70d
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: c84fc6887eb2594f9665924bd3eafa5452a3135c
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56714953"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66330283"
 ---
 # <a name="idebugaliasdispose"></a>IDebugAlias::Dispose
 將標示為移除此別名。
@@ -32,7 +35,7 @@ HRESULT Dispose();
 int Dispose();
 ```
 
-#### <a name="parameters"></a>參數
+## <a name="parameters"></a>參數
  無。
 
 ## <a name="return-value"></a>傳回值

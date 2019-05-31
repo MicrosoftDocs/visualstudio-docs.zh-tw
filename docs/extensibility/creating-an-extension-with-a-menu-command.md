@@ -8,17 +8,17 @@ helpviewer_keywords:
 - tutorials
 - visual studio package
 ms.assetid: f97104c8-2bcb-45c7-a3c9-85abeda8df98
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3e8e98a20fafc825af0cf9486c8a9939c02e3b5f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: fb18792e2d0d357bb131af6c12e97425cd72fd05
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62891060"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66345377"
 ---
 # <a name="create-an-extension-with-a-menu-command"></a>建立具有功能表命令的擴充功能
 
@@ -32,7 +32,7 @@ ms.locfileid: "62891060"
 
 1. 建立 VSIX 專案，名為**FirstMenuCommand**。 您可以找到在 VSIX 專案範本**新的專案**藉由搜尋 「 vsix 」 的對話方塊。
 
-2. 當專案開啟時，新增名為的自訂命令項目範本**FirstCommand**。 在 **方案總管**，以滑鼠右鍵按一下專案節點，然後選取**新增** > **新項目**。 在 **加入新項目**對話方塊中，移至**Visual C#** > **擴充性**，然後選取**自訂命令**。 在 **名稱**視窗的底部欄位中，將命令的檔案名稱變更為*FirstCommand.cs*。
+2. 當專案開啟時，新增名為的自訂命令項目範本**FirstCommand**。 在 **方案總管**，以滑鼠右鍵按一下專案節點，然後選取**新增** > **新項目**。 在 **加入新項目**對話方塊中，移至**Visual C#**  > **擴充性**，然後選取**自訂命令**。 在 **名稱**視窗的底部欄位中，將命令的檔案名稱變更為*FirstCommand.cs*。
 
 3. 建置此專案並開始偵錯。
 
@@ -50,7 +50,7 @@ ms.locfileid: "62891060"
 
 ::: moniker-end
 
-現在請移至**工具**實驗執行個體中的功能表。 您應該會看到**叫用 FirstCommand**命令。 到目前為止，將此命令會顯示訊息方塊，指出**FirstCommandPackage 內 FirstMenuCommand.FirstCommand.MenuItemCallback()**。 我們會看到如何實際從下一節中的此命令啟動 「 記事本 」。
+現在請移至**工具**實驗執行個體中的功能表。 您應該會看到**叫用 FirstCommand**命令。 到目前為止，將此命令會顯示訊息方塊，指出**FirstCommandPackage 內 FirstMenuCommand.FirstCommand.MenuItemCallback()** 。 我們會看到如何實際從下一節中的此命令啟動 「 記事本 」。
 
 ## <a name="change-the-menu-command-handler"></a>變更功能表命令處理常式
 

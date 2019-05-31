@@ -6,18 +6,18 @@ helpviewer_keywords:
 - start page commands
 - vs:VSCommands
 ms.assetid: a8e2765c-cfb5-47b5-a414-6e48b434e0c2
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
 monikerRange: vs-2017
-ms.openlocfilehash: 68bea9ff0d91819146cc5d89167373e0e8ed6f3a
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 86fe084d2dab10ed7370f5fc5b99931491b096be
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63410106"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66352288"
 ---
 # <a name="add-visual-studio-commands-to-a-start-page"></a>將 Visual Studio 命令加入至起始頁
 

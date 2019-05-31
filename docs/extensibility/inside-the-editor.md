@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - architecture
 ms.assetid: 822cbb8d-7ab4-40ee-bd12-44016ebcce81
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3979138944671ff2809f4f73beb0a28b222ec5ff
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 155d760ee546b1e35b733a00ac9a67722742f9b5
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62861761"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66340795"
 ---
 # <a name="inside-the-editor"></a>在編輯器內
 
@@ -108,7 +108,7 @@ A<xref:Microsoft.VisualStudio.Text.SnapshotPoint>表示快照集內的字元位�
 
 #### <a name="spans-and-normalizedspancollections"></a>範圍和 NormalizedSpanCollections
 
-A<xref:Microsoft.VisualStudio.Text.Span>間隔會套用至一段文字快照集內的文字。 快照集位置都以零起始，因此範圍可以包含零的任何位置。 `End`範圍的屬性的總和等於其`Start`屬性並將其`Length`屬性。 A`Span`不包含由編製索引的字元`End`屬性。 例如，具有的起始範圍 = 5 且長度 = 3 的結束 = 8，而且它包含在位置 5、 6 和 7 個字元。 此範圍標記法是 5..8）。
+A<xref:Microsoft.VisualStudio.Text.Span>間隔會套用至一段文字快照集內的文字。 快照集位置都以零起始，因此範圍可以包含零的任何位置。 `End`範圍的屬性的總和等於其`Start`屬性並將其`Length`屬性。 A`Span`不包含由編製索引的字元`End`屬性。 例如，具有的起始範圍 = 5 且長度 = 3 的結束 = 8，而且它包含在位置 5、 6 和 7 個字元。 此範圍標記法是 [5..8)。
 
 兩個範圍有交集，如果其共有任何位置，包括結尾的位置。 因此，交集的 [3, 5) 和 [2, 7) 是 [3, 5) 和交集的 [3, 5) 和 [5, 7) 為 [5，5）。 (請注意，[5，5) 是空的範圍。)
 

@@ -6,17 +6,17 @@ ms.topic: reference
 helpviewer_keywords:
 - Description element [Visual Studio project templates]
 ms.assetid: 6e12be73-081f-4c7d-898f-027c307a9fe1
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4f21edd218b815785161e8d68af76b0f6c2594a2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 68b9df33051de1c4b4bb70321e0caff7df2e91f4
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62912698"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66348111"
 ---
 # <a name="description-element-visual-studio-templates"></a>Description 項目 （Visual Studio 範本）
 指定範本的描述中所顯示的樣子**新的專案**或是**加入新項目** 對話方塊。

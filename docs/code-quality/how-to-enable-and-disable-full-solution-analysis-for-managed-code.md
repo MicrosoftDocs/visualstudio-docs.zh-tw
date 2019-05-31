@@ -1,5 +1,5 @@
 ---
-title: HOW TO：啟用和停用 Managed 程式碼的完整解決方案分析
+title: 啟用及停用 managed 程式碼的完整解決方案分析
 ms.date: 03/23/2018
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,14 +9,14 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: dbd4cf06a5d51a668acc5c980e7e93a94f2992f2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a445439014e3b1f68b634865265089eb68e790a6
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62816441"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66260881"
 ---
-# <a name="how-to-enable-and-disable-full-solution-analysis-for-managed-code"></a>HOW TO：啟用和停用 managed 程式碼的完整解決方案分析
+# <a name="how-to-enable-and-disable-full-solution-analysis-for-managed-code"></a>作法：啟用和停用 managed 程式碼的完整解決方案分析
 
 *完整解決方案分析*是一種 Visual Studio 功能，可讓您查看程式碼分析問題，只在開啟的視覺效果C#或 Visual Basic 檔案中您的方案，或已關閉的程式碼檔案中。 根據預設，會完整解決方案分析*啟用*Visual basic 中，並*停用*視覺效果C#。
 

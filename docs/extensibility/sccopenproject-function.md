@@ -7,17 +7,17 @@ f1_keywords:
 helpviewer_keywords:
 - SccOpenProject function
 ms.assetid: d609510b-660a-46d7-b93d-2406df20434d
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1cc82f81475f742a05abb063bfd3b5a51b7fe2b8
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: ebb8f4250b4ef4c022c5c21d748e025ca31e35a7
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63434632"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66353595"
 ---
 # <a name="sccopenproject-function"></a>SccOpenProject 函式
 此函式會開啟現有的原始檔控制專案，或建立新的。

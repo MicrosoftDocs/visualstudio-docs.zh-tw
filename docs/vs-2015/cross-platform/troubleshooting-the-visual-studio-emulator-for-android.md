@@ -8,12 +8,12 @@ ms.assetid: f3fb5df4-3aae-40e4-9450-bbe15b0c5af5
 caps.latest.revision: 25
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: 62f40ffaa4df57672238274ca3a459dd3204bce3
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 4e9aa77848c3784b1df7a2c1f32651b8d00e5998
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63417092"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66263377"
 ---
 # <a name="troubleshooting-the-visual-studio-emulator-for-android"></a>Troubleshooting the Visual Studio Emulator for Android
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -143,7 +143,7 @@ ms.locfileid: "63417092"
 
 - 確定符合最低硬體需求且 BIOS 設定正確無誤。
 
-   模擬器和 Windows 8 Hyper-V 需要支援第二層位址轉譯 (SLAT) 的 64 位元處理器。 針對 Intel，您基本上需要 Core i3、i5 或 i7 處理器 (或多個 Xeon 中的其中一個)。 AMD 晶片清單可在 [這裡](http://support.amd.com/en-us)取得。
+   模擬器和 Windows 8 Hyper-V 需要支援第二層位址轉譯 (SLAT) 的 64 位元處理器。 針對 Intel，您基本上需要 Core i3、i5 或 i7 處理器 (或多個 Xeon 中的其中一個)。 AMD 晶片清單可在 [這裡](https://www.amd.com/en/support)取得。
 
   1. 確定您的電腦符合 [系統需求](../cross-platform/system-requirements-for-the-visual-studio-emulator-for-android.md)。
 
@@ -179,7 +179,7 @@ ms.locfileid: "63417092"
 
   6. 確定您執行的是 Windows 8 Professional (含) 以後版本 (不支援 Windows Server 2008)。 支援 Windows Server 2012，但您必須啟用 [桌面體驗]。
 
-     您可以檢查事件檢視器，以查看是否有任何 Hypervisor 錯誤。 若要執行這個動作，請開啟事件檢視器 (開始鍵 + R，接著輸入 `eventvwr`)，並選取 [Windows 記錄] 、[系統] 。 然後依事件來源篩選記錄，並將來源設定為 [Hyper-V-Hypervisor] 。 請查看錯誤，以協助找出根本原因。
+     您可以檢查事件檢視器，以查看是否有任何 Hypervisor 錯誤。 若要執行這個動作，請開啟事件檢視器 (開始鍵 + R，接著輸入 `eventvwr`)，並選取 [Windows 記錄]  、[系統]  。 然後依事件來源篩選記錄，並將來源設定為 [Hyper-V-Hypervisor]  。 請查看錯誤，以協助找出根本原因。
 
      如果您的處理器符合最低需求，但 Hypervisor 仍然失敗，建議您了解電腦是否有可用的 BIOS 升級。 如果有，而且您選擇升級，則當您升級 BIOS 時，請務必遵守製造商的所有注意事項 (例如，確保 BIOS 韌體升級不會因電源中斷而中斷，這可能會永久損毀 BIOS)。
 
@@ -239,7 +239,7 @@ ms.locfileid: "63417092"
 
      解除安裝協力廠商產品之後，您可能需要還原 Windows Phone 模擬器內部交換器。 若要執行這個動作：
 
-  - 開啟 Hyper V 並移至虛擬交換器管理員。 建立名為「Windows Phone 模擬器內部交換器」的虛擬交換器，然後將其連線類型設定為 [內部網路] 。
+  - 開啟 Hyper V 並移至虛擬交換器管理員。 建立名為「Windows Phone 模擬器內部交換器」的虛擬交換器，然後將其連線類型設定為 [內部網路]  。
 
      ![虛擬交換器管理員](../cross-platform/media/android-emu-virtual-switch-manager.png "Android_Emu_Virtual_Switch_Manager")
 
@@ -259,7 +259,7 @@ ms.locfileid: "63417092"
 ## <a name="ADB"></a> Visual Studio 在嘗試將應用程式部署至模擬器時遇遭困難，或模擬器未作為偵錯目標出現在其他 IDE 中
  若模擬器正在執行，但似乎未連接到 ADB (Android Debug Bridge) 或未顯示在使用 ADB (例如 Android Studio 或 Eclipse) 的 Android 工具 中，則您可能需要調整模擬器尋找 ADB 的位置。 模擬器使用登錄機碼來識別您的 Android SDK 的基礎位置，並尋找該目錄下的 \platform-tools\adb.exe 檔案。 若要修改模擬器所使用的 Android SDK 路徑：
 
-- 從 [開始] 按鈕內容功能選取 [執行]  ，在對話方塊中輸入 `regedit` ，然後選擇 [確定] ，以開啟登錄編輯程式。
+- 從 [開始] 按鈕內容功能選取 [執行]  ，在對話方塊中輸入 `regedit` ，然後選擇 [確定]  ，以開啟登錄編輯程式。
 
 - 巡覽至左側資料夾樹狀目錄中的 HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Android SDK Tools。
 
@@ -283,15 +283,15 @@ ms.locfileid: "63417092"
 
 1. 開啟 [HYPER-V 管理員]，然後選取 VM 以供您使用的模擬器設定檔使用。
 
-2. 選取 [刪除儲存狀態]\(右下方)。
+2. 選取 [刪除儲存狀態]\  (右下方)。
 
-3. 選擇 [設定...]
+3. 選擇 [設定...] 
 
-4. 展開處理器節點，然後選擇 [相容性]。
+4. 展開處理器節點，然後選擇 [相容性]  。
 
-5. 啟用 [移轉至使用不同處理器版本的實體電腦]。
+5. 啟用 [移轉至使用不同處理器版本的實體電腦]  。
 
-6. 重新啟動服務 (位於 [動作] 下方)，然後再試一次。
+6. 重新啟動服務 (位於 [動作]  下方)，然後再試一次。
 
 ## <a name="GooglePlay"></a> 模擬器無法執行使用 Google Play Services 的應用程式
  Google Play 服務的程式庫未隨附模擬器。 但模擬器支援可刷新之 zip 檔案的拖放安裝。
@@ -300,7 +300,7 @@ ms.locfileid: "63417092"
  當您將檔案拖放到畫面上時，模擬器會使用 ADB.exe 來協助傳輸檔案。 如果您在嘗試拖放檔案時發生錯誤，可能表示模擬器並未連接到 ADB.exe。 若要解決，請遵循 [Visual Studio 在嘗試將應用程式部署至模擬器時遇遭困難，或模擬器未作為偵錯目標出現在其他 IDE 中](#ADB)取得。
 
 ## <a name="Resolution"></a> 螢幕擷取畫面的解析度不正確
- 如果您使用 [其他工具]  視窗中的 [螢幕擷取畫面] 索引標籤取得螢幕擷取畫面，但所產生的影像不是預期的大小，您可能需要調整螢幕的縮放比例，再選擇 [擷取] 。 模擬器會以您主機電腦螢幕的螢幕解析度，來取得螢幕擷取畫面。
+ 如果您使用 [其他工具]  視窗中的 [螢幕擷取畫面] 索引標籤取得螢幕擷取畫面，但所產生的影像不是預期的大小，您可能需要調整螢幕的縮放比例，再選擇 [擷取]  。 模擬器會以您主機電腦螢幕的螢幕解析度，來取得螢幕擷取畫面。
 
 ## <a name="OpenGL"></a> 模擬器無法轉譯 OpenGL 內容
  模擬器使用您主機電腦的 GPU 來轉譯 OpenGL 內容，並使用 ANGLE 專案將這些呼叫轉換成 DirectX，或從 DirectX 轉換成這些呼叫。 如果您的應用程式在裝置上正確地呈現，但在模擬器上卻不正確地呈現，可能是裝置正在緩和不正確的 OpenGL 呼叫 (例如使用不相符的著色器變數)。

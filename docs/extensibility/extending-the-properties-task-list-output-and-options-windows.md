@@ -1,5 +1,5 @@
 ---
-title: 擴充屬性、 工作清單、 輸出和選項的 Windows |Microsoft Docs
+title: 擴充屬性，工作清單中，輸出中，選項視窗
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,17 +10,17 @@ helpviewer_keywords:
 - tutorials
 - tool windows
 ms.assetid: 06990510-5424-44b8-9fd9-6481acec5c76
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a0e38daa68999da32c3b667a5e220c622b012667
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 5186d7c16f89201b43ebabc49215c0afff4bbfd4
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63417229"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66337121"
 ---
 # <a name="extend-the-properties-task-list-output-and-options-windows"></a>擴充屬性、 工作清單、 輸出和選項的 windows
 您可以存取任何 Visual Studio 中的 [工具] 視窗。 本逐步解說示範如何整合到新的工具視窗的相關資訊**選項**頁面和新的設定上**屬性**頁面上，以及如何將寫入**工作清單**並**輸出**windows。

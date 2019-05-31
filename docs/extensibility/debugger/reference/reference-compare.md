@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - REFERENCE_COMPARE enumeration
 ms.assetid: e31cdc78-f621-498b-9ca4-aefa790b9f6f
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 947063690840dfb3c49e2c41e6178cbc67dc714b
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: d166917ec9770e3f8d1f41f3774676278b894724
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65457905"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66322350"
 ---
 # <a name="referencecompare"></a>REFERENCE_COMPARE
 指定參考的比較類型。

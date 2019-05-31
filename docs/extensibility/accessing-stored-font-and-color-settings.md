@@ -7,17 +7,17 @@ helpviewer_keywords:
 - font and color control [Visual Studio SDK], persistence
 - colors, accessing stored settings
 ms.assetid: beba7174-e787-45c2-b6ff-a60f67ad4998
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c270c67d21c023310df5b25c015afa754787a33f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: fcc0d8ad5b195b15652e8af3a2f1400827f8c628
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62843874"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66313687"
 ---
 # <a name="access-stored-font-and-color-settings"></a>存取預存的字型和色彩設定
 
@@ -25,7 +25,7 @@ Visual Studio 整合式的開發環境 (IDE) 會儲存修改字型和色彩的�
 
 ## <a name="to-initiate-state-persistence-of-fonts-and-colors"></a>若要起始狀態持續性的字型和色彩
 
-字型和色彩資訊會儲存下列登錄位置中依分類: [HKCU\SOFTWARE\Microsoft \Visual Studio\\*\<Visual Studio 版本 >* \FontAndColors\\ *\<CategoryGUID >*]，其中 *\<CategoryGUID >* 類別 GUID。
+字型和色彩資訊會儲存下列登錄位置中依分類: [HKCU\SOFTWARE\Microsoft \Visual Studio\\ *\<Visual Studio 版本 >* \FontAndColors\\ *\<CategoryGUID >* ]，其中 *\<CategoryGUID >* 類別 GUID。
 
 因此，若要起始持續性，VSPackage 必須：
 

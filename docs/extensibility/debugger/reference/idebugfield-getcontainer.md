@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugField::GetContainer method
 ms.assetid: 6d6c8213-6181-4adf-9584-3e4cac163dd8
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 08ce207a4961ed9345c46ca7d19390647dc514b1
-ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.openlocfilehash: e335a9461917077439fc7dfe49e8c061891a9cd9
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/24/2019
-ms.locfileid: "66212280"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66352671"
 ---
 # <a name="idebugfieldgetcontainer"></a>IDebugField::GetContainer
 這個方法會取得容器的欄位。

@@ -5,17 +5,17 @@ ms.topic: reference
 helpviewer_keywords:
 - debugging [Debugging SDK], core interfaces
 ms.assetid: 666b9116-8550-4bdd-bc15-55fc57de87df
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 37e8b8e47b306f8b99e378cf407c0faf0955c737
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 76381731da62507217fb4408f20be6e8c35baa56
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60084865"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66346378"
 ---
 # <a name="core-interfaces"></a>核心介面
 下列介面會擴充偵錯工具所使用的核心介面[!INCLUDE[vsipsdk](../../../extensibility/includes/vsipsdk_md.md)]。

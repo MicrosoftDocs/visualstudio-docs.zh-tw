@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IEnumCodePaths2::Clone
 ms.assetid: 9d5c6bc6-7e72-4f1b-801c-7192458f3ba8
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 85a3df07e782c022ab1e40ad311b10e7a3f7ae96
-ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.openlocfilehash: 10f93130ca1bda866684ed8e212baef199a2a1ec
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/24/2019
-ms.locfileid: "66209856"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66310195"
 ---
 # <a name="ienumcodepaths2clone"></a>IEnumCodePaths2::Clone
 傳回一份目前的列舉，為個別的物件。

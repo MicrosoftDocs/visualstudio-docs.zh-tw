@@ -12,12 +12,12 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 7969ca0a5900ae08d1aac6634f961d45bbfac564
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: a33911ffe8c28dd84166e3e16ac6b7f0f48f583c
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65674159"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66263021"
 ---
 # <a name="walkthrough-creating-a-multiple-computer-build-environment"></a>逐步解說：建立多電腦建置環境
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -197,7 +197,7 @@ ms.locfileid: "65674159"
   
    - \Microsoft.VC110.OPENMP\vcomp110.dll  
   
-5. 只將下列檔案從 \Debug_NonRedist\x86\ 或 \Debug_NonRedist\x64\ 資料夾複製到組建電腦，如[準備測試電腦以執行偵錯可執行檔](https://msdn.microsoft.com/library/f0400989-cc2e-4dce-9788-6bdbe91c6f5a)中所述。 不會複製其他任何檔案。  
+5. 只將下列檔案從 \Debug_NonRedist\x86\ 或 \Debug_NonRedist\x64\ 資料夾複製到組建電腦，如[準備測試電腦以執行偵錯可執行檔](/cpp/windows/preparing-a-test-machine-to-run-a-debug-executable)中所述。 不會複製其他任何檔案。  
   
    - \Microsoft.VC110.DebugCRT\msvcp110d.dll  
   
@@ -417,12 +417,12 @@ ms.locfileid: "65674159"
   
 6. 變更命令列環境，如下所示：  
   
-    - 設定 Depot=「您在步驟 1 中建立的 Depot 目錄位置」  
+    - 設定 Depot=「您在步驟 1 中建立的 Depot 目錄位置」   
   
     - 設定 path=%路徑%;*電腦上的 MSBuild 位置*;%Depot%\Windows\System32;%Depot%\Windows\SysWOW64;%Depot%\Microsoft Visual Studio 11.0\Common7\IDE\  
   
          如需原生 64 位元建置，請指向 64 位元 MSBuild。  
   
 ## <a name="see-also"></a>請參閱  
- [準備測試電腦以執行偵錯可執行檔](https://msdn.microsoft.com/library/f0400989-cc2e-4dce-9788-6bdbe91c6f5a)   
+ [準備測試電腦以執行偵錯可執行檔](/cpp/windows/preparing-a-test-machine-to-run-a-debug-executable)   
  [命令列參考](../msbuild/msbuild-command-line-reference.md)

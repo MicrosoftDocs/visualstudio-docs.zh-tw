@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - BP_LOCATION union
 ms.assetid: ed1e874c-f289-4c31-8b6c-04dde03ad0f5
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 94e731b56bf5c7554edf11620435cd24778e8e9d
-ms.sourcegitcommit: 77b4ca625674658d5c5766e684fa0e2a07cad4da
+ms.openlocfilehash: d0d196342c834ed9f7fd9bf70859ae2b061344e2
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/14/2019
-ms.locfileid: "65615351"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66353033"
 ---
 # <a name="bplocation"></a>BP_LOCATION
 指定用來描述中斷點的位置的結構類型。

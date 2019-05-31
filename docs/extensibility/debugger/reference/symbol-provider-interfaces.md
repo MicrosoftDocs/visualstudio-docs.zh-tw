@@ -7,17 +7,17 @@ helpviewer_keywords:
 - symbol handler, interfaces
 - symbol handler, evaluating variables
 ms.assetid: 4201f10e-c9f7-4b38-bb45-40fe0082d5bf
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a7cc522f2398c2f26612e665673c5d6db46bea1f
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: ec20da7f2860d2b74cde0286a8480d28738c0a31
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65460764"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66329141"
 ---
 # <a name="symbol-provider-interfaces"></a>Symbol Provider Interfaces
 以下是符號處理介面[!INCLUDE[vsipsdk](../../../extensibility/includes/vsipsdk_md.md)]。

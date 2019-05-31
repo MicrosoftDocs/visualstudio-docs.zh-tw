@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugClassField::EnumNestedClasses method
 ms.assetid: 2ba5ef0c-395e-4006-9e3c-9b06e1d711d0
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: cf46b0a143b61be6897caa0adb03ab40c375e7bb
-ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.openlocfilehash: 75b963f7a342a9ce2b276cc03ea5dece9316ff6d
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/24/2019
-ms.locfileid: "66206865"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66313117"
 ---
 # <a name="idebugclassfieldenumnestedclasses"></a>IDebugClassField::EnumNestedClasses
 建立此類別中巢狀類別的列舉值。
@@ -49,7 +49,7 @@ int EnumNestedClasses(
 ## <a name="remarks"></a>備註
 列舉型別的每個項目是[IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md)描述巢狀的類別的物件。
 
-巢狀的類別是定義在另一個類別的類別。 例如：
+巢狀的類別是定義在另一個類別的類別。 例如: 
 
 ```
 class RootClass {

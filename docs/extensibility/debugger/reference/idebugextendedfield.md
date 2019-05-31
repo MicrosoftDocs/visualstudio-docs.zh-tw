@@ -5,17 +5,17 @@ ms.topic: reference
 helpviewer_keywords:
 - IDebugExtendedField interface
 ms.assetid: b491499c-af57-47da-87d6-34b7398f6591
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ed0b7300fca935a88b6da9e878d87f5ce443bec9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3a9e8f8e8414b6066bb8a407449a4b588d948bc4
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62873912"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66333211"
 ---
 # <a name="idebugextendedfield"></a>IDebugExtendedField
 擴充欄位，可支援 managed 程式碼的泛型的類型。

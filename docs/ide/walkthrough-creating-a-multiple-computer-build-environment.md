@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d2ca4e45c83aa3291b922694ebd16df5ab7fc35e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 9b6f956adee315cc8c5d229a237e953de67f9c16
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62581635"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66262943"
 ---
 # <a name="walkthrough-create-a-multiple-computer-build-environment"></a>逐步解說：建立多電腦建置環境
 
@@ -169,7 +169,7 @@ ms.locfileid: "62581635"
 
     - \Microsoft.VC110.OPENMP\vcomp110.dll
 
-5. 只將下列檔案從 *Debug_NonRedist\x86* 或 *Debug_NonRedist\x64* 資料夾複製到組建電腦，如[準備測試電腦以執行偵錯可執行檔](/cpp/ide/preparing-a-test-machine-to-run-a-debug-executable)中所述。 不會複製其他任何檔案。
+5. 只將下列檔案從 *Debug_NonRedist\x86* 或 *Debug_NonRedist\x64* 資料夾複製到組建電腦，如[準備測試電腦以執行偵錯可執行檔](/cpp/windows/preparing-a-test-machine-to-run-a-debug-executable)中所述。 不會複製其他任何檔案。
 
     - \Microsoft.VC110.DebugCRT\msvcp110d.dll
 
@@ -407,5 +407,5 @@ MSBuild 必須將一些額外的組件安裝到組建電腦上的 GAC。
 
 ## <a name="see-also"></a>另請參閱
 
-- [準備測試電腦以執行偵錯可執行檔](/cpp/ide/preparing-a-test-machine-to-run-a-debug-executable)
+- [準備測試電腦以執行偵錯可執行檔](/cpp/windows/preparing-a-test-machine-to-run-a-debug-executable)
 - [命令列參考](../msbuild/msbuild-command-line-reference.md)

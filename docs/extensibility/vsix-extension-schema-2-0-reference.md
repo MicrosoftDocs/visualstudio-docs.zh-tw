@@ -6,17 +6,17 @@ helpviewer_keywords:
 - vsix
 - extension schema
 ms.assetid: 0da81b98-f5e3-40d3-ba9a-94551378d0b4
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7cf2840c22bcddb9090cb078be6a8ad53d1ca1aa
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 2c6672fea1f3998f46c171ab7e9164291e12588f
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63411133"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66322857"
 ---
 # <a name="vsix-extension-schema-20-reference"></a>VSIX 延伸結構描述 2.0 參考
 VSIX 部署資訊清單檔描述 VSIX 封裝的內容。 檔案格式是結構描述所決定。 此結構描述的 2.0 版支援的自訂型別和屬性加入。  資訊清單的結構描述是 「 可延伸的。 它並不了解的 XML 元素和屬性，則會忽略資訊清單的載入器。

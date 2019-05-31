@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IEnumDebugObjects::Clone method
 ms.assetid: cb7df109-d29a-4218-b900-6809091459dd
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: d965c4eb4c6caff361a32ef39c58f8770ec498a0
-ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.openlocfilehash: 11724f9d384993acde411aa650fa42df38166a5b
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/24/2019
-ms.locfileid: "66203518"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66339625"
 ---
 # <a name="ienumdebugobjectsclone"></a>IEnumDebugObjects::Clone
 這個方法會傳回一份目前的列舉，為個別的物件。

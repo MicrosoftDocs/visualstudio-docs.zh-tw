@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - BP_LOCATION_TYPE structure
 ms.assetid: 0248430a-3b61-4809-87a9-e9b6bb7d1130
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1695c61a829cf1439ed773e48088430f36f8c653
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 930c3a51173f18ccdad236e285f374bd885c880c
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56715657"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66353039"
 ---
 # <a name="bplocationtype"></a>BP_LOCATION_TYPE
 指定中斷點要求的中斷點位置類型。
@@ -65,36 +68,51 @@ public enum enum_BP_LOCATION_TYPE {
 };
 ```
 
-## <a name="members"></a>成員
-BPLT_NONE 指定任何中斷點的位置。
+## <a name="fields"></a>欄位
+`BPLT_NONE`\
+不指定任何中斷點的位置。
 
-BPLT_FILE_LINE 指定中斷點的位置類型為的檔案。
+`BPLT_FILE_LINE`\
+指定中斷點的位置類型為的檔案。
 
-BPLT_FUNC_OFFSET 指定中斷點的位置類型當作函式位移。
+`BPLT_FUNC_OFFSET`\
+指定中斷點的位置類型當作函式位移。
 
-BPLT_CONTEXT 做為內容指定中斷點的位置類型。
+`BPLT_CONTEXT`\
+指定中斷點的位置類型做為內容。
 
-BPLT_STRING 指定中斷點的位置類型為字串。
+`BPLT_STRING`\
+指定中斷點的位置類型為字串。
 
-BPLT_ADDRESS 會指定為位址中斷點的位置類型。
+`BPLT_ADDRESS`\
+指定中斷點的位置類型為位址。
 
-BPLT_RESOLUTION 解析為指定中斷點位置的類型。
+`BPLT_RESOLUTION`\
+指定中斷點的位置類型做為解析度。
 
-BPLT_CODE_FILE_LINE 會指定為來源的程式碼行中斷點的位置類型。
+`BPLT_CODE_FILE_LINE`\
+指定中斷點的位置類型做為來源的程式碼行。
 
-BPLT_CODE_FUNC_OFFSET 指定中斷點的位置類型的程式碼的函式位移。
+`BPLT_CODE_FUNC_OFFSET`\
+指定中斷點的位置類型的程式碼的函式位移。
 
-BPLT_CODE_CONTEXT 指定中斷點的位置類型做為程式碼內容。
+`BPLT_CODE_CONTEXT`\
+指定中斷點的位置類型做為程式碼內容。
 
-BPLT_CODE_STRING 指定中斷點的位置類型做為程式碼的字串。
+`BPLT_CODE_STRING`\
+為程式碼字串中指定中斷點位置的類型。
 
-BPLT_CODE_ADDRESS 指定中斷點的位置類型做為程式碼位址。
+`BPLT_CODE_ADDRESS`\
+為程式碼位址中指定中斷點位置的類型。
 
-BPLT_DATA_STRING 指定中斷點的位置類型做為資料字串。
+`BPLT_DATA_STRING`\
+指定中斷點的位置類型做為資料字串。
 
-BPLT_TYPE_MASK 指定位元遮罩，如此中斷點類型可擷取出的值。
+`BPLT_TYPE_MASK`\
+指定位元遮罩，如此中斷點類型可擷取出的值。
 
-BPLT_LOCATION_TYPE_MASK 指定位元遮罩，如此中斷點位置類型可以擷取出的值。
+`BPLT_LOCATION_TYPE_MASK`\
+指定位元遮罩，如此中斷點位置類型可以擷取出的值。
 
 ## <a name="remarks"></a>備註
 做為參數傳遞[GetLocationType](../../../extensibility/debugger/reference/idebugbreakpointrequest2-getlocationtype.md)方法。

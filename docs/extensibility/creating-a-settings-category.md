@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - profile settings, creating categories
 ms.assetid: 97c88693-05ff-499e-8c43-352ee073dcb7
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 304b2afd734527b80a465fc5074077bf8b0661fe
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 02ef202436e12ae075c41f507577bacaa968c60b
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63411324"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66341587"
 ---
 # <a name="create-a-settings-category"></a>建立設定類別
 
@@ -96,9 +96,9 @@ ms.locfileid: "63411324"
 
 3. 在樹狀檢視中的左窗格中，依序展開**My Category** ，然後按一下**我的格線頁**。
 
-4. 值變更**OptionFloat** 3.1416 到並**OptionInteger**到 12。 按一下 [確定] 。
+4. 值變更**OptionFloat** 3.1416 到並**OptionInteger**到 12。 按一下 [確定]  。
 
-5. 按一下 [工具] 功能表上的 [匯入和匯出設定]。
+5. 按一下 [工具]  功能表上的 [匯入和匯出設定]  。
 
      **匯入和匯出設定** 精靈隨即出現。
 
@@ -137,13 +137,13 @@ ms.locfileid: "63411324"
 
 11. 關閉 設定檔，而不變更它。
 
-12. 在上**工具**] 功能表中，按一下**選項**，展開**My Category**，按一下 [**我的格線頁**然後再將值變更**OptionFloat**為 1.0 和**OptionInteger**為 1。 按一下 [確定] 。
+12. 在上**工具**] 功能表中，按一下**選項**，展開**My Category**，按一下 [**我的格線頁**然後再將值變更**OptionFloat**為 1.0 和**OptionInteger**為 1。 按一下 [確定]  。
 
 13. 在上**工具** 功能表中，按一下**匯入和匯出設定**，選取**匯入選取的環境設定**，然後按一下**下一步**。
 
      **儲存目前的設定**頁面隨即出現。
 
-14. 選取 [**否，只需匯入新的設定**，然後按一下**下一步]**。
+14. 選取 [**否，只需匯入新的設定**，然後按一下**下一步]** 。
 
      **選擇的設定集合來匯入**頁面隨即出現。
 

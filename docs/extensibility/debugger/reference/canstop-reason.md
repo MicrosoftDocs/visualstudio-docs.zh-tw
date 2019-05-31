@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - CANSTOP_REASON enumeration
 ms.assetid: 6da944eb-36cd-4a8c-8d71-544c775cfcc1
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: bbc4143c61a0223fe3940b4167748727d1ebd560
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 18861d7aa19281528e9a100f57399451194598a9
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56711614"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66327243"
 ---
 # <a name="canstopreason"></a>CANSTOP_REASON
 用來判斷是否程式可能會停止在達到執行中的特定點之後執行。
@@ -39,10 +42,12 @@ public enum enum_CANSTOP_REASON {
 };
 ```
 
-## <a name="members"></a>成員
-CANSTOP_ENTRYPOINT 指定特定程式的進入點。
+## <a name="fields"></a>欄位
+`CANSTOP_ENTRYPOINT`\
+指定特定程式的進入點。
 
-CANSTOP_STEPIN 指定逐步執行函式。
+`CANSTOP_STEPIN`\
+指定 逐步執行函式。
 
 ## <a name="remarks"></a>備註
 作為引數[GetReason](../../../extensibility/debugger/reference/idebugcanstopevent2-getreason.md)方法，以確認與工作階段進行偵錯管理員 (SDM)，如果可以停止或逐步執行函式或方法之後到達該程式的進入點。

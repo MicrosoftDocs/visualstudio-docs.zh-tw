@@ -7,17 +7,17 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugMethodField interface
 ms.assetid: a7dc9030-fc98-4cf1-b943-37a4003300b6
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e5373be45884e5229fe03f88f364e75a9cb81f20
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 8a4b8557226ad010968772562aa787472f159900
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62918704"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66324097"
 ---
 # <a name="idebugmethodfield"></a>IDebugMethodField
 此介面描述的方法。

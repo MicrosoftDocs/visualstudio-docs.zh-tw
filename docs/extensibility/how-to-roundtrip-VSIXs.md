@@ -4,16 +4,16 @@ ms.date: 06/25/2017
 ms.topic: conceptual
 ms.assetid: 2d6cf53c-011e-4c9e-9935-417edca8c486
 author: willbrown
-ms.author: gregvanl
+ms.author: madsk
 manager: justinclareburt
 ms.workload:
 - willbrown
-ms.openlocfilehash: 1014d76473511df9b73cae371e5e5dea2364f8b2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 4680adaf23abd01e72901c9a470633addbf0d924
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62862786"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66324890"
 ---
 # <a name="how-to-make-extensions-compatible-with-visual-studio-2017-and-visual-studio-2015"></a>HOW TO：讓擴充功能與 Visual Studio 2017 和 Visual Studio 2015 相容
 
@@ -51,7 +51,7 @@ ms.locfileid: "62862786"
 
 ## <a name="ensure-there-is-no-reference-to-projectjson"></a>請確定沒有任何以 project.json 參考
 
-在本文中，稍後我們會插入條件式匯入陳述式中的您 **.csproj*檔案。 如果您的 NuGet 參考會儲存在這將無法運作*project.json*。 因此，建議您移動所有 NuGet 參考*packages.config*檔案。
+在本文中，稍後我們會插入條件式匯入陳述式中的您 * *.csproj*檔案。 如果您的 NuGet 參考會儲存在這將無法運作*project.json*。 因此，建議您移動所有 NuGet 參考*packages.config*檔案。
 如果您的專案包含*project.json*檔案：
 
 * 請記下的在參考*project.json*。
@@ -189,7 +189,7 @@ Visual Studio 2017 | Microsoft.VSSDK.BuildTool
 
 * 加入額外的條件式陳述式來`<Error>`Microsoft.VisualStudio.Sdk.BuildTasks.14.0 的標記。 插入`'$(VisualStudioVersion)' == '14.0' And`條件陳述式前面。 這些陳述式會出現在頁尾中的 csproj 檔案。
 
-例如：
+例如: 
 
 ```xml
 <Error Condition="'$(VisualStudioVersion)' == '14.0' And Exists('packages\Microsoft.VisualStudio.Sdk.BuildTasks.14.0.14.0…" />

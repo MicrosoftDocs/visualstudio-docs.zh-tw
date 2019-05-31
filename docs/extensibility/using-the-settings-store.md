@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - Settings Store, using
 ms.assetid: 447ec08a-eca5-40b8-89b0-f98fdf3d39a4
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ca57c279ceabd03f48ffaa564d42f7d023b39887
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: b4487020232b897d62711bb9053f43ad2ef2694f
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63434190"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66338101"
 ---
 # <a name="using-the-settings-store"></a>使用設定存放區
 有兩種類型的設定存放區：

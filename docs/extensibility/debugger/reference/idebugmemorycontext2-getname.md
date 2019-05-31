@@ -8,20 +8,20 @@ helpviewer_keywords:
 - IDebugMemoryContext2::GetName method
 - GetName method
 ms.assetid: 8c212556-7d9e-4d68-b2a9-8212f50d0287
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 829c89d39c7e5d15ec63efec5db9cc7e34004483
-ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.openlocfilehash: ee8dd65a3bcaef7fd5a23da6c2a5f9c21a4838af
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/24/2019
-ms.locfileid: "66210430"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66347001"
 ---
 # <a name="idebugmemorycontext2getname"></a>IDebugMemoryContext2::GetName
 擷取此內容的使用者可顯示名稱。

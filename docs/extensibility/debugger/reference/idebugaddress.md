@@ -7,17 +7,17 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugAddress interface
 ms.assetid: bc709ff7-4966-4f36-9af2-690efe2cea1d
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7b9aba2be92516bab86f39eee55a3df4586eb09c
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 653d2424d21a18e7053f66e0a74214ecc25d97da
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56677957"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66317927"
 ---
 # <a name="idebugaddress"></a>IDebugAddress
 這個介面來表示項目的位址。 它會傳回符號處理常式。

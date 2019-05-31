@@ -9,17 +9,17 @@ helpviewer_keywords:
 - ProjectItem element [Visual Studio project templates]
 - <ProjectItem> element [Visual Studio project templates]
 ms.assetid: 82879fbe-7756-42cd-9a07-c10edf5b4673
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1bb7766d96e142fc9208b2e102c2dc57059212d8
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 09f062575cc7d0978fbacede32cfe22d0f98a71c
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63434802"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66335958"
 ---
 # <a name="projectitem-element-visual-studio-project-templates"></a>ProjectItem 項目 （Visual Studio 專案範本）
 指定專案範本中所包含的檔案。
@@ -92,7 +92,7 @@ ms.locfileid: "63434802"
    <ProjectItem TargetFileName="$safeprojectname$.vb">MyFile.vb</ProjectItem>
    ```
 
-2. 開啟專案檔案 (*.vbproj* for[!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]專案) 中的文字編輯器或[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]。
+2. 開啟專案檔案 ( *.vbproj* for[!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]專案) 中的文字編輯器或[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]。
 
 3. 看起來類似下列的 XML 專案檔中找到的一行：
 

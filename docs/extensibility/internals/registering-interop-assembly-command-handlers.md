@@ -6,17 +6,17 @@ helpviewer_keywords:
 - interop assemblies, command handlers
 - command handling with interop assemblies, registering
 ms.assetid: 303cd399-e29d-4ea1-8abe-5e0b59c12a0c
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b07f018a35874e2ffc3f3be825abb227f2996aea
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: b3e90ffc6b065b6d69bbe09bfe1887764ccc9955
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63425460"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66353325"
 ---
 # <a name="registering-interop-assembly-command-handlers"></a>註冊 Interop 組件命令處理常式
 VSPackage 必須向[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]以便整合式的開發環境 (IDE) 正確地路由傳送它的命令。
@@ -28,10 +28,10 @@ VSPackage 必須向[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]�
 - [命令資料表格式參考](https://msdn.microsoft.com/library/09e9c6ef-9863-48de-9483-d45b7b7c798f)資源位於未受管理的附屬 UI 的 dll。
 
 ## <a name="command-handler-registration-of-a-vspackage"></a>VSPackage 的命令處理常式註冊
- VSPackage，做為使用者介面 (UI) 的處理常式為基礎的命令需要命名 VSPackage 的登錄項目`GUID`。 此登錄項目指定 VSPackage 的 UI 資源檔和該檔案中的功能表資源的位置。 登錄項目本身位於 hkey_local_machine\software\microsoft\visualstudio \\\*\<版本 >* \Menus，其中*\<版本 >* 是的新版[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]，例如 9.0。
+ VSPackage，做為使用者介面 (UI) 的處理常式為基礎的命令需要命名 VSPackage 的登錄項目`GUID`。 此登錄項目指定 VSPackage 的 UI 資源檔和該檔案中的功能表資源的位置。 登錄項目本身位於 hkey_local_machine\software\microsoft\visualstudio\\ *\<版本>* \Menus，其中 *\<版本>* 是的新版[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]，例如 9.0。
 
 > [!NOTE]
-> Hkey_local_machine\software\microsoft\visualstudio \ 的根路徑\\*\<版本 >* 可以覆寫以替代 root 時[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]shell 初始化。 如需詳細的根路徑的詳細資訊，請參閱[使用 Windows Installer 安裝 Vspackage](../../extensibility/internals/installing-vspackages-with-windows-installer.md)。
+> Hkey_local_machine\software\microsoft\visualstudio \ 的根路徑\\ *\<版本 >* 可以覆寫以替代 root 時[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]shell 初始化。 如需詳細的根路徑的詳細資訊，請參閱[使用 Windows Installer 安裝 Vspackage](../../extensibility/internals/installing-vspackages-with-windows-installer.md)。
 
 ### <a name="the-ctmenu-resource-registry-entry"></a>CTMENU 的資源登錄項目
  結構的登錄項目是：

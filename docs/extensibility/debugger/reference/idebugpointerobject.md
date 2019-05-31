@@ -7,17 +7,17 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugPointerObject interface
 ms.assetid: 257fa167-b46e-4ffb-9a12-272efbf26702
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: db0122ab12d74f6a4dd2885671067dcfe5f3254f
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: c884f2794031d92add956bf4364824165ee1edfb
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63413496"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66343934"
 ---
 # <a name="idebugpointerobject"></a>IDebugPointerObject
 > [!IMPORTANT]

@@ -9,17 +9,17 @@ helpviewer_keywords:
 - ProjectSubType element [Visual Studio Templates]
 - <ProjectSubType> element [Visual Studio Templates]
 ms.assetid: f6895cd4-3e95-4f0e-aa9e-8c7750f46ed4
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a395a3c8026a4730fde0cff2d222f616e671ee1a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 16852378609b058bc1f5c1c02ea2ad54a37a2ac9
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62433537"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66335914"
 ---
 # <a name="projectsubtype-element-visual-studio-templates"></a>ProjectSubType 項目 （Visual Studio 範本）
 將範本分類的子類別目錄中指定的值為`ProjectType`項目。

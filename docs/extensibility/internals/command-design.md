@@ -6,23 +6,23 @@ helpviewer_keywords:
 - commands
 - commands, implementation
 ms.assetid: 097108c3-f758-4b87-89d6-b32d12d9041a
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c176a558d7d5956c1d41593f5d0cc71184a9a820
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e1644cfa71296c4233cf17b6b225933aeeb3d477
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62861689"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66342168"
 ---
 # <a name="command-design"></a>命令設計
 當您將命令加入 VSPackage 時，您必須指定所要出現，時，它的方式處理。
 
 ## <a name="define-commands"></a>定義命令
- 若要定義新的命令，包括 Visual Studio 命令資料表 (*.vsct*) VSPackage 專案中的檔案。 如果您已經使用 Visual Studio package 範本建立 VSPackage，專案會包含其中一個檔案。 如需詳細資訊，請參閱 < [Visual Studio 命令表檔案 (.vsct)](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)。
+ 若要定義新的命令，包括 Visual Studio 命令資料表 ( *.vsct*) VSPackage 專案中的檔案。 如果您已經使用 Visual Studio package 範本建立 VSPackage，專案會包含其中一個檔案。 如需詳細資訊，請參閱 < [Visual Studio 命令表檔案 (.vsct)](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)。
 
  Visual Studio 合併所有 *.vsct*檔案，會發現，讓它可以顯示的命令。 因為這些檔案是二進位 VSPackage 有所區別，所以 Visual Studio 並沒有載入的封裝，若要尋找的命令。 如需詳細資訊，請參閱 <<c0> [ 如何 Vspackage 加入使用者介面項目](../../extensibility/internals/how-vspackages-add-user-interface-elements.md)。
 
@@ -36,7 +36,7 @@ ms.locfileid: "62861689"
 ## <a name="visual-studio-command-environment"></a>Visual Studio 命令的環境
  Visual Studio 可以裝載任何數目的 Vspackage，以及每個可以參與它自己的命令集。 環境會顯示適用於目前工作的命令。 如需詳細資訊，請參閱 <<c0> [ 命令可用性](../../extensibility/internals/command-availability.md)並[選取內容物件](../../extensibility/internals/selection-context-objects.md)。
 
- 定義新的命令、 功能表、 工具列或捷徑功能表的 VSPackage 提供其命令資訊給 Visual Studio 在安裝期間，透過參考原生或 managed 組件中的資源的登錄項目。 然後每個資源參考的二進位資料資源 (*.cto*) 檔案，當您編譯的 Visual Studio 命令資料表則會產生 (*.vsct*) 檔案。 這可讓 Visual Studio，而不必載入每個已安裝的 VSPackage 提供合併的命令集、 功能表和工具列。
+ 定義新的命令、 功能表、 工具列或捷徑功能表的 VSPackage 提供其命令資訊給 Visual Studio 在安裝期間，透過參考原生或 managed 組件中的資源的登錄項目。 然後每個資源參考的二進位資料資源 ( *.cto*) 檔案，當您編譯的 Visual Studio 命令資料表則會產生 ( *.vsct*) 檔案。 這可讓 Visual Studio，而不必載入每個已安裝的 VSPackage 提供合併的命令集、 功能表和工具列。
 
 ### <a name="command-organization"></a>命令的組織
  環境將依照群組、 優先權和功能表命令。

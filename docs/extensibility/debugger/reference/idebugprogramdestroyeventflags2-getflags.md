@@ -6,20 +6,20 @@ helpviewer_keywords:
 - GetFlags
 - IDebugProgramDestroyEventFlags2::GetFlags
 ms.assetid: dd53bd0c-459a-4077-ba81-780defb71e87
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: a81fc53dfb9935116450bc0288feb7132bda51b0
-ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.openlocfilehash: ae8ff2cddad4817acbb0474cad7442c79c0994b4
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/24/2019
-ms.locfileid: "66211214"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66343531"
 ---
 # <a name="idebugprogramdestroyeventflags2getflags"></a>IDebugProgramDestroyEventFlags2::GetFlags
 擷取程式終結旗標。

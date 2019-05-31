@@ -11,17 +11,17 @@ helpviewer_keywords:
 - tool window toolbar
 - guid
 ms.assetid: c9cacd57-9225-450f-a9ac-cbf3168ea844
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4a9dc406665dc754f0c57c401f672cd4799183ef
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 62384942bb0577860161f8ae11d2eb6e787257bf
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63418460"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66328889"
 ---
 # <a name="guids-and-ids-of-visual-studio-toolbars"></a>Visual Studio 識別碼和 Guid 的工具列
 本主題列舉的 GUID 和 ID 值會包含在 Visual Studio 整合式的開發環境 (IDE) 中的工具列，而且包含的群組。 這些值會定義於 *.vsct*安裝為 Visual Studio SDK 的一部分的檔案。 如需詳細資訊，請參閱 < [IDE 定義的命令、 功能表和群組](../../extensibility/internals/ide-defined-commands-menus-and-groups.md)。

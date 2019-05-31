@@ -6,17 +6,17 @@ helpviewer_keywords:
 - programs, termination events
 - debugging [Debugging SDK], terminating a program
 ms.assetid: eedda0a3-5e05-44fe-841d-a2f4866ac72d
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 729d37c36782cd1786124c94796f610931473f0c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5f82a8238b542ce9aa9f5489df38553410e1326d
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62912745"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66331351"
 ---
 # <a name="terminating-a-program"></a>終止程式
 下節描述了單一的程式，而且其中一個執行緒終止。

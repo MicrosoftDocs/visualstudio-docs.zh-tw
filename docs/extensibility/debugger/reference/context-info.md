@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - CONTEXT_INFO structure
 ms.assetid: 6b513f4e-e7b0-4969-adf0-2205ccc1e09b
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c41a155fb3a85bcb9f0b0e5eae461f2ae172c7e2
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 6c50d5ea930f05d22b68416978909cceca17727d
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56709976"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66346457"
 ---
 # <a name="contextinfo"></a>CONTEXT_INFO
 此結構描述的記憶體內容或程式碼內容。
@@ -49,19 +52,26 @@ public struct CONTEXT_INFO {
 ```
 
 ## <a name="members"></a>成員
-dwFields 從他的旗標的組合[CONTEXT_INFO_FIELDS](../../../extensibility/debugger/reference/context-info-fields.md)列舉，指定哪些欄位都已填寫<strong>。</strong>
+`dwFields`\
+從他的旗標的組合[CONTEXT_INFO_FIELDS](../../../extensibility/debugger/reference/context-info-fields.md)列舉，指定哪些欄位都已填寫<strong>。</strong>
 
-bstrModuleUrl 內容所在模組的名稱。
+`bstrModuleUrl`\
+內容所在位置的模組名稱。
 
-bstrFunction 內容所在的函式名稱。
+`bstrFunction`\
+函式名稱，其內容所在的位置。
 
-posFunctionOffset A [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md)結構，辨識與程式碼內容相關聯的函式的行和資料行位移。
+`posFunctionOffset`\
+A [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md)結構，辨識與程式碼內容相關聯的函式的行和資料行位移。
 
-bstrAddress 中指定之內容所在的程式碼的位址。
+`bstrAddress`\
+指定之內容所在的程式碼中的位址。
 
-bstrAddressOffset 的指定的內容所在的程式碼中的位址位移。
+`bstrAddressOffset`\
+在指定的內容所在的程式碼中的位址位移。
 
-bstrAddressAbsolute 在記憶體中指定之內容所在位置的絕對位址。
+`bstrAddressAbsolute`\
+指定之內容所在的記憶體中的絕對位址。
 
 ## <a name="remarks"></a>備註
 此結構會從呼叫傳回[GetInfo](../../../extensibility/debugger/reference/idebugmemorycontext2-getinfo.md)方法。

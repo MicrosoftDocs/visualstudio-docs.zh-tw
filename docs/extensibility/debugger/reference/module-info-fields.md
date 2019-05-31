@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - MODULE_INFO_FIELDS enumeration
 ms.assetid: 8bed85f4-235f-4192-b58f-5fad7a4d7a78
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: dba231f173f3828243e284a7d68a877204df1bd0
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: 2ba419d0b10174e375cd15313fbc0770bf9d8cc0
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65458025"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66311381"
 ---
 # <a name="moduleinfofields"></a>MODULE_INFO_FIELDS
 指定偵錯模組資訊旗標。

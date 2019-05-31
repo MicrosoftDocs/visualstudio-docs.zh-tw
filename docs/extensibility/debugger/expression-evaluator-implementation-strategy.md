@@ -6,17 +6,17 @@ helpviewer_keywords:
 - expression evaluation, implementation strategy
 - debug engines, implementation strategies
 ms.assetid: 1bccaeb3-8109-4128-ae79-16fd8fbbaaa2
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1dabf4406752d04c0beec39d7f5997b09e3a5fc1
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: ee0842f8375faeca7e715d4b20c73ca13598dbc3
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63409893"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66353745"
 ---
 # <a name="expression-evaluator-implementation-strategy"></a>運算式評估工具的實作策略
 > [!IMPORTANT]

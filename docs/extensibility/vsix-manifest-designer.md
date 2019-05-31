@@ -9,17 +9,17 @@ helpviewer_keywords:
 - vsix manifest
 - manifest designer
 ms.assetid: 5a691e77-cf91-430d-90ea-361d9031ef83
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 84f82ab6e5cca57a1fabd600cecc7a5ee505c150
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 7c13d32ab6b91dce94bab307f6bbc6744f9c17a0
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63411110"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66322843"
 ---
 # <a name="vsix-manifest-designer"></a>VSIX 資訊清單設計工具
 修改 VSIX 封裝資訊清單檔，它會設定 Visual Studio 擴充功能的安裝行為。
@@ -60,15 +60,15 @@ ms.locfileid: "63411110"
 
   **授權**指定文字檔案，其中包含使用者授權合約中，如果有的話。
 
-  **圖示**指定的圖形檔 (*.png*， *.bmp*， *.jpeg*， *.ico*)，其中包含要在中顯示的圖示**延伸模組管理員**，如果圖示。 圖示影像必須是 32 x 32 像素，或調整大小的維度。 如果指定的圖示，則**延伸模組管理員**會使用預設圖示。
+  **圖示**指定的圖形檔 ( *.png*， *.bmp*， *.jpeg*， *.ico*)，其中包含要在中顯示的圖示**延伸模組管理員**，如果圖示。 圖示影像必須是 32 x 32 像素，或調整大小的維度。 如果指定的圖示，則**延伸模組管理員**會使用預設圖示。
 
-  **預覽影像**指定的圖形檔 (*.png*， *.bmp*， *.jpeg*， *.ico*) 包含的預覽影像顯示在**延伸模組管理員**、 預覽影像是否存在。 預覽影像必須是 200 x 200 像素為單位。 如果指定沒有預覽影像，則**延伸模組管理員**會使用預設映像。
+  **預覽影像**指定的圖形檔 ( *.png*， *.bmp*， *.jpeg*， *.ico*) 包含的預覽影像顯示在**延伸模組管理員**、 預覽影像是否存在。 預覽影像必須是 200 x 200 像素為單位。 如果指定沒有預覽影像，則**延伸模組管理員**會使用預設映像。
 
   **標記**新增要用於搜尋提示的文字標籤。
 
-  **版本資訊**指定的檔案 (*.txt*， *.rtf*)，包含版本資訊。 也會顯示版本資訊的網站 URL。
+  **版本資訊**指定的檔案 ( *.txt*， *.rtf*)，包含版本資訊。 也會顯示版本資訊的網站 URL。
 
-  **開始使用手冊**指定的檔案 (*.txt*， *.rtf*)，其中包含如何使用 VSIX 封裝中的 擴充功能或內容的相關資訊。 擴充功能安裝完成時，會顯示本指南。 也會顯示快速入門的網站 URL。
+  **開始使用手冊**指定的檔案 ( *.txt*， *.rtf*)，其中包含如何使用 VSIX 封裝中的 擴充功能或內容的相關資訊。 擴充功能安裝完成時，會顯示本指南。 也會顯示快速入門的網站 URL。
 
   **詳細資訊 URL**指定包含產品的其他資訊的網站 URL。
 
@@ -94,7 +94,7 @@ ms.locfileid: "63411110"
 
   **針對所有使用者安裝此 VSIX （需要提高權限安裝）** 如果您選取此核取方塊，為所有使用者安裝的擴充功能; 它只針對目前使用者的安裝，否則為。
 
-  **Windows 安裝程式會安裝此 VSIX**如果您選取此核取方塊時，Windows 安裝程式所安裝的擴充功能 (*.msi*檔案)，否則它會安裝為一般的 VSIX 套件 (*.vsix*檔案)。
+  **Windows 安裝程式會安裝此 VSIX**如果您選取此核取方塊時，Windows 安裝程式所安裝的擴充功能 ( *.msi*檔案)，否則它會安裝為一般的 VSIX 套件 ( *.vsix*檔案)。
 
   **資產** 索引標籤包含下列控制項。
 

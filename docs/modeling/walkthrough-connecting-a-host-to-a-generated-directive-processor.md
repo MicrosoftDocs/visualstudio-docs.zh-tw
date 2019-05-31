@@ -1,5 +1,5 @@
 ---
-title: 逐步解說：將主機連接至產生的指示詞處理器
+title: 連接至產生的指示詞處理器的主機
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,12 +13,12 @@ ms.workload:
 dev_langs:
 - CSharp
 - VB
-ms.openlocfilehash: 255c82b09e87180149756ce684f001652f4b962a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5cc45f3b2c83b9f54d1912ae7dbfa90a6b552bb3
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62577673"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66261874"
 ---
 # <a name="walkthrough-connect-a-host-to-a-generated-directive-processor"></a>逐步解說：將主機連線至產生的指示詞處理器
 
@@ -72,7 +72,7 @@ ms.locfileid: "62577673"
    > [!IMPORTANT]
    > 此步驟會產生指示詞處理器，並將它的索引鍵，在登錄中。
 
-3. 按一下 [偵錯] 功能表上的 [開始偵錯]。
+3. 按一下 [偵錯]  功能表上的 [開始偵錯]  。
 
     Visual Studio 的第二個執行個體隨即開啟。
 
@@ -90,7 +90,7 @@ ms.locfileid: "62577673"
 
 1. 開啟 CustomHost 方案。
 
-2. 在 [專案] 功能表上，按一下 [新增參考]。
+2. 在 [專案]  功能表上，按一下 [新增參考]  。
 
      **加入參考** 對話方塊隨即開啟與 **.NET**顯示 索引標籤。
 
@@ -228,7 +228,7 @@ ms.locfileid: "62577673"
             }
     ```
 
-7. 在 [檔案] 功能表上按一下 [全部儲存]。
+7. 在 [檔案]  功能表上按一下 [全部儲存]  。
 
 8. 在 [ **建置** ] 功能表上，按一下 [ **建置方案**]。
 

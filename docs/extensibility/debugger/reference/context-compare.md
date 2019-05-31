@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - CONTEXT_COMPARE enumeration
 ms.assetid: 701ed61c-a320-4c20-a335-0b840024abc0
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 21628bda9dc0437672b0b755bb64f1c882b0acbf
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 28e81e8247e0ab7a7b2e972209805c8bcff053a7
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56689170"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66346392"
 ---
 # <a name="contextcompare"></a>CONTEXT_COMPARE
 指定的準則來比較兩個記憶體內容。
@@ -53,24 +56,33 @@ public enum enum_CONTEXT_COMPARE {
 };
 ```
 
-## <a name="members"></a>成員
-CONTEXT_EQUAL 等於目標記憶體內容清單中找到的第一個記憶體內容。
+## <a name="fields"></a>欄位
+`CONTEXT_EQUAL`\
+等於目標記憶體內容的清單中找到的第一個記憶體內容。
 
-CONTEXT_LESS_THAN 小於目標記憶體內容清單中找到的第一個記憶體內容。
+`CONTEXT_LESS_THAN`\
+小於目標記憶體內容的清單中找到的第一個記憶體內容。
 
-CONTEXT_GREATER_THAN 大於目標記憶體內容清單中找到的第一個記憶體內容。
+`CONTEXT_GREATER_THAN`\
+大於目標記憶體內容的清單中找到的第一個記憶體內容。
 
-CONTEXT_LESS_THAN_OR_EQUAL 小於或等於目標記憶體內容清單中找到的第一個記憶體內容。
+`CONTEXT_LESS_THAN_OR_EQUAL`\
+小於或等於目標記憶體內容的清單中找到的第一個記憶體內容。
 
-CONTEXT_GREATER_THAN_OR_EQUAL 大於或等於目標記憶體內容的清單中找到的第一個記憶體內容。
+`CONTEXT_GREATER_THAN_OR_EQUAL`\
+大於或等於目標記憶體內容的清單中找到的第一個記憶體內容。
 
-CONTEXT_SAME_SCOPE 位於相同的範圍內，做為目標的記憶體內容的清單中找到的第一個記憶體內容。
+`CONTEXT_SAME_SCOPE`\
+位於相同的範圍內，做為目標的記憶體內容的清單中找到的第一個記憶體內容。
 
-CONTEXT_SAME_FUNCTION 處於相同的函式，做為目標的記憶體範圍清單中找到的第一個記憶體內容。
+`CONTEXT_SAME_FUNCTION`\
+在相同的函式，做為目標的記憶體範圍中的清單中找到的第一個記憶體內容。
 
-CONTEXT_SAME_MODULE 處於目標記憶體內容相同的模組清單中找到的第一個記憶體內容。
+`CONTEXT_SAME_MODULE`\
+做為目標的記憶體內容相同的模組清單中找到的第一個記憶體內容。
 
-CONTEXT_SAME_PROCESS 處於相同的程序，做為目標的記憶體內容清單中找到的第一個記憶體內容。
+`CONTEXT_SAME_PROCESS`\
+位於相同的程序，做為目標的記憶體內容的清單中找到的第一個記憶體內容。
 
 ## <a name="remarks"></a>備註
 作為引數[比較](../../../extensibility/debugger/reference/idebugmemorycontext2-compare.md)方法。

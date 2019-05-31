@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - BP_TYPE enumeration
 ms.assetid: ef07191e-7966-43ab-96fb-1a0b1db3115d
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d2fab9a97ef944b153287a58671193324aecf52c
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 69774df555c4258ef36a65a3a18e6ce3fccbe555
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56711471"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66350569"
 ---
 # <a name="bptype"></a>BP_TYPE
 指定中斷點的程式碼位置，是一個資料位置，或是中斷點的另一種。
@@ -43,14 +46,18 @@ public enum enum_BP_TYPE {
 };
 ```
 
-## <a name="members"></a>成員
-BPT_NONE 指定任何中斷點類型。
+## <a name="fields"></a>欄位
+`BPT_NONE`\
+不指定任何中斷點類型。
 
-BPT_CODE 指定程式碼中斷點。
+`BPT_CODE`\
+指定程式碼中斷點。
 
-BPT_DATA 指定資料中斷點。
+`BPT_DATA`\
+指定資料中斷點。
 
-BPT_SPECIAL 指定輸入不是程式碼或資料中斷點。 此類型已被取代，不應使用。
+`BPT_SPECIAL`\
+指定不是程式碼或資料類型的中斷點。 此類型已被取代，不應使用。
 
 ## <a name="remarks"></a>備註
 做為參數傳遞[GetBreakpointType](../../../extensibility/debugger/reference/idebugbreakpointresolution2-getbreakpointtype.md)並[GetBreakpointType](../../../extensibility/debugger/reference/idebugerrorbreakpointresolution2-getbreakpointtype.md)方法。

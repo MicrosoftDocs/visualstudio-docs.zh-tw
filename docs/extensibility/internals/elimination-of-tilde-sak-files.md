@@ -7,17 +7,17 @@ helpviewer_keywords:
 - ~sak files
 - source control plug-ins, ~SAK files
 ms.assetid: 5277b5fa-073b-4bd1-8ba1-9dc913aa3c50
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 96704b52fb31085fad7546687a8803c85bcfbb47
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: e409a08ba295bb55eb1fcfcd2a048a9bdb5ea7c9
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63418634"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66327529"
 ---
 # <a name="elimination-of-sak-files"></a>消除 ~ SAK 檔案
 在 原始檔控制外掛程式 API 1.2 *~ SAK*功能旗標已取代檔案和新函式來偵測是否原始檔控制外掛程式支援*MSSCCPRJ*檔案和共用簽出。

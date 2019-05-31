@@ -7,17 +7,17 @@ helpviewer_keywords:
 - project system
 - tutorial
 ms.assetid: 882a10fa-bb1c-4b01-943a-7a3c155286dd
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ced39d928b2d0d02c7008d6b44c934ccd053b09b
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 19c73e47e8c07ebcf7c1124e6e59d80f76101458
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63409995"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66341647"
 ---
 # <a name="create-a-basic-project-system-part-1"></a>建立基本專案系統，第 1 部分
 在 Visual Studio 中，專案會是開發人員用來組織原始程式碼檔和其他資產的容器。 專案會顯示為子系中的解決方案**方案總管 中**。 專案可讓您組織、 建置、 偵錯和部署來源的程式碼及建立 Web 服務、 資料庫和其他資源的參考。
@@ -224,7 +224,7 @@ Templates
 
     重建登錄的專案範本。
 
-   參數`defaultProjectExtension`並`possibleProjectExtensions`會設定為專案的副檔名 (*.myproj*)。 `projectTemplatesDirectory`參數設為相對路徑*範本*資料夾。 組建，這個路徑可以轉換成完整建置，且新增至註冊專案系統登錄。
+   參數`defaultProjectExtension`並`possibleProjectExtensions`會設定為專案的副檔名 ( *.myproj*)。 `projectTemplatesDirectory`參數設為相對路徑*範本*資料夾。 組建，這個路徑可以轉換成完整建置，且新增至註冊專案系統登錄。
 
 ## <a name="test-the-template-registration"></a>測試範本註冊
  範本註冊會告知 Visual Studio 專案範本資料夾的位置，讓 Visual Studio 可以顯示的範本名稱和圖示**新的專案** 對話方塊。

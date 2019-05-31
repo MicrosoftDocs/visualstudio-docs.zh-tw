@@ -4,17 +4,17 @@ titleSuffix: ''
 ms.date: 11/09/2016
 ms.topic: conceptual
 ms.assetid: 54d5af60-0b44-4ae1-aa57-45aa03f89f3d
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 26f0facec34c04e5b228e346d1559ffe4f179fa1
-ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.openlocfilehash: 589f5eddb2b1e2a8fd61eea2a205f12d2d9c0742
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/24/2019
-ms.locfileid: "66212245"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66321363"
 ---
 # <a name="changes-in-visual-studio-2017-extensibility"></a>在 Visual Studio 2017 擴充性的變更
 
@@ -70,7 +70,7 @@ VSIX v3 中的資訊清單格式工具來撰寫新的設計工具位於 Visual S
    * 在 GAC 中的複本已從安裝程式移除。
    * A *.pkgdef*檔案加入至指定組件的程式碼基底項目。
 
-      例如: 
+      例如：
 
       ```xml
       [$RootKey$\RuntimeConfiguration\dependentAssembly\codeBase\{UniqueGUID}]

@@ -8,17 +8,17 @@ helpviewer_keywords:
 - toolbars [Visual Studio], best practices
 - menu commands, best practices
 ms.assetid: 3ffc4312-c6db-4759-a946-a4bb85f4a17a
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a14998b8dca3c14bdae4f00f1940c19b696646ff
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 0273c95655614cb5ef4ee3bbddcc9307a9a0084d
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62909570"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66328635"
 ---
 # <a name="making-commands-available"></a>提供命令使用
 

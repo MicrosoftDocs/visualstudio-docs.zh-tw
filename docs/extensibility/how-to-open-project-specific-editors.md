@@ -1,5 +1,5 @@
 ---
-title: HOW TO：開啟專案特定的編輯器 |Microsoft Docs
+title: 作法：開啟專案特定的編輯器 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -7,19 +7,19 @@ helpviewer_keywords:
 - editors [Visual Studio SDK], opening project-specific editors
 - projects [Visual Studio SDK], opening folders
 ms.assetid: 83e56d39-c97b-4c6b-86d6-3ffbec97e8d1
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8482f2704fe81482d95c2c8e73ae6e8c8ffd272d
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 2e85913f6eead81bcbc2424ef1087f64a3f2446e
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63417123"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66319244"
 ---
-# <a name="how-to-open-project-specific-editors"></a>HOW TO：開啟專案特定的編輯器
+# <a name="how-to-open-project-specific-editors"></a>作法：開啟專案特定的編輯器
 如果在開啟的專案項目檔本質上繫結至特定的編輯器中為該專案，專案必須使用專案特定編輯器開啟檔案。 檔案無法委派到 IDE 的機制，來選取一個編輯器。 比方說，而不是使用標準的點陣圖編輯器中，您可以使用此專案特定編輯器選項來指定特定的點陣圖編輯器可辨識對您的專案是唯一的檔案中的資訊。
 
  IDE 呼叫<xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3.OpenItem%2A>時它會判斷特定的專案應該開啟檔案的方法。 如需詳細資訊，請參閱 <<c0> [ 使用 開啟檔案命令顯示檔案](../extensibility/internals/displaying-files-by-using-the-open-file-command.md)。 使用下列指導方針來實作`OpenItem`方法中，使您的專案使用的專案特定編輯器開啟檔案。

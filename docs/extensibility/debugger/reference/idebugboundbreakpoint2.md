@@ -7,17 +7,17 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugBoundBreakpoint2 interface
 ms.assetid: df33c52e-ded2-48a0-951d-1f36c8fc922e
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: da29303059558a4cf43eddb1d6e03e8848df4f4c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 20dbd4ca3f5c56d8519bc6dbfbe362f7904ae56d
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62877202"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66350111"
 ---
 # <a name="idebugboundbreakpoint2"></a>IDebugBoundBreakpoint2
 這個介面表示繫結至程式碼位置的中斷點。

@@ -9,17 +9,17 @@ helpviewer_keywords:
 - SelectionContainer class
 - SelectableObjects property
 ms.assetid: 1e925025-3d21-4cdb-a917-78db7bb78fe9
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c31dc8b9ced1ca36b96c73ff8e19fa8c08d98cc5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 50f403c6bb92dbd11b53c5814fb6c9c7f512be42
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62863804"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66313062"
 ---
 # <a name="extend-properties-and-the-property-window"></a>擴充屬性和 [屬性] 視窗
 **屬性**視窗用來檢視和編輯的設計階段屬性和所選物件的事件。

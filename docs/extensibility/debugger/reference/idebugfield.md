@@ -7,17 +7,17 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugField interface
 ms.assetid: adecdd1c-b1b9-4027-92da-74cbe910636f
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a036f6d08c6f88a30f8a8c9ab6d0d2e847065854
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 80def3f9c3d270ebd6f2217f6ce39f07ef27b119
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62873925"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66337513"
 ---
 # <a name="idebugfield"></a>IDebugField
 這個介面表示的欄位，也就是符號或類型的描述。

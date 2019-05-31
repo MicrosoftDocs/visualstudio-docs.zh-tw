@@ -7,17 +7,17 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProcess2 interface
 ms.assetid: 99f6cd06-4076-45ee-b2ae-fa2ad627fd18
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e6ef6df6419f43201555f1dcc275b44d2a0e9737
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 0bea73c1bce5367d9686e835bb58dd99a83cc818
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62917784"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66314133"
 ---
 # <a name="idebugprocess2"></a>IDebugProcess2
 此介面代表的連接埠上執行的程序。 如果連接埠的本機連接埠，然後`IDebugProcess2`通常代表實體的程序，在本機電腦上。

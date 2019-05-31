@@ -7,17 +7,17 @@ f1_keywords:
 helpviewer_keywords:
 - SccGet function
 ms.assetid: 09a18bd2-b788-411a-9da6-067d806e46f6
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: fad29d305d3657f9ed6372769a85d84260c1e77b
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 4ad087af24723c6ccbf901280c7db748e2af461a
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63434657"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66332129"
 ---
 # <a name="sccget-function"></a>SccGet 函式
 此函式會擷取一或多個檔案，來檢視和編譯，但不是用於編輯的複本。 在大部分的系統中，檔案會標記為唯讀。

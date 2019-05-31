@@ -7,17 +7,19 @@ f1_keywords:
 helpviewer_keywords:
 - BP_LOCATION_CODE_FUNC_OFFSET structure
 ms.assetid: ab38f7ca-fa01-4cf3-a06c-56cbb7207617
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1c0fdc8739c9df321391cdcb43e915b5036ea7f4
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+ms.openlocfilehash: 25ac9881f44019d818c49091900ce759680a37a5
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56682397"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66319084"
 ---
 # <a name="bplocationcodefuncoffset"></a>BP_LOCATION_CODE_FUNC_OFFSET
 描述程式碼中的函式的中斷點的位移的位置。
@@ -32,9 +34,11 @@ typedef struct _BP_LOCATION_CODE_FUNC_OFFSET {
 ```
 
 ## <a name="members"></a>成員
-`bstrContext` 中斷點的內容，通常是呼叫堆疊上所示的方法或函式的名稱。
+`bstrContext`\
+中斷點的內容，通常是呼叫堆疊上所示的方法或函式的名稱。
 
-`pFuncPos` [IDebugFunctionPosition2](../../../extensibility/debugger/reference/idebugfunctionposition2.md)物件，描述函式和函式開頭的相對位置的名稱。
+`pFuncPos`\
+[IDebugFunctionPosition2](../../../extensibility/debugger/reference/idebugfunctionposition2.md)物件，描述函式和函式開頭的相對位置的名稱。
 
 ## <a name="remarks"></a>備註
 此結構是隸屬[BP_LOCATION](../../../extensibility/debugger/reference/bp-location.md)結構的聯集的一部分。

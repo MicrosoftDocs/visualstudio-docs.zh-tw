@@ -6,18 +6,18 @@ helpviewer_keywords:
 - package start page
 - deploy start page
 ms.assetid: 4a7eb360-de83-41d5-be53-3cfb160d19f9
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
 monikerRange: vs-2017
-ms.openlocfilehash: 3f09f03a3404bbde346370149f210bf45e6e2306
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5a84ba2ff92463ebea177fc5c3b04810de7ae817
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62864044"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66348214"
 ---
 # <a name="deploy-custom-start-pages"></a>部署自訂起始頁
 
@@ -91,7 +91,7 @@ Visual Studio 能夠辨識 [入門] 頁面中，如`Content Element`VSIX 資訊�
 
 1. 複製 *.xaml*檔案，包含起始頁的標記，以及任何支援的檔案以外的組件，並將它們貼在使用者的 * \StartPages\*資料夾。
 
-2. 如果 [啟動] 頁面需要組件，請將其複製並貼到 *...\\{Visual Studio 安裝資料夾} \Common7\IDE\PrivateAssemblies\\*。
+2. 如果 [啟動] 頁面需要組件，請將其複製並貼到 *...\\{Visual Studio 安裝資料夾} \Common7\IDE\PrivateAssemblies\\* 。
 
 3. 在 **自訂起始頁**上列出**啟動**選項頁面上，選取新的 入門 頁面。 如需詳細資訊，請參閱 <<c0> [ 自訂起始頁](../ide/customizing-the-start-page-for-visual-studio.md)。
 

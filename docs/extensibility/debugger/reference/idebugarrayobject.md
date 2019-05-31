@@ -7,17 +7,17 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugArrayObject method
 ms.assetid: a1c8e77e-dee1-4748-a516-6ab032a8f54f
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 13e010f028d36548b58f09b26d3240a05bf96d92
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: be1f65e3814cbd88d32a63169234a42f76db4e6d
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63414118"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66337578"
 ---
 # <a name="idebugarrayobject"></a>IDebugArrayObject
 > [!IMPORTANT]

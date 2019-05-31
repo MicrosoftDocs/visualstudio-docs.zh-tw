@@ -3,18 +3,18 @@ title: 建立自訂起始頁 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: d67e0c53-9f5a-45fb-a929-b9d2125c3c82
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
 monikerRange: vs-2017
-ms.openlocfilehash: 4fc12744dbf979a338cbc551a715284dffdf7385
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 2b0b8c6fde31f4f4d9573381e511465e60086add
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62926376"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66336671"
 ---
 # <a name="creating-a-custom-start-page"></a>建立自訂起始頁
 
@@ -24,7 +24,7 @@ ms.locfileid: "62926376"
 
 首先，請藉由建立的空白起始頁 *.xaml*具有 Visual Studio 可以辨識的標記結構的檔案。 然後，加入標記和程式碼後置來產生的外觀和您想要的功能。
 
-1. 建立新的專案之型別的**WPF 應用程式**(**Visual C#** > **Windows Desktop**)。
+1. 建立新的專案之型別的**WPF 應用程式**(**Visual C#**  > **Windows Desktop**)。
 
 2. 加入 `Microsoft.VisualStudio.Shell.14.0` 的參考。
 
@@ -77,7 +77,7 @@ ms.locfileid: "62926376"
 
 4. 在實驗執行個體中，移至**工具** > **選項** > **環境** > **啟動**頁面上，選取您的 XAML 檔案，從**自訂起始頁**下拉式清單。
 
-5. 在 [檢視]  功能表上，按一下 [起始頁] 。
+5. 在 [檢視]  功能表上，按一下 [起始頁]  。
 
      應該會顯示您的自訂起始頁。 如果您想要變更任何檔案，您必須關閉實驗執行個體、 進行變更、 複製並貼變更的檔案，然後再重新開啟實驗的執行個體，以檢視所做的變更。
 

@@ -1,5 +1,5 @@
 ---
-title: 逐步解說：建立 ClickOnce 應用程式的自訂安裝 |Microsoft Docs
+title: 建立自訂安裝程式的 ClickOnce 應用程式
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 597d0a29e153659359d3a6591970750bfd4de770
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: e6969490789b4f5747c28f33e91c7d61e97de52e
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63405736"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66263464"
 ---
 # <a name="walkthrough-create-a-custom-installer-for-a-clickonce-application"></a>逐步解說：建立自訂安裝程式的 ClickOnce 應用程式
 任何的 ClickOnce 應用程式為基礎 *.exe*檔案可以以無訊息方式安裝及更新的自訂安裝程式。 自訂安裝程式可以實作自訂使用者體驗，在安裝期間，其中包括安全性和維護作業的自訂對話方塊。 若要執行安裝作業，自訂的安裝程式會使用<xref:System.Deployment.Application.InPlaceHostingManager>類別。 本逐步解說示範如何建立自訂安裝程式會以無訊息方式安裝 ClickOnce 應用程式。
@@ -73,7 +73,7 @@ ms.locfileid: "63405736"
     ```
 
 ## <a name="next-steps"></a>後續步驟
- ClickOnce 應用程式也可以加入自訂更新邏輯，包括在更新程序時顯示的自訂使用者介面。 如需詳細資訊，請參閱<xref:System.Deployment.Application.UpdateCheckInfo>。 ClickOnce 應用程式也可以抑制標準的 [開始] 功能表項目、 捷徑，以及新增或移除程式項目使用`<customUX>`項目。 如需詳細資訊，請參閱 < [\<進入點 > 項目](../deployment/entrypoint-element-clickonce-application.md)和<xref:System.Deployment.Application.DownloadApplicationCompletedEventArgs.ShortcutAppId%2A>。
+ ClickOnce 應用程式也可以加入自訂更新邏輯，包括在更新程序時顯示的自訂使用者介面。 如需詳細資訊，請參閱 <xref:System.Deployment.Application.UpdateCheckInfo>。 ClickOnce 應用程式也可以抑制標準的 [開始] 功能表項目、 捷徑，以及新增或移除程式項目使用`<customUX>`項目。 如需詳細資訊，請參閱 < [\<進入點 > 項目](../deployment/entrypoint-element-clickonce-application.md)和<xref:System.Deployment.Application.DownloadApplicationCompletedEventArgs.ShortcutAppId%2A>。
 
 ## <a name="see-also"></a>另請參閱
 - [ClickOnce 應用程式資訊清單](../deployment/clickonce-application-manifest.md)

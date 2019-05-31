@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugPort2::EnumProcesses
 ms.assetid: aafb32c5-5790-4807-a448-878a80256438
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 258a31a20a53dfdf9b9573a7a8fb9f53be1fc9ac
-ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.openlocfilehash: 5c1b5b43007e43a5cee368622d808d20ad5b83b5
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/24/2019
-ms.locfileid: "66209322"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66343805"
 ---
 # <a name="idebugport2enumprocesses"></a>IDebugPort2::EnumProcesses
 傳回一份連接埠上執行的所有處理程序。

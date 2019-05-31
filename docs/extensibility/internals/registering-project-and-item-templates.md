@@ -9,17 +9,17 @@ helpviewer_keywords:
 - Add New Project dialog box
 - registry, Add New Project dialog box
 ms.assetid: 6b909f93-d7f5-4aec-81c6-ee9ff0f31638
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: bd61d4bf97ce25d291268856a3e85729c98c1312
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 84beaf97bda8d94872be22c6f5d247a746d1ecd3
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62859475"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66319504"
 ---
 # <a name="registering-project-and-item-templates"></a>註冊專案和項目範本
 專案類型都必須註冊其專案和專案項目範本的所在位置的目錄。 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 使用您的專案類型相關聯的註冊資訊來判斷要顯示在**加入新的專案**並**加入新項目**對話方塊。
@@ -117,7 +117,8 @@ ms.locfileid: "62859475"
  \WizardFiles
 
 ## <a name="see-also"></a>另請參閱
+
 - [新增專案與專案項目範本](../../extensibility/internals/adding-project-and-project-item-templates.md)
 - [精靈](../../extensibility/internals/wizards.md)
-- [當地語系化應用程式](../../ide/localizing-applications.md)
+- [當地語系化應用程式](../../ide/globalizing-and-localizing-applications.md)
 - [通常用來擴充專案的物件 CATID](../../extensibility/internals/catids-for-objects-that-are-typically-used-to-extend-projects.md)

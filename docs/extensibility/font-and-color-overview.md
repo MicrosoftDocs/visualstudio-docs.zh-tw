@@ -6,17 +6,17 @@ helpviewer_keywords:
 - editors [Visual Studio SDK], font and color
 - font and color control [Visual Studio SDK], editors
 ms.assetid: 2203e4e7-8b7f-44ec-8884-6ff718d4f278
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: da93d4f98bf3795c2dd60b02f9cf5b332b022ad2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 790a9f8bbed02a5135897f33db7fac1af3ad89d9
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62863525"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66342569"
 ---
 # <a name="font-and-color-overview"></a>字型和色彩的概觀
 本主題討論中的文字字型和色彩設定[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]整合式的開發環境 (IDE)。 它也會介紹的概念類別和顯示項目，並說明如何在 Vspackage 和核心編輯器使用文字屬性。
@@ -54,7 +54,7 @@ ms.locfileid: "62863525"
 
    只有一個**分類**支援這項機制，也就是，則**文字編輯器**。
 
-- 較通用的替代方式支援所有其他**分類**和原始檔編輯器時顯示文字以外的使用者介面元件。 如需詳細資訊，請參閱<xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaultsProvider>。
+- 較通用的替代方式支援所有其他**分類**和原始檔編輯器時顯示文字以外的使用者介面元件。 如需詳細資訊，請參閱 <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaultsProvider>。
 
 ## <a name="core-editor-text-settings"></a>核心編輯器文字設定
  語言服務物件的核心編輯器的字型和色彩設定所控管**文字 EditorCategory**中找到**顯示設定**下拉式清單方塊的**字型和色彩**屬性頁。
@@ -67,7 +67,7 @@ ms.locfileid: "62863525"
 
 - 定義完善且經過最佳化的顏色標示的機制。
 
-   如需詳細資訊，請參閱<xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer>。
+   如需詳細資訊，請參閱 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer>。
 
 - 能夠同時使用內建的顯示項目，從**文字 EditorCategory**和延伸。
 

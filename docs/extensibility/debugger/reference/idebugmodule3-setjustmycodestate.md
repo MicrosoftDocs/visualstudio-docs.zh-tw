@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugModule3::SetJustMyCodeState
 ms.assetid: 68f8166d-ef64-49ae-ad5e-79604f43bbd4
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: b86764021a17c05960a00d9932cec377547e8c58
-ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.openlocfilehash: 46a200b91e1680da3f7beac1b0ec4856a39b2564
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/24/2019
-ms.locfileid: "66203041"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66323807"
 ---
 # <a name="idebugmodule3setjustmycodestate"></a>IDebugModule3::SetJustMyCodeState
 將標記視為使用者程式碼模組。

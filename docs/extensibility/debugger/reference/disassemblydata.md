@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - DisassemblyData structure
 ms.assetid: 10e70aa7-9381-40d3-bdd1-d2cad78ef16c
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f48d9eb61a3f017f61ef717a27e89cb7426bad26
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: edc91cf8599a8591b70d14c49611ff64d5e957e6
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56712472"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66318232"
 ---
 # <a name="disassemblydata"></a>DisassemblyData
 描述一個反組譯碼指令的整合式的開發環境 (IDE) 來顯示。
@@ -61,33 +64,45 @@ public struct DisassemblyData { 
 ```
 
 ## <a name="members"></a>成員
-`dwFields` [DISASSEMBLY_STREAM_FIELDS](../../../extensibility/debugger/reference/disassembly-stream-fields.md)指定哪些欄位都已填寫的常數。
+`dwFields`\
+[DISASSEMBLY_STREAM_FIELDS](../../../extensibility/debugger/reference/disassembly-stream-fields.md)指定哪些欄位都已填寫的常數。
 
-`bstrAddress` 從某個起點 （通常是相關聯的函式的開頭） 的位移位址。
+`bstrAddress`\
+從某個起點 （通常是相關聯的函式的開頭） 的位移位址。
 
-`bstrCodeBytes` 此指令程式碼位元組。
+`bstrCodeBytes`\
+此指令程式碼位元組。
 
-`bstrOpcode` 這個指示 opcode。
+`bstrOpcode`\
+這個指示 opcode。
 
-`bstrOperands` 這個指令的運算元。
+`bstrOperands`\
+這個指令的運算元。
 
-`bstrSymbol` 符號名稱，如果有的話，與相關聯的位址 （公用符號、 標籤和等等）。
+`bstrSymbol`\
+符號名稱，如果有的話，與相關聯的位址 （公用符號、 標籤和等等）。
 
-`uCodeLocationId` 反組譯此行程式碼位置識別碼。 如果一行的程式碼內容位址大於另一個程式碼內容位址，然後反組譯程式碼位置識別碼的第一個也會大於第二個程式碼位置識別碼。
+`uCodeLocationId`\
+反組譯此行程式碼位置識別碼。 如果一行的程式碼內容位址大於另一個程式碼內容位址，然後反組譯程式碼位置識別碼的第一個也會大於第二個程式碼位置識別碼。
 
-`posBeg` [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) ，其對應於文件中的反組譯碼資料的開始處的位置。
+`posBeg`\
+[TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) ，其對應於文件中的反組譯碼資料的開始處的位置。
 
-`posEnd` [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) ，其對應於文件中的反組譯碼資料的結束位置的位置。
+`posEnd`\
+[TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) ，其對應於文件中的反組譯碼資料的結束位置的位置。
 
-`bstrDocumentUrl` 可以表示為檔案名稱的文字文件`bstrDocumentUrl`欄位會填入檔案名稱，您可以找到來源，使用格式`file://file name`。
+`bstrDocumentUrl`\
+可以表示為檔案名稱的文字文件`bstrDocumentUrl`欄位會填入檔案名稱，您可以找到來源，使用格式`file://file name`。
 
 無法為檔案名稱，表示文字文件`bstrDocumentUrl`是文件的唯一識別碼，而且必須實作的偵錯引擎[GetDocument](../../../extensibility/debugger/reference/idebugdisassemblystream2-getdocument.md)方法。
 
 此欄位也可以包含總和檢查碼的其他資訊。 如需詳細資訊，請參閱 < 備註 >。
 
-`dwByteOffset` 指令會從程式碼行開頭的位元組數目。
+`dwByteOffset`\
+指令會從程式碼行開頭的位元組數目。
 
-`dwFlags` [DISASSEMBLY_FLAGS](../../../extensibility/debugger/reference/disassembly-flags.md)指定的旗標都是作用中的常數。
+`dwFlags`\
+[DISASSEMBLY_FLAGS](../../../extensibility/debugger/reference/disassembly-flags.md)指定的旗標都是作用中的常數。
 
 ## <a name="remarks"></a>備註
 每個`DisassemblyData`結構描述反組譯碼的一個指令。 這些結構的陣列會傳回從[讀取](../../../extensibility/debugger/reference/idebugdisassemblystream2-read.md)方法。

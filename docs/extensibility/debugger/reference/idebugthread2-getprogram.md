@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugThread2::GetProgram
 ms.assetid: 8c9c5ea1-2031-472e-bc8f-30e22e754566
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 962a73c20e324b28a27b7cadb2459d3000fed2b7
-ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.openlocfilehash: bc803d08e26780712dbec6318a928022c3ce862e
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/24/2019
-ms.locfileid: "66199619"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66320251"
 ---
 # <a name="idebugthread2getprogram"></a>IDebugThread2::GetProgram
 取得執行緒正在執行的程式。

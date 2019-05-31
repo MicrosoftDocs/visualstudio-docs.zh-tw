@@ -5,17 +5,17 @@ ms.topic: reference
 helpviewer_keywords:
 - IDebugNoSymbolsEvent2 interface
 ms.assetid: f6fb6388-47f6-4385-9ad5-95d62f9a7592
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0850f043d763077ef9a33ad35e82ad924574b6d8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: dadd4547d5b0f691b454a98ba714abea9bf6f058
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62872867"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66323707"
 ---
 # <a name="idebugnosymbolsevent2"></a>IDebugNoSymbolsEvent2
 訊號[!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)]偵錯工具 UI 來警告使用者符號找不到啟動可執行檔。

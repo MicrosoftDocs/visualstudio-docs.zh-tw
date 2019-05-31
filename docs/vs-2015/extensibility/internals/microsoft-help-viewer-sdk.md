@@ -8,12 +8,12 @@ ms.assetid: 620d7dcd-d462-475e-a449-fbfa06ff12c5
 caps.latest.revision: 34
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 67dd005eee2f186e92743fa11957ab5fb4db8fb7
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 226762ef355a83a2539fa1402a4369398f9f52a4
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65687025"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66263143"
 ---
 # <a name="microsoft-help-viewer-sdk"></a>Microsoft Help Viewer SDK
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -694,7 +694,7 @@ some F# code
 
 1. [!INCLUDE[vs_dev12](../../includes/vs-dev12-md.md)]
 
-2. [Visual Studio 2013 獨立模式 Shell 可轉散發套件](http://www.microsoft.com/visualstudio/11/downloads#vs-shell)
+2. [Visual Studio 2013 獨立模式 Shell 可轉散發套件](https://aka.ms/VS2013/IsoShell-LP/all)
 
    **概觀**
 
@@ -814,7 +814,7 @@ some F# code
 
 17. 啟動 Contoso 應用程式 （來自 Contoso 應用程式根目錄中）。 在 ISO Shell 中，選擇**幫助**功能表項目，以及變更**設定說明偏好**來**使用本機說明**。
 
-18. 在殼層中，選擇**幫助**功能表項目，然後**檢視說明**。 本機說明檢視器應會啟動。 選擇 [管理內容] 索引標籤。底下**安裝來源**，選擇**磁碟**選項按鈕。 選擇 **...** 按鈕並瀏覽至包含 Contoso 內容 （複製到上述的步驟中的本機資料夾） 的本機資料夾。 選擇 [HelpContentSetup.msha]。 Contoso 應現在會顯示為活頁簿中的活頁簿選取項目中。 選擇**新增**，然後選擇**更新**按鈕 （下圖右下角）。
+18. 在殼層中，選擇**幫助**功能表項目，然後**檢視說明**。 本機說明檢視器應會啟動。 選擇 [管理內容]  索引標籤。底下**安裝來源**，選擇**磁碟**選項按鈕。 選擇 **...** 按鈕並瀏覽至包含 Contoso 內容 （複製到上述的步驟中的本機資料夾） 的本機資料夾。 選擇 [HelpContentSetup.msha]。 Contoso 應現在會顯示為活頁簿中的活頁簿選取項目中。 選擇**新增**，然後選擇**更新**按鈕 （下圖右下角）。
 
 19. 在 Contoso IDE 中，選擇 F1 鍵，以測試 F1 功能。
 

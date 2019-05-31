@@ -1,21 +1,21 @@
 ---
-title: HOW TO：提供服務 |Microsoft Docs
+title: 作法：提供服務 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - services, providing
 ms.assetid: 12bc1f12-47b1-44f6-b8db-862aa88d50d1
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2be56d37ddcd1047e776df2652c7e874e260a806
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: a752e05e5a7c91e0e9f3d3c21f8542014a053245
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63417103"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66324971"
 ---
 # <a name="how-to-provide-a-service"></a>HOW TO：提供服務
 VSPackage 可以提供其他的 Vspackage 可以使用的服務。 若要提供服務，VSPackage 必須向 Visual Studio 中的服務，然後加入服務。

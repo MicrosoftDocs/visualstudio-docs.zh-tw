@@ -7,17 +7,17 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugMemoryContext2 interface
 ms.assetid: 3a544c8b-11dc-46bb-8549-261e4ac5bbc4
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d1e540d959661a576e211cba526391f852b79a20
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: bb1abe29a915d8ca2aaba1135d2e57946250bc3f
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62873202"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66346964"
 ---
 # <a name="idebugmemorycontext2"></a>IDebugMemoryContext2
 此介面代表執行所偵錯之程式的電腦的位址空間中的位置。

@@ -6,20 +6,20 @@ helpviewer_keywords:
 - IDebugTypeFieldBuilder2::CreateArrayOfType
 - CreateArrayOfType
 ms.assetid: 85166ac9-0bff-49a0-b2fd-ca7f7a8eae4b
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 56954d1cf33974fc93aa966db6b5be0d03d1c979
-ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.openlocfilehash: fa151c93589ee691abd005df9e4ff6b68698b661
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/24/2019
-ms.locfileid: "66199338"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66319771"
 ---
 # <a name="idebugtypefieldbuilder2createarrayoftype"></a>IDebugTypeFieldBuilder2::CreateArrayOfType
 建立指定的類型和大小的陣列。

@@ -17,15 +17,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 86c69070a6c954ccf01581690e11237fea4e52c7
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 7b634b25c7bfaf71294993cc48c960508d764839
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63406753"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66263240"
 ---
 # <a name="clickonce-security-and-deployment"></a>ClickOnce 安全性和部署
-[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 是一種部署技術，可讓您建立自行更新以 Windows 為基礎的應用程式可以安裝並執行最少使用者介入。 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 發佈及更新應用程式部署與 ClickOnce 技術，如果您在開發您的專案與 Visual Basic 和 Visual C# 提供完整支援。 如需部署視覺效果C++應用程式，請參閱[視覺效果的 ClickOnce 部署C++應用程式](/cpp/ide/clickonce-deployment-for-visual-cpp-applications)。
+[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 是一種部署技術，可讓您建立自行更新以 Windows 為基礎的應用程式可以安裝並執行最少使用者介入。 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 發佈及更新應用程式部署與 ClickOnce 技術，如果您在開發您的專案與 Visual Basic 和 Visual C# 提供完整支援。 如需部署視覺效果C++應用程式，請參閱[視覺效果的 ClickOnce 部署C++應用程式](/cpp/windows/clickonce-deployment-for-visual-cpp-applications)。
 
  [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 部署可克服在部署中的三個主要問題：
 
@@ -38,7 +38,7 @@ ms.locfileid: "63406753"
   在過去，這些問題有時會導致開發人員決定建立 Web 應用程式，而不是以 Windows 為基礎的應用程式，犧牲豐富的使用者介面，以簡化安裝。 使用應用程式部署使用[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]，您可以有最佳的這兩種技術。
 
 ## <a name="what-is-a-clickonce-application"></a>什麼是 ClickOnce 應用程式？
- A[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]應用程式是任何 Windows Presentation Foundation (*.xbap*)，Windows Form (*.exe*)、 主控台應用程式 (*.exe*)，或 Office 方案 (*.dll*) 使用發行[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]技術。 您可以發佈[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]應用程式的方式有三種： 從網頁、 網路檔案共用，或媒體例如 CD-ROM。 A[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]應用程式可以安裝在終端使用者的電腦上和在本機執行，即使電腦處於離線狀態，或可以在僅限線上模式中執行而不需要永久終端使用者的電腦上安裝任何項目。 如需詳細資訊，請參閱 <<c0> [ 選擇 ClickOnce 部署策略](../deployment/choosing-a-clickonce-deployment-strategy.md)。
+ A[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]應用程式是任何 Windows Presentation Foundation ( *.xbap*)，Windows Form ( *.exe*)、 主控台應用程式 ( *.exe*)，或 Office 方案 ( *.dll*) 使用發行[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]技術。 您可以發佈[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]應用程式的方式有三種： 從網頁、 網路檔案共用，或媒體例如 CD-ROM。 A[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]應用程式可以安裝在終端使用者的電腦上和在本機執行，即使電腦處於離線狀態，或可以在僅限線上模式中執行而不需要永久終端使用者的電腦上安裝任何項目。 如需詳細資訊，請參閱 <<c0> [ 選擇 ClickOnce 部署策略](../deployment/choosing-a-clickonce-deployment-strategy.md)。
 
  [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 應用程式可以自行更新;它們可以檢查較新版本，因為它們變成可用，而且會自動取代任何更新的檔案。 開發人員可以指定更新行為；網路系統管理員也可以控制更新策略，例如將更新標記為強制性。 更新可以也會回復為舊版由使用者或系統管理員。 如需詳細資訊，請參閱 <<c0> [ 選擇 ClickOnce 更新策略](../deployment/choosing-a-clickonce-update-strategy.md)。
 
@@ -83,7 +83,7 @@ ms.locfileid: "63406753"
 > [!NOTE]
 > **發行精靈**Visual Studio 中可以用來執行這些步驟。
 
- 除了部署位置外，部署資訊清單也包含更新位置 (網頁或網路檔案共用)，應用程式會在該位置檢查更新的版本。 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] **發行**屬性用來指定時間和頻率的應用程式應該檢查更新。 部署資訊清單中，可以指定更新行為，或它可以呈現為藉由應用程式的使用者介面中的使用者選項[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]Api。 此外，也可以運用 [Publish] (發佈) 屬性將更新設為強制性，或復原為較舊版本。 如需詳細資訊，請參閱[選擇 ClickOnce 更新策略](../deployment/choosing-a-clickonce-update-strategy.md)。
+ 除了部署位置外，部署資訊清單也包含更新位置 (網頁或網路檔案共用)，應用程式會在該位置檢查更新的版本。 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] **發行**屬性用來指定時間和頻率的應用程式應該檢查更新。 部署資訊清單中，可以指定更新行為，或它可以呈現為藉由應用程式的使用者介面中的使用者選項[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]Api。 此外，也可以運用 [Publish] (發佈)  屬性將更新設為強制性，或復原為較舊版本。 如需詳細資訊，請參閱[選擇 ClickOnce 更新策略](../deployment/choosing-a-clickonce-update-strategy.md)。
 
 ### <a name="third-party-installers"></a>協力廠商安裝程式
  您可以自訂您要安裝第三方元件，以及您的應用程式的 ClickOnce 安裝程式。 您必須擁有可轉散發套件 （.exe 或.msi 檔案），並且描述使用非語言相關產品資訊清單和特定語言的封裝資訊清單套件。 如需詳細資訊，請參閱 <<c0> [ 建立啟動載入器套件](../deployment/creating-bootstrapper-packages.md)。

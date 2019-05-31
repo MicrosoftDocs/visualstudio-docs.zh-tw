@@ -7,17 +7,17 @@ helpviewer_keywords:
 - Watch window, expressions
 - expression evaluation, Watch window expressions
 ms.assetid: b07e72c7-60d3-4b30-8e3f-6db83454c348
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 52df78eea2f8dac5f513514348fbc9cd435c989a
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 6fe575cf0db9f6f1c2dd15da96d3d0a17648aee4
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63409819"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66315510"
 ---
 # <a name="evaluate-a-watch-window-expression"></a>評估監看式視窗運算式
 > [!IMPORTANT]

@@ -7,17 +7,17 @@ helpviewer_keywords:
 - debugging [Debugging SDK], breakpoint errors
 - errors [Debugging SDK]
 ms.assetid: 79221c6b-a924-4c8e-a778-e312e4e0c0c8
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a539894b0564d8c89461886558eb35c04c8af83c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 31eabde4ae19ae7342188a5d2a16374b9c94afc0
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62890705"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66332550"
 ---
 # <a name="breakpoint-errors"></a>中斷點錯誤
 以下說明的程序時嘗試繫結至程式碼的中斷點，但會失敗。

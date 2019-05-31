@@ -7,17 +7,17 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugMemoryBytes2 interface
 ms.assetid: d7647575-0e06-4190-88f5-ca40b82209a4
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 43b03a7b26af76d5d914e1aa3ef182d18c805f4e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: b7496c7fb083558cec08bfc851f96075ea02bae9
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62873249"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66347107"
 ---
 # <a name="idebugmemorybytes2"></a>IDebugMemoryBytes2
 此介面代表記憶體位元組。

@@ -6,7 +6,7 @@ keywords: ''
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.date: 03/02/2019
+ms.date: 05/22/2019
 ms.topic: reference
 helpviewer_keywords:
 - workload ID, Visual Studio
@@ -16,12 +16,12 @@ ms.custom: seodec18
 ms.assetid: 34e19ef1-abfb-44fd-aad2-33c5d7874482
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 02229fd346ec1ead65e778fcce3ab6cb307e2656
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: cdab0458d67bb13ffdd456e2e50e86d290444f3c
+ms.sourcegitcommit: 13ab9a5ab039b070b9cd9251d0b83dd216477203
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62951249"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66177688"
 ---
 # <a name="visual-studio-workload-and-component-ids"></a>Visual Studio 工作負載與元件識別碼
 
@@ -50,7 +50,7 @@ ms.locfileid: "62951249"
 
 ::: moniker range="vs-2019"
 
-**[Visual Studio 2019 RC](/visualstudio/releases/2019/release-notes/) 的更新**
+已針對 [16.1 版](/visualstudio/releases/2019/release-notes/)更新
 
 | **版本** | **ID** | **描述** |
 | ----------- | ------ | --------------- |

@@ -16,12 +16,12 @@ caps.latest.revision: 12
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 656ebd6f8b1e720afd129bca3d53712526fc914f
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: b3904a9fcb2e15190018dbc4caabe925690e023f
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "59000626"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66263714"
 ---
 # <a name="error-the-web-server-could-not-find-the-requested-resource"></a>錯誤：Web 伺服器找不到要求的資源
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,5 +35,5 @@ ms.locfileid: "59000626"
  如需針對 IIS 進行疑難排解的詳細資訊，請參閱 [IIS 管理與系統管理](http://go.microsoft.com/fwlink/?LinkId=255872)。  
   
 ## <a name="see-also"></a>另請參閱  
- [UrlScan 安全性工具](https://www.iis.net/downloads/microsoft/urlscan)   
+ [UrlScan 安全性工具](/iis/extensions/working-with-urlscan/urlscan-3-reference)   
  [錯誤：Web 伺服器已經鎖定，並會封鎖 DEBUG 動詞命令](../debugger/error-the-web-server-has-been-locked-down-and-is-blocking-the-debug-verb.md)

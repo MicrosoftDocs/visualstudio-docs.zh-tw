@@ -8,20 +8,20 @@ helpviewer_keywords:
 - GetDocumentContext method
 - IDebugActivateDocumentEvent2::GetDocumentContext method
 ms.assetid: e7472069-7337-4ef4-8f8a-8c027a2e22f4
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 0ac048a26036457345f652a8d23a55fae54d59f0
-ms.sourcegitcommit: 77b4ca625674658d5c5766e684fa0e2a07cad4da
+ms.openlocfilehash: 8dcef9858b8b210dac6f64de713a1efff4a8d63c
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/14/2019
-ms.locfileid: "65615546"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66318019"
 ---
 # <a name="idebugactivatedocumentevent2getdocumentcontext"></a>IDebugActivateDocumentEvent2::GetDocumentContext
 取得文件內容，描述偵錯封裝成為作用中的文件中的位置。

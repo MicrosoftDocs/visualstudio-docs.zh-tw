@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IEnumDebugModules2::Skip
 ms.assetid: 61dc42f4-8544-45bb-8da0-fb22cccec7da
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 2adc02e7ec38d70e679b1e116ecf324001b6444e
-ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.openlocfilehash: 160dbdedb9dc5f2188036203c2a0b881672dd9ef
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/24/2019
-ms.locfileid: "66203534"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66339698"
 ---
 # <a name="ienumdebugmodules2skip"></a>IEnumDebugModules2::Skip
 略過指定的元素數目。

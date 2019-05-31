@@ -20,12 +20,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 3ec34dc0f4f2794f853b8e70670d4d3f59e7bae3
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 4833c6e8e1391028fbb034ff96967450d006356a
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65692313"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66263734"
 ---
 # <a name="install-visual-studio"></a>安裝 Visual Studio
 
@@ -88,7 +88,7 @@ ms.locfileid: "65692313"
 
 ::: moniker range="vs-2017"
 
-針對並存執行舊版 Visual Studio 及 Visual Studio 2017 的相關問題，請參閱 [Visual Studio 相容性詳細資料](/visualstudio/productinfo/vs2017-compatibility-vs#compatibility-with-previous-releases/)。
+針對並存執行舊版 Visual Studio 及 Visual Studio 2017 的相關問題，請參閱 [Visual Studio 相容性詳細資料](/visualstudio/productinfo/vs2017-compatibility-vs#compatibility-with-previous-releases)。
 
 ::: moniker-end
 

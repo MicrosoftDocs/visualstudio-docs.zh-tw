@@ -6,23 +6,23 @@ helpviewer_keywords:
 - user interfaces, essentials
 - tool windows, standard
 ms.assetid: 46b2892e-7b2b-4b3f-83a7-b884f1e114ee
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e9d5c45c523263f469df7e89c484c252f1ed843d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c0eafb5a95151d6c3a805ad4d51c847f2fbe269d
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62912480"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66341127"
 ---
 # <a name="extend-and-customize-tool-windows"></a>擴充和自訂工具視窗
 Visual Studio 提供許多不同類型的 windows，例如工具視窗、 文件視窗和對話方塊視窗。 這類其他視窗**屬性** 視窗中，**輸出**視窗中，而**工作清單** 視窗中，類型的工具視窗。
 
 ## <a name="tool-windows"></a>工具視窗
- Visual Studio 工具視窗是不是以檔案為基礎的通常是唯讀視窗。 在這種情況下，它們與文件視窗不同，而文件視窗會以讀寫模式顯示檔案。 [工具箱] 、 **方案總管**、[屬性]  視窗和 [網頁瀏覽器]  是工具視窗範例。
+ Visual Studio 工具視窗是不是以檔案為基礎的通常是唯讀視窗。 在這種情況下，它們與文件視窗不同，而文件視窗會以讀寫模式顯示檔案。 [工具箱]  、 **方案總管**、[屬性]  視窗和 [網頁瀏覽器]  是工具視窗範例。
 
  若要了解如何建立簡單的工具視窗，請參閱[將工具視窗加](../extensibility/adding-a-tool-window.md)。
 

@@ -1,5 +1,5 @@
 ---
-title: HOW TO：存取的內建的字型和色彩配置 |Microsoft Docs
+title: 作法：存取的內建的字型和色彩配置 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -7,19 +7,19 @@ helpviewer_keywords:
 - font and color control [Visual Studio SDK], categories
 - colors, accessing built-in schemes
 ms.assetid: 6905845e-e88e-4805-adcf-21da39108ec7
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 71797d3e080ad4fbbb1256914e98bc3a62f9fb01
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 2abc6606d33e4b59faeb1838bcb173fd51a28616
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63415522"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66340980"
 ---
-# <a name="how-to-access-the-built-in-fonts-and-color-ccheme"></a>HOW TO：存取的內建的字型和色彩 ccheme
+# <a name="how-to-access-the-built-in-fonts-and-color-ccheme"></a>作法：存取的內建的字型和色彩 ccheme
 Visual Studio 整合式的開發環境 (IDE) 有 [編輯器] 視窗相關聯的字型和色彩配置。 您可以透過此配置<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView>介面。
 
  若要使用的內建的字型和色彩配置，VSPackage 必須：
@@ -41,7 +41,7 @@ Visual Studio 整合式的開發環境 (IDE) 有 [編輯器] 視窗相關聯的�
     > [!NOTE]
     > 當擷取使用的字型和色彩資料<xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorEvents>或其他介面，Vspackage 會使用此 GUID 參考內建的資訊。
 
-2. 類別目錄的名稱必須新增至 VSPackage 的資源字串資料表 (*.rc*) 檔案，以便您可以在需要時顯示在 IDE 中當地語系化。
+2. 類別目錄的名稱必須新增至 VSPackage 的資源字串資料表 ( *.rc*) 檔案，以便您可以在需要時顯示在 IDE 中當地語系化。
 
      如需詳細資訊，請參閱 <<c0> [ 加入或刪除字串](/cpp/windows/adding-or-deleting-a-string)。
 
@@ -49,7 +49,7 @@ Visual Studio 整合式的開發環境 (IDE) 有 [編輯器] 視窗相關聯的�
 
 1. 建構一種特殊的類別目錄中的下列位置的登錄項目：
 
-     *[HKLM\SOFTWARE\Microsoft \Visual Studio\\\<Visual Studio version>\FontAndColors\\\<Category>*]
+     *[HKLM\SOFTWARE\Microsoft \Visual Studio\\\<Visual Studio version>\FontAndColors\\\<Category>* ]
 
      *\<類別目錄 >* 是類別目錄的非當地語系化名稱。
 

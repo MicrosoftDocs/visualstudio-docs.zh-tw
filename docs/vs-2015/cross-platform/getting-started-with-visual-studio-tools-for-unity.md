@@ -9,12 +9,12 @@ caps.latest.revision: 12
 author: conceptdev
 ms.author: crdun
 manager: jillfra
-ms.openlocfilehash: d2959164c9c585ae2661517922464dd63845a836
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 4532b7e566bbd315d9acbdef43198e0f91f5f195
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63443047"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66263558"
 ---
 # <a name="getting-started-with-visual-studio-tools-for-unity"></a>Visual Studio Tools for Unity 使用者入門
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -68,10 +68,10 @@ ms.locfileid: "63443047"
   
  如果您是 Unity 新手，請從基本教學課程的小型專案開始。 請瀏覽 Unity Learn 頁面，尋找您可以開始使用的範例專案，以及您可以學習如何使用 Unity 建置自己的遊戲課程。 Unity Learn 頁面提供幾個容易遵循之不同遊戲的教學課程。  
   
- [教學課程 – Unity Learn 頁面 (英文)](http://unity3d.com/learn/tutorials/modules)  
+ [教學課程 – Unity Learn 頁面 (英文)](https://learn.unity.com/tutorials)  
   
 #### <a name="2---configure-unity-editor-to-use-visual-studio-tools-for-unity"></a>2 - 設定 Unity Editor 使用 Visual Studio Tools for Unity  
- 若要讓您的專案能使用 Visual Studio Tools for Unity，只要將 Visual Studio 設定做為其外部指令碼編輯器。 在 Unity 編輯器中，在主功能表上選擇 **[編輯]、[喜好設定]**；然後在 [Unity 喜好設定]  對話方塊中，選擇 [外部工具] 。 接下來，將 [外部指令碼編輯器]  屬性設為您想要使用的 Visual Studio 版本 (必須安裝這版 Visual Studio 的 Visual Studio Tools for Unity)，並確定已設定 [編輯器附加]  屬性。  
+ 若要讓您的專案能使用 Visual Studio Tools for Unity，只要將 Visual Studio 設定做為其外部指令碼編輯器。 在 Unity 編輯器中，在主功能表上選擇 **[編輯]、[喜好設定]** ；然後在 [Unity 喜好設定]  對話方塊中，選擇 [外部工具]  。 接下來，將 [外部指令碼編輯器]  屬性設為您想要使用的 Visual Studio 版本 (必須安裝這版 Visual Studio 的 Visual Studio Tools for Unity)，並確定已設定 [編輯器附加]  屬性。  
   
  若要確定現在已啟用對 Visual Studio Tools for Unity 的內建支援，請參閱 [關於 Unity]  對話方塊。 In the Unity editor, on the main menu, choose **[說明]、[關於 Unity]** 。如果 Visual Studio Tools for Unity 已安裝並正確設定，您會看到在 [關於 Unity]  對話方塊。  
   
@@ -90,7 +90,7 @@ ms.locfileid: "63443047"
   
  如果您是 Unity 新手，請從基本教學課程的小型專案開始。 請瀏覽 Unity Learn 頁面，尋找您可以開始使用的範例專案，以及您可以學習如何使用 Unity 建置自己的遊戲課程。 Unity Learn 頁面提供幾個容易遵循之不同遊戲的教學課程。  
   
- [教學課程 – Unity Learn 頁面 (英文)](http://unity3d.com/learn/tutorials/modules)  
+ [教學課程 – Unity Learn 頁面 (英文)](https://learn.unity.com/tutorials)  
   
 #### <a name="2---configure-unity-editor-to-use-visual-studio-tools-for-unity"></a>2 - 設定 Unity Editor 使用 Visual Studio Tools for Unity  
  如果您從現有的專案開始，或在建立專案時未匯入 Visual Studio Tools unitypackage，則需要立即匯入 unitypackage。 在 Unity 編輯器主功能表上，選擇 [資產]、[匯入封裝]、[Visual Studio 2015 Tools]  (您應該會看到已安裝之 Visual Studio 版本的選項)。  
@@ -104,7 +104,7 @@ ms.locfileid: "63443047"
 #### <a name="3---launch-visual-studio-from-unity-editor"></a>3 - 從 Unity 編輯器啟動 Visual Studio  
  最後一個步驟是從 Unity 啟動 Visual Studio。 這會為您的專案建立 Visual Studio 方案，並接著在 Visual Studio 中開啟該方案。  
   
- 在 Unity Editor 主功能表上，選擇 [Visual Studio Tools]、[Open in Visual Studio] 。  
+ 在 Unity Editor 主功能表上，選擇 [Visual Studio Tools]、[Open in Visual Studio]  。  
   
  ![在 Visual Studio 中開啟 Unity 專案。](../cross-platform/media/vstu-configure-open-in-visual-studio.png "vstu_configure_open_in_visual_studio")  
   

@@ -7,17 +7,17 @@ helpviewer_keywords:
 - small command sets
 - command sets
 ms.assetid: 63b3478e-e08a-420b-a0ec-76767e0cb289
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0c04ea981fc190b2e0074e767e086303e6950f2a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f4cc3dfa8aaeba01709ae74ca9a1d9d54f3c1743
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62861654"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66342120"
 ---
 # <a name="command-placement-guidelines"></a>命令放置指導方針
 Visual Studio 整合式的開發環境 (IDE) 中的定位命令的最佳作法是根據命令集的大小而有所不同。 定義命令，並根據中的資訊位於 *.vsct*檔案。

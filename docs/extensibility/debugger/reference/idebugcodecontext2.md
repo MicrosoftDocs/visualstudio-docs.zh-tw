@@ -7,17 +7,17 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugCodeContext2 interface
 ms.assetid: 3670439e-2171-405d-9d77-dedb0f1cba93
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4e15692a94e3f1c80d6bd6f12ecb0c2ce7271c8d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 59573736ca3cd0768d3383e5621d96dffdea9746
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62876760"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66338888"
 ---
 # <a name="idebugcodecontext2"></a>IDebugCodeContext2
 這個介面表示的程式碼指示的開始位置。 適用於大部分的執行階段架構現在，程式碼內容可以視為該應用程式的執行資料流中的位址。

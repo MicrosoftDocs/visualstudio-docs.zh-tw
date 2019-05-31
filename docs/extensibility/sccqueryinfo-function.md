@@ -7,17 +7,17 @@ f1_keywords:
 helpviewer_keywords:
 - SccQueryInfo function
 ms.assetid: 3973d336-a9b7-41a2-a4e6-bb8184a96aaf
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d2c17d20b54ea16f0a6764277855ca240aeb7224
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 25a4b9b7d07b74047890c4ba56583cc09a394368
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62433171"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66353519"
 ---
 # <a name="sccqueryinfo-function"></a>SccQueryInfo 函式
 此函式會取得一組選取的檔案，在 原始檔控制下的狀態資訊。

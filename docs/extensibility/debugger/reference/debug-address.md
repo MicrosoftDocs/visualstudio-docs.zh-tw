@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - DEBUG_ADDRESS structure
 ms.assetid: 79f5e765-9aac-4b6e-82ef-bed88095e9ba
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d45fa0be28fcad891366581e13425d3940a0a967
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: dc25fb53db918486029e931a06a9e2de37f81c5a
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56684607"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66346302"
 ---
 # <a name="debugaddress"></a>DEBUG_ADDRESS
 此結構代表地址。
@@ -42,22 +45,26 @@ public struct DEBUG_ADDRESS {
 }
 ```
 
-## <a name="terms"></a>詞彙
-ulAppDomainID 處理序識別碼。
+## <a name="members"></a>成員
+`ulAppDomainID`\
+處理序識別碼。
 
-guidModule 模組，其中包含這個地址的 GUID。
+`guidModule`\
+包含此位址之模組的 GUID。
 
-tokClass 語彙基元，可識別的類別或此位址的類型。
+`tokClass`\
+語彙基元，可識別的類別或此位址的類型。
 
 > [!NOTE]
 > 這個值是特定符號提供者也因此而不做為類別類型的識別項的一般意義。
 
-addr A [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md)結構，其中包含可描述個別地址類型結構的聯集。 值`addr`。`dwKind` 來自[ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md)列舉型別，其中說明如何解譯聯集。
+`addr`\
+A [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md)結構，其中包含可描述個別地址類型結構的聯集。 值`addr`。`dwKind` 來自[ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md)列舉型別，其中說明如何解譯聯集。
 
 ## <a name="remarks"></a>備註
 此結構會傳遞至[GetAddress](../../../extensibility/debugger/reference/idebugaddress-getaddress.md)来填入的方法。
 
-**警告 [只有 c + +]**
+**警告 [C++只]**
 
 如果`addr.dwKind`已`ADDRESS_KIND_METADATA_LOCAL`如果`addr.addr.addrLocal.pLocal`不是 null 的值，則您必須呼叫`Release`語彙基元的指標：
 

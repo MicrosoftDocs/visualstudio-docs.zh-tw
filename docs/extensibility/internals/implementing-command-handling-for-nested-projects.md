@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - nested projects, implementing command handling
 ms.assetid: 48a9d66e-d51c-4376-a95a-15796643a9f2
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8ccdf1d4dbab45716aca11630885ed41ce25e24a
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 66f89476e6d4a8fa009dbe921113c9e4cac54916
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63420565"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66313193"
 ---
 # <a name="implementing-command-handling-for-nested-projects"></a>實作巢狀專案的命令處理
 IDE 可以傳遞命令，會傳遞<xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy>而<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>巢狀的專案，或父專案的介面可以篩選或覆寫命令。

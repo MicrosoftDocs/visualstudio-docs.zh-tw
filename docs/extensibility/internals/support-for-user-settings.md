@@ -7,17 +7,17 @@ helpviewer_keywords:
 - user settings [Visual Studio SDK], registering persistence support
 - persistence, registering settings
 ms.assetid: ad9beac3-4f8d-4093-ad0e-6fb00444a709
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ece6ecc2d7a1a49d77643e18beced76403c13cc5
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 90f04d5657fb6f680139ee6de5a47625304b5dbd
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63428770"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66309751"
 ---
 # <a name="support-for-user-settings"></a>支援使用者設定
 VSPackage 可能會定義一或多個設定類別，也就是當使用者選擇保存的狀態變數群組**匯入/匯出設定**命令**工具**功能表。 若要啟用此持續性，您可以使用 Api 設定中[!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)]。
@@ -31,14 +31,14 @@ VSPackage 可能會定義一或多個設定類別，也就是當使用者選擇�
      如果單一 VSPackage 支援數個自訂設定點，每個自訂設定點藉由個別的類別，而且每個已註冊的唯一執行個體<xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute>類別。 因此，實作類別的設定可以支援多個設定分類。
 
 ## <a name="custom-settings-point-registry-entry-details"></a>自訂設定點的登錄項目詳細資料
- 在下列位置的登錄項目中建立自訂設定點：HKLM\Software\Microsoft\VisualStudio\\*\<版本 >* \UserSettings\\`<CSPName>`，其中`<CSPName>`是 VSPackage 支援的自訂設定點名稱並*\<版本 >* 是新版[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]，例如 8.0。
+ 在下列位置的登錄項目中建立自訂設定點：HKLM\Software\Microsoft\VisualStudio\\ *\<版本 >* \UserSettings\\`<CSPName>`，其中`<CSPName>`是 VSPackage 支援的自訂設定點名稱並 *\<版本>* 是新版[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]，例如 8.0。
 
 > [!NOTE]
-> Hkey_local_machine\software\microsoft\visualstudio \ 的根路徑\\*\<版本 >* 可以覆寫以替代 root 時[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]是整合式的開發環境 (IDE)初始化。 如需詳細資訊，請參閱 <<c0> [ 命令列參數](../../extensibility/command-line-switches-visual-studio-sdk.md)。
+> Hkey_local_machine\software\microsoft\visualstudio \ 的根路徑\\ *\<版本 >* 可以覆寫以替代 root 時[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]是整合式的開發環境 (IDE)初始化。 如需詳細資訊，請參閱 <<c0> [ 命令列參數](../../extensibility/command-line-switches-visual-studio-sdk.md)。
 
  登錄項目結構如下所示：
 
- HKLM\Software\Microsoft\VisualStudio\\*\<Version>* \UserSettings\
+ HKLM\Software\Microsoft\VisualStudio\\ *\<Version>* \UserSettings\
 
  `<CSPName`>= s '#12345'
 

@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - debug engines, attaching to programs
 ms.assetid: 9a3f5b83-60b5-4ef0-91fe-a432105bd066
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3780558efae860ca54739a139bdffd04494a73b5
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: d1cc66dbade730409406a7dc3f3208c4d5147fa6
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63411367"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66332626"
 ---
 # <a name="attach-to-the-program"></a>附加至程式
 您已向適當的連接埠中的程式之後，您必須在您想要偵錯的程式附加偵錯工具。

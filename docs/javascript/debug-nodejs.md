@@ -11,12 +11,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: abfe762b354d11297aa4d0c574b8f0e0a081d349
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 978313276865c15672a129db601543a0ca307d5b
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63438000"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66263039"
 ---
 # <a name="debug-a-javascript-or-typescript-app-in-visual-studio"></a>在 Visual Studio 中對 JavaScript 和 TypeScript 進行偵錯
 
@@ -64,7 +64,7 @@ Visual Studio 僅提供 Chrome 和 Internet Explorer 的偵錯支援。 在某�
     ::: moniker range=">=vs-2019"
 
     > [!NOTE]
-    > 您也可以在瀏覽器啟動時設定 `--remote-debugging-port` 旗標，方法是從 [偵錯] 工具列中選取 [...瀏覽方式]，接著選擇 [新增]，然後在 [引數] 欄位中設定此旗標。 為瀏覽器使用不同的易記名稱，例如 **Chrome with Debugging**。 如需詳細資訊，請參閱[版本資訊](https://docs.microsoft.com/visualstudio/releases/2019/release-notes-preview#browser-cli-params-support)。
+    > 您也可以在瀏覽器啟動時設定 `--remote-debugging-port` 旗標，方法是從 [偵錯] 工具列中選取 [...瀏覽方式]，接著選擇 [新增]，然後在 [引數] 欄位中設定此旗標。 為瀏覽器使用不同的易記名稱，例如 **Chrome with Debugging**。 如需詳細資訊，請參閱[版本資訊](https://docs.microsoft.com/visualstudio/releases/2019/release-notes-preview)。
 
     ::: moniker-end
 

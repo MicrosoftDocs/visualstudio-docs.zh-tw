@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - file extensions, registering for side-by-side
 ms.assetid: 9ab046a2-147d-4167-aa14-7d661b1eaaa5
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 996f911f37b8226065feb4da311f736dd910550b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 9bdfb562ddfcce2584b8868c3c931c21f9dbc127
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62805983"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66334235"
 ---
 # <a name="register-file-name-extensions-for-side-by-side-deployments"></a>註冊並排顯示部署的檔案名稱副檔名
 適用於並排顯示環境中部署的 Vspackage，您必須註冊檔案相關聯的正確版本的檔案名稱副檔名[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]。 除非您使用版本特定檔案的副檔名，註冊可讓使用者開啟您的專案和專案項目檔中的適當版本[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]。

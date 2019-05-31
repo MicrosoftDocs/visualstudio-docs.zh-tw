@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IPropertyProxyProvider::GetPropertyProxy
 ms.assetid: 3ebb7515-5bfe-48f4-9b8d-721b8f664eb6
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 958b3571a5bfabbd609e3ca62bcdfe9b5a6171ca
-ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.openlocfilehash: 7c7769fc58b41101be8a06cf49b309fda3e64a81
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/24/2019
-ms.locfileid: "66212847"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66353412"
 ---
 # <a name="ipropertyproxyprovidergetpropertyproxy"></a>IPropertyProxyProvider::GetPropertyProxy
 擷取的屬性 proxy 介面做為指定之 proxy 識別碼。

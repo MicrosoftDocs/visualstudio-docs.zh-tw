@@ -3,17 +3,17 @@ title: Hello World 擴充功能教學課程 |Microsoft Docs
 ms.date: 03/14/2019
 ms.topic: conceptual
 ms.assetid: f74e1ad1-1ee5-4360-9bd5-d82467b884ca
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3beedce039d1c093b5dfebce07b09d7d3a5795dc
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 4c3bbafcf138c60b65940bcee73c74f56cf6e2fd
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62912233"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66342867"
 ---
 # <a name="create-your-first-extension-hello-world"></a>建立您的第一個延伸模組：Hello World
 
@@ -44,7 +44,7 @@ ms.locfileid: "62912233"
 
 ::: moniker range="vs-2017"
 
-步驟 1： 從 [檔案] 功能表選取 [新增] > [專案]。
+步驟 1： 從 [檔案]  功能表選取 [新增]   > [專案]  。
 
 步驟 2： 在右上角的 [搜尋] 方塊中，輸入 「 vsix 」 並選取視覺效果C# **VSIX 專案**。 輸入"HelloWorld"**名稱**底部的對話方塊，然後選取**確定**。
 
@@ -58,7 +58,7 @@ ms.locfileid: "62912233"
 
 ::: moniker range=">=vs-2019"
 
-步驟 1： 從 [檔案] 功能表選取 [新增] > [專案]。 搜尋"vsix 」 並選取視覺效果C# **VSIX 專案**，然後**下一步**。
+步驟 1： 從 [檔案]  功能表選取 [新增]   > [專案]  。 搜尋"vsix 」 並選取視覺效果C# **VSIX 專案**，然後**下一步**。
 
 步驟 2： 輸入"HelloWorld"**專案名稱**，然後選取**建立**。
 
@@ -156,7 +156,7 @@ ms.locfileid: "62912233"
 
 ::: moniker-end
 
-步驟 2： 在 **工具**功能表**實驗執行個體**，按一下  **Say Hello World ！**。
+步驟 2： 在 **工具**功能表**實驗執行個體**，按一下  **Say Hello World ！** 。
 
 ![最終結果](media/hello-world-final-result.png)
 

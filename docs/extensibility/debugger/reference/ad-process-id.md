@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - AD_PROCESS_ID union
 ms.assetid: 4cb40d12-2e92-4f09-83f4-689928bd65b3
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 395070d018492fa8950c6856270c61c0a645cdd0
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 1893b78063e045f341af246fc0ef2c0f2ad1538e
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56688416"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66351417"
 ---
 # <a name="adprocessid"></a>AD_PROCESS_ID
 指定的處理序識別碼，可能是系統識別碼或 GUID。
@@ -45,11 +48,14 @@ public struct AD_PROCESS_ID {
 ```
 
 ## <a name="members"></a>成員
-`ProcessIdType` 值，以從[AD_PROCESS_ID_TYPE](../../../extensibility/debugger/reference/ad-process-id-type.md)列舉，指定如何解譯`ProcessId`等位 （或 managed 程式碼，來存取結構的成員）。
+`ProcessIdType`\
+值，以從[AD_PROCESS_ID_TYPE](../../../extensibility/debugger/reference/ad-process-id-type.md)列舉，指定如何解譯`ProcessId`等位 （或 managed 程式碼，來存取結構的成員）。
 
-值，以從系統 dwProcessId 的處理序識別碼。
+`dwProcessId`\
+值，以從系統處理序識別碼。
 
-做為 GUID guidProcessId 的處理序識別碼。
+`guidProcessId`\
+處理序識別碼，做為 GUID。
 
 dwUnused 填補。
 

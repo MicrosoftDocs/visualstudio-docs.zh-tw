@@ -5,17 +5,17 @@ ms.topic: reference
 helpviewer_keywords:
 - debugging [Debugging SDK], API reference
 ms.assetid: e4e429da-3667-41f7-9158-a8207d13e91a
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7d415644897d7dd481f47c93a3b951db23fda843
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 7f880596854eb376d386bc6a96d789c54767f39d
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56686349"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66351854"
 ---
 # <a name="api-reference-visual-studio-debugging"></a>API 參考 (Visual Studio 偵錯)
 參考章節包含的 API，顯示的語法和所有的 API 元素的使用方式指南的概念性概觀和各種程式碼範例。 所有參考會依分類依字母順序都列出。
@@ -37,10 +37,10 @@ ms.locfileid: "56686349"
 |E_ACCESSDENIED|一般拒絕存取錯誤。|0x80070005|
 
 > [!NOTE]
->  當[!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)]偵錯方法會傳回`S_OK`，則會假設所有參數的指標都有效，也就是沒有驗證場地進行 out 參數的指標時`S_OK`會傳回。
+> 當[!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)]偵錯方法會傳回`S_OK`，則會假設所有參數的指標都有效，也就是沒有驗證場地進行 out 參數的指標時`S_OK`會傳回。
 >
 > [!NOTE]
->  無效或`NULL`[out] 參數可能會造成 IDE 損毀。
+> 無效或`NULL`[out] 參數可能會造成 IDE 損毀。
 
 ## <a name="see-also"></a>另請參閱
 - [介面](../../../extensibility/debugger/reference/interfaces-visual-studio-debugging.md)

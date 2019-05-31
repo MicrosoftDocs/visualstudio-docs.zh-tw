@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - debugging [Debugging SDK], contexts
 ms.assetid: b59d739c-7572-427f-a70d-4e5df63d02c1
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: fc9d1e793405b2eb83fe4f72980a71e44d1acbd1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: fecc50de842f628c54878af5fc91b5aeb3adefa4
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62926092"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66345728"
 ---
 # <a name="document-position"></a>文件位置
 在 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]偵錯*文件位置*:

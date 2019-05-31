@@ -7,17 +7,17 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugErrorEvent2 interface
 ms.assetid: 275b6f38-b3d4-4cae-8491-491177f524fb
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6ba7e17cb07e1a2d57d75dc573ceca5ebd522b2e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 945b04fc2d5a370ef4b2d17abd90e6bdaa818553
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62920098"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66327663"
 ---
 # <a name="idebugerrorevent2"></a>IDebugErrorEvent2
 這個介面會指定要向使用者回報的錯誤訊息。

@@ -1,5 +1,5 @@
 ---
-title: 您要加入至設計工具的物件使用與設計工具所用的不同資料連接
+title: 物件加入至設計工具使用了不同的資料連接
 ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: 332ed2f3-3377-4d51-8e3b-fdb98231978e
@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 22307115893407fa4703475e727b1e77355cad57
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: c85e0c17eeb4cfbd786faac338c8b908c5a7f363
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65460559"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66260930"
 ---
 # <a name="the-objects-you-are-adding-to-the-designer-use-a-different-data-connection-than-the-designer"></a>您要加入至設計工具的物件使用不同的資料連接與設計工具
 
@@ -28,7 +28,7 @@ ms.locfileid: "65460559"
    選取的物件加入至**O/R Designer**，而*DataContext.Connection*設為新的連接。
 
    > [!NOTE]
-   > 如果您按一下 **[是]**，所有的實體類別上**O/R Designer**會對應至新的連接。
+   > 如果您按一下 **[是]** ，所有的實體類別上**O/R Designer**會對應至新的連接。
 
 - 若要繼續使用現有的連線，取消加入選取的物件，按一下**No**。
 

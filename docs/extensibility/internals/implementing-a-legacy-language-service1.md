@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - language services, managed
 ms.assetid: df638f24-166d-4b80-be82-c9c39ca7a556
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2fe405ea62562a9e7eb90948d92fcd5075887c8d
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 626838b0e82846f66b817465fca2df353af42dd5
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63420489"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66315652"
 ---
 # <a name="implementing-a-legacy-language-service"></a>實作舊版語言服務
 您可以使用在 managed 的 package framework (MPF) 類別來實作舊版語言服務，可支援各種不同的功能，例如語法反白顯示、 括號對稱和 IntelliSense 完成。

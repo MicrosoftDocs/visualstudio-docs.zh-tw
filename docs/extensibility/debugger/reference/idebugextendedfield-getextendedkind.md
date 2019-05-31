@@ -6,20 +6,20 @@ helpviewer_keywords:
 - IDebugExtendedField::GetExtendedKind
 - GetExtendedKind
 ms.assetid: 20dc1c13-3cc0-4bb4-9c99-fa85587c86c3
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 9e955a5c2907992b4e580bcd188709b67e009294
-ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.openlocfilehash: 9b95992bdb9a35edbb828f05f4d4aad5e7d8631e
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/24/2019
-ms.locfileid: "66209888"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66352705"
 ---
 # <a name="idebugextendedfieldgetextendedkind"></a>IDebugExtendedField::GetExtendedKind
 擷取指定的擴充的欄位類型。

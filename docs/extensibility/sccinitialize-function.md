@@ -7,17 +7,17 @@ f1_keywords:
 helpviewer_keywords:
 - SccInitialize function
 ms.assetid: 5bc0d28b-2c68-4d43-9e51-541506a8f76e
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 536919d4db8b13f12af1f3277daa0c148fd57916
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a855ecbc65211234b29808fc9e4cf256cd6b25f7
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62802720"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66353591"
 ---
 # <a name="sccinitialize-function"></a>SccInitialize 函式
 此函式會初始化原始檔控制外掛程式，並提供功能和整合式的開發環境 (IDE) 的限制。

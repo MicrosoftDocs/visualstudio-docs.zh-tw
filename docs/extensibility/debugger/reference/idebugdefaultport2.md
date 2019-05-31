@@ -7,17 +7,17 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugDefaultPort2 interface
 ms.assetid: 7b3452af-9a96-4c4c-9946-4339b72d3d7b
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7e646a248e4b7da03a9dbad9bcea2470d9d0f450
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: ed38c530ee972e413ee98cc9d94f0f19a9b57069
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62876006"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66351710"
 ---
 # <a name="idebugdefaultport2"></a>IDebugDefaultPort2
 這個介面會提供數種方法可以存取連接埠的伺服器和通知功能。

@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - BP_STATE enumeration
 ms.assetid: 08aa6a3f-3e5f-4c83-8eca-7b7b5f8e208d
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4117b3cb92eef555d5ed9a6c3e829fb3302924ae
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: a35ddccf1723067574942711db89cb64cc41f7b0
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56709248"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66350605"
 ---
 # <a name="bpstate"></a>BP_STATE
 指定的繫結中斷點存在，也會指定是否已啟用。
@@ -43,14 +46,18 @@ public enum enum_BP_STATE {
 };
 ```
 
-## <a name="members"></a>成員
-BPS_NONE 指定存在於任何中斷點。
+## <a name="fields"></a>欄位
+`BPS_NONE`\
+指定任何中斷點存在。
 
-BPS_DELETED 指定已刪除的中斷點。
+`BPS_DELETED`\
+指定已刪除的中斷點。
 
-BPS_DISABLED 指定停用中斷點。
+`BPS_DISABLED`\
+指定停用中斷點。
 
-BPS_ENABLED 會指定啟用中斷點。
+`BPS_ENABLED`\
+指定啟用中斷點。
 
 ## <a name="remarks"></a>備註
 傳回從[GetState](../../../extensibility/debugger/reference/idebugboundbreakpoint2-getstate.md)方法。

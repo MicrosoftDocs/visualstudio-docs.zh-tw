@@ -7,17 +7,17 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugBreakpointRequest2 interface
 ms.assetid: 01ac4013-96f9-4235-b289-f55f9e99558f
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6a984634dbba0fc1d732fe98214a07d8d6c339d4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 55e7c73b720e326b823c3038928d7141ea732155
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62923380"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66352907"
 ---
 # <a name="idebugbreakpointrequest2"></a>IDebugBreakpointRequest2
 這個介面會表示建立並繫結任何中斷點類型的所需的資訊。

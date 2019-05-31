@@ -6,20 +6,20 @@ helpviewer_keywords:
 - GetPointerAddress
 - IDebugPointerObject3::GetPointerAddress
 ms.assetid: 4cc5af04-9e70-420d-8230-ef3108df6d51
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 3e94c637409dcfb2b5cd70e51c2dafe966d5ff6d
-ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.openlocfilehash: 625230d6e04fe374c46e94a2e916df3eb025172a
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/24/2019
-ms.locfileid: "66209320"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66343790"
 ---
 # <a name="idebugpointerobject3getpointeraddress"></a>IDebugPointerObject3::GetPointerAddress
 擷取指標的位址。

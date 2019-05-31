@@ -3,17 +3,17 @@ title: 逐步解說：使用 JavaScript 建立 SDK |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: a8c89d5d-5b78-4435-817f-c5f25ca6d715
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f15dc7ef3c5ab06857307081511f1c9aa2285566
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 61f18d2d7412b84827aaa9b6a229c80019716df4
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62796339"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66312543"
 ---
 # <a name="walkthrough-create-an-sdk-using-javascript"></a>逐步解說：建立使用 JavaScript SDK
 本逐步解說將說明如何使用 JavaScript 來建立簡單的數學 SDK 作為 Visual Studio 擴充功能 (VSIX)。  本逐步解說分為下列部分：
@@ -29,9 +29,9 @@ ms.locfileid: "62796339"
 
 ## <a name="createSimpleMathVSIX"></a> 若要建立 SimpleMathVSIX 擴充功能 SDK 專案
 
-1. 在功能表列上，選擇 [檔案] > [新增] > [專案]。
+1. 在功能表列上，選擇 [檔案]   > [新增]   > [專案]  。
 
-2. 在範本類別清單中下**Visual C#**，選取**擴充性**，然後選取**VSIX 專案**範本。
+2. 在範本類別清單中下**Visual C#** ，選取**擴充性**，然後選取**VSIX 專案**範本。
 
 3. 在 [**名稱**文字方塊中，指定`SimpleMathVSIX`，然後選擇 **[確定]** ] 按鈕。
 
@@ -94,7 +94,7 @@ ms.locfileid: "62796339"
 
      *\Redist\CommonConfiguration\Neutral\SimpleMath\js\\*
 
-14. 上的捷徑功能表**\js\\** 資料夾中，選擇 **新增** > **新項目**。
+14. 上的捷徑功能表 **\js\\** 資料夾中，選擇 **新增** > **新項目**。
 
 15. 底下**Visual C# 項目**，選取**Web**類別，然後再選取**JavaScript 檔案**項目。 將檔案命名`arithmetic.js`，然後選擇**新增** 按鈕。
 
@@ -132,7 +132,7 @@ ms.locfileid: "62796339"
 
 18. 在 [**方案總管] 中**的捷徑功能表上**SimpleMathVSIX**專案，選擇**建置**。
 
-19. 建置專案的捷徑功能表上成功完成之後，選擇**在檔案總管 中開啟資料夾**。 瀏覽至**\bin\debug\\**，然後執行`SimpleMathVSIX.vsix`進行安裝。
+19. 建置專案的捷徑功能表上成功完成之後，選擇**在檔案總管 中開啟資料夾**。 瀏覽至 **\bin\debug\\** ，然後執行`SimpleMathVSIX.vsix`進行安裝。
 
 20. 選擇**安裝** 按鈕，讓安裝完成。
 
@@ -140,7 +140,7 @@ ms.locfileid: "62796339"
 
 ## <a name="createSampleApp"></a> 若要建立範例應用程式使用 SDK
 
-1. 在功能表列上，選擇 [檔案] > [新增] > [專案]。
+1. 在功能表列上，選擇 [檔案]   > [新增]   > [專案]  。
 
 2. 在範本類別清單中下**JavaScript**，選取**Windows 市集**，然後選取**空白應用程式**範本。
 
@@ -152,7 +152,7 @@ ms.locfileid: "62796339"
 
 6. 選取 [**簡單的數學**核取方塊，然後選擇**確定**] 按鈕。
 
-7. 在**方案總管 中**下方**參考**，注意**簡單的數學**參考會顯示。 展開它，並請注意，有**\js\\** 資料夾，其中包含**arithmetic.js**。 您可以開啟**arithmetic.js**來確認已安裝您的原始程式碼。
+7. 在**方案總管 中**下方**參考**，注意**簡單的數學**參考會顯示。 展開它，並請注意，有 **\js\\** 資料夾，其中包含**arithmetic.js**。 您可以開啟**arithmetic.js**來確認已安裝您的原始程式碼。
 
 8. 使用下列程式碼的內容取代*default.htm*。
 
@@ -192,7 +192,7 @@ ms.locfileid: "62796339"
    </html>
    ```
 
-9. 使用下列程式碼的內容取代*\js\default.js*。
+9. 使用下列程式碼的內容取代 *\js\default.js*。
 
     ```csharp
     (function () {
@@ -250,7 +250,7 @@ ms.locfileid: "62796339"
     })();
     ```
 
-10. 內容取代*\css\default.css*以下列程式碼：
+10. 內容取代 *\css\default.css*以下列程式碼：
 
     ```xml
     form {
@@ -311,7 +311,7 @@ ms.locfileid: "62796339"
 
 11. 選擇**F5**鍵，建置並執行應用程式。
 
-12. 在應用程式 UI 中，輸入任何兩個數字，選取作業，然後選擇**=**  按鈕。 正確的結果會出現。
+12. 在應用程式 UI 中，輸入任何兩個數字，選取作業，然後選擇 **=**  按鈕。 正確的結果會出現。
 
 ## <a name="see-also"></a>另請參閱
 - [建立軟體開發套件](../extensibility/creating-a-software-development-kit.md)

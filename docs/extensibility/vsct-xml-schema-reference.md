@@ -6,17 +6,17 @@ helpviewer_keywords:
 - Visual Studio command table configuration files (VSCT), XML schema
 - VSCT XML schema elements
 ms.assetid: 49e7efae-e713-4762-a824-96fdaf92cdc9
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 37b3f3105280ec384b6c180a65d2492ffd3bb02c
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 94197efeadf8cd7148cbc41f3f71df625718bba7
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63411127"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66350725"
 ---
 # <a name="vsct-xml-schema-reference"></a>VSCT XML 結構描述參考
 提供的命令資料表編譯器結構描述項目，允許的子系項目和屬性每個。

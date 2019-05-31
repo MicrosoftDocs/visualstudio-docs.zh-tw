@@ -7,17 +7,17 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugOutputStringEvent2 interface
 ms.assetid: 86596fd1-cecc-4813-8add-dc3d70068f9b
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: dfce52f89e75c8e9e697a3fa5ad4184c3d1fa42b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: d47fe2b329f9f2fb4adb57cdf6e2a6a871299d14
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62872508"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66311905"
 ---
 # <a name="idebugoutputstringevent2"></a>IDebugOutputStringEvent2
 這個介面是由偵錯引擎 (DE) 中，工作階段的偵錯管理員 (SDM) 傳送至輸出字串。

@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - PARSEFLAGS enumeration
 ms.assetid: 47943f0a-54cb-4493-a62e-5dba97bd4c35
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: e5d298add846a7f3b7baf566f3c31e16c68b8dc5
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: 6123c6438defff596351fff3d1ba31ea52a19f28
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65460836"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66349928"
 ---
 # <a name="parseflags"></a>PARSEFLAGS
 指定如何剖析的運算式。

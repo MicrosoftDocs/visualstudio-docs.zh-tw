@@ -7,12 +7,12 @@ ms.topic: landing-page
 ms.author: mikejo
 author: mikejo5000
 manager: jillfra
-ms.openlocfilehash: 9510e572c7e9f9ffa01ec5e9a94541d03fcaa587
-ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
+ms.openlocfilehash: de80c61a9cd264f0b538e8efa5ebab6dc34b1ced
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65225935"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66263190"
 ---
 # <a name="deployment-in-visual-studio"></a>Visual Studio 中的部署
 
@@ -281,7 +281,7 @@ Visual Studio 提供數種不同工具，協助您部署應用程式。
         </a>
     </li>
     <li>
-        <a href="/cpp/ide/clickonce-deployment-for-visual-cpp-applications">
+        <a href="/cpp/windows/clickonce-deployment-for-visual-cpp-applications">
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">

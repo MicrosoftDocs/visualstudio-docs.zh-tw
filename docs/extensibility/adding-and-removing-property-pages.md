@@ -7,20 +7,20 @@ helpviewer_keywords:
 - property pages, project subtypes
 - property pages, removing
 ms.assetid: 34853412-ab8a-4caa-9601-7d0727b2985d
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 dev_langs:
 - CSharp
 - VB
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0277d0f04042b6d7ed4cb8b6233d8b0ccec464f7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 03974bba0ca93242cf044a58bbb60ca772a369ce
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62843887"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66352308"
 ---
 # <a name="add-and-remove-property-pages"></a>新增和移除屬性頁
 

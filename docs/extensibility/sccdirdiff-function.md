@@ -7,17 +7,17 @@ f1_keywords:
 helpviewer_keywords:
 - SccDirDiff function
 ms.assetid: 26c9ba92-e3b9-4dd2-bd5e-76b17745e308
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2a0638b0e644242e471ff30bc58d550675089695
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: c3d207a171acba4127849cd479a1049afafa8492
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63434673"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66351891"
 ---
 # <a name="sccdirdiff-function"></a>SccDirDiff 函式
 此函式會顯示目前的本機目錄上的用戶端磁碟和對應的專案，原始檔控制下的差異。

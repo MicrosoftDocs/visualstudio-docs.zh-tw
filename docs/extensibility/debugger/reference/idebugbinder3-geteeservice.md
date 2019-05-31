@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugBinder3::GetEEService method
 ms.assetid: eb07aa40-8cd9-4a52-a4c7-4affd2307a01
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: eaaaf52a0a577d8b802540ca9b4ae11ab9aa1dbd
-ms.sourcegitcommit: 77b4ca625674658d5c5766e684fa0e2a07cad4da
+ms.openlocfilehash: 3afc38551dc04e7fc7f6d55df81c5b7248127acd
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/14/2019
-ms.locfileid: "65614908"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66327138"
 ---
 # <a name="idebugbinder3geteeservice"></a>IDebugBinder3::GetEEService
 這個方法會傳回要求的服務。

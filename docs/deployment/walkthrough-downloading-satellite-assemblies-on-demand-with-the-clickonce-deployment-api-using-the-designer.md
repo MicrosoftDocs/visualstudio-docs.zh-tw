@@ -1,5 +1,5 @@
 ---
-title: 逐步解說：下載附屬組件，依需求以 ClickOnce 部署 API 使用設計工具 |Microsoft Docs
+title: 下載附屬組件隨使用 ClickOnce 設計工具
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cb3003ebf8fe102caac1dabfb4c87de521a57c77
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: f510ef4ad81188997e1d572e7aa3b52b65883269
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63405898"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66263408"
 ---
 # <a name="walkthrough-download-satellite-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer"></a>逐步解說：下載依需求使用設計工具以 ClickOnce 部署 API 的附屬組件
 透過使用附屬組件，Windows Forms 應用程式可以設定為適用多個文化特性。 *「附屬組件」* (Satellite Assembly) 為包含文化特性 (除了應用程式的預設文化特性以外) 之應用程式資源的組件。
@@ -41,21 +41,21 @@ ms.locfileid: "63405898"
 
 1. 建置您的專案。 這個步驟將會針對您在進行當地語系化的所有文化特性產生附屬組件。
 
-2. 以滑鼠右鍵按一下 [方案總管] 中的專案名稱，再按一下 [屬性]。
+2. 以滑鼠右鍵按一下 [方案總管] 中的專案名稱，再按一下 [屬性]  。
 
-3. 按一下 [發佈] 索引標籤，然後按一下 [應用程式檔案]。
+3. 按一下 [發佈]  索引標籤，然後按一下 [應用程式檔案]  。
 
-4. 選取 [顯示所有檔案] 核取方塊，顯示附屬組件。 所有附屬組件預設都會包含在部署中，而且會顯示在這個對話方塊中。
+4. 選取 [顯示所有檔案]  核取方塊，顯示附屬組件。 所有附屬組件預設都會包含在部署中，而且會顯示在這個對話方塊中。
 
      附屬組件的名稱形式為 *\<isoCode>\ApplicationName.resources.dll*，其中 \<isoCode> 是 RFC 1766 格式的語言識別項。
 
-5. 在每個語言識別項的 [下載群組] 清單內按一下 [新增]。 在系統提示您輸入下載群組名稱時，請輸入語言識別項。 比方說，是日文的附屬組件中，您會指定將下載群組名稱`ja-JP`。
+5. 在每個語言識別項的 [下載群組]  清單內按一下 [新增]  。 在系統提示您輸入下載群組名稱時，請輸入語言識別項。 比方說，是日文的附屬組件中，您會指定將下載群組名稱`ja-JP`。
 
-6. 關閉 [應用程式檔案] 對話方塊。
+6. 關閉 [應用程式檔案]  對話方塊。
 
 ### <a name="to-download-satellite-assemblies-on-demand-in-c"></a>在 C\# 內視需要下載附屬組件
 
-1. 開啟 *Program.cs* 檔案。 如果您沒有在 [方案總管] 內看到這個檔案，請選取您的專案，並在 [專案] 功能表上按一下 [顯示所有檔案]。
+1. 開啟 *Program.cs* 檔案。 如果您沒有在 [方案總管] 內看到這個檔案，請選取您的專案，並在 [專案]  功能表上按一下 [顯示所有檔案]  。
 
 2. 使用下列程式碼來下載適當的附屬組件，並啟動您的應用程式。
 
@@ -63,9 +63,9 @@ ms.locfileid: "63405898"
 
 ### <a name="to-download-satellite-assemblies-on-demand-in-visual-basic"></a>在 Visual Basic 內視需要下載附屬組件
 
-1. 在應用程式的 [屬性] 視窗中，按一下 [應用程式] 索引標籤。
+1. 在應用程式的 [屬性]  視窗中，按一下 [應用程式]  索引標籤。
 
-2. 在索引標籤頁的下方，按一下 [檢視應用程式事件]。
+2. 在索引標籤頁的下方，按一下 [檢視應用程式事件]  。
 
 3. 將下列匯入內容新增至 *ApplicationEvents.VB* 檔案的開頭。
 

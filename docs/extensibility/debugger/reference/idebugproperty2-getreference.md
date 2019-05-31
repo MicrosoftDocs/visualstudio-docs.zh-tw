@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProperty2::GetReference method
 ms.assetid: 2fa97d9b-c3d7-478e-ba5a-a933f40a0103
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 6df09a360380952482fef62b725707cd6aa86e48
-ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.openlocfilehash: 49763b0f8a0d7d0c016326d69a22a57d8ff32403
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/24/2019
-ms.locfileid: "66211444"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66342940"
 ---
 # <a name="idebugproperty2getreference"></a>IDebugProperty2::GetReference
 傳回屬性的值的參考。

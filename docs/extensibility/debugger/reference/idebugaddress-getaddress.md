@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugAddress:GetAddress method
 ms.assetid: 2590387b-5d36-4116-9a75-737957b8898e
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 3b2829e598a9dff08218d5fc19c34089d07b2601
-ms.sourcegitcommit: 77b4ca625674658d5c5766e684fa0e2a07cad4da
+ms.openlocfilehash: f787f041c6c39b8120a768f9288efe86649bb227
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/14/2019
-ms.locfileid: "65615335"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66317999"
 ---
 # <a name="idebugaddressgetaddress"></a>IDebugAddress::GetAddress
 傳回描述物件和它的位置，其範圍或容器內的結構。

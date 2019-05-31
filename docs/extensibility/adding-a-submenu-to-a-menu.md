@@ -8,17 +8,17 @@ helpviewer_keywords:
 - cascading submenus
 - menus, creating cascading submenus
 ms.assetid: 692600cb-d052-40e2-bdae-4354ae7c6c84
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2032606279a4b7df9ef02bf4fa69c961401e37ec
-ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
+ms.openlocfilehash: 32a69a260aff2163deb02a67fb011d50f138c601
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65225909"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66309871"
 ---
 # <a name="add-a-submenu-to-a-menu"></a>將子功能表加入至功能表
 本逐步解說是根據在示範[Visual Studio 功能表列中加入功能表](../extensibility/adding-a-menu-to-the-visual-studio-menu-bar.md)示範如何以新增至子功能表**TestMenu**功能表。

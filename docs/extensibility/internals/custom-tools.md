@@ -7,17 +7,17 @@ helpviewer_keywords:
 - tools [Visual Studio], custom
 - custom tools
 ms.assetid: d669f154-9b23-48b6-b9f6-7419c8dd61a6
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: dc6093d9bdbd780e1c8ddeb941f5f80dd479f77a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f9bad62d071fd7c2ef6e0a7c1f5500a5fccb18e0
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62910147"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66312269"
 ---
 # <a name="custom-tools"></a>自訂工具
 *自訂工具*可讓您在專案中的項目相關聯的工具，並執行該工具，每次您儲存檔案。 某些自訂的工具，有時稱為*單一檔案產生器*，常用來實作轉譯器產生程式碼從資料，反之亦然。 比方說，單一檔案產生器建立[!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)]和[!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)]原始程式碼，共 *.settings*並 *.resx*檔案。 產生的原始程式碼提供強型別中的資料的存取 *.settings*並 *.resx*檔案。 [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)]和[!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)]專案類型支援的自訂工具;[!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)]專案類型不這麼做。 您自己的專案類型也可以支援自訂的工具。

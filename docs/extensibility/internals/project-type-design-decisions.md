@@ -8,17 +8,17 @@ helpviewer_keywords:
 - project types, items
 - project types, design decisions
 ms.assetid: f68671fe-fd7a-4e56-a0b5-330b0f1fedb1
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5e420261810cec793cc553eac83bbc97edd1fb1c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 697b09ff5725de954963f7583271ac9ebd6814a8
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62909114"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66328114"
 ---
 # <a name="project-type-design-decisions"></a>專案類型的設計決策
 建立新的專案類型之前，您必須對您的專案類型數個設計決策。 您必須決定您將使用哪些類型的項目會包含您的專案、 如何將保存專案檔，以及哪一種承諾用量的模型。

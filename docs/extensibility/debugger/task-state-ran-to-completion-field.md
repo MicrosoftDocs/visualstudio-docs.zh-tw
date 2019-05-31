@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - TASK_STATE_RAN_TO_COMPLETION field, Task class [.NET Framework debug engines]
 ms.assetid: 0f4830af-fe0c-4141-b768-817f4e426b8c
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a2bfec03e44b4af46ed75761d96f1e37bc1370e0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 6a7108a9f17ee308c781e652fddc2c0fc6277e1d
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62864386"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66331431"
 ---
 # <a name="taskstaterantocompletion-field"></a>TASK_STATE_RAN_TO_COMPLETION 欄位
 工作已成功完成執行。

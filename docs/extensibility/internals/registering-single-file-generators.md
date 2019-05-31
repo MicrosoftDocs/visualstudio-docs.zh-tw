@@ -6,17 +6,17 @@ helpviewer_keywords:
 - registration, custom tools
 - custom tools, defining registry settings
 ms.assetid: db7592c0-1273-4843-9617-6e2ddabb6ca8
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3d5d9e4cd0baa2343a68a3d86a96110c97b6cbb7
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 5b0c3bf7c8260506eabf56113992c985e1cc8669
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63426807"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66351014"
 ---
 # <a name="registering-single-file-generators"></a>註冊單一檔案產生器
 若要提供自訂的工具[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]，您必須註冊因此[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]可以加以具現化，並與特定專案類型關聯。

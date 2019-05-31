@@ -3,17 +3,17 @@ title: Microsoft 說明檢視器 SDK |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 620d7dcd-d462-475e-a449-fbfa06ff12c5
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0b0e50c54aa702fb05732a37b3b363b378fe9c3a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a3e7cc2064e1ce74e2256d2246e46d2960c1cacc
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62860019"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66349303"
 ---
 # <a name="microsoft-help-viewer-sdk"></a>Microsoft Help Viewer SDK
 
@@ -825,7 +825,7 @@ Visual Studio 標誌，以及其他圖形，則會顯示 visual Studio 內容。
 
 10. 啟動 Contoso 應用程式 （來自 Contoso 應用程式根目錄中）。 在 ISO Shell 中，選擇**幫助**功能表項目，以及變更**設定說明偏好**來**使用本機說明**。
 
-11. 在殼層中，選擇**幫助**功能表項目，然後**檢視說明**。 本機說明檢視器應會啟動。 選擇 [管理內容] 索引標籤。底下**安裝來源**，選擇**磁碟**選項按鈕。 選擇 **...** 按鈕並瀏覽至包含 Contoso 內容 （複製到上述的步驟中的本機資料夾） 的本機資料夾。 選擇 [HelpContentSetup.msha]。 Contoso 應現在會顯示為活頁簿中的活頁簿選取項目中。 選擇**新增**，然後選擇**更新**按鈕 （下圖右下角）。
+11. 在殼層中，選擇**幫助**功能表項目，然後**檢視說明**。 本機說明檢視器應會啟動。 選擇 [管理內容]  索引標籤。底下**安裝來源**，選擇**磁碟**選項按鈕。 選擇 **...** 按鈕並瀏覽至包含 Contoso 內容 （複製到上述的步驟中的本機資料夾） 的本機資料夾。 選擇 [HelpContentSetup.msha]。 Contoso 應現在會顯示為活頁簿中的活頁簿選取項目中。 選擇**新增**，然後選擇**更新**按鈕 （下圖右下角）。
 
 12. 在 Contoso IDE 中，選擇 F1 鍵，以測試 F1 功能。
 

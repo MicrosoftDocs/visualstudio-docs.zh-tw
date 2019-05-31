@@ -3,17 +3,17 @@ title: 適用於 Visual Studio 的應用程式模式 |Microsoft Docs
 ms.date: 04/26/2017
 ms.topic: conceptual
 ms.assetid: 8ed68602-4e28-46fe-b39f-f41979b308a2
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: fd12d18c0230af4307d0dec8fe37868801226472
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 55044df3898b452e87ec877f9ae10dd12a2b1110
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62432515"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66337954"
 ---
 # <a name="application-patterns-for-visual-studio"></a>適用於 Visual Studio 的應用程式模式
 ## <a name="BKMK_WindowInteractions"></a> 視窗的互動
@@ -73,7 +73,7 @@ Visual Studio 工具視窗會有不同的狀態，其中有些是使用者已啟
 ![工具在 Visual Studio 中的視窗狀態](../../extensibility/ux-guidelines/media/0702-01_toolwindowstates.png "0702年 01_ToolWindowStates")<br />Visual Studio 中的工具視窗狀態
 
 #### <a name="single-instance-and-multi-instance"></a>單一執行個體和多重執行個體
-工具視窗是單一執行個體或多重執行個體。 部分的單一執行個體工具視窗可能主動式文件視窗中，與相關聯，而多個執行個體工具視窗可能不會。 多重執行個體工具視窗回應** 視窗&gt;開新視窗**命令藉由建立視窗的新執行個體。 下圖顯示使用中視窗的執行個體時，啟用新視窗 命令的工具視窗：
+工具視窗是單一執行個體或多重執行個體。 部分的單一執行個體工具視窗可能主動式文件視窗中，與相關聯，而多個執行個體工具視窗可能不會。 多重執行個體工具視窗回應 **視窗&gt;開新視窗**命令藉由建立視窗的新執行個體。 下圖顯示使用中視窗的執行個體時，啟用新視窗 命令的工具視窗：
 
 ![啟用 [開新視窗] 命令視窗執行個體時的工具視窗是作用中](../../extensibility/ux-guidelines/media/0702-02_toolwindowenablingcommand.png "0702年 02_ToolWindowEnablingCommand")<br />啟用 [開新視窗] 命令視窗執行個體時的工具視窗是作用中
 
@@ -398,7 +398,7 @@ Visual Studio 工具視窗會有不同的狀態，其中有些是使用者已啟
   ![在 Visual Studio 對話方塊中的標題列的指導方針規格](../../extensibility/ux-guidelines/media/0704-03_titlebarspecs.png "0704年 03_TitleBarSpecs")<br />在 Visual Studio 對話方塊中的標題列的指導方針規格
 
 #### <a name="control-buttons"></a>控制按鈕
-一般情況下， **[確定]**，**取消**，並**協助**應該水平排列按鈕，在對話方塊右下角。 如果對話方塊底部會造成與控制按鈕的視覺化混淆的對話方塊中的數個其他按鈕，允許替代的垂直堆疊。
+一般情況下， **[確定]** ，**取消**，並**協助**應該水平排列按鈕，在對話方塊右下角。 如果對話方塊底部會造成與控制按鈕的視覺化混淆的對話方塊中的數個其他按鈕，允許替代的垂直堆疊。
 
 ![Visual Studio 對話方塊中的控制項按鈕的可接受組態](../../extensibility/ux-guidelines/media/0704-04_controlbuttonconfig.png "0704年 04_ControlButtonConfig")<br />可接受 Visual Studio 對話方塊中的控制項按鈕組態
 
@@ -411,7 +411,7 @@ Visual Studio 工具視窗會有不同的狀態，其中有些是使用者已啟
 請避免選擇預設命令的永久破壞性動作。 如果存在這類命令，請改為預設值選擇更安全的命令。
 
 #### <a name="access-keys"></a>存取金鑰
-請勿使用存取金鑰 **[確定]**，**取消**，或**協助**按鈕。 根據預設，這些按鈕會對應至快速鍵：
+請勿使用存取金鑰 **[確定]** ，**取消**，或**協助**按鈕。 根據預設，這些按鈕會對應至快速鍵：
 
 | 按鈕名稱 | 鍵盤快速鍵 |
 | --- | --- |

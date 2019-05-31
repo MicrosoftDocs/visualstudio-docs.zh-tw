@@ -6,17 +6,17 @@ helpviewer_keywords:
 - regpkg, registration utility
 - registration, regpkg utility
 ms.assetid: 1683ee18-59d1-4bab-a674-dd00dd960de3
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e37125f8098d854d887c7bc5d209b30af2d12222
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: e5b4e6384730492e0f34470bbe4676ce0d9012c3
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63409674"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66310972"
 ---
 # <a name="regpkg-utility"></a>RegPkg 公用程式
 > [!NOTE]
