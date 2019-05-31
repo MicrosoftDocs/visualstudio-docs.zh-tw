@@ -35,7 +35,7 @@ ms.locfileid: "63436713"
 
 - 每個新的網站欄專案執行個體中建立新的.snk 檔案。 這個檔案用來簽署專案輸出，讓 SharePoint 方案組件可以部署到全域組件快取。
 
-- 偵錯和測試精靈。
+- 偵錯和測試精靈]。
 
 > [!NOTE]
 > 針對一系列的範例工作流程中，請參閱[SharePoint 工作流程範例](https://docs.microsoft.com/sharepoint/dev/general-development/sharepoint-workflow-samples)。
@@ -77,15 +77,15 @@ ms.locfileid: "63436713"
 
 #### <a name="to-create-the-wpf-project"></a>若要建立 WPF 專案
 
-1. 在  [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]，開啟 SiteColumnProjectItem 方案。
+1. 在 [ [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]，開啟 SiteColumnProjectItem 方案。
 
-2. 中**方案總管**，開啟捷徑功能表**SiteColumnProjectItem**方案節點，選擇**新增**，然後選擇 **新專案**.
+2. 中**方案總管**，開啟捷徑功能表**SiteColumnProjectItem**方案節點，選擇**新增**，然後選擇 [**新專案**.
 
 3. 在頂端**加入新的專案**對話方塊方塊中，請確定 **.NET Framework 4.5**選擇清單中的.NET Framework 版本。
 
 4. 依序展開**Visual C#** 節點或**Visual Basic**節點，然後選擇**Windows**節點。
 
-5. 在專案範本清單中，選擇**WPF 使用者控制項程式庫**，將專案命名**ProjectTemplateWizard**，然後選擇**確定**  按鈕。
+5. 在專案範本清單中，選擇**WPF 使用者控制項程式庫**，將專案命名**ProjectTemplateWizard**，然後選擇 **[確定]** ] 按鈕。
 
      [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 新增**ProjectTemplateWizard**專案加入方案，並開啟預設 UserControl1.xaml 檔案。
 
@@ -97,9 +97,9 @@ ms.locfileid: "63436713"
 
 2. 在頂端**加入新的專案**對話方塊方塊中，選擇 **.NET Framework 3.5**清單中的.NET Framework 版本。
 
-3. 依序展開**Visual C#**  節點或**Visual Basic**節點，然後選擇**Windows**節點。
+3. 依序展開**Visual C#** ] 節點或**Visual Basic**節點，然後選擇**Windows**節點。
 
-4. 選擇**類別庫**專案範本，請將專案命名**SharePointCommands**，然後選擇**確定** 按鈕。
+4. 選擇**類別庫**專案範本，請將專案命名**SharePointCommands**，然後選擇**確定**] 按鈕。
 
      [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 新增**SharePointCommands**專案加入方案，並開啟預設 Class1 的程式碼檔案。
 
@@ -110,9 +110,9 @@ ms.locfileid: "63436713"
 
 #### <a name="to-configure-the-wizard-project"></a>若要設定精靈專案
 
-1. 在 **方案總管**，開啟捷徑功能表**ProjectTemplateWizard**專案節點，然後選擇**屬性**。
+1. 在 [**方案總管**，開啟捷徑功能表**ProjectTemplateWizard**專案節點，然後選擇**屬性**。
 
-2. 在 **專案設計工具**，選擇**應用程式** 索引標籤，針對 Visual C# 專案或**編譯**Visual Basic 專案 索引標籤。
+2. 在 [**專案設計工具**，選擇**應用程式**] 索引標籤，針對 Visual C# 專案或**編譯**Visual Basic 專案] 索引標籤。
 
 3. 請確定目標架構設為.NET Framework 4.5 中，而非.NET Framework 4.5 Client Profile。
 
@@ -120,7 +120,7 @@ ms.locfileid: "63436713"
 
 4. 開啟捷徑功能表**ProjectTemplateWizard**專案，選擇**新增**，然後選擇**新項目**。
 
-5. 選擇**視窗 (WPF)** 項目，項目命名**WizardWindow**，然後選擇**新增** 按鈕。
+5. 選擇**視窗 (WPF)** 項目，項目命名**WizardWindow**，然後選擇**新增**] 按鈕。
 
 6. 新增兩個**使用者控制項 (WPF)** 項目至專案，並將它們命名**Page1**並**Page2**。
 
@@ -164,9 +164,9 @@ ms.locfileid: "63436713"
 
 #### <a name="to-configure-the-sharepointcommands-project"></a>若要設定 SharePointcommands 專案
 
-1. 在 **方案總管**，選擇**SharePointCommands**專案節點。
+1. 在 [**方案總管**，選擇**SharePointCommands**專案節點。
 
-2. 在功能表列上選擇 **專案**，**加入現有項目**。
+2. 在功能表列上選擇 [**專案**，**加入現有項目**。
 
 3. 在 [**加入現有項目**] 對話方塊中，瀏覽至包含 ProjectTemplateWizard 專案中，程式碼檔案的資料夾，然後選擇**CommandIds**程式碼檔案。
 
@@ -174,9 +174,9 @@ ms.locfileid: "63436713"
 
      [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 新增的程式碼檔案**SharePointCommands**專案做為連結。 程式碼檔案位於**ProjectTemplateWizard**中的專案，但檔案中的程式碼也編譯**SharePointCommands**專案。
 
-5. 在  **SharePointCommands**專案中，加入另一個名為命令的程式碼檔案。
+5. 在 [ **SharePointCommands**專案中，加入另一個名為命令的程式碼檔案。
 
-6. 選擇 SharePointCommands 專案，，然後在功能表列上選擇 **專案** > **加入參考**。
+6. 選擇 SharePointCommands 專案，，然後在功能表列上選擇 [**專案** > **加入參考**。
 
 7. 依序展開**組件**節點，選擇**延伸模組**節點，，然後選取下列組件旁邊的核取方塊：
 
@@ -219,7 +219,7 @@ ms.locfileid: "63436713"
      [!code-csharp[SPExtensibility.ProjectItem.SiteColumn#8](../sharepoint/codesnippet/CSharp/sitecolumnprojectitem/projecttemplatewizard/projectsigningmanager.cs#8)]
 
 ## <a name="create-the-wizard-ui"></a>建立精靈使用者介面
- 新增 XAML 來定義精靈 視窗和精靈頁面，提供 UI 的兩個使用者控制項的 UI，並加入程式碼來定義 「 視窗 」 和 「 使用者控制項的行為。 您所建立的精靈，類似於 Visual Studio 中的 SharePoint 專案的內建精靈。
+ 新增 XAML 來定義精靈] 視窗和精靈頁面，提供 UI 的兩個使用者控制項的 UI，並加入程式碼來定義 「 視窗 」 和 「 使用者控制項的行為。 您所建立的精靈，類似於 Visual Studio 中的 SharePoint 專案的內建精靈。
 
 > [!NOTE]
 > 在下列步驟中，您將 XAML 或程式碼新增至您的專案之後您的專案時，會有某些編譯錯誤。 當您在稍後步驟中加入程式碼時，這些錯誤就會消失運作。
@@ -233,7 +233,7 @@ ms.locfileid: "63436713"
      [!code-xml[SPExtensibility.ProjectItem.SiteColumn#10](../sharepoint/codesnippet/Xaml/sitecolumnprojectitem/projecttemplatewizard/wizardwindow.xaml#10)]
 
     > [!NOTE]
-    > 在此 XAML 中建立的視窗衍生自<xref:Microsoft.VisualStudio.PlatformUI.DialogWindow>基底類別。 當您將自訂的 WPF 對話方塊加入 Visual Studio 時，我們建議您從有一致的樣式，與其他 Visual Studio 對話方塊，並避免強制回應對話方塊的問題可能會發生這個類別衍生您的對話方塊。 如需詳細資訊，請參閱 <<c0> [ 建立和管理強制回應對話方塊](/visualstudio/extensibility/creating-and-managing-modal-dialog-boxes)。
+    > 在此 XAML 中建立的視窗衍生自<xref:Microsoft.VisualStudio.PlatformUI.DialogWindow>基底類別。 當您將自訂的 WPF 對話方塊加入 Visual Studio 時，我們建議您從有一致的樣式，與其他 Visual Studio] 對話方塊，並避免強制回應對話方塊的問題可能會發生這個類別衍生您的對話方塊。 如需詳細資訊，請參閱 <<c0> [ 建立和管理強制回應對話方塊](/visualstudio/extensibility/creating-and-managing-modal-dialog-boxes)。
 
 3. 如果您正在開發 Visual Basic 專案，移除`ProjectTemplateWizard`來自命名空間`WizardWindow`中的類別名稱`x:Class`屬性`Window`項目。 此元素會在第一行中的 XAML。 當您完成時，第一個行看起來應該如下列範例所示。
 
@@ -252,7 +252,7 @@ ms.locfileid: "63436713"
 
 1. 在 ProjectTemplateWizard 專案中，開啟 Page1.xaml 檔案的捷徑功能表，然後再選擇**開啟**設計工具中開啟使用者控制項。
 
-2. 在設計工具的 [XAML] 檢視中，請以下列 XAML 取代目前的 XAML。 XAML 定義 UI，其中包含使用者可以在其中輸入他們想要用於偵錯的本機網站 URL 文字方塊。 UI 也包含讓使用者可以指定專案是否已沙箱化的選項按鈕。
+2. 在設計工具的 [XAML] 檢視中，請以下列 XAML 取代目前的 XAML。 XAML 定義 UI，其中包含使用者可以在其中輸入他們想要用於偵錯的本機網站 URL] 文字方塊。 UI 也包含讓使用者可以指定專案是否已沙箱化的選項按鈕。
 
      [!code-xml[SPExtensibility.ProjectItem.SiteColumn#11](../sharepoint/codesnippet/Xaml/sitecolumnprojectitem/projecttemplatewizard/page1.xaml#11)]
 
@@ -273,7 +273,7 @@ ms.locfileid: "63436713"
 
      使用者控制項隨即在設計工具中開啟。
 
-2. 在 XAML 檢視中，請以下列 XAML 取代目前的 XAML。 XAML 會定義包含下拉式清單選擇 網站資料行、 指定要用來顯示網站資料行在圖庫中，內建或自訂群組的下拉式方塊和文字方塊，用於指定的網站資料行名稱的基底類型的 UI。
+2. 在 XAML 檢視中，請以下列 XAML 取代目前的 XAML。 XAML 會定義包含下拉式清單選擇 [網站資料行、 指定要用來顯示網站資料行在圖庫中，內建或自訂群組的下拉式方塊和文字方塊，用於指定的網站資料行名稱的基底類型的 UI。
 
      [!code-xml[SPExtensibility.ProjectItem.SiteColumn#12](../sharepoint/codesnippet/Xaml/sitecolumnprojectitem/projecttemplatewizard/page2.xaml#12)]
 
@@ -289,7 +289,7 @@ ms.locfileid: "63436713"
      [!code-csharp[SPExtensibility.ProjectItem.SiteColumn#3](../sharepoint/codesnippet/CSharp/sitecolumnprojectitem/projecttemplatewizard/page2.xaml.cs#3)]
 
 ## <a name="implement-the-wizard"></a>實作精靈
- 藉由實作定義精靈 的主要功能<xref:Microsoft.VisualStudio.TemplateWizard.IWizard>介面。 這個介面會定義當精靈啟動和完成時，並在特定時間時精靈會執行 Visual Studio 會呼叫的方法。
+ 藉由實作定義精靈] 的主要功能<xref:Microsoft.VisualStudio.TemplateWizard.IWizard>介面。 這個介面會定義當精靈啟動和完成時，並在特定時間時精靈會執行 Visual Studio 會呼叫的方法。
 
 #### <a name="to-implement-the-wizard"></a>若要實作精靈
 
@@ -305,7 +305,7 @@ ms.locfileid: "63436713"
 
 #### <a name="to-define-the-sharepoint-commands"></a>若要定義的 SharePoint 命令
 
-1. 在  **SharePointCommands**專案中，開啟指令碼檔案。
+1. 在 [ **SharePointCommands**專案中，開啟指令碼檔案。
 
 2. 此檔案的整個內容取代為下列程式碼。
 
@@ -320,13 +320,13 @@ ms.locfileid: "63436713"
 1. 在功能表列上選擇 [建置] > [建置解決方案]。
 
 ## <a name="removing-the-keysnk-file-from-the-project-template"></a>移除專案範本中的 key.snk 檔案
- 在 [逐步解說：使用專案範本，第 1 部分建立網站資料行專案項目](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-1.md)，您所建立的專案範本包含用來簽署每個網站欄專案執行個體的 key.snk 檔案。 這個 key.snk 檔案不再是必要的因為精靈現在會產生新的 key.snk 檔案，每個專案。 移除專案範本中的 key.snk 檔案，並移除此檔案的參考。
+ 在 [[逐步解說：使用專案範本，第 1 部分建立網站資料行專案項目](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-1.md)，您所建立的專案範本包含用來簽署每個網站欄專案執行個體的 key.snk 檔案。 這個 key.snk 檔案不再是必要的因為精靈現在會產生新的 key.snk 檔案，每個專案。 移除專案範本中的 key.snk 檔案，並移除此檔案的參考。
 
 #### <a name="to-remove-the-keysnk-file-from-the-project-template"></a>若要移除的專案範本中的 key.snk 檔案
 
-1. 中**方案總管**下方**SiteColumnProjectTemplate**節點，開啟捷徑功能表**key.snk**檔案，然後再選擇 **刪除**.
+1. 中**方案總管**下方**SiteColumnProjectTemplate**節點，開啟捷徑功能表**key.snk**檔案，然後再選擇 [**刪除**.
 
-2. 在出現確認對話方塊中，選擇**確定** 按鈕。
+2. 在出現確認對話方塊中，選擇**確定**] 按鈕。
 
 3. 底下**SiteColumnProjectTemplate**節點，開啟 SiteColumnProjectTemplate.vstemplate 檔案，然後再從中移除下列項目。
 
@@ -360,13 +360,13 @@ ms.locfileid: "63436713"
 
 2. 取得精靈的組件的公開金鑰語彙基元。
 
-3. 在.vstemplate 檔案中新增精靈 的組件的參考**站台的資料行**專案範本。
+3. 在.vstemplate 檔案中新增精靈] 的組件的參考**站台的資料行**專案範本。
 
 #### <a name="to-sign-the-wizard-assembly-with-a-strong-name"></a>若要簽署以強式名稱的組件精靈
 
 1. 在 [**方案總管] 中**，開啟捷徑功能表**ProjectTemplateWizard**專案，，然後選擇**屬性**。
 
-2. 在  **Signing**索引標籤上，選取**簽署組件**核取方塊。
+2. 在 [ **Signing**索引標籤上，選取**簽署組件**核取方塊。
 
 3. 在 **選擇強式名稱金鑰檔**清單中，選擇 **\<新增...>** 。
 
@@ -376,9 +376,9 @@ ms.locfileid: "63436713"
 
 #### <a name="to-get-the-public-key-token-for-the-wizard-assembly"></a>若要取得的公開金鑰權杖精靈組件
 
-1. 在上**開始 功能表**，選擇**所有程式**，選擇  **Microsoft Visual Studio**，選擇**Visual Studio Tools**，然後選擇  **開發人員命令提示字元**。
+1. 在上 **[開始] 功能表**，選擇**所有程式**，選擇 [ **Microsoft Visual Studio**，選擇**Visual Studio Tools**，然後選擇 [ **開發人員命令提示字元**。
 
-     Visual Studio 命令提示字元 視窗隨即開啟。
+     Visual Studio 命令提示字元] 視窗隨即開啟。
 
 2. 執行下列命令，取代*PathToWizardAssembly* ProjectTemplateWizard 專案到開發電腦上建置的 ProjectTemplateWizard.dll 組件的完整路徑：
 
@@ -386,13 +386,13 @@ ms.locfileid: "63436713"
     sn.exe -T PathToWizardAssembly
     ```
 
-     Visual Studio 命令提示字元 視窗會寫入 ProjectTemplateWizard.dll 組件的公開金鑰 token。
+     Visual Studio 命令提示字元] 視窗會寫入 ProjectTemplateWizard.dll 組件的公開金鑰 token。
 
 3. Visual Studio 命令提示字元視窗保持開啟。 您將在下一個程序期間需要的公開金鑰 token。
 
 #### <a name="to-add-a-reference-to-the-wizard-assembly-in-the-vstemplate-file"></a>將.vstemplate 檔案中的精靈組件的參考
 
-1. 在 **方案總管**，展開**SiteColumnProjectTemplate**專案節點，然後開啟 SiteColumnProjectTemplate.vstemplate 檔案。
+1. 在 [**方案總管**，展開**SiteColumnProjectTemplate**專案節點，然後開啟 SiteColumnProjectTemplate.vstemplate 檔案。
 
 2. 接近檔案結尾，新增下列`WizardExtension`之間的項目`</TemplateContent>`和`</VSTemplate>`標記。 取代*您的語彙基元*的值`PublicKeyToken`屬性與您在上一個程序中取得的公開金鑰 token。
 
@@ -437,17 +437,17 @@ ms.locfileid: "63436713"
 
 #### <a name="to-add-the-wizard-to-the-vsix-package"></a>若要將精靈加入至 VSIX 封裝
 
-1. 在 **方案總管**，請在**SiteColumnProjectItem**專案中，開啟捷徑功能表**source.extension.vsixmanifest**檔案，然後再選擇  **開啟**。
+1. 在 [**方案總管**，請在**SiteColumnProjectItem**專案中，開啟捷徑功能表**source.extension.vsixmanifest**檔案，然後再選擇 [ **開啟**。
 
      Visual Studio 會在資訊清單編輯器中開啟檔案。
 
-2. 上**資產**索引標籤的 編輯器 中，選擇**新增** 按鈕。
+2. 上**資產**索引標籤的 [編輯器] 中，選擇**新增**] 按鈕。
 
      **加入新資產**對話方塊隨即開啟。
 
-3. 在 **型別**清單中，選擇**Microsoft.VisualStudio.Assembly**。
+3. 在 [**型別**清單中，選擇**Microsoft.VisualStudio.Assembly**。
 
-4. 在 **來源**清單中，選擇**目前方案中的專案**。
+4. 在 [**來源**清單中，選擇**目前方案中的專案**。
 
 5. 在 [**專案**清單中，選擇**ProjectTemplateWizard**，然後選擇 **[確定]** ] 按鈕。
 
@@ -455,24 +455,24 @@ ms.locfileid: "63436713"
 
      **加入新資產**對話方塊隨即開啟。
 
-7. 在 **型別**清單中，輸入**SharePoint.Commands.v4**。
+7. 在 [**型別**清單中，輸入**SharePoint.Commands.v4**。
 
-8. 在 **來源**清單中，選擇**目前方案中的專案**。
+8. 在 [**來源**清單中，選擇**目前方案中的專案**。
 
-9. 在 **專案**清單中，選擇**SharePointCommands**專案，，然後選擇**確定**按鈕。
+9. 在 [**專案**清單中，選擇**SharePointCommands**專案，，然後選擇**確定**按鈕。
 
-10. 在功能表列上選擇 **建置** > **建置方案**，然後確認方案建置無誤。
+10. 在功能表列上選擇 [**建置** > **建置方案**，然後確認方案建置無誤。
 
 ## <a name="test-the-wizard"></a>測試精靈
- 您現在已準備好測試精靈。 首先，啟動偵錯 SiteColumnProjectItem 方案在 Visual Studio 的實驗執行個體。 然後，在 Visual Studio 的實驗執行個體中測試的網站欄專案的精靈。 最後，建置並執行專案，以確認站台的資料行可以正常運作。
+ 您現在已準備好測試精靈]。 首先，啟動偵錯 SiteColumnProjectItem 方案在 Visual Studio 的實驗執行個體。 然後，在 Visual Studio 的實驗執行個體中測試的網站欄專案的精靈。 最後，建置並執行專案，以確認站台的資料行可以正常運作。
 
 #### <a name="to-start-debugging-the-solution"></a>若要啟動偵錯方案
 
-1. 使用系統管理認證，重新啟動 Visual Studio，然後開啟 SiteColumnProjectItem 解決方案。
+1. 使用系統管理認證，重新啟動 Visual Studio，然後開啟 [SiteColumnProjectItem 解決方案。
 
 2. 在 ProjectTemplateWizard 專案中，開啟 SiteColumnProjectWizard 程式碼檔案，然後加入中斷點至第一行中的程式碼`RunStarted`方法。
 
-3. 在功能表列上選擇 **偵錯** > **例外狀況**。
+3. 在功能表列上選擇 [**偵錯** > **例外狀況**。
 
 4. 在**例外狀況**對話方塊方塊中，請確定**擲回**並**使用者未處理**核取方塊**Common Language Runtime 例外狀況**會先清除，，然後選擇 [ **[確定]** ] 按鈕。
 
@@ -486,21 +486,21 @@ ms.locfileid: "63436713"
 
 2. 依序展開**Visual C#** 節點或**Visual Basic**節點 （取決於您的專案範本支援語言），展開**SharePoint** ] 節點，然後選擇 [**2010年**節點。
 
-3. 在專案範本清單中，選擇**網站資料行**，將專案命名為**SiteColumnWizardTest**，然後選擇**確定**  按鈕。
+3. 在專案範本清單中，選擇**網站資料行**，將專案命名為**SiteColumnWizardTest**，然後選擇 **[確定]** ] 按鈕。
 
 4. 確認 Visual Studio 的其他執行個體中的程式碼是在您稍早在設定的中斷點上停止`RunStarted`方法。
 
 5. 繼續偵錯專案，選擇**F5**金鑰或，功能表列選擇**偵錯** > **繼續**。
 
-6. 在  **SharePoint 自訂精靈**，輸入您想要用於偵錯時，網站的 URL，然後選擇**下一步**  按鈕。
+6. 在 [ **SharePoint 自訂精靈**，輸入您想要用於偵錯時，網站的 URL，然後選擇**下一步]** ] 按鈕。
 
 7. 中的第二頁**SharePoint 自訂精靈**，進行下列選擇：
 
-   - 在 **型別**清單中，選擇**布林**。
+   - 在 [**型別**清單中，選擇**布林**。
 
-   - 在 **群組**清單中，選擇**自訂/否資料行**。
+   - 在 [**群組**清單中，選擇**自訂/否資料行**。
 
-   - 在**名稱**方塊中，輸入**My/否資料行**，然後選擇**完成** 按鈕。
+   - 在**名稱**方塊中，輸入**My/否資料行**，然後選擇**完成**] 按鈕。
 
      中**方案總管**，新的專案隨即出現，並包含名為專案項目的**Field1**，和 Visual Studio 開啟的專案*Elements.xml*在編輯器中的檔案。
 
@@ -513,11 +513,11 @@ ms.locfileid: "63436713"
      網站資料行是封裝並部署至 SharePoint 網站**網站 URL**指定專案屬性。 Web 瀏覽器中開啟此站台的預設頁面。
 
     > [!NOTE]
-    > 如果**指令碼偵錯已停用** 對話方塊出現時，選擇**是**按鈕以繼續進行偵錯專案。
+    > 如果**指令碼偵錯已停用**] 對話方塊出現時，選擇**是**按鈕以繼續進行偵錯專案。
 
 2. 在上**站台動作**功能表上，選擇**站台設定**。
 
-3. 在站台設定 頁面下**資源庫**，選擇**站台的資料行**連結。
+3. 在站台設定] 頁面下**資源庫**，選擇**站台的資料行**連結。
 
 4. 在站台的資料行清單中，確認**自訂/否資料行**群組中包含名為的資料行**My/否資料行**，然後關閉網頁瀏覽器。
 
@@ -530,7 +530,7 @@ ms.locfileid: "63436713"
 
      [擴充功能和更新] 對話方塊隨即開啟。
 
-2. 在延伸模組清單中，選擇**站台的資料行**，然後選擇**解除安裝** 按鈕。
+2. 在延伸模組清單中，選擇**站台的資料行**，然後選擇**解除安裝**] 按鈕。
 
 3. 在出現的對話方塊中，選擇 **[是]** 按鈕，以確認您要解除安裝延伸模組，然後選擇**立即重新啟動**按鈕以完成解除安裝。
 

@@ -86,7 +86,7 @@ foreach (XmlNode artist in catalog.SelectNodes("artist"))
   
 ##### <a name="to-create-the-project"></a>若要建立專案  
   
-1. 在 [檔案]  功能表上，依序按一下 [新增]  和 [專案] 。  
+1. 在 [檔案]  功能表上，依序按一下 [新增]  和 [專案]  。  
   
 2. 按一下 []  節點，然後按一下 [範本]  窗格中的 [主控台應用程式]   
   
@@ -97,7 +97,7 @@ foreach (XmlNode artist in catalog.SelectNodes("artist"))
   
 ##### <a name="to-add-an-xml-file"></a>新增 XML 檔案  
   
-1. 在方案總管 中，以滑鼠右鍵按一下專案，並按一下 [加入]  ，然後按一下 [新增項目] 。  
+1. 在方案總管  中，以滑鼠右鍵按一下專案，並按一下 [加入]  ，然後按一下 [新增項目]  。  
   
 2. 在 [加入新項目]  對話方塊中，從 [範本]  窗格中選取 [XML 檔案]  。  
   
@@ -108,7 +108,7 @@ foreach (XmlNode artist in catalog.SelectNodes("artist"))
    .  
   
 ### <a name="add-a-test-code-file"></a>新增測試程式碼檔案  
- 將 C# 檔案新增至您的專案，並在其中撰寫您可撰寫的程式碼範例。 例如:   
+ 將 C# 檔案新增至您的專案，並在其中撰寫您可撰寫的程式碼範例。 例如:  
   
 ```  
 using System;  
@@ -137,7 +137,7 @@ namespace MyProject
   
 ##### <a name="to-add-a-text-template-file-to-your-project"></a>將文字範本檔案新增至專案  
   
-1. 在方案總管 中，以滑鼠右鍵按一下專案，並按一下 [加入] ，然後按一下 [新項目] 。  
+1. 在方案總管  中，以滑鼠右鍵按一下專案，並按一下 [加入]  ，然後按一下 [新項目]  。  
   
 2. 在 [加入新項目]  對話方塊中，從 [範本]  窗格中選取 [文字範本]  。  
   
@@ -405,7 +405,7 @@ namespace MyProject
 ## <a name="conclusion"></a>結論  
  本逐步解說示範數個技術以及程式碼產生的優點︰  
   
-- *「程式碼產生」* (code generation) 是從 *「模型」*(model) 建立應用程式之原始程式碼的各個部分。 此模型以適合應用程式網域的表單來包含資訊，而且可能會隨著應用程式的存留期變更。  
+- *「程式碼產生」* (code generation) 是從 *「模型」* (model) 建立應用程式之原始程式碼的各個部分。 此模型以適合應用程式網域的表單來包含資訊，而且可能會隨著應用程式的存留期變更。  
   
 - 強類型是程式碼產生的一個優點。 雖然此模型以更適合使用者的表單來呈現資訊，但是產生的程式碼可讓應用程式的其他部分使用一組類型資訊來處理資訊。  
   
@@ -418,7 +418,7 @@ namespace MyProject
   在此逐步解說中，實際上是從模型執行個體產生程式碼，這是應用程式將處理之 XML 檔案的代表性範例。 在更正式的方法中，XML 結構描述會是範本的輸入，而形式為 .xsd 檔案或網域特定語言定義。 該方法可讓範本更輕鬆地判斷特性 (例如關聯性的多重性)。  
   
 ## <a name="troubleshooting-the-text-template"></a>對文字範本進行疑難排解  
- 如果您在 [錯誤清單] 中看到範本轉換或編譯錯誤，或未正確地產生輸出檔案，則可以使用[使用 TextTransform 公用程式產生檔案](../modeling/generating-files-with-the-texttransform-utility.md)中所述的技術對文字範本進行疑難排解。  
+ 如果您在 [錯誤清單]  中看到範本轉換或編譯錯誤，或未正確地產生輸出檔案，則可以使用[使用 TextTransform 公用程式產生檔案](../modeling/generating-files-with-the-texttransform-utility.md)中所述的技術對文字範本進行疑難排解。  
   
 ## <a name="see-also"></a>另請參閱  
  [使用 T4 文字範本在設計階段產生程式碼](../modeling/design-time-code-generation-by-using-t4-text-templates.md)   

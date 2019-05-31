@@ -1,5 +1,5 @@
 ---
-title: HOW TO：部署、 發行和升級遠端伺服器上的 SharePoint 方案 |Microsoft Docs
+title: 部署、 發行時，與遠端升級 SharePoint 方案
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -15,14 +15,14 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: fdaebbc8901330236769331453501bebdd3f98a3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c8e9c46a9acaf8c70fa434514785276f9ba343d4
+ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62813939"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66401434"
 ---
-# <a name="how-to-deploy-publish-and-upgrade-sharepoint-solutions-on-a-remote-server"></a>HOW TO：部署、 發行和升級遠端伺服器上的 SharePoint 方案
+# <a name="how-to-deploy-publish-and-upgrade-sharepoint-solutions-on-a-remote-server"></a>作法：部署、 發行和升級遠端伺服器上的 SharePoint 方案
   除了本機系統中部署 SharePoint 方案，您可以在遠端站台或本機 SharePoint 網站發行沙箱化 SharePoint 方案。 遠端發行的程序副本 *.wsp*檔案至 SharePoint 伺服器，安裝方案，並接著可讓您啟用此解決方案。 對它進行變更之後，您也可以升級遠端 SharePoint 方案安裝。
 
 ## <a name="to-publish-a-sandboxed-sharepoint-solution-to-a-remote-sharepoint-server"></a>若要將沙箱化 SharePoint 方案發行至遠端 SharePoint 伺服器
@@ -37,7 +37,7 @@ ms.locfileid: "62813939"
 
 5. 如果需要使用者驗證，登入遠端伺服器。
 
-     發行進度出現在 Visual Studio**輸出**視窗。 當處理程序完成時，方案 (*.wsp*) 檔案會安裝遠端 SharePoint 伺服器上。 不過，它仍舊需要啟動才可以在 SharePoint 中使用。
+     發行進度出現在 Visual Studio**輸出**視窗。 當處理程序完成時，方案 ( *.wsp*) 檔案會安裝遠端 SharePoint 伺服器上。 不過，它仍舊需要啟動才可以在 SharePoint 中使用。
 
 6. 在 **解決方案資源庫**頁面上選取的 SharePoint 應用程式，然後在功能區中，選擇  **Activate**  按鈕。
 

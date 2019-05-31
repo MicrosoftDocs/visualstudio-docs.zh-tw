@@ -1,6 +1,6 @@
 ---
 title: CA2214:不要呼叫建構函式中的可覆寫方法
-ms.date: 11/04/2016
+ms.date: 05/29/2016
 ms.topic: reference
 f1_keywords:
 - DoNotCallOverridableMethodsInConstructors
@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: ef2a5631247f882a70ae94877da02f576ff04a5d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 8e05e6925085b27de3001c8ff62d8a3c6e69a88f
+ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62796701"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66401319"
 ---
 # <a name="ca2214-do-not-call-overridable-methods-in-constructors"></a>CA2214:不要呼叫建構函式中的可覆寫方法
 
@@ -41,6 +41,9 @@ ms.locfileid: "62796701"
 
 呼叫虛擬方法時，執行階段之前將不會選取實際執行方法的型別。 當建構函式呼叫虛擬方法時，就可能會叫用方法的執行個體的建構函式尚未執行。
 
+> [!NOTE]
+> 此規則的二進位檔分析實作有不同的診斷訊息的 「 **\[建構函式名稱] 包含產生的類別所定義的虛擬方法呼叫的呼叫鏈結。檢閱下列呼叫堆疊的非預期的結果**"。 [FxCop 分析器](install-fxcop-analyzers.md)實作，此規則有診斷訊息的 「**不要呼叫建構函式中的可覆寫方法**"。
+
 ## <a name="how-to-fix-violations"></a>如何修正違規
 
 若要修正此規則的違規情形，請勿呼叫類型的虛擬方法的型別之建構函式中。
@@ -51,7 +54,7 @@ ms.locfileid: "62796701"
 
 ## <a name="example"></a>範例
 
-下列範例會示範違反此規則的效果。 測試應用程式建立的執行個體`DerivedType`，因而導致其基底類別 (`BadlyConstructedType`) 建構函式來執行。 `BadlyConstructedType`建構函式不正確地呼叫虛擬方法`DoSomething`。 如輸出所示`DerivedType.DoSomething()`執行，並因此之前`DerivedType`的建構函式執行。
+下列範例會示範違反此規則的效果。 測試應用程式建立的執行個體`DerivedType`，因而導致其基底類別 (`BadlyConstructedType`) 建構函式來執行。 `BadlyConstructedType`建構函式不正確地呼叫虛擬方法`DoSomething`。 如輸出所示`DerivedType.DoSomething()`之前執行`DerivedType`的建構函式執行。
 
 [!code-csharp[FxCop.Usage.CtorVirtual#1](../code-quality/codesnippet/CSharp/ca2214-do-not-call-overridable-methods-in-constructors_1.cs)]
 [!code-vb[FxCop.Usage.CtorVirtual#1](../code-quality/codesnippet/VisualBasic/ca2214-do-not-call-overridable-methods-in-constructors_1.vb)]

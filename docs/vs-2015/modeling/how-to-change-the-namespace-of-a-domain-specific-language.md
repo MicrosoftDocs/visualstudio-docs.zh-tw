@@ -49,7 +49,7 @@ ms.locfileid: "65690557"
   
 10. 重設 Visual Studio 實驗執行個體。  
   
-    1. 刪除 **\Users\\**_{name}_**\AppData\Local\Microsoft\VisualStudio\\\*Exp**  
+    1. 刪除 **\Users\\** _{name}_ **\AppData\Local\Microsoft\VisualStudio\\\*Exp**  
   
     2. 在 Windows 上**開始**功能表上，選擇**所有程式**， **Microsoft Visual Studio 2010 SDK**，**工具**，**重設實驗執行個體**。  
   

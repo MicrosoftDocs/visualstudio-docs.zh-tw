@@ -141,13 +141,13 @@ Managed Extension Framework (MEF) 提供在圖表功能表上定義功能表命�
 
 2. 找出 `ProvideMenuResource` 屬性。
 
-3. 遞增屬性的 `version` 參數，這是第二個參數。 您可以依需要明確撰寫參數名稱以提醒您其用途。 例如: 
+3. 遞增屬性的 `version` 參數，這是第二個參數。 您可以依需要明確撰寫參數名稱以提醒您其用途。 例如:
 
      `[VSShell::ProvideMenuResource("1000.ctmenu", version: 2 )]`
 
 ## <a name="CommandSet"></a> 定義命令的行為
 
-您的 DSL 已經有一些命令，這些命令實作於 DslPackage\GeneratedCode\CommandSet.cs 中宣告的部分類別。 若要加入新的命令，您必須建立含有相同類別之部分宣告的新檔案，以擴充此類別。 類別的名稱通常是 *\<YourDslName >*`CommandSet`。 您最好先確認類別名稱，並檢查其內容。
+您的 DSL 已經有一些命令，這些命令實作於 DslPackage\GeneratedCode\CommandSet.cs 中宣告的部分類別。 若要加入新的命令，您必須建立含有相同類別之部分宣告的新檔案，以擴充此類別。 類別的名稱通常是 *\<YourDslName >* `CommandSet`。 您最好先確認類別名稱，並檢查其內容。
 
 命令集類別衍生自 <xref:Microsoft.VisualStudio.Modeling.Shell.CommandSet>。
 
@@ -161,7 +161,7 @@ Managed Extension Framework (MEF) 提供在圖表功能表上定義功能表命�
 
 2. 在  **DslPackage**，建立名為的資料夾**自訂程式碼**。 在此資料夾中，建立新的類別檔案，稱為`CommandSet.cs`。
 
-3. 在新檔案中，撰寫具有與產生部分類別相同之命名空間和名稱的部分宣告。 例如: 
+3. 在新檔案中，撰寫具有與產生部分類別相同之命名空間和名稱的部分宣告。 例如:
 
      `namespace Company.Language1 /* Make sure this is correct */`
 

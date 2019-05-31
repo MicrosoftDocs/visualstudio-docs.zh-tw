@@ -1,5 +1,5 @@
 ---
-title: 逐步解說：建立和偵錯 SharePoint 工作流程方案 |Microsoft Docs
+title: 建立及偵錯 SharePoint 工作流程方案
 ms.date: 02/02/2017
 ms.topic: conceptual
 f1_keywords:
@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ad39c8b8bad373cd7892a1eeda89b149622913a7
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 51682ba54d6a6ae0698ade6bb52d5972cd63111f
+ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63430356"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66401050"
 ---
 # <a name="walkthrough-create-and-debug-a-sharepoint-workflow-solution"></a>逐步解說：建立和偵錯 SharePoint 工作流程方案
   本逐步解說示範如何建立基本的循序工作流程範本。 工作流程會檢查共用的文件庫，以判斷是否經過審閱文件的屬性。 如果已檢閱文件，工作流程完成。
@@ -57,7 +57,7 @@ ms.locfileid: "63430356"
 
 3. 選擇**程式庫**上**文件庫工具**功能區，然後選擇**建立的資料行**功能區建立新的資料行上的按鈕。
 
-4. 命名的資料行**文件狀態**，將其類型設**選擇 （功能表可從中選擇）**，並指定下列三個選項，然後選擇**確定**按鈕：
+4. 命名的資料行**文件狀態**，將其類型設**選擇 （功能表可從中選擇）** ，並指定下列三個選項，然後選擇**確定**按鈕：
 
     - **需要檢閱**
 

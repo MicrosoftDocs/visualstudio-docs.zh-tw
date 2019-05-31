@@ -53,13 +53,13 @@ ms.locfileid: "63434382"
   
 4. 開啟 RegExLangServ.sln 方案。  
   
-5. **單向升級** 視窗隨即出現。 按一下 [確定] 。  
+5. **單向升級** 視窗隨即出現。 按一下 [確定]  。  
   
 6. 更新專案屬性。 開啟**專案屬性**藉由選取專案節點中的視窗**方案總管**，以滑鼠右鍵按一下，然後選取**屬性**。  
   
     - 在 **應用程式**索引標籤中變更**目標 framework**來**4.6.1**。  
   
-    - 在 **偵錯**索引標籤中，於**啟動外部程式**方塊中，輸入 **\<Visual Studio 安裝路徑 > \Common7\IDE\devenv.exe。**。  
+    - 在 **偵錯**索引標籤中，於**啟動外部程式**方塊中，輸入 **\<Visual Studio 安裝路徑 > \Common7\IDE\devenv.exe。** 。  
   
          在 **命令列引數**方塊中，輸入 /**rootsuffix Exp**。  
   
@@ -105,7 +105,7 @@ ms.locfileid: "63434382"
   
     - 儲存並關閉檔案。  
   
-11. 建置方案。 內建的檔案都部署到 **%USERPROFILE%\AppData\Local\Microsoft\VisualStudio\14.0Exp\Extensions\MSIT\ RegExLangServ\\**。  
+11. 建置方案。 內建的檔案都部署到 **%USERPROFILE%\AppData\Local\Microsoft\VisualStudio\14.0Exp\Extensions\MSIT\ RegExLangServ\\** 。  
   
 12. 開始偵錯。 開啟 Visual Studio 的第二個執行個體。  
   

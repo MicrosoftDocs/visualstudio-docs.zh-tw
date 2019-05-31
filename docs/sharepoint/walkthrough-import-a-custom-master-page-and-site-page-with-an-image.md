@@ -1,5 +1,5 @@
 ---
-title: 逐步解說：匯入自訂主版頁面和網站的映像上 |Microsoft Docs
+title: 匯入自訂主版頁面和使用映像的站台頁面
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c303ab86409a082c3a6817adc526ded432ea54bf
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 8bd2d9054571e52bc9fbb3906bc1880bb94e407a
+ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62834383"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66400903"
 ---
 # <a name="walkthrough-import-a-custom-master-page-and-site-page-with-an-image"></a>逐步解說：匯入自訂主版頁面和網站頁面的映像
   本逐步解說示範如何匯入 SharePoint 自訂主版頁面及擁有影像的網站頁面[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]SharePoint 專案。
@@ -27,7 +27,7 @@ ms.locfileid: "62834383"
 
 - 在 SharePoint Designer 中使用映像，即可建立自訂主版頁面和網站頁面。
 
-- 匯出至 SharePoint 方案的自訂主版頁面、 影像和站台 頁面 (*.wsp*) 檔案。
+- 匯出至 SharePoint 方案的自訂主版頁面、 影像和站台 頁面 ( *.wsp*) 檔案。
 
 - 匯入和部署 *.wsp*檔案載入[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]使用匯入 SharePoint 方案套件專案的 SharePoint 專案。
 
@@ -127,7 +127,7 @@ ms.locfileid: "62834383"
 6. 儲存更新的網站頁面。
 
 ## <a name="export-the-items-from-sharepoint"></a>從 SharePoint 匯出的項目
- 從 SharePoint 將項目匯出至 SharePoint 方案 (*.wsp*) 檔案。
+ 從 SharePoint 將項目匯出至 SharePoint 方案 ( *.wsp*) 檔案。
 
 #### <a name="to-export-items-from-sharepoint-designer"></a>若要從 SharePoint Designer 匯出項目
 

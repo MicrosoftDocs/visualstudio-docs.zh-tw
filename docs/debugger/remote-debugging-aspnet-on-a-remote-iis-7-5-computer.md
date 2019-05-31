@@ -60,10 +60,10 @@ Visual Studio 2017，才能遵循本文中所示的步驟。
 1. 建立新的 MVC ASP.NET 應用程式。
 
     ::: moniker range=">=vs-2019"
-    在 Visual Studio 2019，輸入**Ctrl + Q**來開啟 搜尋 方塊中，輸入**asp.net**，選擇 **範本**，然後選擇 **建立新 ASP.NET Web 應用程式 (.NETFramework)**。 在出現的對話方塊中，為專案名稱**MyASPApp**，然後選擇**建立**。 選取  **MVC** ，然後選擇**建立**。
+    在 Visual Studio 2019，輸入**Ctrl + Q**來開啟 搜尋 方塊中，輸入**asp.net**，選擇 **範本**，然後選擇 **建立新 ASP.NET Web 應用程式 (.NETFramework)** 。 在出現的對話方塊中，為專案名稱**MyASPApp**，然後選擇**建立**。 選取  **MVC** ，然後選擇**建立**。
     ::: moniker-end
     ::: moniker range="vs-2017"
-    若要在 Visual Studio 2017 中這樣做，請選擇**檔案 > 新增 > 專案**，然後選取**視覺化C#> Web > ASP.NET Web 應用程式**。 在 [ASP.NET 4.5.2]  範本區段中選取 [MVC] 。 請確定**啟用 Docker 支援**未選取且**驗證**設定為**不需要驗證**。 將專案命名為**MyASPApp**。)
+    若要在 Visual Studio 2017 中這樣做，請選擇**檔案 > 新增 > 專案**，然後選取**視覺化C#> Web > ASP.NET Web 應用程式**。 在 [ASP.NET 4.5.2]  範本區段中選取 [MVC]  。 請確定**啟用 Docker 支援**未選取且**驗證**設定為**不需要驗證**。 將專案命名為**MyASPApp**。)
     ::: moniker-end
 
 2. 開啟 HomeController.cs 檔案，並在 `About()` 方法中設定中斷點。
@@ -87,7 +87,7 @@ Visual Studio 2017，才能遵循本文中所示的步驟。
 
 如果您想要在 IIS 上安裝 ASP.NET 的詳細的資訊，請參閱[IIS 8.0 使用 ASP.NET 3.5 和 ASP.NET 4.5](/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45)。
 
-1. 在左窗格的 伺服器管理員中，選取**IIS**。 以滑鼠右鍵按一下伺服器，然後選取 [Internet Information Services (IIS) 管理員]。
+1. 在左窗格的 伺服器管理員中，選取**IIS**。 以滑鼠右鍵按一下伺服器，然後選取 [Internet Information Services (IIS) 管理員]  。
 
 1. 使用 Web Platform Installer (WebPI) 安裝 ASP.NET 4.5 (從 [Windows Server 2012 R2 中的 [伺服器] 節點中，選擇**取得新的 Web 平台元件**]，然後搜尋適用於 ASP.NET)
 
@@ -144,13 +144,13 @@ Visual Studio 2017，才能遵循本文中所示的步驟。
 
 1. 開啟 Windows 檔案總管，並建立新的資料夾中， **C:\Publish**將稍後部署 ASP.NET 專案。
 
-2. 如果它尚未開啟，開啟**Internet Information Services (IIS) 管理員**。 (在左窗格的 伺服器管理員中，選取**IIS**。 以滑鼠右鍵按一下伺服器，然後選取 [Internet Information Services (IIS) 管理員]。)
+2. 如果它尚未開啟，開啟**Internet Information Services (IIS) 管理員**。 (在左窗格的 伺服器管理員中，選取**IIS**。 以滑鼠右鍵按一下伺服器，然後選取 [Internet Information Services (IIS) 管理員]  。)
 
 3. 底下**連線**在左窗格中，移至**站台**。
 
 4. 選取  **Default Web Site**，選擇**基本設定**，並將**實體路徑**至**C:\Publish**。
 
-5. 以滑鼠右鍵按一下 [預設的網站]  節點，並選取 [加入應用程式] 。
+5. 以滑鼠右鍵按一下 [預設的網站]  節點，並選取 [加入應用程式]  。
 
 6. 設定**別名**欄位設為**MyASPApp**，接受預設的應用程式集區 (**DefaultAppPool**)，並將**實體路徑**至**C:\Publish**。
 
@@ -200,26 +200,26 @@ Visual Studio 2017，才能遵循本文中所示的步驟。
 2. 在 Visual Studio 中，按一下**偵錯 > připojit k procesu** （Ctrl + Alt + P）。
 
     > [!TIP]
-    > 在 Visual Studio 2017 和更新版本中，您可以重新附加至您先前附加到使用相同的程序**偵錯 > 重新附加至處理序...**(Shift + Alt + P)。
+    > 在 Visual Studio 2017 和更新版本中，您可以重新附加至您先前附加到使用相同的程序**偵錯 > 重新附加至處理序...** (Shift + Alt + P)。
 
-3. [限定詞] 欄位設定為**\<遠端電腦名稱 >** 按下**Enter**。
+3. [限定詞] 欄位設定為 **\<遠端電腦名稱>** 按下**Enter**。
 
     確認，Visual Studio 會將所需的連接埠新增至 電腦名稱，就會出現在格式： **\<遠端電腦名稱 >： 連接埠**
 
     ::: moniker range=">=vs-2019"
-    在 Visual Studio 2019，您應該會看到**\<遠端電腦名稱 >: 4024**
+    在 Visual Studio 2019，您應該會看到 **\<遠端電腦名稱>: 4024**
     ::: moniker-end
     ::: moniker range="vs-2017"
-    在 Visual Studio 2017，您應該會看到**\<遠端電腦名稱 >: 4022**
+    在 Visual Studio 2017，您應該會看到 **\<遠端電腦名稱>: 4022**
     ::: moniker-end
     需要連接埠。 如果您沒有看到連接埠號碼，請手動新增。
 
-4. 按一下 [重新整理]。
+4. 按一下 [重新整理]  。
     您應該會看到有些處理程序會出現在 [可使用的處理序]  視窗。
 
     如果您沒有看到任何處理程序，請嘗試使用的 IP 位址，而不 （連接埠是必要的） 遠端電腦名稱。 您可以使用`ipconfig`取得 IPv4 位址的命令列。
 
-5. 核取 [顯示所有使用者的處理序]  。
+5. 核取 [顯示所有使用者的處理序]   。
 
 6. 輸入以快速找出處理序名稱的第一個字母**w3wp.exe**針對 ASP.NET 4.5。
 
@@ -232,9 +232,9 @@ Visual Studio 2017，才能遵循本文中所示的步驟。
     ![RemoteDBG_AttachToProcess](../debugger/media/remotedbg-attachtoprocess.png "RemoteDBG_AttachToProcess")
     ::: moniker-end
 
-7. 按一下 [附加]
+7. 按一下 [附加] 
 
-8. 開啟遠端電腦的網站。 在瀏覽器中，移至 **http://\<遠端電腦名稱>**。
+8. 開啟遠端電腦的網站。 在瀏覽器中，移至 **http://\<遠端電腦名稱>** 。
 
     您應該會看到 ASP.NET 網頁。
 9. 執行的 ASP.NET 應用程式中，按一下 連結**關於**頁面。

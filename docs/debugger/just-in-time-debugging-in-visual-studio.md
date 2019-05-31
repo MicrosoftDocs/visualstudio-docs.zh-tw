@@ -32,7 +32,7 @@ Just-In-Time 偵錯工具可讓您啟動 Visual Studio 偵錯錯誤的選項。 
 
 - 如果您想要執行 web 應用程式，停用指令碼偵錯：
 
-  在 Windows**控制台中** > **網路和網際網路** > **網際網路選項**，選取**停用指令碼偵錯 （Internet Explorer)** 並**停用指令碼除錯 （其他）**。 確切步驟和設定這需視您的 Windows 和您的瀏覽器版本而定。
+  在 Windows**控制台中** > **網路和網際網路** > **網際網路選項**，選取**停用指令碼偵錯 （Internet Explorer)** 並**停用指令碼除錯 （其他）** 。 確切步驟和設定這需視您的 Windows 和您的瀏覽器版本而定。
 
   ![JIT 網際網路選項](../debugger/media/jitinternetoptions.png "JIT 網際網路選項")
 

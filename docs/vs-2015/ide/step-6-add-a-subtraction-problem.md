@@ -11,7 +11,7 @@ ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: e846bc8dc8d3087c58d58ee91752abc713c5f66e
 ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/22/2019
 ms.locfileid: "60064216"
@@ -55,7 +55,7 @@ ms.locfileid: "60064216"
      ![Intellisense 視窗工具提示](../ide/media/express-overloads.png "Express_Overloads")  
 Intellisense 視窗工具提示  
   
-     工具提示會顯示 [(+ 2 多載)]，也就是說，您可以透過另外兩種方式呼叫 `Next()` 方法。 多載包含不同數目或類型的引數，因此彼此之間的運作方式會稍有不同。 例如，某個方法可能會接受單一整數引數，而它的其中一個多載可能會接受一個整數和一個字串。 您可以依據需要的功能選擇正確的多載。 您將程式碼加入至 `StartTheQuiz()` 方法時，只要輸入 `randomizer.Next(`，[IntelliSense] 視窗就會顯示詳細資訊。 選擇向上鍵和向下鍵，就可以循環瀏覽這些多載，如下圖所示。  
+     工具提示會顯示 [(+ 2 多載)]  ，也就是說，您可以透過另外兩種方式呼叫 `Next()` 方法。 多載包含不同數目或類型的引數，因此彼此之間的運作方式會稍有不同。 例如，某個方法可能會接受單一整數引數，而它的其中一個多載可能會接受一個整數和一個字串。 您可以依據需要的功能選擇正確的多載。 您將程式碼加入至 `StartTheQuiz()` 方法時，只要輸入 `randomizer.Next(`，[IntelliSense] 視窗就會顯示詳細資訊。 選擇向上鍵和向下鍵，就可以循環瀏覽這些多載，如下圖所示。  
   
      ![IntelliSense 中 Next&#40;&#41; 方法的多載](../ide/media/express-nextoverload.png "Express_NextOverload")  
 IntelliSense 中 Next() 方法的多載  

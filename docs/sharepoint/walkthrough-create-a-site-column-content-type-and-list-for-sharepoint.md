@@ -1,5 +1,5 @@
 ---
-title: 逐步解說：建立網站資料行、 內容類型，以及適用於 SharePoint 清單 |Microsoft Docs
+title: 建立 SharePoint 網站資料行、 內容類型和清單
 ms.date: 02/02/2017
 ms.topic: conceptual
 f1_keywords:
@@ -19,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e39ea4041ab9806c7ca857680af5c5c04510eba9
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 141ce92fa083a0afacdae3a279d2697e0931e3be
+ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63430705"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66401273"
 ---
 # <a name="walkthrough-create-a-site-column-content-type-and-list-for-sharepoint"></a>逐步解說：建立 SharePoint 網站資料行、 內容類型和清單
   下列程序示範如何建立自訂的 SharePoint 網站資料行，或*欄位*— 以及使用的網站資料行的內容類型。 它也會示範如何建立會使用新的內容類型的清單。
@@ -97,7 +97,7 @@ ms.locfileid: "63430705"
 
 1. 您可以將內容類型加入專案。 若要這樣做，請在**方案總管 中**，選擇專案節點
 
-2. 在功能表列中，選擇 [專案] > [加入新項目]。
+2. 在功能表列中，選擇 [專案]   > [加入新項目]  。
 
 3. 之下**Visual C#** 或**Visual Basic**，展開**SharePoint**  節點，然後選擇**2010年**節點。
 
@@ -131,13 +131,13 @@ ms.locfileid: "63430705"
 
 1. 將清單加入專案。 若要這樣做，請在**方案總管 中**，選擇專案節點。
 
-2. 在功能表列中，選擇 [專案] > [加入新項目]。
+2. 在功能表列中，選擇 [專案]   > [加入新項目]  。
 
 3. 之下**Visual C#** 或**Visual Basic**，展開**SharePoint**  節點，然後選擇**2010年**節點。
 
 4. 中**範本**窗格中，選擇**清單**範本，將名稱變更為**病患**，然後選擇**新增** 按鈕。
 
-5. 離開**自訂清單為基礎**設為**預設 （空白）**，然後選擇**完成** 按鈕。
+5. 離開**自訂清單為基礎**設為**預設 （空白）** ，然後選擇**完成** 按鈕。
 
 6. 在清單設計工具中，選擇**內容類型** 按鈕以顯示**內容類型設定** 對話方塊。
 
@@ -203,7 +203,7 @@ ms.locfileid: "63430705"
 
 #### <a name="to-test-the-application"></a>若要測試應用程式
 
-1. 在功能表列上，依序選擇 [檔案] > [全部儲存]。
+1. 在功能表列上，依序選擇 [檔案]   > [全部儲存]  。
 
 2. 選擇**F5**鍵以執行應用程式。
 

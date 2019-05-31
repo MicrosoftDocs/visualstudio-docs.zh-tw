@@ -112,7 +112,7 @@ ms.locfileid: "62928364"
     </Commands>
     ```
 
-12. 移動*C:\package*到 Visual Studio 啟動載入器目錄的資料夾。 若為 Visual Studio 2010，則*\Program Files\Microsoft SDKs\Windows\v7.0A\Bootstrapper\Packages*目錄。
+12. 移動*C:\package*到 Visual Studio 啟動載入器目錄的資料夾。 若為 Visual Studio 2010，則 *\Program Files\Microsoft SDKs\Windows\v7.0A\Bootstrapper\Packages*目錄。
 
 ## <a name="example"></a>範例
  產品資訊清單包含自訂的必要條件的安裝指示。

@@ -10,7 +10,7 @@ ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 3e953d9051b9bc7e95dc29e02eb580c4d93fca26
 ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/22/2019
 ms.locfileid: "60066945"
@@ -31,9 +31,9 @@ ms.locfileid: "60066945"
   
 ## <a name="createSimpleMathVSIX"></a> 若要建立 SimpleMathVSIX 擴充功能 SDK 專案  
   
-1. 在功能表列上，選擇 [檔案] 、[新增] 、[專案] 。  
+1. 在功能表列上，選擇 [檔案]  、[新增]  、[專案]  。  
   
-2. 在範本類別清單中下**Visual C#**，選取**擴充性**，然後選取**VSIX 專案**範本。  
+2. 在範本類別清單中下**Visual C#** ，選取**擴充性**，然後選取**VSIX 專案**範本。  
   
 3. 在 [**名稱**文字方塊中，指定`SimpleMathVSIX`，然後選擇 **[確定]** ] 按鈕。  
   
@@ -142,7 +142,7 @@ ms.locfileid: "60066945"
   
 ## <a name="createSampleApp"></a> 若要建立範例應用程式使用 SDK  
   
-1. 在功能表列上，選擇 [檔案] 、[新增] 、[專案] 。  
+1. 在功能表列上，選擇 [檔案]  、[新增]  、[專案]  。  
   
 2. 在範本類別清單中下**JavaScript**，選取**Windows 市集**，然後選取**空白應用程式**範本。  
   
@@ -313,7 +313,7 @@ ms.locfileid: "60066945"
   
 11. 選擇 F5 鍵以建置並執行應用程式。  
   
-12. 在應用程式 UI 中，輸入任何兩個數字，選取作業，然後選擇**=**  按鈕。 正確的結果會出現。  
+12. 在應用程式 UI 中，輸入任何兩個數字，選取作業，然後選擇 **=**  按鈕。 正確的結果會出現。  
   
 ## <a name="see-also"></a>另請參閱  
  [建立軟體開發套件](../extensibility/creating-a-software-development-kit.md)

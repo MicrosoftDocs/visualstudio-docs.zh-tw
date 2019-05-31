@@ -75,13 +75,13 @@ ms.locfileid: "65476661"
 
 3. 在 **方案總管**，以滑鼠右鍵按一下 VSIX 專案，然後選擇**設定為啟始專案**。
 
-4. 在 **source.extension.vsixmanifest**的 [資產] 底下，加入命令或軌跡處理常式專案做為 MEF 元件。
+4. 在 **source.extension.vsixmanifest**的 [資產]  底下，加入命令或軌跡處理常式專案做為 MEF 元件。
 
-    1. 在 [資產] 索引標籤中，選擇 [新增] 。
+    1. 在 [資產]  索引標籤中，選擇 [新增]  。
 
-    2. 在 [類型] 選取 [Microsoft.VisualStudio.MefComponent] 。
+    2. 在 [類型]  選取 [Microsoft.VisualStudio.MefComponent]  。
 
-    3. 在 [來源] 選取 [目前方案中的專案]  ，然後選取命令或軌跡處理常式專案的名稱。
+    3. 在 [來源]  選取 [目前方案中的專案]  ，然後選取命令或軌跡處理常式專案的名稱。
 
     4. 儲存檔案。
 

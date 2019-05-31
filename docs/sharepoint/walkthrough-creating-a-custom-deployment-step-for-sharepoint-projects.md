@@ -1,5 +1,5 @@
 ---
-title: 逐步解說：建立 SharePoint 專案的自訂部署步驟 |Microsoft Docs
+title: 建立 SharePoint 專案的自訂部署步驟
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: facf9b32553ada46ed969aa6e616f20eb378fd60
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 7488bb8b54751c7780cb9751309d227e5d5cb758
+ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63430423"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66401086"
 ---
 # <a name="walkthrough-create-a-custom-deployment-step-for-sharepoint-projects"></a>逐步解說：建立 SharePoint 專案的自訂部署步驟
   當您部署 SharePoint 專案時，Visual Studio 會以特定順序執行一系列的部署步驟。 Visual Studio 包含許多的內建的部署步驟，但您也可以建立您自己。
@@ -69,7 +69,7 @@ ms.locfileid: "63430423"
 
 1. 啟動 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]。
 
-2. 在功能表列上，選擇 [檔案] > [新增] > [專案]。
+2. 在功能表列上，選擇 [檔案]   > [新增]   > [專案]  。
 
 3. 中**新的專案**對話方塊方塊中，展開**Visual C#** 或**Visual Basic**節點，然後選擇**擴充性**節點。
 
@@ -428,7 +428,7 @@ ms.locfileid: "63430423"
 
     屬性編輯器/設計工具隨即開啟。
 
-4. 上**檢視**索引標籤上，選擇**電子郵件**資料行，然後選擇**<** 將從該資料行的索引鍵**選取的資料行**清單**可用的資料行**清單。
+4. 上**檢視**索引標籤上，選擇**電子郵件**資料行，然後選擇 **<** 將從該資料行的索引鍵**選取的資料行**清單**可用的資料行**清單。
 
     此動作會移除的預設檢視中的這些欄位**員工**SharePoint 網站上的清單。
 
@@ -475,7 +475,7 @@ ms.locfileid: "63430423"
 
 1. 在實驗性 Visual Studio 執行個體，在功能表列上，選擇**工具** > **擴充功能和更新**。
 
-     [擴充功能和更新] 對話方塊隨即開啟。
+     [擴充功能和更新]  對話方塊隨即開啟。
 
 2. 在延伸模組清單中，選擇**升級 SharePoint 專案的部署步驟**，然後選擇**解除安裝**命令。
 

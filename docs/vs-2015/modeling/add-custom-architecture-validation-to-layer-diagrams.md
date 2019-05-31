@@ -43,7 +43,7 @@ ms.locfileid: "63432400"
   
 1. 使用 [檔案]  功能表上的 [新增專案]  命令，在新的方案中建立專案。  
   
-2. 在 [新增專案]  對話方塊中，於 [模型專案] 之下，選取 [圖層設計工具驗證擴充功能] 。  
+2. 在 [新增專案]  對話方塊中，於 [模型專案]  之下，選取 [圖層設計工具驗證擴充功能]  。  
   
     此範本隨即建立包含小型範例的專案。  
   
@@ -60,44 +60,44 @@ ms.locfileid: "63432400"
    > [!NOTE]
    > 只有在特定情況下才會呼叫您的方法，且中斷點將不會自動運作。 如需詳細資訊，請參閱 [圖層驗證偵錯](#debugging)。  
   
-5. 主要執行個體中安裝擴充功能[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]，或其他電腦上，尋找 **.vsix**中的檔案*bin\\*。 將它複製到您要安裝它的電腦上，然後按兩下該檔案。 若要對其解除安裝，請使用 [工具]  功能表上的 [擴充功能和更新]  。  
+5. 主要執行個體中安裝擴充功能[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]，或其他電腦上，尋找 **.vsix**中的檔案*bin\\* 。 將它複製到您要安裝它的電腦上，然後按兩下該檔案。 若要對其解除安裝，請使用 [工具]  功能表上的 [擴充功能和更新]  。  
   
 ## <a name="adding-a-layer-validator-to-a-separate-vsix"></a>將圖層驗證程式加入個別的 VSIX 中  
  如果您想要建立一個包含圖層驗證程式、命令和其他擴充功能的 VSIX，建議您應建立單一專案來定義此 VSIX，並且針對處理常式建立個別專案。 如需其他類型的模型擴充功能資訊，請參閱[擴充 UML 模型和圖表](../modeling/extend-uml-models-and-diagrams.md)。  
   
 #### <a name="to-add-layer-validation-to-a-separate-vsix"></a>將圖層驗證加入個別的 VSIX  
   
-1. 在新的或現有的 Visual Studio 方案中建立類別庫專案。 在 [新增專案]  對話方塊中，按一下 [Visual C#]  ，然後按一下 [類別庫] 。 這個專案會包含圖層驗證類別。  
+1. 在新的或現有的 Visual Studio 方案中建立類別庫專案。 在 [新增專案]  對話方塊中，按一下 [Visual C#]  ，然後按一下 [類別庫]  。 這個專案會包含圖層驗證類別。  
   
 2. 在您的方案中識別或建立 VSIX 專案。 VSIX 專案會包含名為 **source.extension.vsixmanifest**的檔案。 如果您必須加入 VSIX 專案，請遵循下列步驟：  
   
-    1. 在 [新增專案]  對話方塊中，依序選擇 [Visual C#] 、[擴充性] 、[VSIX 專案] 。  
+    1. 在 [新增專案]  對話方塊中，依序選擇 [Visual C#]  、[擴充性]  、[VSIX 專案]  。  
   
-    2. 在 [方案總管] 中，在 VSIX 專案的捷徑功能表上，選擇 [設定為啟始專案] 。  
+    2. 在 [方案總管]  中，在 VSIX 專案的捷徑功能表上，選擇 [設定為啟始專案]  。  
   
-3. 在 **source.extension.vsixmanifest**的 [資產] 下，加入圖層驗證專案做為 MEF 元件：  
+3. 在 **source.extension.vsixmanifest**的 [資產]  下，加入圖層驗證專案做為 MEF 元件：  
   
-    1. 選擇 [新增] 。  
+    1. 選擇 [新增]  。  
   
     2. 在 [加入新的資產]  對話方塊中，設定：  
   
-          =   
+           =    
   
-          =   
+           =    
   
-          = *您的驗證程式專案*  
+          = *您的驗證程式專案*   
   
 4. 您也必須將它加入做為圖層驗證：  
   
-    1. 選擇 [新增] 。  
+    1. 選擇 [新增]  。  
   
     2. 在 [加入新的資產]  對話方塊中，設定：  
   
          **Type** = **Microsoft.VisualStudio.ArchitectureTools.Layer.Validator**. 這不是下拉式清單的其中一個選項。 您必須從鍵盤輸入。  
   
-          =   
+           =    
   
-          = *您的驗證程式專案*  
+          = *您的驗證程式專案*   
   
 5. 返回圖層驗證專案，然後加入下列專案參考：  
   
@@ -210,9 +210,9 @@ ms.locfileid: "63432400"
   
  若要將偵錯工具附加到驗證處理序，請在驗證方法的開頭，插入對 `System.Diagnostics.Debugger.Launch()` 的呼叫。 偵錯對話方塊出現時，選取 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]的主要執行個體。  
   
- 或者，您可以插入對 `System.Windows.Forms.MessageBox.Show()`的呼叫。 訊息方塊出現時，請移至 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 的主要執行個體，並在 [偵錯]  功能表上，按一下 [附加至處理序] 。 選取名為 **Graphcmd.exe**的處理序。  
+ 或者，您可以插入對 `System.Windows.Forms.MessageBox.Show()`的呼叫。 訊息方塊出現時，請移至 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 的主要執行個體，並在 [偵錯]  功能表上，按一下 [附加至處理序]  。 選取名為 **Graphcmd.exe**的處理序。  
   
- 一律藉由按 CTRL + F5 ([啟動但不偵錯]) 來啟動實驗執行個體。  
+ 一律藉由按 CTRL + F5 ([啟動但不偵錯]  ) 來啟動實驗執行個體。  
   
 ### <a name="deploying-a-validation-extension"></a>部署驗證擴充功能  
  若要在已安裝 Visual Studio 適當版本的電腦上安裝您的驗證擴充功能，請在目標電腦上開啟 VSIX 檔案。 若要在已安裝 [!INCLUDE[esprbuild](../includes/esprbuild-md.md)] 的電腦上安裝，您必須手動將 VSIX 內容解壓縮到 [擴充功能] 資料夾。 如需詳細資訊，請參閱 <<c0> [ 部署圖層模型擴充功能](../modeling/deploy-a-layer-model-extension.md)。  

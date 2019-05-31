@@ -35,7 +35,7 @@ HRESULT WINAPI ResumeTracking();
  如已繼續追蹤，則為 **HRESULT** 和已設定的 **SUCCEEDED** 位元。 如果因為無法取得內容而無法繼續追蹤，則傳回 **E_FAIL**。
 
 ## <a name="requirements"></a>需求
- **標頭：***FileTracker.h*
+ **標頭：** *FileTracker.h*
 
 ## <a name="see-also"></a>另請參閱
 - [SuspendTracking](../msbuild/suspendtracking.md)

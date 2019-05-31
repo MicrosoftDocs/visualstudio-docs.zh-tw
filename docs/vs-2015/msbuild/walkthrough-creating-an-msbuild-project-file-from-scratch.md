@@ -84,7 +84,7 @@ ms.locfileid: "65682366"
   
 7. 在命令提示字元中輸入 **helloworld**，以測試應用程式。  
   
-     此時應該會顯示 [Hello, world!] 訊息。  
+     此時應該會顯示 [Hello, world!]  訊息。  
   
 8. 在命令提示字元中輸入**del helloworld.exe**，以刪除應用程式。  
   
@@ -166,7 +166,7 @@ ms.locfileid: "65682366"
   
      在命令提示字元中，輸入 **set PATH=%PATH%;%ProgramFiles%\MSBuild** 或 **set PATH=%PATH%;%ProgramFiles(x86)%\MSBuild**。  
   
-     或者，如果您已安裝 Visual Studio，您可以使用 [Visual Studio 命令提示字元]，其中具有包括 MSBuild 資料夾的路徑。  
+     或者，如果您已安裝 Visual Studio，您可以使用 [Visual Studio 命令提示字元]  ，其中具有包括 MSBuild 資料夾的路徑。  
   
 ## <a name="using-the-project-file-to-build-the-application"></a>使用專案檔建置應用程式  
  現在，若要建置應用程式，請使用您剛剛建立的專案檔。  
@@ -179,7 +179,7 @@ ms.locfileid: "65682366"
   
 2. 輸入 **helloworld** 來測試應用程式。  
   
-     此時應該會顯示 [Hello, world!] 訊息。  
+     此時應該會顯示 [Hello, world!]  訊息。  
   
 > [!NOTE]
 > 提升詳細資訊層級，即可查看組建的更多詳細資料。 若要將詳細資訊層級設為「詳細」，請在命令提示字元處輸入下列任何一個命令：  
@@ -268,7 +268,7 @@ ms.locfileid: "65682366"
   
 3. 輸入 **Bin\MSBuildSample** 來測試應用程式。  
   
-     此時應該會顯示 [Hello, world!] 訊息。  
+     此時應該會顯示 [Hello, world!]  訊息。  
   
 ## <a name="adding-build-targets"></a>加入建置目標  
  接下來，再將兩個目標加入專案檔，如下所示：  
@@ -343,7 +343,7 @@ ms.locfileid: "65682366"
   
 3. 輸入 **Bin\Greetings** 來測試 Greetings 應用程式。  
   
-     此時應該會顯示 [Hello, world!] 訊息。  
+     此時應該會顯示 [Hello, world!]  訊息。  
   
 4. 輸入 **msbuild helloworld.csproj /t:clean** 來刪除 MSBuildSample 應用程式。  
   

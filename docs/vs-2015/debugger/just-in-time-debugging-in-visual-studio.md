@@ -67,7 +67,7 @@ ms.locfileid: "65690600"
 
     若要在啟用 Just-In-Time 偵錯之後加以停用，您必須以系統管理員權限執行。 啟用 Just-In-Time 偵錯會設定一個登錄機碼，您必須使用系統管理員權限才能變更該機碼。
 
-5. 按一下 [確定] 。
+5. 按一下 [確定]  。
 
    即使電腦上已沒有安裝 Visual Studio，Just-In-Time 偵錯可能仍然為啟用狀態。 未安裝 Visual Studio 時，您無法停用 Just 時間從 Visual Studio 偵錯**選項** 對話方塊。 在此情況下，您可以編輯 Windows 登錄來停用 Just-In-Time 偵錯。
 
@@ -165,7 +165,7 @@ static void Main(string[] args)
 
  底下**可能的偵錯工具**，您應該會看到**Microsoft Visual Studio 2015 的新執行個體**列已選取。 如果已選取，現在請對它進行選取。
 
- 底部的視窗中，在**您要使用選取的偵錯工具進行偵錯嗎？**，按一下**是**。
+ 底部的視窗中，在**您要使用選取的偵錯工具進行偵錯嗎？** ，按一下**是**。
 
  與執行已停止的行，則會擲回例外狀況，在 Visual Studio 中的新執行個體中開啟 ThrowsNullException 專案：
 

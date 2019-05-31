@@ -41,7 +41,7 @@ Visual Studio 包含一組核心.NET 編譯器平台 (*Roslyn*) 分析器。 這
 
 1. 在 Visual Studio 中，選取**工具** > **擴充功能和更新**。
 
-   [擴充功能和更新] 對話方塊隨即開啟。
+   [擴充功能和更新]  對話方塊隨即開啟。
 
    > [!NOTE]
    > 或者，您可以在其中尋找並下載分析器擴充功能，直接從[Visual Studio Marketplace](https://marketplace.visualstudio.com)。
@@ -75,7 +75,7 @@ Visual Studio 包含一組核心.NET 編譯器平台 (*Roslyn*) 分析器。 這
 
 6. 選取 **修改**開始安裝。
 
-7. 一或兩分鐘，安裝完成之後。 選取 [關閉] 。
+7. 一或兩分鐘，安裝完成之後。 選取 [關閉]  。
 
 8. 重新開啟 Visual Studio。
 

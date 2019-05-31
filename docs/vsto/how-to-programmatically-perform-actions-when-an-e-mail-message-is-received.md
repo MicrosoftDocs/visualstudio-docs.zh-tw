@@ -1,5 +1,5 @@
 ---
-title: HOW TO：以程式設計方式在收到電子郵件訊息時執行動作
+title: 如果收到電子郵件訊息，以程式設計方式執行動作
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 31f195d6b83a93363c3b2ef3bfa7d829f5fc822d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a0787db2f7055bc65871227b9fcf8cbbb60ec1d8
+ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62955936"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66402191"
 ---
 # <a name="how-to-programmatically-perform-actions-when-an-email-message-is-received"></a>HOW TO：以程式設計方式在收到電子郵件訊息時執行動作
   使用者會收到一封電子郵件時，此範例會執行自訂動作。

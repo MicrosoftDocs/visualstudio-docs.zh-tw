@@ -12,7 +12,7 @@ ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 987536af051de4a66b3eccadb105fd98455ddf06
 ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/22/2019
 ms.locfileid: "60085899"
@@ -36,9 +36,9 @@ XML 命令表 (.vsct) 檔案描述的版面配置和外觀 VSPackage 的命令�
   
 - 雖然.vsct 檔案支援 **/include**陳述式，.ctc 檔一樣，它也擁有全新\<**匯入 >** 項目。 差別在於**包含**帶入**所有**的資訊，但\<**匯入 >** 帶入只有名稱。  
   
-- 雖然.ctc 檔需要您在其中定義您的前置處理器指示詞的標頭檔，其中一個不需要.vsct 檔案。 相反地，將您的指示詞放在符號表中，位於**\<符號 >** 項目，位於.vsct 檔的底部。  
+- 雖然.ctc 檔需要您在其中定義您的前置處理器指示詞的標頭檔，其中一個不需要.vsct 檔案。 相反地，將您的指示詞放在符號表中，位於 **\<符號 >** 項目，位於.vsct 檔的底部。  
   
-- .vsct 檔案功能**\<註釋 >** 標記，可讓您內嵌任何您喜歡，例如資訊或甚至是圖片的資訊。  
+- .vsct 檔案功能 **\<註釋 >** 標記，可讓您內嵌任何您喜歡，例如資訊或甚至是圖片的資訊。  
   
 - 值會儲存為項目上的屬性。  
   

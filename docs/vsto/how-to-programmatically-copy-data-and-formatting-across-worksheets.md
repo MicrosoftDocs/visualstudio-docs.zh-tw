@@ -1,5 +1,5 @@
 ---
-title: HOW TO：以程式設計方式複製資料和格式跨工作表
+title: 複製資料和以程式設計方式跨工作表格式
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -15,14 +15,14 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 77feefe7a2d274403e483dbaa3167f53f72ae168
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b90704d6d9fe555920fb042939079bd53884cfbe
+ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62575295"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66402215"
 ---
-# <a name="how-to-programmatically-copy-data-and-formatting-across-worksheets"></a>HOW TO：以程式設計方式複製資料和格式跨工作表
+# <a name="how-to-programmatically-copy-data-and-formatting-across-worksheets"></a>作法：以程式設計方式複製資料和格式跨工作表
   您可以從上一個工作表的範圍複製資料，所有其他工作表活頁簿中，使用<xref:Microsoft.Office.Interop.Excel.Worksheets.FillAcrossSheets%2A>方法。 指定範圍，以及您是否要複製資料、 格式、 或兩者。
 
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]

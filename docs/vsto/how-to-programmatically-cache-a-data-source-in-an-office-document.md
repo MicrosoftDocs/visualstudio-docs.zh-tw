@@ -1,5 +1,5 @@
 ---
-title: HOW TO：以程式設計方式快取 Office 文件中的資料來源
+title: 以程式設計方式快取 Office 文件中的資料來源
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -16,14 +16,14 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 23ea89b25ca1bd1e7aa48ab1782d23bd7db057f0
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 5e63b478fb16965f639a76dad0cbc3b2715bc7e2
+ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63437111"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66401407"
 ---
-# <a name="how-to-programmatically-cache-a-data-source-in-an-office-document"></a>HOW TO：以程式設計方式快取 Office 文件中的資料來源
+# <a name="how-to-programmatically-cache-a-data-source-in-an-office-document"></a>作法：以程式設計方式快取 Office 文件中的資料來源
   您以程式設計的方式可以將文件中的資料快取資料物件，藉由呼叫`StartCaching`方法的許多項目，例如<xref:Microsoft.Office.Tools.Word.Document>， <xref:Microsoft.Office.Tools.Excel.Workbook>，或<xref:Microsoft.Office.Tools.Excel.Worksheet>。 移除資料快取中的資料物件，藉由呼叫`StopCaching`主項目的的方法。
 
  `StartCaching`方法和`StopCaching`方法都是私用，但它們出現在 IntelliSense 中。
