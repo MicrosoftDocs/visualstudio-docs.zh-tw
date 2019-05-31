@@ -7,17 +7,17 @@ helpviewer_keywords:
 - what's new [Visual Studio SDK], source control
 - source control [Visual Studio SDK], what's new
 ms.assetid: bcf85418-18fb-4824-9dae-d14bf3d56a77
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3b667a6c6322a925b49290ab3234788a4eee3544
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e12776c21d345d60992eeff4963498bcd7d56678
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62856795"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66323256"
 ---
 # <a name="whats-new-in-source-control-for-the-visual-studio-2015-sdk"></a>在 Visual Studio 2015 SDK 的原始檔控制中最新消息
 
