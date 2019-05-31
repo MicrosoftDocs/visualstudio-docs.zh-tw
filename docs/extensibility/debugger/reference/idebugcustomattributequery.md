@@ -5,17 +5,17 @@ ms.topic: reference
 helpviewer_keywords:
 - IDebugCustomAttributeQuery interface
 ms.assetid: b804b619-70eb-4c38-80d9-c8b32b65ed3e
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ea9c37dbb889a622d0b428d53144c27d0c04aef9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ae0640b23ec7e206dac8b0aaeff605e6592b1fc5
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62875967"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66322239"
 ---
 # <a name="idebugcustomattributequery"></a>IDebugCustomAttributeQuery
 表示在方法或類型的自訂屬性的查詢。

@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugPortSupplier2::GetPortSupplierId
 ms.assetid: 741d0829-0943-49bf-b56e-61e836043006
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: e4aa51e59a693b1702de49b5c749b75fed9ec525
-ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.openlocfilehash: 2fd7d6cf1dd41d27bedf2a409e850bf73a5e5dc2
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/24/2019
-ms.locfileid: "66204416"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66340135"
 ---
 # <a name="idebugportsupplier2getportsupplierid"></a>IDebugPortSupplier2::GetPortSupplierId
 取得的連接埠供應商識別碼。

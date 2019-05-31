@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IEnumDebugFrameInfo2::Clone
 ms.assetid: cdd10489-1772-47e3-815f-a6cfd32a3c60
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 7bfd96f1a52fe908e414b16bb7bd003b459059d4
-ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.openlocfilehash: d046b151192abdbd212b38615517a83ecb0f5ebe
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/24/2019
-ms.locfileid: "66208013"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66350403"
 ---
 # <a name="ienumdebugframeinfo2clone"></a>IEnumDebugFrameInfo2::Clone
 傳回一份目前的列舉，為個別的物件。

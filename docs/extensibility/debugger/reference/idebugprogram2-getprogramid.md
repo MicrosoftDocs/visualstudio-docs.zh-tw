@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProgram2::GetProgramId
 ms.assetid: 2c31c0aa-2b71-46c7-849c-356e237d26f8
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: ca86175d34cc1bfd54882adda7e1f7cb464fb22f
-ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.openlocfilehash: aba5ac3e17cb86219c065b5ed2372e127ad03dd2
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/24/2019
-ms.locfileid: "66212640"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66320774"
 ---
 # <a name="idebugprogram2getprogramid"></a>IDebugProgram2::GetProgramId
 取得此程式的 GUID。

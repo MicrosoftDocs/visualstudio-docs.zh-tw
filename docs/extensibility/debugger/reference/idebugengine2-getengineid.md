@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugEngine2::GetEngineID
 ms.assetid: 0d5674c8-a9b9-4b72-8211-d2d68695775a
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 965a674c0586f4b61c934570638f5168a0ab0bb4
-ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.openlocfilehash: 29b6f219447e3c58bce9f5b4696697163ab4f6a1
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/24/2019
-ms.locfileid: "66207630"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66318461"
 ---
 # <a name="idebugengine2getengineid"></a>IDebugEngine2::GetEngineID
 取得偵錯引擎 (DE) 的 GUID。

@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IEEVisualizerService::GetCustomViewerList method
 ms.assetid: 249d26ca-914f-43af-a400-8162477223f4
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 5b78afc3ace3764856fd0a83899be2eae597239e
-ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.openlocfilehash: 4fa71a731843f1deed1cfe9a464cc4ab716a8a43
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/24/2019
-ms.locfileid: "66203668"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66350174"
 ---
 # <a name="ieevisualizerservicegetcustomviewerlist"></a>IEEVisualizerService::GetCustomViewerList
 這個方法會傳回一份此服務所知的類型視覺化檢視。

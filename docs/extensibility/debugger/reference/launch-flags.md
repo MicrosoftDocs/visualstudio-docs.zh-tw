@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - LAUNCH_FLAGS enumeration
 ms.assetid: f51aab02-d257-4302-bb79-b7d8ba9ac4e5
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 7ffdf2359b719be0fa3cf0a17ae4ed70bc36b673
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: 27975f4055a433891251c675bff3aacaaa9f6bb3
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65461067"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66339360"
 ---
 # <a name="launchflags"></a>LAUNCH_FLAGS
 指定偵錯啟動旗標。

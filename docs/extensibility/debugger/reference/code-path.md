@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - CODE_PATH structure
 ms.assetid: 2d4b2890-4c9d-47e1-83c0-df9c6436427f
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4e09cd77308f83c2b9fb1b9cba70076ad797eb2e
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 516122ee8aaaa0ed18537369eeeffb05be3ebf1c
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56714942"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66327219"
 ---
 # <a name="codepath"></a>CODE_PATH
 描述的方法或函式的呼叫。
@@ -39,9 +42,11 @@ public struct CODE_PATH {
 ```
 
 ## <a name="members"></a>成員
-bstrName 程式碼路徑的名稱。
+`bstrName`\
+程式碼路徑的名稱。
 
-pCode [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md)其中逐步執行函式程式碼中識別的物件。
+`pCode`\
+[IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md)其中逐步執行函式程式碼中識別的物件。
 
 ## <a name="remarks"></a>備註
 此結構用來實作逐步執行函式。 [EnumCodePaths](../../../extensibility/debugger/reference/idebugprogram2-enumcodepaths.md)從目前的位置中正在偵錯程式會傳回所有的呼叫。 這個結構是表示一個這類呼叫。

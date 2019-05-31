@@ -8,20 +8,20 @@ helpviewer_keywords:
 - IDebugMemoryBytes2::WriteAt method
 - WriteAt method
 ms.assetid: 61cc3704-47fa-4d9b-aa62-bb4585ac8fb1
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: ad3e4c14c28f220a28e8d9aa65ddb1b6e6a3af0a
-ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.openlocfilehash: 5eefaee08d64952681e91711cdf8347186123e57
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/24/2019
-ms.locfileid: "66210543"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66347140"
 ---
 # <a name="idebugmemorybytes2writeat"></a>IDebugMemoryBytes2::WriteAt
 寫入指定的記憶體，並指定位址開頭的位元組數目。

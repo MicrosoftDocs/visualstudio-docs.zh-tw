@@ -5,17 +5,17 @@ ms.topic: reference
 helpviewer_keywords:
 - IDebugIDECallback interface
 ms.assetid: 8d31adc0-1c44-4658-8d4f-f4b73e35f4a6
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: bdbc1cc5a8f7534f2ee11699d67b4128796602c6
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: d5a489256b14b828fd548b3e2da3c2c02f9d5317
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63413990"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66349572"
 ---
 # <a name="idebugidecallback"></a>IDebugIDECallback
 > [!IMPORTANT]

@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - SYMBOL_SEARCH_INFO_FIELDS enumeration
 ms.assetid: bce35af0-722d-46d4-afa6-eaae598c51ff
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 5d6f416d284c1712f8e52b2655a74e08f6f9cfe1
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: 86a7fb7c891d0c22bc415920014e905cf3d9c6fa
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65458326"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66322355"
 ---
 # <a name="symbolsearchinfofields"></a>SYMBOL_SEARCH_INFO_FIELDS
 指定要擷取的符號資訊種類。

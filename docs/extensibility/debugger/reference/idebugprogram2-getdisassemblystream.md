@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProgram2::GetDisassemblyStream
 ms.assetid: beda0da5-267e-4bf3-96c4-b659d29e2254
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 61d9b728dd45b22b170c497b1d3ea1995ba92920
-ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.openlocfilehash: 71389ef210d50becaab4d25e29194c2a40000497
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/24/2019
-ms.locfileid: "66212310"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66308767"
 ---
 # <a name="idebugprogram2getdisassemblystream"></a>IDebugProgram2::GetDisassemblyStream
 取得此程式或此程式的組件的反組譯碼資料流。

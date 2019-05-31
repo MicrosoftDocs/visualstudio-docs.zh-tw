@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - debugging [Debugging SDK], supported events
 ms.assetid: a3c0386d-551e-4734-9a0c-368d1c2e6671
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 71d7da44eacecfc8a06f202a27f7758d6eb2ca98
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 9c4ee45e1a3a7efeb990fcb6f9073420a99dbe7c
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63415648"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66351097"
 ---
 # <a name="supported-event-types"></a>支援的事件類型
 Visual Studio 偵錯目前支援下列事件類型：

@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IEnumDebugPorts2::Reset
 ms.assetid: 67da406c-eadb-421e-ae12-e26e9866f262
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 1deafbb5f8c6a3ba6f6881fb2cc2903a40548bd3
-ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
+ms.openlocfilehash: 64f8bdbea804659dbd10a0ec6efe5590d1b16af4
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65225496"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66339307"
 ---
 # <a name="ienumdebugports2reset"></a>IEnumDebugPorts2::Reset
 將列舉重設第一個項目。

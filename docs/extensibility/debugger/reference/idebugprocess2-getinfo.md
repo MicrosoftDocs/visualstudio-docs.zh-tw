@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProcess2::GetInfo
 ms.assetid: 46021dce-bb97-46c3-b0cc-e5b3b68acc35
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 2970a4d2c65c56ab2e16ca51dbca6556bee1d040
-ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.openlocfilehash: e6227e8a4397dac03e9ecc70eedf2b902888cdbb
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/24/2019
-ms.locfileid: "66202617"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66353147"
 ---
 # <a name="idebugprocess2getinfo"></a>IDebugProcess2::GetInfo
 取得處理序的描述。

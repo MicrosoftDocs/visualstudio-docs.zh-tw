@@ -3,17 +3,17 @@ title: 定址 DPI Issues2 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 359184aa-f5b6-4b6c-99fe-104655b3a494
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1e46ada7a4e71c5d84cbb28d86f1712bbeca6dce
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e2b440ff34a5c1f2c60b8874ba56266b636afde3
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62892033"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66352256"
 ---
 # <a name="address-dpi-issues"></a>處理 DPI 問題
 越來越多的裝置都隨附 「 高解析度 」 畫面。 這些畫面通常會有超過 200 個像素為單位，每英吋 (ppi)。 使用這些電腦上的應用程式需要相應增加以符合檢視裝置的一般檢視距離內容需求的內容。 自 2014年起，高密度顯示的主要目標是行動運算裝置 （平板電腦、 蛤殼膝上型電腦和手機）。
@@ -34,7 +34,7 @@ Windows 8.1 和更新版本包含數個功能，讓這些機器能夠使用的�
 
   Visual Studio 中選擇要 DPI 縮放比例感知，並因此未 「 虛擬化。 」
 
-  Windows （和 Visual Studio） 運用數種不同方式處理縮放係數由系統設定的 UI 技術。 例如：
+  Windows （和 Visual Studio） 運用數種不同方式處理縮放係數由系統設定的 UI 技術。 例如: 
 
 - WPF 會測量控制項，以與裝置無關的方式 （單位，不像素為單位）。 WPF UI 會自動調整為目前的 DPI。
 
@@ -51,7 +51,7 @@ Windows 8.1 和更新版本包含數個功能，讓這些機器能夠使用的�
 本節主要是供開發人員延伸 Visual Studio 2013。 Visual Studio 2015 中，使用內建於 Visual Studio 映像服務。 您可能也會發現您需要支援/目標的 Visual Studio 的許多版本，因此使用 2015年中的 映像服務不是選項因為不存在於舊版。 本章節也是您然後。
 
 ## <a name="scaling-up-images-that-are-too-small"></a>相應增加太小的映像
-太小的映像可以相應增加，並呈現 GDI 和 WPF 使用的一些常見方法。 受管理的 DPI 協助程式類別可用於內部和外部的 Visual Studio 整合人員在調整圖示、 點陣圖、 imagestrips 和 imagelists 的位址。 Win32 原生 C / C + + 的協助程式可供調整 HICON、 HBITMAP、 HIMAGELIST 和 VsUI::GdiplusImage。 縮放點陣圖的比例通常只需要一行變更之後包含協助程式程式庫的參考。 例如: 
+太小的映像可以相應增加，並呈現 GDI 和 WPF 使用的一些常見方法。 受管理的 DPI 協助程式類別可用於內部和外部的 Visual Studio 整合人員在調整圖示、 點陣圖、 imagestrips 和 imagelists 的位址。 Win32 原生 C / C + + 的協助程式可供調整 HICON、 HBITMAP、 HIMAGELIST 和 VsUI::GdiplusImage。 縮放點陣圖的比例通常只需要一行變更之後包含協助程式程式庫的參考。 例如：
 
 ```cpp
 (Unmanaged) VsUI::DpiHelper::LogicalToDeviceUnits(&hBitmap);
@@ -128,7 +128,7 @@ VsUI::DpiHelper::LogicalToDeviceUnits(&hBitmap);
 
 - 請確定專案具有參考**System.Windows.Forms**， **PresentationCore**，並**PresentationUI**。
 
-- 在程式碼，使用**Microsoft.VisualStudio.PlatformUI** DpiHelper 類別的命名空間和呼叫靜態函式。 支援的類型 （點、 大小、 矩形和等等），都有提供擴充程式函式會傳回新的擴充物件。 例如：
+- 在程式碼，使用**Microsoft.VisualStudio.PlatformUI** DpiHelper 類別的命名空間和呼叫靜態函式。 支援的類型 （點、 大小、 矩形和等等），都有提供擴充程式函式會傳回新的擴充物件。 例如: 
 
     ```csharp
     using Microsoft.VisualStudio.PlatformUI;

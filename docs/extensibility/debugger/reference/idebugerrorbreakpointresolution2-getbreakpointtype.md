@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugErrorBreakpointResolution2::GetBreakpointType
 ms.assetid: 0bdb1152-4752-4464-ae7c-6d666dc293b7
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 4c3260c7b16f664a321b7edba910f26d05ab5d58
-ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.openlocfilehash: b4715dbd6fd3997be932cfd0d8944a30940e1d07
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/24/2019
-ms.locfileid: "66199974"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66327763"
 ---
 # <a name="idebugerrorbreakpointresolution2getbreakpointtype"></a>IDebugErrorBreakpointResolution2::GetBreakpointType
 取得中斷點類型。

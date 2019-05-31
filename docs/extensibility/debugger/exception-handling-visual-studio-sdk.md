@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - debugging [Debugging SDK], exception handling
 ms.assetid: 7279dc16-db14-482c-86b8-7b3da5a581d2
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f48724ac57e23fc569bd244afdb3a205ed9c4ef7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7fdb309c01979985d1c00eedab9c496d0af44e07
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62889875"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66315271"
 ---
 # <a name="exception-handling-visual-studio-sdk"></a>例外狀況處理 (Visual Studio SDK)
 以下說明擲回例外狀況時，就會發生的程序。

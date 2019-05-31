@@ -5,20 +5,20 @@ ms.topic: reference
 helpviewer_keywords:
 - IDebugPortSupplierEx2::SetServer
 ms.assetid: 0e8ef194-3a4f-4abf-8382-4607ab3005d1
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 0e92ee346a5d503c004279df84bdd8aacc429337
-ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.openlocfilehash: 2fda8acbf2c757478b838c11a88b21324420173b
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/24/2019
-ms.locfileid: "66204242"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66353336"
 ---
 # <a name="idebugportsupplierex2setserver"></a>IDebugPortSupplierEx2::SetServer
 設定核心伺服器連接埠提供者。

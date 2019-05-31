@@ -1,20 +1,20 @@
 ---
-title: HOW TO：將擴充性專案移轉至 Visual Studio 2017 |Microsoft Docs
+title: 作法：將擴充性專案移轉至 Visual Studio 2017 |Microsoft Docs
 ms.date: 11/09/2016
 ms.topic: conceptual
 ms.assetid: 8ca07b00-a3ff-40ab-b647-c0a93b55e86a
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
 monikerRange: vs-2017
-ms.openlocfilehash: 3d55055734233a385f4a6d24f8925af2f0829fe3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 802c55844be14192ea5bd5de1870e27e2063ccad
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62863571"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66319316"
 ---
 # <a name="how-to-migrate-extensibility-projects-to-visual-studio-2017"></a>HOW TO：將擴充性專案移轉至 Visual Studio 2017
 
@@ -31,7 +31,7 @@ ms.locfileid: "62863571"
 
 所有的 VSIX 專案將會需要的主要版本的單向升級至 Visual Studio 2017。
 
-專案檔 (例如 **.csproj*) 將會更新：
+專案檔 (例如 * *.csproj*) 將會更新：
 
 * MinimumVisualStudioVersion-現在設定為 15.0
 * OldToolsVersion (如果先前存在)-現在設定為 14.0
@@ -47,7 +47,7 @@ ms.locfileid: "62863571"
 
 * 以滑鼠右鍵按一下方案，然後選擇 **管理方案的 NuGet 套件**。
 * 瀏覽至**更新** 索引標籤。
-* 選取  **Microsoft.VSSDK.BuildTools （最新版）**。
+* 選取  **Microsoft.VSSDK.BuildTools （最新版）** 。
 * 按下**更新**。
 
 ![VSSDK 建置工具](media/vssdk-build-tools.png)
@@ -103,7 +103,7 @@ ms.locfileid: "62863571"
 
    ![新增 roslyn 必要條件](media/add-roslyn-prerequisite.png)
 
-* 按 [確定]。
+* 按 [確定]  。
 
 ## <a name="update-debug-settings-for-the-project"></a>更新專案的偵錯設定
 
@@ -185,7 +185,7 @@ WPF | Managed 桌面工作負載核心 | Microsoft.VisualStudio.Component.Manage
 
 ### <a name="vs2017-componentbinarymappingxlsx"></a>vs2017-ComponentBinaryMapping.xlsx
 
-在 Excel 工作表中有四個資料行：**元件名稱**， **ComponentId**，**版本**，和**二進位檔名 /**。  您可以使用篩選來搜尋及尋找特定元件和二進位檔。
+在 Excel 工作表中有四個資料行：**元件名稱**， **ComponentId**，**版本**，和**二進位檔名 /** 。  您可以使用篩選來搜尋及尋找特定元件和二進位檔。
 
 針對您所有的參考，請先判斷哪些是在核心編輯器 (Microsoft.VisualStudio.Component.CoreEditor) 元件。  最小值，我們會要求必須指定為所有擴充功能的必要元件的核心編輯器元件。 參考會保留不在核心編輯器中，將篩選條件中的加入**二進位檔 / 檔案名稱**一節，以尋找具有任何這些參考子集的元件。
 

@@ -6,17 +6,17 @@ helpviewer_keywords:
 - Symbols element (VSCT XML schema)
 - VSCT XML schema elements, Symbols
 ms.assetid: 1cda43d8-42a5-4b1b-a3c8-cf0401c3202f
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 81b6c5dcbd3601a6075097a44d2cd5dd625b4a87
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 303d13d94a413ad3ce17e0bd2b56fe95455e9f54
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62799487"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66316666"
 ---
 # <a name="symbols-element"></a>Symbols 項目
 定義 Guid 和 Id，可供其他 VSCT 項目。 Unmanaged 程式碼，這項資訊通常來自所指定的標頭檔[Extern 元素](../extensibility/extern-element.md)。 Managed 程式碼會使用項目的子項目符號來定義這項資訊。

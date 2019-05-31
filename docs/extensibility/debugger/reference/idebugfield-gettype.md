@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugField::GetType method
 ms.assetid: b3cdec9f-ef7b-44d0-a775-d17ef7eae968
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 7eb0b6e17ccc7b95ec64449468469a85adfa8849
-ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.openlocfilehash: c052f4b4c45080d8292dd8787c44777818bae585
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/24/2019
-ms.locfileid: "66212662"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66333167"
 ---
 # <a name="idebugfieldgettype"></a>IDebugField::GetType
 這個方法會取得欄位的型別。

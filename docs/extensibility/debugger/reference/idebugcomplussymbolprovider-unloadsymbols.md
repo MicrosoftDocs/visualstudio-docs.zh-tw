@@ -6,20 +6,20 @@ helpviewer_keywords:
 - UnloadSymbols
 - IDebugComPlusSymbolProvider::UnloadSymbols
 ms.assetid: 53e3ddc1-ab47-4097-8fef-b26e5504b37a
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 1a17e758ce92f72f5bb7cb68c23668ac61c04101
-ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.openlocfilehash: 5283f18ea4e8e89c0a5d693070710756ec987c60
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/24/2019
-ms.locfileid: "66206066"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66352776"
 ---
 # <a name="idebugcomplussymbolproviderunloadsymbols"></a>IDebugComPlusSymbolProvider::UnloadSymbols
 卸載指定的模組，從記憶體的偵錯符號。

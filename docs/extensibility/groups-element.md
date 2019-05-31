@@ -6,17 +6,17 @@ helpviewer_keywords:
 - VSCT XML schema elements, Groups
 - Groups element (VSCT XML schema)
 ms.assetid: 740ca4ec-79fa-4b98-8f9a-2a137f9f7f98
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 197c2890613ac376b8c494467b86576b1980b00b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f56ab0ea97026d6162a40e5be481e78904d75315
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62863037"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66342326"
 ---
 # <a name="groups-element"></a>Groups 元素
 包含定義 VSPackage 的命令群組的項目。

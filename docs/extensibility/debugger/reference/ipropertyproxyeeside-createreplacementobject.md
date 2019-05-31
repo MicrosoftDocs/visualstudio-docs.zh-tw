@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IPropertyProxyEESide::CreateReplacementObject
 ms.assetid: 0cfe79b8-c3f1-48b0-a225-e39dee2c92fe
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 6250c06315c7b4e9437ecd577f961fb3f0ee7953
-ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.openlocfilehash: 5621a3f32d68374339df9a6987033e5fef5e44dd
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/24/2019
-ms.locfileid: "66210103"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66329583"
 ---
 # <a name="ipropertyproxyeesidecreatereplacementobject"></a>IPropertyProxyEESide::CreateReplacementObject
 建立特定運算式評估工具 (EE) 的資料物件的複本。

@@ -7,17 +7,17 @@ helpviewer_keywords:
 - Source Control Integration,overview
 - essentials, Source Control Integration
 ms.assetid: 442057cb-fd54-4283-96f8-2f6dc8bf2de7
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 16c785534b843977f28c9a1383ac93f33e216947
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 6f853f71428086f6c144c352e18e51f3f55c4d00
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62908957"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66322535"
 ---
 # <a name="source-control-integration-essentials"></a>原始檔控制整合的基本資訊
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 支援兩種類型的原始檔控制整合： 原始檔控制外掛程式提供基本功能，使用原始檔控制外掛程式 API （前身為 MSSCCI API） 和 VSPackage 型原始檔控制整合解決方案建置，提供更強大的功能。

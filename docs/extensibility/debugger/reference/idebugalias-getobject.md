@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugAlias::GetObject method
 ms.assetid: 97bc3af6-6e55-4940-8a6d-692c61257806
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: f8da32ee8a4b6965e1e731c676703b5d1180d21e
-ms.sourcegitcommit: 77b4ca625674658d5c5766e684fa0e2a07cad4da
+ms.openlocfilehash: 92d2265a6b3a17b632716729be12d92c96b65f03
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/14/2019
-ms.locfileid: "65615233"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66338141"
 ---
 # <a name="idebugaliasgetobject"></a>IDebugAlias::GetObject
 取得這個別名所針對的物件。

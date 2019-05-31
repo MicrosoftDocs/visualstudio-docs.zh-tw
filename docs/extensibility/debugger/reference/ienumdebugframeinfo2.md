@@ -7,17 +7,17 @@ f1_keywords:
 helpviewer_keywords:
 - IEnumDebugFrameInfo2
 ms.assetid: 994e30ad-435a-4f9e-9272-d96d9e01099c
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6f1be974dae31d321bdb860188b5693747a2e61b
-ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
+ms.openlocfilehash: 6579481f44006cc3f77e57a9c9ecbd327c3b7409
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65225553"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66350287"
 ---
 # <a name="ienumdebugframeinfo2"></a>IEnumDebugFrameInfo2
 此介面列舉[FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md)結構。

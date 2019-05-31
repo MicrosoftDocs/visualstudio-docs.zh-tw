@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], custom - create
 ms.assetid: d090abb6-d99f-4083-a3db-cd16bf81ce7d
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f85963712fa1b051ea7256e6f805fe8e7c7e70d0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: eca6bc68accfd5c33e439ddfc5709943be7b549e
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62952902"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66312754"
 ---
 # <a name="walkthrough-create-a-custom-editor"></a>逐步解說：建立自訂編輯器
 VSPackage 專案範本可以建立簡單的自訂編輯器，在C++。 VSPackage 專案範本不再支援 C# 或 Visual Basic 專案。 如需詳細資訊，請參閱 < [Visual Studio SDK](../extensibility/visual-studio-sdk.md)。
@@ -30,7 +30,7 @@ VSPackage 專案範本可以建立簡單的自訂編輯器，在C++。 VSPackage
 
 1. 使用 Visual Studio Package 範本建立專案。
 
-2. 選取 [**自訂編輯器**選項，然後按一下**下一步]**。 **編輯器選項**頁面隨即出現。
+2. 選取 [**自訂編輯器**選項，然後按一下**下一步]** 。 **編輯器選項**頁面隨即出現。
 
 3. 輸入您的編輯器名稱**編輯器名稱** 方塊中。 輸入您想要與您的編輯器產生關聯的副檔名**副檔名** 方塊中。 您的編輯器是適用於與此延伸模組的檔案。 檔案的副檔名會註冊為 Visual Studio，不適用於 Windows。 輸入與您的編輯器建立的新文件的預設檔案名稱**預設檔名** 方塊中。
 

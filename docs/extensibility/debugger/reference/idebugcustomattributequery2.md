@@ -8,17 +8,17 @@ helpviewer_keywords:
 - IDebugCustomAttributeQuery interface
 - IDebugCustomAttributeQuery2 interface
 ms.assetid: 7cfa23e4-a05a-47a3-af6c-bd40c655014b
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 23f76cfc71fab73d5d31fe3f47c3f8c552271aa7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 00220574ac9c16bdab9abd64adde1877ee0fd9f2
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62921629"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66335809"
 ---
 # <a name="idebugcustomattributequery2"></a>IDebugCustomAttributeQuery2
 判斷此欄位的自訂屬性存在，如果存在的話，會傳回屬性資訊。

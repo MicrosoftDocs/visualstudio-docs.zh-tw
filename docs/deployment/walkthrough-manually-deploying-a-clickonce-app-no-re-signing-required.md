@@ -1,5 +1,5 @@
 ---
-title: 逐步解說：手動部署 ClickOnce 應用程式不需要重新簽署而且會保留商標資訊 |Microsoft Docs
+title: 手動部署 ClickOnce 應用程式保留商標
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -22,12 +22,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 50febcb027ec51b62bdde7ea06a7112470cdc247
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 47db202d07fd88bfb5e922964caf2cdd5008c6fd
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63405845"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66263417"
 ---
 # <a name="walkthrough-manually-deploy-a-clickonce-application-that-does-not-require-re-signing-and-that-preserves-branding-information"></a>逐步解說：手動部署 ClickOnce 應用程式，而無須重新簽署而且會保留商標資訊
 當您建立[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]應用程式並再將它提供給客戶發行並部署，客戶有以往都會需要更新部署資訊清單，並重新簽署資訊清單。 同時，仍然是慣用的方法，在大部分情況下，.NET Framework 3.5 可讓您建立[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]客戶可以部署而不需要重新產生新的部署資訊清單的部署。 如需詳細資訊，請參閱 <<c0> [ 部署 ClickOnce 應用程式，但不重新簽署的測試和生產環境伺服器](../deployment/deploying-clickonce-applications-for-testing-and-production-without-resigning.md)。
@@ -127,7 +127,7 @@ ms.locfileid: "63405845"
 
 13. 選取 **檔案**，**儲存**從功能表中，並儲存應用程式資訊清單。 系統會提示您登入應用程式資訊清單，當您將它儲存。
 
-14. 如果您有儲存為檔案系統上的檔案，請使用**簽章為憑證檔案**選項，然後選取 從檔案系統使用的省略符號 憑證 (**...**) 按鈕。
+14. 如果您有儲存為檔案系統上的檔案，請使用**簽章為憑證檔案**選項，然後選取 從檔案系統使用的省略符號 憑證 ( **...** ) 按鈕。
 
      -或-
 

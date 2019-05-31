@@ -6,17 +6,17 @@ helpviewer_keywords:
 - debug engines, Task class [.NET Framework]
 - Task class [.NET Framework debug engines]
 ms.assetid: 28e47c3b-9323-424a-80ac-6cc3bf19e09b
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6fb65b66bed790a306280a437a1722abea27848a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3bfa171655afd808de4bd86fe0fbdb99531d2ab2
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62864199"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66348421"
 ---
 # <a name="task-class---internal-members"></a>Task 類別-內部成員
 這篇文章描述的內部成員<xref:System.Threading.Tasks.Task?displayProperty=fullName>類別可協助您實作自訂的偵錯工具。 如需此類別的一般資訊，請參閱<xref:System.Threading.Tasks.Task>參考文章。

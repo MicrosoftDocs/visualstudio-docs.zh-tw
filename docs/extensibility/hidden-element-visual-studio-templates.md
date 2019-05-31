@@ -8,17 +8,17 @@ f1_keywords:
 helpviewer_keywords:
 - Hidden element [Visual Studio project template]
 ms.assetid: f37406b0-52e7-4f2c-aacf-bc8d7a4117b3
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c3fdeebabbb3f7a95886fed0a7e2c5eafa4d495b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7c00fa2c9aff8664c637219c59cb174f5a16e655
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62911790"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66341048"
 ---
 # <a name="hidden-element-visual-studio-templates"></a>隱藏的項目 （Visual Studio 範本）
 

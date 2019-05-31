@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugPointerObject::GetBytes method
 ms.assetid: e986c188-87fb-4b51-86e9-ee6a0035bdab
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: d108613c7a557c189a2c42880a5618b42e0bd3b8
-ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.openlocfilehash: 247e1ff4c934ae581c7a0224c8f8cba8d4e9d946
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/24/2019
-ms.locfileid: "66209395"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66308873"
 ---
 # <a name="idebugpointerobjectgetbytes"></a>IDebugPointerObject::GetBytes
 取得指向為一系列的連續位元組的值。

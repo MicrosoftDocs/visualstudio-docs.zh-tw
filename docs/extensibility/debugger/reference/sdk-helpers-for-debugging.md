@@ -9,17 +9,17 @@ helpviewer_keywords:
 - dbgmetric.h
 - metrics [Debugging SDK]
 ms.assetid: 80a52e93-4a04-4ab2-8adc-a7847c2dc20b
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0d57e764158531456bfcdba6d4915eef42aebd3d
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: 74b9047ef6df1e6bf20a5b5a95e40e27ed1b1926
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65460900"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66329218"
 ---
 # <a name="sdk-helpers-for-debugging"></a>適用於偵錯的 SDK 協助程式
 這些函式和宣告是實作偵錯引擎、 運算式評估工具和符號中的提供者的全域 helper 函式C++。
@@ -239,7 +239,7 @@ HRESULT EnumMetricSections(
 > [!NOTE]
 > 大部分的情況下，在 HKEY_LOCAL_MACHINE 機碼會寫入計量。 不過，有時候 HKEY_CURRENT_USER 要目的地的索引鍵。 Dbgmetric.lib 會處理這兩個金鑰。 當取得度量時，它會搜尋 HKEY_CURRENT_USER 先，接著 HKEY_LOCAL_MACHINE。 當它設定計量時，參數會指定要使用哪一個最上層機碼。
 
- *[registry key]*\
+ *[registry key]* \
 
  `Software`\
 
@@ -247,11 +247,11 @@ HRESULT EnumMetricSections(
 
  `VisualStudio`\
 
- *[版本 root]*\
+ *[版本 root]* \
 
- *[計量 root]*\
+ *[計量 root]* \
 
- *[metric type]*\
+ *[metric type]* \
 
  *[metric] = [metric value]*
 
@@ -276,9 +276,9 @@ HRESULT EnumMetricSections(
 
  `Engine`\
 
- *[引擎 guid]*\
+ *[引擎 guid]* \
 
- `CLSID` = *[類別 guid]*
+ `CLSID` =  *[類別 guid]*
 
  *[metric] = [metric value]*
 
@@ -288,9 +288,9 @@ HRESULT EnumMetricSections(
 
  `PortSupplier`\
 
- `0` = *[連接埠供應商 guid]*
+ `0` =  *[連接埠供應商 guid]*
 
- `1` = *[連接埠供應商 guid]*
+ `1` =  *[連接埠供應商 guid]*
 
 |預留位置|描述|
 |-----------------|-----------------|
@@ -299,13 +299,13 @@ HRESULT EnumMetricSections(
 |*[連接埠供應商 guid]*|如果有的話，連接埠供應商的 GUID。 許多偵錯引擎會使用預設連接埠提供者，並因此不會指定他們自己的供應商。 在此情況下，子機碼`PortSupplier`就不會有。|
 
 ### <a name="port-suppliers"></a>連接埠提供者
- 以下是在登錄中的連接埠供應商度量資訊的組織。 `PortSupplier` 為連接埠提供者的度量型別名稱且對應於 *[計量類型]*。
+ 以下是在登錄中的連接埠供應商度量資訊的組織。 `PortSupplier` 為連接埠提供者的度量型別名稱且對應於 *[計量類型]* 。
 
  `PortSupplier`\
 
- *[連接埠供應商 guid]*\
+ *[連接埠供應商 guid]* \
 
- `CLSID` = *[類別 guid]*
+ `CLSID` =  *[類別 guid]*
 
  *[metric] = [metric value]*
 
@@ -317,15 +317,15 @@ HRESULT EnumMetricSections(
 |*[class guid]*|類別會實作此連接埠提供者的 GUID|
 
 ### <a name="symbol-providers"></a>符號提供者
- 以下是在登錄中的符號供應商度量資訊的組織。 `SymbolProvider` 符號提供者的度量型別名稱和對應至 *[計量類型]*。
+ 以下是在登錄中的符號供應商度量資訊的組織。 `SymbolProvider` 符號提供者的度量型別名稱和對應至 *[計量類型]* 。
 
  `SymbolProvider`\
 
- *[符號提供者 guid]*\
+ *[符號提供者 guid]* \
 
  `file`\
 
- `CLSID` = *[類別 guid]*
+ `CLSID` =  *[類別 guid]*
 
  *[metric] = [metric value]*
 
@@ -333,7 +333,7 @@ HRESULT EnumMetricSections(
 
  `metadata`\
 
- `CLSID` = *[類別 guid]*
+ `CLSID` =  *[類別 guid]*
 
  *[metric] = [metric value]*
 
@@ -345,18 +345,18 @@ HRESULT EnumMetricSections(
 |*[class guid]*|類別會實作這個符號提供者的 GUID|
 
 ### <a name="expression-evaluators"></a>運算式評估工具
- 以下是在登錄中的運算式評估工具度量資訊的組織。 `ExpressionEvaluator` 運算式評估工具的計量類型名稱，並對應至 *[計量類型]*。
+ 以下是在登錄中的運算式評估工具度量資訊的組織。 `ExpressionEvaluator` 運算式評估工具的計量類型名稱，並對應至 *[計量類型]* 。
 
 > [!NOTE]
 > 計量類型，如`ExpressionEvaluator`中未定義 dbgmetric.h，因為它會假設所有計量變更運算式評估工具會通過適當的運算式評估工具計量函式 (的版面配置`ExpressionEvaluator`子機碼有點變得複雜，因此詳細資料會隱藏 dbgmetric.lib 內）。
 
  `ExpressionEvaluator`\
 
- *[語言 guid]*\
+ *[語言 guid]* \
 
- *[vendor guid]*\
+ *[vendor guid]* \
 
- `CLSID` = *[類別 guid]*
+ `CLSID` =  *[類別 guid]*
 
  *[metric] = [metric value]*
 
@@ -364,9 +364,9 @@ HRESULT EnumMetricSections(
 
  `Engine`\
 
- `0` = *[偵錯引擎 guid]*
+ `0` =  *[偵錯引擎 guid]*
 
- `1` = *[偵錯引擎 guid]*
+ `1` =  *[偵錯引擎 guid]*
 
 |預留位置|描述|
 |-----------------|-----------------|
@@ -376,11 +376,11 @@ HRESULT EnumMetricSections(
 |*[偵錯引擎 guid]*|此運算式評估工具的運作方式與偵錯引擎的 GUID|
 
 ### <a name="expression-evaluator-extensions"></a>運算式評估工具延伸模組
- 以下是在登錄中的運算式評估工具擴充計量的組織。 `EEExtensions` 是計量的類型名稱的運算式評估工具延伸模組和對應至 *[計量類型]*。
+ 以下是在登錄中的運算式評估工具擴充計量的組織。 `EEExtensions` 是計量的類型名稱的運算式評估工具延伸模組和對應至 *[計量類型]* 。
 
  `EEExtensions`\
 
- *[延伸模組 guid]*\
+ *[延伸模組 guid]* \
 
  *[metric] = [metric value]*
 
@@ -391,21 +391,21 @@ HRESULT EnumMetricSections(
 |*[延伸模組 guid]*|運算式評估工具延伸模組的 GUID|
 
 ### <a name="exceptions"></a>例外狀況
- 以下是在登錄中的例外狀況度量資訊的組織。 `Exception` 例外狀況的度量型別名稱和對應至 *[計量類型]*。
+ 以下是在登錄中的例外狀況度量資訊的組織。 `Exception` 例外狀況的度量型別名稱和對應至 *[計量類型]* 。
 
  `Exception`\
 
- *[偵錯引擎 guid]*\
+ *[偵錯引擎 guid]* \
 
- *[例外狀況類型]*\
+ *[例外狀況類型]* \
 
- *[exception]*\
-
- *[metric] = [metric value]*
+ *[exception]* \
 
  *[metric] = [metric value]*
 
- *[exception]*\
+ *[metric] = [metric value]*
+
+ *[exception]* \
 
  *[metric] = [metric value]*
 

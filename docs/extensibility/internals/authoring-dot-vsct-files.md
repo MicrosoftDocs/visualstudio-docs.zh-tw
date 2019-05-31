@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - VSCT files, manual authoring
 ms.assetid: e9f715dc-12b7-439b-bdf3-f3dc75e62f1c
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 03e0f5a294dea1fda1e2d7c320fa0158de9bbb3a
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: f871cfce2fd3e26895d690b1f51ee38461493810
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63415405"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66315796"
 ---
 # <a name="author-vsct-files"></a>撰寫.vsct 檔案
 本文件說明如何撰寫 *.vsct*將功能表項目、 工具列和其他使用者介面 (UI) 項目新增至 Visual Studio 整合式的開發環境 (IDE) 的檔案。 當您將 UI 項目新增到還沒有 Visual Studio 封裝 (VSPackage) 使用這些步驟 *.vsct*檔案。
@@ -57,7 +57,7 @@ ms.locfileid: "63415405"
 
 2. 如果您的封裝呼叫由 Visual Studio 或其他套件會定義任何命令，新增`UsedCommands`之後的項目`Commands`項目。 填入此項目[UsedCommand](../../extensibility/usedcommand-element.md)每個命令呼叫也就是不屬於您套件的一部分。 設定`guid`並`id`屬性的`UsedCommand`呼叫命令的 GUID 和 ID 值的項目。
 
-   如需如何尋找 [Guid] 和 [Visual Studio 的識別碼命令的詳細資訊，請參閱[Guid 和 Visual Studio 的識別碼命令](../../extensibility/internals/guids-and-ids-of-visual-studio-commands.md)。 若要從其他套件呼叫的命令，使用 GUID 和命令的識別碼中所定義 *.vsct*這些套件的檔案。
+   如需如何尋找 [Guid] 和 Visual Studio 的識別碼命令的詳細資訊，請參閱[Guid 和 Visual Studio 的識別碼命令](../../extensibility/internals/guids-and-ids-of-visual-studio-commands.md)。 若要從其他套件呼叫的命令，使用 GUID 和命令的識別碼中所定義 *.vsct*這些套件的檔案。
 
 ### <a name="declare-ui-elements"></a>宣告 UI 項目
  將所有新的 UI 項目，在宣告`Symbols`一節 *.vsct*檔案。

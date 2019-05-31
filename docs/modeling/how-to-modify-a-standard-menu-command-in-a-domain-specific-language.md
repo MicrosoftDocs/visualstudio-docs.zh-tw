@@ -1,5 +1,5 @@
 ---
-title: HOW TO：使用特定領域語言修改標準功能表命令
+title: 修改 DSL 的標準功能表命令
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,14 +10,14 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8a2e6bf4ffd22c6f4e3c63315a1c4a221f621c08
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 120696fe335245775c6ea7188efc059ae9e71342
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62811381"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66263692"
 ---
-# <a name="how-to-modify-a-standard-menu-command-in-a-domain-specific-language"></a>HOW TO：使用特定領域語言修改標準功能表命令
+# <a name="how-to-modify-a-standard-menu-command-in-a-domain-specific-language"></a>作法：使用特定領域語言修改標準功能表命令
 
 您可以針對 DSL 中自動定義的一些標準命令，修改其行為。 例如，您可以在其中修改**剪下**，以便排除機密資訊。 若要執行這項操作，您可以覆寫命令集類別中的方法。 這些類別是在 DslPackage 專案的 CommandSet.cs 檔中定義，並且衍生自 <xref:Microsoft.VisualStudio.Modeling.Shell.CommandSet>。
 
@@ -55,7 +55,7 @@ ms.locfileid: "62811381"
 
 2. 在  **DslPackage**，建立名為的資料夾**自訂程式碼**。 在此資料夾中，建立新的類別檔案，名為`CommandSet.cs`。
 
-3. 在新檔案中，撰寫具有與產生部分類別相同之命名空間和名稱的部分宣告。 例如：
+3. 在新檔案中，撰寫具有與產生部分類別相同之命名空間和名稱的部分宣告。 例如: 
 
     ```csharp
     using System;

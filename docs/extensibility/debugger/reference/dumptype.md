@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - DUMPTYPE enumeration
 ms.assetid: ea8160db-8732-4056-a1d7-892ef72da71e
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 07525b118d2a9ee27c52c87e68dd078d0a67054c
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 7edb3129733aec29bb5eda64d388024bec4d5ece
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56697126"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66318196"
 ---
 # <a name="dumptype"></a>DUMPTYPE
 指定多少程式的狀態 （例如執行中執行緒的堆疊框架和目前的指令位址），傾印。
@@ -39,10 +42,12 @@ public enum enum_DUMPTYPE {
 };
 ```
 
-## <a name="members"></a>成員
-DUMP_MINIDUMP 指定小、 精簡的傾印。
+## <a name="fields"></a>欄位
+`DUMP_MINIDUMP`\
+指定的小、 精簡的傾印。
 
-DUMP_FULLDUMP 指定大型的完整傾印。
+`DUMP_FULLDUMP`\
+指定的大型的完整傾印。
 
 ## <a name="remarks"></a>備註
 作為引數[WriteDump](../../../extensibility/debugger/reference/idebugprogram2-writedump.md)方法。

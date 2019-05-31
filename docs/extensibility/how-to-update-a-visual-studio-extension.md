@@ -1,5 +1,5 @@
 ---
-title: HOW TO：更新 Visual Studio 擴充功能 |Microsoft Docs
+title: 作法：更新 Visual Studio 擴充功能 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -7,19 +7,19 @@ helpviewer_keywords:
 - update extension
 - new package version
 ms.assetid: 93f79774-7b79-4dd6-94ad-13698f72c257
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4eb438db5fd911ed93f7072902281815633d06a7
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 237a1139a7a314cf99b5edbd8993abefe04592c8
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63415452"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66324864"
 ---
-# <a name="how-to-update-a-visual-studio-extension"></a>HOW TO：更新 Visual Studio 擴充功能
+# <a name="how-to-update-a-visual-studio-extension"></a>作法：更新 Visual Studio 擴充功能
 您也可以使用您的系統上更新 Visual Studio 擴充功能**擴充功能和更新**安裝更新的版本。 如果您建立延伸模組的更新的版本時，您可以藉由在 VSIX 資訊清單中的版本號碼遞增更新它表示。
 
  安裝更新時的連入的擴充功能的 VSIX 資訊清單具有相同`ID`安裝和更新版本為`Version`數目。 如果`Version`號碼都是相同或更低，無法安裝此套件。 如果`ID`值不相符，尚未安裝的套件視為個別的擴充功能。
@@ -28,7 +28,7 @@ ms.locfileid: "63415452"
 
 ## <a name="to-update-an-extension-on-your-system"></a>若要更新您的系統上的擴充功能
 
-1. 在 [工具]  功能表上，按一下 [擴充功能和更新] 。
+1. 在 [工具]  功能表上，按一下 [擴充功能和更新]  。
 
 2. 在左窗格中，按一下**更新**。
 

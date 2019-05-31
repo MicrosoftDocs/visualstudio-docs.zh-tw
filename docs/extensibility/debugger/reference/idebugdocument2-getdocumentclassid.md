@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugDocument2::GetDocumentClassID
 ms.assetid: 111c2b85-ebfa-487f-b896-2ec4a3eac4d1
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 075d29334fd32b6f3351786d084d3c6d1758a782
-ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.openlocfilehash: 51a4ed842a2f65f37abf6f83ac70d6ce03b9a2e8
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/24/2019
-ms.locfileid: "66204844"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66310289"
 ---
 # <a name="idebugdocument2getdocumentclassid"></a>IDebugDocument2::GetDocumentClassID
 取得文件的類別識別項。

@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - text buffer events
 ms.assetid: 9be49e9f-1864-41c2-8a3c-f66895881341
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 85c59ffd5b0289edf3b36fbd2ef7d0a62313af72
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 6851d6f3cbf622794dbf817ec42d941c943add52
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62798891"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66316536"
 ---
 # <a name="text-buffer-events-in-the-legacy-api"></a>在舊版的 API 中的文字緩衝區事件
 文字緩衝區物件會發出數個不同的事件，讓您能夠回應不同的情況。

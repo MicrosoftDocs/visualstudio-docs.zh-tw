@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - source control plug-ins, restrictions on string lengths
 ms.assetid: 877173d2-ca27-43b3-b1f4-8379f7c5e268
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8ade5e9ac188cd6c1b721ed276e0c4e2aff71f32
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: ab797f76ec6f6118fe4f86a410dbfcfe1e61aa04
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63434739"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66334180"
 ---
 # <a name="restrictions-on-string-lengths"></a>字串長度限制
 原始檔控制外掛程式 API 限制各種函式中使用的字串的長度。

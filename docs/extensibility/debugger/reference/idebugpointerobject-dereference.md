@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugPointerObject::Dereference method
 ms.assetid: 196ec2cc-8569-4780-b217-23b24e7f50ca
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 90a5a1f6fca718397654e836f41089b122425f0f
-ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.openlocfilehash: 381c6f392cccb398497204cc5772c5f9a00fd5b0
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/24/2019
-ms.locfileid: "66209373"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66331650"
 ---
 # <a name="idebugpointerobjectdereference"></a>IDebugPointerObject::Dereference
 取得指向的物件。

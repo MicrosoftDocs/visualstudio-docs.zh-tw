@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugCustomViewer::DisplayValue
 ms.assetid: 7a538248-5ced-450e-97cd-13fabe35fb1c
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 8c374cfa79b91d70895f94be4f1c3f28c5ac4c02
-ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.openlocfilehash: 9d6ff987e12e70a9d3dd443cfafc45d2698469b8
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/24/2019
-ms.locfileid: "66205164"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66335696"
 ---
 # <a name="idebugcustomviewerdisplayvalue"></a>IDebugCustomViewer::DisplayValue
 顯示指定的值，會呼叫這個方法。

@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProperty2::SetValueAsReference method
 ms.assetid: 341b1b89-4ab8-4e1c-abe2-fb955df5c6b0
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 5821518a40cb474f17bf1c7fc1ef41326f2bffcb
-ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.openlocfilehash: f9e98465f16f58f734ef6fd58b66494b4aaf0b65
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/24/2019
-ms.locfileid: "66200229"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66314615"
 ---
 # <a name="idebugproperty2setvalueasreference"></a>IDebugProperty2::SetValueAsReference
 設定這個屬性的值，指定參考的值。

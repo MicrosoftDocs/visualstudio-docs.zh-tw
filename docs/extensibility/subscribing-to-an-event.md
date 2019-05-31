@@ -6,17 +6,17 @@ helpviewer_keywords:
 - running document table (RDT), responding to events
 - running document table (RDT), subscribing to events
 ms.assetid: e94a4fea-94df-488e-8560-9538413422bc
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 70b0be3caca70e7a0dbf6f113cb5658169011d7f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5c0466d5b8644ddeae60df24b8b980ee9da0f820
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62432339"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66331688"
 ---
 # <a name="subscribing-to-an-event"></a>訂閱事件
 本逐步解說說明如何建立回應事件而執行的文件資料表 (RDT) 中的工具視窗。 工具視窗裝載使用者控制項，可實作<xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocTableEvents>。 <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable.AdviseRunningDocTableEvents%2A>方法會將介面連接到事件。

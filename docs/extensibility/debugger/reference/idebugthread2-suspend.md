@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugThread2::Suspend
 ms.assetid: 1e20be85-aa12-48de-bb83-0bf0976e99ae
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: b9df2f37a6e8acb9f8e37d2fbd1a379bc4572b39
-ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.openlocfilehash: dc3abcc00d99e82a4af2e3886310772e47127274
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/24/2019
-ms.locfileid: "66199455"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66320002"
 ---
 # <a name="idebugthread2suspend"></a>IDebugThread2::Suspend
 暫止的執行緒。

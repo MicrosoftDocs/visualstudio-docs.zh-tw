@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - GETNAME_TYPE enumeration
 ms.assetid: 2f9f1679-e9e8-4c9c-ac90-aa07bfe69914
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ae68c77e2d6a41adfff6b49e55bbc6df4393fec7
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 1bdcbc4171c8a481ee0c45456ef5600f5150c6d0
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56701715"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66317589"
 ---
 # <a name="getnametype"></a>GETNAME_TYPE
 指定要擷取檔案的名稱類型。
@@ -49,20 +52,27 @@ public enum enum_GETNAME_TYPE {
 };
 ```
 
-## <a name="members"></a>成員
-GN_NAME 指定文件或內容的易記名稱。
+## <a name="fields"></a>欄位
+`GN_NAME`\
+指定的文件或內容的易記名稱。
 
-GN_FILENAME 指定文件或內容的完整路徑。
+`GN_FILENAME`\
+指定的文件或內容的完整路徑。
 
-GN_BASENAME 指定的基底檔案名稱而非文件或內容的完整路徑。
+`GN_BASENAME`\
+指定的基底檔案名稱，而不是文件或內容的完整路徑。
 
-GN_MONIKERNAME moniker 的表單中指定的文件或內容的唯一名稱。
+`GN_MONIKERNAME`\
+Moniker 的表單中指定的文件或內容的唯一名稱。
 
-GN_URL 指定文件或內容的 URL 名稱。
+`GN_URL`\
+指定的文件或內容的 URL 名稱。
 
-如果有的話，GN_TITLE 將指定的文件的標題。
+`GN_TITLE`\
+如果有的話，請指定的文件的標題。
 
-GN_STARTPAGEURL 取得的起始頁面 URL 處理。
+`GN_STARTPAGEURL`\
+取得處理程序的起始頁面 URL。
 
 ## <a name="remarks"></a>備註
 這些值會做為參數傳遞[GetName](../../../extensibility/debugger/reference/idebugdocument2-getname.md)， [GetName](../../../extensibility/debugger/reference/idebugdocumentcontext2-getname.md)，並[GetName](../../../extensibility/debugger/reference/idebugprocess2-getname.md)方法，來指定要傳回名稱的類型。

@@ -6,17 +6,17 @@ helpviewer_keywords:
 - VSPackages, troubleshooting
 - debugging, VSPackages
 ms.assetid: 274673e7-72e7-476f-a263-3411b5b874be
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d89c3181757a0ed95b818ba2e73197511bf06e4d
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: a21c8d547cb2167da018c13e788fe2c95bd504ac
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63434255"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66338020"
 ---
 # <a name="troubleshooting-vspackages"></a>針對 VSPackage 進行疑難排解
 以下是常見的問題，您可能會有的 VSPackage，並解決問題的提示。
@@ -66,7 +66,7 @@ ms.locfileid: "63434255"
 
    1. VSPackage 的 CLSID 的區段中找到封裝的登錄：
 
-        HKLM\Software\Microsoft\Visual Studio\\*\<version>* \Packages
+        HKLM\Software\Microsoft\Visual Studio\\ *\<version>* \Packages
 
    2. 確認 SatelliteDll 子機碼所指定的路徑正確無誤。
 
@@ -76,7 +76,7 @@ ms.locfileid: "63434255"
 
      偵錯很好的起點是建構函式和初始設定方法。 您也可以在您想要評估，例如功能表命令 區域中設定中斷點。 若要啟用中斷點，您必須偵錯工具下執行。
 
-    1. 在 [專案] 功能表上，按一下 [屬性]。
+    1. 在 [專案]  功能表上，按一下 [屬性]  。
 
     2. 在 [**屬性頁**對話方塊中，選取**偵錯**] 索引標籤。
 
@@ -111,7 +111,7 @@ ms.locfileid: "63434255"
 
 1. 針對 managed 程式碼，請確定參考路徑正確無誤。
 
-   1. 在 [專案] 功能表上，按一下 [屬性]。
+   1. 在 [專案]  功能表上，按一下 [屬性]  。
 
    2. 選取 [**參考**索引標籤中**屬性頁**] 對話方塊中，並確定所有路徑都是否正確。 或者，您可以使用**物件瀏覽器**瀏覽參考的物件。
 
@@ -119,7 +119,7 @@ ms.locfileid: "63434255"
 
 2. 對於 unmanaged 程式碼，以找出在 VSPackage 的 CLSID [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] CLSID 登錄節點：
 
-    HKLM\Software\Microsoft\Visual Studio\\*\<version>* \CLSID
+    HKLM\Software\Microsoft\Visual Studio\\ *\<version>* \CLSID
 
    請確定 [InprocServer32] 項目具有 VSPackage dll 的正確路徑。
 

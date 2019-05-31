@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProperty2::GetSize
 ms.assetid: 0deb8ec5-d6fb-4622-bb14-0c46b9459cc6
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 26281ea175936429f1be5ac2620802c9d2cd5aa1
-ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.openlocfilehash: b76a6a563a4a9ecd63c81c897a1ba21b3a977b80
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/24/2019
-ms.locfileid: "66211416"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66314661"
 ---
 # <a name="idebugproperty2getsize"></a>IDebugProperty2::GetSize
 取得大小，以位元組為單位的屬性值。

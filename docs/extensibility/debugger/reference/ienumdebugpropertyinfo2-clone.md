@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IEnumDebugPropertyInfo2::Clone
 ms.assetid: 0ede1667-1071-4aa4-b887-260ea103d724
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 0d292c47d0c9ef6d63bb21e91e79e489a0147f74
-ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.openlocfilehash: a270f0549b24b62a41dfd08d6b3ae70fac87253f
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/24/2019
-ms.locfileid: "66210974"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66316909"
 ---
 # <a name="ienumdebugpropertyinfo2clone"></a>IEnumDebugPropertyInfo2::Clone
 傳回一份目前的列舉，為個別的物件。

@@ -3,17 +3,17 @@ title: 適用於 Visual Studio 的 UX 基本 |Microsoft Docs
 ms.date: 04/26/2017
 ms.topic: conceptual
 ms.assetid: a793cf7a-f230-43ce-88d0-fa5d6f1aa9c7
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2e97aa60a983eef3034eab28f7835edc1abb6734
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 45e4f1389317c67665d1b03e936a33380cb7ecf2
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62951775"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66310801"
 ---
 # <a name="ux-essentials-for-visual-studio"></a>適用於 Visual Studio 的 UX 基本
 
@@ -134,10 +134,10 @@ ms.locfileid: "62951775"
 #### <a name="underlining-used-as-a-group-label-not-a-hyperlink"></a>加上底線做為群組標籤，而不是超連結
  加上底線的文字應該只用於超連結。
 
- **錯誤：**\
+ **錯誤：** \
  ![加底線的文字不是超連結是 Visual Studio 反模式。](../../extensibility/ux-guidelines/media/0102-g_grouplabelincorrect.png "0102 g_GroupLabelIncorrect")<br />加底線的文字不是超連結是 Visual Studio 反模式。
 
- **良好：**\
+ **良好：** \
  ![正確地套用樣式，非超連結文字會顯示未修飾環境字型。](../../extensibility/ux-guidelines/media/0102-h_grouplabelcorrect.png "0102 h_GroupLabelCorrect")<br />正確地套用樣式，非超連結文字會顯示未修飾環境字型。
 
 #### <a name="clicking-on-a-check-box-results-in-a-pop-up-dialog"></a>按一下核取方塊會導致快顯的對話方塊
@@ -163,6 +163,6 @@ ms.locfileid: "62951775"
 #### <a name="using-click-here-for-links"></a>使用 「 按一下這裡 」 的連結
  超連結應該自述性。 它會使用反模式，可使用 「 按一下這裡 」 或任何類似的變體。
 
- **錯誤：**「 按一下這裡的指示來建立新的專案。 」
+ **錯誤：** 「 按一下這裡的指示來建立新的專案。 」
 
- **良好：**「 如何建立新的專案？ 」
+ **良好：** 「 如何建立新的專案？ 」

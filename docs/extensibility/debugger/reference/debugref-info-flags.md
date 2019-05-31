@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - DEBUGREF_INFO_FLAGS enumeration
 ms.assetid: 1b043327-302a-4f6d-b51d-f94f9d7c7f9d
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 50efecb332be0a1cd9d9ff2c92dc97d5096eb44e
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 1adab87ed09ca2ff16d837da084d8cc0b76956fe
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56686287"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66318360"
 ---
 # <a name="debugrefinfoflags"></a>DEBUGREF_INFO_FLAGS
 指定要擷取偵錯參考物件的相關資訊。
@@ -53,24 +56,33 @@ public enum enum_DEBUGREF_INFO_FLAGS {
 };
 ```
 
-## <a name="members"></a>成員
-DEBUGREF_INFO_NAME 初始化/使用`bstrName`欄位在結構中。
+## <a name="fields"></a>欄位
+`DEBUGREF_INFO_NAME`\
+初始化/使用`bstrName`欄位在結構中。
 
-DEBUGREF_INFO_TYPE 初始化/使用`bstrType`欄位在結構中。
+`DEBUGREF_INFO_TYPE`\
+初始化/使用`bstrType`欄位在結構中。
 
-DEBUGREF_INFO_VALUE 初始化/使用`bstrValue`欄位在結構中。
+`DEBUGREF_INFO_VALUE`\
+初始化/使用`bstrValue`欄位在結構中。
 
-DEBUGREF_INFO_ATTRIB 初始化/使用`dwAttrib`欄位在結構中。
+`DEBUGREF_INFO_ATTRIB`\
+初始化/使用`dwAttrib`欄位在結構中。
 
-DEBUGREF_INFO_REFTYPE 初始化/使用`dwRefType`欄位在結構中。
+`DEBUGREF_INFO_REFTYPE`\
+初始化/使用`dwRefType`欄位在結構中。
 
-DEBUGREF_INFO_REF 初始化/使用`pReference`欄位在結構中。
+`DEBUGREF_INFO_REF`\
+初始化/使用`pReference`欄位在結構中。
 
-DEBUGREF_INFO_VALUE_AUTOEXPAND [值] 欄位應該包含自動展開值，如果有的話，這種類型的物件。
+`DEBUGREF_INFO_VALUE_AUTOEXPAND`\
+[值] 欄位應該包含自動展開值，如果有的話，這種類型的物件。
 
-DEBUGREF_INFO_NONE 表示未設定任何旗標。
+`DEBUGREF_INFO_NONE`\
+表示會設定任何旗標。
 
-DEBUGREF_INFO_ALL 表示旗標的遮罩。
+`DEBUGREF_INFO_ALL`\
+表示旗標的遮罩。
 
 ## <a name="remarks"></a>備註
 這些旗標會傳遞給[EnumChildren](../../../extensibility/debugger/reference/idebugreference2-enumchildren.md)並[GetReferenceInfo](../../../extensibility/debugger/reference/idebugreference2-getreferenceinfo.md)方法以指出哪些欄位[DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md)結構會進行初始化。

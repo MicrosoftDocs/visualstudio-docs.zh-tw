@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugMethodField::EnumStaticLocals method
 ms.assetid: e0c522c4-f759-4c32-ae87-7abcb573e77d
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 6ad65d9300c45073aec049d9050a180d49bf5c17
-ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.openlocfilehash: 006f1975c18aa7464531654d9b71fd857953afc9
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/24/2019
-ms.locfileid: "66211971"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66324249"
 ---
 # <a name="idebugmethodfieldenumstaticlocals"></a>IDebugMethodField::EnumStaticLocals
 建立方法的靜態區域變數的列舉值。

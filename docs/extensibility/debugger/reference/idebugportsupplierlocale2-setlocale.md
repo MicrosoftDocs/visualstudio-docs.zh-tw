@@ -5,20 +5,20 @@ ms.topic: reference
 helpviewer_keywords:
 - IDebugPortSupplierLocale2::SetLocale
 ms.assetid: 21e88510-caac-405e-ba45-cb00e19a28bc
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 2e366554858372f9e479f494d2bd419ebb9b2215
-ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.openlocfilehash: 72e662060067f455275465ce4ade7ed824936313
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/24/2019
-ms.locfileid: "66202769"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66353283"
 ---
 # <a name="idebugportsupplierlocale2setlocale"></a>IDebugPortSupplierLocale2::SetLocale
 設定連接埠提供者的地區設定。

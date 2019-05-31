@@ -22,12 +22,12 @@ caps.latest.revision: 35
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 14b573c85a6a19e2f84bcb2a6cae8b0c55768255
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 8ed493089ed215faaddc1009328ec6f8b906534f
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65675584"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66260689"
 ---
 # <a name="deploying-applications-services-and-components"></a>部署應用程式、服務和元件
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -52,6 +52,6 @@ ms.locfileid: "65675584"
 |**部署桌面應用程式：** 藉由使用 ClickOnce 部署，您可以發行至 web 伺服器或網路檔案共用的桌面應用程式。 使用者只要按一下，就可以安裝應用程式。|[ClickOnce 安全性和部署](../deployment/clickonce-security-and-deployment.md)|  
 |**建立安裝程式：** 您可以使用免費的 InstallShield Limited Edition 建立安裝程式。|[InstallShield 限量版](../deployment/installshield-limited-edition.md)|  
 |**維護現有的安裝程式：** 繼續使用舊版本的 Visual Studio 中建立安裝 Visual Studio Installer 專案擴充功能的安裝程式。|[Visual Studio Installer 專案擴充功能](http://blogs.msdn.com/b/visualstudio/archive/2014/04/17/visual-studio-installer-projects-extension.aspx)<br /><br /> 這裡有安裝程式專案的文件：[Visual Studio Installer 部署](https://msdn.microsoft.com/library/2kt85ked\(v=vs.100\).aspx)|  
-|**部署視覺效果C++應用程式：** 您可以部署視覺效果C++使用集中部署、 本機部署或靜態連結的應用程式的執行階段。|[部署原生傳統型應用程式 (Visual C++)](https://msdn.microsoft.com/library/zebw5zk9.aspx)|  
+|**部署視覺效果C++應用程式：** 您可以部署視覺效果C++使用集中部署、 本機部署或靜態連結的應用程式的執行階段。|[部署原生傳統型應用程式 (Visual C++)](/cpp/windows/deploying-native-desktop-applications-visual-cpp)|  
 |**部署用於測試應用程式：** 透過將應用程式部署至虛擬環境，即可啟用更複雜的開發和測試。|[在實驗室環境中測試](https://msdn.microsoft.com/library/14ba54c8-a158-4a6e-b00a-b00ae960feb8)|  
 |**安裝必要條件：** 您可以藉由設定泛型安裝程式 (稱為啟動載入器) 來安裝傳統型應用程式的必要條件元件。|[應用程式部署必要條件](../deployment/application-deployment-prerequisites.md)|

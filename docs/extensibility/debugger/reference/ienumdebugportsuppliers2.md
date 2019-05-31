@@ -7,17 +7,17 @@ f1_keywords:
 helpviewer_keywords:
 - IEnumDebugPortSuppliers2
 ms.assetid: cd0a73dc-dd25-46fd-8c4f-5b011501afeb
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b044eb4f8057f447dacbf4b8e61851530f1f240e
-ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
+ms.openlocfilehash: 39d9d9462fe1951f01927b9180fa8a99aee535be
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65225615"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66326397"
 ---
 # <a name="ienumdebugportsuppliers2"></a>IEnumDebugPortSuppliers2
 此介面列舉連接埠提供者。

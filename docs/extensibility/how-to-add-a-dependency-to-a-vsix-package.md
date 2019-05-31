@@ -1,5 +1,5 @@
 ---
-title: HOW TO：新增 vsix 套見的相依性 |Microsoft Docs
+title: 作法：新增 vsix 套見的相依性 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -8,19 +8,19 @@ helpviewer_keywords:
 - package dll
 - vsix reference
 ms.assetid: 8f20177b-dab9-43a3-b959-81a591b451d6
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1aabb7feaa565f5118904bba3850b153a20445b9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ee6ebeb776e6aa85d5fba200ac357a7375fa2b99
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62911777"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66341052"
 ---
-# <a name="how-to-add-a-dependency-to-a-vsix-package"></a>HOW TO：將相依性加入至 VSIX 封裝
+# <a name="how-to-add-a-dependency-to-a-vsix-package"></a>作法：將相依性加入至 VSIX 封裝
 
 您可以設定安裝中不存在目標電腦上任何相依性的 VSIX 套件部署。 若要達成此目的，包括 VSIX 相依性，以*source.extension.vsixmanifest*檔案。
 

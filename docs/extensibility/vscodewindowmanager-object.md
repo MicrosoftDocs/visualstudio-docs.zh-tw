@@ -8,17 +8,17 @@ helpviewer_keywords:
 - VsCodeWindowManager object
 - views [Visual Studio SDK], VSCodeWindowManager object
 ms.assetid: e313add5-afdb-4d8d-abd1-764e1fc10c44
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3fa291eace866dd7c65aaa8263f036dbe388a475
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d1da94495019d30a8ba3df8bdaa7df0ccf2ae4d6
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62950933"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66322938"
 ---
 # <a name="vscodewindowmanager-object"></a>VSCodeWindowManager 物件
 語言服務會實作程式碼視窗管理員，並負責管理裝飾 （比方說，在下拉式清單列）。 如需詳細資訊，請參閱 <<c0> [ 使用舊版 API 的自訂程式碼 Windows](../extensibility/customizing-code-windows-by-using-the-legacy-api.md)。

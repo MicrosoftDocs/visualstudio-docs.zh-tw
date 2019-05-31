@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugThreadDestroyEvent2::GetExitCode
 ms.assetid: 8bf47a17-f811-4d9b-bcea-7488908830ff
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 967af648647cc1174cc04e30dc3e2deced303cd1
-ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.openlocfilehash: 59d72692eff13262c2135585fee14066ab57c8dc
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/24/2019
-ms.locfileid: "66199448"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66319976"
 ---
 # <a name="idebugthreaddestroyevent2getexitcode"></a>IDebugThreadDestroyEvent2::GetExitCode
 取得執行緒的結束代碼。

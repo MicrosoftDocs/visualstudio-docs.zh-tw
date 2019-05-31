@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - project configurations, output
 ms.assetid: a4517f73-45af-4745-9d7f-9fddf887b636
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a7ac9c63a8524de17541a46f4fecb9e8d9a5ff69
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 5f1fa63a0e3143be6f8133b2a8ae3a57fe6857a9
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63423309"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66328386"
 ---
 # <a name="project-configuration-for-output"></a>輸出的專案組態
 每個設定可以支援一組產生輸出項目，例如可執行檔或資源檔案的建置程序。 這些輸出項目都是私用使用者，並可以放在連結相關的類型的輸出，例如可執行檔 （.exe、.dll、.lib） 和原始程式檔 （.idl，.h 檔案） 的群組。

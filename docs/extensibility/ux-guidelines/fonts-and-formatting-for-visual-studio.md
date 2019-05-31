@@ -3,17 +3,17 @@ title: 字型和格式適用於 Visual Studio |Microsoft Docs
 ms.date: 04/26/2017
 ms.topic: conceptual
 ms.assetid: c3c3df69-83b4-4fd0-b5b1-e18c33f39376
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c0f451ed2ddb6b619e896a664e5592496e4af4de
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f510568c977579fa3e48d57db548040d16dcb574
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62431924"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66335495"
 ---
 # <a name="fonts-and-formatting-for-visual-studio"></a>字型和格式適用於 Visual Studio
 ## <a name="BKMK_TheEnvironmentFont"></a> 環境字型

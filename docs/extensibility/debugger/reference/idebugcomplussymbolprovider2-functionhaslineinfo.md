@@ -6,20 +6,20 @@ helpviewer_keywords:
 - FunctionHasLineInfo
 - IDebugComPlusSymbolProvider2::FunctionHasLineInfo
 ms.assetid: e1b508f1-6521-492f-b110-ab957744a037
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 7325ec83aa4f8bf88f5c85048c0194438acd4ebc
-ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.openlocfilehash: 7a6c64c77e6d8fedaf6e61f397e5dcd2a3ae577f
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/24/2019
-ms.locfileid: "66206028"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66352710"
 ---
 # <a name="idebugcomplussymbolprovider2functionhaslineinfo"></a>IDebugComPlusSymbolProvider2::FunctionHasLineInfo
 判斷指定的方法是否具有行資訊。

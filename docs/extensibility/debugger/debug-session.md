@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - debugging [Debugging SDK], sessions
 ms.assetid: 18d82199-b2d4-47a9-924f-ab64faf60ca1
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5fba342cdddc1b3f5cfed73561ed521a6163f3cd
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 8f539fe73263e6f58b96e63da1f766d372b11e57
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62925933"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66336520"
 ---
 # <a name="debug-session"></a>偵錯工作階段
 偵錯工具就架構而言，*工作階段*:

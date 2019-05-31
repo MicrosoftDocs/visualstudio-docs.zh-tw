@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugObject::IsReadOnly method
 ms.assetid: c460f772-d08a-4b36-81f3-dff6a51a93fd
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 32e3c01e3cf6ccf7eef23f7a357bbd12e739224a
-ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.openlocfilehash: 21c8a21f3cc85247f1cef4131768984f99fff764
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/24/2019
-ms.locfileid: "66211374"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66349943"
 ---
 # <a name="idebugobjectisreadonly"></a>IDebugObject::IsReadOnly
 判斷這個物件是否為唯讀。

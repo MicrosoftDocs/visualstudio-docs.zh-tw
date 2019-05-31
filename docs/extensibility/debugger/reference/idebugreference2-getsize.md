@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugReference2::GetSize
 ms.assetid: a404ddd9-d940-4513-97cd-f52b8ab6a560
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: c0e03c0ba48bcab65b10c1f80ab48ebadd923ff2
-ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.openlocfilehash: 5512a9d07c859dc548f91611bfc8d0c05621c0ff
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/24/2019
-ms.locfileid: "66211895"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66329786"
 ---
 # <a name="idebugreference2getsize"></a>IDebugReference2::GetSize
 取得大小，以位元組為單位，值的參考。 保留供未來使用。

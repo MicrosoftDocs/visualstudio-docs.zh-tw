@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - dwTYPE_KIND enumeration
 ms.assetid: 6ff56b0f-c502-4e6c-9829-bfa05361b783
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2a33bdf1875426898a6db72831bee4d1d7ac1f9a
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 12fe23d53939303be6b7e6a20ff12d2524d71593
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56689248"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66318132"
 ---
 # <a name="dwtypekind"></a>dwTYPE_KIND
 指定如何解譯的型別[IDebugField](../../../extensibility/debugger/reference/idebugfield.md)物件。
@@ -42,12 +45,15 @@ public enum enum_dwTYPE_KIND {
 };
 ```
 
-#### <a name="parameters"></a>參數
-TYPE_KIND_METADATA [TYPE_INFO](../../../extensibility/debugger/reference/type-info.md)聯集應該解譯為[METADATA_TYPE](../../../extensibility/debugger/reference/metadata-type.md)結構。
+## <a name="fields"></a>欄位
+`TYPE_KIND_METADATA`\
+[TYPE_INFO](../../../extensibility/debugger/reference/type-info.md)聯集應該解譯為[METADATA_TYPE](../../../extensibility/debugger/reference/metadata-type.md)結構。
 
-TYPE_KIND_PDB`TYPE_INFO`聯集應該解譯為[PDB_TYPE](../../../extensibility/debugger/reference/pdb-type.md)結構。
+`TYPE_KIND_PDB`\
+`TYPE_INFO`聯集應該解譯為[PDB_TYPE](../../../extensibility/debugger/reference/pdb-type.md)結構。
 
-TYPE_KIND_BUILT`TYPE_INFO`聯集應該解譯為[BUILT_TYPE](../../../extensibility/debugger/reference/built-type.md)結構。
+`TYPE_KIND_BUILT`\
+`TYPE_INFO`聯集應該解譯為[BUILT_TYPE](../../../extensibility/debugger/reference/built-type.md)結構。
 
 ## <a name="remarks"></a>備註
 這個列舉型別的值會出現在`dwKind`欄位[TYPE_INFO](../../../extensibility/debugger/reference/type-info.md)結構，並且用來判斷如何解譯`type`等位成員。 `TYPE_INFO`結構由呼叫[GetTypeInfo](../../../extensibility/debugger/reference/idebugfield-gettypeinfo.md)方法。

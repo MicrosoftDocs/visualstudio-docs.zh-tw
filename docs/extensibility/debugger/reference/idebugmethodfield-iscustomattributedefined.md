@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugMethodField::IsCustomAttributeDefined method
 ms.assetid: 1b5d95a8-cc87-4acb-9e6a-3928f3632b7c
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 0dfbe855f5bdcbfda384e7a9a180fc8f86595b85
-ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.openlocfilehash: f088a3e0fb3cd88d2b5d178ed61441d52c9efe16
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/24/2019
-ms.locfileid: "66211942"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66324131"
 ---
 # <a name="idebugmethodfieldiscustomattributedefined"></a>IDebugMethodField::IsCustomAttributeDefined
 判斷是否已定義特定的自訂屬性。

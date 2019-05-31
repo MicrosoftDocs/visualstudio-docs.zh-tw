@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugExpressionEvaluator::Parse method
 ms.assetid: e6e31b3a-63a7-4293-bcda-267eb78dffb6
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 3504ba7ec668e243b72536b940f0779a5c0b728d
-ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.openlocfilehash: b732369aa5cf5a828dfad512c643f109346abcb7
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/24/2019
-ms.locfileid: "66200878"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66325644"
 ---
 # <a name="idebugexpressionevaluatorparse"></a>IDebugExpressionEvaluator::Parse
 這個方法會將剖析的運算式中的運算式字串。

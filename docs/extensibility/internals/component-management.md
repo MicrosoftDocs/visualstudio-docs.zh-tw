@@ -6,22 +6,22 @@ helpviewer_keywords:
 - installation [Visual Studio SDK], components
 - installation [Visual Studio SDK], file management
 ms.assetid: 029bffa2-6841-4caa-a41a-442467e1aedc
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1ef2edb8996984f943ce3d7ec168eed0692f2493
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 477079cdb0349b2299b5cb829770800a4930958d
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62910375"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66310009"
 ---
 # <a name="component-management"></a>元件管理
 Windows 安裝程式中的工作單位被指 Windows 安裝程式元件 （有時稱為 WICs 或只是元件）。 GUID 會識別每個 WIC，也就是安裝和參考計數來使用 Windows 安裝程式的安裝程式的基本單位。
 
- 雖然您可以使用數個產品建立 VSPackage 的安裝程式，在本文中會假設為使用 Windows 安裝程式 (*.msi*) 檔案。 在建立您的安裝程式時，您必須在這樣隨時都正確的參考計數才會正確地管理檔案部署。 因此，不同版本的產品不會干擾或彼此無法在混合的安裝和解除安裝案例。
+ 雖然您可以使用數個產品建立 VSPackage 的安裝程式，在本文中會假設為使用 Windows 安裝程式 ( *.msi*) 檔案。 在建立您的安裝程式時，您必須在這樣隨時都正確的參考計數才會正確地管理檔案部署。 因此，不同版本的產品不會干擾或彼此無法在混合的安裝和解除安裝案例。
 
  在 Windows 安裝程式中，參考計數，就會發生在元件層級。 您必須仔細組織您的資源 — 檔案、 登錄項目，等等 — 元件。 有組織的其他層級 — 例如模組、 功能和產品，可協助在不同案例中。 如需詳細資訊，請參閱 < [Windows Installer 基本概念](../../extensibility/internals/windows-installer-basics.md)。
 

@@ -6,17 +6,17 @@ helpviewer_keywords:
 - user interfaces, updating
 - commands, updating UI
 ms.assetid: 376e2f56-e7bf-4e62-89f5-3dada84a404b
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d3745cd73e09031b747b6bd17973abb97196ce46
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 2cec2e3a1049f59fa585e4f3a7b0bd608740ccfa
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62798429"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66316352"
 ---
 # <a name="updating-the-user-interface"></a>更新使用者介面
 實作的命令之後，您可以新增程式碼以更新使用者介面與您的新命令的狀態。

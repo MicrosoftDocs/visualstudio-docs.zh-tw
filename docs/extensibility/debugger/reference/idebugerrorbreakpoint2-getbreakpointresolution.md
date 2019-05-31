@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugErrorBreakpoint2::GetBreakpointResolution
 ms.assetid: 1c2324ed-2a11-4e63-8f3a-f420c7a4018b
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 1f576eb1b3177706a529a90af6454238006fa6ba
-ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.openlocfilehash: 88109cce680852549bbbfda9c30cd0f809f9e723
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/24/2019
-ms.locfileid: "66200016"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66344949"
 ---
 # <a name="idebugerrorbreakpoint2getbreakpointresolution"></a>IDebugErrorBreakpoint2::GetBreakpointResolution
 取得描述錯誤的中斷點錯誤解決方式。

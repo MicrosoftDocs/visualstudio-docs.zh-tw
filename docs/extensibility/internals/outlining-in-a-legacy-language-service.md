@@ -7,17 +7,17 @@ helpviewer_keywords:
 - language services [managed package framework], outlining
 - outlining, supporting in language services [managed package framework]
 ms.assetid: 7b5578b4-a20a-4b94-ad4c-98687ac133b9
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7aa01918b8de718fc26c0dc0249615b327150020
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 7af8ab4615cff7462a47dfb11b193660eb62274c
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63422888"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66314873"
 ---
 # <a name="outlining-in-a-legacy-language-service"></a>在舊版語言服務中製作大綱
 大綱，讓能夠摺疊成概觀或外框的是複雜的程式。 例如，在 C# 中的所有方法可以摺都疊成一行，顯示方法簽章。 此外，結構和類別可以摺疊以顯示的結構和類別的名稱。 在單一方法中，複雜的邏輯可以摺疊來顯示整體流程這類顯示陳述式的第一行`foreach`， `if`，和`while`。

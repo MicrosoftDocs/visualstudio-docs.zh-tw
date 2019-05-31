@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - PROCESS_INFO_FIELDS enumeration
 ms.assetid: 0d9cc345-3d3a-44d8-ae15-a67acb97a828
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 28af715c307ebede5fa264c46cd42b85e8868674
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: fe9a1854fe5583d001e1dc156bfad5833fd1c08f
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65457950"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66309449"
 ---
 # <a name="processinfofields"></a>PROCESS_INFO_FIELDS
 指定的擷取處理序的資訊類型。

@@ -18,17 +18,17 @@ caps.latest.revision: 34
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 17b906f721bea6e4183575eced962e9ed830cda1
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 592bf358c24bee146290e8b3a00e28a0870f452d
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65675448"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66263793"
 ---
 # <a name="clickonce-security-and-deployment"></a>ClickOnce 安全性和部署
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 是一種部署技術，可讓您建立自行更新以 Windows 為基礎的應用程式可以安裝並執行最少使用者介入。 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 發佈及更新應用程式部署與 ClickOnce 技術，如果您在開發您的專案與 Visual Basic 和 Visual C# 提供完整支援。 如需部署視覺效果C++應用程式，請參閱[視覺效果的 ClickOnce 部署C++應用程式](https://msdn.microsoft.com/library/9988c546-0936-452c-932f-9c76daa42157)。  
+[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 是一種部署技術，可讓您建立自行更新以 Windows 為基礎的應用程式可以安裝並執行最少使用者介入。 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 發佈及更新應用程式部署與 ClickOnce 技術，如果您在開發您的專案與 Visual Basic 和 Visual C# 提供完整支援。 如需部署視覺效果C++應用程式，請參閱[視覺效果的 ClickOnce 部署C++應用程式](/cpp/windows/clickonce-deployment-for-visual-cpp-applications)。  
   
  [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 部署可克服在部署中的三個主要問題：  
   
@@ -86,7 +86,7 @@ ms.locfileid: "65675448"
 > [!NOTE]
 > **發行精靈**Visual Studio 中可以用來執行這些步驟。  
   
- 除了部署位置外，部署資訊清單也包含更新位置 (網頁或網路檔案共用)，應用程式會在該位置檢查更新的版本。 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] **發行**屬性用來指定時間和頻率的應用程式應該檢查更新。 部署資訊清單中，可以指定更新行為，或它可以呈現為藉由應用程式的使用者介面中的使用者選項[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]Api。 此外，也可以運用 [Publish] (發佈) 屬性將更新設為強制性，或復原為較舊版本。 如需詳細資訊，請參閱[選擇 ClickOnce 更新策略](../deployment/choosing-a-clickonce-update-strategy.md)。  
+ 除了部署位置外，部署資訊清單也包含更新位置 (網頁或網路檔案共用)，應用程式會在該位置檢查更新的版本。 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] **發行**屬性用來指定時間和頻率的應用程式應該檢查更新。 部署資訊清單中，可以指定更新行為，或它可以呈現為藉由應用程式的使用者介面中的使用者選項[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]Api。 此外，也可以運用 [Publish] (發佈)  屬性將更新設為強制性，或復原為較舊版本。 如需詳細資訊，請參閱[選擇 ClickOnce 更新策略](../deployment/choosing-a-clickonce-update-strategy.md)。  
   
 ### <a name="third-party-installers"></a>協力廠商安裝程式  
  您可以自訂您要安裝第三方元件，以及您的應用程式的 ClickOnce 安裝程式。 您必須擁有可轉散發套件 （.exe 或.msi 檔案），並且描述使用非語言相關產品資訊清單和特定語言的封裝資訊清單套件。 如需詳細資訊，請參閱 <<c0> [ 建立啟動載入器套件](../deployment/creating-bootstrapper-packages.md)。  

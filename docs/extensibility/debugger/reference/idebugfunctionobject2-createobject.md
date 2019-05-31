@@ -6,20 +6,20 @@ helpviewer_keywords:
 - IDebugFunctionObject2::CreateObject
 - CreateObject
 ms.assetid: 148de615-941e-4b64-ab11-75b692aae465
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 23380106a1c78ba139beec94698bcfa5090c4b08
-ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.openlocfilehash: 87d1c2cd71b57136e26a2bc30004547dc4b8dee5
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/24/2019
-ms.locfileid: "66200748"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66313417"
 ---
 # <a name="idebugfunctionobject2createobject"></a>IDebugFunctionObject2::CreateObject
 建立會使用指定評估旗標設定和逾時值的建構函式的物件。

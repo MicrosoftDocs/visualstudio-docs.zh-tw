@@ -6,20 +6,20 @@ helpviewer_keywords:
 - IDebugComPlusSymbolProvider2::IsAddressSequencePoint
 - IsAddressSequencePoint
 ms.assetid: 89b27c57-5295-428b-8229-a402500d8cd3
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: e2ebf5c3a27f29b580088b891b3e0d4260aba447
-ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.openlocfilehash: e6531bbb3d375eea30c6e863cdef905c82aa33ef
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/24/2019
-ms.locfileid: "66205924"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66334696"
 ---
 # <a name="idebugcomplussymbolprovider2isaddresssequencepoint"></a>IDebugComPlusSymbolProvider2::IsAddressSequencePoint
 判斷指定的偵錯位址為序列點。

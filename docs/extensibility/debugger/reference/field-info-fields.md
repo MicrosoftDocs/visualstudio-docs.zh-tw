@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - FIELD_INFO_FIELDS enumeration
 ms.assetid: a69487d2-e701-4165-804a-8a011df9a3bd
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9614d3b99df71c9bfa8328478348385472f1a8fa
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 01853df78bfe731ea4b7159f7b3ebe352f3c5eaa
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56710002"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66337676"
 ---
 # <a name="fieldinfofields"></a>FIELD_INFO_FIELDS
 指定要擷取其相關資訊[IDebugField](../../../extensibility/debugger/reference/idebugfield.md)物件。
@@ -47,14 +50,18 @@ public enum enum_FIELD_INFO_FIELDS {
 };
 ```
 
-## <a name="members"></a>成員
-初始化/使用 FIF_FULLNAME`bstrFullName`欄位中[FIELD_INFO](../../../extensibility/debugger/reference/field-info.md)結構。
+## <a name="fields"></a>欄位
+`FIF_FULLNAME`\
+初始化/使用`bstrFullName`欄位中[FIELD_INFO](../../../extensibility/debugger/reference/field-info.md)結構。
 
-初始化/使用 FIF_NAME`bstrName`欄位中`FIELD_INFO`結構。
+`FIF_NAME`\
+初始化/使用`bstrName`欄位中`FIELD_INFO`結構。
 
-初始化/使用 FIF_TYPE`bstrType`欄位中`FIELD_INFO`結構。
+`FIF_TYPE`\
+初始化/使用`bstrType`欄位中`FIELD_INFO`結構。
 
-初始化/使用 FIF_MODIFIERS`bstrModifiers`欄位中`FIELD_INFO`結構。
+`FIF_MODIFIERS`\
+初始化/使用`bstrModifiers`欄位中`FIELD_INFO`結構。
 
 ## <a name="remarks"></a>備註
 這些值也會傳遞做為引數[GetInfo](../../../extensibility/debugger/reference/idebugfield-getinfo.md)方法，以指定的哪些欄位[FIELD_INFO](../../../extensibility/debugger/reference/field-info.md)結構會進行初始化。

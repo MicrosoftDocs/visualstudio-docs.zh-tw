@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - verbs, setting default
 ms.assetid: 9b6df3bc-d15c-4a5d-9015-948a806193b7
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f6cd0ac349d332f7e07d4f0ce6e5567cb5deb63c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b5d389ea97c9a77fe859a4029e4447adf76624e3
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62907249"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66340661"
 ---
 # <a name="manage-side-by-side-file-associations"></a>管理並排顯示檔案關聯
 

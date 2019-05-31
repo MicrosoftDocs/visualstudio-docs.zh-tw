@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IPropertyProxyEESide::ResolveAssemblyRef
 ms.assetid: 662ca0a6-dad0-4c00-a718-bb3bbc5bd9da
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 68efedbf9e8fa19025c7e7f1e47ed70cc1e9d1cc
-ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.openlocfilehash: 3d2fd21b39e171238319c857ad0384db1d7635d7
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/24/2019
-ms.locfileid: "66198708"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66353451"
 ---
 # <a name="ipropertyproxyeesideresolveassemblyref"></a>IPropertyProxyEESide::ResolveAssemblyRef
 判斷指定的 managed 組件參考的位置。

@@ -5,17 +5,17 @@ ms.topic: reference
 helpviewer_keywords:
 - IDebugDynamicFieldCOMPlus interface
 ms.assetid: c3a25f27-327a-4bdb-b026-27d436ddcd0c
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 699442210d0067d5c3a5c83ad957f83501b4d334
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 824498f3d7657bcc5984d31a1abaa4e97c4a9a7d
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62921032"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66330194"
 ---
 # <a name="idebugdynamicfieldcomplus"></a>IDebugDynamicFieldCOMPlus
 代表動態欄位[IDebugBinder](../../../extensibility/debugger/reference/idebugbinder.md)物件。

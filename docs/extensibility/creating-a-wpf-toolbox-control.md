@@ -7,17 +7,17 @@ helpviewer_keywords:
 - toolbox
 - wpf
 ms.assetid: 9cc34db9-b0d1-4951-a02f-7537fbbb51ad
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 811c87f73d1122b3e97ffdef9b4d3f6c044ce941
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: fc124c767ac9a84e62c17fb868e1dc114642f884
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62926415"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66349036"
 ---
 # <a name="create-a-wpf-toolbox-control"></a>建立 WPF 工具箱控制項
 
@@ -31,7 +31,7 @@ ms.locfileid: "62926415"
 
 1. 建立 VSIX 專案，名為`MyToolboxControl`。 您可以找到在 VSIX 專案範本**新的專案**藉由搜尋 「 vsix 」 的對話方塊。
 
-2. 當專案開啟時，新增**WPF 工具箱控制項**名為的項目範本`MyToolboxControl`。 在 **方案總管**，以滑鼠右鍵按一下專案節點，然後選取**新增** > **新項目**。 在 **加入新項目**對話方塊中，移至**Visual C#** > **擴充性**，然後選取**WPF 工具箱控制項**。 在 **名稱**視窗的底部欄位中，將命令的檔案名稱變更為*MyToolboxControl.cs*。
+2. 當專案開啟時，新增**WPF 工具箱控制項**名為的項目範本`MyToolboxControl`。 在 **方案總管**，以滑鼠右鍵按一下專案節點，然後選取**新增** > **新項目**。 在 **加入新項目**對話方塊中，移至**Visual C#**  > **擴充性**，然後選取**WPF 工具箱控制項**。 在 **名稱**視窗的底部欄位中，將命令的檔案名稱變更為*MyToolboxControl.cs*。
 
     方案現在包含使用者控制項、 `ProvideToolboxControlAttribute` <xref:Microsoft.VisualStudio.Shell.RegistrationAttribute> ，將控制項加入至**工具箱**，和**Microsoft.VisualStudio.ToolboxControl**資產的 VSIX 資訊清單中的項目 部署。
 

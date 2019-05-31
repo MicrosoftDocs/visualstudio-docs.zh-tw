@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugPort2::GetPortSupplier
 ms.assetid: 3e2431b0-0e19-450d-8e1d-d7c314c8f872
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: b0e9ac6654748e05781db6967b93e3d3b4068d61
-ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.openlocfilehash: 00579205a2e97d69f3a4305e09fac2146bb78d37
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/24/2019
-ms.locfileid: "66209125"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66326796"
 ---
 # <a name="idebugport2getprocess"></a>IDebugPort2::GetProcess
 取得指定的連接埠上執行的處理序。

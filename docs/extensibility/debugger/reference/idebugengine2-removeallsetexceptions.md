@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugEngine2::RemoveAllSetExceptions
 ms.assetid: 165fbe89-802d-4d99-85ca-c10fd6cccc09
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 7ecb0935d0589a8473a256650dde39c297d87c0a
-ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.openlocfilehash: 17063a2c503535bc20b61ba8d9914fc54005cccc
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/24/2019
-ms.locfileid: "66207632"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66352608"
 ---
 # <a name="idebugengine2removeallsetexceptions"></a>IDebugEngine2::RemoveAllSetExceptions
 移除 IDE 已設定特定的執行階段架構或語言的例外狀況的清單。

@@ -8,17 +8,17 @@ f1_keywords:
 helpviewer_keywords:
 - DefaultName element [Visual Studio project templates]
 ms.assetid: 0ff056c8-b9d2-4747-9308-92adf1811491
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: bc859155afcde0b72b8898b2ea37c098f7458e53
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1dbb720bf04c36b2d9f018be5418a25088e259f4
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62864186"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66348159"
 ---
 # <a name="defaultname-element-visual-studio-templates"></a>DefaultName 項目 （Visual Studio 範本）
 建立時，請指定 Visual Studio 專案系統會產生的專案或項目的名稱。

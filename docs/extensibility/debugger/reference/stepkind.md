@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - STEPKIND enumeration
 ms.assetid: d3d8cf76-24bf-455e-803e-0e3e28f0b262
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: fa9c1805c7eaba480cd46ebc6e73ee370e3cbb22
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: 7adf835cd3809eeb3d4db664cf5febcfa2a0597b
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65460777"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66329162"
 ---
 # <a name="stepkind"></a>STEPKIND
 指定用於逐步執行步驟種類。

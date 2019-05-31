@@ -6,17 +6,17 @@ helpviewer_keywords:
 - designers [Visual Studio SDK], initializing
 - designers [Visual Studio SDK], configuring metadata
 ms.assetid: f7fe9a7e-f669-4642-ad5d-186b2e6e6ec9
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4ed1852780e8045f298ed30f10ace5d971776294
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3084561be779eba73aa21ba7f23f7f5265bfd5b3
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62864081"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66348133"
 ---
 # <a name="designer-initialization-and-metadata-configuration"></a>設計工具的初始設定和中繼資料組態
 

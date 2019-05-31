@@ -3,17 +3,17 @@ title: 什麼&#39;Visual Studio 2015 SDK 的新功能 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: c64aac80-a411-463f-b7bd-8b7607a52ece
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4d0136c1e2f27e3053733b32d536e86684f62c39
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: fc514f9d23f02b6f9f4e7c936a443ed56b968d46
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63444930"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66350839"
 ---
 # <a name="what39s-new-in-the-visual-studio-2015-sdk"></a>什麼&#39;的新功能 Visual Studio 2015 SDK
 Visual Studio SDK for Visual Studio 2015 中，更新，Visual Studio 2015 和 Visual Studio 2017 具有下列全新和更新功能。

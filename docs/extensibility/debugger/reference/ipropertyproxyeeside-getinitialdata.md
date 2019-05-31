@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IPropertyProxyEESide::GetInitialData
 ms.assetid: 36cceb19-2604-4ef9-b42b-5dd30cbe24b1
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 395f3b40f94f4e04ec792c48115c1aa23b8670fd
-ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.openlocfilehash: ada42317b1ddf40882b2ba0820ea4daa97c89ecc
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/24/2019
-ms.locfileid: "66198843"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66353428"
 ---
 # <a name="ipropertyproxyeesidegetinitialdata"></a>IPropertyProxyEESide::GetInitialData
 傳回此物件的初始資料。

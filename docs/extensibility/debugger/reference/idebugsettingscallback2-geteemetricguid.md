@@ -5,20 +5,20 @@ ms.topic: reference
 helpviewer_keywords:
 - IDebugSettingsCallback2::GetEEMetricGuid
 ms.assetid: 3d70c19a-595d-44f1-a7b3-a0cf8f15e371
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: d8829afadbd2f02b9b87f2beb84088aeeb447e66
-ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.openlocfilehash: ca64245a4f0ce3436dce3e5623099b0d82669676
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/24/2019
-ms.locfileid: "66212120"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66322095"
 ---
 # <a name="idebugsettingscallback2geteemetricguid"></a>IDebugSettingsCallback2::GetEEMetricGuid
 擷取指定其名稱的運算式評估工具計量的唯一識別碼。

@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProgramEngines2::EnumPossibleEngines
 ms.assetid: 993d70a4-f6a5-4e47-a603-0b162b9fde00
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: d226650592881e9e7f87a5fbf5c700dfd7d817cb
-ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.openlocfilehash: 532486c66b6feb5c397b9167e2b1cd6197513fa8
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/24/2019
-ms.locfileid: "66211153"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66343389"
 ---
 # <a name="idebugprogramengines2enumpossibleengines"></a>IDebugProgramEngines2::EnumPossibleEngines
 傳回所有可能的偵錯引擎 (DE) 可以偵錯此程式的 Guid。

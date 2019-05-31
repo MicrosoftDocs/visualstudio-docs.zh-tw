@@ -6,20 +6,20 @@ helpviewer_keywords:
 - IEEVisualizerService::GetValueDisplayStringCount
 - GetValueDisplayStringCount
 ms.assetid: d683a833-fbfb-4042-84df-6905124a268a
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: cbd7bd7655769668ce2a279150f444fd196235fb
-ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.openlocfilehash: 20e09dad1d87df646d1dc8ef7509842b49a8cdaa
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/24/2019
-ms.locfileid: "66212605"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66308927"
 ---
 # <a name="ieevisualizerservicegetvaluedisplaystringcount"></a>IEEVisualizerService::GetValueDisplayStringCount
 擷取值的字串，以顯示指定的屬性或欄位的數目。

@@ -5,19 +5,19 @@ ms.topic: conceptual
 helpviewer_keywords:
 - tool windows, registering
 ms.assetid: c4bb8add-7148-49e4-a377-01d059fd5524
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: adb79fec233171a0d20e817f9675aaab8e7228f8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1b74081f474e85b97f46db5250daf042dbd6b917
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62798844"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66316385"
 ---
-# <a name="tool-windows-in-the-registry"></a>在登錄中的工具 Windows
+# <a name="tool-windows-in-the-registry"></a>登錄中的工具視窗
 提供的工具視窗的 Vspackage 必須向[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]做為工具視窗提供者。 使用 Visual Studio Package 範本所建立的工具視窗會依預設此進行。 工具視窗提供者都有系統的登錄機碼指定可見性屬性，例如工具視窗的預設大小和位置，做為工具視窗窗格中，並停駐樣式的視窗的 GUID。
 
  在開發期間，受管理的工具視窗提供者會透過將屬性加入至原始程式碼，並在產生的組件上執行 RegPkg.exe 公用程式註冊工具視窗。 如需詳細資訊，請參閱 <<c0> [ 註冊的工具視窗](../extensibility/registering-a-tool-window.md)。

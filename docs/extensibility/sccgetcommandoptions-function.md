@@ -7,17 +7,17 @@ f1_keywords:
 helpviewer_keywords:
 - SccGetCommandOptions function
 ms.assetid: bbe4aa4e-b4b0-403e-b7a0-5dd6eb24e5a9
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c9685d96c14f3519653025ab1554f1e9e7587e0b
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 13e8bbae6ee16eb81fdb29f526a1f41e905fa504
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63434636"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66351889"
 ---
 # <a name="sccgetcommandoptions-function"></a>SccGetCommandOptions 函式
 此函數會提示使用者提供針對特定命令的進階選項。

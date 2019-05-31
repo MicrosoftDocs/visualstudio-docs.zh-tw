@@ -1,5 +1,5 @@
 ---
-title: 伺服器和 ClickOnce 部署中的用戶端組態問題 |Microsoft Docs
+title: ClickOnce 部署中的伺服器/用戶端組態問題
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5be4e6546d5900fbd3274ab1eb8d55622fb2c58b
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 49ff55e2a261e86ec5aae09573d6ac40c74c0091
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63406777"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66263468"
 ---
 # <a name="server-and-client-configuration-issues-in-clickonce-deployments"></a>ClickOnce 部署中的伺服器和用戶端組態問題
 如果您在 Windows Server 上使用 Internet Information Services (IIS)，而且您的部署包含 Windows 無法辨識的檔案類型，例如 Microsoft Word 檔案，IIS 將會拒絕傳送該檔案中，與您的部署將不會成功。
@@ -128,7 +128,7 @@ ms.locfileid: "63406777"
 ## <a name="http-compression-issues"></a>HTTP 壓縮的問題
  使用[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]，您可以執行使用 HTTP 壓縮的下載、 使用 GZIP 演算法來壓縮資料流，再將資料流傳送至用戶端的 Web 伺服器技術。 用戶端 — 在此情況下， [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]— 解壓縮資料流之前讀取檔案。
 
- 如果您使用 IIS，您可以輕鬆地啟用 HTTP 壓縮。 不過，當您啟用 HTTP 壓縮，它才會啟用為特定檔案類型，也就是，HTML 和文字的檔案。 若要啟用壓縮的組件 (*.dll*)，XML (*.xml*)，部署資訊清單 (*.application*)，和應用程式資訊清單 (*.manifest*)，您必須將這些檔案類型清單的 IIS 壓縮類型。 直到您將檔案類型新增至您的部署時，只有 「 文字 」 和 「 HTML 檔案將會壓縮。
+ 如果您使用 IIS，您可以輕鬆地啟用 HTTP 壓縮。 不過，當您啟用 HTTP 壓縮，它才會啟用為特定檔案類型，也就是，HTML 和文字的檔案。 若要啟用壓縮的組件 ( *.dll*)，XML ( *.xml*)，部署資訊清單 ( *.application*)，和應用程式資訊清單 ( *.manifest*)，您必須將這些檔案類型清單的 IIS 壓縮類型。 直到您將檔案類型新增至您的部署時，只有 「 文字 」 和 「 HTML 檔案將會壓縮。
 
  如需 iis 的詳細指示，請參閱[如何指定其他的文件類型的 HTTP 壓縮](http://go.microsoft.com/fwlink/?LinkId=178459)。
 

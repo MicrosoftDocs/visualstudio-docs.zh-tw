@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - link keystrokes to commands
 ms.assetid: cf6cc6c6-5a65-4f90-8f14-663decf74672
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0e8d4acb5bc43a174187fa74714a9ff24ef0a67c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5707e83545d2008f8e8ec042ea61208220887204
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62964478"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66318506"
 ---
 # <a name="walkthrough-use-a-shortcut-key-with-an-editor-extension"></a>逐步解說：編輯器擴充功能搭配使用攠摝坫
 您可以在您的編輯器延伸模組中回應快速鍵。 下列逐步解說會示範如何使用快速鍵將文字檢視的檢視裝飾。 本逐步解說根據檢視區 adornment 編輯器範本，並可讓您使用新增 adornment + 字元。
@@ -108,7 +108,7 @@ public AdornmentLayerDefinition editorAdornmentLayer;
     }
     ```
 
-7. 實作`Exec()`方法，因此它會加入至檢視的紫色方塊如果加號 (**+**) 輸入字元。
+7. 實作`Exec()`方法，因此它會加入至檢視的紫色方塊如果加號 ( **+** ) 輸入字元。
 
     ```csharp
     int IOleCommandTarget.Exec(ref Guid pguidCmdGroup, uint nCmdID, uint nCmdexecopt, IntPtr pvaIn, IntPtr pvaOut)
@@ -237,7 +237,7 @@ public AdornmentLayerDefinition editorAdornmentLayer;
    }
    ```
 
-6. 實作`ExecuteCommand()`方法，因此它會加入至檢視的紫色方塊如果加號 (**+**) 輸入字元。
+6. 實作`ExecuteCommand()`方法，因此它會加入至檢視的紫色方塊如果加號 ( **+** ) 輸入字元。
 
    ```csharp
    public bool ExecuteCommand(TypeCharCommandArgs args, CommandExecutionContext executionContext)
@@ -322,6 +322,6 @@ private void CreateVisuals(ITextViewLine line)
 
 1. 建置 KeyBindingTest 方案，並在實驗執行個體中執行它。
 
-2. 建立或開啟文字檔案。 輸入一些文字包含字元 'a'，然後輸入**+** 文字檢視中的任何位置。
+2. 建立或開啟文字檔案。 輸入一些文字包含字元 'a'，然後輸入 **+** 文字檢視中的任何位置。
 
      紫色的平方應該會出現在檔案中的每個 'a' 字元。

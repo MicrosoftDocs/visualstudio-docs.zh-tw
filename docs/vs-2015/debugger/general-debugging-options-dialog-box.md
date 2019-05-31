@@ -22,12 +22,12 @@ caps.latest.revision: 50
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 2dd7d3f41790fac7a37fc3a98d728757f5bad967
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 47db517bfb75d81785e910d1dd166ac83ddb2fcb
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65704682"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66261663"
 ---
 # <a name="general-debugging-options-dialog-box"></a>選項對話方塊、偵錯、一般
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,7 +35,7 @@ ms.locfileid: "65704682"
 **工具 / 選項 / 偵錯 / 一般**頁面可讓您設定下列選項：  
   
  **刪除所有中斷點時先詢問**  
- 完成 [刪除所有中斷點] 命令之前需要確認。  
+ 完成 [刪除所有中斷點]  命令之前需要確認。  
   
  **如果其中一個處理序中斷，就，中斷所有處理序**  
  發生中斷時，同時中斷偵錯工具附加至的所有處理序。  
@@ -52,7 +52,7 @@ ms.locfileid: "65704682"
  在 2) 和 3) 中的例外狀況有時會被 `mscorlib` 中的 Managed 程式碼攔截，而非被 Common Language Runtime 攔截。 這個選項不會影響被 `mscorlib` 攔截之例外狀況的中斷。  
   
  **啟用位址層級偵錯**  
- 在位址層級啟用進階偵錯功能 ([反組譯碼] 視窗、[暫存器] 視窗和位址中斷點)。  
+ 在位址層級啟用進階偵錯功能 ([反組譯碼]  視窗、[暫存器]  視窗和位址中斷點)。  
   
  **顯示反組譯碼來源不是已可用**  
  會自動顯示**反組譯碼**視窗中，當您嘗試偵錯原始程式碼的程式碼是無法使用。  
@@ -64,7 +64,7 @@ ms.locfileid: "65704682"
  僅適用於 Managed 程式碼。 Managed 例外狀況會開啟例外狀況助理對話方塊。  請參閱[例外狀況助理](https://msdn.microsoft.com/library/992892ac-9d52-44cc-bf09-b44bfc5befeb)。  
   
  **回溯呼叫堆疊上未處理例外狀況**  
- 導致 [呼叫堆疊] 視窗將呼叫堆疊復原到無法處理的例外狀況發生之前。  
+ 導致 [呼叫堆疊]  視窗將呼叫堆疊復原到無法處理的例外狀況發生之前。  
   
  **啟用 Just My Code**  
  偵錯工具會隨即顯示且僅逐步執行使用者程式碼 ("My Code")，並忽略系統程式碼和其他已最佳化或沒有偵錯符號的程式碼。  
@@ -82,7 +82,7 @@ ms.locfileid: "65704682"
  讓偵錯工具無法逐步執行 Managed 程式碼中的屬性和運算子。  
   
  **啟用屬性評估及其他隱含函式呼叫**  
- 開啟變數視窗和 [快速監看式] 對話方塊中的屬性自動評估與隱含函式呼叫。  
+ 開啟變數視窗和 [快速監看式]  對話方塊中的屬性自動評估與隱含函式呼叫。  
   
  **在變數視窗 （C# 和僅限 JavaScript） 中的物件上呼叫字串轉換函式**  
  在評估變數視窗中的物件時，執行隱含的字串轉換呼叫。 因此，該結果會顯示為字串，而非類型名稱。 只適用於偵錯 C# 程式碼時。 DebuggerDisplay 屬性可能會覆寫此設定 (請參閱[使用 DebuggerDisplay 屬性](../debugger/using-the-debuggerdisplay-attribute.md))。  
@@ -106,7 +106,7 @@ ms.locfileid: "65704682"
  告知偵錯工具驗證原始程式檔是否符合用來建置正在偵錯之可執行檔的原始程式碼版本。 如果版本不符，將提示您尋找相符的原始程式檔。 如果找不到相符的原始程式檔，偵錯期間將不會顯示原始程式碼。  
   
  **將所有輸出視窗文字重新都導向到即時運算視窗**  
- 將通常會出現在 [輸出] 視窗的所有偵錯工具訊息，改成傳送到 [即時運算] 視窗。  
+ 將通常會出現在 [輸出]  視窗的所有偵錯工具訊息，改成傳送到 [即時運算]  視窗。  
   
  **變數視窗中顯示物件的原始結構**  
  關閉所有物件結構檢視自訂。 如需有關檢視自訂的詳細資訊，請參閱[建立受管理物件的自訂檢視](../debugger/create-custom-views-of-dot-managed-objects.md)。  
@@ -126,7 +126,7 @@ ms.locfileid: "65704682"
  若您想知道 dll 匯出表中可使用的符號，請使用 `dumpbin /exports`。 這些符號適用於任何 32 位元系統 dll。 讀取 `dumpbin /exports` 輸出時，您可以看到確實的函式名稱，包含非英數字元。 這對設定函式的中斷點來說很有幫助。 dll 匯出表中的函式名稱在偵錯工具中的其他位置可能會顯示為已被截斷。 這些呼叫都按呼叫順序列出，目前的函式 (巢狀最深處) 列在頂端。 如需詳細資訊，請參閱 [dumpbin /exports](https://msdn.microsoft.com/library/2971ab7e-4ee6-478b-9c85-cda42a4ce1bf)。  
   
  **顯示平行堆疊圖表的由下往上**  
- 控制堆疊在 [平行堆疊] 視窗中顯示的方向。  
+ 控制堆疊在 [平行堆疊]  視窗中顯示的方向。  
   
  **如果寫入的資料未變更值，請忽略 GPU 記憶體存取例外狀況**  
  如果資料沒有變更，請忽略偵錯期間偵測到的競爭條件。 如需詳細資訊，請參閱 <<c0> [ 偵錯 GPU 程式碼](../debugger/debugging-gpu-code.md)。  
@@ -158,13 +158,13 @@ ms.locfileid: "65704682"
   當您開始偵錯 (F5) 支援的專案類型時，即時視覺化樹狀結構和即時屬性瀏覽視窗會隨即出現。 如需詳細資訊，請參閱 <<c0> [ 偵錯時檢查 XAML 屬性](../debugger/inspect-xaml-properties-while-debugging.md)。  
   
   **預覽選取的元素，在 即時視覺化樹狀結構**  
-  在 [即時視覺化樹狀] 視窗中，也會選取其內容已被選取的 XAML 元素。  
+  在 [即時視覺化樹狀]  視窗中，也會選取其內容已被選取的 XAML 元素。  
   
   **在應用程式中顯示執行階段工具**  
   顯示**即時視覺化樹狀結構**在主視窗的 XAML 應用程式進行偵錯工具列中的命令。 在 Visual Studio 2015 Update 2 中引進了此選項。  
   
   **偵錯時啟用診斷工具**  
-  [診斷工具] 視窗會在偵錯期間出現。 如需詳細資訊，請參閱 <<c0> [ 偵錯工具整合程式碼剖析](https://msdn.microsoft.com/library/a1f40370-7b61-42c2-afc4-0e13eba98859)。  
+  [診斷工具]  視窗會在偵錯期間出現。 如需詳細資訊，請參閱 <<c0> [ 偵錯工具整合程式碼剖析](/visualstudio/profiling/running-profiling-tools-with-or-without-the-debugger)。  
   
   **偵錯時顯示經歷時間 PerfTip**  
   在您偵錯時，[程式碼] 視窗中會顯示指定之方法呼叫的已耗用時間。  

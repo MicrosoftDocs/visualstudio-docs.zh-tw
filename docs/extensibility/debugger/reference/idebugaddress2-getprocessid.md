@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugAddress2::GetProcessID method
 ms.assetid: 2c18889d-074a-4b95-87b4-bf1a067f44ed
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: a12be8b3999639c69d479412e673b0e049629172
-ms.sourcegitcommit: 77b4ca625674658d5c5766e684fa0e2a07cad4da
+ms.openlocfilehash: f363ba75d21b147eee6ad39276b949c703e932ee
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/14/2019
-ms.locfileid: "65615146"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66324468"
 ---
 # <a name="idebugaddress2getprocessid"></a>IDebugAddress2::GetProcessID
 擷取擁有這所代表之物件的處理序的識別碼[IDebugAddress2](../../../extensibility/debugger/reference/idebugaddress2.md)介面。

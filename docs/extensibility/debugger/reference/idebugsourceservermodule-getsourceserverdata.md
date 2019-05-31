@@ -5,20 +5,20 @@ ms.topic: reference
 helpviewer_keywords:
 - IDebugSourceServerModule::GetSourceServerData
 ms.assetid: f15d86aa-1bd9-4b16-a64a-21b01c27db2e
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 73b5dd57a9e4c4de917e0fca744388b02345f0bb
-ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.openlocfilehash: e24fb48014d8a336e9d46ceb8471e2efe126de1f
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/24/2019
-ms.locfileid: "66208755"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66321887"
 ---
 # <a name="idebugsourceservermodulegetsourceserverdata"></a>IDebugSourceServerModule::GetSourceServerData
 擷取來源伺服器資訊的陣列。

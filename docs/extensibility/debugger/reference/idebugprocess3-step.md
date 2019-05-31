@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProcess3::Step
 ms.assetid: 6ad9094c-27cc-4927-8a7c-1b4d97b2e436
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 24adde5d1c1a89949861481a3d370219875c2eb1
-ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.openlocfilehash: dc3ffecf5a2760077c0a5da4f4508163a48ca1a4
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/24/2019
-ms.locfileid: "66210946"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66313885"
 ---
 # <a name="idebugprocess3step"></a>IDebugProcess3::Step
 讓逐步一指令或陳述式的處理序。

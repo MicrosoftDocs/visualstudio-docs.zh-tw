@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IEnumDebugThreads2::Reset
 ms.assetid: 88980d9a-c4d6-4de4-a9ab-fb56fa71394a
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: d0eef830808f413fe6a52239ddf50625dcaabc29
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: be3113c1e8a42b652e1ba55899d75cc547526dc9
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65461149"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66350812"
 ---
 # <a name="ienumdebugthreads2reset"></a>IEnumDebugThreads2::Reset
 將列舉重設第一個項目。

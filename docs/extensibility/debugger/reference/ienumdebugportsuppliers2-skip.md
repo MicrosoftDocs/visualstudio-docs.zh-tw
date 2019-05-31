@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IEnumDebugPortSuppliers2::Skip
 ms.assetid: bd95d7e9-274f-485d-8bf6-865306ae1b81
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 7738c28630b957c8cc9860b06bc0ece7a25c9f88
-ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.openlocfilehash: 2f787fa7f499ba9daa1e9da12ab5d78ae927ec34
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/24/2019
-ms.locfileid: "66203375"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66312361"
 ---
 # <a name="ienumdebugportsuppliers2skip"></a>IEnumDebugPortSuppliers2::Skip
 略過指定的元素數目。

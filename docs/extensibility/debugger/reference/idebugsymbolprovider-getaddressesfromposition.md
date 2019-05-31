@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugSymbolProvider::GetAddressesFromPosition method
 ms.assetid: 1b0f02cb-8ace-4614-88f3-0e10239012b3
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: b354c7c31f4633fd307f54954c5d5115436097d0
-ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.openlocfilehash: dcaef1e9675ae395826865604833fdb6683df944
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/24/2019
-ms.locfileid: "66207353"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66310188"
 ---
 # <a name="idebugsymbolprovidergetaddressesfromposition"></a>IDebugSymbolProvider::GetAddressesFromPosition
 這個方法會對應到陣列的文件位置的偵錯位址。

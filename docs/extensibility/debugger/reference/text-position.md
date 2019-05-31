@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - TEXT_POSITION structure
 ms.assetid: 6dcec574-a852-49fa-8c2e-2e71cbb5e3c6
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 262f5209898ffa4d66087a1e9f1896df51a0c72a
-ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.openlocfilehash: 7f53cb7a0dacc58a0d4a8109ea6dd3ca3ab710e1
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/24/2019
-ms.locfileid: "66212702"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66336302"
 ---
 # <a name="textposition"></a>TEXT_POSITION
 描述在指定的文字行和資料行位置。

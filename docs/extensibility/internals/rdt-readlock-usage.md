@@ -8,17 +8,17 @@ helpviewer_keywords:
 - RDT_EditLock
 - invisible
 ms.assetid: b935fc82-9d6b-4a8d-9b70-e9a5c5ad4a55
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 04997bfed66da015c4aef82f4741218c88b9ecd1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 8c11cee4c1f8c150fc8bcf42b3dbc1a193d3441a
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62859360"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66341349"
 ---
 # <a name="rdtreadlock-usage"></a>RDT_ReadLock 使用方式
 

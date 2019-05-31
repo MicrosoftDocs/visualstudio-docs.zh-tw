@@ -3,17 +3,17 @@ title: 適用於 Visual Studio 的版面配置 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: c19e3022-047c-43b6-a046-a82717efed4f
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e35cb321772354de29b7b8466b6136c96cabf98d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ef763f3142f41e63effa1f76bb6bebdc95f0ee3a
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62798593"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66335350"
 ---
 # <a name="layout-for-visual-studio"></a>適用於 Visual Studio 的版面配置
 就大部分的 Visual Studio 對話方塊[公用程式對話方塊版面配置](../../extensibility/ux-guidelines/layout-for-visual-studio.md#BKMK_UtilityDialogLayout)，這是 unthemed 對話方塊該遵循標準[Windows Desktop 對話方塊版面配置原則](/windows/desktop/uxguide/win-dialog-box)。 如 Visual Studio 會移到重新整理其 UI 中，一些更重要的對話方塊會有新的設計可建立它們，產品定義的體驗。 這些[佈景主題對話方塊版面配置](../../extensibility/ux-guidelines/layout-for-visual-studio.md#BKMK_ThemedDialogLayout)具有佈景主題的外觀。
@@ -103,11 +103,11 @@ ms.locfileid: "62798593"
 #### <a name="BKMK_InteriorCommandButtons"></a> 內部命令按鈕
  在更複雜的對話方塊中，內部的控制項可能有它自己相關的按鈕，這可能會影響對話方塊的 [認可] 按鈕的所在位置。
 
-- 使用內部的垂直對齊方式 （資料行） 按鈕 **[確定]**/**取消**為水平導向在右下角。
+- 使用內部的垂直對齊方式 （資料行） 按鈕 **[確定]** /**取消**為水平導向在右下角。
 
-- 使用內部的水平對齊方式 （資料列） 按鈕 **[確定]**/**取消**為垂直導向右上角。 這種情況下是較不常見。
+- 使用內部的水平對齊方式 （資料列） 按鈕 **[確定]** /**取消**為垂直導向右上角。 這種情況下是較不常見。
 
-- 內部的按鈕大小應為目標的標準按鈕大小為 75 x 23 像素，比對的大小 **[確定]**/**取消**盡可能的按鈕。 當按鈕的標籤會超出標準按鈕大小的按鈕時，該集合中的其他按鈕應該配合該寬度的大小。
+- 內部的按鈕大小應為目標的標準按鈕大小為 75 x 23 像素，比對的大小 **[確定]** /**取消**盡可能的按鈕。 當按鈕的標籤會超出標準按鈕大小的按鈕時，該集合中的其他按鈕應該配合該寬度的大小。
 
   ![水平的 [確定] 和 [取消] 按鈕](../../extensibility/ux-guidelines/media/0801-f_horizokcan.png "0801 f_HorizOKCan")
 
@@ -118,7 +118,7 @@ ms.locfileid: "62798593"
   **圖 08.01-g:水平與垂直確定/取消的內部按鈕**
 
 #### <a name="browse-button"></a>[瀏覽...]按鈕
- **[瀏覽...]** 遵循文字方塊中的按鈕應該拼出 [瀏覽...]完整，包括 [省略符號。 如果有緊密的空間，或有多個 **[瀏覽...]** 在畫面上，按鈕的按鈕可縮減為的省略符號。
+ **[瀏覽...]** 遵循文字方塊中的按鈕應該拼出 [瀏覽...]完整，包括 省略符號。 如果有緊密的空間，或有多個 **[瀏覽...]** 在畫面上，按鈕的按鈕可縮減為的省略符號。
 
 ## <a name="BKMK_ThemedDialogLayout"></a> 佈景主題對話方塊版面配置
  在 Visual Studio 中的佈景主題對話方塊具有較淺的外觀，並提供更多的泛空白字元。 印刷樣式會提供更多的強調和感興趣，提供更開放的行距和各式各樣的字型大小和權數。 可能的話，chrome 和標題列已降低或移除。 這些對話方塊的配置都應該遵循這個基本模式：
@@ -135,7 +135,7 @@ ms.locfileid: "62798593"
 
 6. 預設的連結已經沒有底線。 暫留和已按下的狀態有變更色彩再加上底線。
 
-7. 認可按鈕 (類似 **[確定]**/**取消**) 位在右上角。
+7. 認可按鈕 (類似 **[確定]** /**取消**) 位在右上角。
 
 ### <a name="themed-dialog-layout-examples"></a>佈景主題對話方塊版面配置範例
  ![佈景主題對話方塊版面配置](../../extensibility/ux-guidelines/media/0801-h_themeddialog.png "0801 h_ThemedDialog")

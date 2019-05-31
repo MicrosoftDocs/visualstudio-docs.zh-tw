@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - DOCCONTEXT_COMPARE enumeration
 ms.assetid: ed947c34-b07e-4b69-8381-b6e7cb842862
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e36e9c3c0870cb81dd02f646636eeb758f1ddb62
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: f31b33eeb782e71a87103d26a3bb78175611644e
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56686245"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66318137"
 ---
 # <a name="doccontextcompare"></a>DOCCONTEXT_COMPARE
 指定的準則來比較兩個文件內容。
@@ -43,14 +46,18 @@ enum enum_DOCCONTEXT_COMPARE {
 };
 ```
 
-## <a name="members"></a>成員
-DOCCONTEXT_EQUAL 等於目標文件內容的清單中找到的第一個文件內容。
+## <a name="fields"></a>欄位
+`DOCCONTEXT_EQUAL`\
+找到的第一個文件內容等於目標文件內容的清單中。
 
-DOCCONTEXT_LESS_THAN 小於目標文件內容的清單中找到的第一個文件內容。
+`DOCCONTEXT_LESS_THAN`\
+小於目標文件內容的清單中找到的第一個文件內容。
 
-DOCCONTEXT_GREATER_THAN 大於目標文件內容清單中找到的第一個文件內容。
+`DOCCONTEXT_GREATER_THAN`\
+大於目標文件內容的清單中找到的第一個文件內容。
 
-DOCCONTEXT_SAME_DOCUMENT 是目標文件內容相同文件中的清單中找到的第一個文件內容。
+`DOCCONTEXT_SAME_DOCUMENT`\
+在目標文件內容相同文件中的清單中找到的第一個文件內容。
 
 ## <a name="remarks"></a>備註
 作為引數[比較](../../../extensibility/debugger/reference/idebugdocumentcontext2-compare.md)方法。

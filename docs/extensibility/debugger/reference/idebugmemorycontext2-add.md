@@ -8,20 +8,20 @@ helpviewer_keywords:
 - IDebugMemoryContext2::Add method
 - Add method
 ms.assetid: 3c47e646-ce9e-4dd3-8f1a-6dbd3827d407
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 4c1a486318899173cb6ab6b30cfd427bc6f0b360
-ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.openlocfilehash: c1cafbf22e51f867948491e2925c085bd387ea84
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/24/2019
-ms.locfileid: "66210538"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66347081"
 ---
 # <a name="idebugmemorycontext2add"></a>IDebugMemoryContext2::Add
 將指定的值加入至目前的內容，並傳回新的內容。

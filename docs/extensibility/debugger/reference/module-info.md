@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - MODULE_INFO structure
 ms.assetid: f2e06180-1ab3-4eb5-a428-7994cceb61b6
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 58531e64c88c89a92b5eee7f2eac7067cf42775f
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: db67710fd7ee71cddf1e7dbee030cb208a1de86c
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65458000"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66339114"
 ---
 # <a name="moduleinfo"></a>MODULE_INFO
 描述特定模組 （DLL、 EXE 或組件）。

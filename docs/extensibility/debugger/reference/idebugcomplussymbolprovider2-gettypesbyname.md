@@ -6,20 +6,20 @@ helpviewer_keywords:
 - GetTypesByName
 - IDebugComPlusSymbolProvider2::GetTypesByName
 ms.assetid: ef76b1a8-6910-48fe-b4af-d9045eefd23f
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 24cce091d1381d97d70ce9c42baecc38bcf92393
-ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.openlocfilehash: e084b7f6861a8a01a2998c5a5e9ef1feba1daf2d
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/24/2019
-ms.locfileid: "66205931"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66334719"
 ---
 # <a name="idebugcomplussymbolprovider2gettypesbyname"></a>IDebugComPlusSymbolProvider2::GetTypesByName
 擷取指定其名稱的類型。

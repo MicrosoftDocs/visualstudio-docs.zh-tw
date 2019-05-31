@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - MESSAGETYPE enumeration
 ms.assetid: 800cc77d-3c27-4763-a9df-552a9384bd49
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 7f3485aa2e5650345c0b14c6cb8093034043285a
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: 8c17860bb47f493031e6db1134aec498611b07f1
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65461003"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66339198"
 ---
 # <a name="messagetype"></a>MESSAGETYPE
 指定訊息類型和原因。

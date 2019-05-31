@@ -6,17 +6,17 @@ helpviewer_keywords:
 - debugging [Debugging SDK], expression evaluation
 - expression evaluation, changing values programmatically
 ms.assetid: 8407d3df-d38a-4328-82d1-98084bef43ec
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b5a6854911735c5bbc004a91c86d5d16305a928b
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 998200420cf2ec5e0b021a415cdb9d287b1362db
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63409909"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66349746"
 ---
 # <a name="change-the-value-of-a-local"></a>變更區域變數的值
 > [!IMPORTANT]

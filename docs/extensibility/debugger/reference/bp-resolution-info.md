@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - BP_RESOLUTION_INFO structure
 ms.assetid: ba0c162a-61e8-4a0b-811f-4c1d8a5d82f0
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 79104bf245221c14a27593665c1a4b2cd8cedaa0
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 5e07110a4ab4aae014f6134130a92dfcb8a31289
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56707220"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66350603"
 ---
 # <a name="bpresolutioninfo"></a>BP_RESOLUTION_INFO
 描述程式碼中斷點或資料中斷點的繫結的中斷點資訊。
@@ -43,13 +46,17 @@ public struct BP_RESOLUTION_INFO {
 ```
 
 ## <a name="members"></a>成員
-`dwFields` 集合中的旗標[BPRESI_FIELDS](../../../extensibility/debugger/reference/bpresi-fields.md)列舉，指定哪些欄位都已填寫。
+`dwFields`\
+集合中的旗標[BPRESI_FIELDS](../../../extensibility/debugger/reference/bpresi-fields.md)列舉，指定哪些欄位都已填寫。
 
-`bpResLocation` [BP_RESOLUTION_LOCATION](../../../extensibility/debugger/reference/bp-resolution-location.md)結構，程式碼或資料中指定之中斷點的位置。
+`bpResLocation`\
+[BP_RESOLUTION_LOCATION](../../../extensibility/debugger/reference/bp-resolution-location.md)結構，程式碼或資料中指定之中斷點的位置。
 
-`pProgram` [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)物件，表示中斷點錯誤發生所在的應用程式。
+`pProgram`\
+[IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)物件，表示中斷點錯誤發生所在的應用程式。
 
-`pThread` [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)物件，表示包含中斷點錯誤的應用程式執行所在的執行緒。
+`pThread`\
+[IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)物件，表示包含中斷點錯誤的應用程式執行所在的執行緒。
 
 ## <a name="remarks"></a>備註
 此結構由[GetResolutionInfo](../../../extensibility/debugger/reference/idebugbreakpointresolution2-getresolutioninfo.md)。

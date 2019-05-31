@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProperty3::GetStringChars
 ms.assetid: 832c37f3-85cb-4227-8ab2-f27a80eafe90
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: b087997fab72e71abf4380df6d5c03910d1a57eb
-ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.openlocfilehash: 16d352ae5397d786c5d77f56a513e9ae2db2d7b3
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/24/2019
-ms.locfileid: "66212247"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66348834"
 ---
 # <a name="idebugproperty3getstringchars"></a>IDebugProperty3::GetStringChars
 擷取此屬性相關聯的字串，並將它儲存在使用者提供的緩衝區。

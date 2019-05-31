@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - properties [Visual Studio SDK], grid
 ms.assetid: 318e41b0-acf5-4842-b85e-421c9d5927c5
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 83c443dba0e77809ec9a2d4093f6581b260a2d2d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 38f22323f9201a40090a1aec0aeb1b8698c08b0e
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62909260"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66311004"
 ---
 # <a name="properties-display-grid"></a>屬性顯示格線
 

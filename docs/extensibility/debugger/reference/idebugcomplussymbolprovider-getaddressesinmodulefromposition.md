@@ -6,20 +6,20 @@ helpviewer_keywords:
 - GetAddressesInModuleFromPosition
 - IDebugComPlusSymbolProvider::GetAddressesInModuleFromPosition
 ms.assetid: f901c66e-f53c-4ea0-8004-d8fcbf46f916
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: d8ee7abed55245d9ac09b74119d4b9af5fe7d5b2
-ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.openlocfilehash: 3000b93a9ce7f3ba56325943d48c5ac686ddde38
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/24/2019
-ms.locfileid: "66206586"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66338718"
 ---
 # <a name="idebugcomplussymbolprovidergetaddressesinmodulefromposition"></a>IDebugComPlusSymbolProvider::GetAddressesInModuleFromPosition
 將指定的模組中的文件位置對應的偵錯位址陣列。

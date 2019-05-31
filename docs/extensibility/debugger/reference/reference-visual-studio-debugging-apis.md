@@ -7,17 +7,17 @@ helpviewer_keywords:
 - debugging [Debugging SDK], reference
 - Debugging SDK, reference
 ms.assetid: 9810fc50-43c7-4916-9916-1cf333037b51
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c1e4c9f2d4edcd0e8c87207c2a1f3864b951c3e6
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: 0badd30653dfee4ae7002fb094fc30af40de80b3
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65458447"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66336305"
 ---
 # <a name="reference-visual-studio-debugging-apis"></a>參考 (Visual Studio 偵錯 API)
 

@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProgram2::GetName
 ms.assetid: a54cbf13-b3e3-4c9f-8b8d-13573232dfb0
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 2f7faa4b864824a46e30f05f6465eee30f4a3e16
-ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.openlocfilehash: 651c845e37ffb89461dfb8c9fe96e1db0b100d3f
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/24/2019
-ms.locfileid: "66210183"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66320782"
 ---
 # <a name="idebugprogram2getname"></a>IDebugProgram2::GetName
 取得程式的名稱。

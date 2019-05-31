@@ -6,20 +6,20 @@ helpviewer_keywords:
 - GetModuleName
 - IDebugBeforeSymbolSearchEvent2::GetModuleName
 ms.assetid: 0b4abeac-2eaf-4b2e-a2d5-c9ec303bc869
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 1aa8ec33b128208a438df072680060ae5a0e0e83
-ms.sourcegitcommit: 77b4ca625674658d5c5766e684fa0e2a07cad4da
+ms.openlocfilehash: 026c0a297eed18b21692885f08af07bdc656e842
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/14/2019
-ms.locfileid: "65615073"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66317549"
 ---
 # <a name="idebugbeforesymbolsearchevent2getmodulename"></a>IDebugBeforeSymbolSearchEvent2::GetModuleName
 擷取目前所偵錯的模組名稱。

@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - Output window, about Output window
 ms.assetid: b02fa88c-f92a-4ff6-ba5f-2eb4d48a643a
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 86498adc4d8bce2a7d428b2951764e5d4b8a96a9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: dd02ce74f2fee8255d92c47149a46f1003b02011
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62912391"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66311030"
 ---
 # <a name="extend-the-output-window"></a>擴充 [輸出] 視窗
 **輸出**視窗是一組讀取/寫入文字窗格。 Visual Studio 有這些內建的窗格：**建置**，在哪些專案通訊相關的組建中，訊息和**一般**，在其中[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]會傳達有關 IDE 的訊息。 專案取得參照**建置**窗格自動透過<xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildableProjectCfg>介面方法和 Visual Studio 提供直接存取**一般**窗格中的透過<xref:Microsoft.VisualStudio.Shell.Interop.SVsGeneralOutputWindowPane>服務。 除了內建的窗格中，您可以建立和管理您自己自訂的窗格。

@@ -1,21 +1,21 @@
 ---
-title: HOW TO：實作錯誤標記 |Microsoft Docs
+title: 作法：實作錯誤標記 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - error markers
 ms.assetid: e8e78514-5720-4fc2-aa43-00b6af482e38
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 67ef0d68df50d89f0ec22631a731ea9eb50dad46
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 96c6e1cc5c26819854099a0b7a493472fca8155e
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63415485"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66351925"
 ---
 # <a name="how-to-implement-error-markers"></a>HOW TO：實作錯誤標記
 錯誤標記 （或紅色的波浪底線） 是最困難的文字編輯器自訂項目，來實作。 不過，它們提供給使用者的 VSPackage 的好處遠超過為他們提供的成本。 錯誤標記稍微標記您的語言剖析器認為正確曲線或波浪式紅色底線的文字。 此指標會以視覺化方式顯示不正確的程式碼，以協助程式設計人員。

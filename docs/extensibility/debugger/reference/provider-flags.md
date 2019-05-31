@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - PROVIDER_FLAGS enumeration
 ms.assetid: 8cbd2312-ed2f-4477-b192-c3f25c6098c3
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 7f6fb974bd5affc89eeacbfccace5c1e89218db5
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: 8408481efbcaa67ce60d2dbfc9166b5dd0fd5223
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65457930"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66350021"
 ---
 # <a name="providerflags"></a>PROVIDER_FLAGS
 指定要從程式提供者取得所需的屬性。

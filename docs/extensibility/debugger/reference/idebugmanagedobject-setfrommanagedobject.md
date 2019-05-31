@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugManagedObject::SetFromManagedObject method
 ms.assetid: 8700ee8d-2704-4580-bccc-046837a24edd
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: dbaaf27222754d4a68d7de6367a2c0d7a1a8be73
-ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.openlocfilehash: bf82275bf3375098cc8a8bcbeb200846252d2cec
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/24/2019
-ms.locfileid: "66210623"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66349369"
 ---
 # <a name="idebugmanagedobjectsetfrommanagedobject"></a>IDebugManagedObject::SetFromManagedObject
 從提供做為參數的實值類別的執行個體中設定之值的類別物件的執行個體的值。

@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - THREADPROPERTIES structure
 ms.assetid: 7d397207-db03-4ec0-9f79-3794056ed89f
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 59b0fd83202ea8a5514d1ed637404d4864bf6b57
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: a0e39102fa66c04a15042ffd82086ac66d3058ca
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65460717"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66316175"
 ---
 # <a name="threadproperties"></a>THREADPROPERTIES
 描述執行緒屬性。

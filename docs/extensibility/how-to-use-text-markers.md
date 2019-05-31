@@ -1,23 +1,23 @@
 ---
-title: HOW TO：使用文字標記 |Microsoft Docs
+title: 作法：使用文字標記 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - using text markers
 ms.assetid: 76eed51c-eecb-4579-823e-13df2f0526b9
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4d87a14143bb73e3bd370a9315cea9250be07df3
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: a0bd8a9bb1410ef91883e4ec46fa6be85ac828b6
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63415367"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66324629"
 ---
-# <a name="how-to-use-text-markers"></a>HOW TO：使用文字標記
+# <a name="how-to-use-text-markers"></a>作法：使用文字標記
 文字標記可以套用至編輯<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBuffer>物件。
 
 ## <a name="procedures"></a>程序

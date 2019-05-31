@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugPortSupplier3::EnumPersistedPorts
 ms.assetid: 1c3dead3-5d6c-4067-8418-4015f0b0dd07
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 2d37ec7c2a81b036c80e7fab30fc794d51f21703
-ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.openlocfilehash: 269a49a21fdf2c42c716fba1ab3c8cb293e15a1a
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/24/2019
-ms.locfileid: "66204285"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66340043"
 ---
 # <a name="idebugportsupplier3enumpersistedports"></a>IDebugPortSupplier3::EnumPersistedPorts
 這個方法會擷取物件，可讓持續性的連接埠清單的列舉型別。

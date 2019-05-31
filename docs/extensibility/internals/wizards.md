@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - projects [Visual Studio SDK], providing wizard support
 ms.assetid: 59d9a77f-ee80-474b-a14f-90f477ab717b
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ad90c1ec332c2f214514e660b27dc5a915485f99
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e3b17d7ef3137c48ddda97e1b2b5bbf0e58cf5bb
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62856729"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66312829"
 ---
 # <a name="wizards"></a>精靈
 建立精靈之後，您通常想要將它新增至[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]整合式開發環境 (IDE)，以便其他人可以使用它。 已新增的精靈接著會出現在**加入新的專案**或是**加入新項目**對話方塊。 若要查看**加入新的專案**或**加入新項目**對話方塊方塊中，以滑鼠右鍵按一下中開啟的方案**方案總管 中**，指向**新增**，及然後按一下**新的專案**或是**新項目**。

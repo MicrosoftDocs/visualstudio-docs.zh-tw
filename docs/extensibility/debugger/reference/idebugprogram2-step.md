@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProgram2::Step
 ms.assetid: e4c2ffce-9810-4088-8162-eac9ef04f2a9
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 37ff30958d0f8343c5dc77c441087334524d3cd1
-ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.openlocfilehash: 8030bd45850a2b81e3cfb03a83497bba77c4515c
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/24/2019
-ms.locfileid: "66212556"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66325288"
 ---
 # <a name="idebugprogram2step"></a>IDebugProgram2::Step
 會執行的步驟。

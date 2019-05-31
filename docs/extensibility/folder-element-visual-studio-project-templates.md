@@ -8,17 +8,17 @@ f1_keywords:
 helpviewer_keywords:
 - Folder element [Visual Studio project templates]
 ms.assetid: 558e3d41-0db5-4c44-82bb-6bb87892b093
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a6ad2051212a943cea805579f0f1ab083af60602
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 6c066bfacea4996ab8d212ac607a3dfa3f3fad36
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62911953"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66342618"
 ---
 # <a name="folder-element-visual-studio-project-templates"></a>Folder 元素 （Visual Studio 專案範本）
 指定將會加入至專案的資料夾。
@@ -62,7 +62,7 @@ ms.locfileid: "62911953"
 
  您可以使用下列方法之一，將專案項目組織成在範本中的資料夾：
 
-- 在範本中包含的資料夾 *.zip*檔案，並將它們新增至專案中 *.vstemplate*藉由指定的路徑中檔案的檔案`ProjectItem`項目，含`Folder`項目。 這是建議的方法。 例如：
+- 在範本中包含的資料夾 *.zip*檔案，並將它們新增至專案中 *.vstemplate*藉由指定的路徑中檔案的檔案`ProjectItem`項目，含`Folder`項目。 這是建議的方法。 例如: 
 
      `...`
 

@@ -6,17 +6,17 @@ helpviewer_keywords:
 - menus, creating top level
 - top-level menus
 ms.assetid: 58fc1a31-2aeb-441c-8e48-c7d5cbcfe501
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c7ce5ab06eb641e94d6f972b888882ac1e53e2ee
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a28e7f69ed8e9a76e11d8892ee677435f75c99b2
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62892215"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66349785"
 ---
 # <a name="add-a-menu-to-the-visual-studio-menu-bar"></a>將功能表加入 Visual Studio 功能表列
 

@@ -7,17 +7,17 @@ f1_keywords:
 helpviewer_keywords:
 - POPDIRLISTFUNC callback function
 ms.assetid: 0ee90fd2-5467-4154-ab4c-7eb02ac3a14c
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 259ada240d81b87d2d36e12cddcc28efe8d893f1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 0fef3ab783c736fd2573e8d9df1a513e25d37020
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62806092"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66326125"
 ---
 # <a name="popdirlistfunc"></a>POPDIRLISTFUNC
 這是提供給回呼函式[SccPopulateDirList](../extensibility/sccpopulatedirlist-function.md)函式來更新目錄，以及 （選擇性） 若要了解它們在原始檔控制下的檔案名稱的集合。

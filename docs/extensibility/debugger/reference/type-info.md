@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - TYPE_INFO structure
 ms.assetid: d725cb68-a565-49d1-a16f-ff0445c587a0
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 9edb111c15c83fc6da8df2cea1eed96aed9252b0
-ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.openlocfilehash: 86212a5ef6f417dae2ae345b1367e041c3cf9095
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/24/2019
-ms.locfileid: "66212693"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66316122"
 ---
 # <a name="typeinfo"></a>TYPE_INFO
 此結構指定的各種欄位的類型的相關資訊。

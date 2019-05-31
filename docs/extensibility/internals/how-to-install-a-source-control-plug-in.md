@@ -1,22 +1,22 @@
 ---
-title: HOW TO：安裝原始檔控制外掛程式 |Microsoft Docs
+title: 作法：安裝原始檔控制外掛程式 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - installation [Visual Studio SDK], source control plug-ins
 - source control plug-ins, installing
 ms.assetid: 9e2e01d9-7beb-42b2-99b2-86995578afda
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e2835ab64d5665c00c404294ec12019d2b981654
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 9de10f1aebd47093a3cc3f41343e73cefdde473a
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63420517"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66334917"
 ---
 # <a name="how-to-install-a-source-control-plug-in"></a>HOW TO：安裝原始檔控制外掛程式
 建立原始檔控制外掛程式包含三個步驟：
@@ -64,7 +64,7 @@ ms.locfileid: "63420517"
 
 3. 新增子機碼中， **SourceCodeControlProvider**下方**HKEY_LOCAL_MACHINE**中的索引鍵**軟體**子機碼。
 
-    這個子機碼，登錄項目底下**ProviderRegKey**設為字串，表示您放置在步驟 1 中的登錄子機碼。 模式是**HKEY_LOCAL_MACHINE\SOFTWARE\SourceCodeControlProvider\ProviderRegKey** = *軟體\\< 公司名稱\>\\< 產品名稱\>*.
+    這個子機碼，登錄項目底下**ProviderRegKey**設為字串，表示您放置在步驟 1 中的登錄子機碼。 模式是**HKEY_LOCAL_MACHINE\SOFTWARE\SourceCodeControlProvider\ProviderRegKey** = *軟體\\< 公司名稱\>\\< 產品名稱\>* .
 
     以下是這個子機碼的範例內容。
 
@@ -77,7 +77,7 @@ ms.locfileid: "63420517"
 
 4. 建立名為的子機碼**InstalledSCCProviders**下方**SourceCodeControlProvider**子機碼，並將放置該子機碼下的一個項目。
 
-    此項目的名稱 （如同 SCCServerName 項目指定的值），提供者的使用者可讀名稱且值為，同樣地，在步驟 1 中建立的子機碼。 模式是**HKEY_LOCAL_MACHINE\SOFTWARE\SourceCodeControlProvider\InstalledSCCProviders\\< 顯示名稱\>** = *軟體\\< 公司名稱\>\\< 產品名稱\>*。
+    此項目的名稱 （如同 SCCServerName 項目指定的值），提供者的使用者可讀名稱且值為，同樣地，在步驟 1 中建立的子機碼。 模式是**HKEY_LOCAL_MACHINE\SOFTWARE\SourceCodeControlProvider\InstalledSCCProviders\\< 顯示名稱\>**  = *軟體\\< 公司名稱\>\\< 產品名稱\>* 。
 
     例如: 
 

@@ -8,17 +8,17 @@ f1_keywords:
 helpviewer_keywords:
 - CustomParameters element [Visual Studio project templates]
 ms.assetid: cf3efc91-1532-4022-bbb8-a18658424fee
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 61b8c3812f90d435da8aaa1e6e3d7a4f4a61e807
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 8089e84f5414798fdf6a4707e8bde65e4df5e0a2
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62926260"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66350213"
 ---
 # <a name="customparameters-element-visual-studio-templates"></a>CustomParameters 項目 （Visual Studio 範本）
 群組精靈會讓參數替代項目時，要傳遞至 [範本] 精靈的自訂參數。

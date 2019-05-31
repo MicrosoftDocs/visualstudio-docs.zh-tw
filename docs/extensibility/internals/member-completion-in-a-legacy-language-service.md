@@ -7,17 +7,17 @@ helpviewer_keywords:
 - Member Completion, supporting in language services [managed package framework]
 - language services [managed package framework], IntelliSense Member Completion
 ms.assetid: 500f718d-9028-49a4-8615-ba95cf47fc52
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 56ad09f2b158c7d23bf40bbafbdba3a9435926e4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 2c969b0f857e45279488d9ba667b431064375da6
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62909162"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66349304"
 ---
 # <a name="member-completion-in-a-legacy-language-service"></a>舊版語言服務中的成員完成
 

@@ -6,20 +6,20 @@ helpviewer_keywords:
 - SetCorPath
 - IDebugExpressionEvaluator2::SetCorPath
 ms.assetid: 27b614ff-7325-4f9b-8da4-61ee020c9410
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 518ba8c50f85ddddc5ee1bba87cf6c2ece33e3af
-ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.openlocfilehash: e8300f3cfc54ece6a57c31fcca819ffd8d275d28
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/24/2019
-ms.locfileid: "66211715"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66313165"
 ---
 # <a name="idebugexpressionevaluator2setcorpath"></a>IDebugExpressionEvaluator2::SetCorPath
 設定 common language runtime (CLR) 載入偵錯工具的路徑。

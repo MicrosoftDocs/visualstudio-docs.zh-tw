@@ -10,12 +10,12 @@ ms.assetid: f78c4892-8060-49c4-8ecd-4360f1b4d133
 caps.latest.revision: 39
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: f565f4f8294fc7f1a467e20ad17a793dd3a09bae
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 81043cc87dd659f14ec634dc14990956a0864f9b
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60097085"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66263584"
 ---
 # <a name="adding-search-to-a-tool-window"></a>將搜尋新增至工具視窗
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -139,7 +139,7 @@ ms.locfileid: "60097085"
      在 [工具] 視窗頂端，搜尋控制項是顯示為**搜尋**浮水印和放大半透明效果的圖示。 不過，搜尋不運作，還因為未實作搜尋程序。  
   
 ## <a name="to-add-the-search-implementation"></a>若要加入搜尋實作  
- 當您啟用搜尋上<xref:Microsoft.VisualStudio.Shell.ToolWindowPane>，如先前程序中，在 [工具] 視窗會建立搜尋主機。 此主機設定及管理搜尋處理序，一律在背景執行緒進行。 因為<xref:Microsoft.VisualStudio.Shell.ToolWindowPane>類別管理向上搜尋主機以及設定建立的搜尋，您只需要建立搜尋工作，但提供的搜尋方法。 搜尋程序，就會發生在背景執行緒，並在 UI 執行緒上發生的工具視窗控制項的呼叫。 因此，您必須使用<xref:Microsoft.VisualStudio.Shell.ThreadHelper.Invoke%2A>方法來管理您在處理控制項的任何呼叫。  
+ 當您啟用搜尋上<xref:Microsoft.VisualStudio.Shell.ToolWindowPane>，如先前程序中，在 [工具] 視窗會建立搜尋主機。 此主機設定及管理搜尋處理序，一律在背景執行緒進行。 因為<xref:Microsoft.VisualStudio.Shell.ToolWindowPane>類別管理向上搜尋主機以及設定建立的搜尋，您只需要建立搜尋工作，但提供的搜尋方法。 搜尋程序，就會發生在背景執行緒，並在 UI 執行緒上發生的工具視窗控制項的呼叫。 因此，您必須使用[ThreadHelper.Invoke*](https://msdn.microsoft.com/data/ee197798(v=vs.85))方法來管理您在處理控制項的任何呼叫。  
   
 1. 在 TestSearch.cs 檔案中，新增下列`using`陳述式：  
   
@@ -160,7 +160,7 @@ ms.locfileid: "60097085"
   
     - 覆寫<xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowSearch.CreateSearch%2A>方法用來建立搜尋工作。  
   
-    - 覆寫<xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowSearch.ClearSearch%2A>方法，以還原 [] 文字方塊中的狀態。 使用者取消搜尋工作，以及當使用者設定或取消設定選項或篩選時，會呼叫這個方法。 兩者<xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowSearch.CreateSearch%2A>和<xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowSearch.ClearSearch%2A>UI 執行緒上呼叫。 因此，您不需要存取文字方塊中，藉由<xref:Microsoft.VisualStudio.Shell.ThreadHelper.Invoke%2A>方法。  
+    - 覆寫<xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowSearch.ClearSearch%2A>方法，以還原 [] 文字方塊中的狀態。 使用者取消搜尋工作，以及當使用者設定或取消設定選項或篩選時，會呼叫這個方法。 兩者<xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowSearch.CreateSearch%2A>和<xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowSearch.ClearSearch%2A>UI 執行緒上呼叫。 因此，您不需要存取文字方塊中，藉由[ThreadHelper.Invoke*](https://msdn.microsoft.com/data/ee197798(v=vs.85))方法。  
   
     - 會建立名為類別`TestSearchTask`繼承自<xref:Microsoft.VisualStudio.Shell.VsSearchTask>，以提供的預設實作<xref:Microsoft.VisualStudio.Shell.Interop.IVsSearchTask>。  
   
@@ -532,7 +532,7 @@ ms.locfileid: "60097085"
   
 6. 選擇的篩選條件。  
   
-     搜尋方塊中包含**幾行： 偶數 」**，並會出現下列結果：  
+     搜尋方塊中包含**幾行： 偶數 」** ，並會出現下列結果：  
   
      良好的 2  
   

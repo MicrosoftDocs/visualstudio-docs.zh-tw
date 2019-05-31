@@ -6,17 +6,17 @@ helpviewer_keywords:
 - source control plug-ins, comparing versions
 - source control plug-ins, local project folders
 ms.assetid: 65217e8b-15a6-4446-92b0-4cff1c6220f5
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d08cb11a49f069ab7d5f4d660253e5e85f3a87a0
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: d675868e10a99a192681c52495ad3b37e384d390
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63422833"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66350695"
 ---
 # <a name="optional-comparison-of-local-project-folder-to-source-control-store"></a>本機專案資料夾與原始檔控制存放區的選擇性比較
 在原始檔控制外掛程式 API 1.2 本機專案資料夾與原始檔控制之間的比較作業透過使用函式[SccDirQueryInfo](../../extensibility/sccdirqueryinfo-function.md)並[SccDirDiff](../../extensibility/sccdirdiff-function.md)。

@@ -8,17 +8,17 @@ helpviewer_keywords:
 - program nodes, adding
 - program nodes, superceding
 ms.assetid: 1c5a5c13-c14d-42c3-af11-4c63f1032c8d
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 93c2d82ca683e7fb771ff3a443eb54746d4bde29
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 084a386cc7d7f9c6d606e7015e593a4075ba53a9
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62925256"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66351431"
 ---
 # <a name="program-nodes"></a>程式節點
 在偵錯工具架構中，*計劃節點*:

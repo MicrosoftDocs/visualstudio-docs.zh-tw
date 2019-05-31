@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugEventCallback2::Event
 ms.assetid: e5a3345b-d460-4e40-8f5b-3111c56a2ed9
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: a947f473fe7dc1fcf3e7b5b2b96d13edc3098218
-ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.openlocfilehash: 5def4a2bf9ae748fee9563b7845807ba1b0acd71
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/24/2019
-ms.locfileid: "66201152"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66327577"
 ---
 # <a name="idebugeventcallback2event"></a>IDebugEventCallback2::Event
 傳送通知的偵錯事件。

@@ -6,17 +6,17 @@ helpviewer_keywords:
 - .msi files, VSPackages
 - msi files, VSPackages
 ms.assetid: 0ce7c21d-0d3f-47fe-a0bb-eed506e32609
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1194dba5069913d01a6e4858801ea2890db94224
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: da68fa0a6c115a09ba2050f8c84ea6700ee4fc76
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62910613"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66315794"
 ---
 # <a name="author-a-windows-installer-package"></a>撰寫的 Windows Installer 套件
 資料磁碟機的 Windows 安裝程式的模型。 而非撰寫程序的指令碼，以將檔案複製和寫入登錄項目，例如，您撰寫資料列和資料行包含檔案和登錄資料的資料庫資料表中。

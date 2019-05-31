@@ -7,17 +7,17 @@ f1_keywords:
 helpviewer_keywords:
 - SccCheckout function
 ms.assetid: 06e9ecd7-fc09-40c1-9dd1-2b56c622c80b
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9304f0bdcb414da37e70df66eca470999a685735
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e5160a2600a8eb3250702dd0836d812b668a3d1b
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62433301"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66333882"
 ---
 # <a name="scccheckout-function"></a>SccCheckout 函式
 提供一份完整的檔案名稱，此函式取出它們的本機磁碟機。 註解適用於正在簽出的所有檔案。註解引數可以是`null`字串。

@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugObject::GetMemoryContext method
 ms.assetid: 6760a0d3-a898-4e81-b68f-c45c584b225b
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: ce66c4274aa00b7a75376aa4411c11241468ea5b
-ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.openlocfilehash: 38f913952c3e2f58b0d7bd2a27ac20e8f754da2f
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/24/2019
-ms.locfileid: "66202919"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66323617"
 ---
 # <a name="idebugobjectgetmemorycontext"></a>IDebugObject::GetMemoryContext
 取得代表物件的值的位址的記憶體內容。

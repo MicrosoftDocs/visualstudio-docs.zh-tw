@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugArrayObject::GetElement method
 ms.assetid: 08b44341-7bf1-4a8c-8b79-98ae5785b195
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 5550a1f1e83b9343a031df39728675db07de3559
-ms.sourcegitcommit: 77b4ca625674658d5c5766e684fa0e2a07cad4da
+ms.openlocfilehash: 527302a2e6d6fc2884107e3773402adc56b881c7
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/14/2019
-ms.locfileid: "65615156"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66322224"
 ---
 # <a name="idebugarrayobjectgetelement"></a>IDebugArrayObject::GetElement
 取得陣列的項目。

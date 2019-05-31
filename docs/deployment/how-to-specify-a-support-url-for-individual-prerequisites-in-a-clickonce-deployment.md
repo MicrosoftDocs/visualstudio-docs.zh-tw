@@ -1,5 +1,5 @@
 ---
-title: HOW TO：指定在 ClickOnce 部署中的個別必要條件的支援 URL |Microsoft Docs
+title: 如需在 ClickOnce 部署的必要條件的支援 URL
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6f79aec7a8882f87bc98f822d4fb4f0c1961bd69
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: cf115ad6ce8fb589e9b1c617f40053cf95af2b9c
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62928596"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66263211"
 ---
 # <a name="how-to-specify-a-support-url-for-individual-prerequisites-in-a-clickonce-deployment"></a>HOW TO：在 ClickOnce 部署中指定個別必要條件的支援 URL
 A[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]部署可以測試數目的用戶端電腦必須要有的必要條件[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]執行的應用程式。 這些相依性包括所需的最低版本的[!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]，作業系統和必須預先安裝在全域組件快取 (GAC) 中的任何組件的版本。 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]不過，無法安裝任何必要條件本身;如果找不到必要元件，它只是中止安裝，並顯示對話方塊，說明安裝失敗的原因。

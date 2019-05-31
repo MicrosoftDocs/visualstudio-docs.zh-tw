@@ -3,17 +3,17 @@ title: 新增語言伺服器通訊協定延伸模組 |Microsoft Docs
 ms.date: 11/14/2017
 ms.topic: conceptual
 ms.assetid: 52f12785-1c51-4c2c-8228-c8e10316cd83
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d9b268c0c15ce468ca40a90583c5b7310364c189
-ms.sourcegitcommit: 283f2dbce044a18e9f6ac6398f6fc78e074ec1ed
+ms.openlocfilehash: 7518a9086d5923c7b6ad71f07227b76517934b56
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/16/2019
-ms.locfileid: "65805119"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66352324"
 ---
 # <a name="add-a-language-server-protocol-extension"></a>新增語言伺服器通訊協定延伸模組
 
@@ -139,7 +139,7 @@ LSP 不包含有關如何提供文字顏色標示語言規格。 若要提供自
 
 4. 以滑鼠右鍵按一下檔案，然後選取**屬性**。 變更**建置**動作來**內容**並變更**Include in VSIX**屬性設**true**。
 
-完成先前步驟中之後,*文法*資料夾已新增至套件的安裝目錄，做為存放庫來源名為 'MyLang' （'MyLang' 會是用於去除混淆的名稱，而且可以是任何唯一的字串）。 所有的文法 (*.tmlanguage*檔案) 和佈景主題檔案 (*.tmtheme*檔案) 在此目錄會挑選為潛力並以其取代 TextMate 所提供的內建文法。 如果文法檔案的宣告的延伸模組符合正在開啟檔案的副檔名，TextMate 將中的步驟。
+完成先前步驟中之後,*文法*資料夾已新增至套件的安裝目錄，做為存放庫來源名為 'MyLang' （'MyLang' 會是用於去除混淆的名稱，而且可以是任何唯一的字串）。 所有的文法 ( *.tmlanguage*檔案) 和佈景主題檔案 ( *.tmtheme*檔案) 在此目錄會挑選為潛力並以其取代 TextMate 所提供的內建文法。 如果文法檔案的宣告的延伸模組符合正在開啟檔案的副檔名，TextMate 將中的步驟。
 
 ## <a name="create-a-simple-language-client"></a>建立簡單的語言，用戶端
 
@@ -292,7 +292,7 @@ namespace MockLanguageExtension
 
 請遵循下列步驟來設定的支援新增至您的 LSP 語言服務延伸模組：
 
-1. 將 JSON 檔案 (例如*MockLanguageExtensionSettings.json*) 至您的專案，其中包含設定和其預設值。 例如: 
+1. 將 JSON 檔案 (例如*MockLanguageExtensionSettings.json*) 至您的專案，其中包含設定和其預設值。 例如：
 
     ```json
     {

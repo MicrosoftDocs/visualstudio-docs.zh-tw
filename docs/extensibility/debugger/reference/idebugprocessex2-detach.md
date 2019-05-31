@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProcessEx2::Detach method
 ms.assetid: 66d54c2c-9302-47c8-9975-f30ed988ab29
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 58480e52e86fc4603648d9f534cb03e944a8dde8
-ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.openlocfilehash: 2f016c078fcf19ec244fc4c0682d2caee81a2062
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/24/2019
-ms.locfileid: "66212891"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66311608"
 ---
 # <a name="idebugprocessex2detach"></a>IDebugProcessEx2::Detach
 這個方法會通知程序工作階段不會再偵錯程序。

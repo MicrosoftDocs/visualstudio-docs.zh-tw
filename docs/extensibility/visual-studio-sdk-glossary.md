@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - glossary [Visual Studio SDK]
 ms.assetid: b64d432b-c39b-4904-ad18-3c3218b6e3aa
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6157b4bc3537a4f88feb91d512241451b8324ba7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c5aa8398f3a102031c3a40074f76557ef311d4d7
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62838902"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66322411"
 ---
 # <a name="visual-studio-sdk-glossary"></a>Visual Studio SDK 字彙表
 這份字彙表提供所用的詞彙定義[!INCLUDE[vsipsdk](../extensibility/includes/vsipsdk_md.md)]文件。
@@ -73,7 +73,7 @@ ms.locfileid: "62838902"
 
   獨立的最上層元件的元件會使用非強制回應的最上層視窗，也能有效地作為獨立應用程式 視窗中，但會實作為同處理序物件。 因此，為獨立的最上層元件必須協調強制回應性和與 IDE 的訊息迴圈服務。 在處理程序物件沒有自己的訊息迴圈。
 
-  資訊提供者的資訊提供者是可以查閱關鍵字並傳回一份主題的表單中的模組`IVsUserContextItem`物件。 若要提供**F1**以及查閱關鍵字項目資訊提供者，則註冊已編譯的說明檔 (*。HxS*) 與系統。 這些檔案中的 說明 主題提供的動態說明 視窗中顯示和顯示使用者是否按下的主題清單**F1**。
+  資訊提供者的資訊提供者是可以查閱關鍵字並傳回一份主題的表單中的模組`IVsUserContextItem`物件。 若要提供**F1**以及查閱關鍵字項目資訊提供者，則註冊已編譯的說明檔 ( *。HxS*) 與系統。 這些檔案中的 說明 主題提供的動態說明 視窗中顯示和顯示使用者是否按下的主題清單**F1**。
 
   就地元件實作的 VSPackage 物件`IOleInPlaceComponent`介面來管理以視覺化方式包含在由 IDE 所擁有的文件視窗的視窗。 就地元件不會參與標準 OLE 功能表合併;而是他們將其使用者介面項目整合到 IDE。
 

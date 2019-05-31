@@ -5,17 +5,17 @@ ms.topic: reference
 helpviewer_keywords:
 - debugging [Debugging SDK], interfaces
 ms.assetid: 79875cbb-f946-49d4-94eb-941d0e1a40b2
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2648d63902af2c733f3ad2827517221f817de051
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: e0359ffc4ce634a6bf22759265c92ea7c299cc30
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65461118"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66350235"
 ---
 # <a name="interfaces-visual-studio-debugging"></a>介面 (Visual Studio 偵錯)
 方法會依字母順序列之下的內容，並依照 Vtable 順序的介面上的資料表中每個介面。

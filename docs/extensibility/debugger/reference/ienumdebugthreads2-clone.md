@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IEnumDebugThreads2::Clone
 ms.assetid: d774322c-e72d-4df3-b317-928da39dadc5
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 68b36e9906cfc7de583bd6a69654a1233160dc7c
-ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.openlocfilehash: 98ed0d58aeec5b26216366d84661bf42b304e2cb
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/24/2019
-ms.locfileid: "66210127"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66350851"
 ---
 # <a name="ienumdebugthreads2clone"></a>IEnumDebugThreads2::Clone
 傳回一份目前的列舉，為個別的物件。

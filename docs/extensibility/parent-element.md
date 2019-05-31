@@ -6,17 +6,17 @@ helpviewer_keywords:
 - VSCT XML schema elements, Parent
 - Parent element (VSCT XML schema)
 ms.assetid: e4624ac8-1b9a-4940-910a-528a661cefad
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7220e435090cc688d32a2d6d26917a8c05510d4f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5f64c99f030fa436eb250531ddd5c2f11bcd2bac
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62806105"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66316928"
 ---
 # <a name="parent-element"></a>父項目
 按鈕或下拉式方塊的父代可能只是群組。 功能表或群組的父系可能是功能表或群組。 在  [CommandPlacement 元素](../extensibility/commandplacement-element.md)，則需要這個元素; 所有其他執行個體中是選擇性的。 如果省略這個項目，則父代`Group_Undefined:0`會隱含。

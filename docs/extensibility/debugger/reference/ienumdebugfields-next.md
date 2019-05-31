@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IEnumDebugFields::Next method
 ms.assetid: 22c177a2-af81-4234-812b-f9b47be245a2
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 34ab8274dc8831cabc4ac8d82627cd5e4560827c
-ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.openlocfilehash: ee2cc5273b5ec47f99916a308312f6d26c718033
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/24/2019
-ms.locfileid: "66208071"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66350430"
 ---
 # <a name="ienumdebugfieldsnext"></a>IEnumDebugFields::Next
 這個方法會傳回下的一個項目集的列舉型別。

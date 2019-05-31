@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugPropertyField::GetPropertySetter method
 ms.assetid: 744d76fd-2bcc-4917-a040-ce4cc714ef61
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 390d3b2c5d468552c3def5c7e2b1cd73ece5e0ab
-ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.openlocfilehash: 29772ad76df6538ec5093d2fb34427a7fa89c5ff
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/24/2019
-ms.locfileid: "66211401"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66345685"
 ---
 # <a name="idebugpropertyfieldgetpropertysetter"></a>IDebugPropertyField::GetPropertySetter
 取得設定屬性的方法。

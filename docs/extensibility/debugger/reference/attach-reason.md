@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - ATTACH_REASON enumeration
 ms.assetid: 159fb70b-a344-4ba6-9115-b7eaa16e228f
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 11fba0944ca1b23c22caae6f0d6a4d9455099946
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 8c132b507d679fd6cec5ce7fff04362159cbc848
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56688260"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66351840"
 ---
 # <a name="attachreason"></a>ATTACH_REASON
 指定偵錯引擎 (DE) 附加至程式節點的原因。
@@ -41,12 +44,15 @@ public enum enum_ATTACH_REASON {
 };
 ```
 
-## <a name="members"></a>成員
-ATTACH_REASON_AUTO 附加，因為處理序目前正在偵錯模式。
+## <a name="fields"></a>欄位
+`ATTACH_REASON_AUTO`\
+附加，因為處理序目前正在偵錯模式。
 
-ATTACH_REASON_LAUNCH 附加，因為處理序已啟動。
+`ATTACH_REASON_LAUNCH`\
+附加，因為處理序已啟動。
 
-ATTACH_REASON_USER 附加，因為使用者的要求。
+`ATTACH_REASON_USER`\
+由於使用者要求附加。
 
 ## <a name="remarks"></a>備註
 這些值用做為參數[Attach](../../../extensibility/debugger/reference/idebugengine2-attach.md)並[附加](../../../extensibility/debugger/reference/idebugprogramex2-attach.md)方法。

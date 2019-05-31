@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProcess3::DisableENC
 ms.assetid: cffdbdac-4d76-4aeb-aa55-5d0410db99f1
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 65f79b73eaa9b97630cc3ef3e84e1ba4198835c9
-ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.openlocfilehash: a3ee29540a11248a299d65c32cf2c8396b1fa2ef
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/24/2019
-ms.locfileid: "66202364"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66314052"
 ---
 # <a name="idebugprocess3disableenc"></a>IDebugProcess3::DisableENC
 這個方法明確地停用編輯後繼續在此程序 （和它包含的所有程式）。 自訂連接埠供應商應該一律傳回`E_NOTIMPL`。

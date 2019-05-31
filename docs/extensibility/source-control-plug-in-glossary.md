@@ -6,17 +6,17 @@ helpviewer_keywords:
 - glossary [Visual Studio SDK]
 - source control plug-ins, glossary
 ms.assetid: f224bbc9-38fc-4c80-ab09-51dcc8969f8e
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0df624a27513fa0eb18b2643bb7c680d71d94c0c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 47488621fe3e5167e00442e1ca971ef923d9b25c
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62432417"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66331901"
 ---
 # <a name="source-control-plug-in-glossary"></a>原始檔控制外掛程式字彙表
 下列實用的詞彙和定義相關的原始檔控制外掛程式 SDK 文件。

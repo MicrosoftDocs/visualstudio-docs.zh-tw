@@ -3,17 +3,17 @@ title: 常見問題集：將增益集轉換成 VSPackage 擴充功能 |Microsoft
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 3a01d333-6e31-423f-ae06-5091a4fcb7a9
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4678d79c7d2b1e19ab96502778ce51f8a3226010
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 9e40d9b7ca3d942a78ef9045bc7aaa5d0f7ea74d
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63417182"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66342659"
 ---
 # <a name="faq-converting-add-ins-to-vspackage-extensions"></a>常見問題集：將增益集轉換成 VSPackage 擴充功能
 增益集目前已被取代。 若要讓新的 Visual Studio 擴充功能，您需要建立 VSIX 擴充功能。 以下是一些有關如何將轉換的 Visual Studio 增益集，為 VSIX 擴充功能的常見問題集問題的答案。
@@ -52,7 +52,7 @@ ms.locfileid: "63417182"
 
    Visual Studio 的第二個執行個體隨即出現。 第二個執行個體稱為實驗執行個體，其設定可能與您正用來撰寫程式碼的 Visual Studio 執行個體的設定不同。 第一次執行實驗執行個體時，系統會要求您登入 VS Online 並指定佈景主題和設定檔。
 
-   在 **工具**功能表上 （在實驗執行個體中） 您應該會看到名為按鈕**我的命令名稱**。 當您選擇此按鈕時，應該會出現一則訊息：**Inside TestVSPackagePackage.MenuItemCallback()**.
+   在 **工具**功能表上 （在實驗執行個體中） 您應該會看到名為按鈕**我的命令名稱**。 當您選擇此按鈕時，應該會出現一則訊息：**Inside TestVSPackagePackage.MenuItemCallback()** .
 
 ## <a name="BKMK_RunAddin"></a> 如何在 VSPackage 中執行我的增益集程式碼？
 
@@ -68,7 +68,7 @@ ms.locfileid: "63417182"
 
 1. 建立具有功能表命令的 VSPackage。 (如需詳細資訊，請參閱 <<c0> [ 建立具有功能表命令的延伸模組](../extensibility/creating-an-extension-with-a-menu-command.md)。)
 
-2. 開啟包含 VSPackage 之定義的檔案。 (在 C# 專案中，它有*\<您的專案名稱>Package.cs*。)
+2. 開啟包含 VSPackage 之定義的檔案。 (在 C# 專案中，它有 *\<您的專案名稱>Package.cs*。)
 
 3. 將下列 `using` 陳述式加入檔案中：
 
@@ -130,7 +130,7 @@ ms.locfileid: "63417182"
 
 ### <a name="to-get-the-dte-object-from-a-vspackage"></a>從 VSPackage 取得 DTE 物件
 
-1. 在 Visual Studio 封裝項目範本的 VSIX 專案，尋找*\<專案名稱 > Package.cs*檔案。 這是從 <xref:Microsoft.VisualStudio.Shell.Package> 衍生的類別；它可以幫助您與 Visual Studio 互動。 在這個案例中，您會使用其 <xref:Microsoft.VisualStudio.Shell.Package.GetService%2A> 取得 <xref:EnvDTE80.DTE2> 物件。
+1. 在 Visual Studio 封裝項目範本的 VSIX 專案，尋找 *\<專案名稱 > Package.cs*檔案。 這是從 <xref:Microsoft.VisualStudio.Shell.Package> 衍生的類別；它可以幫助您與 Visual Studio 互動。 在這個案例中，您會使用其 <xref:Microsoft.VisualStudio.Shell.Package.GetService%2A> 取得 <xref:EnvDTE80.DTE2> 物件。
 
 2. 加入以下 `using` 陳述式：
 
@@ -162,7 +162,7 @@ ms.locfileid: "63417182"
 
 1. 建立具有功能表命令，為 VSPackage[如何開始開發的 VSIX 擴充功能？](../extensibility/faq-converting-add-ins-to-vspackage-extensions.md#BKMK_StartDeveloping)一節。
 
-2. 開啟包含 VSPackage 之定義的檔案。 (在 C# 專案中，它有*\<您的專案名稱>Package.cs*。)
+2. 開啟包含 VSPackage 之定義的檔案。 (在 C# 專案中，它有 *\<您的專案名稱>Package.cs*。)
 
 3. 加入以下 `using` 陳述式：
 
@@ -210,7 +210,7 @@ ms.locfileid: "63417182"
 
 1. 建立具有功能表命令，為 VSPackage[如何開始開發的 VSIX 擴充功能？](../extensibility/faq-converting-add-ins-to-vspackage-extensions.md#BKMK_StartDeveloping)一節。
 
-2. 開啟包含 VSPackage 之定義的檔案。 (在 C# 專案中，它有*\<您的專案名稱>Package.cs*。)
+2. 開啟包含 VSPackage 之定義的檔案。 (在 C# 專案中，它有 *\<您的專案名稱>Package.cs*。)
 
 3. 加入以下 `using` 陳述式：
 

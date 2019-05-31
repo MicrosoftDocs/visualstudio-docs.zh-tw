@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IEnumDebugPrograms2::GetCount
 ms.assetid: 84832982-fa68-4090-a5b7-b233817876b7
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 656ef6cd8bab9ed1946dd8e04a81c93aa428324e
-ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.openlocfilehash: 3a177b0025859d5b832c61ab343c5bedf81ae127
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/24/2019
-ms.locfileid: "66210668"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66317120"
 ---
 # <a name="ienumdebugprograms2getcount"></a>IEnumDebugPrograms2::GetCount
 列舉中傳回的項目數。

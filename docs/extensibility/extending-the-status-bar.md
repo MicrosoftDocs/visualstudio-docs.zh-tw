@@ -6,17 +6,17 @@ helpviewer_keywords:
 - status bars, about status bars
 - status bars, overview
 ms.assetid: f955115c-4c5f-45ec-b41b-365868c5ec0c
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 499e6c2b34fcc5261ab8fb3a87a24e2cc0959d8c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c555c2a23b52d475b01fbf8cc2086167acc423dc
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62911904"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66342871"
 ---
 # <a name="extend-the-status-bar"></a>擴充狀態列
 您可以使用 Visual Studio 的 [狀態] 列在 IDE 底部，以顯示資訊。

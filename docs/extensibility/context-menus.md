@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - context menus
 ms.assetid: 44fd9e6a-6d42-4aba-80ba-f37fa0070f1d
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 19838bbc1dfeeb0a0df9e1e1ce409557b6a28f1e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d5534d0895e35e252364b491858a694a1f5b726a
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62926661"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66341725"
 ---
 # <a name="context-menus"></a>操作功能表
 操作功能表會顯示當使用者以滑鼠右鍵按一下的作用中區域的工作區中，並清除 當使用者放開滑鼠右按鈕。

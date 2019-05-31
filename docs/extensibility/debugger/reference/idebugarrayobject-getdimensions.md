@@ -7,17 +7,17 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugArrayObject::GetDimensions method
 ms.assetid: 113e0aff-9028-49d6-b104-9fe7be4772d7
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 60ee75454bf105f12b79d60e032549bcb84ab465
-ms.sourcegitcommit: 77b4ca625674658d5c5766e684fa0e2a07cad4da
+ms.openlocfilehash: 781da7eadce78d5332befe91231131f02341574b
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/14/2019
-ms.locfileid: "65615246"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66318998"
 ---
 # <a name="idebugarrayobjectgetdimensions"></a>IDebugArrayObject::GetDimensions
 取得陣列維度。

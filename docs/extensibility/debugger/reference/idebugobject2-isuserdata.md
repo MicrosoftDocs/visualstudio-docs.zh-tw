@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugObject2::IsUserData method
 ms.assetid: 6ffa0d0e-f742-496d-acc7-db74c248bc45
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: c9d791a181227b481f27f9347897fce4dda158a2
-ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.openlocfilehash: 94c3f6adc9dd75e1ed4ecc4c5fd7f37635099566
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/24/2019
-ms.locfileid: "66209776"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66317247"
 ---
 # <a name="idebugobject2isuserdata"></a>IDebugObject2::IsUserData
 判斷物件是否代表使用者資料。

@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugEngine2::Attach
 ms.assetid: 173dcbda-5019-4c5e-bca9-a071838b5739
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 29f9b8ce9e235fc25a1c52930bbf31ec8d8cf557
-ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.openlocfilehash: bc70b27793e722db4a07107d419b383a76207322
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/24/2019
-ms.locfileid: "66207785"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66330161"
 ---
 # <a name="idebugengine2attach"></a>IDebugEngine2::Attach
 將偵錯引擎 (DE) 附加至程式或程式。 執行同處理序以 SDM DE 時，由工作階段的偵錯管理員 (SDM) 呼叫。

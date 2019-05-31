@@ -7,17 +7,17 @@ helpviewer_keywords:
 - GUIDs, VSPackages
 - CATIDs for VSPackages
 ms.assetid: 0c7fdb66-ed96-4b36-89f6-021bca573572
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2af331bd100cfedd75e6ab1c90ad7a75c5c83961
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5a9a5643a217fb9be3147417ffd0405ab9b0cc9f
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62910659"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66324253"
 ---
 # <a name="catids-for-objects-that-are-typically-used-to-extend-projects"></a>Catid 通常用來擴充專案的物件
 下表列出可用來擴充的 Catid`Project`並`ProjectItem`自動化物件[!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)]， [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)]，和[!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)]專案。 在 定義這些 Catid *VSLangProj.olb*。

@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProgram2::EnumCodeContexts
 ms.assetid: 478e06a2-07bb-4841-8887-deab0f42ebd0
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 88eb307836fa2a340ec3ba99577fc0be76352958
-ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.openlocfilehash: 2b710c48d8fe030bab1f7ea6b2fe76a10b879499
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/24/2019
-ms.locfileid: "66200390"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66326718"
 ---
 # <a name="idebugprogram2enumcodecontexts"></a>IDebugProgram2::EnumCodeContexts
 擷取一份原始程式檔中的指定位置的程式碼內容。

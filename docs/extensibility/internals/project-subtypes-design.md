@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - project subtypes, design
 ms.assetid: 405488bb-1362-40ed-b0f1-04a57fc98c56
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 28cc20d00a9846fa119666b01aea2efab3a128ac
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: dee113f16e43be95e456f1f6189b4922b2d3e926
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62909373"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66328248"
 ---
 # <a name="project-subtypes-design"></a>設計專案子類型
 

@@ -15,12 +15,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a64256f44e9de5bbfd9e65dd6410b9911aaf5075
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7e1fbc0bf5412888f246a1f396b146780013b6c6
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62997566"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66263059"
 ---
 # <a name="update-visual-studio-to-the-most-recent-release"></a>將 Visual Studio 更新至最新版本
 
@@ -28,7 +28,7 @@ ms.locfileid: "62997566"
 
 我們建議您更新到[最新版本](/visualstudio/releasenotes/vs2017-relnotes/)的 Visual Studio 2017，使您可以持續取得最新的功能、修正及功能改進。
 
-如果您希望試用下一個版本，請考慮一併下載 [Visual Studio 2019](//visualstudio/releases/2019/release-notes/) 的候選版。
+如果您希望試用下一個版本，請考慮一併下載 [Visual Studio 2019](/visualstudio/releases/2019/release-notes/) 的候選版。
 
 > [!IMPORTANT]
 > 您必須以具有安裝、更新或修改 Visual Studio 之系統管理權限的帳戶登入。 如需詳細資訊，請參閱[使用者權限和 Visual Studio](../ide/user-permissions-and-visual-studio.md)。

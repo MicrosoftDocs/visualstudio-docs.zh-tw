@@ -7,17 +7,17 @@ helpviewer_keywords:
 - toolbars [Visual Studio], adding icons to commands
 - commands [Visual Studio], adding icons
 ms.assetid: 362a0c7e-5729-4297-a83f-1aba1a37fd44
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a0d6a6cfeb3cb222d2ef58233b072f80e50c8d9e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d1c54ee6b448e5830b478f10029a0d2d958e7699
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62891887"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66352367"
 ---
 # <a name="add-icons-to-menu-commands"></a>將圖示加入至功能表命令
 命令可以出現在功能表和工具列。 在工具列上很常見的只是圖示 （以節省空間） 時在功能表上顯示命令通常會出現圖示和文字的命令。
@@ -57,7 +57,7 @@ ms.locfileid: "62891887"
 
     - 設定`guid`值的名稱`<GuidSymbol>`您在上一個步驟中建立的項目。
 
-    - 設定`href`點陣圖檔的相對路徑的值 (在此情況下**資源\\< 圖示檔檔名\>**。
+    - 設定`href`點陣圖檔的相對路徑的值 (在此情況下**資源\\< 圖示檔檔名\>** 。
 
     - 設定`usedList`IDSymbol 您稍早建立的值。 這個屬性會指定要用於 VSPackage 的圖示以逗號分隔清單。 排除的表單編譯是不在清單上的圖示。
 

@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - m_contingentProperties field, Task class [.NET Framework debug engines]
 ms.assetid: 49e8cb36-db39-440b-acda-a325651f1165
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: bfbcfcbca544694fa1a8db95d23a006e45f89bbf
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a583f6e42198f3ad01af99ab9bfa164793eada68
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62925433"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66330874"
 ---
 # <a name="mcontingentproperties-field"></a>m_contingentProperties 欄位
 儲存的其他屬性<xref:System.Threading.Tasks.Task>物件。

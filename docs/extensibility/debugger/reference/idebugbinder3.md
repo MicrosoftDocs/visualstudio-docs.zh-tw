@@ -7,17 +7,17 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugBinder3 interface
 ms.assetid: 92353a74-dc74-4f93-8762-61d6b220478c
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a08ee3f637b954d2df7e48fb8f6aebbdd0948c19
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 97e3165be9d478d08f4de7eb623de5b93fd3433a
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63414068"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66330857"
 ---
 # <a name="idebugbinder3"></a>IDebugBinder3
 > [!IMPORTANT]

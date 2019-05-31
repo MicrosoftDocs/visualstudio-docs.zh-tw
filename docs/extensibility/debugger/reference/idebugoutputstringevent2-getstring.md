@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugOutputStringEvent2::GetString
 ms.assetid: f059f8e0-ad44-49ac-ba90-73576ada5e06
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 9d485d1ea3b3f8eeb01d0ea9183544b9017af2b3
-ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.openlocfilehash: c38b091a3a69752a31625d111cdc6725e806e7b1
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/24/2019
-ms.locfileid: "66209749"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66317169"
 ---
 # <a name="idebugoutputstringevent2getstring"></a>IDebugOutputStringEvent2::GetString
 取得可顯示的訊息。

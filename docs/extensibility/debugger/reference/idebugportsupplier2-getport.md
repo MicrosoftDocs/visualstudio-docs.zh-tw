@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugPortSupplier2::GetPort
 ms.assetid: d55d5055-7386-4037-bf22-4c3e434a99ca
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 8ed00f3e4e6dbdb61e7a9ca39974e73f25246724
-ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.openlocfilehash: 3b27c810ec6cb71cacb54e39ad97a95b53480232
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/24/2019
-ms.locfileid: "66204441"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66340139"
 ---
 # <a name="idebugportsupplier2getport"></a>IDebugPortSupplier2::GetPort
 從連接埠提供者取得的連接埠。

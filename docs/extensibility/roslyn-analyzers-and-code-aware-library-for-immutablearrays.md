@@ -3,17 +3,17 @@ title: Roslyn 分析器和程式碼感知程式庫，適用於 Immutablearray |M
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 0b0afa22-3fca-4d59-908e-352464c1d903
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 28ddaafc8ab4ddbaef1d7e42faedc2229664c6e6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a0c2eed45ce27fb108b0cdd0c84f64e4e253c9c1
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62433327"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66334162"
 ---
 # <a name="roslyn-analyzers-and-code-aware-library-for-immutablearrays"></a>Roslyn 分析器和程式碼感知程式庫，適用於 Immutablearray
 
@@ -131,7 +131,7 @@ Console.WriteLine("b2.Length = {0}", b2.Length);
 
 使用程式碼行`ImmutableArray`具有波浪線，因為您要取得不可變的 NuGet 套件，並新增`using`陳述式，以您的程式碼。 中的專案節點上按右指標按鈕**方案總管**，然後選擇**管理 NuGet 套件**。 在 NuGet 管理員中，在 搜尋 方塊中，輸入 「 不可變 」，然後選擇 項目**System.Collections.Immutable** (請勿選擇**Microsoft.Bcl.Immutable**) 的左的窗格，然後按下**安裝**右窗格中的按鈕。 安裝套件將參考加入您的專案參考。
 
-您仍然看到紅色的波浪線下`ImmutableArray`，因此將插入號放在該識別項，然後按**Ctrl**+**。** （句點），來顯示建議的修正程式功能表，然後選擇 新增適當`using`陳述式。
+您仍然看到紅色的波浪線下`ImmutableArray`，因此將插入號放在該識別項，然後按**Ctrl**+ **。** （句點），來顯示建議的修正程式功能表，然後選擇 新增適當`using`陳述式。
 
 **全部儲存並關閉**能讓您在乾淨狀態繼續目前的 Visual Studio 的第二個執行個體。
 
@@ -210,7 +210,7 @@ private void AnalyzeObjectCreation(SyntaxNodeAnalysisContext context)
 
 在開始之前，請關閉 Visual Studio 的第二個執行個體，並停止在第一個執行個體 （其中您正在開發 「 分析器 」） 的 Visual Studio 中偵錯。
 
-**加入新的類別。** 使用捷徑功能表 （右指標按鈕），在您的專案節點上**方案總管] 中**，然後選擇 [加入新項目。 新增類別，稱為`BuildCodeFixProvider`。 這個類別必須衍生自`CodeFixProvider`，而且您必須使用**Ctrl**+**。** （句點），來叫用加入正確的程式碼修正`using`陳述式。 這個類別也必須使用註解`ExportCodeFixProvider`屬性，而且您必須新增`using`陳述式，以解決`LanguageNames`列舉。 您應該具有下列的程式碼的類別檔案：
+**加入新的類別。** 使用捷徑功能表 （右指標按鈕），在您的專案節點上**方案總管] 中**，然後選擇 [加入新項目。 新增類別，稱為`BuildCodeFixProvider`。 這個類別必須衍生自`CodeFixProvider`，而且您必須使用**Ctrl**+ **。** （句點），來叫用加入正確的程式碼修正`using`陳述式。 這個類別也必須使用註解`ExportCodeFixProvider`屬性，而且您必須新增`using`陳述式，以解決`LanguageNames`列舉。 您應該具有下列的程式碼的類別檔案：
 
 ```csharp
 using Microsoft.CodeAnalysis;
@@ -223,7 +223,7 @@ namespace ImmutableArrayAnalyzer
     {}
 ```
 
-**虛設常式衍生的成員。** 現在，將編輯器插入號放在識別項`CodeFixProvider`按下**Ctrl**+**。** （句點） 來去除這個抽象基底類別的實作。 這會為您產生的屬性和方法。
+**虛設常式衍生的成員。** 現在，將編輯器插入號放在識別項`CodeFixProvider`按下**Ctrl**+ **。** （句點） 來去除這個抽象基底類別的實作。 這會為您產生的屬性和方法。
 
 **實作屬性。** 填寫`FixableDiagnosticIds`屬性的`get`本文中的下列程式碼：
 
@@ -244,14 +244,14 @@ var root = await context.Document
                         .GetSyntaxRootAsync(context.CancellationToken);
 ```
 
-**尋找與問題的節點。** 您傳遞內容的範圍內，但您發現可能不是您不必變更程式碼的節點。 回報的診斷僅供範圍 （其中的波浪線所屬） 型別識別項，但您需要將整個物件建立運算式，包括`new`關鍵字開頭和結尾括號。 將下列程式碼新增至您的方法 (並用**Ctrl**+**。** 若要新增`using`陳述式`ObjectCreationExpressionSyntax`):
+**尋找與問題的節點。** 您傳遞內容的範圍內，但您發現可能不是您不必變更程式碼的節點。 回報的診斷僅供範圍 （其中的波浪線所屬） 型別識別項，但您需要將整個物件建立運算式，包括`new`關鍵字開頭和結尾括號。 將下列程式碼新增至您的方法 (並用**Ctrl**+ **。** 若要新增`using`陳述式`ObjectCreationExpressionSyntax`):
 
 ```csharp
 var objectCreation = root.FindNode(context.Span)
                          .FirstAncestorOrSelf<ObjectCreationExpressionSyntax>();
 ```
 
-**註冊您的程式碼修正的燈泡 UI。** 當您註冊您的程式碼修正時，Roslyn 外掛到 Visual Studio 燈泡 UI 自動。 使用者會看到他們可以使用**Ctrl**+**。** （句號） 時您分析器波浪線不良`ImmutableArray<T>`建構函式使用。 因為只有當發生問題時，才會執行您的程式碼修正提供者，您可以假設您有您要尋找的物件建立運算式。 從內容參數，您可以註冊新的程式碼修正的結尾新增下列程式碼`RegisterCodeFixAsync`方法：
+**註冊您的程式碼修正的燈泡 UI。** 當您註冊您的程式碼修正時，Roslyn 外掛到 Visual Studio 燈泡 UI 自動。 使用者會看到他們可以使用**Ctrl**+ **。** （句號） 時您分析器波浪線不良`ImmutableArray<T>`建構函式使用。 因為只有當發生問題時，才會執行您的程式碼修正提供者，您可以假設您有您要尋找的物件建立運算式。 從內容參數，您可以註冊新的程式碼修正的結尾新增下列程式碼`RegisterCodeFixAsync`方法：
 
 ```csharp
 context.RegisterCodeFix(
@@ -262,9 +262,9 @@ context.RegisterCodeFix(
             context.Diagnostics[0]);
 ```
 
-您需要將編輯器插入號放在識別項， `CodeAction`，然後使用**Ctrl**+**。** （句點），將適當`using`這種類型的陳述式。
+您需要將編輯器插入號放在識別項， `CodeAction`，然後使用**Ctrl**+ **。** （句點），將適當`using`這種類型的陳述式。
 
-然後將放在編輯器的插入號`ChangeToImmutableArrayEmpty`識別項，並使用**Ctrl**+**。** 為您產生方法 stub。
+然後將放在編輯器的插入號`ChangeToImmutableArrayEmpty`識別項，並使用**Ctrl**+ **。** 為您產生方法 stub。
 
 這個最後的程式碼片段，您加入註冊的程式碼修正，藉由傳遞`CodeAction`和發現的問題種類的診斷識別碼。 在此範例中，有一個只有此程式碼提供的診斷識別碼的修正程式，讓您可以只將診斷識別碼陣列的第一個元素。 當您建立`CodeAction`，您可以傳入燈泡 UI 應該做的程式碼修正的描述文字。 您也將採用 CancellationToken，並傳回新的文件的函式中傳遞。 新的文件中有新的語法樹狀結構，其中包含您的修補程式碼呼叫`ImmutableArray.Empty`。 此程式碼片段會使用 lambda，讓它可以關閉 objectCreation 節點和內容的文件。
 
@@ -288,7 +288,7 @@ private async Task<Document> ChangeToImmutableArrayEmpty(
 }
 ```
 
-您必須將編輯器插入號放在`SyntaxGenerator`識別項，並使用**Ctrl**+**。** （句點），將適當`using`這種類型的陳述式。
+您必須將編輯器插入號放在`SyntaxGenerator`識別項，並使用**Ctrl**+ **。** （句點），將適當`using`這種類型的陳述式。
 
 此程式碼使用`SyntaxGenerator`，這是很有用的型別來建構新的程式碼。 取得文件的產生器程式碼問題之後,`ChangeToImmutableArrayEmpty`呼叫`MemberAccessExpression`、 傳遞有我們想要存取的成員的類型和成員的名稱傳遞為字串。
 
@@ -296,9 +296,9 @@ private async Task<Document> ChangeToImmutableArrayEmpty(
 
 ## <a name="try-your-code-fix"></a>試用您的程式碼修正
 
-您現在可以按下**F5** Visual Studio 的第二個執行個體中執行您的分析器。 開啟您之前使用的主控台專案。 現在您應該會看到燈泡會出現新的物件建立運算式會為`ImmutableArray<int>`。 如果您按下**Ctrl**+**。** （期間），然後您會看到您的程式碼修正，，，您會看到燈泡 UI 中的自動產生的程式碼差異預覽。 Roslyn 為您建立這。
+您現在可以按下**F5** Visual Studio 的第二個執行個體中執行您的分析器。 開啟您之前使用的主控台專案。 現在您應該會看到燈泡會出現新的物件建立運算式會為`ImmutableArray<int>`。 如果您按下**Ctrl**+ **。** （期間），然後您會看到您的程式碼修正，，，您會看到燈泡 UI 中的自動產生的程式碼差異預覽。 Roslyn 為您建立這。
 
-**Pro 提示：** 如果您啟動 Visual Studio 中，第二個執行個體，而且您沒有看到與您的程式碼修正的燈泡，您可能需要清除 Visual Studio 元件快取。 清除快取會強制 Visual Studio 來重新檢查的元件，因此 Visual Studio 應該會挑選您最新的元件。 首先，請關閉 Visual Studio 的第二個執行個體。 然後，在**Windows 檔案總管**，瀏覽至 *%LOCALAPPDATA%\Microsoft\VisualStudio\16.0Roslyn\\*。 （「 16.0"會變更版本與 Visual Studio）。刪除子目錄*ComponentModelCache*。
+**Pro 提示：** 如果您啟動 Visual Studio 中，第二個執行個體，而且您沒有看到與您的程式碼修正的燈泡，您可能需要清除 Visual Studio 元件快取。 清除快取會強制 Visual Studio 來重新檢查的元件，因此 Visual Studio 應該會挑選您最新的元件。 首先，請關閉 Visual Studio 的第二個執行個體。 然後，在**Windows 檔案總管**，瀏覽至 *%LOCALAPPDATA%\Microsoft\VisualStudio\16.0Roslyn\\* 。 （「 16.0"會變更版本與 Visual Studio）。刪除子目錄*ComponentModelCache*。
 
 ## <a name="talk-video-and-finish-code-project"></a>視訊並完成程式碼專案
 

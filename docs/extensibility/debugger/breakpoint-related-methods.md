@@ -6,17 +6,17 @@ helpviewer_keywords:
 - debugging [Debugging SDK], breakpoint methods
 - breakpoints, methods
 ms.assetid: a6f77bf0-bf81-443f-8683-5f12075bbe10
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c1781e6aab84bfcdc665ef0d779130decc9c6421
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1eec6f966720b5240a92a926a003c38a40d4aabc
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62926020"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66332495"
 ---
 # <a name="breakpoint-related-methods"></a>中斷點相關的方法
 偵錯引擎 (DE) 必須支援的設定中斷點。 Visual Studio 偵錯支援下列類型的中斷點：

@@ -7,17 +7,17 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProgramNodeAttach2 interface
 ms.assetid: 46b37ac9-a026-4ad3-997b-f19e2f8deb73
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a2b883500b0d768641887af8e9ef126094ead534
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: 0d42b204ee0c36bc4c006704e663f41c87a83a60
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65458988"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66325150"
 ---
 # <a name="idebugprogramnodeattach2"></a>IDebugProgramNodeAttach2
 允許程式節點，嘗試附加至相關聯的程式的通知。

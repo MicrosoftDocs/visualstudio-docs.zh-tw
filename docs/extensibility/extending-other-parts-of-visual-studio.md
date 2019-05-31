@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - user interfaces
 ms.assetid: 27d2f1e1-2503-4aca-9cfc-707abd07ccf0
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: cf4066a9eee47d1ffad156768287bf036aaae3cf
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 31cbad96f52b3c29c417c3d380c39dd4cc610dd6
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62912424"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66341083"
 ---
 # <a name="extend-other-parts-of-visual-studio"></a>擴充 Visual Studio 的其他部分
 

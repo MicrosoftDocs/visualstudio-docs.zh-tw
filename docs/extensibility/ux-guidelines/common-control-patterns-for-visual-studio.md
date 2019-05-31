@@ -3,17 +3,17 @@ title: 適用於 Visual Studio 的通用控制項模式 |Microsoft Docs
 ms.date: 04/26/2017
 ms.topic: conceptual
 ms.assetid: 3e893949-6398-42f1-9eab-a8d8c2b7f02d
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c89babf7dc9f90b4042d917bf5843a0703628883
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: c96e3798c79fcca03052dc597270312f374f1b33
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62799151"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66312304"
 ---
 # <a name="common-control-patterns-for-visual-studio"></a>適用於 Visual Studio 的通用控制項模式
 ## <a name="BKMK_CommonControls"></a> 通用控制項
@@ -64,7 +64,7 @@ ms.locfileid: "62799151"
 
 - 唯讀欄位會顯示有但 （使用中） 的預設前景灰色 （停用） 背景。
 
-- 所需欄位應有**\<需要 >** 做為其中的標準。 您不應該變更除了在少數情況下的背景色彩。
+- 所需欄位應有 **\<需要>** 做為其中的標準。 您不應該變更除了在少數情況下的背景色彩。
 
 - 錯誤驗證：請參閱[通知和適用於 Visual Studio 的進度](../../extensibility/ux-guidelines/notifications-and-progress-for-visual-studio.md)
 
@@ -274,7 +274,7 @@ ms.locfileid: "62799151"
 
 使用僅限省略符號的簡短按鈕的時機：
 
-- 如果有一個以上長 **[瀏覽...]** 在對話方塊中，例如數個欄位進行瀏覽 按鈕。 使用簡短的 **[...]** 針對每個以避免這種情況下所建立令人困惑的存取金鑰 按鈕 (**（& s) 瀏覽**並**B & 覽**相同的對話方塊中)。
+- 如果有一個以上長 **[瀏覽...]** 在對話方塊中，例如數個欄位進行瀏覽 按鈕。 使用簡短的 **[...]** 針對每個以避免這種情況下所建立令人困惑的存取金鑰 按鈕 ( **（& s) 瀏覽**並**B & 覽**相同的對話方塊中)。
 
 - 在嚴格的對話方塊中，或將長的按鈕沒有合理的地方。
 
@@ -317,7 +317,7 @@ ms.locfileid: "62799151"
 超連結是適合用來巡覽為基礎的動作，例如開啟說明主題、 強制回應對話方塊中或精靈。 如果命令使用超連結，它應該一律 ui 會顯示可見及明顯的變更。 一般情況下，認可至動作 （例如儲存，請 [取消]，並刪除） 的動作是更好溝通使用按鈕中。
 
 #### <a name="writing-style"></a>撰寫樣式
-請遵循[使用者介面文字的 Windows 桌面指引](/windows/desktop/uxguide/text-ui)。 請勿使用 「 了解更多關於，」 「 告訴我更多關於，」 或 「 取得協助與這個"片語。 相反地，片語解答的說明內容的主要問題方面的說明連結文字。 比方說，「**方式 [伺服器總管] 來新增伺服器？**"
+請遵循[使用者介面文字的 Windows 桌面指引](/windows/desktop/uxguide/text-ui)。 請勿使用 「 了解更多關於，」 「 告訴我更多關於，」 或 「 取得協助與這個"片語。 相反地，片語解答的說明內容的主要問題方面的說明連結文字。 比方說，「**方式 [伺服器總管] 來新增伺服器？** "
 
 #### <a name="visual-style"></a>視覺化樣式
 

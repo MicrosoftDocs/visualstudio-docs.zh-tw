@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugObject::GetSize method
 ms.assetid: 89af423b-36eb-479d-b2de-2693455eca15
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 90e1ef51da35868832c15dade78e9974b0d4614f
-ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.openlocfilehash: 22d47ba6fdeb22ad44871d08419aa2e4990a83fc
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/24/2019
-ms.locfileid: "66202889"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66323598"
 ---
 # <a name="idebugobjectgetsize"></a>IDebugObject::GetSize
 取得物件的大小，以位元組為單位。

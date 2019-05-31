@@ -7,18 +7,18 @@ helpviewer_keywords:
 - custom start page
 - start page assembly
 ms.assetid: 5b7997db-af6f-4fa9-a128-bceb42bddaf1
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
 monikerRange: vs-2017
-ms.openlocfilehash: 5a5e8d752122432e27d7b6845f6d144856746387
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c662374b8ed0abc7e1c178fb4ff07d5033de8a54
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62891811"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66352297"
 ---
 # <a name="add-user-control-to-the-start-page"></a>將使用者控制項加入至 [入門] 頁面
 
@@ -179,13 +179,13 @@ ms.locfileid: "62891811"
 
 1. 將您的 XAML 檔案，並支援文字檔案或標記檔案，為複製 *%USERPROFILE%\My Documents\Visual Studio 2015\StartPages\\* 資料夾。
 
-2. 如果您的起始頁會參考任何控制項或 Visual Studio 不會安裝的組件中的類型，將組件複製並貼在_Visual Studio 安裝資料夾_**\Common7\IDE\在 PrivateAssemblies\\**。
+2. 如果您的起始頁會參考任何控制項或 Visual Studio 不會安裝的組件中的類型，將組件複製並貼在_Visual Studio 安裝資料夾_ **\Common7\IDE\在 PrivateAssemblies\\** 。
 
 3. 在 Visual Studio 命令提示字元中，輸入**devenv /rootsuffix Exp**開啟 Visual Studio 的實驗執行個體。
 
 4. 在實驗執行個體中，移至**工具** > **選項** > **環境** > **啟動**頁面上，選取您的 XAML 檔案，從**自訂起始頁**下拉式清單。
 
-5. 在 [檢視]  功能表上，按一下 [起始頁] 。
+5. 在 [檢視]  功能表上，按一下 [起始頁]  。
 
     應該會顯示您的自訂起始頁。 如果您想要變更任何檔案，您必須關閉實驗執行個體、 進行變更、 複製並貼變更的檔案，然後再重新開啟實驗的執行個體，以檢視所做的變更。
 

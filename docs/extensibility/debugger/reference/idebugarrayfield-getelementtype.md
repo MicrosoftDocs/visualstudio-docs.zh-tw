@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugArrayField::GetElementType method
 ms.assetid: c46bf625-0a48-4cbb-8f1f-286356f2c065
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: d090767cd50f465ea35033875cb84597fa8c6a47
-ms.sourcegitcommit: 77b4ca625674658d5c5766e684fa0e2a07cad4da
+ms.openlocfilehash: 13dabbf61999e8558fe08ecb65169dd43302d98f
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/14/2019
-ms.locfileid: "65615139"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66320963"
 ---
 # <a name="idebugarrayfieldgetelementtype"></a>IDebugArrayField::GetElementType
 取得項目的型別陣列中。

@@ -8,20 +8,20 @@ helpviewer_keywords:
 - SetPassCount method
 - IDebugBoundBreakpoint2::SetPassCount method
 ms.assetid: b32c12f9-b34d-43bd-a1b9-61af6cf8e51b
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 97e783947055bda86a35bb8b68a44c13da3613c0
-ms.sourcegitcommit: 77b4ca625674658d5c5766e684fa0e2a07cad4da
+ms.openlocfilehash: ee0032a079ff9c67e0a2de350e0405cfa20303db
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/14/2019
-ms.locfileid: "65614692"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66314515"
 ---
 # <a name="idebugboundbreakpoint2setpasscount"></a>IDebugBoundBreakpoint2::SetPassCount
 設定或變更與此繫結中斷點相關聯的傳遞計數。

@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugSymbolProvider::GetNamespacesUsedAtAddress method
 ms.assetid: 392de54b-9af0-4567-953b-1b41acd1e05c
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: fe8f9dafa4543148ed373295f9c694e7678491a9
-ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.openlocfilehash: adf78f67d9da92c0024b34ec53fc10f772b66ca1
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/24/2019
-ms.locfileid: "66207171"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66347537"
 ---
 # <a name="idebugsymbolprovidergetnamespacesusedataddress"></a>IDebugSymbolProvider::GetNamespacesUsedAtAddress
 這個方法會建立偵錯位址相關聯的命名空間的列舉值。

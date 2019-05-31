@@ -1,5 +1,5 @@
 ---
-title: 跳離C#原生框架遺失呼叫堆疊中時，程式碼 |Microsoft Docs
+title: 跳離C#原生框架不在呼叫堆疊時的程式碼
 ms.custom: seodec18
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -23,16 +23,16 @@ manager: jillfra
 ms.workload:
 - cplusplus
 - dotnet
-ms.openlocfilehash: 1efe109741c306d45ce7f7749193f5b638b76949
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 15169fb1cdbba554ee2066f3123ded8c60f7408f
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62846943"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66263368"
 ---
-# <a name="how-to-step-out-of-managed-code-when-native-frames-are-missing-from-the-call-stack-window"></a>HOW TO：在原生框架從呼叫堆疊視窗遺失時跳離受控程式碼
+# <a name="how-to-step-out-of-managed-code-when-native-frames-are-missing-from-the-call-stack-window"></a>作法：在原生框架從呼叫堆疊視窗遺失時跳離受控程式碼
 
-如果程式碼擁有在 [呼叫堆疊] 視窗中不可見的原生框架，跳離受控程式碼函式可以產生未預期的結果。 您可使用中斷點，而不要使用 [跳離函式]，便可解決這個問題。
+如果程式碼擁有在 [呼叫堆疊]  視窗中不可見的原生框架，跳離受控程式碼函式可以產生未預期的結果。 您可使用中斷點，而不要使用 [跳離函式]  ，便可解決這個問題。
 
 > [!NOTE]
 > 根據您目前使用的設定或版本，您所看到的對話方塊與功能表命令可能會與 [說明] 中描述的不同。 若要變更設定，請從 [ **工具** ] 功能表中選取 [ **匯入和匯出設定** ]。 如需詳細資訊，請參閱[重設設定](../ide/environment-settings.md#reset-settings)。
@@ -41,7 +41,7 @@ ms.locfileid: "62846943"
 
 1. 在機器碼中，請在呼叫 Managed 程式碼之後設定一個位置中斷點。
 
-2. 選擇 [偵錯] 功能表上的 [繼續]。
+2. 選擇 [偵錯]  功能表上的 [繼續]  。
 
      完成 Managed 呼叫之後，執行將停止於機器碼的中斷點處。
 

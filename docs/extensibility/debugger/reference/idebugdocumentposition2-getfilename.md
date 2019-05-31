@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugDocumentPosition2::GetFileName
 ms.assetid: d713635e-088f-465b-b26d-00ac971c9e86
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: f0b1c2dbde9131d4dee25ff4d6535f8c835aafae
-ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.openlocfilehash: 478f259d111e19df988c76733d1bb52655adab2c
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/24/2019
-ms.locfileid: "66211804"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66326533"
 ---
 # <a name="idebugdocumentposition2getfilename"></a>IDebugDocumentPosition2::GetFileName
 取得包含文件位置的原始程式檔的檔案名稱。

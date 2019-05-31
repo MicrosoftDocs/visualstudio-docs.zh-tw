@@ -3,18 +3,18 @@ title: 逐步解說：在 [開始] 頁面上儲存使用者設定 |Microsoft Doc
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 754b9bf3-8681-4c77-b0a4-09146a4e1d2d
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
 monikerRange: vs-2017
-ms.openlocfilehash: 2362bda715a95e4228b6e4f882f1f8fb708667dd
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 79a54867044961d972e2ded452958d2463038e7d
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62964777"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66318514"
 ---
 # <a name="walkthrough-save-user-settings-on-a-start-page"></a>逐步解說：起始頁上儲存使用者設定
 
@@ -168,7 +168,7 @@ ms.locfileid: "62964777"
 
 3. 在**環境**節點中，按一下**啟動**，然後在**自訂起始頁**清單中，選取 **[安裝延伸模組] 儲存我的設定開始頁面**.
 
-     按一下 [確定] 。
+     按一下 [確定]  。
 
 4. 如果已開啟，然後在關閉 [入門] 頁面**檢視**功能表上，按一下**起始頁**。
 

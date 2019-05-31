@@ -7,17 +7,17 @@ helpviewer_keywords:
 - debugging [Debugging SDK], expression evaluators
 - expression evaluation, examples
 ms.assetid: 2a5f04b8-6c65-4232-bddd-9093653a22c4
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 95d89340d41b79339b5501092919dccad2005570
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 0135c8dd61ca2505c1458bc157b574e6bcbee09a
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63420830"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66315077"
 ---
 # <a name="sample-implementation-of-expression-evaluation"></a>運算式評估的範例實作
 > [!IMPORTANT]

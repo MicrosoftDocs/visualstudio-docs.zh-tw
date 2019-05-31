@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugReference2::GetDerivedMostReference
 ms.assetid: 07253b74-7d39-48e0-8e85-ac8dfd919f6e
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 4b9534c144ae08a6fa5791518fea7d463819140b
-ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.openlocfilehash: 8775087b9ec212f7e7d7e1547d01a5f175c4dc22
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/24/2019
-ms.locfileid: "66212948"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66329817"
 ---
 # <a name="idebugreference2getderivedmostreference"></a>IDebugReference2::GetDerivedMostReference
 取得參考的最具衍生性參考。 保留供未來使用。

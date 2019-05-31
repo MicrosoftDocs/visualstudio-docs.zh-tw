@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - add a menu command
 ms.assetid: 08526848-a442-4cd4-afa1-b2eac2005adb
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d0eade1bf17955bce52ea53b159f23102afb74b8
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: b89d4d4356245929bbd8ada7790729e78da3d15d
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63444926"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66328141"
 ---
 # <a name="walkthrough-use-a-shell-command-with-an-editor-extension"></a>逐步解說：搭配編輯器擴充功能使用 shell 命令
 從 VSPackage，您可以將功能，例如功能表命令新增至編輯器。 本逐步解說示範如何加入在編輯器中文字檢視中的裝飾，藉由叫用功能表命令。
@@ -38,7 +38,7 @@ ms.locfileid: "63444926"
 
 ## <a name="add-a-mef-extension-to-the-command-extension"></a>加入命令擴充功能的 MEF 擴充功能
 
-1. 中**方案總管**，以滑鼠右鍵按一下方案節點，按一下**新增**，然後按一下 **新專案**。 在 [**加入新的專案**] 對話方塊中，按一下**擴充性**下**Visual C#**，然後**VSIX 專案**。 將專案命名為 `CommentAdornmentTest`。
+1. 中**方案總管**，以滑鼠右鍵按一下方案節點，按一下**新增**，然後按一下 **新專案**。 在 [**加入新的專案**] 對話方塊中，按一下**擴充性**下**Visual C#** ，然後**VSIX 專案**。 將專案命名為 `CommentAdornmentTest`。
 
 2. 因為這個專案與強式名稱 VSPackage 組件會互動，您必須簽署組件。 您可以重複使用已建立 VSPackage 組件金鑰檔案。
 

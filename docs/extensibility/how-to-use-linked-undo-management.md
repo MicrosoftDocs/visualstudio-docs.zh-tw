@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - linked undo management
 ms.assetid: af5cc22a-c9cf-45b1-a894-1022d563f3ca
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f11ea8e93d7d952f28315481f65149122a7b68a3
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 0c26a07a573b682d8be569cb3e406e96cf486a4c
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63415577"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66324734"
 ---
 # <a name="how-to-use-linked-undo-management"></a>HOW TO：使用連結的復原管理
 連結的復原可讓使用者同時復原所做的相同編輯多個檔案中。 例如，跨多個程式檔，例如標頭檔和視覺效果的同時文字變更C++檔案中，連結的復原交易。 連結的復原功能內建於復原管理員 中，環境的實作和<xref:Microsoft.VisualStudio.TextManager.Interop.IVsLinkedUndoTransactionManager>可讓您管理這項功能。 連結的復原會實作可以連結在一起，以視為單一復原單元的個別復原堆疊為父系復原單位。 使用連結的復原的程序會在下一節中詳細說明。

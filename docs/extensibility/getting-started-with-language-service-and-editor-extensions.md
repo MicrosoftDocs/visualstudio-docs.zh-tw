@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - extensions
 ms.assetid: 6b151891-c06d-40b1-9867-42298caa8492
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: acb18a6471a7d2debbb20107dc780f67857327ad
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 7bd39ab8abde2fdbe337073e7cfaa7ea457b022f
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63415567"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66342452"
 ---
 # <a name="get-started-with-language-service-and-editor-extensions"></a>語言服務及編輯器擴充功能入門
 若要將語言服務功能，例如大綱、 括號對稱、 IntelliSense 和燈泡，加入您自己的程式設計語言或任何內容類型，您可以使用編輯器延伸模組。 您也可以自訂的外觀和行為的 Visual Studio 編輯器，例如色彩標示、 邊界、 裝飾和其他視覺元素的文字。 您也可以定義您自己的內容的類型，並指定的外觀和行為，您的內容會出現的文字檢視。

@@ -9,17 +9,17 @@ helpviewer_keywords:
 - newsgroups, Visual Studio SDK support
 - Web sites, Visual Studio SDK support
 ms.assetid: d9011f5a-cb53-418f-9d8f-74b15b9fc5f5
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c7e65f7e01971e6cf27bfad75e1536e83b833bd3
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 8ffe939e2f8b8470b89ff1e8837e5a074dc321ec
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65680793"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66338369"
 ---
 # <a name="support-for-the-visual-studio-sdk"></a>支援 Visual Studio SDK
 數個支援選項可供客戶有關於如何擴充 Visual Studio 整合式的開發環境 (IDE) 的問題。

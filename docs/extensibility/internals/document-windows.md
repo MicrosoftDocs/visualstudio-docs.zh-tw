@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - Visual Studio SDK, document windows
 ms.assetid: 50081d48-987f-43db-8bf9-51b7cf76e9c0
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 490c39b9e97ad6a55ca2d1695d31b85ecc13dc57
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 844176b2db6074a33ac2e612c47d3779031836df
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63418603"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66345470"
 ---
 # <a name="document-windows"></a>文件視窗
 在 Visual Studio 中，*文件視窗*是相關聯的多重文件介面 (MDI) 視窗框架的子視窗。 文件視窗通常用於顯示和修改的原始碼或文字，但它們也可以裝載其他功能的類型。 文件視窗：

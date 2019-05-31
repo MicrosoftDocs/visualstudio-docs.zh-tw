@@ -3,17 +3,17 @@ title: 適用於 Visual Studio 的動畫 |Microsoft Docs
 ms.date: 04/26/2017
 ms.topic: conceptual
 ms.assetid: 446773a9-e6f7-4c0c-8dbc-9e303bf32eb1
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 180f4c6c6d8e7770a1c0d6949db13eaa5eadb3ba
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5a99ddbe8bf1b98ce6f2fabc32b9597cd02a704e
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62799607"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66337028"
 ---
 # <a name="animations-for-visual-studio"></a>適用於 Visual Studio 的動畫
 ## <a name="animation-fundamentals"></a>動畫的基本概念

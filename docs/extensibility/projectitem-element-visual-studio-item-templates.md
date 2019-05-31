@@ -9,17 +9,17 @@ helpviewer_keywords:
 - <ProjectItem> element [Visual Studio item templates]
 - ProjectItem element [Visual Studio item templates]
 ms.assetid: 9ed94112-0c38-49df-b728-0dd2d0d1eb47
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0a853deb99314711917c9db549bc28dc447e3a32
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 30446b1aa32b31c640a8f56142dc60fcff4a5458
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63434827"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66336004"
 ---
 # <a name="projectitem-element-visual-studio-item-templates"></a>ProjectItem 項目 （Visual Studio 項目範本）
 指定項目範本中所包含的檔案。

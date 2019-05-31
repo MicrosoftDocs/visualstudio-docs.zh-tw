@@ -8,17 +8,17 @@ helpviewer_keywords:
 - shortcut menus, adding to tool windows
 - tool windows, adding context menus
 ms.assetid: 50234537-9e95-4b7e-9cb7-e5cf26d6e9d2
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: eede5f76a9689f79e769d23572a1d92f3ae3a867
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 36df685197acbac4372daa8f8c813acf22357678
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62891900"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66309941"
 ---
 # <a name="add-a-shortcut-menu-in-a-tool-window"></a>工具視窗中加入快顯功能表
 本逐步解說會置於工具視窗中的捷徑功能表。 快顯功能表是在使用者以滑鼠右鍵按一下按鈕、 文字方塊或視窗背景時出現。 快顯功能表上的命令行為與其他功能表或工具列上的命令相同。 若要支援快顯功能表，指定在 *.vsct*檔案，並顯示以回應滑鼠的按一下滑鼠右鍵。

@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugReference2::GetParent
 ms.assetid: e3061665-ad3e-4c1b-b33f-82755fa21be3
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: a0e0b4995a6c7e01af955d672040ab81183c0f47
-ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.openlocfilehash: ddef1d78d64f0e034aed9d48b59bf3e46ccba24f
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/24/2019
-ms.locfileid: "66198803"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66339802"
 ---
 # <a name="idebugreference2getparent"></a>IDebugReference2::GetParent
 取得參考的父代參考。 保留供未來使用。

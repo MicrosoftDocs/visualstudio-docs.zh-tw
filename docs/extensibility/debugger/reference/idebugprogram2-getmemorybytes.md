@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProgram2::GetMemoryBytes
 ms.assetid: 1cdedb47-caf8-468e-aaf4-163f16afb403
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: bad83e609f597f28dd5e15af7b5013f49dde6db3
-ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.openlocfilehash: ca06bd4593401544155e53c21315499d85edc07a
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/24/2019
-ms.locfileid: "66210252"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66319425"
 ---
 # <a name="idebugprogram2getmemorybytes"></a>IDebugProgram2::GetMemoryBytes
 擷取程式所佔用的記憶體位元組。

@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IEnumDebugCustomAttributes::GetCount
 ms.assetid: fafe826f-4ebf-4572-b2a3-d5dd2916c12f
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 203a23e6b9aad22f45d2ff41431614f56d5140bc
-ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.openlocfilehash: cfa138b31d78ad9035ba3ff2bd752d2f27243630
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/24/2019
-ms.locfileid: "66208293"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66324344"
 ---
 # <a name="ienumdebugcustomattributesgetcount"></a>IEnumDebugCustomAttributes::GetCount
 取得列舉值中的自訂屬性的數目。

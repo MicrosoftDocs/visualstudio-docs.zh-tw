@@ -5,20 +5,20 @@ ms.topic: reference
 helpviewer_keywords:
 - PROGRAM_DESTROY_FLAGS enumeration
 ms.assetid: be00d4a3-d5b8-4159-b632-64577f534883
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 4d29522b942fae7e5bb5190c72eb989445f222d9
-ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.openlocfilehash: d6bd8a309612ce2681649bb4602014dc3c627e9d
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/24/2019
-ms.locfileid: "66212722"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66309282"
 ---
 # <a name="programdestroyflags"></a>PROGRAM_DESTROY_FLAGS
 有效的列舉程式的值會終結旗標。

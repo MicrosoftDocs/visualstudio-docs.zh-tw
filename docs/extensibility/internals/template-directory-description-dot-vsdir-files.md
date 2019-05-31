@@ -7,17 +7,17 @@ helpviewer_keywords:
 - VSDIR files
 - template directory description files
 ms.assetid: 9df51800-190e-4662-b685-fdaafcff1400
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 89152fcb003886087704107f2d4c2a66d3313cc3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ad06428905f924e0e339882057ee4e657da47e8a
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62857758"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66331107"
 ---
 # <a name="template-directory-description-vsdir-files"></a>範本目錄描述檔 (.Vsdir)
 範本目錄描述檔 (.vsdir) 是文字檔案，可讓整合式的開發環境 (IDE)，以顯示資料夾、 精靈.vsz 檔案，以及您在對話方塊中的專案相關聯的範本檔案。 內容包括每個檔案或資料夾的一筆記錄。 參考的位置中的所有.vsdir 檔案會都合併，雖然只有一個.vsdir 檔案通常提供來描述多個資料夾、 精靈、 或範本檔案。

@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProcess3::Execute
 ms.assetid: d831cd81-d7bf-4172-8517-aa699867791f
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 4b2870a50f4ab8bb0358e2e38529e996b143b7ae
-ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.openlocfilehash: 6b4b854c752bc7b1f66687074fbfe86286fc48fb
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/24/2019
-ms.locfileid: "66202387"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66314007"
 ---
 # <a name="idebugprocess3execute"></a>IDebugProcess3::Execute
 會繼續執行此程序，從停止的狀態。 在清除任何先前的執行狀態 （例如在步驟），並在處理序啟動重新執行。

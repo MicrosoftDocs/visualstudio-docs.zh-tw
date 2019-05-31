@@ -6,17 +6,17 @@ helpviewer_keywords:
 - tool windows, adding toolbars
 - toolbars [Visual Studio], adding to tool windows
 ms.assetid: 172f64b3-87f8-4292-9c1c-65bffa2b0970
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 646384f43a6196bca802998b709285c247e4c378
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: bd4f4d37af94ba3a7dcdffc249e8b5e681025b78
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62843835"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66352397"
 ---
 # <a name="add-a-toolbar-to-a-tool-window"></a>將工具列加入工具視窗
 本逐步解說示範如何將工具列加入工具視窗。
@@ -111,7 +111,7 @@ ms.locfileid: "62843835"
 
      您應該會看到 （看起來像的預設圖示） 在頂端工具列方的 [工具] 視窗標題的正下方。
 
-3. 在工具列上，按一下 顯示訊息圖示**TWTestCommandPackage 內 TWToolbar.TWTestCommand.MenuItemCallback()**。
+3. 在工具列上，按一下 顯示訊息圖示**TWTestCommandPackage 內 TWToolbar.TWTestCommand.MenuItemCallback()** 。
 
 ## <a name="see-also"></a>另請參閱
 - [新增工具列](../extensibility/adding-a-toolbar.md)

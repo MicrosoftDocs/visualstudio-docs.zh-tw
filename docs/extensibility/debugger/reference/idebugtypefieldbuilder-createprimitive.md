@@ -6,20 +6,20 @@ helpviewer_keywords:
 - CreatePrimitive
 - IDebugTypeFieldBuilder::CreatePrimitive
 ms.assetid: 512c6ff0-97c5-409f-939f-4cc969bc4bb9
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 4b6958d52ee7fb20a5eb1839f2ed926ae14b888a
-ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.openlocfilehash: 08394a62dc115f7bade9c417b8e39ba6b41eeb1b
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/24/2019
-ms.locfileid: "66199385"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66319855"
 ---
 # <a name="idebugtypefieldbuildercreateprimitive"></a>IDebugTypeFieldBuilder::CreatePrimitive
 建立表示基本類型的物件。

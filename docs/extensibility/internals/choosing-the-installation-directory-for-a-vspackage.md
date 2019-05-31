@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - VSPackages, installation directory
 ms.assetid: 01fbbb5b-f747-446c-afe0-2a081626a945
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: be54c19a1e09b610611c8791d62d012ebdaf5ae8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 249efe70cdcc2cf8ef600ca4d9e009e094e1b105
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62862043"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66309113"
 ---
 # <a name="choose-the-installation-directory-for-a-vspackage"></a>選擇 vspackage 的安裝目錄
 VSPackage 和其支援的檔案必須是使用者的檔案系統上。 位置取決於 VSPackage 是否管理或未受管理，您的並排顯示版本設定配置和使用者選擇。
@@ -55,7 +55,7 @@ VSPackage 和其支援的檔案必須是使用者的檔案系統上。 位置取
 
 4. 預設子語言使用系統預設 LCID。
 
-5. 美國英文 (*。 \1033*或是 *。 \0x409*)。
+5. 美國英文 ( *。 \1033*或是 *。 \0x409*)。
 
 如果您的 VSPackage DLL 包含資源和**SatelliteDll\DllName**登錄項目指向它，[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]嘗試載入它們依上述順序。
 

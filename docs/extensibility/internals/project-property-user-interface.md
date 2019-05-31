@@ -7,17 +7,17 @@ helpviewer_keywords:
 - projects [Visual Studio SDK], properties UI
 - project properties UI
 ms.assetid: b6aec634-8533-476c-9ebd-36536a2288e2
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 056913d779f34ce197e1397563caac43ebf8b619
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 86b3ebb0c931cec5dac40a980ba261c236307fe7
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62859320"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66328257"
 ---
 # <a name="project-property-user-interface"></a>專案屬性使用者介面
 

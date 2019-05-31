@@ -6,17 +6,17 @@ helpviewer_keywords:
 - automation [Visual Studio SDK], SelectedItem object
 - automation [Visual Studio SDK], builds
 ms.assetid: 120377f1-51aa-4445-b2f7-06ab7fc2b47f
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1ee4bcddd7c23f5178984c2c76b059209a965956
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e6c9dc8012433f9ec73f15b9249f6b7ac08bdad7
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62910624"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66347965"
 ---
 # <a name="automation-for-configuration-and-selecteditem-objects"></a>組態和 SelectedItem 物件的自動化
 

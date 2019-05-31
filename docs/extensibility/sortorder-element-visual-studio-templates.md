@@ -9,17 +9,17 @@ helpviewer_keywords:
 - SortOrder element [Visual Studio Templates]
 - <SortOrder> element [Visual Studio Templates]
 ms.assetid: 151932c1-f08a-4f78-a8d0-bd2f32211a9c
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4477d5ff193df40eaf84175b09b5e28a521f72c7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: edab3547a16f32f3a8177b3efa7a342c4aae5955
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62432625"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66331850"
 ---
 # <a name="sortorder-element-visual-studio-templates"></a>SortOrder 項目 (Visual Studio 範本)
 指定值，因為它會出現在其中一個用來排列的範本，在相同類別中，其他範本之間**新的專案**或是**加入新項目** 對話方塊。

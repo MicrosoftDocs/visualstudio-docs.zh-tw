@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugPropertyDestroyEvent2::GetDebugProperty
 ms.assetid: c96ae785-0ac8-4df4-8df3-15a8d7e13687
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 47f7c1646a01bef53f1b7a1cd2c99e147cfa1986
-ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.openlocfilehash: b58a7a3463c579ece09a6bb185066a4e556f2f06
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/24/2019
-ms.locfileid: "66212362"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66348707"
 ---
 # <a name="idebugpropertydestroyevent2getdebugproperty"></a>IDebugPropertyDestroyEvent2::GetDebugProperty
 取得要終結的屬性。

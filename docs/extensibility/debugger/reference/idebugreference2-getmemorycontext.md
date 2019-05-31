@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugReference2::GetMemoryContext
 ms.assetid: 47fc3827-07a0-4eee-b7f4-fc1c62e6b25c
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: ec0c2b91162a88cfbc43525408fef2294ec32102
-ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.openlocfilehash: f4178b14ca128fb7b0e5511f18fd2c9a5fdb3661
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/24/2019
-ms.locfileid: "66207926"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66329838"
 ---
 # <a name="idebugreference2getmemorycontext"></a>IDebugReference2::GetMemoryContext
 取得參考的記憶體內容。 保留供未來使用。

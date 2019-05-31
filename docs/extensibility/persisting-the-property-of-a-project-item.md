@@ -6,17 +6,17 @@ helpviewer_keywords:
 - properties, adding to a project item
 - project items, adding properties
 ms.assetid: d7a0f2b0-d427-4d49-9536-54edfb37c0f3
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 58b2495adf66f6c83bc631650e2a0f06f5b7cdd0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 02055e4e9f25f98193e8b27d42326589aef47762
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62433613"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66336110"
 ---
 # <a name="persist-the-property-of-a-project-item"></a>保存專案項目的屬性
 若要保存的屬性，您將新增至專案項目，例如來源檔案的作者。 您可以將屬性儲存在專案檔來執行這項操作。

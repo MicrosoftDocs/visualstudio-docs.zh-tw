@@ -5,20 +5,20 @@ ms.topic: reference
 helpviewer_keywords:
 - IDebugCodeContext3::GetModule
 ms.assetid: 8e4317b8-8255-486c-a896-a68ed94f8aa1
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 68b641f2a51e6e4286254a4d04b74a3166b671b8
-ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.openlocfilehash: 6fa2cbc3f7902e3f3cd7674cf9e2d3effb80942e
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/24/2019
-ms.locfileid: "66206664"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66338874"
 ---
 # <a name="idebugcodecontext3getmodule"></a>IDebugCodeContext3::GetModule
 擷取的偵錯模組介面的參考。

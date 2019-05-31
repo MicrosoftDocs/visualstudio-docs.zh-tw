@@ -6,17 +6,17 @@ helpviewer_keywords:
 - projects [Visual Studio SDK], managed-code
 - projects [Visual Studio SDK], aggregator
 ms.assetid: 7f132f67-8589-464c-90dc-0d57ae02aa8f
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1e89f74d940182cd92fd15f726676f0979d21186
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ac03682fa1158f5da9c694cf1be5282717c07b55
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62861324"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66312170"
 ---
 # <a name="deploy-project-types"></a>部署專案類型
 [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] 安裝新的專案類型彙總工具 (*ProjectAggregator2.dll*) 和也進行轉散發的 Windows Installer 套件 (*ProjectAggregator2.msi*)。 您必須使用新的彙總工具適用於 managed 程式碼專案類型。 ProjectAggregator2 可解決限制[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]專案正常運作時，防止 managed 程式碼專案類型的彙總工具。 下列步驟說明如何變更您 VSPackage 也可以使用新的彙總工具。

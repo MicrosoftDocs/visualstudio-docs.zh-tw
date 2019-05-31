@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugThread2::Resume
 ms.assetid: 36aad682-b0b9-40a2-b3fc-f0e61d41cdbc
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 3b96ddd99c2d3377a5c48bb40660e17671ded0ca
-ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.openlocfilehash: a312b18fead71b343fd1b9beafcf36c904bf1b24
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/24/2019
-ms.locfileid: "66199520"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66320140"
 ---
 # <a name="idebugthread2resume"></a>IDebugThread2::Resume
 繼續執行的執行緒。

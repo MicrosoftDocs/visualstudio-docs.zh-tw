@@ -1,5 +1,5 @@
 ---
-title: 在網域指定的語言定義中加入追蹤屬性
+title: DSL 定義中加入追蹤屬性
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 46926113393542f590b78f3bfa2c4cc5f25e10a4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 59fd8b72dec3405c29b352e20197f88cda9a5074
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62960537"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66263664"
 ---
 # <a name="add-a-tracking-property-to-a-domain-specific-language-definition"></a>在特定領域語言定義中新增追蹤屬性
 
@@ -121,7 +121,7 @@ A*追蹤網域*屬性是的屬性，使用者就可以進行更新，但具有�
 
     2. 在 **裝飾項目**清單中，選取**NamespaceDecorator**，選取其核取方塊，然後在**顯示屬性**清單中，選取**命名空間**.
 
-3. 在 [ **DSL 總管]**，展開**網域類別**資料夾中，以滑鼠右鍵按一下**ExampleElement**節點，然後再按一下**加入新網域類型描述元**.
+3. 在 [ **DSL 總管]** ，展開**網域類別**資料夾中，以滑鼠右鍵按一下**ExampleElement**節點，然後再按一下**加入新網域類型描述元**.
 
     1. 依序展開**ExampleElement**節點，然後選取**自訂類型描述元 （網域型別描述項）** 節點。
 
@@ -716,9 +716,9 @@ HelperClasses.cs 檔案中，新增`TrackingHelper`和`CriticalException`類別�
 
 下一個步驟是以建置並執行 DSL 設計工具中的新執行個體[!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)]，讓您可以驗證是否正常運作的追蹤屬性。
 
-1. 在 [建置] 功能表上，按一下 [重建方案]。
+1. 在 [建置]  功能表上，按一下 [重建方案]  。
 
-2. 按一下 [偵錯] 功能表上的 [開始偵錯]。
+2. 按一下 [偵錯]  功能表上的 [開始偵錯]  。
 
     實驗組建[!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)]會開啟**偵錯**方案，其中包含空白的測試檔案。
 

@@ -7,17 +7,17 @@ f1_keywords:
 helpviewer_keywords:
 - SccQueryChanges function
 ms.assetid: 4cd58eb3-6952-49b1-9620-8682e3eaa604
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d21dfe4418d033776431f4864f46412a798be204
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5e2b1e504bef3ec9507afcddf4f75bc5f697e843
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62800322"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66353509"
 ---
 # <a name="sccquerychanges-function"></a>SccQueryChanges 函式
 此函式會列舉指定的檔案，提供透過回呼函式的每個檔案的名稱變更的相關資訊清單。

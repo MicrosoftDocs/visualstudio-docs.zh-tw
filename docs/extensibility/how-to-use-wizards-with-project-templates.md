@@ -9,17 +9,17 @@ helpviewer_keywords:
 - templates [Visual Studio], wizards
 - IWizard interface
 ms.assetid: 47ee26cf-67b7-4ff1-8a9d-ab11a725405c
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c4ff83c2d4d28b6393f7f6d03b01e35d9cc0aa4f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 366244285892820039a5a0f7950a709d170b4527
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62911377"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66352034"
 ---
 # <a name="how-to-use-wizards-with-project-templates"></a>HOW TO：使用精靈與專案範本
 
@@ -68,7 +68,7 @@ Visual Studio 提供<xref:Microsoft.VisualStudio.TemplateWizard.IWizard>介面�
 
 3. 做為資產中加入 VSIX 專案的組件。 開啟*source.extension.vsixmanifest*檔案，然後選取**資產** 索引標籤。中**加入新資產** 視窗中，如**型別**選取**Microsoft.VisualStudio.Assembly**，如**來源**選取**的目前方案中的專案**，並針對**專案**選取**MyProjectWizard**。
 
-4. 將下列參考加入 VSIX 專案。 (在**方案總管**，VSIX 專案節點下，選取**參考**，按一下滑鼠右鍵，然後選取**加入參考**。)在 **加入參考**對話方塊，請在**Framework**索引標籤上，尋找**System.Windows 表單**組件並加以選取。 現在，選取**延伸模組** 索引標籤。尋找**EnvDTE**組件並加以選取。 也會發現**Microsoft.VisualStudio.TemplateWizardInterface**組件並加以選取。 按一下 [確定] 。
+4. 將下列參考加入 VSIX 專案。 (在**方案總管**，VSIX 專案節點下，選取**參考**，按一下滑鼠右鍵，然後選取**加入參考**。)在 **加入參考**對話方塊，請在**Framework**索引標籤上，尋找**System.Windows 表單**組件並加以選取。 現在，選取**延伸模組** 索引標籤。尋找**EnvDTE**組件並加以選取。 也會發現**Microsoft.VisualStudio.TemplateWizardInterface**組件並加以選取。 按一下 [確定]  。
 
 5. 加入 VSIX 專案的精靈實作的類別。 (在**方案總管**，以滑鼠右鍵按一下 VSIX 專案節點，然後選取**新增**，然後**新項目**，然後**類別**。)將類別命名為**WizardImplementation**。
 
@@ -218,9 +218,9 @@ Visual Studio 提供<xref:Microsoft.VisualStudio.TemplateWizard.IWizard>介面�
 
 5. 重建方案。
 
-6. 您現在可以在 MyProjectWizard 專案目錄中尋找的 key.snk 檔案 (*\<磁碟位置 > \MyProjectTemplate\MyProjectWizard\key.snk*)。 複製*key.snk*檔案。
+6. 您現在可以在 MyProjectWizard 專案目錄中尋找的 key.snk 檔案 ( *\<磁碟位置 > \MyProjectTemplate\MyProjectWizard\key.snk*)。 複製*key.snk*檔案。
 
-7. 移至輸出目錄，並尋找組件 (*\<磁碟位置 > \MyProjectTemplate/MyProjectWizard\bin\Debug\MyProjectWizard.dll*)。 貼上*key.snk*以下檔案。 （這並非絕對必要，但它會讓下列步驟輕鬆）。
+7. 移至輸出目錄，並尋找組件 ( *\<磁碟位置 > \MyProjectTemplate/MyProjectWizard\bin\Debug\MyProjectWizard.dll*)。 貼上*key.snk*以下檔案。 （這並非絕對必要，但它會讓下列步驟輕鬆）。
 
 8. 開啟命令視窗，並將在其中建立組件的目錄。
 

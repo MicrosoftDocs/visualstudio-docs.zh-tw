@@ -6,17 +6,17 @@ helpviewer_keywords:
 - debugging [Debugging SDK], local variables
 - expression evaluation, local variables
 ms.assetid: 66a2e00a-f558-4e87-96b8-5ecf5509e04c
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ff13220d7699631d2617a207e3c5bcef43748315
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 4c65ed0e3def028e710255d08ee1fe40080bfde5
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63415703"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66315021"
 ---
 # <a name="sample-implementation-of-locals"></a>區域變數的範例實作
 > [!IMPORTANT]

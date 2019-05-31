@@ -6,20 +6,20 @@ helpviewer_keywords:
 - GetPrimitiveType
 - IDebugPrimitiveTypeField::GetPrimitiveType
 ms.assetid: a186c922-bbfe-478c-a744-b21eb4672d8f
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 83412fb612976911c8e88b683a9a3953661e8507
-ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.openlocfilehash: 0eed7b3243b56e0b01240ed5a0f8cd4e823354dc
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/24/2019
-ms.locfileid: "66202794"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66353257"
 ---
 # <a name="idebugprimitivetypefieldgetprimitivetype"></a>IDebugPrimitiveTypeField::GetPrimitiveType
 擷取這個欄位相關聯的基本類型。

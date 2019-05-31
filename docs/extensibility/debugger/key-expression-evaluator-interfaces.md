@@ -6,17 +6,17 @@ helpviewer_keywords:
 - debugging [Debugging SDK], expression evaluation
 - expression evaluation, interfaces
 ms.assetid: 1cac9aa3-0867-4e12-a16e-1e90abbc0fb6
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 72407753960b38fc604d069d4e78b91a02eb737b
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 4f633d1b3bba5fbd5ecbfb44051740a0bc4bb09f
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63411195"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66344221"
 ---
 # <a name="key-expression-evaluator-interfaces"></a>索引鍵運算式評估工具介面
 > [!IMPORTANT]

@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugField::GetKind method
 ms.assetid: e7c9c60a-8e55-4ecc-aa63-0c814a1e92cc
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 7afcf34153c6910820068cfbea7e67b08568223a
-ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.openlocfilehash: d99c7d1bed9f5afe844539c9a9ccab11f43a8002
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/24/2019
-ms.locfileid: "66212193"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66333178"
 ---
 # <a name="idebugfieldgetkind"></a>IDebugField::GetKind
 這個方法會取得欄位的類型。

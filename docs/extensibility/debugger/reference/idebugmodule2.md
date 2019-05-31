@@ -7,17 +7,17 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugModule2 interface
 ms.assetid: 24c2a126-f4ab-4891-8509-8ef99b994c08
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a6d2e7ae091964cd810acfcddcc4ea5ab81943c4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: b621ae3b1408bc4af371243a1c34909117d40576
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62872838"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66323940"
 ---
 # <a name="idebugmodule2"></a>IDebugModule2
 此介面代表模組 — 也就是程式的可執行單位，例如的 DLL。

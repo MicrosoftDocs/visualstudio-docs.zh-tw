@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - controls and menus
 ms.assetid: 1ce1f55b-6825-4654-a60a-7831af2ab44f
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f52c0bbb87cc610b1b05ef987f43167f60292f4f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f1613dd6eb206ba827d5ac6f964f7137b9a026a2
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62926497"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66322277"
 ---
 # <a name="customize-editor-controls-and-mmenus-by-using-the-legacy-api"></a>使用舊版 API 自訂編輯器控制項和 Mmenus
 語言服務或文字檢視，可以控制的操作功能表和編輯器中的控制項。 在本節中的頁面詳細說明如何使用這些功能。
