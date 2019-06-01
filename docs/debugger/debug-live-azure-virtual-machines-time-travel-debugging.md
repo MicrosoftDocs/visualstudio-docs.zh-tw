@@ -13,12 +13,12 @@ monikerRange: '>= vs-2019'
 ms.workload:
 - aspnet
 - azure
-ms.openlocfilehash: 3a81f6aa138b361a44a272ebda3557d27a914c64
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 53dce8b6b468dd5754b5708afccdcbe6cb908d1d
+ms.sourcegitcommit: ba5e072c9fedeff625a1332f22dcf3644d019f51
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62854101"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "66432211"
 ---
 # <a name="record-and-replay-live-aspnet-apps-on-azure-virtual-machines-using-the-snapshot-debugger"></a>記錄並重新執行快照集偵錯工具使用的 Azure 虛擬機器上的即時 ASP.NET 應用程式
 
@@ -37,26 +37,26 @@ ms.locfileid: "62854101"
 
 ## <a name="prerequisites"></a>必要條件
 
-* 時間移動的偵錯的 Azure 虛擬機器 (VM) 僅適用於 Visual Studio 2019 企業版或更高版本**Azure 開發工作負載**。 (您可以在 [個別元件] 索引標籤下的 [偵錯和測試] > [快照偵錯工具]底下找到它。)
+* 時間移動的偵錯的 Azure 虛擬機器 (VM) 僅適用於 Visual Studio 2019 企業版或更高版本**Azure 開發工作負載**。 (您可以在 [個別元件]  索引標籤下的 [偵錯和測試]   > [快照偵錯工具]  底下找到它。)
 
     如果尚未安裝，安裝[Visual Studio 2019 Enterprise](https://visualstudio.microsoft.com/vs/)。
 
 * 時間移動偵錯是適用於下列的 Azure VM web 應用程式：
   * 執行 ASP.NET 應用程式 (AMD64) 在.NET Framework 4.8 或更新版本。
 
-## <a name="open-your-project-and-start-the-snapshot-debugger-with-time-travel-debugging-enabled"></a>開啟您的專案，並開始時間的移動啟用偵錯的快照集偵錯工具
+## <a name="start-the-snapshot-debugger-with-time-travel-debugging-enabled"></a>開始時間的移動啟用偵錯的快照集偵錯工具
 
 1. 開啟專案針對您要收集時間的移動記錄。
 
     > [!IMPORTANT]
     > 若要啟動 TTD，您必須開啟*相同版本的原始程式碼*發行您的 Azure VM 服務。
 
-1. 選擇 [偵錯] > [附加快照偵錯工具]。選取您的 web 應用程式部署至 Azure VM 和 Azure 儲存體帳戶。 選取 **啟用時間的移動偵錯**預覽選項，然後按一下**附加**。
+1. 選擇 [偵錯] > [附加快照偵錯工具]  。選取您的 web 應用程式部署至 Azure VM 和 Azure 儲存體帳戶。 選取 **啟用時間的移動偵錯**預覽選項，然後按一下**附加**。
 
       ![選取 Azure 資源](../debugger/media/time-travel-debugging-select-azure-resource-vm.png)
 
     > [!IMPORTANT]
-    > 第一次為 VM 選取 [附加快照偵錯工具] 時，IIS 會自動重新啟動。
+    > 第一次為 VM 選取 [附加快照偵錯工具]  時，IIS 會自動重新啟動。
 
     中繼資料**模組**一開始未啟動。 瀏覽至 web 應用程式和**開始收集**按鈕就會變成作用中。 Visual Studio 現在已經處於快照集偵錯模式。
 
@@ -79,7 +79,7 @@ ms.locfileid: "62854101"
 
    ![收集時間的移動追蹤之方法的結尾](../debugger/media/time-travel-debugging-set-snappoint-action.png)
 
-1. 按一下 [開始收集] 以開啟快照點。
+1. 按一下 [開始收集]  以開啟快照點。
 
    ![開啟快照點](../debugger/media/snapshot-start-collection.png)
 
@@ -89,7 +89,7 @@ ms.locfileid: "62854101"
 
 ## <a name="start-debugging-a-time-travel-recording"></a>開始偵錯一次移動記錄
 
-1. 叫用快照點時，[診斷工具] 視窗中會顯示快照點。 若要開啟此視窗，請選擇 [偵錯] > [Windows] > [顯示診斷工具]。
+1. 叫用快照點時，[診斷工具] 視窗中會顯示快照點。 若要開啟此視窗，請選擇 [偵錯] > [Windows] > [顯示診斷工具]  。
 
    ![開啟快照點](../debugger/media/snapshot-diagsession-window.png)
 
@@ -103,7 +103,7 @@ ms.locfileid: "62854101"
 
    ![檢查快照集資料](../debugger/media/time-travel-debugging-start-debugging.png)
 
-    在網站本身是仍然即時和終端使用者不會受到任何後續的 TTD 活動。 每個快照點預設只會擷取一個快照集：擷取快照集之後，快照點就會關閉。 如果想要在快照點擷取另一個快照集，可以按一下 [更新集合] 以重新開啟快照點。
+    在網站本身是仍然即時和終端使用者不會受到任何後續的 TTD 活動。 每個快照點預設只會擷取一個快照集：擷取快照集之後，快照點就會關閉。 如果想要在快照點擷取另一個快照集，可以按一下 [更新集合]  以重新開啟快照點。
 
 **需要協助嗎？** 請參閱[疑難排解和已知問題](../debugger/debug-live-azure-apps-troubleshooting.md)與[快照集偵錯的常見問題集](../debugger/debug-live-azure-apps-faq.md)頁面。
 

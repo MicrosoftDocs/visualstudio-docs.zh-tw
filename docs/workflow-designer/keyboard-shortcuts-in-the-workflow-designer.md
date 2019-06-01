@@ -1,5 +1,5 @@
 ---
-title: 工作流程設計工具-工作流程設計工具中的鍵盤快速鍵
+title: 工作流程設計工具：鍵盤快速鍵
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 95e42442e8dce5db1ef6b670043bf1f26e554773
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 2143b67297ba2e4bd2751054b789274595505cb3
+ms.sourcegitcommit: ba5e072c9fedeff625a1332f22dcf3644d019f51
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62537097"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "66431877"
 ---
 # <a name="keyboard-shortcuts-in-the-workflow-designer"></a>工作流程設計中的鍵盤快速鍵
 

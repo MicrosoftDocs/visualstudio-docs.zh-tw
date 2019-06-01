@@ -1,5 +1,5 @@
 ---
-title: HOW TO：將節點從 XML 結構描述總管新增至工作區
+title: 將節點從 XML 結構描述總管加入至工作區
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 3b5a5749-9693-4b29-b0c2-8e07e0e55514
@@ -8,14 +8,14 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f38760e6a04bd9e88fd4ff6e8c9d31f30ba27647
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 22ff9e7ede2861577403eb09d549911afef0f0a5
+ms.sourcegitcommit: ba5e072c9fedeff625a1332f22dcf3644d019f51
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62783232"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "66432185"
 ---
-# <a name="how-to-add-nodes-to-the-workspace-from-the-xml-schema-explorer"></a>HOW TO：將節點從 XML 結構描述總管新增至工作區
+# <a name="how-to-add-nodes-to-the-workspace-from-the-xml-schema-explorer"></a>作法：將節點從 XML 結構描述總管新增至工作區
 
 本主題說明如何將節點加入到[XML 結構描述設計工具工作區](../xml-tools/xml-schema-designer-workspace.md)從**XML 結構描述總管**。 這可以藉由拖放節點來達成**XML 結構描述總管**拖曳至 XSD 設計工具檢視，或使用**XML 結構描述總管的**操作功能表。 您也可以加入會反白顯示所執行的搜尋結果的節點**XML 結構描述總管**。 如需詳細資訊，請參閱[如何：將結構描述集合搜尋節點加入工作空間](../xml-tools/how-to-add-schema-set-search-result-nodes-to-the-workspace.md)。
 
