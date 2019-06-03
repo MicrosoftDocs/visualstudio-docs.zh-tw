@@ -1,5 +1,5 @@
 ---
-title: 使用類別檢視、呼叫階層、物件瀏覽器及程式碼定義視窗來檢視程式碼結構
+title: 類別檢視、呼叫階層、物件瀏覽器、程式碼定義視窗
 ms.date: 05/18/2018
 ms.topic: conceptual
 f1_keywords:
@@ -25,12 +25,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9d1072e6e9a2b097d9d2f50cc372ee8ba621e3d3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 9e2ec8e3e51036749030036eee6ff1d268a44f69
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62582071"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66263074"
 ---
 # <a name="view-the-structure-of-code-using-different-tool-windows"></a>使用不同的工具視窗來檢視程式碼結構
 

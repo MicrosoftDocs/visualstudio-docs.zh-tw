@@ -29,7 +29,7 @@ ms.locfileid: "62968922"
 
      當變數未追蹤物件時，該變數會設為特殊的保留值：在 Visual C# 中為 `null`，而在 Visual Basic 中為 `Nothing`。 因此當程式啟動時，`firstClicked` 和 `secondClicked` 會設為 `null` 或 `Nothing`，這表示變數並未追蹤任何項目。
 
-2. 修改 <xref:System.Windows.Forms.Control.Click> 事件處理常式，以使用新的 `firstClicked` 參考變數。 移除 `label_Click()` 事件處理常式方法 (`clickedLabel.ForeColor = Color.Black;`) 中的最後一個陳述式，並以後面的 `if` 陳述式取代  (請務必包含註解和整個 `if` 陳述式)。
+2. 修改 <xref:System.Windows.Forms.Control.Click> 事件處理常式，以使用新的 `firstClicked` 參考變數。 移除 `label_Click()` 事件處理常式方法 (`clickedLabel.ForeColor = Color.Black;`) 中的最後一個陳述式，並以後面的 `if` 陳述式取代 (請務必包含註解和整個 `if` 陳述式)。
 
      [!code-vb[VbExpressTutorial4Step5#6](../ide/codesnippet/VisualBasic/step-5-add-label-references_2.vb)]
      [!code-csharp[VbExpressTutorial4Step5#6](../ide/codesnippet/CSharp/step-5-add-label-references_2.cs)]

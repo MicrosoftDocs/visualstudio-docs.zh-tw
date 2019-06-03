@@ -37,16 +37,16 @@ ms.locfileid: "63447065"
 
  輸入該位置的磁碟路徑、 檔案共用、 FTP 站台或網站 URL，或按一下**瀏覽**以瀏覽位置 按鈕。 路徑可以是下列格式：
 
-- 相對或絕對路徑在標準 Windows 格式，例如*C:\Deploy\MyApplication*或是*\MyApplication*。
+- 相對或絕對路徑在標準 Windows 格式，例如*C:\Deploy\MyApplication*或是 *\MyApplication*。
 
-- 通用命名慣例 (UNC) 路徑，例如 *\\\ServerName\MyApplication\\*。
+- 通用命名慣例 (UNC) 路徑，例如 *\\\ServerName\MyApplication\\* 。
 
 - URL 的 web 站台，例如 http://www.microsoft.com/MyApplication。
 
-  根據預設，發佈的位置是否*http://localhost/projectname/* 有 IIS 安裝，或如果您這樣做，則為 publish\ 目錄未安裝 IIS。
+  根據預設，發佈的位置是否 *http://localhost/projectname/* 有 IIS 安裝，或如果您這樣做，則為 publish\ 目錄未安裝 IIS。
 
 > [!NOTE]
-> 如果目標電腦執行 Windows Vista，則需要有更多的考量。 您必須是 Windows Vista 電腦上的系統管理員，才能使用本機發行選項。 另外，預設位置是永遠*發佈\\*目錄下，不論您是否已安裝 IIS。
+> 如果目標電腦執行 Windows Vista，則需要有更多的考量。 您必須是 Windows Vista 電腦上的系統管理員，才能使用本機發行選項。 另外，預設位置是永遠*發佈\\* 目錄下，不論您是否已安裝 IIS。
 
 ## <a name="what-is-the-default-installation-path-on-end-user-computers"></a>使用者電腦上的預設安裝路徑為何？
  安裝路徑是選擇性的。 如果您想，您可以稍後再設定安裝路徑。 如需詳細資訊，請參閱[如何：變更 Office 方案的安裝路徑](https://msdn.microsoft.com/d0eaa07b-2d72-4902-899f-2f9fb165b8fd)。

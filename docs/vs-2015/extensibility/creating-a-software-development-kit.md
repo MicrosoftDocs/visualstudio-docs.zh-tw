@@ -106,7 +106,7 @@ ms.locfileid: "65689996"
   
 2. [參考] 資料夾： 包含 Api 的二進位檔。 這些可能是 Windows 中繼資料 (WinMD) 檔案或組件。  
   
-3. 可轉散發套件資料夾： 所需的執行階段/偵錯，並應該取得使用者的應用程式的一部分一起封裝的檔案。 所有的二進位檔應該放下方 \redist\\< 組態\>\\< a c h\>，和二進位檔的名稱應該具有下列格式來確保唯一性： **\<公司 >。\<產品 >。\<目的 >。\<擴充功能 >**。 比方說，Microsoft.Cpp.Build.dll。 名稱可能會發生衝突與其他 sdk （例如 javascript、 css、 pri、 xaml、 png 和 jpg 檔案） 的檔案名稱的所有檔案都應放下方 \redist\\< 組態\>\\< a c h\> \\< sdkname\>\ 與 XAML 相關聯的檔案除外控制。 這些檔案都應放下方 \redist\\< 組態\>\\< a c h\>\\< componentname\>\\。  
+3. 可轉散發套件資料夾： 所需的執行階段/偵錯，並應該取得使用者的應用程式的一部分一起封裝的檔案。 所有的二進位檔應該放下方 \redist\\< 組態\>\\< a c h\>，和二進位檔的名稱應該具有下列格式來確保唯一性： **\<公司 >。\<產品 >。\<目的 >。\<擴充功能 >** 。 比方說，Microsoft.Cpp.Build.dll。 名稱可能會發生衝突與其他 sdk （例如 javascript、 css、 pri、 xaml、 png 和 jpg 檔案） 的檔案名稱的所有檔案都應放下方 \redist\\< 組態\>\\< a c h\> \\< sdkname\>\ 與 XAML 相關聯的檔案除外控制。 這些檔案都應放下方 \redist\\< 組態\>\\< a c h\>\\< componentname\>\\。  
   
 4. DesignTime 資料夾： 在唯一後置入執行/偵錯所需的檔案時間和不應被包裝成使用者的應用程式的一部分。 這些可能是 XML 文件、 程式庫、 標頭、 工具箱設計階段二進位檔，MSBuild 成品等等。 適用於原生專案的耗用量必須要有的任何 SDK *SDKName*.props 檔案。 下面顯示的範例，這種類型的檔案。  
   
@@ -126,7 +126,7 @@ ms.locfileid: "65689996"
   
     ```  
   
-     XML 參考文件放在一起的參考檔案。 例如，XML 參考文件 **\References\\<組態\>\\<a c h\>\sample.dll**組件是**\References\\<組態\>\\<a c h\>\sample.xml**，，文件的當地語系化的版本，而且**\References\\<組態\>\\<arch\>\\< 地區設定\>\sample.xml**。  
+     XML 參考文件放在一起的參考檔案。 例如，XML 參考文件 **\References\\<組態\>\\<a c h\>\sample.dll**組件是 **\References\\<組態\>\\<a c h\>\sample.xml**，，文件的當地語系化的版本，而且 **\References\\<組態\>\\<arch\>\\< 地區設定\>\sample.xml**。  
   
 5. 設定資料夾： 三個子資料夾：偵錯、 零售版和 CommonConfiguration。 相同的 SDK 檔案集應該取用，不論目標 SDK 取用者的組態時，SDK 作者可以放置在 CommonConfiguration 檔案。  
   
@@ -181,7 +181,7 @@ MoreInfo = "https://msdn.microsoft.com/MySDK">
   
 10. SupportsMultipleVersions： 如果此屬性設為**錯誤**或是**警告**，MSBuild 表示相同的專案無法參考多個版本的相同 SDK 系列產品。 如果這個屬性不存在，或設為**允許**，MSBuild 不會顯示這種類型的錯誤或警告。  
   
-11. AppX： 指定在磁碟上的 Windows 元件程式庫的應用程式套件的路徑。 在本機偵錯期間，這個值會傳遞至 Windows 元件程式庫的註冊元件。 檔案名稱的命名慣例是**\<公司 >。\<產品 >。\<架構 >。\<組態 >。\<版本 >.appx**。 如果它們不適用於 Windows 的元件程式庫，設定與架構是選擇性的屬性名稱和屬性值。 這個值是僅適用於 Windows 的元件程式庫。  
+11. AppX： 指定在磁碟上的 Windows 元件程式庫的應用程式套件的路徑。 在本機偵錯期間，這個值會傳遞至 Windows 元件程式庫的註冊元件。 檔案名稱的命名慣例是 **\<公司 >。\<產品 >。\<架構 >。\<組態 >。\<版本 >.appx**。 如果它們不適用於 Windows 的元件程式庫，設定與架構是選擇性的屬性名稱和屬性值。 這個值是僅適用於 Windows 的元件程式庫。  
   
 12. CopyRedistToSubDirectory： 指定在 \redist 資料夾下的檔案複製目的地相對於應用程式封裝根目錄 (亦即**封裝位置**選擇建立應用程式套件精靈 中) 和執行階段配置根。 預設位置是根的應用程式封裝和 F5 版面配置。  
   

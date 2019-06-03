@@ -16,7 +16,7 @@ ms.locfileid: "62983648"
 
 ## <a name="creating-new-projects-and-solutions-from-a-template"></a>從範本建立新的專案和方案
 
-可以隨時使用預先定義的範本來建立方案。 從 Visual Studio 2019 for Mac 開始，從開始視窗選擇 [新增]。 或者，瀏覽至 [檔案] > [新增解決方案] ****。 依序選取需要的平台和範本：
+可以隨時使用預先定義的範本來建立方案。 從 Visual Studio 2019 for Mac 開始，從開始視窗選擇 [新增]  。 或者，瀏覽至 [檔案] > [新增解決方案] **** 。 依序選取需要的平台和範本：
 
 ![建立新的方案](media/projects-and-solutions-image0.png)
 
@@ -24,7 +24,7 @@ ms.locfileid: "62983648"
 
 透過使用內容動作或功能表列，即可巡覽 [方案總管]。
 
-若要將新的專案加入方案，請以滑鼠右鍵按一下方案名稱，然後選取 [新增] > [新增專案] 以顯示 [新增專案] 對話方塊：
+若要將新的專案加入方案，請以滑鼠右鍵按一下方案名稱，然後選取 [新增] > [新增專案]  以顯示 [新增專案] 對話方塊：
 
 ![新增專案](media/projects-and-solutions-image4.png)
 

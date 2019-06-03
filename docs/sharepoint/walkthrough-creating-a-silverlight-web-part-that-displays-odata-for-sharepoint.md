@@ -1,5 +1,5 @@
 ---
-title: 逐步解說：建立 Silverlight Web 組件可顯示 SharePoint 之 OData |Microsoft Docs
+title: 建立顯示適用於 SharePoint 的 OData 的 Silverlight web 組件
 ms.date: 02/22/2017
 ms.topic: conceptual
 f1_keywords:
@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c58762c1060475a85de643ed52fffcc9f311bd96
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: f248ce4403e771d9ab8b6d13fe55fd5ca1c960d4
+ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63430395"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66401137"
 ---
 # <a name="walkthrough-create-a-silverlight-web-part-that-displays-odata-for-sharepoint"></a>逐步解說：建立顯示 SharePoint 之 OData 的 Silverlight web 組件
   SharePoint 2010 會透過 OData 公開其清單資料。 在 SharePoint 中，OData 服務是 RESTful 服務 ListData.svc 所實作。 本逐步解說示範如何建立裝載 Silverlight 應用程式的 SharePoint web 組件。 Silverlight 應用程式會顯示使用 ListData.svc 公告 SharePoint 清單資訊。 如需詳細資訊，請參閱 < [SharePoint Foundation REST 介面](http://go.microsoft.com/fwlink/?LinkId=225999)並[開放式資料通訊協定](http://go.microsoft.com/fwlink/?LinkId=226000)。
@@ -57,7 +57,7 @@ ms.locfileid: "63430395"
 
 7. 在 **您要如何關聯 Silverlight Web 組件**一節**指定 Silverlight 組態資訊**頁面上，選擇**建立新的 Silverlight 專案和關聯 web 組件**選項按鈕。
 
-8. 變更**名稱**要**SLApplication**，將**語言**至**Visual Basic**或**Visual C#**，然後將**Silverlight 版本**要**Silverlight 4.0**。
+8. 變更**名稱**要**SLApplication**，將**語言**至**Visual Basic**或**Visual C#** ，然後將**Silverlight 版本**要**Silverlight 4.0**。
 
 9. 選擇**完成** 按鈕。 專案會出現在**方案總管 中**。
 
@@ -75,13 +75,13 @@ ms.locfileid: "63430395"
     > [!NOTE]
     > 如果您使用 Visual Basic，您必須選擇**顯示所有檔案**頂端的圖示**方案總管**以顯示**參考**節點。
 
-3. 在位址方塊中的**加入服務參考**對話方塊方塊中，輸入您的 SharePoint 網站的 URL，例如**http://MySPSite**，然後選擇**移** 按鈕。
+3. 在位址方塊中的**加入服務參考**對話方塊方塊中，輸入您的 SharePoint 網站的 URL，例如 **http://MySPSite** ，然後選擇**移** 按鈕。
 
      當 Silverlight 會尋找 SharePoint OData 服務 ListData.svc 時，它會將位址取代與完整的服務 URL 中。 此範例中，如 http://myserver 會變成 http://myserver/_vti_bin/ListData.svc 。
 
 4. 選擇**確定**按鈕以新增服務參考加入專案中，並使用預設服務名稱 ServiceReference1。
 
-5. 在功能表列上選擇 [建置] > [建置解決方案]。
+5. 在功能表列上選擇 [建置]   > [建置解決方案]  。
 
 6. 以 SharePoint 服務為基礎的專案中加入新的資料來源。 若要這樣做，請在功能表列上，選擇**檢視** > **其他 Windows** > **Zdroje dat**。
 

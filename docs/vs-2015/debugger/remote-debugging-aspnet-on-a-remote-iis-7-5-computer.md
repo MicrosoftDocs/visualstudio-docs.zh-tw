@@ -39,14 +39,14 @@ ms.locfileid: "63446084"
   
 ## <a name="create-the-application-on-the-visual-studio-computer"></a>在 Visual Studio 電腦上建立應用程式  
   
-1. 建立新的 MVC ASP.NET 應用程式。 ([檔案] / [新增] / [專案]，然後選取 [Visual C#] / [Web] / [ASP.NET Web 應用程式]  。 在 [ASP.NET 4.5.2]  範本區段中選取 [MVC] 。 請確定**雲端中的主機**未選取 [Azure] 區段底下。 將專案命名為**MyMVC**。)
+1. 建立新的 MVC ASP.NET 應用程式。 ([檔案] / [新增] / [專案]  ，然後選取 [Visual C#] / [Web] / [ASP.NET Web 應用程式]  。 在 [ASP.NET 4.5.2]  範本區段中選取 [MVC]  。 請確定**雲端中的主機**未選取 [Azure] 區段底下。 將專案命名為**MyMVC**。)
 1. 開啟 HomeController.cs 檔案，並在 `About()` 方法中設定中斷點。
-1. 在 [方案總管] ，以滑鼠右鍵按一下專案節點，然後選取 [發行] 。
-1. 針對 [選取發行目標] 選取 [自訂]  ，然後將設定檔命名為 **MyMVC**。 按 [ **下一步**]。
+1. 在 [方案總管]  ，以滑鼠右鍵按一下專案節點，然後選取 [發行]  。
+1. 針對 [選取發行目標]  選取 [自訂]  ，然後將設定檔命名為 **MyMVC**。 按 [ **下一步**]。
 1. 在 [連接]  索引標籤上，設定 [發行方法]  欄位為 [檔案系統]  ，以及設定 [目標位置]  欄位為本機目錄。 按 [ **下一步**]。
 
     ![RemoteDBG_Publish_Local](../debugger/media/remotedbg-publish-local.png "RemoteDBG_Publish_Local")
-1. 設定要 **偵錯**的組態。 按一下 [發行] 。
+1. 設定要 **偵錯**的組態。 按一下 [發行]  。
 
     ![RemoteDBG_Publish_Debug_Config](../debugger/media/remotedbg-publish-debug-config.png "RemoteDBG_Publish_Debug_Config")
     
@@ -75,8 +75,8 @@ ms.locfileid: "63446084"
   
     ```
 
-1. 開啟 [Internet Information Services (IIS) 管理員]  並移至 [網站] 。
-1. 以滑鼠右鍵按一下 [預設的網站]  節點，並選取 [加入應用程式] 。
+1. 開啟 [Internet Information Services (IIS) 管理員]  並移至 [網站]  。
+1. 以滑鼠右鍵按一下 [預設的網站]  節點，並選取 [加入應用程式]  。
 1. 設定**別名**欄位設為**MyMVC** ，讓應用程式集區欄位**ASP.NET v4.0** （ASP.NET 4.5 不是應用程式集區的選項）。 將 [實體路徑]  設定為 **C:\Publish** (您複製 ASP.NET 專案目錄的地方)。
 
     >[!NOTE] 
@@ -89,12 +89,12 @@ ms.locfileid: "63446084"
 1. 在 Visual Studio 電腦上開啟 [MyMVC]  方案。
 1. 在 Visual Studio 中，按一下**偵錯] / [附加至處理序**(**Ctrl + Alt + P**)。
 1. [限定詞] 欄位設定為 **\<遠端電腦名稱>:4020**。
-1. 按一下 [重新整理]。
+1. 按一下 [重新整理]  。
     您應該會看到有些處理程序會出現在 [可使用的處理序]  視窗。
 
     如果您沒有看到任何處理程序，請嘗試使用的 IP 位址，而不 （連接埠是必要的） 遠端電腦名稱。 使用`ipconfig`取得 IPv4 位址的命令列。
-1. 核取 [顯示所有使用者的處理序]  。
-1. 尋找 **w3wp.exe** ，然後按一下 [附加] 。
+1. 核取 [顯示所有使用者的處理序]   。
+1. 尋找 **w3wp.exe** ，然後按一下 [附加]  。
 
      若要快速找到處理序名稱，輸入程序的第一個字母。
      
@@ -103,7 +103,7 @@ ms.locfileid: "63446084"
 
     ![RemoteDBG_AttachToProcess](../debugger/media/remotedbg-attachtoprocess.png "RemoteDBG_AttachToProcess")
 
-1. 開啟遠端電腦的網站。 在瀏覽器中，移至 **http://\<遠端電腦名稱>**。
+1. 開啟遠端電腦的網站。 在瀏覽器中，移至 **http://\<遠端電腦名稱>** 。
     
     您應該會看到 ASP.NET 網頁。
 1. 在 ASP.NET 網頁上，按一下 連結**關於**頁面。

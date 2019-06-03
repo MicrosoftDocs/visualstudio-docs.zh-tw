@@ -1,5 +1,5 @@
 ---
-title: 工作流程設計工具-如何：定義並取用活動委派
+title: 工作流程設計工具：定義並取用活動委派
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: c68e42ad-3ec0-4c2d-b104-fe36c6d83b5e
@@ -8,14 +8,14 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 25f844acefed50b5bb35e3b1d8c6a570e11ca194
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 34cb06bbc5c9575f5a10507a8015c9819e7b533b
+ms.sourcegitcommit: ba5e072c9fedeff625a1332f22dcf3644d019f51
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62949511"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "66431793"
 ---
-# <a name="how-to-define-and-consume-activity-delegates-in-the-workflow-designer"></a>HOW TO：定義並取用工作流程設計工具中的活動委派
+# <a name="how-to-define-and-consume-activity-delegates-in-the-workflow-designer"></a>作法：定義並取用工作流程設計工具中的活動委派
 
 .NET framework 4.5 還包括全新的設計工具<xref:System.Activities.Statements.InvokeDelegate>活動。 這個設計工具可用來將委派指派給衍生自 <xref:System.Activities.ActivityDelegate> 的活動，例如 <xref:System.Activities.ActivityAction> 或 <xref:System.Activities.ActivityFunc%601>。
 
@@ -52,7 +52,7 @@ ms.locfileid: "62949511"
 
 14. 在 **變數的型別**欄中，選取**Int32**。 離開**範圍**做為**雖然**，而**預設**資料行保留空白。
 
-15. 設定**條件**屬性<xref:System.Activities.Statements.While>活動**index < Items.Length;**。
+15. 設定**條件**屬性<xref:System.Activities.Statements.While>活動**index < Items.Length;** 。
 
 16. 拖曳<xref:System.Activities.Statements.InvokeDelegate>活動，從**基本型別**工具箱的區段**主體**的<xref:System.Activities.Statements.While>活動。
 
@@ -60,7 +60,7 @@ ms.locfileid: "62949511"
 
 18. 在 **屬性**方格<xref:System.Activities.Statements.InvokeDelegate>活動中，按一下  **...** 按鈕**委派引數**屬性。
 
-19. 在 **值**具名引數的資料行**引數**，輸入**Items [Index]**。 按一下  **Ok**以關閉**DelegateArguments**對話方塊。
+19. 在 **值**具名引數的資料行**引數**，輸入**Items [Index]** 。 按一下  **Ok**以關閉**DelegateArguments**對話方塊。
 
 20. 將 <xref:System.Activities.Statements.Assign> 活動拖曳到 <xref:System.Activities.Statements.InvokeDelegate> 活動底下的水平線上。 <xref:System.Activities.Statements.Assign>建立活動時，以及<xref:System.Activities.Statements.Sequence>活動會自動建立包含兩個活動中的**主體**一節**MyForEach**活動。 需要此序列，因為**主體**區段只能包含單一活動。 自動建立新<xref:System.Activities.Statements.Sequence>活動是.NET Framework 4.5 的新功能。
 
@@ -76,11 +76,11 @@ ms.locfileid: "62949511"
 
 3. 拖曳**MyForEach**從工具箱拖曳至設計工具介面的活動。 活動是在與專案同名的工具箱 的區段中。
 
-4. 設定**項目**屬性**MyForEach**活動**new Object [] {1，"abc"}**。
+4. 設定**項目**屬性**MyForEach**活動**new Object [] {1，"abc"}** 。
 
 5. 拖曳<xref:System.Activities.Statements.WriteLine>活動，從**基本型別**工具箱的區段**Delegate: Body**一節**MyForEach**活動。
 
-6. 設定**文字**屬性<xref:System.Activities.Statements.WriteLine>活動**argument.tostring （)**。
+6. 設定**文字**屬性<xref:System.Activities.Statements.WriteLine>活動**argument.tostring （)** 。
 
 工作流程執行時，主控台會顯示下列輸出：
 

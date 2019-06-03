@@ -1,5 +1,5 @@
 ---
-title: 逐步解說：使用設計工具建立 SharePoint Web 組件 |Microsoft Docs
+title: 建立使用設計工具的 SharePoint web 組件
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 4a22d814ce50dea1ee67ed3bf1f071839e60a797
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 9963c2f7e829e9d295ca254aa651e37e3ad08efd
+ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62965293"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66401138"
 ---
 # <a name="walkthrough-create-a-web-part-for-sharepoint-by-using-a-designer"></a>逐步解說：使用設計工具建立 SharePoint web 組件
 
@@ -49,7 +49,7 @@ ms.locfileid: "62965293"
 
 1. 開始[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]利用**系統管理員身分執行**選項。
 
-2. 在功能表列上，選擇 [檔案] > [新增] > [專案]。
+2. 在功能表列上，選擇 [檔案]   > [新增]   > [專案]  。
 
      [ **新增專案** ] 對話方塊隨即出現。
 
@@ -69,7 +69,7 @@ ms.locfileid: "62965293"
 
 1. 在 Visual Web Developer 設計工具中，選擇**設計**索引標籤，切換至 [設計] 檢視。
 
-2. 在功能表列上，選擇 [檢視] > [工具箱]。
+2. 在功能表列上，選擇 [檢視]   > [工具箱]  。
 
 3. 在 **標準**節點**工具箱**，選擇**CheckBoxList**控制項，並執行下列步驟：
 
@@ -95,7 +95,7 @@ ms.locfileid: "62965293"
 
    - 在設計工具中，按兩下**更新** 按鈕。
 
-   - 在 [**屬性**視窗**更新**按鈕，並選擇**事件**] 按鈕。 在 **按一下 **  屬性中，輸入**Button1_Click**，然後選擇 Enter 鍵。
+   - 在 [**屬性**視窗**更新**按鈕，並選擇**事件**] 按鈕。 在 **按一下**   屬性中，輸入**Button1_Click**，然後選擇 Enter 鍵。
 
      使用者控制項程式碼檔案會在 「 程式碼編輯器 」 中開啟和`Button1_Click`事件處理常式隨即出現。 稍後，您會將程式碼加入這個事件處理常式。
 

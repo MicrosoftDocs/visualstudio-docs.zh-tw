@@ -1,5 +1,5 @@
 ---
-title: 將角色指派給測試控制器和測試代理程式，以便進行自動化測試
+title: 適用於自動化測試的測試控制器和測試代理程式角色
 ms.date: 10/20/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.assetid: 57ed43ae-4e67-4139-8aec-3e9fceb0a745
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 322b7d2baeca80f076c33879b52a650f31f8872b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: eb62e668d7077e1be96ff7a282628b76b426898f
+ms.sourcegitcommit: 13ab9a5ab039b070b9cd9251d0b83dd216477203
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62822793"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66177803"
 ---
 # <a name="assign-roles-to-a-test-controller-and-test-agent"></a>將角色指派至測試控制器和測試代理程式
 

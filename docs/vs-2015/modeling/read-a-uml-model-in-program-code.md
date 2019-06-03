@@ -26,7 +26,7 @@ ms.locfileid: "63387674"
 ## <a name="Reading"></a> 讀取程式碼中的模型  
  若要存取模型內容，卻不顯示在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 視窗中，請使用 `ModelingProject.LoadReadOnly()`。  
   
- 例如:   
+ 例如:  
   
 ```  
 using Microsoft.VisualStudio.Uml.Classes;   
@@ -50,7 +50,7 @@ using (IModelingProjectReader projectReader =
   
  如果想要讀取圖表中的圖形，您必須先讀取專案，再讀取圖表。  
   
- 例如:   
+ 例如:  
   
 ```  
 using Microsoft.VisualStudio.ArchitectureTools.Extensibility.Presentation;   

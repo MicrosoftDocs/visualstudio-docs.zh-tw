@@ -191,7 +191,7 @@ TRACE( _T("This is a test of the TRACE macro that uses a TCHAR string: %s %d\n")
    #endif  
    ```  
   
-    請注意，記憶體檢查陳述式會以 `#ifdef`[_DEBUG](https://msdn.microsoft.com/library/a9901568-4846-4731-a404-399d947e2e7a)/ **#endif** 區塊括住，因此它們只會在程式的偵錯版本中編譯。  
+    請注意，記憶體檢查陳述式會以 `#ifdef`[_DEBUG](https://msdn.microsoft.com/library/a9901568-4846-4731-a404-399d947e2e7a)/  **#endif** 區塊括住，因此它們只會在程式的偵錯版本中編譯。  
   
     您知道有記憶體流失的狀況存在之後，可以使用另一個成員函式 [CMemoryState::DumpStatistics](https://msdn.microsoft.com/library/90d5f281-b92f-4725-a996-23ab94cf4b5d) 幫助您尋找流失的記憶體。  
   
@@ -364,7 +364,7 @@ Phone #: 581-0215
 #### <a name="BKMK_Customizing_object_dumps"></a> 自訂物件傾印  
  當您從 [CObject](https://msdn.microsoft.com/library/95e9acd3-d9eb-4ac0-b52b-ca4a501a7a3a)衍生類別時，您可在使用 `Dump` DumpAllObjectsSince [來傾印物件至](https://msdn.microsoft.com/library/a7f89034-bca4-4786-88d5-1571a5425ab2) 輸出視窗 [時，覆寫](../ide/reference/output-window.md)成員函式以提供額外的資訊。  
   
- `Dump` 函式將物件的成員變數的文字表示寫入傾印內容 ([CDumpContext](https://msdn.microsoft.com/library/98c52b2d-14b5-48ed-b423-479a4d1c60fa))。 傾印內容類似 I/O 資料流。 您可以使用附加運算子 (**<<**) 將資料傳送至 `CDumpContext`。  
+ `Dump` 函式將物件的成員變數的文字表示寫入傾印內容 ([CDumpContext](https://msdn.microsoft.com/library/98c52b2d-14b5-48ed-b423-479a4d1c60fa))。 傾印內容類似 I/O 資料流。 您可以使用附加運算子 ( **<<** ) 將資料傳送至 `CDumpContext`。  
   
  當您覆寫 `Dump` 函式時，您應該先呼叫 `Dump` 的基底類別版本來傾印基底類別物件的內容。 接著輸出衍生類別中每個成員變數的文字說明和值。  
   
@@ -436,9 +436,9 @@ pMyPerson->Dump( afxDump );
   
 3. 首先，您要建立新專案組態。  
   
-   1. 在 [\<專案> 屬性頁] 對話方塊中，按一下 [組態管理員] 按鈕。  
+   1. 在 [\<專案> 屬性頁]  對話方塊中，按一下 [組態管理員]  按鈕。  
   
-   2. 在 [組態管理員對話方塊](https://msdn.microsoft.com/fa182dca-282e-4ae5-bf37-e155344ca18b)裡，在方格中尋找專案。 在 [組態] 一欄中，選取 [\<新增...>]。  
+   2. 在 [組態管理員對話方塊](https://msdn.microsoft.com/fa182dca-282e-4ae5-bf37-e155344ca18b)裡，在方格中尋找專案。 在 [組態]  一欄中，選取 [\<新增...>]  。  
   
    3. 在 [新增專案組態對話方塊](https://msdn.microsoft.com/cca616dc-05a6-4fe3-bdc1-40c72a66f2be)裡，於 [ **專案組態名稱** ] 方塊內輸入新組態的名稱，例如「部分偵錯」。  
   
@@ -474,11 +474,11 @@ pMyPerson->Dump( afxDump );
   
    4. 在 [ **屬性頁** ] 對話方塊的 [ **組態設定** ] 資料夾底下，開啟 [ **C/C++** ] 資料夾，然後選取 [ **一般** ] 分類。  
   
-   5. 在屬性方格中，尋找 [偵錯資訊格式]。  
+   5. 在屬性方格中，尋找 [偵錯資訊格式]。   
   
    6. 按一下 [ **偵錯資訊格式** ] 設定並且選取偵錯資訊需要的選項 (通常是 [ **/ZI**])。  
   
-   7. 如果您要使用應用程式精靈所產生的應用程式，或者您有先行編譯的標頭，則必須關閉先行編譯的標頭，或在編譯其他模組之前重新編譯這些標頭。 否則，您會收到警告 C4650 和錯誤訊息 C2855。 若要關閉先行編譯標頭檔，可以變更 [\<專案> 屬性] 對話方塊中的 [建立/使用先行編譯標頭檔] 設定 (依序選取 [組態屬性] 資料夾、[C/C++] 子資料夾、[先行編譯標頭檔] 分類)。  
+   7. 如果您要使用應用程式精靈所產生的應用程式，或者您有先行編譯的標頭，則必須關閉先行編譯的標頭，或在編譯其他模組之前重新編譯這些標頭。 否則，您會收到警告 C4650 和錯誤訊息 C2855。 若要關閉先行編譯標頭檔，可以變更 [\<專案> 屬性]  對話方塊中的 [建立/使用先行編譯標頭檔]  設定 (依序選取 [組態屬性]  資料夾、[C/C++]  子資料夾、[先行編譯標頭檔]  分類)。  
   
 7. 從 [ **建置** ] 功能表，選取 [ **建置** ] 來重建過期的專案檔案。  
   

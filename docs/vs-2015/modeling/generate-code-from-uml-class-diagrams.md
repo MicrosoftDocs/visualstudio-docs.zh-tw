@@ -150,7 +150,7 @@ ms.locfileid: "63442421"
 
 1. 在  **UML 模型總管**，開啟模型項目的捷徑功能表，然後選擇**屬性**。 一般來說，您會將文字範本繫結附加至封裝或模型的根。  
 
-2. 在 [**屬性**] 視窗中，選擇省略符號按鈕 (**[...]**) 中**文字範本繫結**屬性。  
+2. 在 [**屬性**] 視窗中，選擇省略符號按鈕 ( **[...]** ) 中**文字範本繫結**屬性。  
 
     **文字範本繫結** 對話方塊隨即出現。  
 
@@ -169,7 +169,7 @@ ms.locfileid: "63442421"
    |        名稱        |                                                                                                                                                                                                                                                  這個繫結的名稱。 若要覆寫從包含的封裝或模型繼承的繫結，請使用與您想要覆寫的繫結相同的名稱。                                                                                                                                                                                                                                                  |
    |     覆寫      |                                                                                                                                                                                                                                                                                                      若為 true，則會覆寫任何現有的程式碼。                                                                                                                                                                                                                                                                                                       |
    |    目標名稱     | 產生的檔案名稱。<br /><br /> 您可以將運算式插入這個字串這類`{Name}`或`{Owner.Name}`。 例如，您可以撰寫： `{Owner.Name}_{Name}`。 在模型項目上評估此運算式。 它可以使用項目的屬性，但不能使用方法。 若要尋找可以使用哪些屬性，看看中的型別屬性 **Microsoft.VisualStudio.Uml。\\***.\*\*重要事項︰* \* `{Name}`或是`{Owner.Name}`可以只在用**目標名稱**屬性。 若要變更產生之類別的名稱，您必須修改此範本。 如需詳細資訊，請參閱 <<c0> [ 撰寫文字範本](#writing)。 |
-   |    專案路徑    |                                                                      指定將包含轉換輸出檔案的 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 專案路徑。 使用具類型的值來建立新的專案。 選擇省略符號按鈕 (**[...]**) 來選取現有的專案。<br /><br /> 將會建立新的專案 (如果不存在)。 這會是 C# 類別庫專案。<br /><br /> 若要這麼做，您必須直接輸入專案。 您可以包含環境變數巨集，例如 %ProgramFiles% or %LocalAppData%。                                                                       |
+   |    專案路徑    |                                                                      指定將包含轉換輸出檔案的 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 專案路徑。 使用具類型的值來建立新的專案。 選擇省略符號按鈕 ( **[...]** ) 來選取現有的專案。<br /><br /> 將會建立新的專案 (如果不存在)。 這會是 C# 類別庫專案。<br /><br /> 若要這麼做，您必須直接輸入專案。 您可以包含環境變數巨集，例如 %ProgramFiles% or %LocalAppData%。                                                                       |
    |  目標目錄  |                                                                                          產生目標檔案的資料夾。 此路徑相對於專案資料夾。<br /><br /> 您可以使用 `{PackageStructure}` 運算式插入路徑，此路徑會對應到包含的封裝名稱。 預設值為 `\GeneratedCode\{PackageStructure}`。 您也可以包含環境變數，例如 %TEMP% 或 %HomePath%。 **重要事項︰** `{PackageStructure}`只在**目標目錄**屬性。                                                                                          |
    | 範本檔路徑。 |                                                                                                                                                           將要執行轉換的範本。<br /><br /> 您可以使用提供的範本，或建立自己的範本。 您可以在下列位置找到提供的範本：<br /><br /> …\Program Files\Microsoft Visual Studio 12.0\Common7\IDE\Extensions\Microsoft\Architecture Tools\Extensibility\Templates\Text\                                                                                                                                                           |
 
@@ -188,7 +188,7 @@ ms.locfileid: "63442421"
 
 - 若要巡覽程式碼中的 UML 模型，您必須使用 UML API。 如需詳細資訊，請參閱 <<c0> [ 巡覽 UML 模型](../modeling/navigate-the-uml-model.md)並[UML 模型擴充性的 API 參考](../modeling/api-reference-for-uml-modeling-extensibility.md)。  
 
-  若要使用的範本**產生的程式碼**命令時，您必須包含 Modeling 指示詞。 例如:   
+  若要使用的範本**產生的程式碼**命令時，您必須包含 Modeling 指示詞。 例如:  
 
   `<#@ Modeling ElementType="Microsoft.VisualStudio.Uml.Classes.IClass" Processor="ModelingProcessor" #>`  
 
@@ -218,11 +218,11 @@ ms.locfileid: "63442421"
 
 - 此範本會自動參考某些組件。 例如，這些組件包括 System.dll 和 Microsoft.VisualStudio.Uml.Interfaces.dll。  
 
-   若要在您產生的程式碼中使用其他組件，您必須使用 `Assembly` 指示詞。 例如:   
+   若要在您產生的程式碼中使用其他組件，您必須使用 `Assembly` 指示詞。 例如:  
 
    `<#@ Assembly Name="%ProgramFiles%\Microsoft Visual Studio 12.0\Common7\IDE\PublicAssemblies\Microsoft.VisualStudio.ArchitectureTools.Extensibility.dll" #>`  
 
-- 某些命名空間 (例如 `System`) 會自動匯入您的程式碼內。 對於其他命名空間，您可以依照使用 `Import` 陳述式的相同方式來使用 `using` 指示詞。 例如:   
+- 某些命名空間 (例如 `System`) 會自動匯入您的程式碼內。 對於其他命名空間，您可以依照使用 `Import` 陳述式的相同方式來使用 `using` 指示詞。 例如:  
 
    `<#@ Import Namespace="Microsoft.VisualStudio.Uml.Classes" #>`  
 

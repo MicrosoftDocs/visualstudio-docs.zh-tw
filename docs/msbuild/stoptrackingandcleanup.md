@@ -35,7 +35,7 @@ HRESULT WINAPI StopTrackingAndCleanup(void);
  如已停止追蹤，則傳回 **HRESULT** 和已設定的 **SUCCEEDED** 位元。
 
 ## <a name="requirements"></a>需求
- **標頭：***FileTracker.h*
+ **標頭：** *FileTracker.h*
 
 ## <a name="see-also"></a>另請參閱
 - [StartTrackingContext](../msbuild/starttrackingcontext.md)

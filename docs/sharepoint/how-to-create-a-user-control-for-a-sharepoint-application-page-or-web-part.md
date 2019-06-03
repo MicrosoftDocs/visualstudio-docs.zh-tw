@@ -1,5 +1,5 @@
 ---
-title: HOW TO：建立使用者控制項為 SharePoint 應用程式頁面或 Web 組件 |Microsoft Docs
+title: 建立 SharePoint 應用程式頁面或 web 組件的使用者控制項
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 17f8acd38df810d0ea7e5c0da2293a5de31eb281
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 3a88a59e9b87a193329433e5eb0625afa1428026
+ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63446502"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66401485"
 ---
 # <a name="how-to-create-a-user-control-for-a-sharepoint-application-page-or-web-part"></a>HOW TO：建立 SharePoint 應用程式頁面或 web 組件的使用者控制項
   您可以建立自訂使用者控制項，為 SharePoint 方案提供自訂功能，而且您可以在專案內重複使用該功能。 您可以將 Web 組件或應用程式頁面中加入使用者控制項，或加入其他 ASP.NET 控制項和 SharePoint 控制項，並且定義控制項的屬性和方法。 如需有關使用者控制項的詳細資訊，請參閱 <<c0> [ 建立可重複使用的控制項，為 web 組件或應用程式頁面](../sharepoint/creating-reusable-controls-for-web-parts-or-application-pages.md)並[使用者控制項和 SharePoint 中的伺服器控制項](https://blogs.msdn.microsoft.com/kaevans/2011/04/28/user-controls-and-server-controls-in-sharepoint/)。
@@ -31,13 +31,13 @@ ms.locfileid: "63446502"
 
 2. 在 [ **方案總管**] 中選擇專案節點。
 
-3. 在功能表列中，選擇 [專案] > [加入新項目]。
+3. 在功能表列中，選擇 [專案]   > [加入新項目]  。
 
-     [新增項目] 對話方塊隨即開啟。
+     [新增項目]  對話方塊隨即開啟。
 
 4. 在 **已安裝**窗格中，選擇**Office/SharePoint**節點。
 
-5. 在 SharePoint 範本清單中，選擇**使用者控制項 （僅限陣列方案）**。
+5. 在 SharePoint 範本清單中，選擇**使用者控制項 （僅限陣列方案）** 。
 
     > [!NOTE]
     > 使用者控制項只適用於陣列方案。

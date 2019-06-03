@@ -10,12 +10,12 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 30a20e5810d5c361fddf8cd934863fcb1186b5d0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 83ac401b67444d4fdd467d5aefeb46bccb5e7e84
+ms.sourcegitcommit: cd21b38eefdea2cdefb53e68e7a30b868e78dd6b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62793448"
+ms.lasthandoff: 05/22/2019
+ms.locfileid: "66037002"
 ---
 # <a name="project-and-item-templates"></a>專案範本與項目範本
 
@@ -47,7 +47,7 @@ ms.locfileid: "62793448"
 
 ::: moniker-end
 
-   如需 .vstemplate 檔案的詳細資訊，請參閱[範本參數](../ide/template-parameters.md)。
+   如需 *.vstemplate* 檔案的詳細資訊，請參閱[範本標籤](template-tags.md)和[範本參數](../ide/template-parameters.md)。
 
 當這些檔案壓縮成 .zip 檔案並放入正確的資料夾時，Visual Studio 會自動在下列位置顯示它們：
 
@@ -71,6 +71,7 @@ ms.locfileid: "62793448"
 
 - [如何：建立專案範本](../ide/how-to-create-project-templates.md)
 - [如何：建立項目範本](../ide/how-to-create-item-templates.md)
+- [範本標籤](template-tags.md)
 - [範本參數](../ide/template-parameters.md)
 - [自訂範本](../ide/customizing-project-and-item-templates.md)
 - [Visual Studio 範本中的 NuGet 套件](/nuget/visual-studio-extensibility/visual-studio-templates)

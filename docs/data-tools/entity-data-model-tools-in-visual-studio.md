@@ -29,7 +29,7 @@ Entity Framework 工具安裝的一部分**資料儲存和處理**Visual Studio 
 
 - 您可以使用[!INCLUDE[vstecado](../data-tools/includes/vstecado_md.md)]  **[!INCLUDE[adonet_edm](../data-tools/includes/adonet_edm_md.md)]設計師**(**Entity Designer**) 以視覺化方式建立和修改實體、 關聯、 對應和繼承關聯性。 **Entity Designer**也會產生[!INCLUDE[TLA#tla_cshrp](../data-tools/includes/tlasharptla_cshrp_md.md)]或[!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]物件層程式碼。
 
-- 您可以使用**[!INCLUDE[adonet_edm](../data-tools/includes/adonet_edm_md.md)]精靈**從現有資料庫產生概念模型，並將資料庫連接資訊加入至您的應用程式。
+- 您可以使用 **[!INCLUDE[adonet_edm](../data-tools/includes/adonet_edm_md.md)]精靈**從現有資料庫產生概念模型，並將資料庫連接資訊加入至您的應用程式。
 
 - 您可以使用**建立資料庫精靈**要先建立概念模型，然後再建立支援該模型的資料庫。
 

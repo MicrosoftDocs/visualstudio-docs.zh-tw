@@ -158,7 +158,7 @@ ms.locfileid: "65685417"
   
 2. 依序展開**專案和方案**節點，，然後選取**建置並執行**。  
   
-3. 設定**MSBuild 專案建置輸出詳細等級**要**Normal**。 按一下 [確定] 。  
+3. 設定**MSBuild 專案建置輸出詳細等級**要**Normal**。 按一下 [確定]  。  
   
 4. 重建 SimpleProject 專案。  
   
@@ -471,7 +471,7 @@ ZipProjects:
   
 7. Visual Studio 會呼叫您專案的處理站使用 Visual Studio 範本建立專案。 程式碼編輯器中開啟新的 Program.cs 檔案。  
   
-8. 以滑鼠右鍵按一下專案節點，在**方案總管**，然後按一下**屬性**。 [屬性頁] 對話方塊隨即出現。  
+8. 以滑鼠右鍵按一下專案節點，在**方案總管**，然後按一下**屬性**。 [屬性頁]  對話方塊隨即出現。  
   
    ![](../extensibility/media/simpproj2-proppage.png "SimpProj2_PropPage")  
   

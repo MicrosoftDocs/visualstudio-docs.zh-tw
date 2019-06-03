@@ -1,5 +1,5 @@
 ---
-title: 工作流程設計工具-System.Activities 索引標籤上，選擇工具箱項目對話方塊
+title: 工作流程設計工具：System.Activities，選擇工具箱項目
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b871f14f5f37afc80bb12139799405a669a3f1f0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e057a0ff61bd095dd011c85970fd23ab1da75838
+ms.sourcegitcommit: ba5e072c9fedeff625a1332f22dcf3644d019f51
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62434055"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "66432067"
 ---
 # <a name="systemactivities-tab-choose-toolbox-items-dialog-box"></a>系統活動索引標籤，選擇工具箱項目對話方塊
 

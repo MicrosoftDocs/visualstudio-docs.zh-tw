@@ -10,7 +10,7 @@ ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 1312d61b2d287a5dd8cb757b73e818a9e9cb2241
 ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/22/2019
 ms.locfileid: "60110033"
@@ -31,7 +31,7 @@ ms.locfileid: "60110033"
   
 ## <a name="createClassLibrary"></a> 若要建立原生和 Windows 執行階段程式庫  
   
-1. 在功能表列上，選擇 [檔案] 、[新增] 、[專案] 。  
+1. 在功能表列上，選擇 [檔案]  、[新增]  、[專案]  。  
   
 2. 在範本清單中，依序展開**Visual C++** ， **Windows Store**，然後選取**DLL （Windows 市集應用程式）** 範本。 在 [**名稱**方塊中，指定`NativeMath`，然後選擇 **[確定]** ] 按鈕。  
   
@@ -43,7 +43,7 @@ ms.locfileid: "60110033"
   
      [!code-cpp[CreatingAnSDKUsingCpp#2](../snippets/cpp/VS_Snippets_VSSDK/creatingansdkusingcpp/cpp/nativemath/nativemath.cpp#2)]  
   
-5. 在**方案總管 中**，開啟捷徑功能表**解決方案 'NativeMath'**，然後選擇**新增**，**新專案**。  
+5. 在**方案總管 中**，開啟捷徑功能表**解決方案 'NativeMath'** ，然後選擇**新增**，**新專案**。  
   
 6. 在範本清單中，依序展開**Visual C++** ，然後選取**Windows 執行階段元件**範本。 在 [**名稱**方塊中，指定`NativeMathWRT`，然後選擇 **[確定]** ] 按鈕。  
   
@@ -55,13 +55,13 @@ ms.locfileid: "60110033"
   
      [!code-cpp[CreatingAnSDKUsingCpp#4](../snippets/cpp/VS_Snippets_VSSDK/creatingansdkusingcpp/cpp/nativemathwrt/class1.cpp#4)]  
   
-9. 在功能表列上，選擇 [建置] 、[建置方案] 。  
+9. 在功能表列上，選擇 [建置]  、[建置方案]  。  
   
 ## <a name="createVSIX"></a> 若要建立 NativeMathVSIX 擴充功能專案  
   
-1. 在**方案總管 中**，開啟捷徑功能表**解決方案 'NativeMath'**，然後選擇**新增**，**新專案**。  
+1. 在**方案總管 中**，開啟捷徑功能表**解決方案 'NativeMath'** ，然後選擇**新增**，**新專案**。  
   
-2. 在範本清單中，依序展開**Visual C#**，**擴充性**，然後選取**VSIX 封裝**。 在 [**名稱**方塊中，指定**NativeMathVSIX**，然後選擇 **[確定]** ] 按鈕。  
+2. 在範本清單中，依序展開**Visual C#** ，**擴充性**，然後選取**VSIX 封裝**。 在 [**名稱**方塊中，指定**NativeMathVSIX**，然後選擇 **[確定]** ] 按鈕。  
   
 3. VSIX 資訊清單設計工具出現時，請將它關閉。  
   
@@ -97,7 +97,7 @@ ms.locfileid: "60110033"
                 \Neutral  
     ```  
   
-10. 中**方案總管**，開啟捷徑功能表**解決方案 'NativeMath'**，然後選擇**在檔案總管 中開啟資料夾**。  
+10. 中**方案總管**，開啟捷徑功能表**解決方案 'NativeMath'** ，然後選擇**在檔案總管 中開啟資料夾**。  
   
 11. 中**檔案總管**，複製 \NativeMath\NativeMath.h，然後在**方案總管**，請在**NativeMathVSIX**專案中，將它貼在 \DesignTime\CommonConfiguration\Neutral\Include\ 資料夾中。  
   
@@ -133,7 +133,7 @@ ms.locfileid: "60110033"
   
      重複此程序**SDKManifest.xml**檔案。  
   
-16. 在功能表列上，選擇 [建置] 、[建置方案] 。  
+16. 在功能表列上，選擇 [建置]  、[建置方案]  。  
   
 17. 在 **方案總管 中**，開啟捷徑功能表**NativeMathVSIX**專案，，然後選擇**在檔案總管 中開啟資料夾**。  
   
@@ -143,7 +143,7 @@ ms.locfileid: "60110033"
   
 ## <a name="createSample"></a> 若要建立範例應用程式使用的類別庫  
   
-1. 在功能表列上，選擇 [檔案] 、[新增] 、[專案] 。  
+1. 在功能表列上，選擇 [檔案]  、[新增]  、[專案]  。  
   
 2. 在範本清單中，依序展開**Visual C++** ， **Windows Store**，然後選取**空白應用程式**。 在 [**名稱**方塊中，指定**NativeMathSDKSample**，然後選擇 **[確定]** ] 按鈕。  
   
@@ -171,7 +171,7 @@ ms.locfileid: "60110033"
   
 10. 選擇 F5 鍵執行應用程式。  
   
-11. 在應用程式中，輸入任何兩個數字，選取作業，然後選擇**=**  按鈕。  
+11. 在應用程式中，輸入任何兩個數字，選取作業，然後選擇 **=**  按鈕。  
   
      正確的結果會出現。  
   

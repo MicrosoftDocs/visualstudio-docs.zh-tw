@@ -61,14 +61,14 @@ ms.locfileid: "63438898"
   
  您也可以使用 **/Trace** 選項，包含有關 .NET 記憶體資料的詳細計時資訊︰  
   
- **vsperfaspnetcmd /memory**[**:lifetime**] **/trace**`websiteUrl`  
+ **vsperfaspnetcmd /memory**[ **:lifetime**] **/trace**`websiteUrl`  
   
 ## <a name="to-collect-tier-interaction-data"></a>收集階層互動資料  
   
 > [!WARNING]
 > 使用 [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)]、[!INCLUDE[vsPreLong](../includes/vsprelong-md.md)] 或 [!INCLUDE[vs_pro_current_short](../includes/vs-pro-current-short-md.md)] 可以收集階層互動分析 (TIP) 資料。 不過，只能在 [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)] 和 [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)]檢視階層互動分析資料。  
 >   
-> 若要在 Windows 8 或 Windows Server 2012 上收集 TIP 資料，您必須使用檢測 (**/trace**) 選項。  
+> 若要在 Windows 8 或 Windows Server 2012 上收集 TIP 資料，您必須使用檢測 ( **/trace**) 選項。  
   
  透過取樣資料收集階層互動資料：  
   
@@ -80,14 +80,14 @@ ms.locfileid: "63438898"
   
  透過 .NET 記憶體資料收集階層互動資料：  
   
- **vsperfaspnetcmd /memory**[**:lifetime**] **/tip**_websiteUrl_  
+ **vsperfaspnetcmd /memory**[ **:lifetime**] **/tip**_websiteUrl_  
   
 ## <a name="UsingNoWait"></a>使用 /NoWait 選項  
  根據預設，不會在 **vsperfaspnetcmd** 命令之後傳回命令提示字元。 您可以使用下列語法選項以強制傳回命令提示字元。 接著，您可以在命令提示字元視窗中執行其他作業。 若要結束程式碼剖析，請在個別的 **vsperfaspnetcmd** 命令中使用 **/shutdown** 選項。  
   
  開始進行程式碼剖析：  
   
- **vsperfaspnetcmd** [*/Options*] **/nowait**_websiteUrl_  
+ **vsperfaspnetcmd** [ */Options*] **/nowait**_websiteUrl_  
   
  結束程式碼剖析：  
   

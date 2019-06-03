@@ -143,7 +143,7 @@ For Each element As ExampleElement In Me.WorkModel.Elements
 ## <a name="loading-models-dynamically"></a>以動態方式載入模型  
  如果您想要判斷在執行階段来載入哪一個模型，您可以在您的程式碼，而不是使用 DSL 特定指示詞中以動態方式載入模型檔案。  
   
- 不過，其中一個 DSL 特定指示詞的函式是匯入 DSL 的命名空間，好讓範本程式碼可以使用中的 DSL 定義的網域類別。 因為您不使用指示詞，您必須新增**\<組件 >** 並**\<匯入 >** 指示詞，您可能會載入的所有模型。 這是簡單如果不同的模型，您可能會載入相同的 DSL 的所有執行個體。  
+ 不過，其中一個 DSL 特定指示詞的函式是匯入 DSL 的命名空間，好讓範本程式碼可以使用中的 DSL 定義的網域類別。 因為您不使用指示詞，您必須新增 **\<組件 >** 並 **\<匯入 >** 指示詞，您可能會載入的所有模型。 這是簡單如果不同的模型，您可能會載入相同的 DSL 的所有執行個體。  
   
  若要載入檔案，最有效的方法是使用[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]ModelBus。 在典型的案例中，文字範本會以一般方式載入的第一個模型使用 DSL 特定指示詞。 該模型會包含對另一個模型的 ModelBus 參考。 您可以使用 ModelBus 開啟參考的模型，並存取特定的項目。 如需詳細資訊，請參閱 <<c0> [ 文字範本中使用 Visual Studio ModelBus](../modeling/using-visual-studio-modelbus-in-a-text-template.md)。  
   

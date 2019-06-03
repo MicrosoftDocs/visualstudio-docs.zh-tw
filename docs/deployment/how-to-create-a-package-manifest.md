@@ -71,7 +71,7 @@ ms.locfileid: "62899736"
     </Strings>
     ```
 
-7. 複製*C:\package*到 Visual Studio 啟動載入器目錄的資料夾。 若為 Visual Studio 2010，則*\Program Files\Microsoft SDKs\Windows\v7.0A\Bootstrapper\Packages*目錄。
+7. 複製*C:\package*到 Visual Studio 啟動載入器目錄的資料夾。 若為 Visual Studio 2010，則 *\Program Files\Microsoft SDKs\Windows\v7.0A\Bootstrapper\Packages*目錄。
 
 ## <a name="example"></a>範例
  封裝資訊清單包含地區設定特有的資訊，例如錯誤訊息、 軟體授權條款，以及語言套件。

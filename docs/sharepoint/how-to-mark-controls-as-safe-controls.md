@@ -51,7 +51,7 @@ ms.locfileid: "63443076"
 
      文字方塊控制項現在會標示為安全對指令碼資料隱碼攻擊的控制項。
 
-7. 選擇 [確定] 按鈕以關閉對話方塊。
+7. 選擇 [確定]  按鈕以關閉對話方塊。
 
 ## <a name="marking-safe-controls-in-the-package-designer"></a>將標記在封裝設計工具中的安全控制項
 

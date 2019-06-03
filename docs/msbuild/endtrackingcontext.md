@@ -35,7 +35,7 @@ HRESULT WINAPI EndTrackingContext();
 如果已結束追蹤內容，則為已設定 **SUCCEEDED** 位元的 **HRESULT**。
 
 ## <a name="requirements"></a>需求
-**標頭：***FileTracker.h*
+**標頭：** *FileTracker.h*
 
 ## <a name="see-also"></a>另請參閱
 - [StartTrackingContext](../msbuild/starttrackingcontext.md)

@@ -47,7 +47,7 @@ ms.locfileid: "62894374"
 
 1. 將**偵錯工具類型**設定為**混合**或**自動**。
 
-1. 選取 [確定]。
+1. 選取 [確定]  。
 
    ![啟用混合的模式偵錯](../debugger/media/dbg-mixed-mode-from-native.png "啟用混合的模式偵錯")
 

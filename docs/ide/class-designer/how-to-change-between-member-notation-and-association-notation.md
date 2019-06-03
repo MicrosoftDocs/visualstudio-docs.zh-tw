@@ -1,5 +1,5 @@
 ---
-title: HOW TO：在成員標記法和關聯標記法之間變更 (類別設計工具)
+title: 在成員與關聯標記法之間變更 (類別設計工具)
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,14 +13,14 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4ff63e6cca9deebbfcfa5960b41d85f9425f7a73
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 17bda235f0fb5781b19a3b1384b86ae58543edf3
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62975499"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66261207"
 ---
-# <a name="how-to-change-between-member-notation-and-association-notation-in-class-designer"></a>HOW TO：在 [類別設計工具] 中，在成員標記法和關聯標記法之間變更
+# <a name="how-to-change-between-member-notation-and-association-notation-in-class-designer"></a>作法：在 [類別設計工具] 中，在成員標記法和關聯標記法之間變更
 
 使用 [類別設計工具] 時，您可以在成員標記法與關聯標記法之間切換，以變更兩種類型在類別圖表中的關聯性代表方式。 將成員顯示為關聯線時，通常可提供類型關聯方式的實用視覺效果。
 

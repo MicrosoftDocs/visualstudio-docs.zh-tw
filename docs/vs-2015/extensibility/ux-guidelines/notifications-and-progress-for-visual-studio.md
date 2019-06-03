@@ -482,7 +482,7 @@ public interface IVsInfoBarUIEvents
 
  ![欄位驗證&#40;空白&#41;](../../extensibility/ux-guidelines/media/0905-01-fieldvalidation.png "0905年 01_FieldValidation")
 
- 如果欄位是必要的應該要有加上浮水印文字指出**\<必要 >** 且欄位背景應指示燈黃色 (VSColor: `Environment.ControlEditRequiredBackground`) 和前景應為灰色 (VSColor: `Environment.ControlEditRequiredHintText`):
+ 如果欄位是必要的應該要有加上浮水印文字指出 **\<必要 >** 且欄位背景應指示燈黃色 (VSColor: `Environment.ControlEditRequiredBackground`) 和前景應為灰色 (VSColor: `Environment.ControlEditRequiredHintText`):
 
  ![欄位與 [必要] 標籤的驗證](../../extensibility/ux-guidelines/media/0905-02-fieldvalidationrequired.png "0905年 02_FieldValidationRequired")
 

@@ -81,29 +81,29 @@ ms.locfileid: "65476664"
 
 3. 在 **方案總管 中**，以滑鼠右鍵按一下功能表上的 VSIX 專案，選擇**設定為啟始專案**。
 
-4. 在 **source.extension.vsixmanifest**的 [資產] 下，加入圖層驗證專案做為 MEF 元件：
+4. 在 **source.extension.vsixmanifest**的 [資產]  下，加入圖層驗證專案做為 MEF 元件：
 
-    1. 選擇 [新增] 。
+    1. 選擇 [新增]  。
 
     2. 在 [加入新的資產]  對話方塊中，設定：
 
-          = 
+           =  
 
-          = 
+           =  
 
-          = *您的驗證程式專案*
+          = *您的驗證程式專案* 
 
 5. 您也必須將它加入做為圖層驗證：
 
-    1. 選擇 [新增] 。
+    1. 選擇 [新增]  。
 
     2. 在 [加入新的資產]  對話方塊中，設定：
 
          **Type** = **Microsoft.VisualStudio.ArchitectureTools.Layer.Validator**. 這不是下拉式清單的其中一個選項。 您必須從鍵盤輸入。
 
-          = 
+           =  
 
-          = *您的驗證程式專案*
+          = *您的驗證程式專案* 
 
 6. 返回圖層驗證專案，然後加入下列專案參考：
 
@@ -220,7 +220,7 @@ ms.locfileid: "65476664"
 
 或者，您可以插入對 `System.Windows.Forms.MessageBox.Show()`的呼叫。 訊息方塊出現時，請移至 Visual studio，然後在主要執行個體**偵錯**功能表上，按一下**附加至處理序**。 選取名為 **Graphcmd.exe**的處理序。
 
-一律藉由按 CTRL + F5 ([啟動但不偵錯]) 來啟動實驗執行個體。
+一律藉由按 CTRL + F5 ([啟動但不偵錯]  ) 來啟動實驗執行個體。
 
 ### <a name="deploying-a-validation-extension"></a>部署驗證擴充功能
 

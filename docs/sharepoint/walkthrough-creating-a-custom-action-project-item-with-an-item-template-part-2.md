@@ -1,5 +1,5 @@
 ---
-title: 逐步解說：建立自訂動作專案項目與項目範本，第 2 部分 |Microsoft Docs
+title: 建立自訂動作專案項目包含項目範本，第 2 部分
 ms.date: 02/02/2017
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +11,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: d9170c6ed32c7a807af8c869ca9616db3bdff683
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 6fa4915b9621789c68ed994440de3a1ef544c40c
+ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63430460"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66401172"
 ---
 # <a name="walkthrough-create-a-custom-action-project-item-with-an-item-template-part-2"></a>逐步解說：建立自訂動作專案項目與項目範本，第 2 部分
   您定義自訂 SharePoint 專案項目類型，並將它與 Visual Studio 中的項目範本產生關聯之後，您也可以提供範本的精靈。 您可以使用精靈，在使用您的範本將新的執行個體的專案項目加入至專案時，從使用者收集資訊。 您所收集的資訊可以用來初始化專案項目中。
@@ -158,7 +158,7 @@ ms.locfileid: "63430460"
 
 #### <a name="to-build-your-project"></a>建置您的專案
 
-1. 在功能表列上選擇 [建置] > [建置解決方案]。
+1. 在功能表列上選擇 [建置]   > [建置解決方案]  。
 
 ## <a name="associate-the-wizard-with-the-item-template"></a>關聯的項目範本的精靈
  既然您已實作 「 精靈 」，您必須將其與**自訂動作**項目範本，藉由完成三個主要步驟：
@@ -179,7 +179,7 @@ ms.locfileid: "63430460"
 
 4. 中**建立強式名稱金鑰**對話方塊方塊中，輸入名稱，清除**保護我的金鑰檔使用密碼**核取方塊，，然後選擇 [**確定**] 按鈕。
 
-5. 在功能表列上選擇 [建置] > [建置解決方案]。
+5. 在功能表列上選擇 [建置]   > [建置解決方案]  。
 
 #### <a name="to-get-the-public-key-token-for-the-wizard-assembly"></a>若要取得的公開金鑰權杖精靈組件
 
@@ -333,7 +333,7 @@ ms.locfileid: "63430460"
 
 1. 在實驗性 Visual Studio 執行個體，在功能表列上，選擇**工具** > **擴充功能和更新**。
 
-     [擴充功能和更新] 對話方塊隨即開啟。
+     [擴充功能和更新]  對話方塊隨即開啟。
 
 2. 在延伸模組清單中，選擇**自訂動作專案項目**延伸模組，然後選擇**解除安裝** 按鈕。
 

@@ -23,7 +23,7 @@ ms.locfileid: "62565156"
 ---
 # <a name="upgrade-mdf-files"></a>升級 .mdf 檔案
 
-本主題描述升級資料庫檔案的選項 (*.mdf*) 安裝新版的 Visual Studio 之後。 它包含下列工作的指示：
+本主題描述升級資料庫檔案的選項 ( *.mdf*) 安裝新版的 Visual Studio 之後。 它包含下列工作的指示：
 
 - 升級使用較新版的 SQL Server Express LocalDB 資料庫檔案
 
@@ -33,7 +33,7 @@ ms.locfileid: "62565156"
 
 - 讓 SQL Server Express 的預設資料庫引擎
 
-您可以使用 Visual Studio 中開啟專案，其中包含資料庫檔案 (*.mdf*) 使用較舊版本的 SQL Server Express 或 LocalDB 中建立。 不過，若要繼續開發您的專案在 Visual Studio 中，您必須擁有 SQL Server Express 或 LocalDB 與 Visual Studio 中，相同的電腦上安裝該版本，或您必須先升級資料庫檔案。 如果您升級資料庫檔案時，您將無法存取使用舊版的 SQL Server Express 或 LocalDB。
+您可以使用 Visual Studio 中開啟專案，其中包含資料庫檔案 ( *.mdf*) 使用較舊版本的 SQL Server Express 或 LocalDB 中建立。 不過，若要繼續開發您的專案在 Visual Studio 中，您必須擁有 SQL Server Express 或 LocalDB 與 Visual Studio 中，相同的電腦上安裝該版本，或您必須先升級資料庫檔案。 如果您升級資料庫檔案時，您將無法存取使用舊版的 SQL Server Express 或 LocalDB。
 
 您可能也會提示您升級資料庫檔案，如果檔案的版本不相容的 SQL Server Express 或目前已安裝的 LocalDB 執行個體，透過 SQL Server Express 或 LocalDB 的較早版本所建立的。 若要解決此問題，Visual Studio 會提示您升級的檔案。
 
@@ -73,7 +73,7 @@ ms.locfileid: "62565156"
 
     - **邏輯名稱**:您想要使用的檔案名稱。
 
-3. 選取 [確定] 按鈕。
+3. 選取 [確定]  按鈕。
 
 4. 當系統提示您時，選取**是**升級檔 按鈕。
 
@@ -107,7 +107,7 @@ ms.locfileid: "62565156"
 
 3. 在  **SQL Server 執行個體名稱**文字中，指定的 SQL Server Express 或您想要使用的 LocalDB 執行個體的名稱。 如果不名為執行個體，指定`.\SQLEXPRESS or (LocalDB)\MSSQLLocalDB`。
 
-4. 選取 [確定] 按鈕。
+4. 選取 [確定]  按鈕。
 
     SQL Server Express，將會是您的應用程式的預設資料庫引擎。
 

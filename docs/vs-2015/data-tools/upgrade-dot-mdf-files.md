@@ -82,7 +82,7 @@ ms.locfileid: "63424913"
   
    - **邏輯名稱**:您想要使用的檔案名稱。  
   
-3. 選取 [確定] 按鈕。  
+3. 選取 [確定]  按鈕。  
   
 4. 當系統提示您時，選取**是**升級檔 按鈕。  
   
@@ -116,6 +116,6 @@ ms.locfileid: "63424913"
   
 3. 在  **SQL Server 執行個體名稱**文字中，指定的 SQL Server Express 或您想要使用的 LocalDB 執行個體的名稱。 如果不名為執行個體，指定`.\SQLEXPRESS or (localdb)\MSSQLLocalDB`。  
   
-4. 選取 [確定] 按鈕。  
+4. 選取 [確定]  按鈕。  
   
    SQL Server Express，將會是您的應用程式的預設資料庫引擎。  

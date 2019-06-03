@@ -26,7 +26,7 @@ ms.locfileid: "65697661"
   
 ## <a name="Package"></a> 若要使用 Package.xml 新增安裝程式套件  
   
-1. 在 [檔案總管] 中，開啟 [套件] 資料夾。  
+1. 在 [檔案總管] 中，開啟 [套件]  資料夾。  
   
      根據預設，在 32 位元系統上路徑為 C:\Program Files\Microsoft Visual Studio 14.0\SDK\Bootstrapper\Packages，在 64 位元系統上路徑為 C:\Program Files (x86)\Microsoft Visual Studio 14.0\SDK\Bootstrapper\Packages。  
   
@@ -34,15 +34,15 @@ ms.locfileid: "65697661"
   
 3. 在 [記事本] 中，開啟 **Package.xml** 檔案。  
   
-4. 找出**名稱**包含的項目 **http://go.microsoft.com/fwlink**，並複製 URL。 包括 **LinkID** 部分。  
+4. 找出**名稱**包含的項目 **http://go.microsoft.com/fwlink** ，並複製 URL。 包括 **LinkID** 部分。  
   
     > [!NOTE]
-    > 如果沒有**名稱**項目包含 **http://go.microsoft.com/fwlink**，開啟 **Product.xml** 必要條件的根資料夾中的檔案，並找出 **fwlink** 字串。  
+    > 如果沒有**名稱**項目包含 **http://go.microsoft.com/fwlink** ，開啟 **Product.xml** 必要條件的根資料夾中的檔案，並找出 **fwlink** 字串。  
   
     > [!IMPORTANT]
-    > 有些必要條件包含多個安裝程式套件 (例如，用於 32 位元或 64 位元系統)。 如果有多個 [Name] 元素包含 **fwlink**，則必須針對每一個元素重覆其餘步驟。  
+    > 有些必要條件包含多個安裝程式套件 (例如，用於 32 位元或 64 位元系統)。 如果有多個 [Name]  元素包含 **fwlink**，則必須針對每一個元素重覆其餘步驟。  
   
-5. 將 URL 貼上瀏覽器的網址列，然後在系統提示您執行或儲存時，選擇 [儲存]。  
+5. 將 URL 貼上瀏覽器的網址列，然後在系統提示您執行或儲存時，選擇 [儲存]  。  
   
      這個步驟會將安裝程式檔下載至您的電腦。  
   

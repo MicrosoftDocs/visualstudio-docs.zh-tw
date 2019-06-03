@@ -1,33 +1,31 @@
 ---
-title: 如何保持 Azure 雲端服務的固定虛擬 IP 位址 | Microsoft Docs
+title: 保持 Azure 雲端服務的固定虛擬 IP 位址
 description: 了解如何確保 Azure 雲端服務的虛擬 IP 位址 (VIP) 不會變更。
 author: ghogen
 manager: jillfra
 assetId: 4a58e2c6-7a79-4051-8a2c-99182ff8b881
-ms.prod: visual-studio-dev14
-ms.technology: vs-azure
 ms.custom: vs-azure
 ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 03/21/2017
 ms.author: ghogen
-ms.openlocfilehash: e17e99b9a1270b3d6a99429bd24103a10d347d69
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ae9064b6aba283c8d2fb8d1e5ec02ef1bd70e199
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62550860"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66260731"
 ---
 # <a name="retain-a-constant-virtual-ip-address-for-an-azure-cloud-service"></a>保持 Azure 雲端服務的固定虛擬 IP 位址
 當您更新裝載於 Azure 中的雲端服務時，您可能需要確保服務的虛擬 IP 位址 (VIP) 不會變更。 許多網域管理服務都使用網域名稱系統 (DNS) 註冊網域名稱。 DNS 只有在 VIP 保持不變時才能運作。 您可以使用 Azure 工具中的 [發佈精靈]  確保雲端服務的 VIP 不會在您更新它時變更。 如需有關如何使用雲端服務的 DNS 網域管理的詳細資訊，請參閱 [設定 Azure 雲端服務的自訂網域名稱](/azure/cloud-services/cloud-services-custom-domain-name-portal)。
 
 ## <a name="publish-a-cloud-service-without-changing-its-vip"></a>發佈雲端服務而不變更其 VIP
-當您第一次將雲端服務的 VIP 部署至特定環境 (例如生產環境) 的 Azure 中，會配置雲端服務的 VIP。 只有當您明確刪除部署或由部署更新程序隱含地刪除部署時，VIP 才會變更。 若要保留 VIP，您不能刪除您的部署，且必須要確定 Visual Studio 不會自動刪除您的部署。 
+當您第一次將雲端服務的 VIP 部署至特定環境 (例如生產環境) 的 Azure 中，會配置雲端服務的 VIP。 只有當您明確刪除部署或由部署更新程序隱含地刪除部署時，VIP 才會變更。 若要保留 VIP，您不能刪除您的部署，且必須要確定 Visual Studio 不會自動刪除您的部署。
 
 您可以在 [發佈精靈] 中指定部署設定，該精靈可支援多種部署選項。 您可以指定全新部署或更新部署，後者可以是累加或同時的。 這兩種更新部署都會保留 VIP。 如需這些不同類型部署的定義，請參閱 [發佈 Azure 應用程式精靈](vs-azure-tools-publish-azure-application-wizard.md)。 此外，您可以在發生錯誤時，控制是否要刪除先前的雲端服務部署。 如果您沒有正確設定該選項，可能會意外變更 VIP。
 
 ## <a name="update-a-cloud-service-without-changing-its-vip"></a>更新雲端服務而不變更其 VIP
-1. 在 Visual Studio 中建立或開啟 Azure 雲端服務專案。 
+1. 在 Visual Studio 中建立或開啟 Azure 雲端服務專案。
 
 2. 在 [方案總管] 中，於專案上按一下滑鼠右鍵。 選取捷徑功能表上的 [發佈]。
 
@@ -41,7 +39,7 @@ ms.locfileid: "62550860"
 
     ![發佈 Azure 應用程式一般設定索引標籤](./media/vs-azure-tools-cloud-service-retain-a-constant-virtual-ip-address/azure-publish-common-settings.png)
 
-5. 在 [進階設定] 索引標籤上，確認 [部署標籤] 和 [儲存體帳戶] 都正確無誤。 確認已清除 [失敗時刪除部署] 核取方塊，並確認已選取 [部署更新] 核取方塊。 清除 [失敗時刪除部署] 核取方塊，可以確保在部署期間發生錯誤時不會遺失 VIP。 藉由選取 [部署更新] 核取方塊，您可以確定不會刪除您的部署，而且在重新發佈應用程式時不會遺失 VIP。 
+5. 在 [進階設定] 索引標籤上，確認 [部署標籤] 和 [儲存體帳戶] 都正確無誤。 確認已清除 [失敗時刪除部署] 核取方塊，並確認已選取 [部署更新] 核取方塊。 清除 [失敗時刪除部署] 核取方塊，可以確保在部署期間發生錯誤時不會遺失 VIP。 藉由選取 [部署更新] 核取方塊，您可以確定不會刪除您的部署，而且在重新發佈應用程式時不會遺失 VIP。
 
     ![發佈 Azure 應用程式進階設定索引標籤](./media/vs-azure-tools-cloud-service-retain-a-constant-virtual-ip-address/azure-publish-advanced-settings.png)
 

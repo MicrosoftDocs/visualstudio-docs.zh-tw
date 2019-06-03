@@ -1,5 +1,5 @@
 ---
-title: HOW TO：使用 MSBuild 工作建立 SharePoint 方案套件 |Microsoft Docs
+title: 建立 SharePoint 方案套件，使用 MSBuild 工作
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 91cef3ad04ca7b1713f7e48f87dbefe1a84d8fca
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 432daff22616950e0a97164190a94082bf2db354
+ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62966827"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66401489"
 ---
-# <a name="how-to-create-a-sharepoint-solution-package-by-using-msbuild-tasks"></a>HOW TO：使用 MSBuild 工作建立 SharePoint 方案套件
-  您可以建置、 清理及驗證 SharePoint 套件 (*.wsp*) 在開發電腦上使用命令列的 MSBuild 工作。 您也可以使用這些命令，來自動化建置程序使用 Team Foundation Server 組建電腦上。
+# <a name="how-to-create-a-sharepoint-solution-package-by-using-msbuild-tasks"></a>作法：使用 MSBuild 工作建立 SharePoint 方案套件
+  您可以建置、 清理及驗證 SharePoint 套件 ( *.wsp*) 在開發電腦上使用命令列的 MSBuild 工作。 您也可以使用這些命令，來自動化建置程序使用 Team Foundation Server 組建電腦上。
 
 ## <a name="build-a-sharepoint-package"></a>建置 SharePoint 封裝
 

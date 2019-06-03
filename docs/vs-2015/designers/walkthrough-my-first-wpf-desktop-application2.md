@@ -26,7 +26,7 @@ name ="簡介"></a>本逐步解說提供 Windows Presentation Foundation (WPF) �
   
 #### <a name="to-create-the-project"></a>若要建立專案  
   
-1. 在功能表列上，選擇 [檔案] 、[新增] 、[專案] 。  
+1. 在功能表列上，選擇 [檔案]  、[新增]  、[專案]  。  
   
 2. 在 [新增專案]  對話方塊中，展開 [Visual C#]  或 [Visual Basic]  節點，選擇 [Windows]  節點，然後展開 [Windows]  並選擇 [傳統桌面]  節點。  
   
@@ -51,13 +51,13 @@ name ="簡介"></a>本逐步解說提供 Windows Presentation Foundation (WPF) �
   
 3. 選擇並刪除 `<Grid>` 和 `</Grid>` 標記。  
   
-     **NavigationWindow** 不能包含其他 UI 項目，例如 [格線] 。  
+     **NavigationWindow** 不能包含其他 UI 項目，例如 [格線]  。  
   
 4. 在 [新增專案]  視窗中，展開 [通用]  分類節點並選擇 [標題]  屬性，然後輸入 `ExpenseIt` 並按下 **Enter** 鍵。  
   
      請注意，XAML 視窗中的 [標題]  元素會變更以符合新的值。 您可以在 XAML 視窗或 [屬性]  視窗中修改 XAML 屬性，變更會同步處理。  
   
-5. 在 XAML 視窗中，將 [高度] 項目的值設為 `375`，將 [寬度] 屬性的值設為 `500`。  
+5. 在 XAML 視窗中，將 [高度]  項目的值設為 `375`，將 [寬度]  屬性的值設為 `500`。  
   
      對應到 [高度]  和 [寬度]  屬性的這些項目，可在 [屬性]  視窗的 [配置]  分類中找到。  
   
@@ -104,7 +104,7 @@ name ="簡介"></a>本逐步解說提供 Windows Presentation Foundation (WPF) �
   
 #### <a name="to-add-a-home-screen"></a>加入主畫面  
   
-1. 在 **方案總管**中，開啟 **ExpenseIt** 節點的捷徑功能表，然後依序選擇 [加入] 和 [頁面] 。  
+1. 在 **方案總管**中，開啟 **ExpenseIt** 節點的捷徑功能表，然後依序選擇 [加入]  和 [頁面]  。  
   
 2. 在 [新增專案]  對話方塊中，選擇 [名稱]  文字方塊並輸入 `ExpenseItHome`，然後選擇 [確定]  按鈕。  
   
@@ -185,11 +185,11 @@ name ="簡介"></a>本逐步解說提供 Windows Presentation Foundation (WPF) �
     </NavigationWindow>  
     ```  
   
-     如同之前設定那些屬性一樣，您也可以在 [屬性] `Source`**視窗的 [其他]****分類中設定** 屬性。  
+     如同之前設定那些屬性一樣，您也可以在 [屬性] `Source`**視窗的 [其他]** **分類中設定** 屬性。  
   
 #### <a name="to-add-a-details-window"></a>加入詳細資料視窗  
   
-1. 在 **方案總管**中，開啟 **ExpenseIt** 節點的捷徑功能表，然後依序選擇 [加入] 和 [頁面] 。  
+1. 在 **方案總管**中，開啟 **ExpenseIt** 節點的捷徑功能表，然後依序選擇 [加入]  和 [頁面]  。  
   
 2. 在 [新增專案]  對話方塊中，選擇 [名稱]  文字方塊並輸入 `ExpenseReportPage`，然後選擇 [確定]  按鈕。  
   
@@ -236,7 +236,7 @@ name ="簡介"></a>本逐步解說提供 Windows Presentation Foundation (WPF) �
     </Page>  
     ```  
   
-5. 在功能表列上，選擇 [偵錯] 、[開始偵錯]  (或按 F5) 執行應用程式。  
+5. 在功能表列上，選擇 [偵錯]  、[開始偵錯]  (或按 F5) 執行應用程式。  
   
      下圖顯示具有瀏覽視窗按鈕的應用程式。  
   
@@ -309,12 +309,12 @@ name ="簡介"></a>本逐步解說提供 Windows Presentation Foundation (WPF) �
     > [!NOTE]
     > 或者，您可以建立自己的影像並儲存為 `watermark.png`。  
   
-2. 在 **方案總管**中，開啟 **ExpenseIt** 節點的捷徑功能表，然後依序選擇 [加入] 和 [現有項目] 。  
+2. 在 **方案總管**中，開啟 **ExpenseIt** 節點的捷徑功能表，然後依序選擇 [加入]  和 [現有項目]  。  
   
 3. 在 [加入現有項目]  對話方塊中，找到剛剛加入的 **watermark.png** 影像，選擇它後再選擇 [加入]  按鈕。  
   
     > [!NOTE]
-    > 您可能需要展開 [檔案類型]  清單並選擇 [影像檔] 。  
+    > 您可能需要展開 [檔案類型]  清單並選擇 [影像檔]  。  
   
 4. 開啟 **ExpenseItHome.xaml** 檔案，並在 `</Grid>` 標記的正上方加入下列 XAML 程式碼，建立背景影像：  
   
@@ -800,7 +800,7 @@ name ="簡介"></a>本逐步解說提供 Windows Presentation Foundation (WPF) �
     </DataTemplate>  
     ```  
   
-     這會加入 `Data Template` ，定義 [清單方塊] 顯示資料的方式。  
+     這會加入 `Data Template` ，定義 [清單方塊]  顯示資料的方式。  
   
 4. 將現有的 `<ListBox>` 項目更換成下列程式碼。  
   
@@ -875,7 +875,7 @@ name ="簡介"></a>本逐步解說提供 Windows Presentation Foundation (WPF) �
   
 1. 開啟 **ExpenseReportPage.xaml**。  
   
-2. 以下列內容取代 [名稱]  和 `<StackPanel` 項目的 XAML 程式碼：  
+2. 以下列內容取代 [名稱]  和  `<StackPanel` 項目的 XAML 程式碼：  
   
     ```xaml  
     <!-- Name -->  
