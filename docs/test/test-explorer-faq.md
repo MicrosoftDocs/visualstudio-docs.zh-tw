@@ -27,7 +27,7 @@ ms.locfileid: "62429453"
 
 **[測試總管] 找不到動態定義的測試。(例如理論、自訂配接器、自訂特徵、#ifdef 等項目)我如何探索這些測試？**
 
-建置專案，然後確定已在 [工具] > [選項] > [測試] 中開啟以組件為基礎的探索。
+建置專案，然後確定已在 [工具]   > [選項]   > [測試]  中開啟以組件為基礎的探索。
 
 [即時測試探索](https://go.microsoft.com/fwlink/?linkid=862824)是來源型的測試探索。 其無法探索使用理論、自訂配接器、自訂特徵及 `#ifdef` 陳述式等項目的測試，因為這些項目均已在執行階段中定義。 需要組建才能準確找到這些測試。 在 Visual Studio 2017 15.6 版及更新版本中，以組件為基礎的探索 (傳統型探索) 只會在建置之後執行。 這項設定表示當您在編輯時，即時測試探索會盡可能找到更多測試，而組件型探索允許動態定義的測試在組建之後顯示。 即時測試探索改善了回應性，但仍然可讓您在組建之後取得完整且精確的結果。
 
@@ -43,7 +43,7 @@ ms.locfileid: "62429453"
 
 **我的專案已經無法使用以組件為基礎的探索。如何再將它開啟？**
 
-移至 [工具] > [選項] > [測試]，然後核取 [在組建之後，另外從建置的組件中探索測試] 的方塊。
+移至 [工具]   > [選項]   > [測試]  ，然後核取 [在組建之後，另外從建置的組件中探索測試]  的方塊。
 
 ![以組件為基礎的選項](media/testex-toolsoptions.png)
 
@@ -63,7 +63,7 @@ ms.locfileid: "62429453"
 
 **如何開啟測試總管的記錄？**
 
-巡覽至 [工具] > [選項] > [測試] 並於該處尋找 [記錄] 區段。
+巡覽至 [工具]   > [選項]   > [測試]  並於該處尋找 [記錄] 區段。
 
 ## <a name="uwp-test-discovery"></a>UWP 測試探索
 
@@ -91,7 +91,7 @@ ms.locfileid: "62429453"
 
 **在 [測試總管] 搜尋方塊中，已無「檔案路徑」篩選條件。**
 
-Visual Studio 2017 15.7 版已移除 [測試總管] 搜尋方塊中的檔案路徑篩選條件。 此功能的使用率很低，且排除這項功能可讓 [測試總管] 更快速地擷取測試方法。 如果此變更中斷您的開發流程，請在[開發人員社群](https://developercommunity.visualstudio.com/)提交意見反應來告訴我們。
+Visual Studio 2017 15.7 版已移除 [測試總管]  搜尋方塊中的檔案路徑篩選條件。 此功能的使用率很低，且排除這項功能可讓 [測試總管] 更快速地擷取測試方法。 如果此變更中斷您的開發流程，請在[開發人員社群](https://developercommunity.visualstudio.com/)提交意見反應來告訴我們。
 
 ## <a name="remove-undocumented-interfaces"></a>移除未記載的介面
 
@@ -110,7 +110,7 @@ Visual Studio 2017 15.7 版已移除 [測試總管] 搜尋方塊中的檔案路�
 專案必須使用測試配接器 NuGet 套件，而非使用測試配接器延伸模組。 使用持續整合時，此需求可大幅改善效能並減少問題的發生。 在[版本資訊](/visualstudio/releasenotes/vs2017-relnotes-v15.8#testadapterextension)深入了解 .NET 測試配接器延伸模組淘汰。
 
 > [!NOTE]
-> 如果您使用 NUnit 2 Test Adapter 且無法移轉至 NUnit 3 Test Adapter，您可以關閉這個新的探索行為，位置是 Visual Studio 15.8 版的 [工具] > [選項] > [測試]。
+> 如果您使用 NUnit 2 Test Adapter 且無法移轉至 NUnit 3 Test Adapter，您可以關閉這個新的探索行為，位置是 Visual Studio 15.8 版的 [工具]   > [選項]   > [測試]  。
 
 ![工具選項中的 [測試總管] 配接器行為](media/testex-adapterbehavior.png)
 
@@ -118,7 +118,7 @@ Visual Studio 2017 15.7 版已移除 [測試總管] 搜尋方塊中的檔案路�
 
 **我無法在 Visual Studio 2017 15.7 版及更新版本中執行 UWP 測試。**
 
-最近的 UWP 測試專案指定一個測試平台建置屬性，可讓識別測試應用程式時的效能更佳。 如果您有在 Visual Studio 15.7 版之前初始化的 UWP 測試專案，您可能會在 [輸出] > [測試] 中看到此錯誤：
+最近的 UWP 測試專案指定一個測試平台建置屬性，可讓識別測試應用程式時的效能更佳。 如果您有在 Visual Studio 15.7 版之前初始化的 UWP 測試專案，您可能會在 [輸出]   > [測試]  中看到此錯誤：
 
 **System.AggregateException:One or more errors occurred. ---> System.InvalidOperationException:The following TestContainer was not found {} at Microsoft.VisualStudio.TestWindow.Controller.TestContainerProvider \<GetTestContainerAsync>d__61.MoveNext()**
 

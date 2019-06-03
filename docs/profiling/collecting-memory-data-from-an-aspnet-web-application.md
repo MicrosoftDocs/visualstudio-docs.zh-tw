@@ -1,5 +1,5 @@
 ---
-title: 使用分析工具命令列收集 ASP.NET Web 應用程式的記憶體資料 | Microsoft Docs
+title: 使用分析工具命令列取得 ASP.NET Web 應用程式記憶體資料
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - aspnet
-ms.openlocfilehash: a9e6bfce4b9137283a9413168fe320e292195c12
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 03851869b2067efd014752ab854f30c2d4874711
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63405877"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66263533"
 ---
 # <a name="collect-memory-data-from-an-aspnet-web-application-by-using-the-profiler-command-line"></a>使用分析工具命令列收集 ASP.NET Web 應用程式的記憶體資料
 本節描述使用 **VSPerfCmd** 命令列工具收集 ASP.NET Web 應用程式之記憶體配置和物件存留期資料的程序和選項。

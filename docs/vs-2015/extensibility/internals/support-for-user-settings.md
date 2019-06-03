@@ -33,14 +33,14 @@ VSPackage 可能會定義一或多個設定類別，也就是當使用者選擇�
      如果單一 VSPackage 支援數個自訂設定點，每個自訂設定點藉由個別的類別，而且每個已註冊的唯一執行個體<xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute>類別。 因此，實作類別的設定可以支援多個設定分類。  
   
 ## <a name="custom-settings-point-registry-entry-details"></a>自訂設定點的登錄項目詳細資料  
- 在下列位置的登錄項目中建立自訂設定點：HKLM\Software\Microsoft\VisualStudio\\*\<版本 >* \UserSettings\\`<CSPName>`，其中`<CSPName>`是 VSPackage 支援的自訂設定點名稱並 *\<版本>* 是新版[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]，例如 8.0。  
+ 在下列位置的登錄項目中建立自訂設定點：HKLM\Software\Microsoft\VisualStudio\\ *\<版本 >* \UserSettings\\`<CSPName>`，其中`<CSPName>`是 VSPackage 支援的自訂設定點名稱並 *\<版本>* 是新版[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]，例如 8.0。  
   
 > [!NOTE]
-> Hkey_local_machine\software\microsoft\visualstudio \ 的根路徑\\*\<版本 >* 可以覆寫以替代 root 時[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]是整合式的開發環境 (IDE)初始化。 如需詳細資訊，請參閱 <<c0> [ 命令列參數](../../extensibility/command-line-switches-visual-studio-sdk.md)。  
+> Hkey_local_machine\software\microsoft\visualstudio \ 的根路徑\\ *\<版本 >* 可以覆寫以替代 root 時[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]是整合式的開發環境 (IDE)初始化。 如需詳細資訊，請參閱 <<c0> [ 命令列參數](../../extensibility/command-line-switches-visual-studio-sdk.md)。  
   
  登錄項目結構如下所示：  
   
- HKLM\Software\Microsoft\VisualStudio\\*\<Version>* \UserSettings\  
+ HKLM\Software\Microsoft\VisualStudio\\ *\<Version>* \UserSettings\  
   
  `<CSPName`>= s '#12345'  
   

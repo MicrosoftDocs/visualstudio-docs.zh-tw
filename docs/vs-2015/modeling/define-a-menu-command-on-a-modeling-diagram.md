@@ -37,7 +37,7 @@ ms.locfileid: "65687593"
 
 #### <a name="to-create-a-menu-command-in-its-own-vsix"></a>在自己的 VSIX 中建立功能表命令  
 
-1. 在 [新增專案]  對話方塊中，於 [模型專案] 之下，選取 [命令擴充功能] 。  
+1. 在 [新增專案]  對話方塊中，於 [模型專案]  之下，選取 [命令擴充功能]  。  
 
 2. 在新的專案中開啟 **.cs** 檔案，並修改 `CommandExtension` 類別來實作命令。  
 
@@ -55,9 +55,9 @@ ms.locfileid: "65687593"
 
 1. 在新的 Visual Studio 方案或現有的方案中，建立類別庫專案。  
 
-   1. 在 [檔案]  功能表上，依序選擇 [新增] 和 [專案] 。  
+   1. 在 [檔案]  功能表上，依序選擇 [新增]  和 [專案]  。  
 
-   2. 在 [已安裝的範本] 下，選取 [Visual C#]  或 [Visual Basic] 。 在中間欄中，選擇 [類別庫] 。  
+   2. 在 [已安裝的範本]  下，選取 [Visual C#]  或 [Visual Basic]  。 在中間欄中，選擇 [類別庫]  。  
 
    3. 設定 [方案]  以表示您是要建立新的方案，還是將元件加入已經開啟的 VSIX 方案。  
 
@@ -146,11 +146,11 @@ ms.locfileid: "65687593"
 
 2. 除非您的方案已經包含 VSIX 專案，否則請建立一個。  
 
-    1. 在方案總管 中，於方案的捷徑功能表上，選擇 [新增] 和 [新增專案] 。  
+    1. 在方案總管  中，於方案的捷徑功能表上，選擇 [新增]  和 [新增專案]  。  
 
-    2. 在 [已安裝的範本] 下，展開 [Visual C#]  或 [Visual Basic] ，然後選擇 [擴充性] 。 在中間欄中，選擇 [VSIX 專案] 。  
+    2. 在 [已安裝的範本]  下，展開 [Visual C#]  或 [Visual Basic]  ，然後選擇 [擴充性]  。 在中間欄中，選擇 [VSIX 專案]  。  
 
-3. 在方案總管中，於 VSIX 專案的捷徑功能表上，選擇 [設定為啟始專案] 。  
+3. 在方案總管中，於 VSIX 專案的捷徑功能表上，選擇 [設定為啟始專案]  。  
 
 4. 開啟 **source.extension.vsixmanifest**。  
 
@@ -158,13 +158,13 @@ ms.locfileid: "65687593"
 
     2. 在 [安裝目標]  索引標籤上，設定 Visual Studio 版本做為目標。  
 
-    3. 在 [資產]  索引標籤上，選擇 [新增] ，然後在對話方塊中設定：  
+    3. 在 [資產]  索引標籤上，選擇 [新增]  ，然後在對話方塊中設定：  
 
-          =   
+           =    
 
-          =   
+           =    
 
-          =   
+           =    
 
 ## <a name="Implementing"></a> 實作功能表命令  
  功能表命令類別會實作 <xref:Microsoft.VisualStudio.Modeling.ExtensionEnablement.ICommandExtension> 所需的方法。  
@@ -214,7 +214,7 @@ foreach (IElement element in modelStore.AllInstances<IUseCase>()) {...}
 
 #### <a name="to-test-the-menu-command"></a>測試功能表命令  
 
-1. 按 **F5**，或在 [偵錯]  功能表上，選擇 [開始偵錯] 。  
+1. 按 **F5**，或在 [偵錯]  功能表上，選擇 [開始偵錯]  。  
 
      [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 的實驗執行個體隨即啟動。  
 
@@ -222,7 +222,7 @@ foreach (IElement element in modelStore.AllInstances<IUseCase>()) {...}
 
     - 如果您有多個專案，請確定 VSIX 專案已設定為方案的啟始專案。  
 
-    - 在方案總管的啟始專案或唯一專案的捷徑功能表上，選擇 [屬性] 。 在專案屬性編輯器中，選取 [偵錯]  索引標籤。請確定 [啟動外部程式]  欄位中的字串是 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]的完整路徑名稱，通常是：  
+    - 在方案總管的啟始專案或唯一專案的捷徑功能表上，選擇 [屬性]  。 在專案屬性編輯器中，選取 [偵錯]  索引標籤。請確定 [啟動外部程式]  欄位中的字串是 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]的完整路徑名稱，通常是：  
 
          `C:\Program Files\Microsoft Visual Studio [version]\Common7\IDE\devenv.exe`  
 
@@ -247,9 +247,9 @@ foreach (IElement element in modelStore.AllInstances<IUseCase>()) {...}
 
 1. 在您的電腦中，尋找 VSIX 專案所建置的 **.vsix** 檔案。  
 
-    1. 在方案總管 中，於 VSIX 專案的捷徑功能表上，選擇 [在 Windows 檔案總管中開啟資料夾] 。  
+    1. 在方案總管  中，於 VSIX 專案的捷徑功能表上，選擇 [在 Windows 檔案總管中開啟資料夾]  。  
 
-    2. 找出檔案**筒\\\*\\**_YourProject_**.vsix**  
+    2. 找出檔案**筒\\\*\\** _YourProject_ **.vsix**  
 
 2. 將 **.vsix** 檔案複製到要安裝擴充功能的目標電腦。 這可以是您自己的電腦或另一部電腦。  
 
@@ -257,17 +257,17 @@ foreach (IElement element in modelStore.AllInstances<IUseCase>()) {...}
 
 3. 在目標電腦上，開啟 **.vsix** 檔案 (例如，按兩下該檔案)。  
 
-     [Visual Studio 擴充功能安裝程式] 會隨即開啟並安裝擴充功能。  
+     [Visual Studio 擴充功能安裝程式]  會隨即開啟並安裝擴充功能。  
 
 4. 啟動或重新啟動 [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)]。  
 
 #### <a name="to-uninstall-an-extension"></a>解除安裝擴充功能  
 
-1. 在 [工具]  功能表中選擇 [擴充功能和更新] 。  
+1. 在 [工具]  功能表中選擇 [擴充功能和更新]  。  
 
-2. 展開 [已安裝的擴充功能] 。  
+2. 展開 [已安裝的擴充功能]  。  
 
-3. 選取擴充功能，然後選擇 [解除安裝] 。  
+3. 選取擴充功能，然後選擇 [解除安裝]  。  
 
    在很少見的情況下，故障的擴充功能無法載入並且會在錯誤視窗中建立報告，但不會顯示在擴充管理員中。 在此情況下，您可以藉由從下列位置刪除檔案來移除擴充功能：  
 

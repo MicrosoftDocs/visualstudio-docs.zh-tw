@@ -38,7 +38,7 @@ ms.locfileid: "62785355"
     ![建立自動程式碼 UI 測試](../test/media/cuit_datadriven_.png)
 
    > [!NOTE]
-   > 如果您沒有看到 [自動程式化 UI 測試專案] 範本，則需要[安裝自動程式化 UI 測試元件](../test/use-ui-automation-to-test-your-code.md#install-the-coded-ui-test-component)。
+   > 如果您沒有看到 [自動程式化 UI 測試專案]  範本，則需要[安裝自動程式化 UI 測試元件](../test/use-ui-automation-to-test-your-code.md#install-the-coded-ui-test-component)。
 
 2. 選擇**錄製動作**。
 
@@ -64,17 +64,17 @@ ms.locfileid: "62785355"
    }
    ```
 
-5. 使用 `AddNumbers()` 方法，確認執行測試。 將游標放在上面顯示的測試方法中、開啟右鍵功能表，然後選擇 [執行測試]。 (鍵盤快速鍵：**Ctrl**+**R****T**)。
+5. 使用 `AddNumbers()` 方法，確認執行測試。 將游標放在上面顯示的測試方法中、開啟右鍵功能表，然後選擇 [執行測試]  。 (鍵盤快速鍵：**Ctrl**+**R** **T**)。
 
-    [測試總管] 視窗中會顯示測試結果，而測試結果顯示測試成功還是失敗。 若要開啟 [測試總管] 視窗，請從 [測試] 功能表中選擇 [視窗]，然後選擇 [測試總管]。
+    [測試總管]  視窗中會顯示測試結果，而測試結果顯示測試成功還是失敗。 若要開啟 [測試總管] 視窗，請從 [測試]  功能表中選擇 [視窗]  ，然後選擇 [測試總管]  。
 
-6. 因為資料來源也可以用於判斷提示參數值 (測試用來確認預期的值)；讓我們新增判斷提示來驗證兩個數字的總和是否正確。 將游標放在上面顯示的測試方法中、開啟右鍵功能表，然後依序選擇 [產生自動程式化 UI 測試的程式碼] 和 [使用自動程式化 UI 測試產生器]。
+6. 因為資料來源也可以用於判斷提示參數值 (測試用來確認預期的值)；讓我們新增判斷提示來驗證兩個數字的總和是否正確。 將游標放在上面顯示的測試方法中、開啟右鍵功能表，然後依序選擇 [產生自動程式化 UI 測試的程式碼]  和 [使用自動程式化 UI 測試產生器]  。
 
     對應計算機中顯示總和的文字控制項。
 
     ![對應 UI 文字控制項](../test/media/cuit_datadriven_addassertion.png)
 
-7. 加入判斷提示，以驗證總和的值是否正確。 選擇值為 **3** 的 [顯示文字] 屬性，然後選擇 [加入判斷提示]。 使用 **AreEqual** 比較子，並確認比較值為 **3**。
+7. 加入判斷提示，以驗證總和的值是否正確。 選擇值為 **3** 的 [顯示文字]  屬性，然後選擇 [加入判斷提示]  。 使用 **AreEqual** 比較子，並確認比較值為 **3**。
 
     ![設定判斷提示](../test/media/cuit_datadriven_builderaddassertion2.png)
 
@@ -92,13 +92,13 @@ ms.locfileid: "62785355"
    }
    ```
 
-9. 使用 `ValidateSum()` 方法，確認測試執行。 將游標放在上面顯示的測試方法中、開啟右鍵功能表，然後選擇 [執行測試]。 (鍵盤快速鍵：**Ctrl**+**R****T**)。
+9. 使用 `ValidateSum()` 方法，確認測試執行。 將游標放在上面顯示的測試方法中、開啟右鍵功能表，然後選擇 [執行測試]  。 (鍵盤快速鍵：**Ctrl**+**R** **T**)。
 
      目前，所有參數值在其方法中都會定義為常數。 接下來，讓我們建立資料集，以將測試設為資料驅動。
 
 ### <a name="step-2---create-a-data-set"></a>步驟 2 - 建立資料集
 
-1. 將文字檔新增至名為 data.csv 的 dataDrivenSample 專案。
+1. 將文字檔新增至名為 data.csv  的 dataDrivenSample 專案。
 
      ![將逗號分隔值檔案加入專案](../test/media/cuit_datadriven_addcsvfile.png)
 
@@ -114,9 +114,9 @@ ms.locfileid: "62785355"
 
      ![將資料填入 .csv 檔案](../test/media/cuit_datadriven_adddatatocsvfile.png)
 
-3. 務必使用正確的編碼來儲存 .*csv* 檔案。 在 [檔案] 功能表上，選擇 [進階儲存選項]，然後選擇 [Unicode (UTF-8 無簽章) - 字碼頁 65001] 作為編碼。
+3. 務必使用正確的編碼來儲存 .*csv* 檔案。 在 [檔案]  功能表上，選擇 [進階儲存選項]  ，然後選擇 [Unicode (UTF-8 無簽章) - 字碼頁 65001]  作為編碼。
 
-4. .*csv* 檔案必須複製至輸出目錄，否則無法執行測試。 使用 [屬性] 視窗來複製它。
+4. .*csv* 檔案必須複製至輸出目錄，否則無法執行測試。 使用 [屬性]  視窗來複製它。
 
      ![部署 .csv 檔案](../test/media/cuit_datadriven_deploycsvfile.png)
 
@@ -179,7 +179,7 @@ ms.locfileid: "62785355"
 
      若要了解要將資料編寫至其中的搜尋屬性，請使用 [自動程式碼 UI 測試編輯器]。
 
-    - 開啟 UIMap.uitest 檔案。
+    - 開啟 UIMap.uitest  檔案。
 
          ![開啟自動程式碼 UI 測試編輯器](../test/media/cuit_datadriven_opentesteditor.png)
 
@@ -187,7 +187,7 @@ ms.locfileid: "62785355"
 
          ![使用自動程式碼 UI 測試編輯器來協助您的程式碼](../test/media/cuit_datadriven_testeditor.png)
 
-    - 在 [屬性] 視窗中，開啟 [搜尋屬性]。 搜尋屬性 **Name** 值是程式碼中使用資料來源所操作的值。 例如，會將每個資料列的第一欄中的值指派給 `SearchProperties`：`UIItem1Button.SearchProperties[WinButton.PropertyNames.Name] = TestContext.DataRow["Num1"].ToString();`。 對於三個反覆項目，這項測試會依序將搜尋屬性的 **Name** 值變更為 3、5 和 6。
+    - 在 [屬性]  視窗中，開啟 [搜尋屬性]  。 搜尋屬性 **Name** 值是程式碼中使用資料來源所操作的值。 例如，會將每個資料列的第一欄中的值指派給 `SearchProperties`：`UIItem1Button.SearchProperties[WinButton.PropertyNames.Name] = TestContext.DataRow["Num1"].ToString();`。 對於三個反覆項目，這項測試會依序將搜尋屬性的 **Name** 值變更為 3、5 和 6。
 
          ![使用搜尋屬性來協助編碼](../test/media/cuit_datadriven_searchproperties.png)
 
@@ -229,9 +229,9 @@ ms.locfileid: "62785355"
 
 ### <a name="q-why-cant-i-modify-the-code-in-the-uimapdesigner-file"></a>問：為什麼無法修改 UIMap.Designer 檔案中的程式碼？
 
-**答：** 每次您使用 [UIMap - 自動程式化 UI 測試產生器] 產生程式碼時，對 *UIMapDesigner.cs* 檔案中程式碼所做的變更都會被覆寫。 在本範例中，而且在大多數的情況下，可以對測試的原始程式碼檔案 (即 CodedUITest1.cs) 進行讓測試使用資料來源所需的程式碼變更。
+**答：** 每次您使用 [UIMap - 自動程式化 UI 測試產生器] 產生程式碼時，對 *UIMapDesigner.cs* 檔案中程式碼所做的變更都會被覆寫。 在本範例中，而且在大多數的情況下，可以對測試的原始程式碼檔案 (即 CodedUITest1.cs  ) 進行讓測試使用資料來源所需的程式碼變更。
 
-如果您需要修改錄製的方法，必須將它複製到 UIMap.cs 檔案並重新命名。 *UIMap.cs* 檔案可用來覆寫 *UIMapDesigner.cs* 檔案中的方法和屬性。 您必須移除 Coded UITest.cs 檔案中原始方法的參考，並將它取代為重新命名的方法名稱。
+如果您需要修改錄製的方法，必須將它複製到 UIMap.cs  檔案並重新命名。 *UIMap.cs* 檔案可用來覆寫 *UIMapDesigner.cs* 檔案中的方法和屬性。 您必須移除 Coded UITest.cs  檔案中原始方法的參考，並將它取代為重新命名的方法名稱。
 
 ## <a name="see-also"></a>另請參閱
 

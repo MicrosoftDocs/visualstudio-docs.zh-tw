@@ -1,5 +1,5 @@
 ---
-title: 工作流程設計工具-如何：使用工作流程設計工具對 XAML 進行偵錯
+title: 工作流程設計工具：偵錯 XAML
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: d9305dbc-af62-4bdd-b03f-c54e3fe9ecc7
@@ -8,14 +8,14 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: cdbf5fa21c8fcf9069db9a7348d4ed576fc342c5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 0d22668089581dcf44609756a4e7f8f4527dd751
+ms.sourcegitcommit: ba5e072c9fedeff625a1332f22dcf3644d019f51
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62949594"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "66431826"
 ---
-# <a name="how-to-debug-xaml-with-the-workflow-designer"></a>HOW TO：使用工作流程設計工具對 XAML 進行偵錯
+# <a name="how-to-debug-xaml-with-the-workflow-designer"></a>作法：使用工作流程設計工具對 XAML 進行偵錯
 
 工作流程是根據 XAML 所定義的。 工作流程的 UI 呈現方式，乃是建立在定義該工作流程的 XAML 樹狀結構上。 偵錯的體驗是類似於偵錯工作流程設計工具中的工作流程。 比方說，在偵錯 XAML，時 [區域變數]、 [監看式] 和 [執行緒] 視窗的運作方式相同偵錯工作流程設計工具中所顯示的一樣。 此外，在 XAML 偵錯期間的呼叫堆疊檢視，也是工作流程執行流程的逐行階層架構檢視。
 

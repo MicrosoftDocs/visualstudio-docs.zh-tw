@@ -20,7 +20,7 @@ ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 3139cb337428dfc0c14e5bae47e682ce169bc81d
 ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/22/2019
 ms.locfileid: "60108499"
@@ -38,9 +38,9 @@ ms.locfileid: "60108499"
   
 ### <a name="to-specify-an-installation-url"></a>若要指定安裝 URL  
   
-1. 在方案總管 中選取專案之後，按一下 [專案]  功能表中 [屬性] 。  
+1. 在方案總管  中選取專案之後，按一下 [專案]  功能表中 [屬性]  。  
   
-2. 按一下 [發佈] 索引標籤。  
+2. 按一下 [發佈]  索引標籤。  
   
 3. 在 安裝 URL 欄位中，輸入 使用完整的 URL，使用格式的安裝位置 http://www.microsoft.com/ApplicationName，或使用的格式將 UNC 路徑\\\Server\ApplicationName。  
   

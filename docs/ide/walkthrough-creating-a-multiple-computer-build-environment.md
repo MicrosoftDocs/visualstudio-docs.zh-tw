@@ -43,7 +43,7 @@ ms.locfileid: "66262943"
 
 ## <a name="prerequisites"></a>必要條件
 
-已安裝 [.NET 桌面開發] 工作負載的 Visual Studio。
+已安裝 [.NET 桌面開發]  工作負載的 Visual Studio。
 
 ## <a name="install-software-on-the-computers"></a>在電腦上安裝軟體
 
@@ -53,7 +53,7 @@ ms.locfileid: "66262943"
 
 1. 在主機電腦上，安裝 Visual Studio。
 
-2. 在建置電腦上，安裝 .NET Framework 4.5 或更新版本。 若要確認已安裝，請檢查登錄子機碼 **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\NET Framework Setup\NDP\v4\Full** 中 [Version] 項目的值是否為 [4.5] 或更高。
+2. 在建置電腦上，安裝 .NET Framework 4.5 或更新版本。 若要確認已安裝，請檢查登錄子機碼 **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\NET Framework Setup\NDP\v4\Full** 中 [Version]  項目的值是否為 [4.5]  或更高。
 
 ## <a name="copy-files-from-the-host-computer-to-the-build-computer"></a>將檔案從主機電腦複製到組建電腦
 
@@ -62,7 +62,7 @@ ms.locfileid: "66262943"
 - 在 x86 電腦上，預設位置為 *C:\Program Files\Microsoft Visual Studio*
 - 在 x64 電腦上，預設位置為 *C:\Program Files (x86)\Microsoft Visual Studio*
 
-請注意，*Program Files* 資料夾的名稱取決於所安裝的作業系統。 在 x86 電腦上，此名稱會是 *Program Files*；在 x64 電腦上，此名稱會是 *Program Files (x86)*。 不論系統架構為何，本逐步解說會將 *Program Files* 資料夾稱為 *%ProgramFiles%*。
+請注意，*Program Files* 資料夾的名稱取決於所安裝的作業系統。 在 x86 電腦上，此名稱會是 *Program Files*；在 x64 電腦上，此名稱會是 *Program Files (x86)* 。 不論系統架構為何，本逐步解說會將 *Program Files* 資料夾稱為 *%ProgramFiles%* 。
 
 > [!NOTE]
 > 在組建電腦中，所有相關檔案都必須位於相同的磁碟機上。 不過，該磁碟機的磁碟機代號可能會與安裝在主機電腦之 Visual Studio 磁碟機的磁碟機代號不同。 在任何情況下，當您建立登錄項目時，您必須考慮檔案的位置，如本文件稍後所述。
@@ -254,7 +254,7 @@ ms.locfileid: "66262943"
 
 ### <a name="use-vcvarsallbat-to-set-environment-variables"></a>使用 vcvarsall.bat 設定環境變數
 
-在組建電腦上開啟 [命令提示字元] 視窗，然後執行 *%Program Files%\Microsoft Visual Studio\\\<版本>\\\<版次>\VC\vcvarsall.bat*。 您可以使用命令列引數，指定要使用的工具組：x86、x64 Native 或 x64 Cross 編譯器。 如果您未指定命令列引數，則會使用 x86 工具組。
+在組建電腦上開啟 [命令提示字元]  視窗，然後執行 *%Program Files%\Microsoft Visual Studio\\\<版本>\\\<版次>\VC\vcvarsall.bat*。 您可以使用命令列引數，指定要使用的工具組：x86、x64 Native 或 x64 Cross 編譯器。 如果您未指定命令列引數，則會使用 x86 工具組。
 
 下表描述 *vcvarsall.bat* 支援的引數：
 
@@ -300,7 +300,7 @@ MSBuild 必須將一些額外的組件安裝到組建電腦上的 GAC。
 
 2. 若要將組件安裝到 GAC，請在組建電腦上尋找 *gacutil.exe* (通常位於 %ProgramFiles%\Microsoft SDKs\Windows\v8.0A\bin\NETFX 4.0 Tools\\ 中)。 如果找不到此資料夾，請重複本逐步解說之[將檔案從主機電腦複製到組建電腦](../ide/walkthrough-creating-a-multiple-computer-build-environment.md#copy-files-from-the-host-computer-to-the-build-computer)一節中的步驟。
 
-     開啟具有系統管理權限的 [命令提示字元] 視窗，然後針對每個檔案執行此命令：
+     開啟具有系統管理權限的 [命令提示字元]  視窗，然後針對每個檔案執行此命令：
 
      **gacutil -i \<檔案>**
 
@@ -385,9 +385,9 @@ MSBuild 必須將一些額外的組件安裝到組建電腦上的 GAC。
 
 6. 變更命令列環境，如下所示：
 
-    - 設定 Depot=「您在步驟 1 中建立的 Depot 目錄位置」
+    - 設定 Depot=「您在步驟 1 中建立的 Depot 目錄位置」 
 
-    - 設定 path=%path%;電腦上的 MSBuild 位置;%Depot%\Windows\System32;%Depot%\Windows\SysWOW64;%Depot%\Microsoft Visual Studio 15.0\Common7\IDE\
+    - 設定 path=%path%;電腦上的 MSBuild 位置  ;%Depot%\Windows\System32;%Depot%\Windows\SysWOW64;%Depot%\Microsoft Visual Studio 15.0\Common7\IDE\
 
        如需原生 64 位元建置，請指向 64 位元版本的 MSBuild。
 
@@ -397,7 +397,7 @@ MSBuild 必須將一些額外的組件安裝到組建電腦上的 GAC。
 
 6. 變更命令列環境，如下所示：
 
-    - 設定 Depot=「您在步驟 1 中建立的 Depot 目錄位置」
+    - 設定 Depot=「您在步驟 1 中建立的 Depot 目錄位置」 
 
     - 設定 path=%path%;*電腦上的 MSBuild 位置*;%Depot%\Windows\System32;%Depot%\Windows\SysWOW64;%Depot%\Microsoft Visual Studio 16.0\Common7\IDE\
 

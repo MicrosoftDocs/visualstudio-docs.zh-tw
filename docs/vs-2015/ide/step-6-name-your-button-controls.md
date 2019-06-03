@@ -30,7 +30,7 @@ ms.locfileid: "65679293"
   
 ### <a name="to-name-your-button-controls"></a>命名您的按鈕控制項  
   
-1. 在表單上，選擇 [關閉]  按鈕。 (如果仍然已選取所有按鈕，請選擇 ESC 鍵取消選取)。在 [屬性] 視窗中捲動，直到看到 **(Name)** 屬性為止 (屬性依字母順序排列時，**(Name)** 屬性會靠近頂端)。將名稱變更為 **closeButton**，如下圖所示。  
+1. 在表單上，選擇 [關閉]  按鈕。 (如果仍然已選取所有按鈕，請選擇 ESC 鍵取消選取)。在 [屬性]  視窗中捲動，直到看到 **(Name)** 屬性為止 (屬性依字母順序排列時， **(Name)** 屬性會靠近頂端)。將名稱變更為 **closeButton**，如下圖所示。  
   
      ![包含 closeButton 名稱的 [屬性] 視窗](../ide/media/express-setnameproperty.png "Express_SetNameProperty")  
 包含 closeButton 名稱的 [屬性] 視窗  
@@ -50,7 +50,7 @@ ms.locfileid: "65679293"
      [!code-csharp[VbExpressTutorial1Step6#1](../snippets/csharp/VS_Snippets_VBCSharp/vbexpresstutorial1step6/cs/form1.cs#1)]
      [!code-vb[VbExpressTutorial1Step6#1](../snippets/visualbasic/VS_Snippets_VBCSharp/vbexpresstutorial1step6/vb/form1.vb#1)]  
   
-     您看到稱為 `showButton_Click()`的程式碼。 當您開啟 **showButton** 按鈕的程式碼檔時，IDE 已將此加入至表單的程式碼。 在設計階段，當您開啟表單中的控制項程式碼檔案時，如果該控制項的程式碼不存在，會產生程式碼。 這個程式碼稱為 *「方法」*(method)，當您執行程式並選取控制項 (在此例中，[顯示圖片]  按鈕) 時執行它。  
+     您看到稱為 `showButton_Click()`的程式碼。 當您開啟 **showButton** 按鈕的程式碼檔時，IDE 已將此加入至表單的程式碼。 在設計階段，當您開啟表單中的控制項程式碼檔案時，如果該控制項的程式碼不存在，會產生程式碼。 這個程式碼稱為 *「方法」* (method)，當您執行程式並選取控制項 (在此例中，[顯示圖片]  按鈕) 時執行它。  
   
     > [!NOTE]
     > 在本教學課程中，自動產生的 Visual Basic 程式碼已經過簡化，括弧 () 之間的任何程式碼都已移除。 在此情況下，您也可以移除相同的程式碼。 您的程式在任一情況下都可運作。 在教學課程的其餘部分，任何自動產生的程式碼也都會盡可能地簡化。  
@@ -60,7 +60,7 @@ ms.locfileid: "65679293"
 6. 若要再加入一個方法，在 [Windows Forms 設計工具] 中開啟 CheckBox 控制項的程式碼檔案，讓 IDE 加入 `checkBox1_CheckedChanged()` 方法。 每當使用者選取或清除核取方塊時就會呼叫該方法。  
   
     > [!NOTE]
-    > 在設計程式時，您通常會在程式碼編輯器和 [Windows Forms 設計工具] 之間移動。 IDE 可讓您在專案中輕鬆巡覽。 使用 [方案總管]  開啟 [Windows Forms 設計工具] (在 Visual C# 中按兩下 [Form1.cs]  或在 Visual Basic 中按兩下 [Form1.vb]  )，或是在功能表列上選擇 [檢視] 、[設計工具] 。  
+    > 在設計程式時，您通常會在程式碼編輯器和 [Windows Forms 設計工具] 之間移動。 IDE 可讓您在專案中輕鬆巡覽。 使用 [方案總管]  開啟 [Windows Forms 設計工具] (在 Visual C# 中按兩下 [Form1.cs]  或在 Visual Basic 中按兩下 [Form1.vb]  )，或是在功能表列上選擇 [檢視]  、[設計工具]  。  
   
      下列顯示您在程式碼編輯器中看到的新程式碼。  
   
@@ -71,9 +71,9 @@ ms.locfileid: "65679293"
   
      當您在設計階段於 IDE 檢視控制項的程式碼時，Visual Studio 會加入控制項的事件處理常式方法 (如果不存在)。 例如，當您按兩下按鈕時，IDE 會為其 Click 事件加入事件處理常式 (每當使用者選擇按鈕時，就會呼叫)。 當您按兩下核取方塊時，IDE 會為其 CheckedChanged 事件加入事件處理常式 (每當使用者選取或清除方塊時，就會呼叫)。  
   
-     為控制項加入事件處理常式之後，您隨時可以從 [Windows Forms 設計工具] 回到此控制項，方法是按兩下控制項，或是在功能表列上選擇 [檢視] 、[程式碼] 。  
+     為控制項加入事件處理常式之後，您隨時可以從 [Windows Forms 設計工具] 回到此控制項，方法是按兩下控制項，或是在功能表列上選擇 [檢視]  、[程式碼]  。  
   
-     當您建置程式時，名稱很重要，而方法 (包括事件處理常式) 則可以具有您想要的任何名稱。 當您使用 IDE 加入事件處理常式時，IDE 會根據控制項的名稱和所處理的事件來建立名稱。 例如，名稱為 **showButton** 按鈕的 Click 事件稱為 `showButton_Click()` 事件處理常式方法。 此外，方法名稱後面通常會加上左括弧和右括弧 ()，以表示目前所討論的是方法。 如果您決定要變更程式碼變數名稱，請用滑鼠右鍵按一下程式碼中的變數，然後選擇 [重構] 、[重新命名] 。 會重新命名該變數在程式碼中的所有執行個體。 請參閱[重新命名重構 (C#)](../csharp-ide/rename-refactoring-csharp.md)或是[重構和重新命名對話方塊](https://msdn.microsoft.com/library/001d2d81-9bb6-4e8e-ae3a-20c0daaa3959)如需詳細資訊。  
+     當您建置程式時，名稱很重要，而方法 (包括事件處理常式) 則可以具有您想要的任何名稱。 當您使用 IDE 加入事件處理常式時，IDE 會根據控制項的名稱和所處理的事件來建立名稱。 例如，名稱為 **showButton** 按鈕的 Click 事件稱為 `showButton_Click()` 事件處理常式方法。 此外，方法名稱後面通常會加上左括弧和右括弧 ()，以表示目前所討論的是方法。 如果您決定要變更程式碼變數名稱，請用滑鼠右鍵按一下程式碼中的變數，然後選擇 [重構]  、[重新命名]  。 會重新命名該變數在程式碼中的所有執行個體。 請參閱[重新命名重構 (C#)](../csharp-ide/rename-refactoring-csharp.md)或是[重構和重新命名對話方塊](https://msdn.microsoft.com/library/001d2d81-9bb6-4e8e-ae3a-20c0daaa3959)如需詳細資訊。  
   
 ### <a name="to-continue-or-review"></a>若要繼續或檢視  
   

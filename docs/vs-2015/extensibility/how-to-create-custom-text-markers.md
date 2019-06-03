@@ -34,7 +34,7 @@ ms.locfileid: "63435974"
   
 1. 建立登錄項目，如下所示：  
   
-    HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\*\<Version>* \Text Editor\External Markers\\*\<MarkerGUID>*  
+    HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\ *\<Version>* \Text Editor\External Markers\\ *\<MarkerGUID>*  
   
     <em>\<MarkerGUID ></em>是`GUID`用來識別要加入標記  
   
@@ -43,9 +43,9 @@ ms.locfileid: "63435974"
     *\<PackageGUID >* VSPackage 實作的 automation 物件的 guid。  
   
    > [!NOTE]
-   > Hkey_local_machine\software\microsoft\visualstudio \ 的根路徑\\*\<版本 >* 可以覆寫為其他根目錄的 Visual Studio shell 初始化時，如需詳細資訊，請參閱[命令列參數](../extensibility/command-line-switches-visual-studio-sdk.md)。  
+   > Hkey_local_machine\software\microsoft\visualstudio \ 的根路徑\\ *\<版本 >* 可以覆寫為其他根目錄的 Visual Studio shell 初始化時，如需詳細資訊，請參閱[命令列參數](../extensibility/command-line-switches-visual-studio-sdk.md)。  
   
-2. 建立四個值 hkey_local_machine\software\microsoft\visualstudio \ 底下\\*\<版本 >* \Text Editor\External 標記\\*\<MarkerGUID>*  
+2. 建立四個值 hkey_local_machine\software\microsoft\visualstudio \ 底下\\ *\<版本 >* \Text Editor\External 標記\\ *\<MarkerGUID>*  
   
    - (預設值)  
   

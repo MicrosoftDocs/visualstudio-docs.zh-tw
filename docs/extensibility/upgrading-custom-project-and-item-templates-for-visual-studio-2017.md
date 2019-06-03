@@ -120,7 +120,7 @@ ms.locfileid: "66316329"
 
 ```
 
- 所提供的資訊[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)項目維持不變。  **\<VSTemplateContainer>** 元素指向相關聯的範本的.vstemplate 檔案。
+ 所提供的資訊[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)項目維持不變。 **\<VSTemplateContainer>** 元素指向相關聯的範本的.vstemplate 檔案。
 
  以下是 Visual Studio 2015 所建立的預設項目.vstemplate 檔案：
 
@@ -172,7 +172,7 @@ ms.locfileid: "66316329"
 </VSTemplateManifest>
 ```
 
- 所提供的資訊 **\<TemplateData >** 項目維持不變。  **\<VSTemplateContainer>** 元素指向相關聯的範本的.vstemplate 檔案
+ 所提供的資訊 **\<TemplateData >** 項目維持不變。 **\<VSTemplateContainer>** 元素指向相關聯的範本的.vstemplate 檔案
 
  如需有關.vstman 檔案的不同元素的詳細資訊，請參閱[Visual Studio 範本資訊清單結構描述參考](../extensibility/visual-studio-template-manifest-schema-reference.md)。
 

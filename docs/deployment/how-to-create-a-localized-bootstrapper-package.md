@@ -24,7 +24,7 @@ ms.locfileid: "63406834"
 
  根據預設，Visual Studio 2010 只包含 .NET Framework 4、.NET Framework 4 Client Profile、F# Runtime 2.0 和 F# Runtime 4.0 的當地語系化啟動載入器套件。 您只要完成三個步驟，就能為其他啟動載入器建立當地語系化套件。
 
-1. 建立資料夾中的地區設定名稱所命名*\Program Files\Microsoft SDKs\Windows\v7.0A\Bootstrapper\Packages\\\<BootstrapperPackageName >*。
+1. 建立資料夾中的地區設定名稱所命名 *\Program Files\Microsoft SDKs\Windows\v7.0A\Bootstrapper\Packages\\\<BootstrapperPackageName >* 。
 
 2. 建立包含啟動載入器套件之軟體授權合約的檔案，然後放入新資料夾中。
 
@@ -39,9 +39,9 @@ ms.locfileid: "63406834"
 
 1. 以地區設定名稱建立資料夾。
 
-     在 32 位元電腦上建立資料夾*\Program Files\Microsoft SDKs\Windows\v7.0A\Bootstrapper\Packages\\\<BootstrapperPackageName >\\* 資料夾。
+     在 32 位元電腦上建立資料夾 *\Program Files\Microsoft SDKs\Windows\v7.0A\Bootstrapper\Packages\\\<BootstrapperPackageName >\\* 資料夾。
 
-     在 64 位元電腦上建立資料夾*\Program Files (86) \Microsoft SDKs\Windows\v7.0A\Bootstrapper\Packages\\\<BootstrapperPackageName >\\* 資料夾。
+     在 64 位元電腦上建立資料夾 *\Program Files (86) \Microsoft SDKs\Windows\v7.0A\Bootstrapper\Packages\\\<BootstrapperPackageName >\\* 資料夾。
 
      下表顯示可用來比對地區設定的資料夾名稱。
 

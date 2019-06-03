@@ -126,6 +126,8 @@
                   href: install/workload-component-id-vs-test-professional.md
                 - name: Visual Studio Feedback Client
                   href: install/workload-component-id-vs-feedback-client.md
+            - name: 套件承載變更
+              href: install/changed-payloads.md
             - name: Visual Studio 組建編號和發行日期
               href: install/visual-studio-build-numbers-and-release-dates.md
     - name: 從 Azure 虛擬機器使用 Visual Studio
@@ -168,7 +170,7 @@
     - name: Visual Basic
       href: get-started/visual-basic/
     - name: C++
-      href: /cpp/get-started/
+      href: /cpp/get-started/tutorial-console-cpp
     - name: Python
       href: python/
     - name: Node.js

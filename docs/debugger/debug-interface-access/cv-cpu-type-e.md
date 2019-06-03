@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ab2081d5f75eea3ad23db4151f43ed882bdf74cc
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 4d3d1df772dc6fa4b1ad6e38a319532bea111e97
+ms.sourcegitcommit: ba5e072c9fedeff625a1332f22dcf3644d019f51
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62554983"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "66431724"
 ---
 # <a name="cvcputypee"></a>CV_CPU_TYPE_e
 指定目標處理器。
@@ -90,6 +90,7 @@ typedef enum CV_CPU_TYPE_e {
     CV_CFL_EBC          = 0xE0,
     CV_CFL_THUMB        = 0xF0
     CV_CFL_ARMNT        = 0xF4,
+    CV_CFL_ARM64        = 0xF6,
     CV_CFL_D3D11_SHADER = 0x100,
 } CV_CPU_TYPE_e;
 ```

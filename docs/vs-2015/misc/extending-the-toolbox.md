@@ -18,7 +18,7 @@ ms.lasthandoff: 05/15/2019
 ms.locfileid: "65686939"
 ---
 # <a name="extending-the-toolbox"></a>擴充工具箱
- [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] **工具箱** 提供物件集合，以透過 IDE 的拖放機制，來為編輯器和設計工具提供功能。  
+[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] **工具箱** 提供物件集合，以透過 IDE 的拖放機制，來為編輯器和設計工具提供功能。  
   
  VSPackage 在使用 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] **工具箱**方面有兩種基本方式：  
   

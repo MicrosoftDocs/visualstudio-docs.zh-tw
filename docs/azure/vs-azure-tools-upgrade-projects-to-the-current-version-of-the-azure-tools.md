@@ -1,22 +1,20 @@
 ---
-title: 如何將專案升級為目前版本的 Azure Tools | Microsoft Docs
+title: 將專案升級到目前版本的 Azure Tools
 description: 了解如何在 Visual Studio 中將 Azure 專案升級至目前版本的 Azure Tools
 author: ghogen
 manager: jillfra
 assetId: 1d64070a-078d-468a-87f4-e6715de6475f
-ms.prod: visual-studio-dev14
-ms.technology: vs-azure
 ms.custom: vs-azure
 ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 11/18/2016
 ms.author: ghogen
-ms.openlocfilehash: e007e7a3f3e8ddeb62167a04debfe879dad1778c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ece853aacc2af48ec89af510a055486b9dded7ae
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62427958"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66260586"
 ---
 # <a name="how-to-upgrade-projects-to-the-current-version-of-the-azure-tools-for-visual-studio"></a>如何將專案升級為目前版本的 Azure Tools for Visual Studio
 ## <a name="overview"></a>總覽
@@ -34,13 +32,13 @@ ms.locfileid: "62427958"
 
 > [!IMPORTANT]
 > 在 F# 專案中，您必須手動更新 Azure 組件的參考，使它們參考這些組件的較新版本。
-> 
-> 
+>
+>
 
 ### <a name="how-to-upgrade-an-azure-project-to-the-current-release"></a>如何將 Azure 專案升級至目前版本
 1. 將目前版本的 Azure tools 安裝到您想要用於升級專案的 Visual Studio 安裝，然後開啟您想要升級的專案。 如果專案是使用 1.6 版 (2011 年 11 月) 以前的 Azure Tools 建立，專案會自動升級至目前版本。 如果專案是使用 2011 年 11 月版本建立，且仍然安裝該版本，則會在該版本中開啟專案。
 2. 在 [方案總管] 中，開啟專案節點的捷徑功能表，選擇 [屬性]，然後在出現的對話方塊中選擇 [應用程式] 索引標籤。
-   
+
     [應用程式]  索引標籤會顯示與專案相關聯的工具版本。 如果出現目前版本的 Azure Tools，表示已經升級專案。 如果您已安裝的工具版本比索引標籤顯示的版本更新，則會出現 [升級]  按鈕。
 3. 選擇 [升級]  按鈕，將專案升級為目前版本的工具。
 4. 建置專案，然後解決因為 API 變更而造成的任何錯誤。 如需如何針對新版本來修改程式碼的相關資訊，請參閱特定 API 的文件。

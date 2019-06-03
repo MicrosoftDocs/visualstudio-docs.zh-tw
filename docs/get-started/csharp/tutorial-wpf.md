@@ -1,5 +1,5 @@
 ---
-title: 教學課程：使用 Windows Presentation Foundation (WPF) 的 Hello World 應用程式 (C#)
+title: 以 C# 搭配 WPF 撰寫的 Hello World 應用程式
 description: 使用 Windows Presentation Foundation (WPF) UI 架構，透過 Visual Studio 以 C# 建立一個簡單的 Windows Desktop .NET 應用程式。
 ms.custom: seodec18, get-started
 ms.date: 03/28/2019
@@ -14,12 +14,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: c098aba51b4b2340ab4094971e3509af42c6c8ed
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: bcff4d75361d3758321360cc051bf5040dbb61ac
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62426353"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66261698"
 ---
 # <a name="tutorial-create-a-simple-application-with-c"></a>教學課程：使用 C\# 建立一個簡單的應用程式
 

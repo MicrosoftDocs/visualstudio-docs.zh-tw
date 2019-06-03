@@ -30,10 +30,10 @@ VSPackage 必須向[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]以便整合�
  [命令資料表格式參考](https://msdn.microsoft.com/09e9c6ef-9863-48de-9483-d45b7b7c798f)資源位於未受管理的附屬 UI 的 dll。  
   
 ## <a name="command-handler-registration-of-a-vspackage"></a>VSPackage 的命令處理常式註冊  
- VSPackage，做為使用者介面 (UI) 的處理常式為基礎的命令需要命名 VSPackage 的登錄項目`GUID`。 此登錄項目指定 VSPackage 的 UI 資源檔和該檔案中的功能表資源的位置。 登錄項目本身位於 hkey_local_machine\software\microsoft\visualstudio\\*\<版本>* \Menus，其中*\<版本>* 是的新版[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]，例如 9.0。  
+ VSPackage，做為使用者介面 (UI) 的處理常式為基礎的命令需要命名 VSPackage 的登錄項目`GUID`。 此登錄項目指定 VSPackage 的 UI 資源檔和該檔案中的功能表資源的位置。 登錄項目本身位於 hkey_local_machine\software\microsoft\visualstudio\\ *\<版本>* \Menus，其中 *\<版本>* 是的新版[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]，例如 9.0。  
   
 > [!NOTE]
-> Hkey_local_machine\software\microsoft\visualstudio \ 的根路徑\\*\<版本 >* 可以覆寫以替代 root 時[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]shell 初始化。 如需詳細的根路徑的詳細資訊，請參閱[使用 Windows Installer 安裝 Vspackage](../../extensibility/internals/installing-vspackages-with-windows-installer.md)。  
+> Hkey_local_machine\software\microsoft\visualstudio \ 的根路徑\\ *\<版本 >* 可以覆寫以替代 root 時[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]shell 初始化。 如需詳細的根路徑的詳細資訊，請參閱[使用 Windows Installer 安裝 Vspackage](../../extensibility/internals/installing-vspackages-with-windows-installer.md)。  
   
 ### <a name="the-ctmenu-resource-registry-entry"></a>CTMENU 的資源登錄項目  
  結構的登錄項目是：  

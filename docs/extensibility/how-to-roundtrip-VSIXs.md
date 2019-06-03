@@ -165,7 +165,7 @@ Visual Studio 2017 | Microsoft.VSSDK.BuildTool
 
 * 加入額外的條件式陳述式來`<import>`Microsoft.VSSDK.BuildTools 參考的標記。 插入`'$(VisualStudioVersion)' != '14.0' And`條件陳述式前面。 這些陳述式會出現在頁首和頁尾的 csproj 檔案。
 
-例如: 
+例如:
 
 ```xml
 <Import Project="packages\Microsoft.VSSDK.BuildTools.15.0.26201…" Condition="'$(VisualStudioVersion)' != '14.0' And Exists(…" />
@@ -173,7 +173,7 @@ Visual Studio 2017 | Microsoft.VSSDK.BuildTool
 
 * 加入額外的條件式陳述式來`<import>`Microsoft.VisualStudio.Sdk.BuildTasks.14.0 的標記。 插入`'$(VisualStudioVersion)' == '14.0' And`條件陳述式前面。 這些陳述式會出現在頁首和頁尾的 csproj 檔案。
 
-例如: 
+例如:
 
 ```xml
 <Import Project="packages\Microsoft.VisualStudio.Sdk.BuildTasks.14.0.14.0…" Condition="'$(VisualStudioVersion)' == '14.0' And Exists(…" />
@@ -181,7 +181,7 @@ Visual Studio 2017 | Microsoft.VSSDK.BuildTool
 
 * 加入額外的條件式陳述式來`<Error>`Microsoft.VSSDK.BuildTools 參考的標記。 執行這項操作，藉由插入`'$(VisualStudioVersion)' != '14.0' And`條件陳述式前面。 這些陳述式會出現在頁尾中的 csproj 檔案。
 
-例如: 
+例如:
 
 ```xml
 <Error Condition="'$(VisualStudioVersion)' != '14.0' And Exists('packages\Microsoft.VSSDK.BuildTools.15.0.26201…" />
@@ -189,7 +189,7 @@ Visual Studio 2017 | Microsoft.VSSDK.BuildTool
 
 * 加入額外的條件式陳述式來`<Error>`Microsoft.VisualStudio.Sdk.BuildTasks.14.0 的標記。 插入`'$(VisualStudioVersion)' == '14.0' And`條件陳述式前面。 這些陳述式會出現在頁尾中的 csproj 檔案。
 
-例如: 
+例如:
 
 ```xml
 <Error Condition="'$(VisualStudioVersion)' == '14.0' And Exists('packages\Microsoft.VisualStudio.Sdk.BuildTasks.14.0.14.0…" />

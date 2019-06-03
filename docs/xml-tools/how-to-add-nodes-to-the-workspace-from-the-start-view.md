@@ -1,5 +1,5 @@
 ---
-title: 將節點新增至工作區中，從開始檢視 XML 結構描述設計工具中
+title: 將節點從 XML 結構描述設計工具中的 開始檢視加入至工作區
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 3fc7af94-dcb8-4226-a577-43f03664388b
@@ -8,14 +8,14 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ad76a2606d5e6fedec162cea4a89505efbb8b39f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1a62b2225eec77b2b7e2a9f00af0ff5492640c19
+ms.sourcegitcommit: ba5e072c9fedeff625a1332f22dcf3644d019f51
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62996866"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "66432176"
 ---
-# <a name="how-to-add-nodes-to-the-workspace-from-the-start-view"></a>HOW TO：將節點從 [開始] 檢視新增至工作區
+# <a name="how-to-add-nodes-to-the-workspace-from-the-start-view"></a>作法：將節點從 [開始] 檢視新增至工作區
 
 本主題描述如何將全域節點加入[XML 結構描述設計工具工作區](../xml-tools/xml-schema-designer-workspace.md)從[開始檢視](../xml-tools/start-view.md)。
 

@@ -1,5 +1,5 @@
 ---
-title: HOW TO：將屬性加入至自訂 SharePoint 專案項目類型 |Microsoft Docs
+title: 將屬性加入至自訂 SharePoint 專案項目類型
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -14,14 +14,14 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e9695755967aa1b66aa7cda2d784ae88b0fc1b42
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 4d44f4d5995be8bacc447ea3f915663a309bee77
+ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62967288"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66401657"
 ---
-# <a name="how-to-add-a-property-to-a-custom-sharepoint-project-item-type"></a>HOW TO：將屬性加入至自訂的 SharePoint 專案項目類型
+# <a name="how-to-add-a-property-to-a-custom-sharepoint-project-item-type"></a>作法：將屬性加入至自訂的 SharePoint 專案項目類型
   當您定義自訂的 SharePoint 專案項目類型時，則可以將屬性加入專案項目。 屬性會出現在**屬性**視窗中選取的專案項目時**方案總管 中**。
 
  下列步驟假設您已經定義自己的 SharePoint 專案項目類型。 如需詳細資訊，請參閱[如何：定義 SharePoint 專案項目類型](../sharepoint/how-to-define-a-sharepoint-project-item-type.md)。

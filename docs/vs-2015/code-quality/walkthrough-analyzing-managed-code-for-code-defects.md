@@ -15,7 +15,7 @@ ms.author: gewarren
 manager: wpickett
 ms.openlocfilehash: 26d8412318efd2292fd0f5a0f0ef52fe36c7d06c
 ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/22/2019
 ms.locfileid: "60116286"
@@ -41,7 +41,7 @@ ms.locfileid: "60116286"
   
 1. 在上**檔案**功能表[!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)]，按一下 **新增**，然後按一下**專案**。  
   
-2. 在 **新的專案**對話方塊的 **專案類型**，按一下  **Visual C#**。  
+2. 在 **新的專案**對話方塊的 **專案類型**，按一下  **Visual C#** 。  
   
 3. 底下**範本**，選取**類別庫**。  
   
@@ -61,7 +61,7 @@ ms.locfileid: "60116286"
   
 1. 中，選取 CodeAnalysisManagedDemo 專案**方案總管 中**。  
   
-2. 在 [專案] 功能表上，按一下 [屬性]。  
+2. 在 [專案]  功能表上，按一下 [屬性]  。  
   
      CodeAnalysisManagedDemo 的 [內容] 頁面會顯示。  
   
@@ -149,7 +149,7 @@ ms.locfileid: "60116286"
   
        選取 **簽署組件**核取方塊。  
   
-       在 **選擇字串名稱金鑰檔**清單中，選取**\<新增...>**。  
+       在 **選擇字串名稱金鑰檔**清單中，選取 **\<新增...>** 。  
   
        **建立強式名稱金鑰** 對話方塊隨即出現。  
   

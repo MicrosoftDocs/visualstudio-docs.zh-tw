@@ -1,5 +1,5 @@
 ---
-title: HOW TO：以程式設計方式保護文件和文件的部分
+title: 以程式設計方式保護文件和文件的部分
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -14,14 +14,14 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 62d84dcb7ce22f1199d12a958250a465cd25a49c
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 30cb3d0b9ad04a3a0195f3b58ba5856de94d09d4
+ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63412459"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66402179"
 ---
-# <a name="how-to-programmatically-protect-documents-and-parts-of-documents"></a>HOW TO：以程式設計方式保護文件和文件的部分
+# <a name="how-to-programmatically-protect-documents-and-parts-of-documents"></a>作法：以程式設計方式保護文件和文件的部分
   您可以在 Microsoft Office Word 文件加入保護，以防止使用者對文件進行任何編輯。
 
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]

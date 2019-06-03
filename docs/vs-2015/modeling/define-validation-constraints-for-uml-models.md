@@ -48,7 +48,7 @@ ms.locfileid: "63422715"
   
 #### <a name="to-create-a-validation-extension-in-its-own-vsix"></a>在自己的 VSIX 建立驗證擴充功能  
   
-1. 在 [新增專案]  對話方塊的 [模型專案] 之下，選取 [驗證擴充功能] 。  
+1. 在 [新增專案]  對話方塊的 [模型專案]  之下，選取 [驗證擴充功能]  。  
   
 2. 在新的專案中開啟 **.cs** 檔案，並修改類別來實作您的驗證條件約束。  
   
@@ -83,33 +83,33 @@ using Microsoft.VisualStudio.Uml.Classes;
   
 1. 建立類別庫專案，將它加入現有的 VSIX 方案，或是建立新的方案。  
   
-    1. 在 [檔案]  功能表上，依序選擇 [新增] 和 [專案] 。  
+    1. 在 [檔案]  功能表上，依序選擇 [新增]  和 [專案]  。  
   
-    2. 在 [已安裝的範本] 下，展開 [Visual C#]  或 [Visual Basic] ，然後在中間的資料行中選擇 [類別庫] 。  
+    2. 在 [已安裝的範本]  下，展開 [Visual C#]  或 [Visual Basic]  ，然後在中間的資料行中選擇 [類別庫]  。  
   
 2. 除非您的方案已經包含 VSIX 專案，否則請建立一個：  
   
-    1. 在 **方案總管**中，在解決方案的捷徑功能表上，選擇 [加入]  和 [新增專案] 。  
+    1. 在 **方案總管**中，在解決方案的捷徑功能表上，選擇 [加入]   和 [新增專案]  。  
   
-    2. 在 [已安裝的範本] 下，展開 **Visual C#** 或 **Visual Basic**，然後選擇 [擴充性] 。 在中間的資料行中，按一下 [VSIX 專案] 。  
+    2. 在 [已安裝的範本]  下，展開 **Visual C#** 或 **Visual Basic**，然後選擇 [擴充性]  。 在中間的資料行中，按一下 [VSIX 專案]  。  
   
 3. 將 VSIX 專案設定為方案的啟始專案。  
   
-    - 在方案總管中，在 VSIX 專案的捷徑功能表上，選擇 [設定為啟始專案] 。  
+    - 在方案總管中，在 VSIX 專案的捷徑功能表上，選擇 [設定為啟始專案]  。  
   
-4. 在 **source.extension.vsixmanifest**的 [內容] 下，加入類別庫專案做為 MEF 元件：  
+4. 在 **source.extension.vsixmanifest**的 [內容]  下，加入類別庫專案做為 MEF 元件：  
   
     1. 在 [中繼資料]  索引標籤上，設定 VSIX 的名稱。  
   
     2. 在 [安裝目標]  索引標籤上，設定 Visual Studio 版本做為目標。  
   
-    3. 在 [資產]  索引標籤上，選擇 [新增] ，然後在對話方塊中設定：  
+    3. 在 [資產]  索引標籤上，選擇 [新增]  ，然後在對話方塊中設定：  
   
-          =   
+           =    
   
-          =   
+           =    
   
-          =   
+           =    
   
 #### <a name="to-define-the-validation-class"></a>定義驗證類別  
   
@@ -183,7 +183,7 @@ using Microsoft.VisualStudio.Uml.Classes;
   
 #### <a name="to-test-the-validation-constraint"></a>測試驗證條件約束  
   
-1. 按 **F5**，或在 [偵錯]  功能表上，選擇 [開始偵錯] 。  
+1. 按 **F5**，或在 [偵錯]  功能表上，選擇 [開始偵錯]  。  
   
      [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 的實驗執行個體隨即啟動。  
   
@@ -191,7 +191,7 @@ using Microsoft.VisualStudio.Uml.Classes;
   
     - 如果您有多個專案，請確定 VSIX 專案已設定為方案的啟始專案。  
   
-    - 在方案總管的啟始專案或唯一專案的捷徑功能表上，選擇 [屬性] 。 在專案屬性編輯器中，選取 [偵錯]  索引標籤。請確定 [啟動外部程式]  欄位中的字串是 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]的完整路徑名稱，通常是：  
+    - 在方案總管的啟始專案或唯一專案的捷徑功能表上，選擇 [屬性]  。 在專案屬性編輯器中，選取 [偵錯]  索引標籤。請確定 [啟動外部程式]  欄位中的字串是 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]的完整路徑名稱，通常是：  
   
          `C:\Program Files\Microsoft Visual Studio [version]\Common7\IDE\devenv.exe`  
   
@@ -203,7 +203,7 @@ using Microsoft.VisualStudio.Uml.Classes;
   
     2. 建立類別，並加入兩個同名的屬性。  
   
-4. 在圖表上任何位置的捷徑功能表上，選擇 [驗證] 。  
+4. 在圖表上任何位置的捷徑功能表上，選擇 [驗證]  。  
   
 5. 模型中的任何錯誤都會在錯誤視窗中回報。  
   
@@ -370,9 +370,9 @@ context.LogError(... , usecase);
   
 1. 在您的電腦中，尋找 VSIX 專案所建置的 **.vsix** 檔案。  
   
-    1. 在方案總管 中，於 VSIX 專案的捷徑功能表上，選擇 [在 Windows 檔案總管中開啟資料夾] 。  
+    1. 在方案總管  中，於 VSIX 專案的捷徑功能表上，選擇 [在 Windows 檔案總管中開啟資料夾]  。  
   
-    2. 找出檔案**筒\\\*\\**_YourProject_**.vsix**  
+    2. 找出檔案**筒\\\*\\** _YourProject_ **.vsix**  
   
 2. 將 **.vsix** 檔案複製到要安裝擴充功能的目標電腦。 這可以是您自己的電腦或另一部電腦。  
   
@@ -380,17 +380,17 @@ context.LogError(... , usecase);
   
 3. 在目標電腦上開啟 **.vsix** 檔案。  
   
-     [Visual Studio 擴充功能安裝程式] 會隨即開啟並安裝擴充功能。  
+     [Visual Studio 擴充功能安裝程式]  會隨即開啟並安裝擴充功能。  
   
 4. 啟動或重新啟動 [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)]。  
   
 #### <a name="to-uninstall-an-extension"></a>解除安裝擴充功能  
   
-1. 在 [工具]  功能表中選擇 [擴充功能和更新] 。  
+1. 在 [工具]  功能表中選擇 [擴充功能和更新]  。  
   
-2. 展開 [已安裝的擴充功能] 。  
+2. 展開 [已安裝的擴充功能]  。  
   
-3. 選取擴充功能，然後選擇 [解除安裝] 。  
+3. 選取擴充功能，然後選擇 [解除安裝]  。  
   
    在很少見的情況下，故障的擴充功能無法載入並且會在錯誤視窗中建立報告，但不會顯示在擴充管理員中。 在此情況下，您可以移除延伸模組，從下列位置刪除檔案所在 *%localappdata%* 通常*DriveName*: \Users\\*的使用者名稱*\AppData\Local:  
   

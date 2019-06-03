@@ -17,7 +17,7 @@ ms.locfileid: "62823011"
 ---
 # <a name="collect-diagnostic-information-using-test-settings"></a>使用測試設定收集診斷資訊
 
-您可以在 Visual Studio 中使用「測試設定」，在執行測試時收集額外的資料。 例如，您可能想要在執行測試時錄製視訊。 診斷資料配接器可用來：
+您可以在 Visual Studio 中使用「測試設定」  ，在執行測試時收集額外的資料。 例如，您可能想要在執行測試時錄製視訊。 診斷資料配接器可用來：
 
 - 收集文字格式的每個 UI 動作步驟
 

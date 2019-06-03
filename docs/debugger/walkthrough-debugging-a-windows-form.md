@@ -56,7 +56,7 @@ Windows 表單是其中一個最常見的受管理應用程式。 在 Windows Fo
 
 3. 在 **名稱**方塊中，為專案指定唯一的名稱 (例如 Walkthrough_SimpleDebug)。
 
-4. 按一下 [確定] 。
+4. 按一下 [確定]  。
 
      Visual Studio 會建立新的專案，並在 Windows Form 設計工具中顯示新的表單。 如需詳細資訊，請參閱 < [Windows Form 設計工具](/previous-versions/visualstudio/visual-studio-2010/e06hs424\(v\=vs.100\))。
 
@@ -64,7 +64,7 @@ Windows 表單是其中一個最常見的受管理應用程式。 在 Windows Fo
 
      [工具箱] 便會開啟。 如需詳細資訊，請參閱[工具箱](../ide/reference/toolbox.md)。
 
-6. 在 工具箱 中，按一下** 按鈕**控制項，將控制項拖曳至表單的設計介面。 將按鈕放在表單上。
+6. 在 工具箱 中，按一下 **按鈕**控制項，將控制項拖曳至表單的設計介面。 將按鈕放在表單上。
 
 7. 在 [工具箱] 中，按一下**TextBox**控制項，將控制項拖曳至表單的設計介面。 卸除**TextBox**表單上。
 
@@ -86,7 +86,7 @@ Windows 表單是其中一個最常見的受管理應用程式。 在 Windows Fo
     textBox1->Text = "Button was clicked!";
     ```
 
-11. 在 [建置] 功能表上，選取 [建置方案]。
+11. 在 [建置]  功能表上，選取 [建置方案]  。
 
      專案應該會建置而無錯誤。
 
@@ -114,7 +114,7 @@ Windows 表單是其中一個最常見的受管理應用程式。 在 Windows Fo
     > [!NOTE]
     > 您也可以以滑鼠右鍵按一下任何一行程式碼，指向**中斷點**，然後按一下**插入中斷點**這一行加入中斷點。
 
-2. 在 [偵錯] 功能表上選擇 [啟動]。
+2. 在 [偵錯]  功能表上選擇 [啟動]  。
 
      Windows Form 會開始執行。
 
@@ -130,7 +130,7 @@ Windows 表單是其中一個最常見的受管理應用程式。 在 Windows Fo
 
     `""`
 
-6. 在 [偵錯] 功能表上，選擇 [逐步執行]。
+6. 在 [偵錯]  功能表上，選擇 [逐步執行]  。
 
      TextBox1.Text 變更的值**監看式 1**視窗：
 
@@ -146,7 +146,7 @@ Windows 表單是其中一個最常見的受管理應用程式。 在 Windows Fo
 
      這會從您的程式碼移除中斷點。
 
-10. 在 [偵錯] 功能表中，選擇 [停止偵錯]。
+10. 在 [偵錯]  功能表中，選擇 [停止偵錯]  。
 
 ## <a name="attach-to-your-windows-form-application-for-debugging"></a>附加至您的 Windows Form 應用程式進行偵錯
  在 [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] 中，您可以將偵錯工具附加至執行中的處理序。 如果您使用的 Express 版本，不支援這項功能。

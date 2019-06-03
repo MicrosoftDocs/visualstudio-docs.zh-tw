@@ -137,7 +137,7 @@ DXCap.exe -e map
 
  上述命令會列舉符合"map"的 UWP 應用程式輸出如下：
 
- **Package "Microsoft.BingMaps":****Installdirectory 出現：C:\Program Files\WindowsApps\Microsoft.BingMaps_2.1.2914.1734_x64__8wekyb3d8bbwe** **FullName         :Microsoft.BingMaps_2.1.2914.1734_x64__8wekyb3d8bbwe** **UserSID:S-1-5-21-2127521184-1604012920-1887927527-5603533** **名稱：Microsoft.BingMaps** **發行者：CN = Microsoft Corporation，O = Microsoft Corporation，L = Redmond，S = Washington，C = US** **版本：2.1.2914.1734** **可啟動的應用程式：****識別碼：AppexMaps** **Exe:C:\Program Files\WindowsApps\Microsoft.BingMaps_2.1.2914.1734_x64__8wekyb3d8bbwe\Map.exe** **IsWWA:否** **AppSpec （以啟動）：DXCap.exe-c Microsoft.BingMaps_2.1.2914.1734_x64__8wekyb3d8bbwe,AppexMaps**每個列舉的應用程式的輸出的最後一行會顯示您可用來從其擷取圖形資訊的命令。
+ **Package "Microsoft.BingMaps":** **Installdirectory 出現：C:\Program Files\WindowsApps\Microsoft.BingMaps_2.1.2914.1734_x64__8wekyb3d8bbwe** **FullName         :Microsoft.BingMaps_2.1.2914.1734_x64__8wekyb3d8bbwe** **UserSID:S-1-5-21-2127521184-1604012920-1887927527-5603533** **名稱：Microsoft.BingMaps** **發行者：CN = Microsoft Corporation，O = Microsoft Corporation，L = Redmond，S = Washington，C = US** **版本：2.1.2914.1734** **可啟動的應用程式：** **識別碼：AppexMaps** **Exe:C:\Program Files\WindowsApps\Microsoft.BingMaps_2.1.2914.1734_x64__8wekyb3d8bbwe\Map.exe** **IsWWA:否** **AppSpec （以啟動）：DXCap.exe-c Microsoft.BingMaps_2.1.2914.1734_x64__8wekyb3d8bbwe,AppexMaps**每個列舉的應用程式的輸出的最後一行會顯示您可用來從其擷取圖形資訊的命令。
 
 ### <a name="capture-specific-frames-or-frames-between-specific-times"></a>擷取特定框架或特定時間之間的框架。
  使用`-frame`來指定您想要使用逗號和範圍擷取的框架：

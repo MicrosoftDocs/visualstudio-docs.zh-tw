@@ -1,5 +1,5 @@
 ---
-title: HOW TO：將捷徑功能表項目新增至 SharePoint 專案項目擴充功能 |Microsoft Docs
+title: 將捷徑功能表項目新增至 SharePoint 專案項目擴充功能
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 168e881191843d63f515d5066ec451848319d22e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 8041f9cbf19d1e1324478b92d2655f1377102b81
+ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62967151"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66401633"
 ---
 # <a name="how-to-add-a-shortcut-menu-item-to-a-sharepoint-project-item-extension"></a>HOW TO：將捷徑功能表項目新增至 SharePoint 專案項目擴充功能
   您可以透過專案項目擴充功能，將快顯功能表項目新增至現有的 SharePoint 專案項目中。 使用者以滑鼠右鍵按一下專案項目中的時，會出現的功能表項目**方案總管 中**。

@@ -56,13 +56,13 @@ interface IManagedAddin : IUnknown
 
 1. 應用程式會在下列登錄機碼底下尋找項目，以探索 VSTO 增益集：
 
-    **HKEY_CURRENT_USER\Software\Microsoft\Office\\*\<應用程式名稱 >* \Addins\\**
+    **HKEY_CURRENT_USER\Software\Microsoft\Office\\ *\<應用程式名稱 >* \Addins\\**
 
     這個登錄機碼下的每個項目都是 VSTO 增益集的唯一識別碼。 通常這會是 VSTO 增益集組件的名稱。
 
 2. 應用程式會在每個 VSTO 增益集的項目底下尋找 `Manifest` 項目。
 
-    受管理的 VSTO 增益集可以儲存的資訊清單的完整路徑`Manifest`下的項目**HKEY_CURRENT_USER\Software\Microsoft\Office\\_\<應用程式名稱 >_ \Addins\\_\<增益集識別碼 >_**。 資訊清單是一種檔案 (通常是 XML 檔案)，可提供協助載入 VSTO 增益集的資訊。
+    受管理的 VSTO 增益集可以儲存的資訊清單的完整路徑`Manifest`下的項目**HKEY_CURRENT_USER\Software\Microsoft\Office\\ _\<應用程式名稱 >_ \Addins\\ _\<增益集識別碼 >_ **。 資訊清單是一種檔案 (通常是 XML 檔案)，可提供協助載入 VSTO 增益集的資訊。
 
 3. 如果應用程式找到 `Manifest` 項目，則會嘗試載入 Managed VSTO 增益集載入器元件。 應用程式會嘗試建立實作 IManagedAddin 介面的 COM 物件。
 
@@ -70,7 +70,7 @@ interface IManagedAddin : IUnknown
 
 4. 應用程式會呼叫 [IManagedAddin::Load](../vsto/imanagedaddin-load.md) 方法，並傳入 `Manifest` 項目的值。
 
-5.  [IManagedAddin::Load](../vsto/imanagedaddin-load.md) 方法會執行載入 VSTO 增益集所需的工作，例如設定要載入之 VSTO 增益集的應用程式定義域和安全性原則。
+5. [IManagedAddin::Load](../vsto/imanagedaddin-load.md) 方法會執行載入 VSTO 增益集所需的工作，例如設定要載入之 VSTO 增益集的應用程式定義域和安全性原則。
 
    如需有關登錄 Microsoft Office 應用程式用來探索及載入的金鑰管理 VSTO 增益集，請參閱 < [VSTO 增益集的登錄項目](../vsto/registry-entries-for-vsto-add-ins.md)。
 

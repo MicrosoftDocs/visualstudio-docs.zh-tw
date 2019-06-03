@@ -13,12 +13,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: cd2294d3018aba3d2e7ff8a0c0737b32a05214c0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ce2fe1d40c0aeddf12a898919150a32c0c77d72e
+ms.sourcegitcommit: 13ab9a5ab039b070b9cd9251d0b83dd216477203
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62974224"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66177627"
 ---
 # <a name="install-build-tools-into-a-container"></a>將 Build Tools 安裝至容器
 
@@ -64,12 +64,12 @@ Visual Studio Build Tools (及更大範圍的 Visual Studio) 需要許多磁碟�
 
 1. [將 [基本]](https://docs.docker.com/docker-for-windows/#edit-the-daemon-configuration-file) 按鈕切換至 [進階]。
 
-1. 新增下列 JSON 陣列屬性，以將磁碟空間增加到 120 GB (讓 Build Tools 有足夠的成長空間)。
+1. 新增下列 JSON 陣列屬性以將磁碟空間增加到 127 GB (此容量超過 Build Tools 所需，且能提供足夠的成長空間)。
 
    ```json
    {
      "storage-opts": [
-       "size=120GB"
+       "size=127G"
      ]
    }
    ```
@@ -83,10 +83,12 @@ Visual Studio Build Tools (及更大範圍的 Visual Studio) 需要許多磁碟�
      "debug": true,
      "experimental": true,
      "storage-opts": [
-       "size=120GB"
+       "size=127G"
      ]
    }
    ```
+
+   如需更多組態選項及祕訣，請參閱 [Windows 上的 Docker 引擎](https://docs.microsoft.com/virtualization/windowscontainers/manage-docker/configure-docker-daemon) \(部分機器翻譯\)。
 
 1. 按一下 [套用]。
 
@@ -100,17 +102,17 @@ Visual Studio Build Tools (及更大範圍的 Visual Studio) 需要許多磁碟�
 
 1. 從提升權限的命令提示字元，編輯 "%ProgramData%\Docker\config\daemon.json" (或任何您指定給 `dockerd --config-file` 的目錄)。
 
-1. 新增下列 JSON 陣列屬性，以將磁碟空間增加到 120 GB (讓 Build Tools 有足夠的成長空間)。
+1. 新增下列 JSON 陣列屬性以將磁碟空間增加到 127 GB (此容量超過 Build Tools 所需，且能提供足夠的成長空間)。
 
    ```json
    {
      "storage-opts": [
-       "size=120GB"
+       "size=120G"
      ]
    }
    ```
 
-   這個屬性會新增至您已有的任何項目。
+   這個屬性會新增至您已有的任何項目。 如需更多組態選項及祕訣，請參閱 [Windows 上的 Docker 引擎](https://docs.microsoft.com/virtualization/windowscontainers/manage-docker/configure-docker-daemon) \(部分機器翻譯\)。
  
 1. 儲存並關閉檔案。
 
@@ -148,8 +150,8 @@ Visual Studio Build Tools (及更大範圍的 Visual Studio) 需要許多磁碟�
    ```dockerfile
    # escape=`
 
-   # Use the latest Windows Server Core image with .NET Framework 4.7.1.
-   FROM microsoft/dotnet-framework:4.7.1
+   # Use the latest Windows Server Core image with .NET Framework 4.7.2.
+   FROM mcr.microsoft.com/dotnet/framework/sdk:4.7.2-windowsservercore-ltsc2019
 
    # Restore the default Windows shell for correct batch processing.
    SHELL ["cmd", "/S", "/C"]
@@ -175,11 +177,11 @@ Visual Studio Build Tools (及更大範圍的 Visual Studio) 需要許多磁碟�
    ```
 
    > [!WARNING]
-   > 如果您讓映像直接以 microsoft/windowsservercore 為基礎，.NET Framework 可能無法正確安裝且不會指出任何安裝錯誤。 安裝完成之後，可能無法執行受控碼。 相反地，讓您的映像以 [microsoft/dotnet-framework:4.7.1](https://hub.docker.com/r/microsoft/dotnet-framework) 或更新版本為基礎。 另請注意，標記為 4.7.1 或更新版的映像可能會使用 PowerShell 作為預設 `SHELL`，導致 `RUN` 和 `ENTRYPOINT` 指令失敗。
+   > 如果您是直接以 microsoft/windowsservercore 或 mcr.microsoft.com/windows/servercore 作為映像的基礎 (請參閱 [Microsoft 同步發佈容器目錄](https://azure.microsoft.com/en-us/blog/microsoft-syndicates-container-catalog/) \(英文\))，.NET Framework 可能會無法正確安裝，且不會指出任何安裝錯誤。 安裝完成之後，可能無法執行受控碼。 相反地，讓您的映像以 [microsoft/dotnet-framework:4.7.1](https://hub.docker.com/r/microsoft/dotnet-framework) 或更新版本為基礎。 另請注意，標記為 4.7.1 或更新版的映像可能會使用 PowerShell 作為預設 `SHELL`，導致 `RUN` 和 `ENTRYPOINT` 指令失敗。
    >
    > Visual Studio 2017 15.8 或更早版本 (任何產品) 無法在 mcr\.microsoft\.com\/windows\/servercore:1809 (或更新版本) 上正確安裝。 不會顯示錯誤。
    >
-   > 請參閱[容器的已知問題](build-tools-container-issues.md)以取得詳細資訊。
+   > 請參閱 [Windows 容器版本相容性](https://docs.microsoft.com/virtualization/windowscontainers/deploy-containers/version-compatibility) \(部分機器翻譯\) 以查看各種主機 OS 版本所支援的容器 OS 版本，並參閱[容器的已知問題](build-tools-container-issues.md)以了解已知問題。
 
    ::: moniker-end
 
@@ -188,8 +190,8 @@ Visual Studio Build Tools (及更大範圍的 Visual Studio) 需要許多磁碟�
    ```dockerfile
    # escape=`
 
-   # Use the latest Windows Server Core image with .NET Framework 4.7.1.
-   FROM microsoft/dotnet-framework:4.7.1
+   # Use the latest Windows Server Core image with .NET Framework 4.8.
+   FROM mcr.microsoft.com/dotnet/framework/sdk:4.8-windowsservercore-ltsc2019
 
    # Restore the default Windows shell for correct batch processing.
    SHELL ["cmd", "/S", "/C"]
@@ -217,7 +219,7 @@ Visual Studio Build Tools (及更大範圍的 Visual Studio) 需要許多磁碟�
    > [!WARNING]
    > 如果您讓映像直接以 microsoft/windowsservercore 為基礎，.NET Framework 可能無法正確安裝且不會指出任何安裝錯誤。 安裝完成之後，可能無法執行受控碼。 相反地，讓您的映像以 [microsoft/dotnet-framework:4.7.1](https://hub.docker.com/r/microsoft/dotnet-framework) 或更新版本為基礎。 另請注意，標記為 4.7.1 或更新版的映像可能會使用 PowerShell 作為預設 `SHELL`，導致 `RUN` 和 `ENTRYPOINT` 指令失敗。
    >
-   > 請參閱[容器的已知問題](build-tools-container-issues.md)以取得詳細資訊。
+   > 請參閱 [Windows 容器版本相容性](https://docs.microsoft.com/virtualization/windowscontainers/deploy-containers/version-compatibility) \(部分機器翻譯\) 以查看各種主機 OS 版本所支援的容器 OS 版本，並參閱[容器的已知問題](build-tools-container-issues.md)以了解已知問題。
 
    ::: moniker-end
 

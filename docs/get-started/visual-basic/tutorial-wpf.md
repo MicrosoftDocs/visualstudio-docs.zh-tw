@@ -1,8 +1,8 @@
 ---
-title: 教學課程：使用 Windows Presentation Foundation (WPF) 的 Hello World 應用程式 (Visual Basic)
+title: 以 Visual Basic 搭配 WPF 撰寫的 Hello World 應用程式
 description: 使用 Windows Presentation Foundation (WPF) UI 架構，透過 Visual Studio 以 Visual Basic 建立一個簡單的 Windows Desktop .NET 應用程式。
 ms.custom: seodec18, get-started
-ms.date: 03/14/2019
+ms.date: 04/23/2019
 ms.technology: vs-ide-general
 ms.prod: visual-studio-windows
 ms.topic: conceptual
@@ -14,12 +14,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: d1fcb7b139e374f49df84fe17b8e12ea6aa6b625
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f56482dbbe76722e8b8d55fad01d283de2dc113e
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62965732"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66263619"
 ---
 # <a name="tutorial-create-a-simple-application-with-visual-basic"></a>教學課程：使用 Visual Basic 建立簡單的應用程式
 
@@ -131,7 +131,7 @@ Visual Studio 會建立 HelloWPFApp 專案和方案，而且**方案總管**會�
 XAML 標記應該看起來與下列範例相似：
 
 ```xaml
-<TextBlock HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Center" RenderTransformOrigin="4.08,2.312" Margin="237,57,221,238"><Run Text="TextBlock"/><InlineUIContainer><TextBlock TextWrapping="Wrap" Text="TextBlock"/>
+<TextBlock HorizontalAlignment="Left" Margin="381,100,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top"/>
 ```
 
 ### <a name="customize-the-text-in-the-text-block"></a>自訂文字區塊中的文字
@@ -302,5 +302,16 @@ IsChecked="True"
 
 ## <a name="see-also"></a>另請參閱
 
-- [Visual Studio 2017 的新功能](../../ide/whats-new-visual-studio.md)
+::: moniker range="vs-2017"
+
+- [Visual Studio 2017 的新功能](../../ide/whats-new-visual-studio-2017.md)
 - [生產力祕訣](../../ide/productivity-tips-for-visual-studio.md)
+
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+- [Visual Studio 2019 的新功能](../../ide/whats-new-visual-studio-2019.md)
+- [生產力祕訣](../../ide/productivity-tips-for-visual-studio.md)
+
+::: moniker-end

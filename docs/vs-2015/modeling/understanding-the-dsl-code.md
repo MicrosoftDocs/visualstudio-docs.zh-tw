@@ -41,7 +41,7 @@ ms.locfileid: "63426961"
   
  建議您檢查產生的程式碼，以協助您了解 DSL。 若要查看產生的檔案，請展開 [方案總管] 中的 *.tt 檔。  
   
- \*.Tt 檔包含很少的產生程式碼。 相反地，這些檔案使用 `<#include>` 指示詞來包含共用範本檔案。 共用的檔案可在 **\Program Files\Microsoft Visual Studio 10.0\Common7\IDE\Extensions\Microsoft\DSL SDK\DSL Designer\11.0\TextTemplates**   
+ \*.Tt 檔包含很少的產生程式碼。 相反地，這些檔案使用 `<#include>` 指示詞來包含共用範本檔案。 共用的檔案可在 **\Program Files\Microsoft Visual Studio 10.0\Common7\IDE\Extensions\Microsoft\DSL SDK\DSL Designer\11.0\TextTemplates**  
   
  當您將自己的程式碼加入至 DSL 方案時，請將此程式碼加入至 Generated Code 資料夾外部的其他檔案中。 您可能想要建立**自訂程式碼**資料夾。 (當您將新的程式碼檔案加入至自訂資料夾時，請記得修正初始程式碼基本架構中的命名空間)。  
   
@@ -72,7 +72,7 @@ ms.locfileid: "63426961"
   
  (在元件方案範例中，其中一個連接產生器稱為 ConnectionBuilder，這是巧合，因為網域關聯性的名稱剛好是 Connection。)  
   
- 在 建立關聯性*關聯性*`Builder.Connect()`方法。 預設版本驗證來源和目標模型項目是可接受的，然後再具現化關聯性。 例如:   
+ 在 建立關聯性*關聯性*`Builder.Connect()`方法。 預設版本驗證來源和目標模型項目是可接受的，然後再具現化關聯性。 例如:  
   
  `CommentReferencesSubject(sourceAccepted, targetAccepted);`  
   

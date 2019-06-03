@@ -1,5 +1,5 @@
 ---
-title: 逐步解說：建立自訂動作專案項目與項目範本，第 1 部分 |Microsoft Docs
+title: 建立自訂動作專案項目包含項目範本，第 1 部分
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 9417c2116dde909bda948e7d9140d7f52b090d68
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 3e00d87079fe4986dc378540c1456508c2afa0b7
+ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63430481"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66401120"
 ---
 # <a name="walkthrough-create-a-custom-action-project-item-with-an-item-template-part-1"></a>逐步解說：使用項目範本，第 1 部分中建立自訂動作專案項目
   您可以擴充 Visual Studio 中的 SharePoint 專案系統，藉由建立您自己的專案項目類型。 在本逐步解說中，您將建立可新增至 SharePoint 專案，以在 SharePoint 網站上建立的自訂動作專案項目。 自訂動作會將功能表項目**站台動作**的 SharePoint 網站的功能表。
@@ -74,7 +74,7 @@ ms.locfileid: "63430481"
 
 1. 啟動 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]。
 
-2. 在功能表列上，選擇 [檔案] > [新增] > [專案]。
+2. 在功能表列上，選擇 [檔案]   > [新增]   > [專案]  。
 
 3. 在頂端的清單**新的專案**對話方塊方塊中，請確定 **.NET Framework 4.5**已選取。
 
@@ -159,7 +159,7 @@ ms.locfileid: "63430481"
 
 #### <a name="to-create-a-custom-icon-for-the-project-item"></a>若要建立自訂專案項目圖示
 
-1. 中**方案總管**，開啟捷徑功能表**ProjectItemDefinition**專案中，選擇 **新增**，然後選擇 **新項目...**.
+1. 中**方案總管**，開啟捷徑功能表**ProjectItemDefinition**專案中，選擇 **新增**，然後選擇 **新項目...** .
 
 2. 在專案項目清單中，選擇**圖示檔**項目。
 
@@ -436,7 +436,7 @@ ms.locfileid: "63430481"
 
 1. 在實驗性 Visual Studio 執行個體，在功能表列上，選擇**工具** > **擴充功能和更新**。
 
-     [擴充功能和更新] 對話方塊隨即開啟。
+     [擴充功能和更新]  對話方塊隨即開啟。
 
 2. 在延伸模組清單中，選擇**自訂動作專案項目**，然後選擇**解除安裝** 按鈕。
 

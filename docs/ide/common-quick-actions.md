@@ -19,7 +19,7 @@ ms.locfileid: "62976498"
 ---
 # <a name="common-quick-actions"></a>一般的快速動作
 
-本主題中的此章節列出一些同時適用於 C# 和 Visual Basic 程式碼的一般**快速動作**。 這些動作是 Visual Studio 中適用於編譯器診斷或內建之 [.NET 編譯器平台分析器](../code-quality/roslyn-analyzers-overview.md)的「程式碼修正」。
+本主題中的此章節列出一些同時適用於 C# 和 Visual Basic 程式碼的一般**快速動作**。 這些動作是 Visual Studio 中適用於編譯器診斷或內建之 [.NET 編譯器平台分析器](../code-quality/roslyn-analyzers-overview.md)的「程式碼修正」  。
 
 ## <a name="actions-that-fix-errors"></a>修正錯誤的動作
 
@@ -29,7 +29,7 @@ ms.locfileid: "62976498"
 
 ### <a name="correct-misspelled-symbol-or-keyword"></a>修正拼字錯誤的符號或關鍵字
 
-如果您不小心拼錯 Visual Studio 中的類型或關鍵字，這個快速動作會自動加以修正。 您會在燈泡功能表中看到如下的項目：將「拼錯的字」變更為「正確的字」。 例如：
+如果您不小心拼錯 Visual Studio 中的類型或關鍵字，這個快速動作會自動加以修正。 您會在燈泡功能表中看到如下的項目：將「拼錯的字」  變更為「正確的字」   。 例如：
 
 ```csharp
 // Before
@@ -178,7 +178,7 @@ void DoWork(CancellationToken cancellationToken = default) { ... }
 
 ### <a name="add-usingsimports-for-types-in-reference-assemblies-nuget-packages-or-other-types-in-your-solution"></a>針對參考組件的類型、NuGet 套件的類型或您方案中的其他類型新增 using/import
 
-使用位於您方案中其他專案的類型會自動顯示快速動作，但是其他則需要從 [工具] > [選項] > [C#] 或 [基本] > [進階] 索引標籤啟用︰
+使用位於您方案中其他專案的類型會自動顯示快速動作，但是其他則需要從 [工具] > [選項] > [C#]  或 [基本] > [進階]  索引標籤啟用︰
 
 - 針對參考組件中的類型建議 using/Import
 - 針對 NuGet 套件中的類型建議 using/Import
@@ -875,7 +875,7 @@ Console.WriteLine($"{x} {y}");
 
 ### <a name="make-method-synchronous"></a>將方法設為同步
 
-當在方法中使用 `async` 或 `Async` 關鍵字時，也同時會在該方法中使用 `await` 或 `Await` 關鍵字。 但情況若非如此，將會顯示快速動作，讓您可以藉由移除 `async` 或 `Async` 關鍵字及變更傳回型別的方式，將方法設為同步。 使用 [快速動作] 功能表的 [將方法設為同步] 選項。
+當在方法中使用 `async` 或 `Async` 關鍵字時，也同時會在該方法中使用 `await` 或 `Await` 關鍵字。 但情況若非如此，將會顯示快速動作，讓您可以藉由移除 `async` 或 `Async` 關鍵字及變更傳回型別的方式，將方法設為同步。 使用 [快速動作] 功能表的 [將方法設為同步]  選項。
 
 ```csharp
 // Before
@@ -913,7 +913,7 @@ End Function
 
 ### <a name="make-method-asynchronous"></a>將方法設為非同步
 
-在方法內使用 `await` 或 `Await` 關鍵字時，系統會為方法加上 `async` 或 `Async` 關鍵字標記。 但情況若非如此，系統會顯示快速動作，讓您可以將方法設為非同步。 使用 [快速動作] 功能表的 [將方法/函式設為非同步] 選項。
+在方法內使用 `await` 或 `Await` 關鍵字時，系統會為方法加上 `async` 或 `Async` 關鍵字標記。 但情況若非如此，系統會顯示快速動作，讓您可以將方法設為非同步。 使用 [快速動作] 功能表的 [將方法/函式設為非同步]  選項。
 
 ```csharp
 // Before

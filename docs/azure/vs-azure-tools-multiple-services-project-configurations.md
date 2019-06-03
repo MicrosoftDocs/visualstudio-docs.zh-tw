@@ -1,5 +1,5 @@
 ---
-title: 使用多個服務組態設定 Azure 專案 | Microsoft Docs
+title: 使用多個服務組態設定 Azure 專案
 description: 了解如何透過變更 ServiceDefinition.csdef、ServiceConfiguration.Local.cscfg 和 ServiceConfiguration.Cloud.cscfg 檔案來設定 Azure 雲端服務專案。
 author: ghogen
 manager: jillfra
@@ -9,12 +9,12 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 11/11/2017
 ms.author: ghogen
-ms.openlocfilehash: 853920ac30b6e779c94bf82aa6c655bf81146d2e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: dfb58c9eabb135b69033c065fa606511043a2c8b
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62555295"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66260643"
 ---
 # <a name="configuring-your-azure-project-in-visual-studio-to-use-multiple-service-configurations"></a>在 Visual Studio 中設定 Azure 專案，以便使用多個服務組態
 

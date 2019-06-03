@@ -36,7 +36,7 @@ ms.locfileid: "62561357"
  當您建立 Visual C# Office 專案時，主項目會根據專案名稱獲得命名空間。 建議您使用 [主項目命名空間]  屬性變更命名空間，不要直接編輯程式碼檔案。 當您使用這個屬性時，就會變更產生 (隱藏) 的程式碼檔案中的命名空間，可見的程式碼檔案也一樣。
 
 ## <a name="cacheindocument"></a>CacheInDocument
- 當您在 Visual Studio Designer 中選取 **的執行個體時，[CacheInDocument]屬性就會出現在文件層級專案的 [屬性]**<xref:System.Data.DataSet> 視窗中。 只能快取公用成員；如果想要快取 ，請確定 **[Modifiers]** 屬性設為 **[Public]**<xref:System.Data.DataSet>。
+ 當您在 Visual Studio Designer 中選取 **的執行個體時，[CacheInDocument]屬性就會出現在文件層級專案的 [屬性]** <xref:System.Data.DataSet> 視窗中。  只能快取公用成員；如果想要快取 ，請確定 **[Modifiers]** 屬性設為 **[Public]** <xref:System.Data.DataSet>。
 
  這個屬性接受布林值：
 
@@ -47,7 +47,7 @@ ms.locfileid: "62561357"
   如需有關快取資料的詳細資訊，請參閱 [快取文件層級自訂中的資料](../vsto/cached-data-in-document-level-customizations.md)。
 
 ## <a name="value2"></a>Value2
- [Value2]  屬性只適用於 Excel 活頁簿或範本專案。 當您選取工作表設計工具上的 **控制項時，它會出現在 [屬性]** **視窗的 [Databindings]**<xref:Microsoft.Office.Tools.Excel.NamedRange> 屬性節點下。
+ [Value2]  屬性只適用於 Excel 活頁簿或範本專案。 當您選取工作表設計工具上的 **控制項時，它會出現在 [屬性]** **視窗的 [Databindings]** <xref:Microsoft.Office.Tools.Excel.NamedRange> 屬性節點下。
 
  使用 [屬性]  視窗的 [Value2]  屬性，將 <xref:Microsoft.Office.Tools.Excel.NamedRange.Value2%2A> 的 <xref:Microsoft.Office.Tools.Excel.NamedRange> 屬性繫結至資料來源的欄位。
 

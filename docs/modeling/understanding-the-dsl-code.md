@@ -70,7 +70,7 @@ ms.locfileid: "63386711"
 
  (在元件方案範例中，其中一個連接產生器稱為 ConnectionBuilder，這是巧合，因為網域關聯性的名稱剛好是 Connection。)
 
- 在 建立關聯性*關聯性*`Builder.Connect()`方法。 預設版本驗證來源和目標模型項目是可接受的，然後再具現化關聯性。 例如: 
+ 在 建立關聯性*關聯性*`Builder.Connect()`方法。 預設版本驗證來源和目標模型項目是可接受的，然後再具現化關聯性。 例如:
 
  `CommentReferencesSubject(sourceAccepted, targetAccepted);`
 

@@ -63,7 +63,7 @@ ms.locfileid: "63426937"
   
 1. 在 **方案總管**下方**DslPackage**專案中，開啟 Commands.vsct。  
   
-2. 在 `Commands` 項目中，定義一或多個按鈕和群組。 A * 按鈕*是功能表中的項目。 A*群組*是功能表中的區段。 若要定義這些項目，請加入下列項目：  
+2. 在 `Commands` 項目中，定義一或多個按鈕和群組。 A  *按鈕*是功能表中的項目。 A*群組*是功能表中的區段。 若要定義這些項目，請加入下列項目：  
   
     ```  
     <!-- Define a group - a section in the menu -->  
@@ -143,12 +143,12 @@ ms.locfileid: "63426937"
   
 2. 找出 `ProvideMenuResource` 屬性。  
   
-3. 遞增屬性的 `version` 參數，這是第二個參數。 您可以依需要明確撰寫參數名稱以提醒您其用途。 例如:   
+3. 遞增屬性的 `version` 參數，這是第二個參數。 您可以依需要明確撰寫參數名稱以提醒您其用途。 例如:  
   
      `[VSShell::ProvideMenuResource("1000.ctmenu", version: 2 )]`  
   
 ## <a name="CommandSet"></a> 定義命令的行為  
- 您的 DSL 已經有一些命令，這些命令實作於 DslPackage\GeneratedCode\CommandSet.cs 中宣告的部分類別。 若要加入新的命令，您必須建立含有相同類別之部分宣告的新檔案，以擴充此類別。 類別的名稱通常是 *\<YourDslName >*`CommandSet`。 以驗證類別的名稱並檢查其內容開頭非常有用。  
+ 您的 DSL 已經有一些命令，這些命令實作於 DslPackage\GeneratedCode\CommandSet.cs 中宣告的部分類別。 若要加入新的命令，您必須建立含有相同類別之部分宣告的新檔案，以擴充此類別。 類別的名稱通常是 *\<YourDslName >* `CommandSet`。 以驗證類別的名稱並檢查其內容開頭非常有用。  
   
  命令集類別衍生自 <xref:Microsoft.VisualStudio.Modeling.Shell.CommandSet>。  
   
@@ -162,7 +162,7 @@ ms.locfileid: "63426937"
   
 2. 在  **DslPackage**，建立名為的資料夾**自訂程式碼**。 在此資料夾中，建立新的類別檔案，稱為`CommandSet.cs`。  
   
-3. 在新檔案中，撰寫具有與產生部分類別相同之命名空間和名稱的部分宣告。 例如:   
+3. 在新檔案中，撰寫具有與產生部分類別相同之命名空間和名稱的部分宣告。 例如:  
   
      `namespace Company.Language1 /* Make sure this is correct */`  
   

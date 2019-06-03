@@ -43,17 +43,17 @@ ms.locfileid: "62790550"
 
 1. 接著，執行下列其中一項操作：
 
-   - 在字行任何地方按 **Ctrl**+**.**， 以觸發 [快速動作與重構] 功能表。
+   - 在字行任何地方按 **Ctrl**+ **.** ， 以觸發 [快速動作與重構]  功能表。
 
-   - 以滑鼠右鍵按一下並選取 [快速動作與重構] 功能表。
+   - 以滑鼠右鍵按一下並選取 [快速動作與重構]  功能表。
 
    - 按一下 ![出現於左邊界的螺絲起子](../media/screwdriver-icon.png) 圖示。
 
    ![「產生覆寫」預覽](media/overrides-preview-cs.png)
 
-1. 從下拉式功能表選取 [產生 Equals(object)]或 [產生 Equals 和 GetHashCode]。
+1. 從下拉式功能表選取 [產生 Equals(object)]  或 [產生 Equals 和 GetHashCode]  。
 
-1. 在 [選取成員]對話方塊中，選取您想要產生方法的成員：
+1. 在 [選取成員]  對話方塊中，選取您想要產生方法的成員：
 
     ![[產生覆寫] 對話方塊](media/overrides-dialog-cs.png)
 

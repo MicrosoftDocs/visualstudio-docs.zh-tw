@@ -27,9 +27,9 @@ ms.locfileid: "65679533"
   
 ### <a name="to-run-your-program-and-set-the-background-color"></a>若要執行程式並設定背景色彩  
   
-1. 選擇 F5，或在功能表列上依序選擇 [偵錯] 和 [開始偵錯]。  
+1. 選擇 F5，或在功能表列上依序選擇 [偵錯]  和 [開始偵錯]  。  
   
-2. 在開啟圖片之前，請先選擇 [設定背景色彩] 按鈕。 [色彩] 對話方塊隨即開啟。  
+2. 在開啟圖片之前，請先選擇 [設定背景色彩]  按鈕。 [色彩]  對話方塊隨即開啟。  
   
      ![[色彩] 對話方塊](../ide/media/express-colordialog.png "Express_ColorDialog")  
 [色彩] 對話方塊  
@@ -37,9 +37,9 @@ ms.locfileid: "65679533"
 3. 選擇色彩以設定 PictureBox 背景色彩。 仔細查看 `backgroundButton_Click()` 方法以了解其運作方式。  
   
     > [!NOTE]
-    > 您可以將圖片的 URL 貼至 [開啟檔案] 對話方塊中，即可從網際網路載入圖片。 試著尋找透明背景的影像，以呈現您的背景色彩。  
+    > 您可以將圖片的 URL 貼至 [開啟檔案]  對話方塊中，即可從網際網路載入圖片。 試著尋找透明背景的影像，以呈現您的背景色彩。  
   
-4. 選擇 [清除圖片] 按鈕，確定將圖片清除。 然後，選擇 [關閉] 按鈕結束程式。  
+4. 選擇 [清除圖片]  按鈕，確定將圖片清除。 然後，選擇 [關閉]  按鈕結束程式。  
   
 ### <a name="to-try-other-features"></a>若要嘗試其他功能  
   
@@ -49,7 +49,7 @@ ms.locfileid: "65679533"
   
 - 變更表單的 **FormBorderStyle** 和 **ControlBox** 屬性。  
   
-- 使用表單的 **AcceptButton** 和 **CancelButton** 屬性，如此就會在使用者選擇 ENTER 或 ESC 鍵時，自動選擇這些按鈕。 讓程式在使用者選擇 ENTER 鍵時開啟 [開啟檔案] 對話方塊，以及在使用者選擇 ESC 鍵時關閉對話方塊。  
+- 使用表單的 **AcceptButton** 和 **CancelButton** 屬性，如此就會在使用者選擇 ENTER 或 ESC 鍵時，自動選擇這些按鈕。 讓程式在使用者選擇 ENTER 鍵時開啟 [開啟檔案]  對話方塊，以及在使用者選擇 ESC 鍵時關閉對話方塊。  
   
 ### <a name="to-continue-or-review"></a>若要繼續或檢視  
   

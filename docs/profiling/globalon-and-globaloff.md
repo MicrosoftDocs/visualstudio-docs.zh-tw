@@ -48,15 +48,15 @@ VSPerfCmd.exe {Launch:AppName|Attach:PID} /{GlobalOff|GlobalOn}[Options]
 ## <a name="valid-options"></a>有效選項
  您可以在也包含下列選項的命令列上指定 **GlobalOn** 和 **GlobalOff**。
 
- **Start:**`Method` 初始化命令列分析工具工作階段，並設定指定的分析方法。
+ **Start:** `Method` 初始化命令列分析工具工作階段，並設定指定的分析方法。
 
- **Launch:**`AppName` 啟動指定的應用程式，並使用取樣方法開始分析。
+ **Launch:** `AppName` 啟動指定的應用程式，並使用取樣方法開始分析。
 
- **Attach：**`PID` 開始對指定的處理序進行分析。
+ **Attach：** `PID` 開始對指定的處理序進行分析。
 
- {**ProcessOff**&#124;**ProcessOn**}**:**`PID`停止或開始對指定的處理序進行分析。
+ {**ProcessOff**&#124;**ProcessOn**} **:** `PID`停止或開始對指定的處理序進行分析。
 
- {**ThreadOff**&#124;**ThreadOn**}**:**`TID`停止或開始對指定的處理序進行分析 (僅檢測方法)。
+ {**ThreadOff**&#124;**ThreadOn**} **:** `TID`停止或開始對指定的處理序進行分析 (僅檢測方法)。
 
 ## <a name="example"></a>範例
  在此範例中，可使用 **GlobalOff** 和 **GlobalOn** 選項，避免收集應用程式啟動和關閉的分析資料。

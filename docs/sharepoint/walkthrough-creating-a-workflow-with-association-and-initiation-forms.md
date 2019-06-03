@@ -1,5 +1,5 @@
 ---
-title: 逐步解說：使用關聯與初始化表單建立工作流程 |Microsoft Docs
+title: 使用關聯和初始表單建立工作流程
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 08c63966528a2ae34d5a9d776ee111ecee96b22f
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: b64d1c9fbbd81a21ab268dfa29287895bd355197
+ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63430369"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66401160"
 ---
 # <a name="walkthrough-create-a-workflow-with-association-and-initiation-forms"></a>逐步解說：使用關聯與初始表單建立工作流程
   本逐步解說示範如何建立基本的循序工作流程，其中包含使用關聯與初始表單。 這是啟用參數加入至工作流程，以及使用者 （初始表單） 來啟動工作流程時先到 SharePoint 系統管理員 （關聯表單），相關聯的 ASPX 形式。
@@ -82,7 +82,7 @@ ms.locfileid: "63430369"
 
 6. 在 [ **方案總管**] 中選擇專案節點。
 
-7. 在功能表列中，選擇 [專案] > [加入新項目]。
+7. 在功能表列中，選擇 [專案]   > [加入新項目]  。
 
 8. 之下**Visual C#** 或**Visual Basic**，展開**SharePoint**  節點，然後選擇**2010年**節點。
 
@@ -90,7 +90,7 @@ ms.locfileid: "63430369"
 
      **SharePoint 自訂精靈**隨即出現。
 
-10. 在 **指定偵錯的工作流程名稱**頁面上，接受預設名稱 (**ExpenseReport-Workflow1**)。 保留預設流程範本類型值 (**清單工作流程)**。 選擇 [下一步] 按鈕。
+10. 在 **指定偵錯的工作流程名稱**頁面上，接受預設名稱 (**ExpenseReport-Workflow1**)。 保留預設流程範本類型值 (**清單工作流程)** 。 選擇 [下一步]  按鈕。
 
 11. 在 **您要自動建立工作流程關聯的偵錯工作階段中的 Visual Studio 嗎？** 頁面上，清除 自動將您的工作流程範本，若已核取方塊。
 

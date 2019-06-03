@@ -39,7 +39,7 @@ ms.locfileid: "63437661"
   
 2. 在 **檔案**功能表上，選擇**開啟**開啟您的應用程式部署資訊清單。  
   
-3. 選取 [部署選項] 索引標籤。  
+3. 選取 [部署選項]  索引標籤。  
   
 4. 在文字方塊中名為**啟動位置**，將會包含應用程式更新的部署資訊清單的目錄中輸入的 URL。  
   
@@ -49,7 +49,7 @@ ms.locfileid: "63437661"
   
 1. 開啟 [.NET Framework 命令提示字元]。  
   
-2. 設定使用下列命令更新的位置。 在此範例中， **HelloWorld.exe.application**是通往您[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]應用程式資訊清單，其一律.application 副檔名，和**http://adatum.com/Update/Path**是 URL 該[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]會檢查應用程式更新。  
+2. 設定使用下列命令更新的位置。 在此範例中， **HelloWorld.exe.application**是通往您[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]應用程式資訊清單，其一律.application 副檔名，和 **http://adatum.com/Update/Path** 是 URL 該[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]會檢查應用程式更新。  
   
      **Mage -Update HelloWorld.exe.application -ProviderUrl http://adatum.com/Update/Path**  
   

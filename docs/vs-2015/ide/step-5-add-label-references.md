@@ -11,7 +11,7 @@ ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 3f062b48edfbe87fb97d94b3ea852486f66a19d1
 ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/22/2019
 ms.locfileid: "60041869"
@@ -19,7 +19,7 @@ ms.locfileid: "60041869"
 # <a name="step-5-add-label-references"></a>步驟 5：新增標籤參考
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-程式需要追蹤玩家所選擇的 Label 控制項。 現在，程式會顯示玩家選擇的所有標籤。 但是，我們將要變更該行為。 在選擇第一個標籤之後，程式應該會顯示標籤的圖示。 在選擇第二個標籤之後，程式應該要短暫顯示這兩個圖示，然後再次隱藏這兩個圖示。 您的程式現在將會使用「參考變數」，追蹤第一次和第二次選擇的 Label 控制項。  
+程式需要追蹤玩家所選擇的 Label 控制項。 現在，程式會顯示玩家選擇的所有標籤。 但是，我們將要變更該行為。 在選擇第一個標籤之後，程式應該會顯示標籤的圖示。 在選擇第二個標籤之後，程式應該要短暫顯示這兩個圖示，然後再次隱藏這兩個圖示。 您的程式現在將會使用「參考變數」  ，追蹤第一次和第二次選擇的 Label 控制項。  
   
 ### <a name="to-add-label-references"></a>若要加入標籤參考  
   
@@ -32,7 +32,7 @@ ms.locfileid: "60041869"
   
      當變數未追蹤物件時，該變數會設為特殊的保留值：在 Visual C# 中為 `null`，而在 Visual Basic 中為 `Nothing`。 因此當程式啟動時，`firstClicked` 和 `secondClicked` 會設為 `null` 或 `Nothing`，這表示變數並未追蹤任何項目。  
   
-2. 修改 Click 事件處理常式，以使用新的 `firstClicked` 參考變數。 移除 `label_Click()` 事件處理常式方法 (`clickedLabel.ForeColor = Color.Black;`) 中的最後一個陳述式，並以後面的 `if` 陳述式取代  (請務必包含註解和整個 `if` 陳述式)。  
+2. 修改 Click 事件處理常式，以使用新的 `firstClicked` 參考變數。 移除 `label_Click()` 事件處理常式方法 (`clickedLabel.ForeColor = Color.Black;`) 中的最後一個陳述式，並以後面的 `if` 陳述式取代 (請務必包含註解和整個 `if` 陳述式)。  
   
      [!code-csharp[VbExpressTutorial4Step5#6](../snippets/csharp/VS_Snippets_VBCSharp/vbexpresstutorial4step5/cs/form1.cs#6)]
      [!code-vb[VbExpressTutorial4Step5#6](../snippets/visualbasic/VS_Snippets_VBCSharp/vbexpresstutorial4step5/vb/form1.vb#6)]  

@@ -1,5 +1,5 @@
 ---
-title: 工作流程設計工具-如何：將新項目新增至工作流程專案
+title: 工作流程設計工具：將新的項目加入至工作流程專案
 ms.date: 06/25/2018
 ms.topic: conceptual
 ms.assetid: 5c6180ca-af10-4513-b0cb-7d478fd84eab
@@ -8,14 +8,14 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6f0fb6c013e3df041e750344c09fb19f8c43b254
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 29e4c03eef2a276995890bbd6b723fa457aefde2
+ms.sourcegitcommit: ba5e072c9fedeff625a1332f22dcf3644d019f51
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62536969"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "66432030"
 ---
-# <a name="how-to-add-a-new-item-to-a-workflow-project"></a>HOW TO：將新的項目新增至工作流程專案
+# <a name="how-to-add-a-new-item-to-a-workflow-project"></a>作法：將新的項目新增至工作流程專案
 
 您已建立工作流程專案後，您可以將工作流程活動、 設計師和其他熟悉的 Visual Studio 項目新增至您的專案。
 
@@ -30,9 +30,9 @@ ms.locfileid: "62536969"
 
 ## <a name="to-add-a-new-item-to-a-workflow-project"></a>若要將新的項目加入至工作流程專案
 
-1. 在 [專案] 功能表中，選取 [新增新項目]。
+1. 在 [專案]  功能表中，選取 [新增新項目]  。
 
-   [新增項目] 對話方塊隨即開啟。
+   [新增項目]  對話方塊隨即開啟。
 
 1. 在左側窗格中，選取**工作流程**類別，然後再選取工作流程項目範本。
 

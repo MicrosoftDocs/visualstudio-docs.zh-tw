@@ -39,7 +39,7 @@ ms.locfileid: "63444226"
   
 1. 使用 [檔案]  功能表上的 [新增專案]  命令，在新的方案中建立專案。  
   
-2. 在 [新增專案]  對話方塊的 [模型專案] 底下，選取 [圖層設計工具命令擴充功能]  或 [圖層設計工具軌跡擴充功能] 。  
+2. 在 [新增專案]  對話方塊的 [模型專案]  底下，選取 [圖層設計工具命令擴充功能]  或 [圖層設計工具軌跡擴充功能]  。  
   
     此範本隨即建立包含小型工作範例的專案。  
   
@@ -55,33 +55,33 @@ ms.locfileid: "63444226"
   
     [定義軌跡處理常式](#gesture)  
   
-6. 主要執行個體中安裝擴充功能[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]，或其他電腦上，尋找 **.vsix**中的檔案*bin\\*。 將它複製到您要安裝它的電腦上，然後按兩下該檔案。 若要對其解除安裝，請使用 [工具]  功能表上的 [擴充功能和更新]  。  
+6. 主要執行個體中安裝擴充功能[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]，或其他電腦上，尋找 **.vsix**中的檔案*bin\\* 。 將它複製到您要安裝它的電腦上，然後按兩下該檔案。 若要對其解除安裝，請使用 [工具]  功能表上的 [擴充功能和更新]  。  
   
 ## <a name="adding-a-command-or-gesture-to-a-separate-vsix"></a>將命令或軌跡加入個別 VSIX  
  如果您想要建立包含命令、圖層驗證程式和其他擴充功能的單一 VSIX，建議您應建立單一專案來定義此 VSIX，並且針對此處理常式建立個別專案。 如需其他類型的模型擴充功能資訊，請參閱[擴充 UML 模型和圖表](../modeling/extend-uml-models-and-diagrams.md)。  
   
 #### <a name="to-add-layer-extensions-to-a-separate-vsix"></a>將圖層擴充功能加入個別 VSIX  
   
-1. 在新的或現有的 Visual Studio 方案中建立類別庫專案。 在 [新增專案]  對話方塊中，按一下 [Visual C#]  ，然後按一下 [類別庫] 。 這個專案將會包含命令或軌跡處理常式類別。  
+1. 在新的或現有的 Visual Studio 方案中建立類別庫專案。 在 [新增專案]  對話方塊中，按一下 [Visual C#]  ，然後按一下 [類別庫]  。 這個專案將會包含命令或軌跡處理常式類別。  
   
     > [!NOTE]
     > 雖然您可以在單一類別庫中定義多個命令或軌跡處理常式類別，不過您應該在個別的類別庫中定義圖層驗證類別。  
   
 2. 在您的方案中識別或建立 VSIX 專案。 VSIX 專案會包含名為 **source.extension.vsixmanifest**的檔案。 若要加入 VSIX 專案：  
   
-    1. 在 [新增專案]  對話方塊中，展開 [Visual C#] 、按一下 [擴充性] ，然後按一下 [VSIX 專案] 。  
+    1. 在 [新增專案]  對話方塊中，展開 [Visual C#]  、按一下 [擴充性]  ，然後按一下 [VSIX 專案]  。  
   
-    2. 在 [方案總管] 中，以滑鼠右鍵按一下此 VSIX 專案，然後按一下 [設定為啟始專案] 。  
+    2. 在 [方案總管] 中，以滑鼠右鍵按一下此 VSIX 專案，然後按一下 [設定為啟始專案]  。  
   
     3. 按一下 [選取版本]  並確定已核取 [Visual Studio]  。  
   
-3. 在 **source.extension.vsixmanifest**的 [資產] 底下，加入命令或軌跡處理常式專案做為 MEF 元件。  
+3. 在 **source.extension.vsixmanifest**的 [資產]  底下，加入命令或軌跡處理常式專案做為 MEF 元件。  
   
-    1. 在 [資產] 索引標籤中，選擇 [新增] 。  
+    1. 在 [資產]  索引標籤中，選擇 [新增]  。  
   
-    2. 在 [類型] 選取 [Microsoft.VisualStudio.MefComponent] 。  
+    2. 在 [類型]  選取 [Microsoft.VisualStudio.MefComponent]  。  
   
-    3. 在 [來源] 選取 [目前方案中的專案]  ，然後選取命令或軌跡處理常式專案的名稱。  
+    3. 在 [來源]  選取 [目前方案中的專案]  ，然後選取命令或軌跡處理常式專案的名稱。  
   
     4. 儲存檔案。  
   
@@ -247,7 +247,7 @@ namespace MyLayerExtensions // change to your preference
   
    **OnDragDrop** - 當使用者將項目置放到此圖表上時受呼叫。  
   
-- 每個方法的第一個引數是 `IShape`，您可以從這裡取得此圖層項目。 例如:   
+- 每個方法的第一個引數是 `IShape`，您可以從這裡取得此圖層項目。 例如:  
   
   ```  
   public void OnDragDrop(IShape target, IDataObject data)  

@@ -43,7 +43,7 @@ ms.locfileid: "62967392"
 ## <a name="identifiers-for-sharepoint-project-items"></a>SharePoint 專案項目識別碼
  每個 SharePoint 專案項目有對應的字串識別項。 您必須知道專案項目的識別碼，如果您想要執行下列工作：
 
-- 建立專案項目的延伸模組。 在此情況下，您必須傳遞您想要擴充的建構函式的專案項目識別碼<xref:Microsoft.VisualStudio.SharePoint.SharePointProjectItemTypeAttribute>。 若要針對所有專案項目類型，請建立擴充功能，傳遞**\\*** 字串值。
+- 建立專案項目的延伸模組。 在此情況下，您必須傳遞您想要擴充的建構函式的專案項目識別碼<xref:Microsoft.VisualStudio.SharePoint.SharePointProjectItemTypeAttribute>。 若要針對所有專案項目類型，請建立擴充功能，傳遞 **\\** * 字串值。
 
 - 以程式設計方式將專案項目加入至專案。 在此情況下，您必須傳遞的專案項目識別碼<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemCollection.Add%2A>方法。
 
