@@ -84,18 +84,18 @@ ms.locfileid: "63440378"
 
 |Excel|字組|
 |-----------|----------|
-|Excel 活頁簿 (*.xlsx*)<br /><br /> Excel 啟用巨集的活頁簿 (*.xlsm*)<br /><br /> Excel 二進位活頁簿 (*.xlsb*)<br /><br /> Excel 97-2003 活頁簿 (*.xls*)<br /><br /> Excel 範本 (*.xltx*)<br /><br /> Excel 啟用巨集的範本 (*.xltm*)<br /><br /> Excel 97-2003 範本 (*.xlt*)|Word 文件 (*.docx*)<br /><br /> Word 啟用巨集文件 (*.docm*)<br /><br /> Word 97-2003 文件 (*.doc*)<br /><br /> Word 範本 (*.dotx*)<br /><br /> Word 啟用巨集的範本 (*.dotm*)<br /><br /> Word 97-2003 範本 (*.dot*)|
+|Excel 活頁簿 ( *.xlsx*)<br /><br /> Excel 啟用巨集的活頁簿 ( *.xlsm*)<br /><br /> Excel 二進位活頁簿 ( *.xlsb*)<br /><br /> Excel 97-2003 活頁簿 ( *.xls*)<br /><br /> Excel 範本 ( *.xltx*)<br /><br /> Excel 啟用巨集的範本 ( *.xltm*)<br /><br /> Excel 97-2003 範本 ( *.xlt*)|Word 文件 ( *.docx*)<br /><br /> Word 啟用巨集文件 ( *.docm*)<br /><br /> Word 97-2003 文件 ( *.doc*)<br /><br /> Word 範本 ( *.dotx*)<br /><br /> Word 啟用巨集的範本 ( *.dotm*)<br /><br /> Word 97-2003 範本 ( *.dot*)|
 
- 您只能以支援的格式為文件設計 Managed 程式碼擴充。 否則，當文件在應用程式中開啟時，可能無法引發特定事件。 例如，<xref:Microsoft.Office.Tools.Excel.Workbook.Open>當您使用 managed 程式碼擴充功能與儲存於 Excel XML 試算表格式或網頁上的活頁簿時，不會引發事件 (*.htm*;*.html*) 格式。
+ 您只能以支援的格式為文件設計 Managed 程式碼擴充。 否則，當文件在應用程式中開啟時，可能無法引發特定事件。 例如，<xref:Microsoft.Office.Tools.Excel.Workbook.Open>當您使用 managed 程式碼擴充功能與儲存於 Excel XML 試算表格式或網頁上的活頁簿時，不會引發事件 ( *.htm*; *.html*) 格式。
 
 ### <a name="support-for-word-documents-that-have-xml-file-name-extensions"></a>支援具有.xml 副檔名的 Word 文件
  文件層級專案範本不允許您建立以下列檔案格式為基礎的專案：
 
-- Word XML 文件 (*\*xml*)。
+- Word XML 文件 ( *\*xml*)。
 
-- Word 2003 XML 文件 (*\*xml*)。
+- Word 2003 XML 文件 ( *\*xml*)。
 
-  如果您希望使用者使用這些檔案格式的自訂，請將自訂建置和部署為使用上表指定的其中一個支援的檔案格式。 安裝自訂之後, 使用者可以在 Word XML 文件中儲存文件 (*\*xml*) 格式或 Word 2003 XML 文件 (*\*xml*) 格式，而自訂將會繼續如預期般運作。
+  如果您希望使用者使用這些檔案格式的自訂，請將自訂建置和部署為使用上表指定的其中一個支援的檔案格式。 安裝自訂之後, 使用者可以在 Word XML 文件中儲存文件 ( *\*xml*) 格式或 Word 2003 XML 文件 ( *\*xml*) 格式，而自訂將會繼續如預期般運作。
 
 ## <a name="Components"></a> 自訂的元件
  自訂的主要元件是文件和組件。 除了這些元件之外，還有其他數個組件在 Microsoft Office 應用程式探索和載入自訂的方式中扮演重要角色。
@@ -139,7 +139,7 @@ ms.locfileid: "63440378"
 
 8. [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] 會將自訂組件載入至此應用程式定義域中。
 
-9.  [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] 呼叫自訂組件中的 **Startup** 事件處理常式。 如需詳細資訊，請參閱[Office 專案中的事件](../vsto/events-in-office-projects.md)
+9. [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] 呼叫自訂組件中的 **Startup** 事件處理常式。 如需詳細資訊，請參閱[Office 專案中的事件](../vsto/events-in-office-projects.md)
 
 ## <a name="see-also"></a>另請參閱
 - [在 Visual Studio 中的 Office 方案的架構](../vsto/architecture-of-office-solutions-in-visual-studio.md)
