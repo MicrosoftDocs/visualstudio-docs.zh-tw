@@ -7,12 +7,12 @@ ms.date: 09/19/2018
 ms.topic: conceptual
 description: 了解如何以 Visual Studio 訂閱者的身分使用 Azure DevOps。
 searchscope: VS Subscription
-ms.openlocfilehash: 9c10a8ec7e8ec71bee29f707e9abb8eb43f2b3c3
-ms.sourcegitcommit: bd519d1da375e374016f94a44c295d3253f61a8c
+ms.openlocfilehash: dbd08914123455fe0fc9db6dd6927dfe9e49b22e
+ms.sourcegitcommit: 13ab9a5ab039b070b9cd9251d0b83dd216477203
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "64945151"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66177715"
 ---
 # <a name="azure-devops-benefits-for-visual-studio-subscribers"></a>Visual Studio 訂閱者的 Azure DevOps 權益
 
@@ -26,12 +26,16 @@ ms.locfileid: "64945151"
 
 | 訂用帳戶層級                                                 |     通道                                            | 優勢                                                          | 可續約？    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
-| Visual Studio Enterprise (標準、每月雲端)   | VL, Azure, 零售, 選取的 NFR<sup>1</sup>, FTE  | Azure Boards & Repos (Basic)、Azure Test Plans、Azure Artifacts、Azure Pipelines (自我裝載)       |  是          |
-| Visual Studio Professional (標準、每月雲端) | VL, Azure, 零售,                                        | Azure Boards & Repos (基本)                                                            |  是          |
+| Visual Studio Enterprise (標準、每月雲端)   | VL, Azure, 零售, 選取的 NFR<sup>1</sup>, FTE  | Azure Boards & Repos (基本)、Azure Test Plans、Azure Artifacts<sup>2</sup>、Azure Pipelines (自我裝載)       |  是          |
+| Visual Studio Professional (標準、每月雲端) | VL, Azure, 零售,                                        | Azure Boards & Repos (基本)、Azure Artifacts<sup>2</sup>                                                            |  是          |
 | Visual Studio Test Professional (標準訂用帳戶)                         | VL, 零售                                              | Azure Boards & Repos (基本)、Azure Test Plans                                              |  是          |
 | MSDN 平台 (標準)                                          | VL, 零售                                              | Azure Boards & Repos (基本)、Azure Test Plans                                              |  是          |
 
 <sup>1</sup>  *包含：禁止轉售 (NFR)、最有價值專家 (MVP)、區域經理 (RD)、Visual Studio 產業夥伴 (VSIP)、Microsoft 合作夥伴網路 (企業版)、BizSpark、MCT 軟體與服務開發人員。排除：MCT Software & Services、Imagine。*
+
+<sup>2</sup> 免費包含 2GB
+
+
 
 > [!NOTE]
 > Microsoft 不再於雲端訂用帳戶中提供 Visual Studio Professional 年度訂用帳戶和 Visual Studio Enterprise 年度訂用帳戶。 現有的客戶體驗，以及更新、增加、減少或取消其訂用帳戶的能力將不會改變。 我們鼓勵新的客戶移至 [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) 來探索 Visual Studio 的不同購買選項。

@@ -7,12 +7,12 @@ ms.date: 12/19/2018
 ms.topic: conceptual
 description: 每月或每年租 Visual Studio Professional 或 Visual Studio Enterprise，沒有長期合約。
 searchscope: VS Subscription
-ms.openlocfilehash: 5927078aaf4001f569af9aafbc57575cf92fc980
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 1b704b6180937d3a1b937b702fad4a2e564d93c6
+ms.sourcegitcommit: 13ab9a5ab039b070b9cd9251d0b83dd216477203
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65679320"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66177570"
 ---
 # <a name="buy-visual-studio-professional-and-visual-studio-enterprise-cloud-subscriptions"></a>購買 Visual Studio Professional 和 Visual Studio Enterprise 雲端訂用帳戶
 
@@ -96,11 +96,14 @@ ms.locfileid: "65679320"
 #### <a name="q--do-i-need-to-do-anything-as-a-result-of-these-changes"></a>問：我需要基於這些變更採取任何動作嗎？
 答：否。  您的訂用帳戶會保持不變，而且您可以如往常般進行管理。
 
-#### <a name="q-what-if-i-want-to-increase-the-number-of-subscriptions-my-company-owns"></a>問：如果我想要增加公司擁有的訂用帳戶數目，該怎麼辦？
-答：您的系統管理員仍可增加訂用帳戶數目，只要瀏覽 [https://manage.visualstudio.com](https://manage.visualstudio.com) 並遵循這篇文章中的指示增加訂用帳戶計數。
+#### <a name="q-what-if-i-want-to-increase-the-number-of-subscriptions-for-my-customers"></a>問：如果我想要增加客戶的訂用帳戶數目，該怎麼辦？
 
-#### <a name="q-what-if-i-want-to-decrease-the-number-of-subscriptions-my-company-owns"></a>問：如果我想要減少公司擁有的訂用帳戶數目，該怎麼辦？
-答：您的系統管理員仍可減少訂用帳戶數目，只要瀏覽 [https://manage.visualstudio.com](https://manage.visualstudio.com) 並遵循這篇文章中的指示減少訂用帳戶計數。
+答：對於在指定月份購買的年度訂用帳戶，我們會立即收取全年的費用，有效期為一整年。 基於此原因，您的系統管理員只能在目前購買月份修改授權數目 (有效期為 1 年，並收取 1 年的費用)。 過了購買月份後，即無法再增加訂用帳戶數目。
+
+#### <a name="q-what-if-i-want-to-decrease-the-number-of-subscriptions-for-my-customers"></a>問：如果我想要減少客戶的訂用帳戶數目，該怎麼辦？
+
+答：您的系統管理員仍可減少訂用帳戶數目，方法是造訪 https://manage.visualstudio.com 並遵循這篇文章中的指示減少訂用帳戶計數。 系統將*不會*產生按比例計算的信用額度。 如需辦理退款，您必須連絡 Azure 帳單小組。
+
 
 #### <a name="q-if-i-cancel-my-subscription-will-i-be-able-to-buy-another-annual-cloud-subscription-later"></a>問：如果我取消訂用帳戶，稍後是否可以購買其他年度雲端訂用帳戶？
 答：雖然您無法購買其他年度雲端訂用帳戶，但還有許多購買 Visual Studio 訂用帳戶的選項。  若要深入了解，請參閱 [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/)。

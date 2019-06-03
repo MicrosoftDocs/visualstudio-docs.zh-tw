@@ -1,5 +1,5 @@
 ---
-title: HOW TO：使用 MSBuild.exe 在方案中建置特定目標 | Microsoft Docs
+title: 使用 MSBuild.exe 在方案中建置特定目標
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,14 +12,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 53ce05490ac46d7a4f01010e5709364f5d35222d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 34c04d12ccc17424a2f938c04751d4e3d4c9f05f
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62977263"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66263782"
 ---
-# <a name="how-to-build-specific-targets-in-solutions-by-using-msbuildexe"></a>HOW TO：使用 MSBuild.exe 在方案中建置特定目標
+# <a name="how-to-build-specific-targets-in-solutions-by-using-msbuildexe"></a>作法：使用 MSBuild.exe 在方案中建置特定目標
 您可以使用 *MSBuild.exe*，在方案中建置特定專案的特定目標。
 
 #### <a name="to-build-a-specific-target-of-a-specific-project-in-a-solution"></a>在方案中建置特定專案的特定目標

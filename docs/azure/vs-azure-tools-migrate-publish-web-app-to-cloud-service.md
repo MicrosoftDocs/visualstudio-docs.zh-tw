@@ -1,22 +1,20 @@
 ---
-title: 如何將 Web 應用程式移轉並發佈到 Azure 雲端服務
+title: 將 Web 應用程式移轉並發佈至 Azure 雲端服務
 description: 了解如何使用 Visual Studio 將 Web 應用程式移轉並發佈至 Azure 雲端服務
 author: ghogen
 manager: jillfra
 ms.assetid: 9394adfd-a645-4664-9354-dd5df08e8c91
-ms.prod: visual-studio-dev14
-ms.technology: vs-azure
-ms.custom: vs-azure
+ms.custom: seodec18
 ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 11/10/2017
 ms.author: ghogen
-ms.openlocfilehash: aa0af441071c90ca42d7aa7169c75803bebeb255
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3ca6fd7461ac928751192a18b00f255d7bad2a30
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62551376"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66260609"
 ---
 # <a name="how-to-migrate-and-publish-a-web-application-to-an-azure-cloud-service-from-visual-studio"></a>作法：從 Visual Studio 將 Web 應用程式移轉及發佈到 Azure 雲端服務
 
@@ -92,13 +90,17 @@ ms.locfileid: "62551376"
 1. 使用下列格式，在 `web.config` 檔案中指定連接字串，並儲存檔案：
 
     ```xml
-    <addname="tempdbEntities"connectionString="metadata=res://*/Model1.csdl|res://*/Model1.ssdl|res://*/Model1.msl;provider=System.Data.SqlClient;provider connection string=&quot;data source=<server name>\SQLEXPRESS;initial catalog=<database name>;integrated security=True;multipleactiveresultsets=True;App=EntityFramework&quot;"providerName="System.Data.EntityClient"/>
+    <add name="tempdbEntities"
+     connectionString="metadata=res://*/Model1.csdl|res://*/Model1.ssdl|res://*/Model1.msl;provider=System.Data.SqlClient;provider connection string=&quot;data source=<server name>\SQLEXPRESS;initial catalog=<database name>;integrated security=True;multipleactiveresultsets=True;App=EntityFramework&quot;"
+     providerName="System.Data.EntityClient"/>
     ```
 
     使用 SQL Azure 資料庫的 ADO.NET 連接字串更新 *connectionString* 值，如下所示：
 
     ```xml
-    XMLCopy<addname="tempdbEntities"connectionString="metadata=res://*/Model1.csdl|res://*/Model1.ssdl|res://*/Model1.msl;provider=System.Data.SqlClient;provider connection string=&quot;Server=tcp:<SQL Azure server name>.database.windows.net,1433;Database=<database name>;User ID=<user name>;Password=<password>;Trusted_Connection=False;Encrypt=True;multipleactiveresultsets=True;App=EntityFramework&quot;"providerName="System.Data.EntityClient"/>
+    <add name="tempdbEntities"
+     connectionString="metadata=res://*/Model1.csdl|res://*/Model1.ssdl|res://*/Model1.msl;provider=System.Data.SqlClient;provider connection string=&quot;Server=tcp:<SQL Azure server name>.database.windows.net,1433;Database=<database name>;User ID=<user name>;Password=<password>;Trusted_Connection=False;Encrypt=True;multipleactiveresultsets=True;App=EntityFramework&quot;"
+     providerName="System.Data.EntityClient"/>
     ```
 
 ## <a name="supported-project-templates"></a>支援的專案範本

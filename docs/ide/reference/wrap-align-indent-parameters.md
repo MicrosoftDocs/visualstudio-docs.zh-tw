@@ -10,14 +10,14 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 9c17d5c9d6874c836954941e1fccd8ce9d9f2e3a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ccdf29e3a4cda2bf5d527a2b712878c1fbd76197
+ms.sourcegitcommit: cd21b38eefdea2cdefb53e68e7a30b868e78dd6b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62789045"
+ms.lasthandoff: 05/22/2019
+ms.locfileid: "66037588"
 ---
-# <a name="wrap-indent-and-align-parameters"></a>使參數換行、縮排及對齊
+# <a name="wrap-indent-and-align-parameters-or-arguments"></a>將參數或引數換行、縮排或對齊
 
 此重構適用於：
 
@@ -25,11 +25,11 @@ ms.locfileid: "62789045"
 
 - Visual Basic
 
-**功能：** 使參數換行、縮排及對齊。
+**功能：** 讓您將參數或引數換行、縮排或對齊。
 
-**時機：** 您有具多個參數的方法宣告或呼叫。
+**時機：** 您有具多個參數或引數的方法宣告或呼叫。
 
-**原因：** 當一長串參數依照使用者想要的方式換行或縮排後，閱讀起來會更加輕鬆。
+**原因：** 在將一長串參數或引數依照使用者想要的方式換行或縮排後，閱讀起來會更加輕鬆。
 
 ## <a name="how-to"></a>操作說明
 

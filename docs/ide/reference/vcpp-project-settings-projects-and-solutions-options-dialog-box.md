@@ -1,5 +1,5 @@
 ---
-title: 選項對話方塊、專案和方案、VC++ 專案設定
+title: C++ 專案設定選項
 ms.date: 08/02/2017
 ms.topic: reference
 f1_keywords:
@@ -18,12 +18,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 2d3f81659930f75cda3c4ec0873837f7486e8b60
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 186db68e9b69b98a9fe9d9a2a8c8941302304cb2
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62789315"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66263082"
 ---
 # <a name="vc-project-settings-projects-and-solutions-options-dialog-box"></a>選項對話方塊、專案和方案、VC++ 專案設定
 此對話方塊可讓您定義與記錄、效能和支援檔案類型相關的 [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] 組建和專案設定。

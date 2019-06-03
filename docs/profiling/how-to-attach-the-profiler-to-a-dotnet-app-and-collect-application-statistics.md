@@ -1,5 +1,5 @@
 ---
-title: 將分析工具附加至 .NET Framework 獨立應用程式並收集應用程式統計資料
+title: 將分析工具附加至 .NET Framework 獨立應用程式；取得應用程式統計資料
 ms.custom: seodec18
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -9,14 +9,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 1a667c259c6cd924c0ff698a47858c08d0f7cf42
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: c23fe867c3825958f1e2f1c3b7fedc3dd15d840e
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63431552"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66261599"
 ---
-# <a name="how-to-attach-the-profiler-to-a-net-framework-stand-alone-application-and-collect-application-statistics-by-using-the-command-line"></a>HOW TO：使用命令列將分析工具附加至 .NET Framework 獨立應用程式並收集應用程式統計資料
+# <a name="how-to-attach-the-profiler-to-a-net-framework-stand-alone-application-and-collect-application-statistics-by-using-the-command-line"></a>作法：使用命令列將分析工具附加至 .NET Framework 獨立應用程式並收集應用程式統計資料
 本文描述如何使用 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 分析工具命令列工具將分析工具附加到執行中的 .NET Framework 獨立 (用戶端) 應用程式，並使用取樣方法收集效能統計資料。
 
 > [!NOTE]

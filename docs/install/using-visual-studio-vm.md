@@ -2,7 +2,7 @@
 title: 在 Azure 虛擬機器上使用 Visual Studio
 titleSuffix: ''
 description: 了解如何在 Azure 虛擬機器上使用 Visual Studio
-ms.date: 04/02/2019
+ms.date: 05/23/2019
 ms.custom: seodec18
 ms.topic: conceptual
 helpviewer_keywords:
@@ -17,16 +17,16 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 41619e780d02f20fc21bd2b51cc0b0a3eede90fd
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c5be3874271ad62fcbf79437c2efd9cec56f28b5
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62951488"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66210799"
 ---
 # <a id="top"> </a> Azure 上的 Visual Studio 映像
 
-若要從無到有地建立開發環境，在預先設定的 Azure 虛擬機器 (VM) 中使用 Visual Studio，是既簡單又快速的方法。 您可以在 [Azure Marketplace](https://azuremarketplace.microsoft.com/marketplace/apps?search=%22visual%20studio%202017%22&page=1) 中取得具有不同 Visual Studio 設定的系統映像。
+若要從無到有地建立開發環境，在預先設定的 Azure 虛擬機器 (VM) 中使用 Visual Studio，是既簡單又快速的方法。 您可以在 [Azure Marketplace](https://azuremarketplace.microsoft.com/marketplace/apps/category/compute?filters=virtual-machine-images%3Bmicrosoft%3Bwindows&page=1&subcategories=application-infrastructure) 中取得具有不同 Visual Studio 設定的系統映像。
 
 第一次使用 Azure 嗎？ [建立免費的 Azure 帳戶](https://azure.microsoft.com/free)。
 
@@ -34,13 +34,13 @@ ms.locfileid: "62951488"
 
 您可以在 Azure Marketplace 中找到最新的主要版本映像：Visual Studio 2019、Visual Studio 2017 和 Visual Studio 2015。  針對每個已發行的主要版本，您都會看見原始「發行至網站」(RTW) 的版本及最新更新版本。  這些版本每個都會提供 Visual Studio Enterprise 和 Visual Studio Community 版本。  這些映像每個月至少都會更新一次，以包含最新的 Visual Studio 和 Windows 更新。  雖然映像名稱保持相同，但每個映像的描述都包含安裝的產品版本和映像的「起自」日期。
 
-| 發行版本                                              | 版本                     |     產品版本      |
-|:------------------------------------------------------------:|:----------------------------:|:------------------------:|
-|       Visual Studio 2019：RTW                                |    Enterprise、Community     |      16.0.0 版      |
-| Visual Studio 2017：最新版本 (版本 15.9)                    |    Enterprise、Community     |      15.9.10 版     |
-|         Visual Studio 2017：RTW                              |    Enterprise、Community     |      15.0.22 版     |
-|   Visual Studio 2015：最新版本 (Update 3)                      |    Enterprise、Community     |  14.0.25431.01 版   |
-|         Visual Studio 2015：RTW                              |             無             | (維護已過期)  |
+| 發行版本                                                                                                                                          | 版本              |    產品版本    |
+|:--------------------------------------------------------------------------------------------------------------------------------------------------------:|:---------------------:|:-----------------------:|
+| [Visual Studio 2019：最新版本 (16.1 版)](https://azuremarketplace.microsoft.com/marketplace/apps/microsoftvisualstudio.visualstudio2019latest?tab=Overview) \(英文\) | Enterprise、Community | 16.1.0 版    |
+| [Visual Studio 2019：RTW](https://azuremarketplace.microsoft.com/marketplace/apps/microsoftvisualstudio.visualstudio2019?tab=Overview) \(英文\)                         | Enterprise、Community | 16.0.4 版    |
+| [Visual Studio 2017：最新版本 (15.9 版)](https://azuremarketplace.microsoft.com/marketplace/apps/microsoftvisualstudio.visualstudio?tab=Overview) \(英文\)           | Enterprise、Community | 15.9.12 版   |
+| [Visual Studio 2017：RTW](https://azuremarketplace.microsoft.com/marketplace/apps/microsoftvisualstudio.visualstudio?tab=Overview) \(英文\)                             | Enterprise、Community | 15.0.23 版   |
+| [Visual Studio 2015：最新版本 (Update 3)](https://azuremarketplace.microsoft.com/marketplace/apps/microsoftvisualstudio.visualstudio?tab=Overview) \(英文\)               | Enterprise、Community | 14.0.25431.01 版 |
 
 > [!NOTE]
 > 根據 Microsoft 維護原則，Visual Studio 2015 的原始發行 (RTW) 版本的維護已過期。 Visual Studio 2015 Update 3 是 Visual Studio 2015 產品線剩下唯一提供的版本。

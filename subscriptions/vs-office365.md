@@ -7,26 +7,26 @@ ms.date: 12/19/2018
 ms.topic: conceptual
 description: 了解某些 Visual Studio 訂用帳戶中所含的 Office 365 權益。
 searchscope: VS Subscription
-ms.openlocfilehash: 9f3df6923101bf5b8b4a2592460e96b57416c1c8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 41f30d01dab1adf98d50789c4ebd418a7f002fb8
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62947393"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66263118"
 ---
-# <a name="office-365-pro-plus-in-visual-studio-subscriptions"></a>Visual Studio 訂用帳戶中的 Office 365 Pro Plus
+# <a name="office-365-proplus-in-visual-studio-subscriptions"></a>Visual Studio 訂用帳戶中的 Office 365 專業增強版
 
-建立您最好的作品。 使用永遠都會更新的應用程式在任何地方工作。 Office 365 Pro Plus 是一個進階應用程式 (例如 Word、Excel、PowerPoint、OneNote、Outlook、Publisher 及 Access) 隨附的訂用帳戶 (Publisher 與 Access 只能在 PC 上使用)。 應用程式可以安裝在多部裝置上，包括電腦、Mac、iPad、iPhone、Android 平板電腦與 Android 手機。 Office 365 也隨附許多服務 (例如 1TB 的 OneDrive 儲存空間、每個月 60 分鐘 Skype，以及 Microsoft 聊天和電話支援)。 擁有訂用帳戶，您就可以取得最新版的應用程式，並且在有更新時自動收到更新。
+建立您最好的作品。 使用永遠都會更新的應用程式在任何地方工作。 Office 365 專業增強版是包含 Word、Excel、PowerPoint、OneNote、Outlook、Publisher 及 Access (Publisher 與 Access 僅於 PC 上提供) 等優質應用程式的訂閱服務。 應用程式可以安裝在多部裝置上，包括電腦、Mac、iPad、iPhone、Android 平板電腦與 Android 手機。 Office 365 也隨附許多服務 (例如 1TB 的 OneDrive 儲存空間、每個月 60 分鐘 Skype，以及 Microsoft 聊天和電話支援)。 擁有訂用帳戶，您就可以取得最新版的應用程式，並且在有更新時自動收到更新。
 
-## <a name="getting-started-with-office-365-pro-plus"></a>開始使用 Office 365 Pro Plus
+## <a name="getting-started-with-office-365-proplus"></a>開始使用 Office 365 專業增強版
 
-遵循下列步驟下載並啟用 Office 365 Pro Plus：
+遵循下列步驟以下載並啟用 Office 365 專業增強版：
 1. 登入您的 Visual Studio Enterprise 訂用帳戶。
 2. 按一下 [下載] 索引標籤。
 3. 您會看到一份精選下載的清單。 在 Office 清單中，選擇 **Office 365**。
    > [!div class="mx-imgBorder"]
    > ![Office 365 下載](_img/vs-office365/vs-office365-downloads.png)
-0. 若要安裝 Office 365，您需要產品金鑰。  按一下 Office 365 清單下的 [取得金鑰] 連結。
+0. 若要安裝 Office 365 專業增強版，您需要產品金鑰。  按一下 Office 365 清單下的 [取得金鑰] 連結。
    > [!div class="mx-imgBorder"]
    > ![Office 365 取得產品金鑰](_img/vs-office365/vs-office365-get-key.png)
 0. 飛出視窗會顯示您已領取的任何金鑰，以及您可以使用的金鑰。  若要取得新的金鑰，請按一下 [Office Professional Plus 2019] 清單下的 [領取金鑰]。

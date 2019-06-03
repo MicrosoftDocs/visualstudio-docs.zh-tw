@@ -1,5 +1,5 @@
 ---
-title: HOW TO：使用命令列以分析工具啟動獨立應用程式並收集應用程式統計資料 | Microsoft Docs
+title: 分析工具命令列：啟動獨立應用程式、取得應用程式統計資料
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 52dcee2b-f178-4a76-bddc-e36c50bfcb78
@@ -8,14 +8,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0d5938adc51b2d89b0402e28bb5112158b07e378
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: c2544e2a9951fe6738b85b3bf9b9c31e69f2eb9b
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63386950"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66261359"
 ---
-# <a name="how-to-launch-a-stand-alone-application-with-the-profiler-and-collect-application-statistics-by-using-the-command-line"></a>HOW TO：使用命令列以分析工具啟動獨立應用程式並收集應用程式統計資料
+# <a name="how-to-launch-a-stand-alone-application-with-the-profiler-and-collect-application-statistics-by-using-the-command-line"></a>作法：使用命令列以分析工具啟動獨立應用程式並收集應用程式統計資料
 本主題描述如何使用 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 程式碼剖析工具命令列工具啟動獨立的 (用戶端) 應用程式，並使用取樣方法收集效能統計資料。
 
 > [!NOTE]

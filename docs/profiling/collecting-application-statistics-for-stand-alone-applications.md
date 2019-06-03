@@ -1,5 +1,5 @@
 ---
-title: 使用分析工具命令列收集獨立應用程式的應用程式統計資料 | Microsoft Docs
+title: 使用分析工具命令列來收集獨立應用程式的統計資料
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 233934f9206e71a4051dbbcd17efc6001656ddfe
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 78dbda79e4bff6aaaf5c98ca6c92487c98781d39
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63440228"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66263445"
 ---
 # <a name="collect-application-statistics-for-stand-alone-applications-by-using-the-profiler-command-line"></a>使用分析工具命令列收集獨立應用程式的應用程式統計資料
 本節說明從命令列使用取樣方法收集用戶端 (獨立) 應用程式之效能統計資料的程序和選項。

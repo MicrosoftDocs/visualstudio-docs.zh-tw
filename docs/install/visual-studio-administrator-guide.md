@@ -17,12 +17,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: b89f8415d34a4facaca694db8507c911d279bf8f
-ms.sourcegitcommit: 92a04c57ac0a49f304fa2ea5043436f30068c3cd
+ms.openlocfilehash: 61b3a2dfae667bac7c3a6a62682cdbd5b1a5feb4
+ms.sourcegitcommit: cd21b38eefdea2cdefb53e68e7a30b868e78dd6b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/21/2019
-ms.locfileid: "65976123"
+ms.lasthandoff: 05/22/2019
+ms.locfileid: "66037500"
 ---
 # <a name="visual-studio-administrator-guide"></a>Visual Studio 系統管理員指南
 
@@ -99,7 +99,7 @@ ms.locfileid: "65976123"
 
 * (選擇性) 設定會影響 Visual Studio 部署的登錄原則，例如要與其他版本或執行個體共用之部分套件的安裝位置、[快取套件的位置](set-defaults-for-enterprise-deployments.md?view=vs-2019)或[是否要快取套件](disable-or-move-the-package-cache.md?view=vs-2019)。
 
-* (選擇性) 設定群組原則。 您也可以[將 Visual Studio 設定為停用個別電腦上的客戶回函](../ide/visual-studio-experience-improvement-program.md)。
+* (選擇性) 設定群組原則。 您也可以[將 Visual Studio 設定為停用個別電腦上的客戶意見反應](../ide/visual-studio-experience-improvement-program.md)。
 
 ## <a name="step-3---deploy"></a>步驟 3 - 部署
 
@@ -165,3 +165,4 @@ ms.locfileid: "65976123"
 * [匯入或匯出安裝組態](import-export-installation-configurations.md)
 * [Visual Studio Setup Archives](https://devblogs.microsoft.com/setup/tag/vs2017/) (Visual Studio 安裝封存)
 * [Visual Studio 產品生命週期和服務](/visualstudio/releases/2019/servicing/)
+* [同步的自動載入設定](../extensibility/synchronously-autoloaded-extensions.md)

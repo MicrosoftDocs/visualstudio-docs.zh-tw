@@ -9,14 +9,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: cab07fcd32d12696f5051dd5b14f236cee50b208
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 39a335f9215db3502fa38c01b501f0476bb4f186
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63439633"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66261508"
 ---
-# <a name="how-to-attach-the-profiler-to-a-net-service-to-collect-concurrency-data-by-using-the-command-line"></a>HOW TO：使用命令列將程式碼剖析工具附加至 .NET 服務以收集並行資料
+# <a name="how-to-attach-the-profiler-to-a-net-service-to-collect-concurrency-data-by-using-the-command-line"></a>作法：使用命令列將程式碼剖析工具附加至 .NET 服務以收集並行資料
 本文描述如何使用 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 分析工具命令列工具將分析工具附加至 [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 服務，並使用取樣方法收集處理序和執行緒並行資料。
 
 > [!NOTE]

@@ -1,5 +1,5 @@
 ---
-title: 教學課程：使用 Entity Framework 和 Visual Studio 2019 建立 ASP.NET Core Web 應用程式
+title: 搭配 Entity Framework 與 Visual Studio 2019 的 ASP.NET Core Web 應用程式
 titleSuffix: ''
 description: 作為建立 ASP.NET Core Web 應用程式前的第一步，請先透過此影片教學課程和逐步指示，了解如何安裝 Visual Studio 2019。
 ms.custom: get-started
@@ -17,12 +17,12 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: 711082c70c6174bdf3363ddb12d233ceb3f78f0d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 6668648668ab71e033d1341d71ecf5c7c2a47554
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62838927"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66261728"
 ---
 # <a name="tutorial-create-your-first-aspnet-core-app-using-entity-framework-with-visual-studio-2019"></a>教學課程：使用 Entity Framework 和 Visual Studio 2019 建立您的第一個 ASP.NET Core 應用程式
 
