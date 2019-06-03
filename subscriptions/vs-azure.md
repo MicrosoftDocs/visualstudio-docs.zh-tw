@@ -52,11 +52,11 @@ ms.locfileid: "65685928"
 
 1. 登入 [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs)。
 
-2. 在 [權益] 頁面的 [工具] 區段中找到 Azure 磚，並按一下權益磚底部的 [啟用] 連結。
+2. 在 [權益] 頁面的 [工具] 區段中找到 Azure 磚，並按一下權益磚底部的 [啟用]  連結。
    > [!div class="mx-imgBorder"]
    > ![Azure 磚](_img/vs-azure/vs-azure-tile.png)
 
-3. 填入建立 Azure 訂用帳戶所需的資訊，按一下核取方塊以接受條款和條件，然後按一下 [註冊]：
+3. 填入建立 Azure 訂用帳戶所需的資訊，按一下核取方塊以接受條款和條件，然後按一下 [註冊]  ：
    > [!div class="mx-imgBorder"]
    > ![Azure 註冊](_img/vs-azure/vs-azure-sign-up-cropped.png)
 
@@ -100,7 +100,7 @@ ms.locfileid: "65685928"
 
 如果您在 Microsoft 帳戶下有另一個**不同**訂用帳戶層級的有效 Visual Studio 訂用帳戶，請連絡 [Azure 支援](https://portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade)以取得協助。
 
-如果您的訂用帳戶具有消費限制，而您在它過期之前未採取任何動作，則會停用您的 Azure 訂用帳戶。 若要將它轉換為預付型供應項目並繼續使用它，請新增付款方式並[移除您的消費限制](/azure/billing/billing-spending-limit/)。
+如果您的訂用帳戶具有消費限制，而您在它過期之前未採取任何動作，則會停用您的 Azure 訂用帳戶。 若要將它轉換為隨用隨付供應項目並繼續使用它，請新增付款方式並[移除您的消費限制](/azure/billing/billing-spending-limit/)。
 
 如果您不想繼續此 Visual Studio Azure 訂用帳戶，便可以將您的資源 (例如虛擬機器和資料庫) 移轉到另一個 Azure 訂用帳戶，並可隨時[取消](https://azure.microsoft.com/support/cancel-account/)此訂用帳戶。
 
