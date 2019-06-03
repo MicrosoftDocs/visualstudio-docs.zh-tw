@@ -14,7 +14,7 @@ ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: cf370b4ca0e0a4d14c482c6ece46b79d2d224d34
 ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/22/2019
 ms.locfileid: "60049733"
@@ -42,9 +42,9 @@ ms.locfileid: "60049733"
   
 #### <a name="to-create-a-class-library-project-for-menu-commands-gesture-handlers-or-validation"></a>建立功能表命令、軌跡處理常式或驗證的類別庫專案  
   
-1. 在 [檔案]  功能表上，依序選擇 [新增] 和 [專案] 。  
+1. 在 [檔案]  功能表上，依序選擇 [新增]  和 [專案]  。  
   
-2. 在 [已安裝的範本] 下，選取 [Visual C#]  或 [Visual Basic] ，然後選擇 [類別庫] 。  
+2. 在 [已安裝的範本]  下，選取 [Visual C#]  或 [Visual Basic]  ，然後選擇 [類別庫]  。  
   
 #### <a name="to-create-a-vsix-project"></a>建立 VSIX 專案  
   
@@ -52,13 +52,13 @@ ms.locfileid: "60049733"
   
 2. 建立 VSIX 專案。  
   
-    1. 在方案總管 中，於方案的捷徑功能表中，依序選擇 [加入] 和 [新增專案] 。  
+    1. 在方案總管  中，於方案的捷徑功能表中，依序選擇 [加入]  和 [新增專案]  。  
   
-    2. 在 [已安裝的範本] 下，展開 [Visual C#]  或 [Visual Basic] ，然後選取 [擴充性] 。 在中間的資料行中，選擇 [VSIX 專案] 。  
+    2. 在 [已安裝的範本]  下，展開 [Visual C#]  或 [Visual Basic]  ，然後選取 [擴充性]  。 在中間的資料行中，選擇 [VSIX 專案]  。  
   
 3. 將 VSIX 專案設定為方案的啟始專案。  
   
-    - 在方案總管中，於 VSIX 專案的捷徑功能表上，選擇 [設定為啟始專案] 。  
+    - 在方案總管中，於 VSIX 專案的捷徑功能表上，選擇 [設定為啟始專案]  。  
   
 4. 開啟 **source.extension.vsixmanifest**。 此檔案會在資訊清單編輯器中開啟。  
   
@@ -68,7 +68,7 @@ ms.locfileid: "60049733"
   
 7. 在 [資產]  索引標籤上，將您的元件加入 Visual Studio 擴充功能。  
   
-    1. 選擇 [新增] 。  
+    1. 選擇 [新增]  。  
   
     2. 針對使用程式碼的元件，在 [加入新資產]  對話方塊中設定這些欄位：  
   
@@ -101,40 +101,40 @@ ms.locfileid: "60049733"
   
      專案組建和新的 [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] 執行個體隨即使用實驗模式開啟。  
   
-    - 或者，您可以選擇 [啟動但不偵錯] 。 這會減少啟動程式所需的時間。  
+    - 或者，您可以選擇 [啟動但不偵錯]  。 這會減少啟動程式所需的時間。  
   
 2. 在 Visual Studio 的實驗執行個體中建立或開啟模型專案，以及建立或開啟圖表。  
   
      您的擴充功能隨即載入和執行。  
   
-3. 如果您使用 [啟動但不偵錯]  ，但想要使用偵錯工具，請回到 Visual Studio 的主要執行個體。 在 [偵錯]  功能表上，按一下 [附加至處理序] 。 在對話方塊中，選取具有程式名稱 **devenv**的 Visual Studio 實驗執行個體。  
+3. 如果您使用 [啟動但不偵錯]  ，但想要使用偵錯工具，請回到 Visual Studio 的主要執行個體。 在 [偵錯]  功能表上，按一下 [附加至處理序]  。 在對話方塊中，選取具有程式名稱 **devenv**的 Visual Studio 實驗執行個體。  
   
 ## <a name="Installing"></a> 安裝及解除安裝擴充功能  
  執行下列步驟，以在您自己的電腦或其他電腦上，於 Visual Studio 的主要執行個體中執行擴充功能。  
   
 1. 在您的電腦中，尋找擴充功能專案所建置的 **.vsix** 檔案。  
   
-    1. 在方案總管 中，於專案的捷徑功能表上，選擇 [在 Windows 檔案總管中開啟資料夾] 。  
+    1. 在方案總管  中，於專案的捷徑功能表上，選擇 [在 Windows 檔案總管中開啟資料夾]  。  
   
-    2. 找出檔案**筒\\\*\\**_YourProject_**.vsix**  
+    2. 找出檔案**筒\\\*\\** _YourProject_ **.vsix**  
   
 2. 將 **.vsix** 檔案複製到要安裝擴充功能的目標電腦。 這可以是您自己的電腦或其他電腦。  
   
-    - 目標電腦必須有您在 **source.extension.vsixmanifest** 的 [安裝目標] 索引標籤中指定的其中一個 Visual Studio 版本。  
+    - 目標電腦必須有您在 **source.extension.vsixmanifest** 的 [安裝目標]  索引標籤中指定的其中一個 Visual Studio 版本。  
   
 3. 在目標電腦上，開啟 **.vsix** 檔案 (例如，按兩下該檔案)。  
   
-     [Visual Studio 擴充功能安裝程式] 隨即開啟並安裝擴充功能。  
+     [Visual Studio 擴充功能安裝程式]  隨即開啟並安裝擴充功能。  
   
 4. 啟動或重新啟動 Visual Studio。  
   
 #### <a name="to-uninstall-an-extension"></a>解除安裝擴充功能  
   
-1. 在 [工具]  功能表上，按一下 [擴充功能和更新] 。  
+1. 在 [工具]  功能表上，按一下 [擴充功能和更新]  。  
   
-2. 展開 [已安裝的擴充功能] 。  
+2. 展開 [已安裝的擴充功能]  。  
   
-3. 選取擴充功能，然後按一下 [解除安裝] 。  
+3. 選取擴充功能，然後按一下 [解除安裝]  。  
   
    在很少見的情況下，故障的擴充功能無法載入並且會在錯誤視窗中建立報告，但不會顯示在擴充管理員中。 在此情況下，您可以移除延伸模組，從下列位置刪除檔案所在 *%localappdata%* 通常*DriveName*: \Users\\*的使用者名稱*\AppData\Local:  
   
