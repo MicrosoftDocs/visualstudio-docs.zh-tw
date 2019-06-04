@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a002c3876eecf0f31a8d104fa235b1208af90699
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f526cc8d5ff7835b3d0b942325f5755898fad147
+ms.sourcegitcommit: c6249a8f3054db881ba62f4e80bf006d440f5a2d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62929137"
+ms.lasthandoff: 06/03/2019
+ms.locfileid: "66462151"
 ---
 # <a name="write-and-debug-running-xaml-code-with-xaml-hot-reload-in-visual-studio"></a>撰寫和偵錯執行使用 Visual Studio 中的 XAML 熱重新載入的 XAML 程式碼
 
@@ -47,7 +47,7 @@ XAML 最忙碌的重新載入會在這些情況下特別有用：
 |例如您的應用程式頁面] / [視窗中的資源字典中建立資源的物件或*App.xaml*|不支援|支援|範例： 新增```SolidColorBrush```做為資源字典```StaticResource```。</br>注意:靜態資源，樣式轉換器和其他項目寫入至的資源字典可以套用/使用同時使用 XAML 熱重新載入。 不支援資源的建立。</br> 變更資源字典```Source```屬性。| 
 |將新控制項、 類別、 windows 或其他檔案新增至您的專案，應用程式執行時|不支援|不支援|None|
 |管理 NuGet 套件 （新增/移除/更新套件）|不支援|不支援|None|
-|變更資料繫結，會使用 {x： 繫結} 標記延伸|N/A|在 Visual Studio 2019 和更新版本支援|Visual Studio 2018 或先前版本中不支援|
+|變更資料繫結，會使用 {x： 繫結} 標記延伸|N/A|在 Visual Studio 2019 和更新版本支援|在 Visual Studio 2017 或舊版不支援|
 
 ## <a name="error-messages"></a>錯誤訊息
 
