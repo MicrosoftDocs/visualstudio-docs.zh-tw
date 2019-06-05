@@ -9,12 +9,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 7c5f1883a5d8c09713d520aa934f91b32cbaf388
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5cb5fcac8f9cc509718648fa9bd6db0f18d01b33
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62978979"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66349234"
 ---
 # <a name="attribute-glossary"></a>屬性字彙
 
@@ -79,9 +79,9 @@ ms.locfileid: "62978979"
 <a name="pexclass"></a>
 ## <a name="pexclass"></a>PexClass
 
-此屬性會標示包含「探索」的類別。 它相當於 MSTest **TestClassAttribute** (或 NUnit **TestFixtureAttribute**)。 這是一個選擇性的屬性。
+此屬性會標示包含「探索」  的類別。 它相當於 MSTest **TestClassAttribute** (或 NUnit **TestFixtureAttribute**)。 這是一個選擇性的屬性。
 
-使用 [PexClass](#pexclass) 所標示的類別必須是「預設可建構的」：
+使用 [PexClass](#pexclass) 所標示的類別必須是「預設可建構的」  ：
 
 * 公開匯出的類型
 * 預設建構函式
@@ -152,7 +152,7 @@ public partial class MyTests {
 ```csharp
 using Microsoft.Pex.Framework;
 // overriding the test framework selection
-[assembly: PexAssemblySettings(TestFramework = "Naked")]
+[assembly: PexAssemblySettings(TestFramework = "MSTestv2")]
 ```
 
 <a name="pexassemblyundertest"></a>

@@ -13,18 +13,18 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 8928feffed77f8bfbb3787bd9a20737b9c7b3f9e
-ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.openlocfilehash: 36bbec66e822d7e1daebcadbeeba30e166747368
+ms.sourcegitcommit: aeb1a1135dd789551e15aa5124099a5fe3f0f32b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/24/2019
-ms.locfileid: "66213779"
+ms.lasthandoff: 06/04/2019
+ms.locfileid: "66501124"
 ---
 # <a name="update-visual-studio-while-on-a-servicing-baseline"></a>在維護基底上時更新 Visual Studio
 
-Visual Studio 2019 將在其[產品生命週期](/visualstudio/productinfo/release-rhythm.md#release-channel-updates)期間進行頻繁的更新。 這些包含兩個次要版本更新 (例如：16.0 至 16.1)，可以包含新功能和元件，以及僅包含重大問題之目標修正程式的服務更新 (例如：16.0.4 至 16.0.5)。 
+Visual Studio 2019 將在其[產品生命週期](/visualstudio/productinfo/release-rhythm#release-channel-updates)期間進行頻繁的更新。 這些包含兩個次要版本更新 (例如：16.0 至 16.1)，可以包含新功能和元件，以及僅包含重大問題之目標修正程式的服務更新 (例如：16.0.4 至 16.0.5)。 
 
-企業系統管理員可以選擇將其用戶端保留在服務基準上，這可以在下一個服務基準發行後的一年內提供服務更新。 這為開發人員和管理員提供了更大的彈性，可以採用新的功能、錯誤 (bug) 修正，或新的次要更新中所包含的元件。 第一個服務基準是 16.0.x。 如需詳細資訊，請參閱 [Enterprise 與 Professional 客戶的支援選項](/visualstudio/releases/2019/servicing.md#support-options-for-enterprise-and-professional-customers)。
+企業系統管理員可以選擇將其用戶端保留在服務基準上，這可以在下一個服務基準發行後的一年內提供服務更新。 這為開發人員和管理員提供了更大的彈性，可以採用新的功能、錯誤 (bug) 修正，或新的次要更新中所包含的元件。 第一個服務基準是 16.0.x。 如需詳細資訊，請參閱 [Enterprise 與 Professional 客戶的支援選項](https://docs.microsoft.com/visualstudio/releases/2019/servicing#support-options-for-enterprise-and-professional-customers)。
 
 ## <a name="how-to-get-onto-a-servicing-baseline"></a>如何進入服務基準
 
