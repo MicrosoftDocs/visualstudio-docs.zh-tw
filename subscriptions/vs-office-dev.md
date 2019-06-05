@@ -7,12 +7,12 @@ ms.date: 12/19/2018
 ms.topic: conceptual
 description: 了解 Visual Studio 訂用帳戶中所含的 Office 365 開發人員權益。
 searchscope: VS Subscription
-ms.openlocfilehash: 3ae71e50ab93cbc17cdf6f4cd4e550a627b0f600
-ms.sourcegitcommit: 0ef51e3517436a85cfb85bf492722d566ce602c4
+ms.openlocfilehash: 100b9992f13a419b9207adb9ba976b8f6417617f
+ms.sourcegitcommit: aeb1a1135dd789551e15aa5124099a5fe3f0f32b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "65934594"
+ms.lasthandoff: 06/04/2019
+ms.locfileid: "66501191"
 ---
 # <a name="the-office-365-developer-subscription-benefit-in-visual-studio-subscriptions"></a>Visual Studio 訂用帳戶的 Office 365 開發人員訂用帳戶權益
 
@@ -22,11 +22,11 @@ ms.locfileid: "65934594"
 
 1. 請前往 [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs)，以登入訂閱者入口網站。
 
-2. 根據您的帳戶，您可以重新導向您組織的登入頁面或 Microsoft 帳戶登入頁面。   無論是哪一種情況，請輸入您的使用者名稱和密碼，然後按一下 [下一步]。
+2. 根據您的帳戶，您可以重新導向您組織的登入頁面或 Microsoft 帳戶登入頁面。   無論是哪一種情況，請輸入您的使用者名稱和密碼，然後按一下 [下一步]  。
 
 3. 登入程序完成之後，您應該會看到「訂用帳戶權益」頁面。  如果您有多個訂用帳戶，則按一下右上角之黑色功能區下方的下拉式箭號，即可切換訂用帳戶。  Office 365 開發人員訂用帳戶權益磚是位在工具類別中。  請使用磚資料列右側的箭號進行捲動，直到看見 Office 磚為止。
 
-4. 按一下權益磚底部的 [啟用] 連結。
+4. 按一下權益磚底部的 [啟用]  連結。
    > [!div class="mx-imgBorder"]
    > ![Office 365 開發人員權益磚](_img/vs-office-dev/vs-office-dev-tile.png)
 
@@ -38,7 +38,7 @@ ms.locfileid: "65934594"
    > [!div class="mx-imgBorder"]
    > ![Office 365 開發人員註冊](_img/vs-office-dev/vs-office-dev-signup.png)
 
-10. 指出您的喜好設定和感興趣區域，然後按一下 [啟用訂用帳戶]。
+10. 指出您的喜好設定和感興趣區域，然後按一下 [啟用訂用帳戶]  。
     > [!div class="mx-imgBorder"]
     > ![Office 365 開發人員喜好設定](_img/vs-office-dev/vs-office-dev-preferences.png)
 
@@ -46,11 +46,11 @@ ms.locfileid: "65934594"
     > [!div class="mx-imgBorder"]
     > ![Office 365 開發人員使用者名稱和網域](_img/vs-office-dev/vs-office-dev-domain.png)
 
-12. 輸入您的電話號碼，然後按一下 [傳送驗證碼]。  這可協助我們確定帳戶是由真人所建立。
+12. 輸入您的電話號碼，然後按一下 [傳送驗證碼]  。  這可協助我們確定帳戶是由真人所建立。
     > [!div class="mx-imgBorder"]
     > ![Office 365 開發人員電話驗證](_img/vs-office-dev/vs-office-dev-send-code.png)
 
-13. 輸入您收到的驗證碼，然後按一下 [設定]。
+13. 輸入您收到的驗證碼，然後按一下 [設定]  。
     > [!div class="mx-imgBorder"]
     > ![Office 365 開發人員驗證碼驗證](_img/vs-office-dev/vs-office-dev-setup.png)
 
@@ -82,6 +82,6 @@ ms.locfileid: "65934594"
 
 ## <a name="support-resources"></a>支援資源
 
-- 需要 Office 開發人員訂用帳戶的說明嗎？ 查看 [Office 開發人員中心](https://developer.microsoft.com/office)上的[支援](https://developer.microsoft.com/office/support)資源。
+- 需要 Office 開發人員訂用帳戶的說明嗎？ 查看 [Office 開發人員中心](https://developer.microsoft.com/office)上的[支援](https://developer.microsoft.com/office/docs#officecommunity)資源。
 - 如需 Visual Studio 訂用帳戶有關銷售、訂閱、帳戶與計費的協助，請聯繫 Visual Studio [訂用帳戶支援](https://visualstudio.microsoft.com/subscriptions/support/)。
 - 是否有關於 Visual Studio IDE、Azure DevOps Services 或其他 Visual Studio 產品或服務的問題？  前往 [Visual Studio 支援](https://visualstudio.microsoft.com/support/)
