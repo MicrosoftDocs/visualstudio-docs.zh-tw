@@ -10,16 +10,16 @@ author: gewarren
 dev_langs:
 - VB
 - CSharp
-ms.openlocfilehash: 89d072c7f9643c5991ec098f87d7ec35a295bbe1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 8dd991af976c9262a6a1af7813c1201f68b36ab8
+ms.sourcegitcommit: ba5e072c9fedeff625a1332f22dcf3644d019f51
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62971302"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "66431748"
 ---
 # <a name="isolate-code-under-test-with-microsoft-fakes"></a>使用 Microsoft Fakes 隔離測試中的程式碼
 
-Microsoft Fakes 會以「虛設常式」或「填充碼」取代應用程式的其他部分，協助您隔離要測試的程式碼。 這些是受測試所控制的一些程式碼片段。 藉由隔離待測的程式碼，您可以在正確的位置尋找測試失敗的原因。 即使應用程式的其他部分還無法運作，您也可以利用虛設常式和填充碼。
+Microsoft Fakes 會以「虛設常式」  或「填充碼」  取代應用程式的其他部分，協助您隔離要測試的程式碼。 這些是受測試所控制的一些程式碼片段。 藉由隔離待測的程式碼，您可以在正確的位置尋找測試失敗的原因。 即使應用程式的其他部分還無法運作，您也可以利用虛設常式和填充碼。
 
 Fakes 分為兩種類別：
 
@@ -69,9 +69,7 @@ Fakes 分為兩種類別：
      相反地，請定義可由另一個元件或測試虛設常式實作的介面：
 
     ```csharp
-    public int GetContosoPrice(IStockFeed feed)
-    { return feed.GetSharePrice("COOO"); }
-
+    public int GetContosoPrice(IStockFeed feed) => feed.GetSharePrice("COOO");
     ```
 
     ```vb
@@ -83,9 +81,9 @@ Fakes 分為兩種類別：
 
 2. **新增 Fakes 組件**
 
-    1. 在 [方案總管] 中，展開測試專案的參考清單。 如果在 Visual Basic 中工作，您必須選擇 [顯示所有檔案] 才能看到參考清單。
+    1. 在 [方案總管]  中，展開測試專案的參考清單。 如果在 Visual Basic 中工作，您必須選擇 [顯示所有檔案]  才能看到參考清單。
 
-    2. 選取定義介面 (例如 IStockFeed) 之組件的參考。 在此參考的捷徑功能表上，選擇 [新增 Fakes 組件]。
+    2. 選取定義介面 (例如 IStockFeed) 之組件的參考。 在此參考的捷徑功能表上，選擇 [新增 Fakes 組件]  。
 
     3. 重建方案。
 
@@ -170,9 +168,9 @@ Fakes 分為兩種類別：
 
 1. **新增 Fakes 組件**
 
-     在 [方案總管] 中開啟單元測試專案的參考，並且選取包含要假造之方法的組件參考。 在本範例中，`DateTime` 類別是在 *System.dll* 中。  若要查看 Visual Basic 專案中的參考，請選擇 [顯示所有檔案]。
+     在 [方案總管]  中開啟單元測試專案的參考，並且選取包含要假造之方法的組件參考。 在本範例中，`DateTime` 類別是在 *System.dll* 中。  若要查看 Visual Basic 專案中的參考，請選擇 [顯示所有檔案]  。
 
-     選擇 [新增 Fakes 組件]。
+     選擇 [新增 Fakes 組件]  。
 
 2. **在 ShimsContext 中插入填充碼**
 
