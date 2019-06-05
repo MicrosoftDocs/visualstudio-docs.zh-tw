@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: afb73b316dd54284073c3d878fb35b4bb6090e08
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 6f227a7948f5a842120341432c03747119988ddf
+ms.sourcegitcommit: aeb1a1135dd789551e15aa5124099a5fe3f0f32b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62569958"
+ms.lasthandoff: 06/04/2019
+ms.locfileid: "66501067"
 ---
 # <a name="create-a-database-and-add-tables-in-visual-studio"></a>建立資料庫，並在 Visual Studio 中新增資料表
 
@@ -26,7 +26,19 @@ ms.locfileid: "62569958"
 
 ## <a name="prerequisites"></a>必要條件
 
-若要完成此逐步解說中，您必須擁有選擇性**資料儲存和處理**安裝 Visual Studio 中的工作負載。 若要安裝，請開啟**Visual Studio 安裝程式**，然後選擇**詳細** > **修改**旁邊的 Visual Studio 您想要修改的版本 (如果您有多個一個安裝的版本）。 上**工作負載**索引標籤之下**Web 與雲端**，選擇 **資料儲存和處理**，然後按一下**修改**新增的工作負載Visual Studio。
+若要完成此逐步解說中，您必須擁有選擇性**資料儲存和處理**安裝 Visual Studio 中的工作負載。 若要安裝，請開啟**Visual Studio 安裝程式**，然後選擇 **修改**或是**詳細** > **修改**旁邊的版本您想要修改的 visual Studio。
+
+::: moniker range=">=vs-2019"
+
+上**工作負載**索引標籤之下**其他工具組**，選擇 **資料儲存和處理**，然後按一下**修改**新增的工作負載Visual Studio。
+
+::: moniker-end
+
+::: moniker range="=vs-2017"
+
+上**工作負載**索引標籤之下**Web 與雲端**，選擇 **資料儲存和處理**，然後按一下**修改**新增的工作負載Visual Studio。
+
+::: moniker-end
 
 ## <a name="create-a-project-and-a-local-database-file"></a>建立專案和本機資料庫檔案
 
@@ -46,17 +58,17 @@ ms.locfileid: "62569958"
 
 1. 在 **資料來源**視窗中，選取**加入新的資料來源**連結。
 
-   [資料來源組態精靈] 隨即開啟。
+   [資料來源組態精靈]  隨即開啟。
 
-1. 在 [**選擇資料來源類型**頁面上，選擇**資料庫**，然後選擇**下一步]**。
+1. 在 [**選擇資料來源類型**頁面上，選擇**資料庫**，然後選擇**下一步]** 。
 
 1. 在 [**選擇資料庫模型**頁面上，選擇**下一步]** 接受預設值 （資料集）。
 
-1. 在 [**選擇資料連接**頁面上，選取**SampleDatabase.mdf**在下拉式清單中，檔案，然後選擇**下一步]**。
+1. 在 [**選擇資料連接**頁面上，選取**SampleDatabase.mdf**在下拉式清單中，檔案，然後選擇**下一步]** 。
 
-1. 在 [**儲存連接字串儲存到應用程式組態檔**頁面上，選擇**下一步]**。
+1. 在 [**儲存連接字串儲存到應用程式組態檔**頁面上，選擇**下一步]** 。
 
-1. 一**選擇您的資料庫物件** 頁面上，您會看到訊息指出資料庫不包含任何物件。 選擇 [完成]。
+1. 一**選擇您的資料庫物件** 頁面上，您會看到訊息指出資料庫不包含任何物件。 選擇 [完成]  。
 
 ### <a name="view-properties-of-the-data-connection"></a>檢視的資料連接屬性
 
@@ -76,7 +88,7 @@ ms.locfileid: "62569958"
 
 2. 開啟捷徑功能表**資料表**，然後選取**加入新的資料表**。
 
-     [資料表設計工具] 隨即開啟並顯示含有一個預設列的格線，這表示您要建立的資料表中的單一資料行。 藉由在格線中加入資料列，您就是在資料表中加入資料行。
+     [資料表設計工具]  隨即開啟並顯示含有一個預設列的格線，這表示您要建立的資料表中的單一資料行。 藉由在格線中加入資料列，您就是在資料表中加入資料行。
 
 3. 在格線中，為下列每一個項目加入一個資料列：
 
@@ -138,7 +150,7 @@ ms.locfileid: "62569958"
 
      ![在資料表設計工具中加入外部索引鍵](../data-tools/media/foreignkey.png)
 
-2. 在出現的文字方塊中，以 [Customers] 取代 [ToTable]。
+2. 在出現的文字方塊中，以 [Customers]  取代 [ToTable]  。
 
 3. 在 [T-SQL] 窗格中，更新最後一行以符合下面範例：
 
