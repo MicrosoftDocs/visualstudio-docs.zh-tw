@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4355db8b15a3869e785589170bec3f80e8f08fbb
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5f8a672056c8663c2e27ec730e542083aee9738f
+ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62541714"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66714974"
 ---
 # <a name="ca2228-do-not-ship-unreleased-resource-formats"></a>CA2228:不要使用尚未發行版本所支援的格式建置資源
 
@@ -31,13 +31,17 @@ ms.locfileid: "62541714"
 |中斷變更|非中斷|
 
 ## <a name="cause"></a>原因
- 資源檔案是使用目前不支援的.NET framework 版本所建置的。
+
+使用目前不支援的.NET 版本的建置資源檔。
 
 ## <a name="rule-description"></a>規則描述
- 使用發行前版本的.NET framework 所建置的資源檔可能不支援的.NET framework 的版本。
+
+使用.NET 的發行前版本所建置的資源檔可能會無法使用所支援的.NET 版本。
 
 ## <a name="how-to-fix-violations"></a>如何修正違規
- 若要修正此規則的違規情形，建置使用支援的.NET Framework 版本的資源。
+
+若要修正此規則的違規情形，建置使用支援的.NET 版本的資源。
 
 ## <a name="when-to-suppress-warnings"></a>隱藏警告的時機
- 請勿隱藏此規則的警告。
+
+請勿隱藏此規則的警告。

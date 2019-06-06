@@ -12,23 +12,23 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 38a2bce9e3343c4439eaf033ccfb8d6e58b01baa
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 81c4d6ba7cc4ae870c74733a4e78733c023e3f58
+ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62540690"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66713960"
 ---
 # <a name="overview-of-static-code-analysis-for-managed-code-in-visual-studio"></a>在 Visual Studio 中的 managed 程式碼的靜態程式碼分析的概觀
 
 Visual Studio 可以執行的 managed 程式碼的程式碼分析，有兩種： 使用*FxCop*靜態分析 managed 組件，並以更多新式*Roslyn 分析器*。 本主題涵蓋 FxCop 靜態程式碼分析。 若要深入了解使用程式碼分析器來分析程式碼，請參閱[概觀的 Roslyn 分析器](../code-quality/roslyn-analyzers-overview.md)。
 
-Managed 程式碼的程式碼分析可以分析 Managed 組件並回報有關組件的資訊，例如是否違反 Microsoft .NET Framework 設計方針所制定的程式設計和設計規則。
+Managed 程式碼的程式碼分析會分析 managed 組件，並報告的組件的相關資訊，因為這類中設立的程式設計和設計規則違規[.NET 設計方針](/dotnet/standard/design-guidelines/)。
 
 分析工具會將分析期間所做的檢查顯示為警告訊息。 警告訊息會識別任何相關的程式設計和設計問題，並且在可能的時候，提供如何修正問題的資訊。
 
 > [!NOTE]
-> Visual Studio 中的.NET Core 和.NET Standard 專案中的靜態程式碼分析不支援。 如果您執行.NET Core 或.NET Standard 專案下的程式碼分析做為 msbuild 的一部分時，您會看到類似的錯誤**錯誤：CA0055:無法識別的平台\<your.dll >**。 若要分析的.NET Core 或.NET Standard 專案中的程式碼，使用[Roslyn 分析器](../code-quality/roslyn-analyzers-overview.md)改。
+> Visual Studio 中的.NET Core 和.NET Standard 專案中的靜態程式碼分析不支援。 如果您執行.NET Core 或.NET Standard 專案下的程式碼分析做為 msbuild 的一部分時，您會看到類似的錯誤**錯誤：CA0055:無法識別的平台\<your.dll >** 。 若要分析的.NET Core 或.NET Standard 專案中的程式碼，使用[Roslyn 分析器](../code-quality/roslyn-analyzers-overview.md)改。
 
 ## <a name="ide-integrated-development-environment-integration"></a>IDE （整合式的開發環境） 整合
 
@@ -36,7 +36,7 @@ Managed 程式碼的程式碼分析可以分析 Managed 組件並回報有關組
 
 若要執行程式碼分析每次建置專案，選取**建置時啟用程式碼分析**專案的屬性頁上。 如需詳細資訊，請參閱[如何：啟用和停用自動程式碼分析](../code-quality/how-to-enable-and-disable-automatic-code-analysis-for-managed-code.md)。
 
-若要在專案上手動執行程式碼分析，從功能表列選擇**分析** > **執行程式碼分析** > **上執行程式碼分析\<專案>**。
+若要在專案上手動執行程式碼分析，從功能表列選擇**分析** > **執行程式碼分析** > **上執行程式碼分析\<專案>** 。
 
 ## <a name="rule-sets"></a>規則集
 

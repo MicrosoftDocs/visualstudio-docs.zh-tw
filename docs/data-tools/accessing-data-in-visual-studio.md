@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 16cbdb0a673f503dcee49b7a323d1453ee93532a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5403803a4da0821978a8c6bbfc31e45c31104640
+ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62818224"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66715271"
 ---
 # <a name="access-data-in-visual-studio"></a>使用 Visual Studio 存取資料
 
@@ -152,6 +152,6 @@ C++使用 Microsoft Azure 儲存體的程式可以使用[Microsoft Azure 儲存�
 
 [LINQ (Language-Integrated Query)](/dotnet/csharp/linq/)&mdash;說明內建 C# 和 Visual Basic 中，以及通用模型來查詢關聯式資料庫、 XML 文件、 資料集和記憶體中集合的查詢功能。
 
-[Visual Studio 中的 XML 工具](../xml-tools/xml-tools-in-visual-studio.md)&mdash;討論使用 XML 資料、 偵錯 XSLT，.NET Framework 的 XML 功能，以及 XML 查詢的架構。
+[Visual Studio 中的 XML 工具](../xml-tools/xml-tools-in-visual-studio.md)&mdash;討論使用 XML 資料、 偵錯 XSLT，.NET XML 功能，以及 XML 查詢的架構。
 
-[XML 文件和資料](/dotnet/standard/data/xml/index)&mdash;提供一組完整且整合式的類別處理 XML 文件和.NET Framework 中的資料的概觀。
+[XML 文件和資料](/dotnet/standard/data/xml/index)&mdash;提供一組完整且整合式的類別處理 XML 文件和.NET 中的資料的概觀。

@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dc6923c4fd575d61b4854d9bb7d32f541bdda162
-ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
+ms.openlocfilehash: 059770b28b9e885608769f3844f91097a16d66cf
+ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "65841991"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66714250"
 ---
 # <a name="ca1708-identifiers-should-differ-by-more-than-case"></a>CA1708:識別項名稱不應該只靠大小寫區別
 
@@ -48,7 +48,7 @@ ms.locfileid: "65841991"
 
 ## <a name="when-to-suppress-warnings"></a>隱藏警告的時機
 
-請勿隱藏此規則的警告。 程式庫可能無法使用.NET Framework 中的所有可用語言。
+請勿隱藏此規則的警告。 程式庫可能無法使用在.NET 中的所有可用語言。
 
 ## <a name="configurability"></a>設定功能
 

@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c22da2a31be1389ca0b60df6cc64ac6c9155ad69
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 8ec10f226ad139ffbeb46badc6ef3dd6c384af91
+ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62852486"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66714935"
 ---
 # <a name="debug-dlls-in-visual-studio-c-c-visual-basic-f"></a>偵錯在 Visual Studio 中的 Dll (C#， C++，Visual Basic 中， F#)
 
@@ -84,7 +84,7 @@ DLL （動態連結程式庫） 是包含程式碼和資料可供多個應用程
 
 1. 選取 [確定]  。
 
-如需詳細資訊C++專案設定，請參閱 <<c1> [ 屬性頁 (Visual C++)](/cpp/ide/property-pages-visual-cpp)。</c1>
+如需詳細資訊C++專案設定，請參閱 <<c1> [ 屬性頁 (Visual C++)](/cpp/build/reference/property-pages-visual-cpp)。</c1>
 
 ## <a name="vxtskdebuggingdllprojectsbuildingadebugversion"></a> 建置偵錯版本
 
