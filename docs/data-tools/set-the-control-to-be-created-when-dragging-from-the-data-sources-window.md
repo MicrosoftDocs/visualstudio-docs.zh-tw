@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 79ed1bd03e90a92d8246c5f51a6ad64d52758167
-ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.openlocfilehash: 442a98b76efb8013d5d40607e14586299718afc3
+ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66260961"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66715101"
 ---
 # <a name="set-the-control-to-be-created-when-dragging-from-the-data-sources-window"></a>設定從 [資料來源] 視窗拖曳時要建立的控制項
 
@@ -45,7 +45,7 @@ ms.locfileid: "66260961"
 
     - 若要顯示的所有資料的單一控制項，選取不同的控制項清單中，例如**DataGrid**或是**清單**WPF 應用程式中，或**DataGridView** Windows Form 中應用程式。
 
-    可用的控制項清單取決於哪一個設計工具上已開啟，.NET Framework 版本做為專案目標，以及是否您已新增自訂控制項的支援資料繫結至**工具箱**。 如果您想要建立的控制項不在可用的控制項清單中，您可以將控制項加入清單。 如需詳細資訊，請參閱 <<c0> [ 將自訂控制項加入至資料來源視窗](../data-tools/add-custom-controls-to-the-data-sources-window.md)。
+    可用的控制項清單取決於哪一個設計工具上您剛剛開啟的.NET 版本做為專案目標，以及是否您已新增自訂控制項的支援資料繫結至**工具箱**。 如果您想要建立的控制項不在可用的控制項清單中，您可以將控制項加入清單。 如需詳細資訊，請參閱 <<c0> [ 將自訂控制項加入至資料來源視窗](../data-tools/add-custom-controls-to-the-data-sources-window.md)。
 
     若要了解如何建立自訂的 Windows Form 控制項加入至控制項中資料的資料表或物件的清單**資料來源** 視窗中，請參閱[建立支援複雜資料的 Windows Forms 使用者控制項繫結](../data-tools/create-a-windows-forms-user-control-that-supports-complex-data-binding.md)。
 
@@ -63,7 +63,7 @@ ms.locfileid: "66260961"
 
 4. 按一下 資料行或屬性的下拉式選單，然後選取您想要建立項目拖曳至設計工具時的控制項。
 
-     可用的控制項清單取決於哪一個設計工具上已開啟，.NET Framework 版本做為專案目標，以及哪些自訂控制項資料繫結，您已加入該支援**工具箱**。 如果您想要建立的控制項是可用的控制項清單中，您可以將控制項加入清單。 如需詳細資訊，請參閱 <<c0> [ 將自訂控制項加入至資料來源視窗](../data-tools/add-custom-controls-to-the-data-sources-window.md)。
+     可用的控制項清單取決於哪一個設計工具上您剛剛開啟的.NET 版本做為專案目標，以及哪些自訂控制項資料繫結，您已加入該支援**工具箱**。 如果您想要建立的控制項是可用的控制項清單中，您可以將控制項加入清單。 如需詳細資訊，請參閱 <<c0> [ 將自訂控制項加入至資料來源視窗](../data-tools/add-custom-controls-to-the-data-sources-window.md)。
 
      若要了解如何建立自訂控制項，可以加入的資料行或屬性中的控制項清單**資料來源** 視窗中，請參閱[建立支援簡單資料繫結WindowsForm使用者控制項](../data-tools/create-a-windows-forms-user-control-that-supports-simple-data-binding.md).
 

@@ -10,18 +10,18 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 3097e52f99f044257b8eaf634455bdf19978d0c3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 93bd0fd71fbe8eae90750aa2e7597ee40bba17a2
+ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62825039"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66715268"
 ---
 # <a name="walkthrough-analyzing-managed-code-for-code-defects"></a>逐步解說：分析 managed 程式碼的程式碼缺失
 
 在本逐步解說中，您會使用程式碼分析工具來分析 managed 的專案的程式碼缺失。
 
-本逐步解說會引導您使用程式碼分析來分析您的.NET managed 程式碼組件符合 Microsoft.NET Framework 設計方針的程序。
+本逐步解說會引導您使用程式碼分析來分析您的.NET managed 程式碼組件符合.NET 設計指導方針的程序。
 
 ## <a name="create-a-class-library"></a>建立類別庫
 

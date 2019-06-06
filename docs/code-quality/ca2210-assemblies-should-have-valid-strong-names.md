@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e596f2e970df487a31628ab0bd29051172b950e4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 89edba30a95d61268aebb26de8d973f6201c0fcf
+ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62796675"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66714760"
 ---
 # <a name="ca2210-assemblies-should-have-valid-strong-names"></a>CA2210:組件應該具備有效的強式名稱
 
@@ -64,11 +64,11 @@ ms.locfileid: "62796675"
 
 使用下列程序的其中一個：
 
-- 使用.NET Framework SDK 所提供的組件連結器工具 (Al.exe)。
+- 使用[組件連結器工具 (Al.exe)](/dotnet/framework/tools/al-exe-assembly-linker)。
+
+- 如需.NET Framework 2.0 中，使用`/keyfile`或是`/keycontainer`編譯器選項[/KEYFILE （指定金鑰或金鑰組以簽署組件）](/cpp/build/reference/keyfile-specify-key-or-key-pair-to-sign-an-assembly)或[/KEYCONTAINER （指定金鑰容器以簽署組件）](/cpp/build/reference/keycontainer-specify-a-key-container-to-sign-an-assembly)中的連結器選項C++)。
 
 - 針對.NET Framework v1.0 或 v1.1，使用任何一種<xref:System.Reflection.AssemblyKeyFileAttribute?displayProperty=fullName>或<xref:System.Reflection.AssemblyKeyNameAttribute?displayProperty=fullName>屬性。
-
-- 針對[!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)]，使用任何一種`/keyfile`或是`/keycontainer`編譯器選項[/KEYFILE （指定金鑰或金鑰組以簽署組件）](/cpp/build/reference/keyfile-specify-key-or-key-pair-to-sign-an-assembly)或[/KEYCONTAINER （指定金鑰容器以簽署組件）](/cpp/build/reference/keycontainer-specify-a-key-container-to-sign-an-assembly)中的連結器選項C++)。
 
 ### <a name="sign-your-assembly-with-a-strong-name-in-visual-studio"></a>在 Visual Studio 中以強式名稱組件簽章
 
@@ -90,7 +90,7 @@ ms.locfileid: "62796675"
 
 ### <a name="sign-your-assembly-with-a-strong-name-outside-visual-studio"></a>Visual Studio 外部的強式名稱組件簽章
 
-使用強式名稱工具 (Sn.exe) 所提供的.NET Framework SDK。 如需詳細資訊，請參閱 [Sn.exe (強式名稱工具)](/dotnet/framework/tools/sn-exe-strong-name-tool)。
+使用[強式名稱工具 (Sn.exe)](/dotnet/framework/tools/sn-exe-strong-name-tool)。
 
 ## <a name="when-to-suppress-warnings"></a>隱藏警告的時機
 

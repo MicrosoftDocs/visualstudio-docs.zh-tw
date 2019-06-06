@@ -13,14 +13,14 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 555017cc49beba849ba9008c52950a70cd067a73
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: f3c8fbde60e247ca9ec5fe82c9a16f28aded2abc
+ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65676285"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66715056"
 ---
-# <a name="how-to-configure-static-code-analysis-for-managed-code"></a>HOW TO：設定 managed 程式碼的靜態程式碼分析
+# <a name="how-to-configure-static-code-analysis-for-managed-code"></a>作法：設定 managed 程式碼的靜態程式碼分析
 
 在 Visual Studio 中，您可以從清單中選擇的程式碼分析[規則集](../code-quality/rule-set-reference.md)来套用至 managed 程式碼專案。 根據預設， **Microsoft 最小建議規則**選取規則集，但您可以套用不同的規則集有需要。 規則集可以套用至解決方案中的一或多個專案中。
 
@@ -29,7 +29,7 @@ ms.locfileid: "65676285"
 > [!NOTE]
 > 本文適用於靜態程式碼分析，而不[Roslyn 分析器](use-roslyn-analyzers.md)，這不在建置之後執行程式碼分析。
 
-## <a name="to-configure-a-rule-set-for-a-net-framework-project"></a>若要設定的規則集的.NET Framework 專案
+## <a name="configure-a-rule-set-for-a-net-framework-project"></a>設定.NET Framework 專案中設定的規則
 
 1. 開啟**程式碼分析**上專案屬性頁 索引標籤。 您可以下列兩種方法之一來這麼做：
 

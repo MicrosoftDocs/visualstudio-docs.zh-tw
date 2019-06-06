@@ -19,19 +19,19 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: eb1fdf57be1630468ee3990028a417565a914639
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 30a2860ae1dfb9d428f65812590675fccb42cfe5
+ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62566897"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66715190"
 ---
 # <a name="fill-datasets-by-using-tableadapters"></a>使用 TableAdapter 填入資料集
 
 TableAdapter 元件會填入資料庫，並根據一或多個查詢或您指定的預存程序的資料的資料集。 也可以執行 Tableadapter 加入、 更新和刪除資料庫保存您對資料集的變更。 您也可以發出全域不到任何特定資料表相關的命令。
 
 > [!NOTE]
-> Visual Studio 設計工具會產生 TableAdapters。 如果您要以程式設計方式建立資料集，然後使用資料配接器，也就是.NET Framework 類別。
+> Visual Studio 設計工具會產生 TableAdapters。 如果您要以程式設計方式建立資料集，然後使用資料配接器，也就是一個.NET 類別。
 
 如需 TableAdapter 作業的詳細資訊，您可以直接跳到其中一個主題：
 
@@ -52,7 +52,7 @@ Tableadapter 會連接到資料庫、 執行的查詢或預存程序，並使用
 
 ![用戶端應用程式中的資料流程](../data-tools/media/clientdatadiagram.gif)
 
-雖然 TableAdapters 的設計是以**Dataset 設計工具**，做為巢狀類別的不會產生的 TableAdapter 類別<xref:System.Data.DataSet>。 它們位於不同的命名空間專屬於每個資料集。 比方說，如果您擁有名為資料集`NorthwindDataSet`，相關聯的 TableAdapters<xref:System.Data.DataTable>中的 s`NorthwindDataSet`會在`NorthwindDataSetTableAdapters`命名空間。 若要以程式設計方式存取特定的 TableAdapter，您必須宣告 TableAdapter 的新執行個體。 例如: 
+雖然 TableAdapters 的設計是以**Dataset 設計工具**，做為巢狀類別的不會產生的 TableAdapter 類別<xref:System.Data.DataSet>。 它們位於不同的命名空間專屬於每個資料集。 比方說，如果您擁有名為資料集`NorthwindDataSet`，相關聯的 TableAdapters<xref:System.Data.DataTable>中的 s`NorthwindDataSet`會在`NorthwindDataSetTableAdapters`命名空間。 若要以程式設計方式存取特定的 TableAdapter，您必須宣告 TableAdapter 的新執行個體。 例如:
 
 [!code-csharp[VbRaddataTableAdapters#7](../data-tools/codesnippet/CSharp/fill-datasets-by-using-tableadapters_1.cs)]
 [!code-vb[VbRaddataTableAdapters#7](../data-tools/codesnippet/VisualBasic/fill-datasets-by-using-tableadapters_1.vb)]

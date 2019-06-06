@@ -47,12 +47,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 00873cd84b5a6d89469de26ed982b98d2dffa27c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5cd6cf11bce8b3b60a41b8306afed081a4ac5472
+ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62567099"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66715220"
 ---
 # <a name="dataset-tools-in-visual-studio"></a>Visual Studio 中的資料集工具
 
@@ -61,7 +61,7 @@ ms.locfileid: "62567099"
 
 A`DataSet`物件是基本上是小型資料庫的記憶體物件。 它包含`DataTable`， `DataColumn`，和`DataRow`物件中，您可以儲存和修改一或多個資料庫中的資料，而不需要維護的開啟連接。 資料集會維護其資料，變更的相關資訊，因此更新可以追蹤與您的應用程式變得重新連線時，傳送回資料庫。
 
-資料集和相關的類別會定義在<xref:System.Data?displayProperty=fullName>.NET Framework 類別庫中的命名空間。 您可以建立及修改資料集，以動態方式使用 ADO.NET 程式碼。 在本節中的文件會示範如何使用 Visual Studio 設計工具使用資料集。 會透過設計工具使用的資料集**TableAdapter**與資料庫互動的物件。 以程式設計方式建立的資料集使用**DataAdapter**物件。 如需以程式設計方式建立資料集的資訊，請參閱[Dataadapter 和 Datareader](/dotnet/framework/data/adonet/dataadapters-and-datareaders)。
+資料集和相關的類別會定義在<xref:System.Data?displayProperty=fullName>.NET API 中的命名空間。 您可以建立及修改資料集，以動態方式使用 ADO.NET 程式碼。 在本節中的文件會示範如何使用 Visual Studio 設計工具使用資料集。 會透過設計工具使用的資料集**TableAdapter**與資料庫互動的物件。 以程式設計方式建立的資料集使用**DataAdapter**物件。 如需以程式設計方式建立資料集的資訊，請參閱[Dataadapter 和 Datareader](/dotnet/framework/data/adonet/dataadapters-and-datareaders)。
 
 如果您的應用程式必須只從資料庫讀取資料，並不會執行更新、 新增，或刪除，您可以使用，通常取得較佳的效能`DataReader`物件擷取資料到泛型`List`物件或另一個集合物件。 如果您要顯示的資料，您可以資料繫結的使用者介面的集合。
 
