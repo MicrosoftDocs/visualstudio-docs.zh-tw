@@ -16,15 +16,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fcab7ac3bb2a7983d8500b6f27f910fa33fc1efe
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: fc3cdf49746340c76855e9afb000c754464d6223
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62929162"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66746091"
 ---
 # <a name="build-clickonce-applications-from-the-command-line"></a>從命令列建置 ClickOnce 應用程式
-在  [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)]，即使它們建立在整合式的開發環境 (IDE) 中，您可以建置專案，從命令列。 事實上，您可以重建專案，以建立[!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)]只有另一部電腦上[!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]安裝。 這可讓您重現組建，使用自動化程序，比方說，在中央的組建實驗室，或使用進階指令碼撰寫技巧，建置專案本身的範圍之外。
+在  [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)]，即使它們建立在整合式的開發環境 (IDE) 中，您可以建置專案，從命令列。 事實上，您可以重建專案，以建立[!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)]已只安裝.NET Framework 的另一部電腦上。 這可讓您重現組建，使用自動化程序，比方說，在中央的組建實驗室，或使用進階指令碼撰寫技巧，建置專案本身的範圍之外。
 
 ## <a name="use-msbuild-to-reproduce-clickonce-application-deployments"></a>使用 MSBuild 來重現 ClickOnce 應用程式部署
  當您叫用 msbuild /target:publish，在命令列時，它會告訴 MSBuild 系統建置專案，並建立[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]publish 資料夾中的應用程式。 這相當於選取**發佈**命令在 IDE 中。
@@ -73,7 +73,7 @@ ms.locfileid: "62929162"
 
 5. 輸入 `msbuild /target:publish`。
 
-   上述步驟將會產生完整[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]的子資料夾中的應用程式部署，您的專案命名為**發行**。 *CmdLineDemo.application*是[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]部署資訊清單。 資料夾*CmdLineDemo_1.0.0.0*包含的檔案*CmdLineDemo.exe*並*CmdLineDemo.exe.manifest*，則[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]應用程式資訊清單。 *Setup.exe*是啟動載入器，其預設值設定為安裝[!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]。 DotNetFX 資料夾包含的可轉散發套件[!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]。 這是完整的部署您的應用程式，透過 Web 或透過 UNC 或 CD/DVD 所需的檔案。
+   上述步驟將會產生完整[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]的子資料夾中的應用程式部署，您的專案命名為**發行**。 *CmdLineDemo.application*是[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]部署資訊清單。 資料夾*CmdLineDemo_1.0.0.0*包含的檔案*CmdLineDemo.exe*並*CmdLineDemo.exe.manifest*，則[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]應用程式資訊清單。 *Setup.exe*是啟動載入器，其預設值設定為安裝.NET Framework。 DotNetFX 資料夾包含.NET Framework 可轉散發套件。 這是完整的部署您的應用程式，透過 Web 或透過 UNC 或 CD/DVD 所需的檔案。
 
 ## <a name="publish-properties"></a>發佈屬性
  當您在上述程序中發佈應用程式時，下列屬性會插入到您的專案檔，發行精靈。 這些屬性會直接影響如何[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]產生的應用程式。

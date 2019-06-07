@@ -19,12 +19,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 5387ce65532cb532192191bd67f29cc7af6e28c0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b3ba92e154e3091f6ec483ba469c3fe60f50ec61
+ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62545289"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66744802"
 ---
 # <a name="ca2100-review-sql-queries-for-security-vulnerabilities"></a>CA2100:必須檢閱 SQL 查詢中是否有安全性弱點
 
@@ -36,7 +36,8 @@ ms.locfileid: "62545289"
 |中斷變更|非重大|
 
 ## <a name="cause"></a>原因
- 方法會設定<xref:System.Data.IDbCommand.CommandText%2A?displayProperty=fullName>所使用的字串，內建字串引數之方法的屬性。
+
+方法會設定<xref:System.Data.IDbCommand.CommandText%2A?displayProperty=fullName>所使用的字串，內建字串引數之方法的屬性。
 
 ## <a name="rule-description"></a>規則描述
 
@@ -48,7 +49,7 @@ ms.locfileid: "62545289"
 
 - 建置命令字串之前，請驗證使用者輸入的類型和內容。
 
-下列.NET Framework 型別會實作<xref:System.Data.IDbCommand.CommandText%2A>屬性或建構函式，使用字串引數設定的屬性。
+下列.NET 類型會實作<xref:System.Data.IDbCommand.CommandText%2A>屬性或建構函式，使用字串引數設定的屬性。
 
 - <xref:System.Data.Odbc.OdbcCommand?displayProperty=fullName> 和 <xref:System.Data.Odbc.OdbcDataAdapter?displayProperty=fullName>
 
@@ -60,32 +61,36 @@ ms.locfileid: "62545289"
 
 請注意，在明確或隱含使用 ToString 方法的型別時，違反此規則來建構查詢字串。 下列為範例。
 
-```
+```csharp
 int x = 10;
 string query = "SELECT TOP " + x.ToString() + " FROM Table";
 ```
 
- 因為惡意使用者可以覆寫 tostring （） 方法違反此規則。
+因為惡意使用者可以覆寫 tostring （） 方法違反此規則。
 
- 也會隱含地使用 ToString 時，會違反規則。
+也會隱含地使用 ToString 時，會違反規則。
 
-```
+```csharp
 int x = 10;
 string query = String.Format("SELECT TOP {0} FROM Table", x);
 ```
 
 ## <a name="how-to-fix-violations"></a>如何修正違規
- 若要修正此規則的違規情形，請使用參數化的查詢。
+
+若要修正此規則的違規情形，請使用參數化的查詢。
 
 ## <a name="when-to-suppress-warnings"></a>隱藏警告的時機
- 它可安全地隱藏此規則的警告，如果命令文字不包含任何使用者輸入。
+
+它可安全地隱藏此規則的警告，如果命令文字不包含任何使用者輸入。
 
 ## <a name="example"></a>範例
- 下列範例示範的方法中， `UnsafeQuery`，，違反規則和方法， `SaferQuery`，使用參數化的命令字串符合規則。
 
- [!code-vb[FxCop.Security.ReviewSqlQueries#1](../code-quality/codesnippet/VisualBasic/ca2100-review-sql-queries-for-security-vulnerabilities_1.vb)]
- [!code-csharp[FxCop.Security.ReviewSqlQueries#1](../code-quality/codesnippet/CSharp/ca2100-review-sql-queries-for-security-vulnerabilities_1.cs)]
- [!code-cpp[FxCop.Security.ReviewSqlQueries#1](../code-quality/codesnippet/CPP/ca2100-review-sql-queries-for-security-vulnerabilities_1.cpp)]
+下列範例示範的方法中， `UnsafeQuery`，，違反規則和方法， `SaferQuery`，使用參數化的命令字串符合規則。
+
+[!code-vb[FxCop.Security.ReviewSqlQueries#1](../code-quality/codesnippet/VisualBasic/ca2100-review-sql-queries-for-security-vulnerabilities_1.vb)]
+[!code-csharp[FxCop.Security.ReviewSqlQueries#1](../code-quality/codesnippet/CSharp/ca2100-review-sql-queries-for-security-vulnerabilities_1.cs)]
+[!code-cpp[FxCop.Security.ReviewSqlQueries#1](../code-quality/codesnippet/CPP/ca2100-review-sql-queries-for-security-vulnerabilities_1.cpp)]
 
 ## <a name="see-also"></a>另請參閱
- [安全性概觀](/dotnet/framework/data/adonet/security-overview)
+
+- [安全性概觀](/dotnet/framework/data/adonet/security-overview)

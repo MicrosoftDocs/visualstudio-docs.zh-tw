@@ -18,12 +18,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 346a7f4cc7c7a8e6f579f94c6294ce9577fa01c7
-ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
+ms.openlocfilehash: 4886a11d7d207523785b9d568226ae98a9e97b28
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "65842083"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66744579"
 ---
 # <a name="ca1052-static-holder-types-should-be-sealed"></a>CA1052:靜態預留位置類型應該為密封的
 
@@ -46,7 +46,7 @@ ms.locfileid: "65842083"
 
 ## <a name="how-to-fix-violations"></a>如何修正違規
 
-若要修正此規則的違規情形，將標示為的型別`sealed`或`NotInheritable`。 如果您的目標.NET Framework 2.0 或更新版本，較好的方法將標示為的型別`static`或`Shared`。 以這種方式，您不需要宣告以防止建立類別的私用建構函式。
+若要修正此規則的違規情形，將標示為的型別`sealed`或`NotInheritable`。 如果專案的目標.NET Framework 2.0 或更新版本，較好的方法將標示為的型別`static`或`Shared`。 以這種方式，您不需要宣告以防止建立類別的私用建構函式。
 
 ## <a name="when-to-suppress-warnings"></a>隱藏警告的時機
 

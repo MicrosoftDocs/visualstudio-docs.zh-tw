@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 06b96327205369d0280a865b632801edbf199745
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 99db3d51414197df469aaa2eabe97e0967c31b05
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63407857"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66746034"
 ---
 # <a name="ltcompatibleframeworksgt-element-clickonce-deployment"></a>&lt;compatibleFrameworks&gt;項目 （ClickOnce 部署）
 識別安裝及執行此應用程式所需的 .NET Framework 版本。
@@ -41,7 +41,7 @@ ms.locfileid: "63407857"
 ```
 
 ## <a name="elements-and-attributes"></a>元素和屬性
- `compatibleFrameworks`項目時，需要部署資訊清單目標[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]所提供的執行階段[!INCLUDE[net_v40_short](../code-quality/includes/net_v40_short_md.md)]或更新版本。 `compatibleFrameworks`元素包含一或多個`framework`項目會指定此應用程式可以執行所在的.NET Framework 版本。 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]執行階段將執行應用程式在第一個可用`framework`這份清單中。
+ `compatibleFrameworks`項目時，需要部署資訊清單目標[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]提供由.NET Framework 4 或更新版本的執行階段。 `compatibleFrameworks`元素包含一或多個`framework`項目會指定此應用程式可以執行所在的.NET Framework 版本。 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]執行階段將執行應用程式在第一個可用`framework`這份清單中。
 
  下表列出屬性，`compatibleFrameworks`項目支援。
 
@@ -61,7 +61,7 @@ ms.locfileid: "63407857"
 ## <a name="remarks"></a>備註
 
 ## <a name="example"></a>範例
- 下列程式碼範例所示`compatibleFrameworks`中的項目[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]部署資訊清單。 可以執行此部署[!INCLUDE[net_client_v40_long](../deployment/includes/net_client_v40_long_md.md)]。 它也可以執行[!INCLUDE[net_v40_short](../code-quality/includes/net_v40_short_md.md)]因為它的超集[!INCLUDE[net_client_v40_long](../deployment/includes/net_client_v40_long_md.md)]。
+ 下列程式碼範例所示`compatibleFrameworks`中的項目[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]部署資訊清單。 可以執行此部署[!INCLUDE[net_client_v40_long](../deployment/includes/net_client_v40_long_md.md)]。 因為它的超集時，它可以也在.NET Framework 4 上執行[!INCLUDE[net_client_v40_long](../deployment/includes/net_client_v40_long_md.md)]。
 
 ```xml
 <compatibleFrameworks xmlns="urn:schemas-microsoft-com:clickonce.v2">

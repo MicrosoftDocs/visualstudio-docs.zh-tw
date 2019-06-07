@@ -22,12 +22,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e3dd75e8c88f87991abbdaa74a711b8f3c7324b5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 4d6ac13c6eb76bff5ffc07043fd20063700237fc
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62927295"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66745588"
 ---
 # <a name="lttrustinfogt-element-clickonce-application"></a>&lt;trustInfo&gt; 元素 (ClickOnce 應用程式)
 描述應用程式在用戶端電腦上執行所需的最低安全性權限。
@@ -87,7 +87,7 @@ ms.locfileid: "62927295"
      必要項。 識別權限版本。 這個值通常是 `1`。
 
 ## <a name="ipermission"></a>IPermission
- 選擇性。 這個元素是 `PermissionSet` 元素的子項。 `IPermission` 元素完全識別 [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]中的權限類別。 `IPermission` 元素有下列屬性，但可以有對應到權限類別上屬性 (property) 的其他屬性 (attribute)。 若要取得特定權限的語法，請查看 Security.config 檔案所列範例。
+ 選擇性。 這個元素是 `PermissionSet` 元素的子項。 `IPermission`元素完全識別.NET Framework 中的權限類別。 `IPermission` 元素有下列屬性，但可以有對應到權限類別上屬性 (property) 的其他屬性 (attribute)。 若要取得特定權限的語法，請查看 Security.config 檔案所列範例。
 
 - `class`
 

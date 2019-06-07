@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fc32ed6c4e696b18e89822baff461da0873a7ed5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d6dca2c7838ce40f8d24e3afbd898206d0cb9191
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62898103"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66747445"
 ---
 # <a name="ltproductgt-element-bootstrapper"></a>&lt;產品&gt;項目 （啟動載入器）
 `Product`項目是最上層 XML 元素內的產品檔案。
@@ -145,7 +145,7 @@ ProductCode
 |`ProductCode`|產品的唯一識別碼。|
 
 ## <a name="example"></a>範例
- 下列程式碼範例會顯示完整的產品檔案安裝[!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]。
+ 下列程式碼範例會顯示完整的產品檔案安裝.NET Framework。
 
 ```xml
 <?xml version="1.0" encoding="utf-8" ?>

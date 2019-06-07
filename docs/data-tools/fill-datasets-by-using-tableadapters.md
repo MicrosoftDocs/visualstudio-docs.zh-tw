@@ -19,12 +19,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 30a2860ae1dfb9d428f65812590675fccb42cfe5
-ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
+ms.openlocfilehash: f0047ee38a6fda4738c773c36a85e14cba1e37fe
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "66715190"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66745533"
 ---
 # <a name="fill-datasets-by-using-tableadapters"></a>使用 TableAdapter 填入資料集
 
@@ -85,7 +85,7 @@ Tableadapter 會擴充功能的標準資料配接器藉由將封裝設定<xref:S
 
 ## <a name="tableadapter-methods-and-properties"></a>TableAdapter 方法和屬性
 
-TableAdapter 類別不是屬於[!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]。 這表示您無法進行查詢文件中的**物件瀏覽器**。 它會建立在設計階段，當您使用其中一個先前所述精靈。 當您在建立時指派給 TableAdapter 的名稱根據您正在使用之資料表的名稱。 例如，當您建立名為資料庫中的資料表為基礎的 TableAdapter `Orders`，名為 TableAdapter `OrdersTableAdapter`。 可以使用變更類別名稱的 TableAdapter**名稱**中的屬性**Dataset 設計工具**。
+TableAdapter 類別不是.NET 類型。 這表示您無法進行查詢文件中的**物件瀏覽器**。 它會建立在設計階段，當您使用其中一個先前所述精靈。 當您在建立時指派給 TableAdapter 的名稱根據您正在使用之資料表的名稱。 例如，當您建立名為資料庫中的資料表為基礎的 TableAdapter `Orders`，名為 TableAdapter `OrdersTableAdapter`。 可以使用變更類別名稱的 TableAdapter**名稱**中的屬性**Dataset 設計工具**。
 
 以下是常用的方法和 Tableadapter 的屬性：
 
@@ -122,7 +122,7 @@ Tableadapter 支援可為 null 的型別`Nullable(Of T)`和`T?`。 如需 Visual
 
 根據預設，當您建立包含相關的資料表的資料集時，會產生 TableAdapterManager 類別。 若要防止產生的類別，將變更的值`Hierarchical Update`屬性為 false 的資料集。 當您拖曳到設計介面上的 Windows Form 或 WPF 頁面產生關聯的資料表時，Visual Studio 會宣告類別成員變數。 如果您不使用資料繫結，您必須以手動方式將變數宣告。
 
-TableAdapterManager 類別不是屬於[!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]。 因此，您無法查詢文件中。 它會建立在設計階段資料集的建立程序的一部分。
+TableAdapterManager 類別不是.NET 類型。 因此，您無法查詢文件中。 它會建立在設計階段資料集的建立程序的一部分。
 
 以下是常用的方法和屬性`TableAdapterManager`類別：
 

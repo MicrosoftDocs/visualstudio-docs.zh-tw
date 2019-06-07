@@ -7,22 +7,24 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: eb5f395952b17b6937dc264f8bec8021e6627d45
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: b82af5d19b45092f649b22503cfbdf1001433c30
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63438172"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66746798"
 ---
-# <a name="creating-a-windows-forms-based-domain-specific-language"></a>建立 Windows Form 架構之網域指定的語言
-您可以使用 Windows Form 顯示定義域專屬語言 (DSL) 模型，而不是使用 DSL 圖表的狀態。 本主題會引導您完成繫結至 DSL 中，使用 Visual Studio Visualization and Modeling SDK 的 Windows Form。
+# <a name="create-a-windows-forms-based-domain-specific-language"></a>建立 Windows Form 架構特定領域語言
 
- ![DSL&#45;Wpf&#45;2](../modeling/media/dsl-wpf-2.png) DSL 執行個體，顯示 Windows Form 使用者介面和 [模型總管] 中。
+您可以使用 Windows Form 顯示定義域專屬語言 (DSL) 模型，而不是使用 DSL 圖表的狀態。 本主題會引導您使用 Visual Studio Visualization and Modeling SDK 的 dsl 繫結 Windows Form。
 
-## <a name="creating-a-windows-forms-dsl"></a>建立 Windows Form DSL
- **最小 WinForm 設計工具**DSL 」 範本會建立最少的 DSL，您可以修改以符合您自己的需求。
+下圖顯示 Windows 表單 UI 和 DSL 執行個體的 [模型總管]:
 
-#### <a name="to-create-a-minimal-winforms-dsl"></a>若要建立的最小的 WinForms DSL
+![在 Visual Studio 中的 DSL 執行個體](../modeling/media/dsl-wpf-2.png)
+
+## <a name="create-a-windows-forms-dsl"></a>建立 Windows Form DSL
+
+**最小 WinForm 設計工具**DSL 」 範本會建立最少的 DSL，您可以修改以符合您自己的需求。
 
 1. 建立從 DSL**最小 WinForm 設計工具**範本。
 
@@ -37,7 +39,7 @@ ms.locfileid: "63438172"
 
    1. 轉換所有範本。
 
-   2. 建置並執行範例 (**CTRL + F5**)。
+   2. 建置並執行範例 (**Ctrl**+**F5**)。
 
    3. 在 Visual Studio 的實驗性執行個體，開啟`Sample`偵錯的專案中的檔案。
 
@@ -62,14 +64,14 @@ ms.locfileid: "63438172"
     - 名為的檔案`DataBinding.cs`，其中包含的其他部分定義`ModelViewControl`。 若要查看其內容，在**方案總管**，開啟檔案的捷徑功能表，然後選擇**檢視程式碼**。
 
 ### <a name="about-the-ui-project"></a>關於在 UI 專案
- 當您更新 DSL 定義檔案，以定義您自己的 DSL 時，您必須更新中的控制項`UI`專案以顯示您的 DSL。 不同於`Dsl`並`DslPackage`專案，此範例`UI`專案不從產生`DslDefinitionl.dsl`。 您可以加入產生程式碼，如果您想，雖然這不涵蓋在本逐步解說.tt 檔案。
 
-## <a name="updating-the-dsl-definition"></a>更新 DSL 定義
- 下列 DSL 定義會在本逐步解說。
+當您更新 DSL 定義檔案，以定義您自己的 DSL 時，您必須更新中的控制項`UI`專案以顯示您的 DSL。 不同於`Dsl`並`DslPackage`專案，此範例`UI`專案不從產生`DslDefinitionl.dsl`。 您可以加入產生程式碼，如果您想，雖然這不涵蓋在本逐步解說.tt 檔案。
 
- ![DSL&#45;Wpf&#45;1](../modeling/media/dsl-wpf-1.png)
+## <a name="update-the-dsl-definition"></a>更新 DSL 定義
 
-#### <a name="to-update-the-dsl-definition"></a>若要更新 DSL 定義
+下列 DSL 定義會在本逐步解說。
+
+![DSL&#45;Wpf&#45;1](../modeling/media/dsl-wpf-1.png)
 
 1. 在 DSL 設計工具中開啟 DslDefinition.dsl。
 
@@ -107,20 +109,21 @@ ms.locfileid: "63438172"
     > [!NOTE]
     > 在這個階段，而且未發生錯誤無法建置其他專案。 不過，我們想要建置 Dsl 專案，使其組件可供使用，資料來源精靈。
 
-## <a name="updating-the-ui-project"></a>更新 UI 專案
- 現在您可以建立新的使用者控制項，將會顯示儲存在 DSL 模型中的資訊。 若要連接至模型的使用者控制項的最簡單方式是透過資料繫結。 資料繫結名稱為配接器類型**ModelingBindingSource**專為連接到非 VMSDK 介面的 Dsl。
+## <a name="update-the-ui-project"></a>更新 UI 專案
 
-#### <a name="to-define-your-dsl-model-as-a-data-source"></a>若要定義 DSL 模型做為資料來源
+現在您可以建立新的使用者控制項，將會顯示儲存在 DSL 模型中的資訊。 若要連接至模型的使用者控制項的最簡單方式是透過資料繫結。 資料繫結名稱為配接器類型**ModelingBindingSource**專為連接到非 VMSDK 介面的 Dsl。
+
+### <a name="define-your-dsl-model-as-a-data-source"></a>定義 DSL 模型做為資料來源
 
 1. 在 **資料**功能表上，選擇**顯示資料來源**。
 
-     [資料來源] 視窗隨即開啟。
+     [資料來源]  視窗隨即開啟。
 
-     選擇**加入新的資料來源**。 [資料來源組態精靈] 隨即開啟。
+     選擇**加入新的資料來源**。 [資料來源組態精靈]  隨即開啟。
 
 2. 選擇**物件**，**下一步**。
 
-     依序展開**Dsl**， **Company.FarmApp**，然後選取**伺服陣列**，這是您的模型的根類別。 選擇 [完成]。
+     依序展開**Dsl**， **Company.FarmApp**，然後選取**伺服陣列**，這是您的模型的根類別。 選擇 [完成]  。
 
      在 方案總管**UI**專案現在會包含**Properties\DataSources\Farm.datasource**
 
@@ -128,7 +131,7 @@ ms.locfileid: "63438172"
 
      ![DslWpf&#45;3](../modeling/media/dslwpf-3.png)
 
-#### <a name="to-connect-your-model-to-a-form"></a>您的模型連接至表單
+### <a name="connect-your-model-to-a-form"></a>您的模型連接至表單
 
 1. 在  **UI**專案中，刪除所有現有的.cs 檔案。
 
@@ -151,7 +154,7 @@ ms.locfileid: "63438172"
    > [!NOTE]
    > 是的動物 」 和 「 欄位項目從資料來源視窗拖曳至控制項的替代步驟。 此動作會自動建立資料格和格線檢視與資料來源之間的繫結。 不過，此繫結運作不正常的 Dsl。 因此最好是建立資料格和繫結以手動方式。
 
-7. 如果 [工具箱] 中不含**ModelingBindingSource**工具，請將它加入。 在捷徑功能表上**資料**索引標籤上，選擇**選擇項目**。 在 [**選擇工具箱項目**對話方塊中，選取**ModelingBindingSource**從 **.NET Framework] 索引標籤**。
+7. 如果 [工具箱] 中不含**ModelingBindingSource**工具，請將它加入。 在捷徑功能表上**資料**索引標籤上，選擇**選擇項目**。 在 [**選擇工具箱項目**對話方塊中，選取**ModelingBindingSource**從 **.NET Framework** ] 索引標籤。
 
 8. 使用 [工具箱] 中建立兩個執行個體**ModelingBindingSource**，並將它們命名`AnimalBinding`和`FieldBinding`。
 
@@ -173,7 +176,7 @@ ms.locfileid: "63438172"
 
   ![DslWpf4](../modeling/media/dslwpf4.png)結構描述資料來源和檢視之間的連結。
 
-#### <a name="to-complete-the-bindings-to-the-dsl"></a>若要完成的 dsl 的繫結
+### <a name="complete-the-bindings-to-the-dsl"></a>完成在 dsl 線上的繫結
 
 1. 不同的程式碼檔案中加入下列程式碼**UI**專案：
 
@@ -207,10 +210,9 @@ ms.locfileid: "63438172"
     string viewControlTypeName = "FarmControl";
     ```
 
-## <a name="testing-the-dsl"></a>測試 DSL
- DSL 方案現在可以建置並執行，不過您可能想要新增其他的增強功能更新版本。
+## <a name="test-the-dsl"></a>測試 DSL
 
-#### <a name="to-test-the-dsl"></a>若要測試 DSL
+DSL 方案現在可以建置並執行，不過您可能想要新增其他的增強功能更新版本。
 
 1. 建置並執行方案。
 
@@ -229,13 +231,13 @@ ms.locfileid: "63438172"
 
      當您離開在表單中，對應的屬性變更，在 [屬性] 視窗中的每個欄位。
 
-## <a name="enhancing-the-dsl"></a>增強的 DSL
+## <a name="enhance-the-dsl"></a>增強的 DSL
 
-#### <a name="to-make-the-properties-update-immediately"></a>若要進行立即更新的屬性
+### <a name="make-the-properties-update-immediately"></a>請立即更新的屬性
 
 1. 在 FarmControl.cs [設計] 檢視中，選取簡單的欄位，例如名稱、 大小或 IsOrganic。
 
-2. 在 [屬性] 視窗中，依序展開**DataBindings** ，然後開啟 **（進階）**。
+2. 在 [屬性] 視窗中，依序展開**DataBindings** ，然後開啟 **（進階）** 。
 
      在 [**格式化與進階繫結**] 對話方塊底下**資料來源更新模式**，選擇**OnPropertyChanged**。
 
@@ -243,7 +245,7 @@ ms.locfileid: "63438172"
 
      請確認當您變更欄位，也就是伺服器陣列模型變更立即的對應屬性的內容。
 
-#### <a name="to-provide-add-buttons"></a>若要提供新增按鈕
+### <a name="provide-add-buttons"></a>提供新增按鈕
 
 1. 在 FarmControl.cs 設計 檢視中，使用工具箱 中建立的表單上的按鈕。
 
@@ -301,7 +303,8 @@ ms.locfileid: "63438172"
    ![DSL&#45;Wpf&#45;2](../modeling/media/dsl-wpf-2.png)
 
 ### <a name="about-the-code-to-add-an-element"></a>關於程式碼中新增項目
- 新的項目按鈕，如下列替代程式碼則稍微簡單一些。
+
+新的項目按鈕，如下列替代程式碼則稍微簡單一些。
 
 ```csharp
 private void NewSheepButton_Click(object sender, EventArgs e)
@@ -314,9 +317,9 @@ private void NewSheepButton_Click(object sender, EventArgs e)
 }
 ```
 
- 不過，此程式碼不會設定新的項目的預設名稱。 它不會執行任何您可能已經定義中的自訂的合併**項目合併指示詞**的 DSL，並不會執行任何可能已定義的自訂合併程式碼。
+不過，此程式碼不會設定新的項目的預設名稱。 它不會執行任何您可能已經定義中的自訂的合併**項目合併指示詞**的 DSL，並不會執行任何可能已定義的自訂合併程式碼。
 
- 因此我們建議您改用<xref:Microsoft.VisualStudio.Modeling.ElementOperations>來建立新的項目。 如需詳細資訊，請參閱 <<c0> [ 自訂項目的建立和移動](../modeling/customizing-element-creation-and-movement.md)。
+因此我們建議您改用<xref:Microsoft.VisualStudio.Modeling.ElementOperations>來建立新的項目。 如需詳細資訊，請參閱 <<c0> [ 自訂項目的建立和移動](../modeling/customizing-element-creation-and-movement.md)。
 
 ## <a name="see-also"></a>另請參閱
 

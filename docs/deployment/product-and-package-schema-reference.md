@@ -25,15 +25,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 489415eba929a73c25b8aea7262c3e930a5d90cd
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1570aa3d4ea72dc1d133ce3096e1726fa1ffb782
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62898129"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66745619"
 ---
 # <a name="product-and-package-schema-reference"></a>產品和封裝結構描述參考
-A*產品檔案*會描述所有所需的外部相依性的 XML 資訊清單[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]應用程式。 外部相依性的範例包括[!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]和 Microsoft Data Access Components (MDAC)。 封裝檔案與產品檔案類似，但用來安裝相依性，例如當地語系化組件、 授權合約，以及文件的文化特性相依元件。
+A*產品檔案*會描述所有所需的外部相依性的 XML 資訊清單[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]應用程式。 外部相依性的範例包括.NET Framework 和 Microsoft Data Access Components (MDAC)。 封裝檔案與產品檔案類似，但用來安裝相依性，例如當地語系化組件、 授權合約，以及文件的文化特性相依元件。
 
  產品和套件檔案包含的其中一個最上層`Product`或`Package`項目，每個均包含下列項目。
 
@@ -53,7 +53,7 @@ A*產品檔案*會描述所有所需的外部相依性的 XML 資訊清單[!INCL
  `InstallChecks` 測試該 setup.exe 應該執行給定的封裝存在。 `PackageFiles` 列出所有封裝的安裝程序可能必須安裝，應該指定的測試失敗。 每個命令項目，在命令執行測試所描述的其中一個`InstallChecks`，並指定其`PackageFile`執行測試失敗。 您可以使用`Strings`產品名稱和當地語系化錯誤訊息，以便您可以使用一個單一的安裝二進位檔來安裝各種語言的應用程式的項目。
 
 ## <a name="example"></a>範例
- 下列程式碼範例示範如何安裝完整的產品檔案[!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]。
+ 下列程式碼範例示範完整的產品檔案安裝.NET Framework。
 
 ```xml
 <?xml version="1.0" encoding="utf-8" ?>

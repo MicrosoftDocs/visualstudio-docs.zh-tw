@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 49ff55e2a261e86ec5aae09573d6ac40c74c0091
-ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.openlocfilehash: 71b9df9a8422d1b24a3e5476005942113356c353
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66263468"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66747430"
 ---
 # <a name="server-and-client-configuration-issues-in-clickonce-deployments"></a>ClickOnce 部署中的伺服器和用戶端組態問題
 如果您在 Windows Server 上使用 Internet Information Services (IIS)，而且您的部署包含 Windows 無法辨識的檔案類型，例如 Microsoft Word 檔案，IIS 將會拒絕傳送該檔案中，與您的部署將不會成功。
@@ -41,7 +41,7 @@ ms.locfileid: "66263468"
 
   不過，您可以停用此選項藉由清除**使用".deploy"副檔名**選項[發行選項 對話方塊中](/previous-versions/visualstudio/visual-studio-2010/7z83t16a(v=vs.100))，在此情況下，您必須設定網頁伺服器，以解除封鎖所有的檔案副檔名在應用程式中使用。
 
-  您必須設定 *.manifest*， *.application*，並 *.deploy*，例如，如果您使用未安裝了的 IIS [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]，或如果您是使用另一部 Web 伺服器 (例如 Apache)。
+  您必須設定 *.manifest*， *.application*，並 *.deploy*，比方說，如果您使用的 IIS 有未安裝.NET Framework 中，或如果您是使用另一部 Web 伺服器 (例如 Apache)。
 
 ## <a name="clickonce-and-secure-sockets-layer-ssl"></a>ClickOnce 和安全通訊端層 (SSL)
  A[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]應用程式將會正常運作透過 SSL，但 Internet Explorer 時引發的 SSL 憑證的相關提示。 沒有發生問題的憑證，例如當站台名稱不相符或憑證已過期時，可能會引發的提示。 若要讓[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]工作透過 SSL 連線，請確定憑證是最新狀態，和憑證資料比對的站台資料。
@@ -121,7 +121,7 @@ ms.locfileid: "66263468"
   如需在 Windows Server 上設定 MIME 類型的特定指示，請參閱 Microsoft 知識庫文件 KB326965，「 IIS 6.0 不會不會提供未知的 MIME 類型 」 在[ http://support.microsoft.com/default.aspx?scid=kb; en-us-我們; 326965](http://support.microsoft.com/default.aspx?scid=kb;en-us;326965)。
 
 ## <a name="content-type-mappings"></a>內容類型對應
- 發佈適用於透過 HTTP 的內容類型 （也稱為 MIME 類型） 時 *.application*檔案應該是 「 應用程式/x-ms-應用程式。 」 如果您有[!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)]安裝在伺服器上，這會為您自動設定。 如果未安裝，則您需要建立新的 MIME 類型關聯，如[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]應用程式 vroot （或整部伺服器）。
+ 發佈適用於透過 HTTP 的內容類型 （也稱為 MIME 類型） 時 *.application*檔案應該是 「 應用程式/x-ms-應用程式。 」 如果您有伺服器上安裝的.NET Framework 2.0，這會為您自動設定。 如果未安裝，則您需要建立新的 MIME 類型關聯，如[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]應用程式 vroot （或整部伺服器）。
 
  如果您使用 IIS 伺服器部署，執行<em>inetmgr。</em>exe，並將新的 「 應用程式/x-ms-應用程式 」 的內容類型加入 *.application*延伸模組。
 

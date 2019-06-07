@@ -26,12 +26,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7c9172749dc00acf0fd43725f6754373a0ade16e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 41e6e5bf2152fffb06acfb8b5e1f3283da75a19a
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62900354"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66745961"
 ---
 # <a name="ltdependencygt-element-clickonce-application"></a>&lt;相依性&gt;項目 （ClickOnce 應用程式）
 識別平台或組件的相依性所需的應用程式。
@@ -126,7 +126,7 @@ ms.locfileid: "62900354"
 |-----------------------| - |
 | `dependencyType` | 必要項。 指定相依性類型。 有效值為 `preprequisite` 和 `install`。 `install`組件已安裝的一部分[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]應用程式。 A`prerequisite`組件必須位於全域組件快取 (GAC) 之前[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]應用程式安裝。 |
 | `allowDelayedBinding` | 必要項。 指定是否可以在執行階段以程式設計方式載入組件。 |
-| `group` | 選擇性。 如果`dependencyType`屬性設為`install`，視該只有安裝指定的組件的具名的群組。 如需詳細資訊，請參閱[逐步解說：依需求使用設計工具以 ClickOnce 部署 API 下載組件](../deployment/walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer.md)。<br /><br /> 如果設定為`framework`而`dependencyType`屬性設為`prerequisite`，將組件指定為.NET Framework 的一部分。 在安裝時，這個組件不檢查全域組件快取 (GAC)[!INCLUDE[net_v40_short](../code-quality/includes/net_v40_short_md.md)]和更新版本。 |
+| `group` | 選擇性。 如果`dependencyType`屬性設為`install`，視該只有安裝指定的組件的具名的群組。 如需詳細資訊，請參閱[逐步解說：依需求使用設計工具以 ClickOnce 部署 API 下載組件](../deployment/walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer.md)。<br /><br /> 如果設定為`framework`而`dependencyType`屬性設為`prerequisite`，將組件指定為.NET Framework 的一部分。 在.NET Framework 4 和更新版本上安裝時，全域組件快取 (GAC) 不會檢查這個組件。 |
 | `codeBase` | 當`dependencyType`屬性設為`install`。 相依的組件的路徑。 可能是絕對路徑或資訊清單的程式碼的相對路徑的基底。 此路徑必須是為了讓組件資訊清單有效的 URI。 |
 | `size` | 當`dependencyType`屬性設為`install`。 相依的組件，以位元組為單位的大小。 |
 

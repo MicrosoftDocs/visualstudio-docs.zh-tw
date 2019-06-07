@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9d2350a495bf0540f77ff6f0d4222b18431e1586
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 9bf1985e63fef0f567cb3a765915f5c6f73cdc59
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62540868"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66745203"
 ---
 # <a name="code-analysis-application-errors"></a>程式碼分析應用程式錯誤
 
@@ -46,8 +46,8 @@ ms.locfileid: "62540868"
 |[CA0065](ca0065.md)|不支援的中繼資料建構：類型 '*TypeName*'包含的屬性和具有相同名稱的欄位'*PropertyFieldName*'|
 |[CA0066](ca0066.md)|值 '*VersionID*' 提供給 **/targetframeworkversion**不是可辨識的版本。|
 |[CA0067](ca0067.md)|找不到目錄。|
-|[CA0068](ca0068.md)|偵錯目標組件，找不到資訊 *'AssemblyName'*。|
-|[CA0069](ca0069.md)|使用替代的平台。 *FrameworkVersion1*找不到。 使用*FrameworkVersion2*改。 為了獲得最佳分析結果，請確定已安裝正確的.NET Framework。|
+|[CA0068](ca0068.md)|偵錯目標組件，找不到資訊 *'AssemblyName'* 。|
+|[CA0069](ca0069.md)|使用替代的平台。 *FrameworkVersion1*找不到。 使用*FrameworkVersion2*改。 為了獲得最佳分析結果，請確定已安裝正確的 framework 版本。|
 |[CA0070](ca0070.md)|無法載入組件或類型，因為安全性權限。|
 |[CA0501](ca0501.md)|無法讀取輸出報告。|
 |[CA0502](ca0502.md)|不支援的語言。|

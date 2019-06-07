@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 89436ba28cd47463709fca9b7d6293dab934b549
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c3bbcbb078925f36204c472c27821e6ba94fa4e0
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62993543"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66747542"
 ---
 # <a name="how-to--with-text-templates"></a>如何 ... 使用文字範本
 Visual Studio 中的文字範本會提供任何類型的產生文字的一種方式。 您可以使用文字範本產生的文字，在執行階段為您的應用程式的一部分，並在設計階段，來產生一些您的專案程式碼。 本主題摘要說明最常詢問"How do I...？ 」 問題。
@@ -33,7 +33,7 @@ Visual Studio 中的文字範本會提供任何類型的產生文字的一種方
 
 - 您可以將執行階段文字範本加入專案。 此範本會建立一個類別，在您程式碼中，您可以具現化，並使用產生的文字。 您可以傳遞給它的資料，在建構函式參數。 如需詳細資訊，請參閱 <<c0> [ 執行階段使用 T4 文字範本產生文字](../modeling/run-time-text-generation-with-t4-text-templates.md)。
 
-- 如果您想要從只能在執行階段可用的範本產生，您可以使用標準文字範本。 如果您正在撰寫的 Visual Studio 擴充功能，您可以叫用文字範本化服務。 如需詳細資訊，請參閱 <<c0> [ 叫用 VS 擴充功能中的文字轉換](../modeling/invoking-text-transformation-in-a-vs-extension.md)。 在其他內容中，您可以使用文字範本化引擎。 如需詳細資訊，請參閱<xref:Microsoft.VisualStudio.TextTemplating.Engine?displayProperty=fullName>。
+- 如果您想要從只能在執行階段可用的範本產生，您可以使用標準文字範本。 如果您正在撰寫的 Visual Studio 擴充功能，您可以叫用文字範本化服務。 如需詳細資訊，請參閱 <<c0> [ 叫用 VS 擴充功能中的文字轉換](../modeling/invoking-text-transformation-in-a-vs-extension.md)。 在其他內容中，您可以使用文字範本化引擎。 如需詳細資訊，請參閱 <xref:Microsoft.VisualStudio.TextTemplating.Engine?displayProperty=fullName>。
 
      使用\<#@parameter#> 指示詞，以將參數傳遞至這些範本。 如需詳細資訊，請參閱 < [T4 參數指示詞](../modeling/t4-parameter-directive.md)。
 
@@ -45,13 +45,14 @@ Visual Studio 中的文字範本會提供任何類型的產生文字的一種方
      在您的程式碼中，使用`this.Host.ResolvePath(filename)`來取得檔案的完整路徑。
 
 ### <a name="invoke-methods-from-a-template"></a>叫用方法，從範本
- 如果方法已存在，比方說，在標準[!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]類別：
+
+如果方法已存在，比方說，在.NET 類別中：
 
 - 使用  \<#@assembly#> 指示詞，以載入組件，並使用\<#@import#> 來設定命名空間內容。 如需詳細資訊，請參閱 < [T4 匯入指示詞](../modeling/t4-import-directive.md)。
 
    如果您經常使用相同的組件，並匯入指示詞，請考慮撰寫指示詞處理器。 在每個範本中，您可以叫用指示詞處理器，而這可以載入組件和模型檔案，並設定命名空間內容。 如需詳細資訊，請參閱 <<c0> [ 建立自訂 T4 文字範本指示詞處理器](../modeling/creating-custom-t4-text-template-directive-processors.md)。
 
-  如果您要自行撰寫方法：
+如果您要自行撰寫方法：
 
 - 如果您正在撰寫執行階段文字範本，請撰寫執行階段文字範本的名稱相同的部分類別定義。 這個類別中加入額外的方法。
 
@@ -70,14 +71,14 @@ Visual Studio 中的文字範本會提供任何類型的產生文字的一種方
 
 ### <a name="generate-files-from-a-complex-model"></a>透過複雜的模型產生檔案
 
-- 請考慮建立特定領域語言 (DSL) 來代表此模型。 這讓您更輕鬆地撰寫範本，因為您是使用型別和屬性會反映在模型中項目的名稱。 您沒有要剖析的檔案，或瀏覽 XML 節點。 例如: 
+- 請考慮建立特定領域語言 (DSL) 來代表此模型。 這讓您更輕鬆地撰寫範本，因為您是使用型別和屬性會反映在模型中項目的名稱。 您沒有要剖析的檔案，或瀏覽 XML 節點。 例如:
 
      `foreach (Book book in this.Library) { ... }`
 
      如需詳細資訊，請參閱 < [Getting Started with 定義域專屬語言](../modeling/getting-started-with-domain-specific-languages.md)並[特定領域語言產生程式碼](../modeling/generating-code-from-a-domain-specific-language.md)。
 
 ### <a name="get-data-from-visual-studio"></a>從 Visual Studio 中取得資料
- 若要將提供在 Visual Studio 中設定的服務`hostSpecific`屬性，並載入`EnvDTE`組件。 例如: 
+ 若要將提供在 Visual Studio 中設定的服務`hostSpecific`屬性，並載入`EnvDTE`組件。 例如:
 
 ```csharp
 <#@ template hostspecific="true" language="C#" #>

@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8222c6526d54ffb7721c2f2799458fe5c8277cd7
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 3d4339295c47ee6bc8915eecfb581d9a0e8a4bed
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63406641"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66747674"
 ---
 # <a name="trusted-application-deployment-overview"></a>信任的應用程式部署概觀
 本主題提供如何部署 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 應用程式的概觀，使用受信任的應用程式部署技術可提高此應用程式的權限。
@@ -80,7 +80,7 @@ ms.locfileid: "63406641"
 - *CertMgr.exe*，為 Internet Explorer 的元件，因此存在於 Windows 98 和所有更新版本上。 如需詳細資訊，請參閱 < [Certmgr.exe （憑證管理員工具）](/dotnet/framework/tools/certmgr-exe-certificate-manager-tool)。
 
 ### <a name="create-a-clickonce-application"></a>建立 ClickOnce 應用程式
- [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 應用程式是 [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 用戶端應用程式，並結合描述應用程式及提供安裝參數的資訊清單檔案。 您可以使用 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 中的 [發行]  命令 ，將程式變成 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]應用程式。 或者，您可以使用 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 隨附的工具，產生 [!INCLUDE[winsdklong](../deployment/includes/winsdklong_md.md)]部署所需的所有檔案。 如需詳細步驟[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]部署，請參閱[逐步解說：手動部署 ClickOnce 應用程式](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)。
+ A[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]應用程式是.NET Framework 用戶端的應用程式，結合描述應用程式，並提供安裝參數的資訊清單檔案。 您可以使用 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 中的 [發行]  命令 ，將程式變成 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]應用程式。 或者，您可以使用 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 隨附的工具，產生 [!INCLUDE[winsdklong](../deployment/includes/winsdklong_md.md)]部署所需的所有檔案。 如需詳細步驟[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]部署，請參閱[逐步解說：手動部署 ClickOnce 應用程式](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)。
 
  信任的應用程式部署是 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]所特有，並且僅能與 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 應用程式搭配使用。
 

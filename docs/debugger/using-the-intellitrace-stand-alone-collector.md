@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5ff893f5603d3156d4ed6fe09848682ab5d04b06
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: cf83992e92c90600f63516919774fe09f06434ff
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63407619"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66746114"
 ---
 # <a name="using-the-intellitrace-stand-alone-collector-c-visual-basic"></a>使用 IntelliTrace 獨立收集器 (C#，Visual Basic)
 
@@ -84,7 +84,7 @@ ms.locfileid: "63407619"
 
    - **Microsoft 下載中心**：
 
-     1. 選擇 **IntelliTraceCollector.exe**旁邊的 [下載] 。
+     1. 選擇 **IntelliTraceCollector.exe**旁邊的 [下載]  。
 
      2. 將 IntelliTraceCollector.exe 儲存至收集器目錄，例如：**C:\IntelliTraceCollector**
 
@@ -106,18 +106,18 @@ ms.locfileid: "63407619"
 
    2. 瀏覽至收集器目錄，例如：**C:\IntelliTraceCollector**
 
-   3. 使用 **expand** 命令 (結尾含句點 (**.**))，以展開 IntelliTraceCollection.cab：
+   3. 使用 **expand** 命令 (結尾含句點 ( **.** ))，以展開 IntelliTraceCollection.cab：
 
         `expand  /f:* IntelliTraceCollection.cab .`
 
        > [!NOTE]
-       > 句點 (**.**) 會保留含有當地語系化收集計劃的子資料夾。
+       > 句點 ( **.** ) 會保留含有當地語系化收集計劃的子資料夾。
 
 ## <a name="ConfigurePermissionsRunningCollector"></a> 設定收集器目錄的權限
 
 1. 在 App 伺服器上，以系統管理員身分開啟命令提示字元視窗。
 
-2. 使用 Windows **icacls** 命令，授與伺服器管理員收集器目錄的完整權限。 例如：
+2. 使用 Windows **icacls** 命令，授與伺服器管理員收集器目錄的完整權限。 例如:
 
      `icacls "C:\IntelliTraceCollector" /grant "` *\<Domain\AdministratorID>* `":F`
 
@@ -125,13 +125,13 @@ ms.locfileid: "63407619"
 
     1. 將收集器目錄的完整權限授與執行 IntelliTrace PowerShell Cmdlet 的人員。
 
-         例如: 
+         例如:
 
          `icacls "C:\IntelliTraceCollector" /grant "` *\<Domain\UserID>* `":F`
 
     2. 將收集器目錄的讀取和執行權限授與 Web App 或 SharePoint 應用程式的應用程式集區。
 
-         例如: 
+         例如:
 
         - 針對 **DefaultAppPool** 應用程式集區中的 Web App：
 
@@ -151,17 +151,17 @@ ms.locfileid: "63407619"
 
     1. 以系統管理員身分開啟 PowerShell 命令視窗。
 
-        1. 依序選擇 [開始] 、[所有程式] 、[附屬應用程式] 和 [Windows PowerShell] 。
+        1. 依序選擇 [開始]  、[所有程式]  、[附屬應用程式]  和 [Windows PowerShell]  。
 
         2. 選擇下列其中一個步驟：
 
-            - 在 64 位元作業系統上，開啟 **Windows PowerShell**的捷徑功能表。 選擇 [以系統管理員身分執行] 。
+            - 在 64 位元作業系統上，開啟 **Windows PowerShell**的捷徑功能表。 選擇 [以系統管理員身分執行]  。
 
-            - 在 32 位元作業系統上，開啟 **Windows PowerShell (x86)** 的捷徑功能表。 選擇 [以系統管理員身分執行] 。
+            - 在 32 位元作業系統上，開啟 **Windows PowerShell (x86)** 的捷徑功能表。 選擇 [以系統管理員身分執行]  。
 
     2. 在 PowerShell 命令視窗中，使用 **Import-Module** 命令匯入 **Microsoft.VisualStudio.IntelliTrace.PowerShell.dll**。
 
-         例如: 
+         例如:
 
          `Import-Module "C:\IntelliTraceCollector\Microsoft.VisualStudio.IntelliTrace.PowerShell.dll"`
 
@@ -179,7 +179,7 @@ ms.locfileid: "63407619"
 
 2. 針對 Web App 或 SharePoint 應用程式，將 .iTrace 檔案目錄的完整權限授與其應用程式集區。 您可以使用 Windows **icacls** 命令，或使用 Windows 檔案總管 (或檔案總管)。
 
-    例如: 
+    例如:
 
    - 使用 Windows **icacls** 命令設定權限：
 
@@ -197,17 +197,17 @@ ms.locfileid: "63407619"
 
      1. 開啟 .iTrace 檔案目錄的 [屬性]  。
 
-     2. 在 [安全性]  索引標籤上，依序選擇 [編輯] 和 [新增] 。
+     2. 在 [安全性]  索引標籤上，依序選擇 [編輯]  和 [新增]  。
 
-     3. 請確認 [內建安全性主體]  出現在 [選取這個物件類型]  方塊中。 如果未出現，請選擇 [物件類型]，以將它加入。
+     3. 請確認 [內建安全性主體]  出現在 [選取這個物件類型]  方塊中。 如果未出現，請選擇 [物件類型]  ，以將它加入。
 
-     4. 請確認您的本機電腦出現在 [從這個位置]  方塊中。 如果未出現，請選擇 [位置] 變更它。
+     4. 請確認您的本機電腦出現在 [從這個位置]  方塊中。 如果未出現，請選擇 [位置]  變更它。
 
      5. 在 [輸入要選取的物件名稱]  方塊中，加入 Web App 或 SharePoint 應用程式的應用程式集區。
 
-     6. 選擇 [檢查名稱]  來解析名稱。 選擇 [確定] 。
+     6. 選擇 [檢查名稱]  來解析名稱。 選擇 [確定]  。
 
-     7. 請確認應用程式集區具有 [完全控制] 。
+     7. 請確認應用程式集區具有 [完全控制]  。
 
 ## <a name="BKMK_Collect_Data_from_IIS_Application_Pools"></a> 從 Web App 或 SharePoint 應用程式收集資料
 
@@ -377,9 +377,7 @@ ms.locfileid: "63407619"
 
 ## <a name="WhereElse"></a> 我還可以在哪裏取得 IntelliTrace 資料？
 
-- 從 偵錯在 Visual Studio Enterprise 中的工作階段的 IntelliTrace，請參閱[IntelliTrace 功能](../debugger/intellitrace-features.md)。
-
-- 從 Microsoft Test Manager 中的測試工作階段，請參閱[How to:收集 IntelliTrace 資料以協助偵錯困難的問題](../test/how-to-collect-intellitrace-data-to-help-debug-difficult-issues.md)。
+您可以取得 IntelliTrace 資料，從 IntelliTrace 偵錯在 Visual Studio Enterprise 中的工作階段。 請參閱[IntelliTrace 功能](../debugger/intellitrace-features.md)。
 
 ## <a name="where-can-i-get-more-information"></a>哪裡可以取得詳細資訊？
  [使用儲存的 IntelliTrace 資料](../debugger/using-saved-intellitrace-data.md)

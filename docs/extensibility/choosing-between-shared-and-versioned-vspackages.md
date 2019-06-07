@@ -12,17 +12,17 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 96eea3cb0abe4c0e1151b15680bbab984f9131c5
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: de7bb2ee0335322e0b089fd2af81026b1f6bd1ca
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66321017"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66747782"
 ---
 # <a name="choose-between-shared-and-versioned-vspackages"></a>共用和建立版本的 Vspackage 之間進行選擇
 不同版本的 Visual Studio 可以在相同電腦上並存。 Vspackage 可以支援任何混合[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]版本。
 
- 您可以啟用透過兩種策略、 共用的策略或版本控制策略的並排顯示安裝的 Vspackage。 同時容納多個版本存在[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]相關聯的版本和[!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]。
+ 您可以啟用透過兩種策略、 共用的策略或版本控制策略的並排顯示安裝的 Vspackage。 同時容納多個版本存在[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]和相關聯的.NET Framework 版本。
 
  在共用的策略中，以用於多個版本的註冊一個 VSPackage [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]。 在版本控制策略中，安裝多個 VSPackage Dll，其中每個版本的[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]您支援。
 
