@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 15c02312d5c257f13b9c0394790bc8a2611d7972
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e19ec88a4dec7a13ecc3d77e5d4fc1f04bb114bd
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62949795"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66747806"
 ---
 # <a name="workflow-project-templates"></a>工作流程專案範本
 
@@ -67,7 +67,7 @@ Visual Studio 提供四個不同的工作流程專案範本：
 如需如何實作自訂活動設計工具的範例，請參閱[How to:建立自訂活動設計工具](/dotnet/framework/windows-workflow-foundation/how-to-create-a-custom-activity-designer)。
 
 > [!NOTE]
-> 可用於自訂活動設計工具，自訂活動和用於預設.NET Framework 的活動。
+> 可用於自訂活動設計工具，自訂活動和用於預設.NET 活動。
 
 ## <a name="see-also"></a>另請參閱
 

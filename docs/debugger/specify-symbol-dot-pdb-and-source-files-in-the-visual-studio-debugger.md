@@ -28,12 +28,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c5d7d5fa0a53ead2f49f89df37943d734a1b73fb
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: HT
+ms.openlocfilehash: 2f2343d71d2ed0745f9c5a2a799c3018a2e64945
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60045338"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66746258"
 ---
 # <a name="specify-symbol-pdb-and-source-files-in-the-visual-studio-debugger-c-c-visual-basic-f"></a>在 Visual Studio debugger 中指定符號 (.pdb) 和原始程式檔 (C#， C++，Visual Basic 中， F#)
 
@@ -76,7 +76,7 @@ ms.locfileid: "60045338"
 
      您可以使用的符號伺服器包括：
 
-     **公用 Microsoft 符號伺服器**:若要偵錯發生在系統 DLL 或協力廠商程式庫呼叫期間當機，因此您通常需要系統 *.pdb*檔案。 系統 *.pdb*檔案包含 Windows Dll 符號 *.exe*檔案和裝置驅動程式。 您可以取得 Windows 作業系統、 MDAC、 IIS、 ISA、 符號和[!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]從公用 Microsoft 符號伺服器。
+     **公用 Microsoft 符號伺服器**:若要偵錯發生在系統 DLL 或協力廠商程式庫呼叫期間當機，因此您通常需要系統 *.pdb*檔案。 系統 *.pdb*檔案包含 Windows Dll 符號 *.exe*檔案和裝置驅動程式。 您可以從公用 Microsoft 符號伺服器來取得 Windows 作業系統、 MDAC、 IIS、 ISA、 和.NET Framework 的符號。
 
      **內部網路或本機電腦上的符號伺服器**：您的小組或公司可以為自己的產品建立符號伺服器，以及作為外部來源符號的快取。 您的電腦上可能有符號伺服器。
 

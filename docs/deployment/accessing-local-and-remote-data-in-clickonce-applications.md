@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1feb0dc2282dff39b3895ed0e63a0fdefeb65872
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 2c2a4f2e9fe66ab049113111f13338cdced4e39e
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63406608"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66746074"
 ---
 # <a name="access-local-and-remote-data-in-clickonce-applications"></a>在 ClickOnce 應用程式中存取本機和遠端資料
 大部分應用程式都會取用或產生資料。 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 提供您許多選項，以進行本機和遠端的資料讀取及寫入。
@@ -37,7 +37,7 @@ ms.locfileid: "63406608"
 ### <a name="clickonce-data-directory"></a>ClickOnce 資料目錄
  在本機電腦安裝的每個 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 應用程式，都有資料目錄儲存在使用者的 [Documents and Settings] 資料夾中。 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 應用程式所含並標記為「資料」檔案的任何檔案，都會在安裝應用程式時複製到這個目錄。 資料檔案可以是任何檔案類型，最常使用的是文字、XML 和資料庫檔案 (例如 Microsoft Access.mdb 檔案)。
 
- 資料目錄的用途是要保存應用程式 Managed 資料，也就是應用程式所明確儲存和維護的資料。 應用程式資訊清單中所有不是標記為「資料」的靜態、非相依檔案都是位於應用程式目錄中， 這個目錄是應用程式可執行檔 (*.exe*) 以及組件所在的位置。
+ 資料目錄的用途是要保存應用程式 Managed 資料，也就是應用程式所明確儲存和維護的資料。 應用程式資訊清單中所有不是標記為「資料」的靜態、非相依檔案都是位於應用程式目錄中， 這個目錄是應用程式可執行檔 ( *.exe*) 以及組件所在的位置。
 
 > [!NOTE]
 > 在解除安裝 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 應用程式時，也會移除其資料目錄。 請絕對不要使用資料目錄來儲存由終端使用者所管理的資料 (例如文件)。
@@ -60,7 +60,7 @@ ms.locfileid: "63406608"
 
  您也可以使用 <xref:System.Windows.Forms.Application> 類別上的相關變數 (例如 <xref:System.Windows.Forms.Application.LocalUserAppDataPath%2A>)，來取得資料目錄路徑。
 
- 要管理其他檔案類型可能需要其他權限。 例如，如果您想要使用 Access 資料庫 (*.mdb*) 檔案中，您的應用程式必須判斷提示完全信任才能使用相關\<xref:System.Data > 類別。
+ 要管理其他檔案類型可能需要其他權限。 例如，如果您想要使用 Access 資料庫 ( *.mdb*) 檔案中，您的應用程式必須判斷提示完全信任才能使用相關\<xref:System.Data > 類別。
 
 #### <a name="data-directory-and-application-versions"></a>資料目錄和應用程式版本
  應用程式的每個版本都有自己的資料目錄，並與其他版本隔離。 不論在部署中是否包含任何資料檔，[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 都會建立此目錄，以便讓應用程式在執行階段有位置建立新的資料檔。 在安裝應用程式的新版本時， [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 將會從上一版的資料目錄中，將所有的現有資料檔都複製到新版的資料目錄。不論這些資料包含在原始部署中，或是由應用程式建立都是如此。
@@ -72,7 +72,7 @@ ms.locfileid: "63406608"
 ### <a name="isolated-storage"></a>隔離儲存區 (Isolated Storage)
  隔離儲存區使用簡單的 API 以提供建立和存取檔案的 API。 儲存檔案的實際位置對開發人員和使用者都是隱藏的。
 
- 隔離儲存區適用於 [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]的所有版本。 此外，隔離儲存區也適用於部分信任的應用程式，而不需要授與額外的權限。 如果應用程式必須以部分信任執行，並且必須維護應用程式特定資料，您就應該使用隔離儲存。
+ 隔離儲存區適用於所有.NET Framework 版本。 此外，隔離儲存區也適用於部分信任的應用程式，而不需要授與額外的權限。 如果應用程式必須以部分信任執行，並且必須維護應用程式特定資料，您就應該使用隔離儲存。
 
  如需詳細資訊，請參閱 [隔離儲存區](/dotnet/standard/io/isolated-storage)。
 
@@ -98,7 +98,7 @@ ms.locfileid: "63406608"
  如果 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 應用程式由於安全性限制而無法存取 Web 伺服器，此應用程式就必須為該網站判斷提示 <xref:System.Net.WebPermission> 。 如需增加安全性權限的詳細資訊[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]應用程式，請參閱 <<c2> [ 保護 ClickOnce 應用程式](../deployment/securing-clickonce-applications.md)。
 
 ### <a name="access-data-through-an-xml-web-service"></a>透過 XML Web service 存取資料
- 如果您將資料公開為 XML Web Service，就可以使用 XML Web Service Proxy 來存取資料， 此 Proxy 是使用 [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 所建立的 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]類別。 XML Web Service 的作業 (例如擷取客戶、下訂單等等)，都會公開為 Proxy 上的方法。 這讓 Web 服務比未經處理的文字或 XML 檔案更加容易使用。
+ 如果您將資料公開為 XML Web Service，就可以使用 XML Web Service Proxy 來存取資料， Proxy 是您建立使用.NET Framework 類別[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]。 XML Web Service 的作業 (例如擷取客戶、下訂單等等)，都會公開為 Proxy 上的方法。 這讓 Web 服務比未經處理的文字或 XML 檔案更加容易使用。
 
  如果 XML Web Service 透過 HTTP 進行作業，此服務就會承受與 <xref:System.Net.WebClient> 和 <xref:System.Net.HttpWebRequest> 類別相同的安全性限制。
 

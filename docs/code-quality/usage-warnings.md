@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 132f5c91b12ac0b7ada4d4987ca0298e47310436
-ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
+ms.openlocfilehash: 53e7c0232406462a4c5938fd3f971189c9b2daca
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "66715168"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66745068"
 ---
 # <a name="usage-warnings"></a>用法警告
 
@@ -56,7 +56,7 @@ ms.locfileid: "66715168"
 |[CA2225:運算子多載必須有具名的替代項目](../code-quality/ca2225-operator-overloads-have-named-alternates.md)|偵測到運算子多載，且找不到預期的具名替代方法。 具名的替代成員可存取運算子，與相同的功能，並可供開發人員並不支援多載的運算子的語言設計程式。|
 |[CA2226:運算子應該有對稱的多載](../code-quality/ca2226-operators-should-have-symmetrical-overloads.md)|型別會實作相等或不等比較運算子，並不會實作相反的運算子。|
 |[CA2227:集合屬性應該為唯讀](../code-quality/ca2227-collection-properties-should-be-read-only.md)|可寫入的集合屬性允許使用者以不同的集合來取代該集合。 唯讀屬性會從取代過程中停止集合，但是仍然允許設定個別成員。|
-|[CA2228:不要使用尚未發行的格式建置的資源](../code-quality/ca2228-do-not-ship-unreleased-resource-formats.md)|使用發行前版本的.NET framework 所建置的資源檔可能不支援的.NET framework 的版本。|
+|[CA2228:不要使用尚未發行的格式建置的資源](../code-quality/ca2228-do-not-ship-unreleased-resource-formats.md)|使用.NET 的發行前版本所建置的資源檔可能會無法使用所支援的.NET 版本。|
 |[CA2229：必須實作序列化建構函式](../code-quality/ca2229-implement-serialization-constructors.md)|若要修正此規則的違規情形，請實作序列化建構函式。 針對密封類別，讓建構函式成為 private，否則為 protected。|
 |[CA2230： 必須使用 params 做為變數引數](../code-quality/ca2230-use-params-for-variable-arguments.md)|公用或保護的類型包含使用 VarArgs 呼叫慣例之公用或保護的方法，而不是 params 關鍵字。|
 |[CA2231：在覆寫 ValueType.Equals 上多載等號運算子](../code-quality/ca2231-overload-operator-equals-on-overriding-valuetype-equals.md)|實值型別會覆寫`Object.Equals`但不會實作等號比較運算子。|

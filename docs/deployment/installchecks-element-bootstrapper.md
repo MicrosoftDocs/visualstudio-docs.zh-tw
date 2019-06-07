@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e45a2d0527e1d245a0d034310939bd1601db8adc
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 79bbb413c31c77e59ec39b706d4937421096168f
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62927903"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66747523"
 ---
 # <a name="ltinstallchecksgt-element-bootstrapper"></a>&lt;InstallChecks&gt;項目 （啟動載入器）
 `InstallChecks`項目支援啟動各種測試，以確定所有的應用程式的適當必要條件都已安裝在本機電腦。
@@ -144,7 +144,7 @@ ms.locfileid: "62927903"
  而下的項目`InstallChecks`定義要執行的測試，它們不會執行它們。 若要執行測試，您必須建立`Command`底下的項目`Commands`項目。
 
 ## <a name="example"></a>範例
- 下列程式碼範例示範`InstallChecks`項目，因為它會在產品檔案[!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]。
+ 下列程式碼範例示範`InstallChecks`項目，因為它在產品檔案用於.NET Framework。
 
 ```xml
 <InstallChecks>

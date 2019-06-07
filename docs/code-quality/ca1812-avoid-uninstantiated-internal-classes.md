@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a0d55af3c5522c6bb9aa3ad8a023f070c187ca6f
-ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
+ms.openlocfilehash: 6946434708e38bde7f6efcfc8404da14f91b41ee
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "66714262"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66744707"
 ---
 # <a name="ca1812-avoid-uninstantiated-internal-classes"></a>CA1812:避免使用未執行個體化的內部類別
 
@@ -58,7 +58,7 @@ ms.locfileid: "66714262"
 
 若要修正此規則的違規情形，移除類型，或加入程式碼使用它。 如果型別只包含`static`方法，加入下列其中一種類型，以避免編譯器發出的預設公用執行個體建構函式：
 
-- `static`修飾詞C#類型的目標[!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)]或更新版本。
+- `static`修飾詞C#.NET Framework 2.0 或更新版本為目標的類型。
 
 - 私用建構函式以.NET Framework 1.0 和 1.1 版為目標的類型。
 

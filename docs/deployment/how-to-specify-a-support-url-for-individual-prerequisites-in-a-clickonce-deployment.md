@@ -15,15 +15,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cf115ad6ce8fb589e9b1c617f40053cf95af2b9c
-ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.openlocfilehash: 78ba7398694e097f324695b6357abc0b35f8d3ee
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66263211"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66745572"
 ---
-# <a name="how-to-specify-a-support-url-for-individual-prerequisites-in-a-clickonce-deployment"></a>HOW TO：在 ClickOnce 部署中指定個別必要條件的支援 URL
-A[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]部署可以測試數目的用戶端電腦必須要有的必要條件[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]執行的應用程式。 這些相依性包括所需的最低版本的[!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]，作業系統和必須預先安裝在全域組件快取 (GAC) 中的任何組件的版本。 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]不過，無法安裝任何必要條件本身;如果找不到必要元件，它只是中止安裝，並顯示對話方塊，說明安裝失敗的原因。
+# <a name="how-to-specify-a-support-url-for-individual-prerequisites-in-a-clickonce-deployment"></a>作法：在 ClickOnce 部署中指定個別必要條件的支援 URL
+A[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]部署可以測試數目的用戶端電腦必須要有的必要條件[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]執行的應用程式。 這些相依性包括所需的最低版本.NET framework 版本的作業系統，以及必須預先安裝在全域組件快取 (GAC) 中的任何組件。 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]不過，無法安裝任何必要條件本身;如果找不到必要元件，它只是中止安裝，並顯示對話方塊，說明安裝失敗的原因。
 
  有兩種方法來安裝必要條件。 您可以使用啟動載入器應用程式進行安裝。 或者，您可以指定個別必要條件、 支援 URL 找不到必要條件時，會顯示在對話方塊中的使用者。 參考該 URL 的頁面可以包含連結安裝必要的先決條件的指示。 如果應用程式未指定為個別的必要條件、 支援 URL[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]顯示整個應用程式的部署資訊清單中指定的支援 URL，如果已定義。
 
@@ -31,7 +31,7 @@ A[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]部署可以�
 
 ### <a name="specify-a-support-url-for-an-individual-prerequisite"></a>指定個別必要條件的支援 URL
 
-1. 開啟應用程式資訊清單 ( *.manifest*檔案) 的程式[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]在文字編輯器應用程式。
+1. 開啟應用程式資訊清單 ( *.manifest*檔案) 的[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]在文字編輯器應用程式。
 
 2. 針對作業系統的必要條件，新增`supportUrl`屬性設定為`dependentOS`項目：
 
@@ -65,7 +65,7 @@ A[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]部署可以�
      </dependency>
    ```
 
-5. 選擇性。 以.NET Framework 4 為目標的應用程式開啟部署資訊清單 ( *.application*檔案) 的程式[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]在文字編輯器應用程式。
+5. 選擇性。 以.NET Framework 4 為目標的應用程式開啟部署資訊清單 ( *.application*檔案) 的[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]在文字編輯器應用程式。
 
 6. 針對.NET Framework 4 先決條件是，新增`supportUrl`屬性設定為`compatibleFrameworks`項目：
 

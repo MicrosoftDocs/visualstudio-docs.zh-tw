@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3f3a1ee08fec613522be5247842e10ced1c032e7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 81a12f400ee870798759237e202d2ca358fefa69
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62898707"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66747517"
 ---
 # <a name="ltpackagefilesgt-element-bootstrapper"></a>&lt;請為 PackageFiles&gt;項目 （啟動載入器）
 `PackageFiles`項目包含`PackageFile`項目，定義執行的安裝套件`Command`項目。
@@ -62,7 +62,7 @@ ms.locfileid: "62898707"
 | `Hash` | 選擇性。 封裝檔案的 SHA1 雜湊。 這用來在安裝階段驗證檔案的完整性。 如果無法從封裝檔案計算相同的雜湊，將不會安裝封裝。 |
 
 ## <a name="example"></a>範例
- 下列程式碼範例會定義套件[!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]可轉散發套件和其相依性，例如 Windows Installer。
+ 下列程式碼範例會定義.NET Framework 可轉散發套件和其相依性，例如 Windows Installer 封裝。
 
 ```xml
 <PackageFiles>

@@ -10,12 +10,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: dc17f59858637048c12929411a0f413ed625ad10
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: e243ccfc92c5e17dd25e6d77dede439daac08761
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66331627"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66747721"
 ---
 # <a name="supply-undo-support-to-designers"></a>設計工具提供復原支援
 
@@ -29,7 +29,7 @@ ms.locfileid: "66331627"
 
 - 藉由實作支援提供的持續性和 CodeDOM<xref:System.ComponentModel.Design.Serialization.IDesignerSerializationService>和<xref:System.ComponentModel.Design.IComponentChangeService>類別。
 
-如需有關撰寫使用設計工具[!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]，請參閱 <<c2> [ 擴充設計階段支援](/previous-versions/37899azc(v=vs.140))。
+如需有關如何撰寫使用.NET Framework 的設計工具的詳細資訊，請參閱 <<c0> [ 擴充設計階段支援](/previous-versions/37899azc(v=vs.140))。
 
 [!INCLUDE[vsipsdk](../extensibility/includes/vsipsdk_md.md)]提供預設復原基礎結構：
 
@@ -50,7 +50,7 @@ ms.locfileid: "66331627"
 ## <a name="when-to-use-explicit-designer-undo-support"></a>使用明確的設計工具復原支援的時機
  如果他們使用圖形化使用者介面，稱為 「 檢視配接器，不是所提供的設計工具必須提供自己的復原管理<xref:System.Windows.Forms.Control>。
 
- 舉例來說，這可能會以 web 為基礎的圖形設計介面建立產品而非[!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]-以圖形化介面。
+ 舉例來說，這可能會建立產品的 web 架構的圖形設計介面，而不是.NET Framework 為基礎的圖形化介面。
 
  在此情況下，則需要 Visual Studio 中使用向此檢視配接器<xref:Microsoft.VisualStudio.Shell.Design.ProvideViewAdapterAttribute>，並提供明確的復原管理。
 
@@ -59,7 +59,7 @@ ms.locfileid: "66331627"
 ## <a name="undo-support-features-of-the-designer"></a>復原設計工具的支援的功能
  環境 SDK 可讓您提供預設實作的介面提供所需復原可供未使用的設計工具的支援<xref:System.Windows.Forms.Control>基礎類別，其使用者介面或標準的 CodeDOM 和持續性模型。
 
- <xref:Microsoft.VisualStudio.Shell.Design.OleUndoEngine>類別衍生自[!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]<xref:System.ComponentModel.Design.UndoEngine>類別使用的實作<xref:Microsoft.VisualStudio.OLE.Interop.IOleUndoManager>類別來管理復原作業。
+ <xref:Microsoft.VisualStudio.Shell.Design.OleUndoEngine>類別衍生自.NET Framework<xref:System.ComponentModel.Design.UndoEngine>類別使用的實作<xref:Microsoft.VisualStudio.OLE.Interop.IOleUndoManager>類別來管理復原作業。
 
  Visual Studio 提供設計工具恢復的下列功能：
 

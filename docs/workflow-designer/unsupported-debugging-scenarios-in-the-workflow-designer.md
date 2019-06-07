@@ -8,18 +8,16 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 83c9b1158319b580bc860982b6c51c9c28edf5af
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 62d8a2ad847ef1b9aaad02b2739e8154b3148425
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62433873"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66747262"
 ---
 # <a name="unsupported-debugging-scenarios-in-the-workflow-designer"></a>工作流程設計工具中不支援的偵錯情況
 
-在.NET Framework 4 工作流程設計工具加入許多新功能，但仍有某些不支援的偵錯案例。
-
-不支援的工作流程設計工具偵錯案例如下：
+工作流程設計工具不支援下列的偵錯案例：
 
 - 在編輯程式碼之後，就無法繼續執行。
 
@@ -29,7 +27,7 @@ ms.locfileid: "62433873"
 
 - 工作流程設計工具無法用來偵錯以程式碼 (而不使用設計工具) 所建立的工作流程。
 
-- 在舊版的 Windows Workflow Foundation (WF) 中建立的工作流程無法在.NET Framework 4 的設計工具中偵錯。
+- 無法偵錯在舊版的 Windows Workflow Foundation (WF) 中建立的工作流程，在.NET Framework 4 或更新版本。
 
 - 活動或 <xref:System.Activities.Statements.Flowchart> 節點之間的連結上無法定義中斷點。
 

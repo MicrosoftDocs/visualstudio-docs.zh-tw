@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 932ae7279b0bcb216d120f9ef6fb5c019e5094f5
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: de8e6cfa6ec99f42879043b873736102fd291176
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63408627"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66746144"
 ---
 # <a name="using-saved-intellitrace-data-c-visual-basic-c"></a>使用儲存的 IntelliTrace 資料 (C#，Visual Basic 中， C++)
 
@@ -37,7 +37,6 @@ ms.locfileid: "63408627"
     |**來源**|**請參閱**|
     |----------------|-------------|
     |在 Visual Studio Enterprise (但不是 Professional 或 Community 版本) 中的 IntelliTrace 工作階段|[IntelliTrace 功能](../debugger/intellitrace-features.md)|
-    |Microsoft Test Manager 中的測試工作階段。 這會將 .iTrace 檔案附加至 Team Foundation Server 工作項目。|[在手動測試中收集更多診斷資料](/azure/devops/test/mtm/collect-more-diagnostic-data-in-manual-tests?view=vsts)|
     |如果是在部署中執行的 ASP.NET Web App 和 SharePoint 應用程式，則來源為 Microsoft Monitoring Agent (獨立執行或搭配 System Center 2012 R2 Operations Manager 運作)|-   [於部署後診斷問題](../debugger/diagnose-problems-after-deployment.md)<br />-   [System Center 2012 R2 Operations Manager 的新功能](/previous-versions/system-center/system-center-2012-R2/dn249700(v=sc.12))|
 
 ## <a name="GetStarted"></a> 請您指定選項。
@@ -57,17 +56,17 @@ ms.locfileid: "63408627"
 
 - 如果 .iTrace 檔案是附加至 Team Foundation Server 工作項目，請在工作項目中依照下列步驟執行：
 
-    - 在 [所有連結] 下方找出 .iTrace 檔案。 開啟該檔案。
+    - 在 [所有連結]  下方找出 .iTrace 檔案。 開啟該檔案。
 
          \-或-
 
-    - 在 [重新產生步驟] 底下，選擇 [IntelliTrace]  連結。
+    - 在 [重新產生步驟]  底下，選擇 [IntelliTrace]  連結。
 
 > [!TIP]
-> 如果您在偵錯期間關閉了 IntelliTrace 檔案，您可以輕易地重新開啟它。 移至 [偵錯]  功能表，選擇 [IntelliTrace] 、[顯示記錄檔摘要] 。 您也可以選取 [IntelliTrace]  視窗中的 [顯示記錄檔摘要]  。 只有在使用 IntelliTrace 偵錯時，才能使用這個選項。
+> 如果您在偵錯期間關閉了 IntelliTrace 檔案，您可以輕易地重新開啟它。 移至 [偵錯]  功能表，選擇 [IntelliTrace]  、[顯示記錄檔摘要]  。 您也可以選取 [IntelliTrace]  視窗中的 [顯示記錄檔摘要]  。 只有在使用 IntelliTrace 偵錯時，才能使用這個選項。
 
 ## <a name="Understand"></a> 了解 IntelliTrace 記錄檔
- .iTrace 檔案中的下列某些區段，只有在您從特定來源 (例如，從 Test Manager 或 SharePoint 應用程式) 收集資料時才會出現。
+ 某些.iTrace 檔中的下列區段才會出現您收集的資料來自特定來源，例如，從 SharePoint 應用程式。
 
 |**區段**|**包含**|**資料收集來源**|
 |-----------------|------------------|---------------------------|
@@ -76,7 +75,6 @@ ms.locfileid: "63408627"
 |[分析](#Analysis)|僅適用於 SharePoint 2010 和 SharePoint 2013 應用程式。 診斷 IntelliTrace 和 SharePoint 事件，例如偵錯工具事件、ULS 事件、未處理的例外狀況，以及 Microsoft Monitoring Agent 所記錄的其他資料。|Microsoft 監視代理程式，可能是獨立收集器或搭配 System Center 2012 R2 Operations Manager|
 |[系統資訊](#SystemInfo)|主機系統的設定和規格|所有來源|
 |[執行緒清單](#ThreadsList)|在收集期間執行的執行緒|所有來源|
-|[測試資料](#TestData)|測試工作階段的測試步驟和結果|測試管理員|
 |[模組](#Modules)|目標處理序所載入的模組，以載入的順序排列顯示。|所有來源|
 |[Web 要求](#Modules)|實際執行 IIS 的 web 要求資料的 web 應用程式和 SharePoint 2010 和 SharePoint 2013|Microsoft Monitoring Agent 並獨立收集器|
 
@@ -84,7 +82,7 @@ ms.locfileid: "63408627"
 
 - 選擇資料行標頭來排序資料。
 
-- 使用搜尋方塊來篩選資料。 純文字搜尋適用於所有資料行 (除了時間資料行以外)。 您也可以每個資料行使用一個篩選條件，將要篩選的搜尋範圍限定在某特定資料行。 輸入不含空格的資料行名稱、冒號 (**:**) 和搜尋值。 後面要接著輸入分號 (**;**)，才能加入另一個資料行和搜尋值。
+- 使用搜尋方塊來篩選資料。 純文字搜尋適用於所有資料行 (除了時間資料行以外)。 您也可以每個資料行使用一個篩選條件，將要篩選的搜尋範圍限定在某特定資料行。 輸入不含空格的資料行名稱、冒號 ( **:** ) 和搜尋值。 後面要接著輸入分號 ( **;** )，才能加入另一個資料行和搜尋值。
 
      例如，若要在 [Description]  資料行中尋找含有 "slow" 這個字的效能事件，請輸入：
 
@@ -97,7 +95,7 @@ ms.locfileid: "63408627"
 
 ##### <a name="to-start-debugging-from-a-performance-event"></a>從效能事件開始偵錯
 
-1. 在 [效能違規] 下，檢閱所記錄的效能事件、它們的總執行時間和其他事件資訊。 然後更深入發掘在特定的效能事件期間所呼叫的方法。
+1. 在 [效能違規]  下，檢閱所記錄的效能事件、它們的總執行時間和其他事件資訊。 然後更深入發掘在特定的效能事件期間所呼叫的方法。
 
      ![檢視效能事件詳細資料](../debugger/media/ffr_itsummarypageperformance.png "FFR_ITSummaryPagePerformance")
 
@@ -128,11 +126,11 @@ ms.locfileid: "63408627"
 
 ##### <a name="to-start-debugging-from-an-exception"></a>從例外狀況開始偵錯
 
-1. 在 [例外狀況資料] 下，檢閱記錄的例外狀況事件、其類型、訊息，以及發生例外狀況的時間。 若要更深入發掘程式碼，請從例外狀況群組中最近發生的事件開始偵錯。
+1. 在 [例外狀況資料]  下，檢閱記錄的例外狀況事件、其類型、訊息，以及發生例外狀況的時間。 若要更深入發掘程式碼，請從例外狀況群組中最近發生的事件開始偵錯。
 
      ![從例外狀況事件開始偵錯](../debugger/media/ffr_itsummarypageexception.png "FFR_ITSummaryPageException")
 
-     您也可以直接按兩下事件。 如果事件沒有組成群組，請選取 [偵錯這個事件] 。
+     您也可以直接按兩下事件。 如果事件沒有組成群組，請選取 [偵錯這個事件]  。
 
      如果例外狀況是發生在您的應用程式程式碼中，Visual Studio 會移至發生例外狀況的位置。
 
@@ -143,7 +141,7 @@ ms.locfileid: "63408627"
     |**資料行**|**顯示的內容**|
     |----------------|-------------------|
     |**類型**|例外狀況的 .NET 類型|
-    |如果是組成群組的例外狀況，則為 [最新的訊息] ；如果是沒有組成群組的例外狀況，則為 [訊息]  |例外狀況所提供的訊息|
+    |如果是組成群組的例外狀況，則為 [最新的訊息]  ；如果是沒有組成群組的例外狀況，則為 [訊息] |例外狀況所提供的訊息|
     |如果是組成群組的例外狀況，則為 [計數] |例外狀況的擲回次數|
     |如果是沒有組成群組的例外狀況，則為 [執行緒 ID] |擲回例外狀況之執行緒的 ID|
     | 或 |擲回例外狀況時所記錄的時間戳記|
@@ -160,7 +158,7 @@ ms.locfileid: "63408627"
 
 1. 從來源複製 SharePoint 相互關聯識別碼。
 
-    例如: 
+    例如:
 
     ![IntelliTrace &#45; SharePoint 錯誤&#45;相互關聯識別碼](../debugger/media/sharepointerror_intellitrace.png "SharePointError_IntelliTrace")
 
@@ -168,7 +166,7 @@ ms.locfileid: "63408627"
 
     ![IntelliTrace 記錄檔&#45;輸入 SharePoint 相互關聯識別碼](../debugger/media/entersharepointcorrelationid.png "EnterSharePointCorrelationID")
 
-3. 在 [要求事件] 下方，檢查事件。 事件會依其發生順序從最上方開始顯示。
+3. 在 [要求事件]  下方，檢查事件。 事件會依其發生順序從最上方開始顯示。
 
    1. 選擇要查看其詳細資料的事件。
 
@@ -213,11 +211,11 @@ ms.locfileid: "63408627"
 
 ##### <a name="to-start-debugging-from-a-specific-thread"></a>若要從特定執行緒開始偵錯
 
-1. 在 [執行緒清單] 底下，選擇執行緒。
+1. 在 [執行緒清單]  底下，選擇執行緒。
 
-2. 在 [執行緒清單] 下方，選取 [開始偵錯] 。 您也可以按兩下執行緒。
+2. 在 [執行緒清單]  下方，選取 [開始偵錯]  。 您也可以按兩下執行緒。
 
-    若要從 App 的開頭處開始偵錯，請按兩下 [主執行緒] 。 請參閱[IntelliTrace 功能](../debugger/intellitrace-features.md)。
+    若要從 App 的開頭處開始偵錯，請按兩下 [主執行緒]  。 請參閱[IntelliTrace 功能](../debugger/intellitrace-features.md)。
 
    使用者建立的執行緒資料，可能會比伺服器針對 IIS 裝載的 Web App 所建立及管理的執行緒還要有用。
 
@@ -228,14 +226,11 @@ ms.locfileid: "63408627"
 |**開始時間**|執行緒的建立時間|
 |**結束時間**|執行緒的完成時間|
 
-### <a name="TestData"></a> 測試資料
- 檢查 Test Manager 在測試您的 App 時所記錄的 IntelliTrace 資料。
-
 ##### <a name="to-start-debugging-from-a-specific-test-step"></a>從特定測試步驟開始偵錯
 
-1. 展開 [測試步驟格線] 。 選取某個測試步驟。
+1. 展開 [測試步驟格線]  。 選取某個測試步驟。
 
-2. 在 [測試步驟格線] 下方，選取 [開始偵錯] 。 您也可以按兩下測試步驟。
+2. 在 [測試步驟格線]  下方，選取 [開始偵錯]  。 您也可以按兩下測試步驟。
 
      這會從所選取測試步驟之後的第一個有效的 IntelliTrace 事件開始偵錯。
 

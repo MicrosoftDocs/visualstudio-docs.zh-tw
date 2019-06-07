@@ -18,15 +18,15 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 649ba0583a70d0d53d8b12f26573daf3c52cf5e9
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: a5e79969c3b4be22a3c9bb01f06297f54b0734ee
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66331196"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66746013"
 ---
 # <a name="supporting-symbol-browsing-tools"></a>支援符號瀏覽工具
-**物件瀏覽器**，**類別檢視**，**呼叫瀏覽器**並**尋找符號結果**工具提供符號瀏覽 Visual Studio 中的功能。 這些工具顯示的符號的階層式樹狀結構檢視，並顯示在樹狀目錄中的符號之間的關聯性。 符號可能代表命名空間、 物件、 類別、 類別成員和各種元件中包含其他語言項目。 這些元件包括 Visual Studio 專案中，外部[!INCLUDE[dnprdnshort](../../code-quality/includes/dnprdnshort_md.md)]元件和型別 (.tlb) 程式庫。 如需詳細資訊，請參閱[檢視程式碼的結構](../../ide/viewing-the-structure-of-code.md)。
+**物件瀏覽器**，**類別檢視**，**呼叫瀏覽器**並**尋找符號結果**工具提供符號瀏覽 Visual Studio 中的功能。 這些工具顯示的符號的階層式樹狀結構檢視，並顯示在樹狀目錄中的符號之間的關聯性。 符號可能代表命名空間、 物件、 類別、 類別成員和各種元件中包含其他語言項目。 這些元件包括 Visual Studio 專案、.NET Framework 的外部元件和型別 (.tlb) 程式庫。 如需詳細資訊，請參閱[檢視程式碼的結構](../../ide/viewing-the-structure-of-code.md)。
 
 ## <a name="symbol-browsing-libraries"></a>符號瀏覽程式庫
  為語言實作者，您可以建立追蹤您的元件中的符號，並透過一組介面 Visual Studio 物件管理員提供的符號清單的程式庫來擴充 Visual Studio 符號瀏覽功能。 所描述的文件庫<xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleLibrary2>介面。 Visual Studio 物件管理員回應要求新的資料從符號瀏覽工具與文件庫中取得的資料，並將其組織。 接著，它會填入或更新工具，以要求的資料。 若要取得 Visual Studio 物件管理員 中，參考<xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectManager2>，傳遞<xref:Microsoft.VisualStudio.Shell.Interop.SVsObjectManager>服務識別碼`GetService`方法。

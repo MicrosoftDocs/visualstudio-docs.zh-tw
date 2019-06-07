@@ -16,18 +16,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: de3ca40696549ad9208ffd181f8dbc4e7f092b5d
-ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.openlocfilehash: 38418a1ca11c23ab12d64deadfb91079bc957493
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66263196"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66747487"
 ---
-# <a name="how-to-use-clickonce-to-deploy-applications-that-can-run-on-multiple-versions-of-the-net-framework"></a>作法：使用 ClickOnce 部署可在多個 .NET Framework 版本上執行的應用程式
+# <a name="how-to-use-clickonce-to-deploy-applications-that-can-run-on-multiple-versions-of-the-net-framework"></a>HOW TO：使用 ClickOnce 部署可在多個 .NET Framework 版本上執行的應用程式
 您可以部署目標使用 ClickOnce 部署技術的多個版本的.NET framework 的應用程式。 這需要您產生，並更新應用程式和部署資訊清單。
 
 > [!NOTE]
-> 變更多個版本的.NET framework 為目標的應用程式之前，您應該確定您的應用程式執行與多個.NET Framework 版本。 版本的 common language runtime 是不同[!INCLUDE[net_v40_short](../code-quality/includes/net_v40_short_md.md)]與.NET Framework 2.0、.NET Framework 3.0，以及.NET Framework 3.5。
+> 變更多個版本的.NET framework 為目標的應用程式之前，您應該確定您的應用程式執行與多個.NET Framework 版本。 版本的 common language runtime 是.NET Framework 2.0、.NET Framework 3.0 和.NET Framework 3.5 與.NET Framework 4 之間不同。
 
  此程序需要下列步驟：
 
@@ -88,7 +88,7 @@ ms.locfileid: "66263196"
    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true" group="framework">
    ```
 
-3. 更新的版本號碼`<assemblyIdentity>`Microsoft.Windows.CommonLanguageRuntime 項目是最小公分母的.NET framework 的版本號碼。 例如，如果應用程式的目標.NET Framework 3.5 和[!INCLUDE[net_v40_short](../code-quality/includes/net_v40_short_md.md)]，使用 [2.0.50727.0] 版本號碼和 XML 應該看起來如下：
+3. 更新的版本號碼`<assemblyIdentity>`Microsoft.Windows.CommonLanguageRuntime 項目是最小公分母的.NET framework 的版本號碼。 例如，如果應用程式的目標.NET Framework 3.5 和.NET Framework 4，使用 [2.0.50727.0] 版本號碼和 XML 看起來應該如下所示：
 
    ```xml
    <dependency>

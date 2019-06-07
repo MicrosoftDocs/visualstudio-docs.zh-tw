@@ -15,7 +15,7 @@ helpviewer_keywords:
 - XML schemas
 - XML [Visual Studio], SGML relationship to
 - CSS, style sheets for XML
-- XML [Visual Studio], .NET Framework classes
+- XML [Visual Studio], .NET classes
 - data [Visual Studio], XML
 - classes [Visual Studio], XML
 - style sheets, for XML
@@ -32,12 +32,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a8854aee047fa961c4f0973397cfc2fe6ac6e6ad
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d7493d6c10c83b16ad7579299a49a7747e34c20b
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62808167"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66746509"
 ---
 # <a name="xml-tools-in-visual-studio"></a>Visual Studio 中的 XML 工具
 
