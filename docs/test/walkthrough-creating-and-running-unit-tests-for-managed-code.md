@@ -13,12 +13,12 @@ manager: jillfra
 ms.workload:
 - dotnet
 author: gewarren
-ms.openlocfilehash: 173cc6711f46d7fddad92c3ac871809dda100f36
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 7c588966a957cf6d3127e03c67ad1a1d605fabce
+ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65704672"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66401725"
 ---
 # <a name="walkthrough-create-and-run-unit-tests-for-managed-code"></a>逐步解說：針對受控碼建立和執行單元測試
 
@@ -365,9 +365,9 @@ public void Debit_WhenAmountIsLessThanZero_ShouldThrowArgumentOutOfRange()
 
 ### <a name="continue-the-analysis"></a>繼續分析
 
-不過，最後兩個測試方法也令人困擾。 在任一測試時，您無法確定受測方法中的哪個條件會擲回例外狀況。 某種可區分兩個條件 (即負的付款金額或金額大於餘額) 的方式，會增加您對測試的信賴度。
+您可以進一步改善要測試的方法。 透過目前的實作，我們沒有辦法知道哪些條件 (`amount > m_balance` 或 `amount < 0`) 會導致測試期間擲回例外狀況。 我們只知道在方法中的某處擲回 `ArgumentOutOfRangeException`。 如果我們可以分辨 `BankAccount.Debit` 中的哪個條件造成擲回例外狀況 (`amount > m_balance` 或 `amount < 0`)，讓我們可以確信我們的方法正確地對其引數進行了例行性檢查，這樣會比較好。
 
-請再次查看受測方法，您會注意到兩個條件陳述式都使用只接受引數名稱作為參數的 `ArgumentOutOfRangeException` 建構函式：
+請再次查看受測方法 (`BankAccount.Debit`)，您會注意到兩個條件陳述式都使用只接受引數名稱作為參數的 `ArgumentOutOfRangeException` 建構函式：
 
 ```csharp
 throw new ArgumentOutOfRangeException("amount");

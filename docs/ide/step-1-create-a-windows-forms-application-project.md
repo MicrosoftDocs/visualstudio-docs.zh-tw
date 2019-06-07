@@ -1,6 +1,6 @@
 ---
 title: 步驟 1：建立 Windows Forms 應用程式專案
-ms.date: 03/23/2019
+ms.date: 06/01/2019
 ms.prod: visual-studio-windows
 ms.technology: vs-ide-general
 ms.topic: conceptual
@@ -10,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7f529d737816406b3a4f6aa9921a8dc6b902d2fb
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1b28b69f2a5f2b02c483c5d6813943297b13f173
+ms.sourcegitcommit: aeb1a1135dd789551e15aa5124099a5fe3f0f32b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62979850"
+ms.lasthandoff: 06/04/2019
+ms.locfileid: "66501061"
 ---
 # <a name="step-1-create-a-windows-forms-application-project"></a>步驟 1：建立 Windows Forms 應用程式專案
 
@@ -28,14 +28,13 @@ ms.locfileid: "62979850"
 
 ## <a name="open-visual-studio-2017"></a>開啟 Visual Studio 2017
 
-1. 在功能表列上，選擇 [檔案]   > [新增]   > [專案]  。 對話方塊看起來會像這樣。
+1. 在功能表列上，選擇 [檔案]   > [新增]   > [專案]  。 對話方塊看起來應該類似下列螢幕擷取畫面。
 
-     ![[新增專案] 對話方塊](../ide/media/newprojectdialogcallouts.png)<br/>
-[新增專案]  對話方塊 
+     ![[新增專案] 對話方塊](../ide/media/newprojectdialogcallouts.png)<br/>[新增專案] *對話方塊*
 
-2. 在 [新增專案]  對話方塊左側，選擇 [Visual C#]  或 [Visual Basic]  。
+2. 在 [新增專案]  對話方塊左側，選擇 [Visual C#]  或 [Visual Basic]  ，然後選擇 [Windows 桌面]  。
 
-3. 在範本清單中，選擇 [Windows Forms 應用程式 (.NET Framework)]  。 將新表單命名為 **PictureViewer**，然後選擇 [確定]  按鈕。
+3. 在範本清單中，選擇 [Windows Forms 應用程式 (.NET Framework)]  。 將新表單命名為 *PictureViewer*，然後選擇 [確定]  按鈕。
 
     >[!NOTE]
     >如果您未看到 [Windows Forms 應用程式 (.NET Framework)]  範本，請使用 Visual Studio 安裝程式來安裝 [.NET 桌面開發]  工作負載。<br/><br/>![Visual Studio 安裝程式中的 .NET 桌面開發工作負載](../ide/media/dot-net-desktop-dev-workload.png)<br/><br/> 如需詳細資訊，請參閱[安裝 Visual Studio](../install/install-visual-studio.md) 頁面。
@@ -50,7 +49,7 @@ ms.locfileid: "62979850"
 
    ![檢視 [建立新專案] 視窗](../get-started/media/vs-2019/create-new-project-dark-theme.png)
 
-1. 在 [建立新專案]  視窗中，在搜尋方塊內輸入或鍵入 *Windows Forms*。 接下來，從語言清單中選擇 **Visual Basic**，然後從平台清單中選擇 **Windows**。 
+1. 在 [建立新專案]  視窗中，在搜尋方塊內輸入或鍵入 *Windows Forms*。 接下來，從語言清單中選擇 **Visual Basic**，然後從平台清單中選擇 **Windows**。
 
    在您套用語言和平台的篩選條件之後，請選擇 [Windows Forms 應用程式 (.NET Framework)]  範本，然後選擇 [下一步]  。
 
@@ -59,13 +58,13 @@ ms.locfileid: "62979850"
    > [!NOTE]
    > 如果您未看到 [Windows Forms 應用程式 (.NET Framework)]  範本，您可以從 [建立新專案]  視窗中安裝。 在 [找不到你要尋找的項目嗎?]  訊息中，選擇 [安裝更多工具和功能]  連結。
    >
-   > ![[建立新專案] 視窗中「找不到您要尋找的項目嗎?」訊息的 [安裝更多工具和功能] 連結](../get-started/media/vs-2019/not-finding-what-looking-for.png) 
-   > 
+   > ![[建立新專案] 視窗中「找不到您要尋找的項目嗎?」訊息的 [安裝更多工具和功能] 連結](../get-started/media/vs-2019/not-finding-what-looking-for.png)
+   >
    > 接下來，在 Visual Studio 安裝程式中選擇 **.NET 桌面開發**工作負載。
-   > 
+   >
    > ![Visual Studio 安裝程式中的 .NET Core 工作負載](../ide/media/install-dot-net-desktop-env.png)
    >
-   > 接著，選擇Visual Studio 安裝程式中的 [修改]  按鈕。 系統可能會提示您儲存工作，若收到提示，請依提示執行。 接下來，選擇 [繼續]  以安裝工作負載。 
+   > 接著，選擇Visual Studio 安裝程式中的 [修改]  按鈕。 系統可能會提示您儲存工作，若收到提示，請依提示執行。 接下來，選擇 [繼續]  以安裝工作負載。
 
 1. 在 [設定您的新專案]  視窗的 [專案名稱]  方塊中鍵入或輸入 *PictureViewer*。 接著，選擇 [建立]  。
 

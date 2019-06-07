@@ -1,7 +1,7 @@
 ---
 title: 變更記錄檔 (Visual Studio Tools for Unity，Windows) | Microsoft Docs
 ms.custom: ''
-ms.date: 04/02/2019
+ms.date: 05/28/2019
 ms.technology: vs-unity-tools
 ms.topic: conceptual
 ms.assetid: ea490b7e-fc0d-44b1-858a-a725ce20e396
@@ -10,15 +10,75 @@ ms.author: johmil
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: f6523f958d334108eb6a3fbe9e5c44e416ff8df7
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: acf80d1c700c0ac6c889ecd786a53cccda8604f3
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63403213"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66327348"
 ---
 # <a name="change-log-visual-studio-tools-for-unity-windows"></a>變更記錄檔 (Visual Studio Tools for Unity，Windows)
 Visual Studio Tools for Unity 變更記錄。
+
+## <a name="4110"></a>4.1.1.0
+ 2019 年 5 月 24 日發行
+
+### <a name="new-features"></a>新功能
+
+- **整合：**
+
+    - 已將 MonoBehaviour API 更新為 2019.1。
+
+### <a name="bug-fixes"></a>Bug 修正
+
+- **整合：**
+
+    - 已修正啟用輕量型組建時輸出的報告警告和錯誤。
+    
+    - 已修正輕量型組建效能。
+
+## <a name="4100"></a>4.1.0.0
+ 2019 年 5 月 21 日發行
+
+### <a name="new-features"></a>新功能
+
+- **整合：**
+
+    - 已新增對新批次 API 的支援，以便更快地重新載入專案。
+    
+    - 已停用 Unity 專案的完整組建，改為使用 IntelliSense 錯誤和警告。 事實上，Unity 會使用代表 Unity 內部工作的類別庫專案，建立一個 Visual Studio 方案。 也就是說，當 Unity 的編譯管線遭到關閉時，它永遠不會使用或挑選 Visual Studio 中的組建結果。 在 Visual Studio 中建置只是消耗資源而已。 如果您因為有相依的工具或設定而需要完整組建，您可以停用此最佳化 (工具/選項/Tools for Unity/停用專案的完整組建)。 
+
+    - 載入 Unity 專案時，自動顯示 Unity 專案總管 (UPE)。 UPE 將會停駐 [方案總管] 旁邊。
+    
+    - 已使用 Unity 2019.x 更新專案名稱擷取機制。
+
+    - 已新增對 UPE 中 Unity 封裝的支援。 只有參考套件 (使用 ```Packages``` 資料夾中的 manifest.json) 和本機套件 (內嵌在 ```Packages``` 資料夾中) 會顯示。
+    
+- **Project Generation:**
+
+    - 處理解決方案檔案時，保留外部屬性。
+
+- **評估：**
+
+    - 已新增對別名限定名稱 (目前僅限於全域命名空間) 的支援。 因此，運算式評估工具現在會接受使用表單 global::namespace.type 的類型。
+    
+    - 已新增對 ```pointer[index]``` 表單的支援，即語意上與指標取值 ```*(pointer+index)``` 表單相同。
+
+### <a name="bug-fixes"></a>Bug 修正
+
+- **整合：**
+
+    - 已修正 Microsoft.VisualStudio.MPF 的相依性問題。
+    
+    - 已修正 UWP 播放程式連接，而不需要載入任何專案。
+    
+    - 已修正未連接 Visual Studio 時，自動資產資料庫重新整理。
+    
+    - 已修正標籤與核取方塊的佈景主題問題。
+    
+- **偵錯工具：**
+
+    - 已修正使用靜態建構函式逐步執行。
 
 ## <a name="4005"></a>4.0.0.5
  發行於 2019 年 2 月 27 日
@@ -880,7 +940,7 @@ Visual Studio Tools for Unity 變更記錄。
 
 - **Unity：** 在專案檔產生期間，查閱 .rsp 檔中的不安全旗標和自訂定義。
 
-- **UI：** 在 Visual Studio 中新增 Visual Studio Tools for Unity [選項] 對話方塊。
+- **UI：** 在 Visual Studio 中新增 Visual Studio Tools for Unity [選項]  對話方塊。
 
 ### <a name="bug-fixes"></a>Bug 修正
 

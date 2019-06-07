@@ -16,12 +16,12 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: 5e9cc4f579b5913d5be3030828cad1a799efcd72
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 740d6336ab4258d3111dd6708de859108e22365e
+ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62840403"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66402060"
 ---
 # <a name="step-2-create-your-first-aspnet-core-web-app"></a>步驟 2：建立您的第一個 ASP.NET Core Web 應用程式
 
@@ -33,7 +33,7 @@ _觀看此影片並跟著操作，建立您的第一個 ASP.NET Core 應用程�
 
 ## <a name="start-visual-studio-2019-and-create-a-new-project"></a>啟動 Visual Studio 2019 並建立新專案
 
-啟動 Visual Studio 2019 並按一下 [建立新專案]。 選擇 [ASP.NET Core Web 應用程式]。 選擇 [Web 應用程式] 範本，保留預設的專案名稱和位置。 按一下 [建立] 。 如需詳細指示，請參閱[本教學課程系列的上一段影片](tutorial-aspnet-core-ef-step-01.md)。
+啟動 Visual Studio 2019 並按一下 [建立新專案]  。 選擇 [ASP.NET Core Web 應用程式]  。 選擇 [Web 應用程式]  範本，保留預設的專案名稱和位置。 按一下 [建立]  。 如需詳細指示，請參閱[本教學課程系列的上一段影片](tutorial-aspnet-core-ef-step-01.md)。
 
 ![Visual Studio 2019 選擇 ASP.NET Core 專案選項](media/vs-2019/vs2019-choose-aspnetcore-project.png)
 
@@ -61,7 +61,7 @@ _觀看此影片並跟著操作，建立您的第一個 ASP.NET Core 應用程�
 
 ### <a name="startupcs"></a>Startup.cs
 
-在 *Program.cs* 中建立的 Web 主機會參考啟動類別，並呼叫其方法以設定應用程式。 ConfigureServices 方法負責設定應用程式要使用的任何服務。 `Configure` 方法會設定應用程式的 HTTP 要求管線。 每個要求都會經由此管線，在如此做時與「中介軟體」的每個片段互動。
+在 *Program.cs* 中建立的 Web 主機會參考啟動類別，並呼叫其方法以設定應用程式。 ConfigureServices 方法負責設定應用程式要使用的任何服務。 `Configure` 方法會設定應用程式的 HTTP 要求管線。 每個要求都會經由此管線，在如此做時與「中介軟體」  的每個片段互動。
 
 ### <a name="indexcshtml"></a>Index.cshtml
 
@@ -69,7 +69,7 @@ _觀看此影片並跟著操作，建立您的第一個 ASP.NET Core 應用程�
 
 ## <a name="run-the-application"></a>執行應用程式
 
-現在執行應用程式，並在瀏覽器中檢視它。 您可以使用 **Ctrl**+**F5**，或從 Visual Studio 的功能表選擇 [偵錯] > [啟動但不偵錯] 來執行應用程式。
+現在執行應用程式，並在瀏覽器中檢視它。 您可以使用 **Ctrl**+**F5**，或從 Visual Studio 的功能表選擇 [偵錯]   > [啟動但不偵錯]  來執行應用程式。
 
 ## <a name="customize-the-application"></a>自訂應用程式
 
@@ -111,6 +111,9 @@ public void OnGet()
 ```
 
 當您瀏覽至應用程式時，現在應會看到瀏覽器中實際的伺服器時間。
+
+> [!NOTE]
+> 您的輸出可能會與圖片不同，因為 ToShortDateTimeString 的輸出格式取決於目前的文化特性設定。 請參閱 <xref:System.DateTime.ToShortTimeString>。
 
 ![瀏覽器中的 Visual Studio 2019 ASP.NET Core 專案](media/vs-2019/vs2019-app-fixed-in-browser.png)
 

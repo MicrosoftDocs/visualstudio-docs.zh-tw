@@ -8,16 +8,16 @@ helpviewer_keywords:
 author: angelosp
 ms.author: angelpe
 manager: jillfra
-ms.openlocfilehash: 58e727c6335dd391abab4f50a110d361a658e00a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b40d943e2e05f380b5c8111db39c9cf13c8b3bf8
+ms.sourcegitcommit: ba5e072c9fedeff625a1332f22dcf3644d019f51
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62548831"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "66432268"
 ---
-# <a name="customize-file-nesting-in-solution-explorer"></a>自訂 [方案總管] 中的檔案巢狀
+# <a name="file-nesting-in-solution-explorer"></a>[方案總管] 中的檔案巢狀
 
-[方案總管] 中的相關檔案巢狀不是新的功能，但在這之前您無法控制的巢狀規則。 您可以選擇預設的 [關閉]、[預設] 和 [Web]，但您也可以將巢狀完全自訂成您慣用的情況。 您甚至可以建立特定解決方案和特定專案的設定，但之後根據它們建立更多。 先看一下您現成取得的設定。
+[方案總管]  會將相關的檔案設為巢狀結構，以協助整理這些檔案，並可輕鬆地找出它們。 例如，如果您將 Windows Forms 表單新增至專案，該表單的程式碼檔案在 [方案總管]  中，會以巢狀結構顯示在表單下方。 在 ASP.NET Core 專案中，檔案巢狀結構可以更進一步。 您可以選擇檔案巢狀的預設值為 [關閉]  、[預設]  或 [Web]  。 您也可以[自訂檔案的巢狀結構](#customize-file-nesting)或[建立方案與專案特有的設定](#create-project-specific-settings)。
 
 > [!NOTE]
 > 功能目前僅支援 ASP.NET Core 專案。
@@ -30,7 +30,7 @@ ms.locfileid: "62548831"
 
 * **關閉**：此選項提供沒有任何巢狀的一般檔案清單。
 
-* **預設**：此選項提供 [方案總管] 中的預設檔案巢狀行為。 如果沒有某個專案類型的設定存在，專案中的檔案便不會有巢狀結構。 如果有設定存在，例如 Web 專案，則會套用巢狀結構。
+* **預設**：此選項提供 [方案總管]  中的預設檔案巢狀行為。 如果沒有某個專案類型的設定存在，專案中的檔案便不會有巢狀結構。 如果有設定存在，例如 Web 專案，則會套用巢狀結構。
 
 * **Web**：此選項會將 **Web** 檔案巢狀行為套用至目前解決方案中的所有專案。 它有許多規則，我們鼓勵您查看，並告訴我們您的想法。 下列螢幕擷取畫面只強調您用此選項時得到的幾個檔案巢狀行為範例：
 
@@ -38,11 +38,11 @@ ms.locfileid: "62548831"
 
 ## <a name="customize-file-nesting"></a>自訂檔案巢狀
 
-如果您不喜歡現成取得的設定，可以自行建立自訂檔案巢狀設定，指示 [方案總管] 如何巢狀化檔案。 您可以盡情新增自訂檔案巢狀設定，並可可以視需要在它們之間切換。 若要建立新的自訂設定，就可以從空檔案開始，或者使用 [Web] 設定作為起點：
+如果您不喜歡現成取得的設定，可以自行建立自訂檔案巢狀設定，指示 [方案總管]  如何巢狀化檔案。 您可以盡情新增自訂檔案巢狀設定，並可可以視需要在它們之間切換。 若要建立新的自訂設定，就可以從空檔案開始，或者使用 [Web]  設定作為起點：
 
 ![新增自訂檔案巢狀規則](media/filenesting_addcustom.png)
 
-我們建議您使用 [Web] 設定作為您的起點，因為使用已經有作用的東西比較容易。 如果您使用 [Web] 設定作為起點，*.filenesting.json* 檔看起來類似於下列檔案：
+我們建議您使用 [Web]  設定作為您的起點，因為使用已經有作用的東西比較容易。 如果您使用 [Web]  設定作為起點， *.filenesting.json* 檔看起來類似於下列檔案：
 
 ![使用現有的檔案巢狀規則作為自訂設定的基礎](media/filenesting_editcustom.png)
 
@@ -56,7 +56,7 @@ ms.locfileid: "62548831"
 
 * **pathSegment**：使用這種類型的規則，將 *jquery.min.js* 巢狀放在 *jquery.js* 下
 
-* **allExtensions**：使用這種類型的規則，將 *file.** 巢狀放在 *file.js* 下
+* **allExtensions**：使用這種類型的規則，將 *file.* * 巢狀放在 *file.js* 下
 
 * **fileToFile**：使用這種類型的規則，將 *bower.json* 巢狀放在 *.bowerrc* 下
 
@@ -124,25 +124,25 @@ ms.locfileid: "62548831"
 
 ### <a name="file-nesting-button"></a>檔案巢狀按鈕
 
-您可以透過 [方案總管] 中的相同按鈕來管理所有設定，包括您自己的自訂設定：
+您可以透過 [方案總管]  中的相同按鈕來管理所有設定，包括您自己的自訂設定：
 
 ![啟動自訂檔案巢狀規則](media/filenesting_activatecustom.png)
 
-## <a name="create-solution-specific-and-project-specific-settings"></a>建立解決方案與專案特定的設定
+## <a name="create-project-specific-settings"></a>建立專案特有的設定
 
 您可以透過每個方案和專案的右鍵功能表 (操作功能表)，建立方案特定與專案特定的設定：
 
 ![解決方案與專案特定的巢狀規則](media/filenesting_solutionprojectspecific.png)
 
-解決方案與專案特定的設定會與目前使用的 Visual Studio 設定結合。 例如，您可能有空白的專案特定設定檔，但 [方案總管] 仍會巢狀放置檔案。 巢狀行為來自解決方案特定的設定或 Visual Studio 設定。 合併檔案巢狀設定的優先順序如下：Visual Studio > 解決方案 > 專案。
+解決方案與專案特定的設定會與目前使用的 Visual Studio 設定結合。 例如，您可能有空白的專案特定設定檔，但 [方案總管]  仍會巢狀放置檔案。 巢狀行為來自解決方案特定的設定或 Visual Studio 設定。 合併檔案巢狀設定的優先順序如下：Visual Studio > 解決方案 > 專案。
 
-即使檔案存在於磁碟上，您仍可以告訴 Visual Studio 忽略解決方案與專案特定的設定，方法是啟用 [工具] > [選項] > [ASP.NET Core] > [檔案巢狀] 下的 [忽略解決方案和專案設定] 選項。
+即使檔案存在於磁碟上，您仍可以告訴 Visual Studio 忽略解決方案與專案特定的設定，方法是啟用 [工具]   > [選項]   > [ASP.NET Core]   > [檔案巢狀]  下的 [忽略解決方案和專案設定]  選項。
 
-您可以進行相反動作，並告訴 Visual Studio「只」使用解決方案或專案特定的設定，方法是將 **root** 節點設為 **true**。 Visual Studio 會在該層級停止合併檔案，且不會將其與階層中更高層級的檔案結合。
+您可以進行相反動作，並告訴 Visual Studio「只」  使用解決方案或專案特定的設定，方法是將 **root** 節點設為 **true**。 Visual Studio 會在該層級停止合併檔案，且不會將其與階層中更高層級的檔案結合。
 
 解決方案與專案特定的設定可以簽入到原始檔控制，處理程式碼基底的整個小組便可以共用它們。
 
-## <a name="disable-global-file-nesting-rules-for-a-particular-solution-or-project"></a>停用特定解決方案或專案的全域檔案巢狀規則
+## <a name="disable-file-nesting-rules-for-a-project"></a>停用專案的檔案巢狀規則
 
 您可以針對特定解決方案或專案停用現有的全域檔案巢狀規則，方法是使用提供者的 **remove** 動作，而不是 **add**。 例如，如果您將下列設定程式碼新增至專案，所有此特定專案的可能全域存在 **pathSegment** 規則都會停用：
 
@@ -157,3 +157,4 @@ ms.locfileid: "62548831"
 ## <a name="see-also"></a>另請參閱
 
 - [個人化 IDE](../ide/personalizing-the-visual-studio-ide.md)
+- [Visual Studio 中的方案和專案](solutions-and-projects-in-visual-studio.md)

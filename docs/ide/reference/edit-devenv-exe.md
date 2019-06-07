@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 26433d62a68b28450a56eee1282376733acfe55c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 8f0eb7cab3b1bc764f663cd647811928510281e8
+ms.sourcegitcommit: ba5e072c9fedeff625a1332f22dcf3644d019f51
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62838798"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "66432010"
 ---
 # <a name="edit-devenvexe"></a>/Edit (devenv.exe)
 
@@ -44,6 +44,8 @@ devenv /Edit [File1[ FileN]...]
 未指定檔案時，現有 Visual Studio 執行個體就會收到焦點。 如果未指定任何檔案，而且沒有任何 Visual Studio 執行個體存在，工具就會建立具有簡易視窗配置的執行個體。
 
 如果現有 Visual Studio 執行個體處於強制回應狀態，該檔案即會在 Visual Studio 結束強制回應時，於現有執行個體中開啟。 例如，這種情況可能會在開啟 [[選項] 對話方塊](../../ide/reference/options-dialog-box-visual-studio.md)時發生。
+
+如果開啟 Visual Studio 的多個執行個體，檔案會在最近開啟的執行個體中開啟。
 
 ## <a name="example"></a>範例
 

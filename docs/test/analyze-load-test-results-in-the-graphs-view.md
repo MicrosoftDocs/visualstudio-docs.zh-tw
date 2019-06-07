@@ -15,12 +15,12 @@ ms.assetid: 4a919cd8-541c-40ee-be3b-352fabc56140
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c48fe67c8d52f962589c9f8628ff49f12f7770c5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 31bf74aba289e98e76fdd5b9a35d486d207bcc05
+ms.sourcegitcommit: ba5e072c9fedeff625a1332f22dcf3644d019f51
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62822998"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "66432027"
 ---
 # <a name="analyze-load-test-results-in-the-graphs-view-of-the-load-test-analyzer"></a>在負載測試分析器的圖形檢視中分析負載測試結果
 
@@ -68,11 +68,11 @@ ms.locfileid: "62822998"
 |分類|計數器分類的名稱。|
 |電腦|要收集計數器的電腦名稱。|
 |色彩|圖形中線條的色彩。|
-|範圍|表示對於該計數器，圖形上的 100 所表示的數目。 舉例來說，對上限值為 10,000 的範圍而言，圖形頂端的 100 標籤即代表 10,000。|
-|最小|表示計數器的最小值 (以毫秒為單位)。|
-|最大|表示計數器的最大值 (以毫秒為單位)。|
+|Range|表示對於該計數器，圖形上的 100 所表示的數目。 舉例來說，對上限值為 10,000 的範圍而言，圖形頂端的 100 標籤即代表 10,000。|
+|Min|表示計數器的最小值 (以毫秒為單位)。|
+|Max|表示計數器的最大值 (以毫秒為單位)。|
 |平均值|表示計數器的平均值 (以毫秒為單位)。|
-|最後一筆|顯示最近取樣間隔期間的計數器值 (以毫秒為單位)。|
+|Last|顯示最近取樣間隔期間的計數器值 (以毫秒為單位)。|
 
 ## <a name="tasks"></a>工作
 

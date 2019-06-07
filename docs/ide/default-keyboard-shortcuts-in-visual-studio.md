@@ -13,22 +13,20 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a0fb75badac32d09dff241cd4f339a89d6cc558d
-ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.openlocfilehash: 55e035ab0c3702c571b69b555d99adbf7cb0b7e9
+ms.sourcegitcommit: aeb1a1135dd789551e15aa5124099a5fe3f0f32b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66261324"
+ms.lasthandoff: 06/04/2019
+ms.locfileid: "66501178"
 ---
 # <a name="default-keyboard-shortcuts-in-visual-studio"></a>Visual Studio 中的預設鍵盤快速鍵
 
 如需鍵盤協助工具的詳細資訊，請參閱[協助工具祕訣和訣竅](../ide/reference/accessibility-tips-and-tricks.md)和[如何：以獨佔模式使用鍵盤](../ide/reference/how-to-use-the-keyboard-exclusively.md)。
 
-只需選擇適當的鍵盤快速鍵，您就可以在 Visual Studio 中存取各種命令和視窗。 本主題列出 [一般開發] 設定檔的預設捷徑，您可能已在已安裝的 Visual Studio 中選擇該設定檔。 不管您選擇哪一個設定檔，都可以開啟 [選項] 對話方塊、展開 [環境] 節點，然後選擇 [鍵盤] 來識別命令的捷徑。 您也可以為指定的命令指派不同的捷徑，以自訂捷徑。
+只需選擇適當的鍵盤快速鍵，您就可以在 Visual Studio 中存取各種命令和視窗。 本頁面會針對您可能已經在安裝 Visual Studio 時選擇的 [一般]  設定檔，列出預設捷徑。 不管您選擇哪一個設定檔，都可以開啟 [選項]  對話方塊、展開 [環境]  節點，然後選擇 [鍵盤]  來識別命令的捷徑。 您也可以為指定的命令指派不同的捷徑，以自訂捷徑。
 
 如需常用鍵盤快速鍵的清單和其他生產力資訊，請參閱 [Visual Studio 中常用命令的預設鍵盤快速鍵](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md)、[鍵盤祕訣](../ide/tips-and-tricks-for-visual-studio.md)和[提高生產力的祕訣](../ide/productivity-tips-for-visual-studio.md)。
-
-下表中的各個區段包含全域的命令，您可以在 Visual Studio 的任何位置使用鍵盤快速鍵存取這些命令：
 
 |||||
 |-|-|-|-|
@@ -40,7 +38,9 @@ ms.locfileid: "66261324"
 |[偵錯工具操作功能表](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_debugger)|[其他操作功能表](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_otherContext)|[Team Foundation 操作功能表](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_TFcontext)|[Azure](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_windowsazure)|
 |[診斷中樞](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_diagnostics)||||
 
-## <a name="bkmk_global"></a> 全域
+## <a name="global-shortcuts"></a>全域快速鍵
+
+這些鍵盤快速鍵都是*全域*的，也就是說，您可以在任何 Visual Studio 視窗有焦點時使用這些快速鍵。
 
 ### <a name="bkmk_analyze"></a> 分析
 
@@ -161,6 +161,7 @@ ms.locfileid: "66261324"
 |Edit.Cut|**Ctrl+X**<br /><br /> 或<br /><br /> **Shift+Delete**|
 |Edit.CycleClipboardRing|**Ctrl+Shift+V**<br /><br /> 或<br /><br /> **Ctrl+Shift+Ins**|
 |Edit.Delete|**刪除**|
+|Edit.Duplicate|**Ctrl+D**|
 |Edit.Find|**Ctrl+F**|
 |Edit.FindAllReferences|**Shift+F12**|
 |Edit.FindinFiles|**Ctrl+Shift+F**|
@@ -170,11 +171,12 @@ ms.locfileid: "66261324"
 |Edit.FindPreviousSelected|**Ctrl+Shift+F3**|
 |Edit.GenerateMethod|**Ctrl+K、Ctrl+M**|
 |Edit.GoTo|**Ctrl+G**|
+|Edit.GoToAll|**Ctrl+,** 或 **Ctrl+T**|
 |Edit.GoToDeclaration|**Ctrl+F12**|
 |Edit.GoToDefinition|**F12**|
-|Edit.GoToFindCombo|**Ctrl+D**|
-|Edit.GoToNextLocation|**F8**|
-|Edit.GoToPrevLocation|**Shift+F8**|
+|Edit.GoToMember|**Ctrl+1、Ctrl+M** 或 **Ctrl+1、M** 或 **Alt+\\**|
+|Edit.GoToNextLocation|**F8** (錯誤清單或 [輸出] 視窗中的下一個錯誤)|
+|Edit.GoToPrevLocation|**Shift+F8** (錯誤清單或 [輸出] 視窗中的上一個錯誤)|
 |Edit.InsertSnippet|**Ctrl+K、Ctrl+X**|
 |Edit.MoveControlDown|**Ctrl+向下鍵**|
 |Edit.MoveControlDownGrid|**向下鍵**|
@@ -184,10 +186,9 @@ ms.locfileid: "66261324"
 |Edit.MoveControlRightGrid|**向右鍵**|
 |Edit.MoveControlUp|**Ctrl+向上鍵**|
 |Edit.MoveControlUpGrid|**向上鍵**|
-|Edit.NavigateTo|**Ctrl+,**|
 |Edit.NextBookmark|**Ctrl+K、Ctrl+N**|
 |Edit.NextBookmarkInFolder|**Ctrl+Shift+K、Ctrl+Shift+N**|
-|Edit.OpenFile|**Ctrl+Shift+G**|
+|Edit.OpenFile|**Ctrl+Shift+G** (開啟資料指標底下的檔案名稱)|
 |Edit.Paste|**Ctrl+V**<br /><br /> 或<br /><br /> **Shift+Ins**|
 |Edit.PreviousBookmark|**Ctrl+K、Ctrl+P**|
 |Edit.PreviousBookmarkInFolder|**Ctrl+Shift+K、Ctrl+Shift+P**|
@@ -294,9 +295,9 @@ ms.locfileid: "66261324"
 
 |命令|鍵盤快速鍵|
 |--------------| - |
-|SolutionExplorer.OpenFilesFilter|**Ctrl+[**、**O** (字母 'O')<br /><br /> 或<br /><br /> **Ctrl+[**、**Ctrl+O** (字母 'O')|
-|SolutionExplorer.PendingChangesFilter|**Ctrl+[**、**P**<br /><br /> 或<br /><br /> **Ctrl+[**、**Ctrl+P**|
-|SolutionExplorer.SyncWithActiveDocument|**Ctrl+[**、**S**<br /><br /> 或<br /><br /> **Ctrl+[**、**Ctrl+S**|
+|SolutionExplorer.OpenFilesFilter|**Ctrl+[** 、**O** (字母 'O')<br /><br /> 或<br /><br /> **Ctrl+[** 、**Ctrl+O** (字母 'O')|
+|SolutionExplorer.PendingChangesFilter|**Ctrl+[** 、**P**<br /><br /> 或<br /><br /> **Ctrl+[** 、**Ctrl+P**|
+|SolutionExplorer.SyncWithActiveDocument|**Ctrl+[** 、**S**<br /><br /> 或<br /><br /> **Ctrl+[** 、**Ctrl+S**|
 
 ### <a name="bkmk_team"></a> 小組
 
@@ -346,7 +347,6 @@ ms.locfileid: "66261324"
 |Tools.AttachtoProcess|**Ctrl+Alt+P**|
 |Tools.CodeSnippetsManager|**Ctrl+K、Ctrl+B**|
 |Tools.ForceGC|**Ctrl+Shift+Alt+F12、Ctrl+Shift+Alt+F12**|
-|Tools.GoToCommandLine|**Ctrl+/**|
 
 ### <a name="bkmk_view"></a> 檢視
 
@@ -354,7 +354,7 @@ ms.locfileid: "66261324"
 |--------------| - |
 |View.AllWindows|**Shift+Alt+M**|
 |View.ArchitectureExplorer|**Ctrl+\\、Ctrl+R**|
-|View.Backward|**Alt+向左鍵**|
+|View.Backward|**Alt+向左鍵** (不同於文字編輯器中 View.NavigateBackward 的功能)|
 |View.BookmarkWindow|**Ctrl+K、Ctrl+W**|
 |View.BrowseNext|**Ctrl+Shift+1**|
 |View.BrowsePrevious|**Ctrl+Shift+2**|
@@ -369,7 +369,7 @@ ms.locfileid: "66261324"
 |View.ErrorList|**Ctrl+\\、E**<br /><br /> 或<br /><br /> **Ctrl+\\、Ctrl+E**|
 |View.F#Interactive|**Ctrl+Alt+F**|
 |View.FindSymbolResults|**Ctrl+Alt+F12**|
-|View.Forward|**Alt+向右鍵**|
+|View.Forward|**Alt+向右鍵** (不同於文字編輯器中 View.NavigateForward 的功能)|
 |View.ForwardBrowseContext|**Ctrl+Shift+7**|
 |View.FullScreen|**Shift+Alt+Enter**|
 |View.NavigateBackward|**Ctrl+-**|
@@ -379,7 +379,7 @@ ms.locfileid: "66261324"
 |View.ObjectBrowser|**Ctrl+Alt+J**|
 |View.ObjectBrowserGoToSearchCombo|**Ctrl+K、Ctrl+R**|
 |View.Output|**Ctrl+Alt+O** (字母 'O')|
-|View.PopBrowseContex|**Ctrl+Shift+8**|
+|View.PopBrowseContext|**Ctrl+Shift+8** (僅限 C++)|
 |View.PropertiesWindow|**F4**|
 |View.PropertyPages|**Shift+F4**|
 |View.ResourceView|**Ctrl+Shift+E**|
@@ -779,7 +779,6 @@ ms.locfileid: "66261324"
 | Edit.CharRight | **向右鍵** |
 | Edit.CharRightExtend | **Shift+向右鍵** |
 | Edit.CharRightExtendColumn | **Shift+Alt+向右鍵** |
-| Edit.CharTranspose | **Ctrl+T** |
 | Edit.ClearBookmarks | **Ctrl+K、Ctrl+L** |
 | Edit.CollapseAllOutlining | **Ctrl+M、Ctrl+A** |
 | Edit.CollapseCurrentRegion | **Ctrl+M、Ctrl+S** |
