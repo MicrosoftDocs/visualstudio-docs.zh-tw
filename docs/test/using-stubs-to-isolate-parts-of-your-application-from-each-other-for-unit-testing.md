@@ -1,5 +1,5 @@
 ---
-title: 使用虛設常式隔離應用程式的組件，以便進行單元測試
+title: 使用虛設常式隔離應用程式的組件，以便進行測試
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.author: gewarren
@@ -10,16 +10,16 @@ author: gewarren
 dev_langs:
 - CSharp
 - VB
-ms.openlocfilehash: 08631af916947021f37bfb3c73b821ba37e3b462
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b88905df0c99eb66c64e529610d6713801fceece
+ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62961962"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66401722"
 ---
 # <a name="use-stubs-to-isolate-parts-of-your-application-from-each-other-for-unit-testing"></a>使用虛設常式隔離應用程式的各個組件，方便進行單元測試
 
-「虛設常式類型」是 Microsoft Fakes 架構提供的兩項技術之一，可讓您輕鬆地隔離測試中的元件與它所呼叫的其他元件。 虛設常式是在測試期間取代另一個元件的一小段程式碼。 使用虛設常式的優點是它會傳回一致的結果，讓測試更容易撰寫。 即使其他元件還無法運作，您仍然可以執行測試。
+「虛設常式類型」  是 Microsoft Fakes 架構提供的兩項技術之一，可讓您輕鬆地隔離測試中的元件與它所呼叫的其他元件。 虛設常式是在測試期間取代另一個元件的一小段程式碼。 使用虛設常式的優點是它會傳回一致的結果，讓測試更容易撰寫。 即使其他元件還無法運作，您仍然可以執行測試。
 
 如需 Fakes 的概觀和快速入門指南，請參閱[使用 Microsoft Fakes 在測試期間隔離程式碼](../test/isolating-code-under-test-with-microsoft-fakes.md)。
 
@@ -147,13 +147,13 @@ analyzer = new StockAnalyzer(new StockFeed());
 
 #### <a name="add-a-fakes-assembly"></a>加入 Fakes 組件
 
-1. 在 [方案總管] 中，展開單元測試專案的 [參考]。
+1. 在 [方案總管]  中，展開單元測試專案的 [參考]  。
 
-   如果您在 Visual Basic 中工作，選取 [方案總管] 工具列中的 [顯示所有檔案]，才能看見 [參考] 節點。
+   如果您在 Visual Basic 中工作，選取 [方案總管]  工具列中的 [顯示所有檔案]  ，才能看見 [參考]  節點。
 
 2. 選取包含您要用於建立虛設常式之介面定義的組件。
 
-3. 在捷徑功能表上，選擇 [新增 Fakes 組件]。
+3. 在捷徑功能表上，選擇 [新增 Fakes 組件]  。
 
 ### <a name="write-your-test-with-stubs"></a>撰寫含 Stub 的測試
 
@@ -228,9 +228,9 @@ class TestMyComponent
     public void TestVariableContosoPrice()
     {
         // Arrange:
-        int priceToReturn;
-        string companyCodeUsed;
-        var componentUnderTest = new StockAnalyzer(new StubIStockFeed()
+        int priceToReturn = 345;
+        string companyCodeUsed = "";
+        var componentUnderTest = new StockAnalyzer(new StockAnalysis.Fakes.StubIStockFeed()
             {
                GetSharePriceString = (company) =>
                   {
@@ -240,8 +240,6 @@ class TestMyComponent
                      return priceToReturn;
                   };
             };
-        // Set the value that will be returned by the stub:
-        priceToReturn = 345;
 
         // Act:
         int actualResult = componentUnderTest.GetContosoPrice();
@@ -263,7 +261,7 @@ Class TestMyComponent
     <TestMethod()> _
     Public Sub TestVariableContosoPrice()
         ' Arrange:
-        Dim priceToReturn As Integer
+        Dim priceToReturn As Integer = 345
         Dim companyCodeUsed As String = ""
         Dim stockFeed As New StockAnalysis.Fakes.StubIStockFeed()
         With stockFeed
@@ -278,8 +276,6 @@ Class TestMyComponent
         End With
         ' Create an object to test:
         Dim componentUnderTest As New StockAnalyzer(stockFeed)
-        ' Set the value that will be returned by the stub:
-        priceToReturn = 345
 
         ' Act:
         Dim actualResult As Integer = componentUnderTest.GetContosoPrice()
@@ -340,7 +336,7 @@ stub.ValueGet = () => i;
 stub.ValueSet = (value) => i = value;
 ```
 
-如果您未提供 setter 或屬性的 getter 的虛設常式方法，Fakes 產生的虛設常式會儲存值，因此虛設常式屬性的作用就像簡單變數一樣。
+如果您未針對屬性的 setter 或 getter 提供虛設常式方法，Fakes 產生的虛設常式會儲存值，因此虛設常式屬性的作用就像簡單變數一樣。
 
 ### <a name="events"></a>事件
 
@@ -408,7 +404,7 @@ public void TestGetValue()
     }
 ```
 
-在這個類別所產生的虛設常式中，您可以設定 DoAbstract() 和 DoVirtual() 的委派方法，但不能設定 DoConcrete() 的委派方法。
+在這個類別所產生的虛設常式中，您可以設定 `DoAbstract()` 和 `DoVirtual()` 的委派方法，但不能設定 `DoConcrete()` 的委派方法。
 
 ```csharp
 // unit test
@@ -437,9 +433,9 @@ Assert.AreEqual(43,stub.DoVirtual(1));
 
 ## <a name="stub-limitations"></a>虛設常式限制
 
-1. 不支援使用指標的方法簽章。
+- 不支援使用指標的方法簽章。
 
-2. 虛設常式類型依賴虛擬方法分派，因此不能虛設常式密封類別或靜態方法。 在這類情況下，使用[使用填充碼將應用程式與其他組件隔離，方便進行單元測試](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md)中所述的填充碼類型
+- 虛設常式類型依賴虛擬方法分派，因此不能虛設常式密封類別或靜態方法。 在這類情況下，使用[使用填充碼將應用程式與其他組件隔離，方便進行單元測試](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md)中所述的填充碼類型
 
 ## <a name="change-the-default-behavior-of-stubs"></a>變更虛設常式的預設行為
 

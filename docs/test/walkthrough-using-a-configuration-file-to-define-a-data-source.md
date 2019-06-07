@@ -1,5 +1,5 @@
 ---
-title: 逐步解說：使用組態檔定義資料來源
+title: 使用組態檔定義資料來源
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ccb2400b209fa7902e8fde8dd7ba601e465a840d
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: aa57582a241400cbdfc9115d16326fda8019a5ae
+ms.sourcegitcommit: ba5e072c9fedeff625a1332f22dcf3644d019f51
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65461466"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "66432249"
 ---
 # <a name="walkthrough-using-a-configuration-file-to-define-a-data-source"></a>逐步解說：使用組態檔定義資料來源
 
@@ -46,11 +46,11 @@ ms.locfileid: "65461466"
 
 1. 如果您的測試專案中已經有 *app.config* 檔案，請移至[定義自訂組態區段](#define-a-custom-configuration-section)。
 
-2. 在 [方案總管] 中，以滑鼠右鍵按一下您的測試專案，然後選取 [新增] > [新增項目]。
+2. 在 [方案總管]  中，以滑鼠右鍵按一下您的測試專案，然後選取 [新增]   > [新增項目]  。
 
-     [新增項目] 視窗隨即開啟。
+     [新增項目]  視窗隨即開啟。
 
-3. 選取 [應用程式組態檔] 範本，然後按一下 [新增]。
+3. 選取 [應用程式組態檔]  範本，然後按一下 [新增]  。
 
 ## <a name="define-a-custom-configuration-section"></a>定義自訂組態區段
 

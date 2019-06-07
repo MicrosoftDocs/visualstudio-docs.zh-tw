@@ -7,12 +7,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: a5ce4f298039d6d86f8c4855d1f139b6be1d1175
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a485f58e477d56625bc5ac88a014fc730057b97c
+ms.sourcegitcommit: ba5e072c9fedeff625a1332f22dcf3644d019f51
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62822714"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "66432303"
 ---
 # <a name="analyzing-coded-ui-tests-using-coded-ui-test-logs"></a>使用自動程式化 UI 測試記錄分析自動程式化 UI 測試
 
@@ -24,23 +24,23 @@ ms.locfileid: "62822714"
 
 根據您的情節，使用下列其中一種方法來啟用記錄：
 
-- 測試專案中沒有 *App.config* 檔案的目標 .NET Framework 第 4 版：
+- 如果測試專案中沒有 *App.config* 檔案：
 
-   1. 開啟 *QTAgent32_40.exe.config* 檔案。 根據預設，這個檔案位於 *%ProgramFiles(x86)%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE*。
+   1. 確定在執行測試時啟動哪些 *QTAgent\*.exe* 程序。 其中一種方法是查看 Windows [工作管理員]  中的 [詳細資料]  索引標籤。
+   
+   2. 從 *%ProgramFiles(x86)%\Microsoft Visual Studio\\\<version>\\\<edition>\Common7\IDE* 資料夾開啟對應的 *.config* 檔案。 例如，如果執行的程序是 *QTAgent_40.exe*，開啟 *QTAgent_40.exe.config*。
 
-   2. 將 EqtTraceLevel 的值修改為您要的記錄層級。
+   2. 將 **EqtTraceLevel** 的值修改為您要的記錄層級。
+   
+      ```xml
+      <!-- You must use integral values for "value".
+           Use 0 for off, 1 for error, 2 for warn, 3 for info, and 4 for verbose. -->
+      <add name="EqtTraceLevel" value="4" />
+      ```
 
    3. 儲存檔案。
 
-- 測試專案中沒有 *App.config* 檔案的目標 .NET Framework 4.5 版：
-
-   1. 開啟 *QTAgent32.exe.config* 檔案。 根據預設，這個檔案位於 *%ProgramFiles(x86)%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE*。
-
-   2. 將 EqtTraceLevel 的值修改為您要的記錄層級。
-
-   3. 儲存檔案。
-
-- 測試專案中有 *App.config* 檔案：
+- 如果測試專案中有 *App.config* 檔案：
 
     - 開啟專案中的 *App.config* 檔案，並在組態節點下新增下列程式碼：
 
@@ -54,24 +54,26 @@ ms.locfileid: "62822714"
 
 - 透過測試程式碼本身啟用記錄：
 
-   <xref:Microsoft.VisualStudio.TestTools.UITesting.PlaybackSettings.LoggerOverrideState%2A> = HtmlLoggerState.AllActionSnapshot;
+   ```csharp
+   Microsoft.VisualStudio.TestTools.UITesting.PlaybackSettings.LoggerOverrideState = HtmlLoggerState.AllActionSnapshot;
+   ```
 
 ## <a name="step-2-run-your-coded-ui-test-and-view-the-log"></a>步驟 2：執行自動程式化 UI 測試並檢視記錄
 
-當您在已修改 *QTAgent32.exe.config* 檔案的情況下執行自動程式化 UI 測試時，會看到 [測試總管] 結果中有輸出連結。 記錄檔不只在測試失敗時才產生，在追蹤層級設定為 "verbose" 時，就算測試成功也會產生。
+當您在已修改 *QTAgent\*.exe.config* 檔案的情況下執行自動程式化 UI 測試時，會看到 [測試總管]  結果中有輸出連結。 記錄檔不只在測試失敗時才產生，在追蹤層級設定為 **verbose** 時，就算測試成功也會產生。
 
-1. 在 [測試] 功能表上，選擇 [Windows]，然後選取 [測試總管]。
+1. 在 [測試]  功能表上，選擇 [Windows]  ，然後選取 [測試總管]  。
 
 2. 在 [ **建置** ] 功能表上，選擇 [ **建置方案**]。
 
-3. 在 [測試總管] 中，選取您要執行的自動程式化 UI 測試，並開啟其捷徑功能表，然後選擇 [執行選取的測試]。
+3. 在 [測試總管]  中，選取您要執行的自動程式化 UI 測試，並開啟其捷徑功能表，然後選擇 [執行選取的測試]  。
 
      自動化測試會執行，並指出測試成功或失敗。
 
     > [!TIP]
-    > 若要檢視 [測試總管]，請選擇 [測試] > [Windows]，然後選擇 [測試總管]。
+    > 若要檢視 [測試總管]  ，請選擇 [測試]   > [Windows]  ，然後選擇 [測試總管]  。
 
-4. 選擇 [測試總管] 結果中的 [輸出] 連結。
+4. 選擇 [測試總管]  結果中的 [輸出]  連結。
 
      ![[測試總管] 中的 [輸出] 連結](../test/media/cuit_htmlactionlog1.png)
 
