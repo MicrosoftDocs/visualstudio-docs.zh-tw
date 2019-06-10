@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 50fb7800c4446e7d13334957ee9f5f6534f254bf
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: f8ef27f9af5626b716339281c010c62c2515fb8b
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66338217"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66746834"
 ---
 # <a name="idebugaliasgeticordebugvalue"></a>IDebugAlias::GetICorDebugValue
 擷取的 managed 程式碼介面，表示與此別名相關聯的值。
@@ -47,7 +47,7 @@ int GetICorDebugValue(
  如果成功，會傳回 S_OK;否則，傳回錯誤碼。
 
 ## <a name="remarks"></a>備註
- 這個方法只適用於受管理的值 (`ICorDebugValue`是一種介面中可用[!INCLUDE[dnprdnshort](../../../code-quality/includes/dnprdnshort_md.md)]且定義在[!INCLUDE[dnprdnshort](../../../code-quality/includes/dnprdnshort_md.md)]SDK cordebug.idl 檔案中的)。
+ 這個方法只適用於受管理的值 (`ICorDebugValue`是.NET Framework 中可用的介面以及定義在 cordebug.idl 檔案中的.NET Framework SDK 中)。
 
 ## <a name="see-also"></a>另請參閱
 - [IDebugAlias](../../../extensibility/debugger/reference/idebugalias.md)
