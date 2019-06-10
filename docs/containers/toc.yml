@@ -7,8 +7,10 @@
     - name: 快速入門
       expanded: true
       items:
-        - name: Visual Studio 中的容器工具
+        - name: 容器中的 ASP.NET Core 應用程式
           href: container-tools.md
+        - name: 容器中的 React.js 單頁應用程式
+          href: container-tools-react.md
     - name: 教學課程
       expanded: true
       items:
