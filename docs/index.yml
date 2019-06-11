@@ -8,6 +8,12 @@ metadata:
   description: 了解如何使用 Visual Studio，以您選擇的語言，為任何平台或裝置開發應用程式、服務及工具。
   ms.topic: hub-page
   monikerRange: '>=vs-2017'
+  ms.openlocfilehash: bac03cb71b4c925ecb7f5fd8f1ed69466f4bd114
+  ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+  ms.translationtype: HT
+  ms.contentlocale: zh-TW
+  ms.lasthandoff: 06/07/2019
+  ms.locfileid: "66462860"
 highlightedContent:
   items:
   - title: 設定與安裝
@@ -173,9 +179,3 @@ additionalContent:
 
         [.NET Core 跨平台開發](/dotnet/core/)
   footer: '[部落格](https://devblogs.microsoft.com/visualstudio/) - [Twitter](https://twitter.com/VisualStudio) - [Stack Overflow](https://stackoverflow.com/questions/tagged/visual-studio) - [問題回報](ide/talk-to-us.md) - [Developer Community](https://developercommunity.visualstudio.com/spaces/8/index.html)'
-ms.openlocfilehash: bac03cb71b4c925ecb7f5fd8f1ed69466f4bd114
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
-ms.translationtype: HT
-ms.contentlocale: zh-TW
-ms.lasthandoff: 06/07/2019
-ms.locfileid: "66462860"
