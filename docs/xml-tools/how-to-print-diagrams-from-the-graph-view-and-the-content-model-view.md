@@ -1,5 +1,5 @@
 ---
-title: 從圖表檢視] 和 [XML 結構描述設計工具的內容模型檢視列印圖表
+title: XML 結構描述：在 圖表檢視和內容模型檢視列印圖表
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 7e1785e4-4aaf-4c66-8735-51e7ca035565
@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1318ed7c69ffd2aeaa178d081e5241c02ea1021c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c04b35d0b90de888ad11af0920ddb0cf123638ad
+ms.sourcegitcommit: 51dad3e11d7580567673e0d426ab3b0a17584319
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62945704"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "66820555"
 ---
 # <a name="how-to-print-diagrams-from-the-graph-view-and-the-content-model-view"></a>HOW TO：從 [圖形] 檢視和內容模型檢視列印圖表
 

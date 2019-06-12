@@ -1,5 +1,5 @@
 ---
-title: 更新您移轉至.NET Framework 4 或.NET Framework 4.5 之 Outlook 專案中的表單區域
+title: 更新 Outlook 表單區域，在專案移轉至.NET Framework 4、 4.5
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: fed87ee8106c3e8a09c341b9de4709060627dac1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e7e300cd9f6f7d631a029310b01fbfdad7cb4686
+ms.sourcegitcommit: cc5fd59e5dc99181601b7db8b28d7f8a83a36bab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62982567"
+ms.lasthandoff: 06/11/2019
+ms.locfileid: "66836050"
 ---
 # <a name="update-form-regions-in-outlook-projects-that-you-migrate-to-the-net-framework-4-or-the-net-framework-45"></a>更新您移轉至.NET Framework 4 或.NET Framework 4.5 之 Outlook 專案中的表單區域
   如果 Outlook VSTO 增益集專案的目標 Framework 與表單區域的變更為 [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] 或更新版本，您就必須在執行階段中，針對產生的表單區域程式碼以及可執行個體化特定表單區域類別的任何程式碼，進行一些變更。
@@ -27,7 +27,7 @@ ms.locfileid: "62982567"
 
 ### <a name="to-update-the-generated-code-for-a-form-region-that-you-designed-in-visual-studio"></a>若要更新您在 Visual Studio 中所設計之表單區域產生的程式碼
 
-1. 在程式碼編輯器中，開啟表單區域程式碼後置檔案。 此檔案的名稱為 *YourFormRegion*.Designer.cs 或 *YourFormRegion*.Designer.vb。 若要查看 Visual Basic 專案中的這個檔案，請按一下 [方案總管]  中的 [顯示所有檔案] 按鈕。
+1. 在程式碼編輯器中，開啟表單區域程式碼後置檔案。 此檔案的名稱為 *YourFormRegion*.Designer.cs 或 *YourFormRegion*.Designer.vb。 若要查看 Visual Basic 專案中的這個檔案，請按一下 [方案總管]  中的 [顯示所有檔案]  按鈕。
 
 2. 修改表單區域類別的宣告，使其衍生自 <xref:Microsoft.Office.Tools.Outlook.FormRegionBase> 而不是 `Microsoft.Office.Tools.Outlook.FormRegionControl`。
 
@@ -113,7 +113,7 @@ ms.locfileid: "62982567"
 
 #### <a name="to-update-the-generated-code-for-a-form-region-that-you-imported-from-outlook"></a>若要更新您從 Outlook 匯入之表單區域產生的程式碼
 
-1. 在程式碼編輯器中，開啟表單區域程式碼後置檔案。 此檔案的名稱為 *YourFormRegion*.Designer.cs 或 *YourFormRegion*.Designer.vb。 若要查看 Visual Basic 專案中的這個檔案，請按一下 [方案總管]  中的 [顯示所有檔案] 按鈕。
+1. 在程式碼編輯器中，開啟表單區域程式碼後置檔案。 此檔案的名稱為 *YourFormRegion*.Designer.cs 或 *YourFormRegion*.Designer.vb。 若要查看 Visual Basic 專案中的這個檔案，請按一下 [方案總管]  中的 [顯示所有檔案]  按鈕。
 
 2. 修改表單區域類別的宣告，使其衍生自 <xref:Microsoft.Office.Tools.Outlook.ImportedFormRegionBase> 而不是 `Microsoft.Office.Tools.Outlook.ImportedFormRegion`。
 

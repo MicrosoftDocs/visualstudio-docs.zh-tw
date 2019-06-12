@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0b44f2a36297db3265a3904f1f76596ca6ba0e35
-ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.openlocfilehash: 960c2b546abe3554a5912efde9bd09bb5b2189b7
+ms.sourcegitcommit: cc5fd59e5dc99181601b7db8b28d7f8a83a36bab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66260478"
+ms.lasthandoff: 06/11/2019
+ms.locfileid: "66835952"
 ---
 # <a name="code-metrics-values"></a>程式碼度量值
 
@@ -32,7 +32,7 @@ ms.locfileid: "66260478"
 
 - **循環複雜度**-測量程式碼的結構化的複雜度。 它會建立計算的程式流程中不同的程式碼路徑數目。 具有複雜的控制流程的程式需要更多測試來達到良好的程式碼涵蓋範圍，且較不容易維護。 如需詳細資訊，請參閱 <<c0> [ 循環複雜度的維基百科項目](https://wikipedia.org/wiki/Cyclomatic_complexity)。
 
-- **繼承深度**-指出繼承自另一個，一路回溯到基底類別的不同類別的數字。 繼承深度是類似於類別結合程度，因為基底類別中的變更可能會影響任何繼承的類別。 愈高這個數字，更深入的繼承愈高可能會導致中斷的基底類別修改而變更。 繼承深度，較低的值是很好，較高的值不正確。 
+- **繼承深度**-指出繼承自另一個，一路回溯到基底類別的不同類別的數字。 繼承深度是類似於類別結合程度，因為基底類別中的變更可能會影響任何繼承的類別。 愈高這個數字，更深入的繼承愈高可能會導致中斷的基底類別修改而變更。 繼承深度，較低的值是很好，較高的值不正確。
 
 - **類別結合程度**-測量透過參數、 區域變數、 傳回型別、 方法呼叫、 泛型或樣板具現化、 基底類別、 介面實作、 外部型別上定義的欄位的唯一類別結合程度和屬性裝飾。 好的軟體設計會要求的型別和方法應該具有高度一致性的特性且低耦合。 結合程度高表示並不容易重複使用，因為其許多其他類型的相互依存性而設計。 如需詳細資訊，請參閱 <<c0> [ 類別結合程度](https://blogs.msdn.microsoft.com/zainnab/2011/05/25/code-metrics-class-coupling/)部落格文章。
 
@@ -43,9 +43,7 @@ ms.locfileid: "66260478"
 
 ## <a name="anonymous-methods"></a>匿名方法
 
-*匿名方法*是只是一種方法沒有名稱。 匿名方法最常用來做為委派參數傳遞的程式碼區塊。 宣告的成員，例如方法或存取子，匿名方法的度量資訊結果會與宣告方法的成員相關聯。 它們不會呼叫方法的成員與相關聯。
-
-如需有關程式碼度量的匿名方法的處理方式的詳細資訊，請參閱[匿名方法和程式碼分析](../code-quality/anonymous-methods-and-code-analysis.md)。
+*匿名方法*是只是一種方法沒有名稱。 匿名方法最常用來做為委派參數傳遞的程式碼區塊。 宣告的成員，匿名方法的程式碼度量結果，例如方法或存取子，會宣告方法的成員與相關聯。 它們不會呼叫方法的成員與相關聯。
 
 ## <a name="generated-code"></a>產生的程式碼
 

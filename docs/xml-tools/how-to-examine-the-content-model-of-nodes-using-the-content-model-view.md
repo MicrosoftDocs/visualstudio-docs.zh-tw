@@ -1,5 +1,5 @@
 ---
-title: 檢查 XML 結構描述設計工具中使用內容模型檢視節點的內容模型
+title: 檢查 XML 結構描述設計工具中使用內容模型檢視的節點
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: c42ddac8-b0e3-48d6-9832-112a19d6c104
@@ -8,14 +8,14 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dfefc7d6aaa40d628cc0ee9d582fddf65adb411e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 63e337162dc8499bf9ac2acb5606fbf75292574f
+ms.sourcegitcommit: 51dad3e11d7580567673e0d426ab3b0a17584319
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63001904"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "66820458"
 ---
-# <a name="how-to-examine-the-content-model-of-nodes-using-the-content-model-view"></a>HOW TO：檢查使用內容模型檢視節點的內容模型
+# <a name="how-to-examine-the-content-model-of-nodes-using-the-content-model-view"></a>作法：檢查使用內容模型檢視節點的內容模型
 
 本主題描述如何瀏覽您使用的節點[內容模型檢視](../xml-tools/content-model-view.md)。
 
@@ -41,4 +41,4 @@ ms.locfileid: "63001904"
 
 8. 按一下 **顯示的文件**XSD 工具列切換文件中的按鈕。 您也可以以滑鼠右鍵按一下設計介面來切換文件。
 
-9. 滑鼠右鍵按一下`purchaseOrder`節點，然後選取**產生範例 XML**查看 XML 執行個體文件。
+9. 以滑鼠右鍵按一下`purchaseOrder`節點，然後選取**產生範例 XML**查看 XML 執行個體文件。

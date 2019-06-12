@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 915a6c6d06380aa67c2c79ce52598668a9b33f18
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 4242fabe943dd27624e44a9900981343ec180fcd
+ms.sourcegitcommit: 51dad3e11d7580567673e0d426ab3b0a17584319
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63442386"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "66820903"
 ---
 # <a name="get-started-with-domain-specific-languages"></a>特定領域語言的使用者入門
 
@@ -21,7 +21,7 @@ ms.locfileid: "63442386"
 > [!NOTE]
 > 文字範本轉換 SDK 和 Visual Studio Modeling SDK 會自動安裝時安裝 Visual Studio 的特定功能。 如需詳細資訊，請參閱 <<c0> [ 此部落格文章](https://devblogs.microsoft.com/devops/the-visual-studio-modeling-sdk-is-now-available-with-visual-studio-2017/)。
 
-如果您不熟悉 dsl，建議您逐步**DSL 工具實驗室**，您可以找到此站台：[Visualizaton 與模型 SDK](http://go.microsoft.com/fwlink/?LinkID=186128)
+如果您不熟悉 dsl，建議您逐步**DSL 工具實驗室**，您可以找到此站台：[Visualization and Modeling SDK](http://go.microsoft.com/fwlink/?LinkID=186128)
 
 ## <a name="what-can-you-do-with-a-domain-specific-language"></a>您可以使用特定領域語言來做什麼？
 
@@ -137,7 +137,7 @@ ms.locfileid: "63442386"
 
 您的實驗性 Visual Studio 將會類似下列的範例：
 
-![](../modeling/media/dsl_min.png)
+![在 Visual Studio 中的網域特定語言範例樹狀目錄](../modeling/media/dsl_min.png)
 
 ### <a name="the-content-of-a-model"></a>模型的內容
 
@@ -392,7 +392,7 @@ DSL 定義中可以指定在模型圖上的顯示方式。 您可以選擇各種
 
  您可以使用相同的程序，將您自己的電腦上安裝 DSL，以便您沒有使用 Visual Studio 的實驗性執行個體。
 
- 如需詳細資訊，請參閱[部署特定領域語言方案](../modeling/deploying-domain-specific-language-solutions.md)。
+ 如需詳細資訊，請參閱[部署特定領域語言方案](msi-and-vsix-deployment-of-a-dsl.md)。
 
 ## <a name="Reset"></a> 移除舊的實驗性 Dsl
  如果您已建立您不想再的實驗性 Dsl，則您可以重設 Visual Studio 實驗執行個體從電腦移除它們。

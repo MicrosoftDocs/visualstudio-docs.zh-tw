@@ -12,16 +12,16 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: d42087b023718cd31528a2e5d60e2a43e34097c4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 908f79b40b17eba5c0e3f518e6d7f2f3ae58e9c7
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62792214"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66745017"
 ---
 # <a name="advanced-build-settings-dialog-box-c"></a>進階建置設定對話方塊 (C#)
 
-使用 [專案設計工具] 的 [進階建置設定] 對話方塊，以指定專案的進階組建組態屬性。 此對話方塊只適用於 [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] 專案。
+使用 [專案設計工具]  的 [進階建置設定]  對話方塊，以指定專案的進階組建組態屬性。 此對話方塊只適用於 [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] 專案。
 
 ## <a name="general"></a>一般
 
@@ -45,7 +45,7 @@ ms.locfileid: "62792214"
 
 **報告內部編譯器錯誤**
 
-指定是否要向 Microsoft 報告編譯器錯誤。 如果設定為 [提示]\(預設值)，您會在發生內部編譯器錯誤時收到提示，讓您選擇以電子方式將錯誤報告傳送給 Microsoft。 如果設定為 [傳送]，則會自動傳送錯誤報告。 如果設定為 [佇列]，則會將錯誤報告排入佇列。 如果設定為 [無]，則會以編譯器的文字輸出報告錯誤。 如需詳細資訊，請參閱 [/errorreport (C# 編譯器選項)](/dotnet/csharp/language-reference/compiler-options/errorreport-compiler-option)。
+指定是否要向 Microsoft 報告編譯器錯誤。 如果設定為 [提示]  \(預設值)，您會在發生內部編譯器錯誤時收到提示，讓您選擇以電子方式將錯誤報告傳送給 Microsoft。 如果設定為 [傳送]  ，則會自動傳送錯誤報告。 如果設定為 [佇列]  ，則會將錯誤報告排入佇列。 如果設定為 [無]  ，則會以編譯器的文字輸出報告錯誤。 如需詳細資訊，請參閱 [/errorreport (C# 編譯器選項)](/dotnet/csharp/language-reference/compiler-options/errorreport-compiler-option)。
 
 **檢查算術溢位/反向溢位**
 
@@ -91,7 +91,7 @@ ms.locfileid: "62792214"
 
 **程式庫基底位址**
 
-指定載入 DLL 時慣用的基底位址。 DLL 的預設基底位址是由 [!INCLUDE[dnprdnshort](../../code-quality/includes/dnprdnshort_md.md)] 通用語言執行平台所設定。 如需詳細資訊，請參閱 [/baseaddress (C# 編譯器選項)](/dotnet/csharp/language-reference/compiler-options/baseaddress-compiler-option)。
+指定載入 DLL 時慣用的基底位址。 DLL 的預設基底位址是由 .NET Framework Common Language Runtime 所設定。 如需詳細資訊，請參閱 [/baseaddress (C# 編譯器選項)](/dotnet/csharp/language-reference/compiler-options/baseaddress-compiler-option)。
 
 ## <a name="see-also"></a>請參閱
 

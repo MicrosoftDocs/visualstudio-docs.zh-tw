@@ -16,12 +16,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: f1b2c5b447d796ddd2098a6500b6094478fcd8b9
-ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
+ms.openlocfilehash: 932805f938e9d96cd944230fcc8aa82a4710da31
+ms.sourcegitcommit: 51dad3e11d7580567673e0d426ab3b0a17584319
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "65842001"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "66820631"
 ---
 # <a name="ca1063-implement-idisposable-correctly"></a>CA1063:必須正確實作 IDisposable
 
@@ -52,7 +52,7 @@ ms.locfileid: "65842001"
 
 這些模式的其中任何一個的違規會觸發警告 ca1063 必須。
 
-每個未密封的型別會宣告並實作<xref:System.IDisposable>介面必須提供自己的`protected virtual void Dispose(bool)`方法。 `Dispose()` 應該呼叫`Dipose(true)`，並完成項應該呼叫`Dispose(false)`。 如果您建立未密封的型別會宣告並實作<xref:System.IDisposable>介面，您必須定義`Dispose(bool)`並呼叫它。 如需詳細資訊，請參閱 <<c0> [ 清除 unmanaged 資源 （.NET 指南）](/dotnet/standard/garbage-collection/unmanaged)並[Dispose 模式](/dotnet/standard/design-guidelines/dispose-pattern)。
+每個未密封的型別會宣告並實作<xref:System.IDisposable>介面必須提供自己的`protected virtual void Dispose(bool)`方法。 `Dispose()` 應該呼叫`Dispose(true)`，並完成項應該呼叫`Dispose(false)`。 如果您建立未密封的型別會宣告並實作<xref:System.IDisposable>介面，您必須定義`Dispose(bool)`並呼叫它。 如需詳細資訊，請參閱 <<c0> [ 清除 unmanaged 資源 （.NET 指南）](/dotnet/standard/garbage-collection/unmanaged)並[Dispose 模式](/dotnet/standard/design-guidelines/dispose-pattern)。
 
 根據預設，此規則只會查看外部可見的類型，但這[可設定](#configurability)。
 

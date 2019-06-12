@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 77c0a76ae326621ed00a523d8cf484b9aecb53c4
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 6c4c55461960e48a7ecce74dd9f88e371853e705
+ms.sourcegitcommit: 51dad3e11d7580567673e0d426ab3b0a17584319
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63445195"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "66820991"
 ---
 # <a name="how-to-define-a-domain-specific-language"></a>如何定義網域指定的語言
 若要定義特定領域語言 (DSL)，您可以從範本建立 Visual Studio 方案。 該方案的關鍵部分是儲存在 DslDefinition.dsl 中的 DSL 定義圖。 [DSL 定義] 可定義 DSL 的類別和圖形。 在修改並加入這些項目之後，您可以加入程式碼，即可以更詳細的方式自訂 DSL。
@@ -99,7 +99,7 @@ ms.locfileid: "63445195"
 
  如果您執行解決方案，您已建立從**最小語言**範本，您的實驗性 Visual Studio 將會類似下列範例：
 
- ![](../modeling/media/dsl_min.png)
+ ![在 Visual Studio 中的網域特定語言範例樹狀目錄](../modeling/media/dsl_min.png)
 
  使用工具進行實驗。 建立項目並連接它們。
 
