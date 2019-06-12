@@ -16,17 +16,17 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b0819a4d9e1438b300daa68db4208bfe5908d800
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 6127ae8e76ff7233ff7ad4f7b336325555e57b28
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62794345"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66747210"
 ---
 # <a name="object-lifetime-view"></a>物件存留期檢視
-在 [效能工作階段] 屬性頁上核取 [同時收集 .NET 物件存留期的資料] 時，可以使用 [物件存留期] 檢視。
+在 [效能工作階段]  屬性頁上核取 [同時收集 .NET 物件存留期的資料]  時，可以使用 [物件存留期] 檢視。
 
- [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 的記憶體回收行程可管理應用程式的記憶體配置和釋放。 為了要最佳化記憶體回收行程的效能，受控堆積分成三個世代：0、1 和 2。 執行階段的記憶體回收行程會將新的物件儲存至世代 0。 在回收之後存留下來的物件則會升階並儲存在層代 1 與 2。
+ .NET Framework 的記憶體回收行程可管理應用程式的記憶體配置及釋放。 為了要最佳化記憶體回收行程的效能，受控堆積分成三個世代：0、1 和 2。 執行階段的記憶體回收行程會將新的物件儲存至世代 0。 在回收之後存留下來的物件則會升階並儲存在層代 1 與 2。
 
  記憶體回收行程會取消配置整個物件層代來回收記憶體。 對於已分析的應用程式所建立的物件，[物件存留期] 檢視會顯示物件的數目和大小，以及回收時的世代。
 

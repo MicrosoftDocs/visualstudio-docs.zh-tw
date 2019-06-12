@@ -15,12 +15,12 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 12a854c4e43385177730ceddf045b76e2e61d342
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 90f218165c0543c1881857191efd202717c6e372
+ms.sourcegitcommit: 51dad3e11d7580567673e0d426ab3b0a17584319
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65686892"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "66820889"
 ---
 # <a name="ca1063-implement-idisposable-correctly"></a>CA1063:必須正確實作 IDisposable
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -51,7 +51,7 @@ ms.locfileid: "65686892"
 
   這些模式的其中任何一個的違規會觸發這個警告。
 
-  每個未密封的根 IDisposable 類型都必須提供它自己受保護虛擬 void dispose （bool） 方法。 Dispose （） 應該呼叫 Dipose(true) 和 Finalize 應該呼叫 dispose （false）。 如果您要建立未密封的根 IDisposable 類型，您必須定義 dispose （bool），並呼叫它。 如需詳細資訊，請參閱 <<c0> [ 清除 Unmanaged 資源向上](https://msdn.microsoft.com/library/a17b0066-71c2-4ba4-9822-8e19332fc213)中[Framework 設計方針](https://msdn.microsoft.com/library/5fbcaf4f-ea2a-4d20-b0d6-e61dee202b4b).NET Framework 文件的章節。
+  每個未密封的根 IDisposable 類型都必須提供它自己受保護虛擬 void dispose （bool） 方法。 Dispose （） 應該會呼叫 dispose （true） 和 Finalize 應該呼叫 dispose （false）。 如果您要建立未密封的根 IDisposable 類型，您必須定義 dispose （bool），並呼叫它。 如需詳細資訊，請參閱 <<c0> [ 清除 Unmanaged 資源向上](https://msdn.microsoft.com/library/a17b0066-71c2-4ba4-9822-8e19332fc213)中[Framework 設計方針](https://msdn.microsoft.com/library/5fbcaf4f-ea2a-4d20-b0d6-e61dee202b4b).NET Framework 文件的章節。
 
 ## <a name="rule-description"></a>規則描述
  所有的 IDisposable 類型都需正確地實作 Dispose 模式。

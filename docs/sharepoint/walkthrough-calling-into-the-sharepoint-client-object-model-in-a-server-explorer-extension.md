@@ -1,5 +1,5 @@
 ---
-title: 逐步解說：呼叫 SharePoint 用戶端物件模型，在 伺服器總管延伸模組 |Microsoft Docs
+title: 伺服器總管 中：擴充 SharePoint 連線節點
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 4881604c4fe2ab85f4c32361eddb5f5bb228b3cd
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: f9413b9cb4210959d53eba1753a01d950e980536
+ms.sourcegitcommit: cc5fd59e5dc99181601b7db8b28d7f8a83a36bab
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63430450"
+ms.lasthandoff: 06/11/2019
+ms.locfileid: "66835947"
 ---
 # <a name="walkthrough-calling-into-the-sharepoint-client-object-model-in-a-server-explorer-extension"></a>逐步解說：呼叫 SharePoint 用戶端物件模型，在 伺服器總管延伸模組
   本逐步解說示範如何從的擴充功能呼叫 SharePoint 用戶端物件模型**SharePoint 連線**中的節點**伺服器總管**。 如需如何使用 SharePoint 用戶端物件模型的詳細資訊，請參閱[呼叫 SharePoint 物件模型](../sharepoint/calling-into-the-sharepoint-object-models.md)。
@@ -64,7 +64,7 @@ ms.locfileid: "63430450"
 
 1. 啟動 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]。
 
-2. 在功能表列上，選擇 [檔案] > [新增] > [專案]。
+2. 在功能表列上，選擇 [檔案]   > [新增]   > [專案]  。
 
 3. 中**新的專案**對話方塊方塊中，展開**Visual C#** 或**Visual Basic**節點，然後選擇**擴充性**。
 
@@ -118,9 +118,9 @@ ms.locfileid: "63430450"
 
 5. 開啟捷徑功能表**WebPartNodeExtension**專案，，然後選擇**屬性**。
 
-     [專案設計工具] 隨即開啟。
+     [專案設計工具]  隨即開啟。
 
-6. 選擇 [應用程式] 索引標籤。
+6. 選擇 [應用程式]  索引標籤。
 
 7. 在 [**預設命名空間**] 方塊中 (C#) 或**根命名空間**方塊 (Visual Basic) 中，輸入**ServerExplorer.SharePointConnections.WebPartNode**。
 
@@ -240,7 +240,7 @@ ms.locfileid: "63430450"
 
     2. 在 [**加入 SharePoint 連接**對話方塊方塊中，輸入您想要連線，再選擇 SharePoint 網站的 URL**確定**] 按鈕。
 
-         若要指定 SharePoint 網站的開發電腦上，輸入**http://localhost**。
+         若要指定 SharePoint 網站的開發電腦上，輸入 **http://localhost** 。
 
 3. 展開站台連線節點 （它會顯示您的網站 URL），然後再展開 子站台節點 (例如**小組網站**)。
 
@@ -267,7 +267,7 @@ ms.locfileid: "63430450"
 
 1. 在實驗性 Visual Studio 執行個體，在功能表列上，選擇**工具** > **擴充功能和更新**。
 
-     [擴充功能和更新] 對話方塊隨即開啟。
+     [擴充功能和更新]  對話方塊隨即開啟。
 
 2. 在延伸模組清單中，選擇**伺服器總管 中的 Web 組件組件庫節點**，然後選擇**解除安裝** 按鈕。
 

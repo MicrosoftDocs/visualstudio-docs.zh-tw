@@ -1,5 +1,5 @@
 ---
-title: Microsoft Office Excel 鍵盤，Microsoft Office 鍵盤設定、 [選項] 對話方塊
+title: Office Excel 鍵盤鍵盤設定、 [選項] 對話方塊
 ms.date: 02/02/2017
 ms.topic: conceptual
 f1_keywords:
@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 63f3bfc9295501d5f9b8f0267037302cdbb04a76
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 090e943df2b61352c2342218c3c71c8f0e60eaad
+ms.sourcegitcommit: cc5fd59e5dc99181601b7db8b28d7f8a83a36bab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62970211"
+ms.lasthandoff: 06/11/2019
+ms.locfileid: "66836042"
 ---
 # <a name="microsoft-office-excel-keyboard-microsoft-office-keyboard-settings-options-dialog-box"></a>Microsoft Office Excel 鍵盤，Microsoft Office 鍵盤設定、 [選項] 對話方塊
   Microsoft Office Excel 和 Visual Studio 同時處理的快速鍵。 不同的命令，在 Excel 中，然後在 Visual Studio 中可以代表相同的快速鍵組合。 在 Visual Studio 中的文件層級專案中開啟 Excel 時，一次只有一個應用程式接收快顯命令。 根據預設，Visual Studio 會接收所有捷徑命令，但是您可以讓接收它們，當文件取得焦點時選取的 Excel**動態鍵盤配置**。

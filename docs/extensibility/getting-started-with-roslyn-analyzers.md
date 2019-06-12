@@ -8,12 +8,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ebe4922c79e546ad4ee5ae50179424bff9746a15
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: bb224d1c84f9216ed303c919118af4997be2405c
+ms.sourcegitcommit: cc5fd59e5dc99181601b7db8b28d7f8a83a36bab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66342406"
+ms.lasthandoff: 06/11/2019
+ms.locfileid: "66835901"
 ---
 # <a name="get-started-with-roslyn-analyzers"></a>開始使用 Roslyn 分析器
 
@@ -21,22 +21,19 @@ ms.locfileid: "66342406"
 
 ## <a name="get-started"></a>開始使用
 
-[Roslyn 即時程式碼分析器簡介和逐步解說](https://msdn.microsoft.com/magazine/dn879356.aspx)
+[Roslyn 分析器概觀](../code-quality/roslyn-analyzers-overview.md)
+
+[教學課程：撰寫您的第一個分析器和程式碼修正](/dotnet/csharp/roslyn-sdk/tutorials/how-to-write-csharp-analyzer-code-fix)
 
 [加入程式碼修正逐步解說：提供使用者修正分析器問題](https://msdn.microsoft.com/magazine/dn904670.aspx)
-
-[簡介和真實世界分析器的逐步解說的討論](https://channel9.msdn.com/events/Build/2015/3-725)
 
 [真實世界的 Roslyn 分析器](../extensibility/roslyn-analyzers-and-code-aware-library-for-immutablearrays.md)，您也可以觀看為[討論](https://channel9.msdn.com/events/Build/2015/3-725)
 
 [在 GitHub 上的數個範例分組為三種類型的分析器](https://github.com/dotnet/roslyn/blob/master/docs/analyzers/Analyzer%20Samples.md)
 
-[簡介與教學課程的幾個分析器的討論](https://channel9.msdn.com/Events/dotnetConf/2015/NET-Compiler-Platform-Roslyn-Analyzers-and-the-Rise-of-Code-Aware-Libraries)
 
 ## <a name="see-also"></a>另請參閱
 
-- [Roslyn 分析器概觀](../code-quality/roslyn-analyzers-overview.md)
-- [教學課程：撰寫您的第一個分析器和程式碼修正](/dotnet/csharp/roslyn-sdk/tutorials/how-to-write-csharp-analyzer-code-fix)
 - [.NET 編譯器平台的套件版本參考](roslyn-version-support.md)
 - [GitHub OSS 網站上的多個 docs](https://github.com/dotnet/roslyn/tree/master/docs/analyzers)
 - [實作使用 Roslyn 分析器的 FxCop 規則](http://roslynanalyzersstatus.azurewebsites.net/)
