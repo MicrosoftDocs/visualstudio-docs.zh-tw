@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 37bba294dde27fad19122ee281057607f6abc6c8
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: da472f443f52a6478ac5e1e34fd4d4a5beb0721b
+ms.sourcegitcommit: 51dad3e11d7580567673e0d426ab3b0a17584319
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63445792"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "66820826"
 ---
 # <a name="customizing-tools-and-the-toolbox"></a>自訂工具和工具箱
 
@@ -77,7 +77,7 @@ Editor
 
 5. 若要測試 DSL，請按下 F5 或 CTRL + f5 鍵，並在 Visual Studio 的實驗性執行個體，開啟範例模型檔案。 新工具應顯示在工具箱上。 將工具拖曳至圖表上，驗證工具是否會建立新項目。
 
-     如果此工具不會出現，請停止實驗性 Visual Studio。 在 Windows**開始**功能表中，執行**重設 Microsoft Visual Studio 2010 實驗執行個體**。 在 [建置] 功能表上，按一下 [重建方案]。 然後再測試一次 DSL。
+     如果此工具不會出現，請停止實驗性 Visual Studio。 在 Windows**開始**功能表中，執行**重設 Microsoft Visual Studio 2010 實驗執行個體**。 在 [建置]  功能表上，按一下 [重建方案]  。 然後再測試一次 DSL。
 
 ## <a name="customizing"></a> 自訂項目工具
  根據預設，此工具會建立指定類別的單一執行個體，但是您可以透過下列兩個方式來改變：
@@ -196,7 +196,7 @@ using Microsoft.VisualStudio.Modeling.Diagrams;
 
  **Link Connect 指示詞，在 DSL 詳細資料視窗**
 
- ![](../modeling/media/connectionbuilder_4b.png)
+ ![Link connect 指示詞，在 DSL 詳細資料視窗](../modeling/media/connectionbuilder_4b.png)
 
  您必須接著提供 ConnectionBuilder 類別中的方法：
 

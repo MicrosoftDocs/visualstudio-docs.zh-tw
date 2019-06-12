@@ -12,29 +12,31 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - multiple
-ms.openlocfilehash: 09db0ff784c7d8fa5a9889487f6090ad9afbfea0
-ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.openlocfilehash: f23dd3821744687d4f595ad404bc076e1d05af7b
+ms.sourcegitcommit: cc5fd59e5dc99181601b7db8b28d7f8a83a36bab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66260874"
+ms.lasthandoff: 06/11/2019
+ms.locfileid: "66835925"
 ---
-# <a name="how-to-specify-additional-code-information-by-using-analysisassume"></a>HOW TO：使用 _Analysis_assume 來指定其他程式碼資訊
+# <a name="how-to-specify-additional-code-information-by-using-analysisassume"></a>作法：使用 _Analysis_assume 來指定其他程式碼資訊
+
 您可以提供提示給程式碼分析工具，適用於 C /C++可協助分析處理，並減少警告的程式碼。 若要提供其他資訊，請使用下列函式：
 
- `_Analysis_assume(`  `expr`  `)`
+`_Analysis_assume(`  `expr`  `)`
 
- `expr` -假設為評估為 true 的任何運算式。
+`expr` -假設為評估為 true 的任何運算式。
 
- 程式碼分析工具假設條件運算式所代表之處函式隨即出現，並保持為 true，直到運算式改變，例如，藉由指派給變數，則為 true。
+程式碼分析工具假設條件運算式所代表之處函式隨即出現，並保持為 true，直到運算式改變，例如，藉由指派給變數，則為 true。
 
 > [!NOTE]
 > `_Analysis_assume` 不會影響程式碼最佳化。 外部程式碼分析工具，`_Analysis_assume`定義為執行任何作業。
 
 ## <a name="example"></a>範例
- 下列程式碼會使用`_Analysis_assume`若要修正程式碼分析警告[C6388](../code-quality/c6388.md):
 
-```
+下列程式碼會使用`_Analysis_assume`若要修正程式碼分析警告[C6388](../code-quality/c6388.md):
+
+```cpp
 #include<windows.h>
 #include<codeanalysis\sourceannotations.h>
 
@@ -56,4 +58,5 @@ void test( )
 ```
 
 ## <a name="see-also"></a>另請參閱
- [__assume](/cpp/intrinsics/assume)
+
+- [__assume](/cpp/intrinsics/assume)
