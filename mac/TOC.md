@@ -71,7 +71,8 @@
 ## [可用的工作負載](workloads.md)
 ## ASP.NET Core
 ### [.NET Core 支援](net-core-support.md)
-### [建置您的第一個 ASP.NET Core 應用程式](asp-net-core.md)
+### [ASP.NET Core 使用者入門](asp-net-core.md)
+### [在 Visual Studio for Mac 中建置 ASP.NET Core 應用程式](building-asp-net-core.md)
 ### [Razor](razor.md)
 ### [JavaScript 和 TypeScript](javascript.md)
 ## Azure
@@ -82,6 +83,7 @@
 ## Unity 遊戲開發
 ### [Unity 遊戲開發](unity-tools.md)
 ### [安裝](setup-vsmac-tools-unity.md)
+### [Unity 使用者入門](unity-walkthrough.md)
 ### [使用 Unity 工具](using-vsmac-tools-unity.md)
 ### [在 Unity 中使用 .NET 4.x](/visualstudio/cross-platform/unity-scripting-upgrade/?context=visualstudio/mac/context)
 ### [變更記錄](/visualstudio/cross-platform/change-log-visual-studio-tools-for-unity-mac/?context=visualstudio/mac/context)
