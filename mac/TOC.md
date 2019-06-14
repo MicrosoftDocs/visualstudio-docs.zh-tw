@@ -97,3 +97,6 @@
 ## [回報問題](report-a-problem.md)
 ## [疑難排解：為什麼我看不到所有範本？](troubleshooting-no-templates.md)
 ## [疑難排解：更新程式在擷取資訊時發生錯誤](updater-troubleshooting.md)
+
+# [版本資訊](https://docs.microsoft.com/visualstudio/releasenotes/vs2019-mac-relnotes)
+# [預覽版本資訊](https://docs.microsoft.com/visualstudio/releasenotes/vs2019-mac-preview-relnotes)
