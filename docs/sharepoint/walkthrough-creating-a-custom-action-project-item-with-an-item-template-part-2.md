@@ -303,7 +303,7 @@ ms.locfileid: "66401172"
 
 13. 在 **描述**方塊中，輸入**開啟 SharePoint 開發人員中心網站**。
 
-14. 在 [ **URL**方塊中，輸入 **[https://docs.microsoft.com/sharepoint/dev/](https://docs.microsoft.com/sharepoint/dev/)** ，然後選擇**完成**] 按鈕。
+14. 在 [ **URL**方塊中，輸入 **[https://docs.microsoft.com/sharepoint/dev/](https://docs.microsoft.com/sharepoint/dev/ )** ，然後選擇**完成**] 按鈕。
 
      Visual Studio 會加入名為的項目**CustomAction1**至您的專案，並開啟*Elements.xml*在編輯器中的檔案。 確認*Elements.xml*包含您在精靈中指定的值。
 
@@ -324,7 +324,7 @@ ms.locfileid: "66401172"
 
      **清單設定**頁面隨即出現。
 
-4. 底下**Communications**靠近頁面頂端的標題之下，選擇**SharePoint 開發人員中心**連結，請確認瀏覽器會開啟網站 https://docs.microsoft.com/sharepoint/dev/，然後關閉瀏覽器。
+4. 底下**Communications**靠近頁面頂端的標題之下，選擇**SharePoint 開發人員中心**連結，請確認瀏覽器會開啟網站 https://docs.microsoft.com/sharepoint/dev/ ，然後關閉瀏覽器。
 
 ## <a name="cleaning-up-the-development-computer"></a>清除開發電腦
  完成測試的專案項目之後，請從 Visual Studio 的實驗執行個體中移除專案項目範本。

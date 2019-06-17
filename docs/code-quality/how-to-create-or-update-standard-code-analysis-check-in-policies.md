@@ -29,7 +29,7 @@ ms.locfileid: "62816353"
 
 - 對於 managed 程式碼，您必須設定簽入原則藉由指定*規則集*，其中包含的程式碼分析規則子集。
 
-- 適用於 C /C++程式碼，在 Visual Studio 2017 15.6 版及更早版本，簽入原則會要求所有的程式碼分析規則會執行。 您可以加入前置處理器指示詞，若要停用 Azure DevOps 專案中的個別程式碼專案的特定規則。 15.7 中和更新版本中，您可以使用 **/analyze: ruleset**指定要執行哪些規則。 如需詳細資訊，請參閱 <<c0> [ 指定来使用規則集C++要執行規則](using-rule-sets-to-specify-the-cpp-rules-to-run.md)。</c0>
+- 適用於 C /C++程式碼，在 Visual Studio 2017 15.6 版及更早版本，簽入原則會要求所有的程式碼分析規則會執行。 您可以加入前置處理器指示詞，若要停用 Azure DevOps 專案中的個別程式碼專案的特定規則。 15\.7 中和更新版本中，您可以使用 **/analyze: ruleset**指定要執行哪些規則。 如需詳細資訊，請參閱 <<c0> [ 指定来使用規則集C++要執行規則](using-rule-sets-to-specify-the-cpp-rules-to-run.md)。</c0>
 
 指定 managed 程式碼簽入原則之後，小組成員可以同步處理他們的 Azure DevOps 專案原則設定的程式碼專案的程式碼分析設定。
 
