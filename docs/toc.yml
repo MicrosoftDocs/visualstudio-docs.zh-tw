@@ -399,6 +399,8 @@
                       href: ide/reference/move-type-to-matching-file.md
                     - name: 成員上移
                       href: ide/reference/pull-members-up.md
+                    - name: 透過 IntelliSense 完成 Regex
+                      href: ide/reference/regex-completion-through-intellisense.md
                     - name: 移除執行不到的程式碼
                       href: ide/reference/remove-unreachable-code.md
                     - name: 重新命名

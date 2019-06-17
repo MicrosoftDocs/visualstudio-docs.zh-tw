@@ -12,14 +12,14 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - multiple
-ms.openlocfilehash: f23dd3821744687d4f595ad404bc076e1d05af7b
-ms.sourcegitcommit: cc5fd59e5dc99181601b7db8b28d7f8a83a36bab
+ms.openlocfilehash: 1d3c80f0780dcd577356de69944dcc76cca7133c
+ms.sourcegitcommit: ab06cde69d862440b4277bcd9bf02e7b50593a1b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/11/2019
-ms.locfileid: "66835925"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67132110"
 ---
-# <a name="how-to-specify-additional-code-information-by-using-analysisassume"></a>作法：使用 _Analysis_assume 來指定其他程式碼資訊
+# <a name="how-to-specify-additional-code-information-by-using-analysisassume"></a>HOW TO：使用 _Analysis_assume 來指定其他程式碼資訊
 
 您可以提供提示給程式碼分析工具，適用於 C /C++可協助分析處理，並減少警告的程式碼。 若要提供其他資訊，請使用下列函式：
 
@@ -42,18 +42,18 @@ ms.locfileid: "66835925"
 
 using namespace vc_attributes;
 
-// calls free and sets ch to null
-void FreeAndNull(char* ch);
-
 //requires pc to be null
 void f([Pre(Null=Yes)] char* pc);
 
-void test( )
+// calls free and sets ch to null
+void FreeAndNull(char** ch);
+
+void test()
 {
-  char *pc = (char*)malloc(5);
-  FreeAndNull(pc);
-  _Analysis_assume(pc == NULL);
-  f(pc);
+    char pc = (char)malloc(5);
+    FreeAndNull(&pc);
+    __analysis_assume(pc == NULL);
+    f(pc);
 }
 ```
 

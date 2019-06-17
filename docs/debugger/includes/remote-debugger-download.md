@@ -8,16 +8,16 @@ ms.topic: include
 ms.date: 05/23/2018
 ms.author: mikejo
 ms.custom: include file
-ms.openlocfilehash: fec32bf187d629c5fd99ce27eb17a61db39d3873
-ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
+ms.openlocfilehash: 1e90a1d9e03892cf81bd2257d3dcc6e25ab36246
+ms.sourcegitcommit: 91c7f1b525e0c22d938bc4080ba4ceac2483474f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "65839708"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "67032875"
 ---
 遠端裝置或伺服器，您要偵錯，而非在 Visual Studio 電腦，下載並安裝正確版本的遠端工具從下表中的連結。
 
-- 下載最新的遠端工具，您的 Visual Studio 版本。 最新的遠端工具版本與舊版的 Visual Studio 版本中，相容，但是舊版的遠端工具無法與更新版本的 Visual Studio 版本相容。
+- 下載最新的遠端工具，您的 Visual Studio 版本。 最新的遠端工具版本與舊版的 Visual Studio 版本中，相容，但是舊版的遠端工具無法與更新版本的 Visual Studio 版本相容。 （例如，如果您使用 Visual Studio 2017，下載適用於 Visual Studio 2017 遠端工具的最新更新。 在此案例中，請勿下載遠端工具的 Visual Studio 2019。）
 - 下載與您打算安裝的相同架構與機器的遠端工具。 例如，如果您想要偵錯遠端電腦執行 64 位元作業系統上的 32 位元應用程式，安裝 64 位元遠端工具。
 
 ::: moniker range=">=vs-2019"

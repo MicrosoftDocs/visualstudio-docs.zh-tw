@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8b4c763ff31c6c62a177c77f8886f1de305a5170
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: db966d2c0ac048bd650500ed6ab191e6bc867e36
+ms.sourcegitcommit: 9753c7544cec852ca5efd0834e0956d9e53a5734
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62853081"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67043299"
 ---
 # <a name="learn-productivity-tips-and-tricks-for-the-debugger-in-visual-studio"></a>了解 Visual Studio 中偵錯工具的產能的秘訣和訣竅
 
@@ -138,7 +138,7 @@ ms.locfileid: "62853081"
 
 ## <a name="examine-payloads-for-web-services-and-network-resources-uwp"></a>檢查裝載 web 服務和網路資源 (UWP)
 
-在 UWP 應用程式，您可以分析執行使用的網路作業`Windows.Web.Http`API。 您可以使用這項工具，以協助偵錯 web 服務和網路資源。 若要使用的工具，請選取**偵錯 > 效能 Profiler**。 選取 **網路**，然後選擇**開始**。 在應用程式中，完整瀏覽使用 `Windows.Web.Http` 的案例，然後選擇 [停止收集] 以產生報表。
+在 UWP 應用程式，您可以分析執行使用的網路作業`Windows.Web.Http`API。 您可以使用這項工具，以協助偵錯 web 服務和網路資源。 若要使用的工具，請選取**偵錯 > 效能 Profiler**。 選取 **網路**，然後選擇**開始**。 在應用程式中，完整瀏覽使用 `Windows.Web.Http` 的案例，然後選擇 [停止收集]  以產生報表。
 
 ![網路使用量分析工具](../profiling/media/prof-tour-network-usage.png "NetworkUsageProfTool")
 
@@ -170,4 +170,5 @@ ms.locfileid: "62853081"
 - [在 Visual Studio 中隱藏的寶藏 7](https://devblogs.microsoft.com/visualstudio/7-hidden-gems-in-visual-studio-2017/)
 
 ## <a name="see-also"></a>另請參閱
-[鍵盤快速鍵](../ide/tips-and-tricks-for-visual-studio.md)
+
+[鍵盤快速鍵](../ide/productivity-shortcuts.md)

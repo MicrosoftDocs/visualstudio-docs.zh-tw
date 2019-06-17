@@ -8,7 +8,7 @@
           href: designing-xaml-in-visual-studio.md
         - name: XAML 設計工具
           items:
-            - name: 概觀
+            - name: 總覽
               displayName: XAML Designer
               href: creating-a-ui-by-using-xaml-designer-in-visual-studio.md
             - name: 運用元素
@@ -27,7 +27,7 @@
               href: xaml-errors-warnings.md
         - name: Blend for Visual Studio
           items:
-            - name: 概觀
+            - name: 總覽
               displayName: Blend for Visual Studio
               href: creating-a-ui-by-using-blend-for-visual-studio.md
             - name: 插入控制項並修改其行為
@@ -44,7 +44,7 @@
               href: display-data-in-blend.md
             - name: 鍵盤快速鍵和輔助按鍵
               items:
-                - name: 概觀
+                - name: 總覽
                   href: keyboard-shortcuts-and-modifier-keys-in-blend.md
                 - name: 鍵盤快速鍵
                   href: keyboard-shortcuts-in-blend.md
@@ -69,7 +69,7 @@
               href: wpf-data-binding-with-linq-to-xml-overview.md
             - name: LINQ to XML 動態屬性
               items:
-                - name: 概觀
+                - name: 總覽
                   displayName: LINQ to XML dynamic properties
                   href: linq-to-xml-dynamic-properties.md
                 - name: XAttribute 類別動態屬性
@@ -106,7 +106,7 @@
       items:
         - name: '教學課程 1：建立圖片檢視器 (C#)'
           items:
-            - name: 概觀
+            - name: 總覽
               displayName: Tutorial 1 Picture viewer
               href: ../ide/tutorial-1-create-a-picture-viewer.md
             - name: 步驟 1：建立 Windows Forms 應用程式專案
@@ -121,9 +121,9 @@
               href: ../ide/step-5-add-controls-to-your-form.md
             - name: 步驟 6：命名按鈕控制項
               href: ../ide/step-6-name-your-button-controls.md
-            - name: 步驟 7：將對話方塊元件新增至表單
+            - name: 步驟 7：將對話方塊元件新增至您的表單
               href: ../ide/step-7-add-dialog-components-to-your-form.md
-            - name: 步驟 8：為顯示圖片按鈕事件處理常式撰寫程式碼
+            - name: '步驟 8：撰寫 [顯示圖片] 按鈕事件處理常式的程式碼'
               href: ../ide/step-8-write-code-for-the-show-a-picture-button-event-handler.md
             - name: 步驟 9：檢閱、註解及測試您的程式碼
               href: ../ide/step-9-review-comment-and-test-your-code.md
@@ -133,7 +133,7 @@
               href: ../ide/step-11-run-your-program-and-try-other-features.md
         - name: '教學課程 2：建立計時數學測驗 (C#)'
           items:
-            - name: 概觀
+            - name: 總覽
               displayName: Tutorial 2 Timed math quiz
               href: ../ide/tutorial-2-create-a-timed-math-quiz.md
             - name: 步驟 1：建立專案並將標籤新增至表單
@@ -154,16 +154,16 @@
               href: ../ide/step-8-customize-the-quiz.md
         - name: '教學課程 3：建立配對遊戲 (C#)'
           items:
-            - name: 概觀
+            - name: 總覽
               displayName: Tutorial 3 Matching game
               href: ../ide/tutorial-3-create-a-matching-game.md
             - name: 步驟 1：建立專案並將資料表新增至表單
               href: ../ide/step-1-create-a-project-and-add-a-table-to-your-form.md
-            - name: 步驟 2：新增隨機物件及圖示的清單
+            - name: 步驟 2：新增隨機物件與圖示清單
               href: ../ide/step-2-add-a-random-object-and-a-list-of-icons.md
             - name: 步驟 3：將隨機圖示指派給每一個標籤
               href: ../ide/step-3-assign-a-random-icon-to-each-label.md
-            - name: 步驟 4：將 Click 事件處理常式新增至每一個標籤
+            - name: 步驟 4：將 Click 事件處理常式新增至每個標籤
               href: ../ide/step-4-add-a-click-event-handler-to-each-label.md
             - name: 步驟 5：新增標籤參考
               href: ../ide/step-5-add-label-references.md
@@ -217,7 +217,7 @@
               href: shader-designer.md
             - name: 著色器設計工具節點
               items:
-                - name: 概觀
+                - name: 總覽
                   displayName: Shader designer nodes
                   href: shader-designer-nodes.md
                 - name: 常數節點
