@@ -7,18 +7,18 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 5030498702808dc9d41a5daa12520893c3de2627
-ms.sourcegitcommit: 614d5b99576ea27a41957cd94062dc95cbd29c1c
+ms.openlocfilehash: f7d4da645c464e51bd331bca64066209b52132fe
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/10/2019
-ms.locfileid: "65531994"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66746563"
 ---
 # <a name="configure-unit-tests-by-using-a-runsettings-file"></a>使用 *.runsettings* 檔案設定單元測試
 
-您可以使用 *.runsettings* 檔案來設定 Visual Studio 中的單元測試。 例如，您可以變更執行測試的 .NET Framework 版本、測試結果的所在目錄，或在測試回合期間所收集的資料。
+您可以使用 *.runsettings* 檔案來設定 Visual Studio 中的單元測試。 例如，您可以變更執行測試的 .NET 版本、測試結果的所在目錄，或在測試回合期間所收集的資料。
 
-回合設定檔為選擇性。 如果不想要任何特殊組態，即不需要 *.runsettings* 檔案。 .runsettings 檔案最常見的用法是自訂[程式碼涵蓋範圍分析](../test/customizing-code-coverage-analysis.md)。
+回合設定檔為選擇性。 如果不想要任何特殊組態，即不需要 *.runsettings* 檔案。 .runsettings  檔案最常見的用法是自訂[程式碼涵蓋範圍分析](../test/customizing-code-coverage-analysis.md)。
 
 ## <a name="specify-a-run-settings-file"></a>指定回合設定檔
 
@@ -26,25 +26,25 @@ ms.locfileid: "65531994"
 
 ### <a name="specify-a-run-settings-file-in-the-ide"></a>在 IDE 中指定回合設定檔
 
-選取 [測試] > [測試設定] > [選取測試設定檔]，然後選取 .runsettings 檔案。 該檔案隨即出現在 [測試設定] 功能表上，而且您可以加以選取或取消選取。 選取時，只要選取 [分析程式碼涵蓋範圍]，就會套用回合設定檔。
+選取 [測試]   > [測試設定]   > [選取測試設定檔]  ，然後選取 .runsettings  檔案。 該檔案隨即出現在 [測試設定]  功能表上，而且您可以加以選取或取消選取。 選取時，只要選取 [分析程式碼涵蓋範圍]  ，就會套用回合設定檔。
 
 ![在 Visual Studio 中選取測試設定檔案功能表](media/select-test-settings-file.png)
 
 ### <a name="specify-a-run-settings-file-at-the-command-line"></a>在命令列指定回合設定檔
 
-若要從命令列執行測試，請使用 vstest.console.exe，然後使用 **/Settings** 參數指定設定檔。
+若要從命令列執行測試，請使用 vstest.console.exe  ，然後使用 **/Settings** 參數指定設定檔。
 
 1. 啟動 Visual Studio Developer 命令提示字元：
 
    ::: moniker range="vs-2017"
 
-   在 Windows 的 [開始] 功能表中，選擇 [Visual Studio 2017] >[VS 2017 開發人員命令提示字元]。
+   在 Windows 的 [開始]  功能表中，選擇 [Visual Studio 2017]  >[VS 2017 開發人員命令提示字元]  。
 
    ::: moniker-end
 
    ::: moniker range=">=vs-2019"
 
-   在 Windows 的 [開始] 功能表中，選擇 [Visual Studio 2019] >[VS 2019 開發人員命令提示字元]。
+   在 Windows 的 [開始]  功能表中，選擇 [Visual Studio 2019]  >[VS 2019 開發人員命令提示字元]  。
 
    ::: moniker-end
 
@@ -58,23 +58,23 @@ ms.locfileid: "65531994"
 
 ## <a name="customize-tests"></a>自訂測試
 
-若要使用 .runsettings 檔案自訂您的測試，請遵循下列步驟：
+若要使用 .runsettings  檔案自訂您的測試，請遵循下列步驟：
 
-1. 將 XML 檔案新增至 Visual Studio 方案，並將它儲存為 test.runsettings。
+1. 將 XML 檔案新增至 Visual Studio 方案，並將它儲存為 test.runsettings  。
 
    > [!TIP]
-   > 檔案名稱並不重要，只要使用的副檔名為 .runsettings 即可。
+   > 檔案名稱並不重要，只要使用的副檔名為 .runsettings  即可。
 
 1. 使用後續範例的 XML 取代檔案內容，並視需要自訂它。
 
-1. 在 [測試] 功能表中選擇 [測試設定] > [選取測試設定檔]。 瀏覽至您建立的 .runsettings 檔案，然後選取 [確定]。
+1. 在 [測試]  功能表中選擇 [測試設定]   > [選取測試設定檔]  。 瀏覽至您建立的 .runsettings  檔案，然後選取 [確定]  。
 
    > [!TIP]
-   > 您可以在方案中建立多個 .runsettings 檔案，然後視需要選取其中一個作為使用中測試設定檔。
+   > 您可以在方案中建立多個 .runsettings  檔案，然後視需要選取其中一個作為使用中測試設定檔。
 
 ## <a name="example-runsettings-file"></a>*.runsettings* 檔案範例
 
-下列 XML 顯示一般 .runsettings 檔案的內容。 檔案的每個項目都有預設值，因此為選擇性。
+下列 XML 顯示一般 .runsettings  檔案的內容。 檔案的每個項目都有預設值，因此為選擇性。
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -152,7 +152,7 @@ ms.locfileid: "65531994"
 </RunSettings>
 ```
 
-## <a name="elements-of-a-runsettings-file"></a>.runsettings 檔案的項目
+## <a name="elements-of-a-runsettings-file"></a>.runsettings  檔案的項目
 
 以下各節詳細說明 *.runsettings* 檔案的項目。
 
@@ -252,12 +252,12 @@ public void HomePageTest()
 |-|-|-|
 |**ForcedLegacyMode**|False|Visual Studio 2012 中的 MSTest 配接器已進行過最佳化，因此更快速且更具延展性。 某些行為 (例如測試執行順序) 可能與舊版 Visual Studio 稍有出入。 將此值設定為 **true**，以使用較舊的測試配接器。<br /><br />例如，如果您為單元測試指定 *app.config* 檔案，則可以使用此設定。<br /><br />建議您考慮重構測試，以便使用較新的配接器。|
 |**IgnoreTestImpact**|False|在 MSTest 或 Microsoft Test Manager 中執行時，測試影響功能會為最近變更所影響的測試設定優先權。 這項設定會停用該功能。 如需詳細資訊，請參閱[自從上次建置以來應該要執行哪些測試？](https://msdn.microsoft.com/library/dd286589)。|
-|**SettingsFile**||您可以指定與此處的 MS 測試配接器一起使用的測試設定檔。 您也可以選取 [測試] > [測試設定] > [選取測試設定檔] 來指定測試設定檔。<br /><br />如果您指定這個值，也必須將 [ **ForcedlegacyMode** ] 設定為 [ **true**]。<br /><br />`<ForcedLegacyMode>true</ForcedLegacyMode>`|
+|**SettingsFile**||您可以指定與此處的 MS 測試配接器一起使用的測試設定檔。 您也可以選取 [測試]   > [測試設定]   > [選取測試設定檔]  來指定測試設定檔。<br /><br />如果您指定這個值，也必須將 [ **ForcedlegacyMode** ] 設定為 [ **true**]。<br /><br />`<ForcedLegacyMode>true</ForcedLegacyMode>`|
 |**KeepExecutorAliveAfterLegacyRun**|False|測試回合完成後，會關閉 MSTest。 所有在測試過程中啟動的處理序也都會終止。 如果您要讓測試執行程式保持運作，請將此值設定為 **true**。 例如，您可以使用此設定讓瀏覽器在不同的自動程式碼 UI 測試之間保持執行。|
 |**DeploymentEnabled**|true|如果您將此值設定為 **false**，就不會將您在測試方法中指定的部署項目複製到部署目錄中。|
 |**CaptureTraceOutput**|true|您可以使用 <xref:System.Diagnostics.Trace.WriteLine%2A?displayProperty=nameWithType> 從測試方法寫入偵錯追蹤。|
 |**DeleteDeploymentDirectoryAfterTestRunIsComplete**|true|若要在測試回合之後保留部署目錄，請將此值設定為 **false**。|
-|**MapInconclusiveToFailed**|False|如果測試完成，但狀態結果不明，則通常對應至 [測試總管] 中的已略過狀態。 如果您要讓結果不明的測試顯示為 [失敗]，請將此值設定為 **true**。|
+|**MapInconclusiveToFailed**|False|如果測試完成，但狀態結果不明，則通常對應至 [測試總管]  中的已略過狀態。 如果您要讓結果不明的測試顯示為 [失敗]，請將此值設定為 **true**。|
 |**InProcMode**|False|如果您要在 MSTest 配接器的相同處理序中執行測試，請將此值設定為 **true**。 這個設定提供較小效能。 但如果測試因例外狀況而結束，則不會執行其餘測試。|
 |**AssemblyResolution**|False|您可以在求解及執行單元測試時，指定其他組件的路徑。 例如，您可以針對與測試組件位於不同目錄的相依性組件，使用這些路徑。 若要指定路徑，請使用**目錄路徑**項目。 路徑可以包括環境變數。<br /><br />`<AssemblyResolution>  <Directory Path="D:\myfolder\bin\" includeSubDirectories="false"/> </AssemblyResolution>`|
 

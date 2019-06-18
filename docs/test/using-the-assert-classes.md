@@ -11,12 +11,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: d9d02ee375a5b9e6069a94cd7b534b871792088a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d145734dc89faafcedbca6730f0a90da174376c4
+ms.sourcegitcommit: 51dad3e11d7580567673e0d426ab3b0a17584319
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62962001"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "66820319"
 ---
 # <a name="use-assert-classes-for-unit-testing"></a>使用 Assert 類別進行單元測試
 
@@ -45,7 +45,7 @@ ms.locfileid: "62962001"
 
 如果您撰寫新的 Assert 例外狀況類別，繼承基底類別 <xref:Microsoft.VisualStudio.TestTools.UnitTesting.UnitTestAssertException>可使它更輕鬆地將例外狀況識別為判斷提示失敗，而不是從您的測試或生產環境程式碼擲回未預期的例外狀況。
 
-當您想要測試方法以確認您預期由應用程式程式碼中之方法擲回的例外狀況，確實是由該方法擲回時，請使用 <xref:Microsoft.VisualStudio.TestTools.UnitTesting.ExpectedExceptionAttribute> 屬性裝飾測試方法。
+若要確認您預期由應用程式程式碼中之方法擲回的例外狀況，確實是由該方法擲回時，請使用 <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.ThrowsException%2A?displayProperty=nameWithType> 方法。
 
 ## <a name="see-also"></a>另請參閱
 

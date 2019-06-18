@@ -8,16 +8,18 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5f07d4e2dc52ff05d67ec18d7f40f1119db582c0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: bac2041e9338f4b8b95755221a44157e0c409c8f
+ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62894004"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66747287"
 ---
 # <a name="get-started-with-wpf"></a>開始使用 WPF
 
-Windows Presentation Foundation (WPF) 是建立桌面用戶端應用程式的 UI 架構。 WPF 開發平台支援一組廣泛的應用程式開發功能，包含應用程式模型、資源、控制項、圖形、版面配置、資料繫結、文件和安全性。 它是 .NET Framework 的子集，所以若您先前已使用 ASP.NET 或 Windows Form 以 .NET Framework 建置過應用程式，應該會對此程式設計體驗感到熟悉。 WPF 使用可延伸應用程式標記語言 (XAML) 來提供應用程式設計的宣告式模型。 本章節的主題將介紹及幫助您開始使用 WPF。
+Windows Presentation Foundation (WPF) 是建立桌面用戶端應用程式的 UI 架構。 WPF 開發平台支援一組廣泛的應用程式開發功能，包含應用程式模型、資源、控制項、圖形、版面配置、資料繫結、文件和安全性。 Framework 是 .NET 的一部分，所以如果您之前曾使用 ASP.NET 或 Windows Forms 搭配 .NET 建置應用程式，便應該會對此程式設計體驗感到熟悉。 WPF 使用可延伸應用程式標記語言 (XAML) 來提供應用程式設計的宣告式模型。
+
+本章節的主題將介紹及幫助您開始使用 WPF。
 
 ## <a name="where-should-i-start"></a>我該從哪裡開始？
 
@@ -25,7 +27,7 @@ Windows Presentation Foundation (WPF) 是建立桌面用戶端應用程式的 UI
 |-|-|
 |我想直接開始|[逐步解說：我的第一個 WPF 傳統型應用程式](/dotnet/framework/wpf/getting-started/walkthrough-my-first-wpf-desktop-application)|
 |我想要比較 XAML 設計工具...|[在 Visual Studio 和 Blend for Visual Studio 中設計 XAML](../designers/designing-xaml-in-visual-studio.md)|
-|剛開始使用 .NET 嗎？|[.NET Framework 概觀](/dotnet/framework/get-started/overview)<br /><br /> [應用程式基本概念](/dotnet/standard/application-essentials)<br /><br /> [Visual C# 和 Visual Basic 使用者入門](../ide/quickstart-visual-basic-console.md)|
+|剛開始使用 .NET 嗎？|[.NET 概觀](/dotnet/framework/get-started/overview)<br /><br /> [應用程式基本概念](/dotnet/standard/application-essentials)<br /><br /> [Visual C# 和 Visual Basic 使用者入門](../ide/quickstart-visual-basic-console.md)|
 |WPF 的相關詳細資訊...|[WPF 概觀](../designers/introduction-to-wpf.md)<br /><br /> [XAML 概觀 (WPF)](/dotnet/framework/wpf/advanced/xaml-overview-wpf)<br /><br /> [控制項](/dotnet/framework/wpf/controls/)<br /><br /> [資料繫結概觀](/dotnet/framework/wpf/data/data-binding-overview)<br /><br /> [使用 LINQ to XML 進行 WPF 資料繫結](../designers/wpf-data-binding-with-linq-to-xml-overview.md)|
 |您是 Windows Form 開發人員嗎？|[Windows Forms 控制項和對等 WPF 控制項](/dotnet/framework/wpf/advanced/windows-forms-controls-and-equivalent-wpf-controls)<br /><br /> [WPF 和 Windows Forms 互通的支援情節](/dotnet/framework/wpf/advanced/wpf-and-windows-forms-interoperation)|
 

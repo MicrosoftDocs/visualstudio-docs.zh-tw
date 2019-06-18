@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 55884fe34fda7f29370439d8a792a595763292b0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ed0f396613cea4ec2b6d9869e3ef1b121cac236b
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63004761"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66747366"
 ---
 # <a name="msbuild-task-reference"></a>MSBuild 工作參考
 
@@ -169,7 +169,7 @@ ms.locfileid: "63004761"
 
 - [GetFrameworkPath 工作](../msbuild/getframeworkpath-task.md)
 
- 擷取 [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 組件的路徑。
+ 擷取 .NET Framework 組件的路徑。
 
 - [GetFrameworkSdkPath 工作](../msbuild/getframeworksdkpath-task.md)
 
@@ -301,7 +301,7 @@ ms.locfileid: "63004761"
 
 - [XslTransformation 工作](../msbuild/xsltransformation-task.md)
 
- 使用「可延伸樣式表語言轉換」(XSLT) 或編譯的 XSLT 轉換 XML 輸入，並輸出到輸出裝置或檔案。
+ 使用「可延伸樣式表語言轉換」  (XSLT) 或編譯的 XSLT 轉換 XML 輸入，並輸出到輸出裝置或檔案。
 
 - [ZipDirectory 工作](../msbuild/zipdirectory-task.md)
 

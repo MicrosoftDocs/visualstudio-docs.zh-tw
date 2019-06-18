@@ -8,15 +8,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3c0472fb572aab8559d8cbb571c044f9ef25f8ed
-ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.openlocfilehash: 5b5f2c1d350f487b6490d0c2b4ce4fe0b83bb38f
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66263830"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66746771"
 ---
 # <a name="use-profiling-methods-to-collect-performance-data-from-the-command-line"></a>從命令列使用分析方法收集效能資料
-您選擇的 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 程式碼剖析工具命令列工具與選項，取決於像是您要進行程式碼剖析的應用程式類型、您想要使用的程式碼剖析方法以及目標應用程式是否以原生或 [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 程式碼撰寫等因素。
+您選擇的 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 程式碼剖析工具命令列工具與選項，取決於像是您要進行程式碼剖析的應用程式類型、您想要使用的程式碼剖析方法以及目標應用程式是否以原生或 .NET Framework 程式碼撰寫等因素。
 
  本主題根據您選擇的程式碼剖析方法來組織命令列程序性主題。
 
@@ -50,9 +50,9 @@ ms.locfileid: "66263830"
 - [原生服務](../profiling/how-to-instrument-a-native-service-and-collect-detailed-timing-data-by-using-the-profiler-command-line.md)
 
 ## <a name="use-net-memory-methods-to-collect-memory-allocation-and-object-lifetime-data"></a>使用 .NET 記憶體方法收集記憶體配置和物件存留期資料
- 程式碼剖析工具 .NET 記憶體方法可讓您收集 [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 記憶體配置資料和 [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 中有關物件存留期的資訊。
+ 分析工具 .NET 記憶體方法可讓您收集 .NET Framework 記憶體配置資料和 .NET Framework 中有關物件存留期的資訊。
 
- 您可以使用分析工具，來啟動目標應用程式，您可以將分析工具附加至應用程式執行中的執行個體，而且您可以建立已檢測的應用程式版本，以收集詳細的計時資訊和 [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 記憶體資料。
+ 您可以使用分析工具來啟動目標應用程式；您可以將分析工具附加至應用程式執行中的執行個體；您也可以建立已檢測的應用程式版本，以收集詳細的計時資訊和 .NET Framework 記憶體資料。
 
 |工作|目標應用程式類型|
 |----------|-----------------------------|

@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a27799eb9c22ec633d5c8d8604fe58d6924cd623
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 2651a5fc2c32de5018e8fa07f42c5067d469758c
+ms.sourcegitcommit: 51dad3e11d7580567673e0d426ab3b0a17584319
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62847145"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "66820560"
 ---
 # <a name="blend-for-visual-studio-overview"></a>Blend for Visual Studio 概觀
 
@@ -28,47 +28,47 @@ Blend for Visual Studio 是 Visual Studio 的元件。 若要安裝 Blend，請�
 如果您是 Blend for Visual Studio 的新手，請花點時間熟悉工作區的獨特功能。 本主題會帶領您快速導覽。
 
 > [!NOTE]
-> 若要導覽共用的設計功能，例如畫板、[文件大綱] 視窗和 [裝置] 視窗，請參閱[使用 XAML 設計工具建立 UI](../designers/creating-a-ui-by-using-xaml-designer-in-visual-studio.md)。
+> 若要導覽共用的設計功能，例如畫板、[文件大綱]  視窗和 [裝置]  視窗，請參閱[使用 XAML 設計工具建立 UI](../designers/creating-a-ui-by-using-xaml-designer-in-visual-studio.md)。
 
 ## <a name="tools-panel"></a>工具面板
 
-您可以使用 Blend for Visual Studio 中的 [工具] 面板來建立及修改應用程式中的物件。 當您開啟 *.xaml* 檔案時，[工具] 面板會顯示在 XAML 設計工具的左側。
+您可以使用 Blend for Visual Studio 中的 [工具]  面板來建立及修改應用程式中的物件。 當您開啟 *.xaml* 檔案時，[工具]  面板會顯示在 XAML 設計工具的左側。
 
 您可以選取工具，然後使用滑鼠在畫板上繪製以建立物件。
 
 ![Blend for Visual Studio 的 [工具] 面板](../designers/media/blend5toolspanel.png)
 
 > [!TIP]
-> [工具] 面板中的部分工具有變化 (如 A 圖到 F圖所示)。 若要存取這些變化，請以滑鼠右鍵按一下或按住工具。
+> [工具]  面板中的部分工具有變化 (如 A 圖到 F圖所示)。 若要存取這些變化，請以滑鼠右鍵按一下或按住工具。
 >
 > ![Blend for Visual Studio 的圖形工具變化](media/rectangle-shape-tool-blend.png)
 
 |||||
 |-|-|-|-|
-|![選取工具](../designers/media/b1_1.png)|**選取工具**：選取物件和路徑。<br /><br /> 使用 [直接選取] 工具可選取巢狀物件和路徑區段。|![圖說文字 A](../designers/media/b5_label_a.png)|**漸層和筆刷工具**|
+|![選取工具](../designers/media/b1_1.png)|**選取工具**：選取物件和路徑。<br /><br /> 使用 [直接選取]  工具可選取巢狀物件和路徑區段。|![圖說文字 A](../designers/media/b5_label_a.png)|**漸層和筆刷工具**|
 |![檢視工具](../designers/media/b1_2.png)|**檢視工具**：調整畫板的檢視方式，例如移動瀏覽和縮放。|![圖說文字 B](../designers/media/b5_label_b.png)|**路徑工具**|
 |![筆刷工具](../designers/media/b1_3.png)|**筆刷工具**：處理物件的視覺屬性，例如轉換筆刷、繪製物件，或選取某個物件的屬性以套用至另一個物件。|![圖說文字 C](../designers/media/b5_label_c.png)|**圖形工具**|
 |![物件工具](../designers/media/b1_4.png)|**物件工具**：繪製畫板上最常用的物件，例如路徑、圖形、版面配置面板、文字及控制項。|![圖說文字 D](../designers/media/b5_label_d.png)|**版面配置面板**|
-|![資產工具](../designers/media/b1_5.png)|**資產工具**：存取 [資產] 面板，以及顯示資產庫中最近使用過的資產。|![圖說文字 E](../designers/media/b5_label_e.png)|**文字控制項**|
+|![資產工具](../designers/media/b1_5.png)|**資產工具**：存取 [資產]  面板，以及顯示資產庫中最近使用過的資產。|![圖說文字 E](../designers/media/b5_label_e.png)|**文字控制項**|
 |||![圖說文字 F](../designers/media/b5_label_f.png)|**通用控制項**|
 
 ## <a name="assets-window"></a>資產視窗
 
-[資產] 視窗包含所有可用的控制項，類似於 Visual Studio 的**工具箱**。 除了控制項之外，您還可以在 [資產] 視窗中找到可新增至畫板的所有項目，包括樣式、媒體、行為和效果。 若要開啟 [資產] 視窗中，請選擇 [檢視] > [資產] 視窗，或按 **Ctrl** + **Alt**+**X**。
+[資產]  視窗包含所有可用的控制項，類似於 Visual Studio 的**工具箱**。 除了控制項之外，您還可以在 [資產]  視窗中找到可新增至畫板的所有項目，包括樣式、媒體、行為和效果。 若要開啟 [資產]  視窗中，請選擇 [檢視]   > [資產] 視窗  ，或按 **Ctrl** + **Alt**+**X**。
 
 ![Blend for Visual Studio 的 [資產] 視窗](../designers/media/blend5_assets_panel.png)
 
 |||
 |-|-|
-|![](../designers/media/b1_1.png)|**搜尋方塊**：在 [搜尋] 方塊中輸入文字，即可篩選資產清單。|
-|![格線模式與清單模式](../designers/media/b1_2.png)|**格線模式與清單模式**：切換資產的 [格線模式] 檢視與 [清單模式] 檢視。|
+|![資產搜尋方塊](../designers/media/b1_1.png)|**搜尋方塊**：在 [搜尋]  方塊中輸入文字，即可篩選資產清單。|
+|![格線模式與清單模式](../designers/media/b1_2.png)|**格線模式與清單模式**：切換資產的 [格線模式]  檢視與 [清單模式]  檢視。|
 |![資產分類](../designers/media/b1_3.png)|**資產分類**：按一下分類或子分類可檢視該分類中的資產清單。|
 |![樣式](../designers/media/b1_4.png)|**樣式**：顯示資源字典中所包含的所有樣式。|
 |![說明](../designers/media/b1_5.png)|**描述**：檢視所選的資產分類或子分類的描述。|
 
 ## <a name="objects-and-timeline-window"></a>[物件與時間軸] 視窗
 
-使用此視窗可依您想要的方式，在畫板上組織物件以製作動畫。 若要開啟 [物件與時間軸] 視窗，請選擇 [檢視] > [物件與時間軸]，或按 **Ctrl**+**W**、**U**。
+使用此視窗可依您想要的方式，在畫板上組織物件以製作動畫。 若要開啟 [物件與時間軸]  視窗，請選擇 [檢視]   > [物件與時間軸]  ，或按 **Ctrl**+**W**、**U**。
 
 ![動畫模式中的 [物件與時間軸] 視窗](../designers/media/b5_object_timeline_animation.png)
 
@@ -79,12 +79,12 @@ Blend for Visual Studio 是 Visual Studio 的元件。 若要安裝 Blend，請�
 |![分鏡腳本選擇器](../designers/media/b1_3.png)|**分鏡腳本選擇器**：檢視您所建立的分鏡腳本清單。|
 |![關閉分鏡腳本](../designers/media/b1_4.png)|**關閉分鏡腳本**：關閉目前的分鏡腳本。|
 |![分鏡腳本選項](../designers/media/b1_5.png)|**分鏡腳本選項**：建立、重複、回復、刪除、重新命名或關閉分鏡腳本。|
-|![播放控制項](../designers/media/b1_6.png)|**播放控制項**：透過時間軸瀏覽。 您也可以拖曳播放點來瀏覽 (或「快轉」) 時間軸。|
+|![播放控制項](../designers/media/b1_6.png)|**播放控制項**：透過時間軸瀏覽。 您也可以拖曳播放點來瀏覽 (或「快轉」  ) 時間軸。|
 |![將範圍傳回](../designers/media/b1_7.png)|**將範圍傳回**：讓物件檢視範圍回到前一個根物件或前一個範圍。 只有在要修改樣式或範本時才能這麼做。|
 |![錄製主要畫面格](../designers/media/b1_8.png)|**錄製主要畫面格**：錄製目前時間點上所選物件屬性的快照集。|
 |![貼齊選項](../designers/media/b1_9.png)|**貼齊選項**：設定時間軸貼齊、貼齊解析度，以及關閉時間軸貼齊。|
 |![顯示隱藏鎖定解除鎖定](../designers/media/97fa60b9-0caf-4387-9225-b57510d32209.png)|**顯示/隱藏**、**鎖定/解除鎖定**：顯示或隱藏物件檢視的可見性與鎖定選項。|
-|![時間軸上的播放點位置](../designers/media/b1_11.png)|**時間軸上的播放點位置**：以毫秒為單位顯示目前時間。 您也可以在此欄位中直接輸入時間值，以跳至特定的時間點。 精確度取決於 [貼齊選項] 中設定的貼齊解析度。|
+|![時間軸上的播放點位置](../designers/media/b1_11.png)|**時間軸上的播放點位置**：以毫秒為單位顯示目前時間。 您也可以在此欄位中直接輸入時間值，以跳至特定的時間點。 精確度取決於 [貼齊選項]  中設定的貼齊解析度。|
 |![播放點](../designers/media/b1_12.png)|**播放點**：判斷動畫位於哪個時間點。 您可以在時間軸上拖曳播放點來預覽動畫。|
 |![時間軸上設定的主要畫面格](../designers/media/b1_13.png)|**時間軸上設定的主要畫面格**：變更特定時間點的屬性值。|
 |![變更物件順序](../designers/media/d839d12c-07a1-4127-a830-4a8e7069f4fe.png)|**變更物件順序**：設定物件的顯示順序。 按一下此按鈕可在結構檢視中依 Z 順序 (由前至後) 或依標記順序 (物件出現在 **XAML** 檢視中的順序) 來排列物件。|
@@ -93,11 +93,11 @@ Blend for Visual Studio 是 Visual Studio 的元件。 若要安裝 Blend，請�
 
 ## <a name="properties-window"></a>屬性視窗
 
-使用此視窗可檢視及修改物件的屬性。 您也可以直接在畫板上設定屬性。 如果這麼做，屬性變更會反映在 [屬性] 視窗中。 若要開啟 [屬性] 視窗，請選擇 [檢視] > [屬性] 視窗，或按**Ctrl**+**W**、**P**。
+使用此視窗可檢視及修改物件的屬性。 您也可以直接在畫板上設定屬性。 如果這麼做，屬性變更會反映在 [屬性]  視窗中。 若要開啟 [屬性]  視窗，請選擇 [檢視]   > [屬性] 視窗  ，或按**Ctrl**+**W**、**P**。
 
 ![Blend for Visual Studio 的 [屬性] 視窗](../designers/media/blend5_properties_panel.png)
 
-**分類**：展開和摺疊屬性的分類。 按一下 [展開] ![展開](../designers/media/6375953d-074c-421a-bbb3-6f5055b67b64.png)和 [摺疊] ![摺疊](../designers/media/b5_collapse_button.png) 即可顯示或隱藏分類詳細資料。
+**分類**：展開和摺疊屬性的分類。 按一下 [展開]  ![展開](../designers/media/6375953d-074c-421a-bbb3-6f5055b67b64.png)和 [摺疊]  ![摺疊](../designers/media/b5_collapse_button.png) 即可顯示或隱藏分類詳細資料。
 
 |||
 |-|-|
@@ -107,15 +107,15 @@ Blend for Visual Studio 是 Visual Studio 的元件。 若要安裝 Blend，請�
 |![色彩編輯器](../designers/media/b1_4.png)|**色彩編輯器**：使用單色和漸層筆刷。|
 |![色彩選擇器](../designers/media/b1_5.png)|**色彩選擇器**：選取色彩。|
 |![色彩晶片](../designers/media/b1_6.png)|**色卡**：檢視初始色彩、目前色彩和最後色彩|
-|![色彩選擇工具](../designers/media/b1_7.png)|**色彩選擇工具**：在螢幕上使用任何元素的色彩。 選取 [單色筆刷] 時可以使用 [色彩選擇工具]。 選取 [漸層筆刷] 時可以使用 [色彩選擇工具]。|
+|![色彩選擇工具](../designers/media/b1_7.png)|**色彩選擇工具**：在螢幕上使用任何元素的色彩。 選取 [單色筆刷]  時可以使用 [色彩選擇工具]  。 選取 [漸層筆刷]  時可以使用 [色彩選擇工具]  。|
 |![屬性和事件](../designers/media/b1_8.png)|**屬性和事件**：設定屬性或選擇所選元素的事件。|
-|![搜尋方塊](../designers/media/b1_9.png)|**搜尋方塊**：搜尋屬性。 在 [搜尋] 方塊中輸入文字，以篩選所顯示的屬性。|
-|![筆刷編輯器索引標籤](../designers/media/97fa60b9-0caf-4387-9225-b57510d32209.png)|**筆刷編輯器索引標籤**：用來選取筆刷編輯器。 您可以選擇 [無筆刷]、[單色筆刷]、[漸層筆刷]、[拼貼筆刷] 或 [筆刷資源]。|
-|![色彩資源](../designers/media/b1_11.png)|**色彩資源**：將完全相同的色彩套用到不同的屬性。 [色彩資源] 索引標籤包含 [本機資源] 和 [系統資源]。|
-|![RGB 色彩空間](../designers/media/b1_12.png)|**RGB 色彩空間**：調整 [R]、[G] 或 [B] (紅色、綠色、藍色) 數字編輯器的值來修改色彩。|
-|![Alpha 色板](../designers/media/b1_13.png)|**Alpha 色板**：使用 [A] 旁邊的數字編輯器來修改 Alpha 值。|
+|![搜尋方塊](../designers/media/b1_9.png)|**搜尋方塊**：搜尋屬性。 在 [搜尋]  方塊中輸入文字，以篩選所顯示的屬性。|
+|![筆刷編輯器索引標籤](../designers/media/97fa60b9-0caf-4387-9225-b57510d32209.png)|**筆刷編輯器索引標籤**：用來選取筆刷編輯器。 您可以選擇 [無筆刷]  、[單色筆刷]  、[漸層筆刷]  、[拼貼筆刷]  或 [筆刷資源]  。|
+|![色彩資源](../designers/media/b1_11.png)|**色彩資源**：將完全相同的色彩套用到不同的屬性。 [色彩資源]  索引標籤包含 [本機資源]  和 [系統資源]  。|
+|![RGB 色彩空間](../designers/media/b1_12.png)|**RGB 色彩空間**：調整 [R]  、[G]  或 [B]  (紅色、綠色、藍色) 數字編輯器的值來修改色彩。|
+|![Alpha 色板](../designers/media/b1_13.png)|**Alpha 色板**：使用 [A]  旁邊的數字編輯器來修改 Alpha 值。|
 |![將色彩轉換為資源](../designers/media/d839d12c-07a1-4127-a830-4a8e7069f4fe.png)|**將色彩轉換成資源**：將選取的色彩轉換成色彩資源。 當您按一下 [色彩資源] 索引標籤時會顯示色彩資源。|
-|![](../designers/media/b1_15.png)|**十六進位值**：檢視所顯示色彩的十六進位值。|
+|![色彩十六進位值](../designers/media/b1_15.png)|**十六進位值**：檢視所顯示色彩的十六進位值。|
 |![圖說文字 16](../designers/media/b5_label_16.png)|**漸層滑桿**：只有選取漸層筆刷時才會出現。|
 |![顯示進階屬性](../designers/media/d50027a1-6824-4ad8-8b4e-558b0756dcf8.png)|**顯示進階屬性**：檢視較不常用之屬性的分類。|
 

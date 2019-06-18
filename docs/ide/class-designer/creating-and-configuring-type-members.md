@@ -29,12 +29,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 39932fe8d4afa31c66d6daa4af33d963b5612eb2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: fcfab3a14e8dfab6bdfb62b32839ebcbd69d21af
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62975535"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66746932"
 ---
 # <a name="create-and-configure-type-members-in-class-designer"></a>在類別設計工具中建立及設定類型成員
 
@@ -308,7 +308,7 @@ ms.locfileid: "62975535"
 
 如果程式碼檔內含語法錯誤，檔案中顯示程式碼的圖案會暫時成為唯讀，直到修正語法錯誤為止。 處於此狀態的圖案會顯示紅色字體及紅色圖示，顯示「原始程式碼檔內含剖析錯誤」工具提示。
 
-在類別設計工具的設計介面上會將存在於另一個專案節點或參考組件節點之下的參考類型 (例如 .NET Framework 類型) 指示為唯讀。 存在於已開啟專案中的類型 (由該專案所定義) 為可讀寫，而其位於類別設計工具設計介面上的圖案也是指示為可讀寫。
+在類別設計工具的設計介面上會將存在於另一個專案節點或參考組件節點之下的參考型別 (例如 .NET 型別) 指示為唯讀。 存在於已開啟專案中的類型 (由該專案所定義) 為可讀寫，而其位於類別設計工具設計介面上的圖案也是指示為可讀寫。
 
 程式碼和 [類別細節]  視窗中的索引子為可讀寫，但是索引子的名稱為唯讀。
 

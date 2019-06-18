@@ -12,17 +12,17 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8b79d1b0a4b59246c9497c0594047c6457c1b685
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1c5420839d97fb62797d0f739ce62da4d14b340b
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62791463"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66744888"
 ---
 # <a name="assembly-information-dialog-box"></a>組件資訊對話方塊
-您可以使用 [組件資訊] 對話方塊來指定 [!INCLUDE[dnprdnshort](../../code-quality/includes/dnprdnshort_md.md)] 全域組件屬性的值，該值會儲存在隨專案自動建立的 AssemblyInfo 檔案中。 在方案總管中，若是 [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)]，此檔案是在 [我的專案] 節點中 (按一下 [顯示所有檔案] 即可檢視)；若是 [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)]，則是在 [屬性] 底下。 如需組件屬性的詳細資訊，請參閱[屬性](https://msdn.microsoft.com/Library/ae334cee-d96c-4243-a5e3-06dd7fcaf205)。
+您可以使用 [組件資訊]  對話方塊來指定 .NET Framework 全域組件屬性的值，該值會儲存在隨專案自動建立的 AssemblyInfo 檔案中。 在方案總管  中，若是 [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)]，此檔案是在 [我的專案]  節點中 (按一下 [顯示所有檔案]  即可檢視)；若是 [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)]，則是在 [屬性]  底下。 如需組件屬性的詳細資訊，請參閱[屬性](https://msdn.microsoft.com/Library/ae334cee-d96c-4243-a5e3-06dd7fcaf205)。
 
- 若要存取這個對話方塊，請選取方案總管中的專案節點，然後按一下 [專案] 功能表上的 [屬性]。 當 [專案設計工具] 出現時，請按一下 [應用程式] 索引標籤。在 [應用程式] 頁面上，按一下 [組件資訊] 按鈕。
+ 若要存取這個對話方塊，請選取方案總管  中的專案節點，然後按一下 [專案]  功能表上的 [屬性]  。 當 [專案設計工具]  出現時，請按一下 [應用程式]  索引標籤。在 [應用程式]  頁面上，按一下 [組件資訊]  按鈕。
 
 ## <a name="uielement-list"></a>UIElement 清單
  **標題**：指定組件資訊清單的標題。 對應至 <xref:System.Reflection.AssemblyTitleAttribute>。
@@ -43,7 +43,7 @@ ms.locfileid: "62791463"
 
  **GUID**：識別組件的唯一 GUID。 當您建立專案時，Visual Studio 會產生組件的 GUID。 對應至 <xref:System.Guid>。
 
- **中性語言**：指定組件所支援的文化特性。 對應至 <xref:System.Resources.NeutralResourcesLanguageAttribute>。 預設值為 [(無)]。
+ **中性語言**：指定組件所支援的文化特性。 對應至 <xref:System.Resources.NeutralResourcesLanguageAttribute>。 預設值為 [(無)]  。
 
  **讓組件成為 COM 可見**指定組件中的類型是否可供 COM 使用。 對應至 <xref:System.Runtime.InteropServices.ComVisibleAttribute>。
 

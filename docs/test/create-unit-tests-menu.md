@@ -9,25 +9,25 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e7eb72f104560991f1bb191e62641041879df071
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: aba0edbabdac6eb0e0c391371b51151a5be1ecba
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62965460"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66745804"
 ---
 # <a name="create-unit-test-method-stubs-with-the-create-unit-tests-command"></a>使用建立單元測試命令來建立單元測試方法虛設常式
 
 **Create Unit Tests** 命令可建立單元測試方法 Stub。 此功能允許輕鬆設定測試專案、測試類別，以及其內的測試方法虛設常式。
 
 > [!NOTE]
-> [建立單元測試] 功能表命令僅供以 .NET Framework 為目標 (非 .NET Core) 的受控程式碼使用。
+> [建立單元測試]  功能表命令僅供以 .NET Framework 為目標 (非 .NET Core) 的受控程式碼使用。
 
-[建立單元測試] 功能表命令可延伸，並可用來產生 MSTest、MSTest V2、NUnit 和 xUnit 測試。
+[建立單元測試]  功能表命令可延伸，並可用來產生 MSTest、MSTest V2、NUnit 和 xUnit 測試。
 
 ## <a name="get-started"></a>開始使用
 
-若要開始，請以滑鼠右鍵按一下您想要測試之專案程式碼編輯器中的方法、類型或命名空間，然後選擇 [建立單元測試]。 [建立單元測試] 對話方塊隨即開啟，您可以在此設定想要建立的測試方式。
+若要開始，請以滑鼠右鍵按一下您想要測試之專案程式碼編輯器中的方法、類型或命名空間，然後選擇 [建立單元測試]  。 [建立單元測試]  對話方塊隨即開啟，您可以在此設定想要建立的測試方式。
 
 ![使用建立單元測試命令](media/createunittestcommand.png)
 
