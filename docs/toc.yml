@@ -63,7 +63,7 @@
               href: install/create-a-network-installation-of-visual-studio.md
             - name: 更新 Visual Studio 的網路型安裝
               href: install/update-a-network-installation-of-visual-studio.md
-            - name: 網路考量
+            - name: 網路考量事項
               items:
                 - name: 在防火牆或 Proxy 伺服器後方安裝及使用 Visual Studio
                   href: install/install-and-use-visual-studio-behind-a-firewall-or-proxy-server.md
@@ -106,7 +106,7 @@
                 - name: 總覽
                   displayName: Workload and component IDs
                   href: install/workload-and-component-ids.md
-                - name: Visual Studio 企業版
+                - name: Visual Studio Enterprise
                   href: install/workload-component-id-vs-enterprise.md
                 - name: Visual Studio Professional
                   href: install/workload-component-id-vs-professional.md
@@ -155,9 +155,9 @@
       href: ide/quickstart-nodejs.md
     - name: 'F#：建立 Web 服務'
       href: ide/quickstart-fsharp.md
-    - name: 'C#: 建立 Web 應用程式'
+    - name: 'C#：建立 Web 應用程式'
       href: ide/quickstart-aspnet-core.md
-    - name: 'C#: 建立主控台應用程式'
+    - name: 'C#：建立主控台應用程式'
       href: ide/quickstart-csharp-console.md
     - name: Visual Basic：建立主控台應用程式
       href: ide/quickstart-visual-basic-console.md
@@ -175,7 +175,7 @@
       href: python/
     - name: Node.js
       href: javascript/
-- name: 作法指南
+- name: 使用說明指南
   items:
     - name: 開發
       items:
@@ -226,11 +226,7 @@
             - name: '指定應用程式圖示 (Visual Basic、C#)'
               href: ide/how-to-specify-an-application-icon-visual-basic-csharp.md
             - name: 以某個架構為目標
-              items:
-                - name: 多目標概觀
-                  href: ide/visual-studio-multi-targeting-overview.md
-                - name: 以一個 .NET Framework 版本為目標
-                  href: ide/how-to-target-a-version-of-the-dotnet-framework.md
+              href: ide/visual-studio-multi-targeting-overview.md
             - name: 建立範本
               items:
                 - name: 建立專案與項目範本
@@ -405,6 +401,10 @@
                       href: ide/reference/remove-unreachable-code.md
                     - name: 重新命名
                       href: ide/reference/rename.md
+                    - name: split/merge if 陳述式
+                      href: ide/reference/split-or-merge-if-statement.md
+                    - name: 同步命名空間和資料夾名稱
+                      href: ide/reference/sync-namespace-and-folder-name.md
                     - name: 同步類型與檔案名稱
                       href: ide/reference/sync-type-and-file.md
                     - name: 使用明確類型
@@ -660,7 +660,7 @@
       href: extensibility/visual-studio-sdk.md
     - name: 分析架構並製作架構模型...
       href: modeling/analyze-and-model-your-architecture.md
-    - name: 秘訣和訣竅
+    - name: 秘訣與技巧
       items:
         - name: 生產力功能
           href: ide/productivity-features.md
@@ -704,15 +704,15 @@
           href: ide/managing-external-tools.md
     - name: Visual Studio 的效能
       items:
-        - name: 將效能最佳化
+        - name: 效能最佳化
           href: ide/optimize-visual-studio-performance.md
         - name: 啟動時間
           href: ide/optimize-visual-studio-startup-time.md
         - name: 載入已篩選的解決方案
           href: ide/filtered-solutions.md
-        - name: 秘訣和訣竅
+        - name: 秘訣與技巧
           href: ide/visual-studio-performance-tips-and-tricks.md
-    - name: 協助工具選項
+    - name: 協助工具
       items:
         - name: 管理協助工具功能
           href: ide/reference/accessibility-features-of-visual-studio.md
@@ -1115,7 +1115,7 @@
               href: help-viewer/find-topics-index.md
             - name: 在目錄中尋找主題
               href: help-viewer/find-topics-toc.md
-            - name: 搜尋
+            - name: Search
               items:
                 - name: 搜尋主題
                   href: help-viewer/find-topics.md
@@ -1123,7 +1123,7 @@
                   href: help-viewer/logical-operators-search-expressions.md
         - name: 自訂說明檢視器
           href: help-viewer/customize.md
-        - name: 協助工具選項
+        - name: 協助工具
           href: help-viewer/accessibility-features.md
         - name: 快速鍵
           href: help-viewer/shortcut-keys.md
@@ -1151,7 +1151,7 @@
           href: /visualstudio/productinfo/release-rhythm/
         - name: Visual Studio 2017
           items:
-            - name: 目前版本資訊
+            - name: 目前的版本資訊
               href: /visualstudio/releasenotes/vs2017-relnotes/
             - name: 預覽版本資訊
               href: /visualstudio/releasenotes/vs2017-preview-relnotes/
@@ -1165,7 +1165,7 @@
               href: /visualstudio/productinfo/vs2017-system-requirements-vs/
         - name: Visual Studio 2019
           items:
-            - name: 目前版本資訊
+            - name: 目前的版本資訊
               href: /visualstudio/releases/2019/release-notes/
             - name: 預覽版本資訊
               href: /visualstudio/releases/2019/release-notes-preview/

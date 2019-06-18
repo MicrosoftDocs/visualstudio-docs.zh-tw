@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 23c691730e50cc8d34eddbb60da6d7d671a85dfc
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: a58235b724f97e3934ab620677e530fbd9ba9726
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63437845"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66747357"
 ---
 # <a name="msbuild-task"></a>MSBuild 工作
 從另一個 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 專案建置[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 專案。
@@ -44,7 +44,7 @@ ms.locfileid: "63437845"
 | `TargetAndPropertyListSeparators` | 選擇性的 `String[]` 參數。<br /><br /> 指定目標和屬性的清單做為 `Project` 中繼資料。 處理之前將不會逸出分隔符號。 例如，%3B (逸出的 ';') 將會被視為是未逸出的 ';'。 |
 | `TargetOutputs` | 選擇性的 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 唯讀輸出參數。<br /><br /> 傳回所有專案檔中建置目標的輸出。 只會傳回所指定目標的輸出，而非可能存在於這些目標所依存的任何輸出。<br /><br /> `TargetOutputs` 參數也會包含下列中繼資料：<br /><br /> -   `MSBuildSourceProjectFile`：[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 專案檔，包含設定輸出的目標。<br />-   `MSBuildSourceTargetName`：設定輸出的目標。 **注意：** 如果您想要分別找出每個專案檔或目標的輸出，請針對每個專案檔或目標個別執行 `MSBuild` 工作。 如果您只執行 `MSBuild` 工作一次來建置所有專案檔，即會將所有目標的輸出收集到一個陣列。 |
 | `Targets` | 選擇性的 `String` 參數。<br /><br /> 指定要在專案檔中建置的一或多個目標。 請使用分號分隔目標名稱清單。 如果未在 `MSBuild` 工作中指定目標，即會建置專案檔中指定的預設目標。 **注意：** 目標必須存在於所有的專案檔中。 如果沒有，就會發生建置錯誤。 |
-| `ToolsVersion` | 選擇性的 `String` 參數。<br /><br /> 指定要在將建置中專案傳遞給此工作時使用 `ToolsVersion`。<br /><br /> 讓 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 工作能夠建置目標為與專案中所指定的 [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 不同版本的專案。 有效值為 `2.0`、`3.0` 及 `3.5`。 預設值為 `3.5`。 |
+| `ToolsVersion` | 選擇性的 `String` 參數。<br /><br /> 指定要在將建置中專案傳遞給此工作時使用 `ToolsVersion`。<br /><br /> 讓 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 工作能夠建置目標與專案中所指定的 .NET Framework 不同版本的專案。 有效值為 `2.0`、`3.0` 及 `3.5`。 預設值為 `3.5`。 |
 | `UnloadProjectsOnCompletion` | 選擇性的 `Boolean` 參數。<br /><br /> 如果是 `true`，將會在作業完成之後卸載專案。 |
 | `UseResultsCache` | 選擇性的 `Boolean` 參數。<br /><br /> 如果是 `true`，將會傳回快取的結果 (如果有的話)。<br /><br />  如果執行 MSBuild 工作，將會在範圍中快取其結果 <br /><br /> (ProjectFileName, GlobalProperties)[TargetNames]<br /><br /> 做為組建項目清單 |
 

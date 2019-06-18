@@ -8,20 +8,19 @@ helpviewer_keywords:
 - shortcut keys [Visual Studio]
 - windows [Visual Studio], accessibility
 - dialog boxes [Visual Studio], shortcut keys
-- keyboard shortcuts [Visual Studio]
 - accessibility [Visual Studio]
 ms.assetid: d71a4cc1-d352-4164-8538-3f9fa070a331
-author: TerryGLee
-ms.author: tglee
+author: gewarren
+ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5a8759643b9cf72cac671a8d733e1306760afc36
-ms.sourcegitcommit: 614d5b99576ea27a41957cd94062dc95cbd29c1c
+ms.openlocfilehash: 3f1bd20b8ad9e4682cfd5fbe4d93dc55e5dc081d
+ms.sourcegitcommit: 51dad3e11d7580567673e0d426ab3b0a17584319
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/10/2019
-ms.locfileid: "65531597"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "66820595"
 ---
 # <a name="how-to-use-the-keyboard-exclusively"></a>作法：以獨佔模式使用鍵盤
 
@@ -32,7 +31,7 @@ ms.locfileid: "65531597"
 ::: moniker range="vs-2017"
 
 > [!TIP]
-> 若要深入了解協助工具更新，請參閱 [Accessibility improvements in Visual Studio 2017 version 15.3](https://devblogs.microsoft.com/visualstudio/accessibility-improvements-in-visual-studio-2017-version-15-3/) (Visual Studio 2017 15.3 版中的協助工具改善) 部落格文章。
+> 若要深入了解協助工具更新，請參閱 [Visual Studio 2017 中的協助工具改善](https://devblogs.microsoft.com/visualstudio/accessibility-improvements-in-visual-studio-2017-version-15-3/) \(英文\) 部落格文章。
 
 ::: moniker-end
 
@@ -45,67 +44,65 @@ ms.locfileid: "65531597"
 
 ### <a name="to-add-controls-from-the-toolbox-to-a-designer-from-the-keyboard"></a>使用鍵盤將控制項從工具箱新增至設計工具
 
-1. 在功能表列上，選擇 [檢視] > [工具箱]。
+1. 在功能表列上，選擇 [檢視]   > [工具箱]  。
 
-2. 使用 **Ctrl + 向上鍵**或 **Ctrl + 向下鍵**鍵盤快速鍵，在目前 [工具箱] 索引標籤的區段之間移動。
+2. 使用 **Ctrl**+**向上鍵**或 **Ctrl**+**向下鍵**，在 [工具箱]  索引標籤的區段之間移動。
 
 3. 使用**向上鍵**或**向下鍵**在控制項之間移動。
 
-4. 選取控制項之後，請使用 **Enter** 鍵。
-
-   Visual Studio 會將控制項新增到表單或設計工具。
+4. 選取控制項之後，請使用 **Enter** 鍵來將該控制項加入至表單或設計工具。
 
 ## <a name="dialog-box-options"></a>對話方塊選項
 
- 您可以使用鍵盤，在對話方塊中的選項之間移動，或是變更選項設定。
+您可以使用鍵盤，在對話方塊中的選項之間移動，或是變更選項設定。
 
-### <a name="to-set-dialog-box-options-from-the-keyboard"></a>從鍵盤設定對話方塊選項
+### <a name="set-dialog-box-options-from-the-keyboard"></a>從鍵盤設定對話方塊選項
 
 1. 使用 **Tab** 或 **Shift**+**Tab** 在對話方塊的控制項之間向上和向下移動。
 
 2. 變更選項設定：
 
-    - 針對選項按鈕，使用**向上鍵**和**向下鍵**變更選取項目。
+   - 針對選項按鈕，請使用**向上鍵**和**向下鍵**來變更選取項目。
 
-    - 針對核取方塊，使用**空格鍵**選取或取消選取。
+   - 針對核取方塊，請使用**空格鍵**來選取或取消選取。
 
-    - 針對下拉式清單，請使用 **Alt + 向下鍵**來顯示項目，然後使用**向上鍵**和**向下鍵**來變更選取的項目。
+   - 針對下拉式清單，請使用 **Alt**+**向下鍵**來顯示項目，然後使用**向上鍵**和**向下鍵**來變更選取的項目。
 
-    - 針對按鈕，請選取 **Enter** 來叫用。
+   - 針對按鈕，請選取 **Enter** 來叫用。
 
-    - 針對格線，使用方向鍵來巡覽。 針對格線中的下拉式清單，請使用 **Shift** + **Alt** + **向下鍵**來顯示項目，然後使用**向上鍵**和**向下鍵**來變更選取的項目。
+   - 針對格線，使用方向鍵來巡覽。 針對格線中的下拉式清單，請使用 **Shift**+**Alt**+**向下鍵**來顯示項目，然後使用**向上鍵**和**向下鍵**來變更選取的項目。
 
 ## <a name="window-and-file-navigation"></a>視窗與檔案巡覽
 
 您可以透過數種方式，使用鍵盤來在開啟工具和文件視窗間移動。 您也可以使用鍵盤，在不同的位置中移動和固定工具視窗。
 
-### <a name="to-navigate-among-windows-and-files-in-the-ide-from-the-keyboard"></a>從鍵盤在 IDE 中的視窗和鍵盤之間巡覽
+### <a name="navigate-among-windows-and-files-in-the-ide"></a>在 IDE 中於視窗和檔案之間瀏覽
 
-- 若要在編輯器或設計工具中的檔案間移動，請選擇 **Ctrl+Tab** 鍵盤快速鍵來顯示 IDE 導覽器，同時在其中選取 [使用中的檔案]。 選擇 **Enter** 鍵來巡覽至醒目提示的檔案。
+- 若要在編輯器或設計工具中的檔案之間移動，請選擇 **Ctrl**+**Tab** 鍵盤快速鍵，以搭配選取 [使用中的檔案]  來顯示 IDE 導覽器。 選擇 **Enter** 鍵來巡覽至醒目提示的檔案。
 
-- 若要在固定的工具視窗間移動，請選擇 **Alt+F7** 鍵盤快速鍵來顯示 IDE 導覽器，同時在其中選取 [使用中的工具視窗]。 選擇 **Enter** 鍵來巡覽至醒目提示的視窗。
+- 若要在固定的工具視窗之間移動，請選擇 **Alt**+**F7** 鍵盤快速鍵，以搭配選取 [使用中工具視窗]  來顯示 IDE 導覽器。 選擇 **Enter** 鍵來巡覽至醒目提示的視窗。
 
 ### <a name="to-move-and-dock-tool-windows-from-the-keyboard"></a>從鍵盤移動和固定工具視窗
 
 1. 巡覽至您想要移動並給予焦點的工具視窗。
 
-2. 在 [視窗] 功能表上，選取 [可停駐] 選項。
+2. 在 [視窗]  功能表上，選取 [可停駐]  選項。
 
-3. 使用 **Alt**+**空格鍵**鍵盤快速鍵，然後選擇 [移動]。
+3. 按 **Alt**+**空格鍵**，然後選擇 [移動]  。
 
-     固定的輔助方塊隨即出現。
+   固定的輔助方塊隨即出現。
 
 4. 使用方向鍵來將視窗移動到新位置。
 
-     當您使用方向鍵時，滑鼠指標也會跟著視窗移動。
+   當您使用方向鍵時，滑鼠指標也會跟著視窗移動。
 
 5. 當您到達新的位置時，請使用方向鍵將滑鼠指標移到輔助線方塊的正確部分。
 
-     工具視窗的外框會出現在新的固定位置。
+   工具視窗的外框會出現在新的固定位置。
 
-6. 選取 **Enter**。
+6. 按 **Enter** 鍵。
 
-     工具視窗會貼齊在新的固定位置。
+   工具視窗會貼齊在新的固定位置。
 
 ## <a name="see-also"></a>另請參閱
 

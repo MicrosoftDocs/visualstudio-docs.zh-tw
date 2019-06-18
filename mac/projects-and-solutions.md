@@ -3,27 +3,44 @@ title: 專案和方案
 description: 本文件概述 Visual Studio for Mac 中的專案和方案。
 author: conceptdev
 ms.author: crdun
-ms.date: 05/06/2018
+ms.date: 05/23/2019
 ms.assetid: 8254505D-D96E-48BD-8A5E-CF6A917897EA
-ms.openlocfilehash: 6ae37b7256b1cefe2bfbd2174135b013b1aa37cd
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ec62e9c0b449f5f2aed568735c2a10d1f6634eed
+ms.sourcegitcommit: 51dad3e11d7580567673e0d426ab3b0a17584319
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62937000"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "66820929"
 ---
-# <a name="projects-and-solutions"></a>專案和方案
+# <a name="projects-and-solutions-in-visual-studio-for-mac"></a>Visual Studio for Mac 中的專案和解決方案
 
-Visual Studio for Mac 提供  _Solution Pad_  以顯示整個開放方案的樹狀檢視。 **Solution** Pad 可讓您輕鬆存取個別專案中包含的原始程式碼、資源、使用者介面和組件參考。 根據預設，Solution Pad 會一次開啟一個方案。 每個方案都可以包含許多專案，而且每個專案都可以包含多個項目。
+本文能提供 Visual Studio for Mac 中「專案」  和「方案」  的概念概觀。
 
-## <a name="using-projects-and-solutions"></a>使用專案和方案
+> [!NOTE] 
+> 本主題適用於 Visual Studio for Mac。 針對 Windows 上的 Visual Studio，請參閱 [Visual Studio 中的專案和方案](/visualstudio/ide/solutions-and-projects-in-visual-studio)。
 
-若要建立新的專案或方案，請參閱[建立新的專案和方案](create-new-projects.md)一文。
+## <a name="projects"></a>專案
 
-## <a name="project-and-solution-options"></a>專案和方案選項
+當您要在 Visual Studio for Mac 中建立新的應用程式和網站之類的內容時，您會以專案作為開始。 專案會包含編譯可執行檔、程式庫或網站所需的所有檔案 (原始程式碼、影像、資料檔案等等)。
 
-按兩下專案或方案名稱，或者按一下滑鼠右鍵並瀏覽至 [選項]，即可管理專案和方案的屬性。 [管理方案和專案屬性](managing-solutions-and-project-properties.md)一文提供這些選項的詳細資訊。
+專案是由某個檔案所定義 (例如針對 C# 專案為 `.csproj`)，其包含能定義檔案和資料夾階層的 XML、針對檔案和專案特定設定 (例如建置設定) 的路徑。
+
+當專案被 Visual Studio for Mac 載入時，Solution Pad 會使用專案檔來顯示專案中的檔案和資料夾。 在編譯期間，MSBuild 會從專案檔讀取設定來建立可執行檔。
+
+## <a name="solutions"></a>方案
+
+「方案」  是指能將一或多個相關專案分組在一起的容器。 方案是由具有自己獨特格式的文字檔 (副檔名為 `.sln`) 所描述；它通常不適合手動編輯。
+
+## <a name="managing-projects-in-the-solution-pad"></a>管理 Solution Pad 中的專案
+
+在建立或載入專案之後，您可以使用 Solution Pad 來檢視及管理專案或方案，以及包含在其中的檔案。 下圖顯示具有包含兩個專案之 .NET Core 方案的 Solution Pad：
+
+![具有多個專案的範例方案](media/solution-example.png)
+
+您可以按兩下專案或方案名稱，或是以滑鼠右鍵按一下並選擇 [選項]  ，來管理專案和方案的屬性。
+
+[管理方案和專案屬性](managing-solutions-and-project-properties.md)一文提供這些選項的詳細資訊。
 
 ## <a name="see-also"></a>另請參閱
 
-- [Visual Studio (Windows)中的方案和專案](/visualstudio/ide/solutions-and-projects-in-visual-studio)
+- [Visual Studio 中的方案和專案 (Windows)](/visualstudio/ide/solutions-and-projects-in-visual-studio)

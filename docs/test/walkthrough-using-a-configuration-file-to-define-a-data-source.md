@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: aa57582a241400cbdfc9115d16326fda8019a5ae
-ms.sourcegitcommit: ba5e072c9fedeff625a1332f22dcf3644d019f51
+ms.openlocfilehash: d6bfb122649f688ece90e981c419325564776215
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/31/2019
-ms.locfileid: "66432249"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66746755"
 ---
 # <a name="walkthrough-using-a-configuration-file-to-define-a-data-source"></a>逐步解說：使用組態檔定義資料來源
 
@@ -71,7 +71,7 @@ ms.locfileid: "66432249"
 ```
 
 > [!NOTE]
-> 組件名稱必須與您所使用的 Microsoft Visual Studio .NET Framework 組建相符。
+> 組件名稱必須符合您所使用的版本。
 
 ## <a name="define-connection-strings"></a>定義連接字串
 

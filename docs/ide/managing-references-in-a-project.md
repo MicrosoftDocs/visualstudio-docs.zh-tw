@@ -21,24 +21,24 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d04e5703c96b710208cc1ecc79a169a458463497
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 57cbff868cfdedb45b1973908ddb250ad09ea19e
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62535566"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66747044"
 ---
 # <a name="manage-references-in-a-project"></a>管理專案中的參考
 
 在您針對外部元件或已連線服務撰寫程式碼之前，您的專案首先必須包含所需的參考。 參考其實是在專案檔中的項目，包含 Visual Studio 找出該元件或該服務所需的資訊。
 
-若要新增參考，請以滑鼠右鍵按一下方案總管中的 [參考] 或 [相依性] 節點，然後選擇 [新增參考]。 您也可以使用滑鼠右鍵按一下專案節點，然後選取 [新增] > [參考]。 如需詳細資訊，請參閱[如何：新增或移除參考](../ide/how-to-add-or-remove-references-by-using-the-reference-manager.md)。
+若要新增參考，請以滑鼠右鍵按一下方案總管  中的 [參考]  或 [相依性]  節點，然後選擇 [新增參考]  。 您也可以使用滑鼠右鍵按一下專案節點，然後選取 [新增]   > [參考]  。 如需詳細資訊，請參閱[如何：新增或移除參考](../ide/how-to-add-or-remove-references-by-using-the-reference-manager.md)。
 
 ![在 Visual C&#43;&#43; 中新增參考](../ide/media/vs2015_cpp_add_reference.png)
 
 您可以新增下列元件及服務類型的參考：
 
-- .NET framework 類別庫或組件
+- .NET 類別庫或組件
 
 - UWP 應用程式
 
@@ -67,7 +67,7 @@ Visual Basic、C#、C++ 和 JavaScript 通用 Windows 平台 (UWP) 應用程式�
 1. 移至擁有不受支援之延伸模組 SDK 的廠商網站，並安裝相依性與您專案的目標平台版本相容的延伸模組 SDK 版本。
 
     > [!NOTE]
-    > 找出延伸模組 SDK 是否有其他延伸模組 SDK 相依性的一種方法，是在**參考管理員**中尋找。 重新啟動 Visual Studio、建立新的 C# UWP 應用程式專案，然後以滑鼠右鍵按一下專案並選擇 [新增參考]。 依序移至 [Windows] 索引標籤和 [延伸模組] 子索引標籤，然選取延伸模組 SDK。 在**參考管理員**的右窗格中尋找。 如果有相依性，則會在那裡列出。
+    > 找出延伸模組 SDK 是否有其他延伸模組 SDK 相依性的一種方法，是在**參考管理員**中尋找。 重新啟動 Visual Studio、建立新的 C# UWP 應用程式專案，然後以滑鼠右鍵按一下專案並選擇 [新增參考]  。 依序移至 [Windows]  索引標籤和 [延伸模組]  子索引標籤，然選取延伸模組 SDK。 在**參考管理員**的右窗格中尋找。 如果有相依性，則會在那裡列出。
 
     > [!IMPORTANT]
     > 如果您的專案是以 Windows 10 為目標，且在先前步驟中安裝的延伸模組 SDK 相依於 Microsoft Visual C++ Runtime Package，則與 Windows 10 相容的 Microsoft Visual C++ Runtime Package 版本為 v14.0，並隨著 Visual Studio 一起安裝。
@@ -76,9 +76,9 @@ Visual Basic、C#、C++ 和 JavaScript 通用 Windows 平台 (UWP) 應用程式�
 
 1. 重新啟動 Visual Studio，然後開啟您的應用程式。
 
-1. 以滑鼠右鍵按一下導致錯誤之專案中的 [參考] 或 [相依性] 節點，然後選擇 [新增參考]。
+1. 以滑鼠右鍵按一下導致錯誤之專案中的 [參考]  或 [相依性]  節點，然後選擇 [新增參考]  。
 
-1. 依序按一下 [Windows] 索引標籤和 [延伸模組] 子索引標籤，然後針對舊延伸模組 SDK 取消核取方塊，並核取新延伸模組 SDK 的核取方塊。 按一下 [確定]。
+1. 依序按一下 [Windows]  索引標籤和 [延伸模組]  子索引標籤，然後針對舊延伸模組 SDK 取消核取方塊，並核取新延伸模組 SDK 的核取方塊。 按一下 [確定]  。
 
 ## <a name="add-a-reference-at-design-time"></a>在設計階段新增參考
 
@@ -101,11 +101,11 @@ Visual Basic、C#、C++ 和 JavaScript 通用 Windows 平台 (UWP) 應用程式�
 
 根據預設，如果組件或元件位於全域組件快取或 Framework 元件，則 <xref:Microsoft.VisualStudio.VCProjectEngine.VCProjectReference.CopyLocal%2A> 屬性會設定為 **False** 。 否則，值會設定為 **True**。 專案對專案參考一律會設定為 **True**。
 
-## <a name="reference-a-project-or-assembly-that-targets-a-different-version-of-the-net-framework"></a>參考以不同 .NET Framework 版本為目標的專案或元件
+## <a name="reference-a-project-or-assembly-that-targets-a-different-version-of-net"></a>參考以不同 .NET 版本為目標的專案或組件
 
-您可以建立參考目標為不同 .NET Framework 版本之專案或組件的應用程式。 例如，您可以建立目標為 .NET Framework 4.6 (參考目標為 .NET Framework 4.5 的組件) 的應用程式。 如果您建立之專案的目標是舊版 .NET Framework，則無法在該專案中設定目標為新版之專案或組件的參考。
+您可以建立會參考以不同 .NET 版本為目標之專案或組件的應用程式。 例如，您可以建立目標為 .NET Framework 4.6 (參考目標為 .NET Framework 4.5 的組件) 的應用程式。 如果您建立的專案是以舊版 .NET 為目標，則無法在該專案中設定針對以新版為目標之專案或組件的參考。
 
-如需詳細資訊，請參閱[多目標概觀](../ide/visual-studio-multi-targeting-overview.md)。
+如需詳細資訊，請參閱 [Framework 目標概觀](../ide/visual-studio-multi-targeting-overview.md)。
 
 ## <a name="project-to-project-references"></a>專案對專案參考
 
@@ -118,7 +118,7 @@ Visual Basic、C#、C++ 和 JavaScript 通用 Windows 平台 (UWP) 應用程式�
 
 ## <a name="file-references"></a>檔案參考
 
-檔案參考是 Visual Studio 專案內容外部組件的直接參考。 您可以使用**參考管理員**的 [瀏覽] 索引標籤建立檔案參考。 當您只有組件或元件時，請使用檔案參考，不要使用會建立檔案參考作為輸出的專案。
+檔案參考是 Visual Studio 專案內容外部組件的直接參考。 您可以使用**參考管理員**的 [瀏覽]  索引標籤建立檔案參考。 當您只有組件或元件時，請使用檔案參考，不要使用會建立檔案參考作為輸出的專案。
 
 ## <a name="see-also"></a>另請參閱
 

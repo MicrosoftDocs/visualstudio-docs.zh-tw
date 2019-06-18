@@ -11,12 +11,12 @@ dev_langs:
 - vb
 ms.workload:
 - multiple
-ms.openlocfilehash: d15f0e8e5c5cbdac5a130804977adf90385adfe1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 69ef227bb30703a41fe9519114a2bc9904e902f2
+ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62893919"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66714809"
 ---
 # <a name="wpf-overview"></a>WPF 概觀
 
@@ -24,19 +24,19 @@ Windows Presentation Foundation (WPF) 可讓您建立具有豐富視覺效果之
 
 ![Contoso Healthcare UI 範例](../designers/media/wpfintrofigure24.png)
 
-WPF 的核心是與解析度無關並以向量為基礎的轉譯引擎，其建置目的是為了利用現代化圖形硬體。 WPF 利用一組完整的應用程式開發功能來擴充核心，包括 Extensible Application Markup Language (XAML)、控制項、資料繫結、版面配置、2D 和 3D 圖形、動畫、樣式、範本、文件、媒體、文字，以及印刷樣式。 WPF 隨附於 .NET Framework，因此您可以建置納入 .NET Framework 類別庫之其他項目的應用程式。
+WPF 的核心是與解析度無關並以向量為基礎的轉譯引擎，其建置目的是為了利用現代化圖形硬體。 WPF 利用一組完整的應用程式開發功能來擴充核心，包括 Extensible Application Markup Language (XAML)、控制項、資料繫結、版面配置、2D 和 3D 圖形、動畫、樣式、範本、文件、媒體、文字，以及印刷樣式。 WPF 是 .NET 的一部分，因此您可以建置能納入 .NET API 其他元素的應用程式。
 
 本概觀適用於初學者，內容涵蓋 WPF 的主要功能和概念。
 
 ## <a name="program-with-wpf"></a>使用 WPF 的程式
 
-WPF 是以 .NET Framework 類型的子集來表示，大部分位於 <xref:System.Windows> 命名空間中。 如果您之前使用過 ASP.NET 和 Windows Form 等 Managed 技術建置 .NET Framework 應用程式，應該很熟悉基本 WPF 程式設計功能：您可以具現化類別、設定屬性、呼叫方法及處理事件，全部透過您最愛的 .NET 程式設計語言來完成，例如 C# 或 Visual Basic。
+WPF 是以 .NET 類型的子集來表示，這些類型大部分位於 <xref:System.Windows> 命名空間中。 如果您之前曾使用 ASP.NET 和 Windows Forms 等受控技術來搭配 .NET 建置應用程式，便應該很熟悉基本 WPF 程式設計功能；您可以具現化類別、設定屬性、呼叫方法，以及處理事件；這些工作都可以透過您最愛的 .NET 程式設計語言 (例如 C# 或 Visual Basic) 來完成。
 
 WPF 包含可增強屬性和事件的額外程式設計建構： [相依性屬性](/dotnet/framework/wpf/advanced/dependency-properties-overview) 和 [路由事件](/dotnet/framework/wpf/advanced/routed-events-overview)。
 
 ## <a name="markup-and-code-behind"></a>標記和程式碼後置
 
-WPF 可讓您使用「標記」和「程式碼後置」來開發應用程式，這是 ASP.NET 開發人員應該很熟悉的功能。 您通常會使用 XAML 標記來實作應用程式的外觀，同時使用 Managed 程式設計語言 (程式碼後置) 來實作其行為。 將外觀與行為區隔開來的優點如下：
+WPF 可讓您使用「標記」  和「程式碼後置」  來開發應用程式，這是 ASP.NET 開發人員應該很熟悉的功能。 您通常會使用 XAML 標記來實作應用程式的外觀，同時使用 Managed 程式設計語言 (程式碼後置) 來實作其行為。 將外觀與行為區隔開來的優點如下：
 
 - 由於外觀特定標記未與行為特定程式碼緊密結合，因此可降低開發和維護成本。
 
@@ -147,7 +147,7 @@ End Namespace
 
 ## <a name="controls"></a>控制項
 
-應用程式模型所傳遞的使用者體驗是已建構的控制項。 在 WPF 中，「控制項」是一個籠統的名詞，泛指裝載於視窗或頁面上之具有使用者介面並實作一些行為的某種 WPF 類別。
+應用程式模型所傳遞的使用者體驗是已建構的控制項。 在 WPF 中，「控制項」  是一個籠統的名詞，泛指裝載於視窗或頁面上之具有使用者介面並實作一些行為的某種 WPF 類別。
 
 如需詳細資訊，請參閱 [控制項](/dotnet/framework/wpf/controls/index)。
 
@@ -381,7 +381,7 @@ WPF 動畫支援可讓您將控制項設為放大、搖晃、旋轉和淡出，�
 
 ### <a name="content-model"></a>內容模型
 
-大多數 WPF 控制項的主要用途在於顯示內容。 在 WPF 中，可構成控制項內容的項目類型和數目，稱為控制項的 *「內容模型」*(Content Model)。 有些控制項可能包含單一內容類型的單一項目；例如， <xref:System.Windows.Controls.TextBox> 的內容是指派給 <xref:System.Windows.Controls.TextBox.Text%2A> 屬性的字串值。 下列範例會設定 <xref:System.Windows.Controls.TextBox>的內容。
+大多數 WPF 控制項的主要用途在於顯示內容。 在 WPF 中，可構成控制項內容的項目類型和數目，稱為控制項的 *「內容模型」* (Content Model)。 有些控制項可能包含單一內容類型的單一項目；例如， <xref:System.Windows.Controls.TextBox> 的內容是指派給 <xref:System.Windows.Controls.TextBox.Text%2A> 屬性的字串值。 下列範例會設定 <xref:System.Windows.Controls.TextBox>的內容。
 
 ```xaml
 <Window

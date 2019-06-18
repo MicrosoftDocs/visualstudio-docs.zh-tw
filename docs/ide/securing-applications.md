@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6398a28394c8918d574a3b3eca4cf54b21f3d7bd
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 2c5b0f4c748cd923ca02cb16ba374747c20d12d7
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62979532"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66747659"
 ---
 # <a name="secure-applications"></a>保護應用程式
 
@@ -40,7 +40,7 @@ ms.locfileid: "62979532"
 
 ## <a name="see-also"></a>另請參閱
 
-- [.NET Framework 中的安全性](/dotnet/standard/security/index)
+- [.NET 中的安全性](/dotnet/standard/security/index)
 - [Azure 安全性](/azure/security/)
 - [Windows 10 行動裝置版安全性指南](/windows/security/threat-protection/windows-10-mobile-security-guide)
 - [Apache Cordova 平台安全性功能](/visualstudio/cross-platform/tools-for-cordova/security/best-practices?view=toolsforcordova-2017)

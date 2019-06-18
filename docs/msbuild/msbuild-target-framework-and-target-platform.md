@@ -8,38 +8,38 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3ff626078296c61d5f2588434942d4016cba0c1e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 9760dbf4fd2eabb43e88e0b99858eba3e09c8fb5
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63004604"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66747392"
 ---
 # <a name="msbuild-target-framework-and-target-platform"></a>MSBuild 目標 Framework 和目標平台
-您可以建置專案，以在特定 .NET Framework 版本的「目標 Framework」，以及特定軟體架構的「目標平台」上執行。  例如，您可以在目標為 .NET Framework 2.0 以及與 802x86 處理器系列 ("x86") 相容的 32 位元平台上，執行應用程式。 目標 Framework 和目標平台的組合稱為「目標內容」。
+您可以建置專案，以在特定 .NET Framework 版本的「目標 Framework」  ，以及特定軟體架構的「目標平台」  上執行。  例如，您可以在目標為 .NET Framework 2.0 以及與 802x86 處理器系列 ("x86") 相容的 32 位元平台上，執行應用程式。 目標 Framework 和目標平台的組合稱為「目標內容」  。
 
 ## <a name="target-framework-and-profile"></a>目標 Framework 和設定檔
- 目標 Framework 是建置的專案執行所在的特定 [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 版本。 由於目標 Framework 啟用由該版 Framework 獨佔的編譯器功能和組件參考，因此需要目標 Framework 的規格。
+ 目標 Framework 是專案被建置來於其上執行的特定 .NET Framework 版本。 由於目標 Framework 啟用由該版 Framework 獨佔的編譯器功能和組件參考，因此需要目標 Framework 的規格。
 
  以下是目前可供使用的 .NET Framework 版本：
 
-- [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 2.0 (隨附於 Visual Studio 2005)
+- .NET Framework 2.0 (包含在 Visual Studio 2005 中)
 
-- [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 3.0 (隨附於 [!INCLUDE[wiprlhext](../debugger/includes/wiprlhext_md.md)])
+- .NET Framework 3.0 (包含在 [!INCLUDE[wiprlhext](../debugger/includes/wiprlhext_md.md)] 中)
 
-- [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 3.5 (隨附於 [!INCLUDE[vs_orcas_long](../debugger/includes/vs_orcas_long_md.md)])
+- .NET Framework 3.5 (包含在 [!INCLUDE[vs_orcas_long](../debugger/includes/vs_orcas_long_md.md)] 中)
 
-- [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 4.5.2
+- .NET Framework 4.5.2
 
-- [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 4.6 (隨附於 [!INCLUDE[vs_dev14](../misc/includes/vs_dev14_md.md)])
+- .NET Framework 4.6 (包含在 [!INCLUDE[vs_dev14](../misc/includes/vs_dev14_md.md)] 中)
 
-- [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 4.6.1
+- .NET Framework 4.6.1
 
-- [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 4.6.2
+- .NET Framework 4.6.2
 
-- [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 4.7
+- .NET Framework 4.7
 
-- [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 4.7.1
+- .NET Framework 4.7.1
 
 組件清單中每一個組件所參考的 .NET Framework 版本各自不同。 例如，除非您專案是以 .NET Framework 3.0 (含) 以上版本為目標，否則您無法建置 Windows Presentation Foundation (WPF) 應用程式。
 
@@ -49,7 +49,7 @@ ms.locfileid: "63004604"
 <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
 ```
 
- 「目標設定檔」是目標 Framework 的子集。 例如，.NET Framework 4 用戶端設定檔不包含 MSBuild 組件的參考。
+ 「目標設定檔」  是目標 Framework 的子集。 例如，.NET Framework 4 用戶端設定檔不包含 MSBuild 組件的參考。
 
  目標設定檔是在專案檔的 `TargetFrameworkProfile` 屬性中指定。 您可以在 IDE 中，使用專案屬性頁中的目標 Framework 控制項來變更目標設定檔。 如需詳細資訊，請參閱[如何：以一個 .NET Framework 版本為目標](../ide/how-to-target-a-version-of-the-dotnet-framework.md)。
 
@@ -59,7 +59,7 @@ ms.locfileid: "63004604"
 ```
 
 ## <a name="target-platform"></a>目標平台
- 「平台」是定義特定執行階段環境的軟硬體組合。 例如，套用至物件的
+ 「平台」  是定義特定執行階段環境的軟硬體組合。 例如，套用至物件的
 
 - `x86` 指定在 Intel 80x86 處理器或其對等項目上執行的 32 位元 Windows 作業系統。
 
@@ -67,7 +67,7 @@ ms.locfileid: "63004604"
 
 - `Xbox` 指定 Microsoft Xbox 360 平台。
 
-「目標平台」是建置專案以在其上方執行的目標特定平台。 目標平台是在專案檔的 `PlatformTarget` 建置屬性中指定。 您可以在 IDE 中，使用專案屬性頁或 [組態管理員] 來變更目標平台。
+「目標平台」  是建置專案以在其上方執行的目標特定平台。 目標平台是在專案檔的 `PlatformTarget` 建置屬性中指定。 您可以在 IDE 中，使用專案屬性頁或 [組態管理員]  來變更目標平台。
 
 ```xml
 <PropertyGroup>
@@ -76,7 +76,7 @@ ms.locfileid: "63004604"
 
 ```
 
-「目標組態」是目標平台的子集。 例如，`x86``Debug` 組態不包含大部分的程式碼最佳化。 目標組態是在專案檔的 `Configuration` 建置屬性中指定。 您可以使用專案屬性頁或 [組態管理員] 來變更目標組態。
+「目標組態」  是目標平台的子集。 例如，`x86``Debug` 組態不包含大部分的程式碼最佳化。 目標組態是在專案檔的 `Configuration` 建置屬性中指定。 您可以使用專案屬性頁或 [組態管理員]  來變更目標組態。
 
 ```xml
 <PropertyGroup>

@@ -1,5 +1,5 @@
 ---
-title: Microsoft.VisualStudio.TestTools.CppUnitTestFramework API 參考
+title: Microsoft.VisualStudio.TestTools.CppUnitTestFramework API
 ms.date: 11/04/2017
 ms.topic: reference
 ms.author: mblome
@@ -7,20 +7,20 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikeblome
-ms.openlocfilehash: 045f205ff5450b09d4ec4e76e14493a988bae375
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b80b7fb8439f9e2a2a2af92e458295d153e449e5
+ms.sourcegitcommit: 51dad3e11d7580567673e0d426ab3b0a17584319
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62784078"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "66820774"
 ---
 # <a name="microsoftvisualstudiotesttoolscppunittestframework-api-reference"></a>Microsoft.VisualStudio.TestTools.CppUnitTestFramework API 參考
 
 本主題列出 `Microsoft::VisualStudio::CppUnitTestFramework` 命名空間的公用成員。 您可以使用這些 API 來撰寫以 Microsoft 原生單元測試架構為基礎的 C++ 單元測試。 本主題結尾有[使用範例](#example)。
 
- 標頭檔位於 _VisualStudio2012[x86]InstallFolder_**\VC\UnitTest\include** 資料夾。
+ 標頭檔位於 _VisualStudio2012[x86]InstallFolder_ **\VC\UnitTest\include** 資料夾。
 
- Lib 檔案位於 _VisualStudio2012[x86]InstallFolder_**\VC\UnitTest\lib** 資料夾。
+ Lib 檔案位於 _VisualStudio2012[x86]InstallFolder_ **\VC\UnitTest\lib** 資料夾。
 
 標頭和 lib 路徑會自動在原生測試專案中設定。
 
@@ -558,10 +558,10 @@ template<typename _EXPECTEDEXCEPTION, typename _RETURNTYPE>
 ## <a name="cppunittestlogger_h"></a> CppUnitTestLogger.h
 
 ### <a name="logger"></a> 記錄器
- 記錄器類別包含要寫入至 [輸出視窗] 的靜態方法。
+ 記錄器類別包含要寫入至 [輸出視窗]  的靜態方法。
 
 ### <a name="write_message"></a> 寫入訊息
-將字串寫入至 [輸出視窗]
+將字串寫入至 [輸出視窗] 
 
 ```cpp
 static void Logger::WriteMessage(const wchar_t* message)

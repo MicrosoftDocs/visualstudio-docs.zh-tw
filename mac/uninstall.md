@@ -6,20 +6,21 @@ ms.author: crdun
 ms.date: 05/06/2018
 ms.technology: vs-ide-install
 ms.assetid: 4EB95F75-BC2E-4982-9564-2975805712D8
-ms.openlocfilehash: 428c5ceb878d2ec0f4185ad70772672733fda517
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 2093d6d0f6d123bf6d904b225c17714a98c5ee9a
+ms.sourcegitcommit: cc5fd59e5dc99181601b7db8b28d7f8a83a36bab
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62971435"
+ms.lasthandoff: 06/11/2019
+ms.locfileid: "66835888"
 ---
 # <a name="uninstalling-visual-studio-for-mac"></a>解除安裝 Visual Studio for Mac
 
-有許多 Xamarin 產品可啟用跨平台應用程式開發，包含 Visual Studio for Mac 這類獨立應用程式。
-
-您可以使用本指南來個別解除安裝每項產品，方法是巡覽至相關章節，或使用[解除安裝指令碼](#uninstall-script)一節中提供的指令碼，以解除安裝所有項目。
+您可以使用本指南來個別解除安裝 Visual Studio for Mac 中的每個元件，方法是巡覽至相關章節，或使用[解除安裝指令碼](#uninstall-script)一節中提供的指令碼，以解除安裝所有項目。
 
 如果您先前已在電腦上安裝 Xamarin Studio，則除了下列步驟之外，還可能需要遵循 [Xamarin 解除安裝](/xamarin/cross-platform/get-started/installation/uninstalling-xamarin#uninstall-xamarin-studio-on-mac)指南中的指示。
+
+> [!NOTE]
+> 此資訊將只會從電腦上移除 Visual Studio for Mac 2019 或 2017。 若要解除安裝 Visual Studio Code，請參閱[此問題](https://github.com/Microsoft/vscode/issues/52151) \(英文\) 以取得詳細資料。
 
 ## <a name="uninstall-script"></a>解除安裝指令碼
 
@@ -42,7 +43,7 @@ ms.locfileid: "62971435"
 
 若要執行指令碼，請執行下列步驟：
 
-1. 以滑鼠右鍵按一下指令碼，然後選取 [另存新檔] 將檔案儲存在您的 Mac 上。
+1. 以滑鼠右鍵按一下指令碼，然後選取 [另存新檔]  將檔案儲存在您的 Mac 上。
 2. 開啟 [終端機]，並將工作目錄變更為已下載指令碼的位置：
 
     ```bash
@@ -64,7 +65,7 @@ ms.locfileid: "62971435"
 
 若要執行指令碼，請執行下列步驟：
 
-1. 以滑鼠右鍵按一下指令碼，然後選取 [另存新檔] 將檔案儲存在您的 Mac 上。
+1. 以滑鼠右鍵按一下指令碼，然後選取 [另存新檔]  將檔案儲存在您的 Mac 上。
 2. 開啟 [終端機]，並將工作目錄變更為已下載指令碼的位置：
 
     ```bash
@@ -82,7 +83,7 @@ ms.locfileid: "62971435"
 
 ## <a name="uninstall-visual-studio-for-mac"></a>解除安裝 Visual Studio for Mac
 
-從 Mac 解除安裝 Visual Studio 的第一個步驟是找出 **/Applications** 目錄中的 **Visual Studio.app**，並將它拖曳至 [資源回收筒]。 或者以滑鼠右鍵按一下並選取 [移至垃圾桶]，如下圖所示：
+從 Mac 解除安裝 Visual Studio 的第一個步驟是找出 **/Applications** 目錄中的 **Visual Studio.app**，並將它拖曳至 [資源回收筒]  。 或者以滑鼠右鍵按一下並選取 [移至垃圾桶]  ，如下圖所示：
 
 ![將 Visual Studio 應用程式移至垃圾桶](media/uninstall-image1.png)
 
@@ -103,7 +104,7 @@ rm -rf ~/Library/Application\ Support/VisualStudio/7.0/LocalInstall/Addins/
 rm -rf ~/Library/Application\ Support/VisualStudio/8.0/LocalInstall/Addins/
 ```
 
-您可能也想要移除下列包含各種 Xamarin 檔案和資料夾的目錄。 不過，這麼做之前，您應該知道此目錄包含 Android 簽署金鑰。 如需詳細資訊，請參閱**[解除安裝 Android SDK 和 Java SDK](#uninstall-android-sdk-and-java-sdk)** 一節：
+您可能也想要移除下列包含各種 Xamarin 檔案和資料夾的目錄。 不過，這麼做之前，您應該知道此目錄包含 Android 簽署金鑰。 如需詳細資訊，請參閱 **[解除安裝 Android SDK 和 Java SDK](#uninstall-android-sdk-and-java-sdk)** 一節：
 
 ```bash
 rm -rf ~/Library/Developer/Xamarin
@@ -140,7 +141,7 @@ sudo rm -rf /Library/Frameworks/Xamarin.Android.framework
 
 ### <a name="uninstall-android-sdk-and-java-sdk"></a>解除安裝 Android SDK 和 Java SDK
 
-需要有 Android SDK，才能開發 Android 應用程式。 若要完全移除 Android SDK 的所有部分，請在 **~/Library/Developer/Xamarin/** 找出檔案，並將它移至 [垃圾]。
+需要有 Android SDK，才能開發 Android 應用程式。 若要完全移除 Android SDK 的所有部分，請在 **~/Library/Developer/Xamarin/** 找出檔案，並將它移至 [垃圾]  。
 
 > [!WARNING]
 > 您應該知道 Visual Studio for Mac 所產生的 Android 簽署金鑰位於 `~/Library/Developer/Xamarin/Keystore`。 請務必適當地備份這些金鑰或避免移除此目錄 (如果您想要保留金鑰儲存區)。
@@ -228,7 +229,7 @@ Visual Studio 2019 for Mac Preview 已啟動為個別的預覽，可讓您繼續
 
 現已發行 Visual Studio 2019 for Mac，所以您可以安全移除 Visual Studio 2019 for Mac Preview 應用程式。
 
-若要解除安裝預覽應用程式套件組合，請從您 **Applications** 資料夾中選取 [Visual Studio (預覽)]，然後按一下 [移至垃圾桶]，如下圖所示：
+若要解除安裝預覽應用程式套件組合，請從您 **Applications** 資料夾中選取 [Visual Studio (預覽)]  ，然後按一下 [移至垃圾桶]  ，如下圖所示：
 
 ![選取尋找工具的 [移至垃圾桶] 選項](media/uninstall-remove-vspreview.png)
 

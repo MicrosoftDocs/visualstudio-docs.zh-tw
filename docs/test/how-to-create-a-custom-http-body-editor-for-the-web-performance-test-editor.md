@@ -8,12 +8,12 @@ ms.assetid: a0b2d8ff-3e2a-487e-9172-90047174f336
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: b56195ce7cb6e52433e19dc2a7ae4b42e7580724
-ms.sourcegitcommit: ba5e072c9fedeff625a1332f22dcf3644d019f51
+ms.openlocfilehash: 624d06dd44812269bcff1e67cf048fbb077e90ea
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/31/2019
-ms.locfileid: "66431831"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66745819"
 ---
 # <a name="how-to-create-a-custom-http-body-editor-for-the-web-performance-test-editor"></a>作法：建立 Web 效能測試編輯器的自訂 HTTP 本文編輯器
 
@@ -43,7 +43,7 @@ ms.locfileid: "66431831"
 
 1. 在 [屬性]  中，選取 [應用程式]  索引標籤。
 
-1. 在 [目標 Framework]  下拉式清單中選取 **.NET Framework 4**。
+1. 在 [目標 Framework]  下拉式清單中選取 .NET Framework 4 (或更新版本)。
 
 1. [目標 Framework 變更]  對話方塊隨即出現。
 

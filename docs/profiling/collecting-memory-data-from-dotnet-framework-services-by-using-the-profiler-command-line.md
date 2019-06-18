@@ -8,15 +8,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 8d7a15f1228d65cf13101811eca47a5cd7401a73
-ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.openlocfilehash: a4526bc9b4dde74488d3997bf18006454383cb06
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66263516"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66747808"
 ---
 # <a name="collect-memory-data-from-net-framework-services-by-using-the-profiler-command-line"></a>使用分析工具命令列以收集 .NET Framework 服務的記憶體資料
-本節說明從命令列使用取樣方法收集 [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 服務之記憶體配置和物件存留期資料的程序和選項。
+本節說明從命令列使用取樣方法收集 .NET Framework 服務之記憶體配置和物件存留期資料的程序和選項。
 
 ## <a name="common-tasks"></a>一般工作
 

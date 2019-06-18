@@ -3,19 +3,19 @@ title: 在專案中包含 NuGet 套件
 description: 本文件涵蓋如何在 Xamarin 專案中包含 NuGet 套件。 它會逐步尋找和下載套件，以及介紹 IDE 整合功能。
 author: conceptdev
 ms.author: crdun
-ms.date: 04/14/2017
+ms.date: 04/24/2019
 ms.assetid: 5C800815-0B13-4B27-B017-95FCEF1A0EA2
 ms.custom: video
-ms.openlocfilehash: 9f96354d9e460cebd81f52712f74dc6226f8706d
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 7ac4a10160a1273dd7766e880dfcf7f06bf64668
+ms.sourcegitcommit: 51dad3e11d7580567673e0d426ab3b0a17584319
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65692331"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "66820619"
 ---
 # <a name="include-a-nuget-package-in-your-project"></a>在專案中包含 NuGet 套件
 
-NuGet 是進行 .NET 開發的最受歡迎套件管理員，並內建於 Visual Studio for Mac 以及 Windows 上的 Visual Studio。 您可以使用任一 IDE 來搜尋套件，並將其新增至 Xamarin.iOS 和 Xamarin.Android 專案。
+NuGet 是進行 .NET 開發的最受歡迎套件管理員，並內建於 Visual Studio for Mac 以及 Windows 上的 Visual Studio。 您可以使用任一 IDE 來搜尋套件，並將其新增至 Xamarin、.NET Core 及 ASP.NET 專案。
 
 本文描述如何在專案中包含 NuGet 套件，並示範讓處理序順暢處理的工具鏈。
 
@@ -31,7 +31,7 @@ NuGet 是進行 .NET 開發的最受歡迎套件管理員，並內建於 Visual 
 
 ## <a name="adding-a-package"></a>新增套件
 
-在 Visual Studio for Mac 中開啟專案時，以滑鼠右鍵按一下 [Solution Pad]  中的 [套件]  資料夾，然後選取 [新增套件]  ：
+在 Visual Studio for Mac 中開啟專案時，以滑鼠右鍵按一下 [Solution Pad]  中的 [套件]  資料夾，然後選取 [新增 NuGet 套件]  ：
 
 ![新增 NuGet 套件內容動作](media/nuget-walkthrough-PackagesMenu.png)
 
@@ -43,9 +43,9 @@ NuGet 是進行 .NET 開發的最受歡迎套件管理員，並內建於 Visual 
 
 ![列出 NuGet 套件](media/nuget-walkthrough-AddPackages1.png)
 
-使用右上角的搜尋方塊來尋找特定套件，例如  `azure`。 當您發現想要使用的套件時，請選取它，然後按一下 [新增套件] ****   按鈕開始安裝。
+使用右上角的搜尋方塊來尋找特定套件，例如  `azure mobile`。 當您找到想要使用的套件時，請選取它，然後按一下 [新增套件] ****   按鈕以開始安裝。
 
-[新增 Azure NuGet 套件](media/nuget-walkthrough-AddPackages2.png)
+![新增 Azure NuGet 套件](media/nuget-walkthrough-AddPackages2.png)
 
 套件在下載之後就會新增至您的專案。 會如下變更方案：
 
@@ -77,9 +77,9 @@ using Newtonsoft.Json;
 
 ![套件功能表](media/nuget-walkthrough-PackagesMenu.png)
 
-* **新增套件** - 開啟視窗，將更多套件新增至專案。
-* **更新** - 檢查每個套件的來源伺服器，然後下載任何較新版本。
-* **還原** - 下載任何遺漏的套件 (不會將現有套件更新為較新版本)。
+*   **新增 NuGet 套件** - 開啟視窗以將更多套件新增至專案。
+*   **更新** - 檢查每個套件的來源伺服器，然後下載任何較新版本。
+*   **還原** - 下載任何遺漏的套件 (不會將現有套件更新為較新版本)。
 
 方案層級也會提供 [更新] 和 [還原] 選項，而且這些選項會影響方案中的所有專案。
 

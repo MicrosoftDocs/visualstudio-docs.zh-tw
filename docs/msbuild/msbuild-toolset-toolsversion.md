@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9250382284fffbc3f1761f8143903327fa845832
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: b7da41b1b82299bd32d1af805ea6226690e79115
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63436864"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66747387"
 ---
 # <a name="msbuild-toolset-toolsversion"></a>MSBuild Toolset (ToolsVersion)
 
@@ -48,7 +48,7 @@ MSBuild 使用工作、目標和工具的工具組建置應用程式。 一般�
 
 ## <a name="how-the-toolsversion-attribute-works"></a>ToolsVersion 屬性如何運作
 
- 當您在 Visual Studio 中建立專案，或者升級現有專案時，名為 `ToolsVersion` 的屬性會自動併入專案檔，且其值會對應至 Visual Studio 版本中所包含的 MSBuild 版本。 如需詳細資訊，請參閱[以特定的 .NET Framework 版本為目標](../ide/visual-studio-multi-targeting-overview.md)。
+ 當您在 Visual Studio 中建立專案，或者升級現有專案時，名為 `ToolsVersion` 的屬性會自動併入專案檔，且其值會對應至 Visual Studio 版本中所包含的 MSBuild 版本。 如需詳細資訊，請參閱 [Framework 目標概觀](../ide/visual-studio-multi-targeting-overview.md)。
 
  當在專案檔中定義 `ToolsVersion` 值時，MSBuild 會使用該值來判定可用於該專案的工具組屬性值。 一個工具組屬性為 `$(MSBuildToolsPath)`，它會指定 .NET Framework 工具的路徑。 僅需要該工具組屬性 (或 `$(MSBuildBinPath)`)。
 

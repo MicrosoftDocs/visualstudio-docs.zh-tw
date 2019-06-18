@@ -17,18 +17,18 @@ ms.assetid: 0ee89c58-c900-48fc-a6a2-65ace00e8bab
 author: Joe-Sewell-PreEmptive
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 5bf42ec3c706282adf2752d21c0c121f89c2ed5f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 87d093a540e3c6fae6a80761a5b945c572bd890d
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62557251"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66744787"
 ---
 # <a name="capabilities-of-dotfuscator"></a>Dotfuscator 的功能
 
 本頁的重點在於描述 Dotfuscator Community 的功能，並對透過[升級][upgrades]取得的進階選項提供一些參考資訊。
 
-Dotfuscator Community 是 .NET 應用程式的「建置後」系統。
+Dotfuscator Community 是 .NET 應用程式的「建置後」  系統。
 有了它，Visual Studio 使用者可以[混淆組件][obfuscation]，並將[主動防禦評估][checks]插入應用程式，Dotfuscator 完全不需要存取原始程式碼。
 Dotfuscator 採用多種方法來保護您的應用程式，並建立多層保護策略。
 
@@ -37,7 +37,7 @@ Dotfuscator Community 支援各種 .NET 組件和應用程式類型，包括[通
 ## <a name="intellectual-property-protection"></a>智慧財產權保護
 
 應用程式的設計、行為和實作都屬於智慧財產權 (IP)。
-不過，針對 .NET Framework 建立的應用程式基本上一目暸然；[因為 .NET 組件包含高階中繼資料和中繼程式碼][assemblies]，所以可輕易對這些組件進行還原工程。
+不過，針對 .NET 所建立的應用程式基本上一目暸然；[因為 .NET 組件包含高階中繼資料和中繼程式碼][assemblies]，所以可輕易對這些組件進行還原工程。
 
 Dotfuscator Community 包含[重新命名][renaming]形式的基本 [.NET 混淆化][obfuscation]。
 使用 Dotfuscator 混淆您的程式碼，可降低未經授權就透過還原工程存取原始程式碼的風險，因為重要的命名資訊不再公開。
@@ -50,7 +50,7 @@ Dotfuscator 可將[反偵錯行為][debug]插入您的應用程式，對此進�
 ## <a name="application-integrity-protection"></a>應用程式完整性保護
 
 除了保護您的原始程式碼，確保您的應用程式依照設計使用也很重要。
-攻擊者可能會嘗試劫持您的應用程式以規避授權原則 (亦即軟體盜用)、竊取或竄改應用程式所處理的敏感性資料，或是變更應用程式的行為。
+攻擊者可能會嘗試劫持您的應用程式以規避授權原則 (也就是軟體盜用)、竊取或竄改應用程式所處理的敏感性資料，或是變更應用程式的行為。
 
 Dotfuscator Community 可將[應用程式驗證程式碼][checks]插入您的組件，包括[反竄改][tamper]、[反偵錯][debug]和[防裝置破解][root]措施。
 如果偵測到無效的應用程式狀態，驗證程式碼可[要求應用程式程式碼適當地解決此情況][check-app]。

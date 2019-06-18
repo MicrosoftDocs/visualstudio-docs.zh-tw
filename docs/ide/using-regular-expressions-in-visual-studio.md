@@ -16,16 +16,16 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d62f999f485acaba168a50d404f2b5cbb272ef14
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5fc2e1afa95c56dda79296a24f027fb93d62c585
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62821074"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66747733"
 ---
 # <a name="use-regular-expressions-in-visual-studio"></a>在 Visual Studio 中使用規則運算式
 
-Visual Studio 使用 [.NET Framework 規則運算式](/dotnet/standard/base-types/regular-expressions)來尋找和取代文字。
+Visual Studio 會使用 [.NET 規則運算式](/dotnet/standard/base-types/regular-expressions)來尋找和取代文字。
 
 ## <a name="replacement-patterns"></a>取代模式
 
@@ -57,7 +57,7 @@ Visual Studio 使用 [.NET Framework 規則運算式](/dotnet/standard/base-type
 |比對符號之前或之後的運算式。|&#124;|`(sponge\|mud) bath` 會比對 "sponge bath" 和 "mud bath"。|
 |逸出反斜線之後的字元| \\ |`\^` 會比對字元 ^。|
 |指定前置字元或群組的出現次數。|{x}，其中 x 是發生次數。|`x(ab){2}x` 會比對 "xababx"，而 `x(ab){2,3}x` 會比對 "xababx" 和 "xabababx"，但不比對 "xababababx"。|
-|比對 Unicode 字元類別中的文字。 如需 Unicode 字元類別的詳細資訊，請參閱 <br /><br /> [Unicode Standard 5.2 字元屬性](http://www.unicode.org/versions/Unicode5.2.0/ch04.pdf)。|\p{X}，其中 "X" 是 Unicode 數字。|`\p{Lu}` 會比對 "Thomas Doe" 中的 "T" 和 "D"。|
+|比對 Unicode 字元類別中的文字。 如需 Unicode 字元類別的詳細資訊，請參閱<br /><br /> [Unicode Standard 5.2 字元屬性](http://www.unicode.org/versions/Unicode5.2.0/ch04.pdf)。|\p{X}，其中 "X" 是 Unicode 數字。|`\p{Lu}` 會比對 "Thomas Doe" 中的 "T" 和 "D"。|
 |比對字邊界|\b (在字元類別之外 `\b` 會指定字邊界，在字元類別 `\b` 內則會指定退格鍵。)|`\bin` 會比對 "inside" 中的 "in"，但不比對 "pinto"。|
 |比對分行符號 (即歸位字元後面接著新行)。|\r?\n|`End\r?\nBegin` 只在 "End" 是一行的最後一個字串，且 "Begin" 是下一行的第一個字串時比對 "End" 和 "Begin"。|
 |比對任何英數字元|\w|`a\wd` 會比對 "add" 和 "a1d"，但不比對 "a d"。|
