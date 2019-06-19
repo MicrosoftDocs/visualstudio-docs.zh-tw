@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f8866b4a2518c8c4d58f26b625e45a0188498021
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.openlocfilehash: 4503066cab8e7ca324e7c81317999b737c750dd6
+ms.sourcegitcommit: d4920babfc3d24a3fe1d4bf446ed3fe73b344467
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66746521"
+ms.lasthandoff: 06/17/2019
+ms.locfileid: "67159940"
 ---
 # <a name="output-window"></a>輸出視窗
 
@@ -67,7 +67,7 @@ ms.locfileid: "66746521"
 
 您也可以透過程式設計方式撰寫自己的應用程式，以在執行階段將診斷訊息寫入 [輸出]  窗格。 若要執行此工作，請使用 .NET API <xref:System.Diagnostics> 命名空間中的 <xref:System.Diagnostics.Debug> 類別或 <xref:System.Diagnostics.Trace> 類別的成員。 建置方案或專案的偵錯組態時，<xref:System.Diagnostics.Debug> 類別的成員會顯示輸出；建置偵錯或發行組態時，<xref:System.Diagnostics.Trace> 類別的成員會顯示輸出。 如需詳細資訊，請參閱[輸出視窗中的診斷訊息](../../debugger/diagnostic-messages-in-the-output-window.md)。
 
-在 C++ 中，您可以建立自訂建置步驟和建置事件，而其警告和錯誤會顯示並計入 [輸出]  窗格中。 您可以在輸出行上按 **F1**，以顯示適當的說明主題。 如需詳細資訊，請參閱[格式化自訂建置步驟的輸出](/cpp/build/reference/formatting-the-output-of-a-custom-build-step-or-build-event)。
+在 C++ 中，您可以建立自訂建置步驟和建置事件，而其警告和錯誤會顯示並計入 [輸出]  窗格中。 您可以在輸出行上按 **F1**，以顯示適當的說明主題。 如需詳細資訊，請參閱[格式化自訂建置步驟的輸出](/cpp/build/formatting-the-output-of-a-custom-build-step-or-build-event)。
 
 ## <a name="scroll-behavior"></a>捲動行為
 

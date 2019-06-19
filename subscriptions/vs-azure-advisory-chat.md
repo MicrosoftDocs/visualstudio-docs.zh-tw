@@ -7,12 +7,12 @@ ms.date: 12/19/2018
 ms.topic: conceptual
 description: 了解如何充分利用 Visual Studio 訂用帳戶中所含的 Azure 諮詢對談權益。
 searchscope: VS Subscription
-ms.openlocfilehash: 03e55b29cea867d438ef0536a2db7ee9c4f47e36
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c5d547062fa820ff868fe12f8cb899d9d1e508b8
+ms.sourcegitcommit: 91c7f1b525e0c22d938bc4080ba4ceac2483474f
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62809084"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "67033182"
 ---
 # <a name="azure-advisory-chat"></a>Azure 諮詢對談
 
@@ -22,7 +22,7 @@ ms.locfileid: "62809084"
 
 使用「Azure 諮詢對談」非常簡單。
 1. 登入 [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs)。
-2. 找到 [支援] 區段中的 [Azure 諮詢對談] 圖格，然後按一下 [立即對話]。
+2. 找到 [支援] 區段中的 [Azure 諮詢對談] 圖格，然後按一下 [立即對話]  。
     > [!div class="mx-imgBorder"]
     > ![Azure 諮詢對談磚](_img/vs-azure-advisory/vs-azure-advisory-tile.png)
 
@@ -39,10 +39,10 @@ ms.locfileid: "62809084"
 |                                                      訂用帳戶層級                                                      |     通道      |    優勢    | 可續約？ |
 |------------------------------------------------------------------------------------------------------------------------------|-------------------|---------------|------------|
 |                                      Visual Studio Enterprise (Standard)                                       | VL, Azure, 零售 |   一年    |    是     |
-| Visual Studio Professional (標準、每月雲端)、Visual Studio Enterprise (每月雲端、NFR<sup>1</sup>) |        全部        | 無法使用 |     否     |
-|                                          Visual Studio Test Professional (標準訂用帳戶)                                          |        全部        | 無法使用 |     否     |
-|                                                  MSDN 平台 (標準)                                                   |        全部        | 無法使用 |     否     |
-|                                                 Visual Studio Dev Essentials                                                 |        N/A        | 無法使用 |     否     |
+| Visual Studio Professional (標準、每月雲端)、Visual Studio Enterprise (每月雲端、NFR<sup>1</sup>) |        All        | 無法使用 |     否     |
+|                                          Visual Studio Test Professional (標準訂用帳戶)                                          |        All        | 無法使用 |     否     |
+|                                                  MSDN 平台 (標準)                                                   |        All        | 無法使用 |     否     |
+
 
 <sup>1</sup>  *包含：禁止轉售 (NFR)、最有價值專家 (MVP)、區域經理 (RD)、Visual Studio 產業夥伴 (VSIP)、BizSpark、Imagine、MCT*
 

@@ -7,12 +7,12 @@ ms.date: 12/19/2018
 ms.topic: conceptual
 description: 了解如何啟用 Visual Studio 訂用帳戶中所含的 Parasoft Virtualize/SOA Test Professional 訂用帳戶。
 searchscope: VS Subscription
-ms.openlocfilehash: c5b17bd0509ebca05f49ec5a411ea632676e6342
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ce0c1e3d00e73bfdfee5e2fbe2bea8adddc2d305
+ms.sourcegitcommit: 91c7f1b525e0c22d938bc4080ba4ceac2483474f
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62947260"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "67032745"
 ---
 # <a name="parasoft-virtualizesoatest-professional-desktop-in-visual-studio-subscriptions"></a>Visual Studio 訂用帳戶中的 Parasoft Virtualize/SOAtest Professional Desktop
 
@@ -22,51 +22,51 @@ ms.locfileid: "62947260"
 
 1. 若要使用 Parasoft Virtualize/SOAtest Professional Desktop 權益，請登入 [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs)。
 
-2. 在 [工具] 區段找到 [Parasoft] 磚，並按一下權益磚底部的 [取得代碼] 連結。   您會收到已成功擷取代碼的通知。  按一下 [啟用]。
+2. 在 [工具] 區段找到 [Parasoft] 磚，並按一下權益磚底部的 [取得代碼]  連結。   您會收到已成功擷取代碼的通知。  按一下 [啟用]  。
    > [!div class="mx-imgBorder"]
    > ![Parasoft 權益磚](_img/vs-parasoft/vs-parasoft-tile.png)
 
-3. 會將您重新導向至 Parasoft 網站，您將在其中建立帳戶。  只需要提供您的連絡資訊，然後按一下 [提交]。
+3. 會將您重新導向至 Parasoft 網站，您將在其中建立帳戶。  只需要提供您的連絡資訊，然後按一下 [提交]  。
    > [!div class="mx-imgBorder"]
    > ![Parasoft 權益建立帳戶](_img/vs-parasoft/vs-parasoft-account-cropped.png)
 
-4. 您會在建立您的帳戶之後看到通知，告知已傳送給您一封包含下載指示的電子郵件   (如果您在收件匣中看不到該電子郵件，請記得檢查垃圾郵件資料夾)。
+4. 您會在建立您的帳戶之後看到通知，告知已傳送給您一封包含下載指示的電子郵件  (如果您在收件匣中看不到該電子郵件，請記得檢查垃圾郵件資料夾)。
 
-5. 開啟電子郵件，並將 [啟用代碼] 複製至剪貼簿。
+5. 開啟電子郵件，並將 [啟用代碼]  複製至剪貼簿。
 
 6. 按一下對應至您作業系統的連結。
    > [!div class="mx-imgBorder"]
    > ![Parasoft 權益歡迎電子郵件](_img/vs-parasoft/vs-parasoft-email.png)
 
-7. 根據您使用的瀏覽器，可能會看到不同的對話方塊，讓您有機會執行安裝程式。  例如，在 Internet Explorer 中，您會看到一份最新下載清單，而且其頂端列出 parasoft_soavirt_9.10.2_win32_x86_64.exe。 按一下 [執行] 開始安裝程式。
+7. 根據您使用的瀏覽器，可能會看到不同的對話方塊，讓您有機會執行安裝程式。  例如，在 Internet Explorer 中，您會看到一份最新下載清單，而且其頂端列出 parasoft_soavirt_9.10.2_win32_x86_64.exe。 按一下 [執行]  開始安裝程式。
 
-8. 開啟 [使用者帳戶控制] 對話方塊時，請按一下 [是]。
+8. 開啟 [使用者帳戶控制] 對話方塊時，請按一下 [是]  。
 
-9. 選擇您想要的語言，然後按一下 [確定]。
+9. 選擇您想要的語言，然後按一下 [確定]  。
 
 10. [Parasoft SOAtest & Virtualize 安裝精靈] 隨即啟動。  按 [ **下一步**]。
     > [!div class="mx-imgBorder"]
     > ![Parasoft 權益安裝開始](_img/vs-parasoft/vs-parasoft-start-install.png)
 
-11. 按一下 [我接受合約]，然後按一下 [下一步]。
+11. 按一下 [我接受合約]  ，然後按一下 [下一步]  。
 
-12. 選擇您要安裝檔案的位置，然後按一下 [下一步]。
+12. 選擇您要安裝檔案的位置，然後按一下 [下一步]  。
 
-13. 接下來，您可以選擇要安裝的元件，或全部安裝 (預設)。  選取項目，然後按一下 [下一步]。
+13. 接下來，您可以選擇要安裝的元件，或全部安裝 (預設)。  選取項目，然後按一下 [下一步]  。
 
-14. 指定您要安裝應用程式捷徑的位置，然後按一下 [下一步]。
+14. 指定您要安裝應用程式捷徑的位置，然後按一下 [下一步]  。
 
-15. HTTPS 網站上的特定功能測試需要 SOAtest Web 根憑證授權單位憑證。  選擇是否安裝根 CA 憑證，然後按一下 [下一步]。
+15. HTTPS 網站上的特定功能測試需要 SOAtest Web 根憑證授權單位憑證。  選擇是否安裝根 CA 憑證，然後按一下 [下一步]  。
     > [!div class="mx-imgBorder"]
     > ![Parasoft 權益根 CA 憑證](_img/vs-parasoft/vs-parasoft-install-root-ca.png)
 
-16. 選擇是否要在安裝期間建立桌面和快速啟動圖示，然後按一下 [下一步]。
+16. 選擇是否要在安裝期間建立桌面和快速啟動圖示，然後按一下 [下一步]  。
 
-17. 確認您已選取的選項，然後按一下 [安裝] 開始安裝軟體。
+17. 確認您已選取的選項，然後按一下 [安裝]  開始安裝軟體。
     > [!div class="mx-imgBorder"]
     > ![Parasoft 權益已可開始安裝](_img/vs-parasoft/vs-parasoft-ready-to-install.png)
 
-18. 安裝程式完成時，請按一下 [完成]。 您現在已準備好開始使用 Parasoft Virtualize/SOAtest Professional Desktop 權益！
+18. 安裝程式完成時，請按一下 [完成]  。 您現在已準備好開始使用 Parasoft Virtualize/SOAtest Professional Desktop 權益！
 
 ## <a name="eligibility"></a>資格
 
@@ -76,8 +76,8 @@ ms.locfileid: "62947260"
 | Visual Studio Professional (Standard) | VL, Azure, 零售                                       | 無法使用                                                           |NA         |
 | Visual Studio Test Professional (標準訂用帳戶)                         | VL, 零售                                              | 無法使用                                                           |NA         |
 | MSDN 平台 (標準)                                          | VL, 零售                                              | 無法使用                                                           |NA         |
-| Visual Studio Dev Essentials | NA  | 無法使用|NA |
 | Visual Studio Enterprise、Visual Studio Professional (每月雲端) | Azure                                       | 無法使用                                                           |NA|
+||
 
 <sup>1</sup>  *包含：Microsoft 合作夥伴網路 (Enterprise)。排除：禁止轉售 (NFR)、Visual Studio 產業夥伴 (VSIP)、FTE、MCT 軟體與服務開發人員、BizSpark、Imagine、最有價值專家 (MVP)、區域經理 (RD)。MCT Software & Services。*
 

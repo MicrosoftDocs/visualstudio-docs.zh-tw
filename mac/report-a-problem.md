@@ -6,12 +6,12 @@ author: jmatthiesen
 ms.author: jomatthi
 ms.date: 11/16/2018
 ms.assetid: 1C7AC52E-754E-473F-A5B5-00C3A40DAACD
-ms.openlocfilehash: 3513f4e120db3bab61348f0ee1f0f452d09ded15
-ms.sourcegitcommit: aeb1a1135dd789551e15aa5124099a5fe3f0f32b
+ms.openlocfilehash: 04fc7b1f7ac0505d8d4daf8c3a7836dd48cfad14
+ms.sourcegitcommit: ab06cde69d862440b4277bcd9bf02e7b50593a1b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/04/2019
-ms.locfileid: "66501104"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67132179"
 ---
 # <a name="how-to-report-a-problem-in-visual-studio-for-mac"></a>如何在 Visual Studio for Mac 中回報問題
 
@@ -42,9 +42,6 @@ ms.locfileid: "66501104"
    ![搜尋類似問題並針對類似問題投票](media/report-problem-image4.png)
 
 1. 若沒有找到您遇到的問題，請選擇畫面側邊的 [回報新問題]  。
-
-   > [!NOTE]
-   > [回報新問題]  按鈕只會顯示在 Visual Studio for Mac 的 Developer Community 介面。 您無法直接在 [Developer Community](https://developercommunity.visualstudio.com/) 網站回報問題。
 
 1. 建立問題的描述性標題，如此可協助我們將問題發送給適當的 Visual Studio for Mac 小組。
 

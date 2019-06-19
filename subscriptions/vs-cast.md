@@ -7,12 +7,12 @@ ms.date: 12/19/2018
 ms.topic: conceptual
 description: 了解所選 Visual Studio 訂用帳戶中所含的 CAST Highlight 權益
 searchscope: VS Subscription
-ms.openlocfilehash: 852327a7bcedb93a9ac7d2644ee5e9ab1e182e42
-ms.sourcegitcommit: 283f2dbce044a18e9f6ac6398f6fc78e074ec1ed
+ms.openlocfilehash: 5a6a7024653027f3b813de6a417dc01e07d30084
+ms.sourcegitcommit: 91c7f1b525e0c22d938bc4080ba4ceac2483474f
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/16/2019
-ms.locfileid: "65805335"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "67032892"
 ---
 # <a name="the-cast-highlight-benefit-in-visual-studio-subscriptions"></a>Visual Studio 訂用帳戶中的 CAST Highlight 權益
 
@@ -24,14 +24,14 @@ Visual Studio Enterprise 訂閱者可以取得免費一個月的 CAST Highlight 
 
 1. 登入 [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs)。
 
-2. 在 [工具] 類別中，尋找 CAST Highlight 權益磚，然後按一下 [取得程式碼]。
+2. 在 [工具] 類別中，尋找 CAST Highlight 權益磚，然後按一下 [取得程式碼]  。
 
    > [!div class="mx-imgBorder"]
    > ![CAST Highlight 權益磚](_img/vs-cast-highlight/vs-cast-highlight-tile.png)
 
-0. 您會看到一則訊息，告知您已順利擷取程式碼。  按一下 [啟動]，隨即將您重新導向至 CAST Highlight 頁面；您可以在其中繼續啟用程序   (如果您未選擇立即啟用，可以隨時返回在訂用帳戶入口網站中的 CAST Highlight 磚。  [取得程式碼] 連結會變更為 [啟用]，按一下即可繼續啟用程序)。
+0. 您會看到一則訊息，告知您已順利擷取程式碼。  按一下 [啟動]  ，隨即將您重新導向至 CAST Highlight 頁面；您可以在其中繼續啟用程序  (如果您未選擇立即啟用，可以隨時返回在訂用帳戶入口網站中的 CAST Highlight 磚。  [取得程式碼] 連結會變更為 [啟用]，按一下即可繼續啟用程序)。
 
-0. 隨即將您重新導向至 CAST Highlight 頁面；您可以在其中瀏覽訂用帳戶的功能。  當您準備好建立帳戶時，只需在 Web 表單中提供您的連絡資訊，然後按一下 [提交]。
+0. 隨即將您重新導向至 CAST Highlight 頁面；您可以在其中瀏覽訂用帳戶的功能。  當您準備好建立帳戶時，只需在 Web 表單中提供您的連絡資訊，然後按一下 [提交]  。
 
     > [!div class="mx-imgBorder"]
     > ![CAST Highlight 登陸頁面](_img/vs-cast-highlight/vs-cast-highlight-landing.png)
@@ -86,7 +86,6 @@ Visual Studio Enterprise 訂閱者可以取得免費一個月的 CAST Highlight 
 | Visual Studio Professional (Standard) | VL, Azure, 零售                                       | 無法使用                                                             |  N/A          |
 | Visual Studio Test Professional (標準訂用帳戶)                         | VL, 零售                                              | 無法使用                                             |  N/A           |
 | MSDN 平台 (標準)                                          | VL, 零售                                              | 無法使用                                              |  N/A          |
-| Visual Studio Dev Essentials | N/A  | 無法使用 | N/A |
 | Visual Studio Enterprise (Standard)  | NFR<sup>1</sup> |無法使用  | N/A |
 | Visual Studio Enterprise、Visual Studio Professional (每月雲端) | Azure | 無法使用 | N/A |
 

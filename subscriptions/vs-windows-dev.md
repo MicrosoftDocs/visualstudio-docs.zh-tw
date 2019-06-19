@@ -7,12 +7,12 @@ ms.date: 12/19/2018
 ms.topic: conceptual
 description: 了解 Visual Studio 訂用帳戶隨附的 Windows 開發人員帳戶。
 searchscope: VS Subscription
-ms.openlocfilehash: a497db64345cffe4f87e768a83816489ebd4c21a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: aacd9dab6353d3cfde727717c67c400f6e17514f
+ms.sourcegitcommit: 91c7f1b525e0c22d938bc4080ba4ceac2483474f
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62978697"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "67032733"
 ---
 # <a name="windows-developer-account-in-visual-studio-subscriptions"></a>Visual Studio 訂用帳戶中的 Windows 開發人員帳戶
 
@@ -26,26 +26,26 @@ Windows 開發人員帳戶 (包含在所選取的 Visual Studio 訂用帳戶中)
 
 1. 登入 [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs)。
 
-2. 在 [工具] 區段找到 [Windows 開發人員帳戶] 磚，並按一下權益磚底部的 [取得代碼] 連結。  [Copy the code to your clipboard] (將程式碼複製至剪貼簿)，然後按一下 [啟用]。
+2. 在 [工具] 區段找到 [Windows 開發人員帳戶] 磚，並按一下權益磚底部的 [取得代碼]  連結。  [Copy the code to your clipboard] (將程式碼複製至剪貼簿)，然後按一下 [啟用]  。
    > [!div class="mx-imgBorder"]
    > ![Windows 開發人員權益磚](_img/vs-windows-dev/vs-windows-dev-tile.png)
 
-3. 在 [https://developer.microsoft.com](https://developer.microsoft.com) 網站上，您可以開始註冊程序。  按一下 [註冊] 繼續。
+3. 在 [https://developer.microsoft.com](https://developer.microsoft.com) 網站上，您可以開始註冊程序。  按一下 [註冊]  繼續。
    > [!div class="mx-imgBorder"]
    > ![Windows 開發人員權益註冊](_img/vs-windows-dev/vs-windows-dev-register1-cropped.png)
 
 4. 登入訂用帳戶。  如果您有多個帳戶，請選擇與您 Enterprise 訂用帳戶建立關聯的帳戶。
-5. 在下一頁上，選取您居住的國家或地區公司所在位置，然後按一下 [下一步]。
-6. 選取 [個別] 作為您的帳戶類型。
+5. 在下一頁上，選取您居住的國家或地區公司所在位置，然後按一下 [下一步]  。
+6. 選取 [個別]  作為您的帳戶類型。
 7. 建立發行者顯示名稱。  這會是您的客戶看到且與您的應用程式、增益集和服務建立關聯的唯一名稱。
-8. 提供您的連絡資訊和慣用電子郵件語言，然後按一下 [下一步]。
-9. 系統可能會要求您驗證密碼。  輸入它，然後按一下 [登入]。
-10. 在 [Registration - Payment] (註冊 - 付款) 頁面上，貼上您先前複製至 [促銷代碼] 欄位的程式碼。  此頁面會更新，以顯示 [不須付款]。  按 [ **下一步**]。
+8. 提供您的連絡資訊和慣用電子郵件語言，然後按一下 [下一步]  。
+9. 系統可能會要求您驗證密碼。  輸入它，然後按一下 [登入]  。
+10. 在 [Registration - Payment] (註冊 - 付款) 頁面上，貼上您先前複製至 [促銷代碼] 欄位的程式碼。  此頁面會更新，以顯示 [不須付款]  。  按 [ **下一步**]。
     > [!div class="mx-imgBorder"]
     > ![Windows 開發人員權益註冊](_img/vs-windows-dev/vs-windows-dev-promo-cropped.png)
 
-11. 檢閱您的帳戶資訊，並檢閱應用程式開發人員協議，然後按一下此核取方塊，指出您接受條款和條件。  然後按一下 [完成]。
-12. 按一下 [移至儀表板] 開始使用 Windows 開發人員帳戶！
+11. 檢閱您的帳戶資訊，並檢閱應用程式開發人員協議，然後按一下此核取方塊，指出您接受條款和條件。  然後按一下 [完成]  。
+12. 按一下 [移至儀表板]  開始使用 Windows 開發人員帳戶！
 
 ## <a name="eligibility"></a>資格
 
@@ -55,8 +55,8 @@ Windows 開發人員帳戶 (包含在所選取的 Visual Studio 訂用帳戶中)
 | Visual Studio Professional (Standard) | VL, Azure, 零售                                       | 包含                                                            |是|
 | Visual Studio Test Professional (標準訂用帳戶)                         | VL, 零售                                              | 無法使用                                            |  NA|
 | MSDN 平台 (標準)                                          | VL, 零售                                              |  無法使用                                            |  NA|
-| Visual Studio Dev Essentials | NA  | 無法使用                                            |  NA|
 | Visual Studio Enterprise、Visual Studio Professional (每月雲端) | Azure                                       | 無法使用                                                           |NA|
+||
 
 <sup>1</sup>  *包含：禁止轉售 (NFR)、FTE、Visual Studio 產業夥伴 (VSIP)、BizSpark、MCT Software & Services Developer。排除：Microsoft 合作夥伴網路 (MPN)、Imagine、最有價值專家 (MVP)、區域經理 (RD)、MCT 軟體與服務。*
 

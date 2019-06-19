@@ -7,12 +7,12 @@ ms.date: 12/19/2018
 ms.topic: conceptual
 description: 了解所選取 Visual Studio 訂用帳戶中所含的 Azure 社群權益。
 searchscope: VS Subscription
-ms.openlocfilehash: 154c0164f5126fc38d0e0af5ec5703faacb9f94f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: afeed3f51e9a7ac00885906711c943f63896c80e
+ms.sourcegitcommit: 91c7f1b525e0c22d938bc4080ba4ceac2483474f
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62948299"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "67032258"
 ---
 # <a name="azure-community"></a>Azure 社群
 
@@ -32,7 +32,7 @@ ms.locfileid: "62948299"
 開始使用 Azure 社群非常簡單。
 1. 登入 [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs)。
 
-2. 在 [支援] 區段中找到 [Azure 社群] 圖格，然後按一下 [取得協助] 連結。
+2. 在 [支援] 區段中找到 [Azure 社群] 圖格，然後按一下 [取得協助]  連結。
     > [!div class="mx-imgBorder"]
     >![Azure 社群磚](_img/vs-azure-community/vs-azure-community-tile.png)
 
@@ -53,9 +53,8 @@ Azure 社群權益的可用性取決於訂用帳戶層級，如下所示：
 |                          Visual Studio Professional (Standard)                          | VL, Azure, 零售 |   一年    |    是     |
 |                              Visual Studio Test Professional (標準訂用帳戶)                               |    VL, 零售     |   一年    |    是     |
 |                                       MSDN 平台 (標準)                                       |    VL, 零售     |   一年    |    是     |
-| Visual Studio Enterprise (每月雲端)、Visual Studio Professional (每月雲端)、NFR<sup>1</sup> |        全部        | 無法使用 |     否     |
-|                                     Visual Studio Dev Essentials                                      |        N/A        | 無法使用 |     否     |
-|                                                                                                       |                   |               |            |
+| Visual Studio Enterprise (每月雲端)、Visual Studio Professional (每月雲端)、NFR<sup>1</sup> |        All        | 無法使用 |     否     |
+
 
 <sup>1</sup>  *包含：禁止轉售 (NFR)、Microsoft FTE、最有價值專家 (MVP)、區域經理 (RD)、Visual Studio 產業夥伴 (VSIP)、BizSpark、Imagine、Microsoft 合格訓練人員 (MCT)*
 

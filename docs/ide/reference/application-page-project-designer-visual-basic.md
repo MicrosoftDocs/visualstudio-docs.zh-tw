@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2e918521a404914c2acc9a8fd6283815b1ee324e
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.openlocfilehash: 032bc54d5e904cf23d3e886c7dfeb38aa3ecfd93
+ms.sourcegitcommit: d4920babfc3d24a3fe1d4bf446ed3fe73b344467
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66744933"
+ms.lasthandoff: 06/17/2019
+ms.locfileid: "67160064"
 ---
 # <a name="application-page-project-designer-visual-basic"></a>Application Page, Project Designer (Visual Basic)
 
@@ -64,7 +64,7 @@ ms.locfileid: "66744933"
 > [!NOTE]
 > 第一次開啟該對話方塊時，會自動設定[必要條件對話方塊](../../ide/reference/prerequisites-dialog-box.md)中所列的必要條件套件。 如果您接著變更專案的目標架構，就必須手動指定必要條件以符合新的目標架構。
 
-如需詳細資訊，請參閱[如何：以一個 .NET Framework 版本為目標](../../ide/how-to-target-a-version-of-the-dotnet-framework.md)和 [Framework 目標概觀](../../ide/visual-studio-multi-targeting-overview.md)。
+如需詳細資訊，請參閱 [Framework 目標概觀](../../ide/visual-studio-multi-targeting-overview.md)。
 
 ### <a name="application-type"></a>應用程式類型
 
@@ -86,7 +86,7 @@ ms.locfileid: "66744933"
 
 如果選取 [啟用應用程式架構]  \(預設)，此清單的標題為 [啟動表單]  ，而且因為應用程式架構只支援啟動表單，而非物件，所以只會顯示表單。
 
-如果專案是 WPF 瀏覽器應用程式，此清單的標題為 [啟動 URI]  ，而且預設值為 **Page1.xaml**。 [啟動 URI]  清單可讓您指定應用程式在啟動時顯示的使用者介面資源 (XAML 項目)。 如需詳細資訊，請參閱<xref:System.Windows.Application.StartupUri%2A>。
+如果專案是 WPF 瀏覽器應用程式，此清單的標題為 [啟動 URI]  ，而且預設值為 **Page1.xaml**。 [啟動 URI]  清單可讓您指定應用程式在啟動時顯示的使用者介面資源 (XAML 項目)。 如需詳細資訊，請參閱 <xref:System.Windows.Application.StartupUri%2A>。
 
 如果清除 [啟用應用程式架構]  ，此清單會成為 [啟始物件]  ，並顯示具有 `Sub Main` 的表單和類別或模組。
 

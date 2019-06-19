@@ -7,12 +7,12 @@ ms.date: 12/19/2018
 ms.topic: conceptual
 description: 了解 Visual Studio 訂用帳戶中所含的指引對談權益。
 searchscope: VS Subscription
-ms.openlocfilehash: fd190dbd22f25dd14e18d11f73ee17327fc8c27d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 51fb2242c87ba3d091f62bc2271aea60b56f1283
+ms.sourcegitcommit: 91c7f1b525e0c22d938bc4080ba4ceac2483474f
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62947846"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "67032201"
 ---
 # <a name="concierge-chat"></a>指引對談
 
@@ -24,7 +24,7 @@ ms.locfileid: "62947846"
 透過「指引對談」服務取得協助非常簡單。
 1. 登入 [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs)。
 
-2. 在權益頁面的 [支援] 區段找到 [指引對談] 圖格，然後按一下 [立即對話]。
+2. 在權益頁面的 [支援] 區段找到 [指引對談] 圖格，然後按一下 [立即對話]  。
     > [!div class="mx-imgBorder"]
     > ![[指引對談] 磚](_img/vs-concierge-chat/vs-concierge-chat-tile.png)
 
@@ -45,7 +45,7 @@ ms.locfileid: "62947846"
 | Visual Studio Test Professional (標準訂用帳戶)                         | VL, 零售                                              | 可用                                             |  是          |
 | MSDN 平台 (標準)                                          | VL, 零售                                              | 可用                                              |  是          |
 | Visual Studio Enterprise、Visual Studio Professional (每月雲端) | Azure | 無法使用 | N/A |
-| Visual Studio Dev Essentials | NA  | 無法使用 |N/A |
+
 
 <sup>1</sup>  *包含：禁止轉售 (NFR)、Visual Studio 產業夥伴 (VSIP)、Microsoft Certified Trainer、BizSpark。排除：FTE、最有價值專家 (MVP)、區域經理 (RD)、Microsoft 合作夥伴網路 (MPN)、Imagine。*
 

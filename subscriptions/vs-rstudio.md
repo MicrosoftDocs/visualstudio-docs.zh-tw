@@ -7,12 +7,12 @@ ms.date: 04/02/2019
 ms.topic: conceptual
 description: 了解 Visual Studio Enterprise 訂用帳戶中所含的 RStudio Desktop 權益
 searchscope: VS Subscription
-ms.openlocfilehash: 59d0e3de91417969e904221e05b5fcd74d8ba44a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1b52d22cce30a668065e148494bb84568535eab7
+ms.sourcegitcommit: 91c7f1b525e0c22d938bc4080ba4ceac2483474f
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62947048"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "67031954"
 ---
 # <a name="the-rstudio-desktop-benefit-included-in-visual-studio-enterprise-subscriptions"></a>RStudio Desktop 的權益包含在 Visual Studio Enterprise 訂用帳戶中
 
@@ -24,11 +24,11 @@ RStudio 可用於開放原始碼和商業版本中，可在桌面 (Windows、 Ma
 > RStudio Desktop 權益僅在限定時間內提供。  若要使用權益，您必須在 2019 年 7 月 1 日之前啟動權益。
 
 ## <a name="activation-steps"></a>啟用步驟
-1. 若要啟用您的訂用帳戶，請連線到 [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs)，並按一下 RStudio 權益圖格上的 [取得代碼] 連結 (位於 [工具] 區段)。
+1. 若要啟用您的訂用帳戶，請連線到 [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs)，並按一下 RStudio 權益圖格上的 [取得代碼]  連結 (位於 [工具] 區段)。
    > [!div class="mx-imgBorder"]
    > ![RStudio 圖格](_img/vs-rstudio/vs-rstudio-tile.png)
 
-2. 您會收到已成功擷取優待券代碼的通知。  按一下 [啟用]。  如果您選擇 [取消]，您稍後仍可以啟動您的 RStudio 優惠。  取得程式碼之後，圖格上的連結會將變更為 [啟動]，您可以稍後按一下它以繼續執行啟用程序。
+2. 您會收到已成功擷取優待券代碼的通知。  按一下 [啟用]  。  如果您選擇 [取消]  ，您稍後仍可以啟動您的 RStudio 優惠。  取得程式碼之後，圖格上的連結會將變更為 [啟動]  ，您可以稍後按一下它以繼續執行啟用程序。
 
 3. 系統會將您重新導向至 Visual Studio 訂閱隨附的 RStudio 權益頁面。
 
@@ -38,7 +38,7 @@ RStudio 可用於開放原始碼和商業版本中，可在桌面 (Windows、 Ma
     > [!div class="mx-imgBorder"]
     > ![RStudio 登陸頁面](_img/vs-rstudio/vs-rstudio-landing-page.png)
 
-4. 您的權益的折價券代碼將在頁面上自動填入。  如果程式碼未自動套用，請按一下 [套用程式碼] 按鈕。 套用程式碼之後，頁面右上角的 [方案摘要] 將會反映折扣，並將 [今天的總計] 顯示為美金 $0.00 元。
+4. 您的權益的折價券代碼將在頁面上自動填入。  如果程式碼未自動套用，請按一下 [套用程式碼]  按鈕。 套用程式碼之後，頁面右上角的 [方案摘要] 將會反映折扣，並將 [今天的總計]  顯示為美金 $0.00 元。
 
 5. 完成頁面上的 [客戶資訊]、[出貨資訊]、[計費資訊]、[計費地址] 和 [其他資訊] 區段。
 
@@ -47,7 +47,7 @@ RStudio 可用於開放原始碼和商業版本中，可在桌面 (Windows、 Ma
 
 6. 按一下核取方塊接受**條款及條件**。
 
-7. 按一下 [下單]
+7. 按一下 [下單] 
 
     下單後，您會收到幾封重要的電子郵件，包括有關管理您的帳戶、存取支援和其他重要帳戶資訊的詳細資料。
 
@@ -57,25 +57,25 @@ RStudio 可用於開放原始碼和商業版本中，可在桌面 (Windows、 Ma
     > ![RStudio 安裝程式](_img/vs-rstudio/vs-rstudio-installer.png)
 
     > [!NOTE]
-    > 您必須在電腦上安裝有效的 R 才能啟動 RStudio。  如果您沒有安裝 R，您會收到下列錯誤訊息。  按一下 [是] 從官方 R Project 網站下載 R，或者在使用 RStudio 之前從其他來源下載並安裝 R。
+    > 您必須在電腦上安裝有效的 R 才能啟動 RStudio。  如果您沒有安裝 R，您會收到下列錯誤訊息。  按一下 [是]  從官方 R Project 網站下載 R，或者在使用 RStudio 之前從其他來源下載並安裝 R。
 
    > [!div class="mx-imgBorder"]
    > ![未安裝 R 的錯誤訊息](_img/vs-rstudio/vs-rstudio-not-installed.png)
 
-9. 在 [歡迎使用 RStudio 安裝精靈] 上，按一下 [下一步]。
+9. 在 [歡迎使用 RStudio 安裝精靈] 上，按一下 [下一步]  。
 
     > [!div class="mx-imgBorder"]
     > ![RStudio 安裝精靈](_img/vs-rstudio/vs-rstudio-wizard.png)
 
-10. 選擇目的資料夾或接受精靈建議的預設值，然後按一下 [下一步]。
+10. 選擇目的資料夾或接受精靈建議的預設值，然後按一下 [下一步]  。
     > [!div class="mx-imgBorder"]
     > ![RStudio 目的資料夾](_img/vs-rstudio/vs-rstudio-destination.png)
 
-11. 選擇 [開始] 功能表資料夾或接受預設值，然後按一下 [安裝]。
+11. 選擇 [開始] 功能表資料夾或接受預設值，然後按一下 [安裝]  。
     > [!div class="mx-imgBorder"]
     > ![RStudio 開始功能表資料夾](_img/vs-rstudio/vs-rstudio-start-folder.png)
 
-12. 安裝完成後，請按一下 [完成] 結束安裝程式。
+12. 安裝完成後，請按一下 [完成]  結束安裝程式。
     > [!div class="mx-imgBorder"]
     > ![RStudio 安裝完成](_img/vs-rstudio/vs-rstudio-complete.png)
 
@@ -91,9 +91,9 @@ RStudio 可用於開放原始碼和商業版本中，可在桌面 (Windows、 Ma
 |         Visual Studio Professional (Standard)          | VL, 零售 |   無法使用    | NA |
 |              Visual Studio Test Professional (標準訂用帳戶)              |    VL, 零售     |   無法使用    | NA |
 |                      MSDN 平台 (標準)                       |    VL, 零售     |   無法使用   | NA |
-|                     Visual Studio Dev Essentials                     |        NA         |   無法使用    |       NA       |
 | Visual Studio Enterprise、Visual Studio Professional (每月雲端) |       Azure       | 無法使用 |       NA       |
 |             Visual Studio Enterprise (NFR<sup>1</sup>)              |      計畫      | 無法使用 |       NA       |
+||
 
 <sup>1</sup>  *NFR 包含：禁止轉售 (NFR)、Visual Studio 產業夥伴 (VSIP)、BizSpark、MCT 軟體與服務開發人員、MCT 軟體與服務、最有價值專家 (MVP)、區域經理 (RD)、Microsoft 合作夥伴網路 (MPN)、FTE、Imagine。*
 

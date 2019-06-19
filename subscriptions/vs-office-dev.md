@@ -7,12 +7,12 @@ ms.date: 12/19/2018
 ms.topic: conceptual
 description: 了解 Visual Studio 訂用帳戶中所含的 Office 365 開發人員權益。
 searchscope: VS Subscription
-ms.openlocfilehash: 100b9992f13a419b9207adb9ba976b8f6417617f
-ms.sourcegitcommit: aeb1a1135dd789551e15aa5124099a5fe3f0f32b
+ms.openlocfilehash: 12851dcb19824ceccb16bacbba2fdeec29c7df47
+ms.sourcegitcommit: 91c7f1b525e0c22d938bc4080ba4ceac2483474f
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/04/2019
-ms.locfileid: "66501191"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "67032707"
 ---
 # <a name="the-office-365-developer-subscription-benefit-in-visual-studio-subscriptions"></a>Visual Studio 訂用帳戶的 Office 365 開發人員訂用帳戶權益
 
@@ -70,8 +70,8 @@ ms.locfileid: "66501191"
 | Visual Studio Professional (Standard) | VL, Azure, 零售                                       | 包含                                                            |是         |
 | Visual Studio Test Professional (標準訂用帳戶)                         | VL, 零售                                              | 無法使用                                             |  NA         |
 | MSDN 平台 (標準)                                          | VL, 零售                                              | 無法使用                                              | NA         |
-| Visual Studio Dev Essentials | NA  | 無法使用 |NA |
 | Visual Studio Enterprise、Visual Studio Professional (每月雲端) | Azure                                       | 無法使用                                                           |NA|
+||
 
 <sup>1</sup>  *包含：禁止轉售 (NFR)、Visual Studio 產業夥伴 (VSIP)、FTE、BizSpark、MCT Software & Services Developer、MCT Software & Services。排除：Microsoft 合作夥伴網路 (MPN)、Imagine、最有價值專家 (MVP)、區域經理 (RD)。*
 

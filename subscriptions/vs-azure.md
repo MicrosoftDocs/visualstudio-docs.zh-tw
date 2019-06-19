@@ -7,12 +7,12 @@ ms.date: 12/19/2018
 ms.topic: conceptual
 description: 了解如何啟用 Visual Studio 訂用帳戶所含的 Azure 權益。
 searchscope: VS Subscription
-ms.openlocfilehash: c47012e0a06c4e4b44833b0f6727d3c7a79fd13c
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: e48430ecfb2632c9ed2cd80341055a75c9d86461
+ms.sourcegitcommit: 91c7f1b525e0c22d938bc4080ba4ceac2483474f
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65685928"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "67032214"
 ---
 # <a name="use-microsoft-azure-in-visual-studio-subscriptions"></a>在 Visual Studio 訂用帳戶中使用 Microsoft Azure
 
@@ -30,7 +30,6 @@ ms.locfileid: "65685928"
 |              Visual Studio Professional 每月              |        無法使用        |                                                             |
 |                    Visual Studio Test Pro                    |     每月信用點數 $50 美元      |                             是                             |
 |                        MSDN 平台                        |     每月信用點數 $100 美元     |                             是                             |
-|                 Visual Studio Dev Essentials                 | 免費服務 + 信用點數 200 美元 | 免費服務為永久制。  信用點數 $200 美元僅限一次。 |
 |               Visual Studio Enterprise - NFR\*               |     每月信用點數 $150 美元     |                             是                             |
 |                Visual Studio Enterprise - FTE                |     每月信用點數 $150 美元     |                             是                             |
 |     Visual Studio Enterprise - Microsoft 合作夥伴網路     |     每月信用點數 $150 美元     |                             是                             |

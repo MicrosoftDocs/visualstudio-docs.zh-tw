@@ -7,12 +7,12 @@ ms.date: 12/19/2018
 ms.topic: conceptual
 description: 了解所選 Visual Studio 訂用帳戶中所含的 CloudPilot 權益
 searchscope: VS Subscription
-ms.openlocfilehash: 78c72f68c8553e7e80b6f26846c19ffcb5f91184
-ms.sourcegitcommit: 283f2dbce044a18e9f6ac6398f6fc78e074ec1ed
+ms.openlocfilehash: 38b857ee9ba385f3b7be12be725712f338b248f7
+ms.sourcegitcommit: 91c7f1b525e0c22d938bc4080ba4ceac2483474f
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/16/2019
-ms.locfileid: "65805371"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "67032588"
 ---
 # <a name="the-cloudpilot-benefit-in-visual-studio-subscriptions"></a>Visual Studio 訂用帳戶的 CloudPilot 權益
 
@@ -24,19 +24,19 @@ ms.locfileid: "65805371"
 
 1. 登入 [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs)。
 
-2. 在 [工具] 類別中，尋找 CloudPilot 權益磚，然後按一下 [取得程式碼]。
+2. 在 [工具] 類別中，尋找 CloudPilot 權益磚，然後按一下 [取得程式碼]  。
 
    > [!div class="mx-imgBorder"]
    > ![CloudPilot 權益磚](_img/vs-cloudpilot/vs-cloudpilot-tile-ent.png)
 
-0. 您會看到一則訊息，告知您已順利擷取程式碼。  按一下 [啟動]，隨即將您重新導向至 CloudPilot 頁面；您可以在其中繼續啟用程序。  (如果您未選擇立即啟用，可以隨時返回在訂用帳戶入口網站中的 CloudPilot 磚。  [取得程式碼] 連結會變更為 [啟用]，按一下即可進入啟用程序中的下一個步驟。)
+0. 您會看到一則訊息，告知您已順利擷取程式碼。  按一下 [啟動]  ，隨即將您重新導向至 CloudPilot 頁面；您可以在其中繼續啟用程序。  (如果您未選擇立即啟用，可以隨時返回在訂用帳戶入口網站中的 CloudPilot 磚。  [取得程式碼] 連結會變更為 [啟用]，按一下即可進入啟用程序中的下一個步驟。)
 
-0. 查看 CloudPilot 能為開發工作提供的權益。  準備好開始時，請按一下 [啟用] 按鈕。
+0. 查看 CloudPilot 能為開發工作提供的權益。  準備好開始時，請按一下 [啟用]  按鈕。
 
    > [!div class="mx-imgBorder"]
    > ![CloudPilot 登陸頁面](_img/vs-cloudpilot/vs-cloudpilot-landing.png)
 
-0. 若要建立您的帳戶並啟用 CloudPilot 訂用帳戶，請填妥 Web 表單中的連絡資訊，然後按一下 [註冊]。
+0. 若要建立您的帳戶並啟用 CloudPilot 訂用帳戶，請填妥 Web 表單中的連絡資訊，然後按一下 [註冊]  。
 
    > [!div class="mx-imgBorder"]
    > ![CloudPilot 註冊頁面](_img/vs-cloudpilot/vs-cloudpilot-register.png)
@@ -44,7 +44,7 @@ ms.locfileid: "65805371"
    > [!NOTE]
    > CloudPilot 權益的啟用限制為每組織十個，可從 Visual Studio Enterprise 或 Visual Studio Professional 訂用帳戶的任何組合中兌換。  如果您的組織已使用十個啟用，您就無法啟用 CloudPilot 權益，並會從 UnifyCloud 收到一封提供進一步資訊的電子郵件。
 
-0. 接下來，您會看到可讓您熟悉 CloudPilot 的產品頁面。  按一下右上角的 [瀏覽至 CloudPilot] 前往 CloudPilot 入口網站。
+0. 接下來，您會看到可讓您熟悉 CloudPilot 的產品頁面。  按一下右上角的 [瀏覽至 CloudPilot]  前往 CloudPilot 入口網站。
 
     > [!div class="mx-imgBorder"]
     > ![CloudPilot 產品頁面](_img/vs-cloudpilot/vs-cloudpilot-navigate.png)
@@ -64,7 +64,6 @@ ms.locfileid: "65805371"
 | Visual Studio Professional (Standard) | VL, Azure, 零售                                       | 1 個授權、30 天、一次掃描                                                            |  否。  僅提供給新訂閱者使用           |
 | Visual Studio Test Professional (標準訂用帳戶)                         | VL, 零售                                              | 無法使用                                             |  N/A           |
 | MSDN 平台 (標準)                                          | VL, 零售                                              | 無法使用                                              |  N/A          |
-| Visual Studio Dev Essentials | N/A  | 無法使用 | N/A |
 | Visual Studio Enterprise (Standard)  | NFR<sup>1</sup> |無法使用  | N/A |
 | Visual Studio Enterprise、Visual Studio Professional (每月雲端) | Azure | 無法使用 | N/A |
 
