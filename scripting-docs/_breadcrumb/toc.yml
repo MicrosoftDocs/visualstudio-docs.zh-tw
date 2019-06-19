@@ -12,7 +12,7 @@
           items: null
         - name: Windows 指令碼介面
           tocHref: /scripting/winscript/
-          topicHref: /scripting/winscript/windows-scripting-interfaces
+          topicHref: /scripting/winscript/windows-script-interfaces
           items:
             - name: 參考資料
               tocHref: /scripting/winscript/reference/
