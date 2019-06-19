@@ -1,22 +1,22 @@
 ---
 title: 使用適用於 C++ 的 Microsoft 單元測試架構
-ms.date: 05/20/2019
+ms.date: 06/13/2019
 ms.topic: conceptual
 ms.author: mblome
 manager: markl
 ms.workload:
 - cplusplus
 author: mikeblome
-ms.openlocfilehash: 56ed33ed5fa769a3bf830bcb2f57264c1a9ff531
-ms.sourcegitcommit: 0ef51e3517436a85cfb85bf492722d566ce602c4
+ms.openlocfilehash: bcd75724e5124c280d5c3e54bfe870041c432790
+ms.sourcegitcommit: ab06cde69d862440b4277bcd9bf02e7b50593a1b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "65934484"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67132135"
 ---
 # <a name="use-the-microsoft-unit-testing-framework-for-c-in-visual-studio"></a>在 Visual Studio 中使用適用於 C++ 的 Microsoft 單元測試架構
 
-適用於 C++ 的 Microsoft 單元測試架構預設隨附於 [使用 C++ 的桌面開發] 工作負載。
+適用於 C++ 的 Microsoft 單元測試架構預設隨附於 [使用 C++ 的桌面開發]  工作負載。
 
 ## <a name="separate_project"></a> 在個別專案中撰寫單元測試
 
@@ -28,9 +28,9 @@ ms.locfileid: "65934484"
 
 1. 修改專案屬性，以包含單元測試所需的標頭和程式庫檔案。
 
-   1. 在 [方案總管] 中，以滑鼠右鍵按一下您要測試之程式的專案節點，然後選擇 [屬性] > [組態屬性] > [VC++ 目錄]。
+   1. 在 [方案總管]  中，以滑鼠右鍵按一下您要測試之程式的專案節點，然後選擇 [屬性]   > [組態屬性]   > [VC++ 目錄]  。
 
-   2. 按一下下列資料列中的向下箭號，然後選擇 [\<編輯>]。 加入這些路徑：
+   2. 按一下下列資料列中的向下箭號，然後選擇 [\<編輯>]  。 加入這些路徑：
 
       | Directory | 屬性 |
       |-| - |
@@ -39,7 +39,7 @@ ms.locfileid: "65934484"
 
 2. 加入 C++ 單元測試檔案：
 
-   - 在 [方案總管] 中，以滑鼠右鍵按一下專案節點，然後選擇 [新增] > [新增項目] > [C++ 檔案 (.cpp)]。
+   - 在 [方案總管]  中，以滑鼠右鍵按一下專案節點，然後選擇 [新增]   > [新增項目]   > [C++ 檔案 (.cpp)]  。
 
 ## <a name="write-the-tests"></a>撰寫測試
 
@@ -47,17 +47,17 @@ ms.locfileid: "65934484"
 
 系統也已定義特殊巨集來初始化測試模組、類別和方法，以及在完成測試之後清除資源。 這些巨集會產生程式碼，在第一次存取類別或方法之前執行，以及在最後一個測試執行之後執行。 如需詳細資訊，請參閱[初始化和清除](microsoft-visualstudio-testtools-cppunittestframework-api-reference.md#Initialize_and_cleanup)。
 
-使用 [Assert](microsoft-visualstudio-testtools-cppunittestframework-api-reference.md#general_asserts) 類別中的靜態方法來定義測試條件。 使用 [Logger](microsoft-visualstudio-testtools-cppunittestframework-api-reference.md#logger) 類別將訊息寫入至 [輸出視窗]。 將屬性新增至測試方法
+使用 [Assert](microsoft-visualstudio-testtools-cppunittestframework-api-reference.md#general_asserts) 類別中的靜態方法來定義測試條件。 使用 [Logger](microsoft-visualstudio-testtools-cppunittestframework-api-reference.md#logger) 類別將訊息寫入至 [輸出視窗]  。 將屬性新增至測試方法
 
 ## <a name="run-the-tests"></a>執行測試
 
-1. 在 [測試] 功能表上，選擇 [Windows] > [測試總管]。
+1. 在 [測試]  功能表上，選擇 [Windows]   > [測試總管]  。
 
-1. 如果視窗中未顯示您所有的測試，請建置測試專案，方法是在**方案總管**中，以滑鼠右鍵按一下其節點，然後選擇 [建置] 或 [重建]。
+1. 如果視窗中未顯示您所有的測試，請建置測試專案，方法是在**方案總管**中，以滑鼠右鍵按一下其節點，然後選擇 [建置]  或 [重建]  。
 
-1. 在 [測試總管] 中，選擇 [全部執行]，或選取您要執行的特定測試。 以滑鼠右鍵按一下測試即可顯示其他選項，包括在啟用中斷點的偵錯模式中執行測試。
+1. 在 [測試總管]  中，選擇 [全部執行]  ，或選取您要執行的特定測試。 以滑鼠右鍵按一下測試即可顯示其他選項，包括在啟用中斷點的偵錯模式中執行測試。
 
-1. 在 [輸出視窗] 的下拉式清單中，選擇 [測試]，以檢視由 `Logger` 類別寫出的訊息：
+1. 在 [輸出視窗]  的下拉式清單中，選擇 [測試]  ，以檢視由 `Logger` 類別寫出的訊息：
 
    ![顯示測試訊息的 C++ 輸出視窗](media/cpp-test-output-window.png)
 

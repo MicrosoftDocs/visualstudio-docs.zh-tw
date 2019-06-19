@@ -7,12 +7,12 @@ ms.date: 12/19/2018
 ms.topic: conceptual
 description: 註冊以接收 Visual Studio 訂用帳戶中所含的 MSDN Magazine 訂用帳戶。
 searchscope: VS Subscription
-ms.openlocfilehash: 2710295390318dfa2e31b31a6a4aeaf3805b3647
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 0c659bdd7eb2eee0d1899eab5d5df850a5206e92
+ms.sourcegitcommit: 91c7f1b525e0c22d938bc4080ba4ceac2483474f
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62947342"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "67032845"
 ---
 # <a name="the-msdn-magazine-benefit-in-visual-studio-subscriptions"></a>Visual Studio 訂用帳戶中的 MSDN Magazine 權益
 
@@ -25,11 +25,11 @@ ms.locfileid: "62947342"
 數位版已可提供 Visual Studio Dev Essentials 成員使用。
 
 1. 若要存取 MSDN Magazine 數位版，請登入 [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs)。
-2. 在 [專業開發] 區段中，找出 MSDN Magazine 磚，並按一下 [存取]。
+2. 在 [專業開發] 區段中，找出 MSDN Magazine 磚，並按一下 [存取]  。
 
 ### <a name="printed-edition"></a>列印版
 1. 若要開始接收您的 MSDN Magazine 訂用帳戶，請登入 [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs)
-2. 在 [專業開發] 區段中，找出 MSDN Magazine 磚，並按一下 MSDN Magazine 訂用帳戶磚上的 [訂閱]。 (按一下磚右下角的 [!] 以存取數位版。)
+2. 在 [專業開發] 區段中，找出 MSDN Magazine 磚，並按一下 MSDN Magazine 訂用帳戶磚上的 [訂閱]  。 (按一下磚右下角的 [!] 以存取數位版。)
    > [!div class="mx-imgBorder"]
    > ![MSDN Magazine 權益磚](_img/vs-msdn/vs-msdn-tile.png)
 
@@ -37,7 +37,7 @@ ms.locfileid: "62947342"
    > [!div class="mx-imgBorder"]
    > ![MSDN Magazine 權益訂用帳戶](_img/vs-msdn/vs-msdn-subs-page-resized.png)
 
-4. 提供要求的連絡資訊，然後按一下 [提交]   (所選取雜誌的版本會出現在 [Magazine Subscription] (雜誌訂用帳戶) 區段中。  如果您已選擇印出的版本，則第一個選項是 [Yes!I want to receive 1 year (12 issues) of MSDN Magazine for FREE] (是! 我要免費接收 1 年 (12 個問題) 的 MSDN Magazine))。
+4. 提供要求的連絡資訊，然後按一下 [提交]   (所選取雜誌的版本會出現在 [Magazine Subscription] (雜誌訂用帳戶) 區段中。  如果您已選擇印出的版本，則第一個選項是 [Yes!  I want to receive 1 year (12 issues) of MSDN Magazine for FREE] (是! 我要免費接收 1 年 (12 個問題) 的 MSDN Magazine))。
    > [!div class="mx-imgBorder"]
    > ![MSDN Magazine 權益設定檔](_img/vs-msdn/vs-msdn-profile.png)
 
@@ -52,7 +52,7 @@ ms.locfileid: "62947342"
 | Visual Studio Test Professional (標準訂用帳戶)                         | VL, 零售                                              | 列印版                                             |  否。  僅提供給新訂閱者使用         |
 | MSDN 平台 (標準)                                          | VL, 零售                                              | 列印版                                              | 否。  僅提供給新訂閱者使用         |
 |Visual Studio Enterprise、Visual Studio Professional (每月雲端)   | Azure |無法使用      |  NA         |
-|Visual Studio Dev Essentials| NA |數位版       |  是|
+||
 
 <sup>1</sup>  *列印版：禁止轉售 (NFR)、Visual Studio 產業夥伴 (VSIP)、FTE、Microsoft Partner Network (Enterprise)、Imagine (Premium)。*
 

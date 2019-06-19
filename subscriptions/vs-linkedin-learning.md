@@ -7,12 +7,12 @@ ms.date: 12/19/2018
 ms.topic: conceptual
 description: 了解包含為所選取 Visual Studio 訂用帳戶中所含 LinkedIn Premium 訂用帳戶一部分的 LinkedIn Learning 權益。
 searchscope: VS Subscription
-ms.openlocfilehash: b6d60a5bedb960c2302a8823d1248b36849c604d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: eee217bf15a89d24799997c926d598288cec5277
+ms.sourcegitcommit: 91c7f1b525e0c22d938bc4080ba4ceac2483474f
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62948539"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "67032853"
 ---
 # <a name="the-linkedin-learning-benefit-in-visual-studio-subscriptions"></a>Visual Studio 訂用帳戶中的 LinkedIn Learning 權益
 
@@ -25,22 +25,22 @@ ms.locfileid: "62948539"
 啟用您的 LinkedIn Premium 訂用帳戶與 LinkedIn Learning 權益：
 1. 登入 [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs)。
 
-2. 在 [Education] (教育) 類別中找到 LinkedIn Learning 磚，然後按一下 [取得程式碼] 連結。
+2. 在 [Education] (教育) 類別中找到 LinkedIn Learning 磚，然後按一下 [取得程式碼]  連結。
    > [!div class="mx-imgBorder"]
    > ![LinkedIn Learning 權益磚](_img/vs-linkedin/vs-linkedin-3-month-tile.png)
 
-3. 如果您已有 LinkedIn 帳戶並自動登入，您會立即前往 LinkedIn Learning 權益啟用頁面。  如果您有 LinkedIn 帳戶但未自動登入，只要輸入您的使用者名稱和密碼，然後按一下 [登入] 即可。  請跳至[此步驟](#activate-your-offer)以啟用您的供應項目。
+3. 如果您已有 LinkedIn 帳戶並自動登入，您會立即前往 LinkedIn Learning 權益啟用頁面。  如果您有 LinkedIn 帳戶但未自動登入，只要輸入您的使用者名稱和密碼，然後按一下 [登入]  即可。  請跳至[此步驟](#activate-your-offer)以啟用您的供應項目。
 
 ### <a name="create-a-linkedin-account"></a>建立 LinkedIn 帳戶
-4. 如果您還沒有 LinkedIn 帳戶，請按一下 [立即加入]。
+4. 如果您還沒有 LinkedIn 帳戶，請按一下 [立即加入]  。
    > [!div class="mx-imgBorder"]
    > ![LinkedIn Learning 立即加入](_img/vs-linkedin/vs-linkedin-join-now.png)
 
-5. 輸入您的個人資訊，選擇使用者名稱和密碼，然後按一下 [立即加入]。
+5. 輸入您的個人資訊，選擇使用者名稱和密碼，然後按一下 [立即加入]  。
    > [!div class="mx-imgBorder"]
    > ![LinkedIn Learning 建立帳戶](_img/vs-linkedin/vs-linkedin-create-account.png)
 
-6. 指定您的國家/地區和郵遞區號，然後按一下 [Next] (下一步)。
+6. 指定您的國家/地區和郵遞區號，然後按一下 [Next] (下一步)  。
    > [!div class="mx-imgBorder"]
    > ![LinkedIn Learning 設定位置](_img/vs-linkedin/vs-linkedin-set-location.png)
 
@@ -52,11 +52,11 @@ ms.locfileid: "62948539"
    > [!div class="mx-imgBorder"]
    > ![LinkedIn Learning 興趣](_img/vs-linkedin/vs-linkedin-interests.png)
 
-9. 當您提供電子郵件地址時，您會收到一封包含確認碼的訊息。  此郵件的寄件者是 “Linkedin Messages”。  如果您在 [收件匣] 中找不到此郵件，請檢查 [垃圾郵件] 資料夾。  輸入郵件中的代碼，然後按一下 [Verify] (確認)。
+9. 當您提供電子郵件地址時，您會收到一封包含確認碼的訊息。  此郵件的寄件者是 “Linkedin Messages”。  如果您在 [收件匣] 中找不到此郵件，請檢查 [垃圾郵件] 資料夾。  輸入郵件中的代碼，然後按一下 [Verify] (確認)  。
    > [!div class="mx-imgBorder"]
    > ![LinkedIn Learning 驗證](_img/vs-linkedin/vs-linkedin-verify.png)
 
-10. 如果您想要從先前輸入的電子郵件帳戶匯入連絡人，您可以立即執行。  否則請按一下 [Skip] (略過)。 (如果選擇略過此步驟，系統會要求您確認選擇。  按一下 [Yes] (是)。)
+10. 如果您想要從先前輸入的電子郵件帳戶匯入連絡人，您可以立即執行。  否則請按一下 [Skip] (略過)  。 (如果選擇略過此步驟，系統會要求您確認選擇。  按一下 [Yes] (是)  。)
    > [!div class="mx-imgBorder"]
    > ![LinkedIn Learning 連絡人](_img/vs-linkedin/vs-linkedin-contacts.png)
 
@@ -66,20 +66,20 @@ ms.locfileid: "62948539"
 
 12. 根據您到目前為止所提供的喜好設定和個人資訊，您會看到選取的建議關聯以開始建立您的網路。  您可以選擇新增關聯，或略過此步驟。
 
-13. 若要將相片新增至您的個人資料，請按一下 [Upload photo] (上傳相片)。  否則您可以略過此步驟  (您一律可以稍後再新增相片)。
+13. 若要將相片新增至您的個人資料，請按一下 [Upload photo] (上傳相片)  。  否則您可以略過此步驟  (您一律可以稍後再新增相片)。
     > [!div class="mx-imgBorder"]
     > ![LinkedIn Learning 上傳相片](_img/vs-linkedin/vs-linkedin-photo.png)
 
-14. 您可以將 LinkedIn 應用程式下載至手機，以便在任何地方都能存取您的網路。  您可以傳送連結至手機，或是直接從 Microsoft Store 或 Google Play 下載。  您也可以按一下 [Next] (下一步) 暫時略過此步驟，稍後再下載應用程式。
+14. 您可以將 LinkedIn 應用程式下載至手機，以便在任何地方都能存取您的網路。  您可以傳送連結至手機，或是直接從 Microsoft Store 或 Google Play 下載。  您也可以按一下 [Next] (下一步)  暫時略過此步驟，稍後再下載應用程式。
     > [!div class="mx-imgBorder"]
     > ![LinkedIn Learning 上傳相片](_img/vs-linkedin/vs-linkedin-app.png)
 
 ### <a name="activate-your-offer"></a>啟用您的供應項目
-15. 現在您已登入 LinkedIn 帳戶或建立新帳戶，即準備好啟用 Premium 訂閱並開始享受 LinkedIn Learning。  按一下 [Activate your offer] (啟用您的供應項目)。
+15. 現在您已登入 LinkedIn 帳戶或建立新帳戶，即準備好啟用 Premium 訂閱並開始享受 LinkedIn Learning。  按一下 [Activate your offer] (啟用您的供應項目)  。
    > [!div class="mx-imgBorder"]
    > ![LinkedIn Learning 啟用](_img/vs-linkedin/vs-linkedin-Activate1.png)
 
-16. 您可以開始探索感興趣的技能。  從建議清單中選擇、搜尋其他技能，或按一下 [Skip] (略過) 繼續而不選擇技能。
+16. 您可以開始探索感興趣的技能。  從建議清單中選擇、搜尋其他技能，或按一下 [Skip] (略過)  繼續而不選擇技能。
    > [!div class="mx-imgBorder"]
    > ![LinkedIn Learning 技能](_img/vs-linkedin/vs-linkedin-skills.png)
 
@@ -95,7 +95,6 @@ ms.locfileid: "62948539"
 | Visual Studio Professional (Standard) | VL, Azure, 零售                                       | 3 個月                                                            |否。  僅提供給新訂閱者使用         |
 | Visual Studio Test Professional (標準訂用帳戶)                         | VL, 零售                                              | 3 個月                                             |  否。  僅提供給新訂閱者使用         |
 | MSDN 平台 (標準)                                          | VL, 零售                                              | 3 個月                                              | 否。  僅提供給新訂閱者使用         |
-| Visual Studio Dev Essentials | NA  | 無法使用 |NA|
 | Visual Studio Enterprise、Visual Studio Professional (每月雲端) | Azure                                       | 無法使用                                                           |NA|
 
 <sup>1</sup>  *包含：禁止轉售 (NFR)、Visual Studio 產業夥伴 (VSIP)。排除：Microsoft 合作夥伴網路 (MPN)、FTE、MCT 軟體與服務開發人員、BizSpark、Imagine、最有價值專家 (MVP)、區域經理 (RD)。MCT Software & Services。*

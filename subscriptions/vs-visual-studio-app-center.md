@@ -7,12 +7,12 @@ ms.date: 12/19/2018
 ms.topic: conceptual
 description: 了解 Visual Studio 訂用帳戶中所含的 Visual Studio App Center 權益。
 searchscope: VS Subscription
-ms.openlocfilehash: 0d9f673e0b78b708883beb797809eac1303e2ff6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 53b140bf425c184d62e4b4ff0af81b8ab8415021
+ms.sourcegitcommit: 91c7f1b525e0c22d938bc4080ba4ceac2483474f
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62810834"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "67032770"
 ---
 # <a name="visual-studio-app-center-in-visual-studio-subscriptions"></a>Visual Studio 訂用帳戶中的 Visual Studio App Center
 
@@ -26,15 +26,15 @@ App Center 是應用程式的任務控制機制。
 開始使用 Visual Studio App Center 非常簡單。
 1. 登入 [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs)。
 
-2. 尋找 Visual Studio App Center 圖格，然後按一下 [開始使用]。
+2. 尋找 Visual Studio App Center 圖格，然後按一下 [開始使用]  。
     > [!div class="mx-imgBorder"]
     > ![VS App Center 磚](_img/vs-app-center/vs-app-center-tile.png)
 
-3. 接著，建立帳戶。  您可以使用現有的 Microsoft、Google、GitHub 或 Facebook 帳戶來登入，或提供您的使用者名稱、電子郵件與密碼來建立新帳戶。  按一下 [建立帳戶] 以繼續。
+3. 接著，建立帳戶。  您可以使用現有的 Microsoft、Google、GitHub 或 Facebook 帳戶來登入，或提供您的使用者名稱、電子郵件與密碼來建立新帳戶。  按一下 [建立帳戶]  以繼續。
     > [!div class="mx-imgBorder"]
     > ![VS App Center 建立帳戶](_img/vs-app-center/vs-app-center-create-account.png)
 
-4. 這樣就全部完成了。  只要按一下 [新增組織] 或 [新增應用程式] 就可以開始！
+4. 這樣就全部完成了。  只要按一下 [新增組織]  或 [新增應用程式]  就可以開始！
     > [!div class="mx-imgBorder"]
     > ![VS App Center 入口網站](_img/vs-app-center/vs-app-center-portal.png)
 
@@ -46,7 +46,7 @@ App Center 是應用程式的任務控制機制。
 | Visual Studio Professional (標準、每月雲端) | VL, Azure, 零售                                       | 包含                                                            |是 |
 | Visual Studio Test Professional (標準訂用帳戶)                         | VL, 零售                                              | 包含                                                            |是 |
 | MSDN 平台 (標準)                                          | VL, 零售                                              | 包含                                                            |是 |
-| Visual Studio Dev Essentials | NA  | 包含                                                            |是 |
+||
 
 <sup>1</sup>  *包含：禁止轉售 (NFR)、FTE、Visual Studio 產業夥伴 (VSIP)、Imagine、Microsoft 合作夥伴網路 (MPN)、MCT 軟體與服務、MCT 軟體與服務開發人員、BizSpark、最有價值專家 (MVP)、區域經理 (RD)。*
 
@@ -61,7 +61,7 @@ App Center 是應用程式的任務控制機制。
 答：App Center 需要一些較舊瀏覽器不提供的較新功能。  若不支援您的瀏覽器，請依照這些步驟執行：
 1. 開啟不同的瀏覽器，例如 Microsoft Edge 或最新版本的 Google Chrome 或 Firefox，或 Safari。
 2. 連線至 Visual Studio [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) 並登入。
-3. 現在按一下 Visual Studio App Center 圖格上的 [開始使用] 連結。
+3. 現在按一下 Visual Studio App Center 圖格上的 [開始使用]  連結。
 
 您現在應該可以存取 App Center 入口網站並建立您的帳戶。
 

@@ -7,12 +7,12 @@ ms.date: 09/19/2018
 ms.topic: conceptual
 description: 了解如何以 Visual Studio 訂閱者的身分使用 Azure DevOps。
 searchscope: VS Subscription
-ms.openlocfilehash: dbd08914123455fe0fc9db6dd6927dfe9e49b22e
-ms.sourcegitcommit: 13ab9a5ab039b070b9cd9251d0b83dd216477203
+ms.openlocfilehash: 99f2ca88f5cc5c543f546ff71a8f414f44adf177
+ms.sourcegitcommit: 91c7f1b525e0c22d938bc4080ba4ceac2483474f
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66177715"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "67032226"
 ---
 # <a name="azure-devops-benefits-for-visual-studio-subscribers"></a>Visual Studio 訂閱者的 Azure DevOps 權益
 
@@ -30,10 +30,11 @@ ms.locfileid: "66177715"
 | Visual Studio Professional (標準、每月雲端) | VL, Azure, 零售,                                        | Azure Boards & Repos (基本)、Azure Artifacts<sup>2</sup>                                                            |  是          |
 | Visual Studio Test Professional (標準訂用帳戶)                         | VL, 零售                                              | Azure Boards & Repos (基本)、Azure Test Plans                                              |  是          |
 | MSDN 平台 (標準)                                          | VL, 零售                                              | Azure Boards & Repos (基本)、Azure Test Plans                                              |  是          |
+||
 
 <sup>1</sup>  *包含：禁止轉售 (NFR)、最有價值專家 (MVP)、區域經理 (RD)、Visual Studio 產業夥伴 (VSIP)、Microsoft 合作夥伴網路 (企業版)、BizSpark、MCT 軟體與服務開發人員。排除：MCT Software & Services、Imagine。*
 
-<sup>2</sup> 免費包含 2GB
+<sup>2</sup> 免費包含 2GB 
 
 
 

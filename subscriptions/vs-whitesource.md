@@ -7,12 +7,12 @@ ms.date: 12/19/2018
 ms.topic: conceptual
 description: 了解如何啟用 Visual Studio 訂用帳戶所含的 WhiteSource Bolt 訂用帳戶。
 searchscope: VS Subscription
-ms.openlocfilehash: ab373a21924aaac1a2a5660ed3032c69f04260e1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 773284a163004958dbf89aea871414105792b338
+ms.sourcegitcommit: 91c7f1b525e0c22d938bc4080ba4ceac2483474f
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62810915"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "67031929"
 ---
 # <a name="whitesource-bolt-in-visual-studio-subscriptions"></a>Visual Studio 訂用帳戶中的 WhiteSource Bolt
 
@@ -22,40 +22,40 @@ ms.locfileid: "62810915"
 
 1. 若要啟用 WhiteSource Bolt 優點，請登入 [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs)。
 
-2. 在 [工具] 區段找到 [WhiteSource Bolt] 磚，並按一下權益磚底部的 [取得代碼] 連結。
+2. 在 [工具] 區段找到 [WhiteSource Bolt] 磚，並按一下權益磚底部的 [取得代碼]  連結。
    > [!div class="mx-imgBorder"]
    > ![WhiteSource 權益磚](_img/vs-whitesource/vs-whitesource-tile.png)
 
-3. 您會收到顯示啟用代碼的通知。  **將程式碼複製至剪貼簿**，然後按一下 [啟用]。
+3. 您會收到顯示啟用代碼的通知。  **將程式碼複製至剪貼簿**，然後按一下 [啟用]  。
    > [!div class="mx-imgBorder"]
    > ![WhiteSource 權益程式碼](_img/vs-whitesource/vs-whitesource-code.png)
 
-4. 在 WhiteSource 網頁上，按一下 [啟用] 按鈕，或向下捲動至頁面的 [啟用您的帳戶] 區段。
+4. 在 WhiteSource 網頁上，按一下 [啟用]  按鈕，或向下捲動至頁面的 [啟用您的帳戶]  區段。
    > [!div class="mx-imgBorder"]
    > ![WhiteSource 權益啟用](_img/vs-whitesource/vs-whitesource-activate-page-cropped.png)
 
-5. 在頁面的 [啟用您的帳戶] 區段中，將會引導您完成四個步驟：
+5. 在頁面的 [啟用您的帳戶]  區段中，將會引導您完成四個步驟：
 
    - 從 Microsoft Visual Studio Marketplace 中，[安裝](https://marketplace.visualstudio.com/items?itemName=whitesource.ws-bolt) WhiteSource Bolt 延伸模組。 如果您沒有權限可以安裝延伸模組，請參閱[安裝 Azure DevOps Services 的免費延伸模組](/azure/devops/marketplace/install-vsts-extension?view=vsts)。
 
-如果您要使用 Azure DevOps Services，請按一下綠色 [安裝] 按鈕，或 Team Foundation Server 的 [下載] 按鈕。  在此範例中，我們將使用 Azure DevOps Services。
+如果您要使用 Azure DevOps Services，請按一下綠色 [安裝]  按鈕，或 Team Foundation Server 的 [下載]  按鈕。  在此範例中，我們將使用 Azure DevOps Services。
 > [!div class="mx-imgBorder"]
 > ![WhiteSource 權益安裝延伸模組](_img/vs-whitesource/vs-whitesource-download-install.png)
 
-- 接下來，選取您希望使用的 Azure DevOps 組織，然後按一下 [確認]。  (如果尚未設定 Azure DevOps Services，請前往[權益](https://my.visualstudio.com/benefits)頁面並啟用您的 Azure DevOps Services 權益。)
+- 接下來，選取您希望使用的 Azure DevOps 組織，然後按一下 [確認]  。  (如果尚未設定 Azure DevOps Services，請前往[權益](https://my.visualstudio.com/benefits)頁面並啟用您的 Azure DevOps Services 權益。)
 
 > [!div class="mx-imgBorder"]
 > ![WhiteSource 權益確認帳戶](_img/vs-whitesource/vs-whitesource-confirm-account.png)
 
-- 您會收到延伸模組已安裝並可供使用的確認。  按一下 [開始使用]，返回 WhiteSource Bolt 頁面並繼續。
+- 您會收到延伸模組已安裝並可供使用的確認。  按一下 [開始使用]  ，返回 WhiteSource Bolt 頁面並繼續。
 > [!div class="mx-imgBorder"]
 > ![WhiteSource 權益安裝完成](_img/vs-whitesource/vs-whitesource-install-complete.png)
 
-5. 開啟您的 Azure DevOps 專案儀表板，按一下 [Azure Pipelines] 功能表，然後選擇 [WhiteSource Bolt]。
+5. 開啟您的 Azure DevOps 專案儀表板，按一下 [Azure Pipelines]  功能表，然後選擇 [WhiteSource Bolt]  。
    > [!div class="mx-imgBorder"]
    > ![WhiteSource 權益新增延伸模組](_img/vs-whitesource/vs-whitesource-installed-cropped.png)
 
-6. 從 WhiteSource Bolt 權益磚貼上啟用代碼，然後按一下 [啟用]。 每個啟用代碼都只能用來啟用一個專案。
+6. 從 WhiteSource Bolt 權益磚貼上啟用代碼，然後按一下 [啟用]  。 每個啟用代碼都只能用來啟用一個專案。
    > [!div class="mx-imgBorder"]
    > ![WhiteSource 權益啟用碼](_img/vs-whitesource/vs-whitesource-activate-code-cropped.png)
 
@@ -78,8 +78,8 @@ ms.locfileid: "62810915"
 | Visual Studio Professional (Standard) | VL, Azure, 零售                                       | 無法使用                                                           |NA         |
 | Visual Studio Test Professional (標準訂用帳戶)                         | VL, 零售                                              | 無法使用                                             |  NA         |
 | MSDN 平台 (標準)                                          | VL, 零售                                              | 無法使用                                              | NA         |
-| Visual Studio Dev Essentials | NA  | 無法使用 |NA |
 | Visual Studio Enterprise、Visual Studio Professional (每月雲端) | Azure                                       | 無法使用                                                           |NA|
+||
 
 <sup>1</sup>  *包含：Microsoft 合作夥伴網路 (Enterprise)。排除：其他禁止轉售 (NFR)、Visual Studio 產業夥伴 (VSIP)、FTE、MCT 軟體與服務開發人員、BizSpark、Imagine、最有價值專家 (MVP)、區域經理 (RD)、MCT 軟體與服務、Microsoft 合作夥伴網路 (專業版)。*
 

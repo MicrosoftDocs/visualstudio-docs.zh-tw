@@ -7,12 +7,12 @@ ms.date: 12/19/2018
 ms.topic: conceptual
 description: 了解 Visual Studio 訂用帳戶中所含的 Enterprise Mobility + Security 權益。
 searchscope: VS Subscription
-ms.openlocfilehash: d670db0d083c4b8f32f970c790859a7c82e5dff1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 053e7463bbbe3649eaed20fa42b80f91c745b8cb
+ms.sourcegitcommit: 91c7f1b525e0c22d938bc4080ba4ceac2483474f
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62948863"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "67032145"
 ---
 # <a name="enterprise-mobility--security-ems-in-visual-studio-subscriptions"></a>Visual Studio 訂用帳戶的 Enterprise Mobility + Security (EMS)
 
@@ -27,23 +27,23 @@ Visual Studio Enterprise 年度雲端和標準訂用帳戶包含 Enterprise Mobi
 
 1. 登入 [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs)。
 
-2. 在 [工具] 區段中找出 [Enterprise Mobility & Security] 磚，並按一下位於磚底部的 [取得代碼] 連結。   您會收到已成功擷取代碼的通知。  按一下 [啟用]。
+2. 在 [工具] 區段中找出 [Enterprise Mobility & Security] 磚，並按一下位於磚底部的 [取得代碼]  連結。   您會收到已成功擷取代碼的通知。  按一下 [啟用]  。
    > [!div class="mx-imgBorder"]
    > ![EMS 權益磚](_img/vs-ems/vs-ems-tile.png)
 
-3. 在 Enterprise Mobility + Security E5 頁面上，您可以使用現有訂用帳戶登入，或建立新的訂用帳戶。  若要建立新帳戶，請完成要求的資訊，然後按一下 [下一步]。
+3. 在 Enterprise Mobility + Security E5 頁面上，您可以使用現有訂用帳戶登入，或建立新的訂用帳戶。  若要建立新帳戶，請完成要求的資訊，然後按一下 [下一步]  。
    > [!div class="mx-imgBorder"]
    > ![EMS 權益建立帳戶](_img/vs-ems/vs-ems-create-account-cropped.png)
 
-4. 建立您的使用者識別碼和密碼。  按一下 [Create my account] (建立我的帳戶) 繼續。
+4. 建立您的使用者識別碼和密碼。  按一下 [Create my account] (建立我的帳戶)  繼續。
    > [!div class="mx-imgBorder"]
    > ![EMS 權益建立使用者識別碼](_img/vs-ems/vs-ems-userID-cropped.png)
 
-5. 接下來，透過電話或簡訊，提供電話號碼來接收驗證碼。  輸入代碼，然後按一下 [下一步]。
+5. 接下來，透過電話或簡訊，提供電話號碼來接收驗證碼。  輸入代碼，然後按一下 [下一步]  。
    > [!div class="mx-imgBorder"]
    > ![EMS 權益驗證](_img/vs-ems/vs-ems-robot-cropped.png)
 
-6. 下一頁會顯示您的登入頁面和使用者識別碼。  儲存該資訊供日後使用。  按一下 [您已準備就緒...]
+6. 下一頁會顯示您的登入頁面和使用者識別碼。  儲存該資訊供日後使用。  按一下 [您已準備就緒...] 
    > [!div class="mx-imgBorder"]
    > ![EMS 權益已建立帳戶](_img/vs-ems/vs-ems-save-info-cropped.png)
 
@@ -58,7 +58,6 @@ Visual Studio Enterprise 年度雲端和標準訂用帳戶包含 Enterprise Mobi
 | Visual Studio Test Professional (標準訂用帳戶)                         | VL, 零售                                              | 無法使用                                             |  N/A          |
 | MSDN 平台 (標準)                                          | VL, 零售                                              | 無法使用                                              |  N/A          |
 | Visual Studio Enterprise、Visual Studio Professional (每月雲端) | Azure | 無法使用 | N/A |
-| Visual Studio Dev Essentials | N/A  | 無法使用 |N/A |
 
 <sup>1</sup>  *包含：禁止轉售 (NFR)、Visual Studio 產業夥伴 (VSIP)、Microsoft Partner Network (MPN)、FTE、MCT Software & Services Developer、BizSpark。排除：最有價值專家 (MVP)、區域經理 (RD)、MCT 軟體與服務、Imagine、Microsoft 合作夥伴網路 (專業版)。*
 

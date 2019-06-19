@@ -7,42 +7,42 @@ ms.date: 12/19/2018
 ms.topic: conceptual
 description: 了解某些 Visual Studio 訂用帳戶中所含的 Office 365 權益。
 searchscope: VS Subscription
-ms.openlocfilehash: 41f30d01dab1adf98d50789c4ebd418a7f002fb8
-ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.openlocfilehash: 33e70c6208505df175161b248a60e0527f7b2a6b
+ms.sourcegitcommit: 91c7f1b525e0c22d938bc4080ba4ceac2483474f
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66263118"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "67032835"
 ---
 # <a name="office-365-proplus-in-visual-studio-subscriptions"></a>Visual Studio 訂用帳戶中的 Office 365 專業增強版
 
-建立您最好的作品。 使用永遠都會更新的應用程式在任何地方工作。 Office 365 專業增強版是包含 Word、Excel、PowerPoint、OneNote、Outlook、Publisher 及 Access (Publisher 與 Access 僅於 PC 上提供) 等優質應用程式的訂閱服務。 應用程式可以安裝在多部裝置上，包括電腦、Mac、iPad、iPhone、Android 平板電腦與 Android 手機。 Office 365 也隨附許多服務 (例如 1TB 的 OneDrive 儲存空間、每個月 60 分鐘 Skype，以及 Microsoft 聊天和電話支援)。 擁有訂用帳戶，您就可以取得最新版的應用程式，並且在有更新時自動收到更新。
+建立您最好的作品。 使用永遠都會更新的應用程式在任何地方工作。 Office 365 專業增強版是包含 Word、Excel、PowerPoint、OneNote、Outlook、Publisher 及 Access (Publisher 與 Access 僅於 PC 上提供) 等優質應用程式的訂閱服務。 應用程式可以安裝在多部裝置上，包括電腦、Mac、iPad、iPhone、Android 平板電腦與 Android 手機。 擁有訂用帳戶，您就可以取得最新版的應用程式，並且在有更新時自動收到更新。
 
 ## <a name="getting-started-with-office-365-proplus"></a>開始使用 Office 365 專業增強版
 
 遵循下列步驟以下載並啟用 Office 365 專業增強版：
 1. 登入您的 Visual Studio Enterprise 訂用帳戶。
-2. 按一下 [下載] 索引標籤。
+2. 按一下 [下載]  索引標籤。
 3. 您會看到一份精選下載的清單。 在 Office 清單中，選擇 **Office 365**。
    > [!div class="mx-imgBorder"]
    > ![Office 365 下載](_img/vs-office365/vs-office365-downloads.png)
-0. 若要安裝 Office 365 專業增強版，您需要產品金鑰。  按一下 Office 365 清單下的 [取得金鑰] 連結。
+0. 若要安裝 Office 365 專業增強版，您需要產品金鑰。  按一下 Office 365 清單下的 [取得金鑰]  連結。
    > [!div class="mx-imgBorder"]
    > ![Office 365 取得產品金鑰](_img/vs-office365/vs-office365-get-key.png)
-0. 飛出視窗會顯示您已領取的任何金鑰，以及您可以使用的金鑰。  若要取得新的金鑰，請按一下 [Office Professional Plus 2019] 清單下的 [領取金鑰]。
+0. 飛出視窗會顯示您已領取的任何金鑰，以及您可以使用的金鑰。  若要取得新的金鑰，請按一下 [Office Professional Plus 2019]  清單下的 [領取金鑰]  。
    > [!div class="mx-imgBorder"]
    > ![Office 365 領取產品金鑰](_img/vs-office365/vs-office365-claim-key.png)
 0. 記錄您剛才索取的金鑰。 (您可以隨時返回此清單再次查看)。
 0. 關閉飛出視窗。
-0. 按一下 [下載] 按鈕。
+0. 按一下 [下載]  按鈕。
    > [!div class="mx-imgBorder"]
    > ![Office 365 開始下載](_img/vs-office365/vs-office365-download-button.png)
-0. 使用 Microsoft 帳戶登入。 (若您已登入，請按一下 [下一步])。
-0. 輸入您的產品金鑰、國家/地區或區域，以及語言，然後按一下 [下一步]。
+0. 使用 Microsoft 帳戶登入。 (若您已登入，請按一下 [下一步]  )。
+0. 輸入您的產品金鑰、國家/地區或區域，以及語言，然後按一下 [下一步]  。
    > [!div class="mx-imgBorder"]
    > ![Office 365 輸入產品金鑰](_img/vs-office365/vs-office365-enter-key.png)
-0. 再按一下 [下一步]。
-0. 按一下 [安裝] 以安裝 Office 應用程式。
+0. 再按一下 [下一步]  。
+0. 按一下 [安裝]  以安裝 Office 應用程式。
 
 ## <a name="next-steps"></a>後續步驟
 
@@ -58,7 +58,7 @@ ms.locfileid: "66263118"
 | Visual Studio Test Professional (標準訂用帳戶)                         | VL, 零售                                              | 無法使用                                             |  N/A          |
 | MSDN 平台 (標準)                                          | VL, 零售                                              | 無法使用                                              |  N/A          |
 | Visual Studio Enterprise、Visual Studio Professional (每月雲端) | Azure | 無法使用 | N/A |
-| Visual Studio Dev Essentials | N/A  | 無法使用 |N/A |
+|  |
 
 <sup>1</sup>  *包含：禁止轉售 (NFR)、Visual Studio 產業夥伴 (VSIP)、Microsoft 合作夥伴網路 (MPN)、FTE、MCT 軟體與服務開發人員、BizSpark、最有價值專家 (MVP)、區域經理 (RD)、MCT 軟體與服務、Imagine、Microsoft 合作夥伴網路。*
 

@@ -7,12 +7,12 @@ ms.date: 2/13/2019
 ms.topic: conceptual
 description: 了解如何啟用 Visual Studio 訂用帳戶所包含的技術支援權益。
 searchscope: VS Subscription
-ms.openlocfilehash: e9b0d4c829f2ff6605885a26eec0a3ebd34282dd
-ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
+ms.openlocfilehash: 238fd0b4c79e5fb99c629d82386676ec175a2a17
+ms.sourcegitcommit: 91c7f1b525e0c22d938bc4080ba4ceac2483474f
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/30/2019
-ms.locfileid: "66402023"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "67032801"
 ---
 # <a name="activate-and-use-the-technical-support-benefit-in-visual-studio-subscriptions"></a>啟用並使用 Visual Studio 訂用帳戶中的技術支援權益
 
@@ -28,7 +28,7 @@ ms.locfileid: "66402023"
 
 ## <a name="how-to-activate-the-benefit"></a>如何啟用權益
 
-1. 前往 https://my.visualstudio.com/Benefits，向下捲動至 [支援] 區段，然後在 [技術支援] 磚上，按一下 [Chat to activate] \(聊天啟用\)  。
+1. 前往 https://my.visualstudio.com/Benefits ，向下捲動至 [支援] 區段，然後在 [技術支援] 磚上，按一下 [Chat to activate] \(聊天啟用\)  。
     > [!div class="mx-imgBorder"]
     > ![技術支援權益磚](_img/vs-tech-support/vs-tech-support-tile.png)
 2. 這會起始您與客戶代表的聊天工作階段；客戶代表可建立您的**合約識別碼**和**存取識別碼**，並透過電子郵件將這些識別碼提供給您以作為記錄。
@@ -116,8 +116,8 @@ ms.locfileid: "66402023"
 | Visual Studio Professional (Standard) | VL、Azure、零售、挑選過的 NFR<sup>2</sup>                                        | 2 個事件                                                          |是         |
 | Visual Studio Test Professional (標準訂用帳戶)                         | VL, 零售                                              | 2 個事件                                             |  是         |
 | MSDN 平台 (標準)                                          | VL, 零售                                              | 2 個事件                                               | 是         |
-| Visual Studio Dev Essentials | NA | 無法使用 |NA|
 | Visual Studio Enterprise、Visual Studio Professional (每月雲端) | Azure                                       | 無法使用                                                           |NA|
+||
 
 <sup>1</sup> *包含：Imagine Premium，BizSpark。排除：禁止轉售 (NFR)、Visual Studio 產業夥伴 (VSIP)、Microsoft 合作夥伴網路 (MPN)、FTE、MCT 軟體與服務開發人員、Imagine 標準版、最有價值專家 (MVP)、區域經理 (RD)、MCT 軟體與服務。*
 
