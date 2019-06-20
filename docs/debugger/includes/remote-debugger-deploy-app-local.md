@@ -9,15 +9,15 @@ ms.date: 05/23/2018
 ms.author: mikejo
 ms.custom: include file
 ms.openlocfilehash: 3fa0569739ee81ec4b2aa0eec8157068ffc949cd
-ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
+ms.sourcegitcommit: b468d71052a1b8a697f477ab23a3644de139f1e9
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "65839746"
+ms.lasthandoff: 06/19/2019
+ms.locfileid: "67256274"
 ---
 1. 中**方案總管**，以滑鼠右鍵按一下專案節點，然後選取**發佈**(Web form**發佈的 Web 應用程式**)。
 
-    如果您之前已設定任何發行設定檔，[發行] 窗格會隨即出現。 按一下 **新的設定檔**。
+    如果您之前已設定任何發行設定檔，[發行]  窗格會隨即出現。 按一下 **新的設定檔**。
 
 1. 在 **發行**對話方塊方塊中，選取**資料夾**，按一下**瀏覽**，並建立新的資料夾， **C:\Publish**。
 
@@ -34,7 +34,7 @@ ms.locfileid: "65839746"
     > [!NOTE]
     > 如果您使用的發行組建時，您停用在發行時，偵錯 web.config 檔案中。
 
-1. 按一下 [發行] 。
+1. 按一下 [發行]  。
 
     ![RemoteDBG_Publish_Debug_Config](../media/remotedbg_publish_debug_config.png "RemoteDBG_Publish_Debug_Config")
 

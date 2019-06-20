@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 43b76ad81a2c075a11ff55dcbd7fbc5e8a4b3fe7
-ms.sourcegitcommit: ba5e072c9fedeff625a1332f22dcf3644d019f51
+ms.openlocfilehash: 315b24d384a1e3576af6590923c0e546785918ae
+ms.sourcegitcommit: b468d71052a1b8a697f477ab23a3644de139f1e9
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/31/2019
-ms.locfileid: "66431848"
+ms.lasthandoff: 06/19/2019
+ms.locfileid: "67255989"
 ---
 # <a name="frequently-asked-questions-for-snapshot-debugging-in-visual-studio"></a>Visual Studio 中快照集偵錯的常見問題集
 
@@ -169,7 +169,7 @@ ms.locfileid: "66431848"
     - SNAPSHOTDEBUGGER_EXTENSION_VERSION
 
     > [!WARNING]
-    > 應用程式設定的任何變更將會起始應用程式重新啟動。 關於應用程式設定的詳細資訊[此處](https://docs.microsoft.com/azure/app-service/web-sites-configure#app-settings)。 
+    > 應用程式設定的任何變更將會起始應用程式重新啟動。 如需有關應用程式設定的詳細資訊，請參閱[在 Azure 入口網站中設定 App Service 應用程式](/azure/app-service/web-sites-configure)。
 
 供 AKS 使用：
 1. 更新您的 Dockerfile，以移除對應的章節[上的 Docker 映像 Visual Studio 的快照集偵錯工具](https://github.com/Microsoft/vssnapshotdebugger-docker)。
