@@ -2,11 +2,11 @@
   href: index.md
 - name: 受控碼的程式碼分析
   items:
-    - name: 概觀
+    - name: 總覽
       href: code-analysis-for-managed-code-overview.md
     - name: Roslyn 分析器 (來源分析)
       items:
-        - name: 概觀
+        - name: 總覽
           displayName: 'roslyn analyzers, source analysis'
           href: roslyn-analyzers-overview.md
         - name: 安裝
@@ -19,8 +19,10 @@
           href: analyzers-faq.md
     - name: Binary 分析器 (靜態程式碼分析)
       items:
-        - name: 概觀
+        - name: 總覽
           displayName: 'static code analysis, binary analysis'
+          href: static-code-analysis-for-managed-code-overview.md
+        - name: 靜態程式碼分析逐步解說
           href: walkthrough-analyzing-managed-code-for-code-defects.md
         - name: 移轉
           href: fxcop-analyzers.yml
@@ -36,15 +38,13 @@
               href: how-to-customize-the-code-analysis-dictionary.md
         - name: 隱藏
           items:
-            - name: 隱藏警告
-              href: in-source-suppression-overview.md
-            - name: 隱藏所產生之程式碼的程式碼分析警告
+            - name: 隱藏所產生程式碼的靜態程式碼分析警告
               href: how-to-suppress-code-analysis-warnings-for-generated-code.md
         - name: 程式碼分析應用程式錯誤
           items:
             - name: 程式碼分析原則錯誤
               href: code-analysis-policy-errors.md
-            - name: 概觀
+            - name: 總覽
               href: code-analysis-application-errors.md
             - name: CA0001
               href: ca0001.md
@@ -100,16 +100,28 @@
               href: ca0505.md
             - name: FxCopCmd 錯誤
               href: fxcopcmd-errors.md
+        - name: 簽入原則
+          items:
+            - name: 如何建立或更新原則中的檢查
+              href: how-to-create-or-update-standard-code-analysis-check-in-policies.md
+            - name: 實作程式碼分析簽入原則
+              href: implementing-custom-code-analysis-check-in-policies-for-managed-code.md
+            - name: 強制執行容易維護的程式碼
+              href: how-to-enforce-maintainable-code-with-a-code-analysis-check-in-policy.md
+            - name: 使用簽入原則同步處理專案規則集
+              href: how-to-synchronize-code-project-rule-sets-with-team-project-check-in-policy.md
+            - name: 版本相容性
+              href: version-compatibility-for-code-analysis-check-in-policies.md
     - name: FxCop 分析器
       items:
-        - name: 概觀
+        - name: 總覽
           displayName: fxcop analyzers
           href: fxcop-analyzers.yml
         - name: 安裝
           href: install-fxcop-analyzers.md
         - name: Configuration
           items:
-            - name: 概觀
+            - name: 總覽
               href: configure-fxcop-analyzers.md
             - name: EditorConfig 選項
               href: fxcop-analyzer-options.md
@@ -117,13 +129,13 @@
           href: fxcop-analyzers-faq.md
     - name: 從靜態分析移轉到 FxCop 分析器
       items:
-        - name: 概觀
+        - name: 總覽
           href: fxcop-analyzers.yml
         - name: 移植的規則
           href: fxcop-rule-port-status.md
     - name: 規則集
       items:
-        - name: 概觀
+        - name: 總覽
           href: using-rule-sets-to-group-code-analysis-rules.md
         - name: 分析器套件的規則集
           href: analyzer-rule-sets.md
@@ -135,21 +147,9 @@
           href: how-to-create-a-custom-rule-set.md
         - name: 使用規則集編輯器
           href: working-in-the-code-analysis-rule-set-editor.md
-    - name: 簽入原則
-      items:
-        - name: 如何建立或更新原則中的檢查
-          href: how-to-create-or-update-standard-code-analysis-check-in-policies.md
-        - name: 實作程式碼分析簽入原則
-          href: implementing-custom-code-analysis-check-in-policies-for-managed-code.md
-        - name: 強制執行容易維護的程式碼
-          href: how-to-enforce-maintainable-code-with-a-code-analysis-check-in-policy.md
-        - name: 使用簽入原則同步處理專案規則集
-          href: how-to-synchronize-code-project-rule-sets-with-team-project-check-in-policy.md
-        - name: 版本相容性
-          href: version-compatibility-for-code-analysis-check-in-policies.md
     - name: 程式碼度量
       items:
-        - name: 概觀
+        - name: 總覽
           displayName: code metrics
           href: code-metrics-values.md
         - name: 產生程式碼度量資料
@@ -160,7 +160,7 @@
       items:
         - name: 規則集
           items:
-            - name: 概觀
+            - name: 總覽
               href: rule-set-reference.md
             - name: 所有規則規則集
               href: all-rules-rule-set.md
@@ -188,15 +188,17 @@
               href: native-recommended-rules-rule-set.md
             - name: 適用於 Managed 程式碼的安全性規則規則集
               href: security-rules-rule-set-for-managed-code.md
+        - name: 隱藏警告
+          href: in-source-suppression-overview.md
         - name: 受控程式碼警告
           items:
-            - name: 概觀
+            - name: 總覽
               href: code-analysis-for-managed-code-warnings.md
             - name: 依據 CheckId 列出警告
               href: code-analysis-warnings-for-managed-code-by-checkid.md
             - name: 密碼編譯警告
               items:
-                - name: 概觀
+                - name: 總覽
                   displayName: cryptography warnings
                   href: cryptography-warnings.md
                 - name: CA5350：請勿使用弱式密碼編譯演算法
@@ -205,7 +207,7 @@
                   href: ca5351-do-not-use-broken-cryptographic-algorithms.md
             - name: 設計警告
               items:
-                - name: 概觀
+                - name: 總覽
                   displayName: design warnings
                   href: design-warnings.md
                 - name: CA1000：不要在泛型類型上宣告靜態成員
@@ -334,7 +336,7 @@
                   href: ca2210-assemblies-should-have-valid-strong-names.md
             - name: 全球化警告
               items:
-                - name: 概觀
+                - name: 總覽
                   displayName: globalization warnings
                   href: globalization-warnings.md
                 - name: 'CA1300:必須指定 MessageBoxOptions'
@@ -361,7 +363,7 @@
                   href: ca2101-specify-marshaling-for-p-invoke-string-arguments.md
             - name: 互通性警告
               items:
-                - name: 概觀
+                - name: 總覽
                   displayName: interoperability warnings
                   href: interoperability-warnings.md
                 - name: 'CA1400:P-Invoke 進入點應該要存在'
@@ -398,7 +400,7 @@
                   href: ca1415-declare-p-invokes-correctly.md
             - name: 維護性警告
               items:
-                - name: 概觀
+                - name: 總覽
                   displayName: maintainability warnings
                   href: maintainability-warnings.md
                 - name: 'CA1500:變數名稱不應該與欄位名稱相符'
@@ -417,7 +419,7 @@
                   href: ca1507.md
             - name: 行動性警告
               items:
-                - name: 概觀
+                - name: 總覽
                   displayName: mobility warnings
                   href: mobility-warnings.md
                 - name: 'CA1600:不要使用 Idle 處理序優先順序'
@@ -426,7 +428,7 @@
                   href: ca1601-do-not-use-timers-that-prevent-power-state-changes.md
             - name: 命名警告
               items:
-                - name: 概觀
+                - name: 總覽
                   displayName: naming warnings
                   href: naming-warnings.md
                 - name: 'CA1700:不要在列舉值名稱中包含 ''Reserved'''
@@ -477,7 +479,7 @@
                   href: ca1726-use-preferred-terms.md
             - name: 效能警告
               items:
-                - name: 概觀
+                - name: 總覽
                   displayName: performance warnings
                   href: performance-warnings.md
                 - name: 'CA1800:不要執行不必要的轉換'
@@ -514,7 +516,7 @@
                   href: ca1824-mark-assemblies-with-neutralresourceslanguageattribute.md
             - name: 可攜性警告
               items:
-                - name: 概觀
+                - name: 總覽
                   displayName: portability warnings
                   href: portability-warnings.md
                 - name: 'CA1900:實值類型欄位應該為可移植的'
@@ -525,7 +527,7 @@
                   href: ca1903-use-only-api-from-targeted-framework.md
             - name: 可靠性警告
               items:
-                - name: 概觀
+                - name: 總覽
                   displayName: reliability warnings
                   href: reliability-warnings.md
                 - name: 'CA2000:必須在超出範圍前處置物件'
@@ -544,7 +546,7 @@
                   href: ca2007-do-not-directly-await-task.md
             - name: 安全性警告
               items:
-                - name: 概觀
+                - name: 總覽
                   href: security-warnings.md
                 - name: 'CA2100:必須檢閱 SQL 查詢中是否有安全性弱點'
                   href: ca2100-review-sql-queries-for-security-vulnerabilities.md
@@ -690,7 +692,7 @@
                   href: ca3147-mark-verb-handlers-with-validateantiforgerytoken.md
             - name: 用法警告
               items:
-                - name: 概觀
+                - name: 總覽
                   displayName: usage warnings
                   href: usage-warnings.md
                 - name: 'CA1801:必須檢閱未使用的參數'
@@ -783,7 +785,7 @@
               href: automatic-feature-suspension.md
 - name: C/C++ 的程式碼分析
   items:
-    - name: 概觀
+    - name: 總覽
       displayName: C++ code analysis
       href: code-analysis-for-c-cpp-overview.md
     - name: 快速入門
@@ -800,7 +802,7 @@
       href: using-rule-sets-to-specify-the-cpp-rules-to-run.md
     - name: 使用 SAL 註釋以減少程式碼的缺失
       items:
-        - name: 概觀
+        - name: 總覽
           displayName: SAL annotations
           href: using-sal-annotations-to-reduce-c-cpp-code-defects.md
         - name: 了解 SAL
@@ -823,7 +825,7 @@
       href: how-to-specify-additional-code-information-by-using-analysis-assume.md
     - name: C++ Core Guidelines 檢查工具警告
       items:
-        - name: 概觀
+        - name: 總覽
           displayName: C++ core guidelines checker warnings
           href: code-analysis-for-cpp-corecheck.md
         - name: C26400
@@ -982,7 +984,7 @@
           href: C26498.md
     - name: C/C++ 警告
       items:
-        - name: 概觀
+        - name: 總覽
           displayName: C++ warnings
           href: code-analysis-for-c-cpp-warnings.md
         - name: C1250
