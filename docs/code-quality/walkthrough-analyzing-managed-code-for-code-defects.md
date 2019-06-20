@@ -5,23 +5,23 @@ ms.topic: conceptual
 helpviewer_keywords:
 - code analysis [Visual Studio]
 - managed code, analyzing
-author: gewarren
-ms.author: gewarren
+author: mikadumont
+ms.author: midumont
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 93bd0fd71fbe8eae90750aa2e7597ee40bba17a2
-ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
+ms.openlocfilehash: 3a2ce9b719f77377abf5b2bebd81b03a2606258b
+ms.sourcegitcommit: fd5a5b057df3d733f5224c305096907989811f85
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "66715268"
+ms.lasthandoff: 06/18/2019
+ms.locfileid: "67195297"
 ---
-# <a name="walkthrough-analyzing-managed-code-for-code-defects"></a>逐步解說：分析 managed 程式碼的程式碼缺失
+# <a name="walkthrough-use-static-code-analysis-to-find-code-defects"></a>逐步解說：使用靜態程式碼分析，以尋找程式碼缺失
 
 在本逐步解說中，您會使用程式碼分析工具來分析 managed 的專案的程式碼缺失。
 
-本逐步解說會引導您使用程式碼分析來分析您的.NET managed 程式碼組件符合.NET 設計指導方針的程序。
+本逐步解說會引導您使用靜態程式碼分析來分析您的.NET managed 程式碼組件符合.NET 設計指導方針的程序。
 
 ## <a name="create-a-class-library"></a>建立類別庫
 

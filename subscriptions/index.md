@@ -8,12 +8,12 @@ Ms.date: 06/25/2018
 Ms.topic: landing-page
 Description: 歡迎使用 Visual Studio 訂閱
 Searchscope: VS Subscription
-ms.openlocfilehash: 939922aa418ee94d3018ac5f5743c31181e5e875
-ms.sourcegitcommit: 92a04c57ac0a49f304fa2ea5043436f30068c3cd
+ms.openlocfilehash: 1515b7da3cadb8397f38554498fb4880db2d3b03
+ms.sourcegitcommit: b468d71052a1b8a697f477ab23a3644de139f1e9
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/21/2019
-ms.locfileid: "65976115"
+ms.lasthandoff: 06/19/2019
+ms.locfileid: "67259475"
 ---
 # <a name="visual-studio-subscriptions"></a>Visual Studio 訂閱
 
@@ -194,7 +194,6 @@ Visual Studio 訂用帳戶是一組全方位資源，可供您在 Windows、iOS�
                             <li><a href="/visualstudio/subscriptions/vs-linkedin-learning">LinkedIn Premium</a> (商務、技術與創意)</li>
                             <li><a href="/visualstudio/subscriptions/vs-pluralsight">Pluralsight</a> (雲端、設計、行動及資料)</li>
                             <li><a href="/visualstudio/subscriptions/vs-datacamp">Data Camp</a> (資料科學與 AI)</li>
-                            <li><a href="/visualstudio/subscriptions/vs-xamarin">Xamarin University</a> (行動開發)</li>
                             <li><a href="/visualstudio/subscriptions/vs-opsgility">Opsgility 訓練</a> (雲端導向)</li>
                             <li><a href="/visualstudio/subscriptions/vs-tech-support">Microsoft 專業技術援事件</a></li>
                             <li><a href="/visualstudio/subscriptions/vs-azure-advisory-chat">Azure 諮詢對談</a></li>
