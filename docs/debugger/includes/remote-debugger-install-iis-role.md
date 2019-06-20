@@ -14,15 +14,15 @@ translation.priority.ht:
 - zh-cn
 - zh-tw
 ms.openlocfilehash: 13ca035b01ec8af1277d70b3c792293a1af4687a
-ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
+ms.sourcegitcommit: b468d71052a1b8a697f477ab23a3644de139f1e9
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "65839731"
+ms.lasthandoff: 06/19/2019
+ms.locfileid: "67256207"
 ---
 這些步驟會顯示 IIS 的基本組態。 如需詳細的深入資訊，或安裝至 Windows 桌面的電腦，請參閱[Publishing to IIS](/aspnet/core/publishing/iis?tabs=aspnetcore2x#iis-configuration)或是[IIS 8.0 使用 ASP.NET 3.5 和 ASP.NET 4.5](/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45)。
 
-對於 Windows Server 作業系統中，使用**新增角色及功能**透過精靈**管理**連結或**儀表板**連結**伺服器管理員**. 在**伺服器角色**步驟中，核取 [網頁伺服器 (IIS)] 方塊。
+對於 Windows Server 作業系統中，使用**新增角色及功能**透過精靈**管理**連結或**儀表板**連結**伺服器管理員**. 在**伺服器角色**步驟中，核取 [網頁伺服器 (IIS)]  方塊。
 
 ![在選取伺服器角色步驟中選取網頁伺服器 IIS 角色。](../media/remotedbg-server-roles-ws2012.png)
 
