@@ -23,7 +23,7 @@ ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: d665f51f2ec5d825dbac1533c82e3d15bf419ff2
 ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 01/23/2019
 ms.locfileid: "58944398"
