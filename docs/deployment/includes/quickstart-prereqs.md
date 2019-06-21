@@ -1,10 +1,10 @@
 ---
 ms.openlocfilehash: 983e25e65600a4174c305557b2a58e20b91f63f1
-ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
+ms.sourcegitcommit: b468d71052a1b8a697f477ab23a3644de139f1e9
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "65846376"
+ms.lasthandoff: 06/19/2019
+ms.locfileid: "67256547"
 ---
 ## <a name="prerequisites"></a>必要條件
 
@@ -23,8 +23,8 @@ ms.locfileid: "65846376"
 ::: moniker-end
 
 * ASP.NET、ASP.NET Core、Python 或 Node.js 專案。 如果您還沒有專案，請選取下列一個選項：
-  * ASP.NET Core：請遵循[快速入門：使用 Visual Studio 建立您的第一個 ASP.NET Core Web 應用程式](../../ide/quickstart-aspnet-core.md)，或者使用 [檔案]  >  [新增專案]，選取 [Visual C#]  >  [.NET Core]，然後選取 [ASP.NET Core Web 應用程式]。 出現提示時，請選取 [Web 應用程式 (Model-View-Controller)] 範本，確定已選取 [不需要驗證]，然後選取 [確定]。
-  * Python：請遵循[快速入門：使用 Visual Studio 建立您的第一個 Python Web 應用程式](../../ide/quickstart-python.md)，或者使用 [檔案]  >  [新增專案]，選取 [Python]，然後選取 [Flask Web 專案]。
-  * Node.js：請遵循[快速入門：使用 Visual Studio 建立您的第一個 Node.js 應用程式](../../ide/quickstart-nodejs.md)，或者使用 [檔案]  >  [新增專案]，選取 [JavaScript]，然後選取 [空白的 Node.js Web 應用程式]。
+  * ASP.NET Core：請遵循[快速入門：使用 Visual Studio 建立您的第一個 ASP.NET Core Web 應用程式](../../ide/quickstart-aspnet-core.md)，或者使用 [檔案]   >  [新增專案]  ，選取 [Visual C#]   >  [.NET Core]  ，然後選取 [ASP.NET Core Web 應用程式]  。 出現提示時，請選取 [Web 應用程式 (Model-View-Controller)]  範本，確定已選取 [不需要驗證]  ，然後選取 [確定]  。
+  * Python：請遵循[快速入門：使用 Visual Studio 建立您的第一個 Python Web 應用程式](../../ide/quickstart-python.md)，或者使用 [檔案]   >  [新增專案]  ，選取 [Python]  ，然後選取 [Flask Web 專案]  。
+  * Node.js：請遵循[快速入門：使用 Visual Studio 建立您的第一個 Node.js 應用程式](../../ide/quickstart-nodejs.md)，或者使用 [檔案]   >  [新增專案]  ，選取 [JavaScript]  ，然後選取 [空白的 Node.js Web 應用程式]  。
 
-* 確定您使用 [建置] > [建置方案] 功能表命令建置專案，然後遵循部署步驟。
+* 確定您使用 [建置] > [建置方案]  功能表命令建置專案，然後遵循部署步驟。
