@@ -4,8 +4,6 @@ description: 了解如何提供 Visual Studio 可用來向 Azure 驗證要求的
 author: ghogen
 manager: jillfra
 assetId: 61570907-42a1-40e8-bcd6-952b21a55786
-ms.prod: visual-studio-dev14
-ms.technology: vs-azure
 ms.custom: vs-azure
 ms.workload: azure-vs
 ms.topic: conceptual
@@ -40,6 +38,6 @@ ms.locfileid: "62572193"
 ## <a name="next-steps"></a>後續步驟
 
 - [Web Apps 的一般概觀](https://docs.microsoft.com/azure/app-service/)
-- [將您的應用程式部署至 Azure App Service](https://docs.microsoft.com/azure/app-service/app-service-deploy-local-git) 
+- [將您的應用程式部署至 Azure App Service](https://docs.microsoft.com/azure/app-service/app-service-deploy-local-git)
 - [使用 Visual Studio 部署 WebJob](https://docs.microsoft.com/azure/app-service/websites-dotnet-deploy-webjobs)
 - [建立及部署雲端服務](https://docs.microsoft.com/azure/cloud-services/cloud-services-how-to-create-deploy-portal)
