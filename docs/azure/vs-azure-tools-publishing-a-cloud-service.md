@@ -4,8 +4,6 @@ description: 了解如何使用 Visual Studio 發佈 Azure 雲端服務專案。
 author: ghogen
 manager: jillfra
 assetId: 1a07b6e4-3678-4cbf-b37e-4520b402a3d9
-ms.prod: visual-studio-dev14
-ms.technology: vs-azure
 ms.custom: vs-azure
 ms.workload: azure-vs
 ms.topic: conceptual
