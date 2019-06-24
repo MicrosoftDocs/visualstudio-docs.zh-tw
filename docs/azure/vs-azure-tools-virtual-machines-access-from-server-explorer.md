@@ -4,8 +4,6 @@ description: 取得如何在 Visual Studio 的 [伺服器總管] 中，檢視建
 author: ghogen
 manager: jillfra
 assetId: eb3afde6-ba90-4308-9ac1-3cc29da4ede0
-ms.prod: visual-studio-dev14
-ms.technology: vs-azure
 ms.custom: vs-azure
 ms.workload: azure-vs
 ms.topic: conceptual
@@ -35,7 +33,7 @@ ms.locfileid: "62427024"
    | 狀態 |值包括 [啟動中]、[已啟動]、[停止中]、[已停止] 和 [正在擷取狀態]。 如果出現 [正在擷取狀態]，則目前狀態是未知的。 這個屬性的值不同於 [Azure 入口網站](http://go.microsoft.com/fwlink/p/?LinkID=525040)上所使用的值。 |
    | SubscriptionID |Azure 帳戶的訂用帳戶識別碼。 您可以透過檢視訂用帳戶的屬性，在 [Azure 入口網站](http://go.microsoft.com/fwlink/p/?LinkID=525040)上顯示這項資訊。 |
 2. 選擇端點節點，然後檢視 [屬性]  視窗。
-3. 下表說明可用的端點屬性，但他們全部都是唯讀。 若要新增或編輯虛擬機器的端點，請使用 [Azure 入口網站](http://go.microsoft.com/fwlink/p/?LinkID=525040)。 
+3. 下表說明可用的端點屬性，但他們全部都是唯讀。 若要新增或編輯虛擬機器的端點，請使用 [Azure 入口網站](http://go.microsoft.com/fwlink/p/?LinkID=525040)。
 
    | 屬性 | 說明 |
    | --- | --- |
