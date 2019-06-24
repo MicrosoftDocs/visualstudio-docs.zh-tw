@@ -1,5 +1,5 @@
 ---
-title: HOW TO：新的資料列加入 ListObject 控制項時驗證資料
+title: 新的資料列加入 ListObject 控制項時驗證資料
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -14,14 +14,14 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 7c729896083c7d32a48ba39906d8e9a0ebde4b59
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 8cf302388b71174767d41cc8b1a7594f4223db2a
+ms.sourcegitcommit: 7eb2fb21805d92f085126f3a820ac274f2216b4e
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63420945"
+ms.lasthandoff: 06/22/2019
+ms.locfileid: "67328869"
 ---
-# <a name="how-to-validate-data-when-a-new-row-is-added-to-a-listobject-control"></a>HOW TO：新的資料列加入 ListObject 控制項時驗證資料
+# <a name="how-to-validate-data-when-a-new-row-is-added-to-a-listobject-control"></a>作法：新的資料列加入 ListObject 控制項時驗證資料
   使用者可以將新的資料列加入繫結至資料的 <xref:Microsoft.Office.Tools.Excel.ListObject> 控制項。 您可以先驗證使用者的資料，再認可資料來源的變更。
 
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]

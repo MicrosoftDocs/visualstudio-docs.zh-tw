@@ -1,5 +1,5 @@
 ---
-title: HOW TO：透過主要 interop 組件的目標 Office 應用程式
+title: 透過主要 interop 組件的目標 Office 應用程式
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -16,14 +16,14 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 02a69cb91a24b60e8161948a650a6993a634b665
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: c6e92b3b4dd46885de7f30f5364d30f39b5c2bd7
+ms.sourcegitcommit: 7eb2fb21805d92f085126f3a820ac274f2216b4e
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63421036"
+ms.lasthandoff: 06/22/2019
+ms.locfileid: "67328883"
 ---
-# <a name="how-to-target-office-applications-through-primary-interop-assemblies"></a>HOW TO：透過主要 interop 組件的目標 Office 應用程式
+# <a name="how-to-target-office-applications-through-primary-interop-assemblies"></a>作法：透過主要 interop 組件的目標 Office 應用程式
   當您建立新的 Office 專案時，Visual Studio 會自動將參考加入建置專案所需的 Microsoft Office 主要 Interop 組件 (PIA)。 在下列情節中，您必須將參考加入其他 PIA：
 
 - 您想使用專案中其他 Microsoft Office 應用程式的功能。 例如，您想將專案中的 Microsoft Office Excel 功能用於 Microsoft Office Word。
@@ -38,7 +38,7 @@ ms.locfileid: "63421036"
 
 1. 開啟您的 Office 專案，然後選取中的專案名稱**方案總管 中**。
 
-2. 在 [專案] 功能表上，按一下 [新增參考]。
+2. 在 [專案]  功能表上，按一下 [新增參考]  。
 
 3. 在  **Framework**索引標籤上，選取您想要在的 PIA**元件名稱**清單。 如需有關可用 Microsoft Office 主要 interop 組件的詳細資訊，請參閱[Office 主要 interop 組件](../vsto/office-primary-interop-assemblies.md)。
 
@@ -47,7 +47,7 @@ ms.locfileid: "63421036"
     > [!NOTE]
     > 在 Office 專案中，一律加入 Office Pia 的參考 」 使用 **.NET**索引標籤**加入參考**對話方塊而非**COM**  索引標籤。如需詳細資訊，請參閱 < [Office 主要 interop 組件](../vsto/office-primary-interop-assemblies.md)。
 
-4. 按一下 [確定] 。
+4. 按一下 [確定]  。
 
      組件名稱會出現在**參考**的資料夾**方案總管 中**。
 

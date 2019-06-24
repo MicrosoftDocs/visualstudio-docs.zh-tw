@@ -1,5 +1,5 @@
 ---
-title: HOW TO：以程式設計方式從收件匣中擷取未讀取的訊息
+title: 以程式設計方式從收件匣取得未讀取的訊息
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -15,14 +15,14 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: b618d09fb8b11f98077ab3bb49e32a28869e5b04
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b9a718d6a8ee4eb633b34e1e12f85d578dc99fa6
+ms.sourcegitcommit: 7eb2fb21805d92f085126f3a820ac274f2216b4e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62955650"
+ms.lasthandoff: 06/22/2019
+ms.locfileid: "67328933"
 ---
-# <a name="how-to-programmatically-retrieve-unread-messages-from-the-inbox"></a>HOW TO：以程式設計方式從收件匣中擷取未讀取的訊息
+# <a name="how-to-programmatically-retrieve-unread-messages-from-the-inbox"></a>作法：以程式設計方式從收件匣中擷取未讀取的訊息
   此範例會擷取未讀取電子郵件訊息從 Outlook**收件匣**和顯示的項目數目。
 
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]

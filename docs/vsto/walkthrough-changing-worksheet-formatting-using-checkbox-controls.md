@@ -1,5 +1,5 @@
 ---
-title: 逐步解說：變更工作表的格式使用核取方塊控制項
+title: 變更工作表的格式使用核取方塊控制項
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e2a7cd6143b9c97bbcd06337d38ae169dfa94305
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 42d2c46f6fd61d74476933cfda3dea8c62b00c95
+ms.sourcegitcommit: 7eb2fb21805d92f085126f3a820ac274f2216b4e
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63438619"
+ms.lasthandoff: 06/22/2019
+ms.locfileid: "67328695"
 ---
 # <a name="walkthrough-change-worksheet-formatting-using-checkbox-controls"></a>逐步解說：變更工作表的格式使用核取方塊控制項
   本逐步解說會示範使用 Microsoft Office Excel 工作表上的核取方塊變更格式的基本概念。 您將使用 Visual Studio 中的 Office 開發工具建立，並將程式碼新增至您的專案。 若要查看完整的範例結果，請參閱 Excel 控制項範例： [Office 程式開發範例和逐步解說](../vsto/office-development-samples-and-walkthroughs.md)。
@@ -102,7 +102,7 @@ ms.locfileid: "63438619"
 
 2. 確認 **$B$ 9**會出現在可編輯的文字方塊中，且儲存格**B9**已選取。 如果沒有，請按一下資料格**B9**來選取它。
 
-3. 按一下 [確定] 。
+3. 按一下 [確定]  。
 
 4. 儲存格**B9**成為名為範圍`NamedRange1`。
 

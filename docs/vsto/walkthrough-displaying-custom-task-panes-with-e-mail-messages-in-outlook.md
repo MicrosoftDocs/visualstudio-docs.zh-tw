@@ -1,5 +1,5 @@
 ---
-title: 逐步解說：在 Outlook 中顯示自訂工作窗格與電子郵件訊息
+title: 在 Outlook 中顯示自訂工作窗格與電子郵件訊息
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 8127b35c7b3c861ce0568acc5c0459d6d31eee08
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: fa86c07ba964ca918c7ad225d5152b31a2e1d9ae
+ms.sourcegitcommit: 7eb2fb21805d92f085126f3a820ac274f2216b4e
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63440876"
+ms.lasthandoff: 06/22/2019
+ms.locfileid: "67328351"
 ---
 # <a name="walkthrough-display-custom-task-panes-with-email-messages-in-outlook"></a>逐步解說：在 Outlook 中顯示自訂工作窗格與電子郵件訊息
   本逐步解說示範如何顯示每個已建立或開啟的電子郵件訊息的自訂工作窗格的唯一執行個體。 使用者可以使用每則電子郵件訊息功能區上的按鈕，顯示或隱藏自訂工作窗格。
@@ -64,47 +64,47 @@ ms.locfileid: "63440876"
 
 ### <a name="to-create-a-new-project"></a>建立新的專案
 
-1. 建立名為 **OutlookMailItemTaskPane** 的 [Outlook 增益集] 專案。 使用 [Outlook 增益集]  專案範本。 如需詳細資訊，請參閱[如何：在 Visual Studio 中建立 Office 專案](../vsto/how-to-create-office-projects-in-visual-studio.md)。
+1. 建立名為 **OutlookMailItemTaskPane** 的 [Outlook 增益集]  專案。 使用 [Outlook 增益集]  專案範本。 如需詳細資訊，請參閱[如何：在 Visual Studio 中建立 Office 專案](../vsto/how-to-create-office-projects-in-visual-studio.md)。
 
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 會開啟 *ThisAddIn.cs* 或 *ThisAddIn.vb* 程式碼檔，並將 [OutlookMailItemTaskPane]  專案加入 [方案總管] 。
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 會開啟 *ThisAddIn.cs* 或 *ThisAddIn.vb* 程式碼檔，並將 [OutlookMailItemTaskPane]  專案加入 [方案總管]  。
 
 ## <a name="design-the-user-interface-of-the-custom-task-pane"></a>設計自訂工作窗格的使用者介面
  自訂工作窗格沒有視覺化設計工具，但您可以透過 UI 來設計所需的使用者控制項。 這個 VSTO 增益集中的自訂工作窗格具有內含 <xref:System.Windows.Forms.TextBox> 控制項的簡單 UI。 稍後在本逐步解說中，您會將使用者控制項加入自訂工作窗格。
 
 ### <a name="to-design-the-user-interface-of-the-custom-task-pane"></a>設計自訂工作窗格的使用者介面
 
-1. 在 [方案總管] 中，按一下 [OutlookMailItemTaskPane]  專案。
+1. 在 [方案總管]  中，按一下 [OutlookMailItemTaskPane]  專案。
 
-2. 在 [專案]  功能表上，按一下 [加入使用者控制項] 。
+2. 在 [專案]  功能表上，按一下 [加入使用者控制項]  。
 
-3. 在 [加入新項目]  對話方塊中，將使用者控制項的名稱變更為 **TaskPaneControl**，然後按一下 [加入] 。
+3. 在 [加入新項目]  對話方塊中，將使用者控制項的名稱變更為 **TaskPaneControl**，然後按一下 [加入]  。
 
      使用者控制項隨即在設計工具中開啟。
 
-4. 從 [工具箱]  的 [通用控制項] 索引標籤，將 **TextBox** 控制項拖曳至使用者控制項。
+4. 從 [工具箱]  的 [通用控制項]  索引標籤，將 **TextBox** 控制項拖曳至使用者控制項。
 
 ## <a name="design-the-user-interface-of-the-ribbon"></a>設計功能區的使用者介面
  這個 VSTO 增益集的目標是授與使用者的方式來隱藏或顯示自訂工作窗格中，從功能區的每個電子郵件訊息。 若要提供使用者介面，請建立顯示切換按鈕的自訂功能區 UI，使用者可按一下該切換按鈕以顯示或隱藏自訂工作窗格。
 
 ### <a name="to-create-a-custom-ribbon-ui"></a>建立自訂功能區 UI
 
-1. 在 [專案]  功能表中，按一下 [加入新項目] 。
+1. 在 [專案]  功能表中，按一下 [加入新項目]  。
 
-2. 選取 [ **加入新項目** ] 對話方塊中的 [ **功能區 (視覺化設計工具)**]。
+2. 選取 [ **加入新項目** ] 對話方塊中的 [ **功能區 (視覺化設計工具)** ]。
 
-3. 將新功能區的名稱變更為 **ManageTaskPaneRibbon**，然後按一下 [加入] 。
+3. 將新功能區的名稱變更為 **ManageTaskPaneRibbon**，然後按一下 [加入]  。
 
      *ManageTaskPaneRibbon.cs* 或 *ManageTaskPaneRibbon.vb* 檔案會在功能區設計工具中開啟，並顯示預設的索引標籤和群組。
 
-4. 在功能區設計工具中，按一下 [group1] 。
+4. 在功能區設計工具中，按一下 [group1]  。
 
-5. 在 [屬性]  視窗中，將 [標籤]  屬性設定為「工作窗格管理員」 。
+5. 在 [屬性]  視窗中，將 [標籤]  屬性設定為「工作窗格管理員」  。
 
-6. 從 [工具箱]  的 [Office 功能區控制項] 索引標籤，將 ToggleButton 控制項拖曳至 [工作窗格管理員]  群組。
+6. 從 [工具箱]  的 [Office 功能區控制項]  索引標籤，將 ToggleButton 控制項拖曳至 [工作窗格管理員]  群組。
 
-7. 按一下 [toggleButton1] 。
+7. 按一下 [toggleButton1]  。
 
-8. 在 [屬性]  視窗中，將 [標籤]  屬性設定為「顯示工作窗格」 。
+8. 在 [屬性]  視窗中，將 [標籤]  屬性設定為「顯示工作窗格」  。
 
 ## <a name="display-the-custom-ribbon-user-interface-with-email-messages"></a>顯示與電子郵件訊息的自訂功能區使用者介面
  您在本逐步解說中建立的自訂工作窗格，會設計為僅與含有電子郵件訊息的偵測器視窗一起出現。 因此，請設定屬性，僅與這些視窗一起顯示您的自訂功能區 UI。
@@ -113,7 +113,7 @@ ms.locfileid: "63440876"
 
 1. 在功能區設計工具中，按一下 [ManageTaskPaneRibbon]  功能區。
 
-2. 在 [屬性]  視窗中，按一下 [RibbonType] 旁的下拉式清單，然後選取 [Microsoft.Outlook.Mail.Compose]  和 [Microsoft.Outlook.Mail.Read] 。
+2. 在 [屬性]  視窗中，按一下 [RibbonType]  旁的下拉式清單，然後選取 [Microsoft.Outlook.Mail.Compose]  和 [Microsoft.Outlook.Mail.Read]  。
 
 ## <a name="create-a-class-to-manage-inspector-windows-and-custom-task-panes"></a>建立類別以管理偵測器視窗和自訂工作窗格
  有幾種情況下在其中的 VSTO 增益集必須識別哪一個自訂工作窗格與特定電子郵件訊息相關聯。 這些情況包括：
@@ -128,7 +128,7 @@ ms.locfileid: "63440876"
 
 ### <a name="to-create-a-class-to-manage-inspector-windows-and-custom-task-panes"></a>若要建立類別以管理偵測器視窗和自訂工作窗格
 
-1. 在 [方案總管] 中，以滑鼠右鍵按一下 *ThisAddIn.cs* 或 *ThisAddIn.vb* 檔案，然後按一下 [檢視程式碼] 。
+1. 在 [方案總管]  中，以滑鼠右鍵按一下 *ThisAddIn.cs* 或 *ThisAddIn.vb* 檔案，然後按一下 [檢視程式碼]  。
 
 2. 在檔案最上方加入下列陳述式。
 
@@ -201,7 +201,7 @@ ms.locfileid: "63440876"
 
 ### <a name="to-build-your-project"></a>建置您的專案
 
-1. 在 [方案總管] 中，以滑鼠右鍵按一下 [OutlookMailItemTaskPane]  專案，然後按一下 [建置] 。 確認專案編譯無誤。
+1. 在 [方案總管]  中，以滑鼠右鍵按一下 [OutlookMailItemTaskPane]  專案，然後按一下 [建置]  。 確認專案編譯無誤。
 
 ## <a name="synchronize-the-ribbon-toggle-button-with-the-custom-task-pane"></a>自訂工作窗格與同步處理功能區切換按鈕
  當工作窗格可見時，切換按鈕會呈現已按下狀態；當工作窗格隱藏時，切換按鈕會呈現未按下狀態。 若要同步處理按鈕和自訂工作窗格的狀態，請修改切換按鈕的 <xref:Microsoft.Office.Tools.Ribbon.RibbonToggleButton.Click> 事件處理常式。
@@ -243,7 +243,7 @@ ms.locfileid: "63440876"
 
 6. 再按一次 [顯示工作窗格]  按鈕。
 
-    確認工作窗格會開啟，而且文字方塊仍含有「第一個工作窗格」 字串。
+    確認工作窗格會開啟，而且文字方塊仍含有「第一個工作窗格」  字串。
 
 7. 在 Outlook 中，按一下**新增**以建立第二個電子郵件訊息。
 

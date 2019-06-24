@@ -1,5 +1,5 @@
 ---
-title: 逐步解說：在文字方塊中，使用按鈕在工作表中的顯示文字
+title: 在文字方塊中，使用按鈕的工作表中的顯示文字
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 0f74eaa8618ce497a760754d084f390a4d1b8c1d
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: b30eea0152b75cdd0869ececac674ee5aeee7933
+ms.sourcegitcommit: 7eb2fb21805d92f085126f3a820ac274f2216b4e
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63436097"
+ms.lasthandoff: 06/22/2019
+ms.locfileid: "67328711"
 ---
 # <a name="walkthrough-display-text-in-a-text-box-in-a-worksheet-using-a-button"></a>逐步解說：在文字方塊中，使用按鈕在工作表中的顯示文字
   本逐步解說會示範使用 Microsoft Office Excel 工作表，以及如何建立 Excel 專案在 Visual Studio 中使用 Office 開發工具的按鈕和文字方塊的基本概念。 若要查看完整的範例結果，請參閱 Excel 控制項範例： [Office 程式開發範例和逐步解說](../vsto/office-development-samples-and-walkthroughs.md)。

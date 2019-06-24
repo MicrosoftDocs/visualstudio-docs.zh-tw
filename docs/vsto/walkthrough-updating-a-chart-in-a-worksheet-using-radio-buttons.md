@@ -1,5 +1,5 @@
 ---
-title: 逐步解說：使用選項按鈕更新工作表中的圖表
+title: 更新使用選項按鈕的工作表中的圖表
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 6a827e688e260adcb93e81b55520c747dd99ed0d
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 86e289ad8a316f7026d6fda46bb3e424164437fb
+ms.sourcegitcommit: 7eb2fb21805d92f085126f3a820ac274f2216b4e
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63421739"
+ms.lasthandoff: 06/22/2019
+ms.locfileid: "67329005"
 ---
 # <a name="walkthrough-updating-a-chart-in-a-worksheet-using-radio-buttons"></a>逐步解說：使用選項按鈕更新工作表中的圖表
   本逐步解說會示範使用 Microsoft Office Excel 工作表上的選項按鈕，以讓使用者快速切換選項之間的基本概念。 在此情況下，選項會變更圖表的樣式。
@@ -97,7 +97,7 @@ ms.locfileid: "63421739"
 
 2. 按一下 **瀏覽**按鈕並瀏覽至您稍早在本逐步解說中建立的活頁簿。
 
-3. 按一下 [確定] 。
+3. 按一下 [確定]  。
 
      Visual Studio 設計工具中開啟新的 Excel 活頁簿，並將**我的 Excel 圖表**專案加入**方案總管 中**。
 
@@ -122,7 +122,7 @@ ms.locfileid: "63421739"
 
 1. 選取 [**我的 Excel 圖表**專案中**方案總管] 中**。
 
-2. 在 [專案]  功能表中，按一下 [加入新項目] 。
+2. 在 [專案]  功能表中，按一下 [加入新項目]  。
 
 3. 在**加入新項目** 對話方塊中，按一下**使用者控制項**，將控制項**ChartOptions，** 然後按一下**新增**。
 

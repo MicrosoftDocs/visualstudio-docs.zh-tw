@@ -1,5 +1,5 @@
 ---
-title: 逐步解說：建立 Word 的第一個文件層級自訂
+title: 建立 Word 的第一個文件層級自訂
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 9a38d3ae806439c286a5230ee704acedf2070e27
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 8662e5d08c420d1204e9fd5159be810397d4bbe1
+ms.sourcegitcommit: 7eb2fb21805d92f085126f3a820ac274f2216b4e
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63438515"
+ms.lasthandoff: 06/22/2019
+ms.locfileid: "67328282"
 ---
 # <a name="walkthrough-create-your-first-document-level-customization-for-word"></a>逐步解說：建立 Word 的第一個文件層級自訂
   本入門逐步解說將示範如何建立 Microsoft Office Word 的文件層級自訂。 只有在特定的文件開啟時，才能使用您在這種解決方案中建立的功能。 您不能使用文件層級自訂來進行應用程式層級的變更，例如在任何文件開啟時顯示新功能區索引標籤。
@@ -53,9 +53,9 @@ ms.locfileid: "63438515"
 
 1. 啟動 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]。
 
-2. 在 [檔案]  功能表中，指向 [新增] ，然後按一下 [專案] 。
+2. 在 [檔案]  功能表中，指向 [新增]  ，然後按一下 [專案]  。
 
-3. 在範本窗格中，展開 **[Visual C#]** 或 **[Visual Basic]**，然後展開 **[Office/SharePoint]**。
+3. 在範本窗格中，展開 **[Visual C#]** 或 **[Visual Basic]** ，然後展開 **[Office/SharePoint]** 。
 
 4. 在展開的 [Office/SharePoint]  節點下，選取 [Office 增益集]  節點。
 
@@ -63,7 +63,7 @@ ms.locfileid: "63438515"
 
 6. 在 **名稱**方塊中，輸入**FirstDocumentCustomization**。
 
-7. 按一下 [確定] 。
+7. 按一下 [確定]  。
 
      隨即開啟 [Visual Studio Tools for Office 專案精靈]  。
 
@@ -126,7 +126,7 @@ ms.locfileid: "63438515"
 
      **這段文字已加入使用設計工具。**
 
-     **This text was added by using code.**
+     **此文字使用新增的程式碼。**
 
 3. 關閉文件。
 
@@ -135,7 +135,7 @@ ms.locfileid: "63438515"
 
 ### <a name="to-clean-up-the-completed-project-on-your-development-computer"></a>清除開發電腦上已完成的專案
 
-1. 在 Visual Studio 中，按一下 [建置]  功能表上的 [清除方案] 。
+1. 在 Visual Studio 中，按一下 [建置]  功能表上的 [清除方案]  。
 
 ## <a name="next-steps"></a>後續步驟
  現在您已經建立 Word 的基本文件層級自訂，可以從下列主題進一步了解如何開發自訂：

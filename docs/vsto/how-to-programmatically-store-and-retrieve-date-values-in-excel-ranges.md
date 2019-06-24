@@ -1,5 +1,5 @@
 ---
-title: HOW TO：以程式設計方式儲存和擷取日期值在 Excel 範圍中
+title: 儲存和擷取日期值在 Excel 範圍中的，以程式設計的方式
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -19,14 +19,14 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 3a2354df7027f3aa73f13e830b9a85895e54c920
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: d855ffd91ccdc07a2d69401d7a8611175cc60941
+ms.sourcegitcommit: 7eb2fb21805d92f085126f3a820ac274f2216b4e
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63419289"
+ms.lasthandoff: 06/22/2019
+ms.locfileid: "67328914"
 ---
-# <a name="how-to-programmatically-store-and-retrieve-date-values-in-excel-ranges"></a>HOW TO：以程式設計方式儲存和擷取日期值在 Excel 範圍中
+# <a name="how-to-programmatically-store-and-retrieve-date-values-in-excel-ranges"></a>作法：以程式設計方式儲存和擷取日期值在 Excel 範圍中
   您可以儲存和擷取中的值<xref:Microsoft.Office.Tools.Excel.NamedRange>控制項或原生的 Excel 範圍物件。
 
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]
