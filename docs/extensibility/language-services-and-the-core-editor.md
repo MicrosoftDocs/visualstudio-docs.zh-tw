@@ -1,0 +1,46 @@
+---
+title: 語言服務及核心編輯器 |Microsoft Docs
+ms.date: 11/04/2016
+ms.topic: conceptual
+helpviewer_keywords:
+- editors [Visual Studio SDK], legacy - language services
+ms.assetid: e03199a6-ad5f-4075-bfba-8d36865112b7
+author: madskristensen
+ms.author: madsk
+manager: jillfra
+ms.workload:
+- vssdk
+ms.openlocfilehash: a27fc9ec55b301dc3355e03e2e86e968752fbbd0
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66309528"
+---
+# <a name="language-services-and-the-core-editor"></a>語言服務及核心編輯器
+在 Visual Studio 中的編輯器的常見問題與服務相關聯的語言。 除此之外，語言服務會提供語法著色、 陳述式完成、 IntelliSense 和文字格式設定。
+
+## <a name="core-editors-and-document-data-objects"></a>核心編輯器和文件資料物件
+ 當您存取核心編輯器時，您不要建立文件資料和文件檢視物件。 IDE 會建立並控制這兩個物件，並進行適當的呼叫，在您的編輯器 factory 實作取得它們的控制代碼。
+
+ 如需詳細資訊，請參閱 <<c0> [ 判斷哪一個編輯器在專案中開啟檔案](../extensibility/internals/determining-which-editor-opens-a-file-in-a-project.md)。
+
+## <a name="language-services-and-the-core-editor"></a>語言服務及核心編輯器
+ 藉由實作語言服務，您可以控制文件檢視中顯示資料的方式。 語言服務提供的資訊，以及指定的語言，例如視覺效果的特定行為的C++。 當您建立的文字緩衝區，並判斷您要開啟的文件的副檔名時，文字緩衝區會判斷登錄機碼，從這個檔案名稱副檔名相關聯的語言服務**HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Editors\\{YourLanguageService GUID} \Extensions**。 標準的 VSPackage，載入程序，然後載入 VSPackage，並建立您的語言服務的執行個體。
+
+ 基本語言服務是由下列圖所示。
+
+ ![語言服務模型圖形](../extensibility/media/vslanguageservicemodel.gif "vsLanguageServiceModel")核心編輯器和語言服務物件
+
+ 核心編輯器的文件資料物件會呼叫文字緩衝區，而且會以表示<xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer>物件。 文件檢視物件稱為文字檢視，而由<xref:Microsoft.VisualStudio.TextManager.Interop.VsCodeWindow>物件。 透過提供統一的核心編輯器檢視語言服務，這兩個物件一起運作。 從文字緩衝區和文件視窗中的文字 檢視會顯示的資訊稱為 「 程式碼視窗。 程式碼視窗的文件是由程式碼視窗管理員管理。
+
+## <a name="see-also"></a>另請參閱
+- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo>
+- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer>
+- <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextView>
+- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindowManager>
+- <xref:Microsoft.VisualStudio.TextManager.Interop.VsCodeWindow>
+- [使用舊版 API 提供的語言服務內容](../extensibility/providing-a-language-service-context-by-using-the-legacy-api.md)
+- [IntelliSense 裝載](../extensibility/intellisense-hosting.md)
+- [包含的語言](../extensibility/contained-languages.md)
+- [開發舊版語言服務](../extensibility/internals/developing-a-legacy-language-service.md)
