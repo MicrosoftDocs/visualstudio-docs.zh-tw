@@ -4,8 +4,6 @@ description: 了解如何使用服務組態和設定檔組態檔案 | 其儲存�
 author: ghogen
 manager: jillfra
 assetId: 7da8c551-fb06-4057-b5c7-c77f4b39d803
-ms.prod: visual-studio-dev14
-ms.technology: vs-azure
 ms.custom: vs-azure
 ms.workload: azure-vs
 ms.topic: conceptual
@@ -33,28 +31,28 @@ ms.locfileid: "62568995"
 
 ### <a name="to-add-a-service-configuration"></a>新增服務組態
 1. 在 [方案總管] 中，開啟 Azure 專案的捷徑功能表，然後選取 [管理組態] 。
-   
+
     [管理服務組態]  對話方塊隨即出現。
 2. 若要新增服務組態，您必須建立一份現有的組態。 若要這樣做，請從 [名稱] 清單中選擇您要複製的組態，然後選取 [建立複本] 。
 3. (選擇性) 若要給予服務組態不同的名稱，請從 [名稱] 清單中選擇新的服務組態，然後選取 [重新命名] 。 在 [名稱] 文字方塊中輸入您要用於此服務組態的名稱，然後按選取 [確定]。
-   
+
     方案總管中的 Azure 專案已新增了一個叫做 ServiceConfiguration.[New Name].cscfg 的新服務組態檔。
 
 ### <a name="to-delete-a-service-configuration"></a>刪除服務組態
 1. 在 [方案總管] 中，開啟 Azure 專案的捷徑功能表，然後選取 [管理組態] 。
-   
+
     [管理服務組態]  對話方塊隨即出現。
 2. 若要刪除服務組態，請從 [名稱] 清單中選擇您要刪除的組態，然後選取 [移除]。 隨即出現一個對話方塊，以確認您要刪除此組態。
 3. 選取 [刪除] 。
-   
+
      在 [方案總管] 中，此服務組態檔會從 Azure 專案中移除。
 
 ### <a name="to-rename-a-service-configuration"></a>重新命名服務組態
 1. 在 [方案總管] 中，開啟 Azure 專案的捷徑功能表，然後選取 [管理組態] 。
-   
+
     [管理服務組態]  對話方塊隨即出現。
 2. 若要將服務組態重新命名，請從 [名稱] 清單中選擇新的服務組態，然後選取 [重新命名]。 在 [名稱] 文字方塊中輸入您要用於此服務組態的名稱，然後按選取 [確定]。
-   
+
     在 [方案總管] 中，此服務組態檔的名稱會在 Azure 專案中變更。
 
 ### <a name="to-change-a-service-configuration"></a>變更服務組態
@@ -68,16 +66,16 @@ ms.locfileid: "62568995"
 ### <a name="to-add-a-profile"></a>新增設定檔
 1. 開啟 Azure 專案的捷徑功能表，然後選取 [發佈] 。
 2. 選取 [目標設定檔] 清單旁邊的 [儲存設定檔] 按鈕，如下圖所示。 這會為您建立設定檔。
-   
+
     ![建立新的設定檔](./media/vs-azure-tools-service-configurations-and-profiles-how-to-manage/create-new-profile.png)
 3. 建立設定檔之後，選取 [目標設定檔] 清單中的 [<管理...>]。
-   
+
     [管理設定檔]  對話方塊會隨即出現，如下圖所示。
-   
+
     ![管理設定檔對話方塊](./media/vs-azure-tools-service-configurations-and-profiles-how-to-manage/manage-profiles.png)
 4. 在 [名稱] 清單中選擇某個設定檔，然後選取 [建立複本]。
 5. 選擇 [關閉]  按鈕。
-   
+
     新的設定檔會出現在 [目標設定檔] 清單中。
 6. 在 [目標設定檔]  清單中，選取您剛建立的設定檔。 [發佈精靈] 設定會填入您所選設定檔中的選項。
 7. 選取 [上一步] 和 [下一步] 按鈕以顯示「發佈精靈」的每個頁面，然後自訂此設定檔的設定。 如需相關資訊，請參閱 [發佈 Azure 應用程式精靈](http://go.microsoft.com/fwlink/p/?LinkID=623085) 。

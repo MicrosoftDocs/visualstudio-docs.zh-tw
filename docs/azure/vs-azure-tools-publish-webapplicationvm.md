@@ -1,18 +1,14 @@
 ---
 title: Publish-WebApplicationVM | Microsoft Docs
 description: 了解如何將 Web 應用程式部署到虛擬機器。 此指令碼會在您的 Azure 訂用帳戶中建立所需的資源 (如果它們不存在)。
-services: visual-studio-online
 author: ghogen
-manager: douge
+manager: jillfra
 assetId: de4cec95-f73f-44d9-babd-9f47f2633cdb
-ms.prod: visual-studio-dev15
-ms.technology: vs-azure
 ms.custom: vs-azure
 ms.workload: azure-vs
 ms.topic: conceptual
-origin.date: 11/11/2016
-ms.date: 09/10/2018
-ms.author: v-junlch
+ms.date: 11/11/2016
+ms.author: ghogen
 ms.openlocfilehash: 8b4b7a05de87ab8b70046b51fe9f256f05d3aee5
 ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
@@ -25,7 +21,7 @@ ms.locfileid: "62572281"
 
 ```
 Publish-WebApplicationVM
--Configuration <configuration>
+–Configuration <configuration>
 -SubscriptionName <subscriptionName>
 -WebDeployPackage <packageName>
 -VMPassword @{Name = "name"; Password = "password")
@@ -122,7 +118,7 @@ JSON 組態檔會指定待部署項目的詳細資料。 它包含您在建立�
         "cloudService": {
             "name": "myvmname",
             "affinityGroup": "",
-            "location": "China North",
+            "location": "West US",
             "virtualNetwork": "",
             "subnet": "",
             "availabilitySet": "",
@@ -184,6 +180,3 @@ JSON 組態檔會指定待部署項目的詳細資料。 它包含您在建立�
 ```
 
 您可以編輯 JSON 組態檔來變更佈建項目。 虛擬機器和雲端服務是必要的，但資料庫區段是選擇性的。
-
-
-<!-- Update_Description: update metedata properties -->
