@@ -1,5 +1,5 @@
 ---
-title: 逐步解說：在文字方塊中，使用按鈕文件中的顯示文字
+title: 在文字方塊中，使用按鈕文件中的顯示文字
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 1b5a4152d655dd36eb258ff6b378bf79f87123a8
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 8f3c467abcee8fb4faafd2da06ba261e7f3039fe
+ms.sourcegitcommit: 7eb2fb21805d92f085126f3a820ac274f2216b4e
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63443835"
+ms.lasthandoff: 06/22/2019
+ms.locfileid: "67328745"
 ---
 # <a name="walkthrough-display-text-in-a-text-box-in-a-document-using-a-button"></a>逐步解說：在文字方塊中，使用按鈕文件中的顯示文字
   本逐步解說示範如何在 Microsoft Office Word 的文件層級自訂中使用按鈕和文字方塊。
@@ -66,7 +66,7 @@ ms.locfileid: "63443835"
 
 4. 尋找**TextBox1**中**屬性** 視窗的下拉式清單方塊，並變更**名稱**屬性的文字方塊**3**。
 
-5. 拖曳** 按鈕**控制項加入文件，並變更下列屬性。
+5. 拖曳 **按鈕**控制項加入文件，並變更下列屬性。
 
    |屬性|值|
    |--------------|-----------|

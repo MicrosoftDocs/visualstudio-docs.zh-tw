@@ -7,12 +7,12 @@ author: madskristensen
 ms.author: madsk
 ms.workload:
 - vssdk
-ms.openlocfilehash: d9136268bf1bfb7ccebf79de035fb19f40223002
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: c3075ca5092dd1b8a69aa4b34c0e507505cf7123
+ms.sourcegitcommit: 16bcaca215de75479695738d3c2d703c78c3500e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66324703"
+ms.lasthandoff: 06/21/2019
+ms.locfileid: "67309684"
 ---
 # <a name="how-to-use-rule-based-ui-context-for-visual-studio-extensions"></a>作法：使用 Visual Studio 擴充功能的規則為基礎的 UI 內容
 
@@ -140,6 +140,10 @@ Visual Studio 可讓載入 Vspackage 時有特定已知<xref:Microsoft.VisualStu
 |ActiveProjectCapability:\<Expression>|作用中的專案功能符合提供的運算式時，則為 true 的詞彙。 運算式可以是 VB 類似&#124;CSharp。|
 |SolutionHasProjectCapability:\<Expression>|當方案中有任何比對運算式的載入的專案時，與上述類似，但是一詞是如此。|
 |SolutionHasProjectFlavor:\<projectTypeGuid>|解決方案具備特色 （彙總） 的專案，並比對指定的專案類型 GUID 類別時，將會是 true 一詞。|
+|ProjectAddedItem:\<pattern>| 比對 「 模式 」 的檔案新增至開啟 soluion 中的專案時，一詞是如此。|
+|ActiveProjectOutputType:\<outputType>|詞彙是，則為 true 時輸出類型使用中的專案會確實比對。  OutputType 可能是整數或<xref:Microsoft.VisualStudio.Shell.Interop.__VSPROJOUTPUTTYPE>型別。|
+|ActiveProjectBuildProperty:\<buildProperty>=\<regex>|現用專案有指定的組建屬性和屬性值符合所提供的 regex 篩選條件時，一詞是如此。 請參閱[MSBuild 專案檔中的保存資料](internals/persisting-data-in-the-msbuild-project-file.md)更多有關建置屬性。|
+|SolutionHasProjectBuildProperty:\<buildProperty>=\<regex>|解決方案已載入的專案，以指定的組建屬性和屬性值符合所提供的 regex 篩選條件時，一詞是如此。|
 
 ## <a name="compatibility-with-cross-version-extension"></a>副檔名為跨版本相容性
 

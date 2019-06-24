@@ -1,5 +1,5 @@
 ---
-title: 更新您移轉至.NET Framework 4 或.NET Framework 4.5 的 Excel 和 Word 專案
+title: 更新 Excel 或 Word 專案移轉至.NET Framework 4 / 4.5
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: fd80f4a72151fdebb3f0445024963a65db981e63
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: afbfcf5cf9c3bbb02d4034251c7a3836056e314c
+ms.sourcegitcommit: 7eb2fb21805d92f085126f3a820ac274f2216b4e
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63436466"
+ms.lasthandoff: 06/22/2019
+ms.locfileid: "67329021"
 ---
 # <a name="update-excel-and-word-projects-that-you-migrate-to-the-net-framework-4-or-the-net-framework-45"></a>更新您移轉至.NET Framework 4 或.NET Framework 4.5 的 Excel 和 Word 專案
   如果您有使用下列任何功能的 Excel 或 Word 專案，當目標 Framework 變更為 [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] 或更新版本時，即必須修改程式碼：
@@ -43,7 +43,7 @@ ms.locfileid: "63436466"
 
 ### <a name="to-remove-the-excellocale1033attribute"></a>移除 ExcelLocale1033Attribute
 
-1. 請使用在 Visual Studio 中開啟的專案，開啟 [方案總管] 。
+1. 請使用在 Visual Studio 中開啟的專案，開啟 [方案總管]  。
 
 2. 在 [屬性]  節點 (C#) 或 [我的專案]  節點 (Visual Basic) 下，按兩下 AssemblyInfo 程式碼檔，以在程式碼編輯器中加以開啟。
 
@@ -65,7 +65,7 @@ ms.locfileid: "63436466"
 
 ### <a name="to-remove-the-reference-to-the-excellocal1033proxy-class"></a>移除 ExcelLocal1033Proxy 類別的參考
 
-1. 請在 Visual Studio 中開啟專案，再開啟 [方案總管] 。
+1. 請在 Visual Studio 中開啟專案，再開啟 [方案總管]  。
 
 2. 中**方案總管] 中**，開啟捷徑功能表*ThisAddin.cs* (如C#) 或*ThisAddin.vb* （適用於 Visual Basic 中)，然後選擇 [**檢視程式碼**.
 

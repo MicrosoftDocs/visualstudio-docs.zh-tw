@@ -1,5 +1,5 @@
 ---
-title: HOW TO：以程式設計方式搜尋和取代文件中的文字
+title: 尋找和取代文件中的文字，以程式設計的方式
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -16,14 +16,14 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 9799e958903c56f5a3423f86736668a2affd87da
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 6508fee244dd50a1d2fd42203c2982b959b0e547
+ms.sourcegitcommit: 7eb2fb21805d92f085126f3a820ac274f2216b4e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62962024"
+ms.lasthandoff: 06/22/2019
+ms.locfileid: "67328909"
 ---
-# <a name="how-to-programmatically-search-for-and-replace-text-in-documents"></a>HOW TO：以程式設計方式搜尋和取代文件中的文字
+# <a name="how-to-programmatically-search-for-and-replace-text-in-documents"></a>作法：以程式設計方式搜尋和取代文件中的文字
   <xref:Microsoft.Office.Interop.Word.Find> 物件是 <xref:Microsoft.Office.Interop.Word.Selection> 和 <xref:Microsoft.Office.Interop.Word.Range> 物件共有的成員，您可以使用這個成員在 Microsoft Office Word 文件中搜尋文字。 取代命令是尋找命令的擴充功能。
 
  使用 <xref:Microsoft.Office.Interop.Word.Find> 物件在 Microsoft Office Word 文件中逐一搜尋特定的文字、格式或樣式，並使用 <xref:Microsoft.Office.Interop.Word.Find.Replacement%2A> 屬性取代任何找到的項目。

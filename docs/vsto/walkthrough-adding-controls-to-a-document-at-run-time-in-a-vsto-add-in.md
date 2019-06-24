@@ -1,5 +1,5 @@
 ---
-title: 逐步解說：將控制項加入文件在執行階段中的 VSTO 增益集
+title: 將控制項加入文件在 VSTO 增益集中的執行階段
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f226f65e493ced3a33dcfe7514633992cce158d0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b6ac01f32a14589837d0cb7707cb3d2f8946bd0a
+ms.sourcegitcommit: 7eb2fb21805d92f085126f3a820ac274f2216b4e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62982413"
+ms.lasthandoff: 06/22/2019
+ms.locfileid: "67328405"
 ---
 # <a name="walkthrough-add-controls-to-a-document-at-runtime-in-a-vsto-add-in"></a>逐步解說：將控制項加入文件在執行階段中的 VSTO 增益集
   您可以使用 VSTO 增益集，將控制項加入任何開啟的 Microsoft Office Word 文件中。 本逐步解說示範如何使用功能區，讓使用者可以加入<xref:Microsoft.Office.Tools.Word.Controls.Button>或<xref:Microsoft.Office.Tools.Word.RichTextContentControl>文件。
@@ -60,19 +60,19 @@ ms.locfileid: "62982413"
 
 ### <a name="to-provide-a-ui-to-add-controls-to-a-document"></a>提供可將控制項加入文件的 UI
 
-1. 在 [專案]  功能表中，按一下 [加入新項目] 。
+1. 在 [專案]  功能表中，按一下 [加入新項目]  。
 
-2. 選取 [ **加入新項目** ] 對話方塊中的 [ **功能區 (視覺化設計工具)**]。
+2. 選取 [ **加入新項目** ] 對話方塊中的 [ **功能區 (視覺化設計工具)** ]。
 
-3. 將新功能區的名稱變更為 **MyRibbon**，然後按一下 [加入] 。
+3. 將新功能區的名稱變更為 **MyRibbon**，然後按一下 [加入]  。
 
     **MyRibbon.cs** 或 **MyRibbon.vb** 檔案會在功能區設計工具中開啟，並顯示預設索引標籤和群組。
 
 4. 在功能區設計工具中，按一下 [group1]  群組。
 
-5. 在 [屬性]  視窗中，將 [group1]  的 [Label]  屬性變更為 [加入控制項] 。
+5. 在 [屬性]  視窗中，將 [group1]  的 [Label]  屬性變更為 [加入控制項]  。
 
-6. 從 [工具箱]  的 [Office 功能區控制項] 索引標籤，將 **CheckBox** 控制項拖曳至 [group1] 。
+6. 從 [工具箱]  的 [Office 功能區控制項]  索引標籤，將 **CheckBox** 控制項拖曳至 [group1]  。
 
 7. 按一下 [CheckBox1]  予以選取。
 
@@ -83,18 +83,18 @@ ms.locfileid: "62982413"
    | **名稱** | **addButtonCheckBox** |
    | **標籤** | **加入按鈕** |
 
-9. 將第二個核取方塊加入 [group1] ，然後變更下列屬性。
+9. 將第二個核取方塊加入 [group1]  ，然後變更下列屬性。
 
    | 屬性 | 值 |
    |-----------|---------------------------|
    | **名稱** | **addRichTextCheckBox** |
    | **Label** | **加入 RTF 控制項** |
 
-10. 在功能區設計工具中，按兩下 [加入按鈕] 。
+10. 在功能區設計工具中，按兩下 [加入按鈕]  。
 
      在程式碼編輯器中，隨即開啟 [加入按鈕] <xref:Microsoft.Office.Tools.Ribbon.RibbonCheckBox.Click>**核取方塊的** 事件處理常式。
 
-11. 返回功能區設計工具並按兩下 [加入 RTF 控制項] 。
+11. 返回功能區設計工具並按兩下 [加入 RTF 控制項]  。
 
      在程式碼編輯器中，隨即開啟 [加入 RTF 控制項] <xref:Microsoft.Office.Tools.Ribbon.RibbonCheckBox.Click>**核取方塊的** 事件處理常式。
 
@@ -161,13 +161,13 @@ ms.locfileid: "62982413"
 
 4. 按一下 [增益集]  索引標籤。
 
-5. 在 [加入控制項]  群組中，按一下 [加入按鈕] 。
+5. 在 [加入控制項]  群組中，按一下 [加入按鈕]  。
 
      按鈕隨即出現在第一個段落中。
 
 6. 選取最後一個段落。
 
-7. 在 [加入控制項]  群組中，按一下 [加入 RTF 控制項] 。
+7. 在 [加入控制項]  群組中，按一下 [加入 RTF 控制項]  。
 
      Rich text 格式內容控制項會加入最後一個段落。
 
