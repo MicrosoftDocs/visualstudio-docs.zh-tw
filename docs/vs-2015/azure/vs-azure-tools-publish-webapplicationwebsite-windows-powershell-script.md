@@ -1,18 +1,16 @@
 ---
 title: Publish-WebApplicationWebSite (Windows PowerShell 指令碼) | Microsoft Docs
 description: 了解如何將 Web 專案發佈至 Azure 網站。 此指令碼會在您的 Azure 訂用帳戶中建立所需的資源 (如果它們不存在)。
-services: visual-studio-online
 author: ghogen
-manager: douge
+manager: jillfra
 assetId: 63cfaa2d-f04d-40dc-8677-345385c278d5
-ms.prod: visual-studio-dev15
+ms.prod: visual-studio-dev14
 ms.technology: vs-azure
 ms.custom: vs-azure
 ms.workload: azure-vs
 ms.topic: conceptual
-origin.date: 11/11/2016
-ms.date: 09/10/2018
-ms.author: v-junlch
+ms.date: 11/11/2016
+ms.author: ghogen
 ms.openlocfilehash: 6953d8944bb8619560ade4c7b3924dc9e89d3b11
 ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
@@ -25,13 +23,12 @@ ms.locfileid: "62830520"
 將 Web 專案發佈至 Azure 網站。 指令碼會在您的 Azure 訂用帳戶中建立所需的資源 (如果它們不存在)。
 
     Publish-WebApplicationWebSite
-    -Configuration <configuration>
+    –Configuration <configuration>
     -SubscriptionName <subscriptionName>
     -WebDeployPackage <packageName>
     -DatabaseServerPassword @{Name = "name"; Password = "password"}
     -SendHostMessagesToOutput
     -Verbose
-
 
 ## <a name="configuration"></a>Configuration
 描述部署詳細資訊的 JSON 組態檔路徑。
@@ -102,7 +99,7 @@ JSON 組態檔會指定待部署項目的詳細資料。 它會包含您在建�
         "environmentSettings": {
             "webSite": {
                 "name": "WebApplication10554",
-                "location": "China North"
+                "location": "West US"
             },
             "databases": [
                 {
@@ -114,7 +111,7 @@ JSON 組態檔會指定待部署項目的詳細資料。 它會包含您在建�
                     "edition": "",
                     "size": "",
                     "collation": "",
-                    "location": "China North"
+                    "location": "West US"
                 }
             ]
         }
@@ -124,6 +121,3 @@ JSON 組態檔會指定待部署項目的詳細資料。 它會包含您在建�
 
 ## <a name="next-steps"></a>後續步驟
 如需詳細資訊，請參閱 [Publish-WebApplicationVM (Windows PowerShell 指令碼)](vs-azure-tools-publish-webapplicationvm.md)
-
-
-<!-- Update_Description: update metedata properties -->
