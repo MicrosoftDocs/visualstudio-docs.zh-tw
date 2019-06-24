@@ -4,9 +4,7 @@ description: 了解如何使用 Visual Studio，在 Azure 雲端服務中新增�
 author: ghogen
 manager: jillfra
 assetId: 5ec9ae2e-8579-4e5d-999e-8ae05b629bd1
-ms.prod: visual-studio-dev14
-ms.technology: vs-azure
-ms.custom: vs-azure
+ms.custom: seodec18
 ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 03/21/2017
@@ -30,7 +28,7 @@ ms.locfileid: "62550937"
 
 1. 以滑鼠右鍵按一下 [角色] 節點，以顯示操作功能表。 從操作功能表中，選取 [新增]，然後選取現有的 Web 角色或背景工作角色，或是建立 Web 或背景工作角色專案。 您可以選取適當的專案 (例如 ASP.NET Web 應用程式專案)，並將它與角色專案產生關聯。
 
-    ![將角色加入至 Azure 雲端服務專案的功能表選項](./media/vs-azure-tools-cloud-service-project-managing-roles/add-role.png)
+   ![將角色加入至 Azure 雲端服務專案的功能表選項](./media/vs-azure-tools-cloud-service-project-managing-roles/add-role.png)
 
 ## <a name="removing-a-role-from-an-azure-cloud-service"></a>從 Azure 雲端服務移除角色
 下列步驟會逐步引導您完成從 Visual Studio 中的 Azure 雲端服務專案移除 Web 或背景工作角色。
@@ -43,7 +41,7 @@ ms.locfileid: "62550937"
 
 1. 以滑鼠右鍵按一下您要移除的節點，然後從操作功能表中選取 [移除]。
 
-    ![將角色加入至 Azure 雲端服務的功能表選項](./media/vs-azure-tools-cloud-service-project-managing-roles/remove-role.png)
+   ![將角色加入至 Azure 雲端服務的功能表選項](./media/vs-azure-tools-cloud-service-project-managing-roles/remove-role.png)
 
 ## <a name="readding-a-role-to-an-azure-cloud-service-project"></a>將角色重新加入至 Azure 雲端服務專案
 如果您從雲端服務專案中移除角色，但稍後決定將該角色重新加入至專案，則只有角色宣告和基本屬性 (例如端點和診斷資訊) 會被加入專案。 不會將任何其他資源或參考加入至 `ServiceDefinition.csdef` 檔案或 `ServiceConfiguration.cscfg` 檔案。 如果您想要加入此資訊，就必須手動將它重新加回這些檔案。

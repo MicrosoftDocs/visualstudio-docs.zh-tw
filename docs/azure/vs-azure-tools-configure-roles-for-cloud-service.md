@@ -4,9 +4,7 @@ description: 了解如何使用 Visual Studio 設定 Azure 雲端服務的角色
 author: ghogen
 manager: jillfra
 assetId: d397ef87-64e5-401a-aad5-7f83f1022e16
-ms.prod: visual-studio-dev14
-ms.technology: vs-azure
-ms.custom: vs-azure
+ms.custom: seodec18
 ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 03/21/2017
@@ -50,8 +48,6 @@ Azure 雲端服務可以有一或多個背景工作角色或 web 角色。 您�
 
     > [!IMPORTANT]
     > 如果您選擇特定服務組態，某些屬性會停用，因為它們只能針對所有組態設定。 若要編輯這些屬性，您必須選取 [所有組態]。
-    >
-    >
 
     ![Azure 雲端服務的服務組態清單](./media/vs-azure-tools-configure-roles-for-cloud-service/cloud-service-service-configuration-property.png)
 
