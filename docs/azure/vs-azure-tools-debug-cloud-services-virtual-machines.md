@@ -5,11 +5,10 @@ author: mikejo5000
 manager: jillfra
 ms.assetid: 945e06e0-2100-41af-b218-72347367ddab
 ms.topic: conceptual
-ms.custom: vs-azure
+ms.custom: seodec18
 ms.workload: azure-vs
 ms.date: 11/11/2016
 ms.author: mikejo
-ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
 ms.openlocfilehash: c29158be17320e8d7f842386a00c44ac86bf5513
 ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
