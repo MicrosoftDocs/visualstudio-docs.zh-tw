@@ -30,7 +30,7 @@ VSCEIP 預設為開啟。 您可以遵循下列指示將它關閉，或重新開
 
     ![選取選項按鈕，以反映您的參與偏好](media/visual-studio-experience-improvement-program-image1.png)
 
-[!INCLUDE [GDPR-related guidance](../../docs/misc/includes/gdpr-hybrid-note.md)]
+[!INCLUDE [GDPR-related guidance](../docs/misc/includes/gdpr-hybrid-note.md)]
 
 ## <a name="see-also"></a>另請參閱
 

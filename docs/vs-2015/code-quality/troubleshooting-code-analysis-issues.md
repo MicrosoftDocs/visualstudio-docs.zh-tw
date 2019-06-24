@@ -2,11 +2,11 @@
 title: 針對程式碼分析問題進行疑難排解 | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.technology: vs-ide-test
+ms.technology: vs-ide-code-analysis
 ms.topic: troubleshooting
 ms.assetid: 61c7e44d-2780-4df5-9bcb-49e40c1152fc
 caps.latest.revision: 7
-author: erickson-doug
+author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 047866f958ebfe6de20d5f7760b72eaab4135ef1
