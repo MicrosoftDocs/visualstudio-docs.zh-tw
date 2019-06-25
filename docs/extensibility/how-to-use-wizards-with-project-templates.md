@@ -1,5 +1,5 @@
 ---
-title: HOW TO：搭配專案範本使用精靈
+title: 作法：搭配專案範本使用精靈
 ms.date: 3/16/2019
 ms.topic: conceptual
 helpviewer_keywords:
@@ -14,12 +14,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 366244285892820039a5a0f7950a709d170b4527
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 3831cbc484fde7c61dbe1baf5ecd9ab07556a7f5
+ms.sourcegitcommit: 34807a6b6105ae7839adde8ff994c85182ad3aff
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66352034"
+ms.lasthandoff: 06/24/2019
+ms.locfileid: "67342419"
 ---
 # <a name="how-to-use-wizards-with-project-templates"></a>HOW TO：使用精靈與專案範本
 
@@ -68,7 +68,7 @@ Visual Studio 提供<xref:Microsoft.VisualStudio.TemplateWizard.IWizard>介面�
 
 3. 做為資產中加入 VSIX 專案的組件。 開啟*source.extension.vsixmanifest*檔案，然後選取**資產** 索引標籤。中**加入新資產** 視窗中，如**型別**選取**Microsoft.VisualStudio.Assembly**，如**來源**選取**的目前方案中的專案**，並針對**專案**選取**MyProjectWizard**。
 
-4. 將下列參考加入 VSIX 專案。 (在**方案總管**，VSIX 專案節點下，選取**參考**，按一下滑鼠右鍵，然後選取**加入參考**。)在 **加入參考**對話方塊，請在**Framework**索引標籤上，尋找**System.Windows 表單**組件並加以選取。 現在，選取**延伸模組** 索引標籤。尋找**EnvDTE**組件並加以選取。 也會發現**Microsoft.VisualStudio.TemplateWizardInterface**組件並加以選取。 按一下 [確定]  。
+4. 將下列參考加入 VSIX 專案。 (在**方案總管**，VSIX 專案節點下，選取**參考**，按一下滑鼠右鍵，然後選取**加入參考**。)在 **加入參考**對話方塊，請在**Framework**索引標籤上，尋找**System.Windows 表單**組件並加以選取。 也會尋找並選取**系統**並**System.Drawing**組件。 現在，選取**延伸模組** 索引標籤。尋找**EnvDTE**組件並加以選取。 也會發現**Microsoft.VisualStudio.TemplateWizardInterface**組件並加以選取。 按一下 [確定]  。
 
 5. 加入 VSIX 專案的精靈實作的類別。 (在**方案總管**，以滑鼠右鍵按一下 VSIX 專案節點，然後選取**新增**，然後**新項目**，然後**類別**。)將類別命名為**WizardImplementation**。
 
@@ -157,7 +157,7 @@ Visual Studio 提供<xref:Microsoft.VisualStudio.TemplateWizard.IWizard>介面�
 
    - <xref:System.Object> Visual studio 包含一組參數的陣列傳遞給精靈。
 
-     這個範例會從使用者輸入表單，以加入的參數值<xref:System.Collections.Generic.Dictionary%602>參數。 每個執行個體`$custommessage$`專案中的參數將會取代使用者所輸入的文字。 將下列組件加入至專案：**系統**並**System.Drawing**。
+     這個範例會從使用者輸入表單，以加入的參數值<xref:System.Collections.Generic.Dictionary%602>參數。 每個執行個體`$custommessage$`專案中的參數將會取代使用者所輸入的文字。
 
 7. 現在，建立**UserInputForm**。 在  *WizardImplementation.cs*檔案中，新增下列程式碼結尾之後`WizardImplementation`類別。
 
