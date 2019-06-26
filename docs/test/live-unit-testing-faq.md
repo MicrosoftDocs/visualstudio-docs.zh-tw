@@ -9,12 +9,12 @@ author: rpetrusha
 ms.author: ronpet
 ms.workload:
 - dotnet
-ms.openlocfilehash: 1e5f88acccd9ccbcd880b8403edb0eb40f97ad2e
-ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
+ms.openlocfilehash: 1ed80454f6a87047de9e338d26c749d3c27a98ea
+ms.sourcegitcommit: b468d71052a1b8a697f477ab23a3644de139f1e9
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "66714489"
+ms.lasthandoff: 06/19/2019
+ms.locfileid: "67258128"
 ---
 # <a name="live-unit-testing-frequently-asked-questions"></a>Live Unit Testing 常見問題集
 
@@ -197,15 +197,6 @@ public class Class1
 如果您解決方案的建置流程會產生屬於解決方案本身的原始程式碼，而您的建置目標檔案並未指定適當的輸入和輸出，即使您未進行編輯，您也可以建置解決方案。 您應該為目標提供輸入和輸出清單，讓 MSBuild 可以執行適當的更新狀態檢查，並判斷是否需要新的組建。
 
 每當 Live Unit Testing 偵測到原始程式檔已變更時，即會開始建置。 由於您方案的組建會產生原始程式檔，Live Unit Testing 將陷入無限的建置迴圈。 不過，如果在 Live Unit Testing 開始第二個組建時 (從上一個組建中偵測到新產生的原始程式檔之後) 檢查目標的輸入和輸出，它就會脫離該建置迴圈，因為輸入和輸出檢查將指出一切均為最新狀態。  
-
-## <a name="lightweight-solution-load"></a>輕量型解決方案載入
-
-**Live Unit Testing 如何與輕量型解決方案載入功能搭配運作？**
-
-Live Unit Testing 目前無法與輕量型解決方案載入功能良好搭配。 它只有在載入至少一個測試專案之後才會運作。 在那之前，它將不會運作，因為 Live Unit Testing 相依於至少一個參考所載入測試配接器 (MSTest、xUnit 或 NUnit) 的測試專案。
-
-> [!NOTE]
-> Visual Studio 2017 15.5 版和更新版本不再提供輕量型解決方案載入。 在 Visual Studio 2017 15.5 版和更新版本中，即便不使用輕量型解決方案載入，含有受控碼之大型解決方案的載入速度也比過去更快。
 
 ## <a name="new-process-coverage"></a>新的程序涵蓋範圍
 
