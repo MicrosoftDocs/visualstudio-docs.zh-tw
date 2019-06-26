@@ -9,12 +9,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: fc14a07557b3ae46a84f506bc0fa9007efface63
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d61e79055b2158115b459e643a36170304b7f655
+ms.sourcegitcommit: b468d71052a1b8a697f477ab23a3644de139f1e9
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62811879"
+ms.lasthandoff: 06/19/2019
+ms.locfileid: "67261721"
 ---
 # <a name="refactoring-to-convert-between-a-for-loop-and-a-foreach-statement"></a>重構以在 for 迴圈與 foreach 陳述式之間轉換
 
@@ -29,7 +29,7 @@ ms.locfileid: "62811879"
 - C#
 
 > [!NOTE]
-> [轉換為 foreach] 快速動作重構僅適用於包含下列所有三個組件的 [for](/dotnet/csharp/language-reference/keywords/for) 迴圈：初始設定式、條件及迭代器。
+> [轉換為 foreach]  快速動作重構僅適用於包含下列所有三個組件的 [for](/dotnet/csharp/language-reference/keywords/for) 迴圈：初始設定式、條件及迭代器。
 
 ### <a name="why-convert"></a>轉換的理由
 
@@ -43,11 +43,11 @@ ms.locfileid: "62811879"
 
 1. 將插入號放在 `for` 關鍵字中。
 
-1. 在字行任何地方按 **Ctrl**+**.**， 或按一下程式碼檔案邊界的螺絲起子 ![螺絲起子圖示](../media/screwdriver-icon.png) 圖示。
+1. 在字行任何地方按 **Ctrl**+ **.** ， 或按一下程式碼檔案邊界的螺絲起子 ![螺絲起子圖示](../media/screwdriver-icon.png) 圖示。
 
    ![轉換為 foreach 功能表](media/convert-to-foreach.png)
 
-1. 選取 [轉換為 'foreach']。 或選取 [預覽變更] 以開啟 [[預覽變更]](../../ide/preview-changes.md) 對話方塊，然後選取 [套用]。
+1. 選取 [轉換為 'foreach']  。 或選取 [預覽變更]  以開啟 [[預覽變更]](../../ide/preview-changes.md) 對話方塊，然後選取 [套用]  。
 
 ## <a name="convert-a-foreach-statement-to-a-for-loop"></a>將 foreach 陳述式轉換成 for 迴圈
 
@@ -71,16 +71,16 @@ ms.locfileid: "62811879"
 
 1. 將插入號放在 `foreach` 或 `For Each` 關鍵字中。
 
-1. 在字行任何地方按 **Ctrl**+**.**， 或按一下程式碼檔案邊界的螺絲起子 ![螺絲起子圖示](../media/screwdriver-icon.png) 圖示。
+1. 在字行任何地方按 **Ctrl**+ **.** ， 或按一下程式碼檔案邊界的螺絲起子 ![螺絲起子圖示](../media/screwdriver-icon.png) 圖示。
 
    ![轉換為 for 功能表](media/convert-to-for.png)
 
-1. 選取 [轉換為 'for']。 或選取 [預覽變更] 以開啟 [[預覽變更]](../../ide/preview-changes.md) 對話方塊，然後選取 [套用]。
+1. 選取 [轉換為 'for']  。 或選取 [預覽變更]  以開啟 [[預覽變更]](../../ide/preview-changes.md) 對話方塊，然後選取 [套用]  。
 
-1. 由於重構採用了新的反覆運算計數變數，因此 [重新命名] 方塊會顯示在編輯器的右上角。 若您想為變數選擇其他名稱，請鍵入名稱後按 **Enter 鍵**或選取 [重新命名] 方塊中的 [套用]。 若您不想選擇新名稱，則按 **Esc 鍵**或選取 [套用] 關閉 [重新命名] 方塊。
+1. 由於重構採用了新的反覆運算計數變數，因此 [重新命名]  方塊會顯示在編輯器的右上角。 若您想為變數選擇其他名稱，請鍵入名稱後按 **Enter 鍵**或選取 [重新命名]  方塊中的 [套用]  。 若您不想選擇新名稱，則按 **Esc 鍵**或選取 [套用]  關閉 [重新命名]  方塊。
 
 > [!NOTE]
-> 就 C# 而言，這些重構所產生的程式碼會針對集合中項目的類型，使用明確的類型或 [var](/dotnet/csharp/language-reference/keywords/var)。 所產生程式碼中的類型 (不論是明確還是隱含) 會取決於範圍內的程式碼樣式設定。 設定這些特定程式碼樣式設定時，是在電腦層級的下列位置底下設定：[工具] > [選項] > [文字編輯器] > [C#] > [程式碼樣式] > [一般] > [\'var' 喜歡設定]，或在 [EditorConfig](../../ide/editorconfig-code-style-settings-reference.md#implicit-and-explicit-types) 檔案中的方案層級設定。 如果您在 [選項] 中變更某個程式碼樣式，請重新開啟程式碼檔案以讓變更生效。
+> 就 C# 而言，這些重構所產生的程式碼會針對集合中項目的類型，使用明確的類型或 [var](/dotnet/csharp/language-reference/keywords/var)。 所產生程式碼中的類型 (不論是明確還是隱含) 會取決於範圍內的程式碼樣式設定。 設定這些特定程式碼樣式設定時，是在電腦層級的下列位置底下設定：[工具]   > [選項]   > [文字編輯器]   > [C#]   > [程式碼樣式]   > [一般]   > [\'var' 喜歡設定]  ，或在 [EditorConfig](../../ide/editorconfig-language-conventions.md#implicit-and-explicit-types) 檔案中的方案層級設定。 如果您在 [選項]  中變更某個程式碼樣式，請重新開啟程式碼檔案以讓變更生效。
 
 ## <a name="see-also"></a>另請參閱
 

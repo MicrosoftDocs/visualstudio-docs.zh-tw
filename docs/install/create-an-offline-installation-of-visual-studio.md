@@ -16,12 +16,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: f6e7c09eee52bd2ac48ccf5c51da59066ca72288
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: aa728615f74d8422b1e0c7a9cdd531281bc18e32
+ms.sourcegitcommit: 01c3c9dcade5d913bde2c7efa8c931a7b04e6cd0
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62974074"
+ms.lasthandoff: 06/25/2019
+ms.locfileid: "67365248"
 ---
 # <a name="create-an-offline-installation-of-visual-studio"></a>建立 Visual Studio 的離線安裝
 
@@ -46,7 +46,7 @@ Visual Studio 2019 的設計適用於各種網路和電腦組態。 雖然建議
 
 ::: moniker range="vs-2017"
 
-[**15.8 版的新功能**](/visualstudio/releasenotes/vs2017-relnotes-v15.8#install)：在您下載 Web 安裝程式之後，請從 Visual Studio 安裝程式中選取新的 [全部下載後安裝] 選項。 然後，繼續執行您的安裝。
+[**15.8 版的新功能**](/visualstudio/releasenotes/vs2017-relnotes-v15.8#install)：在您下載 Web 安裝程式之後，請從 Visual Studio 安裝程式中選取新的 [全部下載後安裝]  選項。 然後，繼續執行您的安裝。
 
    ![[全部下載後安裝] 選項](media/download-all-then-install.png)
 
@@ -54,7 +54,7 @@ Visual Studio 2019 的設計適用於各種網路和電腦組態。 雖然建議
 
 ::: moniker range="vs-2019"
 
-在您下載 Web 安裝程式之後，請從 Visual Studio 安裝程式中選取新的 [全部下載後安裝] 選項。 然後，繼續執行您的安裝。
+在您下載 Web 安裝程式之後，請從 Visual Studio 安裝程式中選取新的 [全部下載後安裝]  選項。 然後，繼續執行您的安裝。
 
    ![[全部下載後安裝] 選項](media/vs-2019/download-all-then-install-from-installer.png)
 
@@ -182,6 +182,7 @@ c:\vslayout\vs_community.exe --add Microsoft.VisualStudio.Workload.ManagedDeskto
 ## <a name="see-also"></a>另請參閱
 
 - [建立 Visual Studio 的網路安裝](../install/create-a-network-installation-of-visual-studio.md)
+- [更新 Visual Studio 的網路型安裝](update-a-network-installation-of-visual-studio.md)
 - [安裝 Visual Studio 離線安裝所需的憑證](../install/install-certificates-for-visual-studio-offline.md)
 - [使用命令列參數安裝 Visual Studio](use-command-line-parameters-to-install-visual-studio.md)
 - [Visual Studio 工作負載與元件識別碼](workload-and-component-ids.md)
