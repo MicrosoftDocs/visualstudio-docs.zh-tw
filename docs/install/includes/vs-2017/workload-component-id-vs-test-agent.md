@@ -11,11 +11,11 @@ ms.prod: visual-studio-windows
 ms.technology: vs-installation
 ms.topic: include
 ms.openlocfilehash: 0a1661b885db877f216c0c9d3d8363825ea5f8eb
-ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
+ms.sourcegitcommit: b468d71052a1b8a697f477ab23a3644de139f1e9
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "65848933"
+ms.lasthandoff: 06/19/2019
+ms.locfileid: "67259677"
 ---
 ## <a name="test-agent"></a>測試代理程式
 
