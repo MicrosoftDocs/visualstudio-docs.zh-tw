@@ -1,6 +1,6 @@
 ---
 title: CA1801:必須檢閱未使用的參數
-ms.date: 11/04/2016
+ms.date: 06/24/2019
 ms.topic: reference
 f1_keywords:
 - AvoidUnusedParameters
@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ee9500938feb893627069e9a83f3052fa84bc224
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f9a0714082e0fce744fe74eaa4e4aefee5a41867
+ms.sourcegitcommit: 01c3c9dcade5d913bde2c7efa8c931a7b04e6cd0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62545507"
+ms.lasthandoff: 06/25/2019
+ms.locfileid: "67365378"
 ---
 # <a name="ca1801-review-unused-parameters"></a>CA1801:必須檢閱未使用的參數
 
@@ -32,7 +32,10 @@ ms.locfileid: "62545507"
 |中斷變更|非中斷-成員不是組件，不論您所做的變更外部可見。<br /><br /> 非中斷-如果您變更要使用的參數，其主體中的成員。<br /><br /> 中斷-如果您移除參數，而且它是組件外部可見。|
 
 ## <a name="cause"></a>原因
- 方法簽章包括不用於方法主體中的參數； 此規則不會檢查下列方法：
+
+方法簽章會包含在方法主體中未使用的參數。
+
+此規則不會檢查下列幾種方法：
 
 - 委派所參考的方法。
 
@@ -47,24 +50,33 @@ ms.locfileid: "62545507"
 - 方法宣告`extern`(`Declare` Visual Basic 中的陳述式) 修飾詞。
 
 ## <a name="rule-description"></a>規則描述
- 檢閱中不會在方法主體中以確定解決無法存取它們的不正確性存在的非虛擬方法的參數。 未使用的參數會產生維護與效能的費用。
 
- 有時候這項規則的違規情形可以指向方法中實作錯誤。 例如，參數應該已經用於方法主體。 如果參數對因回溯相容性而存在，則隱藏此規則的警告。
+檢閱中不會在方法主體中以確定解決無法存取它們的不正確性存在的非虛擬方法的參數。 未使用的參數會產生維護與效能的費用。
+
+有時候這項規則的違規情形可以指向方法中實作錯誤。 例如，參數應該已經用於方法主體。 如果參數對因回溯相容性而存在，則隱藏此規則的警告。
 
 ## <a name="how-to-fix-violations"></a>如何修正違規
- 若要修正此規則的違規情形，移除未使用的參數 （重大變更），或使用參數在方法主體中 （非中斷變更）。
+
+若要修正此規則的違規情形，移除未使用的參數 （重大變更），或使用參數在方法主體中 （非中斷變更）。
 
 ## <a name="when-to-suppress-warnings"></a>隱藏警告的時機
- 它可安全地隱藏此規則，先前隨附的程式碼修正會是一項重大變更的警告。
+
+它可安全地隱藏此規則的警告：
+
+- 先前隨附的程式碼修正會是一項重大變更。
+
+- 針對`this`中的自訂擴充方法的參數<xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert?displayProperty=nameWithType>。 中的函式<xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert>類別是靜態的這樣就不需要存取`this`方法主體中的參數。
 
 ## <a name="example"></a>範例
- 下列範例顯示兩個方法。 其中一種方法違反此規則，另一種方法會滿足規則。
 
- [!code-csharp[FxCop.Usage.ReviewUnusedParameters#1](../code-quality/codesnippet/CSharp/ca1801-review-unused-parameters_1.cs)]
+下列範例顯示兩個方法。 其中一種方法違反此規則，另一種方法會滿足規則。
+
+[!code-csharp[FxCop.Usage.ReviewUnusedParameters#1](../code-quality/codesnippet/CSharp/ca1801-review-unused-parameters_1.cs)]
 
 ## <a name="related-rules"></a>相關的規則
- [CA1811:避免使用未呼叫的私用程式碼](../code-quality/ca1811-avoid-uncalled-private-code.md)
 
- [CA1812:避免使用未執行個體化的內部類別](../code-quality/ca1812-avoid-uninstantiated-internal-classes.md)
+[CA1811:避免使用未呼叫的私用程式碼](../code-quality/ca1811-avoid-uncalled-private-code.md)
 
- [CA1804： 必須移除未使用的區域變數](../code-quality/ca1804-remove-unused-locals.md)
+[CA1812:避免使用未執行個體化的內部類別](../code-quality/ca1812-avoid-uninstantiated-internal-classes.md)
+
+[CA1804： 必須移除未使用的區域變數](../code-quality/ca1804-remove-unused-locals.md)

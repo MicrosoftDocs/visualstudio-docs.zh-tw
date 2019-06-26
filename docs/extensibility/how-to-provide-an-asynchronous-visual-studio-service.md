@@ -1,5 +1,5 @@
 ---
-title: 作法：提供非同步的 Visual Studio 服務 |Microsoft Docs
+title: HOW TO：提供非同步的 Visual Studio 服務 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 0448274c-d3d2-4e12-9d11-8aca78a1f3f5
@@ -8,14 +8,14 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ebba3ca9434d704fff25f3d3519748930db12aa7
-ms.sourcegitcommit: 34807a6b6105ae7839adde8ff994c85182ad3aff
+ms.openlocfilehash: 9628a3e352d2662fe150ec7ef4cda7c79a2fdffa
+ms.sourcegitcommit: 01c3c9dcade5d913bde2c7efa8c931a7b04e6cd0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/24/2019
-ms.locfileid: "67342397"
+ms.lasthandoff: 06/25/2019
+ms.locfileid: "67365690"
 ---
-# <a name="how-to-provide-an-asynchronous-visual-studio-service"></a>作法：提供非同步的 Visual Studio 服務
+# <a name="how-to-provide-an-asynchronous-visual-studio-service"></a>HOW TO：提供非同步的 Visual Studio 服務
 如果您想要取得服務，而不會封鎖 UI 執行緒，您應該建立非同步的服務，並在背景執行緒上的將封裝載入。 基於此目的，您可以使用<xref:Microsoft.VisualStudio.Shell.AsyncPackage>而非<xref:Microsoft.VisualStudio.Shell.Package>，然後以非同步的封裝特殊的非同步方法中加入服務。
 
  提供同步的 Visual Studio 服務的相關資訊，請參閱[How to:提供服務](../extensibility/how-to-provide-a-service.md)。
@@ -74,7 +74,7 @@ ms.locfileid: "67342397"
             await TaskScheduler.Default;
             // do background operations that involve IO or other async methods
 
-            await this.JoinableTaskFactory.SwitchToMainThreadAsync(cancellationToken);
+            await ThreadHelper.JoinableTaskFactory.SwitchToMainThreadAsync(cancellationToken);
             // query Visual Studio services on main thread unless they are documented as free threaded explicitly.
             // The reason for this is the final cast to service interface (such as IVsShell) may involve COM operations to add/release references.
 
