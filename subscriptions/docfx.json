@@ -37,7 +37,8 @@
       "feedback_product_url": "https://developercommunity.visualstudio.com/",
       "breadcrumb_path": "~/_breadcrumb/toc.yml",
       "ms.prod": "visual-studio-family",
-      "ms.technology": "vs-subscriptions"
+      "ms.technology": "vs-subscriptions",
+      "disable_contribution_on_translation_quality": ["MT"]
     },
     "fileMetadata": {},
     "template": [],
