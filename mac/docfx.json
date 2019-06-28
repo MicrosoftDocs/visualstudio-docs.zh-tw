@@ -85,7 +85,8 @@
       "ms.technology": "vs-ide-general",
       "searchScope": [
         "Mac"
-      ]
+      ],
+      "disable_contribution_on_translation_quality": ["MT"]
     },
     "fileMetadata": {
       "breadcrumb_path": {
