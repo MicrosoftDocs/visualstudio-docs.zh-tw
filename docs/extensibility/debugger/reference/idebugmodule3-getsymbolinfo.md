@@ -85,8 +85,8 @@ void ShowSymbolSearchResults(IDebugModule3 *pIDebugModule3)
 ```
 
 **c:\symbols\user32.pdb...找不到的檔案。** 
- **c:\winnt\symbols\user32.pdb...版本不符。** 
- ** \\\symbols\symbols\user32.dll\0a8sd0ad8ad\user32.pdb...載入符號。**
+**c:\winnt\symbols\user32.pdb...版本不符。** 
+ **\\\symbols\symbols\user32.dll\0a8sd0ad8ad\user32.pdb...載入符號。**
 
 ## <a name="see-also"></a>另請參閱
 
