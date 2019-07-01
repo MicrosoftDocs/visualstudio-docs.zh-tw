@@ -8,12 +8,6 @@ metadata:
   description: 了解如何使用 Visual Studio，以您選擇的語言，為任何平台或裝置開發應用程式、服務及工具。
   ms.topic: hub-page
   monikerRange: '>=vs-2017'
-  ms.openlocfilehash: bac03cb71b4c925ecb7f5fd8f1ed69466f4bd114
-  ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
-  ms.translationtype: HT
-  ms.contentlocale: zh-TW
-  ms.lasthandoff: 06/07/2019
-  ms.locfileid: "66462860"
 highlightedContent:
   items:
   - title: 設定與安裝
@@ -161,21 +155,54 @@ additionalContent:
   - title: 工作負載
     items:
     - title: Web 和雲端
-      summary: "[網頁程式開發](/aspnet/) </br>\n[Azure 開發和管理](azure/index.yml) </br>\n[Python](python/index.yml) </br>\n[Node.js](javascript/index.yml) </br>\n[資料儲存和處理](data-tools/index.md) </br>\n[資料科學](python/data-science-and-analytical-applications-workload.md) </br>\n[Office/Sharepoint 開發](https://developer.microsoft.com/office/docs) \n"
+      links:
+      - text: Web 程式開發
+        url: /aspnet/
+      - text: Azure 開發和管理
+        url: azure/index.yml
+      - text: Python
+        url: python/index.yml
+      - text: Node.js
+        url: javascript/index.yml
+      - text: 資料儲存體和流程
+        url: data-tools/index.md
+      - text: 資料科學
+        url: python/data-science-and-analytical-applications-workload.md
+      - text: Office/Sharepoint 開發
+        url: https://developer.microsoft.com/office/docs
     - title: Windows
-      summary: >
-        [.NET 桌面開發](/dotnet/framework/develop-client-apps) </br>
-
-        [通用 Windows 平台開發](cross-platform/develop-apps-for-the-universal-windows-platform-uwp.md) </br>
-
-        [使用 C++ 進行 Windows 開發](/cpp/windows/desktop-applications-visual-cpp)
+      links:
+      - text: .NET 桌面開發
+        url: /dotnet/framework/develop-client-apps
+      - text: 通用 Windows 平台開發
+        url: cross-platform/develop-apps-for-the-universal-windows-platform-uwp.md
+      - text: 使用 C++ 進行 Windows 開發
+        url: /cpp/windows/desktop-applications-visual-cpp
     - title: 行動裝置與遊戲
-      summary: "[使用 .NET 進行行動開發 (Xamarin)](/xamarin/) </br>\n[使用 Unity 進行遊戲開發](cross-platform/visual-studio-tools-for-unity.md) </br>\n[使用 JavaScript 進行行動開發](/visualstudio/cross-platform/tools-for-cordova/?view=toolsforcordova-2017) (僅限 Visual Studio 2017 和 2015) </br>\n[使用 C++ 進行行動開發](/visualstudio/cross-platform/) </br>\n[使用 C++ 進行遊戲開發](/windows/uwp/gaming/e2e) \n"
+      links:
+      - text: 使用 .NET 進行行動開發 (Xamarin)
+        url: /xamarin/
+      - text: 使用 Unity 的遊戲程式開發
+        url: cross-platform/visual-studio-tools-for-unity.md
+      - text: 使用 JavaScript 的行動裝置程式開發
+        url: /visualstudio/cross-platform/tools-for-cordova/?view=toolsforcordova-2017
+        note: (Visual Studio 2017 and 2015 only)
+      - text: 使用 C++ 的行動裝置程式開發
+        url: /visualstudio/cross-platform/
+      - text: 使用 C++ 的遊戲程式開發
+        url: /windows/uwp/gaming/e2e
     - title: 其他工具組
-      summary: >
-        [Visual Studio 延伸模組開發](extensibility/index.md) </br>
-
-        [使用 C++ 進行 Linux 開發](/cpp/linux/) </br>
-
-        [.NET Core 跨平台開發](/dotnet/core/)
+      links:
+      - text: Visual Studio 擴充功能開發
+        url: extensibility/index.md
+      - text: 使用 C++ 的 Linux 程式開發
+        url: /cpp/linux/
+      - text: .NET Core 跨平台開發
+        url: /dotnet/core/
   footer: '[部落格](https://devblogs.microsoft.com/visualstudio/) - [Twitter](https://twitter.com/VisualStudio) - [Stack Overflow](https://stackoverflow.com/questions/tagged/visual-studio) - [問題回報](ide/talk-to-us.md) - [Developer Community](https://developercommunity.visualstudio.com/spaces/8/index.html)'
+ms.openlocfilehash: 1ce6f4c489f0a3c5ccf5b62f9541cba615f10742
+ms.sourcegitcommit: 7eb2fb21805d92f085126f3a820ac274f2216b4e
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 06/22/2019
+ms.locfileid: "67328812"

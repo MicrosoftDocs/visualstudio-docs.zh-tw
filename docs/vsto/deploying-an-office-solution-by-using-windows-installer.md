@@ -83,7 +83,7 @@ ms.locfileid: "62973579"
 
 ### <a name="to-get-installshield-limited-edition"></a>若要取得 InstallShield 限量版
 
-1. 在功能表列上，選擇 [檔案] > [新增] > [專案]。
+1. 在功能表列上，選擇 [檔案]   > [新增]   > [專案]  。
 
    [ **新增專案** ] 對話方塊隨即開啟。
 
@@ -218,7 +218,7 @@ ms.locfileid: "62973579"
 
 6. 在 [ **另存新檔** ] 對話方塊中，瀏覽至 [ **桌面** ] 資料夾。
 
-7. 在 **將儲存為類型**清單中，選擇**的所有檔案 (&#42;。&#42;)**.
+7. 在 **將儲存為類型**清單中，選擇**的所有檔案 (&#42;。&#42;)** .
 
 8. 在 [ **檔案名稱** ] 方塊中，輸入 **Visual Studio 2010 Tools for Office Runtime.prq**，然後選擇 [ **儲存** ] 按鈕。
 
@@ -277,7 +277,7 @@ ms.locfileid: "62973579"
 
 3. 在 [ **AllUSERS** ] 屬性的清單中，指定您要為電腦的所有使用者安裝此方案，還是只為安裝方案的使用者安裝。
 
-   若要安裝 VSTO 增益集目前的使用者，請選擇**ALLUSERS =""（每位使用者安裝）**。 若要為電腦上所有使用者安裝 VSTO 增益集，請選擇 [ALLUSERS=1 (每一使用者安裝)] 
+   若要安裝 VSTO 增益集目前的使用者，請選擇**ALLUSERS =""（每位使用者安裝）** 。 若要為電腦上所有使用者安裝 VSTO 增益集，請選擇 [ALLUSERS=1 (每一使用者安裝)] 
 
    在下一個程序中，您將建立登錄機碼，讓 Office 應用程式探索和載入 VSTO 增益集。 請參閱[VSTO 增益集的登錄項目](../vsto/registry-entries-for-vsto-add-ins.md)。
 
@@ -293,7 +293,7 @@ ms.locfileid: "62973579"
 
    [ **Application Registry** ] 頁面隨即出現。
 
-3. 在 [ **Do you want to configure the registry data that your application will install?**] 底下，選擇 [ **是** ] 選項按鈕。
+3. 在 [ **Do you want to configure the registry data that your application will install?** ] 底下，選擇 [ **是** ] 選項按鈕。
 
 4. 在  **Destination computer's Registry view**清單中，加入可讓您想要建立的安裝程式類型的金鑰階層。
 
@@ -461,7 +461,7 @@ ms.locfileid: "62973579"
 
 13. 在 [記事本] 中開啟方案的專案檔。 Visual Basic 專案的檔案名稱是*ExcelWorkbook.vbproj*。 C# 專案中，檔案的名稱是*ExcelWorkbook.csproj*。
 
-14. 在專案檔中，搜尋**&lt;SolutionID&gt;** 項目，將其值複製到剪貼簿，，然後關閉 [記事本]。
+14. 在專案檔中，搜尋 **&lt;SolutionID&gt;** 項目，將其值複製到剪貼簿，，然後關閉 [記事本]。
 
     您會將這個值傳入主控台應用程式做為參數。
 
@@ -490,7 +490,7 @@ ms.locfileid: "62973579"
 
 5. 在 **Setup.exe** 屬性頁上，從 [ **InstallShield 必要條件位置** ] 清單中選擇 [ **從 Web 下載**]。
 
-6. 在功能表列上，選擇 [建置] > [組態管理員]。
+6. 在功能表列上，選擇 [建置]   > [組態管理員]  。
 
 7. 在 [ **使用中的方案組態** ] 清單中，選擇 [ **SingleImage**]。
 
@@ -498,7 +498,7 @@ ms.locfileid: "62973579"
 
 9. 在功能表列上選擇 **建置** > **建置 OfficeAddInSetup**。
 
-   在建置完成之後，您可以找出*setup.exe*的檔案**OfficeAddInSetup**專案中的，於下列位置：<em>OfficeAddInSetupProjectRoot</em>**\OfficeAddInSetup\Express\SingleImage\DiskImages\DISK1\\**
+   在建置完成之後，您可以找出*setup.exe*的檔案**OfficeAddInSetup**專案中的，於下列位置：<em>OfficeAddInSetupProjectRoot</em> **\OfficeAddInSetup\Express\SingleImage\DiskImages\DISK1\\**
 
 ## <a name="see-also"></a>另請參閱
 

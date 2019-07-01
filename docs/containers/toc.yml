@@ -30,5 +30,15 @@
           href: view-and-diagnose-containers.md
         - name: 設定容器工具
           href: container-tools-configure.md
+        - name: 執行單元測試
+          href: container-unit-testing.md
+    - name: 概念
+      items:
+        - name: 建置容器化應用程式
+          href: container-build.md
     - name: 疑難排解
       href: troubleshooting-docker-errors.md
+    - name: 參考資料
+      items:
+        - name: 適用於容器專案的 MSBuild 屬性
+          href: container-msbuild-properties.md
