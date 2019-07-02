@@ -15,12 +15,12 @@ caps.latest.revision: 38
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: cd0ba9030d658abb78605cf2e14b5afaa9678f78
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: c3fe11a4d92ecc95f5835fc8a8c654b2aac3d235
+ms.sourcegitcommit: d2b234e0a4a875c3cba09321cdf246842670d872
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63424313"
+ms.lasthandoff: 07/01/2019
+ms.locfileid: "67493664"
 ---
 # <a name="uml-use-case-diagrams-guidelines"></a>UML 使用案例圖：方針
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -88,7 +88,7 @@ ms.locfileid: "63424313"
   
     - 執行者代表與您系統互動的使用者、組織和外部系統的類別。  
   
-    - 重新命名該執行者。 例如：**顧客、 餐廳、 信用卡機構。**  
+    - 重新命名該執行者。 例如: **顧客、 餐廳、 信用卡機構。**  
   
 3. 拖曳**使用案例**從工具箱拖曳到適當的系統。  
   
@@ -170,11 +170,11 @@ ms.locfileid: "63424313"
   
  ![使用案例顯示多對多多重性](../modeling/media/uml-ucguidemulti2.png "UML_UCGuideMulti2")  
   
-- 狀態為同類別的幾個執行者可以參與使用案例的單一相符項目，將在 動作項目端的關聯設多重性 **1...\\***.  
+- 狀態為同類別的幾個執行者可以參與使用案例的單一相符項目，將在 動作項目端的關聯設多重性**1..\*** .  
   
    在此圖中，一家或多家餐廳可以參與提供相同餐點訂購服務的工作。  
   
-- 若要顯示每個動作項目可以參與數個使用案例的同時，多重性的結尾使用案例的關聯，以設定 **\\***。  
+- 若要顯示每個動作項目可以參與數個使用案例的同時，將多重性設結尾使用案例的關聯 **\*** 。  
   
    在此圖中，每一家餐廳一次都可以提供多種訂購服務。  
   
@@ -190,11 +190,11 @@ ms.locfileid: "63424313"
   
    - **1**陳述這個角色只有一個執行個體參與每一個連結。  
   
-   - **1..\\** * 為此角色的一或多個執行個體參與每個連結的狀態。  
+   - **1..\*** 此角色的一或多個執行個體參與每個連結的狀態。  
   
    - **0..1**來表示參與是選擇性。  
   
-   - **\\** * 若要參與此連結的零或多個執行個體，此角色的狀態。  
+   - **\*** 此角色的零或多個執行個體參與此連結的狀態。  
   
 > [!NOTE]
 > 許多小組並未在使用案例圖上放置多重性資訊，而是讓多重性保留預設值 1。 他們會在使用案例的個別描述中提供此資訊。 在此情況下，將會隱藏使用案例圖中的所有多重性。  
