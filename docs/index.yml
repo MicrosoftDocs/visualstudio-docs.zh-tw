@@ -159,11 +159,11 @@ additionalContent:
       - text: Web 程式開發
         url: /aspnet/
       - text: Azure 開發和管理
-        url: azure/index.yml
+        url: /visualstudio/azure
       - text: Python
-        url: python/index.yml
+        url: /visualstudio/python
       - text: Node.js
-        url: javascript/index.yml
+        url: /visualstudio/javascript
       - text: 資料儲存體和流程
         url: data-tools/index.md
       - text: 資料科學
@@ -200,9 +200,9 @@ additionalContent:
       - text: .NET Core 跨平台開發
         url: /dotnet/core/
   footer: '[部落格](https://devblogs.microsoft.com/visualstudio/) - [Twitter](https://twitter.com/VisualStudio) - [Stack Overflow](https://stackoverflow.com/questions/tagged/visual-studio) - [問題回報](ide/talk-to-us.md) - [Developer Community](https://developercommunity.visualstudio.com/spaces/8/index.html)'
-ms.openlocfilehash: 1ce6f4c489f0a3c5ccf5b62f9541cba615f10742
-ms.sourcegitcommit: 7eb2fb21805d92f085126f3a820ac274f2216b4e
+ms.openlocfilehash: b24bc5b3e1427a6f3675398e05a639b45c376571
+ms.sourcegitcommit: d2b234e0a4a875c3cba09321cdf246842670d872
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/22/2019
-ms.locfileid: "67328812"
+ms.lasthandoff: 07/01/2019
+ms.locfileid: "67493708"
