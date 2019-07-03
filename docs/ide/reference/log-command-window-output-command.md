@@ -13,15 +13,16 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 24c72b0c5aeb510186728d66e51935c337547adf
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 6ab2dfea4c51ee33407088c208aea351732b8a4a
+ms.sourcegitcommit: 9753c7544cec852ca5efd0834e0956d9e53a5734
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62946839"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67043528"
 ---
 # <a name="log-command-window-output-command"></a>記錄命令視窗輸出命令
-將來自 [命令] 視窗的所有輸入和輸出複製到檔案中。
+
+將來自 [命令]  視窗的所有輸入和輸出複製到檔案中。
 
 ## <a name="syntax"></a>語法
 
@@ -30,51 +31,51 @@ Tools.LogCommandWindowOutput [filename] [/on|/off] [/overwrite]
 ```
 
 ## <a name="arguments"></a>引數
- `filename`
 
- 選擇性。 記錄檔的名稱。 根據預設，檔案會建立在使用者的設定檔資料夾中。 如果檔案名稱已經存在，就會將記錄附加至現有的檔案結尾。 如果未指定任何檔案，則會使用最近指定的檔案。 如果沒有先前的檔案存在，會建立預設記錄檔，稱為 cmdline.log。
+`filename`\
+選擇性。 記錄檔的名稱。 根據預設，檔案會建立在使用者的設定檔資料夾中。 如果檔案名稱已經存在，就會將記錄附加至現有的檔案結尾。 如果未指定任何檔案，則會使用最近指定的檔案。 如果沒有先前的檔案存在，會建立預設記錄檔，稱為 cmdline.log。
 
 > [!TIP]
 > 若要變更儲存記錄檔的位置，請輸入檔案的完整路徑，如果路徑包含任何空格則以引號括住。
 
 ## <a name="switches"></a>參數
- /on
 
- 選擇性。 開始在指定的檔案中記錄 [命令] 視窗，並將新資訊附加至檔案。
+/on\
+選擇性。 開始在指定的檔案中記錄 [命令]  視窗，並將新資訊附加至檔案。
 
- /off
+/off\
+選擇性。 停止 [命令]  視窗的記錄。
 
- 選擇性。 停止 [命令] 視窗的記錄。
-
- /overwrite
-
- 選擇性。 如果在 `filename` 引數指定的檔案符合現有檔案，即會覆寫該檔案。
+/overwrite\
+選擇性。 如果在 `filename` 引數指定的檔案符合現有檔案，即會覆寫該檔案。
 
 ## <a name="remarks"></a>備註
- 如果未指定任何檔案，預設會建立檔案 cmdline.log。 此命令的別名預設為 Log。
+
+如果未指定任何檔案，預設會建立檔案 cmdline.log。 此命令的別名預設為 Log。
 
 ## <a name="examples"></a>範例
- 這個範例會建立新的記錄檔 cmdlog，並開始命令記錄。
+
+這個範例會建立新的記錄檔 cmdlog，並開始命令記錄。
 
 ```cmd
 >Tools.LogCommandWindowOutput cmdlog
 ```
 
- 這個範例會停止記錄命令檔。
+這個範例會停止記錄命令檔。
 
 ```cmd
 >Tools.LogCommandWindowOutput /off
 ```
 
- 這個範例會繼續在先前使用的記錄檔中記錄命令。
+這個範例會繼續在先前使用的記錄檔中記錄命令。
 
 ```cmd
 >Tools.LogCommandWindowOutput /on
 ```
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [Visual Studio 命令](../../ide/reference/visual-studio-commands.md)
 - [命令視窗](../../ide/reference/command-window.md)
 - [尋找/命令方塊](../../ide/find-command-box.md)
-- [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md)
+- [Visual Studio 命令別名](../../ide/reference/visual-studio-command-aliases.md)

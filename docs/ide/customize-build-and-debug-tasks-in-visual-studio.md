@@ -8,18 +8,17 @@ helpviewer_keywords:
 - customize codebases [Visual Studio]
 - tasks.vs.json file [Visual Studio]
 - launch.vs.json file [Visual Studio]
-- vsworkspacesettings.json file [Visual Studio]
 author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: eb3ef6eff6da9040fc7e438d8f3271c60897a5ec
-ms.sourcegitcommit: 51dad3e11d7580567673e0d426ab3b0a17584319
+ms.openlocfilehash: 3bfe750e8dca68876ac5d894c0ca194f82a42f21
+ms.sourcegitcommit: b593bb889f049fcbdff502c30b73178ed17dbdf0
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/10/2019
-ms.locfileid: "66820306"
+ms.lasthandoff: 06/20/2019
+ms.locfileid: "67291034"
 ---
 # <a name="customize-build-and-debug-tasks-for-open-folder-development"></a>針對「開啟資料夾」自訂建置及對工作進行偵錯
 
@@ -33,7 +32,6 @@ Visual Studio 知道如何執行許多不同的語言和程式碼基底，但它
 |-|-|
 |*tasks.vs.json*|指定自訂建置命令和編譯器參數，以及任意 (非建置相關) 工作。<br>透過 [方案總管]  的右鍵功能表項目 [設定工作]  來存取。|
 |*launch.vs.json*|針對偵錯指定命令列引數。<br>透過 [方案總管]  的右鍵功能表項目 [偵錯並啟動設定]  來存取。|
-|*VSWorkspaceSettings.json*|可能會影響工作和啟動的一般設定。 例如，定義 *VSWorkspaceSettings.json* 中的 `envVars` 會將指定的環境變數新增至外部執行命令。<br>您會以手動方式建立此檔案。|
 
 這些 *.json* 檔案都是位於您程式碼基底之根資料夾中名為 *.vs* 的隱藏資料夾內。 當您在 [方案總管]  中的檔案或資料夾上選取 [設定工作]  或 [偵錯並啟動設定]  時，Visual Studio 會視需要建立 *tasks.vs.json* 和 *launch.vs.json* 檔案。 這些 *.json* 檔案會隱藏，因為使用者通常都不會想要將它簽入原始檔控制。 不過，如果您想要能夠將它簽入原始檔控制，請將檔案拖曳到您程式碼基底的根目錄中，這樣便能夠顯示它們。
 
@@ -193,7 +191,7 @@ bin:
 - 目前目錄的父系目錄，一路向上延伸至根目錄。
 - 位於根目錄中的設定檔案。
 
-這些彙總規則適用於 *tasks.vs.json* 和 *VSWorkspaceSettings.json* 檔案。 如需針對其他檔案中設定的彙總方式，請參閱本文中對應至該檔案的小節。
+這些彙總規則適用於 *tasks.vs.json*。 如需針對其他檔案中設定的彙總方式，請參閱本文中對應至該檔案的小節。
 
 ### <a name="properties-for-tasksvsjson"></a>適用於 tasks.vs.json 的屬性
 
@@ -289,10 +287,6 @@ bin:
 
 > [!NOTE]
 > *launch.vs.json* 中的 `configurations` 陣列屬性是讀取自兩個檔案位置&mdash;程式碼基底的根目錄，以及 *.vs* 目錄。 若發生衝突，系統會優先使用 *.vs\launch.vs.json* 中的值。
-
-## <a name="define-workspace-settings-in-vsworkspacesettingsjson"></a>在 VSWorkspaceSettings.json 中定義工作區設定
-
-您可以在 *VSWorkspaceSettings.json* 檔案中指定可能會影響工作及啟動的一般設定。 例如，如果您在 *VSWorkspaceSettings.json* 中定義 `envVars`，Visual Studio 便會針對於外部執行的命令新增指定的環境變數。 若要使用此檔案，您必須手動建立它。
 
 ## <a name="additional-settings-files"></a>其他設定檔案
 

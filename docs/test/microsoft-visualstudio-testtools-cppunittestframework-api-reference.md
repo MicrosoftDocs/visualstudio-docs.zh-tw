@@ -1,18 +1,18 @@
 ---
 title: Microsoft.VisualStudio.TestTools.CppUnitTestFramework API
-ms.date: 11/04/2017
+ms.date: 06/13/2019
 ms.topic: reference
 ms.author: mblome
 manager: jillfra
 ms.workload:
 - multiple
 author: mikeblome
-ms.openlocfilehash: b80b7fb8439f9e2a2a2af92e458295d153e449e5
-ms.sourcegitcommit: 51dad3e11d7580567673e0d426ab3b0a17584319
+ms.openlocfilehash: 3634dcd7cf136aa52de3ebf6bf5bfc3d57632d2c
+ms.sourcegitcommit: ab06cde69d862440b4277bcd9bf02e7b50593a1b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/10/2019
-ms.locfileid: "66820774"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67132137"
 ---
 # <a name="microsoftvisualstudiotesttoolscppunittestframework-api-reference"></a>Microsoft.VisualStudio.TestTools.CppUnitTestFramework API 參考
 
@@ -25,7 +25,8 @@ ms.locfileid: "66820774"
 標頭和 lib 路徑會自動在原生測試專案中設定。
 
 ## <a name="In_this_topic"></a>本主題內容
- [CppUnitTest.h](#cppUnitTest_h)
+
+[CppUnitTest.h](#cppUnitTest_h)
 
 - [建立測試類別和方法](#create_test_classes_and_methods)
 
@@ -184,7 +185,7 @@ BEGIN_TEST_METHOD_ATTRIBUTE(testMethodName)
 END_TEST_METHOD_ATTRIBUTE()
 ```
 
- 新增以一或多個 `TEST_METHOD_ATTRIBUTE` 巨集定義的屬性至測試方法 *testClassName*。
+ 將以一或多個 `TEST_METHOD_ATTRIBUTE` 巨集定義的屬性加入至測試方法 *testMethodName*。
 
  `TEST_METHOD_ATTRIBUTE` 巨集會以名稱 *attributeName* 和值 *attributeValue* 來定義屬性。
 
@@ -215,37 +216,38 @@ END_TEST_MODULE_ATTRIBUTE()
  `TEST_MODULE_ATTRIBUTE` 巨集會以名稱 *attributeName* 和值 *attributeValue* 來定義屬性。
 
 #### <a name="pre_defined_attributes"></a> 預先定義的屬性
- 這些預先定義的屬性巨集可以由巨集 `TEST_METHOD_ATTRIBUTE`、`TEST_CLASS_ATTRIBUTE` 或 `TEST_MODULE_ATTRIBUTE` 所取代，如上文所述。
+
+ 這些預先定義的屬性巨集是提供來為常見案例提供方便性。 它們可以被上述巨集 `TEST_METHOD_ATTRIBUTE` 取代。
 
 ```cpp
 TEST_OWNER(ownerAlias)
 ```
 
- 以名稱 `Owner` 和 *ownerAlias* 的屬性值定義屬性。
+ 以名稱 `Owner` 和 *ownerAlias* 的屬性值定義 `TEST_METHOD_ATTRIBUTE`。
 
 ```cpp
 TEST_DESCRIPTION(description)
 ```
 
- 以名稱 `Description` 和 *description* 的屬性值來定義屬性。
+ 以名稱 `Description` 和 *description* 的屬性值定義 `TEST_METHOD_ATTRIBUTE`。
 
 ```cpp
 TEST_PRIORITY(priority)
 ```
 
- 以名稱 `Priority` 和 *priority* 的屬性值來定義屬性。
+ 以名稱 `Priority` 和 *priority* 的屬性值定義 `TEST_METHOD_ATTRIBUTE`。
 
 ```cpp
 TEST_WORKITEM(workitem)
 ```
 
- 以名稱`WorkItem` 和 *workItem* 的屬性值來定義屬性。
+ 以名稱 `WorkItem` 和 *workItem* 的屬性值定義 `TEST_METHOD_ATTRIBUTE`。
 
 ```cpp
 TEST_IGNORE()
 ```
 
- 以名稱 `Ignore` 和 `true` 的屬性值來定義屬性。
+ 以名稱 `Ignore` 和 `true` 的屬性值定義 `TEST_METHOD_ATTRIBUTE`。
 
 ## <a name="cppUnitTestAssert_h"></a> CppUnitTestAssert.h
 

@@ -8,12 +8,12 @@ manager: markl
 ms.workload:
 - cplusplus
 author: mikeblome
-ms.openlocfilehash: f27e2585d082f61021fbc736b394612095f56684
-ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
+ms.openlocfilehash: 6c236a8454c9710bedbf080f4d7a09cfff6a7fac
+ms.sourcegitcommit: d4920babfc3d24a3fe1d4bf446ed3fe73b344467
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "66715257"
+ms.lasthandoff: 06/17/2019
+ms.locfileid: "67160177"
 ---
 # <a name="write-unit-tests-for-cc-in-visual-studio"></a>在 Visual Studio 中撰寫 C/C++ 的單元測試
 
@@ -41,7 +41,7 @@ C++ 單元測試專案支援 [CodeLens](../ide/find-code-changes-and-other-histo
 
 - **Boost.Test** 隨附作為 [使用 C++ 的桌面開發]  工作負載的預設元件。 它與**測試總管**整合但目前沒有專案範本，因此必須手動設定。 如需詳細資訊，請參閱[如何：在 Visual Studio 中使用 Boost.Test](how-to-use-boost-test-for-cpp.md)。
 
-- **CTest** 支援隨附於 [使用 C++ 的桌面開發]  工作負載一部分的[適用於 Visual Studio 的 CMake 工具](/cpp/build/cmake-tools-for-visual-cpp)元件。 不過，CTest 尚未與**測試總管**完全整合。 如需詳細資訊，請參閱[如何：在 Visual Studio 中使用 CTest](how-to-use-ctest-for-cpp.md)。
+- **CTest** 支援已隨附於 [使用 C++ 的桌面開發]  工作負載之一部分的 [C++ CMake 工具]  元件。 不過，CTest 尚未與**測試總管**完全整合。 如需詳細資訊，請參閱[如何：在 Visual Studio 中使用 CTest](how-to-use-ctest-for-cpp.md)。
 
 **Visual Studio 2015 和更早版本**
 
