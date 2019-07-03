@@ -5,12 +5,12 @@ author: conceptdev
 ms.author: crdun
 ms.date: 04/14/2017
 ms.assetid: 78107CFA-9308-4293-A92A-9B552A259E15
-ms.openlocfilehash: 7f130f5dec77e0a1965c68cf71e642fdb636832f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 54d786e721e151140cac2fa822ddbd04de6073ae
+ms.sourcegitcommit: d2b234e0a4a875c3cba09321cdf246842670d872
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62983347"
+ms.lasthandoff: 07/01/2019
+ms.locfileid: "67493654"
 ---
 # <a name="understanding-build-configurations"></a>了解組建組態
 
@@ -22,7 +22,7 @@ ms.locfileid: "62983347"
 
 ## <a name="solution-configurations"></a>方案組態
 
-類似於專案組態，方案組態是用來建立整個專案的自訂組態。 透過使用 [組態對應] ****   索引標籤下的 [組建] > [組態] ****   項目，您可以為每個方案項目指派目標組態，如下圖所示：
+類似於專案組態，方案組態是用來建立整個專案的自訂組態。 透過使用 [設定對應]  索引標籤下的 [組建] > [設定]  項目，您可以為每個方案項目指派目標設定，如下圖所示：
 
 ![組態對應選項](media/projects-and-solutions-image3.png)
 
@@ -36,7 +36,7 @@ ms.locfileid: "62983347"
 
 ![回合組態下拉式清單](media/projects-and-solutions-image8.png)
 
-回合組態是一組執行選項，具有一個名稱和數個基於不同目的定義在專案中的組態。 回合組態會在專案層級定義，並且會針對每個可執行專案自動建立一個預設組態，但是您可以新增所需數目的組態。 特定專案類型會自動產生其他的回合組態。 例如，watchOS 專案可能會產生「概覽和通知組態」 __ 。
+回合組態是一組執行選項，具有一個名稱和數個基於不同目的定義在專案中的組態。 回合組態會在專案層級定義，並且會針對每個可執行專案自動建立一個預設組態，但是您可以新增所需數目的組態。 特定專案類型會自動產生其他的回合組態。 例如，watchOS 專案可能會產生「概覽和通知組態」  。
 
 組態可以與其他開發人員共用 (在此情況下，組態會儲存在 .csproj 檔案)，或保留在本機中 (在此情況下，它們會儲存在 .user 檔案)。
 

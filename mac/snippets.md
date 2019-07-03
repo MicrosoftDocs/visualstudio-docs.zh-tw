@@ -5,12 +5,12 @@ author: conceptdev
 ms.author: crdun
 ms.date: 02/07/2019
 ms.assetid: 0FE27C0C-A861-4133-A74E-8D0505CF5342
-ms.openlocfilehash: 56f736aa1e32530b1db96ad301091151731b7d28
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b94a16fbd210bb229881d46071f24c59aea8419e
+ms.sourcegitcommit: 0cd282a7584b9bfd4df7882f8fdf3ad8a270e219
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62540042"
+ms.lasthandoff: 06/28/2019
+ms.locfileid: "67465137"
 ---
 # <a name="code-snippets"></a>程式碼片段
 
@@ -85,8 +85,6 @@ ms.locfileid: "62540042"
 - `$end$` &ndash; 當使用者完成程式碼片段中的關鍵字編輯時，游標將會放在 `$end$` 關鍵字的位置。
 
 上一節中的 `for` 程式碼片段即是這兩個保留關鍵字的範例。
-
-如需詳細資訊，請參閱 [Visual Studio 程式碼片段參考](/visualstudio/ide/code-snippets-schema-reference#keywords)。
 
 ## <a name="see-also"></a>另請參閱
 
