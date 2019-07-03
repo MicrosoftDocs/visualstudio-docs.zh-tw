@@ -15,16 +15,16 @@ ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: e22463ad6a50270412652b2797628010e169b1ba
-ms.sourcegitcommit: 92a04c57ac0a49f304fa2ea5043436f30068c3cd
+ms.openlocfilehash: 7df082d8cf67a5c0eb4c6ecd5c017480c63a6b27
+ms.sourcegitcommit: 7eb2fb21805d92f085126f3a820ac274f2216b4e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/21/2019
-ms.locfileid: "65976241"
+ms.lasthandoff: 06/22/2019
+ms.locfileid: "67328835"
 ---
 # <a name="whats-new-in-visual-studio-2019"></a>Visual Studio 2019 的新功能
 
-已針對 [16.1 版](/visualstudio/releases/2019/release-notes/)更新
+已針對 [16.1 版](/visualstudio/releases/2019/release-notes/)更新 
 
 >[!div class="button"]
 >[下載 Visual Studio 2019](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2019)
@@ -33,9 +33,9 @@ ms.locfileid: "65976241"
 
 以下是新增功能的概要回顧：
 
-* **[開發](#develop)**：透過改善的效能、即時程式碼清除及更好的搜尋結果，專注於目標並保持生產力。
-* **[共同作業](#collaborate)**：透過 Git 優先工作流程、即時編輯和偵錯，以及直接在 Visual Studio 中檢閱程式碼，享受自然的共同作業。
-* **[偵錯](#debug)**：反白顯示並巡覽至特定值、最佳化記憶體使用，然後自動建立應用程式執行的快照集。
+* **[開發](#develop)** ：透過改善的效能、即時程式碼清除及更好的搜尋結果，專注於目標並保持生產力。
+* **[共同作業](#collaborate)** ：透過 Git 優先工作流程、即時編輯和偵錯，以及直接在 Visual Studio 中檢閱程式碼，享受自然的共同作業。
+* **[偵錯](#debug)** ：反白顯示並巡覽至特定值、最佳化記憶體使用，然後自動建立應用程式執行的快照集。
 
 如需此版本中所有新功能的完整清單，請參閱[版本資訊](/visualstudio/releases/2019/release-notes/)。
 
@@ -90,7 +90,7 @@ C# 中有許多全新且非常有用的重構，讓您輕鬆就能組織您的�
 
 您也可以將修正程式集合儲存為設定檔。 例如，如果您有一組較少的目標修正程式經常在編寫程式碼時套用，然後在程式碼檢閱之前會套用另一組完整的修正程式，您可以將設定檔設定為處理這些不同的工作。
 
-   ![Visual Studio 2019 中的新程式碼清除控制項螢幕擷取畫面](media/vs-2019/code-cleanup-profile-configure.png)
+   ![Visual Studio 2019 中設定程式碼清除控制項的螢幕擷取畫面](media/vs-2019/code-cleanup-profile-configure.png)
 
 ### <a name="per-monitor-aware-pma-rendering"></a>個別監視器感知 (PMA) 轉譯
 

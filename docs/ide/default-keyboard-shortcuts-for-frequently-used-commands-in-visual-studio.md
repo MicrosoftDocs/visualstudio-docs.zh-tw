@@ -7,19 +7,21 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e96f9f56c2b73b8f3c39635c81019cd01fa8a69a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 72e010d76188be1ebe07eb9400b7cde60c2bf0a6
+ms.sourcegitcommit: 9753c7544cec852ca5efd0834e0956d9e53a5734
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62946930"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67043340"
 ---
-# <a name="default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio"></a>Visual Studio 中常用命令的預設鍵盤快速鍵
+# <a name="popular-keyboard-shortcuts-for-visual-studio"></a>Visual Studio 的熱門鍵盤快速鍵
 
 您可以選擇這些預設鍵盤快速鍵以存取 Visual Studio 中的常用命令。 如需內含預設快速鍵命令的完整清單，請參閱[預設鍵盤快速鍵](../ide/default-keyboard-shortcuts-in-visual-studio.md)。
 
+「全域」  內容表示快速鍵適用於 Visual Studio 中的任何工具視窗。
+
 > [!NOTE]
-> 您可以開啟 [選項] 對話方塊，展開 [環境] 節點，然後選擇 [鍵盤]，查閱命令的捷徑。
+> 您可以開啟 [選項]  對話方塊，展開 [環境]  節點，然後選擇 [鍵盤]  ，以[查看任何命令的捷徑](identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md)。
 
 ## <a name="build"></a>組建
 
@@ -38,7 +40,7 @@ ms.locfileid: "62946930"
 |Debug.BreakAll|**Ctrl+Alt+Break** [全域]|
 |Debug.DeleteAllBreakpoints|**Ctrl+Shift+F9** [全域]|
 |Debug.Exceptions|**Ctrl+Alt+E** [全域]|
-|Debug.QuickWatch|**Ctrl+Alt+Q** [全域]<br /><br /> 或**Shift+F9** [全域]|
+|Debug.QuickWatch|**Ctrl+Alt+Q** [全域]<br /><br />或**Shift+F9** [全域]|
 |Debug.Restart|**Ctrl+Shift+F5** [全域]|
 |Debug.RunToCursor|**Ctrl+F10** [全域]|
 |Debug.SetNextStatement|**Ctrl+Shift+F10** [全域]|
@@ -54,13 +56,13 @@ ms.locfileid: "62946930"
 
 |命令|鍵盤快速鍵 [內容]|
 |--------------| - |
-|Edit.BreakLine|**Enter** [文字編輯器、報表設計工具、Windows Form 設計工具]<br /><br /> 或 **Shift+Enter** [文字編輯器]|
+|Edit.BreakLine|**Enter** [文字編輯器、報表設計工具、Windows Form 設計工具]<br /><br />或 **Shift+Enter** [文字編輯器]|
 |Edit.CollapseToDefinitions|**Ctrl+M**、**Ctrl+O** [文字編輯器]|
 |Edit.CommentSelection|**Ctrl+K**、**Ctrl+C** [文字編輯器]|
-|Edit.CompleteWord|**Alt+向右鍵** [文字編輯器、工作流程設計工具]<br /><br /> 或 **Ctrl+空格鍵** [文字編輯器、工作流程設計工具]<br /><br /> 或 **Ctrl+K**、**W** [工作流程設計工具]<br /><br /> 或 **Ctrl+K、Ctrl+W** [工作流程設計工具]|
-|Edit.Copy|**Ctrl+C** [全域]<br /><br /> 或 **Ctrl+Insert** [全域]|
-|Edit.Cut|**Ctrl+X** [全域]<br /><br /> 或**Shift+Delete** [全域]|
-|Edit.Delete|**Delete** [全域、Team Explorer]<br /><br /> 或 **Shift+Delete** [循序圖、UML 活動圖、分層圖]<br /><br /> 或 **Ctrl+Delete** [類別圖表]|
+|Edit.CompleteWord|**Alt+向右鍵** [文字編輯器、工作流程設計工具]<br /><br />或 **Ctrl+空格鍵** [文字編輯器、工作流程設計工具]<br /><br />或 **Ctrl+K**、**W** [工作流程設計工具]<br /><br />或 **Ctrl+K、Ctrl+W** [工作流程設計工具]|
+|Edit.Copy|**Ctrl+C** [全域]<br /><br />或 **Ctrl+Insert** [全域]|
+|Edit.Cut|**Ctrl+X** [全域]<br /><br />或**Shift+Delete** [全域]|
+|Edit.Delete|**Delete** [全域、Team Explorer]<br /><br />或 **Shift+Delete** [循序圖、UML 活動圖、分層圖]<br /><br />或 **Ctrl+Delete** [類別圖表]|
 |Edit.Find|**Ctrl+F** [全域]|
 |Edit.FindAllReferences|**Shift+F12** [全域]|
 |Edit.FindinFiles|**Ctrl+Shift+F** [全域]|
@@ -78,14 +80,14 @@ ms.locfileid: "62946930"
 |Edit.LineCut|**Ctrl+L** [文字編輯器]|
 |Edit.LineDownExtendColumn|**Shift+Alt+向下鍵** [文字編輯器]|
 |Edit.LineOpenAbove|**Ctrl+Enter** [文字編輯器]|
-|Edit.ListMembers|**Ctrl+J** [文字編輯器、工作流程設計工具]<br /><br /> 或 **Ctrl+K、Ctrl+L** [工作流程設計工具]<br /><br /> 或 **Ctrl+K、L** [工作流程設計工具]|
+|Edit.ListMembers|**Ctrl+J** [文字編輯器、工作流程設計工具]<br /><br />或 **Ctrl+K、Ctrl+L** [工作流程設計工具]<br /><br />或 **Ctrl+K、L** [工作流程設計工具]|
 |Edit.NavigateTo|**Ctrl+,** [全域]|
 |Edit.OpenFile|**Ctrl+Shift+G** [全域]|
 |Edit.OvertypeMode|**Insert** [文字編輯器]|
-|Edit.ParameterInfo|**Ctrl+Shift+空格鍵** [文字編輯器、工作流程設計工具]<br /><br /> 或**Ctrl+K、Ctrl+P** [工作流程設計工具]<br /><br /> 或**Ctrl+K、P** [工作流程設計工具]|
-|Edit.Paste|**Ctrl+V** [全域]<br /><br /> 或 **Shift+Insert** [全域]|
+|Edit.ParameterInfo|**Ctrl+Shift+空格鍵** [文字編輯器、工作流程設計工具]<br /><br />或**Ctrl+K、Ctrl+P** [工作流程設計工具]<br /><br />或**Ctrl+K、P** [工作流程設計工具]|
+|Edit.Paste|**Ctrl+V** [全域]<br /><br />或 **Shift+Insert** [全域]|
 |Edit.PeekDefinition|**Alt+F12** [文字編輯器]|
-|Edit.Redo|**Ctrl+Y** [全域]<br /><br /> 或 **Shift+Alt+退格鍵** [全域]<br /><br /> 或 **Ctrl+Shift+Z** [全域]|
+|Edit.Redo|**Ctrl+Y** [全域]<br /><br />或 **Shift+Alt+退格鍵** [全域]<br /><br />或 **Ctrl+Shift+Z** [全域]|
 |Edit.Replace|**Ctrl+H** [全域]|
 |Edit.SelectAll|**Ctrl+A** [全域]|
 |Edit.SelectCurrentWord|**Ctrl+W** [文字編輯器]|
@@ -97,7 +99,7 @@ ms.locfileid: "62946930"
 |Edit.ToggleCompletionMode|**Ctrl+Alt+空格鍵** [文字編輯器]|
 |Edit.ToggleOutliningExpansion|**Ctrl+M、Ctrl+M** [文字編輯器]|
 |Edit.UncommentSelection|**Ctrl+K、Ctrl+U** [文字編輯器]|
-|Edit.Undo|**Ctrl+Z** [全域]<br /><br /> 或 **Alt+退格鍵** [全域]|
+|Edit.Undo|**Ctrl+Z** [全域]<br /><br />或 **Alt+退格鍵** [全域]|
 |Edit.WordDeleteToEnd|**Ctrl+Delete** [文字編輯器]|
 |Edit.WordDeleteToStart|**Ctrl+退格鍵** [文字編輯器]|
 
@@ -142,7 +144,7 @@ ms.locfileid: "62946930"
 |--------------| - |
 |View.ClassView|**Ctrl+Shift+C** [全域]|
 |View.EditLabel|**F2** [全域]|
-|View.ErrorList|\\Ctrl+**、Ctrl+E** [全域]<br /><br /> 或 **Ctrl+\\、E** [全域]|
+|View.ErrorList|\\Ctrl+ **、Ctrl+E** [全域]<br /><br />或 **Ctrl+\\、E** [全域]|
 |View.NavigateBackward|**Ctrl+-** [全域]|
 |View.NavigateForward|**Ctrl+Shift+-** [全域]|
 |View.ObjectBrowser|**Ctrl+Alt+J** [全域]|
@@ -150,11 +152,11 @@ ms.locfileid: "62946930"
 |View.PropertiesWindow|**F4**|
 |View.Refresh|**F5** [Team Explorer]|
 |View.ServerExplorer|**Ctrl+Alt+S** [全域]|
-|View.ShowSmartTag|**Ctrl+.** [Global]<br /><br /> 或 **Shift+Alt+F10** [全域、HTML 編輯器設計檢視]|
+|View.ShowSmartTag|**Ctrl+.** [Global]<br /><br />或 **Shift+Alt+F10** [全域、HTML 編輯器設計檢視]|
 |View.SolutionExplorer|**Ctrl+Alt+L** [全域]|
 |View.TfsTeamExplorer|**Ctrl+\\、Ctrl+M** [全域]|
 |View.Toolbox|**Ctrl+Alt+X** [全域]|
-|View.ViewCode|**Enter** [類別圖表]<br /><br /> 或 **F7** [設定設計工具]|
+|View.ViewCode|**Enter** [類別圖表]<br /><br />或 **F7** [設定設計工具]|
 |View.ViewDesigner|**Shift+F7** [HTML 編輯器原始碼檢視]|
 
 ## <a name="window"></a>視窗
@@ -170,3 +172,4 @@ ms.locfileid: "62946930"
 ## <a name="see-also"></a>另請參閱
 
 - [識別及自訂 Visual Studio 中的鍵盤快速鍵](../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md)
+- [Visual Studio 中的所有鍵盤快速鍵](default-keyboard-shortcuts-in-visual-studio.md)

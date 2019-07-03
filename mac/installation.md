@@ -7,12 +7,12 @@ ms.date: 04/02/2019
 ms.technology: vs-ide-install
 ms.assetid: 22B1F2CD-32AE-464D-80AC-C8AB4786B015
 ms.custom: video
-ms.openlocfilehash: f989ccba45a034d90562b69eabf871e0e2a545b4
-ms.sourcegitcommit: cd21b38eefdea2cdefb53e68e7a30b868e78dd6b
+ms.openlocfilehash: 1f8cfd597d2bfe8642c5b83940ceb03b7dd06e69
+ms.sourcegitcommit: 16bcaca215de75479695738d3c2d703c78c3500e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/22/2019
-ms.locfileid: "66037526"
+ms.lasthandoff: 06/21/2019
+ms.locfileid: "67309780"
 ---
 # <a name="install-visual-studio-2019-for-mac"></a>安裝 Visual Studio 2019 for Mac
 
@@ -37,20 +37,32 @@ ms.locfileid: "66037526"
 
     [![按一下大型箭號，開始安裝](media/install-installer-sml.png)](media/install-installer.png#lightbox)
 
-3. 您可能會看到要從網際網路下載應用程式的相關警告。 按一下 [開啟]。
+3. 您可能會看到要從網際網路下載應用程式的相關警告。 按一下 [開啟]  。
 4. 等候安裝程式檢查您的系統：
 
     [![安裝程式會檢查您系統的已安裝元件](media/install-checking-sml.png)](media/install-checking.png#lightbox)
 
-5. 系統會出現要求您確認隱私權和授權條款的警示。 請前往連結並加以閱讀；如果您同意即可按 [繼續]：
+5. 系統會出現要求您確認隱私權和授權條款的警示。 請前往連結並加以閱讀；如果您同意即可按 [繼續]  ：
 
     [![前往隱私權和條款的連結；如果您同意，請繼續執行](media/install-privacy-sml.png)](media/install-privacy.png#lightbox)
 
-6. 即會顯示可用工作負載的清單。 選取您想要使用的項目：
+6. 即會顯示可用工作負載的清單。 選取您想要使用的元件：
 
-    [![選擇您想要安裝的選擇性工作負載功能](media/install-selection-sml.png)](media/install-selection.png#lightbox)
+    [![選擇您想要安裝的選擇性工作負載功能](media/install-selection.png)](media/install-selection.png#lightbox)
 
-7. 選取完成之後，請按 [安裝] 按鈕。
+   如果您不想要安裝所有平台，請使用以下指南以協助您決定要安裝的平台：
+
+   * **使用 Xamarin 的應用程式**：
+      - Xamarin.Forms – 選取 [Android]  與 [iOS]  平台。
+      - 僅 iOS – 選取 [iOS]  平台 (請注意，您必須安裝 [**Xcode**](https://developer.apple.com/xcode/))。
+      - 僅 Android – 選取 [Android]  平台 (請注意，您也必須選取相關聯的相依性)。
+      - 僅 Mac – 選取 [macOS]  平台 (請注意，您必須安裝 [**Xcode**](https://developer.apple.com/xcode/))。
+      - 完整跨平台的 Xamarin 應用程式 – 選取 [Android]  、[iOS]  與 [macOS]  平台。
+   * **.NET Core 應用程式** – 選取 [.NET Core]  平台。
+   * **ASP.NET Core Web 應用程式** – 選取 [.NET Core]  平台。
+   * **跨平台 Unity 遊戲開發** – 除了 Visual Studio for Mac 以外，不需要安裝其他平台。 如需安裝 Unity 延伸模組的詳細資訊，請參閱 [Unity 安裝指南](/visualstudio/mac/setup-vsmac-tools-unity)。
+
+7. 選取完成之後，請按 [安裝]  按鈕。
 8. 安裝程式會顯示下載和安裝 Visual Studio for Mac 的進度，並顯示選取的工作負載。 系統可能會提示您輸入密碼，授與安裝所需的權限。
 
 如果您在公司環境安裝時發生網路問題，請檢閱[在防火牆或 Proxy 後方安裝](https://docs.microsoft.com/visualstudio/mac/installation#install-visual-studio-for-mac-behind-a-firewall-or-proxy-server)指示。

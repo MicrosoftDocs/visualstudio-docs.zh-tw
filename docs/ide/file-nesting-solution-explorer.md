@@ -8,12 +8,12 @@ helpviewer_keywords:
 author: angelosp
 ms.author: angelpe
 manager: jillfra
-ms.openlocfilehash: b40d943e2e05f380b5c8111db39c9cf13c8b3bf8
-ms.sourcegitcommit: ba5e072c9fedeff625a1332f22dcf3644d019f51
+ms.openlocfilehash: 0ec16c23a3ed16f555bb1a3af952b422f4aceb35
+ms.sourcegitcommit: 16bcaca215de75479695738d3c2d703c78c3500e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/31/2019
-ms.locfileid: "66432268"
+ms.lasthandoff: 06/21/2019
+ms.locfileid: "67309802"
 ---
 # <a name="file-nesting-in-solution-explorer"></a>[方案總管] 中的檔案巢狀
 
@@ -86,19 +86,42 @@ ms.locfileid: "66432268"
 
 ### <a name="the-addedextension-provider"></a>addedExtension 提供者
 
-此提供者會將有其他副檔名的檔案巢狀於沒有其他副檔名的檔案下。 其他副檔名只能出現在完整檔名的結尾處。 參考下列範例：
+此提供者會將有其他副檔名的檔案巢狀於沒有其他副檔名的檔案下。 其他副檔名只能出現在完整檔名的結尾處。
+
+參考下列範例：
 
 ![addedExtension 範例規則](media/filenesting_addedextension.png) ![addedExtension 範例作用](media/filenesting_addedextension_effect.png)
 
 * *file.html.css* 巢狀於 *file.html* 下，這是因為 **addedExtension** 規則
 
+> [!NOTE]
+> 您未替 `addedExtension` 規則指定任何副檔名；它會自動套用到所有副檔名。 也就是和另一個檔案的名稱與副檔名相同，且尾端有額外副檔名的任何檔案，都會以巢狀方式位於另一個檔案之下。 您無法限制將此提供者的效果限制為只對特定檔案副檔名有效。
+
 ### <a name="the-pathsegment-provider"></a>pathSegment 提供者
 
-此提供者會將有其他副檔名的檔案巢狀放在沒有其他副檔名的檔案下。 其他副檔名只能出現在完整檔名的中間。 參考下列範例：
+此提供者會將有其他副檔名的檔案巢狀放在沒有其他副檔名的檔案下。 其他副檔名只能出現在完整檔名的中間。
+
+參考下列範例：
 
 ![pathSegment 範例規則](media/filenesting_pathsegment.png) ![pathSegment 範例作用](media/filenesting_pathsegment_effect.png)
 
 * *jquery.min.js* 巢狀於 *jquery.js* 下，這是因為 **pathSegment** 規則
+
+> [!NOTE]
+> - 如果您未替 `pathSegment` 規則指定任何特定副檔名；它會套用到所有副檔名。 也就是和另一個檔案的名稱與副檔名相同，且中間有額外副檔名的任何檔案，都會以巢狀方式位於另一個檔案之下。
+> - 您可以透過以下方式指定副檔名，限制 `pathSegment` 規則的效果只對特定副檔名有效：
+>    ```
+>    "pathSegment": {
+>       "add": {
+>         ".*": [
+>           ".js",
+>           ".css",
+>           ".html",
+>           ".htm"
+>         ]
+>       }
+>    }
+>    ```
 
 ### <a name="the-allextensions-provider"></a>allExtensions 提供者
 

@@ -6,12 +6,12 @@ ms.author: amburns
 ms.date: 04/13/2019
 ms.technology: vs-ide-install
 ms.assetid: 31AF914A-C66B-4CD3-9429-39695E0E94AE
-ms.openlocfilehash: 2b89ea7155b27f9c5b54dae38d4e823895fad705
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 554633b2fc5d47d9cc4824ff9d8bf2febfbcd1f8
+ms.sourcegitcommit: 16bcaca215de75479695738d3c2d703c78c3500e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62783301"
+ms.lasthandoff: 06/21/2019
+ms.locfileid: "67309632"
 ---
 # <a name="troubleshooting-updater-has-errors-retrieving-information"></a>疑難排解：更新程式在擷取資訊時發生錯誤
 
@@ -23,3 +23,4 @@ ms.locfileid: "62783301"
 - 如果您繼續看到此錯誤訊息，若 **.dmg** 仍在您的機器上 (或者您可以從 [visualstudio.com](https://visualstudio.microsoft.com/vs/mac/) 下載)，您也可以嘗試使用安裝程式來更新
     - 安裝程式會更新您機器上任何已安裝的元件。
     - 藉由重新執行安裝程式，您也可以安裝先前未安裝的任何遺漏元件。
+- 您也可以藉由刪除位在 `~/Library/Caches/VisualStudio/7.0/TempDownload/index.xml` 的檔案，以嘗試清除快取檔案。

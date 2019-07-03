@@ -1,38 +1,40 @@
 ---
 title: 使用 .runsettings 檔案設定單元測試
-ms.date: 02/28/2018
+ms.date: 06/14/2019
 ms.topic: conceptual
 ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: f7d4da645c464e51bd331bca64066209b52132fe
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.openlocfilehash: 9715edff9083a0e99fa52075426d11ea92b7b6e2
+ms.sourcegitcommit: d4920babfc3d24a3fe1d4bf446ed3fe73b344467
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66746563"
+ms.lasthandoff: 06/17/2019
+ms.locfileid: "67160199"
 ---
 # <a name="configure-unit-tests-by-using-a-runsettings-file"></a>使用 *.runsettings* 檔案設定單元測試
 
 您可以使用 *.runsettings* 檔案來設定 Visual Studio 中的單元測試。 例如，您可以變更執行測試的 .NET 版本、測試結果的所在目錄，或在測試回合期間所收集的資料。
 
-回合設定檔為選擇性。 如果不想要任何特殊組態，即不需要 *.runsettings* 檔案。 .runsettings  檔案最常見的用法是自訂[程式碼涵蓋範圍分析](../test/customizing-code-coverage-analysis.md)。
+回合設定檔為選擇性。 如果不想要任何特殊組態，即不需要 *.runsettings* 檔案。 *.runsettings* 檔案常見的用法是用來自訂[程式碼涵蓋範圍分析](../test/customizing-code-coverage-analysis.md)。
 
 ## <a name="specify-a-run-settings-file"></a>指定回合設定檔
 
 您可以使用回合設定檔案來設定從[命令列](vstest-console-options.md)、在 IDE 中，或使用 Azure Test Plans 或 Team Foundation Server (TFS) 之[組建工作流程](/azure/devops/pipelines/test/getting-started-with-continuous-testing?view=vsts)中執行的測試。
 
-### <a name="specify-a-run-settings-file-in-the-ide"></a>在 IDE 中指定回合設定檔
+### <a name="ide"></a>IDE
 
-選取 [測試]   > [測試設定]   > [選取測試設定檔]  ，然後選取 .runsettings  檔案。 該檔案隨即出現在 [測試設定]  功能表上，而且您可以加以選取或取消選取。 選取時，只要選取 [分析程式碼涵蓋範圍]  ，就會套用回合設定檔。
+若要在 IDE 中指定回合設定檔，請選取 [測試]   > [測試設定]   > [選取測試設定檔]  ，然後選取 *.runsettings* 檔案。
 
 ![在 Visual Studio 中選取測試設定檔案功能表](media/select-test-settings-file.png)
 
-### <a name="specify-a-run-settings-file-at-the-command-line"></a>在命令列指定回合設定檔
+該檔案隨即出現在 [測試設定]  功能表上，而且您可以加以選取或取消選取。 選取時，只要選取 [分析程式碼涵蓋範圍]  ，就會套用回合設定檔。
 
-若要從命令列執行測試，請使用 vstest.console.exe  ，然後使用 **/Settings** 參數指定設定檔。
+### <a name="command-line"></a>命令列
+
+若要從命令列執行測試，請使用 *vstest.console.exe*，然後使用 **/Settings** 參數來指定設定檔。
 
 1. 啟動 Visual Studio Developer 命令提示字元：
 
@@ -52,6 +54,12 @@ ms.locfileid: "66746563"
 
    ```cmd
    vstest.console.exe MyTestAssembly.dll /EnableCodeCoverage /Settings:CodeCoverage.runsettings
+   ```
+
+   或
+
+   ```cmd
+   vstest.console.exe --settings:test.runsettings test.dll
    ```
 
 如需詳細資訊，請參閱 [VSTest.Console.exe 命令列選項](vstest-console-options.md)。
@@ -174,7 +182,7 @@ ms.locfileid: "66746563"
 |節點|預設|值|
 |-|-|-|
 |**ResultsDirectory**||放置測試結果的目錄。|
-|**TargetFrameworkVersion**|Framework40|Framework35、Framework40、Framework45<br /><br />此設定會指定用來尋找及執行測試的單元測試架構版本。 它可以與您在單元測試專案建置屬性中指定的 .NET 平台版本不同。|
+|**TargetFrameworkVersion**|Framework40|`FrameworkCore10` 適用於 .NET Core 來源、`FrameworkUap10` 適用於 UWP 型來源、`Framework45` 適用於 .NET Framework 4.5 和更新版本、`Framework40` 適用於 .NET Framework 4.0，而 `Framework35` 則適用於 .NET Framework 3.5。<br /><br />此設定會指定用來尋找及執行測試的單元測試架構版本。 它可以與您在單元測試專案建置屬性中指定的 .NET 平台版本不同。<br /><br />如果您從 *.runsettings* 檔案省略 `TargetFrameworkVersion` 元素，平台會根據組建二進位檔自動判斷架構版本。|
 |**TargetPlatform**|x86|x86、x64|
 |**TreatTestAdapterErrorsAsWarnings**|False|false、true|
 |**TestAdaptersPaths**||TestAdapters 所在目錄的一或多個路徑|
@@ -263,5 +271,6 @@ public void HomePageTest()
 
 ## <a name="see-also"></a>另請參閱
 
+- [設定測試回合](https://github.com/microsoft/vstest-docs/blob/master/docs/configure.md) \(英文\)
 - [自訂程式碼涵蓋範圍分析](../test/customizing-code-coverage-analysis.md)
 - [Visual Studio 測試工作 (Azure Test Plans)](/azure/devops/pipelines/tasks/test/vstest?view=vsts)

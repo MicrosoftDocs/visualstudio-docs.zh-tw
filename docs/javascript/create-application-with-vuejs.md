@@ -12,12 +12,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: a5c903b0aa82f3711bdbe1fd7925829fbdc06c9a
-ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
+ms.openlocfilehash: a83e19f808a3f3ab7e1bf9f4fb58f5ddd7a218b7
+ms.sourcegitcommit: 91c7f1b525e0c22d938bc4080ba4ceac2483474f
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65226050"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "67033136"
 ---
 # <a name="create-a-vuejs-application-using-nodejs-tools-for-visual-studio"></a>使用適用於 Visual Studio 的 Node.js 工具建立 Vue.js 應用程式
 
@@ -43,13 +43,13 @@ Visual Studio 支援使用 JavaScript 或 TypeScript 搭配 [Vue.js](https://vue
     如果您尚未安裝 Visual Studio，請前往  [Visual Studio 下載](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) 頁面免費進行安裝。
     ::: moniker-end
 
-    如果您需要安裝工作負載，但已安裝 Visual Studio，請移至 [工具] > [取得工具與功能...]，以開啟 Visual Studio 安裝程式。 選擇 [Node.js 開發] 工作負載，然後選擇 [修改]。
+    如果您需要安裝工作負載，但已安裝 Visual Studio，請移至 [工具]   > [取得工具與功能...]  ，以開啟 Visual Studio 安裝程式。 選擇 [Node.js 開發]  工作負載，然後選擇 [修改]  。
 
 * 若要建立 ASP.NET Core 專案，您必須安裝 ASP.NET 與網頁程式開發工作負載，以及 .NET Core 跨平台開發工作負載。
 
 * 您必須安裝 Node.js 執行階段。
 
-    如果您沒有安裝，請從 [Node.js](https://nodejs.org/en/download/) 網站安裝 LTS 版本。 一般而言，Visual Studio 會自動偵測已安裝的 Node.js 執行階段。 如果它沒有偵測到已安裝的執行階段，您可以將專案設定為參考屬性頁面中已安裝的執行階段。 (建立專案之後，請以滑鼠右鍵按一下專案節點，然後選擇 [屬性])。
+    如果您沒有安裝，請從 [Node.js](https://nodejs.org/en/download/) 網站安裝 LTS 版本。 一般而言，Visual Studio 會自動偵測已安裝的 Node.js 執行階段。 如果它沒有偵測到已安裝的執行階段，您可以將專案設定為參考屬性頁面中已安裝的執行階段。 (建立專案之後，請以滑鼠右鍵按一下專案節點，然後選擇 [屬性]  )。
 
 ## <a name="create-a-vuejs-project-using-a-template"></a>使用範本建立 Vue.js 專案
 
@@ -71,15 +71,15 @@ Vue.js 提供正式的 CLI 以快速 Scaffolding 專案。 如果您想要使用
 1. 開啟 Visual Studio 並建立新專案。
 
     ::: moniker range=">=vs-2019"
-    按 **Esc** 關閉開始視窗。 鍵入 **Ctrl + Q** 來開啟搜尋方塊，鍵入 **asp.net**，然後選擇 [建立新的 ASP.NET Core Web 應用程式]。 在出現的對話方塊中，鍵入名稱 **client-app**，然後選擇 [建立]。
+    按 **Esc** 關閉開始視窗。 鍵入 **Ctrl + Q** 來開啟搜尋方塊，鍵入 **asp.net**，然後選擇 [建立新的 ASP.NET Core Web 應用程式]  。 在出現的對話方塊中，鍵入名稱 **client-app**，然後選擇 [建立]  。
     ::: moniker-end
     ::: moniker range="vs-2017"
-    從頂端功能表列中，選擇 [檔案] > [新增] > [專案]。 在 [新增專案] 對話方塊的左窗格中，展開 [Visual C#]，然後選擇 [Web]。 在中間窗格中，選擇 [ASP.NET Core Web 應用程式]，鍵入名稱 **client-app**，然後選擇 [確定]。
+    從頂端功能表列中，選擇 [檔案]   > [新增]   > [專案]  。 在 [新增專案]  對話方塊的左窗格中，展開 [Visual C#]  ，然後選擇 [Web]  。 在中間窗格中，選擇 [ASP.NET Core Web 應用程式]  ，鍵入名稱 **client-app**，然後選擇 [確定]  。
     ::: moniker-end
 
-    如果您看不到 [ASP.NET Core Web 應用程式] 專案範本，則必須先安裝 **ASP.NET 與網頁程式開發** 工作負載和 **.NET Core** 程式開發工作負載。 若要安裝工作負載，請在 [新增專案] 對話方塊 (選取 [檔案] > [新增] > [專案]) 的左窗格中，按一下 [開啟 Visual Studio 安裝程式]。 Visual Studio 安裝程式即會啟動。 選取所需的工作負載。
+    如果您看不到 [ASP.NET Core Web 應用程式]  專案範本，則必須先安裝 **ASP.NET 與網頁程式開發** 工作負載和 **.NET Core** 程式開發工作負載。 若要安裝工作負載，請在 [新增專案]  對話方塊 (選取 [檔案]   > [新增]   > [專案]  ) 的左窗格中，按一下 [開啟 Visual Studio 安裝程式]  。 Visual Studio 安裝程式即會啟動。 選取所需的工作負載。
 
-1. 選取 [空白]，然後按一下 [確定]。
+1. 選取 [空白]  ，然後按一下 [確定]  。
 
     Visual Studio 隨即建立專案，而專案會在 [方案總管] (右窗格) 中開啟。
 
@@ -119,9 +119,9 @@ Vue.js 提供正式的 CLI 以快速 Scaffolding 專案。 如果您想要使用
 
 #### <a name="indicate-the-project-to-build-the-client-app-each-time-that-a-build-is-triggered"></a>指出專案會在每次觸發建置時建置用戶端應用程式
 
-1. 在 Visual Studio 中，移至 [專案] > [屬性] > [建置事件]。
+1. 在 Visual Studio 中，移至 [專案]   > [屬性]   > [建置事件]  。
 
-1. 在 [建置前事件命令列] 上鍵入 `npm --prefix ./client-app run build`。
+1. 在 [建置前事件命令列]  上鍵入 `npm --prefix ./client-app run build`。
 
 #### <a name="configure-webpacks-output-module-names"></a>設定 Webpack 的輸出模組名稱
 
@@ -138,9 +138,9 @@ Vue.js 提供正式的 CLI 以快速 Scaffolding 專案。 如果您想要使用
 
 1. 移至命令提示字元，並將目前的目錄變更為專案根資料夾。
 
-1. 鍵入 `vue create client-app`，然後選擇 [手動選取功能]。
+1. 鍵入 `vue create client-app`，然後選擇 [手動選取功能]  。
 
-1. 選擇 [Typescript]，然後選取其他所需的選項。
+1. 選擇 [Typescript]  ，然後選取其他所需的選項。
 
 1. 遵循其餘的步驟並回應問題。
 
@@ -169,7 +169,15 @@ Vue.js 提供正式的 CLI 以快速 Scaffolding 專案。 如果您想要使用
 
 #### <a name="build-with-vue-cli-30"></a>使用 vue-cli 3.0 建置
 
-vue-cli 3.0 的未知問題會阻止自動化建置流程。 每次當您嘗試重新整理 wwwroot 資料夾時，您都需要在 client-app 資料夾上執行 `npm run build` 命令。
+與 vue-cli 3.0 相關的未知問題可能會阻止建置程序的自動化。 每次當您嘗試重新整理 wwwroot 資料夾時，您都需要在 client-app 資料夾上執行 `npm run build` 命令。
+
+或者，您可以使用 ASP.NET 專案屬性將 vue-cli 3.0 專案建置為建置前事件。 以滑鼠右鍵按一下該專案，選擇 [屬性]  ，然後將下列命令包含在 [建置]  索引標籤的 [建置前事件命令列]  文字方塊中。
+
+``` cmd
+cd ./client-app
+npm run build
+cd ../
+```
 
 ## <a name="limitations"></a>限制
 

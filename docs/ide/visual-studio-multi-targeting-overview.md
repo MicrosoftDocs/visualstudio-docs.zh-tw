@@ -11,20 +11,20 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: cb7af190ac7fc5d4d5ce547029689f6c902a6e4f
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.openlocfilehash: b652c603cd98f9c9ec9366a225971485def187b6
+ms.sourcegitcommit: d4920babfc3d24a3fe1d4bf446ed3fe73b344467
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66747632"
+ms.lasthandoff: 06/17/2019
+ms.locfileid: "67160148"
 ---
 # <a name="framework-targeting-overview"></a>Framework 目標概觀
 
-在 Visual Studio 中，您可以指定要讓專案設為目標的 .NET 版本。 若要讓 .NET Framework 應用程式在另一部電腦上執行，該應用程式的目標 Framework 版本必須與該電腦上所安裝的 Framework 版本相容。
+在 Visual Studio 中，您可以指定要讓專案設為目標的 .NET 版本。 Framework 目標有助於確保應用程式只使用指定 Framework 版本中可供使用的功能。 若要讓 .NET Framework 應用程式在另一部電腦上執行，該應用程式的目標 Framework 版本必須與該電腦上所安裝的 Framework 版本相容。
+
+Visual Studio 解決方案可以包含以不同 .NET 版本為目標的專案。
 
 如需目標 Framework 的詳細資訊，請參閱[目標 Framework](/dotnet/standard/frameworks)。
-
-您也可以建立包含以不同 .NET 版本為目標之專案的方案。 Framework 目標有助於確保應用程式只使用指定 Framework 版本中可供使用的功能。
 
 > [!TIP]
 > 您也可以針對不同平台的應用程式。 如需詳細資訊，請參閱[多目標](../msbuild/msbuild-multitargeting-overview.md)。
@@ -79,13 +79,40 @@ Framework 目標包括下列功能：
 
 ::: moniker-end
 
-在現有專案中，您可以在 [專案屬性] 對話方塊中變更目標 .NET 版本。 如需詳細資訊，請參閱[如何：以 .NET 的一個版本為目標](../ide/how-to-target-a-version-of-the-dotnet-framework.md)。
+## <a name="change-the-target-framework"></a>變更目標 Framework
+
+在現有 Visual Basic、C# 或 F# 專案中，您可以在 [專案屬性] 對話方塊中變更目標 .NET 版本。 如需如何變更 C++ 專案之目標版本的資訊，請改為參閱[如何修改目標 Framework 和平台工具組](/cpp/build/how-to-modify-the-target-framework-and-platform-toolset)。
+
+1. 在 [方案總管]  中，開啟您所要變更專案的右鍵功能表，然後選擇 [屬性]  。
+
+1. 在 [屬性]  視窗的左欄中，選擇 [應用程式]  索引標籤。
+
+   ![[專案屬性應用程式] 索引標籤](../ide/media/vs_slnexplorer_properties_applicationtab.png)
+
+   > [!NOTE]
+   > 在建立 UWP 應用程式之後，就無法變更 Windows 或 .NET 的目標版本。
+
+1. 在 [目標 Framework]  清單中，選擇您要的版本。
+
+1. 在出現的驗證對話方塊中，選擇 [是]  按鈕。
+
+   專案將會卸載。 當您重新載入專案時，它會以您剛剛選擇的 .NET 版本為目標。
+
+> [!NOTE]
+> 如果您的程式碼包含與您目標版本不同的 .NET 版本參考，則在您編譯或執行程式碼時，可能會出現錯誤訊息。 若要解決這些錯誤，請修改參考。 請參閱[針對 .NET 目標錯誤進行疑難排解](../msbuild/troubleshooting-dotnet-framework-targeting-errors.md)。
+
+> [!TIP]
+> 視目標 Framework 而定，它可以在專案檔中以下列方式呈現：
+>
+> - 針對 .NET Core 應用程式：`<TargetFramework>netcoreapp2.1</TargetFramework>`
+> - 針對 .NET Standard 應用程式：`<TargetFramework>netstandard2.0</TargetFramework>`
+> - 針對 .NET Framework 應用程式：`<TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>`
 
 ## <a name="resolve-system-and-user-assembly-references"></a>解析系統與使用者組件參考
 
 若要設定目標 .NET 版本，您必須先安裝適當的組件參考。 您可以在 [.NET 下載](https://www.microsoft.com/net/download/windows) \(英文\) 頁面上下載不同 .NET 版本的開發人員套件。
 
-針對 .NET Framework 專案，[新增參考]  對話方塊會停用與目標 .NET Framework 版本無關的系統組件，如此一來就不會不慎將那些系統組件新增至專案。 (系統組件是包含在 .NET Framework 版本中的 *.dll* 檔案)。系統無法解析屬於高於目標版本之 Framework 版本的參考，也無法新增相依於這類參考的控制項。 如果您想要啟用這類參考，請將專案的 .NET Framework 目標重設為包含參考的目標。 如需詳細資訊，請參閱[如何：以一個 Framework 版本為目標](../ide/how-to-target-a-version-of-the-dotnet-framework.md)。
+針對 .NET Framework 專案，[新增參考]  對話方塊會停用與目標 .NET Framework 版本無關的系統組件，如此一來就不會不慎將那些系統組件新增至專案。 (系統組件是包含在 .NET Framework 版本中的 *.dll* 檔案)。系統無法解析屬於高於目標版本之 Framework 版本的參考，也無法新增相依於這類參考的控制項。 如果您想要啟用這類參考，請將專案的 .NET Framework 目標重設為包含參考的目標。
 
 如需組件參考的詳細資訊，請參閱[在設計階段時解析組件](../msbuild/resolving-assemblies-at-design-time.md)。
 
