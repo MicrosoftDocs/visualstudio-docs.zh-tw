@@ -16,10 +16,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 9a733baf1be2e5a249c214547b31465bb2464ed6
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.sourcegitcommit: 6f7a740750b2cd17ea2275c3d046caebc9782917
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
+ms.lasthandoff: 07/02/2019
 ms.locfileid: "66351774"
 ---
 # <a name="idebugarrayobjectgetrank"></a>IDebugArrayObject::GetRank

@@ -11,12 +11,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: f218db0d10e6a7e959b3a5fdc2f38ceff2299c9b
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.openlocfilehash: c137b6bd8a38ac606a547ce961c4f040e60c6d87
+ms.sourcegitcommit: 9753c7544cec852ca5efd0834e0956d9e53a5734
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66747572"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67043360"
 ---
 # <a name="work-with-python-in-visual-studio-on-windows"></a>在 Windows 的 Visual Studio 中使用 Python
 
@@ -40,7 +40,7 @@ Python 目前在 Visual Studio for Mac 中不予支援，但可透過 Visual Stu
 
 ::: moniker range=">=vs-2019"
 > [!Note]
-> Visual Studio 支援所有正式支援的 Python 版本，如 [Python Software Foundation](https://devguide.python.org/#status-of-python-branches) \(英文\) 所述。 具體來說是 2.7、3.5、3.6 及 3.7 版。
+> Visual Studio 支援 Python 2.7 版，以及 3.5 版及更新版本。 雖然您可能可以使用 Visual Studio 來編輯以其他 Python 版本所撰寫的程式碼，那些版本並非正式支援的版本，因此 IntelliSense 和偵錯之類的功能可能會無法運作。
 ::: moniker-end
 
 ## <a name="support-for-multiple-interpreters"></a>支援多重解譯器

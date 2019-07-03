@@ -1,5 +1,5 @@
 ﻿---
-title: 部署功能導覽
+title: 部署簡介
 description: 了解從 Visual Studio 部署應用程式的選項。
 ms.custom: mvc
 ms.date: 01/29/2019
@@ -23,12 +23,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ae70551fdb223856774f7e2afa0d85f915f27a0c
-ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.openlocfilehash: aca4869126a6756c15b2eb2c2be61613b1a58e74
+ms.sourcegitcommit: 91c7f1b525e0c22d938bc4080ba4ceac2483474f
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66261977"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "67032550"
 ---
 # <a name="first-look-at-deployment-in-visual-studio"></a>Visual Studio 中的部署簡介
 
@@ -40,7 +40,7 @@ ms.locfileid: "66261977"
 
 部署至本機資料夾通常用於測試，或是用來開始使用另一個工具進行最終部署的分段部署。
 
-- **ASP.NET**、**ASP.NET Core**、**Node.js**、**Python** 及 .**NET Core**：使用發行工具部署至本機資料夾。 確切的可用選項取決於您的應用程式類型。 在 [方案總管] 中，以滑鼠右鍵按一下專案，然後選擇 [發行] (如果您之前尚未設定任何發佈設定檔，則必須按一下 [建立新設定檔])。接下來，選擇 [資料夾]。 如需詳細資訊，請參閱[部署至本機資料夾](quickstart-deploy-to-local-folder.md)。
+- **ASP.NET**、**ASP.NET Core**、**Node.js**、**Python** 及 .**NET Core**：使用發行工具部署至本機資料夾。 確切的可用選項取決於您的應用程式類型。 在 [方案總管] 中，以滑鼠右鍵按一下專案，然後選擇 [發行]  (如果您之前尚未設定任何發佈設定檔，則必須按一下 [建立新設定檔]  )。接下來，選擇 [資料夾]  。 如需詳細資訊，請參閱[部署至本機資料夾](quickstart-deploy-to-local-folder.md)。
 
     ![選擇 [發行]](../deployment/media/quickstart-publish.png)
 
@@ -52,11 +52,11 @@ ms.locfileid: "66261977"
 
   - 針對連續 (或自動) 部署應用程式，使用 Azure DevOps 與 [Azure Pipelines](https://docs.microsoft.com/azure/devops/pipelines/get-started-yaml?view=azdevops)。
 
-  - 針對一次 (或手動) 部署應用程式，請使用 Visual Studio 中的 [發行] 工具。
+  - 針對一次 (或手動) 部署應用程式，請使用 Visual Studio 中的 [發行]  工具。
 
-  針對提供伺服器自訂組態的部署，您也可以使用 [發行] 工具將應用程式部署至 Azure 虛擬機器。
+  針對提供伺服器自訂組態的部署，您也可以使用 [發行]  工具將應用程式部署至 Azure 虛擬機器。
 
-  若要使用 [發行] 工具，以滑鼠右鍵按一下 [方案總管] 中的專案，然後選擇 [發行]。 (如果您之前已設定任何發行設定檔，則必須按一下 [建立新設定檔])。在 [發行] 對話方塊中，選擇 [App Service] 或 [Azure 虛擬機器]，然後遵循設定步驟。
+  若要使用 [發行]  工具，以滑鼠右鍵按一下 [方案總管] 中的專案，然後選擇 [發行]  。 (如果您之前已設定任何發行設定檔，則必須按一下 [建立新設定檔]  )。在 [發行] 對話方塊中，選擇 [App Service]  或 [Azure 虛擬機器]  ，然後遵循設定步驟。
 
   ![選擇 [Azure App Service]](../deployment/media/quickstart-publish-azure.png "選擇 [Azure App Service]")
 
@@ -75,7 +75,7 @@ ms.locfileid: "66261977"
 
 - **ASP.NET**、**ASP.NET Core**、**Node.js** 及 **Python**：您可以使用發行工具，來利用 FTP 或 Web Deploy 部署至網站。 如需詳細資訊，請參閱[部署至網站](quickstart-deploy-to-a-web-site.md)。
 
-    在方案總管中，以滑鼠右鍵按一下專案，然後選擇 [發行]。 (如果您之前已設定任何發行設定檔，則必須按一下 [建立新設定檔])。在發行工具中，選擇您想要的選項並遵循設定步驟。
+    在方案總管中，以滑鼠右鍵按一下專案，然後選擇 [發行]  。 (如果您之前已設定任何發行設定檔，則必須按一下 [建立新設定檔]  )。在發行工具中，選擇您想要的選項並遵循設定步驟。
 
     ![選擇 [IIS、FTP 等等]。](../deployment/media/quickstart-publish-iis-ftp.png)
 
@@ -120,6 +120,16 @@ ms.locfileid: "66261977"
 ## <a name="continuous-deployment"></a>連續部署
 
 您可以使用 Azure Pipelines 來啟用應用程式的持續部署。 如需詳細資訊，請參閱 [Azure Pipelines](/azure/devops/pipelines/index?view=vsts) 及[部署至 Azure](/azure/devops/deploy-azure/index?view=vsts)。
+
+## <a name="deploy-a-sql-database"></a>部署 SQL 資料庫
+
+- [變更目標平台和發行資料庫專案 (SQL Server Data Tools (SSDT))](/sql/ssdt/how-to-change-target-platform-and-publish-a-database-project)
+
+- [部署 Analysis Services 專案 (SSAS)](/sql/analysis-services/multidimensional-tutorial/lesson-2-5-deploying-an-analysis-services-project)
+
+- [部署 Integration Services (SSIS) 專案和套件](/sql/integration-services/packages/deploy-integration-services-ssis-projects-and-packages)
+
+- [建置和部署至本機資料庫](/sql/ssdt/how-to-build-and-deploy-to-a-local-database)
 
 ## <a name="deployment-for-other-app-types"></a>其他應用程式類型的部署
 

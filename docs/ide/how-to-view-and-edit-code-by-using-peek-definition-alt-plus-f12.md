@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c7edb17ec3cefd87263ea367b3b012a391d77d6d
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.openlocfilehash: 79bebcdaaf2d970f019da12141275358120ac70e
+ms.sourcegitcommit: 9753c7544cec852ca5efd0834e0956d9e53a5734
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66747339"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67043408"
 ---
 # <a name="how-to-view-and-edit-code-by-using-peek-definition-altf12"></a>作法：使用查看定義 (Alt+F12) 檢視及編輯程式碼
 
@@ -86,4 +86,4 @@ ms.locfileid: "66747339"
 
 - [巡覽程式碼](../ide/navigating-code.md)
 - [移至定義和查看定義](../ide/go-to-and-peek-definition.md)
-- [生產力祕訣](../ide/productivity-tips-for-visual-studio.md)
+- [Visual Studio 中的生產力功能](../ide/productivity-features.md)

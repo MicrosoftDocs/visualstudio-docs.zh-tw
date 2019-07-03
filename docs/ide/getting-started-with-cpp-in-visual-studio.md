@@ -11,12 +11,12 @@ dev_langs:
 - CPP
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 375879e6a6aba93b702c65412328458a9a5568ab
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a132787a5af0aca9b42775931b343b89710ce91b
+ms.sourcegitcommit: 9753c7544cec852ca5efd0834e0956d9e53a5734
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62962744"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67043391"
 ---
 # <a name="get-started-with-c-in-visual-studio"></a>Visual Studio 中的 C++ 使用者入門
 
@@ -46,35 +46,35 @@ ms.locfileid: "62962744"
 
 ![已套用 Visual C&#43;&#43; 設定的 IDE](../ide/media/get-started-cpp-ide-layout.png)
 
-開啟 Visual Studio 之後，您會看到 IDE 的三個基本部分：工具視窗、功能表和工具列，以及主視窗空間。 工具視窗停駐在應用程式視窗的左側和右側。 [快速啟動] 方塊、功能表列和標準工具列位於頂端。 視窗中央包含 [起始頁]。 當您開啟方案或專案時，編輯器和設計工具就會出現在此空間中。 開發應用程式時，您大部分的時間都花在此中央區域。
+開啟 Visual Studio 之後，您會看到 IDE 的三個基本部分：工具視窗、功能表和工具列，以及主視窗空間。 工具視窗停駐在應用程式視窗的左側和右側。 [快速啟動]  方塊、功能表列和標準工具列位於頂端。 視窗中央包含 [起始頁]  。 當您開啟方案或專案時，編輯器和設計工具就會出現在此空間中。 開發應用程式時，您大部分的時間都花在此中央區域。
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-開啟 Visual Studio 後，會先出現 [開始] 視窗。 選取 [不使用程式碼繼續] 以開啟開發環境。
+開啟 Visual Studio 後，會先出現 [開始] 視窗。 選取 [不使用程式碼繼續]  以開啟開發環境。
 
 您會看到 IDE 的三個基本部分：工具視窗、功能表和工具列，以及主視窗空間。 工具視窗停駐在應用程式視窗的左側和右側。 搜尋方塊、功能表列和標準工具列位於頂端。 當您載入方案或專案時，編輯器和設計工具會出現在應用程式視窗的中央區域。 在開發應用程式時，您大部分時間都會在此中央區域工作。
 
 ::: moniker-end
 
-Visual Studio 會使用「專案」來組織應用程式的程式碼，並使用「解決方案」來組織專案。 專案包含用來建置您應用程式的所有選項、組態和規則。 它也會管理所有專案之檔案與任何外部檔案間的關聯性。 若要建立您的應用程式，請先建立新的專案和解決方案。
+Visual Studio 會使用「專案」  來組織應用程式的程式碼，並使用「解決方案」  來組織專案。 專案包含用來建置您應用程式的所有選項、組態和規則。 它也會管理所有專案之檔案與任何外部檔案間的關聯性。 若要建立您的應用程式，請先建立新的專案和解決方案。
 
 ### <a name="to-create-a-console-app-project"></a>建立主控台應用程式專案
 
-1. 在功能表列上，選擇 [檔案] > [新增] > [專案]，開啟 [新增專案] 對話方塊。
+1. 在功能表列上，選擇 [檔案] > [新增] > [專案]  ，開啟 [新增專案]  對話方塊。
 
    ![在功能表列上，選擇 [檔案] > [新增] > [專案]](../ide/media/get-started-cpp-file-new-project-menu.png)
 
-1. 在 [新增專案] 對話方塊中，選取 [已安裝] > [Visual C++] (如果尚未選取)。 在中央窗格中，選取 [Windows 主控台應用程式] 範本。 在 [名稱] 編輯方塊中，輸入 *HelloApp*。
+1. 在 [新增專案]  對話方塊中，選取 [已安裝] > [Visual C++]  (如果尚未選取)。 在中央窗格中，選取 [Windows 主控台應用程式]  範本。 在 [名稱]  編輯方塊中，輸入 *HelloApp*。
 
    ![使用 [新增專案] 對話方塊來建立應用程式專案](../ide/media/get-started-cpp-new-project-dialog.png)
 
-   根據已安裝的 Visual Studio 工作負載和元件，您的對話方塊可能會有不同的選擇。 如果看不到 Visual C++ 專案範本，則需要重新執行 Visual Studio 安裝程式，並安裝**使用 C++ 的桌面開發**工作負載。 您可以直接從 [新增專案] 對話方塊執行此作業。 若要啟動安裝程式，請選擇對話方塊上的 [開啟 Visual Studio 安裝程式] 連結。
+   根據已安裝的 Visual Studio 工作負載和元件，您的對話方塊可能會有不同的選擇。 如果看不到 Visual C++ 專案範本，則需要重新執行 Visual Studio 安裝程式，並安裝**使用 C++ 的桌面開發**工作負載。 您可以直接從 [新增專案]  對話方塊執行此作業。 若要啟動安裝程式，請選擇對話方塊上的 [開啟 Visual Studio 安裝程式]  連結。
 
-1. 選擇 [確定] 按鈕，以建立應用程式專案和解決方案。
+1. 選擇 [確定]  按鈕，以建立應用程式專案和解決方案。
 
-   這樣會建立 HelloApp 專案和解決方案以及 Windows 主控台應用程式的基本檔案，並自動載入 **方案總管**。 HelloApp.cpp 檔案會在程式碼編輯器中開啟。 這些項目會在方案總管中出現：
+   這樣會建立 HelloApp 專案和解決方案以及 Windows 主控台應用程式的基本檔案，並自動載入 **方案總管**。 HelloApp.cpp  檔案會在程式碼編輯器中開啟。 這些項目會在方案總管  中出現：
 
    ![方案在方案總管中的所有檔案](../ide/media/get-started-cpp-solution-explorer.png)
 
@@ -84,7 +84,7 @@ Visual Studio 會使用「專案」來組織應用程式的程式碼，並使用
 
 ### <a name="to-edit-code-in-the-editor"></a>在編輯器中編輯程式碼
 
-1. 在 HelloApp.cpp 檔案的 `return 0;` 行之前輸入空白行，然後輸入下列程式碼：
+1. 在 HelloApp.cpp  檔案的 `return 0;` 行之前輸入空白行，然後輸入下列程式碼：
 
    ```cpp
    cout << "Hello\n";
@@ -94,13 +94,13 @@ Visual Studio 會使用「專案」來組織應用程式的程式碼，並使用
 
    ![cout 的錯誤文字](../ide/media/get-started-cpp-intellisense-error.png)
 
-   錯誤訊息也會出現在 [錯誤清單]  視窗中。 您可以在功能表列上選擇 [檢視] > [錯誤清單] 來顯示此視窗。
+   錯誤訊息也會出現在 [錯誤清單]  視窗中。 您可以在功能表列上選擇 [檢視] > [錯誤清單]  來顯示此視窗。
 
    ![[錯誤清單] 視窗中的錯誤](../ide/media/get-started-cpp-error-list.png)
 
    您的程式碼遺失 [std::cout](/cpp/standard-library/iostream) 的宣告，其位在 *\<iostream>* 標頭檔中。
 
-1. 若要包含 iostream 標頭，請在 `#include "stdafx.h"` 後面輸入下列程式碼：
+1. 若要包含 iostream  標頭，請在 `#include "stdafx.h"` 後面輸入下列程式碼：
 
    ```cpp
    #include <iostream>
@@ -117,7 +117,7 @@ Visual Studio 會使用「專案」來組織應用程式的程式碼，並使用
 
 ## <a name="build-the-app"></a>建置應用程式
 
-建置程式碼十分輕鬆。 在功能表列上，選擇 [建置] > [建置解決方案]。 Visual Studio 會建置 HelloApp 解決方案，並在 [輸出] 視窗中報告進度。
+建置程式碼十分輕鬆。 在功能表列上，選擇 [建置] > [建置解決方案]  。 Visual Studio 會建置 HelloApp 解決方案，並在 [輸出]  視窗中報告進度。
 
    ![建置 HelloApp 解決方案](../ide/media/get-started-cpp-build-solution.gif)
 
@@ -127,7 +127,7 @@ Visual Studio 會使用「專案」來組織應用程式的程式碼，並使用
 
 ### <a name="to-debug-the-app"></a>偵錯應用程式
 
-若要啟動偵錯工具，請選擇功能表列上的 [偵錯] > [開始偵錯]。
+若要啟動偵錯工具，請選擇功能表列上的 [偵錯] > [開始偵錯]  。
 
 ![[偵錯] 功能表上的 [開始偵錯] 命令](../ide/media/get-started-cpp-start-debugging-menu.png)
 
@@ -135,7 +135,7 @@ Visual Studio 會使用「專案」來組織應用程式的程式碼，並使用
 
 ### <a name="to-add-a-breakpoint"></a>若要加入中斷點
 
-1. 在編輯器中，將資料指標放在 `return 0;` 行。 在功能表列上，選擇 [偵錯] > [切換中斷點]。 您也可以按一下左邊界來設定中斷點。
+1. 在編輯器中，將資料指標放在 `return 0;` 行。 在功能表列上，選擇 [偵錯] > [切換中斷點]  。 您也可以按一下左邊界來設定中斷點。
 
      ![[偵錯] 功能表上的 [切換中斷點] 命令](../ide/media/get-started-cpp-toggle-breakpoint-menu.png)
 
@@ -159,15 +159,15 @@ Visual Studio 會使用「專案」來組織應用程式的程式碼，並使用
 
 ### <a name="to-clean-the-solution-files-and-build-a-release-version"></a>清除方案檔案和建置發行版本
 
-1. 在功能表列上，選擇 [建置] > [清除解決方案]，刪除在上一個建置期間建立的中繼檔和輸出檔。
+1. 在功能表列上，選擇 [建置] > [清除解決方案]  ，刪除在上一個建置期間建立的中繼檔和輸出檔。
 
    ![[建置] 功能表上的 [清除方案] 命令](../ide/media/get-started-cpp-clean-solution-menu.png)
 
-1. 若要將 HelloApp 的方案組態從 [偵錯] 變更為 [發行]，請在工具列中選取 [解決方案組態] 控制項的下拉式清單，然後選擇 [發行]。
+1. 若要將 HelloApp 的方案組態從 [偵錯]  變更為 [發行]  ，請在工具列中選取 [解決方案組態] 控制項的下拉式清單，然後選擇 [發行]  。
 
    ![建置應用程式的發行版本](../ide/media/get-started-cpp-set-release-configuration.png)
 
-1. 建置方案。 在功能表列上，選擇 [建置] > [建置解決方案]。
+1. 建置方案。 在功能表列上，選擇 [建置] > [建置解決方案]  。
 
 此建置完成時，您已建立可在任何命令提示字元視窗中複製和執行的應用程式。 它可能不會執行太多作業，但為更高作業的閘道。
 
@@ -177,4 +177,4 @@ Visual Studio 會使用「專案」來組織應用程式的程式碼，並使用
 
 - [使用 Visual Studio IDE 進行 C++ 桌面程式開發](/cpp/ide/using-the-visual-studio-ide-for-cpp-desktop-development)
 - [逐步解說：使用 C# 或 Visual Basic 建立簡單的應用程式](../get-started/csharp/tutorial-wpf.md)
-- [使用 Visual Studio 提高生產力的祕訣](../ide/productivity-tips-for-visual-studio.md)
+- [Visual Studio 中的生產力功能](../ide/productivity-features.md)

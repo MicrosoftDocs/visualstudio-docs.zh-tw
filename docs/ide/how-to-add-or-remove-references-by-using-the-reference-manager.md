@@ -21,12 +21,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 885dee2ca04060042e804ff964636d16e6a725ee
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.openlocfilehash: 32bc3b0a06b7bfb8c012239b256460ad832ac3a1
+ms.sourcegitcommit: d4920babfc3d24a3fe1d4bf446ed3fe73b344467
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66745807"
+ms.lasthandoff: 06/17/2019
+ms.locfileid: "67160164"
 ---
 # <a name="how-to-add-or-remove-references-by-using-the-reference-manager"></a>作法：使用參考管理員新增或移除參考
 
@@ -92,7 +92,7 @@ ms.locfileid: "66745807"
 
 - 使用最近版本 Framework 的元件，與以舊版為目標的專案並不相容。
 
-   如需如何為專案變更目標 Framework 版本的相關資訊，請參閱[如何：以一個 Framework 版本為目標](../ide/how-to-target-a-version-of-the-dotnet-framework.md)。
+   如需如何為專案變更目標 Framework 版本的相關資訊，請參閱 [Framework 目標概觀](visual-studio-multi-targeting-overview.md)。
 
 - 使用 .NET Framework 4 的元件和以 .NET Framework 4.5 為目標的專案並不相容。
 

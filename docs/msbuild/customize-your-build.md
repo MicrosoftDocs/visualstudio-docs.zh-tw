@@ -1,6 +1,6 @@
 ---
 title: 自訂組建 | Microsoft Docs
-ms.date: 06/14/2017
+ms.date: 06/13/2019
 ms.topic: conceptual
 helpviewer_keywords:
 - MSBuild, transforms
@@ -11,16 +11,16 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2bb6b2d6e7ae3504415f59aeef1fddb8d9f98865
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 8e644fd6fc521318512bbc5dd25838a379af78a9
+ms.sourcegitcommit: dd3c8cbf56c7d7f82f6d8818211d45847ab3fcfc
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62778097"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "67141162"
 ---
 # <a name="customize-your-build"></a>自訂組建
 
-使用標準建置程序 (匯入 Microsoft.Common.props 和 Microsoft.Common.targets) 的 MSBuild 專案有幾個擴充性攔截程序，可以用來自訂您的建置程序。
+使用標準建置程序 (匯入 Microsoft.Common.props  和 Microsoft.Common.targets  ) 的 MSBuild 專案有幾個擴充性攔截程序，可以用來自訂您的建置程序。
 
 ## <a name="add-arguments-to-command-line-msbuild-invocations-for-your-project"></a>將引數新增至專案的命令列 MSBuild 引動過程
 
@@ -108,6 +108,36 @@ MSBuild 的一般方法摘要如下：
 
 或更簡單的做法：第一個不會匯入任何項目的 *Directory.Build.props*，則為 MSBuild 停止的位置。
 
+### <a name="choose-between-adding-properties-to-a-props-or-targets-file"></a>選擇將屬性加入 .props 或是 .targets 檔案
+
+MSBuild 需相依於匯入順序，且屬性的最後一個定義 (或是 `UsingTask` 或目標) 將會是系統所使用的定義。
+
+使用明確匯入時，您可以在任何時間點從 *.props* 或 *.targets* 檔案匯入。 以下是廣泛使用的慣例：
+
+- *.props* 檔案會以較早的匯入順序匯入。
+
+- *.targets* 檔案會以較晚的匯入順序匯入。
+
+此慣例會由 `<Project Sdk="SdkName">` 匯入強制執行 (也就是 *Sdk.props* 的匯入會在該檔案所有內容之前先發生，而 *Sdk.targets* 則會在檔案的所有內容之後最後發生)。
+
+決定要將屬性置於何處時，請使用下列一般指導方針：
+
+- 針對許多屬性，其被定義的位置本身並不重要，因為它們不會被覆寫，且在執行階段會變成唯讀。
+
+- 針對可能會在個別專案中自訂的行為，請將預設值設定在 *.props* 檔案中。
+
+- 透過讀取可能的自訂屬性來避免在 *.props* 檔案中設定相依屬性，因為在 MSBuild 讀取使用者的專案之前，自訂將不會發生。
+
+- 在 *.targets* 檔案中設定相依屬性，因為它們將會從個別專案中取得自訂項目。
+
+- 如果您需要覆寫屬性，請在所有使用者專案自訂皆有機會生效之後，於 *.targets* 檔案中這麼做。 請謹慎使用衍生屬性；您可能也需要覆寫衍生屬性。
+
+- 將項目包含在 *.props* 檔案中 (在屬性上設定條件)。 系統會在任何項目之前先考慮所有屬性，因此使用者專案屬性自訂項目會被收取，而這能讓使用者的專案有機會 `Remove` 或 `Update` 由匯入所引進的任何項目。
+
+- 在 *.targets* 檔案中定義目標。 不過，如果 *.targets* 檔案是由 SDK 匯入，請記得此案例會使覆寫目標變得更為困難，因為使用者的專案預設並沒有位置可以覆寫它。
+
+- 可能的話，請盡量在評估期間自訂屬性，而非在目標內變更屬性。 此指導方針可讓載入專案並了解其進行情況的工作變得更加容易。
+
 ## <a name="msbuildprojectextensionspath"></a>MSBuildProjectExtensionsPath
 
 根據預設，*Microsoft.Common.props* 會匯入 `$(MSBuildProjectExtensionsPath)$(MSBuildProjectFile).*.props`，而 *Microsoft.Common.targets* 會匯入 `$(MSBuildProjectExtensionsPath)$(MSBuildProjectFile).*.targets`。 `MSBuildProjectExtensionsPath` 的預設值是 `$(BaseIntermediateOutputPath)` (`obj/`)。 NuGet 使用此機制來參考套件所傳遞的組建邏輯；亦即，在還原時，它會建立參考套件內容的 `{project}.nuget.g.props` 檔案。
@@ -138,7 +168,7 @@ $(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\{TargetFileName}\ImportBefore\*.
 $(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\{TargetFileName}\ImportAfter\*.targets
 ```
 
-。 這可讓已安裝的 SDK 擴增常見專案類型的組建邏輯。
+。 此慣例可讓已安裝的 SDK 擴增常見專案類型的組建邏輯。
 
 會在 `$(MSBuildUserExtensionsPath)` 中搜尋相同的目錄結構，這是每位使用者的資料夾 *%LOCALAPPDATA%\Microsoft\MSBuild*。 放置在該資料夾中的檔案，會針對該使用者認證下執行的對應專案類型的所有組建進行匯入。 使用 `ImportUserLocationsByWildcardBefore{ImportingFileNameWithNoDots}` 模式設定在匯入檔案後指定的屬性，即可停用使用者延伸模組。 例如，將 `ImportUserLocationsByWildcardBeforeMicrosoftCommonProps` 設定為 `false` 可防止匯入 `$(MSBuildUserExtensionsPath)\$(MSBuildToolsVersion)\Imports\Microsoft.Common.props\ImportBefore\*`。
 
@@ -149,7 +179,7 @@ $(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\{TargetFileName}\ImportAfter\*.t
 
 MSBuild 在建置方案檔時，會先在內部將其轉換成專案檔，再建置該檔案。 產生的專案檔會在定義任何目標之前匯入 `before.{solutionname}.sln.targets`，並在匯入目標之後匯入 `after.{solutionname}.sln.targets`，包括安裝到 `$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\SolutionFile\ImportBefore` 和 `$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\SolutionFile\ImportAfter` 目錄的目標。
 
-例如，您可以在建置 *MyCustomizedSolution.sln* 之後，定義新的目標來寫入自訂記錄訊息，方法是在名為 after.MyCustomizedSolution.sln.targets 的相同目錄中建立一個檔案，其中包含：
+例如，您可以在建置 *MyCustomizedSolution.sln* 之後，定義新的目標來寫入自訂記錄訊息，方法是在名為 after.MyCustomizedSolution.sln.targets  的相同目錄中建立一個檔案，其中包含：
 
 ```xml
 <Project>

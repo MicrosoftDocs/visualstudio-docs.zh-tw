@@ -5,12 +5,12 @@ author: asb3993
 ms.author: amburns
 ms.date: 05/30/2019
 ms.assetid: 771C2F8E-46BC-4280-AFE8-ED9D5C7790CE
-ms.openlocfilehash: fb70966dd24c4d22d473b552297a60ddebdce106
-ms.sourcegitcommit: cc5fd59e5dc99181601b7db8b28d7f8a83a36bab
+ms.openlocfilehash: 4e38378c22c6920e471b72d990d61d9b4ebd3d7f
+ms.sourcegitcommit: b468d71052a1b8a697f477ab23a3644de139f1e9
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/11/2019
-ms.locfileid: "66836177"
+ms.lasthandoff: 06/19/2019
+ms.locfileid: "67253796"
 ---
 # <a name="building-aspnet-core-applications-in-visual-studio-for-mac"></a>在 Visual Studio for Mac 中建置 ASP.NET Core 應用程式 
 
@@ -59,7 +59,7 @@ ASP.NET Core 是一個開放原始碼和跨平台架構，可建置現代雲端�
 
     ![](media/netcore-image4.png)
 
-3. **HomeController** 類別依照慣例會處理以 **/Home** 為開頭的所有傳入要求。 **Index** 方法會處理針對根目錄 (例如 http://site.com/Home) ) 的要求，而其他方法則會依慣例處理針對其具名路徑的要求 (例如 **About()** 會處理針對 **http://site.com/Home/About** 的要求)。 當然，這全都是可以加以設定的。 其中一個值得注意的地方是 **HomeController** 為新專案的預設控制器，因此針對網站根目錄 ( **http://site.com** ) 的要求將會通過 **HomeController** 的 **Index()** ，就像針對 **http://site.com/Home** 或 **http://site.com/Home/Index** 的要求一樣。
+3. **HomeController** 類別依照慣例會處理以 **/Home** 為開頭的所有傳入要求。 **Index** 方法會處理針對根目錄 (例如 `http://site.com/Home`) 的要求，而其他方法則會依慣例處理針對其具名路徑的要求 (例如 **About()** 會處理針對 `http://site.com/Home/About` 的要求)。 當然，這全都是可以加以設定的。 其中一個值得注意的地方是 **HomeController** 為新專案的預設控制器，因此針對網站根目錄 (`http://site.com`) 的要求將會通過 **HomeController** 的 **Index()** ，就像針對 `http://site.com/Home` 或 `http://site.com/Home/Index` 的要求一樣。
 
     ![](media/netcore-image5.png)
 

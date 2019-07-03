@@ -1,6 +1,7 @@
 ---
-title: 作法：以獨佔模式使用鍵盤
-description: 了解如何使用預設的鍵盤快速鍵組合，在 Visual Studio 整合式開發環境 (IDE) 中輕鬆巡覽和撰寫程式碼。
+title: 在不使用滑鼠的情況下使用 Visual Studio
+titleSuffix: ''
+description: 了解如何只使用鍵盤在 Visual Studio 整合式開發環境 (IDE) 中輕鬆巡覽和撰寫程式碼。
 ms.date: 05/10/2019
 ms.topic: conceptual
 helpviewer_keywords:
@@ -15,18 +16,18 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3f1bd20b8ad9e4682cfd5fbe4d93dc55e5dc081d
-ms.sourcegitcommit: 51dad3e11d7580567673e0d426ab3b0a17584319
+ms.openlocfilehash: 885785c8910bdb0f03643c64eca29415bf2afb17
+ms.sourcegitcommit: 9753c7544cec852ca5efd0834e0956d9e53a5734
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/10/2019
-ms.locfileid: "66820595"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67043508"
 ---
-# <a name="how-to-use-the-keyboard-exclusively"></a>作法：以獨佔模式使用鍵盤
+# <a name="how-to-use-the-keyboard-exclusively"></a>如何完全只使用鍵盤
 
-鍵盤快速鍵可讓您更輕易地巡覽 Visual Studio IDE 及撰寫程式碼。 我們會探索更有效率使用鍵盤快速鍵的幾種方式。
+鍵盤快速鍵可讓您更輕易地巡覽 Visual Studio IDE 及撰寫程式碼。 此文章會探索更有效率使用鍵盤快速鍵的幾種方式。
 
-如需 Visual Studio 中快速鍵的完整清單，請參閱[預設鍵盤快速鍵](../../ide/default-keyboard-shortcuts-in-visual-studio.md)。 如需適用於其他 Microsoft 產品的鍵盤快速鍵詳細資訊，請參閱 [https://www.microsoft.com/accessibility/](http://go.microsoft.com/fwlink/?LinkID=40400)。
+如需 Visual Studio 中命令快速鍵的完整清單，請參閱[預設鍵盤快速鍵](../../ide/default-keyboard-shortcuts-in-visual-studio.md)。
 
 ::: moniker range="vs-2017"
 
@@ -40,23 +41,19 @@ ms.locfileid: "66820595"
 
 ## <a name="toolbox-controls"></a>工具箱控制項
 
-您可以使用鍵盤，將工具箱上的控制項新增至表單或設計工具。
-
-### <a name="to-add-controls-from-the-toolbox-to-a-designer-from-the-keyboard"></a>使用鍵盤將控制項從工具箱新增至設計工具
+在不使用滑鼠的情況下，將工具箱上的控制項新增到表單或設計工具：
 
 1. 在功能表列上，選擇 [檢視]   > [工具箱]  。
 
 2. 使用 **Ctrl**+**向上鍵**或 **Ctrl**+**向下鍵**，在 [工具箱]  索引標籤的區段之間移動。
 
-3. 使用**向上鍵**或**向下鍵**在控制項之間移動。
+3. 使用**向上鍵**或**向下鍵**在區段中的控制項之間移動。
 
 4. 選取控制項之後，請使用 **Enter** 鍵來將該控制項加入至表單或設計工具。
 
 ## <a name="dialog-box-options"></a>對話方塊選項
 
-您可以使用鍵盤，在對話方塊中的選項之間移動，或是變更選項設定。
-
-### <a name="set-dialog-box-options-from-the-keyboard"></a>從鍵盤設定對話方塊選項
+只使用鍵盤，在對話方塊中的選項之間移動，或是變更選項設定：
 
 1. 使用 **Tab** 或 **Shift**+**Tab** 在對話方塊的控制項之間向上和向下移動。
 
@@ -72,17 +69,13 @@ ms.locfileid: "66820595"
 
    - 針對格線，使用方向鍵來巡覽。 針對格線中的下拉式清單，請使用 **Shift**+**Alt**+**向下鍵**來顯示項目，然後使用**向上鍵**和**向下鍵**來變更選取的項目。
 
-## <a name="window-and-file-navigation"></a>視窗與檔案巡覽
-
-您可以透過數種方式，使用鍵盤來在開啟工具和文件視窗間移動。 您也可以使用鍵盤，在不同的位置中移動和固定工具視窗。
-
-### <a name="navigate-among-windows-and-files-in-the-ide"></a>在 IDE 中於視窗和檔案之間瀏覽
+## <a name="navigate-between-windows-and-files"></a>在視窗和檔案之間巡覽
 
 - 若要在編輯器或設計工具中的檔案之間移動，請選擇 **Ctrl**+**Tab** 鍵盤快速鍵，以搭配選取 [使用中的檔案]  來顯示 IDE 導覽器。 選擇 **Enter** 鍵來巡覽至醒目提示的檔案。
 
 - 若要在固定的工具視窗之間移動，請選擇 **Alt**+**F7** 鍵盤快速鍵，以搭配選取 [使用中工具視窗]  來顯示 IDE 導覽器。 選擇 **Enter** 鍵來巡覽至醒目提示的視窗。
 
-### <a name="to-move-and-dock-tool-windows-from-the-keyboard"></a>從鍵盤移動和固定工具視窗
+## <a name="move-and-dock-tool-windows"></a>移動和固定工具視窗
 
 1. 巡覽至您想要移動並給予焦點的工具視窗。
 
@@ -109,3 +102,4 @@ ms.locfileid: "66820595"
 * [識別及自訂鍵盤快速鍵](../../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md)
 * [協助工具祕訣和訣竅](../../ide/reference/accessibility-tips-and-tricks.md)
 * [預設鍵盤快速鍵](../../ide/default-keyboard-shortcuts-in-visual-studio.md)
+* [Microsoft 產品中的協助工具](https://www.microsoft.com/accessibility/)

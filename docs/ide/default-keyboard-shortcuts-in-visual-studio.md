@@ -13,20 +13,24 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 13463f38b963ff29ed6fc57fba3eac7865da70ba
-ms.sourcegitcommit: 51dad3e11d7580567673e0d426ab3b0a17584319
+ms.openlocfilehash: 32335f010db2d030d64ae1319f3cc893526a30e0
+ms.sourcegitcommit: d4920babfc3d24a3fe1d4bf446ed3fe73b344467
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/10/2019
-ms.locfileid: "66820941"
+ms.lasthandoff: 06/17/2019
+ms.locfileid: "67160040"
 ---
 # <a name="default-keyboard-shortcuts-in-visual-studio"></a>Visual Studio 中的預設鍵盤快速鍵
 
-如需鍵盤協助工具的詳細資訊，請參閱[協助工具祕訣和訣竅](../ide/reference/accessibility-tips-and-tricks.md)和[如何：以獨佔模式使用鍵盤](../ide/reference/how-to-use-the-keyboard-exclusively.md)。
+只需選擇適當的鍵盤快速鍵，您就可以在 Visual Studio 中存取各種[命令](reference/visual-studio-commands.md)和視窗。 此頁面會針對您可能已經在安裝 Visual Studio 時選擇的 [一般]  設定檔，列出預設命令捷徑。 不管您選擇哪一個設定檔，都可以開啟 [選項]  對話方塊、展開 [環境]  節點，然後選擇 [鍵盤]  來[識別命令的捷徑](identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md)。 您也可以為指定的命令指派不同的捷徑，以自訂捷徑。
 
-只需選擇適當的鍵盤快速鍵，您就可以在 Visual Studio 中存取各種命令和視窗。 本頁面會針對您可能已經在安裝 Visual Studio 時選擇的 [一般]  設定檔，列出預設捷徑。 不管您選擇哪一個設定檔，都可以開啟 [選項]  對話方塊、展開 [環境]  節點，然後選擇 [鍵盤]  來識別命令的捷徑。 您也可以為指定的命令指派不同的捷徑，以自訂捷徑。
+如需常用鍵盤快速鍵的清單和其他產能資訊，請參閱：
 
-如需常用鍵盤快速鍵的清單和其他生產力資訊，請參閱 [Visual Studio 中常用命令的預設鍵盤快速鍵](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md)、[鍵盤祕訣](../ide/tips-and-tricks-for-visual-studio.md)和[提高生產力的祕訣](../ide/productivity-tips-for-visual-studio.md)。
+- [常用命令的鍵盤快速鍵](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md)
+- [鍵盤祕訣](../ide/productivity-shortcuts.md)
+- [生產力祕訣](../ide/productivity-features.md)。
+
+如需 Visual Studio 協助工具的詳細資訊，請參閱[協助工具祕訣和訣竅](../ide/reference/accessibility-tips-and-tricks.md)與[如何：以獨佔模式使用鍵盤](../ide/reference/how-to-use-the-keyboard-exclusively.md)。
 
 |||||
 |-|-|-|-|
@@ -527,7 +531,7 @@ ms.locfileid: "66820941"
 
 |命令|鍵盤快速鍵|
 |--------------| - |
-|Debug.Graphics.CaptureFrame|無|
+|Debug.Graphics.CaptureFrame|None|
 |Graphics.MovePixelSelectionDown|**Shift+Alt+向下鍵**|
 |Graphics.MovePixelSelectionLeft|**Shift+Alt+向左鍵**|
 |Graphics.MovePixelSelectionRight|**Shift+Alt+向右鍵**|
@@ -785,6 +789,7 @@ ms.locfileid: "66820941"
 | Edit.CollapseCurrentRegion | **Ctrl+M、Ctrl+S** |
 | Edit.CollapseTag | **Ctrl+M、Ctrl+T** |
 | Edit.CollapseToDefinitions | **Ctrl+M、Ctrl+O** (字母 'O') |
+| Edit.ContractSelection | **Shift+Alt+** (僅限非 C++) |
 | Edit.CommentSelection | **Ctrl+K、Ctrl+C** |
 | Edit.CompleteWord | **Ctrl+空格鍵**<br /><br /> 或<br /><br /> **Alt+向右鍵** |
 | Edit.CopyParameterTip | **Ctrl+Shift+Alt+C** |
@@ -797,6 +802,8 @@ ms.locfileid: "66820941"
 | Edit.DocumentStartExtend | **Ctrl+Shift+Home** |
 | Edit.ExpandAllOutlining | **Ctrl+M、Ctrl+X** |
 | Edit.ExpandCurrentRegion | **Ctrl+M、Ctrl+E** |
+| Edit.ExpandSelection | **Shift+Alt+=** (僅限非 C++) |
+| Edit.ExpandSelectiontoContainingBlock | **Shift+Alt+]** |
 | Edit.FormatDocument | **Ctrl+K、Ctrl+D** |
 | Edit.FormatSelection | **Ctrl+K、Ctrl+F** |
 | Edit.GotoAll | **Ctrl+T**<br /><br /> 或<br /><br /> **Ctrl+,** |
@@ -1150,5 +1157,4 @@ ms.locfileid: "66820941"
 
 ## <a name="see-also"></a>另請參閱
 
-- [圖示影像編輯器](/cpp/windows/image-editor-for-icons)
-- [使用 IntelliSense](../ide/using-intellisense.md)
+- [Visual Studio 命令](reference/visual-studio-commands.md)
