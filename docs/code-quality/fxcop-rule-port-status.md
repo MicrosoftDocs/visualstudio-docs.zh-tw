@@ -10,18 +10,18 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 0d78e7dcd7dfd203a15510037b277b8c2633805e
-ms.sourcegitcommit: cd21b38eefdea2cdefb53e68e7a30b868e78dd6b
+ms.openlocfilehash: 4a458a50be6161e320b3ffbbe702e21f9f502c77
+ms.sourcegitcommit: 74c5360186731de07828764eb32ea1033a8c2275
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/22/2019
-ms.locfileid: "66038644"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67559673"
 ---
 # <a name="fxcop-rule-port-status"></a>Fxcop 規則連接埠狀態
 
 如果您先前在舊版的 Visual Studio 中使用靜態程式碼分析，您可能想知道其中一個這些規則可在目前的實作，做為[FxCop 分析器](install-fxcop-analyzers.md)。 此頁面會列出的移植以及尚未移植的規則，以及是否要將它們移植的計劃。
 
-## <a name="ported-rules"></a>移轉的規則
+## <a name="ported-rules"></a>移植的規則
 
 [自動產生文件頁面](https://github.com/dotnet/roslyn-analyzers/blob/master/src/Microsoft.CodeAnalysis.FxCopAnalyzers/Microsoft.CodeAnalysis.FxCopAnalyzers.md)roslyn 分析器中存放庫有最新的已移植到 FxCop 分析器的規則清單。 該頁面也有其他資訊，例如預設是否啟用規則，如果有相關聯*程式碼修正*。 ([程式碼修正](../ide/quick-actions.md)是一種單鍵修正的燈泡圖示功能表上，在 Visual Studio 中提供。)
 
@@ -67,8 +67,8 @@ ms.locfileid: "66038644"
 [CA1063](ca1063-implement-idisposable-correctly.md) | 必須正確實作 IDisposable
 [CA1064](ca1064-exceptions-should-be-public.md) | 例外狀況必須是公用
 [CA1065](ca1065-do-not-raise-exceptions-in-unexpected-locations.md) | 不要在非預期的位置中引發例外狀況
-CA1066 | 型別{0}應該實作 IEquatable<T>因為它會覆寫 Equals
-CA1067 | 實作 IEquatable 時覆寫 Object.Equals(object)<T>
+CA1066 | 型別{0}應該實作 IEquatable\<T > 因為它會覆寫 Equals
+CA1067 | 實作 IEquatable 時覆寫 Object.Equals(object)\<T >
 CA1068 | CancellationToken 參數必須出現在最後一個
 CA1200 | 請避免使用具有前置詞的 cref 標籤
 [CA1303](ca1303-do-not-pass-literals-as-localized-parameters.md) | 不要將常值當作已當地語系化的參數傳遞
