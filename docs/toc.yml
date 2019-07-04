@@ -1,7 +1,7 @@
 - name: Visual Studio 文件
   href: ide/index.yml
   pdf_name: Visual Studio documentation
-- name: 概觀
+- name: 總覽
   expanded: true
   items:
     - name: Visual Studio 概觀
@@ -49,7 +49,7 @@
       href: install/uninstall-visual-studio.md
     - name: Visual Studio 系統管理員指南
       items:
-        - name: 概觀
+        - name: 總覽
           href: install/visual-studio-administrator-guide.md
         - name: 使用命令列
           items:
@@ -103,7 +103,7 @@
           items:
             - name: Visual Studio 工作負載與元件識別碼
               items:
-                - name: 概觀
+                - name: 總覽
                   displayName: Workload and component IDs
                   href: install/workload-and-component-ids.md
                 - name: Visual Studio 企業版
@@ -358,7 +358,7 @@
                       href: ide/reference/introduce-local-variable.md
                 - name: 重構程式碼
                   items:
-                    - name: 概觀
+                    - name: 總覽
                       displayName: refactoring
                       href: ide/refactoring-in-visual-studio.md
                     - name: 變更方法簽章
@@ -482,7 +482,7 @@
                   href: ide/create-portable-custom-editor-options.md
                 - name: .NET 編碼慣例
                   items:
-                    - name: 概觀
+                    - name: 總覽
                       href: ide/editorconfig-code-style-settings-reference.md
                     - name: 語言慣例
                       href: ide/editorconfig-language-conventions.md
@@ -599,14 +599,14 @@
       href: designers/designing-user-interfaces.md
     - name: 編譯和建置
       items:
-        - name: 概觀
+        - name: 總覽
           displayName: Compile build
           href: ide/compiling-and-building-in-visual-studio.md
         - name: 逐步解說：建置應用程式
           href: ide/walkthrough-building-an-application.md
         - name: 建置與清除專案和方案
           items:
-            - name: 概觀
+            - name: 總覽
               displayName: Build clean
               href: ide/building-and-cleaning-projects-and-solutions-in-visual-studio.md
             - name: 變更組建輸出目錄
@@ -1119,7 +1119,7 @@
       href: ide/use-bidirectional-languages.md
     - name: Microsoft Help Viewer
       items:
-        - name: 概觀
+        - name: 總覽
           displayName: Help Viewer
           href: help-viewer/overview.md
         - name: 安裝與管理本機內容
@@ -1145,7 +1145,7 @@
           href: help-viewer/shortcut-keys.md
     - name: Dotfuscator Community
       items:
-        - name: 概觀
+        - name: 總覽
           displayName: Dotfuscator Community
           href: ide/dotfuscator/index.md
         - name: Dotfuscator 的功能
@@ -1204,13 +1204,22 @@
         - name: 回報問題狀態和常見問題集
           displayName: Developer Community
           href: ide/report-a-problem.md
+        - name: 建立包含所有呼叫堆疊的 Visual Studio 處理序小型傾印
+          displayName: Create minidumps with call stacks
+          href: ide/report-a-problem-minidumps.md
+        - name: 建立 MSBuild 問題的記錄檔
+          displayName: Create logs for MSBuild problems
+          href: ide/msbuild-logs.md
+        - name: 利用 PerfView 收集 ETL 追蹤
+          displayName: ETL trace with PerfView
+          href: ide/report-a-problem-perfview.md
     - name: 提出 Visual Studio 功能建議
       href: ide/suggest-a-feature.md
     - name: 開發人員社群資料隱私權
       href: ide/developer-community-privacy.md
     - name: 客戶經驗改進計畫
       items:
-        - name: 概觀
+        - name: 總覽
           displayName: Customer Experience Improvement Program
           href: ide/visual-studio-experience-improvement-program.md
         - name: 由系統產生的記錄檔
