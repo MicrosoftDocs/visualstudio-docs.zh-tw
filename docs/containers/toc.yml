@@ -30,8 +30,6 @@
           href: view-and-diagnose-containers.md
         - name: 設定容器工具
           href: container-tools-configure.md
-        - name: 執行單元測試
-          href: container-unit-testing.md
     - name: 概念
       items:
         - name: 建置容器化應用程式

@@ -15,14 +15,15 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: d220e3c1d9e7b5879d12ed31f6a3374e6c481fe3
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 0318f99d234309093717c9603ec1153e71d6d7f3
+ms.sourcegitcommit: 74c5360186731de07828764eb32ea1033a8c2275
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66352138"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67559702"
 ---
 # <a name="idebugstackframe2getlanguageinfo"></a>IDebugStackFrame2::GetLanguageInfo
+
 取得此堆疊框架相關聯的語言。
 
 ## <a name="syntax"></a>語法
@@ -42,26 +43,29 @@ int GetLanguageInfo ( 
 ```
 
 ## <a name="parameters"></a>參數
+
 `pbstrLanguage`\
 [out]傳回實作的方法，此堆疊框架相關聯的語言名稱。
 
 `pguidLanguage`\
 [out]傳回`GUID`的語言。 針對[!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)]語言，例如，下列可傳回：
 
--   `guidVBScriptLang`\
+- `guidVBScriptLang`\
 
--   `guidJScriptLang`\
+- `guidJScriptLang`\
 
--   `guidCPPLang`\
+- `guidCPPLang`\
 
--   `guidVBLang`\
+- `guidVBLang`\
 
--   `guidSQLLang`\
+- `guidSQLLang`\
 
--   `guidScriptLang`\
+- `guidScriptLang`\
 
 ## <a name="return-value"></a>傳回值
+
  如果成功，則傳回`S_OK`; 否則傳回錯誤碼。
 
 ## <a name="see-also"></a>另請參閱
+
 - [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md)
