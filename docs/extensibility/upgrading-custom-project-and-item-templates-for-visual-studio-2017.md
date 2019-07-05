@@ -10,12 +10,12 @@ manager: jillfra
 ms.workload:
 - vssdk
 monikerRange: vs-2017
-ms.openlocfilehash: 9302ae3119bceb466e3d681036753bd8237cbeae
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: d375dfc4a53015f57546f7cbfcc8b940fa81bd0b
+ms.sourcegitcommit: 74c5360186731de07828764eb32ea1033a8c2275
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66316329"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67559751"
 ---
 # <a name="upgrade-custom-project-and-item-templates-for-visual-studio-2017"></a>升級自訂專案與 Visual Studio 2017 的項目範本
 
@@ -180,9 +180,9 @@ ms.locfileid: "66316329"
 
 有些以 MSI 為基礎的延伸模組會將範本部署到一般的範本位置，例如下列目錄：
 
-- **\<Visual Studio 安裝目錄 > \Common7\IDE\\< ProjectTemplates/項目範本 >**
+- **\<Visual Studio 安裝目錄 > \Common7\IDE\\< ProjectTemplates/項目範本\>**
 
-- **\<Visual Studio 安裝目錄 > \Common7\IDE\Extensions\\< ExtensionName\>\\< 專案/項目範本 >**
+- **\<Visual Studio 安裝目錄 > \Common7\IDE\Extensions\\< ExtensionName\>\\< 專案/項目範本\>**
 
 如果您的延伸模組執行 MSI 為基礎的部署，您需要手動產生範本資訊清單，並確保它包含延伸模組安裝程式中。 比較上述.vstman 範例和[Visual Studio 範本資訊清單結構描述參考](../extensibility/visual-studio-template-manifest-schema-reference.md)。
 
