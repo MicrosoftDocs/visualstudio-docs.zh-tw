@@ -6,12 +6,12 @@ description: 探索 Visual Studio 產品系列。
 ms.topic: landing-page
 ms.date: 07/02/2019
 searchScope: []
-ms.openlocfilehash: 540ae18ba242e7ba5628c92c5709db5502b4e6e9
-ms.sourcegitcommit: 74c5360186731de07828764eb32ea1033a8c2275
+ms.openlocfilehash: 41dd59cf67be1a476707a7ed3a18a263132fbfca
+ms.sourcegitcommit: 32144a09ed46e7223ef7dcab647a9f73afa2dd55
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67559690"
+ms.lasthandoff: 07/05/2019
+ms.locfileid: "67586779"
 ---
 <!-- markdownlint-disable MD033 -->
 <div id="main" class="v2">
@@ -69,7 +69,7 @@ ms.locfileid: "67559690"
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage"> 
-                                                        <img data-scaleimage="./images/vs-code-logo.svg" src="./images/vs-code-logo.svg" alt="Visual Studio Code" /><-->
+                                                        <img data-scaleimage="./images/vs-code-logo.svg" src="./images/vs-code-logo.svg" alt="Visual Studio Code" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
