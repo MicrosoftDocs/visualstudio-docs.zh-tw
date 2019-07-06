@@ -8,12 +8,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: bb224d1c84f9216ed303c919118af4997be2405c
-ms.sourcegitcommit: cc5fd59e5dc99181601b7db8b28d7f8a83a36bab
+ms.openlocfilehash: d6a6f4123f72afd8c310e627a9da6759f4c4548a
+ms.sourcegitcommit: 32144a09ed46e7223ef7dcab647a9f73afa2dd55
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/11/2019
-ms.locfileid: "66835901"
+ms.lasthandoff: 07/05/2019
+ms.locfileid: "67586962"
 ---
 # <a name="get-started-with-roslyn-analyzers"></a>開始使用 Roslyn 分析器
 
@@ -30,7 +30,6 @@ ms.locfileid: "66835901"
 [真實世界的 Roslyn 分析器](../extensibility/roslyn-analyzers-and-code-aware-library-for-immutablearrays.md)，您也可以觀看為[討論](https://channel9.msdn.com/events/Build/2015/3-725)
 
 [在 GitHub 上的數個範例分組為三種類型的分析器](https://github.com/dotnet/roslyn/blob/master/docs/analyzers/Analyzer%20Samples.md)
-
 
 ## <a name="see-also"></a>另請參閱
 

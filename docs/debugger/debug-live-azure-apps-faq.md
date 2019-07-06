@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 315b24d384a1e3576af6590923c0e546785918ae
-ms.sourcegitcommit: b468d71052a1b8a697f477ab23a3644de139f1e9
+ms.openlocfilehash: 813f06f55b6ae8f03a8d5a8e452ca05c4fe2054c
+ms.sourcegitcommit: 32144a09ed46e7223ef7dcab647a9f73afa2dd55
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/19/2019
-ms.locfileid: "67255989"
+ms.lasthandoff: 07/05/2019
+ms.locfileid: "67586845"
 ---
 # <a name="frequently-asked-questions-for-snapshot-debugging-in-visual-studio"></a>Visual Studio 中快照集偵錯的常見問題集
 
@@ -70,92 +70,91 @@ ms.locfileid: "67255989"
 
 虛擬機器/虛擬機器擴展集移除遠端偵錯工具擴充功能中，憑證 KeyVaults 和輸入 NAT 集區，如下所示：
 
-1. 移除遠端偵錯工具擴充功能  
+1. 移除遠端偵錯工具擴充功能
 
-   有數種方式來停用遠端偵錯工具的虛擬機器和虛擬機器擴展集：  
+   有數種方式來停用遠端偵錯工具的虛擬機器和虛擬機器擴展集：
 
-      - 停用透過 Cloud Explorer 中的遠端偵錯工具  
+      - 停用透過 Cloud Explorer 中的遠端偵錯工具
 
-         - Cloud Explorer > 您的虛擬機器資源 > 停用偵錯 （停用偵錯不存在的虛擬機器擴展集上雲端總管）。  
+         - Cloud Explorer > 您的虛擬機器資源 > 停用偵錯 （停用偵錯不存在的虛擬機器擴展集上雲端總管）。
 
+      - 停用遠端偵錯工具使用 PowerShell 指令碼/指令程式
 
-      - 停用遠端偵錯工具使用 PowerShell 指令碼/指令程式  
+         針對虛擬機器：
 
-         針對虛擬機器：  
-
+         ```powershell
+         Remove-AzVMExtension -ResourceGroupName $rgName -VMName $vmName -Name Microsoft.VisualStudio.Azure.RemoteDebug.VSRemoteDebugger
          ```
-         Remove-AzVMExtension -ResourceGroupName $rgName -VMName $vmName -Name Microsoft.VisualStudio.Azure.RemoteDebug.VSRemoteDebugger  
-         ```
 
-         虛擬機器擴展集：  
-         ```
-         $vmss = Get-AzVmss -ResourceGroupName $rgName -VMScaleSetName $vmssName  
-         $extension = $vmss.VirtualMachineProfile.ExtensionProfile.Extensions | Where {$_.Name.StartsWith('VsDebuggerService')} | Select -ExpandProperty Name  
-         Remove-AzVmssExtension -VirtualMachineScaleSet $vmss -Name $extension  
+         虛擬機器擴展集：
+
+         ```powershell
+         $vmss = Get-AzVmss -ResourceGroupName $rgName -VMScaleSetName $vmssName
+         $extension = $vmss.VirtualMachineProfile.ExtensionProfile.Extensions | Where {$_.Name.StartsWith('VsDebuggerService')} | Select -ExpandProperty Name
+         Remove-AzVmssExtension -VirtualMachineScaleSet $vmss -Name $extension
          ```
 
       - 停用遠端偵錯工具在 Azure 入口網站
-         - Azure 入口網站 > 虛擬機器/虛擬機器調整規模設定資源刀鋒視窗 > 延伸模組  
-         - 解除安裝 Microsoft.VisualStudio.Azure.RemoteDebug.VSRemoteDebugger 延伸模組  
-
+         - Azure 入口網站 > 虛擬機器/虛擬機器調整規模設定資源刀鋒視窗 > 延伸模組
+         - 解除安裝 Microsoft.VisualStudio.Azure.RemoteDebug.VSRemoteDebugger 延伸模組
 
          > [!NOTE]
          > 虛擬機器擴展集-入口網站不允許移除 DebuggerListener 連接埠。 您必須使用 Azure PowerShell。 如需詳細資訊，請參閱下方。
-  
+
 2. 移除憑證和 Azure 金鑰保存庫
 
-   安裝時虛擬機器或虛擬機器擴展集的遠端偵錯工具擴充功能，會建立用戶端和伺服器的憑證，驗證與用戶端與 Azure 虛擬機器/虛擬機器擴展集資源。  
+   安裝時虛擬機器或虛擬機器擴展集的遠端偵錯工具擴充功能，會建立用戶端和伺服器的憑證，驗證與用戶端與 Azure 虛擬機器/虛擬機器擴展集資源。
 
-   - 用戶端憑證  
+   - 用戶端憑證
 
-      此憑證是自我簽署的憑證位於 Cert: / CurrentUser/My /  
+      此憑證是自我簽署的憑證位於 Cert: / CurrentUser/My /
 
       ```
-      Thumbprint                                Subject  
-      ----------                                -------  
+      Thumbprint                                Subject
+      ----------                                -------
 
-      1234123412341234123412341234123412341234  CN=ResourceName  
+      1234123412341234123412341234123412341234  CN=ResourceName
       ```
 
       從電腦移除此憑證的其中一個方法是透過 PowerShell
 
-      ```
-      $ResourceName = 'ResourceName' # from above  
-      Get-ChildItem -Path Cert:\CurrentUser\My | Where-Object {$_.Subject -match $ResourceName} | Remove-Item  
+      ```powershell
+      $ResourceName = 'ResourceName' # from above
+      Get-ChildItem -Path Cert:\CurrentUser\My | Where-Object {$_.Subject -match $ResourceName} | Remove-Item
       ```
 
    - 伺服器憑證
-      - 對應的伺服器憑證指紋會部署至 Azure key Vault 的祕密。 VS 會嘗試尋找] 或 [使用前置詞 MSVSAZ * 對應到虛擬機器的區域中建立金鑰保存庫，或虛擬機器擴展集資源。 所有虛擬機器或虛擬機器都擴展集部署到該區域的資源，因此會共用相同的金鑰保存庫。  
-      - 若要刪除的伺服器憑證指紋祕密，請移至 Azure 入口網站並尋找 MSVSAZ * 金鑰保存庫相同的區域中裝載您的資源。 刪除密碼應該標示為 `remotedebugcert<<ResourceName>>`  
-      - 您也必須從您的資源，透過 PowerShell 刪除伺服器密碼。  
+      - 對應的伺服器憑證指紋會部署至 Azure key Vault 的祕密。 VS 會嘗試尋找] 或 [使用前置詞 MSVSAZ * 對應到虛擬機器的區域中建立金鑰保存庫，或虛擬機器擴展集資源。 所有虛擬機器或虛擬機器都擴展集部署到該區域的資源，因此會共用相同的金鑰保存庫。
+      - 若要刪除的伺服器憑證指紋祕密，請移至 Azure 入口網站並尋找 MSVSAZ * 金鑰保存庫相同的區域中裝載您的資源。 刪除密碼應該標示為 `remotedebugcert<<ResourceName>>`
+      - 您也必須從您的資源，透過 PowerShell 刪除伺服器密碼。
 
-      虛擬機器：  
+      虛擬機器：
 
+      ```powershell
+      $vm.OSProfile.Secrets[0].VaultCertificates.Clear()
+      Update-AzVM -ResourceGroupName $rgName -VM $vm
       ```
-      $vm.OSProfile.Secrets[0].VaultCertificates.Clear()  
-      Update-AzVM -ResourceGroupName $rgName -VM $vm  
-      ```
-                        
-      虛擬機器擴展集：  
 
-      ```
-      $vmss.VirtualMachineProfile.OsProfile.Secrets[0].VaultCertificates.Clear()  
-      Update-AzVmss -ResourceGroupName $rgName -VMScaleSetName $vmssName -VirtualMachineScaleSet $vmss  
-      ```
-                        
-3. 移除所有 DebuggerListener 輸入 NAT 集區 （虛擬機器擴展集只）  
+      虛擬機器擴展集：
 
-   遠端偵錯工具導入了 DebuggerListener 傳入 NAT 集區，可套用至擴展集的負載平衡器。  
+      ```powershell
+      $vmss.VirtualMachineProfile.OsProfile.Secrets[0].VaultCertificates.Clear()
+      Update-AzVmss -ResourceGroupName $rgName -VMScaleSetName $vmssName -VirtualMachineScaleSet $vmss
+      ```
 
-   ```
-   $inboundNatPools = $vmss.VirtualMachineProfile.NetworkProfile.NetworkInterfaceConfigurations.IpConfigurations.LoadBalancerInboundNatPools  
-   $inboundNatPools.RemoveAll({ param($pool) $pool.Id.Contains('inboundNatPools/DebuggerListenerNatPool-') }) | Out-Null  
-                
-   if ($LoadBalancerName)  
+3. 移除所有 DebuggerListener 輸入 NAT 集區 （虛擬機器擴展集只）
+
+   遠端偵錯工具導入了 DebuggerListener 傳入 NAT 集區，可套用至擴展集的負載平衡器。
+
+   ```powershell
+   $inboundNatPools = $vmss.VirtualMachineProfile.NetworkProfile.NetworkInterfaceConfigurations.IpConfigurations.LoadBalancerInboundNatPools
+   $inboundNatPools.RemoveAll({ param($pool) $pool.Id.Contains('inboundNatPools/DebuggerListenerNatPool-') }) | Out-Null
+
+   if ($LoadBalancerName)
    {
-      $lb = Get-AzLoadBalancer -ResourceGroupName $ResourceGroup -name $LoadBalancerName  
-      $lb.FrontendIpConfigurations[0].InboundNatPools.RemoveAll({ param($pool) $pool.Id.Contains('inboundNatPools/DebuggerListenerNatPool-') }) | Out-Null  
-      Set-AzLoadBalancer -LoadBalancer $lb  
+      $lb = Get-AzLoadBalancer -ResourceGroupName $ResourceGroup -name $LoadBalancerName
+      $lb.FrontendIpConfigurations[0].InboundNatPools.RemoveAll({ param($pool) $pool.Id.Contains('inboundNatPools/DebuggerListenerNatPool-') }) | Out-Null
+      Set-AzLoadBalancer -LoadBalancer $lb
    }
    ```
 
@@ -164,12 +163,12 @@ ms.locfileid: "67255989"
 適用於 App Service:
 1. 針對您的 App Service，快照集偵錯工具停用透過 Azure 入口網站。
 2. Azure 入口網站 > 您的應用程式服務資源刀鋒視窗 >*應用程式設定*
-3. 刪除 Azure 入口網站中的下列應用程式設定，並儲存變更。 
-    - INSTRUMENTATIONENGINE_EXTENSION_VERSION
-    - SNAPSHOTDEBUGGER_EXTENSION_VERSION
+3. 刪除 Azure 入口網站中的下列應用程式設定，並儲存變更。
+   - INSTRUMENTATIONENGINE_EXTENSION_VERSION
+   - SNAPSHOTDEBUGGER_EXTENSION_VERSION
 
-    > [!WARNING]
-    > 應用程式設定的任何變更將會起始應用程式重新啟動。 如需有關應用程式設定的詳細資訊，請參閱[在 Azure 入口網站中設定 App Service 應用程式](/azure/app-service/web-sites-configure)。
+   > [!WARNING]
+   > 應用程式設定的任何變更將會起始應用程式重新啟動。 如需有關應用程式設定的詳細資訊，請參閱[在 Azure 入口網站中設定 App Service 應用程式](/azure/app-service/web-sites-configure)。
 
 供 AKS 使用：
 1. 更新您的 Dockerfile，以移除對應的章節[上的 Docker 映像 Visual Studio 的快照集偵錯工具](https://github.com/Microsoft/vssnapshotdebugger-docker)。
@@ -184,16 +183,18 @@ ms.locfileid: "67255989"
 
 - PowerShell Cmdlet，從[Az PowerShell](https://docs.microsoft.com/powershell/azure/overview)
 
-    虛擬機器：
-    ```
-        Remove-AzVMExtension -ResourceGroupName $rgName -VMName $vmName -Name Microsoft.Insights.VMDiagnosticsSettings 
-    ```
-    
-    虛擬機器擴展集：
-    ```
-        $vmss = Get-AzVmss -ResourceGroupName $rgName -VMScaleSetName $vmssName
-        Remove-AzVmssExtension -VirtualMachineScaleSet $vmss -Name Microsoft.Insights.VMDiagnosticsSettings
-    ```
+   虛擬機器：
+
+   ```powershell
+      Remove-AzVMExtension -ResourceGroupName $rgName -VMName $vmName -Name Microsoft.Insights.VMDiagnosticsSettings
+   ```
+
+   虛擬機器擴展集：
+
+   ```powershell
+      $vmss = Get-AzVmss -ResourceGroupName $rgName -VMScaleSetName $vmssName
+      Remove-AzVmssExtension -VirtualMachineScaleSet $vmss -Name Microsoft.Insights.VMDiagnosticsSettings
+   ```
 
 ## <a name="see-also"></a>另請參閱
 
