@@ -34,7 +34,6 @@
 ### [專業開發](professional-development.md)
 #### [LinkedIn Learning](vs-linkedin-learning.md)
 #### [DataCamp](vs-datacamp.md)
-#### [Skill Me Up](vs-opsgility.md)
 #### [Pluralsight](vs-pluralsight.md)
 #### [MSDN Magazine 訂閱](vs-msdn.md)
 ### [支援權益](technical-support.md)
