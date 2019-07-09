@@ -20,15 +20,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 960ecd2680585602b2c026b00b36bf7d93b8021d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 05a74c77d4b2e4e75379adec8738ab92270596e3
+ms.sourcegitcommit: 3cc73e74921a9ceb622542e0e263abeebc455c00
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62900227"
+ms.lasthandoff: 07/08/2019
+ms.locfileid: "67624531"
 ---
 # <a name="create-bootstrapper-packages"></a>建立啟動載入器套件
-安裝程式 (Setup Program) 是一般安裝程式 (Installer)，可設定來偵測及安裝可轉散發元件，例如 Windows Installer (*.msi*) 檔案和可執行程式。 安裝程式也稱為啟動載入器。 其程式設計方式是透過一組 XML 資訊清單，指定用於管理元件安裝的中繼資料。  每個可轉散發元件或必要條件中，出現在**必要條件**對 ClickOnce 的對話方塊是啟動載入器套件。 啟動載入器套件是一組目錄和檔案，內含描述必要條件安裝方式的資訊清單檔案。
+安裝程式 (Setup Program) 是一般安裝程式 (Installer)，可設定來偵測及安裝可轉散發元件，例如 Windows Installer ( *.msi*) 檔案和可執行程式。 安裝程式也稱為啟動載入器。 其程式設計方式是透過一組 XML 資訊清單，指定用於管理元件安裝的中繼資料。  每個可轉散發元件或必要條件中，出現在**必要條件**對 ClickOnce 的對話方塊是啟動載入器套件。 啟動載入器套件是一組目錄和檔案，內含描述必要條件安裝方式的資訊清單檔案。
 
 啟動載入器會先偵測是否已安裝所有必要條件。 如果未安裝必要條件，啟動載入器會先顯示授權合約。 接著，在使用者接受授權合約之後，就會開始安裝必要條件。 不過，如果啟動載入器偵測到所有必要條件，就會直接啟動應用程式安裝程式。
 
@@ -43,40 +43,48 @@ ms.locfileid: "62900227"
 
 建立這些檔案之後，請將產品資訊清單檔案放入以自訂啟動載入器命名的資料夾中， 並將套件資訊清單檔案放入以地區設定命名的資料夾中。 例如，如果是英文版可轉散發套件的套件資訊清單檔案，請將檔案放入稱為 en 的資料夾中。 針對每個地區設定重複這個程序，例如以 ja 代表日文，以 de 代表德文。 最終的自訂啟動載入器套件可能會有下列資料夾結構。
 
-    ```xml
-    CustomBootstrapperPackage
-      product.xml
-      CustomBootstrapper.msi
-      de
-        eula.rtf
-        package.xml
-      en
-        eula.rtf
-        package.xml
-      ja
-        eula.rtf
-        package.xml
-    ```
+```
+CustomBootstrapperPackage
+  product.xml
+  CustomBootstrapper.msi
+  de
+    eula.rtf
+    package.xml
+  en
+    eula.rtf
+    package.xml
+  ja
+    eula.rtf
+    package.xml
+```
 
 接下來，將可轉散發檔案複製到啟動載入器資料夾位置中。 如需詳細資訊，請參閱[如何：建立當地語系化的啟動載入器套件](../deployment/how-to-create-a-localized-bootstrapper-package.md)。
 
-    *\Program Files\Microsoft Visual Studio 14.0\SDK\Bootstrapper\Packages*
+```
+*\Program Files\Microsoft Visual Studio 14.0\SDK\Bootstrapper\Packages*
+```
 
 或
 
-    *\Program Files (x86)\Microsoft Visual Studio 14.0\SDK\Bootstrapper\Packages*
+```
+*\Program Files (x86)\Microsoft Visual Studio 14.0\SDK\Bootstrapper\Packages*
+```
 
 您也可以從下列登錄機碼中的 [路徑]  值，決定啟動載入器資料夾位置：
 
-    *HKLM\Software\Microsoft\GenericBootstrapper\11.0*
+```
+*HKLM\Software\Microsoft\GenericBootstrapper\11.0*
+```
 
 在 64 位元系統上，使用下列登錄機碼：
 
-    *HKLM\Software\Wow6432Node\Microsoft\GenericBootstrapper\11.0*
+```
+*HKLM\Software\Wow6432Node\Microsoft\GenericBootstrapper\11.0*
+```
 
 每個可轉散發元件會出現在套件目錄下各自的子資料夾中。 產品資訊清單和可轉散發檔案必須放入這個子資料夾。 當地語系化的版本的元件和套件資訊清單必須放在名為根據文化特性名稱的子資料夾中。
 
-當這些檔案複製到啟動載入器資料夾之後，啟動載入器套件就會自動出現在 Visual Studio 的 [必要條件] 對話方塊中。 如果您的自訂啟動載入器套件沒有出現在其中，請關閉再重新開啟 [必要條件] 對話方塊。 如需詳細資訊，請參閱[必要條件對話方塊](../ide/reference/prerequisites-dialog-box.md)。
+當這些檔案複製到啟動載入器資料夾之後，啟動載入器套件就會自動出現在 Visual Studio 的 [必要條件]  對話方塊中。 如果您的自訂啟動載入器套件沒有出現在其中，請關閉再重新開啟 [必要條件]  對話方塊。 如需詳細資訊，請參閱[必要條件對話方塊](../ide/reference/prerequisites-dialog-box.md)。
 
 下表顯示啟動載入器會自動填入的屬性。
 
@@ -95,7 +103,7 @@ ms.locfileid: "62900227"
 
 `%ProgramFiles%\Microsoft.NET\RedistList`
 
-可轉散發清單是 XML 檔案，您應該使用下列格式：*\<公司名稱 >。\<元件名稱 >.Redistlist.xml*。 例如，如果 Acme 建立稱為 Datawidgets 的元件，請使用 *Acme.DataWidgets.RedistList.xml*。 可轉散發清單的內容範例可能如下所示：
+可轉散發清單是 XML 檔案，您應該使用下列格式： *\<公司名稱 >。\<元件名稱 >.Redistlist.xml*。 例如，如果 Acme 建立稱為 Datawidgets 的元件，請使用 *Acme.DataWidgets.RedistList.xml*。 可轉散發清單的內容範例可能如下所示：
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>

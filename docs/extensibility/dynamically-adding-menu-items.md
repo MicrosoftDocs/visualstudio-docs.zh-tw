@@ -12,12 +12,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 619c06d23e3bc1abfce1473627fb483612766728
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 62ff05de5cfd6dfa01f8e93f22f9ac09b8e61575
+ms.sourcegitcommit: 3cc73e74921a9ceb622542e0e263abeebc455c00
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66353393"
+ms.lasthandoff: 07/08/2019
+ms.locfileid: "67624474"
 ---
 # <a name="dynamically-add-menu-items"></a>以動態方式加入功能表項目
 您可以在執行階段加入功能表項目，藉由指定`DynamicItemStart`命令在 Visual Studio 命令表中的預留位置按鈕定義的旗標 ( *.vsct*) 檔案，則定義 （在程式碼） 來顯示的功能表項目數目和處理命令。 當載入 VSPackage 時，動態功能表項目會取代預留位置。
@@ -320,15 +320,15 @@ ms.locfileid: "66353393"
 
 現在實作符合述詞。 我們需要決定兩件事情： 首先，命令識別碼是否有效 （它是大於或等於宣告的命令 ID，） 和第二個，它是否會指定可能的專案 （它是在方案中的專案數目小於）。
 
-    ```csharp
-    private bool IsValidDynamicItem(int commandId)
-    {
-        // The match is valid if the command ID is >= the id of our root dynamic start item
-        // and the command ID minus the ID of our root dynamic start item
-        // is less than or equal to the number of projects in the solution.
-        return (commandId >= (int)DynamicMenuPackageGuids.cmdidMyCommand) && ((commandId - (int)DynamicMenuPackageGuids.cmdidMyCommand) < dte2.Solution.Projects.Count);
-    }
-    ```
+```csharp
+private bool IsValidDynamicItem(int commandId)
+{
+    // The match is valid if the command ID is >= the id of our root dynamic start item
+    // and the command ID minus the ID of our root dynamic start item
+    // is less than or equal to the number of projects in the solution.
+    return (commandId >= (int)DynamicMenuPackageGuids.cmdidMyCommand) && ((commandId - (int)DynamicMenuPackageGuids.cmdidMyCommand) < dte2.Solution.Projects.Count);
+}
+```
 
 ## <a name="set-the-vspackage-to-load-only-when-a-solution-has-multiple-projects"></a>設定方案中有多個專案時，只載入 VSPackage
  因為**設定啟始專案**命令沒有任何意義，除非使用中的方案有多個專案，您可以設定以僅在此情況下自動載入 VSPackage。 您使用<xref:Microsoft.VisualStudio.Shell.ProvideAutoLoadAttribute>UI 內容以及<xref:Microsoft.VisualStudio.Shell.Interop.UIContextGuids.SolutionHasMultipleProjects>。 在  *DynamicMenuPackage.cs*檔案會加入 DynamicMenuPackage 類別中的下列屬性：
