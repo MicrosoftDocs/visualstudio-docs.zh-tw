@@ -5,18 +5,18 @@ author: conceptdev
 ms.author: crdun
 ms.date: 05/06/2018
 ms.assetid: 5880BB10-0A12-47E2-8A82-7A2D59C4D579
-ms.openlocfilehash: b6f355dbe10cf250ec397cb817643984b438a92e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 00814f006c265a3c16cd3d4bd6bc004754016a27
+ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62932415"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "67692417"
 ---
 # <a name="creating-new-projects-and-solutions"></a>建立新的專案和方案
 
 ## <a name="creating-new-projects-and-solutions-from-a-template"></a>從範本建立新的專案和方案
 
-可以隨時使用預先定義的範本來建立方案。 若要以此方式建立方案，請瀏覽至 [檔案] > [新增方案] **** ，選取所需的平台，然後選取所需的範本：
+可以隨時使用預先定義的範本來建立方案。 若要以此方式建立方案，請瀏覽至 [檔案] > [新增方案]  ，選取所需的平台，然後選取所需的範本：
 
 ![建立新的方案](media/projects-and-solutions-image0.png)
 

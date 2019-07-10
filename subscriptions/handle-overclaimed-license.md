@@ -7,12 +7,12 @@ ms.date: 02/13/2018
 ms.topic: conceptual
 description: 了解系統管理員如何解決過度領取訂閱的問題
 searchscope: VS Subscription
-ms.openlocfilehash: 6217dcd3cef9a65db3e45ba76f57167f47535671
-ms.sourcegitcommit: bd519d1da375e374016f94a44c295d3253f61a8c
+ms.openlocfilehash: 06da8c460e9660857b0f03062bde5bd983bd176d
+ms.sourcegitcommit: 32144a09ed46e7223ef7dcab647a9f73afa2dd55
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "64945130"
+ms.lasthandoff: 07/05/2019
+ms.locfileid: "67586995"
 ---
 # <a name="overallocated-subscriptions"></a>超額配置的訂用帳戶
 
@@ -43,8 +43,8 @@ ms.locfileid: "64945130"
 >
 > 客戶必須負責確保指派的每個 GitHub 訂用帳戶都對應一個含 GitHub 的 Visual Studio 訂用帳戶 (在管理入口網站中指派)，以保持符合這個訂用帳戶的授權需求。
 
-
 深入了解如何管理[含 GitHub Enterprise 的 Visual Studio 訂用帳戶](assign-github.md)。
 
 ## <a name="support-resources"></a>支援資源
--  如需 Visual Studio 訂用帳戶有關銷售、訂閱、帳戶與計費的協助，請聯繫 Visual Studio [訂用帳戶支援](https://visualstudio.microsoft.com/subscriptions/support/)。
+
+- 如需 Visual Studio 訂用帳戶有關銷售、訂閱、帳戶與計費的協助，請聯繫 Visual Studio [訂用帳戶支援](https://visualstudio.microsoft.com/subscriptions/support/)。

@@ -7,12 +7,12 @@ ms.date: 12/19/2018
 ms.topic: conceptual
 description: 了解 Visual Studio 訂用帳戶中所含的指引對談權益。
 searchscope: VS Subscription
-ms.openlocfilehash: 51fb2242c87ba3d091f62bc2271aea60b56f1283
-ms.sourcegitcommit: 91c7f1b525e0c22d938bc4080ba4ceac2483474f
+ms.openlocfilehash: 9141da640cf0a181c462f1f9af5c3e8fe70a3fb4
+ms.sourcegitcommit: 32144a09ed46e7223ef7dcab647a9f73afa2dd55
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/12/2019
-ms.locfileid: "67032201"
+ms.lasthandoff: 07/05/2019
+ms.locfileid: "67586924"
 ---
 # <a name="concierge-chat"></a>指引對談
 
@@ -45,7 +45,6 @@ ms.locfileid: "67032201"
 | Visual Studio Test Professional (標準訂用帳戶)                         | VL, 零售                                              | 可用                                             |  是          |
 | MSDN 平台 (標準)                                          | VL, 零售                                              | 可用                                              |  是          |
 | Visual Studio Enterprise、Visual Studio Professional (每月雲端) | Azure | 無法使用 | N/A |
-
 
 <sup>1</sup>  *包含：禁止轉售 (NFR)、Visual Studio 產業夥伴 (VSIP)、Microsoft Certified Trainer、BizSpark。排除：FTE、最有價值專家 (MVP)、區域經理 (RD)、Microsoft 合作夥伴網路 (MPN)、Imagine。*
 

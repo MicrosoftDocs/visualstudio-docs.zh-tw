@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 553d5e07-3e19-4aba-b490-6c7dd05fd82e
 caps.latest.revision: 46
 manager: jillfra
-ms.openlocfilehash: b6a12d683d3a2cb6b8d1c5ea5d7ca790de94adc6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 42c471ca924bfded62db32a956a26c07240459eb
+ms.sourcegitcommit: 3cc73e74921a9ceb622542e0e263abeebc455c00
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63000948"
+ms.lasthandoff: 07/08/2019
+ms.locfileid: "67624462"
 ---
 # <a name="menucommands-vs-olemenucommands"></a>MenuCommand 對比OleMenuCommand
-您可以藉由衍生自 <xref:System.ComponentModel.Design.MenuCommand> 或 <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> 物件，然後實作適當的事件處理常式來建立功能表命令。 在大多數情況下，您可以使用 <xref:System.ComponentModel.Design.MenuCommand>，就如同 VSPackage 專案範本一樣，但有時候您可能需要使用 <xref:Microsoft.VisualStudio.Shell.OleMenuCommand>。  
+您可以藉由衍生自建立功能表命令<xref:System.ComponentModel.Design.MenuCommand>或從<xref:Microsoft.VisualStudio.Shell.OleMenuCommand>物件，並實作適當的事件處理常式。 在大多數情況下，您可以使用 <xref:System.ComponentModel.Design.MenuCommand>，就如同 VSPackage 專案範本一樣，但有時候您可能需要使用 <xref:Microsoft.VisualStudio.Shell.OleMenuCommand>。  
   
  VSPackage 會提供給 IDE 的命令必須顯示並啟用，使用者才能使用它們。 使用 Visual Studio Package 專案範本建立在 .vsct 檔案中建立命令，它們預設會顯示並啟用。 設定一些命令旗標，例如 `DynamicItemStart`，可以變更預設行為。 可見性、啟用的狀態，以及命令的其他屬性，也可以在執行階段的程式碼中藉由存取與命令相關聯的 <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> 物件來變更。  
   
@@ -90,7 +90,7 @@ ms.locfileid: "63000948"
   
     您可以執行下列兩種方式之一，視您的設計而定：  
   
-   - 在 `Button` 項目中，建立 [父代](../extensibility/parent-element.md) 項目，並將其 `guid` 和 `id` 欄位設定為裝載命令之群組的 Guid 和 ID，這個群組又稱為 *「主要父群組」*(primary parent group)。  
+   - 在 `Button` 項目中，建立 [父代](../extensibility/parent-element.md) 項目，並將其 `guid` 和 `id` 欄位設定為裝載命令之群組的 Guid 和 ID，這個群組又稱為 *「主要父群組」* (primary parent group)。  
   
         下列範例會定義使用者定義功能表中所顯示的命令。  
   
@@ -115,7 +115,7 @@ ms.locfileid: "63000948"
    </CommandPlacements>
    ```
       
-        Creating multiple command placements that have the same GUID:ID and have different parents causes a menu to appear in multiple locations. For more information, see [CommandPlacements](../extensibility/commandplacements-element.md) element.  
+      建立多個有相同 GUID:ID 但有不同父代的命令位置，會使功能表出現在多個位置。 如需詳細資訊，請參閱 [CommandPlacements](../extensibility/commandplacements-element.md) 項目。  
   
     如需有關命令群組與父代的詳細資訊，請參閱[建立可重複使用群組的按鈕](../extensibility/creating-reusable-groups-of-buttons.md)。  
   
@@ -179,7 +179,7 @@ ms.locfileid: "63000948"
   
     `EventHandler` 物件會得到在查詢功能表命令的狀態時所呼叫之方法的名稱。  
   
-2. 實作命令的查詢狀態處理常式方法。  `object` `sender` 參數可以轉換成 <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> 物件，用來設定功能表命令的各種屬性，包括文字。 下表顯示 <xref:System.ComponentModel.Design.MenuCommand> 類別上的屬性 (MPF 類別 <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> 衍生自此類別)，這些屬性對應至 <xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF> 旗標。  
+2. 實作命令的查詢狀態處理常式方法。 `object` `sender` 參數可以轉換成 <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> 物件，用來設定功能表命令的各種屬性，包括文字。 下表顯示 <xref:System.ComponentModel.Design.MenuCommand> 類別上的屬性 (MPF 類別 <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> 衍生自此類別)，這些屬性對應至 <xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF> 旗標。  
   
    |MenuCommand 屬性|OLECMDF 旗標|  
    |--------------------------|------------------|  

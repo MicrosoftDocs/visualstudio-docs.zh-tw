@@ -1,16 +1,16 @@
 ---
 title: 編譯和建置
 description: 本文描述如何在 Visual Studio for Mac 中編譯和建置專案與方案
-author: conceptdev
-ms.author: crdun
+author: heiligerdankgesang
+ms.author: dominicn
 ms.date: 05/06/2018
 ms.assetid: FB253757-DB00-4889-A6BF-E44722E25BD1
-ms.openlocfilehash: fece226d9e7fd7ba023369928171553c393b46d5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 0165594b4c2d77005c2a9ef921cce457f6f2d0f6
+ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62985288"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "67693127"
 ---
 # <a name="compiling-and-building-in-visual-studio-for-mac"></a>在 Visual Studio for Mac 中編譯和建置
 

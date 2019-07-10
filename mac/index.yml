@@ -3,8 +3,8 @@ documentType: LandingData
 title: Visual Studio 2019 for Mac 文件
 metadata:
   description: 本文介紹 Visual Studio for Mac 的功能。
-  author: conceptdev
-  ms.author: crdun
+  author: asb3993
+  ms.author: amburns
   ms.date: 04/02/2019
   ms.topic: landing-page
   ms.prod: visual-studio-mac

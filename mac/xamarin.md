@@ -1,16 +1,16 @@
 ---
 title: Visual Studio for Mac 中的 Xamarin
 description: '使用 Visual Studio for Mac 中的 Xamarin 可讓您建立以 iOS、Mac、Android、tvOS 和 watchOS 為目標的跨平台應用程式 '
-author: conceptdev
-ms.author: crdun
-ms.date: 02/12/2019
+author: therealjohn
+ms.author: johmil
+ms.date: 06/18/2019
 ms.assetid: 339F6051-5F90-48DC-8237-EBBC8A03A32B
-ms.openlocfilehash: 1a7ba3101713c4461f3d3558a97cdbea37eac604
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e6cc642125f3b1466dd38d9ba3778c4f287cec63
+ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62809944"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "67692093"
 ---
 # <a name="xamarin-mobile-app-development"></a>Xamarin 行動裝置應用程式開發
 

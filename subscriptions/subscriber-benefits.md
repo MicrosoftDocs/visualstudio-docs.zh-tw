@@ -7,17 +7,16 @@ ms.date: 06/28/2019
 ms.topic: conceptual
 description: 了解有關您的 Visual Studio 訂用帳戶中包含的權益
 searchscope: VS Subscription
-ms.openlocfilehash: e076ad536849a3ef0c915cd3222d80c68eaa205b
-ms.sourcegitcommit: d2b234e0a4a875c3cba09321cdf246842670d872
+ms.openlocfilehash: 27ec141156de16c4bca8862ed88f89731924d1af
+ms.sourcegitcommit: 32144a09ed46e7223ef7dcab647a9f73afa2dd55
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/01/2019
-ms.locfileid: "67493737"
+ms.lasthandoff: 07/05/2019
+ms.locfileid: "67586980"
 ---
 # <a name="benefits-included-in-your-visual-studio-subscription"></a>您的 Visual Studio 訂用帳戶中包含的權益
 
 Visual Studio 訂用帳戶 (前身為 MSDN 訂用帳戶) 提供最全面的資源集，供您在 Windows、iOS、Android 與 Linux 等慣用的平台及裝置上，建立、部署及管理絕佳的應用程式。  特定的權益會視您擁有的訂用帳戶類型而不同。  為了提供訂閱者最大價值，根據我們調整專注於最新且最有用的技術、訓練教材，及可用的夥伴權益，提供的權益每隔一段時間會隨上述項目變更。
-
 
 [訂閱者入口網站](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs:)中的權益分為三個類別。
 
