@@ -1,16 +1,16 @@
 ---
 title: 自訂組建系統
 description: 本文簡要介紹 Visual Studio for Mac MSBuild 組建系統
-author: conceptdev
-ms.author: crdun
+author: heiligerdankgesang
+ms.author: dominicn
 ms.date: 04/14/2017
 ms.assetid: 6958B102-8527-4B40-BC65-3505DB63F9D3
-ms.openlocfilehash: 0c2a4590b15faa2573ccab3ff51ff5cd54e177ca
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 97416ef126ee77f9955d8fa486d7bb7e2ceb725e
+ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62983700"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "67693026"
 ---
 # <a name="customizing-the-build-system"></a>自訂組建系統
 
@@ -22,15 +22,15 @@ MSBuild 的運作方式為採用一組輸入 (例如來源檔案) 並將其轉�
 
 ## <a name="msbuild-file"></a>MSBuild 檔案
 
-MSBuild 會使用稱為專案檔的 XML 檔案，以定義屬於專案一部分的「項目」 (例如影像資源)，以及建置專案所需的「屬性」。 這個專案檔一律是以副檔名 `proj` 結尾，例如 C# 專案的 `.csproj`。
+MSBuild 會使用稱為專案檔的 XML 檔案，以定義屬於專案一部分的「項目」  (例如影像資源)，以及建置專案所需的「屬性」  。 這個專案檔一律是以副檔名 `proj` 結尾，例如 C# 專案的 `.csproj`。
 
 ### <a name="viewing-the-msbuild-file"></a>檢視 MSBuild 檔案
 
-您可以滑鼠右鍵按一下專案名稱，然後選取 [在搜尋工具中顯示]來找到 MSBuild 檔案。 搜尋工具視窗會顯示與您專案相關的所有檔案和資料夾，包括 `.csproj` 檔案，如下圖所示：
+您可以滑鼠右鍵按一下專案名稱，然後選取 [在搜尋工具中顯示]  來找到 MSBuild 檔案。 搜尋工具視窗會顯示與您專案相關的所有檔案和資料夾，包括 `.csproj` 檔案，如下圖所示：
 
 ![搜尋工具中的 csproj 位置](media/customizing-build-system-image1.png)
 
-若要在 Visual Studio for Mac 中使用新的索引標籤顯示 `.csproj`，請以滑鼠右鍵按一下專案名稱，並瀏覽至 [工具] > [編輯檔案]：
+若要在 Visual Studio for Mac 中使用新的索引標籤顯示 `.csproj`，請以滑鼠右鍵按一下專案名稱，並瀏覽至 [工具] > [編輯檔案]  ：
 
 ![在來源編輯器中開啟 csproj](media/customizing-build-system-image2.png)
 
@@ -80,7 +80,7 @@ MSBuild 中有兩種基本資料類型：*項目*和*屬性*，下列各節會�
 
 #### <a name="items"></a>項目
 
-項目提供一種以清單或集合輸入組建系統的處理方法，通常代表檔案。 每個項目都包含項目「類型」、項目「規格」和選擇性的任意「中繼資料」。 請注意，MSBuild 不會在個別項目上運作，而是對指定類型的所有項目 (稱為項目「集」) 執行
+項目提供一種以清單或集合輸入組建系統的處理方法，通常代表檔案。 每個項目都包含項目「類型」  、項目「規格」  和選擇性的任意「中繼資料」  。 請注意，MSBuild 不會在個別項目上運作，而是對指定類型的所有項目 (稱為項目「集」  ) 執行
 
 項目是藉由宣告 `ItemGroup` 來建立。 可以有任意數目的 ItemGroup，而 ItemGroup 可以包含任何數目的項目。
 

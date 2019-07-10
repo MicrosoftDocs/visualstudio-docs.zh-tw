@@ -7,12 +7,12 @@ ms.date: 12/19/2018
 ms.topic: conceptual
 description: 了解所選取 Visual Studio 訂用帳戶中所含的 Azure 社群權益。
 searchscope: VS Subscription
-ms.openlocfilehash: afeed3f51e9a7ac00885906711c943f63896c80e
-ms.sourcegitcommit: 91c7f1b525e0c22d938bc4080ba4ceac2483474f
+ms.openlocfilehash: 5cfdb90a42b7dc3baa68da21e7856a62ba7593b8
+ms.sourcegitcommit: 32144a09ed46e7223ef7dcab647a9f73afa2dd55
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/12/2019
-ms.locfileid: "67032258"
+ms.lasthandoff: 07/05/2019
+ms.locfileid: "67586948"
 ---
 # <a name="azure-community"></a>Azure 社群
 
@@ -54,7 +54,6 @@ Azure 社群權益的可用性取決於訂用帳戶層級，如下所示：
 |                              Visual Studio Test Professional (標準訂用帳戶)                               |    VL, 零售     |   一年    |    是     |
 |                                       MSDN 平台 (標準)                                       |    VL, 零售     |   一年    |    是     |
 | Visual Studio Enterprise (每月雲端)、Visual Studio Professional (每月雲端)、NFR<sup>1</sup> |        All        | 無法使用 |     否     |
-
 
 <sup>1</sup>  *包含：禁止轉售 (NFR)、Microsoft FTE、最有價值專家 (MVP)、區域經理 (RD)、Visual Studio 產業夥伴 (VSIP)、BizSpark、Imagine、Microsoft 合格訓練人員 (MCT)*
 

@@ -11,12 +11,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: eb0267f668121e4d56f113798b14810f3446b8cf
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 652ff7b0380fc03a3f9c8155a2f8696d9dfee5b9
+ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62960604"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "67692367"
 ---
 # <a name="packagejson-configuration"></a>package.json 組態
 
@@ -24,7 +24,9 @@ ms.locfileid: "62960604"
 
 Npm 套件版本控制系統有嚴格的規則。 版本格式如下：
 
-    [major].[minor].[patch]
+```
+[major].[minor].[patch]
+```
 
 假設您的應用程式中有 5.2.1 版的套件。 主要版本是 5，次要版本是 2，而修補程式是 1。
 

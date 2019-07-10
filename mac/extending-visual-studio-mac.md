@@ -1,17 +1,17 @@
 ---
 title: 擴充 Visual Studio for Mac
 description: Visual Studio for Mac 的特性與功能可以使用稱為延伸模組套件的模組來擴充。 本指南的第一個部分會建立簡單的 Visual Studio for Mac 延伸模組套件，在文件中插入日期和時間。 本指南的第二個部分則介紹延伸模組套件系統的基本概念，和形成 Visual Studio for Mac 基礎的一些核心應用程式開發介面。
-author: conceptdev
-ms.author: crdun
+author: alanjclark
+ms.author: alcl
 ms.date: 05/07/2019
 ms.technology: vs-ide-sdk
 ms.assetid: D5245AB0-8404-426B-B538-F49125E672B2
-ms.openlocfilehash: 1753eef9987bc59be55298489e10c5698eb944cc
-ms.sourcegitcommit: 91c7f1b525e0c22d938bc4080ba4ceac2483474f
+ms.openlocfilehash: f9c14b408a7714f06ae8a96b0ecc60dfc4b8ebe7
+ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/12/2019
-ms.locfileid: "67033131"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "67691651"
 ---
 # <a name="extending-visual-studio-for-mac"></a>擴充 Visual Studio for Mac
 

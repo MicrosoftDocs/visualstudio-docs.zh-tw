@@ -1,26 +1,24 @@
 ---
 title: 在 Visual Studio for Mac 中建置 ASP.NET Core 應用程式
 description: 本文說明如何在 Visual Studio for Mac 中開始使用 ASP.NET，包括安裝及建立新的專案。
-author: asb3993
-ms.author: amburns
+author: sayedihashimi
+ms.author: sayedha
 ms.date: 05/30/2019
 ms.assetid: 771C2F8E-46BC-4280-AFE8-ED9D5C7790CE
-ms.openlocfilehash: 4e38378c22c6920e471b72d990d61d9b4ebd3d7f
-ms.sourcegitcommit: b468d71052a1b8a697f477ab23a3644de139f1e9
+ms.openlocfilehash: f0a2e8433877b3eb61228a886280707f3b4a37fe
+ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/19/2019
-ms.locfileid: "67253796"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "67693133"
 ---
 # <a name="building-aspnet-core-applications-in-visual-studio-for-mac"></a>在 Visual Studio for Mac 中建置 ASP.NET Core 應用程式 
-
 
 ASP.NET Core 是一個開放原始碼和跨平台架構，可建置現代雲端架構的網際網路連線應用程式，例如 Web 應用程式和服務、IoT 應用程式和行動後端。 ASP.NET Core 應用程式可以在 [.NET Core](https://www.microsoft.com/net/core/platform) \(英文\) 或 .NET Framework 執行階段上執行。 它被設計成可為部署至雲端或在內部部署上執行的應用程式，提供最佳化的開發架構。 它包含具有最少額外負荷的模組化元件，讓您在建構方案時能保持彈性。 您可以在 Windows、Mac 和 Linux 上跨平台開發和執行 ASP.NET Core 應用程式。 ASP.NET Core 是 [GitHub](https://github.com/aspnet/home) 上的開放原始碼。
 
 在本實驗室中，您將會搭配 Visual Studio for Mac 建立並探索 ASP.NET Core 應用程式。
 
 ## <a name="objectives"></a>目標
-
 
 > [!div class="checklist"]
 > * 建立 ASP.NET Core Web 應用程式

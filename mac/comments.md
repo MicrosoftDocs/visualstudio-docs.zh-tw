@@ -1,16 +1,16 @@
 ---
 title: 註解化程式碼
 description: 本文描述如何使用 Visual Studio for Mac 原始檔編輯器中的註解
-author: conceptdev
-ms.author: crdun
+author: cobey
+ms.author: cobey
 ms.date: 05/06/2018
 ms.assetid: 0FE5E929-1846-4F48-B5E3-70990FAF9504
-ms.openlocfilehash: 1f792e5ba670854e4a3a9ce703212d18c16e5512
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 2966d8b89a2609d3fbfc2b6b4561288433641ca1
+ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62984027"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "67693117"
 ---
 # <a name="comments"></a>註解
 
@@ -18,7 +18,7 @@ ms.locfileid: "62984027"
 
 若要將整個程式碼區塊標記為註解：
 
-* 選取程式碼，然後從操作功能表選取 [切換行註解]
+* 選取程式碼，然後從操作功能表選取 [切換行註解] 
 
 OR
 

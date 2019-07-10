@@ -9,12 +9,12 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 03/21/2017
 ms.author: ghogen
-ms.openlocfilehash: 86a86a097bc5e9d3cd567502ec94aae3cbafd324
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 598ced6d3e924ecf1d2826be6a6976f56c02afa5
+ms.sourcegitcommit: 3cc73e74921a9ceb622542e0e263abeebc455c00
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62552323"
+ms.lasthandoff: 07/08/2019
+ms.locfileid: "67624059"
 ---
 # <a name="configure-azure-cloud-service-roles-with-visual-studio"></a>使用 Visual Studio 設定 Azure 雲端服務角色
 Azure 雲端服務可以有一或多個背景工作角色或 web 角色。 您必須為每個角色定義其設定方式，並設定該角色的執行方式。 若要深入了解雲端服務中的角色，請參閱視訊 [Azure 雲端服務簡介](https://channel9.msdn.com/Series/Windows-Azure-Cloud-Services-Tutorials/Introduction-to-Windows-Azure-Cloud-Services)。
@@ -36,18 +36,18 @@ Azure 雲端服務可以有一或多個背景工作角色或 web 角色。 您�
 
 1. 在 Visual Studio 中建立或開啟 Azure 雲端服務專案。
 
-1. 在 [方案總管] 中，以滑鼠右鍵按一下專案，然後從操作功能表中選取 [屬性]。
+1. 在 [方案總管]  中，以滑鼠右鍵按一下專案，然後從操作功能表中選取 [屬性]  。
 
     ![方案總管專案操作功能表](./media/vs-azure-tools-configure-roles-for-cloud-service/solution-explorer-project-context-menu.png)
 
-1. 在專案的屬性頁面中，選取 [開發] 索引標籤。
+1. 在專案的屬性頁面中，選取 [開發]  索引標籤。
 
     ![專案屬性頁面- 開發索引標籤](./media/vs-azure-tools-configure-roles-for-cloud-service/project-properties-development-tab.png)
 
-1. 在 [服務組態]  清單中，選取您想要編輯的服務組態名稱。 (如果您想要變更此角色的所有服務組態，請選取 [所有組態]。)
+1. 在 [服務組態]  清單中，選取您想要編輯的服務組態名稱。 (如果您想要變更此角色的所有服務組態，請選取 [所有組態]  。)
 
     > [!IMPORTANT]
-    > 如果您選擇特定服務組態，某些屬性會停用，因為它們只能針對所有組態設定。 若要編輯這些屬性，您必須選取 [所有組態]。
+    > 如果您選擇特定服務組態，某些屬性會停用，因為它們只能針對所有組態設定。 若要編輯這些屬性，您必須選取 [所有組態]  。
 
     ![Azure 雲端服務的服務組態清單](./media/vs-azure-tools-configure-roles-for-cloud-service/cloud-service-service-configuration-property.png)
 
@@ -56,15 +56,15 @@ Azure 雲端服務可以有一或多個背景工作角色或 web 角色。 您�
 
 1. 在 Visual Studio 中建立或開啟 Azure 雲端服務專案。
 
-1. 在 [方案總管] 中，展開專案節點。 在 [角色] 節點之下，以滑鼠右鍵按一下您要更新的節點，然後從操作功能表中選取 [屬性]。
+1. 在 [方案總管]  中，展開專案節點。 在 [角色]  節點之下，以滑鼠右鍵按一下您要更新的節點，然後從操作功能表中選取 [屬性]  。
 
     ![方案總管 Azure 角色操作功能表](./media/vs-azure-tools-configure-roles-for-cloud-service/solution-explorer-azure-role-context-menu.png)
 
-1. 選取 [組態] 索引標籤。
+1. 選取 [組態]  索引標籤。
 
     ![組態索引標籤](./media/vs-azure-tools-configure-roles-for-cloud-service/role-configuration-properties-page.png)
 
-1. 在 [服務組態] 清單中，選取您要更新的服務組態。
+1. 在 [服務組態]  清單中，選取您要更新的服務組態。
 
     ![服務組態清單](./media/vs-azure-tools-configure-roles-for-cloud-service/role-configuration-properties-page-select-configuration.png)
 
@@ -72,7 +72,7 @@ Azure 雲端服務可以有一或多個背景工作角色或 web 角色。 您�
 
     ![更新執行個體計數](./media/vs-azure-tools-configure-roles-for-cloud-service/role-configuration-properties-page-instance-count.png)
 
-1. 從 Visual Studio 工具列，選取 [儲存]。
+1. 從 Visual Studio 工具列，選取 [儲存]  。
 
 ## <a name="manage-connection-strings-for-storage-accounts"></a>管理儲存體帳戶的連接字串
 您可以新增、移除或修改服務組態的連接字串。 例如，針對具有 `UseDevelopmentStorage=true`值的本機服務組態，您可能想要本機連接字串。 您也能也會想要設定在 Azure 中使用儲存體帳戶的雲端服務組態。
@@ -86,19 +86,19 @@ Azure 雲端服務可以有一或多個背景工作角色或 web 角色。 您�
 
 1. 在 Visual Studio 中建立或開啟 Azure 雲端服務專案。
 
-1. 在 [方案總管] 中，展開專案節點。 在 [角色] 節點之下，以滑鼠右鍵按一下您要更新的節點，然後從操作功能表中選取 [屬性]。
+1. 在 [方案總管]  中，展開專案節點。 在 [角色]  節點之下，以滑鼠右鍵按一下您要更新的節點，然後從操作功能表中選取 [屬性]  。
 
     ![方案總管 Azure 角色操作功能表](./media/vs-azure-tools-configure-roles-for-cloud-service/solution-explorer-azure-role-context-menu.png)
 
-1. 選取 [設定] 索引標籤。
+1. 選取 [設定]  索引標籤。
 
     ![[設定] 索引標籤](./media/vs-azure-tools-configure-roles-for-cloud-service/project-properties-settings-tab.png)
 
-1. 在 [服務組態] 清單中，選取您要更新的服務組態。
+1. 在 [服務組態]  清單中，選取您要更新的服務組態。
 
     ![服務組態](./media/vs-azure-tools-configure-roles-for-cloud-service/project-properties-settings-tab-select-configuration.png)
 
-1. 若要新增連接字串，請選取 [新增設定]。
+1. 若要新增連接字串，請選取 [新增設定]  。
 
     ![新增連接字串](./media/vs-azure-tools-configure-roles-for-cloud-service/project-properties-settings-tab-add-setting.png)
 
@@ -107,18 +107,18 @@ Azure 雲端服務可以有一或多個背景工作角色或 web 角色。 您�
     ![New connection string](./media/vs-azure-tools-configure-roles-for-cloud-service/project-properties-settings-tab-add-setting-new-setting.png)
 
     - **名稱** - 輸入您要用於連接字串的名稱。
-    - **類型** - 從下拉式清單中選取 [連接字串]。
-    - **值** - 您可以直接將連接字串輸入到 [值] 儲存格中，或選取省略符號 (...) 以在 [建立儲存體連接字串] 對話方塊中作業。
+    - **類型** - 從下拉式清單中選取 [連接字串]  。
+    - **值** - 您可以直接將連接字串輸入到 [值]  儲存格中，或選取省略符號 (...) 以在 [建立儲存體連接字串]  對話方塊中作業。
 
-1. 在 [建立儲存體連接字串] 對話方塊中，針對 [連接方式] 選取一個選項。 針對您選取的選項依照指示操作：
+1. 在 [建立儲存體連接字串]  對話方塊中，針對 [連接方式]  選取一個選項。 針對您選取的選項依照指示操作：
 
-    - **Microsoft Azure 儲存體模擬器** - 如果您選取此選項，對話方塊上的其餘設定會停用，因為它們只會套至 Azure。 選取 [確定]。
-    - **您的訂用帳戶** - 如果您選取此選項，請使用下拉式清單來選取並登入 Microsoft 帳戶，或新增 Microsoft 帳戶。 選取 Azure 訂用帳戶和儲存體帳戶。 選取 [確定]。
-    - **手動輸入的認證** - 輸入儲存體帳戶名稱，以及主要或次要金鑰。 選取 **[連線]** 的 (在大部分情況下建議適用 HTTPS)。選取 [確定] 。
+    - **Microsoft Azure 儲存體模擬器** - 如果您選取此選項，對話方塊上的其餘設定會停用，因為它們只會套至 Azure。 選取 [確定]  。
+    - **您的訂用帳戶** - 如果您選取此選項，請使用下拉式清單來選取並登入 Microsoft 帳戶，或新增 Microsoft 帳戶。 選取 Azure 訂用帳戶和儲存體帳戶。 選取 [確定]  。
+    - **手動輸入的認證** - 輸入儲存體帳戶名稱，以及主要或次要金鑰。 選取 **[連線]** 的 (在大部分情況下建議適用 HTTPS)。選取 [確定]  。
 
-1. 若要刪除連接字串，請選取連接字串，然後選取 [移除設定]。
+1. 若要刪除連接字串，請選取連接字串，然後選取 [移除設定]  。
 
-1. 從 Visual Studio 工具列，選取 [儲存]。
+1. 從 Visual Studio 工具列，選取 [儲存]  。
 
 ## <a name="programmatically-access-a-connection-string"></a>以程式設計方式存取連接字串
 
@@ -148,19 +148,19 @@ Azure 雲端服務可以有一或多個背景工作角色或 web 角色。 您�
 
 1. 在 Visual Studio 中建立或開啟 Azure 雲端服務專案。
 
-1. 在 [方案總管] 中，展開專案節點。 在 [角色] 節點之下，以滑鼠右鍵按一下您要更新的節點，然後從操作功能表中選取 [屬性]。
+1. 在 [方案總管]  中，展開專案節點。 在 [角色]  節點之下，以滑鼠右鍵按一下您要更新的節點，然後從操作功能表中選取 [屬性]  。
 
     ![方案總管 Azure 角色操作功能表](./media/vs-azure-tools-configure-roles-for-cloud-service/solution-explorer-azure-role-context-menu.png)
 
-1. 選取 [設定] 索引標籤。
+1. 選取 [設定]  索引標籤。
 
     ![[設定] 索引標籤](./media/vs-azure-tools-configure-roles-for-cloud-service/project-properties-settings-tab.png)
 
-1. 在 [服務組態] 清單中，選取您要更新的服務組態。
+1. 在 [服務組態]  清單中，選取您要更新的服務組態。
 
     ![服務組態清單](./media/vs-azure-tools-configure-roles-for-cloud-service/project-properties-settings-tab-select-configuration.png)
 
-1. 若要新增自訂設定，請選取 [新增設定]。
+1. 若要新增自訂設定，請選取 [新增設定]  。
 
     ![新增自訂設定](./media/vs-azure-tools-configure-roles-for-cloud-service/project-properties-settings-tab-add-setting.png)
 
@@ -169,12 +169,12 @@ Azure 雲端服務可以有一或多個背景工作角色或 web 角色。 您�
     ![新增自訂設定](./media/vs-azure-tools-configure-roles-for-cloud-service/project-properties-settings-tab-add-setting-new-setting.png)
 
     - **名稱** - 輸入設定的名稱。
-    - **類型** - 從下拉式清單中選取 [字串]。
-    - **值** - 輸入設定的值。 您可以直接將值輸入到 [值] 儲存格中，或選取省略符號 (...) 以在 [編輯字串] 對話方塊中輸入值。
+    - **類型** - 從下拉式清單中選取 [字串]  。
+    - **值** - 輸入設定的值。 您可以直接將值輸入到 [值]  儲存格中，或選取省略符號 (...) 以在 [編輯字串]  對話方塊中輸入值。
 
-1. 若要刪除自訂設定，請選取設定，然後選取 [移除設定]。
+1. 若要刪除自訂設定，請選取設定，然後選取 [移除設定]  。
 
-1. 從 Visual Studio 工具列，選取 [儲存]。
+1. 從 Visual Studio 工具列，選取 [儲存]  。
 
 ## <a name="programmatically-access-a-custom-settings-value"></a>以程式設計方式存取自訂設定的值
 
@@ -199,19 +199,19 @@ Azure 雲端服務可以有一或多個背景工作角色或 web 角色。 您�
 
 1. 在 Visual Studio 中建立或開啟 Azure 雲端服務專案。
 
-1. 在 [方案總管] 中，展開專案節點。 在 [角色] 節點之下，以滑鼠右鍵按一下您要更新的節點，然後從操作功能表中選取 [屬性]。
+1. 在 [方案總管]  中，展開專案節點。 在 [角色]  節點之下，以滑鼠右鍵按一下您要更新的節點，然後從操作功能表中選取 [屬性]  。
 
     ![方案總管 Azure 角色操作功能表](./media/vs-azure-tools-configure-roles-for-cloud-service/solution-explorer-azure-role-context-menu.png)
 
-1. 選取 [本機儲存體] 索引標籤。
+1. 選取 [本機儲存體]  索引標籤。
 
     ![本機儲存體索引標籤](./media/vs-azure-tools-configure-roles-for-cloud-service/role-local-storage-tab.png)
 
-1. 在 [服務組態] 清單中，確保已選取 [所有組態]，因為本機儲存體設定會套用至所有服務組態。 任何其他值都會導致頁面上的所有輸入欄位遭到停用。
+1. 在 [服務組態]  清單中，確保已選取 [所有組態]  ，因為本機儲存體設定會套用至所有服務組態。 任何其他值都會導致頁面上的所有輸入欄位遭到停用。
 
     ![服務組態清單](./media/vs-azure-tools-configure-roles-for-cloud-service/role-local-storage-tab-service-configuration.png)
 
-1. 若要新增本機儲存體項目，請選取 [新增本機儲存體]。
+1. 若要新增本機儲存體項目，請選取 [新增本機儲存體]  。
 
     ![新增本機儲存體](./media/vs-azure-tools-configure-roles-for-cloud-service/role-local-storage-tab-add-local-storage.png)
 
@@ -223,9 +223,9 @@ Azure 雲端服務可以有一或多個背景工作角色或 web 角色。 您�
     - **大小 (MB)** - 輸入您要用於新本機儲存體的大小 (MB)。
     - **於角色回收時清除** - 選取此選項，以在回收角色的虛擬機器時，移除新本機儲存體中的資料。
 
-1. 若要刪除本機儲存體項目，請選取此項目，然後選取 [移除本機儲存體]。
+1. 若要刪除本機儲存體項目，請選取此項目，然後選取 [移除本機儲存體]  。
 
-1. 從 Visual Studio 工具列，選取 [儲存]。
+1. 從 Visual Studio 工具列，選取 [儲存]  。
 
 ## <a name="programmatically-accessing-local-storage"></a>以程式設計方式存取本機儲存體
 
@@ -235,27 +235,26 @@ Azure 雲端服務可以有一或多個背景工作角色或 web 角色。 您�
 
 下列程式碼顯示如何將文字檔案寫入本機儲存體的範例。 使用適當的值來取代 &lt;LocalStorageName> 預留位置。
 
-    ```csharp
-    // Retrieve an object that points to the local storage resource
-    LocalResource localResource = RoleEnvironment.GetLocalResource("<LocalStorageName>");
+```csharp
+// Retrieve an object that points to the local storage resource
+LocalResource localResource = RoleEnvironment.GetLocalResource("<LocalStorageName>");
 
-    //Define the file name and path
-    string[] paths = { localResource.RootPath, "MyLocalStorageTest.txt" };
-    String filePath = Path.Combine(paths);
+//Define the file name and path
+string[] paths = { localResource.RootPath, "MyLocalStorageTest.txt" };
+String filePath = Path.Combine(paths);
 
-    using (FileStream writeStream = File.Create(filePath))
-    {
-        Byte[] textToWrite = new UTF8Encoding(true).GetBytes("Testing Web role storage");
-        writeStream.Write(textToWrite, 0, textToWrite.Length);
-    }
-
-    ```
+using (FileStream writeStream = File.Create(filePath))
+{
+    Byte[] textToWrite = new UTF8Encoding(true).GetBytes("Testing Web role storage");
+    writeStream.Write(textToWrite, 0, textToWrite.Length);
+}
+```
 
 ### <a name="find-a-file-written-to-local-storage"></a>尋找已寫入本機儲存體的檔案
 
 若要檢視上一節中的程式碼所建立的檔案，請遵循下列步驟︰
 
-1. 在 Windows 通知區域中，以滑鼠右鍵按一下 Azure 圖示，然後從操作功能表中選取 [顯示計算模擬器 UI]。
+1. 在 Windows 通知區域中，以滑鼠右鍵按一下 Azure 圖示，然後從操作功能表中選取 [顯示計算模擬器 UI]  。
 
     ![顯示 Azure 計算模擬器](./media/vs-azure-tools-configure-roles-for-cloud-service/show-compute-emulator.png)
 
@@ -263,11 +262,11 @@ Azure 雲端服務可以有一或多個背景工作角色或 web 角色。 您�
 
     ![Azure 計算模擬器](./media/vs-azure-tools-configure-roles-for-cloud-service/compute-emulator.png)
 
-1. 在 [Microsoft Azure 計算模擬器] 功能表上，選取 [工具] > [開啟本機存放區]。
+1. 在 [Microsoft Azure 計算模擬器]  功能表上，選取 [工具]   > [開啟本機存放區]  。
 
     ![開啟本機存放區功能表項目](./media/vs-azure-tools-configure-roles-for-cloud-service/compute-emulator-open-local-store-menu.png)
 
-1. 當 [Windows 檔案總管] 視窗開啟時，請在 [搜尋] 文字方塊中輸入 `MyLocalStorageTest.txt`，然後選取 **Enter** 開始搜尋。
+1. 當 [Windows 檔案總管] 視窗開啟時，請在 [搜尋]  文字方塊中輸入 `MyLocalStorageTest.txt`，然後選取 **Enter** 開始搜尋。
 
 ## <a name="next-steps"></a>後續步驟
 藉由參閱 [設定 Azure 專案](vs-azure-tools-configuring-an-azure-project.md)深入了解 Visual Studio 中的 Azure 專案。 藉由參閱 [結構描述參考](https://msdn.microsoft.com/library/azure/dd179398)深入了解雲端服務結構描述。

@@ -7,12 +7,12 @@ ms.date: 12/19/2018
 ms.topic: conceptual
 description: 了解如何充分利用 Visual Studio 訂用帳戶中所含的 Azure 諮詢對談權益。
 searchscope: VS Subscription
-ms.openlocfilehash: c5d547062fa820ff868fe12f8cb899d9d1e508b8
-ms.sourcegitcommit: 91c7f1b525e0c22d938bc4080ba4ceac2483474f
+ms.openlocfilehash: 329aa109349a8f97e64cc478b7e843ca4d7b24e3
+ms.sourcegitcommit: 32144a09ed46e7223ef7dcab647a9f73afa2dd55
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/12/2019
-ms.locfileid: "67033182"
+ms.lasthandoff: 07/05/2019
+ms.locfileid: "67586970"
 ---
 # <a name="azure-advisory-chat"></a>Azure 諮詢對談
 
@@ -42,7 +42,6 @@ ms.locfileid: "67033182"
 | Visual Studio Professional (標準、每月雲端)、Visual Studio Enterprise (每月雲端、NFR<sup>1</sup>) |        All        | 無法使用 |     否     |
 |                                          Visual Studio Test Professional (標準訂用帳戶)                                          |        All        | 無法使用 |     否     |
 |                                                  MSDN 平台 (標準)                                                   |        All        | 無法使用 |     否     |
-
 
 <sup>1</sup>  *包含：禁止轉售 (NFR)、最有價值專家 (MVP)、區域經理 (RD)、Visual Studio 產業夥伴 (VSIP)、BizSpark、Imagine、MCT*
 

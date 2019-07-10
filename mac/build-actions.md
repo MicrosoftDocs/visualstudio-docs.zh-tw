@@ -1,20 +1,20 @@
 ---
 title: 建置動作
 description: 本文描述各種可用於 C# 專案的建置動作
-author: conceptdev
-ms.author: crdun
+author: heiligerdankgesang
+ms.author: dominicn
 ms.date: 05/06/2018
 ms.assetid: 5399BCB1-E317-4C7B-87B1-C531E985DE6E
-ms.openlocfilehash: 16617f8de15fbef40941c4f9409497da142c9e8a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 54e341b4e5961623f41963bb90c2e5d60b110cf4
+ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62983436"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "67691204"
 ---
 # <a name="build-actions"></a>建置動作
 
-Visual Studio for Mac 專案中的所有檔案都有一個建置動作。 它可控制檔案在建置期間所發生的狀況。 這項行為可透過在任何檔案上按一下滑鼠右鍵，並瀏覽至 [建置動作] 進行設定，如下所示：
+Visual Studio for Mac 專案中的所有檔案都有一個建置動作。 它可控制檔案在建置期間所發生的狀況。 這項行為可透過在任何檔案上按一下滑鼠右鍵，並瀏覽至 [建置動作]  進行設定，如下所示：
 
 ![從 [方案總管] 選取編譯建置動作](media/projects-and-solutions-image1.png)
 

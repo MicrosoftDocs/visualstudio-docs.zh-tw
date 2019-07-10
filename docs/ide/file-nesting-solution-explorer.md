@@ -8,12 +8,12 @@ helpviewer_keywords:
 author: angelosp
 ms.author: angelpe
 manager: jillfra
-ms.openlocfilehash: 0ec16c23a3ed16f555bb1a3af952b422f4aceb35
-ms.sourcegitcommit: 16bcaca215de75479695738d3c2d703c78c3500e
+ms.openlocfilehash: a36ca2535785f72756ad66a69c2ebe4d7d5a373b
+ms.sourcegitcommit: 32144a09ed46e7223ef7dcab647a9f73afa2dd55
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/21/2019
-ms.locfileid: "67309802"
+ms.lasthandoff: 07/05/2019
+ms.locfileid: "67587019"
 ---
 # <a name="file-nesting-in-solution-explorer"></a>[方案總管] 中的檔案巢狀
 
@@ -110,7 +110,8 @@ ms.locfileid: "67309802"
 > [!NOTE]
 > - 如果您未替 `pathSegment` 規則指定任何特定副檔名；它會套用到所有副檔名。 也就是和另一個檔案的名稱與副檔名相同，且中間有額外副檔名的任何檔案，都會以巢狀方式位於另一個檔案之下。
 > - 您可以透過以下方式指定副檔名，限制 `pathSegment` 規則的效果只對特定副檔名有效：
->    ```
+>
+>    ```json
 >    "pathSegment": {
 >       "add": {
 >         ".*": [

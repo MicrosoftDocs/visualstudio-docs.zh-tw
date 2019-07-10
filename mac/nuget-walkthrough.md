@@ -1,17 +1,17 @@
 ---
 title: 在專案中包含 NuGet 套件
 description: 本文件涵蓋如何在 Xamarin 專案中包含 NuGet 套件。 它會逐步尋找和下載套件，以及介紹 IDE 整合功能。
-author: conceptdev
-ms.author: crdun
+author: jmatthiesen
+ms.author: jomatthi
 ms.date: 04/24/2019
 ms.assetid: 5C800815-0B13-4B27-B017-95FCEF1A0EA2
 ms.custom: video
-ms.openlocfilehash: 7ac4a10160a1273dd7766e880dfcf7f06bf64668
-ms.sourcegitcommit: 51dad3e11d7580567673e0d426ab3b0a17584319
+ms.openlocfilehash: 356a99e3bdbc1608bdebc160c3a10878d3194a40
+ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/10/2019
-ms.locfileid: "66820619"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "67691391"
 ---
 # <a name="include-a-nuget-package-in-your-project"></a>在專案中包含 NuGet 套件
 
@@ -77,9 +77,9 @@ using Newtonsoft.Json;
 
 ![套件功能表](media/nuget-walkthrough-PackagesMenu.png)
 
-*   **新增 NuGet 套件** - 開啟視窗以將更多套件新增至專案。
-*   **更新** - 檢查每個套件的來源伺服器，然後下載任何較新版本。
-*   **還原** - 下載任何遺漏的套件 (不會將現有套件更新為較新版本)。
+* **新增 NuGet 套件** - 開啟視窗以將更多套件新增至專案。
+* **更新** - 檢查每個套件的來源伺服器，然後下載任何較新版本。
+* **還原** - 下載任何遺漏的套件 (不會將現有套件更新為較新版本)。
 
 方案層級也會提供 [更新] 和 [還原] 選項，而且這些選項會影響方案中的所有專案。
 

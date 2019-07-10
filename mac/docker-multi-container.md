@@ -1,15 +1,15 @@
 ---
 title: 教學課程 - 使用 Docker Compose 建立多容器應用程式
 description: 了解如何在 Visual Studio for Mac 中管理多個容器並在它們之間通訊
-author: bytesguy
-ms.author: adhartle
+author: asb3993
+ms.author: amburns
 ms.date: 06/17/2019
-ms.openlocfilehash: df130e86de7f35c43459a70a12c0e9cfafbbe3a4
-ms.sourcegitcommit: fd5a5b057df3d733f5224c305096907989811f85
+ms.openlocfilehash: 7570788b50a83d9a74657408d4f38fbce21bd1c3
+ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/18/2019
-ms.locfileid: "67196103"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "67691712"
 ---
 # <a name="create-a-multi-container-app-with-docker-compose"></a>使用 Docker Compose 建立多容器應用程式
 
@@ -82,14 +82,14 @@ services:
    ```
 
 1. 在 [Index.cshtml]  檔案中，新增一行以顯示 `ViewData["Message"]`，讓檔案看起來像下列程式碼：
-    
+
       ```cshtml
       @page
       @model IndexModel
       @{
           ViewData["Title"] = "Home page";
       }
-    
+
       <div class="text-center">
           <h1 class="display-4">Welcome</h1>
           <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
@@ -98,7 +98,7 @@ services:
       ```
 
 1. 現在，在 Web API 專案中，將程式碼加入至 Values 控制器，以針對從 *webfrontend* 新增之呼叫，自訂由 API 傳回的訊息：
-    
+
       ```csharp
         // GET api/values/5
         [HttpGet("{id}")]
@@ -107,6 +107,7 @@ services:
             return "webapi (with value " + id + ")";
         }
       ```
+
 1. 將 `docker-compose` 專案設定為啟始專案並移至 [執行] > [開始偵錯]  。 如果一切都設定正確，您會看到訊息 [Hello from webfrontend and webapi (with value 1).]：
 
 ![執行中的 Docker 多容器解決方案](media/docker-multicontainer-debug.png)
