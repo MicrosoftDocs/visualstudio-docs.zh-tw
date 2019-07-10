@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 40b62719fb00910e4eef183f960e1a1d4ea9a4a4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1b4748cd71416ce4d3e9cce64826f1ec97ceef85
+ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62994524"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "67692988"
 ---
 # <a name="extend-your-dsl-by-using-mef"></a>使用 MEF 擴充您的 DSL
 
@@ -129,7 +129,7 @@ ms.locfileid: "62994524"
 
    - 這個組件通常具有名稱的結尾 」。Dsl.dll"。
 
-   - 如果您有 DSL 專案的存取權，您可以找到組件檔案的目錄下**Dsl\bin\\\\** *
+   - 如果您有 DSL 專案的存取權，您可以找到組件檔案的目錄下**Dsl\\bin\\\***
 
    - 如果您的 DSL 的 VSIX 檔案存取，您可以將 VSIX 檔案的副檔名變更為 「.zip 」 來尋找組件。 將解壓縮的.zip 檔案。
 
@@ -157,7 +157,7 @@ ms.locfileid: "62994524"
 
    1. 在  **source.extension.vsixmanifest**，按一下 **加入參考**
 
-   2. 在對話方塊中，按一下**新增裝載**，然後尋找 DSL 的 VSIX 檔案。 在 VSIX 檔案建置在 DSL 方案中，* * DslPackage\bin\\\\* * *。
+   2. 在對話方塊中，按一下**新增裝載**，然後尋找 DSL 的 VSIX 檔案。 在 VSIX 檔案建置在 DSL 方案中， **DslPackage\\bin\\\*** 。
 
        這可讓使用者安裝 DSL 和擴充功能，在相同的時間。 如果使用者已經安裝 DSL，將會安裝您的擴充。
 
