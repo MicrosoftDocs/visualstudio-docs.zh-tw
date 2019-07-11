@@ -10,12 +10,12 @@ author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8bf4cea6dcd87b8cf0d2113ac3a245163ba89080
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.openlocfilehash: eef81a2075f05acf8ea6ab8b42f77797425a3abd
+ms.sourcegitcommit: 74c5360186731de07828764eb32ea1033a8c2275
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66746922"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67559604"
 ---
 # <a name="vstestconsoleexe-command-line-options"></a>VSTest.Console.exe 命令列選項
 
@@ -44,7 +44,7 @@ ms.locfileid: "66746922"
 |**/Framework: [*framework version*]**|要用於測試執行的目標 .NET 版本。<br />有效值為 Framework35、Framework40、Framework45 和 FrameworkUap10。<br />如果目標 Framework 指定為 **Framework35**，則會在 CLR 4.0 的「相容性模式」中執行測試。<br />範例：`/Framework:framework40`|
 |**/TestCaseFilter:[*expression*]**|執行符合指定之運算式的測試。<br /><Expression\> 的格式為 <property\>=<value\>[\|<Expression\>]。<br />範例：`/TestCaseFilter:"Priority=1"`<br />範例：`/TestCaseFilter:"TestCategory=Nightly|FullyQualifiedName=Namespace.ClassName.MethodName"`<br />**/TestCaseFilter** 命令列選項無法與 **/Tests** 命令列選項搭配使用。 <br />如需建立和使用運算式的資訊，請參閱 [ 篩選](https://github.com/Microsoft/vstest-docs/blob/master/docs/filter.md)。|
 |**/?**|顯示使用方式資訊。|
-|**/Logger:[*uri/friendlyname*]**|指定測試結果的記錄器。<br />範例：若要將結果記錄到 Visual Studio 測試結果檔案 (TRX)，請使用 **/Logger:trx**。<br />範例：若要將測試結果發佈到 Team Foundation Server，請使用 TfsPublisher：<br />**/logger:TfsPublisher;**<br />**Collection=<project url\>;**<br />**BuildName=<build name\>;**<br />**TeamProject=<project name\>;**<br />**[;Platform=<Defaults to "Any CPU">]**<br />**[;Flavor=<Defaults to "Debug">]**<br />**[;RunTitle=<title\>]**|
+|**/Logger:[*uri/friendlyname*]**|指定測試結果的記錄器。<br />範例：若要將結果記錄到 Visual Studio 測試結果檔案 (TRX)，請使用 **/Logger:trx**。<br />範例：若要將測試結果發佈到 Team Foundation Server，請使用 TfsPublisher：<br />**/logger:TfsPublisher;**<br />**Collection=<project url\>;**<br />**BuildName=<build name\>;**<br />**TeamProject=<project name\>;**<br />**[;Platform=\<預設為 "Any CPU">]**<br />**[;Flavor=\<預設為 "Debug">]**<br />**[;RunTitle=<title\>]**|
 |**/ListTests:[*file name*]**|列出從指定之測試容器探索到的測試。|
 |**/ListDiscoverers**|列出已安裝的測試探索程式。|
 |**/ListExecutors**|列出已安裝的測試執行程式。|

@@ -7,12 +7,12 @@ ms.date: 04/23/2019
 ms.topic: conceptual
 description: 在管理 Visual Studio + GitHub 搭售方案中管理訂用帳戶
 searchscope: VS Subscription
-ms.openlocfilehash: a775317029db1a2be3b01411955ae197c7df6873
-ms.sourcegitcommit: bd519d1da375e374016f94a44c295d3253f61a8c
+ms.openlocfilehash: adc06dd13579697d6aa74158f980cd873ea661fe
+ms.sourcegitcommit: 32144a09ed46e7223ef7dcab647a9f73afa2dd55
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "64945237"
+ms.lasthandoff: 07/05/2019
+ms.locfileid: "67586852"
 ---
 # <a name="managing-visual-studio-subscriptions-with-github-enterprise"></a>管理含 GitHub Enterprise 的 Visual Studio 訂用帳戶
 
@@ -44,9 +44,9 @@ ms.locfileid: "64945237"
 
 GitHub 以雲端式 GitHub.com 或內部部署 GitHub Enterprise Server 的形式提供。  管理這兩的版本的流程並不相同。  GitHub 提供各式各樣的說明主題及系統管理員指南，協助您管理 GitHub Enterprise 訂用帳戶。  我們在下方提供了精選主題的連結。  
 
-### <a name="githubspanspancom"></a>GitHub<span></span>.com 
+### <a name="githubcom"></a>GitHub.com 
 
-如需管理 GitHub<span></span>.com 的詳細資訊，請參閱 [GitHub 說明](https://help.github.com/en)的下列主題。
+如需有關管理 GitHub.com 的詳細資訊，請參閱 [GitHub 說明](https://help.github.com/en)的下列主題。
 - [說明主題的完整清單](https://help.github.com/en)
 - [管理組織中的成員資格](https://help.github.com/en/articles/managing-membership-in-your-organization)
 > - [邀請使用者加入您的組織](https://help.github.com/en/articles/inviting-users-to-join-your-organization)
@@ -70,13 +70,14 @@ GitHub 說明提供包羅萬象的系統管理員指南，除了回答問題，�
 > - [使用者安全性](https://help.github.com/en/enterprise/2.16/admin/user-management/user-security)
 - [安裝及設定 GitHub Enterprise Server](https://help.github.com/en/enterprise/2.16/admin/installation)
 
-
 ## <a name="support-resources"></a>支援資源
--  您可以在 [GitHub 說明](https://help.github.com/en)中，找到各種 GitHub 各種相關問題的答案。
--  在 [GitHub Community Forum](https://github.community/) (GitHub 社群論壇) 可以獲得其他 GitHub 使用者的協助。
--  如需 Visual Studio 訂用帳戶有關銷售、訂閱、帳戶與計費的協助，請聯繫 Visual Studio [訂用帳戶支援](https://visualstudio.microsoft.com/subscriptions/support/)。
--  是否有關於 Visual Studio IDE、Azure DevOps Services 或其他 Visual Studio 產品或服務的問題？  前往 [Visual Studio 支援](https://visualstudio.microsoft.com/support/)
--  取得 GitHub Enterprise 的[技術支援](https://support.microsoft.com/en-us/supportforbusiness/productselection?sapId=b77fe80f-5417-80bd-4b2a-275cf0018c24)。   
+
+- 您可以在 [GitHub 說明](https://help.github.com/en)中，找到各種 GitHub 各種相關問題的答案。
+- 在 [GitHub Community Forum](https://github.community/) (GitHub 社群論壇) 可以獲得其他 GitHub 使用者的協助。
+- 如需 Visual Studio 訂用帳戶有關銷售、訂閱、帳戶與計費的協助，請聯繫 Visual Studio [訂用帳戶支援](https://visualstudio.microsoft.com/subscriptions/support/)。
+- 是否有關於 Visual Studio IDE、Azure DevOps Services 或其他 Visual Studio 產品或服務的問題？  前往 [Visual Studio 支援](https://visualstudio.microsoft.com/support/)
+- 取得 GitHub Enterprise 的[技術支援](https://support.microsoft.com/en-us/supportforbusiness/productselection?sapId=b77fe80f-5417-80bd-4b2a-275cf0018c24)。   
 
 ## <a name="next-steps"></a>後續步驟
+
 如需管理含 GitHub Enterprise 的 Visual Studio 訂用帳戶詳細資訊，請查看 Visual Studio [訂用帳戶系統管理員入口網站](https://visualstudio.microsoft.com/subscriptions-administration/)。

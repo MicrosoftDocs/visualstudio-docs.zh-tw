@@ -5,12 +5,12 @@ author: conceptdev
 ms.author: crdun
 ms.date: 02/15/2018
 ms.assetid: E992FA1D-B2AD-4A28-ADC6-47E4FC471060
-ms.openlocfilehash: ca216f3f2a65e1c17e2ab8cc1ca17f6f707afb79
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a5a6dd04cd080f57d6a6ba97b3696b0351a0a8aa
+ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62989470"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "67693000"
 ---
 # <a name="set-up-a-git-repository"></a>設定 Git 存放庫
 
@@ -81,7 +81,7 @@ Git 是一種分散式版本控制系統，可讓小組同時處理相同的文�
 
     ![版本控制功能表](media/version-control-git10.png)
 
-10. 在您開始進行其他變更時，請選取 [推送變更] ****   以將變更推送至 **遠端** 存放庫。 這將允許所有適當的使用者在 github.com 上進行檢視：
+10. 在您開始進行其他變更時，請選取 [推送變更]  以將變更推送到 **remote** 存放庫。 這將允許所有適當的使用者在 github.com 上進行檢視：
 
     ![將變更推送到遠端存放庫](media/version-control-git11.png)
 

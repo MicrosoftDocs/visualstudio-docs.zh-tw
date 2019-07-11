@@ -12,12 +12,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 21486fb42f689fbdd5876353a0d99b8f818cf817
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 9953a1c58ea6ddd13ca0555959ed621905ba710a
+ms.sourcegitcommit: c7b9ab1bc19d74b635c19b1937e92c590dafd736
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62974406"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67552889"
 ---
 # <a name="known-issues-for-containers"></a>容器的已知問題
 
@@ -44,15 +44,16 @@ ms.locfileid: "62974406"
 
 ::: moniker range="vs-2017"
 
-* 您無法在 mcr.microsoft.com/windows/servercore:1809 (或更新版本) 上安裝 Visual Studio 2017 15.8 或更早版本 (任何產品)。 如需詳細資訊，請參閱 https://aka.ms/setup/containers/servercore1809。
+* 您無法在 mcr.microsoft.com/windows/servercore:1809 (或更新版本) 上安裝 Visual Studio 2017 15.8 或更早版本 (任何產品)。 如需詳細資訊，請參閱 https://aka.ms/setup/containers/servercore1809 。
 
 ::: moniker-end
 
 ## <a name="build-tools-container"></a>建置工具容器
 
-當您使用建置工具容器時，可能會發生下列已知問題。 若要查看問題是否已獲得修正，或是否有其他已知問題，請瀏覽 [https://developercommunity.visualstudio.com](https://developercommunity.visualstudio.com)。
+當您使用建置工具容器時，可能會發生下列已知問題。 若要查看問題是否已獲得修正，或是否有其他已知問題，請瀏覽 [https://developercommunity.visualstudio.com](https://developercommunity.visualstudio.com )。
 
 * 在[某些情況](https://github.com/Microsoft/vstest/issues/940)下，IntelliTrace 在容器內可能無法運作。
+* 在適用於 Windows 的 Docker 舊版上，預設容器映像大小只有 20 GB，因此無法容納「建置工具」。 依照[變更映像大小的指示](https://docs.microsoft.com/virtualization/windowscontainers/manage-containers/container-storage#image-size)增加到 127 GB 以上。
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
