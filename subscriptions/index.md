@@ -7,13 +7,12 @@ layout: LandingPage
 Ms.date: 06/25/2018
 Ms.topic: landing-page
 Description: 歡迎使用 Visual Studio 訂閱
-Searchscope: VS Subscription
-ms.openlocfilehash: 1515b7da3cadb8397f38554498fb4880db2d3b03
-ms.sourcegitcommit: b468d71052a1b8a697f477ab23a3644de139f1e9
+ms.openlocfilehash: d5083141fdaaf5eede2cc181c51cd0340575bbb9
+ms.sourcegitcommit: 208395bc122f8d3dae3f5e5960c42981cc368310
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/19/2019
-ms.locfileid: "67259475"
+ms.lasthandoff: 07/10/2019
+ms.locfileid: "67784390"
 ---
 # <a name="visual-studio-subscriptions"></a>Visual Studio 訂閱
 

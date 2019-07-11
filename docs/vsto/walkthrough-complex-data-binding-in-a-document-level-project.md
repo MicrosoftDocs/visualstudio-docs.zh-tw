@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: aabd45871e55fd22b9b9e35597555fd13b15d6eb
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 026dc77573bbedce7882f9b3cceab049ef1066e4
+ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62981672"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "67692348"
 ---
 # <a name="walkthrough-complex-data-binding-in-a-document-level-project"></a>逐步解說：在文件層級專案中的複雜資料繫結
   本逐步解說會示範在文件層級專案中的複雜資料繫結的基本概念。 您可以將 Microsoft Office Excel 工作表中的多個資料格繫結至 Northwind SQL Server 資料庫中的欄位。
@@ -174,7 +174,7 @@ ms.locfileid: "62981672"
 
 1. 選取資料格內的清單物件。
 
-    新的資料列會出現在底部清單中，將以星號 (**\\***) 新的資料列的第一個資料格中。
+    新的資料列會出現在底部清單中，將以星號 ( **\*** ) 新的資料列的第一個資料格中。
 
 2. 新增下列資訊的空白資料列。
 
