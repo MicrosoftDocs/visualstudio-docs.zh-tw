@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 0cb96291f7a867bcdd0248cc68c2fbccb6ac9f87
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63399847"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "64828780"
 ---
 # <a name="idiasymbolgetismsilnetmodule"></a>IDiaSymbol::get_isMSILNetmodule
 擷取旗標，指出模組是否.netmodule （Microsoft Intermediate Language (MSIL) 模組只包含中繼資料和任何原生的符號）。
@@ -46,7 +46,7 @@ HRESULT get_isMSILNetmodule(
 
 ## <a name="requirements"></a>需求
 
-|需求|描述|
+|需求|說明|
 |-----------------|-----------------|
 |標頭：|dia2.h|
 |版本:|DIA SDK v8.0|

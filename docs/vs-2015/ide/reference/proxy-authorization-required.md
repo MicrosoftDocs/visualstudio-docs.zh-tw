@@ -9,12 +9,12 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 520c31f671aee05663a5471aca05cfe06313b168
-ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
+ms.openlocfilehash: f2de40c520bca0ea04f50ec782fec2dda531172e
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "65847026"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67822074"
 ---
 # <a name="proxy-authorization-required"></a>所需的 Proxy 授權
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -27,17 +27,17 @@ ms.locfileid: "65847026"
 
 - 如果上述步驟無法解決問題，這可能是因為您的 Proxy 伺服器沒有提示輸入 http://go.microsoft.com 位址的認證，而是提示輸入 *.visualStudio.com 位址的認證。 對於這些伺服器，您需要將下列 Url 新增至允許清單，以解除封鎖 Visual Studio 中的所有登入情節：
 
-    - * windows.net
+  - \* windows.net
 
-    - *.microsoftonline.com
+  - *.microsoftonline.com
 
-    - *.visualstudio.com
+  - *.visualstudio.com
 
-    - *.microsoft.com
+  - *.microsoft.com
 
-    - *.live.com
+  - *.live.com
 
-- 您可以移除 http://go.microsoft.com位址從允許清單，這樣 proxy 驗證對話方塊會顯示兩個 http://go.microsoft.com位址及伺服器端點時重新啟動 Visual Studio。
+- 您可以移除 http://go.microsoft.com 位址從允許清單，這樣 proxy 驗證對話方塊會顯示兩個 http://go.microsoft.com 位址及伺服器端點時重新啟動 Visual Studio。
 
 - 如果您想要將您的預設認證用於 proxy，執行下列作業：
 

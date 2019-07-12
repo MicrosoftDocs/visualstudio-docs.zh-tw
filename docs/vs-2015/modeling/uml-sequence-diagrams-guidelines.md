@@ -23,12 +23,12 @@ caps.latest.revision: 55
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 7ebb3108ce7a1ee43d1355494a82cc4aee37dbc7
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: a38d9b354de528797d0044f7b631bd2287c34fb4
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63445666"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67823569"
 ---
 # <a name="uml-sequence-diagrams-guidelines"></a>UML 循序圖：方針
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -158,7 +158,7 @@ ms.locfileid: "63445666"
   
 #### <a name="to-change-the-package-that-owns-the-interaction"></a>變更擁有互動的套件  
   
-1. 在 [ **UML 模型總管]**，尋找循序圖會顯示的互動。  
+1. 在 [ **UML 模型總管]** ，尋找循序圖會顯示的互動。  
   
     > [!NOTE]
     > 互動不會出現在**UML 模型總管**直到循序圖中加入第一個生命線。  
@@ -205,7 +205,7 @@ ms.locfileid: "63445666"
   
 - 請注意例外狀況或可能會執行為所顯示一般序列的替代方案。 例如，"Customer can choose to skip the rest of this sequence"。  
   
-    - 請考慮使用片段做為這類附註的更正式替代方案。 請參閱[描述含片段的控制結構](#Fragments)  
+  - 請考慮使用片段做為這類附註的更正式替代方案。 請參閱[描述含片段的控制結構](#Fragments)  
   
 ## <a name="deciding-the-scope-of-the-diagram"></a>決定圖表範圍  
  請務必清楚了解圖表想要顯示的內容。  
@@ -372,13 +372,13 @@ ms.locfileid: "63445666"
   
 - 以滑鼠右鍵按一下您要移動，然後按一下 訊息**移至圖表**。  
   
-     Visual Studio：  
-  
-    - 將所選取的訊息和任何附屬訊息取代為互動使用。  
-  
-    - 將已取代的訊息移至新的循序圖。  
-  
-    - 會建立互動使用與新循序圖之間的連結。  
+  Visual Studio：  
+
+  - 將所選取的訊息和任何附屬訊息取代為互動使用。  
+
+  - 將已取代的訊息移至新的循序圖。  
+
+  - 會建立互動使用與新循序圖之間的連結。  
   
 #### <a name="to-navigate-to-the-sequence-referenced-by-an-interaction-use"></a>瀏覽至互動使用所參考的序列  
   

@@ -21,12 +21,12 @@ caps.latest.revision: 86
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 0dafd91a832fd4098fb19a26750310135723216f
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 446e6eb6231ff4d744f22bd3d1ba4fa6dcca6525
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63442971"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67823180"
 ---
 # <a name="edit-uml-models-and-diagrams"></a>編輯 UML 模型和圖表
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -66,7 +66,7 @@ ms.locfileid: "63442971"
   
 - 模型專案包含單一 UML 模型。 專案中的每個 UML 圖表都是 UML 模型的檢視。  
   
-- 您可以看到中的模型**UML 模型總管**。 在 [**架構**功能表上，指向**Windows**，然後按一下**UML 模型總管]**。  
+- 您可以看到中的模型**UML 模型總管**。 在 [**架構**功能表上，指向**Windows**，然後按一下**UML 模型總管]** 。  
   
 - 圖表上的每個圖形都是模型中項目的檢視。 在圖表上放置新圖形時，就會在模型中建立新項目。  
   
@@ -164,7 +164,7 @@ ms.locfileid: "63442971"
   
      \-或-  
   
-- 在上**架構設計人員**工具列上，按一下加號 (**+**) 或減號 (**-**)，或選擇縮放層級。  
+- 在上**架構設計人員**工具列上，按一下加號 ( **+** ) 或減號 ( **-** )，或選擇縮放層級。  
   
 ## <a name="Searching"></a> 在圖表中搜尋  
  [快速尋找] 函式會尋找圖表上的項目。 您必須設定**查詢：** 要**目前文件**。  
@@ -294,9 +294,9 @@ ms.locfileid: "63442971"
   
 - 請以滑鼠右鍵按一下項目中**UML 模型總管**或在上圖中，然後再按一下**從模型刪除**。  
   
-    - 項目隨即會從其出現的每個圖表中刪除。  
-  
-    - 也會從模型中刪除每個終止於這個項目的關聯性。  
+  - 項目隨即會從其出現的每個圖表中刪除。  
+
+  - 也會從模型中刪除每個終止於這個項目的關聯性。  
   
 #### <a name="to-delete-a-relationship-from-the-model"></a>從模型刪除關聯性  
   
@@ -312,7 +312,7 @@ ms.locfileid: "63442971"
   
 - 您可以將圖表的任何部分複製至 Word、PowerPoint 或其他文件。 選取的圖形和連接器，您想要以滑鼠右鍵按一下，然後按一下**複製**。  
   
-- 任何圖形或接頭的色彩隨即變更。 選取一個或多個圖形，並變更**色彩**屬性。 如果看不到 [屬性] 視窗，請按 **F4** 鍵。  
+- 任何圖形或接頭的色彩隨即變更。 選取一個或多個圖形，並變更**色彩**屬性。 如果看不到 [屬性]  視窗，請按 **F4** 鍵。  
   
 - 在某些種類的圖表，您可以繪製線條、 矩形和從省略符號**簡單的圖形**工具箱的區段。 這些圖形不會形成 UML 模型的一部分。  
   

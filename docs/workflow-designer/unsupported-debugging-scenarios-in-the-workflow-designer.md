@@ -8,12 +8,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 62d8a2ad847ef1b9aaad02b2739e8154b3148425
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.openlocfilehash: 9cda710a3a2f4945e96e706479996da0a1fa7e12
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66747262"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825740"
 ---
 # <a name="unsupported-debugging-scenarios-in-the-workflow-designer"></a>工作流程設計工具中不支援的偵錯情況
 
@@ -41,16 +41,16 @@ ms.locfileid: "66747262"
 
 - 中斷點視窗或捷徑功能表不支援以下資料行或工作流程偵錯的選項：
 
-    - 條件
+  - 條件
 
-    - 叫用次數
+  - 叫用次數
 
-    - 叫用時
+  - 叫用時
 
-    - 功能
+  - 功能
 
-    - 資料
+  - 資料
 
-    - 處理序
+  - 處理序
 
-    - 移至反組譯碼
+  - 移至反組譯碼

@@ -1,5 +1,5 @@
 ---
-title: HOW TO：搜尋處理序中處理序檢視 |Microsoft Docs
+title: 作法：搜尋處理序中處理序檢視 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -13,13 +13,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: e39168e36e9540ec8c5e23a9030d996b81c4097c
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63431721"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "64799494"
 ---
-# <a name="how-to-search-for-a-process-in-processes-view"></a>HOW TO：在處理序檢視中搜尋處理序
+# <a name="how-to-search-for-a-process-in-processes-view"></a>作法：在處理序檢視中搜尋處理序
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 您可以使用它的處理序識別碼或模組字串做為搜尋準則來搜尋特定處理序中處理序檢視。 您也可以指定搜尋的初始方向。 在對話方塊中的欄位會顯示選取的處理序的屬性，在處理序樹狀目錄中。  
@@ -41,6 +41,6 @@ ms.locfileid: "63431721"
   
 5. 選擇**向上**或是**向下**初始搜尋的方向。  
   
-6. 按一下 [確定] 。  
+6. 按一下 [確定 **Deploying Office Solutions**]。  
   
    如果找到相符的處理程序，它會以醒目提示**處理序檢視**視窗。

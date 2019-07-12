@@ -17,12 +17,12 @@ caps.latest.revision: 41
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 7cf00897e68fc4b6858e747bd9b3a7f159bf73c1
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: aa8951be6da4d77ffb51b6bc8f09a796b373a944
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63439924"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67826253"
 ---
 # <a name="aspnet-debugging-system-requirements"></a>ASP.NET 偵錯：系統需求
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,9 +31,9 @@ ms.locfileid: "63439924"
   
 - 本機偵錯： [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 和 Web 應用程式會在同一部電腦上執行。 這個情節有兩種版本：  
   
-    - [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 程序碼位於檔案系統上。  
-  
-    - [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 程序碼位於 IIS 網站中。  
+  - [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 程序碼位於檔案系統上。  
+
+  - [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 程序碼位於 IIS 網站中。  
   
 - 遠端偵錯： [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 在用戶端電腦上執行，並對遠端伺服器電腦上執行的 Web 應用程式進行偵錯。  
   
@@ -42,9 +42,9 @@ ms.locfileid: "63439924"
   
  若要對 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 背景工作處理序進行偵錯，您必須具有對該處理序進行偵錯的權限。 根據預設， [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 應用程式會以 **ASPNET** 使用者的身分執行。 如果背景工作處理序是以 **ASPNET**或 **NETWORK SERVICE**身分執行，則您必須具有 Administrator 權限才能對它進行偵錯。  
   
- [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 背景工作處理序的名稱會隨偵錯情節和 IIS 的版本而有所不同。 如需詳細資訊，請參閱[如何：尋找 ASP.NET 處理序的名稱](../debugger/how-to-find-the-name-of-the-aspnet-process.md)。  
+           [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 背景工作處理序的名稱會隨偵錯情節和 IIS 的版本而有所不同。 如需詳細資訊，請參閱[如何：尋找 ASP.NET 處理序的名稱](../debugger/how-to-find-the-name-of-the-aspnet-process.md)。  
   
- 您可以編輯執行 IIS 的伺服器上的 machine.config 檔案，變更 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 背景工作處理序執行的使用者帳戶。 若要執行這項操作，最好是使用 [Internet Information Services (IIS) 管理員] 。 如需詳細資訊，請參閱[如何：在使用者帳戶下執行背景工作處理序](../debugger/how-to-run-the-worker-process-under-a-user-account.md)。  
+ 您可以編輯執行 IIS 的伺服器上的 machine.config 檔案，變更 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 背景工作處理序執行的使用者帳戶。 若要執行這項操作，最好是使用 [Internet Information Services (IIS) 管理員]  。 如需詳細資訊，請參閱[如何：在使用者帳戶下執行背景工作處理序](../debugger/how-to-run-the-worker-process-under-a-user-account.md)。  
   
  如果您將 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 背景工作處理序變更為以您自己的使用者帳戶執行，您就不需要是執行 IIS 之伺服器上的系統管理員。  
   

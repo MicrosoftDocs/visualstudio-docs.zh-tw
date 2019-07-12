@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 5ef444d78e5a486f9e384ea02d1eb88461e3fce2
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 1c84cfcde4a5ffac1e1563a4d2b141bd6240b772
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63430331"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67821992"
 ---
 # <a name="walkthrough-extend-server-explorer-to-display-web-parts"></a>逐步解說：擴充伺服器總管以顯示 web 組件
   在 Visual Studio 中，您可以使用**SharePoint 連線**節點**伺服器總管**檢視 SharePoint 網站上的元件。 不過，**伺服器總管**預設不會顯示某些元件。 在本逐步解說中，您將會延長**伺服器總管**，以顯示 Web 組件庫上每個連線的 SharePoint 網站。
@@ -29,9 +29,9 @@ ms.locfileid: "63430331"
 
 - 正在建立 Visual Studio 延伸模組，擴充**伺服器總管**如下：
 
-    - 擴充功能新增**網頁組件庫**節點中的每個 SharePoint 網站 節點底下**伺服器總管**。 這個新的節點包含代表站台上的 Web 組件庫中的每個 Web 組件的子節點。
+  - 擴充功能新增**網頁組件庫**節點中的每個 SharePoint 網站 節點底下**伺服器總管**。 這個新的節點包含代表站台上的 Web 組件庫中的每個 Web 組件的子節點。
 
-    - 延伸模組會定義新類型的節點，表示 Web 組件執行個體。 這個新的節點型別是在新的子節點的基礎**網頁組件庫**節點。 新的 Web 組件節點類型中顯示資訊**屬性**有關它所代表之 Web 組件的視窗。 節點型別也包含自訂快顯功能表項目，您可以使用做為起點，來執行其他 Web 組件與相關的工作。
+  - 延伸模組會定義新類型的節點，表示 Web 組件執行個體。 這個新的節點型別是在新的子節點的基礎**網頁組件庫**節點。 新的 Web 組件節點類型中顯示資訊**屬性**有關它所代表之 Web 組件的視窗。 節點型別也包含自訂快顯功能表項目，您可以使用做為起點，來執行其他 Web 組件與相關的工作。
 
 - 建立兩個延伸模組組件呼叫的自訂 SharePoint 命令。 SharePoint 命令是使用伺服器物件模型中的 Api，適用於 SharePoint 的延伸模組組件可以呼叫的方法。 在本逐步解說中，您可以建立從開發電腦上的本機 SharePoint 網站擷取 Web 組件資訊的命令。 如需詳細資訊，請參閱 <<c0> [ 呼叫 SharePoint 物件模型](../sharepoint/calling-into-the-sharepoint-object-models.md)。
 
@@ -70,7 +70,7 @@ ms.locfileid: "63430331"
 
 1. 啟動 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]。
 
-2. 在功能表列上，選擇 [檔案] > [新增] > [專案]。
+2. 在功能表列上，選擇 [檔案]   > [新增]   > [專案]  。
 
 3. 中**新的專案**對話方塊方塊中，展開**Visual C#** 或**Visual Basic**節點，然後選擇**擴充性**節點。
 
@@ -138,9 +138,9 @@ ms.locfileid: "63430331"
 
 5. 在 **方案總管**，開啟捷徑功能表**WebPartNodeExtension**專案節點，然後選擇**屬性**。
 
-     [專案設計工具] 隨即開啟。
+     [專案設計工具]  隨即開啟。
 
-6. 選擇 [應用程式] 索引標籤。
+6. 選擇 [應用程式]  索引標籤。
 
 7. 在 [**預設命名空間**] 方塊中 (C#) 或**根命名空間**方塊 ([!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)])，輸入**ServerExplorer.SharePointConnections.WebPartNode**。
 
@@ -166,9 +166,9 @@ ms.locfileid: "63430331"
 
 7. 在 **方案總管**，開啟捷徑功能表**WebPartCommands**同樣地，專案，然後選擇**屬性**。
 
-     [專案設計工具] 隨即開啟。
+     [專案設計工具]  隨即開啟。
 
-8. 選擇 [應用程式] 索引標籤。
+8. 選擇 [應用程式]  索引標籤。
 
 9. 在 [**預設命名空間**] 方塊中 (C#) 或**根命名空間**方塊 ([!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)])，輸入**ServerExplorer.SharePointConnections.WebPartNode**。
 
@@ -179,7 +179,7 @@ ms.locfileid: "63430331"
 
 1. 在 [**方案總管] 中**，開啟捷徑功能表**WebPartNodeExtension**專案，，然後選擇**屬性**。
 
-2. [專案設計工具] 隨即開啟。
+2. [專案設計工具]  隨即開啟。
 
 3. 選擇**資源**索引標籤，然後選擇 **這個專案不包含預設資源檔。按一下這裡可建立一個**連結。
 
@@ -263,7 +263,7 @@ ms.locfileid: "63430331"
 
 #### <a name="to-build-the-solution"></a>若要建置方案
 
-1. 在功能表列上選擇 [建置] > [建置解決方案]。
+1. 在功能表列上選擇 [建置]   > [建置解決方案]  。
 
     > [!WARNING]
     > 到目前為止，WebPartNode 專案可能有建置錯誤，因為在 VSIX 資訊清單檔案不具有任何值給作者。 當您將在稍後步驟中的值，這個錯誤就會消失運作。
@@ -338,7 +338,7 @@ ms.locfileid: "63430331"
 
     2. 在 [**加入 SharePoint 連接**對話方塊方塊中，輸入您想要連線，再選擇 SharePoint 網站的 URL**確定**] 按鈕。
 
-         若要指定 SharePoint 網站的開發電腦上，輸入**http://localhost**。
+         若要指定 SharePoint 網站的開發電腦上，輸入 **http://localhost** 。
 
 3. 展開站台連線節點 （它會顯示您的網站 URL），然後再展開 子站台節點 (例如**小組網站**)。
 
@@ -361,7 +361,7 @@ ms.locfileid: "63430331"
 
 1. 在實驗執行個體[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]，在功能表列上選擇**工具** > **擴充功能和更新**。
 
-     [擴充功能和更新] 對話方塊隨即開啟。
+     [擴充功能和更新]  對話方塊隨即開啟。
 
 2. 在延伸模組清單中，選擇**Web 組件庫的 伺服器總管 中的節點擴充**，然後選擇**解除安裝** 按鈕。
 

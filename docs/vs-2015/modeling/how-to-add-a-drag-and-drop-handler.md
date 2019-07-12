@@ -1,5 +1,5 @@
 ---
-title: HOW TO：新增拖放處理常式 |Microsoft Docs
+title: 作法：新增拖放處理常式 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-modeling
@@ -9,14 +9,14 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: fe17c72463d58cb4e1ac0a76d904416559ed224b
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 54218fd5c351b400ce9744620987f50d35e0558f
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65690555"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825402"
 ---
-# <a name="how-to-add-a-drag-and-drop-handler"></a>作法：新增拖放處理常式
+# <a name="how-to-add-a-drag-and-drop-handler"></a>HOW TO：新增拖放處理常式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 您可以將拖放事件的處理常式加入至您的 DSL，以便使用者可以從其他圖表或 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 的其他部分，拖曳項目到您的圖表上。 您也可以加入按兩下等事件的處理常式。 拖放和按兩下處理常式稱為共同*軌跡處理常式*。  
@@ -27,9 +27,9 @@ ms.locfileid: "65690555"
   
 - 前兩節說明定義軌跡處理程式的替代方法：  
   
-    - [覆寫 ShapeElement 方法來定義軌跡處理常式](#overrideShapeElement)。 您可以覆寫 `OnDragDrop`、`OnDoubleClick`、`OnDragOver` 和其他方法。  
-  
-    - [使用 MEF 來定義軌跡處理常式](#MEF)。 如果您想讓協力廠商的開發人員能夠自行定義要加入至您的 DSL 的處理常式，請使用這個方法。 使用者可以在安裝您的 DSL 之後，選擇安裝協力廠商擴充功能。  
+  - [覆寫 ShapeElement 方法來定義軌跡處理常式](#overrideShapeElement)。 您可以覆寫 `OnDragDrop`、`OnDoubleClick`、`OnDragOver` 和其他方法。  
+
+  - [使用 MEF 來定義軌跡處理常式](#MEF)。 如果您想讓協力廠商的開發人員能夠自行定義要加入至您的 DSL 的處理常式，請使用這個方法。 使用者可以在安裝您的 DSL 之後，選擇安裝協力廠商擴充功能。  
   
 - [如何解碼拖曳的項目](#extracting)。 您可以從任何視窗或從桌面拖曳項目，也可以從 DSL 拖曳項目。  
   
@@ -172,7 +172,7 @@ using System.Linq;
   
     1. 如果尚未安裝 Visual Studio 模型匯流排擴充功能，請下載並進行安裝。 如需詳細資訊，請參閱 < [Visualization and Modeling SDK](http://go.microsoft.com/fwlink/?LinkID=185579)。  
   
-    2. 在 [DSL 設計工具] 中，開啟來源 DSL 的 DSL 定義檔。 以滑鼠右鍵按一下設計介面，然後按一下**啟用 Modelbus**。 在對話方塊中，選擇其中一個或兩個選項。  按一下 [確定] 。 新專案 "ModelBus" 會隨即加入至 DSL 方案。  
+    2. 在 [DSL 設計工具] 中，開啟來源 DSL 的 DSL 定義檔。 以滑鼠右鍵按一下設計介面，然後按一下**啟用 Modelbus**。 在對話方塊中，選擇其中一個或兩個選項。  按一下 [確定 **Deploying Office Solutions**]。 新專案 "ModelBus" 會隨即加入至 DSL 方案。  
   
     3. 按一下 **轉換所有範本**並重建方案。  
   

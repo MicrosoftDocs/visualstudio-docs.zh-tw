@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 7132fae3623e1ad10fb35d2b903935cdbffee12d
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: d4b5ad6ca824e6c7091c6c508b51c2d51501b2fd
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65676712"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67821520"
 ---
 # <a name="use-roslyn-analyzers"></a>使用 Roslyn 分析器
 
@@ -62,13 +62,13 @@ A[規則集](../code-quality/using-rule-sets-to-group-code-analysis-rules.md)是
 
 您可以設定分析器規則的嚴重性或*診斷*，如果您[安裝分析器](../code-quality/install-roslyn-analyzers.md)NuGet 套件的形式。 下表顯示診斷的嚴重性選項：
 
-|嚴重性|建置階段行為|編輯器的行為|
+|Severity|建置階段行為|編輯器的行為|
 |-|-|-|
-|錯誤|違規如下所示*錯誤*中**錯誤清單**命令列建置輸出，以及會導致組建失敗。|違規的程式碼會加上底線以紅色曲線，並以在捲軸的小型紅色方塊標示。|
+|Error|違規如下所示*錯誤*中**錯誤清單**命令列建置輸出，以及會導致組建失敗。|違規的程式碼會加上底線以紅色曲線，並以在捲軸的小型紅色方塊標示。|
 |警告|違規如下所示*警告*中**錯誤清單**和在命令列建置輸出，但不是會造成建置失敗。|違規的程式碼會加上底線以綠色曲線，並標示在捲軸的小型綠色方塊。|
 |資訊|違規如下所示*訊息*中**錯誤清單**，完全不會在命令列組建輸出。|違規的程式碼會加上底線以灰色曲線，並標示在捲軸的小型灰色方塊。|
 |Hidden|非-使用者可以看見。|非-使用者可以看見。 診斷會回報給 IDE 診斷引擎，不過。|
-|None|完全隱藏。|完全隱藏。|
+|無|完全隱藏。|完全隱藏。|
 
 此外，您可以 「 重設 」 規則的嚴重性設定為**預設**。 每一個診斷的中可以看到預設嚴重性**屬性**視窗。
 
@@ -110,40 +110,40 @@ A[規則集](../code-quality/using-rule-sets-to-group-code-analysis-rules.md)是
 
 - 從**分析**功能表
 
-   選取 **分析** > **執行程式碼分析和隱藏作用中問題**在功能表列上隱藏所有目前的違規情形。 這有時候稱為 「 基準 」。
+  選取 **分析** > **執行程式碼分析和隱藏作用中問題**在功能表列上隱藏所有目前的違規情形。 這有時候稱為 「 基準 」。
 
 - 從**方案總管**
 
-   若要隱藏在違規**方案總管 中**，設定規則的嚴重性**無**。
+  若要隱藏在違規**方案總管 中**，設定規則的嚴重性**無**。
 
 - 從**規則集編輯器**
 
-   若要隱藏的規則集編輯器的違規，取消選取其名稱旁邊的方塊，或設定**動作**要**無**。
+  若要隱藏的規則集編輯器的違規，取消選取其名稱旁邊的方塊，或設定**動作**要**無**。
 
 - 從**程式碼編輯器**
 
-   若要隱藏程式碼編輯器中的違規，將游標放在一行程式碼的違規和按下**Ctrl**+ **。** 若要開啟 **快速動作**功能表。 選取 **隱藏 CAXXXX** > **來源中/隱藏項目檔**。
+  若要隱藏程式碼編輯器中的違規，將游標放在一行程式碼的違規和按下**Ctrl**+ **。** 若要開啟 **快速動作**功能表。 選取 **隱藏 CAXXXX** > **來源中/隱藏項目檔**。
 
-   ![隱藏診斷的快速動作 功能表](media/suppress-diagnostic-from-editor.png)
+  ![隱藏診斷的快速動作 功能表](media/suppress-diagnostic-from-editor.png)
 
 - 從**錯誤清單**
 
-   您可以隱藏來自一或多個診斷**錯誤清單**藉由選取您想要隱藏的項目，然後用滑鼠右鍵按一下並選取**隱藏** > **中 Source/In隱藏項目檔**。
+  您可以隱藏來自一或多個診斷**錯誤清單**藉由選取您想要隱藏的項目，然後用滑鼠右鍵按一下並選取**隱藏** > **中 Source/In隱藏項目檔**。
 
-   - 如果要抑制**在原始程式檔**，則**預覽變更** 對話方塊隨即開啟並顯示預覽C# [#pragma 警告](/dotnet/csharp/language-reference/preprocessor-directives/preprocessor-pragma-warning)或 Visual Basic [#Disable警告](/dotnet/visual-basic/language-reference/directives/directives)指示詞加入至原始程式碼。
+  - 如果要抑制**在原始程式檔**，則**預覽變更** 對話方塊隨即開啟並顯示預覽C# [#pragma 警告](/dotnet/csharp/language-reference/preprocessor-directives/preprocessor-pragma-warning)或 Visual Basic [#Disable警告](/dotnet/visual-basic/language-reference/directives/directives)指示詞加入至原始程式碼。
 
-      ![在程式碼檔案中加入 #pragma 警告的預覽](media/pragma-warning-preview.png)
+    ![在程式碼檔案中加入 #pragma 警告的預覽](media/pragma-warning-preview.png)
 
-   - 如果您選取**檔案中的隱藏項目**，則**預覽變更** 對話方塊隨即開啟並顯示預覽<xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute>會新增至全域隱藏項目檔案的屬性。
+  - 如果您選取**檔案中的隱藏項目**，則**預覽變更** 對話方塊隨即開啟並顯示預覽<xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute>會新增至全域隱藏項目檔案的屬性。
 
-      ![新增 SuppressMessage 屬性隱藏項目檔案的預覽](media/preview-changes-in-suppression-file.png)
+    ![新增 SuppressMessage 屬性隱藏項目檔案的預覽](media/preview-changes-in-suppression-file.png)
 
-   在 **預覽變更**對話方塊中，選取**套用**。
+  在 **預覽變更**對話方塊中，選取**套用**。
 
-   > [!NOTE]
-   > 如果您沒有看到**抑制**中的功能表選項**方案總管 中**，違規可能來自組建並不是即時的分析。 **錯誤清單**顯示診斷或規則違規，同時從即時程式碼分析，以及建置。 因為組建診斷可能會過期，比方說，如果您已編輯的程式碼來修正此違規情形，但尚未重建，您無法隱藏來自這些診斷**錯誤清單**。 來自即時分析或 IntelliSense、 診斷都一律是最新與目前的來源，並可從隱藏**錯誤清單**。 若要排除*建置*診斷從您的選取範圍中，切換**錯誤清單**來源篩選器，從**組建 + IntelliSense**至**只 Intellisense**. 然後，選取您想要隱藏並繼續如先前所述的診斷。
-   >
-   > ![在 Visual Studio 中的錯誤清單來源篩選器](media/error-list-filter.png)
+  > [!NOTE]
+  > 如果您沒有看到**抑制**中的功能表選項**方案總管 中**，違規可能來自組建並不是即時的分析。 **錯誤清單**顯示診斷或規則違規，同時從即時程式碼分析，以及建置。 因為組建診斷可能會過期，比方說，如果您已編輯的程式碼來修正此違規情形，但尚未重建，您無法隱藏來自這些診斷**錯誤清單**。 來自即時分析或 IntelliSense、 診斷都一律是最新與目前的來源，並可從隱藏**錯誤清單**。 若要排除*建置*診斷從您的選取範圍中，切換**錯誤清單**來源篩選器，從**組建 + IntelliSense**至**只 Intellisense**. 然後，選取您想要隱藏並繼續如先前所述的診斷。
+  >
+  > ![在 Visual Studio 中的錯誤清單來源篩選器](media/error-list-filter.png)
 
 ## <a name="command-line-usage"></a>命令列使用方式
 

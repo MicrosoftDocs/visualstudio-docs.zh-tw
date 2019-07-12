@@ -14,12 +14,12 @@ caps.latest.revision: 57
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 373b5c8fd108e783123440820b38edf94a272a1d
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 4a4b607adcd4aab4c5b70f02cb28f06219c7d655
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63441002"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67823711"
 ---
 # <a name="layer-diagrams-guidelines"></a>分層圖：方針
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -101,9 +101,9 @@ ms.locfileid: "63441002"
 |刪除不應該存在的相依性|按一下 相依性，，然後按**刪除**。|  
 |變更或限制相依性的方向|設定其**方向**屬性。|  
 |建立新的相依性|使用**相依性**並**雙向相依性**工具。<br /><br /> 若要繪製多個相依性，請按兩下工具。 當您完成時，請按一下**指標**工具或按**ESC**索引鍵。|  
-|指定與圖層關聯的成品不可相依於指定的命名空間|輸入層中的命名空間**Forbidden Namespace Dependencies**屬性。 請使用分號 (**;**) 來分隔命名空間。|  
-|指定與圖層關聯的成品不可屬於指定的命名空間|輸入層中的命名空間**Forbidden Namespaces**屬性。 請使用分號 (**;**) 來分隔命名空間。|  
-|指定與圖層關聯的成品必須屬於其中一個指定的命名空間|輸入層中的命名空間**Required Namespaces**屬性。 請使用分號 (**;**) 來分隔命名空間。|  
+|指定與圖層關聯的成品不可相依於指定的命名空間|輸入層中的命名空間**Forbidden Namespace Dependencies**屬性。 請使用分號 ( **;** ) 來分隔命名空間。|  
+|指定與圖層關聯的成品不可屬於指定的命名空間|輸入層中的命名空間**Forbidden Namespaces**屬性。 請使用分號 ( **;** ) 來分隔命名空間。|  
+|指定與圖層關聯的成品必須屬於其中一個指定的命名空間|輸入層中的命名空間**Required Namespaces**屬性。 請使用分號 ( **;** ) 來分隔命名空間。|  
   
 ### <a name="Improving"></a> 改善程式碼的結構  
  重構變更屬於改良功能，不會影響應用程式的行為，但是可協助讓程式碼變得更容易變更和在日後進行擴充。 結構完善的程式碼具有易於抽象至圖層圖表的設計。  
@@ -134,7 +134,7 @@ ms.locfileid: "63441002"
   
 - 變更圖層和相依性的色彩。  
   
-    - 選取一或多個圖層或相依性、 按一下滑鼠右鍵，然後按一下 **屬性**。 在 [**屬性**] 視窗中，編輯**色彩**屬性。  
+  - 選取一或多個圖層或相依性、 按一下滑鼠右鍵，然後按一下 **屬性**。 在 [**屬性**] 視窗中，編輯**色彩**屬性。  
   
 ## <a name="Validate"></a> 針對驗證程式碼圖表  
  若已編輯圖表，您可以隨時手動針對程式碼驗證圖表，或在每次執行本機組建或 [!INCLUDE[esprbuild](../includes/esprbuild-md.md)] 時自動驗證。  

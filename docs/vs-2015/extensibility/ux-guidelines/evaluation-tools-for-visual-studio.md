@@ -8,12 +8,12 @@ ms.assetid: 94e0e9a3-440c-4943-ad7b-772ed742e034
 caps.latest.revision: 4
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 07d650e127b5f15abbfac8aef179bb9e01a36297
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 24ea04e59178248c7a9795a2f928c311ba83db2e
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60096487"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67824064"
 ---
 # <a name="evaluation-tools-for-visual-studio"></a>適用於 Visual Studio 的評估工具
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -49,13 +49,13 @@ ms.locfileid: "60096487"
 
 - 請確認群組標頭和按鈕以外的所有標籤結尾的冒號，而且在與其配對的控制項。
 
-- 請確認以省略符號按鈕、 命令和命令連結來啟動 UI 以擷取使用者輸入結尾 **[...]**.
+- 請確認以省略符號按鈕、 命令和命令連結來啟動 UI 以擷取使用者輸入結尾 **[...]** .
 
-     例如：
+  例如：
 
-    - **[進階...]** 對話方塊上的按鈕。
+  - **[進階...]** 對話方塊上的按鈕。
 
-    - 在 [工具] 功能表下的命令選項 (**工具 > 選項**) 應該取得省略符號，因為啟動列印對話方塊本身是命令的目的。
+  - 在 [工具] 功能表下的命令選項 (**工具 > 選項**) 應該取得省略符號，因為啟動列印對話方塊本身是命令的目的。
 
 - 確認 UI 包含除了符合業界標準條款的任何縮寫。 比方說，HTML 和 TCP/IP 都不需要對拼出，不過 OOM （記憶體不足） 和 PII （個人識別資訊） 應該。
 
@@ -147,9 +147,9 @@ ms.locfileid: "60096487"
 
 - 如果欄位是必要的欄位，必須識別出來，請確認：
 
-    - 背景設定為`Environment.ControlEditRequiredBackground`和前景設為 `Environment.ControlEditRequiredHintText`
+  - 背景設定為`Environment.ControlEditRequiredBackground`和前景設為 `Environment.ControlEditRequiredHintText`
 
-    - 會顯示為控制項中的提示文字 **"\<需要 > 」**
+  - 會顯示為控制項中的提示文字 **"\<需要 > 」**
 
 #### <a name="button-controls"></a>按鈕控制項
 
@@ -159,11 +159,11 @@ ms.locfileid: "60096487"
 
 - 它可接受使用小的方形按鈕，以省略符號 **[...]** 上，而不是 **[瀏覽...]** 按鈕 （或類似的功能）。 如果使用，請確認按鈕為 23 x 23 的大小。
 
-- 如果有一個以上 **[瀏覽...]** 按鈕在對話方塊中，然後確認簡短的版本 (僅限省略符號 **[...]**) 用於所有。
+- 如果有一個以上 **[瀏覽...]** 按鈕在對話方塊中，然後確認簡短的版本 (僅限省略符號 **[...]** ) 用於所有。
 
 - 請確認該省略符號 **[...]** 按鈕不會有助憶鍵。 旁邊的輸入控制項焦點時，有一個索引標籤應該將焦點移至 省略符號按鈕。
 
-- 確認按鈕、 命令和命令連結來啟動第二個 UI 可擷取更多的使用者輸入必須以省略符號結尾 **[...]**.
+- 確認按鈕、 命令和命令連結來啟動第二個 UI 可擷取更多的使用者輸入必須以省略符號結尾 **[...]** .
 
 #### <a name="hyperlinks"></a>超連結
 
@@ -171,11 +171,11 @@ ms.locfileid: "60096487"
 
 - 確認所用的 VS 色彩：
 
-    - `Environment.ControlLinkText`
+  - `Environment.ControlLinkText`
 
-    - `Environment.ControlLinkTextHover`
+  - `Environment.ControlLinkTextHover`
 
-    - `Environment.ControlLinkTextPressed`
+  - `Environment.ControlLinkTextPressed`
 
 - 請確認超連結會出現藍色沒有底線除非內嵌在段落中。
 

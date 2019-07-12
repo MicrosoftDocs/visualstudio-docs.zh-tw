@@ -8,14 +8,14 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b2c3aad870112b580078f2dbb849f9ee1a771ed0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e3795bbe8a200b868687cdb8da053bc078b7f14c
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63001917"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825757"
 ---
-# <a name="how-to-generate-an-xml-snippet-from-an-xml-schema"></a>HOW TO：從 XML 結構描述產生 XML 片段
+# <a name="how-to-generate-an-xml-snippet-from-an-xml-schema"></a>作法：從 XML 結構描述產生 XML 片段
 
 XML 編輯器具有從 XML 結構描述定義語言 (XSD) 結構描述產生 XML 片段的功能。 例如，當您撰寫 XML 檔案，而相鄰的項目名稱，您可以按下 **索引標籤** 填入從該元素的結構描述資訊產生的 XML 資料中的項目。
 
@@ -25,11 +25,11 @@ XML 編輯器具有從 XML 結構描述定義語言 (XSD) 結構描述產生 XML
 
 - 編輯器中目前的項目必須是空的，沒有屬性。 例如，下列內容全部有效
 
-    - `<Account`
+  - `<Account`
 
-    - `<Account>`
+  - `<Account>`
 
-    - `<Account></Account>`
+  - `<Account></Account>`
 
 - 游標必須緊接在項目名稱的右邊。
 
@@ -66,7 +66,7 @@ XML 編輯器具有從 XML 結構描述定義語言 (XSD) 結構描述產生 XML
 
 5. 選取的結構描述檔案，然後按一下**開啟**。
 
-6. 按一下 [確定]  。
+6. 按一下 [確定 **Deploying Office Solutions**]。
 
      XML 結構描述現在已與 XML 文件相關聯。
 

@@ -19,12 +19,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 05e09dfc70ae5bc4adf85562f48c5cc8c4874bc6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 6e21c3699d796d6037d3b8ca0e744e792b9810b6
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62971351"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67824532"
 ---
 # <a name="validate-code-with-dependency-diagrams"></a>使用相依性圖表驗證程式碼
 
@@ -66,8 +66,8 @@ ms.locfileid: "62971351"
 
 * 若要使用即時相依性驗證時，請啟用完整解決方案分析，開啟 [選項] 設定中會出現黃色提示列從**錯誤清單**。
 
-   - 如果您不想要查看方案中的所有架構性問題，您可以永久關閉金色列。
-   - 如果您未啟用完整解決方案分析，分析是為了只編輯的檔案。
+  - 如果您不想要查看方案中的所有架構性問題，您可以永久關閉金色列。
+  - 如果您未啟用完整解決方案分析，分析是為了只編輯的檔案。
 
 * 升級時若要啟用即時驗證的專案，對話方塊會顯示轉換的進度。
 

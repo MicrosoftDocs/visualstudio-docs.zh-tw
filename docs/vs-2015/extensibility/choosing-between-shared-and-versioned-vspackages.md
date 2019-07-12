@@ -12,12 +12,12 @@ ms.assetid: e3128ac3-2e92-48e9-87ab-3b6c9d80e8c9
 caps.latest.revision: 23
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: c46e42a00e21e6896a0571e788801d24d3978db1
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 289e506d3cd404bba9a3a63d97179b89a948d381
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65685335"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67821983"
 ---
 # <a name="choosing-between-shared-and-versioned-vspackages"></a>在共用和建立版本的 VSPackage 之間進行選擇
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,9 +33,9 @@ ms.locfileid: "65685335"
   
 - 讓 VSPackage 與多個版本的相容[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]。 這麼做的兩種方式是可用：  
   
-    - 限制要使用的最舊版本的功能 VSPackage[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]您支援。  
-  
-    - 程式設計 VSPackage 來適應的新版[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]中它正在執行。 然後，如果較新的服務的查詢失敗，VSPackage 可以提供其他服務所支援的舊版[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]。  
+  - 限制要使用的最舊版本的功能 VSPackage[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]您支援。  
+
+  - 程式設計 VSPackage 來適應的新版[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]中它正在執行。 然後，如果較新的服務的查詢失敗，VSPackage 可以提供其他服務所支援的舊版[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]。  
   
 - 適當地註冊 VSPackage。 如需詳細資訊，請參閱 < [VSPackage 註冊](../extensibility/internals/vspackage-registration.md)並[Managed VSPackage 註冊](https://msdn.microsoft.com/f69e0ea3-6a92-4639-8ca9-4c9c210e58a1)。  
   

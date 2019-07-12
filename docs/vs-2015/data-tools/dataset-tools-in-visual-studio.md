@@ -53,12 +53,12 @@ caps.latest.revision: 53
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: df415b9ad56e8e9b740da57709d039737f1bd24a
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: e53a31a274a356d5686c3225ed2635e6c61231c2
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65697910"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67824701"
 ---
 # <a name="dataset-tools-in-visual-studio"></a>Visual Studio 中的資料集工具
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -81,13 +81,13 @@ ms.locfileid: "65697910"
 
 - 使用**TableAdapter 組態精靈**指定的查詢或預存程序，將會填入資料集，以及要實作哪些資料庫作業 （update、 delete 等等）。 如需詳細資訊，請參閱下列主題：
 
-    - [使用 TableAdapter 填入資料集](../data-tools/fill-datasets-by-using-tableadapters.md)
+  - [使用 TableAdapter 填入資料集](../data-tools/fill-datasets-by-using-tableadapters.md)
 
-    - [編輯資料集中的資料](../data-tools/edit-data-in-datasets.md)
+  - [編輯資料集中的資料](../data-tools/edit-data-in-datasets.md)
 
-    - [驗證資料集中的資料](../data-tools/validate-data-in-datasets.md)
+  - [驗證資料集中的資料](../data-tools/validate-data-in-datasets.md)
 
-    - [將資料儲存回資料庫](../data-tools/save-data-back-to-the-database.md)
+  - [將資料儲存回資料庫](../data-tools/save-data-back-to-the-database.md)
 
 - 查詢，並在資料集中搜尋的資料。 如需詳細資訊，請參閱 <<c0> [ 查詢資料集](../data-tools/query-datasets.md)。 [!INCLUDE[linq_dataset](../includes/linq-dataset-md.md)] 可讓[LINQ (Language-Integrated Query)](https://msdn.microsoft.com/library/a73c4aec-5d15-4e98-b962-1274021ea93d)中的資料<xref:System.Data.DataSet>物件。 如需詳細資訊，請參閱 [LINQ to DataSet](https://msdn.microsoft.com/library/743e3755-3ecb-45a2-8d9b-9ed41f0dcf17)。
 

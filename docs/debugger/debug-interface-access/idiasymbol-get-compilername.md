@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 076b2fbcd4a1f65de56e52ffbf8b565ca122ffe1
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63402111"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "64813968"
 ---
 # <a name="idiasymbolgetcompilername"></a>IDiaSymbol::get_compilerName
 傳回的名稱，用來產生的編譯器[編譯模組](../../debugger/debug-interface-access/compiland.md)。

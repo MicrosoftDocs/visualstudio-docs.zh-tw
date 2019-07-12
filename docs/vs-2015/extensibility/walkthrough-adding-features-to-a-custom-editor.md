@@ -10,12 +10,12 @@ ms.assetid: bfe083b6-3e35-4b9c-ad4f-b30b9ff412a5
 caps.latest.revision: 39
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 71ecff799f0da84ca47456467e190edcf95b0a15
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 1d14fb36298518409df34302f9346e186f0b0263
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63442291"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825156"
 ---
 # <a name="walkthrough-adding-features-to-a-custom-editor"></a>逐步解說：將功能新增至自訂編輯器
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -150,9 +150,9 @@ ms.locfileid: "63442291"
   
 - 有兩個地方的自訂編輯器可以公開 automation 物件：  
   
-    - `Document.Object`  
-  
-    - `Window.Object`  
+  - `Document.Object`  
+
+  - `Window.Object`  
   
 ## <a name="see-also"></a>另請參閱  
  [參與 Automation 模型](../extensibility/internals/contributing-to-the-automation-model.md)   

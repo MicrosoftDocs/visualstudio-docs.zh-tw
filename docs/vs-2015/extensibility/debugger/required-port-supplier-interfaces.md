@@ -11,12 +11,12 @@ ms.assetid: 0c2cdd40-9f6f-425e-b305-858f7734161e
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 82e70ea9a4ba30b6b1d312188a91d9c0c8aa2904
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: a065389a6b9b67b8bce82394569ce65afb0f8d55
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60116637"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67821422"
 ---
 # <a name="required-port-supplier-interfaces"></a>必要的連接埠提供者介面
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -50,33 +50,33 @@ ms.locfileid: "60116637"
   
 - [IDebugProcess2](../../extensibility/debugger/reference/idebugprocess2.md)  
   
-     描述實體的程序。 至少必須實作下列方法：  
-  
-    - [EnumPrograms](../../extensibility/debugger/reference/idebugprocess2-enumprograms.md)  
-  
-    - [GetName](../../extensibility/debugger/reference/idebugprocess2-getname.md)  
-  
-    - [GetServer](../../extensibility/debugger/reference/idebugprocess2-getserver.md)  
-  
-    - [GetPhysicalProcessId](../../extensibility/debugger/reference/idebugprocess2-getphysicalprocessid.md)  
-  
-    - [GetProcessId](../../extensibility/debugger/reference/idebugprocess2-getprocessid.md)  
-  
-    - [GetAttachedSessionName](../../extensibility/debugger/reference/idebugprocess2-getattachedsessionname.md)  
-  
+  描述實體的程序。 至少必須實作下列方法：  
+
+  - [EnumPrograms](../../extensibility/debugger/reference/idebugprocess2-enumprograms.md)  
+
+  - [GetName](../../extensibility/debugger/reference/idebugprocess2-getname.md)  
+
+  - [GetServer](../../extensibility/debugger/reference/idebugprocess2-getserver.md)  
+
+  - [GetPhysicalProcessId](../../extensibility/debugger/reference/idebugprocess2-getphysicalprocessid.md)  
+
+  - [GetProcessId](../../extensibility/debugger/reference/idebugprocess2-getprocessid.md)  
+
+  - [GetAttachedSessionName](../../extensibility/debugger/reference/idebugprocess2-getattachedsessionname.md)  
+
 - [IDebugProcessEx2](../../extensibility/debugger/reference/idebugprocessex2.md)  
   
-     提供了 SDM attach 和 detach 本身的處理程序的方式。  
+    提供了 SDM attach 和 detach 本身的處理程序的方式。  
   
 - [IDebugProgram2](../../extensibility/debugger/reference/idebugprogram2.md)  
   
-     描述邏輯的程式。 至少必須實作下列方法：  
-  
-    - [GetName](../../extensibility/debugger/reference/idebugprogram2-getname.md)  
-  
-    - [GetProcess](../../extensibility/debugger/reference/idebugprogram2-getprocess.md)  
-  
-    - [GetProgramId](../../extensibility/debugger/reference/idebugprogram2-getprogramid.md)  
+  描述邏輯的程式。 至少必須實作下列方法：  
+
+  - [GetName](../../extensibility/debugger/reference/idebugprogram2-getname.md)  
+
+  - [GetProcess](../../extensibility/debugger/reference/idebugprogram2-getprocess.md)  
+
+  - [GetProgramId](../../extensibility/debugger/reference/idebugprogram2-getprogramid.md)  
   
 - [IDebugProgramEx2](../../extensibility/debugger/reference/idebugprogramex2.md)  
   

@@ -9,12 +9,12 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c87b197219cec112a9235f4af6fb1a51ae793a88
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: c788a9ae126530484efc5f693505fc34c2793768
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63441020"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67824228"
 ---
 # <a name="how-to-open-a-model-from-file-in-program-code"></a>HOW TO：在程式碼中開啟檔案的模型
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,7 +42,7 @@ ms.locfileid: "63441020"
   
 - `Microsoft.VisualStudio.Modeling.Sdk.11.0`  
   
-    - 如果您沒有看到下 **.NET**索引標籤中**的 加入參考** 對話方塊中，按一下 **瀏覽**索引標籤，然後瀏覽至`%Program Files%\Microsoft Visual Studio 2010 SDK\VisualStudioIntegration\Common\Assemblies\`。  
+  - 如果您沒有看到下 **.NET**索引標籤中**的 加入參考** 對話方塊中，按一下 **瀏覽**索引標籤，然後瀏覽至`%Program Files%\Microsoft Visual Studio 2010 SDK\VisualStudioIntegration\Common\Assemblies\`。  
   
 - 您 DSL 的組件，您會在 [bin] 資料夾下找到您的 DSL 專案。 其名稱通常屬於表單：*YourCompany*。*YourProject*`.Dsl.dll`。  
   

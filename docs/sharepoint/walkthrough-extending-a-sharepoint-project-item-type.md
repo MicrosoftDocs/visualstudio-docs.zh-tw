@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f4922b791ea3ad7ab58c231342e11b5c175d4895
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 795cc62ca88f7ede87e978d910d397e0ce6e2ad7
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63430350"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825978"
 ---
 # <a name="walkthrough-extend-a-sharepoint-project-item-type"></a>逐步解說：擴充 SharePoint 專案項目類型
   您可以使用**Business Data Connectivity 模型**專案項目，在 SharePoint 中建立的商務資料連接 (BDC) 服務的模型。 根據預設，當您建立模型時使用這個專案項目中，模型中的資料不是顯示給使用者。 您也必須在 SharePoint 中，讓使用者可以檢視的資料建立外部清單。
@@ -28,9 +28,9 @@ ms.locfileid: "63430350"
 
 - 建立 Visual Studio 擴充功能可執行兩項主要工作：
 
-    - 它會產生外部清單，BDC 模型中顯示的資料。 延伸模組會使用 SharePoint 專案系統的物件模型來產生*Elements.xml*定義清單的檔案。 它也將檔案新增至專案，讓它與 BDC 模型一起部署。
+  - 它會產生外部清單，BDC 模型中顯示的資料。 延伸模組會使用 SharePoint 專案系統的物件模型來產生*Elements.xml*定義清單的檔案。 它也將檔案新增至專案，讓它與 BDC 模型一起部署。
 
-    - 它會新增至快顯功能表項目**Business Data Connectivity 模型**專案中的項目**方案總管 中**。 開發人員可以按一下這個功能表項目，來產生 BDC 模型的外部清單。
+  - 它會新增至快顯功能表項目**Business Data Connectivity 模型**專案中的項目**方案總管 中**。 開發人員可以按一下這個功能表項目，來產生 BDC 模型的外部清單。
 
 - 建置 Visual Studio 擴充功能 (VSIX) 封裝來部署延伸模組組件。
 
@@ -62,7 +62,7 @@ ms.locfileid: "63430350"
 
 1. 啟動 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]。
 
-2. 在功能表列上，選擇 [檔案] > [新增] > [專案]。
+2. 在功能表列上，選擇 [檔案]   > [新增]   > [專案]  。
 
 3. 中**新的專案**對話方塊方塊中，展開**Visual C#** 或**Visual Basic**節點，然後選擇**擴充性**節點。
 
@@ -122,7 +122,7 @@ ms.locfileid: "63430350"
 
     - Microsoft.VisualStudio.SharePoint
 
-5. 選擇 [確定]  按鈕。
+5. 選擇 [確定] 按鈕。 
 
 ## <a name="define-the-project-item-extension"></a>定義專案項目擴充功能
  建立一個類別來定義的擴充功能**Business Data Connectivity 模型**專案項目。 若要定義的延伸模組，此類別會實作<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeExtension>介面。 每當您想要擴充現有的專案項目類型時，請實作這個介面。
@@ -152,7 +152,7 @@ ms.locfileid: "63430350"
 
 #### <a name="to-build-the-solution"></a>若要建置方案
 
-1. 在功能表列上選擇 [建置] > [建置解決方案]。
+1. 在功能表列上選擇 [建置]   > [建置解決方案]  。
 
 ## <a name="create-a-vsix-package-to-deploy-the-project-item-extension"></a>建立 VSIX 封裝，來部署專案項目擴充功能
  若要建立 VSIX 封裝部署擴充功能，請在解決方案中使用 VSIX 專案。 首先，設定 VSIX 套件藉由修改 source.extension.vsixmanifest 檔案中包含在 VSIX 專案。 建立方案，然後建立 VSIX 封裝。
@@ -182,7 +182,7 @@ ms.locfileid: "63430350"
 
 8. 在 [**專案**清單中，選擇**BdcProjectItemExtension**，然後選擇 **[確定]** ] 按鈕。
 
-9. 在功能表列上選擇 [建置] > [建置解決方案]。
+9. 在功能表列上選擇 [建置]   > [建置解決方案]  。
 
 10. 請確定專案會編譯和建置無誤。
 
@@ -239,7 +239,7 @@ ms.locfileid: "63430350"
 
 15. 關閉網頁瀏覽器。
 
-16. 中已 TestBDCModel 專案開啟的 Visual Studio 的執行個體，開啟捷徑功能表**TestBDCModel**中的節點**方案總管]**，然後選擇 [**產生外部的資料清單**。
+16. 中已 TestBDCModel 專案開啟的 Visual Studio 的執行個體，開啟捷徑功能表**TestBDCModel**中的節點**方案總管]** ，然後選擇 [**產生外部的資料清單**。
 
 17. 確認停止在您設定的中斷點上的 Visual Studio 的其他執行個體中的程式碼`GenerateExternalDataLists_Execute`方法。 選擇**F5**鍵，或在功能表列上選擇 **偵錯** > **繼續**繼續進行偵錯專案。
 
@@ -282,7 +282,7 @@ ms.locfileid: "63430350"
 
 1. 在實驗性 Visual Studio 執行個體，在功能表列上，選擇**工具** > **擴充功能和更新**。
 
-     [擴充功能和更新] 對話方塊隨即開啟。
+     [擴充功能和更新]  對話方塊隨即開啟。
 
 2. 在延伸模組清單中，選擇**外部的資料清單產生器**，然後選擇**解除安裝** 按鈕。
 

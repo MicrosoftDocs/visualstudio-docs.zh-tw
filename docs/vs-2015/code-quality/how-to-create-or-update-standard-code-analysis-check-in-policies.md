@@ -1,5 +1,5 @@
 ---
-title: HOW TO：建立或更新標準程式碼分析簽入原則 |Microsoft Docs
+title: 作法：建立或更新標準程式碼分析簽入原則 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -13,14 +13,14 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 9b1ad310385d5c8c8cecaee408d049a172d53e1e
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 47e7c2b6e02aab3b6b1df0c54ba91668bbb2673c
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63436854"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825806"
 ---
-# <a name="how-to-create-or-update-standard-code-analysis-check-in-policies"></a>HOW TO：建立或更新標準程式碼分析簽入原則
+# <a name="how-to-create-or-update-standard-code-analysis-check-in-policies"></a>作法：建立或更新標準程式碼分析簽入原則
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 您可以要求所有 team 專案中的程式碼專案上執行程式碼分析，使用程式碼分析簽入原則。 需要程式碼分析，可以改善簽入程式碼基底的程式碼的品質。  
@@ -52,7 +52,7 @@ ms.locfileid: "63436854"
   
 - 選取或清除下列選項：  
   
-    |選項|描述|  
+    |選項|說明|  
     |------------|-----------------|  
     |**強制執行簽入使其僅包含屬於目前方案的檔案。**|只有在方案和專案的組態檔中指定的檔案，可以執行程式碼分析。 此原則可保證方案的一部分的所有程式碼會進行分析。|  
     |**強制執行 C /C++程式碼分析 (/analyze)**|需要所有的 C 或C++以建置專案 / analyze 編譯器選項，簽入之前執行程式碼分析。|  
@@ -64,13 +64,13 @@ ms.locfileid: "63436854"
   
 - 從**執行此規則集**清單中，使用下列方法之一：  
   
-    - 選取 Microsoft 標準規則集。  
-  
-    - 選取 自訂規則集，然後按一下 **\<選取規則集從原始檔控制...>** ，然後輸入 原始檔控制瀏覽器中的規則集的版本控制路徑。 版本控制路徑的語法是：  
-  
-    - **$/** `TeamProjectName` **/** `VersionControlPath`  
-  
-    - 如需有關如何建立及實作自訂簽入原則規則集，請參閱[針對 Managed 程式碼的自訂實作簽入原則](../code-quality/implementing-custom-code-analysis-check-in-policies-for-managed-code.md)。  
+  - 選取 Microsoft 標準規則集。  
+
+  - 選取 自訂規則集，然後按一下 **\<選取規則集從原始檔控制...>** ，然後輸入 原始檔控制瀏覽器中的規則集的版本控制路徑。 版本控制路徑的語法是：  
+
+  - **$/** `TeamProjectName` **/** `VersionControlPath`  
+
+  - 如需有關如何建立及實作自訂簽入原則規則集，請參閱[針對 Managed 程式碼的自訂實作簽入原則](../code-quality/implementing-custom-code-analysis-check-in-policies-for-managed-code.md)。  
   
 ## <a name="see-also"></a>另請參閱  
  [建立和使用程式碼分析簽入原則](../code-quality/creating-and-using-code-analysis-check-in-policies.md)

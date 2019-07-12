@@ -1,5 +1,5 @@
 ---
-title: HOW TO：新增拖放處理常式
+title: 作法：新增拖放處理常式
 ms.date: 11/04/2016
 ms.topic: conceptual
 author: gewarren
@@ -7,14 +7,14 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fe8a05e193ffe621d28147389752ab56031cf499
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b15e0d305140e6e04464091df59432a2cd261796
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62993480"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67821933"
 ---
-# <a name="how-to-add-a-drag-and-drop-handler"></a>HOW TO：新增拖放處理常式
+# <a name="how-to-add-a-drag-and-drop-handler"></a>作法：新增拖放處理常式
 
 讓使用者可以將項目拖曳到圖表從其他圖表或 Visual Studio 的其他部分，您可以拖放事件的處理常式新增至您的 DSL。 您也可以加入按兩下等事件的處理常式。 拖放和按兩下處理常式稱為共同*軌跡處理常式*。
 
@@ -126,13 +126,13 @@ MEF (Managed Extensibility Framework) 可讓您定義使用最小組態安裝的
 
 - <xref:System.Windows.Forms.IDataObject>  `Data` -這個屬性包含來源物件的序列化的版本通常會以一個以上的格式。 其最有用的函式包括：
 
-    - diagrameventargs.data.getdataformats （）-列出您可以在其中解碼的拖曳的物件的格式。 例如，如果使用者從桌面拖曳檔案，可用的格式包括檔案名稱 ("`FileNameW`")。
+  - diagrameventargs.data.getdataformats （）-列出您可以在其中解碼的拖曳的物件的格式。 例如，如果使用者從桌面拖曳檔案，可用的格式包括檔案名稱 ("`FileNameW`")。
 
-    - `diagramEventArgs.Data.GetData(format)` -將解碼的拖曳的物件中指定的格式。 將物件轉換成適當的類型。 例如: 
+  - `diagramEventArgs.Data.GetData(format)` -將解碼的拖曳的物件中指定的格式。 將物件轉換成適當的類型。 例如：
 
-         `string fileName = diagramEventArgs.Data.GetData("FileNameW") as string;`
+    `string fileName = diagramEventArgs.Data.GetData("FileNameW") as string;`
 
-         您也可以從使用您的自訂格式的來源傳輸模型匯流排參考等物件。 如需詳細資訊，請參閱 <<c0> [ 傳送模型匯流排參考中拖曳和置放如何](#to-send-an-object-from-a-source-dsl)。
+    您也可以從使用您的自訂格式的來源傳輸模型匯流排參考等物件。 如需詳細資訊，請參閱 <<c0> [ 傳送模型匯流排參考中拖曳和置放如何](#to-send-an-object-from-a-source-dsl)。
 
 - <xref:Microsoft.VisualStudio.Modeling.ElementGroupPrototype> `Prototype` -如果您想讓使用者從 DSL 或 UML 模型拖曳項目，請使用這個屬性。 項目群組原型包含一個或多個物件、連結及其屬性值。 這個屬性也可用於貼上作業及加入工具箱中的項目時。 在原型中，物件及其類型會由 GUID 識別。 例如，下列程式碼允許使用者從 UML 圖表或 [UML 模型總管] 拖曳類別項目：
 
@@ -162,7 +162,7 @@ MEF (Managed Extensibility Framework) 可讓您定義使用最小組態安裝的
 
 1. 如果尚未安裝 Visual Studio 模型匯流排擴充功能，請下載並進行安裝。 如需詳細資訊，請參閱 < [Visualization and Modeling SDK](http://go.microsoft.com/fwlink/?LinkID=185579)。
 
-2. 在 [DSL 設計工具] 中，開啟來源 DSL 的 DSL 定義檔。 以滑鼠右鍵按一下設計介面，然後按一下**啟用 Modelbus**。 在對話方塊中，選擇其中一個或兩個選項。  按一下 [確定] 。 新專案 "ModelBus" 會隨即加入至 DSL 方案。
+2. 在 [DSL 設計工具] 中，開啟來源 DSL 的 DSL 定義檔。 以滑鼠右鍵按一下設計介面，然後按一下**啟用 Modelbus**。 在對話方塊中，選擇其中一個或兩個選項。  按一下 [確定 **Deploying Office Solutions**]。 新專案 "ModelBus" 會隨即加入至 DSL 方案。
 
 3. 按一下 **轉換所有範本**並重建方案。
 
@@ -574,6 +574,6 @@ namespace Company.CompartmentDrag  // EDIT.
 ## <a name="see-also"></a>另請參閱
 
 - [自訂複製行為](../modeling/customizing-copy-behavior.md)
-- [部署特定領域語言方案](../modeling/deploying-domain-specific-language-solutions.md)
+- [部署特定領域語言方案](msi-and-vsix-deployment-of-a-dsl.md)
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]

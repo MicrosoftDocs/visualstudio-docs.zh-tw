@@ -13,12 +13,12 @@ caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 05300d33ae10cd899a40bf95596ea4eb19dea49d
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 622af2c5f15187f6e04b53b4f0ba433c91f85a07
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65701187"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67826183"
 ---
 # <a name="creating-applications-in-bi-directional-languages"></a>使用雙向語言建立應用程式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -50,11 +50,11 @@ ms.locfileid: "65701187"
   
 - **由右至左的讀取順序**：您在 Visual Studio 中使用的文字輸入控制項，預設會採用由左至右的讀取順序。 在大部分情況下，您可以使用標準 Windows 筆勢來切換讀取順序。 例如，您可以按 Ctrl+右 Shift 切換 [屬性] 視窗，以支援由右至左讀取屬性值的順序。  
   
-     不過，並非 Visual Studio 中的所有位置皆支援由右至左的讀取順序。 例外狀況包括：  
-  
-    - 核取方塊、下拉式清單和 Visual Studio 對話方塊中的其他控制項，一律使用由左到右的讀取順序。  
-  
-    - 程式碼編輯器 (和文字編輯器) 不支援由右至左的讀取順序。 您可以使用雙向語言來輸入文字，但讀取順序一律為由左到右。  
+  不過，並非 Visual Studio 中的所有位置皆支援由右至左的讀取順序。 例外狀況包括：  
+
+  - 核取方塊、下拉式清單和 Visual Studio 對話方塊中的其他控制項，一律使用由左到右的讀取順序。  
+
+  - 程式碼編輯器 (和文字編輯器) 不支援由右至左的讀取順序。 您可以使用雙向語言來輸入文字，但讀取順序一律為由左到右。  
   
 ## <a name="naming-things-using-arabic-or-hebrew-text"></a>使用阿拉伯文或希伯來文文字命名  
  您可以使用阿拉伯文或希伯來文文字，將名稱指派給資料夾、變數或其他物件。 當使用阿拉伯文時，您可以使用任何阿拉伯文字元，包括 Kashida 和讀音符號。  
@@ -68,7 +68,7 @@ ms.locfileid: "65701187"
     > [!NOTE]
     > 程式碼編輯器是特殊案例。 如需詳細資訊，請參閱下方。  
   
-- 資料項目。 伺服器總管會正確顯示下列項目，以供您編輯。  
+- 資料項目。 伺服器總管  會正確顯示下列項目，以供您編輯。  
   
 - 複製到 Windows 剪貼簿的項目。  
   

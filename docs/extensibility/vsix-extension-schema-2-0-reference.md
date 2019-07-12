@@ -11,12 +11,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2c6672fea1f3998f46c171ab7e9164291e12588f
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 17d989f3d417866a0bf5dd31099b2f93c9b6e957
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66322857"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67826277"
 ---
 # <a name="vsix-extension-schema-20-reference"></a>VSIX 延伸結構描述 2.0 參考
 VSIX 部署資訊清單檔描述 VSIX 封裝的內容。 檔案格式是結構描述所決定。 此結構描述的 2.0 版支援的自訂型別和屬性加入。  資訊清單的結構描述是 「 可延伸的。 它並不了解的 XML 元素和屬性，則會忽略資訊清單的載入器。
@@ -45,13 +45,13 @@ VSIX 部署資訊清單檔描述 VSIX 封裝的內容。 檔案格式是結構�
 
 - `<Identity>` -定義此套件的識別資訊，並包含下列屬性：
 
-    - `Id` -此屬性必須是其作者所選封裝的唯一識別碼。 CLR 型別是命名空間的相同方式，應該限定名稱：Company.Product.Feature.Name. `Id`屬性會限制為 100 個字元。
+  - `Id` -此屬性必須是其作者所選封裝的唯一識別碼。 CLR 型別是命名空間的相同方式，應該限定名稱：Company.Product.Feature.Name. `Id`屬性會限制為 100 個字元。
 
-    - `Version` -定義此套件和其內容的版本。 這個屬性會遵循 CLR 組件版本控制格式：Major.Minor.Build.Revision (1.2.40308.00)。 具有較高的版本號碼的套件會被視為更新套件，並可以透過現有的安裝版本安裝。
+  - `Version` -定義此套件和其內容的版本。 這個屬性會遵循 CLR 組件版本控制格式：Major.Minor.Build.Revision (1.2.40308.00)。 具有較高的版本號碼的套件會被視為更新套件，並可以透過現有的安裝版本安裝。
 
-    - `Language` -此屬性為預設的語言套件，並對應到此資訊清單中的文字資料。 這個屬性會遵循 CLR 的地區設定的程式碼慣例資源組件，例如： en-us-我們、 en、 fr-fr。 您可以指定`neutral`宣告會在任何版本的 Visual Studio 執行的非語言相關延伸模組。 預設值為 `neutral`。
+  - `Language` -此屬性為預設的語言套件，並對應到此資訊清單中的文字資料。 這個屬性會遵循 CLR 的地區設定的程式碼慣例資源組件，例如： en-us-我們、 en、 fr-fr。 您可以指定`neutral`宣告會在任何版本的 Visual Studio 執行的非語言相關延伸模組。 預設值為 `neutral`。
 
-    - `Publisher` -此屬性會識別此套件的公司 」 或 「 個別名稱的 「 發行者 」。 `Publisher`屬性會限制為 100 個字元。
+  - `Publisher` -此屬性會識別此套件的公司 」 或 「 個別名稱的 「 發行者 」。 `Publisher`屬性會限制為 100 個字元。
 
 - `<DisplayName>` -此項目會指定擴充管理員 UI 中顯示的使用者易記的封裝名稱。 `DisplayName`內容僅限於 50 個字元。
 
@@ -80,9 +80,9 @@ VSIX 部署資訊清單檔描述 VSIX 封裝的內容。 檔案格式是結構�
 
 - `Scope` -這個屬性可以接受的值"Global"或"ProductExtension 」:
 
-    - 「 全域 」 指定的安裝不限於特定的 SKU。 比方說，在安裝擴充功能 SDK 時，會使用此值。
+  - 「 全域 」 指定的安裝不限於特定的 SKU。 比方說，在安裝擴充功能 SDK 時，會使用此值。
 
-    - 「 ProductExtension"會指定已安裝的是傳統的 VSIX 擴充 （1.0 版） 範圍設定為個別的 Visual Studio Sku。 這是預設值。
+  - 「 ProductExtension"會指定已安裝的是傳統的 VSIX 擴充 （1.0 版） 範圍設定為個別的 Visual Studio Sku。 這是預設值。
 
 - `AllUsers` -此選擇性屬性會指定是否會針對所有使用者安裝此套件。 根據預設，此屬性為 false，表示封裝是每位使用者。 （當您將此值為 true 時，安裝的使用者必須提高為系統管理員權限層級，若要安裝產生的 VSIX。
 
@@ -94,71 +94,71 @@ VSIX 部署資訊清單檔描述 VSIX 封裝的內容。 檔案格式是結構�
 
 - `<InstallationTarget>` -此項目會控制 VSIX 安裝程式會安裝套件的位置。 如果值`Scope`屬性是 「 ProductExtension"封裝必須為目標的 SKU，已安裝的資訊清單檔做為它的內容公告其可用性，可延伸模組的一部分。 `<InstallationTarget>`項目具有下列屬性`Scope`屬性已明確或預設值"ProductExtension 」:
 
-    - `Id` -此屬性會識別封裝。  屬性會遵循命名空間慣例：Company.Product.Feature.Name. `Id`屬性只能包含英數字元，且上限為 100 個字元。 預期的值：
+  - `Id` -此屬性會識別封裝。  屬性會遵循命名空間慣例：Company.Product.Feature.Name. `Id`屬性只能包含英數字元，且上限為 100 個字元。 預期的值：
 
-        - Microsoft.VisualStudio.IntegratedShell
+    - Microsoft.VisualStudio.IntegratedShell
 
-        - Microsoft.VisualStudio.Pro
+    - Microsoft.VisualStudio.Pro
 
-        - Microsoft.VisualStudio.Premium
+    - Microsoft.VisualStudio.Premium
 
-        - Microsoft.VisualStudio.Ultimate
+    - Microsoft.VisualStudio.Ultimate
 
-        - Microsoft.VisualStudio.VWDExpress
+    - Microsoft.VisualStudio.VWDExpress
 
-        - Microsoft.VisualStudio.VPDExpress
+    - Microsoft.VisualStudio.VPDExpress
 
-        - Microsoft.VisualStudio.VSWinExpress
+    - Microsoft.VisualStudio.VSWinExpress
 
-        - Microsoft.VisualStudio.VSLS
+    - Microsoft.VisualStudio.VSLS
 
-        - My.Shell.App
+    - My.Shell.App
 
-    - `Version` -此屬性會指定與此 SKU 的最小和最大支援版本的版本範圍。 封裝中可詳述支援的 Sku 的版本。 版本範圍標記法，為 [10.0-11.0]，
+  - `Version` -此屬性會指定與此 SKU 的最小和最大支援版本的版本範圍。 封裝中可詳述支援的 Sku 的版本。 版本範圍標記法，為 [10.0-11.0]，
 
-        - [-最低版本 （含）。
+    - [-最低版本 （含）。
 
-        - ]-最高版本 （含）。
+    - ]-最高版本 （含）。
 
-        - (-獨佔的最小版本。
+    - (-獨佔的最小版本。
 
-        - )-獨佔的最大版本。
+    - )-獨佔的最大版本。
 
-        - 單一版本 #-指定的版本。
+    - 單一版本 #-指定的版本。
 
-        > [!IMPORTANT]
-        > 2.0 版 VSIX 結構描述的是 Visual Studio 2012 中引進。 若要使用此結構描述您必須將 Visual Studio 2012 或稍後在電腦上安裝和使用是該產品的一部分 VSIXInstaller.exe。 您可以針對舊版的 Visual Studio 與 Visual Studio 2012 或更新版本的 VSIXInstaller，但只能透過使用較新版本的安裝程式。
+    > [!IMPORTANT]
+    > 2\.0 版 VSIX 結構描述的是 Visual Studio 2012 中引進。 若要使用此結構描述您必須將 Visual Studio 2012 或稍後在電腦上安裝和使用是該產品的一部分 VSIXInstaller.exe。 您可以針對舊版的 Visual Studio 與 Visual Studio 2012 或更新版本的 VSIXInstaller，但只能透過使用較新版本的安裝程式。
 
-        Visual Studio 2017 版本號碼，請參閱[Visual Studio 組建編號和發行日期](../install/visual-studio-build-numbers-and-release-dates.md)。
+    Visual Studio 2017 版本號碼，請參閱[Visual Studio 組建編號和發行日期](../install/visual-studio-build-numbers-and-release-dates.md)。
 
-        Visual Studio 2017 的版本更新的版本時，次要的版本應該總是**0**。 Visual Studio 2017 版本 15.3.26730.0 比方說，應該以 [15.0.26730.0,16.0)。 這只是所需的 Visual Studio 2017 和更新版本的版本號碼。
+    Visual Studio 2017 的版本更新的版本時，次要的版本應該總是**0**。 Visual Studio 2017 版本 15.3.26730.0 比方說，應該以 [15.0.26730.0,16.0)。 這只是所需的 Visual Studio 2017 和更新版本的版本號碼。
 
-    - `AnyAttribute*` -`<InstallationTarget>`項目可讓在做為名稱 / 值組字典的執行階段會公開屬性的開放集合。
+  - `AnyAttribute*` -`<InstallationTarget>`項目可讓在做為名稱 / 值組字典的執行階段會公開屬性的開放集合。
 
 ### <a name="dependencies-element"></a>相依性項目
  這個項目包含此套件會宣告的相依性清單。 如果未指定任何相依性，這些套件 (由其`Id`) 必須先安裝。
 
 - `<Dependency>` 項目-這個子項目具有下列屬性：
 
-    - `Id` -此屬性必須是相依的套件的唯一識別碼。 此身分識別值必須符合`<Metadata><Identity>Id`封裝這個封裝所相依的屬性。 `Id`屬性遵循的命名空間慣例：Company.Product.Feature.Name. 屬性只能包含英數字元，而且限制為 100 個字元。
+  - `Id` -此屬性必須是相依的套件的唯一識別碼。 此身分識別值必須符合`<Metadata><Identity>Id`封裝這個封裝所相依的屬性。 `Id`屬性遵循的命名空間慣例：Company.Product.Feature.Name. 屬性只能包含英數字元，而且限制為 100 個字元。
 
-    - `Version` -此屬性會指定與此 SKU 的最小和最大支援版本的版本範圍。 封裝中可詳述支援的 Sku 的版本。 版本範圍標記法是 [12.0，13.0]，其中：
+  - `Version` -此屬性會指定與此 SKU 的最小和最大支援版本的版本範圍。 封裝中可詳述支援的 Sku 的版本。 版本範圍標記法是 [12.0，13.0]，其中：
 
-        - [-最低版本 （含）。
+    - [-最低版本 （含）。
 
-        - ]-最高版本 （含）。
+    - ]-最高版本 （含）。
 
-        - (-獨佔的最小版本。
+    - (-獨佔的最小版本。
 
-        - )-獨佔的最大版本。
+    - )-獨佔的最大版本。
 
-        - 單一版本 #-指定的版本。
+    - 單一版本 #-指定的版本。
 
-    - `DisplayName` -此屬性是套件的相依會在 UI 項目，例如對話方塊和錯誤訊息的顯示名稱。 屬性是選擇性的除非相依的套件會安裝 MSI。
+  - `DisplayName` -此屬性是套件的相依會在 UI 項目，例如對話方塊和錯誤訊息的顯示名稱。 屬性是選擇性的除非相依的套件會安裝 MSI。
 
-    - `Location` -此選擇性屬性會指定此 VSIX，巢狀的 VSIX 套件內的相對路徑或相依性的下載位置的 URL。 這個屬性用來協助使用者找出必要的套件。
+  - `Location` -此選擇性屬性會指定此 VSIX，巢狀的 VSIX 套件內的相對路徑或相依性的下載位置的 URL。 這個屬性用來協助使用者找出必要的套件。
 
-    - `AnyAttribute*` -`Dependency`元素接受的屬性會公開在做為名稱 / 值組字典的執行階段的開放集合。
+  - `AnyAttribute*` -`Dependency`元素接受的屬性會公開在做為名稱 / 值組字典的執行階段的開放集合。
 
 ### <a name="assets-element"></a>資產的項目
  這個元素包含一份`<Asset>`這個封裝所呈現的標記每個擴充功能或內容的項目。
@@ -189,11 +189,11 @@ VSIX 部署資訊清單檔描述 VSIX 封裝的內容。 檔案格式是結構�
 
   - `AnyAttribute*` -屬性開放集合所公開的執行階段做為名稱 / 值組的字典。
 
-     `<AnyElement>*` -任何結構化的內容之間不允許`<Asset>`開頭和結尾標記。 所有項目都會公開為一份 XmlElement 物件。 VSIX 擴充功能可以定義資訊清單檔中的結構化型別特定中繼資料，並列舉它們在執行階段。
+    `<AnyElement>*` -任何結構化的內容之間不允許`<Asset>`開頭和結尾標記。 所有項目都會公開為一份 XmlElement 物件。 VSIX 擴充功能可以定義資訊清單檔中的結構化型別特定中繼資料，並列舉它們在執行階段。
 
 ### <a name="sample-manifest"></a>範例資訊清單
 
-```
+```xml
 <?xml version="1.0" encoding="utf-8"?>
 <PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
   <Metadata>

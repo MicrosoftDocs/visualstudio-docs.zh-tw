@@ -24,12 +24,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 5e1a4eeeaf6cc979fd9ee7c3ea36a900899596a4
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 33481307ea6065b0421cd3ae20e54ca778ee4fd4
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63447161"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67826026"
 ---
 # <a name="combine-vba-and-document-level-customizations"></a>合併 VBA 和文件層級自訂
   您可以在屬於 Microsoft Office Word 或 Microsoft Office Excel 文件層級自訂的文件中使用 Visual Basic for Applications (VBA) 程式碼。 您可以在來自自訂組件的文件中呼叫 VBA 程式碼，或者可以設定專案，讓文件中的 VBA 程式碼可以呼叫自訂組件中的程式碼。
@@ -88,9 +88,9 @@ Globals.Sheet1.Application.Run("MyMacro", missing, missing, missing,
 
 - 文件必須具有下列其中一個副檔名：
 
-    - Word: *.docm*或 *.doc*
+  - Word: *.docm*或 *.doc*
 
-    - 適用於 Excel: *.xlsm*， *.xltm*， *.xls*，或 *.xlt*
+  - 適用於 Excel: *.xlsm*， *.xltm*， *.xls*，或 *.xlt*
 
 - 文件必須已經包含有 VBA 程式碼存在的 VBA 專案。
 
@@ -242,7 +242,7 @@ GetManagedClass(pdispInteropObject Object) As Object
 ## <a name="troubleshoot"></a>疑難排解
  下表列出一些常見的錯誤與錯誤修正建議。
 
-|錯誤|建議|
+|Error|建議|
 |-----------|----------------|
 |設定 **EnableVbaCallers** 或 **ReferenceAssemblyFromVbaProject** 屬性之後，會有錯誤訊息指出文件不包含 VBA 專案，或是您的權限不足，無法存取文件中的 VBA 專案。|請確定專案中的文件包含至少一個 VBA 巨集、VBA 專案擁有足夠的信任可以執行，而且 VBA 專案未受到密碼保護。|
 |設定 **EnableVbaCallers** 或 **ReferenceAssemblyFromVbaProject** 屬性之後，會有錯誤訊息指出 <xref:System.Runtime.InteropServices.GuidAttribute> 宣告遺漏或已損毀。|請確認<xref:System.Runtime.InteropServices.GuidAttribute>宣告位於*AssemblyInfo.cs*或是*AssemblyInfo.vb*檔案在專案中，和此屬性設為有效的 GUID。|

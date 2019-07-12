@@ -8,12 +8,12 @@ ms.assetid: e48ecfb2-f4b5-4d3a-b4a2-7a4d62fa4ec0
 caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 55ba291135b41d534d8f91cae5d6257a26d4e34c
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 2cd3c16437829e9701a2354b4f40c557a654f466
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65686488"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67824103"
 ---
 # <a name="composite-patterns-for-visual-studio"></a>適用於 Visual Studio 的複合模式
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -228,7 +228,7 @@ ms.locfileid: "65686488"
 
 - **一律**嘗試建立摘要說明可用的資訊的指標。 請考慮提供計數的資料可用的項目數目 （例如，"3 項參考 」 而不是只是 「 參考 」），或將其他方法來彙總的資料。
 
-    - 在其中的資料指標無法永遠計算並顯示的情況下，立即考慮提供漸進式的意見反應，因為計算的值。 比方說，請考慮以動畫顯示反映更新的可用資料，與 Windows Phone 上的電子郵件即時磚重新整理為未讀取電子郵件會增加的數字的方式類似的變更。
+  - 在其中的資料指標無法永遠計算並顯示的情況下，立即考慮提供漸進式的意見反應，因為計算的值。 比方說，請考慮以動畫顯示反映更新的可用資料，與 Windows Phone 上的電子郵件即時磚重新整理為未讀取電子郵件會增加的數字的方式類似的變更。
 
 - **永遠不會**新增更多的標記，比使用者可能合理地需要給定片段的內容。 環境的指標應該很有用，而不需要使用者介入。 如果它們需要溢位和其他管理控制項来帶入檢視，指標就會遺失其環境。
 
@@ -237,11 +237,11 @@ ms.locfileid: "65686488"
 
 - **一律**要求使用者必須執行一些明確的動作來開啟額外的內容。 常見的開啟動作包括：
 
-    - **暫留：** 工具提示或非互動式的參考內容
+  - **暫留：** 工具提示或非互動式的參考內容
 
-    - **明確的命令：** 內嵌展示者
+  - **明確的命令：** 內嵌展示者
 
-    - **按兩下環境的指標：** CodeLens 快顯視窗
+  - **按兩下環境的指標：** CodeLens 快顯視窗
 
 - **一律**使用者按下 Esc 鍵關閉詳細資料內容。
 
@@ -395,7 +395,7 @@ ms.locfileid: "65686488"
 #### <a name="BKMK_GraphicalObjectSelectionAppearance"></a> 圖形物件選取項目外觀
  控點是以矩形模式物件的週框方塊周圍繪製的方塊。 下圖顯示範例圖形化的物件可以有控制代碼、 調整大小，以及就地編輯的外觀的各種狀態。 視窗的框線和 edge 計量使用控點大小應該繫結**GetSystemMetrics** API。
 
-|          狀況          |  外觀   |                                                                  視覺效果詳細資料                                                                  |
+|          State          |  外觀   |                                                                  視覺效果詳細資料                                                                  |
 |-------------------------|---------------|--------------------------------------------------------------------------------------------------------------------------------------------------|
 |     **未選取**      |    預設    |                 ![Default button state](../../extensibility/ux-guidelines/media/0713-10-defaultstate.png "0713-10_DefaultState")                 |
 |  **主要選取項目**  |   可調整大小   |       ![使用主要選取項目調整大小控點](../../extensibility/ux-guidelines/media/0713-11-primaryresize.png "0713年 11_PrimaryResize")        |

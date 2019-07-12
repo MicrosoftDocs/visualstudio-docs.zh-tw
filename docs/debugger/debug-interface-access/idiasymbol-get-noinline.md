@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 1d0523618298cb6575a5bdb8b92bdc6a4b8c103c
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63400519"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "64786271"
 ---
 # <a name="idiasymbolgetnoinline"></a>IDiaSymbol::get_noInline
 擷取指定的函式是否已標示為不在內嵌的旗標 (使用[noinline](/cpp/cpp/noinline)屬性)。
@@ -43,7 +43,7 @@ HRESULT get_noInline(
 
 ## <a name="requirements"></a>需求
 
-|需求|描述|
+|需求|說明|
 |-----------------|-----------------|
 |標頭：|dia2.h|
 |版本:|DIA SDK v8.0|

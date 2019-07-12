@@ -15,12 +15,12 @@ caps.latest.revision: 43
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e995d9cfd37c625c03df0b607a9dd5184bec5d08
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: eea71ffe2b449e0ee5aff893efd05e12e4ecae73
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63441469"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67824924"
 ---
 # <a name="extending-javascript-intellisense"></a>擴充 JavaScript IntelliSense
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,7 +44,7 @@ JavaScript IntelliSense 擴充性功能可讓您自訂在協力廠商程式庫�
   
  自動探索機制可讓語言服務會自動尋找延伸模組，請依照檔案命名慣例*libraryname*。 intellisense.js，且位於與程式庫相同的目錄這會套用擴充功能。 例如，jQuery 程式庫是有效的副檔名會是 jQuery.intellisense.js。 更嚴格的 jQuery 的擴充功能，您可以使用檔案的名稱，例如 jQuery 1.7.1.intellisense.js （版本特定擴充功能） 或 jQuery.ui.intellisense.js （已設定領域的 jQuery 程式庫的擴充功能）。 如果指定的程式庫找到一個以上的延伸模組，會使用限制性最高版本的延伸模組。  
   
- 如果您想要使用所有 JavaScript 專案檔的擴充功能，您可能會改為選擇加入參考群組中的延伸模組。 有數種類型的參考群組，可能是其中包含隱含的參考以及包含專用背景工作的參考。 若要新增延伸模組，您通常需要將檔案新增為隱含的參考群組，請**隱含 (Windows)**，**隱含 (Web)**。 隱含的參考是在程式碼編輯器中開啟每一個.js 檔案範圍中。 當您使用這個方法時，您需要新增擴充功能和擴充功能補充檔案。  
+ 如果您想要使用所有 JavaScript 專案檔的擴充功能，您可能會改為選擇加入參考群組中的延伸模組。 有數種類型的參考群組，可能是其中包含隱含的參考以及包含專用背景工作的參考。 若要新增延伸模組，您通常需要將檔案新增為隱含的參考群組，請**隱含 (Windows)** ，**隱含 (Web)** 。 隱含的參考是在程式碼編輯器中開啟每一個.js 檔案範圍中。 當您使用這個方法時，您需要新增擴充功能和擴充功能補充檔案。  
   
  使用**IntelliSense**頁**選項**對話方塊，即可將延伸模組新增為參考群組。 您可以存取**IntelliSense**頁面上，選擇**工具**，**選項**功能表列上，然後選擇**文字編輯器**， **JavaScript**， **IntelliSense**，**參考**。 如需參考群組的詳細資訊，請參閱[JavaScript IntelliSense](../ide/javascript-intellisense.md)並[選項、 文字編輯器、 JavaScript、 IntelliSense](../ide/reference/options-text-editor-javascript-intellisense.md)。  
   
@@ -147,9 +147,9 @@ intellisense.addEventListener('statementcompletion', function (event) {
   
 - `paramComments`. 傳回陣列，表示函式中每個參數的註解。 陣列的成員包括：  
   
-    - `name`. 傳回字串，表示參數名稱。  
-  
-    - `comment`. 傳回字串，包含參數的註解。  
+  - `name`. 傳回字串，表示參數名稱。  
+
+  - `comment`. 傳回字串，包含參數的註解。  
   
 ### <a name="FunctionHelp"></a> functionHelp 屬性  
  傳回的函式的說明。 這個屬性可供`signaturehelp`事件物件。  
@@ -162,47 +162,47 @@ intellisense.addEventListener('statementcompletion', function (event) {
   
 - `signatures`. 讀取/寫入。 取得或設定陣列，這些函式簽章。 陣列中的每個項目是`signature`物件。 有些`signature`屬性，例如`locid`，對應到通用[XML 文件註解](../ide/xml-documentation-comments-javascript.md)屬性。  
   
-     成員`signature`物件包括：  
-  
-    - `description`. 讀取/寫入。 傳回字串，描述函式。  
-  
+  成員`signature`物件包括：  
+
+  - `description`. 讀取/寫入。 傳回字串，描述函式。  
+
+  - `locid`. 讀取/寫入。 傳回字串識別項，其中包含此函式的當地語系化資訊。  
+
+  - `helpKeyword`. 讀取/寫入。 傳回字串，包含的 Help 關鍵字。  
+
+  - `externalFile`. 讀取/寫入。 傳回字串，表示檔案，其中包含為成員識別碼。  
+
+  - `externalid`. 讀取/寫入。 傳回字串，表示函式的成員識別碼。  
+
+  - `params`. 讀取/寫入。 取得或設定函式的參數陣列。 參數陣列中的每個項目是`parameter`的屬性會對應至的下列屬性的物件[ \<param >](../ide/param-javascript.md)項目：  
+
+    - `name`. 讀取/寫入。 傳回字串，表示參數名稱。  
+
+    - `type`. 讀取/寫入。 傳回字串，表示參數類型。  
+
+    - `elementType`. 讀取/寫入。 如果類型是`Array`，傳回字串，表示陣列中元素的型別。  
+
+    - `description`. 讀取/寫入。 傳回描述參數的字串。  
+
     - `locid`. 讀取/寫入。 傳回字串識別項，其中包含此函式的當地語系化資訊。  
-  
+
+    - `optional`. 讀取/寫入。 傳回字串，表示參數是否為選擇性。 `true` 指出參數是選擇性的。`false`指出它不是。  
+
+  - `returnValue`. 讀取/寫入。 取得或設定下列屬性的傳回值具有屬性的物件相對應[\<傳回 >](../ide/returns-javascript.md)項目：  
+
+    - `type`. 讀取/寫入。 傳回字串，表示傳回型別。  
+
+    - `elementType`. 讀取/寫入。 如果類型是`Array`，傳回字串，表示陣列中元素的型別。  
+
+    - `description`. 讀取/寫入。 傳回描述的傳回值的字串。  
+
+    - `locid`. 讀取/寫入。 傳回字串識別項，其中包含此函式的當地語系化資訊。  
+
     - `helpKeyword`. 讀取/寫入。 傳回字串，包含的 Help 關鍵字。  
-  
+
     - `externalFile`. 讀取/寫入。 傳回字串，表示檔案，其中包含為成員識別碼。  
-  
+
     - `externalid`. 讀取/寫入。 傳回字串，表示函式的成員識別碼。  
-  
-    - `params`. 讀取/寫入。 取得或設定函式的參數陣列。 參數陣列中的每個項目是`parameter`的屬性會對應至的下列屬性的物件[ \<param >](../ide/param-javascript.md)項目：  
-  
-        - `name`. 讀取/寫入。 傳回字串，表示參數名稱。  
-  
-        - `type`. 讀取/寫入。 傳回字串，表示參數類型。  
-  
-        - `elementType`. 讀取/寫入。 如果類型是`Array`，傳回字串，表示陣列中元素的型別。  
-  
-        - `description`. 讀取/寫入。 傳回描述參數的字串。  
-  
-        - `locid`. 讀取/寫入。 傳回字串識別項，其中包含此函式的當地語系化資訊。  
-  
-        - `optional`. 讀取/寫入。 傳回字串，表示參數是否為選擇性。 `true` 指出參數是選擇性的。`false`指出它不是。  
-  
-    - `returnValue`. 讀取/寫入。 取得或設定下列屬性的傳回值具有屬性的物件相對應[\<傳回 >](../ide/returns-javascript.md)項目：  
-  
-        - `type`. 讀取/寫入。 傳回字串，表示傳回型別。  
-  
-        - `elementType`. 讀取/寫入。 如果類型是`Array`，傳回字串，表示陣列中元素的型別。  
-  
-        - `description`. 讀取/寫入。 傳回描述的傳回值的字串。  
-  
-        - `locid`. 讀取/寫入。 傳回字串識別項，其中包含此函式的當地語系化資訊。  
-  
-        - `helpKeyword`. 讀取/寫入。 傳回字串，包含的 Help 關鍵字。  
-  
-        - `externalFile`. 讀取/寫入。 傳回字串，表示檔案，其中包含為成員識別碼。  
-  
-        - `externalid`. 讀取/寫入。 傳回字串，表示函式的成員識別碼。  
   
 ### <a name="ParentObject"></a> parentObject 屬性  
  傳回父物件的成員函式。 例如，對於`document.getElementByID`，`parentObject`傳回`document`物件。 這個屬性可供`signaturehelp`事件物件。  

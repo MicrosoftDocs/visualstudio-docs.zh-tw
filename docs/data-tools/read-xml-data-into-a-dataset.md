@@ -20,12 +20,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: fa0472ae7ad7200ead372057f1dd778c077f764e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 573196ebc0a0719cf736f1299eebae4eb6dcdb73
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62566211"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67821921"
 ---
 # <a name="read-xml-data-into-a-dataset"></a>將 XML 資料讀入資料集
 
@@ -39,7 +39,7 @@ ADO.NET 提供簡單的方法來處理 XML 資料。 在此逐步解說中，您
 
 本逐步解說著重於 XML 資料讀入資料集，因為提供的 XML 檔案的內容。
 
-1. 在 [專案] 功能表中，選取 [新增新項目]。
+1. 在 [專案]  功能表中，選取 [新增新項目]  。
 
 2. 選取  **XML 檔案**，將檔案命名**authors.xml**，然後選取**新增**。
 
@@ -119,9 +119,9 @@ ADO.NET 提供簡單的方法來處理 XML 資料。 在此逐步解說中，您
 
 - 兩個<xref:System.Windows.Forms.Button>控制項。
 
-    - 一個按鈕的 XML 檔案讀入資料集，並顯示在<xref:System.Windows.Forms.DataGridView>控制項。
+  - 一個按鈕的 XML 檔案讀入資料集，並顯示在<xref:System.Windows.Forms.DataGridView>控制項。
 
-    - 第二個按鈕會在從資料集，以及透過將結構描述擷取<xref:System.IO.StringWriter>會顯示在<xref:System.Windows.Forms.TextBox>控制項。
+  - 第二個按鈕會在從資料集，以及透過將結構描述擷取<xref:System.IO.StringWriter>會顯示在<xref:System.Windows.Forms.TextBox>控制項。
 
 ### <a name="to-add-controls-to-the-form"></a>若要將控制項加入至表單
 
@@ -140,7 +140,7 @@ ADO.NET 提供簡單的方法來處理 XML 資料。 在此逐步解說中，您
     |控制項|屬性|設定|
     |-------------|--------------|-------------|
     |`TextBox1`|**多行**|`true`|
-    ||[ScrollBars]|**垂直**|
+    ||[ScrollBars] |**垂直**|
     |`Button1`|**名稱**|`ReadXmlButton`|
     ||**Text**|`Read XML`|
     |`Button2`|**名稱**|`ShowSchemaButton`|
@@ -210,7 +210,7 @@ ADO.NET 提供簡單的方法來處理 XML 資料。 在此逐步解說中，您
 
 本逐步解說會說明 XML 檔案讀入資料集，以及建立結構描述的 XML 檔案的內容為基礎的基本概念。 以下是接下來，您可能會執行一些工作：
 
-- 編輯資料集並將它寫回為 XML 中的資料。 如需詳細資訊，請參閱<xref:System.Data.DataSet.WriteXml%2A>。
+- 編輯資料集並將它寫回為 XML 中的資料。 如需詳細資訊，請參閱 <xref:System.Data.DataSet.WriteXml%2A>。
 
 - 編輯資料集中的資料，並寫出至資料庫。
 

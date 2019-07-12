@@ -8,12 +8,12 @@ ms.assetid: 8202717a-e990-45cf-b092-438651ccb38a
 caps.latest.revision: 66
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: 51edddcbac3815c450b2b0db7166fc7d5c593dbd
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 19d651e6b55fd5d18ece318e20aa7db67cf57fee
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65698838"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67824181"
 ---
 # <a name="cross-platform-mobile-development-in-visual-studio"></a>Visual Studio 中的跨平台行動裝置應用程式開發
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,9 +28,9 @@ ms.locfileid: "65698838"
 
 - [建置 Android、iOS 和 Windows 的應用程式 (.NET Framework)](#NET)
 
-    - [以 Android、iOS 和 Windows 為目標的單一程式碼基底](../cross-platform/cross-platform-mobile-development-in-visual-studio.md#AndroidHTML)
+  - [以 Android、iOS 和 Windows 為目標的單一程式碼基底](../cross-platform/cross-platform-mobile-development-in-visual-studio.md#AndroidHTML)
 
-    - [以 Windows 10 裝置為目標](../cross-platform/cross-platform-mobile-development-in-visual-studio.md#WindowsHTML)
+  - [以 Windows 10 裝置為目標](../cross-platform/cross-platform-mobile-development-in-visual-studio.md#WindowsHTML)
 
 - [建置 Android、iOS 和 Windows 的應用程式 (HTML/JavaScript)](#HTML)
 
@@ -54,18 +54,18 @@ ms.locfileid: "65698838"
 |[了解 Visual Studio 的 Android 模擬器](http://www.visualstudio.com/explore/msft-android-emulator-vs) (VisualStudio.com)|
 
 ### <a name="AndroidHTML"></a> 以 Android、iOS 和 Windows 為目標的單一程式碼基底
- 您可以使用 C# 或 F# (目前不支援 Visual Basic)，來建置 Android、iOS 和 Windows 的原生應用程式。  若要開始，請安裝 Visual Studio 2015、選取安裝程式中的 [自訂] 選項，然後選取 [跨平台行動開發] > [C#/.NET (Xamarin)] 下方的方塊。 您也可以開始使用 [Xamarin 安裝程式 (英文)](https://www.xamarin.com/download)，需要此安裝程式，才能安裝適用於 Visual Studio 2013 的 Xamarin。
+ 您可以使用 C# 或 F# (目前不支援 Visual Basic)，來建置 Android、iOS 和 Windows 的原生應用程式。  若要開始，請安裝 Visual Studio 2015、選取安裝程式中的 [自訂]  選項，然後選取 [跨平台行動開發] > [C#/.NET (Xamarin)]  下方的方塊。 您也可以開始使用 [Xamarin 安裝程式 (英文)](https://www.xamarin.com/download)，需要此安裝程式，才能安裝適用於 Visual Studio 2013 的 Xamarin。
 
- 如果您已經安裝 Visual Studio 2015，請從[控制台] > [程式和功能] 中執行安裝程式，然後針對 Xamarin 選取上述的同一個 [自訂] 選項。
+ 如果您已經安裝 Visual Studio 2015，請從[控制台] > [程式和功能]  中執行安裝程式，然後針對 Xamarin 選取上述的同一個 [自訂]  選項。
 
- 當您完成時，專案範本會出現在 [新增專案] 對話方塊中。 尋找 Xamarin 範本的最簡單方式是只需搜尋「Xamarin」。
+ 當您完成時，專案範本會出現在 [新增專案]  對話方塊中。 尋找 Xamarin 範本的最簡單方式是只需搜尋「Xamarin」。
 
  Xamarin 會以 .NET 物件形式公開 Android、iOS 和 Windows 的原生功能。 由於您的應用程式具備原生 API 和原生使用者控制項的完整存取權，而且，它們與以原生平台語言撰寫的應用程式一樣回應靈敏。
 
  建立專案之後，您將可以發揮 Visual Studio 的所有生產力功能。 例如，您將使用設計工具來建立頁面，並使用 IntelliSense 來瀏覽行動裝置平台的原生 API。 當您準備好要執行應用程式並查看其外觀時，可以使用 Visual Studio 的 Android 模擬器或 Android SDK 模擬器，或是在 Windows Phone 模擬器上執行 Windows 應用程式。 您也可以直接使用已連接到開發電腦的 Android 和 Windows 裝置。 針對 iOS 專案，請連線到網路上的 Mac，然後從 Visual Studio 啟動 Mac 模擬器，或者連線到已連接到開發電腦的裝置。
 
 #### <a name="design-one-set-of-pages-that-render-across-all-devices-by-using-xamarinforms"></a>設計一組頁面，使用 Xamarin.Forms 在所有裝置上轉譯
- 根據您應用程式設計的複雜度，您可能會考慮使用專案範本之 [行動應用程式] 群組中的 **Xamarin.Forms** 範本，來建置應用程式。 Xamarin.Forms 是可讓您建立單一使用者介面的 UI 工具組，您可以跨 Android、iOS 和 Windows 共用該介面。  當您編譯 Xamarin.Forms 方案時，將取得 Android 應用程式、iOS 應用程式和 Windows 應用程式。 如需詳細資訊，請參閱[了解如何使用 Xamarin 進行行動裝置應用程式開發](../cross-platform/learn-about-mobile-development-with-xamarin.md)。
+ 根據您應用程式設計的複雜度，您可能會考慮使用專案範本之 [行動應用程式]  群組中的 **Xamarin.Forms** 範本，來建置應用程式。 Xamarin.Forms 是可讓您建立單一使用者介面的 UI 工具組，您可以跨 Android、iOS 和 Windows 共用該介面。  當您編譯 Xamarin.Forms 方案時，將取得 Android 應用程式、iOS 應用程式和 Windows 應用程式。 如需詳細資訊，請參閱[了解如何使用 Xamarin 進行行動裝置應用程式開發](../cross-platform/learn-about-mobile-development-with-xamarin.md)。
 
 #### <a name="ShareHTML"></a> 在 Android、iOS 和 Windows 應用程式之間共用程式碼
  如果您不使用 Xamarin.Forms，並選擇針對每個平台個別設計，您可以在平台專案 (Android、iOS 和 Windows) 之間共用大部分的非 UI 程式碼。 這包括任何商務邏輯、雲端整合、資料庫存取，或以 .NET Framework 為目標的其他任何程式碼。 唯一無法共用的程式碼是以特定平台為目標的程式碼。
@@ -152,7 +152,7 @@ ms.locfileid: "65698838"
 |[其他適用於 C++ 的跨平台行動開發範例](https://code.msdn.microsoft.com/site/search?f%5B0%5D.Type=SearchText&f%5B0%5D.Value=android&f%5B1%5D.Type=ProgrammingLanguage&f%5B1%5D.Value=C%2B%2B&f%5B1%5D.Text=C%2B%2B) (code.msdn)|
 
 ## <a name="Unity"></a> 使用 Visual Studio Tools for Unity 建置 Android、iOS 和 Windows 的跨平台遊戲
- Visual Studio Tools for Unity 是將 Visual Studio 的強大程式碼編輯、生產力和偵錯工具與 Unity 整合的免費 Visual Studio 擴充功能，這個熱門的跨平台遊戲/圖形引擎和開發環境適用於以 Windows、iOS、Android 和其他平台為目標的沈浸式應用程式。
+ Visual Studio Tools for Unity 是將 Visual Studio 的強大程式碼編輯、生產力和偵錯工具與 Unity  整合的免費 Visual Studio 擴充功能，這個熱門的跨平台遊戲/圖形引擎和開發環境適用於以 Windows、iOS、Android 和其他平台為目標的沈浸式應用程式。
 
  ![VSTU 開發環境](../cross-platform/media/vstu-overview.png "VSTU_Overview")
 

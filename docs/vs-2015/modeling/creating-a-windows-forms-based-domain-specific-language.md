@@ -9,12 +9,12 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: b733af14e5b5124928c315ae4a87098513714214
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: b93518a6ca5fa6464bf8f2e72f11cfa90b4dd4dd
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63433341"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825597"
 ---
 # <a name="creating-a-windows-forms-based-domain-specific-language"></a>建立 Windows Form 架構之網域指定的語言
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -62,9 +62,9 @@ DSL 執行個體，顯示 Windows Form 使用者介面和 [模型總管] 中。
 
 - `UI`專案包含表單控制項繫結至 DSL 的工作範例。 不過，它將無法運作時變更 DSL 定義中。 `UI`專案包含：  
 
-    - 名為 Windows Form 類別`ModelViewControl`。  
+  - 名為 Windows Form 類別`ModelViewControl`。  
 
-    - 名為的檔案`DataBinding.cs`，其中包含的其他部分定義`ModelViewControl`。 若要查看其內容，在**方案總管**，開啟檔案的捷徑功能表，然後選擇**檢視程式碼**。  
+  - 名為的檔案`DataBinding.cs`，其中包含的其他部分定義`ModelViewControl`。 若要查看其內容，在**方案總管**，開啟檔案的捷徑功能表，然後選擇**檢視程式碼**。  
 
 ### <a name="about-the-ui-project"></a>關於在 UI 專案  
  當您更新 DSL 定義檔案，以定義您自己的 DSL 時，您必須更新中的控制項`UI`專案以顯示您的 DSL。 不同於`Dsl`並`DslPackage`專案，此範例`UI`專案不從產生`DslDefinitionl.dsl`。 您可以加入產生程式碼，如果您想，雖然這不涵蓋在本逐步解說.tt 檔案。  
@@ -119,13 +119,13 @@ DSL 執行個體，顯示 Windows Form 使用者介面和 [模型總管] 中。
 
 1. 在 **資料**功能表上，選擇**顯示資料來源**。  
 
-     [資料來源] 視窗隨即開啟。  
+     [資料來源]  視窗隨即開啟。  
 
-     選擇**加入新的資料來源**。 [資料來源組態精靈] 隨即開啟。  
+     選擇**加入新的資料來源**。 [資料來源組態精靈]  隨即開啟。  
 
 2. 選擇**物件**，**下一步**。  
 
-     依序展開**Dsl**， **Company.FarmApp**，然後選取**伺服陣列**，這是您的模型的根類別。 選擇 [完成]。  
+     依序展開**Dsl**， **Company.FarmApp**，然後選取**伺服陣列**，這是您的模型的根類別。 選擇 [完成]  。  
 
      在 方案總管**UI**專案現在會包含**Properties\DataSources\Farm.datasource**  
 
@@ -241,7 +241,7 @@ DSL 執行個體，顯示 Windows Form 使用者介面和 [模型總管] 中。
 
 1. 在 FarmControl.cs [設計] 檢視中，選取簡單的欄位，例如名稱、 大小或 IsOrganic。  
 
-2. 在 [屬性] 視窗中，依序展開**DataBindings** ，然後開啟 **（進階）**。  
+2. 在 [屬性] 視窗中，依序展開**DataBindings** ，然後開啟 **（進階）** 。  
 
      在 [**格式化與進階繫結**] 對話方塊底下**資料來源更新模式**，選擇**OnPropertyChanged**。  
 

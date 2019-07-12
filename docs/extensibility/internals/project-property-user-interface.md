@@ -12,12 +12,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 86b3ebb0c931cec5dac40a980ba261c236307fe7
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 9f701c1a2e31a52c05f0a7514c9d403522579e45
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66328257"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825832"
 ---
 # <a name="project-property-user-interface"></a>專案屬性使用者介面
 
@@ -41,11 +41,11 @@ ms.locfileid: "66328257"
 
 - 專案子類型可以決定適當的 Catid 不同的可擴充物件的基底的專案，在執行階段擷取下列<xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID2>值：
 
-    - <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID2.VSHPROPID_ExtObjectCATID>
+  - <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID2.VSHPROPID_ExtObjectCATID>
 
-    - <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID2.VSHPROPID_BrowseObjectCATID>
+  - <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID2.VSHPROPID_BrowseObjectCATID>
 
-    - <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID2.VSHPROPID_CfgBrowseObjectCATID>
+  - <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID2.VSHPROPID_CfgBrowseObjectCATID>
 
 若要判斷專案範圍的 Catid，專案子類型擷取的上述屬性[VSITEMID。根](<xref:Microsoft.VisualStudio.VSConstants.VSITEMID#Microsoft_VisualStudio_VSConstants_VSITEMID_Root>)從`VSITEMID typedef`。 專案子類型也可以控制哪些**屬性頁**對話方塊頁面會顯示專案的組態相依和獨立的設定。 某些專案子類型可能需要移除內建的頁面，並加入專案子類型的特定頁面。 若要啟用此功能，受管理的用戶端專案呼叫<xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.GetProperty%2A>方法的下列屬性：
 

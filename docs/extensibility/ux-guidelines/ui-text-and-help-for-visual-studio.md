@@ -8,12 +8,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7917bdd3b7a94af605b2626016c9a9a725fa2b29
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: cb4066d9728dd633492b05e4cc872dbdd8a91b5c
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66310800"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67823583"
 ---
 # <a name="ui-text-and-help-for-visual-studio"></a>UI 文字與說明適用於 Visual Studio
 ## <a name="BKMK_UITextAndTerminology"></a> UI 文字和術語
@@ -191,11 +191,11 @@ ms.locfileid: "66310800"
 
 - 要建構的錯誤訊息時，問問自己幾個問題：
 
-    - 使用者可以了解如何解決此錯誤單獨的問題嗎？
+  - 使用者可以了解如何解決此錯誤單獨的問題嗎？
 
-    - 使用者不會與此錯誤使用相同的詞彙？
+  - 使用者不會與此錯誤使用相同的詞彙？
 
-    - 此錯誤模稜兩可，或在多個情況下共用？ 如果是的話，如何您引導使用者至所需的方案？
+  - 此錯誤模稜兩可，或在多個情況下共用？ 如果是的話，如何您引導使用者至所需的方案？
 
 #### <a name="build-errors"></a>建置錯誤
  由於 Visual Studio 是一種軟體開發工具，許多元件已編譯中，將轉換，或步驟，將開發人員的工作轉換為二進位格式的編碼方式。 這些轉換可能會導致錯誤，或未正確設定編譯器選項時，編譯器無法處理不正確撰寫的檔案。

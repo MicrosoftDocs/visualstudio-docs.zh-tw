@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: c185e2ece30a29801506347a393e138e49fd138b
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63399969"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "64796603"
 ---
 # <a name="idiasymbolgetiscvtcil"></a>IDiaSymbol::get_isCVTCIL
 擷取旗標，指出是否將模組已從通用中間語言 (CIL) 模組轉換為原生模組。
@@ -46,7 +46,7 @@ HRESULT get_isCVTCIL(
 
 ## <a name="requirements"></a>需求
 
-|需求|描述|
+|需求|說明|
 |-----------------|-----------------|
 |標頭：|dia2.h|
 |版本:|DIA SDK v8.0|

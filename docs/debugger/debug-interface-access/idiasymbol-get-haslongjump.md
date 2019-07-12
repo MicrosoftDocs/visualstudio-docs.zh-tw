@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 70036cd8add5c9c72262f29ba92fa6c7eaf8977d
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63401512"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "64817142"
 ---
 # <a name="idiasymbolgethaslongjump"></a>IDiaSymbol::get_hasLongJump
 擷取指定的函式是否包含使用的旗標[longjmp](/cpp/c-runtime-library/reference/longjmp)命令 (搭配[setjmp](/cpp/c-runtime-library/reference/setjmp)命令時，這些形成例外狀況處理的 C 樣式方法)。
@@ -43,7 +43,7 @@ HRESULT get_hasLongJump
 
 ## <a name="requirements"></a>需求
 
-|需求|描述|
+|需求|說明|
 |-----------------|-----------------|
 |標頭：|dia2.h|
 |版本:|DIA SDK v8.0|

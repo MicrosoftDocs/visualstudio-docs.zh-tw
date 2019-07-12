@@ -12,12 +12,12 @@ caps.latest.revision: 42
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 5bb3632e1ed7bf07e236322700ba8553b53a75cb
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: cb2b23dcc01d90bc4365c7d5673e6232229b8d3e
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63426607"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825995"
 ---
 # <a name="in-source-suppression-overview"></a>原始檔中隱藏項目概觀
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -64,15 +64,15 @@ CA_SUPPRESS_MESSAGE("Rule Category", "Rule Id", Justification = "Justification",
   
 - **範圍**-在其要隱藏警告的目標。 如果未指定目標，則會將它設定為屬性的目標。 支援的範圍包括下列各項：  
   
-    - Module  
-  
-    - 命名空間  
-  
-    - 資源  
-  
-    - 類型  
-  
-    - 成員  
+  - Module  
+
+  - 命名空間  
+
+  - 資源  
+
+  - 類型  
+
+  - 成員  
   
 - **目標**-識別項，用來指定在其要隱藏警告的目標。 它必須包含完整項目名稱。  
   
