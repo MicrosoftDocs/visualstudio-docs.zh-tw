@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 35b882914deacafae46f2470c49efe1d6ace00f6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 995328205e99117f68050833853ada76f06eb4c8
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62566448"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67821893"
 ---
 # <a name="n-tier-data-applications-overview"></a>多層式架構 (N-Tier) 資料應用程式概觀
 *多層式架構*資料應用程式是指分隔成多個資料應用程式*層*。 也稱為 「 分散式應用程式 」 和 「 多層式應用程式，多層式架構應用程式在個別分成離散層級的用戶端與伺服器之間分散處理。 當您開發應用程式以存取資料時，您應該有清楚的區隔，組成應用程式各層之間。
@@ -49,11 +49,11 @@ Visual Studio 包含數個功能，可協助開發人員建立多層式架構應
 
 - 資料存取元件和邏輯，如下所示：
 
-    - [TableAdapters](create-and-configure-tableadapters.md)並[Dataadapter 和 Datareader](/dotnet/framework/data/adonet/dataadapters-and-datareaders)。
+  - [TableAdapters](create-and-configure-tableadapters.md)並[Dataadapter 和 Datareader](/dotnet/framework/data/adonet/dataadapters-and-datareaders)。
 
-    - 物件表示的資料，例如[LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/index)實體類別。
+  - 物件表示的資料，例如[LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/index)實體類別。
 
-    - 一般應用程式服務，例如驗證、 授權和個人化。
+  - 一般應用程式服務，例如驗證、 授權和個人化。
 
 下圖顯示功能和技術，可在 Visual Studio 中，和他們可能適用於什麼情況的多層式架構應用程式的中介層。
 

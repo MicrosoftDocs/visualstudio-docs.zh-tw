@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f9413b9cb4210959d53eba1753a01d950e980536
-ms.sourcegitcommit: cc5fd59e5dc99181601b7db8b28d7f8a83a36bab
+ms.openlocfilehash: bf3d39a8a06a59ed337c0d847bb92875f0f68558
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/11/2019
-ms.locfileid: "66835947"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67824155"
 ---
 # <a name="walkthrough-calling-into-the-sharepoint-client-object-model-in-a-server-explorer-extension"></a>逐步解說：呼叫 SharePoint 用戶端物件模型，在 伺服器總管延伸模組
   本逐步解說示範如何從的擴充功能呼叫 SharePoint 用戶端物件模型**SharePoint 連線**中的節點**伺服器總管**。 如需如何使用 SharePoint 用戶端物件模型的詳細資訊，請參閱[呼叫 SharePoint 物件模型](../sharepoint/calling-into-the-sharepoint-object-models.md)。
@@ -27,9 +27,9 @@ ms.locfileid: "66835947"
 
 - 建立[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]可擴展**SharePoint 連線**節點**伺服器總管**如下：
 
-    - 擴充功能新增**網頁組件庫**節點中的每個 SharePoint 網站 節點底下**伺服器總管**。 這個新的節點包含代表站台上的 Web 組件庫中的每個 Web 組件的子節點。
+  - 擴充功能新增**網頁組件庫**節點中的每個 SharePoint 網站 節點底下**伺服器總管**。 這個新的節點包含代表站台上的 Web 組件庫中的每個 Web 組件的子節點。
 
-    - 延伸模組會定義新類型的節點，表示 Web 組件執行個體。 這個新的節點型別是在新的子節點的基礎**網頁組件庫**節點。 新的 Web 組件節點類型中顯示資訊**屬性**有關節點所表示之 Web 組件的視窗。
+  - 延伸模組會定義新類型的節點，表示 Web 組件執行個體。 這個新的節點型別是在新的子節點的基礎**網頁組件庫**節點。 新的 Web 組件節點類型中顯示資訊**屬性**有關節點所表示之 Web 組件的視窗。
 
 - 建置 Visual Studio 擴充功能 (VSIX) 封裝來部署擴充功能。
 
@@ -131,7 +131,7 @@ ms.locfileid: "66835947"
 
 1. 在 [**專案設計工具**WebPartNodeExtension 專案中，選擇**資源**] 索引標籤。
 
-2. 選擇連結**這個專案不包含預設資源檔。若要建立一個，請按一下這裡。**
+2. 選擇連結**這個專案不包含預設資源檔。** 。
 
      Visual Studio 建立的資源檔，並在設計工具中開啟。
 

@@ -16,12 +16,12 @@ caps.latest.revision: 112
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 3681523595c6e4db50a2a05a7a325decc065cfc5
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: b1e22447581deee70c133dfdb4c42df6630e26ad
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65684394"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67823466"
 ---
 # <a name="using-saved-intellitrace-data"></a>使用儲存的 IntelliTrace 資料
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -59,14 +59,14 @@ ms.locfileid: "65684394"
   
 - 如果 .iTrace 檔案是附加至 Team Foundation Server 工作項目，請在工作項目中依照下列步驟執行：  
   
-    - 在 [所有連結] 下方找出 .iTrace 檔案。 開啟該檔案。  
-  
-         \-或-  
-  
-    - 在 [重新產生步驟] 底下，選擇 [IntelliTrace]  連結。  
+  - 在 [所有連結]  下方找出 .iTrace 檔案。 開啟該檔案。  
+
+        \- or -  
+
+  - 在 [重新產生步驟]  底下，選擇 [IntelliTrace]  連結。  
   
 > [!TIP]
-> 如果您在偵錯期間關閉了 IntelliTrace 檔案，您可以輕易地重新開啟它。 移至 [偵錯]  功能表，選擇 [IntelliTrace] 、[顯示記錄檔摘要] 。 您也可以選取 [IntelliTrace]  視窗中的 [顯示記錄檔摘要]  。 只有在使用 IntelliTrace 偵錯時，才能使用這個選項。  
+> 如果您在偵錯期間關閉了 IntelliTrace 檔案，您可以輕易地重新開啟它。 移至 [偵錯]  功能表，選擇 [IntelliTrace]  、[顯示記錄檔摘要]  。 您也可以選取 [IntelliTrace]  視窗中的 [顯示記錄檔摘要]  。 只有在使用 IntelliTrace 偵錯時，才能使用這個選項。  
   
 ## <a name="Understand"></a> 了解 IntelliTrace 記錄檔  
  .iTrace 檔案中的下列某些區段，只有在您從特定來源 (例如，從 Test Manager 或 SharePoint 應用程式) 收集資料時才會出現。  
@@ -85,7 +85,7 @@ ms.locfileid: "65684394"
   
 - 選擇資料行標頭來排序資料。  
   
-- 使用搜尋方塊來篩選資料。 純文字搜尋適用於所有資料行 (除了時間資料行以外)。 您也可以每個資料行使用一個篩選條件，將要篩選的搜尋範圍限定在某特定資料行。 輸入不含空格的資料行名稱、冒號 (**:**) 和搜尋值。 後面要接著輸入分號 (**;**)，才能加入另一個資料行和搜尋值。  
+- 使用搜尋方塊來篩選資料。 純文字搜尋適用於所有資料行 (除了時間資料行以外)。 您也可以每個資料行使用一個篩選條件，將要篩選的搜尋範圍限定在某特定資料行。 輸入不含空格的資料行名稱、冒號 ( **:** ) 和搜尋值。 後面要接著輸入分號 ( **;** )，才能加入另一個資料行和搜尋值。  
   
      例如，若要在 [Description]  資料行中尋找含有 "slow" 這個字的效能事件，請輸入：  
   
@@ -98,7 +98,7 @@ ms.locfileid: "65684394"
   
 ##### <a name="to-start-debugging-from-a-performance-event"></a>從效能事件開始偵錯  
   
-1. 在 [效能違規] 下，檢閱所記錄的效能事件、它們的總執行時間和其他事件資訊。 然後更深入發掘在特定的效能事件期間所呼叫的方法。  
+1. 在 [效能違規]  下，檢閱所記錄的效能事件、它們的總執行時間和其他事件資訊。 然後更深入發掘在特定的效能事件期間所呼叫的方法。  
   
      ![檢視效能事件詳細資料](../debugger/media/ffr-itsummarypageperformance.png "FFR_ITSummaryPagePerformance")  
   
@@ -129,11 +129,11 @@ ms.locfileid: "65684394"
   
 ##### <a name="to-start-debugging-from-an-exception"></a>從例外狀況開始偵錯  
   
-1. 在 [例外狀況資料] 下，檢閱記錄的例外狀況事件、其類型、訊息，以及發生例外狀況的時間。 若要更深入發掘程式碼，請從例外狀況群組中最近發生的事件開始偵錯。  
+1. 在 [例外狀況資料]  下，檢閱記錄的例外狀況事件、其類型、訊息，以及發生例外狀況的時間。 若要更深入發掘程式碼，請從例外狀況群組中最近發生的事件開始偵錯。  
   
      ![從例外狀況事件開始偵錯](../debugger/media/ffr-itsummarypageexception.png "FFR_ITSummaryPageException")  
   
-     您也可以直接按兩下事件。 如果事件沒有組成群組，請選取 [偵錯這個事件] 。  
+     您也可以直接按兩下事件。 如果事件沒有組成群組，請選取 [偵錯這個事件]  。  
   
      如果例外狀況是發生在您的應用程式程式碼中，Visual Studio 會移至發生例外狀況的位置。  
   
@@ -144,7 +144,7 @@ ms.locfileid: "65684394"
     |**資料行**|**顯示的內容**|  
     |----------------|-------------------|  
     |**類型**|例外狀況的 .NET 類型|  
-    |如果是組成群組的例外狀況，則為 [最新的訊息] ；如果是沒有組成群組的例外狀況，則為 [訊息]  |例外狀況所提供的訊息|  
+    |如果是組成群組的例外狀況，則為 [最新的訊息]  ；如果是沒有組成群組的例外狀況，則為 [訊息] |例外狀況所提供的訊息|  
     |如果是組成群組的例外狀況，則為 [計數] |例外狀況的擲回次數|  
     |如果是沒有組成群組的例外狀況，則為 [執行緒 ID] |擲回例外狀況之執行緒的 ID|  
     | 或 |擲回例外狀況時所記錄的時間戳記|  
@@ -161,7 +161,7 @@ ms.locfileid: "65684394"
   
 1. 從來源複製 SharePoint 相互關聯識別碼。  
   
-    例如:   
+    例如：  
   
     ![IntelliTrace &#45; SharePoint 錯誤&#45;相互關聯識別碼](../debugger/media/sharepointerror-intellitrace.png "SharePointError_IntelliTrace")  
   
@@ -169,7 +169,7 @@ ms.locfileid: "65684394"
   
     ![IntelliTrace 記錄檔&#45;輸入 SharePoint 相互關聯識別碼](../debugger/media/entersharepointcorrelationid.png "EnterSharePointCorrelationID")  
   
-3. 在 [要求事件] 下方，檢查事件。 事件會依其發生順序從最上方開始顯示。  
+3. 在 [要求事件]  下方，檢查事件。 事件會依其發生順序從最上方開始顯示。  
   
    1. 選擇要查看其詳細資料的事件。  
   
@@ -214,11 +214,11 @@ ms.locfileid: "65684394"
   
 ##### <a name="to-start-debugging-from-a-specific-thread"></a>若要從特定執行緒開始偵錯  
   
-1. 在 [執行緒清單] 底下，選擇執行緒。  
+1. 在 [執行緒清單]  底下，選擇執行緒。  
   
-2. 在 [執行緒清單] 下方，選取 [開始偵錯] 。 您也可以按兩下執行緒。  
+2. 在 [執行緒清單]  下方，選取 [開始偵錯]  。 您也可以按兩下執行緒。  
   
-    若要從 App 的開頭處開始偵錯，請按兩下 [主執行緒] 。 請參閱[IntelliTrace 功能](../debugger/intellitrace-features.md)。  
+    若要從 App 的開頭處開始偵錯，請按兩下 [主執行緒]  。 請參閱[IntelliTrace 功能](../debugger/intellitrace-features.md)。  
   
    使用者建立的執行緒資料，可能會比伺服器針對 IIS 裝載的 Web App 所建立及管理的執行緒還要有用。  
   
@@ -234,9 +234,9 @@ ms.locfileid: "65684394"
   
 ##### <a name="to-start-debugging-from-a-specific-test-step"></a>從特定測試步驟開始偵錯  
   
-1. 展開 [測試步驟格線] 。 選取某個測試步驟。  
+1. 展開 [測試步驟格線]  。 選取某個測試步驟。  
   
-2. 在 [測試步驟格線] 下方，選取 [開始偵錯] 。 您也可以按兩下測試步驟。  
+2. 在 [測試步驟格線]  下方，選取 [開始偵錯]  。 您也可以按兩下測試步驟。  
   
      這會從所選取測試步驟之後的第一個有效的 IntelliTrace 事件開始偵錯。  
   

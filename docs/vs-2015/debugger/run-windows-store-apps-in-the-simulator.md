@@ -14,12 +14,12 @@ caps.latest.revision: 45
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 631c6daf808e08b9c7da9147116464a4140b076f
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 77de4fea82e05f539c89a75178d93f985e5a0fb3
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65683540"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67823851"
 ---
 # <a name="run-windows-store-apps-in-the-simulator"></a>在模擬器中執行 Windows 市集應用程式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -55,30 +55,30 @@ Windows 市集應用程式適用的 Visual Studio 模擬器則是桌面應用程
  將互動模式設定為兩指的縮小和放大手勢。  
   
 - ![模擬器兩指目標](../debugger/media/simulator-twofinger.png "SIMULATOR_TwoFinger")  
-  
-    - 雙目標圖示表示裝置螢幕上的兩指位置。  
-  
-    - 移動滑鼠可以將圖示定位至裝置螢幕上的物件。  
-  
-    - 向前或向後轉動滑鼠滾輪，可以變更您縮小或放大前的兩指模擬距離。  
-  
+
+  - 雙目標圖示表示裝置螢幕上的兩指位置。  
+
+  - 移動滑鼠可以將圖示定位至裝置螢幕上的物件。  
+
+  - 向前或向後轉動滑鼠滾輪，可以變更您縮小或放大前的兩指模擬距離。  
+
 - ![縮小、 放大和旋轉目標](../debugger/media/simulator-twofingerengaged.png "SIMULATOR_TwoFingerEngaged")  
-  
-    - 按住左鍵並向後旋轉滾輪 (朝向您的方向) 可以拉近 (縮小)。  
-  
-    - 按住左鍵並向前旋轉滾輪 (遠離您的方向) 可以拉遠 (放大)。  
+
+  - 按住左鍵並向後旋轉滾輪 (朝向您的方向) 可以拉近 (縮小)。  
+
+  - 按住左鍵並向前旋轉滾輪 (遠離您的方向) 可以拉遠 (放大)。  
   
 ## <a name="object-rotation"></a>物件旋轉  
  [觸控模擬旋轉]  按鈕將互動模式設定為運用兩指的旋轉手勢。  
   
 - 移動滑鼠可以將圖示定位至裝置螢幕上的物件。  
   
-    - 向前或向後轉動滑鼠滾輪，可以變更您旋轉物件前的兩指模擬方向。  
-  
+  - 向前或向後轉動滑鼠滾輪，可以變更您旋轉物件前的兩指模擬方向。  
+
 - 按住左鍵並向後旋轉滾輪 (朝向您的方向) 可以逆時針旋轉物件。 在旋轉滑鼠滾輪時，這兩個目標圖示的其中一個會沿著另一個圖示旋轉，指出旋轉的相對大小。  
-  
-    - 按住左鍵並向前旋轉滑鼠滾輪 (遠離您的方向) 可以順時針旋轉物件。  
-  
+
+  - 按住左鍵並向前旋轉滑鼠滾輪 (遠離您的方向) 可以順時針旋轉物件。  
+
 ## <a name="BKMK_Enable_or_disable_Always_on_top_mode"></a> 啟用或停用最上層顯示模式  
  您可以將模擬器視窗設定為永遠在其他視窗的最上層。 [切換最上層的視窗]  按鈕可啟用或停用模擬器視窗的 [最上層顯示]  模式。  
   
@@ -120,7 +120,7 @@ Windows 市集應用程式適用的 Visual Studio 模擬器則是桌面應用程
   
 1. 在模擬器工具列上，選擇 [變更網路屬性]  按鈕。  
   
-2. 在 [設定網路屬性]  對話方塊中，選取 [使用模擬的網路屬性] 。  
+2. 在 [設定網路屬性]  對話方塊中，選取 [使用模擬的網路屬性]  。  
   
     清除核取方塊移除模擬，並返回目前連接介面的網路屬性。  
   

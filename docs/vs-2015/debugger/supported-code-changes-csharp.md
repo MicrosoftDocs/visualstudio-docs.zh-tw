@@ -16,12 +16,12 @@ caps.latest.revision: 30
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: cc1c6183eece2799d99907cd5f5ec9489a268542
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 6fc02c11a4ebceea431fc06a1bd1cfdb1063097d
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60117651"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67823543"
 ---
 # <a name="supported-code-changes-c"></a>支援的程式碼變更 (C#)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ ms.locfileid: "60117651"
   
      使用中陳述式包含了在呼叫堆疊的函式中，為了取得目前陳述式而呼叫的任何陳述式。  
   
-     目前的陳述式在來源視窗中會以黃色背景標示。 其他使用中陳述式會以灰色背景標示，而且是唯讀的。 這些預設色彩可以在 [選項] 對話方塊中進行變更。  
+     目前的陳述式在來源視窗中會以黃色背景標示。 其他使用中陳述式會以灰色背景標示，而且是唯讀的。 這些預設色彩可以在 [選項]  對話方塊中進行變更。  
   
 - 變更類型的簽章。  
   
@@ -57,17 +57,17 @@ ms.locfileid: "60117651"
   
 - 在某些情況下偵錯 LINQ 程式碼。 如需詳細資訊，請參閱[偵錯 LINQ](../debugger/debugging-linq.md)。  
   
-    - 擷取之前尚未擷取的變數。  
-  
-    - 變更查詢運算式的型別 (例如，選取 a = > 選取 新增 {A =};)  
-  
-    - 移除包含使用中陳述式的 `where`。  
-  
-    - 移除包含使用中陳述式的 `let`。  
-  
-    - 移除包含使用中陳述式的 `join`。  
-  
-    - 移除包含使用中陳述式的 `orderby`。  
+  - 擷取之前尚未擷取的變數。  
+
+  - 變更查詢運算式的型別 (例如，選取 a = > 選取 新增 {A =};)  
+
+  - 移除包含使用中陳述式的 `where`。  
+
+  - 移除包含使用中陳述式的 `let`。  
+
+  - 移除包含使用中陳述式的 `join`。  
+
+  - 移除包含使用中陳述式的 `orderby`。  
   
 - 混合模式 (原生/Managed) 偵錯。  
   

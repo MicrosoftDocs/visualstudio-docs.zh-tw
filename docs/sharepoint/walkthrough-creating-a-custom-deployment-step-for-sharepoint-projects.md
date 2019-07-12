@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 7488bb8b54751c7780cb9751309d227e5d5cb758
-ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
+ms.openlocfilehash: 4b209fad02cdcb3da230143a2c13ff4eaa648d76
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/30/2019
-ms.locfileid: "66401086"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825627"
 ---
 # <a name="walkthrough-create-a-custom-deployment-step-for-sharepoint-projects"></a>逐步解說：建立 SharePoint 專案的自訂部署步驟
   當您部署 SharePoint 專案時，Visual Studio 會以特定順序執行一系列的部署步驟。 Visual Studio 包含許多的內建的部署步驟，但您也可以建立您自己。
@@ -29,9 +29,9 @@ ms.locfileid: "66401086"
 
 - 建立 Visual Studio 擴充功能可執行兩項主要工作：
 
-    - 延伸模組會定義以升級 SharePoint 方案的自訂部署步驟。
+  - 延伸模組會定義以升級 SharePoint 方案的自訂部署步驟。
 
-    - 延伸模組建立專案延伸模組，可定義新的部署設定，這是一組會針對指定的專案執行的部署步驟。 新的部署組態包括自訂部署步驟和數個內建的部署步驟。
+  - 延伸模組建立專案延伸模組，可定義新的部署設定，這是一組會針對指定的專案執行的部署步驟。 新的部署組態包括自訂部署步驟和數個內建的部署步驟。
 
 - 建立兩個延伸模組組件呼叫的自訂 SharePoint 命令。 SharePoint 命令是使用伺服器物件模型中的 Api，適用於 SharePoint 的延伸模組組件可以呼叫的方法。 如需詳細資訊，請參閱 <<c0> [ 呼叫 SharePoint 物件模型](../sharepoint/calling-into-the-sharepoint-object-models.md)。
 

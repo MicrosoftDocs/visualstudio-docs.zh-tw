@@ -21,12 +21,12 @@ caps.latest.revision: 16
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 44f25085edcc8b492946d54c7853f8ec32deb0c2
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 0c9dcc0d09887cacca7e6cdaa2e4f2b719c6451c
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60114960"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67826251"
 ---
 # <a name="xsd-task"></a>XSD 工作
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,19 +40,19 @@ ms.locfileid: "60114960"
   
      選擇性的 **String** 參數。  
   
-     選項的清單，如命令列上所指定。 例如 "*/option1 /option2 /option#*"。 使用這個參數來指定任何其他 **XSD** 工作參數未表示的選項。  
+     選項的清單，如命令列上所指定。 例如 " */option1 /option2 /option#* "。 使用這個參數來指定任何其他 **XSD** 工作參數未表示的選項。  
   
 - **GenerateFromSchema**  
   
-     選擇性的 **String** 參數。  
-  
-     指定從指定的結構描述產生的類型。  
-  
-     指定下列其中一個值，每個值會分別對應至一個 XSD 選項。  
-  
-    - **classes** - **/classes**  
-  
-    - **dataset** - **/dataset**  
+  選擇性的 **String** 參數。  
+
+  指定從指定的結構描述產生的類型。  
+
+  指定下列其中一個值，每個值會分別對應至一個 XSD 選項。  
+
+  - **classes** -  **/classes**  
+
+  - **dataset** -  **/dataset**  
   
 - **Language**  
   
@@ -86,5 +86,5 @@ ms.locfileid: "60114960"
   
      指定追蹤器記錄檔的目錄。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [工作參考](../msbuild/msbuild-task-reference.md)

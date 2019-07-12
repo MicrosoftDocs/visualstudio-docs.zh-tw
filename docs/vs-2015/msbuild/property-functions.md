@@ -11,12 +11,12 @@ caps.latest.revision: 35
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 85fb100e09dd61e836404ecf98f8f7292ff2ee86
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 4108e478e9e77a5ed5699b39dfae44884a6befd3
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60065177"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67826181"
 ---
 # <a name="property-functions"></a>屬性函式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,13 +29,13 @@ ms.locfileid: "60065177"
   
 - [屬性函式語法](#BKMK_Syntax)  
   
-    - [字串屬性函式](#BKMK_String)  
-  
-    - [靜態屬性函式](#BKMK_Static)  
-  
-    - [在靜態屬性上呼叫執行個體方法](#BKMK_InstanceMethods)  
-  
-    - [MSBuild 屬性函式](#BKMK_PropertyFunctions)  
+  - [字串屬性函式](#BKMK_String)  
+
+  - [靜態屬性函式](#BKMK_Static)  
+
+  - [在靜態屬性上呼叫執行個體方法](#BKMK_InstanceMethods)  
+
+  - [MSBuild 屬性函式](#BKMK_PropertyFunctions)  
   
 - [巢狀屬性函式](#BKMK_Nested)  
   
@@ -332,6 +332,6 @@ Output:
 -->  
 ```
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 [MSBuild 屬性](msbuild-properties1.md)   
 [MSBuild 概觀](msbuild.md)

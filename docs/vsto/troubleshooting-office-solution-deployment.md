@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: bcd102d8717b455a402bceb98e7ce85a2907e3bb
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: dfebb3ce5293e7594827a17b30261403b0f3ae9a
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65694985"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67821304"
 ---
 # <a name="troubleshoot-office-solution-deployment"></a>針對 Office 方案部署進行疑難排解
   本主題包含如何解決部署 Office 解決方案常見問題的相關資訊。
@@ -71,11 +71,14 @@ ms.locfileid: "65694985"
 
 1. 在功能表列上選擇 **專案**， _ProjectName_**屬性**。
 
-2. 在 [應用程式]  頁面上選擇 [組件資訊] 。
+2. 在 [應用程式]  頁面上選擇 [組件資訊]  。
 
-3. 在第一個**組件版本**方塊中，輸入星號 (\*)，然後選擇**確定** 按鈕。
+3. 一組修訂編號，第三個欄位中，**組件版本**，以萬用字元 (\*)。 比方說，「 1.0。 * 」。  然後選擇**確定** 按鈕。
 
    變更組件版本之後，您可以繼續以強式名稱簽署組件，Fusion 會載入最新的自訂版本。
+
+ [!NOTE]
+> 開始使用 Visual Studio 2017 時，如果您嘗試使用萬用字元，在組件版本建置錯誤就會發生。  這是因為在組件版本中的萬用字元會中斷 MSBuild 具決定性的功能。 您將會指示要從組件版本中，移除萬用字元，或停用決定性。  若要深入了解具決定性的功能，請參閱：[一般 MSBuild 專案屬性](../msbuild/common-msbuild-project-properties.md)和[自訂您的組建](../msbuild/customize-your-build.md)
 
 ## <a name="installation-fails-when-the-uri-has-characters-that-arent-us-ascii"></a>URI 有非 US-ASCII 字元時，安裝失敗
  當您發佈 Office 解決方案到 HTTP/HTTPS/FTP 位置時，路徑不能有不是 US-ASCII 的任何 Unicode 字元。 這種字元會造成安裝程式的不一致行為。 安裝路徑請使用 US-ASCII 字元。

@@ -8,12 +8,12 @@ ms.assetid: e8747d07-6c90-46cc-b425-55b589f7e9e4
 caps.latest.revision: 3
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: c2fa6b0ddf0e7596f5345a3c36290fa931d3bb4a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: ea4f2b49838340fcee41bc9c41ef94558e44825e
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60079004"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67823617"
 ---
 # <a name="ui-text-and-help-for-visual-studio"></a>UI 文字與說明適用於 Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -193,11 +193,11 @@ ms.locfileid: "60079004"
 
 - 要建構的錯誤訊息時，問問自己幾個問題：
 
-    - 使用者可以了解如何解決此錯誤單獨的問題嗎？
+  - 使用者可以了解如何解決此錯誤單獨的問題嗎？
 
-    - 使用者不會與此錯誤使用相同的詞彙？
+  - 使用者不會與此錯誤使用相同的詞彙？
 
-    - 此錯誤模稜兩可，或在多個情況下共用？ 如果是的話，如何您引導使用者至所需的方案？
+  - 此錯誤模稜兩可，或在多個情況下共用？ 如果是的話，如何您引導使用者至所需的方案？
 
 #### <a name="build-errors"></a>建置錯誤
  由於 Visual Studio 是一種軟體開發工具，許多元件已編譯中，將轉換，或步驟，將開發人員的工作轉換為二進位格式的編碼方式。 這些轉換可能會導致錯誤，或未正確設定編譯器選項時，編譯器無法處理不正確撰寫的檔案。

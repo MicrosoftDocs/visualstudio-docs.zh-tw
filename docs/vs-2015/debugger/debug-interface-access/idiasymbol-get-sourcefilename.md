@@ -14,11 +14,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 8130fe90fe2ca8da015f174493b651d5142d2a2e
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63433956"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "64832327"
 ---
 # <a name="idiasymbolgetsourcefilename"></a>IDiaSymbol::get_sourceFileName
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
