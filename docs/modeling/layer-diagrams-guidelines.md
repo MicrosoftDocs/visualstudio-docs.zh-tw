@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f5973643d8f87b4c992209e6512c51bc275de60b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7c470d5d4001238c9a803f0b6598fbedf9d346bc
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62936901"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67824202"
 ---
 # <a name="dependency-diagrams-guidelines"></a>相依性圖表： 指導方針
 
@@ -107,9 +107,9 @@ ms.locfileid: "62936901"
 |刪除不應該存在的相依性|按一下 相依性，，然後按**刪除**。|
 |變更或限制相依性的方向|設定其**方向**屬性。|
 |建立新的相依性|使用**相依性**並**雙向相依性**工具。<br /><br /> 若要繪製多個相依性，請按兩下工具。 當您完成時，請按一下**指標**工具或按**ESC**索引鍵。|
-|指定與圖層關聯的成品不可相依於指定的命名空間|輸入層中的命名空間**Forbidden Namespace Dependencies**屬性。 請使用分號 (**;**) 來分隔命名空間。|
-|指定與圖層關聯的成品不可屬於指定的命名空間|輸入層中的命名空間**Forbidden Namespaces**屬性。 請使用分號 (**;**) 來分隔命名空間。|
-|指定與圖層關聯的成品必須屬於其中一個指定的命名空間|輸入層中的命名空間**Required Namespaces**屬性。 請使用分號 (**;**) 來分隔命名空間。|
+|指定與圖層關聯的成品不可相依於指定的命名空間|輸入層中的命名空間**Forbidden Namespace Dependencies**屬性。 請使用分號 ( **;** ) 來分隔命名空間。|
+|指定與圖層關聯的成品不可屬於指定的命名空間|輸入層中的命名空間**Forbidden Namespaces**屬性。 請使用分號 ( **;** ) 來分隔命名空間。|
+|指定與圖層關聯的成品必須屬於其中一個指定的命名空間|輸入層中的命名空間**Required Namespaces**屬性。 請使用分號 ( **;** ) 來分隔命名空間。|
 
 ### <a name="Improving"></a> 改善程式碼的結構
 
@@ -141,7 +141,7 @@ ms.locfileid: "62936901"
 
 - 變更圖層和相依性的色彩。
 
-    - 選取一或多個圖層或相依性、 按一下滑鼠右鍵，然後按一下 **屬性**。 在 [**屬性**] 視窗中，編輯**色彩**屬性。
+  - 選取一或多個圖層或相依性、 按一下滑鼠右鍵，然後按一下 **屬性**。 在 [**屬性**] 視窗中，編輯**色彩**屬性。
 
 ## <a name="Validate"></a> 針對驗證程式碼圖表
 

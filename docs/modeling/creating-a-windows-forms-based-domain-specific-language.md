@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b82af5d19b45092f649b22503cfbdf1001433c30
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.openlocfilehash: ad4e3c3007a00245f632e4645deb1014b5c22508
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66746798"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67821397"
 ---
 # <a name="create-a-windows-forms-based-domain-specific-language"></a>建立 Windows Form 架構特定領域語言
 
@@ -59,9 +59,9 @@ ms.locfileid: "66746798"
 
 - `UI`專案包含表單控制項繫結至 DSL 的工作範例。 不過，它將無法運作時變更 DSL 定義中。 `UI`專案包含：
 
-    - 名為 Windows Form 類別`ModelViewControl`。
+  - 名為 Windows Form 類別`ModelViewControl`。
 
-    - 名為的檔案`DataBinding.cs`，其中包含的其他部分定義`ModelViewControl`。 若要查看其內容，在**方案總管**，開啟檔案的捷徑功能表，然後選擇**檢視程式碼**。
+  - 名為的檔案`DataBinding.cs`，其中包含的其他部分定義`ModelViewControl`。 若要查看其內容，在**方案總管**，開啟檔案的捷徑功能表，然後選擇**檢視程式碼**。
 
 ### <a name="about-the-ui-project"></a>關於在 UI 專案
 

@@ -9,12 +9,12 @@ caps.latest.revision: 14
 author: conceptdev
 ms.author: crdun
 manager: jillfra
-ms.openlocfilehash: ad20d4678c24458582f80cc819e6f6a651fb2790
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 751faa1d81ca93fce5f8dfa866327cc8787e27ef
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63443026"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825963"
 ---
 # <a name="change-log-visual-studio-tools-for-unity"></a>變更記錄 (Visual Studio Tools for Unity)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -22,89 +22,92 @@ ms.locfileid: "63443026"
 Visual Studio Tools for Unity 變更記錄。
 
 ## <a name="23"></a>2.3
- 發行日期：2016 年 7 月 14 日
+
+發行日期：2016 年 7 月 14 日
 
 ### <a name="new-features"></a>新功能
 
 - **一般：**
 
-    - 已在 Visual Studio 錯誤清單中新增一個選項來停用 Unity 主控台記錄。
+  - 已在 Visual Studio 錯誤清單中新增一個選項來停用 Unity 主控台記錄。
 
-    - 已新增一個選項來修改所產生的專案屬性。
+  - 已新增一個選項來修改所產生的專案屬性。
 
 - **偵錯工具：**
 
-    - 已新增文字、XML、HTML 和 JSON 字串視覺化檢視。
+  - 已新增文字、XML、HTML 和 JSON 字串視覺化檢視。
 
 - **精靈：**
 
-    - 已新增遺漏的 MonoBehaviors。
+  - 已新增遺漏的 MonoBehaviors。
 
 ### <a name="bug-fixes"></a>Bug 修正
 
 - **一般：**
 
-    - 已修正與 ReSharper 的衝突，這使得 Visual Studio 內的控制項不會顯示。
+  - 已修正與 ReSharper 的衝突，這使得 Visual Studio 內的控制項不會顯示。
 
-    - 已修正與 Xamarin 的衝突，這在某些情況下會導致無法進行偵錯。
+  - 已修正與 Xamarin 的衝突，這在某些情況下會導致無法進行偵錯。
 
 - **偵錯工具：**
 
-    - 已修正偵錯時造成 Visual Studio 凍結的問題。
+  - 已修正偵錯時造成 Visual Studio 凍結的問題。
 
-    - 已修正 Visual Studio 2015 中的函式中斷點問題。
+  - 已修正 Visual Studio 2015 中的函式中斷點問題。
 
-    - 已修正數個運算式評估問題。
+  - 已修正數個運算式評估問題。
 
 ## <a name="22"></a>2.2
- 發行日期：2016 年 2 月 4 日
+
+發行日期：2016 年 2 月 4 日
 
 ### <a name="new-features"></a>新功能
 
 - **精靈：**
 
-    - 在 [實作 MonoBehavior 精靈]  中新增了智慧型搜尋。
+  - 在 [實作 MonoBehavior 精靈]  中新增了智慧型搜尋。
 
-    - 使精靈感知內容；例如，只有處理 NetworkBehavior 時才提供 NetworkBehavior 訊息。
+  - 使精靈感知內容；例如，只有處理 NetworkBehavior 時才提供 NetworkBehavior 訊息。
 
-    - 在精靈中新增了對 NetworkBehavior 訊息的支援。
+  - 在精靈中新增了對 NetworkBehavior 訊息的支援。
 
 - **UI：**
 
-    - 已新增設定 MonoBehavior 訊息可見性的選項。
+  - 已新增設定 MonoBehavior 訊息可見性的選項。
 
-    - 已移除與 Unity 專案無關的 Visual Studio 屬性頁。
+  - 已移除與 Unity 專案無關的 Visual Studio 屬性頁。
 
 ### <a name="bug-fixes"></a>Bug 修正
 
 - **專案產生：**
 
-    - 已修正 Unity 4.6 上 UnityEngine 和 UnityEditor 的參考。
+  - 已修正 Unity 4.6 上 UnityEngine 和 UnityEditor 的參考。
 
-    - 已修正 Unity 在 OSX 上執行時的專案檔產生。
+  - 已修正 Unity 在 OSX 上執行時的專案檔產生。
 
-    - 已修正含有 # 字元之專案名稱的處理。
+  - 已修正含有 # 字元之專案名稱的處理。
 
-    - 已將產生的專案限制為 C# 4。
+  - 已將產生的專案限制為 C# 4。
 
 - **偵錯工具：**
 
-    - 已修正在 Unity 共常式內偵錯時的運算式評估問題。
+  - 已修正在 Unity 共常式內偵錯時的運算式評估問題。
 
-    - 已修正偵錯時造成 Visual Studio 凍結的問題。
+  - 已修正偵錯時造成 Visual Studio 凍結的問題。
 
 - **UI：**
 
-    - 已修正與 [Tabs Studio](https://tabsstudio.com/) Visual Studio 擴充功能不相容的問題。
+  - 已修正與 [Tabs Studio](https://tabsstudio.com/) Visual Studio 擴充功能不相容的問題。
 
 - **安裝程式：**
 
-    - 藉由建立 HKLM 登錄項目來支援 VSTU 的全機器安裝 (針對所有使用者安裝)。
+  - 藉由建立 HKLM 登錄項目來支援 VSTU 的全機器安裝 (針對所有使用者安裝)。
 
-    - 已修正針對多個不同版本的 Visual Studio 安裝同一個版本的 VSTU 時，解除安裝 VSTU 的問題。 例如，同時安裝 VSTU **2015** 2.1.0.0 和 VSTU **2013** 2.1.0.0 時。
+  - 已修正針對多個不同版本的 Visual Studio 安裝同一個版本的 VSTU 時，解除安裝 VSTU 的問題。 例如，同時安裝 VSTU **2015** 2.1.0.0 和 VSTU **2013** 2.1.0.0 時。
 
 ## <a name="21"></a>2.1
- 發行日期：2015 年 9 月 8 日
+
+發行日期：2015 年 9 月 8 日
 
 ### <a name="new-features"></a>新功能
 
@@ -125,80 +128,81 @@ Visual Studio Tools for Unity 變更記錄。
 - 已修正在 Visual Studio 2015 的叫用次數中斷點。
 
 ## <a name="20"></a>2.0
- 發行日期：2015 年 7 月 20 日
+
+發行日期：2015 年 7 月 20 日
 
 ### <a name="bug-fixes"></a>Bug 修正
 
 - **Unity 整合：**
 
-    - 已修正匯入 DLL 和其偵錯符號 (PDB) 時以 Visual Studio 2015 建立的偵錯符號轉換。
+  - 已修正匯入 DLL 和其偵錯符號 (PDB) 時以 Visual Studio 2015 建立的偵錯符號轉換。
 
-    - 匯入 DLL 和其偵錯符號 (PDB) 時一律產生 MDB 檔案，但若同時提供 MDB 檔則除外。
+  - 匯入 DLL 和其偵錯符號 (PDB) 時一律產生 MDB 檔案，但若同時提供 MDB 檔則除外。
 
-    - 已修正 Unity 專案目錄受 obj 目錄干擾的問題。
+  - 已修正 Unity 專案目錄受 obj 目錄干擾的問題。
 
-    - 已修正 System.Xml.Link 和 System.Runtime.Serialization 參考產生。
+  - 已修正 System.Xml.Link 和 System.Runtime.Serialization 參考產生。
 
-    - 已加入專案檔案產生應用程式開發介面攔截的多個訂閱者支援。
+  - 已加入專案檔案產生應用程式開發介面攔截的多個訂閱者支援。
 
-    - 一定要完成專案檔案產生，即使其中一個要產生的檔案已被鎖定。
+  - 一定要完成專案檔案產生，即使其中一個要產生的檔案已被鎖定。
 
-    - 已加入在指定要包含在 C# 專案中的檔案時，延伸模組篩選器中的 * 萬用字元支援。
+  - 已加入在指定要包含在 C# 專案中的檔案時，延伸模組篩選器中的 * 萬用字元支援。
 
 - **Visual Studio 整合：**
 
-    - 已修正 Productivity Power Tools 相容性問題。
+  - 已修正 Productivity Power Tools 相容性問題。
 
-    - 已修正產生 MonoBehaviors 事件與委派的宣告。
+  - 已修正產生 MonoBehaviors 事件與委派的宣告。
 
 - **偵錯工具：**
 
-    - 已修正偵錯時的潛在凍結。
+  - 已修正偵錯時的潛在凍結。
 
-    - 已修正 [區域變數] 在某些堆疊框架中可能不會顯示區域變數的問題。
+  - 已修正 [區域變數] 在某些堆疊框架中可能不會顯示區域變數的問題。
 
-    - 已修正空白陣列的檢查。
+  - 已修正空白陣列的檢查。
 
 ## <a name="20-preview-2"></a>2.0 Preview 2
- 發行日期：2015 年 4 月 2 日
+發行日期：2015 年 4 月 2 日
 
 ### <a name="new-features"></a>新功能
 
 - **Unity Project Explorer：**
 
-    - 在 Unity Project Explorer 中重新命名檔案時自動重新命名類別 (請參閱 [選項]  對話方塊)。
+  - 在 Unity Project Explorer 中重新命名檔案時自動重新命名類別 (請參閱 [選項]  對話方塊)。
 
-    - 在 Unity Project Explorer 中自動選取新建立的指令碼。
+  - 在 Unity Project Explorer 中自動選取新建立的指令碼。
 
-    - 在 Unity Project Explore 中追蹤作用中的指令碼 (請參閱 [選項]  對話方塊)。
+  - 在 Unity Project Explore 中追蹤作用中的指令碼 (請參閱 [選項]  對話方塊)。
 
-    - 雙重同步處理 Visual Studio 方案總管 (請參閱 [選項]  對話方塊)。
+  - 雙重同步處理 Visual Studio 方案總管 (請參閱 [選項]  對話方塊)。
 
-    - 在 Unity Project Explorer 中採用 Visual Studio 圖示。
+  - 在 Unity Project Explorer 中採用 Visual Studio 圖示。
 
 - **偵錯工具：**
 
-    - 從已儲存或最近使用的偵錯目標清單中選取作用中的偵錯目標 (請參閱 [選項]  對話方塊)。
+  - 從已儲存或最近使用的偵錯目標清單中選取作用中的偵錯目標 (請參閱 [選項]  對話方塊)。
 
-    - 在 MonoBehavior 方法上建立函式中斷點，並套用至多個 MonoBehavior 類別。
+  - 在 MonoBehavior 方法上建立函式中斷點，並套用至多個 MonoBehavior 類別。
 
-    - 在偵錯工具中支援 [設定物件 ID]。
+  - 在偵錯工具中支援 [設定物件 ID]。
 
-    - 在偵錯工具中援中斷點遇到次數。
+  - 在偵錯工具中援中斷點遇到次數。
 
-    - 在偵錯工具中支援發生例外狀況時中斷 (實驗性質， 請參閱 [選項]  對話方塊)。
+  - 在偵錯工具中支援發生例外狀況時中斷 (實驗性質， 請參閱 [選項]  對話方塊)。
 
-    - 在偵錯工具中評估運算式時，支援建立物件和陣列。
+  - 在偵錯工具中評估運算式時，支援建立物件和陣列。
 
-    - 在偵錯工具中評估運算式時，支援 Null 比較。
+  - 在偵錯工具中評估運算式時，支援 Null 比較。
 
-    - 在偵錯工具監看式視窗中，篩選掉過時的成員。
+  - 在偵錯工具監看式視窗中，篩選掉過時的成員。
 
 - **安裝程式：**
 
-    - 最佳化 Visual Studio Tools for Unity 擴充功能註冊。
+  - 最佳化 Visual Studio Tools for Unity 擴充功能註冊。
 
-    - 安裝 Unity 5 的 Visual Studio Tools for Unity 套件。
+  - 安裝 Unity 5 的 Visual Studio Tools for Unity 套件。
 
 - **文件：** 改善文件產生的效能。
 
@@ -206,39 +210,39 @@ Visual Studio Tools for Unity 變更記錄。
 
 - **Unity：** 在專案檔產生期間，查閱 .rsp 檔中的不安全旗標和自訂定義。
 
-- **UI：** 在 Visual Studio 中新增 Visual Studio Tools for Unity [選項] 對話方塊。
+- **UI：** 在 Visual Studio 中新增 Visual Studio Tools for Unity [選項]  對話方塊。
 
 ### <a name="bug-fixes"></a>Bug 修正
 
 - **Unity Project Explorer：**
 
-    - 從 Visual Studio 方案總管移動或重新命名檔案之後，重新整理 Unity Project Explorer。
+  - 從 Visual Studio 方案總管移動或重新命名檔案之後，重新整理 Unity Project Explorer。
 
-    - 在 Unity Project Explorer 中重新命名檔案時，保留選取項目。
+  - 在 Unity Project Explorer 中重新命名檔案時，保留選取項目。
 
-    - 避免在 Unity Project Explorer 中按兩下檔案時自動展開和摺疊。
+  - 避免在 Unity Project Explorer 中按兩下檔案時自動展開和摺疊。
 
-    - 確保在 Unity Project Explorer 中能看到新選取的檔案。
+  - 確保在 Unity Project Explorer 中能看到新選取的檔案。
 
 - **偵錯工具：**
 
-    - 避免在偵錯工具中評估運算式時 Visual Studio 可能凍結。
+  - 避免在偵錯工具中評估運算式時 Visual Studio 可能凍結。
 
-    - 確保方法引動過程發生在偵錯工具的適當網域上。
+  - 確保方法引動過程發生在偵錯工具的適當網域上。
 
 - **Unity：**
 
-    - 更正 Unity 5 的 UnityVS.OpenFile 位置。
+  - 更正 Unity 5 的 UnityVS.OpenFile 位置。
 
-    - 更正 Unity 5 的 pdb2mdb 位置。
+  - 更正 Unity 5 的 pdb2mdb 位置。
 
-    - 避免專案檔案產生期間可能的例外狀況。
+  - 避免專案檔案產生期間可能的例外狀況。
 
-    - 避免在 OSX 上執行 Unity 時可能凍結。
+  - 避免在 OSX 上執行 Unity 時可能凍結。
 
-    - 處理內部例外狀況。
+  - 處理內部例外狀況。
 
-    - 將 Unity 主控台記錄傳送至 VS 錯誤清單。
+  - 將 Unity 主控台記錄傳送至 VS 錯誤清單。
 
 - **文件：** 更正新 Unity 文件的文件產生。
 
@@ -249,7 +253,7 @@ Visual Studio Tools for Unity 變更記錄。
 - **UI：** 支援操作功能表和圖示的 Visual Studio 佈景主題。
 
 ## <a name="20-preview"></a>2.0 Preview
- 發行日期：2014 年 11 月 12 日
+發行日期：2014 年 11 月 12 日
 
 ### <a name="new-features"></a>新功能
 
@@ -259,15 +263,15 @@ Visual Studio Tools for Unity 變更記錄。
 
 - 偵錯時視覺化值的方式已改進：
 
-    - 改進 ArrayLists、Lists、Hashtables 和 Dictionaries 的視覺效果。
+  - 改進 ArrayLists、Lists、Hashtables 和 Dictionaries 的視覺效果。
 
-    - 將非共用成員和靜態成員顯示為監看式和本機檢視中的分類。
+  - 將非共用成員和靜態成員顯示為監看式和本機檢視中的分類。
 
-    - 改進 Unity SerializedProperty 的顯示，只評估值欄位對該屬性是否有效。
+  - 改進 Unity SerializedProperty 的顯示，只評估值欄位對該屬性是否有效。
 
-    - 類別和結構的 DebuggerDisplayAttribute 支援。
+  - 類別和結構的 DebuggerDisplayAttribute 支援。
 
-    - DebuggerTypeProxyAttribute 支援。
+  - DebuggerTypeProxyAttribute 支援。
 
 - 使用精靈插入 MonoBehaviour 方法遵循使用者程式碼撰寫慣例。
 
@@ -288,7 +292,8 @@ Visual Studio Tools for Unity 變更記錄。
 - 如果沒有必要，請不要註冊記錄回呼。
 
 ## <a name="192"></a>1.9.2
- 發行日期：2014 年 10 月 9 日
+
+發行日期：2014 年 10 月 9 日
 
 ### <a name="new-features"></a>新功能
 
@@ -311,7 +316,8 @@ Visual Studio Tools for Unity 變更記錄。
 - 修正副檔名篩選是空的時，便在專案檔中包含所有資產的 Bug。
 
 ## <a name="191"></a>1.9.1
- 發行日期：2014 年 9 月 22 日
+
+發行日期：2014 年 9 月 22 日
 
 ### <a name="new-features"></a>新功能
 
@@ -356,7 +362,8 @@ Visual Studio Tools for Unity 變更記錄。
 - 修正在 64 位元版本的 Unity 中使用 VSTU 開啟指令碼的作業。
 
 ## <a name="19"></a>1.9
- 發行日期：2014 年 7 月 29 日
+
+發行日期：2014 年 7 月 29 日
 
 ### <a name="new-features"></a>新功能
 
@@ -404,7 +411,8 @@ Visual Studio Tools for Unity 變更記錄。
 > C# 一直是 Unity 生態系統的主流語言 (新範例資產使用 C#、Unity 文件預設為 C#)，我們移除了對 UnityScript 和 Boo 的基本支援，以改進將焦點放在 C# 的體驗。 因此，VSTU 方案現在只使用 C#，載入更快。
 
 ## <a name="182"></a>1.8.2
- 發行日期：2014 年 1 月 7 日
+
+發行日期：2014 年 1 月 7 日
 
 ### <a name="new-features"></a>新功能
 
@@ -431,7 +439,8 @@ Visual Studio Tools for Unity 變更記錄。
 - 避免特定版本產生的組件不同步時所發生的 Unity 損毀。
 
 ## <a name="181"></a>1.8.1
- 發行日期：2013 年 11 月 21 日
+
+發行日期：2013 年 11 月 21 日
 
 ### <a name="new-features"></a>新功能
 
@@ -464,7 +473,8 @@ Visual Studio Tools for Unity 變更記錄。
 - 修正從 Unity 開啟指令碼不會與 Unity 4.2 (含) 以後版本的 ALT+TAB 鍵順序混淆。
 
 ## <a name="180"></a>1.8.0
- 發行日期：2013 年 9 月 24 日
+
+發行日期：2013 年 9 月 24 日
 
 ### <a name="new-features"></a>新功能
 
@@ -505,7 +515,8 @@ Visual Studio Tools for Unity 變更記錄。
 - 修正在本機檢視中變更布林值的作業。
 
 ## <a name="122"></a>1.2.2
- 發行日期：2013 年 7 月 9 日
+
+發行日期：2013 年 7 月 9 日
 
 ### <a name="bug-fixes"></a>Bug 修正
 
@@ -528,7 +539,8 @@ Visual Studio Tools for Unity 變更記錄。
 - 修正 Unity 4.2 Beta 組件的處理。
 
 ## <a name="121"></a>1.2.1
- 發行日期：2013 年 4 月 9 日
+
+發行日期：2013 年 4 月 9 日
 
 ### <a name="bug-fixes"></a>Bug 修正
 
@@ -541,7 +553,8 @@ Visual Studio Tools for Unity 變更記錄。
 - 修正某些外部 DLL 中的中斷點繫結。
 
 ## <a name="12"></a>1.2
- 發行日期：2013 年 3 月 25 日
+
+發行日期：2013 年 3 月 25 日
 
 ### <a name="new-features"></a>新功能
 
@@ -608,10 +621,10 @@ Visual Studio Tools for Unity 變更記錄。
 - 修正 Bug UVS-11：協同程式中的區域變數。
 
 ## <a name="11--beta-release"></a>1.1 - Beta 版
- 發行日期：2014 年 10 月 9 日
+發行日期：2014 年 10 月 9 日
 
 ## <a name="1013"></a>1.0.13
- 發行日期：2013 年 1 月 21 日
+發行日期：2013 年 1 月 21 日
 
 ### <a name="bug-fixes"></a>Bug 修正
 
@@ -634,7 +647,7 @@ Visual Studio Tools for Unity 變更記錄。
 - 修正從 Unity 傳送至 UnityVS 的長訊息處理。 之前，長訊息可能會損毀 UnityVS 的傳訊部分。 因此，UnityVS 有時不會從 Unity 開啟檔案。
 
 ## <a name="1012"></a>1.0.12
- 發行日期：2013 年 1 月 3 日
+發行日期：2013 年 1 月 3 日
 
 ### <a name="bug-fixes"></a>Bug 修正
 
@@ -653,7 +666,7 @@ Visual Studio Tools for Unity 變更記錄。
 - 修正使用者程式碼無法參與記錄回呼處理常式的應用程式開發介面問題。
 
 ## <a name="1011"></a>1.0.11
- 發行日期：2012 年 11 月 28 日
+發行日期：2012 年 11 月 28 日
 
 ### <a name="new-features"></a>新功能
 
@@ -684,7 +697,7 @@ Visual Studio Tools for Unity 變更記錄。
 - 修正無法在 Visual Studio 的狀態列中插入圖示時發生損毀的問題。
 
 ## <a name="1010"></a>1.0.10
- 發行日期：2012 年 10 月 9 日
+發行日期：2012 年 10 月 9 日
 
 ### <a name="bug-fixes"></a>Bug 修正
 
@@ -697,7 +710,8 @@ Visual Studio Tools for Unity 變更記錄。
 - 修正從 Unity 擷取組件的方式，以避免鎖定檔案並造成 Unity 建置流程混淆。
 
 ## <a name="109"></a>1.0.9
- 發行日期：2012 年 10 月 3 日
+
+發行日期：2012 年 10 月 3 日
 
 ### <a name="bug-fixes"></a>Bug 修正
 
@@ -716,7 +730,8 @@ Visual Studio Tools for Unity 變更記錄。
 - 修正 Bug UVS-21：評估 Unity Math API 的方法引動過程時，指標無效。
 
 ## <a name="108"></a>1.0.8
- 發行日期：2012 年 9 月 26 日
+
+發行日期：2012 年 9 月 26 日
 
 ### <a name="bug-fixes"></a>Bug 修正
 
@@ -727,7 +742,8 @@ Visual Studio Tools for Unity 變更記錄。
 - 修正在 Visual Studio 2010 上註冊 UnityVS 的方式。
 
 ## <a name="107"></a>1.0.7
- 發行日期：2012 年 9 月 14 日
+
+發行日期：2012 年 9 月 14 日
 
 ### <a name="new-features"></a>新功能
 
@@ -743,10 +759,11 @@ Visual Studio Tools for Unity 變更記錄。
 > 由於支援 Visual Studio 2012，我們必須重新命名一些檔案及移動其他一些檔案。 匯入 Unity 的 UnityVS 套件現在命名為 UnityVS 2010 或 UnityVS 2012，分別代表 Visual Studio 2010 和 Visual Studio 2012。 這個版本也需要重新產生 UnityVS 專案檔。
 
 ## <a name="106---internal-build"></a>1.0.6 - 內部組建
- 發行日期：2012 年 9 月 12 日
+發行日期：2012 年 9 月 12 日
 
 ## <a name="105"></a>1.0.5
- 發行日期：2012 年 9 月 10 日
+
+發行日期：2012 年 9 月 10 日
 
 ### <a name="bug-fixes"></a>Bug 修正
 
@@ -755,20 +772,22 @@ Visual Studio Tools for Unity 變更記錄。
 - 修正 Unity 連接到 Asset 伺服器時的 Unity 執行個體偵測。 這會觸發失敗，以從 Unity 開啟檔案，並自動連接到 Visual Studio 偵錯工具。
 
 ## <a name="104"></a>1.0.4
- 發行日期：2012 年 9 月 5 日
+
+發行日期：2012 年 9 月 5 日
 
 ### <a name="new-features"></a>新功能
 
 - 自動轉換 Unity 中的偵錯符號。
 
-     如果您的 Asset 資料夾中有 .NET .dll 組件及其關聯的 .pdb，只要重新匯入組件，UnityVS 便會將 .pdb 轉換成 Unity 指令碼引擎了解的偵錯符號檔，並且您能夠從 UnityVS 逐步執行 .NET 組件。
+    如果您的 Asset 資料夾中有 .NET .dll 組件及其關聯的 .pdb，只要重新匯入組件，UnityVS 便會將 .pdb 轉換成 Unity 指令碼引擎了解的偵錯符號檔，並且您能夠從 UnityVS 逐步執行 .NET 組件。
 
 ### <a name="bug-fixes"></a>Bug 修正
 
 - 修正 Unity 內的方法或屬性擲回之例外狀況造成偵錯時所發生的 UnityVS 損毀。
 
 ## <a name="103"></a>1.0.3
- 發行日期：2012 年 9 月 4 日
+
+發行日期：2012 年 9 月 4 日
 
 ### <a name="new-features"></a>新功能
 
@@ -783,7 +802,8 @@ Visual Studio Tools for Unity 變更記錄。
 - 修正我們的自訂狀態列所造成的隨機 VS 損毀。
 
 ## <a name="102"></a>1.0.2
- 發行日期：2012 年 8 月 30 日
+
+發行日期：2012 年 8 月 30 日
 
 ### <a name="bug-fixes"></a>Bug 修正
 
@@ -794,7 +814,8 @@ Visual Studio Tools for Unity 變更記錄。
 - 修正從 Unity (使用 Unity 4 b7) 擷取指令碼組件之方式的 Bug。
 
 ## <a name="101"></a>1.0.1
- 發行日期：2012 年 8 月 28 日
+
+發行日期：2012 年 8 月 28 日
 
 ### <a name="new-features"></a>新功能
 
@@ -811,4 +832,4 @@ Visual Studio Tools for Unity 變更記錄。
 - 修正 UnityScript 和 Boo 的 [Asset] 資料夾內的 DLL 完成。
 
 ## <a name="10--initial-release"></a>1.0 - 初始版本
- 發行日期：2012 年 8 月 22 日
+發行日期：2012 年 8 月 22 日

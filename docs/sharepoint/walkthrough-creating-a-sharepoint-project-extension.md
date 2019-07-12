@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: aa310539b3a36d78137f336b8fea8f40a5d459ca
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 10affe50b3410fa013205313f4087aaabb7c4769
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63430420"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825795"
 ---
 # <a name="walkthrough-create-a-sharepoint-project-extension"></a>逐步解說：建立 SharePoint 專案擴充功能
   此逐步解說將說明如何建立 SharePoint 專案延伸模組。 您可以使用專案擴充功能，例如加入、 刪除或重新命名專案時的專案層級事件回應。 您也可以新增自訂屬性，或當屬性值變更時回應。 不同的專案項目擴充功能，於專案延伸模組不能與特定的 SharePoint 專案類型相關聯。 當您建立的專案延伸模組時，擴充功能載入任何種類的 SharePoint 專案中開啟時[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]。
@@ -30,11 +30,11 @@ ms.locfileid: "63430420"
 
 - 建立[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]會執行下列 SharePoint 專案延伸模組：
 
-    - 將 [屬性] 視窗中的自訂專案屬性。 屬性會套用至任何 SharePoint 專案。
+  - 將 [屬性] 視窗中的自訂專案屬性。 屬性會套用至任何 SharePoint 專案。
 
-    - 若要將對應的資料夾新增至專案中使用 SharePoint 專案物件模型。
+  - 若要將對應的資料夾新增至專案中使用 SharePoint 專案物件模型。
 
-    - 使用[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]automation 物件模型 (DTE) 從專案刪除對應的資料夾。
+  - 使用[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]automation 物件模型 (DTE) 從專案刪除對應的資料夾。
 
 - 建置[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]来部署專案屬性的延伸模組組件的擴充功能 (VSIX) 封裝。
 
@@ -60,7 +60,7 @@ ms.locfileid: "63430420"
 
 1. 啟動 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]。
 
-2. 在功能表列上，選擇 [檔案] > [新增] > [專案]。
+2. 在功能表列上，選擇 [檔案]   > [新增]   > [專案]  。
 
 3. 中**新的專案**對話方塊方塊中，展開**Visual C#** 或**Visual Basic**節點，然後選擇**擴充性**節點。
 
@@ -119,7 +119,7 @@ ms.locfileid: "63430420"
 
 #### <a name="to-build-the-solution"></a>若要建置方案
 
-1. 在功能表列上選擇 [建置] > [建置解決方案]。
+1. 在功能表列上選擇 [建置]   > [建置解決方案]  。
 
 ## <a name="create-a-vsix-package-to-deploy-the-project-property-extension"></a>建立 VSIX 封裝，來部署專案的屬性延伸模組
  若要建立 VSIX 封裝部署專案擴充功能，請在解決方案中使用 VSIX 專案。 首先，設定 VSIX 套件藉由修改 source.extension.vsixmanifest 檔案中包含在 VSIX 專案。 建立方案，然後建立 VSIX 封裝。
@@ -176,7 +176,7 @@ ms.locfileid: "63430420"
 
 3. 在實驗執行個體[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]、 建立伺服器陣列方案的 SharePoint 專案和其他值，在精靈中使用的預設值。
 
-    1. 在功能表列上，選擇 [檔案] > [新增] > [專案]。
+    1. 在功能表列上，選擇 [檔案]   > [新增]   > [專案]  。
 
     2. 在頂端**新的專案**對話方塊方塊中，選擇 **.NET Framework 3.5**清單中的.NET Framework 版本。
 

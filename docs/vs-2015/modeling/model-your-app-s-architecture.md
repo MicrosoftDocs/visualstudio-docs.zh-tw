@@ -11,12 +11,12 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: be66bf02294c12d39bcfd28793bb036696296476
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: c9e5de52fbe15049f4acb3dacf236bfe9f4ecc92
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63417771"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67823269"
 ---
 # <a name="model-your-app39s-architecture"></a>模型化應用程式&#39;s 架構
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -244,9 +244,9 @@ ms.locfileid: "63417771"
   
 - 主要部分及其關聯性的模型。 這些可能是類別或元件和介面，以及它們之間的關聯和相依性。 這些項目通常可分為兩類：  
   
-    - 在使用此模式的程式碼之任何一部分中，開發人員必須複寫的項目。 您可以使用範本類型來描述這些項目。 如需詳細資訊，請參閱[UML 使用案例圖：參考資料](../modeling/uml-use-case-diagrams-reference.md)。  
-  
-    - 描述開發人員應該使用之架構類別的項目。  
+  - 在使用此模式的程式碼之任何一部分中，開發人員必須複寫的項目。 您可以使用範本類型來描述這些項目。 如需詳細資訊，請參閱[UML 使用案例圖：參考資料](../modeling/uml-use-case-diagrams-reference.md)。  
+
+  - 描述開發人員應該使用之架構類別的項目。  
   
 - 組件之間互動的模型 (使用循序圖或活動圖)。  
   

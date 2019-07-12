@@ -10,12 +10,12 @@ ms.assetid: ca2f4e43-322c-4431-8680-52da846940bc
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 6b3208230b438eb52c68ef5709cbb0d6628b60ee
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 95c9f7c530d50a7eb89ebe33fad3862f036972d1
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63430169"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825620"
 ---
 # <a name="web-project-essentials"></a>Web 專案的基本資訊
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -30,11 +30,11 @@ Web 專案建立 Web 應用程式。 您可以使用 Web 專案來建立智慧�
   
 - 其他來源的程式碼檔案，例如與特定的網頁上，使用的協助程式類別位於網站 /App_Code 資料夾中。  
   
-    - 網站專案 (WSP) 會產生一個可執行檔，每個智慧的網頁。 從存放在 /App_Code 資料夾任何原始程式碼檔，會產生額外的可執行檔。  
+  - 網站專案 (WSP) 會產生一個可執行檔，每個智慧的網頁。 從存放在 /App_Code 資料夾任何原始程式碼檔，會產生額外的可執行檔。  
+
+  - Web 應用程式專案 (WAP) 會產生單一的可執行檔的所有智慧網頁，以及在 /App_Code 資料夾中的所有原始程式檔中結合程式碼。  
   
-    - Web 應用程式專案 (WAP) 會產生單一的可執行檔的所有智慧網頁，以及在 /App_Code 資料夾中的所有原始程式檔中結合程式碼。  
-  
-- Web 專案的方案檔位於與網站本身分開。 根據預設，方案檔會位於 \Documents and 設定\\*YourAccount*\My 文件\\*\<Visual Studio # # # >* \Projects\\ *YourWebSite*。  
+- Web 專案的方案檔位於與網站本身分開。 根據預設，方案檔會位於 \Documents and 設定\\*YourAccount*\My 文件\\ *\<Visual Studio # # # >* \Projects\\ *YourWebSite*。  
   
     > [!NOTE]
     > 如果您想要保留與網站的方案檔，只要那里移動，並重新開啟它。  
@@ -55,9 +55,9 @@ Web 專案建立 Web 應用程式。 您可以使用 Web 專案來建立智慧�
   
 - 智慧型的網頁會結合伺服器端程式設計語言中的 HTML。 伺服器端語言稱為自主的語言。 若要支援包含的語言，必須實作的 Web 專案系統<xref:Microsoft.VisualStudio.TextManager.Interop.IVsContainedLanguage>系列的介面。  
   
-    - 自主的語言支援在編輯器中，HTML 語言服務必須延後到自主的語言服務顯示包含的語言代碼。  
-  
-    - 錯誤標記 （紅色曲線） 一定要建立程式碼編輯器的主要緩衝區中。  
+  - 自主的語言支援在編輯器中，HTML 語言服務必須延後到自主的語言服務顯示包含的語言代碼。  
+
+  - 錯誤標記 （紅色曲線） 一定要建立程式碼編輯器的主要緩衝區中。  
   
 ## <a name="see-also"></a>另請參閱  
  [Web 專案](../../extensibility/internals/web-projects.md)

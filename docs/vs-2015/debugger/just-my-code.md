@@ -14,12 +14,12 @@ caps.latest.revision: 14
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 560ab40811bc53c97e7097e510144d62aeddfbb2
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: efcabf9c7dc201f95515cd24bf3a14727f7149fe
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63421818"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67823959"
 ---
 # <a name="just-my-code"></a>Just My Code
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -64,7 +64,7 @@ ms.locfileid: "63421818"
 ### <a name="BKMK_NET_Exception_behavior"></a> 例外狀況行為  
  如果未處理的例外狀況發生在非使用者程式碼，偵錯工具就會在產生例外狀況的該行使用者程式碼中斷。  
   
- 假如第一個可能發生的例外狀況已未此例外狀況所啟用，就會以綠色反白顯示使用者程式碼行。 呼叫堆疊會顯示標示為已標註的框架 **[外部程式碼]**。  
+ 假如第一個可能發生的例外狀況已未此例外狀況所啟用，就會以綠色反白顯示使用者程式碼行。 呼叫堆疊會顯示標示為已標註的框架 **[外部程式碼]** 。  
   
 ## <a name="BKMK_C___Just_My_Code"></a> C++ Just My Code  
   
@@ -123,7 +123,7 @@ ms.locfileid: "63421818"
 |項目|描述|  
 |-------------|-----------------|  
 |功能|必要項。 指定一個或多個函式做為非使用者函式。|  
-|`Name`|必要項。 指定要比對的完整函式名稱之 ECMA-262 格式化規則運算式。 例如: <br /><br /> `<Name>MyNS::MyClass.*</Name>`<br /><br /> 告知偵錯工具在 `MyNS::MyClass` 中的所有方法要視為非使用者程式碼。 該比對會區分大小寫。|  
+|`Name`|必要項。 指定要比對的完整函式名稱之 ECMA-262 格式化規則運算式。 例如：<br /><br /> `<Name>MyNS::MyClass.*</Name>`<br /><br /> 告知偵錯工具在 `MyNS::MyClass` 中的所有方法要視為非使用者程式碼。 該比對會區分大小寫。|  
 |`Module`|選擇性。 指定包含此函式的模組之完整路徑的 ECMA-262 格式化規則運算式。 該比對不區分大小寫。|  
 |`Action`|必要項。 區分大小寫值的其中之一：<br /><br /> -   `NoStepInto`  – 告知偵錯工具不進入符合的函式。<br />-   `StepInto`  – 告知偵錯工具逐步執行比對函式中，覆寫任何其他`NoStepInto`符合的函式。|  
   
@@ -222,9 +222,9 @@ ms.locfileid: "63421818"
   
 - 如果 `debugger` 關鍵字出現在：  
   
-    - **LibraryCode**程式碼，偵錯工具一定中斷。  
-  
-    - **UnrelatedCode**程式碼，偵錯工具並不會停止。  
+  - **LibraryCode**程式碼，偵錯工具一定中斷。  
+
+  - **UnrelatedCode**程式碼，偵錯工具並不會停止。  
   
 ### <a name="BKMK_JS_Exception_behavior"></a> 例外狀況行為  
  假如未處理的例外狀況發生在：  

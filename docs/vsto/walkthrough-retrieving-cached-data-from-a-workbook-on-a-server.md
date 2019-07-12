@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ddf7bd222b61b3eb72a571857336c69deba6499f
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: d0bcf3f299d1d2d10b3b043b772fca832a505278
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63421777"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67826126"
 ---
 # <a name="walkthrough-retrieve-cached-data-from-a-workbook-on-a-server"></a>逐步解說：擷取伺服器上的活頁簿中的快取的資料
   本逐步解說示範如何從 Microsoft Office Excel 活頁簿中而不啟動 Excel 使用快取的資料集擷取資料<xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument>類別。
@@ -54,9 +54,9 @@ ms.locfileid: "63421777"
 
 - 存取權的 Microsoft SQL Server 或 Microsoft SQL Server Express 具有附加的 AdventureWorksLT 範例資料庫執行個體。 您可以下載 AdventureWorksLT 資料庫，從[CodePlex 網站](http://go.microsoft.com/fwlink/?linkid=87843)。 如需附加資料庫的詳細資訊，請參閱下列主題：
 
-    - 若要使用 SQL Server Management Studio 或 SQL Server Management Studio Express 附加資料庫，請參閱[How to:附加資料庫 (SQL Server Management Studio)](/sql/relational-databases/databases/attach-a-database)。
+  - 若要使用 SQL Server Management Studio 或 SQL Server Management Studio Express 附加資料庫，請參閱[How to:附加資料庫 (SQL Server Management Studio)](/sql/relational-databases/databases/attach-a-database)。
 
-    - 若要使用命令列附加資料庫，請參閱[How to:將資料庫檔案附加至 SQL Server Express](/previous-versions/sql/)。
+  - 若要使用命令列附加資料庫，請參閱[How to:將資料庫檔案附加至 SQL Server Express](/previous-versions/sql/)。
 
 ## <a name="create-a-class-library-project-that-defines-a-dataset"></a>建立定義資料集的類別庫專案
  若要使用相同的資料集的 Excel 活頁簿專案和主控台應用程式中，您必須定義資料集由兩個專案參考其他組件中。 此逐步解說中定義的類別庫專案中的資料集。
@@ -65,7 +65,7 @@ ms.locfileid: "63421777"
 
 1. 啟動 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]。
 
-2. 在 [檔案]  功能表中，指向 [新增] ，然後按一下 [專案] 。
+2. 在 [檔案]  功能表中，指向 [新增]  ，然後按一下 [專案]  。
 
 3. 在 [範本] 窗格中，依序展開**Visual C#** 或是**Visual Basic**，然後按一下**Windows**。
 
@@ -77,7 +77,7 @@ ms.locfileid: "63421777"
 
 7. 在 **新的專案**對話方塊方塊中，請確認**為方案建立目錄**核取方塊未選取。
 
-8. 按一下 [確定] 。
+8. 按一下 [確定 **Deploying Office Solutions**]。
 
      [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 新增**AdventureWorksDataSet**專案加入**方案總管** ，並開啟*Class1.cs*或是*Class1.vb*程式碼檔案。
 
@@ -98,13 +98,13 @@ ms.locfileid: "63421777"
 
 4. 按一下 [ **資料庫**]，然後按 [ **下一步**]。
 
-5. 如果您有現有的連線到 AdventureWorksLT 資料庫，請選擇此連線，然後按一下 [**下一步]**。
+5. 如果您有現有的連線到 AdventureWorksLT 資料庫，請選擇此連線，然後按一下 [**下一步]** 。
 
     否則，請按一下 [ **新增連接**]，然後使用 [ **加入連接** ] 對話方塊建立新的連接。 如需詳細資訊，請參閱 <<c0> [ 新增連線](../data-tools/add-new-connections.md)。
 
-6. 在 [將連接字串儲存到應用程式組態檔]  頁面上，按 [下一步] 。
+6. 在 [將連接字串儲存到應用程式組態檔]  頁面上，按 [下一步]  。
 
-7. 在 **選擇您的資料庫物件**頁面上，展開**資料表**，然後選取**Product (SalesLT)**。
+7. 在 **選擇您的資料庫物件**頁面上，展開**資料表**，然後選取**Product (SalesLT)** 。
 
 8. 按一下 [ **完成**]。
 
@@ -127,7 +127,7 @@ ms.locfileid: "63421777"
 
 1. 在**方案總管 中**，以滑鼠右鍵按一下**AdventureWorksDataSet**方案，指向**新增**，然後按一下**新專案**。
 
-2. 在範本窗格中，展開 **[Visual C#]** 或 **[Visual Basic]**，然後展開 **[Office/SharePoint]**。
+2. 在範本窗格中，展開 **[Visual C#]** 或 **[Visual Basic]** ，然後展開 **[Office/SharePoint]** 。
 
 3. 在展開的 [Office/SharePoint]  節點下，選取 [Office 增益集]  節點。
 
@@ -135,7 +135,7 @@ ms.locfileid: "63421777"
 
 5. 在 **名稱**方塊中，輸入**AdventureWorksReport**。 請勿修改的位置。
 
-6. 按一下 [確定] 。
+6. 按一下 [確定]  。
 
      隨即開啟 [Visual Studio Tools for Office 專案精靈]  。
 
@@ -152,9 +152,9 @@ ms.locfileid: "63421777"
 
 2. 在 [ **資料** ] 功能表上，請按一下 [ **加入新資料來源**]。
 
-     [資料來源組態精靈] 隨即開啟。
+     [資料來源組態精靈]  隨即開啟。
 
-3. 按一下 [**物件**，然後按一下**下一步]**。
+3. 按一下 [**物件**，然後按一下**下一步]** 。
 
 4. 在 **選取您要繫結物件**頁面上，按一下**加入參考**。
 
@@ -224,7 +224,7 @@ ms.locfileid: "63421777"
 
 4. 在 **名稱**方塊中，輸入**DataReader**。 請勿修改的位置。
 
-5. 按一下 [確定] 。
+5. 按一下 [確定]  。
 
      [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 新增**DataReader**專案加入**方案總管** ，並開啟*Program.cs*或是*Module1.vb*程式碼檔案。
 
@@ -237,7 +237,7 @@ ms.locfileid: "63421777"
 
 2. 在  **.NET**索引標籤上，選取**microsoft.visualstudio.tools.applications.serverdocument 的參考**。
 
-3. 按一下 [確定] 。
+3. 按一下 [確定 **Deploying Office Solutions**]。
 
 4. 在 [**方案總管] 中**，以滑鼠右鍵按一下**DataReader**專案，然後按一下**加入參考**。
 

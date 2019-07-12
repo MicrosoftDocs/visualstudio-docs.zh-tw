@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d297b883c4d5217a0175c739bf460872d464503f
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.openlocfilehash: fd251ff10700df0ca01599b4247266d4375a4250
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66746664"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67821311"
 ---
 # <a name="intellitrace-for-visual-studio-enterprise-c-visual-basic-c"></a>Visual Studio enterprise 的 IntelliTrace (C#，Visual Basic 中， C++)
 
@@ -74,19 +74,19 @@ IntelliTrace 也可協助您偵錯難以重現或在部署中發生的錯誤。 
 
 - 您的應用程式含有損毀的資料檔，但您不知道此事件在何處發生。
 
-     如果沒有 IntelliTrace，您就必須逐一查看程式碼來尋找所有可能的檔案存取、在這些存取上放置中斷點，然後重新執行應用程式來找出發生問題的位置。 如果有 IntelliTrace，您就可以看到所有收集的檔案存取事件，以及在每個事件發生時應用程式的特定詳細資訊。
+  如果沒有 IntelliTrace，您就必須逐一查看程式碼來尋找所有可能的檔案存取、在這些存取上放置中斷點，然後重新執行應用程式來找出發生問題的位置。 如果有 IntelliTrace，您就可以看到所有收集的檔案存取事件，以及在每個事件發生時應用程式的特定詳細資訊。
 
 - 發生例外狀況。
 
-     如果沒有 IntelliTrace，您會收到有關例外狀況的訊息，但沒有很多關於造成例外狀況之事件的資訊。 雖然您可以檢查呼叫堆疊來查看導致例外狀況的呼叫鏈結，但是卻看不到在這些呼叫期間所發生的事件順序。 如果有 IntelliTrace，您就可以查看在例外狀況之前所發生的事件。
+  如果沒有 IntelliTrace，您會收到有關例外狀況的訊息，但沒有很多關於造成例外狀況之事件的資訊。 雖然您可以檢查呼叫堆疊來查看導致例外狀況的呼叫鏈結，但是卻看不到在這些呼叫期間所發生的事件順序。 如果有 IntelliTrace，您就可以查看在例外狀況之前所發生的事件。
 
 - 在部署的應用程式中發生 Bug 或當機。
 
-     如果是 Microsoft Azure 架構的應用程式，您可以在發行應用程式之前先設定 IntelliTrace 資料收集。 在應用程式執行的同時，IntelliTrace 會將資料儲存到 .iTrace 檔案。 請參閱[偵錯發佈的雲端服務使用 IntelliTrace 和 Visual Studio](../azure/vs-azure-tools-intellitrace-debug-published-cloud-services.md)。
+  如果是 Microsoft Azure 架構的應用程式，您可以在發行應用程式之前先設定 IntelliTrace 資料收集。 在應用程式執行的同時，IntelliTrace 會將資料儲存到 .iTrace 檔案。 請參閱[偵錯發佈的雲端服務使用 IntelliTrace 和 Visual Studio](../azure/vs-azure-tools-intellitrace-debug-published-cloud-services.md)。
 
-     如果是裝載於 IIS 7.0、7.5 和 8.0 上的 ASP.NET Web 應用程式，以及 SharePoint 2010 或 SharePoint 2013 應用程式，請使用 Microsoft Monitoring Agent (獨立執行或搭配 System Center 2012 運作) 來將 IntelliTrace 資料儲存到 .iTrace 檔案。
+  如果是裝載於 IIS 7.0、7.5 和 8.0 上的 ASP.NET Web 應用程式，以及 SharePoint 2010 或 SharePoint 2013 應用程式，請使用 Microsoft Monitoring Agent (獨立執行或搭配 System Center 2012 運作) 來將 IntelliTrace 資料儲存到 .iTrace 檔案。
 
-     如果要診斷部署中的應用程式的問題時，這十分有用。 請參閱[使用 IntelliTrace 獨立收集器](../debugger/using-the-intellitrace-stand-alone-collector.md)。
+  如果要診斷部署中的應用程式的問題時，這十分有用。 請參閱[使用 IntelliTrace 獨立收集器](../debugger/using-the-intellitrace-stand-alone-collector.md)。
 
 ## <a name="WhatData"></a> IntelliTrace 會收集哪些資料？
 
@@ -96,9 +96,9 @@ IntelliTrace 預設只會記錄 IntelliTrace 事件：偵錯工具事件、例�
 
 - **偵錯工具事件**
 
-     IntelliTrace 一律會記錄在 Visual Studio Debugger 中發生的事件。 例如，啟動您的應用程式就是一個偵錯工具事件。 其他偵錯工具事件包括停止事件，也就是導致應用程式中斷執行的事件。 例如，您的程式遇到了中斷點、遇到了追蹤點或執行 [逐步執行]  命令時。
+  IntelliTrace 一律會記錄在 Visual Studio Debugger 中發生的事件。 例如，啟動您的應用程式就是一個偵錯工具事件。 其他偵錯工具事件包括停止事件，也就是導致應用程式中斷執行的事件。 例如，您的程式遇到了中斷點、遇到了追蹤點或執行 [逐步執行]  命令時。
 
-     根據預設，為了協助提高效能，IntelliTrace 不會記錄每個偵錯工具事件的可能值。 相反地，它會記錄下面這些值：
+  根據預設，為了協助提高效能，IntelliTrace 不會記錄每個偵錯工具事件的可能值。 相反地，它會記錄下面這些值：
 
   - [區域變數]  視窗中的值。 讓 [區域變數]  視窗保持開啟來查看這些值。
 
@@ -110,29 +110,29 @@ IntelliTrace 預設只會記錄 IntelliTrace 事件：偵錯工具事件、例�
 
 - **例外狀況**
 
-     IntelliTrace 會記錄下列例外狀況種類的例外狀況類型和訊息：
+  IntelliTrace 會記錄下列例外狀況種類的例外狀況類型和訊息：
 
-    - 已處理的例外狀況 (例外狀況已擲回並已攔截)
+  - 已處理的例外狀況 (例外狀況已擲回並已攔截)
 
-    - 未處理的例外狀況
+  - 未處理的例外狀況
 
 - **.NET Framework 事件**
 
-   根據預設，IntelliTrace 會記錄最常見的 .NET Framework 事件。 例如，對於<xref:System.Windows.Forms.CheckBox.CheckedChanged?displayProperty=nameWithType>事件，IntelliTrace 會收集核取方塊狀態和文字。
+  根據預設，IntelliTrace 會記錄最常見的 .NET Framework 事件。 例如，對於<xref:System.Windows.Forms.CheckBox.CheckedChanged?displayProperty=nameWithType>事件，IntelliTrace 會收集核取方塊狀態和文字。
 
 - **SharePoint 2010 和 SharePoint 2013 應用程式事件**
 
-     您可以記錄在 Visual Studio 外部執行之 SharePoint 2010 和 2013 應用程式的使用者設定檔事件以及統一登入系統 (ULS) 事件的子集。 您可以將這些事件儲存成 .iTrace 檔案。 需要 Visual Studio Enterprise 2015 或更新版本中，舊版的 Visual Studio Ultimate 或[Microsoft Monitoring Agent](http://go.microsoft.com/fwlink/?LinkId=320384)中執行**追蹤**模式。
+  您可以記錄在 Visual Studio 外部執行之 SharePoint 2010 和 2013 應用程式的使用者設定檔事件以及統一登入系統 (ULS) 事件的子集。 您可以將這些事件儲存成 .iTrace 檔案。 需要 Visual Studio Enterprise 2015 或更新版本中，舊版的 Visual Studio Ultimate 或[Microsoft Monitoring Agent](http://go.microsoft.com/fwlink/?LinkId=320384)中執行**追蹤**模式。
 
-     當您開啟 .iTrace 檔案時，請輸入 SharePoint 相互關聯識別碼以尋找其相符的 Web 要求、檢視記錄的事件，並從特定事件開始偵錯。 如果檔案包含未處理的例外狀況，您可以選擇某個相互關聯識別碼，開始偵錯例外狀況。
+  當您開啟 .iTrace 檔案時，請輸入 SharePoint 相互關聯識別碼以尋找其相符的 Web 要求、檢視記錄的事件，並從特定事件開始偵錯。 如果檔案包含未處理的例外狀況，您可以選擇某個相互關聯識別碼，開始偵錯例外狀況。
 
-     請參閱：
+  請參閱：
 
-    - [使用 IntelliTrace 獨立收集器](../debugger/using-the-intellitrace-stand-alone-collector.md)
+  - [使用 IntelliTrace 獨立收集器](../debugger/using-the-intellitrace-stand-alone-collector.md)
 
-    - [使用儲存的 IntelliTrace 資料](../debugger/using-saved-intellitrace-data.md)
+  - [使用儲存的 IntelliTrace 資料](../debugger/using-saved-intellitrace-data.md)
 
-    - [逐步解說：使用 IntelliTrace 偵錯 SharePoint 應用程式](../sharepoint/walkthrough-debugging-a-sharepoint-application-by-using-intellitrace.md)
+  - [逐步解說：使用 IntelliTrace 偵錯 SharePoint 應用程式](../sharepoint/walkthrough-debugging-a-sharepoint-application-by-using-intellitrace.md)
 
 **擷取快照集**
 

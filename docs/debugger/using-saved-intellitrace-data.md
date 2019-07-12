@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: de8e6cfa6ec99f42879043b873736102fd291176
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.openlocfilehash: b9217031866a53e229cb03838b1be835019b62ba
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66746144"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825606"
 ---
 # <a name="using-saved-intellitrace-data-c-visual-basic-c"></a>使用儲存的 IntelliTrace 資料 (C#，Visual Basic 中， C++)
 
@@ -56,11 +56,11 @@ ms.locfileid: "66746144"
 
 - 如果 .iTrace 檔案是附加至 Team Foundation Server 工作項目，請在工作項目中依照下列步驟執行：
 
-    - 在 [所有連結]  下方找出 .iTrace 檔案。 開啟該檔案。
+  - 在 [所有連結]  下方找出 .iTrace 檔案。 開啟該檔案。
 
-         \-或-
+    \-或-
 
-    - 在 [重新產生步驟]  底下，選擇 [IntelliTrace]  連結。
+  - 在 [重新產生步驟]  底下，選擇 [IntelliTrace]  連結。
 
 > [!TIP]
 > 如果您在偵錯期間關閉了 IntelliTrace 檔案，您可以輕易地重新開啟它。 移至 [偵錯]  功能表，選擇 [IntelliTrace]  、[顯示記錄檔摘要]  。 您也可以選取 [IntelliTrace]  視窗中的 [顯示記錄檔摘要]  。 只有在使用 IntelliTrace 偵錯時，才能使用這個選項。
@@ -158,7 +158,7 @@ ms.locfileid: "66746144"
 
 1. 從來源複製 SharePoint 相互關聯識別碼。
 
-    例如:
+    例如：
 
     ![IntelliTrace &#45; SharePoint 錯誤&#45;相互關聯識別碼](../debugger/media/sharepointerror_intellitrace.png "SharePointError_IntelliTrace")
 

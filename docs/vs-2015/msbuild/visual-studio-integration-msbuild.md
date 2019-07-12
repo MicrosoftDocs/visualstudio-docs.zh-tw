@@ -19,12 +19,12 @@ caps.latest.revision: 26
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 6a1dbe6d96dd9e35b1bfac4a84fb1006c2b99c69
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: c90019aa24047524005ba70aa4f1aec75f89c71d
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65683841"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825428"
 ---
 # <a name="visual-studio-integration-msbuild"></a>Visual Studio 整合 (MSBuild)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,7 +41,7 @@ Visual Studio 會裝載 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)]
  例如，[!INCLUDE[csprcs](../includes/csprcs-md.md)] 專案系統可以載入 .csproj 檔案，但是 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 卻無法載入 .xxproj 檔案。 對於任意語言的原始程式檔來說，其專案檔都必須使用與 [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] 或 [!INCLUDE[csprcs](../includes/csprcs-md.md)] 專案檔相同的副檔名，才能夠載入至 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 中。  
   
 ## <a name="well-known-target-names"></a>已知的目標名稱  
- 按一下 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 中的 [建置] 命令，將會執行專案中的預設目標。 通常這個目標也是命名為 `Build`。 如果選擇 [ **重建** ] 或 [ **清除** ] 命令，將會嘗試執行專案中相同名稱的目標。 如果按一下 [ **發行** ]，則會執行專案中命名為 `PublishOnly` 的目標。  
+ 按一下 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 中的 [建置]  命令，將會執行專案中的預設目標。 通常這個目標也是命名為 `Build`。 如果選擇 [ **重建** ] 或 [ **清除** ] 命令，將會嘗試執行專案中相同名稱的目標。 如果按一下 [ **發行** ]，則會執行專案中命名為 `PublishOnly` 的目標。  
   
 ## <a name="configurations-and-platforms"></a>組態和平台  
  組態會以根據 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 項目 (包含 `PropertyGroup` 屬性 (Attribute)) 分組之屬性 (Property) 的 `Condition` 專案表示。 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 會查看這些條件以建立要顯示的專案組態與平台清單。 若要成功地擷取這份清單，條件必須具有類似下列的格式：  
@@ -55,7 +55,7 @@ Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' 
  [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 會查看 `PropertyGroup`、`ItemGroup`、`Import`、屬性和項目的條件，以便建立這份清單。  
   
 ## <a name="additional-build-actions"></a>其他建置動作  
- [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 可讓您使用[檔案屬性](https://msdn.microsoft.com/013c4aed-08d6-4dce-a124-ca807ca08959)視窗的 [建置動作] 屬性，來變更專案中檔案的項目類型名稱。 `Compile`、 `EmbeddedResource`、 `Content`和 `None` 等項目類型名稱會一直列在這個功能表中，另外還會列出專案中既有的其他項目類型名稱。 若要確保自訂的項目類型名稱都會一直列在這個功能表中，您可以將其名稱加入至名為 `AvailableItemName`的項目類型中。 例如，如果在專案檔中加入下列程式碼，就會將自訂類型 `JScript` 加入至所有會匯入此類型之專案的這個功能表中：  
+ [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 可讓您使用[檔案屬性](https://msdn.microsoft.com/013c4aed-08d6-4dce-a124-ca807ca08959)視窗的 [建置動作]  屬性，來變更專案中檔案的項目類型名稱。 `Compile`、 `EmbeddedResource`、 `Content`和 `None` 等項目類型名稱會一直列在這個功能表中，另外還會列出專案中既有的其他項目類型名稱。 若要確保自訂的項目類型名稱都會一直列在這個功能表中，您可以將其名稱加入至名為 `AvailableItemName`的項目類型中。 例如，如果在專案檔中加入下列程式碼，就會將自訂類型 `JScript` 加入至所有會匯入此類型之專案的這個功能表中：  
   
 ```  
 <ItemGroup>  
@@ -67,7 +67,7 @@ Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' 
 > 有些項目類型名稱是 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 中特有的，但是沒有列在這個下拉式清單中。  
   
 ## <a name="in-process-compilers"></a>同處理序編譯器  
- 如果可能，[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 會嘗試使用同處理序 (In-Process) 版本的 [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] 編譯器來提升效能  (不適用 [!INCLUDE[csprcs](../includes/csprcs-md.md)])。若要讓這種編譯器能夠正常運作，必須符合下列條件：  
+ 如果可能，[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 會嘗試使用同處理序 (In-Process) 版本的 [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] 編譯器來提升效能 (不適用 [!INCLUDE[csprcs](../includes/csprcs-md.md)])。若要讓這種編譯器能夠正常運作，必須符合下列條件：  
   
 - 專案的目標中必須有一個名為 `Vbc` 的工作供 [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] 專案使用。  
   
@@ -134,9 +134,9 @@ Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' 
   
 1. 在 [ **方案總管**] 中，開啟專案的捷徑功能表，然後選擇 [ **卸載專案**]。  
   
-     專案便會標記為 [ **(無法使用)**]。  
+     專案便會標記為 [ **(無法使用)** ]。  
   
-2. 在方案總管中，開啟無法使用之專案的捷徑功能表，然後選擇 [編輯 \<專案檔>]。  
+2. 在方案總管  中，開啟無法使用之專案的捷徑功能表，然後選擇 [編輯 \<專案檔>]  。  
   
      專案檔隨即在 [Visual Studio XML 編輯器] 中開啟。  
   
@@ -156,17 +156,17 @@ Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' 
  在 Microsoft.Common.targets 中定義的數個目標名稱結尾為 `OutputGroups` 或 `OutputGroupDependencies`。 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 會呼叫這些目標以取得專案輸出的特定清單。 例如，`SatelliteDllsProjectOutputGroup` 目標會建立一份清單，列出組建將要建立的所有附屬組件。 使用這些輸出群組的功能包括發行、部署以及專案對專案間的參考。 沒有定義輸出群組的專案仍然可以在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 載入和建置，但是有些功能可能無法正常運作。  
   
 ## <a name="reference-resolution"></a>參考解析  
- 參考解析是使用儲存於專案檔中參考項目以找到實際組件的程序。 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 必須觸發參考解析，才能夠在 [屬性] 視窗中顯示每一個參考的屬性。 下列清單會說明三種參考類型及其解析方式。  
+ 參考解析是使用儲存於專案檔中參考項目以找到實際組件的程序。 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 必須觸發參考解析，才能夠在 [屬性]  視窗中顯示每一個參考的屬性。 下列清單會說明三種參考類型及其解析方式。  
   
 - 組件參考：  
   
-     專案系統使用已知名稱 `ResolveAssemblyReferences`呼叫目標。 這個目標應該以項目類型名稱 `ReferencePath`來產生項目。 每一個產生的項目都會包含完整參考路徑的項目規格 (即項目的 `Include` 屬性值)。 除了下列這些新的中繼資料以外，項目應該傳遞輸入項目中的所有中繼資料：  
-  
-    - `CopyLocal`，指出是否要將組件複製到輸出資料夾中，可設定為 true 或 false。  
-  
-    - `OriginalItemSpec`，包含參考的原始項目規格。  
-  
-    - `ResolvedFrom`，如果是從 [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] 目錄解析，則設定為 "{TargetFrameworkDirectory}"。  
+  專案系統使用已知名稱 `ResolveAssemblyReferences`呼叫目標。 這個目標應該以項目類型名稱 `ReferencePath`來產生項目。 每一個產生的項目都會包含完整參考路徑的項目規格 (即項目的 `Include` 屬性值)。 除了下列這些新的中繼資料以外，項目應該傳遞輸入項目中的所有中繼資料：  
+
+  - `CopyLocal`，指出是否要將組件複製到輸出資料夾中，可設定為 true 或 false。  
+
+  - `OriginalItemSpec`，包含參考的原始項目規格。  
+
+  - `ResolvedFrom`，如果是從 [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] 目錄解析，則設定為 "{TargetFrameworkDirectory}"。  
   
 - COM 參考：  
   

@@ -11,12 +11,12 @@ caps.latest.revision: 38
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 76f66d11a824a756b262460ebd4e7af78e88f766
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 19f22fc56881287cfb501143aaa4397f9a035d78
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60038169"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67821640"
 ---
 # <a name="msbuild-items"></a>MSBuild 項目
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,23 +39,23 @@ MSBuild 項目是建置系統的輸入，通常代表檔案。 項目 (Item) 會
   
 - [項目中繼資料](#BKMK_ItemMetadata)  
   
-    - [在專案檔中參考項目中繼資料](#BKMK_ReferencingItemMetadata)  
-  
-    - [已知的項目中繼資料](#BKMK_WellKnownItemMetadata)  
-  
-    - [使用中繼資料轉換項目類型](#BKMK_Transforming)  
+  - [在專案檔中參考項目中繼資料](#BKMK_ReferencingItemMetadata)  
+
+  - [已知的項目中繼資料](#BKMK_WellKnownItemMetadata)  
+
+  - [使用中繼資料轉換項目類型](#BKMK_Transforming)  
   
 - [項目定義](#BKMK_ItemDefinitions)  
   
 - [目標 ItemGroup 中的項目屬性](#BKMK_AttributesWithinTargets)  
   
-    - [Remove 屬性](#BKMK_RemoveAttribute)  
-  
-    - [KeepMetadata 屬性](#BKMK_KeepMetadata)  
-  
-    - [RemoveMetadata 屬性](#BKMK_RemoveMetadata)  
-  
-    - [KeepDuplicates 屬性](#BKMK_KeepDuplicates)  
+  - [Remove 屬性](#BKMK_RemoveAttribute)  
+
+  - [KeepMetadata 屬性](#BKMK_KeepMetadata)  
+
+  - [RemoveMetadata 屬性](#BKMK_RemoveMetadata)  
+
+  - [KeepDuplicates 屬性](#BKMK_KeepDuplicates)  
   
 ## <a name="BKMK_Creating1"></a> 在專案檔中建立項目  
  您會將專案檔中的項目 (Item) 宣告為 [ItemGroup](../msbuild/itemgroup-element-msbuild.md) 項目 (Element) 的子項目 (Element)。 子項目 (Element) 的名稱是項目 (Item) 的類型。 項目 (Element) 的 `Include` 屬性會指定要包含於該項目 (Item) 類型的項目 (Item) (檔案)。 例如，下列 XML 會建立名為 `Compile` 的項目類型，其中包含兩個檔案。  

@@ -12,12 +12,12 @@ caps.latest.revision: 62
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: f4fb99a7f7fcd7c91003bc7d74cf0ef6639cf773
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 13029e05e4f29e532918562afd2fee520b387464
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65698043"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67821632"
 ---
 # <a name="msbuild"></a>MSBuild
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -59,14 +59,14 @@ ms.locfileid: "65698043"
   
 - [專案檔](#BKMK_ProjectFile)  
   
-    - [屬性](#BKMK_Properties)  
-  
-    - [項目](#BKMK_Items)  
-  
-    - [工作](#BKMK_Tasks)  
-  
-    - [目標](#BKMK_Targets)  
-  
+  - [屬性](#BKMK_Properties)  
+
+  - [項目](#BKMK_Items)  
+
+  - [工作](#BKMK_Tasks)  
+
+  - [目標](#BKMK_Targets)  
+
 - [組建記錄檔](#BKMK_BuildLogs)  
   
 - [在 Visual Studio 中使用 MSBuild](#BKMK_VisualStudio)  
@@ -181,7 +181,7 @@ MSBuild.exe MyProj.proj /property:Configuration=Debug
   
 - 您可以將 .NET Framework 以外的 Framework 做為目標，例如 Silverlight。  
   
-- 您可以將「Framework 設定檔」當做目標，這是預先定義的目標 Framework 子集。  
+- 您可以將「Framework 設定檔」  當做目標，這是預先定義的目標 Framework 子集。  
   
 - 如果 .NET Framework 目前版本的 Service Pack 已發行，您可以將它當做目標。  
   

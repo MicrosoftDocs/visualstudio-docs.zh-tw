@@ -8,12 +8,12 @@ ms.assetid: c3c3df69-83b4-4fd0-b5b1-e18c33f39376
 caps.latest.revision: 6
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: bdaaacd84cdc23b56fd76d7f4e66184868ad533c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: ede8844b34473e1c900bd6af040cac99ceee1514
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60075814"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67824060"
 ---
 # <a name="fonts-and-formatting-for-visual-studio"></a>字型和格式適用於 Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -70,7 +70,7 @@ internal partial class WebConfigModificationWindow : DialogWindow
 
  (取代`Microsoft.VisualStudio.Shell.11.0`與目前的 MPF dll 版本。)
 
- 若要顯示對話方塊，請呼叫 「**ShowModal()**「 透過在類別上**ShowDialog()**。 **ShowModal()** 命令介面中設定正確的強制回應狀態，可確保對話方塊會置於父視窗等等。
+ 若要顯示對話方塊，請呼叫 「**ShowModal()** 「 透過在類別上**ShowDialog()** 。 **ShowModal()** 命令介面中設定正確的強制回應狀態，可確保對話方塊會置於父視窗等等。
 
  程式碼如下所示：
 
@@ -417,11 +417,11 @@ protected static void SetFontStyles(Control topControl, Control parent, Font ref
 
 - 針對這些用途，可以彩色較大的標題 （環境字型 x 155%或更高）：
 
-    - 提供至簽章 Visual Studio UI 中的視覺效果
+  - 提供至簽章 Visual Studio UI 中的視覺效果
 
-    - 若要提醒您注意到特定的區域
+  - 若要提醒您注意到特定的區域
 
-    - 提供從標準暗灰/黑色環境的文字色彩的浮雕
+  - 提供從標準暗灰/黑色環境的文字色彩的浮雕
 
 - 標題的色彩應該利用現有 Visual Studio 品牌色彩，主要是主要的紫色，#FF68217A。
 

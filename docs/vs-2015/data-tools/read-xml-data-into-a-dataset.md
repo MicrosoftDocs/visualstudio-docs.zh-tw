@@ -23,12 +23,12 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 5f9968b14eaf74a00a66d8fb7c86890938ddfa4b
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 64a5edbec2f9f482981002e609117996f0080e56
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65692546"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825886"
 ---
 # <a name="read-xml-data-into-a-dataset"></a>將 XML 資料讀入資料集
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -147,9 +147,9 @@ ADO.NET 提供簡單的方法來處理 XML 資料。 在此逐步解說中，您
   
 - 兩個<xref:System.Windows.Forms.Button>控制項。  
   
-    - 一個按鈕的 XML 檔案讀入資料集，並顯示在<xref:System.Windows.Forms.DataGridView>控制項。  
-  
-    - 第二個按鈕會在從資料集，以及透過將結構描述擷取<xref:System.IO.StringWriter>會顯示在<xref:System.Windows.Forms.TextBox>控制項。  
+  - 一個按鈕的 XML 檔案讀入資料集，並顯示在<xref:System.Windows.Forms.DataGridView>控制項。  
+
+  - 第二個按鈕會在從資料集，以及透過將結構描述擷取<xref:System.IO.StringWriter>會顯示在<xref:System.Windows.Forms.TextBox>控制項。  
   
 #### <a name="to-add-controls-to-the-form"></a>若要將控制項加入至表單  
   
@@ -168,7 +168,7 @@ ADO.NET 提供簡單的方法來處理 XML 資料。 在此逐步解說中，您
     |控制項|屬性|設定|  
     |-------------|--------------|-------------|  
     |`TextBox1`|**多行**|`true`|  
-    ||[ScrollBars]|**垂直**|  
+    ||[ScrollBars] |**垂直**|  
     |`Button1`|**名稱**|`ReadXmlButton`|  
     ||**Text**|`Read XML`|  
     |`Button2`|**名稱**|`ShowSchemaButton`|  

@@ -1,5 +1,5 @@
 ---
-title: 作法：使用執行緒視窗 |Microsoft Docs
+title: HOW TO：使用執行緒視窗 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -24,12 +24,12 @@ caps.latest.revision: 48
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 835843d2328d9d17ac899fc12c97251b7e6b4659
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: da41524fcb231ea399dbbd2a2904afd935e5c4f8
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65685327"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67824249"
 ---
 # <a name="how-to-use-the-threads-window"></a>作法：使用執行緒視窗
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -72,11 +72,11 @@ ms.locfileid: "65685327"
   
 - 執行下列任一步驟：  
   
-    - 按兩下任一執行緒。  
-  
-    - 以滑鼠右鍵按一下執行緒，然後按一下 **切換至執行緒**。  
-  
-         黃色箭號會顯示在新的使用中執行緒旁邊。 箭號的灰色外框識別執行進入偵錯工具的執行緒。  
+  - 按兩下任一執行緒。  
+
+  - 以滑鼠右鍵按一下執行緒，然後按一下 **切換至執行緒**。  
+
+    黃色箭號會顯示在新的使用中執行緒旁邊。 箭號的灰色外框識別執行進入偵錯工具的執行緒。  
   
 ## <a name="grouping-and-sorting-threads"></a>群組和排序執行緒  
  當您群組執行緒時，標題會出現在每個群組的表格中。 標題包含群組描述 (例如 [背景工作執行緒] 或 [未標幟的執行緒]) 和樹狀目錄控制項。 每個群組的成員執行緒會出現在群組標題下方。 如果您想要隱藏群組的成員執行緒，則可以使用樹狀目錄控制項來摺疊該群組。  
@@ -116,11 +116,11 @@ ms.locfileid: "65685327"
   
 - 在 [執行緒]  視窗頂端的工具列中，移至 [搜尋]  方塊，並：  
   
-    - 輸入搜尋字串，然後按 ENTER 鍵。  
-  
-         \-或-  
-  
-    - 按一下下拉式清單旁**搜尋**方塊，然後選取從先前的搜尋的搜尋字串。  
+  - 輸入搜尋字串，然後按 ENTER 鍵。  
+
+    \-或-  
+
+  - 按一下下拉式清單旁**搜尋**方塊，然後選取從先前的搜尋的搜尋字串。  
   
 - (選擇性) 若要將整個呼叫堆疊併入搜尋中，請選取 [搜尋呼叫堆疊]  。  
   

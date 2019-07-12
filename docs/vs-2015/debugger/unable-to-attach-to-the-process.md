@@ -17,11 +17,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: c74799daf57ca031c4b3ce6bf76f72e453eeb0b3
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63446550"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "64824209"
 ---
 # <a name="unable-to-attach-to-the-process"></a>無法附加到處理序
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,13 +46,13 @@ ms.locfileid: "63446550"
   
 ### <a name="to-solve-scenario-2"></a>解決案例 2  
   
-1. 在 [開始] 功能表內選擇 [控制台]。  
+1. 在 [開始]  功能表內選擇 [控制台]  。  
   
-2. 在 [控制台] 中按兩下 [系統管理工具]。  
+2. 在 [控制台] 中按兩下 [系統管理工具]  。  
   
-3. 在 [系統管理工具] 視窗中按兩下 [本機安全性原則]。  
+3. 在 [系統管理工具] 視窗中按兩下 [本機安全性原則]  。  
   
-4. 在 [本機安全性原則] 視窗中選取 [本機原則]。  
+4. 在 [本機安全性原則] 視窗中選取 [本機原則]  。  
   
 5. 在 **原則**資料行中，按兩下**網路存取：共用和安全性模式用於本機帳戶**。  
   

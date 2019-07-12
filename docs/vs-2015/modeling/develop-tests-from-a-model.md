@@ -11,12 +11,12 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: dbc05ccbf78069b6c9d155274b471100a4966a10
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 9ab0d9ae382f9410418a98fea606eebbb236b157
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65692272"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67823335"
 ---
 # <a name="develop-tests-from-a-model"></a>透過模型開發測試
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -52,9 +52,9 @@ ms.locfileid: "65692272"
   
 - 不同的測試是以後置條件的不同子句為基礎。 例如，建立不同的測試來通知餐廳有此訂單，以及取得客人的付款。 這項區隔具有下列優點：  
   
-    - 不同層面的需求變更經常會獨立發生。 透過此方式，將測試分成不同的層面，即可在需求變更時輕鬆地更新測試。  
-  
-    - 如果開發計劃先實作使用案例的其中一個層面，再實作另一個層面，則可以在進行開發時個別啟用測試。  
+  - 不同層面的需求變更經常會獨立發生。 透過此方式，將測試分成不同的層面，即可在需求變更時輕鬆地更新測試。  
+
+  - 如果開發計劃先實作使用案例的其中一個層面，再實作另一個層面，則可以在進行開發時個別啟用測試。  
   
 - 設計測試時，請分開選擇測試資料與判斷是否達到後置條件的程式碼或指令碼。 例如，簡單算術函式的測試可能是：輸入 4;確認輸出會是 2。 相反地，設計為指令碼：選擇輸入;乘以本身的輸出，並確認結果是原始的輸入。 這個樣式可讓您有不同的測試輸入，而不變更測試的主體。  
   

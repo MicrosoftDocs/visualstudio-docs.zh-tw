@@ -14,12 +14,12 @@ dev_langs:
 - CPP
 ms.workload:
 - multiple
-ms.openlocfilehash: 6cd61304e150da63d2d461ef364e7039789c71fc
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 39fd588a51771aae79d22d2d7f0a02a648184c05
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62825813"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67821570"
 ---
 # <a name="suppress-code-analysis-warnings"></a>隱藏程式碼分析警告
 
@@ -67,17 +67,17 @@ CA_SUPPRESS_MESSAGE("Rule Category", "Rule Id", Justification = "Justification",
 
 - **範圍**-在其要隱藏警告的目標。 如果未指定目標，則會將它設定為屬性的目標。 支援[範圍](xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute.Scope)包含下列項目：
 
-   - `module`
+  - `module`
 
-   - `resource`
+  - `resource`
 
-   - `type`
+  - `type`
 
-   - `member`
+  - `member`
 
-   - `namespace` -此範圍會隱藏對本身的命名空間的警告。 它不會抑制警告針對命名空間內的型別。
+  - `namespace` -此範圍會隱藏對本身的命名空間的警告。 它不會抑制警告針對命名空間內的型別。
 
-   - `namespaceanddescendants` -（新增適用於 Visual Studio 2019) 此範圍會抑制警告中的命名空間和其所有子系的符號。 `namespaceanddescendants`值是唯一有效的 Roslyn 分析器，而且會忽略的二進位、 FxCop 為基礎的靜態分析。
+  - `namespaceanddescendants` -（新增適用於 Visual Studio 2019) 此範圍會抑制警告中的命名空間和其所有子系的符號。 `namespaceanddescendants`值是唯一有效的 Roslyn 分析器，而且會忽略的二進位、 FxCop 為基礎的靜態分析。
 
 - **目標**-識別項，用來指定在其要隱藏警告的目標。 它必須包含完整項目名稱。
 
@@ -89,7 +89,7 @@ CA_SUPPRESS_MESSAGE("Rule Category", "Rule Id", Justification = "Justification",
 
 `[SuppressMessage("Microsoft.Design", "CA1039:ListsAreStrongTyped")]`
 
-如果有最小化在原始程式檔隱藏項目中繼資料的嚴格的效能考量，就可以省略 「 規則名稱。 規則類別和其規則識別碼一起構成夠唯一的規則識別項。 例如: 
+如果有最小化在原始程式檔隱藏項目中繼資料的嚴格的效能考量，就可以省略 「 規則名稱。 規則類別和其規則識別碼一起構成夠唯一的規則識別項。 例如：
 
 `[SuppressMessage("Microsoft.Design", "CA1039")]`
 

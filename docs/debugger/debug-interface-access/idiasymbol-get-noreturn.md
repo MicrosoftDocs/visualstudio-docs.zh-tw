@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 0857939289091d22aaafb5dc5bb009d4af0e00bb
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63399339"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "64830285"
 ---
 # <a name="idiasymbolgetnoreturn"></a>IDiaSymbol::get_noReturn
 擷取指定的函式是否已標示為永遠不會使用傳回的旗標[noreturn](/cpp/cpp/noreturn)屬性。

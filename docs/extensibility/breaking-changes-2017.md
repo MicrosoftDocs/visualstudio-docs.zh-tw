@@ -9,12 +9,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 589f5eddb2b1e2a8fd61eea2a205f12d2d9c0742
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 0cc62384f2a413362f53ed0626031501e163d6a4
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66321363"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67823812"
 ---
 # <a name="changes-in-visual-studio-2017-extensibility"></a>在 Visual Studio 2017 擴充性的變更
 
@@ -63,35 +63,35 @@ VSIX v3 中的資訊清單格式工具來撰寫新的設計工具位於 Visual S
 
 * 只安裝至 GAC 的組件：
 
-   這些組件現在會安裝下<em>[INSTALLDIR] \Common7\IDE\*，* [INSTALLDIR] \Common7\IDE\PublicAssemblies</em>或是 *[INSTALLDIR] \Common7\IDE\PrivateAssemblies*。 這些資料夾是 Visual Studio 處理序的探查路徑的一部分。
+  這些組件現在會安裝下<em>[INSTALLDIR] \Common7\IDE\*，* [INSTALLDIR] \Common7\IDE\PublicAssemblies</em>或是 *[INSTALLDIR] \Common7\IDE\PrivateAssemblies*。 這些資料夾是 Visual Studio 處理序的探查路徑的一部分。
 
 * 已安裝到非探查的路徑及 GAC 的組件：
 
-   * 在 GAC 中的複本已從安裝程式移除。
-   * A *.pkgdef*檔案加入至指定組件的程式碼基底項目。
+  * 在 GAC 中的複本已從安裝程式移除。
+  * A *.pkgdef*檔案加入至指定組件的程式碼基底項目。
 
-      例如：
+    例如：
 
-      ```xml
-      [$RootKey$\RuntimeConfiguration\dependentAssembly\codeBase\{UniqueGUID}]
-      "name"="AssemblyName" "codeBase"="$PackageFolder$\AssemblyName.dll"
-      "publicKeyToken"="Public Key Token"
-      "culture"="neutral"
-      "version"=15.0.0.0
-      ```
+    ```
+    [$RootKey$\RuntimeConfiguration\dependentAssembly\codeBase\{UniqueGUID}]
+    "name"="AssemblyName" "codeBase"="$PackageFolder$\AssemblyName.dll"
+    "publicKeyToken"="Public Key Token"
+    "culture"="neutral"
+    "version"=15.0.0.0
+    ```
 
-      在執行階段，Visual Studio pkgdef 子系統合併至 Visual Studio 處理序的執行階段組態檔的這些項目 (底下 *[VSAPPDATA]\devenv.exe.config*) 作為[ `<codeBase>` ](/dotnet/framework/configure-apps/file-schema/runtime/codebase-element)項目。 這是讓 Visual Studio 程序尋找您的組件，因為它可避免探查路徑中搜尋的建議的方式。
+    在執行階段，Visual Studio pkgdef 子系統合併至 Visual Studio 處理序的執行階段組態檔的這些項目 (底下 *[VSAPPDATA]\devenv.exe.config*) 作為[ `<codeBase>` ](/dotnet/framework/configure-apps/file-schema/runtime/codebase-element)項目。 這是讓 Visual Studio 程序尋找您的組件，因為它可避免探查路徑中搜尋的建議的方式。
 
 ### <a name="reacting-to-this-breaking-change"></a>回應這項重大變更
 
 * 如果您的延伸模組在 Visual Studio 處理序內執行：
 
-   * 您的程式碼都能夠找到 Visual Studio 核心組件。
-   * 請考慮使用 *.pkgdef*來指定您的組件的路徑，如有必要的檔案。
+  * 您的程式碼都能夠找到 Visual Studio 核心組件。
+  * 請考慮使用 *.pkgdef*來指定您的組件的路徑，如有必要的檔案。
 
 * 如果您的延伸模組在 Visual Studio 處理序之外執行：
 
-   尋找在 Visual Studio 核心組件，請考慮<em>[INSTALLDIR] \Common7\IDE\*，* [INSTALLDIR] \Common7\IDE\PublicAssemblies</em>或 *[INSTALLDIR] \Common7\IDE\PrivateAssemblies*使用組態檔案或組件解析程式。
+  尋找在 Visual Studio 核心組件，請考慮<em>[INSTALLDIR] \Common7\IDE\*，* [INSTALLDIR] \Common7\IDE\PublicAssemblies</em>或 *[INSTALLDIR] \Common7\IDE\PrivateAssemblies*使用組態檔案或組件解析程式。
 
 ## <a name="change-reduce-registry-impact"></a>變更：減少登錄的影響
 

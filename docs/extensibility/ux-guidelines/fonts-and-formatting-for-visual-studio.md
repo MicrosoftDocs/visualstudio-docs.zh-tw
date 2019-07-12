@@ -8,12 +8,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f510568c977579fa3e48d57db548040d16dcb574
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 1241edd105c948f1094948229a91851b7c38bbed
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66335495"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67824336"
 ---
 # <a name="fonts-and-formatting-for-visual-studio"></a>字型和格式適用於 Visual Studio
 ## <a name="BKMK_TheEnvironmentFont"></a> 環境字型
@@ -394,11 +394,11 @@ protected static void SetFontStyles(Control topControl, Control parent, Font ref
 
 - 針對這些用途，可以彩色較大的標題 （環境字型 x 155%或更高）：
 
-    - 提供至簽章 Visual Studio UI 中的視覺效果
+  - 提供至簽章 Visual Studio UI 中的視覺效果
 
-    - 若要提醒您注意到特定的區域
+  - 若要提醒您注意到特定的區域
 
-    - 提供從標準暗灰/黑色環境的文字色彩的浮雕
+  - 提供從標準暗灰/黑色環境的文字色彩的浮雕
 
 - 標題的色彩應該利用現有 Visual Studio 品牌色彩，主要是主要的紫色，#FF68217A。
 

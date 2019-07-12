@@ -10,12 +10,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c307f54deff676ce1add8c745e9d92f1bb3fd657
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: fbd0a9a1886bc1f8743ac8919bcc9cb39559dd19
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66342203"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67824947"
 ---
 # <a name="command-implementation"></a>命令實作
 若要在 VSPackage 中實作的命令，您必須執行下列工作：
@@ -67,23 +67,23 @@ if ( null != mcs )
 
 - 如果這兩種方法的實作會辨識 GUID 和命令，則方法應該設定的每個命令的命令旗標 欄位 (在`prgCmds`參數) 使用下列<xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF>旗標：
 
-    - `OLECMDF_SUPPORTED`：支援的命令。
+  - `OLECMDF_SUPPORTED`：支援的命令。
 
-    - `OLECMDF_INVISIBLE`：此命令不應該為可見的。
+  - `OLECMDF_INVISIBLE`：此命令不應該為可見的。
 
-    - `OLECMDF_LATCHED`：此命令為開並似乎已檢查。
+  - `OLECMDF_LATCHED`：此命令為開並似乎已檢查。
 
-    - `OLECMDF_ENABLED`：此命令會啟用。
+  - `OLECMDF_ENABLED`：此命令會啟用。
 
-    - `OLECMDF_DEFHIDEONCTXTMENU`：如果它出現在捷徑功能表上，則應隱藏命令。
+  - `OLECMDF_DEFHIDEONCTXTMENU`：如果它出現在捷徑功能表上，則應隱藏命令。
 
-    - `OLECMDF_NINCHED`：命令是功能表控制站，而且不會啟用，但它的下拉式選單清單不是空的以及仍然可用。 （這個旗標是很少使用）。
+  - `OLECMDF_NINCHED`：命令是功能表控制站，而且不會啟用，但它的下拉式選單清單不是空的以及仍然可用。 （這個旗標是很少使用）。
 
 - 如果命令已定義於 *.vsct*檔案中使用`TextChanges`旗標，請設定下列參數：
 
-    - 設定`rgwz`項目`pCmdText`新命令文字的參數。
+  - 設定`rgwz`項目`pCmdText`新命令文字的參數。
 
-    - 設定`cwActual`項目`pCmdText`命令字串的大小參數。
+  - 設定`cwActual`項目`pCmdText`命令字串的大小參數。
 
 此外，請確定目前的內容不是自動化函式中，除非處理自動化函式，而且特別適合您的命令。
 

@@ -12,20 +12,20 @@ ms.assetid: beba7174-e787-45c2-b6ff-a60f67ad4998
 caps.latest.revision: 27
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 0debf1a5996d39a6cb52cdc843afabf0b4107c59
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: fbb2f118d903eae2124e705f14c7aa7b51bf9c4d
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63403265"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67821835"
 ---
-# <a name="accessing-stored-font-and-color-settings"></a>存取預存的字型和色彩設定
+# <a name="accessing-stored-font-and-color-settings"></a>存取預存字型和色彩設定
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]整合式的開發環境 (IDE) 會儲存已修改的設定的字型和色彩的登錄中。 您可以使用<xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage>介面來存取這些設定。  
   
 ## <a name="to-initiate-state-persistence-of-fonts-and-colors"></a>若要起始狀態的持續性的字型和色彩  
- 字型和色彩資訊會儲存下列登錄位置中依分類: [HKCU\SOFTWARE\Microsoft \Visual Studio\\*\<Visual Studio 版本 >* \FontAndColors\\ *\<CategoryGUID >*]，其中 *\<CategoryGUID >* 類別 GUID。  
+ 字型和色彩資訊會儲存下列登錄位置中依分類: [HKCU\SOFTWARE\Microsoft \Visual Studio\\ *\<Visual Studio 版本 >* \FontAndColors\\ *\<CategoryGUID >* ]，其中 *\<CategoryGUID >* 類別 GUID。  
   
  因此，若要起始持續性，VSPackage 必須：  
   
@@ -35,16 +35,16 @@ ms.locfileid: "63403265"
   
 - 使用<xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage.OpenCategory%2A>方法來開啟 保存使用類別的 GUID 和模式旗標做為引數類別。  
   
-     以指定的模式`fFlags`引數，從中的值建構<xref:Microsoft.VisualStudio.Shell.Interop.__FCSTORAGEFLAGS>列舉型別。 此模式可控制：  
-  
-    - 您可以透過設定<xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage>介面。  
-  
-    - 所有的設定或只有那些使用者修改，且可透過擷取<xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage>介面。  
-  
-    - 「 的傳播變更使用者設定的方式。  
-  
-    - 所使用的色彩值的格式。  
-  
+  以指定的模式`fFlags`引數，從中的值建構<xref:Microsoft.VisualStudio.Shell.Interop.__FCSTORAGEFLAGS>列舉型別。 此模式可控制：  
+
+  - 您可以透過設定<xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage>介面。  
+
+  - 所有的設定或只有那些使用者修改，且可透過擷取<xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage>介面。  
+
+  - 「 的傳播變更使用者設定的方式。  
+
+  - 所使用的色彩值的格式。  
+
 ## <a name="to-use-state-persistence-of-fonts-and-colors"></a>若要使用的字型和色彩的狀態持續性  
  保存的字型和色彩牽涉到：  
   

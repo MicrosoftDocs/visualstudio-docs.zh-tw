@@ -22,12 +22,12 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 robots: noindex,nofollow
-ms.openlocfilehash: d4d2218337153418ef201ee7896eeb095c4778fb
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 169bf374b5c7ee34f75743e363d56c3737000cbc
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63424913"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67823448"
 ---
 # <a name="upgrade-mdf-files"></a>升級 .mdf 檔案
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -104,9 +104,9 @@ ms.locfileid: "63424913"
   
 - 在 Visual Studio 中，開啟專案，而不將它升級。  
   
-    - 若要執行專案時，選取 F5 鍵。  
-  
-    - 若要編輯資料庫，開啟 .mdf 檔案的**方案總管 中**，並展開中的節點**伺服器總管**才能使用您的資料庫。  
+  - 若要執行專案時，選取 F5 鍵。  
+
+  - 若要編輯資料庫，開啟 .mdf 檔案的**方案總管 中**，並展開中的節點**伺服器總管**才能使用您的資料庫。  
   
 ### <a name="to-make-sql-server-express-the-default-database-engine"></a>若要讓 SQL Server Express 的預設資料庫引擎  
   

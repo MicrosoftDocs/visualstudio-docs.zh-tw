@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2143b67297ba2e4bd2751054b789274595505cb3
-ms.sourcegitcommit: ba5e072c9fedeff625a1332f22dcf3644d019f51
+ms.openlocfilehash: b2026c61d05425f0f0d48a9fb722c62f760fcba2
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/31/2019
-ms.locfileid: "66431877"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825515"
 ---
 # <a name="keyboard-shortcuts-in-the-workflow-designer"></a>工作流程設計中的鍵盤快速鍵
 
@@ -79,11 +79,11 @@ ms.locfileid: "66431877"
 
 - 下列命令的快速鍵重新對應將不會有任何作用。 編輯運算式時，您只能使用預設的快速鍵存取這些命令。
 
-   - 剪下
-   - 複製
-   - 貼上
-   - 全選
-   - 復原
-   - 取消復原
+  - 剪下
+  - 複製
+  - 貼上
+  - 全選
+  - 復原
+  - 取消復原
 
 - 若要重新對應 Visual Studio 中的工作流程設計工具中的運算式編輯命令的鍵盤快速鍵，編輯工作流程設計工具的範圍中的快速鍵。 在 [文字編輯器] 範圍內所做的變更會自動不適用於工作流程設計工具。 如果兩個地方的快速鍵都要重新對應，您必須套用這些變更兩次 (兩個範圍各一次)。

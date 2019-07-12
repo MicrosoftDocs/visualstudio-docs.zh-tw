@@ -12,12 +12,12 @@ caps.latest.revision: 36
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 4c02e9dc3b1f355cc2c0f580ce88893ce7f34b46
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 365382566f7de28a611f1c8e0b063f68ca55f696
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63433155"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825934"
 ---
 # <a name="define-a-gesture-handler-on-a-modeling-diagram"></a>在模型圖表上定義軌跡處理常式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -282,34 +282,34 @@ ms.locfileid: "63433155"
   
 - `ShapeElement target`. 使用者已將項目拖曳至其上的圖形或圖表。  
   
-     `ShapeElement` 是實作中的一個類別，此實作是 UML 類別模型化工具的基礎。 若要降低使 UML 模型和圖表處於不一致狀態的風險，我們建議不要直接使用這個類別的方法。 相反地，換行中的項目`IShape`，然後使用 中所述的方法[在圖表上顯示 UML 模型](../modeling/display-a-uml-model-on-diagrams.md)。  
-  
-    - 取得 `IShape`：  
-  
-        ```  
-        IShape targetIShape = target.CreateIShape(target);  
-        ```  
-  
-    - 若要取得拖曳或按兩下作業的目標模型項目：  
-  
-        ```  
-        IElement target = targetIShape.Element;  
-        ```  
-  
-         您可以將此轉型為更特定類型的項目。  
-  
-    - 若要取得包含 UML 模型的 UML 模型存放區：  
-  
-        ```  
-        IModelStore modelStore =   
-          targetIShape.Element.GetModelStore();   
-        ```  
-  
-    - 若要取得主機和服務提供者的存取權：  
-  
-        ```  
-        target.Store.GetService(typeof(EnvDTE.DTE)) as EnvDTE.DTE  
-        ```  
+    `ShapeElement` 是實作中的一個類別，此實作是 UML 類別模型化工具的基礎。 若要降低使 UML 模型和圖表處於不一致狀態的風險，我們建議不要直接使用這個類別的方法。 相反地，換行中的項目`IShape`，然後使用 中所述的方法[在圖表上顯示 UML 模型](../modeling/display-a-uml-model-on-diagrams.md)。  
+
+  - 取得 `IShape`：  
+
+      ```  
+      IShape targetIShape = target.CreateIShape(target);  
+      ```  
+
+  - 若要取得拖曳或按兩下作業的目標模型項目：  
+
+      ```  
+      IElement target = targetIShape.Element;  
+      ```  
+
+        You can cast this to a more specific type of element.  
+
+  - 若要取得包含 UML 模型的 UML 模型存放區：  
+
+      ```  
+      IModelStore modelStore =   
+        targetIShape.Element.GetModelStore();   
+      ```  
+
+  - 若要取得主機和服務提供者的存取權：  
+
+      ```  
+      target.Store.GetService(typeof(EnvDTE.DTE)) as EnvDTE.DTE  
+      ```  
   
 - `DiagramDragEventArgs eventArgs`. 此參數會攜帶拖曳作業的序列化形式來源物件：  
   

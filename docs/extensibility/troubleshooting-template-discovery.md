@@ -7,12 +7,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b0b6af3e24d4e563ebbbcf0a233d85a1cd038cb3
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: b3c5558079772a8ddc4c4826ba68d1866c220ba2
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66316356"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67823973"
 ---
 # <a name="troubleshooting-template-installation"></a>疑難排解安裝的範本
 
@@ -59,9 +59,9 @@ ms.locfileid: "66316356"
 
 - **FullPathToTemplate**，其中包含下列值：
 
-    - 1 代表資訊清單為基礎的部署
+  - 1 代表資訊清單為基礎的部署
 
-    - 0 代表磁碟為基礎的部署
+  - 0 代表磁碟為基礎的部署
 
 - **TemplateFileName**
 

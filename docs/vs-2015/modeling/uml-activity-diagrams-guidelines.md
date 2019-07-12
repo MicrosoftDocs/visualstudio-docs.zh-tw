@@ -15,12 +15,12 @@ caps.latest.revision: 50
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 16bc3bf0f2cb7fa51a42986ee99976410ca7874a
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 310e13e781997fd3a6431e4257918f8e61b9420d
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63439730"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67823572"
 ---
 # <a name="uml-activity-diagrams-guidelines"></a>UML 活動圖表：方針
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -208,15 +208,15 @@ ms.locfileid: "63439730"
  您可以藉由設定物件節點的屬性，指定如何儲存緩衝區中的項目：  
   
 - 設定**訂購**屬性：  
-  
-    - **未排序**指定隨機或未指定的順序。 (預設值。)  
-  
-    - **排序**以指定的順序，根據特定的索引鍵。  
-  
-    - **Fifo**以指定的順序的先進先出。  
-  
-    - **Lifo**來指定後進先出順序。  
-  
+
+  - **未排序**指定隨機或未指定的順序。 (預設值。)  
+
+  - **排序**以指定的順序，根據特定的索引鍵。  
+
+  - **Fifo**以指定的順序的先進先出。  
+
+  - **Lifo**來指定後進先出順序。  
+
 - 設定**上限**屬性來指定緩衝區中的物件可以包含最大數目。 預設值為 *。 這表示沒有任何限制。  
   
 ### <a name="describing-data-flow-with-input-and-output-pins"></a>使用輸入和輸出連接描述資料流程  
@@ -295,7 +295,7 @@ ms.locfileid: "63439730"
   
  客戶已提供完整且有效的詳細資料，以便正確處理信用卡所需。  
   
- 後置條件可以表示動作發生之前與之後的狀態關聯性。 例如:  
+ 後置條件可以表示動作發生之前與之後的狀態關聯性。 例如：  
   
  利率是先前的兩倍。  
   
@@ -317,7 +317,7 @@ ms.locfileid: "63439730"
   
 - 您可以設定**Is Synchronous**屬性來表示您的活動是否等待作業完成的動作。  
   
-    - 如果您設定**Is Synchronous**設為 false，即表示流程可以繼續下一個動作，在呼叫的作業完成之前。 您不應該定義動作的輸出連接或傳出的資料流程。  
+  - 如果您設定**Is Synchronous**設為 false，即表示流程可以繼續下一個動作，在呼叫的作業完成之前。 您不應該定義動作的輸出連接或傳出的資料流程。  
   
 ## <a name="Concurrent"></a> 並行的流程  
  您可以使用**分岔節點**並**聯結節點**來描述可以在同一時間執行之活動的兩個或多個執行緒。  

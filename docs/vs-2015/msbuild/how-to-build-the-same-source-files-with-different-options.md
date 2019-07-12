@@ -1,5 +1,5 @@
 ---
-title: HOW TO：使用不同選項來建置相同的來源檔案 | Microsoft Docs
+title: 作法：使用不同選項來建置相同的來源檔案 | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: msbuild
@@ -14,12 +14,12 @@ caps.latest.revision: 23
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 3bce742d4ce0374cb7270b964354d65a03e917d0
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 8bf76967363f4c0d97d93c895fbeb6209c8503f0
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60045599"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67821675"
 ---
 # <a name="how-to-build-the-same-source-files-with-different-options"></a>HOW TO：使用不同選項來建置相同的原始程式檔
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -55,13 +55,13 @@ ms.locfileid: "60045599"
   
 #### <a name="to-set-a-project-property-at-the-command-line"></a>在命令列中設定專案屬性  
   
-- 使用 **/property** 參數搭配屬性和屬性值。 例如:   
+- 使用 **/property** 參數搭配屬性和屬性值。 例如：  
   
     ```  
     msbuild file.proj /property:Flavor=Debug  
     ```  
   
-     - 或 -  
+     \-或-  
   
     ```  
     Msbuild file.proj /p:Flavor=Debug  
@@ -69,13 +69,13 @@ ms.locfileid: "60045599"
   
 #### <a name="to-specify-more-than-one-project-property-at-the-command-line"></a>在命令列中指定多個專案屬性  
   
-- 多次使用 **/property** 或 **/p** 參數搭配屬性和屬性值，或使用一個 **/property** 或 **/p** 參數，並以分號 (;) 分隔多個屬性。 例如:   
+- 多次使用 **/property** 或 **/p** 參數搭配屬性和屬性值，或使用一個 **/property** 或 **/p** 參數，並以分號 (;) 分隔多個屬性。 例如：  
   
   ```  
   msbuild file.proj /p:Flavor=Debug;Platform=x86  
   ```  
   
-   - 或-  
+   \- 或-  
   
   ```  
   msbuild file.proj /p:Flavor=Debug /p:Platform=x86  
