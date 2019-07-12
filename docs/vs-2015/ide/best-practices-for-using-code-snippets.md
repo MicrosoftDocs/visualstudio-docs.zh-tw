@@ -12,12 +12,12 @@ caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 48e37262c376d2c92e741152a0b3a5866e2718ad
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 75c1e08125e67dc5a76d2e62d22f010abd22f418
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65685660"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67823439"
 ---
 # <a name="best-practices-for-using-code-snippets"></a>使用程式碼片段的最佳作法
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -60,13 +60,13 @@ ms.locfileid: "65685660"
   
 - 在 [記事本] 或 Visual Studio 的 XML 編輯器中開啟所有下載的程式碼片段檔案，並仔細檢閱後再進行安裝。 尋找下列問題：  
   
-    - 程式碼片段的程式碼可能會在執行時損害您的系統。 執行前，請仔細閱讀原始程式碼。  
+  - 程式碼片段的程式碼可能會在執行時損害您的系統。 執行前，請仔細閱讀原始程式碼。  
+
+  - 程式碼片段檔案的說明 URL 區塊可能包含執行惡意指令碼檔的 URL，或包含具攻擊性網站的 URL。  
+
+  - 程式碼片段可能包含以無訊息模式新增至專案，而且可能會從您系統上的任何位置載入的參考。 這些參考可能已從您下載程式碼片段的位置下載到您的電腦。 程式碼片段可能會接著呼叫參考中執行惡意程式碼的方法。 為了保護您自己免於遭受這類攻擊，請檢閱程式碼片段檔案的匯入和參考區塊。  
   
-    - 程式碼片段檔案的說明 URL 區塊可能包含執行惡意指令碼檔的 URL，或包含具攻擊性網站的 URL。  
-  
-    - 程式碼片段可能包含以無訊息模式新增至專案，而且可能會從您系統上的任何位置載入的參考。 這些參考可能已從您下載程式碼片段的位置下載到您的電腦。 程式碼片段可能會接著呼叫參考中執行惡意程式碼的方法。 為了保護您自己免於遭受這類攻擊，請檢閱程式碼片段檔案的匯入和參考區塊。  
-  
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [Visual Basic IntelliSense 程式碼片段](https://msdn.microsoft.com/library/ffdde4c9-8141-4906-b09b-15181357a643)   
  [設定應用程式的安全性](../ide/securing-applications.md)   
  [程式碼片段](../ide/code-snippets.md)

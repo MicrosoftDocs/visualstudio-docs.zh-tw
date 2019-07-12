@@ -8,12 +8,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 77e6dca01f728ae4a5a3f0a5f12f50ab581948c6
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 00668fdebdbc8fc6a26c30a8762aa6f03d6e2769
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66335390"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67824570"
 ---
 # <a name="evaluation-tools-for-visual-studio"></a>適用於 Visual Studio 的評估工具
 ## <a name="craftsmanship-checklist-for-visual-studio"></a>適用於 Visual Studio 而成檢查清單
@@ -49,11 +49,11 @@ ms.locfileid: "66335390"
 
 - 請確認以省略符號按鈕、 命令和命令連結來啟動 UI 以擷取使用者輸入結尾 **[...]** .
 
-     例如：
+  例如：
 
-    - **[進階...]** 對話方塊上的按鈕。
+  - **[進階...]** 對話方塊上的按鈕。
 
-    - 在 [工具] 功能表下的命令選項 (**工具 > 選項**) 應該取得省略符號，因為啟動列印對話方塊本身是命令的目的。
+  - 在 [工具] 功能表下的命令選項 (**工具 > 選項**) 應該取得省略符號，因為啟動列印對話方塊本身是命令的目的。
 
 - 確認 UI 包含除了符合業界標準條款的任何縮寫。 比方說，HTML 和 TCP/IP 都不需要對拼出，不過 OOM （記憶體不足） 和 PII （個人識別資訊） 應該。
 
@@ -145,9 +145,9 @@ ms.locfileid: "66335390"
 
 - 如果欄位是必要的欄位，必須識別出來，請確認：
 
-    - 背景設定為`Environment.ControlEditRequiredBackground`和前景設為 `Environment.ControlEditRequiredHintText`
+  - 背景設定為`Environment.ControlEditRequiredBackground`和前景設為 `Environment.ControlEditRequiredHintText`
 
-    - 會顯示為控制項中的提示文字 **"\<需要 > 」**
+  - 會顯示為控制項中的提示文字 **"\<需要 > 」**
 
 #### <a name="button-controls"></a>按鈕控制項
 
@@ -169,11 +169,11 @@ ms.locfileid: "66335390"
 
 - 確認所用的 VS 色彩：
 
-    - `Environment.ControlLinkText`
+  - `Environment.ControlLinkText`
 
-    - `Environment.ControlLinkTextHover`
+  - `Environment.ControlLinkTextHover`
 
-    - `Environment.ControlLinkTextPressed`
+  - `Environment.ControlLinkTextPressed`
 
 - 請確認超連結會出現藍色沒有底線除非內嵌在段落中。
 

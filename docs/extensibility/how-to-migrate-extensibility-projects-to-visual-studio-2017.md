@@ -9,14 +9,14 @@ manager: jillfra
 ms.workload:
 - vssdk
 monikerRange: vs-2017
-ms.openlocfilehash: 802c55844be14192ea5bd5de1870e27e2063ccad
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: f5edad198727ea33d3bf293fa0ee1baf3afb5b3b
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66319316"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67823907"
 ---
-# <a name="how-to-migrate-extensibility-projects-to-visual-studio-2017"></a>HOW TO：將擴充性專案移轉至 Visual Studio 2017
+# <a name="how-to-migrate-extensibility-projects-to-visual-studio-2017"></a>作法：將擴充性專案移轉至 Visual Studio 2017
 
 本文件說明如何將擴充性專案升級至 Visual Studio 2017。 除了說明如何更新專案檔，它也會說明如何從延伸模組資訊清單版本 2 (VSIX v2) 升級至新第 3 版 VSIX 資訊清單的格式 (VSIX v3)。
 
@@ -62,8 +62,8 @@ ms.locfileid: "66319316"
 * 編輯擴充功能資訊清單檔 (通常稱為*source.extension.vsixmanifest*)。
 * 請確定`InstallationTarget`包含 15.0。
 * （如下列範例所示），請加入必要的安裝必要條件。
-   * 我們建議您指定只安裝必要條件的元件識別碼。
-   * 請參閱本文件的最後一節[識別元件識別碼的指示](#find-component-ids)。
+  * 我們建議您指定只安裝必要條件的元件識別碼。
+  * 請參閱本文件的最後一節[識別元件識別碼的指示](#find-component-ids)。
 
 範例：
 
@@ -120,12 +120,12 @@ ms.locfileid: "66319316"
 
 * 建立 VSIX 專案。
 * 將解壓縮產生的 VSIX。
-   * 根據預設，VSIX 檔案內的所在*bin/Debug*或是*bin/Release*作為 *[YourCustomExtension].vsix*。
-   * 重新命名 *.vsix*要 *.zip*來輕鬆地檢視內容。
+  * 根據預設，VSIX 檔案內的所在*bin/Debug*或是*bin/Release*作為 *[YourCustomExtension].vsix*。
+  * 重新命名 *.vsix*要 *.zip*來輕鬆地檢視內容。
 * 檢查有三個檔案：
-   * *extension.vsixmanifest*
-   * *manifest.json*
-   * *catalog.json*
+  * *extension.vsixmanifest*
+  * *manifest.json*
+  * *catalog.json*
 
 ## <a name="check-when-all-required-prerequisites-are-installed"></a>當已安裝所有必要的必要條件檢查
 
@@ -141,11 +141,11 @@ VSIX 成功安裝在電腦安裝所有必要先決條件的測試。
 ![在 Visual Studio 2017 的 VSIX 安裝程式](media/vsixinstaller-vs-2017.png)
 
 * 選擇項：請檢查先前的 Visual Studio 版本。
-   * 證明回溯相容性。
-   * 應該適用於 Visual Studio 2012、 Visual Studio 2013，Visual Studio 2015。
+  * 證明回溯相容性。
+  * 應該適用於 Visual Studio 2012、 Visual Studio 2013，Visual Studio 2015。
 * 選擇項：VSIX 安裝程式版本檢查程式，提供各種版本檢查。
-   * （如果已安裝），包括舊版的 Visual Studio。
-   * 包含 Visual Studio 2017。
+  * （如果已安裝），包括舊版的 Visual Studio。
+  * 包含 Visual Studio 2017。
 
 如果最近開啟 Visual Studio，您可能會看到如下的對話方塊：
 

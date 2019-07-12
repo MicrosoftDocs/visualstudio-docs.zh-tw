@@ -7,12 +7,12 @@ ms.topic: conceptual
 ms.assetid: 5233d3ff-6e89-4401-b449-51b4686becca
 caps.latest.revision: 33
 manager: jillfra
-ms.openlocfilehash: 10b57508c498607533a9a9b1fbbcf3b15b6f7a4f
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 0b29728cffc962b5d09a5adc45f8cac2093b020a
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63422733"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825677"
 ---
 # <a name="making-custom-projects-version-aware"></a>讓自訂專案成為版本感知
 在自訂專案系統中，您可以允許在多個版本的 Visual Studio 中載入該類型的專案。 您也可以防止舊版本的 Visual Studio 中載入該類型的專案。 您也可以讓該專案能夠向較新版本識別自己，以防專案需要修復、轉換或取代。  
@@ -58,7 +58,7 @@ ms.locfileid: "63422733"
   
 1. 在元件中，從全域服務 SVsSolution 取得 `IVsAppCompat` 介面。  
   
-     如需詳細資訊，請參閱<xref:Microsoft.VisualStudio.Shell.Interop.SVsSolution>。  
+     如需詳細資訊，請參閱 <xref:Microsoft.VisualStudio.Shell.Interop.SVsSolution>。  
   
 2. 在元件中，呼叫 `IVsAppCompat.AskForUserConsentToBreakAssetCompat`，並傳遞 `IVsHierarchy` 介面的陣列給它，這些介面代表相關的專案。  
   
@@ -95,7 +95,7 @@ ms.locfileid: "63422733"
   
      然後 BreakAssetCompatibility 方法會呼叫 `IVsHierarchy.SetProperty` 方法，以將根 `VSHPROPID_MinimumDesignTimeCompatVersion` 屬性設為您在上一個步驟中取得之版本字串的值。  
   
-     如需詳細資訊，請參閱<xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.SetProperty%2A>。  
+     如需詳細資訊，請參閱 <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.SetProperty%2A>。  
   
 > [!IMPORTANT]
 > 您必須實作 `VSHPROPID_MinimumDesignTimeCompatVersion` 屬性，來將專案標記為相容或不相容。 比方說，如果專案系統使用 MSBuild 專案檔，請在專案檔加入 `<MinimumVisualStudioVersion>` 建置屬性，且值等於對應的 `VSHPROPID_MinimumDesignTimeCompatVersion` 屬性值。  
@@ -142,12 +142,12 @@ IVsProjectUpgradeViaFactory::UpgradeProject_CheckOnly(
   
 - LogMessage 函式具有下列 ErrorLevel：  
   
-    - 0 適用於任何您想要追蹤的資訊。  
-  
-    - 1 適用於警告。  
-  
-    - 2 適用於錯誤。  
-  
-    - 3 適用於報表格式器。 升級您的專案時，記錄單字 “Converted” 一次，且不要將它當地語系化。  
+  - 0 適用於任何您想要追蹤的資訊。  
+
+  - 1 適用於警告。  
+
+  - 2 適用於錯誤。  
+
+  - 3 適用於報表格式器。 升級您的專案時，記錄單字 “Converted” 一次，且不要將它當地語系化。  
   
 - 如果專案不需要任何修復或升級時，則唯有專案系統已在 UpgradeProject_CheckOnly 或 UpgradeProjectFlavor_CheckOnly 方法期間記錄警告或錯誤時，Visual Studio 才會產生記錄檔。

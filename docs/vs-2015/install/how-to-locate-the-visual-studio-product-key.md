@@ -12,12 +12,12 @@ caps.latest.revision: 24
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: 2223ab7dfbf37a0be1c9600065ddaad8ea4dfd19
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 0210f66bcfeaad8143ac4eee78b7b086c36eb164
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60098724"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67823208"
 ---
 # <a name="how-to-locate-the-visual-studio-product-key"></a>How to: Locate the Visual Studio Product Key
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,11 +28,11 @@ ms.locfileid: "60098724"
 
 - 在下列其中一個位置中尋找產品金鑰：
 
-    - 在安裝媒體上 (如果適用)。
+  - 在安裝媒體上 (如果適用)。
 
-    - 在 [My.VisualStudio.com](https://my.visualstudio.com/productkeys) 網站上。
+  - 在 [My.VisualStudio.com](https://my.visualstudio.com/productkeys) 網站上。
 
-    - 您所購買軟體之廠商提供的文件或其他通訊。
+  - 您所購買軟體之廠商提供的文件或其他通訊。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
  [如何：從 Visual Studio 試用版升級](../install/how-to-upgrade-from-a-trial-edition-of-visual-studio.md) [安裝 Visual Studio](../install/install-visual-studio-2015.md) [Visual Studio 和 MSDN 授權白皮書](http://go.microsoft.com/fwlink/?LinkId=191417)
