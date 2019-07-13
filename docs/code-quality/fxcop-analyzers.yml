@@ -1,10 +1,10 @@
 ### YamlMime:YamlDocument
 documentType: LandingData
-title: FxCop 程式碼分析從移轉至.NET 編譯器平台分析器
+title: 從二進位檔分析 (FxCop) 移轉至來源分析 （FxCop 分析器）
 metadata:
   title: FxCop 移轉文件
-  description: 了解如何從舊版 FxCop 移轉至程式碼分析的分析器。
-  ms.date: 07/18/2018
+  description: 了解如何從舊版的二進位檔分析 (FxCop) 移至來源分析 （FxCop 分析器），當您分析程式碼。
+  ms.date: 07/11/2019
   ms.prod: visual-studio-dev16
   ms.technology: vs-ide-code-analysis
   ms.topic: landing-page
@@ -14,7 +14,7 @@ metadata:
   author: gewarren
   manager: jillfra
 abstract:
-  description: 了解如何分析程式碼第一次或如何從 FxCop 移轉至分析 managed 程式碼使用分析器的新方法。
+  description: 了解如何分析程式碼第一次或如何從二進位檔分析 (FxCop) 移轉至新的方式，分析 managed 程式碼使用來源分析 （FxCop 分析器）。
   aside:
     image:
       alt: 常見的管理工作標誌
@@ -25,7 +25,7 @@ abstract:
 sections:
   - title: 常見問題集
     items:
-      - html: 取得一些解答<a href="fxcop-analyzers-faq.md">常見問題集</a>FxCop 和分析器之間差異的詳細資訊。
+      - html: 取得一些解答<a href="fxcop-analyzers-faq.md">常見問題集</a>二進位檔的 FxCop 分析和 FxCop 分析器中使用的來源分析之間差異的詳細資訊。
   - title: 如果您還不熟悉程式碼分析...
     items:
       - type: list
@@ -53,7 +53,7 @@ sections:
             image:
               src: 'https://docs.microsoft.com/media/common/i_cligeneric.svg'
             title: 命令列使用方式
-  - title: 如果您是 FxCop 使用者...
+  - title: 如果您目前正在使用二進位檔分析 (FxCop)...
     items:
       - type: list
         style: cards
@@ -61,7 +61,7 @@ sections:
         columns: 2
         items:
           - href: 'roslyn-analyzers-overview.md#roslyn-analyzers-vs-static-code-analysis'
-            html: <p>了解靜態 (FxCop) 和分析程式碼分析之間的差異。</p>
+            html: <p>了解二進位檔分析 (FxCop) 和原始檔分析 （FxCop 分析器） 之間的差異。</p>
             image:
               src: 'https://docs.microsoft.com/media/common/i_learn-about.svg'
             title: 有何不同？
@@ -71,7 +71,7 @@ sections:
               src: 'https://docs.microsoft.com/media/common/i_setup.svg'
             title: 安裝 FxCop 分析器
           - href: fxcop-rule-port-status.md
-            html: <p>列出已移植到 FxCop 分析器的靜態程式碼分析 FxCop 規則。</p>
+            html: <p>列出已移植到來源分析 （FxCop 分析器） 的二進位檔分析 (FxCop) 規則。</p>
             image:
               src: 'https://docs.microsoft.com/media/common/i_upgrade.svg'
             title: 移植和 unported license 規則

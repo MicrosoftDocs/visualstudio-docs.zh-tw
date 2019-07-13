@@ -15,10 +15,10 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: fa2aa4b3055ff49f59da329ea828e0dbcfc8ec05
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: da4079f5b6ec884baf3108cbd0519d20cb64c70b
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 07/12/2019
 ms.locfileid: "62419932"
 ---
 # <a name="code-analysis-project-designer"></a>專案設計工具、程式碼分析
@@ -63,7 +63,7 @@ ms.locfileid: "62419932"
  使用規則  
  啟用或停用使用規則。 您也可以展開此項目來啟用或停用個別規則。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [受控碼的程式碼分析警告](../../code-quality/code-analysis-for-managed-code-warnings.md)   
  [受控碼的程式碼分析概觀](../../code-quality/code-analysis-for-managed-code-overview.md)   
  [逐步解說：分析 Managed 程式碼中的程式碼缺失](../../code-quality/walkthrough-analyzing-managed-code-for-code-defects.md)
