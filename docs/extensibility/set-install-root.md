@@ -8,16 +8,16 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0b17bc1936d077e379ff9eca7460fab1a3a37722
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 2d5fc36c1244edd0988b6b76f8106020369cd90b
+ms.sourcegitcommit: da4079f5b6ec884baf3108cbd0519d20cb64c70b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66338399"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "67852212"
 ---
-# <a name="installing-outside-the-extensions-folder"></a>擴充功能資料夾之外進行安裝
+# <a name="install-outside-the-extensions-folder"></a>在延伸模組資料夾之外進行安裝
 
-開始使用 Visual Studio 2017 和 VSIX v3 （第 3 版），現可支援安裝資料夾以外的延伸模組的延伸模組資產。 目前，下列位置啟用 （[INSTALLDIR] 會對應至 Visual Studio 執行個體的安裝目錄） 的有效的安裝位置為：
+從 Visual Studio 2017 和 VSIX v3 （第 3 版），延伸模組資產可以安裝擴充功能資料夾之外。 目前，下列位置啟用 （[INSTALLDIR] 會對應至 Visual Studio 執行個體的安裝目錄） 的有效的安裝位置為：
 
 * [INSTALLDIR]\MSBuild
 * [INSTALLDIR]\Xml\Schemas
@@ -25,9 +25,10 @@ ms.locfileid: "66338399"
 * [INSTALLDIR]\Licenses
 * [INSTALLDIR]\Common7\IDE\ReferenceAssemblies
 * [INSTALLDIR]\Common7\IDE\RemoteDebugger
-* [INSTALLDIR]\Common7\IDE\VC\VCTargets
+* [INSTALLDIR] \Common7\IDE\VC\VCTargets （只適用於 Visual Studio 2017 的支援; 已被取代的 Visual Studio 2019 和更新版本）
 
->**注意：** VSIX 格式不允許您安裝 VS 安裝資料夾結構之外。
+> [!NOTE]
+> VSIX 格式不允許您安裝 Visual Studio 安裝資料夾結構之外。 
 
 為了支援安裝這些目錄，VSIX 必須安裝 「 每個執行個體每台電腦 」。 這可藉由 extension.vsixmanifest 設計工具中的 [所有使用者] 核取都方塊來啟用：
 
@@ -49,7 +50,8 @@ ms.locfileid: "66338399"
  </ProjectReference>
 ```
 
->**注意：** 如果您想，您可以直接編輯.csproj 檔案。
+> [!NOTE]
+> 如果您想，您可以直接編輯.csproj 檔案。
 
 ## <a name="how-to-set-a-subpath-under-the-installroot"></a>如何設定下的 InstallRoot 子路徑
 

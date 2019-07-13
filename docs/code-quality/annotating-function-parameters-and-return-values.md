@@ -1,6 +1,6 @@
 ---
 title: 註釋函式參數和傳回值
-ms.date: 11/04/2016
+ms.date: 07/11/2019
 ms.topic: conceptual
 f1_keywords:
 - _Outptr_opt_result_bytebuffer_to_
@@ -119,18 +119,21 @@ f1_keywords:
 - _Outref_result_bytebuffer_
 - _Result_nullonfailure_
 - _Ret_null_
+- _Scanf_format_string_
+- _Scanf_s_format_string_
+- _Printf_format_string_
 ms.assetid: 82826a3d-0c81-421c-8ffe-4072555dca3a
 author: mikeblome
 ms.author: mblome
 manager: wpickett
 ms.workload:
 - multiple
-ms.openlocfilehash: ace5afbf1c587a2c54c4221469cb7be0d6487c9a
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 1a33a29261a8a776ec570026fbc3ab575f712929
+ms.sourcegitcommit: da4079f5b6ec884baf3108cbd0519d20cb64c70b
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63388552"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "67852173"
 ---
 # <a name="annotating-function-parameters-and-return-values"></a>註釋函式參數和傳回值
 這篇文章說明簡單的函式參數的註解的一般用法： 純量和結構和類別的指標，及各種緩衝區。  這篇文章也會顯示註釋的常見使用模式。 與功能相關的其他註解，請參閱[標註函式行為](../code-quality/annotating-function-behavior.md)
@@ -216,7 +219,7 @@ ms.locfileid: "63388552"
 
      `_Out_writes_to_(_Old_(s), _Old_(s))    _Out_writes_bytes_to_(_Old_(s), _Old_(s))`
 
-     換句話說，每個項目存在於緩衝區中最多`s`前的狀態處於有效後的狀態。  例如: 
+     換句話說，每個項目存在於緩衝區中最多`s`前的狀態處於有效後的狀態。  例如：
 
      `void *memcpy(_Out_writes_bytes_all_(s) char *p1,    _In_reads_bytes_(s) char *p2,    _In_ int s); void * wordcpy(_Out_writes_all_(s) DWORD *p1,     _In_reads_(s) DWORD *p2,    _In_ int s);`
 
@@ -244,7 +247,7 @@ ms.locfileid: "63388552"
 
      `_Out_writes_to_(_Old_(s), _Old_(s))    _Out_writes_bytes_to_(_Old_(s), _Old_(s))`
 
-     換句話說，每個項目存在於緩衝區中最多`s`前的狀態處於有效後的狀態。  例如: 
+     換句話說，每個項目存在於緩衝區中最多`s`前的狀態處於有效後的狀態。  例如：
 
      `void *memcpy(_Out_writes_bytes_all_(s) char *p1,    _In_reads_bytes_(s) char *p2,    _In_ int s); void * wordcpy(_Out_writes_all_(s) DWORD *p1,     _In_reads_(s) DWORD *p2,    _In_ int s);`
 
@@ -285,6 +288,7 @@ ms.locfileid: "63388552"
      以 null 結束陣列的指標運算式`p`  -  `_Curr_` (亦即`p`減去`_Curr_`) 由適當的語言標準所定義。  之前的項目`p`就不必在前的狀態是 有效，而且必須是有效後的狀態。
 
 ## <a name="optional-pointer-parameters"></a>選擇性的指標參數
+
  當指標參數註釋包含`_opt_`，它會指出參數可能是 null。 否則，註解會執行版本不包含相同`_opt_`。 以下是一份`_opt_`variant 的指標參數註釋：
 
 ||||
@@ -384,6 +388,7 @@ ms.locfileid: "63388552"
    傳回的指標會指向有效的緩衝區，如果函式成功，則為 null 如果函式失敗。 此註解是針對參考參數。
 
 ## <a name="output-reference-parameters"></a>輸出參考參數
+
  參考參數的常見用法是輸出參數。  簡單輸出參考參數，例如`int&`—`_Out_`提供正確的語意。  不過，當輸出值是指標時，才 — 比方說`int *&`-對等指標註解讓`_Outptr_ int **`沒有提供正確的語意。  若要精確的指標類型的輸出參考參數的語意，使用這些複合的註解：
 
  **註解和描述**
@@ -445,13 +450,62 @@ ms.locfileid: "63388552"
      結果必須在後置狀態下，有效，但在後置狀態可能為 null。 指向有效的緩衝區的`s`位元組為單位的有效項目。
 
 ## <a name="return-values"></a>傳回值
+
  函式的傳回值類似`_Out_`參數但不同層級的 de-reference，而您無須考慮結果指標的概念。  下列的註釋，則傳回值會是標註的物件 — 純量、 結構的指標或緩衝區的指標。 這些註解具有相同的語意為對應`_Out_`註釋。
 
 |||
 |-|-|
 |`_Ret_z_`<br /><br /> `_Ret_writes_(s)`<br /><br /> `_Ret_writes_bytes_(s)`<br /><br /> `_Ret_writes_z_(s)`<br /><br /> `_Ret_writes_to_(s,c)`<br /><br /> `_Ret_writes_maybenull_(s)`<br /><br /> `_Ret_writes_to_maybenull_(s)`<br /><br /> `_Ret_writes_maybenull_z_(s)`|`_Ret_maybenull_`<br /><br /> `_Ret_maybenull_z_`<br /><br /> `_Ret_null_`<br /><br /> `_Ret_notnull_`<br /><br /> `_Ret_writes_bytes_to_`<br /><br /> `_Ret_writes_bytes_maybenull_`<br /><br /> `_Ret_writes_bytes_to_maybenull_`|
 
+## <a name="format-string-parameters"></a>格式字串參數
+
+- `_Printf_format_string_` 指出參數為格式字串以用於`printf`運算式。
+
+     **範例**
+
+    ```cpp
+    int MyPrintF(_Printf_format_string_ const wchar_t* format, ...)
+    {
+           va_list args;
+           va_start(args, format);
+           int ret = vwprintf(format, args);
+           va_end(args);
+           return ret;
+    }
+    ```
+
+- `_Scanf_format_string_` 指出參數為格式字串以用於`scanf`運算式。
+
+     **範例**
+
+    ```cpp
+    int MyScanF(_Scanf_format_string_ const wchar_t* format, ...)
+    {
+           va_list args;
+           va_start(args, format);
+           int ret = vwscanf(format, args);
+           va_end(args);
+           return ret;
+    }
+    ```
+
+- `_Scanf_s_format_string_` 指出參數為格式字串以用於`scanf_s`運算式。
+
+     **範例**
+
+    ```cpp
+    int MyScanF_s(_Scanf_s_format_string_ const wchar_t* format, ...)
+    {
+           va_list args; 
+           va_start(args, format);
+           int ret = vwscanf_s(format, args);
+           va_end(args); 
+           return ret;
+    }
+    ```
+
 ## <a name="other-common-annotations"></a>其他常見的註解
+
  **註解和描述**
 
 - `_In_range_(low, hi)`
@@ -481,7 +535,7 @@ ms.locfileid: "63388552"
 
 - `_Struct_size_bytes_(size)`
 
-     適用於結構或類別的宣告。  表示具有所指定的位元組數目可能會大於宣告的型別，該類型的有效物件`size`。  例如: 
+     適用於結構或類別的宣告。  表示具有所指定的位元組數目可能會大於宣告的型別，該類型的有效物件`size`。  例如：
 
      `typedef _Struct_size_bytes_(nSize) struct MyStruct {    size_t nSize;    ... };`
 
@@ -490,6 +544,7 @@ ms.locfileid: "63388552"
      `min(pM->nSize, sizeof(MyStruct))`
 
 ## <a name="related-resources"></a>相關資源
+
  [程式碼分析小組部落格](http://go.microsoft.com/fwlink/?LinkId=251197)
 
 ## <a name="see-also"></a>另請參閱
