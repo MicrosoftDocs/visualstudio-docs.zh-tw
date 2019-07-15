@@ -710,6 +710,8 @@
               href: cannot-change-value-dialog-box.md
             - name: 偵錯工具無法顯示原始程式碼或反組譯碼
               href: debugger-cannot-display-source-code-or-disassembly.md
+            - name: 記憶體不足的偵錯工具服務
+              href: error-debugger-services-no-memory.md
             - name: 偵錯工作階段的可執行檔對話方塊
               href: executable-for-debugging-session-dialog-box.md
             - name: 編輯後繼續對話方塊 (C++)
