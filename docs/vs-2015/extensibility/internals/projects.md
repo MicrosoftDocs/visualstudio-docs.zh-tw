@@ -15,11 +15,11 @@ caps.latest.revision: 44
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: a251af12ccf4be5f0f48f789ac59fedaed3299b0
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58942982"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68183941"
 ---
 # <a name="projects"></a>專案
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -31,12 +31,12 @@ ms.locfileid: "58942982"
  *專案類型*加入新種類的專案，例如程式設計語言的支援。 比方說，Visual Studio 支援每種語言有它自己的專案類型，以及 IronPython 整合範例包括 IronPython 語言的專案類型。 您必須建立 C# 或 Visual Basic 自訂如何項目會建置、 偵錯、 部署，並顯示在以外的語言的專案類型**方案總管 中**。 如需詳細資訊，請參閱 <<c0> [ 專案類型](../../extensibility/internals/project-types.md)。  
   
  [專案子類型](../../extensibility/internals/project-subtypes.md)  
- *專案子類型*專案類型為基礎，而且可用以自訂建置、 偵錯和部署專案的方式。 Visual Studio 會使用智慧型裝置專案; 中的專案子類型他們藉由將新建立的程式從開發電腦複製到目標裝置自訂部署。 C# 和 Visual Basic 專案類型可以作為基礎專案子類型;C + + 專案類型不能。 您自己的專案類型也可用為基礎的專案子類型。 如需詳細資訊，請參閱 <<c0> [ 專案子類型](../../extensibility/internals/project-subtypes.md)。  
+ *專案子類型*專案類型為基礎，而且可用以自訂建置、 偵錯和部署專案的方式。 Visual Studio 會使用智慧型裝置專案; 中的專案子類型他們藉由將新建立的程式從開發電腦複製到目標裝置自訂部署。 C#和 Visual Basic 專案類型可以作為基礎專案子類型;C++專案類型不能。 您自己的專案類型也可用為基礎的專案子類型。 如需詳細資訊，請參閱 <<c0> [ 專案子類型](../../extensibility/internals/project-subtypes.md)。  
   
  [Web 專案](../../extensibility/internals/web-projects.md)  
  說明 Web 專案，進而建立 Web 應用程式。  
   
- [新的專案產生：在幕後，第一部](../../extensibility/internals/new-project-generation-under-the-hood-part-one.md)和[產生新專案：在幕後，第二部分](../../extensibility/internals/new-project-generation-under-the-hood-part-two.md)  
+ [新專案產生：在幕後，第一部](../../extensibility/internals/new-project-generation-under-the-hood-part-one.md)和[產生新專案：一探究竟，第二部份](../../extensibility/internals/new-project-generation-under-the-hood-part-two.md)  
  說明實際發生的狀況時建立新的專案。  
   
  [VSSDK 範例](../../misc/vssdk-samples.md)  

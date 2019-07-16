@@ -13,11 +13,11 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 2a3e5f690a679118c7bb02c110d6e5d066a2bd0d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58930365"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68153388"
 ---
 # <a name="bplocation"></a>BP_LOCATION
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -57,25 +57,25 @@ public struct BP_LOCATION {
  值，以從[BP_LOCATION_TYPE](../../../extensibility/debugger/reference/bp-location-type.md)列舉，用來解譯`bpLocation`聯集或`unionmemberX`成員。  
   
  `bpLocation`.`bplocCodeFileLine`  
- [只有 c + +]包含[BP_LOCATION_CODE_FILE_LINE](../../../extensibility/debugger/reference/bp-location-code-file-line.md)結構，如果`bpLocationType`  =  `BPLT_CODE_FILE_LINE`。  
+ [C++只]包含[BP_LOCATION_CODE_FILE_LINE](../../../extensibility/debugger/reference/bp-location-code-file-line.md)結構，如果`bpLocationType`  =  `BPLT_CODE_FILE_LINE`。  
   
  `bpLocation.bplocCodeFuncOffset`  
- [只有 c + +]包含[BP_LOCATION_CODE_FUNC_OFFSET](../../../extensibility/debugger/reference/bp-location-code-func-offset.md)結構，如果`bpLocationType`  =  `BPLT_CODE_FUNC_OFFSET`。  
+ [C++只]包含[BP_LOCATION_CODE_FUNC_OFFSET](../../../extensibility/debugger/reference/bp-location-code-func-offset.md)結構，如果`bpLocationType`  =  `BPLT_CODE_FUNC_OFFSET`。  
   
  `bpLocation.bplocCodeContext`  
- [只有 c + +]包含[BP_LOCATION_CODE_CONTEXT](../../../extensibility/debugger/reference/bp-location-code-context.md)結構，如果`bpLocationType`  =  `BPLT_CODE_CONTEXT`。  
+ [C++只]包含[BP_LOCATION_CODE_CONTEXT](../../../extensibility/debugger/reference/bp-location-code-context.md)結構，如果`bpLocationType`  =  `BPLT_CODE_CONTEXT`。  
   
  `bpLocation.bplocCodeString`  
- [只有 c + +]包含[BP_LOCATION_CODE_STRING](../../../extensibility/debugger/reference/bp-location-code-string.md)結構，如果`bpLocationType`  =  `BPLT_CODE_STRING`。  
+ [C++只]包含[BP_LOCATION_CODE_STRING](../../../extensibility/debugger/reference/bp-location-code-string.md)結構，如果`bpLocationType`  =  `BPLT_CODE_STRING`。  
   
  `bpLocation.bplocCodeAddress`  
- [只有 c + +]包含[BP_LOCATION_CODE_ADDRESS](../../../extensibility/debugger/reference/bp-location-code-address.md)結構，如果`bpLocationType`  =  `BPLT_CODE_ADDRESS`。  
+ [C++只]包含[BP_LOCATION_CODE_ADDRESS](../../../extensibility/debugger/reference/bp-location-code-address.md)結構，如果`bpLocationType`  =  `BPLT_CODE_ADDRESS`。  
   
  `bpLocation.bplocDataString`  
- [只有 c + +]包含[BP_LOCATION_DATA_STRING](../../../extensibility/debugger/reference/bp-location-data-string.md)結構，如果`bpLocationType`  =  `BPLT_DATA_STRING`。  
+ [C++只]包含[BP_LOCATION_DATA_STRING](../../../extensibility/debugger/reference/bp-location-data-string.md)結構，如果`bpLocationType`  =  `BPLT_DATA_STRING`。  
   
  `bpLocation.bplocResolution`  
- [只有 c + +]包含[BP_LOCATION_RESOLUTION](../../../extensibility/debugger/reference/bp-location-resolution.md)結構，如果`bpLocationType`  =  `BPLT_RESOLUTION`。  
+ [C++只]包含[BP_LOCATION_RESOLUTION](../../../extensibility/debugger/reference/bp-location-resolution.md)結構，如果`bpLocationType`  =  `BPLT_RESOLUTION`。  
   
  `unionmember1`  
  [C#只]請參閱有關如何解譯的備註。  

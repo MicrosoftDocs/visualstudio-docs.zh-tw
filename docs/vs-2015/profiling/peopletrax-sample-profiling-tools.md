@@ -15,11 +15,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: e8984f37709f0f24722ae65a04972f940e955ff9
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "57867573"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68195544"
 ---
 # <a name="peopletrax-sample-profiling-tools"></a>PeopleTrax 範例 (程式碼剖析工具)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

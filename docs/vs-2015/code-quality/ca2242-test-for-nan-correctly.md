@@ -15,11 +15,11 @@ author: gewarren
 ms.author: gewarren
 manager: wpickett
 ms.openlocfilehash: 17a98ce3d213c5d9ae85bb5132a0a44e50112037
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58930533"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68142348"
 ---
 # <a name="ca2242-test-for-nan-correctly"></a>CA2242:必須正確測試 NaN
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

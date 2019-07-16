@@ -12,11 +12,11 @@ author: corob-msft
 ms.author: corob
 manager: jillfra
 ms.openlocfilehash: b9f5db4ccd70136b711f5bd221244418cf843485
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60061654"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68151250"
 ---
 # <a name="build-an-opengl-es-application-on-android-and-ios"></a>Build an OpenGL ES Application on Android and iOS
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,11 +37,11 @@ ms.locfileid: "60061654"
   
 #### <a name="to-create-a-new-project"></a>建立新的專案  
   
-1. 開啟 Visual Studio。 在功能表列上，依序選擇 檔案 、新增 和 專案 。  
+1. 開啟 Visual Studio。 在功能表列上，依序選擇 檔案  、新增  和 專案  。  
   
-2. 在 [新增專案]  對話方塊的 [範本] 底下，選擇 [Visual C++] 、[跨平台] ，然後選擇 [OpenGLES 應用程式 (Android、iOS)]  範本。  
+2. 在 [新增專案]  對話方塊的 [範本]  底下，選擇 [Visual C++]  、[跨平台]  ，然後選擇 [OpenGLES 應用程式 (Android、iOS)]  範本。  
   
-3. 指定像是 `MyOpenGLESApp` 的應用程式名稱，然後選擇 [確定]。  
+3. 指定像是 `MyOpenGLESApp` 的應用程式名稱，然後選擇 [確定]  。  
   
     ![新的 OpenGLES 應用程式專案](../cross-platform/media/cppmdd-opengles-newproj.PNG "CPPMDD_OpenGLES_NewProj")  
   
@@ -74,7 +74,7 @@ ms.locfileid: "60061654"
   
     使用 x86 將目標設定為適用於 Windows 的 Android 模擬器。 如果您將目標設定為裝置，請根據裝置處理器來選擇方案平台。 如果未顯示 [方案平台]  清單，請從 [新增或移除按鈕]  清單中選擇 [方案平台]  ，然後選擇您的平台。  
   
-2. 在方案總管 中，開啟 MyOpenGLESApp.Android.Packaging 專案的捷徑功能表，然後選擇 [建置] 。  
+2. 在方案總管  中，開啟 MyOpenGLESApp.Android.Packaging 專案的捷徑功能表，然後選擇 [建置]  。  
   
     ![建置 Android 封裝專案](../cross-platform/media/cppmdd-opengles-andbuild.png "CPPMDD_OpenGLES_AndBuild")  
   
@@ -119,7 +119,7 @@ ms.locfileid: "60061654"
   
     使用 x86 將目標設定為 iOS 模擬器。 如果您將目標設定為 iOS 裝置，請根據裝置處理器 (通常是 ARM 處理器) 來選擇方案平台。 如果未顯示 [方案平台]  清單，請從 [新增或移除按鈕]  清單中選擇 [方案平台]  ，然後選擇您的平台。  
   
-3. 在方案總管中，開啟 MyOpenGLESApp.iOS.Application 專案的捷徑功能表，然後選擇 [建置] 。  
+3. 在方案總管中，開啟 MyOpenGLESApp.iOS.Application 專案的捷徑功能表，然後選擇 [建置]  。  
   
     ![建置 iOS 應用程式專案](../cross-platform/media/cppmdd-opengles-iosbuild.png "CPPMDD_OpenGLES_iOSBuild")  
   

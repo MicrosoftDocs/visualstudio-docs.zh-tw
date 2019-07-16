@@ -1,5 +1,5 @@
 ---
-title: HOW TO：變更字型 |Microsoft Docs
+title: 作法：變更字型 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -12,13 +12,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: a5aafed36dd9e011cef34391aa3b87027257b91d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58943558"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68185193"
 ---
-# <a name="how-to-change-fonts"></a>HOW TO：變更字型
+# <a name="how-to-change-fonts"></a>作法：變更字型
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 您可以變更字型、 字型樣式和字型大小，Spy + + windows。  
@@ -29,7 +29,7 @@ ms.locfileid: "58943558"
   
 2. 選擇字型、 字型樣式和字型大小。  
   
-3. 按一下 [確定 **Deploying Office Solutions**]。  
+3. 按一下 [確定]  。  
   
    選取**預設為儲存字型**會導致所有未來 Spy + + windows 會使用此字型。  
   

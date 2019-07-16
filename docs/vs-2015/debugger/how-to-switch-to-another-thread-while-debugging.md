@@ -1,5 +1,5 @@
 ---
-title: HOW TO：偵錯時切換到另一個執行緒 |Microsoft Docs
+title: 作法：偵錯時切換到另一個執行緒 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -17,13 +17,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 8f481a0b1cb2142dc7dbfe11e17ac627753cebf0
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60052437"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68176513"
 ---
-# <a name="how-to-switch-to-another-thread-while-debugging"></a>HOW TO：偵錯時切換到另一個執行緒
+# <a name="how-to-switch-to-another-thread-while-debugging"></a>作法：在偵錯時切換到另一個執行緒
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 當您偵錯多執行緒應用程式時，您可以使用數個方法中的任何一種方法，將內容從目前使用的執行緒切換至另一個執行緒。  

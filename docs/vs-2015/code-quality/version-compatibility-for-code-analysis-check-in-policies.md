@@ -13,11 +13,11 @@ author: gewarren
 ms.author: gewarren
 manager: wpickett
 ms.openlocfilehash: 0a63ead03baffaa0ce8047220ff1ce8a33c88be8
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60082226"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68201201"
 ---
 # <a name="version-compatibility-for-code-analysis-check-in-policies"></a>程式碼分析簽入原則的版本相容性
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

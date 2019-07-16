@@ -19,11 +19,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 5ea088eadc09d45d576dd3c9cd33e5d9e2d79fc8
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60048550"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68160633"
 ---
 # <a name="limitations-on-script-debugging"></a>指令碼偵錯的限制
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,7 +44,7 @@ ms.locfileid: "60048550"
 - 位於在 `<script id="">` 區塊中設定中斷點，中斷點對應會忽略 `id` 屬性。  
   
 ## <a name="breakpoint-mapping-and-duplicate-lines"></a>中斷點對應和重複的程式行  
- 為了要在伺服器端和用戶端指令碼中找到對應位置，中斷點對應演算法會檢查每一行的程式碼。 演算法會假設每一行都是唯一的。 如果有兩行以上包含相同的程式碼，而且您已在其中一個重複的程式行上設定中斷點，則中斷點對應演算法可能會在用戶端檔案中選取錯誤的重複項目。 為了避免這種情況發生，請在您設定中斷點的程式行上加入註解。 例如:   
+ 為了要在伺服器端和用戶端指令碼中找到對應位置，中斷點對應演算法會檢查每一行的程式碼。 演算法會假設每一行都是唯一的。 如果有兩行以上包含相同的程式碼，而且您已在其中一個重複的程式行上設定中斷點，則中斷點對應演算法可能會在用戶端檔案中選取錯誤的重複項目。 為了避免這種情況發生，請在您設定中斷點的程式行上加入註解。 例如：  
   
 ```  
 i++ ;  

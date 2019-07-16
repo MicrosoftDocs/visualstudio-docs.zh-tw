@@ -1,5 +1,5 @@
 ---
-title: HOW TO：偵錯.NET Framework 原始檔 |Microsoft Docs
+title: 作法：偵錯.NET Framework 原始檔 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -17,13 +17,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 49b13b8406dc96e8e7ebe5e79e26c5da02e8a53a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60092106"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68205435"
 ---
-# <a name="how-to-debug-net-framework-source"></a>HOW TO：偵錯.NET Framework 原始檔
+# <a name="how-to-debug-net-framework-source"></a>作法：對 .NET Framework 來源進行偵錯
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 最新版本[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]提供的新功能[!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]偵錯。 若要偵錯[!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]來源，您必須具有存取權的程式碼偵錯符號。 您也必須啟用逐步執行到[!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]來源。  
@@ -38,9 +38,9 @@ ms.locfileid: "60092106"
   
 3. 在 **一般**方塊中，設定**啟用.NET Framework**來源逐步執行。  
   
-    1. 如果您已啟用 Just My Code，將會出現警告對話方塊，通知您 Just My Code 現在已停用。 按一下 [確定] 。  
+    1. 如果您已啟用 Just My Code，將會出現警告對話方塊，通知您 Just My Code 現在已停用。 按一下 [確定]  。  
   
-    2. 如果您未設定符號快取區位置，將會出現另一個對話方塊，通知您現在已經設定預設的符號快取區位置。 按一下 [確定] 。  
+    2. 如果您未設定符號快取區位置，將會出現另一個對話方塊，通知您現在已經設定預設的符號快取區位置。 按一下 [確定 **Deploying Office Solutions**]。  
   
 4. 底下**偵錯**分類中，按一下**符號**。  
   
@@ -58,7 +58,7 @@ ms.locfileid: "60092106"
   
      如果您沒有選擇立即下載符號，便會在下次開始偵錯程式時，自動下載符號。  
   
-7. 按一下 [確定] 關閉 [選項] 對話方塊。  
+7. 按一下 [確定]  關閉 [選項]  對話方塊。  
   
 ### <a name="to-load-framework-symbols-using-the-modules-window"></a>若要使用模組視窗載入 Framework 符號  
   

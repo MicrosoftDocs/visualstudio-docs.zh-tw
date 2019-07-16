@@ -12,11 +12,11 @@ caps.latest.revision: 28
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 31b55c57f47f25814eff24f13bcf91408468d0f4
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60087304"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68200945"
 ---
 # <a name="what39s-new-in-source-control-in-visual-studio-2015"></a>什麼&#39;Visual Studio 2015 中的原始檔控制的新功能
 

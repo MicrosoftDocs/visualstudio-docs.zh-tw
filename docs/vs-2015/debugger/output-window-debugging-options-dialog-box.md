@@ -19,16 +19,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 9153da163fb30b05e13d9c25f8589d632d64326e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58939696"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68198148"
 ---
 # <a name="output-window-debugging-options-dialog-box"></a>選項對話方塊、偵錯、輸出視窗
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-您可以指定要在 [輸出] 視窗中顯示哪些類型的偵錯資訊。 若要顯示這些選項，請開啟 [工具] 功能表、按一下 [選項]、展開 [偵錯] 節點，然後按一下 [輸出] 視窗。  
+您可以指定要在 [輸出]  視窗中顯示哪些類型的偵錯資訊。 若要顯示這些選項，請開啟 [工具]  功能表、按一下 [選項]  、展開 [偵錯]  節點，然後按一下 [輸出] 視窗  。  
   
  **一般輸出設定**  
  此類別包含判斷一般偵錯訊息是否出現在控制項**輸出**視窗。 您可以指定是否顯示每一種訊息類型。  

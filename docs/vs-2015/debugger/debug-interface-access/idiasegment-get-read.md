@@ -14,11 +14,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: a1ef1a39666d1901abf879e7878866b5cfc1fa8b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58929942"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68151771"
 ---
 # <a name="idiasegmentgetread"></a>IDiaSegment::get_read
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

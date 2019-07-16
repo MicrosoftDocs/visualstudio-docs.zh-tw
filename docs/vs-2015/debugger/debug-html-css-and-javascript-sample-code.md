@@ -15,11 +15,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 134b4e3c5195e9008d951062ec813a939d0d4fe6
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58929957"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68161475"
 ---
 # <a name="debug-html-css-and-javascript-sample-code"></a>偵錯 HTML、CSS 和 JavaScript 範例程式碼
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

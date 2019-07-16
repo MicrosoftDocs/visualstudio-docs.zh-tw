@@ -12,11 +12,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 04d02d600741b6220aeeafc29ed1c88c37d712a0
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58944816"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68160155"
 ---
 # <a name="window-menu-commands"></a>視窗功能表命令
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,7 +38,7 @@ ms.locfileid: "58944816"
  **關閉 / 全部關閉**  
  關閉 Spy + + 中的一個或所有視窗。  
   
- **重新整理**  
+ **[重新整理]**  
  重新整理目前選取的檢視。  
   
  **視窗**  

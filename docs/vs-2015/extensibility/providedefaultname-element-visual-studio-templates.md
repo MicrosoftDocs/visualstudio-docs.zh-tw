@@ -13,19 +13,19 @@ caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 0bd18dd979436b02cc12a4dab5439bdb5f371e2d
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "58946121"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68193884"
 ---
 # <a name="providedefaultname-element-visual-studio-templates"></a>ProvideDefaultName 項目 (Visual Studio 範本)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 指定是否[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]專案系統會產生的範本中的預設名稱**加入新項目**或是**新專案** 對話方塊。  
   
- \<VSTemplate>  
- \<TemplateData>  
+ \<VSTemplate >  
+ \<TemplateData >  
  \<ProvideDefaultName>  
   
 ## <a name="syntax"></a>語法  

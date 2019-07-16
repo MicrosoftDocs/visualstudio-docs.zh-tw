@@ -12,11 +12,11 @@ caps.latest.revision: 52
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 64ab627d785e8b00b5159969a01dc1102df30359
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60117573"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68184932"
 ---
 # <a name="adding-a-menu-to-the-visual-studio-menu-bar"></a>將功能表新增至 Visual Studio 功能表列
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ ms.locfileid: "60117573"
 
 ## <a name="creating-a-vsix-project-that-has-a-custom-command-item-template"></a>建立具有自訂命令項目範本的 VSIX 專案
 
-1. 建立 VSIX 專案，名為`TopLevelMenu`。 您可以找到在 VSIX 專案範本**新的專案**下方的對話方塊**Visual C#** / **擴充性**。  如需詳細資訊，請參閱 <<c0> [ 建立具有功能表命令的擴充](../extensibility/creating-an-extension-with-a-menu-command.md)。
+1. 建立 VSIX 專案，名為`TopLevelMenu`。 您可以找到在 VSIX 專案範本**新的專案**下方的對話方塊**Visual C#**  / **擴充性**。  如需詳細資訊，請參閱 <<c0> [ 建立具有功能表命令的擴充](../extensibility/creating-an-extension-with-a-menu-command.md)。
 
 2. 當專案開啟時，新增名為的自訂命令項目範本**TestCommand**。 在 **方案總管**，以滑鼠右鍵按一下專案節點，然後選取**新增 / 新項目**。 在 **加入新項目**對話方塊中，移至**Visual C# / 擴充性**，然後選取**自訂命令**。 在 **名稱**視窗的底部欄位中，將命令的檔案名稱變更為**TestCommand.cs**。
 

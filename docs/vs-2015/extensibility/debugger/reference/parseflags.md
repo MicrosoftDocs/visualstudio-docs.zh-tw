@@ -13,11 +13,11 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 0a9ebe244f3e1c1f3f95508d6df979edee2d4aed
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58944293"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68205125"
 ---
 # <a name="parseflags"></a>PARSEFLAGS
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]

@@ -13,11 +13,11 @@ caps.latest.revision: 15
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 64ee4b40aefc848d89068076fb3176ae6b625e9f
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58929954"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68198699"
 ---
 # <a name="idebugprogramprovider2watchforproviderevents"></a>IDebugProgramProvider2::WatchForProviderEvents
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -52,7 +52,7 @@ int WatchForProviderEvents(
  `Flags`  
  [in]從旗標的組合[PROVIDER_FLAGS](../../../extensibility/debugger/reference/provider-flags.md)列舉型別。 此呼叫一般會在下列旗標：  
   
-|旗標|描述|  
+|旗標|說明|  
 |----------|-----------------|  
 |`PFLAG_REMOTE_PORT`|呼叫端在遠端電腦上執行。|  
 |`PFLAG_DEBUGGEE`|呼叫端目前正在偵錯 （每個節點都會傳回封送處理的其他資訊）。|  

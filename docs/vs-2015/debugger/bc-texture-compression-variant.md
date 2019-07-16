@@ -10,11 +10,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: f0758d9eb5a003b0353ceb4fee21996d90685fa5
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60111229"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68161695"
 ---
 # <a name="bc-texture-compression-variant"></a>BC 紋理壓縮變異
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

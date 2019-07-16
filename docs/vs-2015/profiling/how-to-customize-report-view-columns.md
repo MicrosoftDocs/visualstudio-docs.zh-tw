@@ -1,5 +1,5 @@
 ---
-title: HOW TO：自訂報表檢視資料行 | Microsoft Docs
+title: 作法：自訂報表檢視資料行 | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -15,11 +15,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: f1f6cf340d7c0ef87f34fc908e075f36eed2962c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60050942"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68146130"
 ---
 # <a name="how-to-customize-report-view-columns"></a>HOW TO：自訂報表檢視資料行
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -50,12 +50,12 @@ Visual Studio Team System Development 版的效能工具已完全整合至整合
   
 1. 開啟報表檢視。  
   
-2. 以滑鼠右鍵按一下報表檢視介面，然後按一下 [新增/移除資料行]。  
+2. 以滑鼠右鍵按一下報表檢視介面，然後按一下 [新增/移除資料行]  。  
   
-     [新增/移除資料行] 對話方塊隨即顯示。  
+     [新增/移除資料行]  對話方塊隨即顯示。  
   
 3. 選取您要新增的資料行。  
   
 4. 按一下箭號按鈕以重新排列資料行。  
   
-5. 按一下 [確定] 。
+5. 按一下 [確定 **Deploying Office Solutions**]。

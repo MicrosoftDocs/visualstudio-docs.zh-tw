@@ -11,13 +11,13 @@ caps.latest.revision: 16
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: f2cfbd84bc4f9298358a2a2d1ba87f76d6e5303c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58940132"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68184989"
 ---
-# <a name="accessing-the-text-buffer-by-using-the-legacy-api"></a>使用舊版 API 存取的文字緩衝區
+# <a name="accessing-the-text-buffer-by-using-the-legacy-api"></a>使用舊版 API 存取文字緩衝區
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 負責管理文字資料流和檔案持續性的文字。 雖然緩衝區可以讀取或寫入其他格式中，使用 Unicode 來執行所有一般的通訊緩衝區。 在舊版的 Api 中，文字緩衝區可以使用一段或二維的座標系統識別緩衝區中的字元位置。  

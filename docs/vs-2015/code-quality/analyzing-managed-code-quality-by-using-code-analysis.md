@@ -13,16 +13,16 @@ author: gewarren
 ms.author: gewarren
 manager: wpickett
 ms.openlocfilehash: 5d8740b79b026ade7f3da19aa4a89cacd94df17d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58941551"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68157133"
 ---
 # <a name="analyzing-managed-code-quality-by-using-code-analysis"></a>使用程式碼分析進行 Managed 程式碼品質分析
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-您可以使用 Visual Studio 中的程式碼分析工具找出程式碼中的潛在問題，例如不安全的資料存取、使用情況違規，以及設計問題。 程式碼分析適用於.NET Framework、 原生 （C 和 c + +） 和資料庫應用程式。 Managed 程式碼的程式碼分析組織中的規則*規則集*目標特定程式碼的問題。  
+您可以使用 Visual Studio 中的程式碼分析工具找出程式碼中的潛在問題，例如不安全的資料存取、使用情況違規，以及設計問題。 程式碼分析適用於.NET Framework 中，原生 (C 和C++)，以及資料庫應用程式。 Managed 程式碼的程式碼分析組織中的規則*規則集*目標特定程式碼的問題。  
   
 ## <a name="common-tasks"></a>一般工作  
   

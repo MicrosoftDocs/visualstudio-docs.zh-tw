@@ -12,11 +12,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 4890790db10ca1956a3e1f0163cb8bbc8c9df214
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58945923"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "68154216"
 ---
 # <a name="idiasymbolgettextureslot"></a>IDiaSymbol::get_textureSlot
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

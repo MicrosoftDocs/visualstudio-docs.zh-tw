@@ -28,11 +28,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: e60f9b3c9acf1377139fee27486bb10251d8804a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60059587"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68158462"
 ---
 # <a name="memory-windows"></a>記憶體視窗
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -76,7 +76,7 @@ ms.locfileid: "60059587"
 2. 輸入或貼上您想要查看，然後按下的位址**ENTER**。  
   
 ## <a name="changing-the-way-the-memory-window-displays-information"></a>變更記憶體視窗顯示資訊的方式  
- 您可以自訂 [記憶體] 視窗顯示記憶體內容的方式。 根據預設，記憶體內容會在十六進位格式中以一位元組整數資料型別出現，而且欄位數會自動依據目前視窗寬度來決定。  
+ 您可以自訂 [記憶體]  視窗顯示記憶體內容的方式。 根據預設，記憶體內容會在十六進位格式中以一位元組整數資料型別出現，而且欄位數會自動依據目前視窗寬度來決定。  
   
 #### <a name="to-change-the-format-of-the-memory-contents"></a>若要變更記憶體內容格式  
   
@@ -100,7 +100,7 @@ ms.locfileid: "60059587"
   
     如果開啟實況評估，則會選取這個選項，您只要再按一下該選項即可關閉實況評估。 如果關閉實況評估，則不會選取這個選項，您只要再按一下該選項即可開啟實況評估。  
   
-   您可以在 [記憶體] 視窗的頂端隱藏或顯示工具列。 隱藏工具列時，您無法存取 [位址] 方塊或其他工具。  
+   您可以在 [記憶體]  視窗的頂端隱藏或顯示工具列。 隱藏工具列時，您無法存取 [位址] 方塊或其他工具。  
   
 #### <a name="to-toggle-the-toolbar"></a>若要切換工具列  
   

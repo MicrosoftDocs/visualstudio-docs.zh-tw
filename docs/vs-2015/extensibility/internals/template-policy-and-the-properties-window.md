@@ -11,11 +11,11 @@ caps.latest.revision: 16
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 1c67150c5a71a3d70df85669319795a405c60f4a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58942764"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68156028"
 ---
 # <a name="template-policy-and-the-properties-window"></a>範本原則和屬性視窗
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

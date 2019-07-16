@@ -14,19 +14,19 @@ caps.latest.revision: 8
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 98779743f1e7c68f579334d74d3651357c6ee0b4
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58943530"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68184121"
 ---
 # <a name="showbydefault-visual-studio-templates"></a>ShowByDefault (Visual Studio 範本)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 如果`false`，指定範本只會顯示在指定[TemplateGroupID](../extensibility/templategroupid-element-visual-studio-templates.md)。  
   
- \<VSTemplate>  
- \<TemplateData>  
+ \<VSTemplate >  
+ \<TemplateData >  
  \<ShowByDefault>  
   
 ## <a name="syntax"></a>語法  
@@ -46,7 +46,7 @@ ms.locfileid: "58943530"
   
 ### <a name="parent-elements"></a>父項目  
   
-|項目|描述|  
+|項目|說明|  
 |-------------|-----------------|  
 |[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|將範本分類，並定義該範本在 [新增專案]  或 [加入新項目]  對話方塊中顯示的方式。|  
   

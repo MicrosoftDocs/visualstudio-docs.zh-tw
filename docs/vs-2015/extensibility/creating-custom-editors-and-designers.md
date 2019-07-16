@@ -12,11 +12,11 @@ caps.latest.revision: 32
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: dc94d11a5ed118f0133657ebf5b966623a199d64
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60064384"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68197418"
 ---
 # <a name="creating-custom-editors-and-designers"></a>建立自訂編輯器和設計工具
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -75,7 +75,7 @@ Visual Studio 整合式的開發環境 (IDE) 可裝載不同類型的編輯器�
  [逐步解說：建立自訂編輯器](../extensibility/walkthrough-creating-a-custom-editor.md)  
  說明如何建立自訂編輯器。  
   
- [逐步解說：將功能加入至自訂編輯器](../extensibility/walkthrough-adding-features-to-a-custom-editor.md)  
+ [逐步解說：將功能新增至自訂編輯器](../extensibility/walkthrough-adding-features-to-a-custom-editor.md)  
  說明如何將功能加入至自訂編輯器。  
   
  [設計工具初始化和中繼資料組態](../extensibility/designer-initialization-and-metadata-configuration.md)  

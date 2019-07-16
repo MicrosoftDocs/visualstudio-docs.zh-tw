@@ -17,11 +17,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 5a889250e641e004bdb0d89f6965c43c3d6b8e2a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60041394"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68155251"
 ---
 # <a name="extract-method-refactoring-c"></a>擷取方法重構 (C#)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -86,7 +86,7 @@ ms.locfileid: "60041394"
   
      底下會顯示新的方法簽章的預覽**預覽方法簽章**。  
   
-5. 按一下 [確定] 。  
+5. 按一下 [確定 **Deploying Office Solutions**]。  
   
 ## <a name="remarks"></a>備註  
  當您使用**擷取方法**命令時，新的方法會插入下列來源類別中的成員相同。  

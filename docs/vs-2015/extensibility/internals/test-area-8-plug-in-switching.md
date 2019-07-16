@@ -12,11 +12,11 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 90650b8b3c3432fce05b03a25033977e68f60fca
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60112945"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68203115"
 ---
 # <a name="test-area-8-plug-in-switching"></a>測試區域 8：外掛程式切換
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

@@ -1,5 +1,5 @@
 ---
-title: HOW TO：偵錯 Web 應用程式 |Microsoft Docs
+title: 作法：偵錯 Web 應用程式 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -20,13 +20,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: cd3cbbcd740c0f124b8ab4379204a9d425cd541c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60039540"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68205407"
 ---
-# <a name="how-to-debug-web-applications"></a>HOW TO：偵錯 Web 應用程式
+# <a name="how-to-debug-web-applications"></a>作法：對 Web 應用程式進行偵錯
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 是開發 Web 應用程式中的主要技術[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]。 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 偵錯工具提供在本機環境或遠端伺服器上，偵錯 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] Web 應用程式所用的強大工具。 本主題描述如何偵錯[!INCLUDE[vstecasp](../includes/vstecasp-md.md)]在開發期間的專案。 如需如何偵錯資訊[!INCLUDE[vstecasp](../includes/vstecasp-md.md)]Web 應用程式已部署在實際執行伺服器上，請參閱 <<c2> [ 偵錯部署 Web 應用程式](../debugger/debugging-deployed-web-applications.md)。  

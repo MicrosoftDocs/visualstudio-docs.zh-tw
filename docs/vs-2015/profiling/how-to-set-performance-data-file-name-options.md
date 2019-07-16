@@ -10,11 +10,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: faaa78d34c71d1f0b436b861ccb1ac4892267e9b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60057832"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68205791"
 ---
 # <a name="how-to-set-performance-data-file-name-options"></a>HOW TO：設定效能資料檔案名稱選項
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,11 +38,11 @@ ms.locfileid: "60057832"
   
 ### <a name="to-change-the-naming-syntax-of-the-profiling-data-files-of-a-performance-session"></a>變更效能工作階段之程式碼剖析資料檔案的命名語法  
   
-1. 在 [效能總管] 中，以滑鼠右鍵按一下效能工作階段的名稱，然後按一下 [屬性]。  
+1. 在 [效能總管]  中，以滑鼠右鍵按一下效能工作階段的名稱，然後按一下 [屬性]  。  
   
-2. 按一下 [一般]。  
+2. 按一下 [一般]  。  
   
-3. 變更 [報告] 中的下列設定：  
+3. 變更 [報告]  中的下列設定：  
   
     |||  
     |-|-|  

@@ -10,11 +10,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: b6b022281b043b512491c2fe6366a1393b67dacd
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54753824"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68181334"
 ---
 # <a name="designing-user-interfaces"></a>設計使用者介面
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,6 +28,6 @@ ms.locfileid: "54753824"
 |在 Visual Studio 中開發 DirectX 應用程式。|[使用 3D 資產來打造遊戲和應用程式](../designers/working-with-3-d-assets-for-games-and-apps.md)|  
 |適用於您程式的標準圖示。|[Visual Studio 影像庫](../designers/the-visual-studio-image-library.md)|  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [逐步解說：建立簡單的應用程式](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md)   
  [Visual Studio 影像庫](../designers/the-visual-studio-image-library.md)

@@ -11,11 +11,11 @@ caps.latest.revision: 26
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: cc3f461c9e7dbdea1fd8481594292a0a247d2173
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: HT
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60038662"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68204292"
 ---
 # <a name="getting-started-with-the-vsix-project-template"></a>開始使用 VSIX 專案範本
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

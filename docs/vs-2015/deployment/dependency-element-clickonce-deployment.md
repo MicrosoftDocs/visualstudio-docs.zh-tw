@@ -27,11 +27,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: f191b11dfce5b3877d0a31e260e092000a556a5a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58941920"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68187775"
 ---
 # <a name="ltdependencygt-element-clickonce-deployment"></a>&lt;相依性&gt;項目 （ClickOnce 部署）
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -92,7 +92,7 @@ ms.locfileid: "58941920"
 ## <a name="assemblyidentity"></a>assemblyIdentity  
  必要項。 這個元素是 `dependentAssembly` 元素的子項。 內容`assemblyIdentity`必須如所述相同[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]應用程式資訊清單。 下表顯示的屬性`assemblyIdentity`項目。  
   
-|屬性|描述|  
+|屬性|說明|  
 |---------------|-----------------|  
 |`Name`|必要項。 識別應用程式的名稱。|  
 |`Version`|必要項。 指定的版本號碼的應用程式，以下列格式： `major.minor.build.revision`|  

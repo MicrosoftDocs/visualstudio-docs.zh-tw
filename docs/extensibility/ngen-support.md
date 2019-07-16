@@ -8,12 +8,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 02fe3ec6787eec0846f709ac65555260a3c03165
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 24f1b0a26875bbbf8dfc4ac7db1049f7309d9aa2
+ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66343981"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67891110"
 ---
 # <a name="ngen-support-in-vsix-v3"></a>VSIX v3 中的 Ngen 支援
 
@@ -37,7 +37,7 @@ ms.locfileid: "66343981"
 
 1. **Ngen** （布林值）-如果為 true，Visual Studio 安裝程式會 「 ngen"組件。
 2. **Ngen 應用程式**（字串）-Ngen 提供使用的應用程式的機會*app.config*檔案以解析組件相依性。 此值應該設定為應用程式其*app.config*您想要使用 （相對於 Visual Studio 安裝目錄中）。
-3. **Ngen 架構**（列舉）-原生方式編譯您的組件的架構。 選項包括：。 NotSpecified b。 X86 c. X64 d。 All
+3. **Ngen 架構**（列舉）-原生方式編譯您的組件的架構。 選項包括：。 NotSpecified b。 X86 c。 X64 d。 All
 4. **Ngen 優先順序**（1 到 3 之間的整數）-Ngen 優先權層級已記錄在[Ngen.exe 優先權等級](/dotnet/framework/tools/ngen-exe-native-image-generator#priority-levels)。
 
 以下就來看看**屬性**作用中的視窗：
@@ -55,9 +55,10 @@ ms.locfileid: "66343981"
     <NgenArchitecture>X86</NgenArchitecture>
     <NgenPriority>2</NgenPriority>
 </ProjectReference>
- ```
+```
 
- >**注意：** 如果您想，您可以直接編輯.csproj 檔案。
+> [!NOTE]
+> 如果您想，您可以直接編輯.csproj 檔案。
 
 ## <a name="extra-information"></a>額外的資訊
 

@@ -12,11 +12,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 0ddfc51c54c04ad0d79d7ef180a027cbd253ac09
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60043503"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68165444"
 ---
 # <a name="about-domain-specific-languages"></a>關於網域指定的語言
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

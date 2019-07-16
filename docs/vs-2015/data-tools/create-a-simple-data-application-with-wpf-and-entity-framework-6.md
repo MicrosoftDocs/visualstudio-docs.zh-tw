@@ -10,11 +10,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: decb17be7caa4ea0a300ddb4378ac0ad11520109
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60098801"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68145825"
 ---
 # <a name="create-a-simple-data-application-with-wpf-and-entity-framework-6"></a>使用 WPF 和 Entity Framework 6 建立簡單的資料應用程式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -56,7 +56,7 @@ ms.locfileid: "60098801"
   
     ![從資料庫的 EF 模型](../data-tools/media/raddata-ef-model-from-database.png "raddata 從資料庫的 EF 模型")  
   
-3. 在下一個畫面中，選擇您的 LocalDB Northwind 連接，然後按一下 [**下一步]**。  
+3. 在下一個畫面中，選擇您的 LocalDB Northwind 連接，然後按一下 [**下一步]** 。  
   
 4. 在精靈的下一個頁面中，我們選擇哪些資料表、 預存程序和其他要包含在 Entity Framework 模型中的資料庫物件。 展開樹狀檢視中的 [dbo] 節點，然後選擇客戶、 訂單及訂單詳細資料。 保留預設值檢查，然後按一下**完成**。  
   

@@ -10,16 +10,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 2dc0d0bf4efd8c30d874a24e94d3933d2eef713a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60097178"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68186555"
 ---
 # <a name="overview-of-visual-studio-graphics-diagnostics"></a>Visual Studio 圖形診斷概觀
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Visual Studio 圖形診斷是一組工具，用來記錄並分析 Direct3D 應用程式中的轉譯和效能問題。 圖形診斷可以用於 Windows 電腦、Windows 裝置模擬器或者遠端電腦或裝置上本機執行的應用程式。
+Visual Studio 圖形診斷  是一組工具，用來記錄並分析 Direct3D 應用程式中的轉譯和效能問題。 圖形診斷可以用於 Windows 電腦、Windows 裝置模擬器或者遠端電腦或裝置上本機執行的應用程式。
 
 ## <a name="using-graphics-diagnostics-to-debug-rendering-problems"></a>使用圖形診斷偵錯轉譯問題
  在具有豐富圖形的應用程式中偵錯轉譯問題，並不像啟動偵錯工具和逐步執行某些程式碼一樣簡單。 在每個框架中會根據狀態、資料、參數和程式碼的複雜來產生數十個唯一的像素，其中可能只有一些像素會出現您嘗試診斷的問題。 讓問題更複雜的情況是，產生各個像素的程式碼是在平行處理數百個像素的特殊硬體上執行。 傳統偵錯工具和技術 (即使在輕量的執行緒程式碼中也難以充分利用) 在面臨大量資料時的效果不佳。
@@ -46,7 +46,7 @@ Visual Studio 圖形診斷是一組工具，用來記錄並分析 Direct3D 應�
 ### <a name="the-graphics-toolbar-visual-studio"></a>圖形工具列 (Visual Studio)
  [圖形] 工具列可快速存取圖形診斷命令。
 
- [開始診斷] 按鈕會在 [圖形診斷] 下執行應用程式。 在 [圖形診斷] 下執行應用程式時，會啟用 [擷取下一個呈現的畫面格] 按鈕。
+ [開始診斷]  按鈕會在 [圖形診斷] 下執行應用程式。 在 [圖形診斷] 下執行應用程式時，會啟用 [擷取下一個呈現的畫面格]  按鈕。
 
 ### <a name="diagnostics-capture-interface"></a>診斷擷取介面
  使用圖形診斷執行應用程式時，Visual Studio 會顯示一個診斷工作階段介面，可用來擷取畫面格，同時顯示目前的 CPU 和 GPU 負載。 會顯示 CPU 和 GPU 負載，以協助您識別因其效能特性 (非轉譯錯誤) 而想要擷取的畫面格。
@@ -65,7 +65,7 @@ Visual Studio 圖形診斷是一組工具，用來記錄並分析 Direct3D 應�
 
 ##### <a name="to-open-the-directx-control-panel"></a>開啟 DirectX 控制台
 
-- 在功能表列上，選擇 [偵錯]、[圖形]、[DirectX 控制台]。
+- 在功能表列上，選擇 [偵錯]  、[圖形]  、[DirectX 控制台]  。
 
 ## <a name="graphics-analyzer"></a>圖形分析器
  Visual Studio 圖形分析器是一個專用介面，用於檢查已擷取畫面格中的轉譯和效能問題。 在圖形分析器內，有數個工具可協助您探索和了解應用程式的轉譯行為。 每個工具都會公開正在檢查之畫面格的不同種類的資訊，而且工具設計成與直覺式縮小轉譯問題來源搭配使用，並從其在畫面格緩衝區中的外觀開始。
@@ -109,7 +109,7 @@ Visual Studio 圖形診斷是一組工具，用來記錄並分析 Direct3D 應�
 ### <a name="event-call-stack"></a>事件呼叫堆疊
  著色器程式碼不是 Direct3D 應用程式中的唯一轉譯問題來源，有時，您的應用程式原始碼傳遞錯誤的參數，或未正確地設定 Direct3D。 先前討論的像素歷史記錄功能可協助您找到一種錯誤，是轉譯的物件因其所有像素都遭拒而遺漏時。 這種錯誤通常發生在您錯誤地設定某個設定時 (例如，控制如何執行深度測試的設定)，而您通常可以在遺漏物件繪製呼叫之呼叫堆疊中的某處找到您的錯誤。
 
- [事件呼叫堆疊](../debugger/graphics-event-call-stack.md)視窗會顯示 [事件] 清單中，每個圖形事件的完整呼叫堆疊，甚至可讓您跳到您的應用程式原始碼，如果偵錯資訊可用。 這是功能強大的工具，用於從 GPU 上第一次出現錯誤的位置追蹤回您應用程式原始程式碼中產生錯誤的位置。
+           [事件呼叫堆疊](../debugger/graphics-event-call-stack.md)視窗會顯示 [事件] 清單中，每個圖形事件的完整呼叫堆疊，甚至可讓您跳到您的應用程式原始碼，如果偵錯資訊可用。 這是功能強大的工具，用於從 GPU 上第一次出現錯誤的位置追蹤回您應用程式原始程式碼中產生錯誤的位置。
 
 ### <a name="object-table"></a>物件表
  可能有數百甚至數千個資源物件支援您應用程式所轉譯的每個畫面格。 這些可以包括背景緩衝區以及轉譯目標、紋理、頂點緩衝區、索引緩衝區、一般緩衝區；Direct3D 記住的所有項目幾乎都是物件。

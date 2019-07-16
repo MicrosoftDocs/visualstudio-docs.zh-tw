@@ -1,5 +1,5 @@
 ---
-title: IDebugProperty2::GetExtendedInfo | Microsoft Docs
+title: IDebugProperty2::GetExtendedInfo |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,11 +13,11 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 74810aab2f47a36c716891fd45b7424eb737b142
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58940852"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68164982"
 ---
 # <a name="idebugproperty2getextendedinfo"></a>IDebugProperty2::GetExtendedInfo
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -45,7 +45,7 @@ int GetExtendedInfo ( 
  [in]決定要擷取的擴充資訊的類型的 GUID。 如需詳細資訊，請參閱 < 備註 >。  
   
  `pExtendedInfo`  
- [out]傳回`VARIANT`（c + +） 或物件 (C#)，可用來擷取擴充的屬性的資訊。 比方說，這個參數可能會傳回`IUnknown`介面，可以查詢[IDebugDocumentText2](../../../extensibility/debugger/reference/idebugdocumenttext2.md)介面。 如需詳細資訊，請參閱 < 備註 >。  
+ [out]傳回`VARIANT`(C++) 或物件 (C#)，可用來擷取擴充的屬性的資訊。 比方說，這個參數可能會傳回`IUnknown`介面，可以查詢[IDebugDocumentText2](../../../extensibility/debugger/reference/idebugdocumenttext2.md)介面。 如需詳細資訊，請參閱 < 備註 >。  
   
 ## <a name="return-value"></a>傳回值  
  如果成功，則傳回`S_OK`; 否則會傳回錯誤碼。 傳回`S_GETEXTENDEDINFO_NO_EXTENDEDINFO`如果擷取沒有延伸資訊。  
@@ -55,7 +55,7 @@ int GetExtendedInfo ( 
   
  （因為不提供任何組件名稱，GUID 值會指定 C#） 此方法通常可辨識下列的 Guid。 供內部使用，可以建立額外的 Guid。  
   
-|名稱|GUID|描述|  
+|名稱|GUID|說明|  
 |----------|----------|-----------------|  
 |guidDocument|{3f98de84-fee9-11d0-b47f-00a0244a1dd2}|傳回`IUnknown`文件的介面。 通常[IDebugDocumentText2](../../../extensibility/debugger/reference/idebugdocumenttext2.md)介面可以從此`IUnknown`介面。|  
 |guidCodeContext|{e2fc65e-56ce-11d1-b528-00aax004a8797}|傳回`IUnknown`的文件內容的介面。 通常[IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md)介面可以從此`IUnknown`介面。|  

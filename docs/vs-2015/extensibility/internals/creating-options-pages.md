@@ -12,11 +12,11 @@ caps.latest.revision: 30
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 8c2b993a6c6947adfa3b01f2947b992b23236b8f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60106120"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68196941"
 ---
 # <a name="creating-options-pages"></a>建立選項頁
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -61,21 +61,21 @@ ms.locfileid: "60106120"
 ## <a name="example"></a>範例  
  以下是 [選項] 頁面的簡單"hello world"實作。 將下列程式碼加入預設專案由 Visual Studio Package 範本，使用**功能表命令**選項選取適當地將示範選項頁面的功能。  
   
-### <a name="description"></a>描述  
+### <a name="description"></a>說明  
  下列類別定義的最小的"hello world"選項頁面。 開啟時，使用者可以設定公用`HelloWorld`在屬性方格中的屬性。  
   
 ### <a name="code"></a>程式碼  
  [!code-csharp[UI_UserSettings_ToolsOptionPages#11](../../snippets/csharp/VS_Snippets_VSSDK/ui_usersettings_toolsoptionpages/cs/class1.cs#11)]
  [!code-vb[UI_UserSettings_ToolsOptionPages#11](../../snippets/visualbasic/VS_Snippets_VSSDK/ui_usersettings_toolsoptionpages/vb/class1.vb#11)]  
   
-### <a name="description"></a>描述  
+### <a name="description"></a>說明  
  將下列屬性套用至套件類別讓頁面上的選項可載入封裝時。 數字是任意的資源識別碼分類的頁面上，並在結束的布林值可讓您指定的頁面是否支援自動化。  
   
 ### <a name="code"></a>程式碼  
  [!code-csharp[UI_UserSettings_ToolsOptionPages#07](../../snippets/csharp/VS_Snippets_VSSDK/ui_usersettings_toolsoptionpages/cs/uiusersettingstoolsoptionspagespackage.cs#07)]
  [!code-vb[UI_UserSettings_ToolsOptionPages#07](../../snippets/visualbasic/VS_Snippets_VSSDK/ui_usersettings_toolsoptionpages/vb/uiusersettingstoolsoptionspagespackage.vb#07)]  
   
-### <a name="description"></a>描述  
+### <a name="description"></a>說明  
  下列事件處理常式會顯示 [選項] 頁面中設定的屬性值而定的結果。 它會使用<xref:Microsoft.VisualStudio.Shell.Package.GetDialogPage%2A>結果的方法，明確轉換成的自訂選項頁面型別存取頁面所公開的屬性。  
   
  封裝範本所產生的專案，在呼叫這個函式從`MenuItemCallback`函式，將它附加至的預設命令新增至**工具**功能表。  

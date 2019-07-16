@@ -11,11 +11,11 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: ccc99657b43fa53b8bf4f7d78ece61da8e7069cc
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58940707"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68153760"
 ---
 # <a name="mcontingentproperties-field"></a>m_contingentProperties 欄位
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

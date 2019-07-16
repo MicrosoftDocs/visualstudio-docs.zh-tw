@@ -16,11 +16,11 @@ author: gewarren
 ms.author: gewarren
 manager: wpickett
 ms.openlocfilehash: 75e67cdd058939837441bd969ac8629a6fc65dcc
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58930103"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68200356"
 ---
 # <a name="ca1306-set-locale-for-data-types"></a>CA1306:必須設定資料類型的地區設定
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

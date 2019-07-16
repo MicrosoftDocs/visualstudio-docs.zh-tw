@@ -10,11 +10,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: c7db175535e0eebdcf1974f0f85123959ba5a3ed
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58945688"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68192158"
 ---
 # <a name="historical-debugging"></a>歷程偵錯
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -68,7 +68,7 @@ private static int AddInt(int add)
   
 2. 在 `Console.WriteLine(resultInt);` 行上設定中斷點。  
   
-3. 開始偵錯。 程式碼會執行到中斷點。 在 [區域變數] 視窗中，您可以看到 `resultInt` 的值是 44。  
+3. 開始偵錯。 程式碼會執行到中斷點。 在 [區域變數]  視窗中，您可以看到 `resultInt` 的值是 44。  
   
 4. 開啟**診斷工具** 視窗 (**偵錯 / 顯示診斷工具**)。 程式碼視窗應該如下所示：  
   
@@ -82,7 +82,7 @@ private static int AddInt(int add)
   
     ![在 歷程偵錯模式中的程式碼視窗](../debugger/media/historicaldebuggingback.png "HistoricalDebuggingBack")  
   
-6. 現在您可以逐步執行 `AddAll()` 方法 (**F11**，或巡覽邊中的 [逐步執行] 按鈕)。 逐步往前執行 (**F10**，或巡覽邊中的 [移至下一個呼叫])。 粉紅色行現在位於 `j = AddInt(j);` 行。 在此情況下，**F10** 不會逐步執行下一行程式碼。 而是會逐步執行至下一個函式呼叫。 歷程偵錯呼叫會巡覽不同的呼叫，並略過不包括函式呼叫的程式碼行。  
+6. 現在您可以逐步執行 `AddAll()` 方法 (**F11**，或巡覽邊中的 [逐步執行]  按鈕)。 逐步往前執行 (**F10**，或巡覽邊中的 [移至下一個呼叫]  )。 粉紅色行現在位於 `j = AddInt(j);` 行。 在此情況下，**F10** 不會逐步執行下一行程式碼。 而是會逐步執行至下一個函式呼叫。 歷程偵錯呼叫會巡覽不同的呼叫，並略過不包括函式呼叫的程式碼行。  
   
 7. 現在會逐步執行 `AddInt()` 方法。 您應該會立即看到此程式碼中的 Bug。  
   

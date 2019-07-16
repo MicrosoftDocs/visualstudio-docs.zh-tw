@@ -12,11 +12,11 @@ caps.latest.revision: 35
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 692f2a9f34edd41839179f7229e079ec8e791800
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58944275"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68185826"
 ---
 # <a name="registration-and-selection-source-control-vspackage"></a>註冊和選取 (原始檔控制 VSPackage)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -43,9 +43,9 @@ ms.locfileid: "58944275"
   
 |機碼名稱|項目|  
 |--------------|-------------|  
-|`HKEY_LOCAL_MACHINE\   SOFTWARE\     Microsoft\       VisualStudio\         X.Y\           SourceControlProviders\`|(default) = rg_sz:{ID_SccProvider}|  
+|`HKEY_LOCAL_MACHINE\   SOFTWARE\     Microsoft\       VisualStudio\         X.Y\           SourceControlProviders\`|（預設值） = rg_sz: {ID_SccProvider}|  
 |`HKEY_LOCAL_MACHINE\   SOFTWARE\     Microsoft\       VisualStudio\         X.Y\           SourceControlProviders\             {ID_SccProvider}\`|（預設值） = rg_sz:\<封裝的好記名稱 ><br /><br /> Service = rg_sz:{SID_SccPkgService}|  
-|`HKEY_LOCAL_MACHINE\   SOFTWARE\     Microsoft\       VisualStudio\         X.Y\           SourceControlProviders\             {ID_SccProvider}\               Name\`|（預設值） = rg_sz: #\<當地語系化名稱的資源識別碼 ><br /><br /> Package = rg_sz:{ID_Package}|  
+|`HKEY_LOCAL_MACHINE\   SOFTWARE\     Microsoft\       VisualStudio\         X.Y\           SourceControlProviders\             {ID_SccProvider}\               Name\`|（預設值） = rg_sz: #\<當地語系化名稱的資源識別碼 ><br /><br /> 封裝 = rg_sz: {ID_Package}|  
 |`HKEY_LOCAL_MACHINE\   SOFTWARE\     Microsoft\       VisualStudio\         X.Y\           SolutionPersistence\             <PackageName>\`<br /><br /> (請注意，索引鍵的名稱， `SourceCodeControl`，已由[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]並不是可用的選擇\<PackageName >。)|（預設值） = rg_sz: {ID_Package}|  
   
 ## <a name="selecting-a-source-control-package"></a>選取原始檔控制套件  
