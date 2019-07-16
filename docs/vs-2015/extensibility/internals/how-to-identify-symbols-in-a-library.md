@@ -1,5 +1,5 @@
 ---
-title: HOW TO：識別文件庫中的符號 |Microsoft Docs
+title: 作法：識別文件庫中的符號 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -12,13 +12,13 @@ caps.latest.revision: 22
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: f154c63940189f1a6035246fb7f72ec27be677f5
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60116247"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68191863"
 ---
-# <a name="how-to-identify-symbols-in-a-library"></a>HOW TO：識別程式庫中的符號
+# <a name="how-to-identify-symbols-in-a-library"></a>作法：識別程式庫中的符號
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 符號瀏覽工具顯示符號的階層式的檢視。 符號代表命名空間、 物件、 類別、 類別成員和其他語言項目。  
@@ -86,4 +86,4 @@ N1
 ## <a name="see-also"></a>另請參閱  
  [支援符號瀏覽工具](../../extensibility/internals/supporting-symbol-browsing-tools.md)   
  [如何：使用物件管理員註冊程式庫](../../extensibility/internals/how-to-register-a-library-with-the-object-manager.md)   
- [如何：公開 （expose) 程式庫提供對物件管理員中的符號的清單](../../extensibility/internals/how-to-expose-lists-of-symbols-provided-by-the-library-to-the-object-manager.md)
+ [如何：將程式庫提供的符號清單公開至物件管理員](../../extensibility/internals/how-to-expose-lists-of-symbols-provided-by-the-library-to-the-object-manager.md)

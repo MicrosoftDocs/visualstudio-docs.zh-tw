@@ -13,11 +13,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 34d6a847f96f548cdf68ed912d23f6a7ee112d54
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58945967"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68158474"
 ---
 # <a name="find-window-dialog-box"></a>尋找視窗對話方塊
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,13 +26,13 @@ ms.locfileid: "58945967"
   
  可用的設定如下：  
   
- [搜尋工具]  
+ [搜尋工具]   
  用來選取視窗拖放工具。  
   
  **隱藏 Spy + +**  
  移除主要的 Spy + + 視窗，並將留**尋找視窗**對話方塊顯示在其他應用程式之上。  
   
- [控制代碼]  
+ [控制代碼]   
  尋找視窗的唯一識別碼。  
   
  **標題**  
@@ -41,10 +41,10 @@ ms.locfileid: "58945967"
  **類別**  
  視窗的類別。  
   
- [樣式]  
+ [樣式]   
  視窗的樣式。  
   
- [週框]  
+ [週框]   
  視窗的周框。  
   
  **顯示屬性或訊息**  

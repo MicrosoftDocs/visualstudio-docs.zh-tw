@@ -13,11 +13,11 @@ caps.latest.revision: 14
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 1238fcbce22db3f3bc3e32019aac886c79d0c114
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58939709"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68201035"
 ---
 # <a name="idebugpendingbreakpoint2"></a>IDebugPendingBreakpoint2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -39,7 +39,7 @@ IDebugPendingBreakpoint2 : IUnknown
 ## <a name="methods-in-vtable-order"></a>依照 Vtable 順序的方法  
  下表顯示的方法`IDebugPendingBreakpoint2`。  
   
-|方法|描述|  
+|方法|說明|  
 |------------|-----------------|  
 |[CanBind](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-canbind.md)|判斷這個暫止中斷點可以繫結到程式碼的位置。|  
 |[Bind](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-bind.md)|將這個暫止中斷點繫結至一個或多個程式碼位置。|  
@@ -56,7 +56,7 @@ IDebugPendingBreakpoint2 : IUnknown
 ## <a name="remarks"></a>備註  
  `IDebugPendingBreakpoint2` 可以視為將中斷點繫結至可套用至一或多個程式的程式碼所需的所有必要資訊的提供者。  
   
- 暫止中斷點可能會產生一個以上的繫結的中斷點。 例如，c + + 樣式範本中的中斷點可能會產生每個唯一的執行個體，該範本的繫結的中斷點。  
+ 暫止中斷點可能會產生一個以上的繫結的中斷點。 例如，在中斷點C++-樣式範本可能會產生每個唯一的執行個體，該範本的繫結的中斷點。  
   
 ## <a name="requirements"></a>需求  
  標頭： msdbg.h  

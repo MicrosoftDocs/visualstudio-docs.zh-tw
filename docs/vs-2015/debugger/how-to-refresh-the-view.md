@@ -12,13 +12,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 1d0170d11ffaba831fdd68caa7249d0002526414
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60089610"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68157841"
 ---
-# <a name="how-to-refresh-the-view"></a>HOW TO：重新整理檢視
+# <a name="how-to-refresh-the-view"></a>作法：重新整理檢視
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Spy + + 會 「 快照集 」 的系統資料表，並重新整理檢視，根據這項資訊。 請務必您定期重新整理您的系統檢視表。 如果您有的 Spy + + 檢視開啟，並沒有重新整理檢視，您不會看到這些程序、 執行緒和後續建立的 windows。 此外，您可能會看到不存在的項目。 **重新整理**命令可供訊息 檢視以外的所有檢視。  
