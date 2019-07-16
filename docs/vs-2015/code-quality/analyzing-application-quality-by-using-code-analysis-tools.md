@@ -16,11 +16,11 @@ author: gewarren
 ms.author: gewarren
 manager: wpickett
 ms.openlocfilehash: 83fbe8b372d021e0cec4faccfd0b22fcaa8af30d
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "59000544"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68157099"
 ---
 # <a name="analyzing-application-quality-by-using-code-analysis-tools"></a>使用程式碼分析工具進行應用程式品質分析
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,7 +45,7 @@ ms.locfileid: "59000544"
  程式碼分析工具可以協助改進您的驅動程式的穩定性和可靠性，方法是有系統地分析驅動程式原始程式碼。  
   
  [使用程式碼分析工具程式驅動程式品質分析](/windows-hardware/drivers/devtest/tools-for-verifying-drivers)  
- 驅動程式的程式碼分析是編譯時間靜態驗證工具，可偵測的基本程式碼在 C 和 c + + 程式中的錯誤，並包含特殊的模組是設計用來偵測 （主要） 核心模式驅動程式程式碼中的錯誤。 靜態驅動程式驗證器 (SDV) 是一種靜態驗證工具，有系統地分析 Windows 核心模式驅動程式的原始程式碼。 SDV 會判斷驅動程式是否正確地與 Windows 作業系統核心互動。  
+ 驅動程式的程式碼分析是一種編譯時間靜態驗證工具，在 C 中偵測到基本的程式碼撰寫錯誤和C++程式，並包含特殊的模組是設計用來偵測 （主要） 核心模式驅動程式程式碼中的錯誤。 靜態驅動程式驗證器 (SDV) 是一種靜態驗證工具，有系統地分析 Windows 核心模式驅動程式的原始程式碼。 SDV 會判斷驅動程式是否正確地與 Windows 作業系統核心互動。  
   
  [程式碼分析驅動程式警告](http://go.microsoft.com/fwlink/?LinkId=225920)  
  描述驅動程式之程式碼分析在偵測到驅動程式程式碼中可能阿生的錯誤時，所報告的警告。  

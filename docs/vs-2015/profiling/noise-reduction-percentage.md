@@ -14,11 +14,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: c6407b40f58c3acc02705379768085793a2b79b6
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54787705"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68195545"
 ---
 # <a name="noise-reduction-percentage"></a>雜訊減少百分比
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

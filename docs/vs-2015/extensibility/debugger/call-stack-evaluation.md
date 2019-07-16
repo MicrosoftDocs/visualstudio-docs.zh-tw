@@ -12,11 +12,11 @@ caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 15fecbc61fec8ba7aa62ca7d79cf11c56b7ce938
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58940140"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68146407"
 ---
 # <a name="call-stack-evaluation"></a>呼叫堆疊評估
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ ms.locfileid: "58940140"
   
  這些方法需要的數個內容相關的介面和方法的實作。 因此，您必須實作[GetDocumentContext](../../extensibility/debugger/reference/idebugcodecontext2-getdocumentcontext.md)方法和下列方法[IDebugDocumentContext2](../../extensibility/debugger/reference/idebugdocumentcontext2.md)。  
   
-|方法|描述|  
+|方法|說明|  
 |------------|-----------------|  
 |[GetStatementRange](../../extensibility/debugger/reference/idebugdocumentcontext2-getstatementrange.md)|取得文件內容的檔案陳述式範圍。|  
   

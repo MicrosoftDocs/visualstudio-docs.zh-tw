@@ -11,11 +11,11 @@ ms.author: gewarren
 manager: jillfra
 robots: noindex,nofollow
 ms.openlocfilehash: 85978a79fc1e0110e5b13d6dc0e3198d20ac674a
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59653056"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68146557"
 ---
 # <a name="visual-studio-data-tools-for-c"></a>適用於 C++ 的 Visual Studio 資料工具
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -63,7 +63,7 @@ ms.locfileid: "59653056"
    DRIVER="SQL Server Native Client 11.0"  
    ```  
   
-8. 按 F5 鍵建置並執行應用程式。 您應該會看到一個對話方塊會提示您輸入資料庫的驅動程式。 請輸入`(localdb)\MSSQLLocalDB`，並檢查**使用信任連接**。 按 [確定]。 您應該會看到主控台中，使用訊息，指出成功的連線。 您也應該看到命令提示字元中。 您可以在這裡輸入 SQL 陳述式。 下列畫面顯示一個範例查詢和結果：  
+8. 按 F5 鍵建置並執行應用程式。 您應該會看到一個對話方塊會提示您輸入資料庫的驅動程式。 請輸入`(localdb)\MSSQLLocalDB`，並檢查**使用信任連接**。 按 [確定]  。 您應該會看到主控台中，使用訊息，指出成功的連線。 您也應該看到命令提示字元中。 您可以在這裡輸入 SQL 陳述式。 下列畫面顯示一個範例查詢和結果：  
   
     ![ODBC 範例查詢的輸出](../data-tools/media/raddata-odbc-sample-query-output.png "raddata ODBC 範例查詢的輸出")  
   

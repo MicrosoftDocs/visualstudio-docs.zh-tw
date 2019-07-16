@@ -11,11 +11,11 @@ caps.latest.revision: 8
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 2f162affe2324afaa8fb1d506c3177311386bfc1
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60110345"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68146391"
 ---
 # <a name="calling-debugger-events"></a>呼叫偵錯工具事件
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

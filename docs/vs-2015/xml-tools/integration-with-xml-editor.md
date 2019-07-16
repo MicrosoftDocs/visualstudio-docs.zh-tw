@@ -10,11 +10,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 350b97385ab03daca80cc86d4f672dfec07222aa
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59654018"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68145240"
 ---
 # <a name="integration-with-xml-editor"></a>與 XML 編輯器整合
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

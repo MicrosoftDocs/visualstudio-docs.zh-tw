@@ -12,11 +12,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: ce1f236347ad811f1c5d115f30907b7e3356e3af
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60099269"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68159639"
 ---
 # <a name="create-elements-and-relationships-in-uml-models"></a>在 UML 模型中建立項目和關聯性
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -52,7 +52,7 @@ IPackage linkedPackage = Context.CurrentDiagram.Element as IPackage;
 |`ILifeline, IMessage, ICombinedFragment`|`IInteraction`|  
   
 ### <a name="invoke-the-create-method-on-the-owner"></a>在擁有者上叫用 Create 方法  
- 方法名稱是格式的：`Create`*擁有的類型*`()`。 例如:   
+ 方法名稱是格式的：`Create`*擁有的類型*`()`。 例如：  
   
 ```  
 IUseCase usecase1 = linkedPackage.CreateUseCase();  
@@ -93,14 +93,14 @@ using Microsoft.VisualStudio.Uml.Extensions;
   
 3. 設定關聯性的屬性，例如其名稱。  
   
-     例如:   
+     例如：  
   
     ```  
     IAssociation association = subject.Package.CreateAssociation(subject, observer);  
     association .Name = "Observes";  
     ```  
   
-4. 設定關聯性各端的屬性。 總是會有兩個 `MemberEnds`。 例如:   
+4. 設定關聯性各端的屬性。 總是會有兩個 `MemberEnds`。 例如：  
   
     ```  
     association .MemberEnds[0].Name = "subject";   // role name  

@@ -16,11 +16,11 @@ author: gewarren
 ms.author: gewarren
 manager: wpickett
 ms.openlocfilehash: 795d48b96392057a3f96cf3a67f3c49de8aee9b9
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60052164"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68203079"
 ---
 # <a name="ca1824-mark-assemblies-with-neutralresourceslanguageattribute"></a>CA1824:組件必須標記 NeutralResourcesLanguageAttribute
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -51,7 +51,7 @@ ms.locfileid: "60052164"
 
 3. 在 **組件資訊**對話方塊方塊中，選取語言，從**中性語言**下拉式清單。
 
-4. 按一下 [確定] 。
+4. 按一下 [確定 **Deploying Office Solutions**]。
 
 ## <a name="when-to-suppress-warnings"></a>隱藏警告的時機
  就可以隱藏此規則的警告。 不過，可能會降低啟動效能。

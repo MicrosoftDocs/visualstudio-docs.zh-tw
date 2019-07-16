@@ -11,11 +11,11 @@ caps.latest.revision: 14
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 2788903c60564d501770616fbe3ad2335e60a250
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60105405"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68204422"
 ---
 # <a name="extending-the-output-window"></a>延伸輸出視窗
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

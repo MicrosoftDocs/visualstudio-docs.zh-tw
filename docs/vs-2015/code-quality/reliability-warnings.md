@@ -16,11 +16,11 @@ author: gewarren
 ms.author: gewarren
 manager: wpickett
 ms.openlocfilehash: 328e374a12b45c4a139d5e59c33be3a7bd74ac3d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58930805"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68142193"
 ---
 # <a name="reliability-warnings"></a>可靠性警告
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

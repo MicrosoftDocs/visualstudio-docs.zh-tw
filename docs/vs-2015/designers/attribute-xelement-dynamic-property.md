@@ -10,11 +10,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: ced05b8da63f9a7a242b166fe64e9e44f78b8065
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54776241"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68162680"
 ---
 # <a name="attribute-xelement-dynamic-property"></a>Attribute (XElement 動態屬性)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ elem.Attribute[{namespaceName}attribName]
 ## <a name="remarks"></a>備註  
  這個屬性等同於 <xref:System.Xml.Linq.XElement.Attribute%2A> 類別的 <xref:System.Xml.Linq.XElement?displayProperty=fullName> 方法。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  <xref:System.Xml.Linq.XElement.Attribute%2A?displayProperty=fullName>   
  [XElement 類別動態屬性](../designers/xelement-class-dynamic-properties.md)   
  [值](../designers/value-xattribute-dynamic-property.md)

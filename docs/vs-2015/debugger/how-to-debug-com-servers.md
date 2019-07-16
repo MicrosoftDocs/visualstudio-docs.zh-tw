@@ -1,5 +1,5 @@
 ---
-title: HOW TO：偵錯 COM 伺服器 |Microsoft Docs
+title: 作法：偵錯 COM 伺服器 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -24,11 +24,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 3552ff1ffb5d6b3e3789aebd3a8903bf82a66b16
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60088310"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68205421"
 ---
 # <a name="how-to-debug-com-servers"></a>HOW TO：針對 COM 伺服器進行偵錯
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

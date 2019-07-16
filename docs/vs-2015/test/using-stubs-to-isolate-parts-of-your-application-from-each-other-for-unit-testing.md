@@ -9,11 +9,11 @@ caps.latest.revision: 19
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 5ed075cbc5bdc49159024a81cfcf1c3afb04cc6a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60076873"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68185702"
 ---
 # <a name="using-stubs-to-isolate-parts-of-your-application-from-each-other-for-unit-testing"></a>使用虛設常式隔離應用程式的各個組件，方便進行單元測試
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -153,13 +153,13 @@ analyzer = new StockAnalyzer(new StockFeed())
   
 ##### <a name="adding-a-fakes-assembly"></a>加入 Fakes 組件  
   
-1. 在方案總管中，展開單元測試專案的 [參考]。  
+1. 在方案總管中，展開單元測試專案的 [參考]  。  
   
-    - 如果您在 Visual Basic 中工作，必須先選取方案總管工具列中的 [顯示所有檔案]，才能看見 [參考] 清單。  
+    - 如果您在 Visual Basic 中工作，必須先選取方案總管工具列中的 [顯示所有檔案]  ，才能看見 [參考] 清單。  
   
 2. 選取包含您要用於建立虛設常式之介面定義的組件。  
   
-3. 在捷徑功能表上，選擇 [新增 Fakes 組件]。  
+3. 在捷徑功能表上，選擇 [新增 Fakes 組件]  。  
   
 ### <a name="WriteTest"></a> 撰寫含虛設常式的測試  
   
@@ -224,7 +224,7 @@ End Class
  另外也會為屬性、事件及泛型方法的 getter 及 setter 產生虛設常式。  
   
 ### <a name="mocks"></a> 驗證參數值  
- 您可以驗證當您的元件呼叫另一個元件時，是否會傳遞正確的值。 您可以在虛設常式中加入判斷提示，也可以將值儲存在測試主體中並進行驗證。 例如:   
+ 您可以驗證當您的元件呼叫另一個元件時，是否會傳遞正確的值。 您可以在虛設常式中加入判斷提示，也可以將值儲存在測試主體中並進行驗證。 例如：  
   
 ```csharp  
 [TestClass]  
@@ -400,7 +400,7 @@ public void TestGetValue()
  如果程式碼是呼叫有任何其他具現化的 `GetValue<T>`，虛設常式會呼叫該行為。  
   
 ### <a name="BKMK_Partial_stubs"></a> 虛擬類別的虛設常式  
- 在上述範例中，虛設常式是從介面產生。 您也可以從具有虛擬或抽象成員的類別產生虛設常式。 例如:   
+ 在上述範例中，虛設常式是從介面產生。 您也可以從具有虛擬或抽象成員的類別產生虛設常式。 例如：  
   
 ```csharp  
 // Base class in application under test  

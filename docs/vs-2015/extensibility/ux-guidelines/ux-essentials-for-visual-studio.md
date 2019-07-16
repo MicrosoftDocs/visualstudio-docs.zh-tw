@@ -9,11 +9,11 @@ caps.latest.revision: 8
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 5f3ed2d3f8bc52b21f6a87ac7d6da00f665f6b28
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60096526"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68181444"
 ---
 # <a name="ux-essentials-for-visual-studio"></a>適用於 Visual Studio 的 UX 基本
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -180,6 +180,6 @@ ms.locfileid: "60096526"
 #### <a name="using-click-here-for-links"></a>使用 「 按一下這裡 」 的連結
  超連結應該自述性。 它會使用反模式，可使用 「 按一下這裡 」 或任何類似的變體。
 
- **錯誤：**「 按一下這裡的指示來建立新的專案。 」
+ **錯誤：** 「 按一下這裡的指示來建立新的專案。 」
 
- **良好：**「 如何建立新的專案？ 」
+ **良好：** 「 如何建立新的專案？ 」

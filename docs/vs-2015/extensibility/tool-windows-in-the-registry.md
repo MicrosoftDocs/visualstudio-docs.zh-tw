@@ -11,13 +11,13 @@ caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 8cedb95ccd98c3d5bd5e05086cfd1b53b0f97cd9
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58941459"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68186376"
 ---
-# <a name="tool-windows-in-the-registry"></a>在登錄中的工具 Windows
+# <a name="tool-windows-in-the-registry"></a>登錄中的工具視窗
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 提供的工具視窗的 Vspackage 必須向[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]做為工具視窗提供者。 使用 Visual Studio Package 範本所建立的工具視窗會依預設此進行。 工具視窗提供者都有系統的登錄機碼指定可見性屬性，例如工具視窗的預設大小和位置，做為工具視窗窗格中，並停駐樣式的視窗的 GUID。  

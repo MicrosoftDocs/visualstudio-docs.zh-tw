@@ -14,11 +14,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 148da7602d8198a4c85e2a7fbee2107b4e9662d1
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60039055"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68187128"
 ---
 # <a name="whats-new-for-design-in-visual-studio-in-visual-studio-2015"></a>在 Visual Studio 2015 的 Visual Studio 中設計的最新消息
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -68,7 +68,7 @@ ms.locfileid: "60039055"
 
 Visual Studio 2015 有數個版本。 並非所有版本都提供 architecture and modeling tools 的支援。 下表顯示每個工具的可用性。
 
-|**功能**|**Enterprise**|**Professional**|**Community**|**Express**|
+|**功能**|**企業**|**Professional**|**Community**|**Express**|
 |-----------------|--------------------|----------------------|-------------------|-----------------|
 |**Code Map**|是|只支援讀取和篩選 code map、 加入新的泛型節點，以及從選取範圍建立新的導向圖形。|-|-|
 |**UML 類別圖表**|是|-|-|-|

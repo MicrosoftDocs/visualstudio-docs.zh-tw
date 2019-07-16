@@ -1,5 +1,5 @@
 ---
-title: HOW TO：從 [圖形] 檢視和內容模型檢視列印圖表 |Microsoft Docs
+title: 作法：從 [圖形] 檢視和內容模型檢視列印圖表 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-xml-tools
@@ -10,13 +10,13 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: cae78a5f32037111a870058f92ea0d0f36f23f56
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60088713"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68176592"
 ---
-# <a name="how-to-print-diagrams-from-the-graph-view-and-the-content-model-view"></a>HOW TO：從圖表檢視和內容模型檢視列印圖表
+# <a name="how-to-print-diagrams-from-the-graph-view-and-the-content-model-view"></a>作法：從圖表檢視和內容模型檢視列印圖表
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 本主題描述如何從圖表檢視或內容模型檢視列印圖表。  

@@ -10,11 +10,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 75bde59c6e4b61c2775f188383fc9058a6c31242
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60109747"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68178555"
 ---
 # <a name="step-8-customize-the-quiz"></a>步驟 8：自訂測驗
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,7 +23,7 @@ ms.locfileid: "60109747"
   
 ### <a name="to-customize-the-quiz"></a>自訂測驗  
   
-- 測驗只剩五秒時，請將 [timeLabel] 控制項轉換為紅色，方法是設定其 [BackColor] 屬性 (`timeLabel.BackColor = Color.Red;`)。 在測驗結束時重設色彩。  
+- 測驗只剩五秒時，請將 [timeLabel]  控制項轉換為紅色，方法是設定其 [BackColor]  屬性 (`timeLabel.BackColor = Color.Red;`)。 在測驗結束時重設色彩。  
   
 - 在 NumericUpDown 控制項中輸入正確答案時，播放音效來提供受測者的提示 (您必須撰寫每個控制項之 `ValueChanged()` 事件的事件處理常式，而只要受測者變更控制項的值時就會引發該事件)。  
   

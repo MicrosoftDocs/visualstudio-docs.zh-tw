@@ -1,5 +1,5 @@
 ---
-title: HOW TO：引發事件當編輯器失去焦點時 |Microsoft Docs
+title: 作法：引發事件當編輯器失去焦點時 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -11,13 +11,13 @@ caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 2ebca733798636ca32787b88b8874c31a2ffffdb
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60050255"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68204199"
 ---
-# <a name="how-to-fire-events-when-the-editor-loses-focus"></a>HOW TO：引發事件當編輯器失去焦點時
+# <a name="how-to-fire-events-when-the-editor-loses-focus"></a>作法：在編輯器失去焦點時引發事件
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 有時候就必須知道當編輯器失去焦點，視窗框架上。 比方說，您可能需要擷取從程式碼視窗的程式碼之後，編輯器不再將焦點放在其上。 下列程序會提供要接收通知的編輯器失去焦點遵循的步驟。  

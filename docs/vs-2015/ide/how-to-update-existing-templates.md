@@ -14,11 +14,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 26482e844a4850efb1c50b15e51e4153baf1f9ab
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60075992"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68186264"
 ---
 # <a name="how-to-update-existing-templates"></a>HOW TO：更新現有的範本
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,17 +26,17 @@ ms.locfileid: "60075992"
 在建立範本並將檔案壓縮成 .zip 檔之後，您可能想要修改範本。 若要執行此動作，您可以手動變更範本中的檔案，或從以範本為基礎的專案中匯出新範本。  
   
 ## <a name="using-the-export-template-wizard-to-update-an-existing-template"></a>使用匯出範本精靈更新現有範本  
- [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 提供可用來更新現有範本的 [匯出範本] 精靈。  
+ [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 提供可用來更新現有範本的 [匯出範本]  精靈。  
   
 #### <a name="to-use-export-template-to-update-an-existing-template"></a>使用匯出範本更新現有範本  
   
-1. 在 [檔案]  功能表上，按一下 [新增]  及 [新增專案] 。  
+1. 在 [檔案]  功能表上，按一下 [新增]  及 [新增專案]  。  
   
-2. 選取您想要更新的範本，輸入暫存專案的名稱和位置，然後按一下 [確定]。  
+2. 選取您想要更新的範本，輸入暫存專案的名稱和位置，然後按一下 [確定]  。  
   
 3. 在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 中修改專案。  
   
-4. 在 [檔案] 功能表上按一下 [匯出範本]，並使用 [匯出範本] 精靈建立新的範本。  
+4. 在 [檔案]  功能表上按一下 [匯出範本]  ，並使用 [匯出範本]  精靈建立新的範本。  
   
 5. 更新的範本壓縮成 .zip 檔之後，請刪除舊範本的 .zip 檔。  
   
@@ -45,7 +45,7 @@ ms.locfileid: "60075992"
   
 #### <a name="to-manually-update-an-existing-template"></a>手動更新現有範本  
   
-1. 找出包含樣板的.zip 檔。 根據預設，此檔案位於 \My Documents\Visual Studio <版本>\My Exported Templates\\ 中。  
+1. 找出包含樣板的.zip 檔。 根據預設，此檔案位於 \My Documents\Visual Studio <版本>  \My Exported Templates\\ 中。  
   
 2. 將 zip 檔解壓縮。  
   
@@ -53,13 +53,13 @@ ms.locfileid: "60075992"
   
 4. 開啟、修改和儲存.vstemplate XML 檔，以處理更新的行為或新檔案。 如需 .vstemplate 結構描述的詳細資訊，請參閱 [Visual Studio 範本結構描述參考](../extensibility/visual-studio-template-schema-reference.md)。 如需您可以在來源檔案中參數化哪些項目的詳細資訊，請參閱[範本參數](../ide/template-parameters.md)  
   
-5. 在範本中選取檔案，按一下滑鼠右鍵，按一下 [傳送到]，然後按一下 [壓縮的 (zipped) 資料夾]。 您選取的檔案即會壓縮成 .zip 檔。  
+5. 在範本中選取檔案，按一下滑鼠右鍵，按一下 [傳送到]  ，然後按一下 [壓縮的 (zipped) 資料夾]  。 您選取的檔案即會壓縮成 .zip 檔。  
   
 6. 將新的 .zip 檔放在與舊 .zip 檔相同的目錄中。  
   
 7. 刪除已解壓縮的樣板檔案和舊樣板 .zip 檔案。  
   
-8. 啟動 (以系統管理員身分) 開發人員命令提示字元的執行個體 (位於 [開始] 功能表上的 [Visual Studio 2010 / Visual Studio Tools/開發人員命令提示字元] 下)。  
+8. 啟動 (以系統管理員身分) 開發人員命令提示字元的執行個體 (位於 [開始] 功能表上的 [Visual Studio 2010 / Visual Studio Tools/開發人員命令提示字元]  下)。  
   
 9. 執行下列命令：`devenv /installvstemplates`  
   

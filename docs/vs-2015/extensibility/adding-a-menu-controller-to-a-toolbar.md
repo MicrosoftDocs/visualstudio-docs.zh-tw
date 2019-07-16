@@ -13,11 +13,11 @@ caps.latest.revision: 39
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 3c63f6c98153c9f7a9fab171b3caddd57df717cc
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60107797"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68184902"
 ---
 # <a name="adding-a-menu-controller-to-a-toolbar"></a>將功能表控制器新增至工具列
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

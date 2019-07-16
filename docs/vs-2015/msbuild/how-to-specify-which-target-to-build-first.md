@@ -1,5 +1,5 @@
 ---
-title: HOW TO：指定要優先建置的目標 | Microsoft Docs
+title: 作法：指定要優先建置的目標 | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: msbuild
@@ -14,11 +14,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 7d7d47746aed2e663eb1fa25e3bb9ca2c6bed2c9
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60076415"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68178334"
 ---
 # <a name="how-to-specify-which-target-to-build-first"></a>HOW TO：指定要優先建置的目標
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ ms.locfileid: "60076415"
   
 #### <a name="to-specify-one-initial-target"></a>指定一個初始目標  
   
-- 在 `Project` 項目的 `InitialTargets` 屬性中，指定預設的目標。 例如:   
+- 在 `Project` 項目的 `InitialTargets` 屬性中，指定預設的目標。 例如：  
   
    `<Project InitialTargets="Clean">`  
   
@@ -47,7 +47,7 @@ ms.locfileid: "60076415"
   
 #### <a name="to-specify-one-default-target"></a>指定一個預設目標  
   
-- 在 `Project` 項目的 `DefaultTargets` 屬性中，指定預設的目標。 例如:   
+- 在 `Project` 項目的 `DefaultTargets` 屬性中，指定預設的目標。 例如：  
   
    `<Project DefaultTargets="Compile">`  
   
@@ -70,7 +70,7 @@ ms.locfileid: "60076415"
   
 #### <a name="to-use-several-targets-other-than-the-default-targets-first"></a>優先使用預設目標以外的數個目標  
   
-- 使用 **/target** 命令列參數，列出以分號或逗號的目標。 例如:   
+- 使用 **/target** 命令列參數，列出以分號或逗號的目標。 例如：  
   
      `msbuild <file name>.proj /t:Clean;Compile`  
   

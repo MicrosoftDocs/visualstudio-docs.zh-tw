@@ -1,5 +1,5 @@
 ---
-title: IEnumDebugProcesses2::Next | Microsoft Docs
+title: IEnumDebugProcesses2::Next |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,11 +13,11 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 37bf16b49a45b03eee6a1b0abb8af5b719dacff7
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58939557"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68179133"
 ---
 # <a name="ienumdebugprocesses2next"></a>IEnumDebugProcesses2::Next
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]

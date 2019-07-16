@@ -23,11 +23,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 4ca10653fd177826e2b236d432c685535993fbba
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58939678"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68155907"
 ---
 # <a name="debugging-web-applications-and-script"></a>偵錯 Web 應用程式和指令碼
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,7 +44,7 @@ ms.locfileid: "58939678"
  列出您在偵錯 Web 應用程式時可能遇到的錯誤，並建議修正方式。  
   
  [逐步解說：對平行處理應用程式進行偵錯](../debugger/walkthrough-debugging-a-parallel-application.md)  
- 描述如何使用 [平行工作] 和 [平行堆疊] 工具視窗來偵錯平行應用程式。  
+ 描述如何使用 [平行工作]  和 [平行堆疊]  工具視窗來偵錯平行應用程式。  
   
 ## <a name="related-sections"></a>相關章節  
  [ASP.NET Web 應用程式](../debugger/debugging-preparation-aspnet-web-applications.md)  

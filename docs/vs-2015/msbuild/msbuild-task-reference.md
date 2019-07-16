@@ -17,11 +17,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 19fe581985ec173099790311517c0442a9c29c2f
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59662578"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68154112"
 ---
 # <a name="msbuild-task-reference"></a>MSBuild 工作參考
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -223,7 +223,7 @@ ms.locfileid: "59662578"
  將 XPath 查詢所指定的值設定至 XML 檔案。  
   
  [XslTransformation 工作](../msbuild/xsltransformation-task.md)  
- 使用「可延伸樣式表語言轉換」(XSLT) 或編譯的 XSLT 轉換 XML 輸入，並輸出到輸出裝置或檔案。  
+ 使用「可延伸樣式表語言轉換」  (XSLT) 或編譯的 XSLT 轉換 XML 輸入，並輸出到輸出裝置或檔案。  
   
 ## <a name="see-also"></a>另請參閱  
  [MSBuild 參考](../msbuild/msbuild-reference.md)   

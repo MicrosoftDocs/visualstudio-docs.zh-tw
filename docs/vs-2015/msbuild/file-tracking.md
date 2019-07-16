@@ -12,11 +12,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: d8d999d65b207f72542b732842f6eb984df40764
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59656813"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68156463"
 ---
 # <a name="file-tracking"></a>檔案追蹤
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

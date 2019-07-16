@@ -11,13 +11,13 @@ caps.latest.revision: 17
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: e82fa31ca435d0c850a4d9e75e927cff9613b046
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58944305"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68186410"
 ---
-# <a name="text-buffer-events-in-the-legacy-api"></a>在舊版 API 中的文字緩衝區事件
+# <a name="text-buffer-events-in-the-legacy-api"></a>舊版 API 中的文字緩衝區事件
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 文字緩衝區物件會發出數個不同的事件，讓您能夠回應不同的情況。  
@@ -53,4 +53,4 @@ ms.locfileid: "58944305"
   
 ## <a name="see-also"></a>另請參閱  
  [使用舊版 API 存取的文字緩衝區](../extensibility/accessing-the-text-buffer-by-using-the-legacy-api.md)   
- [如何：註冊使用舊版 API 的文字緩衝區事件](../extensibility/how-to-register-for-text-buffer-events-with-the-legacy-api.md)
+ [如何：使用舊版 API 註冊文字緩衝區事件](../extensibility/how-to-register-for-text-buffer-events-with-the-legacy-api.md)

@@ -12,11 +12,11 @@ caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 0fda84d5f7467a65b254d3b12b0466b6ab415d61
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60076468"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68196872"
 ---
 # <a name="deploying-project-types"></a>部署專案類型
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

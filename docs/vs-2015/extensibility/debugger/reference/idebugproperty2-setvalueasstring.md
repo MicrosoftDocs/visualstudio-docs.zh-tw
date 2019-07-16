@@ -13,11 +13,11 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: d50057570b5b067447321f975d4d33da8aa3de43
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58945566"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68193435"
 ---
 # <a name="idebugproperty2setvalueasstring"></a>IDebugProperty2::SetValueAsString
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -55,7 +55,7 @@ int SetValueAsString ( 
 ## <a name="return-value"></a>傳回值  
  如果成功，則傳回`S_OK`; 否則會傳回錯誤碼。 下表顯示其他可能的值。  
   
-|值|描述|  
+|值|說明|  
 |-----------|-----------------|  
 |`E_SETVALUE_VALUE_CANNOT_BE_SET`|字串無法轉換成屬性值，或無法設定屬性值。|  
 |`E_SETVALUE_VALUE_IS_READONLY`|屬性是唯讀。|  

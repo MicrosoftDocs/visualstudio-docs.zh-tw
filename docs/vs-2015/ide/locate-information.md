@@ -10,11 +10,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 708c1d0ed2c7fe12a4f3e905d3fd5652b25f0a8c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54758602"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68178728"
 ---
 # <a name="locate-information"></a>尋找資訊
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -24,7 +24,7 @@ ms.locfileid: "54758602"
 |如需以下相關資訊|請嘗試|  
 |----------------------------|---------|  
 |使用者介面項目|F1 鍵|  
-|與目前的主題位於相同目錄區域中的其他主題|工具列上的 [顯示內容中的主題] 按鈕|  
+|與目前的主題位於相同目錄區域中的其他主題|工具列上的 [顯示內容中的主題]  按鈕|  
 |功能或技術|索引|  
 |語言元素，例如方法和事件|搜尋|  
   

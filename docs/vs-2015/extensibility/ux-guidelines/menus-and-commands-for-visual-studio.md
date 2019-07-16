@@ -9,11 +9,11 @@ caps.latest.revision: 5
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 681df08c02813e209738e629495190ad889caf31
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60095798"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68202130"
 ---
 # <a name="menus-and-commands-for-visual-studio"></a>功能表和命令適用於 Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -283,7 +283,7 @@ ms.locfileid: "60095798"
 
 - **遵循 Windows 指導方針來判斷哪些修飾詞的按鍵來運用。** 使用 Ctrl 按鍵組合有大規模的效果，例如，套用至整份文件的命令的命令。 擴充或補充的標準捷徑按鍵動作的命令，請使用 Shift 鍵組合。 請勿使用 Ctrl + alt 鍵組合。
 
-- **移除多餘的捷徑。** 如果您有舊版的功能，請考慮移除捷徑時，所使用極端 infrequency （少於 10 次從 CEIP 資料） 或中度 infrequency （少於 100 倍的 CEIP 資料從） 的存取金鑰可讓您快速存取相同的命令。 例如: Alt 鍵，H，C 會開啟說明/內容。
+- **移除多餘的捷徑。** 如果您有舊版的功能，請考慮移除捷徑時，所使用極端 infrequency （少於 10 次從 CEIP 資料） 或中度 infrequency （少於 100 倍的 CEIP 資料從） 的存取金鑰可讓您快速存取相同的命令。 例如：Alt 鍵，H，C 會開啟說明/內容。
 
   不是簡單的方式，檢查快顯的可用性。 如果您想要新增的捷徑，請遵循下列步驟：
 

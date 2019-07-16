@@ -16,11 +16,11 @@ author: gewarren
 ms.author: gewarren
 manager: wpickett
 ms.openlocfilehash: aa90a1e97b563ef549cb3f628fcf9130a364c50a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58943681"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68201608"
 ---
 # <a name="ca2225-operator-overloads-have-named-alternates"></a>CA2225:運算子多載必須有具名的替代方法
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,15 +45,15 @@ ms.locfileid: "58943681"
 |+ （二進位）|+|+ （二進位）|新增|
 |+=|+=|+=|新增|
 |&|和|&|BitwiseAnd|
-|&=|And=|&=|BitwiseAnd|
+|&=|和 =|&=|BitwiseAnd|
 |&#124;|或|&#124;|BitwiseOr|
-|&#124;=|Or=|&#124;=|BitwiseOr|
+|&#124;=|或 =|&#124;=|BitwiseOr|
 |--|N/A|--|遞減|
 |/|/|/|分割|
 |/=|/=|/=|分割|
 |==|=|==|等於|
 |^|Xor|^|Xor|
-|^=|Xor=|^=|Xor|
+|^=|Xor =|^=|Xor|
 |>|>|>|比較|
 |>=|>=|>=|比較|
 |++|N/A|++|遞增|

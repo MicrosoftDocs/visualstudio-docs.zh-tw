@@ -11,11 +11,11 @@ caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 115f3e99fa09617fbcb7b278e1e7eae76a80e4fc
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58943640"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68144366"
 ---
 # <a name="vssdk-utilities"></a>VSSDK 公用程式
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

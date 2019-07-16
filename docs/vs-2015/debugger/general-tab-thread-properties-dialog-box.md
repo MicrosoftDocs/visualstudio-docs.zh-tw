@@ -13,11 +13,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: b1a8e6fd583f6035fc84f0c86adcee059562235d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58941788"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68159948"
 ---
 # <a name="general-tab-thread-properties-dialog-box"></a>執行緒屬性對話方塊、一般索引標籤
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,7 +26,7 @@ ms.locfileid: "58941788"
   
  **Thread Properties**  對話方塊包含一個窗格中，**一般** 索引標籤。可用的設定如下：  
   
-|進入|描述|  
+|進入|說明|  
 |-----------|-----------------|  
 |**模組名稱**|模組的名稱。|  
 |**執行緒 ID**|此執行緒的唯一識別碼。 請注意，會重複使用的執行緒識別碼;它們可以識別執行緒只會針對該執行緒的存留期。|  

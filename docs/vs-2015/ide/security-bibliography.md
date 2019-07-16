@@ -12,11 +12,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 454e71026eeee3cbd76c95038ba59fb709b8d88f
-ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58193672"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68203513"
 ---
 # <a name="security-bibliography"></a>安全性參考書目
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

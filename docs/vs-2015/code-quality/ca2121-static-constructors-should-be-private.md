@@ -16,11 +16,11 @@ author: gewarren
 ms.author: gewarren
 manager: wpickett
 ms.openlocfilehash: d7894b4ec0039b28a579239605c22c2397c300f3
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58939178"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68154341"
 ---
 # <a name="ca2121-static-constructors-should-be-private"></a>CA2121:靜態建構函式應該為私用的
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

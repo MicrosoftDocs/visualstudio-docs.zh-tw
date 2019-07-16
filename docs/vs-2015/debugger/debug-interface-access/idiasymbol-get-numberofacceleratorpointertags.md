@@ -12,16 +12,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: b25cd941b8f06909ca1bf777d0e3251c78732706
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58941299"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "68183185"
 ---
 # <a name="idiasymbolgetnumberofacceleratorpointertags"></a>IDiaSymbol::get_numberOfAcceleratorPointerTags
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-虛設常式函式 c + + AMP 中傳回加速器指標標記的數目。  
+傳回的加速器指標中的標記數目C++AMP 虛設常式的函式。  
   
 ## <a name="syntax"></a>語法  
   
@@ -32,13 +32,13 @@ HRESULT get_numberOfAcceleratorPointerTags(
   
 #### <a name="parameters"></a>參數  
  `count`  
- [out]指標`DWORD`，虛設常式函式 c + + AMP 中保存的加速器數目指標標記。  
+ [out]指標`DWORD`保存加速器數目指標標籤，在C++AMP 虛設常式的函式。  
   
 ## <a name="return-value"></a>傳回值  
  如果成功，則傳回`S_OK`; 否則傳回`S_FALSE`或錯誤碼。  
   
 ## <a name="remarks"></a>備註  
- 在呼叫這個方法`IDiaSymbol`對應至 c + + AMP 加速器虛設常式函式的介面。  
+ 在呼叫這個方法`IDiaSymbol`介面會對應到C++AMP 加速器虛設常式的函式。  
   
 ## <a name="see-also"></a>另請參閱  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

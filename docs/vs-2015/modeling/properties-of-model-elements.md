@@ -10,11 +10,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 34e9c1cb4457210f95ede0d574530d2fb5ebcdeb
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58943888"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68154844"
 ---
 # <a name="properties-of-model-elements"></a>模型項目的屬性
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

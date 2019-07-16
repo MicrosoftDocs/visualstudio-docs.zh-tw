@@ -18,13 +18,13 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 63d9dd0844cb3e7422f8d78a0ee2e3cb4e0b1fab
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59664783"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68196064"
 ---
-# <a name="installing-database-systems-tools-and-samples"></a>安裝資料庫系統、 工具和範例
+# <a name="installing-database-systems-tools-and-samples"></a>安裝資料庫系統、工具和範例
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Visual Studio 本身不包含任何資料庫系統，除了它會在內部使用。 若要開發 Visual Studio 中連接資料的應用程式，您通常安裝在您的本機開發電腦上的 資料庫系統，然後部署應用程式和資料庫到生產環境時，他們就可以。 可從.NET 應用程式，並會顯示在 Visual Studio 資料工具視窗的資料庫系統，它必須能夠為 ADO.NET 資料提供者。 如果您打算在.NET 應用程式中使用實體資料模型，提供者必須特別支援 Entity Framework。     許多提供者會提供透過 NuGet 套件管理員，或透過 Visual Studio 組件庫。  

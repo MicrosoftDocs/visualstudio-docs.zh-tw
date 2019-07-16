@@ -11,11 +11,11 @@ caps.latest.revision: 33
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 5c9cb20bafa552c47a2f599d12e6b66fdb2bde59
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: HT
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60085894"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68201950"
 ---
 # <a name="walkthrough-using-a-shortcut-key-with-an-editor-extension"></a>逐步解說：在編輯器延伸模組中使用快速鍵
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

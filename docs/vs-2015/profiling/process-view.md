@@ -18,11 +18,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 0436401c458a7d6771a2785028a8b5fe0ef57546
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54802323"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68180213"
 ---
 # <a name="process-view"></a>處理序檢視
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,11 +31,11 @@ ms.locfileid: "54802323"
   
  依名稱列出處理序。 處理序建立的執行緒會當成其子節點列出。 執行緒是由開始該執行緒的函式命名，或在沒有符號可以使用時，由標籤 **[ntdll.dll]** 命名。  
   
- 若要新增或移除資料行，請在檢視中按一下滑鼠右鍵，然後選取 [新增/移除資料行]。 此外，您可以按一下資料行名稱來排序資料。 如需詳細資訊，請參閱[如何：自訂報表檢視資料行](../profiling/how-to-customize-report-view-columns.md)。  
+ 若要新增或移除資料行，請在檢視中按一下滑鼠右鍵，然後選取 [新增/移除資料行]  。 此外，您可以按一下資料行名稱來排序資料。 如需詳細資訊，請參閱[如何：自訂報表檢視資料行](../profiling/how-to-customize-report-view-columns.md)。  
   
  使用取樣和檢測方法所產生的資料和包括.NET 記憶體資料在內的資料，其處理序檢視的資料行都相同。 下表說明資料行的值。  
   
-|資料行|描述|  
+|「資料行」|說明|  
 |------------|-----------------|  
 |**唯一 ID**|分析工具產生的唯一處理程序或執行緒識別碼。|  
 |**ID**|系統產生的處理序或執行緒識別碼。|  
@@ -43,7 +43,7 @@ ms.locfileid: "54802323"
 |**開始時間**|從程式碼剖析開始到處理序或執行緒開始的毫秒數或處理器週期數。|  
 |**結束時間**|從程式碼剖析開始到處理序或執行緒結束的毫秒數或處理器週期數。|  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [取樣方法資料檢視](../profiling/profiler-sampling-method-data-views.md)   
  [檢測方法資料檢視](../profiling/instrumentation-method-data-views.md)   
  [.NET 記憶體資料檢視](../profiling/dotnet-memory-data-views.md)

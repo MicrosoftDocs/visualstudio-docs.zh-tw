@@ -12,11 +12,11 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: daa89266d653743a743f42e5f0b8e11c954adc1a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58944589"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68184418"
 ---
 # <a name="combo-element"></a>Combo 項目
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -53,7 +53,7 @@ ms.locfileid: "58944589"
 |項目|描述|  
 |-------------|-----------------|  
 |父代|選擇性。 按鈕的父項目。|  
-|CommandFlag|必要項。 請參閱[命令旗標項目](../extensibility/command-flag-element.md)。 CommandFlag 按鈕有效值，如下所示。<br /><br /> -CaseSensitive<br /><br /> -CommandWellOnly<br /><br /> -DefaultDisabled<br /><br /> -DefaultInvisible<br /><br /> -DynamicVisibility<br /><br /> -篩選鍵<br /><br /> - IconAndText<br /><br /> -NoAutoComplete<br /><br /> -NoButtonCustomize<br /><br /> -NoCustomize<br /><br /> -NoKeyCustomize<br /><br /> -StretchHorizontally|  
+|CommandFlag|必要項。 請參閱[命令旗標項目](../extensibility/command-flag-element.md)。 CommandFlag 按鈕有效值，如下所示。<br /><br /> -CaseSensitive<br /><br /> -CommandWellOnly<br /><br /> -DefaultDisabled<br /><br /> -DefaultInvisible<br /><br /> -DynamicVisibility<br /><br /> -篩選鍵<br /><br /> -IconAndText<br /><br /> -NoAutoComplete<br /><br /> -NoButtonCustomize<br /><br /> -NoCustomize<br /><br /> -NoKeyCustomize<br /><br /> -StretchHorizontally|  
 |字串|必要項。 請參閱[字串項目](../extensibility/strings-element.md)。 必須定義子 ButtonText 元素。|  
 |註釋|選擇性註解。|  
   

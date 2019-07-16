@@ -16,11 +16,11 @@ author: gewarren
 ms.author: gewarren
 manager: wpickett
 ms.openlocfilehash: 643d91ad51e9511bbd4440d2f84fbd441c768a53
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58943750"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68143206"
 ---
 # <a name="ca1043-use-integral-or-string-argument-for-indexers"></a>CA1043:必須針對索引子使用整數或字串引數
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

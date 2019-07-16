@@ -11,11 +11,11 @@ caps.latest.revision: 31
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 7c1dd3d28b9978b52c95b5ff905d57720ed10f5d
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60054700"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68201961"
 ---
 # <a name="walkthrough-outlining"></a>逐步解說：大綱
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

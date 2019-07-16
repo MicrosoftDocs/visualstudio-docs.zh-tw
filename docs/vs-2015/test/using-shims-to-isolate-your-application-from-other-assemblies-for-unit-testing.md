@@ -9,11 +9,11 @@ caps.latest.revision: 14
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: ddbcac3073dec1e7f21d381d30978589f1cdd792
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60113907"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68185735"
 ---
 # <a name="using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing"></a>使用填充碼將應用程式與其他組件隔離，方便進行單元測試
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -66,13 +66,13 @@ using (ShimsContext.Create()
   
 ### <a name="AddFakes"></a> 新增 Fakes 組件  
   
-1. 在方案總管中，展開單元測試專案的 [參考]。  
+1. 在方案總管中，展開單元測試專案的 [參考]  。  
   
-    - 如果您在 Visual Basic 中工作，必須先選取方案總管工具列中的 [顯示所有檔案]，才能看見 [參考] 清單。  
+    - 如果您在 Visual Basic 中工作，必須先選取方案總管工具列中的 [顯示所有檔案]  ，才能看見 [參考] 清單。  
   
 2. 選取包含您要用於建立填充碼之類別定義的組件。 例如，如果您要填充日期時間，請選取 System.dll。  
   
-3. 在捷徑功能表上，選擇 [新增 Fakes 組件]。  
+3. 在捷徑功能表上，選擇 [新增 Fakes 組件]  。  
   
 ### <a name="ShimsContext"></a> 使用 ShimsContext  
  在單元測試架構中使用填充碼類型時，您必須包裝 `ShimsContext` 中的測試程式碼，藉此控制填充碼的存留期。 如果我們不要求這樣做，您的填充碼可能會持續存在，直到 AppDomain 關閉為止。 建立 `ShimsContext` 的最簡單方式為使用靜態 `Create()` 方法，如下列程式碼所示：  
@@ -91,7 +91,7 @@ public void Y2kCheckerTest() {
  請務必適當處置每個填充碼內容。 根據經驗法則，請一律呼叫 `using` 陳述式內的 `ShimsContext.Create`，以確保適當清除已註冊的填充碼。 例如，您可能會註冊測試方法的填充碼，將 `DateTime.Now` 方法取代成永遠都會傳回 2000 年 1 月 1 日的委派。 如果您忘記清除在測試方法中註冊的填充碼，則測試回合的其餘部分一定會傳回 2000 年 1 月 1 日做為 DateTime.Now 的值。 這可能會讓人感到意外和混淆。  
   
 ### <a name="WriteShims"></a> 撰寫含填充碼的測試  
- 在您的測試程式碼中，請插入您要假造之方法的「繞道」。 例如:   
+ 在您的測試程式碼中，請插入您要假造之方法的「繞道」  。 例如：  
   
 ```csharp  
 [TestClass]  
@@ -153,7 +153,7 @@ End Class
   
  填充碼類別名稱是在原始類型名稱前面加上 `Fakes.Shim` 而構成。  
   
- 填充碼藉由將「繞道」插入至受測應用程式的程式碼中來運作。 只要原始方法的呼叫發生，Fakes 系統就會執行繞道，因此呼叫的是您的填充程式碼，而不是呼叫實際的方法。  
+ 填充碼藉由將「繞道」  插入至受測應用程式的程式碼中來運作。 只要原始方法的呼叫發生，Fakes 系統就會執行繞道，因此呼叫的是您的填充程式碼，而不是呼叫實際的方法。  
   
  請注意繞道會在執行階段建立和刪除。 一定要在 `ShimsContext` 的生命週期內建立繞道。 在處置繞道的時候，會移除您在繞道作用時建立的任何填充碼。 最好的做法是在 `using` 陳述式內進行。  
   

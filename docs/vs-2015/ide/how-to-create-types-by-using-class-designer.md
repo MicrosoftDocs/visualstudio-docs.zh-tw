@@ -1,5 +1,5 @@
 ---
-title: HOW TO：使用類別設計工具建立類型 |Microsoft Docs
+title: 作法：使用類別設計工具建立類型 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -19,13 +19,13 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 3a20a9ecf08c82589fd915fdd4bd60c6144e9d1c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60100413"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68201828"
 ---
-# <a name="how-to-create-types-by-using-class-designer"></a>HOW TO：使用 [類別設計工具] 建立類型
+# <a name="how-to-create-types-by-using-class-designer"></a>作法：使用 [類別設計工具] 建立類型
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 若要為 Visual C# .NET 和 Visual Basic .NET 專案設計新的類型，請在類別圖上建立這些類型。 若要查看現有的類型，請參閱[如何：檢視現有類型 （類別設計工具）](../ide/how-to-view-existing-types-class-designer.md)。  
@@ -40,25 +40,25 @@ ms.locfileid: "60100413"
   
 1. 在 [工具箱] 的 [類別設計工具] 下方，拖曳其中一個項目至類別圖上：  
   
-    - [類別] 或 [抽象類別]  
+    - [類別]  或 [抽象類別]   
   
     - **Enum**  
   
     - **Interface**  
   
-    - [結構] (VB) 或 [結構] (C#)  
+    - [結構]  (VB) 或 [結構]  (C#)  
   
     - **Delegate**  
   
-    - [模組] (僅限 VB)  
+    - [模組]  (僅限 VB)  
   
 2. 為類型命名。 然後選取其存取層級。  
   
 3. 選取您要為類型加入之初始程式碼的檔案：  
   
-    - 若要建立新的檔案並將它新增至目前專案，請選取 [建立新檔案] 並為檔案命名。  
+    - 若要建立新的檔案並將它新增至目前專案，請選取 [建立新檔案]  並為檔案命名。  
   
-    - 若要將程式碼新增至現有檔案，請選取 [新增至現有檔案]。  
+    - 若要將程式碼新增至現有檔案，請選取 [新增至現有檔案]  。  
   
          如果方案中有跨多個應用程式共用程式碼的專案，您可以將新的類型加入至應用程式專案中的類別圖，但是，只有相同應用程式專案或共用專案中有對應的類別檔案時才能這樣做。  
   
@@ -79,7 +79,7 @@ ms.locfileid: "60100413"
   
 1. 在類別圖上按一下類型的圖案。  
   
-2. 在 [屬性] 視窗中，按一下類型 [自訂屬性] 旁邊的省略符號 (…) 按鈕。  
+2. 在 [屬性] 視窗中，按一下類型 [自訂屬性]  旁邊的省略符號 (…) 按鈕。  
   
 3. 每一行加入一個或多個自訂屬性。 不要使用括號將屬性括起來。  
   
@@ -89,7 +89,7 @@ ms.locfileid: "60100413"
   
 1. 在類別圖上的成員類型圖案中按一下成員名稱，或是在 [類別細節] 視窗的成員列上按一下成員名稱。  
   
-2. 在 [屬性] 視窗中，尋找成員的 [自訂屬性] 屬性。  
+2. 在 [屬性] 視窗中，尋找成員的 [自訂屬性]  屬性。  
   
 3. 每一行加入一個或多個自訂屬性。 不要使用括號將屬性括起來。  
   

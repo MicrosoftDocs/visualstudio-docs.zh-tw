@@ -19,11 +19,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 8d40bfefb1f89496b538612dfa1819cc6d65c76c
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59663437"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68181064"
 ---
 # <a name="msbuild-command-line-reference"></a>MSBuild 命令列參考
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,7 +44,7 @@ MSBuild.exe [Switches] [ProjectFile]
   
 ## <a name="switches"></a>參數  
   
-|參數|簡短形式|描述|  
+|參數|簡短形式|說明|  
 |------------|----------------|-----------------|  
 |/help|/? 或 /h|顯示使用資訊。 下列命令是範例：<br /><br /> `msbuild.exe /?`|  
 |/detailedsummary|/ds|在組建記錄檔結尾顯示關於所建置組態及其如何排程至節點的詳細資訊。|  
@@ -70,7 +70,7 @@ MSBuild.exe [Switches] [ProjectFile]
 |/distributedFileLogger|/dfl|將每個 MSBuild 節點的組建輸出記錄到自己的檔案。 這些檔案的初始位置是目前的目錄。 根據預設，系統會將檔案命名為 "MSBuild*NodeId*.log"。 您可以使用 **/fileLoggerParameters** 參數，來指定檔案位置及 fileLogger 的其他參數。<br /><br /> 如果您使用 **/fileLoggerParameters** 參數來為記錄檔命名，分散式記錄器便會使用該名稱做為範本，並在為每個節點建立記錄檔時，將節點識別碼附加至該名稱。|  
 |/distributedlogger:<br /><br /> `central logger`*<br /><br /> `forwarding logger`|/dl:`central logger`*`forwarding logger`|從 MSBuild 記錄事件，將不同的記錄器執行個體附加至每個節點。 若要指定多個記錄器，請分別指定每個記錄器。<br /><br /> 您可以使用記錄器語法來指定記錄器。 如需記錄器語法，請參閱下列 **/logger** 參數。<br /><br /> 下列範例顯示如何使用此參數：<br /><br /> `/dl:XMLLogger,MyLogger,Version=1.0.2,Culture=neutral`<br /><br /> `/dl:MyLogger,C:\My.dll*ForwardingLogger,C:\Logger.dll`|  
 |/fileLogger<br /><br /> *[number]*|/fl[`number`]|在目前目錄中將組建輸出記錄至單一檔案。 如果您沒有指定 `number`，輸出檔案就會命名為 msbuild.log。 如果您指定 `number`，則輸出檔案會命名為 msbuild`n`.log，其中 n 是 `number`。 `Number` 可以是從 1 到 9 的數字。<br /><br /> 您可以使用 **/fileLoggerParameters** 參數，來指定檔案位置及 fileLogger 的其他參數。|  
-|/fileloggerparameters:[number]<br /><br /> `parameters`|/flp:[ `number`] `parameters`|指定檔案記錄器和分散式檔案記錄器的任何額外參數。 這個參數的存在表示對應的 /**filelogger[**`number`**]** 參數已存在。 `Number` 可以是從 1 到 9 的數字。<br /><br /> 您可以使用針對 **/consoleloggerparameters** 列出的所有參數。 您也可以使用一個或多個下列參數：<br /><br /> -   **LogFile**。 要寫入組建記錄檔的記錄檔路徑。 分散式檔案記錄器會在這個路徑放上其記錄檔名稱做為前置詞。<br />-   **Append**。 決定是否要將組建記錄檔附加到記錄檔，或者加以覆寫。 在設定這個參數時，會將組建記錄檔附加至記錄檔。 若這個參數不存在，則會覆寫現有記錄檔的內容。<br />     如果您包含該附加參數，則無論是否設定為 True 或 False，都會附加記錄。 如果您沒有包含該附加參數，則會覆寫記錄。<br />     在此情況下會覆寫檔案：`msbuild myfile.proj /l:FileLogger,Microsoft.Build.Engine;logfile=MyLog.log`<br />     在此情況下會附加檔案：`msbuild myfile.proj /l:FileLogger,Microsoft.Build.Engine;logfile=MyLog.log;append=true`<br />     在此情況下會附加檔案：`msbuild myfile.proj /l:FileLogger,Microsoft.Build.Engine;logfile=MyLog.log;append=false`<br />-   **Encoding**。 指定檔案的編碼 (例如，UTF-8、Unicode 或 ASCII)。<br /><br /> 下列範例會為警告與錯誤產生個別的記錄檔：<br /><br /> `/flp1:logfile=errors.txt;errorsonly /flp2:logfile=warnings.txt;warningsonly`<br /><br /> 下列範例會顯示其他可能性：<br /><br /> `/fileLoggerParameters:LogFile=MyLog.log;Append; Verbosity=diagnostic;Encoding=UTF-8`<br /><br /> `/flp:Summary;Verbosity=minimal;LogFile=msbuild.sum`<br /><br /> `/flp1:warningsonly;logfile=msbuild.wrn`<br /><br /> `/flp2:errorsonly;logfile=msbuild.err`|  
+|/fileloggerparameters:[number]<br /><br /> `parameters`|/flp:[ `number`] `parameters`|指定檔案記錄器和分散式檔案記錄器的任何額外參數。 這個參數的存在表示對應的 /**filelogger[** `number` **]** 參數已存在。 `Number` 可以是從 1 到 9 的數字。<br /><br /> 您可以使用針對 **/consoleloggerparameters** 列出的所有參數。 您也可以使用一個或多個下列參數：<br /><br /> -   **LogFile**。 要寫入組建記錄檔的記錄檔路徑。 分散式檔案記錄器會在這個路徑放上其記錄檔名稱做為前置詞。<br />-   **Append**。 決定是否要將組建記錄檔附加到記錄檔，或者加以覆寫。 在設定這個參數時，會將組建記錄檔附加至記錄檔。 若這個參數不存在，則會覆寫現有記錄檔的內容。<br />     如果您包含該附加參數，則無論是否設定為 True 或 False，都會附加記錄。 如果您沒有包含該附加參數，則會覆寫記錄。<br />     在此情況下會覆寫檔案：`msbuild myfile.proj /l:FileLogger,Microsoft.Build.Engine;logfile=MyLog.log`<br />     在此情況下會附加檔案：`msbuild myfile.proj /l:FileLogger,Microsoft.Build.Engine;logfile=MyLog.log;append=true`<br />     在此情況下會附加檔案：`msbuild myfile.proj /l:FileLogger,Microsoft.Build.Engine;logfile=MyLog.log;append=false`<br />-   **Encoding**。 指定檔案的編碼 (例如，UTF-8、Unicode 或 ASCII)。<br /><br /> 下列範例會為警告與錯誤產生個別的記錄檔：<br /><br /> `/flp1:logfile=errors.txt;errorsonly /flp2:logfile=warnings.txt;warningsonly`<br /><br /> 下列範例會顯示其他可能性：<br /><br /> `/fileLoggerParameters:LogFile=MyLog.log;Append; Verbosity=diagnostic;Encoding=UTF-8`<br /><br /> `/flp:Summary;Verbosity=minimal;LogFile=msbuild.sum`<br /><br /> `/flp1:warningsonly;logfile=msbuild.wrn`<br /><br /> `/flp2:errorsonly;logfile=msbuild.err`|  
 |/logger:<br /><br /> `logger`|/l:`logger`|從 MSBuild 指定要用於記錄事件的記錄器。 若要指定多個記錄器，請分別指定每個記錄器。<br /><br /> 針對 `logger` 使用下列語法：`[``LoggerClass``,]``LoggerAssembly``[;``LoggerParameters``]`<br /><br /> 針對 `LoggerClass` 使用下列語法：`[``PartialOrFullNamespace``.]``LoggerClassName`<br /><br /> 如果組件恰好包含一個記錄器，就不必指定記錄器類別。<br /><br /> 針對 `LoggerAssembly` 使用下列語法：`{``AssemblyName``[,``StrongName``] &#124;` `AssemblyFile``}`<br /><br /> 記錄器參數是選擇性，只有在輸入時才會傳遞至記錄器。<br /><br /> 下列範例會使用 **/logger** 參數。<br /><br /> `/logger:XMLLogger,MyLogger,Version=1.0.2,Culture=neutral`<br /><br /> `/logger:XMLLogger,C:\Loggers\MyLogger.dll;OutputAsHTML`|  
 |/noconsolelogger|/noconlog|停用預設主控台記錄器，而且不將事件記錄至主控台。|  
   

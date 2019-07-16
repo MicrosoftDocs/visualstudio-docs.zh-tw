@@ -7,11 +7,11 @@ caps.latest.revision: 5
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 5dd39ecfb25b4b21f7a9064da7621bcc77aab791
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60076702"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68192648"
 ---
 # <a name="manifest-to-code"></a>資訊清單至程式碼
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ ms.locfileid: "60076702"
 |/imageIdClass|ImageIdClass 和相關聯的工具所建立的檔案名稱。 針對C++語言選項，.h 檔案產生。<br /><br /> 預設：\<資訊清單路徑 > \MyImageIds。\<l a n g e >|Optional|  
 |/monikerClass|MonikerClass 和相關聯的工具所建立的檔案名稱。 針對C++語言選項，.h 檔案產生。 這會忽略 VSCT 語言。<br /><br /> 預設：\<資訊清單路徑 > \MyMonikers。\<l a n g e >|Optional|  
 |/classAccess|ImageIdClass 和 monikerClass 存取修飾詞。 請確定所指定語言的存取修飾詞無效。 這會忽略 VSCT 語言選項。<br /><br /> 預設：Public|Optional|  
-|/namespace|在程式碼包裝函式中定義的命名空間。 這會忽略 VSCT 語言選項。 可能是 '。 ' 或 ':: ' 是有效的命名空間的分隔符號，不論所選擇的語言選項。<br /><br /> 預設：MyImages|Optional|  
+|/namespace|在程式碼包裝函式中定義的命名空間。 這會忽略 VSCT 語言選項。 可能是 '。 ' 或 ':: ' 是有效的命名空間的分隔符號，不論所選擇的語言選項。<br /><br /> 預設：Images|Optional|  
 |/noLogo|設定這個旗標，就會停止列印的產品和著作權資訊。|Optional|  
 |/?|列印出說明資訊。|Optional|  
 |/help|列印出說明資訊。|Optional|  
@@ -46,7 +46,7 @@ ms.locfileid: "60076702"
   
 - ManifestToCode /manifest:D:\MyManifest.imagemanifest                /language:VSCT                /imageIdClass:MyImageIds  
   
-## <a name="notes"></a>注意  
+## <a name="notes"></a>附註  
   
 - 我們建議您使用這項工具與資源 工具的資訊清單所產生的映像資訊清單。  
   
