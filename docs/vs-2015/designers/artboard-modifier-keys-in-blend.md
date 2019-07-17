@@ -10,11 +10,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 10a605de597159130aa14bf7dd623b387e27bc97
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54771326"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68162685"
 ---
 # <a name="artboard-modifier-keys-in-blend"></a>Blend 中的畫板輔助按鍵
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,8 +23,8 @@ ms.locfileid: "54771326"
   
 |若要執行這項操作|請執行|  
 |-----------------------|-------------|  
-|在其他工具仍為選取狀態時，暫時選取[選取] 工具 (這樣可減少您必須在 [工具] 面板中，於 [選取] 工具和其他工具間來回選取項目的次數)|按住 CTRL|  
-|在已選取 [選取] 工具時，微調選取的物件|按下方向鍵|  
+|在其他工具仍為選取狀態時，暫時選取[選取]  工具 (這樣可減少您必須在 [工具]  面板中，於 [選取]  工具和其他工具間來回選取項目的次數)|按住 CTRL|  
+|在已選取 [選取]  工具時，微調選取的物件|按下方向鍵|  
 |移動瀏覽畫板|按住空格鍵，然後拖曳畫板|  
 |放大和縮小畫板|旋轉滑鼠滾輪|  
 |放大畫板|按住 CTRL+空格鍵，同時按一下畫板上的任何位置|  
@@ -40,9 +40,9 @@ ms.locfileid: "54771326"
 |藉由繪製點線框來選取|按住 SHIFT 並拖曳|  
 |選取另一個物件下方的物件|按住 ALT 並將物件的每個圖層都按一次|  
 |切換開啟的文件|按下 CTRL+TAB|  
-|開啟 [資產] 面板|按下 CTRL+句點|  
+|開啟 [資產]  面板|按下 CTRL+句點|  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [鍵盤快速鍵](../designers/keyboard-shortcuts-in-blend.md)   
  [畫筆工具輔助按鍵](../designers/pen-tool-modifier-keys-in-blend.md)   
  [直接選取工具輔助按鍵](../designers/direct-selection-tool-modifier-keys-in-blend.md)

@@ -34,11 +34,11 @@ author: mikeblome
 ms.author: mblome
 manager: jillfra
 ms.openlocfilehash: 66c4aafb380d50ec0faafce931b8ce73e5138e6f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60052385"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68157117"
 ---
 # <a name="annotating-locking-behavior"></a>註釋鎖定行為
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -91,7 +91,7 @@ ms.locfileid: "60052385"
 ## <a name="sal-intrinsics-for-unexposed-locking-objects"></a>未公開之鎖定物件的 SAL 內在變數  
  相關聯的鎖定函式的實作不會公開特定鎖定物件。  下表列出 SAL 內部變數，這些變數會啟用在未公開的鎖定物件上運作之函式的註釋。  
   
-|註釋|描述|  
+|註釋|說明|  
 |----------------|-----------------|  
 |`_Global_cancel_spin_lock_`|描述取消微調鎖定。|  
 |`_Global_critical_region_`|描述關鍵區域。|  
@@ -101,7 +101,7 @@ ms.locfileid: "60052385"
 ## <a name="shared-data-access-annotations"></a>共用的資料存取註解  
  下表列出共用資料存取的註釋。  
   
-|註釋|描述|  
+|註釋|說明|  
 |----------------|-----------------|  
 |`_Guarded_by_(expr)`|標註變數，並指出只要存取變數，由 `expr` 命名之鎖定物件的鎖定計數就會至少為一。|  
 |`_Interlocked_`|標註變數，相當於`_Guarded_by_(_Global_interlock_)`。|  

@@ -17,11 +17,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: adf5e160ec334859062311fae947ce34e79850d5
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58944900"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68157421"
 ---
 # <a name="clickonce-application-manifest"></a>ndptecclick
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,11 +30,11 @@ A[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]應用程式資訊清單�
   
  [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 應用程式資訊清單有下列項目和屬性。  
   
-|項目|描述|屬性|  
+|項目|說明|屬性|  
 |-------------|-----------------|----------------|  
 |[\<assembly> 元素](../deployment/assembly-element-clickonce-application.md)|必要項。 最上層項目。|`manifestVersion`|  
 |[\<assemblyIdentity> 元素](../deployment/assemblyidentity-element-clickonce-application.md)|必要項。 識別主要組件的[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]應用程式。|`name`<br /><br /> `version`<br /><br /> `publicKeyToken`<br /><br /> `processorArchitecture`<br /><br /> `language`|  
-|[\<trustInfo> 元素](../deployment/trustinfo-element-clickonce-application.md)|識別應用程式安全性需求。|None|  
+|[\<trustInfo> 元素](../deployment/trustinfo-element-clickonce-application.md)|識別應用程式安全性需求。|無|  
 |[\<entryPoint> 元素](../deployment/entrypoint-element-clickonce-application.md)|必要項。 識別應用程式程式碼進入點。|`name`|  
 |[\<dependency> 元素](../deployment/dependency-element-clickonce-application.md)|必要項。 識別執行應用程式所需的每個相依性。 選擇性地識別需要預先安裝的組件。|None|  
 |[\<file> 元素](../deployment/file-element-clickonce-application.md)|選擇性。 識別應用程式所使用的每個非組件檔案。 可以包含與檔案相關聯的元件物件模型 (COM) 隔離資料。|`name`<br /><br /> `size`<br /><br /> `group`<br /><br /> `optional`<br /><br /> `writeableType`|  

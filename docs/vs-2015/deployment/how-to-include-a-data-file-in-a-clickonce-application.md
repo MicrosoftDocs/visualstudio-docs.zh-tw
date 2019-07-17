@@ -1,5 +1,5 @@
 ---
-title: HOW TO：Include a Data File in a ClickOnce Application |Microsoft Docs
+title: 作法：Include a Data File in a ClickOnce Application |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-deployment
@@ -18,13 +18,13 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 9120a5b3cb60f6c607ed97ab2df24bb157c72371
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60107355"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68153774"
 ---
-# <a name="how-to-include-a-data-file-in-a-clickonce-application"></a>HOW TO：在 ClickOnce 應用程式中納入資料檔案
+# <a name="how-to-include-a-data-file-in-a-clickonce-application"></a>作法：在 ClickOnce 應用程式中納入資料檔案
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 每個[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]您安裝的應用程式已指派應用程式可在其中管理它自己的資料的目的地電腦的本機磁碟上的資料目錄。 資料檔案可以包含任何類型的檔案： 文字檔、 XML 檔案或甚至是 Microsoft Access 資料庫 (.mdb) 檔案。 下列程序會示範如何新增到任何類型的資料檔案您[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]應用程式。  

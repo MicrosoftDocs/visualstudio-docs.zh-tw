@@ -12,11 +12,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: a18567472edc15c39505acda9e5c4896d56c0f12
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58943136"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "68149783"
 ---
 # <a name="idiasymbolgetbuiltinkind"></a>IDiaSymbol::get_builtInKind
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

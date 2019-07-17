@@ -12,11 +12,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 7090045097ed8d11d18faee44dcd74bb6f573b1b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58944992"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68197458"
 ---
 # <a name="thread-search-dialog-box"></a>執行緒搜尋對話方塊
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

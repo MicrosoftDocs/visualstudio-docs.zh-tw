@@ -21,13 +21,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 37554c8ba72257ee78b219774425c7e8acb305a2
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58945520"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68156678"
 ---
-# <a name="how-to-set-a-thread-name-in-native-code"></a>HOW TO：在機器碼中設定執行緒名稱
+# <a name="how-to-set-a-thread-name-in-native-code"></a>作法：在機器碼中設定執行緒名稱
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 若要在程式中設定執行緒名稱，請如下列程式碼範例所示，使用 `SetThreadName` 函式。 請注意，執行緒名稱會複製到執行緒，以便釋放 `threadName` 參數的記憶體。  

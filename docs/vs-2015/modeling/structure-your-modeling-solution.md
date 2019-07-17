@@ -10,11 +10,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 2b82bd903fe594ca2f2b650833cd29bfb54efa85
-ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "59000527"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68155649"
 ---
 # <a name="structure-your-modeling-solution"></a>建構模型方案
 
@@ -104,7 +104,7 @@ ms.locfileid: "59000527"
 
 2. 建立要用做未來專案起點的方案結構。
 
-3. 按一下 [檔案]  功能表上的 [匯出範本為 VSIX] 。 **匯出範本為 VSIX 精靈**隨即開啟。
+3. 按一下 [檔案]  功能表上的 [匯出範本為 VSIX]  。 **匯出範本為 VSIX 精靈**隨即開啟。
 
 4. 遵循精靈中的指示，選取要包含在範本中的專案，提供範本的名稱和描述，並指定輸出位置。
 

@@ -13,11 +13,11 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 6cc6a0ff332fd6feac72ce4abf38b5319e63c913
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58930678"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68161018"
 ---
 # <a name="ienumdebugframeinfo2"></a>IEnumDebugFrameInfo2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -41,7 +41,7 @@ IEnumDebugFrameInfo2 : IUnknown
   
 |方法|描述|  
 |------------|-----------------|  
-|[下一步](../../../extensibility/debugger/reference/ienumdebugframeinfo2-next.md)|擷取指定的數目[FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md)列舉型別序列中的結構。|  
+|[下一個](../../../extensibility/debugger/reference/ienumdebugframeinfo2-next.md)|擷取指定的數目[FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md)列舉型別序列中的結構。|  
 |[Skip](../../../extensibility/debugger/reference/ienumdebugframeinfo2-skip.md)|略過指定的數目的[FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md)列舉型別序列中的結構。|  
 |[Reset](../../../extensibility/debugger/reference/ienumdebugframeinfo2-reset.md)|將列舉型別序列重設到開頭。|  
 |[Clone](../../../extensibility/debugger/reference/ienumdebugframeinfo2-clone.md)|建立列舉值，包含目前的列舉值相同的列舉型別狀態。|  

@@ -1,5 +1,5 @@
 ---
-title: HOW TO：取得使用 [圖形] 檢視的結構描述集概觀 |Microsoft Docs
+title: 作法：取得使用 [圖形] 檢視的結構描述集概觀 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-xml-tools
@@ -10,11 +10,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: f6f264427e10cbe444cab8a5208e86866635ed17
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60082733"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68150720"
 ---
 # <a name="how-to-get-an-overview-of-a-schema-set-using-the-graph-view"></a>HOW TO：使用圖表檢視取得結構描述集合的概觀
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

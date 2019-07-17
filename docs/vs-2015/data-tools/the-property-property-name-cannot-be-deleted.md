@@ -10,11 +10,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 50e91c47ef848eda51fe71c9dce09cd1ea4893a8
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60106447"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68152100"
 ---
 # <a name="the-property-ltproperty-namegt-cannot-be-deleted"></a>屬性&lt;屬性名稱&gt;無法刪除
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ ms.locfileid: "60106447"
   
 1. 在 O/R Designer 中，選取在錯誤訊息指出的資料類別之間連接的繼承關聯線。  
   
-2. 將 [鑑別子屬性] 設定為不同屬性。  
+2. 將 [鑑別子屬性]  設定為不同屬性。  
   
 3. 試著再次刪除屬性。  
   

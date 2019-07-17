@@ -12,11 +12,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 70b99b852175febe448e7b821070261d6abda4b9
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "58939840"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "68151459"
 ---
 # <a name="idiasymbolgetissingleinheritance"></a>IDiaSymbol::get_isSingleInheritance
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

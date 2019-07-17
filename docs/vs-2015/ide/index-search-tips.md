@@ -15,11 +15,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 1072d38adac020a1b9976d17f98ddf8882d7cb22
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60044209"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68178815"
 ---
 # <a name="index-search-tips"></a>索引搜尋提示
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,7 +39,7 @@ ms.locfileid: "60044209"
   
      例如，如果 "debugging inline assembly code" 沒有顯示相關的項目，請嘗試輸入 "assembly code, debugging inline"。  
   
-- 搭配 [索引] 索引標籤使用篩選，來減少結果數目。  
+- 搭配 [索引]  索引標籤使用篩選，來減少結果數目。  
   
 ### <a name="syntax-tips"></a>語法提示  
  如果您所輸入的文字或片語找不到任何項目，請嘗試下列方法：  

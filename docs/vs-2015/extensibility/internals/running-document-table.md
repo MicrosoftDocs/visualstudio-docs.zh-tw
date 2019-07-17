@@ -15,11 +15,11 @@ caps.latest.revision: 19
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 7ea32df892efa47c91d8292bdc9065080318a059
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60044602"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68155550"
 ---
 # <a name="running-document-table"></a>執行中的文件資料表
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

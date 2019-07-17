@@ -7,11 +7,11 @@ caps.latest.revision: 5
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 33d3094c599ddc8cb472bd6defa211f57e85e84f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60112828"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68192622"
 ---
 # <a name="manifest-from-resources"></a>來自資源的資訊清單
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -21,7 +21,7 @@ ms.locfileid: "60112828"
 ## <a name="how-to-use-the-tool"></a>如何使用工具  
  **語法**  
   
- ManifestFromResources /resources:\<Dir1>;\<Img1> /assembly:\<AssemblyName> \<Optional Args>  
+ ManifestFromResources /resources:\<Dir1 >;\<Img1 > /assembly:\<組件名稱 >\<選擇性引數 >  
   
  **引數**  
   
@@ -31,25 +31,25 @@ ms.locfileid: "60112828"
 |/resources|以分號分隔的映像 」 或 「 目錄清單。 這份清單一律應包含會在資訊清單中的映像的完整清單。 如果只指定的部分清單，不包含的項目將會遺失。<br /><br /> 如果指定的資源檔的影像區域，工具會分割成個別的映像加入資訊清單中的每個 subimage 之前。<br /><br /> 如果影像是.png 檔案，我們建議您格式化這類名稱，使工具可以填入適當的屬性，映像：\<名稱 >。\<寬度 >。\<高度 >.png。|必要|  
 |/assembly|Managed 組件 （不包括副檔名） 或執行階段原生組件的路徑裝載 （相對於資訊清單的執行階段位置） 資源的名稱。|必要|  
 |/manifest|要提供給產生的.imagemanifest 檔案的名稱。 這也可以包含在不同的位置中建立檔案的絕對或相對路徑。 預設名稱比對組件名稱。<br /><br /> 預設：\<目前的目錄 >\\< 組件\>.imagemanifest|Optional|  
-|/guidName|要提供給所有產生的資訊清單中的映像的 GUID 符號的名稱。<br /><br /> 預設：AssetsGuid|Optional|  
+|/guidName|要提供給所有產生的資訊清單中的映像的 GUID 符號的名稱。<br /><br /> 預設：AssetsGuid|選擇性|  
 |/rootPath|要去除之前建立受管理的資源 Uri 根路徑。 （這個旗標是協助工具，取得相對 URI 的路徑錯誤，導致無法載入資源的情況下）。<br /><br /> 預設：\<目前的目錄 >|Optional|  
 |/recursive|設定這個旗標會告訴工具以遞迴方式搜尋 /resources 引數中的任何目錄。 省略此旗標將會在頂層-層次專用搜尋的目錄中。|Optional|  
-|/isNative|當組件引數為原生組件的路徑，請設定此旗標。 當組件引數是 managed 組件的名稱，請省略這個旗標。 （請參閱附註 區段，如需有關此旗標的詳細資訊）。|Optional|  
+|/isNative|當組件引數為原生組件的路徑，請設定此旗標。 當組件引數是 managed 組件的名稱，請省略這個旗標。 （請參閱附註 區段，如需有關此旗標的詳細資訊）。|選擇性|  
 |/newGuids|設定這個旗標會告訴工具建立的映像的 GUID 符號，而不是合併現有的資訊清單中的一個新的值。|Optional|  
 |/newIds|設定這個旗標會告訴工具，以建立新的 ID 符號值，而不是將現有的資訊清單中的值合併每個映像。|Optional|  
-|/noLogo|設定這個旗標，就會停止列印的產品和著作權資訊。|Optional|  
+|/noLogo|設定這個旗標，就會停止列印的產品和著作權資訊。|選擇性|  
 |/?|列印出說明資訊。|Optional|  
 |/help|列印出說明資訊。|Optional|  
   
  **範例**  
   
-- ManifestFromResources /resources:D:\Images                       /assembly:My.Assembly.Name                       /isNative  
+- ManifestFromResources /resources:D:\Images /assembly:My.Assembly.Name /isNative  
   
-- ManifestFromResources /resources:D:\Images\Image1.png;D:\Images\Image1.xaml                       /assembly:My.Assembly.Name                       /manifest:MyImageManifest.imagemanifest  
+- ManifestFromResources /resources:D:\Images\Image1.png;D:\Images\Image1.xaml /assembly:My.Assembly.Name /manifest:MyImageManifest.imagemanifest  
   
 - ManifestFromResources /resources:D:\Images\Image1.png;D:\Images\Image1.xaml /assembly:My.Assembly.Name /guidName:MyImages /newGuids /newIds  
   
-## <a name="notes"></a>注意  
+## <a name="notes"></a>附註  
   
 - 此工具僅支援.png 和.xaml 檔案。 將會忽略任何其他映像或檔案類型。 所有不受支援的類型，剖析的資源時，會產生警告。 如果不支援映像會找到此工具完成時剖析的資源，將會產生錯誤  
   

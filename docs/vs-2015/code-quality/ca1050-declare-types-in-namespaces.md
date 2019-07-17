@@ -16,11 +16,11 @@ author: gewarren
 ms.author: gewarren
 manager: wpickett
 ms.openlocfilehash: f13684df70db7026e874bc8edb6282faca2cf98d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58930142"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68200549"
 ---
 # <a name="ca1050-declare-types-in-namespaces"></a>CA1050:類型必須在命名空間中宣告
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

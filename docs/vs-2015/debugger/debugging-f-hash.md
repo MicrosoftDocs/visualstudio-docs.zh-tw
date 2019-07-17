@@ -18,11 +18,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 51a8e43268718421a90d051f0d4d9b6afa96980e
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60092366"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68156690"
 ---
 # <a name="debugging-f"></a>偵錯 F\#
 
@@ -30,7 +30,7 @@ ms.locfileid: "60092366"
 
 除了下列幾點差異，偵錯 F# 的方式與偵錯任何 Managed 語言非常類似：
 
-- [自動變數] 視窗不會顯示 F# 變數。
+- [自動變數]  視窗不會顯示 F# 變數。
 
 - F# 不支援 [編輯後繼續]。 在偵錯工作階段期間編輯 F# 程式碼是可行的作法，但應該避免。 因為偵錯工作階段期間不會套用程式碼變更，所以在偵錯期間編輯 F# 程式碼會導致原始程式碼與正在偵錯的程式碼變成不相符。
 

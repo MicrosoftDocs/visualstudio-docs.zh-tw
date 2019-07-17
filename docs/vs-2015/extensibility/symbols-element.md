@@ -12,11 +12,11 @@ caps.latest.revision: 8
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: c8d28d225bd3a8d5c105bf54b9c63574002aed15
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58943323"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68160465"
 ---
 # <a name="symbols-element"></a>Symbols 項目
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,15 +41,15 @@ ms.locfileid: "58943323"
   
 ### <a name="attributes"></a>屬性  
   
-|屬性|描述|  
+|屬性|說明|  
 |---------------|-----------------|  
-|None||  
+|無||  
   
 ### <a name="child-elements"></a>子元素  
   
 |項目|描述|  
 |-------------|-----------------|  
-|GuidSymbol|定義 GUID 符號。 GuidSymbol 有兩個必要的屬性： 名稱和值。 名稱為的符號名稱，值為 GUID 做為字串值。<br /><br /> For example:\<GuidSymbol name="guidVsPackage1Pkg"   value="{c5f54698-101a-4846-84d3-dc748f9cd848}" />|  
+|GuidSymbol|定義 GUID 符號。 GuidSymbol 有兩個必要的屬性： 名稱和值。 名稱為的符號名稱，值為 GUID 做為字串值。<br /><br /> 例如：\<GuidSymbol 名稱 ="guidVsPackage1Pkg"value ="{c5f54698-101a-4846-84d3-dc748f9cd848}"/ >|  
 |IDSymbol|定義符號。 IDSymbol 有兩個必要的屬性： 名稱和值。 名稱為符號，名稱和值是字串形式的符號值。<br /><br /> 例如：\<IDSymbol 名稱 ="MyMenuGroup"value ="0x1020"/ >|  
   
 ### <a name="parent-elements"></a>父項目  

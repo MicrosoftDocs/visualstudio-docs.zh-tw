@@ -9,11 +9,11 @@ caps.latest.revision: 7
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 257c5944ee1939849c4163fef518abf513183998
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60095811"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68177020"
 ---
 # <a name="colors-and-styling-for-visual-studio"></a>色彩和樣式設定適用於 Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -160,7 +160,7 @@ Dim myColor As Color = ColorTranslator.FromWin32((Integer)win32Color)
 #### <a name="helper-classes-and-methods-for-managed-code"></a>Managed 程式碼的協助程式類別和方法
  Managed 程式碼，命令介面的 Managed Package Framework 程式庫 (Microsoft.VisualStudio.Shell.12.0.dll) 會包含幾個協助程式類別，可促進使用佈景主題色彩。
 
- 中的協助程式方法**Microsoft.VisualStudio.Shell.VsColors** MPF 類別包含**GetThemedGDIColor()** 並**GetThemedWPFColor()**。 這些協助程式方法會傳回為 System.Drawing.Color 或 System.Windows.Media.Color，用於 WinForms 或 WPF UI 佈景主題項目的色彩值。
+ 中的協助程式方法**Microsoft.VisualStudio.Shell.VsColors** MPF 類別包含**GetThemedGDIColor()** 並**GetThemedWPFColor()** 。 這些協助程式方法會傳回為 System.Drawing.Color 或 System.Windows.Media.Color，用於 WinForms 或 WPF UI 佈景主題項目的色彩值。
 
 ```
 IVsUIShell5 shell5;
@@ -360,7 +360,7 @@ protected override void Dispose(bool disposing)
 
  填入登錄中的以兩個值：
 
-|名稱|類型|資料|描述|
+|名稱|類型|資料|說明|
 |----------|----------|----------|-----------------|
 |分類|REG_SZ|GUID|若要識別類別目錄建立 GUID|
 |套件|REG_SZ|GUID|服務的 GUID VSPackage 支援類別|

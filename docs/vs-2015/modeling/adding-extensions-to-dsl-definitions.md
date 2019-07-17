@@ -10,11 +10,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: bd45a2345e6e5b28b74cb27fac226514c3f92a04
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58940551"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68159071"
 ---
 # <a name="adding-extensions-to-dsl-definitions"></a>在 DSL 定義中加入擴充功能
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

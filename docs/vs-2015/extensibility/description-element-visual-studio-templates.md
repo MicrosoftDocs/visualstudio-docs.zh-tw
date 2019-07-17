@@ -11,19 +11,19 @@ caps.latest.revision: 17
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: d60244ea827433678afbd09dd1e8cf1c972595cd
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "58939832"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68162108"
 ---
 # <a name="description-element-visual-studio-templates"></a>描述項目 (Visual Studio 範本)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 指定範本的描述中所顯示的樣子**新的專案**或是**加入新項目** 對話方塊。  
   
- \<VSTemplate>  
- \<TemplateData>  
+ \<VSTemplate >  
+ \<TemplateData >  
  \<描述 >  
   
 ## <a name="syntax"></a>語法  
@@ -43,9 +43,9 @@ ms.locfileid: "58939832"
   
 ### <a name="attributes"></a>屬性  
   
-|屬性|描述|  
+|屬性|說明|  
 |---------------|-----------------|  
-|`Package`|選擇性屬性，為進階的使用者案例。<br /><br /> 指定 Visual Studio 套件的 GUID 識別碼。|  
+|`Package`|選擇性屬性，為進階的使用者案例。<br /><br /> 指定 Visual Studio 套件識別碼的 GUID。|  
 |`ID`|選擇性屬性，為進階的使用者案例。<br /><br /> 指定 Visual Studio 資源識別碼。|  
   
 ### <a name="child-elements"></a>子元素  
@@ -58,7 +58,7 @@ ms.locfileid: "58939832"
 |[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|必要項目。<br /><br /> 將範本分類，並定義該範本在 [新增專案]  或 [加入新項目]  對話方塊中顯示的方式。|  
   
 ## <a name="text-value"></a>文字值  
- 需要的文字值，除非`Package`和`ID`屬性使用。  
+ 除非使用 `Package` 和 `ID` 屬性，否則需要文字值。  
   
  文字提供範本的描述。  
   

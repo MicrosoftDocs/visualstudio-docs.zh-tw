@@ -10,11 +10,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 8d4dc21c2c6329730d678fa574f11d86bed8cdc4
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60107172"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68159618"
 ---
 # <a name="controlling-the-visibility-of-an-icon-or-decorator"></a>控制圖示或 Decorator 的可見度
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -62,13 +62,13 @@ A*裝飾項目*是圖示或特定領域語言 (DSL) 中的圖形上顯示的文�
   
 1. 將導出的網域屬性加入至網域類別。 在 [**屬性**] 視窗中，設定下列值：  
   
-     **IsBrowsable =**`False`**-這可能會隱藏來自使用者的屬性**  
+     **IsBrowsable =** `False` **-這可能會隱藏來自使用者的屬性**  
   
-     **類型 =**`Calculated`**-這表示您將提供程式碼會計算其值**  
+     **類型 =** `Calculated` **-這表示您將提供程式碼會計算其值**  
   
      **名稱**例如**DecoratorControl**  
   
-     **Type** = `Boolean`  
+     **型別** = `Boolean`  
   
      如需詳細資訊，請參閱 <<c0> [ 計算和儲存體的自訂屬性](../modeling/calculated-and-custom-storage-properties.md)。  
   
@@ -92,7 +92,7 @@ A*裝飾項目*是圖示或特定領域語言 (DSL) 中的圖形上顯示的文�
   
 6. 請注意所缺少的命名空間、 類別和方法。  比方說，Company.FamilyTree.Person.GetDecoratorControlValue()。  
   
-7. 在不同的程式碼檔案中，撰寫部分類別定義，其中包含遺漏的方法。 例如:   
+7. 在不同的程式碼檔案中，撰寫部分類別定義，其中包含遺漏的方法。 例如：  
   
     ```  
     namespace Company.FamilyTree  

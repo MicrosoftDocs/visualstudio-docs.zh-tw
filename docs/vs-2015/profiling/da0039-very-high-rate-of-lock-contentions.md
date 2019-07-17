@@ -14,11 +14,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 14192551543bdfd5cc352ed4c7c45fa95630dcd3
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59657658"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68156431"
 ---
 # <a name="da0039-very-high-rate-of-lock-contentions"></a>DA0039：鎖定競爭的比率極高
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -55,4 +55,4 @@ ms.locfileid: "59657658"
 ## <a name="how-to-investigate-a-warning"></a>如何調查警告  
  按兩下訊息，瀏覽至分析資料的[標記檢視](../profiling/marks-view.md)。  尋找 **.NET CLR LocksAndThreads\Contention Rate / sec** 欄。 判斷是否有特定的程式執行階段，當中的鎖定爭用比其他階段更繁重。  
   
- 只有當您不使用並行分析方法時，才會引發此規則。 並行分析方法是用來診斷應用程式中與鎖定爭用相關效能問題的最佳工具。 收集並行分析資料可了解應用程式的鎖定行為。 這包括了解哪些鎖定嚴重爭用、執行緒執行時間因為等候爭用的鎖定而延遲多久，以及哪些特定的程式碼有關係。 並行存取設定檔會收集資料，所有的鎖定爭用，包括原生 Windows 功能、.NET Framework 類別，以及任何其他協力廠商程式庫的鎖定行為在您的應用程式的參考。 如需從 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] IDE 進行並行分析的相關資訊，請參閱[收集執行緒和處理序並行資料](../profiling/collecting-thread-and-process-concurrency-data.md)。 如需從命令列進行並行分析的相關資訊連結，請參閱[從命令列使用分析方法](../profiling/using-profiling-methods-to-collect-performance-data-from-the-command-line.md)的＜使用並行方法收集資源爭用和執行緒活動資料＞一節。
+ 只有當您不使用並行分析方法時，才會引發此規則。 並行分析方法是用來診斷應用程式中與鎖定爭用相關效能問題的最佳工具。 收集並行分析資料可了解應用程式的鎖定行為。 這包括了解哪些鎖定嚴重爭用、執行緒執行時間因為等候爭用的鎖定而延遲多久，以及哪些特定的程式碼有關係。 並行存取設定檔會收集資料，所有的鎖定爭用，包括原生 Windows 功能、.NET Framework 類別，以及任何其他協力廠商程式庫的鎖定行為在您的應用程式的參考。 如需從 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] IDE 進行並行分析的相關資訊，請參閱[收集執行緒和處理序並行資料](../profiling/collecting-thread-and-process-concurrency-data.md)。 如需從命令列進行並行分析的相關資訊連結，請參閱[從命令列使用分析方法](../profiling/using-profiling-methods-to-collect-performance-data-from-the-command-line.md)的＜使用並行方法收集資源爭用和執行緒活動資料＞  一節。

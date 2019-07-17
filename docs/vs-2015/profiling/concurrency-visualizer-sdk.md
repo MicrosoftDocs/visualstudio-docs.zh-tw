@@ -12,11 +12,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 4fb6543f5e741010ae19e706ee4a87352d678390
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60063786"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68150339"
 ---
 # <a name="concurrency-visualizer-sdk"></a>並行視覺化檢視 SDK
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,9 +34,9 @@ ms.locfileid: "60063786"
   
 ##### <a name="to-add-sdk-support-to-a-c-or-visual-basic-project"></a>在 C# 或 Visual Basic 專案中加入 SDK 支援  
   
-1. 在功能表列上依序選擇 [分析]、[並行視覺化檢視]、[將 SDK 加入專案]。  
+1. 在功能表列上依序選擇 [分析]  、[並行視覺化檢視]  、[將 SDK 加入專案]  。  
   
-2. 選取您要存取 SDK 的專案，然後選擇 [將 SDK 加入選取的專案] 按鈕。  
+2. 選取您要存取 SDK 的專案，然後選擇 [將 SDK 加入選取的專案]  按鈕。  
   
 3. 在程式碼中加入 imports 或 using 陳述式。  
   
@@ -53,9 +53,9 @@ ms.locfileid: "60063786"
   
 ##### <a name="to-add-sdk-support-to-a-c-or-c-project"></a>在 C++ 或 C 專案中加入 SDK 支援  
   
-1. 在功能表列上依序選擇 [分析]、[並行視覺化檢視]、[將 SDK 加入專案]。  
+1. 在功能表列上依序選擇 [分析]  、[並行視覺化檢視]  、[將 SDK 加入專案]  。  
   
-2. 選取您要存取 SDK 的專案，然後選擇 [將 SDK 加入選取的專案] 按鈕。  
+2. 選取您要存取 SDK 的專案，然後選擇 [將 SDK 加入選取的專案]  按鈕。  
   
 3. 對於 C++，請包含 `cvmarkersobj.h`。 對於 C，請包含 `cvmarkers.h`。  
   
@@ -81,13 +81,13 @@ ms.locfileid: "60063786"
   
 1. 建立 <xref:Microsoft.ConcurrencyVisualizer.Instrumentation.MarkerWriter> 物件。  建構函式取用 GUID。  
   
-2. 若要註冊提供者，請開啟並行視覺化檢視的 [[進階設定](../profiling/advanced-settings-dialog-box-concurrency-visualizer.md)] 對話方塊。  選取 [標記] 索引標籤，然後選擇 [加入新提供者] 按鈕。 在 [[進階設定](../profiling/advanced-settings-dialog-box-concurrency-visualizer.md)] 對話方塊中，輸入用來建立提供者的 GUID 和提供者的描述。  
+2. 若要註冊提供者，請開啟並行視覺化檢視的 [[進階設定](../profiling/advanced-settings-dialog-box-concurrency-visualizer.md)] 對話方塊。  選取 [標記]  索引標籤，然後選擇 [加入新提供者]  按鈕。 在 [[進階設定](../profiling/advanced-settings-dialog-box-concurrency-visualizer.md)] 對話方塊中，輸入用來建立提供者的 GUID 和提供者的描述。  
   
 #### <a name="to-use-a-new-marker-provider-in-a-c-or-c-project"></a>在 C++ 或 C 專案中使用新的標記提供者  
   
 1. 使用 `CvInitProvider` 函式來初始化 PCV_PROVIDER。  建構函式取用 GUID* 和 PCV_PROVIDER\*。  
   
-2. 若要註冊提供者，請開啟 [[進階設定](../profiling/advanced-settings-dialog-box-concurrency-visualizer.md)] 對話方塊。  選取 [標記] 索引標籤，然後選擇 [加入新提供者] 按鈕。 在此對話方塊中，輸入用來建立提供者的 GUID 和提供者的描述。  
+2. 若要註冊提供者，請開啟 [[進階設定](../profiling/advanced-settings-dialog-box-concurrency-visualizer.md)] 對話方塊。  選取 [標記]  索引標籤，然後選擇 [加入新提供者]  按鈕。 在此對話方塊中，輸入用來建立提供者的 GUID 和提供者的描述。  
   
 #### <a name="to-use-a-marker-series-in-a-c-or-visual-basic-project"></a>在 C# 或 Visual Basic 專案中使用標記系列  
   
