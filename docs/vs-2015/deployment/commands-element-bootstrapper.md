@@ -17,11 +17,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: af10c9e0b26a6ef2c8e7a98bc345b8e86017682b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58942411"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68205340"
 ---
 # <a name="ltcommandsgt-element-bootstrapper"></a>&lt;命令&gt;項目 （啟動載入器）
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -95,7 +95,7 @@ ms.locfileid: "58942411"
   
  `BypassIf` 具有下列屬性。  
   
-|屬性|描述|  
+|屬性|說明|  
 |---------------|-----------------|  
 |`Property`|必要項。 要測試之屬性的名稱。 屬性必須先前所定義的子系`InstallChecks`項目。 如需詳細資訊，請參閱 < [ \<InstallChecks > 項目](../deployment/installchecks-element-bootstrapper.md)。|  
 |`Compare`|必要項。 要執行的比較類型。 下列清單顯示有效的值：<br /><br /> `ValueEqualTo`, `ValueNotEqualTo`, `ValueGreaterThan`, `ValueGreaterThanOrEqualTo`, `ValueLessThan`, `ValueLessThanOrEqualTo`, `VersionEqualTo`, `VersionNotEqualTo`, `VersionGreaterThan`, `VersionGreaterThanOrEqualTo`, `VersionLessThan`, `VersionLessThanOrEqualTo`, `ValueExists`, `ValueNotExists`|  
@@ -121,7 +121,7 @@ ms.locfileid: "58942411"
 ## <a name="exitcode"></a>ExitCode  
  `ExitCode`項目是子系`ExitCodes`項目。 `ExitCode`元素會決定安裝應該執行的結束代碼來回應來自套件。 `ExitCode` 包含沒有子項目，並具有下列屬性。  
   
-|屬性|描述|  
+|屬性|說明|  
 |---------------|-----------------|  
 |`Value`|必要項。 結束代碼值，這個`ExitCode`項目會套用。|  
 |`Result`|必要項。 如何安裝應該因應此結束代碼。 下列清單顯示有效的值：<br /><br /> `Success`. 旗標為已成功安裝套件。<br /><br /> `SuccessReboot`. 封裝已成功安裝，加上旗標，指示系統在重新啟動。<br /><br /> `Fail`. 標記為失敗的封裝。<br /><br /> `FailReboot`. 套件標記為失敗，並指示重新啟動系統。|  

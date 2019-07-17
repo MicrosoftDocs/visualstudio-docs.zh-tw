@@ -7,11 +7,11 @@ caps.latest.revision: 6
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: fe8e54876f5b2ab3eda5c1bd8d35f0b0d0c788b2
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60057741"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68197310"
 ---
 # <a name="vsix-color-editor"></a>VSIX 色彩編輯器
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -55,7 +55,7 @@ Visual Studio 擴充功能色彩編輯器工具可以建立和編輯 Visual Stud
   
    **步驟 1：判斷新的色彩語彙基元的分類和語彙基元名稱。**  
   
-   慣用的命名配置為 VSColor **[Category] [UI 型別] [State]**。 請勿 VSColor 名稱中使用"color"這個字，因為它是多餘。  
+   慣用的命名配置為 VSColor **[Category] [UI 型別] [State]** 。 請勿 VSColor 名稱中使用"color"這個字，因為它是多餘。  
   
    類別目錄名稱提供邏輯分組，並應定義為窄越好。 比方說，單一工具視窗的名稱可能是類別名稱，但不是整個商務單位或專案小組名稱。 群組項目類別，可協助避免混淆之間具有相同名稱的色彩。  
   
@@ -187,7 +187,7 @@ namespace MyCustomColors
   
  若要進行永久變更，重建並重新部署 Visual Studio 擴充功能之後將新的色彩加入至.pkgdef 檔和寫入將會使用這些色彩的程式碼。 重建 Visual Studio 擴充功能，將新的色彩的登錄值合併至佈景主題的其餘部分。 然後重新啟動 Visual Studio、 檢視 UI，並確認新的色彩，會如預期般出現。  
   
-## <a name="notes"></a>注意  
+## <a name="notes"></a>附註  
  此工具被要用來建立自訂的色彩，既有的 Visual Studio 佈景主題，或編輯自訂 Visual Studio 佈景主題色彩。 若要建立完整的自訂 Visual Studio 佈景主題，請下載[Visual Studio 色彩佈景主題編輯器延伸模組](http://visualstudiogallery.msdn.microsoft.com/6f4b51b6-5c6b-4a81-9cb5-f2daa560430b)從 Visual Studio 延伸模組組件庫。  
   
 ## <a name="sample-output"></a>範例輸出  

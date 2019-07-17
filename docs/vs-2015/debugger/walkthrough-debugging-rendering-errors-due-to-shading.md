@@ -10,11 +10,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: b4c158c4ce6762b69f73a55915cc459f84cd7fff
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60067153"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68183686"
 ---
 # <a name="walkthrough-debugging-rendering-errors-due-to-shading"></a>逐步解說：對因著色而產生的顯示錯誤進行偵錯
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,9 +41,9 @@ ms.locfileid: "60067153"
   
 #### <a name="to-examine-a-frame-in-a-graphics-log"></a>檢查圖形記錄中的畫面格  
   
-1. 在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]中載入圖形記錄，其中包含表現出遺漏模型的畫面格。 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]中隨即顯示新的圖形記錄文件視窗。 此視窗的上半部是所選取畫面格的轉譯目標輸出。 下半部是 [畫面格清單] ，其以縮圖顯示每個擷取的畫面格。  
+1. 在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]中載入圖形記錄，其中包含表現出遺漏模型的畫面格。 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]中隨即顯示新的圖形記錄文件視窗。 此視窗的上半部是所選取畫面格的轉譯目標輸出。 下半部是 [畫面格清單]  ，其以縮圖顯示每個擷取的畫面格。  
   
-2. 在 [畫面格清單] 中，選取物件在其中沒有正確外觀的畫面格。 轉譯目標會更新以反映選取的畫面格。 在此情節中，圖形記錄文件視窗如下所示：  
+2. 在 [畫面格清單]  中，選取物件在其中沒有正確外觀的畫面格。 轉譯目標會更新以反映選取的畫面格。 在此情節中，圖形記錄文件視窗如下所示：  
   
     ![Visual Studio 中，圖形記錄文件。](../debugger/media/gfx-diag-demo-render-error-shader-step-1.png "gfx_diag_demo_render_error_shader_step_1")  
   
@@ -51,7 +51,7 @@ ms.locfileid: "60067153"
   
 #### <a name="to-examine-a-pixel"></a>檢查像素  
   
-1. 開啟 [圖形像素歷史記錄]  視窗。 在 [圖形診斷]  工具列上，選擇 [像素歷史記錄] 。  
+1. 開啟 [圖形像素歷史記錄]  視窗。 在 [圖形診斷]  工具列上，選擇 [像素歷史記錄]  。  
   
 2. 選取要檢查的像素。 在圖形記錄文件視窗中，從著色不正確的物件選取其中一個像素：  
   
@@ -67,7 +67,7 @@ ms.locfileid: "60067153"
   
 #### <a name="to-examine-the-pixel-shader"></a>檢查像素著色器  
   
-1. 開始偵錯像素著色器。 在 [圖形像素歷史記錄]  視窗中，於物件基本圖形下方的 [像素著色器] 旁，選擇 [開始偵錯]  按鈕。  
+1. 開始偵錯像素著色器。 在 [圖形像素歷史記錄]  視窗中，於物件基本圖形下方的 [像素著色器]  旁，選擇 [開始偵錯]  按鈕。  
   
 2. 在此情節中，由於像素著色器才從端點著色器傳遞色彩，因此很容易觀察到像素著色器不是問題的來源。  
   
@@ -81,7 +81,7 @@ ms.locfileid: "60067153"
   
 #### <a name="to-examine-the-vertex-shader"></a>檢查端點著色器  
   
-1. 開始偵錯端點著色器。 在 [圖形像素歷史記錄]  視窗中，於物件基本圖形下方的 [端點著色器] 旁，選擇 [開始偵錯]  按鈕。  
+1. 開始偵錯端點著色器。 在 [圖形像素歷史記錄]  視窗中，於物件基本圖形下方的 [端點著色器]  旁，選擇 [開始偵錯]  按鈕。  
   
 2. 找出端點著色器的輸出結構，這是像素著色器的輸入。 在此情節中，此結構的名稱是 `output`。 檢查端點著色器程式碼並發現 `color` 結構的 `output` 成員已明確設定為完全不透明的黑色，這可能是因為某人的偵錯工作所造成。  
   

@@ -1,5 +1,5 @@
 ---
-title: IEnumCodePaths2::Skip | Microsoft Docs
+title: IEnumCodePaths2::Skip |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,11 +13,11 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: c38c492572504d7fe49f9557aa2b9eb948d00f67
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58944799"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68192005"
 ---
 # <a name="ienumcodepaths2skip"></a>IEnumCodePaths2::Skip
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]

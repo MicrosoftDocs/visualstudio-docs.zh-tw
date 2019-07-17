@@ -12,11 +12,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 4a8d4726ba91be6df455d16907a0cf122cc1effa
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58940889"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68192328"
 ---
 # <a name="process-tab-window-properties-dialog-box"></a>視窗屬性對話方塊、處理序索引標籤
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,7 +25,7 @@ ms.locfileid: "58940889"
   
  下列設定位於**程序** 索引標籤：  
   
-|進入|描述|  
+|進入|說明|  
 |-----------|-----------------|  
 |**處理序 ID**|擁有建立這個視窗的執行緒的處理序識別碼。 選擇此值，以檢視此程序的屬性。|  
 |**執行緒 ID**|建立這個視窗的執行緒識別碼。 選擇此值，以檢視此執行緒的內容。|

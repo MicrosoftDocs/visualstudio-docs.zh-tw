@@ -14,11 +14,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 489216c637f28d2e0abb3ee9bfe27fd077008985
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58941005"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68144618"
 ---
 # <a name="threads-view"></a>執行緒檢視
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

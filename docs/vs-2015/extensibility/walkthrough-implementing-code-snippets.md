@@ -9,11 +9,11 @@ caps.latest.revision: 18
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: cb720589bc9bc31b7cf2a04b05559cb9c9d46961
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: HT
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60117911"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68201988"
 ---
 # <a name="walkthrough-implementing-code-snippets"></a>逐步解說：實作程式碼片段
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

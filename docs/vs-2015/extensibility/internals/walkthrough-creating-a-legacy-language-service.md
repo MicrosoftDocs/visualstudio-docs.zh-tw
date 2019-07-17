@@ -11,11 +11,11 @@ caps.latest.revision: 20
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 56323447d1d4134939c8fd7550778d2c946bfe19
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60061368"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68144402"
 ---
 # <a name="walkthrough-creating-a-legacy-language-service"></a>逐步解說：建立舊版語言服務
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -44,11 +44,11 @@ ms.locfileid: "60061368"
   
      您可以使用任何您想要的名稱。 詳述這些程序會假設 MyLanguagePackage 做為名稱。  
   
-3. 選取[!INCLUDE[csprcs](../../includes/csprcs-md.md)]作為語言，然後產生新的金鑰檔案的選項。 按 [ **下一步**]。  
+3. 選取[!INCLUDE[csprcs](../../includes/csprcs-md.md)]作為語言，然後產生新的金鑰檔案的選項。 按一下 [下一步]  。  
   
-4. 輸入適當的公司和封裝資訊。 按 [ **下一步**]。  
+4. 輸入適當的公司和封裝資訊。 按一下 [下一步]  。  
   
-5. 選取 **功能表命令**。 按 [ **下一步**]。  
+5. 選取 **功能表命令**。 按一下 [下一步]  。  
   
      如果您不打算在支援程式碼片段，您就可以按一下 [完成]，並略過下一個步驟。  
   

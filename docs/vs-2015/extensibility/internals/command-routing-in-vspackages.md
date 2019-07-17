@@ -12,11 +12,11 @@ caps.latest.revision: 25
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 954d3f25a425652d8adcb31bd36fab06de0d04d2
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58930293"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68195081"
 ---
 # <a name="command-routing-in-vspackages"></a>在 VSPackage 中路由傳送命令
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

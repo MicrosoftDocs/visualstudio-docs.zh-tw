@@ -16,11 +16,11 @@ author: gewarren
 ms.author: gewarren
 manager: wpickett
 ms.openlocfilehash: 41e296a979557a42a96c2f57ce49610d88b98a40
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60073160"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68201571"
 ---
 # <a name="ca2229-implement-serialization-constructors"></a>CA2229:必須實作序列化建構函式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

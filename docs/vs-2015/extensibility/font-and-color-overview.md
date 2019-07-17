@@ -12,11 +12,11 @@ caps.latest.revision: 23
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 0a20cfa2372b1e55652ffcebe6d173cff86140a6
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58930750"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68204355"
 ---
 # <a name="font-and-color-overview"></a>字型和色彩概觀
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -56,7 +56,7 @@ ms.locfileid: "58930750"
   
    只有一個**分類**支援這項機制，也就是，則**文字編輯器**。  
   
-- 較通用的替代方式支援所有其他**分類**和原始檔編輯器時顯示文字以外的使用者介面元件。 如需詳細資訊，請參閱<xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaultsProvider>。  
+- 較通用的替代方式支援所有其他**分類**和原始檔編輯器時顯示文字以外的使用者介面元件。 如需詳細資訊，請參閱 <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaultsProvider>。  
   
 ## <a name="core-editor-text-settings"></a>核心編輯器文字設定  
  語言服務物件的核心編輯器的字型和色彩設定所控管**文字 EditorCategory**中找到**顯示設定**下拉式清單方塊的**字型和色彩**屬性頁。  
@@ -69,7 +69,7 @@ ms.locfileid: "58930750"
   
 - 定義完善且經過最佳化的顏色標示的機制。  
   
-   如需詳細資訊，請參閱<xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer>。  
+   如需詳細資訊，請參閱 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer>。  
   
 - 能夠同時使用內建的顯示項目，從**文字 EditorCategory**和延伸。  
   

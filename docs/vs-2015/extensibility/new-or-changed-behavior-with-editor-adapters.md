@@ -11,13 +11,13 @@ caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: fc7ddaf7ec67a1e33248d5ce424868849200d3e6
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60073614"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68194183"
 ---
-# <a name="new-or-changed-behavior-with-editor-adapters"></a>新增或變更的行為，與編輯器的介面卡
+# <a name="new-or-changed-behavior-with-editor-adapters"></a>編輯器配接器的新行為或變更行為
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 如果您要更新舊版的 Visual Studio 核心編輯器中，針對已撰寫的程式碼，而且您想要使用的編輯器介面卡 （或填充碼），而不是使用新的 API，您應留意下列差異編輯器配接器的行為相對於前一個核心編輯器中。  

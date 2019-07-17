@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentPosition2 | Microsoft Docs
+title: IDebugDocumentPosition2 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,11 +13,11 @@ caps.latest.revision: 14
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 5398d94733bf2ae4c5fe82daa4df0839857b72a6
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58942094"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68200243"
 ---
 # <a name="idebugdocumentposition2"></a>IDebugDocumentPosition2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -39,7 +39,7 @@ IDebugDocumentPosition2 : IUnknown
 ## <a name="methods-in-vtable-order"></a>依照 Vtable 順序的方法  
  下表顯示的方法`IDebugDocumentPosition2`。  
   
-|方法|描述|  
+|方法|說明|  
 |------------|-----------------|  
 |[GetFileName](../../../extensibility/debugger/reference/idebugdocumentposition2-getfilename.md)|取得包含這個文件位置的原始程式檔的檔案名稱。|  
 |[GetDocument](../../../extensibility/debugger/reference/idebugdocumentposition2-getdocument.md)|取得包含文件。|  

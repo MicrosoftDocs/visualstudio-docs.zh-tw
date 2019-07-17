@@ -11,11 +11,11 @@ caps.latest.revision: 18
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 4b1b4e59e43a4a5aeb129464a34b96ef3f665e72
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60064722"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68148860"
 ---
 # <a name="walkthrough-creating-a-custom-editor"></a>逐步解說：建立自訂佈景主題
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ VSPackage 專案範本可以建立簡單的自訂編輯器，在C++。  VSPackag
   
 1. 使用 Visual Studio Package 範本建立專案。  
   
-2. 選取 [**自訂編輯器**選項，然後按一下**下一步]**。 **編輯器選項**頁面隨即顯示。  
+2. 選取 [**自訂編輯器**選項，然後按一下**下一步]** 。 **編輯器選項**頁面隨即顯示。  
   
 3. 輸入您的編輯器名稱**編輯器名稱** 方塊中。 輸入您想要與您的編輯器產生關聯的副檔名**副檔名** 方塊中。 您的編輯器是適用於與此延伸模組的檔案。 檔案的副檔名會註冊為 Visual Studio，不適用於 Windows。 輸入與您的編輯器建立的新文件的預設檔案名稱**預設檔名** 方塊中。  
   

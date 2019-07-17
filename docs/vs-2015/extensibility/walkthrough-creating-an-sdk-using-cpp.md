@@ -9,11 +9,11 @@ caps.latest.revision: 33
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 1312d61b2d287a5dd8cb757b73e818a9e9cb2241
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: HT
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60110033"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68202059"
 ---
 # <a name="walkthrough-creating-an-sdk-using-c"></a>逐步解說：使用 C++ 建立 SDK
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -171,7 +171,7 @@ ms.locfileid: "60110033"
   
 10. 選擇 F5 鍵執行應用程式。  
   
-11. 在應用程式中，輸入任何兩個數字，選取作業，然後選擇 **=**  按鈕。  
+11. 在應用程式中，輸入任何兩個數字，選取作業，然後選擇 **=** 按鈕。  
   
      正確的結果會出現。  
   

@@ -14,11 +14,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: f859bce63e2976b23ab613e249dad41b2bc63486
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58943347"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68190705"
 ---
 # <a name="idiasourcefilegetchecksumtype"></a>IDiaSourceFile::get_checksumType
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -43,7 +43,7 @@ HRESULT get_checksumType ( 
 ## <a name="remarks"></a>備註  
  總和檢查碼型別是可以對應至總和檢查碼演算法的值。 例如，標準的 PDB 檔案格式可以通常具有下列值之一：  
   
-|總和檢查碼類型|CryptoAPI 標籤|描述|  
+|總和檢查碼類型|CryptoAPI 標籤|說明|  
 |-------------------|---------------------|-----------------|  
 |0|\<無>|不存在的總和檢查碼。|  
 |1|`CALG_MD5`|使用 MD5 雜湊演算法產生的總和檢查碼。|  

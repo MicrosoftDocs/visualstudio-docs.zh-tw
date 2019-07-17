@@ -13,11 +13,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 8931b37805e1f24dfaf7fad35a70434da3ed9ebf
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54833908"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68186084"
 ---
 # <a name="manage-the-help-viewer-window"></a>管理說明檢視器視窗
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,7 +27,7 @@ ms.locfileid: "54833908"
 ## <a name="docking-tabs"></a>固定索引標籤  
  說明檢視器支援標準固定功能。 預設會固定說明檢視器中的所有索引標籤，但您可以移動它們、調整其大小、將它們固定到其他位置，以及讓它們「浮動」，使其顯示為獨立的子視窗。  
   
- 若要將說明檢視器視窗還原為其預設配置，請開啟 [檢視器選項] 對話方塊，然後選擇 [重設] 按鈕。  
+ 若要將說明檢視器視窗還原為其預設配置，請開啟 [檢視器選項]  對話方塊，然後選擇 [重設]  按鈕。  
   
 ## <a name="opening-a-topic-in-a-new-tab"></a>在新索引標籤中開啟主題  
  在任何導覽索引標籤中，選擇主題，然後選擇 Ctrl + Enter 鍵。  

@@ -1,5 +1,5 @@
 ---
-title: HOW TO：開啟標準編輯器 |Microsoft Docs
+title: 作法：開啟標準編輯器 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -12,13 +12,13 @@ caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 792ac8a0859481fd97b2eaee4bd66753f0460a37
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60042532"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68204125"
 ---
-# <a name="how-to-open-standard-editors"></a>HOW TO：開啟標準編輯器
+# <a name="how-to-open-standard-editors"></a>作法：開啟標準編輯器
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 當您開啟標準編輯器時，您會讓判斷指定的檔案類型，而不是指定之檔案的專案特定編輯器的標準編輯器在 IDE。  

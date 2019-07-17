@@ -12,11 +12,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 0f92b4053006aa5da3c28d9330b372466f84d0fd
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60113985"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68199964"
 ---
 # <a name="the-text-template-transformation-process"></a>文字範本轉換流程
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,9 +31,9 @@ ms.locfileid: "60113985"
   
 |元件|描述|可自訂 （是/否）|  
 |---------------|-----------------|------------------------------|  
-|引擎|引擎元件控制文字範本轉換流程|否。|  
-|主機|主機是引擎與使用者環境之間的介面。 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 是一堆文字轉換程序。|可以。 您可以撰寫自訂主機。|  
-|指示詞處理器|指示詞處理器會處理文字範本中的指示詞的類別。 您可以使用指示詞提供資料給文字範本中，從輸入來源。|可以。 您可以撰寫自訂指示詞處理器|  
+|引擎|引擎元件控制文字範本轉換流程|資料分割|  
+|主機|主機是引擎與使用者環境之間的介面。 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 是一堆文字轉換程序。|是的。 您可以撰寫自訂主機。|  
+|指示詞處理器|指示詞處理器會處理文字範本中的指示詞的類別。 您可以使用指示詞提供資料給文字範本中，從輸入來源。|是的。 您可以撰寫自訂指示詞處理器|  
   
 ## <a name="the-engine"></a>引擎  
  引擎會收到範本做為字串，從主應用程式，用來處理轉換程序中使用的所有檔案。 然後，引擎會要求主應用程式找出任何自訂指示詞處理器和環境的其他方面。 然後，引擎會編譯，並執行產生的轉換類別。 引擎會傳回產生的文字至主機，通常會將文字儲存至檔案。  

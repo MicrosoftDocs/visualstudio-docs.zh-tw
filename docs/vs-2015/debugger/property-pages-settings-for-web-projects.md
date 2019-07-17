@@ -22,16 +22,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 3cb7cd3f8c3678d37feb2267f68ab5d2b3d970e0
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58941652"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68150861"
 ---
 # <a name="property-pages-settings-for-web-projects"></a>Web 專案的屬性頁設定
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-您可以在 [屬性頁] 對話方塊中使用[偵錯和發行組態](../debugger/how-to-set-debug-and-release-configurations.md)中所討論的方法，變更網站偵錯組態的屬性設定。 下表顯示 [屬性頁] 對話方塊中與偵錯工具相關的設定位置。  
+您可以在 [屬性頁]  對話方塊中使用[偵錯和發行組態](../debugger/how-to-set-debug-and-release-configurations.md)中所討論的方法，變更網站偵錯組態的屬性設定。 下表顯示 [屬性頁]  對話方塊中與偵錯工具相關的設定位置。  
   
 ### <a name="configuration-properties-folder-start-options-category"></a>組態屬性資料夾 (起始選項分類)  
   
@@ -49,7 +49,7 @@ ms.locfileid: "58941652"
 |**使用預設網頁伺服器**|使用預設的 Web 伺服器。|  
 |**使用自訂伺服器**|允許您輸入基礎 URL 用以做為伺服器。|  
 |**偵錯工具**|標題，用以分類與要進行之偵錯類型相關的選項。|  
-|**ASP.NET 偵錯**|啟用為 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 開發平台所撰寫的伺服器頁面偵錯。 您必須在 [起始 URL] 中指定 URL。|  
+|**ASP.NET 偵錯**|啟用為 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 開發平台所撰寫的伺服器頁面偵錯。 您必須在 [起始 URL]  中指定 URL。|  
 |**機器碼偵錯**|讓您可以從 Managed 應用程式偵錯原生 (Unmanaged) Win32 程式碼的呼叫。|  
 |**SQL Server 偵錯**|允許 SQL Server 資料庫物件偵錯。|  
 |**Silverlight 偵錯**|允許偵錯 Silverlight 元件。|  

@@ -10,13 +10,13 @@ author: gewarren
 ms.author: gewarren
 manager: wpickett
 ms.openlocfilehash: c4f5de2926cb38f570defa95463489523c694132
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60079067"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68142270"
 ---
-# <a name="how-to-enable-and-disable-automatic-code-analysis-for-managed-code"></a>HOW TO：啟用和停用 Managed 程式碼的自動程式碼分析
+# <a name="how-to-enable-and-disable-automatic-code-analysis-for-managed-code"></a>作法：啟用和停用 Managed 程式碼的自動程式碼分析
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 您可以設定要在 managed 程式碼專案的每個組建之前執行的程式碼分析。 您可以針對每個設定不同的程式碼分析屬性[!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)]組態。  

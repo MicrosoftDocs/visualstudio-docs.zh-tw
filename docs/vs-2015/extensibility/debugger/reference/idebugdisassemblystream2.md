@@ -13,11 +13,11 @@ caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 5b5126758c60262564390f84b6278300a41660f5
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58939370"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68187184"
 ---
 # <a name="idebugdisassemblystream2"></a>IDebugDisassemblyStream2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -39,7 +39,7 @@ IDebugDisassemblyStream2 : IUnknown
 ## <a name="methods-in-vtable-order"></a>依照 Vtable 順序的方法  
  下表顯示的方法`IDebugDisassemblyStream2`。  
   
-|方法|描述|  
+|方法|說明|  
 |------------|-----------------|  
 |[Read](../../../extensibility/debugger/reference/idebugdisassemblystream2-read.md)|讀取從目前的位置，在反組譯碼資料流中的指示。|  
 |[Seek](../../../extensibility/debugger/reference/idebugdisassemblystream2-seek.md)|反組譯碼資料流指定數目的相對於指定位置的指示中移動讀取的指標。|  

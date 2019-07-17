@@ -11,11 +11,11 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 75401eb0d5acd5d363d05aec57909eef5b9855e3
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58942565"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68144302"
 ---
 # <a name="web-site-support-attributes"></a>網站支援屬性
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -36,7 +36,7 @@ ms.locfileid: "58942565"
 ## <a name="websiteprojectrelatedfilesattribute"></a>WebSiteProjectRelatedFilesAttribute  
  這個屬性會放在語言專案。 它在另一種檔案類型 （主要） 下允許巢狀 （相關） 的一種檔案類型的網站專案中**方案總管 中**。  
   
- 例如:   
+ 例如：  
   
 ```  
 [WebSiteProjectRelatedFiles("aspx", "py")]public class PythonProjectPackage : ProjectPackage  
@@ -47,7 +47,7 @@ ms.locfileid: "58942565"
 ## <a name="provideintellisenseproviderattribute"></a>ProvideIntellisenseProviderAttribute  
  這個屬性會放在語言專案套件。 它會選取該語言的 Intellisense 提供者。  
   
- 例如:   
+ 例如：  
   
 ```  
 [ProvideIntellisenseProvider(typeof(PythonIntellisenseProvider), "IronPythonCodeProvider", "Iron Python", ".py", "IronPython;Python", "IronPython")]public class PythonPackage : Package, IOleComponent  

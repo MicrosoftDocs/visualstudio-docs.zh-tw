@@ -11,11 +11,11 @@ caps.latest.revision: 25
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 43dc083812bc172fe4a9f80335742b3faab2e1f4
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58942777"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68184686"
 ---
 # <a name="bitflags-used-by-specific-commands"></a>特定命令所使用的位元旗標
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -70,7 +70,7 @@ ms.locfileid: "58942777"
 ## <a name="openproject-flags"></a>OpenProject 旗標  
  這些旗標由[SccOpenProject](../extensibility/sccopenproject-function.md)在`dwFlags`參數。  
   
-|選項值|值|描述|  
+|選項值|值|說明|  
 |------------------|-----------|-----------------|  
 |SCC_OP_CREATEIFNEW|0x00000001L|如果專案不存在於原始檔控制中，建立它。 如果未設定此旗標，提示使用者輸入專案來建立 (除非`SCC_OP_SILENTOPEN`指定旗標)。|  
 |SCC_OP_SILENTOPEN|0x00000002L|不提示使用者建立的專案中;只傳回`SCC_E_UNKNOWNPROJECT`。|  
@@ -98,14 +98,14 @@ ms.locfileid: "58942777"
 ## <a name="dwval-bitflags"></a>dwVal 位元旗標  
  這些旗標由[SccSetOption](../extensibility/sccsetoption-function.md)在`dwVal`參數。  
   
-|旗標|值|描述|使用`nOption`值|  
+|旗標|值|說明|使用`nOption`值|  
 |----------|-----------|-----------------|-----------------------------|  
 |`SCC_OPT_EQ_DISABLE`|0x00L|暫停事件佇列的活動。|`SCC_OPT_EVENTQUEUE`|  
 |`SCC_OPT_EQ_ENABLE`|0x01L|啟用事件佇列記錄。|`SCC_OPT_EVENTQUEUE`|  
 |`SCC_OPT_HCM_NO`|0L|（預設值）有無取消模式;外掛程式必須視提供。|`SCC_OPT_HASCANCELMODE`|  
-|`SCC_OPT_HCM_YES`|1L|IDE 會處理取消。|`SCC_OPT_HASCANCELMODE`|  
+|`SCC_OPT_HCM_YES`|1 L|IDE 會處理取消。|`SCC_OPT_HASCANCELMODE`|  
 |`SCC_OPT_SCO_NO`|0L|（預設值）[確定] 以查看從外掛程式的 UI 中;工作目錄設定。|`SCC_OPT_SCCCHECKOUTONLY`|  
-|`SCC_OPT_SCO_YES`|1L|任何外掛程式 UI 簽出、 沒有工作目錄。|`SCC_OPT_SCCCHECKOUTONLY`|  
+|`SCC_OPT_SCO_YES`|1 L|任何外掛程式 UI 簽出、 沒有工作目錄。|`SCC_OPT_SCCCHECKOUTONLY`|  
   
 ## <a name="see-also"></a>另請參閱  
  [原始檔控制外掛程式](../extensibility/source-control-plug-ins.md)

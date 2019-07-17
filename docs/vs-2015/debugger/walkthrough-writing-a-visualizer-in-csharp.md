@@ -17,12 +17,12 @@ caps.latest.revision: 36
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 190ada55d5f46d159c6765e9af83d672b654313d
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 6b95ac29f3084bf8899249039ffbaa7da8c2294f
+ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65688160"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67890472"
 ---
 # <a name="walkthrough-writing-a-visualizer-in-c"></a>逐步解說：在 C 中撰寫視覺化檢視\#
 
@@ -39,13 +39,13 @@ ms.locfileid: "65688160"
 
 1. 在上**檔案**功能表上，選擇**新增**，然後按一下 **新專案**。
 
-2. 在 **新的專案**對話方塊的 **專案類型**s 中，選取**Visual C#**。
+2. 在 **新的專案**對話方塊的 **專案類型**s 中，選取**Visual C#** 。
 
 3. 在 **範本**方塊中，選擇**類別庫**。
 
-4. 在 [名稱] 方塊中，為該類別庫鍵入適當的名稱，例如 MyFirstVisualizer。
+4. 在 [名稱]  方塊中，為該類別庫鍵入適當的名稱，例如 MyFirstVisualizer。
 
-5. 按一下 [確定] 。
+5. 按一下 [確定 **Deploying Office Solutions**]。
 
    建立類別庫之後，必須新增 Microsoft.VisualStudio.DebuggerVisualizers.DLL 的參考，如此您才能使用於該處定義的類別。 加入參考之前，不過，您必須重新命名一些類別，使得它們具有有意義的名稱。
 
@@ -62,7 +62,7 @@ ms.locfileid: "65688160"
 
 4. 在 **加入參考**對話方塊的  **.NET**索引標籤上，選擇 Microsoft.VisualStudio.DebuggerVisualizers.DLL。
 
-5. 按一下 [確定] 。
+5. 按一下 [確定 **Deploying Office Solutions**]。
 
 6. 在 DebuggerSide.cs 中，將下列陳述式加入至 `using` 陳述式：
 
@@ -106,7 +106,7 @@ ms.locfileid: "65688160"
 
 2. 在 **加入參考**對話方塊的  **.NET**索引標籤上，選擇 System.Windows.Forms.DLL。
 
-3. 按一下 [確定] 。
+3. 按一下 [確定]  。
 
 4. 在 DebuggerSide.cs 中，將下列陳述式加入至 `using` 陳述式：
 
@@ -170,7 +170,7 @@ ms.locfileid: "65688160"
 
 3. 在 **名稱**方塊中，輸入有意義的名稱，為主控台應用程式，例如`MyTestConsole`。
 
-4. 按一下 [確定] 。
+4. 按一下 [確定]  。
 
    此時，你必須加入必要的參考，如此 MyTestConsole 才能呼叫 MyFirstVisualizer。
 
@@ -180,13 +180,13 @@ ms.locfileid: "65688160"
 
 2. 在 **加入參考** 對話方塊中， **.NET**索引標籤上，選擇 Microsoft.VisualStudio.DebuggerVisualizers.DLL。
 
-3. 按一下 [確定] 。
+3. 按一下 [確定 **Deploying Office Solutions**]。
 
 4. 以滑鼠右鍵按一下**MyTestConsole** ，然後選擇**加入參考**一次。
 
 5. 在 **加入參考** 對話方塊中，按一下**專案**索引標籤，然後按一下 MyFirstVisualizer。
 
-6. 按一下 [確定] 。
+6. 按一下 [確定 **Deploying Office Solutions**]。
 
    現在，您就可以加入程式碼來完成測試載入器。
 
@@ -196,7 +196,8 @@ ms.locfileid: "65688160"
 
 2. 編輯 Program.cs 中的名稱，以更有意義的名稱，例如 TestConsole.cs。
 
-    **附註**[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]會自動變更 TestConsole.cs 以符合新的檔案名稱中的類別宣告。
+    > [!NOTE]
+    > [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 會自動變更 TestConsole.cs 以符合新的檔案名稱中的類別宣告。
 
 3. 在 TestConsole.cs，加入下列程式碼`using`陳述式：
 
@@ -217,7 +218,7 @@ ms.locfileid: "65688160"
 
 1. 在 **方案總管 中**，以滑鼠右鍵按一下**MyTestConsole** ，然後選擇 **設定為啟始專案**快顯功能表上。
 
-2. 在 [偵錯] 功能表上選擇 [啟動]。
+2. 在 [偵錯]  功能表上選擇 [啟動]  。
 
     在主控台應用程式啟動和視覺化檢視會出現並顯示的字串"Hello，World"。
 
@@ -234,13 +235,13 @@ ms.locfileid: "65688160"
 
 1. 在上**檔案**功能表上，選擇**新增**，然後按一下 **新專案**。
 
-2. 在 **加入新的專案**對話方塊的 **專案類型**s 中，選取**Visual C#**。
+2. 在 **加入新的專案**對話方塊的 **專案類型**s 中，選取**Visual C#** 。
 
 3. 在 **範本**方塊中，選擇**類別庫**。
 
 4. 在 **名稱**方塊中，輸入適當的類別程式庫，例如 MySecondVisualizer 名稱。
 
-5. 按一下 [確定] 。
+5. 按一下 [確定]  。
 
    現在，您可以將視覺化檢視項目加入它：
 
@@ -254,7 +255,7 @@ ms.locfileid: "65688160"
 
 4. 在 **名稱**方塊中，輸入適當的名稱，例如 SecondVisualizer.cs。
 
-5. 按一下 [加入] 。
+5. 按一下 [加入]  。
 
    這就是這麼簡單。 SecondVisualizer.cs 的檔案，並檢視範本新增為您的程式碼。 請繼續並實驗程式碼。 既然您已經知道的基本概念，就可以建立您自己的更複雜且實用的視覺化檢視。
 

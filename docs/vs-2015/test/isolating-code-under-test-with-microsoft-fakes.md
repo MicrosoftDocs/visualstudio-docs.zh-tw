@@ -9,16 +9,16 @@ caps.latest.revision: 18
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 97f238b51e3f4ad3bbb32bdbdc134089c0cb7e99
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60099100"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68147170"
 ---
 # <a name="isolating-code-under-test-with-microsoft-fakes"></a>使用 Microsoft Fakes 在測試期間隔離程式碼
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Microsoft Fakes 會以「虛設常式」或「填充碼」取代應用程式的其他部分，協助您隔離要測試的程式碼。 這些是受測試所控制的一些程式碼片段。 藉由隔離待測的程式碼，您可以在正確的位置尋找測試失敗的原因。 即使應用程式的其他部分還無法運作，您也可以利用虛設常式和填充碼。  
+Microsoft Fakes 會以「虛設常式」  或「填充碼」  取代應用程式的其他部分，協助您隔離要測試的程式碼。 這些是受測試所控制的一些程式碼片段。 藉由隔離待測的程式碼，您可以在正確的位置尋找測試失敗的原因。 即使應用程式的其他部分還無法運作，您也可以利用虛設常式和填充碼。  
   
  Fakes 分為兩種類別：  
   
@@ -77,9 +77,9 @@ Microsoft Fakes 會以「虛設常式」或「填充碼」取代應用程式的�
   
 2. **新增 Fakes 組件**  
   
-    1. 在 [方案總管] 中展開測試專案的參考清單。 如果在 Visual Basic 中工作，您必須選擇 [顯示所有檔案] 才能看到參考清單。  
+    1. 在 [方案總管] 中展開測試專案的參考清單。 如果在 Visual Basic 中工作，您必須選擇 [顯示所有檔案]  才能看到參考清單。  
   
-    2. 選取定義介面 (例如 IStockFeed) 之組件的參考。 在此參考的捷徑功能表上，選擇 [新增 Fakes 組件]。  
+    2. 選取定義介面 (例如 IStockFeed) 之組件的參考。 在此參考的捷徑功能表上，選擇 [新增 Fakes 組件]  。  
   
     3. 重建方案。  
   
@@ -165,9 +165,9 @@ Microsoft Fakes 會以「虛設常式」或「填充碼」取代應用程式的�
   
 1. **新增 Fakes 組件**  
   
-    在 [方案總管] 中開啟單元測試專案的參考，並且選取包含要假造之方法的組件參考。 在本範例中，`DateTime` 類別是在 **System.dll** 中。  若要查看 Visual Basic 專案中的參考，請選擇 [顯示所有檔案]。  
+    在 [方案總管] 中開啟單元測試專案的參考，並且選取包含要假造之方法的組件參考。 在本範例中，`DateTime` 類別是在 **System.dll** 中。  若要查看 Visual Basic 專案中的參考，請選擇 [顯示所有檔案]  。  
   
-    選擇 [新增 Fakes 組件]。  
+    選擇 [新增 Fakes 組件]  。  
   
 2. **在 ShimsContext 中插入填充碼**  
   

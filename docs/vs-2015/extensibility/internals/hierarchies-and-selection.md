@@ -13,11 +13,11 @@ caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: c5bed77a6ec6f8f819137b6859ea0934260f1f03
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58940645"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68158404"
 ---
 # <a name="hierarchies-and-selection"></a>階層和選取範圍
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

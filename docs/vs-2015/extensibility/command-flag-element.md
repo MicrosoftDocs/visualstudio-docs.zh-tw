@@ -12,11 +12,11 @@ caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 39b2377dd1599d58eac4ca967ca540d8ce0e6847
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58945049"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68184361"
 ---
 # <a name="command-flag-element"></a>Command Flag 項目
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,7 +37,7 @@ ms.locfileid: "58945049"
   
 ### <a name="child-elements"></a>子元素  
   
-|值|描述|  
+|值|說明|  
 |-----------|-----------------|  
 |AllowParams|表示使用者可以輸入中的命令參數**命令**視窗中輸入命令的正式名稱時。<br /><br /> 適用於： `Button`|  
 |AlwaysCreate|功能表會建立，即使它有任何群組或按鈕。<br /><br /> 適用於： `Menu`|  
@@ -63,7 +63,7 @@ ms.locfileid: "58945049"
 |RouteToDocs|此命令會路由至使用中文件。<br /><br /> 適用於： `Button`|  
 |StretchHorizontally|當設定這個旗標時，寬度會變成下拉式方塊的最小寬度，如果沒有在工具列上的空間，下拉式方塊會自動縮放以填滿可用空間。 會發生這種情況是只有水平停駐工具列，而且在工具列上的一個下拉式方塊可以使用旗標 （在第一個下拉式方塊以外的所有項，則會忽略此旗標）。<br /><br /> 適用於： `Combo`|  
 |TextMenuUseButton|使用`ButtonText`功能表的欄位。 預設欄位是`MenuText`如果有指定。<br /><br /> 適用於： `Button`|  
-|TextChanges|命令或功能表變更的文字可以在執行階段，通常透過`QueryStatus`方法。<br /><br /> 適用於： `Button`， `Menu`|  
+|文字變更|命令或功能表變更的文字可以在執行階段，通常透過`QueryStatus`方法。<br /><br /> 適用於： `Button`， `Menu`|  
 |TextChangesButton|適用於： `Button`|  
 |TextIsAnchorCommand|功能表控制站的功能表文字是來自預設 （錨點） 命令。 錨定命令是選取或閂鎖的最後一個命令。 如果未設定此旗標，功能表控制器會使用它自己`MenuText`欄位。 不過，按一下功能表控制器仍會啟用選取的最後一個命令，從該控制站。<br /><br /> 我們建議您將結合使用這個旗標`TextChanges`旗標。<br /><br /> 這個旗標僅適用於類型的功能表 MenuController 或 MenuControllerLatched。<br /><br /> 適用於： `Menu`|  
 |TextMenuCtrlUseMenu|使用`MenuText`功能表控制站上的欄位。 預設欄位是`ButtonText`。<br /><br /> 適用於： `Button`|  
@@ -72,7 +72,7 @@ ms.locfileid: "58945049"
   
 ### <a name="parent-elements"></a>父項目  
   
-|項目|描述|  
+|項目|說明|  
 |-------------|-----------------|  
 |[Buttons 元素](../extensibility/buttons-element.md)|提供的群組[Button Element](../extensibility/button-element.md)項目。|  
 |[Menus 元素](../extensibility/menus-element.md)|定義實作 VSPackage 的所有功能表。|  

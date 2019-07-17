@@ -13,11 +13,11 @@ caps.latest.revision: 8
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: f553b7f019dd89af771e057a46a11b1affed1308
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58944775"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68188946"
 ---
 # <a name="idebugenumfieldgetvaluefromstring"></a>IDebugEnumField::GetValueFromString
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -42,7 +42,7 @@ int GetValueFromString(
   
 #### <a name="parameters"></a>參數  
  `pszValue`  
- [in]字串，指定要取值的名稱。 請注意，對於 c + +，這是寬字元字串。  
+ [in]字串，指定要取值的名稱。 請注意，針對C++，這是寬字元字串。  
   
  `pValue`  
  [out]傳回相關聯的數值。  

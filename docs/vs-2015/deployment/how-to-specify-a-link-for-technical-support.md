@@ -1,5 +1,5 @@
 ---
-title: HOW TO：如需技術支援指定的連結 |Microsoft Docs
+title: 作法：如需技術支援指定的連結 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-deployment
@@ -22,11 +22,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 533ad333923edf2e3f55ed5c4e85b42f422a573a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60072366"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68148099"
 ---
 # <a name="how-to-specify-a-link-for-technical-support"></a>HOW TO：指定技術支援的連結
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,9 +37,9 @@ ms.locfileid: "60072366"
   
 ### <a name="to-specify-a-support-url"></a>若要指定的支援 URL  
   
-1. 在方案總管 中選取專案之後，按一下 [專案]  功能表中 [屬性] 。  
+1. 在方案總管  中選取專案之後，按一下 [專案]  功能表中 [屬性]  。  
   
-2. 按一下 [發佈] 索引標籤。  
+2. 按一下 [發佈]  索引標籤。  
   
 3. 按一下 **選項** 按鈕以開啟**發行選項** 對話方塊。  
   

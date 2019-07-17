@@ -20,11 +20,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 027e713ccb966528d0468050df30e4265b574198
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58929981"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68151433"
 ---
 # <a name="edit-and-continue-visual-c"></a>編輯後繼續 (Visual C#)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,7 +35,7 @@ ms.locfileid: "58929981"
   
  以 .NET Framework 4.5.1 為目標的 64 位元專案支援 [編輯後繼續]。  
   
- 啟用 [編輯後繼續] 時，當您使用偵錯工具執行命令 (例如 [繼續]、[逐步執行]、[設定下一個陳述式])，或在偵錯工具視窗中執行函式評估時，便會自動套用支援的變更。  
+ 啟用 [編輯後繼續] 時，當您使用偵錯工具執行命令 (例如 [繼續]  、[逐步執行]  、[設定下一個陳述式]  )，或在偵錯工具視窗中執行函式評估時，便會自動套用支援的變更。  
   
  如需詳細資訊，請參閱[如何：使用編輯後繼續 (C#)](../debugger/how-to-use-edit-and-continue-csharp.md)。  
   

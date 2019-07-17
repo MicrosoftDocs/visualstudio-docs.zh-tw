@@ -1,5 +1,5 @@
 ---
-title: HOW TO：提供的 Windows 自動化 |Microsoft Docs
+title: 作法：提供的 Windows 自動化 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -12,11 +12,11 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 7ea7b79df4e7f3748ec2bc7f5e57c6ecb7dfca5b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60080523"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68191841"
 ---
 # <a name="how-to-provide-automation-for-windows"></a>HOW TO：為視窗提供自動化
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

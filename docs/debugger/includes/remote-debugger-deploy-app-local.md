@@ -9,11 +9,11 @@ ms.date: 05/23/2018
 ms.author: mikejo
 ms.custom: include file
 ms.openlocfilehash: 3fa0569739ee81ec4b2aa0eec8157068ffc949cd
-ms.sourcegitcommit: b468d71052a1b8a697f477ab23a3644de139f1e9
+ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/19/2019
-ms.locfileid: "67256274"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "68149211"
 ---
 1. 中**方案總管**，以滑鼠右鍵按一下專案節點，然後選取**發佈**(Web form**發佈的 Web 應用程式**)。
 

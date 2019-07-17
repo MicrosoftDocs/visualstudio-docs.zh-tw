@@ -16,12 +16,12 @@ caps.latest.revision: 112
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: b1e22447581deee70c133dfdb4c42df6630e26ad
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: e7c8f17bb454c7dc58a355774206b760aac2bdfe
+ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67823466"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67891084"
 ---
 # <a name="using-saved-intellitrace-data"></a>使用儲存的 IntelliTrace 資料
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -61,7 +61,7 @@ ms.locfileid: "67823466"
   
   - 在 [所有連結]  下方找出 .iTrace 檔案。 開啟該檔案。  
 
-        \- or -  
+    \-或-  
 
   - 在 [重新產生步驟]  底下，選擇 [IntelliTrace]  連結。  
   

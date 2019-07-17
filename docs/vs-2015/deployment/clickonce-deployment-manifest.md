@@ -17,11 +17,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: a5d1fe2191dadd0972dcde6f38b9697e29f05ab8
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58944331"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68190465"
 ---
 # <a name="clickonce-deployment-manifest"></a>ClickOnce 部署資訊清單
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,12 +34,12 @@ ms.locfileid: "58944331"
 |-------------|-----------------|----------------|  
 |[\<assembly> 元素](../deployment/assembly-element-clickonce-deployment.md)|必要項。 最上層項目。|`manifestVersion`|  
 |[\<assemblyIdentity> 元素](../deployment/assemblyidentity-element-clickonce-deployment.md)|必要項。 識別此 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 應用程式的應用程式資訊清單。|`name`<br /><br /> `version`<br /><br /> `publicKeyToken`<br /><br /> `processorArchitecture`<br /><br /> `culture`|  
-|[\<description> 元素](../deployment/description-element-clickonce-deployment.md)|必要項。 識別應用程式資訊，這些資訊用於建立殼層的存在和 [控制台] 中的 [新增或移除程式] 項目。|`publisher`<br /><br /> `product`<br /><br /> `supportUrl`|  
+|[\<description> 元素](../deployment/description-element-clickonce-deployment.md)|必要項。 識別應用程式資訊，這些資訊用於建立殼層的存在和 [控制台] 中的 [新增或移除程式]  項目。|`publisher`<br /><br /> `product`<br /><br /> `supportUrl`|  
 |[\<deployment> 元素](../deployment/deployment-element-clickonce-deployment.md)|選擇性。 識別用於更新部署及公開至系統的屬性。|`install`<br /><br /> `minimumRequiredVersion`<br /><br /> `mapFileExtensions`<br /><br /> `disallowUrlActivation`<br /><br /> `trustUrlParameters`|  
 |[\<compatibleFrameworks> 元素](../deployment/compatibleframeworks-element-clickonce-deployment.md)|必要項。 識別安裝及執行此應用程式所需的 .NET Framework 版本。|`SupportUrl`|  
 |[\<dependency> 元素](../deployment/dependency-element-clickonce-deployment.md)|必要項。 識別部署所要安裝的應用程式版本，以及應用程式資訊清單的位置。|`preRequisite`<br /><br /> `visible`<br /><br /> `dependencyType`<br /><br /> `codebase`<br /><br /> `size`|  
 |[\<publisherIdentity> 元素](../deployment/publisheridentity-element-clickonce-deployment.md)|簽署資訊清單的必要項。 包含簽署此部署資訊清單之發行者的資訊。|`Name`<br /><br /> `issuerKeyHash`|  
-|[\<Signature> 元素](../deployment/signature-element-clickonce-deployment.md)|選擇性。 包含對此部署資訊清單進行數位簽章時所需的資訊。|None|  
+|[\<Signature> 元素](../deployment/signature-element-clickonce-deployment.md)|選擇性。 包含對此部署資訊清單進行數位簽章時所需的資訊。|無|  
 |[\<customErrorReporting> 元素](../deployment/customerrorreporting-element-clickonce-deployment.md)|選擇性。 指定要在錯誤發生時顯示的 URI。|URI|  
   
 ## <a name="remarks"></a>備註  

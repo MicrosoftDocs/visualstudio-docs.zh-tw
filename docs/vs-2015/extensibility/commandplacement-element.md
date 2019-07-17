@@ -12,11 +12,11 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 43fd417c4d54c0ab57133cf6dbff2c770c1ffc45
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58939333"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68184328"
 ---
 # <a name="commandplacement-element"></a>CommandPlacement 項目
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,7 +38,7 @@ CommandPlacement 元素可讓按鈕、 群組和包含在一個以上的群組�
   
 ### <a name="attributes"></a>屬性  
   
-|屬性|描述|  
+|屬性|說明|  
 |---------------|-----------------|  
 |guid|必要項。 中所定義的命令集的 guid [Symbols 元素](../extensibility/symbols-element.md)。|  
 |id|必要項。 功能表、 群組或放置時，如中所定義的命令識別碼`Symbols Element`。|  
@@ -47,13 +47,13 @@ CommandPlacement 元素可讓按鈕、 群組和包含在一個以上的群組�
   
 ### <a name="child-elements"></a>子元素  
   
-|項目|描述|  
+|項目|說明|  
 |-------------|-----------------|  
 |父代|必要項。 功能表或裝載要放置的項目群組中。|  
   
 ### <a name="parent-elements"></a>父項目  
   
-|項目|描述|  
+|項目|說明|  
 |-------------|-----------------|  
 |[CommandPlacements 元素](../extensibility/commandplacements-element.md)|指定 CommandPlacements 和 CommandPlacement 元素的群組。|  
   

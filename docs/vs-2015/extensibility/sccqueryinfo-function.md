@@ -13,11 +13,11 @@ caps.latest.revision: 19
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: f951e7ef29fbba7225997276b31bd9f32731efc8
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60108434"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68199991"
 ---
 # <a name="sccqueryinfo-function"></a>SccQueryInfo 函式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -51,7 +51,7 @@ SCCRTN SccQueryInfo(
 ## <a name="return-value"></a>傳回值  
  此函式的原始檔控制外掛程式實作應該會傳回下列值之一：  
   
-|值|描述|  
+|值|說明|  
 |-----------|-----------------|  
 |SCC_OK|查詢成功。|  
 |SCC_E_ACCESSFAILURE|發生問題，以存取原始檔控制系統，可能因網路或競爭問題。 建議使用重試。|  

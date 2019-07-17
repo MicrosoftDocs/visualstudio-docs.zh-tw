@@ -12,11 +12,11 @@ caps.latest.revision: 30
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 6f26c093f09cd5b7b99f00ee69a81be99c769e2e
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60054234"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68184174"
 ---
 # <a name="new-project-generation-under-the-hood-part-one"></a>新專案產生：一探究竟，第一部份
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -78,9 +78,9 @@ devenv /installvstemplates
   
  如果您查詢中的鄰近的套件金鑰的 GUID，並檢查 SatelliteDll 子機碼，您可以找到包含字串資源的組件的路徑：  
   
- \<Visual Studio installation path>\VC#\VCSPackages\1033\csprojui.dll  
+ \<Visual Studio 安裝路徑 > \VC#\VCSPackages\1033\csprojui.dll  
   
- 若要確認，請開啟 [檔案總管] csprojui.dll 拖到 Visual Studio 目錄... 字串資料表顯示資源 # 2345年標題**Visual C#**。  
+ 若要確認，請開啟 [檔案總管] csprojui.dll 拖到 Visual Studio 目錄... 字串資料表顯示資源 # 2345年標題**Visual C#** 。  
   
 ##### <a name="sortpriority"></a>SortPriority  
  這會決定的位置中的根節點**專案類型**樹狀目錄中。  
@@ -92,7 +92,7 @@ devenv /installvstemplates
 ##### <a name="developeractivity"></a>DeveloperActivity  
  如果這個子機碼存在時，根節點的位置會受到開發人員設定 對話方塊。 例如，套用至物件的  
   
- DeveloperActivity REG_SZ VC#  
+ DeveloperActivity REG_SZVC#  
   
  表示 Visual C# 將根節點如果 Visual Studio 設定[!INCLUDE[vcprvc](../../includes/vcprvc-md.md)]開發。 否則，它是子節點**其他語言**。  
   
@@ -215,4 +215,4 @@ devenv /installvstemplates
     **MyProjectNode**做為子節點的 Visual C# 中的 [Windows] 節點下，只會出現。  
   
 ## <a name="see-also"></a>另請參閱  
- [新的專案產生：在幕後，第二部分](../../extensibility/internals/new-project-generation-under-the-hood-part-two.md)
+ [新專案產生：一探究竟，第二部份](../../extensibility/internals/new-project-generation-under-the-hood-part-two.md)

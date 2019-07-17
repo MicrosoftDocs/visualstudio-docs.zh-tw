@@ -232,13 +232,13 @@ ms.author: gewarren
 manager: jillfra
 robots: noindex,nofollow
 ms.openlocfilehash: 851a1f87cce5f4030a9ba5a4701b6c0055859f10
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59668713"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68143090"
 ---
-# <a name="additional-resources-for-troubleshooting-data-access-errors"></a>如需疑難排解資料存取錯誤的其他資源
+# <a name="additional-resources-for-troubleshooting-data-access-errors"></a>用來對資料存取錯誤進行疑難排解的其他資源
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 您可以在 Microsoft Developer Network (MSDN) 公共論壇中尋求有關疑難排解錯誤和警告的協助。 下表列出的資料與相關的論壇可在 MSDN 上取得。  

@@ -1,5 +1,5 @@
 ---
-title: HOW TO：建立根據 XSD 結構描述的 XML 文件 |Microsoft Docs
+title: 作法：建立根據 XSD 結構描述的 XML 文件 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-xml-tools
@@ -10,13 +10,13 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 623da37807e0fd61041bfeb9ab411ce0cb96d4b5
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60091119"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68164486"
 ---
-# <a name="how-to-create-an-xml-document-based-on-an-xsd-schema"></a>HOW TO：根據 XSD 結構描述建立 XML 文件
+# <a name="how-to-create-an-xml-document-based-on-an-xsd-schema"></a>作法：根據 XSD 結構描述建立 XML 文件
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 **產生範例 XML**功能會產生範例 XML 檔案，根據 XML 結構描述 (XSD) 檔案。  

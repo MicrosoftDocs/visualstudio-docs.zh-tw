@@ -16,11 +16,11 @@ author: gewarren
 ms.author: gewarren
 manager: wpickett
 ms.openlocfilehash: f47fa4326da9914171e5014decbd6d6923c2f02e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58943508"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68200473"
 ---
 # <a name="ca1060-move-pinvokes-to-nativemethods-class"></a>CA1060:必須將 P/Invokes 移到 NativeMethods 類別
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -66,7 +66,7 @@ ms.locfileid: "58943508"
 
 ## <a name="nativemethods-example"></a>NativeMethods 範例
 
-### <a name="description"></a>描述
+### <a name="description"></a>說明
  因為**NativeMethods**類別不應該使用標示**SuppressUnmanagedCodeSecurityAttribute**，將要求放入其中的 P/Invokes **UnmanagedCode**權限。 因為大部分的應用程式從本機電腦上執行，以及完全信任執行，這通常不是問題。 不過，如果您正在開發可重複使用程式庫，您應該考慮定義**SafeNativeMethods**或是**UnsafeNativeMethods**類別。
 
  下列範例所示**Interaction.Beep**包裝的方法**MessageBeep**函式從 user32.dll。 **MessageBeep**置於 P/Invoke **NativeMethods**類別。
@@ -77,7 +77,7 @@ ms.locfileid: "58943508"
 
 ## <a name="safenativemethods-example"></a>SafeNativeMethods 範例
 
-### <a name="description"></a>描述
+### <a name="description"></a>說明
  P/Invoke 方法，可以安全地公開給任何應用程式，並沒有任何副作用都應該放在名為類別**SafeNativeMethods**。 您不必要求權限，您就不必在多注意力在從的呼叫，用多少付多少。
 
  下列範例所示**environment.tickcount 做**屬性，可包裝**GetTickCount**函式，從 kernel32.dll。

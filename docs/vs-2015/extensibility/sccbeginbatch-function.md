@@ -13,11 +13,11 @@ caps.latest.revision: 15
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 264d9057bf4f17281d6d8a16ed3a6794004e0e21
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58945762"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68189555"
 ---
 # <a name="sccbeginbatch-function"></a>SccBeginBatch 函式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,7 +36,7 @@ SCCRTN SccBeginBatch(void);
 ## <a name="return-value"></a>傳回值  
  此函式的原始檔控制外掛程式實作應該會傳回下列值之一：  
   
-|值|描述|  
+|值|說明|  
 |-----------|-----------------|  
 |SCC_OK|批次的作業已成功開始。|  
 |SCC_E_UNKNOWNERROR|不明確的失敗。|  

@@ -14,11 +14,11 @@ translation.priority.ht:
 - zh-cn
 - zh-tw
 ms.openlocfilehash: 2e5782c49f26925d9eda81f04653b1a20666c6b1
-ms.sourcegitcommit: da4079f5b6ec884baf3108cbd0519d20cb64c70b
+ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 07/15/2019
-ms.locfileid: "67043458"
+ms.locfileid: "68149207"
 ---
 1. 在遠端電腦中，尋找並啟動**遠端偵錯工具**從**開始**功能表。 
    

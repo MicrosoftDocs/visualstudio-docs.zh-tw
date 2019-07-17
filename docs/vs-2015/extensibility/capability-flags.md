@@ -11,11 +11,11 @@ caps.latest.revision: 25
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 831a52818cfc5c7b75c01a9551b70cd26b95dbcf
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58945811"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68184523"
 ---
 # <a name="capability-flags"></a>功能旗標
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -65,7 +65,7 @@ SCC_CAP_*xxx*旗標是用來表示功能的原始檔控制外掛程式的位元�
 ## <a name="capability-bits-added-in-version-13"></a>在 1.3 版中新增的功能位元  
  這些旗標會傳遞一次[SccGetExtendedCapabilities](../extensibility/sccgetextendedcapabilities-function.md)函式來判斷是否支援此功能。  
   
-|擴充的功能的程式碼|值|描述|  
+|擴充的功能的程式碼|值|說明|  
 |------------------------------|-----------|-----------------|  
 |`SCC_EXCAP_CHECKOUT_LOCALVER`|1|支援`SCC_CHECKOUT_LOCALVER`簽出 選項。|  
 |`SCC_EXCAP_BACKGROUND_GET`|2|支援[SccBackgroundGet](../extensibility/sccbackgroundget-function.md)。|  

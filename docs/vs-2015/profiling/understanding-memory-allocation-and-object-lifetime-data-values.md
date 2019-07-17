@@ -13,16 +13,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 816f750148cc30de86fc116f80f64b218b4699d0
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60069741"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68145450"
 ---
 # <a name="understanding-memory-allocation-and-object-lifetime-data-values"></a>認識記憶體配置和物件存留期資料值
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 程式碼剖析工具的 *.NET 記憶體配置*程式碼剖析方法收集在配置時建立或在記憶體回收時終結的物件大小和數目相關資訊，以及事件發生時有關函式「呼叫堆疊」的其他資訊。 「呼叫堆疊」是一個動態結構，其中儲存在處理器上執行的函式相關資訊。  
+[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 程式碼剖析工具的 *.NET 記憶體配置*程式碼剖析方法收集在配置時建立或在記憶體回收時終結的物件大小和數目相關資訊，以及事件發生時有關函式「呼叫堆疊」  的其他資訊。 「呼叫堆疊」  是一個動態結構，其中儲存在處理器上執行的函式相關資訊。  
   
  **需求**  
   
@@ -35,7 +35,7 @@ ms.locfileid: "60069741"
   
  發生 .memory 配置事件時，分析工具會讓呼叫堆疊上每個函式的樣本計數遞增。 在收集資料時，呼叫堆疊上只有一個函式目前正在其函式主體中執行程式碼。 堆疊上的其他函式則是函式呼叫階層中的父代，會等候它們呼叫的函式傳回。  
   
-- 對於配置事件，該分析工具會讓目前正在執行其指示的函式「專有」樣本計數遞增。 因為專有樣本也是函式總 (內含) 樣本數的一部分，所以目前作用中函式的內含樣本計數也會遞增。  
+- 對於配置事件，該分析工具會讓目前正在執行其指示的函式「專有」  樣本計數遞增。 因為專有樣本也是函式總 (內含  ) 樣本數的一部分，所以目前作用中函式的內含樣本計數也會遞增。  
   
 - 分析工具會讓呼叫堆疊上所有其他函式的內含樣本計數遞增。  
   

@@ -10,13 +10,13 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: a8ed63e532bd8ba3977757a51ee494d671e7683a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60117833"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68198234"
 ---
-# <a name="how-to-add-nodes-to-the-workspace-from-the-start-view"></a>HOW TO：將節點從開始檢視新增至工作區
+# <a name="how-to-add-nodes-to-the-workspace-from-the-start-view"></a>作法：將節點從開始檢視新增至工作區
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 本主題描述如何將全域節點加入[XML 結構描述設計工具工作空間](../xml-tools/xml-schema-designer-workspace.md)從[開始檢視](../xml-tools/start-view.md)。  

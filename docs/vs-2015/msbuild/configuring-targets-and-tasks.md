@@ -10,16 +10,16 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 9d3ed6456ecf4ca226368338078247a10d80cee3
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59660589"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68196595"
 ---
 # <a name="configuring-targets-and-tasks"></a>設定目標和工作
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-您可以設定 MSBuild 目標和工作以跨處理序方式隨 MSBuild 一起執行，如此您就能以與目前執行的內容不同的內容做為目標。 例如，您可以在開發電腦以 64 位元 .NET Framework 4.5 作業系統執行時，以 32 位元 .NET Framework 2.0 應用程式為目標。 您也可以將執行 .NET Framework 4 或以前版本的電腦做為目標。 32 或 64 位元與特定 .NET Framework 版本的組合稱為「目標內容」。  
+您可以設定 MSBuild 目標和工作以跨處理序方式隨 MSBuild 一起執行，如此您就能以與目前執行的內容不同的內容做為目標。 例如，您可以在開發電腦以 64 位元 .NET Framework 4.5 作業系統執行時，以 32 位元 .NET Framework 2.0 應用程式為目標。 您也可以將執行 .NET Framework 4 或以前版本的電腦做為目標。 32 或 64 位元與特定 .NET Framework 版本的組合稱為「目標內容」  。  
   
 ## <a name="installation"></a>安裝  
  .NET Framework 4.5 和 4.5.1 會取代 .NET Framework 4 的通用語言執行平台 (CLR)、目標、工作和工具，而不會將它們重新命名。 .NET Framework 4.5.1 會安裝為 [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)] 的一部分。  

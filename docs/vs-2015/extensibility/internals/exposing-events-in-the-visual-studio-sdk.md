@@ -12,11 +12,11 @@ caps.latest.revision: 17
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 7056497c505bbb355287416e468e411b4e5a2a62
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58940027"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68196695"
 ---
 # <a name="exposing-events-in-the-visual-studio-sdk"></a>在 Visual Studio SDK 中公開事件
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -54,7 +54,7 @@ ms.locfileid: "58940027"
   
  「 AutomationProjectItemEvents"="傳回 AutomationProjectItemsEvents 物件 」  
   
-|名稱|類型|範圍|描述|  
+|名稱|類型|Range|描述|  
 |----------|----------|-----------|-----------------|  
 |預設值 (@)|REG_SZ|未使用|未使用。 如需文件，您可以使用 [資料] 欄位。|  
 |AutomationProjectsEvents|REG_SZ|事件物件的名稱。|索引鍵的名稱是相關項目。 如需文件，您可以使用 [資料] 欄位。<br /><br /> 此範例中，來自於基本的專案範例。|  
@@ -71,7 +71,7 @@ ms.locfileid: "58940027"
   
  AutomationEvents.h 和 AutomationEvents.cpp 包含宣告和下表中的類別的實作。  
   
-|類別|描述|  
+|類別|說明|  
 |-----------|-----------------|  
 |`CAutomationEvents`|實作事件的根物件，擷取自`DTE.Events`物件。|  
 |`CProjectsEventsContainer` 和 `CProjectItemsEventsContainer`|實作會引發對應的事件的事件來源物件。|  

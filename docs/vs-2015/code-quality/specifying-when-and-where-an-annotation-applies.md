@@ -15,11 +15,11 @@ author: mikeblome
 ms.author: mblome
 manager: jillfra
 ms.openlocfilehash: ba14fdbc23968fcaf10355f73517ab6cd54f8797
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58940241"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68142190"
 ---
 # <a name="specifying-when-and-where-an-annotation-applies"></a>指定套用註釋的時機和位置
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ ms.locfileid: "58940241"
 ## <a name="structural-annotations"></a>結構化註解  
  若要控制註釋套用的時機和位置，請使用下列的結構化註解。  
   
-|註釋|描述|  
+|註釋|說明|  
 |----------------|-----------------|  
 |`_At_(expr, anno-list)`|`expr` 這會產生左值運算式。 中的註釋`anno-list`套用至物件命名`expr`。 在每個註釋`anno-list`，`expr`如果註解解譯在預先條件，並在後置條件如果註解解譯後置條件中，會將前置條件中解譯。|  
 |`_At_buffer_(expr, iter, elem-count, anno-list)`|`expr` 這會產生左值運算式。 中的註釋`anno-list`套用至物件命名`expr`。 在每個註釋`anno-list`，`expr`如果註解解譯在前置條件下，並在後置條件如果註解解譯後置條件中，會將前置條件中解譯。<br /><br /> `iter` 是以註解為範圍變數的名稱 (在內`anno-list`)。 `iter` 具有隱含類型`long`。 從評估版，在任何封閉範圍中同名的變數會隱藏起來。<br /><br /> `elem-count` 這是判斷值為整數的運算式。|  
@@ -37,7 +37,7 @@ ms.locfileid: "58940241"
 |`_When_(expr, anno-list)`|`expr` 是可以轉換成運算式`bool`。 當它為非零 (`true`)，括住的註釋`anno-list`會被視為適用於。<br /><br /> 根據預設，在每個註釋`anno-list`，`expr`會解譯為使用輸入的值，如果註解是前置條件，而且如果使用的輸出值註釋是後置條件。 若要覆寫預設值，您可以使用`_Old_`如果內建函式，當您評估以指出應該使用輸入的值後置條件。 **注意：** 可能由於使用啟用不同的註釋`_When_`如果可變動的值 — 比方說， `*pLength`— 因為牽涉到評估的結果的`expr`在前置條件下可能不同於後置條件的評估結果。|  
   
 ## <a name="see-also"></a>另請參閱  
- [使用 SAL 註釋減少 C/c + + 程式碼的缺失](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md)   
+ [使用 SAL 註釋減少 C /C++程式碼的缺失](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md)   
  [了解 SAL](../code-quality/understanding-sal.md)   
  [註釋函式參數和傳回值](../code-quality/annotating-function-parameters-and-return-values.md)   
  [註釋函式行為](../code-quality/annotating-function-behavior.md)   

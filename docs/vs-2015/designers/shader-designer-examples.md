@@ -10,11 +10,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 17486ad7206a49eabae1998bd060c697c011ba8e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54769472"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68184969"
 ---
 # <a name="shader-designer-examples"></a>著色器設計工具範例
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,8 +28,8 @@ ms.locfileid: "54769472"
 |[如何：建立基本色彩著色器](../designers/how-to-create-a-basic-color-shader.md)|示範套用常數色彩至物件的著色器。|  
 |[如何：建立基本 Lambert 著色器](../designers/how-to-create-a-basic-lambert-shader.md)|示範套用傳統 Lambert 光源模型至物件的著色器。|  
 |[如何：建立基本 Phong 著色器](../designers/how-to-create-a-basic-phong-shader.md)|示範套用傳統 Phong 光源模型至物件的著色器。|  
-|[如何：建立基本材質著色器](../designers/how-to-create-a-basic-texture-shader.md)|示範套用材質至物件的著色器。|  
-|[如何：建立灰階材質著色器](../designers/how-to-create-a-grayscale-texture-shader.md)|示範在轉譯期間將材質轉換為灰階並套用至物件的著色器。|  
+|[如何：建立基本紋理著色器](../designers/how-to-create-a-basic-texture-shader.md)|示範套用材質至物件的著色器。|  
+|[如何：建立灰階紋理著色器](../designers/how-to-create-a-grayscale-texture-shader.md)|示範在轉譯期間將材質轉換為灰階並套用至物件的著色器。|  
 |[如何：建立以幾何為基礎的漸層著色器](../designers/how-to-create-a-geometry-based-gradient-shader.md)|示範根據物件幾何調整色彩並套用至物件的著色器。|  
-|[逐步解說：建立逼真的 3d 撞球](../designers/walkthrough-creating-a-realistic-3-d-billiard-ball.md)|示範如何結合著色器技術及材質資源以建立真實的撞球著色器。|  
+|[逐步解說：建立逼真的 3D 撞球](../designers/walkthrough-creating-a-realistic-3-d-billiard-ball.md)|示範如何結合著色器技術及材質資源以建立真實的撞球著色器。|  
 |[如何：匯出著色器](../designers/how-to-export-a-shader.md)|說明如何以您應用程式可以使用的格式匯出 DGSL 著色器。|

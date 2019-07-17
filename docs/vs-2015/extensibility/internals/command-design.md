@@ -12,11 +12,11 @@ caps.latest.revision: 35
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: a6e9eaf69be62b38a880b07fd8eb51cfc9c256a3
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58945743"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68195067"
 ---
 # <a name="command-design"></a>命令設計
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -62,7 +62,7 @@ ms.locfileid: "58945743"
   
 ## <a name="related-topics"></a>相關主題  
   
-|標題|描述|  
+|標題|說明|  
 |-----------|-----------------|  
 |[實作](../../extensibility/internals/command-implementation.md)|描述如何在 VSPackage 中實作命令。|  
 |[可用性](../../extensibility/internals/command-availability.md)|描述 Visual Studio 內容如何決定哪些命令。|  

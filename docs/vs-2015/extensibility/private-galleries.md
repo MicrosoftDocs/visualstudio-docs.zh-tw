@@ -12,11 +12,11 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 097d666a839f67e657610b34641ed29da91797be
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60085853"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68194003"
 ---
 # <a name="private-galleries"></a>Private Galleries
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ ms.locfileid: "60085853"
   
 #### <a name="to-add-a-private-gallery-to-extensions-and-updates"></a>將私用資源庫新增至擴充功能和更新  
   
-1. 在功能表列上選擇 [工具] 、[選項] 。  
+1. 在功能表列上選擇 [工具]  、[選項]  。  
   
 2. 在 **環境**節點中，選取**擴充功能和更新**。  
   
@@ -44,9 +44,9 @@ ms.locfileid: "60085853"
   
 5. 在  **URL**欄位中，輸入 Atom 摘要或裝載私人資源庫的 SharePoint 網站的 URL。  
   
-    1. 如果主機是 Atom 摘要連接至私用組件庫中，URL 會類似這個的其中一個： http://www.mywebsite/mygallery/atom.xml。  此 URL 可以參考到檔案或網路路徑。  
+    1. 如果主機是 Atom 摘要連接至私用組件庫中，URL 會類似這個的其中一個： http://www.mywebsite/mygallery/atom.xml 。  此 URL 可以參考到檔案或網路路徑。  
   
-    2. 如果主機是在 SharePoint 網站，URL 會類似這個的其中一個： http://mysharepoint/sites/mygallery/forms/AllItems.aspx。  
+    2. 如果主機是在 SharePoint 網站，URL 會類似這個的其中一個： http://mysharepoint/sites/mygallery/forms/AllItems.aspx 。  
   
 ### <a name="managing-private-galleries"></a>管理私用組件庫  
  系統管理員可以將私用組件庫提供給多部電腦同時修改每一部電腦的系統登錄。 若要達成此目的，建立描述新的登錄機碼和其值的.pkgdef 檔。  此檔案的格式如下所示。  
@@ -72,7 +72,7 @@ DisplayNamePackageGuid={GUID} (REG_SZ)
   
 #### <a name="to-search-for-and-install-extensions-from-a-private-gallery"></a>若要搜尋並安裝延伸模組從私用組件庫  
   
-1. 在功能表列上，選擇 [工具]、[延伸模組和更新]。  
+1. 在功能表列上，選擇 [工具]  、[延伸模組和更新]  。  
   
 2. 在左窗格中，選取**線上擴充功能**，然後選取**我的資源庫**。  
   
@@ -85,7 +85,7 @@ DisplayNamePackageGuid={GUID} (REG_SZ)
   
 #### <a name="to-update-an-installed-extension-from-a-private-gallery"></a>若要更新已安裝的延伸模組從私用組件庫  
   
-1. 在功能表列上，選擇 [工具]、[延伸模組和更新]。  
+1. 在功能表列上，選擇 [工具]  、[延伸模組和更新]  。  
   
 2. 在左窗格中，選取**更新**，然後選取**我的存放庫**。  
   

@@ -1,5 +1,5 @@
 ---
-title: HOW TO：建立自訂規則集 |Microsoft Docs
+title: 作法：建立自訂規則集 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -14,13 +14,13 @@ author: gewarren
 ms.author: gewarren
 manager: wpickett
 ms.openlocfilehash: 909242aaf8dd4caaee7af75e40554aaff648df68
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: HT
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60045651"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68201373"
 ---
-# <a name="how-to-create-a-custom-rule-set"></a>HOW TO：建立自訂規則集
+# <a name="how-to-create-a-custom-rule-set"></a>作法：建立自訂規則集
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 在  [!INCLUDE[vsUltShort](../includes/vsultshort-md.md)]， [!INCLUDE[vsPreShort](../includes/vspreshort-md.md)]，並[!INCLUDE[vsPro](../includes/vspro-md.md)]，您可以建立和修改自訂*規則集*以符合程式碼分析與相關聯的特定專案需求。 若要建立自訂規則集、 開啟一個或更標準的規則集規則集編輯器中。 您接著可以新增或移除特定規則，您可以變更程式碼分析會判斷已違反規則時所發生的動作。  

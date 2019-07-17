@@ -1,5 +1,5 @@
 ---
-title: IDebugCodeContext2::GetLanguageInfo | Microsoft Docs
+title: IDebugCodeContext2::GetLanguageInfo |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,11 +13,11 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 0df2a08dd7906b9c4c0935d90150037a3bc0275a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58942138"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68190939"
 ---
 # <a name="idebugcodecontext2getlanguageinfo"></a>IDebugCodeContext2::GetLanguageInfo
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -42,7 +42,7 @@ int GetLanguageInfo( 
   
 #### <a name="parameters"></a>參數  
  `pbstrLanguage`  
- [in、 out]傳回字串，包含名稱的語言，例如"C + +"。  
+ [in、 out]傳回字串，包含的語言名稱，例如"C++。 」  
   
  `pguidLanguage`  
  [in、 out]例如，傳回之語言的程式碼內容，GUID `guidCPPLang`。  

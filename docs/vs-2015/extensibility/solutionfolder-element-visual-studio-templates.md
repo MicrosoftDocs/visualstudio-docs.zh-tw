@@ -14,18 +14,18 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 84d0c1765a14f60363b71fcdec182d448cb4f112
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58945642"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68205539"
 ---
 # <a name="solutionfolder-element-visual-studio-templates"></a>SolutionFolder 項目 (Visual Studio 範本)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 將多專案範本中的專案分組。  
   
- \<VSTemplate>  
+ \<VSTemplate >  
  \<TemplateContent>  
  \<ProjectCollection>  
  \<SolutionFolder>  
@@ -43,7 +43,7 @@ ms.locfileid: "58945642"
   
 ### <a name="attributes"></a>屬性  
   
-|屬性|描述|  
+|屬性|說明|  
 |---------------|-----------------|  
 |`Name`|必要屬性。<br /><br /> 方案資料夾的名稱。|  
   

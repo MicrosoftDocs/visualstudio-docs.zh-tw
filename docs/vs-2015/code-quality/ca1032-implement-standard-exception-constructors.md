@@ -16,11 +16,11 @@ author: gewarren
 ms.author: gewarren
 manager: wpickett
 ms.openlocfilehash: c59da56304a5d1d8f2cca7eaf886fd5ebc37f8ef
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58941038"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68205840"
 ---
 # <a name="ca1032-implement-standard-exception-constructors"></a>CA1032:必須實作標準例外狀況建構函式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,11 +38,11 @@ ms.locfileid: "58941038"
 ## <a name="rule-description"></a>規則描述
  例外狀況類型必須實作下列建構函式：
 
-- public NewException()
+- 公用 NewException()
 
-- public NewException(string)
+- 公用 NewException(string)
 
-- public NewException(string, Exception)
+- 公用 NewException (string，例外狀況)
 
 - 受保護或私用 NewException （SerializationInfo，StreamingContext）
 

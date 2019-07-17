@@ -11,11 +11,11 @@ caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: dca7768f31219328648d457d188086e0185e2ffc
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60044368"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68200969"
 ---
 # <a name="web-site-support-templates"></a>網站支援範本
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -82,7 +82,7 @@ ms.locfileid: "60044368"
   
      HTML 網頁進行新的 Web 服務。 Language 屬性會指定程式碼後置的語言和程式碼後置屬性指定包含此服務相關聯的程式碼後置程式碼的相依檔案。  
   
-- 服務。 *extension*  
+- 服務。 *延伸模組*  
   
      實作服務類別的相依檔案。 程式碼後置語言會決定*延伸模組*此檔案。  
   
@@ -115,7 +115,7 @@ ms.locfileid: "60044368"
 ### <a name="new-class"></a>新的類別  
  此範本會建立新的原始程式檔定義空的類別，以回應**加入新類別**命令。  
   
-- 類別。 *extension*  
+- 類別。 *延伸模組*  
   
      實作空的類別原始程式檔。 程式碼後置語言會決定*延伸模組*此檔案。  
   
@@ -149,7 +149,7 @@ ms.locfileid: "60044368"
   
      起始網頁的內容。 這個 Web 網頁有相關聯的程式碼後置相依檔案。  
   
-- 程式碼後置。 *extension*  
+- 程式碼後置。 *延伸模組*  
   
      實作 webform 類別的相依檔案。 程式碼後置語言會決定*延伸模組*此檔案。  
   

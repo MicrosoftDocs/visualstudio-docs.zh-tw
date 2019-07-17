@@ -12,11 +12,11 @@ caps.latest.revision: 49
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 2c5df1ce1721c63b5c5cfc3c5b94929da088660f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60077002"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68184873"
 ---
 # <a name="adding-a-toolbar-to-a-tool-window"></a>將工具列新增至工具視窗
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -113,7 +113,7 @@ ms.locfileid: "60077002"
   
      您應該會看到 （看起來像的預設圖示） 在頂端工具列方的 [工具] 視窗標題的正下方。  
   
-3. 在工具列上，按一下 顯示訊息圖示**TWTestCommandPackage 內 TWToolbar.TWTestCommand.MenuItemCallback()**。  
+3. 在工具列上，按一下 顯示訊息圖示**TWTestCommandPackage 內 TWToolbar.TWTestCommand.MenuItemCallback()** 。  
   
 ## <a name="see-also"></a>另請參閱  
  [加入工具列](../extensibility/adding-a-toolbar.md)

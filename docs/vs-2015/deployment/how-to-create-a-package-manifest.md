@@ -1,5 +1,5 @@
 ---
-title: HOW TO：建立封裝資訊清單 |Microsoft Docs
+title: 作法：建立封裝資訊清單 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-deployment
@@ -20,13 +20,13 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: c711c50ab484cc88b1d6aff5c8e3018cead69953
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: HT
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60046011"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68153842"
 ---
-# <a name="how-to-create-a-package-manifest"></a>HOW TO：建立封裝資訊清單
+# <a name="how-to-create-a-package-manifest"></a>作法：建立套件資訊清單
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 若要部署您的應用程式的必要條件，您可以使用啟動載入器套件。 啟動載入器套件會包含單一產品資訊清單檔案的套件資訊清單但每個地區設定。 在不同的當地語系化版本之間共用的功能應該移入產品資訊清單。  

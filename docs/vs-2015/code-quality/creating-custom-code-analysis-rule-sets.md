@@ -10,11 +10,11 @@ author: gewarren
 ms.author: gewarren
 manager: wpickett
 ms.openlocfilehash: f6d848c2f32f51a14c03d8b321f05b6b60143a87
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58943687"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68142333"
 ---
 # <a name="creating-custom-code-analysis-rule-sets"></a>建立自訂程式碼分析規則集
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

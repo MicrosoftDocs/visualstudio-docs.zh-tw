@@ -10,11 +10,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 74237b42ebafb82e82705d42174efb6f6a4d3661
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54758632"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68203734"
 ---
 # <a name="perform-quick-actions-with-light-bulbs"></a>執行燈泡提示的快速動作
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,9 +29,9 @@ ms.locfileid: "54758632"
   
 1. 在許多情況下，當您將滑鼠指標停留在錯誤點上方時，會自動出現燈泡；或者當您將插入號移到含有錯誤的字行時，會在編輯器左邊界出現燈泡。 當您看到紅色曲線時，可以將滑鼠暫留在其上方，即可顯示燈泡。 當您使用滑鼠或鍵盤前往發生問題之字行中的任何地方，也可以使燈泡顯示。  
   
-2. 在字行任何地方按 **Ctrl+.**， 可叫用燈泡，直接前往可能的修正方法清單。  
+2. 在字行任何地方按 **Ctrl+.** ， 可叫用燈泡，直接前往可能的修正方法清單。  
   
-   ![滑鼠游標暫留的燈泡](../ide/media/vs2015-lightbulb-hover.png "VS2015_LightBulb_Hover")  
+   ![當滑鼠游標暫留時的燈泡](../ide/media/vs2015-lightbulb-hover.png "VS2015_LightBulb_Hover")  
   
 ## <a name="to-see-potential-fixes"></a>如何看到可能的修正方法  
  按一下向下箭號或 [顯示可能的修正方法] 連結，就會顯示燈泡可以提供給您的快速動作清單。  

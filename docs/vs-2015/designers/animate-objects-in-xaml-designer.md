@@ -10,20 +10,20 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 7846ade8dba2ce849acf62311e508c157b07dd3e
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54805505"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68186750"
 ---
 # <a name="animate-objects-in-xaml-designer"></a>在 XAML 設計工具中製作物件動畫
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 您可以建立可移動物件或讓物件淡入和淡出的簡短動畫。  
   
- 若要開始使用，請建立 *「分鏡腳本」*(storyboard)。 分鏡腳本包含一個或多個 *「時間軸」*(timeline)。 設定時間軸上的 *「主要畫面格」* (keyframe) 以標示屬性變更。 然後在執行動畫時，Blend 會在指定時段上插補屬性變更。 結果是平順地轉場。 您可以製作物件所屬任何屬性的動畫，包括非視覺屬性。  
+ 若要開始使用，請建立 *「分鏡腳本」* (storyboard)。 分鏡腳本包含一個或多個 *「時間軸」* (timeline)。 設定時間軸上的 *「主要畫面格」* (keyframe) 以標示屬性變更。 然後在執行動畫時，Blend 會在指定時段上插補屬性變更。 結果是平順地轉場。 您可以製作物件所屬任何屬性的動畫，包括非視覺屬性。  
   
- 下列圖例顯示名為 [上移] 的分鏡腳本。 時間軸包含標示矩形 X 和 Y 位置的主要畫面格。 在這個動畫執行時，矩形會從一個位置順暢移動至另一個位置。  
+ 下列圖例顯示名為 [上移]  的分鏡腳本。 時間軸包含標示矩形 X 和 Y 位置的主要畫面格。 在這個動畫執行時，矩形會從一個位置順暢移動至另一個位置。  
   
  ![](../designers/media/982f031a-74a3-414a-abc2-a0f41a741075.png "982f031a-74a3-414a-abc2-a0f41a741075")  
   
@@ -36,9 +36,9 @@ ms.locfileid: "54805505"
 |![設定已安裝的功能](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [新增互動功能的事件觸發程序](http://www.popscreen.com/v/6A4e4/Microsoft-Expression-Blend-Adding-Event-Triggers-for-Interactivity)|在發生事件時啟動動畫。 例如，載入視窗時啟動動畫。|  
 |![設定已安裝的功能](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [色彩動畫](http://www.popscreen.com/v/6A4gv/Microsoft-Expression-Blend-Animating-Colors)|使用動畫來變更物件的色彩。|  
 |![設定已安裝的功能](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [建立和修改動畫路徑](http://www.popscreen.com/v/6A4fX/Microsoft-Expression-Blend-Creating-and-Modifying-Motion-Paths)|沿著路徑製作物件動畫。|  
-|![設定已安裝的功能](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [畫面格加減速](http://www.popscreen.com/v/6A4dM/Microsoft-Expression-Blend-Easing-Keyframes)|讓即將開始 (*「加速」*(easing in) 或即將結束 (*「減速」*(easing out) 的動畫加速或變慢。|  
+|![設定已安裝的功能](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [畫面格加減速](http://www.popscreen.com/v/6A4dM/Microsoft-Expression-Blend-Easing-Keyframes)|讓即將開始 ( *「加速」* (easing in) 或即將結束 ( *「減速」* (easing out) 的動畫加速或變慢。|  
 |![設定已安裝的功能](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [按鈕動畫](http://www.popscreen.com/v/6A4fK/Microsoft-Expression-Blend-Animating-a-Button)|建立在使用者指向按鈕時會出現在上面的有趣效果。|  
 |![設定已安裝的功能](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [建立動畫並使用加減速](https://www.youtube.com/watch?v=mAJXYrwxGYo)|製作會在使用者按下計算機影像的按鈕時出現的動畫效果。|  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [使用 Blend for Visual Studio 建立 UI](../designers/creating-a-ui-by-using-blend-for-visual-studio.md)

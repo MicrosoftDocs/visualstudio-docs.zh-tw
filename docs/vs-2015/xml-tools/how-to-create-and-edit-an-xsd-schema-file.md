@@ -1,5 +1,5 @@
 ---
-title: HOW TO：建立和編輯 XSD 結構描述檔案 |Microsoft Docs
+title: 作法：建立和編輯 XSD 結構描述檔案 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-xml-tools
@@ -10,13 +10,13 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 847d8e02f1d8cb6b1273ed4206d25207de59e3e2
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60056584"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68145196"
 ---
-# <a name="how-to-create-and-edit-an-xsd-schema-file"></a>HOW TO：建立和編輯 XSD 結構描述檔案
+# <a name="how-to-create-and-edit-an-xsd-schema-file"></a>作法：建立和編輯 XSD 結構描述檔案
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 本主題描述如何建立新 XML 結構描述 (XSD) 檔案，然後將內容加入至 XSD 檔案。  

@@ -15,11 +15,11 @@ caps.latest.revision: 28
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: a06e7a292d960e675ad4b0de97499557542fef1c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58941289"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68185842"
 ---
 # <a name="registering-project-and-item-templates"></a>註冊專案和項目範本
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -57,7 +57,7 @@ ms.locfileid: "58941289"
 "SortPriority"=dword:00000064  
 ```  
   
-|名稱|類型|描述|  
+|名稱|類型|說明|  
 |----------|----------|-----------------|  
 |@|REG_SZ|加入項目範本的資源識別碼。|  
 |TemplatesDir|REG_SZ|在對話方塊中顯示的專案項目路徑**加入新項目**精靈。|  
@@ -112,7 +112,7 @@ ms.locfileid: "58941289"
   
  \Form  
   
- \Web Page  
+ \Web 頁面  
   
  \HelperFiles （包含多個檔案的專案項目中使用的檔案）  
   

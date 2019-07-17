@@ -10,11 +10,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 761e0e77a0fe9f6f32f08045d81f6eab815801dd
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60112321"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68181889"
 ---
 # <a name="defining-shapes-and-connectors"></a>定義圖案和連接器
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

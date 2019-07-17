@@ -1,5 +1,5 @@
 ---
-title: HOW TO：使用 XML 常值中的 XML 結構描述設計工具 |Microsoft Docs
+title: 作法：使用 XML 常值中的 XML 結構描述設計工具 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-xml-tools
@@ -10,13 +10,13 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 05c32bfc6c3220739c433ef519b696953bc8b1b4
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60074943"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68190330"
 ---
-# <a name="how-to-use-the-xml-schema-designer-with-xml-literals"></a>HOW TO：搭配使用 XML 結構描述設計工具和 XML 常值
+# <a name="how-to-use-the-xml-schema-designer-with-xml-literals"></a>作法：搭配使用 XML 結構描述設計工具和 XML 常值
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 本主題描述如何在 Visual Basic 專案中檢視與 XML 常值相關的結構描述。  
@@ -35,7 +35,7 @@ ms.locfileid: "60074943"
   
 2. 將檔案儲存至某個位置並命名為 PurchaseOrderSchema.xsd。  
   
-3. 在 方案總管 中，以滑鼠右鍵按一下專案名稱，請選取**新增**，然後選取 **現有項目...**. **加入現有項目** 對話方塊隨即出現。 瀏覽至 PurchaseOrderSchema.xsd 檔案，加以選取，然後按一下 **新增**。  
+3. 在 方案總管 中，以滑鼠右鍵按一下專案名稱，請選取**新增**，然後選取 **現有項目...** . **加入現有項目** 對話方塊隨即出現。 瀏覽至 PurchaseOrderSchema.xsd 檔案，加以選取，然後按一下 **新增**。  
   
      XMLLiterals 專案現在會包含兩個檔案：Module1.vb 和 PurchaseOrderSchema.xsd。  
   

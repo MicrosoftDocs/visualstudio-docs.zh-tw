@@ -11,11 +11,11 @@ caps.latest.revision: 18
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: a5c378aec6822a436de0d8fc2656fcac7be4149f
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58940025"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68203904"
 ---
 # <a name="intellisense-hosting"></a>IntelliSense 裝載
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,7 +35,7 @@ Visual Studio 可讓 IntelliSense 裝載。 IntellSense 裝載可讓您會提供
   
  中所定義的主應用程式旗標[IntelliSenseHostFlags](../extensibility/intellisensehostflags.md)，以下摘要說明。  
   
-|IntelliSense 主機旗標|描述|  
+|IntelliSense 主機旗標|說明|  
 |----------------------------|-----------------|  
 |IHF_READONLYCONTEXT|設定此旗標表示內容緩衝區是唯讀模式和編輯內會出現只有主旨文字。|  
 |IHF_NOSEPERATESUBJECT|設定此旗標表示有是沒有個別的 IntelliSense 主旨。 主體存在於內容緩衝區，例如在傳統<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView>IntelliSense 系統。|  
