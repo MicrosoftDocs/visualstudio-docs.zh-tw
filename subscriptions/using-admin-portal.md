@@ -6,13 +6,12 @@ manager: evelynp
 ms.date: 10/03/2017
 ms.topic: conceptual
 description: 了解如何使用系統管理員入口網站管理組織的 Visual Studio 訂用帳戶。
-searchscope: VS Subscription
-ms.openlocfilehash: 4c8d3aa20138e7ebe56d5b51472ecc54abcf32f9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 6da1f0ce52e810a7652dd306ff5a6e44404b76f7
+ms.sourcegitcommit: 208395bc122f8d3dae3f5e5960c42981cc368310
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62427838"
+ms.lasthandoff: 07/10/2019
+ms.locfileid: "67784785"
 ---
 # <a name="using-the-visual-studio-subscriptions-administrator-portal"></a>使用 Visual Studio 訂用帳戶系統管理員入口網站
 

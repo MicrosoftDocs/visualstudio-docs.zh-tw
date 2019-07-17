@@ -6,13 +6,12 @@ manager: evelynp
 ms.date: 07/12/2018
 ms.topic: conceptual
 description: 了解如何在移轉至管理入口網站後，成功將組織上架於 Visual Studio 訂用帳戶。
-searchscope: VS Subscription
-ms.openlocfilehash: 3b12f5ad2d4f83759c6247f3498eb3da9d376991
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a5745fae68c8df4b2935de3410d76711f6477436
+ms.sourcegitcommit: f369ff7e84b0216f01570a486c7be80ca6d0e61a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63008168"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "68250703"
 ---
 # <a name="onboard-to-the-visual-studio-subscriptions-administration-portal-after-your-organization-is-migrated"></a>在您的組織移轉之後，上架至 Visual Studio 訂用帳戶系統管理入口網站
 
@@ -36,7 +35,7 @@ ms.locfileid: "63008168"
 
 若主要連絡人未完成上線程序，您會看到以下畫面。 若您可以存取[大量授權服務中心 (VLSC)](https://www.microsoft.com/Licensing/servicecenter/default.aspx)，您就能完成此程序並取得管理訂用帳戶的存取權。 您需要組織的[公開客戶號碼 (PCN)](find-pcn.md) (可以在 VLSC 中找到)。
 
-在 [PCN] 欄位中，輸入 [PCN](find-pcn.md)，然後選取 [傳送邀請電子郵件]。
+在 [PCN] 欄位中，輸入 [PCN](find-pcn.md)，然後選取 [傳送邀請電子郵件]  。
 > [!div class="mx-imgBorder"]
 > ![Visual Studio 訂用帳戶系統管理入口網站的螢幕擷取畫面](_img/post-migration-onboarding/send-invitation.png)
 

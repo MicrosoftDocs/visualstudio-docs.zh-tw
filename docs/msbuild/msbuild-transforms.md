@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3be16c2ccbd7cfe5d26507037e4238870e59d83b
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 1a3875e508105bbe23b1d5cbdcd863a058592537
+ms.sourcegitcommit: da4079f5b6ec884baf3108cbd0519d20cb64c70b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63414693"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "67852179"
 ---
 # <a name="msbuild-transforms"></a>MSBuild 轉換
 轉換是指某個項目清單和另一個項目清單的一對一轉換作業。 轉換作業除了可讓專案轉換項目清單，還能讓目標識別其輸入和輸出之間的直接對應。 本主題說明轉換作業，以及 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 如何使用轉換作業以更有效建置專案。
@@ -92,11 +92,11 @@ ms.locfileid: "63414693"
 
 ```
 rootdir: C:\
-fullpath: C:\xmake\sub1\sub2\sub3\myfile.xsd
-rootdir + directory + filename + extension: C:\xmake\sub1\sub2\sub3\myfile.xsd
+fullpath: C:\sub0\sub1\sub2\sub3\myfile.xsd
+rootdir + directory + filename + extension: C:\sub0\sub1\sub2\sub3\myfile.xsd
 identity: sub1\sub2\sub3\myfile.xsd
 filename: myfile
-directory: xmake\sub1\sub2\sub3\
+directory: sub0\sub1\sub2\sub3\
 relativedir: sub1\sub2\sub3\
 extension: .xsd
 ```

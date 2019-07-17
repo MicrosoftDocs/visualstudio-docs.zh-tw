@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - installing Help Viewer
 - Help Viewer, installing
-author: gewarren
-ms.author: gewarren
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d61b101b4abf3829eed824ddf434af976cd4b276
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 192647adcda620d94ab516f6be30b4d37859e3c8
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62824608"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67824910"
 ---
 # <a name="microsoft-help-viewer-installation"></a>Microsoft Help Viewer 安裝
 
@@ -23,13 +23,13 @@ ms.locfileid: "62824608"
 
 說明檢視器是 Visual Studio 的選擇性安裝元件。 若要透過 Visual Studio 安裝程式進行安裝，請遵循下列步驟：
 
-1. 從 [開始] 功能表開啟 [Visual Studio 安裝程式]，或者，如果您已開啟 Visual Studio，則可以選擇 [工具] > [取得工具和功能] 來開啟 Visual Studio 安裝程式。
+1. 從 [開始] 功能表開啟 [Visual Studio 安裝程式]  ，或者，如果您已開啟 Visual Studio，則可以選擇 [工具]   > [取得工具和功能]  來開啟 Visual Studio 安裝程式。
 
-1. 選擇 [個別元件] 索引標籤，然後選取 [程式碼工具] 區段下的 [說明檢視器]。
+1. 選擇 [個別元件]  索引標籤，然後選取 [程式碼工具]  區段下的 [說明檢視器]  。
 
    ![VS 安裝程式的說明檢視器元件](media/installation/vs-installer.png)
 
-1. 選擇 [修改] 按鈕來啟動 Microsoft Help Viewer 的安裝。
+1. 選擇 [修改]  按鈕來啟動 Microsoft Help Viewer 的安裝。
 
 另一個輕鬆安裝 Microsoft Help Viewer 的方法是透過搜尋方塊：
 
@@ -39,7 +39,7 @@ ms.locfileid: "62824608"
 
 1. 選擇稱為**說明檢視器 (個別元件)** 的結果。
 
-1. 在隨即開啟的對話方塊中，選擇 [安裝] 按鈕。
+1. 在隨即開啟的對話方塊中，選擇 [安裝]  按鈕。
 
    ![[安裝] 按鈕](media/installation/install.png)
 

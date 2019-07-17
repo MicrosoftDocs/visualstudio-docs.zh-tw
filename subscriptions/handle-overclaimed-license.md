@@ -6,13 +6,12 @@ manager: evelynp
 ms.date: 02/13/2018
 ms.topic: conceptual
 description: 了解系統管理員如何解決過度領取訂閱的問題
-searchscope: VS Subscription
-ms.openlocfilehash: 06da8c460e9660857b0f03062bde5bd983bd176d
-ms.sourcegitcommit: 32144a09ed46e7223ef7dcab647a9f73afa2dd55
+ms.openlocfilehash: 23a0888a670c10af4447d7a097067ffe4fe70c0f
+ms.sourcegitcommit: 208395bc122f8d3dae3f5e5960c42981cc368310
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/05/2019
-ms.locfileid: "67586995"
+ms.lasthandoff: 07/10/2019
+ms.locfileid: "67783457"
 ---
 # <a name="overallocated-subscriptions"></a>超額配置的訂用帳戶
 

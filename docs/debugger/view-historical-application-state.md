@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6249a5ab4a8beef8ff8af766d4bac5a0e110ad66
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 83d444cb5e3345d79ca6e1422982c0ecd37e4287
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65676582"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825532"
 ---
 # <a name="inspect-previous-app-states-using-intellitrace-step-back-in-visual-studio-visual-studio-enterprise"></a>使用 Visual Studio 中的 IntelliTrace 回溯，檢查先前的應用程式狀態 (Visual Studio Enterprise)
 
@@ -34,26 +34,26 @@ IntelliTrace 回溯可用於 Visual Studio Enterprise 2017 15.5 版和更新版�
 
 1. 在 Visual Studio Enterprise 中開啟您的專案。
 
-1. 開啟 [工具] > [選項] > [IntelliTrace] 設定，然後選取 [IntelliTrace 事件與快照] 選項。
+1. 開啟 [工具]   > [選項]   > [IntelliTrace]  設定，然後選取 [IntelliTrace 事件與快照]  選項。
 
-    從 Visual Studio 2017 Enterprise 15.9 Preview 2 版開始，此選項是 [IntelliTrace 快照 (受控與原生)]。
+    從 Visual Studio 2017 Enterprise 15.9 Preview 2 版開始，此選項是 [IntelliTrace 快照 (受控與原生)]  。
 
     ![啟用 IntelliTrace 事件與快照模式](../debugger/media/intellitrace-enable-snapshots.png "啟用 IntelliTrace 事件與快照模式")
 
-1. 如果您希望在例外狀況設定檢視快照的選項，請從 [選項] 對話方塊選擇 [IntelliTrace] > [進階]。
+1. 如果您希望在例外狀況設定檢視快照的選項，請從 [選項]  對話方塊選擇 [IntelliTrace]   > [進階]  。
 
     這些選項從 Visual Studio 2017 Enterprise 15.7 版開始提供。
 
     ![在例外狀況設定快照的行為](../debugger/media/intellitrace-enable-snapshots-on-exceptions.png)
 
-    當您啟用事件與快照時，根據預設也會啟用在例外狀況建立快照。 您可以取消選取 [在例外狀況事件收集快照] 來停用例外狀況上的快照。 啟用這項功能時，會為未處理的例外狀況建立快照。 針對已處理的例外狀況，僅會在擲回例外狀況且不重新擲回先前擲回的例外狀況時，才會建立快照。 您可以透過從下拉式清單中選取值，來設定例外狀況的最大快照數。 每次應用程式進入中斷模式時 (例如當您的應用程式遇到中斷點時)，會套用最大值。
+    當您啟用事件與快照時，根據預設也會啟用在例外狀況建立快照。 您可以取消選取 [在例外狀況事件收集快照]  來停用例外狀況上的快照。 啟用這項功能時，會為未處理的例外狀況建立快照。 針對已處理的例外狀況，僅會在擲回例外狀況且不重新擲回先前擲回的例外狀況時，才會建立快照。 您可以透過從下拉式清單中選取值，來設定例外狀況的最大快照數。 每次應用程式進入中斷模式時 (例如當您的應用程式遇到中斷點時)，會套用最大值。
 
     > [!NOTE]
-    > 僅會對 IntelliTrace 記錄的例外狀況事件建立快照。 針對受控程式碼，您可以指定 IntelliTrace 要記錄哪些事件，方法是選取 [工具] > [選項] > [IntelliTrace 事件]。
+    > 僅會對 IntelliTrace 記錄的例外狀況事件建立快照。 針對受控程式碼，您可以指定 IntelliTrace 要記錄哪些事件，方法是選取 [工具]   > [選項]   > [IntelliTrace 事件]  。
 
 1. 在專案中設定一或多個中斷點，並開始偵錯 (按下 **F5**)，或藉由逐步執行程式碼 (**F10** 或 **F11**) 開始偵錯。
 
-    IntelliTrace 會在每個偵錯工具步驟、中斷點事件和未處理的例外狀況事件上，建立應用程式程序的快照。 這些事件會與其他 IntelliTrace 事件一起記錄在 [診斷工具] 視窗的 [事件] 索引標籤中。 若要開啟此視窗，請選擇 [偵錯] > [視窗] > [顯示診斷工具]。
+    IntelliTrace 會在每個偵錯工具步驟、中斷點事件和未處理的例外狀況事件上，建立應用程式程序的快照。 這些事件會與其他 IntelliTrace 事件一起記錄在 [診斷工具]  視窗的 [事件]  索引標籤中。 若要開啟此視窗，請選擇 [偵錯]   > [視窗]   > [顯示診斷工具]  。
 
     快照可供使用的事件旁會顯示相機圖示。
 
@@ -63,23 +63,23 @@ IntelliTrace 回溯可用於 Visual Studio Enterprise 2017 15.5 版和更新版�
 
 ## <a name="navigate-and-view-snapshots"></a>巡覽及檢視快照
 
-1. 您可以使用偵錯工具列的 [回溯] 和 [快轉] 按鈕，在事件之間巡覽。
+1. 您可以使用偵錯工具列的 [回溯]  和 [快轉]  按鈕，在事件之間巡覽。
 
-    這些按鈕可巡覽出現在 [診斷工具視窗] 視窗中 [事件] 索引標籤中的事件。 回溯或快轉至某個事件會自動啟用所選事件的[歷程偵錯](../debugger/historical-debugging.md)。
+    這些按鈕可巡覽出現在 [診斷工具視窗]  視窗中 [事件]  索引標籤中的事件。 回溯或快轉至某個事件會自動啟用所選事件的[歷程偵錯](../debugger/historical-debugging.md)。
 
     ![[回溯] 和 [快轉] 按鈕](../debugger/media/intellitrace-step-back-icons-description.png "[回溯] 和 [快轉] 按鈕")
 
     當您回溯或快轉時，Visual Studio 會進入歷程偵錯模式。 在此模式中，偵錯工具內容會切換到記錄所選事件時的當時間。 Visual Studio 也會將指標移到來源視窗中對應的程式碼行。
 
-    在此檢視中，您可以檢查 [呼叫堆疊]、[本機]、[自動]和 [監看] 視窗中的值。 您也可以將游標暫留在變數上以檢視資料提示，並在 [立即] 視窗中執行運算式評估。 您所看到資料來自該時間點應用程式程序的快照。
+    在此檢視中，您可以檢查 [呼叫堆疊]  、[本機]  、[自動]  和 [監看]  視窗中的值。 您也可以將游標暫留在變數上以檢視資料提示，並在 [立即]  視窗中執行運算式評估。 您所看到資料來自該時間點應用程式程序的快照。
 
-    因此；例如，如果您遇到了中斷點並採取步驟了逐步執行 (**F10**)，則 [回溯] 按鈕會將 Visual Studio 置於歷程模式中與中斷點對應的程式碼行。
+    因此；例如，如果您遇到了中斷點並採取步驟了逐步執行 (**F10**)，則 [回溯]  按鈕會將 Visual Studio 置於歷程模式中與中斷點對應的程式碼行。
 
     ![在具有快照的事件上啟用歷程模式](../debugger/media/intellitrace-historical-mode-with-snapshot.png "在具有快照的事件上啟用歷程模式")
 
-2. 若要返回即時執行，請選擇 [繼續 (F5)] 或按一下資訊列中的 [返回即時偵錯] 連結。
+2. 若要返回即時執行，請選擇 [繼續 (F5)]  或按一下資訊列中的 [返回即時偵錯]  連結。
 
-3. 您也可以從 [事件] 索引標籤檢視快照。若要執行此作業，請選取具有快照的事件，然後按一下 [啟用歷程偵錯]。
+3. 您也可以從 [事件]  索引標籤檢視快照。若要執行此作業，請選取具有快照的事件，然後按一下 [啟用歷程偵錯]  。
 
     ![在事件上啟用歷程偵錯](../debugger/media/intellitrace-activate-historical-debugging.png "在事件上啟用歷程偵錯")
 
@@ -93,7 +93,7 @@ IntelliTrace 回溯可用於 Visual Studio Enterprise 2017 15.5 版和更新版�
 
 #### <a name="how-is-intellitrace-step-back-different-from-intellitrace-events-only-mode"></a>IntelliTrace 回溯與 IntelliTrace 事件唯一模式有何不同？
 
-事件唯一模式下的 IntelliTrace，可讓您啟用偵錯工具步驟和中斷點上的歷程偵錯。 但是，如果視窗已開啟，則 IntelliTrace 只會擷取 [本機] 和 [自動] 視窗中的資料，並且只會擷取已展開且在檢視中的資料。 在事件唯一模式中，您通常沒有變數和複雜物件的完整檢視。 此外，不支援 [監看] 視窗中的運算式評估和檢視資料。
+事件唯一模式下的 IntelliTrace，可讓您啟用偵錯工具步驟和中斷點上的歷程偵錯。 但是，如果視窗已開啟，則 IntelliTrace 只會擷取 [本機]  和 [自動]  視窗中的資料，並且只會擷取已展開且在檢視中的資料。 在事件唯一模式中，您通常沒有變數和複雜物件的完整檢視。 此外，不支援 [監看]  視窗中的運算式評估和檢視資料。
 
 在事件與快照模式中，IntelliTrace 會擷取整個應用程式程序的快照，包括複雜物件。 在一行程式碼中，您可以看到與在中斷點停止時相同的資訊 (無論您先前是否展開過資訊)。 檢視快照時，也支援運算式評估。  
 
@@ -119,12 +119,12 @@ IntelliTrace 回溯可用於 Visual Studio Enterprise 2017 15.5 版和更新版�
 
 * 當在使用持續性記憶體對應檔案的應用程式上建立應用程式程序快照時，具有快照的程序會在記憶體對應檔案上保持獨佔鎖定 (即使在父程序已解除其鎖定之後)。 其他程序仍然能夠讀取，但不能寫入記憶體對應檔案。
 
-    因應措施：
-    * 藉由結束偵錯工作階段來清除所有快照。
+  因應措施：
+  * 藉由結束偵錯工作階段來清除所有快照。
 
 * 對其程序具有大量唯一記憶體區域的應用程式 (例如載入大量 DLL 的應用程式) 進行偵錯時，啟用快照的逐步執行效能可能會受到影響。 在未來的 Windows 版本中將會解決這個問題。 如果您遇到此問題，請透過 stepback@microsoft.com 與我們連絡。
 
-* 在事件和快照模式下透過 [偵錯] > [IntelliTrace] > [儲存 IntelliTrace 工作階段] 儲存檔案時，無法從 .itrace 檔案中取得從快照擷取的其他資料。 在中斷點和步驟事件中，您會看到與在 IntelliTrace 事件唯一模式中儲存檔案相同的資訊。
+* 在事件和快照模式下透過 [偵錯] > [IntelliTrace] > [儲存 IntelliTrace 工作階段]  儲存檔案時，無法從 .itrace 檔案中取得從快照擷取的其他資料。 在中斷點和步驟事件中，您會看到與在 IntelliTrace 事件唯一模式中儲存檔案相同的資訊。
 
 ## <a name="next-steps"></a>後續步驟
 

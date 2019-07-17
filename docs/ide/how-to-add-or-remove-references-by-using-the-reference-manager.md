@@ -21,12 +21,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 32bc3b0a06b7bfb8c012239b256460ad832ac3a1
-ms.sourcegitcommit: d4920babfc3d24a3fe1d4bf446ed3fe73b344467
+ms.openlocfilehash: b0c20408fc7fc2bc15056c9668c90b5870ecf446
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/17/2019
-ms.locfileid: "67160164"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825493"
 ---
 # <a name="how-to-add-or-remove-references-by-using-the-reference-manager"></a>作法：使用參考管理員新增或移除參考
 
@@ -105,33 +105,33 @@ ms.locfileid: "67160164"
 
 - 將組件移動或複製至下列其中一個位置：
 
-   - 目前專案目錄。 (您可以使用 [瀏覽]  索引標籤尋找這些組件)。
+  - 目前專案目錄。 (您可以使用 [瀏覽]  索引標籤尋找這些組件)。
 
-   - 同一方案中的其他專案目錄。 (您可以使用 [專案]  索引標籤尋找這些組件)。
+  - 同一方案中的其他專案目錄。 (您可以使用 [專案]  索引標籤尋找這些組件)。
 
-    \-或-
+  \-或-
 
 - 設定用以指定組件顯示位置的登錄機碼：
 
-   針對 32 位元的作業系統，請加入下列登錄機碼之一。
+  針對 32 位元的作業系統，請加入下列登錄機碼之一。
 
-   - `[HKEY_CURRENT_USER\SOFTWARE\Microsoft\.NETFramework\<VersionMinimum>\AssemblyFoldersEx\MyAssemblies]@="<AssemblyLocation>"`
+  - `[HKEY_CURRENT_USER\SOFTWARE\Microsoft\.NETFramework\<VersionMinimum>\AssemblyFoldersEx\MyAssemblies]@="<AssemblyLocation>"`
 
-   - `[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\.NETFramework\<VersionMinimum>\AssemblyFoldersEx\MyAssemblies]@="<AssemblyLocation>"`
+  - `[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\.NETFramework\<VersionMinimum>\AssemblyFoldersEx\MyAssemblies]@="<AssemblyLocation>"`
 
-   針對 64 位元的作業系統，請在 32 位元登錄區中，加入下列登錄機碼之一。
+  針對 64 位元的作業系統，請在 32 位元登錄區中，加入下列登錄機碼之一。
 
-   - `[HKEY_CURRENT_USER\SOFTWARE\Wow6432Node\Microsoft\.NETFramework\<VersionMinimum>\AssemblyFoldersEx\MyAssemblies]@="<AssemblyLocation>"`
+  - `[HKEY_CURRENT_USER\SOFTWARE\Wow6432Node\Microsoft\.NETFramework\<VersionMinimum>\AssemblyFoldersEx\MyAssemblies]@="<AssemblyLocation>"`
 
-   - `[HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\.NETFramework\<VersionMinimum>\AssemblyFoldersEx\MyAssemblies]@="<AssemblyLocation>"`
+  - `[HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\.NETFramework\<VersionMinimum>\AssemblyFoldersEx\MyAssemblies]@="<AssemblyLocation>"`
 
-   *\<VersionMinimum\>* 為適用的最低 Framework 版本。 如果 \<最低版本\>  是 3.0 版，則 *AssemblyFoldersEx* 中指定的資料夾適用於以 .NET Framework 3.0 (含) 以後版本為目標的專案。
+  *\<VersionMinimum\>* 為適用的最低 Framework 版本。 如果 \<最低版本\>  是 3.0 版，則 *AssemblyFoldersEx* 中指定的資料夾適用於以 .NET Framework 3.0 (含) 以後版本為目標的專案。
 
-   \<組件位置\>  代表您想要在 [新增參考]  對話方塊中顯示的組件目錄，例如 *C:\MyAssemblies*。
+  \<組件位置\>  代表您想要在 [新增參考]  對話方塊中顯示的組件目錄，例如 *C:\MyAssemblies*。
 
-   在 `HKEY_LOCAL_MACHINE` 節點下建立登錄機碼，可讓所有使用者都能在 [新增參考]  對話方塊中看到指定位置的組件。 在 `HKEY_CURRENT_USER` 節點下建立登錄機碼，只會影響目前使用者的設定。
+  在 `HKEY_LOCAL_MACHINE` 節點下建立登錄機碼，可讓所有使用者都能在 [新增參考]  對話方塊中看到指定位置的組件。 在 `HKEY_CURRENT_USER` 節點下建立登錄機碼，只會影響目前使用者的設定。
 
-   再次開啟 [加入參考]  對話方塊。 組件應該會出現在 [.NET]  索引標籤上。如果沒有顯示，請確認組件位於指定的 <組件位置>  目錄中，然後重新啟動 Visual Studio 並再試一次。
+  再次開啟 [加入參考]  對話方塊。 組件應該會出現在 [.NET]  索引標籤上。如果沒有顯示，請確認組件位於指定的 <組件位置>  目錄中，然後重新啟動 Visual Studio 並再試一次。
 
 ## <a name="projects-tab"></a>[專案] 索引標籤
 

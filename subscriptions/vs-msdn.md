@@ -6,13 +6,12 @@ manager: evelynp
 ms.date: 12/19/2018
 ms.topic: conceptual
 description: 註冊以接收 Visual Studio 訂用帳戶中所含的 MSDN Magazine 訂用帳戶。
-searchscope: VS Subscription
-ms.openlocfilehash: 0c659bdd7eb2eee0d1899eab5d5df850a5206e92
-ms.sourcegitcommit: 91c7f1b525e0c22d938bc4080ba4ceac2483474f
+ms.openlocfilehash: 8bc38545ce497c0f8f85dfe74db841ef1ae4ee78
+ms.sourcegitcommit: f369ff7e84b0216f01570a486c7be80ca6d0e61a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/12/2019
-ms.locfileid: "67032845"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "68250791"
 ---
 # <a name="the-msdn-magazine-benefit-in-visual-studio-subscriptions"></a>Visual Studio 訂用帳戶中的 MSDN Magazine 權益
 

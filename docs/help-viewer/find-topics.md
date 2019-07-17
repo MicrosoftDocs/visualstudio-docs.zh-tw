@@ -3,23 +3,23 @@ title: 搜尋主題 (說明檢視器)
 ms.date: 11/02/2017
 ms.topic: conceptual
 ms.assetid: 683f1b0c-1551-4bba-91fe-3855f03fdd69
-author: gewarren
-ms.author: gewarren
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4e186bf0aa362f153ad3e6f57c39abc55c558270
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 52818e4f676d6ae9f4c02f26ad8e354b206cb2b8
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62824278"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67824999"
 ---
-# <a name="how-to-search-for-topics"></a>HOW TO：搜尋主題
+# <a name="how-to-search-for-topics"></a>作法：搜尋主題
 
 您可以使用全文檢索搜尋功能尋找包含的特定字詞的任何主題。 您也可以使用萬用字元運算式、邏輯運算子和進階的搜尋運算子來修改和自訂查詢。
 
-若要開啟 [搜尋] 索引標籤，請選擇 [說明檢視器] 視窗中的 [搜尋] 索引標籤，或者如果您是鍵盤使用者，請選擇 **Ctrl**+**E**。
+若要開啟 [搜尋]  索引標籤，請選擇 [說明檢視器]  視窗中的 [搜尋]  索引標籤，或者如果您是鍵盤使用者，請選擇 **Ctrl**+**E**。
 
 ## <a name="to-perform-a-full-text-search"></a>執行全文檢索搜尋
 
@@ -28,7 +28,7 @@ ms.locfileid: "62824278"
 2. 在搜尋查詢中，指定要套用至搜尋的邏輯或進階搜尋運算子 (如果有的話)。 若要搜尋所有可用的說明，請不要使用運算子。
 
     > [!NOTE]
-    > 在[檢視器選項] 對話方塊中，如果您的主要地區設定不是英文，您可以指定其他喜好設定，例如要一次顯示的搜尋結果數目上限以及是否要包括英文內容。
+    > 在[檢視器選項]  對話方塊中，如果您的主要地區設定不是英文，您可以指定其他喜好設定，例如要一次顯示的搜尋結果數目上限以及是否要包括英文內容。
 
 3. 選擇 **Enter** 鍵。
 

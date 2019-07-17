@@ -6,13 +6,12 @@ manager: evelynp
 ms.date: 12/19/2018
 ms.topic: conceptual
 description: 了解如何充分利用 Visual Studio 訂用帳戶中所含的 Azure 諮詢對談權益。
-searchscope: VS Subscription
-ms.openlocfilehash: 329aa109349a8f97e64cc478b7e843ca4d7b24e3
-ms.sourcegitcommit: 32144a09ed46e7223ef7dcab647a9f73afa2dd55
+ms.openlocfilehash: d3bdcdff9244a0ddab4f7be4fc030a0d4e189583
+ms.sourcegitcommit: f369ff7e84b0216f01570a486c7be80ca6d0e61a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/05/2019
-ms.locfileid: "67586970"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "68250832"
 ---
 # <a name="azure-advisory-chat"></a>Azure 諮詢對談
 

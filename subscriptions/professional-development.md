@@ -6,13 +6,12 @@ manager: lank
 ms.date: 07/31/2018
 ms.topic: conceptual
 description: Visual Studio 訂用帳戶中包含的專業開發權益
-searchscope: VS Subscription
-ms.openlocfilehash: d63fd098c003f606a1d88aec55157e554620b20b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 6c3ee9a3e65cddffd788c33a9099679e76140f30
+ms.sourcegitcommit: 208395bc122f8d3dae3f5e5960c42981cc368310
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63007692"
+ms.lasthandoff: 07/10/2019
+ms.locfileid: "67785008"
 ---
 # <a name="professional-development-benefits-available-in-visual-studio-subscriptions"></a>Visual Studio 訂用帳戶中包含的專業開發權益
 

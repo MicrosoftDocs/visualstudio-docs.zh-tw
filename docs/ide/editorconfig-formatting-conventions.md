@@ -13,12 +13,12 @@ manager: jillfra
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: 340d8ca7f7b578ae952c0b5024cd6962f20a0dff
-ms.sourcegitcommit: b468d71052a1b8a697f477ab23a3644de139f1e9
+ms.openlocfilehash: 3218e819d8f94cf760cdc75d6bfa6d29d0a29568
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/19/2019
-ms.locfileid: "67262791"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67823344"
 ---
 # <a name="formatting-conventions"></a>格式設定慣例
 
@@ -41,8 +41,8 @@ Visual Studio 的 EditorConfig 適用的格式設定慣例分為兩類：
 本節中的格式化規則適用於 C# 和 Visual Basic。
 
 - [組合管理 Using](#organize-using-directives)
-   - dotnet_sort_system_directives_first
-   - dotnet_separate_import_directive_groups
+  - dotnet_sort_system_directives_first
+  - dotnet_separate_import_directive_groups
 
 ### <a name="organize-using-directives"></a>組織 using 指示詞
 
@@ -111,34 +111,34 @@ using Octokit;
 本節中的格式化規則只適用於 C# 程式碼。
 
 - [新行字元選項](#new-line-options)
-   - csharp_new_line_before_open_brace
-   - csharp_new_line_before_else
-   - csharp_new_line_before_catch
-   - csharp_new_line_before_finally
-   - csharp_new_line_before_members_in_object_initializers
-   - csharp_new_line_before_members_in_anonymous_types
-   - csharp_new_line_between_query_expression_clauses
+  - csharp_new_line_before_open_brace
+  - csharp_new_line_before_else
+  - csharp_new_line_before_catch
+  - csharp_new_line_before_finally
+  - csharp_new_line_before_members_in_object_initializers
+  - csharp_new_line_before_members_in_anonymous_types
+  - csharp_new_line_between_query_expression_clauses
 - [縮排選項](#indentation-options)
-   - csharp_indent_case_contents
-   - csharp_indent_switch_labels
-   - csharp_indent_labels
+  - csharp_indent_case_contents
+  - csharp_indent_switch_labels
+  - csharp_indent_labels
 - [間距選項](#spacing-options)
-   - csharp_space_after_cast
-   - csharp_space_after_keywords_in_control_flow_statements
-   - csharp_space_between_method_declaration_parameter_list_parentheses
-   - csharp_space_between_method_call_parameter_list_parentheses
-   - csharp_space_between_parentheses
-   - csharp_space_before_colon_in_inheritance_clause
-   - csharp_space_after_colon_in_inheritance_clause
-   - csharp_space_around_binary_operators
-   - csharp_space_between_method_declaration_empty_parameter_list_parentheses
-   - csharp_space_between_method_call_name_and_opening_parenthesis
-   - csharp_space_between_method_call_empty_parameter_list_parentheses
-   - csharp_space_after_comma
-   - csharp_space_after_dot
+  - csharp_space_after_cast
+  - csharp_space_after_keywords_in_control_flow_statements
+  - csharp_space_between_method_declaration_parameter_list_parentheses
+  - csharp_space_between_method_call_parameter_list_parentheses
+  - csharp_space_between_parentheses
+  - csharp_space_before_colon_in_inheritance_clause
+  - csharp_space_after_colon_in_inheritance_clause
+  - csharp_space_around_binary_operators
+  - csharp_space_between_method_declaration_empty_parameter_list_parentheses
+  - csharp_space_between_method_call_name_and_opening_parenthesis
+  - csharp_space_between_method_call_empty_parameter_list_parentheses
+  - csharp_space_after_comma
+  - csharp_space_after_dot
 - [包裝選項](#wrap-options)
-   - csharp_preserve_single_line_statements
-   - csharp_preserve_single_line_blocks
+  - csharp_preserve_single_line_statements
+  - csharp_preserve_single_line_blocks
 
 ### <a name="new-line-options"></a>新行選項
 

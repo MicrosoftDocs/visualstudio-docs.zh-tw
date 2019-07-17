@@ -6,13 +6,12 @@ manager: evelynp
 ms.date: 09/19/2018
 ms.topic: conceptual
 description: 了解如何以 Visual Studio 訂閱者的身分使用 Azure DevOps。
-searchscope: VS Subscription
-ms.openlocfilehash: ece1a09f900cad499082d3bf41a7d9f0a97a09ac
-ms.sourcegitcommit: 32144a09ed46e7223ef7dcab647a9f73afa2dd55
+ms.openlocfilehash: 766bb49678080a926553f4aa42af72f15fd30f98
+ms.sourcegitcommit: 208395bc122f8d3dae3f5e5960c42981cc368310
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/05/2019
-ms.locfileid: "67586915"
+ms.lasthandoff: 07/10/2019
+ms.locfileid: "67784682"
 ---
 # <a name="azure-devops-benefits-for-visual-studio-subscribers"></a>Visual Studio 訂閱者的 Azure DevOps 權益
 

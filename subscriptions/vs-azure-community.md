@@ -6,13 +6,12 @@ manager: evelynp
 ms.date: 12/19/2018
 ms.topic: conceptual
 description: 了解所選取 Visual Studio 訂用帳戶中所含的 Azure 社群權益。
-searchscope: VS Subscription
-ms.openlocfilehash: 5cfdb90a42b7dc3baa68da21e7856a62ba7593b8
-ms.sourcegitcommit: 32144a09ed46e7223ef7dcab647a9f73afa2dd55
+ms.openlocfilehash: 9cd166d2e6be64713e6e79569133eea887568da1
+ms.sourcegitcommit: f369ff7e84b0216f01570a486c7be80ca6d0e61a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/05/2019
-ms.locfileid: "67586948"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "68250827"
 ---
 # <a name="azure-community"></a>Azure 社群
 

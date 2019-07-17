@@ -6,13 +6,12 @@ manager: evelynp
 ms.date: 12/19/2018
 ms.topic: conceptual
 description: 了解所選取 Visual Studio 訂用帳戶隨附的 Power BI Pro 訂用帳戶。
-searchscope: VS Subscription
-ms.openlocfilehash: 75c749d31e28ecdc463b0777744370680309fad7
-ms.sourcegitcommit: 91c7f1b525e0c22d938bc4080ba4ceac2483474f
+ms.openlocfilehash: d696a72cc1ab411c9bd01671d9b57e335f751261
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/12/2019
-ms.locfileid: "67031978"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67824623"
 ---
 # <a name="power-bi-pro-in-visual-studio-subscriptions"></a>Visual Studio 訂用帳戶中的 Power BI Pro
 
@@ -111,9 +110,9 @@ ms.locfileid: "67031978"
 
 ## <a name="support-resources"></a>支援資源
 - 需要使用 Power BI Pro 的說明嗎？
-    - 請查看[線上文件](/power-bi/)。
-    - 有註冊問題嗎？  請查看[以個人身分註冊 Power BI](/power-bi/service-self-service-signup-for-power-bi)
-    - 在[支援頁面](https://powerbi.microsoft.com/support/)上瀏覽最常發生的問題、取得社群協助或提交支援票證。
+  - 請查看[線上文件](/power-bi/)。
+  - 有註冊問題嗎？  請查看[以個人身分註冊 Power BI](/power-bi/service-self-service-signup-for-power-bi)
+  - 在[支援頁面](https://powerbi.microsoft.com/support/)上瀏覽最常發生的問題、取得社群協助或提交支援票證。
 - 如需 Visual Studio 訂用帳戶有關銷售、訂閱、帳戶與計費的協助，請聯繫 Visual Studio [訂用帳戶支援](https://visualstudio.microsoft.com/subscriptions/support/)。
 - 是否有關於 Visual Studio IDE、Azure DevOps Services 或其他 Visual Studio 產品或服務的問題？  前往 [Visual Studio 支援](https://visualstudio.microsoft.com/support/)
 

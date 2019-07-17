@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3f106606ae00c8f22aa5948128afb8f7f27659a5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 42a6eec4b6478f9a789c81311fdfdec4e664cb8a
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62975600"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825952"
 ---
 # <a name="best-practices-for-using-code-snippets"></a>使用程式碼片段的最佳做法
 
@@ -31,7 +31,7 @@ ms.locfileid: "62975600"
 
 - 尋找可存取的位置。 使用者可能無法存取電腦的 *Program Files* 資料夾，因此應用程式檔案的存檔作業可能無法正常運作。
 
-- 尋找安全位置。 將檔案儲存在根資料夾 (*C:\\*) 並不安全。 若是應用程式資料，建議儲存在 *Application Data* 資料夾。 若是個別使用者資料，應用程式可以在 *Documents* 資料夾中為每位使用者建立檔案。
+- 尋找安全位置。 將檔案儲存在根資料夾 (*C:\\* ) 並不安全。 若是應用程式資料，建議儲存在 *Application Data* 資料夾。 若是個別使用者資料，應用程式可以在 *Documents* 資料夾中為每位使用者建立檔案。
 
 - 使用有效的檔案名稱。 您可以使用 <xref:System.Windows.Forms.OpenFileDialog> 和 <xref:System.Windows.Forms.SaveFileDialog> 控制項，從而減少發生無效檔案名稱的可能性。 請注意，從使用者選取檔案到您的程式碼管理檔案的這段時間，檔案可能會遭到刪除。 此外，使用者可能沒有寫入檔案的權限。
 
@@ -61,11 +61,11 @@ Visual Studio 所安裝的 IntelliSense 程式碼片段本身並沒有安全性�
 
 - 在 [記事本] 或 Visual Studio 的 XML 編輯器中開啟所有下載的程式碼片段檔案，並仔細檢閱後再進行安裝。 尋找下列問題：
 
-    - 程式碼片段的程式碼可能會在執行時損害您的系統。 執行前，請仔細閱讀原始程式碼。
+  - 程式碼片段的程式碼可能會在執行時損害您的系統。 執行前，請仔細閱讀原始程式碼。
 
-    - 程式碼片段檔案的說明 URL 區塊可能包含執行惡意指令碼檔的 URL，或包含具攻擊性網站的 URL。
+  - 程式碼片段檔案的說明 URL 區塊可能包含執行惡意指令碼檔的 URL，或包含具攻擊性網站的 URL。
 
-    - 程式碼片段可能包含以無訊息模式新增至專案，而且可能會從您系統上的任何位置載入的參考。 這些參考可能已從您下載程式碼片段的位置下載到您的電腦。 程式碼片段可能會接著呼叫參考中執行惡意程式碼的方法。 為了保護您自己免於遭受這類攻擊，請檢閱程式碼片段檔案的匯入和參考區塊。
+  - 程式碼片段可能包含以無訊息模式新增至專案，而且可能會從您系統上的任何位置載入的參考。 這些參考可能已從您下載程式碼片段的位置下載到您的電腦。 程式碼片段可能會接著呼叫參考中執行惡意程式碼的方法。 為了保護您自己免於遭受這類攻擊，請檢閱程式碼片段檔案的匯入和參考區塊。
 
 ## <a name="see-also"></a>另請參閱
 

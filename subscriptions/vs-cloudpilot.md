@@ -6,13 +6,12 @@ manager: lank
 ms.date: 12/19/2018
 ms.topic: conceptual
 description: 了解所選 Visual Studio 訂用帳戶中所含的 CloudPilot 權益
-searchscope: VS Subscription
-ms.openlocfilehash: 38b857ee9ba385f3b7be12be725712f338b248f7
-ms.sourcegitcommit: 91c7f1b525e0c22d938bc4080ba4ceac2483474f
+ms.openlocfilehash: 66de81b30d8eeb315353aa0b6aa37e75c50a19d6
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/12/2019
-ms.locfileid: "67032588"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825910"
 ---
 # <a name="the-cloudpilot-benefit-in-visual-studio-subscriptions"></a>Visual Studio 訂用帳戶的 CloudPilot 權益
 
@@ -76,9 +75,9 @@ ms.locfileid: "67032588"
 
 ## <a name="support-resources"></a>支援資源
 - 需要 CloudPilot 的使用說明嗎？  請參閱這些資源：
-    - 如需 UnifyCloud 產品的資訊，請[連絡 UnifyCloud](https://www.unifycloud.com/contacts/)。
-    - [CloudPilot 使用者手冊](https://www.cloudatlasinc.com/cloudpilot/doc/CloudPilot-User-Manual.pdf )
-    - [提交支援要求](https://support.datacamp.com/hc/requests/new) \(英文\)
+  - 如需 UnifyCloud 產品的資訊，請[連絡 UnifyCloud](https://www.unifycloud.com/contacts/)。
+  - [CloudPilot 使用者手冊](https://www.cloudatlasinc.com/cloudpilot/doc/CloudPilot-User-Manual.pdf )
+  - [提交支援要求](https://support.datacamp.com/hc/requests/new) \(英文\)
 
 - 如需 Visual Studio 訂用帳戶有關銷售、訂閱、帳戶與計費的協助，請聯繫 Visual Studio [訂用帳戶支援](https://visualstudio.microsoft.com/subscriptions/support/)。
 - 是否有關於 Visual Studio IDE、Azure DevOps Services 或其他 Visual Studio 產品或服務的問題？  前往 [Visual Studio 支援](https://visualstudio.microsoft.com/support/)

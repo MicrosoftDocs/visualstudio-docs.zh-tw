@@ -6,13 +6,12 @@ manager: evelynp
 ms.date: 03/02/2018
 ms.topic: conceptual
 description: 雲端訂用帳戶帳單問題。
-searchscope: VS Subscription
-ms.openlocfilehash: ab02b40926225860536b277b22c3f16768a56731
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 858707358062386191c526810644f110bd7ac58d
+ms.sourcegitcommit: f369ff7e84b0216f01570a486c7be80ca6d0e61a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62810527"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "68250728"
 ---
 # <a name="visual-studio-cloud-subscriptions-billing-faq"></a>Visual Studio 雲端訂閱帳單常見問題集
 
@@ -43,7 +42,7 @@ ms.locfileid: "62810527"
 您需要從目前連結到您登入之 Azure 訂用帳戶提供的清單中選取 Azure 訂用帳戶 (這是計費帳戶)。
 因為 Azure 訂用帳戶的名稱預設為計費帳戶類型 (「隨用隨付方案」、「Enterprise 合約」等等)，Azure 訂用帳戶是否屬於 Enterprise 合約通常很清楚。
 
-另一個方法是嘗試瀏覽 [Azure 企業版入口網站](http://ea.azure.com)。  如果您可以成功連線，您即有企業系統管理員或帳戶擁有者角色。 只有帳戶擁有者可以在 Enterprise 合約中設定新的 Azure 計費帳戶。 如果您無法存取 Azure 企業版入口網站，請在組織內詢問，找到您的企業系統管理員，然後要求該人員將您新增為 Azure 企業版入口網站的帳戶擁有者。  如果您找不到這位人員，您可以[提交支援票證](https://aka.ms/AzureEntSupport)並要求連絡資訊。  支援票證需要有您組織的名稱和您的 Enterprise 合約註冊號碼。
+另一個方法是嘗試瀏覽 [Azure 企業版入口網站](https://ea.azure.com)。  如果您可以成功連線，您即有企業系統管理員或帳戶擁有者角色。 只有帳戶擁有者可以在 Enterprise 合約中設定新的 Azure 計費帳戶。 如果您無法存取 Azure 企業版入口網站，請在組織內詢問，找到您的企業系統管理員，然後要求該人員將您新增為 Azure 企業版入口網站的帳戶擁有者。  如果您找不到這位人員，您可以[提交支援票證](https://aka.ms/AzureEntSupport)並要求連絡資訊。  支援票證需要有您組織的名稱和您的 Enterprise 合約註冊號碼。
 
 ### <a name="q-can-i-use-the-azure-monetary-commitment-funds-from-my-enterprise-agreement-to-buy-visual-studio-cloud-subscriptions"></a>問：是否可以使用 Enterprise 合約的 Azure 預付金購買 Visual Studio 雲端訂用帳戶？
 

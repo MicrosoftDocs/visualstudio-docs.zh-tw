@@ -11,17 +11,17 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2ae010fac8978b0669021bc6645449f57da754d0
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 5ac7cd1ea69bb6b96066da876ab2ce88aabb8a08
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63437865"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67823493"
 ---
 # <a name="msbuild"></a>MSBuild
 [!INCLUDE[vstecmsbuildengine](../msbuild/includes/vstecmsbuildengine_md.md)] 是用於建置應用程式的平台。 這個引擎也稱為 MSBuild，提供了專案檔的 XML 結構描述，以控制組建平台處理和建置軟體的方式。 Visual Studio 會使用 MSBuild，但 MSBuild 並不倚賴 Visual Studio。 藉由在專案或方案檔上叫用 *msbuild.exe*，就可以在未安裝 Visual Studio 的環境中組織及建置產品。
 
- Visual Studio 會使用 MSBuild 載入及建置 Managed 專案。 Visual Studio 中的專案檔 (*.csproj*、*.vbproj*、*.vcxproj* 等等) 包含 MSBuild XML 程式碼，該程式碼會在您使用 IDE 建置專案時執行。 Visual Studio 專案會匯入所有必要的設定，並建置執行一般開發工作的流程，但是您可以在 Visual Studio 內或使用 XML 編輯器擴充或修改它們。
+ Visual Studio 會使用 MSBuild 載入及建置 Managed 專案。 Visual Studio 中的專案檔 ( *.csproj*、 *.vbproj*、 *.vcxproj* 等等) 包含 MSBuild XML 程式碼，該程式碼會在您使用 IDE 建置專案時執行。 Visual Studio 專案會匯入所有必要的設定，並建置執行一般開發工作的流程，但是您可以在 Visual Studio 內或使用 XML 編輯器擴充或修改它們。
 
  如需 C++ 適用之 MSBuild 的相關資訊，請參閱 [MSBuild (Visual C++)](/cpp/build/msbuild-visual-cpp)。
 
@@ -35,13 +35,13 @@ ms.locfileid: "63437865"
 
 - 您想要修改建置系統。 例如，您可能會想要啟用下列動作：
 
-    - 使用編譯器處理檔案之前，先對檔案進行前置處理。
+  - 使用編譯器處理檔案之前，先對檔案進行前置處理。
 
-    - 將組建輸出複製到不同位置。
+  - 將組建輸出複製到不同位置。
 
-    - 從組建輸出建立壓縮檔。
+  - 從組建輸出建立壓縮檔。
 
-    - 進行後續處理步驟。 例如，您可能想要對組件加上不同版本的戳記。
+  - 進行後續處理步驟。 例如，您可能想要對組件加上不同版本的戳記。
 
 您可以在 Visual Studio IDE 中撰寫程式碼，但是使用 MSBuild 執行組建。 另一種替代方式是，您可以在開發電腦的 IDE 中建置程式碼，但是使用 MSBuild 命令列建置整合自多位開發人員的程式碼。
 
@@ -158,7 +158,7 @@ MSBuild.exe MyProj.proj -property:Configuration=Debug
 
 - 您可以將 .NET Framework 以外的 Framework 做為目標，例如 Silverlight。
 
-- 您可以將「Framework 設定檔」當做目標，這是預先定義的目標 Framework 子集。
+- 您可以將「Framework 設定檔」  當做目標，這是預先定義的目標 Framework 子集。
 
 - 如果 .NET Framework 目前版本的 Service Pack 已發行，您可以將它當做目標。
 
