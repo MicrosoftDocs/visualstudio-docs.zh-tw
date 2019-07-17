@@ -14,16 +14,16 @@ caps.latest.revision: 16
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 17477b7eb60aa332f6910019e28f4c53aa31ebf1
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58943901"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68204406"
 ---
 # <a name="extern-element"></a>Extern 項目
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Extern 元素會參考在編譯時期合併使用.vsct 檔的任何外部標頭 (.h) 檔案。 要合併的檔案必須位於 Include 路徑指定給 VSCT 編譯器，或是參照[包含的項目](../extensibility/include-element.md)。 檔案可能是其他.vsct 檔案或 c + + 標頭檔。  
+Extern 元素會參考在編譯時期合併使用.vsct 檔的任何外部標頭 (.h) 檔案。 要合併的檔案必須位於 Include 路徑指定給 VSCT 編譯器，或是參照[包含的項目](../extensibility/include-element.md)。 檔案可能是其他.vsct 檔案或C++標頭檔。  
   
  標頭檔中的定義的格式必須是"#define [符號] [Value]"的值可能是另一個符號，如果先前已定義。 定義可用於條件陳述式的命令項目。 將捨棄任何並未實際使用的符號。  
   
@@ -49,7 +49,7 @@ Extern 項目
   
 ### <a name="child-elements"></a>子元素  
   
-|項目|描述|  
+|項目|說明|  
 |-------------|-----------------|  
 |無。|無。|  
   

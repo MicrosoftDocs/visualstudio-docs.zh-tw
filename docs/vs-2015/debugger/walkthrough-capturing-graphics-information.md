@@ -10,11 +10,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 9ebd0453347084d1662c6bc7837fc1e96f498fbd
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60053880"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68151463"
 ---
 # <a name="walkthrough-capturing-graphics-information"></a>逐步解說：擷取圖形資訊
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,13 +34,13 @@ ms.locfileid: "60053880"
   
 1. 在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]中，載入您要從中擷取圖形資訊之應用程式的專案或方案檔。  
   
-2. 在 [圖形診斷] 工具列上，選擇 [開始診斷] 。  
+2. 在 [圖形診斷] 工具列上，選擇 [開始診斷]  。  
   
 #### <a name="to-enable-the-capture-of-graphics-information-without-loading-a-project-or-solution"></a>允許在不載入專案或方案的情況下擷取圖形資訊  
   
-1. 在功能表列上，依序選擇 [檔案] 、[開啟舊檔] 及 [專案/方案] 。 [開啟專案]  對話方塊隨即出現。  
+1. 在功能表列上，依序選擇 [檔案]  、[開啟舊檔]  及 [專案/方案]  。 [開啟專案]  對話方塊隨即出現。  
   
-2. 指定您要從中擷取圖形資訊之應用程式的可執行檔 (而不是專案或方案檔)，然後選擇 [開啟] 。  
+2. 指定您要從中擷取圖形資訊之應用程式的可執行檔 (而不是專案或方案檔)，然後選擇 [開啟]  。  
   
 3. 在功能表列上，選擇 [ **偵錯**]、[ **圖形**]、[ **開始診斷**]。  
   

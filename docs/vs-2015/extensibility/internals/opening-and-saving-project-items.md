@@ -13,11 +13,11 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: c406e66b1008f0bb2aad95a427e1329d4269f1f6
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58940714"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68158061"
 ---
 # <a name="opening-and-saving-project-items"></a>開啟和儲存專案項目
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -37,7 +37,7 @@ ms.locfileid: "58940714"
  [如何：開啟標準編輯器](../../extensibility/how-to-open-standard-editors.md)  
  提供逐步指示，來指定如何啟用 IDE 中您的專案類型開啟檔案的標準編輯器。  
   
- [如何：開啟編輯器開啟的文件](../../extensibility/how-to-open-editors-for-open-documents.md)  
+ [如何：針對開啟的文件開啟編輯器](../../extensibility/how-to-open-editors-for-open-documents.md)  
  提供逐步指示，開啟專案特定的編輯器開啟的檔案。  
   
  [儲存標準文件](../../extensibility/internals/saving-a-standard-document.md)  

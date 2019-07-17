@@ -11,11 +11,11 @@ caps.latest.revision: 35
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 304b26f8724413dceef8126434861bd7128d588c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60085008"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68147333"
 ---
 # <a name="generate-unit-tests-for-your-code-with-intellitest"></a>使用 IntelliTest 為程式碼產生單元測試
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,7 +42,7 @@ IntelliTest 會探索您的 .NET 程式碼，從而產生測試資料及單元�
   
      ![[探索結果] 視窗會與測試一併顯示](../test/media/pexexplorationresults.png "PEXExplorationResults")  
   
-     若要為類別中的所有公用方法產生單元測試，只要在該類別上 (而不要在特定的方法上) 按一下滑鼠右鍵即可。 然後選擇 [執行 IntelliTest] 。 您可以利用 [瀏覽結果] 視窗中的下拉式清單，顯示類別中每個方法的單元測試及輸入資料。  
+     若要為類別中的所有公用方法產生單元測試，只要在該類別上 (而不要在特定的方法上) 按一下滑鼠右鍵即可。 然後選擇 [執行 IntelliTest]  。 您可以利用 [瀏覽結果] 視窗中的下拉式清單，顯示類別中每個方法的單元測試及輸入資料。  
   
      ![從清單中選取要檢視的測試結果](../test/media/selectpextest.png "SelectPEXTest")  
   
@@ -118,7 +118,7 @@ IntelliTest 會探索您的 .NET 程式碼，從而產生測試資料及單元�
  當您加入判斷提示並重新執行 IntelliTest 時，其會檢查該判斷提示是否正確，若不正確，測試即會失敗。  
   
 ### <a name="NoRun"></a> 問：是否可以產生參數化單元測試而不需先執行 IntelliTest?  
- **答：** 可以，只要以滑鼠右鍵按一下類別或方法，然後選擇 [建立 IntelliTest] 即可。  
+ **答：** 可以，只要以滑鼠右鍵按一下類別或方法，然後選擇 [建立 IntelliTest]  即可。  
   
  ![以滑鼠右鍵按一下編輯器，選擇 [建立 IntelliTest]](../test/media/pexcreateintellitest.png "PEXCreateIntelliTest")  
   
@@ -127,7 +127,7 @@ IntelliTest 會探索您的 .NET 程式碼，從而產生測試資料及單元�
  ![使用 MSTest 預設值建立 IntelliTest](../test/media/pexcreateintellitestmstest.png "PEXCreateIntelliTestMSTest")  
   
 ### <a name="q-can-i-use-other-unit-test-frameworks-with-intellitest"></a>問：是否可以使用其他單元測試架構搭配 IntelliTest？  
- **答：** 可以，請遵循[尋找並安裝其他架構](../test/install-third-party-unit-test-frameworks.md)中的步驟。 重新啟動 Visual Studio 並重新開啟方案之後，以滑鼠右鍵按一下類別或方法，然後選擇 [建立 IntelliTest] 。 於此處選取您已安裝的架構：  
+ **答：** 可以，請遵循[尋找並安裝其他架構](../test/install-third-party-unit-test-frameworks.md)中的步驟。 重新啟動 Visual Studio 並重新開啟方案之後，以滑鼠右鍵按一下類別或方法，然後選擇 [建立 IntelliTest]  。 於此處選取您已安裝的架構：  
   
  ![選取 IntelliTest 的其他單元測試架構](../test/media/pexcreateintellitestextensions.png "PEXCreateIntelliTestExtensions")  
   

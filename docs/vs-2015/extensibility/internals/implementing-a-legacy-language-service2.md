@@ -11,11 +11,11 @@ caps.latest.revision: 27
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 1a5f419b3b4c55538e8aa46d5aefb3f7e21369be
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58930705"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68192703"
 ---
 # <a name="implementing-a-legacy-language-service"></a>實作舊版語言服務
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

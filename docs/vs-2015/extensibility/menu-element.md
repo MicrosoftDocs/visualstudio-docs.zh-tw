@@ -12,11 +12,11 @@ caps.latest.revision: 16
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 79a8fafc748274015dac7f8f0938bba37ba5a8bc
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58943076"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68194358"
 ---
 # <a name="menu-element"></a>Menu 項目
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,7 +38,7 @@ ms.locfileid: "58943076"
   
 ### <a name="attributes"></a>屬性  
   
-|屬性|描述|  
+|屬性|說明|  
 |---------------|-----------------|  
 |guid|必要項。 GUID/識別碼命令識別碼的 GUID。|  
 |id|必要項。 GUID/識別碼的命令識別項的識別碼。|  
@@ -52,13 +52,13 @@ ms.locfileid: "58943076"
 |項目|描述|  
 |-------------|-----------------|  
 |父代|選擇性。 功能表項目的父項目。|  
-|CommandFlag|必要項。 請參閱[命令旗標項目](../extensibility/command-flag-element.md)。 針對功能表的有效 CommandFlag 值如下所示：<br /><br /> -   **AlwaysCreate**<br />-   **DefaultDocked**<br />-   **DefaultInvisible** -這個旗標不會影響顯示的工具列。<br />-   **DontCache**<br />-   **DynamicVisibility** -這個旗標不會影響顯示的工具列。<br />-   **IconAndText**<br />-   **NoCustomize**<br />-   **NotInTBList**<br />-   **NoToolbarClose**<br />-   **TextChanges**<br />-   **TextIsAnchorCommand**|  
+|CommandFlag|必要項。 請參閱[命令旗標項目](../extensibility/command-flag-element.md)。 針對功能表的有效 CommandFlag 值如下所示：<br /><br /> -   **AlwaysCreate**<br />-   **DefaultDocked**<br />-   **DefaultInvisible** -這個旗標不會影響顯示的工具列。<br />-   **DontCache**<br />-   **DynamicVisibility** -這個旗標不會影響顯示的工具列。<br />-   **IconAndText**<br />-   **NoCustomize**<br />-   **NotInTBList**<br />-   **NoToolbarClose**<br />-   **文字變更**<br />-   **TextIsAnchorCommand**|  
 |字串|必要項。 請參閱[字串項目](../extensibility/strings-element.md)。 子系`ButtonText`必須定義項目。|  
 |註釋|選擇性註解。|  
   
 ### <a name="parent-elements"></a>父項目  
   
-|項目|描述|  
+|項目|說明|  
 |-------------|-----------------|  
 |[Menus 元素](../extensibility/menus-element.md)|定義實作 VSPackage 的所有功能表。|  
   

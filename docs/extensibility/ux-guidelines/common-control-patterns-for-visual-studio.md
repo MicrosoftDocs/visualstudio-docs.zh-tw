@@ -8,12 +8,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c96e3798c79fcca03052dc597270312f374f1b33
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 33becb67adb0453adef111ca2c8fb0d2b2e6edfc
+ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66312304"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67890978"
 ---
 # <a name="common-control-patterns-for-visual-studio"></a>適用於 Visual Studio 的通用控制項模式
 ## <a name="BKMK_CommonControls"></a> 通用控制項
@@ -296,17 +296,18 @@ ms.locfileid: "66312304"
 #### <a name="graphical-buttons"></a>圖形化的按鈕
 某些按鈕應該一律使用圖形化映像，也絕對不要包含文字，以節省空間，並避免當地語系化問題。 這些通常可在 欄位選擇器和其他可排序的清單。
 
-> **注意：** 使用者需要這些按鈕 （沒有存取金鑰） 索引標籤，因此將它們放在合理的順序。 對應`name`花費，讓螢幕助讀程式正確地解譯按鈕動作的動作按鈕的屬性。
+> [!NOTE]
+> 使用者需要這些按鈕 （沒有存取金鑰） 索引標籤，因此將它們放在合理的順序。 對應`name`花費，讓螢幕助讀程式正確地解譯按鈕動作的動作按鈕的屬性。
 
 | 功能 | 按鈕 |
 | --- | --- |
-| 新增 | ![Graphical "Add" button](../../extensibility/ux-guidelines/media/070703-08_buttonadd.png "070703-08_ButtonAdd") |
-| 移除 | ![Graphical "Remove" button](../../extensibility/ux-guidelines/media/070703-09_buttonremove.png "070703-09_ButtonRemove") |
+| 新增 | ![圖形的 [新增] 按鈕](../../extensibility/ux-guidelines/media/070703-08_buttonadd.png "070703 08_ButtonAdd") |
+| 移除 | ![圖形的 [移除] 按鈕](../../extensibility/ux-guidelines/media/070703-09_buttonremove.png "070703 09_ButtonRemove") |
 | 全部加入 | ![圖形 [全部加入] 按鈕](../../extensibility/ux-guidelines/media/070703-10_buttonaddall.png "070703 10_ButtonAddAll") |
-| 全部移除 | ![Graphical "Remove All" button](../../extensibility/ux-guidelines/media/070703-11_buttonremoveall.png "070703-11_ButtonRemoveAll") |
+| 全部移除 | ![圖形 [全部移除] 按鈕](../../extensibility/ux-guidelines/media/070703-11_buttonremoveall.png "070703 11_ButtonRemoveAll") |
 | 上移 | ![圖形的 「 上移 按鈕](../../extensibility/ux-guidelines/media/070703-12_buttonmoveup.png "070703 12_ButtonMoveUp") |
 | 下移 | ![圖形 [下移] 按鈕](../../extensibility/ux-guidelines/media/070703-13_buttonmovedown.png "070703 13_ButtonMoveDown") |
-| 刪除 | ![Graphical "Delete" button](../../extensibility/ux-guidelines/media/070703-14_buttondelete.png "070703-14_ButtonDelete") |
+| 刪除 | ![圖形 [刪除] 按鈕](../../extensibility/ux-guidelines/media/070703-14_buttondelete.png "070703 14_ButtonDelete") |
 
 ##### <a name="sizing-and-spacing"></a>調整大小和間距
 調整大小的圖形化的按鈕的簡短版本一樣 **[瀏覽...]** 按鈕 （26 x 23 像素為單位）：

@@ -11,11 +11,11 @@ caps.latest.revision: 14
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: ae6e565e026ca49825a7b00a82e4e5c62a2f6c3c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60092327"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68204139"
 ---
 # <a name="how-to-open-editors-for-open-documents"></a>HOW TO：針對開啟的文件開啟編輯器
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

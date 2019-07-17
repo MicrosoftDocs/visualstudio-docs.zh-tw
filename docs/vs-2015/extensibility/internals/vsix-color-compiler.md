@@ -7,11 +7,11 @@ caps.latest.revision: 7
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: e1607ec4863c7e2b21cd69dd57ca4203e3cf4dbf
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60063669"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68147937"
 ---
 # <a name="vsix-color-compiler"></a>VSIX 色彩編譯器
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -82,7 +82,7 @@ Visual Studio 擴充功能色彩編譯器工具會採用代表現有的 Visual S
 |名稱|[必要]分類的名稱|  
 |GUID|[必要]類別的 GUID （必須符合 GUID 格式）|  
   
- **Color**  
+ **色彩**  
   
  \<色彩 > 項目定義的色彩元件或 UI 狀態。 慣用的命名配置，色彩會是 [UI 型別] [State]。 請勿使用 「 色彩 」 這個字，因為它是多餘。 項目型別和情況下，或 「 狀態 」，色彩會套用，應該清楚指出一種色彩。 色彩不可為空白，並必須包含一個或兩個\<背景 > 和\<前景 > 項目。 色彩的項目定義如下：  
   
@@ -110,7 +110,7 @@ Visual Studio 擴充功能色彩編譯器工具會採用代表現有的 Visual S
 |||  
 |-|-|  
 |**屬性**|**定義**|  
-|類型|[必要]色彩類型。 它可以是下列其中一項：<br /><br /> *CT_INVALID:* 無效或不設定色彩。<br /><br /> *CT_RAW:* 未經處理的 ARGB 值。<br /><br /> *CT_COLORINDEX:* 請勿使用。<br /><br /> *CT_SYSCOLOR:* 從 SysColor Windows 系統色彩。<br /><br /> *CT_VSCOLOR:*__VSSYSCOLOREX 中 Visual Studio 的色彩。<br /><br /> *CT_AUTOMATIC:* 自動的色彩。<br /><br /> *CT_TRACK_FOREGROUND:* 請勿使用。<br /><br /> *CT_TRACK_BACKGROUND:* 請勿使用。|  
+|類型|[必要]色彩類型。 它可以是下列其中一項：<br /><br /> *CT_INVALID:* 無效或不設定色彩。<br /><br /> *CT_RAW:* 未經處理的 ARGB 值。<br /><br /> *CT_COLORINDEX:* 請勿使用。<br /><br /> *CT_SYSCOLOR:* 從 SysColor Windows 系統色彩。<br /><br /> *CT_VSCOLOR:* __VSSYSCOLOREX 中 Visual Studio 的色彩。<br /><br /> *CT_AUTOMATIC:* 自動的色彩。<br /><br /> *CT_TRACK_FOREGROUND:* 請勿使用。<br /><br /> *CT_TRACK_BACKGROUND:* 請勿使用。|  
 |Source|[必要]以十六進位表示色彩的值|  
   
  中的型別屬性的結構描述支援 __VSCOLORTYPE 列舉型別所支援的所有值。 不過，我們建議您使用只有 CT_RAW 和 CT_SYSCOLOR。  
@@ -142,10 +142,10 @@ Visual Studio 擴充功能色彩編譯器工具會採用代表現有的 Visual S
 |-|-|-|  
 |**交換器名稱**|**備註**|**必要或選用**|  
 |未命名的 (.xml file)|這是第一個未命名的參數，而且是要轉換的 XML 檔的路徑。|必要|  
-|未命名的 （.pkgdef 檔）|這是第二個未命名的參數，而且會產生的.pkgdef 檔的輸出路徑。<br /><br /> 預設：\<XML 檔案名稱 >.pkgdef|Optional|  
+|未命名的 （.pkgdef 檔）|這是第二個未命名的參數，而且會產生的.pkgdef 檔的輸出路徑。<br /><br /> 預設：\<XML 檔案名稱 >.pkgdef|選擇性|  
 |/noLogo|設定這個旗標，就會停止列印的產品和著作權資訊。|Optional|  
 |/?|列印出說明資訊。|Optional|  
-|/help|列印出說明資訊。|Optional|  
+|/help|列印出說明資訊。|選擇性|  
   
  **範例**  
   
@@ -153,7 +153,7 @@ Visual Studio 擴充功能色彩編譯器工具會採用代表現有的 Visual S
   
 - VsixColorCompiler D:\xml\colors.xml /noLogo  
   
-## <a name="notes"></a>注意  
+## <a name="notes"></a>附註  
   
 - 這個工具需要安裝 VC + + 執行階段的最新版本。  
   

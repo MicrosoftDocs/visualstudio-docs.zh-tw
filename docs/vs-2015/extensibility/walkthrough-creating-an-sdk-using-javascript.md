@@ -9,11 +9,11 @@ caps.latest.revision: 16
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 3e953d9051b9bc7e95dc29e02eb580c4d93fca26
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: HT
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60066945"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68148823"
 ---
 # <a name="walkthrough-creating-an-sdk-using-javascript"></a>逐步解說：使用 JavaScript 建立 SDK
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -146,7 +146,7 @@ ms.locfileid: "60066945"
   
 2. 在範本類別清單中下**JavaScript**，選取**Windows 市集**，然後選取**空白應用程式**範本。  
   
-3. 在 **名稱**方塊中，指定`ArithmeticUI`。 選擇 [確定]  按鈕。  
+3. 在 **名稱**方塊中，指定`ArithmeticUI`。 選擇 [確定] 按鈕。   
   
 4. 在 **方案總管**，開啟 ArithmeticUI 專案的捷徑功能表，然後選擇**新增**，**參考**。  
   

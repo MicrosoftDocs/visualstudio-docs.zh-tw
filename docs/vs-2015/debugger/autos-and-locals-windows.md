@@ -22,16 +22,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 261c0c0bd8b48634c8d24d56ee4df7ea3bbcf135
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60072847"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68161782"
 ---
 # <a name="autos-and-locals-windows"></a>[自動變數] 和 [區域變數] 視窗
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-[自動變數]  視窗 (偵錯時， **CTRL+ALT+V、A**，或 [偵錯] / [視窗] / [自動變數] ) 和 [區域變數]  視窗 (偵錯時， **CTRL+ALT+V、L**，或 [偵錯] / [視窗] / [區域變數] ) 相當適合用來在您偵錯時查看變數值。 [區域變數]  視窗會顯示在區域範圍中定義的變數，這通常是目前正在執行的函式或方法。 [自動變數]  視窗會顯示目前這一行 (偵錯工具停止處的位置) 附近使用的變數。 會確切顯示哪些變數在不同語言中是不同的。 請參閱 [自動變數] 視窗中出現哪些變數？下面。  
+[自動變數]  視窗 (偵錯時， **CTRL+ALT+V、A**，或 [偵錯] / [視窗] / [自動變數]  ) 和 [區域變數]  視窗 (偵錯時， **CTRL+ALT+V、L**，或 [偵錯] / [視窗] / [區域變數]  ) 相當適合用來在您偵錯時查看變數值。 [區域變數]  視窗會顯示在區域範圍中定義的變數，這通常是目前正在執行的函式或方法。 [自動變數]  視窗會顯示目前這一行 (偵錯工具停止處的位置) 附近使用的變數。 會確切顯示哪些變數在不同語言中是不同的。 請參閱 [自動變數] 視窗中出現哪些變數？下面。  
   
  如果您需要基本偵錯的詳細資訊，請參閱 [Getting Started with the Debugger](../debugger/getting-started-with-the-debugger.md)。  
   
@@ -122,10 +122,10 @@ private static int subtractVars(int i, int j)
  您可能會注意到變數的值有時候在 [區域變數]  和 [自動變數]  視窗中是紅色。 這些是自從上次評估後已變更的變數值。 變更可能是來自先前的偵錯工作階段，或是因為值在視窗中已變更。  
   
 ## <a name="changing-the-numeric-format-of-a-variable-window"></a>變更變數視窗的數字格式  
- 預設數值格式為十進位，但您可以將它變更為十六進位。 以滑鼠右鍵按一下 [區域變數]  或 [自動變數]  視窗並選取 [十六進位顯示] 。 變更會影響所有偵錯工具視窗。  
+ 預設數值格式為十進位，但您可以將它變更為十六進位。 以滑鼠右鍵按一下 [區域變數]  或 [自動變數]  視窗並選取 [十六進位顯示]  。 變更會影響所有偵錯工具視窗。  
   
 ## <a name="editing-a-value-in-a-variable-window"></a>編輯變數視窗中的值  
- 您可以編輯 [自動變數] 、[區域變數] 、[監看式] 和 [快速監看式]  視窗中出現的大部分變數值。 如需 [監看式]  和 [快速監看式]  視窗的相關資訊，請參閱 [Watch and QuickWatch Windows](../debugger/watch-and-quickwatch-windows.md)。 只要連按兩下您想要變更的值，並加入新值。  
+ 您可以編輯 [自動變數]  、[區域變數]  、[監看式]  和 [快速監看式]  視窗中出現的大部分變數值。 如需 [監看式]  和 [快速監看式]  視窗的相關資訊，請參閱 [Watch and QuickWatch Windows](../debugger/watch-and-quickwatch-windows.md)。 只要連按兩下您想要變更的值，並加入新值。  
   
  您可以輸入值的運算式，例如 `a + b`。 偵錯工具接受大部分的有效語言運算式。  
   
@@ -140,7 +140,7 @@ private static int subtractVars(int i, int j)
 - 由於分數元件的十進位至二進位轉換，編輯浮點數值會略微不精確。 即使表面上無害的編輯也可能造成浮點變數中的某些最小顯著性位元變更。  
   
 ## <a name="debug-location-toolbar"></a>偵錯位置工具列  
- 您可以使用 [偵錯位置]  工具列選取想要的函式、執行緒或處理序。 設定中斷點，並開始偵錯。 (如果看不到此工具列，您可以按一下工具列區域的空白部分來啟用它。 您應該會看到一份工具列。選取 [偵錯位置] )。 當遇到中斷點時，執行會停止而且您可以看到 [偵錯位置] 工具列，它是下列圖形的底端列：  
+ 您可以使用 [偵錯位置]  工具列選取想要的函式、執行緒或處理序。 設定中斷點，並開始偵錯。 (如果看不到此工具列，您可以按一下工具列區域的空白部分來啟用它。 您應該會看到一份工具列。選取 [偵錯位置]  )。 當遇到中斷點時，執行會停止而且您可以看到 [偵錯位置] 工具列，它是下列圖形的底端列：  
   
  ![DebugLocationToolbar](../debugger/media/debuglocationtoolbar.png "DebugLocationToolbar")  
   

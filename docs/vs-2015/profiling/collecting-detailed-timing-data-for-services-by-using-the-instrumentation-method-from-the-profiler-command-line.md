@@ -10,11 +10,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 8946d57b2aecaeef167579275ccedd6ce984e2f7
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54805441"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68200782"
 ---
 # <a name="collecting-detailed-timing-data-for-services-by-using-the-instrumentation-method-from-the-profiler-command-line"></a>從程式碼剖析工具命令列使用檢測方法收集服務的詳細計時資料
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

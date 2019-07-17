@@ -10,11 +10,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: c8520084b57fdf0f831f62626593832d03c25636
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60107862"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68183926"
 ---
 # <a name="updating-shapes-and-connectors-to-reflect-the-model"></a>更新圖案和接點來反映模型
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -90,7 +90,7 @@ using Microsoft.VisualStudio.Modeling.Diagrams;
 ```  
   
 ## <a name="use-onchildconfigured-to-initialize-a-shapes-properties"></a>使用 OnChildConfigured 初始化圖形的屬性  
- 若要設定圖案的屬性，第一次時，建立覆寫`OnChildConfigured()`圖表類別的部分定義中。 在 DSL 定義中，指定圖表類別與產生的程式碼位於**Dsl\Generated Code\Diagram.cs**。 例如:   
+ 若要設定圖案的屬性，第一次時，建立覆寫`OnChildConfigured()`圖表類別的部分定義中。 在 DSL 定義中，指定圖表類別與產生的程式碼位於**Dsl\Generated Code\Diagram.cs**。 例如：  
   
 ```csharp  
 partial class MyLanguageDiagram  

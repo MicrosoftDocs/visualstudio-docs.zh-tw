@@ -11,13 +11,13 @@ caps.latest.revision: 19
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: a7d58d1477b9d7f58242f8cb4db7c3c360c248b9
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60094121"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68184470"
 ---
-# <a name="changing-view-settings-by-using-the-legacy-api"></a>變更檢視設定，以使用舊版 API
+# <a name="changing-view-settings-by-using-the-legacy-api"></a>使用舊版 API 變更檢視設定
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 設定核心編輯器功能，例如自動換行、 選取範圍邊界和虛擬空間，可以藉由使用者變更**選項** 對話方塊。 不過，您也可變更這些設定以程式設計的方式。  

@@ -10,11 +10,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: bb12d80c581b0ea0b605932083cf4f62fe764e30
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60073484"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68182848"
 ---
 # <a name="generate-and-configure-your-app-from-models"></a>透過模型產生和設定應用程式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -24,7 +24,7 @@ ms.locfileid: "60073484"
  模型在呈現需求方面比程式碼更為直接。 直接從模型中衍生應用程式的行為，會比更新程式碼更能快速並可靠地回應變更的需求。 雖然需要進行一些初始工作才能設定衍生，但是如果您預期需求會變更，或打算進行產品的數個變化，則會傳回這項投資。  
   
 ## <a name="generating-the-code-of-your-application-from-a-model"></a>透過模型產生應用程式碼  
- 產生程式碼的最簡單方式是使用文字範本。 您可以在同一個產生的程式碼[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]中保留模型的方案。 如需詳細資訊，請參閱:  
+ 產生程式碼的最簡單方式是使用文字範本。 您可以在同一個產生的程式碼[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]中保留模型的方案。 如需詳細資訊，請參閱：  
   
 - [使用 T4 文字範本在設計階段產生程式碼](../modeling/design-time-code-generation-by-using-t4-text-templates.md)  
   
@@ -41,7 +41,7 @@ ms.locfileid: "60073484"
   不過，如果您從現有應用程式開始進行，則可能會發現需要進行許多重構，才能區隔模型所控管的不同行為，讓它們各自不同。 建議您在預估專案成本時評估應用程式的這個層面。  
   
 ## <a name="configuring-your-application-from-a-model"></a>透過模型設定應用程式  
- 如果您想要改變應用程式在執行階段的行為，則無法使用程式碼產生，而程式碼產生會在編譯應用程式之前產生原始程式碼。 而是，您可以設計應用程式讀取 UML 或 DSL 模型，並據此改變其行為。 如需詳細資訊，請參閱:  
+ 如果您想要改變應用程式在執行階段的行為，則無法使用程式碼產生，而程式碼產生會在編譯應用程式之前產生原始程式碼。 而是，您可以設計應用程式讀取 UML 或 DSL 模型，並據此改變其行為。 如需詳細資訊，請參閱：  
   
 - [讀取程式碼中的 UML 模型](../modeling/read-a-uml-model-in-program-code.md)  
   

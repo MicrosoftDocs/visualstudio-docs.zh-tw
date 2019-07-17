@@ -15,11 +15,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: b5b8d24f01f7882e8c760918119a03a1c489c727
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60059873"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68156805"
 ---
 # <a name="navigate-a-debugging-session-in-visual-studio-xaml-and-c"></a>在 Visual Studio 中巡覽偵錯工作階段 (Xaml 和 C#)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -48,7 +48,7 @@ ms.locfileid: "60059873"
 ## <a name="BKMK_CreateTheApplication"></a> 建立範例應用程式
  偵錯與程式碼有關，因此範例應用程式僅會使用 Windows 市集應用程式的架構建立原始程式檔，您可以在該檔案中看到巡覽偵錯工作階段如何運作，以及如何檢查及變更程式狀態。 您將叫用的所有程式碼都是從主頁面的建構函式中呼叫，不會加入任何控制項，也不會處理任何事件。
 
- **建立預設的 C# Windows 市集應用程式。** 開啟 Visual Studio。 在首頁上，選擇 [新增專案]  連結。 在 [新增專案] 對話方塊中，選擇 [已安裝]  清單中的 [Visual C#]  ，然後選擇 [Windows 市集] 。 在專案範本清單中，選擇 [應用程式] 。 Visual Studio 會建立新的方案和專案，並顯示 MainPage.xaml 設計工具和 XAML 程式碼編輯器。
+ **建立預設的 C# Windows 市集應用程式。** 開啟 Visual Studio。 在首頁上，選擇 [新增專案]  連結。 在 [新增專案] 對話方塊中，選擇 [已安裝]  清單中的 [Visual C#]  ，然後選擇 [Windows 市集]  。 在專案範本清單中，選擇 [應用程式]  。 Visual Studio 會建立新的方案和專案，並顯示 MainPage.xaml 設計工具和 XAML 程式碼編輯器。
 
  **開啟 MainPage.xaml.cs 原始程式檔。** XAML 編輯器中的任何位置按一下滑鼠右鍵，然後選擇 **檢視程式碼**。 MainPage.xaml.cs 程式碼後置檔案便會顯示。 請注意，檔案中僅會列出一個方法，也就是 `MainPage()` 建構函式。
 
@@ -106,11 +106,11 @@ ms.locfileid: "60059873"
 
   [區域變數] 視窗是函式的參數和變數的樹狀結構檢視。 物件變數的屬性是物件本身的子節點。 `this` 變數是每個物件方法中，表示物件本身的一個隱藏參數。 在本案例中，它代表 MainPage 類別。 `methodTrack` 是 MainPage 類別的成員，因此，其值和資料類型會列在 `this`下面的那一行中。 展開 [ `this` ] 節點來檢視 `methodTrack` 資訊。
 
-  **加入 methodTrack 變數的監看式。** `methodWatch` 變數用於這個整個快速入門中，以顯示範例中呼叫的方法。 若要更輕鬆地檢視變數的值，請將它加入至監看式視窗。 以滑鼠右鍵按一下 [區域變數] 視窗中的變數名稱，然後選擇 [加入監看式] 。
+  **加入 methodTrack 變數的監看式。** `methodWatch` 變數用於這個整個快速入門中，以顯示範例中呼叫的方法。 若要更輕鬆地檢視變數的值，請將它加入至監看式視窗。 以滑鼠右鍵按一下 [區域變數] 視窗中的變數名稱，然後選擇 [加入監看式]  。
 
   ![監看式視窗](../debugger/media/dbg-basics-watchwindow.png "DBG_Basics_WatchWindow")
 
-  您可以在監看式視窗中監看多個變數。 每次暫停執行時，都會更新監看的變數的值，例如 [區域變數] 和資料提示視窗中的值。 您也可以將變數從程式碼編輯器加入至監看式視窗。 選取要監看的變數，按一下滑鼠右鍵，然後選擇 [加入監看式] 。
+  您可以在監看式視窗中監看多個變數。 每次暫停執行時，都會更新監看的變數的值，例如 [區域變數] 和資料提示視窗中的值。 您也可以將變數從程式碼編輯器加入至監看式視窗。 選取要監看的變數，按一下滑鼠右鍵，然後選擇 [加入監看式]  。
 
 ## <a name="BKMK_StepIntoOverOut"></a> 逐步執行、不進入和跳離方法
  相較於逐步執行由父方法呼叫的方法，不進入方法會執行子方法，然後在父方法繼續時，暫停在呼叫中的方法中執行。 當您熟悉方法運作的方式，並確定其執行將不會影響您正在調查的問題時，您可能會不進入方法。
@@ -162,7 +162,7 @@ ms.locfileid: "60059873"
 
  **逐步執行 Example3 方法。** 選擇**逐步**上**偵錯**功能表 (鍵盤：F11) 移至 Example3 方法的進入點。 繼續逐步執行方法，直到您已經逐一查看 `for` 區塊的一個或兩個迴圈為止。 請注意，逐步執行全部 1000 個反覆運算需要很長的時間。
 
- **設定條件中斷點。** 在程式碼視窗的左側裝訂邊上，以滑鼠右鍵按一下該行`x += i;`，然後選擇 **條件**。 選擇 [條件]  核取方塊，然後在文字方塊中輸入 `i == 500;` 。 選擇 [為 True]  選項，然後選擇 [確定] 。 中斷點可讓您檢查 `for` 迴圈的第 500 個反覆項目的值。
+ **設定條件中斷點。** 在程式碼視窗的左側裝訂邊上，以滑鼠右鍵按一下該行`x += i;`，然後選擇 **條件**。 選擇 [條件]  核取方塊，然後在文字方塊中輸入 `i == 500;` 。 選擇 [為 True]  選項，然後選擇 [確定]  。 中斷點可讓您檢查 `for` 迴圈的第 500 個反覆項目的值。
 
  ![[中斷點條件] 對話方塊](../debugger/media/dbg-basics-breakpointcondition.png "DBG_Basics_BreakpointCondition")
 

@@ -18,11 +18,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 10f3968367b188203671fa6bfff48bc482efe4f7
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58941981"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68157889"
 ---
 # <a name="debugging-and-the-hosting-process"></a>偵錯和裝載處理序
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ ms.locfileid: "58941981"
 Visual Studio 裝載處理序改進偵錯工具的效能並且啟用新的偵錯工具功能，例如部分信任偵錯和設計階段運算式評估。 如果需要的話可以停用裝載處理序。 如需詳細資訊，請參閱[如何：停用裝載處理序](../ide/how-to-disable-the-hosting-process.md)。 下列章節描述使用或不使用裝載處理序進行偵錯之間的一些差異。  
   
 ## <a name="partial-trust-debugging-and-click-once-security"></a>部分信任偵錯和 Click-Once 安全性  
- 部分信任偵錯需要裝載處理序。 如果您停用裝載處理序，即使在 [專案屬性]  的 [安全性] 頁面上啟用部分信任安全性，部分信任偵錯也無法運作。 如需詳細資訊，請參閱[如何：停用裝載處理序](../ide/how-to-disable-the-hosting-process.md)和[How to:針對部分信任的應用程式進行偵錯](../debugger/how-to-debug-a-partial-trust-application.md)。  
+ 部分信任偵錯需要裝載處理序。 如果您停用裝載處理序，即使在 [專案屬性]  的 [安全性]  頁面上啟用部分信任安全性，部分信任偵錯也無法運作。 如需詳細資訊，請參閱[如何：停用裝載處理序](../ide/how-to-disable-the-hosting-process.md)和[How to:針對部分信任的應用程式進行偵錯](../debugger/how-to-debug-a-partial-trust-application.md)。  
   
 ## <a name="design-time-expression-evaluation"></a>設計階段運算式評估  
  設計階段運算式一定會使用裝載處理序。 在 [專案屬性]  中停用裝載處理序會停用類別庫專案的設計階段運算式評估， 但不會停用其他專案類型的設計階段運算式評估， 而是 Visual Studio 會啟動實際可執行檔，並且在不使用裝載處理序的情況下針對設計階段評估使用可執行檔。 這項差異會產生不同的結果。  

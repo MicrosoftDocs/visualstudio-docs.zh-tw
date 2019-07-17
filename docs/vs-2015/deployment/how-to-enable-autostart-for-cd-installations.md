@@ -1,5 +1,5 @@
 ---
-title: HOW TO：啟用 CD 安裝的 AutoStart |Microsoft Docs
+title: 作法：啟用 CD 安裝的 AutoStart |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-deployment
@@ -18,13 +18,13 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: c4bd14060517793d28e24818a051df63efb8f0e0
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60061095"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68153790"
 ---
-# <a name="how-to-enable-autostart-for-cd-installations"></a>HOW TO：啟用 CD 安裝的 AutoStart
+# <a name="how-to-enable-autostart-for-cd-installations"></a>作法：啟用 CD 安裝的 AutoStart
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 部署時[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]透過卸除式媒體例如 CD-ROM 或 DVD-ROM 的應用程式，您可以讓`AutoStart`以便[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]插入媒體時，將會自動啟動應用程式。  
@@ -33,11 +33,11 @@ ms.locfileid: "60061095"
   
 ### <a name="to-enable-autostart"></a>若要啟用自動啟動  
   
-1. 選取方案總管 中的專案，然後按一下 [專案]  功能表中的 [屬性] 。  
+1. 選取方案總管  中的專案，然後按一下 [專案]  功能表中的 [屬性]  。  
   
-2. 按一下 [發佈] 索引標籤。  
+2. 按一下 [發佈]  索引標籤。  
   
-3. 按一下 [選項] 按鈕。  
+3. 按一下 [選項]  按鈕。  
   
      **發行選項** 對話方塊隨即出現。  
   

@@ -1,5 +1,5 @@
 ---
-title: HOW TO：使用登錄設定管理私人組件庫 |Microsoft Docs
+title: 作法：使用登錄設定管理私人組件庫 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -12,11 +12,11 @@ caps.latest.revision: 7
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: a55b7aa486edfd3775b12dca9d143c2e5f280884
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "58946091"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68204163"
 ---
 # <a name="how-to-manage-a-private-gallery-by-using-registry-settings"></a>HOW TO：使用登錄設定來管理私用組件庫
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

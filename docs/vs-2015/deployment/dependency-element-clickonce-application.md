@@ -28,11 +28,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: e79fadcab1a4f00c084d675c3267b5886772fe2c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58940313"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68199887"
 ---
 # <a name="ltdependencygt-element-clickonce-application"></a>&lt;相依性&gt;項目 （ClickOnce 應用程式）
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -99,7 +99,7 @@ ms.locfileid: "58940313"
   
  `dependentOS` 支援下列屬性。  
   
-|屬性|描述|  
+|屬性|說明|  
 |---------------|-----------------|  
 |`supportUrl`|選擇性。 指定相依的平台的支援 URL。 如果發現必要的平台，此 URL 會顯示給使用者。|  
 |`description`|選擇性。 人類看得懂的格式，描述所描述的作業系統`dependentOS`項目。|  
@@ -110,7 +110,7 @@ ms.locfileid: "58940313"
 ### <a name="os"></a>os  
  必要項。 這個元素是 `osVersionInfo` 元素的子項。 這個項目具有下列屬性。  
   
-|屬性|描述|  
+|屬性|說明|  
 |---------------|-----------------|  
 |`majorVersion`|必要項。 指定的 os 主要版本號碼。|  
 |`minorVersion`|必要項。 指定作業系統次要版本號碼。|  
@@ -162,7 +162,7 @@ ms.locfileid: "58940313"
 ### <a name="dsigdigestmethod"></a>dsig:DigestMethod  
  `dsig:DigestMethod`項目是必要的子系`hash`項目。 `dsig:DigestMethod` 項目具有下列屬性。  
   
-|屬性|描述|  
+|屬性|說明|  
 |---------------|-----------------|  
 |`Algorithm`|用來計算此檔案的摘要演算法。 目前所使用的唯一值[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]是`http://www.w3.org/2000/09/xmldsig#sha1`。|  
   

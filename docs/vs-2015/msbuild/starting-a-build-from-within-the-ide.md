@@ -12,11 +12,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 94685a2b06b14c232d9e1f79a1d7440e1ceb765b
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59663371"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68161335"
 ---
 # <a name="starting-a-build-from-within-the-ide"></a>從 IDE 中啟動組建
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

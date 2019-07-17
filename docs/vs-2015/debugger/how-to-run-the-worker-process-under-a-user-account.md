@@ -21,13 +21,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: ebb8ec1fe10f6fbc5c367cb0ed127e048351b0e4
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60105912"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68157863"
 ---
-# <a name="how-to-run-the-worker-process-under-a-user-account"></a>HOW TO：在使用者帳戶下執行背景工作處理序
+# <a name="how-to-run-the-worker-process-under-a-user-account"></a>作法：在使用者帳戶下執行背景工作處理序
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 若要設定電腦以便在某個使用者帳戶下執行 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 背景工作處理序 (aspnet_wp.exe 或 w3wp.exe)，請依照下列步驟執行。  

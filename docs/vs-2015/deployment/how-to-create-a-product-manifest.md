@@ -20,13 +20,13 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 73e2c3f2c9736fd762a9e763827ed641ea5069f7
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: HT
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60092119"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68153818"
 ---
-# <a name="how-to-create-a-product-manifest"></a>HOW TO：建立產品資訊清單
+# <a name="how-to-create-a-product-manifest"></a>作法：建立產品資訊清單
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 若要部署您的應用程式的必要條件，您可以建立啟動載入器套件。 啟動載入器套件會包含單一產品資訊清單檔案的套件資訊清單但每個地區設定。 封裝資訊清單包含您的套件的當地語系化特定層面。 這包括字串、 使用者授權合約和語言套件。  

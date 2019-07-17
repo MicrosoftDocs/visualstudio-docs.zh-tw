@@ -12,11 +12,11 @@ caps.latest.revision: 8
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 0ddf7fd92ac0b2f745f9e73170de22e9724dad76
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60074411"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68152691"
 ---
 # <a name="hitting-a-breakpoint"></a>到達中斷點
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

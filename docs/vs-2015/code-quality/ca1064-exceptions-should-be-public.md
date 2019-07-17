@@ -16,11 +16,11 @@ author: gewarren
 ms.author: gewarren
 manager: wpickett
 ms.openlocfilehash: 00d188188f722907c2bac20e84cb9291ef8bc0fe
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "58946049"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68200433"
 ---
 # <a name="ca1064-exceptions-should-be-public"></a>CA1064:例外狀況必須是公用
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

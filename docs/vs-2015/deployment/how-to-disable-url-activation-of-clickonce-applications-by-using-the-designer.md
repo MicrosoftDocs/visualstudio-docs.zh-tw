@@ -1,5 +1,5 @@
 ---
-title: HOW TO：使用設計工具停用 ClickOnce 應用程式的 URL 啟動 |Microsoft Docs
+title: 作法：使用設計工具停用 ClickOnce 應用程式的 URL 啟動 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-deployment
@@ -18,13 +18,13 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 27690ab275d0c7ef2a090fa8ef2e42887ae9daeb
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60043845"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68153804"
 ---
-# <a name="how-to-disable-url-activation-of-clickonce-applications-by-using-the-designer"></a>HOW TO：使用設計工具停用 ClickOnce 應用程式的 URL 啟動
+# <a name="how-to-disable-url-activation-of-clickonce-applications-by-using-the-designer"></a>作法：使用設計工具停用 ClickOnce 應用程式的 URL 啟動
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 一般而言，[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]緊接著安裝從 Web 伺服器之後，將會自動啟動 「 應用程式。 基於安全性理由，您可能決定要停用此行為，並告知使用者啟動應用程式**啟動**功能表改。 下列程序描述如何停用 URL 啟用。  
@@ -41,7 +41,7 @@ ms.locfileid: "60043845"
   
 2. 在 [**屬性**頁面上，按一下**發佈**] 索引標籤。  
   
-3. 按一下 [選項] 。  
+3. 按一下 [選項]  。  
   
 4. 按一下 **資訊清單**。  
   

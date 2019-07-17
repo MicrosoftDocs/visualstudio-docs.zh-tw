@@ -10,11 +10,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 86c13f7c710e462e1edd45acbf68fa4642d3d422
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60099438"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68150676"
 ---
 # <a name="sorting-filtering-and-grouping-xml-schema-explorer"></a>排序、篩檢與群組 (XML 結構描述總管)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,7 +28,7 @@ ms.locfileid: "60099438"
   
 - **顯示結構描述檔案**。  
   
-- **顯示撰寫 (sequence/choice/all)**。  
+- **顯示撰寫 (sequence/choice/all)** 。  
   
 ## <a name="sorting-options"></a>排序選項  
  以下是可用的排序選項。 預設值是**依類型排序**。 排序依據選項不適用於檔案和命名空間。  

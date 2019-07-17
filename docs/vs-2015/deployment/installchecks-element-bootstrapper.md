@@ -17,11 +17,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: d6156b729835d16d2e83cc76507ad096528994d4
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58942139"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68189009"
 ---
 # <a name="ltinstallchecksgt-element-bootstrapper"></a>&lt;InstallChecks&gt;項目 （啟動載入器）
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -75,7 +75,7 @@ ms.locfileid: "58942139"
 ## <a name="assemblycheck"></a>AssemblyCheck  
  這是元素的選擇性子項目`InstallChecks`。 每個執行個體`AssemblyCheck`，啟動載入器可確保項目所識別的組件位於全域組件快取 (GAC)。 它包含任何項目，並具有下列屬性。  
   
-|屬性|描述|  
+|屬性|說明|  
 |---------------|-----------------|  
 |`Property`|必要項。 要儲存結果之屬性的名稱。 這個屬性可以參考從測試底下`InstallConditions`項目，這是子系的`Command`項目。 如需詳細資訊，請參閱 < [\<命令 > 項目](../deployment/commands-element-bootstrapper.md)。|  
 |`Name`|必要項。 若要檢查組件的完整的名稱。|  
@@ -113,7 +113,7 @@ ms.locfileid: "58942139"
   
  `MsiProductCheck` 包含任何項目，並具有下列屬性。  
   
-|屬性|描述|  
+|屬性|說明|  
 |---------------|-----------------|  
 |`Property`|必要項。 要儲存結果之屬性的名稱。 這個屬性可以參考從測試底下`InstallConditions`項目，這是子系的`Command`項目。 如需詳細資訊，請參閱 < [\<命令 > 項目](../deployment/commands-element-bootstrapper.md)。|  
 |`Product`|必要項。 已安裝的產品 GUID。|  
@@ -124,7 +124,7 @@ ms.locfileid: "58942139"
   
  `RegistryCheck` 包含任何項目，並具有下列屬性。  
   
-|屬性|描述|  
+|屬性|說明|  
 |---------------|-----------------|  
 |`Property`|必要項。 要儲存結果之屬性的名稱。 這個屬性可以參考從測試底下`InstallConditions`項目，這是子系的`Command`項目。 如需詳細資訊，請參閱 < [\<命令 > 項目](../deployment/commands-element-bootstrapper.md)。|  
 |`Key`|必要項。 登錄機碼的名稱。|  
@@ -167,7 +167,7 @@ ms.locfileid: "58942139"
 ## <a name="predefined-properties"></a>預先定義的屬性  
  下表列出`BypassIf`和`FailIf`項目：  
   
-|屬性|注意|可能的值|  
+|屬性|附註|可能的值|  
 |--------------|-----------|---------------------|  
 |`Version9X`|Windows 9 X 作業系統的版本號碼。|4.10 = Windows 98|  
 |`VersionNT`|Windows NT 為基礎的作業系統版本號碼。|Major.Minor.ServicePack<br /><br /> 5.0 = Windows 2000<br /><br /> 5.1.0 = Windows XP<br /><br /> 5.1.2 = Windows XP Professional SP2<br /><br /> 5.2.0 = Windows Server 2003|  

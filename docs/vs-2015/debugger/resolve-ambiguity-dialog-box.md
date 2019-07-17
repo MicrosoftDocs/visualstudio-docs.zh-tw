@@ -21,11 +21,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: b35d305bbd011adc02692cd7c9c687ac0bfc7d45
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58945691"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68148782"
 ---
 # <a name="resolve-ambiguity-dialog-box"></a>解決語意模糊對話方塊
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

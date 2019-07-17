@@ -1,5 +1,5 @@
 ---
-title: IDebugAlias::GetName | Microsoft Docs
+title: IDebugAlias::GetName |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,11 +13,11 @@ caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 6a52f44caa896a528557e9e2ac362c47584e47f3
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58943907"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68149348"
 ---
 # <a name="idebugaliasgetname"></a>IDebugAlias::GetName
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]

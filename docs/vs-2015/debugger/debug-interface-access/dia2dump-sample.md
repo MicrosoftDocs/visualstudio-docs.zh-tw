@@ -15,11 +15,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: a817720c1ad73b666e0c9a586bb583120a2533c1
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60092015"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68197597"
 ---
 # <a name="dia2dump-sample"></a>Dia2dump 範例
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -38,7 +38,7 @@ Dia2dump 範例隨附於 Visual Studio，並包含 Dia2dump.cpp 原始程式檔�
   
 2. 在 專案屬性頁中**C /C++**  &#124; **一般** &#124; **其他 Include 目錄**屬性，指定`..\DIA SDK\include`目錄。 這可確保編譯器可以找到 dia2.h 檔案。  
   
-3. 在 [建置] 功能表上，按一下 [重建方案]。  
+3. 在 [建置]  功能表上，按一下 [重建方案]  。  
   
 4. 關閉 Visual Studio。  
   

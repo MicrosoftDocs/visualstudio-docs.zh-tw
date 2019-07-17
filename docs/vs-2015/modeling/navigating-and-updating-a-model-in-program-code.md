@@ -12,11 +12,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 260d726ef9f6478292fe80c7fd90ffc4a807265d
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60110800"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68158925"
 ---
 # <a name="navigating-and-updating-a-model-in-program-code"></a>巡覽及更新程式碼中的模型
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -120,7 +120,7 @@ ms.locfileid: "60110800"
   
  `foreach (ParentsHaveChildren link in ParentsHaveChildren.GetLinks(henry, edward)) { ... }`  
   
- 另外還有其他方法，以存取連結。 例如:   
+ 另外還有其他方法，以存取連結。 例如：  
   
  `foreach (ParentsHaveChildren link in     ParentsHaveChildren.GetLinksToChildren(henry)) { ... }`  
   
@@ -165,7 +165,7 @@ ms.locfileid: "60110800"
 - ElementLink-所有關聯性都 ElementLinks  
   
 ## <a name="transaction"></a> 執行交易內的變更  
- 每當您的程式碼變更存放區中的任何項目時，它必須在交易內進行。 這適用於所有模型項目、 關聯性、 圖形、 圖表和其屬性。 如需詳細資訊，請參閱<xref:Microsoft.VisualStudio.Modeling.Transaction>。  
+ 每當您的程式碼變更存放區中的任何項目時，它必須在交易內進行。 這適用於所有模型項目、 關聯性、 圖形、 圖表和其屬性。 如需詳細資訊，請參閱 <xref:Microsoft.VisualStudio.Modeling.Transaction>。  
   
  管理交易的最方便的方法是使用`using`陳述式括住`try...catch`陳述式：  
   
@@ -241,7 +241,7 @@ using (Transaction t =
   
   - `edward.Parents.Add(henry);`  
   
-- 設定目標角色扮演者的屬性。 例如:   
+- 設定目標角色扮演者的屬性。 例如：  
   
   - `edward.familyTreeModel = familyTree;`  
   
@@ -251,7 +251,7 @@ using (Transaction t =
   
        此角色的多重性是 「 `0..*`，因此我們將新增至集合。  
   
-- 明確建構關聯性執行的個體。 例如:   
+- 明確建構關聯性執行的個體。 例如：  
   
   - `FamilyTreeHasPeople edwardLink = new FamilyTreeHasPeople(familyTreeModel, edward);`  
   

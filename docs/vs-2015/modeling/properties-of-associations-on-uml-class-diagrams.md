@@ -14,11 +14,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 1c029a29b2d81f7a6ca64f47aab15caf5119d172
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59655994"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68154872"
 ---
 # <a name="properties-of-associations-on-uml-class-diagrams"></a>UML 類別圖上的關聯性屬性
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,12 +40,12 @@ ms.locfileid: "59655994"
 
  ![關聯的屬性](../modeling/media/uml-classprop.png "UML_ClassProp")  
 
-|**Property**|描述|  
+|**Property**|說明|  
 |------------------|-----------------|  
 |**名稱 (1)**|識別關聯。 這也會顯示在圖表上，接近關聯的中間點位置。|  
 |**限定的名稱**|唯一地識別關聯。 前置字元為包含關聯第一個角色之套件的限定名稱。|  
 |**工作項目**|連結到此關聯的工作項目數目。 若要連結工作項目，請參閱[連結模型項目和工作項目](../modeling/link-model-elements-and-work-items.md)。|  
-|**Color**|連接器的色彩。 不同於其他屬性，這是此關聯檢視的屬性，而不是模型中基礎關聯性的屬性。|  
+|**色彩**|連接器的色彩。 不同於其他屬性，這是此關聯檢視的屬性，而不是模型中基礎關聯性的屬性。|  
 |**第一個角色**<br /><br /> **第二個角色**|關聯的每一端稱為角色。 每個角色描述關聯相反端之類別上之對等屬性的屬性。<br /><br /> 在範例圖表中，Menu 和 Menu Item 之間的關聯具有稱為 Menu 和 Contents 的角色。<br /><br /> Contents 是 Menu 類別上的屬性名稱。|  
 
 ### <a name="properties-of-each-role"></a>每個角色的屬性  
@@ -59,7 +59,7 @@ ms.locfileid: "59655994"
 | **是衍生等位** |             False             |                                                                                                                                                                                                                                                                                                             如果為 true，則角色是衍生類型之一組角色的聯集。                                                                                                                                                                                                                                                                                                             |
 |   **是可瀏覽**   |             True              |                                                 可以從此方向閱讀關聯。 假設是相反角色的執行個體，您正在描述的軟體可以有效率地判斷此角色的關聯執行個體。<br /><br /> 如果一個角色是 Navigable，另一個不是，則會在巡覽方向的關聯上出現箭頭 (7)。<br /><br /> 根據預設，關聯工具會建立可以從一個方向巡覽的關聯。 若要將它轉換成雙向關聯，您可以選取的關聯，按一下 [動作] 標籤，會出現，然後按一下**成為雙向**。                                                 |
 |   **是唯讀的**   |             False             |                                                                                                                                                                                                                                                                                   如果為 true，則建立之後便無法變更關聯的執行個體。 連結永遠是針對相同的物件。                                                                                                                                                                                                                                                                                    |
-| **多重性 (3)** |               1               | **1** -一律關聯這一端連結至一個物件。 在此圖中，每個 Menu Item 會有一個 Menu。<br /><br /> **0..1** -其中一個關聯這一端連結至一個物件，或沒有連結。<br /><br /> **\\**\* -關聯另一端的每個物件會連結至這一端物件的集合，而且可能是空的集合。<br /><br /> **1..\\**  \* -關聯另一端的每個物件連結到這一端的至少一個物件。 在圖中，每個 Menu 有至少一個 Menu Item。<br /><br /> *n* **..** *m* -另一端的每個物件有一個集合之間*n*並*m*這一端物件的連結。 |
+| **多重性 (3)** |               1               | **1** -一律關聯這一端連結至一個物件。 在此圖中，每個 Menu Item 會有一個 Menu。<br /><br /> **0..1** -其中一個關聯這一端連結至一個物件，或沒有連結。<br /><br /> **\\** \* -關聯另一端的每個物件會連結至這一端物件的集合，而且可能是空的集合。<br /><br /> **1..\\**  \* -關聯另一端的每個物件連結到這一端的至少一個物件。 在圖中，每個 Menu 有至少一個 Menu Item。<br /><br /> *n* **..** *m* -另一端的每個物件有一個集合之間*n*並*m*這一端物件的連結。 |
 |    **排序**    |             False             |                                                                                                                                                                                                                                                                                                  如果為 true，傳回的集合會形成循序清單。 超過 1 的 [多重性]。                                                                                                                                                                                                                                                                                                   |
 |    **是唯一的**     |             False             |                                                                                                                                                                                                                                                                                              如果為 true，傳回的集合中沒有重複值。 超過 1 的 [多重性]。                                                                                                                                                                                                                                                                                              |
 |    **可見度**    |            Public             |                                                                                                                                                                                                                                 Public - 全域可見<br /><br /> Private - 在擁有類型外部看不到<br /><br /> Protected - 衍生自擁有者的類型可以看到<br /><br /> Package - 相同套件內的其他類型可以看到。                                                                                                                                                                                                                                  |

@@ -14,11 +14,11 @@ author: gewarren
 ms.author: gewarren
 manager: wpickett
 ms.openlocfilehash: 1da32bd3626af60de56c0a8544753f95988773e9
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58939369"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68201230"
 ---
 # <a name="using-rule-sets-to-group-code-analysis-rules"></a>使用規則集分組程式碼分析規則
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ ms.locfileid: "58939369"
 |工作|相關內容|  
 |----------|---------------------|  
 |**進行實際操作練習：** 您可以使用程式碼分析工具來指定自訂規則集來尋找並修正簡單的.NET Framework 應用程式中的問題。|-   [逐步解說：設定和使用自訂規則集](../code-quality/walkthrough-configuring-and-using-a-custom-rule-set.md)|  
-|**設定專案的程式碼分析：** 選擇現有規則集的專案、 Web 站台或方案。|-   [如何：設定 Managed 程式碼專案的程式碼分析](../code-quality/how-to-configure-code-analysis-for-a-managed-code-project.md)<br />-   [使用規則集指定要執行的 c + + 規則](../code-quality/using-rule-sets-to-specify-the-cpp-rules-to-run.md)<br />-   [如何：設定 ASP.NET Web 應用程式的程式碼分析](../code-quality/how-to-configure-code-analysis-for-an-aspnet-web-application.md)<br />-   [如何：在方案中的多個專案指定規則集](../code-quality/how-to-specify-managed-code-rule-sets-for-multiple-projects-in-a-solution.md)|  
+|**設定專案的程式碼分析：** 選擇現有規則集的專案、 Web 站台或方案。|-   [如何：設定 Managed 程式碼專案的程式碼分析](../code-quality/how-to-configure-code-analysis-for-a-managed-code-project.md)<br />-   [使用規則集指定C++要執行規則](../code-quality/using-rule-sets-to-specify-the-cpp-rules-to-run.md)<br />-   [如何：設定 ASP.NET Web 應用程式的程式碼分析](../code-quality/how-to-configure-code-analysis-for-an-aspnet-web-application.md)<br />-   [如何：在方案中的多個專案指定規則集](../code-quality/how-to-specify-managed-code-rule-sets-for-multiple-projects-in-a-solution.md)|  
 |**自訂規則集：** 指定要套用至您專案的規則。|-   [建立自訂規則集](../code-quality/creating-custom-code-analysis-rule-sets.md)|  
 |**了解內建規則集：** 檢視內建規則集所組成的程式碼分析規則。|-   [程式碼分析規則集參考](../code-quality/code-analysis-rule-set-reference.md)|  
 |**與 Team Foundation Server 整合程式碼分析：** [!INCLUDE[esprtfs](../includes/esprtfs-md.md)]簽入原則可讓開發小組必須確保所有的程式碼簽入符合一組常用的程式碼分析的標準。|-   [如何：與 Team 專案簽入原則同步處理程式碼專案規則集](../code-quality/how-to-synchronize-code-project-rule-sets-with-team-project-check-in-policy.md)|

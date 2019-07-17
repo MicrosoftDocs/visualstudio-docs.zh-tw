@@ -24,11 +24,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 88fce548d5adbd6d4dc930db767fd3e52690490b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58944351"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68148769"
 ---
 # <a name="ltfilegt-element-clickonce-application"></a>&lt;檔案&gt;項目 （ClickOnce 應用程式）
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -100,7 +100,7 @@ ms.locfileid: "58944351"
 ## <a name="typelib"></a>typelib  
  `typelib`項目是選擇性檔案項目的子系。 元素會描述屬於 COM 元件的類型程式庫。 此元素具有下列屬性。  
   
-|屬性|描述|  
+|屬性|說明|  
 |---------------|-----------------|  
 |`tlbid`|必要項。 指派給類型程式庫的 GUID。|  
 |`version`|必要項。 型別程式庫版本號碼。|  
@@ -139,7 +139,7 @@ ms.locfileid: "58944351"
 ## <a name="cominterfaceproxystub"></a>comInterfaceProxyStub  
  `comInterfaceProxyStub`項目是選用的子系`file`項目，但如果可能需要[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]應用程式包含想要使用免註冊 COM 部署的 COM 元件 元素包含下列屬性。  
   
-|屬性|描述|  
+|屬性|說明|  
 |---------------|-----------------|  
 |`iid`|必要項。 介面識別碼 (IID) 這由這個 proxy。 IID 必須包含在括號括住它。|  
 |`baseInterface`|選擇性。 從其介面則是所參考之介面的 IID`iid`衍生。|  

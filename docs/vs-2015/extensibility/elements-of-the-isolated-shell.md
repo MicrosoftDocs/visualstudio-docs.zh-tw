@@ -11,13 +11,13 @@ caps.latest.revision: 8
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 3a95b7da718f050357f6ecd79c90c389dd6085d5
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60106601"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68204607"
 ---
-# <a name="elements-of-the-isolated-shell"></a>Isolated Shell 的項目
+# <a name="elements-of-the-isolated-shell"></a>獨立模式 Shell 的元素
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 您可以修改登錄設定、 執行階段設定和您的獨立的 shell 應用程式，其.vsct、.pkgdef、 and.pkgundef 檔案的應用程式進入點。  

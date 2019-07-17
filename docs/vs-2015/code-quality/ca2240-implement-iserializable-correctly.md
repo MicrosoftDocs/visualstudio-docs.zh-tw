@@ -16,11 +16,11 @@ author: gewarren
 ms.author: gewarren
 manager: wpickett
 ms.openlocfilehash: 37f84bff4802c703bb61b36e9c1933a31cd6c5e3
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60045443"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68142371"
 ---
 # <a name="ca2240-implement-iserializable-correctly"></a>CA2240:必須正確實作 ISerializable
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

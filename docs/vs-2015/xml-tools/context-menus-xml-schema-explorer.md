@@ -10,11 +10,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: d6c14a268ef58dec31f65fe73e176eac8f690d9c
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59653950"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68157751"
 ---
 # <a name="context-menus-xml-schema-explorer"></a>內容功能表 (XML 結構描述總管)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,7 +45,7 @@ ms.locfileid: "59653950"
 ## <a name="node-type-file"></a>節點型別：檔案  
  下表描述檔案節點可用的選項。  
   
-|選項|描述|  
+|選項|說明|  
 |------------|-----------------|  
 |**顯示所有對內的參考**|尋找並反白顯示在 include 和 import 陳述式之 `schemaLocation` 屬性中指定選取檔案的所有檔案。|  
 |**顯示所有對外參考**|尋找並反白顯示下列項目：<br /><br /> -所有命名空間中的所有命名空間屬性指定匯入陳述式沒有`schemaLocation`屬性。<br />-所有檔案中指定`schemaLocation`屬性之所有 import 和 include 陳述式。|  
@@ -67,7 +67,7 @@ ms.locfileid: "59653950"
 ## <a name="node-type-element"></a>節點型別：項目  
  除了上述的全域節點選項外，項目節點的操作功能表還包含下列選項：  
   
-|選項|描述|  
+|選項|說明|  
 |------------|-----------------|  
 |**移至型別定義**|瀏覽至選取之項目的型別定義。 當用於此項目的型別是全域型別時，這個選項就會適用。|  
 |**請移至原始項目**|針對項目參考，瀏覽至此項目的實際定義。|  
@@ -79,7 +79,7 @@ ms.locfileid: "59653950"
 ## <a name="node-type-global-types"></a>節點型別：全域型別  
  除了上述的全域節點選項外，全域型別節點的操作功能表還有下列選項：  
   
-|選項|描述|  
+|選項|說明|  
 |------------|-----------------|  
 |**顯示基底類型**|如果選取的型別衍生自全域型別，就會瀏覽至選取之型別的基底型別。|  
 |**顯示所有參考**|尋找並反白顯示選取之型別的所有參考。 這包括選取的型別以及衍生自選取型別之型別的項目和屬性。|  

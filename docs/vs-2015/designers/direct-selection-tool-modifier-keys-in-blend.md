@@ -10,11 +10,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: f4c9c027487fcefd29b486d6c58fa45f9e347f60
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54776284"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68195256"
 ---
 # <a name="direct-selection-tool-modifier-keys-in-blend"></a>Blend 中的直接選取工具輔助按鍵
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ ms.locfileid: "54776284"
 |選取線段並將其彎成曲線，以通過指標的位置。|將滑鼠指標停在路徑中的線段上，按住 ALT 鍵，然後拖曳線段|![](../designers/media/975a855a-8536-441f-97ed-2f1496e416bf.png "975a855a-8536-441f-97ed-2f1496e416bf")<br /><br /> 轉換線段的指標|  
 |個別調整另一側正切函數的一端|直接選取點或線段，按住 ALT 鍵，然後拖曳正切函數的結束點|![](../designers/media/923951da-4081-4f8b-bebc-0f1f64d87504.png "923951da-4081-4f8b-bebc-0f1f64d87504")<br /><br /> 轉換正切函數的指標|  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [鍵盤快速鍵和輔助按鍵](../designers/keyboard-shortcuts-and-modifier-keys-in-blend.md)   
  [畫板輔助按鍵](../designers/artboard-modifier-keys-in-blend.md)   
  [畫筆工具輔助按鍵](../designers/pen-tool-modifier-keys-in-blend.md)   

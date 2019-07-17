@@ -13,11 +13,11 @@ caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: bd00a2b669b806b09a6ae221b2ba2e03f8d45ceb
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58940179"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68200082"
 ---
 # <a name="sccgetuseroption-function"></a>SccGetUserOption 函式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,7 +47,7 @@ SCCRTN SccGetUserOption(
 ## <a name="return-value"></a>傳回值  
  此函式的原始檔控制外掛程式實作應該會傳回下列值之一：  
   
-|值|描述|  
+|值|說明|  
 |-----------|-----------------|  
 |SCC_OK|已成功擷取選項。|  
 |SCC_E_OPNOTSUPPORTED|不支援選項。|  

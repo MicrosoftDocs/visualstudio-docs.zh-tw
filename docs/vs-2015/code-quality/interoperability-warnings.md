@@ -16,11 +16,11 @@ author: gewarren
 ms.author: gewarren
 manager: wpickett
 ms.openlocfilehash: da9651e06df0f3de046e894df747f88ac528b813
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58945034"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68201293"
 ---
 # <a name="interoperability-warnings"></a>互通性警告
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ ms.locfileid: "58945034"
   
 ## <a name="in-this-section"></a>本節內容  
   
-|規則|描述|  
+|規則|說明|  
 |----------|-----------------|  
 |[CA1400:P/Invoke 進入點應該要存在](../code-quality/ca1400-p-invoke-entry-points-should-exist.md)|公用或受保護的方法是使用 System.Runtime.InteropServices.DllImportAttribute 屬性來標記。 有可能是找不到 Unmanaged 程式庫，或是方法不符合程式庫中的函式。|  
 |[CA1401:P/Invokes 不應該為可見](../code-quality/ca1401-p-invokes-should-not-be-visible.md)|公用類型中的公用或受保護的方法具有 System.Runtime.InteropServices.DllImportAttribute 屬性 （也在 Visual Basic 中的 Declare 關鍵字實作）。 但不得公開 (Expose) 此類方法。|  

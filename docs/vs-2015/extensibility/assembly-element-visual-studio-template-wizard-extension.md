@@ -14,18 +14,18 @@ caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: d947c0f2996bcaaeff6c6dbf084151237f1fdb3d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58930734"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68184725"
 ---
 # <a name="assembly-element-visual-studio-template-wizard-extension"></a>組件項目 (Visual Studio 範本精靈擴充)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 指定的名稱或實作的組件的強式名稱`IWizard`介面。  
   
- \<VSTemplate>  
+ \<VSTemplate >  
 \<WizardExtension>  
 \<組件 >  
   
@@ -92,4 +92,4 @@ ms.locfileid: "58930734"
 ## <a name="see-also"></a>另請參閱  
  [Visual Studio 範本結構描述參考](../extensibility/visual-studio-template-schema-reference.md)   
  [建立專案和項目範本](../ide/creating-project-and-item-templates.md)   
- [如何：使用精靈與專案範本](../extensibility/how-to-use-wizards-with-project-templates.md)
+ [如何：搭配專案範本使用精靈](../extensibility/how-to-use-wizards-with-project-templates.md)

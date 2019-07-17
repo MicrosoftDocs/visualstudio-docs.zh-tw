@@ -10,11 +10,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 5e2fbba9006c1621b8f98084d4ffd4c637be1127
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59654651"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68147144"
 ---
 # <a name="xml-snippets"></a>XML 片段
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

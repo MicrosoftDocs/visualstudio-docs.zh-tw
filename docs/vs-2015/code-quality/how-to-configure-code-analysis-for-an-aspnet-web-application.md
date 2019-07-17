@@ -1,5 +1,5 @@
 ---
-title: HOW TO：設定 ASP.NET Web 應用程式的程式碼分析 |Microsoft Docs
+title: 作法：設定 ASP.NET Web 應用程式的程式碼分析 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -12,13 +12,13 @@ author: gewarren
 ms.author: gewarren
 manager: wpickett
 ms.openlocfilehash: 8e75f5a584dd0522240f8b4d45cb28107bca38e3
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: HT
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60113402"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68201387"
 ---
-# <a name="how-to-configure-code-analysis-for-an-aspnet-web-application"></a>HOW TO：設定 ASP.NET Web 應用程式的程式碼分析
+# <a name="how-to-configure-code-analysis-for-an-aspnet-web-application"></a>作法：設定 ASP.NET Web 應用程式的程式碼分析
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 在 [!INCLUDE[vsPreShort](../includes/vspreshort-md.md)]及[!INCLUDE[vsUltShort](../includes/vsultshort-md.md)]您可以從程式碼分析的清單中選取*規則集*要套用至[!INCLUDE[vstecasp](../includes/vstecasp-md.md)]Web 應用程式。 預設規則設為 Microsoft Mininimum 建議規則。 您可以選取要套用至網站所設定的另一個規則。  

@@ -1,5 +1,5 @@
 ---
-title: HOW TO：指定使用者將從安裝的位置 |Microsoft Docs
+title: 作法：指定使用者將從安裝的位置 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-deployment
@@ -19,13 +19,13 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 3139cb337428dfc0c14e5bae47e682ce169bc81d
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: HT
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60108499"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68159123"
 ---
-# <a name="how-to-specify-the-location-where-end-users-will-install-from"></a>HOW TO：指定位置讓終端使用者從此處執行安裝作業
+# <a name="how-to-specify-the-location-where-end-users-will-install-from"></a>作法：指定位置讓終端使用者從此處執行安裝作業
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 發佈時[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]應用程式，下載並安裝應用程式使用者的位置不一定是一開始發行應用程式的位置。 例如，在某些組織中開發人員可能會發行至預備伺服器，應用程式，然後以系統管理員會移至 Web 伺服器應用程式。  
@@ -42,7 +42,7 @@ ms.locfileid: "60108499"
   
 2. 按一下 [發佈]  索引標籤。  
   
-3. 在 安裝 URL 欄位中，輸入 使用完整的 URL，使用格式的安裝位置 http://www.microsoft.com/ApplicationName，或使用的格式將 UNC 路徑\\\Server\ApplicationName。  
+3. 在 安裝 URL 欄位中，輸入 使用完整的 URL，使用格式的安裝位置 http://www.microsoft.com/ApplicationName ，或使用的格式將 UNC 路徑\\ \Server\ApplicationName。  
   
 ## <a name="see-also"></a>另請參閱  
  [如何：指定 Visual Studio 複製檔案的位置](../deployment/how-to-specify-where-visual-studio-copies-the-files.md)   

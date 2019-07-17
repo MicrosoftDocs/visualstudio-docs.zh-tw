@@ -12,11 +12,11 @@ caps.latest.revision: 15
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 22943d3049ff0e24d00c7c29750e7dcd0efaf846
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58945392"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68158368"
 ---
 # <a name="hierarchies-in-visual-studio"></a>Visual Studio 中的階層
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -28,7 +28,7 @@ ms.locfileid: "58945392"
 ## <a name="project-hierarchies"></a>專案階層
  每個專案階層架構包含您可以檢視和編輯的項目。 這些項目需視專案類型而有所不同。 例如，資料庫專案可能包含預存程序、 資料庫檢視和資料庫資料表。 相反地，程式設計語言的專案中，將可能包含原始程式檔和點陣圖和對話方塊的資源檔。 階層可以是巢狀，這讓您新增的彈性當您建立專案階層架構。
 
- 當您建立新的專案類型時，專案類型會控制一組完整的可編輯的項目。 不過，專案可以包含項目，它們並沒有編輯支援。 例如，Visual c + + 專案可以包含 HTML 檔案，即使 Visual c + + 不提供任何自訂的編輯器的 HTML 檔案類型。
+ 當您建立新的專案類型時，專案類型會控制一組完整的可編輯的項目。 不過，專案可以包含項目，它們並沒有編輯支援。 例如，視覺效果C++專案可包含 HTML 檔案，即使 VisualC++不提供任何自訂的編輯器的 HTML 檔案類型。
 
  階層管理持續提供其所包含的項目。 階層架構的實作必須控制任何特殊的屬性會影響在階層內的項目持續性。 例如，如果項目代表物件，而不是檔案的存放庫中，階層實作必須控制那些物件的持續性。 IDE 本身會指示儲存符合使用者輸入項目階層，但 IDE 不會控制儲存這些項目時所需的任何動作。 相反地，專案是在控制項中。
 

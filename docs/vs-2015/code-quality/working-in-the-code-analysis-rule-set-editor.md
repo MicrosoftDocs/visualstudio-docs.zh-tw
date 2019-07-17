@@ -12,11 +12,11 @@ author: gewarren
 ms.author: gewarren
 manager: wpickett
 ms.openlocfilehash: 57d3c21371cc824573e29657d0b41253e556f4c3
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60072249"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68201129"
 ---
 # <a name="working-in-the-code-analysis-rule-set-editor"></a>在程式碼分析規則集編輯器中工作
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,7 +44,7 @@ ms.locfileid: "60072249"
   
 |工具列控制項|描述|  
 |---------------------|-----------------|  
-|[全部展開]|在 所有群組顯示的規則。|  
+|[全部展開] |在 所有群組顯示的規則。|  
 |**全部摺疊**|隱藏所有群組中的規則。|  
 |**Group By**|指定規則會分組的欄位。 按一下  **\<無 >** 顯示沒有群組規則。|  
 |**資料行選項**|指定要顯示規則的欄位。|  

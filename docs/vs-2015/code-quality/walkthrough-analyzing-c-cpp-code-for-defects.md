@@ -15,11 +15,11 @@ author: mikeblome
 ms.author: mblome
 manager: jillfra
 ms.openlocfilehash: dcd862b6ff9c94b8de3fc8b5a56164549fefe8ca
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60099496"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68142043"
 ---
 # <a name="walkthrough-analyzing-cc-code-for-defects"></a>逐步解說：分析 C/C++ 程式碼的缺失
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -52,13 +52,13 @@ ms.locfileid: "60099496"
   
      示範解決方案現在會填入**方案總管 中**。  
   
-2. 在 [建置] 功能表上，按一下 [重建方案]。  
+2. 在 [建置]  功能表上，按一下 [重建方案]  。  
   
      沒有任何錯誤或警告，建置方案。  
   
 3. 在 **方案總管 中**，選取 CodeDefects 專案。  
   
-4. 在 [專案] 功能表上，按一下 [屬性]。  
+4. 在 [專案]  功能表上，按一下 [屬性]  。  
   
      **CodeDefects 屬性頁**對話方塊隨即出現。  
   
@@ -120,7 +120,7 @@ ms.locfileid: "60099496"
   
 1. 在 方案總管 中，選取 註解專案。  
   
-2. 在 [專案] 功能表上，按一下 [屬性]。  
+2. 在 [專案]  功能表上，按一下 [屬性]  。  
   
      **附註屬性頁**對話方塊隨即出現。  
   

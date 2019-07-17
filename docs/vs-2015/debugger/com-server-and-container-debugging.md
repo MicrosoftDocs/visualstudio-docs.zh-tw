@@ -23,11 +23,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 631b1d35a0878bfc362b03751f35909839c7da19
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60088050"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68161558"
 ---
 # <a name="com-server-and-container-debugging"></a>COM 伺服器和容器偵錯
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -51,11 +51,11 @@ COM 應用程式可以在程式設計人員直接控制之外執行許多工作�
 3. 啟動容器應用程式 (Container Application)。  
   
 ## <a name="BKMK_DebuggingaServerandDomainIsolationSDIApplication"></a> 對伺服器和網域隔離 (SDI) 應用程式進行偵錯  
- 如果您要對 SDI 伺服器應用程式進行偵錯，則必須在 C/C++、C# 或 Visual Basic 專案之 [專案] 屬性頁對話方塊的 [命令列引數] 屬性中，指定 `/Embedding` 或 `/Automation`。  
+ 如果您要對 SDI 伺服器應用程式進行偵錯，則必須在 C/C++、C# 或 Visual Basic 專案之 [專案]  屬性頁對話方塊的 [命令列引數]  屬性中，指定 `/Embedding` 或 `/Automation`。  
   
  透過這些命令列的引數，偵錯工具可以啟動伺服器應用程式，就如同它是由容器所啟動。 從程式管理員或檔案管理員啟動容器，將導致容器使用由偵錯工具啟動的伺服器執行個體。  
   
- 若要存取 [專案] 屬性頁對話方塊，請在 [方案總管] 中用滑鼠右鍵按一下您的專案，然後從捷徑功能表選擇 [屬性]。 若要尋找 [命令列的引數] 屬性，請展開 [組態屬性] 分類，然後按一下 [偵錯] 頁。  
+ 若要存取 [專案]  屬性頁對話方塊，請在 [方案總管] 中用滑鼠右鍵按一下您的專案，然後從捷徑功能表選擇 [屬性]。 若要尋找 [命令列的引數] 屬性，請展開 [組態屬性] 分類，然後按一下 [偵錯] 頁。  
   
 ## <a name="see-also"></a>另請參閱  
  [偵錯 COM 和 ActiveX](../debugger/com-and-activex-debugging.md)

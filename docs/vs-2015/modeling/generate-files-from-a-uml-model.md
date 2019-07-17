@@ -12,11 +12,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 0d58a8b98cb27527f3d4c464119fb5543f88e8ed
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60088973"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68182832"
 ---
 # <a name="generate-files-from-a-uml-model"></a>透過 UML 模型產生檔案
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -314,7 +314,7 @@ namespace Test{
   
 - **設定檔**。 甚至，在一個商務區域內，項目類型的解譯可能會不同。 例如，在網站圖上，有些類別可能代表網頁，其他類別則代表內容區塊。 若要讓使用者更方便記錄這些差異，請定義造型。 造型也可能會附加套用至該類型之項目的其他屬性。 造型會封裝在設定檔內。 如需詳細資訊，請參閱 <<c0> [ 定義要擴充 UML 的設定檔](../modeling/define-a-profile-to-extend-uml.md)。  
   
-     在範本程式碼中，可以輕鬆地存取物件上所定義的造型。 例如:   
+     在範本程式碼中，可以輕鬆地存取物件上所定義的造型。 例如：  
   
     ```  
     public bool HasStereotype(IClass c, string profile, string stereo)  

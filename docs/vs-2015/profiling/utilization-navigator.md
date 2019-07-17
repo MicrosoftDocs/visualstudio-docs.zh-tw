@@ -12,11 +12,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: f4aec8cc1a707535e9cf6ae204be0a7ff67ea51d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54788318"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68145344"
 ---
 # <a name="utilization-navigator"></a>使用率導覽
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,7 +26,7 @@ ms.locfileid: "54788318"
  ![顯示所選時間範圍的使用率導覽](../profiling/media/cvutilizationnavigator.png "CVUtilizationNavigator")  
 使用率導覽和所選時間範圍  
   
- 在圖中，以紅色矩形定義的選取間隔，稱為 thumb。  
+ 在圖中，以紅色矩形定義的選取間隔，稱為 thumb  。  
   
  以下是您可以用使用率導覽來顯示時間範圍的操控方式：  
   

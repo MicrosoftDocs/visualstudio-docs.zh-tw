@@ -11,13 +11,13 @@ caps.latest.revision: 15
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 7c2133c75b32e56c1a054740bd829bd04cac97cc
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58945148"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68194363"
 ---
-# <a name="managing-undo-and-redo-by-using-the-legacy-api"></a>管理的復原和重複使用舊版 API
+# <a name="managing-undo-and-redo-by-using-the-legacy-api"></a>使用舊版 API 管理復原和重做
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 編輯器必須支援可讓使用者反轉其最近的變更，它們就會修改程式碼時的復原作業。 大多數編輯器實作下[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]和[!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]可以自動提供整合式的開發環境 (IDE) 的復原支援。  

@@ -8,12 +8,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1241edd105c948f1094948229a91851b7c38bbed
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 8634ab15a10b59fc21de390e0633d6d91793616d
+ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67824336"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67891031"
 ---
 # <a name="fonts-and-formatting-for-visual-studio"></a>字型和格式適用於 Visual Studio
 ## <a name="BKMK_TheEnvironmentFont"></a> 環境字型
@@ -90,7 +90,8 @@ window.ShowModal()
 ### <a name="BKMK_Formatting"></a> 格式化 （調整/粗體） 參考
  有些對話方塊會需要特定的文字是粗體或以外的環境字型的大小。 先前，大於環境字型的字型編碼為 「`environment font +2`"或類似。 使用提供的程式碼片段，可支援高 DPI 監視器，並確保顯示的文字，一律會出現在正確的大小和重量 （像是 Light 或 semilight 做）。
 
-> **注意：您套用格式之前，請確定您遵循本指南中找到[文字樣式](../../extensibility/ux-guidelines/fonts-and-formatting-for-visual-studio.md#BKMK_TextStyle)。**
+> [!NOTE]
+> 您套用格式之前，請確定您遵循本指南中找到[文字樣式](../../extensibility/ux-guidelines/fonts-and-formatting-for-visual-studio.md#BKMK_TextStyle)。 * *
 
  若要調整環境字型，設定樣式的 TextBlock 或 Label 所示。 每個使用得宜，這些程式碼片段會產生正確的字型，包括適當的尺寸和重量變化。
 

@@ -12,11 +12,11 @@ caps.latest.revision: 20
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 3b5de061449844b87d60d7a700b1e1c22e1e1282
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58944746"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68195028"
 ---
 # <a name="ide-defined-commands-for-extending-project-systems"></a>用來擴充專案系統的 IDE 定義的命令
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -28,7 +28,7 @@ ms.locfileid: "58944746"
 ## <a name="command-menus"></a>命令功能表  
  下表會很有用的位置，您可以叫用專案擴充性的高階命令的命令功能表。  
   
-|命令功能表|描述|  
+|命令功能表|說明|  
 |------------------|-----------------|  
 |IDM_VS_MENU_PROJECT|**專案**最上層的功能表。|  
 |IDM_VS_TOOL_PROJWIN|**方案總管 中**工具列。|  
@@ -36,7 +36,7 @@ ms.locfileid: "58944746"
 ## <a name="shortcut-menus"></a>快顯功能表  
  下表顯示快顯功能表中選取單一節點時，適用於**方案總管**，或有多個同質性的選取項目中時**方案總管 中**，這是當所有選取的節點都屬於相同的類型。  
   
-|快顯功能表|描述|  
+|快顯功能表|說明|  
 |-------------------|-----------------|  
 |<xref:Microsoft.VisualStudio.Shell.VsMenus.IDM_VS_CTXT_PROJNODE>|適用於選取專案節點時。|  
 |<xref:Microsoft.VisualStudio.Shell.VsMenus.IDM_VS_CTXT_ITEMNODE>|選取檔案時套用。|  
@@ -58,7 +58,7 @@ ms.locfileid: "58944746"
 ## <a name="command-groups"></a>命令群組  
  下表顯示您可以使用擴充的專案，而您可以透過存取時的命令群組<xref:Microsoft.VisualStudio.Shell.VsMenus.IDM_VS_CTXT_PROJNODE>快顯功能表。  
   
-|命令群組|描述|  
+|命令群組|說明|  
 |-------------------|-----------------|  
 |IDG_VS_CTXT_PROJECT_BUILD|建置、 重建和部署專案的命令。|  
 |IDG_VS_CTXT_COMPILELINK|編譯和連結專案的命令。|  

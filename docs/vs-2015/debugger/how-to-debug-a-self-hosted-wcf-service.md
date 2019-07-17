@@ -19,13 +19,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: e58acc6323f396f9b0755e84b369ce0fdf413c08
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60080510"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68185172"
 ---
-# <a name="how-to-debug-a-self-hosted-wcf-service"></a>HOW TO：對自我裝載的 WCF 服務進行偵錯
+# <a name="how-to-debug-a-self-hosted-wcf-service"></a>作法：對自我裝載的 WCF 服務進行偵錯
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 *自我裝載的服務 (Self-Hosted Service)* 是一項不會在 IIS、WCF 服務主機或 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 程式開發伺服器內部執行的 WCF 服務。 若要偵錯自我裝載的 WCF 的最簡單方式是設定[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]以啟動用戶端和伺服器，當您選擇**啟動偵錯**上**偵錯**功能表。  
@@ -54,7 +54,7 @@ ms.locfileid: "60080510"
   
     5. 在一行中，對應至用戶端專案，按一下**動作**，然後選擇**開始**。  
   
-    6. 按一下 [確定] 。  
+    6. 按一下 [確定 **Deploying Office Solutions**]。  
   
 ## <a name="see-also"></a>另請參閱  
  [對 WCF 服務進行偵錯](../debugger/debugging-wcf-services.md)   

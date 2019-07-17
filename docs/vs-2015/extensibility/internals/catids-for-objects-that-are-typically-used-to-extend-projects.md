@@ -13,11 +13,11 @@ caps.latest.revision: 17
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 1cf5bd504bb5f7090dc07bea32e73333c0f182d0
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58944009"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68162092"
 ---
 # <a name="catids-for-objects-that-are-typically-used-to-extend-projects"></a>通常用來擴充專案的物件 CATID
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -53,7 +53,7 @@ ms.locfileid: "58944009"
 |<xref:VSLangProj.PrjBrowseObjectCATID.prjCATIDCSharpFolderBrowseObject>|{914FE278-054A-45DB-BF9E-5F22484CC84C}|  
 |<xref:VSLangProj.PrjBrowseObjectCATID.prjCATIDCSharpReferenceBrowseObject>|{2F0FA3B8-C855-4a4e-95A5-CB45C67D6C27}|  
   
-## <a name="c-catids"></a>C + + Catid  
+## <a name="c-catids"></a>C++Catid  
  下列[!INCLUDE[vcprvc](../../includes/vcprvc-md.md)]專案的系統中的型別程式庫中未公開 Catid [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] .NET 2003年和一定要包含在您的程式碼中，每當您想要擴充這些專案物件。 中的後續版本中的類型程式庫會包含這些 Catid [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]。  
   
 |名稱|GUID|  

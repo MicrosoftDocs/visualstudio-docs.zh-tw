@@ -8,12 +8,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f8e69801797ed40c206f828499efb234a97791cb
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: dd8a133623cdaa266591b7b23cba7fdc57ca284b
+ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66312668"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67890579"
 ---
 # <a name="walkthrough-create-a-view-adornment-commands-and-settings-column-guides"></a>逐步解說：建立檢視裝飾、 命令和設定 （分欄輔助線）
 您可以擴充 Visual Studio 文字/程式碼編輯器與命令和檢視效果。 這篇文章會示範如何開始使用熱門的擴充功能，分欄輔助線。 分欄輔助線是以視覺化方式淺色可協助您管理您的程式碼，以特定的資料行寬度的文字編輯器的檢視上所繪製的線條。 具體來說，格式化程式碼可以是很重要的範例包含在文件，部落格文章，或錯誤報告。
@@ -28,7 +28,8 @@ ms.locfileid: "66312668"
 
   您可以試試看這個 Visual Studio 組件庫的資料行指南功能的版本[延伸模組](https://marketplace.visualstudio.com/items?itemName=PaulHarrington.EditorGuidelines)。
 
-  **注意**：在本逐步解說中，您需要將大量的程式碼貼到 Visual Studio 擴充功能範本所產生的一些檔案上。 但是，很快就本逐步解說會參考 GitHub 上與其他延伸模組範例已完成的方案。 已完成的程式碼會稍微不同，在於它有實際的命令圖示，而不是使用 generictemplate 圖示。
+  > [!NOTE]
+  > 在本逐步解說中，您需要將大量的程式碼貼到 Visual Studio 擴充功能範本所產生的一些檔案上。 但是，很快就本逐步解說會參考 GitHub 上與其他延伸模組範例已完成的方案。 已完成的程式碼會稍微不同，在於它有實際的命令圖示，而不是使用 generictemplate 圖示。
 
 ## <a name="get-started"></a>開始使用
 從 Visual Studio 2015 中，從下載中心取得未安裝 Visual Studio SDK。 它包含為 Visual Studio 安裝程式的選用功能。 您也可以在稍後安裝 VS SDK。 如需詳細資訊，請參閱 <<c0> [ 安裝 Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md)。

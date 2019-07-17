@@ -10,11 +10,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 9c691eea7417e882ee3b73e9f2adc538714b486a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60094656"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68158568"
 ---
 # <a name="xml-editor-intellisense-features"></a>XML 編輯器 IntelliSense 功能
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -104,7 +104,7 @@ XML 編輯器提供完整的 IntelliSense 功能，其相當於 Visual Studio �
   
  **自動插入**一節**其他**頁面控制下列行為：  
   
-|名稱|描述|  
+|名稱|說明|  
 |----------|-----------------|  
 |關閉標記|插入新項目的關閉標記。|  
 |屬性引號|輸入新屬性名稱時，請插入屬性值引號。|  
@@ -112,7 +112,7 @@ XML 編輯器提供完整的 IntelliSense 功能，其相當於 Visual Studio �
   
 #### <a name="to-change-the-auto-completion-behavior"></a>變更自動完成行為  
   
-1. 選取 [工具] 功能表上的 [選項]。  
+1. 選取 [工具]  功能表上的 [選項]  。  
   
 2. 依序展開**文字編輯器**，展開**XML**，然後選取**其他**。  
   

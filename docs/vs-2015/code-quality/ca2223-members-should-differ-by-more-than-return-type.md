@@ -16,11 +16,11 @@ author: gewarren
 ms.author: gewarren
 manager: wpickett
 ms.openlocfilehash: 6a460cd01d671d347e1cd126d009fe19e140cc69
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58943683"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68201598"
 ---
 # <a name="ca2223-members-should-differ-by-more-than-return-type"></a>CA2223:成員不應該只有在傳回類型上不同
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

@@ -12,11 +12,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: f21bfadd540ce365c7f585a35991c27395558c6e
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60058652"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68202698"
 ---
 # <a name="security-of-text-templates"></a>文字範本的安全性
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

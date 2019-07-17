@@ -12,11 +12,11 @@ author: corob-msft
 ms.author: corob
 manager: jillfra
 ms.openlocfilehash: e554c7b97c2feac031510cfdd0894d29b4ba85eb
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60115636"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68151060"
 ---
 # <a name="create-an-android-native-activity-app"></a>建立 Android Native Activity 應用程式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,11 +35,11 @@ ms.locfileid: "60115636"
   
 #### <a name="to-create-a-new-project"></a>建立新的專案  
   
-1. 開啟 Visual Studio。 在功能表列上，選擇 [檔案] 、[新增] 、[專案] 。  
+1. 開啟 Visual Studio。 在功能表列上，選擇 [檔案]  、[新增]  、[專案]  。  
   
-2. 在 [新增專案]  對話方塊中的 [範本] 底下，選擇 [Visual C++] 、[跨平台] ，然後選擇 [Native-Activity 應用程式 (Android)]  範本。  
+2. 在 [新增專案]  對話方塊中的 [範本]  底下，選擇 [Visual C++]  、[跨平台]  ，然後選擇 [Native-Activity 應用程式 (Android)]  範本。  
   
-3. 指定像是 `MyAndroidApp` 的應用程式名稱，然後選擇 [確定]。  
+3. 指定像是 `MyAndroidApp` 的應用程式名稱，然後選擇 [確定]  。  
   
     ![建立 Native Activity 專案](../cross-platform/media/cppmdd-newproject.PNG "CppMDD_NewProject")  
   
@@ -64,7 +64,7 @@ ms.locfileid: "60115636"
   
      如果未顯示 [方案平台]  清單，請從 [新增或移除按鈕]  下拉式清單中選擇 [x86]  ，然後選擇您的平台。  
   
-2. 在功能表列上，選擇 [建置] 、[建置方案] 。  
+2. 在功能表列上，選擇 [建置]  、[建置方案]  。  
   
      [輸出] 視窗會顯示方案中這兩個專案的建置流程輸出。  
   

@@ -12,11 +12,11 @@ caps.latest.revision: 21
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 5238274d66296a21e15b47d1a090ab01c1a1299d
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60046288"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68201973"
 ---
 # <a name="walkthrough-publishing-a-visual-studio-extension"></a>逐步解說：發佈 Visual Studio 延伸模組
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -53,11 +53,11 @@ ms.locfileid: "60046288"
 
 4. 使用您的 Microsoft 帳戶登入。 如果您沒有 Microsoft 帳戶，您可以在此時建立一個。
 
-5. 按一下 [上傳] 。
+5. 按一下 [上傳]  。
 
-6. 在 [**步驟 1:延伸模組型別**，選取**工具**，然後按一下**下一步]**。
+6. 在 [**步驟 1:延伸模組型別**，選取**工具**，然後按一下**下一步]** 。
 
-7. 在 **步驟 2:上傳**，您可以選擇直接上傳至 Visual Studio 組件庫，或只是將連結新增至您自己的網站。 在此案例中，選取**我想要上傳我的工具**。 **選取您的控制項**方塊隨即出現。 按一下 **瀏覽**，然後選取 TestPublish.vsix \bin\Release 專案的資料夾中。 按 [ **下一步**]。
+7. 在 **步驟 2:上傳**，您可以選擇直接上傳至 Visual Studio 組件庫，或只是將連結新增至您自己的網站。 在此案例中，選取**我想要上傳我的工具**。 **選取您的控制項**方塊隨即出現。 按一下 **瀏覽**，然後選取 TestPublish.vsix \bin\Release 專案的資料夾中。 按一下 [下一步]  。
 
 8. 在 **步驟 3:基本資訊**，會顯示 source.extension.vsixmanifest 檔案中的欄位。 選取適當**分類**並加入**標記**可協助使用者尋找擴充功能。 若要加入更詳細的摘要和描述 （描述必須是至少 280 個字元）。 離開**延伸模組類型**做為**不是 Microsoft 擴充功能**並**成本類別**做為**試用**。
 
@@ -65,7 +65,7 @@ ms.locfileid: "60046288"
 
 10. 按一下 **建立投稿文章**。 這會顯示您的延伸模組會對 Visual Studio 元件庫，與訊息尚未發行頁面的頁面。
 
-11. 按一下 [發行] 。
+11. 按一下 [發行]  。
 
 12. 搜尋 Visual Studio 組件庫，您的擴充功能。 TestPublish 延伸模組清單應該會出現。
 
@@ -76,7 +76,7 @@ ms.locfileid: "60046288"
 
 2. 按一下  **Online** TestPublish 然後搜尋。 TestPublish 延伸模組清單應該會出現。
 
-3. 按一下 [ **下載**]。 下載擴充功能之後，按一下 [安裝] 。
+3. 按一下 [ **下載**]。 下載擴充功能之後，按一下 [安裝]  。
 
 4. 若要完成安裝程序，重新啟動 Visual Studio。
 
@@ -89,11 +89,11 @@ ms.locfileid: "60046288"
 
 2. 按一下右上角**My 副檔名**。 TestPublish 清單隨即顯示。
 
-3. 按一下 [刪除]。
+3. 按一下 [刪除]  。
 
 #### <a name="to-remove-the-extension-from-your-computer"></a>若要從電腦移除擴充功能
 
-1. 在 Visual Studio 的 [工具]  功能表上，按一下 [擴充管理員] 。
+1. 在 Visual Studio 的 [工具]  功能表上，按一下 [擴充管理員]  。
 
 2. 選取 TestPublish，然後按一下**解除安裝**。
 

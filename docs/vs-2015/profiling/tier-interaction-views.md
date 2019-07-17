@@ -12,11 +12,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: f313865f892fb17b5c7e2c5f0ad7ecfc800be803
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60108694"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68145565"
 ---
 # <a name="tier-interaction-views"></a>階層互動檢視
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

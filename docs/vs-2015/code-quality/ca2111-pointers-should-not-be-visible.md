@@ -16,11 +16,11 @@ author: gewarren
 ms.author: gewarren
 manager: wpickett
 ms.openlocfilehash: 8497433088e4c49868a76dd3281d02a5e79babe5
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58944868"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68154363"
 ---
 # <a name="ca2111-pointers-should-not-be-visible"></a>CA2111:指標不應該為可見的
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

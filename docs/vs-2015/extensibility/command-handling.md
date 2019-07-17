@@ -11,11 +11,11 @@ caps.latest.revision: 21
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 563f38cd2dc3854918fe637fdc11afe1d1a49b64
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58944623"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68184379"
 ---
 # <a name="command-handling"></a>命令處理
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,21 +29,21 @@ ms.locfileid: "58944623"
 ## <a name="adding-commands-to-the-editor-context-menu"></a>將命令加入至編輯器操作功能表  
  若要將命令新增至內容功能表中，您必須先定義一組屬於特定群組的功能表命令。 下列範例取自本逐步解說的一部分產生.vsct 檔[逐步解說：將功能加入至自訂編輯器](../extensibility/walkthrough-adding-features-to-a-custom-editor.md):  
   
- \<Menu guid="guidCustomEditorCmdSet" id="IDMX_RTF" priority="0x0000" type="Context">  
+ \<功能表的 guid ="guidCustomEditorCmdSet"id ="IDMX_RTF 」 優先順序 ="0x0000"type = [內容] >  
   
- \<Parent guid="guidCustomEditorCmdSet" id="0"/>  
+ \<父 guid ="guidCustomEditorCmdSet"id ="0"/ >  
   
- \<Strings>  
+ \<字串 >  
   
  \<ButtonText > CustomEditor 快顯功能表\</ButtonText >  
   
  \<CommandName>CustomEditorContextMenu\</CommandName>  
   
- \</Strings>  
+ \</ 字串 >  
   
- \</Menu>  
+ \</ 功能表 >  
   
- \</Menus>  
+ \</ 功能表 >  
   
  上述的文字加入文字的內容功能表命令**CustomEditor 快顯功能表**。 命令集的建立與這個編輯器，，和型別就是 [內容] 功能表的 GUID。  
   

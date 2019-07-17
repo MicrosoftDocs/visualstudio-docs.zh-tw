@@ -10,11 +10,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: b6da7ef473f279c968c676c768e89a6f1145ae4c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60059158"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68159369"
 ---
 # <a name="keyboard-shortcuts-and-modifier-keys-in-blend"></a>Blend 中的鍵盤快速鍵和輔助按鍵
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,14 +23,14 @@ ms.locfileid: "60059158"
   
 - **便捷鍵**：按下鍵盤上的特定按鍵，您即可使用便捷鍵存取功能表命令或對話方塊中的區域。 便捷鍵可透過目前選取之命令或對話方塊中的底線來識別。  
   
-   若要使用便捷鍵，請先按 ALT 或 F10 以顯示底線，然後再按特定功能表或對話方塊項目的對應字母。 您也可以使用 TAB 鍵或方向鍵來瀏覽功能表或對話方塊。 例如，如果在 [!INCLUDE[blend_subs](../includes/blend-subs-md.md)] 中按 ALT，[檔案] 功能表的 **F** 字母下方會出現底線以識別為便捷鍵。 若要開啟專案，您可以按住 ALT、按 F，然後再按 O。  
+   若要使用便捷鍵，請先按 ALT 或 F10 以顯示底線，然後再按特定功能表或對話方塊項目的對應字母。 您也可以使用 TAB 鍵或方向鍵來瀏覽功能表或對話方塊。 例如，如果在 [!INCLUDE[blend_subs](../includes/blend-subs-md.md)] 中按 ALT，[檔案]  功能表的 **F** 字母下方會出現底線以識別為便捷鍵。 若要開啟專案，您可以按住 ALT、按 F，然後再按 O。  
   
    ![](../designers/media/441d5d67-48ee-4ba3-9e55-1826167e8d64.png "441d5d67-48ee-4ba3-9e55-1826167e8d64")  
   按 ALT 後出現加底線的便捷鍵  
   
 - **快速鍵**：您可以按鍵盤快速鍵以使用快速鍵來執行動作 (例如，選取功能表命令或修改工具的行為)。  
   
-   [!INCLUDE[blend_subs](../includes/blend-subs-md.md)] 使用者介面中的鍵盤快速鍵大多很容易識別；它們會顯示在功能表命令的右邊。 例如，在 [檔案] 功能表上，[開啟專案] 功能表命令即包含鍵盤快速鍵 CTRL+SHIFT+O。 若要查看 [工具] 面板中某個工具的快速鍵，請將指標停留在該工具上方。  
+   [!INCLUDE[blend_subs](../includes/blend-subs-md.md)] 使用者介面中的鍵盤快速鍵大多很容易識別；它們會顯示在功能表命令的右邊。 例如，在 [檔案]  功能表上，[開啟專案]  功能表命令即包含鍵盤快速鍵 CTRL+SHIFT+O。 若要查看 [工具]  面板中某個工具的快速鍵，請將指標停留在該工具上方。  
   
    ![](../designers/media/f147fc85-9fc5-4e8a-8039-bead80a3e595.png "f147fc85-9fc5-4e8a-8039-bead80a3e595")  
   有快速鍵的功能表項目旁邊會顯示快速鍵  

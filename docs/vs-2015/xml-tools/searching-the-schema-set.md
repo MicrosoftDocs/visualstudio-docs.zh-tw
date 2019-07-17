@@ -10,11 +10,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 1d388db50ae935ef85b720177bd31c832a353d31
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60080555"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68145178"
 ---
 # <a name="searching-the-schema-set"></a>搜尋結構描述集
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

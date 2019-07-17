@@ -11,13 +11,13 @@ caps.latest.revision: 15
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 4471b71b612008ba7d0733c92286415cd3c3f6b3
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58945765"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68193857"
 ---
-# <a name="providing-a-language-service-context-by-using-the-legacy-api"></a>使用舊版 API 提供的語言服務內容
+# <a name="providing-a-language-service-context-by-using-the-legacy-api"></a>使用舊版 API 提供語言服務內容
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 有兩個選項，以提供使用者內容中使用的語言服務[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]核心編輯器： 提供文字標記的內容，或提供所有的使用者內容。 此處所述的每個之間的差異。  
@@ -30,7 +30,7 @@ ms.locfileid: "58945765"
 ## <a name="provide-all-user-context-to-the-editor"></a>提供所有的使用者內容編輯器  
  如果您要建立語言服務，並使用[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]核心編輯器中，則您可以實作<xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageContextProvider>介面，以針對您的語言服務提供的內容。  
   
- 實作的`IVsLanguageContextProvider`，內容封包 （集合） 會附加至編輯器中，也就是負責更新的內容封包。 當**動態說明**視窗呼叫<xref:Microsoft.VisualStudio.Shell.Interop.IVsUserContext.Update%2A>介面上的閒置時間，內容包在此內容包查詢更新的編輯器。 編輯器會在它應該更新編輯器，並將指標傳遞至內容包，然後通知語言服務。 這是藉由呼叫<xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageContextProvider.UpdateLanguageContext%2A>編輯器語言服務的方法。 使用的內容封包的指標，語言服務現在新增和移除屬性和關鍵字。 如需詳細資訊，請參閱<xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageContextProvider>。  
+ 實作的`IVsLanguageContextProvider`，內容封包 （集合） 會附加至編輯器中，也就是負責更新的內容封包。 當**動態說明**視窗呼叫<xref:Microsoft.VisualStudio.Shell.Interop.IVsUserContext.Update%2A>介面上的閒置時間，內容包在此內容包查詢更新的編輯器。 編輯器會在它應該更新編輯器，並將指標傳遞至內容包，然後通知語言服務。 這是藉由呼叫<xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageContextProvider.UpdateLanguageContext%2A>編輯器語言服務的方法。 使用的內容封包的指標，語言服務現在新增和移除屬性和關鍵字。 如需詳細資訊，請參閱 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageContextProvider>。  
   
  有兩種不同的方式來實作`IVsLanguageContextProvider`:  
   

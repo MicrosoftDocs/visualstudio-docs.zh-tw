@@ -1,5 +1,5 @@
 ---
-title: HOW TO：ClickOnce 應用程式設定的安全性區域 |Microsoft Docs
+title: 作法：ClickOnce 應用程式設定的安全性區域 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-deployment
@@ -18,22 +18,22 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 9af4507d7ccd604f82aae675bf87d36c0b039b26
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60110462"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68171426"
 ---
-# <a name="how-to-set-a-security-zone-for-a-clickonce-application"></a>HOW TO：設定 ClickOnce 應用程式的安全性區域
+# <a name="how-to-set-a-security-zone-for-a-clickonce-application"></a>作法：設定 ClickOnce 應用程式的安全性區域
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-設定 ClickOnce 應用程式的程式碼存取安全性權限時，必須從 [專案設計工具]  之 [安全性] 頁面上的一組基底權限開始。  
+設定 ClickOnce 應用程式的程式碼存取安全性權限時，必須從 [專案設計工具]  之 [安全性]  頁面上的一組基底權限開始。  
   
  在大多數情況下，您也可以選擇 [網際網路]  區域 (包含一組有限的權限) 或 [近端內部網路]  區域 (包含一組更高的權限)。 如果應用程式需要自訂權限，您可以選擇 [自訂]  安全性區域來完成。 如需有關設定自訂權限的詳細資訊，請參閱[How to:設定 ClickOnce 應用程式的自訂權限](../deployment/how-to-set-custom-permissions-for-a-clickonce-application.md)。  
   
 ### <a name="to-set-a-security-zone"></a>設定安全性區域  
   
-1. 選取方案總管 中的專案，然後按一下 [專案]  功能表中的 [屬性] 。  
+1. 選取方案總管  中的專案，然後按一下 [專案]  功能表中的 [屬性]  。  
   
 2. 按一下 [ **安全性** ] 索引標籤。  
   

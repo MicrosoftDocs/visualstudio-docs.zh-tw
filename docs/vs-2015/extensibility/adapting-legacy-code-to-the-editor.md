@@ -11,13 +11,13 @@ caps.latest.revision: 26
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 0bb90723a72c10dbf6cfda5edd4aa68f71f1c6b9
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60098126"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68184911"
 ---
-# <a name="adapting-legacy-code-to-the-editor"></a>調整至編輯器的舊版程式碼
+# <a name="adapting-legacy-code-to-the-editor"></a>使舊版程式碼配合編輯器
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Visual Studio 編輯器中有許多功能，您可以從現有的程式碼元件存取。 下列指示說明如何調整非 MEF 元件，例如，VSPackage，使用編輯器功能。 指示也會說明如何使用配接器在 managed 和 unmanaged 程式碼中取得編輯器的服務。  

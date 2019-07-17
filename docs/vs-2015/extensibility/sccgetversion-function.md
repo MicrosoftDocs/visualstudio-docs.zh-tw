@@ -13,11 +13,11 @@ caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: a4e548f1f2b82a97206cdf41174a8c1c7d61e885
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58940043"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68200055"
 ---
 # <a name="sccgetversion-function"></a>SccGetVersion 函式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,7 +36,7 @@ LONG SccGetVersion(void);
 ## <a name="return-value"></a>傳回值  
  A`LONG`資料類型，包含支援的原始檔控制外掛程式 API 的版本號碼：  
   
-|WORD|描述|  
+|WORD|說明|  
 |----------|-----------------|  
 |HIWORD|主要版本|  
 |取代 LOWORD|次要版本|  

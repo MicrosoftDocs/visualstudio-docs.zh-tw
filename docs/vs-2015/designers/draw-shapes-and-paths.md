@@ -10,11 +10,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: c30b0a190d2a2abfed56004e167f6ee5ef5ecf97
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60046069"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68195410"
 ---
 # <a name="draw-shapes-and-paths"></a>繪製圖案與路徑
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -99,7 +99,7 @@ ms.locfileid: "60046069"
 ## <a name="Convert"></a> 將圖形轉換成路徑  
  若要以修改路徑的相同方式來修改圖形，請將圖形轉換為路徑。  
   
- **觀看短片：**![設定已安裝的功能](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [使用路徑：將圖形轉換成路徑](https://www.youtube.com/watch?v=Io5bC0-nH6Q#t=147)。  
+ **觀看短片：** ![設定已安裝的功能](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [使用路徑：將圖形轉換成路徑](https://www.youtube.com/watch?v=Io5bC0-nH6Q#t=147)。  
   
 ## <a name="Combine"></a> 合併路徑  
  您可以將路徑與圖形合併為單一路徑。  
@@ -108,11 +108,11 @@ ms.locfileid: "60046069"
   
 |||||  
 |-|-|-|-|  
-|![](../designers/media/b1-1.png "B1_1")|合併前的兩個圖形|![](../designers/media/b1-4.png "B1_4")|交集|  
+|![](../designers/media/b1-1.png "B1_1")|合併前的兩個圖形|![](../designers/media/b1-4.png "B1_4")|Intersect|  
 |![](../designers/media/b1-2.png "B1_2")|聯集|![](../designers/media/b1-5.png "B1_5")|排除重疊|  
 |![](../designers/media/b1-3.png "B1_3")|分割|![](../designers/media/b1-6.png "B1_6")|差集|  
   
- **觀看短片：**![設定已安裝的功能](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [使用路徑：合併路徑](https://www.youtube.com/watch?v=Io5bC0-nH6Q#t=195)。  
+ **觀看短片：** ![設定已安裝的功能](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [使用路徑：合併路徑](https://www.youtube.com/watch?v=Io5bC0-nH6Q#t=195)。  
   
 ## <a name="Compound"></a> 建立複合路徑  
  當您建立複合路徑時，這些路徑的任何交集部分都會從結果中減去，而所產生的路徑會採用最底層路徑的視覺屬性。  
@@ -121,14 +121,14 @@ ms.locfileid: "60046069"
   
  ![](../designers/media/2157a8aa-d9a7-4de4-8de5-b10d28f08a84.png "2157a8aa-d9a7-4de4-8de5-b10d28f08a84")  
   
- **觀看短片：**![設定已安裝的功能](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [使用路徑：建立複合路徑](https://www.youtube.com/watch?v=Io5bC0-nH6Q)。  
+ **觀看短片：** ![設定已安裝的功能](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [使用路徑：建立複合路徑](https://www.youtube.com/watch?v=Io5bC0-nH6Q)。  
   
 ## <a name="Clipping"></a> 建立裁剪路徑  
  裁剪路徑是套用至其他物件的路徑或圖形，隱藏了所遮蔽物件落於裁剪路徑外面的部分。  
   
  ![](../designers/media/22471e98-a841-4f39-a3ef-36090cf5a625.png "22471e98-a841-4f39-a3ef-36090cf5a625")  
   
- **觀看短片：**![設定已安裝的功能](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [使用路徑：建立裁剪路徑](https://www.youtube.com/watch?v=Io5bC0-nH6Q#t=232)。  
+ **觀看短片：** ![設定已安裝的功能](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [使用路徑：建立裁剪路徑](https://www.youtube.com/watch?v=Io5bC0-nH6Q#t=232)。  
   
 ## <a name="see-also"></a>另請參閱  
  [使用 Blend for Visual Studio 建立 UI](../designers/creating-a-ui-by-using-blend-for-visual-studio.md)

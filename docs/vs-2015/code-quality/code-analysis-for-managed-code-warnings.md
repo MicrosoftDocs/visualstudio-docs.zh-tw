@@ -17,11 +17,11 @@ author: gewarren
 ms.author: gewarren
 manager: wpickett
 ms.openlocfilehash: 237091c4304b6d6fef90197d503f84fe86c12b9e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58942276"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68142334"
 ---
 # <a name="code-analysis-for-managed-code-warnings"></a>Managed 程式碼的程式碼分析警告
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ Managed 程式碼分析工具會提供警告，指出 Managed 程式碼程式庫
   
  下表顯示針對每個警告所提供的資訊類型。  
   
-|項目|描述|  
+|項目|說明|  
 |----------|-----------------|  
 |類型|規則的 TypeName。|  
 |CheckId|規則的唯一識別碼。 Checkid 與 Category 是用於原始程式檔內的警告隱藏。|  

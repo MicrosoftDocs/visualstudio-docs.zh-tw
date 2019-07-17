@@ -22,11 +22,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 4f2f963ad2fbdad9453f6c6b853bc720034f613c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60056900"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68197069"
 ---
 # <a name="error-debugging-isn39t-possible-because-a-kernel-debugger-is-enabled-on-the-system"></a>錯誤：偵錯不&#39;t，可能因為在系統上啟用核心偵錯
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,21 +49,21 @@ Debugging isn't possible because a kernel debugger is enabled on the system
   
 - 將您的應用程式升級為使用 CLR 4.0 或 4.5 版  
   
-     -或-  
+     – 或 –  
   
 - 停用核心偵錯而以 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 進行偵錯。  
   
-     -或-  
+     – 或 –  
   
 - 使用核心偵錯工具進行偵錯，不要使用 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]。  
   
-     -或-  
+     – 或 –  
   
 - 在核心偵錯工具中，停用使用者模式例外狀況。  
   
 #### <a name="to-disable-kernel-debugging-in-the-current-session"></a>若要在目前工作階段中停用核心偵錯  
   
-- 在命令提示中，輸入：  
+- 在命令提示字元中，輸入：  
   
     ```  
     Kdbgctrl.exe -d  
@@ -71,7 +71,7 @@ Debugging isn't possible because a kernel debugger is enabled on the system
   
 #### <a name="to-disable-kernel-debugging-for-all-sessions-windows-vista-and-windows-7"></a>若要停用所有工作階段的核心偵錯 (Windows Vista 和 Windows 7)  
   
-1. 在命令提示中，輸入：  
+1. 在命令提示字元中，輸入：  
   
     ```  
     bcdedit /debug off   

@@ -14,11 +14,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: f19a910af45ed70ae74c72441890ecae6c81d2a4
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58930316"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68198624"
 ---
 # <a name="idiadatasourceloadandvalidatedatafrompdb"></a>IDiaDataSource::loadAndValidateDataFromPdb
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -52,7 +52,7 @@ HRESULT loadAndValidateDataFromPdb ( 
 ## <a name="return-value"></a>傳回值  
  如果成功，則傳回`S_OK`; 否則傳回錯誤碼。 下表顯示可能的傳回值，這個方法。  
   
-|值|描述|  
+|值|說明|  
 |-----------|-----------------|  
 |E_PDB_NOT_FOUND|無法開啟檔案，或檔案格式無效。|  
 |E_PDB_FORMAT|嘗試存取已過時的格式的檔案。|  

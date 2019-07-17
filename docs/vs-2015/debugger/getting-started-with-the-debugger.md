@@ -15,11 +15,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: e093abd5e836bcb7ee236979c00d574a07ecfd3d
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60109515"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68202330"
 ---
 # <a name="getting-started-with-the-debugger"></a>開始使用偵錯工具
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -66,7 +66,7 @@ static void Main(string[] args)
   
  如需有關這些視窗的詳細資訊，請參閱[自動變數 和 [區域變數] 視窗](../debugger/autos-and-locals-windows.md)。  
   
- 讓我們看看變數值如何隨著我們逐步執行程式而變更。 上設定中斷點`testInt += 1;`行，然後重新啟動偵錯。 您應該會看到**testInt**中**區域變數**並 **[自動變數]** windows 是**0**，並**我**是**1**。 當您繼續偵錯 (**偵錯] / [繼續**，或**繼續**的工具列上，或**F5**)，您可以看到的值**testInt**若要變更**1**，然後**2**，依此類推。 當您不想查看這些變更，以移除中斷點 (**偵錯] / [切換中斷點**，或按一下上面的邊界)，並繼續偵錯。 如果您想要移除所有中斷點，請按一下**偵錯] / [刪除所有中斷點**，或**CTRL + SHIFT + F9**，然後按一下**是**上的對話方塊中，會要求**嗎想要移除所有中斷點嗎？**.  
+ 讓我們看看變數值如何隨著我們逐步執行程式而變更。 上設定中斷點`testInt += 1;`行，然後重新啟動偵錯。 您應該會看到**testInt**中**區域變數**並 **[自動變數]** windows 是**0**，並**我**是**1**。 當您繼續偵錯 (**偵錯] / [繼續**，或**繼續**的工具列上，或**F5**)，您可以看到的值**testInt**若要變更**1**，然後**2**，依此類推。 當您不想查看這些變更，以移除中斷點 (**偵錯] / [切換中斷點**，或按一下上面的邊界)，並繼續偵錯。 如果您想要移除所有中斷點，請按一下**偵錯] / [刪除所有中斷點**，或**CTRL + SHIFT + F9**，然後按一下**是**上的對話方塊中，會要求**嗎想要移除所有中斷點嗎？** .  
   
 ## <a name="stepping-into-and-over-function-calls"></a>逐步執行函式呼叫及不進入函式呼叫  
  您可以在偵錯工具陳述式所-陳述式來執行程式碼 (**逐步**) 或偵錯工具會略過的函式時，您可以執行程式碼 (**不進入函式**) 若要快速取得您正在比較有興趣 （程式碼函式程式碼仍會執行）。 您可以在相同的偵錯工作階段中的這兩種方法之間進行切換。  

@@ -13,11 +13,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 08e74dbb5fefcdaa0959690c7eb1633bca2a8bc6
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58941197"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68164570"
 ---
 # <a name="debugging-a-t4-text-template"></a>偵錯 T4 文字範本
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -53,7 +53,7 @@ ms.locfileid: "58941197"
 ## <a name="warning-descriptions-and-fixes"></a>警告的說明和修正程式  
  如果有的話下, 表將列出最常見的警告，以及修正。  
   
-|警告訊息|描述|方案|  
+|警告訊息|說明|方案|  
 |---------------------|-----------------|--------------|  
 |載入 include 檔 '{0}' 傳回 null 或空字串。|如果包含的文字範本檔案是空白，就會發生。 此訊息會提供包含檔案的檔案名稱。|移除 include 指示詞，或確定檔案有一些內容。|  
 |正在編譯轉換：|前面加上此字串，以所有的錯誤或編譯的轉換時，來自編譯器的警告。 這個字串表示，編譯器會擲回錯誤或警告。|如果您有問題，找出 DLL 時，您可能需要提供的完整路徑或完整的強式名稱，如果 DLL 是在 GAC 中。|  

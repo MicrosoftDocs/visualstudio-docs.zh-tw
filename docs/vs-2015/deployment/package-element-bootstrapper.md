@@ -17,11 +17,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 62c19953d1c4d82c0040e728fc2c2645c68589c9
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58942816"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68157690"
 ---
 # <a name="ltpackagegt-element-bootstrapper"></a>&lt;封裝&gt;項目 （啟動載入器）
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -146,7 +146,7 @@ ms.locfileid: "58942816"
 ## <a name="elements-and-attributes"></a>項目和屬性  
  `Package`是必要元素。 它具有下列屬性。  
   
-|屬性|描述|  
+|屬性|說明|  
 |---------------|-----------------|  
 |`Culture`|必要項。 定義此套件，用來決定要使用之語言的文化特性。 這個屬性是索引鍵到`Strings`項目，它會列出在安裝期間的產品名稱和錯誤訊息的特定文化特性的字串。|  
 |`Name`|必要項。 這類顯示開發人員工具內的套件名稱[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]。 這個屬性是索引鍵中的`Strings`項目，其中應包含`String`具有項目`Name`並`Culture`屬性設定為符合`Name`並`Culture`屬性`Package`。|  

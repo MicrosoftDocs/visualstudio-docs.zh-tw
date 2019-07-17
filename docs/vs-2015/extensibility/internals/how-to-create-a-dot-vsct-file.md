@@ -1,5 +1,5 @@
 ---
-title: HOW TO：建立。Vsct 檔案 |Microsoft Docs
+title: 作法：建立。Vsct 檔案 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -11,13 +11,13 @@ caps.latest.revision: 20
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: a2483c000bb7c9446ac51bb94ef4006a7b2ac89f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: HT
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60056935"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68158348"
 ---
-# <a name="how-to-create-a-vsct-file"></a>HOW TO：建立 .Vsct 檔案
+# <a name="how-to-create-a-vsct-file"></a>作法：建立 .Vsct 檔案
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 有數種方式可建立 XML 型 Visual Studio Command Table (.vsct) 組態檔。  

@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: b527f959f093f155d74e2a85a1812d7ccb58d1e7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 4e99e0d3e8f212b2fdab52188b8c765610d9ac2f
+ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62901205"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67890929"
 ---
 # <a name="walkthrough-writing-a-visualizer-in-c"></a>逐步解說：在 C 中撰寫視覺化檢視\#
 本逐步解說顯示如何使用 C# 撰寫簡易的視覺化檢視。 您在本逐步解說中建立的視覺化檢視會使用 Windows 表單訊息方塊來顯示字串內容。 這個簡易字串視覺化檢視不是特別適用於本身，但它會顯示建立更有用的視覺化檢視，其他資料類型時，所必須遵循的基本步驟。
@@ -38,10 +38,10 @@ ms.locfileid: "62901205"
 1. 建立新的類別庫專案。
 
     ::: moniker range=">=vs-2019"
-    按 **Esc** 關閉開始視窗。 型別**Ctrl + Q**來開啟 搜尋 方塊中，輸入**類別庫**，選擇 **範本**，然後選擇 **建立新的類別庫 (.NET Standard)**. 在出現的對話方塊中選擇 [建立]。
+    按 **Esc** 關閉開始視窗。 型別**Ctrl + Q**來開啟 搜尋 方塊中，輸入**類別庫**，選擇 **範本**，然後選擇 **建立新的類別庫 (.NET Standard)** . 在出現的對話方塊中選擇 [建立]  。
     ::: moniker-end
     ::: moniker range="vs-2017"
-    從頂端功能表列中，選擇 [檔案] > [新增] > [專案]。 在左窗格中**新的專案**對話方塊的 **視覺化C#** ，選擇 **.NET Standard**，然後在中間窗格選擇**類別庫 (。NET Standard)**。
+    從頂端功能表列中，選擇 [檔案]   > [新增]   > [專案]  。 在左窗格中**新的專案**對話方塊的 **視覺化C#** ，選擇 **.NET Standard**，然後在中間窗格選擇**類別庫 (。NET Standard)** 。
     ::: moniker-end
 
 2. 輸入適當的名稱，為類別庫，例如`MyFirstVisualizer`，然後按一下**建立**或是**確定**。
@@ -63,7 +63,7 @@ ms.locfileid: "62901205"
 
     您可以找到在 DLL  *\<Visual Studio 安裝目錄 > \Common7\IDE\PublicAssemblies* Visual Studio 的安裝目錄的子目錄。
 
-5. 按一下 [確定] 。
+5. 按一下 [確定]  。
 
 6. 在 DebuggerSide.cs 中，將下列陳述式加入至 `using` 陳述式：
 
@@ -109,7 +109,7 @@ ms.locfileid: "62901205"
 
     您可以找到在 DLL *C:\Windows\Microsoft.NET\Framework\v4.0.30319*。
 
-3. 按一下 [確定] 。
+3. 按一下 [確定 **Deploying Office Solutions**]。
 
 4. 在 DebuggerSide.cs 中，將下列陳述式加入至 `using` 陳述式：
 
@@ -170,10 +170,10 @@ ms.locfileid: "62901205"
 1. 在 [方案總管] 中，以滑鼠右鍵按一下方案，選擇**新增**，然後按一下**新的專案**。
 
     ::: moniker range=">=vs-2019"
-    在 [搜尋] 方塊中，輸入**主控台應用程式**，選擇**範本**，然後選擇**建立新的主控台應用程式 (.NET Framework)**。 在出現的對話方塊中選擇 [建立]。
+    在 [搜尋] 方塊中，輸入**主控台應用程式**，選擇**範本**，然後選擇**建立新的主控台應用程式 (.NET Framework)** 。 在出現的對話方塊中選擇 [建立]  。
     ::: moniker-end
     ::: moniker range="vs-2017"
-    從頂端功能表列中，選擇 [檔案] > [新增] > [專案]。 在 [新增專案] 對話方塊左窗格的 [Visual C#] 下，選擇 [Windows Desktop]，然後在中間窗格中選擇 [主控台應用程式 (.NET Framework)]。
+    從頂端功能表列中，選擇 [檔案]   > [新增]   > [專案]  。 在 [新增專案]  對話方塊左窗格的 [Visual C#]  下，選擇 [Windows Desktop]  ，然後在中間窗格中選擇 [主控台應用程式 (.NET Framework)]  。
     ::: moniker-end
 
 2. 輸入適當的名稱，為類別庫，例如`MyTestConsole`，然後按一下**建立**或是**確定**。
@@ -186,13 +186,13 @@ ms.locfileid: "62901205"
 
 2. 在 **加入參考** 對話方塊中，**瀏覽**索引標籤上，選擇 Microsoft.VisualStudio.DebuggerVisualizers.DLL。
 
-3. 按一下 [確定] 。
+3. 按一下 [確定 **Deploying Office Solutions**]。
 
 4. 以滑鼠右鍵按一下**MyTestConsole** ，然後選擇**加入參考**一次。
 
 5. 在 **加入參考** 對話方塊中，按一下**專案**索引標籤，然後按一下 MyFirstVisualizer。
 
-6. 按一下 [確定] 。
+6. 按一下 [確定 **Deploying Office Solutions**]。
 
    現在，您就可以加入程式碼來完成測試載入器。
 
@@ -202,7 +202,8 @@ ms.locfileid: "62901205"
 
 2. 編輯 Program.cs 中的名稱，以更有意義的名稱，例如 TestConsole.cs。
 
-    **附註**[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]會自動變更 TestConsole.cs 以符合新的檔案名稱中的類別宣告。
+    > [!NOTE]
+    > [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 會自動變更 TestConsole.cs 以符合新的檔案名稱中的類別宣告。
 
 3. 在 TestConsole.cs，加入下列程式碼`using`陳述式：
 
@@ -223,7 +224,7 @@ ms.locfileid: "62901205"
 
 1. 在 **方案總管 中**，以滑鼠右鍵按一下**MyTestConsole** ，然後選擇 **設定為啟始專案**快顯功能表上。
 
-2. 在 [偵錯] 功能表上選擇 [啟動]。
+2. 在 [偵錯]  功能表上選擇 [啟動]  。
 
     在主控台應用程式啟動和視覺化檢視會出現並顯示的字串"Hello，World"。
 
@@ -239,15 +240,15 @@ ms.locfileid: "62901205"
 
 ### <a name="to-create-a-new-class-library"></a>若要建立新的類別庫
 
-1. 在 [檔案] 功能表上，選擇 [新增] > [專案]。
+1. 在 [檔案]  功能表上，選擇 [新增] > [專案]  。
 
-2. 在 **新的專案**對話方塊的  **Visual C#**，選取 **.NET Standard**。
+2. 在 **新的專案**對話方塊的  **Visual C#** ，選取 **.NET Standard**。
 
 3. 在中間窗格中，選擇**類別庫**。
 
 4. 在 **名稱**方塊中，輸入適當的類別程式庫，例如 MySecondVisualizer 名稱。
 
-5. 按一下 [確定] 。
+5. 按一下 [確定]  。
 
    現在，您可以將視覺化檢視項目加入它：
 
@@ -261,7 +262,7 @@ ms.locfileid: "62901205"
 
 4. 在 **名稱**方塊中，輸入適當的名稱，例如 SecondVisualizer.cs。
 
-5. 按一下 [加入] 。
+5. 按一下 [加入]  。
 
    這就是這麼簡單。 SecondVisualizer.cs 的檔案，並檢視範本新增為您的程式碼。 請繼續並實驗程式碼。 既然您已經知道的基本概念，就可以建立您自己的更複雜且實用的視覺化檢視。
 

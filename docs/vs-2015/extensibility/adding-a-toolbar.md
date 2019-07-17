@@ -12,11 +12,11 @@ caps.latest.revision: 39
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: de74961715a82dde4e184509094d05145ad0f79c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60077715"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68184861"
 ---
 # <a name="adding-a-toolbar"></a>新增工具列
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -89,7 +89,7 @@ ms.locfileid: "60077715"
   
 6. 以滑鼠右鍵按一下 Visual Studio 功能表列，以取得工具列的清單。 選取 **測試工具列**。  
   
-7. 您現在應該看到圖示右邊的 [檔案] 圖示中尋找您的工具列。 當您按一下圖示時，您應該會看到出現訊息方塊，指出**ToolbarTestCommandPackage。Inside IDEToolbar.ToolbarTestCommand.MenuItemCallback()**.  
+7. 您現在應該看到圖示右邊的 [檔案] 圖示中尋找您的工具列。 當您按一下圖示時，您應該會看到出現訊息方塊，指出**ToolbarTestCommandPackage。內 IDEToolbar.ToolbarTestCommand.MenuItemCallback()** 。  
   
 ## <a name="see-also"></a>另請參閱  
  [命令、功能表及工具列](../extensibility/internals/commands-menus-and-toolbars.md)

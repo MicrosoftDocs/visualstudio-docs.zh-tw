@@ -17,11 +17,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: a3c24d8aa984ddc947d3c532020974a196192940
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60082382"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68179070"
 ---
 # <a name="net-memory-allocations-view"></a>.NET 記憶體配置檢視
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,9 +39,9 @@ ms.locfileid: "60082382"
 ## <a name="highlighting-the-execution-hot-path"></a>反白顯示執行最忙碌路徑  
  您可以找到建立父類型大部分物件之呼叫樹狀圖的執行路徑。  
   
-- 若要顯示最常使用的路徑，請以滑鼠右鍵按一下類型或函式，然後按一下 [展開最忙碌路徑]。  
+- 若要顯示最常使用的路徑，請以滑鼠右鍵按一下類型或函式，然後按一下 [展開最忙碌路徑]  。  
   
-|資料行|描述|  
+|「資料行」|描述|  
 |------------|-----------------|  
 |**名稱**|已配置類型或函式的名稱。|  
 |**處理序 ID**|分析執行的處理序 ID (PID)。|  

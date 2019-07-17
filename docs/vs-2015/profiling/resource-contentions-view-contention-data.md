@@ -14,11 +14,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: c6a7d4d1e80323b4d260ac558661c222f72ec3c1
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60108689"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68149272"
 ---
 # <a name="resource-contentions-view---contention-data"></a>資源爭用檢視 - 爭用資料
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,7 +42,7 @@ ms.locfileid: "60108689"
   
 ## <a name="navigating-the-resource-allocation-view"></a>巡覽資源分派檢視  
   
-|資料行|描述|  
+|「資料行」|說明|  
 |------------|-----------------|  
 |**名稱**|資源或函式的名稱。|  
 |**專有封鎖時間**|-   對於資源，是指遭到封鎖而無法存取資源並導致執行緒等候的總時間。<br />-   對於函式，是指當函式在執行函式主體中的程式碼時，這些函式執行個體遭到封鎖而無法存取父資源的時間。 不包括由該函式所呼叫函式的封鎖時間。|  

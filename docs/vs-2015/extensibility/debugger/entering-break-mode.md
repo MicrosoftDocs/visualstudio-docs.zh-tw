@@ -12,11 +12,11 @@ caps.latest.revision: 8
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: c4251779593e237713258fd54c80dcb311ce4b80
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60112243"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68182257"
 ---
 # <a name="entering-break-mode"></a>進入中斷模式
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

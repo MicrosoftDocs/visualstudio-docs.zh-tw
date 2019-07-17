@@ -17,11 +17,11 @@ caps.latest.revision: 24
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 18256996d829d34117caa11f4e581d8e54d738b1
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58944132"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68204046"
 ---
 # <a name="ide-constants"></a>IDE 常數
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,7 +41,7 @@ ms.locfileid: "58944132"
   
 ## <a name="editor-factory-flags"></a>編輯器 Factory 旗標  
   
-|值|描述|  
+|值|說明|  
 |-----------|-----------------|  
 |[CEF.CloneFile](/dotnet/api/microsoft.visualstudio.vsconstants.cef?view=visualstudiosdk-2015)|過時的旗標位元的第一個參數為結合<xref:Microsoft.VisualStudio.Package.EditorFactory.CreateEditorInstance%2A>方法。|  
 |[CEF.CloneFile](/dotnet/api/microsoft.visualstudio.vsconstants.cef?view=visualstudiosdk-2015)|合併的第一個參數的位元<xref:Microsoft.VisualStudio.Package.EditorFactory.CreateEditorInstance%2A>，這方法，表示編輯器 factory 應該執行必要的修正程式。|  

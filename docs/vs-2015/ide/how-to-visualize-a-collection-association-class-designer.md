@@ -1,5 +1,5 @@
 ---
-title: HOW TO：視覺化集合關聯 （類別設計工具） |Microsoft Docs
+title: 作法：視覺化集合關聯 （類別設計工具） |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -17,13 +17,13 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 490ee064903a0e2d119da891681da719e237acec
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60049398"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68178779"
 ---
-# <a name="how-to-visualize-a-collection-association-class-designer"></a>HOW TO：視覺化集合關聯 (類別設計工具)
+# <a name="how-to-visualize-a-collection-association-class-designer"></a>作法：視覺化集合關聯 (類別設計工具)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 屬性和欄位是可在類別圖表上顯示為集合關聯之其他類型的集合。 不同於會將欄位或屬性顯示為將主控類別連結到欄位類型的一般關聯，集合關聯會顯示為將主控類別連結到收集的類型。  
@@ -34,7 +34,7 @@ ms.locfileid: "60049398"
   
 2. 在類別圖表中，展開類別以便顯示屬性和欄位。  
   
-3. 在類別中，以滑鼠右鍵按一下欄位或屬性上，然後選擇 [顯示為集合關聯]。  
+3. 在類別中，以滑鼠右鍵按一下欄位或屬性上，然後選擇 [顯示為集合關聯]  。  
   
      屬性或欄位會顯示為連結所收集類型的關聯線。  
   

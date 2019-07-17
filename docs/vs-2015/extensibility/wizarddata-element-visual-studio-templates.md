@@ -14,19 +14,19 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: d7cd59266a69140ba2ea5a7fd1d1b0b0c72f14c2
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58944204"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68201936"
 ---
 # <a name="wizarddata-element-visual-studio-templates"></a>WizardData 項目 (Visual Studio 範本)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 指定自訂 XML  
   
- \<VSTemplate>  
- \<WizardData>  
+ \<VSTemplate >  
+ \<WizardData >  
   
 ## <a name="syntax"></a>語法  
   
@@ -48,7 +48,7 @@ ms.locfileid: "58944204"
   
 ### <a name="parent-elements"></a>父項目  
   
-|項目|描述|  
+|項目|說明|  
 |-------------|-----------------|  
 |[VSTemplate](../extensibility/vstemplate-element-visual-studio-templates.md)|必要項目。<br /><br /> 包含專案範本、 項目範本，或入門套件的所有中繼資料。|  
   
@@ -100,4 +100,4 @@ ms.locfileid: "58944204"
  [Visual Studio 範本結構描述參考](../extensibility/visual-studio-template-schema-reference.md)   
  [建立專案和項目範本](../ide/creating-project-and-item-templates.md)   
  [WizardExtension 項目 （Visual Studio 範本）](../extensibility/wizardextension-element-visual-studio-templates.md)   
- [如何：使用精靈與專案範本](../extensibility/how-to-use-wizards-with-project-templates.md)
+ [如何：搭配專案範本使用精靈](../extensibility/how-to-use-wizards-with-project-templates.md)

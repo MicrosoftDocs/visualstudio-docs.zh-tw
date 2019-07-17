@@ -11,11 +11,11 @@ caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: fc7f68093432c96d496921ea593b6e936bad8302
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60039698"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68147963"
 ---
 # <a name="binding-breakpoints"></a>繫結中斷點
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

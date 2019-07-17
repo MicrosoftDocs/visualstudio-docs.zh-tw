@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 120696fe335245775c6ea7188efc059ae9e71342
-ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.openlocfilehash: 466df3030793603319cf73085910a164fd222e29
+ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66263692"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67890601"
 ---
 # <a name="how-to-modify-a-standard-menu-command-in-a-domain-specific-language"></a>作法：使用特定領域語言修改標準功能表命令
 
@@ -55,7 +55,7 @@ ms.locfileid: "66263692"
 
 2. 在  **DslPackage**，建立名為的資料夾**自訂程式碼**。 在此資料夾中，建立新的類別檔案，名為`CommandSet.cs`。
 
-3. 在新檔案中，撰寫具有與產生部分類別相同之命名空間和名稱的部分宣告。 例如: 
+3. 在新檔案中，撰寫具有與產生部分類別相同之命名空間和名稱的部分宣告。 例如：
 
     ```csharp
     using System;
@@ -65,7 +65,8 @@ ms.locfileid: "66263692"
     { internal partial class Language1CommandSet { ...
     ```
 
-     **請注意**如果您使用類別檔案範本來建立新的檔案時，您必須更正命名空間和類別名稱。
+    > [!NOTE]
+    > 如果您使用類別檔案範本來建立新的檔案時，您必須更正命名空間和類別名稱。
 
 ## <a name="override-the-command-methods"></a>覆寫命令方法
 

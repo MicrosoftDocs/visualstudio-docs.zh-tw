@@ -14,11 +14,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 430c321c14226228b46bfb0e43f372851fb2a232
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60117599"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68161252"
 ---
 # <a name="graphics-log-document"></a>圖形記錄文件
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,23 +32,23 @@ ms.locfileid: "60117599"
 ## <a name="understanding-graphics-log-documents"></a>了解圖形記錄文件  
  使用圖形分析器檢查圖形記錄文件，可以將對擷取期間所發生的轉譯目標造成影響的 Direct3D 事件視覺化。 您可以找出含有非預期輸出之呈現目標的區域。 當您在受影響區域中選取像素時，可以使用圖形診斷檢查像素及其著色器、影響它的 Direct3D 事件、導致那些事件的應用程式呼叫堆疊，以及支援那些事件的 DirectX 物件。 您可以使用此資訊診斷遊戲或應用程式中的呈現問題。  
   
- 視窗 (**Graphics Experiment.vsglog**) 上方顯示所選取畫面目前的轉譯目標輸出，而下方顯示含有所擷取畫面之縮圖影像的 [畫面清單]。  
+ 視窗 (**Graphics Experiment.vsglog**) 上方顯示所選取畫面目前的轉譯目標輸出，而下方顯示含有所擷取畫面之縮圖影像的 [畫面清單]  。  
   
 #### <a name="to-inspect-a-frame"></a>檢查畫面格  
   
-- 在 [畫面清單] 中，選取您要檢查的畫面。 圖形記錄文件上方的呈現目標輸出隨即更新，以顯示選取的畫面格。  
+- 在 [畫面清單]  中，選取您要檢查的畫面。 圖形記錄文件上方的呈現目標輸出隨即更新，以顯示選取的畫面格。  
   
 #### <a name="to-inspect-a-pixel"></a>檢查像素  
   
-- 在圖形記錄文件上方，從呈現目標輸出中選取您要的像素。 選取像素後，您可以使用 [圖形像素記錄] 視窗，檢視所選取像素的詳細資訊。 如需詳細資訊，請參閱 <<c0> [ 像素歷史記錄](../debugger/graphics-pixel-history.md)。  
+- 在圖形記錄文件上方，從呈現目標輸出中選取您要的像素。 選取像素後，您可以使用 [圖形像素記錄]  視窗，檢視所選取像素的詳細資訊。 如需詳細資訊，請參閱 <<c0> [ 像素歷史記錄](../debugger/graphics-pixel-history.md)。  
   
 ## <a name="playback-machine"></a>播放電腦  
- [播放電腦] 也會顯示在 [畫面清單] 右上角。 播放電腦是一部電腦或一個裝置，用來在稍後的圖形診斷工作階段期間，從圖形記錄檔播放圖形事件。 透過使用不同的裝置 (非開發電腦) 播放所擷取的事件，您可以更精確地重現發生問題的執行環境；例如，您可以使用具有與開發電腦所使用之圖形硬體或驅動程式不同的電腦，或其他類型的裝置 (例如 ARM Windows RT 平板電腦或 Windows Phone 裝置)。  
+ [播放電腦]  也會顯示在 [畫面清單]  右上角。 播放電腦是一部電腦或一個裝置，用來在稍後的圖形診斷工作階段期間，從圖形記錄檔播放圖形事件。 透過使用不同的裝置 (非開發電腦) 播放所擷取的事件，您可以更精確地重現發生問題的執行環境；例如，您可以使用具有與開發電腦所使用之圖形硬體或驅動程式不同的電腦，或其他類型的裝置 (例如 ARM Windows RT 平板電腦或 Windows Phone 裝置)。  
   
  如需有關如何指定播放電腦的資訊，請參閱[How to:變更圖形診斷播放電腦](../debugger/how-to-change-the-graphics-diagnostics-playback-machine.md)。  
   
 ## <a name="graphics-log-summary-information"></a>圖形記錄摘要資訊  
- 當圖形記錄檔是使用中文件時，[屬性] 視窗會顯示裝載圖形診斷擷取工作階段之環境的相關資訊。 隨即顯示數個分類的資訊。  
+ 當圖形記錄檔是使用中文件時，[屬性]  視窗會顯示裝載圖形診斷擷取工作階段之環境的相關資訊。 隨即顯示數個分類的資訊。  
   
  **Direct3D 資訊**  
  列出有關擷取工作階段期間，所使用之顯示卡的硬體和驅動程式功能資訊。  
@@ -98,7 +98,7 @@ ms.locfileid: "60117599"
  **目標應用程式**  
  列出做為擷取工作階段之原因的應用程式相關資訊。  
   
-|屬性|描述|  
+|屬性|說明|  
 |--------------|-----------------|  
 |**上次修改日期/時間**|建置應用程式的日期和時間。|  
 |**路徑**|應用程式的路徑。|  

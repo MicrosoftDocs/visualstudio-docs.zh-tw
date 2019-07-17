@@ -260,11 +260,11 @@ author: gewarren
 ms.author: gewarren
 manager: wpickett
 ms.openlocfilehash: 91dcea4d9d16a6e846a66e4a5590dedfdc62b90f
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58942399"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68201473"
 ---
 # <a name="code-analysis-warnings-for-managed-code-by-checkid"></a>依據 CheckId 列出 Managed 程式碼的程式碼分析警告
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -430,7 +430,7 @@ ms.locfileid: "58942399"
 |CA2106|[CA2106： 必須必須保護判斷提示](../code-quality/ca2106-secure-asserts.md)|方法會判斷提示使用權限，而且不會在呼叫端上執行安全性檢查。 判斷提示安全性權限但未執行任何安全性檢查，會在您的程式碼中留下可能遭利用的安全性弱點。|  
 |CA2107|[CA2107： 必須檢視 deny 和 permit only 的使用方式](../code-quality/ca2107-review-deny-and-permit-only-usage.md)|只有相當了解 [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] 安全性的人員才能執行 PermitOnly 方法和 CodeAccessPermission.Deny 安全性動作。 而使用這些安全性動作的程式碼應該接受安全性檢閱。|  
 |CA2108|[CA2108:必須檢閱實值型別上的宣告式安全性](../code-quality/ca2108-review-declarative-security-on-value-types.md)|公用或受保護的實值類型受到資料存取或連結要求保護。|  
-|CA2109|[CA2109:檢閱顯示的事件處理常式](../code-quality/ca2109-review-visible-event-handlers.md)|偵測到公用或保護的事件處理方法。 除非有絕對的必要性，否則不應該公開 (Expose) 事件處理方法。|  
+|CA2109|[CA2109： 必須檢閱顯示的事件處理常式](../code-quality/ca2109-review-visible-event-handlers.md)|偵測到公用或保護的事件處理方法。 除非有絕對的必要性，否則不應該公開 (Expose) 事件處理方法。|  
 |CA2111|[CA2111:指標不應該為可見](../code-quality/ca2111-pointers-should-not-be-visible.md)|指標不為私用、內部或唯讀。 惡意的程式碼可變更指標值，進而可能會允許存取記憶體中的任意位置，或是造成應用程式或系統失敗。|  
 |CA2112|[CA2112:受保護的類型不應該公開欄位](../code-quality/ca2112-secured-types-should-not-expose-fields.md)|公用或受保護的類型包含公用欄位，而且受到連結要求保護。 如果程式碼可存取受連結要求保護的類型執行個體，則程式碼不必滿足連結要求即可存取類型的欄位。|  
 |CA2114|[CA2114:方法安全性應該是類型的超集](../code-quality/ca2114-method-security-should-be-a-superset-of-type.md)|方法不應該同時具有相同動作的方法層級和類型層級宣告式安全性。|  
@@ -440,7 +440,7 @@ ms.locfileid: "58942399"
 |CA2118|[CA2118:檢閱 SuppressUnmanagedCodeSecurityAttribute 使用方法](../code-quality/ca2118-review-suppressunmanagedcodesecurityattribute-usage.md)|對於執行使用 COM Interop 或作業系統引動過程之 Unmanaged 程式碼的成員，SuppressUnmanagedCodeSecurityAttribute 會變更安全性系統的預設行為。 這個屬性主要是用於增加效能，不過，效能提升會伴隨顯著的安全性風險。|  
 |CA2119|[CA2119:密封方法以滿足私用介面](../code-quality/ca2119-seal-methods-that-satisfy-private-interfaces.md)|可繼承的公用類型會提供內部 (在 [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] 中為 Friend) 介面的可覆寫方法實作。 若要修正此規則的違規情形，請避免在組件外覆寫方法。|  
 |CA2120|[CA2120： 必須保護序列化建構函式](../code-quality/ca2120-secure-serialization-constructors.md)|這個類型有接受 System.Runtime.Serialization.SerializationInfo 物件和 System.Runtime.Serialization.StreamingContext 物件 (序列化建構函式的簽章) 的建構函式。 這個建構函式未受到安全性檢查的保護，但類型中有一個或多個規則建構函式是受到保護的。|  
-|CA2121|[CA2121:靜態建構函式應為私用](../code-quality/ca2121-static-constructors-should-be-private.md)|系統會在建立類型的第一個執行個體或參考任何靜態成員之前呼叫靜態建構函式。 如果靜態建構函式不是私用的，則可由系統以外的程式碼呼叫。 視建構函式中執行的作業而定，這會造成非預期的行為。|  
+|CA2121|[CA2121:靜態建構函式應該為私用的](../code-quality/ca2121-static-constructors-should-be-private.md)|系統會在建立類型的第一個執行個體或參考任何靜態成員之前呼叫靜態建構函式。 如果靜態建構函式不是私用的，則可由系統以外的程式碼呼叫。 視建構函式中執行的作業而定，這會造成非預期的行為。|  
 |CA2122|[CA2122:不要間接公開具有連結要求的方法](../code-quality/ca2122-do-not-indirectly-expose-methods-with-link-demands.md)|公用或受保護的成員具有連結要求，而且是由未執行任何安全性檢查的成員所呼叫。 連結要求只會檢查立即呼叫端的使用權限。|  
 |CA2123|[CA2123:覆寫連結要求應該與基底相同](../code-quality/ca2123-override-link-demands-should-be-identical-to-base.md)|這項規則會使方法符合它的基底方法，即另一個類型中的介面或虛擬方法，然後比較每個方法上的連結要求。 如果違反這項規則，則惡意呼叫端只需呼叫不安全的方法，就可以略過連結要求。|  
 |CA2124|[CA2124： 必須易受攻擊的換行 finally 子句在外層 try 中](../code-quality/ca2124-wrap-vulnerable-finally-clauses-in-outer-try.md)|公用或受保護的方法包含 try/finally 區塊。 finally 區塊似乎會重設安全性狀態，而且不會封入 finally 區塊中。|  

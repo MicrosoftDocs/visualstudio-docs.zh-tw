@@ -13,18 +13,18 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 35448f4324213739cb2dc14a95598ac9a3d4432f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60055609"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68204367"
 ---
 # <a name="folder-element-visual-studio-project-templates"></a>資料夾項目 (Visual Studio 專案範本)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 指定將會加入至專案的資料夾。  
   
- \<VSTemplate>  
+ \<VSTemplate >  
  \<TemplateContent>  
  \<Project>  
  \<資料夾 >  
@@ -43,21 +43,21 @@ ms.locfileid: "60055609"
   
 ### <a name="attributes"></a>屬性  
   
-|屬性|描述|  
+|屬性|說明|  
 |---------------|-----------------|  
 |`Name`|必要屬性。<br /><br /> 專案資料夾的名稱。|  
 |`TargetFolderName`|選擇性屬性。<br /><br /> 指定要從範本建立專案時，提供給資料夾的名稱。 這個屬性可用於使用參數取代建立的資料夾名稱或命名資料夾中的，使用國際字串不能直接在.zip 檔案。|  
   
 ### <a name="child-elements"></a>子元素  
   
-|項目|描述|  
+|項目|說明|  
 |-------------|-----------------|  
 |`Folder`|指定要加入至專案的資料夾。 `Folder` 項目可以包含子`Folder`項目。|  
 |[ProjectItem](../extensibility/projectitem-element-visual-studio-item-templates.md)|指定要加入至專案的檔案。|  
   
 ### <a name="parent-elements"></a>父項目  
   
-|項目|描述|  
+|項目|說明|  
 |-------------|-----------------|  
 |[Project](../extensibility/project-element-visual-studio-templates.md)|選擇性子項目[TemplateContent](../extensibility/templatecontent-element-visual-studio-templates.md)。|  
   
@@ -76,7 +76,7 @@ ms.locfileid: "60055609"
   
      `...`  
   
-- 在範本.zip 檔案中包含的資料夾，並將其加入使用.vstemplate 檔案中的專案`Folder`項目。 例如:   
+- 在範本.zip 檔案中包含的資料夾，並將其加入使用.vstemplate 檔案中的專案`Folder`項目。 例如：  
   
      `...`  
   
@@ -90,7 +90,7 @@ ms.locfileid: "60055609"
   
      `...`  
   
-- 在範本的.zip 檔案中，不包含資料夾，但將使用的資料夾新增`TargetFileName`屬性的`ProjectItem`項目。 例如:   
+- 在範本的.zip 檔案中，不包含資料夾，但將使用的資料夾新增`TargetFileName`屬性的`ProjectItem`項目。 例如：  
   
      `...`  
   

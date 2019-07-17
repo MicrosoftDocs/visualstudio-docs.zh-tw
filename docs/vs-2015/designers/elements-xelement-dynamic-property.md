@@ -14,11 +14,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 158e200a33b4783df9f63f42a1eca7bb8957d449
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54777697"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68145677"
 ---
 # <a name="elements-xelement-dynamic-property"></a>Elements (XElement 動態屬性)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,7 +41,7 @@ elem.Elements[{namespaceName}localName]
   
  這個屬性會使用延後執行。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [XElement 類別動態屬性](../designers/xelement-class-dynamic-properties.md)   
  [項目](../designers/element-xelement-dynamic-property.md)   
  [子系](../designers/descendants-xelement-dynamic-property.md)

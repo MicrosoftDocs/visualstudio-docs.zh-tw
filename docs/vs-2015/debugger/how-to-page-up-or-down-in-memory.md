@@ -24,16 +24,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: cc05772e6376dbe151d5ca71b9ee221e61a7be88
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60109591"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68157849"
 ---
-# <a name="how-to-page-up-or-down-in-memory"></a>HOW TO：在記憶體中向上或向下翻頁
+# <a name="how-to-page-up-or-down-in-memory"></a>作法：在記憶體中向上或向下翻頁
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-當您在 [記憶體] 視窗或 [反組譯碼] 視窗中檢視記憶體內容時，可以使用垂直捲軸在記憶體空間中上下移動。  
+當您在 [記憶體]  視窗或 [反組譯碼]  視窗中檢視記憶體內容時，可以使用垂直捲軸在記憶體空間中上下移動。  
   
 ### <a name="to-page-up-or-down-in-memory"></a>若要在記憶體中向上或向下翻頁  
   

@@ -9,11 +9,11 @@ author: gewarren
 ms.author: gewarren
 manager: wpickett
 ms.openlocfilehash: c573d461b477bbcdc7e988ea66f03d5a7cc0fdb6
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "58946055"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68201439"
 ---
 # <a name="cryptography-warnings"></a>密碼編譯警告
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

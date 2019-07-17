@@ -11,13 +11,13 @@ caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 7db4296a8fa4146a52d167bce3d8b051aa3ca073
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60055973"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68204640"
 ---
-# <a name="drop-down-bar"></a>下拉式清單列
+# <a name="drop-down-bar"></a>下拉式功能表列
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 在下拉式清單列提供程式碼視窗頂端，並包含兩個下拉式清單。  

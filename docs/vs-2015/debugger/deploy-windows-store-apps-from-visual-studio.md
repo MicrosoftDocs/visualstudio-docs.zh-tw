@@ -15,11 +15,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 73b4350a2e7f277a11f4d6650d8089df0f87fe4d
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60116390"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68177443"
 ---
 # <a name="deploy-windows-store-apps-from-visual-studio"></a>從 Visual Studio 部署 Windows 市集應用程式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -110,13 +110,13 @@ ms.locfileid: "60116390"
 
 - 在 [C# 和 VB 偵錯] 屬性頁上，清除 [允許網路回送]  核取方塊。
 
-- 在 [JavaScript 偵錯] 屬性頁上，將 [允許網路回送]  值設定為 [否] 。
+- 在 [JavaScript 偵錯] 屬性頁上，將 [允許網路回送]  值設定為 [否]  。
 
   **不啟動，但啟動時，將我的程式碼進行偵錯 (C#和 VB) / 啟動應用程式 (JavaScript 和C++)** 來設定為自動啟動應用程式啟動時的偵錯工作階段的部署：
 
 - 在 [C# 和 VB 偵錯] 屬性頁上，核取 [不啟動，但在我的程式碼啟動時進行偵錯]  核取方塊。
 
-- 在 [JavaScript 偵錯] 屬性頁上，將 [啟動應用程式]  值設定為 [是] 。
+- 在 [JavaScript 偵錯] 屬性頁上，將 [啟動應用程式]  值設定為 [是]  。
 
 ## <a name="see-also"></a>另請參閱
  [從 Visual Studio 執行應用程式](../debugger/run-store-apps-from-visual-studio.md)

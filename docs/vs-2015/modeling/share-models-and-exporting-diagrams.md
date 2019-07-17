@@ -13,11 +13,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 4d2fd2af8a68ee72ec26b52a4c26a829d94376ef
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58944428"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68199848"
 ---
 # <a name="share-models-and-exporting-diagrams"></a>共用模型及匯出圖表
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -51,7 +51,7 @@ ms.locfileid: "58944428"
   
 ## <a name="related-topics"></a>相關主題  
   
-|標題|描述|  
+|標題|說明|  
 |-----------|-----------------|  
 |[在版本控制下管理模型與圖表](../modeling/manage-models-and-diagrams-under-version-control.md)|Visual Studio 的使用者可以在共用模型上工作。|  
 |[建構模型方案](../modeling/structure-your-modeling-solution.md)|共用大型或中型專案中的模型。|  

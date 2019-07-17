@@ -13,11 +13,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 6567b4ff4ee7c798ac82c5d33ea50ac206fcd692
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60039042"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68146181"
 ---
 # <a name="customizing-project-and-item-templates"></a>自訂專案範本和項目範本
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

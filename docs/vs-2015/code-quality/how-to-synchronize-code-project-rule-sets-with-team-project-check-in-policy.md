@@ -1,5 +1,5 @@
 ---
-title: HOW TO：同步處理程式碼專案規則集，與 Team 專案簽入原則 |Microsoft Docs
+title: 作法：同步處理程式碼專案規則集，與 Team 專案簽入原則 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -12,13 +12,13 @@ author: gewarren
 ms.author: gewarren
 manager: wpickett
 ms.openlocfilehash: 32558f746745fdcb717aa7c218f996924418ae79
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: HT
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60082044"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68201296"
 ---
-# <a name="how-to-synchronize-code-project-rule-sets-with-team-project-check-in-policy"></a>HOW TO：將程式碼專案規則集與 Team 專案簽入原則進行同步處理
+# <a name="how-to-synchronize-code-project-rule-sets-with-team-project-check-in-policy"></a>作法：將程式碼專案規則集與 Team 專案簽入原則進行同步處理
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 您可以同步至 team 專案簽入原則的程式碼專案的程式碼分析設定藉由指定規則集，其中包含最少的規則集簽入原則中指定的規則。 您的名稱和位置的規則集簽入原則，就會通知您的開發人員潛在客戶。 您可以使用下列選項之一，確保專案的程式碼分析會使用一組正確的規則：  
@@ -47,7 +47,7 @@ ms.locfileid: "60082044"
   
 3. 按一下 **程式碼分析**。  
   
-4. 在 [**執行此規則集**清單中，按一下 **\<瀏覽] >** 。  
+4. 在 [**執行此規則集**清單中，按一下 **\<瀏覽]>** 。  
   
 5. 在 **開啟**對話方塊方塊中，指定的簽入原則規則集檔案。  
   
@@ -65,6 +65,6 @@ ms.locfileid: "60082044"
   
 5. 開啟 [屬性] 對話方塊中，程式碼專案，並顯示**程式碼分析**頁面。  
   
-6. 在 [**執行此規則集**清單中，按一下 **\<瀏覽] >** 。  
+6. 在 [**執行此規則集**清單中，按一下 **\<瀏覽]>** 。  
   
 7. 在 **開啟**對話方塊方塊中，指定的規則集檔案。

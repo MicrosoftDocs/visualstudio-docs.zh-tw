@@ -23,11 +23,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: e8a7bd540f5c8a99145b892d080d8cb54e57d968
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60061173"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68152102"
 ---
 # <a name="display-related-data-in-wpf-applications"></a>在 WPF 應用程式中顯示相關資料
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,9 +38,9 @@ ms.locfileid: "60061173"
   
 ## <a name="to-create-controls-that-display-related-records"></a>若要建立顯示相關的記錄控制項  
   
-1. 按一下 [資料] 功能表上的 [顯示資料來源]，以開啟 [資料來源] 視窗。  
+1. 按一下 [資料]  功能表上的 [顯示資料來源]  ，以開啟 [資料來源]  視窗。  
   
-2. 按一下 [新增資料來源]，並完成 [資料來源組態精靈]。  
+2. 按一下 [新增資料來源]  ，並完成 [資料來源組態精靈]  。  
   
 3. 開啟 WPF 設計工具中，並確定設計工具會包含有效的置放目標中的項目容器**Zdroje dat**視窗。  
   

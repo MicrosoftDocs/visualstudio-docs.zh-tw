@@ -16,11 +16,11 @@ author: gewarren
 ms.author: gewarren
 manager: wpickett
 ms.openlocfilehash: e79eb7e0ed33184103cc772c13515959cf973ecc
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58943176"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68192814"
 ---
 # <a name="ca1028-enum-storage-should-be-int32"></a>CA1028:列舉儲存區應該是 Int32
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,7 +46,7 @@ ms.locfileid: "58943176"
 
 ## <a name="example-of-a-violation"></a>發生違規的範例
 
-### <a name="description"></a>描述
+### <a name="description"></a>說明
  下列範例顯示兩個未使用建議的基礎資料類型的列舉。
 
 ### <a name="code"></a>程式碼

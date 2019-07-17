@@ -11,13 +11,13 @@ caps.latest.revision: 15
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 5311aa3ff390611942aa91cb1f2a53ca5a76258d
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60074304"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68204060"
 ---
-# <a name="how-to-troubleshoot-services"></a>HOW TO：針對服務進行疑難排解
+# <a name="how-to-troubleshoot-services"></a>作法：針對服務進行疑難排解
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 有數個常見的問題，當您嘗試取得服務時，可能會發生：  

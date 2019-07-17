@@ -11,11 +11,11 @@ caps.latest.revision: 21
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 46ef86b8cde506aad3e00aa6b5dbc6470c0087de
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60052177"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68204180"
 ---
 # <a name="how-to-get-a-service"></a>HOW TO：取得服務
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -52,7 +52,7 @@ ms.locfileid: "60052177"
   
  靜態<xref:Microsoft.VisualStudio.Shell.Package.GetGlobalService%2A>方法會初始化任何 VSPackage 衍生自第一次的快取的服務提供者需仰賴<xref:Microsoft.VisualStudio.Shell.Package>設置。  
   
- 之前設置 VSPackage 呼叫 VSPackage 建構函式，因為全域服務都無法從 VSPackage 的建構函式通常使用。 請參閱[如何：疑難排解服務](../extensibility/how-to-troubleshoot-services.md)的因應措施。  
+ 之前設置 VSPackage 呼叫 VSPackage 建構函式，因為全域服務都無法從 VSPackage 的建構函式通常使用。 請參閱[How to:疑難排解服務](../extensibility/how-to-troubleshoot-services.md)的因應措施。  
   
  以下是最好的工具視窗或其他非 VSPackage 項目中取得服務的範例。  
   
