@@ -10,11 +10,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 8cebeb7eb651c11b5f560b981df30213fc726c66
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58941233"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68162253"
 ---
 # <a name="reference-programmatic-capture"></a>參考 (程式設計擷取)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,7 +39,7 @@ ms.locfileid: "58941233"
   
 ## <a name="related-articles"></a>相關文章  
   
-|標題|描述|  
+|標題|說明|  
 |-----------|-----------------|  
 |[Capturing Graphics Information](../debugger/capturing-graphics-information.md)|示範如何從 DirectX 應用程式擷取圖形資訊，以便使用 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 圖形診斷工具來診斷轉譯問題。|  
 |[概觀](../debugger/overview-of-visual-studio-graphics-diagnostics.md)|示範圖形診斷如何協助您偵錯 DirectX 遊戲和應用程式的轉譯錯誤。|

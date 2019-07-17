@@ -21,11 +21,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 073fc84d15cb31b4f7a4cc635524ab08a724911e
-ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "59000511"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68147855"
 ---
 # <a name="how-can-i-debug-an-access-violation"></a>如何偵錯存取違規？
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

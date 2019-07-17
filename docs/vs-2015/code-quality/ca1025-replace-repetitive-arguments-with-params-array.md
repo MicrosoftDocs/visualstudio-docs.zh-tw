@@ -16,11 +16,11 @@ author: gewarren
 ms.author: gewarren
 manager: wpickett
 ms.openlocfilehash: 83d36f1f5cd31b1ad1833dd805f4386ac71a3ed1
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58945979"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68144798"
 ---
 # <a name="ca1025-replace-repetitive-arguments-with-params-array"></a>CA1025:以參數陣列取代重複的引數
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

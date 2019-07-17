@@ -14,11 +14,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: bd60c855bacaf62beec47c9f977d0ab220ce7ca6
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54791930"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68145534"
 ---
 # <a name="tier-interactions-view"></a>階層互動檢視
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,11 +35,11 @@ ms.locfileid: "54791930"
   
 - 當您按一下主要窗格中的資料庫呼叫節點時，該資料庫呼叫的執行個體資料隨即會顯示在詳細資料窗格中。  
   
-  時間會以毫秒數或 CPU 時脈週期數來顯示。 若要變更顯示的時間單位，請按一下 [工具] 功能表，按一下 [選項]，然後選擇其中一項 [時間值顯示為] 選項。  
+  時間會以毫秒數或 CPU 時脈週期數來顯示。 若要變更顯示的時間單位，請按一下 [工具]  功能表，按一下 [選項]  ，然後選擇其中一項 [時間值顯示為]  選項。  
   
 ## <a name="master-pane"></a>主要窗格  
   
-|資料行|描述|  
+|「資料行」|說明|  
 |------------|-----------------|  
 |**名稱**|-   對於最上層資料列，其為已進行程式碼剖析的處理序或網頁名稱。<br />-   對於資料庫連接資料列，其為裝載資料庫的伺服器名稱。|  
 |**資料庫**|資料庫的名稱 (僅資料庫連接資料列)。|  
@@ -51,7 +51,7 @@ ms.locfileid: "54791930"
   
 ## <a name="database-connection-details-pane"></a>資料庫連接詳細資料窗格  
   
-|資料行|描述|  
+|「資料行」|說明|  
 |------------|-----------------|  
 |**命令文字**|要求的 SQL 查詢。|  
 |**查詢計數**|執行該查詢的次數。|  

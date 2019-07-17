@@ -13,11 +13,11 @@ caps.latest.revision: 14
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: d56d284d08a1c6b55318300ef7e1db1e385d584e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58930204"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68178430"
 ---
 # <a name="ienumdebugprocesses2"></a>IEnumDebugProcesses2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -41,7 +41,7 @@ IEnumDebugProcesses : IUnknown
   
 |方法|描述|  
 |------------|-----------------|  
-|[下一步](../../../extensibility/debugger/reference/ienumdebugprocesses2-next.md)|擷取指定的數目的列舉型別序列中的程序。|  
+|[下一個](../../../extensibility/debugger/reference/ienumdebugprocesses2-next.md)|擷取指定的數目的列舉型別序列中的程序。|  
 |[Skip](../../../extensibility/debugger/reference/ienumdebugprocesses2-skip.md)|略過指定的數目的列舉型別序列中的程序。|  
 |[Reset](../../../extensibility/debugger/reference/ienumdebugprocesses2-reset.md)|將列舉型別序列重設到開頭。|  
 |[Clone](../../../extensibility/debugger/reference/ienumdebugprocesses2-clone.md)|建立列舉值，包含目前的列舉值相同的列舉型別狀態。|  

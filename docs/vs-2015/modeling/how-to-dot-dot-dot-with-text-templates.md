@@ -10,11 +10,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 9c31e1d17137fd0e801bb506c280a83285c311b4
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60093016"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68181578"
 ---
 # <a name="how-to--with-text-templates"></a>如何 ... 使用文字範本
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,7 +37,7 @@ ms.locfileid: "60093016"
   
 - 您可以將執行階段文字範本加入專案。 此範本會建立一個類別，在您程式碼中，您可以具現化，並使用產生的文字。 您可以傳遞給它的資料，在建構函式參數。 如需詳細資訊，請參閱 <<c0> [ 執行階段使用 T4 文字範本產生文字](../modeling/run-time-text-generation-with-t4-text-templates.md)。  
   
-- 如果您想要從只能在執行階段可用的範本產生，您可以使用標準文字範本。 如果您正在撰寫[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]延伸模組，您可以叫用文字範本化服務。 如需詳細資訊，請參閱 <<c0> [ 叫用 VS 擴充功能中的文字轉換](../modeling/invoking-text-transformation-in-a-vs-extension.md)。 在其他內容中，您可以使用文字範本化引擎。 如需詳細資訊，請參閱<xref:Microsoft.VisualStudio.TextTemplating.Engine?displayProperty=fullName>。  
+- 如果您想要從只能在執行階段可用的範本產生，您可以使用標準文字範本。 如果您正在撰寫[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]延伸模組，您可以叫用文字範本化服務。 如需詳細資訊，請參閱 <<c0> [ 叫用 VS 擴充功能中的文字轉換](../modeling/invoking-text-transformation-in-a-vs-extension.md)。 在其他內容中，您可以使用文字範本化引擎。 如需詳細資訊，請參閱 <xref:Microsoft.VisualStudio.TextTemplating.Engine?displayProperty=fullName>。  
   
      使用\<#@parameter#> 指示詞，以將參數傳遞至這些範本。 如需詳細資訊，請參閱 < [T4 參數指示詞](../modeling/t4-parameter-directive.md)。  
   
@@ -74,7 +74,7 @@ ms.locfileid: "60093016"
   
 ### <a name="generate-files-from-a-complex-model"></a>透過複雜的模型產生檔案  
   
-- 請考慮建立特定領域語言 (DSL) 來代表此模型。 這讓您更輕鬆地撰寫範本，因為您是使用型別和屬性會反映在模型中項目的名稱。 您沒有要剖析的檔案，或瀏覽 XML 節點。 例如:   
+- 請考慮建立特定領域語言 (DSL) 來代表此模型。 這讓您更輕鬆地撰寫範本，因為您是使用型別和屬性會反映在模型中項目的名稱。 您沒有要剖析的檔案，或瀏覽 XML 節點。 例如：  
   
      `foreach (Book book in this.Library) { ... }`  
   

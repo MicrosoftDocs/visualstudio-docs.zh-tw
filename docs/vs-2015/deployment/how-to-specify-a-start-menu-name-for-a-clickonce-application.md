@@ -18,11 +18,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 30bb4050399bf7a6d9120f7e5454b26ce505af35
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60061550"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68149769"
 ---
 # <a name="how-to-specify-a-start-menu-name-for-a-clickonce-application"></a>HOW TO：指定 ClickOnce 應用程式的開始功能表名稱
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,9 +37,9 @@ ms.locfileid: "60061550"
   
 ### <a name="to-specify-a-start-menu-name"></a>若要指定的開始功能表名稱  
   
-1. 在方案總管 中選取專案之後，按一下 [專案]  功能表中 [屬性] 。  
+1. 在方案總管  中選取專案之後，按一下 [專案]  功能表中 [屬性]  。  
   
-2. 按一下 [發佈] 索引標籤。  
+2. 按一下 [發佈]  索引標籤。  
   
 3. 按一下 **選項** 按鈕以開啟**發行選項** 對話方塊。  
   

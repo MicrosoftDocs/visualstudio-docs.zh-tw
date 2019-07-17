@@ -13,11 +13,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 9cb81f17abd1e7891dc3f78a85d6d1276991f070
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54762984"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68145284"
 ---
 # <a name="vsperfaspnetcmd"></a>VSPerfASPNetCmd
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,14 +33,14 @@ ms.locfileid: "54762984"
 |------------|-----------------|  
 |**/Sample** 或 **/s**|使用取樣方法進行網站分析。 **/Sample** 是預設方法。 /Sample 無法搭配 **/Trace** 使用。|  
 |**/Trace** 或 **/t**|使用檢測方法進行網站分析。 /Trace 無法搭配 **/Sample** 使用。|  
-|**/Memory**[**:**`Type`] 或 **/m**[**:**{**a**&#124;**l**}]|分析記憶體配置，以及選擇性地分析物件存留期 (記憶體回收)。 **/Memory** 可以搭配取樣或檢測方法使用。<br /><br /> *Type* 可以是下列其中之一：<br /><br /> -   **allocation** (或 **a**) 只會收集記憶體配置資料。<br />-   **lifetime** (或 **l**) 會收集記憶體配置和物件存留期資料。<br /><br /> `Type` 預設為 **allocation**。|  
+|**/Memory**[ **:** `Type`] 或 **/m**[ **:** {**a**&#124;**l**}]|分析記憶體配置，以及選擇性地分析物件存留期 (記憶體回收)。 **/Memory** 可以搭配取樣或檢測方法使用。<br /><br /> *Type* 可以是下列其中之一：<br /><br /> -   **allocation** (或 **a**) 只會收集記憶體配置資料。<br />-   **lifetime** (或 **l**) 會收集記憶體配置和物件存留期資料。<br /><br /> `Type` 預設為 **allocation**。|  
 |**/Tip** 或 **/i**|將詳細 ASP.NET 要求和 ADO.NET 呼叫資訊加入至分析資料。 **/Tip** 可以搭配取樣或檢測方法使用，且可與 **/Memory** 選項一起使用。|  
-|**/Output:** `File` 或 **/o:**`File`|指定分析資料 (.vsp) 檔案的路徑與檔案名稱。|  
+|**/Output:** `File` 或 **/o:** `File`|指定分析資料 (.vsp) 檔案的路徑與檔案名稱。|  
 |**/NoWait** 或 **/n**|立即傳回命令提示字元，以便在 [命令提示字元] 視窗中使用其他命令。 您必須在個別的命令列上輸入 **VSPerfASPNETCmd /Shutdown** 以關閉分析。|  
 |**/PackSymbols**[:{**on**&#124;**off**} 或 **/p**[:{**on**&#124;**off**}|在分析資料 (.vsp) 檔案中內嵌符號 (函式與參數名稱等)。|  
-|**/Shutdown:** `Website` 或 **/d:**`Website`|關閉分析。 在使用 **/NoWait** 選項啟動分析之後，或者分析工具非預期地結束時，作為命令列上的唯一選項使用。 指定您在原始 **VSPerfASPNETCmd** 命令中使用的相同 URL。|  
+|**/Shutdown:** `Website` 或 **/d:** `Website`|關閉分析。 在使用 **/NoWait** 選項啟動分析之後，或者分析工具非預期地結束時，作為命令列上的唯一選項使用。 指定您在原始 **VSPerfASPNETCmd** 命令中使用的相同 URL。|  
 |`Website`|要分析之網站的 URL。|  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [使用 VSPerfASPNETCmd 快速進行網站分析](../profiling/rapid-web-site-profiling-with-vsperfaspnetcmd.md)   
  [對 ASP.NET Web 應用程式進行分析](../profiling/command-line-profiling-of-aspnet-web-applications.md)

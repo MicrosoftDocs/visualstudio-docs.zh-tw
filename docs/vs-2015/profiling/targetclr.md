@@ -10,11 +10,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 1e4ca52f631b3e2de9c01daab7e6268c42f20268
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54801192"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68145614"
 ---
 # <a name="targetclr"></a>TargetCLR
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ VSPerfCmd.exe {/Launch:AppName | /Attach:PID} /TargetCLR[:ClrVersion] [Options]
  CLR 的版本號碼。 使用版本格式 **vN.N.NNNNN**。  
   
 ## <a name="required-options"></a>必要選項  
- **TargetCLR** 選項僅能與 [啟動] 或 [附加] 選項一起使用。  
+ **TargetCLR** 選項僅能與 [啟動]  或 [附加]  選項一起使用。  
   
  **Launch：** `AppName`  
  啟動指定的應用程式並開始分析。  

@@ -15,11 +15,11 @@ author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.openlocfilehash: a3fe0233f08f33535be4b02cc06c29d919d75169
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59651159"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68180260"
 ---
 # <a name="use-command-line-parameters-to-install-visual-studio"></a>使用命令列參數來安裝 Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ ms.locfileid: "59651159"
 當您從命令提示字元安裝 Visual Studio 2015 時，可以使用下列命令列參數 (parameter，也稱為 switch)。
 
 > [!NOTE]
-> 請確定您使用實際的安裝程式並不是啟動載入器檔案。 例如，請確定您使用**`vs_enterprise.exe`** 而不是 vs_enterprise_*GUID*.exe。 您可以下載的安裝程式，從[My.VisualStudio.com](https://my.visualstudio.com/downloads?q=visual%20studio%20enterprise%202015)。
+> 請確定您使用實際的安裝程式並不是啟動載入器檔案。 例如，請確定您使用 **`vs_enterprise.exe`** 而不是 vs_enterprise_*GUID*.exe。 您可以下載的安裝程式，從[My.VisualStudio.com](https://my.visualstudio.com/downloads?q=visual%20studio%20enterprise%202015)。
 
 ## <a name="list-of-command-line-parameters"></a>命令列參數清單
 

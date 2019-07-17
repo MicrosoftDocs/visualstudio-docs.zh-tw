@@ -14,11 +14,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: ff8b58f6d36e9ce9759e2672f7e438bc0019fc1e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58941665"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68179502"
 ---
 # <a name="idiaenumframedataskip"></a>IDiaEnumFrameData::Skip
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

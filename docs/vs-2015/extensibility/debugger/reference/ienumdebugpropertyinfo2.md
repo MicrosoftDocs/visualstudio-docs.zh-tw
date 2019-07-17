@@ -13,11 +13,11 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: ee305083957f6d2f2ada09aec1747497fcf6db68
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58930673"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68147821"
 ---
 # <a name="ienumdebugpropertyinfo2"></a>IEnumDebugPropertyInfo2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -41,7 +41,7 @@ IEnumDebugPropertyInfo2 : IUnknown
   
 |方法|描述|  
 |------------|-----------------|  
-|[下一步](../../../extensibility/debugger/reference/ienumdebugpropertyinfo2-next.md)|擷取指定的數目[DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md)列舉型別序列中的結構。|  
+|[下一個](../../../extensibility/debugger/reference/ienumdebugpropertyinfo2-next.md)|擷取指定的數目[DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md)列舉型別序列中的結構。|  
 |[Skip](../../../extensibility/debugger/reference/ienumdebugpropertyinfo2-skip.md)|略過指定的數目的[DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md)列舉型別序列中的結構。|  
 |[Reset](../../../extensibility/debugger/reference/ienumdebugpropertyinfo2-reset.md)|將列舉型別序列重設到開頭。|  
 |[Clone](../../../extensibility/debugger/reference/ienumdebugpropertyinfo2-clone.md)|建立列舉值，包含目前的列舉值相同的列舉型別狀態。|  

@@ -12,11 +12,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 9256ca4141e9e4ec9e5ae218f1e5a11bf2fa5362
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58944221"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68182286"
 ---
 # <a name="general-tab-process-properties-dialog-box"></a>處理序屬性對話方塊、一般索引標籤
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

@@ -12,11 +12,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 6a2950ead23d2f1c6a5d1b4cb4d348a2937db4d2
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58944051"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68181191"
 ---
 # <a name="message-search-dialog-box"></a>訊息搜尋對話方塊
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,19 +25,19 @@ ms.locfileid: "58944051"
   
  可用的設定如下：  
   
- [搜尋工具]  
+ [搜尋工具]   
  用來選取視窗拖放工具。  
   
  **隱藏 Spy + +**  
  移除主要的 Spy + + 視窗，並將留**MessageSearch**對話方塊顯示在其他應用程式之上。  
   
- [控制代碼]  
+ [控制代碼]   
  要搜尋之訊息的唯一識別碼。  
   
- **Type**  
+ **型別**  
  要搜尋的訊息類型。  
   
- **訊息**  
+ **Message**  
  要搜尋的訊息識別碼。  
   
  **搜尋方向，增加或相應減少**  

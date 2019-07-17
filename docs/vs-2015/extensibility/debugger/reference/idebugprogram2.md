@@ -13,11 +13,11 @@ caps.latest.revision: 19
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 372c119b6a841d7d4b349e85548914f7641b53d1
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58930197"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68148651"
 ---
 # <a name="idebugprogram2"></a>IDebugProgram2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -39,7 +39,7 @@ IDebugProgram2 : IUnknown
 ## <a name="methods-in-vtable-order"></a>依照 Vtable 順序的方法  
  下表顯示的方法`IDebugProgram2`。  
   
-|方法|描述|  
+|方法|說明|  
 |------------|-----------------|  
 |[EnumThreads](../../../extensibility/debugger/reference/idebugprogram2-enumthreads.md)|列舉在此程式中執行的執行緒。|  
 |[GetName](../../../extensibility/debugger/reference/idebugprogram2-getname.md)|取得程式的名稱。|  

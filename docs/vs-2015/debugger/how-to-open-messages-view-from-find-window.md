@@ -1,5 +1,5 @@
 ---
-title: HOW TO：從尋找視窗開啟訊息檢視 |Microsoft Docs
+title: 作法：從尋找視窗開啟訊息檢視 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -13,11 +13,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: ee29135e659eff7e4965b6b1fb0d24de2c2e90cc
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60078730"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68157878"
 ---
 # <a name="how-to-open-messages-view-from-find-window"></a>HOW TO：從尋找視窗開啟訊息檢視
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,7 +40,7 @@ ms.locfileid: "60078730"
   
 4. 底下**顯示**，選取**訊息**。  
   
-5. 按 [確定]。  
+5. 按 [確定]  。  
   
      空白[訊息檢視](../debugger/messages-view.md)視窗隨即開啟，並有**訊息**功能表會加入至 Spy + + 工具列。  
   

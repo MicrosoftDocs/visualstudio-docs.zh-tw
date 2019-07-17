@@ -13,18 +13,18 @@ caps.latest.revision: 31
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 12f865e7d4c44cfa4002b330ed85ec95f95a8ef9
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58945285"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68200658"
 ---
 # <a name="debugger-components"></a>偵錯工具元件
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]偵錯工具會實作為 VSPackage 和管理整個偵錯工作階段。 偵錯工作階段包含下列項目：  
   
-- **偵錯封裝：**[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]偵錯工具會提供相同的使用者介面，不論項目正在進行偵錯。  
+- **偵錯封裝：** [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]偵錯工具會提供相同的使用者介面，不論項目正在進行偵錯。  
   
 - **工作階段偵錯管理員 (SDM):** 提供一致的程式設計介面，以[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]偵錯工具進行偵錯引擎的各種不同的管理。 它由實作[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]。  
   

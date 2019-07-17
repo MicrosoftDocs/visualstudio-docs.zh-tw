@@ -12,13 +12,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 4a9d311563134850a7b2efd04eb6d6ed00dfcc25
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58944263"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68205357"
 ---
-# <a name="how-to-display-thread-properties"></a>HOW TO：顯示執行緒屬性
+# <a name="how-to-display-thread-properties"></a>作法：顯示執行緒屬性
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 若要深入了解中所列的執行緒[執行緒檢視](../debugger/threads-view.md)，使用[執行緒屬性對話方塊](../debugger/thread-properties-dialog-box.md)。  

@@ -9,13 +9,13 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: bf0d8a4cab8d30a56e84d1a6869c2c842b982aea
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58945074"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68204669"
 ---
-# <a name="distributing-isolated-shell-applications"></a>散發 Isolated 的 Shell 應用程式
+# <a name="distributing-isolated-shell-applications"></a>散發獨立模式 Shell 應用程式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 您必須安裝 Visual Studio 和 Visual Studio SDK，才能建立 isolated 的 shell 應用程式。 若要散發到電腦的其他使用者或客戶的應用程式，您必須包含特殊 isolated shell 可轉散發套件。  

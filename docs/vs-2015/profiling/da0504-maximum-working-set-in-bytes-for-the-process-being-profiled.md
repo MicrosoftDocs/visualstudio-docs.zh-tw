@@ -14,13 +14,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: a990b428cfa03722ee5e02884344d96844825ee8
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54787187"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68157172"
 ---
-# <a name="da0504-maximum-working-set-in-bytes-for-the-process-being-profiled"></a>DA0504：進行程式碼剖析之處理序的最大工作集 (以位元組為單位)
+# <a name="da0504-maximum-working-set-in-bytes-for-the-process-being-profiled"></a>DA0504：所分析之處理序的最大工作集 (以位元組為單位)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 規則 Id |DA0504 |  

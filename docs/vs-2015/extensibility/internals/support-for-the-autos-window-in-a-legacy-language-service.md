@@ -12,11 +12,11 @@ caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 01d2046d7693b23865555abb06962dead4a435ae
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58940110"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68157593"
 ---
 # <a name="support-for-the-autos-window-in-a-legacy-language-service"></a>舊版語言服務中對自動變數視窗的支援
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

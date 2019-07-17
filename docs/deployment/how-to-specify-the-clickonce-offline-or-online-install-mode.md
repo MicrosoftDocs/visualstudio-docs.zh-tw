@@ -18,33 +18,34 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c394e909ec7ff51a7c6baf0bac85df3d2fce7b78
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a050724733ad87d0c583639fe3b0acfd2d6299f7
+ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62928486"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67890574"
 ---
-# <a name="how-to-specify-the-clickonce-offline-or-online-install-mode"></a>HOW TO：指定 ClickOnce 離線或線上安裝模式
+# <a name="how-to-specify-the-clickonce-offline-or-online-install-mode"></a>作法：指定 ClickOnce 離線或線上安裝模式
 `Install Mode`針對[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]應用程式可讓您判斷應用程式是在離線或線上時使用。 當您選擇**應用程式只提供線上**，使用者必須能夠存取[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]發行 （網頁或檔案共用） 才能執行應用程式的位置。 當您選擇**應用程式也可以在離線時**，應用程式會將項目加入**開始**功能表並**新增或移除程式** 對話方塊中，使用者是無法在未連線時，執行應用程式。
 
- `Install Mode`上，可以設定**發佈**頁面**專案設計工具**。
+`Install Mode`上，可以設定**發佈**頁面**專案設計工具**。
 
- **附註**`Install Mode`也可以設定使用發佈精靈。 如需詳細資訊，請參閱[如何：使用 [發佈精靈] 發佈 ClickOnce 應用程式](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)。
+> [!NOTE]
+> `Install Mode`也可以設定使用發佈精靈。 如需詳細資訊，請參閱[如何：使用 [發佈精靈] 發佈 ClickOnce 應用程式](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)。
 
 ### <a name="to-make-a-clickonce-application-available-online-only"></a>將 ClickOnce 應用程式提供線上只
 
-1. 在方案總管 中選取專案之後，按一下 [專案]  功能表中 [屬性] 。
+1. 在方案總管  中選取專案之後，按一下 [專案]  功能表中 [屬性]  。
 
-2. 按一下 [發佈] 索引標籤。
+2. 按一下 [發佈]  索引標籤。
 
 3. 在 **安裝模式和設定**區域中，按一下**應用程式只提供線上**選項按鈕。
 
 ### <a name="to-make-a-clickonce-application-available-online-or-offline"></a>若要使用 ClickOnce 應用程式線上或離線
 
-1. 在方案總管 中選取專案之後，按一下 [專案]  功能表中 [屬性] 。
+1. 在方案總管  中選取專案之後，按一下 [專案]  功能表中 [屬性]  。
 
-2. 按一下 [發佈] 索引標籤。
+2. 按一下 [發佈]  索引標籤。
 
 3. 在 **安裝模式和設定**區域中，按一下**應用程式也可以在離線時**選項按鈕。
 

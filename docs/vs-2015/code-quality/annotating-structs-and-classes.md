@@ -25,11 +25,11 @@ author: mikeblome
 ms.author: mblome
 manager: jillfra
 ms.openlocfilehash: df2e75bb3dd01d051d8fed29748e499f8f620128
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60075385"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68157069"
 ---
 # <a name="annotating-structs-and-classes"></a>註釋結構和類別
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -58,7 +58,7 @@ ms.locfileid: "60075385"
   
      具有可讀取及可寫入大小的欄位，其大小是以 `size` 所指定的項目 (或位元組) 為單位表示。  
   
-     適用於結構或類別的宣告。  指出該類型的有效物件可能大於所宣告的類型，其位元組數目是由 `size` 所指定。  例如:   
+     適用於結構或類別的宣告。  指出該類型的有效物件可能大於所宣告的類型，其位元組數目是由 `size` 所指定。  例如：  
   
     ```cpp  
   

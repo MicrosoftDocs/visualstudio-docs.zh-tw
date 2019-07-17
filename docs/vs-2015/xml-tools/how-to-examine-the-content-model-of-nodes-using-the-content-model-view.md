@@ -1,5 +1,5 @@
 ---
-title: HOW TO：檢查使用內容模型檢視節點的內容模型 |Microsoft Docs
+title: 作法：檢查使用內容模型檢視節點的內容模型 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-xml-tools
@@ -10,13 +10,13 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 24ceb80c0ffd03e7c796b7a5d5abdc93f4c1c78d
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60099061"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68179543"
 ---
-# <a name="how-to-examine-the-content-model-of-nodes-using-the-content-model-view"></a>HOW TO：使用內容模型檢視檢查節點的內容模型
+# <a name="how-to-examine-the-content-model-of-nodes-using-the-content-model-view"></a>作法：使用內容模型檢視檢查節點的內容模型
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 本主題描述如何瀏覽您使用的節點[內容模型檢視](../xml-tools/content-model-view.md)。  

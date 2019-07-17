@@ -10,11 +10,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 440b60697d4ab1e88f535b6c5ef824bc74e19c48
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60068687"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68203424"
 ---
 # <a name="embedding-a-diagram-in-a-windows-form"></a>在 Windows Form 中內嵌圖表
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

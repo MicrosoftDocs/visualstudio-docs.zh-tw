@@ -11,11 +11,11 @@ caps.latest.revision: 20
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 65a03a8dc741ec86aca3137f49cd753722ede215
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58942677"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68204572"
 ---
 # <a name="enumerators"></a>列舉程式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,7 +26,7 @@ ms.locfileid: "58942677"
  [命令碼](../extensibility/command-code-enumerator.md)  
  列舉的選項[SccGetCommandOptions](../extensibility/sccgetcommandoptions-function.md)並[SccPopulateList](../extensibility/sccpopulatelist-function.md)函式。  
   
- [訊息](../extensibility/message-enumerator.md)  
+ [Message](../extensibility/message-enumerator.md)  
  列舉列印的回呼，用旗標[LPTEXTOUTPROC](../extensibility/lptextoutproc.md)。  
   
  [檔案狀態碼](../extensibility/file-status-code-enumerator.md)  

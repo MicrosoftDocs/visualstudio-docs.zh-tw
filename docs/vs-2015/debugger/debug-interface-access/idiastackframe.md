@@ -14,11 +14,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 3199498f9e31f65045f7df44c4c6b6c39be18f56
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58945592"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68144735"
 ---
 # <a name="idiastackframe"></a>IDiaStackFrame
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -38,7 +38,7 @@ IDiaStackFrame : IUnknown
 |------------|-----------------|  
 |[IDiaStackFrame::get_allocatesBasePointer](../../debugger/debug-interface-access/idiastackframe-get-allocatesbasepointer.md)|擷取表示基底的指標會配置此位址範圍中的程式碼的旗標。 此方法已淘汰。|  
 |[IDiaStackFrame::get_base](../../debugger/debug-interface-access/idiastackframe-get-base.md)|擷取框架的位址基底。|  
-|[IDiaStackFrame::get_cplusplusExceptionHandling](../../debugger/debug-interface-access/idiastackframe-get-cplusplusexceptionhandling.md)|擷取指出 c + + 例外狀況處理為作用中的旗標。|  
+|[IDiaStackFrame::get_cplusplusExceptionHandling](../../debugger/debug-interface-access/idiastackframe-get-cplusplusexceptionhandling.md)|擷取旗標，表示C++例外狀況處理是作用中。|  
 |[IDiaStackFrame::get_functionStart](../../debugger/debug-interface-access/idiastackframe-get-functionstart.md)|擷取旗標，指出區塊包含函式的進入點。|  
 |[IDiaStackFrame::get_lengthLocals](../../debugger/debug-interface-access/idiastackframe-get-lengthlocals.md)|擷取推送到堆疊上的本機變數的位元組的數目。|  
 |[IDiaStackFrame::get_lengthParams](../../debugger/debug-interface-access/idiastackframe-get-lengthparams.md)|擷取位元組的推送到堆疊上的參數數目。|  

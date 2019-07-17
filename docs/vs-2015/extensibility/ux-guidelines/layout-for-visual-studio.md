@@ -9,11 +9,11 @@ caps.latest.revision: 3
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 09656b9afac82eec8981f8573af87391c99a3688
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60114258"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68179646"
 ---
 # <a name="layout-for-visual-studio"></a>適用於 Visual Studio 的版面配置
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -105,11 +105,11 @@ ms.locfileid: "60114258"
 #### <a name="BKMK_InteriorCommandButtons"></a> 內部命令按鈕
  在更複雜的對話方塊中，內部的控制項可能有它自己相關的按鈕，這可能會影響對話方塊的 [認可] 按鈕的所在位置。
 
-- 使用內部的垂直對齊方式 （資料行） 按鈕 **[確定]**/**取消**為水平導向在右下角。
+- 使用內部的垂直對齊方式 （資料行） 按鈕 **[確定]** /**取消**為水平導向在右下角。
 
-- 使用內部的水平對齊方式 （資料列） 按鈕 **[確定]**/**取消**為垂直導向右上角。 這種情況下是較不常見。
+- 使用內部的水平對齊方式 （資料列） 按鈕 **[確定]** /**取消**為垂直導向右上角。 這種情況下是較不常見。
 
-- 內部的按鈕大小應為目標的標準按鈕大小為 75 x 23 像素，比對的大小 **[確定]**/**取消**盡可能的按鈕。 當按鈕的標籤會超出標準按鈕大小的按鈕時，該集合中的其他按鈕應該配合該寬度的大小。
+- 內部的按鈕大小應為目標的標準按鈕大小為 75 x 23 像素，比對的大小 **[確定]** /**取消**盡可能的按鈕。 當按鈕的標籤會超出標準按鈕大小的按鈕時，該集合中的其他按鈕應該配合該寬度的大小。
 
   ![水平的 [確定] 和 [取消] 按鈕](../../extensibility/ux-guidelines/media/0801-f-horizokcan.png "0801 f_HorizOKCan")
 
@@ -137,7 +137,7 @@ ms.locfileid: "60114258"
 
 6. 預設的連結已經沒有底線。 暫留和已按下的狀態有變更色彩再加上底線。
 
-7. 認可按鈕 (類似 **[確定]**/**取消**) 位在右上角。
+7. 認可按鈕 (類似 **[確定]** /**取消**) 位在右上角。
 
 ### <a name="themed-dialog-layout-examples"></a>佈景主題對話方塊版面配置範例
  ![佈景主題對話方塊版面配置](../../extensibility/ux-guidelines/media/0801-h-themeddialog.png "0801 h_ThemedDialog")

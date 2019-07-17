@@ -7,11 +7,11 @@ caps.latest.revision: 5
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: d2e980a8354ab1ff089d09acc8aa540d2e7692b9
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60117963"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68192675"
 ---
 # <a name="image-service-tools"></a>影像服務工具
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

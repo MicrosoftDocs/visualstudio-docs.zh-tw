@@ -18,18 +18,18 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 573c120aafdf520b137e3fb50251ed8606f5c43a
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59654369"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68160885"
 ---
 # <a name="visual-studio-command-aliases"></a>Visual Studio Command Aliases
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-別名提供一種在 [尋找/命令] 方塊或 [命令] 視窗中輸入命令的方式，該方式縮短了執行命令所需的文字。 例如，您可以使用預先定義的別名 `>of` (而不是輸入 `>File.OpenFile`)，來顯示 [開啟檔案] 對話方塊。
+別名提供一種在 [尋找/命令]  方塊或 [命令]  視窗中輸入命令的方式，該方式縮短了執行命令所需的文字。 例如，您可以使用預先定義的別名 `>of` (而不是輸入 `>File.OpenFile`)，來顯示 [開啟檔案]  對話方塊。
 
- 在 [命令] 視窗中鍵入 `alias` 可顯示目前的別名及其定義。 鍵入 `>cls` 可清除 [命令] 視窗的內容。 如果您想要查看特定命令的別名，請鍵入 `alias <command name>`。
+ 在 [命令]  視窗中鍵入 `alias` 可顯示目前的別名及其定義。 鍵入 `>cls` 可清除 [命令]  視窗的內容。 如果您想要查看特定命令的別名，請鍵入 `alias <command name>`。
 
  您可以輕鬆地為其中一個 Visual Studio 命令 (不論是否包含引數) 建立自己的別名。 例如，`File.NewFile MyFile.txt` 的別名語法是 `alias MyAlias File.NewFile MyFile.txt`。 您可以使用 `alias <alias name> /delete` 刪除其中一個別名
 

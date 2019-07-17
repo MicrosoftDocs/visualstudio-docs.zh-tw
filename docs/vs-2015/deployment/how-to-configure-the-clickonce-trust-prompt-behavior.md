@@ -20,13 +20,13 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 58e5f0e9154137097a94637799966ee94818fca4
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60047043"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68150835"
 ---
-# <a name="how-to-configure-the-clickonce-trust-prompt-behavior"></a>HOW TO：設定 ClickOnce 信任提示行為
+# <a name="how-to-configure-the-clickonce-trust-prompt-behavior"></a>作法：設定 ClickOnce 信任提示行為
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 您可以設定 ClickOnce 信任提示，來控制，是否可以選擇安裝 ClickOnce 應用程式，例如 Windows Forms 應用程式、 Windows Presentation Foundation 應用程式、 主控台應用程式、 WPF 瀏覽器的使用者。應用程式和 Office 方案。 您可以設定每位使用者的電腦上的登錄機碼設定信任提示。  
@@ -58,7 +58,7 @@ ms.locfileid: "60047043"
   
 1. 開啟登錄編輯程式：  
   
-    1. 按一下 [開始]，然後按一下 [執行]。  
+    1. 按一下 [開始]  ，然後按一下 [執行]  。  
   
     2. 在 **開啟**方塊中，輸入`regedit`(或`regedit32`32 位元 Windows 上)，然後按一下**確定**。  
   
@@ -117,7 +117,7 @@ ms.locfileid: "60047043"
   
 1. 開啟登錄編輯程式：  
   
-    1. 按一下 [開始]，然後按一下 [執行]。  
+    1. 按一下 [開始]  ，然後按一下 [執行]  。  
   
     2. 在 **開啟**方塊中，輸入`regedit`(或`regedit32`32 位元 Windows 上)，然後按一下**確定**。  
   
@@ -174,7 +174,7 @@ ms.locfileid: "60047043"
   
 1. 開啟登錄編輯程式：  
   
-    1. 按一下 [開始]，然後按一下 [執行]。  
+    1. 按一下 [開始]  ，然後按一下 [執行]  。  
   
     2. 在 **開啟**方塊中，輸入`regedit`(或`regedit32`32 位元 Windows 上)，然後按一下**確定**。  
   

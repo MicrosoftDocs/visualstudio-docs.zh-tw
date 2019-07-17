@@ -12,16 +12,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 5a53faf8c9395867b570909ac4d34cf329da12c6
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58938742"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "68149450"
 ---
 # <a name="idiasymbolgetisacceleratorpointertagliverange"></a>IDiaSymbol::get_isAcceleratorPointerTagLiveRange
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-擷取表示符號是否對應至的旗標*定義範圍符號*標記元件針對 c + + AMP 加速器所編譯的程式碼中的指標變數。 定義範圍符號是變數的位址範圍的位置。  
+擷取表示符號是否對應至的旗標*定義範圍符號*標記元件之指標的程式碼中的變數編譯為C++AMP 加速器。 定義範圍符號是變數的位址範圍的位置。  
   
 ## <a name="syntax"></a>語法  
   

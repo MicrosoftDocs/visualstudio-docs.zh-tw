@@ -1,5 +1,5 @@
 ---
-title: 如何：從命令列篩選報表 | Microsoft Docs
+title: HOW TO：從命令列篩選報表 | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -10,23 +10,23 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: db2c9d845af962fc17da1ebd84e8dd5fe6ffadab
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54802997"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68146013"
 ---
-# <a name="how-to-filter-reports-from-the-command-line"></a>如何：從命令列篩選報告
+# <a name="how-to-filter-reports-from-the-command-line"></a>HOW TO：從命令列篩選報告
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 使用 **VSPerfReport** 命令的選項，即可將報表篩選到分析資料檔案的特定時間區段，或將資料限制到一或多個處理序或執行緒。 如需此命令的詳細資訊，請參閱 [VSPerfReport](../profiling/vsperfreport.md)。  
   
 |選項|描述|  
 |-------------|-----------------|  
-|**StartTime:**[*Value*]|只顯示值 (以毫秒為單位) 之後所收集的資料。|  
-|**EndTime:**[*Value*]|只顯示值 (以毫秒為單位) 之前所收集的資料。|  
-|**FilterFile:** `VSPFFile`|指定從 [Visual Studio 效能報告] 視窗所產生之篩選器檔案的位置。|  
-|**MsFilter:**[*StartTime,Duration*]|只顯示從 `StartTime` 直到 `Duration` 長度(以毫秒為單位) 的資料。|  
-|**Process:**[*Pid*]|只顯示來自所指定處理序的資料。|  
-|**Thread:**[*ThreadID*]|只顯示來自所指定執行緒的資料。|  
-|**Thread:**[*ThreadID,ProcessID*]|只顯示來自與指定處理序建立關聯之指定執行緒的資料。|
+|**StartTime:** [*Value*]|只顯示值 (以毫秒為單位) 之後所收集的資料。|  
+|**EndTime:** [*Value*]|只顯示值 (以毫秒為單位) 之前所收集的資料。|  
+|**FilterFile:** `VSPFFile`|指定從 [Visual Studio 效能報告]  視窗所產生之篩選器檔案的位置。|  
+|**MsFilter:** [*StartTime,Duration*]|只顯示從 `StartTime` 直到 `Duration` 長度(以毫秒為單位) 的資料。|  
+|**Process:** [*Pid*]|只顯示來自所指定處理序的資料。|  
+|**Thread:** [*ThreadID*]|只顯示來自所指定執行緒的資料。|  
+|**Thread:** [*ThreadID,ProcessID*]|只顯示來自與指定處理序建立關聯之指定執行緒的資料。|

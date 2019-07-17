@@ -1,9 +1,9 @@
 ---
 ms.openlocfilehash: 5c7e34745f9613d46a415df6e3bbdd35346f7d60
-ms.sourcegitcommit: b468d71052a1b8a697f477ab23a3644de139f1e9
+ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/19/2019
-ms.locfileid: "67260272"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "68146187"
 ---
 適用於 Windows 8.x 市集應用程式的 .NET

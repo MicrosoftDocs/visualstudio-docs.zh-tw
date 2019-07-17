@@ -14,11 +14,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 47e98a9052b682b7127aa3218809a3002624e361
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58938774"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68203607"
 ---
 # <a name="idialinenumbergetaddressoffset"></a>IDiaLineNumber::get_addressOffset
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
