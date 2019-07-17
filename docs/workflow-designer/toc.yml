@@ -1,202 +1,200 @@
 - name: 使用工作流程設計工具開發應用程式
+  href: developing-applications-with-the-workflow-designer.md
+- name: 工作流程專案
   items:
-    - name: 概觀和必要條件
-      href: developing-applications-with-the-workflow-designer.md
-    - name: 工作流程專案
+    - name: 建立工作流程專案
+      href: creating-a-workflow-project.md
+    - name: 將新項目新增至工作流程專案
+      href: how-to-add-a-new-item-to-a-workflow-project.md
+- name: 將活動新增至工具箱
+  href: how-to-add-activities-to-the-toolbox.md
+- name: 使用引數設計工具
+  href: how-to-use-the-argument-designer.md
+- name: 使用變數設計工具
+  href: how-to-use-the-variable-designer.md
+- name: 使用運算式編輯器
+  href: how-to-use-the-expression-editor.md
+- name: 使用匯入設計工具
+  href: how-to-use-the-imports-designer.md
+- name: 使用階層連結巡覽
+  href: how-to-use-breadcrumb-navigation.md
+- name: 使用搜尋
+  href: how-to-use-search-in-the-workflow-designer.md
+- name: 定義並取用活動委派
+  href: how-to-define-and-consume-activity-delegates-in-the-workflow-designer.md
+- name: 將註解新增至工作流程
+  href: how-to-add-comments-to-a-workflow-in-the-workflow-designer.md
+- name: 活動設計工具
+  items:
+    - name: 控制流程活動設計工具
       items:
-        - name: 建立工作流程專案
-          href: creating-a-workflow-project.md
-        - name: 將新項目新增至工作流程專案
-          href: how-to-add-a-new-item-to-a-workflow-project.md
-    - name: 將活動新增至工具箱
-      href: how-to-add-activities-to-the-toolbox.md
-    - name: 使用引數設計工具
-      href: how-to-use-the-argument-designer.md
-    - name: 使用變數設計工具
-      href: how-to-use-the-variable-designer.md
-    - name: 使用運算式編輯器
-      href: how-to-use-the-expression-editor.md
-    - name: 使用匯入設計工具
-      href: how-to-use-the-imports-designer.md
-    - name: 使用階層連結巡覽
-      href: how-to-use-breadcrumb-navigation.md
-    - name: 使用工作流程設計工具中的搜尋
-      href: how-to-use-search-in-the-workflow-designer.md
-    - name: 定義並取用工作流程設計工具中的活動委派
-      href: how-to-define-and-consume-activity-delegates-in-the-workflow-designer.md
-    - name: 將註解新增至工作流程設計工具中的工作流程
-      href: how-to-add-comments-to-a-workflow-in-the-workflow-designer.md
-    - name: 活動設計工具
+        - name: 概觀和參考
+          displayName: Control flow activity designers
+          href: control-flow-activity-designers.md
+        - name: DoWhile 活動設計工具
+          href: dowhile-activity-designer.md
+        - name: ForEach<T> 活動設計工具
+          href: foreach-t-activity-designer.md
+        - name: If 活動設計工具
+          href: if-activity-designer.md
+        - name: Parallel 活動設計工具
+          href: parallel-activity-designer.md
+        - name: ParallelForEach<T> 活動設計工具
+          href: parallelforeach-t-activity-designer.md
+        - name: Pick 活動設計工具
+          href: pick-activity-designer.md
+        - name: PickBranch 活動設計工具
+          href: pickbranch-activity-designer.md
+        - name: Sequence 活動設計工具
+          href: sequence-activity-designer.md
+        - name: Switch<T> 活動設計工具
+          href: switch-t-activity-designer.md
+        - name: While 活動設計工具
+          href: while-activity-designer.md
+    - name: 流程圖活動設計工具
       items:
-        - name: Control Flow 活動設計工具
-          items:
-            - name: 概觀和參考
-              displayName: Control flow activity designers
-              href: control-flow-activity-designers.md
-            - name: DoWhile 活動設計工具
-              href: dowhile-activity-designer.md
-            - name: ForEach<T> 活動設計工具
-              href: foreach-t-activity-designer.md
-            - name: If 活動設計工具
-              href: if-activity-designer.md
-            - name: Parallel 活動設計工具
-              href: parallel-activity-designer.md
-            - name: ParallelForEach<T> 活動設計工具
-              href: parallelforeach-t-activity-designer.md
-            - name: Pick 活動設計工具
-              href: pick-activity-designer.md
-            - name: PickBranch 活動設計工具
-              href: pickbranch-activity-designer.md
-            - name: Sequence 活動設計工具
-              href: sequence-activity-designer.md
-            - name: Switch<T> 活動設計工具
-              href: switch-t-activity-designer.md
-            - name: While 活動設計工具
-              href: while-activity-designer.md
+        - name: 概觀和參考
+          displayName: Flow chart activity designers
+          href: flowchart-activity-designers.md
         - name: Flowchart 活動設計工具
-          items:
-            - name: 概觀和參考
-              displayName: Flow chart activity designers
-              href: flowchart-activity-designers.md
-            - name: Flowchart 活動設計工具
-              href: flowchart-activity-designer.md
-            - name: FlowDecision 活動設計工具
-              href: flowdecision-activity-designer.md
-            - name: FlowSwitch<T> 活動設計工具
-              href: flowswitch-t-activity-designer.md
-        - name: 狀態機器活動設計工具
-          items:
-            - name: 概觀和參考
-              displayName: State machine activity designers
-              href: state-machine-activity-designers.md
-            - name: StateMachine 活動設計工具
-              href: statemachine-activity-designer.md
-            - name: 狀態活動設計工具
-              href: state-activity-designer.md
-            - name: FinalState 活動設計工具
-              href: finalstate-activity-designer.md
-            - name: 轉換活動設計工具
-              href: transition-activity-designer.md
-        - name: Messaging 活動設計工具
-          items:
-            - name: 概觀和參考
-              displayName: Messaging activity designers
-              href: messaging-activity-designers.md
-            - name: CorrelationScope 活動設計工具
-              href: correlationscope-activity-designer.md
-            - name: InitializeCorrelation 活動設計工具
-              href: initializecorrelation-activity-designer.md
-            - name: Receive 活動設計工具
-              href: receive-activity-designer.md
-            - name: ReceiveAndSendReply 樣板設計工具
-              href: receiveandsendreply-template-designer.md
-            - name: Send 活動設計工具
-              href: send-activity-designer.md
-            - name: SendAndReceiveReply 樣本設計工具
-              href: sendandreceivereply-template-designer.md
-            - name: TransactedReceiveScope 活動設計工具
-              href: transactedreceivescope-activity-designer.md
-        - name: Runtime 活動設計工具
-          items:
-            - name: 概觀和參考
-              displayName: Run-time activity designers
-              href: runtime-activity-designers.md
-            - name: Persist 活動設計工具
-              href: persist-activity-designer.md
-            - name: TerminateWorkflow 活動設計工具
-              href: terminateworkflow-activity-designer.md
-        - name: 基本活動設計工具
-          items:
-            - name: 概觀和參考
-              displayName: Primitives activity designers
-              href: primitives-activity-designers.md
-            - name: Assign 活動設計工具
-              href: assign-activity-designer.md
-            - name: Delay 活動設計工具
-              href: delay-activity-designer.md
-            - name: InvokeDelegate
-              href: invokedelegate.md
-            - name: InvokeMethod 活動設計工具
-              href: invokemethod-activity-designer.md
-            - name: WriteLine 活動設計工具
-              href: writeline-activity-designer.md
-        - name: Transaction 活動設計工具
-          items:
-            - name: 概觀和參考
-              displayName: Transaction activity designers
-              href: transaction-activity-designers.md
-            - name: CancellationScope 活動設計工具
-              href: cancellationscope-activity-designer.md
-            - name: CompensableActivity 活動設計工具
-              href: compensableactivity-activity-designer.md
-            - name: Compensate 活動設計工具
-              href: compensate-activity-designer.md
-            - name: Confirm 活動設計工具
-              href: confirm-activity-designer.md
-            - name: TransactionScope 活動設計工具
-              href: transactionscope-activity-designer.md
-        - name: Collection 活動設計工具
-          items:
-            - name: 概觀和參考
-              displayName: Collection activity designers
-              href: collection-activity-designers.md
-            - name: AddToCollection<T> 活動設計工具
-              href: addtocollection-t-activity-designer.md
-            - name: ClearCollection<T> 活動設計工具
-              href: clearcollection-t-activity-designer.md
-            - name: ExistsInCollection<T> 活動設計工具
-              href: existsincollection-t-activity-designer.md
-            - name: RemoveFromCollection<T> 活動設計工具
-              href: removefromcollection-t-activity-designer.md
-        - name: Error Handling 活動設計工具
-          items:
-            - name: 概觀和參考
-              displayName: Error handling activity designers
-              href: error-handling-activity-designers.md
-            - name: Rethrow 活動設計工具
-              href: rethrow-activity-designer.md
-            - name: Throw 活動設計工具
-              href: throw-activity-designer.md
-            - name: TryCatch 活動設計工具
-              href: trycatch-activity-designer.md
-        - name: Migration 活動設計工具
-          items:
-            - name: 概觀和參考
-              displayName: Migration activity designers
-              href: migration-activity-designers.md
-            - name: Interop 活動設計工具
-              href: interop-activity-designer.md
-    - name: 偵錯
+          href: flowchart-activity-designer.md
+        - name: FlowDecision 活動設計工具
+          href: flowdecision-activity-designer.md
+        - name: FlowSwitch<T> 活動設計工具
+          href: flowswitch-t-activity-designer.md
+    - name: 狀態機器活動設計工具
       items:
-        - name: 偵錯工作流程
-          href: debugging-workflows-with-the-workflow-designer.md
-        - name: 在工作流程中設定中斷點
-          href: how-to-set-breakpoints-in-workflows.md
-        - name: 使用工作流程設計工具對 XAML 進行偵錯
-          href: how-to-debug-xaml-with-the-workflow-designer.md
-        - name: 不支援的偵錯案例
-          href: unsupported-debugging-scenarios-in-the-workflow-designer.md
-    - name: UI 參考
+        - name: 概觀和參考
+          displayName: State machine activity designers
+          href: state-machine-activity-designers.md
+        - name: StateMachine 活動設計工具
+          href: statemachine-activity-designer.md
+        - name: 狀態活動設計工具
+          href: state-activity-designer.md
+        - name: FinalState 活動設計工具
+          href: finalstate-activity-designer.md
+        - name: 轉換活動設計工具
+          href: transition-activity-designer.md
+    - name: 傳訊活動設計工具
       items:
-        - name: 瀏覽並選取 .NET 類型對話方塊
-          href: browse-and-select-a-dotnet-type-dialog-box.md
-        - name: CorrelatesOn 定義對話方塊
-          href: correlateson-definition-dialog-box.md
-        - name: 加入相互關聯初始設定式對話方塊
-          href: add-correlationinitializers-dialog-box.md
-        - name: 加入參數及加入引數對話方塊
-          href: add-parameters-and-add-arguments-dialog-boxes.md
-        - name: 型別集合編輯器對話方塊
-          href: type-collection-editor-dialog-box.md
-        - name: 內容定義對話方塊
-          href: content-definition-dialog-box.md
-        - name: 初始化相互關聯對話方塊
-          href: initialize-correlation-dialog-box.md
-        - name: 系統活動索引標籤，選擇工具箱項目對話方塊
-          href: system-activities-tab-choose-toolbox-items-dialog-box.md
-        - name: 工作流程設計工具殼層功能
-          href: workflow-designer-shell-features.md
-        - name: 鍵盤快速鍵
-          href: keyboard-shortcuts-in-the-workflow-designer.md
-        - name: 錯誤訊息
-          href: error-messages-in-workflow-designer.md
+        - name: 概觀和參考
+          displayName: Messaging activity designers
+          href: messaging-activity-designers.md
+        - name: CorrelationScope 活動設計工具
+          href: correlationscope-activity-designer.md
+        - name: InitializeCorrelation 活動設計工具
+          href: initializecorrelation-activity-designer.md
+        - name: Receive 活動設計工具
+          href: receive-activity-designer.md
+        - name: ReceiveAndSendReply 樣板設計工具
+          href: receiveandsendreply-template-designer.md
+        - name: Send 活動設計工具
+          href: send-activity-designer.md
+        - name: SendAndReceiveReply 樣本設計工具
+          href: sendandreceivereply-template-designer.md
+        - name: TransactedReceiveScope 活動設計工具
+          href: transactedreceivescope-activity-designer.md
+    - name: 執行階段活動設計工具
+      items:
+        - name: 概觀和參考
+          displayName: Run-time activity designers
+          href: runtime-activity-designers.md
+        - name: Persist 活動設計工具
+          href: persist-activity-designer.md
+        - name: TerminateWorkflow 活動設計工具
+          href: terminateworkflow-activity-designer.md
+    - name: 基本活動設計工具
+      items:
+        - name: 概觀和參考
+          displayName: Primitives activity designers
+          href: primitives-activity-designers.md
+        - name: Assign 活動設計工具
+          href: assign-activity-designer.md
+        - name: Delay 活動設計工具
+          href: delay-activity-designer.md
+        - name: InvokeDelegate
+          href: invokedelegate.md
+        - name: InvokeMethod 活動設計工具
+          href: invokemethod-activity-designer.md
+        - name: WriteLine 活動設計工具
+          href: writeline-activity-designer.md
+    - name: 交易活動設計工具
+      items:
+        - name: 概觀和參考
+          displayName: Transaction activity designers
+          href: transaction-activity-designers.md
+        - name: CancellationScope 活動設計工具
+          href: cancellationscope-activity-designer.md
+        - name: CompensableActivity 活動設計工具
+          href: compensableactivity-activity-designer.md
+        - name: Compensate 活動設計工具
+          href: compensate-activity-designer.md
+        - name: Confirm 活動設計工具
+          href: confirm-activity-designer.md
+        - name: TransactionScope 活動設計工具
+          href: transactionscope-activity-designer.md
+    - name: 集合活動設計工具
+      items:
+        - name: 概觀和參考
+          displayName: Collection activity designers
+          href: collection-activity-designers.md
+        - name: AddToCollection<T> 活動設計工具
+          href: addtocollection-t-activity-designer.md
+        - name: ClearCollection<T> 活動設計工具
+          href: clearcollection-t-activity-designer.md
+        - name: ExistsInCollection<T> 活動設計工具
+          href: existsincollection-t-activity-designer.md
+        - name: RemoveFromCollection<T> 活動設計工具
+          href: removefromcollection-t-activity-designer.md
+    - name: 錯誤處理活動設計工具
+      items:
+        - name: 概觀和參考
+          displayName: Error handling activity designers
+          href: error-handling-activity-designers.md
+        - name: Rethrow 活動設計工具
+          href: rethrow-activity-designer.md
+        - name: Throw 活動設計工具
+          href: throw-activity-designer.md
+        - name: TryCatch 活動設計工具
+          href: trycatch-activity-designer.md
+    - name: 移轉活動設計工具
+      items:
+        - name: 概觀和參考
+          displayName: Migration activity designers
+          href: migration-activity-designers.md
+        - name: Interop 活動設計工具
+          href: interop-activity-designer.md
+- name: 偵錯
+  items:
+    - name: 偵錯工作流程
+      href: debugging-workflows-with-the-workflow-designer.md
+    - name: 在工作流程中設定中斷點
+      href: how-to-set-breakpoints-in-workflows.md
+    - name: 使用工作流程設計工具對 XAML 進行偵錯
+      href: how-to-debug-xaml-with-the-workflow-designer.md
+    - name: 不支援的偵錯案例
+      href: unsupported-debugging-scenarios-in-the-workflow-designer.md
+- name: UI 參考
+  items:
+    - name: 瀏覽並選取 .NET 類型對話方塊
+      href: browse-and-select-a-dotnet-type-dialog-box.md
+    - name: CorrelatesOn 定義對話方塊
+      href: correlateson-definition-dialog-box.md
+    - name: 加入相互關聯初始設定式對話方塊
+      href: add-correlationinitializers-dialog-box.md
+    - name: 加入參數及加入引數對話方塊
+      href: add-parameters-and-add-arguments-dialog-boxes.md
+    - name: 型別集合編輯器對話方塊
+      href: type-collection-editor-dialog-box.md
+    - name: 內容定義對話方塊
+      href: content-definition-dialog-box.md
+    - name: 初始化相互關聯對話方塊
+      href: initialize-correlation-dialog-box.md
+    - name: 系統活動索引標籤，選擇工具箱項目對話方塊
+      href: system-activities-tab-choose-toolbox-items-dialog-box.md
+    - name: 工作流程設計工具殼層功能
+      href: workflow-designer-shell-features.md
+    - name: 鍵盤快速鍵
+      href: keyboard-shortcuts-in-the-workflow-designer.md
+    - name: 錯誤訊息
+      href: error-messages-in-workflow-designer.md

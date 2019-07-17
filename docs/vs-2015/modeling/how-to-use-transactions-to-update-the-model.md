@@ -1,5 +1,5 @@
 ---
-title: HOW TO：使用異動更新模型 |Microsoft Docs
+title: 作法：使用異動更新模型 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-modeling
@@ -10,11 +10,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: bbc09543d0ee0297678d3f205becc55a6b6d7714
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60085918"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68181510"
 ---
 # <a name="how-to-use-transactions-to-update-the-model"></a>HOW TO：使用異動更新模型
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
