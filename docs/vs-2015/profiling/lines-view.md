@@ -16,11 +16,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: ccdb211312a6f53e7f519b7fac0e3ac28aab2429
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60058626"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68145634"
 ---
 # <a name="lines-view"></a>程式行檢視
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,7 +45,7 @@ ms.locfileid: "60058626"
   
 - 此陳述式在原始程式檔中結束的字元。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [程式行檢視](../profiling/lines-view-sampling-data.md)   
  [程式行檢視 - 取樣](../profiling/lines-view-dotnet-memory-sampling-data.md)   
  [程式行檢視](../profiling/lines-view-contention-data.md)

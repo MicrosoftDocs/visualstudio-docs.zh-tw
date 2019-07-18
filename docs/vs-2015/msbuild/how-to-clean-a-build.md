@@ -15,11 +15,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: f8c64bb19d65540f8c72be9acb1c5f59deb3c8f9
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60075359"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68156652"
 ---
 # <a name="how-to-clean-a-build"></a>如何：清除組建
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -101,7 +101,7 @@ ms.locfileid: "60075359"
 </Project>  
 ```  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [Exec 工作](../msbuild/exec-task.md)   
  [MakeDir 工作](../msbuild/makedir-task.md)   
  [RemoveDir 工作](../msbuild/removedir-task.md)   

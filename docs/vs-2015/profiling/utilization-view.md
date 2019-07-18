@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 238d821795aaa4e9ef0ac06e117316450b46fda4
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54795828"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68145354"
 ---
 # <a name="utilization-view"></a>使用率檢視
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-[使用率檢視] 顯示目前處理序使用的 CPU、GPU 及其他系統資源的相關資訊。 顯示一段時間內在系統上執行的分析處理序、閒置處理序、系統處理序及其他處理序的平均核心使用率。 不會顯示在任何指定時間作用中的特定核心。 例如，如果兩個核心在指定期間各以 50% 的產量執行，然後此檢視會顯示共使用一個邏輯核心。 此檢視是將程式碼剖析時間分成數個區段而產生。 對於每個區段，圖形都會繪製在該間隔期間於邏輯核心上執行的處理序執行緒平均數目。  
+[使用率檢視]  顯示目前處理序使用的 CPU、GPU 及其他系統資源的相關資訊。 顯示一段時間內在系統上執行的分析處理序、閒置處理序、系統處理序及其他處理序的平均核心使用率。 不會顯示在任何指定時間作用中的特定核心。 例如，如果兩個核心在指定期間各以 50% 的產量執行，然後此檢視會顯示共使用一個邏輯核心。 此檢視是將程式碼剖析時間分成數個區段而產生。 對於每個區段，圖形都會繪製在該間隔期間於邏輯核心上執行的處理序執行緒平均數目。  
   
  ![CPU 使用率檢視](../profiling/media/vsts-ppacpuutil.png "VSTS_PPAcpuUtil")  
   
@@ -51,6 +51,6 @@ ms.locfileid: "54795828"
 ## <a name="zooming"></a>縮放  
  若要放大 CPU 使用率圖形或 GPU 活動圖，請選取一個區段或使用圖形上方的 [縮放] 滑桿工具。 當您切換至其他檢視時，縮放設定會保持不變。 若要再次縮小，請使用 [縮放] 滑桿工具。 您可以使用 Ctrl+滾動滾輪來縮放。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [並行視覺化檢視](../profiling/concurrency-visualizer.md)   
  [核心檢視](../profiling/cores-view.md)

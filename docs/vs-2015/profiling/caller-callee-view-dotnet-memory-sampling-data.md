@@ -12,11 +12,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 9c43ba87fea6af474975c759cc18dab74b12e8eb
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54782487"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68145650"
 ---
 # <a name="callercallee-view---net-memory-sampling-data"></a>呼叫端/被呼叫端檢視 - .NET 記憶體取樣資料
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,7 +31,7 @@ ms.locfileid: "54782487"
   
  按兩下呼叫端或被呼叫端函式資料列，讓該資料列變成目前的函式。  
   
-|資料行|描述|  
+|資料行|說明|  
 |------------|-----------------|  
 |**處理序 ID**|分析執行的處理序 ID (PID)。|  
 |**處理序名稱**|處理序的名稱。|  
@@ -52,7 +52,7 @@ ms.locfileid: "54782487"
 |**專有位元組**|- 若為目前的函式，這是函式在分析執行中所配置的記憶體位元組數目。 這個數目不包含由目前函式呼叫之函式所配置的記憶體。<br />- 若為呼叫端函式，這是目前函式 (從呼叫端函式的呼叫所產生) 的專有位元組數目。<br />- 若為被呼叫端函式，這是函式之執行個體 (從目前函式的呼叫所產生) 所配置的位元組數目。 這個數目不包含由被呼叫端函式呼叫之函式所配置的位元組。|  
 |**專有位元組 %**|在分析執行中配置的所有記憶體位元組中，屬於此函式之專有配置的百分比。|  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [如何：自訂報表檢視資料行](../profiling/how-to-customize-report-view-columns.md)   
  [呼叫端/被呼叫端檢視 - .NET 記憶體檢測資料](../profiling/caller-callee-view-net-memory-instrumentation-data.md)   
  [呼叫端/被呼叫端檢視 - 取樣資料](../profiling/caller-callee-view-sampling-data.md)   

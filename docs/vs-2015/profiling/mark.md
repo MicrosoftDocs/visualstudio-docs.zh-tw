@@ -10,18 +10,18 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: e6d7902ec588af2687b048639a930847ec02b3fa
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54769086"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68155794"
 ---
 # <a name="mark"></a>標記
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-VSPerfCmd.exe 的 [標記] 選項會將指定的資訊插入分析資料檔案中。 個別的 VSPerfReport 報表或分析工具 UI 的標記報表檢視中，則可以列出標記。 [標記] 可用以指定報表的起點和終點並檢視篩選。  
+VSPerfCmd.exe 的 [標記]  選項會將指定的資訊插入分析資料檔案中。 個別的 VSPerfReport 報表或分析工具 UI 的標記報表檢視中，則可以列出標記。 [標記]  可用以指定報表的起點和終點並檢視篩選。  
   
- [標記] 選項必須是命令列上指定的唯一選項。  
+ [標記]  選項必須是命令列上指定的唯一選項。  
   
 ## <a name="syntax"></a>語法  
   
@@ -45,7 +45,7 @@ VSPerfCmd.exe /Launch:TestApp.exe
 VSPerfCmd.exe /Mark:123,TestMark  
 ```  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [VSPerfCmd](../profiling/vsperfcmd.md)   
  [對獨立應用程式進行程式碼剖析](../profiling/command-line-profiling-of-stand-alone-applications.md)   
  [對 ASP.NET Web 應用程式進行程式碼剖析](../profiling/command-line-profiling-of-aspnet-web-applications.md)   

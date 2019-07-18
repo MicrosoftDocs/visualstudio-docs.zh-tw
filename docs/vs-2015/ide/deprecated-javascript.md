@@ -10,11 +10,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: b93a2b4dcc541f32c16766da0dd9dd19a4fdfe0d
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54759752"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68177810"
 ---
 # <a name="ltdeprecatedgt-javascript"></a>&lt;deprecated&gt; (JavaScript)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,7 +35,7 @@ ms.locfileid: "54759752"
  選擇性。 指定是否函式或方法將會移除在未來的版本中，或是否函式或方法已經移除，以及其使用可能會導致錯誤。 若要設定`deprecate`指定函式或方法，將在未來版本中移除。 若要設定`remove`來指定，函式或方法已經移除。  
   
  `locid`  
- 選擇性。 如需函式或方法的當地語系化資訊識別項。 識別項是成員識別碼或其對應至`name`屬性 OpenAjax 中繼資料所定義的訊息組合中的值。 識別項型別取決於所指定的格式[ \<loc >](../ide/loc-javascript.md)項目。  
+ 選擇性。 關於函式或方法的當地語系化資訊識別項。 該識別項會是成員識別碼，或對應由 OpenAjax 中繼資料所定義訊息包中的 `name` 屬性值。 識別項類型會依據在 [\<loc>](../ide/loc-javascript.md) 元素中指定的格式而有所不同。  
   
  `description`  
  選擇性。 函式或已被取代的方法的描述。  
@@ -44,7 +44,7 @@ ms.locfileid: "54759752"
  用來標註函式，其中包含的項目`<deprecated>`，必須放在任何陳述式之前的函式主體。 當您將函數標示為已被取代時，我們建議您取代其[\<摘要 >](../ide/summary-javascript.md)項目`<deprecated>`項目。  
   
 ## <a name="example"></a>範例  
- 下列程式碼示範如何使用`<deprecated>`項目。  
+ 下列程式碼示範如何使用 `<deprecated>` 元素。  
   
 ```javascript  
 function areaFunction(radiusParam) {  
@@ -58,5 +58,5 @@ function areaFunction(radiusParam) {
   
 ```  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [XML 文件註解](../ide/xml-documentation-comments-javascript.md)

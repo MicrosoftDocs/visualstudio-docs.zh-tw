@@ -16,11 +16,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: e0a4a8482dc1c2c66a45902f2f3382b179b46b13
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59662838"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68199126"
 ---
 # <a name="list-source-command"></a>列出原始碼命令
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -59,6 +59,6 @@ Debug.ListSource [/Count:number] [/Current] [/File:filename]
 Debug.ListSource /File:"C:\Visual Studio Projects\Form1.vb" /Line:4 /ShowLineNumbers:yes  
 ```  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [Visual Studio 命令](../../ide/reference/visual-studio-commands.md)   
  [命令視窗](../../ide/reference/command-window.md)

@@ -21,11 +21,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 49d25d49554c587bcaaba8ef09bac967d4b5599a
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59660667"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68157380"
 ---
 # <a name="setenv-task"></a>SetEnv 工作
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,5 +45,5 @@ ms.locfileid: "59660667"
   
 ## <a name="remarks"></a>備註  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [工作參考](../msbuild/msbuild-task-reference.md)

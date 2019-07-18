@@ -14,11 +14,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: b42058e0501612acbf454df725a9f1631489d26e
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54788299"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68155293"
 ---
 # <a name="markerseriesmarkerseries-constructor"></a>marker_series::marker_series 建構函式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -53,5 +53,5 @@ marker_series(
   
  **命名空間：** Concurrency::diagnostic  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [marker_series 類別](../profiling/marker-series-class.md)

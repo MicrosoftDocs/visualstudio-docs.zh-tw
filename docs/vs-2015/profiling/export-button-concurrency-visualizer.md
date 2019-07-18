@@ -14,17 +14,17 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 1717c17a3a881d138b566f37e07456ded16f22c5
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54758562"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68197719"
 ---
 # <a name="export-button-concurrency-visualizer"></a>匯出按鈕 (並行視覺化檢視)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-[匯出] 按鈕可讓您將專屬記錄的呼叫堆疊匯出為 .csv 檔案或與 Microsoft Excel 這類其他工具搭配使用。  
+[匯出]  按鈕可讓您將專屬記錄的呼叫堆疊匯出為 .csv 檔案或與 Microsoft Excel 這類其他工具搭配使用。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [並行視覺化檢視](../profiling/concurrency-visualizer.md)   
  [執行緒檢視](../profiling/threads-view-parallel-performance.md)

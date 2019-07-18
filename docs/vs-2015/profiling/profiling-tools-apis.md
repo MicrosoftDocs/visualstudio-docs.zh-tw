@@ -10,11 +10,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: cabd90c249f4ea725987586874544de5772887ba
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54801153"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68160367"
 ---
 # <a name="profiling-tools-apis"></a>程式碼剖析工具 API
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,5 +34,5 @@ ms.locfileid: "54801153"
 ## <a name="related-sections"></a>相關章節  
  [控制資料收集](../profiling/controlling-data-collection.md)  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [效能總管](../profiling/performance-explorer.md)

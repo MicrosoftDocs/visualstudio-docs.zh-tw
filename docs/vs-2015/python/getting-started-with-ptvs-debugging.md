@@ -10,11 +10,11 @@ author: kraigb
 ms.author: kraigb
 manager: jillfra
 ms.openlocfilehash: b636dd4f3a5c5265231898573bfdf52de2dff84e
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54834470"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68197705"
 ---
 # <a name="getting-started-with-ptvs-debugging"></a>PTVS 快速入門：偵錯
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -54,6 +54,6 @@ if __name__ == "__main__":
   
  您可以在這段簡短的 [YouTube 影片 (英文)](https://www.youtube.com/watch?v=bO7wpzgy74A&list=PLReL099Y5nRdLgGAdrb_YeTdEnd23s6Ff&index=4) 中觀看這些指示。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [Wiki 文件 (英文)](https://github.com/Microsoft/PTVS/wiki/Debugging)   
  [PTVS 快速入門及深度剖析影片 (英文)](https://www.youtube.com/playlist?list=PLReL099Y5nRdLgGAdrb_YeTdEnd23s6Ff)

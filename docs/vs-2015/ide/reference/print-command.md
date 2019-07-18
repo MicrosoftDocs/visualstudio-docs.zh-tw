@@ -16,11 +16,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 65d78387c6d60d0b432db9aab175fbfe8dc2869b
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59666542"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68203557"
 ---
 # <a name="print-command"></a>列印命令
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -58,7 +58,7 @@ Debug.Print text
 >Debug.Print varA  
 ```  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [評估陳述式命令](../../ide/reference/evaluate-statement-command.md)   
  [Visual Studio 命令](../../ide/reference/visual-studio-commands.md)   
  [命令視窗](../../ide/reference/command-window.md)   

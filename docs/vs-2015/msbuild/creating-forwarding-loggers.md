@@ -13,11 +13,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: ecc9bae7176c0d8c0f79452baff87a7a697db459
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59648217"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68184022"
 ---
 # <a name="creating-forwarding-loggers"></a>建立轉送記錄器
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,7 +41,7 @@ ms.locfileid: "59648217"
 ## <a name="multi-processor-aware-loggers"></a>能夠辨識多處理器的記錄器  
  當您在多處理器系統建置專案時，來自每個處理器的建置訊息不會自動按一致順序交錯排列。 因此，您必須使用附加至每個訊息的 <xref:Microsoft.Build.Framework.BuildEventContext> 類別，以建立訊息群組優先順序。 如需多處理器建置的詳細資訊，請參閱[在多處理器環境中記錄](../msbuild/logging-in-a-multi-processor-environment.md)。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [取得組建記錄檔](../msbuild/obtaining-build-logs-with-msbuild.md)   
  [組建記錄器](../msbuild/build-loggers.md)   
  [在多處理器環境中記錄](../msbuild/logging-in-a-multi-processor-environment.md)

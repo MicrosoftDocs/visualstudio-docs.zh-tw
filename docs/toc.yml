@@ -575,6 +575,8 @@
           href: vsto/office-and-sharepoint-development-in-visual-studio.md
         - name: 使用 XML 與 XSLT 檔案
           href: xml-tools/xml-tools-in-visual-studio.md
+        - name: 使用容器進行開發
+          href: containers/index.yml
         - name: 開發包容性應用程式
           items:
             - name: 設計無障礙應用程式

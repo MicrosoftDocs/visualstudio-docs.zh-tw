@@ -13,20 +13,20 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 703d80da623c4fdb72328565513c6debe80447d1
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54762904"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68145468"
 ---
 # <a name="understanding-instrumentation-data-values"></a>認識檢測資料值
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 的「檢測」分析方法會記錄已進行程式碼剖析的應用程式中函式呼叫、程式碼及指示的詳細計時資訊  
+[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 的「檢測」  分析方法會記錄已進行程式碼剖析的應用程式中函式呼叫、程式碼及指示的詳細計時資訊  
   
  **需求**  
   
-- [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], [!INCLUDE[vsPro](../includes/vspro-md.md)]  
+- [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)]、[!INCLUDE[vsPreLong](../includes/vsprelong-md.md)]、[!INCLUDE[vsPro](../includes/vspro-md.md)]  
   
   檢測方法會在已進行程式碼剖析的二進位檔中目標函式的開始和結束處，以及在那些函式每次呼叫其他函式的前後插入程式碼。 插入程式碼會記錄下列項目︰  
   
@@ -36,17 +36,17 @@ ms.locfileid: "54762904"
   
   **需求**  
   
-- [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], [!INCLUDE[vsPro](../includes/vspro-md.md)]  
+- [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)]、[!INCLUDE[vsPreLong](../includes/vsprelong-md.md)]、[!INCLUDE[vsPro](../includes/vspro-md.md)]  
   
   對於每個間隔，分析工具會重新建構出現在間隔結尾的呼叫堆疊。 呼叫堆疊是某時間點在處理器上作用中的函式清單。 只有一個函式 (目前的函式) 在執行程式碼。其他函式是導致呼叫目前函式 (呼叫堆疊) 的函式呼叫鏈結。  
   
   對於呼叫堆疊上的每個函式，在記錄間隔時，分析工具分析會將間隔加入至函式的四個資料值之一或多個值。 分析會根據兩項準則將間隔加入至函式的資料值：  
   
-- 函式程式碼或「子函式」 (由該函式呼叫的函式) 中是否發生間隔。  
+- 函式程式碼或「子函式」  (由該函式呼叫的函式) 中是否發生間隔。  
   
 - 間隔中是否發生作業系統事件。  
   
-  函式間隔的資料值或資料範圍稱為「功能內含耗用」、「功能專屬耗用」、「應用程式內含」及「應用程式專屬」：  
+  函式間隔的資料值或資料範圍稱為「功能內含耗用」  、「功能專屬耗用」  、「應用程式內含」  及「應用程式專屬」  ：  
   
 - 函式的所有間隔都會加入至功能內含耗用資料值。  
   
@@ -98,6 +98,6 @@ ms.locfileid: "54762904"
   
  100 * 函式應用程式專屬 / 工作階段應用程式內含  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [分析效能工具資料](../profiling/analyzing-performance-tools-data.md)   
  [如何：選擇收集方法](../profiling/how-to-choose-collection-methods.md)

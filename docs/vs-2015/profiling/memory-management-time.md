@@ -14,11 +14,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 48cbdd523f4527af84c52366a439a18330e1828c
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54752057"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68157354"
 ---
 # <a name="memory-management-time"></a>記憶體管理時間
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,5 +27,5 @@ ms.locfileid: "54752057"
   
  請檢查相關聯的呼叫堆疊並分析報表，以深入了解分類為記憶體管理的根本封鎖原因。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [執行緒檢視](../profiling/threads-view-parallel-performance.md)

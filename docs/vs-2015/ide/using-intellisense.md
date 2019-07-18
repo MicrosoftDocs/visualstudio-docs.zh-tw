@@ -26,11 +26,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: bb859fe5e66dbfcc1f43dfff3c0744c84066054b
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54758824"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68158299"
 ---
 # <a name="using-intellisense"></a>Using IntelliSense
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -48,43 +48,43 @@ IntelliSense 是一些功能的概括詞彙：列出成員、參數資訊，快�
   
  ![Visual Studio 成員清單](../ide/media/vs2015-intellisense.png "vs2015_Intellisense")  
   
- 您可以鍵入 CTRL+J，並按一下 [編輯]/[IntelliSense]/[列出成員]，或按一下編輯器工具列上的 [列出成員] 按鈕，手動叫用 [列出成員] 功能。 在空白行或可辨識範圍外叫用清單時，清單會顯示全域命名空間中的符號。  
+ 您可以鍵入 CTRL+J，並按一下 [編輯]/[IntelliSense]/[列出成員]  ，或按一下編輯器工具列上的 [列出成員]  按鈕，手動叫用 [列出成員]  功能。 在空白行或可辨識範圍外叫用清單時，清單會顯示全域命名空間中的符號。  
   
- 若要預設關閉 [列出成員] (除非明確地叫用，否則不會出現)，請移至 [工具]/[選項]/[所有語言]，然後取消選取 [自動列出成員]。 如果您想要只關閉特定語言的 [列出成員]，請移至該語言的 [一般] 設定。  
+ 若要預設關閉 [列出成員] (除非明確地叫用，否則不會出現)，請移至 [工具]/[選項]/[所有語言]  ，然後取消選取 [自動列出成員]  。 如果您想要只關閉特定語言的 [列出成員]，請移至該語言的 [一般]  設定。  
   
- 您也可以變更為建議模式，在此模式中只會將您輸入的文字插入程式碼。 例如，如果您輸入不在清單中的識別碼並按下 TAB 鍵，則在完成模式中的項目會取代所輸入的識別碼。 若要在完成模式和建議模式間進行切換，請按 CTRL+ALT+空格鍵，或按一下 [編輯]/[IntelliSense]/[切換完成模式]。  
+ 您也可以變更為建議模式，在此模式中只會將您輸入的文字插入程式碼。 例如，如果您輸入不在清單中的識別碼並按下 TAB 鍵，則在完成模式中的項目會取代所輸入的識別碼。 若要在完成模式和建議模式間進行切換，請按 CTRL+ALT+空格鍵，或按一下 [編輯]/[IntelliSense]/[切換完成模式]  。  
   
 ## <a name="parameter-info"></a>參數資訊  
- [參數資訊] 會提供方法、屬性泛型型別參數 (C# 中) 或範本 (C++ 中) 所需參數的數目、名稱和類型相關資訊。  
+ [參數資訊] 會提供方法、屬性泛型類型參數 (C# 中) 或範本 (C++ 中) 所需參數的數目、名稱和類型相關資訊。  
   
  粗體的參數表示您輸入函式時，所需的下一個參數。 對於多載函式，您可以使用向上鍵和向下鍵檢視函式多載的替代參數資訊。  
   
  ![參數資訊](../ide/media/vs2015-param-info.png "VS2015_param_Info")  
   
- 當您以 XML 文件註解來標註函式和參數時，這些註解將會顯示成 [參數資訊]。 如需詳細資訊，請參閱[提供 XML 程式碼註解](../ide/supplying-xml-code-comments.md)。  
+ 當您以 XML 文件註解來附註函式和參數時，這些註解將會顯示成 [參數資訊]。 如需詳細資訊，請參閱[提供 XML 程式碼註解](../ide/supplying-xml-code-comments.md)。  
   
- 您可以按一下 [編輯]/[IntelliSense]/[參數資訊]、鍵入 CTRL+SHIFT+空格鍵，或按一下編輯器工具列上的 [參數資訊] 按鈕，手動叫用 [參數資訊]。  
+ 您可以按一下 [編輯]/[IntelliSense]/[參數資訊]  、鍵入 CTRL+SHIFT+空格鍵，或按一下編輯器工具列上的 [參數資訊]  按鈕，手動叫用 [參數資訊]。  
   
 ## <a name="quick-info"></a>快速諮詢  
  [快速諮詢] 會顯示程式碼中任一識別項的完整宣告。  
   
  ![Visual Studio 快速諮詢](../ide/media/vs2015-quick-info.png "VS2015_Quick_info")  
   
- 當您從 [列出成員] 方塊中選取成員時，也會出現 [快速諮詢]。  
+ 當您從 [列出成員]  方塊中選取成員時，也會出現 [快速諮詢]。  
   
  ![C&#35; 程式碼檔中的參數資訊](../ide/media/vs2015-paraminfo.png "VS2015_ParamInfo")  
   
- 您可以按一下 [編輯]/[IntelliSense]/[快速諮詢]、鍵入 CTRL+I 或按一下編輯器工具列上的 [快速諮詢] 按鈕，手動叫用 [快速諮詢]。  
+ 您可以按一下 [編輯]/[IntelliSense]/[快速諮詢]  、鍵入 CTRL+I 或按一下編輯器工具列上的 [快速諮詢]  按鈕，手動叫用 [快速諮詢]。  
   
  如果函式是多載函式，IntelliSense 可能不會顯示所有多載形式的資訊。  
   
- 您可以將 [工具]/[選項]/[文字編輯器]/[C/C++]/[進階]/[自動快速資訊] 設為 `false`，來關閉 C++ [快速諮詢]。  
+ 您可以將 [工具]/[選項]/[文字編輯器]/[C/C++]/[進階]/[自動快速資訊]  設為 `false`，來關閉 C++ [快速諮詢]。  
   
 ## <a name="complete-word"></a>自動完成文字  
- 只要您輸入了足夠的字元，可以清楚識別詞彙，[自動完成文字] 就會輸入變數、命令或函式名稱的其餘部分。 您可以按一下 [編輯]/[IntelliSense]/[自動完成文字]、鍵入 CTRL+空格鍵，或按一下編輯器工具列上的 [自動完成文字] 按鈕，叫用 [自動完成文字]。  
+ 只要您輸入了足夠的字元，可以清楚識別詞彙，[自動完成文字] 就會輸入變數、命令或函式名稱的其餘部分。 您可以按一下 [編輯]/[IntelliSense]/[自動完成文字]  、鍵入 CTRL+空格鍵，或按一下編輯器工具列上的 [自動完成文字]  按鈕，叫用 [自動完成文字]。  
   
 ## <a name="intellisense-options"></a>IntelliSense 選項  
- IntelliSense 選項預設為開啟。 若要關閉它們，請按一下 [工具]/[選項]/[文字編輯器]，然後取消選取 [參數資訊] 或 [自動列出成員] (如果您不想要列出成員功能)。  
+ IntelliSense 選項預設為開啟。 若要關閉它們，請按一下 [工具]/[選項]/[文字編輯器]  ，然後取消選取 [參數資訊]  或 [自動列出成員]  (如果您不想要列出成員功能)。  
   
 ## <a name="troubleshooting-intellisense"></a>疑難排解 IntelliSense  
  IntelliSense 選項在某些情況下可能不會依照您的預期運作。  
@@ -101,7 +101,7 @@ MessageBox( hWnd, "String literal|") )
   
  **會關閉自動選項。** IntelliSense 預設會自動運作，但您可將其停用。 即使停用自動陳述式完成，還是可以叫用 IntelliSense 功能。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [Visual Basic 特定 IntelliSense](../ide/visual-basic-specific-intellisense.md)   
  [Visual C# IntelliSense](../ide/visual-csharp-intellisense.md)   
  [JavaScript IntelliSense](../ide/javascript-intellisense.md)   

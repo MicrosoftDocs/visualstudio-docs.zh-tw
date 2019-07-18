@@ -12,18 +12,18 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 8e77c6c2b3bf079e8aae88c9779c3b487ff97fe7
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54769109"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68141857"
 ---
 # <a name="functions-view---net-memory-sampling-data"></a>函式檢視 - .NET 記憶體取樣資料
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 使用取樣方法所收集之 .NET 記憶體配置分析資料的 [函式] 檢視，會列出已在分析回合期間配置記憶體的函式，並報告配置大小和數目。  
   
-|資料行|描述|  
+|資料行|說明|  
 |------------|-----------------|  
 |**處理序 ID**|分析執行的處理序 ID (PID)。|  
 |**處理序名稱**|處理序的名稱。|  
@@ -42,7 +42,7 @@ ms.locfileid: "54769109"
 |**專有位元組**|此函式但非其子函式所配置的記憶體位元組數目。|  
 |**專有位元組 %**|在分析執行配置的所有記憶體位元組中，屬於此函式的專屬位元組百分比。|  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [函式檢視 - 檢測](../profiling/functions-view-dotnet-memory-instrumentation-data.md)   
  [函式檢視](../profiling/functions-view-sampling-data.md)   
  [函式檢視](../profiling/functions-view-instrumentation-data.md)

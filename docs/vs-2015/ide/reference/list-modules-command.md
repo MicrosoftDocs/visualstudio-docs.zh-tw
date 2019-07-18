@@ -16,11 +16,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 7d24b081c20b5874d6daa57832136023ac678c0f
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59649729"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68199146"
 ---
 # <a name="list-modules-command"></a>列出模組命令
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -72,7 +72,7 @@ Debug.ListModules [/Address:yes|no] [/Name:yes|no] [/Order:yes|no]
 Debug.ListModules /Address:yes /Name:yes /Order:no /Path:no /Process:no /SymbolFile:no /SymbolStatus:no /Timestamp:yes /Version:no  
 ```  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [Visual Studio 命令](../../ide/reference/visual-studio-commands.md)   
  [命令視窗](../../ide/reference/command-window.md)   
  [如何：使用模組視窗](../../debugger/how-to-use-the-modules-window.md)

@@ -16,11 +16,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 72818a3bdb4f983326c95b10cfe4e6af4445cc2f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60037942"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68200831"
 ---
 # <a name="rebuild-devenvexe"></a>/Rebuild (devenv.exe)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -48,11 +48,11 @@ devenv SolutionName /rebuild SolnConfigName [/project ProjName] [/projectconfig 
   
 ## <a name="remarks"></a>備註  
   
-- 此參數會執行與整合式開發環境內之 [重建解決方案] 功能表命令相同的功能。  
+- 此參數會執行與整合式開發環境內之 [重建解決方案]  功能表命令相同的功能。  
   
 - 請以雙引號括住包含空格的字串。  
   
-- 清除和組建的摘要資訊 (包含錯誤) 可以顯示在 [命令] 視窗中，或使用 `/out` 參數指定的任何記錄檔中。  
+- 清除和組建的摘要資訊 (包含錯誤) 可以顯示在 [命令]  視窗中，或使用 `/out` 參數指定的任何記錄檔中。  
   
 ## <a name="example"></a>範例  
  此範例使用 `MySolution` 的 `Debug` 解決方案設定中的 `Debug` 專案組建設定，來清除和重建專案 `CSharpWinApp`。  
@@ -61,7 +61,7 @@ devenv SolutionName /rebuild SolnConfigName [/project ProjName] [/projectconfig 
 devenv "C:\Documents and Settings\someuser\My Documents\Visual Studio\Projects\MySolution\MySolution.sln" /rebuild Debug /project "CSharpWinApp\CSharpWinApp.csproj" /projectconfig Debug   
 ```  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [Devenv 命令列參數](../../ide/reference/devenv-command-line-switches.md)   
  [/Build (devenv.exe)](../../ide/reference/build-devenv-exe.md)   
  [/Clean (devenv.exe)](../../ide/reference/clean-devenv-exe.md)   

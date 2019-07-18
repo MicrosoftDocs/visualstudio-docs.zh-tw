@@ -17,11 +17,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 8e36d5e50b15a5ede425715ec756f05ab8d014de
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59655808"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68160411"
 ---
 # <a name="common-msbuild-project-items"></a>一般 MSBuild 專案項目
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,7 +41,7 @@ ms.locfileid: "59655808"
 |融合名稱|選擇性字串。 指定項目的簡單或強式融合名稱。<br /><br /> 當這個屬性存在時，就可以節省時間，因為不需要開啟組件檔案就能取得融合名稱。|  
 |特定版本|選擇性布林值。 指定是否應僅參考融合名稱中的版本。|  
 |別名|選擇性字串。 參考的任何別名。|  
-|Private|選擇性布林值。 指定是否應將參考複製到輸出資料夾。 此屬性與 Visual Studio IDE 中參考的 [複製到本機] 屬性相符。|  
+|Private|選擇性布林值。 指定是否應將參考複製到輸出資料夾。 此屬性與 Visual Studio IDE 中參考的 [複製到本機]  屬性相符。|  
   
 ### <a name="comreference"></a>COM 參考  
  代表專案中的 COM (未受管理) 元件參考。  
@@ -88,7 +88,7 @@ ms.locfileid: "59655808"
 |相依依據|選擇性字串。 指定這個檔案必須倚賴才能正確編譯的檔案。|  
 |自動產生|選擇性布林值。 指出是否已透過 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 整合式開發環境 (IDE) 為專案產生檔案。|  
 |連結|選擇性字串。 當檔案實際位於專案檔影響力之外時所顯示的標記路徑。|  
-|Visible|選擇性布林值。 指出是否要在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 的方案總管中顯示檔案。|  
+|Visible|選擇性布林值。 指出是否要在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 的方案總管  中顯示檔案。|  
 |複製到輸出目錄|選擇性字串。 決定是否要將檔案複製到輸出目錄。 值為：<br /><br /> 1.永不<br />2.永遠<br />3.保留最新的|  
   
 ### <a name="embeddedresource"></a>內嵌資源  
@@ -101,7 +101,7 @@ ms.locfileid: "59655808"
 |最後產生輸出|必要的字串。 在此項目執行的任何檔案產生器所建立的檔案名稱。|  
 |自訂工具命名空間|必要的字串。 在此項目上執行的任何檔案產生器應在其中建立程式碼的命名空間。|  
 |連結|選擇性字串。 如果檔案實際位於專案影響力之外，便會顯示標記路徑。|  
-|Visible|選擇性布林值。 指出是否要在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 的方案總管中顯示檔案。|  
+|Visible|選擇性布林值。 指出是否要在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 的方案總管  中顯示檔案。|  
 |複製到輸出目錄|選擇性字串。 決定是否要將檔案複製到輸出目錄。 值為：<br /><br /> 1.永不<br />2.永遠<br />3.保留最新的|  
 |邏輯名稱|必要的字串。 內嵌資源的邏輯名稱。|  
   
@@ -114,13 +114,13 @@ ms.locfileid: "59655808"
 |Generator|必要的字串。 在此項目上執行的任何檔案產生器名稱。|  
 |最後產生輸出|必要的字串。 在此項目執行的任何檔案產生器所建立的檔案名稱。|  
 |自訂工具命名空間|必要的字串。 在此項目上執行的任何檔案產生器應在其中建立程式碼的命名空間。|  
-|連結|選擇性布林值。 指出是否要在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 的方案總管中顯示檔案。|  
+|連結|選擇性布林值。 指出是否要在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 的方案總管  中顯示檔案。|  
 |發行狀態|必要的字串。 內容的發行狀態，可以是：<br /><br /> -   預設值<br />-   包含<br />-   排除<br />-   資料檔<br />-   必要條件|  
 |為組件|選擇性布林值。 指定檔案是否為組件。|  
-|Visible|選擇性布林值。 指出是否要在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 的方案總管中顯示檔案。|  
+|Visible|選擇性布林值。 指出是否要在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 的方案總管  中顯示檔案。|  
 |複製到輸出目錄|選擇性字串。 決定是否要將檔案複製到輸出目錄。 值為：<br /><br /> 1.永不<br />2.永遠<br />3.保留最新的|  
   
-### <a name="none"></a>無  
+### <a name="none"></a>None  
  代表在建置流程中應該沒有任何角色的檔案。  
   
 |項目名稱|說明|  
@@ -130,7 +130,7 @@ ms.locfileid: "59655808"
 |最後產生輸出|必要的字串。 在此項目執行的任何檔案產生器所建立的檔案名稱。|  
 |自訂工具命名空間|必要的字串。 在此項目上執行的任何檔案產生器應在其中建立程式碼的命名空間。|  
 |連結|選擇性字串。 如果檔案實際位於專案影響力之外，便會顯示標記路徑。|  
-|Visible|選擇性布林值。 指出是否要在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 的方案總管中顯示檔案。|  
+|Visible|選擇性布林值。 指出是否要在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 的方案總管  中顯示檔案。|  
 |複製到輸出目錄|選擇性字串。 決定是否要將檔案複製到輸出目錄。 值為：<br /><br /> 1.永不<br />2.永遠<br />3.保留最新的|  
   
 ### <a name="baseapplicationmanifest"></a>基本應用程式資訊清單  
@@ -142,5 +142,5 @@ ms.locfileid: "59655808"
 ### <a name="import"></a>匯入  
  代表應該由 [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] 編譯器匯入命名空間的組件。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [通用的 MSBuild 專案屬性](../msbuild/common-msbuild-project-properties.md)

@@ -12,11 +12,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 344a2dbe0e629f62f609806008b963be2be058a1
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60108705"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68164061"
 ---
 # <a name="filtering-report-views"></a>篩選報表檢視
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,7 +31,7 @@ ms.locfileid: "60108705"
   
 #### <a name="to-create-a-profiler-report-filter"></a>建立分析工具報表篩選  
   
-1. 如未顯示 [效能報告檢視篩選條件] 視窗，請按一下效能報表檢視器工具列的 [顯示篩選]。  
+1. 如未顯示 [效能報告檢視篩選條件] 視窗，請按一下效能報表檢視器工具列的 [顯示篩選]  。  
   
      效能報告檢視篩選條件是資料表。 資料表的每個資料列都代表篩選的子句。 您可以新增想要篩選的子句，不限數量。  
   
@@ -48,7 +48,7 @@ ms.locfileid: "60108705"
   
 #### <a name="to-create-a-profiler-report-filter-from-the-marks-report-view"></a>從標記報表檢視建立分析工具報表篩選  
   
-1. 從效能報表檢視工具列上的 [目前檢視] 清單中選取 [標記]。  
+1. 從效能報表檢視工具列上的 [目前檢視]  清單中選取 [標記]  。  
   
     即顯示標記分析工具報表。  
   
@@ -58,41 +58,41 @@ ms.locfileid: "60108705"
   
 4. 以滑鼠右鍵按一下，再按一下下列選項之一：  
   
-   - [在標記上加入篩選條件] 會建立使用 [標記] 資料行做為篩選條件欄位的篩選條件子句。  
+   - [在標記上加入篩選條件]  會建立使用 [標記] 資料行做為篩選條件欄位的篩選條件子句。  
   
-   - [在時間戳記上加入篩選條件] 會建立使用 [時間戳記 (以毫秒為單位)] 資料行做為篩選條件欄位的篩選條件子句。  
+   - [在時間戳記上加入篩選條件]  會建立使用 [時間戳記 (以毫秒為單位)] 資料行做為篩選條件欄位的篩選條件子句。  
   
      這兩個選項會在相同的起點和終點篩選目前的資料檔案。 如果匯出篩選用於其他報表，任一選項都可能更好。  
   
 #### <a name="to-load-an-existing-filter-from-a-file"></a>從檔案載入現有的篩選  
   
-1. 在效能報告檢視工具列上，按一下 [匯入篩選]。  
+1. 在效能報告檢視工具列上，按一下 [匯入篩選]  。  
   
-     [載入篩選條件] 對話方塊隨即顯示。  
+     [載入篩選條件]  對話方塊隨即顯示。  
   
 2. 指定要載入之篩選條件 (.vspf) 檔案的位置和檔案名稱。  
   
 #### <a name="to-execute-a-filter"></a>執行篩選條件  
   
-- 在效能報告檢視工具列上，按一下 [執行篩選條件]。  
+- 在效能報告檢視工具列上，按一下 [執行篩選條件]  。  
   
 #### <a name="to-stop-a-filter-that-is-taking-too-long-to-execute"></a>停止花太長時間執行的篩選  
   
-- 在效能報告檢視工具列上，按一下 [停止篩選]。  
+- 在效能報告檢視工具列上，按一下 [停止篩選]  。  
   
 #### <a name="to-remove-a-filter-on-a-report-view"></a>移除報表檢視的篩選  
   
 1. 刪除的效能報告檢視篩選條件中的子句資料列。  
   
-2. 在效能報告檢視工具列上，按一下 [執行篩選條件]。  
+2. 在效能報告檢視工具列上，按一下 [執行篩選條件]  。  
   
 #### <a name="to-save-a-filter-to-a-file"></a>將篩選儲存到檔案  
   
-1. 在效能報告檢視工具列上，按一下 [匯出篩選]。  
+1. 在效能報告檢視工具列上，按一下 [匯出篩選]  。  
   
-     [儲存篩選條件] 對話方塊隨即顯示。  
+     [儲存篩選條件]  對話方塊隨即顯示。  
   
 2. 指定要儲存之篩選條件 (.vspf) 檔案的位置和檔案名稱。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [自訂效能工具報表檢視](../profiling/customizing-performance-tools-report-views.md)

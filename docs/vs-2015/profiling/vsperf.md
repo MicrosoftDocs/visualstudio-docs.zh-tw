@@ -10,11 +10,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: ee221f0c1da32694e869177399981cc16ce901f4
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60099464"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68145297"
 ---
 # <a name="vsperf"></a>VSPerf
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -69,6 +69,6 @@ ms.locfileid: "60099464"
 |**/detach**|停止資料收集，但讓目標處理序繼續執行。|  
 |**/status**|顯示分析工具的狀態。|  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [Windows 8 和 Windows Server 2012 應用程式的效能工具](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md)   
  [從命令列進行程式碼剖析](../profiling/using-the-profiling-tools-from-the-command-line.md)

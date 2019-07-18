@@ -10,11 +10,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 3f64364caf914c030fef806c5ae17e90a8368fa3
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54770955"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68157792"
 ---
 # <a name="status"></a>狀態
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ VSPerfCmd.exe /Status
 ```  
   
 #### <a name="parameters"></a>參數  
- 無  
+ None  
   
 ## <a name="remarks"></a>備註  
  **Status** 選項會顯示分析工具的下列狀態資訊。  
@@ -73,7 +73,7 @@ VSPerfCmd.exe /Status
  **具有監視器存取權的使用者**  
  列出可存取分析工具的使用者名稱。 使用 VSPerfCmd.exe **Admin** 選項，其他使用者就可以獲授與存取權  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [VSPerfCmd](../profiling/vsperfcmd.md)   
  [對獨立應用程式進行程式碼剖析](../profiling/command-line-profiling-of-stand-alone-applications.md)   
  [對 ASP.NET Web 應用程式進行程式碼剖析](../profiling/command-line-profiling-of-aspnet-web-applications.md)   

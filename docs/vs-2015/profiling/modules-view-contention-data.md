@@ -12,11 +12,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 9a2553396614cacbc22925f8f7f3a61d56c50541
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54771026"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68157359"
 ---
 # <a name="modules-view---contention-data"></a>模組檢視 - 爭用資料
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,7 +27,7 @@ ms.locfileid: "54771026"
   
  下表描述爭用資料之 [模組檢視] 中資料行的值。  
   
-|資料行|描述|  
+|資料行|說明|  
 |------------|-----------------|  
 |**專有封鎖時間**|-   針對函式，即為此函式已遭封鎖而無法執行函式主體中程式碼的時間。 不包括由該函式所呼叫函式的封鎖時間。<br />-   針對模組，即為模組中函式的專有封鎖時間總和。<br />-   針對程式行或指令，即為封鎖執行此程式行或指令的時間。|  
 |**專有封鎖時間 %**|-   針對函式或模組，即為在分析回合的所有封鎖時間中，屬於此函式或模組的專有封鎖時間百分比。<br />-   針對程式行或指令，即為分析回合中封鎖執行此程式行或指令之所有封鎖時間的百分比。|  
@@ -45,7 +45,7 @@ ms.locfileid: "54771026"
 |**處理序名稱**|處理序的名稱。|  
 |**原始程式檔**|含有這個函式定義的原始程式檔。|  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [如何：自訂報表檢視資料行](../profiling/how-to-customize-report-view-columns.md)   
  [模組檢視](../profiling/modules-view.md)   
  [模組檢視 - 檢測](../profiling/modules-view-dotnet-memory-instrumentation-data.md)   

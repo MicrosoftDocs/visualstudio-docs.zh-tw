@@ -20,11 +20,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: ea1411925c6858bceaea3e2e190ecb1a5f2c7f89
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59662162"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68196546"
 ---
 # <a name="delete-task"></a>Delete 工作
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -59,6 +59,6 @@ ms.locfileid: "59662162"
 </Project>  
 ```  
   
-## <a name="see-also"></a>另另參閱  
+## <a name="see-also"></a>另請參閱  
  [工作](../msbuild/msbuild-tasks.md)   
  [工作參考](../msbuild/msbuild-task-reference.md)

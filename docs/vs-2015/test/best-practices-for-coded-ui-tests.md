@@ -11,11 +11,11 @@ caps.latest.revision: 41
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 37e0ae51589d85ac52ec962fb3cb193fc37a7ad4
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60081251"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68147898"
 ---
 # <a name="best-practices-for-coded-ui-tests"></a>自動程式化 UI 測試的最佳作法
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,7 +41,7 @@ ms.locfileid: "60081251"
   
 - 可能的話，請將每個錄製的方法限定在 10 個動作以內。 此模組化方法可讓您在 UI 變更時輕鬆地取代方法。  
   
-- 使用自動程式碼 UI 測試產生器建立每個判斷提示，它會自動將判斷提示方法新增至 `UIMap.Designer.cs` 檔案。  
+- 使用自動程式碼 UI 測試產生器  建立每個判斷提示，它會自動將判斷提示方法新增至 `UIMap.Designer.cs` 檔案。  
   
 - 如果使用者介面 (UI) 有所變更，請重新錄製測試方法或判斷提示方法，或重新錄製現有測試方法受影響的區段。  
   
@@ -55,12 +55,12 @@ ms.locfileid: "60081251"
   
   自動程式碼 UI 測試會隨著使用者介面中的許多變更自動調整。 例如，如果 UI 元素已變更位置或色彩，大多數情況下，自動程式化 UI 測試仍可找到正確的元素。  
   
-  在測試執行期間，測試架構會使用一組套用至每個控制項類別的搜尋屬性 (在 `UIMap.Designer.cs` 檔案中的自動程式碼 UI 測試產生器所建立的定義中) 來定位 UI 控制項。 搜尋屬性包含屬性名稱和屬性值的名稱/值組，可用來識別控制項，例如控制項的 <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.FriendlyName%2A>、<xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.Name%2A> 和 <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.ControlType%2A> 屬性。 如果搜尋屬性未變更，自動程式化 UI 測試將會在 UI 中成功找出控制項。 如果搜尋屬性已變更，自動程式碼 UI 測試會以套用啟發學習法的智慧比對演算法來尋找 UI 中的控制項和視窗。 當 UI 已變更時，您可以修改先前已識別之元素的搜尋屬性，以確定已找到這些元素。  
+  在測試執行期間，測試架構會使用一組套用至每個控制項類別的搜尋屬性 (在 `UIMap.Designer.cs` 檔案中的自動程式碼 UI 測試產生器  所建立的定義中) 來定位 UI 控制項。 搜尋屬性包含屬性名稱和屬性值的名稱/值組，可用來識別控制項，例如控制項的 <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.FriendlyName%2A>、<xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.Name%2A> 和 <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.ControlType%2A> 屬性。 如果搜尋屬性未變更，自動程式化 UI 測試將會在 UI 中成功找出控制項。 如果搜尋屬性已變更，自動程式碼 UI 測試會以套用啟發學習法的智慧比對演算法來尋找 UI 中的控制項和視窗。 當 UI 已變更時，您可以修改先前已識別之元素的搜尋屬性，以確定已找到這些元素。  
   
 ## <a name="what-to-do-if-your-user-interface-changes"></a>使用者介面已變更時的因應作法  
  使用者介面在開發期間會經常變更。 下列方法可以減少這些變更的影響：  
   
-- 找出已錄製且參考此控制項的方法，並使用自動程式碼 UI 測試產生器重新錄製此方法的動作。 您可以讓方法使用相同名稱，以覆寫現有的動作。  
+- 找出已錄製且參考此控制項的方法，並使用自動程式碼 UI 測試產生器  重新錄製此方法的動作。 您可以讓方法使用相同名稱，以覆寫現有的動作。  
   
 - 如果控制項有不再有效的判斷提示：  
   
@@ -86,7 +86,7 @@ this.UIMap.ClickSubmit();
 Playback.PlaybackSettings.WaitForReadyLevel = WaitForReadyLevel.UIThreadOnly;  
 ```  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UIMap.UIMap>   
  <xref:Microsoft.VisualStudio.TestTools.UITesting>   
  [使用使用者介面自動化來測試您的程式碼](../test/use-ui-automation-to-test-your-code.md)   
