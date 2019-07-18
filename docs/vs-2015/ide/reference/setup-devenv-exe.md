@@ -14,11 +14,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 6e5bbbf3a1a9601a46aa9d3080f0d20583b43d22
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59670234"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68163301"
 ---
 # <a name="setup-devenvexe"></a>/Setup (devenv.exe)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -43,5 +43,5 @@ devenv /setup
 devenv /setup  
 ```  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [Devenv 命令列參數](../../ide/reference/devenv-command-line-switches.md)

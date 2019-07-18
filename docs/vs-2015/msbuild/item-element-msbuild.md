@@ -18,11 +18,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: cc3d606bb890b5f95089bfc7b1e83b2d34cd56ba
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59650757"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68192601"
 ---
 # <a name="item-element-msbuild"></a>Item 項目 (MSBuild)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -91,7 +91,7 @@ ms.locfileid: "59650757"
 </ItemGroup>  
 ```  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [項目](../msbuild/msbuild-items.md)   
  [MSBuild 屬性](msbuild-properties1.md)   
  [專案檔案結構描述參考](../msbuild/msbuild-project-file-schema-reference.md)

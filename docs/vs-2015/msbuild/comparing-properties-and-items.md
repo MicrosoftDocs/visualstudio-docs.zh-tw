@@ -12,11 +12,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 66fc8065e81b8b93e73ec034a166e3d5645d4b6b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60095824"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68184098"
 ---
 # <a name="comparing-properties-and-items"></a>比較屬性和項目
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,7 +28,7 @@ MSBuild 屬性和項目都可用來將資訊傳遞至工作、評估條件，以
 - 項目是通常代表檔案的物件。 項目物件可具有相關聯的中繼資料集合。 中繼資料是名稱/值組。 如需詳細資訊，請參閱[項目](../msbuild/msbuild-items.md)。  
   
 ## <a name="scalars-and-vectors"></a>純量和向量  
- 由於 MSBuild 屬性是只有一個字串值的名稱/值組，因此，通常會以「純量」來描述它們。 因為 MSBuild 項目類型是項目清單，所以，通常會以「向量」來描述它們。 不過，在實務上，屬性可以代表多個值，而項目類型可以有零個或一個項目。  
+ 由於 MSBuild 屬性是只有一個字串值的名稱/值組，因此，通常會以「純量」  來描述它們。 因為 MSBuild 項目類型是項目清單，所以，通常會以「向量」  來描述它們。 不過，在實務上，屬性可以代表多個值，而項目類型可以有零個或一個項目。  
   
 ### <a name="target-dependency-injection"></a>目標相依性插入  
  若要查看屬性如何代表多個值，請考慮使用常見使用模式來將目標加入至要建置的目標清單。 此清單通常是由屬性值來表示，並以分號分隔目標名稱。  
@@ -181,5 +181,5 @@ KeyFileVersion:
 KeyFileVersion: 1.0.0.3  
 ```  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [進階概念](../msbuild/msbuild-advanced-concepts.md)

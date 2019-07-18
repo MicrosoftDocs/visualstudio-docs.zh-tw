@@ -13,11 +13,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 93451d6d49082621df48c734de951e6a4bc7e281
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60059353"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68156635"
 ---
 # <a name="how-to-display-an-item-list-separated-with-commas"></a>如何：顯示以逗號分隔的項目清單
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -69,6 +69,6 @@ ms.locfileid: "60059353"
 </Project>  
 ```  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [MSBuild 參考](../msbuild/msbuild-reference.md)   
  [項目](../msbuild/msbuild-items.md)

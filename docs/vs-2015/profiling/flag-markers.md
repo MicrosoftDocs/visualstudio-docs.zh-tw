@@ -12,11 +12,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: e531d2d2a41cc9ceaa3b6ba39c6d77a166cfae83
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54755282"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68193654"
 ---
 # <a name="flag-markers"></a>旗標標記
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,6 +49,6 @@ ms.locfileid: "54755282"
  ![顯示四種重要性層級的彙總旗標](../profiling/media/cvmarkeraggregate.png "CVMarkerAggregate")  
 依重要性層級排序的彙總旗標  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [並行視覺化檢視標記](../profiling/concurrency-visualizer-markers.md)   
  [並行視覺化檢視 SDK](../profiling/concurrency-visualizer-sdk.md)

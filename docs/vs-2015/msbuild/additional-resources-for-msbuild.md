@@ -17,11 +17,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 4ea89855a83cdf01255cacc7c8c639c6fcfe1cc4
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59660459"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68187076"
 ---
 # <a name="additional-resources-for-msbuild"></a>MSBuild 的其他資源
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,7 +40,7 @@ ms.locfileid: "59660459"
  [Visual Studio MSBuild 論壇](http://go.microsoft.com/fwlink/?LinkId=48931)  
  [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 專屬的社群論壇。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [MSBuild](msbuild.md)   
  [MSBuild 概念](../msbuild/msbuild-concepts.md)   
  [MSBuild 參考](../msbuild/msbuild-reference.md)

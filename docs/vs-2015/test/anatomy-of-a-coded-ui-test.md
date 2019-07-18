@@ -11,11 +11,11 @@ caps.latest.revision: 25
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 46226d241db04cad0f4859650dc2aff855b72f08
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60102025"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68155612"
 ---
 # <a name="anatomy-of-a-coded-ui-test"></a>自動程式化 UI 測試的結構
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -267,7 +267,7 @@ public void MyTestCleanup()
   
  不可直接編輯 `UIMap.uitest` 檔案。 不過，您可以使用自動程式碼 UI 產生器來修改測試，進而自動修改 `UIMap.uitest` 檔案和 [UIMap.Designer.cs](#UIMapDesignerFile) 檔案。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UIMap.UIMap>   
  <xref:Microsoft.VisualStudio.TestTools.UITesting.WinControls>   
  <xref:Microsoft.VisualStudio.TestTools.UITesting.HtmlControls>   

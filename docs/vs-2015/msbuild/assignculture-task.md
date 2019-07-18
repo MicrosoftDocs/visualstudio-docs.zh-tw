@@ -20,11 +20,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 23b991efaa32e2c1886e6e0cd64bb9d6181190d0
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59667166"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68187050"
 ---
 # <a name="assignculture-task"></a>AssignCulture 工作
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -80,6 +80,6 @@ ms.locfileid: "59667166"
 |`OutAssignedFilesWithNoCulture`|`MyResource2.XX.resx` (沒有其他的中繼資料)|  
 |`OutCultureNeutralAssignedFiles`|`MyResource1.resx (Culture="fr")`<br /><br /> `MyResource2.XX.resx (` (沒有其他的中繼資料)|  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [工作](../msbuild/msbuild-tasks.md)   
  [工作參考](../msbuild/msbuild-task-reference.md)

@@ -16,16 +16,16 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 8398f07cf6fa6bd2702b2d84ab0d29dcd614ed32
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59652303"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68157809"
 ---
 # <a name="replace-in-files-command"></a>檔案中取代命令
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-使用在 [尋找和取代] 視窗 [檔案中取代] 索引標籤提供的選項子集，取代檔案中的文字。  
+使用在 [尋找和取代]  視窗 [檔案中取代]  索引標籤提供的選項子集，取代檔案中的文字。  
   
 ## <a name="syntax"></a>語法  
   
@@ -78,7 +78,7 @@ Edit.ReplaceinFiles findwhat replacewith [/all] [/case]
  選擇性。 搜尋 /lookin:`searchpath` 引數所指定之目錄內的子資料夾。  
   
  /text2 或 /2  
- 選擇性。 在 [尋找結果 2] 視窗中顯示取代結果。  
+ 選擇性。 在 [尋找結果 2]  視窗中顯示取代結果。  
   
  /wild 或 /l  
  選擇性。 可將 `findwhat` 引數中預先定義的特殊字元作為標記法，以表示字元或字元序列。  
@@ -87,13 +87,13 @@ Edit.ReplaceinFiles findwhat replacewith [/all] [/case]
  選擇性。 只搜尋全字相符。  
   
 ## <a name="example"></a>範例  
- 此範例會在 "my visual studio projects" 資料夾的所有 .cls 檔案中搜尋 `btnCancel`，並以 `btnReset` 取代它，在 [尋找結果 2] 視窗中顯示取代資訊。  
+ 此範例會在 "my visual studio projects" 資料夾的所有 .cls 檔案中搜尋 `btnCancel`，並以 `btnReset` 取代它，在 [尋找結果 2]  視窗中顯示取代資訊。  
   
 ```  
 >Edit.ReplaceinFiles btnCancel btnReset /lookin:"c:/my visual studio projects" /ext:.cls /text2  
 ```  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [尋找和取代文字](../../ide/finding-and-replacing-text.md)   
  [檔案中取代](../../ide/replace-in-files.md)   
  [命令視窗](../../ide/reference/command-window.md)   

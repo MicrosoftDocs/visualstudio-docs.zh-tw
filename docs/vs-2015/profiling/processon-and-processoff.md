@@ -10,11 +10,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 77e21a280700520b6861dd42e01a4aefa4faa704
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54756461"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68180196"
 ---
 # <a name="processon-and-processoff"></a>ProcessOn 和 ProcessOff
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,7 +45,7 @@ VSPerfCmd.exe /{ProcessOff|ProcessOn}:PID [Options]
  開始或停止處理序的整數識別碼。 處理序識別碼會列在 Windows 工作管理員的 [處理序] 索引標籤。  
   
 ## <a name="required-subcommands"></a>必要的子命令  
- 無  
+ None  
   
 ## <a name="valid-subcommands"></a>有效的子命令  
  您可以在也包含下列子命令的命令列上指定 **ProcessOn** 和 **ProcessOff**。  
@@ -62,7 +62,7 @@ VSPerfCmd.exe /{ProcessOff|ProcessOn}:PID [Options]
  **GlobalOff**&#124;**GlobalOn**  
  在命令列分析工作階段中，停止或開始分析所有處理序。  
   
- {**ThreadOff**&#124;**ThreadOn**}**:**`TID`  
+ {**ThreadOff**&#124;**ThreadOn**} **:** `TID`  
  停止或開始對指定的執行緒進行分析 (僅檢測方法)。  
   
 ## <a name="example"></a>範例  
@@ -80,7 +80,7 @@ VSPerfCmd /Shutdown
   
 ```  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [VSPerfCmd](../profiling/vsperfcmd.md)   
  [對獨立應用程式進行程式碼剖析](../profiling/command-line-profiling-of-stand-alone-applications.md)   
  [對 ASP.NET Web 應用程式進行程式碼剖析](../profiling/command-line-profiling-of-aspnet-web-applications.md)   

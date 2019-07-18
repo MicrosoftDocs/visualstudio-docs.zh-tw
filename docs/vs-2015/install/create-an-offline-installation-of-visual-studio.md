@@ -14,11 +14,11 @@ author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.openlocfilehash: 197ae2a168f7f14f7d0ea3d9b82b5943c1af82f4
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60077936"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68186009"
 ---
 # <a name="create-an-offline-installation-of-visual-studio"></a>建立 Visual Studio 的離線安裝
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,7 +28,7 @@ ms.locfileid: "60077936"
 此頁面說明當您未連線到網際網路時，如何安裝 Visual Studio 2015。 不過，若要執行「中斷連線」安裝，您必須先使用連線到網際網路的機器，建立離線安裝配置。 以下為作法。
 
 > [!IMPORTANT]
-> 如果您的離線機器是執行 Windows 7 SP1 或 Windows Server 2008 R2，請參閱此主題中[針對離線安裝進行疑難排解](#BKMK_tshoot)一節的特殊指示。  安裝 Visual Studio 2015「之前」，您必須遵循這些指示操作。
+> 如果您的離線機器是執行 Windows 7 SP1 或 Windows Server 2008 R2，請參閱此主題中[針對離線安裝進行疑難排解](#BKMK_tshoot)一節的特殊指示。  安裝 Visual Studio 2015「之前」  ，您必須遵循這些指示操作。
 
 ## <a name="BKMK_Offline"></a> 透過建立離線安裝來安裝
 
@@ -42,9 +42,9 @@ ms.locfileid: "60077936"
 
      您可以使用 `/layout` 參數下載幾乎所有安裝套件，而不只是適用於下載電腦的套件。 此方法提供您在任何位置執行此安裝程式時需要的檔案，且如果您想要安裝一開始未安裝的元件，此安裝程式會非常有用。
 
-3. 執行此命令之後，隨即出現對話方塊，讓您變更放置離線安裝配置的資料夾。   按一下 [下載] 按鈕。
+3. 執行此命令之後，隨即出現對話方塊，讓您變更放置離線安裝配置的資料夾。   按一下 [下載]  按鈕。
 
-     套件順利下載完成時，您應該會看到訊息顯示「安裝成功!已成功取得所有指定元件。」
+     套件順利下載完成時，您應該會看到訊息顯示「安裝成功!  已成功取得所有指定元件。」
 
 4. 找出您稍早之前指定的資料夾。 (例如，找出 D:\VisualStudio2015。)此資料夾包含您需要複製到共用位置或安裝媒體所需的所有項目。
 
@@ -70,7 +70,7 @@ ms.locfileid: "60077936"
 |       語言        |                            URL                            |
 |-----------------------|-----------------------------------------------------------|
 | 中文 (簡體)  | http://go.microsoft.com/fwlink/?LinkID=785882&clcid=0x804 |
-| 和 SharePoint 2010 顯示的 | http://go.microsoft.com/fwlink/?LinkID=785882&clcid=0x404 |
+| 中文 (繁體) | http://go.microsoft.com/fwlink/?LinkID=785882&clcid=0x404 |
 |         捷克文         | http://go.microsoft.com/fwlink/?LinkID=785882&clcid=0x405 |
 |        德文         | http://go.microsoft.com/fwlink/?LinkID=785882&clcid=0x407 |
 |        英文        | http://go.microsoft.com/fwlink/?LinkID=785882&clcid=0x409 |
@@ -84,6 +84,6 @@ ms.locfileid: "60077936"
 |        俄文        | http://go.microsoft.com/fwlink/?LinkID=785882&clcid=0x419 |
 |        土耳其文        | http://go.microsoft.com/fwlink/?LinkID=785882&clcid=0x41F |
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [安裝 Visual Studio](install-visual-studio-2015.md)

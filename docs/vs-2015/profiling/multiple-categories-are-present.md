@@ -14,18 +14,18 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: ba84f3ec67acf44cab35f3c7761159839e4ef5bb
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54769135"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68156119"
 ---
 # <a name="multiple-categories-are-present"></a>存在多個分類
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 已選取包含指定時間範圍內多種活動的區段。 請注意，會顯示兩種色彩，一個垂直堆疊在另一個上。 這些色彩只代表指定時間範圍內頻率最高的前兩項活動。 這兩項活動的頻率顯示彼此相關，不是各佔直條的三分之一和三分之二就是各佔對半。 若要查看詳細資訊，請嘗試放大執行緒檢視的這個區段。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [執行時間 (執行緒檢視)](../profiling/execution-time-threads-view.md)   
  [I/O 時間 (執行緒檢視)](../profiling/i-o-time-threads-view.md)   
  [記憶體管理時間](../profiling/memory-management-time.md)   

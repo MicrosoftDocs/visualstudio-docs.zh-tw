@@ -14,11 +14,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: df6df731de90a9aad9e6cc637b3f218e481b66b7
-ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "56952610"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68198289"
 ---
 # <a name="spanspan-constructor"></a>span::span 建構函式
 
@@ -71,6 +71,6 @@ span(
 
 **命名空間：** Concurrency::diagnostic
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 [span 類別](../profiling/span-class.md)

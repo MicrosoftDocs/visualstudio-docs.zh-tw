@@ -16,11 +16,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 884dda624d5405ec017b544afd223be0bebc97e9
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59655864"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68199168"
 ---
 # <a name="list-memory-command"></a>列出記憶體命令
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -46,7 +46,7 @@ Debug.ListMemory [/ANSI|Unicode] [/Count:number] [/Format:formattype]
  選擇性。 決定要顯示多少個位元組的記憶體，從 `expression` 開始。  
   
  /Format:`formattype`  
- 選擇性。 在 [記憶體] 視窗中檢視記憶體資訊用的格式類型，可能是 OneByte、TwoBytes、FourBytes、EightBytes、Float (32 位元) 或 Double (64 位元)。 如果使用 OneByte，則無法使用 `/Unicode`。  
+ 選擇性。 在 [記憶體]  視窗中檢視記憶體資訊用的格式類型，可能是 OneByte、TwoBytes、FourBytes、EightBytes、Float (32 位元) 或 Double (64 位元)。 如果使用 OneByte，則無法使用 `/Unicode`。  
   
  /Hex&#124;Signed&#124;Unsigned  
  選擇性。 指定檢視數字的格式：帶正負號、不帶正負號，或十六進位。  
@@ -83,7 +83,7 @@ Debug.ListMemory [/ANSI|Unicode] [/Count:number] [/Format:formattype]
 >Debug.ListMemory /Format:float /Count:30 /Unicode  
 ```  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [列出呼叫堆疊命令](../../ide/reference/list-call-stack-command.md)   
  [列出執行緒命令](../../ide/reference/list-threads-command.md)   
  [Visual Studio 命令](../../ide/reference/visual-studio-commands.md)   

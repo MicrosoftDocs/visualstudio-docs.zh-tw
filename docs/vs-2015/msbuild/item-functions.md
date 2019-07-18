@@ -12,11 +12,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: c94624aaea629c087b552ee46266a44f534888d5
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59670260"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68192905"
 ---
 # <a name="item-functions"></a>Item 函式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -102,5 +102,5 @@ ms.locfileid: "59670260"
   -->  
 ```  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [項目](../msbuild/msbuild-items.md)
