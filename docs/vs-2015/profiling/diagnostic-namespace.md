@@ -14,11 +14,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: d412cfa5a9b5e7e90aeac3ac6bbb530b0ef48ad0
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54758481"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68157588"
 ---
 # <a name="diagnostic-namespace"></a>diagnostic 命名空間
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,14 +35,14 @@ namespace diagnostic;
   
 ### <a name="classes"></a>類別  
   
-|名稱|描述|  
+|名稱|說明|  
 |----------|-----------------|  
 |[marker_series 類別](../profiling/marker-series-class.md)|表示由單一提供者產生之事件的序列通道。|  
 |[span 類別](../profiling/span-class.md)|定義應用程式階段。|  
   
 ### <a name="enumerations"></a>列舉  
   
-|名稱|描述|  
+|名稱|說明|  
 |----------|-----------------|  
 |[marker_importance 列舉](../profiling/marker-importance-enumeration.md)|表示並行視覺化檢視標記的重要性層級。|  
   
@@ -51,5 +51,5 @@ namespace diagnostic;
   
  **命名空間：** 並行  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [Concurrency 命名空間 (並行視覺化檢視)](../profiling/concurrency-namespace-concurrency-visualizer.md)

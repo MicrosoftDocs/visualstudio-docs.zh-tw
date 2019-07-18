@@ -13,11 +13,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 468561a627a3ad7eb477328b5afef794c7acf2c7
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60050195"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68199951"
 ---
 # <a name="overriding-toolsversion-settings"></a>覆寫 ToolsVersion 設定
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -126,7 +126,7 @@ msbuild.exe someproj.proj /tv:12.0 /p:Configuration=Debug
   
     4. 否則，請使用目前的 `ToolsVersion`。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [多目標](../msbuild/msbuild-multitargeting-overview.md)   
  [MSBuild 概念](../msbuild/msbuild-concepts.md)   
  [Toolset (ToolsVersion)](../msbuild/msbuild-toolset-toolsversion.md)   

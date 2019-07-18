@@ -12,11 +12,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 7ed0d8a2ccf8e33b493ddcb71f9ce3a794a06862
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54787661"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68150749"
 ---
 # <a name="call-tree-view---net-memory-sampling-data"></a>呼叫樹狀圖檢視 - .NET 記憶體取樣資料
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,14 +26,14 @@ ms.locfileid: "54787661"
  [呼叫樹狀圖] 檢視中的值，適用於呼叫樹狀圖中父函式所呼叫的函式執行個體。 百分比值的計算方式是比較函式執行個體值與分析執行中的總配置數目或大小。  
   
 ## <a name="highlighting-the-execution-hot-path"></a>反白顯示執行最忙碌路徑  
- [呼叫樹狀結構] 檢視可以展開並反白顯示已建立最大或大部分記憶體物件之處理序或函式的執行路徑。 若要顯示最常使用的路徑，以滑鼠右鍵按一下處理序或函式，然後按一下 [展開最忙碌路徑]。  
+ [呼叫樹狀結構] 檢視可以展開並反白顯示已建立最大或大部分記憶體物件之處理序或函式的執行路徑。 若要顯示最常使用的路徑，以滑鼠右鍵按一下處理序或函式，然後按一下 [展開最忙碌路徑]  。  
   
 ## <a name="setting-the-call-tree-root-node"></a>設定呼叫樹狀圖根節點  
- 分析執行中的每個處理序都會顯示為根節點。 若要將 [呼叫樹狀圖] 檢視的開始節點設定為不同的節點，請以滑鼠右鍵按一下您想要設定為開始節點的節點，然後選取 [設定根目錄]。  
+ 分析執行中的每個處理序都會顯示為根節點。 若要將 [呼叫樹狀圖] 檢視的開始節點設定為不同的節點，請以滑鼠右鍵按一下您想要設定為開始節點的節點，然後選取 [設定根目錄]  。  
   
- 設定根節點時，除了所選取節點的樹狀子目錄以外，請從檢視中排除所有其他的項目。 您可以將根節點重設回所檢視的節點，並以滑鼠右鍵按一下 [呼叫樹狀圖檢視] 視窗，然後選取 [重設根目錄]。  
+ 設定根節點時，除了所選取節點的樹狀子目錄以外，請從檢視中排除所有其他的項目。 您可以將根節點重設回所檢視的節點，並以滑鼠右鍵按一下 [呼叫樹狀圖檢視] 視窗，然後選取 [重設根目錄]  。  
   
-|資料行|描述|  
+|資料行|說明|  
 |------------|-----------------|  
 |**處理序 ID**|分析執行的處理序 ID (PID)。|  
 |**處理序名稱**|處理序的名稱。|  
@@ -53,7 +53,7 @@ ms.locfileid: "54787661"
 |**專有位元組**|此函式執行個體所配置記憶體的位元組數目，而函式執行個體是由呼叫樹狀圖中的父函式所呼叫。 此數目未包含子函式所進行的配置。|  
 |**專有位元組 %**|在分析執行中配置的所有記憶體位元組中，屬於此函式之專有配置的百分比。|  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [呼叫樹狀圖檢視 - 檢測](../profiling/call-tree-view-dotnet-memory-instrumentation-data.md)   
  [呼叫樹狀圖檢視](../profiling/call-tree-view-sampling-data.md)   
  [呼叫樹狀圖檢視](../profiling/call-tree-view-instrumentation-data.md)

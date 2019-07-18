@@ -24,11 +24,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 9bc8b770e654442f14e693fda35d7cf6f5edbd12
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59654825"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68158260"
 ---
 # <a name="rc-task"></a>RC 工作
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,7 +41,7 @@ ms.locfileid: "59654825"
 |參數|說明|  
 |---------------|-----------------|  
 |**AdditionalIncludeDirectories**|選擇性的 **String[]** 參數。<br /><br /> 將目錄加入至要搜尋 include 檔案的目錄清單。<br /><br /> 如需詳細資訊，請參閱 MSDN 網站上[使用 RC (RC 命令列)](http://go.microsoft.com/fwlink/?LinkId=155730) 中的 **/I** 選項。|  
-|**AdditionalOptions**|選擇性的 **String** 參數。<br /><br /> 命令列 optionsor 範例清單：**"**_/option1 /option2 /option#_"。 使用此參數，來指定任何其他 **RC** 工作參數未表示的命令列選項。<br /><br /> 如需詳細資訊，請參閱 MSDN 網站上[使用 RC (RC 命令列)](http://go.microsoft.com/fwlink/?LinkId=155730) 中的選項。|  
+|**AdditionalOptions**|選擇性的 **String** 參數。<br /><br /> 命令列 optionsor 範例清單： **"** _/option1 /option2 /option#_ "。 使用此參數，來指定任何其他 **RC** 工作參數未表示的命令列選項。<br /><br /> 如需詳細資訊，請參閱 MSDN 網站上[使用 RC (RC 命令列)](http://go.microsoft.com/fwlink/?LinkId=155730) 中的選項。|  
 |**文化特性**|選擇性的 **String** 參數。<br /><br /> 指定代表資源中所使用文化特性 (Culture) 的地區設定識別碼。<br /><br /> 如需詳細資訊，請參閱 MSDN 網站上[使用 RC (RC 命令列)](http://go.microsoft.com/fwlink/?LinkId=155730) 中的 **/l** 選項。|  
 |**IgnoreStandardIncludePath**|選擇性的 **Boolean** 參數。<br /><br /> 如果 `true`，可防止資源編譯器在搜尋標題檔或資源檔時檢查 INCLUDE 環境變數。<br /><br /> 如需詳細資訊，請參閱 MSDN 網站上[使用 RC (RC 命令列)](http://go.microsoft.com/fwlink/?LinkId=155730) 中的 **/x** 選項。|  
 |**NullTerminateStrings**|選擇性的 **Boolean** 參數。<br /><br /> 如果 `true`，null 會終止字串資料表中的所有字串。<br /><br /> 如需詳細資訊，請參閱 MSDN 網站上[使用 RC (RC 命令列)](http://go.microsoft.com/fwlink/?LinkId=155730) 中的 **/n** 選項。|  
@@ -55,5 +55,5 @@ ms.locfileid: "59654825"
   
 ## <a name="remarks"></a>備註  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [工作參考](../msbuild/msbuild-task-reference.md)

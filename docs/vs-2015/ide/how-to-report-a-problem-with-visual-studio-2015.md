@@ -10,11 +10,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: d8cedd5ab26539d5ebe32aee8df272691dd0a779
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60083645"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68186305"
 ---
 # <a name="how-to-report-a-problem-with-visual-studio-2015"></a>如何回報 Visual Studio 2015 的問題
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,7 +27,7 @@ Microsoft 尊重您的隱私權。 如需我們如何處理您所傳送之資料
 
 ## <a name="open-the-report-a-problem-tool"></a>開啟 [回報問題] 工具
 
-按一下標題列中 [快速啟動] 旁的使用者意見反應圖示，或按一下 [說明] > [傳送意見反應] > [回報問題]。
+按一下標題列中 [快速啟動]  旁的使用者意見反應圖示，或按一下 [說明] > [傳送意見反應] > [回報問題]  。
 
 ![[回報問題] 功能表項目](../ide/media/report-a-problem-menu-item.png "[回報問題] 功能表項目")
 
@@ -53,7 +53,7 @@ Microsoft 尊重您的隱私權。 如需我們如何處理您所傳送之資料
 
 1. 追蹤和堆積傾印檔案有助於我們診斷問題。   我們非常感激您願意使用 [回報問題] 工具記錄重現問題的步驟，並將資料傳送給 Microsoft。
 
-2. 按一下 [記錄重現問題的動作] 旁邊的 &gt; 形箭號。 若您的問題造成 Visual Studio 停滯或當機，請開啟另一個 Visual Studio 執行個體，並從清單檢視中加以選取。
+2. 按一下 [記錄重現問題的動作]  旁邊的 &gt; 形箭號。 若您的問題造成 Visual Studio 停滯或當機，請開啟另一個 Visual Studio 執行個體，並從清單檢視中加以選取。
 
 3. 按一下 [開始錄製]  並執行重現問題的步驟。 完成之後，請按一下浮動視窗中的 [停止錄製]  按鈕。
 
@@ -67,8 +67,8 @@ Microsoft 尊重您的隱私權。 如需我們如何處理您所傳送之資料
 
 ## <a name="submit-the-report"></a>提交報告
 
-按一下 [提交] 按鈕，連同任何影像、追蹤或傾印檔案送出您的報告。 如果 [提交] 按鈕呈現灰色，請確定您是否已提供標題與描述。
+按一下 [提交] 按鈕，連同任何影像、追蹤或傾印檔案送出您的報告。 如果 [提交]  按鈕呈現灰色，請確定您是否已提供標題與描述。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [告訴我們](../ide/talk-to-us.md)
