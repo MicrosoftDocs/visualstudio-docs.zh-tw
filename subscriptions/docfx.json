@@ -42,8 +42,7 @@
       "ms.prod": "visual-studio-family",
       "ms.technology": "vs-subscriptions",
       "disable_contribution_on_translation_quality": ["MT"],
-      "searchScope": ["VS Subscriptions"],
-      "hideScope": true
+      "searchScope": ["VS Subscriptions"]
     },
     "fileMetadata": {},
     "template": [],
