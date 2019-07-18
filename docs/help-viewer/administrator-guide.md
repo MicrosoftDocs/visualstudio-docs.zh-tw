@@ -3,23 +3,23 @@ title: Help Viewer 系統管理員指南
 ms.date: 11/01/2017
 ms.topic: conceptual
 ms.assetid: 4340c69f-b96b-4932-bb82-38b16a5ab149
-author: gewarren
-ms.author: gewarren
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8fe194e11edf0a3f825303137b9bdcc755135eee
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 037ee411c156d21145160dc95b40078fd841493c
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62972989"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825118"
 ---
 # <a name="help-viewer-administrator-guide"></a>Help Viewer 系統管理員指南
 
 不管使用或不使用網際網路存取，說明檢視器可讓您管理網路環境的本機說明安裝。 本機說明內容會設定為以每台機器為基礎。 根據預設，使用者必須擁有系統管理員權限，以更新其本機說明安裝。
 
-如果您的網路環境可讓用戶端存取網際網路，您可以使用 **Help Content Manager** 可執行檔從網際網路部署本機說明內容。 如需 HlpCtntMgr.exe 命令列語法的詳細資訊，請參閱 [Help Content Manager 的命令列引數](../help-viewer/command-line-arguments.md)。
+如果您的網路環境可讓用戶端存取網際網路，您可以使用 **Help Content Manager** 可執行檔從網際網路部署本機說明內容。 如需 HlpCtntMgr.exe  命令列語法的詳細資訊，請參閱 [Help Content Manager 的命令列引數](../help-viewer/command-line-arguments.md)。
 
 如需建立內容、建立內部網路服務端點以及類似活動類型的資訊，請參閱 [Help Viewer SDK](../extensibility/internals/microsoft-help-viewer-sdk.md)。
 
@@ -41,7 +41,7 @@ ms.locfileid: "62972989"
 \\%ProgramFiles(x86)%\Microsoft Help Viewer\v2.3\HlpCtntmgr.exe /operation \<*name*> /catalogname \<*catalog name*> /locale \<*locale*>
 ```
 
-如需 HlpCtntMgr.exe 命令列語法的詳細資訊，請參閱 [Help Content Manager 的命令列引數](../help-viewer/command-line-arguments.md)。
+如需 HlpCtntMgr.exe  命令列語法的詳細資訊，請參閱 [Help Content Manager 的命令列引數](../help-viewer/command-line-arguments.md)。
 
 需求：
 
@@ -59,7 +59,7 @@ ms.locfileid: "62972989"
 
 #### <a name="to-install-english-content-from-the-internet"></a>從網際網路安裝英文內容
 
-1. 選擇 [開始]，然後選擇 [執行]。
+1. 選擇 [開始]  ，然後選擇 [執行]  。
 
 2. 輸入下列命令：
 
@@ -78,7 +78,7 @@ ms.locfileid: "62972989"
 - 在安裝本機說明內容後，使用者必須擁有系統管理員權限，以更新、新增或移除本機說明內容。
 
     > [!TIP]
-    > 如果使用者沒有系統管理員權限，建議您停用 Help Viewer 中的 [管理內容] 索引標籤。 如需詳細資訊，請參閱 [Help Content Manager 覆寫](../help-viewer/behavior-overrides.md)。
+    > 如果使用者沒有系統管理員權限，建議您停用 Help Viewer 中的 [管理內容]  索引標籤。 如需詳細資訊，請參閱 [Help Content Manager 覆寫](../help-viewer/behavior-overrides.md)。
 
 警告：
 
@@ -90,25 +90,25 @@ ms.locfileid: "62972989"
 
 #### <a name="to-uninstall-local-help"></a>解除安裝本機說明
 
-1. 在 Help Viewer 中，選擇 [管理內容] 索引標籤。
+1. 在 Help Viewer 中，選擇 [管理內容]  索引標籤。
 
 2. 巡覽至 Visual Studio 文件集。
 
-3. 選擇每個子項目旁的 [移除]。
+3. 選擇每個子項目旁的 [移除]  。
 
-4. 選擇 [更新] 以解除安裝。
+4. 選擇 [更新]  以解除安裝。
 
-5. 瀏覽至 *%ProgramData%\Microsoft\HelpLibrary2\Catalogs\VisualStudio15*，並確認該資料夾只包含檔案 catalogType.xml。
+5. 瀏覽至 *%ProgramData%\Microsoft\HelpLibrary2\Catalogs\VisualStudio15*，並確認該資料夾只包含檔案 catalogType.xml  。
 
    一旦移除了所有先前安裝的本機 Visual Studio 說明內容，您已準備好下載基底內容集。
 
 #### <a name="to-download-the-content"></a>下載內容
 
-1. 在 Help Viewer 中，選擇 [管理內容] 索引標籤。
+1. 在 Help Viewer 中，選擇 [管理內容]  索引標籤。
 
-2. 在 [建議的文件] 或 [可用的文件] 之下，巡覽至您想要下載的文件集，然後選擇 [新增]。
+2. 在 [建議的文件]  或 [可用的文件]  之下，巡覽至您想要下載的文件集，然後選擇 [新增]  。
 
-3. 選擇 [更新]。
+3. 選擇 [更新]  。
 
 接下來，您必須封裝內容，讓它可以部署到用戶端電腦。
 
@@ -116,7 +116,7 @@ ms.locfileid: "62972989"
 
 1. 建立複製內容的目標資料夾，以便稍後進行部署。 例如：*C:\VSHelp*。
 
-2. 以系統管理員權限開啟 cmd.exe。
+2. 以系統管理員權限開啟 cmd.exe  。
 
 3. 巡覽至您在步驟 1 中建立的資料夾。
 
@@ -132,7 +132,7 @@ ms.locfileid: "62972989"
 
      例如，將 *C:\VSHelp* 中的內容複製到 *\\\myserver\VSHelp*。
 
-2. 建立 .bat 檔案，以包含說明內容的部署指令碼。 由於用戶端在推送的部分過程中要刪除的檔案可能有讀取鎖定，您應該在推送更新之前關閉用戶端。 例如：
+2. 建立 .bat  檔案，以包含說明內容的部署指令碼。 由於用戶端在推送的部分過程中要刪除的檔案可能有讀取鎖定，您應該在推送更新之前關閉用戶端。 例如：
 
     ```cmd
     REM - copy pre-ripped content to ProgramData
@@ -140,7 +140,7 @@ ms.locfileid: "62972989"
     if ERRORLEVEL 1 ECHO *** ERROR COPYING Help Library files to ProgramData (%ERRORLEVEL%)
     ```
 
-3. 在您要安裝說明內容的本機電腦上執行 .bat 檔案。
+3. 在您要安裝說明內容的本機電腦上執行 .bat  檔案。
 
 ## <a name="see-also"></a>另請參閱
 

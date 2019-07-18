@@ -7,12 +7,12 @@ ms.date: 04/02/2019
 ms.topic: article
 ms.technology: vs-ide-install
 ms.assetid: 25CD47A4-5B32-4734-8EF3-E24A02AABF29
-ms.openlocfilehash: d8312733c92ab2802c9594459d5e855b5600a352
-ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
+ms.openlocfilehash: ca5c3133e3f03d4e68449156b35d6643c637a11b
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "67692839"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825557"
 ---
 # <a name="introduction-to-azure-functions"></a>Azure Functions 簡介
 
@@ -138,14 +138,14 @@ Visual Studio for Mac 會建立包含預設函數的 .NET Standard 專案。 其
 ## <a name="available-function-templates"></a>可用的函式範本
 
 - **GitHub 觸發程序** - 回應您的 GitHub 存放庫中發生的事件。 如需詳細資訊，請參閱[有關 GitHub 的 Azure Functions 文章](/azure/azure-functions/functions-create-github-webhook-triggered-function)
-    - GitHub 註解工具 - 這個函式會在收到問題或提取要求的 GitHub Webhook 時執行，並新增註解。
-    - GitHub WebHook - 此函數會在收到 GitHub Webhook 時執行。
+  - GitHub 註解工具 - 這個函式會在收到問題或提取要求的 GitHub Webhook 時執行，並新增註解。
+  - GitHub WebHook - 此函數會在收到 GitHub Webhook 時執行。
 
 - **HTTP** - 使用 HTTP 要求來觸發程式碼執行。 下列 HTTP 觸發程序有明確的範本：
-    - Http 觸發程序
-    - Http GET CRUD
-    - Http POST CRUD
-    - 含有參數的 Http 觸發程序
+  - Http 觸發程序
+  - Http GET CRUD
+  - Http POST CRUD
+  - 含有參數的 Http 觸發程序
 
 - **計時器** - 依預先定義的排程執行清理或其他批次工作。 這個範本採用兩個欄位：名稱和排程，即六個欄位的 CRON 運算式。 如需詳細資訊，請參閱[有關時間的 Azure 函式文章](/azure/azure-functions/functions-create-scheduled-function)
 

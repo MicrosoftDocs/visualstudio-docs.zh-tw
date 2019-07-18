@@ -6,13 +6,12 @@ manager: evelynp
 ms.date: 03/14/2018
 ms.topic: conceptual
 description: 了解如何匯出訂閱者清單和其訂閱指派的詳細資料。
-searchscope: VS Subscription
-ms.openlocfilehash: 7e2db1c0de036441801aa56ae1956d0a10719798
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 02081a0b36b2baf769396c13a2ae69f9af5be58b
+ms.sourcegitcommit: 208395bc122f8d3dae3f5e5960c42981cc368310
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62945847"
+ms.lasthandoff: 07/10/2019
+ms.locfileid: "67783521"
 ---
 # <a name="exporting-subscription-information"></a>匯出訂用帳戶資訊
 
@@ -20,6 +19,6 @@ ms.locfileid: "62945847"
 
 此功能在幾個情況下非常有用，如追蹤指派和到期日。 舉例來說，如果您要從使用 BAN 追蹤訂用帳戶指派，移轉到使用 GUID 追蹤，則可以在 Microsoft Excel 中，使用此報表搭配 VLOOKUP 公式來適當地比對訂閱者。
 
-若要執行匯出，只要選取 [匯出] 索引標籤，然後檔案就會下載到您的本機電腦。 針對包含您使用者訂用帳戶的合約，檔案中會有合約的名稱，以及匯出的日期。
+若要執行匯出，只要選取 [匯出]  索引標籤，然後檔案就會下載到您的本機電腦。 針對包含您使用者訂用帳戶的合約，檔案中會有合約的名稱，以及匯出的日期。
 > [!div class="mx-imgBorder"]
 > ![匯出訂閱者](_img/exporting-subscriptions/exporting-subscriptions.png)

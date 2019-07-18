@@ -29,12 +29,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fcfab3a14e8dfab6bdfb62b32839ebcbd69d21af
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.openlocfilehash: 811565d6e4189eb04b33ce07fe04718def905922
+ms.sourcegitcommit: f369ff7e84b0216f01570a486c7be80ca6d0e61a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66746932"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "68250645"
 ---
 # <a name="create-and-configure-type-members-in-class-designer"></a>在類別設計工具中建立及設定類型成員
 
@@ -122,7 +122,8 @@ ms.locfileid: "66746932"
 
 4. 您可以選擇性地指定類型等其他成員相關資訊。
 
-     **注意：** 您也可以使用鍵盤快速鍵來建立成員。 如需詳細資料，請參閱[類別圖表和類別細節視窗中的鍵盤和滑鼠快速鍵](keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window.md)。
+    > [!NOTE]
+    > 您也可以使用鍵盤快速鍵來建立成員。 如需詳細資料，請參閱[類別圖表和類別細節視窗中的鍵盤和滑鼠快速鍵](keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window.md)。
 
 ## <a name="modify-type-members"></a>列舉類型成員
 
@@ -150,7 +151,7 @@ ms.locfileid: "66746932"
 
 - **成員修飾詞**
 
-     將成員的可視性修飾詞變更為 `Public` (`public`)、`Private` (`private`)、`Friend` (`internal`) `Protected` (`protected`)、`Protected``Friend` (`protected``internal`) 或 `Default`。
+     將成員的可視性修飾詞變更為 `Public` (`public`)、`Private` (`private`)、`Friend` (`internal`) `Protected` (`protected`)、`Protected Friend` (`protected internal`) 或 `Default`。
 
 - **\<新增成員>**
 

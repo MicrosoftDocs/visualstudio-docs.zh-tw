@@ -6,13 +6,12 @@ manager: evelynp
 ms.date: 10/03/2017
 ms.topic: conceptual
 description: 了解系統管理員可以如何處理過期的 Visual Studio 訂閱
-searchscope: VS Subscription
-ms.openlocfilehash: 3008f570c32970de2764871132e3ddde3dda226c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 0b47c18ffc826a755aeafbfc2621aef890afaf37
+ms.sourcegitcommit: f369ff7e84b0216f01570a486c7be80ca6d0e61a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62945795"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "68250394"
 ---
 # <a name="handling-expired-subscriptions"></a>處理過期的訂用帳戶
 

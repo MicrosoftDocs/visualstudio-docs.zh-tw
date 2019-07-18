@@ -1,7 +1,7 @@
 ---
 title: 容器的進階範例
 description: ''
-ms.date: 04/18/2018
+ms.date: 07/03/2019
 ms.topic: conceptual
 ms.assetid: e03835db-a616-41e6-b339-92b41d0cfc70
 author: heaths
@@ -11,12 +11,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 1d14a02c70c0e4496c482940237054027e152a70
-ms.sourcegitcommit: c7b9ab1bc19d74b635c19b1937e92c590dafd736
+ms.openlocfilehash: a1a9c1a8db0c4f3481e1edf220412612d70064a8
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67552854"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825181"
 ---
 # <a name="advanced-example-for-containers"></a>容器的進階範例
 

@@ -6,13 +6,12 @@ manager: evelynp
 ms.date: 12/28/2017
 ms.topic: conceptual
 description: 請找出 Visual Studio 訂用帳戶隨附軟體下載項目的清單。
-searchscope: VS Subscription
-ms.openlocfilehash: fea44e77267a7f2e2d0964ee614807875198cd92
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: fa25dea9e724c2a13f64134b4c0d2fa7891f8bfe
+ms.sourcegitcommit: f369ff7e84b0216f01570a486c7be80ca6d0e61a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62561035"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "68250296"
 ---
 # <a name="how-do-i-know-what-software-is-available-for-download"></a>我要如何知道哪些軟體可供下載？
 
@@ -26,6 +25,6 @@ ms.locfileid: "62561035"
 若要快速尋找產品，請使用頁面頂端的「搜尋」功能或按一下左邊的不同產品類型。
 
 > [!TIP]
-> 若要尋找您的產品金鑰，請按一下頁面頂端的 [產品金鑰] 索引標籤。
+> 若要尋找您的產品金鑰，請按一下頁面頂端的 [產品金鑰]  索引標籤。
 
 您也可以下載包含每個訂用帳戶類型的豐富[可用軟體](http://download.microsoft.com/download/1/5/4/15454442-CF17-47B9-A65D-DF84EF88511B/Visual_Studio_by_Subscription_Level.xlsx)清單。

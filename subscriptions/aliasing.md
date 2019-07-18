@@ -6,13 +6,12 @@ manager: evelynp
 ms.date: 01/02/2018
 ms.topic: conceptual
 description: 登入可能會因為使用別名或易記名稱而失敗
-searchscope: VS Subscription
-ms.openlocfilehash: ac3f9df365e0b7924b615c2ae8cbb70d93d04948
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7285c1ede495a1aa2603216f2a9e9fe9f89331ea
+ms.sourcegitcommit: 208395bc122f8d3dae3f5e5960c42981cc368310
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62946162"
+ms.lasthandoff: 07/10/2019
+ms.locfileid: "67783680"
 ---
 # <a name="signing-in-to-visual-studio-subscriptions-may-fail-when-using-aliases"></a>登入 Visual Studio 訂用帳戶可能會因為使用別名而失敗
 
@@ -46,21 +45,21 @@ ms.locfileid: "62946162"
 請依照這些步驟使用目錄帳戶新增訂閱者。
 
 1. 瀏覽[大量授權服務中心](https://www.microsoft.com/Licensing/servicecenter/default.aspx) (VLSC) 並登入。
-2. 從 VLSC [系統管理] 頁面，按一下 [訂用帳戶]，然後按一下 [Visual Studio 訂用帳戶]。
+2. 從 VLSC [系統管理] 頁面，按一下 [訂用帳戶]  ，然後按一下 [Visual Studio 訂用帳戶]  。
 
     > [!div class="mx-imgBorder"]
     > ![[訂閱] 功能表](_img//vlsc/vlsc-subscriptions.png)
 
-3. 按一下與該 Visual Studio 訂用帳戶關聯的 [合約編號]。
+3. 按一下與該 Visual Studio 訂用帳戶關聯的 [合約編號]  。
 
     > [!div class="mx-imgBorder"]
     > ![選取合約](_img/vlsc/vlsc-agreement.png)
 
-4. 按一下 [指派訂用帳戶]。
-5. 選取想要的 [訂用帳戶層級]。
-6. 驗證您有可指派的訂用帳戶，然後按一下 [下一步]。
-7. 輸入訂閱者詳細資料並在 [電子郵件地址] 中輸入目錄地址，然後按一下 [下一步]。
-8. 驗證訂閱者資訊，然後按一下 [完成]。
+4. 按一下 [指派訂用帳戶]  。
+5. 選取想要的 [訂用帳戶層級]  。
+6. 驗證您有可指派的訂用帳戶，然後按一下 [下一步]  。
+7. 輸入訂閱者詳細資料並在 [電子郵件地址] 中輸入目錄地址，然後按一下 [下一步]  。
+8. 驗證訂閱者資訊，然後按一下 [完成]  。
 9. 使用下面的[範本](#notifying-your-subscribers-with-directory-addresses)通知訂閱者其訂用帳戶已佈建。
 
 ### <a name="updating-an-existing-subscriber"></a>更新現有的訂閱者
@@ -68,13 +67,13 @@ ms.locfileid: "62946162"
 請依照下面的步驟使用目錄帳戶更新現有的訂閱者。
 
 1. 瀏覽[大量授權服務中心](https://www.microsoft.com/Licensing/servicecenter/default.aspx) (VLSC) 並登入。
-2. 從 VLSC [系統管理] 頁面，按一下 [訂用帳戶]，然後按一下 [Visual Studio 訂用帳戶]。
-3. 按一下與該 Visual Studio 訂用帳戶關聯的 [合約編號]。
-4. 按一下 [搜尋] 列上的向下箭號 。
+2. 從 VLSC [系統管理] 頁面，按一下 [訂用帳戶]  ，然後按一下 [Visual Studio 訂用帳戶]  。
+3. 按一下與該 Visual Studio 訂用帳戶關聯的 [合約編號]  。
+4. 按一下 [搜尋] 列上的向下箭號  。
 5. 使用 [電子郵件地址] 欄位搜尋訂閱者。
-6. 從結果清中，按一下 [訂閱者] 上的 [姓氏]。
-7. 按一下 [編輯] 。
-8. 將 [電子郵件地址] 欄位變更為想要的目錄地址，然後按一下 [儲存]。
+6. 從結果清中，按一下 [訂閱者] 上的 [姓氏]  。
+7. 按一下 [編輯]  。
+8. 將 [電子郵件地址] 欄位變更為想要的目錄地址，然後按一下 [儲存]  。
 9. 使用下面的電子郵件範本通知訂閱者其訂用帳戶已佈建。
 
 ### <a name="notifying-your-subscribers-with-directory-addresses"></a>使用目錄地址通知您的訂閱者
@@ -110,7 +109,7 @@ At the bottom of the page, select the following:
 
 在訂用帳戶指派給訂閱者之後，他們將會收到要求其瀏覽 [https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs) 以發揮其訂用帳戶優點的電子郵件。  當嘗試登入時，Visual Studio 訂用帳戶登入會失敗，並傳回說明無法識別帳戶的錯誤。  請要求您的訂閱者先遵循這些指示執行，再登入 [https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs)。  如果有需要，您可以在指派訂閱之後使用此[範本](#notifying-your-subscribers-using-personal-accounts)來通知您的訂閱者。
 
-1. 瀏覽 https://my.visualstudio.com ，然後按一下 [建立新的 Microsoft 帳戶]。
+1. 瀏覽 https://my.visualstudio.com ，然後按一下 [建立新的 Microsoft 帳戶]  。
 
 2. 完成欄位：
    - 在 Someone@example.com 方塊中輸入收到歡迎電子郵件的電子郵件地址
@@ -118,7 +117,7 @@ At the bottom of the page, select the following:
    - 選擇您的推廣設定
    - 按一下 [下一步] 
 
-3. 完成驗證步驟並按一下 [下一步]。
+3. 完成驗證步驟並按一下 [下一步]  。
 
 4. 新使用者可能需要完成 Visual Studio 設定檔。
 

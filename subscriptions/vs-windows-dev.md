@@ -6,13 +6,12 @@ manager: evelynp
 ms.date: 12/19/2018
 ms.topic: conceptual
 description: 了解 Visual Studio 訂用帳戶隨附的 Windows 開發人員帳戶。
-searchscope: VS Subscription
-ms.openlocfilehash: aacd9dab6353d3cfde727717c67c400f6e17514f
-ms.sourcegitcommit: 91c7f1b525e0c22d938bc4080ba4ceac2483474f
+ms.openlocfilehash: 37718671d2b0287920b3b1dbce36ab61affbf223
+ms.sourcegitcommit: f369ff7e84b0216f01570a486c7be80ca6d0e61a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/12/2019
-ms.locfileid: "67032733"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "68250762"
 ---
 # <a name="windows-developer-account-in-visual-studio-subscriptions"></a>Visual Studio 訂用帳戶中的 Windows 開發人員帳戶
 

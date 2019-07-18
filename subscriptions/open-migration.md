@@ -6,13 +6,12 @@ manager: lank
 ms.date: 07/02/2018
 ms.topic: conceptual
 description: 了解 Open 和 Open License 移轉至 Visual Studio 訂用帳戶管理入口網站。
-searchscope: VS Subscription
-ms.openlocfilehash: 0e3ad14f48aaa461b7c70507cd4501067eacc789
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3e8859cc3b66933133c193ecd0f095939ccf7e77
+ms.sourcegitcommit: f369ff7e84b0216f01570a486c7be80ca6d0e61a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62821727"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "68250610"
 ---
 # <a name="open-and-open-license-migration-to-the-new-visual-studio-subscriptions-administration-portal"></a>Open 和 Open License 移轉至新的 Visual Studio 訂用帳戶管理入口網站
 
@@ -44,9 +43,9 @@ ms.locfileid: "62821727"
 
 - 夥伴直接前往 https://manage.visualstudio.com 並登入。
 
-- 他們將選取合約下拉式清單，並捲動至底端，該處有 [+New Open License] \(+新增 Open License\) 的選項。
+- 他們將選取合約下拉式清單，並捲動至底端，該處有 [+New Open License] \(+新增 Open License\)  的選項。
 
-- 在快顯面板中，夥伴將會輸入合約上的授權號碼 (authorization number)、授權號碼 (license number) 和客戶電子郵件地址，並選取核取方塊，然後按一下 [提交]。
+- 在快顯面板中，夥伴將會輸入合約上的授權號碼 (authorization number)、授權號碼 (license number) 和客戶電子郵件地址，並選取核取方塊，然後按一下 [提交]  。
 
 > [!NOTE]
 > 客戶將收到一封通知電子郵件，通知他們已將夥伴新增至 Open License。 他們可以選擇移除夥伴的存取權。
@@ -59,7 +58,7 @@ ms.locfileid: "62821727"
 
 - 他們接著會選取想要管理的 Open License。
 
-- 接下來，在 [授權詳細資料] 的 [Visual Studio 訂用帳戶] 下，他們將選取選項透過 [按一下這裡] 連結來管理訂用帳戶。
+- 接下來，在 [授權詳細資料] 的 [Visual Studio 訂用帳戶] 下，他們將選取選項透過 [按一下這裡]  連結來管理訂用帳戶。
 
 - 這將會重新導向夥伴登入新管理入口網站，在其中，他們需要使用先前用來登入 VLSC 的相同電子郵件地址。
 
@@ -72,11 +71,11 @@ ms.locfileid: "62821727"
 
 此情節適用於下列新夥伴：這些夥伴已下新 Open License 訂單，但尚未在 [VLSC](https://www.microsoft.com/Licensing/servicecenter/default.aspx) 上註冊，並直接前往 [Visual Studio 訂用帳戶管理入口網站](https://manage.visualstudio.com)。
 
-- 夥伴直接前往 https://manage.visualstudio.com。
+- 夥伴直接前往 https://manage.visualstudio.com 。
 
 - 他們會收到錯誤，指出其為不可辨識的使用者。
 
-- 夥伴必須選取 [OLP Partners] \(OLP 夥伴\) 註冊選項，並輸入訂單上所使用的授權號碼 (authorization number)、授權號碼 (license number) 和客戶電子郵件地址，然後選取核取方塊並按一下 [提交]。
+- 夥伴必須選取 [OLP Partners] \(OLP 夥伴\)  註冊選項，並輸入訂單上所使用的授權號碼 (authorization number)、授權號碼 (license number) 和客戶電子郵件地址，然後選取核取方塊並按一下 [提交]  。
 
 > [!NOTE]
 > 客戶將收到一封通知電子郵件，通知他們已將夥伴新增至 Open License。 他們可以選擇移除夥伴的存取權。

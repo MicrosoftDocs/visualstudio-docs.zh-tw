@@ -6,13 +6,12 @@ manager: lank
 ms.date: 2/13/2019
 ms.topic: conceptual
 description: 了解如何啟用 Visual Studio 訂用帳戶所包含的技術支援權益。
-searchscope: VS Subscription
-ms.openlocfilehash: 238fd0b4c79e5fb99c629d82386676ec175a2a17
-ms.sourcegitcommit: 91c7f1b525e0c22d938bc4080ba4ceac2483474f
+ms.openlocfilehash: 5b5bb690af4223ace46ea090a482df610e298fd6
+ms.sourcegitcommit: 208395bc122f8d3dae3f5e5960c42981cc368310
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/12/2019
-ms.locfileid: "67032801"
+ms.lasthandoff: 07/10/2019
+ms.locfileid: "67785051"
 ---
 # <a name="activate-and-use-the-technical-support-benefit-in-visual-studio-subscriptions"></a>啟用並使用 Visual Studio 訂用帳戶中的技術支援權益
 

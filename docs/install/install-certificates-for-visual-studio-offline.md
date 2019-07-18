@@ -15,12 +15,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 4ef5df077aabb02c9e9a4b46b0cfcbda76263b72
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: bdf6f87fbcc412710be6653b83f8b623a6b4d865
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62974731"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67826290"
 ---
 # <a name="install-certificates-required-for-visual-studio-offline-installation"></a>安裝 Visual Studio 離線安裝所需的憑證
 
@@ -135,20 +135,20 @@ Visual Studio 安裝程式引擎只會安裝受信任的內容。 它的作法�
 此資料夾中的三個 .P12 檔都包含中繼憑證和根憑證。 使用 Windows Update 維持最新狀態的大部分系統都已經安裝這些憑證。
 
 * **ManifestSignCertificates.p12** 包含：
-    * 中繼憑證：**Microsoft Code Signing PCA 2011**
-        * 不需要。 如果有的話，可改善某些案例的效能。
-    * 根憑證：**Microsoft Root Certificate Authority 2011**
-        * 在沒有安裝最新 Windows Updates 的 Windows 7 Service Pack 1 系統上需要。
+  * 中繼憑證：**Microsoft Code Signing PCA 2011**
+    * 不需要。 如果有的話，可改善某些案例的效能。
+  * 根憑證：**Microsoft Root Certificate Authority 2011**
+    * 在沒有安裝最新 Windows Updates 的 Windows 7 Service Pack 1 系統上需要。
 * **ManifestCounterSignCertificates.p12** 包含：
-    * 中繼憑證：**Microsoft Time-Stamp PCA 2010**
-        * 不需要。 如果有的話，可改善某些案例的效能。
-    * 根憑證：**Microsoft Root Certificate Authority 2010**
-        * 在沒有安裝最新 Windows Updates 的 Windows 7 Service Pack 1 系統上需要。
+  * 中繼憑證：**Microsoft Time-Stamp PCA 2010**
+    * 不需要。 如果有的話，可改善某些案例的效能。
+  * 根憑證：**Microsoft Root Certificate Authority 2010**
+    * 在沒有安裝最新 Windows Updates 的 Windows 7 Service Pack 1 系統上需要。
 * **Vs_installer_opc.SignCertificates.p12** 包含：
-    * 中繼憑證：**Microsoft Code Signing PCA**
-        * 所有系統都需要。 請注意，從 Windows Update 套用所有更新的系統可能沒有此憑證。
-    * 根憑證：**Microsoft Root Certificate Authority**
-        * 必要項。 此憑證隨附於執行 Windows 7 或更新版本的系統。
+  * 中繼憑證：**Microsoft Code Signing PCA**
+    * 所有系統都需要。 請注意，從 Windows Update 套用所有更新的系統可能沒有此憑證。
+  * 根憑證：**Microsoft Root Certificate Authority**
+    * 必要項。 此憑證隨附於執行 Windows 7 或更新版本的系統。
 
 **更新**：針對 Visual Studio 2017 版本 15.8 Preview 2 或更新版本，Visual Studio 安裝程式只要求系統上必須安裝根憑證。
 
@@ -157,20 +157,20 @@ Visual Studio 安裝程式引擎只會安裝受信任的內容。 它的作法�
 ::: moniker range="vs-2019"
 
 * **ManifestSignCertificates.p12** 包含：
-    * 中繼憑證：**Microsoft Code Signing PCA 2011**
-        * 不需要。 如果有的話，可改善某些案例的效能。
-    * 根憑證：**Microsoft Root Certificate Authority 2011**
-        * 在沒有安裝最新 Windows Updates 的 Windows 7 Service Pack 1 系統上需要。
+  * 中繼憑證：**Microsoft Code Signing PCA 2011**
+    * 不需要。 如果有的話，可改善某些案例的效能。
+  * 根憑證：**Microsoft Root Certificate Authority 2011**
+    * 在沒有安裝最新 Windows Updates 的 Windows 7 Service Pack 1 系統上需要。
 * **ManifestCounterSignCertificates.p12** 包含：
-    * 中繼憑證：**Microsoft Time-Stamp PCA 2010**
-        * 不需要。 如果有的話，可改善某些案例的效能。
-    * 根憑證：**Microsoft Root Certificate Authority 2010**
-        * 在沒有安裝最新 Windows Updates 的 Windows 7 Service Pack 1 系統上需要。
+  * 中繼憑證：**Microsoft Time-Stamp PCA 2010**
+    * 不需要。 如果有的話，可改善某些案例的效能。
+  * 根憑證：**Microsoft Root Certificate Authority 2010**
+    * 在沒有安裝最新 Windows Updates 的 Windows 7 Service Pack 1 系統上需要。
 * **Vs_installer_opc.SignCertificates.p12** 包含：
-    * 中繼憑證：**Microsoft Code Signing PCA**
-        * 所有系統都需要。 請注意，從 Windows Update 套用所有更新的系統可能沒有此憑證。
-    * 根憑證：**Microsoft Root Certificate Authority**
-        * 必要項。 此憑證隨附於執行 Windows 7 或更新版本的系統。
+  * 中繼憑證：**Microsoft Code Signing PCA**
+    * 所有系統都需要。 請注意，從 Windows Update 套用所有更新的系統可能沒有此憑證。
+  * 根憑證：**Microsoft Root Certificate Authority**
+    * 必要項。 此憑證隨附於執行 Windows 7 或更新版本的系統。
 
 Visual Studio 安裝程式只要求系統上必須安裝根憑證。
 
@@ -185,23 +185,23 @@ Visual Studio 安裝程式只要求系統上必須安裝根憑證。
 在安裝系統上的一個檢查方法是遵循下列步驟：
 
 1. 執行 **mmc.exe**。<br/>
-  a. 按一下 [檔案]，然後選取 [新增/移除嵌入式管理單元]。<br/>
-  b. 按兩下 [憑證]，並選取 [電腦帳戶]，然後按一下 [下一步]。<br/>
-  c.  選取 [本機電腦]，並按一下 [完成]，然後按一下 [確定]。<br/>
-  d. 展開 [憑證 (本機電腦)]。<br/>
-  e. 展開 [信任的根憑證授權]，然後選取 [憑證]。<br/>
+  a. 按一下 [檔案]  ，然後選取 [新增/移除嵌入式管理單元]  。<br/>
+  b. 按兩下 [憑證]  ，並選取 [電腦帳戶]  ，然後按一下 [下一步]  。<br/>
+  c. 選取 [本機電腦]  ，並按一下 [完成]  ，然後按一下 [確定]  。<br/>
+  d. 展開 [憑證 (本機電腦)]  。<br/>
+  e. 展開 [信任的根憑證授權]  ，然後選取 [憑證]  。<br/>
     * 檢查這份必要根憑證清單。<br/>
 
-   f. 展開 [中繼憑證授權]，然後選取 [憑證]。<br/>
+   f. 展開 [中繼憑證授權]  ，然後選取 [憑證]  。<br/>
     * 檢查這份必要中繼憑證清單。<br/>
 
-2. 按一下 [檔案]，然後選取 [新增/移除嵌入式管理單元]。<br/>
-  a. 按兩下 [憑證]，並選取 [我的使用者帳戶]，然後依序按一下 [完成] 和 [確定]。<br/>
-  b. 展開 [憑證 - 目前的使用者]。<br/>
-  c.  展開 [中繼憑證授權]，然後選取 [憑證]。<br/>
+2. 按一下 [檔案]  ，然後選取 [新增/移除嵌入式管理單元]  。<br/>
+  a. 按兩下 [憑證]  ，並選取 [我的使用者帳戶]  ，然後依序按一下 [完成]  和 [確定]  。<br/>
+  b. 展開 [憑證 - 目前的使用者]  。<br/>
+  c. 展開 [中繼憑證授權]  ，然後選取 [憑證]  。<br/>
     * 檢查這份必要中繼憑證清單。<br/>
 
-如果憑證名稱不在 [Issued To]\(核發給) 資料行中，則必須予以安裝。  如果中繼憑證只位於 [目前使用者] 中繼憑證存放區中，則只有已登入的使用者才能使用它。 您可能需要為其他使用者安裝。
+如果憑證名稱不在 [Issued To]\(核發給)  資料行中，則必須予以安裝。  如果中繼憑證只位於 [目前使用者]  中繼憑證存放區中，則只有已登入的使用者才能使用它。 您可能需要為其他使用者安裝。
 
 ## <a name="install-visual-studio"></a>安裝 Visual Studio
 

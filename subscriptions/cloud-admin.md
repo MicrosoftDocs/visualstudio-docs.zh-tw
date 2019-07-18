@@ -6,13 +6,12 @@ manager: evelynp
 ms.date: 03/28/2018
 ms.topic: conceptual
 description: 設定雲端訂用帳戶的系統管理員
-searchscope: VS Subscription
-ms.openlocfilehash: 34479c21ec3cb0672b8d2354595c971b062bba56
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 85371dd77b99fc5013843bb815082cc0f84cff33
+ms.sourcegitcommit: f369ff7e84b0216f01570a486c7be80ca6d0e61a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62945818"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "68250697"
 ---
 # <a name="set-up-administrators-for-visual-studio-cloud-subscriptions"></a>設定 Visual Studio 雲端訂用帳戶的系統管理員
 
@@ -34,13 +33,13 @@ Visual Studio 雲端訂用帳戶是由系統管理員管理。 這些人可以�
 
 1. 連線到 Azure 入口網站：[portal.azure.com](https://portal.azure.com)。
 2. 使用您用來購買 Visual Studio 雲端訂用帳戶的帳戶登入。
-3. 在左側瀏覽窗格中，向下捲動至 [成本管理 + 計費]。
-4. 在 [我的訂閱] 清單中，選擇您用來進行購買的 Azure 訂用帳戶。
-5. 按一下 [存取控制]，它位在左側瀏覽窗格中的清單頂端附近。
-6. 按一下頁面頂端的 [新增] 索引標籤。
+3. 在左側瀏覽窗格中，向下捲動至 [成本管理 + 計費]  。
+4. 在 [我的訂閱]  清單中，選擇您用來進行購買的 Azure 訂用帳戶。
+5. 按一下 [存取控制]  ，它位在左側瀏覽窗格中的清單頂端附近。
+6. 按一下頁面頂端的 [新增]  索引標籤。
 7. 在右側的飛出視窗窗格中，按一下您要設定為系統管理員的訂閱者名稱。
-8. 按一下窗格頂端的 [角色] 下拉式清單，向下捲動並選取 [使用者存取系統管理員]。
-9. 按一下 [儲存] 。
+8. 按一下窗格頂端的 [角色]  下拉式清單，向下捲動並選取 [使用者存取系統管理員]  。
+9. 按一下 [儲存]  。
 
 您指定的訂閱者會顯示在頁面中央，而其角色會顯示為「使用者存取系統管理員」。
 

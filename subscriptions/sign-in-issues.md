@@ -6,13 +6,12 @@ manager: lank
 ms.date: 11/07/2018
 ms.topic: conceptual
 description: 了解登入 Visual Studio 訂用帳戶時可能遇到的問題
-searchscope: VS Subscription
-ms.openlocfilehash: ebdca1a8b38fd6ecbe895524da9c090be0620894
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c0687d08503389826b4c23b6add2a56f68e6a483
+ms.sourcegitcommit: 208395bc122f8d3dae3f5e5960c42981cc368310
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63008041"
+ms.lasthandoff: 07/10/2019
+ms.locfileid: "67784943"
 ---
 # <a name="issues-signing-in-to-visual-studio-subscriptions"></a>登入 Visual Studio 訂用帳戶的問題
 若要使用 Visual Studio 訂用帳戶，您必須先登入。  視您的訂用帳戶而定，您可能已使用 Microsoft 帳戶 (MSA) 或 Azure Active Directory (AAD) 身分識別加以設定。  本文將討論一些登入訂用帳戶時可能會遇到的問題。

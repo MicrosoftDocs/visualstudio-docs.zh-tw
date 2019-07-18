@@ -6,13 +6,12 @@ manager: evelynp
 ms.date: 04/10/2018
 ms.topic: conceptual
 description: 如何新增 Visual Studio 訂用帳戶的替代身分識別，以用於 Azure DevOps 和 Azure
-searchscope: vs subscription
-ms.openlocfilehash: 63a372d4a0e0e70a008f86a36aae73516bf42458
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: bec00f6e49ce04781ad69a56b30637b375000b6e
+ms.sourcegitcommit: 208395bc122f8d3dae3f5e5960c42981cc368310
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62428076"
+ms.lasthandoff: 07/10/2019
+ms.locfileid: "67784707"
 ---
 # <a name="identities-for-visual-studio-subscribers"></a>Visual Studio 訂閱者身分識別
 
@@ -35,14 +34,14 @@ ms.locfileid: "62428076"
 
 ### <a name="add-the-alternate-account"></a>新增替代帳戶
 
-1. 使用 Microsoft 帳戶登入 Visual Studio 訂閱者入口網站 (https://my.visualstudio.com)。
+1. 使用 Microsoft 帳戶登入 Visual Studio 訂閱者入口網站 (https://my.visualstudio.com) 。
 
-2. 前往 [訂用帳戶]。
+2. 前往 [訂用帳戶]  。
 
     > [!div class="mx-imgBorder"]
     > ![新增替代帳戶 - 前往 VS 入口網站中的訂用帳戶](_img/vs-alternate-identity/my-vs-subscriptions.png)
 
-3. 選擇 [Add alternate account (新增其他帳戶)]。
+3. 選擇 [Add alternate account (新增其他帳戶)]  。
     > [!div class="mx-imgBorder"]
     > ![選擇 [Add alternate account] \(新增其他帳戶\)](_img/vs-alternate-identity/choose-add-alternate-account.png)
 

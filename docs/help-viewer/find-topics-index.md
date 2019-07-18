@@ -10,17 +10,17 @@ helpviewer_keywords:
 - index filtering [Help Viewer]
 - Help Viewer, index filtering
 ms.assetid: cb071e93-f297-459c-a6fa-8ae0dabc42a4
-author: gewarren
-ms.author: gewarren
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d66162b740aa9c6fbd284f44d5f93c88ebe8974d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 0f80b0d63bc7e7fdb89f69607e4529e18f26cc30
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62557446"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825948"
 ---
 # <a name="find-topics-by-using-the-help-viewer-index"></a>使用說明檢視器索引來尋找主題
 
@@ -28,7 +28,7 @@ ms.locfileid: "62557446"
 
 ## <a name="to-find-a-topic-by-using-the-index"></a>使用索引來尋找主題
 
-在 [索引] 索引標籤上，執行下列任一項工作：
+在 [索引]  索引標籤上，執行下列任一項工作：
 
 - 在文字方塊中指定要搜尋的關鍵字。 例如，指定 "update" 來尋找包含 "update"、"updated" 和 "updating" 這類關鍵字的主題。
 
@@ -55,7 +55,7 @@ ms.locfileid: "62557446"
 
     例如，如果 "debugging inline assembly code" 沒有顯示相關的項目，請嘗試輸入 "assembly code, debugging inline"。
 
-- 搭配 [索引] 索引標籤使用篩選，來減少結果數目。
+- 搭配 [索引]  索引標籤使用篩選，來減少結果數目。
 
 ### <a name="syntax-tips"></a>語法提示
 

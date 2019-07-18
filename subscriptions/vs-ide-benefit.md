@@ -6,13 +6,12 @@ manager: lank
 ms.date: 04/03/2019
 ms.topic: conceptual
 description: 了解如何下載和安裝 Visual Studio 訂用帳戶中所含的 Visual Studio IDE。
-searchscope: VS Subscription
-ms.openlocfilehash: 1614df094c043c4b3a758409c1cff3c73b56abf6
-ms.sourcegitcommit: 32144a09ed46e7223ef7dcab647a9f73afa2dd55
+ms.openlocfilehash: 6b3e53604eb275b6fec867ef2470c57d47aaa510
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/05/2019
-ms.locfileid: "67586940"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67824650"
 ---
 # <a name="using-the-visual-studio-2019-benefit"></a>使用 Visual Studio 2019 權益
 
@@ -79,6 +78,6 @@ ms.locfileid: "67586940"
 
 ## <a name="support-resources"></a>支援資源
 - 如需 Visual Studio IDE 的說明，請查看這些資源：
-    - 技術支援：[https://visualstudio.microsoft.com/support/](https://visualstudio.microsoft.com/support/)
-    - [文件](/visualstudio/)
+  - 技術支援：[https://visualstudio.microsoft.com/support/](https://visualstudio.microsoft.com/support/)
+  - [文件](/visualstudio/)
 - 如需 Visual Studio 訂用帳戶有關銷售、訂閱、帳戶與計費的協助，請聯繫 Visual Studio [訂用帳戶支援](https://visualstudio.microsoft.com/subscriptions/support/)。

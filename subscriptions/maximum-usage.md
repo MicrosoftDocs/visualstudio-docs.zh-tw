@@ -6,13 +6,12 @@ manager: lank
 ms.date: 03/24/2019
 ms.topic: conceptual
 description: 了解如何在管理入口網站中檢視已指派的訂用帳戶數目上限
-searchscope: VS Subscription
-ms.openlocfilehash: c263c610b140d3662cb17ba9f2c3d3f1a1907ab7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 0442671a6cdb24e394e6c2a47c935ae894cca354
+ms.sourcegitcommit: f369ff7e84b0216f01570a486c7be80ca6d0e61a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62965393"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "68250742"
 ---
 # <a name="using-the-maximum-usage-feature-to-track-the-number-of-assigned-subscriptions"></a>使用 [使用量上限] 功能來追蹤已指派的訂用帳戶數目
 
@@ -24,7 +23,7 @@ Visual Studio 訂用帳戶系統管理入口網站中新功能會協助您追蹤
 
 1. 在入口網站左上方下拉式清單中選取您想要檢視的合約。 (如果您只有一份合約，它會是已選取狀態。)
 
-2. 按一下 [使用量上限] 索引標籤。  
+2. 按一下 [使用量上限]  索引標籤。  
     > [!div class="mx-imgBorder"]
     > ![[使用量上限] 功能表](_img/maximum-usage/maximum-usage-menu.png)
 
@@ -32,11 +31,11 @@ Visual Studio 訂用帳戶系統管理入口網站中新功能會協助您追蹤
     > [!div class="mx-imgBorder"]
     > ![[使用量上限] 摘要](_img/maximum-usage/maximum-usage-summary.png)
 
-4. 若要查看合約存留期間內已指派的訂用帳戶最大數目，請按一下 [Full-Term] \(全程執行期間\) 索引標籤。
+4. 若要查看合約存留期間內已指派的訂用帳戶最大數目，請按一下 [Full-Term] \(全程執行期間\)  索引標籤。
 
 ## <a name="viewing-assignment-history"></a>檢視指派記錄
 
-按一下 [Export full report] \(匯出完整報告\) 按鈕，除可看到每個訂用帳戶層級的尖峰指派，您還可以看到合約的活動執行帳戶，包括購買和指派。  
+按一下 [Export full report] \(匯出完整報告\)  按鈕，除可看到每個訂用帳戶層級的尖峰指派，您還可以看到合約的活動執行帳戶，包括購買和指派。  
 
 > [!div class="mx-imgBorder"]
 > ![[使用量上限] 完整報告](_img/maximum-usage/maximum-usage-full-report.png)

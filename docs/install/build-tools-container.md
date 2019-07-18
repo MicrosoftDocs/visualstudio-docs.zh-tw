@@ -2,7 +2,7 @@
 title: 將 Visual Studio Build Tools 安裝至容器
 titleSuffix: ''
 description: 了解如何將 Visual Studio Build Tools 安裝至 Windows 容器，以便支援持續整合與持續傳遞 (CI/CD) 工作流程。
-ms.date: 04/18/2018
+ms.date: 07/03/2019
 ms.custom: seodec18
 ms.topic: conceptual
 ms.assetid: d5c038e2-e70d-411e-950c-8a54917b578a
@@ -13,12 +13,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 1c7d4b2cb910a6e6ee55ecb783fe124958d251e2
-ms.sourcegitcommit: 3cc73e74921a9ceb622542e0e263abeebc455c00
+ms.openlocfilehash: 24e27c8ca2c75e2345bea4f4393fcb00bba1a0d8
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/08/2019
-ms.locfileid: "67624120"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67821715"
 ---
 # <a name="install-build-tools-into-a-container"></a>將 Build Tools 安裝至容器
 

@@ -10,11 +10,11 @@ ms.prod: visual-studio-windows
 ms.technology: vs-installation
 ms.topic: include
 ms.openlocfilehash: b4e23aeb5e6d60a36d1f69ffb54ec75aa1770ea4
-ms.sourcegitcommit: b593bb889f049fcbdff502c30b73178ed17dbdf0
+ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/20/2019
-ms.locfileid: "67290664"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "68176894"
 ---
 ## <a name="azure-development-build-tools"></a>Azure 開發建置工具
 

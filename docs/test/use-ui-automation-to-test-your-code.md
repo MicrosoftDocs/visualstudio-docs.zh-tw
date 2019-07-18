@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3c1491caef3b13f6d5345d7d09f0abf4d680dd8e
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: fcf217f2826bf618db2288107fafeff091e6a2bd
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65704747"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67824696"
 ---
 # <a name="use-coded-ui-test-to-test-your-code"></a>使用自動程式化 UI 測試來測試您的程式碼
 
@@ -285,23 +285,23 @@ Mouse.Hover(uIItem1Text, new Point(87, 9));
 
 - **程式碼編輯器：**
 
-    - 手動加入您測試中控制項的程式碼 (如本主題中的[自動程式化 UI 控制項動作和屬性](#coded-ui-control-actions-and-properties)一節所述)。
+  - 手動加入您測試中控制項的程式碼 (如本主題中的[自動程式化 UI 控制項動作和屬性](#coded-ui-control-actions-and-properties)一節所述)。
 
-    - 在您建立自動程式化 UI 測試之後，就可以將其修改為透過資料驅動。 如需詳細資訊，請參閱[建立資料驅動自動程式化 UI 測試](../test/creating-a-data-driven-coded-ui-test.md)。
+  - 在您建立自動程式化 UI 測試之後，就可以將其修改為透過資料驅動。 如需詳細資訊，請參閱[建立資料驅動自動程式化 UI 測試](../test/creating-a-data-driven-coded-ui-test.md)。
 
-    - 在自動程式化 UI 測試播放中，您可以指示測試等待發生特定事件 (例如出現視窗、進度列消失等)。 若要這樣做，請加入適當的 UITestControl.WaitForControlXXX() 方法。 如需可用方法的完整清單，請參閱[讓自動程式化 UI 測試在播放期間等候特定事件](../test/making-coded-ui-tests-wait-for-specific-events-during-playback.md)。 如需使用 WaitForControlEnabled 方法等待啟用控制項的自動程式化 UI 測試範例，請參閱[逐步解說：建立、編輯及維護自動程式化 UI 測試](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md)。
+  - 在自動程式化 UI 測試播放中，您可以指示測試等待發生特定事件 (例如出現視窗、進度列消失等)。 若要這樣做，請加入適當的 UITestControl.WaitForControlXXX() 方法。 如需可用方法的完整清單，請參閱[讓自動程式化 UI 測試在播放期間等候特定事件](../test/making-coded-ui-tests-wait-for-specific-events-during-playback.md)。 如需使用 WaitForControlEnabled 方法等待啟用控制項的自動程式化 UI 測試範例，請參閱[逐步解說：建立、編輯及維護自動程式化 UI 測試](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md)。
 
-    - 自動程式化 UI 測試支援 Internet Explorer 9 和 Internet Explorer 10 所含的一些 HTML5 控制項。 如需詳細資訊，請參閱[在自動程式化 UI 測試中使用 HTML5 控制項](../test/using-html5-controls-in-coded-ui-tests.md)。
+  - 自動程式化 UI 測試支援 Internet Explorer 9 和 Internet Explorer 10 所含的一些 HTML5 控制項。 如需詳細資訊，請參閱[在自動程式化 UI 測試中使用 HTML5 控制項](../test/using-html5-controls-in-coded-ui-tests.md)。
 
-    - 自動程式碼 UI 測試編寫指導：
+  - 自動程式碼 UI 測試編寫指導：
 
-       - [自動程式化 UI 測試的結構](../test/anatomy-of-a-coded-ui-test.md)
+    - [自動程式化 UI 測試的結構](../test/anatomy-of-a-coded-ui-test.md)
 
-       - [自動程式化 UI 測試的最佳做法](../test/best-practices-for-coded-ui-tests.md)
+    - [自動程式化 UI 測試的最佳做法](../test/best-practices-for-coded-ui-tests.md)
 
-       - [測試含有多個 UI 對應的大型應用程式](../test/testing-a-large-application-with-multiple-ui-maps.md)
+    - [測試含有多個 UI 對應的大型應用程式](../test/testing-a-large-application-with-multiple-ui-maps.md)
 
-       - [自動程式碼 UI 測試和動作記錄的支援組態和平台](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)
+    - [自動程式碼 UI 測試和動作記錄的支援組態和平台](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)
 
 ### <a name="the-generated-code"></a>產生的程式碼
 

@@ -6,13 +6,12 @@ manager: evelynp
 ms.date: 10/03/2017
 ms.topic: conceptual
 description: 了解如何設定 Azure 隨用隨付帳戶。
-searchscope: VS Subscription
-ms.openlocfilehash: 275088d1683c740e51caccb2ad4500dcc2885752
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: aa5cd98b1526f654a4bb2803e5b22dde72cb8fda
+ms.sourcegitcommit: 208395bc122f8d3dae3f5e5960c42981cc368310
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62948223"
+ms.lasthandoff: 07/10/2019
+ms.locfileid: "67784669"
 ---
 # <a name="setting-up-an-azure-devtest-pay-as-you-go-subscription"></a>設定 Azure 開發/測試隨用隨付訂用帳戶
 在雲端與您的小組共同作業。  建立多個開發和測試隨用隨付訂用帳戶，讓您能夠與其他訂閱者共同作業，同時為小組與環境提供適時的隔離。  您會收到專屬的 Azure 訂用帳戶軟體開發/測試和雲端使用權限的每小時折扣費率。

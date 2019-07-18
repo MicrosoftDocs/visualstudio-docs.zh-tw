@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 742b2b1660b5a1776edca0a4b64c56222cd1c163
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f6e96325edd3a17a09437e093590cc02a55504a5
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62777635"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825822"
 ---
 # <a name="xsd-task"></a>XSD 工作
 包裝 XML 結構描述定義工具 (*xsd.exe*)，它會從來源產生結構描述或類別檔案。
@@ -44,15 +44,15 @@ ms.locfileid: "62777635"
 
 - **GenerateFromSchema**
 
-     選擇性的 **String** 參數。
+  選擇性的 **String** 參數。
 
-     指定從指定的結構描述產生的類型。
+  指定從指定的結構描述產生的類型。
 
-     指定下列其中一個值，每個值會分別對應至一個 XSD 選項。
+  指定下列其中一個值，每個值會分別對應至一個 XSD 選項。
 
-    - **classes** - **/classes**
+  - **classes** -  **/classes**
 
-    - **dataset** - **/dataset**
+  - **dataset** -  **/dataset**
 
 - **Language**
 

@@ -6,13 +6,12 @@ manager: evelynp
 ms.date: 12/19/2018
 ms.topic: conceptual
 description: 了解 Visual Studio 訂用帳戶中所含的 Visual Studio App Center 權益。
-searchscope: VS Subscription
-ms.openlocfilehash: 53b140bf425c184d62e4b4ff0af81b8ab8415021
-ms.sourcegitcommit: 91c7f1b525e0c22d938bc4080ba4ceac2483474f
+ms.openlocfilehash: 1f57f6518c82c0eb60cbea9636c9973d2c9fd624
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/12/2019
-ms.locfileid: "67032770"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67826209"
 ---
 # <a name="visual-studio-app-center-in-visual-studio-subscriptions"></a>Visual Studio 訂用帳戶中的 Visual Studio App Center
 
@@ -67,7 +66,7 @@ App Center 是應用程式的任務控制機制。
 
 ## <a name="support-resources"></a>支援資源
 - 需要 App Center 的說明？
-    - 在 [App Center 說明中心](https://intercom.help/appcenter/) \(英文\) 取得建議與解答。
-    - 查看完整的 [App Center 文件](/appcenter/)
+  - 在 [App Center 說明中心](https://intercom.help/appcenter/) \(英文\) 取得建議與解答。
+  - 查看完整的 [App Center 文件](/appcenter/)
 - 如需 Visual Studio 訂用帳戶有關銷售、訂閱、帳戶與計費的協助，請聯繫 Visual Studio [訂用帳戶支援](https://visualstudio.microsoft.com/subscriptions/support/)。
 - 是否有關於 Visual Studio IDE、Azure DevOps Services 或其他 Visual Studio 產品或服務的問題？  前往 [Visual Studio 支援](https://visualstudio.microsoft.com/support/)

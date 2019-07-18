@@ -5,12 +5,12 @@ author: heiligerdankgesang
 ms.author: dominicn
 ms.date: 04/14/2017
 ms.assetid: 78107CFA-9308-4293-A92A-9B552A259E15
-ms.openlocfilehash: 62f7f2a8ebdafcccc6082edce2c4a7f1d91ff48e
-ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
+ms.openlocfilehash: 0bd35d415a60ea64c479b19cb506c58c2c346cc0
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "67693093"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67826067"
 ---
 # <a name="understanding-build-configurations"></a>了解組建組態
 
@@ -51,21 +51,21 @@ Android 專案的回合組態可讓您指定執行專案或對專案進行偵錯
 下列清單提供一些可以包含在回合設定中的資料範例：
 
 * 一般 .NET 專案
-    * 替代啟動應用程式
-    * 啟動引數
-    * 工作目錄
-    * 環境變數
-    * Mono 執行階段選項 (只有在 Mono 上執行時才能使用)
+  * 替代啟動應用程式
+  * 啟動引數
+  * 工作目錄
+  * 環境變數
+  * Mono 執行階段選項 (只有在 Mono 上執行時才能使用)
 * Android 專案
-    * 進入點 (活動、服務、接收器)
-    * 意圖引數和資料
+  * 進入點 (活動、服務、接收器)
+  * 意圖引數和資料
 * iOS 專案
-    * 模式 (一般、背景擷取)
+  * 模式 (一般、背景擷取)
 * iOS 延伸模組專案
-    * 啟動應用程式：預設或自訂
+  * 啟動應用程式：預設或自訂
 * WatchKit 專案
-    * 模式 (概覽、通知)
-    * 通知承載
+  * 模式 (概覽、通知)
+  * 通知承載
 
 ## <a name="see-also"></a>另請參閱
 
