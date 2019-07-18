@@ -1,4 +1,4 @@
----
+﻿---
 title: 將 Foreach 迴圈轉換為 LINQ
 ms.date: 02/20/2019
 ms.topic: reference

@@ -116,7 +116,7 @@ ms.locfileid: "62815628"
 
 ## <a name="edit-the-default-fill-method-of-the-tableadapter"></a>編輯 TableAdapter 的預設填滿方法
 
-若要將資料填入資料集，請使用 `Fill` 的 `ProductTableAdapter` 方法。 根據預設，`Fill` 方法會使用 Product 資料表的所有資料列，填入 `ProductDataTable` 中的 `AdventureWorksLTDataSet`。 您可以修改此方法，使其只傳回資料列的子集。 在此逐步解說中，會修改 `Fill` 方法，使其只針對具有相片的產品傳回資料列。
+若要將資料填入資料集，請使用 `ProductTableAdapter` 的 `Fill` 方法。 根據預設，`Fill` 方法會使用 Product 資料表的所有資料列，填入 `ProductDataTable` 中的 `AdventureWorksLTDataSet`。您可以修改此方法，使其只傳回資料列的子集。在此逐步解說中，會修改 `Fill` 方法，使其只針對具有相片的產品傳回資料列。
 
 1. 在 [方案總管] 中，按兩下 *AdventureWorksLTDataSet.xsd* 檔案。
 
