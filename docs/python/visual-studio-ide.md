@@ -11,32 +11,32 @@ dev_langs:
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: d9c84e72551911135550c43da2b99ecb1357f9b6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 690ffff0aa31b90cea58997c982406a900299550
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62957431"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67826158"
 ---
 # <a name="welcome-to-the-visual-studio-ide--python"></a>歡迎使用 Visual Studio IDE | Python
 
-Visual Studio 整合式開發環境是支援 Python (和其他語言) 且創作功能豐富的啟動控制板，可供您編輯、偵錯及測試程式碼，然後發行應用程式。 整合式開發環境 (IDE) 是功能豐富的程式，可用於軟體開發的許多方面。 除了大部分 IDE 提供的標準編輯器和偵錯工具之外，Visual Studio 還有程式碼完成工具、互動式 REPL 環境及其他功能，讓軟體開發程序變得更為容易。
+Visual Studio 整合式開發環境  是支援 Python (和其他語言) 且創作功能豐富的啟動控制板，可供您編輯、偵錯及測試程式碼，然後發行應用程式。 整合式開發環境 (IDE) 是功能豐富的程式，可用於軟體開發的許多方面。 除了大部分 IDE 提供的標準編輯器和偵錯工具之外，Visual Studio 還有程式碼完成工具、互動式 REPL 環境及其他功能，讓軟體開發程序變得更為容易。
 
 [![Visual Studio 與 Python 專案](media/tour-ide-overview.png)](media/tour-ide-overview.png#lightbox)
 
 此圖顯示 Visual Studio 有一個開啟的 Python 專案，以及數個您可能會用到的重要工具視窗：
 
-- [[方案總管]](../ide/solutions-and-projects-in-visual-studio.md) (右上) 可讓您檢視、巡覽及管理您的程式碼檔案。 [方案總管] 透過將程式碼的檔案分組到[解決方案和專案](/visualstudio/get-started/tutorial-projects-solutions)，以協助組織程式碼。
-    - 方案總管 旁的是 [Python 環境](managing-python-environments-in-visual-studio.md)，您可以在此環境中管理安裝在電腦上的其他 Python 解譯器。
+- [[方案總管]  ](../ide/solutions-and-projects-in-visual-studio.md) (右上) 可讓您檢視、巡覽及管理您的程式碼檔案。 [方案總管]  透過將程式碼的檔案分組到[解決方案和專案](/visualstudio/get-started/tutorial-projects-solutions)，以協助組織程式碼。
+  - 方案總管  旁的是 [Python 環境  ](managing-python-environments-in-visual-studio.md)，您可以在此環境中管理安裝在電腦上的其他 Python 解譯器。
 
-    ::: moniker range=">=vs-2019"
-    - 您也可以開啟並執行資料夾中的 Python 程式碼，不需建立 Visual Studio 專案和方案檔案。 如需詳細資訊，請參閱[快速入門：在資料夾 ](quickstart-05-python-visual-studio-open-folder.md) 中開啟及執行 Python 程式碼。
-    ::: moniker-end
+  ::: moniker range=">=vs-2019"
+  - 您也可以開啟並執行資料夾中的 Python 程式碼，不需建立 Visual Studio 專案和方案檔案。 如需詳細資訊，請參閱[快速入門：在資料夾 ](quickstart-05-python-visual-studio-open-folder.md) 中開啟及執行 Python 程式碼。
+  ::: moniker-end
 
 - [編輯器視窗](../ide/writing-code-in-the-code-and-text-editor.md) (中間) 會顯示檔案內容，您大部分的時間可能都是花在這裡。 您可在這裡[編輯 Python 控制碼](editing-python-code-in-visual-studio.md)、瀏覽程式碼架構，以及在偵錯工作階段期間設定中斷點。 使用 Python 時，您也可按 Ctrl+Enter 在 [[互動式 REPL] 視窗](python-interactive-repl-in-visual-studio.md)中執行該程式碼。
 
 - [[輸出] 視窗](../ide/reference/output-window.md) (中下) 是 Visual Studio 傳送通知的位置，例如偵錯和錯誤訊息、警告、發佈狀態訊息等。 每個訊息來源都有自己的索引標籤。
-    - [[Python 互動式 REPL] 視窗](python-interactive-repl-in-visual-studio.md) 與輸出視窗位於同一個區域。
+  - [[Python 互動式 REPL] 視窗](python-interactive-repl-in-visual-studio.md) 與輸出視窗位於同一個區域。
 
 - [Team Explorer](/azure/devops/user-guide/work-team-explorer?view=vsts) (右下) 可讓您追蹤工作項目，並使用版本控制技術 (例如 [Git](https://git-scm.com/) 和 [Team Foundation 版本控制 (TFVC)](/azure/devops/repos/tfvc/overview?view=vsts)) 與其他人共用程式碼。
 
@@ -58,7 +58,7 @@ Visual Studio 的某些熱門功能可在您開發軟體時協助您提高生產
 
 - [重構](refactoring-python-code.md)
 
-   您可以右鍵按一下一段程式碼並選取 [快速控制項目及重構]，Visual Studio 會提供您智慧型重新命名變數、將一或多行程式碼擷取至新方法，還有變更方法參數順序等作業。
+   您可以右鍵按一下一段程式碼並選取 [快速控制項目及重構]  ，Visual Studio 會提供您智慧型重新命名變數、將一或多行程式碼擷取至新方法，還有變更方法參數順序等作業。
 
    ![在 Visual Studio 中重構](media/tour-ide-refactor-extract-method.png)
 
@@ -82,7 +82,7 @@ Visual Studio 的某些熱門功能可在您開發軟體時協助您提高生產
 
 - [移至及查看定義](../ide/go-to-and-peek-definition.md)
 
-   [移至定義] 功能可以直接帶您到定義函式或類型的位置。 [查看定義] 命令會在視窗中顯示定義，且無須開啟另外的檔案。 [尋找所有參考] 命令也可提供您探索同時已定義和使用之任何指定識別碼的實用方法。
+   [移至定義]  功能可以直接帶您到定義函式或類型的位置。 [查看定義]  命令會在視窗中顯示定義，且無須開啟另外的檔案。 [尋找所有參考]  命令也可提供您探索同時已定義和使用之任何指定識別碼的實用方法。
 
    ![程式碼巡覽命令](media/tour-ide-navigation-commands.png)
 
@@ -94,15 +94,19 @@ Visual Studio 的某些熱門功能可在您開發軟體時協助您提高生產
     從 Visual Studio 2019 開始，您可以開啟包含 Python 程式碼的資料夾，享受像 IntelliSense 這樣的功能，而且不需要為程式碼建立 Visual Studio 專案就能偵錯。
 ::: moniker-end
 
+- [使用 Visual Studio 共同作業](https://docs.microsoft.com/visualstudio/liveshare/use/vs)
+  
+    Visual Studio Live Share 可讓您即時與其他人以共同作業方式編輯和偵錯，不論您使用的程式設計語言或建置的應用程式類型為何。 
+
 - [Python 互動式 REPL](python-interactive-repl-in-visual-studio.md)
 
-    Visual Studio 為您的每個 Python 環境提供互動式「讀取、求值、輸出」迴圈 (REPL) 視窗，它是以透過命令列上的 *python.exe* 取得的 REPL 為基礎加以改進。 在 [互動] 視窗中，您可輸入任意 Python 程式碼，然後查看即時結果。
+    Visual Studio 為您的每個 Python 環境提供互動式「讀取、求值、輸出」迴圈 (REPL) 視窗，它是以透過命令列上的 *python.exe* 取得的 REPL 為基礎加以改進。 在 [互動]  視窗中，您可輸入任意 Python 程式碼，然後查看即時結果。
 
     ![Python 互動式視窗](media/interactive-window.png)
 
 - [偵錯](debugging-python-in-visual-studio.md)
 
-    Visual Studio 提供全面的 Python 偵錯體驗，包括附加至執行中處理序、在 [監看式] 和 [即時運算] 視窗中評估運算式、檢查區域變數、中斷點、逐步執行/跳離/不進入陳述式及**設定下一個陳述式**等。 您也可針對在 Linux 電腦上執行的遠端 Python 程式碼進行偵錯。
+    Visual Studio 提供全面的 Python 偵錯體驗，包括附加至執行中處理序、在 [監看式]  和 [即時運算]  視窗中評估運算式、檢查區域變數、中斷點、逐步執行/跳離/不進入陳述式及**設定下一個陳述式**等。 您也可針對在 Linux 電腦上執行的遠端 Python 程式碼進行偵錯。
 
     ![在 Visual Studio 中針對 Python 進行偵錯](media/remote-debugging-breakpoint-hit.png)
 
